@@ -1,0 +1,14 @@
+# Node.js dependencies, files, & directories
+.npm
+node_modules
+npm-debug.log*
+
+
+# IDE project files
+.idea
+*.iws
+
+# Thorium build artifacts
+dist
+docs/assets/css/styleguide.css
+docs/assets/css/thorium.css
