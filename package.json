@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "npm run lint:css",
-    "build": "npm run lint && npm run clean && npm run build:thorium && npm run build:docs",
+    "build": "npm run lint && npm run clean && mkdir -p dist && npm run build:thorium && npm run build:docs",
     "start": "npm run start:docs",
     "start:dev": "export NODE_ENV=dev && npm run start",
     "build:css": "npm run lint:css && npm run build:thorium:css && npm run build:docs:css",
