@@ -1,0 +1,33 @@
+//- TODO move all this to a TOC plugin:
+- var cwd = './docs/'
+
+- var TOC = {};
+- for (dir in contents) {
+-   var isDir = fs.lstatSync(cwd + dir).isDirectory();   // filter out non-directories
+-   if(isDir) {
+-     var dirName = dir.slice(2).replace('-',' ');
+-     var listing = {};
+
+-     if (dir == 'assets') { continue; }
+
+-     for (key in contents[dir]) {
+-       var value = contents[dir][key]
+-       if (value.title !== undefined) {
+-         listing[value.title] = value.url;
+-       }
+-     }
+
+-     TOC[dirName] = listing;
+
+-   }
+- }
+
+each subitem, item in TOC
+  ul
+    li
+      span= item
+      ul
+        each url, title in subitem
+          - var classes= (page.title == title) ? 'active subsection' : 'subsection';
+          li(class=classes)
+            a(href="#{url}") #{title}

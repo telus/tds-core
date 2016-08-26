@@ -1,0 +1,51 @@
+/**
+
+File:         _header.scss
+Description:  Documentation Site global header
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Site header
+
+*/
+
+#site-header {
+  height: 68px;
+  background-color: $color-purple;
+  text-align: center;
+
+  .logo {
+    margin-left: -3.813rem;
+  }
+
+  img {
+    height: 100%;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .toggle {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    background: rgba(255, 255, 255, .1);
+    padding: 1rem;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #site-header {
+    text-align: left;
+
+    .logo {
+      margin-left: 0;
+    }
+
+    .toggle {
+      display: none;
+    }
+  }
+}

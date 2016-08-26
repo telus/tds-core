@@ -1,0 +1,34 @@
+/**
+
+File:         variables.scss
+Description:  A central place to define site-wide values such as color codes
+              and font names.
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Colours
+    2. Typography
+
+*/
+
+/* ---------------------------------------
+  1.  Colours
+----------------------------------------- */
+
+$color-font: #666;
+$color-font-darker: #4d5055;
+$color-text: $color-font-darker;
+
+/* ---------------------------------------
+  2.  Typography
+----------------------------------------- */
+
+$font-sans: Arial, sans-serif;
+$font-serif: Georgia, serif;
+$font-telus: 'Helvetica Neue', Helvetica, $font-sans;
+$font-telus-thin: "HelveticaNeue-Thin",'Helvetica Neue Thin', Helvetica, $font-sans;
+
+$font-size-base: 16px;
+$font-line-height: 1.5;

@@ -1,0 +1,29 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Telus Thorium Styleguide",
+    "owner": "Telus Digital",
+    "description": "...",
+    "assetsUrl": {
+      "dev": "/assets/js/",
+      "prod": "https://s3-us-west-2.amazonaws.com/telus-misc/thorium/dev/"
+    }
+  },
+  "require": {
+    "fs": "fs"
+  },
+  "plugins": [
+    "./docs/assets/plugins/asset.js"
+  ],
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "contents": "./docs",
+  "templates": "./docs/assets/templates",
+  "output": "./dist/docs",
+  "baseUrl": "/"
+}

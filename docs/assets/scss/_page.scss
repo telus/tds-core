@@ -1,0 +1,51 @@
+.page {
+  flex: 1;
+  max-width: 100%;
+  margin-left: -200px;
+  padding: 0;
+  transition: all .2s;
+  width: 100%;
+  z-index: 2;
+
+  header {
+    h1 {
+      color: $color-purple;
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    margin-left: 0;
+    zoom: 1;
+    transform: none !important;
+
+    &::before,
+    &::after {
+      content: "";
+      display: table;
+    }
+
+    &::after {
+      clear: both;
+    }
+  }
+}
+
+.content {
+  padding: 2.2rem 5%;
+
+  ul,
+  ol {
+    margin-left: 2rem;
+  }
+
+  li {
+    list-style-type: disc;
+  }
+}
+
+.section {
+  &.gradient {
+    background: #fff;
+  }
+}

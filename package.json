@@ -1,0 +1,42 @@
+{
+  "name": "telus-thorium-core",
+  "version": "0.2.1",
+  "description": "The Telus Styleguide and UI Library",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npm run lint:css",
+    "build": "npm run lint && npm run clean && npm run build:thorium && npm run build:docs",
+    "start": "npm run start:docs",
+    "start:dev": "export NODE_ENV=dev && npm run start",
+    "build:css": "npm run lint:css && npm run build:thorium:css && npm run build:docs:css",
+    "build:docs": "npm run build:docs:css && npm run build:docs:html",
+    "build:docs:css": "node-sass --include-path docs/assets/scss docs/assets/scss/main.scss | postcss --use autoprefixer | cleancss > docs/assets/css/styleguide.css",
+    "build:docs:html": "mkdir -p dist && wintersmith build --config=docs/config.json",
+    "build:thorium": "npm run build:thorium:css",
+    "build:thorium:css": "node-sass --include-path scss scss/thorium.scss | postcss --use autoprefixer | cleancss > dist/thorium.css && cp dist/thorium.css docs/assets/css",
+    "clean": "rm -rf dist/**/* && rm -f docs/assets/css/thorium.css && rm -f docs/assets/css/styleguide.css",
+    "lint:css": "node_modules/.bin/stylelint 'docs/assets/scss/**/*.scss' 'scss/**/*.scss' --syntax scss",
+    "start:docs": "wintersmith preview --config=docs/config.json",
+    "watch:css": "onchange 'scss/**/*.scss' 'docs/assets/scss/**/*.scss' -- npm run build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telusdigital/telus-thorium-core.git"
+  },
+  "author": "Telus Digital",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/telusdigital/telus-thorium-core/issues"
+  },
+  "homepage": "https://github.com/telusdigital/telus-thorium-core#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "clean-css": "^3.4.10",
+    "node-sass": "^3.4.2",
+    "onchange": "^2.5.0",
+    "postcss-cli": "^2.5.1",
+    "stylelint": "^7.1.0",
+    "stylelint-config-standard": "^12.0.0",
+    "wintersmith": "^2.3.2"
+  }
+}

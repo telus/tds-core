@@ -1,0 +1,48 @@
+doctype html
+block vars
+  - var bodyclass = null;
+  - var assetsUrl = (process.env.NODE_ENV === 'dev') ? locals.assetsUrl.dev : locals.assetsUrl.prod;
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      meta(name='viewport', content='width=device-width')
+      title
+        block title
+          = locals.name
+
+      link(rel='stylesheet', href='/assets/css/prism.css')
+      //- keep link to local thorium.css for development purposes
+      link(rel='stylesheet', href='/assets/css/thorium.css')
+      link(rel='stylesheet', href='/assets/css/styleguide.css')
+
+  body(class=bodyclass)
+    header#site-header
+      div.container
+        button.button.toggle &#9776;
+        a.logo(href="/")
+          img(src="/assets/images/logo.png" alt="")
+
+    main.container
+      nav.navigation
+        include nav.jade
+
+      block content
+        h2 Welcome to Thorium!
+
+    script(src='/assets/js/prism.js')
+    script.
+      var toggle = document.querySelector('button.toggle');
+      var body = document.body;
+      var resizeEventName = ('ontouchstart' in window) ? 'orientationchange' : 'resize';
+      toggle.addEventListener('click', function (e) {
+        body.classList.toggle('menu-active');
+        body.classList.add('is-animating');
+        setTimeout(function () {
+          body.classList.remove('is-animating')
+        }, 300);
+      });
+      window.addEventListener(resizeEventName, function (e) {
+        body.classList.remove('menu-active')
+      });

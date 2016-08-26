@@ -1,0 +1,20 @@
+/**
+
+File:         _mixins.scss
+Description:  Helpful SASS mixins
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Font helpers
+
+*/
+
+/* ---------------------------------------
+  1.  Font helpers: calculate rem, em
+----------------------------------------- */
+
+@function rem($size) {
+  @return ($size / $font-size-base) * 1rem;
+}
