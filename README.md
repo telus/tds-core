@@ -3,10 +3,11 @@ Thorium, the TELUS Design system is a set of living guidelines that communicates
 
 ## Contributor Quick Start
 
-Clone this repository, transpile assets, then start the project in development mode.
+Clone this repository, install dependencies, transpile assets, then start the project in development mode.
 
 ```
 git clone git@github.com:telusdigital/telus-thorium-core.git
+npm install
 npm run build
 npm run start:dev
 ```
