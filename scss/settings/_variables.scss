@@ -10,6 +10,7 @@ Description:  A central place to define site-wide values such as color codes
 
     1. Colours
     2. Typography
+    3. Grid
 
 */
 
@@ -32,3 +33,32 @@ $font-telus-thin: "HelveticaNeue-Thin",'Helvetica Neue Thin', Helvetica, $font-s
 
 $font-size-base: 16px;
 $font-line-height: 1.5;
+
+/* ---------------------------------------
+  3.  Grid
+----------------------------------------- */
+
+/**
+ * Breakpoints for a mobile-first grid. The pixel values of adjacent breakpoints
+ * can be the same value (i.e. it's unnecessary to write values like
+ * small: (544px, 768px), medium: (769px, 992px)). Media Query-generating mixins
+ * will automatically add 1 where necessary.
+ */
+$breakpoints: (
+  xs: (null,   544px),
+  small: (544px,  768px),
+  medium: (768px,  992px),
+  large: (992px, 1200px),
+  xl: (1200px, null)
+);
+
+// 12 columns all the way down.
+$columns: (
+  xs: 12,
+  small: 12,
+  medium: 12,
+  large: 12,
+  xl: 12
+);
+
+$gutter: 20px;

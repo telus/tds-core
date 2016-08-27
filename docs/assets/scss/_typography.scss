@@ -40,3 +40,8 @@ Description:  Typography settings specific to the Documentation Site.
     padding-bottom: .05em;
   }
 }
+
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1rem;
+}

@@ -1,0 +1,82 @@
+/**
+
+File:           grid.scss
+Description:    Telus grid classes live in here. The grid is _mobile-first_. Add code for
+                small screens first, and larger devices will inherit those styles. You may
+                customize for larger screens as necessary.
+
+                Conversely, you are not constrained to using the grid classes herein. It may
+                be simpler, for example, to use the provided mixin to just set the column
+                width of an element at a particular breakpoint.
+
+        ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Helpers
+    2. Columns
+    3. Responsive
+
+*/
+
+/**
+ * Generate a width for a block that occupies the space of n columns, out of the
+ * given amount of total columns. Ex: columns(6, 12) produces a block that's
+ * 50% the width of its parent.
+ */
+@mixin columns($n, $total-columns) {
+  float: left;
+  width: percentage($n / $total-columns);
+  padding: 0 $gutter / 1.5;
+}
+
+/**
+ * Generate margins for a block which is offset from the left by n columns out
+ * of the given total columns. Ex: offsetcolumns(3, 12) produces a block that's
+ * offset by 25%.
+ */
+@mixin offsetcolumns($n, $total-columns) {
+  float: left;
+  margin-left: percentage($n / $total-columns);
+}
+
+.container {
+  @include clearfix;
+
+  margin: 0 auto;
+  padding: 0 $gutter / 2;
+}
+
+// Rows are horizontal groups of columns.
+.grid-row {
+  @include clearfix();
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+// Generate the column and offset-column classes for each breakpoint and viewport.
+@each $size, $count in $columns {
+  @for $num from 1 through $count {
+    @include from-breakpoint(#{$size}) {
+      .#{$size}-#{$num} {
+        @include columns($num, $count);
+      }
+
+      .offset-#{$size}-#{$num} {
+        @include offsetcolumns($num, $count);
+      }
+    }
+
+    @include at-breakpoint(#{$size}) {
+      .hidden-#{$size} {
+        display: none !important;
+      }
+    }
+  }
+}
