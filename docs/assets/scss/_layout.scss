@@ -16,9 +16,6 @@ Description:  Structural styles
   width: 100%;
 
   // TODO: Remove when DSR-1 is implemented.
-  margin: 0 auto;
-
-  // TODO: Remove when DSR-1 is implemented.
   @media (min-width: 1170px) {
     max-width: 1160px;
   }

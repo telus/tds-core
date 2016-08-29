@@ -161,7 +161,7 @@ The `xs-*` helpers are available when you need to lay out columns at the smalles
     </div>
 </div>
 
-##### Offset Columns
+##### Offset columns
 
 Offset column classes make it possible to add negative space alongside columns.
 
@@ -181,6 +181,45 @@ This example lays out two content blocks, each spanning 3 columns, with the fina
         <div class="grid-row">
             <div class="small-3">Normal col.</div>
             <div class="small-6 offset-small-3">Offset col.</div>
+        </div>
+    </div>
+</div>
+
+##### Combining columns
+
+Column helpers can also be combined to customize the width at each breakpoint. The following example creates equal width columns in the large viewport, un-even columns in the medium viewport, and two separate rows at the smallest viewport.
+
+<div class="example">
+    <div class="container">
+        <div class="grid-row">
+            <div class="xs-12 medium-3 large-6">.xs-12 .medium-3 .large-6</div>
+            <div class="xs-6 medium-9 large-6">.xs-6 .medium-9 .large-6</div>
+        </div>
+    </div>
+</div>
+
+Notice that the `xs-*` columns add up to more than 12 columns, causing the second column to move below the first in small &amp; xs viewports.
+
+##### Ordering columns
+
+The `push-*` and `pull-*` helpers can be used to re-arrange column order.
+
+```html
+<div class="container">
+    <div class="grid-row">
+        <div class="small-4 push-medium-8"></div>
+        <div class="small-8 pull-medium-4"></div>
+    </div>
+</div>
+```
+
+In this example, the 4-column box will appear first in small &amp; extra small screens. At the medium breakpoint and above, the order is reversed.
+
+<div class="example">
+    <div class="container">
+        <div class="grid-row">
+            <div class="small-4 push-medium-8">.small-4 .push-medium-8</div>
+            <div class="small-8 pull-medium-4">.small-8 .pull-medium-4</div>
         </div>
     </div>
 </div>

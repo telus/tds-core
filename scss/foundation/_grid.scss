@@ -27,7 +27,6 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
 @mixin columns($n, $total-columns) {
   float: left;
   width: percentage($n / $total-columns);
-  padding: 0 $gutter / 1.5;
 }
 
 /**
@@ -38,6 +37,16 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
 @mixin offsetcolumns($n, $total-columns) {
   float: left;
   margin-left: percentage($n / $total-columns);
+}
+
+@mixin pullcolumns($n, $total-columns) {
+  position: relative;
+  right: percentage($n / $total-columns);
+}
+
+@mixin pushcolumns($n, $total-columns) {
+  position: relative;
+  left: percentage($n / $total-columns);
 }
 
 .container {
@@ -51,18 +60,16 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
 .grid-row {
   @include clearfix();
 
-  &:first-child {
-    padding-left: 0;
-  }
-
-  &:last-child {
-    padding-right: 0;
-  }
+  margin: 0 ($gutter / 2) * -1;
 }
 
 // Generate the column and offset-column classes for each breakpoint and viewport.
 @each $size, $count in $columns {
   @for $num from 1 through $count {
+    .#{$size}-#{$num} {
+      padding: 0 $gutter / 2;
+    }
+
     @include from-breakpoint(#{$size}) {
       .#{$size}-#{$num} {
         @include columns($num, $count);
@@ -70,6 +77,14 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
 
       .offset-#{$size}-#{$num} {
         @include offsetcolumns($num, $count);
+      }
+
+      .pull-#{$size}-#{$num} {
+        @include pullcolumns($num, $count);
+      }
+
+      .push-#{$size}-#{$num} {
+        @include pushcolumns($num, $count);
       }
     }
 
