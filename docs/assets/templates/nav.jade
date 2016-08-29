@@ -8,7 +8,7 @@
 -     var dirName = dir.slice(2).replace('-',' ');
 -     var listing = {};
 
--     if (dir == 'assets') { continue; }
+-     if (dir == 'assets' || dir == 'examples') { continue; }
 
 -     for (key in contents[dir]) {
 -       var value = contents[dir][key]
