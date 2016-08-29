@@ -25,5 +25,17 @@
   "contents": "./docs",
   "templates": "./docs/assets/templates",
   "output": "./dist/docs",
-  "baseUrl": "/"
+  "baseUrl": "/",
+  "TOC": {
+    "INTRODUCTION": [
+      "Overview",
+      "How to use",
+      "Design vision",
+      "Design principles"
+    ],
+    "FOUNDATIONS": [
+      "Overview",
+      "Grids"
+    ]
+  }
 }
