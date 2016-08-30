@@ -3,7 +3,7 @@ title: How to use
 template: doc.jade
 ---
 
-#### Designer
+## Designer
 
 ---
 
@@ -25,11 +25,13 @@ Download [thorium.sketch](https://github.com/telusdigital/telus-thorium-core/blo
 
 Identify your needs by considering the user and outcome you're designing for—these considerations will help inform scope and the milestones and/or deliverables required.
 
-##### thorium.sketch
+## thorium.sketch
+
+---
 
 The thorium.sketch file contains the latest pre-defined styles, symbols, and artboards. Design is encouraged to stay within Thorium.sketch as copying, merging, and cross file consistency can be lost. Elements and component within artboards are stripped of written metrics and measurements as they have been codified and need not be changed.
 
-#### Design feedback
+## Design feedback
 
 ---
 

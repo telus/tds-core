@@ -3,13 +3,13 @@ title: Grids
 template: doc.jade
 ---
 
-#### Overview
+## Overview
 
 ---
 
 Grids give order to the vertical and horizontal positioning of content. Grids are meant to be used in conjunction with one another, allowing designers and developers to place content efficiently and confidently. This results in a consistent and cohesive end user and brand experience.
 
-#### Baseline
+## Baseline
 
 ---
 
@@ -17,7 +17,7 @@ A baseline grid creates vertical rhythm. Rhythm is the systematic arrangement of
 
 A baseline is a mathematical solution that reinforces the consistent positioning of elements on a page. Establishing a baseline grid accelerates the design and development process.Foundational elements, components, and the elements within align to a 2 px. baseline grid.
 
-#### Breakpoints
+## Breakpoints
 
 ---
 
@@ -31,19 +31,19 @@ Thorium will have five viewports over four breakpoints:
 * Large: (992 - 1200)
 * X-Large: (1200+)
 
-#### Responsiveness
+## Responsiveness
 
 ---
 
 Responsiveness should be considered when creating layouts or elements. The column grid is flexible enough for variation while ensuring consistency across layouts. For optimal user experience, layout design should adapt and be tested against the breakpoint system prior to, during, and after any development.
 
-#### Fluidity
+## Fluidity
 
 ---
 
 The grid will be Fluid instead of Fixed. This means that the majority of the components inside have percentage widths, and thus adjust to the user’s screen resolution.
 
-#### Columns
+## Columns
 
 ---
 
@@ -71,7 +71,7 @@ Putting these three building blocks together, we can mark up a simple grid with 
 
 ---
 
-##### Columns Classes
+### Columns Classes
 
 The `small-*` grid classes allow you to lay out all twelve columns in a variety of combinations.
 
@@ -161,7 +161,7 @@ The `xs-*` helpers are available when you need to lay out columns at the smalles
     </div>
 </div>
 
-##### Offset columns
+### Offset Columns
 
 Offset column classes make it possible to add negative space alongside columns.
 
@@ -185,7 +185,7 @@ This example lays out two content blocks, each spanning 3 columns, with the fina
     </div>
 </div>
 
-##### Combining columns
+### Combining columns
 
 Column helpers can also be combined to customize the width at each breakpoint. The following example creates equal width columns in the large viewport, un-even columns in the medium viewport, and two separate rows at the smallest viewport.
 
@@ -200,7 +200,7 @@ Column helpers can also be combined to customize the width at each breakpoint. T
 
 Notice that the `xs-*` columns add up to more than 12 columns, causing the second column to move below the first in small &amp; xs viewports.
 
-##### Nesting columns
+### Nesting columns
 
 Grid rows can be placed inside columns, in order to nest more columns (no need to repeat the container). Since the grid is fluid, each of the nested columns' widths will still be calculated as a percentage of 12 columns.
 
@@ -218,7 +218,7 @@ Grid rows can be placed inside columns, in order to nest more columns (no need t
     </div>
 </div>
 
-##### Ordering columns
+### Ordering columns
 
 The `push-*` and `pull-*` helpers can be used to re-arrange column order.
 
@@ -242,7 +242,7 @@ In this example, the 4-column box will appear first in small &amp; extra small s
     </div>
 </div>
 
-##### Utility classes
+### Utility classes
 
 The `hidden-*` classes prevents content from displaying at a certain breakpoint. The `hidden-*-up` classes hide content at a certain breakpoint and all those above.
 
@@ -266,6 +266,8 @@ The `hidden-*` classes prevents content from displaying at a certain breakpoint.
     </div>
 </div>
 
-##### Examples
+## Examples
+
+---
 
 See this feature in action on the [grid examples page](/examples/grid.html).

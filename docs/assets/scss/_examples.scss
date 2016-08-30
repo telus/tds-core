@@ -22,4 +22,12 @@ Description:  Styling for examples in-line with documentation
       padding-bottom: .5em;
     }
   }
+
+  &--type {
+    padding-left: 2rem;
+  }
+
+  &__header {
+    padding-bottom: 1rem;
+  }
 }

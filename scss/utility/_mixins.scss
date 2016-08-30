@@ -75,6 +75,10 @@ Description:  Helpful SASS mixins
   @return ($size / $font-size-base) * 1rem;
 }
 
+@function baseline-margin($size) {
+  @return rem($size - ($body-text-size * $body-line-height));
+}
+
 /* ---------------------------------------
   3.  Clearfix
 ----------------------------------------- */

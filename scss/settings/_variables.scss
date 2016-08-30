@@ -18,8 +18,18 @@ Description:  A central place to define site-wide values such as color codes
   1.  Colours
 ----------------------------------------- */
 
+$color-green: #248700;
+$color-green-darker: #177a00;
+$color-grey: #54595f;
+$color-grey-darker: #2a2c2e;
+$color-purple: #4b286d;
+
 $color-font: #666;
 $color-font-darker: #4d5055;
+$color-link: $color-green;
+$color-link-hover: $color-green-darker;
+$color-link-secondary: $color-grey;
+$color-link-secondary-hover: $color-grey-darker;
 $color-text: $color-font-darker;
 
 /* ---------------------------------------
@@ -33,6 +43,9 @@ $font-telus-thin: "HelveticaNeue-Thin",'Helvetica Neue Thin', Helvetica, $font-s
 
 $font-size-base: 16px;
 $font-line-height: 1.5;
+
+$body-text-size: 20px;
+$body-line-height: 1.4444444444;
 
 /* ---------------------------------------
   3.  Grid
