@@ -200,6 +200,24 @@ Column helpers can also be combined to customize the width at each breakpoint. T
 
 Notice that the `xs-*` columns add up to more than 12 columns, causing the second column to move below the first in small &amp; xs viewports.
 
+##### Nesting columns
+
+Grid rows can be placed inside columns, in order to nest more columns (no need to repeat the container). Since the grid is fluid, each of the nested columns' widths will still be calculated as a percentage of 12 columns.
+
+<div class="example">
+    <div class="container">
+        <div class="grid-row">
+            <div class="small-8">
+                <div class="grid-row">
+                    <div class="small-4"><code>.small-4</code></div>
+                    <div class="small-4"><code>.small-4</code></div>
+                </div>
+            </div>
+            <div class="small-4"><code>.small-4</code></div>
+        </div>
+    </div>
+</div>
+
 ##### Ordering columns
 
 The `push-*` and `pull-*` helpers can be used to re-arrange column order.
@@ -220,6 +238,30 @@ In this example, the 4-column box will appear first in small &amp; extra small s
         <div class="grid-row">
             <div class="small-4 push-medium-8">.small-4 .push-medium-8</div>
             <div class="small-8 pull-medium-4">.small-8 .pull-medium-4</div>
+        </div>
+    </div>
+</div>
+
+##### Utility classes
+
+The `hidden-*` classes prevents content from displaying at a certain breakpoint. The `hidden-*-up` classes hide content at a certain breakpoint and all those above.
+
+```html
+<div class="container">
+    <div class="grid-row">
+        <div class="small-4">Always visible</div>
+        <div class="small-4 hidden-medium">Hidden at medium</div>
+        <div class="small-4 hidden-medium-up">Hidden at medium+</div>
+    </div>
+</div>
+```
+
+<div class="example">
+    <div class="container">
+        <div class="grid-row">
+            <div class="small-4">Always visible</div>
+            <div class="small-4 hidden-medium">Hidden at medium</div>
+            <div class="small-4 hidden-medium-up">Hidden at medium+</div>
         </div>
     </div>
 </div>

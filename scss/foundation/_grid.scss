@@ -87,11 +87,17 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
         @include pushcolumns($num, $count);
       }
     }
+  }
 
-    @include at-breakpoint(#{$size}) {
-      .hidden-#{$size} {
-        display: none !important;
-      }
+  @include from-breakpoint(#{$size}) {
+    .hidden-#{$size}-up {
+      display: none !important;
+    }
+  }
+
+  @include at-breakpoint(#{$size}) {
+    .hidden-#{$size} {
+      display: none !important;
     }
   }
 }
