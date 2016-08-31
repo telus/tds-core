@@ -36,12 +36,11 @@ a.button {
   letter-spacing: .2px;
   line-height: 1.166666;
   margin: 9px 0;
-  padding: 16px 15px;
+  padding: 16px 30px;
   text-align: center;
   text-decoration: none;
   transition: background .2s;
   width: 100%;
-  min-width: 144px;
 
   @include from-breakpoint(medium) {
     display: inline-block;
@@ -50,11 +49,23 @@ a.button {
 
     + .button,
     + button {
-      margin-left: 20px;
+      // Using < 20px to compensate for the extra margin which appears between inline-block
+      // elements due to whitespace in the actual markup.
+      margin-left: 16px;
     }
 
     + .button-link {
-      margin-left: 30px;
+      margin-left: 34px;
+    }
+
+    &-link {
+      + .button-link {
+        margin-left: 40px;
+      }
+
+      + .button:not(.button-link) {
+        margin-left: 40px;
+      }
     }
   }
 
@@ -72,6 +83,8 @@ a.button {
   &-link {
     color: $color-green;
     text-decoration: underline;
+    padding-left: 0;
+    padding-right: 0;
 
     &:hover {
       color: $color-green-darker;
