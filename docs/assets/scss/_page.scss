@@ -51,8 +51,16 @@ Description:  Styles for individual documentation pages
     margin-left: 2rem;
   }
 
-  li {
-    list-style-type: disc;
+  ul {
+    li {
+      list-style-type: disc;
+    }
+  }
+
+  ol {
+    li {
+      list-style-type: decimal;
+    }
   }
 }
 
