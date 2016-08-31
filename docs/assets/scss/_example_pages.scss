@@ -14,6 +14,15 @@ Description:  Styling for stand-alone example pages
 .ex-page {
   main {
     display: block;
+
+    > .container {
+      max-width: 1160px;
+      padding-top: 2rem;
+    }
+  }
+
+  h1:not(:first-child) {
+    margin-top: 1.5em;
   }
 }
 

@@ -12,32 +12,10 @@ Description:  Typography settings specific to the Documentation Site.
 */
 
 .content {
-  > h1,
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6 {
-    color: #4b286d;
-  }
-
   > h2 {
-    box-shadow: 0 0 0 0 $color-purple;
-
     &:first-child {
       margin-top: 0;
     }
-  }
-
-  > h3 {
-    box-shadow: 0 0 0 0 $color-purple;
-  }
-
-  > h3,
-  > h4,
-  > h5 {
-    margin-bottom: .5em;
-    padding-bottom: .05em;
   }
 }
 

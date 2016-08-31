@@ -22,7 +22,6 @@ Description:  Styles for individual documentation pages
 
   header {
     h1 {
-      color: $color-purple;
       margin: 0;
     }
   }
@@ -61,4 +60,8 @@ Description:  Styles for individual documentation pages
   &.gradient {
     background: #fff;
   }
+}
+
+pre + .subhead {
+  margin-top: 2rem;
 }
