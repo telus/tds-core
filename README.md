@@ -13,3 +13,5 @@ npm run start:dev
 ```
 
 The documentation site will be available at `http://localhost:8080`.
+
+For more information about contributing, please see the [Governance - Contribution page](/docs/5-Governance/2-contributing.md).
