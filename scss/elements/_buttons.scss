@@ -24,19 +24,62 @@ button {
 }
 
 button,
-.button {
+.button,
+a.button {
   border: 0;
+  border-radius: 4px;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-family: $font-telus;
   font-size: rem(18px);
   font-weight: normal;
   letter-spacing: .2px;
   line-height: 1.166666;
   margin: 9px 0;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  padding: 16px 15px;
+  text-align: center;
   text-decoration: none;
   transition: background .2s;
-  vertical-align: top;
+  width: 100%;
+  min-width: 144px;
+
+  @include from-breakpoint(medium) {
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+
+    + .button,
+    + button {
+      margin-left: 20px;
+    }
+
+    + .button-link {
+      margin-left: 30px;
+    }
+  }
+
+  &-primary {
+    background-color: $color-green;
+    color: $color-white;
+    font-weight: 500;
+
+    &:hover {
+      background-color: $color-green-darker;
+      color: $color-white;
+    }
+  }
+
+  &-link {
+    color: $color-green;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-green-darker;
+    }
+  }
+
+  &[disabled] {
+    background-color: $color-grey-panel;
+    color: $color-grey-dark;
+  }
 }
