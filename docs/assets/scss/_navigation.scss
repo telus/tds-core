@@ -21,6 +21,10 @@ Description:  Left-hand navigation styles
   background: #fff;
   border-right: 1px solid #eee;
 
+  .container {
+    padding: 0;
+  }
+
   span {
     color: $color-purple;
     font-size: .8em;

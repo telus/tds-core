@@ -21,15 +21,17 @@ Description:  A central place to define site-wide values such as color codes
 $color-green: #248700;
 $color-green-darker: #177a00;
 $color-grey: #54595f;
-$color-grey-darker: #2a2c2e;
+$color-grey-dark: #2a2c2e;
+$color-grey-panel: #f7f7f8;
 $color-purple: #4b286d;
+$color-white: #fff;
 
 $color-font: #666;
 $color-font-darker: #4d5055;
 $color-link: $color-green;
 $color-link-hover: $color-green-darker;
 $color-link-secondary: $color-grey;
-$color-link-secondary-hover: $color-grey-darker;
+$color-link-secondary-hover: $color-grey-dark;
 $color-text: $color-font-darker;
 
 /* ---------------------------------------
