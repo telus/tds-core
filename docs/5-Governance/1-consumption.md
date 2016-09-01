@@ -22,10 +22,20 @@ cd /path/to/your/project
 npm install --save telus-thorium-core
 ```
 
-Import Thorium to your SCSS file.
+<p class="subhead">Import Thorium</p>
 
 ```scss
-@import "~telus-thorium-core/scss/thorium.scss";
+/* File: my-project.scss */
+
+@import "thorium";
+```
+
+<p class="subhead">Compile your SCSS</p>
+
+Make sure the include path(s) include Thorium's scss directory.
+
+```bash
+node-sass --include-path node_modules/telus-thorium-core/scss my-project.scss > my-project.css
 ```
 
 ### Content Delivery Network
