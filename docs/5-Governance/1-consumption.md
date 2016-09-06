@@ -46,7 +46,7 @@ Add a link to the CDN-hosted thorium.css file into the `<head>` of your page.
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://cdn.telus.digital/thorium/v0.2.1/thorium.min.css">
+  href="https://cdn.telus.digital/thorium/core/v0.2.1/thorium.min.css">
 ```
 
 ## Versioning
