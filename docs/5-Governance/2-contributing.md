@@ -3,7 +3,7 @@ title: Contributing
 template: doc.jade
 ---
 
-#### Welcome!
+## Welcome!
 
 ---
 
@@ -11,11 +11,11 @@ We're so glad you're thinking about contributing to the TELUS Design System - Th
 
 If you have any questions or want to read more, check out the [Design System website](http://thorium.telus.hugeops.com/), or [shoot us an email](mailto:sebastian.krumhausen@telus.com).
 
-#### Types of Contributions
+## Types of Contributions
 
 ---
 
-##### Report Bugs
+### Report Bugs
 
 If you find a bug please [create an issue through GitHub](https://github.com/telusdigital/telus-thorium-core/issues). Please include:
 
@@ -23,11 +23,11 @@ If you find a bug please [create an issue through GitHub](https://github.com/tel
 * Any details about your local setup that might be helpful in troubleshooting.
 * Detailed steps to reproduce the bug.
 
-##### Contribute code
+### Contribute code
 
 Fix [bugs](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aissue+is%3Aopen+label%3Abug) and/or implement [features](https://github.com/telusdigital/telus-thorium-core/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature) by choosing an open task from the [Github issues list](https://github.com/telusdigital/telus-thorium-core/issues). See the [contributor workflow](#contributor-workflow) section for a more detailed description of how to get code into Thorium.
 
-##### Author documentation
+### Author documentation
 
 The TELUS Design System could always use better documentation, whether as part of the official documentation site, in comments, or even on the web as blog posts or articles.
 
@@ -38,7 +38,7 @@ Documentation lives in the [docs directory](https://github.com/telusdigital/telu
 * Those markdown files follow the same naming convention as their parent folders.
 * Changing documentation follows the same [contributor workflow](#contributor-workflow) as committing code.
 
-##### Submit Feedback
+### Submit Feedback
 
 The best way to send feedback is to [file an issue on GitHub](https://github.com/telusdigital/telus-thorium-core/issues).
 
@@ -48,7 +48,7 @@ If you're proposing a feature:
 * Keep the scope as narrow as possible, to make it easier to implement.
 * Remember that this is a volunteer-driven project, and that contributions are welcome.
 
-#### Development Process
+## Development Process
 
 ---
 
@@ -63,7 +63,7 @@ The key features of Thorium's trunk-based contribution model are:
 * Official releases are cut from version branches.
 * `master` contains the bleeding-edge code, and is therefore generally unsafe.
 
-#### Versioning
+## Versioning
 
 ---
 
@@ -73,7 +73,7 @@ Release numbers adhere to <a href="http://semver.org/" target="_blank">semantic 
 * The minor version increments when new features are added.
 * The patch version changes when backwards-compatible bug fixes are released.
 
-#### Requirements
+## Requirements
 
 ---
 
@@ -83,7 +83,7 @@ Thorium is a design system that reaches across all TELUS properties. In order to
 * must be accompanied by automated tests, wherever applicable.
 * should either be backwards-compatible, or target the appropriate [semantically versioned](#versioning) release.
 
-#### Contributor Workflow
+## Contributor Workflow
 
 ----
 
@@ -93,7 +93,7 @@ At its core, contributing with Git involves:
 2. Creating a feature branch, from master, in which to do your work.
 3. Opening a pull request from your branch to master.
 
-##### Walk-through
+### Walk-through
 
 If this is your first time contributing to Thorium, clone the repository (this is a one-time step).
 
@@ -119,7 +119,7 @@ git push -u origin feature/adding-a-widget
 
 Once the branch is sent to Github, [create a pull request](https://github.com/telusdigital/telus-thorium-core/pulls) from your branch to `master`. It's at this point that others may offer feedback and suggestions.
 
-##### Tips &amp; Troubleshooting
+### Tips &amp; Troubleshooting
 
 Git will let you know if a PR can't be automatically merged. When this is the case, you should update your branch with the latest changes from master, fix any merge conflicts, then push those changes up to Github.
 
