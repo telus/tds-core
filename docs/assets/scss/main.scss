@@ -1,4 +1,5 @@
-@import 'variables';
+@import '../../../scss/settings/variables';
+@import '../../../scss/utility/mixins';
 @import 'global';
 @import 'typography';
 @import 'layout';

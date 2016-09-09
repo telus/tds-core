@@ -73,7 +73,9 @@ h2,
   line-height: 1;
   margin-bottom: baseline-margin(40px);
 
-  + .subhead {
+  + .subhead,
+  + label,
+  + .field {
     padding-top: rem(8px);
   }
 }

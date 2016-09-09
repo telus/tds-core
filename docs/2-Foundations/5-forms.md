@@ -1,0 +1,176 @@
+---
+title: Forms
+template: doc.jade
+---
+
+## Form guidelines
+
+---
+
+**Keep forms as simple as possible**
+
+* Only ask for the information you absolutely need
+* If you do ask for optional information, mark the labels of optional fields with '(optional)'
+* Don't mark mandatory fields with asterisks
+
+**Form fields**
+
+* Left-align labels, input fields, buttons and helper text
+* Input boxes should invoke the appropriate mobile OS keyboard based on type
+* Help prevent people from making errors; e.g. date pickers ensures correct date format
+* Perform inline validation and provide clear error messages to resolve
+
+**Form focus states**
+
+* Interactive UI elements (buttons, links, menus, etc.) should have visible focus when swiped to / tapped
+* Click on the label or inside the form field to show the focus state
+* Focus should not get lost or reset to the top when interacting with UI elements
+
+
+## Text input fields
+
+---
+
+<fieldset class="field">
+  <label for="firstname">First Name</label>
+  <input id="firstname" name="firstname" required>
+</fieldset>
+
+```html
+<fieldset class="field">
+  <label for="firstname">First Name</label>
+  <input id="firstname" name="firstname" required>
+</fieldset>
+```
+
+### Modifiers
+
+Disabling an input field with the standard `[disabled]` HTML attribute will cause it to appear greyed-out.
+
+<fieldset class="field">
+  <label for="lastname">First Name (Disabled)</label>
+  <input id="lastname" name="lastname" disabled>
+</fieldset>
+
+```html
+<fieldset class="field">
+  <label for="firstname">First Name (Disabled)</label>
+  <input id="firstname" name="firstname" disabled>
+</fieldset>
+```
+
+### Textarea
+<fieldset class="field">
+  <label for="comment">Message</label>
+  <textarea id="comment" name="comment" required></textarea>
+</fieldset>
+
+```html
+<fieldset class="field">
+  <label for="comment">Message</label>
+  <textarea id="comment" name="comment" required></textarea>
+</fieldset>
+```
+
+## Arrangement
+
+---
+
+The responsive grid can be used to arrange complex form layouts.
+
+<div class="grid-row">
+    <div class="medium-6">
+        <fieldset class="field">
+            <label for="input_a">Input A</label>
+            <input type="text" name="input_a">
+        </fieldset>
+    </div>
+    <div class="medium-6">
+        <fieldset class="field">
+            <label for="input_b">Input B</label>
+            <input type="text" name="input_b">
+        </fieldset>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="xs-12">
+        <fieldset class="field">
+            <label for="input_c">Input C</label>
+            <input type="text" name="input_c">
+        </fieldset>
+    </div>
+</div>
+
+```html
+<div class="grid-row">
+    <div class="medium-6">
+        <fieldset class="field">
+            <label for="input_a">Input A</label>
+            <input type="text" name="input_a">
+        </fieldset>
+    </div>
+    <div class="medium-6">
+        <fieldset class="field">
+            <label for="input_b">Input B</label>
+            <input type="text" name="input_b">
+        </fieldset>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="xs-12">
+        <fieldset class="field">
+            <label for="input_c">Input C</label>
+            <input type="text" name="input_c">
+        </fieldset>
+    </div>
+</div>
+```
+
+### Size and spacing
+
+The `.button-row` block can be used to achieve the correct spacing between a form and its buttons. The class can be used on a stand-alone block, or mixed with `.grid-row`.
+
+When laying out fields that'll potentially fill the entire viewport, the responsive grid should be used to constrain their maximum width to these limits:
+
+* **Small & XS**: 12 columns
+* **Medium**: 7 columns
+* **Large**: 5 columns
+* **XL**: 4 columns
+
+These limits can be achieved by combining grid column helpers (`.medium-7.large-5.xl-4`) or with the block `.field-col`
+
+<div class="grid-row">
+    <div class="field-col">
+        <fieldset class="field">
+            <label for="query">What are you looking for?</label>
+            <input type="text" id="query" placeholder="Smart phones">
+        </fieldset>
+    </div>
+</div>
+<div class="button-row">
+    <button type="submit" class="button button-primary">
+        Search
+    </button>
+</div>
+
+```html
+<div class="grid-row">
+    <div class="field-col">
+        <fieldset class="field">
+            <label for="query">What are you looking for?</label>
+            <input type="text" id="query" placeholder="Smart phones">
+        </fieldset>
+    </div>
+</div>
+<div class="button-row">
+    <button type="submit" class="button button-primary">
+        Search
+    </button>
+</div>
+```
+
+## Example forms
+
+---
+
+See these features in action on the [form examples page](/examples/forms.html)

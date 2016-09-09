@@ -91,3 +91,27 @@ Description:  Styling for stand-alone example pages
     margin-top: 1rem;
   }
 }
+
+.login-metric {
+  margin-bottom: 4rem;
+
+  &__form {
+    @include from-breakpoint(medium) {
+      border-right: solid 1px $color-grey-light;
+      padding-right: 8.3333%;
+
+      .field {
+        // -1 to compensate for the border-right width
+        padding-right: 14px;
+      }
+    }
+  }
+
+  &__copy {
+    margin-top: 2rem;
+
+    @include from-breakpoint(medium) {
+      margin-top: 0;
+    }
+  }
+}
