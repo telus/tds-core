@@ -13,7 +13,7 @@
     "fs": "fs"
   },
   "plugins": [
-    "./docs/assets/plugins/asset.js"
+    "./docs/assets/plugins/nav.js"
   ],
   "jade": {
     "pretty": true
@@ -25,17 +25,5 @@
   "contents": "./docs",
   "templates": "./docs/assets/templates",
   "output": "./dist/docs",
-  "baseUrl": "/",
-  "TOC": {
-    "INTRODUCTION": [
-      "Overview",
-      "How to use",
-      "Design vision",
-      "Design principles"
-    ],
-    "FOUNDATIONS": [
-      "Overview",
-      "Grids"
-    ]
-  }
+  "baseUrl": "/"
 }
