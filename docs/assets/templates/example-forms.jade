@@ -1,0 +1,35 @@
+extends examples
+
+block content
+  form.container.login-metric
+    div.grid-row
+      div.medium-6.large-5.login-metric__form
+        h2
+          != "Login to Telus"
+          br
+          != "Business account."
+        fieldset.field
+          label(for='email') Email address
+          input(type='email', id='email')
+        fieldset.field
+          label(for='password') Password
+          input(type='password', id='password')
+        div.button-row
+          button(type='submit').button.button-primary Login
+      div.medium-4.large-5.offset-medium-1.login-metric__copy
+        h3 New to Telus Business?
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus mollis tortor eget sagittis.
+        p
+          a(href='#') Learn more
+        p
+          a(href='#') Register now
+
+  form.container
+    div.grid-row
+      div.field-col
+        fieldset.field
+          h2 A wide field
+          label(for='query') What are you looking for?
+          input(type='text', id='query', placeholder='smart phones')
+    div.button-row
+      button(type='submit').button.button-primary Search

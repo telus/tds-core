@@ -14,10 +14,14 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
     Table of Contents:
 
     1. Helpers
-    2. Columns
-    3. Responsive
+    2. Rows & columns
+    3. Forms grid
 
 */
+
+/* ---------------------------------------
+  1.  Helpers
+----------------------------------------- */
 
 /**
  * Generate a width for a block that occupies the space of n columns, out of the
@@ -49,6 +53,10 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
   left: percentage($n / $total-columns);
 }
 
+/* ---------------------------------------
+  2. Rows & columns
+----------------------------------------- */
+
 .container {
   @include clearfix;
 
@@ -65,11 +73,12 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
 
 // Generate the column and offset-column classes for each breakpoint and viewport.
 @each $size, $count in $columns {
-  @for $num from 1 through $count {
-    .#{$size}-#{$num} {
-      padding: 0 $gutter / 2;
-    }
+  [class^="#{$size}-"],
+  [class*=" #{$size}-"] {
+    padding: 0 $gutter / 2;
+  }
 
+  @for $num from 1 through $count {
     @include from-breakpoint(#{$size}) {
       .#{$size}-#{$num} {
         @include columns($num, $count);
@@ -100,4 +109,39 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
       display: none !important;
     }
   }
+}
+
+/* ---------------------------------------
+  3. Forms grid
+----------------------------------------- */
+
+/**
+ * .field-col is helper class which constrains a field to the maximum recommended
+ * width at each breakpoint. It's basically an alias for .medium-7.large-5.xl-4
+ */
+.field-col {
+  padding: 0 $gutter / 2;
+
+  @include from-breakpoint(medium) {
+    @include columns(7, 12);
+  }
+
+  @include from-breakpoint(large) {
+    @include columns(5, 12);
+  }
+
+  @include from-breakpoint(xl) {
+    @include columns(4, 12);
+  }
+}
+
+/**
+ * There should be more spacing between fields & buttons, than between consecutive
+ * fields. The .button-row class adds that extra spacing. It can be used by itself,
+ * or mixed with a .grid-row block.
+ */
+.button-row {
+  @include clearfix();
+
+  margin-top: 21px;
 }

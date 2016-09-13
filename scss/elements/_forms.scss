@@ -1,0 +1,66 @@
+/**
+
+File:         forms.scss
+Description:  Styles for various form elements live here.
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Defaults
+    2. Textarea
+
+*/
+
+/* ---------------------------------------
+  1.  Defaults
+---------------------------------------- */
+
+input,
+textarea,
+select {
+  border: 1px solid $color-grey-light;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
+  color: $color-grey-dark;
+  font-family: $font-telus;
+  font-size: rem($body-text-size);
+  font-weight: 300;
+  letter-spacing: .4px;
+  line-height: 1;
+  outline: 0;
+  padding: 20px 15px 18px;
+  width: 100%;
+
+  .field & {
+    margin-bottom: 18px;
+  }
+
+  @include from-breakpoint(medium) {
+    letter-spacing: .5px;
+  }
+}
+
+input {
+  &:disabled {
+    background-color: $color-grey-panel;
+    border-color: $color-grey;
+  }
+}
+
+label {
+  display: inline-block;
+  color: $color-grey-dark;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+/* ---------------------------------------
+  2.  Textarea
+---------------------------------------- */
+
+textarea {
+  height: 12em;
+  padding-top: 18px;
+  line-height: $body-line-height;
+}
