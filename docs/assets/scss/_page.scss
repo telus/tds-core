@@ -46,18 +46,20 @@ Description:  Styles for individual documentation pages
 .content {
   padding: 2.2rem 5%;
 
-  ul,
-  ol {
+  // Only target lists which are direct descendents of documentation page. This
+  // prevents interfering with lists used inside code examples.
+  > ul,
+  > ol {
     margin-left: 2rem;
   }
 
-  ul {
+  > ul {
     li {
       list-style-type: disc;
     }
   }
 
-  ol {
+  > ol {
     li {
       list-style-type: decimal;
     }
