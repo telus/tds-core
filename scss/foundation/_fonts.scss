@@ -16,42 +16,45 @@ Description:  Telus-specific fonts are included here
 ---------------------------------------- */
 
 // $url: "https://static.telus.com/common/fonts/";
-$url: "https://cdn.telus.digital/thorium/v1.0"; /* stylelint-disable-line */
+$url: "https://cdn.telus.digital/ui/fonts"; /* stylelint-disable-line */
 
 @font-face {
-  font-family: "Telus";
-  font-weight: light;     // 100
+  font-family: "Telus Light";
+  font-weight: 400;
   font-style: normal;
   src:
-    url("#{$url}/LabGrotesque-Light.woff") format("woff"),
-    url("#{$url}/LabGrotesque-Light.woff2") format("woff2");
+    url("#{$url}/5a13f7d1-b615-418e-bc3a-525001b9a671.woff2") format("woff2"),
+    url("#{$url}/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"),
+    url("#{$url}/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"),
+    url("#{$url}/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot");
 }
 
-// Telus Regular
+/**
+ * Font family: `HelveticaNeue W01-55 Roman`
+ * -----------------------------------------------------------------------------
+ */
 @font-face {
-  font-family: "Telus";
-  font-weight: normal; // 600;
+  font-family: "Telus Regular";
+  font-weight: 600;
   font-style: normal;
   src:
-    url("#{$url}/LabGrotesque-Regular.woff") format("woff"),
-    url("#{$url}/LabGrotesque-Regular.woff2") format("woff2");
+    url("#{$url}/b0868b4c-234e-47d3-bc59-41ab9de3c0db.woff2") format("woff2"),
+    url("#{$url}/bcf54343-d033-41ee-bbd7-2b77df3fe7ba.woff") format("woff"),
+    url("#{$url}/b0ffdcf0-26da-47fd-8485-20e4a40d4b7d.ttf") format("truetype"),
+    url("#{$url}/b7693a83-b861-4aa6-85e0-9ecf676bc4d6.eot?#iefix") format("eot");
 }
 
+/**
+ * Font family: `HelveticaNeue W01-65 Medium`
+ * -----------------------------------------------------------------------------
+ */
 @font-face {
-  font-family: "Telus";
-  font-weight: normal; // 600;
-  font-style: italic;
-  src:
-    url("#{$url}/LabGrotesque-Italic.woff") format("woff"),
-    url("#{$url}/LabGrotesque-Italic.woff2") format("woff2");
-}
-
-// Telus Medium
-@font-face {
-  font-family: "Telus";
-  font-weight: bold; // 800;
+  font-family: "Telus Medium";
+  font-weight: 800;
   font-style: normal;
   src:
-    url("#{$url}/LabGrotesque-Medium.woff") format("woff"),
-    url("#{$url}/LabGrotesque-Medium.woff2") format("woff2");
+    url("#{$url}/3600b37f-2bf1-45f3-be3a-03365f16d9cb.woff2") format("woff2"),
+    url("#{$url}/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff") format("woff"),
+    url("#{$url}/4c6503c9-859b-4d3b-a1d5-2d42e1222415.ttf") format("truetype"),
+    url("#{$url}/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix") format("eot");
 }
