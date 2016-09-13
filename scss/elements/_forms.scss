@@ -9,6 +9,7 @@ Description:  Styles for various form elements live here.
 
     1. Defaults
     2. Textarea
+    3. Helpers
 
 */
 
@@ -63,4 +64,24 @@ textarea {
   height: 12em;
   padding-top: 18px;
   line-height: $body-line-height;
+}
+
+/* ---------------------------------------
+  3.  Helpers
+---------------------------------------- */
+
+.helper {
+  font-size: rem(16px);
+  background: $color-grey-panel;
+  padding: 11px 16px 16px;
+  border-radius: 4px;
+  margin-bottom: 11px;
+
+  &--success {
+    background: $color-green-panel;
+  }
+
+  &__list {
+    margin: 0 0 0 2rem;
+  }
 }

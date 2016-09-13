@@ -169,6 +169,78 @@ These limits can be achieved by combining grid column helpers (`.medium-7.large-
 </div>
 ```
 
+## Field helpers
+
+---
+
+A field helper offers the user a detailed explanation of the input expected in a form field. Construct one by placing a `.helper` block between the label and input.
+
+### Standard field helper
+
+<div class="field">
+    <label for="input_d">Field helper</label>
+    <div class="helper">
+        <p class="text--small">
+            <strong>Your password must be:</strong>
+        </p>
+        <ul class="helper__list">
+            <li>8 characters or longer, no spaces</li>
+            <li>A mix of numbers, lowercase and uppercase letters</li>
+        </ul>
+    </div>
+    <input type="password" id="input_d" placeholder="Enter password">
+</div>
+
+```html
+<div class="field">
+    <label for="input_d">Field helper</label>
+    <div class="helper">
+        <p class="text--small">
+            <strong>Your password must be:</strong>
+        </p>
+        <ul class="helper__list">
+            <li>8 characters or longer, no spaces</li>
+            <li>A mix of numbers, lowercase and uppercase letters</li>
+        </ul>
+    </div>
+    <input type="password" id="input_d" placeholder="Enter password">
+</div>
+```
+
+### Success modifier
+
+The `--success` modifier can be used on the helper to provide positive feedback when the user has successfully completed the form field.
+
+<div class="field">
+    <label for="input_e">Successful field helper</label>
+    <div class="helper helper--success">
+        <p class="text--small">
+            <strong>Your password must be:</strong>
+        </p>
+        <ul class="helper__list">
+            <li>8 characters or longer, no spaces</li>
+            <li>A mix of numbers, lowercase and uppercase letters</li>
+        </ul>
+    </div>
+    <input type="password" id="input_e" placeholder="Enter password">
+</div>
+
+```html
+<div class="field">
+    <label for="input_e">Successful field helper</label>
+    <div class="helper helper--success">
+        <p class="text--small">
+            <strong>Your password must be:</strong>
+        </p>
+        <ul class="helper__list">
+            <li>8 characters or longer, no spaces</li>
+            <li>A mix of numbers, lowercase and uppercase letters</li>
+        </ul>
+    </div>
+    <input type="password" id="input_e" placeholder="Enter password">
+</div>
+```
+
 ## Example forms
 
 ---
