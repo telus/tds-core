@@ -72,6 +72,106 @@ Disabling an input field with the standard `[disabled]` HTML attribute will caus
 </fieldset>
 ```
 
+## Selections
+
+---
+
+### Radio inputs
+
+A radio input lets the user pick a single value from one or more choices.
+
+* The choices are grouped together by a `<fieldset>` tag.
+* Each input should have its own `<label>`.
+* The grouping is described as a whole by a `<legend>` or `<h1>` tag within the fieldset.
+
+<fieldset class="field">
+    <legend class="subhead">Choose one</legend>
+    <label for="choice_a" class="choice">
+	    <input type="radio" name="answer" id="choice_a">
+	    <span class="choice__text">Choice A</span>
+    </label>
+    <label for="choice_b" class="choice">
+	    <input type="radio" name="answer" id="choice_b">
+	    <span class="choice__text">Choice B</span>
+    </label>
+    <label for="choice_c" class="choice">
+	    <input type="radio" name="answer" id="choice_c" disabled checked>
+	    <span class="choice__text">Choice C</span>
+    </label>
+</fieldset>
+
+```html
+<fieldset class="field">
+    <legend class="subhead">Choose one</legend>
+    <label for="choice_a" class="choice">
+	    <input type="radio" name="answer" id="choice_a">
+	    <span class="choice__text">Choice A</span>
+    </label>
+    <label for="choice_b" class="choice">
+	    <input type="radio" name="answer" id="choice_b">
+	    <span class="choice__text">Choice B</span>
+    </label>
+    <label for="choice_c" class="choice">
+	    <input type="radio" name="answer" id="choice_c" disabled checked>
+	    <span class="choice__text">Choice C</span>
+    </label>
+</fieldset>
+```
+
+### Checkboxes
+
+Checkboxes are similar to radio buttons in their appearance and markup. The key difference is that checkboxes can accept a multiple choice response.
+
+<fieldset class="field">
+    <legend class="subhead">Choose all that apply</legend>
+    <label for="multiple-choice-a" class="choice">
+        <input type="checkbox" name="multiple-choice" id="multiple-choice-a">
+        <span class="choice__text">Choice A</span>
+    </label>
+    <label for="multiple-choice-b" class="choice">
+        <input type="checkbox" name="multiple-choice" id="multiple-choice-b">
+        <span class="choice__text">Choice B</span>
+    </label>
+    <label for="multiple-choice-c" class="choice">
+        <input type="checkbox" name="multiple-choice" id="multiple-choice-c">
+        <span class="choice__text">Choice C</span>
+    </label>
+</fieldset>
+
+```html
+<fieldset class="field">
+    <legend class="subhead">Choose all that apply</legend>
+    <label for="multiple-choice-a" class="choice">
+        <input type="checkbox" name="multiple-choice" id="multiple-choice-a">
+        <span class="choice__text">Choice A</span>
+    </label>
+    <label for="multiple-choice-b" class="choice">
+        <input type="checkbox" name="multiple-choice" id="multiple-choice-b">
+        <span class="choice__text">Choice B</span>
+    </label>
+    <label for="multiple-choice-c" class="choice">
+        <input type="checkbox" name="multiple-choice" id="multiple-choice-c">
+        <span class="choice__text">Choice C</span>
+    </label>
+</fieldset>
+```
+
+### Stand-alone selection
+
+When a simple input with just one possibility is all that's needed, we can pare the field down to just a simple `choice` block.
+
+<label for="tos-agree" class="choice">
+    <input type="checkbox" id="tos-agree">
+    <span class="choice__text">I have read and agree to the Terms of Service</span>
+</label>
+
+```html
+<label for="tos-agree" class="choice">
+    <input type="checkbox" id="tos-agree">
+    <span class="choice__text">I have read and agree to the Terms of Service</span>
+</label>
+```
+
 ## Arrangement
 
 ---

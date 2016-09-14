@@ -1,5 +1,6 @@
-@import '../../../scss/settings/variables';
-@import '../../../scss/utility/mixins';
+$thorium-icon-font-prefix: '/assets/fonts';
+
+@import '../../../scss/thorium';
 @import 'global';
 @import 'typography';
 @import 'layout';

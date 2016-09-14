@@ -43,6 +43,7 @@
 @import 'settings/variables';
 
 // utility
+@import "utility/helpers";
 @import "utility/mixins";
 
 // foundation
@@ -51,6 +52,7 @@
 @import 'foundation/grid';
 @import 'foundation/global';
 @import 'foundation/typography';
+@import 'foundation/core-icons';
 
 // elements
 @import 'elements/buttons';
