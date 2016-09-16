@@ -30,3 +30,7 @@ Description:  Helper classes and extensions
   border: 0;
   overflow: hidden;
 }
+
+.accessible-hide {
+  @extend %accessible-hide;
+}

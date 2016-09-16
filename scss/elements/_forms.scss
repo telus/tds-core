@@ -11,6 +11,7 @@ Description:  Styles for various form elements live here.
     2. Textarea
     3. Helpers
     4. Selections
+    5. Hints
 
 */
 
@@ -60,6 +61,16 @@ label {
 // Prevent IE11 from color placeholders the same as regular text.
 &:-ms-input-placeholder {
   color: GrayText !important;
+}
+
+.field {
+  position: relative;
+
+  &--hinted {
+    label {
+      margin-right: 25px;
+    }
+  }
 }
 
 /* ---------------------------------------
@@ -246,6 +257,69 @@ $radio-checked-stroke-size: 6px;
       font-size: 1rem;
       line-height: 1.7;
       text-align: center;
+    }
+  }
+}
+
+/* ---------------------------------------
+  5.  Hints
+---------------------------------------- */
+
+.hint {
+  position: relative;
+  float: right;
+
+  &__icon {
+    color: $color-grey;
+    line-height: 2;
+  }
+
+  &__text {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    font-size: rem(16px);
+    width: 200px;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0 0 2px 0 #2a2c2e, 0 3px 2px 0 rgba(84, 89, 95, .25);
+    border-radius: 4px;
+    transform: translate(15px, -100%);
+
+    &:not(.hint__text--active) {
+      @extend %accessible-hide;
+    }
+
+    &::before,
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+    }
+
+    // The 'before' pseudo element is the triangle at the bottom of the
+    // speech bubble.
+    &::before {
+      box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, .4);
+      background-color: white;
+      bottom: -7px;
+      right: 12px;
+      border-width: 7px;
+      border-style: solid;
+      border-color: transparent white white transparent;
+      transform: rotate(45deg);
+    }
+
+    // The 'after' pseudo element masks the top half of the triangle,
+    // preventing the box-shadow from appearing inside the speech
+    // bubble.
+    &::after {
+      bottom: 0;
+      right: 5px;
+      width: 27px;
+      height: 14px;
+      background: white;
     }
   }
 }

@@ -27,9 +27,14 @@ block content
   form.container
     div.grid-row
       div.field-col
+        h2 A wide field
         fieldset.field
-          h2 A wide field
           label(for='query') What are you looking for?
+          div.hint
+            button.button.button-plain.hint__trigger
+              i.hint__icon.icon.icon-core-help
+              span.accessible-hide Toggle helper text
+            span#some-hint.hint__text Enter a few keywords related to your search.
           input(type='text', id='query', placeholder='smart phones')
         div.field
           label.choice
