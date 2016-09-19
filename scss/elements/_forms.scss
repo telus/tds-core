@@ -99,6 +99,10 @@ $radio-checked-stroke-size: 6px;
   font-weight: 300;
   cursor: pointer;
   margin-bottom: 8px;
+
+  &__text {
+    color: $color-grey;
+  }
 }
 
 [type='radio'],
@@ -109,7 +113,7 @@ $radio-checked-stroke-size: 6px;
 
   &:checked {
     & + .choice__text {
-      font-weight: 400;
+      color: $color-grey-dark;
     }
   }
 
@@ -199,9 +203,32 @@ $radio-checked-stroke-size: 6px;
   &:checked {
     & + .choice__text {
       &::before {
-        background: $color-green;
-        border: none;
         content: '\f101';
+      }
+    }
+
+    &:disabled {
+      & + .choice__text {
+        &::before {
+          color: $color-grey;
+        }
+      }
+    }
+
+    &:not(:disabled) {
+      & + .choice__text {
+        &::before {
+          background: $color-green;
+          border: none;
+        }
+      }
+    }
+  }
+
+  &:disabled {
+    & + .choice__text {
+      &::before {
+        border-color: $color-grey;
       }
     }
   }
@@ -212,7 +239,7 @@ $radio-checked-stroke-size: 6px;
       color: white;
       font-family: $font-icons;
       font-size: 1rem;
-      line-height: 1.4;
+      line-height: 1.7;
       text-align: center;
     }
   }
