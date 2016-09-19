@@ -57,6 +57,11 @@ label {
   margin-bottom: 3px;
 }
 
+// Prevent IE11 from color placeholders the same as regular text.
+&:-ms-input-placeholder {
+  color: GrayText !important;
+}
+
 /* ---------------------------------------
   2.  Textarea
 ---------------------------------------- */
