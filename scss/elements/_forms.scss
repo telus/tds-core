@@ -29,7 +29,7 @@ select {
   font-size: rem($body-text-size);
   font-weight: 300;
   letter-spacing: .4px;
-  line-height: 1;
+  line-height: $body-line-height;
   outline: 0;
   padding: 20px 15px 18px;
   width: 100%;
