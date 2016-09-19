@@ -10,6 +10,7 @@ Description:  Styles for various form elements live here.
     1. Defaults
     2. Textarea
     3. Helpers
+    4. Selections
 
 */
 
@@ -17,7 +18,7 @@ Description:  Styles for various form elements live here.
   1.  Defaults
 ---------------------------------------- */
 
-input,
+input:not([type='radio']),
 textarea,
 select {
   border: 1px solid $color-grey-light;
@@ -83,5 +84,136 @@ textarea {
 
   &__list {
     margin: 0 0 0 2rem;
+  }
+}
+
+/* ---------------------------------------
+  4.  Selections
+---------------------------------------- */
+
+// Thickness of the green border when a radio input is checked
+$radio-checked-stroke-size: 6px;
+
+.choice {
+  display: block;
+  font-weight: 300;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+[type='radio'],
+[type='checkbox'] {
+  @extend %accessible-hide;
+
+  cursor: pointer;
+
+  &:checked {
+    & + .choice__text {
+      font-weight: 400;
+    }
+  }
+
+  &:hover:not(:checked):not(:disabled) {
+    & + .choice__text {
+      &::before {
+        border-color: $color-green;
+        box-shadow: 0 0 0 1px rgba(35, 135, 0, .25);
+      }
+    }
+  }
+
+  &:active {
+    & + .choice__text {
+      &::before {
+        border-color: $color-green-darker;
+      }
+    }
+  }
+
+  &:disabled {
+    & + .choice__text {
+      cursor: not-allowed;
+
+      &::before {
+        background: $color-grey-panel;
+      }
+    }
+  }
+
+  + .choice__text {
+    position: relative;
+    padding-left: 2em;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      border: solid 1px $color-grey;
+      height: 22px;
+      width: 22px;
+      line-height: 1;
+      transition: all .1s linear;
+    }
+  }
+}
+
+[type='radio'] {
+  &:active {
+    & + .choice__text {
+      &::before {
+        border-size: $radio-checked-stroke-size;
+      }
+    }
+  }
+
+  &:checked {
+    & + .choice__text {
+      &::before {
+        border: solid $radio-checked-stroke-size $color-green;
+      }
+    }
+
+    &:disabled {
+      & + .choice__text {
+        &::before {
+          background: $color-grey;
+          border: solid $radio-checked-stroke-size $color-grey-panel;
+          box-shadow: 0 0 0 1px $color-grey;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  + .choice__text {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+}
+
+[type='checkbox'] {
+  &:checked {
+    & + .choice__text {
+      &::before {
+        background: $color-green;
+        border: none;
+        content: '\f101';
+      }
+    }
+  }
+
+  + .choice__text {
+    &::before {
+      border-radius: 4px;
+      color: white;
+      font-family: $font-icons;
+      font-size: 1rem;
+      line-height: 1.4;
+      text-align: center;
+    }
   }
 }

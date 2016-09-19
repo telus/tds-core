@@ -12,3 +12,5 @@ npm-debug.log*
 dist
 docs/assets/css/styleguide.css
 docs/assets/css/thorium.css
+docs/assets/fonts/*
+!docs/assets/fonts/.gitkeep

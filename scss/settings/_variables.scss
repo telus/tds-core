@@ -44,12 +44,24 @@ $font-sans: Arial, sans-serif;
 $font-serif: Georgia, serif;
 $font-telus: 'Helvetica Neue', Helvetica, $font-sans;
 $font-telus-thin: "HelveticaNeue-Thin",'Helvetica Neue Thin', Helvetica, $font-sans;
+$font-icons: 'TELUS Core Icons';
 
 $font-size-base: 16px;
 $font-line-height: 1.5;
 
 $body-text-size: 20px;
 $body-line-height: 1.4444444444;
+
+// Default to the CDN-hosted icons, while allowing any client project to
+// control the location icons are served from by defining
+// $thorium-icon-font-prefix in their SCSS.
+$icon-font-prefix: 'https://cdn.telus.digital/thorium/fonts';
+
+/* stylelint-disable */
+@if variable-exists(thorium-icon-font-prefix) {
+  $icon-font-prefix: $thorium-icon-font-prefix;
+}
+/* stylelint-enable */
 
 /* ---------------------------------------
   3.  Grid
