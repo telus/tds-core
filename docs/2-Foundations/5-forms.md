@@ -133,12 +133,12 @@ Checkboxes are similar to radio buttons in their appearance and markup. The key 
         <span class="choice__text">Choice B</span>
     </label>
     <label for="multiple-choice-c" class="choice">
-	<input type="checkbox" name="multiple-choice" id="multiple-choice-c" disabled>
+	    <input type="checkbox" name="multiple-choice" id="multiple-choice-c" disabled>
         <span class="choice__text">Choice C</span>
     </label>
     <label for="multiple-choice-d" class="choice">
-	<input type="checkbox" name="multiple-choice" id="multiple-choice-d" checked disabled>
-	<span class="choice__text">Choice D</span>
+	    <input type="checkbox" name="multiple-choice" id="multiple-choice-d" checked disabled>
+	    <span class="choice__text">Choice D</span>
     </label>
 </fieldset>
 
