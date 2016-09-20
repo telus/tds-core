@@ -13,8 +13,6 @@
 	font-style:normal;
 }
 
-
-
 .icon {
 	
 		font-family:"TELUS Core Icons";
@@ -36,6 +34,11 @@
 // Icons
 
 
-.icon-checkmark:before {
+.icon-core-checkmark:before {
 	content:"\f101";
+}
+
+
+.icon-core-help:before {
+	content:"\f102";
 }

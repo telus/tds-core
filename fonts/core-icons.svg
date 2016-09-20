@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20150913 at Thu Sep 15 12:39:58 2016
+Created by FontForge 20150913 at Tue Sep 20 11:57:55 2016
  By Tom Harrison
 </metadata>
 <defs>
@@ -15,10 +15,10 @@ Created by FontForge 20150913 at Thu Sep 15 12:39:58 2016
     panose-1="2 0 5 9 0 0 0 0 0 0"
     ascent="762"
     descent="-238"
-    bbox="0 0 1000 762"
+    bbox="0 -238 1000 762"
     underline-thickness="50"
     underline-position="-150"
-    unicode-range="U+F101-F101"
+    unicode-range="U+F101-F102"
   />
 <missing-glyph 
 d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
@@ -28,7 +28,10 @@ d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
  />
     <glyph glyph-name="nonmarkingreturn" 
  />
-    <glyph glyph-name="checkmark" unicode="&#xf101;" 
+    <glyph glyph-name="core-checkmark" unicode="&#xf101;" 
 d="M0 375l101 101l256 -256l542 542l101 -101l-643 -643z" />
+    <glyph glyph-name="core-help" unicode="&#xf102;" 
+d="M500 762q136 0 251 -67t182 -182t67 -251t-67 -251t-182 -182t-251 -67t-251 67t-182 182t-67 251t67 251t182 182t251 67zM550 -88v100h-100v-100h100zM608 254l46 46q46 46 46 112q0 83 -58.5 141.5t-141.5 58.5t-141.5 -58.5t-58.5 -141.5h100q0 41 29.5 70.5
+t70.5 29.5t70.5 -29.5t29.5 -70.5q0 -42 -30 -70l-62 -64q-58 -59 -58 -141v-25h100q0 52 14 81t44 61z" />
   </font>
 </defs></svg>
