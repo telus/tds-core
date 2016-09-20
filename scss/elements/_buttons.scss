@@ -91,6 +91,11 @@ a.button {
     }
   }
 
+  &-plain {
+    margin: 0;
+    padding: 0;
+  }
+
   &[disabled] {
     background-color: $color-grey-panel;
     color: $color-grey-dark;

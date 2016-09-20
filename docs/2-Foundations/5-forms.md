@@ -349,6 +349,46 @@ The `--success` modifier can be used on the helper to provide positive feedback 
 </div>
 ```
 
+## Hints
+
+---
+
+Hints provide information a user may need to complete a form field. While a label is the succint, essential text identifying the purpose of an input field, a hint can be used to provide more detailed instructions.
+
+A hinted input should have an `aria-describedby` attribute whose value is the `id` of the hint. The hint should not be nested inside the `<label>` tag.
+
+Modify the `.hint__text` element with `.hint__text--active` to reveal the speech bubble.
+
+<div id="example-hint" class="field field--hinted">
+    <label for="hinted-field">Interactive hint</label>
+    <div class="hint">
+        <button class="button button-plain hint__trigger">
+            <i class="icon icon-core-help hint__icon"></i>
+            <span class="accessible-hide">Toggle helper text</span>
+        </button>
+        <span id="some-hint" class="hint__text hint__text--active">
+            Helper text description goes here.
+        </span>
+    </div>
+    <input type="text" id="hinted-field" aria-describedby="some-hint">
+</div>
+
+```html
+<div id="example-hint" class="field field--hinted">
+    <label for="hinted-field">Interactive hint</label>
+    <div class="hint">
+        <button class="button button-plain hint__trigger">
+            <i class="icon icon-core-help hint__icon"></i>
+            <span class="accessible-hide">Toggle helper text</span>
+        </button>
+        <span id="some-hint" class="hint__text hint__text--active">
+            Helper text description goes here.
+        </span>
+    </div>
+    <input type="text" id="hinted-field" aria-describedby="some-hint">
+</div>
+```
+
 ## Example forms
 
 ---
