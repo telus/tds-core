@@ -154,12 +154,12 @@ Checkboxes are similar to radio buttons in their appearance and markup. The key 
         <span class="choice__text">Choice B</span>
     </label>
     <label for="multiple-choice-c" class="choice">
-	<input type="checkbox" name="multiple-choice" id="multiple-choice-c" disabled>
+	    <input type="checkbox" name="multiple-choice" id="multiple-choice-c" disabled>
         <span class="choice__text">Choice C</span>
     </label>
     <label for="multiple-choice-d" class="choice">
-	<input type="checkbox" name="multiple-choice" id="multiple-choice-d" checked disabled>
-	<span class="choice__text">Choice D</span>
+	    <input type="checkbox" name="multiple-choice" id="multiple-choice-d" checked disabled>
+	    <span class="choice__text">Choice D</span>
     </label>
 </fieldset>
 ```
@@ -355,9 +355,9 @@ The `--success` modifier can be used on the helper to provide positive feedback 
 
 Hints provide information a user may need to complete a form field. While a label is the succint, essential text identifying the purpose of an input field, a hint can be used to provide more detailed instructions.
 
-A hinted input should have an `aria-describedby` attribute whose value is the `id` of the hint. The hint should not be nested inside the `<label>` tag.
-
-Modify the `.hint__text` element with `.hint__text--active` to reveal the speech bubble.
+* A hinted input should have an `aria-describedby` attribute whose value is the `id` of the hint text.
+* The hint should not be nested inside the `<label>` tag.
+* Modify the `.hint__text` element with `.hint__text--active` to reveal the speech bubble.
 
 <div id="example-hint" class="field field--hinted">
     <label for="hinted-field">Interactive hint</label>
