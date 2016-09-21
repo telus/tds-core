@@ -1,3 +1,11 @@
+# v0.3.1
+
+20 September 2016
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.1
+
+- Added: form hints
+
 # v0.3.0
 
 20 September 2016

@@ -1,6 +1,6 @@
 {
   "name": "telus-thorium-core",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "The Telus Styleguide and UI Library",
   "main": "index.js",
   "scripts": {
