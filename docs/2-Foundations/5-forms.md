@@ -348,7 +348,7 @@ The `--success` modifier can be used on the helper to provide positive feedback 
     <input type="password" id="input_e" placeholder="Enter password">
 </div>
 ```
-
+<!-- The form hints feature is switched off until testing is complete. Targeted for v0.3.1.
 ## Hints
 
 ---
@@ -388,6 +388,7 @@ Hints provide information a user may need to complete a form field. While a labe
     <input type="text" id="hinted-field" aria-describedby="some-hint">
 </div>
 ```
+-->
 
 ## Example forms
 
