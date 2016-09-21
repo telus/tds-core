@@ -66,8 +66,10 @@ label {
   position: relative;
 
   &--hinted {
+    position: relative;
+
     label {
-      margin-right: 25px;
+      width: 91%;
     }
   }
 }
@@ -264,12 +266,33 @@ $radio-checked-stroke-size: 6px;
 ---------------------------------------- */
 
 .hint {
-  position: relative;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 
-  &__icon {
-    color: $color-grey;
-    line-height: 2;
+  // Extra padding is added to a .field that follows a level 2 headline to
+  // increase space between the headline text and label. Inheriting
+  // the .field's padding in the .hint keeps the hint icon in line with
+  // the field's label.
+  padding-top: inherit;
+
+  &:not(.hint--active) {
+    .hint__text {
+      @extend %accessible-hide;
+    }
+  }
+
+  &__trigger {
+    width: $body-text-size;
+
+    &::before {
+      font-family: $font-icons;
+      content: '\f102';
+      color: $color-grey;
+      line-height: 1.7;
+      display: inline-block;
+      width: $body-text-size;
+    }
   }
 
   &__text {
@@ -284,10 +307,6 @@ $radio-checked-stroke-size: 6px;
     box-shadow: 0 0 2px 0 #2a2c2e, 0 3px 2px 0 rgba(84, 89, 95, .25);
     border-radius: 4px;
     transform: translate(15px, -100%);
-
-    &:not(.hint__text--active) {
-      @extend %accessible-hide;
-    }
 
     &::before,
     &::after {

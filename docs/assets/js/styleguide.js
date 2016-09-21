@@ -5,7 +5,7 @@
 
 (function () {
   var TRIGGERS_SELECTOR = '.ex-page .hint__trigger';
-  var ACTIVE_HINT_CLASS = 'hint__text--active';
+  var ACTIVE_HINT_CLASS = 'hint--active';
   var ENTER_KEYCODE = 13;
   var ESC_KEYCODE = 27;
 
@@ -18,15 +18,17 @@
   }
 
   function closeHints() {
-    eachElement(document.querySelectorAll('.hint__text'), function (el, i) {
+    eachElement(document.querySelectorAll('.hint'), function (el, i) {
       el.classList.remove(ACTIVE_HINT_CLASS);
     });
   }
 
-  function activateHintText(hint) {
-    eachElement(hint.parentNode.childNodes, function(el, i) {
+  function toggleHint(hint) {
+    var active = hint.classList.toggle(ACTIVE_HINT_CLASS);
+
+    eachElement(hint.childNodes, function(el, i) {
       if (hasClass(el, 'hint__text')) {
-        el.classList.toggle(ACTIVE_HINT_CLASS);
+        el.setAttribute('aria-hidden', !active);
       }
     });
   }
@@ -35,8 +37,7 @@
     eachElement(document.querySelectorAll(TRIGGERS_SELECTOR), function (el, i) {
       el.addEventListener('click', function (e) {
         e.preventDefault();
-
-        activateHintText(el)
+        toggleHint(el.parentNode)
       });
     });
   }
@@ -46,7 +47,7 @@
       el.addEventListener('keydown', function (e) {
         if (e.keyCode === ENTER_KEYCODE) {
           e.preventDefault();
-          activateHintText(el);
+          toggleHint(el.parentNode);
         }
       });
     });
@@ -54,7 +55,7 @@
 
   function closeHintsOnClickAway() {
     var handleClick = function (e) {
-      if (!hasClass(e.srcElement, 'icon-core-help')) {
+      if (!hasClass(e.srcElement, 'hint__trigger')) {
         closeHints();
       }
     };
