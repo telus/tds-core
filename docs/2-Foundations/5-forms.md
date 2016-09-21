@@ -348,7 +348,7 @@ The `--success` modifier can be used on the helper to provide positive feedback 
     <input type="password" id="input_e" placeholder="Enter password">
 </div>
 ```
-<!-- The form hints feature is switched off until testing is complete. Targeted for v0.3.1.
+
 ## Hints
 
 ---
@@ -357,38 +357,37 @@ Hints provide information a user may need to complete a form field. While a labe
 
 * A hinted input should have an `aria-describedby` attribute whose value is the `id` of the hint text.
 * The hint should not be nested inside the `<label>` tag.
-* Modify the `.hint__text` element with `.hint__text--active` to reveal the speech bubble.
+* Modify the `.field` block with `.field--hinted` to position the icon correctly relative to the label.
+* Modify the `.hint` block with `.hint--active` to reveal the speech bubble.
+* Toggle the text's `aria-hidden` attribute when the button hides or shows the tooltip.
 
 <div id="example-hint" class="field field--hinted">
     <label for="hinted-field">Interactive hint</label>
-    <div class="hint">
-        <button class="button button-plain hint__trigger">
-            <i class="icon icon-core-help hint__icon"></i>
-            <span class="accessible-hide">Toggle helper text</span>
+    <input type="text" id="hinted-field" aria-describedby="some-hint">
+    <div class="hint hint--active">
+        <button class="button button-plain hint__trigger" aria-controls="some-hint">
+            <span class="accessible-hide">Toggle helper text visibility</span>
         </button>
-        <span id="some-hint" class="hint__text hint__text--active">
-            Helper text description goes here.
+        <span id="some-hint" class="hint__text" aria-role="tooltip" aria-hidden="false">
+            This text describes the field.
         </span>
     </div>
-    <input type="text" id="hinted-field" aria-describedby="some-hint">
 </div>
 
 ```html
 <div id="example-hint" class="field field--hinted">
     <label for="hinted-field">Interactive hint</label>
-    <div class="hint">
-        <button class="button button-plain hint__trigger">
-            <i class="icon icon-core-help hint__icon"></i>
-            <span class="accessible-hide">Toggle helper text</span>
+    <input type="text" id="hinted-field" aria-describedby="some-hint">
+    <div class="hint hint--active">
+        <button class="button button-plain hint__trigger" aria-controls="some-hint">
+            <span class="accessible-hide">Toggle helper text visibility</span>
         </button>
-        <span id="some-hint" class="hint__text hint__text--active">
-            Helper text description goes here.
+        <span id="some-hint" class="hint__text" aria-role="tooltip" aria-hidden="false">
+            This text describes the field.
         </span>
     </div>
-    <input type="text" id="hinted-field" aria-describedby="some-hint">
 </div>
 ```
--->
 
 ## Example forms
 
