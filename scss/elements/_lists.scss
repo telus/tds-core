@@ -1,0 +1,105 @@
+/**
+
+File:         lists.scss
+Description:  Bulleted, numbered, and special lists.
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Defaults
+    2. Unordered lists
+    3. Ordered lists
+    4. Check lists
+
+*/
+
+/* ---------------------------------------
+  1. Defaults
+---------------------------------------- */
+
+ul,
+ol {
+  padding-left: 40px;
+
+  li & {
+    // Since nested lists belong inside an <li>, they need some spacing added
+    // above the ul/ol element.
+    padding-top: baseline-margin(40px);
+  }
+
+  li {
+    margin-bottom: baseline-margin(40px);
+  }
+}
+
+/* ---------------------------------------
+  2. Unordered lists
+---------------------------------------- */
+
+ul {
+  list-style-type: disc;
+
+  li & {
+    list-style-type: circle;
+  }
+}
+
+.list {
+  list-style-type: none;
+
+  > li {
+    position: relative;
+
+    &::before {
+      display: block;
+      content: '\002022';
+      color: $color-purple;
+      position: absolute;
+      left: -21px;
+    }
+  }
+
+  li & {
+    > li {
+      &::before {
+        content: '\0025e6';
+      }
+    }
+  }
+}
+
+/* ---------------------------------------
+  3. Ordered lists
+---------------------------------------- */
+
+ol {
+  list-style-type: decimal;
+
+  > li {
+    > ol {
+      list-style-type: lower-alpha;
+    }
+  }
+}
+
+/* ---------------------------------------
+  4. Check lists
+---------------------------------------- */
+
+.checklist {
+  list-style-type: none;
+
+  > li {
+    position: relative;
+
+    &::before {
+      @extend .icon;
+      @extend %icon-core-list-checkmark-codepoint;
+
+      color: $color-green;
+      position: absolute;
+      left: -33px;
+    }
+  }
+}
