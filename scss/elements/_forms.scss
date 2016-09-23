@@ -219,7 +219,7 @@ $radio-checked-stroke-size: 6px;
   &:checked {
     & + .choice__text {
       &::before {
-        content: '\f101';
+        @extend %icon-core-checkmark-codepoint;
       }
     }
 
@@ -286,8 +286,9 @@ $radio-checked-stroke-size: 6px;
     width: $body-text-size;
 
     &::before {
+      @extend %icon-core-help-codepoint;
+
       font-family: $font-icons;
-      content: '\f102';
       color: $color-grey;
       line-height: 1.7;
       display: inline-block;

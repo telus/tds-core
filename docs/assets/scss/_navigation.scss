@@ -52,6 +52,16 @@ Description:  Left-hand navigation styles
       color: #1f7600;
     }
   }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: baseline-margin(50px);
+  }
+
+  li {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 960px) {
