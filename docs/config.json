@@ -1,8 +1,8 @@
 {
   "locals": {
     "url": "http://localhost:8080",
-    "name": "Telus Thorium Styleguide",
-    "owner": "Telus Digital",
+    "name": "TELUS Thorium Styleguide",
+    "owner": "TELUS Digital",
     "description": "...",
     "assetsUrl": {
       "dev": "/assets/js/",
