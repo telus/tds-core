@@ -33,9 +33,23 @@ select {
   outline: 0;
   padding: 15px;
   width: 100%;
+  transition: border-color .1s linear;
 
   .field & {
     margin-bottom: 18px;
+  }
+
+  .field--error & {
+    border-color: $color-red;
+    padding-right: 45px;
+  }
+
+  .field--success & {
+    border-color: $color-green-darker;
+  }
+
+  &:focus {
+    border-color: $color-grey;
   }
 
   @include from-breakpoint(medium) {
@@ -66,10 +80,25 @@ label {
   position: relative;
 
   &--hinted {
-    position: relative;
-
     label {
       width: 91%;
+    }
+  }
+
+  &__control {
+    position: relative;
+
+    .field--error & {
+      &::before {
+        @include core-icon(alert);
+
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        color: $color-red;
+        font-size: rem($body-text-size);
+        line-height: 1;
+      }
     }
   }
 }
@@ -99,8 +128,13 @@ textarea {
     background: $color-green-panel;
   }
 
-  &__list {
-    margin: 0 0 0 2rem;
+  &--error {
+    background-color: $color-red-panel;
+    color: $color-red;
+
+    li {
+      color: $color-text;
+    }
   }
 }
 
@@ -156,6 +190,17 @@ $radio-checked-stroke-size: 6px;
 
       &::before {
         background: $color-grey-panel;
+      }
+    }
+  }
+
+  .choice--error & {
+    & + .choice__text,
+    &:checked + .choice__text {
+      color: $color-red;
+
+      &::before {
+        border-color: $color-red;
       }
     }
   }
@@ -219,7 +264,7 @@ $radio-checked-stroke-size: 6px;
   &:checked {
     & + .choice__text {
       &::before {
-        @extend %icon-core-checkmark-codepoint;
+        content: core-icon-codepoint(checkmark);
       }
     }
 
@@ -259,6 +304,14 @@ $radio-checked-stroke-size: 6px;
       text-align: center;
     }
   }
+
+  .choice--error & {
+    &:checked + .choice__text {
+      &::before {
+        background: $color-red;
+      }
+    }
+  }
 }
 
 /* ---------------------------------------
@@ -286,8 +339,7 @@ $radio-checked-stroke-size: 6px;
     width: $body-text-size;
 
     &::before {
-      @extend %icon-core-help-codepoint;
-
+      content: core-icon-codepoint(help);
       font-family: $font-icons;
       color: $color-grey;
       line-height: 1.7;

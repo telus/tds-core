@@ -16,12 +16,23 @@
     font-style:normal;
 }
 
+$core-icon-codepoints: (
+        alert: "\f103",
+        checkmark: "\f101",
+        close: "\f104",
+        help: "\f102",
+        list-checkmark: "\f105"
+);
 
+@function core-icon-codepoint($name) {
+    @return map-get($core-icon-codepoints, $name);
+}
 
-.icon {
-    
-        font-family:"TELUS Core Icons";
-    
+@mixin core-icon($name: null) {
+    @if $name {
+        content: core-icon-codepoint($name);
+    }
+    font-family:"TELUS Core Icons";
     display:inline-block;
     vertical-align:middle;
     font-weight:normal;
@@ -34,61 +45,27 @@
     -moz-osx-font-smoothing:grayscale;
 }
 
-
-
-    
-        
-        
-        
-%icon-core-alert-codepoint {
-    content:"\f103";
+.icon {
+    @include core-icon;
 }
         
 .icon-core-alert:before {
-    @extend %icon-core-alert-codepoint;
-}
-    
-        
-        
-        
-%icon-core-checkmark-codepoint {
-    content:"\f101";
+    content: core-icon-codepoint(alert);
 }
         
 .icon-core-checkmark:before {
-    @extend %icon-core-checkmark-codepoint;
+    content: core-icon-codepoint(checkmark);
 }
-    
-        
-        
-        
-%icon-core-close-codepoint {
-    content:"\f104";
-}
-        
+
 .icon-core-close:before {
-    @extend %icon-core-close-codepoint;
+   content: core-icon-codepoint(close);
 }
-    
-        
-        
-        
-%icon-core-help-codepoint {
-    content:"\f102";
-}
-        
+
 .icon-core-help:before {
-    @extend %icon-core-help-codepoint;
+    content: core-icon-codepoint(help);
 }
-    
-        
-        
-        
-%icon-core-list-checkmark-codepoint {
-    content:"\f105";
-}
-        
+
 .icon-core-list-checkmark:before {
-    @extend %icon-core-list-checkmark-codepoint;
+    content: core-icon-codepoint(list-checkmark);
 }
     
