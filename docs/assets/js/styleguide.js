@@ -171,12 +171,39 @@
     validateGreeting();
   }
 
+  function resetShapeChoices() {
+    [].forEach.call(document.querySelectorAll('.choice-states-example .choice'), function (node) {
+      if (!node.children[0].checked) {
+        node.setAttribute('class', 'choice');
+      }
+    });
+  }
+
+  function handleShapeChoice(e) {
+    resetShapeChoices();
+
+    var answers = {
+      'ten-sided-shape': ['decagon'],
+      'four-sided-shape': ['pentagon', 'square']
+    };
+
+    if (answers[e.target.name].indexOf(e.target.value) === -1 && e.target.checked) {
+      e.currentTarget.setAttribute('class', 'choice choice--error');
+    } else {
+      e.currentTarget.setAttribute('class', 'choice');
+    }
+  }
+
   function initStatesExample() {
     cacheStatesElements();
 
     HELLO_BTN.addEventListener('click', handleSendGreeting);
     HELLO_BTN.addEventListener('touchend', handleSendGreeting);
     HELLO_INPUT.addEventListener('keyup', validateGreeting);
+
+    [].forEach.call(document.querySelectorAll('.choice-states-example .choice'), function (node) {
+      node.addEventListener('change', handleShapeChoice);
+    });
   }
 
   document.addEventListener('DOMContentLoaded', function () {
