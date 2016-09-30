@@ -123,6 +123,7 @@ textarea {
   padding: 11px 16px 16px;
   border-radius: 4px;
   margin-bottom: 11px;
+  transition: background-color .1s linear;
 
   &--success {
     background: $color-green-panel;

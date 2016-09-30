@@ -121,7 +121,7 @@ Description:  Lists such as bulleted lists, check lists, and errors.
   }
 
   &--checked {
-    > .list__item {
+    > .list__item:not(.list__item--no-icon) {
       @extend %list--checked__item;
     }
   }
@@ -143,7 +143,7 @@ Description:  Lists such as bulleted lists, check lists, and errors.
   }
 
   &--error {
-    > .list__item {
+    > .list__item:not(.list__item--no-icon) {
       @extend %list--error__item;
     }
   }
