@@ -168,11 +168,13 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  &:hover:not(:checked):not(:disabled) {
-    & + .choice__text {
-      &::before {
-        border-color: $color-green;
-        box-shadow: 0 0 0 1px rgba(35, 135, 0, .25);
+  .choice:not(.choice--error) & {
+    &:hover:not(:checked):not(:disabled) {
+      & + .choice__text {
+        &::before {
+          border-color: $color-grey-dark;
+          box-shadow: 0 0 0 1px rgba(35, 135, 0, .25);
+        }
       }
     }
   }
