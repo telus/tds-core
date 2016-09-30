@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20150913 at Fri Sep 23 13:43:28 2016
+Created by FontForge 20150913 at Fri Sep 30 17:48:57 2016
  By Tom Harrison
 </metadata>
 <defs>
@@ -18,7 +18,7 @@ Created by FontForge 20150913 at Fri Sep 23 13:43:28 2016
     bbox="-0.0714286 -238 1000 762"
     underline-thickness="50"
     underline-position="-150"
-    unicode-range="U+F101-F105"
+    unicode-range="U+F101-F106"
   />
 <missing-glyph horiz-adv-x="364" 
 d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
@@ -40,5 +40,7 @@ d="M386 300q-52 -51 -131.5 -125.5t-132.5 -123.5l-53 -49q-14 -13 -33.5 -12.5t-33.
 l-11 12q13 -14 13.5 -33.5t-11.5 -33.5q-183 -199 -309 -328l307 -308q14 -13 14 -32.5t-14 -32.5l11 11q-13 -13 -32.5 -13.5t-33.5 12.5q-199 183 -318 298z" />
     <glyph glyph-name="core-list-checkmark" unicode="&#xf105;" horiz-adv-x="889" 
 d="M305 -72q-2 -4 -6 -7l-1 -1l-7 -7q-11 -13 -27 -12q-17 0 -29 13l-225 257q-10 12 -10 28t11 27.5t26 11.5t26 -11l200 -213l563 598q11 11 26 11t26 -11.5t11 -27.5t-10 -28z" />
+    <glyph glyph-name="core-caret-down" unicode="&#xf106;" horiz-adv-x="600" 
+d="M590 409q11 -12 9.5 -25t-9.5 -20l-276 -290q-6 -6 -16 -6t-16 6l-270 290q-5 5 -8.5 11.5t-3 16t8 17.5t17.5 8.5t17 -3t13 -8.5l244 -225l244 225q23 22 46 3z" />
   </font>
 </defs></svg>
