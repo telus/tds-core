@@ -49,10 +49,11 @@ block content
         div#hello-world-field.field
           label(for='hello-world') Greeting text
           div#hello-world-description.helper
-            strong Follow these directions:
-            ul.list-bullets
-              li.list-bullets__item Enter the text "Hello, World!"
-              li.list-bullets__item Don't include the quotes
+            p.text--small
+              strong Follow these directions:
+            ul.list.list--compact
+              li.list__item Enter the text "Hello, World!"
+              li.list__item Don't include the quotes
           div.field__control
             input(type='text', id='hello-world', aria-describedby='hello-world-description')
     div.button-row

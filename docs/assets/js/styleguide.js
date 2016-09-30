@@ -4,6 +4,11 @@
  */
 
 (function () {
+
+  /**
+   * Form hints example.
+   */
+
   var TRIGGERS_SELECTOR = '.ex-page .hint__trigger';
   var ACTIVE_HINT_CLASS = 'hint--active';
   var ENTER_KEYCODE = 13;
@@ -79,34 +84,99 @@
     closeHintsOnEscape();
   }
 
-  function handleSendGreeting(e) {
-    e.preventDefault();
+  /**
+   * Form states example
+   */
 
-    var input = document.getElementById('hello-world');
-    var instructions = document.querySelector('#hello-world-description > ul');
-    var fieldClass = "field field--error";
-    var helperClass = "helper helper--error";
-    var ulClass = "list-error";
+  var HELPER;
+  var HELLO_INPUT;
+  var HELLO_BTN;
+  var RULES;
 
-    if (input.value === "Hello, World!") {
-      fieldClass = "field";
-      helperClass = "helper helper--success";
-      ulClass = "list-checked";
-    }
+  function cacheStatesElements() {
+    HELPER = document.getElementById('hello-world-description');
+    HELLO_INPUT = document.getElementById('hello-world');
+    HELLO_BTN = document.getElementById('greeting-button');
+    RULES = document.querySelector('#hello-world-description > ul');
+  }
 
-    document.getElementById('hello-world-field').setAttribute('class', fieldClass);
-    document.getElementById('hello-world-description').setAttribute('class', helperClass);
-    instructions.setAttribute('class', ulClass);
-    [].forEach.call(instructions.children, function (child) {
-      child.setAttribute('class', ulClass + '__item');
+  function resetHelper() {
+    HELPER.setAttribute('class', 'helper');
+    RULES.setAttribute('class', 'list list--compact');
+    [].forEach.call(RULES.children, function (child) {
+      child.setAttribute('class', 'list__item');
     });
   }
 
-  function initStatesExample() {
-    var btn =  document.getElementById('greeting-button');
+  function hideIcon(el) {
+    el.setAttribute('class', 'list__item list__item--no-icon');
+  }
 
-    btn.addEventListener('click', handleSendGreeting);
-    btn.addEventListener('touchend', handleSendGreeting);
+  function showIcon(el) {
+    el.setAttribute('class', 'list__item');
+  }
+
+  function showAllIcons() {
+    [].forEach.call(RULES.children, showIcon);
+  }
+
+  function setListMode(mode) {
+    RULES.setAttribute('class', 'list list--compact ' + ((mode) ? 'list--' + mode : ''));
+  }
+
+  function setHelperMode(mode) {
+    HELPER.setAttribute('class', 'helper' + ((mode) ? ' helper--' + mode : ''));
+  }
+
+  function validateGreeting() {
+    if (!HELLO_INPUT.value) {
+      resetHelper();
+      return;
+    }
+
+    var correct = 0;
+
+    if (HELLO_INPUT.value.indexOf('Hello, World!') !== -1) {
+      correct++;
+      showIcon(RULES.children[0]);
+    } else {
+      hideIcon(RULES.children[0]);
+    }
+
+    if (HELLO_INPUT.value.indexOf('"') === -1) {
+      correct++;
+      showIcon(RULES.children[1]);
+    } else {
+      hideIcon(RULES.children[1]);
+    }
+
+    if (correct == 0) {
+      setHelperMode('error');
+      setListMode('error');
+      showAllIcons();
+    } else {
+      setListMode('checked');
+
+      if (correct === 1) {
+        setHelperMode();
+      } else if (correct === 2) {
+        setHelperMode('success');
+      }
+    }
+  }
+
+  function handleSendGreeting(e) {
+    e.preventDefault();
+
+    validateGreeting();
+  }
+
+  function initStatesExample() {
+    cacheStatesElements();
+
+    HELLO_BTN.addEventListener('click', handleSendGreeting);
+    HELLO_BTN.addEventListener('touchend', handleSendGreeting);
+    HELLO_INPUT.addEventListener('keyup', validateGreeting);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
