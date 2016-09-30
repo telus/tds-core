@@ -79,7 +79,38 @@
     closeHintsOnEscape();
   }
 
+  function handleSendGreeting(e) {
+    e.preventDefault();
+
+    var input = document.getElementById('hello-world');
+    var instructions = document.querySelector('#hello-world-description > ul');
+    var fieldClass = "field field--error";
+    var helperClass = "helper helper--error";
+    var ulClass = "list-error";
+
+    if (input.value === "Hello, World!") {
+      fieldClass = "field";
+      helperClass = "helper helper--success";
+      ulClass = "list-checked";
+    }
+
+    document.getElementById('hello-world-field').setAttribute('class', fieldClass);
+    document.getElementById('hello-world-description').setAttribute('class', helperClass);
+    instructions.setAttribute('class', ulClass);
+    [].forEach.call(instructions.children, function (child) {
+      child.setAttribute('class', ulClass + '__item');
+    });
+  }
+
+  function initStatesExample() {
+    var btn =  document.getElementById('greeting-button');
+
+    btn.addEventListener('click', handleSendGreeting);
+    btn.addEventListener('touchend', handleSendGreeting);
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initHintExamples();
+    initStatesExample();
   });
 })();

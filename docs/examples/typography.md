@@ -41,24 +41,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 
-<ul class="list">
-    <li>Nunc condimentum non est sed rutrum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    <li>Aenean efficitur ut nibh in tempor</li>
+<ul class="list list--bulleted">
+    <li class="list__item">Nunc condimentum non est sed rutrum</li>
+    <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    <li class="list__item">Aenean efficitur ut nibh in tempor</li>
 </ul>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 
-1. Nunc condimentum non est sed rutrum
-2. Lorem ipsum dolor sit amet, consectetur adipiscing elit
-3. Aenean efficitur ut nibh in tempor
+<ol class="list list--numbered">
+    <li class="list__item">Nunc condimentum non est sed rutrum</li>
+    <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    <li class="list__item">Aenean efficitur ut nibh in tempor</li>
+</ol>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 
-<ul class="checklist">
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
+<ul class="list list--checked">
+    <li class="list__item">One</li>
+    <li class="list__item">Two</li>
+    <li class="list__item">Three</li>
 </ul>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
@@ -67,17 +69,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut 
 
 ### Unordered
 
-<ul class="list">
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
-        <ul class="list">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.</li>
+<ul class="list list--bulleted">
+    <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
+        <ul class="list list--bulleted">
+            <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.</li>
         </ul>
     </li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
 </ul>
 
 ### Ordered
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
-    1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
-2. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+<ol class="list list--numbered">
+    <li class="list__item">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
+        <ol class="list list--alpha-lower">
+            <li class="list__item">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
+            </li>
+        </ol>
+    </li>
+    <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+</ol>

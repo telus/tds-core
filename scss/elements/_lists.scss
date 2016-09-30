@@ -1,105 +1,203 @@
 /**
 
 File:         lists.scss
-Description:  Bulleted, numbered, and special lists.
+Description:  Lists such as bulleted lists, check lists, and errors.
 
     ◡◠ ✥ ◠◡
 
     Table of Contents:
 
-    1. Defaults
-    2. Unordered lists
-    3. Ordered lists
-    4. Check lists
+    1. Style placeholders
+    2. List classes
+    3. Deprecated classes
 
 */
 
 /* ---------------------------------------
-  1. Defaults
----------------------------------------- */
+  1. Style placeholders
+----------------------------------------- */
 
-ul,
-ol {
+%list {
   padding-left: 40px;
+}
+
+%list--alpha {
+  list-style-type: upper-alpha;
+}
+
+%list--alpha-lower {
+  list-style-type: lower-alpha;
+}
+
+%list--numbered {
+  list-style-type: decimal;
+}
+
+%list--small {
+  font-size: rem(16px);
+  line-height: 1.5;
+}
+
+%list__item {
+  position: relative;
+  margin-bottom: baseline-margin(40px);
 
   li & {
-    // Since nested lists belong inside an <li>, they need some spacing added
-    // above the ul/ol element.
-    padding-top: baseline-margin(40px);
+    &:first-child {
+      padding-top: baseline-margin(40px);
+    }
+  }
+}
+
+%icon-list__item {
+  &::before {
+    font-family: $font-icons;
+    display: block;
+    position: absolute;
+  }
+}
+
+%list--bulleted__item {
+  &::before {
+    display: block;
+    position: absolute;
+    content: '\002022';
+    color: $color-purple;
+    left: -21px;
   }
 
-  li {
-    margin-bottom: baseline-margin(40px);
+  %list--bulleted__item & {
+    &::before {
+      content: '\0025e6';
+    }
+  }
+}
+
+%list--checked__item {
+  @extend %icon-list__item;
+
+  &::before {
+    @include core-icon(list-checkmark);
+
+    left: -33px;
+    color: $color-green;
+  }
+}
+
+%list--error__item {
+  @extend %icon-list__item;
+
+  &::before {
+    @include core-icon(close);
+
+    left: -33px;
+    color: $color-red;
   }
 }
 
 /* ---------------------------------------
-  2. Unordered lists
----------------------------------------- */
-
-ul {
-  list-style-type: disc;
-
-  li & {
-    list-style-type: circle;
-  }
-}
+  2.  Lists
+----------------------------------------- */
 
 .list {
-  list-style-type: none;
+  @extend %list;
 
-  > li {
-    position: relative;
+  &__item {
+    @extend %list__item;
+  }
 
-    &::before {
-      display: block;
-      content: '\002022';
-      color: $color-purple;
-      position: absolute;
-      left: -21px;
+  &--alpha {
+    @extend %list--alpha;
+  }
+
+  &--alpha-lower {
+    @extend %list--alpha-lower;
+  }
+
+  &--bulleted {
+    > .list__item {
+      @extend %list--bulleted__item;
     }
   }
 
-  li & {
-    > li {
-      &::before {
-        content: '\0025e6';
+  &--checked {
+    > .list__item {
+      @extend %list--checked__item;
+    }
+  }
+
+  &--compact {
+    padding-left: rem(30px);
+
+    &.list--checked,
+    &.list--error {
+      > .list__item::before {
+        left: -29px;
       }
     }
+
+    > .list__item {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &--error {
+    > .list__item {
+      @extend %list--error__item;
+    }
+  }
+
+  &--numbered {
+    @extend %list--numbered;
+  }
+
+  &--small {
+    @extend %list--small;
   }
 }
 
 /* ---------------------------------------
-  3. Ordered lists
----------------------------------------- */
+  3. Deprecated classes
+----------------------------------------- */
 
-ol {
-  list-style-type: decimal;
+// To enable these deprecated list classes, define
+// $thorium-enable-deprecated-list-classes: true prior to your
+// @import "thorium" directive.
 
-  > li {
-    > ol {
-      list-style-type: lower-alpha;
+@if ($enable-deprecated-list-classes) {
+  .list-alpha,
+  .list-bullets,
+  .list-checked,
+  .list-numbered {
+    @extend %list;
+
+    &__item {
+      @extend %list__item;
     }
   }
-}
 
-/* ---------------------------------------
-  4. Check lists
----------------------------------------- */
+  .list-alpha {
+    @extend %list--alpha;
 
-.checklist {
-  list-style-type: none;
-
-  > li {
-    position: relative;
-
-    &::before {
-      @extend .icon;
-      @extend %icon-core-list-checkmark-codepoint;
-
-      color: $color-green;
-      position: absolute;
-      left: -33px;
+    &--lower {
+      @extend %list--alpha-lower;
     }
+  }
+
+  .list-bullets__item {
+    @extend %list--bulleted__item;
+  }
+
+  .list-checked__item {
+    @extend %list--checked__item;
+  }
+
+  .list-small {
+    @extend %list--small;
+  }
+
+  .list-numbered {
+    @extend %list--numbered;
   }
 }

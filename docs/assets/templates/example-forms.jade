@@ -41,3 +41,19 @@ block content
             span.choice__text I agree to the Terms and Conditions
     div.button-row
       button(type='submit').button.button-primary Search
+
+  form#greeting-form.container
+    div.grid-row
+      div.medium-4
+        h2 Input states
+        div#hello-world-field.field
+          label(for='hello-world') Greeting text
+          div#hello-world-description.helper
+            strong Follow these directions:
+            ul.list-bullets
+              li.list-bullets__item Enter the text "Hello, World!"
+              li.list-bullets__item Don't include the quotes
+          div.field__control
+            input(type='text', id='hello-world', aria-describedby='hello-world-description')
+    div.button-row
+      button(type='submit')#greeting-button.button.button-primary Send Greeting

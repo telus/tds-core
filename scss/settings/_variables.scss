@@ -11,6 +11,7 @@ Description:  A central place to define site-wide values such as color codes
     1. Colours
     2. Typography
     3. Grid
+    4. Feature flags
 
 */
 
@@ -26,6 +27,8 @@ $color-grey: #54595f;
 $color-grey-dark: #2a2c2e;
 $color-grey-panel: #f7f7f8;
 $color-purple: #4b286d;
+$color-red: #c12335;
+$color-red-panel: rgba(193, 34, 52, .05);
 $color-white: #fff;
 
 $color-font: #666;
@@ -90,3 +93,24 @@ $columns: (
 );
 
 $gutter: 30px;
+
+/* ---------------------------------------
+  4.  Feature flages
+----------------------------------------- */
+
+// The "Enable Deprecated List Classes" feature flag can be turned on to
+// support old list classes:
+//
+//     .list-alpha, .list-bullets, .list-checked, and .list-numbered
+//
+// This should only be done temporarily, because it adds unnecessary size
+// to the CSS bundle. The .list block is the preferred way of styling
+// lists.
+//
+// To enable this feature, define $thorium-enable-deprecated-list-classes: true
+// prior to your @import "thorium" directive.
+$enable-deprecated-list-classes: false;
+
+@if variable-exists(thorium-enalble-deprecated-list-classes) {
+  $enable-deprecated-list-classes: $thorium-enalble-deprecated-list-classes;
+}
