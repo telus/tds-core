@@ -57,10 +57,26 @@ select {
   }
 }
 
-input {
+input,
+select {
   &:disabled {
     background-color: $color-grey-panel;
     border-color: $color-grey;
+  }
+}
+
+select,
+option {
+  appearance: none;
+  background: none;
+}
+
+select {
+  height: rem(60px);
+
+  // Hide the "drop down selector" pseudo element inserted by IE.
+  &::-ms-expand {
+    display: none;
   }
 }
 
@@ -74,6 +90,15 @@ label {
 // Prevent IE11 from color placeholders the same as regular text.
 &:-ms-input-placeholder {
   color: GrayText !important;
+}
+
+// Common styles for the "alert" and "down caret" icons that are
+// positioned around input/dropdown fields.
+%field__control__icon {
+  position: absolute;
+  top: 20px;
+  font-size: rem($body-text-size);
+  line-height: 1;
 }
 
 .field {
@@ -92,12 +117,41 @@ label {
       &::before {
         @include core-icon(alert);
 
-        position: absolute;
+        @extend %field__control__icon;
+
         right: 15px;
-        top: 20px;
         color: $color-red;
-        font-size: rem($body-text-size);
-        line-height: 1;
+      }
+
+      &.select-container::before {
+        right: 45px;
+      }
+    }
+
+    &--dropdown {
+      &::after {
+        @include core-icon(caret-down);
+
+        @extend %field__control__icon;
+
+        right: 20px;
+        color: $color-green;
+      }
+
+      .field--error & {
+        &::before {
+          right: 45px;
+        }
+
+        &::after {
+          color: $color-red;
+        }
+      }
+    }
+
+    &--disabled {
+      &::after {
+        color: $color-grey;
       }
     }
   }

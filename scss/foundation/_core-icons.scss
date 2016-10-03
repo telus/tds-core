@@ -21,7 +21,8 @@ $core-icon-codepoints: (
         checkmark: "\f101",
         close: "\f104",
         help: "\f102",
-        list-checkmark: "\f105"
+        list-checkmark: "\f105",
+        caret-down: "\f106"
 );
 
 @function core-icon-codepoint($name) {
@@ -48,24 +49,10 @@ $core-icon-codepoints: (
 .icon {
     @include core-icon;
 }
-        
-.icon-core-alert:before {
-    content: core-icon-codepoint(alert);
-}
-        
-.icon-core-checkmark:before {
-    content: core-icon-codepoint(checkmark);
-}
 
-.icon-core-close:before {
-   content: core-icon-codepoint(close);
-}
-
-.icon-core-help:before {
-    content: core-icon-codepoint(help);
-}
-
-.icon-core-list-checkmark:before {
-    content: core-icon-codepoint(list-checkmark);
+@each $name, $codepoint in $core-icon-codepoints {
+    .icon-core-#{$name}:before {
+        content: $codepoint;
+    }
 }
     

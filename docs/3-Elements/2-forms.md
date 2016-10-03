@@ -188,6 +188,64 @@ When only one choice is available, we can pare the field down to a simple `.choi
 </label>
 ```
 
+## Dropdowns
+
+---
+
+Create a dropdown by putting a label and select list inside the typical `.field` block, and modifying `.field__control` with `--dropdown`.
+
+<div class="field">
+    <label for="normal-dropdown">Dropdown Normal</label>
+    <div class="field__control field__control--dropdown">
+        <select id="normal-dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+</div>
+
+```html
+<div class="field">
+    <label for="normal-dropdown">Dropdown Normal</label>
+    <div class="field__control field__control--dropdown">
+        <select id="normal-dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+</div>
+```
+
+### Disabled dropdown
+
+Adding a `[disabled]` attribute to the `<select>` element will cause it to appear greyed out. In addition, modify `.field__control` with `--disabled` to correctly color the custom "caret" icon.
+
+<div class="field">
+    <label for="disabled-dropdown">Dropdown Disabled</label>
+    <div class="field__control field__control--dropdown field__control--disabled">
+        <select id="disabled-dropdown" disabled>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+</div>
+
+```html
+<div class="field">
+    <label for="disabled-dropdown">Dropdown Disabled</label>
+    <div class="field__control field__control--dropdown field__control--disabled">
+        <select id="disabled-dropdown" disabled>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+</div>
+```
+
 ## States
 
 ---
@@ -229,6 +287,56 @@ Wrap the input element in a `.field__control` block to ensure correct placement 
     <label for="error-field">Error state</label>
     <div class="field__control">
         <input type="text" id="error-field">
+    </div>
+</div>
+```
+
+### Dropdown states
+
+The `.field` `--success` and `--error` modifiers will also style dropdowns with visual feedback.
+
+<div class="field field--success">
+    <label for="success-dropdown">Dropdown Successful</label>
+    <div class="field__control field__control--dropdown">
+        <select id="success-dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+</div>
+
+<div class="field field--error">
+    <label for="error-dropdown">Dropdown error/message</label>
+    <div class="field__control field__control--dropdown">
+        <select id="error-dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+</div>
+
+```html
+<div class="field field--success">
+    <label for="success-dropdown">Dropdown Successful</label>
+    <div class="field__control field__control--dropdown">
+        <select id="success-dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+</div>
+
+<div class="field field--error">
+    <label for="error-dropdown">Dropdown error/message</label>
+    <div class="field__control field__control--dropdown">
+        <select id="error-dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
     </div>
 </div>
 ```
