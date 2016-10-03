@@ -89,12 +89,14 @@
    */
 
   var HELPER;
+  var HELLO_FORM;
   var HELLO_INPUT;
   var HELLO_BTN;
   var RULES;
 
   function cacheStatesElements() {
     HELPER = document.getElementById('hello-world-description');
+    HELLO_FORM = document.getElementById('greeting-form');
     HELLO_INPUT = document.getElementById('hello-world');
     HELLO_BTN = document.getElementById('greeting-button');
     RULES = document.querySelector('#hello-world-description > ul');
@@ -131,7 +133,8 @@
   function validateGreeting() {
     if (!HELLO_INPUT.value) {
       resetHelper();
-      return;
+      HELLO_INPUT.setAttribute('aria-invalid', true);
+      return false;
     }
 
     var correct = 0;
@@ -154,21 +157,33 @@
       setHelperMode('error');
       setListMode('error');
       showAllIcons();
+      HELLO_INPUT.setAttribute('aria-invalid', true);
+      return false;
     } else {
       setListMode('checked');
 
       if (correct === 1) {
         setHelperMode();
+        HELLO_INPUT.setAttribute('aria-invalid', true);
+        return false;
       } else if (correct === 2) {
         setHelperMode('success');
+        HELLO_INPUT.setAttribute('aria-invalid', false);
+        return true;
       }
     }
+  }
+
+  function handleGreetingChange(e) {
+    validateGreeting();
   }
 
   function handleSendGreeting(e) {
     e.preventDefault();
 
-    validateGreeting();
+    if (!validateGreeting()) {
+      HELLO_INPUT.focus();
+    }
   }
 
   function resetShapeChoices() {
@@ -189,16 +204,17 @@
 
     if (answers[e.target.name].indexOf(e.target.value) === -1 && e.target.checked) {
       e.currentTarget.setAttribute('class', 'choice choice--error');
+      e.target.setAttribute('aria-invalid', true);
     } else {
       e.currentTarget.setAttribute('class', 'choice');
+      e.target.setAttribute('aria-invalid', false);
     }
   }
 
   function initStatesExample() {
     cacheStatesElements();
 
-    HELLO_BTN.addEventListener('click', handleSendGreeting);
-    HELLO_BTN.addEventListener('touchend', handleSendGreeting);
+    HELLO_FORM.addEventListener('submit', handleSendGreeting);
     HELLO_INPUT.addEventListener('keyup', validateGreeting);
 
     [].forEach.call(document.querySelectorAll('.choice-states-example .choice'), function (node) {
