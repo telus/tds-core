@@ -257,6 +257,18 @@ Form states give the user feedback regarding their input. They can affirm that t
     <li class="list__item">When there's a problem, use the `.field--error` modifier.</li>
 </ul>
 
+### Accessibility
+
+See "<a href="http://webaim.org/techniques/formvalidation/">Usable and Accessible Form Validation and Error Recovery</a>" by WebAIM for useful information on making form validation accessible. Some best practices for inline error recovery are:
+
+<ul class="list list--bulleted">
+    <li class="list__item">Associate the error message to the invalid control with `aria-describedby`</li>
+    <li class="list__item">Apply `aria-invalid="true"` to the control</li>
+    <li class="list__item">Set focus to the first control which needs attention</li>
+</ul>
+
+<p><small>The [Field Helpers](#field-helpers) section contains more documentation for inline error messages.</small></p>
+
 ### Text field states
 
 Wrap the input element in a `.field__control` block to ensure correct placement of the alert icon.
@@ -271,7 +283,7 @@ Wrap the input element in a `.field__control` block to ensure correct placement 
 <div class="field field--error">
     <label for="error-field">Error state</label>
     <div class="field__control">
-        <input type="text" id="error-field">
+        <input type="text" id="error-field" aria-invalid="true">
     </div>
 </div>
 
@@ -286,7 +298,7 @@ Wrap the input element in a `.field__control` block to ensure correct placement 
 <div class="field field--error">
     <label for="error-field">Error state</label>
     <div class="field__control">
-        <input type="text" id="error-field">
+        <input type="text" id="error-field" aria-invalid="true">
     </div>
 </div>
 ```
@@ -309,7 +321,7 @@ The `.field` `--success` and `--error` modifiers will also style dropdowns with 
 <div class="field field--error">
     <label for="error-dropdown">Dropdown error/message</label>
     <div class="field__control field__control--dropdown">
-        <select id="error-dropdown">
+        <select id="error-dropdown" aria-invalid="true">
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
@@ -332,7 +344,7 @@ The `.field` `--success` and `--error` modifiers will also style dropdowns with 
 <div class="field field--error">
     <label for="error-dropdown">Dropdown error/message</label>
     <div class="field__control field__control--dropdown">
-        <select id="error-dropdown">
+        <select id="error-dropdown" aria-invalid="true">
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
@@ -352,7 +364,8 @@ Use the `.choice--error` modifier when there's a problem with an individual choi
         <span class="choice__text">Decagon</span>
     </label>
     <label for="choice-octagon" class="choice choice--error">
-        <input type="radio" id="choice-octagon" name="shape-choice" checked>
+        <input type="radio" id="choice-octagon" name="shape-choice"
+            aria-invalid="true" checked>
         <span class="choice__text">Octagon</span>
     </label>
 </fieldset>
@@ -365,7 +378,8 @@ Use the `.choice--error` modifier when there's a problem with an individual choi
         <span class="choice__text">Decagon</span>
     </label>
     <label for="choice-octagon" class="choice choice--error">
-        <input type="radio" id="choice-octagon" name="shape-choice" checked>
+        <input type="radio" id="choice-octagon" name="shape-choice"
+            aria-invalid="true" aria-invalid="true">
         <span class="choice__text">Octagon</span>
     </label>
 </fieldset>
@@ -378,7 +392,8 @@ Use the `.choice--error` modifier when there's a problem with an individual choi
         <span class="choice__text">Square</span>
     </label>
     <label for="choice-triangle" class="choice choice--error">
-        <input type="checkbox" id="choice-triangle" name="shape-choice" checked>
+        <input type="checkbox" id="choice-triangle" name="shape-choice"
+            aria-invalid="true" checked>
         <span class="choice__text">Triangle</span>
     </label>
 </fieldset>
@@ -391,7 +406,8 @@ Use the `.choice--error` modifier when there's a problem with an individual choi
         <span class="choice__text">Square</span>
     </label>
     <label for="choice-triangle" class="choice choice--error">
-        <input type="checkbox" id="choice-triangle" name="shape-choice" checked>
+        <input type="checkbox" id="choice-triangle" name="shape-choice"
+            aria-invalid="true" checked>
         <span class="choice__text">Triangle</span>
     </label>
 </fieldset>
@@ -584,6 +600,11 @@ The `--success` modifier can be used on the helper to provide positive feedback 
 
 A helper modified with `.helper--error` can give detailed instructions regarding why a form field could not be processed.
 
+<ul class="list list--bulleted">
+    <li class="list__item">The form control should be associated to the error message with `aria-describedby`</li>
+    <li class="list__item">The `aria-invalid="true"` attribute should be added to the form control</li>
+</ul>
+
 <div class="field field--error">
     <label for="omitted-field">Error state/message</label>
     <div class="helper helper--error" id="omitted-field-error">
@@ -591,7 +612,7 @@ A helper modified with `.helper--error` can give detailed instructions regarding
     </div>
     <div class="field__control">
         <input type="text" id="omitted-field" placeholder="Text"
-            aria-describedby="omitted-field-error">
+            aria-describedby="omitted-field-error" aria-invalid="true">
     </div>
 </div>
 
@@ -603,7 +624,7 @@ A helper modified with `.helper--error` can give detailed instructions regarding
     </div>
     <div class="field__control">
         <input type="text" id="omitted-field" placeholder="Text"
-            aria-describedby="omitted-field-error">
+            aria-describedby="omitted-field-error" aria-invalid="true">
     </div>
 </div>
 ```
@@ -627,7 +648,7 @@ Use the "Error List" block when a field has a complex error message.
     </div>
     <div class="field__control">
         <input type="password" id="input_f" placeholder="Enter password"
-            aria-describedby="unfortunate-error">
+            aria-describedby="unfortunate-error" aria-invalid="true">
     </div>
 </div>
 
@@ -638,7 +659,7 @@ Use the "Error List" block when a field has a complex error message.
         <p class="text--small">
             <strong>Your password must be:</strong>
         </p>
-        <ul class="list list--error">
+        <ul class="list list--error list--compact">
             <li class="list__item">
                 8 characters or longer, no spaces
             </li>
@@ -649,7 +670,7 @@ Use the "Error List" block when a field has a complex error message.
     </div>
     <div class="field__control">
         <input type="password" id="input_f" placeholder="Enter password"
-            aria-describedby="unfortunate-error">
+            aria-describedby="unfortunate-error" aria-invalid="true">
     </div>
 </div>
 ```
