@@ -12,6 +12,7 @@
     "build:docs": "cp fonts/* docs/assets/fonts/ && npm run build:docs:css && npm run build:docs:html",
     "build:docs:css": "node-sass --include-path docs/assets/scss docs/assets/scss/main.scss | postcss --use autoprefixer | cleancss > docs/assets/css/styleguide.css",
     "build:docs:html": "mkdir -p dist && wintersmith build --config=docs/config.json",
+    "build:icons": "node scripts/icons.js",
     "build:thorium": "npm run build:thorium:css",
     "build:thorium:css": "node-sass --include-path scss scss/thorium.scss | postcss --use autoprefixer | cleancss > dist/thorium.css",
     "clean": "rm -rf dist/**/* && rm -f docs/assets/css/thorium.css && rm -f docs/assets/css/styleguide.css",
@@ -32,6 +33,7 @@
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "clean-css": "^3.4.10",
+    "fontmin": "^0.9.6",
     "node-sass": "^3.4.2",
     "onchange": "^2.5.0",
     "postcss-cli": "^2.5.1",

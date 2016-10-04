@@ -15,3 +15,17 @@ npm run start:dev
 The documentation site will be available at `http://localhost:8080`.
 
 For more information about contributing, please see the [Governance - Contribution page](/docs/5-Governance/2-contributing.md).
+
+## Building and Maintaining the Icon Font
+
+Core icons are implemented as an icon font. The source file is at `./designs/core-icons.glyphs`
+
+The change process is:
+
+1. Update `./designs/core-icons.glyphs`
+2. Export an OTF file to `./fonts/core-icons.otf`
+3. Execute `npm run build:icons`
+
+This process creates EOT, TTF, and WOFF files from `./fonts/core-icons.otf` and saves them in the same directory.
+
+The next time you run `npm build`, the re-generated icons will be picked up by the documentation site.

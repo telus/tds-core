@@ -27,9 +27,12 @@ $color-grey: #54595f;
 $color-grey-dark: #2a2c2e;
 $color-grey-panel: #f7f7f8;
 $color-purple: #4b286d;
+$color-purple-light: #7841b0;
 $color-red: #c12335;
 $color-red-panel: rgba(193, 34, 52, .05);
 $color-white: #fff;
+
+// Typography colors
 
 $color-font: #666;
 $color-font-darker: $color-grey-dark;
@@ -38,6 +41,15 @@ $color-link-hover: $color-green-darker;
 $color-link-secondary: $color-grey;
 $color-link-secondary-hover: $color-grey-dark;
 $color-text: $color-font-darker;
+
+// Icon colors
+
+$color-icon-primary: $color-purple;
+$color-icon-primary-hover: $color-purple-light;
+$color-icon-secondary: $color-green-darker;
+$color-icon-secondary-hover: $color-green;
+$color-icon-disabled: $color-grey;
+$color-icon-error: $color-red;
 
 /* ---------------------------------------
   2.  Typography

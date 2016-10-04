@@ -77,7 +77,7 @@ Description:  Lists such as bulleted lists, check lists, and errors.
   @extend %icon-list__item;
 
   &::before {
-    @include core-icon(list-checkmark);
+    @include core-icon(checkmark);
 
     left: -33px;
     color: $color-green;

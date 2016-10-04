@@ -94,6 +94,7 @@ a.button {
   &-plain {
     margin: 0;
     padding: 0;
+    background-color: transparent;
   }
 
   &[disabled] {

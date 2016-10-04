@@ -357,7 +357,7 @@ $radio-checked-stroke-size: 6px;
       color: white;
       font-family: $font-icons;
       font-size: 1rem;
-      line-height: 1.7;
+      line-height: $body-line-height;
       text-align: center;
     }
   }
@@ -399,7 +399,7 @@ $radio-checked-stroke-size: 6px;
       content: core-icon-codepoint(help);
       font-family: $font-icons;
       color: $color-grey;
-      line-height: 1.7;
+      line-height: $body-line-height;
       display: inline-block;
       width: $body-text-size;
     }
