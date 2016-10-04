@@ -66,15 +66,17 @@ $font-line-height: 1.5;
 $body-text-size: 20px;
 $body-line-height: 1.4444444444;
 
+/* stylelint-disable */
+
 // Default to the CDN-hosted icons, while allowing any client project to
 // control the location icons are served from by defining
 // $thorium-icon-font-prefix in their SCSS.
-$icon-font-prefix: 'https://cdn.telus.digital/thorium/core/fonts';
+$icon-font-prefix: 'https://cdn.telus.digital/thorium/core/v0.4.0';
 
-/* stylelint-disable */
 @if variable-exists(thorium-icon-font-prefix) {
   $icon-font-prefix: $thorium-icon-font-prefix;
 }
+
 /* stylelint-enable */
 
 /* ---------------------------------------
