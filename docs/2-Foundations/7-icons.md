@@ -215,21 +215,21 @@ Icons are a helpful tool to supplement information, but should not be the only m
 **Accessible icon example**
 
 <p>
-    This sentence contains the
+    Enter a keyword, then click
     <i class="icon icon-core-spyglass">
-        <span class="accessible-hide">spyglass</span>
+        <span class="accessible-hide">the search button</span>
     </i>
-    icon.
+    to find relevant results.
 </p>
 
 ```html
 <p>
-    This sentence contains the
+    Enter a keyword, then click
     <i class="icon icon-core-spyglass">
-        <span class="accessible-hide">spyglass</span>
+        <span class="accessible-hide">the search button</span>
     </i>
-    icon.
+    to find relevant results.
 </p>
 ```
 
-That content will be read aloud by a screen reader as "this sentence contains the spyglass icon". Without the helper text, it would only be "this sentence contains the icon", which differs greatly from the code's intended meaning.
+That content will be read aloud by a screen reader as "enter a keyword, then click the search button to find relevant results". Without the helper text, it would be heard as "enter a keyword then click to find relevant results", which is not as clear.
