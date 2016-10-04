@@ -16,13 +16,15 @@ html(lang='en')
       link(rel='stylesheet', href='/assets/css/styleguide.css')
 
   body(class=bodyclass)
-    header#site-header
-      div.container
-        button.button.toggle &#9776;
-        a.logo(href="/")
+    header.docs-header
+      .container.docs-container.docs-header__container
+        button.button.docs-header__toggle
+          i.icon.icon-core-hamburger.docs-header__icon
+            span.accessible-hide Toggle Menu
+        a.docs-header__logo(href="/")
           img(src="/assets/images/logo.png" alt="")
 
-    main.container
+    main.container.docs-container
       nav.navigation
         include nav.jade
 
@@ -31,7 +33,7 @@ html(lang='en')
 
     script(src='/assets/js/prism.js')
     script.
-      var toggle = document.querySelector('button.toggle');
+      var toggle = document.querySelector('button.docs-header__toggle');
       var body = document.body;
       var resizeEventName = ('ontouchstart' in window) ? 'orientationchange' : 'resize';
       toggle.addEventListener('click', function (e) {

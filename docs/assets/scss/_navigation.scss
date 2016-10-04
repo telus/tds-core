@@ -64,12 +64,10 @@ Description:  Left-hand navigation styles
   }
 }
 
-@media screen and (max-width: 960px) {
-  .menu-active {
-    article {
-      opacity: 1;
-      -webkit-transform: translateX(200px);
-      transform: translateX(200px);
-    }
+.menu-active {
+  article {
+    opacity: 1;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
   }
 }

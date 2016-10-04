@@ -26,7 +26,7 @@ Description:  Styles for individual documentation pages
     }
   }
 
-  @media screen and (min-width: 960px) {
+  @include from-breakpoint(large) {
     margin-left: 0;
     zoom: 1;
     transform: none !important;
