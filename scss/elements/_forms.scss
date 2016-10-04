@@ -115,10 +115,11 @@ label {
 
     .field--error & {
       &::before {
-        @include core-icon(alert);
+        @include core-icon();
 
         @extend %field__control__icon;
 
+        content: core-icon-codepoint(alert);
         right: 15px;
         color: $color-red;
       }
@@ -130,10 +131,11 @@ label {
 
     &--dropdown {
       &::after {
-        @include core-icon(caret-down);
+        @include core-icon();
 
         @extend %field__control__icon;
 
+        content: core-icon-codepoint(caret-down);
         right: 20px;
         color: $color-green;
       }

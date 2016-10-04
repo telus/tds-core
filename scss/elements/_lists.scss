@@ -77,8 +77,9 @@ Description:  Lists such as bulleted lists, check lists, and errors.
   @extend %icon-list__item;
 
   &::before {
-    @include core-icon(checkmark);
+    @include core-icon();
 
+    content: core-icon-codepoint(checkmark);
     left: -33px;
     color: $color-green;
   }
@@ -88,8 +89,9 @@ Description:  Lists such as bulleted lists, check lists, and errors.
   @extend %icon-list__item;
 
   &::before {
-    @include core-icon(close);
+    @include core-icon();
 
+    content: core-icon-codepoint(incomplete);
     left: -33px;
     color: $color-red;
   }
