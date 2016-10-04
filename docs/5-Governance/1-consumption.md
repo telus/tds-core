@@ -46,14 +46,14 @@ Add a link to the CDN-hosted thorium.css file into the `<head>` of your page.
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://cdn.telus.digital/thorium/core/v0.3.1/thorium.min.css">
+  href="https://cdn.telus.digital/thorium/core/v0.4.0/thorium.min.css">
 ```
 
 ## Versioning
 
 ---
 
-Thorium uses <a href="http://semver.org/" target="_blank">semantic versioning</a> to number its releases. Basically, a number like `0.3.1` has three parts from left to right:
+Thorium uses <a href="http://semver.org/" target="_blank">semantic versioning</a> to number its releases. Basically, a number like `0.4.0` has three parts from left to right:
 
 <ol>
 <li>The **MAJOR** version - increments when backwards-incompatible changes are released.</li>
@@ -69,6 +69,6 @@ Files published to the Thorium CDN will have their version number in the URL. Si
 
 ### Choosing an NPM module version
 
-The version constraints in your package.json file control which version of Thorium gets pulled in. NPM by default will choose a constraint like `^0.3.1` when the `--save` command line flag is used. This allows major version changes (bug fixes and new backwards-compatible features).
+The version constraints in your package.json file control which version of Thorium gets pulled in. NPM by default will choose a constraint like `^0.4.0` when the `--save` command line flag is used. This allows major version changes (bug fixes and new backwards-compatible features).
 
 Try out the <a href="http://jubianchi.github.io/semver-check/" target="_blank">online semver checker</a> if you'd like to experiment with adjusting your project's constraints.
