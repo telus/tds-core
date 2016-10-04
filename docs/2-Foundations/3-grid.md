@@ -1,5 +1,5 @@
 ---
-title: Grids
+title: Grid
 template: doc.jade
 ---
 
