@@ -45,6 +45,15 @@ Description:  Styles for individual documentation pages
 
 .content {
   padding: 2.2rem 5%;
+
+  > table {
+    width: 100%;
+
+    th {
+      text-align: left;
+      font-weight: 800;
+    }
+  }
 }
 
 .section {
