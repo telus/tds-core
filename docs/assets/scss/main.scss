@@ -1,6 +1,7 @@
 $thorium-icon-font-prefix: '/assets/fonts';
 
 @import '../../../scss/thorium';
+@import "variables";
 @import 'global';
 @import 'typography';
 @import 'layout';

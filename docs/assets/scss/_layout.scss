@@ -14,9 +14,10 @@ Description:  Structural styles
 .container {
   height: 100%;
   width: 100%;
+}
 
-  // TODO: Remove when DSR-1 is implemented.
-  @media (min-width: 1170px) {
-    max-width: 1160px;
+.docs-container {
+  @include from-breakpoint(large) {
+    max-width: $docs-max-width;
   }
 }
