@@ -10,20 +10,24 @@
 }
 
 $core-icon-codepoints: (
-  alert: "\f103",
+  alert: "\f103", // Deprecated in v0.4.1, 10/5/16 - use "exclamation-point-circle"
   caret-down: "\f105",
   caret-up: "\f106",
   checkmark: "\f101",
   chevron: "\f107",
-  close: "\f104",
-  dash: "\f109",
+  close: "\f104", // Deprecated in v0.4.1, 10/5/16 - use "times"
+  dash: "\f109", // Deprecated in v0.4.1, 10/5/16 - use "minus"
+  exclamation-point-circle: "\f103",
   expander: "\f113",
   hamburger: "\f112",
-  help: "\f102",
+  help: "\f102", // Deprecated in v0.4.1, 10/5/16 - use "question-mark-circle"
   incomplete: "\f104",
   location: "\f110",
+  minus: "\f109",
   plus: "\f108",
-  spyglass: "\f111"
+  question-mark-circle: "\f102",
+  spyglass: "\f111",
+  times: "\f104"
 );
 
 @function core-icon-codepoint($name) {
@@ -71,9 +75,12 @@ $core-icon-codepoints: (
     color: $color-red;
   }
 
-  &--disabled,
-  &--disabled:hover {
-    color: $color-grey;
+  &--disabled {
+    color: $color-icon-disabled;
+
+    &--disabled:hover {
+      color: $color-icon-disabled-hover;
+    }
   }
 
   &--fw {
@@ -99,7 +106,9 @@ $core-icon-codepoints: (
   }
 }
 
-.icon-core-alert {
+.icon-core-alert,
+.icon-core-exclamation-point-circle,
+.icon-core-incomplete {
   @include icon-fixed-color($color-red);
 }
 
@@ -107,14 +116,8 @@ $core-icon-codepoints: (
   @include icon-fixed-color($color-green);
 }
 
-.icon-core-expander {
+.icon-core-expander,
+.icon-core-help,
+.icon-core-question-mark-circle {
   @include icon-fixed-color($color-grey);
-}
-
-.icon-core-help {
-  @include icon-fixed-color($color-grey);
-}
-
-.icon-core-incomplete {
-  @include icon-fixed-color($color-red);
 }

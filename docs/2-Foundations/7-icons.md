@@ -30,10 +30,15 @@ template: doc.jade
                 `location`
             </p>
             <p>
-                <i class="icon icon-core-close icon--fw"></i>
-                <i class="icon icon-core-close icon--fw icon--secondary"></i>
-                <i class="icon icon-core-close icon--fw icon--disabled"></i><br>
-                `close`
+                <i class="icon icon-core-times icon--fw"></i>
+                <i class="icon icon-core-times icon--fw icon--secondary"></i>
+                <i class="icon icon-core-times icon--fw icon--disabled"></i>
+                <i class="icon icon-core-times icon--fw icon--error"></i><br>
+                `times`
+            </p>
+            <p>
+                <i class="icon icon-core-expander icon--fw"></i><br>
+                `expander`
             </p>
         </div>
         <div class="medium-4">
@@ -57,33 +62,25 @@ template: doc.jade
                 `plus`
             </p>
             <p>
-                <i class="icon icon-core-dash icon--fw"></i>
-                <i class="icon icon-core-dash icon--fw icon--secondary"></i>
-                <i class="icon icon-core-dash icon--fw icon--disabled"></i><br>
-                `dash`
-            </p>
-            <p>
-                <i class="icon icon-core-expander icon--fw"></i><br>
-                `expander`
+                <i class="icon icon-core-minus icon--fw"></i>
+                <i class="icon icon-core-minus icon--fw icon--secondary"></i>
+                <i class="icon icon-core-minus icon--fw icon--disabled"></i><br>
+                `minus`
             </p>
         </div>
         <div class="medium-4">
             <h3>Instructive</h3>
             <p>
-                <i class="icon icon-core-help icon--fw"></i><br>
-                `help`
+                <i class="icon icon-core-question-mark-circle icon--fw"></i><br>
+                `question-mark-circle`
             </p>
             <p>
                 <i class="icon icon-core-checkmark icon--fw"></i><br>
                 `checkmark`
             </p>
             <p>
-                <i class="icon icon-core-incomplete icon--fw"></i><br>
-                `incomplete`
-            </p>
-            <p>
-                <i class="icon icon-core-alert icon--fw"></i><br>
-                `alert`
+                <i class="icon icon-core-exclamation-point-circle icon--fw"></i><br>
+                `exclamation-point-circle`
             </p>
         </div>
     </div>
@@ -204,6 +201,7 @@ Variable | Value
 `$color-icon-secondary` | <span style="color: #177a00;">#177a00</span>
 `$color-icon-secondary-hover` | <span style="color: #248700;">#248700</span>
 `$color-icon-disabled` | <span style="color: #54595f;">#54595f</span>
+`$color-icon-disabled-hover` | <span style="color: #6a6e74;">#6a6e74</span>
 `$color-icon-error` | <span style="color: #c12335;">#c12335</span>
 
 ## Accessibility
