@@ -127,7 +127,7 @@ label {
 
         top: 50%;
         transform: translateY(-50%);
-        content: core-icon-codepoint(alert);
+        content: core-icon-codepoint(exclamation-point-circle);
         right: 15px;
         color: $color-red;
       }
@@ -426,7 +426,7 @@ $radio-checked-stroke-size: 6px;
     width: $body-text-size;
 
     &::before {
-      content: core-icon-codepoint(help);
+      content: core-icon-codepoint(question-mark-circle);
       font-family: $font-icons;
       color: $color-grey;
       line-height: $body-line-height;

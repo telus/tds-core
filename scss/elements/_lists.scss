@@ -91,7 +91,7 @@ Description:  Lists such as bulleted lists, check lists, and errors.
   &::before {
     @include core-icon();
 
-    content: core-icon-codepoint(incomplete);
+    content: core-icon-codepoint(times);
     left: -33px;
     color: $color-red;
   }
