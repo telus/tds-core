@@ -90,6 +90,7 @@
 
   var HELPER;
   var HELLO_FORM;
+  var HELLO_FIELD;
   var HELLO_INPUT;
   var HELLO_BTN;
   var RULES;
@@ -97,6 +98,7 @@
   function cacheStatesElements() {
     HELPER = document.getElementById('hello-world-description');
     HELLO_FORM = document.getElementById('greeting-form');
+    HELLO_FIELD = document.getElementById('hello-world-field');
     HELLO_INPUT = document.getElementById('hello-world');
     HELLO_BTN = document.getElementById('greeting-button');
     RULES = document.querySelector('#hello-world-description > ul');
@@ -158,6 +160,7 @@
       setListMode('error');
       showAllIcons();
       HELLO_INPUT.setAttribute('aria-invalid', true);
+      HELLO_FIELD.setAttribute('class', 'field field--error');
       return false;
     } else {
       setListMode('checked');
@@ -165,10 +168,12 @@
       if (correct === 1) {
         setHelperMode();
         HELLO_INPUT.setAttribute('aria-invalid', true);
+        HELLO_FIELD.setAttribute('class', 'field');
         return false;
       } else if (correct === 2) {
         setHelperMode('success');
         HELLO_INPUT.setAttribute('aria-invalid', false);
+        HELLO_FIELD.setAttribute('class', 'field');
         return true;
       }
     }
