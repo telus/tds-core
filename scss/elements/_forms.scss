@@ -19,11 +19,14 @@ Description:  Styles for various form elements live here.
   1.  Defaults
 ---------------------------------------- */
 
+$form-field-border-radius: 4px;
+$form-field-bottom-spacing: 18px;
+
 input:not([type='radio']),
 textarea,
 select {
   border: 1px solid $color-grey-light;
-  border-radius: 4px;
+  border-radius: $form-field-border-radius;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
   color: $color-grey-dark;
   font-family: $font-telus;
@@ -33,10 +36,10 @@ select {
   outline: 0;
   padding: 15px;
   width: 100%;
-  transition: border-color .1s linear;
+  transition: border-color .1s linear, background-color .1s linear;
 
   .field & {
-    margin-bottom: 18px;
+    margin-bottom: $form-field-bottom-spacing;
   }
 
   .field--error & {
@@ -96,9 +99,9 @@ label {
 // positioned around input/dropdown fields.
 %field__control__icon {
   position: absolute;
-  top: 20px;
   font-size: rem($body-text-size);
   line-height: 1;
+  display: block;
 }
 
 .field {
@@ -112,6 +115,9 @@ label {
 
   &__control {
     position: relative;
+    background: $color-white;
+    border-radius: $form-field-border-radius;
+    margin-bottom: $form-field-bottom-spacing;
 
     .field--error & {
       &::before {
@@ -119,6 +125,8 @@ label {
 
         @extend %field__control__icon;
 
+        top: 50%;
+        transform: translateY(-50%);
         content: core-icon-codepoint(alert);
         right: 15px;
         color: $color-red;
@@ -136,6 +144,7 @@ label {
         @extend %field__control__icon;
 
         content: core-icon-codepoint(caret-down);
+        top: 20px;
         right: 20px;
         color: $color-green;
       }
@@ -154,6 +163,25 @@ label {
     &--disabled {
       &::after {
         color: $color-grey;
+      }
+    }
+
+    // The red "alert" icon should be hidden when a field w/ an error is in
+    // focus. Since the icon is a pseudo element which can't be targeted with
+    // a sibling selector, we absolutely position it underneath the form input,
+    // and make the input's background transparent on focus.
+    //
+    // The .field__control parent element is the same size as the input and
+    // is colored white, to support placing form fields on a non-white bg.
+    input:not([type='radio']):not([type='checkbox']),
+    select,
+    textarea {
+      background: transparent;
+      margin-bottom: 0;
+      position: relative;
+
+      &:focus {
+        background: $color-white;
       }
     }
   }
