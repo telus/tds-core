@@ -108,17 +108,9 @@ This is the "Caret (down)" icon
 
 The default ("primary") icon display is purple [[1]](#color-footnote). Modifier classes make it possible to style icons differently.
 
-<ul class="list list--bulleted">
-    <li class="list__item">
-        `--secondary` colors an icon green to indicate a secondary action
-    </li>
-    <li class="list__item">
-        `--disabled` colors an icon grey to indicate the action is turned off
-    </li>
-    <li class="list__item">
-        `--error` colors an icon red to indicate a problem
-    </li>
-</ul>
+* `--secondary` colors an icon green to indicate a secondary action
+* `--disabled` colors an icon grey to indicate the action is turned off
+* `--error` colors an icon red to indicate a problem
 
 **Examples of icons with modified colors**
 

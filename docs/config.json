@@ -13,7 +13,8 @@
     "fs": "fs"
   },
   "plugins": [
-    "./docs/assets/plugins/nav.js"
+    "./docs/assets/plugins/nav.js",
+    "./docs/assets/plugins/markdown-rendering.js"
   ],
   "jade": {
     "pretty": true
