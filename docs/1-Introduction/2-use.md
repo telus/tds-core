@@ -19,7 +19,7 @@ Review the Components section, to familiarize yourself with the existing compone
 
 **Step 3.** 
 
-Download [thorium.sketch](https://github.com/telusdigital/telus-thorium-core/blob/master/designs/thorium.sketch) and throium.fonts.zip—install the fonts.
+Download [thorium.sketch](/assets/downloads/thorium.sketch) and throium.fonts.zip—install the fonts.
 
 **Step 4.** 
 
