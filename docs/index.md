@@ -7,8 +7,6 @@ The TELUS design system makes it easier to build & maintain digital experiences.
 
 ## Get Started with Thorium
 
-<ul class="list list--bulleted">
-    <li class="list__item">The latest release is v0.4.0</li>
-    <li class="list__item">[Add Thorium's code to your project](/5-Governance/1-consumption.html)</li>
-    <li class="list__item">[Download the master Sketch file](/assets/downloads/thorium.sketch)</li>
-</ul>
+* The latest release is v0.4.0
+* [Add Thorium's code to your project](/5-Governance/1-consumption.html)
+* [Download the master Sketch file](/assets/downloads/thorium.sketch)

@@ -9,28 +9,22 @@ template: doc.jade
 
 **Keep forms as simple as possible**
 
-<ul class="list list--bulleted">
-    <li class="list__item">Only ask for the information you absolutely need</li>
-    <li class="list__item">If you do ask for optional information, mark the labels of optional fields with '(optional)'</li>
-    <li class="list__item">Don't mark mandatory fields with asterisks</li>
-</ul>
+* Only ask for the information you absolutely need
+* If you do ask for optional information, mark the labels of optional fields with '(optional)'
+* Don't mark mandatory fields with asterisks
 
 **Form fields**
 
-<ul class="list list--bulleted">
-    <li class="list__item">Left-align labels, input fields, buttons and helper text</li>
-    <li class="list__item">Input boxes should invoke the appropriate mobile OS keyboard based on type</li>
-    <li class="list__item">Help prevent people from making errors; e.g. date pickers ensures correct date format</li>
-    <li class="list__item">Perform inline validation and provide clear error messages to resolve</li>
-</ul>
+* Left-align labels, input fields, buttons and helper text
+* Input boxes should invoke the appropriate mobile OS keyboard based on type
+* Help prevent people from making errors; e.g. date pickers ensures correct date format
+* Perform inline validation and provide clear error messages to resolve
 
 **Form focus states**
 
-<ul class="list list--bulleted">
-    <li class="list__item">Interactive UI elements (buttons, links, menus, etc.) should have visible focus when swiped to / tapped</li>
-    <li class="list__item">Click on the label or inside the form field to show the focus state</li>
-    <li class="list__item">Focus should not get lost or reset to the top when interacting with UI elements</li>
-</ul>
+* Interactive UI elements (buttons, links, menus, etc.) should have visible focus when swiped to / tapped
+* Click on the label or inside the form field to show the focus state
+* Focus should not get lost or reset to the top when interacting with UI elements
 
 ## Text input fields
 
@@ -82,11 +76,9 @@ Adding the standard `[disabled]` HTML attribute will cause an input to appear gr
 
 A selection input allows a user to choose one, or many values from a set.
 
-<ul class="list list--bulleted">
-    <li class="list__item">The choices are grouped together by a `<fieldset>` tag</li>
-    <li class="list__item">Each input should have its own `<label>`</li>
-    <li class="list__item">The grouping is described as a whole by a `<legend>` or `<h1>` tag within the fieldset</li>
-</ul>
+* The choices are grouped together by a `<fieldset>` tag
+* Each input should have its own `<label>`
+* The grouping is described as a whole by a `<legend>` or `<h1>` tag within the fieldset
 
 ### Radio inputs
 
@@ -252,20 +244,16 @@ Adding a `[disabled]` attribute to the `<select>` element will cause it to appea
 
 Form states give the user feedback regarding their input. They can affirm that the user's input was correct, or highlight errors that must be corrected.
 
-<ul class="list list--bulleted">
-    <li class="list__item">Modify the `.field` block with `.field--success` when its input is correct.</li>
-    <li class="list__item">When there's a problem, use the `.field--error` modifier.</li>
-</ul>
+* Modify the `.field` block with `.field--success` when its input is correct.
+* When there's a problem, use the `.field--error` modifier.
 
 ### Accessibility
 
 See "<a href="http://webaim.org/techniques/formvalidation/">Usable and Accessible Form Validation and Error Recovery</a>" by WebAIM for useful information on making form validation accessible. Some best practices for inline error recovery are:
 
-<ul class="list list--bulleted">
-    <li class="list__item">Associate the error message to the invalid control with `aria-describedby`</li>
-    <li class="list__item">Apply `aria-invalid="true"` to the control</li>
-    <li class="list__item">Set focus to the first control which needs attention</li>
-</ul>
+* Associate the error message to the invalid control with `aria-describedby`
+* Apply `aria-invalid="true"` to the control
+* Set focus to the first control which needs attention
 
 <p><small>The [Field Helpers](#field-helpers) section contains more documentation for inline error messages.</small></p>
 
@@ -473,12 +461,10 @@ The `.button-row` block can be used to achieve the correct spacing between a for
 
 When laying out fields that'll potentially fill the entire viewport, the responsive grid should be used to constrain their maximum width to these limits:
 
-<ul class="list list--bulleted">
-    <li class="list__item">**Small & XS**: 12 columns</li>
-    <li class="list__item">**Medium**: 7 columns</li>
-    <li class="list__item">**Large**: 5 columns</li>
-    <li class="list__item">**XL**: 4 columns</li>
-</ul>
+* **Small & XS**: 12 columns
+* **Medium**: 7 columns
+* **Large**: 5 columns
+* **XL**: 4 columns
 
 These limits can be achieved by combining grid column helpers (`.medium-7.large-5.xl-4`) or with the block `.field-col`
 
@@ -520,11 +506,9 @@ A field helper offers the user a detailed explanation of the input expected by a
 
 Use `aria-describedby` to accessibly mark up the relationship between the input field and the helper text.
 
-<ul class="list list--bulleted">
-    <li class="list__item">Assign the helper block a unique `id` attribute.</li>
-    <li class="list__item">Add an `aria-describedby` attribute to the input element.</li>
-    <li class="list__item">Make the helper's id the value of `aria-describedby`.</li>
-</ul>
+* Assign the helper block a unique `id` attribute.</li>
+* Add an `aria-describedby` attribute to the input element.
+* Make the helper's id the value of `aria-describedby`.
 
 ### Standard field helper
 
@@ -600,10 +584,8 @@ The `--success` modifier can be used on the helper to provide positive feedback 
 
 A helper modified with `.helper--error` can give detailed instructions regarding why a form field could not be processed.
 
-<ul class="list list--bulleted">
-    <li class="list__item">The form control should be associated to the error message with `aria-describedby`</li>
-    <li class="list__item">The `aria-invalid="true"` attribute should be added to the form control</li>
-</ul>
+* The form control should be associated to the error message with `aria-describedby`
+* The `aria-invalid="true"` attribute should be added to the form control
 
 <div class="field field--error">
     <label for="omitted-field">Error state/message</label>
@@ -681,13 +663,11 @@ Use the "Error List" block when a field has a complex error message.
 
 Hints provide information a user may need to complete a form field. While a label is the succint, essential text identifying the purpose of an input field, a hint can be used to provide more detailed instructions.
 
-<ul class="list list--bulleted">
-    <li class="list__item">A hinted input should have an `aria-describedby` attribute whose value is the `id` of the hint text.</li>
-    <li class="list__item">The hint should not be nested inside the `<label>` tag.</li>
-    <li class="list__item">Modify the `.field` block with `.field--hinted` to position the icon correctly relative to the label.</li>
-    <li class="list__item">Modify the `.hint` block with `.hint--active` to reveal the speech bubble.</li>
-    <li class="list__item">Toggle the text's `aria-hidden` attribute when the button hides or shows the tooltip.</li>
-</ul>
+* A hinted input should have an `aria-describedby` attribute whose value is the `id` of the hint text.
+* The hint should not be nested inside the `<label>` tag.
+* Modify the `.field` block with `.field--hinted` to position the icon correctly relative to the label.
+* Modify the `.hint` block with `.hint--active` to reveal the speech bubble.
+* Toggle the text's `aria-hidden` attribute when the button hides or shows the tooltip.
 
 <div id="example-hint" class="field field--hinted">
     <label for="hinted-field">Interactive hint</label>

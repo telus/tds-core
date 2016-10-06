@@ -34,6 +34,7 @@
     "autoprefixer": "^6.3.3",
     "clean-css": "^3.4.10",
     "fontmin": "^0.9.6",
+    "marked": "~0.3.5",
     "node-sass": "^3.4.2",
     "onchange": "^2.5.0",
     "postcss-cli": "^2.5.1",
