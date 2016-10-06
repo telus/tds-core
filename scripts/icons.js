@@ -6,42 +6,87 @@
  *
  * Uses ../fonts/core-icons.otf as its input, and produces ttf, eot, woff, and svg
  * files in the same directory.
+ *
+ * @requires ttfautohint v1.5+
  */
 
 var Fontmin = require('fontmin');
 var path = require('path');
+var exec = require('child_process').exec;
 
+// destPath is the directory in which the generated webfonts will be saved.
 var destPath = path.resolve(__dirname, '..', 'fonts');
+
+// otfPath is the full path to an .OTF file from which all web fonts will be generated.
 var otfPath = path.resolve(__dirname, '..', 'fonts', 'core-icons.otf');
-var ttfPath = path.resolve(__dirname, '..', 'fonts', 'core-icons.ttf');
 
-var conversions = [
-  Fontmin.ttf2eot(),
-  Fontmin.ttf2woff()
-];
+/**
+ * Run ttfautohint on a TTF file to improve its appearance on Windows.
+ *
+ * @param ttfFile The file to be hinted. It'll be replaced with its hinted version.
+ * @returns {Promise}
+ */
+function applyAutohinting(ttfFile) {
+  var dest = path.resolve(
+    path.dirname(ttfFile),
+    path.basename(ttfFile, '.ttf') + '-hinted.ttf'
+  );
 
-// First produce a TTF file from the OTF.
-var fontmin = new Fontmin()
-  .src(otfPath)
-  .dest(destPath)
-  .use(Fontmin.otf2ttf());
+  var hintCommand = [
+    `ttfautohint ${ttfFile} ${dest}`,
+    `rm ${ttfFile}`,
+    `mv ${dest} ${ttfFile}`
+  ].join(' && ');
 
-fontmin.run(function (err, files) {
-  if (err) {
-    throw err;
-  } else {
-    // Now use the TTF as the source for building EOT, WOFF, and SVG fonts.
-    conversions.forEach(function (conversion) {
-      var job = new Fontmin()
-        .src(ttfPath)
-        .dest(destPath)
-        .use(conversion);
-
-      job.run(function (err2, files2) {
-        if (err2) {
-          throw err2;
-        }
-      });
+  return new Promise(function (resolve, reject) {
+    exec(hintCommand, function (err, stdout, stderr) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(ttfFile);
+      }
     });
-  }
-});
+  });
+}
+
+/**
+ * Promisify Fontmin's run() function.
+ *
+ * @param job A Fontmin instance to be run
+ * @returns {Promise}
+ */
+function runFontminJob(job) {
+  return new Promise(function (resolve, reject) {
+    job.run(function (err, files) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(files);
+      }
+    });
+  });
+}
+
+/**
+ * Convert the source OTF to TTF
+ * Auto-hint the TTF
+ * Convert the TTF to EOT and WOFF
+ */
+runFontminJob(new Fontmin().src(otfPath).dest(destPath).use(Fontmin.otf2ttf()))
+  .then(function (files) {
+    if (files.length !== 1) {
+      throw 'Unable to find generated TTF webfont';
+    } else {
+      return applyAutohinting(files[0].path);
+    }
+  })
+  .then(function (hintedTtf) {
+    return Promise.all([
+      runFontminJob(new Fontmin().src(hintedTtf).dest(destPath).use(Fontmin.ttf2eot())),
+      runFontminJob(new Fontmin().src(hintedTtf).dest(destPath).use(Fontmin.ttf2woff()))
+    ])
+  })
+  .catch(function (err) {
+    console.log('Failed to generate webfonts:', err);
+    process.exit(1);
+  });
