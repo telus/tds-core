@@ -9,7 +9,7 @@
     "start": "npm run start:docs",
     "start:dev": "export NODE_ENV=dev && npm run start",
     "build:css": "npm run lint:css && npm run build:thorium:css && npm run build:docs:css",
-    "build:docs": "cp fonts/* docs/assets/fonts/ && npm run build:docs:css && npm run build:docs:html",
+    "build:docs": "cp fonts/* docs/assets/fonts/ && cp designs/thorium.sketch docs/assets/downloads/thorium.sketch && npm run build:docs:css && npm run build:docs:html",
     "build:docs:css": "node-sass --include-path docs/assets/scss docs/assets/scss/main.scss | postcss --use autoprefixer | cleancss > docs/assets/css/styleguide.css",
     "build:docs:html": "mkdir -p dist && wintersmith build --config=docs/config.json",
     "build:icons": "node scripts/icons.js",
