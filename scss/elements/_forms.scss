@@ -237,6 +237,7 @@ $radio-checked-stroke-size: 6px;
 
   &__text {
     color: $color-grey;
+    font-weight: normal;
   }
 }
 
@@ -305,7 +306,7 @@ $radio-checked-stroke-size: 6px;
       border: solid 1px $color-grey;
       height: 22px;
       width: 22px;
-      line-height: 1;
+      line-height: 1.4;
       transition: all .1s linear;
     }
   }
@@ -387,7 +388,6 @@ $radio-checked-stroke-size: 6px;
       color: white;
       font-family: $font-icons;
       font-size: 1rem;
-      line-height: $body-line-height;
       text-align: center;
     }
   }

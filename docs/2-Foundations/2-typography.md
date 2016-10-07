@@ -35,10 +35,10 @@ To create consistent leading the line height is set to double the value of the b
 
 ### Sentence case
 
-*Easier to read in long titling
-*Easier to spot proper nouns
-*Easier to explain the format to designer and developers
-*Looks friendlier and less formal
+* Easier to read in long titling
+* Easier to spot proper nouns
+* Easier to explain the format to designer and developers
+* Looks friendlier and less formal
 
 
 ## Fonts
@@ -98,31 +98,25 @@ Tertiary headline; tops of content buckets.
 <div class="heading-3">Heading 3</div>
 ```
 
+#### Heading 4
+
+Quaternary headline.
+
+```html
+<h4>Heading 4</h4>
+<div class="heading-4">Heading 4</div>
+```
+
 ## Body & Subhead
 
 ---
 
-### Styles
-
-<p class="subhead">large/subhead</p>
-
-Can be used to above large/body to create additional context.
-
-<div class="example example--type">
-    <header class="subhead example__header">Example</header>
-    <div class="subhead">Large subhead text.</div>
-</div>
-
-```html
-<div class="subhead">Large subhead text.</div>
-```
-
-<p class="subhead">large/body</p>
+### Standard text
 
 Primary copy; highest importance level of content.
 
 <div class="example example--type">
-    <header class="subhead example__header">Example</header>
+    <header class="heading-3">Example</header>
     <p>Large body text.</p>
     <div class="text">Also large body text.</div>
 </div>
@@ -133,31 +127,31 @@ Primary copy; highest importance level of content.
 <div class="text">Also large body text.</div>
 ```
 
-<p class="subhead">small/subhead</p>
+### Medium text
 
-Used as an eyebrow treatment for large/body and small/body.
+Secondary copy; content of lesser importance.
 
 <div class="example example--type">
-    <header class="subhead example__header">Example</header>
-    <div class="subhead subhead--small">Small subhead text</div>
+    <header class="heading-3">Example</header>
+    <p class="text text--medium">Medium body text</p>
 </div>
 
 ```html
-<div class="subhead subhead--small">Small subhead text</div>
+<p class="text text--medium">Medium body text</p>
 ```
 
-<p class="subhead">small/body</p>
+### Small text
 
-Secondary copy; lowest importance level of of content.
+Tertiary copy; lowest importance level of of content.
 
 <div class="example example--type">
-    <header class="subhead example__header">Example</header>
-    <div class="text--small">Small body text.</div>
+    <header class="heading-3">Example</header>
+    <div class=" text text--small">Small body text.</div>
     <small>This is also small body text.</small>
 </div>
 
 ```html
-<div class="text--small">Small body text.</div>
+<div class="text text--small">Small body text.</div>
 <small>This is also small body text.</small>
 ```
 
@@ -196,7 +190,7 @@ The large and small text links inherit their parent styles; body large and body 
 - Use descriptive hyperlinks (e.g. “log into your account”), not just “click here” or “learn more”
 - Use sentence case
 
-<p class="subhead">Primary links</p>
+### Primary links
 
 body/large/link-primary-normal<br>
 body/large/link-primary-hover
@@ -204,7 +198,7 @@ body/large/link-primary-hover
 *Usage: Highest importance level of content*
 
 <div class="example example--type">
-    <header class="subhead example__header">Example</header>
+    <header class="heading-3">Example</header>
     <a href="#">View the current page</a>
 </div>
 
@@ -212,7 +206,7 @@ body/large/link-primary-hover
 <a href="#">View the current page</a>
 ```
 
-<p class="subhead">Small primary links</p>
+### Small primary links
 
 body/small/link-primary-normal<br>
 body/small/link-primary-hover
@@ -220,7 +214,7 @@ body/small/link-primary-hover
 *Usage: Lowest importance level of content*
 
 <div class="example example--type">
-    <header class="subhead example__header">Example</header>
+    <header class="heading-3">Example</header>
     <small><a href="#">View another page</a></small>
 </div>
 
@@ -228,13 +222,13 @@ body/small/link-primary-hover
 <small><a href="#">View another page</a></small>
 ```
 
-<p class="subhead">Secondary links</p>
+### Secondary links
 
 body/large/link-secondary-normal<br>
 body/large/link-secondary-hover
 
 <div class="example example--type">
-    <header class="subhead example__header">Example</header>
+    <header class="heading-3">Example</header>
     <a class="link--secondary" href="#">Secondary link</a>
 </div>
 
@@ -242,13 +236,13 @@ body/large/link-secondary-hover
 <a class="link--secondary" href="#">Secondary link</a>
 ```
 
-<p class="subhead">Small secondary links</p>
+### Small secondary links
 
 body/small/link-secondary-normal<br>
 body/small/link-secondary-hover
 
 <div class="example example--type">
-    <header class="subhead example__header">Example</header>
+    <header class="heading-3">Example</header>
     <small><a class="link link--secondary" href="#">Small secondary link</a></small>
 </div>
 

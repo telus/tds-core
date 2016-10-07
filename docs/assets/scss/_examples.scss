@@ -26,12 +26,18 @@ Description:  Styling for examples in-line with documentation
   &--type {
     padding-left: 2rem;
   }
-
-  &__header {
-    padding-bottom: 1rem;
-  }
 }
 
 #example-hint {
   margin-top: 115px;
+}
+
+.type-examples {
+  .grid-row {
+    margin-bottom: 3rem;
+  }
+
+  .heading-2 {
+    margin-top: 3rem;
+  }
 }

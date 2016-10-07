@@ -21,8 +21,6 @@ Modifiers such as `.list--bulleted` can change the bullet style and text formatt
 
 Bulleted lists should be created using the `<ul>` tag since the order of their items is not important.
 
-<div class="subhead">Example bulleted list</div>
-
 <ul class="list list--bulleted">
     <li class="list__item">Nunc condimentum non est sed rutrum</li>
     <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -50,8 +48,6 @@ Bulleted lists should be created using the `<ul>` tag since the order of their i
 ### Small bulleted list
 
 The `.list--small` modifier can be used on any type of list to create small type.
-
-<div class="subhead">Example small bulleted list</div>
 
 <ul class="list list--bulleted list--small">
     <li class="list__item">Nunc condimentum non est sed rutrum</li>
@@ -83,8 +79,6 @@ The `.list--small` modifier can be used on any type of list to create small type
 ---
 
 The `.list--numbered` modifier and `<ol>` element mark up a list in which the items are in numerical order. The `.list--alpha` and `.list--alpha-lower` modifier are available for making nested lists beginning with letters instead of numbers.
-
-<div class="subhead">Example numbered list</div>
 
 <ol class="list list--numbered">
     <li class="list__item">Nunc condimentum non est sed rutrum
@@ -123,8 +117,6 @@ The `.list--numbered` modifier and `<ol>` element mark up a list in which the it
 ### Small numbered list
 
 Just like creating a small version of a bulleted list, you can make a small numbered list with the `.list--numbered` and `.list--small` modifiers.
-
-<div class="subhead">Example small numbered list</div>
 
 <ol class="list list--numbered list--small">
     <li class="list__item">Nunc condimentum non est sed rutrum
@@ -168,8 +160,6 @@ Just like creating a small version of a bulleted list, you can make a small numb
 
 Display a green check marks as bullets by using `.list--checked` on a `<ul>` tag.
 
-<div class="subhead">Example check list</div>
-
 <ul class="list list--checked">
     <li class="list__item">Nunc condimentum non est sed rutrum</li>
     <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
@@ -184,7 +174,7 @@ Display a green check marks as bullets by using `.list--checked` on a `<ul>` tag
 </ul>
 ```
 
-<div class="subhead">Small check list</div>
+### Small check list
 
 <ul class="list list--checked list--small">
     <li class="list__item">Nunc condimentum non est sed rutrum</li>
@@ -204,8 +194,6 @@ Display a green check marks as bullets by using `.list--checked` on a `<ul>` tag
 
 The `.list--error` modifier places red "close" icons before each list item.
 
-<div class="subhead">Example error list</div>
-
 <ul class="list list--error">
     <li class="list__item">Error message 1</li>
     <li class="list__item">Error message 2</li>
@@ -218,7 +206,7 @@ The `.list--error` modifier places red "close" icons before each list item.
 </ul>
 ```
 
-<div class="subhead">Small error list</div>
+### Small error list
 
 <ul class="list list--error list--small">
     <li class="list__item">Error message 1</li>
@@ -239,7 +227,7 @@ The `.list--error` modifier places red "close" icons before each list item.
 
 Lists of different types can be nested inside each other. Child `<ul>` and `<ol>` tags should be placed *inside* an `<li>` tag (they shouldn't be direct descendants of a `<ul>` or `<ol>`).
 
-<div class="subhead">Example mixed lists</div>
+### Example mixed lists
 
 <ol class="list list--numbered">
     <li class="list__item">Nunc condimentum non est sed rutrum

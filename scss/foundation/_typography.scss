@@ -34,6 +34,7 @@ body {
 ---------------------------------------- */
 
 /* p + h2, p + h3, p + h4 { */
+
 h2:not([class]),
 h3:not([class]),
 h4:not([class]) {
@@ -47,43 +48,64 @@ h4:not([class]):first-child {
 }
 
 h1,
-h2,
-h3,
-.heading-1,
-.heading-2,
-.heading-3 {
-  font-family: $font-telus;
-  color: $color-purple;
-}
-
-h1,
 .heading-1 {
-  font-family: $font-telus;
-  font-size: rem(70px);
-  font-weight: 300;
-  letter-spacing: -.3px;
-  line-height: .9;
+  color: $color-purple;
+  font-size: rem(42px);
+  line-height: 1.14285; // 48px
   margin-bottom: baseline-margin(48px);
+
+  @include from-breakpoint(medium) {
+    font-size: rem(72px);
+    font-weight: 300;
+    letter-spacing: -.3px;
+    line-height: 1.08333; // 78px
+  }
 }
 
 h2,
 .heading-2 {
-  font-size: rem(40px);
-  font-weight: 400;
-  line-height: 1;
+  font-size: rem(26px);
+  line-height: 1.14285;
+  font-weight: normal;
+  letter-spacing: .25px;
+  color: $color-purple;
   margin-bottom: baseline-margin(40px);
 
   + .subhead,
   + .field {
     padding-top: rem(8px);
   }
+
+  @include from-breakpoint(medium) {
+    font-size: rem(44px);
+    line-height: 1.27272; // 56px
+    letter-spacing: 0;
+    font-weight: 300;
+  }
 }
 
 h3,
 .heading-3 {
-  font-size: rem(28px);
-  font-weight: 400;
-  line-height: 1.181818;
+  font-size: rem(23px);
+  line-height: 1.3913;
+  font-weight: 500;
+  letter-spacing: .25px;
+  margin-bottom: baseline-margin(40px);
+  color: $color-grey-dark;
+
+  @include from-breakpoint(medium) {
+    font-size: rem(19px);
+    line-height: 1.47368; // 28px
+    letter-spacing: 0;
+  }
+}
+
+h4,
+.heading-4 {
+  font-size: rem(15px);
+  font-weight: 500;
+  color: $color-grey-dark;
+  line-height: 1.333; // 20px
   margin-bottom: baseline-margin(40px);
 }
 
@@ -91,10 +113,14 @@ h3,
   3.  Subhead Style
 ---------------------------------------- */
 
+// Deprecated in v0.5.0, 10/18/16
+// Use h3 for "subhead" text
+// Use h4 for "subhead--small" text
+
 .subhead {
   font-weight: 500;
-  font-size: rem(20px);
-  line-height: 1.4;
+  font-size: rem(19px);
+  line-height: 1.7;
   margin-bottom: baseline-margin(40px);
 
   &--small {
@@ -133,10 +159,27 @@ p,
   }
 }
 
+%text--medium {
+  font-size: rem($body-medium-text-size);
+  line-height: $body-medium-line-height;
+  letter-spacing: .1px;
+}
+
+.text--medium {
+  @extend %text--medium;
+}
+
 small,
 .text--small {
-  font-size: rem(16px);
-  line-height: 1.5;
+  // The 13px "small" text isn't readable on small viewports, so it's not
+  // applied until the medium breakpoint.
+  @extend %text--medium;
+
+  @include from-breakpoint(medium) {
+    font-size: rem($body-small-text-size);
+    line-height: $body-small-line-height;
+    color: $color-grey-medium;
+  }
 }
 
 /* ---------------------------------------

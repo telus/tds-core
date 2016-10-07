@@ -23,6 +23,7 @@ $color-green: #248700;
 $color-green-darker: #177a00;
 $color-green-panel: rgba(35, 135, 0, .05);
 $color-grey-light: #c4c4c5;
+$color-grey-medium: #6a6e74;
 $color-grey: #54595f;
 $color-grey-dark: #2a2c2e;
 $color-grey-panel: #f7f7f8;
@@ -36,8 +37,8 @@ $color-white: #fff;
 
 $color-font: #666;
 $color-font-darker: $color-grey-dark;
-$color-link: $color-green;
-$color-link-hover: $color-green-darker;
+$color-link: $color-green-darker;
+$color-link-hover: $color-green;
 $color-link-secondary: $color-grey;
 $color-link-secondary-hover: $color-grey-dark;
 $color-text: $color-font-darker;
@@ -64,8 +65,14 @@ $font-icons: 'TELUS Core Icons';
 $font-size-base: 16px;
 $font-line-height: 1.5;
 
-$body-text-size: 20px;
-$body-line-height: 1.4444444444;
+$body-text-size: 19px;
+$body-line-height: 1.7; // 36px
+
+$body-medium-text-size: 15px;
+$body-medium-line-height: 1.86666; // 28px
+
+$body-small-text-size: 13px;
+$body-small-line-height: 1.8; // 24px
 
 /* stylelint-disable */
 

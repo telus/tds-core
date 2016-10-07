@@ -31,7 +31,7 @@ a.button {
   cursor: pointer;
   display: block;
   font-family: $font-telus;
-  font-size: rem(18px);
+  font-size: rem(15px);
   font-weight: normal;
   letter-spacing: .2px;
   line-height: 1.166666;
@@ -41,6 +41,7 @@ a.button {
   text-decoration: none;
   transition: background .2s;
   width: 100%;
+  min-height: 60px;
 
   @include from-breakpoint(medium) {
     display: inline-block;

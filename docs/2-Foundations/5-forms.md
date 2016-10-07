@@ -85,7 +85,7 @@ A selection input allows a user to choose one, or many values from a set.
 A radio input lets the user pick a single value from one or more choices.
 
 <fieldset class="field">
-    <legend class="subhead">Choose one</legend>
+    <legend class="heading-3">Choose one</legend>
     <label for="choice_a" class="choice">
 	    <input type="radio" name="answer" id="choice_a">
 	    <span class="choice__text">Choice A</span>
@@ -102,7 +102,7 @@ A radio input lets the user pick a single value from one or more choices.
 
 ```html
 <fieldset class="field">
-    <legend class="subhead">Choose one</legend>
+    <legend class="heading-3">Choose one</legend>
     <label for="choice_a" class="choice">
 	    <input type="radio" name="answer" id="choice_a">
 	    <span class="choice__text">Choice A</span>
@@ -123,7 +123,7 @@ A radio input lets the user pick a single value from one or more choices.
 Checkboxes are similar to radio buttons in their appearance and markup. The key difference is that checkboxes can accept a multiple choice response.
 
 <fieldset class="field">
-    <legend class="subhead">Choose all that apply</legend>
+    <legend class="heading-3">Choose all that apply</legend>
     <label for="multiple-choice-a" class="choice">
         <input type="checkbox" name="multiple-choice" id="multiple-choice-a">
         <span class="choice__text">Choice A</span>
@@ -144,7 +144,7 @@ Checkboxes are similar to radio buttons in their appearance and markup. The key 
 
 ```html
 <fieldset class="field">
-    <legend class="subhead">Choose all that apply</legend>
+    <legend class="heading-3">Choose all that apply</legend>
     <label for="multiple-choice-a" class="choice">
         <input type="checkbox" name="multiple-choice" id="multiple-choice-a">
         <span class="choice__text">Choice A</span>
@@ -346,7 +346,7 @@ The `.field` `--success` and `--error` modifiers will also style dropdowns with 
 Use the `.choice--error` modifier when there's a problem with an individual choice of a selection field.
 
 <fieldset class="field">
-    <legend class="subhead">Which shape has less than ten sides?</legend>
+    <legend class="heading-3">Which shape has less than ten sides?</legend>
     <label for="choice-decagon" class="choice">
         <input type="radio" id="choice-decagon" name="shape-choice">
         <span class="choice__text">Decagon</span>
@@ -360,7 +360,7 @@ Use the `.choice--error` modifier when there's a problem with an individual choi
 
 ```html
 <fieldset class="field">
-    <legend class="subhead">Which shape has less than ten sides?</legend>
+    <legend class="heading-3">Which shape has less than ten sides?</legend>
     <label for="choice-decagon" class="choice">
         <input type="radio" id="choice-decagon" name="shape-choice">
         <span class="choice__text">Decagon</span>
@@ -374,7 +374,7 @@ Use the `.choice--error` modifier when there's a problem with an individual choi
 ```
 
 <fieldset class="field">
-    <legend class="subhead">Which shape has four or more sides?</legend>
+    <legend class="heading-3">Which shape has four or more sides?</legend>
     <label for="choice-square" class="choice">
         <input type="checkbox" id="choice-square" name="shape-choice" checked>
         <span class="choice__text">Square</span>
@@ -388,7 +388,7 @@ Use the `.choice--error` modifier when there's a problem with an individual choi
 
 ```html
 <fieldset class="field">
-    <legend class="subhead">Which shape has four or more sides?</legend>
+    <legend class="heading-3">Which shape has four or more sides?</legend>
     <label for="choice-square" class="choice">
         <input type="checkbox" id="choice-square" name="shape-choice" checked>
         <span class="choice__text">Square</span>
@@ -515,7 +515,7 @@ Use `aria-describedby` to accessibly mark up the relationship between the input 
 <div class="field">
     <label for="input_d">Field helper</label>
     <div class="helper" id="a-standard-helper">
-        <p class="text--small">
+        <p class="text--medium">
             <strong>Your password must be:</strong>
         </p>
         <ul class="list list--compact">
@@ -531,7 +531,7 @@ Use `aria-describedby` to accessibly mark up the relationship between the input 
 <div class="field">
     <label for="input_d">Field helper</label>
     <div class="helper" id="a-standard-helper">
-        <p class="text--small">
+        <p class="text--medium">
             <strong>Your password must be:</strong>
         </p>
         <ul class="list list--compact">
@@ -551,7 +551,7 @@ The `--success` modifier can be used on the helper to provide positive feedback 
 <div class="field field--success">
     <label for="input_e">Successful field helper</label>
     <div class="helper helper--success" id="a-success-helper">
-        <p class="text--small">
+        <p class="text--medium">
             <strong>Your password must be:</strong>
         </p>
         <ul class="list list--checked list--compact">
@@ -567,7 +567,7 @@ The `--success` modifier can be used on the helper to provide positive feedback 
 <div class="field field--success">
     <label for="input_e">Successful field helper</label>
     <div class="helper helper--success" id="a-success-helper">
-        <p class="text--small">
+        <p class="text--medium">
             <strong>Your password must be:</strong>
         </p>
         <ul class="list list--checked list--compact">
@@ -616,7 +616,7 @@ Use the "Error List" block when a field has a complex error message.
 <div class="field field--error">
     <label for="input_f">Error field helper</label>
     <div class="helper helper--error" id="unfortunate-error">
-        <p class="text--small">
+        <p class="text--medium">
             <strong>Your password must be:</strong>
         </p>
         <ul class="list list--error list--compact">
@@ -638,7 +638,7 @@ Use the "Error List" block when a field has a complex error message.
 <div class="field field--error">
     <label for="input_f">Error field helper</label>
     <div class="helper helper--error" id="unfortunate-error">
-        <p class="text--small">
+        <p class="text--medium">
             <strong>Your password must be:</strong>
         </p>
         <ul class="list list--error list--compact">
