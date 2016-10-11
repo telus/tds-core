@@ -55,11 +55,9 @@ Add a link to the CDN-hosted thorium.css file into the `<head>` of your page.
 
 Thorium uses <a href="http://semver.org/" target="_blank">semantic versioning</a> to number its releases. Basically, a number like `0.4.0` has three parts from left to right:
 
-<ol>
-<li>The **MAJOR** version - increments when backwards-incompatible changes are released.</li>
-<li>The **MINOR** version - increments when backwards-compatible changes are released.</li>
-<li>The **PATCH** version - increments when backwards-compatible bug fixes are released.</li>
-</ol>
+1. The **MAJOR** version - increments when backwards-incompatible changes are released.
+2. The **MINOR** version - increments when backwards-compatible changes are released.
+3. The **PATCH** version - increments when backwards-compatible bug fixes are released.
 
 You're in control of which Thorium version is included in your project.
 
