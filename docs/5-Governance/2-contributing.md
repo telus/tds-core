@@ -1,5 +1,5 @@
 ---
-title: Contributing
+title: Contribution
 template: doc.jade
 ---
 
@@ -11,7 +11,7 @@ We're so glad you're thinking about contributing to the TELUS Design System - Th
 
 If you have any questions or want to read more, check out the [Design System website](http://thorium.telus.hugeops.com/), or [shoot us an email](mailto:sebastian.krumhausen@telus.com).
 
-## Types of Contributions
+## Types of contributions
 
 ---
 
@@ -48,32 +48,82 @@ If you're proposing a feature:
 * Keep the scope as narrow as possible, to make it easier to implement.
 * Remember that this is a volunteer-driven project, and that contributions are welcome.
 
-## Development Process
+## Development process
 
 ---
 
 Thorium follows a [trunk-based development](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/) model. This process simplifies the development and release cycle by having all teams contribute to one mainline. Thorium admins can then move changes from that mainline to versions which are affected by bugs, or are under active feature development.
 
-The key features of Thorium's trunk-based contribution model are:
+The following diagram illustrates the Thorium development process.
 
-* Contributors make pull requests to `master`.
-* Thorium admins merge pull requests to master.
-* Thorium admins move new features to the version branch currently under development.
-* Thorium admins move bug fixes to affected version branches.
-* Official releases are cut from version branches.
-* `master` contains the bleeding-edge code, and is therefore generally unsafe.
+<figure class="doc-figure">
+    <img src="/assets/images/dev-timeline.svg" alt="Diagram showing pull requests to the master branch, and code being deployed via release branches">
+</figure>
+
+### Key features
+
+* Contributors make pull requests to `master`
+* Thorium admins merge pull requests to master
+* Thorium admins move new features to the version branch currently under development
+* Thorium admins move bug fixes to affected version branches
+* Official releases are cut from version branches
+* `master` contains the bleeding-edge code
+
+## Working branches
+
+---
+
+Working branches are a temporary place for contributors to change Thorium, and then create a pull request to get those changes back into `master`. Working branches are...
+
+* **Isolated** -- a place for individual contributors to locally build and test features, fixes, and other code changes.
+* **Temporary** -- code isn't deployed from working branches
+* **Short-lived** -- the longer a working branch hangs around, the hard it gets to reconcile with master.
+
+## Working branch naming
+
+---
+
+Since pull requests originate from working branches, it's helpful to name them according to this pattern:
+
+<p style="text-align: center;">`changetype/issue-id_short-description`</p>
+
+### Change types
+
+The most common change types are:
+
+* `feature` -- code that directly implements a user story
+* `task` -- might be a subtask of a story that makes sense to contribute as it's own diff, or a non user-facing change like updating a build script
+* `bugfix` -- code that resolves a defect
+
+### Issue ID
+
+The issue id is a JIRA ticket number such as `DSR-1`. This identifies both the project and the individual ticket which is introducing the change. If there's no relevant JIRA ticket, use the project abbreviation such as `DSR`.
+
+### Short description
+
+The short description is one or two words identifying what changed.
+
+Please use all lowercase characters.
+
+### Example branch names
+
+* `feature/DSR-1_typography`
+* `task/DSR-112_rearrange-nav-menu`
+* `task/DSR_update-headlines`
+* `bugfix/DSR-25_button-spacing`
+* `bugfix/DSR_subhead-weight`
 
 ## Versioning
 
 ---
 
-Release numbers adhere to <a href="http://semver.org/" target="_blank">semantic versioning</a>. In short:
+Release numbers adhere to <a href="http://semver.org/" target="_blank">semantic versioning</a>.
 
 * A major version increment accompanies backwards-incompatible changes, such as removing a feature or changing an API.
 * The minor version increments when new features are added.
 * The patch version changes when backwards-compatible bug fixes are released.
 
-## Requirements
+## Code review
 
 ---
 
@@ -83,34 +133,77 @@ Thorium is a design system that reaches across all TELUS properties. In order to
 * must be accompanied by automated tests, wherever applicable.
 * should either be backwards-compatible, or target the appropriate [semantically versioned](#versioning) release.
 
-## Contributor Workflow
+## Tags &amp; releases
 
-----
+---
 
-At its core, contributing with Git involves:
+Don't worry about tagging your commits, changing version numers, or creating release branches. Thorium administrators are responsible for these parts of the process. Most of the time, contributing to Thorium means making a change in a working branch and submitting a pull request to master.
 
-1. Pulling the latest changes from `master`.
-2. Creating a feature branch, from master, in which to do your work.
-3. Opening a pull request from your branch to master.
+If you'd like to know more about the release process, you can read about it on the [administration page](/5-Governance/3-administration.html).
 
-### Walk-through
+## Setup your local environment
 
-If this is your first time contributing to Thorium, clone the repository (this is a one-time step).
+---
+
+### Install development tools
+
+* [Node.js](https://nodejs.org/en/) latest stable version (4.6.0 at the time of this writing).
+* [Git](https://git-scm.com/downloads)
+
+### Clone the Thorium repo
 
 ```bash
 git clone git@github.com:telusdigital/telus-thorium-core.git
 cd telus-thorium-core
 ```
 
-Next, create a place to work on your contribution by pulling the latest code and branching off master.
+Install dependencies, build static assets, and start the Wintersmith dev server:
+
+```bash
+npm install
+npm run build
+npm run start:dev
+```
+
+Thorium's documentation site will now be available in the browser at [http://localhost:8080](http://localhost:8080).
+
+### Auto-rebuild
+
+Run the watch command to rebuild stylesheets whenever a change is made.
+
+```bash
+npm run watch:css
+```
+
+The paths watched are:
+
+* `scss/**/*.scss`
+* `docs/assets/scss/**/*.scss`
+
+
+## Start contributing
+
+----
+
+At its core, contributing with Git involves:
+
+1. Pulling the latest changes from `master`.
+2. Creating a working branch, from master, in which to make changes.
+3. Opening a pull request from your branch to master.
+
+### Create a working branch
+
+Pulling the latest code branching from master.
 
 ```bash
 git checkout master
 git pull origin master
-git checkout -b feature/adding-a-widget master
+git checkout -b feature/DSR-1_adding-a-widget master
 ```
 
-Now it's time to make some changes and commit them! When you're done, push up your branch:
+<small>The branch is named according to [Thorium's branch naming conventions](#working-branch-naming)</small>
+
+Now it's time to make some changes and commit them! Edit some files. When you're done, push up your branch to Github:
 
 ```bash
 git commit
