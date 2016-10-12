@@ -41,3 +41,9 @@ Description:  Styling for examples in-line with documentation
     margin-top: 3rem;
   }
 }
+
+.doc-figure {
+  &__legend {
+    margin-top: 1.5rem;
+  }
+}
