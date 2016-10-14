@@ -67,6 +67,27 @@ Description:  Helpful SASS mixins
   }
 }
 
+// Get just the pixel value representing one bound of a breakpoint.
+// Defaults to 'upper', as in the upper bound of the given range;
+// will always return the lower bound on 'xl' because the upper one is null.
+// Usage:
+// .page { max-width: breakpoint(large); }
+@function breakpoint($which: xs, $bound: 'upper') {
+  @if not map-has-key($breakpoints, $which) {
+    $valid-bps: map-keys($breakpoints);
+    @error "`#{$which}` is not a valid breakpoint. Try one of these: `#{$valid-bps}`";
+  }
+
+  $bp: map-get($breakpoints, $which);
+  @if ($bound == 'upper') and ($which != 'xl') {
+    @return nth($bp, 2);
+  }
+  @else {
+    @return nth($bp, 1);
+  }
+}
+
+
 /* ---------------------------------------
   2.  Font helpers: calculate rem, em
 ----------------------------------------- */
