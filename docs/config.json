@@ -13,8 +13,8 @@
     "fs": "fs"
   },
   "plugins": [
-    "./docs/assets/plugins/nav.js",
-    "./docs/assets/plugins/markdown-rendering.js"
+    "./src/assets/plugins/nav.js",
+    "./src/assets/plugins/markdown-rendering.js"
   ],
   "jade": {
     "pretty": true
@@ -23,8 +23,8 @@
     "smartLists": true,
     "smartypants": true
   },
-  "contents": "./docs",
-  "templates": "./docs/assets/templates",
+  "contents": "./src",
+  "templates": "./src/assets/templates",
   "output": "./dist/docs",
   "baseUrl": "/"
 }

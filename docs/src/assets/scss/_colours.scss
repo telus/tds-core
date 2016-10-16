@@ -1,0 +1,16 @@
+.colors {
+  text-align: center;
+
+  .medium-4 {
+    padding-top: 2rem;
+  }
+}
+
+.color-preview {
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  display: inline-block;
+  height: 90px;
+  line-height: 90px;
+  width: 90px;
+}

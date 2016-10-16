@@ -1,0 +1,138 @@
+/**
+
+File:         variables.scss
+Description:  A central place to define site-wide values such as color codes
+	      and font names.
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Colours
+    2. Typography
+    3. Grid
+    4. Feature flags
+
+*/
+
+/* ---------------------------------------
+  1.  Colours
+----------------------------------------- */
+
+$color-green: #248700;
+$color-green-darker: #177a00;
+$color-green-panel: rgba(35, 135, 0, .05);
+$color-grey-light: #c4c4c5;
+$color-grey-medium: #6a6e74;
+$color-grey: #54595f;
+$color-grey-dark: #2a2c2e;
+$color-grey-panel: #f7f7f8;
+$color-purple: #4b286d;
+$color-purple-light: #7841b0;
+$color-red: #c12335;
+$color-red-panel: rgba(193, 34, 52, .05);
+$color-white: #fff;
+
+// Typography colors
+
+$color-font: #666;
+$color-font-darker: $color-grey-dark;
+$color-link: $color-green-darker;
+$color-link-hover: $color-green;
+$color-link-secondary: $color-grey;
+$color-link-secondary-hover: $color-grey-dark;
+$color-text: $color-font-darker;
+
+// Icon colors
+
+$color-icon-primary: $color-purple;
+$color-icon-primary-hover: $color-purple-light;
+$color-icon-secondary: $color-green-darker;
+$color-icon-secondary-hover: $color-green;
+$color-icon-disabled: $color-grey;
+$color-icon-disabled-hover: #6a6e74;
+$color-icon-error: $color-red;
+
+/* ---------------------------------------
+  2.  Typography
+----------------------------------------- */
+
+$font-sans: Arial, sans-serif;
+$font-serif: Georgia, serif;
+$font-telus: 'TELUS-Web', 'Helvetica Neue', Helvetica, $font-sans;
+$font-icons: 'TELUS Core Icons';
+
+$font-size-base: 16px;
+$font-line-height: 1.5;
+
+$body-text-size: 19px;
+$body-line-height: 1.7; // 36px
+
+$body-medium-text-size: 15px;
+$body-medium-line-height: 1.86666; // 28px
+
+$body-small-text-size: 13px;
+$body-small-line-height: 1.8; // 24px
+
+/* stylelint-disable */
+
+// Default to the CDN-hosted icons, while allowing any client project to
+// control the location icons are served from by defining
+// $thorium-icon-font-prefix in their SCSS.
+$icon-font-prefix: 'https://cdn.telus.digital/thorium/core/v0.4.0';
+
+@if variable-exists(thorium-icon-font-prefix) {
+  $icon-font-prefix: $thorium-icon-font-prefix;
+}
+
+/* stylelint-enable */
+
+/* ---------------------------------------
+  3.  Grid
+----------------------------------------- */
+
+/**
+ * Breakpoints for a mobile-first grid. The pixel values of adjacent breakpoints
+ * can be the same value (i.e. it's unnecessary to write values like
+ * small: (544px, 768px), medium: (769px, 992px)). Media Query-generating mixins
+ * will automatically add 1 where necessary.
+ */
+$breakpoints: (
+  xs: (null,   544px),
+  small: (544px,  768px),
+  medium: (768px,  992px),
+  large: (992px, 1200px),
+  xl: (1200px, null)
+);
+
+// 12 columns all the way down.
+$columns: (
+  xs: 12,
+  small: 12,
+  medium: 12,
+  large: 12,
+  xl: 12
+);
+
+$gutter: 30px;
+
+/* ---------------------------------------
+  4.  Feature flages
+----------------------------------------- */
+
+// The "Enable Deprecated List Classes" feature flag can be turned on to
+// support old list classes:
+//
+//     .list-alpha, .list-bullets, .list-checked, and .list-numbered
+//
+// This should only be done temporarily, because it adds unnecessary size
+// to the CSS bundle. The .list block is the preferred way of styling
+// lists.
+//
+// To enable this feature, define $thorium-enable-deprecated-list-classes: true
+// prior to your @import "thorium" directive.
+$enable-deprecated-list-classes: false;
+
+@if variable-exists(thorium-enalble-deprecated-list-classes) {
+  $enable-deprecated-list-classes: $thorium-enalble-deprecated-list-classes;
+}

@@ -10,9 +10,9 @@ npm-debug.log*
 
 # Thorium build artifacts
 dist
-docs/assets/css/styleguide.css
-docs/assets/css/thorium.css
-docs/assets/fonts/*
-!docs/assets/fonts/.gitkeep
-docs/assets/downloads
-!docs/assets/downloads/.gitkeep
+docs/src/assets/css/styleguide.css
+docs/src/assets/css/thorium.css
+docs/src/assets/fonts/*
+!docs/src/assets/fonts/.gitkeep
+docs/src/assets/downloads
+!docs/src/assets/downloads/.gitkeep

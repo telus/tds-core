@@ -1,0 +1,51 @@
+/**
+
+File:         global.scss
+Description:  Site-wide global styles
+
+    ◡◠ ✥ ◠◡
+
+  Table of Contents:
+
+  1. Global
+
+*/
+
+/* ---------------------------------------
+  1.  Global
+---------------------------------------- */
+
+* {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  // only OS X
+  -moz-osx-font-smoothing: grayscale;
+
+  // we put this here to overcome webkit bug when doing -webkit-transforms
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  color: $color-font;
+  font-family: $font-telus;
+  font-kerning: normal;
+  font-size: $font-size-base;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #f8f8f8;
+  line-height: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}

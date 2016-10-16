@@ -1,0 +1,147 @@
+/**
+
+File:           grid.scss
+Description:    Telus grid classes live in here. The grid is _mobile-first_. Add code for
+		small screens first, and larger devices will inherit those styles. You may
+		customize for larger screens as necessary.
+
+		Conversely, you are not constrained to using the grid classes herein. It may
+		be simpler, for example, to use the provided mixin to just set the column
+		width of an element at a particular breakpoint.
+
+	◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Helpers
+    2. Rows & columns
+    3. Forms grid
+
+*/
+
+/* ---------------------------------------
+  1.  Helpers
+----------------------------------------- */
+
+/**
+ * Generate a width for a block that occupies the space of n columns, out of the
+ * given amount of total columns. Ex: columns(6, 12) produces a block that's
+ * 50% the width of its parent.
+ */
+@mixin columns($n, $total-columns) {
+  float: left;
+  width: percentage($n / $total-columns);
+}
+
+/**
+ * Generate margins for a block which is offset from the left by n columns out
+ * of the given total columns. Ex: offsetcolumns(3, 12) produces a block that's
+ * offset by 25%.
+ */
+@mixin offsetcolumns($n, $total-columns) {
+  float: left;
+  margin-left: percentage($n / $total-columns);
+}
+
+@mixin pullcolumns($n, $total-columns) {
+  position: relative;
+  right: percentage($n / $total-columns);
+}
+
+@mixin pushcolumns($n, $total-columns) {
+  position: relative;
+  left: percentage($n / $total-columns);
+}
+
+/* ---------------------------------------
+  2. Rows & columns
+----------------------------------------- */
+
+.container {
+  @include clearfix;
+
+  margin: 0 auto;
+  padding: 0 $gutter / 2;
+}
+
+// Rows are horizontal groups of columns.
+.grid-row {
+  @include clearfix();
+
+  margin: 0 ($gutter / 2) * -1;
+}
+
+// Generate the column and offset-column classes for each breakpoint and viewport.
+@each $size, $count in $columns {
+  [class^="#{$size}-"],
+  [class*=" #{$size}-"] {
+    padding: 0 $gutter / 2;
+  }
+
+  @for $num from 1 through $count {
+    @include from-breakpoint(#{$size}) {
+      .#{$size}-#{$num} {
+        @include columns($num, $count);
+      }
+
+      .offset-#{$size}-#{$num} {
+        @include offsetcolumns($num, $count);
+      }
+
+      .pull-#{$size}-#{$num} {
+        @include pullcolumns($num, $count);
+      }
+
+      .push-#{$size}-#{$num} {
+        @include pushcolumns($num, $count);
+      }
+    }
+  }
+
+  @include from-breakpoint(#{$size}) {
+    .hidden-#{$size}-up {
+      display: none !important;
+    }
+  }
+
+  @include at-breakpoint(#{$size}) {
+    .hidden-#{$size} {
+      display: none !important;
+    }
+  }
+}
+
+/* ---------------------------------------
+  3. Forms grid
+----------------------------------------- */
+
+/**
+ * .field-col is helper class which constrains a field to the maximum recommended
+ * width at each breakpoint. It's basically an alias for .medium-7.large-5.xl-4
+ */
+.field-col {
+  padding: 0 $gutter / 2;
+
+  @include from-breakpoint(medium) {
+    @include columns(7, 12);
+  }
+
+  @include from-breakpoint(large) {
+    @include columns(5, 12);
+  }
+
+  @include from-breakpoint(xl) {
+    @include columns(4, 12);
+  }
+}
+
+/**
+ * There should be more spacing between fields & buttons, than between consecutive
+ * fields. The .button-row class adds that extra spacing. It can be used by itself,
+ * or mixed with a .grid-row block.
+ */
+.button-row {
+  @include clearfix();
+
+  padding-top: 20px;
+}

@@ -1,0 +1,117 @@
+/**
+
+File:         _example_pages.scss
+Description:  Styling for stand-alone example pages
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Example page styles
+
+*/
+
+.ex-page {
+  main {
+    display: block;
+
+    > .container {
+      max-width: 1160px;
+      padding-top: 2rem;
+    }
+  }
+
+  h1:not(:first-child) {
+    margin-top: 1.5em;
+  }
+}
+
+.exmodule {
+  margin: 2rem 0;
+  padding: 2rem 0;
+
+  &--shaded {
+    background-color: #f5f6f7;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}
+
+.ex-chameleon {
+  &--img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 215px;
+  }
+}
+
+.excards {
+  .grid-row {
+    > div {
+      height: 100%;
+    }
+  }
+}
+
+.excard {
+  border: 1px solid #aeaeae;
+  padding: 2rem;
+  border-radius: .8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 0 transparent, 0 .5rem 0 rgba(0, 0, 0, .1);
+
+  &__header {
+    display: flex;
+  }
+
+  &__icon {
+    display: inline-block;
+    background-color: $color-purple;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  &__description {
+    margin-top: 1rem;
+  }
+}
+
+.login-metric {
+  margin-bottom: 4rem;
+
+  &__form {
+    @include from-breakpoint(medium) {
+      border-right: solid 1px $color-grey-light;
+      padding-right: 8.3333%;
+
+      .field {
+        // -1 to compensate for the border-right width
+        padding-right: 14px;
+      }
+    }
+  }
+
+  &__copy {
+    margin-top: 2rem;
+
+    @include from-breakpoint(medium) {
+      margin-top: 0;
+    }
+  }
+}
