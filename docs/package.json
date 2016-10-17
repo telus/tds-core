@@ -29,6 +29,8 @@
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
     "clean-css": "^3.4.10",
     "fontmin": "^0.9.6",
     "marked": "~0.3.5",
@@ -41,5 +43,9 @@
     "telus-thorium-enriched": "^0.4.0",
     "webpack": "^1.13.2",
     "wintersmith": "^2.3.2"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
   }
 }
