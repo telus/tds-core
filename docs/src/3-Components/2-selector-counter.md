@@ -1,9 +1,9 @@
 ---
-title: Components
+title: Selector Counter
 template: doc.jade
 ---
 
-## Selector Counter
+## Overview
 
 ---
 
@@ -37,3 +37,9 @@ export default SelectorCounterEx;
 
 ### Invalid selector counter
 <div data-thorium-component="SelectorCounter" data-props="{&#034;invalid&#034;:true}" class="inline-component"></div>
+
+## Selector Counter Example
+
+---
+
+<div data-thorium-component="SelectorCounterExample" data-props="{}"></div>

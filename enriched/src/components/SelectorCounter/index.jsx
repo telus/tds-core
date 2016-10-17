@@ -23,10 +23,12 @@ class SelectorCounter extends Component {
   }
 
   handleIncrement(e) {
+    e.preventDefault();
     this.handleChange(this.state.value + 1);
   }
 
   handleDecrement(e) {
+    e.preventDefault();
     this.handleChange(this.state.value - 1);
   }
 

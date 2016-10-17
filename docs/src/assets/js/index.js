@@ -1,8 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import * as components from 'telus-thorium-enriched';
+import * as thoriumComponents from 'telus-thorium-enriched';
+import * as exampleComponents from './components';
 
 document.addEventListener('DOMContentLoaded', () => {
+  const components = { ...thoriumComponents, ...exampleComponents };
   const mounts = window.document.querySelectorAll('[data-thorium-component]');
 
   [...mounts].forEach(mountPoint => {
