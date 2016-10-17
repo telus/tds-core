@@ -47,3 +47,9 @@ Description:  Styling for examples in-line with documentation
     margin-top: 1.5rem;
   }
 }
+
+.inline-component {
+  @include from-breakpoint(medium) {
+    display: inline-block;
+  }
+}
