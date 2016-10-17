@@ -1,7 +1,6 @@
 $thorium-icon-font-prefix: '/assets/fonts';
 
-@import '../../../node_modules/telus-thorium-core/scss/thorium';
-@import '../../../node_modules/telus-thorium-enriched/src/index';
+@import 'telus-thorium-enriched';
 @import "variables";
 @import 'global';
 @import 'typography';
