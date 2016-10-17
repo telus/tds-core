@@ -1,0 +1,113 @@
+/**
+
+File:         _mixins.scss
+Description:  Helpful SASS mixins
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Breakpoints
+    2. Font helpers
+    3. Clearfix
+
+*/
+
+/* ---------------------------------------
+  1.  Breakpoints
+----------------------------------------- */
+
+/**
+ * Mobile-first breakpoint mixin. This is the preferred way to use a
+ * breakpoint, with larger devices inheriting from smaller ones.
+ *
+ * @param  {mixed} $bp  You can pass in "small", "medium", or "large".
+ *   Or, a direct pixel value works too (eg. "800px")
+ * @return {void}
+ */
+@mixin from-breakpoint($bp) {
+  @if ($bp == 'xs') {
+    @content;
+  }
+
+  @else {
+    @if map-has-key($breakpoints, $bp) {
+      $list: map-get($breakpoints, $bp);
+      $bp: nth($list, 1);
+    }
+
+    @media screen and (min-width: #{$bp + 1}) {
+      @content;
+    }
+  }
+}
+
+// Target a specific breakpoint
+@mixin at-breakpoint($bp) {
+  $list: map-get($breakpoints, $bp);
+  $min: nth($list, 1);
+  $max: nth($list, length($list));
+
+  @if ($min == null) {
+    @media screen and (max-width: #{$max}) {
+      @content;
+    }
+  }
+
+  @else if ($max == null) {
+    @media screen and (min-width: #{$min}) {
+      @content;
+    }
+  }
+
+  @else {
+    @media screen and (min-width: #{$min + 1}) and (max-width: #{$max}) {
+      @content;
+    }
+  }
+}
+
+// Get just the pixel value representing one bound of a breakpoint.
+// Defaults to 'upper', as in the upper bound of the given range;
+// will always return the lower bound on 'xl' because the upper one is null.
+// Usage:
+// .page { max-width: breakpoint(large); }
+@function breakpoint($which: xs, $bound: 'upper') {
+  @if not map-has-key($breakpoints, $which) {
+    $valid-bps: map-keys($breakpoints);
+    @error "`#{$which}` is not a valid breakpoint. Try one of these: `#{$valid-bps}`";
+  }
+
+  $bp: map-get($breakpoints, $which);
+  @if ($bound == 'upper') and ($which != 'xl') {
+    @return nth($bp, 2);
+  }
+  @else {
+    @return nth($bp, 1);
+  }
+}
+
+/* ---------------------------------------
+  2.  Font helpers: calculate rem, em
+----------------------------------------- */
+
+@function rem($size) {
+  @return ($size / $font-size-base) * 1rem;
+}
+
+@function baseline-margin($size) {
+  @return rem($size - ($body-text-size * $body-line-height));
+}
+
+/* ---------------------------------------
+  3.  Clearfix
+----------------------------------------- */
+
+@mixin clearfix {
+  &::after,
+  &::before {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}

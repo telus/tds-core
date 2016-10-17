@@ -1,0 +1,208 @@
+/**
+
+File:         _typography.scss
+Description:  Globally defines the default fonts and sizes for text.
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Default Text
+    2. Headings
+    3. Subhead Style
+    4. Text Style
+    5. Paragraphs
+    6. Links
+
+*/
+
+/* ---------------------------------------
+  1.  Default Text
+---------------------------------------- */
+
+// * "em" if the property scales according to its font-size
+// * everything else in "rem"
+
+body {
+  color: $color-text;
+  font-weight: 400;
+  font-size: rem($body-text-size);
+}
+
+/* ---------------------------------------
+  2.  Headings
+---------------------------------------- */
+
+/* p + h2, p + h3, p + h4 { */
+
+h2:not([class]),
+h3:not([class]),
+h4:not([class]) {
+  margin-top: 1.5em;
+}
+
+h2:not([class]):first-child,
+h3:not([class]):first-child,
+h4:not([class]):first-child {
+  margin-top: 0;
+}
+
+h1,
+.heading-1 {
+  color: $color-purple;
+  font-size: rem(42px);
+  line-height: 1.14285; // 48px
+  margin-bottom: baseline-margin(48px);
+
+  @include from-breakpoint(medium) {
+    font-size: rem(72px);
+    font-weight: 300;
+    letter-spacing: -.3px;
+    line-height: 1.08333; // 78px
+  }
+}
+
+h2,
+.heading-2 {
+  font-size: rem(32px);
+  line-height: 1.14285;
+  font-weight: normal;
+  letter-spacing: .25px;
+  color: $color-purple;
+  margin-bottom: baseline-margin(40px);
+
+  + .subhead,
+  + .field {
+    padding-top: rem(8px);
+  }
+
+  @include from-breakpoint(medium) {
+    font-size: rem(44px);
+    line-height: 1.27272; // 56px
+    letter-spacing: 0;
+    font-weight: 300;
+  }
+}
+
+h3,
+.heading-3 {
+  font-size: rem(23px);
+  line-height: 1.3913;
+  font-weight: 500;
+  letter-spacing: .25px;
+  margin-bottom: baseline-margin(40px);
+  color: $color-grey-dark;
+
+  @include from-breakpoint(medium) {
+    font-size: rem(19px);
+    line-height: 1.47368; // 28px
+    letter-spacing: 0;
+  }
+}
+
+h4,
+.heading-4 {
+  font-size: rem(15px);
+  font-weight: 500;
+  color: $color-grey-dark;
+  line-height: 1.333; // 20px
+  margin-bottom: baseline-margin(40px);
+}
+
+/* ---------------------------------------
+  3.  Subhead Style
+---------------------------------------- */
+
+// Deprecated in v0.5.0, 10/18/16
+// Use h3 for "subhead" text
+// Use h4 for "subhead--small" text
+
+.subhead {
+  font-weight: 500;
+  font-size: rem(19px);
+  line-height: 1.7;
+  margin-bottom: baseline-margin(40px);
+
+  &--small {
+    font-size: rem(16px);
+    line-height: 1.5;
+    margin-bottom: baseline-margin(40px);
+  }
+}
+
+/* ---------------------------------------
+  4.  Text Style
+---------------------------------------- */
+
+strong,
+.strong {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
+/* ---------------------------------------
+  5.  Paragraphs
+---------------------------------------- */
+
+p,
+.text {
+  font-size: rem($body-text-size);
+  line-height: $body-line-height;
+  margin-bottom: 1rem;
+  letter-spacing: .01em;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+%text--medium {
+  font-size: rem($body-medium-text-size);
+  line-height: $body-medium-line-height;
+  letter-spacing: .1px;
+}
+
+.text--medium {
+  @extend %text--medium;
+}
+
+small,
+.text--small {
+  // The 13px "small" text isn't readable on small viewports, so it's not
+  // applied until the medium breakpoint.
+  @extend %text--medium;
+
+  @include from-breakpoint(medium) {
+    font-size: rem($body-small-text-size);
+    line-height: $body-small-line-height;
+    color: $color-grey-medium;
+  }
+}
+
+/* ---------------------------------------
+  6.  Links
+---------------------------------------- */
+
+a,
+a:link,
+a:visited {
+  color: $color-link;
+  text-decoration: underline;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &.link {
+    &--secondary {
+      color: $color-link-secondary;
+
+      &:hover {
+        color: $color-link-secondary-hover;
+      }
+    }
+  }
+}

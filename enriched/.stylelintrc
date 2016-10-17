@@ -1,0 +1,22 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "block-closing-brace-newline-after": [
+      "always", { "ignoreAtRules": ["if", "else"] }
+    ],
+    "at-rule-empty-line-before": [ "always", {
+      except: [
+        "blockless-after-same-name-blockless",
+        "first-nested",
+      ],
+      ignore: ["after-comment"],
+      "ignoreAtRules": ["if", "else", "error"]
+    } ],
+    "number-leading-zero": "never",
+    "number-no-trailing-zeros": true,
+    "media-feature-no-missing-punctuation": null
+  },
+  "ignoreFiles": [
+    "scss/foundation/_*icons.scss"
+  ]
+}

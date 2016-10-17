@@ -1,45 +1,24 @@
 {
-  "name": "telus-thorium-core",
+  "name": "telus-thorium-all",
   "version": "0.4.0",
-  "description": "The Telus Styleguide and UI Library",
-  "main": "index.js",
+  "description": "TELUS Thorium",
   "scripts": {
-    "lint": "npm run lint:css",
-    "build": "npm run lint && npm run clean && mkdir -p dist && npm run build:thorium && npm run build:docs",
-    "start": "npm run start:docs",
-    "start:dev": "export NODE_ENV=dev && npm run start",
-    "build:css": "npm run lint:css && npm run build:thorium:css && npm run build:docs:css",
-    "build:docs": "cp fonts/* docs/assets/fonts/ && cp designs/thorium.sketch docs/assets/downloads/thorium.sketch && npm run build:docs:css && npm run build:docs:html",
-    "build:docs:css": "node-sass --include-path docs/assets/scss docs/assets/scss/main.scss | postcss --use autoprefixer | cleancss > docs/assets/css/styleguide.css",
-    "build:docs:html": "mkdir -p dist && wintersmith build --config=docs/config.json",
-    "build:icons": "node scripts/icons.js",
-    "build:thorium": "npm run build:thorium:css",
-    "build:thorium:css": "node-sass --include-path scss scss/thorium.scss | postcss --use autoprefixer | cleancss > dist/thorium.css",
-    "clean": "rm -rf dist/**/* && rm -f docs/assets/css/thorium.css && rm -f docs/assets/css/styleguide.css",
-    "lint:css": "node_modules/.bin/stylelint 'docs/assets/scss/**/*.scss' 'scss/**/*.scss' --syntax scss",
-    "start:docs": "wintersmith preview --config=docs/config.json",
-    "watch:css": "onchange 'scss/**/*.scss' 'docs/assets/scss/**/*.scss' -- npm run build:css"
+    "build": "npm run build:core && npm run build:enriched && npm run build:docs",
+    "build:core": "cd core && npm run build",
+    "build:docs": "cd docs && npm run build",
+    "build:enriched": "cd enriched && npm run build",
+    "start": "cd docs && npm run build:assets && npm run start",
+    "install": "npm run install:core && npm run install:enriched && npm run install:docs",
+    "install:core": "cd core && npm install",
+    "install:docs": "cd docs && npm install",
+    "install:enriched": "cd enriched && npm install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/telusdigital/telus-thorium-core.git"
   },
-  "author": "Telus Digital",
-  "license": "",
+  "author": "TELUS Digital",
   "bugs": {
     "url": "https://github.com/telusdigital/telus-thorium-core/issues"
-  },
-  "homepage": "https://github.com/telusdigital/telus-thorium-core#readme",
-  "devDependencies": {
-    "autoprefixer": "^6.3.3",
-    "clean-css": "^3.4.10",
-    "fontmin": "^0.9.6",
-    "marked": "~0.3.5",
-    "node-sass": "^3.4.2",
-    "onchange": "^2.5.0",
-    "postcss-cli": "^2.5.1",
-    "stylelint": "^7.1.0",
-    "stylelint-config-standard": "^12.0.0",
-    "wintersmith": "^2.3.2"
   }
 }

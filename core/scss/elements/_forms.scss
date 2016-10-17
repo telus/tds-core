@@ -1,0 +1,482 @@
+/**
+
+File:         forms.scss
+Description:  Styles for various form elements live here.
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Defaults
+    2. Textarea
+    3. Helpers
+    4. Selections
+    5. Hints
+
+*/
+
+/* ---------------------------------------
+  1.  Defaults
+---------------------------------------- */
+
+$form-field-border-radius: 4px;
+$form-field-bottom-spacing: 18px;
+
+input:not([type='radio']),
+textarea,
+select {
+  border: 1px solid $color-grey-light;
+  border-radius: $form-field-border-radius;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
+  color: $color-grey-dark;
+  font-family: $font-telus;
+  font-size: rem($body-text-size);
+  letter-spacing: .4px;
+  line-height: 1.5;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  transition: border-color .1s linear, background-color .1s linear;
+
+  .field & {
+    margin-bottom: $form-field-bottom-spacing;
+  }
+
+  .field--error & {
+    border-color: $color-red;
+    padding-right: 45px;
+  }
+
+  .field--success & {
+    border-color: $color-green-darker;
+  }
+
+  &:focus {
+    border-color: $color-grey;
+  }
+
+  @include from-breakpoint(medium) {
+    letter-spacing: .5px;
+  }
+}
+
+input,
+select {
+  &:disabled {
+    background-color: $color-grey-panel;
+    border-color: $color-grey;
+  }
+}
+
+select,
+option {
+  appearance: none;
+  background: none;
+}
+
+select {
+  height: rem(60px);
+
+  // Hide the "drop down selector" pseudo element inserted by IE.
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+label {
+  display: inline-block;
+  color: $color-grey-dark;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+// Prevent IE11 from color placeholders the same as regular text.
+&:-ms-input-placeholder {
+  color: GrayText !important;
+}
+
+// Common styles for the "alert" and "down caret" icons that are
+// positioned around input/dropdown fields.
+%field__control__icon {
+  position: absolute;
+  font-size: rem($body-text-size);
+  line-height: 1;
+  display: block;
+}
+
+.field {
+  position: relative;
+
+  &--hinted {
+    label {
+      width: 91%;
+    }
+  }
+
+  &__control {
+    position: relative;
+    background: $color-white;
+    border-radius: $form-field-border-radius;
+    margin-bottom: $form-field-bottom-spacing;
+
+    .field--error & {
+      &::before {
+        @include core-icon();
+
+        @extend %field__control__icon;
+
+        top: 50%;
+        transform: translateY(-50%);
+        content: core-icon-codepoint(exclamation-point-circle);
+        right: 15px;
+        color: $color-red;
+      }
+
+      &.select-container::before {
+        right: 45px;
+      }
+    }
+
+    &--dropdown {
+      &::after {
+        @include core-icon();
+
+        @extend %field__control__icon;
+
+        content: core-icon-codepoint(caret-down);
+        top: 20px;
+        right: 20px;
+        color: $color-green;
+      }
+
+      .field--error & {
+        &::before {
+          right: 45px;
+        }
+
+        &::after {
+          color: $color-red;
+        }
+      }
+    }
+
+    &--disabled {
+      &::after {
+        color: $color-grey;
+      }
+    }
+
+    // The red "alert" icon should be hidden when a field w/ an error is in
+    // focus. Since the icon is a pseudo element which can't be targeted with
+    // a sibling selector, we absolutely position it underneath the form input,
+    // and make the input's background transparent on focus.
+    //
+    // The .field__control parent element is the same size as the input and
+    // is colored white, to support placing form fields on a non-white bg.
+    input:not([type='radio']):not([type='checkbox']),
+    select,
+    textarea {
+      background: transparent;
+      margin-bottom: 0;
+      position: relative;
+
+      &:focus {
+        background: $color-white;
+      }
+    }
+  }
+}
+
+/* ---------------------------------------
+  2.  Textarea
+---------------------------------------- */
+
+textarea {
+  height: 12em;
+  padding-top: 18px;
+  line-height: $body-line-height;
+}
+
+/* ---------------------------------------
+  3.  Helpers
+---------------------------------------- */
+
+.helper {
+  font-size: rem(16px);
+  background: $color-grey-panel;
+  padding: 11px 16px 16px;
+  border-radius: 4px;
+  margin-bottom: 11px;
+  transition: background-color .1s linear;
+
+  &--success {
+    background: $color-green-panel;
+  }
+
+  &--error {
+    background-color: $color-red-panel;
+    color: $color-red;
+
+    li {
+      color: $color-text;
+    }
+  }
+}
+
+/* ---------------------------------------
+  4.  Selections
+---------------------------------------- */
+
+// Thickness of the green border when a radio input is checked
+$radio-checked-stroke-size: 6px;
+
+.choice {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 8px;
+
+  &__text {
+    color: $color-grey;
+    font-weight: normal;
+  }
+}
+
+[type='radio'],
+[type='checkbox'] {
+  @extend %accessible-hide;
+
+  cursor: pointer;
+
+  &:checked {
+    & + .choice__text {
+      color: $color-grey-dark;
+    }
+  }
+
+  .choice:not(.choice--error) & {
+    &:hover:not(:checked):not(:disabled) {
+      & + .choice__text {
+        &::before {
+          border-color: $color-grey-dark;
+          box-shadow: 0 0 0 1px rgba(35, 135, 0, .25);
+        }
+      }
+    }
+  }
+
+  &:active {
+    & + .choice__text {
+      &::before {
+        border-color: $color-green-darker;
+      }
+    }
+  }
+
+  &:disabled {
+    & + .choice__text {
+      cursor: not-allowed;
+
+      &::before {
+        background: $color-grey-panel;
+      }
+    }
+  }
+
+  .choice--error & {
+    & + .choice__text,
+    &:checked + .choice__text {
+      color: $color-red;
+
+      &::before {
+        border-color: $color-red;
+      }
+    }
+  }
+
+  + .choice__text {
+    position: relative;
+    padding-left: 2em;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      border: solid 1px $color-grey;
+      height: 22px;
+      width: 22px;
+      line-height: 1.4;
+      transition: all .1s linear;
+    }
+  }
+}
+
+[type='radio'] {
+  &:active {
+    & + .choice__text {
+      &::before {
+        border-size: $radio-checked-stroke-size;
+      }
+    }
+  }
+
+  &:checked {
+    & + .choice__text {
+      &::before {
+        border: solid $radio-checked-stroke-size $color-green;
+      }
+    }
+
+    &:disabled {
+      & + .choice__text {
+        &::before {
+          background: $color-grey;
+          border: solid $radio-checked-stroke-size $color-grey-panel;
+          box-shadow: 0 0 0 1px $color-grey;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  + .choice__text {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+}
+
+[type='checkbox'] {
+  &:checked {
+    & + .choice__text {
+      &::before {
+        content: core-icon-codepoint(checkmark);
+      }
+    }
+
+    &:disabled {
+      & + .choice__text {
+        &::before {
+          color: $color-grey;
+        }
+      }
+    }
+
+    &:not(:disabled) {
+      & + .choice__text {
+        &::before {
+          background: $color-green;
+          border: none;
+        }
+      }
+    }
+  }
+
+  &:disabled {
+    & + .choice__text {
+      &::before {
+        border-color: $color-grey;
+      }
+    }
+  }
+
+  + .choice__text {
+    &::before {
+      border-radius: 4px;
+      color: white;
+      font-family: $font-icons;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  .choice--error & {
+    &:checked + .choice__text {
+      &::before {
+        background: $color-red;
+      }
+    }
+  }
+}
+
+/* ---------------------------------------
+  5.  Hints
+---------------------------------------- */
+
+.hint {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  // Extra padding is added to a .field that follows a level 2 headline to
+  // increase space between the headline text and label. Inheriting
+  // the .field's padding in the .hint keeps the hint icon in line with
+  // the field's label.
+  padding-top: inherit;
+
+  &:not(.hint--active) {
+    .hint__text {
+      @extend %accessible-hide;
+    }
+  }
+
+  &__trigger {
+    width: $body-text-size;
+
+    &::before {
+      content: core-icon-codepoint(question-mark-circle);
+      font-family: $font-icons;
+      color: $color-grey;
+      line-height: $body-line-height;
+      display: inline-block;
+      width: $body-text-size;
+    }
+  }
+
+  &__text {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    font-size: rem(16px);
+    width: 200px;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0 0 2px 0 #2a2c2e, 0 3px 2px 0 rgba(84, 89, 95, .25);
+    border-radius: 4px;
+    transform: translate(15px, -100%);
+
+    &::before,
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+    }
+
+    // The 'before' pseudo element is the triangle at the bottom of the
+    // speech bubble.
+    &::before {
+      box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, .4);
+      background-color: white;
+      bottom: -7px;
+      right: 12px;
+      border-width: 7px;
+      border-style: solid;
+      border-color: transparent white white transparent;
+      transform: rotate(45deg);
+    }
+
+    // The 'after' pseudo element masks the top half of the triangle,
+    // preventing the box-shadow from appearing inside the speech
+    // bubble.
+    &::after {
+      bottom: 0;
+      right: 5px;
+      width: 27px;
+      height: 14px;
+      background: white;
+    }
+  }
+}

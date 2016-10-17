@@ -3,14 +3,27 @@ Thorium, the TELUS Design system is a set of living guidelines that communicates
 
 ## Contributor Quick Start
 
-Clone this repository, install dependencies, transpile assets, then start the project in development mode.
+Clone this repository
 
-```
-git clone git@github.com:telusdigital/telus-thorium-core.git
-npm install
-npm run build
-npm run start:dev
-```
+    git clone git@github.com:telusdigital/thorium.git
+
+Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.
+
+    cd thorium/core
+    npm link
+    cd ../enriched
+    npm link
+    npm link telus-thorium-core
+    cd ../docs
+    npm link telus-thorium-core
+    npm link telus-thorium-enriched
+    cd ..
+
+Install the rest of the projects' dependencies and start up your local documentation site.
+
+    npm install
+    npm run build
+    npm run start
 
 The documentation site will be available at `http://localhost:8080`.
 
@@ -37,9 +50,9 @@ Download the [Windows Binary](https://www.freetype.org/ttfautohint/#download) fr
 ### Icon webfont change process
 
 1. Make a change or addition to `./designs/core-icons.glyphs`
-2. Export an OTF file to `./fonts/core-icons.otf`
-3. Execute `npm run build:icons`
+2. Export an OTF file to `./core/fonts/core-icons.otf`
+3. Execute `npm run build:icons` in the `telus-thorium-core` module
 
-This process creates EOT, TTF, and WOFF files from `./fonts/core-icons.otf` and saves them in the same directory. These should be committed to Git (including the source OTF) and sent to master via pull request.
+This process creates EOT, TTF, and WOFF files from `./core/fonts/core-icons.otf` and saves them in the same directory. These should be committed to Git (including the source OTF) and sent to master via pull request.
 
 The next time you run `npm build`, the re-generated icons will be picked up by the documentation site.

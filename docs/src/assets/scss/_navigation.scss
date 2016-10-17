@@ -1,0 +1,73 @@
+/**
+
+File:         _navigation.scss
+Description:  Left-hand navigation styles
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Nav styles
+
+*/
+
+.navigation {
+  flex: 0 0 200px;
+  min-width: 200px;
+  height: 100%;
+  padding: 2em;
+  padding-bottom: 1em;
+  z-index: 1;
+  background: #fff;
+  border-right: 1px solid #eee;
+
+  .container {
+    padding: 0;
+  }
+
+  span {
+    color: $color-purple;
+    font-size: .8em;
+    font-weight: bold;
+  }
+
+  a {
+    color: #6a6e74;
+    font-size: .8em;
+    text-transform: none;
+    text-decoration: none;
+    padding-left: 0;
+    padding-bottom: .25em;
+    padding-top: .25em;
+    display: block;
+    font-weight: normal;
+
+    &:hover {
+      color: #1f7600;
+    }
+  }
+
+  .active {
+    a {
+      color: #1f7600;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: baseline-margin(50px);
+  }
+
+  li {
+    margin: 0;
+  }
+}
+
+.menu-active {
+  article {
+    opacity: 1;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+}

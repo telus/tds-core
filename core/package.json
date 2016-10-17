@@ -1,0 +1,33 @@
+{
+  "name": "telus-thorium-core",
+  "version": "0.4.0",
+  "description": "TELUS Design System core styles",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node_modules/.bin/stylelint 'scss/**/*.scss' --syntax scss",
+    "build": "npm run clean && mkdir -p dist && npm run build:css",
+    "build:css": "npm run lint && node-sass --include-path scss scss/thorium.scss | postcss --use autoprefixer | cleancss > dist/thorium.min.css",
+    "build:icons": "node scripts/icons.js",
+    "clean": "rm -rf dist/**/* && rm -f docs/assets/css/thorium.css && rm -f docs/assets/css/styleguide.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telusdigital/telus-thorium-core.git"
+  },
+  "author": "Telus Digital",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/telusdigital/telus-thorium-core/issues"
+  },
+  "homepage": "https://github.com/telusdigital/telus-thorium-core#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "clean-css": "^3.4.10",
+    "fontmin": "^0.9.6",
+    "marked": "~0.3.5",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.5.1",
+    "stylelint": "^7.1.0",
+    "stylelint-config-standard": "^12.0.0"
+  }
+}
