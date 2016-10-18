@@ -32,7 +32,7 @@ a.button {
   display: block;
   font-family: $font-telus;
   font-size: rem(15px);
-  font-weight: normal;
+  font-weight: 700;
   letter-spacing: .2px;
   line-height: 1.166666;
   margin: 9px 0;
@@ -71,13 +71,46 @@ a.button {
   }
 
   &-primary {
-    background-color: $color-green;
+    background-color: $color-purple;
     color: $color-white;
-    font-weight: 500;
 
     &:hover {
-      background-color: $color-green-darker;
+      background-color: $color-purple-light;
       color: $color-white;
+    }
+
+    &--outlined {
+      background-color: $color-white;
+      color: $color-purple;
+      border: solid 1px $color-purple;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-purple-light;
+        border: solid 1px $color-purple-light;
+      }
+    }
+  }
+
+  &-secondary {
+    background-color: $color-green-darker;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-green;
+      color: $color-white;
+    }
+
+    &--outlined {
+      background-color: $color-white;
+      border: solid 1px $color-green-darker;
+      color: $color-green-darker;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-green;
+        border: solid 1px $color-green;
+      }
     }
   }
 
@@ -86,6 +119,7 @@ a.button {
     text-decoration: underline;
     padding-left: 0;
     padding-right: 0;
+    font-weight: 500;
 
     &:hover {
       color: $color-green-darker;
@@ -100,7 +134,29 @@ a.button {
   }
 
   &[disabled] {
-    background-color: $color-grey-panel;
+    background-color: #efefef;
     color: $color-grey-dark;
+  }
+
+  &-inverted {
+    border: 0;
+    background: $color-white;
+    color: $color-purple;
+
+    &:hover {
+      color: $color-purple-light;
+    }
+
+    &--outlined {
+      border: solid 1px $color-white;
+      color: $color-white;
+      background: $color-purple;
+      transition: border-color .1s linear;
+
+      &:hover {
+        color: $color-white;
+        border: solid 1px rgba(255, 255, 255, 0.35);
+      }
+    }
   }
 }

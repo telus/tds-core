@@ -37,10 +37,10 @@ $color-white: #fff;
 
 $color-font: #666;
 $color-font-darker: $color-grey-dark;
-$color-link: $color-green-darker;
-$color-link-hover: $color-green;
-$color-link-secondary: $color-grey;
-$color-link-secondary-hover: $color-grey-dark;
+$color-link: $color-grey;
+$color-link-hover: $color-grey-medium;
+$color-link-secondary: $color-grey; // DEPRECATED 0.4.0
+$color-link-secondary-hover: $color-grey-dark; // DEPRECATED 0.4.0
 $color-text: $color-font-darker;
 
 // Icon colors
