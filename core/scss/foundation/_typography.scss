@@ -103,7 +103,7 @@ h3,
 h4,
 .heading-4 {
   font-size: rem(15px);
-  font-weight: 500;
+  font-weight: 700;
   color: $color-grey-dark;
   line-height: 1.333; // 20px
   margin-bottom: baseline-margin(40px);
@@ -153,6 +153,10 @@ p,
   line-height: $body-line-height;
   margin-bottom: 1rem;
   letter-spacing: .01em;
+
+  @include from-breakpoint(medium) {
+    line-height: $body-line-height-med;
+  }
 
   a {
     text-decoration: underline;
