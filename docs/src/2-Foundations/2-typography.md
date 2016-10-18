@@ -250,6 +250,126 @@ body/small/link-secondary-hover
 <small><a class="link--secondary" href="#">Small secondary link</a></small>
 ```
 
+### Inverted links
+
+<div class="example example--inverted">
+    <a href="#" class="link link--inverted">
+        Large/link
+    </a>
+    <br>
+    <small>
+        <a href="#" class="link link--inverted">
+            Small/link
+        </a>
+    </small>
+</div>
+
+```html
+<a href="#" class="link link--inverted">
+    Large/link
+</a>
+
+<small>
+    <a href="#" class="link link--inverted">
+        Small/link
+    </a>
+</small>
+```
+
+## Chevron Links
+
+---
+
+### Primary chevrons
+
+Clickable product names, clickable subheads that  are page/category titles.
+
+<a href="#" class="chevron-link">
+    Large/link
+    <i class="icon icon-core-chevron"></i>
+</a>
+
+<small>
+    <a href="#" class="chevron-link">
+        Small/link
+        <i class="icon icon-core-chevron"></i>
+    </a>
+</small>
+
+```html
+<a href="#" class="chevron-link">
+    Large/link
+    <i class="icon icon-core-chevron"></i>
+</a>
+
+<small>
+    <a href="#" class="chevron-link">
+        Small/link
+        <i class="icon icon-core-chevron"></i>
+    </a>
+</small>
+```
+
+### Secondary chevrons
+
+ CTAs such as ‘View All’, ‘Learn more’, CTAs below typestacks that dives deeper on a topic.
+
+<a href="#" class="chevron-link chevron-link--secondary">
+    Large/link
+    <i class="icon icon-core-chevron"></i>
+</a>
+
+<small>
+    <a href="#" class="chevron-link chevron-link--secondary">
+        Small/link
+        <i class="icon icon-core-chevron"></i>
+    </a>
+</small>
+
+```html
+<a href="#" class="chevron-link chevron-link--secondary">
+    Large/link
+    <i class="icon icon-core-chevron"></i>
+</a>
+
+<small>
+    <a href="#" class="chevron-link chevron-link--secondary">
+        Large/link
+        <i class="icon icon-core-chevron"></i>
+    </a>
+</small>
+```
+
+### Inverted chevrons
+
+<div class="example example--inverted">
+    <a href="#" class="chevron-link chevron-link--inverted">
+        Large/link
+        <i class="icon icon-core-chevron"></i>
+    </a>
+    <br>
+    <small>
+        <a href="#" class="chevron-link chevron-link--inverted">
+            Small/link
+            <i class="icon icon-core-chevron"></i>
+        </a>
+    </small>
+</div>
+
+```html
+<a href="#" class="chevron-link chevron-link--inverted">
+    Large/link
+    <i class="icon icon-core-chevron"></i>
+</a>
+
+<small>
+    <a href="#" class="chevron-link chevron-link--inverted">
+        Small/link
+        <i class="icon icon-core-chevron"></i>
+    </a>
+</small>
+```
+
 ## Examples
 
 ---

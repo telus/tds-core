@@ -26,6 +26,11 @@ Description:  Styling for examples in-line with documentation
   &--type {
     padding-left: 2rem;
   }
+
+  &--inverted {
+    background: $color-purple;
+    padding: 2rem;
+  }
 }
 
 #example-hint {

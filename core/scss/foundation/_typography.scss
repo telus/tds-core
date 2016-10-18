@@ -186,6 +186,7 @@ small,
   6.  Links
 ---------------------------------------- */
 
+.link,
 a,
 a:link,
 a:visited {
@@ -195,14 +196,51 @@ a:visited {
   &:hover {
     color: $color-link-hover;
   }
+}
 
-  &.link {
-    &--secondary {
-      color: $color-link-secondary;
+.chevron-link,
+.chevron-link:link,
+.chevron-link:visited {
+  text-decoration: none;
+  color: $color-purple;
+  font-weight: 500;
 
-      &:hover {
-        color: $color-link-secondary-hover;
-      }
+  &:hover {
+    color: $color-purple-light;
+
+    .icon {
+      left: 4px;
     }
+  }
+
+  .icon {
+    position: relative;
+    color: inherit;
+    transition: color .2s, left .3s;
+    left: -2px;
+    margin-left: 2px;
+  }
+}
+
+.chevron-link--secondary,
+.chevron-link--secondary:link,
+.chevron-link--secondary:visited {
+  color: $color-green-darker;
+
+  &:hover {
+    color: $color-green;
+  }
+}
+
+.link--inverted,
+.link--inverted:link,
+.link--inverted:visited,
+.chevron-link--inverted,
+.chevron-link--inverted:link,
+.chevron-link--inverted:visited {
+  color: $color-grey-panel;
+
+  &:hover {
+    color: $color-white;
   }
 }

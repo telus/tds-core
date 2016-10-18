@@ -26,12 +26,24 @@ The shape colour of normal and hover fade between one another on hover of the bu
 
 ---
 
-A button that's used for primary actions. The `button` and `button--primary` classes define its default appearance. In general, button classes can be applied to both `<button>` and `<a>` tags.
+A button that's used for primary actions. The `button` and `button-primary` blocks define its default appearance. In general, button classes can be applied to both `<button>` and `<a>` tags.
 
 <button class="button button-primary">Submit form</button>
 
 ```html
 <button class="button button-primary">
+    Submit form
+</button>
+```
+
+### Outlined primary button
+
+<button class="button button-primary button-primary--outlined">
+    Submit form
+</button>
+
+```html
+<button class="button button-primary button-primary--outlined">
     Submit form
 </button>
 ```
@@ -62,7 +74,59 @@ If you want to prevent that a button from being clicked, use the `disabled` attr
 
 _Note_: The mobile button width is fluid and stretches to cover all columns currently in view.
 
+## Secondary Button
+
+---
+
+<button class="button button-secondary">
+    Submit Form
+</button>
+
+```html
+<button class="button button-secondary">
+    Submit Form
+</button>
+```
+
+### Outlined secondary button
+
+<button class="button button-secondary button-secondary--outlined">
+    Submit form
+</button>
+
+```html
+<button class="button button-secondary button-secondary--outlined">
+    Submit form
+</button>
+```
+
+## Inverted Button
+
+---
+
+### Inverted + Inverted, Outlined
+
+<div class="example example--inverted">
+    <button class="button button-inverted">
+        Submit form
+    </button>
+    <button class="button button-inverted button-inverted--outlined">
+        Submit form
+    </button>
+</div>
+
+```html
+<button class="button button-inverted">
+    Submit form
+</button>
+<button class="button button-inverted button-inverted--outlined">
+    Submit form
+</button>
+```
+
 ## Links
+
+---
 
 The `button-link` class creates an element which behaves like a button, but looks like a link.
 
