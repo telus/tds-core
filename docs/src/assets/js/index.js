@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const mounts = window.document.querySelectorAll('[data-thorium-component]');
 
   [...mounts].forEach(mountPoint => {
-    console.log(mountPoint);
     const rawProps = mountPoint.getAttribute('data-props') || {};
     let parsedProps = {};
 
