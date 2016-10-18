@@ -88,7 +88,7 @@ Description:  Helpful SASS mixins
 }
 
 /* ---------------------------------------
-  2.  Font helpers: calculate rem, em
+  2.  Typography helpers
 ----------------------------------------- */
 
 @function rem($size) {
@@ -97,6 +97,41 @@ Description:  Helpful SASS mixins
 
 @function baseline-margin($size) {
   @return rem($size - ($body-text-size * $body-line-height));
+}
+
+// Create an underline which doesn't intersect with descenders on lowercase
+// letters.
+@mixin clear-descenders($text-color, $bg-color) {
+  background:
+    linear-gradient($bg-color, $bg-color),
+    linear-gradient($bg-color, $bg-color),
+    linear-gradient($text-color, $text-color);
+  background-size:
+    .05em 1px,
+    .05em 1px,
+    1px 1px;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    repeat-x;
+  text-shadow:
+    .03em 0 $bg-color,
+    -.03em 0 $bg-color,
+    0 .03em $bg-color,
+    0 -.03em $bg-color,
+    .06em 0 $bg-color,
+    -.06em 0 $bg-color,
+    .09em 0 $bg-color,
+    -.09em 0 $bg-color,
+    .12em 0 $bg-color,
+    -.12em 0 $bg-color,
+    .15em 0 $bg-color,
+    -.15em 0 $bg-color;
+  background-position:
+    0 95%,
+    100% 95%,
+    0 95%;
+  text-decoration: none;
 }
 
 /* ---------------------------------------

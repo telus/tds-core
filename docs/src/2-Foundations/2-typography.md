@@ -199,11 +199,11 @@ body/large/link-primary-hover
 
 <div class="example example--type">
     <header class="heading-3">Example</header>
-    <a href="#">View the current page</a>
+    <a href="#" class="link link--descent">View the current page</a>
 </div>
 
 ```html
-<a href="#">View the current page</a>
+<a href="#" class="link link--descent">View the current page</a>
 ```
 
 ### Small primary links
@@ -215,38 +215,47 @@ body/small/link-primary-hover
 
 <div class="example example--type">
     <header class="heading-3">Example</header>
-    <small><a href="#">View another page</a></small>
+    <small><a href="#" class="link link--descent">View another page</a></small>
 </div>
 
 ```html
-<small><a href="#">View another page</a></small>
+<small><a href="#" class="link link--descent">View another page</a></small>
 ```
 
 ### Inverted links
 
 <div class="example example--inverted">
-    <a href="#" class="link link--inverted">
+    <a href="#" class="link link--inverted link--descent">
         Large/link
     </a>
     <br>
     <small>
-        <a href="#" class="link link--inverted">
+        <a href="#" class="link link--inverted link--descent">
             Small/link
         </a>
     </small>
 </div>
 
 ```html
-<a href="#" class="link link--inverted">
+<a href="#" class="link link--inverted link--descent">
     Large/link
 </a>
 
 <small>
-    <a href="#" class="link link--inverted">
+    <a href="#" class="link link--inverted link--descent">
         Small/link
     </a>
 </small>
 ```
+
+### "Clear descenders" modifier
+
+You'll notice these links include a `link--descent` modifier. This class creates a custom underline which doesn't intersect with the descenders of lowercase letters. There are a few requirements for using this style:
+
+* Opt-in by applying the `.link .link--descent` classes to a hyperlink
+* The text must be on a known, solid background color.
+    * White background for normal links
+    * Grape background for inverted links
 
 ## Chevron Links
 
