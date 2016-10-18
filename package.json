@@ -12,7 +12,8 @@
     "install": "npm run install:core && npm run install:enriched && npm run install:docs",
     "install:core": "cd core && npm install",
     "install:docs": "cd docs && npm install",
-    "install:enriched": "cd enriched && npm install"
+    "install:enriched": "cd enriched && npm install",
+    "setup:links": "cd core && npm link && cd ../enriched && npm link && npm link telus-thorium-core && cd ../docs && npm link telus-thorium-core && npm link telus-thorium-enriched"
   },
   "repository": {
     "type": "git",

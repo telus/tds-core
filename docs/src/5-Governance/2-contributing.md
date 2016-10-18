@@ -153,42 +153,25 @@ If you'd like to know more about the release process, you can read about it on t
 ### Clone the Thorium repo
 
 ```bash
-git clone git@github.com:telusdigital/thorium.git
+git clone git@github.com:telusdigital/telus-thorium-core.git
+cd telus-thorium-core
 ```
 
-Symlink the core module so changes are immediately picked up by your local documentation site instance.
+Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.
 
 ```bash
-cd thorium/core
-npm link
-cd ../docs
-npm link telus-thorium-core
-cd ..
+npm run setup:links
 ```
 
 Install the rest of the projects' dependencies and start up the Wintersmith dev server.
 
 ```bash
 npm install
+npm run build
 npm run start
 ```
 
 Thorium's documentation site will now be available in the browser at [http://localhost:8080](http://localhost:8080).
-
-### Auto-rebuild
-
-Run the doc site's watch command to rebuild stylesheets whenever a change is made.
-
-```bash
-cd docs
-npm run watch:css
-```
-
-The paths watched are:
-
-* `core/scss/**/*.scss`
-* `docs/src/assets/scss/**/*.scss`
-
 
 ## Start contributing
 
