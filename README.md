@@ -6,19 +6,12 @@ Thorium, the TELUS Design system is a set of living guidelines that communicates
 
 Clone this repository
 
-    git clone git@github.com:telusdigital/thorium.git
+    git clone git@github.com:telusdigital/telus-thorium-core.git
+    cd telus-thorium-core
 
 Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.
 
-    cd thorium/core
-    npm link
-    cd ../enriched
-    npm link
-    npm link telus-thorium-core
-    cd ../docs
-    npm link telus-thorium-core
-    npm link telus-thorium-enriched
-    cd ..
+    npm run setup:links
 
 Install the rest of the projects' dependencies and start up your local documentation site.
 
