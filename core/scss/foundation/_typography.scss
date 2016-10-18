@@ -247,3 +247,13 @@ a:visited {
     color: $color-white;
   }
 }
+
+.link--descent,
+.link--descent:link,
+.link--descent:visited {
+  @include clear-descenders($color-link, $color-white);
+
+  &.link--inverted {
+    @include clear-descenders($color-grey-panel, $color-purple);
+  }
+}
