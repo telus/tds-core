@@ -1,7 +1,7 @@
 {
   "name": "telus-thorium-docs",
   "version": "0.4.0",
-  "description": "TELUS Thorium documentation website",
+  "description": "TELUS Design System documentation website",
   "main": "index.js",
   "scripts": {
     "lint": "node_modules/.bin/stylelint 'src/assets/scss/**/*.scss' --syntax scss",
@@ -19,7 +19,7 @@
     "url": "git+https://github.com/telusdigital/telus-thorium-core.git"
   },
   "author": "TELUS Digital",
-  "license": "",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/telusdigital/telus-thorium-core/issues"
   },

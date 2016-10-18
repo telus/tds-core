@@ -14,8 +14,8 @@
     "type": "git",
     "url": "git+https://github.com/telusdigital/telus-thorium-core.git"
   },
-  "author": "Telus Digital",
-  "license": "",
+  "author": "TELUS Digital",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/telusdigital/telus-thorium-core/issues"
   },

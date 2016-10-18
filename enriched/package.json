@@ -2,6 +2,7 @@
   "name": "telus-thorium-enriched",
   "version": "0.4.0",
   "main": "lib/index.js",
+  "sass": "src/index.scss",
   "scripts": {
     "start": "npm run deploy && npm run dev",
     "clean": "rm -rf lib && rm -rf dist && mkdir -p lib && mkdir -p dist",
@@ -68,7 +69,11 @@
     "react",
     "react-component"
   ],
-  "description": "",
-  "author": "",
-  "sass": "src/index.scss"
+  "description": "TELUS Design System re-usable components",
+  "author": "TELUS Digital",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telusdigital/telus-thorium-core.git"
+  },
+  "license": "UNLICENSED"
 }
