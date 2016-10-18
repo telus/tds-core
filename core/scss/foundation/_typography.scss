@@ -86,15 +86,14 @@ h2,
 
 h3,
 .heading-3 {
-  font-size: rem(23px);
-  line-height: 1.3913;
+  font-size: rem(19px);
+  line-height: 1.6842; // 32px
   font-weight: 500;
   letter-spacing: .25px;
   margin-bottom: baseline-margin(40px);
   color: $color-grey-dark;
 
   @include from-breakpoint(medium) {
-    font-size: rem(19px);
     line-height: 1.47368; // 28px
     letter-spacing: 0;
   }
