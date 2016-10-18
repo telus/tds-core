@@ -222,34 +222,6 @@ body/small/link-primary-hover
 <small><a href="#">View another page</a></small>
 ```
 
-### Secondary links
-
-body/large/link-secondary-normal<br>
-body/large/link-secondary-hover
-
-<div class="example example--type">
-    <header class="heading-3">Example</header>
-    <a class="link--secondary" href="#">Secondary link</a>
-</div>
-
-```html
-<a class="link--secondary" href="#">Secondary link</a>
-```
-
-### Small secondary links
-
-body/small/link-secondary-normal<br>
-body/small/link-secondary-hover
-
-<div class="example example--type">
-    <header class="heading-3">Example</header>
-    <small><a class="link link--secondary" href="#">Small secondary link</a></small>
-</div>
-
-```html
-<small><a class="link--secondary" href="#">Small secondary link</a></small>
-```
-
 ### Inverted links
 
 <div class="example example--inverted">
