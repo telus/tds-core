@@ -25,7 +25,9 @@ config.plugins.push(new webpack.optimize.CommonsChunkPlugin({
 }));
 config.plugins.push(new webpack.DefinePlugin({
   "process.env": {
-    NODE_ENV: JSON.stringify("production")
+    NODE_ENV: JSON.stringify("production"),
+    BROWSER: JSON.stringify(true),
+    THORIUM_CORE_STYLES: JSON.stringify(true)
   },
   __DEBUG__: true
 }));

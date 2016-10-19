@@ -1,22 +1,16 @@
 var webpack = require('webpack');
 var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
-  entry: './src/assets/js/index.js',
+  entry: './src/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'src', 'assets', 'js'),
-    filename: 'bundle.js'
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel'
-      }
-    ]
+    path: path.resolve(__dirname, 'src', 'html', 'assets', 'bundles'),
+    filename: 'docs.js'
   },
   plugins: [
+    new ExtractTextPlugin('docs.css', { allChunks: true }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
@@ -25,11 +19,31 @@ module.exports = {
       }
     }),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': '"production"',
-      ENV: JSON.stringify('PRODUCTION')
-    }),
+      ENV: JSON.stringify('PRODUCTION'),
+      "process.env": {
+        NODE_ENV: '"production"',
+        BROWSER: JSON.stringify(true)
+      }
+    })
   ],
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel'
+      },
+      {
+        test: /\.s?css$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css!postcss!sass')
+      }
+    ]
+  },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.scss']
+  },
+  postcss: () => [autoprefixer],
+  sassLoader: {
+    data: "$thorium-icon-font-prefix: '/assets/fonts';"
   }
 };
