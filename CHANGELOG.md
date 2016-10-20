@@ -1,3 +1,21 @@
+# v0.5.0
+
+19 October 2016
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.5.0
+
+- Added: new Thorium Enriched Node module w/ isomorphic React components
+- Added: Selector Counter enriched component
+- Added: hyperlink underlines which don't intersect descenders
+- Added: Chevron links
+- Added: Secondary buttons, outline buttons, inverted buttons
+- Updated Primary button color
+- Updated: Font sizes and colors to match results of the typography audit
+- Updated: Consumption & Contribution documentation
+- Updated: Utility icon names (deprecated names preserved for backwards compatibility)
+- Fixed: Utility icons appear sharper in IE11
+- Fixed: Alert icon no longer persists when an invalid field receives focus
+
 # v0.4.0
 
 4 October 2016
