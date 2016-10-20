@@ -105,7 +105,7 @@ ReactDOM.render(
 Install both the Thorium Core & Enriched modules:
 
 ```bash
-foo bar
+npm i --save telus-thorium-core telus-thorium-enriched
 ```
 
 Import the Core styles somewhere in your main SCSS:
