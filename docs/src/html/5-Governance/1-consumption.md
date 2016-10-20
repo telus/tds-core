@@ -71,7 +71,7 @@ Add a link to the CDN-hosted thorium.css file into the `<head>` of your page.
     <link
         rel="stylesheet"
         type="text/css"
-        href="https://cdn.telus.digital/thorium/core/!!THORIUM_VERSION!!/thorium-enriched.min.css">
+        href="https://cdn.telus.digital/thorium/enriched/!!THORIUM_VERSION!!/thorium-enriched.min.css">
 </head>
 <body>
 
@@ -82,7 +82,7 @@ Add a link to the CDN-hosted thorium.css file into the `<head>` of your page.
 <script
     src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
 <script
-    src="https://cdn.telus.digital/thorium/core/!!THORIUM_VERSION!!/thorium-enriched.min.js"></script>
+    src="https://cdn.telus.digital/thorium/enriched/!!THORIUM_VERSION!!/thorium-enriched.min.js"></script>
 
 <script>
 ReactDOM.render(
