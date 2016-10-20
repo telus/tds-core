@@ -105,7 +105,7 @@ ReactDOM.render(
 Install both the Thorium Core & Enriched modules:
 
 ```bash
-npm i --save telus-thorium-core telus-thorium-enriched
+foo bar
 ```
 
 Import the Core styles somewhere in your main SCSS:
@@ -163,7 +163,7 @@ It does a great job handling React, ES6, styles, and more.
 
 Internally, Enriched Components will `require()` their scss when `process.env.BROWSER` is `true`.
 
-See the [Webpack file of this documentation site](https://github.com/telusdigital/telus-thorium-core/tree/master/docs/Webpack.config.js) for an example configuration.
+See the [Webpack file of this documentation site](https://github.com/telusdigital/telus-thorium-core/blob/master/docs/webpack.config.js) for an example configuration.
 
 ## Versioning
 
