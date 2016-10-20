@@ -5,10 +5,11 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "npm run build:core && npm run build:enriched && npm run build:docs",
+    "build:assets": "cp core/fonts/* docs/src/html/assets/fonts/ && cp designs/thorium.sketch docs/src/html/assets/downloads/thorium.sketch",
     "build:core": "cd core && npm run build",
     "build:docs": "cd docs && npm run build",
     "build:enriched": "cd enriched && npm run build",
-    "start": "cd docs && npm run build:assets && npm run start",
+    "start": "npm run build:assets && cd docs && npm run start",
     "install": "npm run install:core && npm run install:enriched && npm run install:docs",
     "install:core": "cd core && npm install",
     "install:docs": "cd docs && npm install",
@@ -22,5 +23,9 @@
   "author": "TELUS Digital",
   "bugs": {
     "url": "https://github.com/telusdigital/telus-thorium-core/issues"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.4"
   }
 }

@@ -5,12 +5,13 @@ var path = require('path');
 
 config.entry = {
   'thorium-enriched': [
+    './src/core-styles.js',
     './src/index.js'
   ]
 };
 
 config.output = {
-  library: 'ThoriumEnriched',
+  library: 'Thorium',
   libraryTarget: 'umd',
   path: path.join(process.cwd(), 'dist'),
   filename: '[name].js',

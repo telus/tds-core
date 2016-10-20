@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var path = require('path');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
 
@@ -15,7 +16,7 @@ module.exports = {
     loaders: [
       { 
         test: /\.scss$/, 
-        loader: ExtractTextPlugin.extract("style-loader", "css?sourceMap&-minimize!autoprefixer!sass?sourceMap")
+        loader: ExtractTextPlugin.extract("style-loader", "css?sourceMap&-minimize!postcss!sass?sourceMap")
       },
       { 
         test: /\.css$/, 
@@ -38,12 +39,14 @@ module.exports = {
 
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoErrorsPlugin()
   ],
 
   
   resolve: {
     extensions: ['', '.js', '.jsx', '.scss']
-  }
+  },
+
+  postcss: () => [autoprefixer]
 
 };

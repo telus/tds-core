@@ -2,6 +2,10 @@ import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import CounterButton from './CounterButton';
 
+if (process.env.BROWSER) {
+  require('./SelectorCounter.scss');
+}
+
 class SelectorCounter extends Component {
   constructor(props) {
     super(props);

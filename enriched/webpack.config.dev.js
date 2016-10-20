@@ -25,7 +25,9 @@ config.module.loaders.push({
 config.plugins.push(new webpack.HotModuleReplacementPlugin());
 config.plugins.push(new webpack.DefinePlugin({
   "process.env": {
-    NODE_ENV: JSON.stringify("development")
+    NODE_ENV: JSON.stringify("development"),
+    BROWSER: JSON.stringify(true),
+    THORIUM_CORE_STYLES: JSON.stringify(true)
   },
   __DEBUG__: true
 }));
