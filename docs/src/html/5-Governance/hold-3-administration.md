@@ -8,9 +8,7 @@ template: doc.jade
 ---
 
 <ul class="list list--checked">
-    <li class="list__item">Update `version` in package.json</li>
-    <li class="list__item">Update the current version number on the [homepage](/)</li>
-    <li class="list__item">Update version numbers and example URLs on the [consumption page](/5-Governance/1-consumption.html)</li>
+    <li class="list__item">Update `version` in all package.json files</li>
     <li class="list__item">Tag the commit being released</li>
 </ul>
 
