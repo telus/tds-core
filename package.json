@@ -4,7 +4,7 @@
   "description": "TELUS Design System",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "npm run build:core && npm run build:enriched && npm run build:docs",
+    "build": "npm run build:assets && npm run build:core && npm run build:enriched && npm run build:docs",
     "build:assets": "cp core/fonts/* docs/src/html/assets/fonts/ && cp designs/thorium.sketch docs/src/html/assets/downloads/thorium.sketch",
     "build:core": "cd core && npm run build",
     "build:docs": "cd docs && npm run build",
