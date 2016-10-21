@@ -1,7 +1,25 @@
-import React, { PropTypes } from 'react';
-import classNames from 'classnames';
+/**
+ * CounterButton is an element that can be clicked in order to change the
+ * value of a SelectorCounter.
+ */
 
-function counterButton({ label, icon, onClick, disabled }) {
+import React, { PropTypes } from 'react';
+
+const propTypes = {
+  label: PropTypes.string,
+  icon: PropTypes.string,
+  onClick: PropTypes.func,
+  disabled: PropTypes.bool
+};
+
+const defaultProps = {
+  label: 'Change value',
+  icon: 'caret-up',
+  onClick: () => {},
+  disabled: false
+};
+
+export default function counterButton({ label, icon, onClick, disabled }) {
   return (
     <button
       aria-label={label}
@@ -11,21 +29,9 @@ function counterButton({ label, icon, onClick, disabled }) {
     >
       <i className={`selector-counter__icon icon icon-core-${icon}`} />
     </button>
-  )
+  );
 }
 
-counterButton.propTypes = {
-  label: PropTypes.string,
-  icon: PropTypes.string,
-  onClick: PropTypes.func,
-  disabled: PropTypes.bool
-};
+counterButton.propTypes = propTypes;
 
-counterButton.defaultProps = {
-  label: 'Change value',
-  icon: 'caret-up',
-  onClick: () => {},
-  disabled: false
-};
-
-export default counterButton;
+counterButton.defaultProps = defaultProps;
