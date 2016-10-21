@@ -1,5 +1,5 @@
 ---
-title: Consumption
+title: For developers
 template: doc.jade
 ---
 
@@ -265,3 +265,9 @@ For contributors, and projects that integrate deeply, Thorium is powered by thes
 * [ESLint](http://eslint.org/) and [stylelint](http://stylelint.io/) for linting
 
 The Thorium Team is currently evaluating [Jest](https://facebook.github.io/jest/) + [Enzyme](http://airbnb.io/enzyme/) for its testing needs. A final decision on testing frameworks will be documented here in a future release.
+
+## Contribution and feedback
+
+---
+
+We’re glad you’re considering contributing to the design system. Please read our [contribution guidelines](/5-Contribution/2-contributing-developer.html).

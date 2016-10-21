@@ -1,5 +1,5 @@
 ---
-title: Contribution
+title: Contribution guidelines - development
 template: doc.jade
 ---
 

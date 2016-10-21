@@ -25,18 +25,6 @@ Thorium is a design system that exists to create a consistent and cohesive brand
 * Supplies development squads with documentation on installation, implementation, and best practices around the framework.
 * Offer a component catalog with code snippets for ease of implementation and acceleration of the development process.
 
-### Customers
+### TELUS Customers
 
-* Customers will experience more seamless experiences across digital touch points.
-
-## Design vision
-
----
-
-Create clear and simple experiences that efficiently satisfy customer needs throughout their journey with TELUS.
-
-### Considerations
-
-* Create simple, honest and effortless end-to-end experiences that leverage the design system to efficiently satisfy customer needs.
-* Create frictionless [simple], honest [friendly] E2E experiences that efficiently satisfy customer needs.
-* Create simple, honest and efficient end-to-end experiences to satisfy customer needs.
+* TELUS Customers will experience more seamless experiences across digital touch points.
