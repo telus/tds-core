@@ -1,3 +1,8 @@
+/**
+ * SelectorCounter lets a user choose a number in increments of one, by
+ * clicking increment/decrement buttons.
+ */
+
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import CounterButton from './CounterButton';
@@ -6,7 +11,25 @@ if (process.env.BROWSER) {
   require('./SelectorCounter.scss');
 }
 
-class SelectorCounter extends Component {
+const propTypes = {
+  defaultValue: PropTypes.number,
+  min: PropTypes.number,
+  incrementorLabel: PropTypes.string,
+  decrementorLabel: PropTypes.string,
+  onChange: PropTypes.func,
+  disabled: PropTypes.bool,
+  invalid: PropTypes.bool,
+  successful: PropTypes.bool
+};
+
+const defaultProps = {
+  defaultValue: 0,
+  min: 0,
+  incrementorLabel: 'Increase value',
+  decrementorLabel: 'Decrease value'
+};
+
+export default class SelectorCounter extends Component {
   constructor(props) {
     super(props);
 
@@ -79,22 +102,6 @@ class SelectorCounter extends Component {
   }
 }
 
-SelectorCounter.propTypes = {
-  defaultValue: PropTypes.number,
-  min: PropTypes.number,
-  incrementorLabel: PropTypes.string,
-  decrementorLabel: PropTypes.string,
-  onChange: PropTypes.func,
-  disabled: PropTypes.bool,
-  invalid: PropTypes.bool,
-  successful: PropTypes.bool
-};
+SelectorCounter.propTypes = propTypes;
 
-SelectorCounter.defaultProps = {
-  defaultValue: 0,
-  min: 0,
-  incrementorLabel: 'Increase value',
-  decrementorLabel: 'Decrease value'
-};
-
-export default SelectorCounter;
+SelectorCounter.defaultProps = defaultProps;
