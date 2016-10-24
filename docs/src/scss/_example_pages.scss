@@ -115,3 +115,12 @@ Description:  Styling for stand-alone example pages
     }
   }
 }
+
+.inverted-link-ex {
+  background: $color-purple;
+
+  > p {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
