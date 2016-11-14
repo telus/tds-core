@@ -19,7 +19,7 @@ Install the rest of the projects' dependencies and start up your local documenta
     npm run build
     npm run start
 
-The documentation site will be available at `http://localhost:8080`.
+The documentation site will be available at `http://localhost:8081` with Webpack Hot Module Reloading enabled.
 
 For more information about contributing, please see the [Governance - Contribution page](/docs/5-Governance/2-contributing.md).
 

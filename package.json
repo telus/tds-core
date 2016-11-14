@@ -9,7 +9,7 @@
     "build:core": "cd core && npm run build",
     "build:docs": "cd docs && npm run build",
     "build:enriched": "cd enriched && npm run build",
-    "start": "npm run build:assets && cd docs && npm run start",
+    "start": "concurrently --kill-others \"cd docs && npm run start\" \"cd docs && npm run devServer\"",
     "install": "npm run install:core && npm run install:enriched && npm run install:docs",
     "install:core": "cd core && npm install",
     "install:docs": "cd docs && npm install",
@@ -25,6 +25,7 @@
     "url": "https://github.com/telusdigital/telus-thorium-core/issues"
   },
   "devDependencies": {
+    "concurrently": "^3.1.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.4"
   }
