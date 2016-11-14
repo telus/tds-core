@@ -163,7 +163,7 @@ Symlink the core & enriched modules so changes are immediately picked up by your
 npm run setup:links
 ```
 
-Install the rest of the projects' dependencies and start up the Wintersmith dev server.
+Install the rest of the projects' dependencies and start up the dev server.
 
 ```bash
 npm install
@@ -171,7 +171,7 @@ npm run build
 npm run start
 ```
 
-Thorium's documentation site will now be available in the browser at [http://localhost:8080](http://localhost:8080).
+Thorium's documentation site will now be available in the browser at [http://localhost:8081](http://localhost:8081) with Webpack Hot Module Reloading enabled.
 
 ## Start contributing
 
