@@ -1,43 +1,20 @@
-/**
+// Mobile-first responsive grid.
 
-File:           grid.scss
-Description:    Telus grid classes live in here. The grid is _mobile-first_. Add code for
-		small screens first, and larger devices will inherit those styles. You may
-		customize for larger screens as necessary.
+//
+// Helpers
+//
 
-		Conversely, you are not constrained to using the grid classes herein. It may
-		be simpler, for example, to use the provided mixin to just set the column
-		width of an element at a particular breakpoint.
-
-	◡◠ ✥ ◠◡
-
-    Table of Contents:
-
-    1. Helpers
-    2. Rows & columns
-    3. Forms grid
-
-*/
-
-/* ---------------------------------------
-  1.  Helpers
------------------------------------------ */
-
-/**
- * Generate a width for a block that occupies the space of n columns, out of the
- * given amount of total columns. Ex: columns(6, 12) produces a block that's
- * 50% the width of its parent.
- */
+//Generate a width for a block that occupies the space of n columns, out of the
+// given amount of total columns. Ex: columns(6, 12) produces a block that's
+// 50% the width of its parent.
 @mixin columns($n, $total-columns) {
   float: left;
   width: percentage($n / $total-columns);
 }
 
-/**
- * Generate margins for a block which is offset from the left by n columns out
- * of the given total columns. Ex: offsetcolumns(3, 12) produces a block that's
- * offset by 25%.
- */
+// Generate margins for a block which is offset from the left by n columns out
+// of the given total columns. Ex: offsetcolumns(3, 12) produces a block that's
+// offset by 25%.
 @mixin offsetcolumns($n, $total-columns) {
   float: left;
   margin-left: percentage($n / $total-columns);
@@ -53,9 +30,9 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
   left: percentage($n / $total-columns);
 }
 
-/* ---------------------------------------
-  2. Rows & columns
------------------------------------------ */
+//
+// Rows & columns
+//
 
 .container {
   @include clearfix;
@@ -111,14 +88,12 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
   }
 }
 
-/* ---------------------------------------
-  3. Forms grid
------------------------------------------ */
+//
+// Forums grid
+//
 
-/**
- * .field-col is helper class which constrains a field to the maximum recommended
- * width at each breakpoint. It's basically an alias for .medium-7.large-5.xl-4
- */
+// .field-col is helper class which constrains a field to the maximum recommended
+// width at each breakpoint. It's basically an alias for .medium-7.large-5.xl-4
 .field-col {
   padding: 0 $gutter / 2;
 
@@ -135,11 +110,9 @@ Description:    Telus grid classes live in here. The grid is _mobile-first_. Add
   }
 }
 
-/**
- * There should be more spacing between fields & buttons, than between consecutive
- * fields. The .button-row class adds that extra spacing. It can be used by itself,
- * or mixed with a .grid-row block.
- */
+// There should be more spacing between fields & buttons, than between consecutive
+// fields. The .button-row class adds that extra spacing. It can be used by itself,
+// or mixed with a .grid-row block.
 .button-row {
   @include clearfix();
 

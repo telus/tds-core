@@ -1,23 +1,10 @@
-/**
-
-File:         fonts.scss
-Description:  Telus-specific fonts are included here
-
-	◡◠ ✥ ◠◡
-
-    Table of Contents:
-
-    1. Telus font
-
-*/
-
-/* ---------------------------------------
-  Telus-brand Font
----------------------------------------- */
+// TELUS brand font
 
 $font-url-prefix: "https://cdn.telus.digital/thorium/core/fonts"; /* stylelint-disable-line */
 
-/* Helvetica Neue Thin 35 */
+//
+// Helvetica Neue Thin 35
+//
 @font-face {
   font-family: "TELUS-Web";
   font-style: normal;
@@ -29,7 +16,9 @@ $font-url-prefix: "https://cdn.telus.digital/thorium/core/fonts"; /* stylelint-d
     url("#{$font-url-prefix}/56be84de-9d60-4089-8df0-0ea6ec786b84.eot?#iefix") format("eot");
 }
 
-/* Helvetica Neue Light 45 */
+//
+// Helvetica Neue Light 45
+//
 @font-face {
   font-family: "TELUS-Web";
   font-style: normal;
@@ -41,7 +30,9 @@ $font-url-prefix: "https://cdn.telus.digital/thorium/core/fonts"; /* stylelint-d
     url("#{$font-url-prefix}/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot");
 }
 
-/* Helvetica Neue Roman 55 */
+//
+// Helvetica Neue Roman 55
+//
 @font-face {
   font-family: "TELUS-Web";
   font-style: normal;
@@ -53,7 +44,9 @@ $font-url-prefix: "https://cdn.telus.digital/thorium/core/fonts"; /* stylelint-d
     url("#{$font-url-prefix}/b7693a83-b861-4aa6-85e0-9ecf676bc4d6.eot?#iefix") format("eot");
 }
 
-/* Helvetica Neue Medium 65 */
+//
+// Helvetica Neue Medium 65
+//
 @font-face {
   font-family: "TELUS-Web";
   font-style: normal;

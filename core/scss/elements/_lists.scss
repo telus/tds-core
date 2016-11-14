@@ -1,21 +1,9 @@
-/**
+// List styles for alphabetical, bulleted, checked, and numbered lists.
 
-File:         lists.scss
-Description:  Lists such as bulleted lists, check lists, and errors.
-
-    ◡◠ ✥ ◠◡
-
-    Table of Contents:
-
-    1. Style placeholders
-    2. List classes
-    3. Deprecated classes
-
-*/
-
-/* ---------------------------------------
-  1. Style placeholders
------------------------------------------ */
+//
+// Style placeholders DRY up the list styles so they can be used in a) the
+// core .list block, and b) deprecated classes (.list-alpha, etc.).
+//
 
 %list {
   padding-left: 40px;
@@ -97,9 +85,9 @@ Description:  Lists such as bulleted lists, check lists, and errors.
   }
 }
 
-/* ---------------------------------------
-  2.  Lists
------------------------------------------ */
+//
+// Lists
+//
 
 .list {
   @extend %list;
@@ -159,9 +147,9 @@ Description:  Lists such as bulleted lists, check lists, and errors.
   }
 }
 
-/* ---------------------------------------
-  3. Deprecated classes
------------------------------------------ */
+//
+// Deprecated classes
+//
 
 // To enable these deprecated list classes, define
 // $thorium-enable-deprecated-list-classes: true prior to your

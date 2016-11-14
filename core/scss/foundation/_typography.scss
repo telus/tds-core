@@ -1,27 +1,11 @@
-/**
+// Global font styles.
+//
+// Use 'em' if the property scales according to its font-size. For everything
+// else, use 'rem'.
 
-File:         _typography.scss
-Description:  Globally defines the default fonts and sizes for text.
-
-    ◡◠ ✥ ◠◡
-
-    Table of Contents:
-
-    1. Default Text
-    2. Headings
-    3. Subhead Style
-    4. Text Style
-    5. Paragraphs
-    6. Links
-
-*/
-
-/* ---------------------------------------
-  1.  Default Text
----------------------------------------- */
-
-// * "em" if the property scales according to its font-size
-// * everything else in "rem"
+//
+// Default text
+//
 
 body {
   color: $color-text;
@@ -29,12 +13,11 @@ body {
   font-size: rem($body-text-size);
 }
 
-/* ---------------------------------------
-  2.  Headings
----------------------------------------- */
+//
+// Headings
+//
 
-/* p + h2, p + h3, p + h4 { */
-
+// p + h2, p + h3, p + h4 {
 h2:not([class]),
 h3:not([class]),
 h4:not([class]) {
@@ -108,13 +91,13 @@ h4,
   margin-bottom: baseline-margin(40px);
 }
 
-/* ---------------------------------------
-  3.  Subhead Style
----------------------------------------- */
-
+//
+// Sub-headings
+//
 // Deprecated in v0.5.0, 10/18/16
 // Use h3 for "subhead" text
 // Use h4 for "subhead--small" text
+//
 
 .subhead {
   font-weight: 500;
@@ -129,9 +112,9 @@ h4,
   }
 }
 
-/* ---------------------------------------
-  4.  Text Style
----------------------------------------- */
+//
+// Bold & italic
+//
 
 strong,
 .strong {
@@ -142,9 +125,9 @@ em {
   font-style: italic;
 }
 
-/* ---------------------------------------
-  5.  Paragraphs
----------------------------------------- */
+//
+// Paragraph text
+//
 
 p,
 .text {
@@ -185,9 +168,9 @@ small,
   }
 }
 
-/* ---------------------------------------
-  6.  Links
----------------------------------------- */
+//
+// Links
+//
 
 .link,
 a,

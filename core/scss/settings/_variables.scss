@@ -1,23 +1,8 @@
-/**
+// Site-wide values such as color codes and font names.
 
-File:         variables.scss
-Description:  A central place to define site-wide values such as color codes
-	      and font names.
-
-    ◡◠ ✥ ◠◡
-
-    Table of Contents:
-
-    1. Colours
-    2. Typography
-    3. Grid
-    4. Feature flags
-
-*/
-
-/* ---------------------------------------
-  1.  Colours
------------------------------------------ */
+//
+// Colours
+//
 
 $color-green: #248700;
 $color-green-darker: #177a00;
@@ -53,9 +38,9 @@ $color-icon-disabled: $color-grey;
 $color-icon-disabled-hover: #6a6e74;
 $color-icon-error: $color-red;
 
-/* ---------------------------------------
-  2.  Typography
------------------------------------------ */
+//
+// Typography
+//
 
 $font-sans: Arial, sans-serif;
 $font-serif: Georgia, serif;
@@ -88,16 +73,14 @@ $icon-font-prefix: 'https://cdn.telus.digital/thorium/core/v0.4.0';
 
 /* stylelint-enable */
 
-/* ---------------------------------------
-  3.  Grid
------------------------------------------ */
+//
+// Responsive grid
+//
 
-/**
- * Breakpoints for a mobile-first grid. The pixel values of adjacent breakpoints
- * can be the same value (i.e. it's unnecessary to write values like
- * small: (544px, 768px), medium: (769px, 992px)). Media Query-generating mixins
- * will automatically add 1 where necessary.
- */
+// Breakpoints for a mobile-first grid. The pixel values of adjacent breakpoints
+// can be the same value (i.e. it's unnecessary to write values like
+// small: (544px, 768px), medium: (769px, 992px)). Media Query-generating mixins
+// will automatically add 1 where necessary.
 $breakpoints: (
   xs: (null,   544px),
   small: (544px,  768px),
@@ -117,9 +100,9 @@ $columns: (
 
 $gutter: 30px;
 
-/* ---------------------------------------
-  4.  Feature flages
------------------------------------------ */
+//
+// Feature flags
+//
 
 // The "Enable Deprecated List Classes" feature flag can be turned on to
 // support old list classes:
