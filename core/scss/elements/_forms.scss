@@ -1,26 +1,11 @@
-/**
-
-File:         forms.scss
-Description:  Styles for various form elements live here.
-
-    ◡◠ ✥ ◠◡
-
-    Table of Contents:
-
-    1. Defaults
-    2. Textarea
-    3. Helpers
-    4. Selections
-    5. Hints
-
-*/
-
-/* ---------------------------------------
-  1.  Defaults
----------------------------------------- */
+// Form styles for input fields, drop-downs, selections, and hints.
 
 $form-field-border-radius: 4px;
 $form-field-bottom-spacing: 18px;
+
+//
+// Default input styling
+//
 
 input:not([type='radio']),
 textarea,
@@ -103,6 +88,10 @@ label {
   line-height: 1;
   display: block;
 }
+
+//
+// Container for the controls making up a form field.
+//
 
 .field {
   position: relative;
@@ -187,9 +176,9 @@ label {
   }
 }
 
-/* ---------------------------------------
-  2.  Textarea
----------------------------------------- */
+//
+// Textarea
+//
 
 textarea {
   height: 12em;
@@ -197,9 +186,9 @@ textarea {
   line-height: $body-line-height;
 }
 
-/* ---------------------------------------
-  3.  Helpers
----------------------------------------- */
+//
+// Helpers
+//
 
 .helper {
   font-size: rem(16px);
@@ -223,9 +212,9 @@ textarea {
   }
 }
 
-/* ---------------------------------------
-  4.  Selections
----------------------------------------- */
+//
+// Selections (radio & checkbox)
+//
 
 // Thickness of the green border when a radio input is checked
 $radio-checked-stroke-size: 6px;
@@ -401,9 +390,9 @@ $radio-checked-stroke-size: 6px;
   }
 }
 
-/* ---------------------------------------
-  5.  Hints
----------------------------------------- */
+//
+// Hints
+//
 
 .hint {
   position: absolute;

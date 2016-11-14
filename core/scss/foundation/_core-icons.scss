@@ -1,3 +1,5 @@
+// Utility Icons web font
+
 @font-face {
   font-family: "TELUS Core Icons";
   src: url('#{$icon-font-prefix}/core-icons.eot');
@@ -9,6 +11,7 @@
   font-style: normal;
 }
 
+// Unicode points of each icon's location within the font files.
 $core-icon-codepoints: (
   alert: "\f103", // Deprecated in v0.4.1, 10/5/16 - use "exclamation-point-circle"
   caret-down: "\f105",
@@ -30,6 +33,7 @@ $core-icon-codepoints: (
   times: "\f104"
 );
 
+// Get the unicode point for a given icon name
 @function core-icon-codepoint($name) {
   @return map-get($core-icon-codepoints, $name);
 }
