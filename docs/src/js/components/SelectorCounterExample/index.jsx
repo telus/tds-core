@@ -20,7 +20,13 @@ class SelectorCounterExample extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.setState({ succeeded: (this.state.curr !== 5)});
+
+    const invalid = (this.state.curr === 5);
+    this.setState({ succeeded: !invalid});
+
+    if (invalid) {
+      this.counter.focus();
+    }
   }
 
   render() {
@@ -43,17 +49,22 @@ class SelectorCounterExample extends Component {
       <form onSubmit={this.handleSubmit}>
         <div className="field-col">
           <div className={fieldClasses}>
-            <label>Choose a number</label>
-            <div className={helperClasses}>
+            <label htmlFor="ex-selcounter">How many smartphone plans?</label>
+            <div className={helperClasses} id="ex-selcounter-desc">
               <p className="text--small">Instructions</p>
               <ul className={listClasses}>
                 <li className="list__item">Do not pick 5</li>
               </ul>
             </div>
             <SelectorCounter
+              ref={(counter) => this.counter = counter}
+              id="ex-selcounter"
+              incrementorLabel="Add a plan"
+              decrementorLabel="Remove a plan"
               onChange={this.handleNumber}
               invalid={invalid}
               successful={succeessful}
+              aria-describedby="ex-selcounter-desc"
             />
           </div>
           <button className="button button-primary">Submit</button>

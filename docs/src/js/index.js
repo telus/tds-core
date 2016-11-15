@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const components = { ...thoriumComponents, ...exampleComponents };
   const mounts = window.document.querySelectorAll('[data-thorium-component]');
 
-  [...mounts].forEach(mountPoint => {
+  [].forEach.call(mounts, (mountPoint) => {
     const rawProps = mountPoint.getAttribute('data-props') || {};
     let parsedProps = {};
 
