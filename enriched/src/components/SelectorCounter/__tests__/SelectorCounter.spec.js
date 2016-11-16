@@ -6,7 +6,7 @@ import CounterButton from '../CounterButton';
 describe('<SelectorCounter />', () => {
   it('starts with a given default value', () => {
     expect(shallow(<SelectorCounter defaultValue={5} />)
-      .find('.selector-counter__value').render().text()).toEqual("5");
+      .find('input.selector-counter__value').props().value).toEqual(5);
   });
 
   describe('onChange handler', () => {
@@ -38,6 +38,12 @@ describe('<SelectorCounter />', () => {
     it('is not called when the min value has been reached', () => {
       wrapper = mount(<SelectorCounter onChange={onChangeSpy} />);
       wrapper.find(CounterButton).last().simulate('click');
+      expect(onChangeSpy.mock.calls.length).toEqual(0);
+    });
+
+    it('is not called when the max value has been reached', () => {
+      wrapper = mount(<SelectorCounter onChange={onChangeSpy} defaultValue={10} max={10} />);
+      wrapper.find(CounterButton).first().simulate('click');
       expect(onChangeSpy.mock.calls.length).toEqual(0);
     });
   });
