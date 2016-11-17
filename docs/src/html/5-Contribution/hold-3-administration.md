@@ -10,6 +10,7 @@ template: doc.jade
 1. Update the `version` field in all package.json files
 2. Update [CHANGELOG.md](https://github.com/telusdigital/telus-thorium-core/blob/master/CHANGELOG.md) and copy your new entry to the [changelog page](/6-About/2-changelog.html)
 3. Update the [Upgrading Guide](https://github.com/telusdigital/telus-thorium-core/blob/master/UPGRADING.md)
+4. Update the [README](https://github.com/telusdigital/telus-thorium-core/blob/master/README.md)
 4. Tag the commit being released
 5. Create a release branch
 
@@ -105,6 +106,18 @@ The `isInvalid` prop of the "FooBar" React component has been renamed to `invali
 
 "Foo" styles are no longer applied to HTML <foo> elements by default. In order to make an element with Thorium's foundational styles, use the `.foo` CSS class.
 ```
+
+## README maintenance
+
+---
+
+The [README file](https://github.com/telusdigital/telus-thorium-core/blob/master/README.md) lives at the root of Thorium's source code repo and contains the essential information developers need to get the project up & running locally.
+The README should answer the first handful of essential questions a contributor will have when they first encounter Thorium. For example:
+
+* "How do I install local dependencies?"
+* "How do I start up the development site?"
+
+You should update the README whenever you see an opportunity to improve the way Thorium Contributors get up and running with the project.
 
 ## Tagging
 
