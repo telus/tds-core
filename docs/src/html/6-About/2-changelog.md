@@ -3,12 +3,14 @@ title: Changelog
 template: doc.jade
 ---
 
-# v0.5.0
+## v0.5.0
+
 19 October 2016
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.5.0
 
-- Added: new Thorium Enriched Node module w/ isomorphic React components
+### Thorium Core
+
 - Added: Selector Counter enriched component
 - Added: hyperlink underlines which don't intersect descenders
 - Added: Chevron links
@@ -20,28 +22,44 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.5.0
 - Fixed: Utility icons appear sharper in IE11
 - Fixed: Alert icon no longer persists when an invalid field receives focus
 
-# v0.4.0
+### Thorium Enriched
+
+- Added: new Thorium Enriched Node module w/ isomorphic React components
+
+## v0.4.0
+
 4 October 2016
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.4.0
+
+### Thorium Core
 
 - Added: Lists (bulleted, numbered, checked, error, small)
 - Added: Form field success & error states
 - Added: Dropdown form fields
 - Added: Utility icons
-- Fixed: Mis-aligned global header hamburger (Documentation Site)
 
-# v0.3.1
+### Thorium Documentation
+
+- Fixed: Mis-aligned global header hamburger
+
+## v0.3.1
+
 20 September 2016
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.1
 
+### Thorium Core
+
 - Added: form hints
 
-# v0.3.0
+## v0.3.0
+
 20 September 2016
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.0
+
+### Thorium Core
 
 - Fixed: ordering of links in the Documentation Site navigation
 - Added: text fields and labels
@@ -49,10 +67,13 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.0
 - Added: form helpers
 - Fixed: Helvetica Neue web font
 
-# v0.2.1
+## v0.2.1
+
 6 September 2016
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.2.1
+
+### Thorium Core
 
 - Added: colours
 - Added: typography
