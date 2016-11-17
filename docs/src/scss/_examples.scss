@@ -58,3 +58,8 @@ Description:  Styling for examples in-line with documentation
     display: inline-block;
   }
 }
+
+code.language-markdown,
+pre.language-markdown {
+  white-space: pre-wrap;
+}
