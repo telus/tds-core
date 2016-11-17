@@ -187,6 +187,26 @@ The version constraints in your package.json file control which version of Thori
 
 Try out the <a href="http://jubianchi.github.io/semver-check/" target="_blank">online semver checker</a> if you'd like to experiment with adjusting your project's constraints.
 
+## Usage criteria
+
+---
+
+1. Must be comfortable using Thorium aesthetic (B4YB).
+2. Created to support new builds (greenfield). The new tech stack may clash with your existing architecture. It requires:
+    * Using Thorium build pipeline
+    * Core:
+        * Leverage Thorium typestack
+        * Leverage React as a Javascript framework
+            1. Thorium requires ES6 javascript syntax.
+        * Leverage SCSS for stylesheets in order to use Thorium’s NPM module.
+            1. If not, the CDN version of Thorium should be used.
+    * Enriched:
+        * All of core
+        * Leverage Thorium's testing frameworks (TBD).
+3. Design team should be ramped up and comfortable working in Sketch
+4. Plan for technical debt to contribute site elements and incorporate feedback from the Design Guild/Thorium System.
+
+
 ## Choosing CDN vs. NPM
 
 ---
@@ -249,6 +269,8 @@ npm update telus-thorium-core
  With each release, the [changelog](https://github.com/telusdigital/telus-thorium-core/blob/master/CHANGELOG.md) is updated with a rundown of features and bug fixes. It lives in the root directory of the repository.
 
  This website provides in-depth documentation of Thorium features, and is always powered by the latest release.
+
+ The [upgrade guide](https://github.com/telusdigital/telus-thorium-core/blob/master/UPGRADING.md) describes how to adopt any backwards-incompatible changes a version may introduce.
 
 ## The Thorium tech stack
 

@@ -5,18 +5,16 @@
  * so the HTML generated from Markdown-formatted lists makes use of Thorium's
  * list-related BEM classes. Without these classes, <ul>, <ol>, and <li>
  * elements appear un-styled.
- */
-
-var marked = require('marked');
-var thoriumVersion = 'v' + require('../../../../../core/package.json').version;
-
-/**
- * This private helper function from marked is needed to escape the contents
- * of some <code> blocks.
  *
- * https://github.com/chjj/marked/blob/master/lib/marked.js#L1087
+ * This file extends some code from the marked Markdown library:
+ *
+ * https://github.com/chjj/marked
+ *
+ * For instance, list, link, and text rendering functions are re-implemented
+ * to add Thorium's CSS classes to their output.
  *
  * marked's license:
+ *
  * Copyright (c) 2011-2014, Christopher Jeffrey (https://github.com/chjj/)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -36,7 +34,14 @@ var thoriumVersion = 'v' + require('../../../../../core/package.json').version;
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- *
+ */
+
+var marked = require('marked');
+var thoriumVersion = 'v' + require('../../../../../core/package.json').version;
+
+/**
+ * Private helper from marked's source code, for escaping contents of some
+ * <code> blocks.
  * @param html
  * @param encode
  * @returns {XML|string}
@@ -195,6 +200,27 @@ function codespan(text) {
   return '<code>' + replaceTokens(text) + '</code>';
 }
 
+function link(href, title, text) {
+  if (this.options.sanitize) {
+    try {
+      var prot = decodeURIComponent(unescape(href))
+        .replace(/[^\w:]/g, '')
+        .toLowerCase();
+    } catch (e) {
+      return '';
+    }
+    if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0) {
+      return '';
+    }
+  }
+  var out = '<a class="link link--descent" href="' + href + '"';
+  if (title) {
+    out += ' title="' + title + '"';
+  }
+  out += '>' + text + '</a>';
+  return out;
+}
+
 /**
  * Create an instance of a marked Renderer which has the custom list and
  * listitem rendering functions.
@@ -212,6 +238,7 @@ function createRenderer() {
   renderer.text = text;
   renderer.code = code;
   renderer.codespan = codespan;
+  renderer.link = link;
 
   return renderer;
 }

@@ -48,6 +48,65 @@ If you're proposing a feature:
 * Keep the scope as narrow as possible, to make it easier to implement.
 * Remember that this is a volunteer-driven project, and that contributions are welcome.
 
+## Contribution criteria
+
+---
+
+### Design Criteria
+
+* Proposed **solution** (i.e.; element/component) must meet the below criteria to be considered for contribution. Please document and explain how the **solution** meets the following criteria:
+    * Improves the experience
+    * Fulfills a business requirement(s)
+    * Modification validated by end-user testing (please map to KPIs)
+    * Other
+
+<p><em>**Note:** Before submitting, please ensure proposed **solution** has been vetted by development team(s), meets all accessibility requirements and is validated by end-user testing (if applicable).</em></p>
+
+* Submit standalone Sketch file of proposed **solution** ("Sketch fragment") including:
+    * All required states of **solution** (inactive, active, disabled, error, etc)
+    * Definition of **solution** (What it is)
+    * Design Rationale for usage of **solution** (How it's used)
+
+### Development Criteria:
+
+* Code for proposed solution must meet the below criteria to be considered for contribution:
+    * Code passes all automated quality checks, such as linting and unit testing
+    * Code is accompanied by automated tests wherever applicable
+    * Changes are either backwards-compatible, or target the appropriate [semantically versioned](http://localhost:8080/5-Contribution/2-contributing.html#versioning) release
+    * CSS follows [BEM naming conventions](https://en.bem.info/methodology/)
+    * JavaScript follows [AirBnB style guidelines](https://github.com/airbnb/javascript) and is written as ES6
+
+### Process
+
+1. Team raises issue or need to Design Guild or dedicated team liaison
+2. Design Guild identifies whether a viable **solution** already exists or not
+    * If **solution** already exists:
+        * Design Guild points team to **solution** (distribution)
+    * If **solution** does not exist:
+        * Design Guild provides mentorship, consultation and education around standardization requirements for design and/or build of **solution** (consumption)
+        * Team designs and/or builds **solution**
+            * Team is responsible for taking and incorporating Design Guild feedback into designs and builds
+            * Team is encouraged to surface issues and/or blockers to the Design Guild
+        * Team submits designed and/or coded **solution** to Design Guild with all criteria fulfilled
+3. Design Guild reviews submitted **solution** and approves, or recommends more iteration.
+4. If **solution** is approved:
+    * Design Guild evaluates the following and provides recommendations for consumption into Thorium
+        * Impact on customers and their users
+        * Level of effort to refactor and implement existing solution vs implement new **solution** (based on timing, available resources, etc)
+        * Global impact across site (style, experience packages, etc)
+    * Thorium consumes **solution**
+        * Sketch fragment is added into master Sketch file
+        * Pull request for coded **solutions** is made on Git; code is reviewed, commented and ultimately incorporated into Thorium master.
+5. If **solution** is not approved (does not meet above criteria):
+    * Team responsible for updating solution based on Design Guild Feedback
+    * Team resubmits **solution** to Design Guild for review
+
+<p><em>**Note:** While the Design Guild should have continuous visibility into a team’s design and code, they are not to be considered as a blocker, but as a facilitator.</em></p>
+
+
+
+
+
 ## Development process
 
 ---
