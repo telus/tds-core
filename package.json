@@ -25,7 +25,10 @@
     "url": "https://github.com/telusdigital/telus-thorium-core/issues"
   },
   "devDependencies": {
+    "aws-sdk": "^2.7.3",
     "concurrently": "^3.1.0",
+    "log4js": "^1.0.1",
+    "mime-types": "^2.1.13",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.4"
   }
