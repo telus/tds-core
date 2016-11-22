@@ -10,6 +10,7 @@ template: doc.jade
 The Grid is made up of a few components that you can use to create your own layouts:
 
 ```js
+import React from 'react';
 import { Container, Row, Column } from 'telus-thorium-enriched';
 
 const MyComponent = (props) => {
