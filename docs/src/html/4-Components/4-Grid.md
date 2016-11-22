@@ -140,8 +140,3 @@ The different screen sizes are as follows:
 
 
 ---
-
-<div
-  data-thorium-component='Column'
-  data-props='{ "xs": 12, "lg": 6, "lgOffset": 3 }'>
-</div>
