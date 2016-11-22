@@ -60,7 +60,7 @@ Rows divide your content horizontally. They should be direct descendants of
 ```js
 <Container>
   // Rows also pass attributes to the div.
-  <Row className='row-overrride'>
+  <Row className='row-override'>
     // ...
   </Row>
 </Container>
