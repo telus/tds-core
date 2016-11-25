@@ -11,7 +11,8 @@ The Grid is made up of a few components that you can use to create your own layo
 
 ```js
 import React from 'react';
-import { Container, Row, Column } from 'telus-thorium-enriched';
+import { Grid } from 'telus-thorium-enriched';
+const { Container, Row, Column } = Grid;
 
 const MyComponent = (props) => {
   return (
