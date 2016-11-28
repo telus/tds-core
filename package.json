@@ -15,8 +15,8 @@
     "install:docs": "cd docs && npm install",
     "install:enriched": "cd enriched && npm install",
     "deploy:cdn": "npm run deploy:cdn:core && npm run deploy:cdn:enriched",
-    "deploy:cdn:core": "node scripts/s3deploy.js cdn.telus-thorium core production",
-    "deploy:cdn:enriched": "node scripts/s3deploy.js cdn.telus-thorium enriched production",
+    "deploy:cdn:core": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module core --environment production --latest",
+    "deploy:cdn:enriched": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module enriched --environment production --latest",
     "setup:links": "cd core && npm link && cd ../enriched && npm link && npm link telus-thorium-core && cd ../docs && npm link telus-thorium-core && npm link telus-thorium-enriched"
   },
   "repository": {
@@ -34,5 +34,8 @@
     "mime-types": "^2.1.13",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
   }
 }

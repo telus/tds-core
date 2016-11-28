@@ -3,13 +3,22 @@
  * to the CDN on Amazon S3.
  *
  * Usage:
- *     node s3deploy.js [bucket] [module name] [environment]
+ *     node s3deploy.js --bucket <bucket name> --module <module name> --environment <env name> [--latest]
+ *
+ * CLI flags:
+ *
+ *    -b, --bucket <name> Name of the AWS S3 bucket where files should be uploaded
+ *    -m, --module <name> Name of the module to upload, e.g. "core", "enriched"
+ *    -e, --environment <name> Name of the env folder to upload to on S3, e.g. "test", "production"
+ *    -L, --latest If present, upload files to the "latest" folder in addition to their version folder
  *
  * Example:
- *     node s3deploy.js cdn.telus-digital core production
- *     node s3deploy.js cdn.telus-digital enriched test
+ *     node s3deploy.js --bucket cdn.telus-digital --module core --environment production --latest
+ *     node s3deploy.js --bucket cdn.telus-digital --module enriched --environment test
  *
- * Objects that already exist on S3 will not be overwritten by this script.
+ * Objects with a version number in their key/url will not be overwritten by
+ * this script. Those in the "latest" folder will be uploaded (and possibly
+ * overwritten) if the --latest CLI flag is used.
  */
 
 var fs = require('fs');
@@ -17,6 +26,7 @@ var path = require('path');
 var aws = require('aws-sdk');
 var log4js = require('log4js');
 var mime = require('mime-types');
+var cli = require('commander');
 
 // All files to be uploaded must have a name matching this pattern
 var FILENAME_PATTERN = /\.min\.(css|js)/;
@@ -30,16 +40,34 @@ var AWS_ERR_NOTFOUND = 'NotFound';
 
 var logger = log4js.getLogger();
 
-// Ensure that all the required CLI args have been given
-if (process.argv.length !== 5) {
-  logger.error('Usage: node s3deploy.js [bucket] [module name] [environment]');
-  logger.error('Example: node s3deploy.js cdn.telus-thorium core production');
-  process.exit(1);
+cli
+  .version('0.0.1')
+  .option('-b,--bucket <name>', 'Bucket name')
+  .option('-m,--module <name>', 'Module name')
+  .option('-e,--environment <name>', 'Environment name')
+  .option('-L,--latest', 'Deploy as latest')
+  .parse(process.argv);
+
+function isEmpty(str) {
+  return (typeof str !== 'string' || !str || !str.length);
 }
 
-var BUCKET_NAME = process.argv[2];
-var MODULE_NAME = process.argv[3];
-var ENVIRONMENT = process.argv[4];
+if (isEmpty(cli.bucket) || isEmpty(cli.module) || isEmpty(cli.environment)) {
+  // Command.js exits the process when you call .help()
+  cli.help();
+}
+
+logger.info('Bucket:', cli.bucket);
+logger.info('Module:', cli.module);
+logger.info('Environment:', cli.environment);
+logger.info('Latest:', cli.latest === true);
+
+// Instantiate the S3 SDK with default settings
+var s3 = new aws.S3({
+  params: {
+    Bucket: cli.bucket
+  }
+});
 
 /**
  * Create a directory on the CDN to host this version of the module. If
@@ -47,13 +75,14 @@ var ENVIRONMENT = process.argv[4];
  *
  * @param {String} key S3 key corresponding to the path and ending with
  *     a trailing slash, e.g. production/thoriu/module/version/
+*  @param {Object} options config object, ex: { logger: [Object] }
  * @param {Function} callback to execute once the remote path exists (is created,
  *     or is discovered to pre-exist).
  */
-function createReleaseDir(key, callback) {
+function createReleaseDir(key, options, callback) {
   s3.headObject({ Key: key }, function (err, data) {
     if (!err) {
-      logger.warn('S3 key already exists:', key);
+      options.logger.warn('S3 key already exists:', key);
 
       return callback(null, key);
     } else if (err.code !== AWS_ERR_NOTFOUND) {
@@ -111,9 +140,10 @@ function buildFileList(dir, callback) {
  * @param {String} filePath Full path to the source file
  * @param {String} keyPrefix S3 key will be created by combining keyPrefix and
  *     the file's basename. keyPrefix must have a trailing slash.
+ * @params {Object} options configuration object
  * @param {Function} callback to be passed any error, and the full S3 object key
  */
-function uploadFile(filePath, keyPrefix, callback) {
+function uploadFile(filePath, keyPrefix, options, callback) {
   fs.readFile(filePath, (readErr, fileData) => {
     if (readErr) return callback(readErr, filePath);
 
@@ -135,22 +165,25 @@ function uploadFile(filePath, keyPrefix, callback) {
     }
 
     var key = keyPrefix + fileParts.base;
+    var params = {
+      Key: key,
+      ACL: S3_PERMISSIONS,
+      Body: fileData,
+      ContentType: mime.lookup(fileParts.ext)
+    };
+
+    if (options && options.overwrite === true) {
+      return s3.upload(params, (err, data) => callback(err, key));
+    }
 
     s3.headObject({ Key: key }, (headErr, data) => {
       if (!headErr) {
         return callback(new Error('Key already exists'), key);
       } else if (headErr.code === AWS_ERR_NOTFOUND) {
-        var params = {
-          Key: key,
-          ACL: S3_PERMISSIONS,
-          Body: fileData,
-          ContentType: mime.lookup(fileParts.ext)
-        };
-
         return s3.upload(params, (err, data) => callback(err, key));
+      } else {
+        callback(headErr, key);
       }
-
-      callback(headErr, key);
     });
   });
 }
@@ -174,50 +207,68 @@ function buildVersionedS3Path(s3Env, moduleName, version) {
   return s3Env + '/thorium/' + moduleName + '/' + version + '/';
 }
 
-// Instantiate the S3 SDK with default settings
-var s3 = new aws.S3({
-  params: {
-    Bucket: BUCKET_NAME
-  }
-});
+/**
+ * Entry point function. Uploads files from the source path to the release
+ * path on S3.
+ *
+ * @param {String} sourcePath Path to local directory containing files
+ *     to be released
+ * @param {String} releasePath Path on S3 where uploads should be placed
+ * @param {Object} options Configuration object. Schema:
+ *     {
+ *         overwrite: true|false
+ *     }
+ */
+function doRelease(sourcePath, releasePath, options) {
+  createReleaseDir(releasePath, options, function (baseKeyErr) {
+    if (baseKeyErr) return options.logger.error(baseKeyErr);
 
-// Get the local directory path to the node module being released.
-// Ex: /path/to/projects/telus-thorium-core/core
-var MODULE_PATH = path.resolve(__dirname, '..', MODULE_NAME);
+    options.logger.info('Sourcing files from', sourcePath);
 
-// Read the version from the module's package.json file
-var VERSION = 'v' + require(path.resolve(MODULE_PATH, 'package.json')).version;
+    buildFileList(sourcePath, (indexErr, files) => {
+      if (indexErr) return options.logger.error(indexErr);
 
-// Build the path prefix for each file's S3 object key
-var releasePath = buildVersionedS3Path(ENVIRONMENT, MODULE_NAME, VERSION);
+      files.forEach((file) => {
+        uploadFile(file, releasePath, options, (uploadErr, fileKey) => {
+          if (uploadErr) {
+            if (uploadErr.message === 'Key already exists') {
+              return options.logger.warn('S3 key already exists, skipping', fileKey);
+            }
 
-logger.info('Releasing', MODULE_NAME, 'module', VERSION, 'to CDN');
-logger.info('S3 Object Key prefix:', releasePath);
-
-createReleaseDir(releasePath, function (err) {
-  if (err) return logger.error(err);
-
-  // Look for files in /path/to/telus-thorium-core/[module name]/dist/*.*
-  var sourceDir = path.resolve(MODULE_PATH, 'dist');
-
-  logger.info('Releasing to', releasePath);
-  logger.info('Uploading files from', sourceDir);
-
-  buildFileList(sourceDir, (err, files) => {
-    if (err) return logger.error(err);
-
-    files.forEach((file) => {
-      uploadFile(file, releasePath, (err, fileKey) => {
-        if (err) {
-          if (err.message === 'Key already exists') {
-            return logger.warn('S3 object already exists, skipping', fileKey);
+            return options.logger.error(uploadErr);
           }
 
-          return logger.error(err);
-        }
-
-        logger.info('Uploaded', fileKey);
-      });
-    })
+          options.logger.info('Uploaded', fileKey);
+        });
+      })
+    });
   });
-});
+}
+
+// Read the version from the module's package.json file
+var CURR_VERSION = 'v' + require(path.resolve(__dirname, '..', cli.module, 'package.json')).version;
+
+// Build the full path to the local directory containing files for release
+var dist = path.resolve(__dirname, '..', cli.module, 'dist');
+
+// Release to environmentName/thorium/moduleName/vX.Y.Z/
+doRelease(
+  dist,
+  buildVersionedS3Path(cli.environment, cli.module, CURR_VERSION),
+  {
+    overwrite: false,
+    logger: log4js.getLogger(CURR_VERSION)
+  }
+);
+
+// Optionally release to environmentName/thorium/moduleName/latest/
+if (cli.latest === true) {
+  doRelease(
+    dist,
+    buildVersionedS3Path(cli.environment, cli.module, 'latest'),
+    {
+      overwrite: true,
+      logger: log4js.getLogger('latest')
+    }
+  );
+}
