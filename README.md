@@ -77,11 +77,11 @@ Use the [NPM publish command](https://docs.npmjs.com/cli/publish) to upload core
     /path/to/telus-thorium-core/core $ npm publish
     /path/to/telus-thorium-core/enriched $ npm publish
 
-In order for the NPM deployment to work, you must be logged in to NPM as a collaborator of each Node module. See ""[Publishing NPM Packages](https://docs.npmjs.com/getting-started/publishing-npm-packages)".
+In order for the NPM deployment to work, you must be logged in to NPM as a collaborator of each Node module. See "[Publishing NPM Packages](https://docs.npmjs.com/getting-started/publishing-npm-packages)".
 
 ### Step 4: release to CDN
 
-Use the `deploy:cdn` script to upload each module's dist files to S3:
+Use the `deploy:cdn` script to upload dist files to S3:
 
     npm run deploy:cdn
 
