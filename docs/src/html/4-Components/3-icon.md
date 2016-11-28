@@ -34,11 +34,13 @@ _See the [Utility Icons](/3-Foundations/7-icons.html) page for more details abou
 
 ### Plain icon:
 
-<span
-  data-thorium-component='Icon'
-  data-props='{ "glyph":"spyglass" }'
-  class='inline-component'>
-</span>
+<span id="icon-spyglass"></span>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.Icon glyph="spyglass" />,
+    document.getElementById('icon-spyglass')
+  );
+</script>
 
 ```js
 <Icon glyph='spyglass' />
@@ -46,26 +48,28 @@ _See the [Utility Icons](/3-Foundations/7-icons.html) page for more details abou
 
 ### Icons with color variants:
 
-<span
-  data-thorium-component='Icon'
-  data-props='{ "glyph":"spyglass" }'
-  class='inline-component'>
-</span>
-<span
-  data-thorium-component='Icon'
-  data-props='{ "glyph":"spyglass", "variant": "secondary" }'
-  class='inline-component'>
-</span>
-<span
-  data-thorium-component='Icon'
-  data-props='{ "glyph":"spyglass", "variant": "disabled" }'
-  class='inline-component'>
-</span>
-<span
-  data-thorium-component='Icon'
-  data-props='{ "glyph":"spyglass", "variant": "error" }'
-  class='inline-component'>
-</span>
+<span id="icon-spyglass-noVariant"></span>
+<span id="icon-spyglass-secondary"></span>
+<span id="icon-spyglass-disabled"></span>
+<span id="icon-spyglass-error"></span>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.Icon glyph="spyglass" />,
+    document.getElementById('icon-spyglass-noVariant')
+  );
+  ReactDOM.render(
+    <Thorium.Icon glyph="spyglass" variant="secondary" />,
+    document.getElementById('icon-spyglass-secondary')
+  );
+  ReactDOM.render(
+    <Thorium.Icon glyph="spyglass" variant="disabled" />,
+    document.getElementById('icon-spyglass-disabled')
+  );
+  ReactDOM.render(
+    <Thorium.Icon glyph="spyglass" variant="error" />,
+    document.getElementById('icon-spyglass-error')
+  );
+</script>
 
 ```js
 <Icon glyph='spyglass' />
@@ -76,19 +80,19 @@ _See the [Utility Icons](/3-Foundations/7-icons.html) page for more details abou
 
 ### Fixed Width Icons
 
-<span
-  data-thorium-component='Icon'
-  data-props='{ "glyph":"spyglass", "fixedWidth": true }'
-  class='inline-component'>
-</span>
-Hello
-<div></div>
-<span
-  data-thorium-component='Icon'
-  data-props='{ "glyph":"chevron", "variant": "secondary", "fixedWidth": true }'
-  class='inline-component'>
-</span>
-Goodnight
+<span id="icon-spyglass-fixedWidth"></span>Hello
+<br>
+<span id="icon-chevron-secondary-fixedWidth"></span>Goodnight
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.Icon glyph="spyglass" fixedWidth="true" />,
+    document.getElementById('icon-spyglass-fixedWidth')
+  );
+  ReactDOM.render(
+    <Thorium.Icon glyph="chevron" variant="secondary" fixedWidth="true" />,
+    document.getElementById('icon-chevron-secondary-fixedWidth')
+  );
+</script>
 
 ```js
 <Icon glyph='spyglass' fixedWidth />
