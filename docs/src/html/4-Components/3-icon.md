@@ -81,6 +81,7 @@ _See the [Utility Icons](/3-Foundations/7-icons.html) page for more details abou
 ### Fixed Width Icons
 
 <span id="icon-spyglass-fixedWidth"></span>Hello
+<br>
 <span id="icon-chevron-secondary-fixedWidth"></span>Goodnight
 <script type="text/babel">
   ReactDOM.render(
