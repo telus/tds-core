@@ -14,6 +14,9 @@
     "install:core": "cd core && npm install",
     "install:docs": "cd docs && npm install",
     "install:enriched": "cd enriched && npm install",
+    "deploy:cdn": "npm run deploy:cdn:core && npm run deploy:cdn:enriched",
+    "deploy:cdn:core": "node scripts/s3deploy.js cdn.telus-thorium core production",
+    "deploy:cdn:enriched": "node scripts/s3deploy.js cdn.telus-thorium enriched production",
     "setup:links": "cd core && npm link && cd ../enriched && npm link && npm link telus-thorium-core && cd ../docs && npm link telus-thorium-core && npm link telus-thorium-enriched"
   },
   "repository": {
