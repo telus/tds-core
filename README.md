@@ -50,3 +50,39 @@ Download the [Windows Binary](https://www.freetype.org/ttfautohint/#download) fr
 This process creates EOT, TTF, and WOFF files from `./core/fonts/core-icons.otf` and saves them in the same directory. These should be committed to Git (including the source OTF) and sent to master via pull request.
 
 The next time you run `npm build`, the re-generated icons will be picked up by the documentation site.
+
+## Deploying a release
+
+### Step 1: bump version numbers
+
+[Bump the version](https://docs.npmjs.com/cli/version) in all package.json files:
+
+    package.json
+    core/package.json
+    docs/package.json
+    enriched/package.json
+
+Commit this change to Git.
+
+### Step 2: build assets
+
+Run a fresh build to make sure all dist files are up to date:
+
+    /path/to/telus-thorium-core $ npm run build
+
+### Step 3: release to NPM
+
+Use the [NPM publish command](https://docs.npmjs.com/cli/publish) to upload core & enriched to NPM:
+
+    /path/to/telus-thorium-core/core $ npm publish
+    /path/to/telus-thorium-core/enriched $ npm publish
+
+In order for the NPM deployment to work, you must be logged in to NPM as a collaborator of each Node module. See ""[Publishing NPM Packages](https://docs.npmjs.com/getting-started/publishing-npm-packages)".
+
+### Step 4: release to CDN
+
+Use the `deploy:cdn` script to upload each module's dist files to S3:
+
+    npm run deploy:cdn
+
+In order for the CDN deployment to succeed, your system must be [configured with valid AWS credentials](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
