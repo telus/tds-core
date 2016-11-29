@@ -24,7 +24,7 @@ const MyComponent = (props => <Icon name='spyglass' />);
 
 ---
 
-_See the [Utility Icons](/4-Components/utility-icons.html) page for more details about glyph names, variants, and other icon traits._
+See the [Utility Icons](/3-Foundational-Elements/7-utility-icons.html) page for more details about glyph names, variants, and other icon traits._
 
 ---
 
