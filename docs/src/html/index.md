@@ -14,10 +14,9 @@ The TELUS Design System team is working toward releasing a v1.0 of the TELUS Des
 
 In addition, our team is doing research to learn how teams are using the pre-release versions of the components and what teams have learned while using them.
 
-* [Thorium Roadmap](/6-About/1-roadmap.html)
+* [Thorium Roadmap](/1-About/4-roadmap.html)
 
 ## Get Started with Thorium
 
-* The latest release is [!!THORIUM_VERSION!!](/6-About/2-changelog.html)
-* For [developers](1-Getting%20started/2-for-developers.html)
-* For [designers](1-Getting%20started/3-for-designers.html)
+* The latest release is [!!THORIUM_VERSION!!](/1-About/4-changelog.html)
+* Check out the [Getting Started page](/2-Use-Thorium/1-getting-started.html) to begin using Thorium

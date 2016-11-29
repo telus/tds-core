@@ -7,7 +7,7 @@ var fs = require('fs');
 
 // Items in the ToC should be named according to this pattern. The numeric
 // prefix lets us control the exact order of elements in the menu.
-var NAMING_PATTERN = /^([0-9]+)-(.+)$/;
+var NUMBERED_NAMING_PATTERN = /^([0-9]+)-(.+)$/;
 
 // Directory containing top-level categories.
 var ROOT_DIR = './src/html/';
@@ -41,6 +41,10 @@ function tocCompare(a, b) {
   }
 }
 
+function isEmpty(str) {
+  return (!str || typeof str !== 'string' || str.length === 0);
+}
+
 /**
  * Build up an array of pages within a category, in the order they should
  * appear in the navigation menu underneath their parent category. Each page
@@ -61,26 +65,24 @@ function buildChildren(category) {
   // Using an array because Objects don't guarantee order.
   var children = [];
 
+  var i = 0;
+
   for (var key in category) {
-    if (!category.hasOwnProperty(key)) {
+    if (!category.hasOwnProperty(key) || isEmpty(key) || key.match(/^hold-/)) {
       continue;
     }
 
-    // Check that the key of this item is formatted like "1-overview.md".
-    var matches = key.match(NAMING_PATTERN);
+    var order = i;
+    var matches = key.match(NUMBERED_NAMING_PATTERN);
     var child = category[key];
-
-    if (matches === null || child.title === undefined) {
-      // Don't include any pages which don't have a title, or don't match the
-      // expected naming pattern.
-      continue;
-    }
 
     children.push({
       title: child.title,
       url: child.url,
-      order: parseInt(matches[1])
+      order: (matches === null) ? i : parseInt(matches[1])
     });
+
+    i++;
   }
 
   // Sort this category's children, since they came from an Object where order
@@ -121,7 +123,7 @@ function getNav(contents) {
     }
 
     var isDir = fs.lstatSync(ROOT_DIR + dir).isDirectory();
-    var matches = dir.match(NAMING_PATTERN);
+    var matches = dir.match(NUMBERED_NAMING_PATTERN);
 
     if (!isDir || matches === null) {
       // Only process directories named like "1-Overview".
@@ -129,7 +131,7 @@ function getNav(contents) {
     }
 
     var entry = {
-      title: matches[2],
+      title: matches[2].replace(/-/, ' '),
       children: buildChildren(contents[dir]),
       order: parseInt(matches[1])
     };
