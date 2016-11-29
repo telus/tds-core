@@ -7,7 +7,13 @@ template: doc.jade
 
 ---
 
-<div data-thorium-component="SelectorCounter" data-props="{&#034;max&#034;:5}" class="inline-component"></div>
+<div id="selectorCounter-min1-max5"></div>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.SelectorCounter max="5" />,
+    document.getElementById('selectorCounter-min1-max5')
+  );
+</script>
 
 ```javascript
 import React from 'react';
@@ -34,13 +40,46 @@ export default SelectorCounterEx;
 | successful | `bool` | `false` | Value passes validation |
 
 ### Disabled selector counter
-<div data-thorium-component="SelectorCounter" data-props="{&#034;disabled&#034;:true}" class="inline-component"></div>
+
+<div id="selectorCounter-disabled"></div>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.SelectorCounter disabled="true" />,
+    document.getElementById('selectorCounter-disabled')
+  );
+</script>
+
+```js
+<SelectorCounter disabled="true" />
+```
 
 ### Successful selector counter
-<div data-thorium-component="SelectorCounter" data-props="{&#034;successful&#034;:true}" class="inline-component"></div>
+
+<div id="selectorCounter-successful"></div>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.SelectorCounter successful="true" />,
+    document.getElementById('selectorCounter-successful')
+  );
+</script>
+
+```js
+<SelectorCounter successful="true" />
+```
 
 ### Invalid selector counter
-<div data-thorium-component="SelectorCounter" data-props="{&#034;invalid&#034;:true}" class="inline-component"></div>
+
+<div id="selectorCounter-invalid"></div>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.SelectorCounter invalid="true" />,
+    document.getElementById('selectorCounter-invalid')
+  );
+</script>
+
+```js
+<SelectorCounter invalid="true" />
+```
 
 ## Accessibility
 
@@ -53,4 +92,10 @@ export default SelectorCounterEx;
 
 ---
 
-<div data-thorium-component="SelectorCounterExample" data-props="{}"></div>
+<div id="selectorCounterExample-noprops"></div>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.SelectorCounterExample />,
+    document.getElementById('selectorCounterExample-noprops')
+  );
+</script>

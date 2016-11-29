@@ -19,12 +19,14 @@ const defaultProps = {
   disabled: false
 };
 
+var noop = () => {};
+
 export default function counterButton({ label, icon, onClick, disabled }) {
   return (
     <button
       aria-label={label}
       className="selector-counter__button"
-      onClick={onClick}
+      onClick={disabled ? noop : onClick}
       disabled={disabled}
     >
       <i className={`selector-counter__icon icon icon-core-${icon}`} />
