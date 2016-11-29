@@ -5,6 +5,25 @@ template: doc.jade
 
 Welcome to the TELUS Design System - Thorium Core. We're glad you're planning on using Thorium in your project! This page describes where you can get the library, and how you can control which version is used by your project.
 
+## Usage criteria
+
+---
+
+1. Must be comfortable using Thorium aesthetic (B4YB).
+2. Created to support new builds (greenfield). The new tech stack may clash with your existing architecture. It requires:
+    * Using Thorium build pipeline
+    * Core:
+        * Leverage Thorium typestack
+        * Leverage React as a Javascript framework
+            1. Thorium requires ES6 javascript syntax.
+        * Leverage SCSS for stylesheets in order to use Thorium’s NPM module.
+            1. If not, the CDN version of Thorium should be used.
+    * Enriched:
+        * All of core
+        * Leverage Thorium's testing frameworks (TBD).
+3. Design team should be ramped up and comfortable working in Sketch
+4. Plan for technical debt to contribute site elements and incorporate feedback from the Design Guild/Thorium System.
+
 ## Getting Thorium
 ---
 
@@ -224,22 +243,3 @@ Files published to the Thorium CDN will have their version number in the URL. Si
 The version constraints in your package.json file control which version of Thorium gets pulled in. NPM by default will choose a constraint like `^0.4.0` when the `--save` command line flag is used. This allows major version changes (bug fixes and new backwards-compatible features).
 
 Try out the <a href="http://jubianchi.github.io/semver-check/" target="_blank">online semver checker</a> if you'd like to experiment with adjusting your project's constraints.
-
-## Usage criteria
-
----
-
-1. Must be comfortable using Thorium aesthetic (B4YB).
-2. Created to support new builds (greenfield). The new tech stack may clash with your existing architecture. It requires:
-    * Using Thorium build pipeline
-    * Core:
-        * Leverage Thorium typestack
-        * Leverage React as a Javascript framework
-            1. Thorium requires ES6 javascript syntax.
-        * Leverage SCSS for stylesheets in order to use Thorium’s NPM module.
-            1. If not, the CDN version of Thorium should be used.
-    * Enriched:
-        * All of core
-        * Leverage Thorium's testing frameworks (TBD).
-3. Design team should be ramped up and comfortable working in Sketch
-4. Plan for technical debt to contribute site elements and incorporate feedback from the Design Guild/Thorium System.
