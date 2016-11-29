@@ -26,7 +26,7 @@ describe('<Column />', () => {
   });
 
   it('correctly renders children', () => {
-    const div = <div id='hello'></div>;
+    const div = <div id="hello"></div>;
     const col = shallow(
       <Column>
         { div }

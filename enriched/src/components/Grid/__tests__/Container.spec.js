@@ -18,7 +18,7 @@ describe('<Container />', () => {
   });
 
   it('correctly renders children', () => {
-    const div = <div id='hello'></div>;
+    const div = <div id="hello"></div>;
     const container = shallow(
       <Container>
         { div }

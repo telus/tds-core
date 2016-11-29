@@ -41,7 +41,6 @@ const propTypes = {
 };
 
 function Column(props) {
-
   // Collect any "extra" props, that aren't explicitly consumed.
   const extraProps = {};
 
