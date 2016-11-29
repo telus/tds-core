@@ -208,6 +208,27 @@ function buildVersionedS3Path(s3Env, moduleName, version) {
 }
 
 /**
+ * Convert a semantic version string like v0.5.1 to the name of the "latest"
+ * folder for that major version, like "v0-latest".
+ *
+ * @param {String} currSemanticVersion
+ * @returns {String}
+ */
+function buildLatestFolderName(currSemanticVersion) {
+  if (typeof currSemanticVersion !== 'string') {
+    return null;
+  }
+
+  var matches = currSemanticVersion.match(/v?(\d+)\.(\d+)\.(\d+)/i);
+
+  if (matches === null) {
+    return null;
+  }
+
+  return 'v' + matches[1] + '-latest';
+}
+
+/**
  * Entry point function. Uploads files from the source path to the release
  * path on S3.
  *
@@ -263,12 +284,18 @@ doRelease(
 
 // Optionally release to environmentName/thorium/moduleName/latest/
 if (cli.latest === true) {
-  doRelease(
-    dist,
-    buildVersionedS3Path(cli.environment, cli.module, 'latest'),
-    {
-      overwrite: true,
-      logger: log4js.getLogger('latest')
-    }
-  );
+  var latestFolderName = buildLatestFolderName(CURR_VERSION);
+
+  if (!latestFolderName) {
+    logger.error('Unable to build a "latest" folder name from ' + CURR_VERSION);
+  } else {
+    doRelease(
+      dist,
+      buildVersionedS3Path(cli.environment, cli.module, latestFolderName),
+      {
+        overwrite: true,
+        logger: log4js.getLogger(latestFolderName)
+      }
+    );
+  }
 }
