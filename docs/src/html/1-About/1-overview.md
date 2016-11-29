@@ -32,8 +32,8 @@ Plan for technical debt to contribute site elements and incorporate feedback fro
 
 1. **Design integration:** Use styles from the [Sketch file](/assets/downloads/thorium.sketch), but custom code the entirety of the site.
 2. **CSS integration:** Teams on different JS stacks must use 100% of the core (CSS) library. Some projects may require “vendoring the file”, which will no longer use the Thorium update pipeline.
-2. **Connected integration:** You can [connect](/5-Governance/1-consumption.html#getting-updates) and always have the latest styles. Staying in the loop may make your life a lot easier. Use CDN to connect to Thorium, unless you envision overwriting styles. Then use NPM.
-3. **JS integration:** For the enriched experience, you must be 100% able to use the React framework. This will lead to the most efficient Thorium experience. [Deciding between NPM vs CDN](/5-Governance/1-consumption.html#choosing-cdn-vs-npm) should be based on your level of functional complexity.
+2. **Connected integration:** You can [connect](/2-Use-Thorium/3-receiving-updates.html) and always have the latest styles. Staying in the loop may make your life a lot easier. Use CDN to connect to Thorium, unless you envision overwriting styles. Then use NPM.
+3. **JS integration:** For the enriched experience, you must be 100% able to use the React framework. This will lead to the most efficient Thorium experience. [Deciding between NPM vs CDN](/2-Use-Thorium/1-getting-started.html#choosing-cdn-vs-npm) should be based on your level of functional complexity.
 
 
 ## Websites that use the early release of Thorium

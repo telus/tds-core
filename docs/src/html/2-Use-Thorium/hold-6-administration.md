@@ -8,7 +8,7 @@ template: doc.jade
 ---
 
 1. Update the `version` field in all package.json files
-2. Update [CHANGELOG.md](https://github.com/telusdigital/telus-thorium-core/blob/master/CHANGELOG.md) and copy your new entry to the [changelog page](/6-About/2-changelog.html)
+2. Update [CHANGELOG.md](https://github.com/telusdigital/telus-thorium-core/blob/master/CHANGELOG.md) and copy your new entry to the [changelog page](/1-About/4-changelog.html)
 3. Update the [Upgrading Guide](https://github.com/telusdigital/telus-thorium-core/blob/master/UPGRADING.md)
 4. Update the [README](https://github.com/telusdigital/telus-thorium-core/blob/master/README.md)
 4. Tag the commit being released
@@ -20,7 +20,7 @@ template: doc.jade
 
 ---
 
-Thorium follows [semantic versioning](/5-Contribution/2-contributing.html#versioning):
+Thorium follows [semantic versioning](/2-Use-Thorium/2-setting-up-projects.html#versioning):
 
 * If the new version adds backwards-compatible bug fixes, increment the patch version
     * Ex: change 0.3.0 to 0.3.1
@@ -41,7 +41,7 @@ The version number needs to be changed in each module's package.json file:
 The [npm version command](https://docs.npmjs.com/cli/version) is useful for updating these files.
 
 Parts of the documentation site use the current version number in examples.
-E.g. the [For Developers](/1-Getting%20started/2-for-developers.html) page includes it in sample URLs.
+E.g. the [Getting Started](/2-Use-Thorium/1-getting-started.html) page includes it in sample URLs.
 This documentation doesn't need to be manually edited - it will automatically pick up the new version number from package.json.
 
 ## Changelog maintenance

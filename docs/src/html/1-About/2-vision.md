@@ -1,7 +1,9 @@
 ---
-title: Design principles
+title: Design Vision
 template: doc.jade
 ---
+
+Create clear and simple experiences that efficiently satisfy customer needs throughout their journey with TELUS.
 
 **Create clear and simple designs**
 * All designs should support the brand
