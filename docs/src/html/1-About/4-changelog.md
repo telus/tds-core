@@ -33,6 +33,10 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.6.0
 - Updated: Information architecture. A new structure was applied to the navigation menu and the corresponding pages of documentation.
 - Updated: Rendering of example React components. Removed `<div data-thorium-component="ReactComponentName" />` mount points, replaced them with inline `text/babel` scripts. Example components can now be written in pure JS/React.
 
+### Thorium Build
+
+- Added: [S3 deployment script](https://github.com/telusdigital/telus-thorium-core#deploying-a-release)
+
 ## v0.5.0
 
 19 October 2016
