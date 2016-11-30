@@ -19,7 +19,7 @@ const defaultProps = {
   disabled: false
 };
 
-var noop = () => {};
+const noop = () => {};
 
 export default function counterButton({ label, icon, onClick, disabled }) {
   return (
