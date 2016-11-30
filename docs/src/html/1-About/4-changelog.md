@@ -5,7 +5,7 @@ template: doc.jade
 
 ## v0.6.0
 
-30 October 2016
+30 November 2016
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.6.0
 
