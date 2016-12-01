@@ -17,7 +17,9 @@
     "deploy:cdn": "npm run deploy:cdn:core && npm run deploy:cdn:enriched",
     "deploy:cdn:core": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module core --environment production --latest",
     "deploy:cdn:enriched": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module enriched --environment production --latest",
-    "setup:links": "cd core && npm link && cd ../enriched && npm link && npm link telus-thorium-core && cd ../docs && npm link telus-thorium-core && npm link telus-thorium-enriched"
+    "setup:links": "cd core && npm link && cd ../enriched && npm link && npm link telus-thorium-core && cd ../docs && npm link telus-thorium-core && npm link telus-thorium-enriched",
+    "lint": "cd core && npm run lint && cd ../docs && npm run lint && cd ../enriched && npm run lint",
+    "test": "cd enriched && npm run test"
   },
   "repository": {
     "type": "git",

@@ -21,6 +21,11 @@ Install the rest of the projects' dependencies and start up your local documenta
 
 The documentation site will be available at `http://localhost:8081` with Webpack Hot Module Reloading enabled.
 
+Ready to commit changes? Validate your code by running the linters & tests:
+
+    npm run lint
+    npm run test
+
 For more information about contributing, please see the [Governance - Contribution page](/docs/5-Governance/2-contributing.md).
 
 ## Building and Maintaining the Icon Font
