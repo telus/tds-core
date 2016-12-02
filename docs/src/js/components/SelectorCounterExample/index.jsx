@@ -65,6 +65,8 @@ class SelectorCounterExample extends Component {
               invalid={invalid}
               successful={succeessful}
               aria-describedby="ex-selcounter-desc"
+              contextPrefix="You chose"
+              contextSuffix="smartphone plans"
             />
           </div>
           <button className="button button-primary">Submit</button>
