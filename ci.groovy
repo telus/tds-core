@@ -13,6 +13,25 @@
  *
  */
 
+String cmdSetupWorkspace = '''
+  cd \${WORKSPACE}/core
+  npm install
+  npm rebuild node-sass
+  cd \${WORKSPACE}/enriched
+  rm -rf node_modules/telus-thorium-core
+  npm install \${WORKSPACE}/core
+  npm install
+  npm rebuild node-sass
+  npm run build:lib
+  cd \${WORKSPACE}/docs
+  rm -rf node_modules/telus-thorium-core
+  rm -rf node_modules/telus-thorium-enriched
+  npm install \${WORKSPACE}/core
+  npm install \${WORKSPACE}/enriched
+  npm install
+  npm rebuild node-sass
+'''
+
 /**
  * telus-thorium--configure is the first job in the build pipeline. It's
  * responsible for retrieving the code from Github and installing
@@ -37,24 +56,7 @@ createJenkinsJob('telus-thorium--configure') {
   }
 
   steps {
-	shell '''
-	  cd \${WORKSPACE}/core
-	  npm install
-	  npm rebuild node-sass
-	  cd \${WORKSPACE}/enriched
-	  rm -rf node_modules/telus-thorium-core
-	  npm install \${WORKSPACE}/core
-	  npm install
-	  npm rebuild node-sass
-	  npm run build:lib
-	  cd \${WORKSPACE}/docs
-	  rm -rf node_modules/telus-thorium-core
-	  rm -rf node_modules/telus-thorium-enriched
-	  npm install \${WORKSPACE}/core
-	  npm install \${WORKSPACE}/enriched
-	  npm install
-	  npm rebuild node-sass
-	'''.stripIndent().trim()
+	shell cmdSetupWorkspace.stripIndent().trim()
   }
 
   publishers {
@@ -106,6 +108,7 @@ createJenkinsJob('telus-thorium--build') {
       pattern('docs/dist/docs/**/*')
       onlyIfSuccessful()
     }
+    downstream 'telus-thorium--deploy-dev'
   }
 }
 
@@ -121,8 +124,8 @@ createJenkinsJob('telus-thorium--build') {
  * upstream job, which is telus-thorium--build.
  */
 createJenkinsDeployJob('telus-thorium--deploy-dev', 'jenkins@example.com:/var/www/versions/dev/', 'telus-thorium--build') {
-  triggers {
-    upstream('telus-thorium--build')
+  publishers {
+    downstream 'telus-thorium--deploy-qa'
   }
 }
 
@@ -131,11 +134,7 @@ createJenkinsDeployJob('telus-thorium--deploy-dev', 'jenkins@example.com:/var/ww
  * web server. It takes those artifacts from its upstream job, which
  * is dev.
  */
-createJenkinsDeployJob('telus-thorium--deploy-qa', 'jenkins@example.com:/var/www/versions/qa/', 'telus-thorium--deploy-dev') {
-  triggers {
-    upstream('telus-thorium--deploy-dev')
-  }
-}
+createJenkinsDeployJob('telus-thorium--deploy-qa', 'jenkins@example.com:/var/www/versions/qa/', 'telus-thorium--deploy-dev')
 
 /**
  * telus-thorium--deploy-stage copies the static site contents to the Staging
@@ -149,6 +148,31 @@ createJenkinsDeployJob('telus-thorium--deploy-stage', 'jenkins@example.com:/var/
  * deployment.
  */
 createJenkinsDeployJob('telus-thorium--deploy-prod', 'jenkins@example.com:/var/www/docs/', 'telus-thorium--deploy-stage')
+
+createJenkinsJob('telus-thorium--deploy-cdn') {
+  job('telus-thorium--deploy-cdn') {
+    parameters {
+      stringParam('THORIUM_RELEASE_VERSION', 'v0.6.0', 'Version to release. Corresponds to a Git tag of the same name, which must exist. Ex: v0.6.0')
+    }
+    scm {
+      git {
+        remote {
+          github('telusdigital/telus-thorium-core', 'ssh')
+          credentials('jenkins')
+          branch 'refs/tags/\${THORIUM_RELEASE_VERSION}'
+        }
+      }
+    }
+    steps {
+      shell cmdSetupWorkspace.stripIndent().trim()
+      shell '''
+        cd \${WORKSPACE}
+        npm run build
+        npm run deploy:cdn
+      '''.stripIndent().trim()
+    }
+  }
+}
 
 /*
  *
@@ -192,7 +216,7 @@ def createJenkinsJob (String name, Closure closure) {
   }.with closure
 }
 
-def createJenkinsDeployJob(String name, String target, String artifactsSource = 'upstream', Closure closure = {}) {
+def createJenkinsDeployJob(String name, String target, String artifactsSource, Closure closure = {}) {
   job(name) {
     wrappers {
       colorizeOutput()
