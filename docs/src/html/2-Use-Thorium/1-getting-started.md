@@ -110,6 +110,12 @@ Add a link to the CDN-hosted thorium.css file into the `<head>` of your page.
   href="https://cdn.telus.digital/thorium/core/!!THORIUM_VERSION!!/thorium.min.css">
 ```
 
+### CDN "latest" file
+
+Each major release also has a "latest" file hosted on the CDN. This will include all bug fixes and backwards-compatible changes. Here's the URL of the v0.x latest file:
+
+* [https://cdn.telus.digital/thorium/core/v0-latest/thorium.min.css](https://cdn.telus.digital/thorium/core/v0-latest/thorium.min.css)
+
 ## Using Thorium Enriched (CDN)
 
 ---
@@ -154,6 +160,11 @@ ReactDOM.render(
 );
 </script>
 ```
+
+Thorium Enriched also hosts "latest" files on the CDN:
+
+* [https://cdn.telus.digital/thorium/enriched/v0-latest/thorium-enriched.min.css](https://cdn.telus.digital/thorium/enriched/v0-latest/thorium-enriched.min.css)
+* [https://cdn.telus.digital/thorium/enriched/v0-latest/thorium-enriched.min.js](https://cdn.telus.digital/thorium/enriched/v0-latest/thorium-enriched.min.js)
 
 ## Using Thorium Enriched (NPM)
 
