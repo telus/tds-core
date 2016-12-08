@@ -21,16 +21,20 @@ const propTypes = {
   onChange: PropTypes.func,
   disabled: PropTypes.bool,
   invalid: PropTypes.bool,
-  successful: PropTypes.bool
+  successful: PropTypes.bool,
+  contextPrefix: PropTypes.string,
+  contextSuffix: PropTypes.string
 };
 
 const defaultProps = {
   defaultValue: 0,
   max: null,
   min: 0,
-  id: null,
+  id: 'sc' + Math.ceil(Math.random() * 10000),
   incrementorLabel: 'Increase value',
-  decrementorLabel: 'Decrease value'
+  decrementorLabel: 'Decrease value',
+  contextPrefix: '',
+  contextSuffix: ''
 };
 
 export default class SelectorCounter extends Component {
@@ -87,6 +91,8 @@ export default class SelectorCounter extends Component {
   render() {
     const {
       className,
+      contextPrefix,
+      contextSuffix,
       incrementorLabel,
       decrementorLabel,
       disabled,
@@ -106,10 +112,14 @@ export default class SelectorCounter extends Component {
 
     return (
       <div className={classNames('selector-counter', className, cssClasses)}>
+        <div className="accessible-hide" aria-live="assertive" aria-atomic="true">
+          {`${contextPrefix} ${value} ${contextSuffix}`}
+        </div>
         <input
           ref={(input) => this.input = input}
           id={id}
           type="number"
+          pattern="\d*"
           value={value}
           className="selector-counter__value"
           disabled={disabled}
@@ -119,8 +129,6 @@ export default class SelectorCounter extends Component {
           aria-invalid={invalid}
           aria-labeledby={this.props['aria-labeledby']}
           aria-describedby={this.props['aria-describedby']}
-          aria-live="polite"
-          aria-atomic="true"
         />
         <CounterButton
           label={incrementorLabel}

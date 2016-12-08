@@ -21,13 +21,16 @@ const defaultProps = {
 
 const noop = () => {};
 
-export default function counterButton({ label, icon, onClick, disabled }) {
+export default function counterButton(props) {
+  const { label, icon, onClick, disabled, ...extraProps } = props;
+
   return (
     <button
       aria-label={label}
       className="selector-counter__button"
       onClick={disabled ? noop : onClick}
       disabled={disabled}
+      {...extraProps}
     >
       <i className={`selector-counter__icon icon icon-core-${icon}`} />
     </button>
