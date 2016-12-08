@@ -26,7 +26,7 @@ export default SelectorCounterEx;
 
 | Property | Type | Default | Description |
 |---|---|---|---|
-| aria-labeledby | `string` | `null` | ID of accessible label |
+| aria-labelledby | `string` | `null` | ID of accessible label |
 | aria-describedby | `string` | `null` | ID of accessible description |
 | contextPrefix | `string` | `""` | Accessible text prefix for the change event announcement |
 | contextSuffix | `string` | `""` | Accessible text suffix for the change event announcement |
@@ -46,7 +46,7 @@ export default SelectorCounterEx;
 <div id="selectorCounter-disabled"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SelectorCounter disabled="true" />,
+    <Thorium.SelectorCounter disabled="true" aria-labelledby="disabled-selector-counter" />,
     document.getElementById('selectorCounter-disabled')
   );
 </script>
@@ -60,7 +60,7 @@ export default SelectorCounterEx;
 <div id="selectorCounter-successful"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SelectorCounter successful="true" />,
+    <Thorium.SelectorCounter successful="true" aria-labelledby="successful-selector-counter" />,
     document.getElementById('selectorCounter-successful')
   );
 </script>
@@ -74,7 +74,7 @@ export default SelectorCounterEx;
 <div id="selectorCounter-invalid"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SelectorCounter invalid="true" />,
+    <Thorium.SelectorCounter invalid="true" aria-labelledby="invalid-selector-counter" />,
     document.getElementById('selectorCounter-invalid')
   );
 </script>

@@ -127,7 +127,7 @@ export default class SelectorCounter extends Component {
           max={max}
           min={min}
           aria-invalid={invalid}
-          aria-labeledby={this.props['aria-labeledby']}
+          aria-labelledby={this.props['aria-labelledby']}
           aria-describedby={this.props['aria-describedby']}
         />
         <CounterButton
