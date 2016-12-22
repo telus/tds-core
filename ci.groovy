@@ -11,6 +11,9 @@
  * Plugins suggested:
  *   ansicolor
  *
+ * System requirements:
+ *   Node.js 6+
+ *   AWS CLI
  */
 
 String cmdSetupWorkspace = '''
@@ -123,7 +126,7 @@ createJenkinsJob('telus-thorium--build') {
  * development environment web server. It takes those files from its
  * upstream job, which is telus-thorium--build.
  */
-createJenkinsDeployJob('telus-thorium--deploy-dev', 'jenkins@example.com:/var/www/versions/dev/', 'telus-thorium--build') {
+createJenkinsDeployJob('telus-thorium--deploy-dev', 's3://cdn.telus-thorium/dev/thorium/docs/', 'telus-thorium--build') {
   publishers {
     downstream 'telus-thorium--deploy-qa'
   }
@@ -134,20 +137,20 @@ createJenkinsDeployJob('telus-thorium--deploy-dev', 'jenkins@example.com:/var/ww
  * web server. It takes those artifacts from its upstream job, which
  * is dev.
  */
-createJenkinsDeployJob('telus-thorium--deploy-qa', 'jenkins@example.com:/var/www/versions/qa/', 'telus-thorium--deploy-dev')
+createJenkinsDeployJob('telus-thorium--deploy-qa', 's3://cdn.telus-thorium/qa/thorium/docs/', 'telus-thorium--deploy-dev')
 
 /**
  * telus-thorium--deploy-stage copies the static site contents to the Staging
  * web server. It takes those artifacts from its upstream job, which is QA.
  */
-createJenkinsDeployJob('telus-thorium--deploy-stage', 'jenkins@example.com:/var/www/versions/stage/', 'telus-thorium--deploy-qa')
+createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium/stage/thorium/docs/', 'telus-thorium--deploy-qa')
 
 /**
  * telus-thorium--deploy-prod copies the static site contents to the production
  * web server. It takes those artifacts from the last successful staging
  * deployment.
  */
-createJenkinsDeployJob('telus-thorium--deploy-prod', 'jenkins@example.com:/var/www/docs/', 'telus-thorium--deploy-stage')
+createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium/production/thorium/docs/', 'telus-thorium--deploy-stage')
 
 createJenkinsJob('telus-thorium--deploy-cdn') {
   job('telus-thorium--deploy-cdn') {
@@ -216,14 +219,19 @@ def createJenkinsJob (String name, Closure closure) {
   }.with closure
 }
 
+/**
+ * Creates a job which syncs the documentation site's static files to a given s3 bucket & path.
+ *
+ * @param name for the deploy job
+ * @param target s3 bucket & prefix to sync. Value should have a trailing slash.
+ *   Ex: s3://my-bucket/path/to/www-root/
+ * @param artifactsSource archited Jenkins job from which to copy static site files
+ * @param closure any additional Jenkins Job DSL
+ */
 def createJenkinsDeployJob(String name, String target, String artifactsSource, Closure closure = {}) {
   job(name) {
     wrappers {
       colorizeOutput()
-      /*
-       * TODO: configure actual credentials for SSH/rsync when instances are ready
-       */
-      sshAgent('thorium-deployment-key')
     }
     steps {
       copyArtifacts(artifactsSource) {
@@ -231,10 +239,7 @@ def createJenkinsDeployJob(String name, String target, String artifactsSource, C
           latestSuccessful(true)
         }
       }
-      /*
-       * TODO: configure actual credentials for SSH/rsync when instances are ready
-       */
-      shell("rsync --delete -acvz docs/dist/docs/ ${target}")
+      shell("aws s3 sync ./docs/dist/docs/ ${target} --delete --acl public-read")
 	}
 
     publishers {
