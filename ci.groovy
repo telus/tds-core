@@ -111,7 +111,7 @@ createJenkinsJob('telus-thorium--build') {
       pattern('docs/dist/docs/**/*')
       onlyIfSuccessful()
     }
-    downstream 'telus-thorium--deploy-dev'
+    downstream 'telus-thorium--deploy-qa'
   }
 }
 
@@ -122,35 +122,24 @@ createJenkinsJob('telus-thorium--build') {
  */
 
 /**
- * telus-thorium--deploy-dev copies the static documentation site to the
- * development environment web server. It takes those files from its
- * upstream job, which is telus-thorium--build.
- */
-createJenkinsDeployJob('telus-thorium--deploy-dev', 's3://cdn.telus-thorium/dev/thorium/docs/', 'telus-thorium--build') {
-  publishers {
-    downstream 'telus-thorium--deploy-qa'
-  }
-}
-
-/**
  * telus-thorium--deploy-qa copies the static site contents to the QA
  * web server. It takes those artifacts from its upstream job, which
  * is dev.
  */
-createJenkinsDeployJob('telus-thorium--deploy-qa', 's3://cdn.telus-thorium/qa/thorium/docs/', 'telus-thorium--deploy-dev')
+createJenkinsDeployJob('telus-thorium--deploy-qa', 's3://cdn.telus-thorium-doc-qa/', 'telus-thorium--build')
 
 /**
  * telus-thorium--deploy-stage copies the static site contents to the Staging
  * web server. It takes those artifacts from its upstream job, which is QA.
  */
-createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium/stage/thorium/docs/', 'telus-thorium--deploy-qa')
+createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium-doc-staging/', 'telus-thorium--deploy-qa')
 
 /**
  * telus-thorium--deploy-prod copies the static site contents to the production
  * web server. It takes those artifacts from the last successful staging
  * deployment.
  */
-createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium/production/thorium/docs/', 'telus-thorium--deploy-stage')
+createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium-doc-production/', 'telus-thorium--deploy-stage')
 
 createJenkinsJob('telus-thorium--deploy-cdn') {
   job('telus-thorium--deploy-cdn') {
