@@ -74,11 +74,11 @@ export default AccordionCollapsibleEx;
 
 ---
 | Property |   Description   | Type | Default |
-|:----|:--------|:---|:---|
-| accordion |  Is this panel group accordion? | boolean |  false |
-| activeKeys |    key of the active panel   |   array |  - |
-| className |    additional css classes   |   string |  - |
-| onChange | a callback function, which can be executed when you switch the panels | function | -  |
+|:----|:------|:---|:---|
+| accordion | is this panel group accordion? | boolean |  false |
+| activeKeys | key of the active panel |   array |  - |
+| className | additional css classes |   string |  - |
+| onChange | switch panel callback function | function | -  |
 
 ### Panel
 

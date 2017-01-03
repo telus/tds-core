@@ -16,14 +16,21 @@
     text-align: left;
     text-decoration: none;
     width: 100%;
+    transition: all 0.3s ease-in;
+
+
 
     .icon{
       color: #d2d3d5;
     }
 
     &:hover {
+      border-top: 1px solid $color-grey-dark;
       .icon {
         color: $color-grey;
+      }
+      &::before {
+        background: $color-grey-dark;
       }
     }
 
@@ -37,13 +44,22 @@
 
     &::before {
       background: #d2d3d5;
-      bottom: -1px;
+      bottom: 0;
       height: 1px;
     }
 
     &::after {
       bottom: -20px;
       height: 20px;
+    }
+
+    &--expanded {
+      border-top: 1px solid $color-grey-dark;
+      &:hover {
+        &::before {
+          background: #d2d3d5;
+        }
+      }
     }
   }
 
@@ -100,6 +116,10 @@
       max-height: 500px;
       overflow-y: auto;
       opacity: 1;
+
+      &::before {
+        background: $color-grey-dark;
+      }
     }
   }
 }

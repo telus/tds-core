@@ -20,10 +20,16 @@ class Panel extends Component {
       'collapsible-panel__icon--expanded': isActive,
       'collapsible-panel__icon--collapsed': !isActive
     });
+
+    const collapsePaneLabelClassName = classNames('collapsible-panel__label', {
+      'collapsible-panel__label--expanded': isActive,
+      'collapsible-panel__label--collapsed': !isActive
+    });
+
     return (
       <div className={collapsePanelClassName}>
         <span aria-live="polite" className="accessible-hide">{isActive ? 'expanded' : 'collapsed'}</span>
-        <button onClick={onPanelClick} aria-expanded={isActive ? 'true' : 'false'} className="collapsible-panel__label">
+        <button onClick={onPanelClick} aria-expanded={isActive ? 'true' : 'false'} className={collapsePaneLabelClassName}>
           <span className="collapsible-panel__header">{ header }</span>
           <span className={collapsePanelIconClassName}>
             <i className="icon icon-core-times" />
