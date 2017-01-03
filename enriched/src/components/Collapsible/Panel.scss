@@ -55,6 +55,9 @@
 
     &--expanded {
       border-top: 1px solid $color-grey-dark;
+      &::after {
+        background-image: radial-gradient(ellipse at top, rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70%);
+      }
       &:hover {
         &::before {
           background: #d2d3d5;
