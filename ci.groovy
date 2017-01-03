@@ -88,6 +88,11 @@ createJenkinsJob('telus-thorium--test') {
   }
 
   publishers {
+    archiveArtifacts {
+      pattern('**/*')
+      onlyIfSuccessful()
+    }
+
     downstream 'telus-thorium--build'
   }
 }
@@ -98,7 +103,7 @@ createJenkinsJob('telus-thorium--test') {
  */
 createJenkinsJob('telus-thorium--build') {
   steps {
-    copyArtifacts('telus-thorium--configure') {
+    copyArtifacts('telus-thorium--test') {
       buildSelector {
         latestSuccessful(true)
       }
