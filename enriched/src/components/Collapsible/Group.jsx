@@ -30,7 +30,6 @@ class Group extends Component {
 
   getPanels() {
     const activeKeys = this.state.currentActiveKeys;
-    const { children} = this.props;
     const newChildren = [];
 
     Children.forEach(this.props.children, (child, index) => {
@@ -52,7 +51,6 @@ class Group extends Component {
     });
 
     return newChildren;
-
   }
 
   render() {

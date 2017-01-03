@@ -74,7 +74,7 @@ export default AccordionCollapsibleEx;
 
 ---
 | Property |   Description   | Type | Default |
-|:----|:--------:|:---:|:---:|
+|:----|:--------|:---|:---|
 | accordion |  Is this panel group accordion? | boolean |  false |
 | activeKeys |    key of the active panel   |   array |  - |
 | className |    additional css classes   |   string |  - |
@@ -84,6 +84,6 @@ export default AccordionCollapsibleEx;
 
 ---
 | Property |   Description   | Type | Default |
-|:----|:--------:|:---:|:---:|
+|:----|:--------|:---|:---|
 | panelKey |  corresponds to the activeKeys | string |  - |
 | header |    title of the panel   |   string |  - |
