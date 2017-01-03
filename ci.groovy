@@ -165,7 +165,39 @@ createJenkinsJob('telus-thorium--deploy-cdn') {
       shell '''
         cd \${WORKSPACE}
         npm run build
+        npm run lint
+        npm test
         npm run deploy:cdn
+      '''.stripIndent().trim()
+    }
+  }
+}
+
+createJenkinsJob('telus-thorium--deploy-npm') {
+  job('telus-thorium--deploy-npm') {
+    parameters {
+      stringParam('THORIUM_RELEASE_VERSION', 'v0.6.0', 'Version to release. Corresponds to a Git tag of the same name, which must exist. Ex: v0.6.0')
+    }
+    scm {
+      git {
+        remote {
+          github('telusdigital/telus-thorium-core', 'ssh')
+          credentials('jenkins')
+          branch 'refs/tags/\${THORIUM_RELEASE_VERSION}'
+        }
+      }
+    }
+    steps {
+      shell cmdSetupWorkspace.stripIndent().trim()
+      shell '''
+        cd \${WORKSPACE}
+        npm run build
+        npm run lint
+        npm test
+        cd \${WORKSPACE}/core
+        npm publish
+        cd \${WORKSPACE}/enriched
+        npm publish
       '''.stripIndent().trim()
     }
   }
