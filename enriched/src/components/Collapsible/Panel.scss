@@ -116,7 +116,7 @@
 
     &--visible {
       padding: 20px 0;
-      @include from-breakpoint("lg") {
+      @include from-breakpoint(large) {
         padding: 40px 0;
       }
       max-height: 500px;
