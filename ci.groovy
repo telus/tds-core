@@ -101,6 +101,7 @@ createJenkinsJob('telus-thorium--configure') {
 createJenkinsJob('telus-thorium--test') {
   steps {
     copyArtifacts('telus-thorium--configure') {
+      includePatterns('**/*')
       buildSelector {
         latestSuccessful(true)
       }
@@ -126,6 +127,7 @@ createJenkinsJob('telus-thorium--test') {
 createJenkinsJob('telus-thorium--build') {
   steps {
     copyArtifacts('telus-thorium--test') {
+      includePatterns('**/*')
       buildSelector {
         latestSuccessful(true)
       }
@@ -283,6 +285,7 @@ def createJenkinsDeployJob(String name, String target, String artifactsSource, C
     }
     steps {
       copyArtifacts(artifactsSource) {
+        includePatterns('**/*')
         buildSelector {
           latestSuccessful(true)
         }
