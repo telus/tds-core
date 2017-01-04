@@ -22,7 +22,7 @@
       color: #d2d3d5;
     }
 
-    &:hover {
+    @include alt-state {
       border-top: 1px solid $color-grey-dark;
       .icon {
         color: $color-grey;
@@ -59,7 +59,7 @@
         height: 0;
       }
 
-      &:hover {
+      @include alt-state {
         + .collapsible-panel__content {
           &::before {
             background: $color-grey-dark;
