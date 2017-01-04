@@ -36,6 +36,28 @@ String cmdSetupWorkspace = '''
 '''
 
 /**
+ * telus-thorium--seed configures the build pipeline via the Job DSL plugin.
+ */
+createJenkinsJob('telus-thorium--seed') {
+  scm {
+    git {
+      remote {
+        github('telusdigital/telus-thorium-core', 'ssh')
+        credentials('jenkins')
+        branch 'master'
+      }
+      extensions {
+        cleanBeforeCheckout()
+      }
+    }
+  }
+
+  steps {
+	dsl(['ci.groovy'])
+  }
+}
+
+/**
  * telus-thorium--configure is the first job in the build pipeline. It's
  * responsible for retrieving the code from Github and installing
  * all dependencies.
