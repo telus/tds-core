@@ -1,0 +1,127 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+
+.collapsible-panel {
+  position: relative;
+
+  &__label {
+    background: transparent;
+    border-top: 1px solid #d2d3d5;
+    border-radius: 0;
+    display: block;
+    margin: 0;
+    outline: 0;
+    padding: 20px 0;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    transition: all 0.3s ease-in;
+
+    .icon{
+      color: #d2d3d5;
+    }
+
+    @include alt-state {
+      border-top: 1px solid $color-grey-dark;
+      .icon {
+        color: $color-grey;
+      }
+      &::before {
+        background: $color-grey-dark;
+      }
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    &::before {
+      background: #d2d3d5;
+      bottom: 0;
+      height: 1px;
+    }
+
+    &::after {
+      bottom: -20px;
+      height: 20px;
+    }
+
+    &--expanded {
+      &::after {
+        background-image: radial-gradient(ellipse at top, rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70%);
+      }
+      &::before {
+        height: 0;
+      }
+
+      @include alt-state {
+        + .collapsible-panel__content {
+          &::before {
+            background: $color-grey-dark;
+          }
+        }
+      }
+    }
+  }
+
+
+  &__header {
+    display: inline-block;
+    margin-bottom: 0;
+    color: $color-grey-dark;
+    position: relative;
+  }
+
+
+
+  &__icon {
+    float: right;
+    font-size: 1.125rem;
+    transition: all .5s;
+    width: 18px;
+    margin-top: -2px;
+    transform-origin: 40% 50%;
+
+    &--expanded {
+      transform: rotate(-90deg);
+    }
+
+    &--collapsed {
+      transform: rotate(45deg);
+    }
+  }
+
+
+  &__content {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    position: relative;
+    transition: all 0.5s;
+
+    &::before {
+      background: #d2d3d5;
+      bottom: 0;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    &--visible {
+      padding: 20px 0;
+      @include from-breakpoint(large) {
+        padding: 40px 0;
+      }
+      max-height: 500px;
+      overflow-y: auto;
+      opacity: 1;
+    }
+  }
+}
