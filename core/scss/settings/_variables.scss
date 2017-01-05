@@ -79,8 +79,8 @@ $icon-font-prefix: 'https://cdn.telus.digital/thorium/core/v0.4.0';
 
 // Breakpoints for a mobile-first grid. The pixel values of adjacent breakpoints
 // can be the same value (i.e. it's unnecessary to write values like
-// small: (544px, 768px), medium: (769px, 992px)). Media Query-generating mixins
-// will automatically add 1 where necessary.
+// small: (544px, 767px), medium: (768px, 992px)). Media Query-generating mixins
+// will automatically adjust by 1px where necessary.
 $breakpoints: (
   xs: (null,   544px),
   small: (544px,  768px),
