@@ -26,10 +26,10 @@ Breakpoints are the points at which your site's layout and content will respond 
 Thorium will have five viewports over four breakpoints:
 
 * X-Small: (0-544)
-* Small: (544 - 768)
-* Medium: (768 - 992)
-* Large: (992 - 1200)
-* X-Large: (1200+)
+* Small: (545 - 768)
+* Medium: (769 - 992)
+* Large: (993 - 1200)
+* X-Large: (1201+)
 
 ## Responsiveness
 
