@@ -4,7 +4,7 @@
   "description": "TELUS Design System documentation website",
   "main": "index.js",
   "scripts": {
-    "lint": "node_modules/.bin/stylelint 'src/scss/**/*.scss' --syntax scss",
+    "lint": "stylelint 'src/scss/**/*.scss' --syntax scss",
     "build": "npm run lint && npm run clean && mkdirp dist && npm run build:js && npm run build:html",
     "start": "export NODE_ENV=dev && wintersmith preview --config=config.json",
     "devServer": "webpack-dev-server --config webpack.config.dev.js",

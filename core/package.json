@@ -7,7 +7,7 @@
     "eyeglass-module"
   ],
   "scripts": {
-    "lint": "node_modules/.bin/stylelint 'scss/**/*.scss' --syntax scss",
+    "lint": "stylelint 'scss/**/*.scss' --syntax scss",
     "build": "npm run clean && mkdirp dist && npm run build:css",
     "build:css": "npm run lint && node-sass --include-path scss scss/thorium.scss | postcss --use autoprefixer | cleancss > dist/thorium.min.css",
     "build:icons": "node scripts/icons.js",
