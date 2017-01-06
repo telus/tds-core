@@ -1,11 +1,14 @@
 import React, { PropTypes } from 'react';
+import cx from 'classnames';
 
 function Container(props) {
-  const { className, ...extraProps } = props;
-  const classes = ['container', className];
+  const { className, limitWidth, ...extraProps } = props;
+  const classes = cx('container', className, {
+    'container--limited-width': limitWidth === true
+  });
 
   return (
-    <div className={ classes.filter(c => c).join(' ') } { ...extraProps }>
+    <div className={classes} { ...extraProps }>
       { props.children }
     </div>
   );
@@ -13,6 +16,7 @@ function Container(props) {
 
 Container.propTypes = {
   className: PropTypes.string,
+  limitWidth: PropTypes.bool
 };
 
 export default Container;

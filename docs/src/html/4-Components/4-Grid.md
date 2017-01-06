@@ -49,7 +49,9 @@ to display correctly.
 </Container>
 ```
 
-Containers don't have any special props.
+| Property | Type | Default | Description |
+|:---|:---|:---|:---|
+| `limitWidth` | `bool` | `false` | Give containers a max width at each breakpoint |
 
 ## Row
 

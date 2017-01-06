@@ -27,4 +27,12 @@ describe('<Container />', () => {
 
     expect(container.contains(div)).toEqual(true);
   });
+
+  it('defaults to auto width', () =>
+    expect(shallow(<Container />).hasClass('container--limited-width'))
+      .toEqual(false));
+
+  it('supports opt-in max-width', () =>
+    expect(shallow(<Container limitWidth />).hasClass('container--limited-width'))
+      .toEqual(true));
 });
