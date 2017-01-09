@@ -192,6 +192,9 @@ def createJenkinsJob (String name, Closure closure) {
   job(name) {
     wrappers {
       colorizeOutput()
+      credentialsBinding {
+        usernamePassword('AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'aws-thorium-deployment')
+      }
     }
     logRotator {
       numToKeep(5)
