@@ -127,6 +127,11 @@ createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium-doc
 
 createJenkinsJob('telus-thorium--deploy-cdn') {
   job('telus-thorium--deploy-cdn') {
+    wrappers {
+      credentialsBinding {
+        usernamePassword('AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'aws-thorium-deployment')
+      }
+    }
     parameters {
       stringParam('THORIUM_RELEASE_VERSION', 'v0.6.0', 'Version to release. Corresponds to a Git tag of the same name, which must exist. Ex: v0.6.0')
     }
@@ -192,9 +197,6 @@ def createJenkinsJob (String name, Closure closure) {
   job(name) {
     wrappers {
       colorizeOutput()
-      credentialsBinding {
-        usernamePassword('AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'aws-thorium-deployment')
-      }
     }
     logRotator {
       numToKeep(5)
