@@ -9,6 +9,7 @@
     "build:core": "cd core && npm run build",
     "build:docs": "cd docs && npm run build",
     "build:enriched": "cd enriched && npm run build",
+    "prestart": "npm run build",
     "start": "concurrently --kill-others \"cd docs && npm run start\" \"cd docs && npm run devServer\"",
     "install": "npm run install:core && npm run install:enriched && npm run install:docs",
     "install:core": "cd core && npm install",
