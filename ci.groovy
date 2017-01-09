@@ -33,12 +33,12 @@ String cmdSetupWorkspace = '''
   npm install \${WORKSPACE}/enriched
   npm install
   npm rebuild node-sass
-'''
+'''.stripIndent().trim()
 
 /**
  * telus-thorium--seed configures the build pipeline via the Job DSL plugin.
  */
-createJenkinsJob('telus-thorium--seed') {
+createJenkinsJob('telus-thorium--seed-jenkins-jobs') {
   scm {
     git {
       remote {
@@ -58,11 +58,10 @@ createJenkinsJob('telus-thorium--seed') {
 }
 
 /**
- * telus-thorium--configure is the first job in the build pipeline. It's
- * responsible for retrieving the code from Github and installing
- * all dependencies.
+ * telus-thorium--build is the first job in the build pipeline. It will
+ * install, test, and build the latest code from master on Github.
  */
-createJenkinsJob('telus-thorium--configure') {
+createJenkinsJob('telus-thorium--build') {
   triggers {
     githubPush()
   }
@@ -81,58 +80,13 @@ createJenkinsJob('telus-thorium--configure') {
   }
 
   steps {
-	shell cmdSetupWorkspace.stripIndent().trim()
-  }
-
-  publishers {
-    archiveArtifacts {
-      pattern('**/*')
-      onlyIfSuccessful()
-    }
-
-    downstream 'telus-thorium--test'
-  }
-}
-
-/**
- * telus-thorium--test verifies the integrity of the code by executing
- * linters and tests.
- */
-createJenkinsJob('telus-thorium--test') {
-  steps {
-    copyArtifacts('telus-thorium--configure') {
-      includePatterns('**/*')
-      buildSelector {
-        latestSuccessful(true)
-      }
-    }
-    shell("npm run lint")
-    shell("npm test")
-  }
-
-  publishers {
-    archiveArtifacts {
-      pattern('**/*')
-      onlyIfSuccessful()
-    }
-
-    downstream 'telus-thorium--build'
-  }
-}
-
-/**
- * telus-thorium--build takes tested/verified Thorium source code and builds
- * the documentation site's static HTML, CSS, JS, and assets.
- */
-createJenkinsJob('telus-thorium--build') {
-  steps {
-    copyArtifacts('telus-thorium--test') {
-      includePatterns('**/*')
-      buildSelector {
-        latestSuccessful(true)
-      }
-    }
-    shell("npm run build")
+	shell cmdSetupWorkspace
+	shell '''
+	  cd \${WORKSPACE}
+	  npm run lint
+	  npm test
+	  npm run build
+    '''.stripIndent().trim()
   }
 
   publishers {
@@ -140,6 +94,7 @@ createJenkinsJob('telus-thorium--build') {
       pattern('docs/dist/docs/**/*')
       onlyIfSuccessful()
     }
+
     downstream 'telus-thorium--deploy-qa'
   }
 }
@@ -185,12 +140,12 @@ createJenkinsJob('telus-thorium--deploy-cdn') {
       }
     }
     steps {
-      shell cmdSetupWorkspace.stripIndent().trim()
+      shell cmdSetupWorkspace
       shell '''
         cd \${WORKSPACE}
-        npm run build
         npm run lint
         npm test
+        npm run build
         npm run deploy:cdn
       '''.stripIndent().trim()
     }
@@ -212,12 +167,12 @@ createJenkinsJob('telus-thorium--deploy-npm') {
       }
     }
     steps {
-      shell cmdSetupWorkspace.stripIndent().trim()
+      shell cmdSetupWorkspace
       shell '''
         cd \${WORKSPACE}
-        npm run build
         npm run lint
         npm test
+        npm run build
         cd \${WORKSPACE}/core
         npm publish
         cd \${WORKSPACE}/enriched
