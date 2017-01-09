@@ -237,6 +237,9 @@ def createJenkinsDeployJob(String name, String target, String artifactsSource, C
   job(name) {
     wrappers {
       colorizeOutput()
+      credentialsBinding {
+        usernamePassword('AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'aws-thorium-deployment')
+      }
     }
     steps {
       copyArtifacts(artifactsSource) {
@@ -283,3 +286,4 @@ def createJenkinsDeployJob(String name, String target, String artifactsSource, C
     }
   }.with closure
 }
+
