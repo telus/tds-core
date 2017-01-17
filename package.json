@@ -7,6 +7,7 @@
     "build": "npm run build:assets && npm run build:core && npm run build:enriched && npm run build:docs",
     "build:assets": "cp core/fonts/* docs/src/html/assets/fonts/ && cp designs/thorium.sketch docs/src/html/assets/downloads/thorium.sketch",
     "build:core": "cd core && npm run build",
+    "build:changelog": "echo '' > CHANGELOG.md && echo \"---\ntitle: Changelog\ntemplate: doc.jade\n---\n\" > docs/src/html/1-About/4-changelog.md && scripts/changelog.sh | tee -a CHANGELOG.md docs/src/html/1-About/4-changelog.md",
     "build:docs": "cd docs && npm run build",
     "build:enriched": "cd enriched && npm run build",
     "prestart": "npm run build",
