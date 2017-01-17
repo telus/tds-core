@@ -159,6 +159,11 @@ createJenkinsJob('telus-thorium--deploy-cdn') {
 
 createJenkinsJob('telus-thorium--deploy-npm') {
   job('telus-thorium--deploy-npm') {
+    wrappers {
+      credentialsBinding {
+        string('THORIUM_NPM_TOKEN', 'npm-thorium-deployment')
+      }
+    }
     parameters {
       stringParam('THORIUM_RELEASE_VERSION', 'v0.6.0', 'Version to release. Corresponds to a Git tag of the same name, which must exist. Ex: v0.6.0')
     }
@@ -178,6 +183,7 @@ createJenkinsJob('telus-thorium--deploy-npm') {
         npm run lint
         npm test
         npm run build
+        echo "//registry.npmjs.org/:_authToken=\\\${THORIUM_NPM_TOKEN}" | tee \${WORKSPACE}/core/.npmrc \${WORKSPACE}/enriched/.npmrc
         cd \${WORKSPACE}/core
         npm publish
         cd \${WORKSPACE}/enriched
