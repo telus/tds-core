@@ -35,33 +35,7 @@ String cmdSetupWorkspace = '''
   npm rebuild node-sass
 '''.stripIndent().trim()
 
-/**
- * telus-thorium--seed configures the build pipeline via the Job DSL plugin.
- */
-createJenkinsJob('telus-thorium--seed-jenkins-jobs') {
-  scm {
-    git {
-      remote {
-        github('telusdigital/telus-thorium-core', 'ssh')
-        credentials('jenkins')
-        branch 'master'
-      }
-      extensions {
-        cleanBeforeCheckout()
-      }
-    }
-  }
-
-  steps {
-	dsl(['ci.groovy'])
-  }
-}
-
-/**
- * telus-thorium--build is the first job in the build pipeline. It will
- * install, test, and build the latest code from master on Github.
- */
-createJenkinsJob('telus-thorium--build') {
+createJenkinsJob('telus-thorium--build', 'Pull latest code from Github then install dependencies, lint, unit test, and build artifacts') {
   triggers {
     githubPush()
   }
@@ -80,12 +54,12 @@ createJenkinsJob('telus-thorium--build') {
   }
 
   steps {
-	shell cmdSetupWorkspace
-	shell '''
-	  cd \${WORKSPACE}
-	  npm run lint
-	  npm test
-	  npm run build
+    shell cmdSetupWorkspace
+    shell '''
+      cd \${WORKSPACE}
+      npm run lint
+      npm test
+      npm run build
     '''.stripIndent().trim()
   }
 
@@ -125,7 +99,55 @@ createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium-do
  */
 createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium-doc-production/', 'telus-thorium--deploy-stage')
 
-createJenkinsJob('telus-thorium--deploy-cdn') {
+createJenkinsJob('telus-thorium--release', 'Create changelog, version tag, release branch, bump the version and publish to S3 and NPM') {
+   wrappers {
+    credentialsBinding {
+      usernamePassword('AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'aws-thorium-deployment')
+      string('THORIUM_NPM_TOKEN', 'npm-thorium-deployment')
+    }
+  }
+  parameters {
+    stringParam('THORIUM_RELEASE_VERSION', '', 'New version to create (without "v"). Ex: 1.2.3')
+  }
+  scm {
+    git {
+      remote {
+        github('telusdigital/telus-thorium-core', 'ssh')
+        credentials('jenkins')
+        branch 'master'
+      }
+    }
+  }
+  steps {
+    shell cmdSetupWorkspace
+    shell '''
+      cd \${WORKSPACE}
+      npm run lint
+      npm test
+      npm run build
+      npm run prerelease -- \${THORIUM_RELEASE_VERSION}
+      git commit -am "Changelog for v\${THORIUM_RELEASE_VERSION}"
+      echo "//registry.npmjs.org/:_authToken=\\\${THORIUM_NPM_TOKEN}" | tee \${WORKSPACE}/core/.npmrc \${WORKSPACE}/enriched/.npmrc
+      cd \${WORKSPACE}/core
+      npm publish
+      cd \${WORKSPACE}/enriched
+      npm publish
+      rm \${WORKSPACE}/core/.npmrc \${WORKSPACE}/enriched/.npmrc
+   '''
+  }
+  publishers {
+    git {
+      pushOnlyIfSuccess()
+      tag('origin', "v\${THORIUM_RELEASE_VERSION}") {
+        message("Releasing v\${THORIUM_RELEASE_VERSION}")
+        create()
+      }
+      branch('origin', "release/v\${THORIUM_RELEASE_VERSION}")
+    }
+  }
+}
+
+createJenkinsJob('telus-thorium--deploy-cdn', 'Deploy an existing, tagged release to S3') {
   job('telus-thorium--deploy-cdn') {
     wrappers {
       credentialsBinding {
@@ -157,7 +179,7 @@ createJenkinsJob('telus-thorium--deploy-cdn') {
   }
 }
 
-createJenkinsJob('telus-thorium--deploy-npm') {
+createJenkinsJob('telus-thorium--deploy-npm', 'Deploy an existing, tagged release to NPM') {
   job('telus-thorium--deploy-npm') {
     wrappers {
       credentialsBinding {
@@ -199,8 +221,9 @@ createJenkinsJob('telus-thorium--deploy-npm') {
  *
  */
 
-def createJenkinsJob (String name, Closure closure) {
+def createJenkinsJob (String name, String desc, Closure closure) {
   job(name) {
+    description(desc)
     wrappers {
       colorizeOutput()
     }
@@ -246,6 +269,7 @@ def createJenkinsJob (String name, Closure closure) {
  */
 def createJenkinsDeployJob(String name, String target, String artifactsSource, Closure closure = {}) {
   job(name) {
+    description("Deploy the TDS documentation website to ${target}")
     wrappers {
       colorizeOutput()
       credentialsBinding {
