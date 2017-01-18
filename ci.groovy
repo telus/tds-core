@@ -35,7 +35,10 @@ String cmdSetupWorkspace = '''
   npm rebuild node-sass
 '''.stripIndent().trim()
 
-createJenkinsJob('telus-thorium--build', 'Pull latest code from Github then install dependencies, lint, unit test, and build artifacts') {
+createJenkinsJob(
+  'telus-thorium--build',
+  'Pull latest code from Github then install dependencies, lint, unit test, and build artifacts'
+) {
   triggers {
     githubPush()
   }
@@ -99,7 +102,10 @@ createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium-do
  */
 createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium-doc-production/', 'telus-thorium--deploy-stage')
 
-createJenkinsJob('telus-thorium--release', 'Create changelog, version tag, release branch, bump the version and publish to S3 and NPM') {
+createJenkinsJob(
+  'telus-thorium--release',
+  'Create changelog, version tag, release branch, bump the version and publish to S3 and NPM'
+) {
    wrappers {
     credentialsBinding {
       usernamePassword('AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'aws-thorium-deployment')
@@ -155,7 +161,11 @@ createJenkinsJob('telus-thorium--redeploy-cdn', 'Deploy an existing, tagged rele
       }
     }
     parameters {
-      stringParam('THORIUM_RELEASE_VERSION', 'v0.6.0', 'Version to release. Corresponds to a Git tag of the same name, which must exist. Ex: v0.6.0')
+      stringParam(
+        'THORIUM_RELEASE_VERSION',
+        'v0.6.0',
+        'Version to release. Corresponds to a Git tag of the same name, which must exist. Ex: v0.6.0'
+      )
     }
     scm {
       git {
@@ -187,7 +197,11 @@ createJenkinsJob('telus-thorium--redeploy-npm', 'Deploy an existing, tagged rele
       }
     }
     parameters {
-      stringParam('THORIUM_RELEASE_VERSION', 'v0.6.0', 'Version to release. Corresponds to a Git tag of the same name, which must exist. Ex: v0.6.0')
+      stringParam(
+        'THORIUM_RELEASE_VERSION',
+        'v0.6.0',
+        'Version to release. Corresponds to a Git tag of the same name, which must exist. Ex: v0.6.0'
+      )
     }
     scm {
       git {
