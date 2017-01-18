@@ -138,11 +138,11 @@ createJenkinsJob('telus-thorium--release', 'Create changelog, version tag, relea
   publishers {
     git {
       pushOnlyIfSuccess()
-      tag('origin', "v\${THORIUM_RELEASE_VERSION}") {
-        message("Releasing v\${THORIUM_RELEASE_VERSION}")
+      tag('origin', "v\$THORIUM_RELEASE_VERSION") {
+        message("Releasing v\$THORIUM_RELEASE_VERSION")
         create()
       }
-      branch('origin', "release/v\${THORIUM_RELEASE_VERSION}")
+      branch('origin', "release/v\$THORIUM_RELEASE_VERSION")
     }
   }
 }
@@ -162,7 +162,7 @@ createJenkinsJob('telus-thorium--redeploy-cdn', 'Deploy an existing, tagged rele
         remote {
           github('telusdigital/telus-thorium-core', 'ssh')
           credentials('jenkins')
-          branch 'refs/tags/\${THORIUM_RELEASE_VERSION}'
+          branch 'refs/tags/\$THORIUM_RELEASE_VERSION'
         }
       }
     }
@@ -194,7 +194,7 @@ createJenkinsJob('telus-thorium--redeploy-npm', 'Deploy an existing, tagged rele
         remote {
           github('telusdigital/telus-thorium-core', 'ssh')
           credentials('jenkins')
-          branch 'refs/tags/\${THORIUM_RELEASE_VERSION}'
+          branch 'refs/tags/\$THORIUM_RELEASE_VERSION'
         }
       }
     }
