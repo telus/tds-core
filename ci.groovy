@@ -147,8 +147,8 @@ createJenkinsJob('telus-thorium--release', 'Create changelog, version tag, relea
   }
 }
 
-createJenkinsJob('telus-thorium--deploy-cdn', 'Deploy an existing, tagged release to S3') {
-  job('telus-thorium--deploy-cdn') {
+createJenkinsJob('telus-thorium--redeploy-cdn', 'Deploy an existing, tagged release to S3') {
+  job('telus-thorium--redeploy-cdn') {
     wrappers {
       credentialsBinding {
         usernamePassword('AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'aws-thorium-deployment')
@@ -179,8 +179,8 @@ createJenkinsJob('telus-thorium--deploy-cdn', 'Deploy an existing, tagged releas
   }
 }
 
-createJenkinsJob('telus-thorium--deploy-npm', 'Deploy an existing, tagged release to NPM') {
-  job('telus-thorium--deploy-npm') {
+createJenkinsJob('telus-thorium--redeploy-npm', 'Deploy an existing, tagged release to NPM') {
+  job('telus-thorium--redeploy-npm') {
     wrappers {
       credentialsBinding {
         string('THORIUM_NPM_TOKEN', 'npm-thorium-deployment')
