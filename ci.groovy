@@ -126,7 +126,7 @@ createJenkinsJob('telus-thorium--release', 'Create changelog, version tag, relea
       npm test
       npm run build
       npm run prerelease -- \${THORIUM_RELEASE_VERSION}
-      git commit -am "Changelog for v\${THORIUM_RELEASE_VERSION}"
+      git commit -am "Changelog and version bump for v\${THORIUM_RELEASE_VERSION}"
       echo "//registry.npmjs.org/:_authToken=\\\${THORIUM_NPM_TOKEN}" | tee \${WORKSPACE}/core/.npmrc \${WORKSPACE}/enriched/.npmrc
       cd \${WORKSPACE}/core
       npm publish
