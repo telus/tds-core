@@ -133,7 +133,7 @@ createJenkinsJob('telus-thorium--release', 'Create changelog, version tag, relea
       cd \${WORKSPACE}/enriched
       npm publish
       rm \${WORKSPACE}/core/.npmrc \${WORKSPACE}/enriched/.npmrc
-   '''
+   '''.stripIndent().trim()
   }
   publishers {
     git {
