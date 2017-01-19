@@ -1,6 +1,6 @@
 {
   "name": "telus-thorium-docs",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "TELUS Design System documentation website",
   "main": "index.js",
   "scripts": {

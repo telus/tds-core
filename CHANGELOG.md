@@ -1,6 +1,9 @@
 
-## 0.7.0\n
-\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/0.7.0\n
+## 0.7.1\n
+\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/0.7.1\n
+- Update dev & peer dependencies to TDS 0.7 (#157)
+## v0.7.0\n
+\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.0\n
 - Added react import line to grid docs.
 - Removed unused column div at the bottom of docs.
 - Fixed a typo in an example.
@@ -37,6 +40,7 @@
 - Automate changelog generation [[BCM-211](https://telusdigital.atlassian.net/browse/BCM-211)] (#150)
 - End-to-end release automation with Jenkins [[BCM-213](https://telusdigital.atlassian.net/browse/BCM-213)] (#153)
 - Use bash instead of sh for shell scripts (#154)
+- Changelog and version bump for v0.7.0
 ## v0.6.0\n
 \n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/v0.6.0\n
 - Fixing the sketch file download
