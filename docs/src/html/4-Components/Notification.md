@@ -31,6 +31,15 @@ export default NotificationExample;
 
 ---
 The component comes in the following colour variations:
+- Default
+- Branded
+- Success
+- Error
+- instructional
+
+These variants can be accessed via a prop called `variant`.
+Here is an example of each available variant with the
+
 
 <div id="notificationExample"></div>
 
@@ -46,33 +55,33 @@ The component comes in the following colour variations:
     return (
       <ul>
         <li style={margins}>
-          <h4>Default</h4>
+          <h4>Default: no variant prop</h4>
           <Thorium.Notification>
             <h4>Default - no additional classes</h4>
           </Thorium.Notification>
         </li>
         <li style={margins}>
-          <h4>Notification Branded</h4>
-          <Thorium.Notification className="notification--branded">
+          <h4><strong>Branded:</strong> variant="branded"</h4>
+          <Thorium.Notification variant="branded">
             <h4>.notification--branded</h4>
           </Thorium.Notification>
         </li>
         <li style={margins}>
-          <h4>Notification Success</h4>
-          <Thorium.Notification className="notification--success">
+          <h4><strong>Success:</strong> variant="success"</h4>
+          <Thorium.Notification variant="success">
             <h4>.notification--success</h4>
           </Thorium.Notification>
         </li>
         <li style={margins}>
-          <h4>Notification Error</h4>
-          <Thorium.Notification className="notification--error">
+          <h4><strong>Error:</strong> variant="error"</h4>
+          <Thorium.Notification variant="error">
             <h4>.notification--error</h4>
           </Thorium.Notification>
         </li>
         <li style={margins}>
-          <h4>Notification Instructional - same as default styling</h4>
-          <Thorium.Notification className="notification--instructional">
-            <h4>.notification--instructional</h4>
+          <h4><strong>Instructional:</strong> variant="instructional"</h4>
+          <Thorium.Notification variant="instructional">
+            <h4>.notification--instructional <small>Same as default styling</small></h4>
           </Thorium.Notification>
         </li>
       </ul>

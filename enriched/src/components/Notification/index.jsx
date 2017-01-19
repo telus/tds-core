@@ -1,8 +1,12 @@
 import React, { PropTypes } from 'react';
 
 function Notification(props) {
-  const { className, ...extraProps } = props;
+  const { className, variant, ...extraProps } = props;
   const classes = ['notification', className];
+
+  if( variant ){
+    classes.push(`notification--${variant}`);
+  }
 
   return (
     <div className={ classes.filter(c => c).join(' ') } { ...extraProps }>
@@ -15,6 +19,7 @@ function Notification(props) {
 
 Notification.propTypes = {
   className: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 export default Notification;
