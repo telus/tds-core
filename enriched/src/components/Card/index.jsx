@@ -1,22 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 import cx from 'classnames';
 
-if (process.env.BROWSER) {
-  require('./card.scss');
+if ( process.env.BROWSER ) {
+  require('./Card.scss');
 }
 
-class Card extends Component {
-  render() {
-    const { children, className, ...restProps } = this.props;
-    const cls = cx('card', className);
+const Card = (props) => {
+  const { children, className, ...restProps } = props;
+  const cls = cx('card', className);
 
-    return (
-      <div className={cls} {...restProps}>
-        {children}
-      </div>
-    );
-  }
-}
+  return (
+    <div className={cls} {...restProps}>
+      {children}
+    </div>
+  );
+};
 
 Card.propTypes = {
   children: React.PropTypes.node,
