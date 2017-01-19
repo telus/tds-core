@@ -33,6 +33,8 @@ String cmdSetupWorkspace = '''
   npm install \${WORKSPACE}/enriched
   npm install
   npm rebuild node-sass
+  cd \${WORKSPACE}
+  npm install
 '''.stripIndent().trim()
 
 createJenkinsJob(
