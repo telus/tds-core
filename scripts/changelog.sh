@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 ###############################################################################
 # Script to automatically construct a changelog from Git commit messages and

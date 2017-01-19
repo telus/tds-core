@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 CHANGELOG_FILE="CHANGELOG.md"
 CHANGELOG_PAGE="docs/src/html/1-About/4-changelog.md"
