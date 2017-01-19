@@ -148,7 +148,7 @@ createJenkinsJob(
         message("Releasing v\$THORIUM_RELEASE_VERSION")
         create()
       }
-      branch('origin', "release/v\$THORIUM_RELEASE_VERSION")
+      branch('origin', "master")
     }
   }
 }
