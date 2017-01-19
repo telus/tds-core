@@ -6,7 +6,9 @@ function Notification(props) {
 
   return (
     <div className={ classes.filter(c => c).join(' ') } { ...extraProps }>
-      { props.children }
+      <div className="notification__content">
+        { props.children }
+      </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@
 
 $color-green: #248700;
 $color-green-darker: #177a00;
-$color-green-panel: rgba(35, 135, 0, .05);
+$color-green-panel: #F4F9F2;
 $color-grey-light: #c4c4c5;
 $color-grey-medium: #6a6e74;
 $color-grey: #54595f;
@@ -14,6 +14,7 @@ $color-grey-dark: #2a2c2e;
 $color-grey-panel: #f7f7f8;
 $color-purple: #4b286d;
 $color-purple-light: #7841b0;
+$color-purple-panel: #F2EFF4;
 $color-red: #c12335;
 $color-red-panel: rgba(193, 34, 52, .05);
 $color-white: #fff;
@@ -37,6 +38,8 @@ $color-icon-secondary-hover: $color-green;
 $color-icon-disabled: $color-grey;
 $color-icon-disabled-hover: #6a6e74;
 $color-icon-error: $color-red;
+
+// Background colours
 
 //
 // Typography
