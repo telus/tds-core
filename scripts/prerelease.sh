@@ -42,7 +42,7 @@ npm version --no-git-tag-version $VERSION_NUM
 
 cd ..
 npm run editjson -- -i enriched/package.json process \
-  "data.peerDependencies['telus-thorium-core']=\"^${VERSION_NUM}\"; data.depDependencies['telus-thorium-core']=\"^${VERSION_NUM}\"; data;" \
+  "data.peerDependencies['telus-thorium-core']=\"^${VERSION_NUM}\"; data.devDependencies['telus-thorium-core']=\"^${VERSION_NUM}\"; data;" \
   -o enriched/package.json --outfmt stringify
 
 npm run editjson -- -i docs/package.json process \
