@@ -1,9 +1,27 @@
 ---\ntitle: Changelog\ntemplate: doc.jade\n---\n
-## 0.7.1\n
-\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/0.7.1\n
+## v0.8.0
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.8.0
+
+- Bug fixes for version bumps and changelog formatting during automated deployment
+- Fix misspelled card scss import (#159)
+- Publish the Icon component documentation (#160)
+## v0.7.1
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.1
+
 - Update dev & peer dependencies to TDS 0.7 (#157)
-## v0.7.0\n
-\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.0\n
+- Changelog and version bump for v0.7.1
+## v0.7.0
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.0
+
 - Added react import line to grid docs.
 - Removed unused column div at the bottom of docs.
 - Fixed a typo in an example.
@@ -41,8 +59,12 @@
 - End-to-end release automation with Jenkins [[BCM-213](https://telusdigital.atlassian.net/browse/BCM-213)] (#153)
 - Use bash instead of sh for shell scripts (#154)
 - Changelog and version bump for v0.7.0
-## v0.6.0\n
-\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/v0.6.0\n
+## v0.6.0
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.6.0
+
 - Fixing the sketch file download
 - Fixing webpack URL on consumption page
 - Fixing enriched npm example
@@ -79,8 +101,12 @@
 - [[DSR-195](https://telusdigital.atlassian.net/browse/DSR-195)] Automated release to CDN (#119)
 - Releasing/v0.6.0 (#122)
 - Updating inter-module dependencies
-## v0.5.0\n
-\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/v0.5.0\n
+## v0.5.0
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.5.0
+
 - Renaming icons to reflect their form. (#60)
 - Alpha 0.4.1 Update (#61)
 - [[DSR-115](https://telusdigital.atlassian.net/browse/DSR-115)] Optimizing Core Icons web fonts for Windows (#62)
@@ -110,8 +136,12 @@
 - [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Isomorphic React build pipeline (#88)
 - Alpha 0.5.0 Update (#85)
 - Updating version number and changelog for v0.5.0 (#89)
-## v0.4.0\n
-\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/v0.4.0\n
+## v0.4.0
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.4.0
+
 - Updating version & changelog for v0.3.1 (#38)
 - Updating consumption page for v0.3.1 (#39)
 - Alpha 0.3 Update (#40)
@@ -133,12 +163,20 @@
 - Restoring the header to the examples pages (#56)
 - Alpha 0.4.0 Update (#57)
 - Releasing v0.4.0 (#58)
-## v0.3.1\n
-\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.1\n
+## v0.3.1
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.1
+
 - Updating version & changelog for v0.3.1 (#38)
 - Updating consumption page for v0.3.1 (#39)
-## v0.3.0\n
-\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.0\n
+## v0.3.0
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.0
+
 - Sketch file updates (#20)
 - [[DSR-20](https://telusdigital.atlassian.net/browse/DSR-20)] Order nav links consistently (#21)
 - [[DSR-39](https://telusdigital.atlassian.net/browse/DSR-39)] Text fields & labels (#22)
@@ -156,8 +194,12 @@
 - Task: fixing checkbox example indentation (#34)
 - Task: adding a feature switch to Form Hints (#35)
 - Updating changelog & version for 0.3.0 (#36)
-## v0.2.1\n
-\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/v0.2.1\n
+## v0.2.1
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.2.1
+
 - Updating to latest v0.1 Sketch file (#2)
 - [[DSR-14](https://telusdigital.atlassian.net/browse/DSR-14)] Migrate documentation site scaffolding (#3)
 - Fixing dist directory error on Jenkins
