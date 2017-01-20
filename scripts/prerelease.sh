@@ -27,7 +27,7 @@ done
 #
 echo "" > $CHANGELOG_FILE
 echo "---\ntitle: Changelog\ntemplate: doc.jade\n---\n" > $CHANGELOG_PAGE
-scripts/changelog.sh $VERSION_NUM | tee -a $CHANGELOG_FILE $CHANGELOG_PAGE
+scripts/changelog.sh $VERSION_TAG | tee -a $CHANGELOG_FILE $CHANGELOG_PAGE
 
 #
 # Bump the version in all package.json files.
@@ -39,3 +39,12 @@ cd ../docs
 npm version --no-git-tag-version $VERSION_NUM
 cd ../enriched
 npm version --no-git-tag-version $VERSION_NUM
+
+cd ..
+npm run editjson -- -i enriched/package.json process \
+  "data.peerDependencies['telus-thorium-core']=\"^${VERSION_NUM}\"; data.devDependencies['telus-thorium-core']=\"^${VERSION_NUM}\"; data;" \
+  -o enriched/package.json --outfmt stringify
+
+npm run editjson -- -i docs/package.json process \
+  "data.devDependencies['telus-thorium-core']=\"^${VERSION_NUM}\"; data.devDependencies['telus-thorium-enriched']=\"^${VERSION_NUM}\"; data" \
+  -o docs/package.json --outfmt stringify
