@@ -27,7 +27,7 @@ done
 #
 echo "" > $CHANGELOG_FILE
 echo "---\ntitle: Changelog\ntemplate: doc.jade\n---\n" > $CHANGELOG_PAGE
-scripts/changelog.sh $VERSION_NUM | tee -a $CHANGELOG_FILE $CHANGELOG_PAGE
+scripts/changelog.sh $VERSION_TAG | tee -a $CHANGELOG_FILE $CHANGELOG_PAGE
 
 #
 # Bump the version in all package.json files.
