@@ -2,7 +2,7 @@ import React from 'react';
 import cx from 'classnames';
 
 if ( process.env.BROWSER ) {
-  require('./Card.scss');
+  require('./card.scss');
 }
 
 const Card = (props) => {
