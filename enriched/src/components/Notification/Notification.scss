@@ -1,0 +1,41 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+
+.notification {
+  padding: 22px 45px;
+  background-color: $color-grey-panel;
+  display: table;
+  width: 100%;
+  min-height: 68px;
+
+  > .notification__content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  > .notification__content > *:first-child {
+    margin-top: 0;
+  }
+
+  > .notification__content > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.notification--instructional {
+  background-color: $color-grey-panel;
+}
+
+.notification--branded {
+  background-color: $color-purple-panel;
+}
+
+.notification--success {
+  background-color: $color-green-panel;
+}
+
+.notification--error {
+  background-color: $color-red-panel;
+}
+
