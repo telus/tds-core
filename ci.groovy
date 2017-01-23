@@ -33,6 +33,8 @@ String cmdSetupWorkspace = '''
   npm install \${WORKSPACE}/enriched
   npm install
   npm rebuild node-sass
+  cd \${WORKSPACE}
+  npm install
 '''.stripIndent().trim()
 
 createJenkinsJob(
@@ -133,6 +135,7 @@ createJenkinsJob(
       npm run build
       npm run prerelease -- \${THORIUM_RELEASE_VERSION}
       git commit -am "Changelog and version bump for v\${THORIUM_RELEASE_VERSION}"
+      npm run deploy:cdn
       echo "//registry.npmjs.org/:_authToken=\\\${THORIUM_NPM_TOKEN}" | tee \${WORKSPACE}/core/.npmrc \${WORKSPACE}/enriched/.npmrc
       cd \${WORKSPACE}/core
       npm publish
@@ -148,7 +151,7 @@ createJenkinsJob(
         message("Releasing v\$THORIUM_RELEASE_VERSION")
         create()
       }
-      branch('origin', "release/v\$THORIUM_RELEASE_VERSION")
+      branch('origin', "master")
     }
   }
 }

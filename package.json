@@ -1,6 +1,6 @@
 {
   "name": "telus-thorium-build",
-  "version": "0.6.0",
+  "version": "0.8.0",
   "description": "TELUS Design System",
   "license": "UNLICENSED",
   "scripts": {
@@ -21,7 +21,8 @@
     "prerelease": "scripts/prerelease.sh",
     "setup:links": "cd core && npm link && cd ../enriched && npm link && npm link telus-thorium-core && cd ../docs && npm link telus-thorium-core && npm link telus-thorium-enriched",
     "lint": "cd core && npm run lint && cd ../docs && npm run lint && cd ../enriched && npm run lint",
-    "test": "cd enriched && npm run test"
+    "test": "cd enriched && npm run test",
+    "editjson": "underscore"
   },
   "repository": {
     "type": "git",
@@ -37,7 +38,8 @@
     "log4js": "^1.0.1",
     "mime-types": "^2.1.13",
     "mkdirp": "^0.5.1",
-    "rimraf": "^2.5.4"
+    "rimraf": "^2.5.4",
+    "underscore-cli": "^0.2.19"
   },
   "dependencies": {
     "commander": "^2.9.0"

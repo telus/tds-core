@@ -4,6 +4,10 @@ function Notification(props) {
   const { className, variant, ...extraProps } = props;
   const classes = ['notification', className];
 
+  if (process.env.BROWSER) {
+    require('./Notification.scss');
+  }
+
   if( variant ){
     classes.push(`notification--${variant}`);
   }
@@ -15,7 +19,7 @@ function Notification(props) {
       </div>
     </div>
   );
-};
+}
 
 Notification.propTypes = {
   className: PropTypes.string,
