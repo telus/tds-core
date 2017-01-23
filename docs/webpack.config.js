@@ -40,7 +40,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.scss']
+    extensions: ['', '.js', '.jsx', '.scss'],
+    alias: {
+     'telus-thorium-core': path.resolve(__dirname, '..', 'core'),
+     'telus-thorium-enriched': path.resolve(__dirname, '..', 'enriched', 'src')
+   }
   },
   postcss: () => [autoprefixer],
   sassLoader: {
