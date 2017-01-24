@@ -1,4 +1,11 @@
 ---\ntitle: Changelog\ntemplate: doc.jade\n---\n
+## v0.9.0
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.0
+
+- Notification Component [[BCM-165](https://telusdigital.atlassian.net/browse/BCM-165)] (#156)
 ## v0.8.0
 
 
@@ -8,6 +15,7 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.8.0
 - Bug fixes for version bumps and changelog formatting during automated deployment
 - Fix misspelled card scss import (#159)
 - Publish the Icon component documentation (#160)
+- Changelog and version bump for v0.8.0
 ## v0.7.1
 
 
