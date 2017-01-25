@@ -1,4 +1,11 @@
 
+## v0.9.1
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.1
+
+- feature/BCM-165: Updated styling for Notification (#165)
 ## v0.9.0
 
 
@@ -6,6 +13,7 @@
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.0
 
 - Notification Component [[BCM-165](https://telusdigital.atlassian.net/browse/BCM-165)] (#156)
+- Changelog and version bump for v0.9.0
 ## v0.8.0
 
 
