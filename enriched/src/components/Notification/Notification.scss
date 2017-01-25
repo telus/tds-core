@@ -2,11 +2,15 @@
 @import '~telus-thorium-core/scss/utility/mixins';
 
 .notification {
-  padding: 22px 45px;
+  padding: 22px 37px;
   background-color: $color-grey-panel;
   display: table;
   width: 100%;
   min-height: 68px;
+
+  @include from-breakpoint(small) {
+    padding: 22px 45px;
+  }
 
   > .notification__content {
     display: table-cell;
