@@ -26,7 +26,7 @@ done
 # Update the changelog markdown file and HTML page
 #
 echo "" > $CHANGELOG_FILE
-echo "---\ntitle: Changelog\ntemplate: doc.jade\n---\n" > $CHANGELOG_PAGE
+printf "---\ntitle: Changelog\ntemplate: doc.jade\n---\n\n" > $CHANGELOG_PAGE
 scripts/changelog.sh $VERSION_TAG | tee -a $CHANGELOG_FILE $CHANGELOG_PAGE
 
 #
