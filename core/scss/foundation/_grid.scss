@@ -47,6 +47,7 @@
     @each $viewport, $max-width in $max-widths {
       @include from-breakpoint(#{$viewport}) {
         max-width: $max-width;
+        padding: 0;
       }
     }
   }

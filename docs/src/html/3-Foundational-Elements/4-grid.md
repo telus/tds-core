@@ -272,6 +272,11 @@ The `hidden-*` classes prevents content from displaying at a certain breakpoint.
     </div>
 </div>
 
+### Container limited width modifier
+Containers are 100% wide be default. The .container--limited-width modifier causes the container to have a max width at each breakpoint. See _variables.scss for those pixel values.
+
+
+
 ## Examples
 
 ---
