@@ -36,6 +36,16 @@ const RegularCollapsibleEx = () => {
 export default RegularCollapsibleEx;
 ```
 
+We can controll the collapsible component state.
+<div id="controlledCollapsibleExample"></div>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.ControlledCollapsibleExample />,
+    document.getElementById('controlledCollapsibleExample')
+  );
+</script>
+
+
 ## Accordion
 
 ---

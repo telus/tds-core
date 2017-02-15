@@ -9,6 +9,14 @@ class Group extends Component {
     this.state = { currentActiveKeys: activeKeys };
   }
 
+  componentWillReceiveProps(nextprops) {
+    if (JSON.stringify(nextprops.activeKeys.sort()) !== JSON.stringify(this.props.activeKeys.sort())) {
+      this.setState({
+        currentActiveKeys: nextprops.activeKeys
+      });
+    }
+  }
+
   onPanelClick(panelKey) {
     return () => {
       let activeKeys = this.state.currentActiveKeys;
