@@ -1,4 +1,13 @@
----\ntitle: Changelog\ntemplate: doc.jade\n---\n
+## v0.9.2
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.2
+
+- Fix inconsistent newlines in the changelog (#167)
+- Bug fix for collapsible pannel not receiving props
+- update doc
+- [[DSR-203](https://telusdigital.atlassian.net/browse/DSR-203)] Adding opt-in max-width to responsive grid (#145)
 ## v0.9.1
 
 
@@ -6,6 +15,7 @@
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.1
 
 - feature/BCM-165: Updated styling for Notification (#165)
+- Changelog and version bump for v0.9.1
 ## v0.9.0
 
 
