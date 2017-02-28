@@ -1,4 +1,11 @@
 
+## v0.9.3
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.3
+
+
 ## v0.9.2
 
 
@@ -9,6 +16,7 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.2
 - Bug fix for collapsible pannel not receiving props
 - update doc
 - [[DSR-203](https://telusdigital.atlassian.net/browse/DSR-203)] Adding opt-in max-width to responsive grid (#145)
+- Changelog and version bump for v0.9.2
 ## v0.9.1
 
 
