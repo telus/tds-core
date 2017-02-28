@@ -16,14 +16,15 @@ class Panel extends Component {
     const collapsePanelContent = classNames('collapsible-panel__content', {
       'collapsible-panel__content--visible': isActive
     });
-    const collapsePanelIconClassName = classNames('collapsible-panel__icon', {
-      'collapsible-panel__icon--expanded': isActive,
-      'collapsible-panel__icon--collapsed': !isActive
-    });
 
     const collapsePaneLabelClassName = classNames('collapsible-panel__label', {
       'collapsible-panel__label--expanded': isActive,
       'collapsible-panel__label--collapsed': !isActive
+    });
+
+    const iconClassName = classNames('icon', {
+      'icon-core-minus': isActive,
+      'icon-core-plus': !isActive
     });
 
     return (
@@ -31,8 +32,8 @@ class Panel extends Component {
         <span aria-live="polite" className="accessible-hide">{isActive ? 'expanded' : 'collapsed'}</span>
         <button onClick={onPanelClick} aria-expanded={isActive ? 'true' : 'false'} className={collapsePaneLabelClassName}>
           <span className="collapsible-panel__header">{ header }</span>
-          <span className={collapsePanelIconClassName}>
-            <i className="icon icon-core-times" />
+          <span className="collapsible-panel__icon">
+            <i className={iconClassName} />
           </span>
         </button>
         <div className={collapsePanelContent}>

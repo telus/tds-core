@@ -9,6 +9,8 @@
     border-top: 1px solid #d2d3d5;
     border-radius: 0;
     display: block;
+    font-weight: 400;
+    font-size: 19px;
     margin: 0;
     outline: 0;
     padding: 20px 0;
@@ -19,13 +21,13 @@
     transition: all 0.3s ease-in;
 
     .icon{
-      color: #d2d3d5;
+      color: $color-green;
     }
 
     @include alt-state {
       border-top: 1px solid $color-grey-dark;
       .icon {
-        color: $color-grey;
+        color: $color-green;
       }
       &::before {
         background: $color-grey-dark;
@@ -85,14 +87,14 @@
     transition: all .5s;
     width: 18px;
     margin-top: -2px;
-    transform-origin: 40% 50%;
+    //transform-origin: 40% 50%;
 
     &--expanded {
-      transform: rotate(-90deg);
+      //transform: rotate(-90deg);
     }
 
     &--collapsed {
-      transform: rotate(45deg);
+      //transform: rotate(45deg);
     }
   }
 
