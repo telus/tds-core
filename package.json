@@ -1,6 +1,6 @@
 {
   "name": "telus-thorium-build",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "TELUS Design System",
   "license": "UNLICENSED",
   "scripts": {
