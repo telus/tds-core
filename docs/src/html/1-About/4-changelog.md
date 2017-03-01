@@ -1,10 +1,20 @@
+## v0.9.4
+
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.4
+
+- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+- update buttons color/styles
+- adjust disabled hover styles
+- fix auto-width on SelectorCounter component
 ## v0.9.3
 
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.3
 
-
+- Changelog and version bump for v0.9.3
 ## v0.9.2
 
 
