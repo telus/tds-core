@@ -59,45 +59,47 @@ a.button {
   }
 
   &-primary {
-    background-color: $color-purple;
+    background-color: $color-purple-light;
     color: $color-white;
 
     &:hover {
-      background-color: $color-purple-light;
-      color: $color-white;
+      background-color: $color-white;
+      color: $color-purple-light;
+      border: solid 1px $color-purple-light;
     }
 
     &--outlined {
       background-color: $color-white;
-      color: $color-purple;
-      border: solid 1px $color-purple;
+      color: $color-purple-light;
+      border: solid 1px $color-purple-light;
 
       &:hover {
         background-color: $color-white;
-        color: $color-purple-light;
-        border: solid 1px $color-purple-light;
+        color: $color-purple;
+        border: solid 1px $color-purple;
       }
     }
   }
 
   &-secondary {
-    background-color: $color-green-darker;
+    background-color: $color-green;
     color: $color-white;
 
     &:hover {
-      background-color: $color-green;
-      color: $color-white;
+      background-color: $color-white;
+      color: $color-green;
+      border: solid 1px $color-green;
     }
 
     &--outlined {
       background-color: $color-white;
-      border: solid 1px $color-green-darker;
-      color: $color-green-darker;
+      border: solid 1px $color-green;
+      color: $color-green;
 
       &:hover {
         background-color: $color-white;
-        color: $color-green;
-        border: solid 1px $color-green;
+        color: $color-green-darker;
+        border: solid 1px $color-green-darker;
       }
     }
   }
