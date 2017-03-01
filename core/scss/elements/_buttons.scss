@@ -126,6 +126,10 @@ a.button {
   &[disabled] {
     background-color: #efefef;
     color: $color-grey-dark;
+
+    &:hover {
+      border-width: 0;
+    }
   }
 
   &-inverted {
