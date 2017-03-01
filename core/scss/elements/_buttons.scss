@@ -29,7 +29,6 @@ a.button {
   transition: background .2s;
   width: 100%;
   min-height: 60px;
-  min-width: 190px;
 
   @include from-breakpoint(medium) {
     display: inline-block;
