@@ -1,8 +1,17 @@
+
 # Thorium
 
 Thorium, the TELUS Design system is a set of living guidelines that communicates our brand promise through our digital’ experiences. It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for digital design guidelines, code patterns and UI elements.
 
 *Thorium usage, documentation & examples:* http://cdn.telus-thorium-doc-production.s3-website-us-east-1.amazonaws.com/
+
+
+## Table of Contents
+
+* [Contributor Quick Start](#contributor-quick-start)
+* [Building and Maintaining the Icon Font](#building-and-maintaining-the-icon-font)
+* [## Deploying a release](#deploying-a-release)
+
 
 ## Contributor Quick Start
 
