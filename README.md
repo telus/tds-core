@@ -10,7 +10,7 @@ Thorium, the TELUS Design system is a set of living guidelines that communicates
 
 * [Contributor Quick Start](#contributor-quick-start)
 * [Building and Maintaining the Icon Font](#building-and-maintaining-the-icon-font)
-* [## Deploying a release](#deploying-a-release)
+* [Deploying a release](#deploying-a-release)
 
 
 ## Contributor Quick Start
