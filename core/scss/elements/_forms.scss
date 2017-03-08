@@ -305,7 +305,7 @@ $radio-checked-stroke-size: 6px;
   &:active {
     & + .choice__text {
       &::before {
-        border-size: $radio-checked-stroke-size;
+        border-width: $radio-checked-stroke-size;
       }
     }
   }
