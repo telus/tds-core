@@ -41,14 +41,11 @@
   padding: 0 $gutter / 2;
 
   // Containers are 100% wide be default. The --limited-width modifier causes
-  // the container to have a max width at each breakpoint. See _variables.scss
-  // for those pixel values.
+  // the container to have a max width. See _variables.scss
+  // for the pixel value.
   &--limited-width {
-    @each $viewport, $max-width in $max-widths {
-      @include from-breakpoint(#{$viewport}) {
-        max-width: $max-width;
-        padding: 0;
-      }
+    @include from-breakpoint(xl) {
+      max-width: $container-max-width;
     }
   }
 }
