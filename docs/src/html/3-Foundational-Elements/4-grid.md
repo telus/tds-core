@@ -25,17 +25,17 @@ Breakpoints are the points at which your site's layout and content will respond 
 
 Thorium will have five viewports over four breakpoints:
 
-| Viewport name | Lower boundary | Upper boundary | Max width &ast; |
-|:---|:---|:---|:---|
-| xs | 0 | 543 | auto |
-| small | 544 | 767 | 540 |
-| medium | 768 | 991 | 720 |
-| large | 992 | 1199 | 960 |
-| xl | 1200 | *none* | 1140 |
+| Viewport name | Lower boundary | Upper boundary |
+|:---|:---|:---|
+| xs | 0 | 543 |
+| small | 544 | 767 |
+| medium | 768 | 991 |
+| large | 992 | 1199 |
+| xl | 1200 | *none* |
 
 ---
 
-&ast; Max width is an **opt-in** feature. Containers are 100% wide by default at all breakpoints. Give a `.container` block the `.container--limited-width` modifier to opt into the max widths from the table above.
+&ast; Max width is an **opt-in** feature. Containers are 100% wide by default at all breakpoints. Give a `.container` block the `.container--limited-width` modifier to assign a maximum width of 1200px to center content on large screens.
 
 ## Responsiveness
 
