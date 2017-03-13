@@ -92,13 +92,7 @@ $breakpoints: (
   xl: (1200px, null)
 );
 
-$max-widths: (
-  xs: auto,
-  small: 540px,
-  medium: 720px,
-  large: 960px,
-  xl: 1140px
-);
+$container-max-width: 1200px;
 
 // 12 columns all the way down.
 $columns: (
