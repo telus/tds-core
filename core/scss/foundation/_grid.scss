@@ -47,7 +47,11 @@
     @each $viewport, $max-width in $max-widths {
       @include from-breakpoint(#{$viewport}) {
         max-width: $max-width;
-        padding: 0;
+        @if $viewport == "xs" {
+          padding: 0 15px;
+        } @else {
+          padding: 0;
+        }
       }
     }
   }
