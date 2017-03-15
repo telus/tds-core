@@ -26,9 +26,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>Grape</strong>
 	    </p>
+      <p>
+    $color-purple
+      </p>
 	    <p>
 		#4B286D
-		<br>
+		  </p>
+      <p>
 		Usage: Inactive primary buttons and links, H1/H2 text
 	    </p>
 	</div>
@@ -37,8 +41,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>Japanese Laurel</strong>
 	    </p>
+      <p>
+    $color-green-darker
+      </p>
 	    <p>
-		#177A00<br>
+		#177A00
+      </p>
+      <p>
 		Usage: Inactive secondary buttons and links
 	    </p>
 	</div>
@@ -47,9 +56,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>Shuttle Gray</strong>
 	    </p>
+      <p>
+    $color-grey
+      </p>
 	    <p>
 		#54595F
-		<br>
+      </p>
+		  <p>
 		Usage: Inactive tertiary links
 	    </p>
 	</div>
@@ -63,9 +76,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>Shark</strong>
 	    </p>
+      <p>
+    $color-grey-dark
+      </p>
 	    <p>
 		#2A2C2E
-		<br>
+		  </p>
+      <p>
 		Usage: Subheads and paragraph text
 	    </p>
 	</div>
@@ -74,8 +91,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>White</strong>
 	    </p>
+      <p>
+    $color-white
+      </p>
 	    <p>
-		#FFFFFF<br>
+		#FFFFFF
+      </p>
+      <p>
 		Usage: Card/Page backgrounds, inverted text and links
 	    </p>
 	</div>
@@ -94,9 +116,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>Royal Purple</strong>
 	    </p>
+      <p>
+    $color-purple-light
+      </p>
 	    <p>
 		#6E3BA1
-		<br>
+		  </p>
+      <p>
 		Usage: Primary button and link hover
 	    </p>
 	</div>
@@ -105,8 +131,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>Forest Green</strong>
 	    </p>
+      <p>
+    $color-green
+      </p>
 	    <p>
-		#248700<br>
+		#248700
+      </p>
+      <p>
 		Usage: Secondary button and link hover
 	    </p>
 	</div>
@@ -115,9 +146,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>Raven</strong>
 	    </p>
+      <p>
+    $color-grey-medium
+      </p>
 	    <p>
 		#6A6E74
-		<br>
+      </p>
+      <p>
 		Usage: Tertiary link hover and disabled text
 	    </p>
 	</div>
@@ -129,8 +164,12 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     <strong>Cardinal</strong>
       </p>
       <p>
+    $color-red
+      </p>
+      <p>
     #C12335
-    <br>
+      </p>
+      <p>
     Usage: Alert text and icons
       </p>
   </div>
@@ -149,9 +188,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>White Lilac</strong>
 	    </p>
+      <p>
+    $color-purple-panel
+      </p>
 	    <p>
 		#F2EFF4
-		<br>
+      </p>
+      <p>
 		Usage: Branded background highlight
 	    </p>
 	</div>
@@ -160,8 +203,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>Panache</strong>
 	    </p>
+      <p>
+    $color-green-panel
+      </p>
 	    <p>
-		#F4F9F2<br>
+		#F4F9F2
+      </p>
+      <p>
 		Usage: Success helper backgrounds
 	    </p>
 	</div>
@@ -170,9 +218,13 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    <p>
 		<strong>Gainsboro</strong>
 	    </p>
+      <p>
+    $color-grey-dividers
+      </p>
 	    <p>
 		#D8D8D8
-		<br>
+      </p>
+      <p>
 		Usage: Vertical and horizontal rules and wavy content dividers
 	    </p>
 	</div>
@@ -184,8 +236,12 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     <strong>Lavender Blush</strong>
       </p>
       <p>
+    $color-red-panel
+      </p>
+      <p>
     #FFF6F8
-    <br>
+      </p>
+      <p>
     Usage: Alert notification
       </p>
   </div>
@@ -195,8 +251,12 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     <strong>Athens Grey</strong>
       </p>
       <p>
+    $color-grey-panel
+      </p>
+      <p>
     #F7F7F8
-    <br>
+      </p>
+      <p>
     Usage: Helper and disabled state backgrounds
       </p>
   </div>
