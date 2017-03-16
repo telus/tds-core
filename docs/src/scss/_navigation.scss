@@ -1,14 +1,7 @@
 // Left-hand navigation menu styles
-
 .navigation {
-  flex: 0 0 200px;
-  min-width: 200px;
-  height: 100%;
-  padding: 2em;
-  padding-bottom: 1em;
-  z-index: 1;
-  background: #fff;
   border-right: 1px solid #eee;
+  padding: 40px;
 
   .container {
     padding: 0;
@@ -50,13 +43,5 @@
 
   li {
     margin: 0;
-  }
-}
-
-.menu-active {
-  article {
-    opacity: 1;
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
   }
 }

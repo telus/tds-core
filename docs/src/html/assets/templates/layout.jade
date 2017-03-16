@@ -17,19 +17,21 @@ html(lang='en')
 
   body(class=bodyclass)
     header.docs-header
-      .container.docs-container.docs-header__container
+      .container.container--limited-width.docs-header__container
         button.button.docs-header__toggle
           i.icon.icon-core-hamburger.docs-header__icon
             span.accessible-hide Toggle Menu
         a.docs-header__logo(href="/")
           img(src="/assets/images/logo.png" alt="")
 
-    main.container.docs-container
-      nav.navigation
-        include nav.jade
+    main.container.container--limited-width
+      div.grid-row
+        nav.navigation.medium-12.large-3
+          include nav.jade
 
-      block content
-        h2 Welcome to Thorium!
+        div.medium-12.large-9
+          block content
+            h2 Welcome to Thoriummm!
 
     script(src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.min.js')
@@ -40,13 +42,28 @@ html(lang='en')
       var toggle = document.querySelector('button.docs-header__toggle');
       var body = document.body;
       var resizeEventName = ('ontouchstart' in window) ? 'orientationchange' : 'resize';
+      var navigation = document.querySelector('nav.navigation');
+
       toggle.addEventListener('click', function (e) {
-        body.classList.toggle('menu-active');
-        body.classList.add('is-animating');
-        setTimeout(function () {
-          body.classList.remove('is-animating')
-        }, 300);
+
+          if (navigation.style.display === 'none') {
+                 navigation.style.display = 'block';
+             } else {
+                 navigation.style.display = 'none';
+             }
+
       });
-      window.addEventListener(resizeEventName, function (e) {
-        body.classList.remove('menu-active')
+
+      window.addEventListener('resize', function(){
+        if(window.innerWidth > 991){
+          navigation.style.display = 'block';
+        } else {
+          navigation.style.display = 'none';
+        }
+      }, true);
+
+      window.addEventListener('load', function(){
+        if(window.innerWidth < 992){
+          navigation.style.display = 'none';
+        }
       });
