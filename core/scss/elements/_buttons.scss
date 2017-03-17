@@ -64,18 +64,17 @@ a.button {
     &:hover {
       background-color: $color-white;
       color: $color-purple-light;
-      border: solid 1px $color-purple-light;
+      box-shadow: 0 0 0 1px;
     }
 
     &--outlined {
       background-color: $color-white;
       color: $color-purple-light;
-      border: solid 1px $color-purple-light;
+      box-shadow: 0 0 0 1px;
 
       &:hover {
         background-color: $color-white;
         color: $color-purple;
-        border: solid 1px $color-purple;
       }
     }
   }
@@ -87,18 +86,17 @@ a.button {
     &:hover {
       background-color: $color-white;
       color: $color-green;
-      border: solid 1px $color-green;
+      box-shadow: 0 0 0 1px;
     }
 
     &--outlined {
       background-color: $color-white;
-      border: solid 1px $color-green;
+      box-shadow: 0 0 0 1px;
       color: $color-green;
 
       &:hover {
         background-color: $color-white;
         color: $color-green-darker;
-        border: solid 1px $color-green-darker;
       }
     }
   }
