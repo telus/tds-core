@@ -6,6 +6,10 @@ each category in toc
       span= category.title
       ul
         each child in category.children
-          - var classes = (page.title === child.title) ? 'active subsection' : 'subsection';
-          li(class=classes)
-            a(href="#{child.url}") #{child.title}
+          - var classes = (page.title === child.title) ? 'active' : '';
+          if child.title == "Untitled"
+            li(class=classes)
+              a(href="#{child.url}") Changelog
+          else
+            li(class=classes)
+              a(href="#{child.url}") #{child.title}

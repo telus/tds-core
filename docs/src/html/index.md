@@ -1,5 +1,5 @@
 ---
-title: Thorium
+title: Telus Design System
 template: doc.jade
 ---
 
