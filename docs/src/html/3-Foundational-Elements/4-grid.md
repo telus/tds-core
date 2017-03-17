@@ -35,7 +35,7 @@ Thorium will have five viewports over four breakpoints:
 
 ---
 
-&ast; Max width is an **opt-in** feature. Containers are 100% wide by default at all breakpoints. Give a `.container` block the `.container--limited-width` modifier to opt into the max widths from the table above.
+Containers are 100% wide by default at all breakpoints. Give a `.container` block the `.container--limited-width` modifier to opt into the max widths from the table above.
 
 ## Responsiveness
 
@@ -43,17 +43,11 @@ Thorium will have five viewports over four breakpoints:
 
 Responsiveness should be considered when creating layouts or elements. The column grid is flexible enough for variation while ensuring consistency across layouts. For optimal user experience, layout design should adapt and be tested against the breakpoint system prior to, during, and after any development.
 
-## Fluidity
-
----
-
-The grid will be Fluid instead of Fixed. This means that the majority of the components inside have percentage widths, and thus adjust to the user’s screen resolution.
-
 ## Columns
 
 ---
 
-Thorium uses 12 columns for each breakpoint. This creates visual consistency between pages on various display sizes while allowing for design flexibility within a large variety of page templates.
+TDS uses 12 columns for each breakpoint. This creates visual consistency between pages on various display sizes while allowing for design flexibility within a large variety of page templates.
 
 The building blocks of a responsive grid layout are containers, rows, and columns.  A container wraps an entire grid layout. It applies left and right padding by default, and could also be styled with a maximum width. Rows surround hoziontal groups of columns, and each column is meant to contain your content.
 
