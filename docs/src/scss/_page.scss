@@ -49,6 +49,12 @@
   &.gradient {
     background: #fff;
   }
+
+  &.changelog {
+    h2 {
+      padding-top: 20px;
+    }
+  }
 }
 
 pre + .subhead {

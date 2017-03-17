@@ -1,3 +1,8 @@
+---
+title: Changelog
+template: changelog.jade
+---
+
 ## v0.9.5
 
 
