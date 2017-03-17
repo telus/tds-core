@@ -5,6 +5,7 @@
   @include from-breakpoint(large) {
     background-color: #fff;
     border-right: 1px solid #eee;
+    display: none;
   }
 
   .container {

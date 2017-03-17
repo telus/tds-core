@@ -1,5 +1,5 @@
 ---
-title: Telus Design System
+title: TELUS Design System
 template: doc.jade
 ---
 
