@@ -19,7 +19,7 @@ Review the Components section, to familiarize yourself with the existing compone
 
 **Step 3.**
 
-Download [thorium.sketch](/assets/downloads/thorium.sketch) and fonts.
+Download [thorium.sketch](/assets/downloads/thorium.sketch) and [fonts](/assets/downloads/fonts-for-sketch.zip).
 
 **Step 4.**
 
