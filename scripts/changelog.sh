@@ -34,7 +34,7 @@
 # Param 2: Ending ref
 # Param 3: Entry version
 changelog_entry () {
-  printf "## ${3}\n\n"
+  printf "\n\n\n## ${3}\n"
   # Format the release date like 01 January 2017
   git log -1 --pretty=format:"%ad" --date=format:"%d %B %Y" ${2}
   printf "\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/${3}\n\n"
@@ -65,4 +65,3 @@ done
 
 # Generate an entry for the changes from the initial commit to the first tag.
 changelog_entry "10057350760898cb81fdc4c2019832077e2fc7af" $CURR_REF $CURR_VER)
-
