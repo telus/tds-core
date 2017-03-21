@@ -1,5 +1,15 @@
 # Upgrading Guide
 
+## Upgrading to v0.10.x
+
+* added `.container--limited-width` to set a max-width for our adaptive grid when on small and above viewpoints
+* updated hover state on buttons (white background with coloured border)
+* remove min-height:60 in buttons so they are the same height as form fields
+* body tag now has white background
+* doc: added zip file with fonts used on the sketch file
+* doc: updated colours to match what's on the sketch file
+
+
 ## Upgrading to v0.6.x
 
 The SelectorCounter component supports 4 new props:
