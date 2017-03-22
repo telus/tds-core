@@ -8,6 +8,7 @@
  * files in the same directory.
  *
  * @requires ttfautohint v1.5+
+ * https://www.freetype.org/ttfautohint/#download
  */
 
 var Fontmin = require('fontmin');
