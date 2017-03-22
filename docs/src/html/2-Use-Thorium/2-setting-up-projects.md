@@ -2,41 +2,47 @@
 title: Setting Up Projects
 template: doc.jade
 ---
+## ToC
+
+### Designers
+* [For designers](#for-designers)
+* [thorium.sketch](#thorium.sketch)
+* [Design resources](#design-resources)
+
+### Dev
+* [Development process](#development-process)
+* [Working branches](#working-branches)
+* [Working branch naming](#working-branch-naming)
+* [Versioning](#versioning)
+* [Code Review](#code-review)
+* [Tags and releases](#tags-and-releases)
+* [Setup your local environment](#setup-your-local-environment)
+
 
 ## For designers
 
 ---
 
-The thorium.sketch file contains the latest styles, symbols, and artboards.
+The [thorium.sketch](/assets/downloads/thorium.sketch) file contains the latest styles, symbols, and artboards.
 
-**Step 1.**
 
-Explore the Foundations to learn the Thorium design patterns and principles.
-
-**Step 2.**
-
-Review the Components section, to familiarize yourself with the existing components which you can incorporate into your designs.
-
-**Step 3.**
-
-Download [thorium.sketch](/assets/downloads/thorium.sketch) and [fonts](/assets/downloads/fonts-for-sketch.zip).
-
-**Step 4.**
-
-Identify your needs by considering the user and outcome you're designing for—these considerations will help inform scope and the milestones and/or deliverables required.
+* **Step 1**: Explore the Foundations to learn the TDS design patterns and principles.
+* **Step 2**: Review the Components section, to familiarize yourself with the existing components which you can incorporate into your designs.
+* **Step 3**: Download [thorium.sketch](/assets/downloads/thorium.sketch) and [fonts](/assets/downloads/fonts-for-sketch.zip).
+* **Step 4**: Identify your needs by considering the user and outcome you're designing for—these considerations will help inform scope and the milestones and/or deliverables required.
 
 ## thorium.sketch
 
 ---
 
-The thorium.sketch file contains the latest pre-defined styles, symbols, and artboards. Design is encouraged to stay within Thorium.sketch as copying, merging, and cross file consistency can be lost. Elements and component within artboards are stripped of written metrics and measurements as they have been codified and need not be changed.
+The [thorium.sketch](/assets/downloads/thorium.sketch) file contains the latest pre-defined styles, symbols, and artboards. Design is encouraged to stay within [thorium.sketch](/assets/downloads/thorium.sketch) as copying, merging, and cross file consistency can be lost. Elements and component within artboards are stripped of written metrics and measurements as they have been codified and need not be changed.
 
 ## Design resources
 
 ---
 
-- Download [thorium sketch file](/assets/downloads/thorium.sketch)
-- Download thorium fonts
+- Download [TDS sketch file (thorium.sketch)](/assets/downloads/thorium.sketch)
+- Download [TDS fonts](/assets/downloads/fonts-for-sketch.zip)
 
 ## Development process
 
@@ -87,7 +93,7 @@ The most common change types are:
 
 ### Issue ID
 
-The issue id is a JIRA ticket number such as `DSR-1`. This identifies both the project and the individual ticket which is introducing the change. If there's no relevant JIRA ticket, use the project abbreviation such as `DSR`.
+The issue id is a github issue number.
 
 ### Short description
 
@@ -97,17 +103,15 @@ Please use all lowercase characters.
 
 ### Example branch names
 
-* `feature/DSR-1_typography`
-* `task/DSR-112_rearrange-nav-menu`
-* `task/DSR_update-headlines`
-* `bugfix/DSR-25_button-spacing`
-* `bugfix/DSR_subhead-weight`
+* `feature/203_webfont-audit`
+* `task/179_update-documentation`
+* `bugfix/177_focus-state`
 
 ## Versioning
 
 ---
 
-Release numbers adhere to <a href="http://semver.org/" target="_blank">semantic versioning</a>.
+Release numbers adhere to <a href="http://semver.org/" target="blank">semantic versioning</a>.
 
 * A major version increment accompanies backwards-incompatible changes, such as removing a feature or changing an API.
 * The minor version increments when new features are added.
@@ -117,17 +121,17 @@ Release numbers adhere to <a href="http://semver.org/" target="_blank">semantic 
 
 ---
 
-Thorium is a design system that reaches across all TELUS properties. In order to ensure a high level of quality, the change introduced by a pull request&hellip;
+TDS is a design system that reaches across all TELUS properties. In order to ensure a high level of quality, the change introduced by a pull request&hellip;
 
 * must pass all automated code style checks ("linting").
 * must be accompanied by automated tests, wherever applicable.
 * should either be backwards-compatible, or target the appropriate [semantically versioned](#versioning) release.
 
-## Tags &amp; releases
+## Tags and releases
 
 ---
 
-Don't worry about tagging your commits, changing version numers, or creating release branches. Thorium administrators are responsible for these parts of the process. Most of the time, contributing to Thorium means making a change in a working branch and submitting a pull request to master.
+Don't worry about tagging your commits, changing version numbers, or creating release branches. TDS administrators are responsible for these parts of the process. Most of the time, contributing to TDS means making a change in a working branch and submitting a pull request to master.
 
 If you'd like to know more about the release process, you can read about it on the [administration page](/2-Use-Thorium/hold-6-administration.html).
 
