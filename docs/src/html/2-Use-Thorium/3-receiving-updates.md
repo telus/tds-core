@@ -3,21 +3,38 @@ title: Receiving Updates
 template: doc.jade
 ---
 
+## ToC
+
+* [Getting updates](#getting-updates)
+* [Reviewing changes](#reviewing-changes)
+* [Release Process](#release-process)
+* [Getting Design Updates](#getting-design-updates)
+* [How to handle defects](#how-to-handle-defects)
+* [Design and Sketch issues](#design-and-sketch-issues)
+
+
+
 ## Getting updates
 
 ---
 
-Thorium will not automatically add its new releases to your project, and will not trigger new deployments unless you've specially configured your build environment to do so.
-
 ### CDN users
 
-The CDN-hosted Thorium has its complete version number in the path. For example, the first release (version 0.2.0) can be found at:
+The CDN-hosted TDS has its complete version number in the path. For example, version 0.9.5 can be found at:
 
 <p style="text-align: center;">
-`https://cdn.telus.digital/thorium/core/v0.2.0/thorium.min.css`
+`https://cdn.telus.digital/thorium/core/v0.9.5/thorium.min.css`
 </p>
 
 To upgrade, change this URL in your project's `<link>` tag.
+
+If you want to use our latest and greatest release you can include the following stylesheet in your project:
+
+<p style="text-align: center;">
+`https://cdn.telus.digital/thorium/core/v0-latest/thorium.min.css`
+</p>
+
+However, if you are already in production and don't want our releases to break your site, we recommend you use a fixed version until you have time to accommodate the tweaks needed to consume the latest version as per our [Upgrading Guide](https://github.com/telusdigital/telus-thorium-core/blob/master/UPGRADING.md).
 
 ### NPM module users
 
@@ -40,7 +57,7 @@ See the [npm-update documentation on npmjs.com](https://docs.npmjs.com/cli/updat
 
 ---
 
-We use a few different files to document the Thorium repository and its changes. All teams should examine these documents before applying updates.
+We use a few different files to document the TDS repository and its changes. All teams should examine these documents before applying updates.
 
 * [README](https://github.com/telusdigital/telus-thorium-core/blob/master/README.md) file contains the most basic information a developer needs to get up and running. For further instructions, see the “Getting Started” section of the documentation site.
 * [CHANGELOG](https://github.com/telusdigital/telus-thorium-core/blob/master/CHANGELOG.md) file describes what was added/updated/fixed in each version, with a new entry for every release
@@ -49,15 +66,15 @@ We use a few different files to document the Thorium repository and its changes.
 
 Users should actively bump the version in a non-production environment, and ensure that this is fully smoke tested before being deployed.
 
-* If NPM is being used, the version requirement for Thorium can be set to allow automatic patch updating (patches = safe, generally bugfixing changes) while preventing automatic minor and major version updates. This gives the developers easy access to the latest bugfixes, while protecting their project from any breaking changes.
+* If NPM is being used, the version requirement for TDS can be set to allow automatic patch updating (patches = safe, generally bugfixing changes) while preventing automatic minor and major version updates. This gives the developers easy access to the latest bugfixes, while protecting their project from any breaking changes.
 * CDN “latest” settings should only automatically update minor and patch releases
-* If there is a new default, such as a class rename that almost ensures breaking some existing code, this should be considered a major version. It will be socialized prior to deployment (for those committed to automated updates). This should also be documented in the Thorium UPGRADING file.
+* If there is a new default, such as a class rename that almost ensures breaking some existing code, this should be considered a major version. It will be socialized prior to deployment (for those committed to automated updates). This should also be documented in the TDS UPGRADING file.
 
 ## Release Process
 
 ---
 
-* Thorium users must subscribe to the Slack channel and an Email blast, which will be set up to notify users about upcoming major or minor releases
+* TDS users must subscribe to the Slack channel and an Email blast, which will be set up to notify users about upcoming major or minor releases
 * Upon the announcement of a release, users should review change log to understand updates
 * For manual updates:
     * For NPM: Change version number inside your project, and run npm update
@@ -65,14 +82,14 @@ Users should actively bump the version in a non-production environment, and ensu
 * Users should apply updates in a local environment and have developer review the change log for affected code and then conduct a visual smoke test.
 * The outcome squads’ local QA should execute testing. Defects should be logged in local project boards, and be reviewed by Product manager.
 * Project Sponsors may need to be made aware of the changes and accept that visual changes will be happening, depending on business requirements
-* For any issues that must be addressed immediately (and not in the next Thorium update), code overrides can be written locally by developers and logged as a comment on the local defect ticket.
-* Breaking defects should immediately be filed with Thorium [via an issue in Git](https://github.com/telusdigital/telus-thorium-core/issues).
+* For any issues that must be addressed immediately (and not in the next TDS), code overrides can be written locally by developers and logged as a comment on the local defect ticket.
+* Breaking defects should immediately be filed with TDS [via an issue in Git](https://github.com/telusdigital/telus-thorium-core/issues).
 
 ## Getting Design Updates
 
 ---
 
-Designers should [download the latest Master sketch file](/2-Use-Thorium/5-downloads.html) and use Thorium elements to create their page layouts.
+Designers should [download the latest Master sketch file](/2-Use-Thorium/5-downloads.html) and use TDS elements to create their page layouts.
 
 In addition to the downloads page, the Sketch file is also found in the ["designs" folder of the Git repo](https://github.com/telusdigital/telus-thorium-core/tree/master/designs).
 
@@ -80,18 +97,18 @@ In addition to the downloads page, the Sketch file is also found in the ["design
 
 ---
 
-Thorium repairs defects by releasing the bug fixes in new versions.
+TDS repairs defects by releasing the bug fixes in new versions.
 
 * Code that is released is not retracted
 * The bug fix is published in a new “patch” version of Thorium
     * Ex: `v0.3.0` &rarr; `v0.3.1`
-* Consumers are advised to update their Thorium [version constraint](https://github.com/npm/node-semver#ranges) to get the patch release
+* Consumers are advised to update their TDS [version constraint](https://github.com/npm/node-semver#ranges) to get the patch release
 
 If an issue exists, Users must do one of the following NPM/CDN procedures:
 
 ### NPM users
 
-1. Modify their project’s package.json thorium dependency [version number](https://github.com/npm/node-semver#ranges)
+1. Modify their project’s package.json TDS dependency [version number](https://github.com/npm/node-semver#ranges)
 2. Run NPM [install](https://docs.npmjs.com/cli/install)/[update](https://docs.npmjs.com/cli/update)
 3. Deploy and test their project
 
@@ -110,10 +127,10 @@ If an issue exists, Users must do one of the following NPM/CDN procedures:
 Open a [Github issue](https://github.com/telusdigital/telus-thorium-core/issues) describing the defect.
 
 * If the issue is small and could likely be patched, contact the TDS team, so they can quickly patch and broadcast.
-* If the issue is large/cannot a fix cannot be released quickly, the Thorium team will broadcast that there has been a significant issue -- and that all teams should downgrade their version numbers, so their project will avoid the defective release
+* If the issue is large/cannot a fix cannot be released quickly, the TDS team will broadcast that there has been a significant issue -- and that all teams should downgrade their version numbers, so their project will avoid the defective release
 
-## Design/Sketch issues
+## Design and Sketch issues
 
 ---
 
-Issues that are discovered with the master Sketch file should be escalated to the TDS scrum master, who will log a ticket in JIRA and add it to the TDS execution squad backlog. These will be prioritized and addressed according to team capacity.
+Issues that are discovered with the master Sketch file should be escalated to the TDS scrum master, who will log a ticket in Github and add it to the TDS squad backlog. These will be prioritized and addressed according to team capacity.
