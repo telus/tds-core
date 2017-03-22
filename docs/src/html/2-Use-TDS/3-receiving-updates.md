@@ -89,7 +89,7 @@ Users should actively bump the version in a non-production environment, and ensu
 
 ---
 
-Designers should [download the latest Master sketch file](/2-Use-Thorium/5-downloads.html) and use TDS elements to create their page layouts.
+Designers should [download the latest Master sketch file](/2-Use-TDS/5-downloads.html) and use TDS elements to create their page layouts.
 
 In addition to the downloads page, the Sketch file is also found in the ["designs" folder of the Git repo](https://github.com/telusdigital/telus-thorium-core/tree/master/designs).
 

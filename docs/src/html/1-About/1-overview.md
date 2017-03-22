@@ -30,4 +30,4 @@ Design team should be ramped up and comfortable working in Sketch
 2. **CSS integration:** Use `telus-thorium-core` css styles only
 3. **JS integration:** Use `telus-thorium-enriched`, for this you must be familiar with the React framework.
 
-[Deciding between NPM vs CDN](/2-Use-Thorium/1-getting-started.html#choosing-cdn-vs-npm) for CSS and JS integration should be based on your level of functional complexity.
+[Deciding between NPM vs CDN](/2-Use-TDS/1-getting-started.html#choosing-cdn-vs-npm) for CSS and JS integration should be based on your level of functional complexity.

@@ -27,9 +27,9 @@ Welcome to the TELUS Design System. We're glad you're planning on using the TDS 
     * Core:
         * Leverage TDS typestack
         * Leverage React as a Javascript framework
-            1. TDS requires ES6 javascript syntax.
+            * TDS requires ES6 javascript syntax.
         * Leverage SCSS for stylesheets in order to use TDS’s NPM module.
-            1. If not, the CDN version of TDS should be used.
+            * If not, the CDN version of TDS should be used.
     * Enriched:
         * All of core
         * Leverage TDS' testing frameworks (TBD).
@@ -48,7 +48,7 @@ There are two official ways to include the TDS in your TELUS project:
 
 ---
 
-As a front-end framework, Thorium's static CSS and JavaScript assets are compatible with a variety of platforms.
+As a front-end framework, TDS' static CSS and JavaScript assets are compatible with a variety of platforms.
 
 For contributors, and projects that integrate deeply, TDS is powered by these familiar tools:
 

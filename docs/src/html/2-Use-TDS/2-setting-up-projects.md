@@ -59,9 +59,9 @@ The following diagram illustrates the Thorium development process.
 ### Key features
 
 * Contributors make pull requests to `master`
-* Thorium admins merge pull requests to master
-* Thorium admins move new features to the version branch currently under development
-* Thorium admins move bug fixes to affected version branches
+* TDS admins merge pull requests to master
+* TDS admins move new features to the version branch currently under development
+* TDS admins move bug fixes to affected version branches
 * Official releases are cut from version branches
 * `master` contains the bleeding-edge code
 
@@ -69,7 +69,7 @@ The following diagram illustrates the Thorium development process.
 
 ---
 
-Working branches are a temporary place for contributors to change Thorium, and then create a pull request to get those changes back into `master`. Working branches are...
+Working branches are a temporary place for contributors to change TDS, and then create a pull request to get those changes back into `master`. Working branches are...
 
 * **Isolated** -- a place for individual contributors to locally build and test features, fixes, and other code changes.
 * **Temporary** -- code isn't deployed from working branches
@@ -133,8 +133,6 @@ TDS is a design system that reaches across all TELUS properties. In order to ens
 
 Don't worry about tagging your commits, changing version numbers, or creating release branches. TDS administrators are responsible for these parts of the process. Most of the time, contributing to TDS means making a change in a working branch and submitting a pull request to master.
 
-If you'd like to know more about the release process, you can read about it on the [administration page](/2-Use-Thorium/hold-6-administration.html).
-
 ## Setup your local environment
 
 ---
@@ -144,7 +142,7 @@ If you'd like to know more about the release process, you can read about it on t
 * [Node.js](https://nodejs.org/en/) latest stable version (4.6.0 at the time of this writing).
 * [Git](https://git-scm.com/downloads)
 
-### Clone the Thorium repo
+### Clone the TDS repo
 
 ```bash
 git clone git@github.com:telusdigital/telus-thorium-core.git
@@ -165,4 +163,4 @@ npm run build
 npm run start
 ```
 
-Thorium's documentation site will now be available in the browser at [http://localhost:8081](http://localhost:8081) with Webpack Hot Module Reloading enabled.
+TDS' documentation site will now be available in the browser at [http://localhost:8081](http://localhost:8081) with Webpack Hot Module Reloading enabled.

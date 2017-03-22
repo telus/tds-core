@@ -19,4 +19,4 @@ In addition, our team is doing research to learn how teams are using the pre-rel
 ## Get Started with Thorium
 
 * The latest release is [!!THORIUM_VERSION!!](/1-About/4-changelog.html)
-* Check out the [Getting Started page](/2-Use-Thorium/1-getting-started.html) to begin using Thorium
+* Check out the [Getting Started page](/2-Use-TDS/1-getting-started.html) to begin using Thorium

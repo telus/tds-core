@@ -20,7 +20,7 @@ template: doc.jade
 
 ---
 
-Thorium follows [semantic versioning](/2-Use-Thorium/2-setting-up-projects.html#versioning):
+Thorium follows [semantic versioning](/2-Use-TDS/2-setting-up-projects.html#versioning):
 
 * If the new version adds backwards-compatible bug fixes, increment the patch version
     * Ex: change 0.3.0 to 0.3.1
@@ -41,7 +41,7 @@ The version number needs to be changed in each module's package.json file:
 The [npm version command](https://docs.npmjs.com/cli/version) is useful for updating these files.
 
 Parts of the documentation site use the current version number in examples.
-E.g. the [Getting Started](/2-Use-Thorium/1-getting-started.html) page includes it in sample URLs.
+E.g. the [Getting Started](/2-Use-TDS/1-getting-started.html) page includes it in sample URLs.
 This documentation doesn't need to be manually edited - it will automatically pick up the new version number from package.json.
 
 ## Changelog maintenance
