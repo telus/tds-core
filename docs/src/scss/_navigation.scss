@@ -1,12 +1,14 @@
 // Left-hand navigation menu styles
 .navigation {
   background-color: #f7f7f8;
-  display: none;
+
+  &__local-anchor--hidden {
+    visibility: hidden;
+  }
 
   @include from-breakpoint(large) {
     background-color: #fff;
     border-right: 1px solid #eee;
-    display: block;
   }
 
   .container {

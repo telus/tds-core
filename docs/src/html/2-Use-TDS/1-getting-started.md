@@ -22,19 +22,9 @@ Welcome to the TELUS Design System. We're glad you're planning on using the TDS 
 ---
 
 1. Must be comfortable using TDS aesthetic (B4YB).
-2. Created to support new builds (greenfield). The new tech stack may clash with your existing architecture. It requires:
-    * Using TDS build pipeline
-    * Core:
-        * Leverage TDS typestack
-        * Leverage React as a Javascript framework
-            * TDS requires ES6 javascript syntax.
-        * Leverage SCSS for stylesheets in order to use TDS’s NPM module.
-            * If not, the CDN version of TDS should be used.
-    * Enriched:
-        * All of core
-        * Leverage TDS' testing frameworks (TBD).
+2. Created to support new builds (greenfield). The new tech stack may clash with your existing architecture.
 3. Design team should be ramped up and comfortable working in Sketch
-4. Plan for technical debt to contribute site elements and incorporate feedback from the Design Guild/TDS.
+
 
 ## Getting TDS
 ---

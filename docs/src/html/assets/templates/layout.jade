@@ -21,17 +21,17 @@ html(lang='en')
         button.button.docs-header__toggle
           i.icon.icon-core-hamburger.docs-header__icon
             span.accessible-hide Toggle Menu
-        a.docs-header__logo(href="/")
+        a.docs-header__logo(href="#nav-link")
           img(src="/assets/images/logo.png" alt="")
 
     main.container.container--limited-width
       div.grid-row
-        nav.navigation.medium-12.large-3
-          include nav.jade
-
-        div.medium-12.large-9
+        div.large-9.push-large-3
           block content
             h2 Welcome to the TELUS Design System!
+        nav.navigation.large-3.pull-large-9
+          a(id="nav-link" name="nav-link" class="navigation__local-anchor--hidden")
+          include nav.jade
 
     script(src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.min.js')
@@ -47,29 +47,6 @@ html(lang='en')
       var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
       var menuVisible = false;
 
-      toggle.addEventListener(clickHandler, function (e) {
-        if (menuVisible) {
-          navigation.style.display = 'none';
-          menuVisible = false;
-          return;
-        }
-        navigation.style.display = 'block';
-        menuVisible = true;
+      toggle.addEventListener('click', function(){
+        location.href = "#nav-link";
       });
-
-      navigationItem.forEach(function(element) {
-        element.addEventListener(clickHandler, function() {
-          navigation.style.display = 'none';
-          menuVisible = false;
-        });
-      });
-
-      window.addEventListener('resize', function(){
-        if(window.innerWidth > 991){
-          navigation.style.display = 'block';
-          menuVisible = true;
-        } else {
-          navigation.style.display = 'none';
-          menuVisible = false;
-        }
-      }, true);
