@@ -31,8 +31,8 @@ Welcome to the TELUS Design System. We're glad you're planning on using the TDS 
 
 There are two official ways to include the TDS in your TELUS project:
 
-1. Install the `telus-thorium-core` and `telus-thorium-enriched` NPM modules
-2. Load either TDS Core or TDS Enriched from the CDN
+1. Install the [`telus-thorium-core`](https://www.npmjs.com/package/telus-thorium-core) and [`telus-thorium-enriched`](https://www.npmjs.com/package/telus-thorium-enriched) NPM modules
+2. Load either [`thorium-core.min.css`](https://cdn.telus.digital/thorium/core/!!THORIUM_VERSION!!/thorium.min.css) or [`thorium-enriched.min.css`](https://cdn.telus.digital/thorium/enriched/!!THORIUM_VERSION!!/thorium-enriched.min.css) from the CDN
 
 ## The TDS tech stack
 
@@ -85,20 +85,22 @@ cd /path/to/your/project
 npm install --save telus-thorium-core
 ```
 
-<p class="subhead">Import TDS</p>
+#### Import TDS
 
-```scss
+If you are not going to load core from the CSS, import the whole TDS into your `projects.scss`:
+
+```css
 /* File: my-project.scss */
-
-@import "thorium";
+@import "~telus-thorium-core/scss/thorium";
 ```
 
-<p class="subhead">Compile your SCSS</p>
+If you want to use TDS variables, helpers and mixins within your component SCSS:
 
-Make sure the include path(s) include TDS' scss directory.
-
-```bash
-node-sass --include-path node_modules/telus-thorium-core/scss my-project.scss > my-project.css
+```css
+/* File: my-component.scss */
+@import "~telus-thorium-core/scss/settings/variables";
+@import "~telus-thorium-core/scss/utility/helpers";
+@import "~telus-thorium-core/scss/utility/mixins";
 ```
 
 ### Content Delivery Network
