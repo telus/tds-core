@@ -1,11 +1,12 @@
 // Left-hand navigation menu styles
 .navigation {
   background-color: #f7f7f8;
+  display: none;
 
   @include from-breakpoint(large) {
     background-color: #fff;
     border-right: 1px solid #eee;
-    display: none;
+    display: block;
   }
 
   .container {

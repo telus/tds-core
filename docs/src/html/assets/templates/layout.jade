@@ -43,10 +43,11 @@ html(lang='en')
       var body = document.body;
       var resizeEventName = ('ontouchstart' in window) ? 'orientationchange' : 'resize';
       var navigation = document.querySelector('nav.navigation');
-
+      var navigationItem = document.querySelectorAll('nav.navigation li a');
+      var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
       var menuVisible = false;
 
-      toggle.addEventListener('click', function (e) {
+      toggle.addEventListener(clickHandler, function (e) {
         if (menuVisible) {
           navigation.style.display = 'none';
           menuVisible = false;
@@ -55,7 +56,20 @@ html(lang='en')
         navigation.style.display = 'block';
         menuVisible = true;
       });
-      navigation.addEventListener('click', function() {
-        this.style.display = 'none';
-        menuVisible = false;
+
+      navigationItem.forEach(function(element) {
+        element.addEventListener(clickHandler, function() {
+          navigation.style.display = 'none';
+          menuVisible = false;
+        });
       });
+
+      window.addEventListener('resize', function(){
+        if(window.innerWidth > 991){
+          navigation.style.display = 'block';
+          menuVisible = true;
+        } else {
+          navigation.style.display = 'none';
+          menuVisible = false;
+        }
+      }, true);
