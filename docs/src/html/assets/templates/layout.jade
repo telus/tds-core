@@ -44,28 +44,18 @@ html(lang='en')
       var resizeEventName = ('ontouchstart' in window) ? 'orientationchange' : 'resize';
       var navigation = document.querySelector('nav.navigation');
 
+      var menuVisible = false;
+
       toggle.addEventListener('click', function (e) {
-
-          if (navigation.style.display === 'none') {
-                 navigation.style.display = 'block';
-             } else {
-                 navigation.style.display = 'none';
-             }
-
+        if (menuVisible) {
+          navigation.style.display = 'none';
+          menuVisible = false;
+          return;
+        }
+        navigation.style.display = 'block';
+        menuVisible = true;
       });
-
-      window.addEventListener('resize', function(){
-        if(window.innerWidth > 991){
-          navigation.style.display = 'block';
-        } else {
-          navigation.style.display = 'none';
-        }
-      }, true);
-
-      window.addEventListener('load', function(){
-        if(window.innerWidth > 991){
-          navigation.style.display = 'block';
-        } else {
-          navigation.style.display = 'none';
-        }
+      navigation.addEventListener('click', function() {
+        this.style.display = 'none';
+        menuVisible = false;
       });
