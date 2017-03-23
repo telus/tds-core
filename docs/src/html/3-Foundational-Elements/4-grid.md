@@ -3,6 +3,15 @@ title: Grid
 template: doc.jade
 ---
 
+* [Overview](#overview)
+* [Baseline](#baseline)
+* [Breakpoints](#breakpoints)
+* [Responsiveness](#responsiveness)
+* [Columns](#columns)
+* [Column Classes](#column-classes)
+* [Examples](#examples)
+
+
 ## Overview
 
 ---
@@ -71,7 +80,7 @@ Putting these three building blocks together, we can mark up a simple grid with 
 
 ---
 
-### Columns Classes
+### Column Classes
 
 The `small-*` grid classes allow you to lay out all twelve columns in a variety of combinations.
 
@@ -267,8 +276,7 @@ The `hidden-*` classes prevents content from displaying at a certain breakpoint.
 </div>
 
 ### Container limited width modifier
-Containers are 100% wide be default. The .container--limited-width modifier causes the container to have a max width at each breakpoint. See _variables.scss for those pixel values.
-
+Containers are 100% wide be default. The .container--limited-width modifier causes the container to have a max width at each breakpoint. See `variables.scss` for those pixel values.
 
 
 ## Examples
