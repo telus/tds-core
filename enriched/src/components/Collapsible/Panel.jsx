@@ -11,7 +11,7 @@ class Panel extends Component {
   }
 
   render() {
-    const { className, header, children, isActive, onPanelClick} = this.props;
+    const { className, header, children, isActive, onPanelClick, isFirst} = this.props;
     const collapsePanelClassName = classNames('collapsible-panel', className);
     const collapsePanelContent = classNames('collapsible-panel__content', {
       'collapsible-panel__content--visible': isActive
@@ -19,13 +19,15 @@ class Panel extends Component {
 
     const collapsePaneLabelClassName = classNames('collapsible-panel__label', {
       'collapsible-panel__label--expanded': isActive,
-      'collapsible-panel__label--collapsed': !isActive
+      'collapsible-panel__label--collapsed': !isActive,
+      'collapsible-panel__label--first': isFirst
     });
 
     const iconClassName = classNames('icon', {
       'icon-core-minus': isActive,
       'icon-core-plus': !isActive
     });
+
 
     return (
       <div className={collapsePanelClassName}>

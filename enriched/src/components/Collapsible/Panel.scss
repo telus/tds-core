@@ -6,7 +6,6 @@
 
   &__label {
     background: transparent;
-    border-top: 1px solid #d2d3d5;
     border-radius: 0;
     display: block;
     font-weight: 400;
@@ -69,6 +68,11 @@
         }
       }
     }
+
+    &--first {
+      border-top: 1px solid $color-grey-dividers;
+    }
+
   }
 
 
