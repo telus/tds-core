@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "npm run build:assets && npm run build:core && npm run build:enriched && npm run build:docs",
-    "build:assets": "cp core/fonts/* docs/src/html/assets/fonts/ && cp designs/thorium.sketch docs/src/html/assets/downloads/thorium.sketch && cp designs/fonts-for-sketch.zip docs/src/html/assets/downloads/fonts-for-sketch.zip",
+    "build:assets": "cp core/fonts/* docs/src/html/assets/fonts/ && cp designs/thorium.sketch docs/src/html/assets/downloads/thorium.sketch && cp designs/fonts-for-sketch.zip docs/src/html/assets/downloads/fonts-for-sketch.zip && cp core/fonts/core-icons.otf docs/src/html/assets/downloads/core-icons.otf",
     "build:core": "cd core && npm run build",
     "build:docs": "cd docs && npm run build",
     "build:enriched": "cd enriched && npm run build",
