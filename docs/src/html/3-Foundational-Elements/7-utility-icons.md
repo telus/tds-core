@@ -154,7 +154,7 @@ The TELUS Core Icons font isn't fixed width, but the `--fw` helper can be used w
 
 ---
 
-In order to use variables, functions, and mixins, TDS' SCSS source code must be imported by your project. See the [consumption page](http://localhost:8080/5-Governance/1-consumption.html) for further instructions.
+In order to use variables, functions, and mixins, TDS' SCSS source code must be imported by your project. See the [Using TDS Core](/2-Use-TDS/1-getting-started.html#using-tds-core) for further instructions.
 
 ### Core Icon Codepoint
 
