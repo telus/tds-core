@@ -45,7 +45,10 @@ class Group extends Component {
       // If there is no key provide, use the panel order as default key
       const panelKey = child.props.panelKey || String(index);
       const header = child.props.header;
+      const isFirst = (index === 0);
+
       let isActive = activeKeys.indexOf(panelKey) > -1;
+
       const props = {
         key: index,
         panelKey,
@@ -53,6 +56,7 @@ class Group extends Component {
         isActive,
         children: child.props.children,
         onPanelClick: this.onPanelClick(panelKey).bind(this),
+        isFirst
       };
 
       newChildren.push(React.cloneElement(child, props));
