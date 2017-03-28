@@ -76,8 +76,11 @@ label {
 }
 
 // Prevent IE11 from color placeholders the same as regular text.
-&:-ms-input-placeholder {
-  color: GrayText !important;
+input,
+textarea {
+  &:-ms-input-placeholder {
+    color: GrayText !important;
+  }
 }
 
 // Common styles for the "alert" and "down caret" icons that are
