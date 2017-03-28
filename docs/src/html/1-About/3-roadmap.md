@@ -3,88 +3,54 @@ title: Roadmap
 template: doc.jade
 ---
 
-Welcome to our product roadmap — a glimpse into the future of the Thorium design system. Please check in regularly to find out about recent and upcoming milestones.
-The current vision of Thorium will roll out in three major milestone releases:
-- [Alpha Release](#alpha)
-- [Beta Release (Starting Nov 2016)](#beta)
-- [Release 1.0 (Starting 2017)](#thorium-1-0-january-2017)
+To help you prioritize what you are working on and to share insight into our priorities, we've published TDS Roadmap. This roadmap is a rough estimate of what we're focused on building in the near-, medium-, and long-term. Please check in regularly to find out about recent and upcoming milestones.
 
-## Alpha
+The items in the roadmap are subject to change or delay, so you shouldn't use this for major planning purposes. We'll do our best to keep the roadmap updated as things change. We'll revise the roadmap monthly to ensure it reflects our most up-to-date thinking.
 
----
-
-**Rollout:** August-October 2016
-**Goal and purpose:** Build out core features to enable the initial usage elements.
-
-### Features and code
-**CORE Library:**
-Foundational styles that make up the CSS style sheets
-
-Foundations
-
-- Grid (COMPLETED)
-- Baseline Grid (COMPLETED)
-- Typography — font & typestack definition (COMPLETED)
-- Colour palette (COMPLETED)
-- Iconography — Utility icons (COMPLETED)
-
-Elements
-
-- Buttons & Links (COMPLETED)
-- Fields & Errors (COMPLETED)
-- Lists (COMPLETED)
-- Dividers (IN PROGRESS)
+## Objective
+The goal is for TDS to be a platform designed to enable autonomous digital teams to share and contribute to a constantly evolving global design and code library.
 
 
-**ENRICHED Library:**
-React.js Javascript Components
-- Initial shared JS elements defined (COMPLETED)
-- Step , accordion toggles, selector counter (IN PROGRESS)
-
-### Operations:
-
-Giving context and clarity to the Thorium product
-
-- Git Repository Setup (COMPLETED)
-- Develop usage and contribution model (COMPLETED)
-- Publish Near-term Roadmap (COMPLETED)
-- Develop Thorium Design element evolution model (including usage examples, upcoming designs and deprecated features) (IN PROGRESS)
-- Establish Design Guild intake and distribution process (IN PROGRESS)
-- Publish Design Guild meeting schedule to site roadmap (UPCOMING)
-
-## Beta
-
----
-
-**Rollout:** November-December 2016
-**Goal and purpose:**
-Invite more select users into system, to enhance the design system using the contribution model. Roll out internal / external marketing campaigns.
-
-### Features and code
-
-- Design and Code standardization of contributed components
-- CMS integration documentation
-- Pilot CMS component integration
-- Enhanced Thorium site experience (information architecture update, access to previous design and code versions)
-
-### Operations:
-
-- Design Guild weekly meetings
-- Thorium Intro and Education video (TBD)
-
-## Thorium 1.0: January 2017
-
----
-
-### Goal and purpose
-
-Shift focus from building to maintenance of system. Scale user base to to include more internal / external users. Define and integrate experience packages into system.
+## Current Roadmap
+- [Near-term](#near-term)
+- [Medium-term](#medium-term)
+- [Long-term](#long-term)
 
 
-### Features and code
+## Near-term
+Getting the foundations right and then invite more users into the system, to enhance the design system using the contribution model.
 
-- "Experience Packages" where the design system is tied together with content and a recommendation is provided around its usage. It will connect business drivers and the Thorium design system to unify the navigation experience of TELUS digital.
+**Early adopters of TDS**
+Same users as the digital platform. [List of users](https://docs.google.com/presentation/d/1uS5J-eOtH1Mpu0maaDX9FEUM2fSXCQs04LjDigj1w4g/edit#slide=id.g1d1d5be03d_0_573)
 
-### Operations
 
-- Open rollout and usage of Thorium system and design guild usage and contribution model to all of TELUS.
+#### Quick Links
+Use the following links to quickly access:
+
+- **Everything**: [All TDS-related issues](https://github.com/telusdigital/telus-thorium-core/issues)
+
+- **Ideas**: [Submitted ideas](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5BStatus%5D+Idea%22)
+
+- **Designs**: [Components being designed](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+label%3A%22%5BCategory%5D+Design%22+label%3A%22%5BStatus%5D+In+progress%22)
+
+- **Coded components**: [Components being implemented](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5BType%5D+Component%22+label%3A%22%5BStatus%5D+In+progress%22)
+
+- **Accessibility**: [Accessibility issues](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5BCategory%5D+Accessibility%22)
+
+- **Current milestones**: [Upcoming releases](https://github.com/telusdigital/telus-thorium-core/milestones)
+
+
+## Mid-term
+Open rollout and usage of TDS system and design guild usage and contribution model to all of TELUS.
+
+- **TDS Website**: Enhanced TDS site experience (information architecture update, access to previous design and code versions)
+
+- **GTM**: Roll out internal / external marketing campaigns.
+
+
+## Long-term
+Shift focus from building to maintaining the system. Scale user base to include more internal / external users. Define and integrate experience packages into system.
+
+- **Experience Packages**: The design system is tied together with content and a recommendation is provided around its usage. It will connect business drivers and the TDS to unify the navigation experience of TELUS digital.
+
+- **TDS Intro and Education video**
