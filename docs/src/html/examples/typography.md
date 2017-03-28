@@ -8,7 +8,7 @@ template: example.jade
 	<div class="medium-6">
 	    <h3 class="heading-3">In a nutshell</h3>
 	    <p>
-		TELUS Business Email is connected to a Microsoft Exchange Server, securely hosted in our TELUS &ldquo;Class A&rdquo; Canadian data centre.
+		TELUS Business Email is connected to a Microsoft Exchange Server, securely<sup>1</sup> hosted<sub>2</sub> in our TELUS &ldquo;Class A&rdquo; Canadian data centre.
 		There are currently no costly upfront IT purchases or ongoing infrastructure staffing costs, and no software to update, license and maintain.
 	    </p>
 	    <p>
