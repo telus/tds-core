@@ -9,6 +9,14 @@ template: doc.jade
 
 TDS' primary typeface is Helvetica Neue, a robust typeface with legible numbers that renders well at all sizes. It’s designed with precision and it commands respect, however, It is a friendly, sophisticated, and neutral typeface which never detracts from content.
 
+* [Principles](#principles)
+* [Fonts](#fonts)
+* [Headings](#headings)
+* [Text links](#text-links)
+* [Chevron links](#chevron-links)
+* [Examples](#examples)
+
+
 ## Principles
 
 ---

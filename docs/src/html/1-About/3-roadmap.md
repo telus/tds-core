@@ -13,7 +13,7 @@ The goal is for TDS to be a platform designed to enable autonomous digital teams
 
 ## Current Roadmap
 - [Near-term](#near-term)
-- [Medium-term](#medium-term)
+- [Medium-term](#mid-term)
 - [Long-term](#long-term)
 
 
