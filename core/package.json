@@ -34,7 +34,8 @@
     "postcss-cli": "^2.5.1",
     "rimraf": "^2.5.4",
     "stylelint": "^7.9.0",
-    "stylelint-config-standard": "^16.0.0"
+    "stylelint-config-standard": "^16.0.0",
+    "ttf2woff2": "^2.0.3"
   },
   "sass": "scss/thorium.scss"
 }

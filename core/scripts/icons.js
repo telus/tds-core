@@ -14,6 +14,8 @@
 var Fontmin = require('fontmin');
 var path = require('path');
 var exec = require('child_process').exec;
+var fs = require('fs');
+var ttf2woff2 = require('ttf2woff2');
 
 // destPath is the directory in which the generated webfonts will be saved.
 var destPath = path.resolve(__dirname, '..', 'fonts');
@@ -82,6 +84,10 @@ runFontminJob(new Fontmin().src(otfPath).dest(destPath).use(Fontmin.otf2ttf()))
     }
   })
   .then(function (hintedTtf) {
+
+    var input = fs.readFileSync(hintedTtf);
+    fs.writeFileSync('fonts/core-icons.woff2', ttf2woff2(input));
+
     return Promise.all([
       runFontminJob(new Fontmin().src(hintedTtf).dest(destPath).use(Fontmin.ttf2eot())),
       runFontminJob(new Fontmin().src(hintedTtf).dest(destPath).use(Fontmin.ttf2woff()))
