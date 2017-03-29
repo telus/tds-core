@@ -16,6 +16,8 @@ $font-url-prefix: "https://cdn.telus.digital/thorium/core/fonts"; /* stylelint-d
     url("#{$font-url-prefix}/56be84de-9d60-4089-8df0-0ea6ec786b84.eot?#iefix") format("eot");
 }
 
+$font-url-prefix: "/assets/fonts";
+
 //
 // Helvetica Neue Light 45
 //
@@ -24,10 +26,10 @@ $font-url-prefix: "https://cdn.telus.digital/thorium/core/fonts"; /* stylelint-d
   font-style: normal;
   font-weight: 400;
   src:
-    url("#{$font-url-prefix}/5a13f7d1-b615-418e-bc3a-525001b9a671.woff2") format("woff2"),
-    url("#{$font-url-prefix}/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"),
-    url("#{$font-url-prefix}/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"),
-    url("#{$font-url-prefix}/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot");
+    url("#{$font-url-prefix}/helvetica/etext-45-light/b8765d4b-d9a3-48b9-ac65-560e7517cf0e.woff2") format("woff2"),
+    url("#{$font-url-prefix}/helvetica/etext-45-light/d7d2e6c6-fc3a-41a5-9b52-648e12e215b2.woff") format("woff"),
+    url("#{$font-url-prefix}/helvetica/etext-45-light/cb64744b-d0f7-4ef8-a790-b60d6e3e4f21.ttf") format("truetype"),
+    url("#{$font-url-prefix}/helvetica/etext-45-light/e0781a75-0ecb-464e-b6e9-85780ddc0921.eot?#iefix") format("eot");
 }
 
 //
@@ -38,10 +40,10 @@ $font-url-prefix: "https://cdn.telus.digital/thorium/core/fonts"; /* stylelint-d
   font-style: normal;
   font-weight: 500;
   src:
-    url("#{$font-url-prefix}/b0868b4c-234e-47d3-bc59-41ab9de3c0db.woff2") format("woff2"),
-    url("#{$font-url-prefix}/bcf54343-d033-41ee-bbd7-2b77df3fe7ba.woff") format("woff"),
-    url("#{$font-url-prefix}/b0ffdcf0-26da-47fd-8485-20e4a40d4b7d.ttf") format("truetype"),
-    url("#{$font-url-prefix}/b7693a83-b861-4aa6-85e0-9ecf676bc4d6.eot?#iefix") format("eot");
+    url("#{$font-url-prefix}/helvetica/etext-55-roman/dc50c02f-3f77-4e75-b89c-e3f9bb4752e6.woff2") format("woff2"),
+    url("#{$font-url-prefix}/helvetica/etext-55-roman/ce6f5b38-1cb5-4a27-8182-583aa68b2436.woff") format("woff"),
+    url("#{$font-url-prefix}/helvetica/etext-55-roman/ff06cde7-e06a-4cf0-af4d-5b2f737bf544.ttf") format("truetype"),
+    url("#{$font-url-prefix}/helvetica/etext-55-roman/706ec8e5-fe4a-4518-91a6-7aba4d3d333f.eot?#iefix") format("eot");
 }
 
 //
@@ -52,8 +54,8 @@ $font-url-prefix: "https://cdn.telus.digital/thorium/core/fonts"; /* stylelint-d
   font-style: normal;
   font-weight: 700;
   src:
-    url("#{$font-url-prefix}/3600b37f-2bf1-45f3-be3a-03365f16d9cb.woff2") format("woff2"),
-    url("#{$font-url-prefix}/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff") format("woff"),
-    url("#{$font-url-prefix}/4c6503c9-859b-4d3b-a1d5-2d42e1222415.ttf") format("truetype"),
-    url("#{$font-url-prefix}/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix") format("eot");
+    url("#{$font-url-prefix}/helvetica/etext-65-medium/3e8a8b56-3cb0-4347-b670-eaaf06b76e9b.woff2") format("woff2"),
+    url("#{$font-url-prefix}/helvetica/etext-65-medium/07173950-fa69-4b65-9c71-0cf2ec00b51d.woff") format("woff"),
+    url("#{$font-url-prefix}/helvetica/etext-65-medium/aac5a4b8-ffd3-4529-a098-21b91bc86f9a.ttf") format("truetype"),
+    url("#{$font-url-prefix}/helvetica/etext-65-medium/a747e1ea-ecdf-4f3d-ad47-3df9cfbee3cc.eot?#iefix") format("eot");
 }

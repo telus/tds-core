@@ -33,23 +33,36 @@ h4:not([class]):first-child {
 h1,
 .heading-1 {
   color: $color-purple;
+  font-size: rem(28px);
+  font-weight: 300;
+  line-height: 1.14285; // 32px
+  margin-bottom: baseline-margin(48px);
+
+  @include from-breakpoint(medium) {
+    font-size: rem(44px);
+    font-weight: 300;
+    letter-spacing: -.3px;
+    line-height: 1.0909; // 48px
+  }
+}
+
+.display-heading-1 {
+  color: $color-purple;
   font-size: rem(42px);
-  line-height: 1.14285; // 48px
+  font-weight: 300;
   margin-bottom: baseline-margin(48px);
 
   @include from-breakpoint(medium) {
     font-size: rem(72px);
-    font-weight: 300;
-    letter-spacing: -.3px;
     line-height: 1.08333; // 78px
   }
 }
 
 h2,
 .heading-2 {
-  font-size: rem(32px);
+  font-size: rem(24px);
   line-height: 1.14285;
-  font-weight: normal;
+  font-weight: 700;
   letter-spacing: .25px;
   color: $color-purple;
   margin-bottom: baseline-margin(40px);
@@ -60,35 +73,43 @@ h2,
   }
 
   @include from-breakpoint(medium) {
-    font-size: rem(44px);
+    font-size: rem(36px);
+    font-weight: 300;
     line-height: 1.27272; // 56px
     letter-spacing: 0;
-    font-weight: 300;
   }
 }
 
 h3,
 .heading-3 {
-  font-size: rem(19px);
+  font-size: rem(20px);
   line-height: 1.6842; // 32px
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: .25px;
   margin-bottom: baseline-margin(40px);
   color: $color-grey-dark;
 
   @include from-breakpoint(medium) {
-    line-height: 1.47368; // 28px
+    font-size: rem(28px);
+    font-weight: 400;
+    line-height: 1.47368; // 41px ?
     letter-spacing: 0;
   }
 }
 
 h4,
 .heading-4 {
-  font-size: rem(15px);
+  font-size: rem(20px);
   font-weight: 700;
   color: $color-grey-dark;
   line-height: 1.333; // 20px
   margin-bottom: baseline-margin(40px);
+}
+
+h5,
+.heading-5 {
+  font-size: rem(16px);
+  font-weight: 700;
 }
 
 //
@@ -157,7 +178,7 @@ p,
 
 small,
 .text--small {
-  // The 13px "small" text isn't readable on small viewports, so it's not
+  // The 14px "small" text isn't readable on small viewports, so it's not
   // applied until the medium breakpoint.
   @extend %text--medium;
 
