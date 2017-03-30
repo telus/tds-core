@@ -4,10 +4,13 @@
 
 * added `.container--limited-width` to set a max-width for our adaptive grid when on small and above viewpoints
 * updated hover state on buttons (white background with coloured border)
-* remove min-height:60 in buttons so they are the same height as form fields
 * body tag now has white background
 * `core-icon` mixin is now available in `mixins.scss`
 * <sup> and <sub> have default styles
+* added woff2 for core-icons font
+* replace helvetica 45, 55 and 65 with its eText Pro equivalent
+* adjust input field and button height to accommodate font size updates
+* add `.display-heading-1` for large headings
 * doc: added zip file with fonts used on the sketch file
 * doc: updated colours to match what's on the sketch file
 
