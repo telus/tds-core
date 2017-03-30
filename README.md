@@ -1,3 +1,5 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 
 # TDS
 
@@ -14,6 +16,10 @@ TDS, the TELUS Design system is a set of living guidelines that communicates our
 
 
 ## Contributor Quick Start
+
+Install [commitizen](https://github.com/commitizen/cz-cli) globally to be prompted to fill in any required fields to properly identify the type of commit and write a proper commit message.
+
+    npm install -g commitizen
 
 Clone this repository
 
@@ -36,7 +42,9 @@ Ready to commit changes? Validate your code by running the linters & tests:
     npm run lint
     npm test
 
-For more information about contributing, please see the [Governance - Contribution page](/docs/5-Governance/2-contributing.md).
+To commit your changes use the command
+
+    git cz
 
 ## Building and Maintaining the Icon Font
 
