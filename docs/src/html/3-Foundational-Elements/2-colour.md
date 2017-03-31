@@ -21,37 +21,37 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 
 <div class="container colors">
     <div class="grid-row">
-	<div class="medium-4">
-	    <span class="color-preview" style="background-color: rgb(75,40,109);"></span>
+  <div class="medium-4">
+	    <span class="color-preview" style="background-color: rgb(110,59,161);"></span>
 	    <p>
-		<strong>Grape</strong>
+		<strong>Royal Purple</strong>
 	    </p>
       <p>
-    `$color-purple`
+    `$color-purple-light`
       </p>
 	    <p>
-		#4B286D
+		#6E3BA1
 		  </p>
       <p>
-		Usage: Inactive primary buttons and links, H1/H2 text
+		Usage: Primary button and link hover
 	    </p>
 	</div>
 	<div class="medium-4">
-	    <span class="color-preview" style="background-color: rgb(23,122,0);"></span>
+	    <span class="color-preview" style="background-color: rgb(36,135,0);"></span>
 	    <p>
-		<strong>Japanese Laurel</strong>
+		<strong>Forest Green</strong>
 	    </p>
       <p>
-    `$color-green-darker`
+    `$color-green`
       </p>
 	    <p>
-		#177A00
+		#248700
       </p>
       <p>
-		Usage: Inactive secondary buttons and links
+		Usage: Secondary button and link hover
 	    </p>
-	</div>
-	<div class="medium-4">
+	  </div>
+		<div class="medium-4">
 	    <span class="color-preview" style="background-color: rgb(84,89,95);"></span>
 	    <p>
 		<strong>Shuttle Gray</strong>
@@ -111,34 +111,34 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 
 <div class="container colors">
     <div class="grid-row">
-	<div class="medium-4">
-	    <span class="color-preview" style="background-color: rgb(110,59,161);"></span>
+  <div class="medium-4">
+	    <span class="color-preview" style="background-color: rgb(75,40,109);"></span>
 	    <p>
-		<strong>Royal Purple</strong>
+		<strong>Grape</strong>
 	    </p>
       <p>
-    `$color-purple-light`
+    `$color-purple`
       </p>
 	    <p>
-		#6E3BA1
+		#4B286D
 		  </p>
       <p>
-		Usage: Primary button and link hover
+		Usage: Inactive primary buttons and links, H1/H2 text
 	    </p>
 	</div>
 	<div class="medium-4">
-	    <span class="color-preview" style="background-color: rgb(36,135,0);"></span>
+	    <span class="color-preview" style="background-color: rgb(23,122,0);"></span>
 	    <p>
-		<strong>Forest Green</strong>
+		<strong>Japanese Laurel</strong>
 	    </p>
       <p>
-    `$color-green`
+    `$color-green-darker`
       </p>
 	    <p>
-		#248700
+		#177A00
       </p>
       <p>
-		Usage: Secondary button and link hover
+		Usage: Inactive secondary buttons and links
 	    </p>
 	</div>
 	<div class="medium-4">
