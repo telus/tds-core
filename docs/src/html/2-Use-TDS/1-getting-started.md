@@ -5,8 +5,6 @@ template: doc.jade
 
 Welcome to the TELUS Design System. We're glad you're planning on using the TDS in your project! This page describes where you can get the library, and how you can control which version is used by your project.
 
-## ToC
-
 * [Usage criteria](#usage-criteria)
 * [Getting TDS](#getting-tds)
 * [The TDS tech stack](#the-tds-stack)

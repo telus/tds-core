@@ -3,8 +3,6 @@ title: Receiving Updates
 template: doc.jade
 ---
 
-## ToC
-
 * [Getting updates](#getting-updates)
 * [Reviewing changes](#reviewing-changes)
 * [Release Process](#release-process)

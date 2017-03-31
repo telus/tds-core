@@ -2,7 +2,6 @@
 title: Setting Up Projects
 template: doc.jade
 ---
-## ToC
 
 ### Designers
 * [For designers](#for-designers)

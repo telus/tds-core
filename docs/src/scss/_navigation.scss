@@ -18,7 +18,7 @@
   span {
     color: $color-purple;
     font-size: .8em;
-    font-weight: bold;
+    font-weight: 700;
     display: block;
     margin-bottom: 17px;
   }
@@ -29,7 +29,6 @@
     padding: 3px 12px 3px 8px;
     text-decoration: none;
     border-bottom: 1px solid #eee;
-    font-weight: bold;
 
     &:hover {
       background-color: #fff;
