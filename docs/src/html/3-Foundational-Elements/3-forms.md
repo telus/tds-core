@@ -3,6 +3,17 @@ title: Forms
 template: doc.jade
 ---
 
+* [Form guidelines](#form-guidelines)
+* [Text input fields](#text-input-fields)
+* [Selections](#selections)
+* [Dropdowns](#dropdowns)
+* [States](#states)
+* [Arrangement](#arrangement)
+* [Field helpers](#field-helpers)
+* [Hints](#hints)
+* [Example forms](/examples/forms.html)
+
+
 ## Form guidelines
 
 ---

@@ -9,7 +9,7 @@ template: doc.jade
 * [Responsiveness](#responsiveness)
 * [Columns](#columns)
 * [Column Classes](#column-classes)
-* [Examples](#examples)
+* [Examples](/examples/grid.html)
 
 
 ## Overview
