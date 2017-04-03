@@ -10,6 +10,7 @@ template: doc.jade
 * [Columns](#columns)
 * [Column Classes](#column-classes)
 * [Examples](/examples/grid.html)
+* [Examples - color](/examples/grid-test.html)
 
 
 ## Overview
@@ -283,4 +284,4 @@ Containers are 100% wide be default. The .container--limited-width modifier caus
 
 ---
 
-See this feature in action on the [grid examples page](/examples/grid.html).
+See this feature in action on the [grid examples page](/examples/grid.html) and [grid in colours](/example/grid-test.html).
