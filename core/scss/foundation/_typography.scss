@@ -30,39 +30,41 @@ h4:not([class]):first-child {
   margin-top: 0;
 }
 
-h1,
-.heading-1 {
-  color: $color-purple;
-  font-size: rem(28px);
-  font-weight: 300;
-  line-height: 1.14285; // 32px
-  margin-bottom: baseline-margin(48px);
-
-  @include from-breakpoint(medium) {
-    font-size: rem(44px);
-    font-weight: 300;
-    letter-spacing: -.3px;
-    line-height: 1.0909; // 48px
-  }
-}
-
 .display-heading-1 {
   color: $color-purple;
   font-size: rem(42px);
+  line-height: 1.14; // 48px
   font-weight: 300;
   margin-bottom: baseline-margin(48px);
 
   @include from-breakpoint(medium) {
     font-size: rem(72px);
-    line-height: 1.08333; // 78px
+    line-height: 1.11; // 80px
+  }
+}
+
+h1,
+.heading-1 {
+  font-weight: 300;
+  font-size: rem(28px);
+  line-height: 1.29; // 36px
+  letter-spacing: -1px;
+  color: $color-purple;
+  margin-bottom: baseline-margin(48px);
+
+  @include from-breakpoint(medium) {
+    font-weight: 300;
+    font-size: rem(44px);
+    line-height: 1.18; // 52px
+    letter-spacing: 0;
   }
 }
 
 h2,
 .heading-2 {
-  font-size: rem(24px);
-  line-height: 1.14285;
   font-weight: 700;
+  font-size: rem(22px);
+  line-height: 1.36; // 30px
   letter-spacing: .25px;
   color: $color-purple;
   margin-bottom: baseline-margin(40px);
@@ -73,43 +75,31 @@ h2,
   }
 
   @include from-breakpoint(medium) {
-    font-size: rem(36px);
-    font-weight: 300;
-    line-height: 1.27272; // 56px
-    letter-spacing: 0;
+    font-weight: 400;
+    font-size: rem(28px);
+    line-height: 1.29; // 36px
+    letter-spacing: -1.3px;
   }
 }
 
 h3,
 .heading-3 {
-  font-size: rem(20px);
-  line-height: 1.6842; // 32px
   font-weight: 700;
-  letter-spacing: .25px;
-  margin-bottom: baseline-margin(40px);
+  font-size: rem(20px);
+  line-height: 1.4; // 28px
+  letter-spacing: -1px;
   color: $color-grey-dark;
-
-  @include from-breakpoint(medium) {
-    font-size: rem(28px);
-    font-weight: 400;
-    line-height: 1.47368; // 41px ?
-    letter-spacing: 0;
-  }
+  margin-bottom: baseline-margin(40px);
 }
 
 h4,
 .heading-4 {
-  font-size: rem(20px);
   font-weight: 700;
-  color: $color-grey-dark;
-  line-height: 1.333; // 20px
-  margin-bottom: baseline-margin(40px);
-}
-
-h5,
-.heading-5 {
   font-size: rem(16px);
-  font-weight: 700;
+  letter-spacing: -.8px;
+  color: $color-grey-dark;
+  line-height: 1.25; // 20px
+  margin-bottom: baseline-margin(40px);
 }
 
 //
@@ -153,40 +143,27 @@ em {
 p,
 .text {
   font-size: rem($body-text-size);
-  line-height: $body-line-height;
+  line-height: $body-line-height; // 32px
+  letter-spacing: -1px;
   margin-bottom: 1rem;
-  letter-spacing: .01em;
-
-  @include from-breakpoint(medium) {
-    line-height: $body-line-height-med;
-  }
 
   a {
     text-decoration: underline;
   }
 }
 
-%text--medium {
-  font-size: rem($body-medium-text-size);
-  line-height: $body-medium-line-height;
-  letter-spacing: .1px;
-}
-
-.text--medium {
-  @extend %text--medium;
-}
-
 small,
 .text--small {
-  // The 14px "small" text isn't readable on small viewports, so it's not
-  // applied until the medium breakpoint.
-  @extend %text--medium;
+  font-size: rem($body-medium-text-size);
+  line-height: $body-medium-line-height; // 20px;
+  letter-spacing: -.7px;
+}
 
-  @include from-breakpoint(medium) {
-    font-size: rem($body-small-text-size);
-    line-height: $body-small-line-height;
-    color: $color-grey-medium;
-  }
+.text--legal {
+  font-size: rem($body-small-text-size);
+  line-height: $body-small-line-height; // 24px;
+  letter-spacing: -.7px;
+  color: $color-grey-medium;
 }
 
 //

@@ -40,7 +40,14 @@ template: example.jade
       <p>p1 Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
     </div>
     <div class="medium-6">
-      <small>p2 Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</small>
+      <p class="text--small">p2 .text--small Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</small>
+    </div>
+  </div>
+  <div class="grid-row">
+    <div class="medium-6">
+      <p class="text--legal">p3 .text--legal Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
+    </div>
+    <div class="medium-6">
     </div>
   </div>
   <div class="grid-row">
