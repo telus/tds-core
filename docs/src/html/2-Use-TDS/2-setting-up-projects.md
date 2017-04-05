@@ -41,7 +41,6 @@ The [thorium.sketch](/assets/downloads/thorium.sketch) file contains the latest 
 ---
 
 - Download [TDS sketch file (thorium.sketch)](/assets/downloads/thorium.sketch)
-- Download [TDS fonts](/assets/downloads/fonts-for-sketch.zip)
 
 ## Development process
 
