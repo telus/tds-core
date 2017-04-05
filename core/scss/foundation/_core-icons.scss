@@ -59,7 +59,7 @@ $core-icon-codepoints: (
 
   &--error,
   &--error:hover {
-    color: $color-red;
+    color: $color-cardinal;
   }
 
   &--disabled {
@@ -96,15 +96,15 @@ $core-icon-codepoints: (
 .icon-core-alert,
 .icon-core-exclamation-point-circle,
 .icon-core-incomplete {
-  @include icon-fixed-color($color-red);
+  @include icon-fixed-color($color-cardinal);
 }
 
 .icon-core-checkmark {
-  @include icon-fixed-color($color-green);
+  @include icon-fixed-color($color-forest-green);
 }
 
 .icon-core-expander,
 .icon-core-help,
 .icon-core-question-mark-circle {
-  @include icon-fixed-color($color-grey);
+  @include icon-fixed-color($color-shuttle-grey);
 }

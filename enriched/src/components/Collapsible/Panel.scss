@@ -20,16 +20,16 @@
     transition: all 0.3s ease-in;
 
     .icon{
-      color: $color-green;
+      color: $color-forest-green;
     }
 
     @include alt-state {
-      border-top: 1px solid $color-grey-dark;
+      border-top: 1px solid $color-shark;
       .icon {
-        color: $color-green;
+        color: $color-forest-green;
       }
       &::before {
-        background: $color-grey-dark;
+        background: $color-shark;
       }
     }
 
@@ -63,14 +63,14 @@
       @include alt-state {
         + .collapsible-panel__content {
           &::before {
-            background: $color-grey-dark;
+            background: $color-shark;
           }
         }
       }
     }
 
     &--first {
-      border-top: 1px solid $color-grey-dividers;
+      border-top: 1px solid $color-gainsboro;
     }
 
   }
@@ -79,7 +79,7 @@
   &__header {
     display: inline-block;
     margin-bottom: 0;
-    color: $color-grey-dark;
+    color: $color-shark;
     position: relative;
   }
 

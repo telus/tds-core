@@ -50,7 +50,7 @@
     display: block;
     position: absolute;
     content: '\002022';
-    color: $color-purple;
+    color: $color-grape;
     left: -21px;
   }
 
@@ -69,7 +69,7 @@
 
     content: core-icon-codepoint(checkmark);
     left: -33px;
-    color: $color-green;
+    color: $color-forest-green;
   }
 }
 
@@ -81,7 +81,7 @@
 
     content: core-icon-codepoint(times);
     left: -33px;
-    color: $color-red;
+    color: $color-cardinal;
   }
 }
 

@@ -27,7 +27,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		<strong>Forest Green</strong>
 	    </p>
       <p>
-    `$color-green`
+    `$color-forest-green`
       </p>
 	    <p>
 		#248700
@@ -42,7 +42,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   		<strong>Grape</strong>
   	    </p>
         <p>
-      `$color-purple`
+      `$color-grape`
         </p>
   	    <p>
   		#4B286D
@@ -57,7 +57,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   		<strong>Shark</strong>
   	    </p>
         <p>
-      `$color-grey-dark`
+      `$color-shark`
         </p>
   	    <p>
   		#2A2C2E
@@ -76,7 +76,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		<strong>Japanese Laurel</strong>
 	    </p>
       <p>
-    `$color-green-darker`
+    `$color-japanese-laurel`
       </p>
 	    <p>
 		#177A00
@@ -91,7 +91,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		<strong>Royal Purple</strong>
 	    </p>
       <p>
-    `$color-purple-light`
+    `$color-royal-purple`
       </p>
 	    <p>
 		#6E3BA1
@@ -103,10 +103,10 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   <div class="medium-4">
     <span class="color-preview" style="background-color: rgb(84,89,95);"></span>
     <p>
-  <strong>Shuttle Gray</strong>
+  <strong>Shuttle Grey</strong>
     </p>
     <p>
-  `$color-grey`
+  `$color-shuttle-grey`
     </p>
     <p>
   #54595F
@@ -150,7 +150,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		<strong>Raven</strong>
 	    </p>
       <p>
-    `$color-grey-medium`
+    `$color-raven`
       </p>
 	    <p>
 		#6A6E74
@@ -165,7 +165,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     <strong>Cardinal</strong>
       </p>
       <p>
-    `$color-red`
+    `$color-cardinal`
       </p>
       <p>
     #C12335
@@ -180,7 +180,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		<strong>White Lilac</strong>
 	    </p>
       <p>
-    `$color-purple-panel`
+    `$color-white-lilac`
       </p>
 	    <p>
 		#F2EFF4
@@ -196,7 +196,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		<strong>Gainsboro</strong>
 	    </p>
       <p>
-    `$color-grey-dividers`
+    `$color-gainsboro`
       </p>
 	    <p>
 		#D8D8D8
@@ -211,7 +211,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     <strong>Lavender Blush</strong>
       </p>
       <p>
-    `$color-red-panel`
+    `$color-lavender-blush`
       </p>
       <p>
     #FFF6F8
@@ -226,7 +226,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		<strong>Panache</strong>
 	    </p>
       <p>
-    `$color-green-panel`
+    `$color-panache`
       </p>
 	    <p>
 		#F4F9F2
@@ -243,7 +243,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     <strong>Athens Grey</strong>
       </p>
       <p>
-    `$color-grey-panel`
+    `$color-athens-grey`
       </p>
       <p>
     #F7F7F8

@@ -57,59 +57,59 @@ a.button {
     }
   }
 
-  &-primary {
-    background-color: $color-purple-light;
+  &-purple {
+    background-color: $color-grape;
     color: $color-white;
 
     &:hover {
       background-color: $color-white;
-      color: $color-purple-light;
+      color: $color-grape;
       box-shadow: 0 0 0 1px;
     }
 
     &--outlined {
       background-color: $color-white;
-      color: $color-purple-light;
+      color: $color-grape;
       box-shadow: 0 0 0 1px;
 
       &:hover {
         background-color: $color-white;
-        color: $color-purple;
+        color: $color-grape;
       }
     }
   }
 
-  &-secondary {
-    background-color: $color-green;
+  &-green {
+    background-color: $color-forest-green;
     color: $color-white;
 
     &:hover {
       background-color: $color-white;
-      color: $color-green;
+      color: $color-forest-green;
       box-shadow: 0 0 0 1px;
     }
 
     &--outlined {
       background-color: $color-white;
       box-shadow: 0 0 0 1px;
-      color: $color-green;
+      color: $color-forest-green;
 
       &:hover {
         background-color: $color-white;
-        color: $color-green-darker;
+        color: $color-forest-green;
       }
     }
   }
 
   &-link {
-    color: $color-green;
+    color: $color-forest-green;
     text-decoration: underline;
     padding-left: 0;
     padding-right: 0;
     font-weight: 500;
 
     &:hover {
-      color: $color-green-darker;
+      color: $color-japanese-laurel;
     }
   }
 
@@ -122,7 +122,7 @@ a.button {
 
   &[disabled] {
     background-color: #efefef;
-    color: $color-grey-dark;
+    color: $color-shark;
 
     &:hover {
       border-width: 0;
@@ -132,16 +132,16 @@ a.button {
   &-inverted {
     border: 0;
     background: $color-white;
-    color: $color-purple;
+    color: $color-grape;
 
     &:hover {
-      color: $color-purple-light;
+      color: $color-grape;
     }
 
     &--outlined {
       border: solid 1px $color-white;
       color: $color-white;
-      background: $color-purple;
+      background: $color-grape;
       transition: border-color .1s linear;
 
       &:hover {

@@ -22,28 +22,28 @@ The shape colour of normal and hover fade between one another on hover of the bu
 * Avoid excessively long button text
 * Make sure the button text describes an action
 
-## Primary Button
+## Purple Button
 
 ---
 
-A button that's used for primary actions. The `button` and `button-primary` blocks define its default appearance. In general, button classes can be applied to both `<button>` and `<a>` tags.
+A button that's used for primary actions. The `button` and `button-purple` blocks define its default appearance. In general, button classes can be applied to both `<button>` and `<a>` tags.
 
-<button class="button button-primary">Submit form</button>
+<button class="button button-purple">Submit form</button>
 
 ```html
-<button class="button button-primary">
+<button class="button button-purple">
     Submit form
 </button>
 ```
 
-### Outlined primary button
+### Outlined purple button
 
-<button class="button button-primary button-primary--outlined">
+<button class="button button-purple button-purple--outlined">
     Submit form
 </button>
 
 ```html
-<button class="button button-primary button-primary--outlined">
+<button class="button button-purple button-purple--outlined">
     Submit form
 </button>
 ```
@@ -52,10 +52,10 @@ A button that's used for primary actions. The `button` and `button-primary` bloc
 
 Button classes can also be applied to `<a>` tags.
 
-<a class="button button-primary" href="#">Anchor button</a>
+<a class="button button-purple" href="#">Anchor button</a>
 
 ```html
-<a class="button button-primary" href="#">
+<a class="button button-purple" href="#">
     Anchor button
 </a>
 ```
@@ -64,38 +64,38 @@ Button classes can also be applied to `<a>` tags.
 
 If you want to prevent that a button from being clicked, use the `disabled` attribute.
 
-<button class="button button-primary" disabled>Disabled</button>
+<button class="button button-purple" disabled>Disabled</button>
 
 ```html
-<button class="button button-primary" disabled>
+<button class="button button-purple" disabled>
     Disabled
 </button>
 ```
 
 _Note_: The mobile button width is fluid and stretches to cover all columns currently in view.
 
-## Secondary Button
+## Green Button
 
 ---
 
-<button class="button button-secondary">
+<button class="button button-green">
     Submit Form
 </button>
 
 ```html
-<button class="button button-secondary">
+<button class="button button-green">
     Submit Form
 </button>
 ```
 
-### Outlined secondary button
+### Outlined green button
 
-<button class="button button-secondary button-secondary--outlined">
+<button class="button button-green button-green--outlined">
     Submit form
 </button>
 
 ```html
-<button class="button button-secondary button-secondary--outlined">
+<button class="button button-green button-green--outlined">
     Submit form
 </button>
 ```
@@ -145,8 +145,8 @@ The `button-link` class creates an element which behaves like a button, but look
 Buttons will occupy 100% width of their parent's at the small viewport and below. In other viewports, they'll display inline. Buttons are separated by 20 pixels of space, while links are separated from buttons by 40 pixels.
 
 <div>
-    <button class="button button-primary">Button</button>
-    <button class="button button-primary" disabled>Disabled</button>
-    <a class="button button-primary" href="#">Anchor</a>
+    <button class="button button-purple">Button</button>
+    <button class="button button-purple" disabled>Disabled</button>
+    <a class="button button-purple" href="#">Anchor</a>
     <button class="button button-link">Link button</a>
 </div>

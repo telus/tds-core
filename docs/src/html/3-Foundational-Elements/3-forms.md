@@ -488,7 +488,7 @@ These limits can be achieved by combining grid column helpers (`.medium-7.large-
     </div>
 </div>
 <div class="button-row">
-    <button type="submit" class="button button-primary">
+    <button type="submit" class="button button-purple">
 	Search
     </button>
 </div>
@@ -503,7 +503,7 @@ These limits can be achieved by combining grid column helpers (`.medium-7.large-
     </div>
 </div>
 <div class="button-row">
-    <button type="submit" class="button button-primary">
+    <button type="submit" class="button button-purple">
 	Search
     </button>
 </div>

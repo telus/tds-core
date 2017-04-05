@@ -37,7 +37,7 @@
   }
 
   .container--coloured-bg {
-    background: $color-green-panel;
+    background: $color-panache;
   }
 }
 
@@ -62,7 +62,7 @@
 
   &__icon {
     display: inline-block;
-    background-color: $color-purple;
+    background-color: $color-grape;
     color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -110,7 +110,7 @@
 }
 
 .inverted-link-ex {
-  background: $color-purple;
+  background: $color-grape;
 
   > p {
     text-align: center;

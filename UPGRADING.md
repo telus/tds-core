@@ -2,17 +2,22 @@
 
 ## Upgrading to v0.10.x
 
-* added `.container--limited-width` to set a max-width for our adaptive grid when on small and above viewpoints
-* updated hover state on buttons (white background with coloured border)
 * body tag now has white background
-* `core-icon` mixin is now available in `mixins.scss`
-* <sup> and <sub> have default styles
-* added woff2 for core-icons font
-* replace helvetica 45, 55 and 65 with its eText Pro equivalent
-* adjust input field and button height to accommodate font size updates
-* add `.display-heading-1` for large headings
-* doc: added zip file with fonts used on the sketch file
-* doc: updated colours to match what's on the sketch file
+* `.button-primary` has changed to `.button-purple`
+* `.button-secondary` has changed to `.button-green`
+* scss variable $color-green changed to $color-forest-green
+* scss variable $color-green-darker changed to $color-japanese-laurel
+* scss variable $color-green-panel changed to $color-panache
+* scss variable $color-grey-medium changed to $color-raven
+* scss variable $color-grey changed to $color-shuttle-grey
+* scss variable $color-grey-dark changed to $color-shark
+* scss variable $color-grey-panel changed to $color-athens-grey
+* scss variable $color-purple changed to $color-grape
+* scss variable $color-purple-light changed to $color-royal-purple
+* scss variable $color-purple-panel changed to $color-white-lilac
+* scss variable $color-red changed to $color-cardinal
+* scss variable $color-red-panel changed to $color-lavender-blush
+* scss variable $color-grey-dividers changed to $color-gainsboro
 
 
 ## Upgrading to v0.6.x

@@ -36,24 +36,24 @@
   }
 
   &__icon {
-    color: $color-green-darker;
+    color: $color-japanese-laurel;
 
     &:hover {
-      color: $color-green-darker;
+      color: $color-japanese-laurel;
     }
 
     .selector-counter--error &,
     .selector-counter--error button:disabled & {
-      color: $color-red;
+      color: $color-cardinal;
     }
 
     .selector-counter--successful &,
     .selector-counter--successful button:disabled & {
-      color: $color-green-darker;
+      color: $color-japanese-laurel;
     }
 
     button:disabled & {
-      color: $color-grey;
+      color: $color-shuttle-grey;
     }
   }
 }
@@ -75,10 +75,10 @@ input.selector-counter__value {
   }
 
   .selector-counter--error & {
-    border-color: $color-red;
+    border-color: $color-cardinal;
   }
 
   .selector-counter--successful & {
-    border-color: $color-green-darker;
+    border-color: $color-japanese-laurel;
   }
 }

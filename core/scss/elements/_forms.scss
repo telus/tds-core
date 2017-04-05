@@ -13,7 +13,7 @@ select {
   border: 1px solid $color-grey-light;
   border-radius: $form-field-border-radius;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
-  color: $color-grey-dark;
+  color: $color-shark;
   font-family: $font-telus;
   font-size: rem($body-text-size);
   letter-spacing: .4px;
@@ -28,16 +28,16 @@ select {
   }
 
   .field--error & {
-    border-color: $color-red;
+    border-color: $color-cardinal;
     padding-right: 45px;
   }
 
   .field--success & {
-    border-color: $color-green-darker;
+    border-color: $color-japanese-laurel;
   }
 
   &:focus {
-    border-color: $color-grey;
+    border-color: $color-shuttle-grey;
   }
 
   @include from-breakpoint(medium) {
@@ -48,8 +48,8 @@ select {
 input,
 select {
   &:disabled {
-    background-color: $color-grey-panel;
-    border-color: $color-grey;
+    background-color: $color-athens-grey;
+    border-color: $color-shuttle-grey;
   }
 }
 
@@ -70,7 +70,7 @@ select {
 
 label {
   display: inline-block;
-  color: $color-grey-dark;
+  color: $color-shark;
   font-weight: 500;
   margin-bottom: 3px;
 }
@@ -121,7 +121,7 @@ textarea {
         transform: translateY(-50%);
         content: core-icon-codepoint(exclamation-point-circle);
         right: 15px;
-        color: $color-red;
+        color: $color-cardinal;
       }
 
       &.select-container::before {
@@ -138,7 +138,7 @@ textarea {
         content: core-icon-codepoint(caret-down);
         top: 20px;
         right: 20px;
-        color: $color-green;
+        color: $color-forest-green;
       }
 
       .field--error & {
@@ -147,14 +147,14 @@ textarea {
         }
 
         &::after {
-          color: $color-red;
+          color: $color-cardinal;
         }
       }
     }
 
     &--disabled {
       &::after {
-        color: $color-grey;
+        color: $color-shuttle-grey;
       }
     }
 
@@ -195,19 +195,19 @@ textarea {
 
 .helper {
   font-size: rem(16px);
-  background: $color-grey-panel;
+  background: $color-athens-grey;
   padding: 11px 16px 16px;
   border-radius: 4px;
   margin-bottom: 11px;
   transition: background-color .1s linear;
 
   &--success {
-    background: $color-green-panel;
+    background: $color-panache;
   }
 
   &--error {
-    background-color: $color-red-panel;
-    color: $color-red;
+    background-color: $color-lavender-blush;
+    color: $color-cardinal;
 
     li {
       color: $color-text;
@@ -228,7 +228,7 @@ $radio-checked-stroke-size: 6px;
   margin-bottom: 8px;
 
   &__text {
-    color: $color-grey;
+    color: $color-shuttle-grey;
   }
 }
 
@@ -240,7 +240,7 @@ $radio-checked-stroke-size: 6px;
 
   &:checked {
     & + .choice__text {
-      color: $color-grey-dark;
+      color: $color-shark;
     }
   }
 
@@ -248,7 +248,7 @@ $radio-checked-stroke-size: 6px;
     &:hover:not(:checked):not(:disabled) {
       & + .choice__text {
         &::before {
-          border-color: $color-grey-dark;
+          border-color: $color-shark;
           box-shadow: 0 0 0 1px rgba(35, 135, 0, .25);
         }
       }
@@ -258,7 +258,7 @@ $radio-checked-stroke-size: 6px;
   &:active {
     & + .choice__text {
       &::before {
-        border-color: $color-green-darker;
+        border-color: $color-japanese-laurel;
       }
     }
   }
@@ -268,7 +268,7 @@ $radio-checked-stroke-size: 6px;
       cursor: not-allowed;
 
       &::before {
-        background: $color-grey-panel;
+        background: $color-athens-grey;
       }
     }
   }
@@ -276,10 +276,10 @@ $radio-checked-stroke-size: 6px;
   .choice--error & {
     & + .choice__text,
     &:checked + .choice__text {
-      color: $color-red;
+      color: $color-cardinal;
 
       &::before {
-        border-color: $color-red;
+        border-color: $color-cardinal;
       }
     }
   }
@@ -294,7 +294,7 @@ $radio-checked-stroke-size: 6px;
       position: absolute;
       top: 1px;
       left: 0;
-      border: solid 1px $color-grey;
+      border: solid 1px $color-shuttle-grey;
       height: 22px;
       width: 22px;
       line-height: 1.4;
@@ -315,16 +315,16 @@ $radio-checked-stroke-size: 6px;
   &:checked {
     & + .choice__text {
       &::before {
-        border: solid $radio-checked-stroke-size $color-green;
+        border: solid $radio-checked-stroke-size $color-forest-green;
       }
     }
 
     &:disabled {
       & + .choice__text {
         &::before {
-          background: $color-grey;
-          border: solid $radio-checked-stroke-size $color-grey-panel;
-          box-shadow: 0 0 0 1px $color-grey;
+          background: $color-shuttle-grey;
+          border: solid $radio-checked-stroke-size $color-athens-grey;
+          box-shadow: 0 0 0 1px $color-shuttle-grey;
           width: 20px;
           height: 20px;
         }
@@ -350,7 +350,7 @@ $radio-checked-stroke-size: 6px;
     &:disabled {
       & + .choice__text {
         &::before {
-          color: $color-grey;
+          color: $color-shuttle-grey;
         }
       }
     }
@@ -358,7 +358,7 @@ $radio-checked-stroke-size: 6px;
     &:not(:disabled) {
       & + .choice__text {
         &::before {
-          background: $color-green;
+          background: $color-forest-green;
           border: none;
         }
       }
@@ -368,7 +368,7 @@ $radio-checked-stroke-size: 6px;
   &:disabled {
     & + .choice__text {
       &::before {
-        border-color: $color-grey;
+        border-color: $color-shuttle-grey;
       }
     }
   }
@@ -386,7 +386,7 @@ $radio-checked-stroke-size: 6px;
   .choice--error & {
     &:checked + .choice__text {
       &::before {
-        background: $color-red;
+        background: $color-cardinal;
       }
     }
   }
@@ -419,7 +419,7 @@ $radio-checked-stroke-size: 6px;
     &::before {
       content: core-icon-codepoint(question-mark-circle);
       font-family: $font-icons;
-      color: $color-grey;
+      color: $color-shuttle-grey;
       line-height: $body-line-height;
       display: inline-block;
       width: $body-text-size;

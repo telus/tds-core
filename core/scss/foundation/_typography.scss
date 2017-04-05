@@ -31,7 +31,7 @@ h4:not([class]):first-child {
 }
 
 .display-heading-1 {
-  color: $color-purple;
+  color: $color-grape;
   font-size: rem(42px);
   line-height: 1.14; // 48px
   font-weight: 300;
@@ -49,7 +49,7 @@ h1,
   font-size: rem(28px);
   line-height: 1.29; // 36px
   // letter-spacing: -1px;
-  color: $color-purple;
+  color: $color-grape;
   margin-bottom: baseline-margin(48px);
 
   @include from-breakpoint(medium) {
@@ -66,7 +66,7 @@ h2,
   font-size: rem(22px);
   line-height: 1.36; // 30px
   // letter-spacing: .25px;
-  color: $color-purple;
+  color: $color-grape;
   margin-bottom: baseline-margin(40px);
 
   + .subhead,
@@ -78,7 +78,7 @@ h2,
     font-weight: 400;
     font-size: rem(28px);
     line-height: 1.29; // 36px
-    // letter-spacing: -1.3px;
+    letter-spacing: .4px;
   }
 }
 
@@ -88,7 +88,7 @@ h3,
   font-size: rem(20px);
   line-height: 1.4; // 28px
   // letter-spacing: -1px;
-  color: $color-grey-dark;
+  color: $color-shark;
   margin-bottom: baseline-margin(40px);
 }
 
@@ -97,7 +97,7 @@ h4,
   font-weight: 700;
   font-size: rem(16px);
   // letter-spacing: -.8px;
-  color: $color-grey-dark;
+  color: $color-shark;
   line-height: 1.25; // 20px
   margin-bottom: baseline-margin(40px);
 }
@@ -163,7 +163,7 @@ small,
   font-size: rem($body-small-text-size);
   line-height: $body-small-line-height; // 24px;
   // letter-spacing: -.7px;
-  color: $color-grey-medium;
+  color: $color-raven;
 }
 
 //
@@ -186,11 +186,11 @@ a:visited {
 .chevron-link:link,
 .chevron-link:visited {
   text-decoration: none;
-  color: $color-purple;
+  color: $color-grape;
   font-weight: 500;
 
   &:hover {
-    color: $color-purple-light;
+    color: $color-royal-purple;
 
     .icon {
       left: 4px;
@@ -209,10 +209,10 @@ a:visited {
 .chevron-link--secondary,
 .chevron-link--secondary:link,
 .chevron-link--secondary:visited {
-  color: $color-green-darker;
+  color: $color-japanese-laurel;
 
   &:hover {
-    color: $color-green;
+    color: $color-forest-green;
   }
 }
 
@@ -222,7 +222,7 @@ a:visited {
 .chevron-link--inverted,
 .chevron-link--inverted:link,
 .chevron-link--inverted:visited {
-  color: $color-grey-panel;
+  color: $color-athens-grey;
 
   &:hover {
     color: $color-white;
@@ -235,7 +235,7 @@ a:visited {
   @include clear-descenders($color-link, $color-white);
 
   &.link--inverted {
-    @include clear-descenders($color-grey-panel, $color-purple);
+    @include clear-descenders($color-athens-grey, $color-grape);
   }
 }
 

@@ -69,7 +69,7 @@ class SelectorCounterExample extends Component {
               contextSuffix="smartphone plans"
             />
           </div>
-          <button className="button button-primary">Submit</button>
+          <button className="button button-purple">Submit</button>
         </div>
       </form>
     );

@@ -3,7 +3,7 @@
 
 .notification {
   padding: 22px 37px;
-  background-color: $color-grey-panel;
+  background-color: $color-athens-grey;
   display: table;
   width: 100%;
   min-height: 68px;
@@ -28,18 +28,17 @@
 }
 
 .notification--instructional {
-  background-color: $color-grey-panel;
+  background-color: $color-athens-grey;
 }
 
 .notification--branded {
-  background-color: $color-purple-panel;
+  background-color: $color-white-lilac;
 }
 
 .notification--success {
-  background-color: $color-green-panel;
+  background-color: $color-panache;
 }
 
 .notification--error {
-  background-color: $color-red-panel;
+  background-color: $color-lavender-blush;
 }
-

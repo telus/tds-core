@@ -4,41 +4,40 @@
 // Colours
 //
 
-$color-green: #248700;
-$color-green-darker: #177a00;
-$color-green-panel: #f4f9f2;
-$color-grey-light: #c4c4c5;
-$color-grey-medium: #6a6e74;
-$color-grey: #54595f;
-$color-grey-dark: #2a2c2e;
-$color-grey-panel: #f7f7f8;
-$color-purple: #4b286d;
-$color-purple-light: #7841b0;
-$color-purple-panel: #f2eff4;
-$color-red: #c12335;
-$color-red-panel: #fff6f8;
+$color-forest-green: #248700;
+$color-japanese-laurel: #177a00;
+$color-panache: #f4f9f2;
+$color-raven: #6a6e74;
+$color-shuttle-grey: #54595f;
+$color-shark: #2a2c2e;
+$color-athens-grey: #f7f7f8;
+$color-grape: #4b286d;
+$color-royal-purple: #7841b0;
+$color-white-lilac: #f2eff4;
+$color-cardinal: #c12335;
+$color-lavender-blush: #fff6f8;
 $color-white: #fff;
-$color-grey-dividers: #d8d8d8;
+$color-gainsboro: #d8d8d8;
+
+$color-grey-light: #c4c4c5;
 
 // Typography colors
 
 $color-font: #666;
-$color-font-darker: $color-grey-dark;
-$color-link: $color-grey;
-$color-link-hover: $color-grey-medium;
-$color-link-secondary: $color-grey; // DEPRECATED 0.4.0
-$color-link-secondary-hover: $color-grey-dark; // DEPRECATED 0.4.0
+$color-font-darker: $color-shark;
+$color-link: $color-shuttle-grey;
+$color-link-hover: $color-raven;
 $color-text: $color-font-darker;
 
 // Icon colors
 
-$color-icon-primary: $color-purple;
-$color-icon-primary-hover: $color-purple-light;
-$color-icon-secondary: $color-green-darker;
-$color-icon-secondary-hover: $color-green;
-$color-icon-disabled: $color-grey;
+$color-icon-primary: $color-grape;
+$color-icon-primary-hover: $color-royal-purple;
+$color-icon-secondary: $color-japanese-laurel;
+$color-icon-secondary-hover: $color-forest-green;
+$color-icon-disabled: $color-shuttle-grey;
 $color-icon-disabled-hover: #6a6e74;
-$color-icon-error: $color-red;
+$color-icon-error: $color-cardinal;
 
 // Background colours
 
@@ -94,8 +93,8 @@ $breakpoints: (
 
 $max-widths: (
   xs: auto,
-  small: 540px,
-  medium: 720px,
+  small: 514px,
+  medium: 730px,
   large: 960px,
   xl: 1140px
 );
