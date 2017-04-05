@@ -29,14 +29,6 @@ template: example.jade
   </div>
   <div class="grid-row">
     <div class="medium-6">
-      <h5>H5 Lorem ipsum dolor sit amet condimentum non est sed rutrum donec porta tortor mattis velit</h5>
-    </div>
-    <div class="medium-6">
-
-    </div>
-  </div>
-  <div class="grid-row">
-    <div class="medium-6">
       <p>p1 Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
     </div>
     <div class="medium-6">
