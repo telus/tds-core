@@ -116,6 +116,23 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     </p>
   </div>
     </div>
+    <div class="grid-row">
+  <div class="medium-4">
+  	    <span class="color-preview" style="background-color: rgb(255, 255, 255);"></span>
+  	    <p>
+  		<strong>White</strong>
+  	    </p>
+        <p>
+      `$color-white`
+        </p>
+  	    <p>
+  		#FFFFFF
+        </p>
+        <p>
+  		Usage: Page background, reverse links/buttons
+  	    </p>
+  	</div>
+  </div>
 </div>
 
 

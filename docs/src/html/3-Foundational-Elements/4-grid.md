@@ -45,7 +45,7 @@ Thorium will have five viewports over four breakpoints:
 
 ---
 
-Containers are 100% wide by default at all breakpoints. Give a `.container` block the `.container--limited-width` modifier to opt into the max widths from the table above.
+Containers are 100% wide by default at all breakpoints. Use `.container--limited-width` modifier to opt into the max widths from the table above.
 
 ## Responsiveness
 
