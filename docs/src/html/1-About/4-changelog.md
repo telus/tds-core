@@ -1,17 +1,99 @@
----
-title: Changelog
-template: changelog.jade
----
+
+
+
+## v0.10.0
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.10.0
+
+- remove ## from readme link
+- update stylelint to fix linting warnings
+- adjust button padding to 17px 20px 17px 20px just like business site buttons
+- fix issue#191 (#197)
+- Updated grid boards to include max width (#180)
+- adjust top/bottom padding on button
+- update colours on documentation to match latest sketch file
+- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+- add sass vars to documentation
+- change hex value from upppercase to lowercase to prevent build from failing
+- align colour documentation to the left
+- Layout fix (#201)
+- hide nav on automatically generated changelog page
+- fix to changelog page
+- remove fluidity section on grid.md
+- remove hack for Changelog link on Nav
+- hide doc nav on load on mobile views
+- add box-shadow to buttons to avoid shifting on hover
+- fix issue#188
+- fix formatting on changelog
+- add zip file with fonts needed to load sketch file
+- add links to font-for-sketch.zip file
+- remove min-height: 60px on buttons
+- minor style updates to content in colours.md
+- update Thorium to TDS in README.md copy
+- update upgrading guide
+- update getting started documentation
+- add ToC and reviewed content in setting-up-projects
+- update adoption thresholds section
+- update receiving updates content
+- update overview content
+- remove more instances of “Thorium” in documentation
+- add link to ttfautohint in icons script
+- update homepage content
+- fix issue#205
+- add background to show how max-width on container—limited-width works
+- document utility mixins
+- fix for documentation mobile nav
+- add ontouchstart event handler for mobile on doc nav
+- refactor mobile nav using css
+- add more details on how to use tds SCSS
+- Collapsible top border fix (#210)
+- add core-icons.otd to downloads page [doc]
+- update Roadmap.md
+- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+- make ms-input-placeholder pseudo class style more specific
+- move core-icon mixin to mixins.scss
+- minor copy updates/links
+- add styles for sup and sub
+- add minor copy updates
+- Squashed commit of the following:
+- generate core-icons.woff2
+- remove font-weight: normal instances
+- fix(buttons): adjust size of input fields and buttons now that default font-size has changed from 19
+- docs(update to UPGRADING.md): with latest changes
+- chore(add commitizen): command line utility used to follow standards for writing good commit message
+- docs(foundations): add toc
+- fix(webfonts): load helvetica 45, 55, 65 fonts from cdn
+- remove core-icons from download because .otf is not working with font-book
+- docs(downloads): updates fonts-for-sketch.zip with helvetica eText Pro 45, 55, 65
+- docs(colours): switch green and purple colours between primary and response sections
+- docs(docs navigation): remove bold style on links
+- fix(grid): adjust padding on xs view columns
+- docs(docs): add grid test example
+- add grid test example
+- docs(grid): adjust sample page with colorful grid
+- fix(buttons): set font size to 16px
+- fix(add new font size, line-heights and letter-spacing as per sketch file):
+- fix(fonts): use cdn old helvetica fonts until brand buys etext font
+- docs(colours): update colours section to match sketch file
+- docs(docs): minor updates to colours and grid documentation
+- docs(fonts): remove zip file with fonts for sketch
+- docs(grid): add 12 column colorful grid example
+- refactor(colours): update colour variables to match the colour names on sketch
+
+
 
 ## v0.9.5
-
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.5
 
 - Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-## v0.9.4
+- Changelog and version bump for v0.9.5
 
+
+
+## v0.9.4
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.4
@@ -21,15 +103,19 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.4
 - adjust disabled hover styles
 - fix auto-width on SelectorCounter component
 - Changelog and version bump for v0.9.4
-## v0.9.3
 
+
+
+## v0.9.3
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.3
 
 - Changelog and version bump for v0.9.3
-## v0.9.2
 
+
+
+## v0.9.2
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.2
@@ -39,24 +125,30 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.2
 - update doc
 - [[DSR-203](https://telusdigital.atlassian.net/browse/DSR-203)] Adding opt-in max-width to responsive grid (#145)
 - Changelog and version bump for v0.9.2
-## v0.9.1
 
+
+
+## v0.9.1
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.1
 
 - feature/BCM-165: Updated styling for Notification (#165)
 - Changelog and version bump for v0.9.1
-## v0.9.0
 
+
+
+## v0.9.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.0
 
 - Notification Component [[BCM-165](https://telusdigital.atlassian.net/browse/BCM-165)] (#156)
 - Changelog and version bump for v0.9.0
-## v0.8.0
 
+
+
+## v0.8.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.8.0
@@ -65,16 +157,20 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.8.0
 - Fix misspelled card scss import (#159)
 - Publish the Icon component documentation (#160)
 - Changelog and version bump for v0.8.0
-## v0.7.1
 
+
+
+## v0.7.1
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.1
 
 - Update dev & peer dependencies to TDS 0.7 (#157)
 - Changelog and version bump for v0.7.1
-## v0.7.0
 
+
+
+## v0.7.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.0
@@ -116,8 +212,10 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.0
 - End-to-end release automation with Jenkins [[BCM-213](https://telusdigital.atlassian.net/browse/BCM-213)] (#153)
 - Use bash instead of sh for shell scripts (#154)
 - Changelog and version bump for v0.7.0
-## v0.6.0
 
+
+
+## v0.6.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.6.0
@@ -158,8 +256,10 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.6.0
 - [[DSR-195](https://telusdigital.atlassian.net/browse/DSR-195)] Automated release to CDN (#119)
 - Releasing/v0.6.0 (#122)
 - Updating inter-module dependencies
-## v0.5.0
 
+
+
+## v0.5.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.5.0
@@ -193,8 +293,10 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.5.0
 - [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Isomorphic React build pipeline (#88)
 - Alpha 0.5.0 Update (#85)
 - Updating version number and changelog for v0.5.0 (#89)
-## v0.4.0
 
+
+
+## v0.4.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.4.0
@@ -220,16 +322,20 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.4.0
 - Restoring the header to the examples pages (#56)
 - Alpha 0.4.0 Update (#57)
 - Releasing v0.4.0 (#58)
-## v0.3.1
 
+
+
+## v0.3.1
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.1
 
 - Updating version & changelog for v0.3.1 (#38)
 - Updating consumption page for v0.3.1 (#39)
-## v0.3.0
 
+
+
+## v0.3.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.0
@@ -251,8 +357,10 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.0
 - Task: fixing checkbox example indentation (#34)
 - Task: adding a feature switch to Form Hints (#35)
 - Updating changelog & version for 0.3.0 (#36)
-## v0.2.1
 
+
+
+## v0.2.1
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.2.1
