@@ -52,10 +52,10 @@ A button that's used for primary actions. The `button` and `button-purple` block
 
 Button classes can also be applied to `<a>` tags.
 
-<a class="button button-purple" href="#">Anchor button</a>
+<a class="button button-purple" role="button" href="#">Anchor button</a>
 
 ```html
-<a class="button button-purple" href="#">
+<a class="button button-purple" role="button" href="#">
     Anchor button
 </a>
 ```
@@ -130,10 +130,10 @@ _Note_: The mobile button width is fluid and stretches to cover all columns curr
 
 The `button-link` class creates an element which behaves like a button, but looks like a link.
 
-<a class="button button-link" href="#">A link button</a>
+<a class="button button-link" role="button" href="#">A link button</a>
 
 ```html
-<a class="button button-link" href="#">
+<a class="button button-link" role="button" href="#">
     A link button
 </a>
 ```
@@ -147,6 +147,6 @@ Buttons will occupy 100% width of their parent's at the small viewport and below
 <div>
     <button class="button button-purple">Button</button>
     <button class="button button-purple" disabled>Disabled</button>
-    <a class="button button-purple" href="#">Anchor</a>
+    <a class="button button-purple" role="button" href="#">Anchor</a>
     <button class="button button-link">Link button</a>
 </div>
