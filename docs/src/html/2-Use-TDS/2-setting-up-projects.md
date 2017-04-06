@@ -5,7 +5,7 @@ template: doc.jade
 
 ### Designers
 * [For designers](#for-designers)
-* [TDS.sketch](#TDS.sketch)
+* [TDS.sketch !!THORIUM_VERSION!!](#TDS.sketch)
 * [Design resources](#design-resources)
 
 ### Dev
@@ -22,25 +22,25 @@ template: doc.jade
 
 ---
 
-The [TDS.sketch](/assets/downloads/TDS.sketch) file contains the latest styles, symbols, and artboards.
+The [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch) file contains the latest styles, symbols, and artboards.
 
 
 * **Step 1**: Explore the Foundations to learn the TDS design patterns and principles.
 * **Step 2**: Review the Components section, to familiarize yourself with the existing components which you can incorporate into your designs.
-* **Step 3**: Download [TDS.sketch](/assets/downloads/TDS.sketch) and [fonts](/assets/downloads/fonts-for-sketch.zip).
+* **Step 3**: Download [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch).
 * **Step 4**: Identify your needs by considering the user and outcome you're designing for—these considerations will help inform scope and the milestones and/or deliverables required.
 
 ## TDS.sketch
 
 ---
 
-The [TDS.sketch](/assets/downloads/TDS.sketch) file contains the latest pre-defined styles, symbols, and artboards. Design is encouraged to stay within [TDS.sketch](/assets/downloads/TDS.sketch) as copying, merging, and cross file consistency can be lost. Elements and component within artboards are stripped of written metrics and measurements as they have been codified and need not be changed.
+The [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch) file contains the latest pre-defined styles, symbols, and artboards. Design is encouraged to stay within [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch) as copying, merging, and cross file consistency can be lost. Elements and component within artboards are stripped of written metrics and measurements as they have been codified and need not be changed.
 
 ## Design resources
 
 ---
 
-- Download [TDS sketch file (TDS.sketch)](/assets/downloads/TDS.sketch)
+- Download [TDS sketch file (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch)
 
 ## Development process
 

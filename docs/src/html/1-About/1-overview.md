@@ -33,7 +33,7 @@ Design team should be ramped up and comfortable working in Sketch
 
 ---
 
-1. **Design integration:** Use styles from the [Sketch file](/assets/downloads/TDS.sketch), but custom code the entirety of the site.
+1. **Design integration:** Use styles from the [Sketch file !!THORIUM_VERSION!!](/assets/downloads/TDS.sketch), but custom code the entirety of the site.
 2. **CSS integration:** Use `telus-thorium-core` css styles only
 3. **JS integration:** Use `telus-thorium-enriched`, for this you must be familiar with the React framework and the following key concepts: Components, JSX
 Props & State, The Component API and Component Types

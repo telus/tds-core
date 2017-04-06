@@ -4,4 +4,4 @@ template: doc.jade
 ---
 
 ## Sketch file
-- [TDS.sketch](/assets/downloads/TDS.sketch)
+- [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch)
