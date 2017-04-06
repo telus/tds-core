@@ -152,18 +152,28 @@ p,
   }
 }
 
-small,
-.text--small {
+%text--medium {
   font-size: rem($body-medium-text-size);
-  line-height: $body-medium-line-height; // 20px;
-  // letter-spacing: -.7px;
+  line-height: $body-medium-line-height;
+  letter-spacing: .1px;
 }
 
-.text--legal {
-  font-size: rem($body-small-text-size);
-  line-height: $body-small-line-height; // 24px;
-  // letter-spacing: -.7px;
-  color: $color-raven;
+.text--medium {
+  @extend %text--medium;
+}
+
+small,
+.text--small {
+
+  // The 14px "small" text isn't readable on small viewports, so it's not		 +  font-size: rem($body-medium-text-size);
+  // applied until the medium breakpoint.		 +  line-height: $body-medium-line-height; // 20px;
+  @extend %text--medium;
+
+  @include from-breakpoint(medium) {
+    font-size: rem($body-small-text-size);
+    line-height: $body-small-line-height; // 24px;
+    color: $color-raven;
+  }
 }
 
 //

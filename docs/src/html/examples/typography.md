@@ -29,15 +29,15 @@ template: example.jade
   </div>
   <div class="grid-row">
     <div class="medium-6">
-      <p>p1 Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
+      <p>p1 .text Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
     </div>
     <div class="medium-6">
-      <p class="text--small">p2 .text--small Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</small>
+      <p class="text--medium">p2 .text--medium Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</small>
     </div>
   </div>
   <div class="grid-row">
     <div class="medium-6">
-      <p class="text--legal">p3 .text--legal Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
+      <p class="text--small">p3 .text--small Lorem ipsum dolor sit amet. Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
     </div>
     <div class="medium-6">
     </div>
