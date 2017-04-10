@@ -68,6 +68,7 @@ To create consistent leading the line height is set to double the value of the b
 - Helvetica Neue LT Std 35 Thin
 - Helvetica Neue LT Std 45 Light
 - Helvetica Neue LT Std 55 Roman
+- Helvetica Neue LT Std 65 Medium
 
 
 ## Headings
@@ -78,6 +79,17 @@ To create consistent leading the line height is set to double the value of the b
 - Use headings consistently to create a clear hierarchy
 - Terminate headlines and subheads with a period if they are complete sentences, but not if they are short fragments
 - Headings contain no paragraph styling.
+
+
+<br>
+
+# Display Heading 1
+
+To be used in Hero Banners. Text within it should only wrap to a maximum of 2 lines.
+
+```html
+<h1 class="display-heading-1">Heading 1</h1>
+```
 
 # Heading 1
 
