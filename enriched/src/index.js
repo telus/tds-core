@@ -3,7 +3,6 @@ import Icon from './components/Icon';
 import * as Grid from './components/Grid';
 import Collapsible from './components/Collapsible';
 import Card from './components/Card';
-import CheckList from './components/CheckList';
 import Notification from './components/Notification';
 
 export {
@@ -12,6 +11,5 @@ export {
   Grid,
   Collapsible,
   Card,
-  CheckList,
   Notification,
 };
