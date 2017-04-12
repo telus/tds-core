@@ -3,7 +3,7 @@ title: Typography
 template: example.jade
 ---
 
-<div class="container type-examples">
+<div class="container container--limited-width type-examples">
 
   <div class="grid-row">
     <div class="medium-12">
@@ -19,6 +19,7 @@ template: example.jade
       <h2>H2 Lorem ipsum dolor sit amet condimentum non est sed rutrum donec porta tortor mattis velit</h2>
     </div>
   </div>
+
   <div class="grid-row">
     <div class="medium-6">
       <h3>H3 Lorem ipsum dolor sit amet condimentum non est sed rutrum donec porta tortor mattis velit</h3>
@@ -27,6 +28,7 @@ template: example.jade
       <h4>H4 Lorem ipsum dolor sit amet condimentum non est sed rutrum donec porta tortor mattis velit</h4>
     </div>
   </div>
+
   <div class="grid-row">
     <div class="medium-6">
       <p>p1 .text Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
@@ -35,6 +37,7 @@ template: example.jade
       <p class="text--medium">p2 .text--medium Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</small>
     </div>
   </div>
+
   <div class="grid-row">
     <div class="medium-6">
       <p class="text--small">p3 .text--small Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
@@ -42,6 +45,7 @@ template: example.jade
     <div class="medium-6">
     </div>
   </div>
+
   <div class="grid-row">
     <div class="medium-6">
 	    <h3 class="heading-3">In a nutshell</h3>
@@ -64,7 +68,6 @@ template: example.jade
     		</li>
 	    </ul>
 	  </div>
-
   </div>
 
   <div class="grid-row">
@@ -90,21 +93,22 @@ template: example.jade
 	    </p>
 	  </div>
   </div>
+
   <div class="grid-row">
 	  <div class="medium-3">
 	    <h3>Managed Video</h3>
 	    <p>Meet with your team or customers live on a conference call from any phone<sup>1</sup>, regardless of location.</p>
-	</div>
-	<div class="medium-3 offset-medium-1">
-	    <h3>Managed Video</h3>
-	    <p>Meet with your team or customers live on a conference call from any phone<sup>1</sup>, regardless of location.</p>
-	</div>
-	<div class="medium-3 offset-medium-1">
-	    <h3>Managed Video</h3>
-	    <p>Meet with your team or customers live on a conference call from any phone<sup>1</sup>, regardless of location.</p>
-	</div>
     </div>
-    <div class="grid-row">
+    <div class="medium-3 offset-medium-1">
+  	    <h3>Managed Video</h3>
+  	    <p>Meet with your team or customers live on a conference call from any phone<sup>1</sup>, regardless of location.</p>
+  	</div>
+  	<div class="medium-3 offset-medium-1">
+  	    <h3>Managed Video</h3>
+  	    <p>Meet with your team or customers live on a conference call from any phone<sup>1</sup>, regardless of location.</p>
+  	</div>
+  </div>
+  <div class="grid-row">
 	  <div class="xs-12">
 	    <h2 class="heading-2">Lists</h2>
 
@@ -113,41 +117,41 @@ template: example.jade
 	    <h3 class="heading-3">Lists among paragraphs</h3>
 
 	    <p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 	    </p>
 
 	    <ul class="list list--bulleted">
-		<li class="list__item">Nunc condimentum non est sed rutrum</li>
-		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-		<li class="list__item">Aenean efficitur ut nibh in tempor</li>
+    		<li class="list__item">Nunc condimentum non est sed rutrum</li>
+    		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    		<li class="list__item">Aenean efficitur ut nibh in tempor</li>
 	    </ul>
 
 	    <p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 	    </p>
 
 	    <ol class="list list--numbered">
-		<li class="list__item">Nunc condimentum non est sed rutrum</li>
-		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-		<li class="list__item">Aenean efficitur ut nibh in tempor</li>
+    		<li class="list__item">Nunc condimentum non est sed rutrum</li>
+    		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    		<li class="list__item">Aenean efficitur ut nibh in tempor</li>
 	    </ol>
 
 	    <p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 	    </p>
 
 	    <ul class="list list--checked">
-		<li class="list__item">One</li>
-		<li class="list__item">Two</li>
-		<li class="list__item">Three</li>
+    		<li class="list__item">One</li>
+    		<li class="list__item">Two</li>
+    		<li class="list__item">Three</li>
 	    </ul>
 
 	    <p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 	    </p>
 
 	    <h3>
-		Unordered list with many sentences
+		    Unordered list with many sentences
 	    </h3>
 
 	    <ul class="list list--bulleted">
