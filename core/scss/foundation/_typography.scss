@@ -40,15 +40,16 @@ h4:not([class]):first-child {
   @include from-breakpoint(medium) {
     font-size: rem(72px);
     line-height: 1.11; // 80px
+    letter-spacing: .2px;
   }
 }
 
 h1,
 .heading-1 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: rem(28px);
   line-height: 1.29; // 36px
-  // letter-spacing: -1px;
+  letter-spacing: -.2px;
   color: $color-grape;
   margin-bottom: baseline-margin(48px);
 
@@ -56,18 +57,16 @@ h1,
     font-weight: 300;
     font-size: rem(44px);
     line-height: 1.18; // 52px
-    // letter-spacing: 0;
+    letter-spacing: 0;
   }
 }
 
 h2,
 .heading-2 {
-  // font-weight: 700  for eText
   font-weight: 400;
   font-size: rem(22px);
   line-height: 1.36; // 30px
-  // letter-spacing: .25px;
-  letter-spacing: .4px;
+  letter-spacing: .2px;
   color: $color-grape;
   margin-bottom: baseline-margin(40px);
 
@@ -88,7 +87,7 @@ h3,
   font-weight: 700;
   font-size: rem(20px);
   line-height: 1.4; // 28px
-  // letter-spacing: -1px;
+  letter-spacing: 0;
   color: $color-shark;
   margin-bottom: baseline-margin(40px);
 }
@@ -97,7 +96,7 @@ h4,
 .heading-4 {
   font-weight: 700;
   font-size: rem(16px);
-  // letter-spacing: -.8px;
+  letter-spacing: 0;
   color: $color-shark;
   line-height: 1.25; // 20px
   margin-bottom: baseline-margin(40px);
