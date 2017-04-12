@@ -32,7 +32,7 @@ h4:not([class]):first-child {
 
 .display-heading-1 {
   color: $color-grape;
-  font-size: rem(42px);
+  font-size: rem(44px);
   line-height: 1.14; // 48px
   font-weight: 300;
   margin-bottom: baseline-margin(48px);
@@ -49,7 +49,7 @@ h1,
   font-weight: 400;
   font-size: rem(28px);
   line-height: 1.29; // 36px
-  letter-spacing: -.2px;
+  letter-spacing: -1.6px;
   color: $color-grape;
   margin-bottom: baseline-margin(48px);
 
@@ -64,9 +64,9 @@ h1,
 h2,
 .heading-2 {
   font-weight: 400;
-  font-size: rem(22px);
+  font-size: rem(24px);
   line-height: 1.36; // 30px
-  letter-spacing: .2px;
+  letter-spacing: -.4px;
   color: $color-grape;
   margin-bottom: baseline-margin(40px);
 
@@ -79,6 +79,7 @@ h2,
     font-weight: 400;
     font-size: rem(28px);
     line-height: 1.29; // 36px
+    letter-spacing: -.8px;
   }
 }
 
@@ -87,16 +88,16 @@ h3,
   font-weight: 700;
   font-size: rem(20px);
   line-height: 1.4; // 28px
-  letter-spacing: 0;
+  letter-spacing: -.6px;
   color: $color-shark;
-  margin-bottom: baseline-margin(40px);
+  margin-bottom: baseline-margin(48px);
 }
 
 h4,
 .heading-4 {
   font-weight: 700;
   font-size: rem(16px);
-  letter-spacing: 0;
+  letter-spacing: -.6px;
   color: $color-shark;
   line-height: 1.25; // 20px
   margin-bottom: baseline-margin(40px);
@@ -144,7 +145,7 @@ p,
 .text {
   font-size: rem($body-text-size);
   line-height: $body-line-height; // 32px
-  // letter-spacing: -1px;
+  letter-spacing: -1px;
   margin-bottom: 1rem;
 
   a {
@@ -155,7 +156,7 @@ p,
 %text--medium {
   font-size: rem($body-medium-text-size);
   line-height: $body-medium-line-height;
-  letter-spacing: .1px;
+  letter-spacing: -.8px;
 }
 
 .text--medium {
@@ -173,6 +174,7 @@ small,
     font-size: rem($body-small-text-size);
     line-height: $body-small-line-height; // 24px;
     color: $color-raven;
+    letter-spacing: -.6px;
   }
 }
 
