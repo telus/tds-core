@@ -121,7 +121,7 @@ createJenkinsJob(
     git {
       remote {
         github('telusdigital/telus-thorium-core', 'ssh')
-        credentials('jenkins')
+        credentials('tds-deploy')
         branch 'master'
       }
     }
@@ -338,4 +338,3 @@ def createJenkinsDeployJob(String name, String target, String artifactsSource, C
     }
   }.with closure
 }
-
