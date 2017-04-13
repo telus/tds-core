@@ -113,6 +113,7 @@ createJenkinsJob(
       usernamePassword('AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'aws-thorium-deployment')
       string('THORIUM_NPM_TOKEN', 'npm-thorium-deployment')
     }
+    sshAgent 'tds-deploy'
   }
   parameters {
     stringParam('THORIUM_RELEASE_VERSION', '', 'New version to create (without "v"). Ex: 1.2.3')
@@ -121,7 +122,7 @@ createJenkinsJob(
     git {
       remote {
         github('telusdigital/telus-thorium-core', 'ssh')
-        credentials('tds-deploy')
+        credentials('jenkins')
         branch 'master'
       }
     }
