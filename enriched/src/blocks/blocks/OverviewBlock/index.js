@@ -1,23 +1,23 @@
 import React from 'react';
 import cx from 'classnames';
-import CheckList from '../../components/CheckList'
-import TextTitleBodyButton from '../../components/TextTitleBodyButton'
+import CheckList from '../../components/CheckList';
+import TextTitleBodyButton from '../../components/TextTitleBodyButton';
 
 const OverviewBlock = (props) => {
   const {className, ctaLink, overviewTitle, overviewDescription, sideContent} = props;
   const cls = cx(className);
   const bodyContent = {
-                        ctaLink,
-                        title: overviewTitle,
-                        description: overviewDescription
-                      };
+    ctaLink,
+    title: overviewTitle,
+    description: overviewDescription
+  };
   return (
     <div className={`${cls} container container--limited-width`}>
-      <div className='grid-row'>
-        <div className='large-7 medium-7 small-12'>
+      <div className="grid-row">
+        <div className="large-7 medium-7 small-12">
           <TextTitleBodyButton {...bodyContent}/>
         </div>
-        <div className='large-4 offset-large-1 medium-5 small-12'>
+        <div className="large-4 offset-large-1 medium-5 small-12">
           <CheckList {...sideContent}/>
         </div>
       </div>

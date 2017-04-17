@@ -35,5 +35,4 @@ describe('<TextTitleBodyButton />', () => {
     expect(textTitleBodyButton.find('a').props().href).toBe('href');
     expect(textTitleBodyButton.find('a').props().target).toBe('target');
   });
-
 });
