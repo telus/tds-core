@@ -20,6 +20,6 @@ const OverviewBlockExample = () => {
   return (
     <OverviewBlock {...props} />
   );
-}
+};
 
 export default OverviewBlockExample;

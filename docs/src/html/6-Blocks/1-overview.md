@@ -30,7 +30,7 @@ const OverviewBlockExample = () => {
       target: '_blank',
       href: 'https://www.telus.com',
       text: 'Go Home'
-    }
+    },
     sideContent: {
       listTitle: 'List of Numbers',
       listItems: ['one', 'two', 'three']
