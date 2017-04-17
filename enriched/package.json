@@ -21,7 +21,7 @@
   "peerDependencies": {
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
-    "telus-thorium-core": "^0.10.2"
+    "telus-thorium-core": "^0.11.4"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
