@@ -15,7 +15,7 @@ tagExample: TDSBlocks.OverviewBlockExample
 
 ```javascript
 import React, { Component, PropTypes } from 'react';
-import { OverviewBlock } from 'telus-thorium-enriched/lib/blocks/blocks/OverviewBlock';
+import OverviewBlock from 'telus-thorium-enriched/lib/blocks/blocks/OverviewBlock';
 
 const OverviewExample = () => {
     return (
@@ -28,9 +28,7 @@ export default OverviewExample;
 
 <div class="container container--limited-width">
 
-    <h1>Overview Block</h1>
-
-    <h2>Overview</h2>
+    <h4>Overview Block</h4>
 
     <p>(when to use)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 

@@ -1,25 +1,51 @@
 import React from 'react';
+import cx from 'classnames';
+import CheckList from '../../components/CheckList'
+import TextTitleBodyButton from '../../components/TextTitleBodyButton'
 
 const OverviewBlock = (props) => {
-  const {header} = props;
-
-  const renderHeader = header === '' ? null : <h4>{header}</h4>;
-
+  const {className, ctaLink, overviewTitle, overviewDescription, sideContent} = props;
+  const cls = cx(className);
+  const bodyContent = {
+                        ctaLink,
+                        title: overviewTitle,
+                        description: overviewDescription
+                      };
   return (
-    <div className="container container--limited-width">
-      {renderHeader}
+    <div className={`${cls} container container--limited-width`}>
+      <div className='grid-row'>
+        <div className='large-7 medium-7 small-12'>
+          <TextTitleBodyButton {...bodyContent}/>
+        </div>
+        <div className='large-4 offset-large-1 medium-5 small-12'>
+          <CheckList {...sideContent}/>
+        </div>
+      </div>
     </div>
   );
 };
 
 OverviewBlock.propTypes = {
   className: React.PropTypes.string,
-  header: React.PropTypes.string
+  overviewTitle: React.PropTypes.string,
+  overviewDescription: React.PropTypes.string,
+  ctaLink: React.PropTypes.object,
+  sideContent: React.PropTypes.object
 };
 
 OverviewBlock.defaultProps = {
   className: '',
-  header: ''
+  overviewTitle: '',
+  overviewDescription: '',
+  ctaLink: {
+    target: '',
+    href: '',
+    text: ''
+  },
+  sideContent: {
+    listTitle: '',
+    listItems: []
+  }
 };
 
 export default OverviewBlock;
