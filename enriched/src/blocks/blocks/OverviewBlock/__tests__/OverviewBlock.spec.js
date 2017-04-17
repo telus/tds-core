@@ -14,7 +14,7 @@ describe('<OverviewBlock />', () => {
     },
     sideContent: {
       listTitle: 'title',
-      listItems: []
+      listItems: ['one', 'two']
     }
   };
 
@@ -33,6 +33,6 @@ describe('<OverviewBlock />', () => {
   it('renders a checklist Component', () => {
     expect(overviewBlock.find('CheckList')).toBeDefined();
     expect(overviewBlock.find('CheckList').props().listTitle).toBe('title');
-    expect(overviewBlock.find('CheckList').props().listItems).toEqual([]);
+    expect(overviewBlock.find('CheckList').props().listItems).toEqual(['one', 'two']);
   });
 });
