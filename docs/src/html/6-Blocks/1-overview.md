@@ -1,39 +1,65 @@
 ---
 title: Overview Block
-template: layout-blocks.jade
-tagExample: TDSBlocks.OverviewBlockExample
+template: doc.jade
 ---
 
-<div id="example"></div>
+## Overview
 
+An Overview Block is a block that is composed of a [TextTitleBodyButton](../5-Block%20Components/2-textTitleBodyButton.html) and [CheckList](../5-Block%20Components/1-checklist.html).
+
+---
+
+### Example
+
+<div class="grid-row">
+  <div class='small-12'>
+    <div id="overviewBlockExample">
+    </div>
+  </div>
+</div>
 <script type="text/babel">
   ReactDOM.render(
     <TDSBlocks.OverviewBlockExample />,
-    document.getElementById('example')
+    document.getElementById('overviewBlockExample')
   );
 </script>
 
 ```javascript
-import React, { Component, PropTypes } from 'react';
-import OverviewBlock from 'telus-thorium-enriched/lib/blocks/blocks/OverviewBlock';
+import React from 'react';
+import OverviewBlock from 'telus-thorium-enriched/blocks/blocks/OverviewBlock';
 
-const OverviewExample = () => {
-    return (
-      <OverviewBlock header="test" />
-    );
+const OverviewBlockExample = () => {
+  const props = {
+    className: 'class',
+    overviewTitle: 'Overview',
+    overviewDescription: 'Lorem ipsum dolor sit amet, modo scaevola pertinax ius no. Ut brute nobis intellegam duo, ullum fabulas fabellas quo at.',
+    ctaLink: {
+      target: '_blank',
+      href: 'https://www.telus.com',
+      text: 'Go Home'
+    }
+    sideContent: {
+      listTitle: 'List of Numbers',
+      listItems: ['one', 'two', 'three']
+    }
+  };
+
+  return (
+    <OverviewBlock {..props} />
+  );
 }
 
-export default OverviewExample;
+export default OverviewBlockExample;
 ```
 
-<div class="container container--limited-width">
+## API
 
-    <h4>Overview Block</h4>
 
-    <p>(when to use)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-    <h2>Props Table</h2>
-
-    <h2>Contentful Content Model Name</h2>
-
-</div>
+---
+| Property |   Description   | Type | Default |
+|:----|:------|:---|:---|
+| `className` | additional css classes | `string` |  '' |
+| `ctaLink` | object with target, href, and text  | `object` |  {target: '', href: '', text: ''} |
+| `overviewDescription` | content for paragraph element | `string` |  '' |
+| `overviewTitle` | header for content | `string` |  '' |
+| `sideContent` | object with title and list of items | `object` |  {listTitle: '', listItems: []} |

@@ -5,9 +5,11 @@ template: doc.jade
 
 ## Overview
 
+A TextTitleBodyButton is a component composed of an header, paragraph, and a call to action link.
+
 ---
 
-A TextTitleBodyButton is a component composed of an header, paragraph, and a call to action link.
+### Example
 
 <div class="grid-row">
   <div class='small-12'>
@@ -32,8 +34,8 @@ const TextTitleBodyButtonEx = () => {
     title: 'Overview',
     description: 'Lorem ipsum dolor sit amet, modo scaevola pertinax ius no. Ut brute nobis intellegam duo, ullum fabulas fabellas quo at.',
     ctaLink: {
-      target: 'target',
-      href: 'href',
+      target: '_blank',
+      href: 'https://www.telus.com',
       text: 'Go Home'
     }
   };

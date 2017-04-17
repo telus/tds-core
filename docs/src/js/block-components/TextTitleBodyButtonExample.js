@@ -7,8 +7,8 @@ const TextTitleBodyButtonExample = () => {
     title: 'Overview',
     description: 'Lorem ipsum dolor sit amet, modo scaevola pertinax ius no. Ut brute nobis intellegam duo, ullum fabulas fabellas quo at.',
     ctaLink: {
-      target: 'target',
-      href: 'href',
+      target: '_blank',
+      href: 'https://www.telus.com',
       text: 'Go Home'
     }
   };
