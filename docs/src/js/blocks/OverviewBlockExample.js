@@ -4,7 +4,7 @@ import OverviewBlock from 'telus-thorium-enriched/blocks/blocks/OverviewBlock';
 const OverviewBlockExample = () => {
   const props = {
     className: 'class',
-    overviewTitle: 'Overview',
+    overviewTitle: 'Lorem Ipsum',
     overviewDescription: 'Lorem ipsum dolor sit amet, modo scaevola pertinax ius no. Ut brute nobis intellegam duo, ullum fabulas fabellas quo at.',
     ctaLink: {
       target: '_blank',
