@@ -38,7 +38,7 @@ const OverviewBlockExample = () => {
   };
 
   return (
-    <OverviewBlock {..props} />
+    <OverviewBlock {...props} />
   );
 }
 
