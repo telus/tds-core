@@ -15,15 +15,15 @@ describe('<CheckList />', () => {
   });
 
   it('renders a header with content from the header props', () => {
-    const header = 'header';
-    const checkListComponent = mount( <CheckList header={header}/> );
+    const listTitle = 'header';
+    const checkListComponent = mount( <CheckList listTitle={listTitle}/> );
     expect(checkListComponent.find('h4')).toBeDefined();
-    expect(checkListComponent.find('h4').text()).toBe(header);
+    expect(checkListComponent.find('h4').text()).toBe(listTitle);
   });
 
   it('renders a list of items from the list props', () => {
-    const list = ['one', 'two', 'three'];
-    const checkListComponent = mount( <CheckList list={list}/> );
+    const listItems = ['one', 'two', 'three'];
+    const checkListComponent = mount( <CheckList listItems={listItems}/> );
     expect(checkListComponent.find('ul')).toBeDefined();
     expect(checkListComponent.find('li').length).toBe(3);
   });

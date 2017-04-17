@@ -2,14 +2,14 @@ import React from 'react';
 import cx from 'classnames';
 
 const CheckList = (props) => {
-  const {className, header, list} = props;
+  const {className, listItems, listTitle} = props;
   const cls = cx(className);
 
-  const renderCheckList = list.map((item, index) => {
+  const renderCheckList = listItems.map((item, index) => {
     return (<li key={index} className="list__item">{item}</li>);
   });
 
-  const renderHeader = header === '' ? null : <h4>{header}</h4>;
+  const renderHeader = listTitle === '' ? null : <h4>{listTitle}</h4>;
 
   return (
     <div className={cls}>
@@ -23,14 +23,14 @@ const CheckList = (props) => {
 
 CheckList.propTypes = {
   className: React.PropTypes.string,
-  header: React.PropTypes.string,
-  list: React.PropTypes.array
+  listTitle: React.PropTypes.string,
+  listItems: React.PropTypes.array
 };
 
 CheckList.defaultProps = {
   className: '',
-  header: '',
-  list: []
+  listTitle: '',
+  listItems: []
 };
 
 export default CheckList;
