@@ -84,8 +84,8 @@ $icon-font-prefix: 'http://tds.telus.com/assets/fonts';
 // small: (544px, 767px), medium: (768px, 992px)). Media Query-generating mixins
 // will automatically adjust by 1px where necessary.
 $breakpoints: (
-  xs: (null,   544px),
-  small: (544px,  768px),
+  xs: (null,   576px),
+  small: (576px,  768px),
   medium: (768px,  992px),
   large: (992px, 1200px),
   xl: (1200px, null)
@@ -93,10 +93,10 @@ $breakpoints: (
 
 $max-widths: (
   xs: auto,
-  small: 514px,
-  medium: 730px,
+  small: 544px,
+  medium: 736px,
   large: 960px,
-  xl: 1140px
+  xl: 1168px
 );
 
 // 12 columns all the way down.
@@ -108,7 +108,7 @@ $columns: (
   xl: 12
 );
 
-$gutter: 30px;
+$gutter: 32px;
 
 //
 // Feature flags
