@@ -26,13 +26,13 @@ A CheckList will take on the full width of its parent.
 
 ```javascript
 import React, { Component, PropTypes } from 'react';
-import { CheckList } from 'telus-thorium-enriched/lib/blocks/components/CheckList';
+import CheckList from 'telus-thorium-enriched/lib/blocks/components/CheckList';
 
 const CheckListEx = () => {
     return (
       <div className="grid-row">
         <div className='small-12 medium-6 large-4'>
-          <CheckList header='List of Numbers' list={['one', 'two', 'three']}/>
+          <CheckList listTitle='List of Numbers' listItems={['one', 'two', 'three']}/>
         </div>
       </div>
     );
@@ -49,5 +49,5 @@ export default CheckListEx;
 | Property |   Description   | Type | Default |
 |:----|:------|:---|:---|
 | `className` | additional css classes | `string` |  '' |
-| `header` | header for list | `string` |  '' |
-| `list` | list of content | `array` |  [] |
+| `listTitle` | header for list | `string` |  '' |
+| `listItems` | list of content | `array` |  [] |
