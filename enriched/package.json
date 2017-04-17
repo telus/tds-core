@@ -37,6 +37,7 @@
     "clean-css": "^3.4.20",
     "css-loader": "^0.27.3",
     "enzyme": "^2.4.1",
+    "enzyme-to-json": "^1.5.1",
     "eslint": "^1.1.0",
     "eslint-config-airbnb": "^1.0.0",
     "eslint-plugin-babel": "^3.0.0",
