@@ -3,6 +3,12 @@ title: Overview Block
 template: layout-blocks.jade
 ---
 
+## Overview
+
+An Overview Block is a block that is composed of a [TextTitleBodyButton](../5-Block%20Components/2-textTitleBodyButton.html) and [CheckList](../5-Block%20Components/1-checklist.html).
+
+---
+
 <div id="overviewBlockExample"></div>
 <script type="text/babel">
   ReactDOM.render(
@@ -38,11 +44,6 @@ const OverviewBlockExample = () => {
 
 export default OverviewBlockExample;
 ```
-
-## Overview
-
-An Overview Block is a block that is composed of a [TextTitleBodyButton](../5-Block%20Components/2-textTitleBodyButton.html) and [CheckList](../5-Block%20Components/1-checklist.html).
-
 
 
 ## API
