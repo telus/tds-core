@@ -1,6 +1,6 @@
 {
   "name": "telus-thorium-docs",
-  "version": "0.13.1",
+  "version": "0.13.2",
   "description": "TELUS Design System documentation website",
   "main": "index.js",
   "scripts": {
@@ -49,8 +49,8 @@
     "style-loader": "^0.13.1",
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0",
-    "telus-thorium-core": "^0.13.1",
-    "telus-thorium-enriched": "^0.13.1",
+    "telus-thorium-core": "^0.13.2",
+    "telus-thorium-enriched": "^0.13.2",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
     "wintersmith": "^2.3.2"

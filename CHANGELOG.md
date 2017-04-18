@@ -2,6 +2,16 @@
 
 
 
+## v0.13.2
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.13.2
+
+- fix(blocks): got rid of `blocks/blocks` folder
+- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+
+
+
 ## v0.13.1
 
 
