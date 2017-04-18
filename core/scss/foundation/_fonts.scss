@@ -16,8 +16,7 @@ $font-url-prefix: "https://cdn.telus.digital/thorium/core/fonts"; /* stylelint-d
     url("#{$font-url-prefix}/56be84de-9d60-4089-8df0-0ea6ec786b84.eot?#iefix") format("eot");
 }
 
-// $font-url-prefix: "#{$font-url-prefix}/etext";
-$font-url-prefix: "/assets/fonts/helvetica/etext-45-light";
+$font-url-prefix: "#{$font-url-prefix}/etext";
 
 //
 // Helvetica Neue Light 45
@@ -27,17 +26,11 @@ $font-url-prefix: "/assets/fonts/helvetica/etext-45-light";
   font-style: normal;
   font-weight: 400;
   src:
-    // url("#{$font-url-prefix}/b8765d4b-d9a3-48b9-ac65-560e7517cf0e.woff2") format("woff2"),
-    // url("#{$font-url-prefix}/d7d2e6c6-fc3a-41a5-9b52-648e12e215b2.woff") format("woff"),
-    // url("#{$font-url-prefix}/cb64744b-d0f7-4ef8-a790-b60d6e3e4f21.ttf") format("truetype"),
-    // url("#{$font-url-prefix}/e0781a75-0ecb-464e-b6e9-85780ddc0921.eot?#iefix") format("eot");
     url("#{$font-url-prefix}/b8765d4b-d9a3-48b9-ac65-560e7517cf0e.woff2") format("woff2"),
     url("#{$font-url-prefix}/d7d2e6c6-fc3a-41a5-9b52-648e12e215b2.woff") format("woff"),
     url("#{$font-url-prefix}/cb64744b-d0f7-4ef8-a790-b60d6e3e4f21.ttf") format("truetype"),
     url("#{$font-url-prefix}/e0781a75-0ecb-464e-b6e9-85780ddc0921.eot?#iefix") format("eot");
 }
-
-$font-url-prefix: "/assets/fonts/helvetica/etext-55-roman";
 
 //
 // Helvetica Neue Roman 55
@@ -53,8 +46,6 @@ $font-url-prefix: "/assets/fonts/helvetica/etext-55-roman";
     url("#{$font-url-prefix}/706ec8e5-fe4a-4518-91a6-7aba4d3d333f.eot?#iefix") format("eot");
 }
 
-$font-url-prefix: "/assets/fonts/helvetica/etext-65-medium";
-
 //
 // Helvetica Neue Medium 65
 //
@@ -63,7 +54,7 @@ $font-url-prefix: "/assets/fonts/helvetica/etext-65-medium";
   font-style: normal;
   font-weight: 700;
   src:
-    url("#{$font-url-prefix}/3e8a8b56-3cb0-4347-b670-eaaf06b76e9b.woff2") format("woff2"),
+    url("https://cdn.telus.digital/thorium/core/fonts/etext/3e8a8b56-3cb0-4347-b670-eaaf06b76e9b.woff2") format("woff2"),
     url("#{$font-url-prefix}/07173950-fa69-4b65-9c71-0cf2ec00b51d.woff") format("woff"),
     url("#{$font-url-prefix}/aac5a4b8-ffd3-4529-a098-21b91bc86f9a.ttf") format("truetype"),
     url("#{$font-url-prefix}/a747e1ea-ecdf-4f3d-ad47-3df9cfbee3cc.eot?#iefix") format("eot");
