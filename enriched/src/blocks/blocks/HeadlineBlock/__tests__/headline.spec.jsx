@@ -28,6 +28,6 @@ describe('Headline', () => {
 
   it('should use headline style', () => {
     const wrapper = mount(<Headline {...data} />);
-    expect(wrapper.find('div').first().hasClass('headline')).toBeTruthy();
+    expect(wrapper.find('div').first().hasClass('headline-block__bg')).toBeTruthy();
   });
 });
