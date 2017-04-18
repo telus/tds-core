@@ -49,26 +49,18 @@ To create consistent leading the line height is set to double the value of the b
 * Looks friendlier and less formal
 
 
-## Fonts
+## Fonts for Sketch and Webfonts
 ---
-
-### Web:
-
-- Neue Helvetica W01 35 Thin
-- Helvetica Neue For BBC W01 45 Light
-- Helvetica Neue For BBC 55 Roman
-
-### Web-backup:
-
-- Arial W01 Regular
-- Arial W02 Bold
-
-### Desktop/Sketch:
 
 - Helvetica Neue LT Std 35 Thin
 - Helvetica Neue LT Std 45 Light
 - Helvetica Neue LT Std 55 Roman
 - Helvetica Neue LT Std 65 Medium
+
+### Web-backup:
+
+- Arial W01 Regular
+- Arial W02 Bold
 
 
 ## Headings
