@@ -1,5 +1,8 @@
 import React from 'react';
-import './headline.scss';
+
+if ( process.env.BROWSER ) {
+  require('./headline.scss');
+}
 
 const HeadlineBlock = (props) => {
   const { eyebrow, title } = props;
