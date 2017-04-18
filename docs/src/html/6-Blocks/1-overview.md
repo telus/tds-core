@@ -19,7 +19,7 @@ An Overview Block is a block that is composed of a [TextTitleBodyButton](../5-Bl
 
 ```javascript
 import React from 'react';
-import OverviewBlock from 'telus-thorium-enriched/blocks/blocks/OverviewBlock';
+import OverviewBlock from 'telus-thorium-enriched/blocks/OverviewBlock';
 
 const OverviewBlockExample = () => {
   const props = {

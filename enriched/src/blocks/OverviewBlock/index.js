@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
-import CheckList from '../../components/CheckList';
-import TextTitleBodyButton from '../../components/TextTitleBodyButton';
+import CheckList from '../components/CheckList';
+import TextTitleBodyButton from '../components/TextTitleBodyButton';
 
 const OverviewBlock = (props) => {
   const {className, ctaLink, overviewTitle, overviewDescription, sideContent} = props;
