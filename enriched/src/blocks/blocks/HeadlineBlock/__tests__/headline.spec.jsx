@@ -4,14 +4,14 @@ import { mountToJson } from 'enzyme-to-json';
 import Headline from '../';
 
 describe('Headline', () => {
-  const data = { subcategory: 'Foo', title: 'Bar' };
+  const data = { eyebrow: 'Foo', title: 'Bar' };
 
   it('matches snapshot', () => {
     const wrapper = mount(<Headline {...data} />);
     expect(mountToJson(wrapper)).toMatchSnapshot();
   });
 
-  it('should render subcategory', () => {
+  it('should render eyebrow', () => {
     const wrapper = mount(<Headline {...data} />);
     expect(wrapper.find('p').first().render().text()).toEqual('Foo');
   });
