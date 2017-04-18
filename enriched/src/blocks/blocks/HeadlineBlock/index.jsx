@@ -8,11 +8,11 @@ const HeadlineBlock = (props) => {
   const { eyebrow, title } = props;
 
   return (
-    <div className="headline">
+    <div className="headline-block__bg">
       <div className="container container--limited-width">
         <div className="grid-row">
           <div className="medium-6 large-7 xl-7">
-            <p className="heading-4 grape">{eyebrow}</p>
+            <p className="heading-4 headline-block--grape">{eyebrow}</p>
             <h1 className="display-heading-1">{title}</h1>
           </div>
         </div>
