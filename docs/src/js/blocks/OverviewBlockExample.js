@@ -1,5 +1,5 @@
 import React from 'react';
-import OverviewBlock from 'telus-thorium-enriched/blocks/OverviewBlock';
+import { OverviewBlock } from 'telus-thorium-enriched/blocks';
 
 const OverviewBlockExample = () => {
   const props = {
