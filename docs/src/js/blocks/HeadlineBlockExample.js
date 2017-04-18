@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadlineBlock from 'telus-thorium-enriched/blocks/HeadlineBlock';
+import { HeadlineBlock } from 'telus-thorium-enriched/blocks';
 
 const HeadlineBlockExample = () => {
   const props = {
