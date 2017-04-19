@@ -51,6 +51,10 @@ module.exports = {
       {
         test: /\.s?css$/,
         loaders: ['style', 'css', 'postcss', 'sass']
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        loader: 'url-loader?limit=8192&name=images/[hash:8].[name].[ext]'
       }
     ]
   },
