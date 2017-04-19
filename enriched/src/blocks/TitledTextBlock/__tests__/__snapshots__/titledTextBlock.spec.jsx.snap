@@ -8,7 +8,8 @@ exports[`TextBlock Component matches snapshot 1`] = `
       },
     ]
   }
-  title="Title1">
+  title="Title1"
+  titleTagType="h1">
   <div
     className="titled-text-block">
     <div
@@ -22,9 +23,9 @@ exports[`TextBlock Component matches snapshot 1`] = `
           </h1>
           <div
             className="titled-text-component">
-            <h3>
+            <h4>
               Small Title 1
-            </h3>
+            </h4>
             <p>
               Small Text1
             </p>

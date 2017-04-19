@@ -53,3 +53,4 @@ export default TitledTextBlockExample;
 |:----|:------|:---|:---|
 | `title` | section title | `string` |  <p style='color: red'>required</p> |
 | `content` | array of objects which have a title and content | `object` | <p style='color: red'>required</p>  |
+| `titleTagType` | tag type of the block title | `string` | "h2"  |

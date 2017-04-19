@@ -7,11 +7,11 @@ if ( process.env.BROWSER ) {
 class TitledTextBlock extends Component {
 
   render() {
-    const { title, content } = this.props;
+    const { title, content, titleTagType } = this.props;
 
     const contentHtml = content.map((c, index) => (
       <div key={index} className="titled-text-component">
-        <h3>{c.title}</h3>
+        <h4>{c.title}</h4>
         <p>{c.content}</p>
       </div>
     ));
@@ -21,7 +21,7 @@ class TitledTextBlock extends Component {
         <div className="container container--limited-width">
           <div className="grid-row">
             <div className="small-12 medium-12 large-12">
-              <h1>{title}</h1>
+              {React.createElement(titleTagType, null, title)}
               {contentHtml}
             </div>
           </div>
@@ -36,7 +36,12 @@ TitledTextBlock.propTypes = {
   content: React.PropTypes.arrayOf(React.PropTypes.shape({
     title: React.PropTypes.string.isRequired,
     content: React.PropTypes.string.isRequired
-  })).isRequired
+  })).isRequired,
+  titleTagType: React.PropTypes.string
+};
+
+TitledTextBlock.defaultProps = {
+  titleTagType: 'h1'
 };
 
 export default TitledTextBlock;
