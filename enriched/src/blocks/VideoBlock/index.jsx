@@ -5,7 +5,7 @@ if ( process.env.BROWSER ) {
 }
 
 const VideoBlock = (props) => {
-  const { title, subtext, videoUrl } = props;
+  const { caption, subtext, videoUrl } = props;
 
   return (
     <div className="videoblock">
@@ -13,10 +13,10 @@ const VideoBlock = (props) => {
         <div className="grid-row">
           <div className="medium-8">
             <div className="video-container">
-              <iframe allowFullScreen="" frameBorder="0" src={videoUrl} title={title}></iframe>
+              <iframe allowFullScreen="" frameBorder="0" src={videoUrl} title={caption}></iframe>
             </div>
-            { title && <p className="text text--medium">
-              <strong>{title}: </strong>
+            { caption && <p className="text text--medium">
+              <strong>{caption}: </strong>
               {subtext}
             </p>}
           </div>
@@ -27,14 +27,14 @@ const VideoBlock = (props) => {
 };
 
 VideoBlock.propTypes = {
-  title: React.PropTypes.string,
+  caption: React.PropTypes.string,
   subtext: React.PropTypes.string,
   videoUrl: React.PropTypes.string
 };
 
 VideoBlock.defaultProps = {
   subtext: '',
-  title: '',
+  caption: '',
   videoUrl: ''
 };
 

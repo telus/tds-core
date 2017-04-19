@@ -23,8 +23,8 @@ import VideoBlock from 'telus-thorium-enriched/blocks/blocks/VideoBlock';
 
 const VideoBlockExample = () => {
   const props = {
-    title: 'Video title',
-    subtext: 'Video short description',
+    caption: 'Video caption title',
+    subtext: 'Video caption short description',
     videoUrl: 'https://www.youtube.com/embed/0JQDjQj50qI'
   };
 
@@ -43,5 +43,5 @@ export default VideoBlockExample;
 | Property |   Description   | Type | Default |
 |:----|:------|:---|:---|
 | `videoUrl` | video URL | `string` |  <p style='color: red'>required</p> |
-| `title` | optional string rendered below video iframe  | `string` |  '' |
-| `subtext` | optional string rendered after title  | `string` |  '' |
+| `caption` | optional string rendered below video iframe  | `string` |  '' |
+| `subtext` | optional string rendered after caption  | `string` |  '' |
