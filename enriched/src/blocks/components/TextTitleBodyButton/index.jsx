@@ -1,6 +1,9 @@
 import React from 'react';
 import cx from 'classnames';
 
+import { components } from '@telusdigital/redux-contentful';
+const { Legal: { WithLegal } } = components;
+
 const TextTitleBodyButton = (props) => {
   const {className, ctaLink, title, description} = props;
 
@@ -8,9 +11,9 @@ const TextTitleBodyButton = (props) => {
 
   return (
     <div className={cls}>
-      <h4>{title}</h4>
+      <h4><WithLegal content={title} /></h4>
       <p>
-        {description}
+        <WithLegal content={description} />
       </p>
       <a className="button button-green" target={ctaLink.target} href={ctaLink.href}>
         {ctaLink.text}
