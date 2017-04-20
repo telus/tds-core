@@ -7,6 +7,8 @@ template: layout-blocks.jade
 
 A Video Block is a block that is composed of a youtube video in an iframe, and optionally, a title and short description underneath.
 
+The video is left aligned, taking up 8 grid columns at medium width and higher. When the screen size is smaller, the video is centered.
+
 ---
 
 <div id="videoBlockExample"></div>
@@ -19,7 +21,7 @@ A Video Block is a block that is composed of a youtube video in an iframe, and o
 
 ```javascript
 import React from 'react';
-import VideoBlock from 'telus-thorium-enriched/blocks/blocks/VideoBlock';
+import VideoBlock from 'telus-thorium-enriched/blocks/VideoBlock';
 
 const VideoBlockExample = () => {
   const props = {
