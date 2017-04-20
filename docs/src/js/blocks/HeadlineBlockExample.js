@@ -3,7 +3,7 @@ import { HeadlineBlock } from 'telus-thorium-enriched/blocks';
 
 const HeadlineBlockExample = () => {
   const props = {
-    title: 'Headline title',
+    caption: 'Headline title',
     eyebrow: 'Eyebrow'
   };
 

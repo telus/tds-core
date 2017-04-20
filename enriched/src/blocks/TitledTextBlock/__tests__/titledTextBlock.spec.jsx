@@ -16,19 +16,23 @@ describe('TextBlock Component', () => {
     expect(mountToJson(wrapper)).toMatchSnapshot();
   });
 
-  it('should render title as default tag type', () => {
+  it('should render title with default class', () => {
     const wrapper = mount(<TitledTextBlock {...data}/>);
-    expect(wrapper.find('h1').first().render().text()).toEqual('Title1');
+    let elem = wrapper.find('h1').first();
+    expect(elem.text()).toEqual('Title1');
+    expect(elem.hasClass('heading-1')).toBeTruthy();
   });
 
-  it('should render title as specified tag type', () => {
-    const wrapper = mount(<TitledTextBlock {...data} titleTagType="h2" />);
-    expect(wrapper.find('h2').first().render().text()).toEqual('Title1');
+  it('should render title with specified class', () => {
+    const wrapper = mount(<TitledTextBlock {...data} titleHeadingClass="heading-2" />);
+    let elem = wrapper.find('h1').first();
+    expect(elem.text()).toEqual('Title1');
+    expect(elem.hasClass('heading-2')).toBeTruthy();
   });
 
   it('should render content', () => {
     const wrapper = mount(<TitledTextBlock {...data}/>);
-    expect(wrapper.find('h4').first().render().text()).toEqual('Small Title 1');
-    expect(wrapper.find('p').first().render().text()).toEqual('Small Text1');
+    expect(wrapper.find('h2').first().text()).toEqual('Small Title 1');
+    expect(wrapper.find('p').first().text()).toEqual('Small Text1');
   });
 });

@@ -77,7 +77,7 @@ function buildChildren(category) {
     var child = category[key];
 
     children.push({
-      title: child.title,
+      caption: child.caption,
       url: child.url,
       order: (matches === null) ? i : parseInt(matches[1])
     });
@@ -131,7 +131,7 @@ function getNav(contents) {
     }
 
     var entry = {
-      title: matches[2].replace(/-/, ' '),
+      caption: matches[2].replace(/-/, ' '),
       children: buildChildren(contents[dir]),
       order: parseInt(matches[1])
     };

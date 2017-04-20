@@ -8,7 +8,7 @@ const OverviewBlock = (props) => {
   const cls = cx(className);
   const bodyContent = {
     ctaLink,
-    title: overviewTitle,
+    caption: overviewTitle,
     description: overviewDescription
   };
   return (

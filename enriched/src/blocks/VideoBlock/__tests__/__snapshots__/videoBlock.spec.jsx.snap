@@ -1,10 +1,10 @@
 exports[`VideoBlock matches snapshot 1`] = `
 <VideoBlock
+  caption="Foo"
   subtext="Bar"
-  title="Foo"
   videoUrl="https://www.youtube.com/embed/MaCZN2N6Q_I?cc_load_policy=1">
-  <div
-    className="videoblock">
+  <section
+    className="video-block">
     <div
       className="container container--limited-width">
       <div
@@ -12,7 +12,7 @@ exports[`VideoBlock matches snapshot 1`] = `
         <div
           className="medium-8">
           <div
-            className="video-container">
+            className="video-container-block">
             <iframe
               allowFullScreen=""
               frameBorder="0"
@@ -30,6 +30,6 @@ exports[`VideoBlock matches snapshot 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </VideoBlock>
 `;

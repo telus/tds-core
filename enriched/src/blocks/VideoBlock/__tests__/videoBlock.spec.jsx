@@ -4,21 +4,23 @@ import { mountToJson } from 'enzyme-to-json';
 import VideoBlock from '../';
 
 describe('VideoBlock', () => {
-  const data = { title: 'Foo', subtext: 'Bar', videoUrl: 'https://www.youtube.com/embed/MaCZN2N6Q_I?cc_load_policy=1' };
+  const data = { caption: 'Foo', subtext: 'Bar', videoUrl: 'https://www.youtube.com/embed/MaCZN2N6Q_I?cc_load_policy=1' };
 
   it('matches snapshot', () => {
     const wrapper = mount(<VideoBlock {...data} />);
     expect(mountToJson(wrapper)).toMatchSnapshot();
   });
 
-  it('should render title', () => {
+  it('should render caption', () => {
     const wrapper = mount(<VideoBlock {...data} />);
-    expect(wrapper.find('strong').first().render().text()).toEqual('Foo: ');
+    expect(wrapper.find('strong')).toBeDefined();
+    console.log(wrapper.find('strong').first().text())
+    expect(wrapper.find('strong').text()).toBe('Foo: ');
   });
 
   it('should render subtext', () => {
     const wrapper = mount(<VideoBlock {...data} />);
-    expect(wrapper.find('p').first().render().text()).toContain('Bar');
+    expect(wrapper.find('p').first().text()).toContain('Bar');
   });
 
   it('should render without title or subtext', () => {
