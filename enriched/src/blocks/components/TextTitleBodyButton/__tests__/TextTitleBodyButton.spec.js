@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import TextTitleBodyButton from '../';
 
 describe('<TextTitleBodyButton />', () => {
@@ -14,20 +14,20 @@ describe('<TextTitleBodyButton />', () => {
     }
   };
 
-  const textTitleBodyButton = mount( <TextTitleBodyButton {...props}/> );
+  const textTitleBodyButton = shallow( <TextTitleBodyButton {...props}/> );
 
   it('sets the classes from the className prop', () => {
     expect(textTitleBodyButton.hasClass('class')).toBeTruthy();
   });
 
-  it('renders a header with content from the overviewTitle props', () => {
+  it('renders a header with legal content from the overviewTitle props', () => {
     expect(textTitleBodyButton.find('h4')).toBeDefined();
-    expect(textTitleBodyButton.find('h4').text()).toBe('title');
+    expect(textTitleBodyButton.find('h4 WithLegal').props().content).toBe('title');
   });
 
-  it('renders a paragraph with content from the overviewDescription props', () => {
+  it('renders a paragraph with legal content from the overviewDescription props', () => {
     expect(textTitleBodyButton.find('p')).toBeDefined();
-    expect(textTitleBodyButton.find('p').text()).toBe('description');
+    expect(textTitleBodyButton.find('p WithLegal').props().content).toBe('description');
   });
 
   it('renders a link with content from the header props', () => {
