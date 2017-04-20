@@ -39,6 +39,40 @@ String cmdSetupWorkspace = '''
 '''.stripIndent().trim()
 
 createJenkinsJob(
+  'telus-tds--build-qa',
+  'Pull latest code from Github test branch then install dependencies, lint, unit test'
+) {
+  triggers {
+    githubPush()
+  }
+
+  scm {
+    git {
+      remote {
+        github('telusdigital/telus-thorium-core', 'ssh')
+        credentials('jenkins')
+        branch 'test'
+      }
+      extensions {
+        cleanBeforeCheckout()
+      }
+    }
+  }
+
+  steps {
+    shell cmdSetupWorkspace
+    shell '''
+      cd \${WORKSPACE}
+      npm run lint
+      npm test
+      npm run build
+    '''.stripIndent().trim()
+  }
+
+}
+
+
+createJenkinsJob(
   'telus-thorium--build',
   'Pull latest code from Github then install dependencies, lint, unit test, and build artifacts'
 ) {
