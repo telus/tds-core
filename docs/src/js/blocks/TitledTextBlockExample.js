@@ -1,5 +1,5 @@
 import React from 'react';
-import {TitledTextBlock} from 'telus-thorium-enriched/blocks';
+import { TitledTextBlock } from 'telus-thorium-enriched/blocks';
 
 const TitledTextBlockExample = () => {
   const props = {

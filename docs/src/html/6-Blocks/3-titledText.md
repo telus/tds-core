@@ -3,7 +3,7 @@ title: Titled Text Block
 template: layout-blocks.jade
 ---
 
-## Titled Text 
+## Titled Text
 
 A Titled Text Block is a block that is composed of a section title and an array of titled text sections.
 
@@ -19,7 +19,7 @@ A Titled Text Block is a block that is composed of a section title and an array 
 
 ```javascript
 import React from 'react';
-import {TitledTextBlock} from 'telus-thorium-enriched/blocks';
+import { TitledTextBlock } from 'telus-thorium-enriched/lib/blocks';
 
 const TitledTextBlockExample = () => {
   const props = {
