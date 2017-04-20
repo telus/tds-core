@@ -118,7 +118,7 @@ function paragraph(text) {
 function heading(text, level, raw) {
   return '<h'
     + level
-    + ' id="'
+    + ' class="'
     + this.options.headerPrefix
     + raw.toLowerCase().replace(/[^\w]+/g, '-')
     + '">'
