@@ -21,7 +21,7 @@ The video is left aligned, taking up 8 grid columns at medium width and higher. 
 
 ```javascript
 import React from 'react';
-import VideoBlock from 'telus-thorium-enriched/blocks/VideoBlock';
+import { VideoBlock } from 'telus-thorium-enriched/lib/blocks';
 
 const VideoBlockExample = () => {
   const props = {

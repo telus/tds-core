@@ -19,7 +19,7 @@ A Headline Block is a block that is composed of a page title and, optionally, an
 
 ```javascript
 import React from 'react';
-import HeadlineBlock from 'telus-thorium-enriched/blocks/HeadlineBlock';
+import { HeadlineBlock } from 'telus-thorium-enriched/lib/blocks';
 
 const HeadlineBlockExample = () => {
   const props = {

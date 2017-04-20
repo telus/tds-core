@@ -35,6 +35,7 @@
     "css-loader": "^0.26.0",
     "enzyme": "^2.5.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.1",
     "fontmin": "^0.9.6",
     "jest": "^16.0.1",
     "marked": "~0.3.6",
@@ -51,6 +52,7 @@
     "stylelint-config-standard": "^16.0.0",
     "telus-thorium-core": "^0.13.2",
     "telus-thorium-enriched": "^0.13.2",
+    "url-loader": "^0.5.8",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
     "wintersmith": "^2.3.2"
