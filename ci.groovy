@@ -76,6 +76,10 @@ createJenkinsJob(
   'telus-thorium--build',
   'Pull latest code from Github then install dependencies, lint, unit test, and build artifacts'
 ) {
+  wrappers {
+    sshAgent 'jenkins'
+  }
+
   triggers {
     githubPush()
   }
@@ -89,6 +93,7 @@ createJenkinsJob(
       }
       extensions {
         cleanBeforeCheckout()
+	      sshAgent 'tds-deploy'
       }
     }
   }
