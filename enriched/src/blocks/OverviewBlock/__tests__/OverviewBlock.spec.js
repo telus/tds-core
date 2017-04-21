@@ -26,7 +26,7 @@ describe('<OverviewBlock />', () => {
 
   it('renders a textTitleBodyButton Component', () => {
     expect(overviewBlock.find('TextTitleBodyButton')).toBeDefined();
-    expect(overviewBlock.find('TextTitleBodyButton').props().title).toBe('title');
+    expect(overviewBlock.find('TextTitleBodyButton').props().caption).toBe('title');
     expect(overviewBlock.find('TextTitleBodyButton').props().description).toEqual('description');
   });
 

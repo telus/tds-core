@@ -9,8 +9,8 @@ exports[`TextBlock Component matches snapshot 1`] = `
     ]
   }
   title="Title1"
-  titleTagType="h1">
-  <div
+  titleHeadingClass="heading-1">
+  <section
     className="titled-text-block">
     <div
       className="container container--limited-width">
@@ -18,14 +18,16 @@ exports[`TextBlock Component matches snapshot 1`] = `
         className="grid-row">
         <div
           className="small-12 medium-12 large-12">
-          <h1>
+          <h1
+            className="heading-1">
             Title1
           </h1>
           <div
-            className="titled-text-component">
-            <h4>
+            className="title-text-block__content">
+            <h2
+              className="heading-4">
               Small Title 1
-            </h4>
+            </h2>
             <p>
               Small Text1
             </p>
@@ -33,6 +35,6 @@ exports[`TextBlock Component matches snapshot 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </TitledTextBlock>
 `;

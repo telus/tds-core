@@ -4,7 +4,7 @@ import TextTitleBodyButton from 'telus-thorium-enriched/blocks/components/TextTi
 const TextTitleBodyButtonExample = () => {
   const props = {
     className: 'class',
-    title: 'Lorem Ipsum',
+    caption: 'Lorem Ipsum',
     description: 'Lorem ipsum dolor sit amet, modo scaevola pertinax ius no. Ut brute nobis intellegam duo, ullum fabulas fabellas quo at.',
     ctaLink: {
       target: '_blank',
