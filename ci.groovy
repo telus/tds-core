@@ -69,6 +69,15 @@ createJenkinsJob(
     '''.stripIndent().trim()
   }
 
+  publishers {
+    archiveArtifacts {
+      pattern('docs/dist/docs/**/*')
+      onlyIfSuccessful()
+    }
+
+    downstream 'telus-thorium--deploy-qa'
+  }
+
 }
 
 
@@ -109,7 +118,7 @@ createJenkinsJob(
       onlyIfSuccessful()
     }
 
-    downstream 'telus-thorium--deploy-qa'
+    downstream 'telus-thorium--deploy-stage'
   }
 }
 
@@ -124,13 +133,13 @@ createJenkinsJob(
  * web server. It takes those artifacts from its upstream job, which
  * is dev.
  */
-createJenkinsDeployJob('telus-thorium--deploy-qa', 's3://cdn.telus-thorium-doc-qa/', 'telus-thorium--build')
+createJenkinsDeployJob('telus-thorium--deploy-qa', 's3://cdn.telus-thorium-doc-qa/', 'telus-tds--qa')
 
 /**
  * telus-thorium--deploy-stage copies the static site contents to the Staging
  * web server. It takes those artifacts from its upstream job, which is QA.
  */
-createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium-doc-staging/', 'telus-thorium--deploy-qa')
+createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium-doc-staging/', 'telus-thorium--build')
 
 /**
  * telus-thorium--deploy-prod copies the static site contents to the production
