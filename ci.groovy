@@ -39,7 +39,7 @@ String cmdSetupWorkspace = '''
 '''.stripIndent().trim()
 
 createJenkinsJob(
-  'telus-tds--build-qa',
+  'telus-tds--qa',
   'Pull latest code from Github test branch then install dependencies, lint, unit test'
 ) {
   triggers {
@@ -347,15 +347,15 @@ def createJenkinsDeployJob(String name, String target, String artifactsSource, C
        * TODO: add actual slack auth
        */
       slackNotifier {
-        room('#nextlevel-tds')
-        authToken('someAuthToken')
+        room('#tds-updates')
+        authToken('PUoqC2Uj65sWT5AT2KCofz6h')
         authTokenCredentialId('someCredentialId')
         notifyFailure(true)
         notifyAborted(false)
         notifyNotBuilt(false)
         notifyUnstable(false)
         notifyBackToNormal(true)
-        notifySuccess(false)
+        notifySuccess(true)
         notifyRepeatedFailure(false)
         startNotification(false)
         includeTestSummary(false)
