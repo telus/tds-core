@@ -3,7 +3,7 @@
   "version": "0.13.2",
   "main": "lib/index.js",
   "scripts": {
-    "preinstall": "../scripts/init-npm.sh",
+    "preinstall": "scripts/init-npm.sh",
     "start": "npm run deploy && npm run dev",
     "clean": "rimraf lib && rimraf dist && mkdirp lib && mkdirp dist",
     "dev": "node devServer.js",
