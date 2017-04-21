@@ -14,7 +14,6 @@ describe('VideoBlock', () => {
   it('should render caption', () => {
     const wrapper = mount(<VideoBlock {...data} />);
     expect(wrapper.find('strong')).toBeDefined();
-    console.log(wrapper.find('strong').first().text())
     expect(wrapper.find('strong').text()).toBe('Foo: ');
   });
 
