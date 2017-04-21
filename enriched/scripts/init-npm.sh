@@ -11,5 +11,5 @@ then
 fi
 
 git clone git@github.com:telusdigital/npm-environment-scripts.git
-cp npm-environment-scripts/resources/npmrc ../enriched/.npmrc
+cp npm-environment-scripts/resources/npmrc ../.npmrc
 rm -rf npm-environment-scripts
