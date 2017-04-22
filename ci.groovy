@@ -42,6 +42,10 @@ createJenkinsJob(
   'telus-tds--qa',
   'Pull latest code from Github test branch then install dependencies, lint, unit test'
 ) {
+  wrappers {
+    sshAgent 'jenkins'
+  }
+
   triggers {
     githubPush()
   }
@@ -55,6 +59,7 @@ createJenkinsJob(
       }
       extensions {
         cleanBeforeCheckout()
+        sshAgent 'tds-deploy'
       }
     }
   }
