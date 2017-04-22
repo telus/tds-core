@@ -39,54 +39,6 @@ String cmdSetupWorkspace = '''
 '''.stripIndent().trim()
 
 createJenkinsJob(
-  'telus-tds--qa',
-  'Pull latest code from Github test branch then install dependencies, lint, unit test'
-) {
-  wrappers {
-    sshAgent 'jenkins'
-  }
-
-  triggers {
-    githubPush()
-  }
-
-  scm {
-    git {
-      remote {
-        github('telusdigital/telus-thorium-core', 'ssh')
-        credentials('jenkins')
-        branch 'test'
-      }
-      extensions {
-        cleanBeforeCheckout()
-        sshAgent 'tds-deploy'
-      }
-    }
-  }
-
-  steps {
-    shell cmdSetupWorkspace
-    shell '''
-      cd \${WORKSPACE}
-      npm run lint
-      npm test
-      npm run build
-    '''.stripIndent().trim()
-  }
-
-  publishers {
-    archiveArtifacts {
-      pattern('docs/dist/docs/**/*')
-      onlyIfSuccessful()
-    }
-
-    downstream 'telus-thorium--deploy-qa'
-  }
-
-}
-
-
-createJenkinsJob(
   'telus-thorium--build',
   'Pull latest code from Github then install dependencies, lint, unit test, and build artifacts'
 ) {
@@ -128,7 +80,7 @@ createJenkinsJob(
       onlyIfSuccessful()
     }
 
-    downstream 'telus-thorium--deploy-stage'
+    downstream 'telus-thorium--deploy-qa'
   }
 }
 
@@ -143,13 +95,13 @@ createJenkinsJob(
  * web server. It takes those artifacts from its upstream job, which
  * is dev.
  */
-createJenkinsDeployJob('telus-thorium--deploy-qa', 's3://cdn.telus-thorium-doc-qa/', 'telus-tds--qa')
+createJenkinsDeployJob('telus-thorium--deploy-qa', 's3://cdn.telus-thorium-doc-qa/', 'telus-thorium--build')
 
 /**
  * telus-thorium--deploy-stage copies the static site contents to the Staging
  * web server. It takes those artifacts from its upstream job, which is QA.
  */
-createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium-doc-staging/', 'telus-thorium--build')
+createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium-doc-staging/', 'telus-thorium--deploy-qa')
 
 /**
  * telus-thorium--deploy-prod copies the static site contents to the production
