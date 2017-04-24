@@ -52,10 +52,10 @@ To create consistent leading the line height is set to double the value of the b
 ## Fonts for Sketch and Webfonts
 ---
 
-- Helvetica Neue LT Std 35 Thin
-- Helvetica Neue LT Std 45 Light
-- Helvetica Neue LT Std 55 Roman
-- Helvetica Neue LT Std 65 Medium
+- Helvetica Neue LT Std 35 Thin (css: `font-weight: 300;`)
+- Helvetica Neue LT Std 45 Light (css: `font-weight: 400;`)
+- Helvetica Neue LT Std 55 Roman (css: `font-weight: 500;`)
+- Helvetica Neue LT Std 65 Medium (css: `font-weight: 700;`)
 
 ### Web-backup:
 
