@@ -59,7 +59,6 @@ createJenkinsJob(
       }
       extensions {
         cleanBeforeCheckout()
-	      sshAgent 'tds-deploy'
       }
     }
   }
