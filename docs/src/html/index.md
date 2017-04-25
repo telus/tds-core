@@ -14,7 +14,7 @@ The TELUS Design System team is working toward releasing a v1.0 of the TELUS Des
 
 In addition, our team is doing research to learn how teams are using the pre-release versions of the components and what teams have learned while using them.
 
-* [TDS Roadmap](/1-About/4-roadmap.html)
+* [TDS Roadmap](/1-About/3-roadmap.html)
 
 ## Get Started with TDS
 

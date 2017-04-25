@@ -116,9 +116,24 @@ function paragraph(text) {
  * @returns {string}
  */
 function heading(text, level, raw) {
+
+  // quick fix to TOC bugs because we are not going to be using wintersmith
+  if(text == "Display Heading 1"){
+    return '<h'
+      + level
+      + ' class="'
+      + this.options.headerPrefix
+      + raw.toLowerCase().replace(/[^\w]+/g, '-')
+      + '">'
+      + replaceTokens(text)
+      + '</h'
+      + level
+      + '>\n';
+  }
+
   return '<h'
     + level
-    + ' class="'
+    + ' id="'
     + this.options.headerPrefix
     + raw.toLowerCase().replace(/[^\w]+/g, '-')
     + '">'

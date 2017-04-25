@@ -97,7 +97,7 @@ Primary headlines, tops of category pages.
 
 ```html
 <h1>Heading 1</h1>
-<div class="heading-1">Heading 1</div>
+<div egclass="heading-1">Heading 1</div>
 ```
 
 ## Heading 2
