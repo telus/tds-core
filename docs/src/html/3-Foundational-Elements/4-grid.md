@@ -194,7 +194,7 @@ Offset column classes make it possible to add negative space alongside columns.
 </div>
 ```
 
-This example lays out two content blocks, each spanning 3 columns, with the final block also offset by 3 columns.
+This example lays out two content blocks, each spanning 3 columns, with the final block also offset by 3 columns in small viewport only.
 
 <div class="example">
     <div class="container">
