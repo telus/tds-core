@@ -10,6 +10,7 @@ Remember to build mobile first and the utilities here are to override the defaul
 The breakpoint parameters that can be used on these mixins are: `xs`, `small`, `medium`, `large`, `xl`.
 
 ```css
+@import '~telus-thorium-core/scss/settings/variables';
 @import '~telus-thorium-core/scss/utility/mixins';
 
 @include from-breakpoint(medium) {
