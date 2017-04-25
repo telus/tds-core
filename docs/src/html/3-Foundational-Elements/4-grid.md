@@ -33,19 +33,29 @@ A baseline is a mathematical solution that reinforces the consistent positioning
 
 Breakpoints are the points at which your site's layout and content will respond to provide the user with the best possible way to consume the information. Responsive properties include an element’s size, arrangement, and visibility. The breakpoint triggers are based on the width of the browser window.
 
-Thorium will have five viewports over four breakpoints:
+TDS will have five viewports over four breakpoints:
 
-| Viewport name | Lower boundary | Upper boundary | Max width &ast; |
+| Viewport name | Lower boundary (px) | Upper boundary (px) | Max width &ast; (px) |
 |:---|:---|:---|:---|
-| xs | 0 | 543 | auto |
-| small | 544 | 767 | 540 |
-| medium | 768 | 991 | 720 |
+| xs | 0 | 575 | auto |
+| small | 576 | 767 | 544 |
+| medium | 768 | 991 | 736 |
 | large | 992 | 1199 | 960 |
-| xl | 1200 | *none* | 1140 |
+| xl | 1200 | *none* | 1168 |
 
 ---
 
-Containers are 100% wide by default at all breakpoints. Use `.container--limited-width` modifier to opt into the max widths from the table above.
+## Containers
+
+
+* `.container`:
+centers a block-element horizontally
+
+* `.container--limited-width`: sets a max-width from the table above on your wrapper, to be used together with `.container` so it is centered
+
+* `.container--fluid`: use this class to add gutter when adding a full-width container
+
+
 
 ## Responsiveness
 
@@ -275,10 +285,6 @@ The `hidden-*` classes prevents content from displaying at a certain breakpoint.
 	</div>
     </div>
 </div>
-
-### Container limited width modifier
-Containers are 100% wide be default. The .container--limited-width modifier causes the container to have a max width at each breakpoint. See `variables.scss` for those pixel values.
-
 
 ## Examples
 

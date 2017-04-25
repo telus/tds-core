@@ -38,7 +38,6 @@
   @include clearfix;
 
   margin: 0 auto;
-  padding: 0 $gutter / 2;
 
   // Containers are 100% wide be default. The --limited-width modifier causes
   // the container to have a max width at each breakpoint. See _variables.scss
@@ -47,9 +46,12 @@
     @each $viewport, $max-width in $max-widths {
       @include from-breakpoint(#{$viewport}) {
         max-width: $max-width;
-        margin: 0 auto;
       }
     }
+  }
+
+  &--fluid {
+    padding: 0 $gutter / 2;
   }
 }
 
