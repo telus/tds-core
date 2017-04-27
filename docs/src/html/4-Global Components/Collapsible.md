@@ -126,7 +126,8 @@ export default AccordionCollapsibleEx;
 | Property |   Description   | Type | Default |
 |:----|:------|:---|:---|
 | accordion | is this panel group accordion? | boolean |  false |
-| activeKeys | key of the active panel |   array |  - |
+| activeKeys | keys of active panels |   array |  - |
+| disabledKeys | keys of disabled panels |   array |  - |
 | className | additional css classes |   string |  - |
 | onChange | switch panel callback function | function | -  |
 
