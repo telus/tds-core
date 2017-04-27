@@ -156,6 +156,11 @@
   text-decoration: none;
 }
 
+@mixin tds-dimple() {
+  background-image: radial-gradient(ellipse at top, rgba(150, 150, 150, .1) 0%, rgba(0, 0, 0, 0) 70%);
+  height: 32px;
+}
+
 //
 // Clearfix
 //

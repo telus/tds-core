@@ -9,7 +9,7 @@ template: doc.jade
 
 We're so glad you're thinking about contributing to the TELUS Design System - Thorium-Core project! If you're unsure about anything, just ask — or submit your issue or pull request anyway. The worst that can happen is we'll politely ask you to change something. We appreciate all friendly contributions.
 
-If you have any questions or want to read more, check out the [Design System website](http://tds.telus.digital/), or [shoot us an email](mailto:sebastian.krumhausen@telus.com).
+If you have any questions or want to read more, check out the [Design System website](http://tds.telus.digital/), or [shoot us an email](mailto:alexandra.fedyk@telus.com).
 
 ## Types of contributions
 

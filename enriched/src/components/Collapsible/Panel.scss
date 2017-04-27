@@ -54,7 +54,8 @@
 
     &--expanded {
       &::after {
-        background-image: radial-gradient(ellipse at top, rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70%);
+        @include tds-dimple();
+        top: 60px;
       }
       &::before {
         height: 0;
@@ -69,8 +70,31 @@
       }
     }
 
-    &--first {
+    &--disabled {
+      cursor: not-allowed;
+      background: $color-athens-grey;
+      .icon {
+        color: $color-gainsboro;
+      }
+      @include alt-state {
+        .icon {
+          color: $color-gainsboro;
+        }
+        border-top: none;
+        &::before {
+          background: $color-gainsboro;
+        }
+      }
+       .collapsible-panel__header {
+        color: $color-raven;
+      }
+    }
+
+    &--first.collapsible-panel__label--disabled {
       border-top: 1px solid $color-gainsboro;
+      @include alt-state {
+        border-top: 1px solid $color-gainsboro;
+      }
     }
 
   }
@@ -91,15 +115,6 @@
     transition: all .5s;
     width: 18px;
     margin-top: -2px;
-    //transform-origin: 40% 50%;
-
-    &--expanded {
-      //transform: rotate(-90deg);
-    }
-
-    &--collapsed {
-      //transform: rotate(45deg);
-    }
   }
 
 

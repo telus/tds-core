@@ -83,6 +83,10 @@
         @include columns($num, $count);
       }
 
+      .offset-#{$size}-#{$num} {
+        @include offsetcolumns($num, $count);
+      }
+
       .pull-#{$size}-#{$num} {
         @include pullcolumns($num, $count);
       }
@@ -91,11 +95,11 @@
         @include pushcolumns($num, $count);
       }
     }
+  }
 
-    @include at-breakpoint(#{$size}) {
-      .offset-#{$size}-#{$num} {
-        @include offsetcolumns($num, $count);
-      }
+  @include at-breakpoint(#{$size}) {
+    .offset-#{$size}-0 {
+      margin-left: 0;
     }
   }
 

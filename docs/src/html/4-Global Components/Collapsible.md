@@ -22,12 +22,15 @@ import { Collapsible } from 'telus-thorium-enriched';
 
 const RegularCollapsibleEx = () => {
     return (
-      <Collapsible.Group>
+      <Collapsible.Group disabledKeys={["panel-3"]}>
         <Collapsible.Panel header="Panel #1">
           Panel #1 Body
         </Collapsible.Panel>
         <Collapsible.Panel header="Panel #2">
           Panel #2 Body
+        </Collapsible.Panel>
+        <Collapsible.Panel header="Panel #3 is disabled" panelKey="panel-3">
+          Panel #3 Body
         </Collapsible.Panel>
       </Collapsible.Group>
     );
@@ -83,7 +86,6 @@ We can controll the collapsible component state.
   }
 ```
 
-
 ## Accordion
 
 ---
@@ -124,7 +126,8 @@ export default AccordionCollapsibleEx;
 | Property |   Description   | Type | Default |
 |:----|:------|:---|:---|
 | accordion | is this panel group accordion? | boolean |  false |
-| activeKeys | key of the active panel |   array |  - |
+| activeKeys | keys of active panels |   array |  - |
+| disabledKeys | keys of disabled panels |   array |  - |
 | className | additional css classes |   string |  - |
 | onChange | switch panel callback function | function | -  |
 

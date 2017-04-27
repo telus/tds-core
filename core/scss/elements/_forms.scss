@@ -415,6 +415,8 @@ $radio-checked-stroke-size: 6px;
 
   &__trigger {
     width: $body-text-size;
+    font-size: rem(20px);
+    font-weight: 400;
 
     &::before {
       content: core-icon-codepoint(question-mark-circle);
