@@ -34,7 +34,7 @@
 # Param 2: Ending ref
 # Param 3: Entry version
 changelog_entry () {
-  printf "\n\n\n## ${3}\n"
+  printf "---\ntitle: Changelog\ntemplate: changelog.jade\n---\n\n\n## ${3}\n"
   # Format the release date like 01 January 2017
   git log -1 --pretty=format:"%ad" --date=format:"%d %B %Y" ${2}
   printf "\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/${3}\n\n"
