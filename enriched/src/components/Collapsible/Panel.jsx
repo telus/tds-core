@@ -11,13 +11,14 @@ class Panel extends Component {
   }
 
   render() {
-    const { className, header, children, isActive, onPanelClick, isFirst} = this.props;
+    const { className, header, children, isActive, isDisabled, onPanelClick, isFirst} = this.props;
     const collapsePanelClassName = classNames('collapsible-panel', className);
     const collapsePanelContent = classNames('collapsible-panel__content', {
       'collapsible-panel__content--visible': isActive
     });
 
     const collapsePaneLabelClassName = classNames('collapsible-panel__label', {
+      'collapsible-panel__label--disabled': isDisabled,
       'collapsible-panel__label--expanded': isActive,
       'collapsible-panel__label--collapsed': !isActive,
       'collapsible-panel__label--first': isFirst
@@ -51,11 +52,13 @@ Panel.propTypes = {
   header: PropTypes.string,
   children: PropTypes.node,
   isActive: PropTypes.bool,
+  isDisabled: PropTypes.bool,
   onPanelClick: PropTypes.func
 };
 
 Panel.defaultProps = {
   isActive: false,
+  isDisabled: false,
   className: '',
   header: ''
 };

@@ -19,18 +19,20 @@ class Group extends Component {
 
   onPanelClick(panelKey) {
     return () => {
-      let activeKeys = this.state.currentActiveKeys;
-      if(activeKeys.includes(panelKey)){
-        this.setState({currentActiveKeys: activeKeys.filter(activeKey => activeKey !== panelKey)});
-      } else {
-        if(this.props.accordion) {
-          this.setState({currentActiveKeys: [panelKey]});
+      if (!this.props.disabledKeys.includes(panelKey)) {
+        let activeKeys = this.state.currentActiveKeys;
+        if(activeKeys.includes(panelKey)){
+          this.setState({currentActiveKeys: activeKeys.filter(activeKey => activeKey !== panelKey)});
         } else {
-          this.setState({currentActiveKeys: activeKeys.concat([panelKey])});
+          if(this.props.accordion) {
+            this.setState({currentActiveKeys: [panelKey]});
+          } else {
+            this.setState({currentActiveKeys: activeKeys.concat([panelKey])});
+          }
         }
-      }
-      if(this.props.onChange){
-        this.props.onChange.call(this, panelKey);
+        if(this.props.onChange){
+          this.props.onChange.call(this, panelKey);
+        }
       }
     };
   }
@@ -46,7 +48,7 @@ class Group extends Component {
       const panelKey = child.props.panelKey || String(index);
       const header = child.props.header;
       const isFirst = (index === 0);
-
+      const isDisabled = this.props.disabledKeys.indexOf(panelKey) > -1;
       let isActive = activeKeys.indexOf(panelKey) > -1;
 
       const props = {
@@ -54,11 +56,11 @@ class Group extends Component {
         panelKey,
         header,
         isActive,
+        isDisabled,
         children: child.props.children,
         onPanelClick: this.onPanelClick(panelKey).bind(this),
         isFirst
       };
-
       newChildren.push(React.cloneElement(child, props));
     });
 
@@ -77,6 +79,7 @@ class Group extends Component {
 Group.propTypes = {
   className: PropTypes.string,
   activeKeys: PropTypes.array,
+  disabledKeys: PropTypes.array,
   accordion: PropTypes.bool,
   children: PropTypes.node,
   onChange: PropTypes.func
@@ -84,7 +87,8 @@ Group.propTypes = {
 
 Group.defaultProps = {
   accordion: false,
-  activeKeys: []
+  activeKeys: [],
+  disabledKeys: []
 };
 
 export default Group;
