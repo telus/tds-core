@@ -69,8 +69,31 @@
       }
     }
 
-    &--first {
+    &--disabled {
+      cursor: not-allowed;
+      background: $color-athens-grey;
+      .icon {
+        color: $color-gainsboro;
+      }
+      @include alt-state {
+        .icon {
+          color: $color-gainsboro;
+        }
+        border-top: none;
+        &::before {
+          background: $color-gainsboro;
+        }
+      }
+       .collapsible-panel__header {
+        color: $color-raven;
+      }
+    }
+
+    &--first.collapsible-panel__label--disabled {
       border-top: 1px solid $color-gainsboro;
+      @include alt-state {
+        border-top: 1px solid $color-gainsboro;
+      }
     }
 
   }
@@ -91,15 +114,6 @@
     transition: all .5s;
     width: 18px;
     margin-top: -2px;
-    //transform-origin: 40% 50%;
-
-    &--expanded {
-      //transform: rotate(-90deg);
-    }
-
-    &--collapsed {
-      //transform: rotate(45deg);
-    }
   }
 
 
