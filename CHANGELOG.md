@@ -2,6 +2,17 @@
 
 
 
+## v0.14.1
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.14.1
+
+- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+- docs(fix container on sample forms page):
+- docs(sketch): update new file v0.14.1
+
+
+
 ## v0.14.0
 
 
@@ -56,6 +67,7 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.14.0
 - docs(markdown): fix broken TOC links and broken roadmap link
 - Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
 - build(ci.groovy): add sshAgent to release job
+- Changelog and version bump for v0.14.0
 
 
 
