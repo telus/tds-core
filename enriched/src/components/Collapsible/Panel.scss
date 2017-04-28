@@ -54,7 +54,8 @@
 
     &--expanded {
       &::after {
-        background-image: radial-gradient(ellipse at top, rgba(150,150,150,0.1) 0%,rgba(0,0,0,0) 70%);
+        @include tds-dimple();
+        top: 60px;
       }
       &::before {
         height: 0;
