@@ -4,6 +4,23 @@ import Collapsible from '../';
 const { Group, Panel } = Collapsible;
 
 describe('<Collapsible />', () => {
+  it('handles disabled panels', () => {
+    const wrapper = mount(
+      <Group disabledKeys={['p1']}>
+        <Panel panelKey="p1" header="This is panel 1">
+          <div>Hell world</div>
+        </Panel>
+        <Panel panelKey="p2" header="This is panel 2">
+          <div>Hell world2</div>
+        </Panel>
+      </Group>
+    );
+    expect(wrapper.find('.collapsible-panel__label--disabled').length).toEqual(1);
+    const panel1 = wrapper.find('.collapsible-panel__header').first();
+    panel1.simulate('click');
+    expect(wrapper.find('.collapsible-panel__content').first().hasClass('collapsible-panel__content--visible')).toEqual(false);
+  });
+
   it('render correct number of panels with right content', () => {
     const wrapper = mount(
       <Group>
