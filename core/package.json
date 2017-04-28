@@ -1,6 +1,6 @@
 {
   "name": "telus-thorium-core",
-  "version": "0.14.1",
+  "version": "0.15.0",
   "description": "TELUS Design System core styles",
   "eyeglass": "eyeglass-exports.js",
   "keywords": [
