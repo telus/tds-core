@@ -1,10 +1,21 @@
----
-title: Changelog
-template: changelog.jade
----
 
 
-## v0.14.1
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.15.0
+
+- fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally
+- Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
+- Issue #304
+- update doc
+- fix(form hinter): adjust font size to make it more legible
+- docs(contributing): add Alex's email to email us links
+- ci(changelog.sh): add .jade header to avoid seeing Untitled in left nav after a release
+- Revert "fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally"
+- feat(dimple): add tds-dimple mixin and use it in accordion component
+- feat(grid offset): revert back to previous offset functionality and added offset reset for each view
+- Merge remote-tracking branch 'origin/collapsible-disable-state' into qatesting
+- docs(changelog): updating .jade header manually for the last time
+- Issue #304 (#306)
+- Merge branch 'qatesting'
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.14.1
@@ -12,10 +23,7 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.14.1
 - Merge branch 'master' of github.com:telusdigital/telus-thorium-core
 - docs(fix container on sample forms page):
 - docs(sketch): update new file v0.14.1
-
-
-
-## v0.14.0
+- Changelog and version bump for v0.14.1
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.14.0
@@ -72,10 +80,6 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.14.0
 - Changelog and version bump for v0.14.0
 
 
-
-## v0.13.2
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.13.2
 
 - fix(blocks): got rid of `blocks/blocks` folder
@@ -83,17 +87,9 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.13.2
 - Changelog and version bump for v0.13.2
 
 
-
-## v0.13.1
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.13.1
 
 
-
-
-
-## v0.13.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.13.0
@@ -104,10 +100,6 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.13.0
 - Merge branch 'master' of github.com:telusdigital/telus-thorium-core
 - fix(overview block): update path to checklist now that block was  moved to blocks/blocks folder
 - Changelog and version bump for v0.13.0
-
-
-
-## v0.12.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.12.0
@@ -122,17 +114,9 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.12.0
 - Changelog and version bump for v0.12.0
 
 
-
-## v0.11.4
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.11.4
 
 - Changelog and version bump for v0.11.4
-
-
-
-## v0.11.3
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.11.3
@@ -140,26 +124,14 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.11.3
 - Changelog and version bump for v0.11.3
 
 
-
-## v0.11.2
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.11.2
 
 - Changelog and version bump for v0.11.2
 
 
-
-## v0.11.1
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.11.1
 
 - Changelog and version bump for v0.11.1
-
-
-
-## v0.11.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.11.0
@@ -181,10 +153,6 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.11.0
 - Changelog and version bump for v0.11.0
 
 
-
-## v0.10.2
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.10.2
 
 - Merge branch 'master' of github.com:telusdigital/telus-thorium-core
@@ -193,19 +161,11 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.10.2
 - Changelog and version bump for v0.10.2
 
 
-
-## v0.10.1
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.10.1
 
 - Merge branch 'master' of github.com:telusdigital/telus-thorium-core
 - docs(manually run changelog script because deployment is buggy):
 - Changelog and version bump for v0.10.1
-
-
-
-## v0.10.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.10.0
@@ -287,18 +247,10 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.10.0
 - Changelog and version bump for v0.10.0
 
 
-
-## v0.9.5
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.5
 
 - Merge branch 'master' of github.com:telusdigital/telus-thorium-core
 - Changelog and version bump for v0.9.5
-
-
-
-## v0.9.4
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.4
@@ -310,17 +262,9 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.4
 - Changelog and version bump for v0.9.4
 
 
-
-## v0.9.3
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.3
 
 - Changelog and version bump for v0.9.3
-
-
-
-## v0.9.2
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.2
@@ -332,28 +276,16 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.2
 - Changelog and version bump for v0.9.2
 
 
-
-## v0.9.1
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.1
 
 - feature/BCM-165: Updated styling for Notification (#165)
 - Changelog and version bump for v0.9.1
 
 
-
-## v0.9.0
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.9.0
 
 - Notification Component [[BCM-165](https://telusdigital.atlassian.net/browse/BCM-165)] (#156)
 - Changelog and version bump for v0.9.0
-
-
-
-## v0.8.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.8.0
@@ -364,18 +296,10 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.8.0
 - Changelog and version bump for v0.8.0
 
 
-
-## v0.7.1
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.1
 
 - Update dev & peer dependencies to TDS 0.7 (#157)
 - Changelog and version bump for v0.7.1
-
-
-
-## v0.7.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.0
@@ -419,10 +343,6 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.7.0
 - Changelog and version bump for v0.7.0
 
 
-
-## v0.6.0
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.6.0
 
 - Fixing the sketch file download
@@ -463,10 +383,6 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.6.0
 - Updating inter-module dependencies
 
 
-
-## v0.5.0
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.5.0
 
 - Renaming icons to reflect their form. (#60)
@@ -500,10 +416,6 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.5.0
 - Updating version number and changelog for v0.5.0 (#89)
 
 
-
-## v0.4.0
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.4.0
 
 - Updating version & changelog for v0.3.1 (#38)
@@ -529,18 +441,10 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.4.0
 - Releasing v0.4.0 (#58)
 
 
-
-## v0.3.1
-
-
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.1
 
 - Updating version & changelog for v0.3.1 (#38)
 - Updating consumption page for v0.3.1 (#39)
-
-
-
-## v0.3.0
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.0
@@ -562,10 +466,6 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.3.0
 - Task: fixing checkbox example indentation (#34)
 - Task: adding a feature switch to Form Hints (#35)
 - Updating changelog & version for 0.3.0 (#36)
-
-
-
-## v0.2.1
 
 
 https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.2.1
