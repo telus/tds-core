@@ -19,9 +19,9 @@ class Group extends Component {
 
   onPanelClick(panelKey) {
     return () => {
-      if (!this.props.disabledKeys.includes(panelKey)) {
+      if (!this.props.disabledKeys.indexOf(panelKey) > -1) {
         let activeKeys = this.state.currentActiveKeys;
-        if(activeKeys.includes(panelKey)){
+        if(activeKeys.indexOf(panelKey) > -1){
           this.setState({currentActiveKeys: activeKeys.filter(activeKey => activeKey !== panelKey)});
         } else {
           if(this.props.accordion) {
