@@ -1,23 +1,11 @@
 // Button styles
 
-button {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: inherit;
-  font-family: inherit;
-  line-height: 1;
-  font-size: inherit;
-  border: 0;
-}
-
-button,
 .button,
 a.button {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
   display: block;
-  font-family: $font-telus;
   font-size: rem(16px);
   font-weight: 700;
   letter-spacing: .2px;
@@ -36,8 +24,7 @@ a.button {
     width: auto;
     vertical-align: top;
 
-    + .button,
-    + button {
+    + .button {
       // Using < 20px to compensate for the extra margin which appears between inline-block
       // elements due to whitespace in the actual markup.
       margin-left: 16px;
@@ -103,6 +90,13 @@ a.button {
   }
 
   &-link {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: inherit;
+    font-family: inherit;
+    line-height: 1;
+    font-size: rem(16px);
+    border: 0;
     color: $color-forest-green;
     text-decoration: underline;
     padding-left: 0;
