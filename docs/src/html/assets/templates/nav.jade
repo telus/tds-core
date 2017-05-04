@@ -8,4 +8,4 @@ each category in toc
         each child in category.children
           - var classes = (page.title === child.title) ? 'active' : '';
           li(class=classes)
-            a(href="#{child.url}") #{child.title}
+            a(href="#{child.url}" class="nav-#{child.class}") #{child.title}
