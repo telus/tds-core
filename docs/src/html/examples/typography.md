@@ -7,42 +7,30 @@ template: example.jade
 
   <div class="grid-row">
     <div class="medium-12">
-      <h1 class="display-heading-1">H1-Display Lorem ipsum dolor sit amet</h1>
+      <h1 class="display-heading-1">H1-Display Lorem ipsum dolor sit</h1>
     </div>
-  </div>
-
-  <div class="grid-row">
-    <div class="medium-6">
-      <h1>H1 Lorem ipsum dolor sit amet condimentum non est sed rutrum donec porta tortor mattis velit </h1>
+    <div class="medium-12">
+      <h1>H1 Lorem ipsum dolor sit amet condimentum non est sed</h1>
     </div>
-    <div class="medium-6">
-      <h2>H2 Lorem ipsum dolor sit amet condimentum non est sed rutrum donec porta tortor mattis velit</h2>
+    <div class="medium-12">
+      <h2>H2 Lorem ipsum dolor sit amet condimentum non est sed rutrum donec porta tortor</h2>
     </div>
-  </div>
-
-  <div class="grid-row">
-    <div class="medium-6">
+    <div class="medium-12">
       <h3>H3 Lorem ipsum dolor sit amet condimentum non est sed rutrum donec porta tortor mattis velit</h3>
     </div>
-    <div class="medium-6">
+    <div class="medium-12">
       <h4>H4 Lorem ipsum dolor sit amet condimentum non est sed rutrum donec porta tortor mattis velit</h4>
     </div>
-  </div>
-
-  <div class="grid-row">
-    <div class="medium-6">
-      <p>p1 .text Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
+    <div class="medium-12">
+      <p>p1 .text Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis.</p>
     </div>
-    <div class="medium-6">
-      <p class="text--medium">p2 .text--medium Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</small>
+    <div class="medium-12">
+      <p class="text--medium">p2 .text--medium Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.
     </div>
-  </div>
-
-  <div class="grid-row">
-    <div class="medium-6">
+    <div class="medium-12">
       <p class="text--small">p3 .text--small Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
     </div>
-    <div class="medium-6">
+    <div class="medium-12">
     </div>
   </div>
 
