@@ -95,65 +95,62 @@ You'll notice these links include a `link--descent` modifier. This class creates
 
 Clickable product names, clickable subheads that  are page/category titles.
 
-<a href="#" class="tds-link--chevron">
+<a href="#" class="chevron-link">
     Large/link
-    <i class="icon icon-core-chevron"></i>
 </a>
 
-<a href="#" class="text--medium tds-link--chevron">
+<a href="#" class="text--medium chevron-link">
     Medium/link
-    <i class="icon icon-core-chevron"></i>
 </a>
 
 
-<a href="#" class="text--small tds-link--chevron">
+<a href="#" class="text--small chevron-link">
     Small/link
-    <i class="icon icon-core-chevron"></i>
 </a>
 
 
 ```html
 <a href="#" class="chevron-link">
     Large/link
-    <i class="icon icon-core-chevron"></i>
 </a>
 
-<small>
-    <a href="#" class="chevron-link">
-        Small/link
-        <i class="icon icon-core-chevron"></i>
-    </a>
-</small>
+<a href="#" class="text--medium chevron-link">
+    Medium/link
+</a>
+
+<a href="#" class="text--small chevron-link">
+    Small/link
+</a>
 ```
 
 ### Inverted chevrons
 
 <div class="example example--inverted">
-    <a href="#" class="chevron-link chevron-link--inverted">
-        Large/link
-        <i class="icon icon-core-chevron"></i>
-    </a>
-    <br>
-    <small>
-        <a href="#" class="chevron-link chevron-link--inverted">
-            Small/link
-            <i class="icon icon-core-chevron"></i>
-        </a>
-    </small>
+  <a href="#" class="chevron-link chevron-link--inverted">
+    Large/link
+  </a>
+  <br>
+  <a href="#" class="text--medium chevron-link chevron-link--inverted">
+    Medium/link
+  </a>
+  <br>
+  <a href="#" class="text--small chevron-link chevron-link--inverted">
+    Small/link
+  </a>
 </div>
 
 ```html
 <a href="#" class="chevron-link chevron-link--inverted">
-    Large/link
-    <i class="icon icon-core-chevron"></i>
+  Large/link
 </a>
-
-<small>
-    <a href="#" class="chevron-link chevron-link--inverted">
-        Small/link
-        <i class="icon icon-core-chevron"></i>
-    </a>
-</small>
+<br>
+<a href="#" class="text--medium chevron-link chevron-link--inverted">
+  Medium/link
+</a>
+<br>
+<a href="#" class="text--small chevron-link chevron-link--inverted">
+  Small/link
+</a>
 ```
 
 ## Examples
