@@ -127,7 +127,7 @@
     color: $color-shark;
 
     &:hover {
-      border-width: 0;
+      box-shadow: none;
     }
   }
 
