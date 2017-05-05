@@ -60,18 +60,6 @@ Button classes can also be applied to `<a>` tags.
 </a>
 ```
 
-### Disabled state
-
-If you want to prevent that a button from being clicked, use the `disabled` attribute.
-
-<button class="button button--purple" disabled>Disabled</button>
-
-```html
-<button class="button button--purple" disabled>
-    Disabled
-</button>
-```
-
 _Note_: The mobile button width is fluid and stretches to cover all columns currently in view.
 
 ## Green Button
@@ -123,6 +111,19 @@ _Note_: The mobile button width is fluid and stretches to cover all columns curr
     Submit form
 </button>
 ```
+
+## Disabled state
+
+If you want to prevent that a button from being clicked, use the `disabled` attribute.
+
+<button class="button button--disabled" disabled>Disabled</button>
+
+```html
+<button class="button button--disabled" disabled>
+    Disabled
+</button>
+```
+
 
 ## Links
 
