@@ -1,5 +1,23 @@
 # Upgrading Guide
 
+
+## Upgrading to v0.16.x
+
+* `button-green` changed to `button--green`
+* `button-purple` changed to `button--purple`
+* `button-green--outlined` changed to `button--green button--outlined`
+* `button-purple--outlined` changed to `button--purple button--outlined`
+* `button-inverted` changed to `button--inverted`
+* `button-inverted--outlined` changed to `button--inverted button--outlined`
+* `button-link` changed to `button--link` and now also includes the chevron and can be made purple or green with the revised classes mentioned above
+
+
+## Upgrading to v0.15.x
+
+## Upgrading to v0.14.x
+
+
+
 ## Upgrading to v0.10.x
 
 * body tag now has white background
