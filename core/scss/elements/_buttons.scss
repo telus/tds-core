@@ -144,7 +144,9 @@
     color: $color-grape;
 
     &:hover {
-      color: $color-grape;
+      box-shadow: 0 0 0 1px;
+      color: $color-white;
+      background: $color-grape;
     }
 
     &.button--outlined {
