@@ -15,28 +15,32 @@
 
 ## Upgrading to v0.15.x
 
+* Revised the offset implementation below and after user feedback decided to implemented like Bootstrap does it, because it is much cleaner. So, offsets are now inherited from smaller viewports again and if you need to reset it on a particular viewport then we have the following new classes available: `offset-small-0`, `offset-medium-0`, `offset-large-0` and `offset-xl-0`.
+
+
 ## Upgrading to v0.14.x
 
-
+* if you need an offset for multiple viewports, they need to be called out individually. Larger
+viewports won't inherit the offsets from smaller viewports anymore. So, if you are using `offset-xs-1` and are expecting that offset to be applied on all small, medium, large and xl viewports then you will have to add `offset-s-1 offset-medium-1 offset-large-1 offset-xl-1`
 
 ## Upgrading to v0.10.x
 
-* body tag now has white background
+* `body` tag now has white background
 * `.button-primary` has changed to `.button-purple`
 * `.button-secondary` has changed to `.button-green`
-* scss variable $color-green changed to $color-forest-green
-* scss variable $color-green-darker changed to $color-japanese-laurel
-* scss variable $color-green-panel changed to $color-panache
-* scss variable $color-grey-medium changed to $color-raven
-* scss variable $color-grey changed to $color-shuttle-grey
-* scss variable $color-grey-dark changed to $color-shark
-* scss variable $color-grey-panel changed to $color-athens-grey
-* scss variable $color-purple changed to $color-grape
-* scss variable $color-purple-light changed to $color-royal-purple
-* scss variable $color-purple-panel changed to $color-white-lilac
-* scss variable $color-red changed to $color-cardinal
-* scss variable $color-red-panel changed to $color-lavender-blush
-* scss variable $color-grey-dividers changed to $color-gainsboro
+* scss variable `$color-green` changed to `$color-forest-green`
+* scss variable `$color-green-darker` changed to `$color-japanese-laurel`
+* scss variable `$color-green-panel` changed to `$color-panache`
+* scss variable `$color-grey-medium` changed to `$color-raven`
+* scss variable `$color-grey changed` to `$color-shuttle-grey`
+* scss variable `$color-grey-dark` changed to `$color-shark`
+* scss variable `$color-grey-panel` changed to `$color-athens-grey`
+* scss variable `$color-purple` changed to `$color-grape`
+* scss variable `$color-purple-light` changed to `$color-royal-purple`
+* scss variable `$color-purple-panel` changed to `$color-white-lilac`
+* scss variable `$color-red` changed to `$color-cardinal`
+* scss variable `$color-red-panel` changed to `$color-lavender-blush`
+* scss variable `$color-grey-dividers` changed to `$color-gainsboro`
 
 
 ## Upgrading to v0.6.x
