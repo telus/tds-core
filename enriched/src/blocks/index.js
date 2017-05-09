@@ -1,11 +1,11 @@
-import HeadlineBlock from './HeadlineBlock';
-import OverviewBlock from './OverviewBlock';
-import TitledTextBlock from './TitledTextBlock';
-import VideoBlock from './VideoBlock';
+import BlockHeroWaveTitleEyebrow from './BlockHeroWaveTitleEyebrow';
+import BlockOverview from './BlockOverview';
+import BlockTitledText from './BlockTitledText';
+import BlockVideo from './BlockVideo';
 
 export {
-  HeadlineBlock,
-  OverviewBlock,
-  TitledTextBlock,
-  VideoBlock
+  BlockHeroWaveTitleEyebrow,
+  BlockOverview,
+  BlockTitledText,
+  BlockVideo
 };

@@ -1,11 +1,11 @@
-import OverviewBlockExample from './OverviewBlockExample';
-import HeadlineBlockExample from './HeadlineBlockExample';
-import VideoBlockExample from './VideoBlockExample';
-import TitledTextBlockExample from './TitledTextBlockExample';
+import BlockOverviewExample from './BlockOverviewExample';
+import BlockHeroWaveTitleEyebrowExample from './BlockHeroWaveTitleEyebrowExample';
+import BlockVideoExample from './BlockVideoExample';
+import BlockTitledTextExample from './BlockTitledTextExample';
 
 export {
-  OverviewBlockExample,
-  HeadlineBlockExample,
-  VideoBlockExample,
-  TitledTextBlockExample
+  BlockOverviewExample,
+  BlockHeroWaveTitleEyebrowExample,
+  BlockVideoExample,
+  BlockTitledTextExample
 };

@@ -1,5 +1,5 @@
 ---
-title: Video Block
+title: Video
 template: layout-blocks.jade
 ---
 
@@ -11,19 +11,19 @@ The video is left aligned, taking up 8 grid columns at medium width and higher. 
 
 ---
 
-<div id="videoBlockExample"></div>
+<div id="BlockVideoExample"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <TDSBlocks.VideoBlockExample />,
-    document.getElementById('videoBlockExample')
+    <TDSBlocks.BlockVideo />,
+    document.getElementById('BlockVideoExample')
   );
 </script>
 
 ```javascript
 import React from 'react';
-import { VideoBlock } from 'telus-thorium-enriched/lib/blocks';
+import { BlockVideo } from 'telus-thorium-enriched/lib/blocks';
 
-const VideoBlockExample = () => {
+const BlockVideoExample = () => {
   const props = {
     caption: 'Video caption title',
     subtext: 'Video caption short description',
@@ -31,11 +31,11 @@ const VideoBlockExample = () => {
   };
 
   return (
-    <VideoBlock {...props} />
+    <BlockVideo {...props} />
   );
 };
 
-export default VideoBlockExample;
+export default BlockVideoExample;
 ```
 
 ## API
