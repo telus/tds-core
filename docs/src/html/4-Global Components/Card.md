@@ -32,7 +32,7 @@ const CardEx = () => {
       <div className="grid-row">
         <div className="small-12 medium-6 large-4">
           <Card>
-            </h2>Hello World</h2>
+            <h2>Hello World</h2>
             <p>This is the content...</p>
           </Card>
         </div>
@@ -41,6 +41,28 @@ const CardEx = () => {
 }
 
 export default CardEx;
+```
+
+## Card with no border
+---
+<div class="grid-row">
+  <div class="small-12 medium-6 large-6">
+    <div id="borderlessCardExample">
+    </div>
+  </div>
+</div>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.BorderlessCardExample />,
+    document.getElementById('borderlessCardExample')
+  );
+</script>
+
+```javascript
+<Card className="card--no-border">
+  <h2>Hello World</h2>
+  <p>This is the body of a card with no border.</p>
+</Card>
 ```
 
 
