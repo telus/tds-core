@@ -20,6 +20,14 @@
     background: $color-grape;
     padding: 2rem;
   }
+
+  &--primary-bg {
+    background: $color-japanese-laurel;
+  }
+
+  &--secondary-bg {
+    background: $color-grape;
+  }
 }
 
 #example-hint {

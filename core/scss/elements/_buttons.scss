@@ -1,6 +1,6 @@
 // Button styles
 
-.button {
+.tds-button {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -23,84 +23,24 @@
     width: auto;
     vertical-align: top;
 
-    + .button {
+    + .tds-button {
       // Using < 20px to compensate for the extra margin which appears between inline-block
       // elements due to whitespace in the actual markup.
       margin-left: 16px;
     }
 
-    + .button--link {
+    + .tds-button--link {
       margin-left: 34px;
     }
 
     &--link {
-      + .button--link {
+      + .tds-button--link {
         margin-left: 40px;
       }
 
-      + .button:not(.button--link) {
+      + .tds-button:not(.tds-button--link) {
         margin-left: 40px;
       }
-    }
-  }
-
-  &--purple {
-    background-color: $color-grape;
-    color: $color-white;
-
-    &:hover {
-      background-color: $color-white;
-      color: $color-grape;
-      box-shadow: 0 0 0 1px;
-    }
-
-    &.button--outlined {
-      background-color: $color-white;
-      color: $color-grape;
-      box-shadow: 0 0 0 1px;
-
-      &:hover {
-        background-color: $color-white;
-        color: $color-grape;
-      }
-    }
-
-    &.button--link {
-      &::after {
-        padding-left: 4px;
-      }
-
-      @include chevron-links($color-grape, $color-royal-purple);
-    }
-  }
-
-  &--green {
-    background-color: $color-forest-green;
-    color: $color-white;
-
-    &:hover {
-      background-color: $color-white;
-      color: $color-forest-green;
-      box-shadow: 0 0 0 1px;
-    }
-
-    &.button--outlined {
-      background-color: $color-white;
-      box-shadow: 0 0 0 1px;
-      color: $color-forest-green;
-
-      &:hover {
-        background-color: $color-white;
-        color: $color-forest-green;
-      }
-    }
-
-    &.button--link {
-      &::after {
-        padding-left: 4px;
-      }
-
-      @include chevron-links($color-japanese-laurel, $color-forest-green);
     }
   }
 
@@ -117,42 +57,89 @@
     padding-right: 0;
     font-weight: 500;
     min-width: auto;
+  }
+
+  &--primary {
+    background-color: $color-forest-green;
+    color: $color-white;
 
     &:hover {
-      //color: $color-japanese-laurel;
+      background-color: $color-white;
+      color: $color-forest-green;
+      box-shadow: 0 0 0 1px;
+    }
+
+    &.tds-button--link {
+      &::after {
+        padding-left: 4px;
+      }
+
+      background-color: transparent;
+
+      @include chevron-links($color-japanese-laurel);
+    }
+
+    &.tds-button--inverted {
+      color: $color-japanese-laurel;
+      background-color: $color-white;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-japanese-laurel;
+        box-shadow: 0 0 0 1px;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: $color-grape;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-grape;
+      box-shadow: 0 0 0 1px;
+    }
+
+    &.tds-button--link {
+      &::after {
+        padding-left: 4px;
+      }
+
+      background-color: transparent;
+
+      @include chevron-links($color-grape);
+    }
+
+    &.tds-button--inverted {
+      color: $color-grape;
+      background-color: $color-white;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-grape;
+        box-shadow: 0 0 0 1px;
+      }
     }
   }
 
   &--plain {
     margin: 0;
     padding: 0;
+    border: 0;
+    background-image: none;
     background-color: transparent;
-    min-height: auto;
+    box-shadow: none;
+    text-align: center;
   }
 
   &--disabled {
-    background-color: #efefef;
+    background-color: $color-gainsboro;
     color: $color-shark;
+    cursor: none;
 
     &:hover {
       box-shadow: none;
-    }
-  }
-
-  &--inverted {
-    background: $color-white;
-    color: $color-grape;
-
-    &:hover {
-      box-shadow: 0 0 0 1px;
-      color: $color-white;
-      background: $color-grape;
-    }
-
-    &.button--outlined {
-      box-shadow: 0 0 0 1px;
-      color: $color-white;
-      background: $color-grape;
     }
   }
 }

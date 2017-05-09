@@ -183,9 +183,8 @@ small,
 //
 
 .link,
-a,
-a:link,
-a:visited {
+&:link,
+&:visited {
   color: $color-link;
   text-decoration: underline;
 
@@ -197,13 +196,13 @@ a:visited {
 .chevron-link,
 .chevron-link:link,
 .chevron-link:visited {
-  @include chevron-links($color-grape, $color-royal-purple);
+  @include chevron-links($color-grape);
 }
 
 .chevron-link--secondary,
 .chevron-link--secondary:link,
 .chevron-link--secondary:visited {
-  @include chevron-links($color-japanese-laurel, $color-forest-green);
+  @include chevron-links($color-japanese-laurel);
 }
 
 .link--inverted,
