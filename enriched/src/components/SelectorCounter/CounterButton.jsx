@@ -27,7 +27,7 @@ export default function counterButton(props) {
   return (
     <button
       aria-label={label}
-      className="selector-counter__button"
+      className="tds-button--plain selector-counter__button"
       onClick={disabled ? noop : onClick}
       disabled={disabled}
       {...extraProps}
