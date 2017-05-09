@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlockVideo } from 'telus-thorium-enriched/blocks';
+import BlockVideo from 'telus-thorium-enriched/blocks/BlockVideo';
 
 const BlockVideoExample = () => {
   const props = {

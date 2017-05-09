@@ -19,7 +19,7 @@ A BlockHeroWaveTitleEyebrow is a block that is composed of a page title and, opt
 
 ```javascript
 import React from 'react';
-import { BlockHeroWaveTitleEyebrow } from 'telus-thorium-enriched/lib/blocks';
+import BlockHeroWaveTitleEyebrow from 'telus-thorium-enriched/lib/blocks/BlockHeroWaveTitleEyebrow';
 
 const BlockHeroWaveTitleEyebrowExample = () => {
   const props = {

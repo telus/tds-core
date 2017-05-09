@@ -19,7 +19,7 @@ A Block Titled Text is a block that is composed of a section title and an array 
 
 ```javascript
 import React from 'react';
-import { BlockTitledText } from 'telus-thorium-enriched/lib/blocks';
+import BlockTitledText from 'telus-thorium-enriched/lib/blocks/BlockTitledText';
 
 const BlockTitledTextExample = () => {
   const props = {
