@@ -1,0 +1,8 @@
+@import '../stylesheets/variables';
+
+.b-divider-dimple__bg {
+  margin-bottom: $block-margin-bottom;
+  height: 33px;
+  background-image: radial-gradient(ellipse at top, rgba(150, 150, 150, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  z-index: 1;
+}
