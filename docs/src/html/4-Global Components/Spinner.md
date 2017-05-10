@@ -53,3 +53,14 @@ import { Spinner } from 'telus-thorium-enriched';
   <p>content.....</p>
 </Spinner>
 ```
+
+## API
+
+
+---
+| Property |   Description   | Type | Default |
+|:----|:------|:---|:---|
+| `spinning` | toggle of spinner | `boolean` |  - |
+| `tip` | tip text (optional) | `boolean` |  - |
+| `wrapperClassNames` | css classes for wrapped nodes | `string` |  '' |
+| `children` | if children is available, spinner is in embedded mode | `react node` |  - |
