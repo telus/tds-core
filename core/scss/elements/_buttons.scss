@@ -136,7 +136,7 @@
   &--disabled {
     background-color: $color-gainsboro;
     color: $color-shark;
-    cursor: none;
+    cursor: default;
 
     &:hover {
       box-shadow: none;
