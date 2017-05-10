@@ -1,0 +1,13 @@
+@import '../stylesheets/variables';
+
+.b-titled-text {
+  margin: $block-margin-bottom 0;
+
+  h1 {
+    margin-bottom: 46px;
+  }
+
+  &__content {
+    margin: 32px 0;
+  }
+}

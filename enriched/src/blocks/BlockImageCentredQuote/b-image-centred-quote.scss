@@ -1,0 +1,27 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+
+.b-image-centred-quote {
+  position: relative;
+  margin-bottom: 50px;
+
+  @include from-breakpoint(medium) {
+    margin-bottom: 170px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__card {
+    position: relative;
+    margin-top: -30px;
+    width: 100%;
+
+    @include from-breakpoint(medium) {
+      position: absolute;
+      top: initial;
+      bottom: -75px;
+    }
+  }
+}

@@ -1,25 +1,5 @@
----
-title: Titled Text
-template: layout-blocks.jade
----
-
-## Titled Text
-
-A Block Titled Text is a block that is composed of a section title and an array of titled text sections.
-
----
-
-<div id="titledTextBlockExample"></div>
-<script type="text/babel">
-  ReactDOM.render(
-    <TDSBlocks.BlockTitledTextExample />,
-    document.getElementById('titledTextBlockExample')
-  );
-</script>
-
-```javascript
 import React from 'react';
-import BlockTitledText from 'telus-thorium-enriched/lib/blocks/BlockTitledText';
+import BlockTitledText from 'telus-thorium-enriched/blocks/BlockTitledText';
 
 const BlockTitledTextExample = () => {
   const props = {
@@ -42,15 +22,3 @@ const BlockTitledTextExample = () => {
 };
 
 export default BlockTitledTextExample;
-
-```
-
-## API
-
-
----
-| Property |   Description   | Type | Default |
-|:----|:------|:---|:---|
-| `title` | section title | `string` |  <p style='color: red'>required</p> |
-| `content` | array of objects which have a title and content | `object` | <p style='color: red'>required</p>  |
-| `titleHeadingClass` | TDS heading class for title | `string` | "heading-1"  |

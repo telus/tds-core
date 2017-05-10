@@ -1,27 +1,27 @@
 ---
-title: Overview Block
+title: Overview
 template: layout-blocks.jade
 ---
 
 ## Overview
 
-An Overview Block is a block that is composed of a [TextTitleBodyButton](../5-Block%20Components/2-textTitleBodyButton.html) and [CheckList](../5-Block%20Components/1-checklist.html).
+An Overview Block is a block that is composed of a [ComponentTextTitleBodyButton](../5-Block%20Components/2-textTitleBodyButton.html) and [ComponentCheckList](../5-Block%20Components/1-checklist.html).
 
 ---
 
 <div id="overviewBlockExample"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <TDSBlocks.OverviewBlockExample />,
+    <TDSBlocks.BlockOverviewExample />,
     document.getElementById('overviewBlockExample')
   );
 </script>
 
 ```javascript
 import React from 'react';
-import { OverviewBlock } from 'telus-thorium-enriched/lib/blocks';
+import BlockOverview from 'telus-thorium-enriched/lib/blocks/BlockOverview';
 
-const OverviewBlockExample = () => {
+const BlockOverviewExample = () => {
   const props = {
     className: 'class',
     overviewTitle: 'Lorem Ipsum',
@@ -38,11 +38,11 @@ const OverviewBlockExample = () => {
   };
 
   return (
-    <OverviewBlock {...props} />
+    <BlockOverview {...props} />
   );
 }
 
-export default OverviewBlockExample;
+export default BlockOverviewExample;
 ```
 
 
