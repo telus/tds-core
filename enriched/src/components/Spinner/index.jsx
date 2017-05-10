@@ -49,6 +49,7 @@ class Spinner extends Component {
     }, wrapperClassNames);
     return (
       <div className="spinner-wrapper">
+        {spinning ? <div className="spinner-wrapper__content-blocker" /> : null}
         {spinEl}
         <div className={containerCls}>
           {this.props.children}
