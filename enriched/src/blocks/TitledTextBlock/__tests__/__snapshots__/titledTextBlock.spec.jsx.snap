@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`TextBlock Component matches snapshot 1`] = `
 <TitledTextBlock
   content={
@@ -9,23 +11,31 @@ exports[`TextBlock Component matches snapshot 1`] = `
     ]
   }
   title="Title1"
-  titleHeadingClass="heading-1">
+  titleHeadingClass="heading-1"
+>
   <section
-    className="titled-text-block">
+    className="titled-text-block"
+  >
     <div
-      className="container container--limited-width">
+      className="container container--limited-width"
+    >
       <div
-        className="grid-row">
+        className="grid-row"
+      >
         <div
-          className="small-12 medium-12 large-12">
+          className="small-12 medium-12 large-12"
+        >
           <h1
-            className="heading-1">
+            className="heading-1"
+          >
             Title1
           </h1>
           <div
-            className="title-text-block__content">
+            className="title-text-block__content"
+          >
             <h2
-              className="heading-4">
+              className="heading-4"
+            >
               Small Title 1
             </h2>
             <p>
