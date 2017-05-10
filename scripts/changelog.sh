@@ -34,7 +34,7 @@
 # Param 2: Ending ref
 # Param 3: Entry version
 changelog_entry () {
-  printf "---\ntitle: Changelog\ntemplate: changelog.jade\n---\n\n\n## ${3}\n"
+  printf "\n\n\n## ${3}\n"
   # Format the release date like 01 January 2017
   git log -1 --pretty=format:"%ad" --date=format:"%d %B %Y" ${2}
   printf "\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/${3}\n\n"
@@ -54,6 +54,7 @@ if [[ "$CURR_VER" != "" ]]; then
   CURR_REF=$(git rev-parse HEAD)
 fi
 
+printf "---\ntitle: Changelog\ntemplate: changelog.jade\n---\n"
 # Process tags in reverse-chronological order
 git for-each-ref --sort=-taggerdate --format '%(tag)' refs/tags | ( while read REF; do
   if [[ "$CURR_REF" != "" ]]; then

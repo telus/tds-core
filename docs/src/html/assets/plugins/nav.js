@@ -75,11 +75,13 @@ function buildChildren(category) {
     var order = i;
     var matches = key.match(NUMBERED_NAMING_PATTERN);
     var child = category[key];
+    var classname = child.title.replace(/\s/g,'-').toLowerCase();
 
     children.push({
       title: child.title,
       url: child.url,
-      order: (matches === null) ? i : parseInt(matches[1])
+      order: (matches === null) ? i : parseInt(matches[1]),
+      class: classname
     });
 
     i++;
