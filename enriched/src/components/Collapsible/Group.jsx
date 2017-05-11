@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 class Group extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     const { activeKeys } = this.props;
     this.state = { currentActiveKeys: activeKeys };
@@ -21,16 +21,16 @@ class Group extends Component {
     return () => {
       if (this.props.disabledKeys.indexOf(panelKey) === -1) {
         let activeKeys = this.state.currentActiveKeys;
-        if(activeKeys.indexOf(panelKey) > -1){
-          this.setState({currentActiveKeys: activeKeys.filter(activeKey => activeKey !== panelKey)});
+        if (activeKeys.indexOf(panelKey) > -1) {
+          this.setState({ currentActiveKeys: activeKeys.filter(activeKey => activeKey !== panelKey) });
         } else {
-          if(this.props.accordion) {
-            this.setState({currentActiveKeys: [panelKey]});
+          if (this.props.accordion) {
+            this.setState({ currentActiveKeys: [panelKey] });
           } else {
-            this.setState({currentActiveKeys: activeKeys.concat([panelKey])});
+            this.setState({ currentActiveKeys: activeKeys.concat([panelKey]) });
           }
         }
-        if(this.props.onChange){
+        if (this.props.onChange) {
           this.props.onChange.call(this, panelKey);
         }
       }

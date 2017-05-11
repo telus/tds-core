@@ -1,17 +1,17 @@
 import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 
-if ( process.env.BROWSER ) {
+if (process.env.BROWSER) {
   require('./Panel.scss');
 }
 
 class Panel extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
 
   render() {
-    const { className, header, children, isActive, isDisabled, onPanelClick, isFirst} = this.props;
+    const { className, header, children, isActive, isDisabled, onPanelClick, isFirst } = this.props;
     const collapsePanelClassName = classNames('collapsible-panel', className);
     const collapsePanelContent = classNames('collapsible-panel__content', {
       'collapsible-panel__content--visible': isActive
@@ -53,7 +53,8 @@ Panel.propTypes = {
   children: PropTypes.node,
   isActive: PropTypes.bool,
   isDisabled: PropTypes.bool,
-  onPanelClick: PropTypes.func
+  onPanelClick: PropTypes.func,
+  isFirst: PropTypes.bool
 };
 
 Panel.defaultProps = {

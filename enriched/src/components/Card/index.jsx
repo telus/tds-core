@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-if ( process.env.BROWSER ) {
+if (process.env.BROWSER) {
   require('./card.scss');
 }
 

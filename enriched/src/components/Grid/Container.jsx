@@ -8,8 +8,8 @@ function Container(props) {
   });
 
   return (
-    <div className={classes} { ...extraProps }>
-      { props.children }
+    <div className={classes} {...extraProps}>
+      {props.children}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-if ( process.env.BROWSER ) {
+if (process.env.BROWSER) {
   require('./headline.scss');
 }
 
