@@ -33,7 +33,8 @@ class Spinner extends Component {
 
   getSpinElement(spinning, tip, fullScreen) {
     const cls = classnames('spinner', {
-      'spinner--spinning': spinning
+      'spinner--spinning': spinning,
+      'spinner--full-screen': fullScreen
     });
     return (
       <div className={cls}>

@@ -41,17 +41,20 @@
   &--spinning {
     display: block;
   }
+
+  &--full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+  }
 }
 
 .spinner__full-screen-layer {
   background-color: #ffffff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  filter: blur(1.8px);
-  opacity: .8;
+  opacity: .85;
 }
 
 .spinner__svg {
