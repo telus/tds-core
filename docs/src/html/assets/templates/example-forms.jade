@@ -15,7 +15,7 @@ block content
           label(for='password') Password
           input(type='password', id='password')
         div.button-row
-          button(type='submit').button.button-purple Login
+          button(type='submit').tds-button.tds-button--primary Login
       div.medium-4.large-5.offset-medium-1.login-metric__copy
         h3 New to TELUS Business?
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus mollis tortor eget sagittis.
@@ -32,7 +32,7 @@ block content
           label(for='query') What are you looking for?
           input(type='text', id='query', aria-describedby='some-hint')
           div.hint
-            button(aria-controls='some-hint').button.button-plain.hint__trigger
+            button(aria-controls='some-hint').tds-button--plain.hint__trigger
               span.accessible-hide Toggle search field description visibility
             span(aria-role='tooltip', aria-hidden='true')#some-hint.hint__text Enter a few keywords related to your search.
         div.field
@@ -40,7 +40,7 @@ block content
             input(type='checkbox')
             span.choice__text I agree to the Terms and Conditions
         div.button-row
-          button(type='submit').button.button-purple Search
+          button(type='submit').tds-button.tds-button--primary Search
 
   hr
 
@@ -60,7 +60,7 @@ block content
             div.field__control
               input(type='text', id='hello-world', aria-describedby='hello-world-description')
           div.button-row
-            button(type='submit')#greeting-button.button.button-purple Send Greeting
+            button(type='submit')#greeting-button.tds-button.tds-button--primary Send Greeting
 
   hr
 

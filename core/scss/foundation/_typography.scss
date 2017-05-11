@@ -183,9 +183,8 @@ small,
 //
 
 .link,
-a,
-a:link,
-a:visited {
+&:link,
+&:visited {
   color: $color-link;
   text-decoration: underline;
 
@@ -197,35 +196,13 @@ a:visited {
 .chevron-link,
 .chevron-link:link,
 .chevron-link:visited {
-  text-decoration: none;
-  color: $color-grape;
-  font-weight: 500;
-
-  &:hover {
-    color: $color-royal-purple;
-
-    .icon {
-      left: 4px;
-    }
-  }
-
-  .icon {
-    position: relative;
-    color: inherit;
-    transition: color .2s, left .3s;
-    left: -2px;
-    margin-left: 2px;
-  }
+  @include chevron-links($color-grape);
 }
 
 .chevron-link--secondary,
 .chevron-link--secondary:link,
 .chevron-link--secondary:visited {
-  color: $color-japanese-laurel;
-
-  &:hover {
-    color: $color-forest-green;
-  }
+  @include chevron-links($color-japanese-laurel);
 }
 
 .link--inverted,

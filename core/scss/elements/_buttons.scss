@@ -1,7 +1,6 @@
 // Button styles
 
-.button,
-a.button {
+.tds-button {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -24,50 +23,43 @@ a.button {
     width: auto;
     vertical-align: top;
 
-    + .button {
+    + .tds-button {
       // Using < 20px to compensate for the extra margin which appears between inline-block
       // elements due to whitespace in the actual markup.
       margin-left: 16px;
     }
 
-    + .button-link {
+    + .tds-button--link {
       margin-left: 34px;
     }
 
-    &-link {
-      + .button-link {
+    &--link {
+      + .tds-button--link {
         margin-left: 40px;
       }
 
-      + .button:not(.button-link) {
+      + .tds-button:not(.tds-button--link) {
         margin-left: 40px;
       }
     }
   }
 
-  &-purple {
-    background-color: $color-grape;
-    color: $color-white;
-
-    &:hover {
-      background-color: $color-white;
-      color: $color-grape;
-      box-shadow: 0 0 0 1px;
-    }
-
-    &--outlined {
-      background-color: $color-white;
-      color: $color-grape;
-      box-shadow: 0 0 0 1px;
-
-      &:hover {
-        background-color: $color-white;
-        color: $color-grape;
-      }
-    }
+  &--link {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: inherit;
+    font-family: inherit;
+    line-height: 1;
+    font-size: rem(16px);
+    border: 0;
+    text-decoration: underline;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 500;
+    min-width: auto;
   }
 
-  &-green {
+  &--primary {
     background-color: $color-forest-green;
     color: $color-white;
 
@@ -77,72 +69,77 @@ a.button {
       box-shadow: 0 0 0 1px;
     }
 
-    &--outlined {
-      background-color: $color-white;
-      box-shadow: 0 0 0 1px;
-      color: $color-forest-green;
-
-      &:hover {
-        background-color: $color-white;
-        color: $color-forest-green;
+    &.tds-button--link {
+      &::after {
+        padding-left: 4px;
       }
+
+      background-color: transparent;
+
+      @include chevron-links($color-japanese-laurel);
     }
-  }
 
-  &-link {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: inherit;
-    font-family: inherit;
-    line-height: 1;
-    font-size: rem(16px);
-    border: 0;
-    color: $color-forest-green;
-    text-decoration: underline;
-    padding-left: 0;
-    padding-right: 0;
-    font-weight: 500;
-
-    &:hover {
+    &.tds-button--inverted {
       color: $color-japanese-laurel;
-    }
-  }
-
-  &-plain {
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    min-height: auto;
-  }
-
-  &[disabled] {
-    background-color: #efefef;
-    color: $color-shark;
-
-    &:hover {
-      border-width: 0;
-    }
-  }
-
-  &-inverted {
-    border: 0;
-    background: $color-white;
-    color: $color-grape;
-
-    &:hover {
-      color: $color-grape;
-    }
-
-    &--outlined {
-      border: solid 1px $color-white;
-      color: $color-white;
-      background: $color-grape;
-      transition: border-color .1s linear;
+      background-color: $color-white;
 
       &:hover {
         color: $color-white;
-        border: solid 1px rgba(255, 255, 255, .35);
+        background-color: $color-japanese-laurel;
+        box-shadow: 0 0 0 1px;
       }
+    }
+  }
+
+  &--secondary {
+    background-color: $color-grape;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-grape;
+      box-shadow: 0 0 0 1px;
+    }
+
+    &.tds-button--link {
+      &::after {
+        padding-left: 4px;
+      }
+
+      background-color: transparent;
+
+      @include chevron-links($color-grape);
+    }
+
+    &.tds-button--inverted {
+      color: $color-grape;
+      background-color: $color-white;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-grape;
+        box-shadow: 0 0 0 1px;
+      }
+    }
+  }
+
+  &--plain {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  &--disabled {
+    background-color: $color-gainsboro;
+    color: $color-shark;
+    cursor: none;
+
+    &:hover {
+      box-shadow: none;
     }
   }
 }

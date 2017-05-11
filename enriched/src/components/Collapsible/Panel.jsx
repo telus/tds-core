@@ -17,7 +17,7 @@ class Panel extends Component {
       'collapsible-panel__content--visible': isActive
     });
 
-    const collapsePaneLabelClassName = classNames('collapsible-panel__label', {
+    const collapsePaneLabelClassName = classNames('tds-button--plain collapsible-panel__label', {
       'collapsible-panel__label--disabled': isDisabled,
       'collapsible-panel__label--expanded': isActive,
       'collapsible-panel__label--collapsed': !isActive,

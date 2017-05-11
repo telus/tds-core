@@ -3,6 +3,16 @@ title: Buttons
 template: doc.jade
 ---
 
+* [Overview](#overview)
+* [Primary Button](#primary-button)
+* [Secondary Button](#secondary-button)
+* [Inverted buttons](#inverted-buttons)
+* [Disabled state](#disabled-state)
+* [Anchor buttons](#anchor-buttons)
+* [Links](#links)
+* [Spacing](#spacing)
+
+
 ## Overview
 
 ---
@@ -22,118 +32,108 @@ The shape colour of normal and hover fade between one another on hover of the bu
 * Avoid excessively long button text
 * Make sure the button text describes an action
 
-## Purple Button
+## Primary Button
 
 ---
 
-A button that's used for primary actions. The `button` and `button-purple` blocks define its default appearance. In general, button classes can be applied to both `<button>` and `<a>` tags.
-
-<button class="button button-purple">Submit form</button>
+<button class="tds-button tds-button--primary">
+    Submit Form
+</button>
 
 ```html
-<button class="button button-purple">
+<button class="tds-button tds-button--primary">
+    Submit Form
+</button>
+```
+
+## Secondary Button
+
+---
+
+A button that's used for secondary actions. The `button` and `button--secondary` blocks define its default appearance. In general, button classes can be applied to both `<button>` and `<a>` tags.
+
+<button class="tds-button tds-button--secondary">Submit form</button>
+
+```html
+<button class="tds-button tds-button--secondary">
     Submit form
 </button>
 ```
 
-### Outlined purple button
+## Inverted Buttons
 
-<button class="button button-purple button-purple--outlined">
-    Submit form
-</button>
+---
+<div class="example example--inverted example--primary-bg">
+  <button class="tds-button tds-button--inverted tds-button--primary">
+    Lorem ipsum
+  </button>
+</div>
+<div class="example example--inverted example--secondary-bg">
+  <button class="tds-button tds-button--inverted tds-button--secondary">
+    Lorem ipsum
+  </button>
+</div>
 
 ```html
-<button class="button button-purple button-purple--outlined">
-    Submit form
+<button class="tds-button tds-button--inverted tds-button--primary">
+    Lorem ipsum
+</button>
+
+<button class="tds-button tds-button--inverted tds-button--secondary">
+    Lorem ipsum
 </button>
 ```
 
-### Anchor buttons
-
-Button classes can also be applied to `<a>` tags.
-
-<a class="button button-purple" role="button" href="#">Anchor button</a>
-
-```html
-<a class="button button-purple" role="button" href="#">
-    Anchor button
-</a>
-```
-
-### Disabled state
+## Disabled state
 
 If you want to prevent that a button from being clicked, use the `disabled` attribute.
 
-<button class="button button-purple" disabled>Disabled</button>
+<button class="tds-button tds-button--disabled" disabled>Disabled</button>
 
 ```html
-<button class="button button-purple" disabled>
+<button class="tds-button tds-button--disabled" disabled>
     Disabled
 </button>
 ```
 
+## Anchor buttons
+
+Button classes can also be applied to `<a>` tags. Remember to add the `role = button` to make your links accessible.
+
+<a class="tds-button tds-button--primary" role="button" href="#">Anchor button</a>
+<br/>
+<a class="tds-button tds-button--secondary" role="button" href="#">Anchor button</a>
+
+```html
+<a class="tds-button tds-button--primary" role="button" href="#">
+    Anchor button
+</a>
+<br/>
+<a class="tds-button tds-button--secondary" role="button" href="#">
+    Anchor button
+</a>
+```
+
 _Note_: The mobile button width is fluid and stretches to cover all columns currently in view.
 
-## Green Button
-
----
-
-<button class="button button-green">
-    Submit Form
-</button>
-
-```html
-<button class="button button-green">
-    Submit Form
-</button>
-```
-
-### Outlined green button
-
-<button class="button button-green button-green--outlined">
-    Submit form
-</button>
-
-```html
-<button class="button button-green button-green--outlined">
-    Submit form
-</button>
-```
-
-## Inverted Button
-
----
-
-### Inverted + Inverted, Outlined
-
-<div class="example example--inverted">
-    <button class="button button-inverted">
-        Submit form
-    </button>
-    <button class="button button-inverted button-inverted--outlined">
-        Submit form
-    </button>
-</div>
-
-```html
-<button class="button button-inverted">
-    Submit form
-</button>
-<button class="button button-inverted button-inverted--outlined">
-    Submit form
-</button>
-```
 
 ## Links
 
 ---
 
-The `button-link` class creates an element which behaves like a button, but looks like a link.
+The `tds-button--link` class creates an element which behaves like a button, but looks like a link. See Spacing section below to see how it aligns perfectly when there's a button side by side.
 
-<a class="button button-link" role="button" href="#">A link button</a>
+<a class="tds-button tds-button--primary tds-button--link">Link button</a>
+<br/>
+<a class="tds-button tds-button--secondary tds-button--link">Link button</a>
+
 
 ```html
-<a class="button button-link" role="button" href="#">
+<a class="tds-button tds-button--primary tds-button--link" role="button" href="#">
+    A link button
+</a>
+<br/>
+<a class="tds-button tds-button--secondary tds-button--link" role="button" href="#">
     A link button
 </a>
 ```
@@ -142,11 +142,13 @@ The `button-link` class creates an element which behaves like a button, but look
 
 ---
 
-Buttons will occupy 100% width of their parent's at the small viewport and below. In other viewports, they'll display inline. Buttons are separated by 20 pixels of space, while links are separated from buttons by 40 pixels.
+Buttons will occupy 100% width of their parent's at the small viewport and below. In other viewports, they'll display inline. Link buttons are separated from buttons by 40 pixels.
 
 <div>
-    <button class="button button-purple">Button</button>
-    <button class="button button-purple" disabled>Disabled</button>
-    <a class="button button-purple" role="button" href="#">Anchor</a>
-    <button class="button button-link">Link button</a>
+    <button class="tds-button tds-button--secondary">Button</button>
+    <a class="tds-button tds-button--secondary tds-button--link">Link button</a>
+</div>
+<div>
+    <button class="tds-button tds-button--primary">Button</button>
+    <a class="tds-button tds-button--primary tds-button--link">Link button</a>
 </div>
