@@ -488,7 +488,7 @@ These limits can be achieved by combining grid column helpers (`.medium-7.large-
     </div>
 </div>
 <div class="button-row">
-    <button type="submit" class="button button--primary">
+    <button type="submit" class="tds-button tds-button--primary">
 	Search
     </button>
 </div>
@@ -503,7 +503,7 @@ These limits can be achieved by combining grid column helpers (`.medium-7.large-
     </div>
 </div>
 <div class="button-row">
-    <button type="submit" class="button button--primary">
+    <button type="submit" class="tds-button tds-button--primary">
 	Search
     </button>
 </div>
@@ -684,7 +684,7 @@ Hints provide information a user may need to complete a form field. While a labe
     <label for="hinted-field">Interactive hint</label>
     <input type="text" id="hinted-field" aria-describedby="some-hint">
     <div class="hint hint--active">
-	<button class="button button--plain hint__trigger" aria-controls="some-hint">
+	<button class="tds-button--plain hint__trigger" aria-controls="some-hint">
 	    <span class="accessible-hide">Toggle helper text visibility</span>
 	</button>
 	<span id="some-hint" class="hint__text" aria-role="tooltip" aria-hidden="false">
