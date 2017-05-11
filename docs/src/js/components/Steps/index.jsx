@@ -21,7 +21,7 @@ class StepsExample extends React.Component {
       this.setState({
         currentStatus: 'error'
       });
-      
+
     }
   }
 
@@ -34,10 +34,10 @@ class StepsExample extends React.Component {
           <Steps.Step label="Checkout" />
         </Steps>
         <div className="offset-large-5">
-          <button className="button button-green" onClick={this.nextStep}>Next Step</button>
+          <button className="tds-button tds-button--primary" onClick={this.nextStep}>Next Step</button>
         </div>
       </div>
-      
+
     );
   }
 }
