@@ -39,7 +39,7 @@ const RegularCollapsibleEx = () => {
 export default RegularCollapsibleEx;
 ```
 
-We can controll the collapsible component state.
+We can control the collapsible component state.
 <div id="controlledCollapsibleExample"></div>
 <script type="text/babel">
   ReactDOM.render(
