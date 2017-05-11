@@ -14,16 +14,31 @@ class Spinner extends Component {
     this.isNestedPattern = this.isNestedPattern.bind(this);
   }
 
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.fullScreen === true && nextProps.spinning === true) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      console.log('setting');
+      document.body.style.overflow = null;
+    }
+  }
+
+  componentWillUnmount(){
+    document.body.style.overflow = null;
+  }
+
   isNestedPattern() {
     return !!(this.props && this.props.children);
   }
 
-  getSpinElement(spinning, tip) {
+  getSpinElement(spinning, tip, fullScreen) {
     const cls = classnames('spinner', {
       'spinner--spinning': spinning
     });
     return (
       <div className={cls}>
+        { fullScreen ? <div className="spinner__full-screen-layer" /> : null}
         <svg className="spinner__svg" viewBox="0 0 100 100" width="0" height="0">
             <circle
                 className="spinner__circle"
@@ -59,22 +74,24 @@ class Spinner extends Component {
   }
 
   render() {
-    const { spinning, tip, wrapperClassNames } = this.props;
+    const { spinning, tip, wrapperClassNames, fullScreen } = this.props;
     if (this.isNestedPattern()) {
-      return this.getSpinWrapper(this.getSpinElement(spinning, tip), spinning, wrapperClassNames);
+      return this.getSpinWrapper(this.getSpinElement(spinning, tip, fullScreen), spinning, wrapperClassNames);
     }
-    return this.getSpinElement(spinning, tip);
+    return this.getSpinElement(spinning, tip, fullScreen);
   }
 }
 
 Spinner.propTypes = {
   wrapperClassNames: PropTypes.string,
   tip: PropTypes.string,
-  spinning: PropTypes.bool
+  spinning: PropTypes.bool,
+  fullScreen: PropTypes.bool
 };
 
 Spinner.defaultProps = {
   wrapperClassNames: '',
+  fullScreen: false
 };
 
 export default Spinner;

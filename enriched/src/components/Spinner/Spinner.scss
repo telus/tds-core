@@ -8,8 +8,8 @@
   .spinner {
     position: absolute;
     top: calc(50% - 50px);
-    left: calc(50% - 50px);
-    z-index: 9999;
+    left: 0;
+    width: 100%;
   }
 }
 
@@ -36,27 +36,42 @@
   background-repeat: no-repeat;
   background-size: 50%;
   margin: auto;
+  text-align: center;
 
   &--spinning {
-    display: initial;
+    display: block;
   }
 }
 
+.spinner__full-screen-layer {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  filter: blur(1.8px);
+  opacity: .8;
+}
+
 .spinner__svg {
-    animation-name: spinner-spinner-rotate;
-    -webkit-animation-name: spinner-rotate;
-    -moz-animation-name: spinner-rotate;
-    animation-duration: 1.8s;
-    -webkit-animation-duration: 1.8s;
-    -moz-animation-duration: 1.8s;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    height: 100%;
-    width: 100%;
+  z-index: 9999;
+  animation-name: spinner-spinner-rotate;
+  -webkit-animation-name: spinner-rotate;
+  -moz-animation-name: spinner-rotate;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
+  -moz-animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  height: 100%;
+  width: 100%;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .spinner__circle {

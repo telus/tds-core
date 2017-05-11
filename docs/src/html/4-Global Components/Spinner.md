@@ -54,6 +54,32 @@ import { Spinner } from 'telus-thorium-enriched';
 </Spinner>
 ```
 
+---
+
+### Full Screen mode
+
+
+<div class="grid-row">
+  <div id="spinnerFullScreenExample">
+  </div>
+</div>
+<script type="text/babel">
+  ReactDOM.render(
+    <Thorium.SpinnerFullScreenExample />,
+    document.getElementById('spinnerFullScreenExample')
+  );
+</script>
+
+```js
+import { Spinner } from 'telus-thorium-enriched';
+<Spinner 
+  spinning={true} 
+  tip="Loading..." 
+  fullScreen={true}
+  />
+```
+
+
 ## API
 
 
@@ -62,5 +88,6 @@ import { Spinner } from 'telus-thorium-enriched';
 |:----|:------|:---|:---|
 | `spinning` | toggle of spinner | `boolean` |  - |
 | `tip` | tip text (optional) | `boolean` |  - |
+| `fullScreen` | full screen spinner mode | `boolean` |  false |
 | `wrapperClassNames` | css classes for wrapped nodes | `string` |  '' |
 | `children` | if children is available, spinner is in embedded mode | `react node` |  - |
