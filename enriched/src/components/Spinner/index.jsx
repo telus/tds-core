@@ -19,7 +19,6 @@ class Spinner extends Component {
     if (nextProps.fullScreen === true && nextProps.spinning === true) {
       document.body.style.overflow = 'hidden';
     } else {
-      console.log('setting');
       document.body.style.overflow = null;
     }
   }
