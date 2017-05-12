@@ -186,22 +186,6 @@
     .icon {
       left: 4px;
     }
-
-    &::after {
-      font-family: "TELUS Core Icons";
-      content: "\f107";
-      left: 4px;
-    }
-  }
-
-  &::after {
-    font-family: "TELUS Core Icons";
-    content: "\f107";
-    position: relative;
-    color: inherit;
-    transition: color .2s, left .3s;
-    left: -2px;
-    margin-left: 2px;
   }
 
   .icon {

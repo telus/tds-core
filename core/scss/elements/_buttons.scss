@@ -66,10 +66,6 @@
     }
 
     &.button--link {
-      &::after {
-        padding-left: 4px;
-      }
-
       @include chevron-links($color-grape, $color-royal-purple);
     }
   }
@@ -96,10 +92,6 @@
     }
 
     &.button--link {
-      &::after {
-        padding-left: 4px;
-      }
-
       @include chevron-links($color-japanese-laurel, $color-forest-green);
     }
   }

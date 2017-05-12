@@ -142,12 +142,14 @@ The `button--link` class creates an element which behaves like a button, but loo
 <div>
     <button class="button button--green">Button</button>
     <a class="button button--green button--link">Link button
+      <i class="icon icon-core-chevron"></i>
     </a>
 </div>
 
 ```html
 <a class="button button--green button--link" role="button" href="#">
     A link button
+    <i class="icon icon-core-chevron"></i>
 </a>
 ```
 
@@ -159,9 +161,13 @@ Buttons will occupy 100% width of their parent's at the small viewport and below
 
 <div>
     <button class="button button--purple">Button</button>
-    <a class="button button--purple button--link">Link button</a>
+    <a class="button button--purple button--link">Link button
+      <i class="icon icon-core-chevron"></i>
+    </a>
 </div>
 <div>
     <button class="button button--green">Button</button>
-    <a class="button button--green button--link">Link button</a>
+    <a class="button button--green button--link">Link button
+      <i class="icon icon-core-chevron"></i>
+    </a>
 </div>
