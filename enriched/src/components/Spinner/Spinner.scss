@@ -16,8 +16,7 @@
 .spinner-container {
   transition: opacity .3s, fliter 0.3s;
   &--loading {
-    filter: blur(1.8px);
-    opacity: .3;
+    opacity: .15;
     z-index: -1;
   }
 }

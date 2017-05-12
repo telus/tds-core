@@ -19,12 +19,12 @@ class Spinner extends Component {
     if (nextProps.fullScreen === true && nextProps.spinning === true) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = null;
+      document.body.style.overflow = 'inherit';
     }
   }
 
   componentWillUnmount(){
-    document.body.style.overflow = null;
+    document.body.style.overflow = 'inherit';
   }
 
   isNestedPattern() {
