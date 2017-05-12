@@ -43,6 +43,7 @@
   }
 
   &--full-screen {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -55,6 +56,11 @@
 .spinner__full-screen-layer {
   background-color: #ffffff;
   opacity: .85;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right :0;
+  position: fixed;
 }
 
 .spinner__svg {

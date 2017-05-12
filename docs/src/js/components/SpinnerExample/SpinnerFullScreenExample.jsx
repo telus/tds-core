@@ -25,7 +25,7 @@ class SpinnerFullScreenExample extends React.Component {
     const isSpinning = this.state.isSpinning;
     return (
       <div>
-        <Spinner spinning={isSpinning} tip="Loading..." fullScreen={true} />
+        <Spinner spinning={isSpinning} tip="This is full screen..." fullScreen={true} />
         <button onClick={this.activeSpinning} className="tds-button tds-button--primary">Active full screen spinner for 3 seconds</button>
       </div>
     );
