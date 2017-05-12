@@ -1,6 +1,7 @@
 // Button styles
 
-.button {
+.button,
+a.button {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -29,22 +30,22 @@
       margin-left: 16px;
     }
 
-    + .button--link {
+    + .button-link {
       margin-left: 34px;
     }
 
-    &--link {
-      + .button--link {
+    &-link {
+      + .button-link {
         margin-left: 40px;
       }
 
-      + .button:not(.button--link) {
+      + .button:not(.button-link) {
         margin-left: 40px;
       }
     }
   }
 
-  &--purple {
+  &-purple {
     background-color: $color-grape;
     color: $color-white;
 
@@ -54,7 +55,7 @@
       box-shadow: 0 0 0 1px;
     }
 
-    &.button--outlined {
+    &--outlined {
       background-color: $color-white;
       color: $color-grape;
       box-shadow: 0 0 0 1px;
@@ -64,13 +65,9 @@
         color: $color-grape;
       }
     }
-
-    &.button--link {
-      @include chevron-links($color-grape, $color-royal-purple);
-    }
   }
 
-  &--green {
+  &-green {
     background-color: $color-forest-green;
     color: $color-white;
 
@@ -80,7 +77,7 @@
       box-shadow: 0 0 0 1px;
     }
 
-    &.button--outlined {
+    &--outlined {
       background-color: $color-white;
       box-shadow: 0 0 0 1px;
       color: $color-forest-green;
@@ -90,13 +87,9 @@
         color: $color-forest-green;
       }
     }
-
-    &.button--link {
-      @include chevron-links($color-japanese-laurel, $color-forest-green);
-    }
   }
 
-  &--link {
+  &-link {
     -webkit-appearance: none;
     appearance: none;
     background-color: inherit;
@@ -104,18 +97,18 @@
     line-height: 1;
     font-size: rem(16px);
     border: 0;
+    color: $color-forest-green;
     text-decoration: underline;
     padding-left: 0;
     padding-right: 0;
     font-weight: 500;
-    min-width: auto;
 
     &:hover {
-      //color: $color-japanese-laurel;
+      color: $color-japanese-laurel;
     }
   }
 
-  &--plain {
+  &-plain {
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -131,7 +124,7 @@
     }
   }
 
-  &--inverted {
+  &-inverted {
     border: 0;
     background: $color-white;
     color: $color-grape;
@@ -140,7 +133,7 @@
       color: $color-grape;
     }
 
-    &.button--outlined {
+    &--outlined {
       border: solid 1px $color-white;
       color: $color-white;
       background: $color-grape;

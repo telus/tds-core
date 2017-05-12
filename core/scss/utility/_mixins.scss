@@ -173,26 +173,3 @@
     display: table;
   }
 }
-
-@mixin chevron-links($color, $color-hover) {
-  text-decoration: none;
-  color: $color;
-  font-weight: 500;
-
-  &:hover {
-    color: $color-hover;
-    box-shadow: none;
-
-    .icon {
-      left: 4px;
-    }
-  }
-
-  .icon {
-    position: relative;
-    color: inherit;
-    transition: color .2s, left .3s;
-    left: -2px;
-    margin-left: 2px;
-  }
-}
