@@ -85,7 +85,7 @@ import { Spinner } from 'telus-thorium-enriched';
 
 ---
 | Property |   Description   | Type | Default |
-|:----|:------|:---|:---|
+|:---------|:----------------|:-----|:--------|
 | `spinning` | toggle of spinner | `boolean` |  - |
 | `tip` | tip text (optional) | `boolean` |  - |
 | `fullScreen` | full screen spinner mode | `boolean` |  false |
