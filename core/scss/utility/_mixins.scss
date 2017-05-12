@@ -174,14 +174,14 @@
   }
 }
 
-@mixin chevron-links($color) {
+@mixin chevron-links($color, $color-hover) {
   text-decoration: none;
   color: $color;
   font-weight: 500;
 
   &:hover {
+    color: $color-hover;
     box-shadow: none;
-    color: $color;
 
     .icon {
       left: 4px;

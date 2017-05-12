@@ -3,15 +3,14 @@
 
 ## Upgrading to v0.16.x
 
-* `.button-green` changed to `.tds-button--primary`
-* `.button-purple` changed to `.tds-button--secondary`
-* `.button-inverted` changed to `.tds-button--inverted` and it is meant to be used in conjunction with either `.tds-button--primary` and `.tds-button--secondary`
-* `.button-link` changed to `.tds-button--link` and it is meant to be used in conjunction with either `.tds-button--primary` and `.tds-button--secondary`
-* to render a disabled button you should now use use `.tds-button--disable` together with `[disabled]` attribute for functionality
-* `.button-plain` is now meant to bee used on its own to remove default button styling (e.g. tooltip hint on input field)
-* removed `.button-green--outlined` because this style is just a hover state for buttons
-* removed `.button-purple--outlined` because this style is just a hover state for buttons
-* removed `.button-inverted--outlined`
+* `button-green` changed to `button--green`
+* `button-purple` changed to `button--purple`
+* `button-green--outlined` changed to `button--green button--outlined`
+* `button-purple--outlined` changed to `button--purple button--outlined`
+* `button-inverted` changed to `button--inverted`
+* `button-inverted--outlined` changed to `button--inverted button--outlined`
+* `button-link` changed to `button--link` and now also includes the chevron and can be made purple or green with the revised classes mentioned above
+* to disable a but you will have to use `button--disable` together with `[disabled]` attribute for functionality
 
 
 ## Upgrading to v0.15.x
