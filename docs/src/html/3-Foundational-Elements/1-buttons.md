@@ -3,14 +3,6 @@ title: Buttons
 template: doc.jade
 ---
 
-* [Overview](#overview)
-* [Purple Button](#purple-button)
-* [Green Button](#green-button)
-* [Disabled state](#disabled-state)
-* [Links](#links)
-* [Spacing](#spacing)
-
-
 ## Overview
 
 ---
@@ -157,7 +149,7 @@ The `button--link` class creates an element which behaves like a button, but loo
 
 ---
 
-Buttons will occupy 100% width of their parent's at the small viewport and below. In other viewports, they'll display inline. Link buttons are separated from buttons by 40 pixels.
+Buttons will occupy 100% width of their parent's at the small viewport and below. In other viewports, they'll display inline. Buttons are separated by 20 pixels of space, while links are separated from buttons by 40 pixels.
 
 <div>
     <button class="button button--purple">Button</button>
