@@ -15,7 +15,7 @@ const TextTitleBodyButton = (props) => {
       <p>
         <WithLegal content={description} />
       </p>
-      <a className="tds-button tds-button--primary" target={ctaLink.target} href={ctaLink.href}>
+      <a className="button button-green" target={ctaLink.target} href={ctaLink.href}>
         {ctaLink.text}
       </a>
     </div>
