@@ -26,7 +26,7 @@ describe('<Column />', () => {
   });
 
   it('correctly renders children', () => {
-    const div = <div id="hello"></div>;
+    const div = <div id="hello" />;
     const col = shallow(
       <Column>
         { div }
@@ -38,7 +38,10 @@ describe('<Column />', () => {
 
   it('renders column size classes', () => {
     const props = {};
+
+    /* eslint-disable no-return-assign */
     Object.keys(deviceSizes).forEach(size => props[size] = 12);
+    /* eslint-enable no-return-assign */
 
     const col = shallow(<Column {...props} />);
 
@@ -51,7 +54,7 @@ describe('<Column />', () => {
 
   it('renders offset classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${size}Offset`] = 6);
+    Object.keys(deviceSizes).forEach(size => props[`${size}Offset`] = 6); // eslint-disable-line no-return-assign
 
     const col = shallow(<Column {...props} />);
 
@@ -64,7 +67,7 @@ describe('<Column />', () => {
 
   it('renders push classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${size}Push`] = 2);
+    Object.keys(deviceSizes).forEach(size => props[`${size}Push`] = 2); // eslint-disable-line no-return-assign
 
     const col = shallow(<Column {...props} />);
 
@@ -77,7 +80,7 @@ describe('<Column />', () => {
 
   it('renders pull classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${size}Pull`] = 5);
+    Object.keys(deviceSizes).forEach(size => props[`${size}Pull`] = 5); // eslint-disable-line no-return-assign
 
     const col = shallow(<Column {...props} />);
 
@@ -90,7 +93,7 @@ describe('<Column />', () => {
 
   it('renders hidden classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${size}Hidden`] = true);
+    Object.keys(deviceSizes).forEach(size => props[`${size}Hidden`] = true); // eslint-disable-line no-return-assign
 
     const col = shallow(<Column {...props} />);
 
@@ -103,7 +106,7 @@ describe('<Column />', () => {
 
   it('renders hidden-up classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${size}HiddenUp`] = true);
+    Object.keys(deviceSizes).forEach(size => props[`${size}HiddenUp`] = true); // eslint-disable-line no-return-assign
 
     const col = shallow(<Column {...props} />);
 

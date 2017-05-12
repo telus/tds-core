@@ -3,6 +3,7 @@ import React, { PropTypes } from 'react';
 const propTypes = {
   className: PropTypes.string,
   // Sizing
+  /* eslint-disable react/no-unused-prop-types */
   xs: PropTypes.number,
   sm: PropTypes.number,
   md: PropTypes.number,
@@ -38,6 +39,7 @@ const propTypes = {
   mdHiddenUp: PropTypes.bool,
   lgHiddenUp: PropTypes.bool,
   xlHiddenUp: PropTypes.bool
+  /* eslint-enable react/no-unused-prop-types */
 };
 
 function Column(props) {

@@ -6,10 +6,6 @@ if (process.env.BROWSER) {
 }
 
 class Panel extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { className, header, children, isActive, isDisabled, onPanelClick, isFirst } = this.props;
     const collapsePanelClassName = classNames('collapsible-panel', className);

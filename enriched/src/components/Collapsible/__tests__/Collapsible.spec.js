@@ -39,7 +39,7 @@ describe('<Collapsible />', () => {
       .render().text())
       .toEqual('This is panel 1');
 
-    wrapper.find('.collapsible-panel__content').forEach(function (node) {
+    wrapper.find('.collapsible-panel__content').forEach((node) => {
       expect(node.hasClass('collapsible-panel__content--visible')).toEqual(false);
     });
   });
