@@ -26,8 +26,8 @@ class ControlledCollapsibleExample extends Component {
   render() {
       return (
       <div>
-        <button className="tds-button tds-button--secondary" onClick={()=>this.togglePanel('panel-1')}>Toggle panel #1</button>
-        <button className="tds-button tds-button--secondary" onClick={()=>this.togglePanel('panel-2')}>Toggle panel #2</button>
+        <button className="button button-green button-green--outlined" onClick={()=>this.togglePanel('panel-1')}>Toggle panel #1</button>
+        <button className="button button-green button-green--outlined" onClick={()=>this.togglePanel('panel-2')}>Toggle panel #2</button>
         <Collapsible.Group activeKeys={this.state.activeKeys}>
             <Collapsible.Panel header="Panel #1" panelKey="panel-1">
             Panel #1 Body

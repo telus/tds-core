@@ -106,7 +106,6 @@ The contextual prefix &amp; suffix can be used together or separately. They're a
 
 ---
 
-
 <div id="selectorCounterExample-noprops"></div>
 <script type="text/babel">
   ReactDOM.render(
@@ -114,7 +113,3 @@ The contextual prefix &amp; suffix can be used together or separately. They're a
     document.getElementById('selectorCounterExample-noprops')
   );
 </script>
-
-```js
-<SelectorCounter />
-```
