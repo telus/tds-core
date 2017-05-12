@@ -7,9 +7,7 @@
   &__label {
     background: transparent;
     border-radius: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     font-weight: 400;
     font-size: 19px;
     margin: 0;
@@ -103,6 +101,8 @@
 
 
   &__header {
+    display: inline-block;
+    margin-bottom: 0;
     color: $color-shark;
     position: relative;
   }
@@ -110,9 +110,11 @@
 
 
   &__icon {
-    margin: 0 5px;
+    float: right;
     font-size: 1.125rem;
     transition: all .5s;
+    width: 18px;
+    margin-top: -2px;
   }
 
 
