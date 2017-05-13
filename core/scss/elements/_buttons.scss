@@ -1,23 +1,10 @@
 // Button styles
 
-button {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: inherit;
-  font-family: inherit;
-  line-height: 1;
-  font-size: inherit;
-  border: 0;
-}
-
-button,
-.button,
-a.button {
+.button {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
   display: block;
-  font-family: $font-telus;
   font-size: rem(16px);
   font-weight: 700;
   letter-spacing: .2px;
@@ -29,35 +16,35 @@ a.button {
   transition: background .2s;
   width: 100%;
   min-height: 60px;
+  min-width: 180px;
 
   @include from-breakpoint(medium) {
     display: inline-block;
     width: auto;
     vertical-align: top;
 
-    + .button,
-    + button {
+    + .button {
       // Using < 20px to compensate for the extra margin which appears between inline-block
       // elements due to whitespace in the actual markup.
       margin-left: 16px;
     }
 
-    + .button-link {
+    + .button--link {
       margin-left: 34px;
     }
 
-    &-link {
-      + .button-link {
+    &--link {
+      + .button--link {
         margin-left: 40px;
       }
 
-      + .button:not(.button-link) {
+      + .button:not(.button--link) {
         margin-left: 40px;
       }
     }
   }
 
-  &-purple {
+  &--purple {
     background-color: $color-grape;
     color: $color-white;
 
@@ -67,7 +54,7 @@ a.button {
       box-shadow: 0 0 0 1px;
     }
 
-    &--outlined {
+    &.button--outlined {
       background-color: $color-white;
       color: $color-grape;
       box-shadow: 0 0 0 1px;
@@ -77,9 +64,17 @@ a.button {
         color: $color-grape;
       }
     }
+
+    &.button--link {
+      &::after {
+        padding-left: 4px;
+      }
+
+      @include chevron-links($color-grape, $color-royal-purple);
+    }
   }
 
-  &-green {
+  &--green {
     background-color: $color-forest-green;
     color: $color-white;
 
@@ -89,7 +84,7 @@ a.button {
       box-shadow: 0 0 0 1px;
     }
 
-    &--outlined {
+    &.button--outlined {
       background-color: $color-white;
       box-shadow: 0 0 0 1px;
       color: $color-forest-green;
@@ -99,21 +94,36 @@ a.button {
         color: $color-forest-green;
       }
     }
+
+    &.button--link {
+      &::after {
+        padding-left: 4px;
+      }
+
+      @include chevron-links($color-japanese-laurel, $color-forest-green);
+    }
   }
 
-  &-link {
-    color: $color-forest-green;
+  &--link {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: inherit;
+    font-family: inherit;
+    line-height: 1;
+    font-size: rem(16px);
+    border: 0;
     text-decoration: underline;
     padding-left: 0;
     padding-right: 0;
     font-weight: 500;
+    min-width: auto;
 
     &:hover {
-      color: $color-japanese-laurel;
+      //color: $color-japanese-laurel;
     }
   }
 
-  &-plain {
+  &--plain {
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -129,16 +139,18 @@ a.button {
     }
   }
 
-  &-inverted {
+  &--inverted {
     border: 0;
     background: $color-white;
     color: $color-grape;
 
     &:hover {
-      color: $color-grape;
+      box-shadow: 0 0 0 1px;
+      color: $color-white;
+      background: $color-grape;
     }
 
-    &--outlined {
+    &.button--outlined {
       border: solid 1px $color-white;
       color: $color-white;
       background: $color-grape;
