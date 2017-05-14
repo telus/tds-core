@@ -14,17 +14,32 @@ class Spinner extends Component {
     this.isNestedPattern = this.isNestedPattern.bind(this);
   }
 
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.fullScreen === true && nextProps.spinning === true) {
-      document.body.style.overflow = 'hidden';
+  toggleBodyScrolling({ fullScreen, spinning}) {
+    if (fullScreen === true && spinning === true) {
+      this.disableBodyScrolling();
     } else {
-      document.body.style.overflow = 'inherit';
+      this.enableBodyScrolling();
     }
   }
 
-  componentWillUnmount(){
+  enableBodyScrolling() {
     document.body.style.overflow = 'inherit';
+  }
+
+  disableBodyScrolling() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  componentDidUpdate() {
+    this.toggleBodyScrolling(this.props);
+  }
+
+  componentDidMount() {
+    this.toggleBodyScrolling(this.props);
+  }
+
+  componentWillUnmount(){
+    this.enableBodyScrolling();
   }
 
   isNestedPattern() {
