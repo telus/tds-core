@@ -38,7 +38,7 @@ class Spinner extends Component {
     });
     return (
       <div className={cls}>
-        { fullScreen ? <div className="spinner__full-screen-layer" /> : null}
+        { fullScreen && <div className="spinner__full-screen-layer" />}
         <svg className="spinner__svg" viewBox="0 0 100 100" width="0" height="0">
             <circle
                 className="spinner__circle"
@@ -53,7 +53,7 @@ class Spinner extends Component {
                 r="20"
             />
         </svg>
-        {tip ? <div className="spinner__tip">{tip}</div> : null}
+        {tip && <div className="spinner__tip">{tip}</div>}
       </div>
     );
   }
@@ -64,7 +64,7 @@ class Spinner extends Component {
     }, wrapperClassNames);
     return (
       <div className="spinner-wrapper">
-        {spinning ? <div className="spinner-wrapper__content-blocker" /> : null}
+        {spinning && <div className="spinner-wrapper__content-blocker" />}
         {spinEl}
         <div className={containerCls}>
           {this.props.children}
