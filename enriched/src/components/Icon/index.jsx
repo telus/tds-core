@@ -1,14 +1,14 @@
 import React, { PropTypes } from 'react';
 
 function Icon(props) {
-  const { glyph, variant, fixedWidth, className, ...extraProps } = props;
+  const { glyph, variant, fixedWidth, className, children, ...extraProps } = props;
 
   const classes = [
     'icon',
     `icon-core-${glyph}`,
     fixedWidth ? 'icon--fw' : null,
     variant ? `icon--${variant}` : null,
-    className ? className : null
+    className
   ];
 
   return (
@@ -21,8 +21,9 @@ function Icon(props) {
 Icon.propTypes = {
   glyph: PropTypes.string.isRequired,
   variant: PropTypes.string,
-  fixedWith: PropTypes.bool,
-  className: PropTypes.string
+  fixedWidth: PropTypes.bool,
+  className: PropTypes.string,
+  children: React.PropTypes.node
 };
 
 export default Icon;

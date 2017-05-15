@@ -16,7 +16,8 @@ function Container(props) {
 
 Container.propTypes = {
   className: PropTypes.string,
-  limitWidth: PropTypes.bool
+  limitWidth: PropTypes.bool,
+  children: PropTypes.node
 };
 
 export default Container;

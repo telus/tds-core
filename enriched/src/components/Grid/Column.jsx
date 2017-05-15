@@ -101,6 +101,9 @@ function Column(props) {
   );
 }
 
-Column.propTypes = propTypes;
+Column.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node
+};
 
 export default Column;
