@@ -11,5 +11,5 @@ export {
   Grid,
   Collapsible,
   Card,
-  Notification,
+  Notification
 };

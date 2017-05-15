@@ -1,6 +1,6 @@
 import React from 'react';
 
-if ( process.env.BROWSER ) {
+if (process.env.BROWSER) {
   require('./video-block.scss');
 }
 
@@ -13,7 +13,7 @@ const VideoBlock = (props) => {
         <div className="grid-row">
           <div className="medium-8">
             <div className="video-container-block">
-              <iframe allowFullScreen="" frameBorder="0" src={videoUrl} title={caption}></iframe>
+              <iframe allowFullScreen="" frameBorder="0" src={videoUrl} title={caption} />
             </div>
             { caption && <p className="text text--medium">
               <strong>{caption}: </strong>

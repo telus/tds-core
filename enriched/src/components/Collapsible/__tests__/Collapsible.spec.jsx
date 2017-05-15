@@ -1,6 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Collapsible from '../';
+
 const { Group, Panel } = Collapsible;
 
 describe('<Collapsible />', () => {
@@ -38,7 +39,7 @@ describe('<Collapsible />', () => {
       .render().text())
       .toEqual('This is panel 1');
 
-    wrapper.find('.collapsible-panel__content').forEach(function (node) {
+    wrapper.find('.collapsible-panel__content').forEach((node) => {
       expect(node.hasClass('collapsible-panel__content--visible')).toEqual(false);
     });
   });

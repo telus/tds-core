@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-if ( process.env.BROWSER ) {
+if (process.env.BROWSER) {
   require('./titledTextBlock.scss');
 }
 

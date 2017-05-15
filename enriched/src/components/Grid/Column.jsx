@@ -3,6 +3,7 @@ import React, { PropTypes } from 'react';
 const propTypes = {
   className: PropTypes.string,
   // Sizing
+  /* eslint-disable react/no-unused-prop-types */
   xs: PropTypes.number,
   sm: PropTypes.number,
   md: PropTypes.number,
@@ -37,7 +38,8 @@ const propTypes = {
   smHiddenUp: PropTypes.bool,
   mdHiddenUp: PropTypes.bool,
   lgHiddenUp: PropTypes.bool,
-  xlHiddenUp: PropTypes.bool,
+  xlHiddenUp: PropTypes.bool
+  /* eslint-enable react/no-unused-prop-types */
 };
 
 function Column(props) {
@@ -56,49 +58,52 @@ function Column(props) {
     sm: 'small',
     md: 'medium',
     lg: 'large',
-    xl: 'xl',
+    xl: 'xl'
   };
 
   Object.keys(deviceSizes).forEach((size) => {
     const sizeProp = props[size];
-    const offsetProp = props[`${ size }Offset`];
-    const pushProp = props[`${ size }Push`];
-    const pullProp = props[`${ size }Pull`];
-    const hiddenProp = props[`${ size }Hidden`];
-    const hiddenUpProp = props[`${ size }HiddenUp`];
+    const offsetProp = props[`${size}Offset`];
+    const pushProp = props[`${size}Push`];
+    const pullProp = props[`${size}Pull`];
+    const hiddenProp = props[`${size}Hidden`];
+    const hiddenUpProp = props[`${size}HiddenUp`];
 
     if (sizeProp) {
-      classes.push(`${ deviceSizes[size] }-${ sizeProp }`);
+      classes.push(`${deviceSizes[size]}-${sizeProp}`);
     }
 
     if (offsetProp) {
-      classes.push(`offset-${ deviceSizes[size] }-${ offsetProp }`);
+      classes.push(`offset-${deviceSizes[size]}-${offsetProp}`);
     }
 
     if (pushProp) {
-      classes.push(`push-${ deviceSizes[size] }-${ pushProp }`);
+      classes.push(`push-${deviceSizes[size]}-${pushProp}`);
     }
 
     if (pullProp) {
-      classes.push(`pull-${ deviceSizes[size] }-${ pullProp }`);
+      classes.push(`pull-${deviceSizes[size]}-${pullProp}`);
     }
 
     if (hiddenProp) {
-      classes.push(`hidden-${ deviceSizes[size] }`);
+      classes.push(`hidden-${deviceSizes[size]}`);
     }
 
     if (hiddenUpProp) {
-      classes.push(`hidden-${ deviceSizes[size] }-up`);
+      classes.push(`hidden-${deviceSizes[size]}-up`);
     }
   });
 
   return (
-    <div className={ classes.filter(c => c).join(' ') } { ...extraProps }>
-      { props.children }
+    <div className={classes.filter(c => c).join(' ')} {...extraProps}>
+      {props.children}
     </div>
   );
 }
 
-Column.propTypes = propTypes;
+Column.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node
+};
 
 export default Column;
