@@ -14,7 +14,8 @@
     "build:umd": "webpack --config webpack.config.umd.js",
     "build:umd:min": "webpack -p --config webpack.config.umd.min.js",
     "build": "npm run clean && npm run build:lib && npm run build:umd && npm run build:umd:min",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@telusdigital/redux-contentful": "^2.2.1",

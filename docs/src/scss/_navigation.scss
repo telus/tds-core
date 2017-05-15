@@ -6,7 +6,7 @@
     visibility: hidden;
   }
 
-  @include from-breakpoint(large) {
+  @include from-breakpoint(medium) {
     background-color: #fff;
     border-right: 1px solid #eee;
   }
