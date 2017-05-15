@@ -1,5 +1,15 @@
 # Upgrading Guide
 
+## Upgrading to v0.16.x
+
+* `button-green` changed to `button--green`
+* `button-purple` changed to `button--purple`
+* `button-green--outlined` changed to `button--green button--outlined`
+* `button-purple--outlined` changed to `button--purple button--outlined`
+* `button-inverted` changed to `button--inverted`
+* `button-inverted--outlined` changed to `button--inverted button--outlined`
+* `button-link` changed to `button--link` and now also includes the chevron and can be made purple or green with the revised classes mentioned above
+
 ## Upgrading to v0.15.x
 
 * Revised the offset implementation below and after user feedback decided to implemented like Bootstrap does it, because it is much cleaner. So, offsets are now inherited from smaller viewports again and if you need to reset it on a particular viewport then we have the following new classes available: `offset-small-0`, `offset-medium-0`, `offset-large-0` and `offset-xl-0`.
