@@ -15,7 +15,7 @@
     }
   }
 
-  @include from-breakpoint(medium) {
+  @include from-breakpoint(large) {
     margin-left: 0;
     zoom: 1;
     transform: none !important;
