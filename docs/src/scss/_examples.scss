@@ -17,8 +17,15 @@
   }
 
   &--inverted {
-    background: $color-grape;
     padding: 2rem;
+  }
+
+  &--primary {
+    background-color: $color-forest-green;
+  }
+
+  &--secondary {
+    background-color: $color-grape;
   }
 }
 

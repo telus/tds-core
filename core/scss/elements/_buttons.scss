@@ -1,6 +1,6 @@
 // Button styles
 
-.button {
+.tds-button {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -23,58 +23,28 @@
     width: auto;
     vertical-align: top;
 
-    + .button {
+    + .tds-button {
       // Using < 20px to compensate for the extra margin which appears between inline-block
       // elements due to whitespace in the actual markup.
       margin-left: 16px;
     }
 
-    + .button--link {
+    + .tds-button--link {
       margin-left: 34px;
     }
 
     &--link {
-      + .button--link {
+      + .tds-button--link {
         margin-left: 40px;
       }
 
-      + .button:not(.button--link) {
+      + .tds-button:not(.button--link) {
         margin-left: 40px;
       }
     }
   }
 
-  &--purple {
-    background-color: $color-grape;
-    color: $color-white;
-
-    &:hover {
-      background-color: $color-white;
-      color: $color-grape;
-      box-shadow: 0 0 0 1px;
-    }
-
-    &.button--outlined {
-      background-color: $color-white;
-      color: $color-grape;
-      box-shadow: 0 0 0 1px;
-
-      &:hover {
-        background-color: $color-white;
-        color: $color-grape;
-      }
-    }
-
-    &.button--link {
-      &::after {
-        padding-left: 4px;
-      }
-
-      @include chevron-links($color-grape, $color-royal-purple);
-    }
-  }
-
-  &--green {
+  &--primary {
     background-color: $color-forest-green;
     color: $color-white;
 
@@ -84,7 +54,7 @@
       box-shadow: 0 0 0 1px;
     }
 
-    &.button--outlined {
+    &.tds-button--outlined {
       background-color: $color-white;
       box-shadow: 0 0 0 1px;
       color: $color-forest-green;
@@ -95,12 +65,74 @@
       }
     }
 
-    &.button--link {
+    &.tds-button--inverted {
+      background-color: $color-white;
+      color: $color-forest-green;
+
+      &:hover {
+        box-shadow: 0 0 0 1px;
+        color: $color-white;
+        background-color: $color-forest-green;
+      }
+    }
+
+    &.tds-button--link {
       &::after {
         padding-left: 4px;
       }
 
-      @include chevron-links($color-japanese-laurel, $color-forest-green);
+      @include chevron-links($color-japanese-laurel);
+    }
+
+    &.tds-button--selected {
+      background-color: $color-japanese-laurel;
+      color: $color-white;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-grape;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-grape;
+      box-shadow: 0 0 0 1px;
+    }
+
+    &.tds-button--outlined {
+      background-color: $color-white;
+      color: $color-grape;
+      box-shadow: 0 0 0 1px;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-grape;
+      }
+    }
+
+    &.tds-button--inverted {
+      background-color: $color-white;
+      color: $color-grape;
+
+      &:hover {
+        box-shadow: 0 0 0 1px;
+        color: $color-white;
+        background-color: $color-grape;
+      }
+    }
+
+    &.tds-button--link {
+      &::after {
+        padding-left: 4px;
+      }
+
+      @include chevron-links($color-grape);
+    }
+
+    &.tds-button--selected {
+      background-color: $color-royal-purple;
+      color: $color-white;
     }
   }
 
@@ -117,49 +149,27 @@
     padding-right: 0;
     font-weight: 500;
     min-width: auto;
-
-    &:hover {
-      //color: $color-japanese-laurel;
-    }
   }
 
   &--plain {
     margin: 0;
     padding: 0;
+    border: 0;
+    background-image: none;
     background-color: transparent;
-    min-height: auto;
+    box-shadow: none;
+    text-align: center;
   }
 
-  &[disabled] {
-    background-color: #efefef;
+  &--disabled {
+    background-color: $color-gainsboro;
     color: $color-shark;
+    cursor: default;
 
     &:hover {
       box-shadow: none;
-    }
-  }
-
-  &--inverted {
-    border: 0;
-    background: $color-white;
-    color: $color-grape;
-
-    &:hover {
-      box-shadow: 0 0 0 1px;
-      color: $color-white;
-      background: $color-grape;
-    }
-
-    &.button--outlined {
-      border: solid 1px $color-white;
-      color: $color-white;
-      background: $color-grape;
-      transition: border-color .1s linear;
-
-      &:hover {
-        color: $color-white;
-        border: solid 1px rgba(255, 255, 255, .35);
-      }
+      background-color: $color-gainsboro;
+      color: $color-shark;
     }
   }
 }

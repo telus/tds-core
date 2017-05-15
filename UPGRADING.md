@@ -9,6 +9,8 @@
 * `button-inverted` changed to `button--inverted`
 * `button-inverted--outlined` changed to `button--inverted button--outlined`
 * `button-link` changed to `button--link` and now also includes the chevron and can be made purple or green with the revised classes mentioned above
+* to disable a but you will have to use `button--disable` together with `[disabled]` attribute for functionality
+
 
 ## Upgrading to v0.15.x
 
