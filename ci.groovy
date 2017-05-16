@@ -20,9 +20,8 @@ String cmdSetupWorkspace = '''
   cd \${WORKSPACE}/core
   npm install
   npm rebuild node-sass
-  cd \${WORKSPACE}/scripts
-  ./init-npm.sh
   cd \${WORKSPACE}/enriched
+  ./scripts/init-npm.sh
   rm -rf node_modules/telus-thorium-core
   npm install \${WORKSPACE}/core
   npm install
