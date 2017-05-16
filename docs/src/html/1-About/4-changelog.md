@@ -1,7 +1,21 @@
----
-title: Changelog
-template: changelog.jade
----
+
+
+
+## v0.15.2
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.15.2
+
+- fix(linting): remove jsx-filename-extension rule because spec.js need to be written using a differen
+- fix(linting): fix javascript linting
+- fix(linting): fix linting errors and warnings caused by updates to eslint file
+- docs(changelog): manually update changelog.md with jade header :S
+- Merge branch 'fix/linting' of github.com:telusdigital/telus-thorium-core
+- build(preinstall): remove preinstall task and call /scripts/init-npm.sh instead
+- build: groovy.ci
+- build(groovy.ci): cd into /scripts folder to run init-npm.sh
+- build(groovy.ci): updating path to init-npm.sh :)
+
 
 
 ## v0.15.1
@@ -96,6 +110,7 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.15.1
 - fix(collapsible component): fix toggle buttons on collapsible doc and the ControlledCollapsible.jsx
 - docs(sketch): update version number on sketch file because it was missed on 0.15.0 release
 - updating issue template (#336)
+- Changelog and version bump for v0.15.1
 
 
 
