@@ -56,18 +56,6 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
-### Selected Primary button
-
-<button class="tds-button tds-button--primary tds-button--selected">
-    Submit form
-</button>
-
-```html
-<button class="tds-button tds-button--primary tds-button--selected">
-    Submit form
-</button>
-```
-
 ### Inverted Primary button
 
 <div class="example example--inverted example--primary">
@@ -105,18 +93,6 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 
 ```html
 <button class="tds-button tds-button--secondary tds-button--outlined">
-    Submit form
-</button>
-```
-
-### Selected secondary button
-
-<button class="tds-button tds-button--secondary tds-button--selected">
-    Submit form
-</button>
-
-```html
-<button class="tds-button tds-button--secondary tds-button--selected">
     Submit form
 </button>
 ```
