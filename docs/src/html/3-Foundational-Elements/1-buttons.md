@@ -70,6 +70,20 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
+### Inverted Outlined Primary button
+
+<div class="example example--inverted example--primary">
+    <button class="tds-button tds-button--primary tds-button--inverted tds-button--outlined">
+        Submit form
+    </button>
+</div>
+
+```html
+<button class="tds-button tds-button--primary tds-button--inverted tds-button--outlined">
+    Submit form
+</button>
+```
+
 
 ## Secondary Button
 
@@ -111,8 +125,22 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
+### Inverted Primary button
 
-### Anchor buttons
+<div class="example example--inverted example--secondary">
+    <button class="tds-button tds-button--secondary tds-button--inverted tds-button--outlined">
+        Submit form
+    </button>
+</div>
+
+```html
+<button class="tds-button tds-button--secondary tds-button--inverted tds-button--outlined">
+    Submit form
+</button>
+```
+
+
+## Anchor buttons
 
 Button classes can also be applied to `<a>` tags.
 
@@ -124,7 +152,7 @@ Button classes can also be applied to `<a>` tags.
 </a>
 ```
 
-### Disabled state
+## Disabled state
 
 If you want to prevent that a button from being clicked, use the `disabled` attribute.
 
@@ -154,18 +182,6 @@ The `tds-button--link` class creates an element which behaves like a button, but
 <a class="tds-button tds-button--secondary tds-button--link" role="button" href="#">
     A link button
 </a>
-```
-
-## Plain Button
-
-<button class="tds-button-plain">
-    Plain button
-</button>
-
-```html
-<button class="tds-button-plain">
-    Plain button
-</button>
 ```
 
 ## Spacing
