@@ -1,0 +1,31 @@
+exports[`BlockTitledText Component with props matches snapshot 1`] = `
+<section
+  className="b-titled-text">
+  <div
+    className="container container--limited-width">
+    <div
+      className="grid-row">
+      <div
+        className="small-9 medium-9 large-9">
+        <h1
+          className="heading-1">
+          <WithLegal
+            content="Title1" />
+        </h1>
+        <div
+          className="b-titled-text__content">
+          <h2
+            className="heading-4">
+            <WithLegal
+              content="Small Title 1" />
+          </h2>
+          <p>
+            <WithLegal
+              content="Small Text1" />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

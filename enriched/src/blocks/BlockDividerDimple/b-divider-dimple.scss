@@ -1,0 +1,8 @@
+@import '~telus-thorium-core/scss/utilities/mixins';
+@import '../stylesheets/variables';
+
+.b-divider-dimple__bg {
+  margin-bottom: $block-margin-bottom;
+  @include tds-dimple();
+  z-index: 1;
+}

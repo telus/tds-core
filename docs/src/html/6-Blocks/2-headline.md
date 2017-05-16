@@ -1,38 +1,38 @@
 ---
-title: Headline Block
+title: Hero Wave Title Eyebrow
 template: layout-blocks.jade
 ---
 
 ## Headline
 
-A Headline Block is a block that is composed of a page title and, optionally, an eyebrow.
+A BlockHeroWaveTitleEyebrow is a block that is composed of a page title and, optionally, an eyebrow.
 
 ---
 
 <div id="headlineBlockExample"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <TDSBlocks.HeadlineBlockExample />,
+    <TDSBlocks.BlockHeroWaveTitleEyebrowExample />,
     document.getElementById('headlineBlockExample')
   );
 </script>
 
 ```javascript
 import React from 'react';
-import { HeadlineBlock } from 'telus-thorium-enriched/lib/blocks';
+import BlockHeroWaveTitleEyebrow from 'telus-thorium-enriched/lib/blocks/BlockHeroWaveTitleEyebrow';
 
-const HeadlineBlockExample = () => {
+const BlockHeroWaveTitleEyebrowExample = () => {
   const props = {
     title: 'Headline title',
     eyebrow: 'Eyebrow'
   };
 
   return (
-    <HeadlineBlock {...props} />
+    <BlockHeroWaveTitleEyebrow {...props} />
   );
 };
 
-export default HeadlineBlockExample;
+export default BlockHeroWaveTitleEyebrowExample;
 ```
 
 ## API

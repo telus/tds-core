@@ -1,0 +1,34 @@
+exports[`<BlockOverview /> matches snapshot 1`] = `
+<section
+  className="class b-overview container container--limited-width">
+  <div
+    className="grid-row">
+    <div
+      className="large-7 medium-7 small-12 b-overview__body">
+      <ComponentTextTitleBodyButton
+        caption="title"
+        className=""
+        ctaLink={
+          Object {
+            "href": "href",
+            "target": "target",
+            "text": "text",
+          }
+        }
+        description="description" />
+    </div>
+    <div
+      className="large-4 offset-large-1 medium-5 small-12 b-overview__checklist">
+      <ComponentChecklist
+        className=""
+        listItems={
+          Array [
+            "one",
+            "two",
+          ]
+        }
+        listTitle="title" />
+    </div>
+  </div>
+</section>
+`;
