@@ -52,7 +52,7 @@ class Spinner extends Component {
       'spinner--full-screen': fullScreen
     });
     return (
-      <div className={cls}>
+      <div className={cls} role="progressbar" aria-label={tip} aria-hidden={!spinning}>
         { fullScreen && <div className="spinner__full-screen-layer" />}
         <svg className="spinner__svg" viewBox="0 0 100 100" width="0" height="0">
             <circle
@@ -81,7 +81,7 @@ class Spinner extends Component {
       <div className="spinner-wrapper">
         {spinning && <div className="spinner-wrapper__content-blocker" />}
         {spinEl}
-        <div className={containerCls}>
+        <div className={containerCls} aria-busy={spinning}>
           {this.props.children}
         </div>
       </div>
