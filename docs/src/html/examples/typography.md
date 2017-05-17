@@ -175,13 +175,11 @@ template: example.jade
             <p>
                 <a href="#" class="chevron-link">
                     Large/link
-                    <i class="icon icon-core-chevron"></i>
                 </a>
                 <br>
                 <small>
                     <a href="#" class="chevron-link">
                         Small/link
-                        <i class="icon icon-core-chevron"></i>
                     </a>
                 </small>
             </p>
@@ -191,13 +189,11 @@ template: example.jade
             <p>
                 <a href="#" class="chevron-link chevron-link--secondary">
                     Large/link
-                    <i class="icon icon-core-chevron"></i>
                 </a>
                 <br>
                 <small>
                     <a href="#" class="chevron-link chevron-link--secondary">
                         Large/link
-                        <i class="icon icon-core-chevron"></i>
                     </a>
                 </small>
             </p>
@@ -221,13 +217,11 @@ template: example.jade
             <p>
                 <a href="#" class="chevron-link chevron-link--inverted">
                     Large/link
-                    <i class="icon icon-core-chevron"></i>
                 </a>
                 <br>
                 <small>
                     <a href="#" class="chevron-link chevron-link--inverted">
                         Small/link
-                        <i class="icon icon-core-chevron"></i>
                     </a>
                 </small>
             </p>
