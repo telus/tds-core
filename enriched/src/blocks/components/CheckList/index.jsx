@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 const CheckList = (props) => {
@@ -22,9 +23,9 @@ const CheckList = (props) => {
 };
 
 CheckList.propTypes = {
-  className: React.PropTypes.string,
-  listTitle: React.PropTypes.string,
-  listItems: React.PropTypes.array
+  className: PropTypes.string,
+  listTitle: PropTypes.string,
+  listItems: PropTypes.array
 };
 
 CheckList.defaultProps = {

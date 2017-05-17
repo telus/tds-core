@@ -3,7 +3,8 @@
  * clicking increment/decrement buttons.
  */
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import CounterButton from './CounterButton';
 

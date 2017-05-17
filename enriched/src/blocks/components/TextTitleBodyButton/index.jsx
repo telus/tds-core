@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 import { components } from '@telusdigital/redux-contentful';
@@ -24,10 +25,10 @@ const TextTitleBodyButton = (props) => {
 };
 
 TextTitleBodyButton.propTypes = {
-  className: React.PropTypes.string,
-  ctaLink: React.PropTypes.object,
-  title: React.PropTypes.string,
-  description: React.PropTypes.string
+  className: PropTypes.string,
+  ctaLink: PropTypes.object,
+  title: PropTypes.string,
+  description: PropTypes.string
 };
 
 TextTitleBodyButton.defaultProps = {
