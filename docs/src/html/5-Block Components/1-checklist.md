@@ -1,5 +1,5 @@
 ---
-title: Checklist
+title: CheckList
 template: doc.jade
 ---
 
@@ -7,9 +7,9 @@ template: doc.jade
 
 ---
 
-A ComponentChecklist is a container that has a header and leverages the checklist element.
+A CheckList is a container that has a header and leverages the checklist element.
 
-A ComponentChecklist will take on the full width of its parent.
+A CheckList will take on the full width of its parent.
 
 <div class="grid-row">
   <div class='small-12 medium-6 large-4'>
@@ -19,26 +19,26 @@ A ComponentChecklist will take on the full width of its parent.
 </div>
 <script type="text/babel">
   ReactDOM.render(
-    <TDSBlockComponents.ComponentChecklistExample />,
+    <TDSBlockComponents.CheckListExample />,
     document.getElementById('checkListExample')
   );
 </script>
 
 ```javascript
 import React, { Component, PropTypes } from 'react';
-import ComponentChecklist from 'telus-thorium-enriched/lib/blocks/components/ComponentChecklist';
+import CheckList from 'telus-thorium-enriched/lib/blocks/components/CheckList';
 
-const ComponentChecklistEx = () => {
+const CheckListEx = () => {
     return (
       <div className="grid-row">
         <div className='small-12 medium-6 large-4'>
-          <ComponentChecklist listTitle='List of Numbers' listItems={['one', 'two', 'three']}/>
+          <CheckList listTitle='List of Numbers' listItems={['one', 'two', 'three']}/>
         </div>
       </div>
     );
 }
 
-export default ComponentChecklistEx;
+export default CheckListEx;
 ```
 
 

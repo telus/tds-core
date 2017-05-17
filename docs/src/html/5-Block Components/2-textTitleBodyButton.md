@@ -1,11 +1,11 @@
 ---
-title: Text Title Body Button
+title: TextTitleBodyButton
 template: doc.jade
 ---
 
 ## Overview
 
-A ComponentTextTitleBodyButton is a component composed of an header, paragraph, and a call to action link.
+A TextTitleBodyButton is a component composed of an header, paragraph, and a call to action link.
 
 ---
 
@@ -13,22 +13,22 @@ A ComponentTextTitleBodyButton is a component composed of an header, paragraph, 
 
 <div class="grid-row">
   <div class='small-12'>
-    <div id="componentTextTitleBodyButtonExample">
+    <div id="textTitleBodyButtonExample">
     </div>
   </div>
 </div>
 <script type="text/babel">
   ReactDOM.render(
-    <TDSBlockComponents.ComponentTextTitleBodyButtonExample />,
-    document.getElementById('componentTextTitleBodyButtonExample')
+    <TDSBlockComponents.TextTitleBodyButtonExample />,
+    document.getElementById('textTitleBodyButtonExample')
   );
 </script>
 
 ```javascript
 import React, { Component, PropTypes } from 'react';
-import ComponentTextTitleBodyButton from 'telus-thorium-enriched/lib/blocks/components/ComponentTextTitleBodyButton';
+import TextTitleBodyButton from 'telus-thorium-enriched/lib/blocks/components/TextTitleBodyButton';
 
-const ComponentTextTitleBodyButtonEx = () => {
+const TextTitleBodyButtonEx = () => {
   const props = {
     className: 'class',
     title: 'Lorem Ipsum',
@@ -43,13 +43,13 @@ const ComponentTextTitleBodyButtonEx = () => {
   return (
     <div className="grid-row">
       <div className='small-12'>
-        <ComponentTextTitleBodyButton {...props}/>
+        <TextTitleBodyButton {...props}/>
       </div>
     </div>
   );
 }
 
-export default ComponentTextTitleBodyButtonEx;
+export default TextTitleBodyButtonEx;
 ```
 
 

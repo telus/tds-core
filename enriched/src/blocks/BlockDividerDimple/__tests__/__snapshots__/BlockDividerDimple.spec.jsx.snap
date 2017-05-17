@@ -1,4 +1,0 @@
-exports[`DividerDimple matches snapshot 1`] = `
-<section
-  className="container b-divider-dimple__bg" />
-`;

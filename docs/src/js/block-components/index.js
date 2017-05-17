@@ -1,9 +1,7 @@
-import ComponentChecklistExample from './ComponentChecklistExample';
-import ComponentTextTitleBodyButtonExample from './ComponentTextTitleBodyButtonExample';
-import ComponentQuoteCardExample from './ComponentQuoteCardExample';
+import CheckListExample from './CheckListExample';
+import TextTitleBodyButtonExample from './TextTitleBodyButtonExample';
 
 export {
-  ComponentChecklistExample,
-  ComponentTextTitleBodyButtonExample,
-  ComponentQuoteCardExample
+  CheckListExample,
+  TextTitleBodyButtonExample
 };
