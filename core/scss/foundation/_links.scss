@@ -58,16 +58,20 @@ a {
   }
 }
 
-.chevron-link,
-.chevron-link:link,
-.chevron-link:visited {
-  @include chevron-links($color-grape);
-}
+.chevron-link {
+  &--primary {
+    &:link,
+    &:visited {
+      @include chevron-links($color-japanese-laurel);
+    }
+  }
 
-.chevron-link--secondary,
-.chevron-link--secondary:link,
-.chevron-link--secondary:visited {
-  @include chevron-links($color-japanese-laurel);
+  &--secondary {
+    &:link,
+    &:visited {
+      @include chevron-links($color-grape);
+    }
+  }
 }
 
 .link--inverted,
