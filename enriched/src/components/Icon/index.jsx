@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function Icon(props) {
   const { glyph, variant, fixedWidth, className, children, ...extraProps } = props;
@@ -23,7 +24,7 @@ Icon.propTypes = {
   variant: PropTypes.string,
   fixedWidth: PropTypes.bool,
   className: PropTypes.string,
-  children: React.PropTypes.node
+  children: PropTypes.node
 };
 
 export default Icon;

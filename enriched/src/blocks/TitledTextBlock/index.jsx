@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 if (process.env.BROWSER) {
   require('./titledTextBlock.scss');
@@ -32,12 +33,12 @@ class TitledTextBlock extends Component {
 }
 
 TitledTextBlock.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  content: React.PropTypes.arrayOf(React.PropTypes.shape({
-    title: React.PropTypes.string.isRequired,
-    content: React.PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  content: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired
   })).isRequired,
-  titleHeadingClass: React.PropTypes.string
+  titleHeadingClass: PropTypes.string
 };
 
 TitledTextBlock.defaultProps = {
