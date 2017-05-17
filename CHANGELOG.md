@@ -1,6 +1,7 @@
-
-
-
+---
+title: Changelog
+template: changelog.jade
+---
 
 ## v0.15.3
 
