@@ -95,10 +95,25 @@
       }
     }
 
-    &--first.collapsible-panel__label--disabled {
+
+
+    &--first {
       border-top: 1px solid $color-gainsboro;
       @include alt-state {
+        border-top: 1px solid $color-shark;
+        .icon {
+          color: $color-forest-green;
+        }
+        &::before {
+          background: $color-shark;
+        }
+      }
+
+      &.collapsible-panel__label--disabled {
         border-top: 1px solid $color-gainsboro;
+        @include alt-state {
+          border-top: 1px solid $color-gainsboro;
+        }
       }
     }
 
