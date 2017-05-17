@@ -179,57 +179,6 @@ small,
 }
 
 //
-// Links
-//
-
-.link,
-a,
-a:link,
-a:visited {
-  color: $color-link;
-  text-decoration: underline;
-
-  &:hover {
-    color: $color-link-hover;
-  }
-}
-
-.chevron-link,
-.chevron-link:link,
-.chevron-link:visited {
-  @include chevron-links($color-grape);
-}
-
-.chevron-link--secondary,
-.chevron-link--secondary:link,
-.chevron-link--secondary:visited {
-  @include chevron-links($color-japanese-laurel);
-}
-
-.link--inverted,
-.link--inverted:link,
-.link--inverted:visited,
-.chevron-link--inverted,
-.chevron-link--inverted:link,
-.chevron-link--inverted:visited {
-  color: $color-athens-grey;
-
-  &:hover {
-    color: $color-white;
-  }
-}
-
-.link--descent,
-.link--descent:link,
-.link--descent:visited {
-  @include clear-descenders($color-link, $color-white);
-
-  &.link--inverted {
-    @include clear-descenders($color-athens-grey, $color-grape);
-  }
-}
-
-//
 // sup/sub
 //
 sub,

@@ -13,22 +13,16 @@ template: doc.jade
 
 Text links are interactive elements. They can be used within body paragraphs or as stand alone elements.
 
-### Body Styles
+### Body Style
 
-The large and small text links inherit their parent styles; body large and body small. They are meant to work with their parents and not be crossed matched. Colour establishes importance, where green is primary and grey is secondary. Primary and secondary links, contained to their parent groupings (i.e lg or sm) can be used next to one another or in isolation. The underline style distinguishes these as interactive elements.
+The underline style distinguishes these as interactive elements.
 
 - Use descriptive hyperlinks (e.g. “log into your account”), not just “click here” or “learn more”
 - Use sentence case
 
-### Primary links
-
-body/large/link-primary-normal<br>
-body/large/link-primary-hover
-
-*Usage: Highest importance level of content*
+### Standard links
 
 <div class="example example--type">
-    <header class="heading-3">Example</header>
     <a href="#" class="link link--descent">View the current page</a>
 </div>
 
@@ -36,46 +30,54 @@ body/large/link-primary-hover
 <a href="#" class="link link--descent">View the current page</a>
 ```
 
-### Small primary links
-
-body/small/link-primary-normal<br>
-body/small/link-primary-hover
-
-*Usage: Lowest importance level of content*
+### Primary links
 
 <div class="example example--type">
-    <header class="heading-3">Example</header>
-    <small><a href="#" class="link link--descent">View another page</a></small>
+    <a href="#" class="link link--primary link--descent">View the current page</a>
 </div>
 
 ```html
-<small><a href="#" class="link link--descent">View another page</a></small>
+<a href="#" class="link link--primary link--descent">View the current page</a>
+```
+
+### Secondary links
+
+<div class="example example--type">
+    <a href="#" class="link link--secondary link--descent">View the current page</a>
+</div>
+
+```html
+<a href="#" class="link link--secondary link--descent">View the current page</a>
 ```
 
 ### Inverted links
 
 <div class="example example--inverted">
     <a href="#" class="link link--inverted link--descent">
-        Large/link
+        Link
     </a>
-    <br>
-    <small>
-        <a href="#" class="link link--inverted link--descent">
-            Small/link
-        </a>
-    </small>
+    <br/>
+    <a href="#" class="link link--inverted link--descent text--medium">
+        Medium/link
+    </a>
+    <br/>
+    <a href="#" class="link link--inverted link--descent text--small">
+        Small/link
+    </a>
 </div>
 
 ```html
 <a href="#" class="link link--inverted link--descent">
-    Large/link
+    Link
 </a>
-
-<small>
-    <a href="#" class="link link--inverted link--descent">
-        Small/link
-    </a>
-</small>
+<br/>
+<a href="#" class="link link--inverted link--descent text--medium">
+    Medium/link
+</a>
+<br/>
+<a href="#" class="link link--inverted link--descent text--small">
+    Small/link
+</a>
 ```
 
 ### "Clear descenders" modifier

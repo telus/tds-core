@@ -1,0 +1,75 @@
+//
+// Links
+//
+
+.link,
+a {
+  &:link,
+  &:visited {
+    color: $color-link;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+.link {
+  &--primary {
+    &:link,
+    &:visited {
+      color: $color-grape;
+    }
+
+    &:hover {
+      color: $color-royal-purple;
+    }
+  }
+
+  &--secondary {
+    &:link,
+    &:visited {
+      color: $color-forest-green;
+    }
+
+    &:hover {
+      color: $color-japanese-laurel;
+    }
+  }
+}
+
+.chevron-link,
+.chevron-link:link,
+.chevron-link:visited {
+  @include chevron-links($color-grape);
+}
+
+.chevron-link--secondary,
+.chevron-link--secondary:link,
+.chevron-link--secondary:visited {
+  @include chevron-links($color-japanese-laurel);
+}
+
+.link--inverted,
+.link--inverted:link,
+.link--inverted:visited,
+.chevron-link--inverted,
+.chevron-link--inverted:link,
+.chevron-link--inverted:visited {
+  color: $color-athens-grey;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.link--descent,
+.link--descent:link,
+.link--descent:visited {
+  @include clear-descenders($color-link, $color-white);
+
+  &.link--inverted {
+    @include clear-descenders($color-athens-grey, $color-grape);
+  }
+}
