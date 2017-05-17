@@ -23,24 +23,27 @@ class Steps extends Component {
   render() {
     const { children, className, current, currentStatus } = this.props;
     const cls = classNames('step-tracker', className);
+    const mobileLabeCls = classNames('step-tracker__mobile-label', {
+      'step-tracker__mobile-label--error': currentStatus === 'error'
+    });
     const totalSteps = children.length;
     const currentChild = children[current];
     return (
       <div>
         <ul className={cls}>
-        {
-          React.Children.map(children, (element, index) => {
-            const stepNumber = index + 1;
-            const status = this.getStatus(current, currentStatus, index);
-            const props = {
-              stepNumber: stepNumber.toString(),
-              status
-            };
-            return React.cloneElement(element, props);
-          }, this)
-        }
+          {
+            React.Children.map(children, (element, index) => {
+              const stepNumber = index + 1;
+              const status = this.getStatus(current, currentStatus, index);
+              const props = {
+                stepNumber: stepNumber.toString(),
+                status
+              };
+              return React.cloneElement(element, props);
+            }, this)
+          }
         </ul>
-        <div className="step-tracker__mobile-label">
+        <div className={mobileLabeCls}>
           <span className="step-tracker__mobile-label-step-info">
             Step {current + 1} of {totalSteps}:
           </span> {currentChild.props.label}
@@ -53,7 +56,7 @@ class Steps extends Component {
 Steps.propTypes = {
   current: PropTypes.number,
   currentStatus: PropTypes.oneOf(currentStatusOptions),
-  children: PropTypes.any,
+  children: PropTypes.node,
   className: PropTypes.string
 };
 

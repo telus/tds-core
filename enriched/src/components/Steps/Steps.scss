@@ -24,9 +24,9 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: calc(50% - 1.4rem);
+    width: calc(50% - 1.07rem);
     content: ' ';
-    border-bottom: 0.25rem solid $color-gainsboro;
+    border-bottom: 0.1rem solid $color-shuttle-grey;
   }
   &:before {
     left: 0;
@@ -37,13 +37,9 @@
 
 
   &--completed {
-    &:before, &:after {
-      border-color: $color-japanese-laurel;
-    }
-    .step-tracker__label, .step-tracker__icon {
-      color: $color-japanese-laurel;
-    }
     .step-tracker__icon {
+      color: $color-white;
+      background-color: $color-japanese-laurel;
       &:before {
         font-family: "TELUS Core Icons";
         content: "\F101";
@@ -52,27 +48,16 @@
   }
 
   &--processing {
-    &:before {
-      border-color: $color-japanese-laurel;
+    .step-tracker__icon {
+      background-color: $color-japanese-laurel;
     }
-    .step-tracker__label, .step-tracker__icon {
+    .step-tracker__label {
       color: $color-japanese-laurel;
     }
   }
 
-  &--waiting {
-    .step-tracker__label, .step-tracker__icon {
-      color: $color-raven;
-    }
-    .step-tracker__icon {
-      border-color: $color-gainsboro;
-    }
-  }
 
   &--error {
-    &:before {
-      border-color: $color-japanese-laurel;
-    }
     .step-tracker__label, .step-tracker__icon {
       color: $color-cardinal;
     }
@@ -81,6 +66,7 @@
       color: $color-cardinal;
       &:before {
         content: "\F103";
+        line-height: 30px;
       }
     }
   }
@@ -100,17 +86,19 @@
 
 .step-tracker__icon {
   display: inline-block;
-  border:0.2rem solid $color-japanese-laurel;
+  border:0.1rem solid $color-japanese-laurel;
   border-radius: 50%;
   font-size: 1.2rem;
   width: 35px;
   height: 35px;
   &:before {
     font-family: "TELUS Core Icons";
+    line-height: 35px;
   }
 }
 .step-tracker__label {
   position: absolute;
+  color: $color-shark;
   bottom: -3rem;
   left: 0;
   font-size: 1rem;
@@ -121,15 +109,21 @@
     display: initial;
   }
 }
+
 .step-tracker__mobile-label {
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 100%;
   text-align: center;
   @include from-breakpoint(medium) {
     display: none;
   }
-  color: $color-japanese-laurel
+  color: $color-japanese-laurel;
+  
+  &--error {
+    color: $color-cardinal;
+  }
 }
 .step-tracker__mobile-label-step-info {
-  color: $color-raven;
+  color: $color-shark;
+  font-size: 1rem;
 }
