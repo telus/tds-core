@@ -7,12 +7,12 @@ const deviceSizes = {
   sm: 'small',
   md: 'medium',
   lg: 'large',
-  xl: 'xl',
+  xl: 'xl'
 };
 
 describe('<Column />', () => {
   it('correctly merges className', () => {
-    const col = shallow(<Column xs={ 12 } className="red" />);
+    const col = shallow(<Column xs={12} className="red" />);
 
     expect(col.hasClass('xs-12')).toEqual(true);
     expect(col.hasClass('red')).toEqual(true);
@@ -26,7 +26,7 @@ describe('<Column />', () => {
   });
 
   it('correctly renders children', () => {
-    const div = <div id="hello"></div>;
+    const div = <div id="hello" />;
     const col = shallow(
       <Column>
         { div }
@@ -38,9 +38,12 @@ describe('<Column />', () => {
 
   it('renders column size classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[size] = 12);
 
-    const col = shallow(<Column { ...props } />);
+    /* eslint-disable no-return-assign */
+    Object.keys(deviceSizes).forEach(size => props[size] = 12);
+    /* eslint-enable no-return-assign */
+
+    const col = shallow(<Column {...props} />);
 
     expect(col.hasClass('xs-12')).toEqual(true);
     expect(col.hasClass('small-12')).toEqual(true);
@@ -51,9 +54,9 @@ describe('<Column />', () => {
 
   it('renders offset classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${ size }Offset`] = 6);
+    Object.keys(deviceSizes).forEach(size => props[`${size}Offset`] = 6); // eslint-disable-line no-return-assign
 
-    const col = shallow(<Column { ...props } />);
+    const col = shallow(<Column {...props} />);
 
     expect(col.hasClass('offset-xs-6')).toEqual(true);
     expect(col.hasClass('offset-small-6')).toEqual(true);
@@ -64,9 +67,9 @@ describe('<Column />', () => {
 
   it('renders push classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${ size }Push`] = 2);
+    Object.keys(deviceSizes).forEach(size => props[`${size}Push`] = 2); // eslint-disable-line no-return-assign
 
-    const col = shallow(<Column { ...props } />);
+    const col = shallow(<Column {...props} />);
 
     expect(col.hasClass('push-xs-2')).toEqual(true);
     expect(col.hasClass('push-small-2')).toEqual(true);
@@ -77,9 +80,9 @@ describe('<Column />', () => {
 
   it('renders pull classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${ size }Pull`] = 5);
+    Object.keys(deviceSizes).forEach(size => props[`${size}Pull`] = 5); // eslint-disable-line no-return-assign
 
-    const col = shallow(<Column { ...props } />);
+    const col = shallow(<Column {...props} />);
 
     expect(col.hasClass('pull-xs-5')).toEqual(true);
     expect(col.hasClass('pull-small-5')).toEqual(true);
@@ -90,9 +93,9 @@ describe('<Column />', () => {
 
   it('renders hidden classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${ size }Hidden`] = true);
+    Object.keys(deviceSizes).forEach(size => props[`${size}Hidden`] = true); // eslint-disable-line no-return-assign
 
-    const col = shallow(<Column { ...props } />);
+    const col = shallow(<Column {...props} />);
 
     expect(col.hasClass('hidden-xs')).toEqual(true);
     expect(col.hasClass('hidden-small')).toEqual(true);
@@ -103,9 +106,9 @@ describe('<Column />', () => {
 
   it('renders hidden-up classes', () => {
     const props = {};
-    Object.keys(deviceSizes).forEach(size => props[`${ size }HiddenUp`] = true);
+    Object.keys(deviceSizes).forEach(size => props[`${size}HiddenUp`] = true); // eslint-disable-line no-return-assign
 
-    const col = shallow(<Column { ...props } />);
+    const col = shallow(<Column {...props} />);
 
     expect(col.hasClass('hidden-xs-up')).toEqual(true);
     expect(col.hasClass('hidden-small-up')).toEqual(true);

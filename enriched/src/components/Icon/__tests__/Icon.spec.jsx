@@ -36,7 +36,7 @@ describe('<Icon />', () => {
     // on the node.
     const consumableProps = ['glyph', 'variant', 'fixedWidth'];
     const title = 'a title';
-    const wrapper = shallow(<Icon glyph="spyglass" title={ title } />);
+    const wrapper = shallow(<Icon glyph="spyglass" title={title} />);
     const componentProps = wrapper.props();
     const leftoverProps = consumableProps.filter(p => componentProps[p]);
 

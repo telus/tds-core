@@ -18,7 +18,7 @@ describe('<Row />', () => {
   });
 
   it('correctly renders children', () => {
-    const div = <div id="hello"></div>;
+    const div = <div id="hello" />;
     const row = shallow(
       <Row>
         { div }

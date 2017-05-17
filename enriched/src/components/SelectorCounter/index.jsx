@@ -12,6 +12,7 @@ if (process.env.BROWSER) {
 }
 
 const propTypes = {
+  className: PropTypes.string,
   defaultValue: PropTypes.number,
   max: PropTypes.number,
   min: PropTypes.number,
@@ -30,7 +31,7 @@ const defaultProps = {
   defaultValue: 0,
   max: null,
   min: 0,
-  id: 'sc' + Math.ceil(Math.random() * 10000),
+  id: `sc${Math.ceil(Math.random() * 10000)}`,
   incrementorLabel: 'Increase value',
   decrementorLabel: 'Decrease value',
   contextPrefix: '',
@@ -109,14 +110,14 @@ export default class SelectorCounter extends Component {
       'selector-counter--error': invalid,
       'selector-counter--successful': successful
     };
-
+    /* eslint-disable no-return-assign */
     return (
       <div className={classNames('selector-counter', className, cssClasses)}>
         <div className="accessible-hide" aria-live="assertive" aria-atomic="true">
           {`${contextPrefix} ${value} ${contextSuffix}`}
         </div>
         <input
-          ref={(input) => this.input = input}
+          ref={input => this.input = input}
           id={id}
           type="number"
           pattern="\d*"
@@ -146,6 +147,7 @@ export default class SelectorCounter extends Component {
         />
       </div>
     );
+    /* eslint-enable no-return-assign */
   }
 }
 

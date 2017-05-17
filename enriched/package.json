@@ -1,9 +1,8 @@
 {
   "name": "telus-thorium-enriched",
-  "version": "0.15.0",
+  "version": "0.15.2",
   "main": "lib/index.js",
   "scripts": {
-    "preinstall": "scripts/init-npm.sh",
     "start": "npm run deploy && npm run dev",
     "clean": "rimraf lib && rimraf dist && mkdirp lib && mkdirp dist",
     "dev": "node devServer.js",
@@ -23,7 +22,7 @@
   "peerDependencies": {
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "telus-thorium-core": "^0.15.0"
+    "telus-thorium-core": "^0.15.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
@@ -40,10 +39,14 @@
     "css-loader": "^0.27.3",
     "enzyme": "^2.4.1",
     "enzyme-to-json": "^1.5.1",
-    "eslint": "^1.1.0",
-    "eslint-config-airbnb": "^1.0.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-import-resolver-webpack": "^0.6.0",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
     "eslint-plugin-babel": "^3.0.0",
-    "eslint-plugin-react": "^3.3.1",
     "extract-text-webpack-plugin": "^0.9.1",
     "file-loader": "^0.9.0",
     "highlight.js": "^9.0.0",
@@ -64,7 +67,7 @@
     "rimraf": "^2.5.4",
     "sass-loader": "^3.1.1",
     "style-loader": "^0.12.3",
-    "telus-thorium-core": "^0.15.0",
+    "telus-thorium-core": "^0.15.2",
     "url-loader": "^0.5.6",
     "webpack": "^1.13.2"
   },

@@ -2,7 +2,7 @@ import React from 'react';
 import cx from 'classnames';
 
 const CheckList = (props) => {
-  const {className, listItems, listTitle} = props;
+  const { className, listItems, listTitle } = props;
   const cls = cx(className);
 
   const renderCheckList = listItems.map((item, index) => {

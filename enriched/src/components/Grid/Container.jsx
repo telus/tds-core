@@ -8,15 +8,16 @@ function Container(props) {
   });
 
   return (
-    <div className={classes} { ...extraProps }>
-      { props.children }
+    <div className={classes} {...extraProps}>
+      {props.children}
     </div>
   );
 }
 
 Container.propTypes = {
   className: PropTypes.string,
-  limitWidth: PropTypes.bool
+  limitWidth: PropTypes.bool,
+  children: PropTypes.node
 };
 
 export default Container;

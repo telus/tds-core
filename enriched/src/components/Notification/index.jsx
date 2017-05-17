@@ -1,21 +1,21 @@
 import React, { PropTypes } from 'react';
 
 function Notification(props) {
-  const { className, variant, ...extraProps } = props;
+  const { className, variant, children, ...extraProps } = props;
   const classes = ['notification', className];
 
   if (process.env.BROWSER) {
     require('./Notification.scss');
   }
 
-  if( variant ){
+  if (variant) {
     classes.push(`notification--${variant}`);
   }
 
   return (
-    <div className={ classes.filter(c => c).join(' ') } { ...extraProps }>
+    <div className={classes.filter(c => c).join(' ')} {...extraProps}>
       <div className="notification__content">
-        { props.children }
+        {props.children}
       </div>
     </div>
   );
@@ -24,6 +24,7 @@ function Notification(props) {
 Notification.propTypes = {
   className: PropTypes.string,
   variant: PropTypes.string,
+  children: React.PropTypes.node
 };
 
 export default Notification;

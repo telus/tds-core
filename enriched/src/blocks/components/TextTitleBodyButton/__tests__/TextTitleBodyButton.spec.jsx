@@ -14,7 +14,7 @@ describe('<TextTitleBodyButton />', () => {
     }
   };
 
-  const textTitleBodyButton = shallow( <TextTitleBodyButton {...props}/> );
+  const textTitleBodyButton = shallow(<TextTitleBodyButton {...props} />);
 
   it('sets the classes from the className prop', () => {
     expect(textTitleBodyButton.hasClass('class')).toBeTruthy();

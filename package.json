@@ -1,6 +1,6 @@
 {
   "name": "telus-thorium-build",
-  "version": "0.15.0",
+  "version": "0.15.2",
   "description": "TELUS Design System",
   "license": "UNLICENSED",
   "scripts": {
@@ -14,7 +14,7 @@
     "install": "npm run install:core && npm run install:enriched && npm run install:docs",
     "install:core": "cd core && npm install",
     "install:docs": "cd docs && npm install",
-    "install:enriched": "cd enriched && npm run preinstall && npm install",
+    "install:enriched": "cd enriched && npm install",
     "deploy:cdn": "npm run deploy:cdn:core && npm run deploy:cdn:enriched",
     "deploy:cdn:core": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module core --environment production --latest",
     "deploy:cdn:enriched": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module enriched --environment production --latest",

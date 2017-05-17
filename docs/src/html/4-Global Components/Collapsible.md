@@ -57,7 +57,7 @@ We can control the collapsible component state.
   }
 
   togglePanel(panelKey) {
-      if (this.state.activeKeys.includes(panelKey)) {
+      if (this.state.activeKeys.indexOf(panelKey) > -1) {
           this.setState({
               activeKeys: this.state.activeKeys.filter(k => k !== panelKey)
           });

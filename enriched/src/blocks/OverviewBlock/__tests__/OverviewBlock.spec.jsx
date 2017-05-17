@@ -18,7 +18,7 @@ describe('<OverviewBlock />', () => {
     }
   };
 
-  const overviewBlock = shallow( <OverviewBlock {...props}/> );
+  const overviewBlock = shallow(<OverviewBlock {...props} />);
 
   it('sets the classes from the className prop', () => {
     expect(overviewBlock.hasClass('class')).toBeTruthy();
