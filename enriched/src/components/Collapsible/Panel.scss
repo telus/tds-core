@@ -47,7 +47,7 @@
     }
 
     &::before {
-      background: #d2d3d5;
+      background: $color-gainsboro;
       bottom: 0;
       height: 1px;
     }
@@ -132,7 +132,7 @@
     overflow: hidden;
 
     &::before {
-      background: #d2d3d5;
+      background: $color-gainsboro;
       bottom: 0;
       content: '';
       height: 1px;

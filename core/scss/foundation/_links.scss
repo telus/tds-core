@@ -13,6 +13,13 @@ a {
   &:hover {
     color: $color-link-hover;
   }
+
+  &--descent {
+    &:link,
+    &:visited {
+      @include clear-descenders($color-link, $color-white);
+    }
+  }
 }
 
 .link {
@@ -25,6 +32,12 @@ a {
     &:hover {
       color: $color-royal-purple;
     }
+
+    &.link--descent,
+    &.link--descent:link,
+    &.link--descent:visited {
+      @include clear-descenders($color-grape, $color-white);
+    }
   }
 
   &--secondary {
@@ -35,6 +48,12 @@ a {
 
     &:hover {
       color: $color-japanese-laurel;
+    }
+
+    &.link--descent,
+    &.link--descent:link,
+    &.link--descent:visited {
+      @include clear-descenders($color-forest-green, $color-white);
     }
   }
 }
@@ -67,8 +86,6 @@ a {
 .link--descent,
 .link--descent:link,
 .link--descent:visited {
-  @include clear-descenders($color-link, $color-white);
-
   &.link--inverted {
     @include clear-descenders($color-athens-grey, $color-grape);
   }
