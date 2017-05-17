@@ -1,7 +1,18 @@
----
-title: Changelog
-template: changelog.jade
----
+
+
+
+## v0.15.3
+
+
+https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.15.3
+
+- Revert updates of latest blocks + component
+- fix(component collapsible): make collapsible content height dynamic
+- Revert "Revert updates of latest blocks + component"
+- refactor(changed react.propTypes to PropTypes): (#337)
+- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+- build(add prop-type package to enriched package.json):
+
 
 
 ## v0.15.2
@@ -18,6 +29,7 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.15.2
 - build: groovy.ci
 - build(groovy.ci): cd into /scripts folder to run init-npm.sh
 - build(groovy.ci): updating path to init-npm.sh :)
+- Changelog and version bump for v0.15.2
 
 
 
