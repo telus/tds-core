@@ -7,11 +7,9 @@
   &__label {
     background: transparent;
     border-radius: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     font-weight: 400;
-    font-size: 19px;
+    font-size: rem(20px);
     margin: 0;
     outline: 0;
     padding: 20px 0;
@@ -20,6 +18,11 @@
     text-decoration: none;
     width: 100%;
     transition: all 0.3s ease-in;
+    border: 0;
+    cursor: pointer;
+    letter-spacing: .2px;
+    line-height: 1.2;
+    font-family: $font-telus;
 
     .icon{
       color: $color-forest-green;
@@ -103,6 +106,8 @@
 
 
   &__header {
+    display: inline-block;
+    margin-bottom: 0;
     color: $color-shark;
     position: relative;
   }
@@ -110,9 +115,11 @@
 
 
   &__icon {
-    margin: 0 5px;
+    float: right;
     font-size: 1.125rem;
     transition: all .5s;
+    width: 18px;
+    margin-top: -2px;
   }
 
 
