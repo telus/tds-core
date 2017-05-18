@@ -228,7 +228,7 @@ function link(href, title, text) {
       return '';
     }
   }
-  var out = '<a class="link link--descent" href="' + href + '"';
+  var out = '<a class="tds-link tds-link--descent" href="' + href + '"';
   if (title) {
     out += ' title="' + title + '"';
   }
