@@ -5,7 +5,7 @@ template: doc.jade
 
 * [Text links](#text-links)
 * [Chevron links](#chevron-links)
-* [Examples](/examples/typography.html)
+* [Examples](/examples/links.html)
 
 ## Text links
 

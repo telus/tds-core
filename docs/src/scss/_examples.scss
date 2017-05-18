@@ -20,6 +20,10 @@
     padding: 2rem;
   }
 
+  &--non-inverted {
+    padding: 2rem 0;
+  }
+
   &--primary {
     background-color: $color-forest-green;
   }
@@ -34,6 +38,7 @@
 }
 
 .type-examples {
+  padding-top: 2rem;
   .grid-row {
     margin-bottom: 3rem;
   }
