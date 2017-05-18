@@ -106,7 +106,7 @@
   height: 2.5rem;
   display: none;
   @include from-breakpoint(medium) {
-    display: initial;
+    display: inline;
   }
 }
 
