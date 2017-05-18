@@ -14,7 +14,7 @@ class Spinner extends Component {
     this.isNestedPattern = this.isNestedPattern.bind(this);
   }
 
-  toggleBodyScrolling({ fullScreen, spinning}) {
+  toggleBodyScrolling({ fullScreen, spinning }) {
     if (fullScreen === true && spinning === true) {
       this.disableBodyScrolling();
     } else {
@@ -55,18 +55,19 @@ class Spinner extends Component {
       <div className={cls} role="progressbar" aria-label={tip} aria-hidden={!spinning}>
         { fullScreen && <div className="spinner__full-screen-layer" />}
         <svg className="spinner__svg" viewBox="0 0 100 100" width="0" height="0">
-            <circle
-                className="spinner__circle"
-                stroke="#177a00"
-                strokeWidth="4"
-                fill="none"
-                strokeLinecap="round"
-                strokeDasharray="89, 200"
-                strokeDashoffset="0"
-                cx="50"
-                cy="50"
-                r="20"
-            />
+          <desc>{tip}</desc>
+          <circle
+            className="spinner__circle"
+            stroke="#177a00"
+            strokeWidth="4"
+            fill="none"
+            strokeLinecap="round"
+            strokeDasharray="89, 200"
+            strokeDashoffset="0"
+            cx="50"
+            cy="50"
+            r="20"
+          />
         </svg>
         {tip && <div className="spinner__tip">{tip}</div>}
       </div>
@@ -91,7 +92,11 @@ class Spinner extends Component {
   render() {
     const { spinning, tip, wrapperClassNames, fullScreen } = this.props;
     if (this.isNestedPattern()) {
-      return this.getSpinWrapper(this.getSpinElement(spinning, tip, fullScreen), spinning, wrapperClassNames);
+      return this.getSpinWrapper(
+        this.getSpinElement(spinning, tip, fullScreen),
+        spinning,
+        wrapperClassNames
+      );
     }
     return this.getSpinElement(spinning, tip, fullScreen);
   }
