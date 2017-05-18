@@ -40,6 +40,8 @@ The underline style distinguishes these as interactive elements.
 <a href="#" class="link--primary link--primary-descent">View the current page</a>
 ```
 
+<p class="text--small">Note: We are not including `.link` because of the descent class that provides the fancy underline clashes with the default gray underline.</p>
+
 ### Secondary links
 
 <div class="example example--type">
@@ -49,6 +51,7 @@ The underline style distinguishes these as interactive elements.
 ```html
 <a href="#" class="link--secondary link--secondary-descent">View the current page</a>
 ```
+<p class="text--small">Note: We are not including `.link` because of the descent class that provides the fancy underline clashes with the default gray underline.</p>
 
 ### Primary Inverted links
 
@@ -111,12 +114,12 @@ The underline style distinguishes these as interactive elements.
 
 ### "Clear descenders" modifier
 
-You'll notice these links include a `link--descent` modifier. This class creates a custom underline which doesn't intersect with the descenders of lowercase letters. There are a few requirements for using this style:
+You'll notice the text links include a `link--descent` or `link--primary-descent` or `link--secondary-descent` or `link--inverted-descent` modifier. This classes creates a custom underline which doesn't intersect with the descenders of lowercase letters. There are a few requirements for using this style:
 
-* Opt-in by applying the `.link .link--descent` classes to a hyperlink
-* The text must be on a known, solid background color.
+* Opt-in by applying `link--descent` or `link--primary-descent` or `link--secondary-descent` or `link--inverted-descent` class to a hyperlink
+* The text must be on a *known*, solid background color.
     * White background for normal links
-    * Grape background for inverted links
+    * Grape or Green Forest background for inverted links
 
 ## Chevron Links
 
@@ -223,9 +226,3 @@ You'll notice these links include a `link--descent` modifier. This class creates
   Small/link
 </a>
 ```
-
-## Examples
-
----
-
-You can see more of these styles in action on the [typography examples page](/examples/typography.html).
