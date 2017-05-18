@@ -2,7 +2,7 @@
 // Links
 //
 
-.link,
+.tds-link,
 a {
   &:link,
   &:visited {
@@ -15,7 +15,7 @@ a {
   }
 }
 
-.link {
+.tds-link {
   &--descent {
     &:link,
     &:visited {
@@ -24,7 +24,7 @@ a {
   }
 }
 
-.link {
+.tds-link {
   &--primary {
     &:link,
     &:visited {
@@ -35,10 +35,17 @@ a {
       color: $color-japanese-laurel;
     }
 
-    &-descent {
+    &.tds-link--descent {
       &:link,
       &:visited {
         @include clear-descenders($color-forest-green, $color-athens-grey);
+      }
+    }
+
+    &.tds-link--inverted.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-athens-grey, $color-forest-green);
       }
     }
   }
@@ -53,10 +60,17 @@ a {
       color: $color-royal-purple;
     }
 
-    &-descent {
+    &.tds-link--descent {
       &:link,
       &:visited {
         @include clear-descenders($color-grape, $color-athens-grey);
+      }
+    }
+
+    &.tds-link--inverted.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-athens-grey, $color-grape);
       }
     }
   }
@@ -73,7 +87,7 @@ a {
   }
 }
 
-.chevron-link {
+.tds-chevron-link {
   &--primary {
     &:link,
     &:visited {
