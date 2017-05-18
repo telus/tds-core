@@ -20,7 +20,6 @@ class Panel extends Component {
     if (this.props.isActive) {
       const height = this.panelContent.scrollHeight + 40;
       this.panelContent.style.maxHeight = `${height}px`;
-      console.log(height);
     } else {
       this.panelContent.style.maxHeight = '0px';
     }
