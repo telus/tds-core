@@ -33,50 +33,79 @@ The underline style distinguishes these as interactive elements.
 ### Primary links
 
 <div class="example example--type">
-    <a href="#" class="link link--primary link--descent">View the current page</a>
+    <a href="#" class="link--primary link--primary-descent">View the current page</a>
 </div>
 
 ```html
-<a href="#" class="link link--primary link--descent">View the current page</a>
+<a href="#" class="link--primary link--primary-descent">View the current page</a>
 ```
 
 ### Secondary links
 
 <div class="example example--type">
-    <a href="#" class="link link--secondary link--descent">View the current page</a>
+    <a href="#" class="link--secondary link--secondary-descent">View the current page</a>
 </div>
 
 ```html
-<a href="#" class="link link--secondary link--descent">View the current page</a>
+<a href="#" class="link--secondary link--secondary-descent">View the current page</a>
 ```
 
-### Inverted links
+### Primary Inverted links
 
-<div class="example example--inverted">
-    <a href="#" class="link link--inverted link--descent">
-        Link
+<div class="example example--inverted example--primary">
+    <a href="#" class="link link--primary link--inverted link--inverted-descent">
+        Lorem ipsum
     </a>
     <br/>
-    <a href="#" class="link link--inverted link--descent text--medium">
-        Medium/link
+    <a href="#" class="link link--primary link--inverted link--inverted-descent text--medium">
+        Medium/Lorem ipsum
     </a>
     <br/>
-    <a href="#" class="link link--inverted link--descent text--small">
-        Small/link
+    <a href="#" class="link link--primary link--inverted link--inverted-descent text--small">
+        Small/Lorem ipsum
     </a>
 </div>
 
 ```html
-<a href="#" class="link link--inverted link--descent">
-    Link
+<a href="#" class="link link--primary link--inverted link--inverted-descent">
+    Lorem ipsum
 </a>
 <br/>
-<a href="#" class="link link--inverted link--descent text--medium">
-    Medium/link
+<a href="#" class="link link--primary link--inverted link--inverted-descent text--medium">
+    Medium/Lorem ipsum
 </a>
 <br/>
-<a href="#" class="link link--inverted link--descent text--small">
-    Small/link
+<a href="#" class="link link--primary link--inverted link--inverted-descent text--small">
+    Small/Lorem ipsum
+</a>
+```
+
+### Secondary Inverted links
+<div class="example example--inverted example--secondary">
+    <a href="#" class="link link--secondary link--inverted link--inverted-descent">
+        Lorem ipsum
+    </a>
+    <br/>
+    <a href="#" class="link link--secondary link--inverted link--inverted-descent text--medium">
+        Medium/Lorem ipsum
+    </a>
+    <br/>
+    <a href="#" class="link link--secondary link--inverted link--inverted-descent text--small">
+        Small/Lorem ipsum
+    </a>
+</div>
+
+```html
+<a href="#" class="link link--secondary link--inverted link--inverted-descent">
+    Lorem ipsum
+</a>
+<br/>
+<a href="#" class="link link--secondary link--inverted link--inverted-descent text--medium">
+    Medium/Lorem ipsum
+</a>
+<br/>
+<a href="#" class="link link--secondary link--inverted link--inverted-descent text--small">
+    Small/Lorem ipsum
 </a>
 ```
 
@@ -95,39 +124,79 @@ You'll notice these links include a `link--descent` modifier. This class creates
 
 ### Primary chevrons
 
-Clickable product names, clickable subheads that  are page/category titles.
-
-<a href="#" class="chevron-link">
+<a href="#" class="chevron-link--primary">
     Large/link
 </a>
 
-<a href="#" class="text--medium chevron-link">
+<a href="#" class="text--medium chevron-link--primary">
     Medium/link
 </a>
 
-
-<a href="#" class="text--small chevron-link">
+<a href="#" class="text--small chevron-link--primary">
     Small/link
 </a>
 
 
 ```html
-<a href="#" class="chevron-link">
+<a href="#" class="chevron-link--primary">
     Large/link
 </a>
 
-<a href="#" class="text--medium chevron-link">
+<a href="#" class="text--medium chevron-link--primary">
     Medium/link
 </a>
 
-<a href="#" class="text--small chevron-link">
+<a href="#" class="text--small chevron-link--primary">
+    Small/link
+</a>
+```
+
+### Secondary chevrons
+
+<a href="#" class="chevron-link--secondary">
+    Large/link
+</a>
+
+<a href="#" class="text--medium chevron-link--secondary">
+    Medium/link
+</a>
+
+<a href="#" class="text--small chevron-link--secondary">
+    Small/link
+</a>
+
+
+```html
+<a href="#" class="chevron-link--secondary">
+    Large/link
+</a>
+
+<a href="#" class="text--medium chevron-link--secondary">
+    Medium/link
+</a>
+
+<a href="#" class="text--small chevron-link--secondary">
     Small/link
 </a>
 ```
 
 ### Inverted chevrons
 
-<div class="example example--inverted">
+<div class="example example--inverted example--primary">
+  <a href="#" class="chevron-link chevron-link--inverted">
+    Large/link
+  </a>
+  <br>
+  <a href="#" class="text--medium chevron-link chevron-link--inverted">
+    Medium/link
+  </a>
+  <br>
+  <a href="#" class="text--small chevron-link chevron-link--inverted">
+    Small/link
+  </a>
+</div>
+
+<div class="example example--inverted example--secondary">
   <a href="#" class="chevron-link chevron-link--inverted">
     Large/link
   </a>

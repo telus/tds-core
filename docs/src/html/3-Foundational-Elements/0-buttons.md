@@ -111,7 +111,7 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
-### Inverted Primary button
+### Inverted Secondary button
 
 <div class="example example--inverted example--secondary">
     <button class="tds-button tds-button--secondary tds-button--inverted">
@@ -125,7 +125,7 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
-### Inverted Primary button
+### Inverted Outlined Secondary button
 
 <div class="example example--inverted example--secondary">
     <button class="tds-button tds-button--secondary tds-button--inverted tds-button--outlined">

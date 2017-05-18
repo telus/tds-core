@@ -173,15 +173,17 @@ template: example.jade
         <div class="medium-4">
             <h3>Primary Chevrons</h3>
             <p>
-                <a href="#" class="chevron-link">
+                <a href="#" class="chevron-link chevron-link--primary">
+                    Large/link
+                </a>
+                <br/>
+                <a href="#" class="chevron-link chevron-link--primary text--medium">
                     Large/link
                 </a>
                 <br>
-                <small>
-                    <a href="#" class="chevron-link">
-                        Small/link
-                    </a>
-                </small>
+                <a href="#" class="chevron-link chevron-link--primary">
+                    Small/link
+                </a>
             </p>
         </div>
         <div class="medium-4">
@@ -190,12 +192,14 @@ template: example.jade
                 <a href="#" class="chevron-link chevron-link--secondary">
                     Large/link
                 </a>
+                <br/>
+                <a href="#" class="chevron-link chevron-link--secondary text--medium">
+                    Large/link
+                </a>
                 <br>
-                <small>
-                    <a href="#" class="chevron-link chevron-link--secondary">
-                        Large/link
-                    </a>
-                </small>
+                <a href="#" class="chevron-link chevron-link--secondary text--small">
+                    Large/link
+                </a>
             </p>
         </div>
         <div class="medium-4">
@@ -203,9 +207,9 @@ template: example.jade
             <p>
                 <a href="#" class="link link--descent">Large/link</a>
                 <br>
-                <small>
-                    <a href="#" class="link link--descent">Small/link</a>
-                </small>
+                <a href="#" class="link link--descent text--small">Small/link</a>
+                <br>
+                <a href="#" class="link link--descent text--small">Small/link</a>
             </p>
         </div>
     </div>
@@ -213,31 +217,67 @@ template: example.jade
         <div class="xs-12"><h2>Inverted Links</h2></div>
     </div>
     <div class="grid-row">
-        <div class="medium-4 inverted-link-ex">
-            <p>
-                <a href="#" class="chevron-link chevron-link--inverted">
-                    Large/link
-                </a>
-                <br>
-                <small>
-                    <a href="#" class="chevron-link chevron-link--inverted">
-                        Small/link
-                    </a>
-                </small>
-            </p>
-        </div>
-        <div class="medium-4 offset-medium-2 inverted-link-ex">
-            <p>
-                <a href="#" class="link link--inverted link--descent">
-                    Large/link
-                </a>
-                <br>
-                <small>
-                    <a href="#" class="link link--inverted link--descent">
-                        Small/link
-                    </a>
-                </small>
-            </p>
-        </div>
+      <div class="medium-4 example--primary example--inverted">
+          <p>
+            <a href="#" class="chevron-link chevron-link--inverted">
+                Large/link
+            </a>
+            <br>
+            <a href="#" class="chevron-link chevron-link--inverted text--medium">
+                Small/link
+            </a>
+            <br/>
+            <a href="#" class="chevron-link chevron-link--inverted text--small">
+                Small/link
+            </a>
+          </p>
+      </div>
+      <div class="medium-4 offset-medium-2 example--inverted example--primary">
+          <p>
+            <a href="#" class="link link--primary link--inverted link--inverted-descent">
+                Large/link
+            </a>
+            <br>
+            <a href="#" class="link link--primary link--inverted link--inverted-descent text--medium">
+                Small/link
+            </a>
+            <br>
+            <a href="#" class="link link--primary link--inverted link--inverted-descent text--small">
+                Small/link
+            </a>
+          </p>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="medium-4 example--inverted example--secondary">
+          <p>
+            <a href="#" class="chevron-link chevron-link--inverted">
+                Large/link
+            </a>
+            <br>
+            <a href="#" class="chevron-link chevron-link--inverted text--medium">
+                Small/link
+            </a>
+            <br>
+            <a href="#" class="chevron-link chevron-link--inverted text--small">
+                Small/link
+            </a>
+          </p>
+      </div>
+      <div class="medium-4 offset-medium-2 example--inverted example--secondary">
+          <p>
+            <a href="#" class="link link--secondary link--inverted link--inverted-descent">
+                Large/link
+            </a>
+            <br>
+            <a href="#" class="link link--secondary link--inverted link--inverted-descent text--medium">
+                Small/link
+            </a>
+            <br>
+            <a href="#" class="link link--secondary link--inverted link--inverted-descent text--small">
+                Small/link
+            </a>
+          </p>
+      </div>
     </div>
 </div>
