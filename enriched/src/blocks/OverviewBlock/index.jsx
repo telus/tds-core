@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cx from 'classnames';
 import CheckList from '../components/CheckList';
 import TextTitleBodyButton from '../components/TextTitleBodyButton';
@@ -26,11 +27,11 @@ const OverviewBlock = (props) => {
 };
 
 OverviewBlock.propTypes = {
-  className: React.PropTypes.string,
-  overviewTitle: React.PropTypes.string,
-  overviewDescription: React.PropTypes.string,
-  ctaLink: React.PropTypes.object,
-  sideContent: React.PropTypes.object
+  className: PropTypes.string,
+  overviewTitle: PropTypes.string,
+  overviewDescription: PropTypes.string,
+  ctaLink: PropTypes.object,
+  sideContent: PropTypes.object
 };
 
 OverviewBlock.defaultProps = {

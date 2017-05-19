@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 if (process.env.BROWSER) {
@@ -17,8 +18,8 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
-  children: React.PropTypes.node,
-  className: React.PropTypes.string
+  children: PropTypes.node,
+  className: PropTypes.string
 };
 
 Card.defaultProps = {

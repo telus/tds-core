@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function Notification(props) {
   const { className, variant, children, ...extraProps } = props;
@@ -24,7 +25,7 @@ function Notification(props) {
 Notification.propTypes = {
   className: PropTypes.string,
   variant: PropTypes.string,
-  children: React.PropTypes.node
+  children: PropTypes.node
 };
 
 export default Notification;

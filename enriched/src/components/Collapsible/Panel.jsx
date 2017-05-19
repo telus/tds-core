@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 if (process.env.BROWSER) {
@@ -6,6 +7,25 @@ if (process.env.BROWSER) {
 }
 
 class Panel extends Component {
+
+  componentDidMount() {
+    this.setMaxHeight();
+  }
+
+  componentDidUpdate() {
+    this.setMaxHeight();
+  }
+
+  setMaxHeight() {
+    if (this.props.isActive) {
+      const height = this.panelContent.scrollHeight + 40;
+      this.panelContent.style.maxHeight = `${height}px`;
+      console.log(height);
+    } else {
+      this.panelContent.style.maxHeight = '0px';
+    }
+  }
+
   render() {
     const { className, header, children, isActive, isDisabled, onPanelClick, isFirst } = this.props;
     const collapsePanelClassName = classNames('collapsible-panel', className);
@@ -35,7 +55,7 @@ class Panel extends Component {
             <i className={iconClassName} />
           </span>
         </button>
-        <div className={collapsePanelContent}>
+        <div ref={(node) => { this.panelContent = node; }} className={collapsePanelContent}>
           { children }
         </div>
       </div>

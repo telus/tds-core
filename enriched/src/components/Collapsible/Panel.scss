@@ -139,7 +139,6 @@
 
 
   &__content {
-    max-height: 0;
     opacity: 0;
     margin: 0;
     position: relative;
@@ -158,11 +157,6 @@
 
     &--visible {
       padding: 20px 0;
-      @include from-breakpoint(large) {
-        padding: 40px 0;
-      }
-      max-height: 500px;
-      overflow-y: auto;
       opacity: 1;
     }
   }
