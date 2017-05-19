@@ -55,21 +55,6 @@
       color: $color-japanese-laurel;
     }
   }
-
-
-  &--error {
-    .step-tracker__label, .step-tracker__icon {
-      color: $color-cardinal;
-    }
-    .step-tracker__icon {
-      border-color: $color-cardinal;
-      color: $color-cardinal;
-      &:before {
-        content: "\F103";
-        line-height: 30px;
-      }
-    }
-  }
 }
 
 
@@ -118,10 +103,7 @@
     display: none;
   }
   color: $color-japanese-laurel;
-  
-  &--error {
-    color: $color-cardinal;
-  }
+
 }
 .step-tracker__mobile-label-step-info {
   color: $color-shark;

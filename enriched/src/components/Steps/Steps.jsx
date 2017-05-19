@@ -8,10 +8,9 @@ if ( process.env.BROWSER ) {
 }
 
 class Steps extends Component {
+
   getStatus(current, status, index) {
-    if (status === 'error' && current === index) {
-      return 'error';
-    } else if (index < current) {
+    if (index < current) {
       return 'completed';
     } else if (index === current) {
       return 'processing';
@@ -23,14 +22,20 @@ class Steps extends Component {
   render() {
     const { children, className, current, currentStatus } = this.props;
     const cls = classNames('step-tracker', className);
-    const mobileLabeCls = classNames('step-tracker__mobile-label', {
-      'step-tracker__mobile-label--error': currentStatus === 'error'
-    });
     const totalSteps = children.length;
-    const currentChild = children[current];
+    let currentStepLabel, currentStepNumber;
+    if (current < totalSteps){
+      currentStepLabel = children[current].props.label;
+      currentStepNumber = current + 1
+    } else {
+      currentStepLabel = children[current - 1].props.label;
+      currentStepNumber = current;
+    }
+    
+
     return (
       <div>
-        <ul className={cls}>
+        <ul className={cls} role="progressbar">
           {
             React.Children.map(children, (element, index) => {
               const stepNumber = index + 1;
@@ -43,10 +48,10 @@ class Steps extends Component {
             }, this)
           }
         </ul>
-        <div className={mobileLabeCls}>
+        <div className="step-tracker__mobile-label">
           <span className="step-tracker__mobile-label-step-info">
-            Step {current + 1} of {totalSteps}:
-          </span> {currentChild.props.label}
+            Step {currentStepNumber} of {totalSteps}:
+          </span> {currentStepLabel}
         </div>
       </div>
     );
