@@ -27,8 +27,12 @@ Clone this repository
     cd telus-thorium-core
 
 Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.
-
+    
     npm run setup:links
+    
+Run `init-npm.sh` so you can properly use the `redux-contentful` private package for legals
+    
+    ./enriched/scripts/init-npm.sh
 
 Install the rest of the projects' dependencies and start up your local documentation site.
 
