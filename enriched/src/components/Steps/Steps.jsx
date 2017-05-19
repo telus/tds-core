@@ -26,12 +26,11 @@ class Steps extends Component {
     let currentStepLabel, currentStepNumber;
     if (current < totalSteps){
       currentStepLabel = children[current].props.label;
-      currentStepNumber = current + 1
+      currentStepNumber = current + 1;
     } else {
       currentStepLabel = children[current - 1].props.label;
       currentStepNumber = current;
     }
-    
 
     return (
       <div>

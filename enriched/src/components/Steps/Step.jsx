@@ -11,7 +11,7 @@ const Step = ({ label, status, stepNumber }) => {
     'step-tracker__step--waiting': status === 'waiting'
   });
   return (
-    <li className={cls} aria-label={label} aria-current={ status === 'processing' ? "true" : "false"}>
+    <li className={cls} aria-label={label} aria-current={ status === 'processing' ? 'true' : 'false'}>
       <span className="step-tracker__icon"></span>
       <span className="step-tracker__label">{stepNumber}. {label}</span>
     </li>
