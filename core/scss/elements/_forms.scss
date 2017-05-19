@@ -19,20 +19,20 @@ select {
   letter-spacing: .4px;
   line-height: 1.4;
   outline: 0;
-  padding: 15px;
+  padding: 11px;
   width: 100%;
   transition: border-color .1s linear, background-color .1s linear;
 
-  .field & {
+  .tds-field & {
     margin-bottom: $form-field-bottom-spacing;
   }
 
-  .field--error & {
+  .tds-field--error & {
     border-color: $color-cardinal;
     padding-right: 45px;
   }
 
-  .field--success & {
+  .tds-field--success & {
     border-color: $color-japanese-laurel;
   }
 
@@ -96,7 +96,7 @@ textarea {
 // Container for the controls making up a form field.
 //
 
-.field {
+.tds-field {
   position: relative;
 
   &--hinted {
@@ -111,7 +111,7 @@ textarea {
     border-radius: $form-field-border-radius;
     margin-bottom: $form-field-bottom-spacing;
 
-    .field--error & {
+    .tds-field--error & {
       &::before {
         @include core-icon();
 
@@ -122,10 +122,6 @@ textarea {
         content: core-icon-codepoint(exclamation-point-circle);
         right: 15px;
         color: $color-cardinal;
-      }
-
-      &.select-container::before {
-        right: 45px;
       }
     }
 
@@ -141,7 +137,7 @@ textarea {
         color: $color-forest-green;
       }
 
-      .field--error & {
+      .tds-field--error & {
         &::before {
           right: 45px;
         }
@@ -193,7 +189,7 @@ textarea {
 // Helpers
 //
 
-.helper {
+.tds-helper {
   font-size: rem(16px);
   background: $color-athens-grey;
   padding: 11px 16px 16px;
@@ -222,7 +218,7 @@ textarea {
 // Thickness of the green border when a radio input is checked
 $radio-checked-stroke-size: 6px;
 
-.choice {
+.tds-choice {
   display: block;
   cursor: pointer;
   margin-bottom: 8px;
@@ -244,9 +240,9 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  .choice:not(.choice--error) & {
+  .tds-choice:not(.tds-choice--error) & {
     &:hover:not(:checked):not(:disabled) {
-      & + .choice__text {
+      & + .tds-choice__text {
         &::before {
           border-color: $color-shark;
           box-shadow: 0 0 0 1px rgba(35, 135, 0, .25);
@@ -256,7 +252,7 @@ $radio-checked-stroke-size: 6px;
   }
 
   &:active {
-    & + .choice__text {
+    & + .tds-choice__text {
       &::before {
         border-color: $color-japanese-laurel;
       }
@@ -264,7 +260,7 @@ $radio-checked-stroke-size: 6px;
   }
 
   &:disabled {
-    & + .choice__text {
+    & + .tds-choice__text {
       cursor: not-allowed;
 
       &::before {
@@ -273,9 +269,9 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  .choice--error & {
-    & + .choice__text,
-    &:checked + .choice__text {
+  .tds-choice--error & {
+    & + .tds-choice__text,
+    &:checked + .tds-choice__text {
       color: $color-cardinal;
 
       &::before {
@@ -284,7 +280,7 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  + .choice__text {
+  + .tds-choice__text {
     position: relative;
     padding-left: 2em;
 
@@ -305,7 +301,7 @@ $radio-checked-stroke-size: 6px;
 
 [type='radio'] {
   &:active {
-    & + .choice__text {
+    & + .tds-choice__text {
       &::before {
         border-width: $radio-checked-stroke-size;
       }
@@ -313,14 +309,14 @@ $radio-checked-stroke-size: 6px;
   }
 
   &:checked {
-    & + .choice__text {
+    & + .tds-choice__text {
       &::before {
         border: solid $radio-checked-stroke-size $color-forest-green;
       }
     }
 
     &:disabled {
-      & + .choice__text {
+      & + .tds-choice__text {
         &::before {
           background: $color-shuttle-grey;
           border: solid $radio-checked-stroke-size $color-athens-grey;
@@ -332,7 +328,7 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  + .choice__text {
+  + .tds-choice__text {
     &::before {
       border-radius: 50%;
     }
@@ -341,14 +337,14 @@ $radio-checked-stroke-size: 6px;
 
 [type='checkbox'] {
   &:checked {
-    & + .choice__text {
+    & + .tds-choice__text {
       &::before {
         content: core-icon-codepoint(checkmark);
       }
     }
 
     &:disabled {
-      & + .choice__text {
+      & + .tds-choice__text {
         &::before {
           color: $color-shuttle-grey;
         }
@@ -356,7 +352,7 @@ $radio-checked-stroke-size: 6px;
     }
 
     &:not(:disabled) {
-      & + .choice__text {
+      & + .tds-choice__text {
         &::before {
           background: $color-forest-green;
           border: none;
@@ -366,14 +362,14 @@ $radio-checked-stroke-size: 6px;
   }
 
   &:disabled {
-    & + .choice__text {
+    & + .tds-choice__text {
       &::before {
         border-color: $color-shuttle-grey;
       }
     }
   }
 
-  + .choice__text {
+  + .tds-choice__text {
     &::before {
       border-radius: 4px;
       color: white;
@@ -383,8 +379,8 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  .choice--error & {
-    &:checked + .choice__text {
+  .tds-choice--error & {
+    &:checked + .tds-choice__text {
       &::before {
         background: $color-cardinal;
       }
@@ -396,7 +392,7 @@ $radio-checked-stroke-size: 6px;
 // Hints
 //
 
-.hint {
+.tds-hint {
   position: absolute;
   top: 0;
   right: 0;
@@ -407,8 +403,8 @@ $radio-checked-stroke-size: 6px;
   // the field's label.
   padding-top: inherit;
 
-  &:not(.hint--active) {
-    .hint__text {
+  &:not(.tds-hint--active) {
+    .tds-hint__text {
       @extend %accessible-hide;
     }
   }

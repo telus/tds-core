@@ -11,12 +11,12 @@ a.tds-button {
   letter-spacing: .2px;
   line-height: 1.166666;
   margin: 9px 0;
-  padding: 20px 30px;
+  padding: 16px 30px;
   text-align: center;
   text-decoration: none;
   transition: background .2s;
   width: 100%;
-  min-height: 60px;
+  min-height: 52px;
   min-width: 180px;
 
   @include from-breakpoint(medium) {

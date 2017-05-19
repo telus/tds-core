@@ -16,6 +16,20 @@
 * `chevron-link` (i.e. purple chevron link) changed to `tds-chevron-link--secondary`
 * `chevron-link--secondary` (i.e. green chevron link) changed to `tds-chevron-link--primary` and you need to remove the icon markup
 * to get the styles from `chevron-link--inverted` you now need to use `tds-chevron-link tds-chevron-link--inverted`
+* removed `subhead`, use `heading-3` instead (Deprecated in v0.5.0, 10/18/16)
+* removed `subhead--small`, use `heading-4` instead (Deprecated in v0.5.0, 10/18/16)
+* `field` changed to `tds-field`
+* `field--error` changed to `tds-field--error`
+* `field--success` changed to `tds-field--success`
+* `helper` changed to `tds-helper`
+* `choice` changed to `tds-choice`
+* `choice--error` changed to `tds-choice--error`
+* `choice__text` changed to `tds-choice__text`
+* `field--hinted` changed to `tds-field--hinted`
+* `field__control` changed to `tds-field__control`
+* `hint` changed to `tds-hint`
+* `hint__trigger` changed to `tds-hint__trigger`
+* `hint__text` changed to `tds-hint__text`
 
 
 ## Upgrading to v0.15.x

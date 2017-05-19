@@ -32,22 +32,21 @@ class SelectorCounterExample extends Component {
   render() {
     const succeessful = this.state.succeeded;
     const invalid = (this.state.curr === 5);
-    const fieldClasses = classNames('field', {
-      'field--error': invalid,
-      'field--success': succeessful
+    const fieldClasses = classNames('tds-field', {
+      'tds-field--error': invalid,
+      'tds-field--success': succeessful
     });
     const listClasses = classNames('list', 'list--compact', {
       'list--error': invalid,
       'list--checked': succeessful
     });
-    const helperClasses = classNames('helper', {
-      'helper--error': invalid,
-      'helper--success': succeessful
+    const helperClasses = classNames('tds-helper', {
+      'tds-helper--error': invalid,
+      'tds-helper--success': succeessful
     });
 
     return (
-      <form onSubmit={this.handleSubmit}>
-        <div className="field-col">
+        <form onSubmit={this.handleSubmit}>
           <div className={fieldClasses}>
             <label htmlFor="ex-selcounter">How many smartphone plans?</label>
             <div className={helperClasses} id="ex-selcounter-desc">
@@ -70,8 +69,7 @@ class SelectorCounterExample extends Component {
             />
           </div>
           <button className="tds-button tds-button--primary">Submit</button>
-        </div>
-      </form>
+        </form>
     );
   }
 }

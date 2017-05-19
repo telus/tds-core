@@ -10,10 +10,10 @@ block content
             != "Login to TELUS"
             br
             != "Business account."
-          fieldset.field
+          fieldset.tds-field
             label(for='email') Email address
             input(type='email', id='email')
-          fieldset.field
+          fieldset.tds-field
             label(for='password') Password
             input(type='password', id='password')
           div.button-row
@@ -30,17 +30,17 @@ block content
       div.grid-row
         div.field-col
           h2 A wide field
-          fieldset.field.field--hinted
+          fieldset.tds-field.tds-field--hinted
             label(for='query') What are you looking for?
             input(type='text', id='query', aria-describedby='some-hint')
-            div.hint
-              button(aria-controls='some-hint').tds-button--plain.hint__trigger
+            div.tds-hint
+              button(aria-controls='some-hint').tds-button--plain.tds-hint__trigger
                 span.accessible-hide Toggle search field description visibility
-              span(aria-role='tooltip', aria-hidden='true')#some-hint.hint__text Enter a few keywords related to your search.
-          div.field
+              span(aria-role='tooltip', aria-hidden='true')#some-hint.tds-hint__text Enter a few keywords related to your search.
+          div.tds-field
             label.choice
               input(type='checkbox')
-              span.choice__text I agree to the Terms and Conditions
+              span.tds-choice__text I agree to the Terms and Conditions
           div.button-row
             button(type='submit').tds-button.tds-button--primary Search
 
@@ -48,18 +48,18 @@ block content
 
     .container.container--limited-width
       div.grid-row
-        div.field-col
+        div.tds-field-col
           form#greeting-form
             h2 Input states
-            div#hello-world-field.field
+            div#hello-world-field.tds-field
               label(for='hello-world') Greeting text
-              div#hello-world-description.helper
+              div#hello-world-description.tds-helper
                 p.text--small
                   strong Follow these directions:
                 ul.list.list--compact
                   li.list__item Enter the text "Hello, World!"
                   li.list__item Don't include the quotes
-              div.field__control
+              div.tds-field__control
                 input(type='text', id='hello-world', aria-describedby='hello-world-description')
             div.button-row
               button(type='submit')#greeting-button.tds-button.tds-button--primary Send Greeting
@@ -71,30 +71,30 @@ block content
         .medium-4
           form#ten-sides.choice-states-example
             h2 Radio states
-            fieldset.field
-              legend.subhead Which shape has 10 sides?
-              label(for='decagon').choice
+            fieldset.tds-field
+              legend.heading-3 Which shape has 10 sides?
+              label(for='decagon').tds-choice
                 input(type='radio', id='decagon', name='ten-sided-shape', value='decagon')
-                span.choice__text Decagon
-              label(for='nonagon').choice
+                span.tds-choice__text Decagon
+              label(for='nonagon').tds-choice
                 input(type='radio', id='nonagon', name='ten-sided-shape', value='nonagon')
-                span.choice__text Nonagon
-              label(for='octagon').choice
+                span.tds-choice__text Nonagon
+              label(for='octagon').tds-choice
                 input(type='radio', id='octagon' name='ten-sided-shape', value='octagon')
-                span.choice__text Octagon
+                span.tds-choice__text Octagon
         .medium-6.offset-medium-2
           form#four-sides.choice-states-example
             h2 Checkbox states
-            fieldset.field
-              legend.subhead Which has four or more sides?
-              label(for='pentagon').choice
+            fieldset.tds-field
+              legend.heading-3 Which has four or more sides?
+              label(for='pentagon').tds-choice
                 input(type='checkbox', id='pentagon', name='four-sided-shape', value='pentagon')
-                span.choice__text Pentagon
-              label(for='square').choice
+                span.tds-choice__text Pentagon
+              label(for='square').tds-choice
                 input(type='checkbox', id='square', name='four-sided-shape', value='square')
-                span.choice__text Square
-              label(for='triangle').choice
+                span.tds-choice__text Square
+              label(for='triangle').tds-choice
                 input(type='checkbox', id='triangle', name='four-sided-shape', value='shape')
-                span.choice__text Triangle
+                span.tds-choice__text Triangle
 
     hr
