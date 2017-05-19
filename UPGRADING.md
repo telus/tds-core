@@ -10,8 +10,13 @@
 * `button-inverted--outlined` changed to `button--inverted button--outlined`
 * `button-link` changed to `button--link` and now also includes the chevron and can be made purple or green with the revised classes mentioned above
 * to disable a but you will have to use `button--disable` together with `[disabled]` attribute for functionality
-* `chevron-link` (i.e. purple chevron link) changed to `chevron-link--secondary`
-* `chevron-link--secondary` (i.e. green chevron link) changed to `chevron-link--primary`
+* `link` changed to `tds-link`
+* `link--descent` changed to `tds-link--descent`
+* `link--inverted` changed to `tds-link--inverted`
+* `chevron-link` (i.e. purple chevron link) changed to `tds-chevron-link--secondary`
+* `chevron-link--secondary` (i.e. green chevron link) changed to `tds-chevron-link--primary` and you need to remove the icon markup
+* to get the styles from `chevron-link--inverted` you now need to use `tds-chevron-link tds-chevron-link--inverted`
+
 
 ## Upgrading to v0.15.x
 
