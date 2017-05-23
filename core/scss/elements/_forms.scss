@@ -10,7 +10,7 @@ $form-field-bottom-spacing: 18px;
 input:not([type='radio']),
 textarea,
 select {
-  border: 1px solid $color-grey-light;
+  border: 1px solid $color-raven;
   border-radius: $form-field-border-radius;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
   color: $color-shark;
@@ -37,7 +37,7 @@ select {
   }
 
   &:focus {
-    border-color: $color-shuttle-grey;
+    border-color: $color-shark;
   }
 
   @include from-breakpoint(medium) {
