@@ -124,10 +124,6 @@
 // Create an underline which doesn't intersect with descenders on lowercase
 // letters.
 @mixin clear-descenders($text-color, $bg-color) {
-  background:
-    linear-gradient($bg-color, $bg-color),
-    linear-gradient($bg-color, $bg-color),
-    linear-gradient($text-color, $text-color);
   background-size:
     .05em 1px,
     .05em 1px,
@@ -136,23 +132,10 @@
     no-repeat,
     no-repeat,
     repeat-x;
-  text-shadow:
-    .03em 0 $bg-color,
-    -.03em 0 $bg-color,
-    0 .03em $bg-color,
-    0 -.03em $bg-color,
-    .06em 0 $bg-color,
-    -.06em 0 $bg-color,
-    .09em 0 $bg-color,
-    -.09em 0 $bg-color,
-    .12em 0 $bg-color,
-    -.12em 0 $bg-color,
-    .15em 0 $bg-color,
-    -.15em 0 $bg-color;
   background-position:
-    0 98%,
-    100% 98%,
-    0 98%;
+    0 100%,
+    100% 100%,
+    0 100%;
   text-decoration: none;
 }
 
