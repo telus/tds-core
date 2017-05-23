@@ -88,6 +88,8 @@ a {
 }
 
 .tds-chevron-link {
+  display: inline-block;
+
   &--primary {
     &:link,
     &:visited {
