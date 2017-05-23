@@ -19,7 +19,7 @@ a {
   &--descent {
     &:link,
     &:visited {
-      @include clear-descenders();
+      @include clear-descenders($color-link, $color-white);
     }
   }
 }
@@ -34,6 +34,20 @@ a {
     &:hover {
       color: $color-japanese-laurel;
     }
+
+    &.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-forest-green, $color-athens-grey);
+      }
+    }
+
+    &.tds-link--inverted.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-athens-grey, $color-forest-green);
+      }
+    }
   }
 
   &--secondary {
@@ -44,6 +58,20 @@ a {
 
     &:hover {
       color: $color-royal-purple;
+    }
+
+    &.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-grape, $color-athens-grey);
+      }
+    }
+
+    &.tds-link--inverted.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-athens-grey, $color-grape);
+      }
     }
   }
 
