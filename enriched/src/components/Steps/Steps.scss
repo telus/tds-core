@@ -1,0 +1,135 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+
+.step-tracker {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem -1.5rem;
+  @include from-breakpoint(medium) {
+    padding-bottom: 2.5rem;
+    margin: 1rem 0;
+  }
+}
+
+
+.step-tracker__step {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  height: 35px;
+  &:before, &:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(50% - 1.4rem);
+    content: ' ';
+    border-bottom: 0.25rem solid $color-gainsboro;
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+
+
+  &--completed {
+    &:before, &:after {
+      border-color: $color-japanese-laurel;
+    }
+    .step-tracker__label, .step-tracker__icon {
+      color: $color-japanese-laurel;
+    }
+    .step-tracker__icon {
+      &:before {
+        font-family: "TELUS Core Icons";
+        content: "\F101";
+      }
+    }
+  }
+
+  &--processing {
+    &:before {
+      border-color: $color-japanese-laurel;
+    }
+    .step-tracker__label, .step-tracker__icon {
+      color: $color-japanese-laurel;
+    }
+  }
+
+  &--waiting {
+    .step-tracker__label, .step-tracker__icon {
+      color: $color-raven;
+    }
+    .step-tracker__icon {
+      border-color: $color-gainsboro;
+    }
+  }
+
+  &--error {
+    &:before {
+      border-color: $color-japanese-laurel;
+    }
+    .step-tracker__label, .step-tracker__icon {
+      color: $color-cardinal;
+    }
+    .step-tracker__icon {
+      border-color: $color-cardinal;
+      color: $color-cardinal;
+      &:before {
+        content: "\F103";
+      }
+    }
+  }
+}
+
+
+.step-tracker__step:first-child {
+  &:before {
+    content: none;
+  }
+}
+.step-tracker__step:last-child {
+  &:after {
+    content: none;
+  }
+}
+
+.step-tracker__icon {
+  display: inline-block;
+  border:0.2rem solid $color-japanese-laurel;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  width: 35px;
+  height: 35px;
+  &:before {
+    font-family: "TELUS Core Icons";
+  }
+}
+.step-tracker__label {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  font-size: 1rem;
+  width: 100%;
+  height: 2.5rem;
+  display: none;
+  @include from-breakpoint(medium) {
+    display: initial;
+  }
+}
+.step-tracker__mobile-label {
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+  @include from-breakpoint(medium) {
+    display: none;
+  }
+  color: $color-japanese-laurel
+}
+.step-tracker__mobile-label-step-info {
+  color: $color-raven;
+}
