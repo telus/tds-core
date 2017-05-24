@@ -124,6 +124,10 @@
 // Create an underline which doesn't intersect with descenders on lowercase
 // letters.
 @mixin clear-descenders($text-color, $bg-color) {
+  background:
+    linear-gradient($bg-color, $bg-color),
+    linear-gradient($bg-color, $bg-color),
+    linear-gradient($text-color, $text-color);
   background-size:
     .05em 1px,
     .05em 1px,
@@ -165,6 +169,7 @@
   &:hover {
     box-shadow: none;
 
+    // Deprecated 0.16.0
     .icon {
       left: 4px;
     }
@@ -186,6 +191,7 @@
     margin-left: 2px;
   }
 
+  // Deprecated 0.16.0
   .icon {
     position: relative;
     color: inherit;
