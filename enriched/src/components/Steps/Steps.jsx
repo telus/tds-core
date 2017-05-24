@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import currentStatusOptions from './Step';
+import Step from './Step';
 
-if ( process.env.BROWSER ) {
+if (process.env.BROWSER) {
   require('./Steps.scss');
 }
 
@@ -15,9 +15,8 @@ class Steps extends Component {
       return 'completed';
     } else if (index === current) {
       return 'processing';
-    } else {
-      return 'waiting';
     }
+    return 'waiting';
   }
 
   render() {
@@ -28,7 +27,7 @@ class Steps extends Component {
     return (
       <div>
         <ul className={cls}>
-        {
+          {
           React.Children.map(children, (element, index) => {
             const stepNumber = index + 1;
             const status = this.getStatus(current, currentStatus, index);
@@ -38,7 +37,7 @@ class Steps extends Component {
             };
             return React.cloneElement(element, props);
           }, this)
-        }
+          }
         </ul>
         <div className="step-tracker__mobile-label">
           <span className="step-tracker__mobile-label-step-info">
@@ -52,7 +51,7 @@ class Steps extends Component {
 
 Steps.propTypes = {
   current: PropTypes.number,
-  currentStatus: PropTypes.oneOf(currentStatusOptions),
+  currentStatus: PropTypes.oneOf(Step),
   children: PropTypes.any,
   className: PropTypes.string
 };

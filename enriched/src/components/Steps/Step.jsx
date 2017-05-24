@@ -9,7 +9,7 @@ const Step = ({ label, status, stepNumber }) => {
     'step-tracker__step--completed': status === 'completed',
     'step-tracker__step--processing': status === 'processing',
     'step-tracker__step--waiting': status === 'waiting',
-    'step-tracker__step--error': status === 'error',
+    'step-tracker__step--error': status === 'error'
   });
   return (
     <li className={cls}>
