@@ -112,12 +112,16 @@ h4,
 //
 
 .subhead {
+  @warn ".subhead is now deprecated, use h3 instead";
+
   font-weight: 500;
   font-size: rem(19px);
   line-height: 1.7;
   margin-bottom: baseline-margin(40px);
 
   &--small {
+    @warn ".subhead--small is now deprecated, use h4 instead";
+
     font-size: rem(16px);
     line-height: 1.5;
     margin-bottom: baseline-margin(40px);
