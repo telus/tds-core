@@ -68,22 +68,6 @@
       border-color: $color-gainsboro;
     }
   }
-
-  &--error {
-    &:before {
-      border-color: $color-japanese-laurel;
-    }
-    .step-tracker__label, .step-tracker__icon {
-      color: $color-cardinal;
-    }
-    .step-tracker__icon {
-      border-color: $color-cardinal;
-      color: $color-cardinal;
-      &:before {
-        content: "\F103";
-      }
-    }
-  }
 }
 
 

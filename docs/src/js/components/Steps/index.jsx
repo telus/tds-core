@@ -5,15 +5,14 @@ class StepsExample extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentStep: 0,
-      currentStatus: ''
+      currentStep: 0
     }
     this.nextStep = this.nextStep.bind(this);
   }
 
   nextStep() {
     const currentStep = this.state.currentStep;
-    if (currentStep < 2) {
+    if (currentStep <= 4) {
       this.setState({
         currentStep: currentStep + 1
       });
