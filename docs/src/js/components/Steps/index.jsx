@@ -5,14 +5,15 @@ class StepsExample extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentStep: 0
+      currentStep: 0,
+      currentStatus: ''
     }
     this.nextStep = this.nextStep.bind(this);
   }
 
   nextStep() {
     const currentStep = this.state.currentStep;
-    if (currentStep <= 4) {
+    if (currentStep < 2) {
       this.setState({
         currentStep: currentStep + 1
       });
@@ -26,14 +27,14 @@ class StepsExample extends React.Component {
 
   render() {
     return (
-      <div className="tds-grid-row">
+      <div className="grid-row">
         <Steps current={this.state.currentStep} currentStatus={this.state.currentStatus}>
           <Steps.Step label="Login" />
           <Steps.Step label="Purchase" />
           <Steps.Step label="Checkout" />
         </Steps>
-        <div className="tds-offset-large-5">
-          <button className="tds-button tds-button--primary" onClick={this.nextStep}>Next Step</button>
+        <div className="offset-large-5">
+          <button className="button button-green" onClick={this.nextStep}>Next Step</button>
         </div>
       </div>
 
