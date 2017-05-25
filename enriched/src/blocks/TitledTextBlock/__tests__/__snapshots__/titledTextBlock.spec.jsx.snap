@@ -17,13 +17,13 @@ exports[`TextBlock Component matches snapshot 1`] = `
     className="titled-text-block"
   >
     <div
-      className="container container--limited-width"
+      className="tds-container tds-container--limited-width"
     >
       <div
-        className="grid-row"
+        className="tds-grid-row"
       >
         <div
-          className="small-12 medium-12 large-12"
+          className="tds-small-12 tds-medium-12 tds-large-12"
         >
           <h1
             className="heading-1"
