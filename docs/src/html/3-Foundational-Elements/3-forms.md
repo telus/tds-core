@@ -54,12 +54,12 @@ The simplest implementation of a form field consists of a `.form` block containi
 </fieldset>
 
 ```html
-<fieldset class="field">
+<fieldset class="tds-field">
   <label for="firstname">First Name</label>
   <input id="firstname" name="firstname" required>
 </fieldset>
 
-<fieldset class="field">
+<fieldset class="tds-field">
   <label for="comment">Message</label>
   <textarea id="comment" name="comment" required></textarea>
 </fieldset>
@@ -418,22 +418,22 @@ Use the `.tds-choice--error` modifier when there's a problem with an individual 
 
 The responsive grid can be used to arrange complex form layouts.
 
-<div class="grid-row">
-    <div class="medium-6">
+<div class="tds-grid-row">
+    <div class="tds-medium-6">
 	<fieldset class="tds-field">
 	    <label for="input_a">Input A</label>
 	    <input type="text" name="input_a">
 	</fieldset>
     </div>
-    <div class="medium-6">
+    <div class="tds-medium-6">
 	<fieldset class="tds-field">
 	    <label for="input_b">Input B</label>
 	    <input type="text" name="input_b">
 	</fieldset>
     </div>
 </div>
-<div class="grid-row">
-    <div class="xs-12">
+<div class="tds-grid-row">
+    <div class="tds-xs-12">
 	<fieldset class="tds-field">
 	    <label for="input_c">Input C</label>
 	    <input type="text" name="input_c">
@@ -442,22 +442,22 @@ The responsive grid can be used to arrange complex form layouts.
 </div>
 
 ```html
-<div class="grid-row">
-    <div class="medium-6">
+<div class="tds-grid-row">
+    <div class="tds-medium-6">
 	<fieldset class="tds-field">
 	    <label for="input_a">Input A</label>
 	    <input type="text" name="input_a">
 	</fieldset>
     </div>
-    <div class="medium-6">
+    <div class="tds-medium-6">
 	<fieldset class="tds-field">
 	    <label for="input_b">Input B</label>
 	    <input type="text" name="input_b">
 	</fieldset>
     </div>
 </div>
-<div class="grid-row">
-    <div class="xs-12">
+<div class="tds-grid-row">
+    <div class="tds-xs-12">
 	<fieldset class="tds-field">
 	    <label for="input_c">Input C</label>
 	    <input type="text" name="input_c">
@@ -468,7 +468,7 @@ The responsive grid can be used to arrange complex form layouts.
 
 ### Size and spacing
 
-The `.button-row` block can be used to achieve the correct spacing between a form and its buttons. The class can be used on a stand-alone block, or mixed with `.grid-row`.
+The `.tds-button-row` block can be used to achieve the correct spacing between a form and its buttons. The class can be used on a stand-alone block, or mixed with `.tds-grid-row`.
 
 When laying out fields that'll potentially fill the entire viewport, the responsive grid should be used to constrain their maximum width to these limits:
 
@@ -477,32 +477,32 @@ When laying out fields that'll potentially fill the entire viewport, the respons
 * **Large**: 5 columns
 * **XL**: 4 columns
 
-These limits can be achieved by combining grid column helpers (`.medium-7.large-5.xl-4`) or with the block `.field-col`
+These limits can be achieved by combining grid column helpers (`.tds-medium-7.tds-large-5.tds-xl-4`) or with the block `.tds-field-col`
 
-<div class="grid-row">
-    <div class="field-col">
+<div class="tds-grid-row">
+    <div class="tds-field-col">
 	<fieldset class="tds-field">
 	    <label for="query">What are you looking for?</label>
 	    <input type="text" id="query" placeholder="Smart phones">
 	</fieldset>
     </div>
 </div>
-<div class="button-row">
+<div class="tds-button-row">
     <button type="submit" class="tds-button tds-button--primary">
 	Search
     </button>
 </div>
 
 ```html
-<div class="grid-row">
-    <div class="field-col">
+<div class="tds-grid-row">
+    <div class="tds-field-col">
 	<fieldset class="tds-field">
 	    <label for="query">What are you looking for?</label>
 	    <input type="text" id="query" placeholder="Smart phones">
 	</fieldset>
     </div>
 </div>
-<div class="button-row">
+<div class="tds-button-row">
     <button type="submit" class="tds-button tds-button--primary">
 	Search
     </button>

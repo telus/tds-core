@@ -19,9 +19,9 @@ class TitledTextBlock extends Component {
 
     return (
       <section className="titled-text-block">
-        <div className="container container--limited-width">
-          <div className="grid-row">
-            <div className="small-12 medium-12 large-12">
+        <div className="tds-container tds-container--limited-width">
+          <div className="tds-grid-row">
+            <div className="tds-small-12 tds-medium-12 tds-large-12">
               <h1 className={titleHeadingClass}>{title}</h1>
               {contentHtml}
             </div>

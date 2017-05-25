@@ -71,27 +71,27 @@ function Column(props) {
     const hiddenUpProp = props[`${size}HiddenUp`];
 
     if (sizeProp) {
-      classes.push(`${deviceSizes[size]}-${sizeProp}`);
+      classes.push(`tds-${deviceSizes[size]}-${sizeProp}`);
     }
 
     if (offsetProp) {
-      classes.push(`offset-${deviceSizes[size]}-${offsetProp}`);
+      classes.push(`tds-offset-${deviceSizes[size]}-${offsetProp}`);
     }
 
     if (pushProp) {
-      classes.push(`push-${deviceSizes[size]}-${pushProp}`);
+      classes.push(`tds-push-${deviceSizes[size]}-${pushProp}`);
     }
 
     if (pullProp) {
-      classes.push(`pull-${deviceSizes[size]}-${pullProp}`);
+      classes.push(`tds-pull-${deviceSizes[size]}-${pullProp}`);
     }
 
     if (hiddenProp) {
-      classes.push(`hidden-${deviceSizes[size]}`);
+      classes.push(`tds-hidden-${deviceSizes[size]}`);
     }
 
     if (hiddenUpProp) {
-      classes.push(`hidden-${deviceSizes[size]}-up`);
+      classes.push(`tds-hidden-${deviceSizes[size]}-up`);
     }
   });
 

@@ -48,12 +48,12 @@ TDS will have five viewports over four breakpoints:
 ## Containers
 
 
-* `.container`:
+* `.tds-container`:
 centers a block-element horizontally
 
-* `.container--limited-width`: sets a max-width from the table above on your wrapper, to be used together with `.container` so it is centered
+* `.tds-container--limited-width`: sets a max-width from the table above on your wrapper, to be used together with `.tds-container` so it is centered
 
-* `.container--fluid`: use this class to add gutter when adding a full-width container
+* `.tds-container--fluid`: use this class to add gutter when adding a full-width container
 
 
 
@@ -74,109 +74,109 @@ The building blocks of a responsive grid layout are containers, rows, and column
 Putting these three building blocks together, we can mark up a simple grid with two equal-width columns:
 
 ```html
-<div class="container">
-  <div class="grid-row">
-      <div class="small-6">Hello</div>
-      <div class="small-6">World</div>
+<div class="tds-container">
+  <div class="tds-grid-row">
+      <div class="tds-small-6">Hello</div>
+      <div class="tds-small-6">World</div>
   </div>
 </div>
 ```
 
 ---
 
-<div class="grid-row">
-    <div class="small-6">Hello</div>
-    <div class="small-6">World</div>
+<div class="tds-grid-row">
+    <div class="tds-small-6">Hello</div>
+    <div class="tds-small-6">World</div>
 </div>
 
 ---
 
 ### Column Classes
 
-The `small-*` grid classes allow you to lay out all twelve columns in a variety of combinations.
+The `tds-small-*` grid classes allow you to lay out all twelve columns in a variety of combinations.
 
 <div class="example">
-    <div class="container">
-	<div class="grid-row">
-	    <div class="small-12"><code>.small-12</code></div>
+    <div class="tds-container">
+	<div class="tds-grid-row">
+	    <div class="tds-small-12"><code>.tds-small-12</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
-	    <div class="small-1"><code>.small-1</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
+	    <div class="tds-small-1"><code>.tds-small-1</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="small-2"><code>.small-2</code></div>
-	    <div class="small-2"><code>.small-2</code></div>
-	    <div class="small-2"><code>.small-2</code></div>
-	    <div class="small-2"><code>.small-2</code></div>
-	    <div class="small-2"><code>.small-2</code></div>
-	    <div class="small-2"><code>.small-2</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-small-2"><code>.tds-small-2</code></div>
+	    <div class="tds-small-2"><code>.tds-small-2</code></div>
+	    <div class="tds-small-2"><code>.tds-small-2</code></div>
+	    <div class="tds-small-2"><code>.tds-small-2</code></div>
+	    <div class="tds-small-2"><code>.tds-small-2</code></div>
+	    <div class="tds-small-2"><code>.tds-small-2</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="small-3"><code>.small-3</code></div>
-	    <div class="small-3"><code>.small-3</code></div>
-	    <div class="small-3"><code>.small-3</code></div>
-	    <div class="small-3"><code>.small-3</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-small-3"><code>.tds-small-3</code></div>
+	    <div class="tds-small-3"><code>.tds-small-3</code></div>
+	    <div class="tds-small-3"><code>.tds-small-3</code></div>
+	    <div class="tds-small-3"><code>.tds-small-3</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="small-6"><code>.small-6</code></div>
-	    <div class="small-3"><code>.small-3</code></div>
-	    <div class="small-3"><code>.small-3</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-small-6"><code>.tds-small-6</code></div>
+	    <div class="tds-small-3"><code>.tds-small-3</code></div>
+	    <div class="tds-small-3"><code>.tds-small-3</code></div>
 	</div>
     </div>
 </div>
 
-It's also possible to use `medium-*` and `large-*` column helpers to create layouts that target larger viewports, and collapse at smaller ones.
+It's also possible to use `tds-medium-*` and `tds-large-*` column helpers to create layouts that target larger viewports, and collapse at smaller ones.
 
 <div class="example">
-    <div class="container">
-	<div class="grid-row">
-	    <div class="medium-12"><code>.medium-12</code></div>
+    <div class="tds-container">
+	<div class="tds-grid-row">
+	    <div class="tds-medium-12"><code>.tds-medium-12</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="medium-6"><code>.medium-6</code></div>
-	    <div class="medium-6"><code>.medium-6</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-medium-6"><code>.tds-medium-6</code></div>
+	    <div class="tds-medium-6"><code>.tds-medium-6</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="medium-2"><code>.medium-2</code></div>
-	    <div class="medium-10"><code>.medium-10</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-medium-2"><code>.tds-medium-2</code></div>
+	    <div class="tds-medium-10"><code>.tds-medium-10</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="large-12"><code>.large-12</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-large-12"><code>.tds-large-12</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="large-9"><code>.large-9</code></div>
-	    <div class="large-3"><code>.large-3</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-large-9"><code>.tds-large-9</code></div>
+	    <div class="tds-large-3"><code>.tds-large-3</code></div>
 	</div>
     </div>
 </div>
 
-The `xs-*` helpers are available when you need to lay out columns at the smallest screen sizes.
+The `tds-xs-*` helpers are available when you need to lay out columns at the smallest screen sizes.
 
 <div class="example">
-    <div class="container">
-	<div class="grid-row">
-	    <div class="xs-12"><code>.xs-12</code></div>
+    <div class="tds-container">
+	<div class="tds-grid-row">
+	    <div class="tds-xs-12"><code>.tds-xs-12</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="xs-3"><code>.xs-3</code></div>
-	    <div class="xs-3"><code>.xs-3</code></div>
-	    <div class="xs-3"><code>.xs-3</code></div>
-	    <div class="xs-3"><code>.xs-3</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-xs-3"><code>.tds-xs-3</code></div>
+	    <div class="tds-xs-3"><code>.tds-xs-3</code></div>
+	    <div class="tds-xs-3"><code>.tds-xs-3</code></div>
+	    <div class="tds-xs-3"><code>.tds-xs-3</code></div>
 	</div>
-	<div class="grid-row">
-	    <div class="xs-9"><code>.xs-9</code></div>
-	    <div class="xs-3"><code>.xs-3</code></div>
+	<div class="tds-grid-row">
+	    <div class="tds-xs-9"><code>.tds-xs-9</code></div>
+	    <div class="tds-xs-3"><code>.tds-xs-3</code></div>
 	</div>
     </div>
 </div>
@@ -186,10 +186,10 @@ The `xs-*` helpers are available when you need to lay out columns at the smalles
 Offset column classes make it possible to add negative space alongside columns.
 
 ```html
-<div class="container">
-  <div class="grid-row">
-    <div class="small-3">Normal col.</div>
-    <div class="small-6 offset-small-3">Offset col.</div>
+<div class="tds-container">
+  <div class="tds-grid-row">
+    <div class="tds-small-3">Normal col.</div>
+    <div class="tds-small-6 tds-offset-small-3">Offset col.</div>
   </div>
 </div>
 ```
@@ -197,10 +197,10 @@ Offset column classes make it possible to add negative space alongside columns.
 This example lays out two content blocks, each spanning 3 columns, with the final block also offset by 3 columns in small viewport only.
 
 <div class="example">
-    <div class="container">
-	<div class="grid-row">
-	    <div class="small-3">Normal col.</div>
-	    <div class="small-6 offset-small-3">Offset col.</div>
+    <div class="tds-container">
+	<div class="tds-grid-row">
+	    <div class="tds-small-3">Normal col.</div>
+	    <div class="tds-small-6 tds-offset-small-3">Offset col.</div>
 	</div>
     </div>
 </div>
@@ -210,43 +210,43 @@ This example lays out two content blocks, each spanning 3 columns, with the fina
 Column helpers can also be combined to customize the width at each breakpoint. The following example creates equal width columns in the large viewport, un-even columns in the medium viewport, and two separate rows at the smallest viewport.
 
 <div class="example">
-    <div class="container">
-	<div class="grid-row">
-	    <div class="xs-12 medium-3 large-6">.xs-12 .medium-3 .large-6</div>
-	    <div class="xs-6 medium-9 large-6">.xs-6 .medium-9 .large-6</div>
+    <div class="tds-container">
+	<div class="tds-grid-row">
+	    <div class="tds-xs-12 tds-medium-3 tds-large-6">.tds-xs-12 .tds-medium-3 .tds-large-6</div>
+	    <div class="tds-xs-6 tds-medium-9 tds-large-6">.tds-xs-6 .tds-medium-9 .tds-large-6</div>
 	</div>
     </div>
 </div>
 
-Notice that the `xs-*` columns add up to more than 12 columns, causing the second column to move below the first in small &amp; xs viewports.
+Notice that the `tds-xs-*` columns add up to more than 12 columns, causing the second column to move below the first in small &amp; xs viewports.
 
 ### Nesting columns
 
 Grid rows can be placed inside columns, in order to nest more columns (no need to repeat the container). Since the grid is fluid, each of the nested columns' widths will still be calculated as a percentage of 12 columns.
 
 <div class="example">
-    <div class="container">
-	<div class="grid-row">
-	    <div class="small-8">
-		<div class="grid-row">
-		    <div class="small-4"><code>.small-4</code></div>
-		    <div class="small-4"><code>.small-4</code></div>
+    <div class="tds-container">
+	<div class="tds-grid-row">
+	    <div class="tds-small-8">
+		<div class="tds-grid-row">
+		    <div class="tds-small-4"><code>.tds-small-4</code></div>
+		    <div class="tds-small-4"><code>.tds-small-4</code></div>
 		</div>
 	    </div>
-	    <div class="small-4"><code>.small-4</code></div>
+	    <div class="tds-small-4"><code>.tds-small-4</code></div>
 	</div>
     </div>
 </div>
 
 ### Ordering columns
 
-The `push-*` and `pull-*` helpers can be used to re-arrange column order.
+The `tds-push-*` and `tds-pull-*` helpers can be used to re-arrange column order.
 
 ```html
-<div class="container">
-    <div class="grid-row">
-	<div class="small-4 push-medium-8"></div>
-	<div class="small-8 pull-medium-4"></div>
+<div class="tds-container">
+    <div class="tds-grid-row">
+	<div class="tds-small-4 tds-push-medium-8"></div>
+	<div class="tds-small-8 tds-pull-medium-4"></div>
     </div>
 </div>
 ```
@@ -254,34 +254,34 @@ The `push-*` and `pull-*` helpers can be used to re-arrange column order.
 In this example, the 4-column box will appear first in small &amp; extra small screens. At the medium breakpoint and above, the order is reversed.
 
 <div class="example">
-    <div class="container">
-	<div class="grid-row">
-	    <div class="small-4 push-medium-8">.small-4 .push-medium-8</div>
-	    <div class="small-8 pull-medium-4">.small-8 .pull-medium-4</div>
+    <div class="tds-container">
+	<div class="tds-grid-row">
+	    <div class="tds-small-4 tds-push-medium-8">.tds-small-4 .tds-push-medium-8</div>
+	    <div class="tds-small-8 tds-pull-medium-4">.tds-small-8 .tds-pull-medium-4</div>
 	</div>
     </div>
 </div>
 
 ### Utility classes
 
-The `hidden-*` classes prevents content from displaying at a certain breakpoint. The `hidden-*-up` classes hide content at a certain breakpoint and all those above.
+The `tds-hidden-*` classes prevents content from displaying at a certain breakpoint. The `tds-hidden-*-up` classes hide content at a certain breakpoint and all those above.
 
 ```html
-<div class="container">
-    <div class="grid-row">
-	<div class="small-4">Always visible</div>
-	<div class="small-4 hidden-medium">Hidden at medium</div>
-	<div class="small-4 hidden-medium-up">Hidden at medium+</div>
+<div class="tds-container">
+    <div class="tds-grid-row">
+	<div class="tds-small-4">Always visible</div>
+	<div class="tds-tds-small-4 tds-hidden-medium">Hidden at medium</div>
+	<div class="tds-small-4 tds-hidden-medium-up">Hidden at medium+</div>
     </div>
 </div>
 ```
 
 <div class="example">
-    <div class="container">
-	<div class="grid-row">
-	    <div class="small-4">Always visible</div>
-	    <div class="small-4 hidden-medium">Hidden at medium</div>
-	    <div class="small-4 hidden-medium-up">Hidden at medium+</div>
+    <div class="tds-container">
+	<div class="tds-grid-row">
+	    <div class="tds-small-4">Always visible</div>
+	    <div class="tds-small-4 hidden-medium">Hidden at medium</div>
+	    <div class="tds-small-4 hidden-medium-up">Hidden at medium+</div>
 	</div>
     </div>
 </div>
@@ -290,4 +290,4 @@ The `hidden-*` classes prevents content from displaying at a certain breakpoint.
 
 ---
 
-See this feature in action on the [grid examples page](/examples/grid.html) and [grid in colours](/example/grid-test.html).
+See this feature in action on the [grid examples page](/examples/grid.html) and [grid in colours](/examples/grid-test.html).

@@ -1,11 +1,11 @@
 extends examples
 
 block content
-  div.container.container--limited-width.type-examples
+  div.tds-container.tds-container--limited-width.type-examples
 
-    form.container.container--limited-width.login-metric
-      div.grid-row
-        div.medium-6.large-5.login-metric__form
+    form.tds-container.tds-container--limited-width.login-metric
+      div.tds-grid-row
+        div.tds-medium-6.tds-large-5.login-metric__form
           h2
             != "Login to TELUS"
             br
@@ -16,9 +16,9 @@ block content
           fieldset.tds-field
             label(for='password') Password
             input(type='password', id='password')
-          div.button-row
+          div.tds-button-row
             button(type='submit').tds-button.tds-button--primary Login
-        div.medium-4.large-5.offset-medium-1.login-metric__copy
+        div.tds-medium-4.tds-large-5.tds-offset-medium-1.login-metric__copy
           h3 New to TELUS Business?
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus mollis tortor eget sagittis.
           p
@@ -26,9 +26,9 @@ block content
           p
             a(href='#').tds-link.tds-link--descent Register now
 
-    form.container.container--limited-width
-      div.grid-row
-        div.field-col
+    form.tds-container.tds-container--limited-width
+      div.tds-grid-row
+        div.tds-field-col
           h2 A wide field
           fieldset.tds-field.tds-field--hinted
             label(for='query') What are you looking for?
@@ -41,13 +41,13 @@ block content
             label.choice
               input(type='checkbox')
               span.tds-choice__text I agree to the Terms and Conditions
-          div.button-row
+          div.tds-button-row
             button(type='submit').tds-button.tds-button--primary Search
 
     hr
 
-    .container.container--limited-width
-      div.grid-row
+    .tds-container.tds-container--limited-width
+      div.tds-grid-row
         div.tds-field-col
           form#greeting-form
             h2 Input states
@@ -61,14 +61,14 @@ block content
                   li.list__item Don't include the quotes
               div.tds-field__control
                 input(type='text', id='hello-world', aria-describedby='hello-world-description')
-            div.button-row
+            div.tds-button-row
               button(type='submit')#greeting-button.tds-button.tds-button--primary Send Greeting
 
     hr
 
-    .container.container--limited-width
-      .grid-row
-        .medium-4
+    .tds-container.tds-container--limited-width
+      .tds-grid-row
+        .tds-medium-4
           form#ten-sides.choice-states-example
             h2 Radio states
             fieldset.tds-field
@@ -82,7 +82,7 @@ block content
               label(for='octagon').tds-choice
                 input(type='radio', id='octagon' name='ten-sided-shape', value='octagon')
                 span.tds-choice__text Octagon
-        .medium-6.offset-medium-2
+        .tds-medium-6.tds-offset-medium-2
           form#four-sides.choice-states-example
             h2 Checkbox states
             fieldset.tds-field

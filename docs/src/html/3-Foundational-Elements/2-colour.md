@@ -19,9 +19,9 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 
 ---
 
-<div class="container colors">
-    <div class="grid-row">
-	<div class="medium-4">
+<div class="tds-container colors">
+    <div class="tds-grid-row">
+	<div class="tds-medium-4">
 	    <span class="color-preview" style="background-color: rgb(36,135,0);"></span>
 	    <p>
 		<strong>Forest Green</strong>
@@ -36,7 +36,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		Usage: Button backgrounds and links
 	    </p>
 	</div>
-  <div class="medium-4">
+  <div class="tds-medium-4">
   	    <span class="color-preview" style="background-color: rgb(75,40,109);"></span>
   	    <p>
   		<strong>Grape</strong>
@@ -51,7 +51,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   		Usage: Headings, button background/outline, links
   	    </p>
   </div>
-  <div class="medium-4">
+  <div class="tds-medium-4">
   	    <span class="color-preview" style="background-color: rgb(42, 44, 46);"></span>
   	    <p>
   		<strong>Shark</strong>
@@ -68,9 +68,9 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   </div>
 </div>
 
-<div class="container colors">
-    <div class="grid-row">
-  <div class="medium-4">
+<div class="tds-container colors">
+    <div class="tds-grid-row">
+  <div class="tds-medium-4">
 	    <span class="color-preview" style="background-color: rgb(23,122,0);"></span>
 	    <p>
 		<strong>Japanese Laurel</strong>
@@ -85,7 +85,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		Usage: Button outline
 	    </p>
 	</div>
-  <div class="medium-4">
+  <div class="tds-medium-4">
 	    <span class="color-preview" style="background-color: rgb(110,59,161);"></span>
 	    <p>
 		<strong>Royal Purple</strong>
@@ -100,7 +100,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		Usage: Pilters and badges
 	    </p>
 	</div>
-  <div class="medium-4">
+  <div class="tds-medium-4">
     <span class="color-preview" style="background-color: rgb(84,89,95);"></span>
     <p>
   <strong>Shuttle Grey</strong>
@@ -116,8 +116,8 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     </p>
   </div>
     </div>
-    <div class="grid-row">
-  <div class="medium-4">
+    <div class="tds-grid-row">
+  <div class="tds-medium-4">
   	    <span class="color-preview" style="background-color: rgb(255, 255, 255);"></span>
   	    <p>
   		<strong>White</strong>
@@ -140,11 +140,11 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 
 ---
 
-<div class="container colors">
-    <div class="grid-row">
+<div class="tds-container colors">
+    <div class="tds-grid-row">
 
 
-	<div class="medium-4">
+	<div class="tds-medium-4">
 	    <span class="color-preview" style="background-color: rgb(106,110,116);"></span>
 	    <p>
 		<strong>Raven</strong>
@@ -159,7 +159,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		Usage: Messaging/body text
 	    </p>
     </div>
-  <div class="medium-4">
+  <div class="tds-medium-4">
       <span class="color-preview" style="background-color: rgb(193,35,53);"></span>
       <p>
     <strong>Cardinal</strong>
@@ -174,7 +174,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     Usage: Error body text and icons
       </p>
   </div>
-  <div class="medium-4">
+  <div class="tds-medium-4">
 	    <span class="color-preview" style="background-color: rgb(242,239,244);"></span>
 	    <p>
 		<strong>White Lilac</strong>
@@ -189,8 +189,8 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		Usage: Branded messaging background
 	    </p>
 	</div>
-    <div class="grid-row">
-  <div class="medium-4">
+    <div class="tds-grid-row">
+  <div class="tds-medium-4">
 	    <span class="color-preview" style="background-color: rgb(216,216,216);"></span>
 	    <p>
 		<strong>Gainsboro</strong>
@@ -205,7 +205,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		Usage: Horizontal, vertical and wave dividers
 	    </p>
 	</div>
-  <div class="medium-4">
+  <div class="tds-medium-4">
       <span class="color-preview" style="background-color: rgb(255,246,248);"></span>
       <p>
     <strong>Lavender Blush</strong>
@@ -220,7 +220,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     Usage: Notification/error messaging background
       </p>
   </div>
-  <div class="medium-4">
+  <div class="tds-medium-4">
 	    <span class="color-preview" style="background-color: rgb(244,249,242);"></span>
 	    <p>
 		<strong>Panache</strong>
@@ -236,8 +236,8 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 	    </p>
 	</div>
     </div>
-    <div class="grid-row">
-  <div class="medium-4">
+    <div class="tds-grid-row">
+  <div class="tds-medium-4">
       <span class="color-preview" style="background-color: rgb(247,247,248);"></span>
       <p>
     <strong>Athens Grey</strong>

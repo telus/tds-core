@@ -1,7 +1,7 @@
 .colors {
   text-align: left;
 
-  .medium-4 {
+  .tds-medium-4 {
     padding-top: 2rem;
   }
 }
@@ -15,29 +15,30 @@
   width: 90px;
 }
 
-.grid-pink {
-  background-color: pink;
+.example-grid-lavender {
+  background-color: #fff6f8;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .grid-red {
-  background-color: red;
+  background-color: #c12335;
   color: #fff;
 }
 
-.grid-orange {
-  background-color: orange;
+.example-grid-panache {
+  background-color: #f4f9f2;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.grid-yellow {
-  background-color: yellow;
+.example-grid-purple {
+  background-color: #7841b0;
+  color: #fff;
 }
 
 .grid-green {
-  background-color: green;
+  background-color: #248700;
   color: #fff;
 }
 

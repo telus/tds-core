@@ -27,13 +27,13 @@ class StepsExample extends React.Component {
 
   render() {
     return (
-      <div className="grid-row">
+      <div className="tds-grid-row">
         <Steps current={this.state.currentStep} currentStatus={this.state.currentStatus}>
           <Steps.Step label="Login" />
           <Steps.Step label="Purchase" />
           <Steps.Step label="Checkout" />
         </Steps>
-        <div className="offset-large-5">
+        <div className="tds-offset-large-5">
           <button className="tds-button tds-button--primary" onClick={this.nextStep}>Next Step</button>
         </div>
       </div>

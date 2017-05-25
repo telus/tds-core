@@ -30,6 +30,22 @@
 * `hint` changed to `tds-hint`
 * `hint__trigger` changed to `tds-hint__trigger`
 * `hint__text` changed to `tds-hint__text`
+* `container` changed to `tds-container`
+* `container--limited-width` changed to `tds-container--limited-width`
+* `container--fluid` changed to `tds-container--fluid`
+* `button-row` changed to `tds-button-row`
+* `field-col` changed to `tds-fields-col`
+* `grid-row` changed to `tds-grid-row`
+* `xs-*` changed to `tds-xs-*`
+* `small-*` changed to `tds-small-*`
+* `medium-*` changed to `tds-medium-*`
+* `large-*` changed to `tds-large-*`
+* `xl-*` changed to `tds-xl-*`
+* `offset-{xs|small|medium|large|xl}-*` changed to `tds-offset-{xs|small|medium|large|xl}-*`
+* `push-{xs|small|medium|large|xl}-*` changed to `tds-push-{xs|small|medium|large|xl}-*`
+* `pull-{xs|small|medium|large|xl}-*` changed to `tds-pull-{xs|small|medium|large|xl}-*`
+* `hidden-{xs|small|medium|large|xl}` changed to `tds-hidden-{xs|small|medium|large|xl}`
+* `hidden-{xs|small|medium|large|xl}-up` changed to `tds-hidden-{xs|small|medium|large|xl}-up`
 
 
 ## Upgrading to v0.15.x
