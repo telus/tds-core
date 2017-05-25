@@ -113,3 +113,7 @@ The contextual prefix &amp; suffix can be used together or separately. They're a
     document.getElementById('selectorCounterExample-noprops')
   );
 </script>
+
+```js
+<SelectorCounter />
+```

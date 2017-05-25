@@ -136,23 +136,10 @@
     no-repeat,
     no-repeat,
     repeat-x;
-  text-shadow:
-    .03em 0 $bg-color,
-    -.03em 0 $bg-color,
-    0 .03em $bg-color,
-    0 -.03em $bg-color,
-    .06em 0 $bg-color,
-    -.06em 0 $bg-color,
-    .09em 0 $bg-color,
-    -.09em 0 $bg-color,
-    .12em 0 $bg-color,
-    -.12em 0 $bg-color,
-    .15em 0 $bg-color,
-    -.15em 0 $bg-color;
   background-position:
-    0 95%,
-    100% 95%,
-    0 95%;
+    0 100%,
+    100% 100%,
+    0 100%;
   text-decoration: none;
 }
 
@@ -171,5 +158,45 @@
     clear: both;
     content: '';
     display: table;
+  }
+}
+
+@mixin chevron-links($color) {
+  text-decoration: none;
+  color: $color;
+  font-weight: 500;
+
+  &:hover {
+    box-shadow: none;
+
+    // Deprecated 0.16.0
+    .icon {
+      left: 4px;
+    }
+
+    &::after {
+      font-family: "TELUS Core Icons";
+      content: "\f107";
+      left: 4px;
+    }
+  }
+
+  &::after {
+    font-family: "TELUS Core Icons";
+    content: "\f107";
+    position: relative;
+    color: inherit;
+    transition: color .2s, left .3s;
+    left: -2px;
+    margin-left: 2px;
+  }
+
+  // Deprecated 0.16.0
+  .icon {
+    position: relative;
+    color: inherit;
+    transition: color .2s, left .3s;
+    left: -2px;
+    margin-left: 2px;
   }
 }

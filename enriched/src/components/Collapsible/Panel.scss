@@ -9,7 +9,7 @@
     border-radius: 0;
     display: block;
     font-weight: 400;
-    font-size: 19px;
+    font-size: rem(20px);
     margin: 0;
     outline: 0;
     padding: 20px 0;
@@ -18,6 +18,11 @@
     text-decoration: none;
     width: 100%;
     transition: all 0.3s ease-in;
+    border: 0;
+    cursor: pointer;
+    letter-spacing: .2px;
+    line-height: 1.2;
+    font-family: $font-telus;
 
     .icon{
       color: $color-forest-green;
@@ -42,7 +47,7 @@
     }
 
     &::before {
-      background: #d2d3d5;
+      background: $color-gainsboro;
       bottom: 0;
       height: 1px;
     }
@@ -90,10 +95,25 @@
       }
     }
 
-    &--first.collapsible-panel__label--disabled {
+
+
+    &--first {
       border-top: 1px solid $color-gainsboro;
       @include alt-state {
+        border-top: 1px solid $color-shark;
+        .icon {
+          color: $color-forest-green;
+        }
+        &::before {
+          background: $color-shark;
+        }
+      }
+
+      &.collapsible-panel__label--disabled {
         border-top: 1px solid $color-gainsboro;
+        @include alt-state {
+          border-top: 1px solid $color-gainsboro;
+        }
       }
     }
 
@@ -126,7 +146,7 @@
     overflow: hidden;
 
     &::before {
-      background: #d2d3d5;
+      background: $color-gainsboro;
       bottom: 0;
       content: '';
       height: 1px;

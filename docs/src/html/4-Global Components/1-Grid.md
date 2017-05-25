@@ -29,7 +29,7 @@ const MyComponent = (props) => {
 
 ---
 
-_See the docs on [thorium's CSS grid](/3-Foundations/3-grid.html) to learn more
+_See the docs on [TDS' CSS grid](/3-Foundational-Elements/4-grid.html) to learn more
 about grid structure and attributes._
 
 ---

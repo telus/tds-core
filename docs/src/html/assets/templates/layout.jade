@@ -14,22 +14,28 @@ html(lang='en')
 
       link(rel='stylesheet', href='/assets/css/prism.css')
       link(rel='stylesheet', href='/assets/bundles/docs.css')
+      link(rel='favicon', sizes='32x32' href='/assets/images/TELUS-favicon-32.png')
+      link(rel='favicon', sizes='128x128' href='/assets/imagesTELUS-favicon-128.png')
+      link(rel='apple-touch-icon', href='apple-touch-icon.png')
+      link(rel='apple-touch-icon', sizes='72x72' href='/assets/imagesTELUS-apple-touch-icon-72.png')
+      link(rel='apple-touch-icon', sizes='114x114' href='/assets/imagesTELUS-apple-touch-icon-114.png')
+      link(rel='apple-touch-icon', sizes='144x144' href='/assets/imagesTELUS-apple-touch-icon-144.png')
 
   body(class=bodyclass)
     header.docs-header
-      .container.container--limited-width.docs-header__container
-        button.button.docs-header__toggle
+      .tds-container.tds-container--limited-width.docs-header__container
+        button.tds-button--plain.docs-header__toggle
           i.icon.icon-core-hamburger.docs-header__icon
             span.accessible-hide Toggle Menu
-        a.docs-header__logo(href="#nav-link")
+        a.docs-header__logo(href="/")
           img(src="/assets/images/logo.png" alt="")
 
-    main.container.container--limited-width
-      div.grid-row
-        div.large-9.push-large-3
+    main.tds-container.tds-container--limited-width
+      div.tds-grid-row
+        div.tds-large-9.tds-push-large-3
           block content
             h2 Welcome to the TELUS Design System!
-        nav.navigation.large-3.pull-large-9
+        nav.navigation.tds-large-3.tds-pull-large-9
           a(id="nav-link" name="nav-link" class="navigation__local-anchor--hidden")
           include nav.jade
 

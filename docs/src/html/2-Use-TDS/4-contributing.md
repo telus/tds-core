@@ -7,7 +7,7 @@ template: doc.jade
 
 ---
 
-We're so glad you're thinking about contributing to the TELUS Design System - Thorium-Core project! If you're unsure about anything, just ask — or submit your issue or pull request anyway. The worst that can happen is we'll politely ask you to change something. We appreciate all friendly contributions.
+We're so glad you're thinking about contributing to the TELUS Design System! If you're unsure about anything, just ask — or submit your issue or pull request anyway. The worst that can happen is we'll politely ask you to change something. We appreciate all friendly contributions.
 
 If you have any questions or want to read more, check out the [Design System website](http://tds.telus.digital/), or [shoot us an email](mailto:alexandra.fedyk@telus.com).
 
@@ -117,7 +117,7 @@ git push origin feature/adding-a-widget
 
 When a branch is ready for a PR, it's helpful to consolidate many small commits into a single change with a descriptive commit message. This is done by [rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) your branch on master, then squashing all its commits into one, at which point you can amend the final commit message.
 
-Thorium admins are also able to consolidate the commits from a PR via Github, by clicking the [squash and merge](https://github.com/blog/2141-squash-your-commits) button.
+TDS admins are also able to consolidate the commits from a PR via Github, by clicking the [squash and merge](https://github.com/blog/2141-squash-your-commits) button.
 
 Consolidating changes makes for a clean, readable history in master, and neatly-packaged changes which can be moved to release branches.
 
@@ -140,14 +140,16 @@ Consolidating changes makes for a clean, readable history in master, and neatly-
     * Definition of **solution** (What it is)
     * Design Rationale for usage of **solution** (How it's used)
 
+Please refer to the [TDS Design contribution process](https://docs.google.com/a/telus.com/drawings/d/1MQ1fxF5SHEFLmatWzmthpHPu-DPuEohZCz6zeu6C-BA/edit?usp=sharing) when considering a component/block contribution.
+
 ### Development Criteria:
 
 * Code for proposed solution must meet the below criteria to be considered for contribution:
     * Code passes all automated quality checks, such as linting and unit testing
     * Code is accompanied by automated tests wherever applicable
-    * Changes are either backwards-compatible, or target the appropriate [semantically versioned](http://localhost:8080/5-Contribution/2-contributing.html#versioning) release
+    * Changes are either backwards-compatible, or target the appropriate [semantically versioned](/2-Use-TDS/1-getting-started.html#versioning) release
     * CSS follows [BEM naming conventions](https://en.bem.info/methodology/)
-    * JavaScript follows [AirBnB style guidelines](https://github.com/airbnb/javascript) and is written as ES6
+    * JavaScript follows [AirBnB style guidelines](https://github.com/airbnb/javascript) and is written as ES2015
 
 ### Process
 
@@ -163,13 +165,13 @@ Consolidating changes makes for a clean, readable history in master, and neatly-
         * Team submits designed and/or coded **solution** to Design Guild with all criteria fulfilled
 3. Design Guild reviews submitted **solution** and approves, or recommends more iteration.
 4. If **solution** is approved:
-    * Design Guild evaluates the following and provides recommendations for consumption into Thorium
+    * Design Guild evaluates the following and provides recommendations for consumption into TDS
         * Impact on customers and their users
         * Level of effort to refactor and implement existing solution vs implement new **solution** (based on timing, available resources, etc)
         * Global impact across site (style, experience packages, etc)
-    * Thorium consumes **solution**
+    * TDS consumes **solution**
         * Sketch fragment is added into master Sketch file
-        * Pull request for coded **solutions** is made on Git; code is reviewed, commented and ultimately incorporated into Thorium master.
+        * Pull request for coded **solutions** is made on Git; code is reviewed, commented and ultimately incorporated into TDS master.
 5. If **solution** is not approved (does not meet above criteria):
     * Team responsible for updating solution based on Design Guild Feedback
     * Team resubmits **solution** to Design Guild for review

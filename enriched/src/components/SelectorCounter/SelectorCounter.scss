@@ -27,7 +27,7 @@
     background: transparent;
 
     &:last-child {
-      top: 34px;
+      top: 30px;
     }
 
     &:disabled {
@@ -63,7 +63,7 @@ input.selector-counter__value {
   font-size: rem(44px);
   line-height: rem(44px);
   padding: 0 35px 0 25px;
-  height: 60px;
+  height: 52px;
   max-width: 100%;
   -moz-appearance:textfield;
 

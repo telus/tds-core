@@ -10,13 +10,13 @@ exports[`VideoBlock matches snapshot 1`] = `
     className="video-block"
   >
     <div
-      className="container container--limited-width"
+      className="tds-container tds-container--limited-width"
     >
       <div
-        className="grid-row"
+        className="tds-grid-row"
       >
         <div
-          className="medium-8"
+          className="tds-medium-8"
         >
           <div
             className="video-container-block"

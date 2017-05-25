@@ -1,5 +1,53 @@
 # Upgrading Guide
 
+## Upgrading to v0.16.x
+
+* `button-green` changed to `button--green`
+* `button-purple` changed to `button--purple`
+* `button-green--outlined` changed to `button--green button--outlined`
+* `button-purple--outlined` changed to `button--purple button--outlined`
+* `button-inverted` changed to `button--inverted`
+* `button-inverted--outlined` changed to `button--inverted button--outlined`
+* `button-link` changed to `button--link` and now also includes the chevron and can be made purple or green with the revised classes mentioned above
+* to disable a but you will have to use `button--disable` together with `[disabled]` attribute for functionality
+* `link` changed to `tds-link`
+* `link--descent` changed to `tds-link--descent`
+* `link--inverted` changed to `tds-link--inverted`
+* `chevron-link` (i.e. purple chevron link) changed to `tds-chevron-link--secondary`
+* `chevron-link--secondary` (i.e. green chevron link) changed to `tds-chevron-link--primary` and you need to remove the icon markup
+* to get the styles from `chevron-link--inverted` you now need to use `tds-chevron-link tds-chevron-link--inverted`
+* removed `subhead`, use `heading-3` instead (Deprecated in v0.5.0, 10/18/16)
+* removed `subhead--small`, use `heading-4` instead (Deprecated in v0.5.0, 10/18/16)
+* `field` changed to `tds-field`
+* `field--error` changed to `tds-field--error`
+* `field--success` changed to `tds-field--success`
+* `helper` changed to `tds-helper`
+* `choice` changed to `tds-choice`
+* `choice--error` changed to `tds-choice--error`
+* `choice__text` changed to `tds-choice__text`
+* `field--hinted` changed to `tds-field--hinted`
+* `field__control` changed to `tds-field__control`
+* `hint` changed to `tds-hint`
+* `hint__trigger` changed to `tds-hint__trigger`
+* `hint__text` changed to `tds-hint__text`
+* `container` changed to `tds-container`
+* `container--limited-width` changed to `tds-container--limited-width`
+* `container--fluid` changed to `tds-container--fluid`
+* `button-row` changed to `tds-button-row`
+* `field-col` changed to `tds-fields-col`
+* `grid-row` changed to `tds-grid-row`
+* `xs-*` changed to `tds-xs-*`
+* `small-*` changed to `tds-small-*`
+* `medium-*` changed to `tds-medium-*`
+* `large-*` changed to `tds-large-*`
+* `xl-*` changed to `tds-xl-*`
+* `offset-{xs|small|medium|large|xl}-*` changed to `tds-offset-{xs|small|medium|large|xl}-*`
+* `push-{xs|small|medium|large|xl}-*` changed to `tds-push-{xs|small|medium|large|xl}-*`
+* `pull-{xs|small|medium|large|xl}-*` changed to `tds-pull-{xs|small|medium|large|xl}-*`
+* `hidden-{xs|small|medium|large|xl}` changed to `tds-hidden-{xs|small|medium|large|xl}`
+* `hidden-{xs|small|medium|large|xl}-up` changed to `tds-hidden-{xs|small|medium|large|xl}-up`
+
+
 ## Upgrading to v0.15.x
 
 * Revised the offset implementation below and after user feedback decided to implemented like Bootstrap does it, because it is much cleaner. So, offsets are now inherited from smaller viewports again and if you need to reset it on a particular viewport then we have the following new classes available: `offset-small-0`, `offset-medium-0`, `offset-large-0` and `offset-xl-0`.

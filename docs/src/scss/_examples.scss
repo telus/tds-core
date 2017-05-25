@@ -1,7 +1,7 @@
 // Styling for examples within documentation pages.
 
 .example {
-  .grid-row {
+  .tds-grid-row {
     margin-bottom: 2rem;
 
     > div {
@@ -17,8 +17,19 @@
   }
 
   &--inverted {
-    background: $color-grape;
     padding: 2rem;
+  }
+
+  &--non-inverted {
+    padding: 2rem 0;
+  }
+
+  &--primary {
+    background-color: $color-forest-green;
+  }
+
+  &--secondary {
+    background-color: $color-grape;
   }
 }
 
@@ -27,7 +38,9 @@
 }
 
 .type-examples {
-  .grid-row {
+  padding-top: 2rem;
+
+  .tds-grid-row {
     margin-bottom: 3rem;
   }
 

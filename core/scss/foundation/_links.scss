@@ -1,0 +1,113 @@
+//
+// Links
+//
+
+.tds-link,
+a {
+  &:link,
+  &:visited {
+    color: $color-link;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+.tds-link {
+  &--descent {
+    &:link,
+    &:visited {
+      @include clear-descenders($color-link, $color-white);
+    }
+  }
+}
+
+.tds-link {
+  &--primary {
+    &:link,
+    &:visited {
+      color: $color-forest-green;
+    }
+
+    &:hover {
+      color: $color-japanese-laurel;
+    }
+
+    &.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-forest-green, $color-athens-grey);
+      }
+    }
+
+    &.tds-link--inverted.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-athens-grey, $color-forest-green);
+      }
+    }
+  }
+
+  &--secondary {
+    &:link,
+    &:visited {
+      color: $color-grape;
+    }
+
+    &:hover {
+      color: $color-royal-purple;
+    }
+
+    &.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-grape, $color-athens-grey);
+      }
+    }
+
+    &.tds-link--inverted.tds-link--descent {
+      &:link,
+      &:visited {
+        @include clear-descenders($color-athens-grey, $color-grape);
+      }
+    }
+  }
+
+  &--inverted {
+    &:link,
+    &:visited {
+      color: $color-athens-grey;
+    }
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.tds-chevron-link {
+  display: inline-block;
+
+  &--primary {
+    &:link,
+    &:visited {
+      @include chevron-links($color-japanese-laurel);
+    }
+  }
+
+  &--secondary {
+    &:link,
+    &:visited {
+      @include chevron-links($color-grape);
+    }
+  }
+
+  &--inverted {
+    &:link,
+    &:visited {
+      @include chevron-links($color-athens-grey);
+    }
+  }
+}

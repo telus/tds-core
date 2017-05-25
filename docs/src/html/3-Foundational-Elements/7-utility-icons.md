@@ -7,9 +7,9 @@ template: doc.jade
 
 ---
 
-<div class="container">
-    <div class="grid-row">
-	<div class="medium-4">
+<div class="tds-container">
+    <div class="tds-grid-row">
+	<div class="tds-medium-4">
 	    <h3>Navigational</h3>
 	    <p>
 		<i class="icon icon-core-hamburger icon--fw"></i>
@@ -41,7 +41,7 @@ template: doc.jade
 		`expander`
 	    </p>
 	</div>
-	<div class="medium-4">
+	<div class="tds-medium-4">
 	    <h3>Selection</h3>
 	    <p>
 		<i class="icon icon-core-chevron icon--fw"></i>
@@ -68,7 +68,7 @@ template: doc.jade
 		`minus`
 	    </p>
 	</div>
-	<div class="medium-4">
+	<div class="tds-medium-4">
 	    <h3>Instructive</h3>
 	    <p>
 		<i class="icon icon-core-question-mark-circle icon--fw"></i><br>
