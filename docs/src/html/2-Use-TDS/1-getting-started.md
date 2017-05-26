@@ -7,7 +7,7 @@ Welcome to the TELUS Design System. We're glad you're planning on using the TDS 
 
 * [Usage criteria](#usage-criteria)
 * [Getting TDS](#getting-tds)
-* [The TDS tech stack](#the-tds-stack)
+* [The TDS tech stack](#the-tds-tech-stack)
 * [Choosing CDN vs. NPM](#choosing-cdn-vs-npm)
 * [Using TDS Core](#using-tds-core)
 * [Using TDS Enriched via CDN](#using-tds-enriched-via-cdn)
