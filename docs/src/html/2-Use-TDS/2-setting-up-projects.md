@@ -5,7 +5,7 @@ template: doc.jade
 
 ### Designers
 * [For designers](#for-designers)
-* [TDS.sketch !!THORIUM_VERSION!!](#TDS.sketch)
+* [Sketch File !!THORIUM_VERSION!!](#sketch-file)
 * [Design resources](#design-resources)
 
 ### Dev
@@ -30,7 +30,7 @@ The [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch) file contai
 * **Step 3**: Download [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch).
 * **Step 4**: Identify your needs by considering the user and outcome you're designing for—these considerations will help inform scope and the milestones and/or deliverables required.
 
-## TDS.sketch
+## Sketch File
 
 ---
 
