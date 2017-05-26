@@ -284,6 +284,7 @@ $radio-checked-stroke-size: 6px;
   + .tds-choice__text {
     position: relative;
     padding-left: 2em;
+    display: inline-block;
 
     &::before {
       content: '';
@@ -332,6 +333,7 @@ $radio-checked-stroke-size: 6px;
   + .tds-choice__text {
     &::before {
       border-radius: 50%;
+      margin-top: 5px;
     }
   }
 }
@@ -377,6 +379,7 @@ $radio-checked-stroke-size: 6px;
       font-family: $font-icons;
       font-size: 1rem;
       text-align: center;
+      margin-top: 4px;
     }
   }
 
