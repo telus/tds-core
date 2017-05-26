@@ -205,6 +205,8 @@ This example lays out two content blocks, each spanning 3 columns, with the fina
     </div>
 </div>
 
+There is also a reset class for each viewport size, e.g.: `tds-offset-small-0`, `tds-offset-medium-0`.
+
 ### Combining columns
 
 Column helpers can also be combined to customize the width at each breakpoint. The following example creates equal width columns in the large viewport, un-even columns in the medium viewport, and two separate rows at the smallest viewport.
@@ -261,6 +263,8 @@ In this example, the 4-column box will appear first in small &amp; extra small s
 	</div>
     </div>
 </div>
+
+There is also a reset class for each viewport size, e.g.: `tds-push-medium-0`, `tds-pull-medium-0`.
 
 ### Utility classes
 
