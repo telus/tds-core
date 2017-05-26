@@ -47,7 +47,7 @@ class Panel extends Component {
 
     return (
       <div className={collapsePanelClassName}>
-        <span aria-live="polite" className="accessible-hide">{isActive ? 'expanded' : 'collapsed'}</span>
+        <span aria-live="polite" className="tds-accessible-hide">{isActive ? 'expanded' : 'collapsed'}</span>
         <button onClick={onPanelClick} aria-expanded={isActive ? 'true' : 'false'} className={collapsePaneLabelClassName}>
           <span className="collapsible-panel__header">{ header }</span>
           <span className="collapsible-panel__icon">

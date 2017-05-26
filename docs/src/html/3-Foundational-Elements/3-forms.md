@@ -685,7 +685,7 @@ Hints provide information a user may need to complete a form field. While a labe
     <input type="text" id="hinted-field" aria-describedby="some-hint">
     <div class="tds-hint tds-hint--active">
 	<button class="tds-button--plain tds-hint__trigger" aria-controls="some-hint">
-	    <span class="accessible-hide">Toggle helper text visibility</span>
+	    <span class="tds-accessible-hide">Toggle helper text visibility</span>
 	</button>
 	<span id="some-hint" class="tds-hint__text" aria-role="tooltip" aria-hidden="false">
 	    This text describes the field.
@@ -699,7 +699,7 @@ Hints provide information a user may need to complete a form field. While a labe
     <input type="text" id="hinted-field" aria-describedby="some-hint">
     <div class="tds-hint tds-hint--active">
 	<button class="tds-button-plain tds-hint__trigger" aria-controls="some-hint">
-	    <span class="accessible-hide">Toggle helper text visibility</span>
+	    <span class="tds-accessible-hide">Toggle helper text visibility</span>
 	</button>
 	<span id="some-hint" class="tds-hint__text" aria-role="tooltip" aria-hidden="false">
 	    This text describes the field.

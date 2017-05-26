@@ -5,10 +5,10 @@ function Icon(props) {
   const { glyph, variant, fixedWidth, className, children, ...extraProps } = props;
 
   const classes = [
-    'icon',
-    `icon-core-${glyph}`,
-    fixedWidth ? 'icon--fw' : null,
-    variant ? `icon--${variant}` : null,
+    'tds-icon',
+    `tds-icon-core-${glyph}`,
+    fixedWidth ? 'tds-icon--fw' : null,
+    variant ? `tds-icon--${variant}` : null,
     className
   ];
 
