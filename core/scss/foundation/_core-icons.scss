@@ -39,35 +39,25 @@ $core-icon-codepoints: (
   @return map-get($core-icon-codepoints, $name);
 }
 
-.icon {
+.tds-icon {
   @include core-icon;
 
-  color: $color-icon-primary;
   transition: color .1s linear;
 
-  &:hover {
-    color: $color-icon-primary-hover
+  &--primary {
+    color: $color-icon-secondary;
   }
 
   &--secondary {
-    color: $color-icon-secondary;
-
-    &:hover {
-      color: $color-icon-secondary-hover;
-    }
+    color: $color-icon-primary;
   }
 
-  &--error,
-  &--error:hover {
+  &--error {
     color: $color-cardinal;
   }
 
   &--disabled {
     color: $color-icon-disabled;
-
-    &--disabled:hover {
-      color: $color-icon-disabled-hover;
-    }
   }
 
   &--fw {
@@ -77,7 +67,7 @@ $core-icon-codepoints: (
 }
 
 @each $name, $codepoint in $core-icon-codepoints {
-  .icon-core-#{$name}::before {
+  .tds-icon-core-#{$name}::before {
     content: $codepoint;
   }
 }
@@ -93,18 +83,18 @@ $core-icon-codepoints: (
   }
 }
 
-.icon-core-alert,
-.icon-core-exclamation-point-circle,
-.icon-core-incomplete {
+.tds-icon-core-alert,
+.tds-icon-core-exclamation-point-circle,
+.tds-icon-core-incomplete {
   @include icon-fixed-color($color-cardinal);
 }
 
-.icon-core-checkmark {
+.tds-icon-core-checkmark {
   @include icon-fixed-color($color-forest-green);
 }
 
-.icon-core-expander,
-.icon-core-help,
-.icon-core-question-mark-circle {
+.tds-icon-core-expander,
+.tds-icon-core-help,
+.tds-icon-core-question-mark-circle {
   @include icon-fixed-color($color-shuttle-grey);
 }

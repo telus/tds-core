@@ -49,6 +49,7 @@ See the [Utility Icons](/3-Foundational-Elements/7-utility-icons.html) page for 
 ### Icons with color variants:
 
 <span id="icon-spyglass-noVariant"></span>
+<span id="icon-spyglass-primary"></span>
 <span id="icon-spyglass-secondary"></span>
 <span id="icon-spyglass-disabled"></span>
 <span id="icon-spyglass-error"></span>
@@ -56,6 +57,10 @@ See the [Utility Icons](/3-Foundational-Elements/7-utility-icons.html) page for 
   ReactDOM.render(
     <Thorium.Icon glyph="spyglass" />,
     document.getElementById('icon-spyglass-noVariant')
+  );
+  ReactDOM.render(
+    <Thorium.Icon glyph="spyglass" variant="primary" />,
+    document.getElementById('icon-spyglass-primary')
   );
   ReactDOM.render(
     <Thorium.Icon glyph="spyglass" variant="secondary" />,
@@ -73,6 +78,7 @@ See the [Utility Icons](/3-Foundational-Elements/7-utility-icons.html) page for 
 
 ```js
 <Icon glyph='spyglass' />
+<Icon glyph='spyglass' variant='primary' />
 <Icon glyph='spyglass' variant='secondary' />
 <Icon glyph='spyglass' variant='disabled' />
 <Icon glyph='spyglass' variant='error' />
@@ -82,11 +88,17 @@ See the [Utility Icons](/3-Foundational-Elements/7-utility-icons.html) page for 
 
 <span id="icon-spyglass-fixedWidth"></span>Hello
 <br>
-<span id="icon-chevron-secondary-fixedWidth"></span>Goodnight
+<span id="icon-chevron-primary-fixedWidth"></span>Lorem
+<br>
+<span id="icon-chevron-secondary-fixedWidth"></span>Ipsum
 <script type="text/babel">
   ReactDOM.render(
     <Thorium.Icon glyph="spyglass" fixedWidth="true" />,
     document.getElementById('icon-spyglass-fixedWidth')
+  );
+  ReactDOM.render(
+    <Thorium.Icon glyph="chevron" variant="primary" fixedWidth="true" />,
+    document.getElementById('icon-chevron-primary-fixedWidth')
   );
   ReactDOM.render(
     <Thorium.Icon glyph="chevron" variant="secondary" fixedWidth="true" />,
@@ -96,6 +108,7 @@ See the [Utility Icons](/3-Foundational-Elements/7-utility-icons.html) page for 
 
 ```js
 <Icon glyph='spyglass' fixedWidth />
+<Icon glyph='chevron' variant='primary' fixedWidth />
 <Icon glyph='chevron' variant='secondary' fixedWidth />
 ```
 
@@ -113,6 +126,6 @@ Icons also accept children, if you'd like to add screen-readable content:
 
 ```js
 <Icon glyph='plus'>
-  <span className='accessible-hide'>button to add more</span>
+  <span className='tds-accessible-hide'>button to add more</span>
 </Icon>
 ```
