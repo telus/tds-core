@@ -23,14 +23,18 @@ The underline style distinguishes these as interactive elements.
 ### Standard links
 
 <div class="example example--type">
-    <a href="#" class="tds-link tds-link--descent">View the current page</a>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel velit massa. Sed <a href="#" class="tds-link tds-link--descent">dapibus risus</a> ac augue laoreet, ac venenatis tellus lobortis.</p>
 </div>
 
 ```html
-<a href="#" class="tds-link tds-link--descent">View the current page</a>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel
+  velit massa. Sed <a href="#" class="tds-link tds-link--descent">dapibus</a>
+   risus ac augue laoreet, ac venenatis tellus lobortis.
+</p>
 ```
 
-### Primary links
+### Primary Color links
 
 <div class="example example--type">
     <a href="#" class="tds-link tds-link--primary tds-link--descent">View the current page</a>
@@ -40,7 +44,7 @@ The underline style distinguishes these as interactive elements.
 <a href="#" class="tds-link tds-link--primary tds-link--descent">View the current page</a>
 ```
 
-### Secondary links
+### Secondary Color links
 
 <div class="example example--type">
     <a href="#" class="tds-link tds-link--secondary tds-link--descent">View the current page</a>
@@ -50,7 +54,7 @@ The underline style distinguishes these as interactive elements.
 <a href="#" class="tds-link tds-link--secondary tds-link--descent">View the current page</a>
 ```
 
-### Primary Inverted links
+### Inverted links on Primary Color Background
 
 <div class="example example--inverted example--primary">
     <a href="#" class="tds-link tds-link--primary tds-link--inverted tds-link--descent">
@@ -80,7 +84,7 @@ The underline style distinguishes these as interactive elements.
 </a>
 ```
 
-### Secondary Inverted links
+### Inverted links on Secondary Color Background
 <div class="example example--inverted example--secondary">
     <a href="#" class="tds-link tds-link--secondary tds-link--inverted tds-link--descent">
         Lorem ipsum
@@ -122,7 +126,7 @@ You'll notice the text links include a `tds-link--descent` modifier. This class 
 
 ---
 
-### Primary chevrons
+### Primary Color Chevron Links
 
 <a href="#" class="tds-chevron-link--primary">
     Large/link
@@ -151,7 +155,7 @@ You'll notice the text links include a `tds-link--descent` modifier. This class 
 </a>
 ```
 
-### Secondary chevrons
+### Secondary Color Chevron Links
 
 <a href="#" class="tds-chevron-link--secondary">
     Large/link

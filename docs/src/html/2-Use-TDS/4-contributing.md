@@ -9,7 +9,7 @@ template: doc.jade
 
 We're so glad you're thinking about contributing to the TELUS Design System! If you're unsure about anything, just ask — or submit your issue or pull request anyway. The worst that can happen is we'll politely ask you to change something. We appreciate all friendly contributions.
 
-If you have any questions or want to read more, check out the [Design System website](http://tds.telus.digital/), or [shoot us an email](mailto:alexandra.fedyk@telus.com).
+If you have any questions [shoot us an email](mailto:alexandra.fedyk@telus.com).
 
 ## Types of contributions
 
@@ -25,7 +25,7 @@ If you find a bug please [create an issue through GitHub](https://github.com/tel
 
 ### Contribute code
 
-Fix [bugs](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aissue+is%3Aopen+label%3Abug) and/or implement [features](https://github.com/telusdigital/telus-thorium-core/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature) by choosing an open task from the [Github issues list](https://github.com/telusdigital/telus-thorium-core/issues). See the [contributor workflow](#contributor-workflow) section for a more detailed description of how to get code into Thorium.
+Fix [bugs](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aissue+is%3Aopen+label%3Abug) and/or implement [features](https://github.com/telusdigital/telus-thorium-core/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature) by choosing an open task from the [Github issues list](https://github.com/telusdigital/telus-thorium-core/issues). See the [contributor workflow](#contributor-workflow) section for a more detailed description of how to get code into TDS.
 
 ### Author documentation
 
@@ -34,7 +34,7 @@ The TELUS Design System could always use better documentation, whether as part o
 Documentation lives in the [docs directory](https://github.com/telusdigital/telus-thorium-core/tree/master/docs) and follows just a few simple rules:
 
 * Each category of documentation is a folder named like *1-Introduction* where "Introduction" is the name of the category, and 1 is its position in the navigation menu.
-* Within each category folder are markdown files documenting Thorium.
+* Within each category folder are markdown files documenting TDS.
 * Those markdown files follow the same naming convention as their parent folders.
 * Changing documentation follows the same [contributor workflow](#contributor-workflow) as committing code.
 
@@ -68,7 +68,7 @@ git pull origin master
 git checkout -b feature/DSR-1_adding-a-widget master
 ```
 
-<small>The branch is named according to [Thorium's branch naming conventions](#working-branch-naming)</small>
+<small>The branch is named according to [TDS' branch naming conventions](#working-branch-naming)</small>
 
 Now it's time to make some changes and commit them! Edit some files. When you're done, push up your branch to Github:
 
@@ -81,7 +81,7 @@ Once the branch is sent to Github, [create a pull request](https://github.com/te
 
 ### Commit message requirements
 
-Thorium's changelog is automatically generated from the master branch's commit messages. Individual contributors should write an informative commit message:
+TDS' changelog is automatically generated from the master branch's commit messages. Individual contributors should write an informative commit message:
 
 - The first line appears in the changelog - write a short sentence summarizing the change
 - Any bracketed or parenthesized JIRA id will be automatically linked to the issue page
