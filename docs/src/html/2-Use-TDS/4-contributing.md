@@ -81,21 +81,9 @@ Once the branch is sent to Github, [create a pull request](https://github.com/te
 
 ### Commit message requirements
 
+Use [commitizen](https://commitizen.github.io/cz-cli/) to follow simple commit conventions.
+
 TDS' changelog is automatically generated from the master branch's commit messages. Individual contributors should write an informative commit message:
-
-- The first line appears in the changelog - write a short sentence summarizing the change
-- Any bracketed or parenthesized JIRA id will be automatically linked to the issue page
-- Skip a line then use the rest of the commit message to detail your changes
-
-Here's an example:
-
-```bash
-Automate changelog generation [BCM-211]
-
-- Add a bash script to build the changelog entries from Git tags and commits
-- Document how to use the changelog script
-- Document how to format commit messages for the changelog
-```
 
 If you like to work in small chunks and make many commits along the way, feel free to do so in your feature branch. When the feature is ready for master, you can compose the final message by editing the Pull Request description on Github.
 
