@@ -21,7 +21,7 @@
   }
 }
 .spinner-wrapper__content-blocker {
-  z-index: 9999;
+  z-index: $zindex-modal-backdrop;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -48,7 +48,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 9999;
+    z-index: $zindex-modal-backdrop;
   }
 }
 
@@ -63,7 +63,7 @@
 }
 
 .spinner__svg {
-  z-index: 9999;
+  z-index: $zindex-popover;
   animation-name: spinner-rotate;
   -webkit-animation-name: spinner-rotate;
   -moz-animation-name: spinner-rotate;
@@ -121,5 +121,3 @@
     stroke-dashoffset: -124;
   }
 }
-
-
