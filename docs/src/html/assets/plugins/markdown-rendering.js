@@ -83,18 +83,18 @@ function list(body, ordered) {
   var tag = ordered ? 'ol' : 'ul';
   var modifier = ordered ? 'numbered' : 'bulleted';
 
-  return '<' + tag + ' class="list list--' + modifier + '">\n' +
+  return '<' + tag + ' class="tds-list tds-list--' + modifier + '">\n' +
     body + '</' + tag + '>\n';
 }
 
 /**
- * Add the .list__item class to <li> elements.
+ * Add the .tds-list__item class to <li> elements.
  *
  * @param text contents of the list item
  * @returns {string} List item HTML with BEM class
  */
 function listitem(text) {
-  return '<li class="list__item">' + replaceTokens(text) + '</li>\n';
+  return '<li class="tds-list__item">' + replaceTokens(text) + '</li>\n';
 }
 
 /**

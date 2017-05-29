@@ -7,7 +7,7 @@ const CheckList = (props) => {
   const cls = cx(className);
 
   const renderCheckList = listItems.map((item, index) => {
-    return (<li key={index} className="list__item">{item}</li>);
+    return (<li key={index} className="tds-list__item">{item}</li>);
   });
 
   const renderHeader = listTitle === '' ? null : <h4>{listTitle}</h4>;
