@@ -46,6 +46,7 @@
 * `pull-{xs|small|medium|large|xl}-*` changed to `tds-pull-{xs|small|medium|large|xl}-*`
 * `hidden-{xs|small|medium|large|xl}` changed to `tds-hidden-{xs|small|medium|large|xl}`
 * `hidden-{xs|small|medium|large|xl}-up` changed to `tds-hidden-{xs|small|medium|large|xl}-up`
+* removing deprecated list classes that have already been replaced by their BEMified version, e.g: `list-alpha` was replaced by already existing and documented `list--alpha` class.
 
 
 ## Upgrading to v0.15.x
