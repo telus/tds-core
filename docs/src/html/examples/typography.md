@@ -47,12 +47,12 @@ template: example.jade
 	  </div>
 	  <div class="tds-medium-4 tds-offset-medium-2">
 	    <h3 class="heading-3">Key Features</h3>
-	    <ul class="list list--checked list--small">
-		    <li class="list__item">Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.
+	    <ul class="tds-list tds-list--checked tds-list--small">
+		    <li class="tds-ist__item">Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.
     		</li>
-    		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    		<li class="tds-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     		</li>
-    		<li class="list__item">Aenean efficitur ut nibh in tempor.
+    		<li class="tds-list__item">Aenean efficitur ut nibh in tempor.
     		</li>
 	    </ul>
 	  </div>
@@ -108,10 +108,10 @@ template: example.jade
 		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 	    </p>
 
-	    <ul class="list list--bulleted">
-    		<li class="list__item">Nunc condimentum non est sed rutrum</li>
-    		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    		<li class="list__item">Aenean efficitur ut nibh in tempor</li>
+	    <ul class="tds-list tds-list--bulleted">
+    		<li class="tds-list__item">Nunc condimentum non est sed rutrum</li>
+    		<li class="tds-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    		<li class="tds-list__item">Aenean efficitur ut nibh in tempor</li>
 	    </ul>
 
 	    <p>
@@ -119,9 +119,9 @@ template: example.jade
 	    </p>
 
 	    <ol class="list list--numbered">
-    		<li class="list__item">Nunc condimentum non est sed rutrum</li>
-    		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    		<li class="list__item">Aenean efficitur ut nibh in tempor</li>
+    		<li class="tds-list__item">Nunc condimentum non est sed rutrum</li>
+    		<li class="tds-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    		<li class="tds-list__item">Aenean efficitur ut nibh in tempor</li>
 	    </ol>
 
 	    <p>
@@ -129,9 +129,9 @@ template: example.jade
 	    </p>
 
 	    <ul class="list list--checked">
-    		<li class="list__item">One</li>
-    		<li class="list__item">Two</li>
-    		<li class="list__item">Three</li>
+    		<li class="tds-list__item">One</li>
+    		<li class="tds-list__item">Two</li>
+    		<li class="tds-list__item">Three</li>
 	    </ul>
 
 	    <p>
@@ -143,26 +143,26 @@ template: example.jade
 	    </h3>
 
 	    <ul class="list list--bulleted">
-		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
+		<li class="tds-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 		    <ul class="list list--bulleted">
-			<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.</li>
+			<li class="tds-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.</li>
 		    </ul>
 		</li>
-		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+		<li class="tds-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
 	    </ul>
 
 	    <h3>Ordered list with many sentences</h3>
 
 	    <ol class="list list--numbered">
-		<li class="list__item">
+		<li class="tds-list__item">
 		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 		    <ol class="list list--alpha-lower">
-			<li class="list__item">
+			<li class="tds-list__item">
 			    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.
 			</li>
 		    </ol>
 		</li>
-		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+		<li class="tds-list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
 	    </ol>
 	</div>
     </div>

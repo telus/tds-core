@@ -529,9 +529,9 @@ Use `aria-describedby` to accessibly mark up the relationship between the input 
 	<p class="text--medium">
 	    <strong>Your password must be:</strong>
 	</p>
-	<ul class="list list--compact">
-	    <li class="list__item">8 characters or longer, no spaces</li>
-	    <li class="list__item">A mix of numbers, lowercase and uppercase letters</li>
+	<ul class="tds-list list--compact">
+	    <li class="tds-list__item">8 characters or longer, no spaces</li>
+	    <li class="tds-list__item">A mix of numbers, lowercase and uppercase letters</li>
 	</ul>
     </div>
     <input type="password" id="input_d" placeholder="Enter password"
@@ -545,9 +545,9 @@ Use `aria-describedby` to accessibly mark up the relationship between the input 
 	<p class="text--medium">
 	    <strong>Your password must be:</strong>
 	</p>
-	<ul class="list list--compact">
-	    <li class="list__item">8 characters or longer, no spaces</li>
-	    <li class="list__item">A mix of numbers, lowercase and uppercase letters</li>
+	<ul class="tds-list list--compact">
+	    <li class="tds-list__item">8 characters or longer, no spaces</li>
+	    <li class="tds-list__item">A mix of numbers, lowercase and uppercase letters</li>
 	</ul>
     </div>
     <input type="password" id="input_d" placeholder="Enter password"
@@ -565,9 +565,9 @@ The `--success` modifier can be used on the helper to provide positive feedback 
 	<p class="text--medium">
 	    <strong>Your password must be:</strong>
 	</p>
-	<ul class="list list--checked list--compact">
-	    <li class="list__item">8 characters or longer, no spaces</li>
-	    <li class="list__item">A mix of numbers, lowercase and uppercase letters</li>
+	<ul class="tds-list list--checked list--compact">
+	    <li class="tds-list__item">8 characters or longer, no spaces</li>
+	    <li class="tds-list__item">A mix of numbers, lowercase and uppercase letters</li>
 	</ul>
     </div>
     <input type="password" id="input_e" placeholder="Enter password"
@@ -581,9 +581,9 @@ The `--success` modifier can be used on the helper to provide positive feedback 
 	<p class="text--medium">
 	    <strong>Your password must be:</strong>
 	</p>
-	<ul class="list list--checked list--compact">
-	    <li class="list__item">8 characters or longer, no spaces</li>
-	    <li class="list__item">A mix of numbers, lowercase and uppercase letters</li>
+	<ul class="tds-list list--checked list--compact">
+	    <li class="tds-list__item">8 characters or longer, no spaces</li>
+	    <li class="tds-list__item">A mix of numbers, lowercase and uppercase letters</li>
 	</ul>
     </div>
     <input type="password" id="input_e" placeholder="Enter password"
@@ -630,11 +630,11 @@ Use the "Error List" block when a field has a complex error message.
 	<p class="text--medium">
 	    <strong>Your password must be:</strong>
 	</p>
-	<ul class="list list--error list--compact">
-	    <li class="list__item">
+	<ul class="tds-list list--error list--compact">
+	    <li class="tds-list__item">
 		8 characters or longer, no spaces
 	    </li>
-	    <li class="list__item">
+	    <li class="tds-list__item">
 		A mix of numbers, lowercase and uppercase letters
 	    </li>
 	</ul>
@@ -652,11 +652,11 @@ Use the "Error List" block when a field has a complex error message.
 	<p class="text--medium">
 	    <strong>Your password must be:</strong>
 	</p>
-	<ul class="list list--error list--compact">
-	    <li class="list__item">
+	<ul class="tds-list list--error list--compact">
+	    <li class="tds-list__item">
 		8 characters or longer, no spaces
 	    </li>
-	    <li class="list__item">
+	    <li class="tds-list__item">
 		A mix of numbers, lowercase and uppercase letters
 	    </li>
 	</ul>

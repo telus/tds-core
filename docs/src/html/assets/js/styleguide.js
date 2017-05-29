@@ -106,18 +106,18 @@
 
   function resetHelper() {
     HELPER.setAttribute('class', 'tds-helper');
-    RULES.setAttribute('class', 'list list--compact');
+    RULES.setAttribute('class', 'tds-list tds-list--compact');
     [].forEach.call(RULES.children, function (child) {
-      child.setAttribute('class', 'list__item');
+      child.setAttribute('class', 'tds-list__item');
     });
   }
 
   function hideIcon(el) {
-    el.setAttribute('class', 'list__item list__item--no-icon');
+    el.setAttribute('class', 'tds-list__item tds-list__item--no-icon');
   }
 
   function showIcon(el) {
-    el.setAttribute('class', 'list__item');
+    el.setAttribute('class', 'tds-list__item');
   }
 
   function showAllIcons() {
@@ -125,7 +125,7 @@
   }
 
   function setListMode(mode) {
-    RULES.setAttribute('class', 'list list--compact ' + ((mode) ? 'list--' + mode : ''));
+    RULES.setAttribute('class', 'tds-list tds-list--compact ' + ((mode) ? 'tds-list--' + mode : ''));
   }
 
   function setHelperMode(mode) {

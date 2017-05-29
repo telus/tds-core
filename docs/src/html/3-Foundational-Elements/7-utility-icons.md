@@ -126,8 +126,8 @@ The default ("primary") icon display is purple [[1]](#color-footnote). Modifier 
 <i class="tds-icon tds-icon-core-caret-down tds-icon--error"></i>
 ```
 
-<ol class="list list--numbered list--small">
-    <li class="list__item" id="color-footnote">
+<ol class="tds-list tds-list--numbered tds-list--small">
+    <li class="tds-list__item" id="color-footnote">
 	Color has special meaning for instructive icons.
 	By default, each one is styled with its intended color.
 	For example, "checkmark" is green, and "alert" is red without requiring any modifier.

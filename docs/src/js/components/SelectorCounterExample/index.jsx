@@ -52,7 +52,7 @@ class SelectorCounterExample extends Component {
             <div className={helperClasses} id="ex-selcounter-desc">
               <p className="text--small">Instructions</p>
               <ul className={listClasses}>
-                <li className="list__item">Do not pick 5</li>
+                <li className="tds-list__item">Do not pick 5</li>
               </ul>
             </div>
             <SelectorCounter
