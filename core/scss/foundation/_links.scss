@@ -1,9 +1,7 @@
 //
 // Links
 //
-
-.tds-link,
-a {
+%link {
   &:link,
   &:visited {
     color: $color-link;
@@ -15,7 +13,15 @@ a {
   }
 }
 
+@if $tds-style-html-tags == true {
+  a {
+    @extend %link;
+  }
+}
+
 .tds-link {
+  @extend %link;
+
   &--descent {
     &:link,
     &:visited {

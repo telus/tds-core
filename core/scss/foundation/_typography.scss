@@ -16,21 +16,7 @@ body {
 //
 // Headings
 //
-
-// p + h2, p + h3, p + h4 {
-h2:not([class]),
-h3:not([class]),
-h4:not([class]) {
-  margin-top: 1.5em;
-}
-
-h2:not([class]):first-child,
-h3:not([class]):first-child,
-h4:not([class]):first-child {
-  margin-top: 0;
-}
-
-.display-heading-1 {
+.tds-h1--display {
   color: $color-grape;
   font-size: rem(44px);
   line-height: 1.14; // 48px
@@ -44,8 +30,7 @@ h4:not([class]):first-child {
   }
 }
 
-h1,
-.heading-1 {
+%h1 {
   font-weight: 400;
   font-size: rem(28px);
   line-height: 1.29; // 36px
@@ -61,8 +46,7 @@ h1,
   }
 }
 
-h2,
-.heading-2 {
+%h2 {
   font-weight: 400;
   font-size: rem(24px);
   line-height: 1.33; // 30px
@@ -83,8 +67,7 @@ h2,
   }
 }
 
-h3,
-.heading-3 {
+%h3 {
   font-weight: 700;
   font-size: rem(20px);
   line-height: 1.4; // 28px
@@ -93,14 +76,164 @@ h3,
   margin-bottom: baseline-margin(48px);
 }
 
-h4,
-.heading-4 {
+%h4 {
   font-weight: 700;
   font-size: rem(16px);
   letter-spacing: -.6px;
   color: $color-shark;
   line-height: 1.25; // 20px
   margin-bottom: baseline-margin(40px);
+}
+
+//
+// Bold & italic
+//
+
+%strong {
+  font-weight: 500;
+}
+
+%italic {
+  font-style: italic;
+}
+
+//
+// Paragraph text
+//
+
+%paragraph {
+  font-size: rem($body-text-size);
+  line-height: $body-line-height; // 32px
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+
+%text--medium {
+  font-size: rem($body-medium-text-size);
+  line-height: $body-medium-line-height;
+  letter-spacing: -.8px;
+}
+
+%text--small {
+  // The 14px "small" text isn't readable on small viewports, so it's not		 +  font-size: rem($body-medium-text-size);
+  // applied until the medium breakpoint.		 +  line-height: $body-medium-line-height; // 20px;
+  @extend %text--medium;
+
+  @include from-breakpoint(medium) {
+    font-size: rem($body-small-text-size);
+    line-height: $body-small-line-height; // 24px;
+    color: $color-raven;
+    letter-spacing: -.6px;
+  }
+}
+
+//
+// sup/sub
+//
+%text--sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -.5em;
+}
+
+%text--sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -.25em;
+}
+
+.tds-h1 {
+  @extend %h1;
+}
+
+.tds-h2 {
+  @extend %h2;
+}
+
+.tds-h3 {
+  @extend %h3;
+}
+
+.tds-h4 {
+  @extend %h4;
+}
+
+.tds-strong {
+  @extend %strong;
+}
+
+.tds-italic {
+  @extend %italic;
+}
+
+.text {
+  @extend %paragraph;
+}
+
+.text--medium {
+  @extend %text--medium;
+}
+
+.text--small {
+  @extend %text--small;
+}
+
+.text--sup {
+  @extend %text--sup;
+}
+
+.text--sub {
+  @extend %text--sub;
+}
+
+@if $tds-style-html-tags == true {
+  h1 {
+    @extend %h1;
+  }
+
+  h2 {
+    @extend %h2;
+  }
+
+  h3 {
+    @extend %h3;
+  }
+
+  h4 {
+    @extend %h4;
+  }
+
+  strong {
+    @extend %strong;
+  }
+
+  em {
+    @extend %italic;
+  }
+
+  p {
+    @extend %paragraph;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  small {
+    @extend %text--small;
+  }
+
+  sup {
+    @extend %text--sup;
+  }
+
+  sub {
+    @extend %text--sub;
+  }
 }
 
 //
@@ -126,77 +259,4 @@ h4,
     line-height: 1.5;
     margin-bottom: baseline-margin(40px);
   }
-}
-
-//
-// Bold & italic
-//
-
-strong,
-.strong {
-  font-weight: 500;
-}
-
-em {
-  font-style: italic;
-}
-
-//
-// Paragraph text
-//
-
-p,
-.text {
-  font-size: rem($body-text-size);
-  line-height: $body-line-height; // 32px
-  letter-spacing: -1px;
-  margin-bottom: 1rem;
-
-  a {
-    text-decoration: underline;
-  }
-}
-
-%text--medium {
-  font-size: rem($body-medium-text-size);
-  line-height: $body-medium-line-height;
-  letter-spacing: -.8px;
-}
-
-.text--medium {
-  @extend %text--medium;
-}
-
-small,
-.text--small {
-
-  // The 14px "small" text isn't readable on small viewports, so it's not		 +  font-size: rem($body-medium-text-size);
-  // applied until the medium breakpoint.		 +  line-height: $body-medium-line-height; // 20px;
-  @extend %text--medium;
-
-  @include from-breakpoint(medium) {
-    font-size: rem($body-small-text-size);
-    line-height: $body-small-line-height; // 24px;
-    color: $color-raven;
-    letter-spacing: -.6px;
-  }
-}
-
-//
-// sup/sub
-//
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -.5em;
-}
-
-sub {
-  bottom: -.25em;
 }
