@@ -107,6 +107,16 @@ $columns: (
 
 $gutter: 32px;
 
+// z-index scale
+$zindex-dropdown-backdrop:  990 !default;
+$zindex-navigation:        1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-fixed:             1030 !default;
+$zindex-sticky:            1030 !default;
+$zindex-modal-backdrop:    1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+
 //
 // Feature flags
 //

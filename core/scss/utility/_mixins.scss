@@ -123,7 +123,7 @@
 
 // Create an underline which doesn't intersect with descenders on lowercase
 // letters.
-@mixin clear-descenders($text-color, $bg-color) {
+@mixin add-skinny-underline($text-color, $bg-color) {
   background:
     linear-gradient($bg-color, $bg-color),
     linear-gradient($bg-color, $bg-color),
@@ -141,6 +141,10 @@
     100% 100%,
     0 100%;
   text-decoration: none;
+}
+
+@mixin clear-skinny-underline() {
+  background: none !important;
 }
 
 @mixin tds-dimple() {
