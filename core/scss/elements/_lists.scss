@@ -30,7 +30,7 @@
   position: relative;
   margin-bottom: baseline-margin(40px);
 
-  li & {
+  .tds-list__item & {
     &:first-child {
       padding-top: baseline-margin(40px);
     }
@@ -89,7 +89,7 @@
 // Lists
 //
 
-.list {
+.tds-list {
   @extend %list;
 
   &__item {
@@ -105,13 +105,13 @@
   }
 
   &--bulleted {
-    > .list__item {
+    > .tds-list__item {
       @extend %list--bulleted__item;
     }
   }
 
   &--checked {
-    > .list__item:not(.list__item--no-icon) {
+    > .tds-list__item:not(.tds-list__item--no-icon) {
       @extend %list--checked__item;
     }
   }
@@ -119,21 +119,21 @@
   &--compact {
     padding-left: rem(30px);
 
-    &.list--checked,
-    &.list--error {
-      > .list__item::before {
+    &.tds-list--checked,
+    &.tds-list--error {
+      > .tds-list__item::before {
         left: -29px;
       }
     }
 
-    > .list__item {
+    > .tds-list__item {
       margin: 0;
       padding: 0;
     }
   }
 
   &--error {
-    > .list__item:not(.list__item--no-icon) {
+    > .tds-list__item:not(.tds-list__item--no-icon) {
       @extend %list--error__item;
     }
   }
@@ -144,50 +144,5 @@
 
   &--small {
     @extend %list--small;
-  }
-}
-
-//
-// Deprecated classes
-//
-
-// To enable these deprecated list classes, define
-// $thorium-enable-deprecated-list-classes: true prior to your
-// @import "thorium" directive.
-
-@if ($enable-deprecated-list-classes) {
-  .list-alpha,
-  .list-bullets,
-  .list-checked,
-  .list-numbered {
-    @extend %list;
-
-    &__item {
-      @extend %list__item;
-    }
-  }
-
-  .list-alpha {
-    @extend %list--alpha;
-
-    &--lower {
-      @extend %list--alpha-lower;
-    }
-  }
-
-  .list-bullets__item {
-    @extend %list--bulleted__item;
-  }
-
-  .list-checked__item {
-    @extend %list--checked__item;
-  }
-
-  .list-small {
-    @extend %list--small;
-  }
-
-  .list-numbered {
-    @extend %list--numbered;
   }
 }
