@@ -11,7 +11,8 @@ class ControlledCollapsibleExample extends Component {
     this.togglePanel = this.togglePanel.bind(this);
   }
 
-  togglePanel(panelKey) {
+  togglePanel(e, panelKey) {
+      e.preventDefault();
       if (this.state.activeKeys.indexOf(panelKey) > -1) {
           this.setState({
               activeKeys: this.state.activeKeys.filter(k => k !== panelKey)
@@ -21,13 +22,15 @@ class ControlledCollapsibleExample extends Component {
               activeKeys: this.state.activeKeys.concat([panelKey])
           });
       }
+
+
   }
 
   render() {
       return (
       <div>
-        <button className="tds-button tds-button--secondary" onClick={()=>this.togglePanel('panel-1')}>Toggle panel #1</button>
-        <button className="tds-button tds-button--secondary" onClick={()=>this.togglePanel('panel-2')}>Toggle panel #2</button>
+        <a href="" className="tds-button tds-button--secondary tds-button--link" onClick={(e)=>this.togglePanel(e, 'panel-1')}>Toggle panel #1</a>
+        <a href="" className="tds-button tds-button--secondary tds-button--link" onClick={(e)=>this.togglePanel(e, 'panel-2')}>Toggle panel #2</a>
         <Collapsible.Group activeKeys={this.state.activeKeys}>
             <Collapsible.Panel header="Panel #1" panelKey="panel-1">
             Panel #1 Body
