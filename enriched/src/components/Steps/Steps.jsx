@@ -43,7 +43,7 @@ class Steps extends Component {
               const stepNumber = index + 1;
               const status = this.getStatus(current, currentStatus, index);
               const props = {
-                stepNumber: stepNumber.toString(),
+                stepNumber,
                 status
               };
               return React.cloneElement(element, props);
