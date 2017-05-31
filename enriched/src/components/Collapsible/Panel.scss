@@ -7,7 +7,7 @@
   &__label {
     background: transparent;
     border-radius: 0;
-    display: block;
+    display: flex;
     font-weight: 400;
     font-size: rem(20px);
     margin: 0;
@@ -60,7 +60,8 @@
     &--expanded {
       &::after {
         @include tds-dimple();
-        top: 60px;
+        position: absolute;
+        bottom: -32px;
       }
       &::before {
         height: 0;
@@ -130,11 +131,11 @@
 
 
   &__icon {
-    float: right;
+    margin-right: 20px;
     font-size: 1.125rem;
     transition: all .5s;
     width: 18px;
-    margin-top: -2px;
+    margin-top: 2px;
   }
 
 
