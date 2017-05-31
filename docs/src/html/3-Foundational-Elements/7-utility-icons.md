@@ -106,21 +106,24 @@ This is the "Caret (down)" icon
 
 ### Color modifiers
 
-The default ("primary") icon display is purple [[1]](#color-footnote). Modifier classes make it possible to style icons differently.
+The default icon display is the default text colour (shark). Modifier classes make it possible to style icons differently.
 
-* `--secondary` colors an icon green to indicate a secondary action
+* `--primary` colors an icon green to indicate a primary action
+* `--secondary` colors an icon purple to indicate a secondary action
 * `--disabled` colors an icon grey to indicate the action is turned off
 * `--error` colors an icon red to indicate a problem
 
 **Examples of icons with modified colors**
 
 <p>
+    <i class="tds-icon tds-icon-core-caret-down tds-icon--primary"></i>
     <i class="tds-icon tds-icon-core-caret-down tds-icon--secondary"></i>
     <i class="tds-icon tds-icon-core-caret-down tds-icon--disabled"></i>
     <i class="tds-icon tds-icon-core-caret-down tds-icon--error"></i>
 </p>
 
 ```html
+<i class="tds-icon tds-icon-core-caret-down tds-icon--primary"></i>
 <i class="tds-icon tds-icon-core-caret-down tds-icon--secondary"></i>
 <i class="tds-icon tds-icon-core-caret-down tds-icon--disabled"></i>
 <i class="tds-icon tds-icon-core-caret-down tds-icon--error"></i>
