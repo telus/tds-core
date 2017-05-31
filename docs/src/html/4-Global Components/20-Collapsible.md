@@ -23,7 +23,7 @@ import { Collapsible } from 'telus-thorium-enriched';
 const RegularCollapsibleEx = () => {
     return (
       <Collapsible.Group disabledKeys={["panel-3"]}>
-        <Collapsible.Panel header="Panel #1">
+        <Collapsible.Panel header="Panel #1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet at lacus vel fringilla.">
           Panel #1 Body
         </Collapsible.Panel>
         <Collapsible.Panel header="Panel #2">

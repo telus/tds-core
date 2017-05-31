@@ -8,12 +8,21 @@ if (process.env.BROWSER) {
 
 class Panel extends Component {
 
+  componentWillMount() {
+    const id = Math.random().toString(36).substr(2, 9);
+    this.setId(id);
+  }
+
   componentDidMount() {
     this.setMaxHeight();
   }
 
   componentDidUpdate() {
     this.setMaxHeight();
+  }
+
+  setId(id) {
+    this.contentId = id;
   }
 
   setMaxHeight() {
@@ -39,22 +48,29 @@ class Panel extends Component {
       'collapsible-panel__label--first': isFirst
     });
 
-    const iconClassName = classNames('icon', {
-      'icon-core-minus': isActive,
-      'icon-core-plus': !isActive
+    const iconClassName = classNames('tds-icon tds-icon--primary', {
+      'tds-icon-core-minus': isActive,
+      'tds-icon-core-plus': !isActive
     });
 
 
     return (
       <div className={collapsePanelClassName}>
-        <span aria-live="polite" className="tds-accessible-hide">{isActive ? 'expanded' : 'collapsed'}</span>
-        <button onClick={onPanelClick} aria-expanded={isActive ? 'true' : 'false'} className={collapsePaneLabelClassName}>
-          <span className="collapsible-panel__header">{ header }</span>
+        <span className="tds-accessible-hide">{isActive ? 'expanded' : 'collapsed'}</span>
+        <button
+          onClick={onPanelClick}
+          aria-expanded={isActive ? 'true' : 'false'}
+          aria-controls={this.contentId}
+          className={collapsePaneLabelClassName}>
           <span className="collapsible-panel__icon">
             <i className={iconClassName} />
           </span>
+          <span className="collapsible-panel__header">{ header }</span>
         </button>
-        <div ref={(node) => { this.panelContent = node; }} className={collapsePanelContent}>
+        <div
+          ref={(node) => { this.panelContent = node; }}
+          className={collapsePanelContent}
+          id={this.contentId}>
           { children }
         </div>
       </div>
