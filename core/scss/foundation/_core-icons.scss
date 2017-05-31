@@ -45,11 +45,11 @@ $core-icon-codepoints: (
   transition: color .1s linear;
 
   &--primary {
-    color: $color-icon-secondary;
+    color: $color-icon-primary;
   }
 
   &--secondary {
-    color: $color-icon-primary;
+    color: $color-icon-secondary;
   }
 
   &--error {
