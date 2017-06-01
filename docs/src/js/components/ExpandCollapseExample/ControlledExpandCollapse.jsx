@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
-import { Collapsible } from 'telus-thorium-enriched';
+import { ExpandCollapse } from 'telus-thorium-enriched';
 
 
-class ControlledCollapsibleExample extends Component {
+class ControlledExpandCollapseExample extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,18 +31,18 @@ class ControlledCollapsibleExample extends Component {
       <div>
         <a href="" className="tds-button tds-button--secondary tds-button--link" onClick={(e)=>this.togglePanel(e, 'panel-1')}>Toggle panel #1</a>
         <a href="" className="tds-button tds-button--secondary tds-button--link" onClick={(e)=>this.togglePanel(e, 'panel-2')}>Toggle panel #2</a>
-        <Collapsible.Group activeKeys={this.state.activeKeys}>
-            <Collapsible.Panel header="Panel #1" panelKey="panel-1">
+        <ExpandCollapse.Group activeKeys={this.state.activeKeys}>
+            <ExpandCollapse.Panel header="Panel #1" panelKey="panel-1">
             Panel #1 Body
-            </Collapsible.Panel>
-            <Collapsible.Panel header="Panel #2" panelKey="panel-2">
+            </ExpandCollapse.Panel>
+            <ExpandCollapse.Panel header="Panel #2" panelKey="panel-2">
             Panel #2 Body
-            </Collapsible.Panel>
-        </Collapsible.Group>
+            </ExpandCollapse.Panel>
+        </ExpandCollapse.Group>
       </div>
     );
   }
 }
 
 
-export default ControlledCollapsibleExample;
+export default ControlledExpandCollapseExample;
