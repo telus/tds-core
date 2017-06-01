@@ -34,7 +34,7 @@
   &--primary {
     &:link,
     &:visited {
-      color: $color-forest-green;
+      color: $color-japanese-laurel;
     }
 
     &:hover {
@@ -44,14 +44,14 @@
     &.tds-link--descent {
       &:link,
       &:visited {
-        @include add-skinny-underline($color-forest-green, $color-athens-grey);
+        @include add-skinny-underline($color-japanese-laurel, $color-athens-grey);
       }
     }
 
     &.tds-link--inverted.tds-link--descent {
       &:link,
       &:visited {
-        @include add-skinny-underline($color-athens-grey, $color-forest-green);
+        @include add-skinny-underline($color-athens-grey, $color-japanese-laurel);
       }
     }
   }

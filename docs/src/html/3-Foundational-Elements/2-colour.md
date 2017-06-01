@@ -13,7 +13,7 @@ Color creates visual impact and distinguishes a brand. It conveys personality, a
 
 ---
 
-White is the cornerstone of our palette and the most dominant colour in it, but purple and green are what make it distinctive and memorable. Harlequin is our hero green and is used for primary buttons. Japanese Laurel is based on Harlequin but has a darker hue which respects our colour contrast ratio requirements when used as text links. Grape is used for all headers along with supporting elements within navigation.
+White is the cornerstone of our palette and the most dominant colour in it, but purple and green are what make it distinctive and memorable. Forest green for primary buttons. Grape is used for all headers along with supporting elements within navigation.
 
 ## Buttons/Links/Headings/Body
 
@@ -33,7 +33,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		#248700
       </p>
       <p>
-		Usage: Button backgrounds and links
+		Usage: Primary button backgrounds/outline
 	    </p>
 	</div>
   <div class="tds-medium-4">
@@ -48,7 +48,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   		#4B286D
   		  </p>
         <p>
-  		Usage: Headings, button background/outline, links
+  		Usage: Headings, secondary button background/outline, chevron links
   	    </p>
   </div>
   <div class="tds-medium-4">
@@ -63,7 +63,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   		#2A2C2E
   		  </p>
         <p>
-  		Usage: Sub headings and body text
+  		Usage: Sub headings (H3, H4), body text, and focus form objects borders
   	    </p>
   </div>
 </div>
@@ -82,7 +82,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		#177A00
       </p>
       <p>
-		Usage: Button outline
+		Usage: Underline links and chevron links
 	    </p>
 	</div>
   <div class="tds-medium-4">
@@ -97,7 +97,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		#6E3BA1
 		  </p>
       <p>
-		Usage: Pilters and badges
+		Usage: Pilters, selector buttons, promos and badges
 	    </p>
 	</div>
   <div class="tds-medium-4">
@@ -112,11 +112,29 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   #54595F
     </p>
     <p>
-  Usage: Tertiary links
+  Usage: Colour for default links
     </p>
   </div>
     </div>
     <div class="tds-grid-row">
+  <div class="tds-medium-4">
+  	    <span class="color-preview" style="background-color: rgb(102, 204, 0);"></span>
+  	    <p>
+  		<strong>White</strong>
+  	    </p>
+        <p>
+      `$color-telus-green`
+        </p>
+  	    <p>
+  		#66CC00
+        </p>
+        <p>
+  		Usage: Decorative elements (graphs/charts).
+  	    </p>
+        <p class="text--small">
+        * use only for decorative items (when it doesn't need to be colour accessible)
+        </p>
+  	</div>
   <div class="tds-medium-4">
   	    <span class="color-preview" style="background-color: rgb(255, 255, 255);"></span>
   	    <p>
@@ -129,7 +147,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   		#FFFFFF
         </p>
         <p>
-  		Usage: Page background, reverse links/buttons
+  		Usage: Page background, inverted links/buttons
   	    </p>
   	</div>
   </div>
@@ -156,7 +174,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 		#6A6E74
       </p>
       <p>
-		Usage: Messaging/body text
+		Usage: Disabled text and inactive form object borders
 	    </p>
     </div>
   <div class="tds-medium-4">
