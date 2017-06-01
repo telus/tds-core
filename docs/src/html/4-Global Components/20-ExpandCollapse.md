@@ -1,5 +1,5 @@
 ---
-title: Collapsible
+title: Expand Collapse
 template: doc.jade
 ---
 
@@ -8,43 +8,43 @@ template: doc.jade
 ---
 
 A content area which can be collapsed and expanded.
-<div id="regularCollapsibleExample"></div>
+<div id="regularExpandCollapseExample"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.RegularCollapsibleExample />,
-    document.getElementById('regularCollapsibleExample')
+    <Thorium.RegularExpandCollapseExample />,
+    document.getElementById('regularExpandCollapseExample')
   );
 </script>
 
 ```javascript
 import React, { Component, PropTypes } from 'react';
-import { Collapsible } from 'telus-thorium-enriched';
+import { ExpandCollapse } from 'telus-thorium-enriched';
 
-const RegularCollapsibleEx = () => {
+const RegularExpandCollapseEx = () => {
     return (
-      <Collapsible.Group disabledKeys={["panel-3"]}>
-        <Collapsible.Panel header="Panel #1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet at lacus vel fringilla.">
+      <ExpandCollapse.Group disabledKeys={["panel-3"]}>
+        <ExpandCollapse.Panel header="Panel #1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet at lacus vel fringilla.">
           Panel #1 Body
-        </Collapsible.Panel>
-        <Collapsible.Panel header="Panel #2">
+        </ExpandCollapse.Panel>
+        <ExpandCollapse.Panel header="Panel #2">
           Panel #2 Body
-        </Collapsible.Panel>
-        <Collapsible.Panel header="Panel #3 is disabled" panelKey="panel-3">
+        </ExpandCollapse.Panel>
+        <ExpandCollapse.Panel header="Panel #3 is disabled" panelKey="panel-3">
           Panel #3 Body
-        </Collapsible.Panel>
-      </Collapsible.Group>
+        </ExpandCollapse.Panel>
+      </ExpandCollapse.Group>
     );
 }
 
-export default RegularCollapsibleEx;
+export default RegularExpandCollapseEx;
 ```
 
-We can control the collapsible component state.
-<div id="controlledCollapsibleExample"></div>
+We can control the Expand/Collapse component state.
+<div id="controlledExpandCollapseExample"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.ControlledCollapsibleExample />,
-    document.getElementById('controlledCollapsibleExample')
+    <Thorium.ControlledExpandCollapseExample />,
+    document.getElementById('controlledExpandCollapseExample')
   );
 </script>
 
@@ -73,14 +73,14 @@ We can control the collapsible component state.
       <div>
         <button class="tds-button tds-button--secondary tds-button--link" onClick={(e)=>this.togglePanel(e, 'panel-1')}>Toggle panel #1</button>
         <button class="tds-button tds-button--secondary tds-button--link" onClick={(e)=>this.togglePanel(e, 'panel-2')}>Toggle panel #2</button>
-        <Collapsible.Group activeKeys={this.state.activeKeys}>
-            <Collapsible.Panel header="Panel #1" panelKey="panel-1">
+        <ExpandCollapse.Group activeKeys={this.state.activeKeys}>
+            <ExpandCollapse.Panel header="Panel #1" panelKey="panel-1">
             Panel #1 Body
-            </Collapsible.Panel>
-            <Collapsible.Panel header="Panel #2" panelKey="panel-2">
+            </ExpandCollapse.Panel>
+            <ExpandCollapse.Panel header="Panel #2" panelKey="panel-2">
             Panel #2 Body
-            </Collapsible.Panel>
-        </Collapsible.Group>
+            </ExpandCollapse.Panel>
+        </ExpandCollapse.Group>
       </div>  
     );
   }
@@ -92,32 +92,32 @@ We can control the collapsible component state.
 
 Accordion is a special kind of Collapse, which allows only one panel to be expanded at a time.
 
-<div id="accordionCollapsibleExample"></div>
+<div id="accordionExpandCollapseExample"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.AccordionCollapsibleExample />,
-    document.getElementById('accordionCollapsibleExample')
+    <Thorium.AccordionExpandCollapseExample />,
+    document.getElementById('accordionExpandCollapseExample')
   );
 </script>
 
 ```javascript
 import React, { Component, PropTypes } from 'react';
-import { Collapsible } from 'telus-thorium-enriched';
+import { ExpandCollapse } from 'telus-thorium-enriched';
 
-const AccordionCollapsibleEx = () => {
+const AccordionExpandCollapseEx = () => {
     return (
-      <Collapsible.Group accordion>
-        <Collapsible.Panel header="Panel #1">
+      <ExpandCollapse.Group accordion>
+        <ExpandCollapse.Panel header="Panel #1">
           Panel #1 Body
-        </Collapsible.Panel>
-        <Collapsible.Panel header="Panel #2">
+        </ExpandCollapse.Panel>
+        <ExpandCollapse.Panel header="Panel #2">
           Panel #2 Body
-        </Collapsible.Panel>
-      </Collapsible.Group>
+        </ExpandCollapse.Panel>
+      </ExpandCollapse.Group>
     );
 }
 
-export default AccordionCollapsibleEx;
+export default AccordionExpandCollapseEx;
 ```
 ## API
 ### Group

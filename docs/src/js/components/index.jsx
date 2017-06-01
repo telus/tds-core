@@ -1,7 +1,7 @@
 import SelectorCounterExample from './SelectorCounterExample';
-import RegularCollapsibleExample from './CollapsibleExample/RegularCollapsible';
-import AccordionCollapsibleExample from './CollapsibleExample/AccordionCollapsible';
-import ControlledCollapsibleExample from './CollapsibleExample/ControlledCollapsible';
+import RegularExpandCollapseExample from './ExpandCollapseExample/RegularExpandCollapse';
+import AccordionExpandCollapseExample from './ExpandCollapseExample/AccordionExpandCollapse';
+import ControlledExpandCollapseExample from './ExpandCollapseExample/ControlledExpandCollapse';
 import CardExample from './CardExample';
 import StepsExample from './Steps';
 import SpinnerExample from './SpinnerExample';
@@ -10,9 +10,9 @@ import SpinnerFullScreenExample from './SpinnerExample/SpinnerFullScreenExample'
 
 export {
   SelectorCounterExample,
-  RegularCollapsibleExample,
-  AccordionCollapsibleExample,
-  ControlledCollapsibleExample,
+  RegularExpandCollapseExample,
+  AccordionExpandCollapseExample,
+  ControlledExpandCollapseExample,
   CardExample,
   SpinnerExample,
   StepsExample,
