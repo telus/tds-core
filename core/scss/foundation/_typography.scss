@@ -122,7 +122,6 @@ body {
   @include from-breakpoint(medium) {
     font-size: rem($body-small-text-size);
     line-height: $body-small-line-height; // 24px;
-    color: $color-raven;
     letter-spacing: -.6px;
   }
 }
