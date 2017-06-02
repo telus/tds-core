@@ -50,7 +50,7 @@
     display: block;
     position: absolute;
     content: '\002022';
-    color: $color-grape;
+    color: $color-secondary;
     left: -21px;
   }
 
@@ -69,7 +69,7 @@
 
     content: core-icon-codepoint(checkmark);
     left: -33px;
-    color: $color-forest-green;
+    color: $color-primary;
   }
 }
 

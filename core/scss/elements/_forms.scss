@@ -134,7 +134,7 @@ textarea {
         content: core-icon-codepoint(caret-down);
         top: 20px;
         right: 20px;
-        color: $color-forest-green;
+        color: $color-primary;
       }
 
       .tds-field--error & {
@@ -313,7 +313,7 @@ $radio-checked-stroke-size: 6px;
   &:checked {
     & + .tds-choice__text {
       &::before {
-        border: solid $radio-checked-stroke-size $color-forest-green;
+        border: solid $radio-checked-stroke-size $color-primary;
       }
     }
 
@@ -357,7 +357,7 @@ $radio-checked-stroke-size: 6px;
     &:not(:disabled) {
       & + .tds-choice__text {
         &::before {
-          background: $color-forest-green;
+          background: $color-primary;
           border: none;
         }
       }

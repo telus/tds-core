@@ -46,43 +46,43 @@ a.tds-button {
   }
 
   &--primary {
-    background-color: $color-forest-green;
+    background-color: $color-primary;
     color: $color-white;
 
     &:hover {
       background-color: $color-white;
-      color: $color-forest-green;
+      color: $color-primary;
       box-shadow: 0 0 0 1px;
     }
 
     &.tds-button--outlined {
       background-color: $color-white;
       box-shadow: 0 0 0 1px;
-      color: $color-forest-green;
+      color: $color-primary;
 
       &:hover {
-        background-color: $color-forest-green;
+        background-color: $color-primary;
         color: $color-white;
       }
     }
 
     &.tds-button--inverted {
       background-color: $color-white;
-      color: $color-forest-green;
+      color: $color-primary;
 
       &:hover {
         box-shadow: 0 0 0 1px;
         color: $color-white;
-        background-color: $color-forest-green;
+        background-color: $color-primary;
       }
 
       &.tds-button--outlined {
-        background-color: $color-forest-green;
+        background-color: $color-primary;
         color: $color-white;
 
         &:hover {
           background-color: $color-white;
-          color: $color-forest-green;
+          color: $color-primary;
           box-shadow: 0 0 0 1px;
         }
       }
@@ -98,43 +98,43 @@ a.tds-button {
   }
 
   &--secondary {
-    background-color: $color-grape;
+    background-color: $color-secondary;
     color: $color-white;
 
     &:hover {
       background-color: $color-white;
-      color: $color-grape;
+      color: $color-secondary;
       box-shadow: 0 0 0 1px;
     }
 
     &.tds-button--outlined {
       background-color: $color-white;
-      color: $color-grape;
+      color: $color-secondary;
       box-shadow: 0 0 0 1px;
 
       &:hover {
-        background-color: $color-grape;
+        background-color: $color-secondary;
         color: $color-white;
       }
     }
 
     &.tds-button--inverted {
       background-color: $color-white;
-      color: $color-grape;
+      color: $color-secondary;
 
       &:hover {
         box-shadow: 0 0 0 1px;
         color: $color-white;
-        background-color: $color-grape;
+        background-color: $color-secondary;
       }
 
       &.tds-button--outlined {
-        background-color: $color-grape;
+        background-color: $color-secondary;
         color: $color-white;
 
         &:hover {
           background-color: $color-white;
-          color: $color-grape;
+          color: $color-secondary;
           box-shadow: 0 0 0 1px;
         }
       }
@@ -145,7 +145,7 @@ a.tds-button {
         padding-left: 4px;
       }
 
-      @include chevron-links($color-grape);
+      @include chevron-links($color-secondary);
     }
   }
 
