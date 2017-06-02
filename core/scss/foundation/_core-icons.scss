@@ -90,7 +90,7 @@ $core-icon-codepoints: (
 }
 
 .tds-icon-core-checkmark {
-  @include icon-fixed-color($color-forest-green);
+  @include icon-fixed-color($color-primary);
 }
 
 .tds-icon-core-expander,

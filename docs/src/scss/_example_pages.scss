@@ -53,7 +53,7 @@
 
   &__icon {
     display: inline-block;
-    background-color: $color-grape;
+    background-color: $color-secondary;
     color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -81,7 +81,7 @@
 
   &__form {
     @include from-breakpoint(medium) {
-      border-right: solid 1px $color-grey-light;
+      border-right: solid 1px $color-gainsboro;
       padding-right: 8.3333%;
 
       .field {
@@ -101,7 +101,7 @@
 }
 
 .inverted-link-ex {
-  background: $color-grape;
+  background: $color-secondary;
 
   > p {
     text-align: center;

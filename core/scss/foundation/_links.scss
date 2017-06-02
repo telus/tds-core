@@ -59,7 +59,7 @@
   &--secondary {
     &:link,
     &:visited {
-      color: $color-grape;
+      color: $color-secondary;
     }
 
     &:hover {
@@ -69,14 +69,14 @@
     &.tds-link--descent {
       &:link,
       &:visited {
-        @include add-skinny-underline($color-grape, $color-athens-grey);
+        @include add-skinny-underline($color-secondary, $color-athens-grey);
       }
     }
 
     &.tds-link--inverted.tds-link--descent {
       &:link,
       &:visited {
-        @include add-skinny-underline($color-athens-grey, $color-grape);
+        @include add-skinny-underline($color-athens-grey, $color-secondary);
       }
     }
   }
@@ -106,7 +106,7 @@
   &--secondary {
     &:link,
     &:visited {
-      @include chevron-links($color-grape);
+      @include chevron-links($color-secondary);
     }
   }
 

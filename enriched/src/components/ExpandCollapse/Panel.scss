@@ -25,13 +25,13 @@
     font-family: $font-telus;
 
     .icon{
-      color: $color-forest-green;
+      color: $color-primary;
     }
 
     @include alt-state {
       border-top: 1px solid $color-shark;
       .icon {
-        color: $color-forest-green;
+        color: $color-primary;
       }
       &::before {
         background: $color-shark;
@@ -103,7 +103,7 @@
       @include alt-state {
         border-top: 1px solid $color-shark;
         .icon {
-          color: $color-forest-green;
+          color: $color-primary;
         }
         &::before {
           background: $color-shark;
