@@ -236,7 +236,7 @@ $radio-checked-stroke-size: 6px;
   cursor: pointer;
 
   &:checked {
-    & + .choice__text {
+    & + .tds-choice__text {
       color: $color-shark;
     }
   }
