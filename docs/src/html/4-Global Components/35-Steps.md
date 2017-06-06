@@ -15,7 +15,7 @@ Example:
 </div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.StepsExample />,
+    <Tds.StepsExample />,
     document.getElementById('stepsExample')
   );
 </script>

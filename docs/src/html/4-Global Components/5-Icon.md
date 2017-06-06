@@ -37,7 +37,7 @@ See the [Utility Icons](/3-Foundational-Elements/7-utility-icons.html) page for 
 <span id="icon-spyglass"></span>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.Icon glyph="spyglass" />,
+    <Tds.Icon glyph="spyglass" />,
     document.getElementById('icon-spyglass')
   );
 </script>
@@ -55,23 +55,23 @@ See the [Utility Icons](/3-Foundational-Elements/7-utility-icons.html) page for 
 <span id="icon-spyglass-error"></span>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.Icon glyph="spyglass" />,
+    <Tds.Icon glyph="spyglass" />,
     document.getElementById('icon-spyglass-noVariant')
   );
   ReactDOM.render(
-    <Thorium.Icon glyph="spyglass" variant="primary" />,
+    <Tds.Icon glyph="spyglass" variant="primary" />,
     document.getElementById('icon-spyglass-primary')
   );
   ReactDOM.render(
-    <Thorium.Icon glyph="spyglass" variant="secondary" />,
+    <Tds.Icon glyph="spyglass" variant="secondary" />,
     document.getElementById('icon-spyglass-secondary')
   );
   ReactDOM.render(
-    <Thorium.Icon glyph="spyglass" variant="disabled" />,
+    <Tds.Icon glyph="spyglass" variant="disabled" />,
     document.getElementById('icon-spyglass-disabled')
   );
   ReactDOM.render(
-    <Thorium.Icon glyph="spyglass" variant="error" />,
+    <Tds.Icon glyph="spyglass" variant="error" />,
     document.getElementById('icon-spyglass-error')
   );
 </script>
@@ -93,15 +93,15 @@ See the [Utility Icons](/3-Foundational-Elements/7-utility-icons.html) page for 
 <span id="icon-chevron-secondary-fixedWidth"></span>Ipsum
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.Icon glyph="spyglass" fixedWidth="true" />,
+    <Tds.Icon glyph="spyglass" fixedWidth="true" />,
     document.getElementById('icon-spyglass-fixedWidth')
   );
   ReactDOM.render(
-    <Thorium.Icon glyph="chevron" variant="primary" fixedWidth="true" />,
+    <Tds.Icon glyph="chevron" variant="primary" fixedWidth="true" />,
     document.getElementById('icon-chevron-primary-fixedWidth')
   );
   ReactDOM.render(
-    <Thorium.Icon glyph="chevron" variant="secondary" fixedWidth="true" />,
+    <Tds.Icon glyph="chevron" variant="secondary" fixedWidth="true" />,
     document.getElementById('icon-chevron-secondary-fixedWidth')
   );
 </script>

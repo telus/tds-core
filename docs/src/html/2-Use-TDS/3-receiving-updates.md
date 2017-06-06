@@ -21,7 +21,7 @@ template: doc.jade
 The CDN-hosted TDS has its complete version number in the path. For example, version 0.9.5 can be found at:
 
 <p style="text-align: center;">
-`https://cdn.telus.digital/thorium/core/v0.9.5/thorium.min.css`
+`https://cdn.telus.digital/thorium/core/v0.9.5/tds.min.css`
 </p>
 
 To upgrade, change this URL in your project's `<link>` tag.
@@ -29,7 +29,7 @@ To upgrade, change this URL in your project's `<link>` tag.
 If you want to use our latest and greatest release you can include the following stylesheet in your project:
 
 <p style="text-align: center;">
-`https://cdn.telus.digital/thorium/core/v0-latest/thorium.min.css`
+`https://cdn.telus.digital/thorium/core/v0-latest/tds.min.css`
 </p>
 
 However, if you are already in production and don't want our releases to break your site, we recommend you use a fixed version until you have time to accommodate the tweaks needed to consume the latest version as per our [Upgrading Guide](https://github.com/telusdigital/telus-thorium-core/blob/master/UPGRADING.md).
@@ -46,8 +46,8 @@ See the [npm-update documentation on npmjs.com](https://docs.npmjs.com/cli/updat
 
 ### Stay in the loop
 
-* Check [Thorium's homepage](/) to find the latest version number
-* Join us on Slack in **#nextlevel-tds**
+* Check [TDS homepage](/) to find the latest version number
+* Join us on Slack in **#tds-guild**
 
 [comment]: # (If only two lines separate this this headline and the preceeding list, the h2 will end up inside the last li tag)
 
@@ -98,7 +98,7 @@ In addition to the downloads page, the Sketch file is also found in the ["design
 TDS repairs defects by releasing the bug fixes in new versions.
 
 * Code that is released is not retracted
-* The bug fix is published in a new “patch” version of Thorium
+* The bug fix is published in a new “patch” version of TDS
     * Ex: `v0.3.0` &rarr; `v0.3.1`
 * Consumers are advised to update their TDS [version constraint](https://github.com/npm/node-semver#ranges) to get the patch release
 

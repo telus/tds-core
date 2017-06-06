@@ -18,7 +18,7 @@ A card will take on the full width of its parent.
 </div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.CardExample />,
+    <Tds.CardExample />,
     document.getElementById('cardExample')
   );
 </script>

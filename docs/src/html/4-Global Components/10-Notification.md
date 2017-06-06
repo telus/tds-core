@@ -61,33 +61,33 @@ The component comes in the following colour variations:
       <ul>
         <li style={margins}>
           <h4>Default</h4>
-          <Thorium.Notification>
+          <Tds.Notification>
             <h4>Default - no additional classes</h4>
-          </Thorium.Notification>
+          </Tds.Notification>
         </li>
         <li style={margins}>
           <h4>Notification Branded</h4>
-          <Thorium.Notification variant="branded">
+          <Tds.Notification variant="branded">
             <h4>.notification--branded</h4>
-          </Thorium.Notification>
+          </Tds.Notification>
         </li>
         <li style={margins}>
           <h4>Notification Success</h4>
-          <Thorium.Notification variant="success">
+          <Tds.Notification variant="success">
             <h4>.notification--success</h4>
-          </Thorium.Notification>
+          </Tds.Notification>
         </li>
         <li style={margins}>
           <h4>Notification Error</h4>
-          <Thorium.Notification variant="error">
+          <Tds.Notification variant="error">
             <h4>.notification--error</h4>
-          </Thorium.Notification>
+          </Tds.Notification>
         </li>
         <li style={margins}>
           <h4>Notification Instructional - same as default styling</h4>
-          <Thorium.Notification variant="instructional">
+          <Tds.Notification variant="instructional">
             <h4>.notification--instructional</h4>
-          </Thorium.Notification>
+          </Tds.Notification>
         </li>
       </ul>
     );

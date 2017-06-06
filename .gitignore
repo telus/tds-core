@@ -10,10 +10,12 @@ coverage
 .idea
 *.iws
 
-# Thorium build artifacts
+# TDS build artifacts
 dist
 docs/src/assets/css/styleguide.css
 docs/src/assets/css/thorium.css
+docs/src/assets/css/tds.css
+docs/src/assets/css/tds-lite.css
 docs/src/assets/fonts/*
 !docs/src/assets/fonts/.gitkeep
 docs/src/assets/downloads

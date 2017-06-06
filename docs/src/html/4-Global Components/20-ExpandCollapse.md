@@ -11,7 +11,7 @@ A content area which can be collapsed and expanded.
 <div id="regularExpandCollapseExample"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.RegularExpandCollapseExample />,
+    <Tds.RegularExpandCollapseExample />,
     document.getElementById('regularExpandCollapseExample')
   );
 </script>
@@ -43,7 +43,7 @@ We can control the Expand/Collapse component state.
 <div id="controlledExpandCollapseExample"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.ControlledExpandCollapseExample />,
+    <Tds.ControlledExpandCollapseExample />,
     document.getElementById('controlledExpandCollapseExample')
   );
 </script>
@@ -95,7 +95,7 @@ Accordion is a special kind of Collapse, which allows only one panel to be expan
 <div id="accordionExpandCollapseExample"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.AccordionExpandCollapseExample />,
+    <Tds.AccordionExpandCollapseExample />,
     document.getElementById('accordionExpandCollapseExample')
   );
 </script>

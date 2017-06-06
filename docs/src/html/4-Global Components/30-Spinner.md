@@ -15,7 +15,7 @@ template: doc.jade
 </div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SpinnerExample />,
+    <Tds.SpinnerExample />,
     document.getElementById('spinnerExample')
   );
 </script>
@@ -38,7 +38,7 @@ import { Spinner } from 'telus-thorium-enriched';
 </div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SpinnerEmbedExample />,
+    <Tds.SpinnerEmbedExample />,
     document.getElementById('spinnerEmbedExample')
   );
 </script>
@@ -65,7 +65,7 @@ import { Spinner } from 'telus-thorium-enriched';
 </div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SpinnerFullScreenExample />,
+    <Tds.SpinnerFullScreenExample />,
     document.getElementById('spinnerFullScreenExample')
   );
 </script>

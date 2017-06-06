@@ -77,7 +77,7 @@ Rows don't have any special props.
 
 Columns are the real movers and shakers of the grid system. You can set their
 layout properties across multiple viewport sizes by passing in various props.
-Reading the thorium [CSS grid documentation](/3-Foundations/3-grid.html) is
+Reading the TDS [CSS grid documentation](/3-Foundations/3-grid.html) is
 recommended if you're not sure about certain props.
 
 ```js

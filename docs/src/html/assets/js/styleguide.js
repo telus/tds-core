@@ -1,6 +1,6 @@
 /**
  * A small collection of scripts used in the styleguide's example pages. These
- * are not part of the Thorium API.
+ * are not part of the TDS API.
  */
 
 (function () {
