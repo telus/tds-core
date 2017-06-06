@@ -33,7 +33,7 @@ export default function counterButton(props) {
       disabled={disabled}
       {...extraProps}
     >
-      <i className={`selector-counter__icon icon icon-core-${icon}`} />
+      <i className={`selector-counter__icon tds-icon tds-icon-core-${icon}`} />
     </button>
   );
 }
