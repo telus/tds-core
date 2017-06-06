@@ -15,7 +15,7 @@ const CheckList = (props) => {
   return (
     <div className={cls}>
       {renderHeader}
-      <ul className="list list--checked list--small">
+      <ul className="tds-list tds-list--checked tds-list--small">
         {renderCheckList}
       </ul>
     </div>
