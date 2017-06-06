@@ -153,7 +153,7 @@
 		<text id="Contributor-opens-a" font-family="HelveticaNeueLTStd-Lt, Helvetica Neue LT Std" font-size="19" font-weight="300" line-spacing="28" letter-spacing="0.237500012" fill="#2A2C2E">
 		    <tspan x="249" y="420">Contributor opens a PR on Github, requesting </tspan>
 		    <tspan x="249" y="448">their change be reviewed and merged into </tspan>
-		    <tspan x="249" y="476">Thorium’s master branch.</tspan>
+		    <tspan x="249" y="476">TDS’ master branch.</tspan>
 		</text>
 		<text id="(bug-fix)" font-family="HelveticaNeueLTStd-Lt, Helvetica Neue LT Std" font-size="19" font-weight="300" letter-spacing="0.237500012" fill="#2A2C2E">
 		    <tspan x="0" y="831">(bug fix)</tspan>

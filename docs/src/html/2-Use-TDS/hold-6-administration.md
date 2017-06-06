@@ -48,7 +48,7 @@ This documentation doesn't need to be manually edited - it will automatically pi
 
 ---
 
-The [changelog](https://github.com/telusdigital/telus-thorium-core/blob/master/CHANGELOG.md) is a record of changes made to Thorium.
+The [changelog](https://github.com/telusdigital/telus-thorium-core/blob/master/CHANGELOG.md) is a record of changes made to TDS.
 It describes features, bug fixes, removals, and any other changes that a user of the system needs to know about when adopting the new release.
 Each entry in the changelog should include the following parts:
 
@@ -86,7 +86,7 @@ Each entry in the changelog should include the following parts:
 
 ---
 
-The [upgrading guide](https://github.com/telusdigital/telus-thorium-core/blob/master/CHANGELOG.md) informs developers of the specific changes they need to make when upgrading to a new version of Thorium.
+The [upgrading guide](https://github.com/telusdigital/telus-thorium-core/blob/master/CHANGELOG.md) informs developers of the specific changes they need to make when upgrading to a new version of TDS.
 This is the place to document backwards-incompatible changes, and how users should handle them. Examples include:
 
 * Removing or renaming something that's a documented part of Thorium's feature set, such as variables, mixins, functions, CSS classes
@@ -111,8 +111,8 @@ The `isInvalid` prop of the "FooBar" React component has been renamed to `invali
 
 ---
 
-The [README file](https://github.com/telusdigital/telus-thorium-core/blob/master/README.md) lives at the root of Thorium's source code repo and contains the essential information developers need to get the project up & running locally.
-The README should answer the first handful of essential questions a contributor will have when they first encounter Thorium. For example:
+The [README file](https://github.com/telusdigital/telus-thorium-core/blob/master/README.md) lives at the root of TDS' source code repo and contains the essential information developers need to get the project up & running locally.
+The README should answer the first handful of essential questions a contributor will have when they first encounter TDS. For example:
 
 * "How do I install local dependencies?"
 * "How do I start up the development site?"

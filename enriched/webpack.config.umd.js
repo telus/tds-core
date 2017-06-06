@@ -11,7 +11,7 @@ config.entry = {
 };
 
 config.output = {
-  library: 'Thorium',
+  library: 'Tds',
   libraryTarget: 'umd',
   path: path.join(process.cwd(), 'dist'),
   filename: '[name].js',

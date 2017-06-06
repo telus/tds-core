@@ -10,7 +10,7 @@ template: doc.jade
 <div id="selectorCounter-min1-max5"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SelectorCounter max="5" />,
+    <Tds.SelectorCounter max="5" />,
     document.getElementById('selectorCounter-min1-max5')
   );
 </script>
@@ -46,7 +46,7 @@ export default SelectorCounterEx;
 <div id="selectorCounter-disabled"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SelectorCounter disabled="true" aria-labelledby="disabled-selector-counter" />,
+    <Tds.SelectorCounter disabled="true" aria-labelledby="disabled-selector-counter" />,
     document.getElementById('selectorCounter-disabled')
   );
 </script>
@@ -60,7 +60,7 @@ export default SelectorCounterEx;
 <div id="selectorCounter-successful"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SelectorCounter successful="true" aria-labelledby="successful-selector-counter" />,
+    <Tds.SelectorCounter successful="true" aria-labelledby="successful-selector-counter" />,
     document.getElementById('selectorCounter-successful')
   );
 </script>
@@ -74,7 +74,7 @@ export default SelectorCounterEx;
 <div id="selectorCounter-invalid"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SelectorCounter invalid="true" aria-labelledby="invalid-selector-counter" />,
+    <Tds.SelectorCounter invalid="true" aria-labelledby="invalid-selector-counter" />,
     document.getElementById('selectorCounter-invalid')
   );
 </script>
@@ -109,7 +109,7 @@ The contextual prefix &amp; suffix can be used together or separately. They're a
 <div id="selectorCounterExample-noprops"></div>
 <script type="text/babel">
   ReactDOM.render(
-    <Thorium.SelectorCounterExample />,
+    <Tds.SelectorCounterExample />,
     document.getElementById('selectorCounterExample-noprops')
   );
 </script>
