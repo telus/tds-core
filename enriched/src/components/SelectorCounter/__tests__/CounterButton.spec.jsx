@@ -11,7 +11,7 @@ describe('<CounterButton />', () => {
 
   it('renders a given icon', () => {
     expect(shallow(<CounterButton icon="foo" />)
-      .find('.selector-counter__icon').is('.icon.icon-core-foo'))
+      .find('.selector-counter__icon').is('.tds-icon.tds-icon-core-foo'))
       .toEqual(true);
   });
 
