@@ -23,23 +23,6 @@ Getting the foundations right and then invite more users into the system, to enh
 **Early adopters of TDS**
 Same users as the digital platform. [List of users](https://docs.google.com/presentation/d/1uS5J-eOtH1Mpu0maaDX9FEUM2fSXCQs04LjDigj1w4g/edit#slide=id.g1d1d5be03d_0_573)
 
-
-#### Quick Links
-Use the following links to quickly access:
-
-- **Everything**: [All TDS-related issues](https://github.com/telusdigital/telus-thorium-core/issues)
-
-- **Ideas**: [Submitted ideas](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5BStatus%5D+Idea%22)
-
-- **Designs**: [Components being designed](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+label%3A%22%5BCategory%5D+Design%22+label%3A%22%5BStatus%5D+In+progress%22)
-
-- **Coded components**: [Components being implemented](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5BType%5D+Component%22+label%3A%22%5BStatus%5D+In+progress%22)
-
-- **Accessibility**: [Accessibility issues](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5BCategory%5D+Accessibility%22)
-
-- **Current milestones**: [Upcoming releases](https://github.com/telusdigital/telus-thorium-core/milestones)
-
-
 ## Mid-term
 Open rollout and usage of TDS system and design guild usage and contribution model to all of TELUS.
 
