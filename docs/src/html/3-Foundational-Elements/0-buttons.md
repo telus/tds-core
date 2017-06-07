@@ -6,7 +6,6 @@ template: doc.jade
 * [Overview](#overview)
 * [Primary Button](#primary-button)
 * [Secondary Button](#secondary-button)
-* [Disabled state](#disabled-state)
 * [Links](#links)
 * [Spacing](#spacing)
 
@@ -150,18 +149,6 @@ Button classes can also be applied to `<a>` tags.
 <a class="tds-button tds-button--primary" role="button" href="#">
     Anchor button
 </a>
-```
-
-## Disabled state
-
-If you want to prevent that a button from being clicked, use the `disabled` attribute.
-
-<button class="tds-button tds-button--primary tds-button--disabled" disabled>Disabled</button>
-
-```html
-<button class="tds-button tds-button--primary tds-button--disabled" disabled>
-    Disabled
-</button>
 ```
 
 _Note_: The mobile button width is fluid and stretches to cover all columns currently in view.

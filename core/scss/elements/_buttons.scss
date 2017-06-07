@@ -173,16 +173,4 @@ a.tds-button {
     box-shadow: none;
     text-align: center;
   }
-
-  &--disabled {
-    background-color: $color-gainsboro;
-    color: $color-shark;
-    cursor: default;
-
-    &:hover {
-      box-shadow: none;
-      background-color: $color-gainsboro;
-      color: $color-shark;
-    }
-  }
 }
