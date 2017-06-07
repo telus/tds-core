@@ -3,7 +3,7 @@ block vars
   - var bodyclass = null;
   - var assetsUrl = (process.env.NODE_ENV === 'dev') ? locals.assetsUrl.dev : locals.assetsUrl.prod;
   - var isStaging = (process.env.NODE_ENV != 'production') ? '-staging': '';
-  - var dtmPageURL = page.url.replace(/^\//,"");
+  - var dtmPageURL = (page.url.replace(/^\//,"") == '') ? 'Homepage': page.url.replace(/^\//,"");
 html(lang='en')
   head
     block head
@@ -13,7 +13,7 @@ html(lang='en')
       title
         block title
           = locals.name
-
+          
       script.
         window.dataLayer = {
           page: {
