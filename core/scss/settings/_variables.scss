@@ -105,14 +105,15 @@ $columns: (
 $gutter: 32px;
 
 // z-index scale
-$zindex-dropdown-backdrop:  990 !default;
+$zindex-negative:            -1 !default;
+$zindex-dropdown-backdrop:  900 !default;
 $zindex-navigation:        1000 !default;
 $zindex-dropdown:          1000 !default;
-$zindex-fixed:             1030 !default;
-$zindex-sticky:            1030 !default;
-$zindex-modal-backdrop:    1040 !default;
-$zindex-modal:             1050 !default;
-$zindex-popover:           1060 !default;
+$zindex-fixed:             1300 !default;
+$zindex-sticky:            1300 !default;
+$zindex-modal-backdrop:    1400 !default;
+$zindex-modal:             1500 !default;
+$zindex-popover:           1600 !default;
 
 //
 // Feature flags
@@ -128,9 +129,9 @@ $zindex-popover:           1060 !default;
 // lists.
 //
 // To enable this feature, define $thorium-enable-deprecated-list-classes: true
-// prior to your @import "thorium" directive.
+// prior to your @import "tds" directive.
 $enable-deprecated-list-classes: false;
 
-@if variable-exists(thorium-enalble-deprecated-list-classes) {
-  $enable-deprecated-list-classes: $thorium-enalble-deprecated-list-classes;
+@if variable-exists(thorium-enable-deprecated-list-classes) {
+  $enable-deprecated-list-classes: $thorium-enable-deprecated-list-classes;
 }
