@@ -2,21 +2,27 @@
 
 ## Upgrading to v0.16.x
 
-* `button-green` changed to `tds-button--green`
-* `button-purple` changed to `tds-button--purple`
-* `button-green--outlined` changed to `tds-button--green tds-button--outlined`
-* `button-purple--outlined` changed to `tds-button--purple tds-button--outlined`
+### Buttons
+* `button-green` changed to `tds-button--primary`
+* `button-purple` changed to `tds-button--secondary`
+* `button-green--outlined` changed to `tds-button--primary tds-button--outlined`
+* `button-purple--outlined` changed to `tds-button--secondary tds-button--outlined`
 * `button-inverted` changed to `tds-button--inverted`
 * `button-inverted--outlined` changed to `tds-button--inverted tds-button--outlined`
 * `button-link` changed to `tds-button--link` and now also includes the chevron and can be made purple or green with the revised classes mentioned above
-* to disable a button you will have to use `tds-button--disable` together with `[disabled]` attribute for functionality
+* removed `tds-button[disabled]` styles because if a button needs to be disabled then it might as well not be there
+
+### Links
 * `link` changed to `tds-link`
 * `link--descent` changed to `tds-link--descent`
 * `link--inverted` changed to `tds-link--inverted`
 * `chevron-link` (i.e. purple chevron link) changed to `tds-chevron-link--secondary`
 * `chevron-link--secondary` (i.e. green chevron link) changed to `tds-chevron-link--primary` and you need to remove the icon markup
 * to get the styles from `chevron-link--inverted` you now need to use `tds-chevron-link tds-chevron-link--inverted`
-- Forms
+* `link link--inverted link--descent` class for white links on purple background `tds-link tds-link--secondary tds-link--inverted tds-link--descent`
+* chevron links don't need the `<i class="icon icon-core-chevron"></i>` mark up because the chevron icon is now part of the anchor link mark up
+
+### Forms
 * `field` changed to `tds-field`
 * `field--error` changed to `tds-field--error`
 * `field--success` changed to `tds-field--success`
@@ -29,31 +35,51 @@
 * `hint` changed to `tds-hint`
 * `hint__trigger` changed to `tds-hint__trigger`
 * `hint__text` changed to `tds-hint__text`
-- Lists
+
+### Lists
 * `list` changed to `tds-list`
 * `list--*` changed to `tds-list--*`
+* remove deprecated list classes that have already been replaced by their BEMified version, e.g: `list-alpha` was replaced by already existing and documented `list--alpha` class.
+
+### SASS
 * remove (SASS) non-standard `$color-grey-light` (because it is not part of the colour palette)
 * remove (SASS) `$color-link-hover` because default underlined links don't change colour when hovered
-* remove deprecated list classes that have already been replaced by their BEMified version, e.g: `list-alpha` was replaced by already existing and documented `list--alpha` class.
+
+### Typography
+* `heading-*` changed to `tds-heading-*`
+* `strong` changed to `.tds-strong`
+* `text` changed to `tds-text`
+* `text--small` changed to `tds-text--small`
+* `text--medium` changed to `tds-text--medium`
 * remove `subhead`, use `heading-3` instead (Deprecated in v0.5.0, 10/18/16)
 * remove `subhead--small`, use `heading-4` instead (Deprecated in v0.5.0, 10/18/16)
-- RECOMMENDATIONS because we want to deprecate non namespaced classes
-* use `container` instead of `tds-container`
-* use `container--limited-width` instead of `tds-container--limited-width`
-* use `container--fluid` instead of `tds-container--fluid`
-* use `button-row` instead of `tds-button-row`
-* use `field-col` instead of `tds-fields-col`
-* use `grid-row` instead of `tds-grid-row`
-* use `xs-*` instead of `tds-col-xs-*`
-* use `small-*` instead of `tds-col-sm-*`
-* use `medium-*` instead of `tds-col-md-*`
-* use `large-*` instead of `tds-col-lg-*`
-* use `xl-*` instead of `tds-col-xl-*`
-* use `offset-{xs|small|medium|large|xl}-*` instead of `tds-offset-{xs|sm|md|lg|xl}-*`
-* use `push-{xs|small|medium|large|xl}-*` instead of `tds-push-{xs|sm|md|lg|xl}-*`
-* use `pull-{xs|small|medium|large|xl}-*` instead of `tds-pull-{xs|sm|md|lg|xl}-*`
-* use `hidden-{xs|small|medium|large|xl}` instead of `tds-hidden-{xs|sm|md|lg|xl}`
-* use `hidden-{xs|small|medium|large|xl}-up` instead of `tds-hidden-{xs|sm|md|lg|xl}-up`
+
+### Icons
+* `icon` changed to `tds-icon`
+* `icon-core-*` changed to `tds-icon-core-*`
+* `icon--*` changed to `tds-icon--*`
+
+### RECOMMENDATIONS because we want to deprecate non-namespaced classes
+* `container` changed to `tds-container`
+* `container--limited-width` changed to `tds-container--limited-width`
+* `container--fluid` changed to `tds-container--fluid`
+* `button-row` changed to `tds-button-row`
+* `field-col` changed to `tds-fields-col`
+* `grid-row` changed to `tds-grid-row`
+* `xs-*` changed to `tds-xs-*`
+* `small-*` changed to `tds-small-*`
+* `medium-*` changed to `tds-medium-*`
+* `large-*` changed to `tds-large-*`
+* `xl-*` changed to `tds-xl-*`
+* use `offset-{xs|small|medium|large|xl}-*` instead of `tds-offset-{xs|small|medium|large|xl}-*`
+* use `push-{xs|small|medium|large|xl}-*` instead of `tds-push-{xs|small|medium|large|xl}-*`
+* use `pull-{xs|small|medium|large|xl}-*` instead of `tds-pull-{xs|small|medium|large|xl}-*`
+* use `hidden-{xs|small|medium|large|xl}` instead of `tds-hidden-{xs|small|medium|large|xl}`
+* use `hidden-{xs|small|medium|large|xl}-up` instead of `tds-hidden-{xs|small|medium|large|xl}-up`
+
+### Components
+* `<Collapsible/>` global component changed to `<ExpandCollapse/>`
+
 
 ## Upgrading to v0.15.x
 
@@ -63,7 +89,7 @@
 ## Upgrading to v0.14.x
 
 * if you need an offset for multiple viewports, they need to be called out individually. Larger
-viewports won't inherit the offsets from smaller viewports anymore. So, if you are using `offset-xs-1` and are expecting that offset to be applied on all small, medium, large and xl viewports then you will have to add `offset-s-1 offset-medium-1 offset-large-1 offset-xl-1`
+viewports won't inherit the offsets from smaller viewports anymore. So, if you are using `offset-xs-1` and are expecting that offset to be applied on all small, medium, large and xl viewports then you will have to add `offset-small-1 offset-medium-1 offset-large-1 offset-xl-1`
 
 ## Upgrading to v0.10.x
 

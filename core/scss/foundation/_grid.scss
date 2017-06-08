@@ -34,8 +34,7 @@
 // Rows & columns
 //
 
-.tds-container,
-.container {
+.tds-container {
   @include clearfix;
 
   margin: 0 auto;
@@ -57,8 +56,7 @@
 }
 
 // Rows are horizontal groups of columns.
-.tds-grid-row,
-.grid-row {
+.tds-grid-row {
   @include clearfix();
 
   margin: 0 ($gutter / 2) * -1;
@@ -81,63 +79,52 @@
 // Generate the column and offset-column classes for each breakpoint and viewport.
 @each $size, $count in $columns {
   [class^="tds-#{$size}-"],
-  [class*=" tds-#{$size}-"],
-  [class^="#{$size}-"],
-  [class*="#{$size}-"] {
+  [class*=" tds-#{$size}-"] {
     padding: 0 $gutter / 2;
   }
 
   @for $num from 1 through $count {
     @include from-breakpoint(#{$size}) {
-      .tds-#{$size}-#{$num},
-      .#{$size}-#{$num} {
+      .tds-#{$size}-#{$num} {
         @include columns($num, $count);
       }
 
-      .tds-offset-#{$size}-#{$num},
-      .offset-#{$size}-#{$num} {
+      .tds-offset-#{$size}-#{$num} {
         @include offsetcolumns($num, $count);
       }
 
-      .tds-pull-#{$size}-#{$num},
-      .pull-#{$size}-#{$num} {
+      .tds-pull-#{$size}-#{$num} {
         @include pullcolumns($num, $count);
       }
 
-      .tds-push-#{$size}-#{$num},
-      .push-#{$size}-#{$num} {
+      .tds-push-#{$size}-#{$num} {
         @include pushcolumns($num, $count);
       }
     }
   }
 
   @include at-breakpoint(#{$size}) {
-    .tds-offset-#{$size}-0,
-    .offset-#{$size}-0 {
+    .tds-offset-#{$size}-0 {
       margin-left: 0;
     }
 
-    .tds-pull-#{$size}-0,
-    .pull-#{$size}-0 {
+    .tds-pull-#{$size}-0 {
       right: 0;
     }
 
-    .tds-push-#{$size}-0,
-    .push-#{$size}-0 {
+    .tds-push-#{$size}-0 {
       left: 0;
     }
   }
 
   @include from-breakpoint(#{$size}) {
-    .tds-hidden-#{$size}-up,
-    .hidden-#{$size}-up {
+    .tds-hidden-#{$size}-up {
       display: none !important;
     }
   }
 
   @include at-breakpoint(#{$size}) {
-    .tds-hidden-#{$size},
-    .hidden-#{$size}-up {
+    .tds-hidden-#{$size} {
       display: none !important;
     }
   }
@@ -149,8 +136,7 @@
 
 // .field-col is helper class which constrains a field to the maximum recommended
 // width at each breakpoint. It's basically an alias for .medium-7.large-5.xl-4
-.tds-field-col,
-.field-col {
+.tds-field-col {
   padding: 0 $gutter / 2;
 
   @include from-breakpoint(medium) {
@@ -169,8 +155,7 @@
 // There should be more spacing between fields & buttons, than between consecutive
 // fields. The .button-row class adds that extra spacing. It can be used by itself,
 // or mixed with a .grid-row block.
-.tds-button-row,
-.button-row {
+.tds-button-row {
   @include clearfix();
 
   padding-top: 20px;
