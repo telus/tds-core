@@ -3,6 +3,12 @@ title: Contributing
 template: doc.jade
 ---
 
+- [Welcome](#welcome)
+- [Types of Contributions](#types-of-contributions)
+- [Start Contributing](#start-contributing)
+- [Components and Blocks Contribution Criteria](#components-and-blocks contribution-criteria)
+
+
 ## Welcome!
 
 ---
@@ -23,22 +29,22 @@ If you find a bug please [create an issue through GitHub](https://github.com/tel
 * Any details about your local setup that might be helpful in troubleshooting.
 * Detailed steps to reproduce the bug.
 
-### Contribute code
-
-Fix [bugs](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aissue+is%3Aopen+label%3Abug) and/or implement [features](https://github.com/telusdigital/telus-thorium-core/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afeature) by choosing an open task from the [Github issues list](https://github.com/telusdigital/telus-thorium-core/issues). See the [contributor workflow](#contributor-workflow) section for a more detailed description of how to get code into TDS.
+For more details on how to file Github issues, refer to the repo's [wiki](https://github.com/telusdigital/telus-thorium-core/wiki/Tasks,-Defects-and-User-Story-Examples).
 
 ### Author documentation
 
 The TELUS Design System could always use better documentation, whether as part of the official documentation site, in comments, or even on the web as blog posts or articles.
 
-Documentation lives in the [docs directory](https://github.com/telusdigital/telus-thorium-core/tree/master/docs) and follows just a few simple rules:
+The current documentation lives in the [docs directory](https://github.com/telusdigital/telus-thorium-core/tree/master/docs) and follows just a few simple rules:
 
 * Each category of documentation is a folder named like *1-Introduction* where "Introduction" is the name of the category, and 1 is its position in the navigation menu.
 * Within each category folder are markdown files documenting TDS.
 * Those markdown files follow the same naming convention as their parent folders.
-* Changing documentation follows the same [contributor workflow](#contributor-workflow) as committing code.
+* Submit a pull request with any new updates
 
 ### Submit Feedback
+
+---
 
 The best way to send feedback is to [file an issue on GitHub](https://github.com/telusdigital/telus-thorium-core/issues).
 
@@ -47,6 +53,13 @@ If you're proposing a feature:
 * Explain in detail how it would work.
 * Keep the scope as narrow as possible, to make it easier to implement.
 * Remember that this is a volunteer-driven project, and that contributions are welcome.
+
+For more details on how to file Github issues, refer to the repo's [wiki](https://github.com/telusdigital/telus-thorium-core/wiki/Tasks,-Defects-and-User-Story-Examples).
+
+### Contribute code
+
+Fix [bugs](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5BType%5D+Bug%22) and/or implement [features](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+Request%22) by choosing an open task from the [Github issues list](https://github.com/telusdigital/telus-thorium-core/issues).
+
 
 ## Start contributing
 
@@ -58,58 +71,10 @@ At its core, contributing with Git involves:
 2. Creating a working branch, from master, in which to make changes.
 3. Opening a pull request from your branch to master.
 
-### Create a working branch
+For more details on how to contribute code, refer to the repo's [wiki](https://github.com/telusdigital/telus-thorium-core/wiki/Contributing-Code)
 
-Pulling the latest code branching from master.
 
-```bash
-git checkout master
-git pull origin master
-git checkout -b feature/DSR-1_adding-a-widget master
-```
-
-<small>The branch is named according to [TDS' branch naming conventions](#working-branch-naming)</small>
-
-Now it's time to make some changes and commit them! Edit some files. When you're done, push up your branch to Github:
-
-```bash
-git commit
-git push -u origin feature/adding-a-widget
-```
-
-Once the branch is sent to Github, [create a pull request](https://github.com/telusdigital/telus-thorium-core/pulls) from your branch to `master`. It's at this point that others may offer feedback and suggestions.
-
-### Commit message requirements
-
-Use [commitizen](https://commitizen.github.io/cz-cli/) to follow simple commit conventions.
-
-TDS' changelog is automatically generated from the master branch's commit messages. Individual contributors should write an informative commit message:
-
-If you like to work in small chunks and make many commits along the way, feel free to do so in your feature branch. When the feature is ready for master, you can compose the final message by editing the Pull Request description on Github.
-
-### Tips &amp; Troubleshooting
-
-Git will let you know if a PR can't be automatically merged. When this is the case, you should update your branch with the latest changes from master, fix any merge conflicts, then push those changes up to Github.
-
-```bash
-git checkout master
-git pull origin master
-git checkout feature/adding-a-widget
-git merge master
-
-... edit any files that have reported merge conflicts ...
-
-git commit
-git push origin feature/adding-a-widget
-```
-
-When a branch is ready for a PR, it's helpful to consolidate many small commits into a single change with a descriptive commit message. This is done by [rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) your branch on master, then squashing all its commits into one, at which point you can amend the final commit message.
-
-TDS admins are also able to consolidate the commits from a PR via Github, by clicking the [squash and merge](https://github.com/blog/2141-squash-your-commits) button.
-
-Consolidating changes makes for a clean, readable history in master, and neatly-packaged changes which can be moved to release branches.
-
-## Contribution criteria
+## Components and Blocks Contribution criteria
 
 ---
 
@@ -137,7 +102,7 @@ Please refer to the [TDS Design contribution process](https://docs.google.com/a/
     * Code is accompanied by automated tests wherever applicable
     * Changes are either backwards-compatible, or target the appropriate [semantically versioned](/2-Use-TDS/1-getting-started.html#versioning) release
     * CSS follows [BEM naming conventions](https://en.bem.info/methodology/)
-    * JavaScript follows [AirBnB style guidelines](https://github.com/airbnb/javascript) and is written as ES2015
+    * JavaScript follows AirBnB [Javascript](https://github.com/airbnb/javascript) and [React](https://github.com/airbnb/javascript/tree/master/react) style guidelines and is written as ES2015
 
 ### Process
 
