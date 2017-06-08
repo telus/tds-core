@@ -81,7 +81,7 @@ We can control the Expand/Collapse component state.
             Panel #2 Body
             </ExpandCollapse.Panel>
         </ExpandCollapse.Group>
-      </div>
+      </div>  
     );
   }
 ```

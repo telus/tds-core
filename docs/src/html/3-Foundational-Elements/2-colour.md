@@ -63,7 +63,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   		#2A2C2E
   		  </p>
         <p>
-		Usage: Sub headings (H3, H4), body text, and focus form objects borders
+  		Usage: Sub headings (H3, H4), body text, and focus form objects borders
   	    </p>
   </div>
 </div>
@@ -147,7 +147,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   		#FFFFFF
         </p>
         <p>
-		Usage: Page background, inverted links/buttons
+  		Usage: Page background, inverted links/buttons
   	    </p>
   	</div>
   </div>

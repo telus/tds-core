@@ -2,6 +2,21 @@
 
 ## Upgrading to v0.16.x
 
+### NEW CDN files
+* New CSS CDN file path is
+  * https://cdn.telus.digital/thorium/core/v0.16.0/tds.min.css
+  * https://cdn.telus.digital/thorium/enriched/v0.16.0/tds-enriched.min.css
+* New JS file path on CDN with Global Component
+  * https://cdn.telus.digital/thorium/enriched/v0.16.0/tds-enriched.min.js
+* Files with the latest files
+  * https://cdn.telus.digital/thorium/core/v0-latest/tds.min.css
+  * https://cdn.telus.digital/thorium/enriched/v0-latest/tds-enriched.min.css
+  * https://cdn.telus.digital/thorium/enriched/v0-latest/tds-enriched.min.js
+
+### NPM Packages on npmjs.org
+* tds-jenkins/telus-thorium-core has moved to telusdigital/tds-core
+* tds-jenkins/telus-thorium-enriched has moved to telusdigital/tds-enriched
+
 ### Buttons
 * `button-green` changed to `tds-button--primary`
 * `button-purple` changed to `tds-button--secondary`
