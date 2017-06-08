@@ -50,7 +50,7 @@ class SelectorCounterExample extends Component {
           <div className={fieldClasses}>
             <label htmlFor="ex-selcounter">How many smartphone plans?</label>
             <div className={helperClasses} id="ex-selcounter-desc">
-              <p className="text--small">Instructions</p>
+              <p className="tds-text--small">Instructions</p>
               <ul className={listClasses}>
                 <li className="tds-list__item">Do not pick 5</li>
               </ul>

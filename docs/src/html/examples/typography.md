@@ -28,7 +28,7 @@ template: example.jade
       <p class="text--medium">p2 .text--medium Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.
     </div>
     <div class="tds-medium-12">
-      <p class="text--small">p3 .text--small Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
+      <p class="tds-text--small">p3 .tds-text--small Lorem ipsum dolor sit amet. Nunc condimentum non<sup>est</sup> sed<sub>rutrum</sub>. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.</p>
     </div>
     <div class="tds-medium-12">
     </div>

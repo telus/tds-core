@@ -156,12 +156,12 @@ Tertiary copy; lowest importance level of of content.
 
 <div class="example example--type">
     <header class="heading-3">Example</header>
-    <div class=" text text--small">Small body text.</div>
+    <div class="tds-text tds-text--small">Small body text.</div>
     <small>This is also small body text.</small>
 </div>
 
 ```html
-<div class="text text--small">Small body text.</div>
+<div class="tds-text tds-text--small">Small body text.</div>
 <small>This is also small body text.</small>
 ```
 
