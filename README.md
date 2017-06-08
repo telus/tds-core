@@ -46,6 +46,8 @@ Ready to commit changes? Validate your code by running the linters & tests:
     npm run lint
     npm test
 
+Or even better, setup a [pre-commit git hook](https://github.com/telusdigital/telus-thorium-core/wiki/pre-commit-hook-for-linting).
+
 To commit your changes use the command
 
     git cz
