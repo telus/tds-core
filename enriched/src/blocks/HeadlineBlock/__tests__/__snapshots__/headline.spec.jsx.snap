@@ -18,7 +18,7 @@ exports[`Headline matches snapshot 1`] = `
           className="tds-medium-6 tds-large-7 tds-xl-7"
         >
           <p
-            className="heading-4 headline-block--grape"
+            className="tds-heading-4 headline-block--grape"
           >
             Foo
           </p>

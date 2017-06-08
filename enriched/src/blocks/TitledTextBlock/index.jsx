@@ -12,7 +12,7 @@ class TitledTextBlock extends Component {
 
     const contentHtml = content.map((c, index) => (
       <div key={index} className="title-text-block__content">
-        <h2 className="heading-4">{c.title}</h2>
+        <h2 className="tds-heading-4">{c.title}</h2>
         <p>{c.content}</p>
       </div>
     ));

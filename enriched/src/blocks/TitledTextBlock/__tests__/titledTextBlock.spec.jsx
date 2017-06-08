@@ -24,10 +24,10 @@ describe('TextBlock Component', () => {
   });
 
   it('should render title with specified class', () => {
-    const wrapper = mount(<TitledTextBlock {...data} titleHeadingClass="heading-2" />);
+    const wrapper = mount(<TitledTextBlock {...data} titleHeadingClass="tds-heading-2" />);
     const elem = wrapper.find('h1').first();
     expect(elem.text()).toEqual('Title1');
-    expect(elem.hasClass('heading-2')).toBeTruthy();
+    expect(elem.hasClass('tds-heading-2')).toBeTruthy();
   });
 
   it('should render content', () => {

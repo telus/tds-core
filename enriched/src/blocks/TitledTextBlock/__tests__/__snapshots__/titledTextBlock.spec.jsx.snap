@@ -34,7 +34,7 @@ exports[`TextBlock Component matches snapshot 1`] = `
             className="title-text-block__content"
           >
             <h2
-              className="heading-4"
+              className="tds-heading-4"
             >
               Small Title 1
             </h2>

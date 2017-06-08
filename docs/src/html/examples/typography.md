@@ -36,7 +36,7 @@ template: example.jade
 
   <div class="tds-grid-row">
     <div class="tds-medium-6">
-	    <h3 class="heading-3">In a nutshell</h3>
+	    <h3 class="tds-heading-3">In a nutshell</h3>
 	    <p>
 		    TELUS Business Email is connected to a Microsoft Exchange Server, securely<sup>1</sup> hosted<sub>2</sub> in our TELUS &ldquo;Class A&rdquo; Canadian data centre.
 		    There are currently no costly upfront IT purchases or ongoing infrastructure staffing costs, and no software to update, license and maintain.
@@ -46,7 +46,7 @@ template: example.jade
 	    </p>
 	  </div>
 	  <div class="tds-medium-4 tds-offset-medium-2">
-	    <h3 class="heading-3">Key Features</h3>
+	    <h3 class="tds-heading-3">Key Features</h3>
 	    <ul class="tds-list tds-list--checked tds-list--small">
 		    <li class="tds-ist__item">Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.
     		</li>
@@ -60,7 +60,7 @@ template: example.jade
 
   <div class="tds-grid-row">
 	  <div class="tds-xs-12">
-	    <h2 class="heading-2">Travelling without a roaming package?</h2>
+	    <h2 class="tds-heading-2">Travelling without a roaming package?</h2>
 	    <p>
     		Meet with your team or customers live on a conference call from any phone<sup>1</sup>, regardless of location. Meet with your team or customers live on a conference call from any phone<sup>1</sup>, regardless of location. Meet with your team or customers live on a conference call from any phone<sup>1</sup>, regardless of location.
 	    </p>
@@ -98,11 +98,11 @@ template: example.jade
   </div>
   <div class="tds-grid-row">
 	  <div class="tds-xs-12">
-	    <h2 class="heading-2">Lists</h2>
+	    <h2 class="tds-heading-2">Lists</h2>
 
 	    <hr>
 
-	    <h3 class="heading-3">Lists among paragraphs</h3>
+	    <h3 class="tds-heading-3">Lists among paragraphs</h3>
 
 	    <p>
 		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis justo ut purus interdum, nec rhoncus magna convallis. Integer suscipit, orci ut porta feugiat, nulla elit pellentesque sapien, sit amet tristique lectus leo at enim. Nulla sodales, elit sed feugiat vestibulum, elit est pretium lacus, in molestie est quam vitae eros.

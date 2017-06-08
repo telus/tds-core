@@ -13,7 +13,7 @@ const HeadlineBlock = (props) => {
       <div className="tds-container tds-container--limited-width">
         <div className="tds-grid-row">
           <div className="tds-medium-6 tds-large-7 tds-xl-7">
-            <p className="heading-4 headline-block--grape">{eyebrow}</p>
+            <p className="tds-heading-4 headline-block--grape">{eyebrow}</p>
             <h1 className="display-heading-1">{title}</h1>
           </div>
         </div>

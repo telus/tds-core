@@ -96,7 +96,7 @@ A selection input allows a user to choose one, or many values from a set.
 A radio input lets the user pick a single value from one or more choices.
 
 <fieldset class="tds-field">
-    <legend class="heading-3">Choose one</legend>
+    <legend class="tds-heading-3">Choose one</legend>
     <label for="choice_a" class="tds-choice">
 	    <input type="radio" name="answer" id="choice_a">
 	    <span class="tds-choice__text">Choice A</span>
@@ -113,7 +113,7 @@ A radio input lets the user pick a single value from one or more choices.
 
 ```html
 <fieldset class="tds-field">
-    <legend class="heading-3">Choose one</legend>
+    <legend class="tds-heading-3">Choose one</legend>
     <label for="choice_a" class="tds-choice">
 	    <input type="radio" name="answer" id="choice_a">
 	    <span class="tds-choice__text">Choice A</span>
@@ -134,7 +134,7 @@ A radio input lets the user pick a single value from one or more choices.
 Checkboxes are similar to radio buttons in their appearance and markup. The key difference is that checkboxes can accept a multiple choice response.
 
 <fieldset class="tds-field">
-    <legend class="heading-3">Choose all that apply</legend>
+    <legend class="tds-heading-3">Choose all that apply</legend>
     <label for="multiple-choice-a" class="tds-choice">
 	<input type="checkbox" name="multiple-choice" id="multiple-choice-a">
 	<span class="tds-choice__text">Choice A</span>
@@ -155,7 +155,7 @@ Checkboxes are similar to radio buttons in their appearance and markup. The key 
 
 ```html
 <fieldset class="tds-field">
-    <legend class="heading-3">Choose all that apply</legend>
+    <legend class="tds-heading-3">Choose all that apply</legend>
     <label for="multiple-choice-a" class="tds-choice">
 	<input type="checkbox" name="multiple-choice" id="multiple-choice-a">
 	<span class="tds-choice__text">Choice A</span>
@@ -357,7 +357,7 @@ The `.tds-field` `--success` and `--error` modifiers will also style dropdowns w
 Use the `.tds-choice--error` modifier when there's a problem with an individual choice of a selection field.
 
 <fieldset class="tds-field">
-    <legend class="heading-3">Which shape has less than ten sides?</legend>
+    <legend class="tds-heading-3">Which shape has less than ten sides?</legend>
     <label for="choice-decagon" class="tds-choice">
 	<input type="radio" id="choice-decagon" name="shape-choice">
 	<span class="tds-choice__text">Decagon</span>
@@ -371,7 +371,7 @@ Use the `.tds-choice--error` modifier when there's a problem with an individual 
 
 ```html
 <fieldset class="tds-field">
-    <legend class="heading-3">Which shape has less than ten sides?</legend>
+    <legend class="tds-heading-3">Which shape has less than ten sides?</legend>
     <label for="choice-decagon" class="tds-choice">
 	<input type="radio" id="choice-decagon" name="shape-choice">
 	<span class="tds-choice__text">Decagon</span>
@@ -385,7 +385,7 @@ Use the `.tds-choice--error` modifier when there's a problem with an individual 
 ```
 
 <fieldset class="tds-field">
-    <legend class="heading-3">Which shape has four or more sides?</legend>
+    <legend class="tds-heading-3">Which shape has four or more sides?</legend>
     <label for="choice-square" class="tds-choice">
 	<input type="checkbox" id="choice-square" name="shape-choice" checked>
 	<span class="tds-choice__text">Square</span>
@@ -399,7 +399,7 @@ Use the `.tds-choice--error` modifier when there's a problem with an individual 
 
 ```html
 <fieldset class="tds-field">
-    <legend class="heading-3">Which shape has four or more sides?</legend>
+    <legend class="tds-heading-3">Which shape has four or more sides?</legend>
     <label for="choice-square" class="tds-choice">
 	<input type="checkbox" id="choice-square" name="shape-choice" checked>
 	<span class="tds-choice__text">Square</span>

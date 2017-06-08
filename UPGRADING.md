@@ -66,8 +66,8 @@
 * `text` changed to `tds-text`
 * `text--small` changed to `tds-text--small`
 * `text--medium` changed to `tds-text--medium`
-* remove `subhead`, use `heading-3` instead (Deprecated in v0.5.0, 10/18/16)
-* remove `subhead--small`, use `heading-4` instead (Deprecated in v0.5.0, 10/18/16)
+* remove `subhead`, use `tds-heading-3` instead (Deprecated in v0.5.0, 10/18/16)
+* remove `subhead--small`, use `tds-heading-4` instead (Deprecated in v0.5.0, 10/18/16)
 
 ### Icons
 * `icon` changed to `tds-icon`
