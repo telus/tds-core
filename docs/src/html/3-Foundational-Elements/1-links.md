@@ -65,7 +65,7 @@ The underline style distinguishes these as interactive elements.
         Medium/Lorem ipsum
     </a>
     <br/>
-    <a href="#" class="tds-link tds-link--primary tds-link--inverted tds-link--descent text--small">
+    <a href="#" class="tds-link tds-link--primary tds-link--inverted tds-link--descent tds-text--small">
         Small/Lorem ipsum
     </a>
 </div>
@@ -79,7 +79,7 @@ The underline style distinguishes these as interactive elements.
     Medium/Lorem ipsum
 </a>
 <br/>
-<a href="#" class="tds-link tds-link--primary tds-link--inverted tds-link--descent text--small">
+<a href="#" class="tds-link tds-link--primary tds-link--inverted tds-link--descent tds-text--small">
     Small/Lorem ipsum
 </a>
 ```
@@ -94,7 +94,7 @@ The underline style distinguishes these as interactive elements.
         Medium/Lorem ipsum
     </a>
     <br/>
-    <a href="#" class="tds-link tds-link--secondary tds-link--inverted tds-link--descent text--small">
+    <a href="#" class="tds-link tds-link--secondary tds-link--inverted tds-link--descent tds-text--small">
         Small/Lorem ipsum
     </a>
 </div>
@@ -104,11 +104,11 @@ The underline style distinguishes these as interactive elements.
     Lorem ipsum
 </a>
 <br/>
-<a href="#" class="tds-link tds-link--secondary tds-link--inverted tds-link--descent text--medium">
+<a href="#" class="tds-link tds-link--secondary tds-link--inverted tds-link--descent tds-text--medium">
     Medium/Lorem ipsum
 </a>
 <br/>
-<a href="#" class="tds-link tds-link--secondary tds-link--inverted tds-link--descent text--small">
+<a href="#" class="tds-link tds-link--secondary tds-link--inverted tds-link--descent tds-text--small">
     Small/Lorem ipsum
 </a>
 ```
@@ -132,11 +132,11 @@ You'll notice the text links include a `tds-link--descent` modifier. This class 
     Large/link
 </a>
 
-<a href="#" class="text--medium tds-chevron-link--primary">
+<a href="#" class="tds-text--medium tds-chevron-link--primary">
     Medium/link
 </a>
 
-<a href="#" class="text--small tds-chevron-link--primary">
+<a href="#" class="tds-text--small tds-chevron-link--primary">
     Small/link
 </a>
 
@@ -146,11 +146,11 @@ You'll notice the text links include a `tds-link--descent` modifier. This class 
     Large/link
 </a>
 
-<a href="#" class="text--medium tds-chevron-link--primary">
+<a href="#" class="tds-text--medium tds-chevron-link--primary">
     Medium/link
 </a>
 
-<a href="#" class="text--small tds-chevron-link--primary">
+<a href="#" class="tds-text--small tds-chevron-link--primary">
     Small/link
 </a>
 ```
@@ -161,11 +161,11 @@ You'll notice the text links include a `tds-link--descent` modifier. This class 
     Large/link
 </a>
 
-<a href="#" class="text--medium tds-chevron-link--secondary">
+<a href="#" class="tds-text--medium tds-chevron-link--secondary">
     Medium/link
 </a>
 
-<a href="#" class="text--small tds-chevron-link--secondary">
+<a href="#" class="tds-text--small tds-chevron-link--secondary">
     Small/link
 </a>
 
@@ -175,11 +175,11 @@ You'll notice the text links include a `tds-link--descent` modifier. This class 
     Large/link
 </a>
 
-<a href="#" class="text--medium tds-chevron-link--secondary">
+<a href="#" class="tds-text--medium tds-chevron-link--secondary">
     Medium/link
 </a>
 
-<a href="#" class="text--small tds-chevron-link--secondary">
+<a href="#" class="tds-text--small tds-chevron-link--secondary">
     Small/link
 </a>
 ```
@@ -191,11 +191,11 @@ You'll notice the text links include a `tds-link--descent` modifier. This class 
     Large/link
   </a>
   <br>
-  <a href="#" class="text--medium tds-chevron-link tds-chevron-link--inverted">
+  <a href="#" class="tds-text--medium tds-chevron-link tds-chevron-link--inverted">
     Medium/link
   </a>
   <br>
-  <a href="#" class="text--small tds-chevron-link tds-chevron-link--inverted">
+  <a href="#" class="tds-text--small tds-chevron-link tds-chevron-link--inverted">
     Small/link
   </a>
 </div>
@@ -205,11 +205,11 @@ You'll notice the text links include a `tds-link--descent` modifier. This class 
     Large/link
   </a>
   <br>
-  <a href="#" class="text--medium tds-chevron-link tds-chevron-link--inverted">
+  <a href="#" class="tds-text--medium tds-chevron-link tds-chevron-link--inverted">
     Medium/link
   </a>
   <br>
-  <a href="#" class="text--small tds-chevron-link tds-chevron-link--inverted">
+  <a href="#" class="tds-text--small tds-chevron-link tds-chevron-link--inverted">
     Small/link
   </a>
 </div>
@@ -219,11 +219,11 @@ You'll notice the text links include a `tds-link--descent` modifier. This class 
   Large/link
 </a>
 <br>
-<a href="#" class="text--medium tds-chevron-link tds-chevron-link--inverted">
+<a href="#" class="tds-text--medium tds-chevron-link tds-chevron-link--inverted">
   Medium/link
 </a>
 <br>
-<a href="#" class="text--small tds-chevron-link tds-chevron-link--inverted">
+<a href="#" class="tds-text--small tds-chevron-link tds-chevron-link--inverted">
   Small/link
 </a>
 ```

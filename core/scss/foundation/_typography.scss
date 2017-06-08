@@ -145,19 +145,19 @@ body {
   bottom: -.25em;
 }
 
-.tds-h1 {
+.tds-heading-1 {
   @extend %h1;
 }
 
-.tds-h2 {
+.tds-heading-2 {
   @extend %h2;
 }
 
-.tds-h3 {
+.tds-heading-3 {
   @extend %h3;
 }
 
-.tds-h4 {
+.tds-heading-4 {
   @extend %h4;
 }
 
@@ -169,23 +169,23 @@ body {
   @extend %italic;
 }
 
-.text {
+.tds-text {
   @extend %paragraph;
 }
 
-.text--medium {
+.tds-text--medium {
   @extend %text--medium;
 }
 
-.text--small {
+.tds-text--small {
   @extend %text--small;
 }
 
-.text--sup {
+.tds-text--sup {
   @extend %text--sup;
 }
 
-.text--sub {
+.tds-text--sub {
   @extend %text--sub;
 }
 
@@ -232,30 +232,5 @@ body {
 
   sub {
     @extend %text--sub;
-  }
-}
-
-//
-// Sub-headings
-//
-// Deprecated in v0.5.0, 10/18/16
-// Use h3 for "subhead" text
-// Use h4 for "subhead--small" text
-//
-
-.subhead {
-  @warn ".subhead is now deprecated, use h3 instead";
-
-  font-weight: 500;
-  font-size: rem(19px);
-  line-height: 1.7;
-  margin-bottom: baseline-margin(40px);
-
-  &--small {
-    @warn ".subhead--small is now deprecated, use h4 instead";
-
-    font-size: rem(16px);
-    line-height: 1.5;
-    margin-bottom: baseline-margin(40px);
   }
 }

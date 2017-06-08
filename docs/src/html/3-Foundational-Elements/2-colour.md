@@ -131,7 +131,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
         <p>
   		Usage: Decorative elements (graphs/charts).
   	    </p>
-        <p class="text--small">
+        <p class="tds-text--small">
         * use only for decorative items (when it doesn't need to be colour accessible)
         </p>
   	</div>

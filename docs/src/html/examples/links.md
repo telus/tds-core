@@ -16,18 +16,18 @@ template: example.jade
             <p class="example--non-inverted">
                 <a href="#" class="tds-link tds-link--descent">Large/link</a>
                 <br>
-                <a href="#" class="tds-link tds-link--descent text--medium">Medium/link</a>
+                <a href="#" class="tds-link tds-link--descent tds-text--medium">Medium/link</a>
                 <br>
-                <a href="#" class="tds-link tds-link--descent text--small">Small/link</a>
+                <a href="#" class="tds-link tds-link--descent tds-text--small">Small/link</a>
             </p>
         </div>
         <div class="tds-medium-4">
             <p class="example--non-inverted">
               <a href="#" class="tds-link tds-link--primary tds-link--descent">Large/link</a>
               <br>
-              <a href="#" class="tds-link tds-link--primary tds-link--descent text--medium">Medium/link</a>
+              <a href="#" class="tds-link tds-link--primary tds-link--descent tds-text--medium">Medium/link</a>
               <br>
-              <a href="#" class="tds-link tds-link--primary tds-link--descent text--small">Small/link</a>
+              <a href="#" class="tds-link tds-link--primary tds-link--descent tds-text--small">Small/link</a>
             </p>
         </div>
         <div class="tds-medium-4 tds-offset-medium-2 example--inverted example--primary">
@@ -36,11 +36,11 @@ template: example.jade
                   Large/link
               </a>
               <br>
-              <a href="#" class="tds-link tds-link--primary tds-link--inverted tds-link--descent text--medium">
+              <a href="#" class="tds-link tds-link--primary tds-link--inverted tds-link--descent tds-text--medium">
                   Medium/link
               </a>
               <br>
-              <a href="#" class="tds-link tds-link--primary tds-link--inverted tds-link--descent text--small">
+              <a href="#" class="tds-link tds-link--primary tds-link--inverted tds-link--descent tds-text--small">
                   Small/link
               </a>
             </p>
@@ -49,9 +49,9 @@ template: example.jade
           <p class="example--non-inverted">
             <a href="#" class="tds-link tds-link--secondary tds-link--descent">Large/link</a>
             <br>
-            <a href="#" class="tds-link tds-link--secondary tds-link--descent text--medium">Medium/link</a>
+            <a href="#" class="tds-link tds-link--secondary tds-link--descent tds-text--medium">Medium/link</a>
             <br>
-            <a href="#" class="tds-link tds-link--secondary tds-link--descent text--small">Small/link</a>
+            <a href="#" class="tds-link tds-link--secondary tds-link--descent tds-text--small">Small/link</a>
           </p>
         </div>
         <div class="tds-medium-4 tds-offset-medium-2 example--inverted example--secondary">
@@ -64,7 +64,7 @@ template: example.jade
                   Medium/link
               </a>
               <br>
-              <a href="#" class="tds-link tds-link--secondary tds-link--inverted tds-link--descent text--small">
+              <a href="#" class="tds-link tds-link--secondary tds-link--inverted tds-link--descent tds-text--small">
                   Small/link
               </a>
             </p>
@@ -84,7 +84,7 @@ template: example.jade
                     Medium/link
                 </a>
                 <br>
-                <a href="#" class="tds-chevron-link tds-chevron-link--primary text--small">
+                <a href="#" class="tds-chevron-link tds-chevron-link--primary tds-text--small">
                     Small/link
                 </a>
             </p>
@@ -99,7 +99,7 @@ template: example.jade
                   Medium/link
               </a>
               <br/>
-              <a href="#" class="tds-chevron-link tds-chevron-link--inverted text--small">
+              <a href="#" class="tds-chevron-link tds-chevron-link--inverted tds-text--small">
                   Small/link
               </a>
             </p>
@@ -114,7 +114,7 @@ template: example.jade
                     Medium/link
                 </a>
                 <br>
-                <a href="#" class="tds-chevron-link tds-chevron-link--secondary text--small">
+                <a href="#" class="tds-chevron-link tds-chevron-link--secondary tds-text--small">
                     Small/link
                 </a>
             </p>
@@ -129,7 +129,7 @@ template: example.jade
                   Medium/link
               </a>
               <br>
-              <a href="#" class="tds-chevron-link tds-chevron-link--inverted text--small">
+              <a href="#" class="tds-chevron-link tds-chevron-link--inverted tds-text--small">
                   Small/link
               </a>
             </p>
