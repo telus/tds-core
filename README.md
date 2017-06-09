@@ -27,11 +27,11 @@ Clone this repository
     cd telus-thorium-core
 
 Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.
-    
+
     npm run setup:links
-    
+
 Run `init-npm.sh` so you can properly use the `redux-contentful` private package for legals
-    
+
     ./enriched/scripts/init-npm.sh
 
 Install the rest of the projects' dependencies and start up your local documentation site.
@@ -74,11 +74,10 @@ Download the [Windows Binary](https://www.freetype.org/ttfautohint/#download) fr
 
 1. Make a change or addition to `./designs/core-icons.glyphs`
 2. Export an OTF file to `./core/fonts/core-icons.otf`
-3. Execute `npm run build:icons` in the `telus-thorium-core` module
+3. Execute `npm install` in the `./icons` module
+4. Execute `npm run build:icons` in the `./icons` module
 
-This process creates EOT, TTF, and WOFF files from `./core/fonts/core-icons.otf` and saves them in the same directory. These should be committed to Git (including the source OTF) and sent to master via pull request.
-
-The next time you run `npm build`, the re-generated icons will be picked up by the documentation site.
+This process creates EOT, TTF, WOFF and WOFF2 files from `./core/fonts/core-icons.otf` and saves them in the same directory. These should be committed to Git (including the source OTF) and sent to master via pull request.
 
 ## Deploying a release
 
