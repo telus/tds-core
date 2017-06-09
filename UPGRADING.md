@@ -18,6 +18,9 @@
 * tds-jenkins/telus-thorium-enriched has moved to telusdigital/tds-enriched
 
 ### Buttons
+* button classes now have a minimum width of 180px
+* removed styles from button html tag and if you need to remove default styling you can use `tds-button--plain`
+* `button--plain` changed to `tds-button--plain`
 * `button-green` changed to `tds-button--primary`
 * `button-purple` changed to `tds-button--secondary`
 * `button-green--outlined` changed to `tds-button--primary tds-button--outlined`
