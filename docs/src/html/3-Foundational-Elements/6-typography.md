@@ -78,7 +78,7 @@ To create consistent leading the line height is set to double the value of the b
 To be used in Hero Banners. Text within it should only wrap to a maximum of 2 lines.
 
 ```html
-<h1 class="display-heading-1">Heading 1</h1>
+<h1 class="tds-display-heading-1">Heading 1</h1>
 ```
 
 # Heading 1
@@ -87,7 +87,7 @@ Primary headlines, tops of category pages.
 
 ```html
 <h1>Heading 1</h1>
-<div egclass="heading-1">Heading 1</div>
+<div egclass="tds-heading-1">Heading 1</div>
 ```
 
 ## Heading 2
