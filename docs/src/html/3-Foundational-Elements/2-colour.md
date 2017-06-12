@@ -120,7 +120,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
   <div class="tds-medium-4">
 	    <span class="color-preview" style="background-color: rgb(102, 204, 0);"></span>
 	    <p>
-		<strong>White</strong>
+		<strong>Telus Green</strong>
 	    </p>
         <p>
       `$color-telus-green`
