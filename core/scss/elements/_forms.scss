@@ -71,7 +71,8 @@ select {
 label {
   display: inline-block;
   color: $color-shark;
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: -.6px;
   margin-bottom: 3px;
 }
 
@@ -220,6 +221,7 @@ textarea {
 $radio-checked-stroke-size: 6px;
 
 .tds-choice {
+  font-weight: 400;
   display: block;
   cursor: pointer;
   margin-bottom: 8px;
