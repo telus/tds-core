@@ -1,0 +1,25 @@
+version: '2'
+services:
+  app:
+    image: nginx:1.10-alpine
+    volumes:
+      - ./app:/usr/share/nginx/html
+    privileged: true
+  chromedriver:
+    privileged: true
+    image: blueimp/chromedriver
+    environment:
+      - VNC_ENABLED=true
+      - EXPOSE_X11=true
+    ports:
+      - 5900:5900
+  nightwatch:
+    image: blueimp/nightwatch:0.9
+    depends_on:
+      - chromedriver
+      - app
+    environment:
+      - WAIT_FOR_HOSTS=app:80 chromedriver:4444 chromedriver:6060
+    privileged: true
+    volumes:
+      - ./test:/home/node
