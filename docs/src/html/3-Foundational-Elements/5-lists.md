@@ -252,9 +252,9 @@ Lists of different types can be nested inside each other. Child `<ul>` and `<ol>
 </ol>
 <ul class="tds-list tds-list--bulleted">
     <li class="tds-list__item">Nunc condimentum non est sed rutrum
-	<ol class="tds-list list--numbered">
+	<ol class="tds-list tds-list--numbered">
 	    <li class="tds-list__item">Lorem ipsum dolor sit amet
-		<ol class="tds-list list--alpha-lower">
+		<ol class="tds-list tds-list--alpha-lower">
 		    <li class="tds-list__item">Nunc condimentum non est sed rutrum</li>
 		</ol>
 	    </li>
