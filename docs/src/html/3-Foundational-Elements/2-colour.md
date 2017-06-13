@@ -13,7 +13,7 @@ Color creates visual impact and distinguishes a brand. It conveys personality, a
 
 ---
 
-White is the cornerstone of our palette and the most dominant colour in it, but purple and green are what make it distinctive and memorable. Forest green for primary buttons. Grape is used for all headers along with supporting elements within navigation.
+White is the cornerstone of our palette and the most dominant colour in it, but purple and green are what make it distinctive and memorable. See usage description below.
 
 ## Buttons/Links/Headings/Body
 
