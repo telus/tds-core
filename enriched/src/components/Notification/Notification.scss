@@ -41,4 +41,32 @@
 
 .notification--error {
   background-color: $color-lavender-blush;
+  color: $color-cardinal;
+  display: table-row;
+
+
+  .c-notification__icon {
+    margin-right: 12px;
+    display: table-cell;
+    padding: 20px 16px 20px 36px;
+
+    @include from-breakpoint(small) {
+      padding-left: 44px;
+    }
+  }
+
+  .c-notification__text {
+    display: inline-block;
+    display: table-cell;
+    padding: 20px 36px 20px 0;
+    font-weight: 500;
+
+    @include from-breakpoint(small) {
+      padding-right: 44px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

@@ -80,7 +80,8 @@ The component comes in the following colour variations:
         <li style={margins}>
           <h4>Notification Error</h4>
           <Tds.Notification variant="error">
-            <h4>.notification--error</h4>
+            <p>.notification--error Looks like our registration system is temporarily down. You'll need to come back another time to register for My Account. </p>
+            <p>Lorem ipsum dolor sit amet.</p>
           </Tds.Notification>
         </li>
         <li style={margins}>
