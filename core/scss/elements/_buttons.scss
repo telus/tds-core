@@ -50,13 +50,13 @@ a.tds-button {
     color: $color-white;
 
     &:hover {
-      background-color: $color-white;
+      background-color: transparent;
       color: $color-primary;
       box-shadow: 0 0 0 1px;
     }
 
     &.tds-button--outlined {
-      background-color: $color-white;
+      background-color: transparent;
       box-shadow: 0 0 0 1px;
       color: $color-primary;
 
@@ -73,11 +73,11 @@ a.tds-button {
       &:hover {
         box-shadow: 0 0 0 1px;
         color: $color-white;
-        background-color: $color-primary;
+        background-color: transparent;
       }
 
       &.tds-button--outlined {
-        background-color: $color-primary;
+        background-color: transparent;
         color: $color-white;
 
         &:hover {
@@ -102,13 +102,13 @@ a.tds-button {
     color: $color-white;
 
     &:hover {
-      background-color: $color-white;
+      background-color: transparent;
       color: $color-secondary;
       box-shadow: 0 0 0 1px;
     }
 
     &.tds-button--outlined {
-      background-color: $color-white;
+      background-color: transparent;
       color: $color-secondary;
       box-shadow: 0 0 0 1px;
 
@@ -125,11 +125,11 @@ a.tds-button {
       &:hover {
         box-shadow: 0 0 0 1px;
         color: $color-white;
-        background-color: $color-secondary;
+        background-color: transparent;
       }
 
       &.tds-button--outlined {
-        background-color: $color-secondary;
+        background-color: transparent;
         color: $color-white;
 
         &:hover {
