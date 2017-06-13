@@ -2,14 +2,14 @@
 @import '~telus-thorium-core/scss/utility/mixins';
 
 .notification {
-  padding: 22px 37px;
+  padding: 20px 36px;
   background-color: $color-athens-grey;
   display: table;
   width: 100%;
   min-height: 68px;
 
   @include from-breakpoint(small) {
-    padding: 22px 45px;
+    padding: 20px 44px;
   }
 
   > .notification__content {
@@ -41,7 +41,6 @@
 
 .notification--error {
   background-color: $color-lavender-blush;
-  color: $color-cardinal;
   display: table-row;
 
 
