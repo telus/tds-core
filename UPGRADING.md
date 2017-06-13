@@ -6,6 +6,7 @@
 * New CSS CDN file path is
   * https://cdn.telus.digital/thorium/core/v0.16.0/tds.min.css
   * https://cdn.telus.digital/thorium/enriched/v0.16.0/tds-enriched.min.css
+  * https://cdn.telus.digital/thorium/core/v0.16.0/tds-lite.min.css (unstyled typography and anchor links)
 * New JS file path on CDN with Global Component
   * https://cdn.telus.digital/thorium/enriched/v0.16.0/tds-enriched.min.js
 * Files with the latest files
