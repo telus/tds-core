@@ -1,0 +1,44 @@
+{
+    "globals_path": "globals.js",
+    "src_folders": [
+        "specs"
+    ],
+    "page_objects_path": "page_objects",
+    "output_folder": "reports",
+    "test_settings": {
+        "default": {
+            "globals": {
+                "waitForConditionTimeout": 30000
+            },
+            "screenshots": {
+                "enabled": true,
+                "on_failure": true,
+                "path": "screenshots"
+            },
+            "videos": {
+                "enabled": true,
+                "delete_on_success": true,
+                "path": "videos"
+            },
+            "launch_url": "http://tds.telus.com/",
+            "selenium_host": "chromedriver"
+        },
+        "prod": {
+            "launch_url": "http://tds.telus.com/"
+        },
+        "local": {
+            "selenium_port": 9515,
+            "selenium_host": "localhost",
+            "default_path_prefix": "",
+             "screenshots": {
+                "enabled": true
+            },
+            "videos": {
+                "enabled": false
+            },
+            "desiredCapabilities": {
+                "browserName": "chrome"
+            }
+        }
+    }
+}

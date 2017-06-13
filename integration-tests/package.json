@@ -1,0 +1,33 @@
+{
+  "name": "pik-tv-e2e",
+  "version": "1.0.0",
+  "description": "npm install nightwatch npm install",
+  "scripts": {
+    "test": "set NODE_ENV=staging&& nightwatch --tests tests/smokeTest.js",
+    "test:docker": "docker-compose run --rm nightwatch",
+    "precommit": "lint-staged"
+  },
+  "keywords": [],
+  "author": "PikTV",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "husky": "^0.13.2",
+    "lint-staged": "^3.3.1",
+    "nightwatch": "^0.9.14",
+    "prettier": "^0.22.0"
+  },
+  "lint-staged": {
+    "**/*.js": [
+    "eslint . --ignore-path .gitignore --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "nightwatch-commands": "^1.8.0"
+  }
+}

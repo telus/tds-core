@@ -1,0 +1,16 @@
+#!/bin/sh
+printf "\nValidating commit message format...\n\n"
+
+commit_message_regex='^[0-9A-Z]{2,3}-[[:digit:]]{2,3}\s-\s\w+(\s&\s\w+)?:\s.{1,140}$'
+
+if ! grep -Eq "$commit_message_regex" "$1"; then
+cat << EOF >&2
+
+Invalid commit message format
+
+Actual:   $(head -1 "$1")
+Expected: $(cat ./git/commit.template)
+
+EOF
+  exit 1
+fi
