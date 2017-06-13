@@ -62,32 +62,32 @@ The component comes in the following colour variations:
         <li style={margins}>
           <h4>Default</h4>
           <Tds.Notification>
-            <h4>Default - no additional classes</h4>
+            <p>Default - no additional classes</p>
           </Tds.Notification>
         </li>
         <li style={margins}>
           <h4>Notification Branded</h4>
           <Tds.Notification variant="branded">
-            <h4>.notification--branded</h4>
+            <p>.notification--branded</p>
           </Tds.Notification>
         </li>
         <li style={margins}>
           <h4>Notification Success</h4>
           <Tds.Notification variant="success">
-            <h4>.notification--success</h4>
+            <p>.notification--success</p>
           </Tds.Notification>
         </li>
         <li style={margins}>
-          <h4>Notification Error</h4>
+          <h4>Notification Error (.notification--error)</h4>
           <Tds.Notification variant="error">
-            <p>.notification--error Looks like our registration system is temporarily down. You'll need to come back another time to register for My Account. </p>
+            <p>Looks like our registration system is temporarily down. You'll need to come back another time to register for My Account. </p>
             <p>Lorem ipsum dolor sit amet.</p>
           </Tds.Notification>
         </li>
         <li style={margins}>
           <h4>Notification Instructional - same as default styling</h4>
           <Tds.Notification variant="instructional">
-            <h4>.notification--instructional</h4>
+            <p>.notification--instructional</p>
           </Tds.Notification>
         </li>
       </ul>

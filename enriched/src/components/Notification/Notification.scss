@@ -18,6 +18,15 @@
     width: 100%;
   }
 
+  p {
+    font-size: rem(16px);
+    font-weight: 700;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   > .notification__content > *:first-child {
     margin-top: 0;
   }
@@ -48,6 +57,7 @@
     margin-right: 12px;
     display: table-cell;
     padding: 20px 16px 20px 36px;
+    font-size: rem(20px);
 
     @include from-breakpoint(small) {
       padding-left: 44px;
@@ -58,14 +68,10 @@
     display: inline-block;
     display: table-cell;
     padding: 20px 36px 20px 0;
-    font-weight: 500;
 
     @include from-breakpoint(small) {
       padding-right: 44px;
     }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
   }
 }

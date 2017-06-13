@@ -77,7 +77,7 @@
 * `icon-core-*` changed to `tds-icon-core-*`
 * `icon--*` changed to `tds-icon--*`
 
-### RECOMMENDATIONS because we want to deprecate non-namespaced classes
+### Grid
 * `container` changed to `tds-container`
 * `container--limited-width` changed to `tds-container--limited-width`
 * `container--fluid` changed to `tds-container--fluid`
@@ -97,6 +97,7 @@
 
 ### Components
 * `<Collapsible/>` global component changed to `<ExpandCollapse/>`
+* `<Notification/>` error variant now includes the warning icon and all Notification variants expect `<p/>` tags for content
 
 
 ## Upgrading to v0.15.x
