@@ -1,4 +1,4 @@
-TELUS Design System: Thorium Enriched
+TELUS Design System: TDS Enriched
 =====================================
 
-Re-usable components for the TELUS Design System - Thorium
+Re-usable components for the TELUS Design System - TDS

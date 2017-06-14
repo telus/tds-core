@@ -46,8 +46,7 @@ class SelectorCounterExample extends Component {
     });
 
     return (
-      <form onSubmit={this.handleSubmit}>
-        <div className="field-col">
+        <form onSubmit={this.handleSubmit}>
           <div className={fieldClasses}>
             <label htmlFor="ex-selcounter">How many smartphone plans?</label>
             <div className={helperClasses} id="ex-selcounter-desc">
@@ -69,9 +68,8 @@ class SelectorCounterExample extends Component {
               contextSuffix="smartphone plans"
             />
           </div>
-          <button className="button button-purple">Submit</button>
-        </div>
-      </form>
+          <button className="button button--primary">Submit</button>
+        </form>
     );
   }
 }

@@ -2,4 +2,4 @@
 // build in order to bundle Core + Enriched styles together in a single file
 // for the CDN. This file is not currently distributed as part of the
 // NPM module.
-require('telus-thorium-core/scss/thorium.scss');
+require('telus-thorium-core/scss/tds.scss');

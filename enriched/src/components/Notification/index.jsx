@@ -5,6 +5,8 @@ function Notification(props) {
   const { className, variant, children, ...extraProps } = props;
   const classes = ['notification', className];
 
+  let iconHtml = '';
+
   if (process.env.BROWSER) {
     require('./Notification.scss');
   }
@@ -13,10 +15,18 @@ function Notification(props) {
     classes.push(`notification--${variant}`);
   }
 
+  if (variant === 'error') {
+    iconHtml = (<i
+      className="icon icon-core-exclamation-point-circle c-notification__icon" />);
+  }
+
   return (
     <div className={classes.filter(c => c).join(' ')} {...extraProps}>
       <div className="notification__content">
-        {props.children}
+        {iconHtml}
+        <div className="c-notification__text">
+          {props.children}
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,8 @@ doctype html
 block vars
   - var bodyclass = null;
   - var assetsUrl = (process.env.NODE_ENV === 'dev') ? locals.assetsUrl.dev : locals.assetsUrl.prod;
+  - var isStaging = (process.env.NODE_ENV != 'production') ? '-staging': '';
+  - var dtmPageURL = (page.url.replace(/^\//,"") == '') ? 'Homepage': page.url.replace(/^\//,"");
 html(lang='en')
   head
     block head
@@ -12,17 +14,33 @@ html(lang='en')
         block title
           = locals.name
 
+      script.
+        window.dataLayer = {
+          page: {
+            name: "#{dtmPageURL}"
+          }
+        };
+
+      script(src='//assets.adobedtm.com/6462022b939758565769298a6393ed7a46ee6817/satelliteLib-1a62f312773f2a4b9eaa85dbf0ec0bb49095fd2e#{isStaging}.js')
+
       link(rel='stylesheet', href='/assets/css/prism.css')
       link(rel='stylesheet', href='/assets/bundles/docs.css')
+      link(rel='favicon' href='/favicon.ico')
+      link(rel='favicon', sizes='32x32' href='/assets/images/TELUS-favicon-32.png')
+      link(rel='favicon', sizes='128x128' href='/assets/images/TELUS-favicon-128.png')
+      link(rel='apple-touch-icon', href='/assets/images/apple-touch-icon.png')
+      link(rel='apple-touch-icon', sizes='72x72' href='/assets/images/TELUS-apple-touch-icon-72.png')
+      link(rel='apple-touch-icon', sizes='114x114' href='/assets/images/TELUS-apple-touch-icon-114.png')
+      link(rel='apple-touch-icon', sizes='144x144' href='/assets/images/TELUS-apple-touch-icon-144.png')
 
   body(class=bodyclass)
     header.docs-header
       .container.container--limited-width.docs-header__container
-        button.button.docs-header__toggle
+        button.button--plain.docs-header__toggle
           i.icon.icon-core-hamburger.docs-header__icon
             span.accessible-hide Toggle Menu
-        a.docs-header__logo(href="#nav-link")
-          img(src="/assets/images/logo.png" alt="")
+        a.docs-header__logo(href="/")
+          img(src="/assets/images/logo.png" alt="Go back to Home page")
 
     main.container.container--limited-width
       div.grid-row
@@ -50,3 +68,5 @@ html(lang='en')
       toggle.addEventListener('click', function(){
         location.href = "#nav-link";
       });
+    script.
+      _satellite.pageBottom();

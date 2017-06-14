@@ -7,7 +7,7 @@ Welcome to the TELUS Design System. We're glad you're planning on using the TDS 
 
 * [Usage criteria](#usage-criteria)
 * [Getting TDS](#getting-tds)
-* [The TDS tech stack](#the-tds-stack)
+* [The TDS tech stack](#the-tds-tech-stack)
 * [Choosing CDN vs. NPM](#choosing-cdn-vs-npm)
 * [Using TDS Core](#using-tds-core)
 * [Using TDS Enriched via CDN](#using-tds-enriched-via-cdn)
@@ -29,8 +29,8 @@ Welcome to the TELUS Design System. We're glad you're planning on using the TDS 
 
 There are two official ways to include the TDS in your TELUS project:
 
-1. Install the [`telus-thorium-core`](https://www.npmjs.com/package/telus-thorium-core) and [`telus-thorium-enriched`](https://www.npmjs.com/package/telus-thorium-enriched) NPM modules
-2. Load either [`thorium-core.min.css`](https://cdn.telus.digital/thorium/core/!!THORIUM_VERSION!!/thorium.min.css) or [`thorium-enriched.min.css`](https://cdn.telus.digital/thorium/enriched/!!THORIUM_VERSION!!/thorium-enriched.min.css) from the CDN
+1. [NPM] Install the [`telus-thorium-core`](https://www.npmjs.com/package/telus-thorium-core) and [`telus-thorium-enriched`](https://www.npmjs.com/package/telus-thorium-enriched) NPM modules
+2. [CDN] Load either [`tds.min.css`](https://cdn.telus.digital/thorium/core/!!TDS_VERSION!!/tds.min.css) or [`tds-enriched.min.css`](https://cdn.telus.digital/thorium/enriched/!!TDS_VERSION!!/tds-enriched.min.css) from the CDN
 
 ## The TDS tech stack
 
@@ -45,8 +45,8 @@ For contributors, and projects that integrate deeply, TDS is powered by these fa
 * [ES6](https://github.com/lukehoban/es6features) for JavaScript
 * [React](https://facebook.github.io/react/) for views
 * [ESLint](http://eslint.org/) and [stylelint](http://stylelint.io/) for linting
+* [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme/) for unit testing
 
-The TDS Team is currently evaluating [Jest](https://facebook.github.io/jest/) + [Enzyme](http://airbnb.io/enzyme/) for its testing needs. A final decision on testing frameworks will be documented here in a future release.
 
 ## Choosing CDN vs. NPM
 
@@ -89,7 +89,7 @@ If you are not going to load core from the CSS, import the whole TDS into your `
 
 ```css
 /* File: my-project.scss */
-@import "~telus-thorium-core/scss/thorium";
+@import "~telus-thorium-core/scss/tds";
 ```
 
 If you want to use TDS variables, helpers and mixins within your component SCSS:
@@ -103,20 +103,20 @@ If you want to use TDS variables, helpers and mixins within your component SCSS:
 
 ### Content Delivery Network
 
-Add a link to the CDN-hosted thorium.min.css file into the `<head>` of your page.
+Add a link to the CDN-hosted tds.min.css file into the `<head>` of your page.
 
 ```html
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://cdn.telus.digital/thorium/core/!!THORIUM_VERSION!!/thorium.min.css">
+  href="https://cdn.telus.digital/thorium/core/!!TDS_VERSION!!/tds.min.css">
 ```
 
 ### CDN "latest" file
 
 Each major release also has a "latest" file hosted on the CDN. This will include all bug fixes and backwards-compatible changes. Here's the URL of the v0.x latest file:
 
-* [https://cdn.telus.digital/thorium/core/v0-latest/thorium.min.css](https://cdn.telus.digital/thorium/core/v0-latest/thorium.min.css)
+* [https://cdn.telus.digital/thorium/core/v0-latest/tds.min.css](https://cdn.telus.digital/thorium/core/v0-latest/tds.min.css)
 
 ## Using TDS Enriched via CDN
 
@@ -125,7 +125,7 @@ Each major release also has a "latest" file hosted on the CDN. This will include
 * The CDN-hosted TDS Enriched CSS also includes TDS Core styles
 * `<link>` the TDS Enriched stylesheet in `<head>`
 * Include React, ReactDOM, and the TDS Enriched JavaScripts at the end of `<body>`
-* Use the `React`, `ReactDOM`, and `Thorium` variables, which are exposed on the `window`
+* Use the `React`, `ReactDOM`, and `Tds` variables, which are exposed on the `window`
 
 ```html
 <!doctype html>
@@ -136,7 +136,7 @@ Each major release also has a "latest" file hosted on the CDN. This will include
     <link
         rel="stylesheet"
         type="text/css"
-        href="https://cdn.telus.digital/thorium/enriched/!!THORIUM_VERSION!!/thorium-enriched.min.css">
+        href="https://cdn.telus.digital/thorium/enriched/!!TDS_VERSION!!/tds-enriched.min.css">
 </head>
 <body>
 
@@ -147,12 +147,12 @@ Each major release also has a "latest" file hosted on the CDN. This will include
 <script
     src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
 <script
-    src="https://cdn.telus.digital/thorium/enriched/!!THORIUM_VERSION!!/thorium-enriched.min.js"></script>
+    src="https://cdn.telus.digital/thorium/enriched/!!TDS_VERSION!!/tds-enriched.min.js"></script>
 
 <script>
 ReactDOM.render(
   React.createElement(
-    Thorium.SelectorCounter,
+    Tds.SelectorCounter,
     {
       defaultValue: 5,
       min: 1
@@ -165,8 +165,8 @@ ReactDOM.render(
 
 TDS Enriched also hosts "latest" files on the CDN:
 
-* [https://cdn.telus.digital/thorium/enriched/v0-latest/thorium-enriched.min.css](https://cdn.telus.digital/thorium/enriched/v0-latest/thorium-enriched.min.css)
-* [https://cdn.telus.digital/thorium/enriched/v0-latest/thorium-enriched.min.js](https://cdn.telus.digital/thorium/enriched/v0-latest/thorium-enriched.min.js)
+* [https://cdn.telus.digital/thorium/enriched/v0-latest/tds-enriched.min.css](https://cdn.telus.digital/thorium/enriched/v0-latest/tds-enriched.min.css)
+* [https://cdn.telus.digital/thorium/enriched/v0-latest/tds-enriched.min.js](https://cdn.telus.digital/thorium/enriched/v0-latest/tds-enriched.min.js)
 
 ## Using TDS Enriched via NPM
 
@@ -175,13 +175,14 @@ TDS Enriched also hosts "latest" files on the CDN:
 Install both the TDS Core & Enriched modules:
 
 ```bash
+npm i --save telus-thorium-core telus-thorium-core
 npm i --save telus-thorium-core telus-thorium-enriched
 ```
 
 Import the Core styles somewhere in your main SCSS:
 
 ```scss
-@import '~telus-thorium-core/scss/thorium';
+@import '~telus-thorium-core/scss/tds';
 ```
 
 Use individual Enriched Components throughout your JavaScript:
@@ -217,10 +218,10 @@ Use ReactDOMServer to render components server-side:
 ```javascript
 var React = require('react');
 var ReactDOMServer = require('react-dom/server');
-var Thorium = require('telus-thorium-enriched');
+var Tds = require('telus-thorium-enriched');
 
 var markup = ReactDOMServer.renderToString(
-  React.createElement(Thorium.SelectorCounter, {})
+  React.createElement(Tds.SelectorCounter, {})
 );
 ```
 
@@ -239,7 +240,7 @@ See the [Webpack file of this documentation site](https://github.com/telusdigita
 
 ---
 
-TDS uses <a href="http://semver.org/" target="blank">semantic versioning</a> to number its releases. A number like `!!THORIUM_VERSION!!` has three parts from left to right:
+TDS uses <a href="http://semver.org/" target="blank">semantic versioning</a> to number its releases. A number like `!!TDS_VERSION!!` has three parts from left to right:
 
 1. The **MAJOR** version - increments when backwards-incompatible changes are released.
 2. The **MINOR** version - increments when backwards-compatible changes are released.
@@ -249,10 +250,10 @@ You're in control of which TDS version is included in your project.
 
 ### Choosing a CDN-hosted version
 
-Files published to the TDS CDN will have their version number in the URL. Simply construct your stylesheet link tag with the versioned address, as shown in the [example above](#content-delivery-network).
+Files published to the TDS CDN will have their version number in the URL. Simply construct your stylesheet link tag with the versioned address, as shown in the examples above.
 
 ### Choosing an NPM module version
 
-The version constraints in your package.json file control which version of TDS gets pulled in. NPM by default will choose a constraint like `^0.4.0` when the `--save` command line flag is used. This allows major version changes (bug fixes and new backwards-compatible features).
+The version constraints in your `package.json` file control which version of TDS gets pulled in. NPM by default will choose a constraint like `^0.4.0` when the `--save` command line flag is used. This allows major version changes (bug fixes and new backwards-compatible features).
 
 Try out the <a href="http://jubianchi.github.io/semver-check/" target="blank">online semver checker</a> if you'd like to experiment with adjusting your project's constraints.

@@ -111,7 +111,7 @@ export default class SelectorCounter extends Component {
       'selector-counter--error': invalid,
       'selector-counter--successful': successful
     };
-    /* eslint-disable no-return-assign */
+    /* eslint-disable */
     return (
       <div className={classNames('selector-counter', className, cssClasses)}>
         <div className="accessible-hide" aria-live="assertive" aria-atomic="true">
@@ -148,7 +148,7 @@ export default class SelectorCounter extends Component {
         />
       </div>
     );
-    /* eslint-enable no-return-assign */
+    /* eslint-enable */
   }
 }
 

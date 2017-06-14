@@ -48,7 +48,7 @@ template: example.jade
 	  <div class="medium-4 offset-medium-2">
 	    <h3 class="heading-3">Key Features</h3>
 	    <ul class="list list--checked list--small">
-		    <li class="list__item">Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.
+		    <li class="ist__item">Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.
     		</li>
     		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     		</li>
@@ -166,84 +166,5 @@ template: example.jade
 	    </ol>
 	</div>
     </div>
-    <div class="grid-row">
-        <div class="xs-12"><h2>Links</h2></div>
-    </div>
-    <div class="grid-row">
-        <div class="medium-4">
-            <h3>Primary Chevrons</h3>
-            <p>
-                <a href="#" class="chevron-link">
-                    Large/link
-                    <i class="icon icon-core-chevron"></i>
-                </a>
-                <br>
-                <small>
-                    <a href="#" class="chevron-link">
-                        Small/link
-                        <i class="icon icon-core-chevron"></i>
-                    </a>
-                </small>
-            </p>
-        </div>
-        <div class="medium-4">
-            <h3>Secondary Chevrons</h3>
-            <p>
-                <a href="#" class="chevron-link chevron-link--secondary">
-                    Large/link
-                    <i class="icon icon-core-chevron"></i>
-                </a>
-                <br>
-                <small>
-                    <a href="#" class="chevron-link chevron-link--secondary">
-                        Large/link
-                        <i class="icon icon-core-chevron"></i>
-                    </a>
-                </small>
-            </p>
-        </div>
-        <div class="medium-4">
-            <h3>Tertiary Text Links</h3>
-            <p>
-                <a href="#" class="link link--descent">Large/link</a>
-                <br>
-                <small>
-                    <a href="#" class="link link--descent">Small/link</a>
-                </small>
-            </p>
-        </div>
-    </div>
-    <div class="grid-row">
-        <div class="xs-12"><h2>Inverted Links</h2></div>
-    </div>
-    <div class="grid-row">
-        <div class="medium-4 inverted-link-ex">
-            <p>
-                <a href="#" class="chevron-link chevron-link--inverted">
-                    Large/link
-                    <i class="icon icon-core-chevron"></i>
-                </a>
-                <br>
-                <small>
-                    <a href="#" class="chevron-link chevron-link--inverted">
-                        Small/link
-                        <i class="icon icon-core-chevron"></i>
-                    </a>
-                </small>
-            </p>
-        </div>
-        <div class="medium-4 offset-medium-2 inverted-link-ex">
-            <p>
-                <a href="#" class="link link--inverted link--descent">
-                    Large/link
-                </a>
-                <br>
-                <small>
-                    <a href="#" class="link link--inverted link--descent">
-                        Small/link
-                    </a>
-                </small>
-            </p>
-        </div>
-    </div>
+
 </div>

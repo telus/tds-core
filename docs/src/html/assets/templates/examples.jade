@@ -1,6 +1,8 @@
 doctype html
 block vars
   - var assetsUrl = (process.env.NODE_ENV === 'dev') ? locals.assetsUrl.dev : locals.assetsUrl.prod;
+  - var isStaging = (process.env.NODE_ENV != 'production') ? '-staging': '';
+  - var dtmPageURL = page.url.replace(/^\//,"");
 html(lang='en')
   head
     block head
@@ -11,14 +13,23 @@ html(lang='en')
         block title
           = locals.name
 
+      script.
+        window.dataLayer = {
+          page: {
+            name: "#{dtmPageURL}"
+          }
+        };
+
+      script(src='//assets.adobedtm.com/6462022b939758565769298a6393ed7a46ee6817/satelliteLib-1a62f312773f2a4b9eaa85dbf0ec0bb49095fd2e#{isStaging}.js')
+
       link(rel='stylesheet', href='/assets/css/prism.css')
       link(rel='stylesheet', href='/assets/bundles/docs.css')
 
   body.ex-page
     header.docs-header
-      div.container.container--limited-width.docs-header__container
+      .container.container--limited-width.docs-header__container
         a.docs-header__logo(href="/")
-          img(src="/assets/images/logo.png" alt="")
+          img(src="/assets/images/logo.png" alt="Navigate to TDS homepage")
 
     main
       block content
@@ -26,3 +37,5 @@ html(lang='en')
 
     script(src='/assets/js/styleguide.js')
     script(src='/assets/bundles/docs.js')
+    script.
+      _satellite.pageBottom();

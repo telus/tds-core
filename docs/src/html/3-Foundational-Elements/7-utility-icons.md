@@ -12,25 +12,25 @@ template: doc.jade
 	<div class="medium-4">
 	    <h3>Navigational</h3>
 	    <p>
-		<i class="icon icon-core-hamburger icon--fw"></i>
+    <i class="icon icon-core-hamburger icon--primary icon--fw"></i>
 		<i class="icon icon-core-hamburger icon--secondary icon--fw"></i>
 		<i class="icon icon-core-hamburger icon--disabled icon--fw"></i><br>
 		`hamburger`
 	    </p>
 	    <p>
-		<i class="icon icon-core-spyglass icon--fw"></i>
+    <i class="icon icon-core-spyglass icon--primary icon--fw"></i>
 		<i class="icon icon-core-spyglass icon--secondary icon--fw"></i>
 		<i class="icon icon-core-spyglass icon--disabled icon--fw"></i><br>
 		`spyglass`
 	    </p>
 	    <p>
-		<i class="icon icon-core-location icon--fw"></i>
+    <i class="icon icon-core-location icon--primary icon--fw"></i>
 		<i class="icon icon-core-location icon--secondary icon--fw"></i>
 		<i class="icon icon-core-location icon--disabled icon--fw"></i><br>
 		`location`
 	    </p>
 	    <p>
-		<i class="icon icon-core-times icon--fw"></i>
+    <i class="icon icon-core-times icon--fw icon--primary"></i>
 		<i class="icon icon-core-times icon--fw icon--secondary"></i>
 		<i class="icon icon-core-times icon--fw icon--disabled"></i>
 		<i class="icon icon-core-times icon--fw icon--error"></i><br>
@@ -44,25 +44,25 @@ template: doc.jade
 	<div class="medium-4">
 	    <h3>Selection</h3>
 	    <p>
-		<i class="icon icon-core-chevron icon--fw"></i>
+		<i class="icon icon-core-chevron icon--fw icon--primary"></i>
 		<i class="icon icon-core-chevron icon--fw icon--secondary"></i><br>
 		`chevron`
 	    </p>
 	    <p>
-		<i class="icon icon-core-caret-down icon--fw"></i>
+		<i class="icon icon-core-caret-down icon--fw icon--primary"></i>
 		<i class="icon icon-core-caret-down icon--fw icon--secondary"></i>
 		<i class="icon icon-core-caret-down icon--fw icon--disabled"></i>
 		<i class="icon icon-core-caret-down icon--fw icon--error"></i><br>
 		`caret-down`
 	    </p>
 	    <p>
-		<i class="icon icon-core-plus icon--fw"></i>
+		<i class="icon icon-core-plus icon--fw icon--primary"></i>
 		<i class="icon icon-core-plus icon--fw icon--secondary"></i>
 		<i class="icon icon-core-plus icon--fw icon--disabled"></i><br>
 		`plus`
 	    </p>
 	    <p>
-		<i class="icon icon-core-minus icon--fw"></i>
+		<i class="icon icon-core-minus icon--fw icon--primary"></i>
 		<i class="icon icon-core-minus icon--fw icon--secondary"></i>
 		<i class="icon icon-core-minus icon--fw icon--disabled"></i><br>
 		`minus`
@@ -106,21 +106,24 @@ This is the "Caret (down)" icon
 
 ### Color modifiers
 
-The default ("primary") icon display is purple [[1]](#color-footnote). Modifier classes make it possible to style icons differently.
+The default icon display is the default text colour (shark). Modifier classes make it possible to style icons differently.
 
-* `--secondary` colors an icon green to indicate a secondary action
+* `--primary` colors an icon green to indicate a primary action
+* `--secondary` colors an icon purple to indicate a secondary action
 * `--disabled` colors an icon grey to indicate the action is turned off
 * `--error` colors an icon red to indicate a problem
 
 **Examples of icons with modified colors**
 
 <p>
+    <i class="icon icon-core-caret-down icon--primary"></i>
     <i class="icon icon-core-caret-down icon--secondary"></i>
     <i class="icon icon-core-caret-down icon--disabled"></i>
     <i class="icon icon-core-caret-down icon--error"></i>
 </p>
 
 ```html
+<i class="icon icon-core-caret-down icon--primary"></i>
 <i class="icon icon-core-caret-down icon--secondary"></i>
 <i class="icon icon-core-caret-down icon--disabled"></i>
 <i class="icon icon-core-caret-down icon--error"></i>
@@ -154,7 +157,7 @@ The TELUS Core Icons font isn't fixed width, but the `--fw` helper can be used w
 
 ---
 
-In order to use variables, functions, and mixins, TDS' SCSS source code must be imported by your project. See the [Using TDS Core](/2-Use-TDS/1-getting-started.html#using-tds-core) for further instructions.
+In order to use variables, functions, and mixins, TDS' SCSS source code must be imported by your project. See the [Using TDS Core](/2-Use-TDS/1-getting-started.html#using-core) for further instructions.
 
 ### Core Icon Codepoint
 
@@ -189,11 +192,8 @@ This mixin has one optional parameter - the name of an icon. If this parameter i
 Variable | Value
 --- | ---
 `$color-icon-primary` | <span style="color:#4b286d;">#4b286d</span>
-`$color-icon-primary-hover` | <span style="color:#7841b0;">#7841b0</span>
 `$color-icon-secondary` | <span style="color: #177a00;">#177a00</span>
-`$color-icon-secondary-hover` | <span style="color: #248700;">#248700</span>
 `$color-icon-disabled` | <span style="color: #54595f;">#54595f</span>
-`$color-icon-disabled-hover` | <span style="color: #6a6e74;">#6a6e74</span>
 `$color-icon-error` | <span style="color: #c12335;">#c12335</span>
 
 ## Accessibility

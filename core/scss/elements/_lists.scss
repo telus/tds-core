@@ -30,7 +30,7 @@
   position: relative;
   margin-bottom: baseline-margin(40px);
 
-  li & {
+  .list__item & {
     &:first-child {
       padding-top: baseline-margin(40px);
     }
@@ -50,7 +50,7 @@
     display: block;
     position: absolute;
     content: '\002022';
-    color: $color-grape;
+    color: $color-secondary;
     left: -21px;
   }
 
@@ -69,7 +69,7 @@
 
     content: core-icon-codepoint(checkmark);
     left: -33px;
-    color: $color-forest-green;
+    color: $color-primary;
   }
 }
 
@@ -144,50 +144,5 @@
 
   &--small {
     @extend %list--small;
-  }
-}
-
-//
-// Deprecated classes
-//
-
-// To enable these deprecated list classes, define
-// $thorium-enable-deprecated-list-classes: true prior to your
-// @import "thorium" directive.
-
-@if ($enable-deprecated-list-classes) {
-  .list-alpha,
-  .list-bullets,
-  .list-checked,
-  .list-numbered {
-    @extend %list;
-
-    &__item {
-      @extend %list__item;
-    }
-  }
-
-  .list-alpha {
-    @extend %list--alpha;
-
-    &--lower {
-      @extend %list--alpha-lower;
-    }
-  }
-
-  .list-bullets__item {
-    @extend %list--bulleted__item;
-  }
-
-  .list-checked__item {
-    @extend %list--checked__item;
-  }
-
-  .list-small {
-    @extend %list--small;
-  }
-
-  .list-numbered {
-    @extend %list--numbered;
   }
 }

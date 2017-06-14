@@ -1,0 +1,123 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+// Spinner
+// ---------
+
+.spinner-wrapper {
+  position: relative;
+  .spinner {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: 0;
+    width: 100%;
+  }
+}
+
+.spinner-container {
+  transition: opacity .3s;
+  &--loading {
+    opacity: .1;
+    z-index: $zindex-negative;
+  }
+}
+.spinner-wrapper__content-blocker {
+  z-index: $zindex-modal-backdrop;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.spinner {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  margin: auto;
+  text-align: center;
+
+  &--spinning {
+    display: block;
+  }
+
+  &--full-screen {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: $zindex-modal-backdrop;
+  }
+}
+
+.spinner__full-screen-layer {
+  background-color: $color-white;
+  opacity: .85;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right :0;
+  position: fixed;
+}
+
+.spinner__svg {
+  z-index: $zindex-popover;
+  animation-name: spinner-rotate;
+  -webkit-animation-name: spinner-rotate;
+  -moz-animation-name: spinner-rotate;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
+  -moz-animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  height: 100%;
+  width: 100%;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.spinner__circle {
+    animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
+    -webkit-animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
+    -moz-animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
+}
+
+.spinner__tip {
+  font-size: 0.8rem;
+  text-align: center;
+  position: relative;
+  top: -1.8rem;
+}
+
+// Keyframes
+// --------
+
+@keyframes spinner-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}

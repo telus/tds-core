@@ -2,20 +2,29 @@
 @import '~telus-thorium-core/scss/utility/mixins';
 
 .notification {
-  padding: 22px 37px;
+  padding: 20px 36px;
   background-color: $color-athens-grey;
   display: table;
   width: 100%;
   min-height: 68px;
 
   @include from-breakpoint(small) {
-    padding: 22px 45px;
+    padding: 20px 44px;
   }
 
   > .notification__content {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
+  }
+
+  p {
+    font-size: rem(16px);
+    font-weight: 700;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 
   > .notification__content > *:first-child {
@@ -41,4 +50,29 @@
 
 .notification--error {
   background-color: $color-lavender-blush;
+  display: table-row;
+
+
+  .c-notification__icon {
+    margin-right: 12px;
+    display: table-cell;
+    padding: 20px 16px 20px 36px;
+    font-size: rem(20px);
+
+    @include from-breakpoint(small) {
+      padding-left: 44px;
+    }
+  }
+
+  .c-notification__text {
+    display: inline-block;
+    display: table-cell;
+    padding: 20px 36px 20px 0;
+    color: $color-cardinal;
+
+    @include from-breakpoint(small) {
+      padding-right: 44px;
+    }
+
+  }
 }

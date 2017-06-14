@@ -205,6 +205,8 @@ This example lays out two content blocks, each spanning 3 columns, with the fina
     </div>
 </div>
 
+There is also a reset class for each viewport size, e.g.: `offset-small-0`, `offset-medium-0`.
+
 ### Combining columns
 
 Column helpers can also be combined to customize the width at each breakpoint. The following example creates equal width columns in the large viewport, un-even columns in the medium viewport, and two separate rows at the smallest viewport.
@@ -262,6 +264,8 @@ In this example, the 4-column box will appear first in small &amp; extra small s
     </div>
 </div>
 
+There is also a reset class for each viewport size, e.g.: `push-medium-0`, `pull-medium-0`.
+
 ### Utility classes
 
 The `hidden-*` classes prevents content from displaying at a certain breakpoint. The `hidden-*-up` classes hide content at a certain breakpoint and all those above.
@@ -290,4 +294,4 @@ The `hidden-*` classes prevents content from displaying at a certain breakpoint.
 
 ---
 
-See this feature in action on the [grid examples page](/examples/grid.html) and [grid in colours](/example/grid-test.html).
+See this feature in action on the [grid examples page](/examples/grid.html) and [grid in colours](/examples/grid-test.html).

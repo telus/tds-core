@@ -6,40 +6,34 @@
 
 $color-forest-green: #248700;
 $color-japanese-laurel: #177a00;
+$color-telus-green: #6c0;
 $color-panache: #f4f9f2;
 $color-raven: #6a6e74;
 $color-shuttle-grey: #54595f;
 $color-shark: #2a2c2e;
 $color-athens-grey: #f7f7f8;
 $color-grape: #4b286d;
-$color-royal-purple: #7841b0;
+$color-royal-purple: #6e3ba1;
 $color-white-lilac: #f2eff4;
 $color-cardinal: #c12335;
 $color-lavender-blush: #fff6f8;
 $color-white: #fff;
 $color-gainsboro: #d8d8d8;
 
-$color-grey-light: #c4c4c5;
-
 // Typography colors
 
-$color-font: #666;
-$color-font-darker: $color-shark;
 $color-link: $color-shuttle-grey;
-$color-link-hover: $color-raven;
-$color-text: $color-font-darker;
+$color-text: $color-shark;
 
 // Icon colors
-
-$color-icon-primary: $color-grape;
-$color-icon-primary-hover: $color-royal-purple;
-$color-icon-secondary: $color-japanese-laurel;
-$color-icon-secondary-hover: $color-forest-green;
+$color-icon-primary: $color-japanese-laurel;
+$color-icon-secondary: $color-grape;
 $color-icon-disabled: $color-shuttle-grey;
-$color-icon-disabled-hover: #6a6e74;
 $color-icon-error: $color-cardinal;
 
 // Background colours
+$color-primary: $color-forest-green;
+$color-secondary: $color-grape;
 
 //
 // Typography
@@ -110,6 +104,17 @@ $columns: (
 
 $gutter: 32px;
 
+// z-index scale
+$zindex-negative:            -1 !default;
+$zindex-dropdown-backdrop:  900 !default;
+$zindex-navigation:        1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-fixed:             1300 !default;
+$zindex-sticky:            1300 !default;
+$zindex-modal-backdrop:    1400 !default;
+$zindex-modal:             1500 !default;
+$zindex-popover:           1600 !default;
+
 //
 // Feature flags
 //
@@ -124,9 +129,9 @@ $gutter: 32px;
 // lists.
 //
 // To enable this feature, define $thorium-enable-deprecated-list-classes: true
-// prior to your @import "thorium" directive.
+// prior to your @import "tds" directive.
 $enable-deprecated-list-classes: false;
 
-@if variable-exists(thorium-enalble-deprecated-list-classes) {
-  $enable-deprecated-list-classes: $thorium-enalble-deprecated-list-classes;
+@if variable-exists(thorium-enable-deprecated-list-classes) {
+  $enable-deprecated-list-classes: $thorium-enable-deprecated-list-classes;
 }

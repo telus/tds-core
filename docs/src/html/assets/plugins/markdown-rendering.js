@@ -2,7 +2,7 @@
  * WinterSmith plugin to customize the list renderer.
  *
  * This plugin implements custom marked renders for "list" and "listitem"
- * so the HTML generated from Markdown-formatted lists makes use of Thorium's
+ * so the HTML generated from Markdown-formatted lists makes use of TDS'
  * list-related BEM classes. Without these classes, <ul>, <ol>, and <li>
  * elements appear un-styled.
  *
@@ -11,7 +11,7 @@
  * https://github.com/chjj/marked
  *
  * For instance, list, link, and text rendering functions are re-implemented
- * to add Thorium's CSS classes to their output.
+ * to add TDS' CSS classes to their output.
  *
  * marked's license:
  *
@@ -37,7 +37,7 @@
  */
 
 var marked = require('marked');
-var thoriumVersion = 'v' + require('../../../../../core/package.json').version;
+var tdsVersion = 'v' + require('../../../../../core/package.json').version;
 
 /**
  * Private helper from marked's source code, for escaping contents of some
@@ -63,7 +63,7 @@ function escape(html, encode) {
  */
 function replaceTokens(text) {
   var tokens = {
-    '!!THORIUM_VERSION!!': thoriumVersion
+    '!!TDS_VERSION!!': tdsVersion
   };
   var re = new RegExp(Object.keys(tokens).join('|'), 'gi');
   return text.replace(re, function (token) {

@@ -260,7 +260,7 @@ Form states give the user feedback regarding their input. They can affirm that t
 
 ### Accessibility
 
-See "<a href="http://webaim.org/techniques/formvalidation/">Usable and Accessible Form Validation and Error Recovery</a>" by WebAIM for useful information on making form validation accessible. Some best practices for inline error recovery are:
+See [Usable and Accessible Form Validation and Error Recovery](http://webaim.org/techniques/formvalidation/) by WebAIM for useful information on making form validation accessible. Some best practices for inline error recovery are:
 
 * Associate the error message to the invalid control with `aria-describedby`
 * Apply `aria-invalid="true"` to the control
@@ -488,7 +488,7 @@ These limits can be achieved by combining grid column helpers (`.medium-7.large-
     </div>
 </div>
 <div class="button-row">
-    <button type="submit" class="button button-purple">
+    <button type="submit" class="button button--primary">
 	Search
     </button>
 </div>
@@ -503,7 +503,7 @@ These limits can be achieved by combining grid column helpers (`.medium-7.large-
     </div>
 </div>
 <div class="button-row">
-    <button type="submit" class="button button-purple">
+    <button type="submit" class="button button--primary">
 	Search
     </button>
 </div>
@@ -684,7 +684,7 @@ Hints provide information a user may need to complete a form field. While a labe
     <label for="hinted-field">Interactive hint</label>
     <input type="text" id="hinted-field" aria-describedby="some-hint">
     <div class="hint hint--active">
-	<button class="button button-plain hint__trigger" aria-controls="some-hint">
+	<button class="button--plain hint__trigger" aria-controls="some-hint">
 	    <span class="accessible-hide">Toggle helper text visibility</span>
 	</button>
 	<span id="some-hint" class="hint__text" aria-role="tooltip" aria-hidden="false">
@@ -698,7 +698,7 @@ Hints provide information a user may need to complete a form field. While a labe
     <label for="hinted-field">Interactive hint</label>
     <input type="text" id="hinted-field" aria-describedby="some-hint">
     <div class="hint hint--active">
-	<button class="button button-plain hint__trigger" aria-controls="some-hint">
+	<button class="button-plain hint__trigger" aria-controls="some-hint">
 	    <span class="accessible-hide">Toggle helper text visibility</span>
 	</button>
 	<span id="some-hint" class="hint__text" aria-role="tooltip" aria-hidden="false">

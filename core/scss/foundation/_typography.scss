@@ -16,22 +16,8 @@ body {
 //
 // Headings
 //
-
-// p + h2, p + h3, p + h4 {
-h2:not([class]),
-h3:not([class]),
-h4:not([class]) {
-  margin-top: 1.5em;
-}
-
-h2:not([class]):first-child,
-h3:not([class]):first-child,
-h4:not([class]):first-child {
-  margin-top: 0;
-}
-
-.display-heading-1 {
-  color: $color-grape;
+.h1--display {
+  color: $color-secondary;
   font-size: rem(44px);
   line-height: 1.14; // 48px
   font-weight: 300;
@@ -44,13 +30,12 @@ h4:not([class]):first-child {
   }
 }
 
-h1,
-.heading-1 {
+%h1 {
   font-weight: 400;
   font-size: rem(28px);
   line-height: 1.29; // 36px
   letter-spacing: -1.6px;
-  color: $color-grape;
+  color: $color-secondary;
   margin-bottom: baseline-margin(48px);
 
   @include from-breakpoint(medium) {
@@ -61,19 +46,13 @@ h1,
   }
 }
 
-h2,
-.heading-2 {
+%h2 {
   font-weight: 400;
   font-size: rem(24px);
   line-height: 1.33; // 30px
   letter-spacing: -.4px;
-  color: $color-grape;
+  color: $color-secondary;
   margin-bottom: baseline-margin(40px);
-
-  + .subhead,
-  + .field {
-    padding-top: rem(8px);
-  }
 
   @include from-breakpoint(medium) {
     font-weight: 400;
@@ -83,8 +62,7 @@ h2,
   }
 }
 
-h3,
-.heading-3 {
+%h3 {
   font-weight: 700;
   font-size: rem(20px);
   line-height: 1.4; // 28px
@@ -93,8 +71,7 @@ h3,
   margin-bottom: baseline-margin(48px);
 }
 
-h4,
-.heading-4 {
+%h4 {
   font-weight: 700;
   font-size: rem(16px);
   letter-spacing: -.6px;
@@ -104,36 +81,14 @@ h4,
 }
 
 //
-// Sub-headings
-//
-// Deprecated in v0.5.0, 10/18/16
-// Use h3 for "subhead" text
-// Use h4 for "subhead--small" text
-//
-
-.subhead {
-  font-weight: 500;
-  font-size: rem(19px);
-  line-height: 1.7;
-  margin-bottom: baseline-margin(40px);
-
-  &--small {
-    font-size: rem(16px);
-    line-height: 1.5;
-    margin-bottom: baseline-margin(40px);
-  }
-}
-
-//
 // Bold & italic
 //
 
-strong,
-.strong {
+%strong {
   font-weight: 500;
 }
 
-em {
+%italic {
   font-style: italic;
 }
 
@@ -141,16 +96,11 @@ em {
 // Paragraph text
 //
 
-p,
-.text {
+%paragraph {
   font-size: rem($body-text-size);
   line-height: $body-line-height; // 32px
   letter-spacing: -1px;
   margin-bottom: 1rem;
-
-  a {
-    text-decoration: underline;
-  }
 }
 
 %text--medium {
@@ -159,13 +109,7 @@ p,
   letter-spacing: -.8px;
 }
 
-.text--medium {
-  @extend %text--medium;
-}
-
-small,
-.text--small {
-
+%text--small {
   // The 14px "small" text isn't readable on small viewports, so it's not		 +  font-size: rem($body-medium-text-size);
   // applied until the medium breakpoint.		 +  line-height: $body-medium-line-height; // 20px;
   @extend %text--medium;
@@ -173,99 +117,115 @@ small,
   @include from-breakpoint(medium) {
     font-size: rem($body-small-text-size);
     line-height: $body-small-line-height; // 24px;
-    color: $color-raven;
     letter-spacing: -.6px;
-  }
-}
-
-//
-// Links
-//
-
-.link,
-a,
-a:link,
-a:visited {
-  color: $color-link;
-  text-decoration: underline;
-
-  &:hover {
-    color: $color-link-hover;
-  }
-}
-
-.chevron-link,
-.chevron-link:link,
-.chevron-link:visited {
-  text-decoration: none;
-  color: $color-grape;
-  font-weight: 500;
-
-  &:hover {
-    color: $color-royal-purple;
-
-    .icon {
-      left: 4px;
-    }
-  }
-
-  .icon {
-    position: relative;
-    color: inherit;
-    transition: color .2s, left .3s;
-    left: -2px;
-    margin-left: 2px;
-  }
-}
-
-.chevron-link--secondary,
-.chevron-link--secondary:link,
-.chevron-link--secondary:visited {
-  color: $color-japanese-laurel;
-
-  &:hover {
-    color: $color-forest-green;
-  }
-}
-
-.link--inverted,
-.link--inverted:link,
-.link--inverted:visited,
-.chevron-link--inverted,
-.chevron-link--inverted:link,
-.chevron-link--inverted:visited {
-  color: $color-athens-grey;
-
-  &:hover {
-    color: $color-white;
-  }
-}
-
-.link--descent,
-.link--descent:link,
-.link--descent:visited {
-  @include clear-descenders($color-link, $color-white);
-
-  &.link--inverted {
-    @include clear-descenders($color-athens-grey, $color-grape);
   }
 }
 
 //
 // sup/sub
 //
-sub,
-sup {
+%text--sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-}
-
-sup {
   top: -.5em;
 }
 
-sub {
+%text--sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
   bottom: -.25em;
+}
+
+.heading-1 {
+  @extend %h1;
+}
+
+.heading-2 {
+  @extend %h2;
+}
+
+.heading-3 {
+  @extend %h3;
+}
+
+.heading-4 {
+  @extend %h4;
+}
+
+.strong {
+  @extend %strong;
+}
+
+.italic {
+  @extend %italic;
+}
+
+.text {
+  @extend %paragraph;
+}
+
+.text--medium {
+  @extend %text--medium;
+}
+
+.text--small {
+  @extend %text--small;
+}
+
+.text--sup {
+  @extend %text--sup;
+}
+
+.text--sub {
+  @extend %text--sub;
+}
+
+@if $tds-style-typography-html-tags == true {
+  h1 {
+    @extend %h1;
+  }
+
+  h2 {
+    @extend %h2;
+  }
+
+  h3 {
+    @extend %h3;
+  }
+
+  h4 {
+    @extend %h4;
+  }
+
+  strong {
+    @extend %strong;
+  }
+
+  em {
+    @extend %italic;
+  }
+
+  p {
+    @extend %paragraph;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  small {
+    @extend %text--small;
+  }
+
+  sup {
+    @extend %text--sup;
+  }
+
+  sub {
+    @extend %text--sub;
+  }
 }

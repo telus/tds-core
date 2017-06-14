@@ -5,7 +5,7 @@ template: doc.jade
 
 ### Designers
 * [For designers](#for-designers)
-* [TDS.sketch !!THORIUM_VERSION!!](#TDS.sketch)
+* [Sketch File !!TDS_VERSION!!](#sketch-file)
 * [Design resources](#design-resources)
 
 ### Dev
@@ -22,33 +22,33 @@ template: doc.jade
 
 ---
 
-The [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch) file contains the latest styles, symbols, and artboards.
+The [TDS.sketch (!!TDS_VERSION!!)](/assets/downloads/TDS.sketch) file contains the latest styles, symbols, and artboards.
 
 
 * **Step 1**: Explore the Foundations to learn the TDS design patterns and principles.
 * **Step 2**: Review the Components section, to familiarize yourself with the existing components which you can incorporate into your designs.
-* **Step 3**: Download [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch).
-* **Step 4**: Identify your needs by considering the user and outcome you're designing for—these considerations will help inform scope and the milestones and/or deliverables required.
+* **Step 3**: Download [TDS.sketch (!!TDS_VERSION!!)](/assets/downloads/TDS.sketch).
+* **Step 4**: Identify your needs by considering the user and outcome you're designing for —these considerations will help inform scope and the milestones and/or deliverables required.
 
-## TDS.sketch
+## Sketch File
 
 ---
 
-The [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch) file contains the latest pre-defined styles, symbols, and artboards. Design is encouraged to stay within [TDS.sketch (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch) as copying, merging, and cross file consistency can be lost. Elements and component within artboards are stripped of written metrics and measurements as they have been codified and need not be changed.
+The [TDS.sketch (!!TDS_VERSION!!)](/assets/downloads/TDS.sketch) file contains the latest pre-defined styles, symbols, and artboards. Design is encouraged to stay within [TDS.sketch (!!TDS_VERSION!!)](/assets/downloads/TDS.sketch) as copying, merging, and cross file consistency can be lost. Elements and component within artboards are stripped of written metrics and measurements as they have been codified and need not be changed.
 
 ## Design resources
 
 ---
 
-- Download [TDS sketch file (!!THORIUM_VERSION!!)](/assets/downloads/TDS.sketch)
+- Download [TDS sketch file (!!TDS_VERSION!!)](/assets/downloads/TDS.sketch)
 
 ## Development process
 
 ---
 
-Thorium follows a [trunk-based development](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/) model. This process simplifies the development and release cycle by having all teams contribute to one mainline. Thorium admins can then move changes from that mainline to versions which are affected by bugs, or are under active feature development.
+TDS follows a [trunk-based development](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/) model. This process simplifies the development and release cycle by having all teams contribute to one mainline. TDS admins can then move changes from that mainline to versions which are affected by bugs, or are under active feature development.
 
-The following diagram illustrates the Thorium development process.
+The following diagram illustrates the TDS development process.
 
 <figure class="doc-figure">
     <img src="/assets/images/dev-timeline.svg" alt="Diagram showing pull requests to the master branch, and code being deployed via release branches">

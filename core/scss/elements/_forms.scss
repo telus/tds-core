@@ -10,7 +10,7 @@ $form-field-bottom-spacing: 18px;
 input:not([type='radio']),
 textarea,
 select {
-  border: 1px solid $color-grey-light;
+  border: 1px solid $color-raven;
   border-radius: $form-field-border-radius;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
   color: $color-shark;
@@ -19,7 +19,7 @@ select {
   letter-spacing: .4px;
   line-height: 1.4;
   outline: 0;
-  padding: 15px;
+  padding: 11px;
   width: 100%;
   transition: border-color .1s linear, background-color .1s linear;
 
@@ -37,7 +37,7 @@ select {
   }
 
   &:focus {
-    border-color: $color-shuttle-grey;
+    border-color: $color-shark;
   }
 
   @include from-breakpoint(medium) {
@@ -49,7 +49,7 @@ input,
 select {
   &:disabled {
     background-color: $color-athens-grey;
-    border-color: $color-shuttle-grey;
+    border-color: $color-raven;
   }
 }
 
@@ -60,7 +60,7 @@ option {
 }
 
 select {
-  height: rem(60px);
+  height: rem(52px);
 
   // Hide the "drop down selector" pseudo element inserted by IE.
   &::-ms-expand {
@@ -71,7 +71,8 @@ select {
 label {
   display: inline-block;
   color: $color-shark;
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: -.6px;
   margin-bottom: 3px;
 }
 
@@ -123,10 +124,6 @@ textarea {
         right: 15px;
         color: $color-cardinal;
       }
-
-      &.select-container::before {
-        right: 45px;
-      }
     }
 
     &--dropdown {
@@ -138,7 +135,7 @@ textarea {
         content: core-icon-codepoint(caret-down);
         top: 20px;
         right: 20px;
-        color: $color-forest-green;
+        color: $color-primary;
       }
 
       .field--error & {
@@ -154,7 +151,7 @@ textarea {
 
     &--disabled {
       &::after {
-        color: $color-shuttle-grey;
+        color: $color-raven;
       }
     }
 
@@ -187,6 +184,7 @@ textarea {
   height: 12em;
   padding-top: 18px;
   line-height: $body-line-height;
+  overflow: auto;
 }
 
 //
@@ -223,12 +221,13 @@ textarea {
 $radio-checked-stroke-size: 6px;
 
 .choice {
+  font-weight: 400;
   display: block;
   cursor: pointer;
   margin-bottom: 8px;
 
   &__text {
-    color: $color-shuttle-grey;
+    color: $color-shark;
   }
 }
 
@@ -287,6 +286,7 @@ $radio-checked-stroke-size: 6px;
   + .choice__text {
     position: relative;
     padding-left: 2em;
+    display: inline-block;
 
     &::before {
       content: '';
@@ -315,7 +315,7 @@ $radio-checked-stroke-size: 6px;
   &:checked {
     & + .choice__text {
       &::before {
-        border: solid $radio-checked-stroke-size $color-forest-green;
+        border: solid $radio-checked-stroke-size $color-primary;
       }
     }
 
@@ -335,6 +335,7 @@ $radio-checked-stroke-size: 6px;
   + .choice__text {
     &::before {
       border-radius: 50%;
+      margin-top: 5px;
     }
   }
 }
@@ -350,7 +351,8 @@ $radio-checked-stroke-size: 6px;
     &:disabled {
       & + .choice__text {
         &::before {
-          color: $color-shuttle-grey;
+          color: $color-white;
+          background-color: $color-shuttle-grey;
         }
       }
     }
@@ -358,7 +360,7 @@ $radio-checked-stroke-size: 6px;
     &:not(:disabled) {
       & + .choice__text {
         &::before {
-          background: $color-forest-green;
+          background: $color-primary;
           border: none;
         }
       }
@@ -380,6 +382,7 @@ $radio-checked-stroke-size: 6px;
       font-family: $font-icons;
       font-size: 1rem;
       text-align: center;
+      margin-top: 4px;
     }
   }
 

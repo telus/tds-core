@@ -1,6 +1,6 @@
 /*
  *
- * Jobs to configure, lint, test, build, and deploy Thorium.
+ * Jobs to configure, lint, test, build, and deploy TDS.
  *
  * Plugins required:
  *   Copy Artifacts

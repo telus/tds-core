@@ -17,8 +17,19 @@
   }
 
   &--inverted {
-    background: $color-grape;
     padding: 2rem;
+  }
+
+  &--non-inverted {
+    padding: 2rem 0;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
   }
 }
 
@@ -27,6 +38,8 @@
 }
 
 .type-examples {
+  padding-top: 2rem;
+
   .grid-row {
     margin-bottom: 3rem;
   }

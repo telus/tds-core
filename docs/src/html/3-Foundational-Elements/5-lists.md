@@ -15,7 +15,7 @@ template: doc.jade
 
 ---
 
-The `.list` block and `.list__item` element are the basic building blocks of any Thorium list. They apply the basic styles shared by all lists.
+The `.list` block and `.list__item` element are the basic building blocks of any TDS list. They apply the basic styles shared by all lists.
 
 Modifiers such as `.list--bulleted` can change the bullet style and text formatting of a list. This particular modifier adds a purple bullet in front of each element.
 
