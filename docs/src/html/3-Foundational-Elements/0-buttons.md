@@ -35,22 +35,22 @@ The shape colour of normal and hover fade between one another on hover of the bu
 
 A button that's used for primary actions. The `button` and `button--primary` blocks define its default appearance. In general, button classes can be applied to both `<button>` and `<a>` tags.
 
-<button class="tds-button tds-button--primary">Submit form</button>
+<button class="button button--primary">Submit form</button>
 
 ```html
-<button class="tds-button tds-button--primary">
+<button class="button button--primary">
     Submit form
 </button>
 ```
 
 ### Outlined Primary button
 
-<button class="tds-button tds-button--primary tds-button--outlined">
+<button class="button button--primary button--outlined">
     Submit form
 </button>
 
 ```html
-<button class="tds-button tds-button--primary tds-button--outlined">
+<button class="button button--primary button--outlined">
     Submit form
 </button>
 ```
@@ -58,13 +58,13 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 ### Inverted Primary button
 
 <div class="example example--inverted example--primary">
-    <button class="tds-button tds-button--primary tds-button--inverted">
+    <button class="button button--primary button--inverted">
         Submit form
     </button>
 </div>
 
 ```html
-<button class="tds-button tds-button--primary tds-button--inverted">
+<button class="button button--primary button--inverted">
     Submit form
 </button>
 ```
@@ -72,13 +72,13 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 ### Inverted Outlined Primary button
 
 <div class="example example--inverted example--primary">
-    <button class="tds-button tds-button--primary tds-button--inverted tds-button--outlined">
+    <button class="button button--primary button--inverted button--outlined">
         Submit form
     </button>
 </div>
 
 ```html
-<button class="tds-button tds-button--primary tds-button--inverted tds-button--outlined">
+<button class="button button--primary button--inverted button--outlined">
     Submit form
 </button>
 ```
@@ -88,24 +88,24 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 
 ---
 
-<button class="tds-button tds-button--secondary">
+<button class="button button--secondary">
     Submit Form
 </button>
 
 ```html
-<button class="tds-button tds-button--secondary">
+<button class="button button--secondary">
     Submit Form
 </button>
 ```
 
 ### Outlined secondary button
 
-<button class="tds-button tds-button--secondary tds-button--outlined">
+<button class="button button--secondary button--outlined">
     Submit form
 </button>
 
 ```html
-<button class="tds-button tds-button--secondary tds-button--outlined">
+<button class="button button--secondary button--outlined">
     Submit form
 </button>
 ```
@@ -113,13 +113,13 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 ### Inverted Secondary button
 
 <div class="example example--inverted example--secondary">
-    <button class="tds-button tds-button--secondary tds-button--inverted">
+    <button class="button button--secondary button--inverted">
         Submit form
     </button>
 </div>
 
 ```html
-<button class="tds-button tds-button--secondary tds-button--inverted">
+<button class="button button--secondary button--inverted">
     Submit form
 </button>
 ```
@@ -127,13 +127,13 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 ### Inverted Outlined Secondary button
 
 <div class="example example--inverted example--secondary">
-    <button class="tds-button tds-button--secondary tds-button--inverted tds-button--outlined">
+    <button class="button button--secondary button--inverted button--outlined">
         Submit form
     </button>
 </div>
 
 ```html
-<button class="tds-button tds-button--secondary tds-button--inverted tds-button--outlined">
+<button class="button button--secondary button--inverted button--outlined">
     Submit form
 </button>
 ```
@@ -143,10 +143,10 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 
 Button classes can also be applied to `<a>` tags.
 
-<a class="tds-button tds-button--primary" role="button" href="#">Anchor button</a>
+<a class="button button--primary" role="button" href="#">Anchor button</a>
 
 ```html
-<a class="tds-button tds-button--primary" role="button" href="#">
+<a class="button button--primary" role="button" href="#">
     Anchor button
 </a>
 ```
@@ -158,15 +158,15 @@ _Note_: The mobile button width is fluid and stretches to cover all columns curr
 
 ---
 
-The `tds-button--link` class creates an element which behaves like a button, but looks like a link.
+The `button--link` class creates an element which behaves like a button, but looks like a link.
 
 <div>
-    <a class="tds-button tds-button--secondary tds-button--link">Link button
+    <a class="button button--secondary button--link">Link button
     </a>
 </div>
 
 ```html
-<a class="tds-button tds-button--secondary tds-button--link" role="button" href="#">
+<a class="button button--secondary button--link" role="button" href="#">
     A link button
 </a>
 ```
@@ -178,10 +178,10 @@ The `tds-button--link` class creates an element which behaves like a button, but
 Buttons will occupy 100% width of their parent's at the small viewport and below. In other viewports, they'll display inline. Link buttons are separated from buttons by 40 pixels.
 
 <div>
-    <button class="tds-button tds-button--secondary">Button</button>
-    <a class="tds-button tds-button--secondary tds-button--link">Link button</a>
+    <button class="button button--secondary">Button</button>
+    <a class="button button--secondary button--link">Link button</a>
 </div>
 <div>
-    <button class="tds-button tds-button--primary">Button</button>
-    <a class="tds-button tds-button--primary tds-button--link">Link button</a>
+    <button class="button button--primary">Button</button>
+    <a class="button button--primary button--link">Link button</a>
 </div>

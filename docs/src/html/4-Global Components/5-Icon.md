@@ -126,6 +126,6 @@ Icons also accept children, if you'd like to add screen-readable content:
 
 ```js
 <Icon glyph='plus'>
-  <span className='tds-accessible-hide'>button to add more</span>
+  <span className='accessible-hide'>button to add more</span>
 </Icon>
 ```

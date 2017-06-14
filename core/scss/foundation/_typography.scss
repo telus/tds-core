@@ -16,7 +16,7 @@ body {
 //
 // Headings
 //
-.tds-h1--display {
+.h1--display {
   color: $color-secondary;
   font-size: rem(44px);
   line-height: 1.14; // 48px
@@ -53,10 +53,6 @@ body {
   letter-spacing: -.4px;
   color: $color-secondary;
   margin-bottom: baseline-margin(40px);
-
-  + .tds-field {
-    padding-top: rem(8px);
-  }
 
   @include from-breakpoint(medium) {
     font-weight: 400;
@@ -144,65 +140,51 @@ body {
   bottom: -.25em;
 }
 
-.tds-heading-1 {
+.heading-1 {
   @extend %h1;
 }
 
-.tds-heading-2 {
+.heading-2 {
   @extend %h2;
 }
 
-.tds-heading-3 {
+.heading-3 {
   @extend %h3;
 }
 
-.tds-heading-4 {
+.heading-4 {
   @extend %h4;
 }
 
-.tds-strong {
+.strong {
   @extend %strong;
 }
 
-.tds-italic {
+.italic {
   @extend %italic;
 }
 
-.tds-text {
+.text {
   @extend %paragraph;
 }
 
-.tds-text--medium {
+.text--medium {
   @extend %text--medium;
 }
 
-.tds-text--small {
+.text--small {
   @extend %text--small;
 }
 
-.tds-text--sup {
+.text--sup {
   @extend %text--sup;
 }
 
-.tds-text--sub {
+.text--sub {
   @extend %text--sub;
 }
 
 @if $tds-style-typography-html-tags == true {
-
-  // p + h2, p + h3, p + h4 {
-  h2:not([class]),
-  h3:not([class]),
-  h4:not([class]) {
-    margin-top: 1.5em;
-  }
-
-  h2:not([class]):first-child,
-  h3:not([class]):first-child,
-  h4:not([class]):first-child {
-    margin-top: 0;
-  }
-
   h1 {
     @extend %h1;
   }

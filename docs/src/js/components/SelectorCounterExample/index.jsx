@@ -32,17 +32,17 @@ class SelectorCounterExample extends Component {
   render() {
     const succeessful = this.state.succeeded;
     const invalid = (this.state.curr === 5);
-    const fieldClasses = classNames('tds-field', {
-      'tds-field--error': invalid,
-      'tds-field--success': succeessful
+    const fieldClasses = classNames('field', {
+      'field--error': invalid,
+      'field--success': succeessful
     });
     const listClasses = classNames('list', 'list--compact', {
       'list--error': invalid,
       'list--checked': succeessful
     });
-    const helperClasses = classNames('tds-helper', {
-      'tds-helper--error': invalid,
-      'tds-helper--success': succeessful
+    const helperClasses = classNames('helper', {
+      'helper--error': invalid,
+      'helper--success': succeessful
     });
 
     return (
@@ -50,9 +50,9 @@ class SelectorCounterExample extends Component {
           <div className={fieldClasses}>
             <label htmlFor="ex-selcounter">How many smartphone plans?</label>
             <div className={helperClasses} id="ex-selcounter-desc">
-              <p className="tds-text--small">Instructions</p>
+              <p className="text--small">Instructions</p>
               <ul className={listClasses}>
-                <li className="tds-list__item">Do not pick 5</li>
+                <li className="list__item">Do not pick 5</li>
               </ul>
             </div>
             <SelectorCounter
@@ -68,7 +68,7 @@ class SelectorCounterExample extends Component {
               contextSuffix="smartphone plans"
             />
           </div>
-          <button className="tds-button tds-button--primary">Submit</button>
+          <button className="button button--primary">Submit</button>
         </form>
     );
   }

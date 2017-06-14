@@ -59,7 +59,7 @@
 
     &--expanded {
       &::after {
-        @include tds-dimple();
+        @include dimple();
         position: absolute;
         bottom: -32px;
       }

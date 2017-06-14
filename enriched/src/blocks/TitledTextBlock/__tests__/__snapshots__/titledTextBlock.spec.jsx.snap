@@ -17,13 +17,13 @@ exports[`TextBlock Component matches snapshot 1`] = `
     className="titled-text-block"
   >
     <div
-      className="tds-container tds-container--limited-width"
+      className="container container--limited-width"
     >
       <div
-        className="tds-grid-row"
+        className="grid-row"
       >
         <div
-          className="tds-small-12 tds-medium-12 tds-large-12"
+          className="small-12 medium-12 large-12"
         >
           <h1
             className="heading-1"
@@ -34,7 +34,7 @@ exports[`TextBlock Component matches snapshot 1`] = `
             className="title-text-block__content"
           >
             <h2
-              className="tds-heading-4"
+              className="heading-4"
             >
               Small Title 1
             </h2>

@@ -10,9 +10,9 @@ const VideoBlock = (props) => {
 
   return (
     <section className="video-block">
-      <div className="tds-container tds-container--limited-width">
-        <div className="tds-grid-row">
-          <div className="tds-medium-8">
+      <div className="container container--limited-width">
+        <div className="grid-row">
+          <div className="medium-8">
             <div className="video-container-block">
               <iframe allowFullScreen="" frameBorder="0" src={videoUrl} title={caption} />
             </div>

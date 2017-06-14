@@ -30,7 +30,7 @@ class StepsExample extends React.Component {
           <Steps.Step label="Submit" />
         </Steps>
         <div className="offset-large-5">
-          <button className="tds-button tds-button--primary" onClick={this.nextStep}>Next Step</button>
+          <button className="button button--primary" onClick={this.nextStep}>Next Step</button>
         </div>
       </div>
 

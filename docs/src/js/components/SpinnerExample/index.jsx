@@ -26,7 +26,7 @@ class SpinnerExample extends React.Component {
         <div style={sty}>
           <Spinner spinning={isSpinning} tip="Loading..." />
         </div>
-        <button onClick={this.toggleSpinning} className="tds-button tds-button--primary">Toggle spinner</button>
+        <button onClick={this.toggleSpinning} className="button button--primary">Toggle spinner</button>
       </div>
     );
   }

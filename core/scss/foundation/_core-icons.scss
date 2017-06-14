@@ -39,7 +39,7 @@ $core-icon-codepoints: (
   @return map-get($core-icon-codepoints, $name);
 }
 
-.tds-icon {
+.icon {
   @include core-icon;
 
   transition: color .1s linear;
@@ -67,7 +67,7 @@ $core-icon-codepoints: (
 }
 
 @each $name, $codepoint in $core-icon-codepoints {
-  .tds-icon-core-#{$name}::before {
+  .icon-core-#{$name}::before {
     content: $codepoint;
   }
 }
@@ -83,18 +83,18 @@ $core-icon-codepoints: (
   }
 }
 
-.tds-icon-core-alert,
-.tds-icon-core-exclamation-point-circle,
-.tds-icon-core-incomplete {
+.icon-core-alert,
+.icon-core-exclamation-point-circle,
+.icon-core-incomplete {
   @include icon-fixed-color($color-cardinal);
 }
 
-.tds-icon-core-checkmark {
+.icon-core-checkmark {
   @include icon-fixed-color($color-primary);
 }
 
-.tds-icon-core-expander,
-.tds-icon-core-help,
-.tds-icon-core-question-mark-circle {
+.icon-core-expander,
+.icon-core-help,
+.icon-core-question-mark-circle {
   @include icon-fixed-color($color-shuttle-grey);
 }

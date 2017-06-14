@@ -78,7 +78,7 @@ To create consistent leading the line height is set to double the value of the b
 To be used in Hero Banners. Text within it should only wrap to a maximum of 2 lines.
 
 ```html
-<h1 class="tds-display-heading-1">Heading 1</h1>
+<h1 class="display-heading-1">Heading 1</h1>
 ```
 
 # Heading 1
@@ -87,7 +87,7 @@ Primary headlines, tops of category pages.
 
 ```html
 <h1>Heading 1</h1>
-<div egclass="tds-heading-1">Heading 1</div>
+<div egclass="heading-1">Heading 1</div>
 ```
 
 ## Heading 2
@@ -96,7 +96,7 @@ Secondary headlines, tops of content compartments.
 
 ```html
 <h2>Heading 2</h2>
-<div class="tds-heading-2">Heading 2</div>
+<div class="heading-2">Heading 2</div>
 ```
 
 ### Heading 3
@@ -105,7 +105,7 @@ Tertiary headline; tops of content buckets.
 
 ```html
 <h3>Heading 3</h3>
-<div class="tds-heading-3">Heading 3</div>
+<div class="heading-3">Heading 3</div>
 ```
 
 #### Heading 4
@@ -114,7 +114,7 @@ Quaternary headline.
 
 ```html
 <h4>Heading 4</h4>
-<div class="tds-heading-4">Heading 4</div>
+<div class="heading-4">Heading 4</div>
 ```
 
 ## Body & Subhead
@@ -126,15 +126,15 @@ Quaternary headline.
 Primary copy; highest importance level of content.
 
 <div class="example example--type">
-    <header class="tds-heading-3">Example</header>
+    <header class="heading-3">Example</header>
     <p>Large body text.</p>
-    <div class="tds-text">Also large body text.</div>
+    <div class="text">Also large body text.</div>
 </div>
 
 ```html
 <!-- This is the default style, but can also be applied with .text -->
 <p>Large body text.</p>
-<div class="tds-text">Also large body text.</div>
+<div class="text">Also large body text.</div>
 ```
 
 ### Medium text
@@ -142,12 +142,12 @@ Primary copy; highest importance level of content.
 Secondary copy; content of lesser importance.
 
 <div class="example example--type">
-    <header class="tds-heading-3">Example</header>
-    <p class="tds-text tds-text--medium">Medium body text</p>
+    <header class="heading-3">Example</header>
+    <p class="text text--medium">Medium body text</p>
 </div>
 
 ```html
-<p class="tds-text tds-text--medium">Medium body text</p>
+<p class="text text--medium">Medium body text</p>
 ```
 
 ### Small text
@@ -155,13 +155,13 @@ Secondary copy; content of lesser importance.
 Tertiary copy; lowest importance level of of content.
 
 <div class="example example--type">
-    <header class="tds-heading-3">Example</header>
-    <div class="tds-text tds-text--small">Small body text.</div>
+    <header class="heading-3">Example</header>
+    <div class="text text--small">Small body text.</div>
     <small>This is also small body text.</small>
 </div>
 
 ```html
-<div class="tds-text tds-text--small">Small body text.</div>
+<div class="text text--small">Small body text.</div>
 <small>This is also small body text.</small>
 ```
 

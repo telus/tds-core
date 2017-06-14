@@ -83,18 +83,18 @@ function list(body, ordered) {
   var tag = ordered ? 'ol' : 'ul';
   var modifier = ordered ? 'numbered' : 'bulleted';
 
-  return '<' + tag + ' class="tds-list tds-list--' + modifier + '">\n' +
+  return '<' + tag + ' class="list list--' + modifier + '">\n' +
     body + '</' + tag + '>\n';
 }
 
 /**
- * Add the .tds-list__item class to <li> elements.
+ * Add the .list__item class to <li> elements.
  *
  * @param text contents of the list item
  * @returns {string} List item HTML with BEM class
  */
 function listitem(text) {
-  return '<li class="tds-list__item">' + replaceTokens(text) + '</li>\n';
+  return '<li class="list__item">' + replaceTokens(text) + '</li>\n';
 }
 
 /**
@@ -228,7 +228,7 @@ function link(href, title, text) {
       return '';
     }
   }
-  var out = '<a class="tds-link tds-link--descent" href="' + href + '"';
+  var out = '<a class="link link--descent" href="' + href + '"';
   if (title) {
     out += ' title="' + title + '"';
   }

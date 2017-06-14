@@ -29,8 +29,8 @@ class ControlledExpandCollapseExample extends Component {
   render() {
       return (
       <div>
-        <a href="" className="tds-button tds-button--secondary tds-button--link" onClick={(e)=>this.togglePanel(e, 'panel-1')}>Toggle panel #1</a>
-        <a href="" className="tds-button tds-button--secondary tds-button--link" onClick={(e)=>this.togglePanel(e, 'panel-2')}>Toggle panel #2</a>
+        <a href="" className="button button--secondary button--link" onClick={(e)=>this.togglePanel(e, 'panel-1')}>Toggle panel #1</a>
+        <a href="" className="button button--secondary button--link" onClick={(e)=>this.togglePanel(e, 'panel-2')}>Toggle panel #2</a>
         <ExpandCollapse.Group activeKeys={this.state.activeKeys}>
             <ExpandCollapse.Panel header="Panel #1" panelKey="panel-1">
             Panel #1 Body

@@ -114,7 +114,7 @@ export default class SelectorCounter extends Component {
     /* eslint-disable */
     return (
       <div className={classNames('selector-counter', className, cssClasses)}>
-        <div className="tds-accessible-hide" aria-live="assertive" aria-atomic="true">
+        <div className="accessible-hide" aria-live="assertive" aria-atomic="true">
           {`${contextPrefix} ${value} ${contextSuffix}`}
         </div>
         <input

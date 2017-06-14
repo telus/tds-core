@@ -30,7 +30,7 @@
   position: relative;
   margin-bottom: baseline-margin(40px);
 
-  .tds-list__item & {
+  .list__item & {
     &:first-child {
       padding-top: baseline-margin(40px);
     }
@@ -89,7 +89,7 @@
 // Lists
 //
 
-.tds-list {
+.list {
   @extend %list;
 
   &__item {
@@ -105,13 +105,13 @@
   }
 
   &--bulleted {
-    > .tds-list__item {
+    > .list__item {
       @extend %list--bulleted__item;
     }
   }
 
   &--checked {
-    > .tds-list__item:not(.tds-list__item--no-icon) {
+    > .list__item:not(.list__item--no-icon) {
       @extend %list--checked__item;
     }
   }
@@ -119,21 +119,21 @@
   &--compact {
     padding-left: rem(30px);
 
-    &.tds-list--checked,
-    &.tds-list--error {
-      > .tds-list__item::before {
+    &.list--checked,
+    &.list--error {
+      > .list__item::before {
         left: -29px;
       }
     }
 
-    > .tds-list__item {
+    > .list__item {
       margin: 0;
       padding: 0;
     }
   }
 
   &--error {
-    > .tds-list__item:not(.tds-list__item--no-icon) {
+    > .list__item:not(.list__item--no-icon) {
       @extend %list--error__item;
     }
   }

@@ -28,12 +28,12 @@ export default function counterButton(props) {
   return (
     <button
       aria-label={label}
-      className="tds-button--plain selector-counter__button"
+      className="button--plain selector-counter__button"
       onClick={disabled ? noop : onClick}
       disabled={disabled}
       {...extraProps}
     >
-      <i className={`selector-counter__icon tds-icon tds-icon-core-${icon}`} />
+      <i className={`selector-counter__icon icon icon-core-${icon}`} />
     </button>
   );
 }

@@ -1,7 +1,7 @@
 // Button styles
 
-.tds-button,
-a.tds-button {
+.button,
+a.button {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
@@ -24,22 +24,22 @@ a.tds-button {
     width: auto;
     vertical-align: top;
 
-    + .tds-button {
+    + .button {
       // Using < 20px to compensate for the extra margin which appears between inline-block
       // elements due to whitespace in the actual markup.
       margin-left: 16px;
     }
 
-    + .tds-button--link {
+    + .button--link {
       margin-left: 34px;
     }
 
     &--link {
-      + .tds-button--link {
+      + .button--link {
         margin-left: 40px;
       }
 
-      + .tds-button:not(.button--link) {
+      + .button:not(.button--link) {
         margin-left: 40px;
       }
     }
@@ -55,7 +55,7 @@ a.tds-button {
       box-shadow: 0 0 0 1px;
     }
 
-    &.tds-button--outlined {
+    &.button--outlined {
       background-color: transparent;
       box-shadow: 0 0 0 1px;
       color: $color-primary;
@@ -66,7 +66,7 @@ a.tds-button {
       }
     }
 
-    &.tds-button--inverted {
+    &.button--inverted {
       background-color: $color-white;
       color: $color-primary;
 
@@ -76,7 +76,7 @@ a.tds-button {
         background-color: transparent;
       }
 
-      &.tds-button--outlined {
+      &.button--outlined {
         background-color: transparent;
         color: $color-white;
 
@@ -88,7 +88,7 @@ a.tds-button {
       }
     }
 
-    &.tds-button--link {
+    &.button--link {
       &::after {
         padding-left: 4px;
       }
@@ -107,7 +107,7 @@ a.tds-button {
       box-shadow: 0 0 0 1px;
     }
 
-    &.tds-button--outlined {
+    &.button--outlined {
       background-color: transparent;
       color: $color-secondary;
       box-shadow: 0 0 0 1px;
@@ -118,7 +118,7 @@ a.tds-button {
       }
     }
 
-    &.tds-button--inverted {
+    &.button--inverted {
       background-color: $color-white;
       color: $color-secondary;
 
@@ -128,7 +128,7 @@ a.tds-button {
         background-color: transparent;
       }
 
-      &.tds-button--outlined {
+      &.button--outlined {
         background-color: transparent;
         color: $color-white;
 
@@ -140,7 +140,7 @@ a.tds-button {
       }
     }
 
-    &.tds-button--link {
+    &.button--link {
       &::after {
         padding-left: 4px;
       }

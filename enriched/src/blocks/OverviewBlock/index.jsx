@@ -13,12 +13,12 @@ const OverviewBlock = (props) => {
     description: overviewDescription
   };
   return (
-    <div className={`${cls} tds-container tds-container--limited-width`}>
-      <div className="tds-grid-row">
-        <div className="tds-large-7 tds-medium-7 tds-small-12">
+    <div className={`${cls} container container--limited-width`}>
+      <div className="grid-row">
+        <div className="large-7 medium-7 small-12">
           <TextTitleBodyButton {...bodyContent} />
         </div>
-        <div className="tds-large-4 tds-offset-large-1 tds-medium-5 small-12">
+        <div className="large-4 offset-large-1 medium-5 small-12">
           <CheckList {...sideContent} />
         </div>
       </div>

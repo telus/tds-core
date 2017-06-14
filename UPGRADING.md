@@ -6,7 +6,7 @@
 * New CSS CDN file path is
   * https://cdn.telus.digital/thorium/core/v0.16.0/tds.min.css
   * https://cdn.telus.digital/thorium/enriched/v0.16.0/tds-enriched.min.css
-  * https://cdn.telus.digital/thorium/core/v0.16.0/tds-lite.min.css (unstyled typography and anchor links)
+  * https://cdn.telus.digital/thorium/core/v0.16.0/tds-lite.min.css (unstyled typography and anchor links and no form styles - barebones css for platform agnostic projects)
 * New JS file path on CDN with Global Component
   * https://cdn.telus.digital/thorium/enriched/v0.16.0/tds-enriched.min.js
 * Files with the latest files
@@ -20,44 +20,24 @@
 
 ### Buttons
 * button classes now have a minimum width of 180px
-* removed styles from button html tag and if you need to remove default styling you can use `tds-button--plain`
-* `button--plain` changed to `tds-button--plain`
-* `button-green` changed to `tds-button--primary`
-* `button-purple` changed to `tds-button--secondary`
-* `button-green--outlined` changed to `tds-button--primary tds-button--outlined`
-* `button-purple--outlined` changed to `tds-button--secondary tds-button--outlined`
-* `button-inverted` changed to `tds-button--inverted`
-* `button-inverted--outlined` changed to `tds-button--inverted tds-button--outlined`
-* `button-link` changed to `tds-button--link` and now also includes the chevron and can be made purple or green with the revised classes mentioned above
-* removed `tds-button[disabled]` styles because if a button needs to be disabled then it might as well not be there
+* removed styles from button html tag and if you need to remove default styling you can use `button--plain`
+* `button-green` changed to `button--primary`
+* `button-purple` changed to `button--secondary`
+* `button-green--outlined` changed to `button--primary button--outlined`
+* `button-purple--outlined` changed to `button--secondary button--outlined`
+* `button-inverted` changed to `button--inverted`
+* `button-inverted--outlined` changed to `button--inverted button--outlined`
+* `button-link` now includes the chevron and can be made purple or green with the revised classes mentioned above
+* removed `button[disabled]` styles because if a button needs to be disabled then it might as well not be there
 
 ### Links
-* `link` changed to `tds-link`
-* `link--descent` changed to `tds-link--descent`
-* `link--inverted` changed to `tds-link--inverted`
-* `chevron-link` (i.e. purple chevron link) changed to `tds-chevron-link--secondary`
-* `chevron-link--secondary` (i.e. green chevron link) changed to `tds-chevron-link--primary` and you need to remove the icon markup
-* to get the styles from `chevron-link--inverted` you now need to use `tds-chevron-link tds-chevron-link--inverted`
-* `link link--inverted link--descent` class for white links on purple background `tds-link tds-link--secondary tds-link--inverted tds-link--descent`
+* `chevron-link` (i.e. purple chevron link) changed to `chevron-link--secondary` and you need to remove the icon markup
+* `chevron-link--secondary` (i.e. green chevron link) changed to `chevron-link--primary` and you need to remove the icon markup
+* to get the styles from `chevron-link--inverted` you now need to use `chevron-link chevron-link--inverted`
+* `link link--inverted link--descent` class for white links on purple background `link link--secondary link--inverted link--descent`
 * chevron links don't need the `<i class="icon icon-core-chevron"></i>` mark up because the chevron icon is now part of the anchor link mark up
 
-### Forms
-* `field` changed to `tds-field`
-* `field--error` changed to `tds-field--error`
-* `field--success` changed to `tds-field--success`
-* `helper` changed to `tds-helper`
-* `choice` changed to `tds-choice`
-* `choice--error` changed to `tds-choice--error`
-* `choice__text` changed to `tds-choice__text`
-* `field--hinted` changed to `tds-field--hinted`
-* `field__control` changed to `tds-field__control`
-* `hint` changed to `tds-hint`
-* `hint__trigger` changed to `tds-hint__trigger`
-* `hint__text` changed to `tds-hint__text`
-
 ### Lists
-* `list` changed to `tds-list`
-* `list--*` changed to `tds-list--*`
 * remove deprecated list classes that have already been replaced by their BEMified version, e.g: `list-alpha` was replaced by already existing and documented `list--alpha` class.
 
 ### SASS
@@ -65,36 +45,8 @@
 * remove (SASS) `$color-link-hover` because default underlined links don't change colour when hovered
 
 ### Typography
-* `heading-*` changed to `tds-heading-*`
-* `strong` changed to `.tds-strong`
-* `text` changed to `tds-text`
-* `text--small` changed to `tds-text--small`
-* `text--medium` changed to `tds-text--medium`
-* remove `subhead`, use `tds-heading-3` instead (Deprecated in v0.5.0, 10/18/16)
-* remove `subhead--small`, use `tds-heading-4` instead (Deprecated in v0.5.0, 10/18/16)
-
-### Icons
-* `icon` changed to `tds-icon`
-* `icon-core-*` changed to `tds-icon-core-*`
-* `icon--*` changed to `tds-icon--*`
-
-### Grid
-* `container` changed to `tds-container`
-* `container--limited-width` changed to `tds-container--limited-width`
-* `container--fluid` changed to `tds-container--fluid`
-* `button-row` changed to `tds-button-row`
-* `field-col` changed to `tds-fields-col`
-* `grid-row` changed to `tds-grid-row`
-* `xs-*` changed to `tds-xs-*`
-* `small-*` changed to `tds-small-*`
-* `medium-*` changed to `tds-medium-*`
-* `large-*` changed to `tds-large-*`
-* `xl-*` changed to `tds-xl-*`
-* use `offset-{xs|small|medium|large|xl}-*` instead of `tds-offset-{xs|small|medium|large|xl}-*`
-* use `push-{xs|small|medium|large|xl}-*` instead of `tds-push-{xs|small|medium|large|xl}-*`
-* use `pull-{xs|small|medium|large|xl}-*` instead of `tds-pull-{xs|small|medium|large|xl}-*`
-* use `hidden-{xs|small|medium|large|xl}` instead of `tds-hidden-{xs|small|medium|large|xl}`
-* use `hidden-{xs|small|medium|large|xl}-up` instead of `tds-hidden-{xs|small|medium|large|xl}-up`
+* remove `subhead`, use `heading-3` instead (Deprecated in v0.5.0, 10/18/16)
+* remove `subhead--small`, use `heading-4` instead (Deprecated in v0.5.0, 10/18/16)
 
 ### Components
 * `<Collapsible/>` global component changed to `<ExpandCollapse/>`

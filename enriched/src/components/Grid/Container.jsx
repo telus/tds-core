@@ -4,8 +4,8 @@ import cx from 'classnames';
 
 function Container(props) {
   const { className, limitWidth, ...extraProps } = props;
-  const classes = cx('tds-container', className, {
-    'tds-container--limited-width': limitWidth === true
+  const classes = cx('container', className, {
+    'container--limited-width': limitWidth === true
   });
 
   return (

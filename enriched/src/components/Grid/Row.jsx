@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Row(props) {
   const { className, ...extraProps } = props;
-  const classes = ['tds-grid-row', className];
+  const classes = ['grid-row', className];
 
   return (
     <div className={classes.filter(c => c).join(' ')} {...extraProps}>

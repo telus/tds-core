@@ -9,8 +9,8 @@
    * Form hints example.
    */
 
-  var TRIGGERS_SELECTOR = '.ex-page .tds-hint__trigger';
-  var ACTIVE_HINT_CLASS = 'tds-hint--active';
+  var TRIGGERS_SELECTOR = '.ex-page .hint__trigger';
+  var ACTIVE_HINT_CLASS = 'hint--active';
   var ENTER_KEYCODE = 13;
   var ESC_KEYCODE = 27;
 
@@ -32,7 +32,7 @@
     var active = hint.classList.toggle(ACTIVE_HINT_CLASS);
 
     eachElement(hint.childNodes, function(el, i) {
-      if (hasClass(el, 'tds-hint__text')) {
+      if (hasClass(el, 'hint__text')) {
 	el.setAttribute('aria-hidden', !active);
       }
     });
@@ -60,7 +60,7 @@
 
   function closeHintsOnClickAway() {
     var handleClick = function (e) {
-      if (!hasClass(e.srcElement, 'tds-hint__trigger')) {
+      if (!hasClass(e.srcElement, 'hint__trigger')) {
 	closeHints();
       }
     };
@@ -105,19 +105,19 @@
   }
 
   function resetHelper() {
-    HELPER.setAttribute('class', 'tds-helper');
-    RULES.setAttribute('class', 'tds-list tds-list--compact');
+    HELPER.setAttribute('class', 'helper');
+    RULES.setAttribute('class', 'list list--compact');
     [].forEach.call(RULES.children, function (child) {
-      child.setAttribute('class', 'tds-list__item');
+      child.setAttribute('class', 'list__item');
     });
   }
 
   function hideIcon(el) {
-    el.setAttribute('class', 'tds-list__item tds-list__item--no-icon');
+    el.setAttribute('class', 'list__item list__item--no-icon');
   }
 
   function showIcon(el) {
-    el.setAttribute('class', 'tds-list__item');
+    el.setAttribute('class', 'list__item');
   }
 
   function showAllIcons() {
@@ -125,11 +125,11 @@
   }
 
   function setListMode(mode) {
-    RULES.setAttribute('class', 'tds-list tds-list--compact ' + ((mode) ? 'tds-list--' + mode : ''));
+    RULES.setAttribute('class', 'list list--compact ' + ((mode) ? 'list--' + mode : ''));
   }
 
   function setHelperMode(mode) {
-    HELPER.setAttribute('class', 'tds-helper' + ((mode) ? ' tds-helper--' + mode : ''));
+    HELPER.setAttribute('class', 'helper' + ((mode) ? ' helper--' + mode : ''));
   }
 
   function validateGreeting() {
@@ -160,7 +160,7 @@
       setListMode('error');
       showAllIcons();
       HELLO_INPUT.setAttribute('aria-invalid', true);
-      HELLO_FIELD.setAttribute('class', 'tds-field tds-field--error');
+      HELLO_FIELD.setAttribute('class', 'field field--error');
       return false;
     } else {
       setListMode('checked');
@@ -168,12 +168,12 @@
       if (correct === 1) {
 	setHelperMode();
 	HELLO_INPUT.setAttribute('aria-invalid', true);
-	HELLO_FIELD.setAttribute('class', 'tds-field');
+	HELLO_FIELD.setAttribute('class', 'field');
 	return false;
       } else if (correct === 2) {
 	setHelperMode('success');
 	HELLO_INPUT.setAttribute('aria-invalid', false);
-	HELLO_FIELD.setAttribute('class', 'tds-field');
+	HELLO_FIELD.setAttribute('class', 'field');
 	return true;
       }
     }
@@ -192,9 +192,9 @@
   }
 
   function resetShapeChoices() {
-    [].forEach.call(document.querySelectorAll('.choice-states-example .tds-choice'), function (node) {
+    [].forEach.call(document.querySelectorAll('.choice-states-example .choice'), function (node) {
       if (!node.children[0].checked) {
-	node.setAttribute('class', 'tds-choice');
+	node.setAttribute('class', 'choice');
       }
     });
   }
@@ -208,10 +208,10 @@
     };
 
     if (answers[e.target.name].indexOf(e.target.value) === -1 && e.target.checked) {
-      e.currentTarget.setAttribute('class', 'tds-choice tds-choice--error');
+      e.currentTarget.setAttribute('class', 'choice choice--error');
       e.target.setAttribute('aria-invalid', true);
     } else {
-      e.currentTarget.setAttribute('class', 'tds-choice');
+      e.currentTarget.setAttribute('class', 'choice');
       e.target.setAttribute('aria-invalid', false);
     }
   }
@@ -222,7 +222,7 @@
     HELLO_FORM.addEventListener('submit', handleSendGreeting);
     HELLO_INPUT.addEventListener('keyup', validateGreeting);
 
-    [].forEach.call(document.querySelectorAll('.choice-states-example .tds-choice'), function (node) {
+    [].forEach.call(document.querySelectorAll('.choice-states-example .choice'), function (node) {
       node.addEventListener('change', handleShapeChoice);
     });
   }

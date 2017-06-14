@@ -35,19 +35,19 @@ html(lang='en')
 
   body(class=bodyclass)
     header.docs-header
-      .tds-container.tds-container--limited-width.docs-header__container
-        button.tds-button--plain.docs-header__toggle
-          i.tds-icon.tds-icon-core-hamburger.docs-header__icon
-            span.tds-accessible-hide Toggle Menu
+      .container.container--limited-width.docs-header__container
+        button.button--plain.docs-header__toggle
+          i.icon.icon-core-hamburger.docs-header__icon
+            span.accessible-hide Toggle Menu
         a.docs-header__logo(href="/")
           img(src="/assets/images/logo.png" alt="Go back to Home page")
 
-    main.tds-container.tds-container--limited-width
-      div.tds-grid-row
-        div.tds-large-9.tds-push-large-3
+    main.container.container--limited-width
+      div.grid-row
+        div.large-9.push-large-3
           block content
             h2 Welcome to the TELUS Design System!
-        nav.navigation.tds-large-3.tds-pull-large-9
+        nav.navigation.large-3.pull-large-9
           a(id="nav-link" name="nav-link" class="navigation__local-anchor--hidden")
           include nav.jade
 

@@ -71,7 +71,7 @@ describe('<SelectorCounter />', () => {
         );
         const expectedText = 'prefixed context 0 ';
 
-        expect(wrapper.find('.tds-accessible-hide').first().text())
+        expect(wrapper.find('.accessible-hide').first().text())
           .toEqual(expectedText);
       });
 
@@ -84,7 +84,7 @@ describe('<SelectorCounter />', () => {
         );
         const expectedText = ' 0 suffixed context';
 
-        expect(wrapper.find('.tds-accessible-hide').first().text())
+        expect(wrapper.find('.accessible-hide').first().text())
           .toEqual(expectedText);
       });
 
@@ -98,13 +98,13 @@ describe('<SelectorCounter />', () => {
         );
         const expectedText = 'prefix 0 suffix';
 
-        expect(wrapper.find('.tds-accessible-hide').first().text())
+        expect(wrapper.find('.accessible-hide').first().text())
           .toEqual(expectedText);
       });
 
       it('renders the status div', () => {
         const wrapper = shallow(<SelectorCounter />);
-        const statusDiv = wrapper.find('.tds-accessible-hide');
+        const statusDiv = wrapper.find('.accessible-hide');
 
         expect(statusDiv.length).toEqual(1);
         expect(statusDiv.first().text()).toEqual(' 0 ');

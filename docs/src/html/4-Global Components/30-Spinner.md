@@ -9,7 +9,7 @@ template: doc.jade
 
 ### Inside a container
 
-<div class="tds-grid-row">
+<div class="grid-row">
   <div id="spinnerExample">
   </div>
 </div>
@@ -32,7 +32,7 @@ import { Spinner } from 'telus-thorium-enriched';
 
 ### Embedded mode
 
-<div class="tds-grid-row">
+<div class="grid-row">
   <div id="spinnerEmbedExample">
   </div>
 </div>
@@ -59,7 +59,7 @@ import { Spinner } from 'telus-thorium-enriched';
 ### Full Screen mode
 
 
-<div class="tds-grid-row">
+<div class="grid-row">
   <div id="spinnerFullScreenExample">
   </div>
 </div>

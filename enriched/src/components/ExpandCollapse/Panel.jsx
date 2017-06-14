@@ -48,15 +48,15 @@ class Panel extends Component {
       'collapsible-panel__label--first': isFirst
     });
 
-    const iconClassName = classNames('tds-icon tds-icon--primary', {
-      'tds-icon-core-minus': isActive,
-      'tds-icon-core-plus': !isActive
+    const iconClassName = classNames('icon icon--primary', {
+      'icon-core-minus': isActive,
+      'icon-core-plus': !isActive
     });
 
 
     return (
       <div className={collapsePanelClassName}>
-        <span className="tds-accessible-hide">{isActive ? 'expanded' : 'collapsed'}</span>
+        <span className="accessible-hide">{isActive ? 'expanded' : 'collapsed'}</span>
         <button
           onClick={onPanelClick}
           aria-expanded={isActive ? 'true' : 'false'}

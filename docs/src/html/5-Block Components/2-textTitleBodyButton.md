@@ -11,8 +11,8 @@ A TextTitleBodyButton is a component composed of an header, paragraph, and a cal
 
 ### Example
 
-<div class="tds-grid-row">
-  <div class='tds-small-12'>
+<div class="grid-row">
+  <div class='small-12'>
     <div id="textTitleBodyButtonExample">
     </div>
   </div>
@@ -41,8 +41,8 @@ const TextTitleBodyButtonEx = () => {
   };
 
   return (
-    <div className="tds-grid-row">
-      <div className='tds-small-12'>
+    <div className="grid-row">
+      <div className='small-12'>
         <TextTitleBodyButton {...props}/>
       </div>
     </div>

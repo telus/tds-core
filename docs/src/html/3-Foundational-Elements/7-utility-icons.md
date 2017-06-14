@@ -7,79 +7,79 @@ template: doc.jade
 
 ---
 
-<div class="tds-container">
-    <div class="tds-grid-row">
-	<div class="tds-medium-4">
+<div class="container">
+    <div class="grid-row">
+	<div class="medium-4">
 	    <h3>Navigational</h3>
 	    <p>
-    <i class="tds-icon tds-icon-core-hamburger tds-icon--primary tds-icon--fw"></i>
-		<i class="tds-icon tds-icon-core-hamburger tds-icon--secondary tds-icon--fw"></i>
-		<i class="tds-icon tds-icon-core-hamburger tds-icon--disabled tds-icon--fw"></i><br>
+    <i class="icon icon-core-hamburger icon--primary icon--fw"></i>
+		<i class="icon icon-core-hamburger icon--secondary icon--fw"></i>
+		<i class="icon icon-core-hamburger icon--disabled icon--fw"></i><br>
 		`hamburger`
 	    </p>
 	    <p>
-    <i class="tds-icon tds-icon-core-spyglass tds-icon--primary tds-icon--fw"></i>
-		<i class="tds-icon tds-icon-core-spyglass tds-icon--secondary tds-icon--fw"></i>
-		<i class="tds-icon tds-icon-core-spyglass tds-icon--disabled tds-icon--fw"></i><br>
+    <i class="icon icon-core-spyglass icon--primary icon--fw"></i>
+		<i class="icon icon-core-spyglass icon--secondary icon--fw"></i>
+		<i class="icon icon-core-spyglass icon--disabled icon--fw"></i><br>
 		`spyglass`
 	    </p>
 	    <p>
-    <i class="tds-icon tds-icon-core-location tds-icon--primary tds-icon--fw"></i>
-		<i class="tds-icon tds-icon-core-location tds-icon--secondary tds-icon--fw"></i>
-		<i class="tds-icon tds-icon-core-location tds-icon--disabled tds-icon--fw"></i><br>
+    <i class="icon icon-core-location icon--primary icon--fw"></i>
+		<i class="icon icon-core-location icon--secondary icon--fw"></i>
+		<i class="icon icon-core-location icon--disabled icon--fw"></i><br>
 		`location`
 	    </p>
 	    <p>
-    <i class="tds-icon tds-icon-core-times tds-icon--fw tds-icon--primary"></i>
-		<i class="tds-icon tds-icon-core-times tds-icon--fw tds-icon--secondary"></i>
-		<i class="tds-icon tds-icon-core-times tds-icon--fw tds-icon--disabled"></i>
-		<i class="tds-icon tds-icon-core-times tds-icon--fw tds-icon--error"></i><br>
+    <i class="icon icon-core-times icon--fw icon--primary"></i>
+		<i class="icon icon-core-times icon--fw icon--secondary"></i>
+		<i class="icon icon-core-times icon--fw icon--disabled"></i>
+		<i class="icon icon-core-times icon--fw icon--error"></i><br>
 		`times`
 	    </p>
 	    <p>
-		<i class="tds-icon tds-icon-core-expander tds-icon--fw"></i><br>
+		<i class="icon icon-core-expander icon--fw"></i><br>
 		`expander`
 	    </p>
 	</div>
-	<div class="tds-medium-4">
+	<div class="medium-4">
 	    <h3>Selection</h3>
 	    <p>
-		<i class="tds-icon tds-icon-core-chevron tds-icon--fw tds-icon--primary"></i>
-		<i class="tds-icon tds-icon-core-chevron tds-icon--fw tds-icon--secondary"></i><br>
+		<i class="icon icon-core-chevron icon--fw icon--primary"></i>
+		<i class="icon icon-core-chevron icon--fw icon--secondary"></i><br>
 		`chevron`
 	    </p>
 	    <p>
-		<i class="tds-icon tds-icon-core-caret-down tds-icon--fw tds-icon--primary"></i>
-		<i class="tds-icon tds-icon-core-caret-down tds-icon--fw tds-icon--secondary"></i>
-		<i class="tds-icon tds-icon-core-caret-down tds-icon--fw tds-icon--disabled"></i>
-		<i class="tds-icon tds-icon-core-caret-down tds-icon--fw tds-icon--error"></i><br>
+		<i class="icon icon-core-caret-down icon--fw icon--primary"></i>
+		<i class="icon icon-core-caret-down icon--fw icon--secondary"></i>
+		<i class="icon icon-core-caret-down icon--fw icon--disabled"></i>
+		<i class="icon icon-core-caret-down icon--fw icon--error"></i><br>
 		`caret-down`
 	    </p>
 	    <p>
-		<i class="tds-icon tds-icon-core-plus tds-icon--fw tds-icon--primary"></i>
-		<i class="tds-icon tds-icon-core-plus tds-icon--fw tds-icon--secondary"></i>
-		<i class="tds-icon tds-icon-core-plus tds-icon--fw tds-icon--disabled"></i><br>
+		<i class="icon icon-core-plus icon--fw icon--primary"></i>
+		<i class="icon icon-core-plus icon--fw icon--secondary"></i>
+		<i class="icon icon-core-plus icon--fw icon--disabled"></i><br>
 		`plus`
 	    </p>
 	    <p>
-		<i class="tds-icon tds-icon-core-minus tds-icon--fw tds-icon--primary"></i>
-		<i class="tds-icon tds-icon-core-minus tds-icon--fw tds-icon--secondary"></i>
-		<i class="tds-icon tds-icon-core-minus tds-icon--fw tds-icon--disabled"></i><br>
+		<i class="icon icon-core-minus icon--fw icon--primary"></i>
+		<i class="icon icon-core-minus icon--fw icon--secondary"></i>
+		<i class="icon icon-core-minus icon--fw icon--disabled"></i><br>
 		`minus`
 	    </p>
 	</div>
-	<div class="tds-medium-4">
+	<div class="medium-4">
 	    <h3>Instructive</h3>
 	    <p>
-		<i class="tds-icon tds-icon-core-question-mark-circle tds-icon--fw"></i><br>
+		<i class="icon icon-core-question-mark-circle icon--fw"></i><br>
 		`question-mark-circle`
 	    </p>
 	    <p>
-		<i class="tds-icon tds-icon-core-checkmark tds-icon--fw"></i><br>
+		<i class="icon icon-core-checkmark icon--fw"></i><br>
 		`checkmark`
 	    </p>
 	    <p>
-		<i class="tds-icon tds-icon-core-exclamation-point-circle tds-icon--fw"></i><br>
+		<i class="icon icon-core-exclamation-point-circle icon--fw"></i><br>
 		`exclamation-point-circle`
 	    </p>
 	</div>
@@ -90,17 +90,17 @@ template: doc.jade
 
 ---
 
-To render an icon anywhere in the page, mix the `tds-icon` block with the glyph's named block. The named blocks follow the format `tds-icon-core-name`, and each glyphs name can be found in the "[Icons](#icons)" section above.
+To render an icon anywhere in the page, mix the `icon` block with the glyph's named block. The named blocks follow the format `icon-core-name`, and each glyphs name can be found in the "[Icons](#icons)" section above.
 
 **Basic icon example**
 
 <p>
-    <i class="tds-icon tds-icon-core-caret-down"></i>
+    <i class="icon icon-core-caret-down"></i>
     This is the "Caret (down)" icon
 </p>
 
 ```html
-<i class="tds-icon tds-icon-core-caret-down"></i>
+<i class="icon icon-core-caret-down"></i>
 This is the "Caret (down)" icon
 ```
 
@@ -116,21 +116,21 @@ The default icon display is the default text colour (shark). Modifier classes ma
 **Examples of icons with modified colors**
 
 <p>
-    <i class="tds-icon tds-icon-core-caret-down tds-icon--primary"></i>
-    <i class="tds-icon tds-icon-core-caret-down tds-icon--secondary"></i>
-    <i class="tds-icon tds-icon-core-caret-down tds-icon--disabled"></i>
-    <i class="tds-icon tds-icon-core-caret-down tds-icon--error"></i>
+    <i class="icon icon-core-caret-down icon--primary"></i>
+    <i class="icon icon-core-caret-down icon--secondary"></i>
+    <i class="icon icon-core-caret-down icon--disabled"></i>
+    <i class="icon icon-core-caret-down icon--error"></i>
 </p>
 
 ```html
-<i class="tds-icon tds-icon-core-caret-down tds-icon--primary"></i>
-<i class="tds-icon tds-icon-core-caret-down tds-icon--secondary"></i>
-<i class="tds-icon tds-icon-core-caret-down tds-icon--disabled"></i>
-<i class="tds-icon tds-icon-core-caret-down tds-icon--error"></i>
+<i class="icon icon-core-caret-down icon--primary"></i>
+<i class="icon icon-core-caret-down icon--secondary"></i>
+<i class="icon icon-core-caret-down icon--disabled"></i>
+<i class="icon icon-core-caret-down icon--error"></i>
 ```
 
-<ol class="tds-list tds-list--numbered tds-list--small">
-    <li class="tds-list__item" id="color-footnote">
+<ol class="list list--numbered list--small">
+    <li class="list__item" id="color-footnote">
 	Color has special meaning for instructive icons.
 	By default, each one is styled with its intended color.
 	For example, "checkmark" is green, and "alert" is red without requiring any modifier.
@@ -144,20 +144,20 @@ The TELUS Core Icons font isn't fixed width, but the `--fw` helper can be used w
 **Example of fixed width icons**
 
 <p>
-    <i class="tds-icon tds-icon-core-hamburger tds-icon--fw"></i> Hamburger<br>
-    <i class="tds-icon tds-icon-core-chevron tds-icon--fw"></i> Chevron
+    <i class="icon icon-core-hamburger icon--fw"></i> Hamburger<br>
+    <i class="icon icon-core-chevron icon--fw"></i> Chevron
 </p>
 
 ```html
-<i class="tds-icon tds-icon-core-hamburger tds-icon--fw"></i> Hamburger<br>
-<i class="tds-icon tds-icon-core-chevron tds-icon--fw"></i> Chevron
+<i class="icon icon-core-hamburger icon--fw"></i> Hamburger<br>
+<i class="icon icon-core-chevron icon--fw"></i> Chevron
 ```
 
 ## SCSS variables and mixins
 
 ---
 
-In order to use variables, functions, and mixins, TDS' SCSS source code must be imported by your project. See the [Using TDS Core](/2-Use-TDS/1-getting-started.html#using-tds-core) for further instructions.
+In order to use variables, functions, and mixins, TDS' SCSS source code must be imported by your project. See the [Using TDS Core](/2-Use-TDS/1-getting-started.html#using-core) for further instructions.
 
 ### Core Icon Codepoint
 
@@ -200,14 +200,14 @@ Variable | Value
 
 ---
 
-Icons are a helpful tool to supplement information, but should not be the only means by which you communicate something. The `.tds-accessible-hide` class is one way to include helpful text along with an icon.
+Icons are a helpful tool to supplement information, but should not be the only means by which you communicate something. The `.accessible-hide` class is one way to include helpful text along with an icon.
 
 **Accessible icon example**
 
 <p>
     Enter a keyword, then click
-    <i class="tds-icon tds-icon-core-spyglass">
-	<span class="tds-accessible-hide">the search button</span>
+    <i class="icon icon-core-spyglass">
+	<span class="accessible-hide">the search button</span>
     </i>
     to find relevant results.
 </p>
@@ -215,8 +215,8 @@ Icons are a helpful tool to supplement information, but should not be the only m
 ```html
 <p>
     Enter a keyword, then click
-    <i class="tds-icon tds-icon-core-spyglass">
-	<span class="tds-accessible-hide">the search button</span>
+    <i class="icon icon-core-spyglass">
+	<span class="accessible-hide">the search button</span>
     </i>
     to find relevant results.
 </p>

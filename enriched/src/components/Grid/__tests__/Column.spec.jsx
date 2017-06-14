@@ -14,7 +14,7 @@ describe('<Column />', () => {
   it('correctly merges className', () => {
     const col = shallow(<Column xs={12} className="red" />);
 
-    expect(col.hasClass('tds-xs-12')).toEqual(true);
+    expect(col.hasClass('xs-12')).toEqual(true);
     expect(col.hasClass('red')).toEqual(true);
   });
 
@@ -45,11 +45,11 @@ describe('<Column />', () => {
 
     const col = shallow(<Column {...props} />);
 
-    expect(col.hasClass('tds-xs-12')).toEqual(true);
-    expect(col.hasClass('tds-small-12')).toEqual(true);
-    expect(col.hasClass('tds-medium-12')).toEqual(true);
-    expect(col.hasClass('tds-large-12')).toEqual(true);
-    expect(col.hasClass('tds-xl-12')).toEqual(true);
+    expect(col.hasClass('xs-12')).toEqual(true);
+    expect(col.hasClass('small-12')).toEqual(true);
+    expect(col.hasClass('medium-12')).toEqual(true);
+    expect(col.hasClass('large-12')).toEqual(true);
+    expect(col.hasClass('xl-12')).toEqual(true);
   });
 
   it('renders offset classes', () => {
@@ -58,11 +58,11 @@ describe('<Column />', () => {
 
     const col = shallow(<Column {...props} />);
 
-    expect(col.hasClass('tds-offset-xs-6')).toEqual(true);
-    expect(col.hasClass('tds-offset-small-6')).toEqual(true);
-    expect(col.hasClass('tds-offset-medium-6')).toEqual(true);
-    expect(col.hasClass('tds-offset-large-6')).toEqual(true);
-    expect(col.hasClass('tds-offset-xl-6')).toEqual(true);
+    expect(col.hasClass('offset-xs-6')).toEqual(true);
+    expect(col.hasClass('offset-small-6')).toEqual(true);
+    expect(col.hasClass('offset-medium-6')).toEqual(true);
+    expect(col.hasClass('offset-large-6')).toEqual(true);
+    expect(col.hasClass('offset-xl-6')).toEqual(true);
   });
 
   it('renders push classes', () => {
@@ -71,11 +71,11 @@ describe('<Column />', () => {
 
     const col = shallow(<Column {...props} />);
 
-    expect(col.hasClass('tds-push-xs-2')).toEqual(true);
-    expect(col.hasClass('tds-push-small-2')).toEqual(true);
-    expect(col.hasClass('tds-push-medium-2')).toEqual(true);
-    expect(col.hasClass('tds-push-large-2')).toEqual(true);
-    expect(col.hasClass('tds-push-xl-2')).toEqual(true);
+    expect(col.hasClass('push-xs-2')).toEqual(true);
+    expect(col.hasClass('push-small-2')).toEqual(true);
+    expect(col.hasClass('push-medium-2')).toEqual(true);
+    expect(col.hasClass('push-large-2')).toEqual(true);
+    expect(col.hasClass('push-xl-2')).toEqual(true);
   });
 
   it('renders pull classes', () => {
@@ -84,11 +84,11 @@ describe('<Column />', () => {
 
     const col = shallow(<Column {...props} />);
 
-    expect(col.hasClass('tds-pull-xs-5')).toEqual(true);
-    expect(col.hasClass('tds-pull-small-5')).toEqual(true);
-    expect(col.hasClass('tds-pull-medium-5')).toEqual(true);
-    expect(col.hasClass('tds-pull-large-5')).toEqual(true);
-    expect(col.hasClass('tds-pull-xl-5')).toEqual(true);
+    expect(col.hasClass('pull-xs-5')).toEqual(true);
+    expect(col.hasClass('pull-small-5')).toEqual(true);
+    expect(col.hasClass('pull-medium-5')).toEqual(true);
+    expect(col.hasClass('pull-large-5')).toEqual(true);
+    expect(col.hasClass('pull-xl-5')).toEqual(true);
   });
 
   it('renders hidden classes', () => {
@@ -97,11 +97,11 @@ describe('<Column />', () => {
 
     const col = shallow(<Column {...props} />);
 
-    expect(col.hasClass('tds-hidden-xs')).toEqual(true);
-    expect(col.hasClass('tds-hidden-small')).toEqual(true);
-    expect(col.hasClass('tds-hidden-medium')).toEqual(true);
-    expect(col.hasClass('tds-hidden-large')).toEqual(true);
-    expect(col.hasClass('tds-hidden-xl')).toEqual(true);
+    expect(col.hasClass('hidden-xs')).toEqual(true);
+    expect(col.hasClass('hidden-small')).toEqual(true);
+    expect(col.hasClass('hidden-medium')).toEqual(true);
+    expect(col.hasClass('hidden-large')).toEqual(true);
+    expect(col.hasClass('hidden-xl')).toEqual(true);
   });
 
   it('renders hidden-up classes', () => {
@@ -110,10 +110,10 @@ describe('<Column />', () => {
 
     const col = shallow(<Column {...props} />);
 
-    expect(col.hasClass('tds-hidden-xs-up')).toEqual(true);
-    expect(col.hasClass('tds-hidden-small-up')).toEqual(true);
-    expect(col.hasClass('tds-hidden-medium-up')).toEqual(true);
-    expect(col.hasClass('tds-hidden-large-up')).toEqual(true);
-    expect(col.hasClass('tds-hidden-xl-up')).toEqual(true);
+    expect(col.hasClass('hidden-xs-up')).toEqual(true);
+    expect(col.hasClass('hidden-small-up')).toEqual(true);
+    expect(col.hasClass('hidden-medium-up')).toEqual(true);
+    expect(col.hasClass('hidden-large-up')).toEqual(true);
+    expect(col.hasClass('hidden-xl-up')).toEqual(true);
   });
 });

@@ -23,16 +23,16 @@ select {
   width: 100%;
   transition: border-color .1s linear, background-color .1s linear;
 
-  .tds-field & {
+  .field & {
     margin-bottom: $form-field-bottom-spacing;
   }
 
-  .tds-field--error & {
+  .field--error & {
     border-color: $color-cardinal;
     padding-right: 45px;
   }
 
-  .tds-field--success & {
+  .field--success & {
     border-color: $color-japanese-laurel;
   }
 
@@ -97,7 +97,7 @@ textarea {
 // Container for the controls making up a form field.
 //
 
-.tds-field {
+.field {
   position: relative;
 
   &--hinted {
@@ -112,7 +112,7 @@ textarea {
     border-radius: $form-field-border-radius;
     margin-bottom: $form-field-bottom-spacing;
 
-    .tds-field--error & {
+    .field--error & {
       &::before {
         @include core-icon();
 
@@ -138,7 +138,7 @@ textarea {
         color: $color-primary;
       }
 
-      .tds-field--error & {
+      .field--error & {
         &::before {
           right: 45px;
         }
@@ -191,7 +191,7 @@ textarea {
 // Helpers
 //
 
-.tds-helper {
+.helper {
   font-size: rem(16px);
   background: $color-athens-grey;
   padding: 11px 16px 16px;
@@ -220,7 +220,7 @@ textarea {
 // Thickness of the green border when a radio input is checked
 $radio-checked-stroke-size: 6px;
 
-.tds-choice {
+.choice {
   font-weight: 400;
   display: block;
   cursor: pointer;
@@ -238,14 +238,14 @@ $radio-checked-stroke-size: 6px;
   cursor: pointer;
 
   &:checked {
-    & + .tds-choice__text {
+    & + .choice__text {
       color: $color-shark;
     }
   }
 
-  .tds-choice:not(.tds-choice--error) & {
+  .choice:not(.choice--error) & {
     &:hover:not(:checked):not(:disabled) {
-      & + .tds-choice__text {
+      & + .choice__text {
         &::before {
           border-color: $color-shark;
           box-shadow: 0 0 0 1px rgba(35, 135, 0, .25);
@@ -255,7 +255,7 @@ $radio-checked-stroke-size: 6px;
   }
 
   &:active {
-    & + .tds-choice__text {
+    & + .choice__text {
       &::before {
         border-color: $color-japanese-laurel;
       }
@@ -263,7 +263,7 @@ $radio-checked-stroke-size: 6px;
   }
 
   &:disabled {
-    & + .tds-choice__text {
+    & + .choice__text {
       cursor: not-allowed;
 
       &::before {
@@ -272,9 +272,9 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  .tds-choice--error & {
-    & + .tds-choice__text,
-    &:checked + .tds-choice__text {
+  .choice--error & {
+    & + .choice__text,
+    &:checked + .choice__text {
       color: $color-cardinal;
 
       &::before {
@@ -283,7 +283,7 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  + .tds-choice__text {
+  + .choice__text {
     position: relative;
     padding-left: 2em;
     display: inline-block;
@@ -305,7 +305,7 @@ $radio-checked-stroke-size: 6px;
 
 [type='radio'] {
   &:active {
-    & + .tds-choice__text {
+    & + .choice__text {
       &::before {
         border-width: $radio-checked-stroke-size;
       }
@@ -313,14 +313,14 @@ $radio-checked-stroke-size: 6px;
   }
 
   &:checked {
-    & + .tds-choice__text {
+    & + .choice__text {
       &::before {
         border: solid $radio-checked-stroke-size $color-primary;
       }
     }
 
     &:disabled {
-      & + .tds-choice__text {
+      & + .choice__text {
         &::before {
           background: $color-shuttle-grey;
           border: solid $radio-checked-stroke-size $color-athens-grey;
@@ -332,7 +332,7 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  + .tds-choice__text {
+  + .choice__text {
     &::before {
       border-radius: 50%;
       margin-top: 5px;
@@ -342,14 +342,14 @@ $radio-checked-stroke-size: 6px;
 
 [type='checkbox'] {
   &:checked {
-    & + .tds-choice__text {
+    & + .choice__text {
       &::before {
         content: core-icon-codepoint(checkmark);
       }
     }
 
     &:disabled {
-      & + .tds-choice__text {
+      & + .choice__text {
         &::before {
           color: $color-white;
           background-color: $color-shuttle-grey;
@@ -358,7 +358,7 @@ $radio-checked-stroke-size: 6px;
     }
 
     &:not(:disabled) {
-      & + .tds-choice__text {
+      & + .choice__text {
         &::before {
           background: $color-primary;
           border: none;
@@ -368,14 +368,14 @@ $radio-checked-stroke-size: 6px;
   }
 
   &:disabled {
-    & + .tds-choice__text {
+    & + .choice__text {
       &::before {
         border-color: $color-shuttle-grey;
       }
     }
   }
 
-  + .tds-choice__text {
+  + .choice__text {
     &::before {
       border-radius: 4px;
       color: white;
@@ -386,8 +386,8 @@ $radio-checked-stroke-size: 6px;
     }
   }
 
-  .tds-choice--error & {
-    &:checked + .tds-choice__text {
+  .choice--error & {
+    &:checked + .choice__text {
       &::before {
         background: $color-cardinal;
       }
@@ -399,7 +399,7 @@ $radio-checked-stroke-size: 6px;
 // Hints
 //
 
-.tds-hint {
+.hint {
   position: absolute;
   top: 0;
   right: 0;
@@ -410,8 +410,8 @@ $radio-checked-stroke-size: 6px;
   // the field's label.
   padding-top: inherit;
 
-  &:not(.tds-hint--active) {
-    .tds-hint__text {
+  &:not(.hint--active) {
+    .hint__text {
       @extend %accessible-hide;
     }
   }

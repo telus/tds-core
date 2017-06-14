@@ -6,7 +6,7 @@ describe('<Container />', () => {
   it('correctly merges className', () => {
     const container = shallow(<Container className="red" />);
 
-    expect(container.hasClass('tds-container')).toEqual(true);
+    expect(container.hasClass('container')).toEqual(true);
     expect(container.hasClass('red')).toEqual(true);
   });
 
@@ -29,10 +29,10 @@ describe('<Container />', () => {
   });
 
   it('defaults to auto width', () =>
-    expect(shallow(<Container />).hasClass('tds-container--limited-width'))
+    expect(shallow(<Container />).hasClass('container--limited-width'))
       .toEqual(false));
 
   it('supports opt-in max-width', () =>
-    expect(shallow(<Container limitWidth />).hasClass('tds-container--limited-width'))
+    expect(shallow(<Container limitWidth />).hasClass('container--limited-width'))
       .toEqual(true));
 });

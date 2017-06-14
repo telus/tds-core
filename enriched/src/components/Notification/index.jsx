@@ -17,7 +17,7 @@ function Notification(props) {
 
   if (variant === 'error') {
     iconHtml = (<i
-      className="tds-icon tds-icon-core-exclamation-point-circle c-notification__icon" />);
+      className="icon icon-core-exclamation-point-circle c-notification__icon" />);
   }
 
   return (

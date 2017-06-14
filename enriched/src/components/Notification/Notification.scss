@@ -68,6 +68,7 @@
     display: inline-block;
     display: table-cell;
     padding: 20px 36px 20px 0;
+    color: $color-cardinal;
 
     @include from-breakpoint(small) {
       padding-right: 44px;

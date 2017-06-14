@@ -6,7 +6,7 @@ describe('<Row />', () => {
   it('correctly merges className', () => {
     const row = shallow(<Row className="red"><div>Test</div></Row>);
 
-    expect(row.hasClass('tds-grid-row')).toEqual(true);
+    expect(row.hasClass('grid-row')).toEqual(true);
     expect(row.hasClass('red')).toEqual(true);
   });
 

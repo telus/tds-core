@@ -1,7 +1,7 @@
 // Styling for examples within documentation pages.
 
 .example {
-  .tds-grid-row {
+  .grid-row {
     margin-bottom: 2rem;
 
     > div {
@@ -40,11 +40,11 @@
 .type-examples {
   padding-top: 2rem;
 
-  .tds-grid-row {
+  .grid-row {
     margin-bottom: 3rem;
   }
 
-  .tds-heading-2 {
+  .heading-2 {
     margin-top: 3rem;
   }
 }
