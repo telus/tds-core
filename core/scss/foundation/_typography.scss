@@ -54,8 +54,7 @@ body {
   color: $color-secondary;
   margin-bottom: baseline-margin(40px);
 
-  + .subhead,
-  + .field {
+  + .tds-field {
     padding-top: rem(8px);
   }
 
@@ -189,7 +188,21 @@ body {
   @extend %text--sub;
 }
 
-@if $tds-style-html-tags == true {
+@if $tds-style-typography-html-tags == true {
+
+  // p + h2, p + h3, p + h4 {
+  h2:not([class]),
+  h3:not([class]),
+  h4:not([class]) {
+    margin-top: 1.5em;
+  }
+
+  h2:not([class]):first-child,
+  h3:not([class]):first-child,
+  h4:not([class]):first-child {
+    margin-top: 0;
+  }
+
   h1 {
     @extend %h1;
   }

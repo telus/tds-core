@@ -13,7 +13,7 @@
   }
 }
 
-@if $tds-style-html-tags == true {
+@if $tds-style-typography-html-tags == true {
   a {
     @extend %link;
   }
