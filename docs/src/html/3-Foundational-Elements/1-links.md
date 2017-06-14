@@ -23,7 +23,7 @@ The underline style distinguishes these as interactive elements.
 ### Standard links
 
 <div class="example example--type">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel velit massa. Sed <a href="#" class="link link--descent">dapibus risus</a> ac augue laoreet, ac venenatis tellus lobortis.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel velit massa. Sed <a href="#" class="link link--descent">dapibus</a> risus ac augue laoreet, ac venenatis tellus lobortis.</p>
 </div>
 
 ```html
