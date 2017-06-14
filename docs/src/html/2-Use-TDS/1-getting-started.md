@@ -29,8 +29,8 @@ Welcome to the TELUS Design System. We're glad you're planning on using the TDS 
 
 There are two official ways to include the TDS in your TELUS project:
 
-1. Install the [`telus-thorium-core`](https://www.npmjs.com/package/telus-thorium-core) and [`telus-thorium-enriched`](https://www.npmjs.com/package/telus-thorium-enriched) NPM modules
-2. Load either [`tds.min.css`](https://cdn.telus.digital/thorium/core/!!TDS_VERSION!!/tds.min.css) or [`tds-enriched.min.css`](https://cdn.telus.digital/thorium/enriched/!!TDS_VERSION!!/tds-enriched.min.css) from the CDN
+1. [NPM] Install the [`telus-thorium-core`](https://www.npmjs.com/package/telus-thorium-core) and [`telus-thorium-enriched`](https://www.npmjs.com/package/telus-thorium-enriched) NPM modules
+2. [CDN] Load either [`tds.min.css`](https://cdn.telus.digital/thorium/core/!!TDS_VERSION!!/tds.min.css) or [`tds-enriched.min.css`](https://cdn.telus.digital/thorium/enriched/!!TDS_VERSION!!/tds-enriched.min.css) from the CDN
 
 ## The TDS tech stack
 
@@ -45,8 +45,8 @@ For contributors, and projects that integrate deeply, TDS is powered by these fa
 * [ES6](https://github.com/lukehoban/es6features) for JavaScript
 * [React](https://facebook.github.io/react/) for views
 * [ESLint](http://eslint.org/) and [stylelint](http://stylelint.io/) for linting
+* [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme/) for unit testing
 
-The TDS Team is currently evaluating [Jest](https://facebook.github.io/jest/) + [Enzyme](http://airbnb.io/enzyme/) for its testing needs. A final decision on testing frameworks will be documented here in a future release.
 
 ## Choosing CDN vs. NPM
 
@@ -175,6 +175,7 @@ TDS Enriched also hosts "latest" files on the CDN:
 Install both the TDS Core & Enriched modules:
 
 ```bash
+npm i --save telus-thorium-core telus-thorium-core
 npm i --save telus-thorium-core telus-thorium-enriched
 ```
 
@@ -249,10 +250,10 @@ You're in control of which TDS version is included in your project.
 
 ### Choosing a CDN-hosted version
 
-Files published to the TDS CDN will have their version number in the URL. Simply construct your stylesheet link tag with the versioned address, as shown in the [example above](#content-delivery-network).
+Files published to the TDS CDN will have their version number in the URL. Simply construct your stylesheet link tag with the versioned address, as shown in the examples above.
 
 ### Choosing an NPM module version
 
-The version constraints in your package.json file control which version of TDS gets pulled in. NPM by default will choose a constraint like `^0.4.0` when the `--save` command line flag is used. This allows major version changes (bug fixes and new backwards-compatible features).
+The version constraints in your `package.json` file control which version of TDS gets pulled in. NPM by default will choose a constraint like `^0.4.0` when the `--save` command line flag is used. This allows major version changes (bug fixes and new backwards-compatible features).
 
 Try out the <a href="http://jubianchi.github.io/semver-check/" target="blank">online semver checker</a> if you'd like to experiment with adjusting your project's constraints.

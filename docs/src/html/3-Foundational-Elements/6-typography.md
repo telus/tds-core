@@ -33,7 +33,7 @@ Scale creates consistency in sizing across elements. Modular scaling was used to
 
 **Headlines:** A base size of 28px is set for headings. Headings scale down to an augmented fourth. Take your heading point size divide it by 1.414 and round to the nearest whole number for mobile.
 
-**Body, Sub & Links:** A base size of 16px is set for body & subhead copy. As we scale things responsively text values remain the same throughout.
+**Body, Links:** A base size of 16px is set for body copy. As we scale things responsively text values remain the same throughout.
 
 ### Type leading
 
@@ -67,7 +67,7 @@ To create consistent leading the line height is set to double the value of the b
 
 - Use sentence case for headings
 - Use headings consistently to create a clear hierarchy
-- Terminate headlines and subheads with a period if they are complete sentences, but not if they are short fragments
+- Terminate headlines with a period if they are complete sentences, but not if they are short fragments
 - Headings contain no paragraph styling.
 
 

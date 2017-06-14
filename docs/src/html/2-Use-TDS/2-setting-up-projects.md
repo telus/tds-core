@@ -28,7 +28,7 @@ The [TDS.sketch (!!TDS_VERSION!!)](/assets/downloads/TDS.sketch) file contains t
 * **Step 1**: Explore the Foundations to learn the TDS design patterns and principles.
 * **Step 2**: Review the Components section, to familiarize yourself with the existing components which you can incorporate into your designs.
 * **Step 3**: Download [TDS.sketch (!!TDS_VERSION!!)](/assets/downloads/TDS.sketch).
-* **Step 4**: Identify your needs by considering the user and outcome you're designing for—these considerations will help inform scope and the milestones and/or deliverables required.
+* **Step 4**: Identify your needs by considering the user and outcome you're designing for —these considerations will help inform scope and the milestones and/or deliverables required.
 
 ## Sketch File
 
