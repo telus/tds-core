@@ -48,7 +48,7 @@ template: example.jade
 	  <div class="medium-4 offset-medium-2">
 	    <h3 class="heading-3">Key Features</h3>
 	    <ul class="list list--checked list--small">
-		    <li class="ist__item">Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.
+		    <li class="list__item">Nunc condimentum non est sed rutrum. Donec porta tortor mattis velit fermentum iaculis. Maecenas lacus tellus, iaculis at lectus sit amet, hendrerit mollis est.
     		</li>
     		<li class="list__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     		</li>
