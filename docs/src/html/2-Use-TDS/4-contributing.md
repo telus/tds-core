@@ -23,19 +23,19 @@ If you have any questions [shoot us an email](mailto:alexandra.fedyk@telus.com).
 
 ### Report Bugs
 
-If you find a bug please [create an issue through GitHub](https://github.com/telusdigital/telus-thorium-core/issues). Please include:
+If you find a bug please [create an issue through GitHub](https://github.com/telusdigital/tds/issues). Please include:
 
 * Your operating system name and version.
 * Any details about your local setup that might be helpful in troubleshooting.
 * Detailed steps to reproduce the bug.
 
-For more details on how to file Github issues, refer to the repo's [wiki](https://github.com/telusdigital/telus-thorium-core/wiki/Tasks,-Defects-and-User-Story-Examples).
+For more details on how to file Github issues, refer to the repo's [wiki](https://github.com/telusdigital/tds/wiki/Tasks,-Defects-and-User-Story-Examples).
 
 ### Author documentation
 
 The TELUS Design System could always use better documentation, whether as part of the official documentation site, in comments, or even on the web as blog posts or articles.
 
-The current documentation lives in the [docs directory](https://github.com/telusdigital/telus-thorium-core/tree/master/docs) and follows just a few simple rules:
+The current documentation lives in the [docs directory](https://github.com/telusdigital/tds/tree/master/docs) and follows just a few simple rules:
 
 * Each category of documentation is a folder named like *1-Introduction* where "Introduction" is the name of the category, and 1 is its position in the navigation menu.
 * Within each category folder are markdown files documenting TDS.
@@ -46,7 +46,7 @@ The current documentation lives in the [docs directory](https://github.com/telus
 
 ---
 
-The best way to send feedback is to [file an issue on GitHub](https://github.com/telusdigital/telus-thorium-core/issues).
+The best way to send feedback is to [file an issue on GitHub](https://github.com/telusdigital/tds/issues).
 
 If you're proposing a feature:
 
@@ -54,11 +54,11 @@ If you're proposing a feature:
 * Keep the scope as narrow as possible, to make it easier to implement.
 * Remember that this is a volunteer-driven project, and that contributions are welcome.
 
-For more details on how to file Github issues, refer to the repo's [wiki](https://github.com/telusdigital/telus-thorium-core/wiki/Tasks,-Defects-and-User-Story-Examples).
+For more details on how to file Github issues, refer to the repo's [wiki](https://github.com/telusdigital/tds/wiki/Tasks,-Defects-and-User-Story-Examples).
 
 ### Contribute code
 
-Fix [bugs](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5BType%5D+Bug%22) and/or implement [features](https://github.com/telusdigital/telus-thorium-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+Request%22) by choosing an open task from the [Github issues list](https://github.com/telusdigital/telus-thorium-core/issues).
+Fix [bugs](https://github.com/telusdigital/tds/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5BType%5D+Bug%22) and/or implement [features](https://github.com/telusdigital/tds/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+Request%22) by choosing an open task from the [Github issues list](https://github.com/telusdigital/tds/issues).
 
 
 ## Start contributing
@@ -71,7 +71,7 @@ At its core, contributing with Git involves:
 2. Creating a working branch, from master, in which to make changes.
 3. Opening a pull request from your branch to master.
 
-For more details on how to contribute code, refer to the repo's [wiki](https://github.com/telusdigital/telus-thorium-core/wiki/Contributing-Code)
+For more details on how to contribute code, refer to the repo's [wiki](https://github.com/telusdigital/tds/wiki/Contributing-Code)
 
 
 ## Components and Blocks Contribution criteria

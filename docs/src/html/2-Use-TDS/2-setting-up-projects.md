@@ -143,8 +143,8 @@ Don't worry about tagging your commits, changing version numbers, or creating re
 ### Clone the TDS repo
 
 ```bash
-git clone git@github.com:telusdigital/telus-thorium-core.git
-cd telus-thorium-core
+git clone git@github.com:telusdigital/tds.git
+cd tds
 ```
 
 Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.

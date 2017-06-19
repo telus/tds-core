@@ -4,10 +4,24 @@ template: changelog.jade
 ---
 
 
+
+## v0.16.1
+
+
+https://github.com/telusdigital/tds/releases/tag/v0.16.1
+
+- docs(changelog): usual manual update
+- docs(package.json): remove cp command for font-for-sketch
+- refactor(github repo): update github repo to telusdigital/tds
+- test(test): test
+- build(groovy): update stage build
+
+
+
 ## v0.16.0
 
 
-https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.16.0
+https://github.com/telusdigital/tds/releases/tag/v0.16.0
 
 - docs(changelog): update
 - Update README.md
@@ -16,6 +30,7 @@ https://github.com/telusdigital/telus-thorium-core/releases/tag/v0.16.0
 - Beta Release (#369)
 - docs(typography example): fix typo on list class
 - docs(links): update code to match example
+- Changelog and version bump for v0.16.0
 
 
 

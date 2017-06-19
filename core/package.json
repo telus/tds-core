@@ -1,6 +1,6 @@
 {
   "name": "telus-thorium-core",
-  "version": "0.16.0",
+  "version": "0.16.1",
   "description": "TELUS Design System core styles",
   "eyeglass": "eyeglass-exports.js",
   "keywords": [
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telusdigital/telus-thorium-core.git"
+    "url": "git+https://github.com/telusdigital/tds.git"
   },
   "author": "TELUS Digital",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/telusdigital/telus-thorium-core/issues"
+    "url": "https://github.com/telusdigital/tds/issues"
   },
-  "homepage": "https://github.com/telusdigital/telus-thorium-core#readme",
+  "homepage": "http://tds.telus.com",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "clean-css": "^3.4.10",

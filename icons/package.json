@@ -7,11 +7,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telusdigital/telus-thorium-core.git"
+    "url": "git+https://github.com/telusdigital/tds.git"
   },
   "author": "TELUS Digital",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/telusdigital/telus-thorium-core#readme",
+  "homepage": "https://github.com/telusdigital/tds#readme",
   "devDependencies": {
     "fontmin": "^0.9.6",
     "ttf2woff2": "^2.0.3"

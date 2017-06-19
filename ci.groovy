@@ -53,7 +53,7 @@ createJenkinsJob(
   scm {
     git {
       remote {
-        github('telusdigital/telus-thorium-core', 'ssh')
+        github('telusdigital/tds', 'ssh')
         credentials('jenkins')
         branch 'qatesting'
       }
@@ -84,7 +84,7 @@ createJenkinsJob(
 }
 
 createJenkinsJob(
-  'telus-thorium--build',
+  'telus-TDS--build',
   'Pull latest code from Github then install dependencies, lint, unit test, and build artifacts'
 ) {
   wrappers {
@@ -98,7 +98,7 @@ createJenkinsJob(
   scm {
     git {
       remote {
-        github('telusdigital/telus-thorium-core', 'ssh')
+        github('telusdigital/tds', 'ssh')
         credentials('jenkins')
         branch 'master'
       }
@@ -124,7 +124,7 @@ createJenkinsJob(
       onlyIfSuccessful()
     }
 
-    downstream 'telus-thorium--deploy-stage'
+    downstream 'telus-TDS--deploy-stage'
   }
 }
 
@@ -142,17 +142,17 @@ createJenkinsJob(
 createJenkinsDeployJob('telus-tds--deploy-qa', 's3://cdn.telus-thorium-doc-qa/', 'telus-tds--qa-build')
 
 /**
- * telus-thorium--deploy-stage copies the static site contents to the Staging
+ * telus-TDS--deploy-stage copies the static site contents to the Staging
  * web server. It takes those artifacts from its upstream job, which is dev.
  */
-createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium-doc-staging/', 'telus-thorium--build')
+createJenkinsDeployJob('telus-TDS--deploy-stage', 's3://cdn.telus-thorium-doc-staging/', 'telus-TDS--build')
 
 /**
  * telus-thorium--deploy-prod copies the static site contents to the production
  * web server. It takes those artifacts from the last successful staging
  * deployment.
  */
-createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium-doc-production/', 'telus-thorium--deploy-stage')
+createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium-doc-production/', 'telus-TDS--deploy-stage')
 
 createJenkinsJob(
   'telus-thorium--release',
@@ -171,7 +171,7 @@ createJenkinsJob(
   scm {
     git {
       remote {
-        github('telusdigital/telus-thorium-core', 'ssh')
+        github('telusdigital/tds', 'ssh')
         credentials('tds-deploy')
         branch 'master'
       }
@@ -224,7 +224,7 @@ createJenkinsJob('telus-thorium--redeploy-cdn', 'Deploy an existing, tagged rele
     scm {
       git {
         remote {
-          github('telusdigital/telus-thorium-core', 'ssh')
+          github('telusdigital/tds', 'ssh')
           credentials('jenkins')
           branch 'refs/tags/\$THORIUM_RELEASE_VERSION'
         }
@@ -260,7 +260,7 @@ createJenkinsJob('telus-thorium--redeploy-npm', 'Deploy an existing, tagged rele
     scm {
       git {
         remote {
-          github('telusdigital/telus-thorium-core', 'ssh')
+          github('telusdigital/tds', 'ssh')
           credentials('jenkins')
           branch 'refs/tags/\$THORIUM_RELEASE_VERSION'
         }

@@ -23,8 +23,8 @@ Install [commitizen](https://github.com/commitizen/cz-cli) globally to be prompt
 
 Clone this repository
 
-    git clone git@github.com:telusdigital/telus-thorium-core.git
-    cd telus-thorium-core
+    git clone git@github.com:telusdigital/tds.git
+    cd tds
 
 Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.
 
@@ -46,7 +46,7 @@ Ready to commit changes? Validate your code by running the linters & tests:
     npm run lint
     npm test
 
-Or even better, setup a [pre-commit git hook](https://github.com/telusdigital/telus-thorium-core/wiki/pre-commit-hook-for-linting).
+Or even better, setup a [pre-commit git hook](https://github.com/telusdigital/tds/wiki/pre-commit-hook-for-linting).
 
 To commit your changes use the command
 

@@ -37,7 +37,7 @@ changelog_entry () {
   printf "\n\n\n## ${3}\n"
   # Format the release date like 01 January 2017
   git log -1 --pretty=format:"%ad" --date=format:"%d %B %Y" ${2}
-  printf "\n\nhttps://github.com/telusdigital/telus-thorium-core/releases/tag/${3}\n\n"
+  printf "\n\nhttps://github.com/telusdigital/tds/releases/tag/${3}\n\n"
   # Take all commits in ref 2 which aren't in ref 1.
   git log ${1}..${2} --pretty=format:"- %s" --reverse | while read COMMIT_MSG; do
     # Convert JIRA ids to links

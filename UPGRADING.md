@@ -4,19 +4,15 @@
 
 ### NEW CDN files
 * New CSS CDN file path is
-  * https://cdn.telus.digital/thorium/core/v0.16.0/tds.min.css
-  * https://cdn.telus.digital/thorium/enriched/v0.16.0/tds-enriched.min.css
-  * https://cdn.telus.digital/thorium/core/v0.16.0/tds-lite.min.css (unstyled typography and anchor links and no form styles - barebones css for platform agnostic projects)
+  * https://cdn.telus.digital/thorium/core/v0.16.1/tds.min.css
+  * https://cdn.telus.digital/thorium/enriched/v0.16.1/tds-enriched.min.css
+  * https://cdn.telus.digital/thorium/core/v0.16.1/tds-lite.min.css (unstyled typography and anchor links and no form styles - barebones css for platform agnostic projects)
 * New JS file path on CDN with Global Component
-  * https://cdn.telus.digital/thorium/enriched/v0.16.0/tds-enriched.min.js
+  * https://cdn.telus.digital/thorium/enriched/v0.16.1/tds-enriched.min.js
 * Files with the latest files
   * https://cdn.telus.digital/thorium/core/v0-latest/tds.min.css
   * https://cdn.telus.digital/thorium/enriched/v0-latest/tds-enriched.min.css
   * https://cdn.telus.digital/thorium/enriched/v0-latest/tds-enriched.min.js
-
-### NPM Packages on npmjs.org
-* tds-jenkins/telus-thorium-core has moved to telusdigital/tds-core
-* tds-jenkins/telus-thorium-enriched has moved to telusdigital/tds-enriched
 
 ### Buttons
 * button classes now have a minimum width of 180px

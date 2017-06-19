@@ -234,7 +234,7 @@ It does a great job handling React, ES6, styles, and more.
 
 Internally, Enriched Components will `require()` their scss when `process.env.BROWSER` is `true`.
 
-See the [Webpack file of this documentation site](https://github.com/telusdigital/telus-thorium-core/blob/master/docs/webpack.config.js) for an example configuration.
+See the [Webpack file of this documentation site](https://github.com/telusdigital/tds/blob/master/docs/webpack.config.js) for an example configuration.
 
 ## Versioning
 
