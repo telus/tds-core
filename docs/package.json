@@ -51,7 +51,7 @@
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0",
     "telus-thorium-core": "^0.16.2",
-    "telus-thorium-enriched": "^0.16.2",
+    "telus-thorium-enriched": "^0.16.1",
     "url-loader": "^0.5.8",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
