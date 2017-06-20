@@ -1,0 +1,37 @@
+.ribbon-text__content {
+  position: relative;
+  padding: 0 1rem 0 1.5rem;
+  background-color: $color-royal-purple;
+  color: $color-white;
+  font-weight: 600;
+  border-top-left-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+}
+
+.ribbon-text__content::before, .ribbon-text__content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0.75rem;
+  height: 52%;
+  transform-origin: left top;
+  background-color: inherit;
+  border-top-right-radius: 0.1rem;
+  transform: skew(-18deg);
+}
+.ribbon-text__content::after {
+  top: auto;
+  bottom: 0;
+  border-bottom-right-radius: 0.1rem;
+  transform-origin: right bottom;
+  transform: skew(18deg);
+}
+
+.ribbon-text__container {
+  flex-direction: row;
+  display:flex;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
