@@ -1,0 +1,27 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+
+.c-quote-card {
+  &__logo {
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 10px;
+  }
+
+  @include from-breakpoint(medium) {
+    &__author {
+      position:relative;
+      height: 50px;
+    }
+
+    &__logo {
+      position:absolute;
+      left: 0;
+    }
+
+    &__names {
+      position:absolute;
+      left: 80px;
+    }
+  }
+}
