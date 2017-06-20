@@ -93,7 +93,7 @@ a.button {
         padding-left: 4px;
       }
 
-      @include chevron-links($color-japanese-laurel);
+      @include chevron-links($color-primary);
     }
   }
 

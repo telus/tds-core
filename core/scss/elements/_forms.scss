@@ -10,7 +10,7 @@ $form-field-bottom-spacing: 18px;
 input:not([type='radio']),
 textarea,
 select {
-  border: 1px solid $color-raven;
+  border: 1px solid $color-shuttle-grey;
   border-radius: $form-field-border-radius;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
   color: $color-shark;
@@ -33,7 +33,7 @@ select {
   }
 
   .field--success & {
-    border-color: $color-japanese-laurel;
+    border-color: $color-primary;
   }
 
   &:focus {
@@ -49,7 +49,7 @@ input,
 select {
   &:disabled {
     background-color: $color-athens-grey;
-    border-color: $color-raven;
+    border-color: $color-shuttle-grey;
   }
 }
 
@@ -151,7 +151,7 @@ textarea {
 
     &--disabled {
       &::after {
-        color: $color-raven;
+        color: $color-shuttle-grey;
       }
     }
 
@@ -257,7 +257,7 @@ $radio-checked-stroke-size: 6px;
   &:active {
     & + .choice__text {
       &::before {
-        border-color: $color-japanese-laurel;
+        border-color: $color-primary;
       }
     }
   }

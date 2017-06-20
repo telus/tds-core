@@ -34,7 +34,7 @@
   &--primary {
     &:link,
     &:visited {
-      color: $color-japanese-laurel;
+      color: $color-primary;
     }
 
     &:hover {
@@ -44,14 +44,14 @@
     &.link--descent {
       &:link,
       &:visited {
-        @include add-skinny-underline($color-japanese-laurel, $color-athens-grey);
+        @include add-skinny-underline($color-primary, $color-athens-grey);
       }
     }
 
     &.link--inverted.link--descent {
       &:link,
       &:visited {
-        @include add-skinny-underline($color-athens-grey, $color-japanese-laurel);
+        @include add-skinny-underline($color-athens-grey, $color-primary);
       }
     }
   }
@@ -99,7 +99,7 @@
   &--primary {
     &:link,
     &:visited {
-      @include chevron-links($color-japanese-laurel);
+      @include chevron-links($color-primary);
     }
   }
 
