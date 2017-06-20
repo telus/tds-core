@@ -3,6 +3,13 @@ title: Changelog
 template: changelog.jade
 ---
 
+## v0.16.2
+
+
+https://github.com/telusdigital/tds/releases/tag/v0.16.2
+
+- fix(colours, chevron and display h1 updates)
+- fix(repo rename updates)
 
 
 ## v0.16.1
