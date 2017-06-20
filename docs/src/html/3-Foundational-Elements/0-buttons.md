@@ -161,7 +161,8 @@ _Note_: The mobile button width is fluid and stretches to cover all columns curr
 The `button--link` class creates an element which behaves like a button, but looks like a link.
 
 <div>
-    <a class="button button--secondary button--link">Link button</a>
+    <a class="button button--secondary button--link">Link button
+    </a>
 </div>
 
 ```html

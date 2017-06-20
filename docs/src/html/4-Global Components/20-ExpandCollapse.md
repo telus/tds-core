@@ -108,10 +108,10 @@ const AccordionExpandCollapseEx = () => {
     return (
       <ExpandCollapse.Group accordion>
         <ExpandCollapse.Panel header="Panel #1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia fermentum nisl, id lobortis nunc porta sed. Vestibulum quis tortor non nisl vulputate varius. Vivamus euismod congue mi, quis ultricies dolor viverra at.</p>
+          Panel #1 Body
         </ExpandCollapse.Panel>
         <ExpandCollapse.Panel header="Panel #2">
-          <p>Ut fermentum, turpis vel tincidunt volutpat, diam est vehicula leo, sed convallis dolor ante aliquet nisi. Nunc nisi erat, pulvinar quis lectus eget, tristique suscipit lectus. Maecenas non erat semper, tristique odio euismod, pulvinar metus.</p>
+          Panel #2 Body
         </ExpandCollapse.Panel>
       </ExpandCollapse.Group>
     );

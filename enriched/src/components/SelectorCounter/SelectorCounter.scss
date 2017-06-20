@@ -36,10 +36,10 @@
   }
 
   &__icon {
-    color: $color-primary;
+    color: $color-japanese-laurel;
 
     &:hover {
-      color: $color-primary;
+      color: $color-japanese-laurel;
     }
 
     .selector-counter--error &,
@@ -49,7 +49,7 @@
 
     .selector-counter--successful &,
     .selector-counter--successful button:disabled & {
-      color: $color-primary;
+      color: $color-japanese-laurel;
     }
 
     button:disabled & {
@@ -79,6 +79,6 @@ input.selector-counter__value {
   }
 
   .selector-counter--successful & {
-    border-color: $color-primary;
+    border-color: $color-japanese-laurel;
   }
 }

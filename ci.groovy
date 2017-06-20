@@ -124,7 +124,7 @@ createJenkinsJob(
       onlyIfSuccessful()
     }
 
-    downstream 'telus-TDS--deploy-stage'
+    downstream 'telus-thorium--deploy-stage'
   }
 }
 
@@ -142,17 +142,17 @@ createJenkinsJob(
 createJenkinsDeployJob('telus-tds--deploy-qa', 's3://cdn.telus-thorium-doc-qa/', 'telus-tds--qa-build')
 
 /**
- * telus-TDS--deploy-stage copies the static site contents to the Staging
+ * telus-thorium--deploy-stage copies the static site contents to the Staging
  * web server. It takes those artifacts from its upstream job, which is dev.
  */
-createJenkinsDeployJob('telus-TDS--deploy-stage', 's3://cdn.telus-thorium-doc-staging/', 'telus-TDS--build')
+createJenkinsDeployJob('telus-thorium--deploy-stage', 's3://cdn.telus-thorium-doc-staging/', 'telus-TDS--build')
 
 /**
  * telus-thorium--deploy-prod copies the static site contents to the production
  * web server. It takes those artifacts from the last successful staging
  * deployment.
  */
-createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium-doc-production/', 'telus-TDS--deploy-stage')
+createJenkinsDeployJob('telus-thorium--deploy-prod', 's3://cdn.telus-thorium-doc-production/', 'telus-thorium--deploy-stage')
 
 createJenkinsJob(
   'telus-thorium--release',

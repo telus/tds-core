@@ -39,7 +39,7 @@
   &--completed {
     .step-tracker__icon {
       color: $color-white;
-      background-color: $color-primary;
+      background-color: $color-japanese-laurel;
       &:before {
         font-family: "TELUS Core Icons";
         content: "\F101";
@@ -49,10 +49,10 @@
 
   &--processing {
     .step-tracker__icon {
-      background-color: $color-primary;
+      background-color: $color-japanese-laurel;
     }
     .step-tracker__label {
-      color: $color-primary;
+      color: $color-japanese-laurel;
     }
   }
 }
@@ -71,7 +71,7 @@
 
 .step-tracker__icon {
   display: inline-block;
-  border:0.1rem solid $color-primary;
+  border:0.1rem solid $color-japanese-laurel;
   border-radius: 50%;
   font-size: 1.2rem;
   width: 35px;
@@ -102,7 +102,7 @@
   @include from-breakpoint(medium) {
     display: none;
   }
-  color: $color-primary;
+  color: $color-japanese-laurel;
 
 }
 .step-tracker__mobile-label-step-info {

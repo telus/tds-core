@@ -18,10 +18,10 @@ template: doc.jade
 
 ### CDN users
 
-The CDN-hosted TDS has its complete version number in the path. For example, version !!TDS_VERSION!! can be found at:
+The CDN-hosted TDS has its complete version number in the path. For example, version 0.9.5 can be found at:
 
 <p style="text-align: center;">
-`https://cdn.telus.digital/thorium/core/!!TDS_VERSION!!/tds.min.css`
+`https://cdn.telus.digital/thorium/core/v0.9.5/tds.min.css`
 </p>
 
 To upgrade, change this URL in your project's `<link>` tag.
@@ -39,7 +39,7 @@ However, if you are already in production and don't want our releases to break y
 Run NPM's update command to get the latest published version. The NPM tool will choose a version number compatible with the [constraint](#versioning) in your package.json file.
 
 ```bash
-npm update tds
+npm update telus-thorium-core
 ```
 
 See the [npm-update documentation on npmjs.com](https://docs.npmjs.com/cli/update) for an in-depth guide to using this command.

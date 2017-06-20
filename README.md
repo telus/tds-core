@@ -24,7 +24,7 @@ Install [commitizen](https://github.com/commitizen/cz-cli) globally to be prompt
 Clone this repository
 
     git clone git@github.com:telusdigital/tds.git
-    cd tds
+    cd telus-thorium-core
 
 Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.
 

@@ -2,6 +2,7 @@ doctype html
 block vars
   - var bodyclass = null;
   - var assetsUrl = (process.env.NODE_ENV === 'dev') ? locals.assetsUrl.dev : locals.assetsUrl.prod;
+  - var isStaging = (process.env.NODE_ENV != 'production') ? '-staging': '';
   - var dtmPageURL = (page.url.replace(/^\//,"") == '') ? 'Homepage': page.url.replace(/^\//,"");
 html(lang='en')
   head
@@ -20,7 +21,7 @@ html(lang='en')
           }
         };
 
-      script(src='//assets.adobedtm.com/6462022b939758565769298a6393ed7a46ee6817/satelliteLib-1a62f312773f2a4b9eaa85dbf0ec0bb49095fd2e.js')
+      script(src='//assets.adobedtm.com/6462022b939758565769298a6393ed7a46ee6817/satelliteLib-1a62f312773f2a4b9eaa85dbf0ec0bb49095fd2e#{isStaging}.js')
 
       link(rel='stylesheet', href='/assets/css/prism.css')
       link(rel='stylesheet', href='/assets/bundles/docs.css')

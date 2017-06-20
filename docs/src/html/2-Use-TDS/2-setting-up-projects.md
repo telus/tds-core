@@ -144,7 +144,7 @@ Don't worry about tagging your commits, changing version numbers, or creating re
 
 ```bash
 git clone git@github.com:telusdigital/tds.git
-cd tds
+cd telus-thorium-core
 ```
 
 Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.

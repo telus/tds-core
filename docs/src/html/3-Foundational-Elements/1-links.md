@@ -128,11 +128,17 @@ You'll notice the text links include a `link--descent` modifier. This class crea
 
 ### Primary Color Chevron Links
 
-<a href="#" class="chevron-link--primary">Large/link</a>
+<a href="#" class="chevron-link--primary">
+    Large/link
+</a>
 
-<a href="#" class="text--medium chevron-link--primary">Medium/link</a>
+<a href="#" class="text--medium chevron-link--primary">
+    Medium/link
+</a>
 
-<a href="#" class="text--small chevron-link--primary">Small/link</a>
+<a href="#" class="text--small chevron-link--primary">
+    Small/link
+</a>
 
 
 ```html
@@ -151,11 +157,17 @@ You'll notice the text links include a `link--descent` modifier. This class crea
 
 ### Secondary Color Chevron Links
 
-<a href="#" class="chevron-link--secondary">Large/link</a>
+<a href="#" class="chevron-link--secondary">
+    Large/link
+</a>
 
-<a href="#" class="text--medium chevron-link--secondary">Medium/link</a>
+<a href="#" class="text--medium chevron-link--secondary">
+    Medium/link
+</a>
 
-<a href="#" class="text--small chevron-link--secondary">Small/link</a>
+<a href="#" class="text--small chevron-link--secondary">
+    Small/link
+</a>
 
 
 ```html
@@ -175,19 +187,31 @@ You'll notice the text links include a `link--descent` modifier. This class crea
 ### Inverted chevrons
 
 <div class="example example--inverted example--primary">
-  <a href="#" class="chevron-link chevron-link--inverted">Large/link</a>
+  <a href="#" class="chevron-link chevron-link--inverted">
+    Large/link
+  </a>
   <br>
-  <a href="#" class="text--medium chevron-link chevron-link--inverted">Medium/link</a>
+  <a href="#" class="text--medium chevron-link chevron-link--inverted">
+    Medium/link
+  </a>
   <br>
-  <a href="#" class="text--small chevron-link chevron-link--inverted">Small/link</a>
+  <a href="#" class="text--small chevron-link chevron-link--inverted">
+    Small/link
+  </a>
 </div>
 
 <div class="example example--inverted example--secondary">
-  <a href="#" class="chevron-link chevron-link--inverted">Large/link</a>
+  <a href="#" class="chevron-link chevron-link--inverted">
+    Large/link
+  </a>
   <br>
-  <a href="#" class="text--medium chevron-link chevron-link--inverted">Medium/link</a>
+  <a href="#" class="text--medium chevron-link chevron-link--inverted">
+    Medium/link
+  </a>
   <br>
-  <a href="#" class="text--small chevron-link chevron-link--inverted">Small/link</a>
+  <a href="#" class="text--small chevron-link chevron-link--inverted">
+    Small/link
+  </a>
 </div>
 
 ```html
