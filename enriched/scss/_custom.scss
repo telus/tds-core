@@ -1,0 +1,59 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+
+// Old Telus Web font, used for header and navigation component
+/* Light -- 45 */
+@font-face {
+  font-family: "TELUS-Web-Header";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.telus.digital/ui/fonts/5a13f7d1-b615-418e-bc3a-525001b9a671.woff2") format("woff2"),
+  url("//cdn.telus.digital/ui/fonts/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"),
+  url("//cdn.telus.digital/ui/fonts/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"),
+  url("//cdn.telus.digital/ui/fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot");
+}
+
+@mixin container-mobile($side-padding: 16px) {
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+
+  @include from-breakpoint(small) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.link--secondary,
+.link--secondary:link,
+.link--secondary:visited {
+  text-decoration: none;
+  color: $color-grape;
+  font-weight: 500;
+  &:hover, &:focus {
+    color: $color-royal-purple;
+  }
+}
+
+.link--no-underline,
+.link--no-underline:link,
+.link--no-underline:visited {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.text--primary {
+  color: $color-grape;
+}
+
+// custom class to add padding left/right on mobile screen sizes (for non-grid elements)
+// (bm for biz-marketing)
+.container--mobile-padding {
+  @include container-mobile();
+}
+
+
+.bottom-margin-0 {
+  margin-bottom: 0;
+}
