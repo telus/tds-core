@@ -1,4 +1,7 @@
-
+---
+title: Changelog
+template: changelog.jade
+---
 
 
 ## v0.16.3
@@ -6,8 +9,9 @@
 
 https://github.com/telusdigital/tds/releases/tag/v0.16.3
 
-- docs(documentation to use 0.16.1 to fix release):
-
+- docs(documentation to use 0.16.1 to fix release)
+- fix(colours, chevron and display h1 updates)
+- fix(repo rename updates)
 
 
 ## v0.16.1
