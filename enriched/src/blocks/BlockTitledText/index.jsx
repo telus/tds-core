@@ -4,21 +4,18 @@ import { components } from '@telusdigital/redux-contentful';
 
 import ComponentTitledText from '../ComponentTitledText';
 
-if (process.env.BROWSER) {
-  require('./b-titled-text.scss');
-}
+import './b-titled-text.scss';
 
 const { Legal: { WithLegal } } = components;
 
 /**
- * BlockTitledText is composed of a section title and an array of
- * [ComponentTitledText](#componenttitledtext).
+ * BlockTitledText is composed of a section title and an array of [ComponentTitledText](#componenttitledtext).
  * It takes up 9 columns on screens above a large breakpoint, and below that, full width.
  *
  * Contentful models (BUS > Marketing): Titled Text Block
  */
 const BlockTitledText = (props) => {
-  const { title, content, titleHeadingClass, id } = props;
+  const { title, content, titleStyle, id } = props;
 
   const contentHtml = content.map((componentProps, index) => (
     <ComponentTitledText
@@ -33,7 +30,7 @@ const BlockTitledText = (props) => {
       <div className="container container--limited-width">
         <div className="grid-row">
           <div className="large-9">
-            <h1 className={titleHeadingClass}><WithLegal content={title} /></h1>
+            <h1 className={titleStyle}><WithLegal content={title} /></h1>
             {contentHtml}
           </div>
         </div>
@@ -49,13 +46,13 @@ BlockTitledText.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired
   })),
-  /** optional CSS class to customize title heading */
-  titleHeadingClass: PropTypes.string,
+  /** optional CSS class to customize title heading e.g. heading-2 or heading-3 */
+  titleStyle: PropTypes.string,
   id: PropTypes.string
 };
 
 BlockTitledText.defaultProps = {
-  titleHeadingClass: 'heading-1',
+  titleStyle: 'heading-1',
   content: []
 };
 

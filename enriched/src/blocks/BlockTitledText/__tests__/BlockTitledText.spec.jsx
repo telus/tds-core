@@ -35,7 +35,7 @@ describe('BlockTitledText Component', () => {
     });
 
     it('should render title with specified class', () => {
-      const wrapper = shallow(<BlockTitledText {...data} titleHeadingClass="heading-2" />);
+      const wrapper = shallow(<BlockTitledText {...data} titleStyle="heading-2" />);
       const elem = wrapper.find('h1').first();
       expect(elem.hasClass('heading-2')).toBeTruthy();
     });
