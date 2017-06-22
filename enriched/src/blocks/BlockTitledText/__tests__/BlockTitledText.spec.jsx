@@ -5,12 +5,13 @@ import BlockTitledText from '../';
 
 describe('BlockTitledText Component', () => {
   describe('with missing props', () => {
-    const incompleteProps = {
-      title: 'My title'
-    };
-    it('will not break', () => {
-      const wrapper = shallow(<BlockTitledText {...incompleteProps} />);
-      expect(wrapper.find('section').exists()).toEqual(true);
+    it('sets an optional heading class', () => {
+      const incompleteProps = {
+        title: 'My title'
+      };
+      const blockTitledText = shallow(<BlockTitledText {...incompleteProps} />);
+
+      expect(blockTitledText.find('h1').hasClass('heading-1')).toBe(true);
     });
   });
 
@@ -23,21 +24,21 @@ describe('BlockTitledText Component', () => {
     };
 
     it('matches snapshot', () => {
-      const wrapper = shallow(<BlockTitledText {...data} />);
-      expect(shallowToJson(wrapper)).toMatchSnapshot();
+      const blockTitledText = shallow(<BlockTitledText {...data} />);
+      expect(shallowToJson(blockTitledText)).toMatchSnapshot();
     });
 
     it('should render title with default class and WithLegal', () => {
-      const wrapper = shallow(<BlockTitledText {...data} />);
-      const elem = wrapper.find('h1').first();
-      expect(elem.hasClass('heading-1')).toBeTruthy();
-      expect(wrapper.find('h1 WithLegal').props().content).toBe('Title1');
+      const blockTitledText = shallow(<BlockTitledText {...data} />);
+      const title = blockTitledText.find('h1').first();
+      expect(title.hasClass('heading-1')).toBeTruthy();
+      expect(blockTitledText.find('h1 WithLegal').props().content).toBe('Title1');
     });
 
     it('should render title with specified class', () => {
-      const wrapper = shallow(<BlockTitledText {...data} titleStyle="heading-2" />);
-      const elem = wrapper.find('h1').first();
-      expect(elem.hasClass('heading-2')).toBeTruthy();
+      const blockTitledText = shallow(<BlockTitledText {...data} titleStyle="heading-2" />);
+      const title = blockTitledText.find('h1').first();
+      expect(title.hasClass('heading-2')).toBeTruthy();
     });
 
     it('should render a ComponentTitledText', () => {
@@ -48,9 +49,9 @@ describe('BlockTitledText Component', () => {
         ]
       };
 
-      const wrapper = shallow(<BlockTitledText {...props} />);
-      expect(wrapper.find('ComponentTitledText').props()).toHaveProperty('title', 'Small Title 1');
-      expect(wrapper.find('ComponentTitledText').props()).toHaveProperty('text', 'Small Text 1');
+      const blockTitledText = shallow(<BlockTitledText {...props} />);
+      expect(blockTitledText.find('ComponentTitledText').props()).toHaveProperty('title', 'Small Title 1');
+      expect(blockTitledText.find('ComponentTitledText').props()).toHaveProperty('text', 'Small Text 1');
     });
 
     it('should render multiple ComponentTitledText', () => {
@@ -62,8 +63,8 @@ describe('BlockTitledText Component', () => {
         ]
       };
 
-      const wrapper = shallow(<BlockTitledText {...props} />);
-      expect(wrapper.find('ComponentTitledText')).toHaveLength(2);
+      const blockTitledText = shallow(<BlockTitledText {...props} />);
+      expect(blockTitledText.find('ComponentTitledText')).toHaveLength(2);
     });
   });
 });

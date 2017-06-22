@@ -10,8 +10,7 @@ if (process.env.BROWSER) {
 const { Legal: { WithLegal } } = components;
 
 /**
- * ComponentTitledText can be used with [BlockTitledText](/#blocktitledtext).
- * It takes up the full width of its parent container.
+ * ComponentTitledText takes up the full width of its parent container.
  *
  * Contentful models (BUS > Marketing): Titled Text Component
  */
@@ -32,7 +31,5 @@ ComponentTitledText.propTypes = {
   text: PropTypes.string.isRequired,
   className: PropTypes.string
 };
-
-ComponentTitledText.defaultProps = {};
 
 export default ComponentTitledText;

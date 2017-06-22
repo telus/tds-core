@@ -14,24 +14,26 @@ const { Legal: { WithLegal } } = components;
  *
  * Contentful models (BUS > Marketing): Titled Text Block
  */
-const BlockTitledText = (props) => {
-  const { title, content, titleStyle, id } = props;
-
-  const contentHtml = content.map((componentProps, index) => (
-    <ComponentTitledText
-      key={index}
-      title={componentProps.title}
-      text={componentProps.content}
-    />
-  ));
+const BlockTitledText = ({ title, content, titleStyle, id }) => {
+  function componentTitleTexts(contentComponents) {
+    return contentComponents.map(component => (
+      <ComponentTitledText
+        key={component.title}
+        title={component.title}
+        text={component.content}
+      />
+    ));
+  }
 
   return (
     <section className="b-titled-text" id={id}>
       <div className="container container--limited-width">
         <div className="grid-row">
           <div className="large-9">
-            <h1 className={titleStyle}><WithLegal content={title} /></h1>
-            {contentHtml}
+            <h1 className={titleStyle}>
+              <WithLegal content={title} />
+            </h1>
+            {componentTitleTexts(content)}
           </div>
         </div>
       </div>
