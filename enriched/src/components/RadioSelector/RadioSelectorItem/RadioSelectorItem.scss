@@ -1,0 +1,20 @@
+.radio-selector-item__outer-container {
+  margin: 5px 0;
+}
+
+.radio-selector-item__inner-container {
+  max-width: 553px;
+  height: 84px;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 1rem;
+  margin: 0;
+  border: 1px solid $colour-grey;
+  color: $colour-grey;
+  background-color: $colour-white;
+
+  &:hover, &:focus {
+    border: 1px solid $colour-green-dkr;
+    color: $colour-green-dkr;
+  }
+}
