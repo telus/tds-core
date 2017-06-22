@@ -1,0 +1,15 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+
+.b-headline {
+  background-image: url('./wave_header_default.png');
+  background-position: top left;
+  background-repeat: repeat-x;
+  padding-top: 105px;
+  margin-bottom: 36px;
+  background-size: contain;
+
+  @include from-breakpoint(small) {
+    margin-bottom: 44px;
+  }
+}
