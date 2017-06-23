@@ -5,14 +5,14 @@ if (process.env.BROWSER) {
   require('./RibbonText.scss');
 }
 
-const RibbonText = ({ content }) => (
+const RibbonText = ({ children }) => (
   <div className="ribbon-text__container">
-    <span className="text text--small ribbon-text__content">{content}</span>
+    <span className="text text--small ribbon-text__content">{children}</span>
   </div>
 );
 
 RibbonText.propTypes = {
-  content: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired
 };
 
 export default RibbonText;
