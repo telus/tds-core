@@ -77,7 +77,7 @@ Emit events to change the state of individual Panels.
         <button class="button button--secondary button--link" onClick={(e)=>this.togglePanel(e, 'panel-1')}>Toggle panel #1</button>
         <button class="button button--secondary button--link" onClick={(e)=>this.togglePanel(e, 'panel-2')}>Toggle panel #2</button>
         <ExpandCollapse.Group activeKeys={this.state.activeKeys}>
-            <ExpandCollapse.Pane l header="Panel #1" panelKey="panel-1">
+            <ExpandCollapse.Panel header="Panel #1" panelKey="panel-1">
             Panel #1 Body
             </ExpandCollapse.Panel>
             <ExpandCollapse.Panel header="Panel #2" panelKey="panel-2">
