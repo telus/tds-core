@@ -45,14 +45,14 @@ class Group extends Component {
     };
   }
 
-
   getPanels() {
     const activeKeys = this.state.currentActiveKeys;
     const newChildren = [];
+    let ordinal = 1;
 
     Children.forEach(this.props.children, (child, index) => {
       if (!child) return;
-      // If there is no key provide, use the panel order as default key
+      // If there is no key provided, use the panel order as default key
       const panelKey = child.props.panelKey || String(index);
       const header = child.props.header;
       const isFirst = (index === 0);
@@ -61,6 +61,7 @@ class Group extends Component {
 
       const props = {
         key: index,
+        ordinal,
         panelKey,
         header,
         isActive,
@@ -69,6 +70,9 @@ class Group extends Component {
         onPanelClick: this.onPanelClick(panelKey).bind(this),
         isFirst
       };
+
+      ordinal += 1;
+
       newChildren.push(React.cloneElement(child, props));
     });
 
