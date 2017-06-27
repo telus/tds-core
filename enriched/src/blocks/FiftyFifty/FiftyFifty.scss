@@ -1,0 +1,68 @@
+@import '../../../styles/core';
+
+.fiftyfifty {
+  margin-bottom: 40px;
+
+  @include from-breakpoint(small) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    margin-bottom: 56px;
+
+    &.align-right {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      .fiftyfifty__copy .inner-copy {
+        float: none;
+      }
+    }
+  }
+}
+
+.fiftyfifty__content {
+  @include from-breakpoint(small) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+}
+
+.fiftyfifty__image {
+  margin-bottom: 24px;
+  @include from-breakpoint(small) {
+    width: 50%;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.fiftyfifty__copy {
+  @include from-breakpoint(small) {
+    max-width: 50%;
+    .inner-copy {
+      width: 80%;
+      float: right;
+    }
+  }
+
+  @include at-breakpoint(small) {
+    p:not(.text--small) {
+      font-size: 16px;
+    }
+  }
+
+  .text--small {
+    font-size: 14px;
+  }
+}
+
+.fiftyfifty__headline {
+  margin-bottom: 8px;
+
+  @include from-breakpoint(small) {
+    margin-bottom: 24px;
+  }
+}
