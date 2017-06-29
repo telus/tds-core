@@ -1,0 +1,53 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+
+$border-color: #ddd;
+
+.b-comparison-cards {
+  &__cards {
+    @include from-breakpoint(large) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.c-comparison-plan {
+  margin-bottom: 1em;
+  padding-bottom: 52px;
+
+  &__features {
+    display: flex;
+  }
+
+  &__feature-left {
+    flex: 1;
+    margin-right: 1em;
+  }
+
+  &__feature-right {
+    flex: 3;
+  }
+
+  &__feature-value {
+    text-align: center;
+    padding-right: 16px;
+    border-right: 1px solid $border-color;
+
+    .heading-1 {
+      margin-bottom: 0;
+    }
+  }
+
+  .list__item {
+    word-break: break-word;
+  }
+
+  @include from-breakpoint(large) {
+    flex: 1;
+    margin-right: 1em;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
