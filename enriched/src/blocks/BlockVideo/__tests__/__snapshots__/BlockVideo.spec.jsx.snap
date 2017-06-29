@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlockVideo matches snapshot 1`] = `
+<BlockVideo
+  caption="Foo"
+  subtext="Bar"
+  videoUrl="https://www.youtube.com/embed/MaCZN2N6Q_I?cc_load_policy=1"
+>
+  <section
+    className="b-video"
+  >
+    <div
+      className="container container--limited-width"
+    >
+      <div
+        className="grid-row"
+      >
+        <div
+          className="medium-9"
+        >
+          <div
+            className="b-video__container"
+          >
+            <iframe
+              allowFullScreen=""
+              frameBorder="0"
+              src="https://www.youtube.com/embed/MaCZN2N6Q_I?cc_load_policy=1"
+              title="Foo"
+            />
+          </div>
+          <p
+            className="text text--medium"
+          >
+            <strong>
+              Foo
+              : 
+            </strong>
+            Bar
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BlockVideo>
+`;
