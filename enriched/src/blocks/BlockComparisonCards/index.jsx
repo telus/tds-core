@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card } from 'telus-thorium-enriched';
+import Card from '../../components/Card';
 
-import '../../../scss/_custom.scss';
-import './b-comparison-cards.scss';
+if (process.env.BROWSER) {
+  require('./b-comparison-cards.scss');
+}
 
 /**
  * BlockComparisonCards consists of responsive cards, which represent plans (and their features) that are to be compared.
