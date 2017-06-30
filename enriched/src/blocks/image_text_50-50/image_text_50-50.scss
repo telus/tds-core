@@ -1,8 +1,6 @@
 @import '../../../styles/core';
 
 .image_text_50-50 {
-  margin-bottom: 40px;
-
   @include from-breakpoint(small) {
     display: flex;
     flex-direction: row;
@@ -10,7 +8,6 @@
     justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
-    margin-bottom: 56px;
 
     &.align-right {
       flex-direction: row-reverse;
