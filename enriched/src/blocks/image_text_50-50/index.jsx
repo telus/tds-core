@@ -3,23 +3,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Assets
-import './FiftyFifty.scss';
+import './image_text_50-50.scss';
 
-const FiftyFifty = (props) => {
+const ImageText5050 = (props) => {
   return (
     <div
       id={props.content.id}
-      className={`fiftyfifty ${props.content.imageAlign === 'Right' ? 'align-right' : ''} container container--fluid`}>
-      <div className="fiftyfifty__content fiftyfifty__image">
+      className={`image_text_50-50 ${props.content.imageAlign === 'Right' ? 'align-right' : ''} container container--fluid`}>
+      <div className="image_text_50-50__content image_text_50-50__image">
         <img
           src={props.content.image.file.url}
           alt={props.content.image.description} />
       </div>
-      <div className="fiftyfifty__content fiftyfifty__copy">
+      <div className="image_text_50-50__content image_text_50-50__copy">
         <div className="inner-copy">
           {
             props.content.headline &&
-            <h2 tabIndex="0" className="fiftyfifty__headline">{props.content.headline}</h2>
+            <h2 tabIndex="0" className="image_text_50-50__headline">{props.content.headline}</h2>
           }
           <p className="text--medium">{props.content.description}</p>
           {
@@ -32,9 +32,9 @@ const FiftyFifty = (props) => {
   );
 };
 
-FiftyFifty.propTypes = {
+ImageText5050.propTypes = {
   content: PropTypes.object
 };
 
 
-export default FiftyFifty;
+export default ImageText5050;

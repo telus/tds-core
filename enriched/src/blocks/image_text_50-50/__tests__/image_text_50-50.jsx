@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import FiftyFifty from '../index';
+import ImageText5050 from '../index';
 
 
-describe('FiftyFifty', () => {
+describe('ImageText5050', () => {
   const content = {
     id: 'id',
     description: 'description',
@@ -17,21 +17,21 @@ describe('FiftyFifty', () => {
     }
   };
 
-  const fiftyFifty = shallow(<FiftyFifty content={content} />);
+  const imageText5050 = shallow(<ImageText5050 content={content} />);
 
   it('should render headline', () => {
-    expect(fiftyFifty.find('.fiftyfifty__headline').length).toEqual(1);
+    expect(imageText5050.find('.image_text_50-50__headline').length).toEqual(1);
   });
 
   it('should render legal text', () => {
-    expect(fiftyFifty.find('.fiftyfifty__copy').html()).toContain(content.legalText);
+    expect(imageText5050.find('.image_text_50-50__copy').html()).toContain(content.legalText);
   });
 
   it('should add flag to align content right if data calls for it', () => {
     content.imageAlign = "Right";
 
-    const newFiftyFifty = shallow(<FiftyFifty content={content} />);
+    const newImageText5050 = shallow(<ImageText5050 content={content} />);
 
-    expect(newFiftyFifty.find('.align-right').length).toEqual(1);
+    expect(newImageText5050.find('.align-right').length).toEqual(1);
   });
 });

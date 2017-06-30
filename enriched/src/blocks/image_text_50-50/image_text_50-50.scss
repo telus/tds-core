@@ -1,6 +1,6 @@
 @import '../../../styles/core';
 
-.fiftyfifty {
+.image_text_50-50 {
   margin-bottom: 40px;
 
   @include from-breakpoint(small) {
@@ -15,14 +15,14 @@
     &.align-right {
       flex-direction: row-reverse;
       justify-content: flex-end;
-      .fiftyfifty__copy .inner-copy {
+      .image_text_50-50__copy .inner-copy {
         float: none;
       }
     }
   }
 }
 
-.fiftyfifty__content {
+.image_text_50-50__content {
   @include from-breakpoint(small) {
     order: 0;
     flex: 0 1 auto;
@@ -30,7 +30,7 @@
   }
 }
 
-.fiftyfifty__image {
+.image_text_50-50__image {
   margin-bottom: 24px;
   @include from-breakpoint(small) {
     width: 50%;
@@ -39,7 +39,7 @@
   }
 }
 
-.fiftyfifty__copy {
+.image_text_50-50__copy {
   @include from-breakpoint(small) {
     max-width: 50%;
     .inner-copy {
@@ -59,7 +59,7 @@
   }
 }
 
-.fiftyfifty__headline {
+.image_text_50-50__headline {
   margin-bottom: 8px;
 
   @include from-breakpoint(small) {

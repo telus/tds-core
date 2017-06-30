@@ -1,10 +1,10 @@
-# FiftyFifty Block
+# ImageText5050 Block
 Full-width (.container--fluid) content block with image and content that are both 50% width.
 
 ## Default (Left-aligned image)
 Example:
 ```javascript
-import FiftyFifty from './FiftyFifty';
+import ImageText5050 from './ImageText5050';
 
 // Example of data structure that needs to be supplied by Contentful
 const content = {
@@ -20,11 +20,11 @@ const content = {
   }
 };
 
-<FiftyFifty content={content} />
+<ImageText5050 content={content} />
 ```
 
 ```
-<FiftyFifty content={{
+<ImageText5050 content={{
   id: 'id',
   description: 'description',
   headline: 'headline',
@@ -41,7 +41,7 @@ const content = {
 ## Right-aligned image
 Example:
 ```javascript
-import FiftyFifty from './FiftyFifty';
+import ImageText5050 from './ImageText5050';
 
 // Exact same as above with an additional image align flag
 const content = {
@@ -49,11 +49,11 @@ const content = {
   imageAlign: 'Right'
 };
 
-<FiftyFifty content={content} />
+<ImageText5050 content={content} />
 ```
 
 ```
-<FiftyFifty content={{
+<ImageText5050 content={{
   id: 'id',
   description: 'description',
   headline: 'headline',
