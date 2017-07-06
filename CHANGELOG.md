@@ -2,14 +2,31 @@
 
 
 
+## v0.17.0
+
+
+https://github.com/telusdigital/tds/releases/tag/v0.17.0
+
+- docs(sketch): update file to show colour updates
+- docs(sketch): updates to versioning art board with details about colour changes
+- docs(sketch): minor update to versioning details in sketch
+- docs(sketch): update re: raven - shade of grey in forms
+- build(dependencies): remove js-dom as a dependency as it was unused and causing install problems
+- build(dependencies): add yarn.lock files to lock down dependencies for devs using yarn
+- chore(editor): Add an .editorconfig file for aligning editor configurations
+- feat(Card): Deprecate className and style.
+- refactor(notification): deprecate className and style
+
+
+
 ## v0.16.3
 
 
 https://github.com/telusdigital/tds/releases/tag/v0.16.3
 
 - docs(documentation to use 0.16.1 to fix release):
-- fix(colours, chevron and display h1 updates)
-- fix(repo rename updates)
+- Changelog and version bump for v0.16.3
+
 
 
 ## v0.16.1
