@@ -32,6 +32,7 @@ export default NotificationExample;
 | Property |   Description   | Type | Default |
 |:----|:------|:---|:---|
 | variant | Adds color variation to the background of the component | string |  none |
+| `className` | (_DEPRECATED_) additional css classes | `string` |  - |
 
 
 

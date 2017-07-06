@@ -1,31 +1,66 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Notification from '../../Notification';
+import toJson from 'enzyme-to-json';
+
+import sinon from 'sinon';
+
+import * as deprecate from '../../../deprecate';
+import Notification from '../../Notification/Notification';
 
 describe('<Notification />', () => {
-  it('correctly merges className', () => {
-    const notification = shallow(<Notification className="red" variant="blue" />);
+  const doShallow = ({ ...overrides }) => (
+    shallow(<Notification {...overrides}>Some content</Notification>)
+  );
 
-    expect(notification.hasClass('notification')).toEqual(true);
-    expect(notification.hasClass('red')).toEqual(true);
-    expect(notification.hasClass('notification--blue')).toEqual(true);
+  beforeEach(() => {
+    sinon.spy(deprecate, "warn");
   });
 
-  it('correctly passes attributes to DOM node', () => {
-    const notification = shallow(<Notification id="hello" title="my title" />);
-
-    expect(notification.prop('id')).toEqual('hello');
-    expect(notification.prop('title')).toEqual('my title');
+  afterEach(() => {
+    deprecate.warn.restore();
   });
 
-  it('correctly renders children', () => {
-    const div = <div id="hello" />;
-    const notification = shallow(
-      <Notification>
-        { div }
-      </Notification>
-    );
+  it('renders', () => {
+    const notification = doShallow();
 
-    expect(notification.contains(div)).toEqual(true);
+    expect(toJson(notification)).toMatchSnapshot();
+  });
+
+  it('can have a variant', () => {
+    let notification = doShallow({ variant: undefined });
+    expect(notification).not.toHaveClassName('notification--');
+
+    notification = doShallow({ variant: 'success' });
+    expect(notification).toHaveClassName('notification notification--success');
+  });
+
+  it('adds icon for error variant', () => {
+    // Todo: Use render when it becomes usable with jest
+    // See https://github.com/blainekasten/enzyme-matchers/issues/25
+    const notification = doShallow({ variant: 'error' });
+
+    expect(notification.find('ErrorIcon')).toBePresent();
+  });
+
+  it('passes attributes to DOM node', () => {
+    const notification = doShallow({ id: 'hello', title: 'my title' });
+
+    expect(notification).toHaveProp('id', 'hello');
+    expect(notification).toHaveProp('title', 'my title');
+  });
+
+  it('accepts but deprecates custom classes', () => {
+    const notification = doShallow({ className: 'some-class' });
+
+    expect(notification).toHaveClassName('some-class');
+    expect(deprecate.warn.called).toBeTruthy();
+  });
+
+  it('accepts but deprecates inline styles', () => {
+    const style = { color: 'blue' };
+    const notification = doShallow({ style });
+
+    expect(notification).toHaveProp('style', style);
+    expect(deprecate.warn.called).toBeTruthy();
   });
 });

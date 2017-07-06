@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Notification /> renders 1`] = `
+<div
+  className="notification"
+>
+  <div
+    className="notification__content"
+  >
+    <div
+      className="c-notification__text"
+    >
+      Some content
+    </div>
+  </div>
+</div>
+`;

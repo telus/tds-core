@@ -22,6 +22,13 @@ describe('<Card />', () => {
     expect(toJson(card)).toMatchSnapshot();
   });
 
+  it('passes attributes to DOM node', () => {
+    const card = shallow(<Card id="hello" title="my title">Some content</Card>);
+
+    expect(card).toHaveProp('id', 'hello');
+    expect(card).toHaveProp('title', 'my title');
+  });
+
   it('accepts but deprecates custom classes', () => {
     const card = shallow(<Card className="some-class">Some content</Card>);
 
