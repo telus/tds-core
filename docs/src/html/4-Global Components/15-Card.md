@@ -50,4 +50,4 @@ export default CardEx;
 ---
 | Property |   Description   | Type | Default |
 |:----|:------|:---|:---|
-| `className` | additional css classes | `string` |  - |
+| `className` | (_DEPRECATED_) additional css classes | `string` |  - |

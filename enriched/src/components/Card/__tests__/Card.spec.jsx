@@ -1,18 +1,39 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Card from '../';
+import toJson from 'enzyme-to-json';
 
+import sinon from 'sinon';
+
+import * as deprecate from '../../../deprecate';
+import Card from '../Card';
 
 describe('<Card />', () => {
-  it('contains .card class', () => {
-    expect(shallow(
-      <Card><p>This is a card component</p></Card>
-    ).hasClass('card')).toBeTruthy();
+  beforeEach(() => {
+    sinon.spy(deprecate, "warn");
   });
 
-  it('contains the correct child', () => {
-    expect(shallow(
-      <Card><p>This is a card component</p></Card>
-    ).find('p').render().text()).toEqual('This is a card component');
+  afterEach(() => {
+    deprecate.warn.restore();
+  });
+
+  it('renders correctly', () => {
+    const card = shallow(<Card>Some content</Card>);
+
+    expect(toJson(card)).toMatchSnapshot();
+  });
+
+  it('accepts but deprecates custom classes', () => {
+    const card = shallow(<Card className="some-class">Some content</Card>);
+
+    expect(card).toHaveClassName('some-class');
+    expect(deprecate.warn.called).toBeTruthy();
+  });
+
+  it('accepts but deprecates inline styles', () => {
+    const styles = { color: 'blue' };
+    const card = shallow(<Card style={styles}>Some content</Card>);
+
+    expect(card).toHaveProp('style', styles);
+    expect(deprecate.warn.called).toBeTruthy();
   });
 });

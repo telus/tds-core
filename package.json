@@ -22,7 +22,8 @@
     "setup:links": "cd core && npm link && cd ../enriched && npm link && npm link telus-thorium-core && cd ../docs && npm link telus-thorium-core && npm link telus-thorium-enriched",
     "lint": "cd core && npm run lint && cd ../docs && npm run lint && cd ../enriched && npm run lint",
     "test": "cd enriched && npm run test",
-    "editjson": "underscore"
+    "editjson": "underscore",
+    "precommit": "npm run lint && npm run build && npm run test"
   },
   "repository": {
     "type": "git",
