@@ -49,8 +49,8 @@ class Panel extends Component {
     });
 
     const iconClassName = classNames('icon icon--primary', {
-      'icon-core-minus': isActive,
-      'icon-core-plus': !isActive
+      'icon-core-caret-up': isActive,
+      'icon-core-caret-down': !isActive
     });
 
 

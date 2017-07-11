@@ -1,6 +1,12 @@
 @import '~telus-thorium-core/scss/settings/variables';
 @import '~telus-thorium-core/scss/utility/mixins';
 
+
+.icon-core-caret-up {
+  content: core-icon-codepoint(caret-down);
+  transform: rotateY(180deg);
+}
+
 .collapsible-panel {
   position: relative;
 
@@ -26,15 +32,14 @@
 
     .icon{
       color: $color-primary;
+      position: absolute;
+      transition: top .3s;
+      top: 20px;
     }
 
     @include alt-state {
-      border-top: 1px solid $color-shark;
       .icon {
-        color: $color-primary;
-      }
-      &::before {
-        background: $color-shark;
+        top: 24px;
       }
     }
 
@@ -58,6 +63,13 @@
     }
 
     &--expanded {
+
+      &:hover {
+        .icon {
+          top: 18px;
+        }
+      }
+
       &::after {
         @include dimple();
         position: absolute;
@@ -65,14 +77,6 @@
       }
       &::before {
         height: 0;
-      }
-
-      @include alt-state {
-        + .collapsible-panel__content {
-          &::before {
-            background: $color-shark;
-          }
-        }
       }
     }
 
@@ -82,9 +86,11 @@
       .icon {
         color: $color-gainsboro;
       }
+
       @include alt-state {
         .icon {
-          color: $color-gainsboro;
+          text-shadow: none;
+          top: 20px;
         }
         border-top: none;
         &::before {
@@ -93,33 +99,15 @@
       }
        .collapsible-panel__header {
         color: $color-shuttle-grey;
+        font-width: 400;
       }
     }
-
-
 
     &--first {
       border-top: 1px solid $color-gainsboro;
-      @include alt-state {
-        border-top: 1px solid $color-shark;
-        .icon {
-          color: $color-primary;
-        }
-        &::before {
-          background: $color-shark;
-        }
-      }
-
-      &.collapsible-panel__label--disabled {
-        border-top: 1px solid $color-gainsboro;
-        @include alt-state {
-          border-top: 1px solid $color-gainsboro;
-        }
-      }
     }
 
   }
-
 
   &__header {
     display: inline-block;
@@ -128,8 +116,6 @@
     position: relative;
   }
 
-
-
   &__icon {
     margin-right: 20px;
     font-size: 1.125rem;
@@ -137,7 +123,6 @@
     width: 18px;
     margin-top: 2px;
   }
-
 
   &__content {
     opacity: 0;

@@ -12,6 +12,8 @@ const RegularExpandCollapseExample = () => {
           suscipit lorem, nec blandit mauris lectus eu arcu. Donec urna augue, mattis ut commodo
           nec, fermentum et nisi. </p>
 
+          <a className="button button--primary" href="#">Praesent fermentum</a>
+          
           <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
           Integer et est eu ex ornare fermentum. Aenean dapibus condimentum mauris vitae interdum.
           Nullam id ligula arcu. Vivamus ex orci, posuere ornare augue a, fringilla ornare neque.
