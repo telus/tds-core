@@ -5,30 +5,15 @@
 //
 $color-accessible-green: #248700;
 
-@warn "$color-forest-green token has been deprecated as of 0.16.2, new name for this colour is $color-accessible-green";
-$color-forest-green: $color-accessible-green;
-
-@warn "$color-japanese-laurel token has been deprecated as of 0.16.2, please use $color-forest-green";
-$color-japanese-laurel: $color-forest-green; // deprecated as of 0.16.2
-
 $color-telus-green: #6c0;
 $color-panache: #f4f9f2;
 
 $color-shuttle-grey: #54595f;
 
-@warn "$color-raven token has been deprecated as of 0.16.2, please use $color-shuttle-grey";
-$color-raven: $color-shuttle-grey;
-
 $color-shark: #2a2c2e;
 $color-athens-grey: #f7f7f8;
 
 $color-telus-purple: #4b286d;
-
-@warn "$color-grape token has been deprecated as of 0.16.2, new name for this colour is $color-telus-purple";
-$color-grape: $color-telus-purple;
-
-@warn "$color-royal-purple token has been deprecated as of 0.16.2";
-$color-royal-purple: #6e3ba1;
 
 $color-white-lilac: #f2eff4;
 $color-cardinal: #c12335;
@@ -42,7 +27,7 @@ $color-link: $color-shuttle-grey;
 $color-text: $color-shark;
 
 // Tokens
-$color-primary: $color-forest-green;
+$color-primary: $color-accessible-green;
 $color-secondary: $color-telus-purple;
 
 // Icon colors
