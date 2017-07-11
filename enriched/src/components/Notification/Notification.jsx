@@ -24,7 +24,7 @@ const Notification = ({ className, variant, children, ...rest }) => {
   });
 
   return (
-    <div {...rest} className={classes}>
+    <header role="banner" {...rest} className={classes}>
       <div className="notification__content">
         {variant === 'error' && <ErrorIcon />}
 
@@ -32,7 +32,7 @@ const Notification = ({ className, variant, children, ...rest }) => {
           {children}
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

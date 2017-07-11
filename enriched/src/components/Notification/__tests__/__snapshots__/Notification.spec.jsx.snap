@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Notification /> renders 1`] = `
-<div
+<header
   className="notification"
+  role="banner"
 >
   <div
     className="notification__content"
@@ -13,5 +14,5 @@ exports[`<Notification /> renders 1`] = `
       Some content
     </div>
   </div>
-</div>
+</header>
 `;
