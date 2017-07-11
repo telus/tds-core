@@ -124,10 +124,12 @@ function getNav(contents) {
       continue;
     }
 
+    console.dir(dir);
+
     var isDir = fs.lstatSync(ROOT_DIR + dir).isDirectory();
     var matches = dir.match(NUMBERED_NAMING_PATTERN);
 
-    if (!isDir || matches === null) {
+    if (!isDir || matches === null || dir === '6-Blocks' || dir === '5-Block Components') {
       // Only process directories named like "1-Overview".
       continue;
     }
