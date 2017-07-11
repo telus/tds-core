@@ -2,6 +2,20 @@
 
 
 
+## v0.18.0
+
+
+https://github.com/telusdigital/tds/releases/tag/v0.18.0
+
+- fix(links): cleaned up link underline mixin
+- fix(buttons): update anchor styles when styled as buttons
+- fix(notification): make it more accessible by using role="banner"
+- fix(Expand Collapse): fix hover states by using chevrons to indicate state
+- docs(sketch file): update
+- docs(hide blocks and block components): because they are not following latest standards and no one i
+
+
+
 ## v0.17.0
 
 
@@ -16,6 +30,7 @@ https://github.com/telusdigital/tds/releases/tag/v0.17.0
 - chore(editor): Add an .editorconfig file for aligning editor configurations
 - feat(Card): Deprecate className and style.
 - refactor(notification): deprecate className and style
+- Changelog and version bump for v0.17.0
 
 
 
