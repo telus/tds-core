@@ -144,7 +144,7 @@
 }
 
 @mixin clear-skinny-underline() {
-  background: none !important;
+  background-size: .05em 1px, .05em 1px, 1px 0;
 }
 
 @mixin dimple() {
