@@ -144,11 +144,23 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 Button classes can also be applied to `<a>` tags.
 
 <a class="button button--primary" role="button" href="#">Anchor button</a>
+<br/>
+<a class="button button--primary button--outlined" role="button" href="#">Anchor Outlined button</a>
+<div class="example example--inverted example--primary">
+  <a class="button button--primary button--inverted button--outlined" role="button" href="#">Anchor Inverted button</a>
+</div>
 
 ```html
 <a class="button button--primary" role="button" href="#">
     Anchor button
 </a>
+<br/>
+<a class="button button--primary button--outlined" role="button" href="#">
+  Anchor Outlined button
+</a>
+<div class="example example--inverted example--primary">
+  <a class="button button--primary button--inverted button--outlined" role="button" href="#">Anchor Inverted button</a>
+</div>
 ```
 
 _Note_: The mobile button width is fluid and stretches to cover all columns currently in view.

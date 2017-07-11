@@ -174,3 +174,9 @@ a.button {
     text-align: center;
   }
 }
+
+// Github Issue 394 fix
+a.button--primary.button--outlined:hover {
+  display: inline-block;
+  background-color: $color-primary;
+}
