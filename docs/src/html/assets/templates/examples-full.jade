@@ -1,6 +1,6 @@
 doctype html
 block vars
-  - var assetsUrl = (process.env.NODE_ENV === 'dev') ? locals.assetsUrl.dev : locals.assetsUrl.prod;
+  - var assetsUrl = (process.env.NODE_ENV === 'development') ? locals.assetsUrl.dev : locals.assetsUrl.prod;
 html(lang='en')
   head
     block head

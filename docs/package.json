@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "stylelint 'src/scss/**/*.scss' --syntax scss",
     "build": "npm run lint && npm run clean && mkdirp dist && npm run build:js && npm run build:html",
-    "start": "export NODE_ENV=dev && wintersmith preview --config=config.json",
+    "start": "export NODE_ENV=development && wintersmith preview --config=config.json",
     "devServer": "webpack-dev-server --config webpack.config.dev.js",
     "build:js": "webpack --config webpack.config.js",
     "build:html": "mkdirp dist && wintersmith build --config=./config.json",

@@ -124,8 +124,6 @@ function getNav(contents) {
       continue;
     }
 
-    console.dir(dir);
-
     var isDir = fs.lstatSync(ROOT_DIR + dir).isDirectory();
     var matches = dir.match(NUMBERED_NAMING_PATTERN);
 
