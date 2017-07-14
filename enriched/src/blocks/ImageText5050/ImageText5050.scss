@@ -28,7 +28,7 @@
 }
 
 .image_text_50-50__image {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   @include from-breakpoint(small) {
     width: 50%;
     margin-bottom: 0;
@@ -47,19 +47,19 @@
 
   @include at-breakpoint(small) {
     p:not(.text--small) {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 
   .text--small {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
 .image_text_50-50__headline {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 
   @include from-breakpoint(small) {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 }
