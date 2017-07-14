@@ -4,7 +4,9 @@ import classNames from 'classnames';
 
 import { warn } from '../../deprecate';
 
-import './Notification.scss';
+if (process.env.BROWSER) {
+  require('./Notification.scss');
+}
 
 const ErrorIcon = () => (
   <i className="icon icon-core-exclamation-point-circle c-notification__icon" />
