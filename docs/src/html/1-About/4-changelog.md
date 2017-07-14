@@ -1,7 +1,13 @@
----
-title: Changelog
-template: changelog.jade
----
+
+
+
+## v0.18.1
+
+
+https://github.com/telusdigital/tds/releases/tag/v0.18.1
+
+- fix(Card and Notification): import css using require just like on previous versions
+
 
 
 ## v0.18.0
@@ -15,6 +21,7 @@ https://github.com/telusdigital/tds/releases/tag/v0.18.0
 - fix(Expand Collapse): fix hover states by using chevrons to indicate state
 - docs(sketch file): update
 - docs(hide blocks and block components): because they are not following latest standards and no one i
+- Changelog and version bump for v0.18.0
 
 
 
