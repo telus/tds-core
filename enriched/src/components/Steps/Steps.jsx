@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { currentStatusOptions } from './Step';
+import Step, { currentStatusOptions } from './Step';
 
-if (process.env.BROWSER) {
-  require('./Steps.scss');
-}
+import './Steps.scss';
 
 class Steps extends Component {
 
@@ -72,4 +70,5 @@ Steps.defaultProps = {
   currentStatus: 'processing'
 };
 
+Steps.Step = Step;
 export default Steps;

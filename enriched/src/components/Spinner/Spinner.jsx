@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-if (process.env.BROWSER) {
-  require('./Spinner.scss');
-}
+import './Spinner.scss';
 
 class Spinner extends Component {
   constructor(props) {

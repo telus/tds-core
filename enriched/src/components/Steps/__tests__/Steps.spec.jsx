@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Steps from '../';
+import Steps from '../Steps';
 
 describe('<Steps />', () => {
   it('renders into 3 steps', () => {

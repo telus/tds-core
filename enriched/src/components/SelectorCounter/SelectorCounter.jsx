@@ -8,9 +8,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import CounterButton from './CounterButton';
 
-if (process.env.BROWSER) {
-  require('./SelectorCounter.scss');
-}
+import './SelectorCounter.scss';
 
 const propTypes = {
   className: PropTypes.string,
@@ -39,7 +37,7 @@ const defaultProps = {
   contextSuffix: ''
 };
 
-export default class SelectorCounter extends Component {
+class SelectorCounter extends Component {
   constructor(props) {
     super(props);
 
@@ -155,3 +153,5 @@ export default class SelectorCounter extends Component {
 SelectorCounter.propTypes = propTypes;
 
 SelectorCounter.defaultProps = defaultProps;
+
+export default SelectorCounter;

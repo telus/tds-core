@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import SelectorCounter from '../';
+import SelectorCounter from '../SelectorCounter';
 import CounterButton from '../CounterButton';
 
 describe('<SelectorCounter />', () => {
