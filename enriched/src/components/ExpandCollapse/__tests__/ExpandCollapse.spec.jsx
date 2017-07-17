@@ -1,10 +1,10 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import ExpandCollapse from '../';
+import ExpandCollapse from '../ExpandCollapse';
 
 const { Group, Panel } = ExpandCollapse;
 
-describe('<ExpandCollaps e/>', () => {
+describe('<ExpandCollapse/>', () => {
   it('handles disabled panels', () => {
     const wrapper = mount(
       <Group disabledKeys={['p1']}>

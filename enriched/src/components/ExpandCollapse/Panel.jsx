@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-if (process.env.BROWSER) {
-  require('./Panel.scss');
-}
+import './Panel.scss';
 
 class Panel extends Component {
 

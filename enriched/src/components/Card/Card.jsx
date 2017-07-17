@@ -5,9 +5,7 @@ import classNames from 'classnames';
 
 import { warn } from '../../deprecate';
 
-if (process.env.BROWSER) {
-  require('./Card.scss');
-}
+import './Card.scss';
 
 const Card = ({ className, children, ...rest }) => {
   if (className) {
