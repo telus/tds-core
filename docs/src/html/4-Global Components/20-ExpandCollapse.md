@@ -39,7 +39,10 @@ const RegularExpandCollapseEx = () => {
 export default RegularExpandCollapseEx;
 ```
 
-We can control the Expand/Collapse component state.
+### Controlling the Expand/Collapse component state
+
+Emit events to change the state of individual Panels.
+
 <div id="controlledExpandCollapseExample"></div>
 <script type="text/babel">
   ReactDOM.render(
@@ -81,10 +84,57 @@ We can control the Expand/Collapse component state.
             Panel #2 Body
             </ExpandCollapse.Panel>
         </ExpandCollapse.Group>
-      </div>  
+      </div>
     );
   }
 ```
+
+### Numbered Panels
+You can pass a function to the `header` prop instead of a string. This is especially convenient if you want conditionally render numbered panels. The (1-indexed) position of the Panel is passed to the function as the `ordinal` property. Note that null elements will not affect the position of subsequent elements.
+
+Currently, `panelKey` and `ordinal` are passed to this function. See the example below for more details.
+
+```javascript
+import React, { Component, PropTypes } from 'react';
+import { ExpandCollapse } from 'telus-thorium-enriched';
+
+const numberHeader = title => ({ ordinal }) => `${ordinal}. ${title}`;
+
+// Render the React element if the predicate is true.
+const renderIf = predicate => elem => predicate ? elem : null;
+
+const NumberedExpandCollapseEx = () => {
+    const condition = 3 > 4;
+
+    return (
+        <div>
+            <ExpandCollapse.Group>
+                <ExpandCollapse.Panel header={numberHeader('Visible content')}>
+                    Panel #1 Body
+                </ExpandCollapse.Panel>
+
+                {renderIf(condition)(<ExpandCollapse.Panel header={numberHeader('Hidden content')}>
+                    Hidden Panel Body
+                </ExpandCollapse.Panel>)}
+
+                <ExpandCollapse.Panel header={numberHeader('More visible content')}>
+                    Panel #2 Body
+                </ExpandCollapse.Panel>
+            </ExpandCollapse.Group>
+        </div>
+    );
+}
+```
+
+The code above will produce the following:
+
+<div id="numberedExpandCollapseExample"></div>
+<script type="text/babel">
+  ReactDOM.render(
+    <Tds.NumberedExpandCollapseExample />,
+    document.getElementById('numberedExpandCollapseExample')
+  );
+</script>
 
 ## Accordion
 

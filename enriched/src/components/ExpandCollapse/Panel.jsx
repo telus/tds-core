@@ -34,8 +34,18 @@ class Panel extends Component {
     }
   }
 
+  getHeader() {
+    const { header, ordinal, panelKey } = this.props;
+
+    if (typeof header === 'function') {
+      return header({ ordinal, panelKey });
+    }
+
+    return header;
+  }
+
   render() {
-    const { className, header, children, isActive, isDisabled, onPanelClick, isFirst } = this.props;
+    const { className, children, isActive, isDisabled, onPanelClick, isFirst } = this.props;
     const collapsePanelClassName = classNames('collapsible-panel', className);
     const collapsePanelContent = classNames('collapsible-panel__content', {
       'collapsible-panel__content--visible': isActive
@@ -53,7 +63,6 @@ class Panel extends Component {
       'icon-core-caret-down': !isActive
     });
 
-
     return (
       <div className={collapsePanelClassName}>
         <span className="accessible-hide">{isActive ? 'expanded' : 'collapsed'}</span>
@@ -65,7 +74,7 @@ class Panel extends Component {
           <span className="collapsible-panel__icon">
             <i className={iconClassName} />
           </span>
-          <span className="collapsible-panel__header">{ header }</span>
+          <span className="collapsible-panel__header">{ this.getHeader() }</span>
         </button>
         <div
           ref={(node) => { this.panelContent = node; }}
@@ -80,7 +89,11 @@ class Panel extends Component {
 
 Panel.propTypes = {
   className: PropTypes.string,
-  header: PropTypes.string,
+  ordinal: PropTypes.number,
+  panelKey: PropTypes.string,
+  header: PropTypes.oneOfType([
+    PropTypes.string, PropTypes.func
+  ]),
   children: PropTypes.node,
   isActive: PropTypes.bool,
   isDisabled: PropTypes.bool,

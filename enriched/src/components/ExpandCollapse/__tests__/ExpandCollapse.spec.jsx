@@ -4,7 +4,7 @@ import ExpandCollapse from '../';
 
 const { Group, Panel } = ExpandCollapse;
 
-describe('<ExpandCollaps e/>', () => {
+describe('<ExpandCollapse />', () => {
   it('handles disabled panels', () => {
     const wrapper = mount(
       <Group disabledKeys={['p1']}>
@@ -44,6 +44,38 @@ describe('<ExpandCollaps e/>', () => {
     });
   });
 
+  it('accepts a function for the header prop, which computes the actual header', () => {
+    const header = () => 'Some Panel Title';
+
+    const wrapper = mount(
+      <Panel header={header}>
+        <div>stuff</div>
+      </Panel>
+    );
+
+    expect(wrapper.find('.collapsible-panel__header').first().render().text()).toEqual('Some Panel Title');
+  });
+
+  it('numbers child Panel elements, ignoring null children', () => {
+    const header = title => ({ ordinal }) => `${ordinal}`;
+
+    const wrapper = mount(
+      <Group>
+        {null}
+        <Panel header={header('visible1')}>
+          stuff
+        </Panel>
+        {null}
+        {null}
+        <Panel header={header('visible2')}>
+          more stuff
+        </Panel>
+      </Group>
+    );
+
+    expect(wrapper.find('.collapsible-panel__header').first().render().text()).toEqual('1');
+    expect(wrapper.find('.collapsible-panel__header').last().render().text()).toEqual('2');
+  });
 
   it('can set default open panel', () => {
     const wrapper = mount(

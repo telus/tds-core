@@ -1,7 +1,7 @@
 import React from 'react';
 import { ExpandCollapse } from 'telus-thorium-enriched';
 
-const AccordionExpandCollapseExample =() => {
+const AccordionExpandCollapseExample = () => {
     return (
       <ExpandCollapse.Group accordion>
         <ExpandCollapse.Panel header="Panel #1">

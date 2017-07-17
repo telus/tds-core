@@ -2,6 +2,7 @@ import SelectorCounterExample from './SelectorCounterExample';
 import RegularExpandCollapseExample from './ExpandCollapseExample/RegularExpandCollapse';
 import AccordionExpandCollapseExample from './ExpandCollapseExample/AccordionExpandCollapse';
 import ControlledExpandCollapseExample from './ExpandCollapseExample/ControlledExpandCollapse';
+import NumberedExpandCollapseExample from './ExpandCollapseExample/NumberedExpandCollapse';
 import CardExample from './CardExample';
 import StepsExample from './Steps';
 import SpinnerExample from './SpinnerExample';
@@ -13,6 +14,7 @@ export {
   RegularExpandCollapseExample,
   AccordionExpandCollapseExample,
   ControlledExpandCollapseExample,
+  NumberedExpandCollapseExample,
   CardExample,
   SpinnerExample,
   StepsExample,
