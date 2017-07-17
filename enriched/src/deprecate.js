@@ -5,5 +5,5 @@ export const warn = (componentName, message) => {
     return;
   }
 
-  console.log(`[TDS] [Deprecate] ${componentName}: ${message}`); // eslint-disable-line no-console
+  console.warn(`[TDS] [Deprecate] ${componentName}: ${message}`); // eslint-disable-line no-console
 };
