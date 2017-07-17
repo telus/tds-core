@@ -1,12 +1,6 @@
 @import '../../../../core/scss/settings/variables';
 @import '../../../../core/scss/utility/mixins';
 
-
-.icon-core-caret-up {
-  content: core-icon-codepoint(caret-down);
-  transform: rotateY(180deg);
-}
-
 .collapsible-panel {
   position: relative;
 
@@ -99,7 +93,7 @@
       }
        .collapsible-panel__header {
         color: $color-shuttle-grey;
-        font-width: 400;
+        font-weight: 400;
       }
     }
 
