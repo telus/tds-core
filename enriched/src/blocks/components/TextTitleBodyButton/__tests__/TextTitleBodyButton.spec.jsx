@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import TextTitleBodyButton from '../';
+import TextTitleBodyButton from '../TextTitleBodyButton';
 
 describe('<TextTitleBodyButton />', () => {
   const props = {

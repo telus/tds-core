@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import CheckList from '../';
+import CheckList from '../CheckList';
 
 describe('<CheckList />', () => {
   it('sets the classes from the className prop', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import TextTitleBodyButton from 'telus-thorium-enriched/blocks/components/TextTitleBodyButton';
+import TextTitleBodyButton from 'telus-thorium-enriched/blocks/components/TextTitleBodyButton/TextTitleBodyButton';
 
 const TextTitleBodyButtonExample = () => {
   const props = {

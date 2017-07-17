@@ -7,6 +7,9 @@ export { default as SelectorCounter } from './components/SelectorCounter/Selecto
 export { default as Spinner } from './components/Spinner/Spinner';
 export { default as Steps } from './components/Steps/Steps';
 
+export { default as CheckList } from './blocks/components/CheckList/CheckList';
+export { default as TextTitleBodyButton } from './blocks/components/TextTitleBodyButton/TextTitleBodyButton';
+
 export { default as Headline } from './blocks/Headline/Headline';
 export { default as Overview } from './blocks/Overview/Overview';
 export { default as TitledText } from './blocks/TitledText/TitledText';
