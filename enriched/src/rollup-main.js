@@ -6,3 +6,8 @@ export { default as Notification } from './components/Notification/Notification'
 export { default as SelectorCounter } from './components/SelectorCounter/SelectorCounter';
 export { default as Spinner } from './components/Spinner/Spinner';
 export { default as Steps } from './components/Steps/Steps';
+
+export { default as Headline } from './blocks/Headline/Headline';
+export { default as Overview } from './blocks/Overview/Overview';
+export { default as TitledText } from './blocks/TitledText/TitledText';
+export { default as Video } from './blocks/Video/Video';

@@ -13,7 +13,8 @@ export default {
   ],
   sourceMap: true,
 
-  external: ['react', 'prop-types'],
+  external: ['react', 'prop-types', '@telusdigital/redux-contentful'],
+
   plugins: [
     resolve({
       extensions: ['.js', '.jsx']

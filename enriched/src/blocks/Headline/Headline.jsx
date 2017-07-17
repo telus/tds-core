@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-if (process.env.BROWSER) {
-  require('./headline.scss');
-}
+import './Headline.scss';
 
-const HeadlineBlock = (props) => {
+const Headline = (props) => {
   const { eyebrow, title } = props;
 
   return (
@@ -22,13 +20,13 @@ const HeadlineBlock = (props) => {
   );
 };
 
-HeadlineBlock.propTypes = {
+Headline.propTypes = {
   title: PropTypes.string.isRequired,
   eyebrow: PropTypes.string
 };
 
-HeadlineBlock.defaultProps = {
+Headline.defaultProps = {
   eyebrow: ''
 };
 
-export default HeadlineBlock;
+export default Headline;

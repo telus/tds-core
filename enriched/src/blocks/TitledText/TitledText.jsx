@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-if (process.env.BROWSER) {
-  require('./titledTextBlock.scss');
-}
+import './TitledText.scss';
 
-class TitledTextBlock extends Component {
+class TitledText extends Component {
 
   render() {
     const { title, content, titleHeadingClass } = this.props;
@@ -32,7 +30,7 @@ class TitledTextBlock extends Component {
   }
 }
 
-TitledTextBlock.propTypes = {
+TitledText.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string.isRequired,
@@ -41,8 +39,8 @@ TitledTextBlock.propTypes = {
   titleHeadingClass: PropTypes.string
 };
 
-TitledTextBlock.defaultProps = {
+TitledText.defaultProps = {
   titleHeadingClass: 'heading-1'
 };
 
-export default TitledTextBlock;
+export default TitledText;

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextBlock Component matches snapshot 1`] = `
-<TitledTextBlock
+exports[`TitledText matches snapshot 1`] = `
+<TitledText
   content={
     Array [
       Object {
@@ -46,5 +46,5 @@ exports[`TextBlock Component matches snapshot 1`] = `
       </div>
     </div>
   </section>
-</TitledTextBlock>
+</TitledText>
 `;

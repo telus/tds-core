@@ -1,5 +1,5 @@
 import React from 'react';
-import { VideoBlock } from 'telus-thorium-enriched/blocks';
+import { Video } from 'telus-thorium-enriched/blocks';
 
 const VideoBlockExample = () => {
   const props = {
@@ -9,7 +9,7 @@ const VideoBlockExample = () => {
   };
 
   return (
-    <VideoBlock {...props} />
+    <Video {...props} />
   );
 };
 

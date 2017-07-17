@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { mountToJson } from 'enzyme-to-json';
-import Headline from '../';
+import Headline from '../Headline';
 
 describe('Headline', () => {
   const data = { eyebrow: 'Foo', title: 'Bar' };

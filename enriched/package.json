@@ -16,7 +16,8 @@
     "build": "npm run clean && npm run build:lib && npm run build:umd && npm run build:umd:min",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "rollup": "rollup -c"
+    "test:u": "npm run test -- -u",
+    "rollup": "rollup -c && cp ./src/blocks/Headline/wave_header_default.png ./dist/"
   },
   "dependencies": {
     "@telusdigital/redux-contentful": "^2.2.1",

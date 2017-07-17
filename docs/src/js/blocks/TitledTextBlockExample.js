@@ -1,5 +1,5 @@
 import React from 'react';
-import { TitledTextBlock } from 'telus-thorium-enriched/blocks';
+import { TitledText } from 'telus-thorium-enriched/blocks';
 
 const TitledTextBlockExample = () => {
   const props = {
@@ -17,7 +17,7 @@ const TitledTextBlockExample = () => {
   };
 
   return (
-    <TitledTextBlock {...props} />
+    <TitledText {...props} />
   );
 };
 

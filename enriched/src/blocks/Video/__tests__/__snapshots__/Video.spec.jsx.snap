@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`VideoBlock matches snapshot 1`] = `
-<VideoBlock
+exports[`Video matches snapshot 1`] = `
+<Video
   caption="Foo"
   subtext="Bar"
   videoUrl="https://www.youtube.com/embed/MaCZN2N6Q_I?cc_load_policy=1"
@@ -41,5 +41,5 @@ exports[`VideoBlock matches snapshot 1`] = `
       </div>
     </div>
   </section>
-</VideoBlock>
+</Video>
 `;

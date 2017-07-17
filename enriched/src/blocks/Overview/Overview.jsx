@@ -4,7 +4,7 @@ import cx from 'classnames';
 import CheckList from '../components/CheckList';
 import TextTitleBodyButton from '../components/TextTitleBodyButton';
 
-const OverviewBlock = (props) => {
+const Overview = (props) => {
   const { className, ctaLink, overviewTitle, overviewDescription, sideContent } = props;
   const cls = cx(className);
   const bodyContent = {
@@ -26,7 +26,7 @@ const OverviewBlock = (props) => {
   );
 };
 
-OverviewBlock.propTypes = {
+Overview.propTypes = {
   className: PropTypes.string,
   overviewTitle: PropTypes.string,
   overviewDescription: PropTypes.string,
@@ -34,7 +34,7 @@ OverviewBlock.propTypes = {
   sideContent: PropTypes.object
 };
 
-OverviewBlock.defaultProps = {
+Overview.defaultProps = {
   className: '',
   overviewTitle: '',
   overviewDescription: '',
@@ -49,4 +49,4 @@ OverviewBlock.defaultProps = {
   }
 };
 
-export default OverviewBlock;
+export default Overview;

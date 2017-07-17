@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-if (process.env.BROWSER) {
-  require('./video-block.scss');
-}
+import './Video.scss';
 
-const VideoBlock = (props) => {
+const Video = (props) => {
   const { caption, subtext, videoUrl } = props;
 
   return (
@@ -27,16 +25,16 @@ const VideoBlock = (props) => {
   );
 };
 
-VideoBlock.propTypes = {
+Video.propTypes = {
   caption: PropTypes.string,
   subtext: PropTypes.string,
   videoUrl: PropTypes.string
 };
 
-VideoBlock.defaultProps = {
+Video.defaultProps = {
   subtext: '',
   caption: '',
   videoUrl: ''
 };
 
-export default VideoBlock;
+export default Video;

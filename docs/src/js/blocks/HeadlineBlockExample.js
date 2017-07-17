@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadlineBlock } from 'telus-thorium-enriched/blocks';
+import { Headline } from 'telus-thorium-enriched/blocks';
 
 const HeadlineBlockExample = () => {
   const props = {
@@ -8,7 +8,7 @@ const HeadlineBlockExample = () => {
   };
 
   return (
-    <HeadlineBlock {...props} />
+    <Headline {...props} />
   );
 };
 

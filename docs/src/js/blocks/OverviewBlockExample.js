@@ -1,5 +1,5 @@
 import React from 'react';
-import { OverviewBlock } from 'telus-thorium-enriched/blocks';
+import { Overview } from 'telus-thorium-enriched/blocks';
 
 const OverviewBlockExample = () => {
   const props = {
@@ -18,7 +18,7 @@ const OverviewBlockExample = () => {
   };
 
   return (
-    <OverviewBlock {...props} />
+    <Overview {...props} />
   );
 };
 

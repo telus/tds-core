@@ -1,11 +1,11 @@
-import HeadlineBlock from './HeadlineBlock';
-import OverviewBlock from './OverviewBlock';
-import TitledTextBlock from './TitledTextBlock';
-import VideoBlock from './VideoBlock';
+import Headline from './Headline/Headline';
+import Overview from './Overview/Overview';
+import TitledText from './TitledText/TitledText';
+import Video from './Video/Video';
 
 export {
-  HeadlineBlock,
-  OverviewBlock,
-  TitledTextBlock,
-  VideoBlock
+  Headline,
+  Overview,
+  TitledText,
+  Video
 };
