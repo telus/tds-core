@@ -1,0 +1,7 @@
+{
+  "rootDir": "../",
+  "moduleNameMapper": {
+    "^.+\\.(css|scss)$": "<rootDir>/src/__mocks__/styleMock.js"
+  },
+  "setupTestFrameworkScriptFile": "<rootDir>/node_modules/jest-enzyme/lib/index.js"
+}

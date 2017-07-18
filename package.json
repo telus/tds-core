@@ -1,26 +1,22 @@
 {
-  "name": "tds-build",
+  "name": "@telusdigital/tds",
   "version": "0.18.1",
   "description": "TELUS Design System",
   "license": "UNLICENSED",
+  "main": "dist/tds.cjs.js",
+  "module": "dist/tds.es.js",
   "scripts": {
-    "build": "npm run build:assets && npm run build:core && npm run build:enriched && npm run build:docs",
-    "build:assets": "cp -r core/fonts/* docs/src/html/assets/fonts/ && cp designs/TDS.sketch docs/src/html/assets/downloads/TDS.sketch && cp core/fonts/core-icons.ttf docs/src/html/assets/downloads/core-icons.ttf",
-    "build:core": "cd core && npm run build",
-    "build:docs": "cd docs && npm run build",
-    "build:enriched": "cd enriched && npm run build",
-    "prestart": "npm run build",
-    "start": "concurrently --kill-others \"cd docs && npm run start\" \"cd docs && npm run devServer\"",
-    "deploy:cdn": "npm run deploy:cdn:core && npm run deploy:cdn:enriched",
-    "deploy:cdn:core": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module core --environment production --latest",
-    "deploy:cdn:enriched": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module enriched --environment production --latest",
+    "precommit": "yarn lint && yarn test && yarn build",
     "prerelease": "scripts/prerelease.sh",
-    "setup:links": "cd core && npm link && cd ../enriched && npm link && npm link telus-thorium-core && cd ../docs && npm link telus-thorium-core && npm link telus-thorium-enriched",
-    "lint": "cd core && npm run lint && cd ../docs && npm run lint && cd ../enriched && npm run lint",
-    "lint:scss": "stylelint 'src/**/*.scss' --config config/.stylelintrc.json",
-    "test": "cd enriched && npm run test",
-    "editjson": "underscore",
-    "precommit": "npm run lint && npm run build && npm run test"
+    "lint": "yarn lint:js && yarn lint:scss",
+    "lint:js": "eslint src --ext '.js,.jsx' --config config/.eslintrc.json",
+    "lint:scss": "stylelint 'src/scss/**/*.scss' --config config/.stylelintrc.json",
+    "test": "jest --config config/.jestrc.json",
+    "test:watch": "yarn test -- --watch",
+    "test:u": "yarn test -- -u",
+    "build": "yarn build:js && yarn build:scss",
+    "build:js": "rollup -c config/rollup.config.js && cp ./src/components/Headline/wave_header_default.png ./dist/",
+    "build:scss": "sh ./scripts/cp-scss.sh"
   },
   "repository": {
     "type": "git",
@@ -30,21 +26,48 @@
   "bugs": {
     "url": "https://github.com/telusdigital/tds/issues"
   },
+  "homepage": "http://tds.telus.com",
   "devDependencies": {
+    "@telusdigital/redux-contentful": "^3.0.0",
     "aws-sdk": "^2.7.3",
-    "concurrently": "^3.1.0",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "classnames": "^2.2.5",
     "cz-conventional-changelog": "^2.0.0",
-    "log4js": "^1.0.1",
-    "mime-types": "^2.1.13",
-    "mkdirp": "^0.5.1",
-    "rimraf": "^2.5.4",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "^20.0.4",
+    "jest-enzyme": "^3.5.3",
+    "node-sass": "^4.5.3",
+    "postcss": "^6.0.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sass": "^0.5.3",
+    "sinon": "^2.3.8",
     "stylelint": "^8.0.0",
     "stylelint-config-sass-guidelines": "^2.2.0",
-    "stylelint-scss": "^1.5.1",
-    "underscore-cli": "^0.2.19"
+    "stylelint-scss": "^1.5.1"
+  },
+  "peerDependencies": {
+    "@telusdigital/redux-contentful": ">=2.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "dependencies": {
-    "commander": "^2.9.0"
+    "prop-types": "^15.5.10"
   },
   "config": {
     "commitizen": {

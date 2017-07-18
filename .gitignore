@@ -1,5 +1,5 @@
 # Node.js dependencies, files, & directories
-.npm
+.npmrc
 node_modules
 npm-debug.log*
 *.log
