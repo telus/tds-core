@@ -2,8 +2,12 @@ import path from 'path';
 
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
+
 import babel from 'rollup-plugin-babel';
+
 import sass from 'rollup-plugin-sass';
+import postcss from 'postcss';
+import autoprefixer from 'autoprefixer';
 
 export default {
   entry: path.resolve('./src/rollup-main.js'),
@@ -23,7 +27,12 @@ export default {
       include: 'node_modules/**'
     }),
     sass({
-      output: path.resolve('./dist/tds.css')
+      output: path.resolve('./dist/tds.css'),
+      processor(css) {
+        return postcss([autoprefixer])
+          .process(css)
+          .then(result => result.css)
+      }
     }),
     babel({
       babelrc: false,

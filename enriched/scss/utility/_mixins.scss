@@ -1,0 +1,206 @@
+// Helpful mixins
+
+// Mixin for mapping a set of :hover styles onto the :focus state
+// for a slightly nicer keyboard-user experience. Use where you'd use &:hover.
+// For example:
+// .something-interactive {
+//    background: $normal-background-color;
+//    @include alt-state {
+//       background: $hover-background-color;
+//    }
+// }
+
+@mixin alt-state() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+//
+// Breakpoints
+//
+
+// Mobile-first breakpoint mixin. This is the preferred way to use a
+// breakpoint, with larger devices inheriting from smaller ones.
+//
+// @param  {mixed} $bp  You can pass in "small", "medium", or "large".
+// Or, a direct pixel value works too (eg. "800px")
+// @return {void}
+@mixin from-breakpoint($bp) {
+  @if ($bp == 'xs') {
+    @content;
+  }
+
+  @else {
+    @if map-has-key($breakpoints, $bp) {
+      $list: map-get($breakpoints, $bp);
+      $bp: nth($list, 1);
+    }
+
+    @media screen and (min-width: #{$bp}) {
+      @content;
+    }
+  }
+}
+
+// Target a specific breakpoint
+@mixin at-breakpoint($bp) {
+  $list: map-get($breakpoints, $bp);
+  $min: nth($list, 1);
+  $max: nth($list, length($list));
+
+  @if ($min == null) {
+    @media screen and (max-width: #{$max - 1}) {
+      @content;
+    }
+  }
+
+  @else if ($max == null) {
+    @media screen and (min-width: #{$min}) {
+      @content;
+    }
+  }
+
+  @else {
+    @media screen and (min-width: #{$min}) and (max-width: #{$max - 1}) {
+      @content;
+    }
+  }
+}
+
+// Get just the pixel value representing one bound of a breakpoint.
+// Defaults to 'upper', as in the upper bound of the given range;
+// will always return the lower bound on 'xl' because the upper one is null.
+// Usage:
+// .page { max-width: breakpoint(large); }
+@function breakpoint($which: xs, $bound: 'upper') {
+  @if not map-has-key($breakpoints, $which) {
+    $valid-bps: map-keys($breakpoints);
+    @error "`#{$which}` is not a valid breakpoint. Try one of these: `#{$valid-bps}`";
+  }
+
+  $bp: map-get($breakpoints, $which);
+  @if ($bound == 'upper') and ($which != 'xl') {
+    @return nth($bp, 2);
+  }
+  @else {
+    @return nth($bp, 1);
+  }
+}
+
+//
+// Typography helpers
+//
+
+@function rem($size) {
+  @return ($size / $font-size-base) * 1rem;
+}
+
+@function baseline-margin($size) {
+  @return rem($size - ($body-text-size * $body-line-height));
+}
+
+// icon helpers
+@mixin core-icon($name: null) {
+  @if $name {
+    &::before {
+      content: core-icon-codepoint($name);
+    }
+  }
+
+  font-family: "TELUS Core Icons";
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Create an underline which doesn't intersect with descenders on lowercase
+// letters.
+@mixin add-skinny-underline($text-color, $bg-color) {
+  background:
+    linear-gradient($bg-color, $bg-color),
+    linear-gradient($bg-color, $bg-color),
+    linear-gradient($text-color, $text-color);
+  background-size:
+    .05em 1px,
+    .05em 1px,
+    1px 1px;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    repeat-x;
+  background-position:
+    0 100%,
+    100% 100%,
+    0 100%;
+  text-decoration: none;
+}
+
+@mixin clear-skinny-underline() {
+  background-size: .05em 1px, .05em 1px, 1px 0;
+}
+
+@mixin dimple() {
+  background-image: radial-gradient(ellipse at top, rgba(150, 150, 150, .1) 0%, rgba(0, 0, 0, 0) 70%);
+  height: 32px;
+}
+
+//
+// Clearfix
+//
+
+@mixin clearfix {
+  &::after,
+  &::before {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin chevron-links($color) {
+  text-decoration: none;
+  color: $color;
+  font-weight: 500;
+
+  &:hover {
+    box-shadow: none;
+
+    // Deprecated 0.16.0
+    .icon {
+      left: 4px;
+    }
+
+    &::after {
+      font-family: "TELUS Core Icons";
+      content: "\f107";
+      left: 4px;
+    }
+  }
+
+  &::after {
+    font-family: "TELUS Core Icons";
+    content: "\f107";
+    position: relative;
+    color: inherit;
+    transition: color .2s, left .3s;
+    left: -2px;
+    margin-left: 10px;
+  }
+
+  // Deprecated 0.16.0
+  .icon {
+    position: relative;
+    color: inherit;
+    transition: color .2s, left .3s;
+    left: -2px;
+    margin-left: 2px;
+  }
+}

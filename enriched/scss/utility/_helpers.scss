@@ -1,0 +1,25 @@
+// Helper classes and extensions
+
+//
+// Accessibility
+//
+
+// Visually hide an element without compromising accessibility.
+%accessible-hide {
+  display: block;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.accessible-hide {
+  @extend %accessible-hide;
+}

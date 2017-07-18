@@ -65,17 +65,9 @@
 .spinner__svg {
   z-index: $zindex-popover;
   animation-name: spinner-rotate;
-  -webkit-animation-name: spinner-rotate;
-  -moz-animation-name: spinner-rotate;
   animation-duration: 1.8s;
-  -webkit-animation-duration: 1.8s;
-  -moz-animation-duration: 1.8s;
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
   animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
   height: 100%;
   width: 100%;
   max-width: 100px;
@@ -84,8 +76,6 @@
 
 .spinner__circle {
     animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
-    -webkit-animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
-    -moz-animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
 }
 
 .spinner__tip {
@@ -100,7 +90,6 @@
 
 @keyframes spinner-rotate {
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
