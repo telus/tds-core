@@ -1,0 +1,148 @@
+// List styles for alphabetical, bulleted, checked, and numbered lists.
+
+//
+// Style placeholders DRY up the list styles so they can be used in a) the
+// core .list block, and b) deprecated classes (.list-alpha, etc.).
+//
+
+%list {
+  padding-left: 40px;
+}
+
+%list--alpha {
+  list-style-type: upper-alpha;
+}
+
+%list--alpha-lower {
+  list-style-type: lower-alpha;
+}
+
+%list--numbered {
+  list-style-type: decimal;
+}
+
+%list--small {
+  font-size: rem(16px);
+  line-height: 1.5;
+}
+
+%list__item {
+  position: relative;
+  margin-bottom: baseline-margin(40px);
+
+  .list__item & {
+    &:first-child {
+      padding-top: baseline-margin(40px);
+    }
+  }
+}
+
+%icon-list__item {
+  &::before {
+    font-family: $font-icons;
+    display: block;
+    position: absolute;
+  }
+}
+
+%list--bulleted__item {
+  &::before {
+    display: block;
+    position: absolute;
+    content: '\002022';
+    color: $color-secondary;
+    left: -21px;
+  }
+
+  %list--bulleted__item & {
+    &::before {
+      content: '\0025e6';
+    }
+  }
+}
+
+%list--checked__item {
+  @extend %icon-list__item;
+
+  &::before {
+    @include core-icon();
+
+    content: core-icon-codepoint(checkmark);
+    left: -33px;
+    color: $color-primary;
+  }
+}
+
+%list--error__item {
+  @extend %icon-list__item;
+
+  &::before {
+    @include core-icon();
+
+    content: core-icon-codepoint(times);
+    left: -33px;
+    color: $color-cardinal;
+  }
+}
+
+//
+// Lists
+//
+
+.list {
+  @extend %list;
+
+  &__item {
+    @extend %list__item;
+  }
+
+  &--alpha {
+    @extend %list--alpha;
+  }
+
+  &--alpha-lower {
+    @extend %list--alpha-lower;
+  }
+
+  &--bulleted {
+    > .list__item {
+      @extend %list--bulleted__item;
+    }
+  }
+
+  &--checked {
+    > .list__item:not(.list__item--no-icon) {
+      @extend %list--checked__item;
+    }
+  }
+
+  &--compact {
+    padding-left: rem(30px);
+
+    &.list--checked,
+    &.list--error {
+      > .list__item::before {
+        left: -29px;
+      }
+    }
+
+    > .list__item {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &--error {
+    > .list__item:not(.list__item--no-icon) {
+      @extend %list--error__item;
+    }
+  }
+
+  &--numbered {
+    @extend %list--numbered;
+  }
+
+  &--small {
+    @extend %list--small;
+  }
+}

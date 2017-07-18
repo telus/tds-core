@@ -11,16 +11,13 @@
     "build:enriched": "cd enriched && npm run build",
     "prestart": "npm run build",
     "start": "concurrently --kill-others \"cd docs && npm run start\" \"cd docs && npm run devServer\"",
-    "install": "npm run install:core && npm run install:enriched && npm run install:docs",
-    "install:core": "cd core && npm install",
-    "install:docs": "cd docs && npm install",
-    "install:enriched": "cd enriched && npm install",
     "deploy:cdn": "npm run deploy:cdn:core && npm run deploy:cdn:enriched",
     "deploy:cdn:core": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module core --environment production --latest",
     "deploy:cdn:enriched": "node scripts/s3deploy.js --bucket cdn.telus-thorium --module enriched --environment production --latest",
     "prerelease": "scripts/prerelease.sh",
     "setup:links": "cd core && npm link && cd ../enriched && npm link && npm link telus-thorium-core && cd ../docs && npm link telus-thorium-core && npm link telus-thorium-enriched",
     "lint": "cd core && npm run lint && cd ../docs && npm run lint && cd ../enriched && npm run lint",
+    "lint:scss": "stylelint 'src/**/*.scss' --config config/.stylelintrc.json",
     "test": "cd enriched && npm run test",
     "editjson": "underscore",
     "precommit": "npm run lint && npm run build && npm run test"
@@ -41,6 +38,9 @@
     "mime-types": "^2.1.13",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.4",
+    "stylelint": "^8.0.0",
+    "stylelint-config-sass-guidelines": "^2.2.0",
+    "stylelint-scss": "^1.5.1",
     "underscore-cli": "^0.2.19"
   },
   "dependencies": {

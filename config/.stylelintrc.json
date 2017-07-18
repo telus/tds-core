@@ -1,0 +1,21 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+      "number-leading-zero": null,
+      "string-quotes": null,
+      "order/properties-alphabetical-order": null,
+      "scss/dollar-variable-colon-space-after": null,
+      "scss/percent-placeholder-pattern": null,
+      "scss/selector-no-redundant-nesting-selector": null,
+      "max-nesting-depth": null,
+      "selector-class-pattern": null,
+      "color-named": null,
+      "declaration-property-value-blacklist": null,
+      "selector-no-vendor-prefix": null,
+      "property-no-vendor-prefix": null,
+      "selector-no-qualifying-type": null
+  }
+}
