@@ -1,3 +1,5 @@
+.DS_Store
+
 # Node.js dependencies, files, & directories
 .npmrc
 node_modules

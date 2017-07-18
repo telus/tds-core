@@ -5,6 +5,13 @@
   "license": "UNLICENSED",
   "main": "dist/tds.cjs.js",
   "module": "dist/tds.es.js",
+  "files": [
+    "dist",
+    "src",
+    "CHANGELOG.md",
+    "README.md",
+    "UPGRADING.md"
+  ],
   "scripts": {
     "precommit": "yarn lint && yarn test && yarn build",
     "prerelease": "scripts/prerelease.sh",
