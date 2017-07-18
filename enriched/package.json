@@ -17,7 +17,9 @@
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "test:u": "npm run test -- -u",
-    "build-new": "rollup -c && cp ./src/blocks/Headline/wave_header_default.png ./dist/"
+    "build-new": "yarn build-new:js && yarn build-new:scss",
+    "build-new:js": "rollup -c && cp ./src/blocks/Headline/wave_header_default.png ./dist/",
+    "build-new:scss": "sh ./scripts/cp-scss.sh"
   },
   "dependencies": {
     "@telusdigital/redux-contentful": "^2.2.1",
