@@ -1,0 +1,13 @@
+.example {
+  &--inverted {
+    padding: 2rem;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+  }
+}

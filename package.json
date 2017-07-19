@@ -22,11 +22,11 @@
     "test": "jest --config config/.jestrc.json",
     "test:watch": "yarn test -- --watch",
     "test:u": "yarn test -- -u",
-    "build": "yarn build:js && yarn build:scss",
+    "build": "yarn build:js && yarn build:scss && yarn build:styleguide",
     "build:js": "rollup -c config/rollup.config.js && cp ./src/components/Headline/wave_header_default.png ./dist/",
     "build:scss": "sh ./scripts/cp-scss.sh",
-    "build:styleguidist": "styleguidist build --config config/styleguide.config.js",
-    "start:styleguidist": "styleguidist server --config config/styleguide.config.js"
+    "build:styleguide": "styleguidist build --config config/styleguide.config.js",
+    "start:styleguide": "styleguidist server --config config/styleguide.config.js"
   },
   "repository": {
     "type": "git",
