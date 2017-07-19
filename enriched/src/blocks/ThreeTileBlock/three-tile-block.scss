@@ -1,0 +1,36 @@
+@import '../../../styles/core';
+
+.three-tile-block {
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  @include from-breakpoint(small) {
+    margin-top: 56px;
+    margin-bottom: 64px;
+  }
+}
+
+.three-tile-block__headline {
+  margin-bottom: 8px;
+
+  @include from-breakpoint(small) {
+    margin-bottom: 24px;
+  }
+}
+
+.three-tile-block__list {
+  @include from-breakpoint(small) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+
+    &.three-col {
+      .three-tile-block__item {
+        width: 33.333%;
+      }
+    }
+  }
+}
