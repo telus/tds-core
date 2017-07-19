@@ -22,12 +22,16 @@ module.exports = {
         {
           name: 'Buttons',
           content: '../docs-new/elements/buttons.md'
+        },
+        {
+          name: 'Links',
+          content: '../docs-new/elements/links.md'
         }
       ]
     },
     {
       name: 'Components',
-      components: '../src/components/**/*.jsx',
+      components: '../src/components/**/*.jsx'
     }
   ],
 
@@ -53,6 +57,11 @@ module.exports = {
           use: 'url-loader?mimetype=image/png'
         }
       ]
+    }
+  },
+  theme: {
+    fontFamily: {
+      base: ['TELUS-Web', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
     }
   }
 };
