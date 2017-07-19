@@ -9,7 +9,9 @@ const TileImageTextLink = ({ content, buttonText, className }) => {
   return (
     <div className={`tile-image-text-link ${className}`}>
       <a tabIndex={-1} href={content.url}>
-        <img src={content.image.file.url} alt={content.image.description} />
+        <img
+          className="tile-image-text-link__image"
+          src={content.image.file.url} alt={content.image.description} />
       </a>
       {
         content.title &&
