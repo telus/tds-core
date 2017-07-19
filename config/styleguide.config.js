@@ -1,15 +1,32 @@
+const path = require('path');
+
+const version = require('../package.json').version;
+
 module.exports = {
+  title: `TDS v${version}`,
+
   components: '../src/components/**/*.jsx',
+  skipComponentsWithoutExample: true,
+  getComponentPathLine(componentPath) {
+    const name = path.basename(componentPath, '.jsx');
+
+    return `import { ${name} } from '@telusdigital/tds';`;
+  },
+
+  showUsage: true,
+  showCode: true,
+
+  require: [
+    path.resolve("src/scss/global.scss")
+  ],
   webpackConfig: {
     module: {
       loaders: [
-        // Babel loader, will use your project’s .babelrc
         {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           use: 'babel-loader'
         },
-        // Other loaders that are needed for your components
         {
           test: /\.scss$/,
           use: ['style-loader', 'css-loader', 'sass-loader']

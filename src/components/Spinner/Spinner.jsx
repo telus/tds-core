@@ -4,6 +4,9 @@ import classnames from 'classnames';
 
 import './Spinner.scss';
 
+/**
+ * A waiting indicator.
+ */
 class Spinner extends Component {
   constructor(props) {
     super(props);
@@ -97,10 +100,27 @@ class Spinner extends Component {
 }
 
 Spinner.propTypes = {
+  /**
+   * Additional class names to add custom styling to the container while in embedded mode.
+   */
   wrapperClassNames: PropTypes.string,
+  /**
+   * A message to display along with the spinner animation.
+   */
   tip: PropTypes.string,
+  /**
+   * Whether or not to display the component.
+   */
   spinning: PropTypes.bool,
-  fullScreen: PropTypes.bool
+  /**
+   * Whether or not to display as a full screen overlay.
+   */
+  fullScreen: PropTypes.bool,
+  /**
+   * Content to be overlaid when the spinner is active. Can be text, any HTML element,
+   * or any component.
+   */
+  children: PropTypes.node
 };
 
 Spinner.defaultProps = {
