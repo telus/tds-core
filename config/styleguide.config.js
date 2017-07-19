@@ -26,6 +26,10 @@ module.exports = {
         {
           name: 'Links',
           content: '../docs-new/elements/links.md'
+        },
+        {
+          name: 'Colours',
+          content: '../docs-new/elements/colours.md'
         }
       ]
     },
