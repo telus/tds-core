@@ -23,3 +23,4 @@ docs/src/assets/fonts/*
 !docs/src/assets/fonts/.gitkeep
 docs/src/assets/downloads
 !docs/src/assets/downloads/.gitkeep
+styleguide
