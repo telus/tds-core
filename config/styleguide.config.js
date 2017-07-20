@@ -30,6 +30,10 @@ module.exports = {
         {
           name: 'Colours',
           content: '../docs-new/elements/colours.md'
+        },
+        {
+          name: 'Forms',
+          content: '../docs-new/elements/forms.md'
         }
       ]
     },
@@ -66,6 +70,10 @@ module.exports = {
   theme: {
     fontFamily: {
       base: ['TELUS-Web', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
+    },
+    color: {
+      link: '#4B286D',
+      linkHover: '#54595F'
     }
   }
 };
