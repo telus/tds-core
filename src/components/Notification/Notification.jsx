@@ -10,6 +10,9 @@ const ErrorIcon = () => (
   <i className="icon icon-core-exclamation-point-circle c-notification__icon" />
 );
 
+/**
+  * A banner to highlight important notices.
+  */
 const Notification = ({ className, variant, children, ...rest }) => {
   if (className) {
     warn('Notification', 'Custom CSS classes are deprecated. This component does not support custom styling.');
@@ -37,13 +40,23 @@ const Notification = ({ className, variant, children, ...rest }) => {
 };
 
 Notification.propTypes = {
+  /**
+    * (DEPRECATED) Additional css classes
+    */
   className: PropTypes.string,
+  /**
+    * Adds a background color variation to the component
+    */
   variant: PropTypes.oneOf([
     'instructional',
     'branded',
     'success',
     'error'
   ]),
+  /**
+   * Content to be displayed within the Notification banner. Can be text, any HTML element,
+   * or any component.
+   */
   children: PropTypes.node.isRequired
 };
 
