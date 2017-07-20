@@ -10,4 +10,15 @@
   &--secondary {
     background-color: $color-secondary;
   }
+
+  .grid-row {
+    margin-bottom: 2rem;
+
+    > div {
+      background: $color-white-lilac;
+      border: solid 1px $color-secondary;
+      padding-top: .5em;
+      padding-bottom: .5em;
+    }
+  }
 }

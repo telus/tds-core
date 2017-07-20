@@ -36,6 +36,10 @@ module.exports = {
           content: '../docs-new/elements/forms.md'
         },
         {
+          name: 'Grid',
+          content: '../docs-new/elements/grid.md'
+        },
+        {
           name: 'Typography',
           content: '../docs-new/elements/typography.md'
         }
