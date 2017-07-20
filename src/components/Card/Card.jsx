@@ -8,7 +8,8 @@ import { warn } from '../../deprecate';
 import './Card.scss';
 
 /**
- * A card is a container that serves as an entry point to more detailed information. A card's width will match its parent.
+ * A card is a container that serves as an entry point to more detailed information.
+ * A card's width will match its parent.
  */
 const Card = ({ className, children, ...rest }) => {
   if (className) {

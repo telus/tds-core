@@ -40,6 +40,10 @@ module.exports = {
           content: '../docs-new/elements/grid.md'
         },
         {
+          name: 'Lists',
+          content: '../docs-new/elements/lists.md'
+        },
+        {
           name: 'Typography',
           content: '../docs-new/elements/typography.md'
         }
