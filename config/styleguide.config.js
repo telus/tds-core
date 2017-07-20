@@ -34,6 +34,10 @@ module.exports = {
         {
           name: 'Forms',
           content: '../docs-new/elements/forms.md'
+        },
+        {
+          name: 'Typography',
+          content: '../docs-new/elements/typography.md'
         }
       ]
     },
