@@ -46,6 +46,18 @@ module.exports = {
         {
           name: 'Typography',
           content: '../docs-new/elements/typography.md'
+        },
+        {
+          name: 'Utility Icons',
+          content: '../docs-new/elements/utility-icons.md'
+        },
+        {
+          name: 'Utility Mixins',
+          content: '../docs-new/elements/utility-mixins.md'
+        },
+        {
+          name: 'Design Tokens',
+          content: '../docs-new/elements/design-tokens.md'
         }
       ]
     },
