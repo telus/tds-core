@@ -46,6 +46,10 @@ module.exports = {
         {
           name: 'Typography',
           content: '../docs-new/elements/typography.md'
+        },
+        {
+          name: 'Utility Icons',
+          content: '../docs-new/elements/utility-icons.md'
         }
       ]
     },
