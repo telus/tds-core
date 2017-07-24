@@ -1,0 +1,115 @@
+@import '../../../styles/core';
+
+.card-product {
+  @include from-breakpoint(medium) {
+    position: relative;
+    padding: 40px;
+    background: #fff;
+    border-radius: 2.5px;
+    box-shadow: 0 0 2px 0 rgba(197, 199, 200, 0.31), 0 10px 20px 0 rgba(197, 199, 200, 0.5);
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.card-product--right {
+  @include from-breakpoint(medium) {
+    text-align: right;
+
+    .card-product__product {
+      text-align: right;
+    }
+  }
+}
+
+.card-product--left {
+  @include from-breakpoint(medium) {
+    text-align: left;
+
+    .card-product__product {
+      text-align: left;
+    }
+  }
+}
+
+.card-product__product,
+.card-product__priceDetails {
+  @include from-breakpoint(medium) {
+    display: block;
+    float: right;
+  }
+}
+
+.card-product__product {
+  img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+  @include from-breakpoint(medium) {
+    float: left;
+    text-align: center;
+    width: 20%;
+    img {
+      max-height: 140px;
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+  }
+  @include from-breakpoint(large) {
+    width: 25%;
+  }
+}
+
+.card-product__priceDetails {
+  @include from-breakpoint(medium) {
+    width: 80%;
+  }
+  @include from-breakpoint(large) {
+    width: 75%;
+  }
+}
+
+.card-product__sale {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  @include from-breakpoint(medium) {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.18;
+    color: $color-grape;
+  }
+}
+
+.card-product__sale-price {
+  margin-bottom: 0;
+
+  @include from-breakpoint(medium) {
+    font-size: 2.75rem;
+    line-height: 1.18;
+    color: $color-grape;
+  }
+}
+
+.card-product__price {
+  color: $color-raven;
+  @include from-breakpoint(medium) {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $color-grape;
+  }
+}
+
+.card-product__currency {
+  display: inline-block;
+  padding: 1.5em 3px 0;
+  vertical-align: top;
+  font-size: .34em;
+}
