@@ -1,98 +1,80 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+# TELUS Design System [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+TDS, the TELUS Design system is a set of living guidelines that communicates our brand promise through our digital experiences. 
+It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for 
+digital design guidelines, code patterns and UI elements.
+
+TDS usage, documentation & examples: <http://tds.telus.digital>
 
 
-# TDS
+## Installation
 
-TDS, the TELUS Design system is a set of living guidelines that communicates our brand promise through our digital’ experiences. It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for digital design guidelines, code patterns and UI elements.
+_If you are using the [isomorphic-starter-kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), these steps should already be done._ 
 
-*TDS usage, documentation & examples:* http://cdn.telus-thorium-doc-production.s3-website-us-east-1.amazonaws.com/
+```sh
+yarn add @telusdigital/tds
 
+npm install @telusdigital/tds --save
+```
 
-## Table of Contents
+## Usage
 
-* [Contributor Quick Start](#contributor-quick-start)
-* [Building and Maintaining the Icon Font](#building-and-maintaining-the-icon-font)
-* [Deploying a release](#deploying-a-release)
+### 1. Import the TDS styles
 
+First, import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles and the 
+component styles. Webpack will bundle the TDS styles with your application specific styles.
 
-## Contributor Quick Start
+```js
+// index.js
 
-Install [commitizen](https://github.com/commitizen/cz-cli) globally to be prompted to fill in any required fields to properly identify the type of commit and write a proper commit message.
+import React from 'react';
+import { render } from 'react-dom';
 
-    npm install -g commitizen
+import App from './App';
 
-Clone this repository
+import '@telusdigital/tds/dist/tds.css'
 
-    git clone git@github.com:telusdigital/tds.git
-    cd tds
+render(
+	<App />,
+	document.getElementById("root")
+);
+```
 
-Symlink the core & enriched modules so changes are immediately picked up by your local documentation site instance.
+### 2. Use TDS Components 
 
-    npm run setup:links
+Now, use TDS components in your application components.
 
-Run `init-npm.sh` so you can properly use the `redux-contentful` private package for legals
+```js
+// MyLoadingCard.js
 
-    ./enriched/scripts/init-npm.sh
+import React from 'react';
 
-Install the rest of the projects' dependencies and start up your local documentation site.
+import {Card, Spinner} from '@telusdigital/tds';
 
-    npm install
-    npm start
+const MyLoadingCard = ({loading, children}) => (
+  <div>
+    {loading && <Spinner spinning={spinning} tip="Loading..." />}
+    
+    <Card>
+      {children}
+    </Card>
+  </div>
+);
+```
 
-The documentation site will be available at [http://localhost:8081](http://localhost:8081) with Webpack Hot Module Reloading enabled.
+### 3. Use TDS Sass variables and mixins
 
-Ready to commit changes? Validate your code by running the linters & tests:
+Finally, use TDS Sass variables and mixins in your Sass files. Only add these imports into files that use the provided
+variables, functions, or mixins.
 
-    npm run lint
-    npm test
+```scss
+# MyLoadingCard.scss
 
-Or even better, setup a [pre-commit git hook](https://github.com/telusdigital/tds/wiki/pre-commit-hook-for-linting).
+@import '~@telusdigital/tds/dist/helpers';
+@import '~@telusdigital/tds/dist/mixins';
+@import '~@telusdigital/tds/dist/variables';
 
-To commit your changes use the command
-
-    git cz
-
-## Building and Maintaining the Icon Font
-
-Core icons are implemented as an icon font. The source file is at `./designs/core-icons.glyphs`
-
-The webfont build process requires [ttfautohint](https://www.freetype.org/ttfautohint/#download).
-
-### Install ttfautohint on OS X
-
-    brew install ttfautohint --with-python
-
-### Install ttfautohint on Linux
-
-    sudo apt-get install ttfautohint
-
-### Install ttfautohint on Windows
-
-Download the [Windows Binary](https://www.freetype.org/ttfautohint/#download) from Free Type's website.
-
-### Icon webfont change process
-
-1. Make a change or addition to `./designs/core-icons.glyphs`
-2. Export an OTF file to `./core/fonts/core-icons.otf`
-3. Execute `npm install` in the `./icons` module
-4. Execute `npm run build:icons` in the `./icons` module
-
-This process creates EOT, TTF, WOFF and WOFF2 files from `./core/fonts/core-icons.otf` and saves them in the same directory. These should be committed to Git (including the source OTF) and sent to master via pull request.
-
-## Deploying a release
-
-1. Use the `telus-thorium--release` Jenkins job
-2. Enter the new version number (ex: 0.7.0) as a build parameter, when prompted
-3. Execute the job
-
-Jenkins will then...
-
-* Get the latest code from `master`
-* Run the linter and unit tests
-* Build the project
-* Generate the changelog
-* Update `package.json` versions to the number you gave
-* Commit those changes
-* Create a version tag and release branch in Git
-* Upload the CDN artifact(s) to S3
-* Publish the NPM module
+.my-loading-card {
+  color: $color-accessible-green;
+}
+```
