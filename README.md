@@ -1,6 +1,6 @@
 # TELUS Design System [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-TDS, the TELUS Design system is a set of living guidelines that communicates our brand promise through our digital experiences. 
+TDS, the TELUS Design System is a set of living guidelines that communicates our brand promise through our digital experiences. 
 It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for 
 digital design guidelines, code patterns and UI elements.
 
@@ -14,6 +14,7 @@ _If you are using the [isomorphic-starter-kit](https://github.com/telusdigital/t
 ```sh
 yarn add @telusdigital/tds
 
+# Or, with npm :)
 npm install @telusdigital/tds --save
 ```
 
@@ -35,8 +36,8 @@ import App from './App';
 import '@telusdigital/tds/dist/tds.css'
 
 render(
-	<App />,
-	document.getElementById("root")
+  <App />,
+  document.getElementById("root")
 );
 ```
 
@@ -53,7 +54,7 @@ import {Card, Spinner} from '@telusdigital/tds';
 
 const MyLoadingCard = ({loading, children}) => (
   <div>
-    {loading && <Spinner spinning={spinning} tip="Loading..." />}
+    {loading && <Spinner spinning={true} tip="Loading..." />}
     
     <Card>
       {children}
@@ -68,7 +69,7 @@ Finally, use TDS Sass variables and mixins in your Sass files. Only add these im
 variables, functions, or mixins.
 
 ```scss
-# MyLoadingCard.scss
+// MyLoadingCard.scss
 
 @import '~@telusdigital/tds/dist/helpers';
 @import '~@telusdigital/tds/dist/mixins';
