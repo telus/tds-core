@@ -17,6 +17,16 @@ module.exports = {
 
   sections: [
     {
+      name: 'TELUS Design System',
+      content: '../docs-new/intro/overview.md',
+      sections: [
+        {
+          name: 'Releases',
+          content: '../docs-new/intro/releases.md'
+        }
+      ]
+    },
+    {
       name: 'Foundational Elements',
       sections: [
         {

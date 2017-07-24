@@ -1,5 +1,14 @@
 # Upgrading Guide
 
+### DEPRECATION NOTICE (24 July 2017)
+
+This document will no longer be maintained and may be removed in the future. We have moved to using [Github Release Notes](https://github.com/telusdigital/tds/releases)
+to communicate changes in releases, including deprecated features and breaking changes.
+
+* For a summary of important changes in a release, including any upgrade instructions, read the [Release Notes](https://github.com/telusdigital/tds/releases).
+* For a comprehensive list of the important changes in a release, read the [Changelog](https://github.com/telusdigital/tds/blob/master/CHANGELOG.md).
+
+
 ## Upgrading to v0.16.x
 
 ### NEW CDN files
