@@ -1,38 +1,39 @@
-
 ## Minimal usage
 
 ```
-<Notification>Lorem ipsum dolor sit amer.</Notification>
-```
-## Branded
-
-```
-<Notification variant="branded">Lorem ipsum dolor sit amer.</Notification>
+<Notification>Login to modify your account preferences.</Notification>
 ```
 
-## Success
+## Variants
 
-Use to denote a successful transaction.
+Use the `variant` prop to alter the Notification's appearance.
+
+
+### Branded
 
 ```
-<Notification variant="success">Lorem ipsum dolor sit amer.</Notification>
+<Notification variant="branded">Welcome to TELUS.</Notification>
 ```
 
-## Error
+### Success
 
-Use to denote an error or a failed transaction.
+```
+<Notification variant="success">Thank you for registering.</Notification>
+```
+
+### Error
 
 ```
 <Notification variant="error">
-  <p>Looks like our registration system is temporarily down. You'll need to come back another time to register for My Account.</p>
-  <p>Lorem ipsum dolor sit amer.</p>
+  <p>Looks like our registration system is temporarily down.</p>
+  <p>Come back another time to register for My Account.</p>
 </Notification>
 ```
 
-## Instructional
-
-This is the same styling as default.
+### Instructional
 
 ```
-<Notification variant="instructional">Lorem ipsum dolor sit amer.</Notification>
+<Notification variant="instructional">
+  Fill out the form below, then click <em>"Next"</em> to continue.
+</Notification>
 ```

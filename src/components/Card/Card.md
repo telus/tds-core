@@ -1,5 +1,3 @@
-## Minimal usage
-
 ```
 <Card>
   <h2>Specifications</h2>

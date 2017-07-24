@@ -8,8 +8,7 @@ import { warn } from '../../deprecate';
 import './Card.scss';
 
 /**
- * A card is a container that serves as an entry point to more detailed information.
- * A card's width will match its parent.
+ * A container that serves as an entry point to more detailed information.
  */
 const Card = ({ className, children, ...rest }) => {
   if (className) {
@@ -29,11 +28,12 @@ const Card = ({ className, children, ...rest }) => {
 
 Card.propTypes = {
   /**
-   * Pass a custom class.
+   * One or more CSS class names separated by spaces to append onto the container.
+   * @deprecated since v0.18.0. Card will no longer support custom styling.
    */
   className: PropTypes.string,
   /**
-   * Child elements.
+   * The Card's content. Can be text, any HTML element, or any component.
    */
   children: PropTypes.node.isRequired
 };
