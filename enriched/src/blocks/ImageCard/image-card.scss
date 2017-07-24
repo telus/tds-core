@@ -1,0 +1,65 @@
+@import '../../../styles/core';
+
+.image-card--right {
+  .image-card__content {
+    @include from-breakpoint(medium) {
+      float: right;
+    }
+  }
+}
+
+.image-card--left {
+  .image-card__content {
+    @include from-breakpoint(medium) {
+      float: left;
+    }
+  }
+}
+
+.image-card__content {
+  @include from-breakpoint(medium) {
+    width: 75%;
+    min-width: 540px;
+  }
+  @include from-breakpoint(large) {
+    width: 50%;
+    min-width: 575px;
+  }
+}
+
+.image-card__block {
+  @include at-breakpoint(xs) {
+    background: none !important;
+  }
+  @include at-breakpoint(small) {
+    background: none !important;
+  }
+
+  @include from-breakpoint(medium) {
+    position: relative;
+    padding: 56px 64px 48px;
+    background-size: cover;
+    background-position: left center;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+.image-card__image {
+  display: block;
+
+  @include from-breakpoint(medium) {
+    display: none;
+  }
+}
+
+.image-card__headline {
+  margin-bottom: 8px;
+
+  @include from-breakpoint(small) {
+    margin-bottom: 24px;
+  }
+}
