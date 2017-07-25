@@ -1,0 +1,11 @@
+.idea
+.git
+
+node_modules/
+
+designs/
+dist/
+# Temporary until we remove the old docs
+docs/
+icons/
+styleguide/
