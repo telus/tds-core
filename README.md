@@ -1,6 +1,6 @@
 # TELUS Design System [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-TDS, the TELUS Design System is a set of living guidelines that communicates our brand promise through our digital experiences. 
+The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences. 
 It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for 
 digital design guidelines, code patterns and UI elements.
 
@@ -50,7 +50,7 @@ Now, use TDS components in your application components.
 
 import React from 'react';
 
-import {Card, Spinner} from '@telusdigital/tds';
+import { Card, Spinner } from '@telusdigital/tds';
 
 const MyLoadingCard = ({loading, children}) => (
   <div>
