@@ -8,7 +8,7 @@ import './card-product.scss';
 const CardProduct = ({ content, breakpoint, globalContent, locale }) => {
   const formatCurrency = (lang, price, callback) => {
     // If english, return standard price, otherwise reformat to follow French grammar.
-    const currency = lang === 'en' ? `$${price}` : `${price.toString().replace('.', ',')} $`;
+    const currency = lang === 'en' ? `${price}` : `${price.toString().replace('.', ',')}`;
 
     // Support optional callback
     if (callback) {
@@ -16,14 +16,6 @@ const CardProduct = ({ content, breakpoint, globalContent, locale }) => {
     }
 
     return currency;
-  };
-
-  const superscriptPriceSign = (elem) => {
-    // If the dollar sign is at the end of the price we can confirm it's
-    // French pricing, which has an extra space that needs to be removed.
-    if (elem.slice(-1) === '$') return { __html: elem.replace(' $', '<sup class="card-product__currency">$</sup>') };
-
-    return { __html: elem.replace('$', '<sup class="card-product__currency">$</sup>') };
   };
 
   return (
@@ -40,21 +32,38 @@ const CardProduct = ({ content, breakpoint, globalContent, locale }) => {
         <h4 tabIndex="0">{content.productName}</h4>
         <p tabIndex="0" className="card-product__sale-price">
           {globalContent.nowText}&nbsp;
-          <span
-            dangerouslySetInnerHTML={
+          <span>
+            {
+              locale.lang === 'en' &&
+              <sup className="currency">$</sup>
+            }
+            {
               content.salePrice ? (
-                formatCurrency(locale.lang, content.salePrice, superscriptPriceSign)
+                formatCurrency(locale.lang, content.salePrice)
               ) : (
-                formatCurrency(locale.lang, content.basePrice, superscriptPriceSign)
+                formatCurrency(locale.lang, content.basePrice)
               )
-            } />
+            }
+            {
+              locale.lang === 'fr' &&
+              <sup className="currency">$</sup>
+            }
+          </span>
         </p>
         {
           content.salePrice &&
           <p className="card-product__price text--small">
             <strong>{globalContent.regularPrice}: </strong>
             <s>
+              {
+                locale.lang === 'en' &&
+                <span>$</span>
+              }
               {formatCurrency(locale.lang, content.basePrice)}
+              {
+                locale.lang === 'fr' &&
+                <span> $</span>
+              }
             </s>
           </p>
         }
