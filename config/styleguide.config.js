@@ -23,6 +23,10 @@ module.exports = {
         {
           name: 'Releases',
           content: '../docs-new/intro/releases.md'
+        },
+        {
+          name: 'Contributing',
+          content: '../docs-new/intro/contributions.md'
         }
       ]
     },
