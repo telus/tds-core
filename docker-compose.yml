@@ -1,0 +1,7 @@
+version: '3'
+services:
+  lib:
+    container_name: tds
+    build: .
+    ports:
+      - '6060:6060'
