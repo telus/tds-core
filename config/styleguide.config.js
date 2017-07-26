@@ -85,6 +85,8 @@ module.exports = {
     }
   ],
 
+  template: path.resolve('docs-new/index.html'),
+  assetsDir: path.resolve('docs-new/assets/'),
   styleguideDir: path.resolve('styleguide'),
   require: [
     path.resolve('src/scss/global.scss'),
