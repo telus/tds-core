@@ -10,7 +10,6 @@
     "src",
     "CHANGELOG.md",
     "CONTRIBUTING.md",
-    "README.md",
     "UPGRADING.md"
   ],
   "scripts": {
