@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Step, { currentStatusOptions } from './Step';
+
+import Step from './Step';
 
 import './Steps.scss';
 
+/**
+ * Show the current position in a sequence of steps.
+ */
 class Steps extends Component {
 
-  getStatus(current, status, index) {
+  getStatus(current, index) {
     if (index < current) {
       return 'completed';
     } else if (index === current) {
@@ -18,7 +22,7 @@ class Steps extends Component {
   }
 
   render() {
-    const { children, className, current, currentStatus } = this.props;
+    const { children, className, current } = this.props;
     const cls = classNames('step-tracker', className);
     const totalSteps = children.length;
 
@@ -39,7 +43,7 @@ class Steps extends Component {
           {
             React.Children.map(children, (element, index) => {
               const stepNumber = index + 1;
-              const status = this.getStatus(current, currentStatus, index);
+              const status = this.getStatus(current, index);
               const props = {
                 stepNumber,
                 status
@@ -59,16 +63,29 @@ class Steps extends Component {
 }
 
 Steps.propTypes = {
+  /**
+   * The active step.
+   */
   current: PropTypes.number,
-  currentStatus: PropTypes.oneOf(currentStatusOptions),
+  /**
+   * The steps. Must be TDS `Step` components.
+   *
+   * @see See [Step](#step)
+   */
   children: PropTypes.node,
+  /**
+   * One or more CSS class names separated by spaces to append onto the container.
+   * Don't advertise as we plan on removing this soon.
+   *
+   * @ignore
+   */
   className: PropTypes.string
 };
 
 Steps.defaultProps = {
-  current: 0,
-  currentStatus: 'processing'
+  current: 0
 };
 
 Steps.Step = Step;
+
 export default Steps;

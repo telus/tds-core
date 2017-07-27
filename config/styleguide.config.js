@@ -7,7 +7,12 @@ module.exports = {
 
   skipComponentsWithoutExample: true,
   getComponentPathLine(componentPath) {
-    const name = path.basename(componentPath, '.jsx');
+    let name = path.basename(componentPath, '.jsx');
+
+    // Steps has name-spaced sub-components
+    if (path.dirname(componentPath).includes('Steps')) {
+      name = 'Steps';
+    }
 
     return `import { ${name} } from '@telusdigital/tds';`;
   },

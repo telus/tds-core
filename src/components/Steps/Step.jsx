@@ -2,8 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-export const currentStatusOptions = ['waiting', 'processing', 'completed'];
-
+/**
+ * A single step of a Steps component.
+ *
+ * _This component can only be used as a child of `Steps`, and must be accessed as a
+ * name-spaced component: `Steps.Step`._
+ *
+ * @see See [Steps](#steps) for usage.
+ */
 const Step = ({ label, status, stepNumber }) => {
   const cls = classNames('step-tracker__step', {
     'step-tracker__step--completed': status === 'completed',
@@ -21,8 +27,21 @@ const Step = ({ label, status, stepNumber }) => {
 };
 
 Step.propTypes = {
+  /**
+   * The label.
+   */
   label: PropTypes.string.isRequired,
-  status: PropTypes.oneOf(currentStatusOptions),
+  /**
+   * Each step's status is determined by its parent Steps component.
+   *
+   * @ignore
+   */
+  status: PropTypes.oneOf(['waiting', 'processing', 'completed']),
+  /**
+   * Each step's status is determined by its parent Steps component.
+   *
+   * @ignore
+   */
   stepNumber: PropTypes.number
 };
 
