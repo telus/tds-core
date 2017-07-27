@@ -71,9 +71,9 @@ variables, functions, or mixins.
 ```scss
 // MyLoadingCard.scss
 
-@import '~@telusdigital/tds/dist/helpers';
-@import '~@telusdigital/tds/dist/mixins';
-@import '~@telusdigital/tds/dist/variables';
+@import '~@telusdigital/tds/dist/scss/helpers';
+@import '~@telusdigital/tds/dist/scss/mixins';
+@import '~@telusdigital/tds/dist/scss/variables';
 
 .my-loading-card {
   color: $color-accessible-green;
