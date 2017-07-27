@@ -15,6 +15,10 @@ $body-medium-line-height: 1.5; // 24px
 $body-small-text-size: 14px;
 $body-small-line-height: 1.71; // 24px
 
+@mixin helvetica-neue-medium-65 {
+  font-weight: 700;
+}
+
 @function rem($size) {
   @return ($size / $font-size-base) * 1rem;
 }

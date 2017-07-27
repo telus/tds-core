@@ -1,5 +1,6 @@
 @import '../../scss/settings/colours';
 @import '../../scss/settings/spacing';
+@import '../../scss/settings/typography';
 @import '../../scss/utility/responsive';
 
 $primary-bg-color: $color-primary;
@@ -17,10 +18,11 @@ $text-color: $color-white;
 }
 
 .button {
+  @include helvetica-neue-medium-65;
+
   display: block;
   width: 100%;
 
-  //padding: 16px 32px;
   padding: $spacing-base $spacing-wide;
 
   border: 0;
@@ -28,12 +30,8 @@ $text-color: $color-white;
 
   transition: background .2s;
 
-  // Use some kind of typography mixin.
-  // Need to use the TELUS-Web font too
-  font-size: 1rem; // rem(16px)
-  font-weight: 700;
-  letter-spacing: .2px;
-  line-height: 1.166666;
+  font-family: $font-telus;
+  font-size: 1rem;
 
   cursor: pointer;
 }
