@@ -1,0 +1,138 @@
+@import '../../scss/settings/colours';
+@import '../../scss/settings/spacing';
+@import '../../scss/utility/responsive';
+
+$primary-bg-color: $color-primary;
+$secondary-bg-color: $color-secondary;
+$text-color: $color-white;
+
+
+@mixin text-color-outline($text-color) {
+  background-color: transparent;
+  // Don't add a border because it changes the size of the button.
+  // Box-shadow gives a "free" border using the text color.
+  box-shadow: 0 0 0 1px;
+
+  color: $text-color;
+}
+
+.button {
+  display: block;
+  width: 100%;
+
+  //padding: 16px 32px;
+  padding: $spacing-base $spacing-wide;
+
+  border: 0;
+  border-radius: 4px;
+
+  transition: background .2s;
+
+  // Use some kind of typography mixin.
+  // Need to use the TELUS-Web font too
+  font-size: 1rem; // rem(16px)
+  font-weight: 700;
+  letter-spacing: .2px;
+  line-height: 1.166666;
+
+  cursor: pointer;
+}
+
+@include from-breakpoint(medium) {
+  .button {
+    display: inline-block;
+    width: auto;
+    min-width: 180px;
+  }
+}
+
+.inverted {
+  background-color: $text-color;
+
+  &:hover {
+    @include text-color-outline($text-color)
+  }
+}
+
+.invertedOutlined {
+  background-color: transparent;
+  color: $text-color;
+
+  &:hover {
+    background-color: $text-color;
+    box-shadow: 0 0 0 1px;
+  }
+}
+
+
+.primary {
+  composes: button;
+
+  background-color: $primary-bg-color;
+  color: $text-color;
+
+  &:hover {
+    @include text-color-outline($primary-bg-color);
+  }
+}
+
+.secondary {
+  composes: button;
+
+  background-color: $secondary-bg-color;
+  color: $text-color;
+
+  &:hover {
+    @include text-color-outline($secondary-bg-color);
+  }
+}
+
+.primaryOutlined {
+  composes: button;
+
+  @include text-color-outline($primary-bg-color);
+
+  &:hover {
+    background-color: $primary-bg-color;
+    color: $text-color;
+  }
+}
+
+.secondaryOutlined {
+  composes: button;
+
+  @include text-color-outline($secondary-bg-color);
+
+  &:hover {
+    background-color: $secondary-bg-color;
+    color: $text-color;
+  }
+}
+
+.primaryInverted {
+  composes: inverted button;
+
+  color: $primary-bg-color;
+}
+
+.secondaryInverted {
+  composes: inverted button;
+
+  color: $secondary-bg-color;
+}
+
+.primaryInvertedOutlined {
+  composes: invertedOutlined button;
+
+  &:hover {
+    color: $primary-bg-color;
+  }
+}
+
+.secondaryInvertedOutlined {
+  composes: invertedOutlined button;
+
+  &:hover {
+    color: $secondary-bg-color;
+  }
+}

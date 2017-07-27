@@ -16,7 +16,7 @@ describe('<Card />', () => {
     deprecate.warn.restore();
   });
 
-  it('renders correctly', () => {
+  it('renders', () => {
     const card = shallow(<Card>Some content</Card>);
 
     expect(toJson(card)).toMatchSnapshot();

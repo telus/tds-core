@@ -101,7 +101,22 @@ module.exports = {
           use: 'babel-loader'
         },
         {
+          test: /\.modules.scss$/,
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+                importLoaders: 1, // Number of loaders applied before CSS loader
+              }
+            },
+            'sass-loader'
+          ]
+        },
+        {
           test: /\.scss$/,
+          exclude: /\.modules.scss$/,
           use: ['style-loader', 'css-loader', 'sass-loader']
         },
         {
