@@ -1,0 +1,24 @@
+$font-sans: Arial, sans-serif;
+$font-serif: Georgia, serif;
+$font-telus: 'TELUS-Web', 'Helvetica Neue', Helvetica, $font-sans;
+$font-icons: 'TELUS Core Icons';
+
+$font-size-base: 16px;
+$font-line-height: 1.5;
+
+$body-text-size: 20px;
+$body-line-height: 1.6; // 32px
+
+$body-medium-text-size: 16px;
+$body-medium-line-height: 1.5; // 24px
+
+$body-small-text-size: 14px;
+$body-small-line-height: 1.71; // 24px
+
+@function rem($size) {
+  @return ($size / $font-size-base) * 1rem;
+}
+
+@function baseline-margin($size) {
+  @return rem($size - ($body-text-size * $body-line-height));
+}

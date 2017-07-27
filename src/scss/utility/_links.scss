@@ -1,0 +1,65 @@
+// Create an underline which doesn't intersect with descenders on lowercase
+// letters.
+@mixin add-skinny-underline($text-color, $bg-color) {
+  background:
+    linear-gradient($bg-color, $bg-color),
+    linear-gradient($bg-color, $bg-color),
+    linear-gradient($text-color, $text-color);
+  background-size:
+    .05em 1px,
+    .05em 1px,
+    1px 1px;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    repeat-x;
+  background-position:
+    0 100%,
+    100% 100%,
+    0 100%;
+  text-decoration: none;
+}
+
+@mixin clear-skinny-underline() {
+  background-size: .05em 1px, .05em 1px, 1px 0;
+}
+
+@mixin chevron-links($color) {
+  text-decoration: none;
+  color: $color;
+  font-weight: 500;
+
+  &:hover {
+    box-shadow: none;
+
+    // Deprecated 0.16.0
+    .icon {
+      left: 4px;
+    }
+
+    &::after {
+      font-family: "TELUS Core Icons";
+      content: "\f107";
+      left: 4px;
+    }
+  }
+
+  &::after {
+    font-family: "TELUS Core Icons";
+    content: "\f107";
+    position: relative;
+    color: inherit;
+    transition: color .2s, left .3s;
+    left: -2px;
+    margin-left: 10px;
+  }
+
+  // Deprecated 0.16.0
+  .icon {
+    position: relative;
+    color: inherit;
+    transition: color .2s, left .3s;
+    left: -2px;
+    margin-left: 2px;
+  }
+}

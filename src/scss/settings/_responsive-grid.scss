@@ -1,0 +1,30 @@
+// Breakpoints for a mobile-first grid. The pixel values of adjacent breakpoints
+// can be the same value (i.e. it's unnecessary to write values like
+// small: (544px, 767px), medium: (768px, 992px)). Media Query-generating mixins
+// will automatically adjust by 1px where necessary.
+$breakpoints: (
+  xs: (null,   576px),
+  small: (576px,  768px),
+  medium: (768px,  992px),
+  large: (992px, 1200px),
+  xl: (1200px, null)
+);
+
+$max-widths: (
+  xs: auto,
+  small: 544px,
+  medium: 736px,
+  large: 960px,
+  xl: 1168px
+);
+
+// 12 columns all the way down.
+$columns: (
+  xs: 12,
+  small: 12,
+  medium: 12,
+  large: 12,
+  xl: 12
+);
+
+$gutter: 32px;

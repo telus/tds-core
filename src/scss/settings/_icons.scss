@@ -1,0 +1,35 @@
+// Default to the CDN-hosted icons, while allowing any client project to
+// control the location icons are served from by defining
+// $thorium-icon-font-prefix in their SCSS.
+$icon-font-prefix: 'https://cdn.telus.digital/thorium/core/v0.4.0';
+
+@if variable-exists(thorium-icon-font-prefix) {
+  $icon-font-prefix: $thorium-icon-font-prefix;
+}
+
+// Unicode points of each icon's location within the font files.
+$core-icon-codepoints: (
+  alert: "\f103", // Deprecated in v0.4.1, 10/5/16 - use "exclamation-point-circle"
+  caret-down: "\f105",
+  caret-up: "\f106",
+  checkmark: "\f101",
+  chevron: "\f107",
+  close: "\f104", // Deprecated in v0.4.1, 10/5/16 - use "times"
+  dash: "\f109", // Deprecated in v0.4.1, 10/5/16 - use "minus"
+  exclamation-point-circle: "\f103",
+  expander: "\f113",
+  hamburger: "\f112",
+  help: "\f102", // Deprecated in v0.4.1, 10/5/16 - use "question-mark-circle"
+  incomplete: "\f104",
+  location: "\f110",
+  minus: "\f109",
+  plus: "\f108",
+  question-mark-circle: "\f102",
+  spyglass: "\f111",
+  times: "\f104"
+);
+
+// Get the unicode point for a given icon name
+@function core-icon-codepoint($name) {
+  @return map-get($core-icon-codepoints, $name);
+}

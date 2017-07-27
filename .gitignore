@@ -5,6 +5,7 @@
 node_modules
 npm-debug.log*
 *.log
+*.tgz
 
 # Jest
 coverage

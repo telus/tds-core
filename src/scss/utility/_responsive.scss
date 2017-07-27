@@ -1,18 +1,4 @@
-$breakpoints: (
-  xs: (null,   576px),
-  small: (576px,  768px),
-  medium: (768px,  992px),
-  large: (992px, 1200px),
-  xl: (1200px, null)
-);
-
-$max-widths: (
-  xs: auto,
-  small: 544px,
-  medium: 736px,
-  large: 960px,
-  xl: 1168px
-);
+@import '../settings/responsive-grid';
 
 // Mobile-first breakpoint mixin. This is the preferred way to use a
 // breakpoint, with larger devices inheriting from smaller ones.

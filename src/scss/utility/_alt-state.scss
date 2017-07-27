@@ -1,0 +1,15 @@
+// Mixin for mapping a set of :hover styles onto the :focus state
+// for a slightly nicer keyboard-user experience. Use where you'd use &:hover.
+// For example:
+// .something-interactive {
+//    background: $normal-background-color;
+//    @include alt-state {
+//       background: $hover-background-color;
+//    }
+// }
+@mixin alt-state() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
