@@ -10,7 +10,7 @@ module.exports = {
     let name = path.basename(componentPath, '.jsx');
 
     // Steps has name-spaced sub-components
-    if (path.dirname(componentPath).includes('Steps')) {
+    if (path.dirname(componentPath).includes('StepTracker')) {
       name = 'Steps';
     }
 

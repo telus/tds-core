@@ -7,4 +7,4 @@ export { default as Icon } from './components/Icon/Icon';
 export { default as Notification } from './components/Notification/Notification';
 export { default as SelectorCounter } from './components/SelectorCounter/SelectorCounter';
 export { default as Spinner } from './components/Spinner/Spinner';
-export { default as Steps } from './components/Steps/Steps';
+export { default as Steps } from './components/StepTracker/Steps/Steps';

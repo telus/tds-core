@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import Step from './Step';
+import Step from '../Step/Step';
 
 import './Steps.scss';
 

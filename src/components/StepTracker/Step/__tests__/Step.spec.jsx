@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Step from '../Step';
 
+import Step from '../Step';
 
 describe('<Step />', () => {
   it('contains .step-tracker__step class', () => {
