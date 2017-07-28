@@ -28,64 +28,65 @@ module.exports = {
   sections: [
     {
       name: 'TELUS Design System',
-      content: '../docs-new/intro/welcome.md',
+      content: path.resolve('docs-new/intro/welcome.md'),
       sections: [
         {
           name: 'Getting Started',
-          content: '../docs-new/intro/getting-started.md'
+          content: path.resolve('docs-new/intro/getting-started.md')
         },
         {
           name: 'Releases',
-          content: '../docs-new/intro/releases.md'
+          content: path.resolve('docs-new/intro/releases.md')
         },
         {
           name: 'Contributing',
-          content: '../docs-new/intro/contributions.md'
+          content: path.resolve('docs-new/intro/contributions.md')
         }
       ]
     },
     {
       name: 'Foundational Elements',
+      content: path.resolve('docs-new/elements/intro.md'),
       sections: [
         {
           name: 'Buttons',
-          content: '../docs-new/elements/buttons.md'
+          content: path.resolve('docs-new/elements/buttons.md')
         },
         {
           name: 'Links',
-          content: '../docs-new/elements/links.md'
+          content: path.resolve('docs-new/elements/links.md')
         },
         {
           name: 'Colours',
-          content: '../docs-new/elements/colours.md'
+          content: path.resolve('docs-new/elements/colours.md')
         },
         {
           name: 'Forms',
-          content: '../docs-new/elements/forms.md'
+          content: path.resolve('docs-new/elements/forms.md')
         },
         {
           name: 'Grid',
-          content: '../docs-new/elements/grid.md'
+          content: path.resolve('docs-new/elements/grid.md')
         },
         {
           name: 'Lists',
-          content: '../docs-new/elements/lists.md'
+          content: path.resolve('docs-new/elements/lists.md')
         },
         {
           name: 'Typography',
-          content: '../docs-new/elements/typography.md'
+          content: path.resolve('docs-new/elements/typography.md')
         },
         {
           name: 'Utility Icons',
-          content: '../docs-new/elements/utility-icons.md'
+          content: path.resolve('docs-new/elements/utility-icons.md')
         },
         {
           name: 'Utility Mixins',
-          content: '../docs-new/elements/utility-mixins.md'
+          content: path.resolve('docs-new/elements/utility-mixins.md')
         },
         {
           name: 'Design Tokens',
-          content: '../docs-new/elements/design-tokens.md'
+          content: path.resolve('docs-new/elements/design-tokens.md')
         }
       ]
     },
