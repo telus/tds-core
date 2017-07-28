@@ -9,6 +9,11 @@ module.exports = {
   getComponentPathLine(componentPath) {
     let name = path.basename(componentPath, '.jsx');
 
+    // Grid has name-spaced sub-components
+    if (path.dirname(componentPath).includes('Grid')) {
+      name = 'Grid';
+    }
+
     // Steps has name-spaced sub-components
     if (path.dirname(componentPath).includes('StepTracker')) {
       name = 'Steps';
@@ -86,7 +91,36 @@ module.exports = {
     },
     {
       name: 'Components',
-      components: '../src/components/**/*.jsx'
+      sections: [
+        {
+          name: 'Grid',
+          components() {
+            return [
+              path.resolve('src/components/Grid/Container/Container.jsx'),
+              path.resolve('src/components/Grid/Row/Row.jsx'),
+              path.resolve('src/components/Grid/Column/Column.jsx')
+            ]
+          }
+        },
+        {
+          name: 'Structure',
+          components() {
+            return [
+              path.resolve('src/components/Card/Card.jsx'),
+            ]
+          }
+        },
+        {
+          name: 'Feedback Indicators',
+          components() {
+            return [
+              path.resolve('src/components/Notification/Notification.jsx'),
+              path.resolve('src/components/Spinner/Spinner.jsx'),
+              path.resolve('src/components/StepTracker/Steps/Steps.jsx')
+            ]
+          }
+        }
+      ]
     }
   ],
 

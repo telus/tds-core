@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 const propTypes = {
   className: PropTypes.string,
   // Sizing
-  /* eslint-disable react/no-unused-prop-types */
   xs: PropTypes.number,
   sm: PropTypes.number,
   md: PropTypes.number,
@@ -40,9 +39,14 @@ const propTypes = {
   mdHiddenUp: PropTypes.bool,
   lgHiddenUp: PropTypes.bool,
   xlHiddenUp: PropTypes.bool
-  /* eslint-enable react/no-unused-prop-types */
 };
 
+/**
+ * Align grid content vertically.
+ *
+ * _This component can only be used as a child of `Grid.Row`, and must be accessed as a
+ * name-spaced component: `Grid.Column`._
+ */
 function Column(props) {
   // Collect any "extra" props, that aren't explicitly consumed.
   const extraProps = {};
@@ -103,7 +107,68 @@ function Column(props) {
 }
 
 Column.propTypes = {
+  /* eslint-disable react/no-unused-prop-types */
+  /**
+   * Span the specified number of columns at this screen size and above.
+   */
+  xs: PropTypes.number,
+  sm: PropTypes.number,
+  md: PropTypes.number,
+  lg: PropTypes.number,
+  xl: PropTypes.number,
+  /**
+   * &lt;size&gt;Offset: Offset by the specified number of columns at this screen size and above.
+   */
+  xsOffset: PropTypes.number,
+  smOffset: PropTypes.number,
+  mdOffset: PropTypes.number,
+  lgOffset: PropTypes.number,
+  xlOffset: PropTypes.number,
+  /**
+   * &lt;size&gt;Push: Re-arrange column order by pushing content to the right by the specified
+   * number of columns at this screen size and above.
+   */
+  xsPush: PropTypes.number,
+  smPush: PropTypes.number,
+  mdPush: PropTypes.number,
+  lgPush: PropTypes.number,
+  xlPush: PropTypes.number,
+  /**
+   * &lt;size&gt;Pull: Re-arrange column order by pulling content to the left by the specified
+   * number of columns at this screen size and above.
+   */
+  xsPull: PropTypes.number,
+  smPull: PropTypes.number,
+  mdPull: PropTypes.number,
+  lgPull: PropTypes.number,
+  xlPull: PropTypes.number,
+  /**
+   * &lt;size&gt;Hidden: Whether or not to hide content at only this screen size.
+   */
+  xsHidden: PropTypes.bool,
+  smHidden: PropTypes.bool,
+  mdHidden: PropTypes.bool,
+  lgHidden: PropTypes.bool,
+  xlHidden: PropTypes.bool,
+  /**
+   * &lt;size&gt;HiddenUp: Whether or not to hide content at this screen size and above.
+   */
+  xsHiddenUp: PropTypes.bool,
+  smHiddenUp: PropTypes.bool,
+  mdHiddenUp: PropTypes.bool,
+  lgHiddenUp: PropTypes.bool,
+  xlHiddenUp: PropTypes.bool,
+  /* eslint-enable react/no-unused-prop-types */
+  /**
+   * One or more CSS class names separated by spaces to append onto the container.
+   * Don't advertise as we may remove this feature soon.
+   *
+   * @ignore
+   */
   className: PropTypes.string,
+  /**
+   * The Column's content. Can be text, any HTML element, or any component.
+   */
   children: PropTypes.node
 };
 

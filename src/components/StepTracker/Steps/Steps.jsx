@@ -68,14 +68,14 @@ Steps.propTypes = {
    */
   current: PropTypes.number,
   /**
-   * The steps. Must be TDS `Step` components.
+   * The steps. Must be TDS `Steps.Step` components.
    *
-   * @see See [Step](#step)
+   * @see See [Steps.Step](#step)
    */
   children: PropTypes.node,
   /**
    * One or more CSS class names separated by spaces to append onto the container.
-   * Don't advertise as we plan on removing this soon.
+   * Don't advertise as we plan on removing this feature soon.
    *
    * @ignore
    */
