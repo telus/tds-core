@@ -112,6 +112,10 @@ module.exports = {
           }
         },
         {
+          name: "Icons",
+          components: path.resolve('src/components/Icon/Icon.jsx')
+        },
+        {
           name: 'Feedback Indicators',
           components() {
             return [

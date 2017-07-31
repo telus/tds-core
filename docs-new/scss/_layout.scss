@@ -1,0 +1,17 @@
+@import '../../src/scss/settings/spacing';
+
+.docs--layout-vertically {
+  display: flex;
+  flex-direction: column;
+}
+
+.docs--layout-horizontally {
+  display: flex;
+  flex-direction: row;
+}
+
+.docs--horizontal-spacing {
+  > * {
+    margin-right: $spacing-base;
+  }
+}
