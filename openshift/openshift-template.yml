@@ -1,0 +1,367 @@
+# Configures the build pipeline dependencies for openshift
+# See: README.md
+
+apiVersion: v1
+kind: List
+metadata:
+  name: telus-isomorphic-starter-kit-pipeline
+items:
+
+# Configure our Docker UI image repository
+# https://docs.openshift.com/enterprise/3.2/dev_guide/managing_images.html
+- kind: ImageStream
+  apiVersion: v1
+  metadata:
+    name: telus-isomorphic-starter-kit-ui
+    labels:
+      app: telus-isomorphic-starter-kit
+
+# Configure our Docker BFF image repository
+# https://docs.openshift.com/enterprise/3.2/dev_guide/managing_images.html
+- kind: ImageStream
+  apiVersion: v1
+  metadata:
+    name: telus-isomorphic-starter-kit-bff
+    labels:
+      app: telus-isomorphic-starter-kit
+
+# Configure our Docker e2e image repository
+# https://docs.openshift.com/enterprise/3.2/dev_guide/managing_images.html
+- kind: ImageStream
+  apiVersion: v1
+  metadata:
+    name: telus-isomorphic-starter-kit-e2e
+    labels:
+      app: telus-isomorphic-starter-kit
+
+# Configure our Docker load test image repository
+# https://docs.openshift.com/enterprise/3.2/dev_guide/managing_images.html
+- kind: ImageStream
+  apiVersion: v1
+  metadata:
+    name: telus-isomorphic-starter-kit-load
+    labels:
+      app: telus-isomorphic-starter-kit
+
+# Configure our build pipeline template
+# https://docs.openshift.com/enterprise/3.2/dev_guide/templates.html
+- apiVersion: v1
+  kind: Template
+  metadata:
+    name: telus-isomorphic-starter-kit-pipeline
+  parameters:
+  - name: BRANCH
+    description: Branch to build from
+    value: master
+  objects:
+
+  # Configures the OpenShift/Jenkins build pipeline
+  # https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#defining-a-buildconfig
+  - apiVersion: v1
+    kind: BuildConfig
+    metadata:
+      name: telus-isomorphic-starter-kit-pipeline
+      labels:
+        app: telus-isomorphic-starter-kit
+    spec:
+      source:
+        type: Git
+        git:
+          uri: git@github.com:telusdigital/telus-isomorphic-starter-kit.git
+          ref: ${BRANCH}
+        sourceSecret:
+          name: github-secret
+      triggers:
+        - type: GitHub
+          github:
+            secret: tisk
+      runPolicy: SerialLatestOnly
+      strategy:
+        type: JenkinsPipeline
+        jenkinsPipelineStrategy:
+          jenkinsfilePath: Jenkinsfile
+
+  # Configure our Docker UI container build
+  # https://docs.openshift.com/enterprise/3.2/architecture/core_concepts/builds_and_image_streams.html#docker-build
+  - kind: BuildConfig
+    apiVersion: v1
+    metadata:
+      name: telus-isomorphic-starter-kit-ui
+      labels:
+        app: telus-isomorphic-starter-kit
+    spec:
+      source:
+        type: Git
+        git:
+          uri: git@github.com:telusdigital/telus-isomorphic-starter-kit.git
+          ref: ${BRANCH}
+        contextDir: ui
+        sourceSecret:
+          name: github-secret
+        secrets:
+          - secret:
+              name: npmrc-secret
+        runPolicy: Parallel
+      strategy:
+        type: Docker
+        dockerStrategy:
+          dockerfilePath: Dockerfile
+          forcePull: true
+      output:
+        to:
+          kind: ImageStreamTag
+          name: telus-isomorphic-starter-kit-ui:latest
+      postCommit:
+        args: ["test"]
+
+  # Configure our Docker BFF container build
+  # https://docs.openshift.com/enterprise/3.2/architecture/core_concepts/builds_and_image_streams.html#docker-build
+  - kind: BuildConfig
+    apiVersion: v1
+    metadata:
+      name: telus-isomorphic-starter-kit-bff
+      labels:
+        app: telus-isomorphic-starter-kit
+    spec:
+      source:
+        type: Git
+        git:
+          uri: git@github.com:telusdigital/telus-isomorphic-starter-kit.git
+          ref: ${BRANCH}
+        contextDir: bff
+        sourceSecret:
+          name: github-secret
+        secrets:
+          - secret:
+              name: npmrc-secret
+        runPolicy: Parallel
+      strategy:
+        type: Docker
+        dockerStrategy:
+          dockerfilePath: Dockerfile
+          forcePull: true
+      output:
+        to:
+          kind: ImageStreamTag
+          name: telus-isomorphic-starter-kit-bff:latest
+
+  # Configure our Docker e2e container build
+  # https://docs.openshift.com/enterprise/3.2/architecture/core_concepts/builds_and_image_streams.html#docker-build
+  - kind: BuildConfig
+    apiVersion: v1
+    metadata:
+      name: telus-isomorphic-starter-kit-e2e
+      labels:
+        app: telus-isomorphic-starter-kit
+    spec:
+      source:
+        type: Git
+        git:
+          uri: git@github.com:telusdigital/telus-isomorphic-starter-kit.git
+          ref: ${BRANCH}
+        contextDir: e2e
+        sourceSecret:
+          name: github-secret
+        runPolicy: Parallel
+      strategy:
+        type: Docker
+        dockerStrategy:
+          dockerfilePath: Dockerfile
+          forcePull: true
+      output:
+        to:
+          kind: ImageStreamTag
+          name: telus-isomorphic-starter-kit-e2e:latest
+
+  # Configure our Docker load container build
+  # https://docs.openshift.com/enterprise/3.2/architecture/core_concepts/builds_and_image_streams.html#docker-build
+  - kind: BuildConfig
+    apiVersion: v1
+    metadata:
+      name: telus-isomorphic-starter-kit-load
+      labels:
+        app: telus-isomorphic-starter-kit
+    spec:
+      source:
+        type: Git
+        git:
+          uri: git@github.com:telusdigital/telus-isomorphic-starter-kit.git
+          ref: ${BRANCH}
+        contextDir: load-test
+        sourceSecret:
+          name: github-secret
+        runPolicy: Parallel
+      strategy:
+        type: Docker
+        dockerStrategy:
+          dockerfilePath: Dockerfile
+          forcePull: true
+      output:
+        to:
+          kind: ImageStreamTag
+          name: telus-isomorphic-starter-kit-load:latest
+
+# Configure our deployment template
+# https://docs.openshift.com/enterprise/3.2/dev_guide/templates.html
+- apiVersion: v1
+  kind: Template
+  metadata:
+    name: telus-isomorphic-starter-kit
+  parameters:
+  - name: VERSION
+    value: ''
+  - name: ENVIRONMENT
+    description: The environment name
+    value: production
+  - name: UI_DOCKER_REGISTRY
+    description: Docker UI image to deploy
+  - name: BFF_DOCKER_REGISTRY
+    description: Docker BFF image to deploy
+  - name: NUM_REPLICAS
+    description: How many replicas of the pod to deploy?
+    value: '1'
+  - name: REDIS_HOST
+    description: Which elasticache server to use
+  objects:
+
+  # How the container is deployed
+  # https://docs.openshift.com/enterprise/3.2/dev_guide/deployments.html
+  - apiVersion: v1
+    kind: DeploymentConfig
+    metadata:
+      name: telus-isomorphic-starter-kit-${ENVIRONMENT}
+      labels:
+        version: ${VERSION}
+    spec:
+      replicas: ${NUM_REPLICAS}
+      template:
+        metadata:
+          labels:
+            deploymentconfig: telus-isomorphic-starter-kit-${ENVIRONMENT}
+            version: ${VERSION}
+        spec:
+          containers:
+            - name: telus-isomorphic-starter-kit-ui
+              image: ${UI_DOCKER_REGISTRY}
+              imagePullPolicy: Always
+              env:
+                - name: APP_ENV
+                  value: ${ENVIRONMENT}
+                - name: NEW_RELIC_APP_NAME
+                  value: "telus-isomorphic-starter-kit-ui (${ENVIRONMENT})"
+                - name: NEW_RELIC_ENABLED
+                  value: 'true'
+                - name: NEW_RELIC_LICENSE_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: newrelic-license-secret
+                      key: newrelic-license
+              ports:
+                - containerPort: 3000
+              livenessProbe:
+                tcpSocket:
+                  port: 3000
+                initialDelaySeconds: 1
+                timeoutSeconds: 1
+              readinessProbe:
+                httpGet:
+                  path: /en/bc/hello-world
+                  port: 3000
+                initialDelaySeconds: 1
+                timeoutSeconds: 1
+              resources:
+                requests:
+                  cpu: 100m
+                  memory: 128Mi
+                limits:
+                  cpu: 1000m
+                  memory: 256Mi
+
+            - name: telus-isomorphic-starter-kit-bff
+              image: ${BFF_DOCKER_REGISTRY}
+              imagePullPolicy: Always
+              env:
+                - name: APP_ENV
+                  value: ${ENVIRONMENT}
+                - name: REDIS_HOST
+                  value: ${REDIS_HOST}
+                - name: NEW_RELIC_APP_NAME
+                  value: "telus-isomorphic-starter-kit-bff (${ENVIRONMENT})"
+                - name: NEW_RELIC_ENABLED
+                  value: 'true'
+                - name: NEW_RELIC_LICENSE_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: newrelic-license-secret
+                      key: newrelic-license
+              ports:
+                - containerPort: 4000
+              livenessProbe:
+                tcpSocket:
+                  port: 4000
+                initialDelaySeconds: 1
+                timeoutSeconds: 1
+              readinessProbe:
+                httpGet:
+                  path: /version
+                  port: 4000
+                initialDelaySeconds: 1
+                timeoutSeconds: 1
+              resources:
+                requests:
+                  cpu: 100m
+                  memory: 128Mi
+                limits:
+                  cpu: 1000m
+                  memory: 256Mi
+
+  # How the UI container is load balanced
+  # https://docs.openshift.com/enterprise/3.2/architecture/core_concepts/pods_and_services.html
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      name: telus-isomorphic-starter-kit-${ENVIRONMENT}
+    spec:
+      ports:
+        - name: ui
+          port: 3000
+          targetPort: 3000
+        - name: bff
+          port: 4000
+          targetPort: 4000
+      selector:
+        deploymentconfig: telus-isomorphic-starter-kit-${ENVIRONMENT}
+
+  # How the UI container is exposed
+  # https://docs.openshift.com/enterprise/3.2/dev_guide/routes.html
+  - apiVersion: v1
+    kind: Route
+    metadata:
+      name: telus-isomorphic-starter-kit-${ENVIRONMENT}-ui
+    spec:
+      to:
+        kind: Service
+        name: telus-isomorphic-starter-kit-${ENVIRONMENT}
+        weight: 100
+      port:
+        targetPort: 3000
+      tls:
+        termination: edge
+        insecureEdgeTerminationPolicy: Redirect
+
+  # How the BFF container is exposed
+  # https://docs.openshift.com/enterprise/3.2/dev_guide/routes.html
+  - apiVersion: v1
+    kind: Route
+    metadata:
+      name: telus-isomorphic-starter-kit-${ENVIRONMENT}-bff
+    spec:
+      to:
+        kind: Service
+        name: telus-isomorphic-starter-kit-${ENVIRONMENT}
+        weight: 100
+      port:
+        targetPort: 4000
+      tls:
+        termination: edge
+        insecureEdgeTerminationPolicy: Redirect
