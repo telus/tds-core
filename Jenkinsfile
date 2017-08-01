@@ -60,8 +60,8 @@ try {
     )
   }
 
-  stage('User Input') {
-    inputUrl = env.BUILD_URL ? "(${env.BUILD_URL}input)" : '';
+  stage('Deploy Prod Trigger') {
+    inputUrl = env.BUILD_URL ? "(${env.BUILD_URL}deploy-prod-trigger)" : '';
     notifyBuild(
       message: "Build is ready for Production ${inputUrl}",
       color: '#0000FF',
@@ -72,17 +72,32 @@ try {
     }
   }
 
-// No deploy to production yet... :)
+  stage('Deploy Production') {
+    deploy(
+      buildVersion: buildVersion,
+      environment: 'production',
+      numReplicas: 1
+    )
+  }
 
-//  stage('Deploy Production') {
-//    deploy(
-//      buildVersion: buildVersion,
-//      environment: 'production',
-//      uiNewRelicId: '24442164',
-//      bffNewRelicId: '24534533',
-//      numReplicas: 3
-//    )
-//  }
+  stage('Publish Trigger') {
+    inputUrl = env.BUILD_URL ? "(${env.BUILD_URL}publish-trigger)" : '';
+    notifyBuild(
+      message: "Build is ready for a Publish ${inputUrl}",
+      color: '#0000FF',
+      buildVersion: buildVersion
+    )
+    timeout(time:1, unit:'DAYS') {
+      input 'Publish the npm package?'
+    }
+  }
+
+  stage('Publish') {
+    publish(
+      name: 'tds',
+      buildVersion: buildVersion
+    )
+  }
 
   currentBuild.result = 'SUCCESS'
 }
@@ -170,6 +185,13 @@ def deploy(Map attrs) {
       deploymentConfig: "tds-${attrs.environment}",
       waitTime: '1800000'
     )
+  }
+}
+
+def publish(Map attrs) {
+  node {
+    unstash 'scripts'
+    sh("./openshift/run-publish.sh ${attrs.name} ${attrs.buildVersion}")
   }
 }
 
