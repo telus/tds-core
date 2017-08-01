@@ -60,17 +60,17 @@ try {
     )
   }
 
-//  stage('User Input') {
-//    inputUrl = env.BUILD_URL ? "(${env.BUILD_URL}input)" : '';
-//    notifyBuild(
-//      message: "Build is ready for Production ${inputUrl}",
-//      color: '#0000FF',
-//      buildVersion: buildVersion
-//    )
-//    timeout(time:1, unit:'DAYS') {
-//      input 'Deploy to Production?'
-//    }
-//  }
+  stage('User Input') {
+    inputUrl = env.BUILD_URL ? "(${env.BUILD_URL}input)" : '';
+    notifyBuild(
+      message: "Build is ready for Production ${inputUrl}",
+      color: '#0000FF',
+      buildVersion: buildVersion
+    )
+    timeout(time:1, unit:'DAYS') {
+      input 'Deploy to Production?'
+    }
+  }
 
 // No deploy to production yet... :)
 
@@ -102,7 +102,7 @@ catch (err) {
 finally {
   if (currentBuild.result == 'SUCCESS') {
     notifyBuild(
-      message: "Production deploy successful",
+      message: "Build successful",
       color: '#00FF00',
       buildVersion: buildVersion
     )
