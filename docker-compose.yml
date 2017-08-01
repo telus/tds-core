@@ -5,9 +5,12 @@
 # `docker-compose build` --> Build the image. Do this first.
 # `docker images` --> View the image you just built
 
+# Now run the container:
+# `docker-compose up -d` --> Starts the styleguide in daemon mode.
+
 # `docker-compose run lib <command>` --> <command> and any arguments will be forwarded onto the Dockerfile entrypoint, "yarn".
 # `docker-compose run lib test` --> Run tests.
-# `docker-compose run --service-ports lib start:styleguide` --> Start the styleguidist dev server.
+# `docker-compose run --service-ports lib start:dev` --> Start the styleguidist dev server.
 
 version: '3'
 services:
