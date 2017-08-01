@@ -1,6 +1,6 @@
 #!/bin/sh
 
-## Runs `yarn run test` against a container on OpenShift. Used by the Test stage of the Jenkinsfile.
+## Runs `yarn run test:ci` against a container on OpenShift. Used by the Test stage of the Jenkinsfile.
 ## Usage: ./run-test.sh tds latest
 
 NAME=${1}

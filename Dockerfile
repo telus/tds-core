@@ -10,6 +10,11 @@ FROM node:6-alpine
 # Set the working directory for following commands.
 WORKDIR /app
 
+# Add a user so that we don't run as root:
+#  https://github.com/telusdigital/reference-architecture/blob/master/delivery/docker.md#root-vs-user-mode
+ENV UID=911 GID=0 HOME=/root
+RUN adduser -D -u $UID -G root -h $HOME nodeuser
+
 # Copy only the files necessary to install dependencies into the working directory.
 # Docker builds the image in layers and caches them. Because the app files change more often than the dependencies, we
 #  copy the app files only after we install the depencendies.
@@ -23,7 +28,15 @@ RUN yarn install
 COPY . /app
 
 # Build the app.
-RUN yarn build
+# Then give access to the app directory
+RUN set -ex && \
+    yarn build && \
+    yarn cache clean && \
+    chmod -R g+rw /app $HOME && \
+    chmod g+x $HOME
+
+# Set the container's user to the newly created one.
+USER nodeuser
 
 # The entrypoint configures the container to be run as an executable.
 # Arguments supplied on the command line will be forwarded onto the entrypoint.
