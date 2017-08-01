@@ -22,6 +22,7 @@
     "test": "jest --config config/jest.config.js",
     "test:watch": "yarn test -- --watch",
     "test:u": "yarn test -- -u",
+    "test:ci": "yarn run lint && yarn run test",
     "build": "yarn build:js && yarn build:scss && yarn build:styleguide",
     "build:js": "rollup -c config/rollup.config.js",
     "build:scss": "sh ./scripts/cp-scss.sh",

@@ -26,7 +26,7 @@ oc create secret generic sonarqube-token-secret --from-literal=sonar.login=$(vau
 oc apply -f openshift-template.yml
 
 # Configure build pipeline against the defined branch
-oc process telus-isomorphic-starter-kit-pipeline BRANCH=${BRANCH} | oc apply -f -
+oc process tds-pipeline BRANCH=${BRANCH} | oc apply -f -
 
 # Trigger initial build
-oc start-build telus-isomorphic-starter-kit-pipeline
+oc start-build tds-pipeline

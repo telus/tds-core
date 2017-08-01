@@ -27,110 +27,62 @@ try {
     node {
       String currentBranch = sh(
         returnStdout: true,
-        script: "oc get bc telus-isomorphic-starter-kit-pipeline -o='jsonpath={.spec.source.git.ref}'"
+        script: "oc get bc tds-pipeline -o='jsonpath={.spec.source.git.ref}'"
       ).trim()
 
       sh("""
         oc apply -f openshift/openshift-template.yml
-        oc process telus-isomorphic-starter-kit-pipeline BRANCH=${currentBranch} | oc apply -f -
+        oc process tds-pipeline BRANCH=${currentBranch} | oc apply -f -
       """)
     }
   }
 
   stage('Build') {
-    parallel 'Build UI':{
-      build(
-        name: 'telus-isomorphic-starter-kit-ui',
-        buildVersion: buildVersion,
-        gitCommitId: gitCommitId
-      )
-    }, 'Build BFF':{
-      build(
-        name: 'telus-isomorphic-starter-kit-bff',
-        buildVersion: buildVersion,
-        gitCommitId: gitCommitId
-      )
-    }, 'Build E2E':{
-      build(
-        name: 'telus-isomorphic-starter-kit-e2e',
-        buildVersion: buildVersion,
-        gitCommitId: gitCommitId
-      )
-    }, 'Build Load Test':{
-      build(
-        name: 'telus-isomorphic-starter-kit-load',
-        buildVersion: buildVersion,
-        gitCommitId: gitCommitId
-      )
-    }
+    build(
+      name: 'tds',
+      buildVersion: buildVersion,
+      gitCommitId: gitCommitId
+    )
   }
 
   stage('Test') {
-    parallel 'Test UI':{
-      test(
-        name: 'telus-isomorphic-starter-kit-ui',
-        buildVersion: buildVersion
-      )
-    }, 'Test BFF':{
-      test(
-        name: 'telus-isomorphic-starter-kit-bff',
-        buildVersion: buildVersion
-      )
-    }
+    test(
+      name: 'tds',
+      buildVersion: buildVersion
+    )
   }
 
   stage('Deploy Staging') {
     deploy(
       buildVersion: buildVersion,
       environment: 'staging',
-      uiNewRelicId: '24442659',
-      bffNewRelicId: '24534378',
       numReplicas: 1
     )
   }
 
-  stage('E2E Staging') {
-    e2e(
-      buildVersion: buildVersion,
-      environment: 'staging'
-    )
-  }
+//  stage('User Input') {
+//    inputUrl = env.BUILD_URL ? "(${env.BUILD_URL}input)" : '';
+//    notifyBuild(
+//      message: "Build is ready for Production ${inputUrl}",
+//      color: '#0000FF',
+//      buildVersion: buildVersion
+//    )
+//    timeout(time:1, unit:'DAYS') {
+//      input 'Deploy to Production?'
+//    }
+//  }
 
-  stage('Load Test Staging') {
-    loadTest(
-      buildVersion: buildVersion,
-      environment: 'staging'
-    )
-  }
+// No deploy to production yet... :)
 
-  stage('User Input') {
-    inputUrl = env.BUILD_URL ? "(${env.BUILD_URL}input)" : '';
-    notifyBuild(
-      message: "Build is ready for Production ${inputUrl}",
-      color: '#0000FF',
-      buildVersion: buildVersion
-    )
-    timeout(time:1, unit:'DAYS') {
-      input 'Deploy to Production?'
-    }
-  }
-
-  stage('Deploy Production') {
-    deploy(
-      buildVersion: buildVersion,
-      environment: 'production',
-      uiNewRelicId: '24442164',
-      bffNewRelicId: '24534533',
-      numReplicas: 3
-    )
-  }
-
-  stage('E2E Production') {
-    e2e(
-      buildVersion: buildVersion,
-      environment: 'production'
-    )
-  }
+//  stage('Deploy Production') {
+//    deploy(
+//      buildVersion: buildVersion,
+//      environment: 'production',
+//      uiNewRelicId: '24442164',
+//      bffNewRelicId: '24534533',
+//      numReplicas: 3
+//    )
+//  }
 
   currentBuild.result = 'SUCCESS'
 }
@@ -191,88 +143,33 @@ def test(Map attrs) {
 
 def deploy(Map attrs) {
   node {
-    String uiDockerRegistry = sh(
+    String dockerRegistry = sh(
       returnStdout: true,
-      script: "oc get imagestream telus-isomorphic-starter-kit-ui -o='jsonpath={.status.dockerImageRepository}'"
-    ).trim()
-
-    String bffDockerRegistry = sh(
-      returnStdout: true,
-      script: "oc get imagestream telus-isomorphic-starter-kit-bff -o='jsonpath={.status.dockerImageRepository}'"
+      script: "oc get imagestream tds -o='jsonpath={.status.dockerImageRepository}'"
     ).trim()
 
     sh("""
       # workaround for https://github.com/kubernetes/kubernetes/issues/34413
-      if oc get hpa/telus-isomorphic-starter-kit-${attrs.environment} > /dev/null 2>&1
+      if oc get hpa/tds-${attrs.environment} > /dev/null 2>&1
       then
-        oc delete hpa/telus-isomorphic-starter-kit-${attrs.environment}
+        oc delete hpa/tds-${attrs.environment}
       fi
 
       oc new-app \
-        --template='telus-isomorphic-starter-kit' \
+        --template='tds' \
         -p VERSION='${attrs.buildVersion}' \
         -p ENVIRONMENT='${attrs.environment}' \
-        -p UI_DOCKER_REGISTRY='${uiDockerRegistry}:${attrs.buildVersion}' \
-        -p BFF_DOCKER_REGISTRY='${bffDockerRegistry}:${attrs.buildVersion}' \
+        -p DOCKER_REGISTRY='${dockerRegistry}:${attrs.buildVersion}' \
         -p NUM_REPLICAS='${attrs.numReplicas}' \
         -o yaml | oc apply -f -
 
-      oc autoscale dc/telus-isomorphic-starter-kit-${attrs.environment} --min ${attrs.numReplicas} --max 5 --cpu-percent=80
+      oc autoscale dc/tds-${attrs.environment} --min ${attrs.numReplicas} --max 5 --cpu-percent=80
     """)
 
     openshiftVerifyDeployment(
-      deploymentConfig: "telus-isomorphic-starter-kit-${attrs.environment}",
+      deploymentConfig: "tds-${attrs.environment}",
       waitTime: '1800000'
     )
-
-    notifyNewrelic(attrs.uiNewRelicId, attrs.buildVersion)
-    notifyNewrelic(attrs.bffNewRelicId, attrs.buildVersion)
-  }
-}
-
-def notifyNewrelic(String newRelicId, String buildVersion) {
-  sh("""#!/bin/sh
-    curl -i -X POST 'https://api.newrelic.com/v2/applications/${newRelicId}/deployments.json' \
-      -H 'X-Api-Key: ${env.NEW_RELIC_API_KEY}' \
-      -H 'Content-Type: application/json' \
-      -d '{ \"deployment\": { \"revision\": \"${buildVersion}\" } }'
-  """)
-}
-
-def e2e(Map attrs) {
-  node {
-    String baseUrl =  sh(
-      returnStdout: true,
-      script: "oc get route telus-isomorphic-starter-kit-${attrs.environment}-ui -o='jsonpath={.spec.host}'"
-    ).trim()
-
-    String e2eDockerRegistry = sh(
-      returnStdout: true,
-      script: "oc get imagestream telus-isomorphic-starter-kit-e2e -o='jsonpath={.status.dockerImageRepository}'"
-    ).trim()
-
-    sh("""
-      oc run telus-isomorphic-starter-kit-${attrs.environment}-e2e-${attrs.buildVersion} \
-        --image='${e2eDockerRegistry}:${attrs.buildVersion}' \
-        --rm=true --attach=true --restart=Never \
-        --env BASE_URL='https://${baseUrl}'
-    """)
-  }
-}
-
-def loadTest(Map attrs) {
-  node {
-    String loadDockerRegistry = sh(
-      returnStdout: true,
-      script: "oc get imagestream telus-isomorphic-starter-kit-load -o='jsonpath={.status.dockerImageRepository}'"
-    ).trim()
-
-    sh("""
-      oc run telus-isomorphic-starter-kit-${attrs.environment}-load-${attrs.buildVersion} \
-        --image='${loadDockerRegistry}:${attrs.buildVersion}' \
-        --rm=true --attach=true --restart=Never \
-        --env BASE_URL='http://telus-isomorphic-starter-kit-${attrs.environment}:3000/en/bc/hello-world'
-    """)
   }
 }
 
@@ -282,7 +179,7 @@ def notifyBuild(Map attrs) {
       color: attrs.color,
       message: "${env.JOB_NAME} [${attrs.buildVersion}]\n${attrs.message}",
       teamDomain: 'telusdigital',
-      channel: 'starter-kit-builds',
+      channel: 'tds-updates',
       token: env.SLACK_TOKEN
     )
   }

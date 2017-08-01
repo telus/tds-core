@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## Runs `yarn run test` against a container on OpenShift. Used by the Test stage of the Jenkinsfile.
-## Usage: ./run-test.sh telus-isomorphic-starter-kit-ui latest
+## Usage: ./run-test.sh tds latest
 
 NAME=${1}
 VERSION=${2:-latest}
@@ -18,16 +18,7 @@ oc run ${NAME}-${VERSION} \
       "containers":[{
         "name": "'${NAME}'-'${VERSION}'",
         "image": "'${IMAGESTREAM}':'${VERSION}'",
-        "command":["yarn", "run", "test:sonarqube"],
-        "env":[{
-          "name":"SONARQUBE_TOKEN",
-          "valueFrom":{
-            "secretKeyRef":{
-              "key": "sonar.login",
-              "name":"sonarqube-token-secret"
-            }
-          }
-        }]
+        "command":["yarn", "run", "test:ci"]
       }]
     }
   }'
