@@ -2,6 +2,13 @@ import React, { Component, Children } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+/**
+ * A content area which can be collapsed and expanded.
+ *
+ * _This component can only be accessed as a name-spaced component: `ExpandCollapse.Group`._
+ *
+ * Group is used with `ExpandCollapse.Panel` to produce an ExpandCollapse set. See [ExpandCollapse.Panel](#panel) for example.
+ */
 class Group extends Component {
 
   constructor(props) {

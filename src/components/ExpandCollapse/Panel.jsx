@@ -4,6 +4,9 @@ import classNames from 'classnames';
 
 import './Panel.scss';
 
+/**
+ * A collapsable panel that belongs in an ExpandCollapse Group.
+ */
 class Panel extends Component {
 
   componentWillMount() {

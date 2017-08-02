@@ -19,6 +19,11 @@ module.exports = {
       name = 'Steps';
     }
 
+    // ExpandCollapse has name-spaced sub-components
+    if (path.dirname(componentPath).includes('ExpandCollapse')) {
+      name = 'ExpandCollapse';
+    }
+
     return `import { ${name} } from '@telusdigital/tds';`;
   },
 
@@ -94,6 +99,15 @@ module.exports = {
       name: 'Components',
       sections: [
         {
+          name: 'Expand Collapse',
+          components() {
+            return [
+              path.resolve('src/components/ExpandCollapse/Group.jsx'),
+              path.resolve('src/components/ExpandCollapse/Panel.jsx')
+            ]
+          }
+        },
+        {
           name: 'Grid',
           components() {
             return [
@@ -107,7 +121,7 @@ module.exports = {
           name: 'Structure',
           components() {
             return [
-              path.resolve('src/components/Card/Card.jsx'),
+              path.resolve('src/components/Card/Card.jsx')
             ]
           }
         },
