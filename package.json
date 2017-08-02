@@ -14,8 +14,6 @@
   ],
   "scripts": {
     "precommit": "yarn lint && yarn test && yarn build",
-    "release": "scripts/release.sh",
-    "release:changelog": "changelog",
     "lint": "yarn lint:js && yarn lint:scss",
     "lint:js": "eslint src --ext '.js,.jsx' --config config/.eslintrc.json",
     "lint:scss": "stylelint 'src/scss/**/*.scss' --config config/.stylelintrc.json",
@@ -28,7 +26,10 @@
     "build:scss": "sh ./scripts/cp-scss.sh",
     "build:styleguide": "styleguidist build --config config/styleguide.config.js",
     "start": "node styleguide.js",
-    "start:dev": "styleguidist server --config config/styleguide.config.js"
+    "start:dev": "styleguidist server --config config/styleguide.config.js",
+    "release": "scripts/release.sh",
+    "release:changelog": "changelog",
+    "deploy:docs": "node ./scripts/deploy-docs.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,6 @@
   "homepage": "http://tds.telus.com",
   "devDependencies": {
     "@telusdigital/redux-contentful": "^3.0.0",
-    "aws-sdk": "^2.7.3",
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.1",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -75,6 +75,7 @@
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-sass": "^0.5.3",
+    "s3-website": "^3.1.0",
     "sass-loader": "^6.0.6",
     "sinon": "^2.3.8",
     "style-loader": "^0.18.2",

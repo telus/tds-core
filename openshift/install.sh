@@ -22,6 +22,10 @@ oc create secret generic npmrc-secret --from-literal=.npmrc=$(vault read -field=
 # SonarQube
 oc create secret generic sonarqube-token-secret --from-literal=sonar.login=$(vault read -field=sonar_token secret/common/sonarqube) --dry-run -o yaml | oc apply -f -
 
+# AWS -- WIP. Need AWS Access Key and Secret key in Vault.
+#oc create secret generic aws-access-key-secret --from-literal=aws.accesskey=$(vault read -field=sonar_token secret/common/sonarqube) --dry-run -o yaml | oc apply -f -
+#oc create secret generic aws-secret-key-secret --from-literal=aws.secretkey=$(vault read -field=sonar_token secret/common/sonarqube) --dry-run -o yaml | oc apply -f -
+
 # Install templates
 oc apply -f openshift-template.yml
 

@@ -54,9 +54,9 @@ try {
 
   stage('Deploy Staging') {
     deploy(
+      name: 'tds',
       buildVersion: buildVersion,
-      environment: 'staging',
-      numReplicas: 1
+      environment: 'staging'
     )
   }
 
@@ -74,9 +74,9 @@ try {
 
   stage('Deploy Production') {
     deploy(
+      name: 'tds',
       buildVersion: buildVersion,
-      environment: 'production',
-      numReplicas: 1
+      environment: 'production'
     )
   }
 
@@ -157,6 +157,12 @@ def test(Map attrs) {
 }
 
 def deploy(Map attrs) {
+//  WIP -- Waiting on AWS keys and a bucket to deploy to.
+//  node {
+//    unstash 'scripts'
+//    sh("./openshift/run-deploy-docs.sh ${attrs.name} ${attrs.buildVersion} ${attrs.environment}")
+//  }
+
   node {
     String dockerRegistry = sh(
       returnStdout: true,
