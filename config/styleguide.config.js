@@ -138,7 +138,15 @@ module.exports = {
               path.resolve('src/components/StepTracker/Steps/Steps.jsx')
             ]
           }
-        }
+        },
+        {
+          name: 'Forms',
+          components() {
+            return [
+              path.resolve('src/components/SelectorCounter/SelectorCounter.jsx'),
+            ]
+          }
+        },
       ]
     }
   ],

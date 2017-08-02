@@ -1,14 +1,14 @@
-/**
- * SelectorCounter lets a user choose a number in increments of one, by
- * clicking increment/decrement buttons.
- */
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import CounterButton from './CounterButton';
 
 import './SelectorCounter.scss';
+
+/**
+ * SelectorCounter lets a user choose a number in increments of one, by
+ * clicking increment/decrement buttons.
+ */
 
 const propTypes = {
   className: PropTypes.string,
