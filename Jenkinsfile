@@ -53,10 +53,17 @@ try {
   }
 
   stage('Deploy Staging') {
+//  WIP -- Waiting on AWS keys and a bucket to deploy to.
+//    deploy(
+//      name: 'tds',
+//      buildVersion: buildVersion,
+//      environment: 'staging'
+//    )
+
     deploy(
-      name: 'tds',
       buildVersion: buildVersion,
-      environment: 'staging'
+      environment: 'staging',
+      numReplicas: 1
     )
   }
 
@@ -73,10 +80,17 @@ try {
   }
 
   stage('Deploy Production') {
+//  WIP -- Waiting on AWS keys and a bucket to deploy to.
+//    deploy(
+//      name: 'tds',
+//      buildVersion: buildVersion,
+//      environment: 'production'
+//    )
+
     deploy(
-      name: 'tds',
       buildVersion: buildVersion,
-      environment: 'production'
+      environment: 'production',
+      numReplicas: 1
     )
   }
 
