@@ -84,19 +84,37 @@ class Panel extends Component {
 }
 
 Panel.propTypes = {
+  /**
+   * One or more CSS class names separated by spaces to append onto the container.
+   * Don't advertise as we plan on removing this feature soon.
+   *
+   * @ignore
+   */
   className: PropTypes.string,
   /**
    * Panel title.
    */
   header: PropTypes.string,
-  children: PropTypes.node,
+  /**
+   * @ignore
+   */
   isActive: PropTypes.bool,
+  /**
+   * @ignore
+   */
   isDisabled: PropTypes.bool,
   /**
-   * Your custom handler for `click` event on Panel toggle.
+   * @ignore
    */
   onPanelClick: PropTypes.func,
-  isFirst: PropTypes.bool
+  /**
+   * @ignore
+   */
+  isFirst: PropTypes.bool,
+  /**
+   * The panels. Must be TDS ExpandCollapse.Panel components.
+   */
+  children: PropTypes.node
 };
 
 Panel.defaultProps = {

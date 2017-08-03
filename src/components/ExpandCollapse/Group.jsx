@@ -93,6 +93,12 @@ class Group extends Component {
 }
 
 Group.propTypes = {
+  /**
+   * One or more CSS class names separated by spaces to append onto the container.
+   * Don't advertise as we plan on removing this feature soon.
+   *
+   * @ignore
+   */
   className: PropTypes.string,
   /**
    * A key identifier that corresponds Group toggles with their respective expanded Panels.
@@ -103,12 +109,18 @@ Group.propTypes = {
    */
   disabledKeys: PropTypes.array,
   /**
-   * Sets Group behaviour to accordion.
+   * If true, sets Group behaviour to accordion.
    */
   accordion: PropTypes.bool,
+  /**
+   * The panels. Must be TDS ExpandCollapse.Panel components.
+   */
   children: PropTypes.node,
   /**
-   * Your custom handler for the `change` event.
+   * A callback to invoke when a Panel is toggled.
+   *
+   * @param {Object} this The Group's context.
+   * @param {String} panelKey The toggled Panel's key.
    */
   onChange: PropTypes.func
 };
