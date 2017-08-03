@@ -6,6 +6,10 @@ import './Panel.scss';
 
 /**
  * A collapsable panel that belongs in an ExpandCollapse Group.
+ *
+ * _This component can only be accessed as a name-spaced component: `ExpandCollapse.Panel`._
+ *
+ * Panel is used with `ExpandCollapse.Group` to produce an ExpandCollapse set.
  */
 class Panel extends Component {
 
@@ -81,10 +85,16 @@ class Panel extends Component {
 
 Panel.propTypes = {
   className: PropTypes.string,
+  /**
+   * Panel title.
+   */
   header: PropTypes.string,
   children: PropTypes.node,
   isActive: PropTypes.bool,
   isDisabled: PropTypes.bool,
+  /**
+   * Your custom handler for `click` event on Panel toggle.
+   */
   onPanelClick: PropTypes.func,
   isFirst: PropTypes.bool
 };

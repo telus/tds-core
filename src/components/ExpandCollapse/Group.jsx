@@ -7,7 +7,8 @@ import classNames from 'classnames';
  *
  * _This component can only be accessed as a name-spaced component: `ExpandCollapse.Group`._
  *
- * Group is used with `ExpandCollapse.Panel` to produce an ExpandCollapse set. See [ExpandCollapse.Panel](#panel) for example.
+ * Group is used with `ExpandCollapse.Panel` to produce an ExpandCollapse set.
+ * See [ExpandCollapse.Panel](#panel) for example.
  */
 class Group extends Component {
 
@@ -93,10 +94,22 @@ class Group extends Component {
 
 Group.propTypes = {
   className: PropTypes.string,
+  /**
+   * A key identifier that corresponds Group toggles with their respective expanded Panels.
+   */
   activeKeys: PropTypes.array,
+  /**
+   * Similar to `activeKeys` except they correspond to collapsed Panels.
+   */
   disabledKeys: PropTypes.array,
+  /**
+   * Sets Group behaviour to accordion.
+   */
   accordion: PropTypes.bool,
   children: PropTypes.node,
+  /**
+   * Your custom handler for the `change` event.
+   */
   onChange: PropTypes.func
 };
 
