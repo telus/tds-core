@@ -63,7 +63,7 @@ To create consistent leading the line height is set to double the value of the b
 
 <br>
 
-# Display Heading 1
+<h1 class="display-heading-1">Display Heading 1</h1>
 
 To be used in Hero Banners. Text within it should only wrap to a maximum of 2 lines.
 
@@ -71,16 +71,16 @@ To be used in Hero Banners. Text within it should only wrap to a maximum of 2 li
 <h1 class="display-heading-1">Heading 1</h1>
 ```
 
-# Heading 1
+<div class="heading-1">Heading 1</div>
 
 Primary headlines, tops of category pages.
 
 ```html
 <h1>Heading 1</h1>
-<div egclass="heading-1">Heading 1</div>
+<div class="heading-1">Heading 1</div>
 ```
 
-## Heading 2
+<div class="heading-2">Heading 2</div>
 
 Secondary headlines, tops of content compartments.
 
@@ -89,7 +89,7 @@ Secondary headlines, tops of content compartments.
 <div class="heading-2">Heading 2</div>
 ```
 
-### Heading 3
+<div class="heading-3">Heading 3</div>
 
 Tertiary headline; tops of content buckets.
 
@@ -98,7 +98,7 @@ Tertiary headline; tops of content buckets.
 <div class="heading-3">Heading 3</div>
 ```
 
-#### Heading 4
+<div class="heading-4">Heading 4</div>
 
 Quaternary headline.
 
