@@ -30,27 +30,20 @@ describe('Button', () => {
 
     button = doShallow({ variant: 'secondary' });
     expect(button).toHaveClassName('secondary');
+
+    button = doShallow({ variant: 'outlined' });
+    expect(button).toHaveClassName('outlined');
   });
 
-  it('can be inverted, outlined, or both', () => {
-    let primaryButton = doShallow({ variant: 'primary', invert: true });
+  it('can be inverted', () => {
+    const primaryButton = doShallow({ variant: 'primary', invert: true });
     expect(primaryButton).toHaveClassName('primaryInverted');
 
-    primaryButton = doShallow({ variant: 'primary', outline: true });
-    expect(primaryButton).toHaveClassName('primaryOutlined');
-
-    primaryButton = doShallow({ variant: 'primary', invert: true, outline: true });
-    expect(primaryButton).toHaveClassName('primaryInvertedOutlined');
-
-
-    let secondaryButton = doShallow({ variant: 'secondary', invert: true });
+    const secondaryButton = doShallow({ variant: 'secondary', invert: true });
     expect(secondaryButton).toHaveClassName('secondaryInverted');
 
-    secondaryButton = doShallow({ variant: 'secondary', outline: true });
-    expect(secondaryButton).toHaveClassName('secondaryOutlined');
-
-    secondaryButton = doShallow({ variant: 'secondary', invert: true, outline: true });
-    expect(secondaryButton).toHaveClassName('secondaryInvertedOutlined');
+    const outlinedButton = doShallow({ variant: 'outlined', invert: true });
+    expect(outlinedButton).toHaveClassName('outlinedInverted');
   });
 
   it('passes additional attributes to button element', () => {

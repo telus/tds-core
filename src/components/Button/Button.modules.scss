@@ -5,16 +5,15 @@
 
 $primary-bg-color: $color-primary;
 $secondary-bg-color: $color-secondary;
-$text-color: $color-white;
+$default-text-color: $color-white;
 
 
-@mixin text-color-outline($text-color) {
-  background-color: transparent;
+@mixin text-color-outline($text-color, $bg-color) {
+  background-color: $bg-color;
+  color: $text-color;
   // Don't add a border because it changes the size of the button.
   // Box-shadow gives a "free" border using the text color.
   box-shadow: 0 0 0 1px;
-
-  color: $text-color;
 }
 
 .button {
@@ -44,33 +43,27 @@ $text-color: $color-white;
   }
 }
 
-.inverted {
-  background-color: $text-color;
-
-  &:hover {
-    @include text-color-outline($text-color)
-  }
-}
-
-.invertedOutlined {
-  background-color: transparent;
-  color: $text-color;
-
-  &:hover {
-    background-color: $text-color;
-    box-shadow: 0 0 0 1px;
-  }
-}
-
 
 .primary {
   composes: button;
 
   background-color: $primary-bg-color;
-  color: $text-color;
+  color: $default-text-color;
 
   &:hover {
-    @include text-color-outline($primary-bg-color);
+    @include text-color-outline($primary-bg-color, $default-text-color);
+  }
+}
+
+.primaryInverted {
+  composes: button;
+
+  background-color: $default-text-color;
+  color: $primary-bg-color;
+
+  &:hover {
+    background-color: $primary-bg-color;
+    color: $default-text-color;
   }
 }
 
@@ -78,59 +71,43 @@ $text-color: $color-white;
   composes: button;
 
   background-color: $secondary-bg-color;
-  color: $text-color;
+  color: $default-text-color;
 
   &:hover {
-    @include text-color-outline($secondary-bg-color);
+    @include text-color-outline($secondary-bg-color, $default-text-color);
   }
-}
-
-.primaryOutlined {
-  composes: button;
-
-  @include text-color-outline($primary-bg-color);
-
-  &:hover {
-    background-color: $primary-bg-color;
-    color: $text-color;
-  }
-}
-
-.secondaryOutlined {
-  composes: button;
-
-  @include text-color-outline($secondary-bg-color);
-
-  &:hover {
-    background-color: $secondary-bg-color;
-    color: $text-color;
-  }
-}
-
-.primaryInverted {
-  composes: inverted button;
-
-  color: $primary-bg-color;
 }
 
 .secondaryInverted {
-  composes: inverted button;
+  composes: button;
 
+  background-color: $default-text-color;
   color: $secondary-bg-color;
-}
-
-.primaryInvertedOutlined {
-  composes: invertedOutlined button;
 
   &:hover {
-    color: $primary-bg-color;
+    background-color: $secondary-bg-color;
+    color: $default-text-color;
   }
 }
 
-.secondaryInvertedOutlined {
-  composes: invertedOutlined button;
+.outlined {
+  composes: button;
+
+  @include text-color-outline($default-text-color, transparent);
 
   &:hover {
-    color: $secondary-bg-color;
+    background-color: $secondary-bg-color;
+    color: $default-text-color;
+  }
+}
+
+.outlinedInverted {
+  composes: button;
+
+  background-color: $default-text-color;
+  color: $secondary-bg-color;
+
+  &:hover {
+    @include text-color-outline($default-text-color, transparent)
   }
 }
