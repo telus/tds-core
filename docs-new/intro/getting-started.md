@@ -6,7 +6,7 @@ Developers:
 ## How do I use this site?
 
 This is a live showcase, meaning this site is powered by actual TDS components. The interactive examples give you an idea
-of both the look-and-feel and the behaviour of the components, while the code snippets and API documentation give developers 
+of both the aesthetic and the behaviour of the components, while the code snippets and API documentation give developers
 the information needed to use the components in an application. Any edits you make to the code snippets will be immediately
 reflected in the corresponding example.
 

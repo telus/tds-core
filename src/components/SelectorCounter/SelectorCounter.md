@@ -29,11 +29,11 @@
 
 Customizing the incrementor and decrementor labels is a helpful way to accurately describe a Selector Counter’s controls, especially when there are more than one present on the page.
 
-The component exposes a focus() method that you can call to place the cursor in the number field.
+The component exposes a `focus()` method that you can call to place the cursor in the number field.
 
 ### Contextual prefix and suffix
 
-The contextPrefix and contextSuffix props can be used to define text that helps the user understand changes in the field’s value. For example, this code produces a field whose value is announced as “You chose [number] smartphone plans” whenever the number changes.
+The `contextPrefix` and `contextSuffix` props can be used to define text that helps the user understand changes in the field’s value. For example, this code produces a field whose value is announced as “You chose [number] smartphone plans” whenever the number changes.
 
 The contextual prefix & suffix can be used together or separately. They’re also optional - if an accessible field can be built using the standard label/description/aria markup, then use those first.
 
