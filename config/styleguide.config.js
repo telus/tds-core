@@ -99,15 +99,6 @@ module.exports = {
       name: 'Components',
       sections: [
         {
-          name: 'Expand Collapse',
-          components() {
-            return [
-              path.resolve('src/components/ExpandCollapse/Group.jsx'),
-              path.resolve('src/components/ExpandCollapse/Panel.jsx')
-            ]
-          }
-        },
-        {
           name: 'Grid',
           components() {
             return [
@@ -118,12 +109,23 @@ module.exports = {
           }
         },
         {
-          name: 'Structure',
+          name: 'Content',
           components() {
             return [
               path.resolve('src/components/Card/Card.jsx')
             ]
-          }
+          },
+          sections: [
+            {
+              name: 'Expand Collapse',
+              components() {
+                return [
+                  path.resolve('src/components/ExpandCollapse/Group.jsx'),
+                  path.resolve('src/components/ExpandCollapse/Panel.jsx')
+                ]
+              }
+            }
+          ]
         },
         {
           name: "Icons",

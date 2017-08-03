@@ -6,23 +6,27 @@
 
 ## Disabled
 
+Use the `disabled` prop to disable the input.
 
 ```
 <SelectorCounter disabled />
 ```
 
-## Success
+## Displaying feedback
+
+Use the `successful` or `invalid` props to style the input appropriately.
+
+In this example, any number greater than 5 is a success.
 
 
 ```
-<SelectorCounter successful />
-```
+initialState = {
+  value: 5
+};
 
-## Invalid
-
-
-```
-<SelectorCounter invalid />
+<SelectorCounter defaultValue={state.value}
+                 onChange={(value) => setState({ value: value})}
+                 successful={state.value > 5} invalid={state.value <= 5}  />
 ```
 
 ## Accessibility

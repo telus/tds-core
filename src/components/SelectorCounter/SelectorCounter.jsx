@@ -6,37 +6,8 @@ import CounterButton from './CounterButton';
 import './SelectorCounter.scss';
 
 /**
- * SelectorCounter lets a user choose a number in increments of one, by
- * clicking increment/decrement buttons.
+ * Choose a number.
  */
-
-const propTypes = {
-  className: PropTypes.string,
-  defaultValue: PropTypes.number,
-  max: PropTypes.number,
-  min: PropTypes.number,
-  id: PropTypes.string,
-  incrementorLabel: PropTypes.string,
-  decrementorLabel: PropTypes.string,
-  onChange: PropTypes.func,
-  disabled: PropTypes.bool,
-  invalid: PropTypes.bool,
-  successful: PropTypes.bool,
-  contextPrefix: PropTypes.string,
-  contextSuffix: PropTypes.string
-};
-
-const defaultProps = {
-  defaultValue: 0,
-  max: null,
-  min: 0,
-  id: `sc${Math.ceil(Math.random() * 10000)}`,
-  incrementorLabel: 'Increase value',
-  decrementorLabel: 'Decrease value',
-  contextPrefix: '',
-  contextSuffix: ''
-};
-
 class SelectorCounter extends Component {
   constructor(props) {
     super(props);
@@ -150,8 +121,76 @@ class SelectorCounter extends Component {
   }
 }
 
-SelectorCounter.propTypes = propTypes;
+SelectorCounter.propTypes = {
+  /**
+   * A unique HTML ID for the input element.
+   */
+  id: PropTypes.string,
+  /**
+   * One or more CSS class names separated by spaces to append onto the container.
+   * Don't advertise as we plan on removing this feature soon.
+   *
+   * @ignore
+   */
+  className: PropTypes.string,
+  /**
+   * The initial value.
+   */
+  defaultValue: PropTypes.number,
+  /**
+   * The maximum allowed value.
+   */
+  max: PropTypes.number,
+  /**
+   * The minimum allowed value.
+   */
+  min: PropTypes.number,
+  /**
+   * An accessibility label for the incrementor button.
+   */
+  incrementorLabel: PropTypes.string,
+  /**
+   * An accessibility label for the decrementor button.
+   */
+  decrementorLabel: PropTypes.string,
+  /**
+   * A callback to be invoked when the value changes.
+   *
+   * @param {number} value The value.
+   */
+  onChange: PropTypes.func,
+  /**
+   * Whether or not to disable the input.
+   */
+  disabled: PropTypes.bool,
+  /**
+   * If true, marks the input as invalid.
+   */
+  invalid: PropTypes.bool,
+  /**
+   * If true, marks the input as successful.
+   */
+  successful: PropTypes.bool,
+  /**
+   * Accessible text prefix for the change event announcement.
+   */
+  contextPrefix: PropTypes.string,
+  /**
+   *
+   * Accessible text suffix for the change event announcement.
+   */
+  contextSuffix: PropTypes.string
+};
 
-SelectorCounter.defaultProps = defaultProps;
+SelectorCounter.defaultProps = {
+  defaultValue: 0,
+  max: null,
+  min: 0,
+  id: `sc${Math.ceil(Math.random() * 10000)}`,
+  incrementorLabel: 'Increase value',
+  decrementorLabel: 'Decrease value',
+  contextPrefix: '',
+  contextSuffix: ''
+};
 
 export default SelectorCounter;
