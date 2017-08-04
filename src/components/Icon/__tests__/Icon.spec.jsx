@@ -1,46 +1,49 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+
 import Icon from '../Icon';
 
 describe('<Icon />', () => {
-  it('renders correct icon classes', () => {
-    const wrapper = shallow(<Icon glyph="spyglass" />);
+  const defaultProps = {
+    glyph: 'checkmark'
+  };
+  const doShallow = (overrides = {}) => shallow(<Icon {...defaultProps} {...overrides} />);
 
-    expect(wrapper.hasClass('icon')).toEqual(true);
-    expect(wrapper.hasClass('icon-core-spyglass')).toEqual(true);
+  it('renders', () => {
+    const icon = doShallow();
+
+    expect(toJson(icon)).toMatchSnapshot();
   });
 
-  it('renders correct variant class', () => {
-    const wrapper = shallow(<Icon glyph="spyglass" variant="secondary" />);
+  it('needs a glyph', () => {
+    const icon = doShallow({ glyph: 'spyglass' });
 
-    expect(wrapper.hasClass('icon--secondary')).toEqual(true);
+    expect(icon).toHaveClassName('icon-core-spyglass');
   });
 
-  it('renders fixed width class', () => {
-    const wrapper = shallow(<Icon glyph="spyglass" fixedWidth />);
+  it('supports variants', () => {
+    const icon = doShallow({ variant: 'secondary' });
 
-    expect(wrapper.hasClass('icon--fw')).toEqual(true);
+    expect(icon).toHaveClassName('icon--secondary');
   });
 
-  it('correctly merges className with generated classes', () => {
-    const wrapper = shallow(<Icon glyph="spyglass" className="red" />);
+  it('can be fixed width', () => {
+    const icon = doShallow({ fixedWidth: true });
 
-    expect(wrapper.hasClass('icon')).toEqual(true);
-    expect(wrapper.hasClass('icon-core-spyglass')).toEqual(true);
-    expect(wrapper.hasClass('red')).toEqual(true);
+    expect(icon).toHaveClassName('icon--fw');
   });
 
-  it('correctly consumes props', () => {
-    // These are the props that should be consumed, but not passed to the
-    // icon node inside the component. Every other prop should show up
-    // on the node.
-    const consumableProps = ['glyph', 'variant', 'fixedWidth'];
-    const title = 'a title';
-    const wrapper = shallow(<Icon glyph="spyglass" title={title} />);
-    const componentProps = wrapper.props();
-    const leftoverProps = consumableProps.filter(p => componentProps[p]);
+  it('supports custom CSS classes', () => {
+    const icon = doShallow({ className: 'custom-class' });
 
-    expect(leftoverProps.length).toEqual(0);
-    expect(wrapper.prop('title')).toEqual(title);
+    expect(icon).toHaveClassName('custom-class');
+  });
+
+  it('passes additional attributes to the icon element', () => {
+    const button = doShallow({ id: 'the-icon', role: 'button' });
+
+    expect(button).toHaveProp('id', 'the-icon');
+    expect(button).toHaveProp('role', 'button');
   });
 });
