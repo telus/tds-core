@@ -11,19 +11,34 @@ const getClassName = (variant, invert) => {
   return styles[variant];
 };
 
+const safeRest = ({ style, className, ...props }) => props;
+
 /**
+ *
  * <span class="docs--badge green">coming soon!</span>
  */
 const Button = ({ type, variant, invert, children, ...rest }) => (
-  <button {...rest} type={type} className={getClassName(variant, invert)}>
+  <button {...safeRest(rest)} type={type} className={getClassName(variant, invert)}>
     {children}
   </button>
 );
 
 Button.propTypes = {
+  /**
+   * The HTML button type.
+   */
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
+  /**
+   * The style.
+   */
   variant: PropTypes.oneOf(['primary', 'secondary', 'outlined']),
+  /**
+   * Whether or not to invert the variant's color scheme.
+   */
   invert: PropTypes.bool,
+  /**
+   * The label.
+   */
   children: PropTypes.string.isRequired
 };
 Button.defaultProps = {

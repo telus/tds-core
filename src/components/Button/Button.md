@@ -1,6 +1,16 @@
-WIP
-
 ## Minimal Usage
+
+Provide a function in the `onClick` prop to perform an action when clicked. **Avoid using a button if navigation 
+is the primary action, as a link is more appropriate.**
+
+### Recommendations
+
+* Use buttons to move though a transaction.
+* Aim to use only one button per page.
+* Avoid excessively long button text.
+* Make sure the button text describes an action.
+
+By default, Buttons will be displayed in the `primary` variant.
 
 ```
 <Button>Submit</Button>

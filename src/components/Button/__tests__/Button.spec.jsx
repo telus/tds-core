@@ -52,4 +52,11 @@ describe('Button', () => {
     expect(button).toHaveProp('id', 'the-button');
     expect(button).toHaveProp('tabindex', 1);
   });
+
+  it('does not allow custom CSS', () => {
+    const button = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } });
+
+    expect(button).not.toHaveProp('className', 'my-custom-class');
+    expect(button).not.toHaveProp('style');
+  });
 });
