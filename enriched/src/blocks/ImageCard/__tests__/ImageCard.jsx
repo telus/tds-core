@@ -17,7 +17,7 @@ describe('ImageCard', () => {
   };
 
   const imageCard = shallow(
-    <ImageCard content={content}><p>This is a child of this component</p></ImageCard>
+    <ImageCard content={content}>Children</ImageCard>
   );
 
   it('should render ImageCard (snapshot)', () => {
@@ -32,7 +32,7 @@ describe('ImageCard', () => {
     content.contentAlign = 'Left';
 
     const imageCardLeft = shallow(
-      <ImageCard content={content}><p>This is a child of this component</p></ImageCard>
+      <ImageCard content={content}>Children</ImageCard>
     );
 
     expect(imageCardLeft.find('.image-card--left').length).toEqual(1);

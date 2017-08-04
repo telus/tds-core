@@ -44,7 +44,7 @@ import ImageCard from './ImageCard';
 // Example of data structure that needs to be supplied to Component
 const data = {
   id: 'accessory-of-the-month', // optional, text string
-  headline: 'Accessory of the Month', // required, text string
+  headline: 'Accessory of the Month', // optional, text string
   contentAlign: 'Left' // optional. Accepts 'Left' or 'Right'. Defaults to right. Text string
   bannerImage: { // Standard media field from Contentful
     file: {
@@ -60,7 +60,7 @@ const data = {
 ```
 <ImageCard content={{
   id: 'accessory-of-the-month', // optional, text string
-  headline: 'Accessory of the Month', // required, text string
+  headline: 'Accessory of the Month', // optional, text string
   contentAlign: 'Left' // optional. Accepts 'Left' or 'Right'. Defaults to right. Text string
   bannerImage: { // Standard media field from Contentful
     file: {

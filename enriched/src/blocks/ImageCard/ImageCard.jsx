@@ -17,11 +17,14 @@ const ImageCard = ({ content, children }) => {
         ${content.contentAlign === 'Left' ? 'image-card--left' : 'image-card--right'}`}
       id={content.id}
     >
-      <h2 className="image-card__headline" tabIndex="0">{content.headline}</h2>
+      {
+        content.headline &&
+          <h2 className="image-card__headline" tabIndex="0">{content.headline}</h2>
+      }
       <div className="image-card__block" style={background}>
         <img
           className="image-card__image"
-          src={content.bannerImage.file.url}
+          src={content.bannerImage.file.url} 
           alt={content.bannerImage.description} />
         <div className="image-card__content">
           { children }
