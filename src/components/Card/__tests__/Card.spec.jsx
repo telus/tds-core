@@ -2,20 +2,14 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import sinon from 'sinon';
-
-import * as deprecate from '../../../deprecate';
+import { warn } from '../../../deprecate';
 import Card from '../Card';
 
+jest.mock('../../../deprecate', () => (
+  { warn: jest.fn() }
+));
+
 describe('<Card />', () => {
-  beforeEach(() => {
-    sinon.spy(deprecate, "warn");
-  });
-
-  afterEach(() => {
-    deprecate.warn.restore();
-  });
-
   it('renders', () => {
     const card = shallow(<Card>Some content</Card>);
 
@@ -33,7 +27,7 @@ describe('<Card />', () => {
     const card = shallow(<Card className="some-class">Some content</Card>);
 
     expect(card).toHaveClassName('some-class');
-    expect(deprecate.warn.called).toBeTruthy();
+    expect(warn).toHaveBeenCalled();
   });
 
   it('accepts but deprecates inline styles', () => {
@@ -41,6 +35,6 @@ describe('<Card />', () => {
     const card = shallow(<Card style={styles}>Some content</Card>);
 
     expect(card).toHaveProp('style', styles);
-    expect(deprecate.warn.called).toBeTruthy();
+    expect(warn).toHaveBeenCalled();
   });
 });

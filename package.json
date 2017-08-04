@@ -77,7 +77,6 @@
     "rollup-plugin-sass": "^0.5.3",
     "s3-website": "^3.1.0",
     "sass-loader": "^6.0.6",
-    "sinon": "^2.3.8",
     "style-loader": "^0.18.2",
     "stylelint": "^8.0.0",
     "stylelint-config-sass-guidelines": "^2.2.0",

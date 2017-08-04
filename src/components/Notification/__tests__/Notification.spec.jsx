@@ -2,23 +2,17 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import sinon from 'sinon';
-
-import * as deprecate from '../../../deprecate';
+import { warn } from '../../../deprecate';
 import Notification from '../../Notification/Notification';
+
+jest.mock('../../../deprecate', () => (
+  { warn: jest.fn() }
+));
 
 describe('<Notification />', () => {
   const doShallow = ({ ...overrides }) => (
     shallow(<Notification {...overrides}>Some content</Notification>)
   );
-
-  beforeEach(() => {
-    sinon.spy(deprecate, "warn");
-  });
-
-  afterEach(() => {
-    deprecate.warn.restore();
-  });
 
   it('renders', () => {
     const notification = doShallow();
@@ -53,7 +47,7 @@ describe('<Notification />', () => {
     const notification = doShallow({ className: 'some-class' });
 
     expect(notification).toHaveClassName('some-class');
-    expect(deprecate.warn.called).toBeTruthy();
+    expect(warn).toHaveBeenCalled();
   });
 
   it('accepts but deprecates inline styles', () => {
@@ -61,6 +55,6 @@ describe('<Notification />', () => {
     const notification = doShallow({ style });
 
     expect(notification).toHaveProp('style', style);
-    expect(deprecate.warn.called).toBeTruthy();
+    expect(warn).toHaveBeenCalled();
   });
 });
