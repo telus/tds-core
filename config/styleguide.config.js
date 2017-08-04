@@ -40,6 +40,10 @@ module.exports = {
           content: path.resolve('docs-new/intro/getting-started.md')
         },
         {
+          name: 'Design Vision',
+          content: path.resolve('docs-new/intro/design-vision.md')
+        },
+        {
           name: 'Releases',
           content: path.resolve('docs-new/intro/releases.md')
         },
