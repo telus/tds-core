@@ -27,6 +27,9 @@ module.exports = {
     return `import { ${name} } from '@telusdigital/tds';`;
   },
 
+  styleguideComponents: {
+		Logo: path.resolve('docs-new/components/Logo')
+  },
   showUsage: true,
   showCode: true,
 
@@ -194,7 +197,11 @@ module.exports = {
         {
           test: /\.png$/,
           use: 'url-loader?mimetype=image/png'
-        }
+        },
+        {
+					test: /\.svg$/,
+					loader: 'url-loader',
+				}
       ]
     }
   },

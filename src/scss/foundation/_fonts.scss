@@ -54,7 +54,7 @@ $font-url-prefix: "#{$font-url-prefix}/etext";
   font-style: normal;
   font-weight: 700;
   src:
-    url("https://cdn.telus.digital/thorium/core/fonts/etext/3e8a8b56-3cb0-4347-b670-eaaf06b76e9b.woff2") format("woff2"),
+    url("#{$font-url-prefix}/3e8a8b56-3cb0-4347-b670-eaaf06b76e9b.woff2") format("woff2"),
     url("#{$font-url-prefix}/07173950-fa69-4b65-9c71-0cf2ec00b51d.woff") format("woff"),
     url("#{$font-url-prefix}/aac5a4b8-ffd3-4529-a098-21b91bc86f9a.ttf") format("truetype"),
     url("#{$font-url-prefix}/a747e1ea-ecdf-4f3d-ad47-3df9cfbee3cc.eot?#iefix") format("eot");
