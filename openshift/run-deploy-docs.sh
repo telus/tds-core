@@ -23,15 +23,15 @@ oc run ${NAME}-${VERSION} \
           "name":"AWS_ACCESS_KEY_ID",
           "valueFrom":{
             "secretKeyRef":{
-              "key": "aws.accesskey",
-              "name":"aws-access-key-secret"
+              "key": "aws.client",
+              "name":"aws-client-secret"
             }
           }
         },{
           "name":"AWS_SECRET_ACCESS_KEY",
           "valueFrom":{
             "secretKeyRef":{
-              "key": "aws.secretkey",
+              "key": "aws.secret",
               "name":"aws-secret-key-secret"
             }
           }

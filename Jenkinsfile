@@ -1,8 +1,3 @@
-/**
- * Defines our build pipeline
- * See: JENKINS.md
- */
-
 String buildVersion = env.BUILD_NUMBER
 
 try {
@@ -53,22 +48,15 @@ try {
   }
 
   stage('Deploy Staging') {
-//  WIP -- Waiting on AWS keys and a bucket to deploy to.
-//    deploy(
-//      name: 'tds',
-//      buildVersion: buildVersion,
-//      environment: 'staging'
-//    )
-
     deploy(
+      name: 'tds',
       buildVersion: buildVersion,
-      environment: 'staging',
-      numReplicas: 1
+      environment: 'staging'
     )
   }
 
   stage('Deploy Prod Trigger') {
-    inputUrl = env.BUILD_URL ? "(${env.BUILD_URL}deploy-prod-trigger)" : '';
+    inputUrl = env.BUILD_URL ? "(${env.BUILD_URL}deploy-prod-trigger)" : ''
     notifyBuild(
       message: "Build is ready for Production ${inputUrl}",
       color: '#0000FF',
@@ -80,17 +68,10 @@ try {
   }
 
   stage('Deploy Production') {
-//  WIP -- Waiting on AWS keys and a bucket to deploy to.
-//    deploy(
-//      name: 'tds',
-//      buildVersion: buildVersion,
-//      environment: 'production'
-//    )
-
     deploy(
+      name: 'tds',
       buildVersion: buildVersion,
-      environment: 'production',
-      numReplicas: 1
+      environment: 'production'
     )
   }
 
@@ -171,40 +152,9 @@ def test(Map attrs) {
 }
 
 def deploy(Map attrs) {
-//  WIP -- Waiting on AWS keys and a bucket to deploy to.
-//  node {
-//    unstash 'scripts'
-//    sh("./openshift/run-deploy-docs.sh ${attrs.name} ${attrs.buildVersion} ${attrs.environment}")
-//  }
-
   node {
-    String dockerRegistry = sh(
-      returnStdout: true,
-      script: "oc get imagestream tds -o='jsonpath={.status.dockerImageRepository}'"
-    ).trim()
-
-    sh("""
-      # workaround for https://github.com/kubernetes/kubernetes/issues/34413
-      if oc get hpa/tds-${attrs.environment} > /dev/null 2>&1
-      then
-        oc delete hpa/tds-${attrs.environment}
-      fi
-
-      oc new-app \
-        --template='tds' \
-        -p VERSION='${attrs.buildVersion}' \
-        -p ENVIRONMENT='${attrs.environment}' \
-        -p DOCKER_REGISTRY='${dockerRegistry}:${attrs.buildVersion}' \
-        -p NUM_REPLICAS='${attrs.numReplicas}' \
-        -o yaml | oc apply -f -
-
-      oc autoscale dc/tds-${attrs.environment} --min ${attrs.numReplicas} --max 5 --cpu-percent=80
-    """)
-
-    openshiftVerifyDeployment(
-      deploymentConfig: "tds-${attrs.environment}",
-      waitTime: '1800000'
-    )
+    unstash 'scripts'
+    sh("./openshift/run-deploy-docs.sh ${attrs.name} ${attrs.buildVersion} ${attrs.environment}")
   }
 }
 
