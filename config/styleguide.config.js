@@ -149,7 +149,8 @@ module.exports = {
           name: 'Forms',
           components() {
             return [
-              path.resolve('src/components/SelectorCounter/SelectorCounter.jsx'),
+              // path.resolve('src/components/Button/Button.jsx'),
+              path.resolve('src/components/SelectorCounter/SelectorCounter.jsx')
             ]
           }
         },
@@ -196,13 +197,9 @@ module.exports = {
           use: ['style-loader', 'css-loader', 'sass-loader']
         },
         {
-          test: /\.png$/,
-          use: 'url-loader?mimetype=image/png'
-        },
-        {
-					test: /\.svg$/,
-					loader: 'url-loader',
-				}
+          test: /\.(png|jpg|svg)$/,
+          use: 'url-loader'
+        }
       ]
     }
   },

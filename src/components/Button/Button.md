@@ -16,29 +16,23 @@ By default, Buttons will be displayed in the `primary` variant.
 <Button>Submit</Button>
 ```
 
-## Variants
+Specify the `variant` to create a button for secondary actions.
+
 ```
-<div style={{backgroundColor: "blue", padding: "10px"}}>
-  <div>
-    <Button variant="primary">Submit</Button>
-    <Button variant="primary" invert>Submit</Button>
-  </div>
-  <div>
-    <Button variant="secondary">Reset</Button>
-    <Button variant="secondary" invert>Reset</Button>
-  </div>
-  <div>
-    <Button variant="outlined">Go back</Button>
-    <Button variant="outlined" invert>Go back</Button>
-  </div>
-</div>
+<Button variant="secondary">Find out more</Button>
 ```
 
-## Inverted
+## On images or colors
+
+Use the `outlined` variant when placing a button on top of a solid color other than white or on an image. Inverting the 
+color scheme with the `invert` attribute is another option.
+
+Edit the code block to try different combinations of `variant` and `invert`. 
+
 ```
-<div style={{backgroundColor: "blue", padding: "10px"}}>
-  <Button variant="primary" invert>Submit</Button>
-  <Button variant="secondary" invert>Reset</Button>
+const Hero = require('./__docs__/Hero').default;
+
+<Hero>
   <Button variant="outlined" invert>Go back</Button>
-</div>
+</Hero>
 ```

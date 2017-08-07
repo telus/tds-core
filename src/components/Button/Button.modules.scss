@@ -51,6 +51,8 @@ $text-color: $color-white;
   background-color: $text-color;
 
   &:hover {
+    @include border;
+
     color: $text-color;
   }
 }
