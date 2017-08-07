@@ -27,9 +27,6 @@ module.exports = {
     return `import { ${name} } from '@telusdigital/tds';`;
   },
 
-  styleguideComponents: {
-		Logo: path.resolve('docs-new/components/Logo')
-  },
   showUsage: true,
   showCode: true,
 
@@ -160,6 +157,7 @@ module.exports = {
     }
   ],
 
+
   template: path.resolve('docs-new/index.html'),
   assetsDir: path.resolve('docs-new/assets/'),
   styleguideDir: path.resolve('styleguide'),
@@ -167,6 +165,9 @@ module.exports = {
     path.resolve('src/scss/global.scss'),
     path.resolve('docs-new/scss/styleguide.scss')
   ],
+  styleguideComponents: {
+    Logo: path.resolve('docs-new/components/Logo')
+  },
   webpackConfig: {
     module: {
       loaders: [

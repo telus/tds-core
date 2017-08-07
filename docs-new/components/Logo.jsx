@@ -1,13 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
+import {version} from '../../package.json';
 import logo from './Logo.svg';
 
-export function LogoRenderer() {
-  return (
-    <a href="#telus-design-system" title="TELUS Design System Homepage" className="logo">
-      <img src={logo} alt="TELUS Logo"/>
+const Logo = () => (
+  <div>
+    <a href="/" title="TELUS Design System">
+      <img src={logo} alt="TELUS Logo" />
     </a>
-  );
-}
 
-export default LogoRenderer;
+    TDS v{version}
+  </div>
+);
+
+export default Logo;
