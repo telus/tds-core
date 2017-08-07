@@ -35,7 +35,7 @@ oc run ${NAME}-${VERSION} \
               "name":"aws-secret-key-secret"
             }
           }
-        }]
+        }],
         "command":["yarn", "deploy:docs", "--", "'${ENV}'"]
       }]
     }
