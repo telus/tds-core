@@ -21,7 +21,7 @@ select {
   outline: 0;
   padding: 11px;
   width: 100%;
-  transition: border-color .1s linear, background-color .1s linear;
+  transition: background-color .1s linear;
 
   .field & {
     margin-bottom: $form-field-bottom-spacing;
@@ -37,7 +37,8 @@ select {
   }
 
   &:focus {
-    border-color: $color-shark;
+    border-color: transparent;
+    box-shadow: 0 0 4px 1px $color-shuttle-grey;
   }
 
   @include from-breakpoint(medium) {
