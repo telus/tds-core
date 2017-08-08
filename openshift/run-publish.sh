@@ -27,7 +27,7 @@ oc run ${NAME}-${VERSION} \
             }
           }
         }],
-        "command":["yarn", "deploy:package"]
+        "command":["npm", "run", "deploy:package"]
       }]
     }
   }'
