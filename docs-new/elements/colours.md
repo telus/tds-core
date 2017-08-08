@@ -5,11 +5,15 @@
 
 Colour creates visual impact and distinguishes a brand. It conveys personality, attracts the eye and indicates change. At a minimum; colours use the WCAG 2.0 Level AA contrast ratio of at least 4.5:1.
 
+These colours are use cases and are intended to be specific to digital experiences only. For the full guidelines on using colour, including traditional media and other forms of communications, visit [BrandHub](https://brand.telus.com/guidelines/telus-colours).
+
 ## Brand colours
 
 ---
 
-White is the cornerstone of our palette and the most dominant colour in it, but purple and green are what make it distinctive and memorable. See usage description below.
+White is the most dominant colour in our palette and should be the foundation of every page. Purple and green are used to accent white space through buttons, text colour, and links.
+
+For more insight in how we use whitespace and our colour palette, go to [BrandHub](http://brand.telus.com/).
 
 ## Buttons/Links/Headings/Body
 
@@ -24,12 +28,12 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
       </p>
       <p>`$color-accessible-green`</p>
       <p>#248700</p>
-      <p>Usage: Primary button backgrounds/outline</p>
+      <p>Usage: Primary button backgrounds/outline, text links</p>
     </div>
     <div class="medium-4">
       <span class="color-preview" style="background-color: rgb(102, 204, 0);"></span>
       <p>
-        <strong>Telus Green</strong>
+        <strong>TELUS Green</strong>
       </p>
       <p>`$color-telus-green`</p>
       <p>#66CC00</p>
@@ -41,7 +45,7 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
     <div class="medium-4">
       <span class="color-preview" style="background-color: rgb(75,40,109);"></span>
       <p>
-        <strong>Telus Purple</strong>
+        <strong>TELUS Purple</strong>
       </p>
       <p>`$color-telus-purple`</p>
       <p>#4B286D</p>
@@ -96,6 +100,8 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
 
 ## Notifications/messaging/errors
 
+These colours are not part of the TELUS brand colour palette, however are used sparingly, but intentionally to play a functional role and support a positive user experience.
+
 ---
 
 <div class="container colors">
@@ -145,51 +151,51 @@ White is the cornerstone of our palette and the most dominant colour in it, but 
         Usage: Branded messaging background
       </p>
     </div>
-    <div class="grid-row">
-      <div class="medium-4">
-        <span class="color-preview" style="background-color: rgb(216,216,216);"></span>
-        <p>
-          <strong>Gainsboro</strong>
-        </p>
-        <p>
-          `$color-gainsboro`
-        </p>
-        <p>
-          #D8D8D8
-        </p>
-        <p>
-          Usage: Horizontal, vertical and wave dividers
-        </p>
-      </div>
-      <div class="medium-4">
-        <span class="color-preview" style="background-color: rgb(247,247,248);"></span>
-        <p>
-          <strong>Athens Grey</strong>
-        </p>
-        <p>
-          `$color-athens-grey`
-        </p>
-        <p>
-          #F7F7F8
-        </p>
-        <p>
-          Usage: Helper/disabled state background
-        </p>
-      </div>
-      <div class="medium-4">
-        <span class="color-preview" style="background-color: rgb(244,249,242);"></span>
-        <p>
-          <strong>Panache</strong>
-        </p>
-        <p>
-          `$color-panache`
-        </p>
-        <p>
-          #F4F9F2
-        </p>
-        <p>
-          Usage: Success messaging background
-        </p>
-      </div>
+  </div>
+  <div class="grid-row">
+    <div class="medium-4">
+      <span class="color-preview" style="background-color: rgb(216,216,216);"></span>
+      <p>
+        <strong>Gainsboro</strong>
+      </p>
+      <p>
+        `$color-gainsboro`
+      </p>
+      <p>
+        #D8D8D8
+      </p>
+      <p>
+        Usage: Horizontal, vertical and wave dividers
+      </p>
+    </div>
+    <div class="medium-4">
+      <span class="color-preview" style="background-color: rgb(247,247,248);"></span>
+      <p>
+        <strong>Athens Grey</strong>
+      </p>
+      <p>
+        `$color-athens-grey`
+      </p>
+      <p>
+        #F7F7F8
+      </p>
+      <p>
+        Usage: Helper/disabled state background
+      </p>
+    </div>
+    <div class="medium-4">
+      <span class="color-preview" style="background-color: rgb(244,249,242);"></span>
+      <p>
+        <strong>Panache</strong>
+      </p>
+      <p>
+        `$color-panache`
+      </p>
+      <p>
+        #F4F9F2
+      </p>
+      <p>
+        Usage: Success messaging background
+      </p>
     </div>
   </div>

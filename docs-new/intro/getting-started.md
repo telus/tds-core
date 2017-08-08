@@ -2,6 +2,10 @@ Developers:
 
 * The [README](https://github.com/telusdigital/tds/blob/master/README.md) has installation and usage instructions.
 
+Designers:
+
+* Must take [Branding 101](https://brand.telus.com/brand/presentations-training) to review and understand brand guidelines.
+
 
 ## How do I use this site?
 
