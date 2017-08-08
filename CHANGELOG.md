@@ -1,3 +1,131 @@
+#### 0.19.0 (2017-08-08)
+
+##### Build System / Dependencies
+
+* **docker:**
+  * Add an express server to serve the static styleguide. ([ae26a084](https://github.com/telusdigital/tds/commit/ae26a0843e4dadf15544d4df3df6888edeeb2019))
+  * Add comments to the docker config files to make them easy to understand. ([86f8187a](https://github.com/telusdigital/tds/commit/86f8187a14a663ac140cd3832ee33392e4a0c0df))
+  * Add an initial docker-compose.yml file for easy running of docker commands. ([ec3c6fbd](https://github.com/telusdigital/tds/commit/ec3c6fbdef988b28a6919b5b7660a2242a8fd828))
+  * Add an initial working Dockerfile and .dockerignore file. ([e48ae35b](https://github.com/telusdigital/tds/commit/e48ae35b8be0a2e629814effe16ad8fa509feb78))
+* **bundler:**
+  * Remove image copy for Headline block because it is not needed now. ([26265f36](https://github.com/telusdigital/tds/commit/26265f36f2530dbbb27b78404fe5ce008a844214))
+  * add new tasks to copy scss files with re-usable vars, mixins to dist/scss ([93cb4b65](https://github.com/telusdigital/tds/commit/93cb4b6592f6f90d9491868784cd61a534ec949d))
+  * add global CSS to the rollup build ([6c5daa72](https://github.com/telusdigital/tds/commit/6c5daa72333b26d5bacc1c30506d565d4f0e3f3f))
+  * Remove overriding of caret up icon in Panel. Not needed. ([157b0a8d](https://github.com/telusdigital/tds/commit/157b0a8db2f86fabf47f6af84dc31d28b2569a41))
+  * add block-components to the rollup build ([ae9507be](https://github.com/telusdigital/tds/commit/ae9507be508ded53e9504517d4c578619b6a5040))
+  * add all blocks to the rollup build ([f3eb547b](https://github.com/telusdigital/tds/commit/f3eb547bc0cdcd2c558b2e55b06506c5ca12c29f))
+  * add the rest of the components to the rollup build ([8ade54ac](https://github.com/telusdigital/tds/commit/8ade54ac55ce5024ca25780a9b68896772cdc2ab))
+  * introduced rollup to do an ES6 modules build ([eb485e4e](https://github.com/telusdigital/tds/commit/eb485e4eed05a974fa0cdb463d3f99319121e623))
+* **release script:** Enhance the release script for running locally. ([13c49b3d](https://github.com/telusdigital/tds/commit/13c49b3d1d3edc7189e75b86a44e033a03bcb1fb))
+* **rollup:** Stop overriding babelrc with rollup, move it to the babelrc instead ([1eabaeeb](https://github.com/telusdigital/tds/commit/1eabaeeb95f1f7f40df4c41e359502d508477433))
+* **package:**
+  * Set semantic versions for peer dependencies ([8ea94a99](https://github.com/telusdigital/tds/commit/8ea94a99f43c4cf2e83ba39922bae5eb5a2356bc))
+  * add dist and src to the files array for the package ([42cff529](https://github.com/telusdigital/tds/commit/42cff529a1b2c34281835a06891867f069435d0f))
+  * remove /enriched ([959b8496](https://github.com/telusdigital/tds/commit/959b8496ae1f6386279fd8890f6f2da51362f51c))
+  * remove core/ ([329779ee](https://github.com/telusdigital/tds/commit/329779ee0b9006e31b9d60802e7cf6831b2d176f))
+  * merging core and enriched: copied all js files into src/ ([c4585b24](https://github.com/telusdigital/tds/commit/c4585b245cac99ee670e0892f17f41608f35298c))
+  * merging core & enriched: copy global Sass files into src/scss ([141f1ab8](https://github.com/telusdigital/tds/commit/141f1ab81d88e33280ef5f92ea7d23c97c10684b))
+
+##### Chores
+
+* **webhook:** Add an empty line in README to test the Github webhook. ([cd95759d](https://github.com/telusdigital/tds/commit/cd95759dc1555ec99e897fcee4c920d93e7ba356))
+* **package.json:** Remove README.md to prevent unwanted files getting packaged ([da485aa9](https://github.com/telusdigital/tds/commit/da485aa9dcca4e9598459574c11fadaf6891abcd))
+* **README:** Correct Sass paths in usage of TDS Sass variables ([36edaedb](https://github.com/telusdigital/tds/commit/36edaedb0dc17e8391c6b58dc8a56a30e12bf912))
+* **dependencies:** Upgrade styleguidist to get some patches. Add file-loader to fix peer-dependenc ([99823763](https://github.com/telusdigital/tds/commit/99823763e5302eae02da6cbb656b6ebd78384188))
+
+##### Continuous Integration
+
+* **Deploy Docs:** Edit deploy-docs script to deploy staging to a folder ([8b61d819](https://github.com/telusdigital/tds/commit/8b61d8198dc90cf789c5314b99623926ac2045b0))
+* **DeployDocs:** Add missing comma in deploy-docs script. ([a4c49b54](https://github.com/telusdigital/tds/commit/a4c49b54ad8769cacc8c0bb85e7f3e7643c88df4))
+* **Jenkins:** Add stages for deploying docs to s3 and publishing to npm. ([2b04d6f8](https://github.com/telusdigital/tds/commit/2b04d6f86870d56bcdac551bd19fba4a4d855e6d))
+* **openshift:**
+  * Move back to using S3 as deployment target for the docs site. ([cd18dd34](https://github.com/telusdigital/tds/commit/cd18dd34eb67a430bae1a69bf4f0206c55e76477))
+  * Add a stage to deploy docs to prod and publish the npm package. ([90fbb414](https://github.com/telusdigital/tds/commit/90fbb41449d10b036d2fc8a40a032c3eea476bef))
+  * Add the user input stage back into the pipeline ([fa61ee71](https://github.com/telusdigital/tds/commit/fa61ee7101e922cf4c0594412a14b87bc21a27a3))
+  * Configure Jenkins pipeline and Openshift deployment to staging. ([b2e0e951](https://github.com/telusdigital/tds/commit/b2e0e9513766d867cb947e102dd5bd8ab697c58c))
+  * Add openshift files from isomorphic-starter-kit. ([82957b00](https://github.com/telusdigital/tds/commit/82957b00410d44b9e551cb85e360cbcc1ac51118))
+* **docker:** Add a new user to the Dockerfile to try to resolve CI errors. ([6a1cb974](https://github.com/telusdigital/tds/commit/6a1cb974c89c7dfc2e94dde8316a0339a813d87e))
+
+##### Documentation Changes
+
+* add brandhub references ([4b17482d](https://github.com/telusdigital/tds/commit/4b17482d6c40bda68128d8ac86fb3084e3a8bf88))
+* adjust grammar ([61fa0390](https://github.com/telusdigital/tds/commit/61fa039036c4036cd546ffdeeff839c7e2ae8bdc))
+* **Logo:**
+  * Add the version into the custom logo. ([fc6c6ae1](https://github.com/telusdigital/tds/commit/fc6c6ae132e6a07200bad1d08ea5b6908f6016bc))
+  * Add Telus Logo :) ([e2bd3e86](https://github.com/telusdigital/tds/commit/e2bd3e86c4adf555e760eda9a1315fd15fe55562))
+* **contributing:**
+  * add roadmap ([eb5f2fab](https://github.com/telusdigital/tds/commit/eb5f2fab55aec85623fa81294d510c5c9db0294f))
+  * Add more detail to the contributing guide and docs ([1d97d093](https://github.com/telusdigital/tds/commit/1d97d093245ca3d47cdfb3715e09a00fb2e8c02f))
+* **typography:**
+  * Use header typography classes in the docs. ([230c97dc](https://github.com/telusdigital/tds/commit/230c97dc94ad81208f46dc3e5fe55a85b6b8a398))
+  * Document typography page in Styleguidist ([c537b708](https://github.com/telusdigital/tds/commit/c537b70808312a7968ec224e89e18614c79c773c))
+* **SelectorCounter:**
+  * Add examples and document the API. ([4548abef](https://github.com/telusdigital/tds/commit/4548abef81e42598f09090a9bd38ee35d65df4ff))
+  * migrate content to Styleguidist ([98cc612b](https://github.com/telusdigital/tds/commit/98cc612b184e55a2265bc81e92ee7e2621ad2243))
+* **ExpandCollapse:** Polish the exmaples and API. ([1b283768](https://github.com/telusdigital/tds/commit/1b28376805edc7a0ba0b10f34e3fb11b4a5d009b))
+* **Notification:**
+  * add real examples ([503a1e91](https://github.com/telusdigital/tds/commit/503a1e91a70ad3350a50bc2c4ff61ed75dd8b97c))
+  * Document Notification component in Styleguidist ([440b7375](https://github.com/telusdigital/tds/commit/440b73757003d2f531f15fad2f3f1fab54524782))
+* **expandcollapse:**
+  * complete examples ([9747b761](https://github.com/telusdigital/tds/commit/9747b761ff4472092eabd880d0a8fe7a2f1a141e))
+  * add to styleguidist ([026311a8](https://github.com/telusdigital/tds/commit/026311a86d5aab79deac7b418b6f93d2bb982d21))
+* **icon:** Write docs for Icon is stylguidist format. ([934309f3](https://github.com/telusdigital/tds/commit/934309f3677924cb015f6d779f6d46a3a391f5f6))
+* **elements:** Write explanation of replacing styles with components. ([769da97c](https://github.com/telusdigital/tds/commit/769da97ccf67fe6b39918c9297b4eac9148501b7))
+* **grid:**
+  * Write docs for the Grid components in the stylguidist format ([7d3c91c0](https://github.com/telusdigital/tds/commit/7d3c91c032d1c429280d6db86f67827d82ab58b4))
+  * Document Grid CSS in Styleguidist ([f0f6a59b](https://github.com/telusdigital/tds/commit/f0f6a59bce77f648797abbf2a3a5e924259fa6bc))
+* **steps:** Document Steps in the styleguidist format ([dd10542b](https://github.com/telusdigital/tds/commit/dd10542b36062ae11aa9acd800d9394f08afa7d0))
+* **overview:**
+  * Add more detail to the overview and getting started sections ([40567906](https://github.com/telusdigital/tds/commit/40567906c2cd5f237fe21772d1edbbe2ab2fe035))
+  * Add docs for TDS overview and releases ([074f8806](https://github.com/telusdigital/tds/commit/074f8806268608e29273a7357cce721f3985bee1))
+* **README:**
+  * Correct spellings and grammar ([a33a7783](https://github.com/telusdigital/tds/commit/a33a7783cf94a1225ffec0ec6b779cfea8edd68f))
+  * Update the README with new installation and usage instructions ([ffdd73a9](https://github.com/telusdigital/tds/commit/ffdd73a9717cd242997a2b638d21d7a4ed64a2df))
+* **Utility Icons:**
+  * Document Utility icons CSS in Styleguidist ([44429d55](https://github.com/telusdigital/tds/commit/44429d55b03defbfde3eb41699a4b96a0ff0a2a5))
+  * Document Utility icons CSS in Styleguidist ([48c0d2f0](https://github.com/telusdigital/tds/commit/48c0d2f0cc412a286ca92185a0afeeef43073fa9))
+* **lists:** Document Lists CSS in Styleguidist ([a4dd1f7d](https://github.com/telusdigital/tds/commit/a4dd1f7dc2714bb5b5d2d5a07b7dbd9bacbb2f94))
+* **forms:** Document forms CSS in Styleguidist ([ad98e225](https://github.com/telusdigital/tds/commit/ad98e225cf29751e49ced20e6841be706d5f32dc))
+* **card:** add jsdoc ([8ea00287](https://github.com/telusdigital/tds/commit/8ea00287b40798f4deb01c41495926816caddabe))
+* **colours:** Document Colours in Styleguidist format ([244e1b4c](https://github.com/telusdigital/tds/commit/244e1b4ccd649ef0d3b7c25498dfa637b3295728))
+* **links:** Document links CSS in Styleguidist format ([477b1e3e](https://github.com/telusdigital/tds/commit/477b1e3e93aafc533c4ba3cfa75fa1836ed7b10e))
+* **buttons:** Document buttons CSS in styleguidist format ([889dd40b](https://github.com/telusdigital/tds/commit/889dd40b72adfa989ca294a2cc299d8c39eea1f5))
+* **spinner:** Document Spinner in styleguidist format ([e6f376f5](https://github.com/telusdigital/tds/commit/e6f376f58c5f14ab0e321063252e4909b2a4aea4))
+* **changelog:** manual header fix ([6ad9da50](https://github.com/telusdigital/tds/commit/6ad9da505e2d2e770dc8b8f194a1fda1ff3d25e5))
+
+##### New Features
+
+* **Button:**
+  * Improved the Button docs by showing a usage with a bg image. ([5dec9c37](https://github.com/telusdigital/tds/commit/5dec9c37ea02c3d40986d261de5c8918f69fb55b))
+  * Improve the styles and docs. ([eebac58c](https://github.com/telusdigital/tds/commit/eebac58c94a9e78f3928015c2c843e6890cb6309))
+* **docs:**
+  * add design vision ([9c7584f5](https://github.com/telusdigital/tds/commit/9c7584f51058a8bc9f689067398091faed3314b0))
+  * add link to release page ([acc690ef](https://github.com/telusdigital/tds/commit/acc690ef20b38322a33730f873161ee69d88092c))
+  * begin stylegudist development ([2ad01ad6](https://github.com/telusdigital/tds/commit/2ad01ad6231deb56c2c006913f5459be4bd92c9d))
+* **button:**
+  * Removing un-needed `outline` prop for Button. ([36b2b65f](https://github.com/telusdigital/tds/commit/36b2b65f64daaf13b9224c864ce884965e85ce20))
+  * Initial commit of a new Button component. ([ad01006e](https://github.com/telusdigital/tds/commit/ad01006e2be9bbb644227cda306919b766dd1e69))
+
+##### Bug Fixes
+
+* **css:**
+  * properly apply focus styles to all form elements :fried_shrimp: ([07dcfd03](https://github.com/telusdigital/tds/commit/07dcfd0365a02bdcd051babeadc291b351a45c57))
+  * use box shadow to represent :hover state on form elements ([262b9dc8](https://github.com/telusdigital/tds/commit/262b9dc80301f5814aa321b609104780687ab439))
+* **button:** Set the font-family of buttons to TELUS-Web ([ee7cfc34](https://github.com/telusdigital/tds/commit/ee7cfc342622ebfce13758a80bedfd6750a4e99b))
+
+##### Refactors
+
+* **Icon:** Align Icon to coding standards. ([56f1e002](https://github.com/telusdigital/tds/commit/56f1e0029243ba61de5f98f3b049c4f4ef33ff02))
+* **steps:** Introduce component folders for Step and Steps for more separation ([5cea7855](https://github.com/telusdigital/tds/commit/5cea78553c0967216060e61dc69d340e475705ff))
+* **scss:** Split up scss utility and setting files for modularity ([460fd17b](https://github.com/telusdigital/tds/commit/460fd17bb1c2f89adf6c31e23a8b421606c74a6f))
+* **deprecate:** Change the deprecating warning message level from log to warn ([fc73985b](https://github.com/telusdigital/tds/commit/fc73985bdb0fc2e5d1b40606b868a31f4d816377))
+* **console.log:** remove console.dir statement in nav.js (docs) ([2ed91277](https://github.com/telusdigital/tds/commit/2ed9127761c0342a33422125070bcf173295a130))
+
+##### Tests
+
+* **mocks:** Replace sinon with jest mocks ([fe6439cb](https://github.com/telusdigital/tds/commit/fe6439cbdab46b73a2c3d248360789cdbc6d66d1))
+* **snapshots:** Correct misnamed snapshot to try to fix Docker build. ([bb904bb5](https://github.com/telusdigital/tds/commit/bb904bb54d2b3dcf4f3911d3737417bab89b3a02))
+
 
 
 
