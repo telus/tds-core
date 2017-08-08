@@ -1,4 +1,7 @@
-@import '../settings/icons';
+// Get the unicode point for a given icon name
+@function core-icon-codepoint($name) {
+  @return map-get($core-icon-codepoints, $name);
+}
 
 @mixin core-icon($name: null) {
   @if $name {
