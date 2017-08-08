@@ -1,3 +1,15 @@
+#### 0.19.1 (2017-08-08)
+
+##### Continuous Integration
+
+* **Publish package:**
+  * Use npm instead of yarn for the run-publish.sh script. ([8d1085f7](https://github.com/telusdigital/tds/commit/8d1085f7dee017e566512f642024c2e418e72d66))
+  * Add a comma to run-publish to fix Publish stage. ([5ff58e21](https://github.com/telusdigital/tds/commit/5ff58e21f32c64a161690903ec6a1d05c3b151e3))
+
+##### Bug Fixes
+
+* **Sass:** Rename icons utility file to prevent overriding the variables file on build. ([0816b057](https://github.com/telusdigital/tds/commit/0816b057f62dc3a6920117445ab0f95038bd84e7))
+
 #### 0.19.0 (2017-08-08)
 
 ##### Build System / Dependencies
