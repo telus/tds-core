@@ -36,13 +36,30 @@ select {
     border-color: $color-primary;
   }
 
-  &:focus {
-    border-color: transparent;
-    box-shadow: 0 0 4px 1px $color-shuttle-grey;
-  }
-
   @include from-breakpoint(medium) {
     letter-spacing: .5px;
+  }
+}
+
+%input-focus-style {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px $color-shuttle-grey;
+}
+
+textarea:focus {
+  @extend %input-focus-style;
+}
+
+input[type='checkbox']:focus + span::before,
+input[type='radio']:focus + span::before {
+  @extend %input-focus-style;
+}
+
+input:not([type='radio']),
+input:not([type='checkbox'])
+select {
+  &:focus {
+    @extend %input-focus-style;
   }
 }
 
