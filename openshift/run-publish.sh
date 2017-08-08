@@ -26,7 +26,7 @@ oc run ${NAME}-${VERSION} \
               "name":"npmrc-publish-secret"
             }
           }
-        }]
+        }],
         "command":["yarn", "deploy:package"]
       }]
     }
