@@ -1,3 +1,5 @@
+**The button CSS classes are deprecated and should not be used. Use the [Button](#button) component instead.**
+
 ## Overview
 
 ---
