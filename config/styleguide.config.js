@@ -33,69 +33,69 @@ module.exports = {
   sections: [
     {
       name: 'TELUS Design System',
-      content: path.resolve('docs-new/intro/welcome.md'),
+      content: path.resolve('docs/intro/welcome.md'),
       sections: [
         {
           name: 'Getting Started',
-          content: path.resolve('docs-new/intro/getting-started.md')
+          content: path.resolve('docs/intro/getting-started.md')
         },
         {
           name: 'Design Vision',
-          content: path.resolve('docs-new/intro/design-vision.md')
+          content: path.resolve('docs/intro/design-vision.md')
         },
         {
           name: 'Releases',
-          content: path.resolve('docs-new/intro/releases.md')
+          content: path.resolve('docs/intro/releases.md')
         },
         {
           name: 'Contributing',
-          content: path.resolve('docs-new/intro/contributions.md')
+          content: path.resolve('docs/intro/contributions.md')
         }
       ]
     },
     {
       name: 'Foundational Elements',
-      content: path.resolve('docs-new/elements/intro.md'),
+      content: path.resolve('docs/elements/intro.md'),
       sections: [
         {
           name: 'Buttons',
-          content: path.resolve('docs-new/elements/buttons.md')
+          content: path.resolve('docs/elements/buttons.md')
         },
         {
           name: 'Links',
-          content: path.resolve('docs-new/elements/links.md')
+          content: path.resolve('docs/elements/links.md')
         },
         {
           name: 'Colours',
-          content: path.resolve('docs-new/elements/colours.md')
+          content: path.resolve('docs/elements/colours.md')
         },
         {
           name: 'Forms',
-          content: path.resolve('docs-new/elements/forms.md')
+          content: path.resolve('docs/elements/forms.md')
         },
         {
           name: 'Grid',
-          content: path.resolve('docs-new/elements/grid.md')
+          content: path.resolve('docs/elements/grid.md')
         },
         {
           name: 'Lists',
-          content: path.resolve('docs-new/elements/lists.md')
+          content: path.resolve('docs/elements/lists.md')
         },
         {
           name: 'Typography',
-          content: path.resolve('docs-new/elements/typography.md')
+          content: path.resolve('docs/elements/typography.md')
         },
         {
           name: 'Utility Icons',
-          content: path.resolve('docs-new/elements/utility-icons.md')
+          content: path.resolve('docs/elements/utility-icons.md')
         },
         {
           name: 'Utility Mixins',
-          content: path.resolve('docs-new/elements/utility-mixins.md')
+          content: path.resolve('docs/elements/utility-mixins.md')
         },
         {
           name: 'Design Tokens',
-          content: path.resolve('docs-new/elements/design-tokens.md')
+          content: path.resolve('docs/elements/design-tokens.md')
         }
       ]
     },
@@ -159,15 +159,15 @@ module.exports = {
   ],
 
 
-  template: path.resolve('docs-new/index.html'),
-  assetsDir: path.resolve('docs-new/assets/'),
+  template: path.resolve('docs/index.html'),
+  assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve('styleguide'),
   require: [
     path.resolve('src/scss/global.scss'),
-    path.resolve('docs-new/scss/styleguide.scss')
+    path.resolve('docs/scss/styleguide.scss')
   ],
   styleguideComponents: {
-    Logo: path.resolve('docs-new/components/Logo')
+    Logo: path.resolve('docs/components/Logo')
   },
   webpackConfig: {
     module: {

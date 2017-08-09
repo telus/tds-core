@@ -17,11 +17,3 @@ coverage
 # TDS build artifacts
 dist
 styleguide
-docs/src/assets/css/styleguide.css
-docs/src/assets/css/thorium.css
-docs/src/assets/css/tds.css
-docs/src/assets/css/tds-lite.css
-docs/src/assets/fonts/*
-!docs/src/assets/fonts/.gitkeep
-docs/src/assets/downloads
-!docs/src/assets/downloads/.gitkeep
