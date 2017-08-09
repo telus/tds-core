@@ -1,4 +1,0 @@
-src/html/assets/bundles/*.js
-src/html/assets/bundles/*.css
-src/html/assets/downloads/*
-!src/html/assets/downloads/.gitkeep
