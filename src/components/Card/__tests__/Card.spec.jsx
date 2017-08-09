@@ -2,11 +2,11 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import { warn } from '../../../deprecate';
+import { deprecate } from '../../../warn';
 import Card from '../Card';
 
-jest.mock('../../../deprecate', () => (
-  { warn: jest.fn() }
+jest.mock('../../../warn', () => (
+  { deprecate: jest.fn() }
 ));
 
 describe('<Card />', () => {
@@ -27,7 +27,7 @@ describe('<Card />', () => {
     const card = shallow(<Card className="some-class">Some content</Card>);
 
     expect(card).toHaveClassName('some-class');
-    expect(warn).toHaveBeenCalled();
+    expect(deprecate).toHaveBeenCalled();
   });
 
   it('accepts but deprecates inline styles', () => {
@@ -35,6 +35,6 @@ describe('<Card />', () => {
     const card = shallow(<Card style={styles}>Some content</Card>);
 
     expect(card).toHaveProp('style', styles);
-    expect(warn).toHaveBeenCalled();
+    expect(deprecate).toHaveBeenCalled();
   });
 });

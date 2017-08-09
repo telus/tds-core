@@ -1,6 +1,7 @@
 @import '../../scss/settings/colours';
 @import '../../scss/settings/spacing';
 @import '../../scss/settings/typography';
+@import '../../scss/settings/responsive-grid';
 @import '../../scss/utility/responsive';
 
 $primary-bg-color: $color-primary;
@@ -72,16 +73,6 @@ $text-color: $color-white;
   }
 }
 
-.primaryInverted {
-  composes: inverted button;
-
-  color: $primary-bg-color;
-
-  &:hover {
-    background-color: $primary-bg-color;
-  }
-}
-
 .secondary {
   composes: button;
 
@@ -117,6 +108,8 @@ $text-color: $color-white;
   &:hover {
     background-color: $text-color;
     color: $secondary-bg-color;
+
+    box-shadow: none;
   }
 }
 

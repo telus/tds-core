@@ -1,9 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { warn } from '../../warn';
+
 import styles from './Button.modules.scss';
 
 const getClassName = (variant, invert) => {
+  if (variant === 'primary' && invert) {
+    warn('Button', 'Primary buttons cannot be inverted.');
+
+    return styles.primary;
+  }
+
   if (invert) {
     return styles[`${variant}Inverted`];
   }
@@ -15,7 +23,7 @@ const safeRest = ({ style, className, ...props }) => props;
 
 /**
  *
- * <span class="docs--badge green">coming soon!</span>
+ * <span class="docs--badge green">new!</span>
  */
 const Button = ({ type, variant, invert, children, ...rest }) => (
   <button {...safeRest(rest)} type={type} className={getClassName(variant, invert)}>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import classNames from 'classnames';
 
-import { warn } from '../../deprecate';
+import { deprecate } from '../../warn';
 
 import './Card.scss';
 
@@ -12,11 +12,11 @@ import './Card.scss';
  */
 const Card = ({ className, children, ...rest }) => {
   if (className) {
-    warn('Card', 'Custom CSS classes are deprecated. This component does not support custom styling.');
+    deprecate('Card', 'Custom CSS classes are deprecated. This component does not support custom styling.');
   }
 
   if (rest.style) {
-    warn('Card', 'Inline styles are deprecated. This component does not support custom styling.');
+    deprecate('Card', 'Inline styles are deprecated. This component does not support custom styling.');
   }
 
   return (

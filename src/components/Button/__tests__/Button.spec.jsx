@@ -2,7 +2,13 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
+import { warn } from '../../../warn';
+
 import Button from '../Button';
+
+jest.mock('../../../warn', () => (
+  { warn: jest.fn() }
+));
 
 describe('Button', () => {
   const doShallow = (overrides = {}) => shallow(<Button {...overrides}>Submit</Button>);
@@ -35,15 +41,19 @@ describe('Button', () => {
     expect(button).toHaveClassName('outlined');
   });
 
-  it('can be inverted', () => {
-    const primaryButton = doShallow({ variant: 'primary', invert: true });
-    expect(primaryButton).toHaveClassName('primaryInverted');
-
+  it('can be inverted for secondary and outlined variants', () => {
     const secondaryButton = doShallow({ variant: 'secondary', invert: true });
     expect(secondaryButton).toHaveClassName('secondaryInverted');
 
     const outlinedButton = doShallow({ variant: 'outlined', invert: true });
     expect(outlinedButton).toHaveClassName('outlinedInverted');
+  });
+
+  it('can not be inverted for primary variant', () => {
+    const button = doShallow({ variant: 'primary', invert: true });
+
+    expect(button).toHaveClassName('primary');
+    expect(warn).toHaveBeenCalled();
   });
 
   it('passes additional attributes to button element', () => {

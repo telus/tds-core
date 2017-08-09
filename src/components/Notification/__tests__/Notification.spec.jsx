@@ -2,11 +2,11 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import { warn } from '../../../deprecate';
+import { deprecate } from '../../../warn';
 import Notification from '../../Notification/Notification';
 
-jest.mock('../../../deprecate', () => (
-  { warn: jest.fn() }
+jest.mock('../../../warn', () => (
+  { deprecate: jest.fn() }
 ));
 
 describe('<Notification />', () => {
@@ -47,7 +47,7 @@ describe('<Notification />', () => {
     const notification = doShallow({ className: 'some-class' });
 
     expect(notification).toHaveClassName('some-class');
-    expect(warn).toHaveBeenCalled();
+    expect(deprecate).toHaveBeenCalled();
   });
 
   it('accepts but deprecates inline styles', () => {
@@ -55,6 +55,6 @@ describe('<Notification />', () => {
     const notification = doShallow({ style });
 
     expect(notification).toHaveProp('style', style);
-    expect(warn).toHaveBeenCalled();
+    expect(deprecate).toHaveBeenCalled();
   });
 });

@@ -149,7 +149,7 @@ module.exports = {
           name: 'Forms',
           components() {
             return [
-              // path.resolve('src/components/Button/Button.jsx'),
+              path.resolve('src/components/Button/Button.jsx'),
               path.resolve('src/components/SelectorCounter/SelectorCounter.jsx')
             ]
           }

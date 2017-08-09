@@ -1,6 +1,6 @@
 ## Minimal Usage
 
-Provide a function in the `onClick` prop to perform an action when clicked. **Avoid using a button if navigation 
+Provide a function as the `onClick` prop to perform an action when clicked. **Avoid using a button if navigation 
 is the primary action, as a link is more appropriate.**
 
 ### Recommendations
@@ -10,7 +10,8 @@ is the primary action, as a link is more appropriate.**
 * Avoid excessively long button text.
 * Make sure the button text describes an action.
 
-By default, Buttons will be displayed in the `primary` variant.
+By default, Buttons will be displayed in the `primary` variant. Use primary buttons for the main action on a page or 
+in a form.
 
 ```
 <Button>Submit</Button>
@@ -22,12 +23,24 @@ Specify the `variant` to create a button for secondary actions.
 <Button variant="secondary">Find out more</Button>
 ```
 
-## On images or colors
+## Placing buttons on solid colors
 
-Use the `outlined` variant when placing a button on top of a solid color other than white or on an image. Inverting the 
-color scheme with the `invert` attribute is another option.
+Use the `secondary` `invert` button on top of the solid TELUS purple.
 
-Edit the code block to try different combinations of `variant` and `invert`. 
+```
+const PurpleBlock = require('./__docs__/PurpleBlock').default;
+
+<PurpleBlock>
+  <Button variant="secondary" invert>Go back</Button>
+</PurpleBlock>
+```
+
+## Placing buttons on images
+
+Use the `outlined` variant when placing a button on top of an image, which will cause the image to show through. You can 
+also `invert` the color scheme.
+
+Use this variant with caution. There will be accessibility issues if the color contrast of the image and the button text is too low.
 
 ```
 const Hero = require('./__docs__/Hero').default;
