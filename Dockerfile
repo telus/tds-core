@@ -41,6 +41,3 @@ USER nodeuser
 # The entrypoint configures the container to be run as an executable.
 # Arguments supplied on the command line will be forwarded onto the entrypoint.
 ENTRYPOINT ["yarn"]
-
-# The command is the default when executing the container.
-CMD ["start"]
