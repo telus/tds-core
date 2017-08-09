@@ -67,6 +67,7 @@
     "postcss": "^6.0.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.2",
     "react-styleguidist": "^5.5.9",
     "react-test-renderer": "^15.6.1",
     "rollup": "^0.45.2",
