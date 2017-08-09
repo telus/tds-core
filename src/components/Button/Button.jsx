@@ -19,17 +19,29 @@ const getClassName = (variant, invert) => {
   return styles[variant];
 };
 
+const preventDisabling = ({ disabled, ...props }) => {
+  if (disabled) {
+    warn('Button', 'Buttons are not able to be disabled.');
+  }
+
+  return props;
+};
+
 const safeRest = ({ style, className, ...props }) => props;
 
 /**
  *
  * <span class="docs--badge green">new!</span>
  */
-const Button = ({ type, variant, invert, children, ...rest }) => (
-  <button {...safeRest(rest)} type={type} className={getClassName(variant, invert)}>
-    {children}
-  </button>
-);
+const Button = ({ type, variant, invert, children, ...rest }) => {
+  const restNoDisabled = preventDisabling(rest);
+
+  return (
+    <button {...safeRest(restNoDisabled)} type={type} className={getClassName(variant, invert)}>
+      {children}
+    </button>
+  );
+};
 
 Button.propTypes = {
   /**

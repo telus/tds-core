@@ -56,6 +56,13 @@ describe('Button', () => {
     expect(warn).toHaveBeenCalled();
   });
 
+  it('can not be disabled', () => {
+    const button = doShallow({ disabled: true });
+
+    expect(button).not.toHaveProp('disabled');
+    expect(warn).toHaveBeenCalled();
+  });
+
   it('passes additional attributes to button element', () => {
     const button = doShallow({ id: 'the-button', tabindex: 1 });
 

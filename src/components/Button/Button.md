@@ -49,3 +49,7 @@ const Hero = require('./__docs__/Hero').default;
   <Button variant="outlined" invert>Go back</Button>
 </Hero>
 ```
+
+## Disabling buttons
+
+We prefer buttons to always be interactive, so there is no need to disable it. 
