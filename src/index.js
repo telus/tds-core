@@ -1,5 +1,6 @@
 import './scss/global.scss';
 
+export { default as Button } from './components/Button/Button';
 export { default as Card } from './components/Card/Card';
 export { default as ExpandCollapse } from './components/ExpandCollapse/ExpandCollapse';
 export { default as Grid } from './components/Grid/Grid';
