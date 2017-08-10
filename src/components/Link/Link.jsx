@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Link as ReactRouterLink } from 'react-router-dom';
 
+import ChevronLink from './ChevronLink/ChevronLink';
 import safeRest from '../../safeRest';
 
 import styles from './Link.modules.scss';
@@ -23,5 +24,7 @@ Link.defaultProps = {
   href: null,
   invert: false
 };
+
+Link.Chevron = ChevronLink;
 
 export default Link;

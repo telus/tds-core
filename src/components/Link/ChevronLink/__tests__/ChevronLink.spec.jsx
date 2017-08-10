@@ -1,26 +1,19 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 
 import { MemoryRouter } from 'react-router-dom';
 
-import Link from '../Link';
+import Link from '../../Link';
 
-describe('Link', () => {
+describe('Link.Chevron', () => {
   const doShallow = (overrides = {}) => shallow(
-    <Link {...overrides}>Go home</Link>
+    <Link.Chevron {...overrides}>Go home</Link.Chevron>
   );
   const doShallowWithRouter = (overrides = {}) => shallow(
     <MemoryRouter>
-      <Link {...overrides}>Go home</Link>
+      <Link.Chevron {...overrides}>Go home</Link.Chevron>
     </MemoryRouter>
   );
-
-  it('renders', () => {
-    const link = doShallow();
-
-    expect(toJson(link)).toMatchSnapshot();
-  });
 
   it('is an anchor HTML element when using the href attribute', () => {
     const link = doShallow({ href: 'http://telus.com' });
@@ -37,13 +30,7 @@ describe('Link', () => {
     expect(reactRouterLink).toHaveProp('to', '/about');
   });
 
-  it('can be inverted', () => {
-    let link = doShallow({ invert: true });
-    expect(link).toHaveClassName('inverted');
-
-    link = doShallow({ invert: false });
-    expect(link).not.toHaveClassName('inverted');
-  });
+  it('can be variants');
 
   it('passes additional attributes to the link element', () => {
     const link = doShallow({ id: 'the-link', role: 'button' });
