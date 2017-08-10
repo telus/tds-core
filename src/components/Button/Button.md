@@ -1,7 +1,7 @@
 ## Minimal Usage
 
 Provide a function as the `onClick` prop to perform an action when clicked. **Avoid using a button if navigation 
-is the primary action, as a link is more appropriate.**
+is the button's primary action, as a link is more appropriate.**
 
 ### Recommendations
 
@@ -9,6 +9,7 @@ is the primary action, as a link is more appropriate.**
 * Aim to use only one button per page.
 * Avoid excessively long button text.
 * Make sure the button text describes an action.
+* Avoid disabling buttons. Use error messaging to provide feedback rather than a disabled button.
 
 By default, Buttons will be displayed in the `primary` variant. Use primary buttons for the main action on a page or 
 in a form.
@@ -56,7 +57,3 @@ const Hero = require('./__docs__/Hero').default;
   <Button variant="outlined" invert>Advanced solutions</Button>
 </Hero>
 ```
-
-## Disabling buttons
-
-We prefer buttons to always be interactive, so there is no need to disable it. 
