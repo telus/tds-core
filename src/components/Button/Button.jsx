@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { warn } from '../../warn';
+import safeRest from '../../safeRest';
 
 import styles from './Button.modules.scss';
 
@@ -26,8 +27,6 @@ const preventDisabling = ({ disabled, ...props }) => {
 
   return props;
 };
-
-const safeRest = ({ style, className, ...props }) => props;
 
 /**
  *

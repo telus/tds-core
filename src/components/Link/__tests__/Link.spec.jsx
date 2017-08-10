@@ -1,7 +1,8 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 
-import { Link as ReactRouterLink, MemoryRouter } from 'react-router-dom';
+import { MemoryRouter } from 'react-router-dom';
 
 import Link from '../Link';
 
@@ -15,6 +16,12 @@ describe('Link', () => {
     </MemoryRouter>
   );
 
+  it('renders', () => {
+    const link = doShallow();
+
+    expect(toJson(link)).toMatchSnapshot();
+  });
+
   it('is an anchor HTML element when using the href attribute', () => {
     const link = doShallow({ href: 'http://telus.com' });
 
@@ -27,5 +34,27 @@ describe('Link', () => {
 
     expect(link.find('Router').dive()).toMatchSelector('Link');
     expect(link.find('Router').dive()).toHaveProp('to', '/about');
+  });
+
+  it('can be inverted', () => {
+    let link = doShallow({ invert: true });
+    expect(link).toHaveClassName('inverted');
+
+    link = doShallow({ invert: false });
+    expect(link).not.toHaveClassName('inverted');
+  });
+
+  it('passes additional attributes to the link element', () => {
+    const link = doShallow({ id: 'the-button', tabindex: 1 });
+
+    expect(link).toHaveProp('id', 'the-button');
+    expect(link).toHaveProp('tabindex', 1);
+  });
+
+  it('does not allow custom CSS', () => {
+    const link = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } });
+
+    expect(link).not.toHaveProp('className', 'my-custom-class');
+    expect(link).not.toHaveProp('style');
   });
 });

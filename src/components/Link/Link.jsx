@@ -3,25 +3,25 @@ import PropTypes from 'prop-types';
 
 import { Link as ReactRouterLink } from 'react-router-dom';
 
-/**
- * Inline text links
- */
-const Link = ({ to, href, children }) => {
-  if (to) {
-    return (
-      <ReactRouterLink to={to}>{children}</ReactRouterLink>
-    );
-  }
+import safeRest from '../../safeRest';
 
-  return (
-    <a href={href}>{children}</a>
-  );
-};
+import styles from './Link.modules.scss';
 
+const getClassName = invert => (invert ? styles.inverted : styles.base);
+
+const Link = ({ invert, children, ...rest }) => (
+  React.createElement(rest.to ? ReactRouterLink : 'a', { ...safeRest(rest), className: getClassName(invert) }, children)
+);
 Link.propTypes = {
   to: PropTypes.string,
   href: PropTypes.string,
+  invert: PropTypes.bool,
   children: PropTypes.node.isRequired
+};
+Link.defaultProps = {
+  to: null,
+  href: null,
+  invert: false
 };
 
 export default Link;

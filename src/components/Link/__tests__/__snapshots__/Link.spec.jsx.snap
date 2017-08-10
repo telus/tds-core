@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders 1`] = `
+<a
+  className="base"
+  href={null}
+  to={null}
+>
+  Go home
+</a>
+`;

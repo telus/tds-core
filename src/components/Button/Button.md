@@ -35,7 +35,7 @@ All buttons are inline, with a minimum width of 180px for screens larger than 76
 Use the `secondary` `invert` button on top of the solid TELUS purple.
 
 ```
-const PurpleBlock = require('./__docs__/PurpleBlock').default;
+const PurpleBlock = require('../__docs__/PurpleBlock').default;
 
 <PurpleBlock>
   <Button variant="secondary" invert>Get started</Button>
