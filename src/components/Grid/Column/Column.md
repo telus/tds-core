@@ -1,12 +1,14 @@
 ## Minimal usage
 
-The primary way to configure the width of the column are the "size" props, which correspond to the available viewport 
+The primary way to configure the width of the column are the "size" props, which correspond to the available viewport
 sizes: `xs`, `sm`, `md`, `lg`, and `xl`.
- 
+
 This example shows 3 rows divided into various column widths that are targeted at the medium viewport size and above. Below
-medium, each column will span it's entire container. Resize your browser window to see.
+medium, each column will span its entire container. Resize your browser window to see.
 
 ```
+// NOTE: GridBox is a placeholder for content.
+// It is not a standard TDS component.
 const GridBox = require('../__docs__/GridBox/GridBox').default;
 
 <Container>
@@ -34,7 +36,7 @@ const GridBox = require('../__docs__/GridBox/GridBox').default;
 
 Change the column width at each viewport size by using multiple sizes.
 
-This example creates equal width columns at the medium viewport, un-even columns in the small viewport, and two separate 
+This example creates equal width columns at the medium viewport, un-even columns in the small viewport, and two separate
 rows at the smallest viewport.
 
 ```
@@ -50,7 +52,7 @@ const GridBox = require('../__docs__/GridBox/GridBox').default;
 
 ## Nesting rows and columns
 
-Grid rows can be placed inside columns, in order to nest more columns (no need to repeat the container). Since the 
+Grid rows can be placed inside columns, in order to nest more columns (no need to repeat the container). Since the
 grid is fluid, each of the nested columns’ widths will still be calculated as a percentage of 12 columns.
 
 ```

@@ -10,7 +10,7 @@ Grids give order to the vertical and horizontal positioning of content. Grids ar
 
 A baseline grid creates vertical rhythm. Rhythm is the systematic arrangement of elements that help establish a visual pattern. Visual patterns provide users with a navigable terrain, which becomes familiar through repetition. This allows users to confidently and comfortably visually consume content as they were intended to.
 
-A baseline is a mathematical solution that reinforces the consistent positioning of elements on a page. Establishing a baseline grid accelerates the design and development process.Foundational elements, components, and the elements within align to a 2 px. baseline grid.
+A baseline is a mathematical solution that reinforces the consistent positioning of elements on a page. Establishing a baseline grid accelerates the design and development process. Foundational elements, components, and the elements within align to a 2px. baseline grid.
 
 ## Breakpoints
 
@@ -32,15 +32,12 @@ TDS will have five viewports over four breakpoints:
 
 ## Containers
 
-
 * `.container`:
 centers a block-element horizontally
 
 * `.container--limited-width`: sets a max-width from the table above on your wrapper, to be used together with `.container` so it is centered
 
 * `.container--fluid`: use this class to add gutter when adding a full-width container
-
-
 
 ## Responsiveness
 
