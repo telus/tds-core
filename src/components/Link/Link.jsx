@@ -11,7 +11,14 @@ import styles from './Link.modules.scss';
 const getClassName = invert => (invert ? styles.inverted : styles.base);
 
 const Link = ({ invert, children, ...rest }) => (
-  React.createElement(rest.to ? ReactRouterLink : 'a', { ...safeRest(rest), className: getClassName(invert) }, children)
+  React.createElement(
+    rest.to ? ReactRouterLink : 'a',
+    {
+      ...safeRest(rest),
+      className: getClassName(invert)
+    },
+    children
+  )
 );
 Link.propTypes = {
   to: PropTypes.string,

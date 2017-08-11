@@ -116,7 +116,9 @@ module.exports = {
           name: 'Content',
           components() {
             return [
-              path.resolve('src/components/Card/Card.jsx')
+              path.resolve('src/components/Card/Card.jsx'),
+              path.resolve('src/components/Link/Link.jsx'),
+              path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')
             ]
           },
           sections: [
@@ -153,7 +155,7 @@ module.exports = {
               path.resolve('src/components/SelectorCounter/SelectorCounter.jsx')
             ]
           }
-        },
+        }
       ]
     }
   ],

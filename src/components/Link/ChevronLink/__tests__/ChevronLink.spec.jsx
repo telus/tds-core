@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 import { MemoryRouter } from 'react-router-dom';
 
 import Link from '../../Link';
+import Icon from '../../../Icon/Icon';
 
 describe('Link.Chevron', () => {
   const doShallow = (overrides = {}) => shallow(
@@ -28,6 +29,12 @@ describe('Link.Chevron', () => {
     const reactRouterLink = link.find('Router').dive().dive();
     expect(reactRouterLink).toMatchSelector('Link');
     expect(reactRouterLink).toHaveProp('to', '/about');
+  });
+
+  it('has a chevron icon', () => {
+    const link = doShallow({ href: 'https://telus.com' });
+
+    expect(link).toContainReact(<Icon glyph="chevron" aria-hidden="true" />);
   });
 
   it('can be variants');

@@ -1,0 +1,13 @@
+.link {
+  &:hover {
+    .chevron {
+      transform: translateX(0.25rem);
+    }
+  }
+}
+
+.chevron {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: transform 300ms;
+}
