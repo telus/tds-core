@@ -1,9 +1,31 @@
+@import '../../../scss/settings/colours';
+
 .link {
   &:hover {
     .chevron {
       transform: translateX(0.25rem);
     }
   }
+}
+
+.primary {
+  composes: link;
+
+  &:link {
+    color: $color-primary;
+  }
+}
+
+.secondary {
+  composes: link;
+
+  color: $color-secondary;
+}
+
+.inverted {
+  composes: link;
+
+  color: $color-white;
 }
 
 .chevron {

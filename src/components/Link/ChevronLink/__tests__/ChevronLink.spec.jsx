@@ -37,7 +37,19 @@ describe('Link.Chevron', () => {
     expect(link).toContainReact(<Icon glyph="chevron" aria-hidden="true" />);
   });
 
-  it('can be variants');
+  it('can have specific variants', () => {
+    let link = doShallow({ href: 'https://telus.com' });
+    expect(link).toHaveClassName('primary');
+
+    link = doShallow({ href: 'https://telus.com', variant: 'secondary' });
+    expect(link).toHaveClassName('secondary');
+
+    link = doShallow({ href: 'https://telus.com', variant: 'primary' });
+    expect(link).toHaveClassName('primary');
+
+    link = doShallow({ href: 'https://telus.com', variant: 'inverted' });
+    expect(link).toHaveClassName('inverted');
+  });
 
   it('passes additional attributes to the link element', () => {
     const link = doShallow({ id: 'the-link', role: 'button' });
