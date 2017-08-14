@@ -1,3 +1,39 @@
+#### 0.20.0 (2017-08-14)
+
+##### Build System / Dependencies
+
+* **rollup:** Introduce CSS Modules to the rollup build. ([2e40da3f](https://github.com/telusdigital/tds/commit/2e40da3f085f59d7b57c2d13397928ffdc0ad46a))
+
+##### Chores
+
+* **dependencies:** Remove redux-contentful as as a peer dependency as it is not actually used yet. ([0c372b81](https://github.com/telusdigital/tds/commit/0c372b811365c0299677117c1b86be9a6de4c3c0))
+* **sketch:** remove designs/ folder ([c04d3a44](https://github.com/telusdigital/tds/commit/c04d3a44d3566df542c4319ce9c823ffa6fdec07))
+* **Remove un-needed CI files.:** Includes removing the service config from openshift, the old s3 d ([290c7558](https://github.com/telusdigital/tds/commit/290c7558d49f0fb70c8857555bb0f017c323951d))
+* **Old docs:** Remove old Wintersmith docs. They are no longer used. ([86e1ec2a](https://github.com/telusdigital/tds/commit/86e1ec2a98e878e623b8ed4b03fac3686268d8ac))
+
+##### Documentation Changes
+
+* **button:** 
+  * Add version badge to Button docs. ([26f02d02](https://github.com/telusdigital/tds/commit/26f02d02975129c1bf763b19f77309bb4e73c087))
+  * Move around the disabled button docs for clarity. ([6a74cccc](https://github.com/telusdigital/tds/commit/6a74cccc7334c23d265f848c5e7cf0999b1de787))
+* **css-modules:** Add local identifier name for CSS modules in docs site. ([d73e711b](https://github.com/telusdigital/tds/commit/d73e711b65a6bf2a07c97f696e276ee8d89fbc74))
+* **grid:** adjust grammar ([d6b6356e](https://github.com/telusdigital/tds/commit/d6b6356e50672d62708c86d9649c27a98a95d48b)) 
+
+##### New Features
+
+* **button:** 
+  * Use button component in docs examples. ([65fb9a65](https://github.com/telusdigital/tds/commit/65fb9a6593a2409908eb6e6698c609061fa8fd94))
+  * Add disabled and sizing to the Button docs. ([07603082](https://github.com/telusdigital/tds/commit/07603082ea21fa1155b6357f5146f30c52696212))
+  * Prevent buttons from being disabled. ([30240998](https://github.com/telusdigital/tds/commit/30240998f58fa69692ffee98558f473520cc94b8))
+  * Remove the primary invert option for Button. ([9988ca5a](https://github.com/telusdigital/tds/commit/9988ca5adebf44c5aae5eeeea8bcfcb89bd685c3))
+* **link:**
+  * Initial commit of unstyled Chevron Link component. ([277372ae](https://github.com/telusdigital/tds/commit/277372aeec11d98fc379f16bdacf6c2ee92ebfcc))
+  * Add styles and inverting to Link component. ([da558cf3](https://github.com/telusdigital/tds/commit/da558cf314f075d3c7562fb29e4890324c1c4721))
+  * begin link component ([31b4e535](https://github.com/telusdigital/tds/commit/31b4e53510d2934319fc335c82872276aa2b4a7f))
+  * add logic for left-facing chevron wip ([b5469e3a](https://github.com/telusdigital/tds/commit/b5469e3a1e0453500735e674b19bce74b7c636f6))
+  * add chevron link variants ([de02a7f1](https://github.com/telusdigital/tds/commit/de02a7f1f5ce52ef9bb3c5d623ff4a03ceb70933))
+  * add icon to chevron link ([085be090](https://github.com/telusdigital/tds/commit/085be090ddb679d54802ff92ef04a555f931bf48)) 
+
 #### 0.19.1 (2017-08-08)
 
 ##### Continuous Integration

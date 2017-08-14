@@ -1,6 +1,6 @@
 {
   "name": "@telusdigital/tds",
-  "version": "0.19.1",
+  "version": "0.20.0",
   "description": "TELUS Design System",
   "license": "ISC",
   "main": "dist/tds.cjs.js",
