@@ -86,7 +86,6 @@
     "webpack": "^3.3.0"
   },
   "peerDependencies": {
-    "@telusdigital/redux-contentful": "2.x || 3.x",
     "react": "15.x",
     "react-dom": "15.x"
   },

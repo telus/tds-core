@@ -25,7 +25,7 @@ export default {
   ],
   sourceMap: true,
 
-  external: ['react', 'prop-types', '@telusdigital/redux-contentful'],
+  external: ['react', 'prop-types'],
 
   plugins: [
     resolve({
