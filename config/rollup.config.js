@@ -43,7 +43,7 @@ export default {
         autoprefixer(),
         postcssModules({
           globalModulePaths: [/src\/scss/, /src\/components\/(?!Button)/],
-          generateScopedName: "TDS_[name]__[local]___[hash:base64:5]",
+          generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
           getJSON (id, exportTokens) {
             cssExportMap[id] = exportTokens;
           }
