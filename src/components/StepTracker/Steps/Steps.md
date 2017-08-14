@@ -21,13 +21,11 @@ initialState = {
     <Steps.Step label="Submit" />
   </Steps>
   
-  <button className="button button--secondary"
-          onClick={() => setState({ current: state.current-1 })}>
+  <Button variant="secondary" onClick={() => setState({ current: state.current-1 })}>
     Previous Step
-  </button>
-  <button className="button button--secondary"
-          onClick={() => setState({ current: state.current+1 })}>
+  </Button>
+  <Button variant="secondary" onClick={() => setState({ current: state.current+1 })}>
     Next Step
-  </button>
+  </Button>
 </div>
 ```

@@ -96,6 +96,6 @@ const helperSuccess = successful? 'helper--success':'';
       contextSuffix="smartphone plans"
      />
   </div>
-  <button className="button button--primary">Submit</button>
+  <Button>Submit</Button>
 </form>
 ```

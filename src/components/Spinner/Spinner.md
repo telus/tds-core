@@ -44,9 +44,9 @@ const goFullScreen = () => {
 };
 
 <div>
-  <button onClick={goFullScreen} className="button button--primary">
+  <Button onClick={goFullScreen}>
     Show full screen Spinner (2 seconds)
-  </button>
+  </Button>
 
   <Spinner spinning={state.fullScreen} fullScreen={state.fullScreen} />
 </div>
