@@ -19,17 +19,28 @@ const getClassName = (variant) => {
   }
 };
 
-const ChevronLink = ({ variant, children, ...rest }) => (
+const getIcon = (direction) => {
+  if (direction === 'left') {
+    return (<span className={styles.chevron}>
+      <Icon glyph="chevron" aria-hidden="true" />
+    </span>)
+  }
+
+  return (<span className={styles.chevron}>
+    <Icon glyph="chevron" aria-hidden="true" />
+  </span>)
+};
+
+const ChevronLink = ({ variant, direction, children, ...rest }) => (
   React.createElement(
     rest.to ? ReactRouterLink : 'a',
     {
       ...safeRest(rest),
       className: getClassName(variant)
     },
+    direction === 'left' ? getIcon(direction) : undefined,
     children,
-    <span className={styles.chevron}>
-      <Icon glyph="chevron" aria-hidden="true" />
-    </span>
+    direction === 'right' ? getIcon(direction) : undefined
   )
 );
 ChevronLink.propTypes = {
@@ -38,10 +49,15 @@ ChevronLink.propTypes = {
     'secondary',
     'inverted'
   ]),
+  direction: PropTypes.oneOf([
+    'left',
+    'right'
+  ]),
   children: PropTypes.node.isRequired
 };
 ChevronLink.defaultProps = {
-  variant: 'primary'
+  variant: 'primary',
+  direction: 'right'
 };
 ChevronLink.displayName = 'Link.Chevron';
 

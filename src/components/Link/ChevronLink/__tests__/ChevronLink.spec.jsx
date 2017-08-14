@@ -51,6 +51,12 @@ describe('Link.Chevron', () => {
     expect(link).toHaveClassName('inverted');
   });
 
+  it('can face leftward', () => {
+    const link = doShallow({ href: 'https://telus.com' });
+
+    expect(link).toContainReact(<Icon glyph="chevron" aria-hidden="true" />);
+  });
+
   it('passes additional attributes to the link element', () => {
     const link = doShallow({ id: 'the-link', role: 'button' });
 

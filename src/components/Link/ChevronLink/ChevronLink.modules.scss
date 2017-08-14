@@ -1,6 +1,9 @@
 @import '../../../scss/settings/colours';
+@import '../../../scss/settings/typography';
 
 .link {
+  font-size: $body-medium-text-size;
+
   &:hover {
     .chevron {
       transform: translateX(0.25rem);
