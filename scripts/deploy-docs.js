@@ -18,8 +18,6 @@ if (!process.env.AWS_ACCESS_KEY_ID || !process.env.AWS_SECRET_ACCESS_KEY) {
 
 
 const resolvePath = require('path').resolve;
-const relativePath = require('path').relative;
-const readDirSync = require('fs').readdirSync;
 const deploy = require('s3-website').deploy;
 const AWS = require('aws-sdk');
 
@@ -34,11 +32,27 @@ const config = {
   uploadDir: uploadDir,
   lockConfig: true
 };
-const s3 = new AWS.S3({region: config.region});
+const s3 = new AWS.S3({ region: config.region });
 
 
 const deployToS3 = (prefix) => {
-  const deployConfig = Object.assign(config, {prefix});
+  const deployConfig = Object.assign(config, { prefix });
+
+  deploy(s3, deployConfig, (err, website) => {
+    if (err) {
+      throw err;
+    }
+
+    console.log(website);
+  });
+};
+
+// Continue to deploy to the thorium bucket because http://tds.telus.com points there
+const deployToS3_deprecated = () => {
+  const deployConfig = Object.assign(config, {
+    domain: `cdn.telus-thorium-doc-${env}`,
+    prefix: env === 'production' ? undefined : 'latest'
+  });
 
   deploy(s3, deployConfig, (err, website) => {
     if (err) {
@@ -51,9 +65,16 @@ const deployToS3 = (prefix) => {
 
 
 if (env === 'production') {
-  deployToS3('latest');
-  deployToS3(`v${version}`);
+  // Waiting for resolution on IAM policy for new buckets. :(
+  // deployToS3('latest');
+  // deployToS3(`v${version}`);
+
+  // Continue to deploy to the thorium bucket because http://tds.telus.com points there
+  // TODO: Rip this out when the domain name is pointed at the new bucket: TDS-286
+  deployToS3_deprecated();
 }
 else {
-  deployToS3('staging');
+  // deployToS3('staging');
+
+  deployToS3_deprecated();
 }
