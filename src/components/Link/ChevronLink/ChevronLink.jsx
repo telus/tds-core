@@ -19,17 +19,11 @@ const getClassName = (variant) => {
   }
 };
 
-const getIcon = (direction) => {
-  if (direction === 'left') {
-    return (<span className={styles.chevron}>
-      <Icon glyph="chevron" aria-hidden="true" />
-    </span>)
-  }
-
-  return (<span className={styles.chevron}>
-    <Icon glyph="chevron" aria-hidden="true" />
-  </span>)
-};
+const getIcon = (glyph, className) => (
+  <span className={className}>
+    <Icon glyph={glyph} aria-hidden="true" />
+  </span>
+);
 
 const ChevronLink = ({ variant, direction, children, ...rest }) => (
   React.createElement(
@@ -38,9 +32,9 @@ const ChevronLink = ({ variant, direction, children, ...rest }) => (
       ...safeRest(rest),
       className: getClassName(variant)
     },
-    direction === 'left' ? getIcon(direction) : undefined,
+    direction === 'left' ? getIcon('left-chevron', styles.leftChevron) : undefined,
     children,
-    direction === 'right' ? getIcon(direction) : undefined
+    direction === 'right' ? getIcon('chevron', styles.rightChevron) : undefined
   )
 );
 ChevronLink.propTypes = {

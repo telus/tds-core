@@ -29,6 +29,7 @@ Icon.propTypes = {
     'caret-up',
     'checkmark',
     'chevron',
+    'left-chevron',
     'exclamation-point-circle',
     'expander',
     'hamburger',

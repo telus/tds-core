@@ -70,3 +70,12 @@
 .icon-core-question-mark-circle {
   @include icon-fixed-color($color-shuttle-grey);
 }
+
+.icon-core-left-chevron {
+  @include core-icon(chevron);
+
+  &::before {
+    display: inline-block;
+    transform: rotate(-180deg) translateY(1.5px);
+  }
+}

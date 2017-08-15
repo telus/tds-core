@@ -32,9 +32,19 @@ describe('Link.Chevron', () => {
   });
 
   it('has a chevron icon', () => {
-    const link = doShallow({ href: 'https://telus.com' });
+    let link = doShallow({ href: 'https://telus.com' });
+    expect(link).toContainReact(
+      <span className="rightChevron">
+        <Icon glyph="chevron" aria-hidden="true" />
+      </span>
+    );
 
-    expect(link).toContainReact(<Icon glyph="chevron" aria-hidden="true" />);
+    link = doShallow({ href: 'https://telus.com', direction: 'left' });
+    expect(link).toContainReact(
+      <span className="leftChevron">
+        <Icon glyph="left-chevron" aria-hidden="true" />
+      </span>
+    );
   });
 
   it('can have specific variants', () => {
@@ -49,12 +59,6 @@ describe('Link.Chevron', () => {
 
     link = doShallow({ href: 'https://telus.com', variant: 'inverted' });
     expect(link).toHaveClassName('inverted');
-  });
-
-  it('can face leftward', () => {
-    const link = doShallow({ href: 'https://telus.com' });
-
-    expect(link).toContainReact(<Icon glyph="chevron" aria-hidden="true" />);
   });
 
   it('passes additional attributes to the link element', () => {

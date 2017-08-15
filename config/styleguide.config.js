@@ -117,8 +117,8 @@ module.exports = {
           components() {
             return [
               path.resolve('src/components/Card/Card.jsx'),
-              // path.resolve('src/components/Link/Link.jsx'),
-              // path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')
+              path.resolve('src/components/Link/Link.jsx'),
+              path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')
             ]
           },
           sections: [
