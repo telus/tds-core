@@ -74,7 +74,7 @@ if (env === 'production') {
   deployToS3_deprecated();
 }
 else {
-  // deployToS3('staging');
+  deployToS3('staging');
 
   deployToS3_deprecated();
 }
