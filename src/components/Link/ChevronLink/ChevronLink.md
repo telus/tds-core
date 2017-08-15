@@ -7,6 +7,8 @@
 ### Colours
 
 ```
+const PurpleBlock = require('../../__docs__/PurpleBlock').default;
+
 <div>
   <div>
     <Link.Chevron href="https://telus.com" variant="primary">See latest devices</Link.Chevron>
@@ -16,10 +18,13 @@
     <Link.Chevron href="https://telus.com" variant="secondary">Get great deals</Link.Chevron>
   </div>
 
-  <div>
+  <PurpleBlock>
     <Link.Chevron href="https://telus.com" variant="inverted">Find out how</Link.Chevron>
-  </div>
+  </PurpleBlock>
 </div>
+```
+
+```
 ```
 
 ### Left-facing chevron

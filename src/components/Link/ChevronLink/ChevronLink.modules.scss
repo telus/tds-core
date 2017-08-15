@@ -17,7 +17,8 @@
 .primary {
   composes: link;
 
-  &:link {
+  &:link,
+  &:visited {
     color: $color-primary;
   }
 }
@@ -25,13 +26,19 @@
 .secondary {
   composes: link;
 
-  color: $color-secondary;
+  &:link,
+  &:visited {
+    color: $color-secondary;
+  }
 }
 
 .inverted {
   composes: link;
 
-  color: $color-white;
+  &:link,
+  &:visited {
+    color: $color-white;
+  }
 }
 
 .chevron {
