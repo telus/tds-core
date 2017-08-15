@@ -25,61 +25,35 @@ const AWS = require('aws-sdk');
 
 const uploadDir = resolvePath('styleguide/');
 
-// Holding off on using the version for now. Will need DNS changes to properly get versioned folders in the bucket.
-// const version = require(resolvePath('package.json')).version;
+const version = require(resolvePath('package.json')).version;
 const env = process.argv[2] || 'staging';
 
 const config = {
   region: 'us-east-1',
-  domain: `cdn.telus-thorium-doc-${env}`,
-  prefix: env === 'staging' ? 'latest' : undefined,      // Deploy to a directory in staging for now until we get versioning sorted out
+  domain: 'telus-design-system-docs',
   uploadDir: uploadDir,
   lockConfig: true
 };
 const s3 = new AWS.S3({region: config.region});
 
 
-const deployToS3 = (onDeploy) => {
-  deploy(s3, config, (err, website) => {
+const deployToS3 = (prefix) => {
+  const deployConfig = Object.assign(config, {prefix});
+
+  deploy(s3, deployConfig, (err, website) => {
     if (err) {
       throw err;
     }
 
     console.log(website);
-
-    onDeploy(s3);
-  });
-};
-
-const grantReadPermissions = (directory) => {
-  readDirSync(directory)
-    .filter((file) => file !== 'build')
-    .forEach((file) => {
-      const absoluteFilePath = resolvePath(directory, file);
-
-      putObjectAcl(relativePath(uploadDir, absoluteFilePath))
-    });
-};
-
-const putObjectAcl = (key) => {
-  const params = {
-    Bucket: config.domain,
-    ACL: 'public-read',
-    Key: env === 'staging' ? `latest/${key}` : key
-  };
-
-  s3.putObjectAcl(params, (err, data) => {
-    if (err) {
-      throw err;
-    }
-
-    console.log(data);
   });
 };
 
 
-deployToS3(() => {
-  // FIXME: There seems to be something wrong with the permissions when uploading via s3-website. Objects are not public readable by default.
-  grantReadPermissions(uploadDir);
-  grantReadPermissions(resolvePath(uploadDir, 'build'));
-});
+if (env === 'production') {
+  deployToS3('latest');
+  deployToS3(`v${version}`);
+}
+else {
+  deployToS3('staging');
+}
