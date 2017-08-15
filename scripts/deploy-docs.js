@@ -38,16 +38,23 @@ const s3 = new AWS.S3({ region: config.region });
 const deployToS3 = (prefix) => {
   const deployConfig = Object.assign(config, { prefix });
 
-  console.log('Deploying to s3...');
-  console.log(deployConfig);
+  return new Promise(
+    (resolve) => {
 
-  deploy(s3, deployConfig, (err, website) => {
-    if (err) {
-      throw err;
+      console.log('Deploying to s3...');
+      console.log(deployConfig);
+
+      deploy(s3, deployConfig, (err, website) => {
+        if (err) {
+          throw err;
+        }
+
+        console.log(website);
+      });
+      resolve();
     }
+  );
 
-    console.log(website);
-  });
 };
 
 // Continue to deploy to the thorium bucket because http://tds.telus.com points there
@@ -57,13 +64,23 @@ const deployToS3_deprecated = () => {
     prefix: env === 'production' ? undefined : 'latest'
   });
 
-  deploy(s3, deployConfig, (err, website) => {
-    if (err) {
-      throw err;
-    }
+  return new Promise(
+    (resolve) => {
 
-    console.log(website);
-  });
+      console.log('Deploying to s3 (deprecated)...');
+      console.log(deployConfig);
+
+      deploy(s3, deployConfig, (err, website) => {
+        if (err) {
+          throw err;
+        }
+
+        console.log(website);
+      });
+      resolve();
+    }
+  );
+
 };
 
 
@@ -77,5 +94,6 @@ if (env === 'production') {
   deployToS3_deprecated();
 }
 else {
-  deployToS3('staging');
+  deployToS3('staging')
+  .then(deployToS3_deprecated);
 }
