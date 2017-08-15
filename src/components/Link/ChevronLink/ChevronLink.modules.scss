@@ -1,8 +1,13 @@
+$tds-style-typography-html-tags: false;
+
 @import '../../../scss/settings/colours';
+@import '../../../scss/utility/responsive';
+@import '../../../scss/settings/responsive-grid';
 @import '../../../scss/settings/typography';
+@import '../../../scss/foundation/typography';
 
 .link {
-  font-size: $body-medium-text-size;
+  @extend %text--medium;
 
   &:hover {
     .rightChevron {
