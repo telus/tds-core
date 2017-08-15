@@ -36,48 +36,52 @@ const s3 = new AWS.S3({ region: config.region });
 
 
 const deployToS3 = (prefix) => {
-  const deployConfig = Object.assign(config, { prefix });
 
   return new Promise(
-    (resolve) => {
+    (resolve, reject) => {
 
+      const deployConfig = Object.assign(config, { prefix });
       console.log('Deploying to s3...');
       console.log(deployConfig);
 
       deploy(s3, deployConfig, (err, website) => {
         if (err) {
           throw err;
+          reject();
         }
 
         console.log(website);
+        resolve();
       });
-      resolve();
+
     }
   );
 
 };
 
-// Continue to deploy to the thorium bucket because http://tds.telus.com points there
+// Continue to deploy to the tthorium bucket because http://tds.telus.com points there
 const deployToS3_deprecated = () => {
-  const deployConfig = Object.assign(config, {
-    domain: `cdn.telus-thorium-doc-${env}`,
-    prefix: env === 'production' ? undefined : 'latest'
-  });
 
   return new Promise(
-    (resolve) => {
+    (resolve, reject) => {
 
+      const deployConfig = Object.assign(config, {
+        domain: `cdn.telus-thorium-doc-${env}`,
+        prefix: env === 'production' ? undefined : 'latest'
+      });
       console.log('Deploying to s3 (deprecated)...');
       console.log(deployConfig);
 
       deploy(s3, deployConfig, (err, website) => {
         if (err) {
           throw err;
+          reject();
         }
 
         console.log(website);
+        resolve();
       });
-      resolve();
+
     }
   );
 
@@ -94,6 +98,7 @@ if (env === 'production') {
   deployToS3_deprecated();
 }
 else {
-  deployToS3('staging')
-  .then(deployToS3_deprecated);
+
+  deployToS3_deprecated()
+  .then(deployToS3('staging'));
 }
