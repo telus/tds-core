@@ -22,7 +22,8 @@
     "dev": "styleguidist server --config config/styleguide.config.js",
     "lint:js": "eslint src --ext '.js,.jsx' --config config/.eslintrc.json --fix",
     "lint:scss": "stylelint 'src/scss/**/*.scss' --config config/.stylelintrc.json",
-    "lint": "yarn lint:js && yarn lint:scss",
+    "lint:ec": "echint",
+    "lint": "yarn lint:js && yarn lint:scss && yarn lint:ec",
     "precommit": "yarn lint && yarn test && yarn build",
     "release:changelog": "changelog",
     "release": "scripts/release.sh",
@@ -52,6 +53,7 @@
     "classnames": "^2.2.5",
     "css-loader": "^0.28.4",
     "cz-conventional-changelog": "^2.0.0",
+    "echint": "^4.0.1",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
     "eslint": "3.19.0",
@@ -100,6 +102,19 @@
     }
   },
   "echint": {
-    "extends": "./node_modules/@telusdigital/eslint-config/.editorconfig"
+    "ignore": [
+      "**/node_modules/**",
+      "config/styleguide/**",
+      "**/fonts/**",
+      "**/dist/**",
+      "docs/components/Logo.svg",
+      "**.log",
+
+      "src/components/Video/**",
+      "src/components/TitledText/**",
+
+      "docs/elements/**",
+      "icons/scripts/icons.js"
+    ]
   }
 }

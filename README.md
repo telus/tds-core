@@ -1,15 +1,13 @@
 # TELUS Design System [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences. 
-It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for 
+The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences.
+It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for
 digital design guidelines, code patterns and UI elements.
 
 TDS usage, documentation & examples: <http://tds.telus.com>
 
-
 ## Installation
-
-_If you are using the [isomorphic-starter-kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), these steps should already be done._ 
+_If you are using the [isomorphic-starter-kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), these steps should already be done._
 
 ```sh
 yarn add @telusdigital/tds
@@ -21,8 +19,7 @@ npm install @telusdigital/tds --save
 ## Usage
 
 ### 1. Import the TDS styles
-
-First, import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles and the 
+First, import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles and the
 component styles. Webpack will bundle the TDS styles with your application specific styles.
 
 ```js
@@ -41,8 +38,7 @@ render(
 );
 ```
 
-### 2. Use TDS Components 
-
+### 2. Use TDS Components
 Now, use TDS components in your application components.
 
 ```js
@@ -55,7 +51,7 @@ import { Card, Spinner } from '@telusdigital/tds';
 const MyLoadingCard = ({loading, children}) => (
   <div>
     {loading && <Spinner spinning={true} tip="Loading..." />}
-    
+
     <Card>
       {children}
     </Card>
@@ -79,4 +75,3 @@ variables, functions, or mixins.
   color: $color-accessible-green;
 }
 ```
-

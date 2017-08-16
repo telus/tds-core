@@ -23,13 +23,13 @@ Wrap the `Spinner` around the content to use embedded mode.
   <section>
     <h3>Current Bill</h3>
     <p>View your latest bill here.</p>
-   </section>
+  </section>
 </Spinner>
 ```
 
 ## Full screen mode
 
-To block the entire screen while waiting, use the full screen mode. This will disable scrolling and prevent any interactions 
+To block the entire screen while waiting, use the full screen mode. This will disable scrolling and prevent any interactions
 with the page while it is active.
 
 ```
@@ -39,7 +39,7 @@ initialState = {
 
 const goFullScreen = () => {
   setState({fullScreen: true});
-  
+
   setTimeout(() => setState({fullScreen: false}), 2000);
 };
 

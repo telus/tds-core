@@ -21,7 +21,7 @@
 
 ## Instructive Icons
 
-By default, all icons will inherit the color of the text around them, except for "instructive" icons. Instructive icons 
+By default, all icons will inherit the color of the text around them, except for "instructive" icons. Instructive icons
 have special meaning, and are pre-colored.
 
 ```
@@ -31,7 +31,7 @@ have special meaning, and are pre-colored.
   <Icon glyph="incomplete" />
 </div>
 ```
- 
+
 ## Modifying color
 
 Use the `variant` prop to alter the icon's color. Each variant has semantic meaning.
@@ -67,7 +67,6 @@ Indicates a problem.
   <Icon glyph="location" variant="error" /> Your location needs to be updated
 </div>
 ```
- 
 
 ## Controlling alignment
 
@@ -85,10 +84,10 @@ Use the `fixedWidth` prop when aligning icons vertically.
 
 Icons can be either decorative or meaningful.
 
-**Decorative icons** do not perform a role beyond visual aesthetics and should be hidden from screen readers using the 
-`aria-hidden` attribute. Usually, the information being communicated with the icon is also conveyed in another manner. 
+**Decorative icons** do not perform a role beyond visual aesthetics and should be hidden from screen readers using the
+`aria-hidden` attribute. Usually, the information being communicated with the icon is also conveyed in another manner.
 
-This example shows a decorative icon that is hidden from screen readers. 
+This example shows a decorative icon that is hidden from screen readers.
 
 ```
 <p>
@@ -96,8 +95,8 @@ This example shows a decorative icon that is hidden from screen readers.
 </p>
 ```
 
-**Meaningful icons** have meaning within the context of the page, which should be communicated to screen readers with the 
-`aria-label` attribute. Meaningful icons can also be interactive elements, which should be designated with 
+**Meaningful icons** have meaning within the context of the page, which should be communicated to screen readers with the
+`aria-label` attribute. Meaningful icons can also be interactive elements, which should be designated with
 the `role` prop.
 
 This example shows a meaningful icon that needs accessibility attributes. (View the code to see the props)

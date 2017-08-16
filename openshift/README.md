@@ -20,7 +20,7 @@ This application requires `openshift-cli` & `vault`. Either install them with `b
 
 #### Vault
 
-In order to kick off the initial installation of a project, or to add or edit any application secrets, you'll need to log in with HashiCorp Vault. 
+In order to kick off the initial installation of a project, or to add or edit any application secrets, you'll need to log in with HashiCorp Vault.
 
 Use our [ship.py](https://github.com/telusdigital/ship.py) utility command line tool to log into vault.
 
@@ -99,7 +99,7 @@ $ sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-mac
 $ brew cask install minishift
 $ minishift config set memory 8192
 $ minishift start
-``` 
+```
 
 On other platforms: [see instructions](https://docs.openshift.org/latest/minishift/getting-started/installing.html#installing-instructions)
 

@@ -69,7 +69,7 @@ const togglePanel = (panelKey) => {
     onClick={() => togglePanel('panel-1')}>Toggle panel #1</button>
   <button className="button button--secondary button--link"
     onClick={() => togglePanel('panel-2')}>Toggle panel #2</button>
-  
+
   <Group activeKeys={state.activeKeys}>
     <Panel header="Panel #1" panelKey="panel-1">
     Panel #1 Body

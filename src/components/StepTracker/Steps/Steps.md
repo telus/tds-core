@@ -5,7 +5,7 @@ This component is not interactive, so the user can not use it to navigate throug
 need to provide its own navigation mechanism.
 
 `Steps` adjusts to accommodate smaller screens by hiding the labels, displaying only a summary. Resize your browser
-window to see this behavior. 
+window to see this behavior.
 
 ```
 initialState = {
@@ -20,7 +20,7 @@ initialState = {
     <Steps.Step label="Payment setup" />
     <Steps.Step label="Submit" />
   </Steps>
-  
+
   <Button variant="secondary" onClick={() => setState({ current: state.current-1 })}>
     Previous Step
   </Button>

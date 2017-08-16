@@ -25,8 +25,8 @@ initialState = {
 };
 
 <SelectorCounter defaultValue={state.value}
-                 onChange={(value) => setState({ value: value})}
-                 successful={state.value > 5} invalid={state.value <= 5}  />
+                onChange={(value) => setState({ value: value})}
+                successful={state.value > 5} invalid={state.value <= 5}  />
 ```
 
 ## Accessibility
@@ -94,7 +94,7 @@ const helperSuccess = successful? 'helper--success':'';
       aria-described-by="ex-selcounter-desc"
       contextPrefix="You chose"
       contextSuffix="smartphone plans"
-     />
+    />
   </div>
   <Button>Submit</Button>
 </form>
