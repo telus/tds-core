@@ -38,8 +38,7 @@ const s3 = new AWS.S3({ region: config.region });
 const deployToS3 = (prefix) => new Promise((resolve, reject) => {
   const deployConfig = Object.assign(config, { prefix });
 
-  console.log('Deploying to s3...');
-  console.log(deployConfig);
+  console.log(`Deploying to s3: ${deployConfig.domain}/${deployConfig.prefix}...`);
 
   deploy(s3, deployConfig, (err, website) => {
     if (err) {
@@ -60,8 +59,7 @@ const deployToS3_deprecated = () => {
     prefix: env === 'production' ? undefined : 'latest'
   });
 
-  console.log('Deploying to s3 (deprecated)...');
-  console.log(deployConfig);
+  console.log(`Deploying to s3: ${deployConfig.domain}/${deployConfig.prefix}...`);
 
   deploy(s3, deployConfig, (err, website) => {
     if (err) {
@@ -82,5 +80,4 @@ if (env === 'production') {
 }
 else {
   deployToS3('staging');
-  deployToS3('ryan.test.1');
 }
