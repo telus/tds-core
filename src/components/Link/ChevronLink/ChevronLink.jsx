@@ -26,6 +26,8 @@ const getIcon = (glyph, className) => (
 );
 
 /**
+ * A Call to Action link.
+ *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
 const ChevronLink = ({ variant, direction, children, ...rest }) => (
@@ -41,15 +43,24 @@ const ChevronLink = ({ variant, direction, children, ...rest }) => (
   )
 );
 ChevronLink.propTypes = {
+  /**
+   * The style.
+   */
   variant: PropTypes.oneOf([
     'primary',
     'secondary',
     'inverted'
   ]),
+  /**
+   * The chevron's direction and placement.
+   */
   direction: PropTypes.oneOf([
     'left',
     'right'
   ]),
+  /**
+   * The label.
+   */
   children: PropTypes.node.isRequired
 };
 ChevronLink.defaultProps = {

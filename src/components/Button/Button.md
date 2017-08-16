@@ -1,9 +1,9 @@
-## Minimal Usage
+## Minimal usage
 
 Provide a function as the `onClick` prop to perform an action when clicked. **Avoid using a button if navigation
 is the button's primary action, as a link is more appropriate.**
 
-### Usage Criteria
+### Usage criteria
 
 * Use buttons to move though a transaction.
 * Aim to use only one button per page.
