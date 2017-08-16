@@ -1,27 +1,32 @@
 ### Minimal Usage
 
-```
-<Link.Button>Find out how</Link.Button>
-```
+A Button Link is a navigational element that styles itself as a button. Clicking one should navigate to a new "page".
 
-### Variants
+By default, Buttons will be displayed in the `primary` variant. Use primary buttons for the main call to action on a page.
 
 ```
-const PurpleBlock = require('../../__docs__/PurpleBlock').default;
-
-<div>
-  <Link.Button variant="primary">Explore</Link.Button>
-  <Link.Button variant="secondary">Take me there</Link.Button>
-  <br/>
-  <br/>
-  <PurpleBlock>
-    <Link.Button variant="outlined">Find me</Link.Button>
-  </PurpleBlock>
-</div>
+<Link.Button href="http://www.telus.com">Find out how</Link.Button>
 ```
 
-### Inverted Button Links
+### Using Button Links
+
+All Button Links have the same visual appearance as [Button](#button), but are applied differently in certain contexts. Unlike the Button component, Button Link is more appropriate for:
+
+- Call to action
+- Placement atop a complex background such as an image
+
+#### Placing Button Links on images
+
+Use the `outlined` variant when placing a button on top of an image, which will cause the image to show through. You can
+also `invert` the colour scheme.
+
+Use this variant with caution. There will be accessibility issues if the colour contrast of the image and the button text
+is too low, including the hover state.
 
 ```
-<Link.Button invert>Learn more</Link.Button>
+const Hero = require('../../__docs__/Hero').default;
+
+<Hero>
+  <Button variant="outlined" invert>Advanced solutions</Button>
+</Hero>
 ```

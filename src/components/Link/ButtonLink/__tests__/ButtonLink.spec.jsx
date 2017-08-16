@@ -36,52 +36,52 @@ describe('Link.Button', () => {
   });
 
   it('can be presented as one of the allowed variants', () => {
-    let button = doShallow();
-    expect(button).toHaveClassName('primary');
+    let link = doShallow();
+    expect(link).toHaveClassName('primary');
 
-    button = doShallow({ variant: 'primary' });
-    expect(button).toHaveClassName('primary');
+    link = doShallow({ variant: 'primary' });
+    expect(link).toHaveClassName('primary');
 
-    button = doShallow({ variant: 'secondary' });
-    expect(button).toHaveClassName('secondary');
+    link = doShallow({ variant: 'secondary' });
+    expect(link).toHaveClassName('secondary');
 
-    button = doShallow({ variant: 'outlined' });
-    expect(button).toHaveClassName('outlined');
+    link = doShallow({ variant: 'outlined' });
+    expect(link).toHaveClassName('outlined');
   });
 
   it('can be inverted for secondary and outlined variants', () => {
-    const secondaryButton = doShallow({ variant: 'secondary', invert: true });
-    expect(secondaryButton).toHaveClassName('secondaryInverted');
+    const secondaryLink = doShallow({ variant: 'secondary', invert: true });
+    expect(secondaryLink).toHaveClassName('secondaryInverted');
 
-    const outlinedButton = doShallow({ variant: 'outlined', invert: true });
-    expect(outlinedButton).toHaveClassName('outlinedInverted');
+    const outlinedLink = doShallow({ variant: 'outlined', invert: true });
+    expect(outlinedLink).toHaveClassName('outlinedInverted');
   });
 
   it('can not be inverted for primary variant', () => {
-    const button = doShallow({ variant: 'primary', invert: true });
+    const link = doShallow({ variant: 'primary', invert: true });
 
-    expect(button).toHaveClassName('primary');
+    expect(link).toHaveClassName('primary');
     expect(warn).toHaveBeenCalled();
   });
 
   it('can not be disabled', () => {
-    const button = doShallow({ disabled: true });
+    const link = doShallow({ disabled: true });
 
-    expect(button).not.toHaveProp('disabled');
+    expect(link).not.toHaveProp('disabled');
     expect(warn).toHaveBeenCalled();
   });
 
-  it('passes additional attributes to button element', () => {
-    const button = doShallow({ id: 'the-button', tabindex: 1 });
+  it('passes additional attributes to rendered <a> element', () => {
+    const link = doShallow({ id: 'the-link', tabindex: 1 });
 
-    expect(button).toHaveProp('id', 'the-button');
-    expect(button).toHaveProp('tabindex', 1);
+    expect(link).toHaveProp('id', 'the-link');
+    expect(link).toHaveProp('tabindex', 1);
   });
 
   it('does not allow custom CSS', () => {
-    const button = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } });
+    const link = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } });
 
-    expect(button).not.toHaveProp('className', 'my-custom-class');
-    expect(button).not.toHaveProp('style');
+    expect(link).not.toHaveProp('className', 'my-custom-class');
+    expect(link).not.toHaveProp('style');
   });
 })

@@ -24,12 +24,17 @@ const ButtonLink = ({ variant, invert, children, ...rest }) => {
   );
 };
 ButtonLink.propTypes = {
-  variant: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'outlined'
-  ]),
+  /**
+   * The style.
+   */
+  variant: PropTypes.oneOf(['primary', 'secondary', 'outlined']),
+  /**
+   * Whether or not to invert the variant's color scheme.
+   */
   invert: PropTypes.bool,
+  /**
+   * The label.
+   */
   children: PropTypes.string.isRequired
 };
 ButtonLink.defaultProps = {
