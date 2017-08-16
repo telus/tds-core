@@ -69,6 +69,7 @@ const deployToS3_deprecated = () => {
         domain: `cdn.telus-thorium-doc-${env}`,
         prefix: env === 'production' ? undefined : 'latest'
       });
+
       console.log('Deploying to s3 (deprecated)...');
       console.log(deployConfig);
 
@@ -98,7 +99,5 @@ if (env === 'production') {
   deployToS3_deprecated();
 }
 else {
-
-  deployToS3_deprecated()
-  .then(deployToS3('staging'));
+  deployToS3('staging');
 }
