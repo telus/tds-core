@@ -109,9 +109,7 @@
       "**/dist/**",
       "docs/components/Logo.svg",
       "**.log",
-
-      "src/components/Video/**",
-      "src/components/TitledText/**",
+      "**/__snapshots__/**",
 
       "docs/elements/**",
       "icons/scripts/icons.js"
