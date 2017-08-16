@@ -4,12 +4,16 @@ import PropTypes from 'prop-types';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
 import ChevronLink from './ChevronLink/ChevronLink';
+import ButtonLink from './ButtonLink/ButtonLink';
 import safeRest from '../../safeRest';
 
 import styles from './Link.modules.scss';
 
 const getClassName = invert => (invert ? styles.inverted : styles.base);
 
+/**
+ * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
+ */
 const Link = ({ invert, children, ...rest }) => (
   React.createElement(
     rest.to ? ReactRouterLink : 'a',
@@ -33,5 +37,6 @@ Link.defaultProps = {
 };
 
 Link.Chevron = ChevronLink;
+Link.Button = ButtonLink;
 
 export default Link;

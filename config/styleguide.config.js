@@ -24,6 +24,11 @@ module.exports = {
       name = 'ExpandCollapse';
     }
 
+    // Link component has name-space sub-components
+    if (path.dirname(componentPath).includes('Link')) {
+      name = 'Link';
+    }
+
     return `import { ${name} } from '@telusdigital/tds';`;
   },
 
@@ -118,7 +123,8 @@ module.exports = {
             return [
               path.resolve('src/components/Card/Card.jsx'),
               path.resolve('src/components/Link/Link.jsx'),
-              path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')
+              path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx'),
+              path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx')
             ]
           },
           sections: [
@@ -188,7 +194,7 @@ module.exports = {
               options: {
                 modules: true,
                 localIdentName: 'TDS_[name]__[local]___[hash:base64:5]',
-                importLoaders: 1, // Number of loaders applied before CSS loader
+                importLoaders: 1 // Number of loaders applied before CSS loader
               }
             },
             'sass-loader'

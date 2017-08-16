@@ -25,6 +25,9 @@ const getIcon = (glyph, className) => (
   </span>
 );
 
+/**
+ * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
+ */
 const ChevronLink = ({ variant, direction, children, ...rest }) => (
   React.createElement(
     rest.to ? ReactRouterLink : 'a',
