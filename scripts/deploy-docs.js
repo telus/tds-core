@@ -36,30 +36,21 @@ const s3 = new AWS.S3({ region: config.region });
 
 
 const deployToS3 = (prefix) => {
+  const deployConfig = Object.assign(config, { prefix });
 
-  return new Promise(
-    (resolve, reject) => {
+  console.log('Deploying to s3...');
+  console.log(deployConfig);
 
-      const deployConfig = Object.assign(config, { prefix });
-      console.log('Deploying to s3...');
-      console.log(deployConfig);
-
-      deploy(s3, deployConfig, (err, website) => {
-        if (err) {
-          throw err;
-          reject();
-        }
-
-        console.log(website);
-        resolve();
-      });
-
+  deploy(s3, deployConfig, (err, website) => {
+    if (err) {
+      throw err;
     }
-  );
 
+    console.log(website);
+  });
 };
 
-// Continue to deploy to the tthorium bucket because http://tds.telus.com points there
+// Continue to deploy to the thorium bucket because http://tds.telus.com points there
 const deployToS3_deprecated = () => {
 
   return new Promise(
@@ -100,4 +91,5 @@ if (env === 'production') {
 }
 else {
   deployToS3('staging');
+  deployToS3('ryan-test-1');
 }
