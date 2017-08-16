@@ -1,40 +1,40 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import React from 'react'
+import { shallow } from 'enzyme'
+import toJson from 'enzyme-to-json'
 
-import { deprecate } from '../../../warn';
-import Card from '../Card';
+import { deprecate } from '../../../warn'
+import Card from '../Card'
 
 jest.mock('../../../warn', () => (
   { deprecate: jest.fn() }
-));
+))
 
 describe('<Card />', () => {
   it('renders', () => {
-    const card = shallow(<Card>Some content</Card>);
+    const card = shallow(<Card>Some content</Card>)
 
-    expect(toJson(card)).toMatchSnapshot();
-  });
+    expect(toJson(card)).toMatchSnapshot()
+  })
 
   it('passes attributes to DOM node', () => {
-    const card = shallow(<Card id="hello" title="my title">Some content</Card>);
+    const card = shallow(<Card id="hello" title="my title">Some content</Card>)
 
-    expect(card).toHaveProp('id', 'hello');
-    expect(card).toHaveProp('title', 'my title');
-  });
+    expect(card).toHaveProp('id', 'hello')
+    expect(card).toHaveProp('title', 'my title')
+  })
 
   it('accepts but deprecates custom classes', () => {
-    const card = shallow(<Card className="some-class">Some content</Card>);
+    const card = shallow(<Card className="some-class">Some content</Card>)
 
-    expect(card).toHaveClassName('some-class');
-    expect(deprecate).toHaveBeenCalled();
-  });
+    expect(card).toHaveClassName('some-class')
+    expect(deprecate).toHaveBeenCalled()
+  })
 
   it('accepts but deprecates inline styles', () => {
-    const styles = { color: 'blue' };
-    const card = shallow(<Card style={styles}>Some content</Card>);
+    const styles = { color: 'blue' }
+    const card = shallow(<Card style={styles}>Some content</Card>)
 
-    expect(card).toHaveProp('style', styles);
-    expect(deprecate).toHaveBeenCalled();
-  });
-});
+    expect(card).toHaveProp('style', styles)
+    expect(deprecate).toHaveBeenCalled()
+  })
+})

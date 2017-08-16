@@ -1,4 +1,4 @@
-import Group from './Group';
-import Panel from './Panel';
+import Group from './Group'
+import Panel from './Panel'
 
-export default { Group, Panel };
+export default { Group, Panel }

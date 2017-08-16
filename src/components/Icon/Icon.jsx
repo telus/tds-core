@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const Icon = ({ glyph, variant, fixedWidth, className, children, ...rest }) => {
   const classes = classNames(
@@ -11,14 +11,14 @@ const Icon = ({ glyph, variant, fixedWidth, className, children, ...rest }) => {
       'icon--fw': fixedWidth,
       [`icon--${variant}`]: variant
     }
-  );
+  )
 
   return (
     <i {...rest} className={classes}>
       {children}
     </i>
-  );
-};
+  )
+}
 
 Icon.propTypes = {
   /**
@@ -68,12 +68,12 @@ Icon.propTypes = {
    * @ignore
    */
   children: PropTypes.node
-};
+}
 Icon.defaultProps = {
   variant: null,
   fixedWidth: false,
   className: '',
   children: null
-};
+}
 
-export default Icon;
+export default Icon

@@ -1,31 +1,31 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import CounterButton from './CounterButton';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
+import CounterButton from './CounterButton'
 
-import './SelectorCounter.scss';
+import './SelectorCounter.scss'
 
 /**
  * Choose a number.
  */
 class SelectorCounter extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleInput = this.handleInput.bind(this);
-    this.handleIncrement = this.handleIncrement.bind(this);
-    this.handleDecrement = this.handleDecrement.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.handleInput = this.handleInput.bind(this)
+    this.handleIncrement = this.handleIncrement.bind(this)
+    this.handleDecrement = this.handleDecrement.bind(this)
     this.state = {
       value: props.defaultValue
-    };
+    }
   }
 
   handleChange(value) {
-    this.setState({ value });
+    this.setState({ value })
 
     if (typeof this.props.onChange === 'function') {
-      this.props.onChange(value);
+      this.props.onChange(value)
     }
   }
 
@@ -34,8 +34,8 @@ class SelectorCounter extends Component {
    * @param event
    */
   handleIncrement(event) {
-    event.preventDefault();
-    this.handleChange(parseInt(this.state.value, 10) + 1);
+    event.preventDefault()
+    this.handleChange(parseInt(this.state.value, 10) + 1)
   }
 
   /**
@@ -43,8 +43,8 @@ class SelectorCounter extends Component {
    * @param event
    */
   handleDecrement(event) {
-    event.preventDefault();
-    this.handleChange(parseInt(this.state.value, 10) - 1);
+    event.preventDefault()
+    this.handleChange(parseInt(this.state.value, 10) - 1)
   }
 
   /**
@@ -52,11 +52,11 @@ class SelectorCounter extends Component {
    * @param event
    */
   handleInput(event) {
-    this.handleChange(event.target.value);
+    this.handleChange(event.target.value)
   }
 
   focus() {
-    this.input.focus();
+    this.input.focus()
   }
 
   render() {
@@ -72,14 +72,14 @@ class SelectorCounter extends Component {
       max,
       min,
       successful
-    } = this.props;
-    const value = this.state.value;
+    } = this.props
+    const value = this.state.value
 
     const cssClasses = {
       'selector-counter--disabled': disabled,
       'selector-counter--error': invalid,
       'selector-counter--successful': successful
-    };
+    }
     /* eslint-disable */
     return (
       <div className={classNames('selector-counter', className, cssClasses)}>
@@ -180,7 +180,7 @@ SelectorCounter.propTypes = {
    * Accessible text suffix for the change event announcement.
    */
   contextSuffix: PropTypes.string
-};
+}
 
 SelectorCounter.defaultProps = {
   defaultValue: 0,
@@ -191,6 +191,6 @@ SelectorCounter.defaultProps = {
   decrementorLabel: 'Decrease value',
   contextPrefix: '',
   contextSuffix: ''
-};
+}
 
-export default SelectorCounter;
+export default SelectorCounter

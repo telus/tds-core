@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const propTypes = {
   className: PropTypes.string,
@@ -39,7 +39,7 @@ const propTypes = {
   mdHiddenUp: PropTypes.bool,
   lgHiddenUp: PropTypes.bool,
   xlHiddenUp: PropTypes.bool
-};
+}
 
 /**
  * Align grid content vertically.
@@ -49,61 +49,61 @@ const propTypes = {
  */
 function Column(props) {
   // Collect any "extra" props, that aren't explicitly consumed.
-  const extraProps = {};
+  const extraProps = {}
 
   Object.keys(props).forEach((propName) => {
     if (!propTypes[propName]) {
-      extraProps[propName] = props[propName];
+      extraProps[propName] = props[propName]
     }
-  });
+  })
 
-  const classes = [props.className];
+  const classes = [props.className]
   const deviceSizes = {
     xs: 'xs',
     sm: 'small',
     md: 'medium',
     lg: 'large',
     xl: 'xl'
-  };
+  }
 
   Object.keys(deviceSizes).forEach((size) => {
-    const sizeProp = props[size];
-    const offsetProp = props[`${size}Offset`];
-    const pushProp = props[`${size}Push`];
-    const pullProp = props[`${size}Pull`];
-    const hiddenProp = props[`${size}Hidden`];
-    const hiddenUpProp = props[`${size}HiddenUp`];
+    const sizeProp = props[size]
+    const offsetProp = props[`${size}Offset`]
+    const pushProp = props[`${size}Push`]
+    const pullProp = props[`${size}Pull`]
+    const hiddenProp = props[`${size}Hidden`]
+    const hiddenUpProp = props[`${size}HiddenUp`]
 
     if (sizeProp) {
-      classes.push(`${deviceSizes[size]}-${sizeProp}`);
+      classes.push(`${deviceSizes[size]}-${sizeProp}`)
     }
 
     if (offsetProp) {
-      classes.push(`offset-${deviceSizes[size]}-${offsetProp}`);
+      classes.push(`offset-${deviceSizes[size]}-${offsetProp}`)
     }
 
     if (pushProp) {
-      classes.push(`push-${deviceSizes[size]}-${pushProp}`);
+      classes.push(`push-${deviceSizes[size]}-${pushProp}`)
     }
 
     if (pullProp) {
-      classes.push(`pull-${deviceSizes[size]}-${pullProp}`);
+      classes.push(`pull-${deviceSizes[size]}-${pullProp}`)
     }
 
     if (hiddenProp) {
-      classes.push(`hidden-${deviceSizes[size]}`);
+      classes.push(`hidden-${deviceSizes[size]}`)
     }
 
     if (hiddenUpProp) {
-      classes.push(`hidden-${deviceSizes[size]}-up`);
+      classes.push(`hidden-${deviceSizes[size]}-up`)
     }
-  });
+  })
 
   return (
     <div className={classes.filter(c => c).join(' ')} {...extraProps}>
       {props.children}
     </div>
-  );
+  )
 }
 
 Column.propTypes = {
@@ -170,6 +170,6 @@ Column.propTypes = {
    * The Column's content. Can be text, any HTML element, or any component.
    */
   children: PropTypes.node
-};
+}
 
-export default Column;
+export default Column

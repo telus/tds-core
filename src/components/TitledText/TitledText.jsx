@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+/* eslint react/prefer-stateless-function: 0 */
+/* eslint react/no-array-index-key: 0 */
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import './TitledText.scss';
+import './TitledText.scss'
 
 class TitledText extends Component {
 
   render() {
-    const { title, content, titleHeadingClass } = this.props;
+    const { title, content, titleHeadingClass } = this.props
 
     const contentHtml = content.map((c, index) => (
       <div key={index} className="title-text-block__content">
         <h2 className="heading-4">{c.title}</h2>
         <p>{c.content}</p>
       </div>
-    ));
+    ))
 
     return (
       <section className="titled-text-block">
@@ -26,7 +28,7 @@ class TitledText extends Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
@@ -37,10 +39,10 @@ TitledText.propTypes = {
     content: PropTypes.string.isRequired
   })).isRequired,
   titleHeadingClass: PropTypes.string
-};
+}
 
 TitledText.defaultProps = {
   titleHeadingClass: 'heading-1'
-};
+}
 
-export default TitledText;
+export default TitledText

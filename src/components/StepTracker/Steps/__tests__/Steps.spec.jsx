@@ -1,7 +1,7 @@
-import React from 'react';
-import { mount } from 'enzyme';
+import React from 'react'
+import { mount } from 'enzyme'
 
-import Steps from '../Steps';
+import Steps from '../Steps'
 
 describe('<Steps />', () => {
   it('renders into 3 steps', () => {
@@ -11,8 +11,8 @@ describe('<Steps />', () => {
         <Steps.Step label="Purchase" />
         <Steps.Step label="Checkout" />
       </Steps>
-    ).find('li').length).toBe(3);
-  });
+    ).find('li').length).toBe(3)
+  })
 
   it('contains the correct child', () => {
     expect(mount(
@@ -21,6 +21,6 @@ describe('<Steps />', () => {
         <Steps.Step label="Purchase" />
         <Steps.Step label="Checkout" />
       </Steps>
-    ).find('li.step-tracker__step--processing > .step-tracker__label').render().text()).toEqual('2. Purchase');
-  });
-});
+    ).find('li.step-tracker__step--processing > .step-tracker__label').render().text()).toEqual('2. Purchase')
+  })
+})

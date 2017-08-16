@@ -1,30 +1,30 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
-import { deprecate } from '../../warn';
+import { deprecate } from '../../warn'
 
-import './Notification.scss';
+import './Notification.scss'
 
 const ErrorIcon = () => (
   <i className="icon icon-core-exclamation-point-circle c-notification__icon" />
-);
+)
 
 /**
  * A banner to highlight important notices.
  */
 const Notification = ({ className, variant, children, ...rest }) => {
   if (className) {
-    deprecate('Notification', 'Custom CSS classes are deprecated. This component does not support custom styling.');
+    deprecate('Notification', 'Custom CSS classes are deprecated. This component does not support custom styling.')
   }
 
   if (rest.style) {
-    deprecate('Notification', 'Inline styles are deprecated. This component does not support custom styling.');
+    deprecate('Notification', 'Inline styles are deprecated. This component does not support custom styling.')
   }
 
   const classes = classNames('notification', className, {
     [`notification--${variant}`]: variant
-  });
+  })
 
   return (
     <header role="banner" {...rest} className={classes}>
@@ -36,8 +36,8 @@ const Notification = ({ className, variant, children, ...rest }) => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
 Notification.propTypes = {
   /**
@@ -58,6 +58,6 @@ Notification.propTypes = {
    * The Notification's content. Can be text, any HTML element, or any component.
    */
   children: PropTypes.node.isRequired
-};
+}
 
-export default Notification;
+export default Notification

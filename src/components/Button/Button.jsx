@@ -1,46 +1,46 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { warn } from '../../warn';
-import safeRest from '../../safeRest';
+import { warn } from '../../warn'
+import safeRest from '../../safeRest'
 
-import styles from './Button.modules.scss';
+import styles from './Button.modules.scss'
 
 export const getClassName = (variant, invert) => {
   if (variant === 'primary' && invert) {
-    warn('Button', 'Primary buttons cannot be inverted.');
+    warn('Button', 'Primary buttons cannot be inverted.')
 
-    return styles.primary;
+    return styles.primary
   }
 
   if (invert) {
-    return styles[`${variant}Inverted`];
+    return styles[`${variant}Inverted`]
   }
 
-  return styles[variant];
-};
+  return styles[variant]
+}
 
 export const preventDisabling = ({ disabled, ...props }) => {
   if (disabled) {
-    warn('Button', 'Buttons are not able to be disabled.');
+    warn('Button', 'Buttons are not able to be disabled.')
   }
 
-  return props;
-};
+  return props
+}
 
 /**
  *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.20.0</span>
  */
 const Button = ({ type, variant, invert, children, ...rest }) => {
-  const restNoDisabled = preventDisabling(rest);
+  const restNoDisabled = preventDisabling(rest)
 
   return (
     <button {...safeRest(restNoDisabled)} type={type} className={getClassName(variant, invert)}>
       {children}
     </button>
-  );
-};
+  )
+}
 
 Button.propTypes = {
   /**
@@ -59,11 +59,11 @@ Button.propTypes = {
    * The label.
    */
   children: PropTypes.string.isRequired
-};
+}
 Button.defaultProps = {
   type: 'button',
   variant: 'primary',
   invert: false
-};
+}
 
-export default Button;
+export default Button

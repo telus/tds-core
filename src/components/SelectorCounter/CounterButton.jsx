@@ -3,27 +3,27 @@
  * value of a SelectorCounter.
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const propTypes = {
   label: PropTypes.string,
   icon: PropTypes.string,
   onClick: PropTypes.func,
   disabled: PropTypes.bool
-};
+}
 
 const defaultProps = {
   label: 'Change value',
   icon: 'caret-up',
   onClick: () => {},
   disabled: false
-};
+}
 
-const noop = () => {};
+const noop = () => {}
 
 export default function counterButton(props) {
-  const { label, icon, onClick, disabled, ...extraProps } = props;
+  const { label, icon, onClick, disabled, ...extraProps } = props
 
   return (
     <button
@@ -35,9 +35,9 @@ export default function counterButton(props) {
     >
       <i className={`selector-counter__icon icon icon-core-${icon}`} />
     </button>
-  );
+  )
 }
 
-counterButton.propTypes = propTypes;
+counterButton.propTypes = propTypes
 
-counterButton.defaultProps = defaultProps;
+counterButton.defaultProps = defaultProps

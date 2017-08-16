@@ -1,14 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import cx from 'classnames';
-import { components } from '@telusdigital/redux-contentful';
+import React from 'react'
+import PropTypes from 'prop-types'
+import cx from 'classnames'
+import { components } from '@telusdigital/redux-contentful'
 
-const { Legal: { WithLegal } } = components;
+const { Legal: { WithLegal } } = components
 
 const TextTitleBodyButton = (props) => {
-  const { className, ctaLink, title, description } = props;
+  const { className, ctaLink, title, description } = props
 
-  const cls = cx(className);
+  const cls = cx(className)
 
   return (
     <div className={cls}>
@@ -20,15 +20,15 @@ const TextTitleBodyButton = (props) => {
         {ctaLink.text}
       </a>
     </div>
-  );
-};
+  )
+}
 
 TextTitleBodyButton.propTypes = {
   className: PropTypes.string,
   ctaLink: PropTypes.object,
   title: PropTypes.string,
   description: PropTypes.string
-};
+}
 
 TextTitleBodyButton.defaultProps = {
   className: '',
@@ -39,6 +39,6 @@ TextTitleBodyButton.defaultProps = {
   },
   title: '',
   description: ''
-};
+}
 
-export default TextTitleBodyButton;
+export default TextTitleBodyButton

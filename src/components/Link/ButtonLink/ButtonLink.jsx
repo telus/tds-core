@@ -1,18 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { Link as ReactRouterLink } from 'react-router-dom';
+import { Link as ReactRouterLink } from 'react-router-dom'
 
-import safeRest from '../../../safeRest';
-import { getClassName, preventDisabling } from '../../Button/Button';
-
-import styles from '../../Button/Button.modules.scss';
+import safeRest from '../../../safeRest'
+import { getClassName, preventDisabling } from '../../Button/Button'
 
 /**
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
 const ButtonLink = ({ variant, invert, children, ...rest }) => {
-  const restNoDisabled = preventDisabling(rest);
+  const restNoDisabled = preventDisabling(rest)
 
   return React.createElement(
     rest.to ? ReactRouterLink : 'a',
@@ -21,8 +19,8 @@ const ButtonLink = ({ variant, invert, children, ...rest }) => {
       className: getClassName(variant, invert)
     },
     children
-  );
-};
+  )
+}
 ButtonLink.propTypes = {
   /**
    * The style.
@@ -36,11 +34,11 @@ ButtonLink.propTypes = {
    * The label.
    */
   children: PropTypes.string.isRequired
-};
+}
 ButtonLink.defaultProps = {
   variant: 'primary',
   invert: false
-};
-ButtonLink.displayName = 'Link.Button';
+}
+ButtonLink.displayName = 'Link.Button'
 
-export default ButtonLink;
+export default ButtonLink

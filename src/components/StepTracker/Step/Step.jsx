@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 /**
  * A single step of a Steps component.
@@ -15,16 +15,16 @@ const Step = ({ label, status, stepNumber }) => {
     'step-tracker__step--completed': status === 'completed',
     'step-tracker__step--processing': status === 'processing',
     'step-tracker__step--waiting': status === 'waiting'
-  });
+  })
   /* eslint-disable jsx-a11y/aria-props */
   return (
     <li className={cls} aria-label={label} aria-current={status === 'processing' ? 'true' : 'false'}>
       <span className="step-tracker__icon" />
       <span className="step-tracker__label">{stepNumber}. {label}</span>
     </li>
-  );
+  )
   /* eslint-enable jsx-a11y/aria-props */
-};
+}
 
 Step.propTypes = {
   /**
@@ -43,6 +43,6 @@ Step.propTypes = {
    * @ignore
    */
   stepNumber: PropTypes.number
-};
+}
 
-export default Step;
+export default Step

@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { Link as ReactRouterLink } from 'react-router-dom';
+import { Link as ReactRouterLink } from 'react-router-dom'
 
-import ChevronLink from './ChevronLink/ChevronLink';
-import ButtonLink from './ButtonLink/ButtonLink';
-import safeRest from '../../safeRest';
+import ChevronLink from './ChevronLink/ChevronLink'
+import ButtonLink from './ButtonLink/ButtonLink'
+import safeRest from '../../safeRest'
 
-import styles from './Link.modules.scss';
+import styles from './Link.modules.scss'
 
-const getClassName = invert => (invert ? styles.inverted : styles.base);
+const getClassName = invert => (invert ? styles.inverted : styles.base)
 
 /**
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
@@ -23,20 +23,20 @@ const Link = ({ invert, children, ...rest }) => (
     },
     children
   )
-);
+)
 Link.propTypes = {
   to: PropTypes.string,
   href: PropTypes.string,
   invert: PropTypes.bool,
   children: PropTypes.node.isRequired
-};
+}
 Link.defaultProps = {
   to: null,
   href: null,
   invert: false
-};
+}
 
-Link.Chevron = ChevronLink;
-Link.Button = ButtonLink;
+Link.Chevron = ChevronLink
+Link.Button = ButtonLink
 
-export default Link;
+export default Link

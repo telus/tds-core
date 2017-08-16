@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
-import Step from '../Step/Step';
+import Step from '../Step/Step'
 
-import './Steps.scss';
+import './Steps.scss'
 
 /**
  * Show the current position in a sequence of steps.
@@ -13,42 +13,42 @@ class Steps extends Component {
 
   getStatus(current, index) {
     if (index < current) {
-      return 'completed';
+      return 'completed'
     } else if (index === current) {
-      return 'processing';
+      return 'processing'
     }
 
-    return 'waiting';
+    return 'waiting'
   }
 
   render() {
-    const { children, className, current } = this.props;
-    const cls = classNames('step-tracker', className);
-    const totalSteps = children.length;
+    const { children, className, current } = this.props
+    const cls = classNames('step-tracker', className)
+    const totalSteps = children.length
 
-    let currentStepLabel;
-    let currentStepNumber;
+    let currentStepLabel
+    let currentStepNumber
 
     if (current < totalSteps) {
-      currentStepLabel = children[current].props.label;
-      currentStepNumber = current + 1;
+      currentStepLabel = children[current].props.label
+      currentStepNumber = current + 1
     } else {
-      currentStepLabel = children[current - 1].props.label;
-      currentStepNumber = current;
+      currentStepLabel = children[current - 1].props.label
+      currentStepNumber = current
     }
 
     return (
-      <div>
-        <ul className={cls} role="progressbar">
+      <div role="progressbar">
+        <ul className={cls}>
           {
             React.Children.map(children, (element, index) => {
-              const stepNumber = index + 1;
-              const status = this.getStatus(current, index);
+              const stepNumber = index + 1
+              const status = this.getStatus(current, index)
               const props = {
                 stepNumber,
                 status
-              };
-              return React.cloneElement(element, props);
+              }
+              return React.cloneElement(element, props)
             }, this)
           }
         </ul>
@@ -58,7 +58,7 @@ class Steps extends Component {
           </span> {currentStepLabel}
         </div>
       </div>
-    );
+    )
   }
 }
 
@@ -80,12 +80,12 @@ Steps.propTypes = {
    * @ignore
    */
   className: PropTypes.string
-};
+}
 
 Steps.defaultProps = {
   current: 0
-};
+}
 
-Steps.Step = Step;
+Steps.Step = Step
 
-export default Steps;
+export default Steps

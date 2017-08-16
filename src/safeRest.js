@@ -1,1 +1,1 @@
-export default ({ style, className, ...props }) => props;
+export default ({ style, className, ...props }) => props

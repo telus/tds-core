@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 /**
  * Align grid content horizontally.
@@ -10,14 +10,14 @@ import PropTypes from 'prop-types';
  * @see See [Grid.Column](#column) for grid usage.
  */
 function Row(props) {
-  const { className, ...extraProps } = props;
-  const classes = ['grid-row', className];
+  const { className, ...extraProps } = props
+  const classes = ['grid-row', className]
 
   return (
     <div className={classes.filter(c => c).join(' ')} {...extraProps}>
       {props.children}
     </div>
-  );
+  )
 }
 
 Row.propTypes = {
@@ -34,6 +34,6 @@ Row.propTypes = {
    * @see See [Grid.Column](#column)
    */
   children: PropTypes.node.isRequired
-};
+}
 
-export default Row;
+export default Row

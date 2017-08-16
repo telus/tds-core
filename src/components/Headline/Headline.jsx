@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import './Headline.scss';
+import './Headline.scss'
 
 const Headline = (props) => {
-  const { eyebrow, title } = props;
+  const { eyebrow, title } = props
 
   return (
     <div className="headline-block__bg">
@@ -17,16 +17,16 @@ const Headline = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 Headline.propTypes = {
   title: PropTypes.string.isRequired,
   eyebrow: PropTypes.string
-};
+}
 
 Headline.defaultProps = {
   eyebrow: ''
-};
+}
 
-export default Headline;
+export default Headline

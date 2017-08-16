@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import './Video.scss';
+import './Video.scss'
 
 const Video = (props) => {
-  const { caption, subtext, videoUrl } = props;
+  const { caption, subtext, videoUrl } = props
 
   return (
     <section className="video-block">
@@ -22,19 +22,19 @@ const Video = (props) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 Video.propTypes = {
   caption: PropTypes.string,
   subtext: PropTypes.string,
   videoUrl: PropTypes.string
-};
+}
 
 Video.defaultProps = {
   subtext: '',
   caption: '',
   videoUrl: ''
-};
+}
 
-export default Video;
+export default Video

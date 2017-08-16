@@ -1,29 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { Link as ReactRouterLink } from 'react-router-dom';
+import { Link as ReactRouterLink } from 'react-router-dom'
 
-import safeRest from '../../../safeRest';
-import Icon from '../../Icon/Icon';
+import safeRest from '../../../safeRest'
+import Icon from '../../Icon/Icon'
 
-import styles from './ChevronLink.modules.scss';
+import styles from './ChevronLink.modules.scss'
 
 const getClassName = (variant) => {
   switch (variant) {
     case 'secondary':
-      return styles.secondary;
+      return styles.secondary
     case 'inverted':
-      return styles.inverted;
+      return styles.inverted
     default:
-      return styles.primary;
+      return styles.primary
   }
-};
+}
 
 const getIcon = (glyph, className) => (
   <span className={className}>
     <Icon glyph={glyph} aria-hidden="true" />
   </span>
-);
+)
 
 /**
  * A Call to Action link.
@@ -41,7 +41,7 @@ const ChevronLink = ({ variant, direction, children, ...rest }) => (
     children,
     direction === 'right' ? getIcon('chevron', styles.rightChevron) : undefined
   )
-);
+)
 ChevronLink.propTypes = {
   /**
    * The style.
@@ -62,11 +62,11 @@ ChevronLink.propTypes = {
    * The label.
    */
   children: PropTypes.node.isRequired
-};
+}
 ChevronLink.defaultProps = {
   variant: 'primary',
   direction: 'right'
-};
-ChevronLink.displayName = 'Link.Chevron';
+}
+ChevronLink.displayName = 'Link.Chevron'
 
-export default ChevronLink;
+export default ChevronLink

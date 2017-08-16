@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import cx from 'classnames';
+import React from 'react'
+import PropTypes from 'prop-types'
+import cx from 'classnames'
 
 /**
  * Establish a 12-column grid layout.
@@ -10,16 +10,16 @@ import cx from 'classnames';
  * @see See [Grid.Column](#column) for grid usage.
  */
 function Container(props) {
-  const { className, limitWidth, ...extraProps } = props;
+  const { className, limitWidth, ...extraProps } = props
   const classes = cx('container', className, {
     'container--limited-width': limitWidth === true
-  });
+  })
 
   return (
     <div className={classes} {...extraProps}>
       {props.children}
     </div>
-  );
+  )
 }
 
 Container.propTypes = {
@@ -40,6 +40,6 @@ Container.propTypes = {
    * @see See [Grid.Row](#row)
    */
   children: PropTypes.node
-};
+}
 
-export default Container;
+export default Container

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
-import './Panel.scss';
+import './Panel.scss'
 
 /**
  * A collapsable panel that belongs in an ExpandCollapse Group.
@@ -14,49 +14,49 @@ import './Panel.scss';
 class Panel extends Component {
 
   componentWillMount() {
-    const id = Math.random().toString(36).substr(2, 9);
-    this.setId(id);
+    const id = Math.random().toString(36).substr(2, 9)
+    this.setId(id)
   }
 
   componentDidMount() {
-    this.setMaxHeight();
+    this.setMaxHeight()
   }
 
   componentDidUpdate() {
-    this.setMaxHeight();
+    this.setMaxHeight()
   }
 
   setId(id) {
-    this.contentId = id;
+    this.contentId = id
   }
 
   setMaxHeight() {
     if (this.props.isActive) {
-      const height = this.panelContent.scrollHeight + 40;
-      this.panelContent.style.maxHeight = `${height}px`;
+      const height = this.panelContent.scrollHeight + 40
+      this.panelContent.style.maxHeight = `${height}px`
     } else {
-      this.panelContent.style.maxHeight = '0px';
+      this.panelContent.style.maxHeight = '0px'
     }
   }
 
   render() {
-    const { className, header, children, isActive, isDisabled, onPanelClick, isFirst } = this.props;
-    const collapsePanelClassName = classNames('collapsible-panel', className);
+    const { className, header, children, isActive, isDisabled, onPanelClick, isFirst } = this.props
+    const collapsePanelClassName = classNames('collapsible-panel', className)
     const collapsePanelContent = classNames('collapsible-panel__content', {
       'collapsible-panel__content--visible': isActive
-    });
+    })
 
     const collapsePaneLabelClassName = classNames('collapsible-panel__label', {
       'collapsible-panel__label--disabled': isDisabled,
       'collapsible-panel__label--expanded': isActive,
       'collapsible-panel__label--collapsed': !isActive,
       'collapsible-panel__label--first': isFirst
-    });
+    })
 
     const iconClassName = classNames('icon icon--primary', {
       'icon-core-caret-up': isActive,
       'icon-core-caret-down': !isActive
-    });
+    })
 
 
     return (
@@ -66,20 +66,22 @@ class Panel extends Component {
           onClick={onPanelClick}
           aria-expanded={isActive ? 'true' : 'false'}
           aria-controls={this.contentId}
-          className={collapsePaneLabelClassName}>
+          className={collapsePaneLabelClassName}
+        >
           <span className="collapsible-panel__icon">
             <i className={iconClassName} />
           </span>
           <span className="collapsible-panel__header">{ header }</span>
         </button>
         <div
-          ref={(node) => { this.panelContent = node; }}
+          ref={(node) => { this.panelContent = node }}
           className={collapsePanelContent}
-          id={this.contentId}>
+          id={this.contentId}
+        >
           { children }
         </div>
       </div>
-    );
+    )
   }
 }
 
@@ -115,14 +117,14 @@ Panel.propTypes = {
    * The panels. Must be TDS ExpandCollapse.Panel components.
    */
   children: PropTypes.node
-};
+}
 
 Panel.defaultProps = {
   isActive: false,
   isDisabled: false,
   className: '',
   header: ''
-};
+}
 
 
-export default Panel;
+export default Panel

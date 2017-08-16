@@ -1,18 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import cx from 'classnames';
+import React from 'react'
+import PropTypes from 'prop-types'
+import cx from 'classnames'
 
-import CheckList from '../CheckList/CheckList';
-import TextTitleBodyButton from '../TextTitleBodyButton/TextTitleBodyButton';
+import CheckList from '../CheckList/CheckList'
+import TextTitleBodyButton from '../TextTitleBodyButton/TextTitleBodyButton'
 
 const Overview = (props) => {
-  const { className, ctaLink, overviewTitle, overviewDescription, sideContent } = props;
-  const cls = cx(className);
+  const { className, ctaLink, overviewTitle, overviewDescription, sideContent } = props
+  const cls = cx(className)
   const bodyContent = {
     ctaLink,
     caption: overviewTitle,
     description: overviewDescription
-  };
+  }
   return (
     <div className={`${cls} container container--limited-width`}>
       <div className="grid-row">
@@ -24,8 +24,8 @@ const Overview = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 Overview.propTypes = {
   className: PropTypes.string,
@@ -33,7 +33,7 @@ Overview.propTypes = {
   overviewDescription: PropTypes.string,
   ctaLink: PropTypes.object,
   sideContent: PropTypes.object
-};
+}
 
 Overview.defaultProps = {
   className: '',
@@ -48,6 +48,6 @@ Overview.defaultProps = {
     listTitle: '',
     listItems: []
   }
-};
+}
 
-export default Overview;
+export default Overview
