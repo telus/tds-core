@@ -43,7 +43,7 @@ const deployToS3 = (prefix) => {
 
   deploy(s3, deployConfig, (err, website) => {
     if (err) {
-      throw err;
+      console.error(err);
     }
 
     console.log(website);
@@ -52,38 +52,27 @@ const deployToS3 = (prefix) => {
 
 // Continue to deploy to the thorium bucket because http://tds.telus.com points there
 const deployToS3_deprecated = () => {
+  const deployConfig = Object.assign(config, {
+    domain: `cdn.telus-thorium-doc-${env}`,
+    prefix: env === 'production' ? undefined : 'latest'
+  });
 
-  return new Promise(
-    (resolve, reject) => {
+  console.log('Deploying to s3 (deprecated)...');
+  console.log(deployConfig);
 
-      const deployConfig = Object.assign(config, {
-        domain: `cdn.telus-thorium-doc-${env}`,
-        prefix: env === 'production' ? undefined : 'latest'
-      });
-
-      console.log('Deploying to s3 (deprecated)...');
-      console.log(deployConfig);
-
-      deploy(s3, deployConfig, (err, website) => {
-        if (err) {
-          throw err;
-          reject();
-        }
-
-        console.log(website);
-        resolve();
-      });
-
+  deploy(s3, deployConfig, (err, website) => {
+    if (err) {
+      console.error(err);
     }
-  );
 
+    console.log(website);
+  });
 };
 
 
 if (env === 'production') {
-  // Waiting for resolution on IAM policy for new buckets. :(
-  // deployToS3('latest');
-  // deployToS3(`v${version}`);
+  deployToS3('latest');
+  deployToS3(`v${version}`);
 
   // Continue to deploy to the thorium bucket because http://tds.telus.com points there
   // TODO: Rip this out when the domain name is pointed at the new bucket: TDS-286
@@ -91,5 +80,4 @@ if (env === 'production') {
 }
 else {
   deployToS3('staging');
-  deployToS3(`v${version}`);
 }
