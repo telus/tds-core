@@ -11,10 +11,10 @@
 //  s3-website: https://github.com/klaemo/s3-website
 
 
-// if (!process.env.AWS_ACCESS_KEY_ID || !process.env.AWS_SECRET_ACCESS_KEY) {
-//   console.error("'AWS_ACCESS_KEY_ID' and 'AWS_SECRET_ACCESS_KEY' must be available in the environment.");
-//   process.exit(1);
-// }
+if (!process.env.AWS_ACCESS_KEY_ID || !process.env.AWS_SECRET_ACCESS_KEY) {
+  console.error("'AWS_ACCESS_KEY_ID' and 'AWS_SECRET_ACCESS_KEY' must be available in the environment.");
+  process.exit(1);
+}
 
 
 const resolvePath = require('path').resolve;
