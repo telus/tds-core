@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Notification /> renders 1`] = `
+<div
+  className="instructional"
+>
+  <Container
+    limitWidth={true}
+  >
+    <NotificationIcon
+      variant="instructional"
+    />
+    Some content
+  </Container>
+</div>
+`;

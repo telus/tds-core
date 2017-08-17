@@ -2,8 +2,8 @@ const path = require('path')
 
 const version = require('../package.json').version
 
-const toggle = componentPath => (
-  process.env.NODE_ENV === 'production' ? undefined : componentPath
+const toggle = (newComponentPath, oldComponentPath) => (
+  process.env.NODE_ENV === 'production' ? oldComponentPath : newComponentPath
 )
 
 const compact = array => array.filter(element => element !== undefined)
@@ -154,7 +154,10 @@ module.exports = {
           name: 'Feedback Indicators',
           components() {
             return [
-              path.resolve('src/components/Notification/Notification.jsx'),
+              toggle(
+                path.resolve('src/components/NotificationNew/Notification.jsx'),
+                path.resolve('src/components/Notification/Notification.jsx')
+              ),
               path.resolve('src/components/Spinner/Spinner.jsx'),
               path.resolve('src/components/StepTracker/Steps/Steps.jsx')
             ]

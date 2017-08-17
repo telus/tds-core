@@ -1,0 +1,34 @@
+@import '../../scss/settings/colours';
+@import '../../scss/settings/spacing';
+
+.base {
+  padding: $spacing-base 0;
+}
+
+.instructional {
+  composes: base;
+
+  background-color: $color-athens-grey;
+}
+
+.branded {
+  composes: base;
+
+  background-color: $color-white-lilac;
+}
+
+.success {
+  composes: base;
+
+  background-color: $color-panache;
+}
+
+.error {
+  composes: base;
+
+  background-color: $color-lavender-blush;
+}
+
+.icon {
+  margin-right: $spacing-base;
+}
