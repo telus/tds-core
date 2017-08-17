@@ -7,10 +7,18 @@ exports[`<Notification /> renders 1`] = `
   <Container
     limitWidth={true}
   >
-    <NotificationIcon
-      variant="instructional"
-    />
-    Some content
+    <div
+      className="content"
+    >
+      <NotificationIcon
+        variant="instructional"
+      />
+      <p
+        className="text"
+      >
+        Some content
+      </p>
+    </div>
   </Container>
 </div>
 `;

@@ -36,6 +36,14 @@ describe('<Notification />', () => {
     expect(notification.find('NotificationIcon').dive()).toHaveText('')
   })
 
+  it('styles the text only for success and error variants', () => {
+    let notification = doShallow({ variant: 'error' })
+    expect(notification.find('p')).toHaveClassName('errorText')
+
+    notification = doShallow({ variant: 'success' })
+    expect(notification.find('p')).toHaveClassName('successText')
+  })
+
   it('passes additional HTML attributes to the containing element', () => {
     const notification = doShallow({ id: 'hello', title: 'my title' })
 

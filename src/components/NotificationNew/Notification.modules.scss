@@ -1,5 +1,11 @@
+$tds-style-typography-html-tags: false;
+
 @import '../../scss/settings/colours';
 @import '../../scss/settings/spacing';
+@import '../../scss/utility/responsive';
+@import '../../scss/settings/responsive-grid';
+@import '../../scss/settings/typography';
+@import '../../scss/foundation/typography';
 
 .base {
   padding: $spacing-base 0;
@@ -29,6 +35,38 @@
   background-color: $color-lavender-blush;
 }
 
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
 .icon {
   margin-right: $spacing-base;
+}
+
+
+.textBase {
+  @extend %text--medium;
+
+  margin: 0;
+}
+
+.text {
+  composes: textBase;
+
+  color: $color-text;
+}
+
+.successText {
+  composes: textBase;
+
+  @extend %strong;
+}
+
+.errorText {
+  composes: textBase;
+
+  @extend %strong;
+
+  color: $color-cardinal;
 }

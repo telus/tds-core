@@ -12,8 +12,11 @@ const iconByVariant = {
   success: 'checkmark',
   error: 'exclamation-point-circle'
 }
+
+const isSuccessOrError = variant => variant === 'success' || variant === 'error'
+
 const NotificationIcon = ({ variant }) => {
-  if (variant !== 'success' && variant !== 'error') {
+  if (!isSuccessOrError(variant)) {
     return null
   }
 
@@ -33,8 +36,12 @@ NotificationIcon.propTypes = {
 const Notification = ({ variant, children, ...rest }) => (
   <div {...safeRest(rest)} className={styles[variant]}>
     <Container limitWidth>
-      <NotificationIcon variant={variant} />
-      {children}
+      <div className={styles.content}>
+        <NotificationIcon variant={variant} />
+        <p className={isSuccessOrError(variant) ? styles[`${variant}Text`] : styles.text}>
+          {children}
+        </p>
+      </div>
     </Container>
   </div>
 )
