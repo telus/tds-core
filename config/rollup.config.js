@@ -1,21 +1,23 @@
-import path from 'path';
+import path from 'path'
 
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
 
-import babel from 'rollup-plugin-babel';
+import babel from 'rollup-plugin-babel'
 
-import postcss from 'rollup-plugin-postcss';
-import postcssModules from 'postcss-modules';
-import sass from 'node-sass';
-import autoprefixer from 'autoprefixer';
+import postcss from 'rollup-plugin-postcss'
+import postcssModules from 'postcss-modules'
+import sass from 'node-sass'
+import autoprefixer from 'autoprefixer' // eslint-disable-line import/no-extraneous-dependencies
 
-const cssExportMap = {};
+const cssExportMap = {}
 
+/* eslint-disable no-shadow */
 const sassPreprocessor = (content, id) => new Promise((resolve) => {
-  const result = sass.renderSync({ file: id });
-  resolve({ code: result.css.toString() });
-});
+  const result = sass.renderSync({ file: id })
+  resolve({ code: result.css.toString() })
+})
+/* eslint-enable */
 
 export default {
   entry: path.resolve('./src/index.js'),
@@ -44,14 +46,14 @@ export default {
         postcssModules({
           globalModulePaths: [/src\/scss/, /src\/components\/(?!Button)/],
           generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
-          getJSON (id, exportTokens) {
-            cssExportMap[id] = exportTokens;
+          getJSON(id, exportTokens) {
+            cssExportMap[id] = exportTokens
           }
         })
       ],
       getExportNamed: false,
-      getExport (id) {
-        return cssExportMap[id];
+      getExport(id) {
+        return cssExportMap[id]
       }
     }),
     babel({
@@ -59,4 +61,4 @@ export default {
       exclude: 'node_modules/**'
     })
   ]
-};
+}

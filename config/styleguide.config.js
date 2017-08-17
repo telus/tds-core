@@ -1,12 +1,12 @@
-const path = require('path');
+const path = require('path')
 
-const version = require('../package.json').version;
+const version = require('../package.json').version
 
-const toggle = (path) => (
+const toggle = path => ( // eslint-disable-line no-shadow
   process.env.NODE_ENV === 'production' ? undefined : path
-);
+)
 
-const compact = (array) => array.filter((element) => element !== undefined);
+const compact = array => array.filter(element => element !== undefined)
 
 
 module.exports = {
@@ -14,29 +14,29 @@ module.exports = {
 
   skipComponentsWithoutExample: true,
   getComponentPathLine(componentPath) {
-    let name = path.basename(componentPath, '.jsx');
+    let name = path.basename(componentPath, '.jsx')
 
     // Grid has name-spaced sub-components
     if (path.dirname(componentPath).includes('Grid')) {
-      name = 'Grid';
+      name = 'Grid'
     }
 
     // Steps has name-spaced sub-components
     if (path.dirname(componentPath).includes('StepTracker')) {
-      name = 'Steps';
+      name = 'Steps'
     }
 
     // ExpandCollapse has name-spaced sub-components
     if (path.dirname(componentPath).includes('ExpandCollapse')) {
-      name = 'ExpandCollapse';
+      name = 'ExpandCollapse'
     }
 
     // Link component has name-space sub-components
     if (path.dirname(componentPath).includes('Link')) {
-      name = 'Link';
+      name = 'Link'
     }
 
-    return `import { ${name} } from '@telusdigital/tds';`;
+    return `import { ${name} } from '@telusdigital/tds';`
   },
 
   showUsage: true,
@@ -147,7 +147,7 @@ module.exports = {
           ]
         },
         {
-          name: "Icons",
+          name: 'Icons',
           components: path.resolve('src/components/Icon/Icon.jsx')
         },
         {
@@ -228,4 +228,4 @@ module.exports = {
       linkHover: '#54595F'
     }
   }
-};
+}

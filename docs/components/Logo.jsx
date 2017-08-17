@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import {version} from '../../package.json';
-import logo from './Logo.svg';
+import { version } from '../../package.json'
+import logo from './Logo.svg'
 
 const Logo = () => (
   <div>
@@ -11,6 +11,6 @@ const Logo = () => (
 
     TDS v{version}
   </div>
-);
+)
 
-export default Logo;
+export default Logo
