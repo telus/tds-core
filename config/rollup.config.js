@@ -1,6 +1,6 @@
 import path from 'path'
 
-import resolve from 'rollup-plugin-node-resolve'
+import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 
 import babel from 'rollup-plugin-babel'
@@ -8,16 +8,14 @@ import babel from 'rollup-plugin-babel'
 import postcss from 'rollup-plugin-postcss'
 import postcssModules from 'postcss-modules'
 import sass from 'node-sass'
-import autoprefixer from 'autoprefixer' // eslint-disable-line import/no-extraneous-dependencies
+import autoprefixer from 'autoprefixer'
 
 const cssExportMap = {}
 
-/* eslint-disable no-shadow */
 const sassPreprocessor = (content, id) => new Promise((resolve) => {
   const result = sass.renderSync({ file: id })
   resolve({ code: result.css.toString() })
 })
-/* eslint-enable */
 
 export default {
   entry: path.resolve('./src/index.js'),
@@ -30,7 +28,7 @@ export default {
   external: ['react', 'prop-types'],
 
   plugins: [
-    resolve({
+    nodeResolve({
       extensions: ['.js', '.jsx']
     }),
     commonjs({

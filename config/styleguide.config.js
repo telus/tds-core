@@ -2,8 +2,8 @@ const path = require('path')
 
 const version = require('../package.json').version
 
-const toggle = path => ( // eslint-disable-line no-shadow
-  process.env.NODE_ENV === 'production' ? undefined : path
+const toggle = componentPath => (
+  process.env.NODE_ENV === 'production' ? undefined : componentPath
 )
 
 const compact = array => array.filter(element => element !== undefined)

@@ -44,6 +44,7 @@
   "devDependencies": {
     "@telusdigital/eslint-config": "^1.1.2",
     "@telusdigital/redux-contentful": "^3.0.0",
+    "autoprefixer": "^7.1.2",
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.1",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -110,7 +111,6 @@
       "docs/components/Logo.svg",
       "**.log",
       "**/__snapshots__/**",
-
       "docs/elements/**",
       "icons/scripts/icons.js"
     ]
