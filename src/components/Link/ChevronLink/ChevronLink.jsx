@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Link as ReactRouterLink } from 'react-router-dom'
-
 import safeRest from '../../../safeRest'
 import Icon from '../../Icon/Icon'
+import { warn } from '../../../warn'
 
 import styles from './ChevronLink.modules.scss'
 
@@ -30,9 +29,14 @@ const getIcon = (glyph, className) => (
  *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
-const ChevronLink = ({ variant, direction, children, ...rest }) => (
-  React.createElement(
-    rest.to ? ReactRouterLink : 'a',
+const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, ...rest }) => {
+  if (!(reactRouterLinkComponent && rest.to)) {
+    warn('Chevron Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
+  }
+
+  return React.createElement(
+
+    reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
       className: getClassName(variant)
@@ -41,7 +45,8 @@ const ChevronLink = ({ variant, direction, children, ...rest }) => (
     children,
     direction === 'right' ? getIcon('chevron', styles.rightChevron) : undefined
   )
-)
+}
+
 ChevronLink.propTypes = {
   /**
    * The style.
@@ -61,11 +66,21 @@ ChevronLink.propTypes = {
   /**
    * The label.
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  /**
+   * Target URL (if using 'reactRouterLinkComponent')
+   */
+  to: PropTypes.string,
+  /**
+   * React Router Link component.
+   */
+  reactRouterLinkComponent: PropTypes.func
 }
 ChevronLink.defaultProps = {
   variant: 'primary',
-  direction: 'right'
+  direction: 'right',
+  to: null,
+  reactRouterLinkComponent: null
 }
 ChevronLink.displayName = 'Link.Chevron'
 
