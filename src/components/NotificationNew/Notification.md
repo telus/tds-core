@@ -21,7 +21,7 @@ Used for feedback or chat related messages.
 
 ```
 <Notification variant="branded">
-  <strong>Tell us what you think</strong> It’s in our nature to listen. As TELUS.com continues to evolve, we’d love to hear more from you.
+  <strong>Tell us what you think</strong> It’s in our nature to listen. As TELUS.com continues to evolve, we’d love to <Link href="http://telus.com">hear more from you</Link>.
 </Notification>
 ```
 
@@ -41,6 +41,6 @@ Used for error messages. Text is bolded to show importance.
 
 ```
 <Notification variant="error">
-  Looks like our registration system is temporarily down. You’ll need to come back another time to register for My Account. In the meantime, return to TELUS.com.
+  Looks like our registration system is temporarily down. You’ll need to come back another time to register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>.
 </Notification>
 ```

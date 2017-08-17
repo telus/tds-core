@@ -53,3 +53,12 @@
     color: $color-white;
   }
 }
+
+.inheritColor {
+  composes: underlineOnHover;
+
+  &:link,
+  &:visited {
+    color: inherit;
+  }
+}

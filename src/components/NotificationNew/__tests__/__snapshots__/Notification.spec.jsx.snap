@@ -8,16 +8,13 @@ exports[`<Notification /> renders 1`] = `
     limitWidth={true}
   >
     <div
-      className="content"
+      className="flexRow"
     >
-      <NotificationIcon
-        variant="instructional"
-      />
-      <p
-        className="text"
+      <Paragraph
+        bold={false}
       >
         Some content
-      </p>
+      </Paragraph>
     </div>
   </Container>
 </div>

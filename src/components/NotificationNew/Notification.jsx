@@ -5,6 +5,8 @@ import safeRest from '../../safeRest'
 
 import Container from '../Grid/Container/Container'
 import Icon from '../Icon/Icon'
+import ColoredText from '../Typography/ColoredText/ColoredText'
+import Paragraph from '../Typography/Paragraph/Paragraph'
 
 import styles from './Notification.modules.scss'
 
@@ -13,34 +15,42 @@ const iconByVariant = {
   error: 'exclamation-point-circle'
 }
 
-const isSuccessOrError = variant => variant === 'success' || variant === 'error'
+const isImportant = variant => variant === 'success' || variant === 'error'
 
-const NotificationIcon = ({ variant }) => {
-  if (!isSuccessOrError(variant)) {
-    return null
+const renderIcon = variant => (
+  <span className={styles.icon}>
+    <Icon glyph={iconByVariant[variant]} aria-hidden="true" />
+  </span>
+)
+
+const renderContent = (variant, children) => {
+  const content = (
+    <Paragraph bold={isImportant(variant)}>
+      {children}
+    </Paragraph>
+  )
+
+  if (variant === 'error') {
+    return (
+      <ColoredText colorClassName={styles.errorText}>
+        {content}
+      </ColoredText>
+    )
   }
 
-  return (
-    <span className={styles.icon}>
-      <Icon glyph={iconByVariant[variant]} aria-hidden="true" />
-    </span>
-  )
-}
-NotificationIcon.propTypes = {
-  variant: PropTypes.string.isRequired
+  return content
 }
 
 /**
- * A banner to highlight important notices.
+ * A banner that highlights important notices.
  */
 const Notification = ({ variant, children, ...rest }) => (
   <div {...safeRest(rest)} className={styles[variant]}>
     <Container limitWidth>
-      <div className={styles.content}>
-        <NotificationIcon variant={variant} />
-        <p className={isSuccessOrError(variant) ? styles[`${variant}Text`] : styles.text}>
-          {children}
-        </p>
+      <div className={styles.flexRow}>
+        {isImportant(variant) ? renderIcon(variant) : undefined}
+
+        {renderContent(variant, children)}
       </div>
     </Container>
   </div>

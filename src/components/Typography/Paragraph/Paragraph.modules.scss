@@ -1,0 +1,25 @@
+$tds-style-typography-html-tags: false;
+
+@import '../../../scss/settings/colours';
+@import '../../../scss/utility/responsive';
+@import '../../../scss/settings/responsive-grid';
+@import '../../../scss/settings/typography';
+@import '../../../scss/foundation/typography';
+
+.base {
+  @extend %text--medium;
+
+  margin: 0;
+}
+
+.bold {
+  @extend %strong;
+}
+
+.color {
+  color: $color-text;
+}
+
+.inheritColor {
+  color: inherit;
+}

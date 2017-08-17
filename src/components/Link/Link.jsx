@@ -8,14 +8,18 @@ import { warn } from '../../warn'
 
 import styles from './Link.modules.scss'
 
-const getClassName = (variant) => {
+const getClassName = (variant, context) => {
+  if (context.inheritColor) {
+    return styles.inheritColor
+  }
+
   return styles[variant]
 }
 
 /**
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
-const Link = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
+const Link = ({ reactRouterLinkComponent, variant, children, ...rest }, context) => {
   if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
@@ -24,7 +28,7 @@ const Link = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
     reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
-      className: getClassName(variant)
+      className: getClassName(variant, context)
     },
     children
   )
@@ -59,6 +63,10 @@ Link.defaultProps = {
   href: null,
   reactRouterLinkComponent: null,
   variant: 'base'
+}
+
+Link.contextTypes = {
+  inheritColor: PropTypes.bool
 }
 
 Link.Chevron = ChevronLink

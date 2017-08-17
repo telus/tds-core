@@ -3,12 +3,15 @@ import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import Icon from '../../Icon/Icon'
+import Paragraph from '../../Typography/Paragraph/Paragraph'
 
 import Notification from '../Notification'
+import ColoredText from '../../Typography/ColoredText/ColoredText'
 
 describe('<Notification />', () => {
-  const doShallow = ({ ...overrides }) => (
-    shallow(<Notification {...overrides}>Some content</Notification>)
+  const defaultChildren = 'Some content'
+  const doShallow = (props = {}, children = defaultChildren) => (
+    shallow(<Notification {...props}>{children}</Notification>)
   )
 
   it('renders', () => {
@@ -25,23 +28,46 @@ describe('<Notification />', () => {
     expect(notification).toHaveClassName('success')
   })
 
-  it('adds an icon only to the error and success variants', () => {
-    let notification = doShallow({ variant: 'error' })
-    expect(notification.find('NotificationIcon').dive()).toContainReact(<Icon glyph="exclamation-point-circle" aria-hidden="true" />)
-
-    notification = doShallow({ variant: 'success' })
-    expect(notification.find('NotificationIcon').dive()).toContainReact(<Icon glyph="checkmark" aria-hidden="true" />)
+  it('does not have an icon by default', () => {
+    let notification = doShallow()
+    expect(notification.find(Icon)).toBeEmpty()
 
     notification = doShallow({ variant: 'branded' })
-    expect(notification.find('NotificationIcon').dive()).toHaveText('')
+    expect(notification.find(Icon)).toBeEmpty()
   })
 
-  it('styles the text only for success and error variants', () => {
-    let notification = doShallow({ variant: 'error' })
-    expect(notification.find('p')).toHaveClassName('errorText')
+  describe('successful variant', () => {
+    it('bolds the content', () => {
+      const notification = doShallow({ variant: 'success' }, 'A success message')
 
-    notification = doShallow({ variant: 'success' })
-    expect(notification.find('p')).toHaveClassName('successText')
+      expect(notification).toContainReact(<Paragraph bold>A success message</Paragraph>)
+    })
+
+    it('adds a checkmark icon', () => {
+      const notification = doShallow({ variant: 'success' })
+
+      expect(notification).toContainReact(<Icon glyph="checkmark" aria-hidden="true" />)
+    })
+  })
+
+  describe('error variant', () => {
+    it('bolds and colors the content', () => {
+      const notification = doShallow({ variant: 'error' }, 'An error message')
+
+      expect(notification).toContainReact(
+        <ColoredText colorClassName="errorText">
+          <Paragraph bold>An error message</Paragraph>
+        </ColoredText>
+      )
+    })
+
+    it('adds an exclamation point icon', () => {
+      const notification = doShallow({ variant: 'error' })
+
+      expect(notification).toContainReact(
+        <Icon glyph="exclamation-point-circle" aria-hidden="true" />
+      )
+    })
   })
 
   it('passes additional HTML attributes to the containing element', () => {

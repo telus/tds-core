@@ -35,7 +35,7 @@ $tds-style-typography-html-tags: false;
   background-color: $color-lavender-blush;
 }
 
-.content {
+.flexRow {
   display: flex;
   flex-direction: row;
 }
@@ -44,29 +44,6 @@ $tds-style-typography-html-tags: false;
   margin-right: $spacing-base;
 }
 
-
-.textBase {
-  @extend %text--medium;
-
-  margin: 0;
-}
-
-.text {
-  composes: textBase;
-
-  color: $color-text;
-}
-
-.successText {
-  composes: textBase;
-
-  @extend %strong;
-}
-
 .errorText {
-  composes: textBase;
-
-  @extend %strong;
-
   color: $color-cardinal;
 }
