@@ -18,3 +18,7 @@ const PurpleBlock = require('../__docs__/PurpleBlock').default;
   <Link href="https://www.telus.com" invert>Go to TELUS.com</Link>
 </PurpleBlock>
 ```
+
+### React Router Links (for SPAs)
+
+When using Link with React Router, you must pass in the React Router Link component as a prop.

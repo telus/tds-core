@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Link as ReactRouterLink } from 'react-router-dom'
-
 import ChevronLink from './ChevronLink/ChevronLink'
 import ButtonLink from './ButtonLink/ButtonLink'
 import safeRest from '../../safeRest'
+import { warn } from '../../warn'
 
 import styles from './Link.modules.scss'
 
@@ -14,26 +13,32 @@ const getClassName = invert => (invert ? styles.inverted : styles.base)
 /**
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
-const Link = ({ invert, children, ...rest }) => (
-  React.createElement(
-    rest.to ? ReactRouterLink : 'a',
+const Link = ({ reactRouterLinkComponent, invert, children, ...rest }) => {
+  if (!(reactRouterLinkComponent && rest.to)) {
+    warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
+  }
+  return React.createElement(
+    reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
       className: getClassName(invert)
     },
     children
   )
-)
+}
 Link.propTypes = {
+  /**
+   * Target URL (if using 'reactRouterLinkComponent')
+   */
   to: PropTypes.string,
   /**
    * Target URL.
    */
   href: PropTypes.string,
   /**
-   * React router component.
+   * React Router Link component.
    */
-  router: PropTypes.element,
+  reactRouterLinkComponent: PropTypes.func,
   /**
    * Whether to invert the component styles.
    */
@@ -46,6 +51,7 @@ Link.propTypes = {
 Link.defaultProps = {
   to: null,
   href: null,
+  reactRouterLinkComponent: null,
   invert: false
 }
 

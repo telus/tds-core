@@ -1,19 +1,17 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
-
-import { MemoryRouter } from 'react-router-dom'
+import { warn } from '../../../warn'
 
 import Link from '../Link'
+
+jest.mock('../../../warn', () => (
+  { warn: jest.fn() }
+))
 
 describe('Link', () => {
   const doShallow = (overrides = {}) => shallow(
     <Link {...overrides}>Go home</Link>
-  )
-  const doShallowWithRouter = (overrides = {}) => shallow(
-    <MemoryRouter>
-      <Link {...overrides}>Go home</Link>
-    </MemoryRouter>
   )
 
   it('renders', () => {
@@ -29,12 +27,23 @@ describe('Link', () => {
     expect(link).toHaveProp('href', 'http://telus.com')
   })
 
-  it('is a React Router Link when using the to attribute', () => {
-    const link = doShallowWithRouter({ to: '/about' })
+  it('renders a react router link element when passed as a prop', () => {
+    const MyLink = () => <span />
+    const link = doShallow({ reactRouterLinkComponent: MyLink })
 
-    const reactRouterLink = link.find('Router').dive().dive()
-    expect(reactRouterLink).toMatchSelector('Link')
-    expect(reactRouterLink).toHaveProp('to', '/about')
+    expect(link).toMatchSelector('MyLink')
+  })
+
+  it('must use `reactRouterLinkComponent` and `to` props together', () => {
+    const MyLink = () => <span />
+    let link = doShallow({ reactRouterLinkComponent: MyLink })
+
+    expect(warn).toHaveBeenCalled()
+
+    link = doShallow({ to: '/about' })
+
+    expect(link).toHaveProp('to')
+    expect(warn).toHaveBeenCalled()
   })
 
   it('can be inverted', () => {
