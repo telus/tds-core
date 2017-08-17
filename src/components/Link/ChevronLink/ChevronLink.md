@@ -36,7 +36,7 @@ const PurpleBlock = require('../../__docs__/PurpleBlock').default;
 
 ### Using Chevron Link for navigation in a multi-step operation
 
-Chevron Link can be used as a "back" button by specifying the `direction`.
+Chevron Link can be used as a "back" button by specifying the `direction`. These are not suitable for breadcrumb navigation due to the chevron's hover animation.
 
 ```
 <Link.Chevron href="http://tds.telus.com" direction="left">Plans</Link.Chevron>

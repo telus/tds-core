@@ -6,7 +6,7 @@ import safeRest from '../../safeRest'
 
 import styles from './Button.modules.scss'
 
-export const getClassName = (variant, invert) => {
+const getClassName = (variant, invert) => {
   if (variant === 'primary' && invert) {
     warn('Button', 'Primary buttons cannot be inverted.')
 
@@ -20,7 +20,7 @@ export const getClassName = (variant, invert) => {
   return styles[variant]
 }
 
-export const preventDisabling = ({ disabled, ...props }) => {
+const preventDisabling = ({ disabled, ...props }) => {
   if (disabled) {
     warn('Button', 'Buttons are not able to be disabled.')
   }

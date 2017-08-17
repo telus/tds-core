@@ -58,16 +58,9 @@ describe('Link.Button', () => {
   })
 
   it('can not be inverted for primary variant', () => {
-    const button = doShallow({ variant: 'primary', invert: true })
+    const primaryButton = doShallow({ variant: 'primary', invert: true })
 
-    expect(button).toHaveClassName('primary')
-    expect(warn).toHaveBeenCalled()
-  })
-
-  it('can not be disabled', () => {
-    const button = doShallow({ disabled: true })
-
-    expect(button).not.toHaveProp('disabled')
+    expect(primaryButton).toHaveClassName('primary')
     expect(warn).toHaveBeenCalled()
   })
 
