@@ -2,6 +2,19 @@ const path = require('path');
 
 const version = require('../package.json').version;
 
+const toggle = (path) => {
+  const env = process.env.NODE_ENV;
+
+  if (env === 'production') {
+    return undefined;
+  }
+
+  return path;
+};
+
+const compact = (array) => array.filter((element) => element !== undefined );
+
+
 module.exports = {
   title: `TDS v${version}`,
 
@@ -120,12 +133,12 @@ module.exports = {
         {
           name: 'Content',
           components() {
-            return [
+            return compact([
               path.resolve('src/components/Card/Card.jsx'),
-              // path.resolve('src/components/Link/Link.jsx'),
-              // path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx'),
-              // path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx')
-            ]
+              toggle(path.resolve('src/components/Link/Link.jsx')),
+              toggle(path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')),
+              toggle(path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx'))
+            ])
           },
           sections: [
             {
