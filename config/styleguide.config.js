@@ -2,17 +2,11 @@ const path = require('path');
 
 const version = require('../package.json').version;
 
-const toggle = (path) => {
-  const env = process.env.NODE_ENV;
+const toggle = (path) => (
+  process.env.NODE_ENV === 'production' ? undefined : path
+);
 
-  if (env === 'production') {
-    return undefined;
-  }
-
-  return path;
-};
-
-const compact = (array) => array.filter((element) => element !== undefined );
+const compact = (array) => array.filter((element) => element !== undefined);
 
 
 module.exports = {
