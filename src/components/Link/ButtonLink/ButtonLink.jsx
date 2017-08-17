@@ -5,11 +5,11 @@ import { Link as ReactRouterLink } from 'react-router-dom'
 import { warn } from '../../../warn'
 import safeRest from '../../../safeRest'
 
-import styles from './ButtonLink.modules.scss'
+import styles from '../../Button/Button.modules.scss'
 
 const getClassName = (variant, invert) => {
   if (variant === 'primary' && invert) {
-    warn('Button', 'Primary buttons cannot be inverted.')
+    warn('Button Link', 'Primary buttons cannot be inverted.')
 
     return styles.primary
   }
