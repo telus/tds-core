@@ -66,9 +66,6 @@ $text-color: $color-white;
   background-color: $primary-bg-color;
   color: $text-color;
 
-  &:visited {
-    color: $text-color;
-  }
   &:hover {
     @include border;
 
@@ -83,9 +80,6 @@ $text-color: $color-white;
   background-color: $secondary-bg-color;
   color: $text-color;
 
-  &:visited {
-    color: $text-color;
-  }
   &:hover {
     @include border;
 
@@ -99,9 +93,6 @@ $text-color: $color-white;
 
   color: $secondary-bg-color;
 
-  &:visited {
-    color: $secondary-bg-color;
-  }
   &:hover {
     background-color: $secondary-bg-color;
     color: $text-color;
@@ -116,9 +107,6 @@ $text-color: $color-white;
   background-color: transparent;
   color: $text-color;
 
-  &:visited {
-    color: $text-color;
-  }
   &:hover {
     background-color: $text-color;
     color: $secondary-bg-color;
@@ -132,9 +120,6 @@ $text-color: $color-white;
 
   color: $secondary-bg-color;
 
-  &:visited {
-    color: $secondary-bg-color;
-  }
   &:hover {
     @include border;
 

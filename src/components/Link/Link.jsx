@@ -26,8 +26,21 @@ const Link = ({ invert, children, ...rest }) => (
 )
 Link.propTypes = {
   to: PropTypes.string,
+  /**
+   * Target URL.
+   */
   href: PropTypes.string,
+  /**
+   * React router component.
+   */
+  router: PropTypes.element,
+  /**
+   * Whether to invert the component styles.
+   */
   invert: PropTypes.bool,
+  /**
+   * Link text.
+   */
   children: PropTypes.node.isRequired
 }
 Link.defaultProps = {
