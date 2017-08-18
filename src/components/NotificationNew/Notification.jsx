@@ -42,7 +42,7 @@ const renderContent = (variant, children) => {
 }
 
 /**
- * A banner that highlights important notices.
+ * A banner that highlights important messages.
  */
 const Notification = ({ variant, children, ...rest }) => (
   <div {...safeRest(rest)} className={styles[variant]}>
@@ -58,7 +58,7 @@ const Notification = ({ variant, children, ...rest }) => (
 
 Notification.propTypes = {
   /**
-   * The appearance of the Notification.
+   * The appearance.
    */
   variant: PropTypes.oneOf([
     'instructional',
@@ -67,7 +67,7 @@ Notification.propTypes = {
     'error'
   ]),
   /**
-   * The Notification's content. Can be text, any HTML element, or any component.
+   * The message. Can be raw text or text components.
    */
   children: PropTypes.node.isRequired
 }

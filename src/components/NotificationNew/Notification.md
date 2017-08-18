@@ -1,8 +1,8 @@
 ## Minimal usage
 
-Used for all general or instructional type messages. Defaults to instructional.
+The Notification spans the entire width of the screen, and aligns the message with the page content.
 
-Only pass in text. Write in complete sentences.
+By default, notifications will be displayed in the `instructional` variant.
 
 ```
 <Notification>
@@ -10,14 +10,20 @@ Only pass in text. Write in complete sentences.
 </Notification>
 ```
 
-## Variants
+### Usage criteria
+
+* The message of a notification must be text content only. You may use text-based styling such as bold text or links. Do
+not use other complex components or paragraphs.
+* Use complete sentences, while keeping the content succinct.
+
+
+### Communicating with notifications
 
 Use the `variant` prop to alter the Notification's appearance.
 
+#### Branded
 
-### Branded
-
-Used for feedback or chat related messages.
+Use the `branded` variant for feedback or chat related messages.
 
 ```
 <Notification variant="branded">
@@ -25,9 +31,10 @@ Used for feedback or chat related messages.
 </Notification>
 ```
 
-### Success
+#### Success
 
-Used for successful transactional messages. Text is bolded to show importance.
+Use the `success` variant to provide feedback of a successful transaction. **The message will include an icon and will
+appear bold to indicate its importance.**
 
 ```
 <Notification variant="success">
@@ -35,9 +42,10 @@ Used for successful transactional messages. Text is bolded to show importance.
 </Notification>
 ```
 
-### Error
+#### Error
 
-Used for error messages. Text is bolded to show importance.
+Use the `error` variant to provide feedback of a failed transaction. **The message will include an icon and will appear
+bold to indicate its importance.**
 
 ```
 <Notification variant="error">
