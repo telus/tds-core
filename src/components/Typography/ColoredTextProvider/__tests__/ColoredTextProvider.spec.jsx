@@ -1,18 +1,18 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import ColoredText from '../ColoredText'
+import ColoredTextProvider from '../ColoredTextProvider'
 import Paragraph from '../../Paragraph/Paragraph'
 import Link from '../../../Link/Link'
 
-describe('ColoredText', () => {
+describe('ColoredTextProvider', () => {
   it('allows text components to inherit their color', () => {
     const coloredText = mount(
-      <ColoredText colorClassName="some-class-name">
+      <ColoredTextProvider colorClassName="some-class-name">
         <Paragraph>
-          Some content and a <Link>hyperlink</Link>
+          Some content and a <Link href="fake.com">hyperlink</Link>
         </Paragraph>
-      </ColoredText>
+      </ColoredTextProvider>
     )
 
     expect(coloredText.find('p')).toHaveClassName('inheritColor')

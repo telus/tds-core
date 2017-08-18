@@ -5,7 +5,7 @@ import safeRest from '../../safeRest'
 
 import Container from '../Grid/Container/Container'
 import Icon from '../Icon/Icon'
-import ColoredText from '../Typography/ColoredText/ColoredText'
+import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 
 import styles from './Notification.modules.scss'
@@ -17,9 +17,9 @@ const iconByVariant = {
 
 const isImportant = variant => variant === 'success' || variant === 'error'
 
-const renderIcon = variant => (
+const renderIcon = glyph => (
   <span className={styles.icon}>
-    <Icon glyph={iconByVariant[variant]} aria-hidden="true" />
+    <Icon glyph={glyph} aria-hidden="true" />
   </span>
 )
 
@@ -32,9 +32,9 @@ const renderContent = (variant, children) => {
 
   if (variant === 'error') {
     return (
-      <ColoredText colorClassName={styles.errorText}>
+      <ColoredTextProvider colorClassName={styles.errorText}>
         {content}
-      </ColoredText>
+      </ColoredTextProvider>
     )
   }
 
@@ -48,7 +48,7 @@ const Notification = ({ variant, children, ...rest }) => (
   <div {...safeRest(rest)} className={styles[variant]}>
     <Container limitWidth>
       <div className={styles.flexRow}>
-        {isImportant(variant) ? renderIcon(variant) : undefined}
+        {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
 
         {renderContent(variant, children)}
       </div>

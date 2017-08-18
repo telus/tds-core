@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-class ColoredText extends React.Component {
+class ColoredTextProvider extends React.Component {
   getChildContext() {
     return {
       inheritColor: true
@@ -19,13 +19,13 @@ class ColoredText extends React.Component {
   }
 }
 
-ColoredText.propTypes = {
+ColoredTextProvider.propTypes = {
   colorClassName: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired
 }
 
-ColoredText.childContextTypes = {
+ColoredTextProvider.childContextTypes = {
   inheritColor: PropTypes.bool
 }
 
-export default ColoredText
+export default ColoredTextProvider

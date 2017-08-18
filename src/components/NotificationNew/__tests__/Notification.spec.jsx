@@ -6,7 +6,7 @@ import Icon from '../../Icon/Icon'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 
 import Notification from '../Notification'
-import ColoredText from '../../Typography/ColoredText/ColoredText'
+import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('<Notification />', () => {
   const defaultChildren = 'Some content'
@@ -55,9 +55,9 @@ describe('<Notification />', () => {
       const notification = doShallow({ variant: 'error' }, 'An error message')
 
       expect(notification).toContainReact(
-        <ColoredText colorClassName="errorText">
+        <ColoredTextProvider colorClassName="errorText">
           <Paragraph bold>An error message</Paragraph>
-        </ColoredText>
+        </ColoredTextProvider>
       )
     })
 
