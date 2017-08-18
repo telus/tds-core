@@ -42,7 +42,7 @@ const Link = ({ children, ...rest }) => (
 export default Link
 ```
 
-**LinkWrapper.jsx (React Router Dom version 4)**
+**LinkWrapper.jsx (React Router DOM version 4)**
 ```jsx
 import React from 'react'
 import { Link as ReactRouterLink } from 'react-router-dom'
@@ -53,7 +53,7 @@ import { Link as TdsLink } from '@telusdigital/tds'
 
 **app.js**
 ```jsx
-const Link = require('linkwrapper')
+import Link from 'linkwrapper'
 
 const MyApp = () => (
   <main>
