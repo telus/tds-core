@@ -9,7 +9,10 @@ $tds-style-typography-html-tags: false;
 .base {
   @extend %text--medium;
 
+  padding: 0;
   margin: 0;
+
+  text-align: left;
 }
 
 .bold {
