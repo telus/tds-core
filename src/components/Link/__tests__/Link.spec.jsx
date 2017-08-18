@@ -54,11 +54,8 @@ describe('Link', () => {
   })
 
   it('can be inverted', () => {
-    let link = doShallow({ variant: 'inverted' })
+    const link = doShallow({ invert: true })
     expect(link).toHaveClassName('inverted')
-
-    link = doShallow({ variant: 'base' })
-    expect(link).toHaveClassName('base')
   })
 
   it('passes additional attributes to the link element', () => {
