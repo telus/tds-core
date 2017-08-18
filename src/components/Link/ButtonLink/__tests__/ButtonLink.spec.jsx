@@ -52,21 +52,12 @@ describe('Link.Button', () => {
 
     button = doShallow({ variant: 'outlined' })
     expect(button).toHaveClassName('outlined')
-  })
 
-  it('can be inverted for secondary and outlined variants', () => {
-    const secondaryButton = doShallow({ variant: 'secondary', invert: true })
-    expect(secondaryButton).toHaveClassName('secondaryInverted')
+    button = doShallow({ variant: 'secondaryInverted' })
+    expect(button).toHaveClassName('secondaryInverted')
 
-    const outlinedButton = doShallow({ variant: 'outlined', invert: true })
-    expect(outlinedButton).toHaveClassName('outlinedInverted')
-  })
-
-  it('can not be inverted for primary variant', () => {
-    const primaryButton = doShallow({ variant: 'primary', invert: true })
-
-    expect(primaryButton).toHaveClassName('primary')
-    expect(warn).toHaveBeenCalled()
+    button = doShallow({ variant: 'outlinedInverted' })
+    expect(button).toHaveClassName('outlinedInverted')
   })
 
   it('passes additional attributes to button element', () => {

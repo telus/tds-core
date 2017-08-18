@@ -8,20 +8,23 @@ import { warn } from '../../warn'
 
 import styles from './Link.modules.scss'
 
-const getClassName = invert => (invert ? styles.inverted : styles.base)
+const getClassName = (variant) => {
+  return styles[variant]
+}
 
 /**
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
-const Link = ({ reactRouterLinkComponent, invert, children, ...rest }) => {
-  if (!(reactRouterLinkComponent && rest.to)) {
+const Link = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
+  if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
+
   return React.createElement(
     reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
-      className: getClassName(invert)
+      className: getClassName(variant)
     },
     children
   )
@@ -40,9 +43,12 @@ Link.propTypes = {
    */
   reactRouterLinkComponent: PropTypes.func,
   /**
-   * Whether to invert the component styles.
+   * The style variations.
    */
-  invert: PropTypes.bool,
+  variant: PropTypes.oneOf([
+    'base',
+    'inverted'
+  ]),
   /**
    * Link text.
    */
@@ -52,7 +58,7 @@ Link.defaultProps = {
   to: null,
   href: null,
   reactRouterLinkComponent: null,
-  invert: false
+  variant: 'base'
 }
 
 Link.Chevron = ChevronLink
