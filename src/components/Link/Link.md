@@ -29,23 +29,24 @@ It is recommended to set up a component wrapper in your project to avoid repetit
 ```jsx
 import React from 'react'
 import { Link as ReactRouterLink } from 'react-router'
-const Link = require('@telusdigital/tds').Link
+import { Link as TdsLink } from '@telusdigital/tds')
 
-const LinkWrapper = ({ children, ...rest }) => (
-  <Link
-    reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}>
+const Link = ({ children, ...rest }) => (
+  <TdsLink
+    reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}
+    {..rest}>
     {children}
-  </Link>
+  </TdsLink>
 )
 
-export default LinkWrapper
+export default Link
 ```
 
 **LinkWrapper.jsx (React Router Dom version 4)**
 ```jsx
 import React from 'react'
 import { Link as ReactRouterLink } from 'react-router-dom'
-const Link = require('@telusdigital/tds').Link
+import { Link as TdsLink } from '@telusdigital/tds'
 
 // Same component wrapper as above
 ```
