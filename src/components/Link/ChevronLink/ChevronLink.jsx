@@ -65,23 +65,28 @@ ChevronLink.propTypes = {
     'right'
   ]),
   /**
-   * The label.
+   * React Router Link component.
    */
-  children: PropTypes.node.isRequired,
+  reactRouterLinkComponent: PropTypes.func,
   /**
    * Target URL (if using 'reactRouterLinkComponent')
    */
   to: PropTypes.string,
   /**
-   * React Router Link component.
+   * Target URL.
    */
-  reactRouterLinkComponent: PropTypes.func
+  href: PropTypes.string,
+  /**
+   * The label.
+   */
+  children: PropTypes.string.isRequired
 }
 ChevronLink.defaultProps = {
   variant: 'primary',
   direction: 'right',
+  reactRouterLinkComponent: null,
   to: null,
-  reactRouterLinkComponent: null
+  href: null
 }
 ChevronLink.displayName = 'Link.Chevron'
 
