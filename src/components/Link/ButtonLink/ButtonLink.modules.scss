@@ -54,4 +54,7 @@ $secondary-bg-color: $color-secondary;
   &:visited {
     color: $secondary-bg-color;
   }
+  &:hover {
+    color: $text-color;
+  }
 }

@@ -30,7 +30,8 @@ const getIcon = (glyph, className) => (
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
 const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, ...rest }) => {
-  if (!(reactRouterLinkComponent && rest.to)) {
+  if ((reactRouterLinkComponent || rest.to) &&
+      !(reactRouterLinkComponent && rest.to)) {
     warn('Chevron Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
 

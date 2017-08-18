@@ -13,8 +13,8 @@ const getClassName = (variant) => {
 /**
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
-const ButtonLink = ({ reactRouterLinkComponent, variant, invert, children, ...rest }) => {
-  if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
+const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
+  if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
     warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
 
@@ -35,10 +35,6 @@ ButtonLink.propTypes = {
    */
   variant: PropTypes.oneOf(['primary', 'secondary', 'outlined', 'secondaryInverted', 'outlinedInverted']),
   /**
-   * Whether or not to invert the variant's color scheme.
-   */
-  invert: PropTypes.bool,
-  /**
    * The label.
    */
   children: PropTypes.string.isRequired,
@@ -53,7 +49,6 @@ ButtonLink.propTypes = {
 }
 ButtonLink.defaultProps = {
   variant: 'primary',
-  invert: false,
   to: null,
   reactRouterLinkComponent: null
 }

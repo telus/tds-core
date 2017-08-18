@@ -21,29 +21,33 @@ const PurpleBlock = require('../__docs__/PurpleBlock').default;
 
 ### Using with React Router Links
 
-When using Link with React Router, you must pass in the React Router Link component as a prop. It is recommended to set up a component wrapper in your project to avoid repetition, like so:
+When using Link with React Router, you must pass in the React Router Link component as a prop. Our intention is to have developers supply the React Router Link component whether they are on version 3 of React Router, or are using the latest React Router DOM package on version 4. This way, we avoid deep dependency conflicts.
 
-**linkwrapper.jsx**
+It is recommended to set up a component wrapper in your project to avoid repetition, like so:
+
+**LinkWrapper.jsx (React Router version 3)**
 ```jsx
-const React = require('react')
-const ReactRouterLinkV3 = require('react-router').Link
-// const ReactRouterLinkV4 = require('react-router-dom').Link
+import React from 'react'
+import { Link as ReactRouterLink } from 'react-router'
 const Link = require('@telusdigital/tds').Link
 
-const ReactRouterLink = ReactRouterLinkV3
-
 const LinkWrapper = ({ children, ...rest }) => (
-  React.createElement(
-    Link,
-    {
-      reactRouterLinkComponent: rest.to ? ReactRouterLink : undefined,
-      ...rest
-    }
-    children
-  )
+  <Link
+    reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}>
+    {children}
+  </Link>
 )
 
 export default LinkWrapper
+```
+
+**LinkWrapper.jsx (React Router Dom version 4)**
+```jsx
+import React from 'react'
+import { Link as ReactRouterLink } from 'react-router-dom'
+const Link = require('@telusdigital/tds').Link
+
+// Same component wrapper as above
 ```
 
 **app.js**
