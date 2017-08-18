@@ -1,44 +1,39 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link as ReactRouterLink } from 'react-router-dom'
 
 import { warn } from '../../../warn'
 import safeRest from '../../../safeRest'
 
 import styles from './ButtonLink.modules.scss'
 
-const getClassName = (variant, invert) => {
-  if (variant === 'primary' && invert) {
-    warn('Link Button', 'Primary buttons cannot be inverted.')
-
-    return styles.primary
-  }
-
-  if (invert) {
-    return styles[`${variant}Inverted`]
-  }
-
+const getClassName = (variant) => {
   return styles[variant]
 }
 
 /**
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
-const ButtonLink = ({ variant, invert, children, ...rest }) => (
-  React.createElement(
-    rest.to ? ReactRouterLink : 'a',
+const ButtonLink = ({ reactRouterLinkComponent, variant, invert, children, ...rest }) => {
+  if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
+    warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
+  }
+
+  return React.createElement(
+
+    reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
-      className: getClassName(variant, invert)
+      className: getClassName(variant)
     },
     children
   )
-)
+}
+
 ButtonLink.propTypes = {
   /**
    * The style.
    */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'outlined']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'outlined', 'secondaryInverted', 'outlinedInverted']),
   /**
    * Whether or not to invert the variant's color scheme.
    */
@@ -46,11 +41,20 @@ ButtonLink.propTypes = {
   /**
    * The label.
    */
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
+  /**
+   * Target URL (if using 'reactRouterLinkComponent')
+   */
+  to: PropTypes.string,
+  /**
+   * React Router Link component.
+   */
+  reactRouterLinkComponent: PropTypes.func
 }
 ButtonLink.defaultProps = {
   variant: 'primary',
-  invert: false
+  to: null,
+  reactRouterLinkComponent: null
 }
 ButtonLink.displayName = 'Link.Button'
 

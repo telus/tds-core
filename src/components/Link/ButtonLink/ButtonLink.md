@@ -27,6 +27,6 @@ is too low, including the hover state.
 const Hero = require('../../__docs__/Hero').default;
 
 <Hero>
-  <Link.Button variant="outlined" invert>Advanced solutions</Link.Button>
+  <Link.Button variant="outlinedInverted" href="#">Advanced solutions</Link.Button>
 </Hero>
 ```
