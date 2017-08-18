@@ -14,6 +14,10 @@ describe('Link.Button', () => {
     <Link.Button {...overrides}>Go home</Link.Button>
   )
 
+  afterEach(() => {
+    jest.clearAllMocks()
+  })
+
   it('is an anchor HTML element when using the href attribute', () => {
     const link = doShallow({ href: 'http://telus.com' })
 
@@ -33,6 +37,8 @@ describe('Link.Button', () => {
     let link = doShallow({ reactRouterLinkComponent: MyLink })
 
     expect(warn).toHaveBeenCalled()
+
+    jest.clearAllMocks()
 
     link = doShallow({ to: '/about' })
 

@@ -9,10 +9,15 @@ jest.mock('../../../warn', () => (
   { warn: jest.fn() }
 ))
 
+
 describe('Link', () => {
   const doShallow = (overrides = {}) => shallow(
     <Link {...overrides}>Go home</Link>
   )
+
+  afterEach(() => {
+    jest.clearAllMocks()
+  })
 
   it('renders', () => {
     const link = doShallow()
@@ -39,6 +44,8 @@ describe('Link', () => {
     let link = doShallow({ reactRouterLinkComponent: MyLink })
 
     expect(warn).toHaveBeenCalled()
+
+    jest.clearAllMocks()
 
     link = doShallow({ to: '/about' })
 
