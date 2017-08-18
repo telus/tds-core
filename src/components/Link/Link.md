@@ -34,8 +34,8 @@ import { Link as TdsLink } from '@telusdigital/tds')
 const Link = ({ children, ...rest }) => (
   <TdsLink
     {..rest}
-    reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}
-    {children}>
+    reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}>
+    {children}
   </TdsLink>
 )
 
@@ -53,7 +53,7 @@ import { Link as TdsLink } from '@telusdigital/tds'
 
 **app.js**
 ```jsx
-import Link from 'linkwrapper'
+import Link from 'LinkWrapper'
 
 const MyApp = () => (
   <main>
