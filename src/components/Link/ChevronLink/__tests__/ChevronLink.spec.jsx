@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import { warn } from '../../../../warn'
 
 import Link from '../../Link'
-import Icon from '../../../Icon/Icon'
+import Icon from '../../../../old-components/Icon/Icon'
 
 jest.mock('../../../../warn', () => (
   { warn: jest.fn() }

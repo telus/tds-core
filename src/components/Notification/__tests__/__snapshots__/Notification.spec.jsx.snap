@@ -1,18 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Notification /> renders 1`] = `
-<header
-  className="notification"
-  role="banner"
+<div
+  className="instructional"
 >
-  <div
-    className="notification__content"
+  <Container
+    limitWidth={true}
   >
     <div
-      className="c-notification__text"
+      className="flexRow"
     >
-      Some content
+      <Paragraph
+        bold={false}
+      >
+        Some content
+      </Paragraph>
     </div>
-  </div>
-</header>
+  </Container>
+</div>
 `;

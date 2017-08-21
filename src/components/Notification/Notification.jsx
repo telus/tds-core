@@ -1,52 +1,64 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classNames from 'classnames'
 
-import { deprecate } from '../../warn'
+import safeRest from '../../safeRest'
 
-import './Notification.scss'
+import Container from '../../old-components/Grid/Container/Container'
+import Icon from '../../old-components/Icon/Icon'
+import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
+import Paragraph from '../Typography/Paragraph/Paragraph'
 
-const ErrorIcon = () => (
-  <i className="icon icon-core-exclamation-point-circle c-notification__icon" />
+import styles from './Notification.modules.scss'
+
+const iconByVariant = {
+  success: 'checkmark',
+  error: 'exclamation-point-circle'
+}
+
+const isImportant = variant => variant === 'success' || variant === 'error'
+
+const renderIcon = glyph => (
+  <span className={styles.icon}>
+    <Icon glyph={glyph} aria-hidden="true" />
+  </span>
 )
 
-/**
- * A banner to highlight important notices.
- */
-const Notification = ({ className, variant, children, ...rest }) => {
-  if (className) {
-    deprecate('Notification', 'Custom CSS classes are deprecated. This component does not support custom styling.')
-  }
-
-  if (rest.style) {
-    deprecate('Notification', 'Inline styles are deprecated. This component does not support custom styling.')
-  }
-
-  const classes = classNames('notification', className, {
-    [`notification--${variant}`]: variant
-  })
-
-  return (
-    <header role="banner" {...rest} className={classes}>
-      <div className="notification__content">
-        {variant === 'error' && <ErrorIcon />}
-
-        <div className="c-notification__text">
-          {children}
-        </div>
-      </div>
-    </header>
+const renderContent = (variant, children) => {
+  const content = (
+    <Paragraph bold={isImportant(variant)}>
+      {children}
+    </Paragraph>
   )
+
+  if (variant === 'error') {
+    return (
+      <ColoredTextProvider colorClassName={styles.errorText}>
+        {content}
+      </ColoredTextProvider>
+    )
+  }
+
+  return content
 }
+
+/**
+ * A banner that highlights important messages.
+ */
+const Notification = ({ variant, children, ...rest }) => (
+  <div {...safeRest(rest)} className={styles[variant]}>
+    <Container limitWidth>
+      <div className={styles.flexRow}>
+        {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
+
+        {renderContent(variant, children)}
+      </div>
+    </Container>
+  </div>
+)
 
 Notification.propTypes = {
   /**
-   * One or more CSS class names separated by spaces to append onto the Notification.
-   * @deprecated since v0.18.0. Notification will no longer support custom styling.
-   */
-  className: PropTypes.string,
-  /**
-   * The appearance of the Notification.
+   * The appearance.
    */
   variant: PropTypes.oneOf([
     'instructional',
@@ -55,9 +67,13 @@ Notification.propTypes = {
     'error'
   ]),
   /**
-   * The Notification's content. Can be text, any HTML element, or any component.
+   * The message. Can be raw text or text components.
    */
   children: PropTypes.node.isRequired
+}
+
+Notification.defaultProps = {
+  variant: 'instructional'
 }
 
 export default Notification

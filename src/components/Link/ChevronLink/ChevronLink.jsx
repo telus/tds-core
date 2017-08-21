@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
-import Icon from '../../Icon/Icon'
+import Icon from '../../../old-components/Icon/Icon'
 import { warn } from '../../../warn'
 
 import styles from './ChevronLink.modules.scss'

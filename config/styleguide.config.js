@@ -118,9 +118,9 @@ module.exports = {
           name: 'Grid',
           components() {
             return [
-              path.resolve('src/components/Grid/Container/Container.jsx'),
-              path.resolve('src/components/Grid/Row/Row.jsx'),
-              path.resolve('src/components/Grid/Column/Column.jsx')
+              path.resolve('src/old-components/Grid/Container/Container.jsx'),
+              path.resolve('src/old-components/Grid/Row/Row.jsx'),
+              path.resolve('src/old-components/Grid/Column/Column.jsx')
             ]
           }
         },
@@ -128,7 +128,7 @@ module.exports = {
           name: 'Content',
           components() {
             return compact([
-              path.resolve('src/components/Card/Card.jsx'),
+              path.resolve('src/old-components/Card/Card.jsx'),
               toggle(path.resolve('src/components/Link/Link.jsx')),
               toggle(path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')),
               toggle(path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx'))
@@ -139,8 +139,8 @@ module.exports = {
               name: 'Expand Collapse',
               components() {
                 return [
-                  path.resolve('src/components/ExpandCollapse/Group.jsx'),
-                  path.resolve('src/components/ExpandCollapse/Panel.jsx')
+                  path.resolve('src/old-components/ExpandCollapse/Group.jsx'),
+                  path.resolve('src/old-components/ExpandCollapse/Panel.jsx')
                 ]
               }
             }
@@ -148,18 +148,18 @@ module.exports = {
         },
         {
           name: 'Icons',
-          components: path.resolve('src/components/Icon/Icon.jsx')
+          components: path.resolve('src/old-components/Icon/Icon.jsx')
         },
         {
           name: 'Feedback Indicators',
           components() {
             return [
               toggle(
-                path.resolve('src/components/NotificationNew/Notification.jsx'),
-                path.resolve('src/components/Notification/Notification.jsx')
+                path.resolve('src/components/Notification/Notification.jsx'),
+                path.resolve('src/old-components/Notification/Notification.jsx')
               ),
-              path.resolve('src/components/Spinner/Spinner.jsx'),
-              path.resolve('src/components/StepTracker/Steps/Steps.jsx')
+              path.resolve('src/old-components/Spinner/Spinner.jsx'),
+              path.resolve('src/old-components/StepTracker/Steps/Steps.jsx')
             ]
           }
         },
@@ -168,7 +168,7 @@ module.exports = {
           components() {
             return [
               path.resolve('src/components/Button/Button.jsx'),
-              path.resolve('src/components/SelectorCounter/SelectorCounter.jsx')
+              path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx')
             ]
           }
         }

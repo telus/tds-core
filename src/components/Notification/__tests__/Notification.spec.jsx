@@ -2,16 +2,16 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import { deprecate } from '../../../warn'
-import Notification from '../../Notification/Notification'
+import Icon from '../../../old-components/Icon/Icon'
+import Paragraph from '../../Typography/Paragraph/Paragraph'
 
-jest.mock('../../../warn', () => (
-  { deprecate: jest.fn() }
-))
+import Notification from '../Notification'
+import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('<Notification />', () => {
-  const doShallow = ({ ...overrides }) => (
-    shallow(<Notification {...overrides}>Some content</Notification>)
+  const defaultChildren = 'Some content'
+  const doShallow = (props = {}, children = defaultChildren) => (
+    shallow(<Notification {...props}>{children}</Notification>)
   )
 
   it('renders', () => {
@@ -22,39 +22,65 @@ describe('<Notification />', () => {
 
   it('can have a variant', () => {
     let notification = doShallow({ variant: undefined })
-    expect(notification).not.toHaveClassName('notification--')
+    expect(notification).toHaveClassName('instructional')
 
     notification = doShallow({ variant: 'success' })
-    expect(notification).toHaveClassName('notification notification--success')
+    expect(notification).toHaveClassName('success')
   })
 
-  it('adds icon for error variant', () => {
-    // Todo: Use render when it becomes usable with jest
-    // See https://github.com/blainekasten/enzyme-matchers/issues/25
-    const notification = doShallow({ variant: 'error' })
+  it('does not have an icon by default', () => {
+    let notification = doShallow()
+    expect(notification.find(Icon)).toBeEmpty()
 
-    expect(notification.find('ErrorIcon')).toBePresent()
+    notification = doShallow({ variant: 'branded' })
+    expect(notification.find(Icon)).toBeEmpty()
   })
 
-  it('passes attributes to DOM node', () => {
+  describe('successful variant', () => {
+    it('bolds the content', () => {
+      const notification = doShallow({ variant: 'success' }, 'A success message')
+
+      expect(notification).toContainReact(<Paragraph bold>A success message</Paragraph>)
+    })
+
+    it('adds a checkmark icon', () => {
+      const notification = doShallow({ variant: 'success' })
+
+      expect(notification).toContainReact(<Icon glyph="checkmark" aria-hidden="true" />)
+    })
+  })
+
+  describe('error variant', () => {
+    it('bolds and colors the content', () => {
+      const notification = doShallow({ variant: 'error' }, 'An error message')
+
+      expect(notification).toContainReact(
+        <ColoredTextProvider colorClassName="errorText">
+          <Paragraph bold>An error message</Paragraph>
+        </ColoredTextProvider>
+      )
+    })
+
+    it('adds an exclamation point icon', () => {
+      const notification = doShallow({ variant: 'error' })
+
+      expect(notification).toContainReact(
+        <Icon glyph="exclamation-point-circle" aria-hidden="true" />
+      )
+    })
+  })
+
+  it('passes additional HTML attributes to the containing element', () => {
     const notification = doShallow({ id: 'hello', title: 'my title' })
 
     expect(notification).toHaveProp('id', 'hello')
     expect(notification).toHaveProp('title', 'my title')
   })
 
-  it('accepts but deprecates custom classes', () => {
-    const notification = doShallow({ className: 'some-class' })
+  it('does not allow custom CSS', () => {
+    const notification = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
-    expect(notification).toHaveClassName('some-class')
-    expect(deprecate).toHaveBeenCalled()
-  })
-
-  it('accepts but deprecates inline styles', () => {
-    const style = { color: 'blue' }
-    const notification = doShallow({ style })
-
-    expect(notification).toHaveProp('style', style)
-    expect(deprecate).toHaveBeenCalled()
+    expect(notification).not.toHaveProp('className', 'my-custom-class')
+    expect(notification).not.toHaveProp('style')
   })
 })
