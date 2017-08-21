@@ -1,11 +1,5 @@
-$tds-style-typography-html-tags: false;
-
 @import '../../scss/settings/colours';
 @import '../../scss/settings/spacing';
-@import '../../scss/utility/responsive';
-@import '../../scss/settings/responsive-grid';
-@import '../../scss/settings/typography';
-@import '../../scss/foundation/typography';
 
 .base {
   padding: $spacing-base 0;

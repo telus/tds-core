@@ -1,13 +1,19 @@
-$tds-style-typography-html-tags: false;
-
 @import '../../../scss/settings/colours';
-@import '../../../scss/utility/responsive';
-@import '../../../scss/settings/responsive-grid';
 @import '../../../scss/settings/typography';
-@import '../../../scss/foundation/typography';
+
+// FIXME: Copied from scss/foundation/typography to prevent extra classes being modularized
+@mixin text--medium {
+  font-size: rem($body-medium-text-size);
+  line-height: $body-medium-line-height;
+  letter-spacing: -.8px;
+}
+
+@mixin strong {
+  font-weight: 500;
+}
 
 .base {
-  @extend %text--medium;
+  @include text--medium;
 
   padding: 0;
   margin: 0;
@@ -16,7 +22,7 @@ $tds-style-typography-html-tags: false;
 }
 
 .bold {
-  @extend %strong;
+  @include strong;
 }
 
 .color {
