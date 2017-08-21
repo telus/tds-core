@@ -29,11 +29,11 @@ It is recommended to set up a component wrapper in your project to avoid repetit
 ```jsx
 import React from 'react'
 import { Link as ReactRouterLink } from 'react-router'
-import { Link as TdsLink } from '@telusdigital/tds')
+import { Link as TdsLink } from '@telusdigital/tds'
 
 const Link = ({ children, ...rest }) => (
   <TdsLink
-    {..rest}
+    {...rest}
     reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}>
     {children}
   </TdsLink>
