@@ -1,10 +1,11 @@
-$tds-style-typography-html-tags: false;
-
 @import '../../../scss/settings/colours';
-@import '../../../scss/utility/responsive';
-@import '../../../scss/settings/responsive-grid';
-@import '../../../scss/settings/typography';
-@import '../../../scss/foundation/typography';
+@import '../../../scss/settings/variables';
+
+%text--medium {
+  font-size: rem($body-medium-text-size);
+  line-height: $body-medium-line-height;
+  letter-spacing: -.8px;
+}
 
 .link {
   @extend %text--medium;
