@@ -15,6 +15,14 @@ $text-color: $color-white;
   box-shadow: 0 0 0 1px;
 }
 
+// FIXME: Used for ButtonLink.
+// Tried to do composes: primary from '../../Button/Button.modules.scss'; but unsuccessful due to rollup config + CSS Modules complications.
+@mixin visited($text-color) {
+  &:visited {
+    color: $text-color;
+  }
+}
+
 .button {
   @include helvetica-neue-medium-65;
 
@@ -59,12 +67,13 @@ $text-color: $color-white;
   }
 }
 
-
 .primary {
   composes: button;
 
   background-color: $primary-bg-color;
   color: $text-color;
+
+  @include visited($text-color);
 
   &:hover {
     @include border;
@@ -80,6 +89,8 @@ $text-color: $color-white;
   background-color: $secondary-bg-color;
   color: $text-color;
 
+  @include visited($text-color);
+
   &:hover {
     @include border;
 
@@ -92,6 +103,8 @@ $text-color: $color-white;
   composes: inverted button;
 
   color: $secondary-bg-color;
+
+  @include visited($secondary-bg-color);
 
   &:hover {
     background-color: $secondary-bg-color;
@@ -107,6 +120,8 @@ $text-color: $color-white;
   background-color: transparent;
   color: $text-color;
 
+  @include visited($text-color);
+
   &:hover {
     background-color: $text-color;
     color: $secondary-bg-color;
@@ -119,6 +134,8 @@ $text-color: $color-white;
   composes: inverted button;
 
   color: $secondary-bg-color;
+
+  @include visited($secondary-bg-color);
 
   &:hover {
     @include border;

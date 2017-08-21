@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { warn } from '../../../warn'
 import safeRest from '../../../safeRest'
 
-import styles from './ButtonLink.modules.scss'
+import styles from '../../Button/Button.modules.scss'
 
 const getClassName = (variant, invert) => {
   if (variant === 'primary' && invert) {
