@@ -1,3 +1,4 @@
+**The link CSS classes are deprecated and should not be used. Use the [Link](#link) component instead.**
 
 ## Text links
 
