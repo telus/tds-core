@@ -127,14 +127,21 @@ module.exports = {
         {
           name: 'Content',
           components() {
-            return compact([
-              path.resolve('src/old-components/Card/Card.jsx'),
-              toggle(path.resolve('src/components/Link/Link.jsx')),
-              toggle(path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')),
-              toggle(path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx'))
-            ])
+            return [
+              path.resolve('src/old-components/Card/Card.jsx')
+            ]
           },
           sections: [
+            {
+              name: 'Links',
+              components() {
+                return compact([
+                  toggle(path.resolve('src/components/Link/Link.jsx')),
+                  toggle(path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')),
+                  toggle(path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx'))
+                ])
+              }
+            },
             {
               name: 'Expand Collapse',
               components() {
