@@ -2,7 +2,7 @@
 
 exports[`Link renders 1`] = `
 <a
-  className=""
+  className="base"
   href={null}
   to={null}
 >

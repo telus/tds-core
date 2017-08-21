@@ -15,7 +15,7 @@ const getClassName = (invert, context) => {
     return styles.inverted
   }
 
-  return ''
+  return styles.base
 }
 
 /**

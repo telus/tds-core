@@ -53,8 +53,15 @@ describe('Link', () => {
     expect(warn).toHaveBeenCalled()
   })
 
+  it('can be displayed with the default styles', () => {
+    const link = doShallow()
+
+    expect(link).toHaveClassName('base')
+  })
+
   it('can be inverted', () => {
     const link = doShallow({ invert: true })
+
     expect(link).toHaveClassName('inverted')
   })
 
