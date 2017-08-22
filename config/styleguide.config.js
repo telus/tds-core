@@ -6,7 +6,9 @@ const toggle = (newComponentPath, oldComponentPath) => (
   process.env.NODE_ENV === 'production' ? oldComponentPath : newComponentPath
 )
 
-const compact = array => array.filter(element => element !== undefined)
+const compact = array => ( // eslint-disable-line no-unused-vars
+  array.filter(element => element !== undefined)
+)
 
 
 module.exports = {
@@ -135,11 +137,11 @@ module.exports = {
             {
               name: 'Links',
               components() {
-                return compact([
-                  toggle(path.resolve('src/components/Link/Link.jsx')),
-                  toggle(path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')),
-                  toggle(path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx'))
-                ])
+                return [
+                  path.resolve('src/components/Link/Link.jsx'),
+                  path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx'),
+                  path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx')
+                ]
               }
             },
             {
