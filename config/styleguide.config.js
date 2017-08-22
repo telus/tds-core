@@ -122,6 +122,16 @@ module.exports = {
           }
         },
         {
+          name: 'Typography',
+          component() {
+            return [
+              toggle(
+                path.resolve('src/components/Typography/Heading.jsx')
+              )
+            ]
+          }
+        },
+        {
           name: 'Content',
           components() {
             return [
