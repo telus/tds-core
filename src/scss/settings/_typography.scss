@@ -19,6 +19,10 @@ $body-small-line-height: 1.71; // 24px
   font-weight: 700;
 }
 
+@mixin helvetica-neue-roman-55 {
+  font-weight: 500;
+}
+
 @function rem($size) {
   @return ($size / $font-size-base) * 1rem;
 }
