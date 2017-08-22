@@ -2,16 +2,16 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import { warn } from '../../../../warn'
 
-import Link from '../../Link'
+import ChevronLink from '../ChevronLink'
 import Icon from '../../../../old-components/Icon/Icon'
 
 jest.mock('../../../../warn', () => (
   { warn: jest.fn() }
 ))
 
-describe('Link.Chevron', () => {
+describe('ChevronLink', () => {
   const doShallow = (overrides = {}) => shallow(
-    <Link.Chevron {...overrides}>Go home</Link.Chevron>
+    <ChevronLink {...overrides}>Go home</ChevronLink>
   )
 
   afterEach(() => {

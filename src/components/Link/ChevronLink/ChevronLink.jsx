@@ -88,6 +88,5 @@ ChevronLink.defaultProps = {
   to: null,
   href: null
 }
-ChevronLink.displayName = 'Link.Chevron'
 
 export default ChevronLink

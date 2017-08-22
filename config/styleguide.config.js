@@ -33,11 +33,6 @@ module.exports = {
       name = 'ExpandCollapse'
     }
 
-    // Link component has name-space sub-components
-    if (path.dirname(componentPath).includes('Link')) {
-      name = 'Link'
-    }
-
     return `import { ${name} } from '@telusdigital/tds';`
   },
 

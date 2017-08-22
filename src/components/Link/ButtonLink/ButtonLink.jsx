@@ -73,6 +73,5 @@ ButtonLink.defaultProps = {
   to: null,
   href: null
 }
-ButtonLink.displayName = 'Link.Button'
 
 export default ButtonLink

@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import ChevronLink from './ChevronLink/ChevronLink'
-import ButtonLink from './ButtonLink/ButtonLink'
 import safeRest from '../../safeRest'
 import { warn } from '../../warn'
 
@@ -67,8 +65,5 @@ Link.defaultProps = {
 Link.contextTypes = {
   inheritColor: PropTypes.bool
 }
-
-Link.Chevron = ChevronLink
-Link.Button = ButtonLink
 
 export default Link

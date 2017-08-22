@@ -3,15 +3,15 @@ import { shallow } from 'enzyme'
 
 import { warn } from '../../../../warn'
 
-import Link from '../../Link'
+import ButtonLink from '../ButtonLink'
 
 jest.mock('../../../../warn', () => (
   { warn: jest.fn() }
 ))
 
-describe('Link.Button', () => {
+describe('ButtonLink', () => {
   const doShallow = (overrides = {}) => shallow(
-    <Link.Button {...overrides}>Go home</Link.Button>
+    <ButtonLink {...overrides}>Go home</ButtonLink>
   )
 
   afterEach(() => {
