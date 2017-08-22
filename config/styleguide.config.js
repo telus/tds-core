@@ -2,7 +2,7 @@ const path = require('path')
 
 const version = require('../package.json').version
 
-const toggle = (newComponentPath, oldComponentPath) => (
+const toggle = (newComponentPath, oldComponentPath) => ( // eslint-disable-line no-unused-vars
   process.env.NODE_ENV === 'production' ? oldComponentPath : newComponentPath
 )
 
@@ -158,10 +158,7 @@ module.exports = {
           name: 'Feedback Indicators',
           components() {
             return [
-              toggle(
-                path.resolve('src/components/Notification/Notification.jsx'),
-                path.resolve('src/old-components/Notification/Notification.jsx')
-              ),
+              path.resolve('src/components/Notification/Notification.jsx'),
               path.resolve('src/old-components/Spinner/Spinner.jsx'),
               path.resolve('src/old-components/StepTracker/Steps/Steps.jsx')
             ]
