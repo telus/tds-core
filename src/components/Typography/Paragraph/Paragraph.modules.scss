@@ -1,4 +1,5 @@
 @import '../../../scss/settings/colours';
+@import '../../../scss/settings/typography';
 
 .base {
   padding: 0;
@@ -7,14 +8,14 @@
   text-align: left;
 
   &.bold {
-    font-weight: 700; // Neue Medium 65
+    @include helvetica-neue-medium-65;
   }
 }
 
 .small {
   composes: base;
+  @include helvetica-neue-roman-55;
 
-  font-weight: 500; // Neue Roman 55
   font-size: .875rem;
   letter-spacing: -0.6px;
   line-height: 1.5;
@@ -22,8 +23,8 @@
 
 .medium {
   composes: base;
+  @include helvetica-neue-light-45;
 
-  font-weight: 400; // neue 45 light
   font-size: 1rem;
   letter-spacing: -0.8px;
   line-height: 1.5;
@@ -31,8 +32,8 @@
 
 .large {
   composes: base;
+  @include helvetica-neue-light-45;
 
-  font-weight: 400; // neue 45 light
   font-size: 1.25rem;
   letter-spacing: -1px;
   line-height: 2;

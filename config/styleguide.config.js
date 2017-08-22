@@ -127,7 +127,8 @@ module.exports = {
             return compact([
               path.resolve('src/old-components/Card/Card.jsx'),
               toggle(path.resolve('src/components/Typography/Paragraph/Paragraph.jsx')),
-              toggle(path.resolve('src/components/Typography/Text/Text.jsx'))
+              toggle(path.resolve('src/components/Typography/Text/Text.jsx')),
+              toggle(path.resolve('src/components/Typography/Strong/Strong.jsx'))
             ])
           },
           sections: [
