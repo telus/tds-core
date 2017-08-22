@@ -2,19 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
+import safeRest from '../../../safeRest'
+
 import styles from './Paragraph.modules.scss'
 
-const Paragraph = ({ bold, children }, context) => {
+
+const Paragraph = ({ bold, size, children, ...rest }, context) => {
   const classes = classnames(
-    styles.base,
     context.inheritColor ? styles.inheritColor : styles.color,
+    styles[size],
     {
       [styles.bold]: bold
     }
   )
 
   return (
-    <p className={classes}>
+    <p {...safeRest(rest)} className={classes}>
       {children}
     </p>
   )
@@ -22,11 +25,17 @@ const Paragraph = ({ bold, children }, context) => {
 
 Paragraph.propTypes = {
   bold: PropTypes.bool,
+  size: PropTypes.oneOf([
+    'small',
+    'medium',
+    'large'
+  ]),
   children: PropTypes.node.isRequired
 }
 
 Paragraph.defaultProps = {
-  bold: false
+  bold: false,
+  size: 'medium'
 }
 
 Paragraph.contextTypes = {

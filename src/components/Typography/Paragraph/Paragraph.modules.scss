@@ -1,28 +1,41 @@
 @import '../../../scss/settings/colours';
-@import '../../../scss/settings/typography';
-
-// FIXME: Copied from scss/foundation/typography to prevent extra classes being modularized
-@mixin text--medium {
-  font-size: rem($body-medium-text-size);
-  line-height: $body-medium-line-height;
-  letter-spacing: -.8px;
-}
-
-@mixin strong {
-  font-weight: 500;
-}
 
 .base {
-  @include text--medium;
-
   padding: 0;
   margin: 0;
 
   text-align: left;
+
+  &.bold {
+    font-weight: 700; // Neue Medium 65
+  }
 }
 
-.bold {
-  @include strong;
+.small {
+  composes: base;
+
+  font-weight: 500; // Neue Roman 55
+  font-size: .875rem;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+}
+
+.medium {
+  composes: base;
+
+  font-weight: 400; // neue 45 light
+  font-size: 1rem;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+.large {
+  composes: base;
+
+  font-weight: 400; // neue 45 light
+  font-size: 1.25rem;
+  letter-spacing: -1px;
+  line-height: 2;
 }
 
 .color {

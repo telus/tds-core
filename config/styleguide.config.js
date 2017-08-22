@@ -124,9 +124,10 @@ module.exports = {
         {
           name: 'Content',
           components() {
-            return [
-              path.resolve('src/old-components/Card/Card.jsx')
-            ]
+            return compact([
+              path.resolve('src/old-components/Card/Card.jsx'),
+              toggle(path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'))
+            ])
           },
           sections: [
             {
