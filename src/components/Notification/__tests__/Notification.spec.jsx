@@ -46,7 +46,9 @@ describe('<Notification />', () => {
     it('adds a checkmark icon', () => {
       const notification = doShallow({ variant: 'success' })
 
-      expect(notification).toContainReact(<Icon glyph="checkmark" aria-hidden="true" />)
+      expect(notification).toContainReact(
+        <Icon glyph="checkmark" size="large" aria-hidden="true" />
+      )
     })
   })
 
@@ -65,7 +67,7 @@ describe('<Notification />', () => {
       const notification = doShallow({ variant: 'error' })
 
       expect(notification).toContainReact(
-        <Icon glyph="exclamation-point-circle" aria-hidden="true" />
+        <Icon glyph="exclamation-point-circle" size="large" aria-hidden="true" />
       )
     })
   })

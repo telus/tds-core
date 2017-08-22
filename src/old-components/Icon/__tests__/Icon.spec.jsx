@@ -34,6 +34,12 @@ describe('<Icon />', () => {
     expect(icon).toHaveClassName('icon--fw')
   })
 
+  it('can be sized', () => {
+    const icon = doShallow({ size: 'large' })
+
+    expect(icon).toHaveClassName('icon--large')
+  })
+
   it('supports custom CSS classes', () => {
     const icon = doShallow({ className: 'custom-class' })
 

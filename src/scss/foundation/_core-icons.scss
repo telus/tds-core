@@ -36,6 +36,10 @@
     width: 1.09rem;
     text-align: center;
   }
+
+  &--large {
+    font-size: 1.5rem;
+  }
 }
 
 @each $name, $codepoint in $core-icon-codepoints {

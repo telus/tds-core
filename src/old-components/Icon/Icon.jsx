@@ -2,14 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-const Icon = ({ glyph, variant, fixedWidth, className, children, ...rest }) => {
+const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
   const classes = classNames(
     'icon',
     `icon-core-${glyph}`,
     className,
     {
       'icon--fw': fixedWidth,
-      [`icon--${variant}`]: variant
+      [`icon--${variant}`]: variant,
+      'icon--large': size
     }
   )
 
@@ -55,6 +56,10 @@ Icon.propTypes = {
    */
   fixedWidth: PropTypes.bool,
   /**
+   * @ignore
+   */
+  size: PropTypes.oneOf(['large']),
+  /**
    * One or more CSS class names separated by spaces to append onto the icon.
    * Don't advertise as we plan on removing this feature soon.
    *
@@ -72,6 +77,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   variant: null,
   fixedWidth: false,
+  size: null,
   className: '',
   children: null
 }

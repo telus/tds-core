@@ -19,7 +19,7 @@ const isImportant = variant => variant === 'success' || variant === 'error'
 
 const renderIcon = glyph => (
   <span className={styles.icon}>
-    <Icon glyph={glyph} aria-hidden="true" />
+    <Icon glyph={glyph} size="large" aria-hidden="true" />
   </span>
 )
 
