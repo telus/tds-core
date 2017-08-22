@@ -5,10 +5,11 @@ import commonjs from 'rollup-plugin-commonjs'
 
 import babel from 'rollup-plugin-babel'
 
+import sass from 'node-sass'
 import postcss from 'rollup-plugin-postcss'
 import postcssModules from 'postcss-modules'
-import sass from 'node-sass'
 import autoprefixer from 'autoprefixer'
+import CssModulesSassLoader from './CssModulesSassLoader'
 
 const cssExportMap = {}
 
@@ -42,6 +43,7 @@ export default {
       plugins: [
         autoprefixer(),
         postcssModules({
+          Loader: CssModulesSassLoader,
           globalModulePaths: [/src\/scss/, /src\/old-components/],
           generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
           getJSON(id, exportTokens) {

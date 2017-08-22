@@ -1,0 +1,60 @@
+@import '../../../scss/settings/colours';
+
+$text-color: $color-white;
+$primary-bg-color: $color-primary;
+$secondary-bg-color: $color-secondary;
+
+.primary {
+  composes: primary from '../../Button/Button.modules.scss';
+
+  &:visited {
+    color: $text-color;
+  }
+  &:hover {
+    color: $primary-bg-color;
+  }
+}
+
+.secondary {
+  composes: secondary from '../../Button/Button.modules.scss';
+
+  &:visited {
+    color: $text-color;
+  }
+  &:hover {
+    color: $secondary-bg-color;
+  }
+}
+
+.secondaryInverted {
+  composes: secondaryInverted from '../../Button/Button.modules.scss';
+
+  &:visited {
+    color: $secondary-bg-color;
+  }
+  &:hover {
+    color: $text-color;
+  }
+}
+
+.outlined {
+  composes: outlined from '../../Button/Button.modules.scss';
+
+  &:visited {
+    color: $text-color;
+  }
+  &:hover {
+    color: $secondary-bg-color;
+  }
+}
+
+.outlinedInverted {
+  composes: outlinedInverted from '../../Button/Button.modules.scss';
+
+  &:visited {
+    color: $secondary-bg-color;
+  }
+  &:hover {
+    color: $text-color;
+  }
+}
