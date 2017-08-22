@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text renders 1`] = `
+<span
+  className="color medium"
+>
+  Some content
+</span>
+`;
