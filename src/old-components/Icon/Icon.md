@@ -5,6 +5,7 @@
   <Icon glyph="caret-down" />
   <Icon glyph="caret-up" />
   <Icon glyph="checkmark" />
+  <Icon glyph="left-chevron" />
   <Icon glyph="chevron" />
   <Icon glyph="exclamation-point-circle" />
   <Icon glyph="expander" />
