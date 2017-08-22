@@ -4,9 +4,15 @@ $text-color: $color-white;
 $primary-bg-color: $color-primary;
 $secondary-bg-color: $color-secondary;
 
+.base {
+  text-decoration: none;
+}
+
 .primary {
   composes: primary from '../../Button/Button.modules.scss';
+  composes: base;
 
+  &:link,
   &:visited {
     color: $text-color;
   }
@@ -17,7 +23,9 @@ $secondary-bg-color: $color-secondary;
 
 .secondary {
   composes: secondary from '../../Button/Button.modules.scss';
+  composes: base;
 
+  &:link,
   &:visited {
     color: $text-color;
   }
@@ -28,7 +36,9 @@ $secondary-bg-color: $color-secondary;
 
 .secondaryInverted {
   composes: secondaryInverted from '../../Button/Button.modules.scss';
+  composes: base;
 
+  &:link,
   &:visited {
     color: $secondary-bg-color;
   }
@@ -39,7 +49,9 @@ $secondary-bg-color: $color-secondary;
 
 .outlined {
   composes: outlined from '../../Button/Button.modules.scss';
+  composes: base;
 
+  &:link,
   &:visited {
     color: $text-color;
   }
@@ -50,7 +62,9 @@ $secondary-bg-color: $color-secondary;
 
 .outlinedInverted {
   composes: outlinedInverted from '../../Button/Button.modules.scss';
+  composes: base;
 
+  &:link,
   &:visited {
     color: $secondary-bg-color;
   }
