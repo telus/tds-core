@@ -40,7 +40,8 @@ const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, .
     reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
-      className: getClassName(variant)
+      className: getClassName(variant),
+      title: children
     },
     direction === 'left' ? getIcon('left-chevron', styles.leftChevron) : undefined,
     children,

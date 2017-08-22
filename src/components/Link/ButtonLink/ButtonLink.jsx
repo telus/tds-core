@@ -32,7 +32,8 @@ const ButtonLink = ({ reactRouterLinkComponent, variant, invert, children, ...re
     reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
-      className: getClassName(variant, invert)
+      className: getClassName(variant, invert),
+      role: 'button'
     },
     children
   )
