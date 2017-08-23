@@ -8,6 +8,12 @@ describe('Heading', () => {
     <Heading {...overrides}>Go home</Heading>
   )
 
+  it('renders text', () => {
+    const heading = doShallow()
+
+    expect(heading.text()).toEqual('Go home')
+  })
+
   it('renders a heading in six sizes', () => {
     let heading = doShallow({ size: 'h1' })
     expect(heading).toHaveTagName('h1')
@@ -21,6 +27,7 @@ describe('Heading', () => {
     heading = doShallow({ size: 'h4' })
     expect(heading).toHaveTagName('h4')
 
+    // todo make h4 the lower limit and warn user
     heading = doShallow({ size: 'h5' })
     expect(heading).toHaveTagName('h5')
 
@@ -28,9 +35,9 @@ describe('Heading', () => {
     expect(heading).toHaveTagName('h6')
   })
 
-  it('renders text', () => {
-    const heading = doShallow()
+  it.skip('can invert', () => {
+    const heading = doShallow({ invert: true })
 
-    expect(heading.text()).toEqual('Go home')
+    expect(heading).toHaveProp('invert')
   })
 })

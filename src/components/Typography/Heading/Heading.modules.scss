@@ -1,0 +1,61 @@
+@import '../../../scss/settings/colours';
+@import '../../../scss/settings/responsive-grid';
+@import '../../../scss/utility/responsive';
+
+.h1 {
+  font-weight: 400;
+  font-size: rem(28px);
+  line-height: 1.29; // 36px
+  letter-spacing: -1.6px;
+  color: $color-secondary;
+  margin-bottom: baseline-margin(48px);
+
+  @include from-breakpoint(medium) {
+    font-weight: 300;
+    font-size: rem(44px);
+    line-height: 1.18; // 52px
+    letter-spacing: 0;
+  }
+}
+
+.h2 {
+  font-weight: 400;
+  font-size: rem(24px);
+  line-height: 1.33; // 30px
+  letter-spacing: -.4px;
+  color: $color-secondary;
+  margin-bottom: baseline-margin(40px);
+
+  @include from-breakpoint(medium) {
+    font-weight: 400;
+    font-size: rem(28px);
+    line-height: 1.29; // 36px
+    letter-spacing: -.8px;
+  }
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: rem(20px);
+  line-height: 1.4; // 28px
+  letter-spacing: -.6px;
+  color: $color-shark;
+  margin-bottom: baseline-margin(48px);
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: rem(16px);
+  letter-spacing: -.6px;
+  color: $color-shark;
+  line-height: 1.25; // 20px
+  margin-bottom: baseline-margin(40px);
+}
+
+.heading {
+  color: $color-secondary;
+}
+
+.invert {
+  color: $color-white;
+}

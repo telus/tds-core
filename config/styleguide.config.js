@@ -122,20 +122,11 @@ module.exports = {
           }
         },
         {
-          name: 'Typography',
-          component() {
-            return [
-              toggle(
-                path.resolve('src/components/Typography/Heading.jsx')
-              )
-            ]
-          }
-        },
-        {
           name: 'Content',
           components() {
             return compact([
               path.resolve('src/old-components/Card/Card.jsx'),
+              toggle(path.resolve('src/components/Typography/Heading/Heading.jsx')),
               toggle(path.resolve('src/components/Typography/Paragraph/Paragraph.jsx')),
               toggle(path.resolve('src/components/Typography/Text/Text.jsx')),
               toggle(path.resolve('src/components/Typography/Strong/Strong.jsx')),
