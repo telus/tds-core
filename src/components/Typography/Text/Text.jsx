@@ -4,16 +4,13 @@ import classnames from 'classnames'
 
 import safeRest from '../../../safeRest'
 
-import styles from '../Paragraph/Paragraph.modules.scss'
-
+import styles from './Text.modules.scss'
 
 const Text = ({ bold, size, children, ...rest }) => {
   const classes = classnames(
     styles.color,
     styles[size],
-    {
-      [styles.bold]: bold
-    }
+    bold ? styles.boldFont : styles[`${size}Font`]
   )
 
   return (

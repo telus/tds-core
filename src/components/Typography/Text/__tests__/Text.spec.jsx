@@ -23,18 +23,20 @@ describe('Text', () => {
 
   it('can be bold', () => {
     let text = doShallow()
-    expect(text).not.toHaveClassName('bold')
+    expect(text).not.toHaveClassName('boldFont')
+    expect(text).toHaveClassName('mediumFont')
 
     text = doShallow({ bold: true })
-    expect(text).toHaveClassName('bold')
+    expect(text).toHaveClassName('boldFont')
+    expect(text).not.toHaveClassName('mediumFont')
   })
 
   it('can be sized', () => {
     let text = doShallow()
-    expect(text).toHaveClassName('medium')
+    expect(text).toHaveClassName('medium mediumFont')
 
     text = doShallow({ size: 'small' })
-    expect(text).toHaveClassName('small')
+    expect(text).toHaveClassName('small smallFont')
   })
 
   it('passes additional attributes to the span element', () => {

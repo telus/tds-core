@@ -5,13 +5,14 @@ import safeRest from '../../../safeRest'
 
 import styles from '../Text/Text.modules.scss'
 
-const Strong = ({ children, ...rest }) => (
-  <strong {...safeRest(rest)} className={styles.boldFont}>
+const Small = ({ children, ...rest }) => (
+  <small {...safeRest(rest)} className={`${styles.small} ${styles.smallFont}`}>
     {children}
-  </strong>
+  </small>
 )
 
-Strong.propTypes = {
+Small.propTypes = {
   children: PropTypes.string.isRequired
 }
-export default Strong
+
+export default Small

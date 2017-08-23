@@ -1,0 +1,37 @@
+@import '../../../scss/settings/colours';
+@import '../../../scss/settings/typography';
+
+.small {
+  font-size: .875rem;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+}
+.smallFont {
+  @include helvetica-neue-roman-55;
+}
+
+.medium {
+  font-size: 1rem;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+.mediumFont {
+  @include helvetica-neue-light-45;
+}
+
+.large {
+  font-size: 1.25rem;
+  letter-spacing: -1px;
+  line-height: 2;
+}
+.largeFont {
+  @include helvetica-neue-light-45;
+}
+
+.boldFont {
+  @include helvetica-neue-medium-65;
+}
+
+.color {
+  color: $color-text;
+}

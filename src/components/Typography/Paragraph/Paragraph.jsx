@@ -5,15 +5,14 @@ import classnames from 'classnames'
 import safeRest from '../../../safeRest'
 
 import styles from './Paragraph.modules.scss'
-
+import textStyles from '../Text/Text.modules.scss'
 
 const Paragraph = ({ bold, size, children, ...rest }, context) => {
   const classes = classnames(
-    context.inheritColor ? styles.inheritColor : styles.color,
-    styles[size],
-    {
-      [styles.bold]: bold
-    }
+    styles.base,
+    context.inheritColor ? styles.inheritColor : textStyles.color,
+    textStyles[size],
+    bold ? textStyles.boldFont : textStyles[`${size}Font`]
   )
 
   return (

@@ -23,18 +23,20 @@ describe('Paragraph', () => {
 
   it('can be bold', () => {
     let paragraph = doShallow()
-    expect(paragraph).not.toHaveClassName('bold')
+    expect(paragraph).not.toHaveClassName('boldFont')
+    expect(paragraph).toHaveClassName('mediumFont')
 
     paragraph = doShallow({ bold: true })
-    expect(paragraph).toHaveClassName('bold')
+    expect(paragraph).toHaveClassName('boldFont')
+    expect(paragraph).not.toHaveClassName('mediumFont')
   })
 
   it('can be sized', () => {
     let paragraph = doShallow()
-    expect(paragraph).toHaveClassName('medium')
+    expect(paragraph).toHaveClassName('medium mediumFont')
 
     paragraph = doShallow({ size: 'small' })
-    expect(paragraph).toHaveClassName('small')
+    expect(paragraph).toHaveClassName('small smallFont')
   })
 
   it('passes additional attributes to the p element', () => {

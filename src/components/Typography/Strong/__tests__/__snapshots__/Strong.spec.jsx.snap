@@ -2,7 +2,7 @@
 
 exports[`Strong renders 1`] = `
 <strong
-  className="strong"
+  className="boldFont"
 >
   Some content
 </strong>
