@@ -56,7 +56,7 @@ $secondary-bg-color: $color-secondary;
     color: $text-color;
   }
   &:hover {
-    color: $secondary-bg-color;
+    color: $color-shark;
   }
 }
 
@@ -66,7 +66,7 @@ $secondary-bg-color: $color-secondary;
 
   &:link,
   &:visited {
-    color: $secondary-bg-color;
+    color: $color-shark;
   }
   &:hover {
     color: $text-color;

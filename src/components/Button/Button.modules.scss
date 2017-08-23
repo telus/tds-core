@@ -108,7 +108,7 @@ $text-color: $color-white;
 
   &:hover {
     background-color: $text-color;
-    color: $secondary-bg-color;
+    color: $color-shark;
 
     box-shadow: none;
   }
@@ -117,7 +117,7 @@ $text-color: $color-white;
 .outlinedInverted {
   composes: inverted button;
 
-  color: $secondary-bg-color;
+  color: $color-shark;
 
   &:hover {
     @include border;
