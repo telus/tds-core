@@ -12,6 +12,7 @@ exports[`<Notification /> renders 1`] = `
     >
       <Paragraph
         bold={false}
+        invert={false}
         size="medium"
       >
         Some content

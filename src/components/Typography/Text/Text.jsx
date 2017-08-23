@@ -6,11 +6,11 @@ import safeRest from '../../../safeRest'
 
 import styles from './Text.modules.scss'
 
-const Text = ({ bold, size, children, ...rest }) => {
+const Text = ({ bold, size, invert, children, ...rest }) => {
   const classes = classnames(
-    styles.color,
     styles[size],
-    bold ? styles.boldFont : styles[`${size}Font`]
+    bold ? styles.boldFont : styles[`${size}Font`],
+    invert ? styles.colorInverted : styles.color
   )
 
   return (
@@ -27,12 +27,14 @@ Text.propTypes = {
     'medium',
     'large'
   ]),
+  invert: PropTypes.bool,
   children: PropTypes.node.isRequired
 }
 
 Text.defaultProps = {
   bold: false,
-  size: 'medium'
+  size: 'medium',
+  invert: false
 }
 
 export default Text

@@ -31,6 +31,16 @@ describe('Text', () => {
     expect(text).not.toHaveClassName('mediumFont')
   })
 
+  it('can be inverted', () => {
+    let text = doShallow()
+    expect(text).not.toHaveClassName('colorInverted')
+    expect(text).toHaveClassName('color')
+
+    text = doShallow({ invert: true })
+    expect(text).toHaveClassName('colorInverted')
+    expect(text).not.toHaveClassName('color')
+  })
+
   it('can be sized', () => {
     let text = doShallow()
     expect(text).toHaveClassName('medium mediumFont')
