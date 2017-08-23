@@ -15,7 +15,7 @@
 const PurpleBlock = require('../__docs__/PurpleBlock').default;
 
 <PurpleBlock>
-  <Link href="https://www.telus.com" invert>Go to TELUS.com</Link>
+  Call Screen requires a subscription. <Link href="" invert>Log in</Link> to your account and make sure you are subscribed.
 </PurpleBlock>
 ```
 
