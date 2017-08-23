@@ -41,6 +41,14 @@ describe('Paragraph', () => {
     expect(paragraph).not.toHaveClassName('color')
   })
 
+  it('can be aligned', () => {
+    let paragraph = doShallow()
+    expect(paragraph).toHaveClassName('leftAlign')
+
+    paragraph = doShallow({ align: 'right' })
+    expect(paragraph).toHaveClassName('rightAlign')
+  })
+
   it('can be sized', () => {
     let paragraph = doShallow()
     expect(paragraph).toHaveClassName('medium mediumFont')

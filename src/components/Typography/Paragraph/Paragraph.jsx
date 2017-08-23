@@ -7,15 +7,15 @@ import safeRest from '../../../safeRest'
 import styles from './Paragraph.modules.scss'
 import textStyles from '../Text/Text.modules.scss'
 
-const Paragraph = ({ bold, size, invert, children, ...rest }, context) => {
-
+const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) => {
   const paragraphColor = invert ? textStyles.colorInverted : textStyles.color
 
   const classes = classnames(
     styles.base,
     context.inheritColor ? styles.inheritColor : paragraphColor,
     textStyles[size],
-    bold ? textStyles.boldFont : textStyles[`${size}Font`]
+    bold ? textStyles.boldFont : textStyles[`${size}Font`],
+    styles[`${align}Align`]
   )
 
   return (
@@ -32,6 +32,11 @@ Paragraph.propTypes = {
     'medium',
     'large'
   ]),
+  align: PropTypes.oneOf([
+    'left',
+    'center',
+    'right'
+  ]),
   invert: PropTypes.bool,
   children: PropTypes.node.isRequired
 }
@@ -39,6 +44,7 @@ Paragraph.propTypes = {
 Paragraph.defaultProps = {
   bold: false,
   size: 'medium',
+  align: 'left',
   invert: false
 }
 

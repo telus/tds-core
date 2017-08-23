@@ -11,6 +11,7 @@ exports[`<Notification /> renders 1`] = `
       className="flexRow"
     >
       <Paragraph
+        align="left"
         bold={false}
         invert={false}
         size="medium"
