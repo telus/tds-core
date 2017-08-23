@@ -2,18 +2,19 @@
 
 A Button Link is a navigational element that styles itself as a button. Clicking one should navigate to a new "page".
 
-By default, Buttons will be displayed in the `primary` variant. Use primary buttons for the main call to action on a page.
+By default, Buttons will be displayed in the `primary` variant. Use primary Button Links for the main call to action on a page.
 
 ```
 <ButtonLink href="http://www.telus.com">Find out how</ButtonLink>
 ```
 
-### Using Button Links
+### Usage criteria
 
-All Button Links have the same visual appearance as [Button](#button), but are applied differently in certain contexts. Unlike the Button component, Button Link is more appropriate for:
-
-- Call to action
-- Placement atop a complex background such as an image
+* Use Buttons Links to navigate to a new "page".
+* Aim to use only one button per page.
+* Avoid excessively long button text.
+* Make sure the button text describes an action.
+* Buttons should not be disabled.
 
 #### Placing Button Links on images
 
