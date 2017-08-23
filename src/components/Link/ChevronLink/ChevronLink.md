@@ -12,8 +12,8 @@ By default, Chevron Links will be displayed in the `primary` variant.
 
 - Chevron Links have a fixed font size of 1rem and it should not change.
 - Due to the chevron's hover animation, provide ample whitespace so that it does not overlap with nearby elements.
-- Do not place them inline with other text.
-- They usually appear next to [Button Links](#linkbutton) as a secondary call to action.
+- Do not place them within other paragraph text.
+- They can appear below or next to [Button Links](#linkbutton) as a secondary call to action.
 
 
 Specify the variant to create a button for secondary actions.
@@ -24,7 +24,7 @@ Specify the variant to create a button for secondary actions.
 
 ### Placing Chevron Links on solid colours
 
-Use the inverted Chevron Link on top of the solid TELUS purple.
+Use the inverted Chevron Link on top of any solid dark colour such as TELUS purple.
 
 ```
 const PurpleBlock = require('../../__docs__/PurpleBlock').default;
