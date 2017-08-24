@@ -11,5 +11,27 @@ mkdir __tests__
 touch __tests__/$COMPONENT.spec.jsx
 
 touch $COMPONENT.jsx
+
+{
+printf "import React from 'react'\n"
+printf "import PropTypes from 'prop-types'\n"
+printf "import classnames from 'classnames'\n\n"
+
+printf "import safeRest from '../../safeRest'\n\n"
+
+printf "import styles from './%s.modules.scss'\n\n" "$COMPONENT"
+
+printf "const %s = ({ ...rest }) => (\n" "$COMPONENT"
+printf "\t<div {...safeRest(rest)} />\n"
+printf ")\n\n"
+
+printf "%s.propTypes = {\n\n}\n\n" "$COMPONENT"
+
+printf "%s.defaultProps = {\n\n}\n\n" "$COMPONENT"
+
+printf "export default $s" "$COMPONENT"
+
+} > $COMPONENT.jsx
+
 touch $COMPONENT.md
 touch $COMPONENT.modules.scss
