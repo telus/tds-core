@@ -3,12 +3,14 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../safeRest'
 
-import Container from '../../old-components/Grid/Container/Container'
+import Grid from '../../old-components/Grid/Grid'
 import Icon from '../../old-components/Icon/Icon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 
 import styles from './Notification.modules.scss'
+
+const { Container, Row, Column } = Grid
 
 const iconByVariant = {
   success: 'checkmark',
@@ -47,11 +49,15 @@ const renderContent = (variant, children) => {
 const Notification = ({ variant, children, ...rest }) => (
   <div {...safeRest(rest)} className={styles[variant]}>
     <Container limitWidth>
-      <div className={styles.flexRow}>
-        {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
+      <Row>
+        <Column xs={12}>
+          <div className={styles.flexRow}>
+            {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
 
-        {renderContent(variant, children)}
-      </div>
+            {renderContent(variant, children)}
+          </div>
+        </Column>
+      </Row>
     </Container>
   </div>
 )

@@ -7,18 +7,24 @@ exports[`<Notification /> renders 1`] = `
   <Container
     limitWidth={true}
   >
-    <div
-      className="flexRow"
-    >
-      <Paragraph
-        align="left"
-        bold={false}
-        invert={false}
-        size="medium"
+    <Row>
+      <Column
+        xs={12}
       >
-        Some content
-      </Paragraph>
-    </div>
+        <div
+          className="flexRow"
+        >
+          <Paragraph
+            align="left"
+            bold={false}
+            invert={false}
+            size="medium"
+          >
+            Some content
+          </Paragraph>
+        </div>
+      </Column>
+    </Row>
   </Container>
 </div>
 `;
