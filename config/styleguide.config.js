@@ -162,11 +162,11 @@ module.exports = {
         {
           name: 'Feedback Indicators',
           components() {
-            return [
-              path.resolve('src/components/Notification/Notification.jsx'),
+            return compact([
+              toggle(path.resolve('src/components/Notification/Notification.jsx')),
               path.resolve('src/old-components/Spinner/Spinner.jsx'),
               path.resolve('src/old-components/StepTracker/Steps/Steps.jsx')
-            ]
+            ])
           }
         },
         {
