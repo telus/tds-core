@@ -87,17 +87,6 @@ $text-color: $color-white;
   }
 }
 
-.secondaryInverted {
-  composes: inverted button;
-
-  color: $secondary-bg-color;
-
-  &:hover {
-    background-color: $secondary-bg-color;
-    color: $text-color;
-  }
-}
-
 .outlined {
   composes: button;
 

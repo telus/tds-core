@@ -7,16 +7,11 @@ import safeRest from '../../safeRest'
 import styles from './Button.modules.scss'
 
 const getClassName = (variant, invert) => {
-  if (variant === 'primary' && invert) {
-    warn('Button', 'Primary buttons cannot be inverted.')
-
-    return styles.primary
-  }
-
-  if (invert) {
+  if (invert && variant === 'outlined') {
     return styles[`${variant}Inverted`]
   }
 
+  warn('Button', `${variant} buttons cannot be inverted.`)
   return styles[variant]
 }
 

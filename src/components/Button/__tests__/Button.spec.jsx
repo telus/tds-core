@@ -13,6 +13,10 @@ jest.mock('../../../warn', () => (
 describe('Button', () => {
   const doShallow = (overrides = {}) => shallow(<Button {...overrides}>Submit</Button>)
 
+  afterEach(() => {
+    jest.clearAllMocks()
+  })
+
   it('renders', () => {
     const button = doShallow()
 
@@ -41,18 +45,20 @@ describe('Button', () => {
     expect(button).toHaveClassName('outlined')
   })
 
-  it('can be inverted for secondary and outlined variants', () => {
-    const secondaryButton = doShallow({ variant: 'secondary', invert: true })
-    expect(secondaryButton).toHaveClassName('secondaryInverted')
-
+  it('can be inverted outlined variant', () => {
     const outlinedButton = doShallow({ variant: 'outlined', invert: true })
     expect(outlinedButton).toHaveClassName('outlinedInverted')
   })
 
-  it('can not be inverted for primary variant', () => {
-    const button = doShallow({ variant: 'primary', invert: true })
+  it('can not be inverted for primary and secondary variants', () => {
+    const primaryButton = doShallow({ variant: 'primary', invert: true })
 
-    expect(button).toHaveClassName('primary')
+    expect(primaryButton).toHaveClassName('primary')
+    expect(warn).toHaveBeenCalled()
+
+    const secondaryButton = doShallow({ variant: 'secondary', invert: true })
+
+    expect(secondaryButton).toHaveClassName('secondary')
     expect(warn).toHaveBeenCalled()
   })
 

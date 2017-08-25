@@ -32,12 +32,12 @@ All buttons are inline, with a minimum width of 180px for screens larger than 76
 
 ## Placing buttons on solid colours
 
-Use the `secondary` `invert` button on top of the solid TELUS purple.
+Use the `outlined` `invert` button on top of the solid TELUS purple.
 
 ```
 const PurpleBlock = require('../__docs__/PurpleBlock').default;
 
 <PurpleBlock>
-  <Button variant="secondary" invert>Get started</Button>
+  <Button variant="outlined" invert>Get started</Button>
 </PurpleBlock>
 ```
