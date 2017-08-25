@@ -137,11 +137,11 @@ module.exports = {
             {
               name: 'Links',
               components() {
-                return [
-                  path.resolve('src/components/Link/Link.jsx'),
-                  path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx'),
-                  path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx')
-                ]
+                return compact([
+                  toggle(path.resolve('src/components/Link/Link.jsx')),
+                  toggle(path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx')),
+                  toggle(path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx'))
+                ])
               }
             },
             {
