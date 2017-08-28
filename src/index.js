@@ -6,7 +6,7 @@ export { default as ExpandCollapse } from './old-components/ExpandCollapse/Expan
 export { default as Grid } from './old-components/Grid/Grid'
 export { default as Icon } from './old-components/Icon/Icon'
 export { default as Link } from './components/Link/Link'
-export { default as Notification } from './old-components/Notification/Notification'
+export { default as Notification } from './components/Notification/Notification'
 export { default as SelectorCounter } from './old-components/SelectorCounter/SelectorCounter'
 export { default as Spinner } from './old-components/Spinner/Spinner'
 export { default as Steps } from './old-components/StepTracker/Steps/Steps'

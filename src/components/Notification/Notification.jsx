@@ -45,6 +45,7 @@ const renderContent = (variant, children) => {
 
 /**
  * A banner that highlights important messages.
+ * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
 const Notification = ({ variant, children, ...rest }) => (
   <div {...safeRest(rest)} className={styles[variant]}>
