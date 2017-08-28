@@ -6,34 +6,34 @@ import safeRest from '../../../safeRest'
 
 import styles from './Heading.modules.scss'
 
-const getClassName = (size, invert) => {
-  if (invert) {
-    return styles.invert
-  }
-
+const getClassName = (size, display, invert) => {
   return classnames(
-    styles.heading,
-    styles.size
+    display ? styles.displayHeading : styles[size],
+    invert ? styles.inverted : null
   )
 }
 
-const Heading = ({ size, invert, children, ...rest }) => (
+const Heading = ({ size, display, invert, children, ...rest }) => (
   React.createElement(
     size,
     {
       ...safeRest(rest),
-      className: getClassName(size, invert)
+      className: getClassName(size, display, invert)
     },
     children
   )
 )
 Heading.propTypes = {
-  size: PropTypes.string.isRequired,
+  size: PropTypes.oneOf([
+    'h1', 'h2', 'h3', 'h4'
+  ]).isRequired,
+  display: PropTypes.bool,
   invert: PropTypes.bool,
   children: PropTypes.string.isRequired
 }
 Heading.defaultProps = {
   size: 'h1',
+  display: false,
   invert: false
 }
 

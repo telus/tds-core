@@ -1,61 +1,75 @@
 @import '../../../scss/settings/colours';
 @import '../../../scss/settings/responsive-grid';
+@import '../../../scss/settings/typography';
 @import '../../../scss/utility/responsive';
 
-.h1 {
+.heading-large {
+  color: $color-secondary;
   font-weight: 400;
-  font-size: rem(28px);
+}
+
+.heading-small {
+  color: $color-shark;
+  letter-spacing: -.6px;
+  font-weight: 700;
+}
+
+.inverted {
+  color: $color-white;
+}
+
+.displayHeading {
+  color: $color-secondary;
+  font-size: rem(44px);
+  line-height: 1.14; // 48px
+  font-weight: 300;
+
+  @include from-breakpoint(medium) {
+    font-size: rem(72px);
+    line-height: 1.11; // 80px
+    letter-spacing: .2px;
+  }
+}
+
+.h1 {
+  composes: heading-large;
+
+  font-size: 1.75rem;
   line-height: 1.29; // 36px
   letter-spacing: -1.6px;
-  color: $color-secondary;
-  margin-bottom: baseline-margin(48px);
 
   @include from-breakpoint(medium) {
     font-weight: 300;
-    font-size: rem(44px);
+    font-size: 2.75rem;
     line-height: 1.18; // 52px
     letter-spacing: 0;
   }
 }
 
 .h2 {
-  font-weight: 400;
-  font-size: rem(24px);
+  composes: heading-large;
+
+  font-size: 1.5rem;
   line-height: 1.33; // 30px
   letter-spacing: -.4px;
-  color: $color-secondary;
-  margin-bottom: baseline-margin(40px);
 
   @include from-breakpoint(medium) {
-    font-weight: 400;
-    font-size: rem(28px);
+    font-size: 1.75rem;
     line-height: 1.29; // 36px
     letter-spacing: -.8px;
   }
 }
 
 .h3 {
-  font-weight: 700;
-  font-size: rem(20px);
+  composes: heading-small;
+
+  font-size: 1.25rem;
   line-height: 1.4; // 28px
-  letter-spacing: -.6px;
-  color: $color-shark;
-  margin-bottom: baseline-margin(48px);
 }
 
 .h4 {
-  font-weight: 700;
-  font-size: rem(16px);
-  letter-spacing: -.6px;
-  color: $color-shark;
+  composes: heading-small;
+
+  font-size: 1rem;
   line-height: 1.25; // 20px
-  margin-bottom: baseline-margin(40px);
-}
-
-.heading {
-  color: $color-secondary;
-}
-
-.invert {
-  color: $color-white;
 }
