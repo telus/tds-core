@@ -1,3 +1,147 @@
+#### 0.21.0 (2017-08-28)
+
+##### Build System / Dependencies
+
+* **link:** add link to index.jsx to generate new npm package ([ee29309d](https://github.com/telusdigital/tds/commit/ee29309dbf6bdb44fd6282575e0f752f370af9ee))
+* **docker:** Update Dockerfile with starter-kit performance improvements ([0dd841cb](https://github.com/telusdigital/tds/commit/0dd841cb7ad8d32d82580a81146db18506738fa4))
+* **css-modules:** Move non-CSS Modules components to ease the rollup build ([bbf56d95](https://github.com/telusdigital/tds/commit/bbf56d954f909d61fa802b4d1f1e65d3d23f8d00))
+
+##### Chores
+
+* **eslint:** remove config folder from eslint command ([a0ffac60](https://github.com/telusdigital/tds/commit/a0ffac6095cf2283cf455d7eab7eaa48a90ab1bf))
+* **readme:** Correct docs link to tds.telus.com ([96a8ccf3](https://github.com/telusdigital/tds/commit/96a8ccf32f0bf7ca78aa19e80346191181b220a7))
+* remove eslint errors ([0c612f7d](https://github.com/telusdigital/tds/commit/0c612f7d24adca83985d769bc7649a725801b503))
+* **eslint:** add config and docs to lint test, fix errors ([a606a92f](https://github.com/telusdigital/tds/commit/a606a92fcc4ccc7cf0c07ea02b3bb1fe04c3c8cd))
+
+##### Continuous Integration
+
+* **publish:** Own the .npmrc file by node user in Dockerfile ([d79b464e](https://github.com/telusdigital/tds/commit/d79b464e116a5e7926692d15db40b2950acda2b1))
+* **deploy-docs:**
+  * Abort early if no AWS keys are present in the environment ([b179ea76](https://github.com/telusdigital/tds/commit/b179ea763557cedb6ef364bc462dd985e3f94063))
+  * Edit the logging during deploy and remove test folder. ([f2543687](https://github.com/telusdigital/tds/commit/f2543687cba84b18c4cf8a21f3fc7675d108f944))
+  * Try with promises so that only 1 deploy at a time happens. ([c9b1738c](https://github.com/telusdigital/tds/commit/c9b1738c7b55ab1bd7d26aa3b915c9c662539a84))
+  * Change prod deploy-docs to deploy to latest and versioned folder. ([ee99c6c1](https://github.com/telusdigital/tds/commit/ee99c6c151810313ae49c6b26a2f7496feeb33ba))
+  * Test deploying to a folder with a period in the name. ([d45ea825](https://github.com/telusdigital/tds/commit/d45ea8250e6fc1ea9221f52ba95aae3bd74ed973))
+  * Try deploying to 2 staging sites using syncronous upload ([91fc31c0](https://github.com/telusdigital/tds/commit/91fc31c0fdec39f20de5b2abe90a3cc74813a2ad))
+  * remove call to second promise when on staging ([601d6137](https://github.com/telusdigital/tds/commit/601d61370a9487437d6515eb4765f77059b0e421))
+  * add reject to promises ([8bdbe0e9](https://github.com/telusdigital/tds/commit/8bdbe0e9382c1ca0270cf60eca1d5fde44e47b55))
+  * using promises to push to 2 buckets ([dc2f39e9](https://github.com/telusdigital/tds/commit/dc2f39e99978dfffd16ba26fb94889bb6a5f5326))
+  * Turn off deploy to staging to old bucket. ([a28659ca](https://github.com/telusdigital/tds/commit/a28659ca29f6bd340d60c85ddd90ab4f778c1d7d))
+  * Turn back on the deployment of docs to staging. ([c3f33996](https://github.com/telusdigital/tds/commit/c3f3399612e45f33dc61dd6ae3e99b43d76095c9))
+  * Deploy staging docs to old bucket again to resolve AWS S3 permissions issues. ([993c0ef5](https://github.com/telusdigital/tds/commit/993c0ef5e8ff2ac03d87ee1d7eff98bfd8c5dd52))
+
+##### Documentation Changes
+
+* **link:**
+  * hide link components from sidebar ([d54a7797](https://github.com/telusdigital/tds/commit/d54a77971a551e52c5d94176794d1f2e733f0537))
+  * add paragraph example ([14bd9066](https://github.com/telusdigital/tds/commit/14bd9066d4116272ebcfd2a00aec5f97e7dd48af))
+  * add designer friendly usage criteria ([eb7cfb84](https://github.com/telusdigital/tds/commit/eb7cfb84514cf8fe19b5797bde2e5dc91a70c438))
+  * make chevron docs designer-friendly ([61bcaa97](https://github.com/telusdigital/tds/commit/61bcaa97200f30d92f46d746f5535f98a9d498a7))
+  * fix syntax errors on LinkWrapper example ([ee368bf3](https://github.com/telusdigital/tds/commit/ee368bf39295c357fbc6b5e585885f113aa41cf8))
+  * adjust react router example ([98e85bb3](https://github.com/telusdigital/tds/commit/98e85bb31f3e0ccd6d637febd29f72d62b8af0e3))
+  * more es2015 adjustments to router example :fried_shrimp: ([d66e0345](https://github.com/telusdigital/tds/commit/d66e034513a5c4f0089fd27826e0449453eb172e))
+  * adjust react router example ([edf9034a](https://github.com/telusdigital/tds/commit/edf9034a90b3cbeec8b290bd0a5b0db5e438c502))
+  * provide wrapper for react router links ([1e6178a6](https://github.com/telusdigital/tds/commit/1e6178a64baeed1fe5ab9f2a9aceecdf48ef8eaf))
+  * add chevron link ([70758f8b](https://github.com/telusdigital/tds/commit/70758f8b34176e6ac178cebc6d05150abe56cb2f))
+  * add button link ([24f5aa2b](https://github.com/telusdigital/tds/commit/24f5aa2b528603f0103bf9b7d255bea0500c2259))
+  * adjust sidebar to include links section ([9fc3e902](https://github.com/telusdigital/tds/commit/9fc3e902202ed77f467ef1326058846a754961fb))
+  * depracate link element ([c9815262](https://github.com/telusdigital/tds/commit/c9815262d93db4d2686190bf0c9a115a7ca21597))
+  * add hash anchor to link docs from button docs ([92529815](https://github.com/telusdigital/tds/commit/925298151bf4e0ea20e2aa2972d52ba665595f92))
+* **notification:**
+  * show Notification in old-components folder in sidebar ([2f76f1c4](https://github.com/telusdigital/tds/commit/2f76f1c44f0c56b35e9da302ed7ea12913874842))
+  * Toggle display of Notification component in sidebar for staging/production ([69a49638](https://github.com/telusdigital/tds/commit/69a49638bb1a596f8fcd26b738f60f5a2615c0a0))
+  * Untoggle the new notification component for higher environments ([5a7d0fd4](https://github.com/telusdigital/tds/commit/5a7d0fd488f37c252a6738e6a05bcd4f1fcad4eb))
+  * Cleanup and format ([b3a7df83](https://github.com/telusdigital/tds/commit/b3a7df83504c81094b6c3f706a0901517e72b9f4))
+* **button:** Update documentation for Button outlined inverted usage ([a9e54e5a](https://github.com/telusdigital/tds/commit/a9e54e5acd065ce413243775a4807cd88da026c9))
+* **icon:** Add the left chevron into the list of available icons ([06572795](https://github.com/telusdigital/tds/commit/06572795c436ac589184963544dd65a7af136982))
+* **hint:** Fix incorrect spelling of button--plain class ([597ba653](https://github.com/telusdigital/tds/commit/597ba6533a3e5323a5f71a8ea32bfae675953dee))
+
+##### New Features
+
+* **notification:**
+  * Add new notification component to next release ([460330eb](https://github.com/telusdigital/tds/commit/460330eb3b88f267d5e297f3d6d4c767ded808f3))
+  * Add Row and Column wrapper to Notification ([7c2ad913](https://github.com/telusdigital/tds/commit/7c2ad913a9ccd55487fdd45e3ccbcb6555eeb86e))
+  * Size the icon as "large" ([df2772de](https://github.com/telusdigital/tds/commit/df2772de22328d601928b0730104cf12b281b108))
+  * Remove extra typography classes from the build ([676d5cf7](https://github.com/telusdigital/tds/commit/676d5cf70d9bf1f5af4dd84eed979242f5187cdf))
+  * Rename ColoredText to ColoredTextProvider ([89c6425b](https://github.com/telusdigital/tds/commit/89c6425baacee79b8fd18629363defc6db3beaf1))
+  * Introduce components to color text and links for error notifications. ([d228b292](https://github.com/telusdigital/tds/commit/d228b2924e42e1f36196468c5722f39c62c00567))
+  * Align content with flexbox. Give success and error proper text styling. ([a427ee78](https://github.com/telusdigital/tds/commit/a427ee78668c39c347166de0bb6c47e22daa256e))
+  * Introduce new Notification component that is full width ([1ec90e29](https://github.com/telusdigital/tds/commit/1ec90e29a6972464f9222f8598e886c73bfddd39))
+* **button-link:**
+  * Add inverted variant to replace the invert prop to match Button ([e3684436](https://github.com/telusdigital/tds/commit/e368443635fba9661af2fe5c041a457e505d05fc))
+  * Add text-decoration none and :link pseudo selector ([74b99169](https://github.com/telusdigital/tds/commit/74b99169d20001df46e00c0c7a4a8c35101b41f3))
+  * remove ButtonLink.modules.css ([02ac9338](https://github.com/telusdigital/tds/commit/02ac9338e60a743094c56a71d6f54c6c04b90dab))
+* **button:**
+  * Add inverted variant ([0e1071bd](https://github.com/telusdigital/tds/commit/0e1071bdc3b4230a342bca078fccef056f58c99c))
+  * Align invert styles for Button with what we have for ButtonLink ([dc50ffc2](https://github.com/telusdigital/tds/commit/dc50ffc26bbb026c9ccb9bd376d625b828cb06b9))
+* **link:**
+  * use generated displayname for sidebar ([b5551139](https://github.com/telusdigital/tds/commit/b55511399e29522361e5ecc0539d8eb162e6c95e))
+  * use shark grey for outlined button ([42d6e4ec](https://github.com/telusdigital/tds/commit/42d6e4ec5739e0701d43ae89308be02ef52e233a))
+  * use user-friendly names in sidebar ([04401095](https://github.com/telusdigital/tds/commit/04401095d4d4d06ae18aae38fa713b5cc5f95ea6))
+  * Un-namespace ButtonLink and ChevronLink from Link as they are only related, not coupled. ([3a464975](https://github.com/telusdigital/tds/commit/3a464975cb13824c51322608f70ed27601f842c0))
+  * Use CSS modules composes from Button in ButtonLink ([62b4698e](https://github.com/telusdigital/tds/commit/62b4698ed4a319e1b25e023efed6cd01d6959c7e))
+  * untoggle display of Link Components for staging and production ([f6bfe088](https://github.com/telusdigital/tds/commit/f6bfe0885a6f57673b6a9a29396f71ae2d9dc79a))
+  * remove variant prop ([c9357845](https://github.com/telusdigital/tds/commit/c935784524d5ecaf842924afd8d329c6ccf600c0))
+  * add the invert prop back for Link Button ([c99b1282](https://github.com/telusdigital/tds/commit/c99b1282dcbbb83bf0fb4545f59bdb2b286fea1b))
+  * touchup tests and component logic ([dedb598b](https://github.com/telusdigital/tds/commit/dedb598b6d2c91d483bebff8baa3da51053256d5))
+  * replace invert prop in Button Link with secondaryInverted and outlinedInverted variants ([643346fd](https://github.com/telusdigital/tds/commit/643346fda010249c91b4a4ddde746c6fc966a8c0))
+  * replace invert prop with inverted variant ([b1054fe2](https://github.com/telusdigital/tds/commit/b1054fe24af6567e81888c03b1257b31ae227801))
+  * add prop for react router link to Button Link ([a67d7858](https://github.com/telusdigital/tds/commit/a67d78589f6726cfcdd81b7946df63353096a2d5))
+  * add prop for react router link to Chevron Link ([510f4ba7](https://github.com/telusdigital/tds/commit/510f4ba708a1f8ed734ba3bbcc2cbc409c604361))
+  * add prop for react router link ([b4e2e6d7](https://github.com/telusdigital/tds/commit/b4e2e6d7b40e1e03d8c2484c52004d62ad93a161))
+  * add css module for link button ([05c88e82](https://github.com/telusdigital/tds/commit/05c88e82054b9b715aaec3d1475accd3361f1b5e))
+  * add button link ([d8c2645a](https://github.com/telusdigital/tds/commit/d8c2645a2760add5577e83016d81fb727df11a41))
+  * add left-facing chevron link ([312a3600](https://github.com/telusdigital/tds/commit/312a3600a857f907e490288ee3d3d7fe69d0600b))
+  * add accessibility enhancements to Chevron and Button link ([389a4a8e](https://github.com/telusdigital/tds/commit/389a4a8e659b6a581cf8256a8c07eb09ff7579f3))
+  * set base styles by default ([dd7baae1](https://github.com/telusdigital/tds/commit/dd7baae1985b8edced663f4322f0d07fca69bb42))
+  * add :visited pseudo css for consistent text colour ([b9999f74](https://github.com/telusdigital/tds/commit/b9999f7477ac3fd76fe4fcc3bb39c64dd7038ee4))
+  * remove disable function for anchors ([0f00046e](https://github.com/telusdigital/tds/commit/0f00046e773c27f4de28bce70782e3e478a27b78))
+  * use standard medium font for chevron link ([9ff2fd74](https://github.com/telusdigital/tds/commit/9ff2fd74e48bddcd99cda8180e2b2d797733a8f0))
+  * add specificity to chevron link colours ([90f0cd07](https://github.com/telusdigital/tds/commit/90f0cd073f3163be271d2b0529b804eb7d93064a))
+* **scaffold:**
+  * Update script to include default text for Components.jsx ([26dc36d7](https://github.com/telusdigital/tds/commit/26dc36d7cb8feb613aafe50528a151df0ddbc5e1))
+  * Create script to generate empty component files for new components. ([7bc078da](https://github.com/telusdigital/tds/commit/7bc078da1a44e1c0257725bce768c7d300f5e5e1))
+* **paragraph:**
+  * Rename the base class as noSpacing to better describe its purpose ([8782b2d5](https://github.com/telusdigital/tds/commit/8782b2d512842030ea9004d1084ffaf00a971302))
+  * add align prop to paragrant to center, left and right align paragraphs ([0abefa24](https://github.com/telusdigital/tds/commit/0abefa24c744564c15ed6c101c0539eed9f39250))
+  * Add size prop and safeRest ([e7e79801](https://github.com/telusdigital/tds/commit/e7e79801ede6d47a341b17e81287c1e128675909))
+  * Default paragraphs to text align left ([5617ca15](https://github.com/telusdigital/tds/commit/5617ca15742df4d54d6ebceb4b4411582e88bae0))
+* **heading:** add module styles and sample docs ([93b3dd21](https://github.com/telusdigital/tds/commit/93b3dd21a7d250f8dec25e1985e160dafa4b5537))
+* **text:**
+  * Add invert prop to Paragraph and Text ([478fdd3a](https://github.com/telusdigital/tds/commit/478fdd3a1209d9b5d6324cbbd038093520233121))
+  * Create Text component for rendering inline text blocks ([18e72744](https://github.com/telusdigital/tds/commit/18e72744a033d28487117aa206ab78265763b4c2))
+* **small:** Add small text component ([b2b7908d](https://github.com/telusdigital/tds/commit/b2b7908d1841cbb4ea08620f9643070d07204368))
+* **strong:** add Strong component ([78fe847e](https://github.com/telusdigital/tds/commit/78fe847e0823ffbfa3733e471925bf907a3882b8))
+* **chevron-link:** Give Roman 55 font to Chevron links ([c1b5e9dd](https://github.com/telusdigital/tds/commit/c1b5e9dd891f375da2860f259c1651d321632942))
+
+##### Performance Improvements
+
+* **link:** remove bloated foundation/typography import in chevron link ([49a5e309](https://github.com/telusdigital/tds/commit/49a5e309e1e183720e0b638e6003e40a08fa513e))
+
+##### Refactors
+
+* **feature-toggle:**
+  * Shorten the toggle function for in progress components ([827da41f](https://github.com/telusdigital/tds/commit/827da41f2212ab4e93b50c8f30c8aa9d6e953600))
+  * Add a toggle ability for new components in progress ([ec76c46e](https://github.com/telusdigital/tds/commit/ec76c46eddc268d940be61ed04f56c3bc6a94ca6))
+* **deploy-docs:** rewrite deployToS3 to make code easier to read ([30a81a0d](https://github.com/telusdigital/tds/commit/30a81a0d089511047fcf41ca99b740587d670a0c))
+
+##### Reverts
+
+* **link:**
+  * hide link components from sidebar ([5e0a5ab9](https://github.com/telusdigital/tds/commit/5e0a5ab93b882ee90f4a5de25b3bdfeb97e6dfc0))
+  * remove unnecessary attribute ([469fd2b7](https://github.com/telusdigital/tds/commit/469fd2b7dd7ee7e2b5635656efeaa37f059e00f0))
+
+##### Code Style Changes
+
+* **echint:**
+  * ignore **/snapshots/** folder and fix errors on Video and TitledText ([a3abdef2](https://github.com/telusdigital/tds/commit/a3abdef25a7e0bf0618536479d5365d468fdaa9d))
+  * add echint to enforce .editorconfig rules ([e0f75573](https://github.com/telusdigital/tds/commit/e0f755731ae2a937e9e96423150141bd5d7a69fe))
+* **eslint:** integrate TD eslint config ([a9ff5ca4](https://github.com/telusdigital/tds/commit/a9ff5ca4f7bc08352535f26a0492ddbb8159fdd2))
+
+##### Tests
+
+* **link:** add afterEach function to reset all Mocks to ensure warnings work properly ([d7235530](https://github.com/telusdigital/tds/commit/d72355307a52f4e4d93fe91566e7afb7e223fc41))
+
 #### 0.20.0 (2017-08-14)
 
 ##### Build System / Dependencies
