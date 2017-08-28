@@ -6,24 +6,10 @@ import safeRest from '../../../safeRest'
 
 import styles from './ButtonLink.modules.scss'
 
-const getClassName = (variant, invert) => {
-  if (variant === 'primary' && invert) {
-    warn('Link Button', 'Primary buttons cannot be inverted.')
-
-    return styles.primary
-  }
-
-  if (invert) {
-    return styles[`${variant}Inverted`]
-  }
-
-  return styles[variant]
-}
-
 /**
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
  */
-const ButtonLink = ({ reactRouterLinkComponent, variant, invert, children, ...rest }) => {
+const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
     warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
@@ -32,7 +18,7 @@ const ButtonLink = ({ reactRouterLinkComponent, variant, invert, children, ...re
     reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
-      className: getClassName(variant, invert)
+      className: styles[variant]
     },
     children
   )
@@ -42,13 +28,7 @@ ButtonLink.propTypes = {
   /**
    * The style.
    */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'outlined']),
-  /**
-   * Whether or not to invert the variant's color scheme.
-   *
-   * **Note:** Doesn't apply to `primary` variant.
-   */
-  invert: PropTypes.bool,
+  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
   /**
    * React Router Link component.
    */

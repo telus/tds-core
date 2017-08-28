@@ -64,6 +64,8 @@ Button.propTypes = {
   /**
    * Whether or not to invert the variant's color scheme.
    *
+   * **Note:** Doesn't apply to `primary` variant.
+   *
    * @deprecated since v0.21.0. Create inverted buttons with the inverted variant.
    */
   invert: PropTypes.bool,

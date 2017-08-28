@@ -6,7 +6,9 @@ import { warn } from '../../../../warn'
 import ButtonLink from '../ButtonLink'
 
 jest.mock('../../../../warn', () => (
-  { warn: jest.fn() }
+  {
+    warn: jest.fn()
+  }
 ))
 
 describe('ButtonLink', () => {
@@ -56,23 +58,8 @@ describe('ButtonLink', () => {
     button = doShallow({ variant: 'secondary' })
     expect(button).toHaveClassName('secondary')
 
-    button = doShallow({ variant: 'outlined' })
-    expect(button).toHaveClassName('outlined')
-  })
-
-  it('can be inverted for secondary and outlined variants', () => {
-    const secondaryButton = doShallow({ variant: 'secondary', invert: true })
-    expect(secondaryButton).toHaveClassName('secondaryInverted')
-
-    const outlinedButton = doShallow({ variant: 'outlined', invert: true })
-    expect(outlinedButton).toHaveClassName('outlinedInverted')
-  })
-
-  it('can not be inverted for primary variant', () => {
-    const button = doShallow({ variant: 'primary', invert: true })
-
-    expect(button).toHaveClassName('primary')
-    expect(warn).toHaveBeenCalled()
+    button = doShallow({ variant: 'inverted' })
+    expect(button).toHaveClassName('inverted')
   })
 
   it('passes additional attributes to button element', () => {

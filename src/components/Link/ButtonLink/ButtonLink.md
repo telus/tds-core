@@ -16,18 +16,16 @@ By default, Buttons will be displayed in the `primary` variant. Use primary Butt
 * Make sure the button text describes an action.
 * Buttons should not be disabled.
 
-#### Placing Button Links on images
+### Placing buttons on dark backgrounds
 
-Use the `outlined` variant when placing a button on top of an image, which will cause the image to show through. You can
-also `invert` the colour scheme.
+Use the `inverted` button link on top of a dark background (TELUS approved colours or images).
 
-Use this variant with caution. There will be accessibility issues if the colour contrast of the image and the button text
-is too low, including the hover state.
+Use this variant with caution. There will be accessibility issues if the colour contrast of the image and the button text is too low in the hover state.
 
 ```
 const Hero = require('../../__docs__/Hero').default;
 
 <Hero>
-  <ButtonLink variant="outlined" invert>Advanced solutions</ButtonLink>
+  <ButtonLink variant="inverted">Advanced solutions</ButtonLink>
 </Hero>
 ```
