@@ -72,7 +72,7 @@ items:
           name: github-secret
         secrets:
           - secret:
-            name: npmrc-secret
+              name: npmrc-secret
         runPolicy: Parallel
       strategy:
         type: Docker
