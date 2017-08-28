@@ -31,9 +31,6 @@ RUN set -ex && \
 # We use a .dockerignore file to prevent unnecessary or large files from being inadvertently copied.
 COPY . /app
 
-# Make the .npmrc owned by the node user so the "publish" script can edit it
-RUN chown node .npmrc
-
 # Build the app.
 RUN yarn run build
 

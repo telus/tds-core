@@ -18,15 +18,6 @@ oc run ${NAME}-${VERSION} \
       "containers":[{
         "name": "'${NAME}'-'${VERSION}'",
         "image": "'${IMAGESTREAM}':'${VERSION}'",
-        "env":[{
-          "name":"NPM_PUBLISH_TOKEN",
-          "valueFrom":{
-            "secretKeyRef":{
-              "key": ".npmrc",
-              "name":"npmrc-publish-secret"
-            }
-          }
-        }],
         "command":["npm", "run", "deploy:package"]
       }]
     }

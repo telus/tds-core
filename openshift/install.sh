@@ -13,11 +13,8 @@ vault read -field=ssh-key secret/common/github > id_rsa
 oc create secret generic github-secret --from-file=ssh-privatekey=id_rsa --dry-run -o yaml | oc apply -f -
 rm id_rsa
 
-# NPM
-oc create secret generic npmrc-secret --from-literal=.npmrc=$(vault read -field=npmrc secret/common/npm) --dry-run -o yaml | oc apply -f -
-
-# NPM publish
-oc create secret generic npmrc-publish-secret --from-literal=.npmrc=$(vault read -field=npmrc secret/projects/npm-libraries/npm) --dry-run -o yaml | oc apply -f -
+# NPM Read and Publish Token
+oc create secret generic npmrc-secret --from-literal=.npmrc=$(vault read -field=npmrc secret/projects/npm-libraries/npm) --dry-run -o yaml | oc apply -f -
 
 # AWS
 oc create secret generic aws-client-secret --from-literal=aws.client=$(vault read -field=client secret/projects/o-design-outcomes/tds-s3) --dry-run -o yaml | oc apply -f -
