@@ -1,17 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { warn } from '../../warn'
+import { warn, deprecate } from '../../warn'
 import safeRest from '../../safeRest'
 
 import styles from './Button.modules.scss'
 
 const getClassName = (variant, invert) => {
-  if (invert && variant === 'outlined') {
+  if (variant === 'primary' && invert) {
+    warn('Button', 'Primary buttons cannot be inverted.')
+
+    return styles.primary
+  }
+
+  if (invert) {
     return styles[`${variant}Inverted`]
   }
 
-  warn('Button', `${variant} buttons cannot be inverted.`)
   return styles[variant]
 }
 
@@ -25,10 +30,18 @@ const preventDisabling = ({ disabled, ...props }) => {
 
 /**
  *
- * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.20.0</span>
+ * <span class="docs--badge green">updated!</span> <span class="docs--badge purple">v0.21.0</span>
  */
 const Button = ({ type, variant, invert, children, ...rest }) => {
   const restNoDisabled = preventDisabling(rest)
+
+  if (invert) {
+    deprecate('Button', 'The invert prop is deprecated. Create an inverted Button with the inverted variant.')
+  }
+
+  if (variant === 'outlined') {
+    deprecate('Button', 'The outlined variant is deprecated. Create an inverted Button with the inverted variant.')
+  }
 
   return (
     <button {...safeRest(restNoDisabled)} type={type} className={getClassName(variant, invert)}>
@@ -44,10 +57,14 @@ Button.propTypes = {
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
   /**
    * The style.
+   *
+   * @since v0.21.0. Added 'inverted' to replace 'outlined'.
    */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'outlined']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'outlined', 'inverted']),
   /**
    * Whether or not to invert the variant's color scheme.
+   *
+   * @deprecated since v0.21.0. Create inverted buttons with the inverted variant.
    */
   invert: PropTypes.bool,
   /**

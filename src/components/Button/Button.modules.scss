@@ -6,7 +6,7 @@
 
 $primary-bg-color: $color-primary;
 $secondary-bg-color: $color-secondary;
-$text-color: $color-white;
+$button-text-color: $color-white;
 
 
 @mixin border {
@@ -49,13 +49,13 @@ $text-color: $color-white;
   }
 }
 
-.inverted {
-  background-color: $text-color;
+.deprecatedInverted {
+  background-color: $button-text-color;
 
   &:hover {
     @include border;
 
-    color: $text-color;
+    color: $button-text-color;
   }
 }
 
@@ -63,12 +63,12 @@ $text-color: $color-white;
   composes: button;
 
   background-color: $primary-bg-color;
-  color: $text-color;
+  color: $button-text-color;
 
   &:hover {
     @include border;
 
-    background-color: $text-color;
+    background-color: $button-text-color;
     color: $primary-bg-color;
   }
 }
@@ -77,13 +77,24 @@ $text-color: $color-white;
   composes: button;
 
   background-color: $secondary-bg-color;
-  color: $text-color;
+  color: $button-text-color;
 
   &:hover {
     @include border;
 
-    background-color: $text-color;
+    background-color: $button-text-color;
     color: $secondary-bg-color;
+  }
+}
+
+.secondaryInverted {
+  composes: deprecatedInverted button;
+
+  color: $secondary-bg-color;
+
+  &:hover {
+    background-color: $secondary-bg-color;
+    color: $button-text-color;
   }
 }
 
@@ -93,24 +104,38 @@ $text-color: $color-white;
   @include border;
 
   background-color: transparent;
-  color: $text-color;
+  color: $button-text-color;
 
   &:hover {
-    background-color: $text-color;
-    color: $color-shark;
+    background-color: $button-text-color;
+    color: $color-text;
 
     box-shadow: none;
   }
 }
 
 .outlinedInverted {
-  composes: inverted button;
+  composes: deprecatedInverted button;
 
-  color: $color-shark;
+  color: $color-text;
 
   &:hover {
     @include border;
 
     background-color: transparent;
+  }
+}
+
+.inverted {
+  composes: button;
+
+  background-color: $button-text-color;
+  color: $color-text;
+
+  &:hover {
+    @include border;
+
+    background-color: transparent;
+    color: $button-text-color;
   }
 }

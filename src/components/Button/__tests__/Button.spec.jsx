@@ -2,12 +2,15 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import { warn } from '../../../warn'
+import { warn, deprecate } from '../../../warn'
 
 import Button from '../Button'
 
 jest.mock('../../../warn', () => (
-  { warn: jest.fn() }
+  {
+    warn: jest.fn(),
+    deprecate: jest.fn()
+  }
 ))
 
 describe('Button', () => {
@@ -41,25 +44,39 @@ describe('Button', () => {
     button = doShallow({ variant: 'secondary' })
     expect(button).toHaveClassName('secondary')
 
-    button = doShallow({ variant: 'outlined' })
-    expect(button).toHaveClassName('outlined')
+    button = doShallow({ variant: 'inverted' })
+    expect(button).toHaveClassName('inverted')
   })
 
-  it('can be inverted outlined variant', () => {
-    const outlinedButton = doShallow({ variant: 'outlined', invert: true })
-    expect(outlinedButton).toHaveClassName('outlinedInverted')
-  })
+  describe('deprecated variants', () => {
+    it('deprecates the outlined variant', () => {
+      const outlinedButton = doShallow({ variant: 'outlined' })
 
-  it('can not be inverted for primary and secondary variants', () => {
-    const primaryButton = doShallow({ variant: 'primary', invert: true })
+      expect(outlinedButton).toHaveClassName('outlined')
+      expect(deprecate).toHaveBeenCalled()
+    })
 
-    expect(primaryButton).toHaveClassName('primary')
-    expect(warn).toHaveBeenCalled()
+    it('deprecates the outlined inverted variant', () => {
+      const outlinedButton = doShallow({ variant: 'outlined', invert: true })
 
-    const secondaryButton = doShallow({ variant: 'secondary', invert: true })
+      expect(outlinedButton).toHaveClassName('outlinedInverted')
+      expect(deprecate).toHaveBeenCalled()
+    })
 
-    expect(secondaryButton).toHaveClassName('secondary')
-    expect(warn).toHaveBeenCalled()
+    it('deprecates primary inverted variant', () => {
+      const primaryButton = doShallow({ variant: 'primary', invert: true })
+
+      expect(primaryButton).toHaveClassName('primary')
+      expect(warn).toHaveBeenCalled()
+      expect(deprecate).toHaveBeenCalled()
+    })
+
+    it('deprecates secondary inverted variant', () => {
+      const secondaryButton = doShallow({ variant: 'secondary', invert: true })
+
+      expect(secondaryButton).toHaveClassName('secondaryInverted')
+      expect(deprecate).toHaveBeenCalled()
+    })
   })
 
   it('can not be disabled', () => {

@@ -30,14 +30,14 @@ Specify the `variant` to create a button for secondary actions.
 All buttons are inline, with a minimum width of 180px for screens larger than 768. They will occupy 100% width of their parent's at the small viewport and below. Resize your browser window to see this behaviour.
 
 
-## Placing buttons on solid colours
+## Placing buttons on dark backgrounds
 
-Use the `outlined` `invert` button on top of dark background (TELUS approved colours or images).
+Use the `inverted` button on top of a dark background (TELUS approved colours or images).
 
 ```
 const PurpleBlock = require('../__docs__/PurpleBlock').default;
 
 <PurpleBlock>
-  <Button variant="outlined" invert>Get started</Button>
+  <Button variant="inverted">Get started</Button>
 </PurpleBlock>
 ```
