@@ -1,0 +1,31 @@
+@import '../../../scss/settings/colours';
+@import '../../../scss/settings/typography';
+@import '../../../scss/settings/responsive-grid';
+@import '../../../scss/utility/responsive';
+
+.displayHeading {
+  composes: noSpacing from '../../Spacing.modules.scss';
+
+  @include helvetica-neue-thin-35;
+
+  font-size: 2.75rem;
+  line-height: 1.14; // 48px
+
+  @include from-breakpoint(medium) {
+    font-size: 4.5rem;
+    line-height: 1.11; // 80px
+    letter-spacing: .2px;
+  }
+}
+
+.inverted {
+  composes: displayHeading;
+
+  color: $color-white;
+}
+
+.default {
+  composes: displayHeading;
+
+  color: $color-secondary;
+}

@@ -15,7 +15,6 @@ touch $COMPONENT.jsx
 {
 printf "import React from 'react'\n"
 printf "import PropTypes from 'prop-types'\n"
-printf "import classnames from 'classnames'\n\n"
 
 printf "import safeRest from '../../safeRest'\n\n"
 
@@ -29,7 +28,7 @@ printf "%s.propTypes = {\n\n}\n\n" "$COMPONENT"
 
 printf "%s.defaultProps = {\n\n}\n\n" "$COMPONENT"
 
-printf "export default $s" "$COMPONENT"
+printf "export default %s" "$COMPONENT"
 
 } > $COMPONENT.jsx
 

@@ -1,0 +1,3 @@
+```
+<DisplayHeading>Great Deals</DisplayHeading>
+```
