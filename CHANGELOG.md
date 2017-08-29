@@ -1,3 +1,31 @@
+#### 0.21.1 (2017-08-29)
+
+##### Continuous Integration
+
+* **openshift-template:** Fix tabbing for npmrc secret ([206824a6](https://github.com/telusdigital/tds/commit/206824a6b5f183c54ff893de248180474abec9e1))
+* **publish:**
+  * Use npm-libraries npmrc token for read and publish to fix permissions issue ([88264096](https://github.com/telusdigital/tds/commit/88264096a6e1db82d5f888df7f36ccd20dfb2d92))
+  * Own the .npmrc file by node user in Dockerfile ([d79b464e](https://github.com/telusdigital/tds/commit/d79b464e116a5e7926692d15db40b2950acda2b1))
+
+##### Documentation Changes
+
+* **link:** hide link components from sidebar ([d54a7797](https://github.com/telusdigital/tds/commit/d54a77971a551e52c5d94176794d1f2e733f0537))
+
+##### New Features
+
+* **heading:** limit size props, transfer styles ([d510537a](https://github.com/telusdigital/tds/commit/d510537a61ab342804b756633ca014bdaf5cc5da))
+* **notification:** Add new notification component to next release ([460330eb](https://github.com/telusdigital/tds/commit/460330eb3b88f267d5e297f3d6d4c767ded808f3))
+* **button-link:** Add inverted variant to replace the invert prop to match Button ([e3684436](https://github.com/telusdigital/tds/commit/e368443635fba9661af2fe5c041a457e505d05fc))
+* **button:** Add inverted variant ([0e1071bd](https://github.com/telusdigital/tds/commit/0e1071bdc3b4230a342bca078fccef056f58c99c))
+
+##### Bug Fixes
+
+* **link:** Add ChevronLink and ButtonLink to the bundle ([7c91374e](https://github.com/telusdigital/tds/commit/7c91374eee49c214b30b857880c2e8efa6e37fb0))
+
+##### Reverts
+
+* **link:** hide link components from sidebar ([5e0a5ab9](https://github.com/telusdigital/tds/commit/5e0a5ab93b882ee90f4a5de25b3bdfeb97e6dfc0))
+
 #### 0.21.0 (2017-08-28)
 
 ##### Build System / Dependencies
