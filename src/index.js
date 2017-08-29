@@ -1,7 +1,9 @@
 import './scss/global.scss'
 
 export { default as Button } from './components/Button/Button'
+export { default as ButtonLink } from './components/Link/ButtonLink/ButtonLink'
 export { default as Card } from './old-components/Card/Card'
+export { default as ChevronLink } from './components/Link/ChevronLink/ChevronLink'
 export { default as ExpandCollapse } from './old-components/ExpandCollapse/ExpandCollapse'
 export { default as Grid } from './old-components/Grid/Grid'
 export { default as Icon } from './old-components/Icon/Icon'
