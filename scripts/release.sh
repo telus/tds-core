@@ -51,7 +51,10 @@ yarn release:changelog
 #
 # Prompt before pushing to give you a chance to make any manual corrections.
 #
-read -p "Are you ready to make the release? (y/n) " -r
+echo "\nCheck that the package.json reflects the desired version: ${VERSION_NUM}."
+echo "All commits since the last release should be listed in the CHANGELOG. You may make manual edits there now if necessary.\n"
+
+read -p "When you are satisfied, type 'y' to commit the package.json and CHANGELOG, and generate the version tag. You may abort with 'n'. (y/n) " -r
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
   exit 1
 fi
