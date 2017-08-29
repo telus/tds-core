@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplayHeading renders 1`] = `
+<h1
+  className="default"
+>
+  Great Deals
+</h1>
+`;

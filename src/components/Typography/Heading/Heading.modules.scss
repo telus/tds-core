@@ -6,20 +6,27 @@
 .largeHeading {
   composes: noSpacing from '../../Spacing.modules.scss';
 
-  color: $color-secondary;
-  font-weight: 400;
+  @include helvetica-neue-light-45;
 }
 
 .smallHeading {
   composes: noSpacing from '../../Spacing.modules.scss';
 
-  color: $color-shark;
+  @include helvetica-neue-medium-65;
+
   letter-spacing: -.6px;
-  font-weight: 700;
 }
 
 .inverted {
   color: $color-white;
+}
+
+.secondary {
+  color: $color-secondary;
+}
+
+.default {
+  color: $color-text;
 }
 
 .h1 {

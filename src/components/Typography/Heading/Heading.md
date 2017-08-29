@@ -8,10 +8,10 @@
 
 ```
 <div>
-  <Heading size="h1">Great Deals</Heading>
-  <Heading size="h2">Great Deals</Heading>
-  <Heading size="h3">Great Deals</Heading>
-  <Heading size="h4">Great Deals</Heading>
+  <Heading level="h1">Great Deals</Heading>
+  <Heading level="h2">Great Deals</Heading>
+  <Heading level="h3">Great Deals</Heading>
+  <Heading level="h4">Great Deals</Heading>
 </div>
 ```
 

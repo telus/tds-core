@@ -1,37 +1,39 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classnames from 'classnames'
 
 import safeRest from '../../../safeRest'
 
 import styles from './Heading.modules.scss'
 
-const getClassName = (size, invert) => {
-  return classnames(
-    styles[size],
-    invert ? styles.inverted : null
-  )
+const getColorClassName = level => (
+  level === 'h1' || level === 'h2' ? styles.secondary : styles.default
+)
+
+const getClassName = (level, invert) => {
+  const colorClassName = invert ? styles.inverted : getColorClassName(level)
+
+  return `${styles[level]} ${colorClassName}`
 }
 
-const Heading = ({ size, invert, children, ...rest }) => (
+const Heading = ({ level, invert, children, ...rest }) => (
   React.createElement(
-    size,
+    level,
     {
       ...safeRest(rest),
-      className: getClassName(size, invert)
+      className: getClassName(level, invert)
     },
     children
   )
 )
 Heading.propTypes = {
-  size: PropTypes.oneOf([
+  level: PropTypes.oneOf([
     'h1', 'h2', 'h3', 'h4'
   ]).isRequired,
   invert: PropTypes.bool,
   children: PropTypes.node.isRequired
 }
 Heading.defaultProps = {
-  size: 'h1',
+  level: 'h1',
   invert: false
 }
 
