@@ -15,6 +15,11 @@ const getClassName = (level, invert) => {
   return `${styles[level]} ${colorClassName}`
 }
 
+/**
+ * Used for page headings.
+ *
+ * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
+ */
 const Heading = ({ level, invert, children, ...rest }) => (
   React.createElement(
     level,
@@ -26,10 +31,19 @@ const Heading = ({ level, invert, children, ...rest }) => (
   )
 )
 Heading.propTypes = {
+  /**
+   * Heading level (default is `h1`).
+   */
   level: PropTypes.oneOf([
     'h1', 'h2', 'h3', 'h4'
   ]).isRequired,
+  /**
+   * Whether or not to invert the colour scheme.
+   */
   invert: PropTypes.bool,
+  /**
+   * The heading text.
+   */
   children: PropTypes.node.isRequired
 }
 Heading.defaultProps = {

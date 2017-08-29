@@ -55,6 +55,8 @@ To create consistent leading the line height is set to double the value of the b
 
 ## Headings
 
+**The Headings CSS classes are deprecated and should not be used. Use the [Display Heading](#displayheading) and [Heading](#heading) components instead.**
+
 ---
 
 - Use sentence case for headings
