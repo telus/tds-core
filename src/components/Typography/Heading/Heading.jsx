@@ -29,7 +29,7 @@ Heading.propTypes = {
   ]).isRequired,
   display: PropTypes.bool,
   invert: PropTypes.bool,
-  children: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired
 }
 Heading.defaultProps = {
   size: 'h1',

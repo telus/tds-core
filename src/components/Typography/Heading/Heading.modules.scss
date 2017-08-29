@@ -3,12 +3,16 @@
 @import '../../../scss/settings/typography';
 @import '../../../scss/utility/responsive';
 
-.heading-large {
+.largeHeading {
+  composes: noSpacing from '../../Spacing.modules.scss';
+
   color: $color-secondary;
   font-weight: 400;
 }
 
-.heading-small {
+.smallHeading {
+  composes: noSpacing from '../../Spacing.modules.scss';
+
   color: $color-shark;
   letter-spacing: -.6px;
   font-weight: 700;
@@ -19,6 +23,8 @@
 }
 
 .displayHeading {
+  composes: noSpacing from '../../Spacing.modules.scss';
+
   color: $color-secondary;
   font-size: rem(44px);
   line-height: 1.14; // 48px
@@ -32,7 +38,7 @@
 }
 
 .h1 {
-  composes: heading-large;
+  composes: largeHeading;
 
   font-size: 1.75rem;
   line-height: 1.29; // 36px
@@ -47,7 +53,7 @@
 }
 
 .h2 {
-  composes: heading-large;
+  composes: largeHeading;
 
   font-size: 1.5rem;
   line-height: 1.33; // 30px
@@ -61,14 +67,14 @@
 }
 
 .h3 {
-  composes: heading-small;
+  composes: smallHeading;
 
   font-size: 1.25rem;
   line-height: 1.4; // 28px
 }
 
 .h4 {
-  composes: heading-small;
+  composes: smallHeading;
 
   font-size: 1rem;
   line-height: 1.25; // 20px

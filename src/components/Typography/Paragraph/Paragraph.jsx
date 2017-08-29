@@ -4,6 +4,7 @@ import classnames from 'classnames'
 
 import safeRest from '../../../safeRest'
 
+import spacingStyles from '../../Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
 import textStyles from '../Text/Text.modules.scss'
 
@@ -11,7 +12,7 @@ const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) =>
   const paragraphColor = invert ? textStyles.colorInverted : textStyles.color
 
   const classes = classnames(
-    styles.noSpacing,
+    spacingStyles.noSpacing,
     context.inheritColor ? styles.inheritColor : paragraphColor,
     textStyles[size],
     bold ? textStyles.boldFont : textStyles[`${size}Font`],

@@ -14,7 +14,7 @@ describe('Heading', () => {
     expect(heading).toHaveText('Go home')
   })
 
-  it('renders a heading in six sizes', () => {
+  it('renders a heading in four sizes', () => {
     let heading = doShallow({ size: 'h1' })
     expect(heading).toHaveTagName('h1')
 
