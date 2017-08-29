@@ -22,21 +22,6 @@
   color: $color-white;
 }
 
-.displayHeading {
-  composes: noSpacing from '../../Spacing.modules.scss';
-
-  color: $color-secondary;
-  font-size: rem(44px);
-  line-height: 1.14; // 48px
-  font-weight: 300;
-
-  @include from-breakpoint(medium) {
-    font-size: rem(72px);
-    line-height: 1.11; // 80px
-    letter-spacing: .2px;
-  }
-}
-
 .h1 {
   composes: largeHeading;
 

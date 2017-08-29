@@ -8,7 +8,6 @@
 
 ```
 <div>
-  <Heading size="h1" display>Great Deals</Heading>
   <Heading size="h1">Great Deals</Heading>
   <Heading size="h2">Great Deals</Heading>
   <Heading size="h3">Great Deals</Heading>
