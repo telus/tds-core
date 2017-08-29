@@ -33,4 +33,11 @@ printf "export default %s" "$COMPONENT"
 } > $COMPONENT.jsx
 
 touch $COMPONENT.md
+
+{
+printf "\`\`\`\n"
+printf "<%s> %s </%s>\n" "$COMPONENT" "$COMPONENT" "$COMPONENT"
+printf "\`\`\`\n"
+} > $COMPONENT.md
+
 touch $COMPONENT.modules.scss
