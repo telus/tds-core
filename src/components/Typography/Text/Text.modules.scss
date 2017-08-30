@@ -1,21 +1,24 @@
 @import '../../../scss/settings/colours';
 @import '../../../scss/settings/typography';
 
-.sup {
-  top: -.5em;
-  position: relative;
-  vertical-align: baseline;
-}
-
 .small {
   font-size: .875rem;
   letter-spacing: -0.6px;
   line-height: 1.5;
-}
 
-.smallSup {
-  composes: sup;
-  font-size: .875rem;
+  .sup, .sub {
+    position: relative;
+    vertical-align: baseline;
+    font-size: .875rem;
+  }
+
+  .sup {
+    top: -.5em;
+  }
+
+  .sub {
+    bottom: -.5em;
+  }
 }
 
 .smallFont {
@@ -26,11 +29,20 @@
   font-size: 1rem;
   letter-spacing: -0.8px;
   line-height: 1.5;
-}
 
-.mediumSup {
-  composes: sup;
-  font-size: .875rem;
+  .sup, .sub {
+    position: relative;
+    vertical-align: baseline;
+    font-size: .875rem;
+  }
+
+  .sup {
+    top: -.5em;
+  }
+
+  .sub {
+    bottom: -.5em;
+  }
 }
 
 .mediumFont {
@@ -41,11 +53,20 @@
   font-size: 1.25rem;
   letter-spacing: -1px;
   line-height: 2;
-}
 
-.largeSup {
-  composes: sup;
-  font-size: .875rem;
+  .sup, .sub {
+    position: relative;
+    vertical-align: baseline;
+    font-size: .875rem;
+  }
+
+  .sup {
+    top: -.5em;
+  }
+
+  .sub {
+    bottom: -.5em;
+  }
 }
 
 .largeFont {

@@ -1,3 +1,3 @@
 ```
-<Text>I am some text</Text>
+<Text>TELUS Pik TV<Text.Sup>&trade;</Text.Sup></Text>
 ```

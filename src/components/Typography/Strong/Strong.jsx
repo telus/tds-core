@@ -14,4 +14,5 @@ const Strong = ({ children, ...rest }) => (
 Strong.propTypes = {
   children: PropTypes.string.isRequired
 }
+
 export default Strong

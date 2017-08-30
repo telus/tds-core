@@ -159,9 +159,10 @@ module.exports = {
               path.resolve('src/components/Typography/Heading/Heading.jsx'),
               toggle(path.resolve('src/components/Typography/Paragraph/Paragraph.jsx')),
               toggle(path.resolve('src/components/Typography/Text/Text.jsx')),
+              toggle(path.resolve('src/components/Typography/Text/TextSup.jsx')),
+              toggle(path.resolve('src/components/Typography/Text/TextSub.jsx')),
               toggle(path.resolve('src/components/Typography/Strong/Strong.jsx')),
-              toggle(path.resolve('src/components/Typography/Small/Small.jsx')),
-              toggle(path.resolve('src/components/Typography/Sup/Sup.jsx'))
+              toggle(path.resolve('src/components/Typography/Small/Small.jsx'))
             ])
           }
         },
