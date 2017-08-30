@@ -152,6 +152,7 @@ module.exports = {
         },
         {
           name: 'Typography',
+          content: toggle(path.resolve('src/components/Typography/Typography.md')),
           components() {
             return compact([
               path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
