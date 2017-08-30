@@ -48,7 +48,6 @@ ButtonLink.propTypes = {
 }
 ButtonLink.defaultProps = {
   variant: 'primary',
-  invert: false,
   reactRouterLinkComponent: null,
   to: null,
   href: null
