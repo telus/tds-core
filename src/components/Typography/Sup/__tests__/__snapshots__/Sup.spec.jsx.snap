@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sup renders 1`] = `
+<sup
+  className="mediumSup"
+>
+  Some content
+</sup>
+`;
