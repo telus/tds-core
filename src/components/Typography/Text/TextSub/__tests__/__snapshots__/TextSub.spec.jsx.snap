@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextSub renders 1`] = `
+<sub
+  className="sub"
+>
+  Some content
+</sub>
+`;

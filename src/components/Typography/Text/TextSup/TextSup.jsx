@@ -1,20 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './Text.modules.scss'
+import safeRest from '../../../../safeRest'
 
+import styles from '../Text.modules.scss'
 
 /**
  * Used for text that should be displayed higher than the main text.
  */
-const TextSup = ({ children }) => (
-  <sup className={styles.sup}>{children}</sup>
+const TextSup = ({ children, ...rest }) => (
+  <sup {...safeRest(rest)} className={styles.sup}>{children}</sup>
 )
 
 TextSup.propTypes = {
 
   /**
-   * Superscript text
+   * Text
    */
   children: PropTypes.node.isRequired
 }

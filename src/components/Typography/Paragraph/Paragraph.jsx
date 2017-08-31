@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
 import safeRest from '../../../safeRest'
-import TextSup from '../Text/TextSup'
-import TextSub from '../Text/TextSub'
+import TextSup from '../Text/TextSup/TextSup'
+import TextSub from '../Text/TextSub/TextSub'
 
 import spacingStyles from '../../Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
