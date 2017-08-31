@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classnames from 'classnames'
 
 import safeRest from '../../../safeRest'
 import TextSup from './TextSup/TextSup'
@@ -8,16 +7,12 @@ import TextSub from './TextSub/TextSub'
 
 import styles from './Text.modules.scss'
 
-
-/**
- * Used for inline text.
- */
 const Text = ({ bold, size, invert, children, ...rest }) => {
-  const classes = classnames(
-    styles[size],
-    bold ? styles.boldFont : styles[`${size}Font`],
-    invert ? styles.colorInverted : styles.color
-  )
+  const classes = `
+    ${styles[size]}
+    ${bold ? styles.boldFont : styles[`${size}Font`]}
+    ${invert ? styles.colorInverted : styles.color}
+  `
 
   return (
     <span {...safeRest(rest)} className={classes}>
@@ -28,14 +23,14 @@ const Text = ({ bold, size, invert, children, ...rest }) => {
 
 Text.propTypes = {
   /**
-   * Set a span of text stylistically different from normal text by using the boldface,
-   * without conveying any special importance or relevance.
+   * Embolden text without conveying any special importance or relevance.
    */
   bold: PropTypes.bool,
   /**
-   * Font size (default is `medium`)
+   * Font size.
    */
   size: PropTypes.oneOf([
+    'base',
     'small',
     'medium',
     'large'
@@ -45,14 +40,14 @@ Text.propTypes = {
    */
   invert: PropTypes.bool,
   /**
-   * Text
+   * The text you wish to apply special styles.
    */
   children: PropTypes.node.isRequired
 }
 
 Text.defaultProps = {
   bold: false,
-  size: 'medium',
+  size: 'base',
   invert: false
 }
 

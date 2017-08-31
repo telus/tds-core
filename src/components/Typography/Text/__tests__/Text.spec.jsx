@@ -24,11 +24,9 @@ describe('Text', () => {
   it('can be bold', () => {
     let text = doShallow()
     expect(text).not.toHaveClassName('boldFont')
-    expect(text).toHaveClassName('mediumFont')
 
     text = doShallow({ bold: true })
     expect(text).toHaveClassName('boldFont')
-    expect(text).not.toHaveClassName('mediumFont')
   })
 
   it('can be inverted', () => {
@@ -43,7 +41,7 @@ describe('Text', () => {
 
   it('can be sized', () => {
     let text = doShallow()
-    expect(text).toHaveClassName('medium mediumFont')
+    expect(text).toHaveClassName('base baseFont')
 
     text = doShallow({ size: 'small' })
     expect(text).toHaveClassName('small smallFont')

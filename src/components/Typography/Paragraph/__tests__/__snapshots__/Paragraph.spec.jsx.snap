@@ -2,7 +2,13 @@
 
 exports[`Paragraph renders 1`] = `
 <p
-  className="noSpacing color medium mediumFont leftAlign"
+  className="
+    noSpacing
+    color
+    medium
+    mediumFont
+    leftAlign
+    "
 >
   Some content
 </p>

@@ -1,6 +1,14 @@
 @import '../../../scss/settings/colours';
 @import '../../../scss/settings/typography';
 
+.base {
+  font-size: inherit;
+}
+
+.baseFont {
+  font-weight: inherit;
+}
+
 .small {
   font-size: .875rem;
   letter-spacing: -0.6px;

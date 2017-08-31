@@ -2,7 +2,11 @@
 
 exports[`Text renders 1`] = `
 <span
-  className="medium mediumFont color"
+  className="
+    base
+    baseFont
+    color
+  "
 >
   Some content
 </span>
