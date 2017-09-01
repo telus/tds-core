@@ -152,19 +152,27 @@ module.exports = {
         },
         {
           name: 'Typography',
-          content: toggle(path.resolve('src/components/Typography/Typography.md')),
           components() {
             return compact([
               path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
               path.resolve('src/components/Typography/Heading/Heading.jsx'),
               toggle(path.resolve('src/components/Typography/Paragraph/Paragraph.jsx')),
-              toggle(path.resolve('src/components/Typography/Text/Text.jsx')),
-              toggle(path.resolve('src/components/Typography/Text/TextSup.jsx')),
-              toggle(path.resolve('src/components/Typography/Text/TextSub.jsx')),
               toggle(path.resolve('src/components/Typography/Strong/Strong.jsx')),
               toggle(path.resolve('src/components/Typography/Small/Small.jsx'))
             ])
-          }
+          },
+          sections: [
+            {
+              name: 'Text',
+              components() {
+                return compact([
+                  toggle(path.resolve('src/components/Typography/Text/Text.jsx')),
+                  toggle(path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx')),
+                  toggle(path.resolve('src/components/Typography/Text/TextSub/TextSub.jsx'))
+                ])
+              }
+            }
+          ]
         },
         {
           name: 'Icons',

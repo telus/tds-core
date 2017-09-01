@@ -1,7 +1,7 @@
 @import '../../../scss/settings/colours';
 @import '../../../scss/settings/typography';
 
-.baseScripts {
+.baseSupSubScripts {
   @include telus-font-family;
   position: relative;
   vertical-align: baseline;
@@ -13,12 +13,12 @@
 }
 
 .sup {
-  composes: baseScripts;
+  composes: baseSupSubScripts;
   top: -.5em;
 }
 
 .sub {
-  composes: baseScripts;
+  composes: baseSupSubScripts;
   bottom: -.5em;
 }
 
