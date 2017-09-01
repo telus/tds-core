@@ -3,6 +3,20 @@
 @import '../../../scss/settings/typography';
 @import '../../../scss/utility/responsive';
 
+.baseHeadingSupSubScripts {
+  @include telus-font-family;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.sup {
+  composes: baseHeadingSupSubScripts;
+}
+
+.sub {
+  composes: baseHeadingSupSubScripts;
+}
+
 .largeHeading {
   composes: noSpacing from '../../Spacing.modules.scss';
 
@@ -36,11 +50,28 @@
   line-height: 1.29; // 36px
   letter-spacing: -1.6px;
 
+  .sup, .sub {
+    font-size: 1.25rem;
+  }
+
+  .sup {
+    top: -.6em;
+  }
+
+  .sub {
+    bottom: -.2em;
+  }
+
   @include from-breakpoint(medium) {
     font-weight: 300;
     font-size: 2.75rem;
     line-height: 1.18; // 52px
     letter-spacing: 0;
+
+    .sup {
+      top: -.9em;
+    }
+
   }
 }
 
@@ -51,10 +82,26 @@
   line-height: 1.33; // 30px
   letter-spacing: -.4px;
 
+  .sup, .sub {
+    font-size: 1rem;
+  }
+
+  .sup {
+    top: -.5em;
+  }
+
+  .sub {
+    bottom: -.2em;
+  }
+
   @include from-breakpoint(medium) {
     font-size: 1.75rem;
     line-height: 1.29; // 36px
     letter-spacing: -.8px;
+
+    .sup {
+      top: -.6em;
+    }
   }
 }
 
@@ -63,6 +110,18 @@
 
   font-size: 1.25rem;
   line-height: 1.4; // 28px
+
+  .sup, .sub {
+    font-size: .875rem;
+  }
+
+  .sup {
+    top: -.5em;
+  }
+
+  .sub {
+    bottom: -.3em;
+  }
 }
 
 .h4 {
@@ -70,4 +129,16 @@
 
   font-size: 1rem;
   line-height: 1.25; // 20px
+
+  .sup, .sub {
+    font-size: .875rem;
+  }
+
+  .sup {
+    top: -.2em;
+  }
+
+  .sub {
+    bottom: -.4em;
+  }
 }

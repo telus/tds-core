@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
+import HeadingSup from './HeadingSup/HeadingSup'
+import HeadingSub from './HeadingSub/HeadingSub'
 
 import styles from './Heading.modules.scss'
 
@@ -50,5 +52,8 @@ Heading.defaultProps = {
   level: 'h1',
   invert: false
 }
+
+Heading.Sup = HeadingSup
+Heading.Sub = HeadingSub
 
 export default Heading

@@ -22,9 +22,9 @@ describe('TextSup', () => {
   })
 
   it('passes additional attributes to the sub element', () => {
-    const textSup = doShallow({ id: 'the-sub-text' })
+    const textSup = doShallow({ id: 'the-sup-text' })
 
-    expect(textSup).toHaveProp('id', 'the-sub-text')
+    expect(textSup).toHaveProp('id', 'the-sup-text')
   })
 
   it('does not allow custom CSS', () => {

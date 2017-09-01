@@ -152,15 +152,6 @@ module.exports = {
         },
         {
           name: 'Typography',
-          components() {
-            return compact([
-              path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
-              path.resolve('src/components/Typography/Heading/Heading.jsx'),
-              toggle(path.resolve('src/components/Typography/Paragraph/Paragraph.jsx')),
-              toggle(path.resolve('src/components/Typography/Strong/Strong.jsx')),
-              toggle(path.resolve('src/components/Typography/Small/Small.jsx'))
-            ])
-          },
           sections: [
             {
               name: 'Text',
@@ -168,7 +159,21 @@ module.exports = {
                 return compact([
                   toggle(path.resolve('src/components/Typography/Text/Text.jsx')),
                   toggle(path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx')),
-                  toggle(path.resolve('src/components/Typography/Text/TextSub/TextSub.jsx'))
+                  toggle(path.resolve('src/components/Typography/Text/TextSub/TextSub.jsx')),
+                  toggle(path.resolve('src/components/Typography/Paragraph/Paragraph.jsx')),
+                  toggle(path.resolve('src/components/Typography/Strong/Strong.jsx')),
+                  toggle(path.resolve('src/components/Typography/Small/Small.jsx'))
+                ])
+              }
+            },
+            {
+              name: 'Headings',
+              components() {
+                return compact([
+                  toggle(path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx')),
+                  toggle(path.resolve('src/components/Typography/Heading/Heading.jsx')),
+                  toggle(path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx')),
+                  toggle(path.resolve('src/components/Typography/Heading/HeadingSub/HeadingSub.jsx'))
                 ])
               }
             }
