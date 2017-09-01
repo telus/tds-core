@@ -11,7 +11,7 @@ The Heading component outputs an `h1` tag by default.
 - Be mindful of SEO and accessibility.
 - Be sure to organise headers in a nested order: h1, then h2, then h3.
 - Do **not** skip levels: h1, then h3.
-- For splash banners or hero overlays, use [Display Heading](#displayheading).
+- For hero overlays or promo blocks, use [Display Heading](#displayheading).
 
 ### Defining level
 
