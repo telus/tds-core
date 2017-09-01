@@ -1,15 +1,11 @@
 @import '../../../scss/settings/colours';
 @import '../../../scss/settings/typography';
 
-@mixin text--medium {
-  font-size: rem($body-medium-text-size);
-  line-height: $body-medium-line-height;
-  letter-spacing: -.8px;
-}
-
 .link {
-  @include text--medium;
+  @include telus-font-family;
   @include helvetica-neue-roman-55;
+
+  composes: medium from '../../Typography/Text/Text.modules.scss';
 
   &:hover {
     .rightChevron {

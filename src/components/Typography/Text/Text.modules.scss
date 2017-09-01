@@ -2,9 +2,14 @@
 @import '../../../scss/settings/typography';
 
 .baseScripts {
+  @include telus-font-family;
   position: relative;
   vertical-align: baseline;
   font-size: .875rem;
+}
+
+.fontFamily {
+  @include telus-font-family;
 }
 
 .sup {
@@ -33,6 +38,8 @@
 
 .smallFont {
   @include helvetica-neue-roman-55;
+
+  composes: fontFamily;
 }
 
 .medium {
@@ -43,6 +50,8 @@
 
 .mediumFont {
   @include helvetica-neue-light-45;
+
+  composes: fontFamily;
 }
 
 .large {
@@ -53,10 +62,14 @@
 
 .largeFont {
   @include helvetica-neue-light-45;
+
+  composes: fontFamily;
 }
 
 .boldFont {
   @include helvetica-neue-medium-65;
+
+  composes: fontFamily;
 }
 
 .color {

@@ -16,7 +16,6 @@ $button-text-color: $color-white;
 }
 
 .button {
-  @include helvetica-neue-medium-65;
 
   display: block;
   width: 100%;
@@ -28,8 +27,8 @@ $button-text-color: $color-white;
 
   transition: background .2s;
 
-  font-family: $font-telus;
-  font-size: 1rem;
+  composes: medium from '../Typography/Text/Text.modules.scss';
+  composes: boldFont from '../Typography/Text/Text.modules.scss';
   text-align: center;
 
   cursor: pointer;
