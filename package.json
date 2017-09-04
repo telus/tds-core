@@ -48,6 +48,7 @@
     "@telusdigital/redux-contentful": "^3.0.0",
     "autoprefixer": "^7.1.2",
     "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",

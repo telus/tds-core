@@ -2,6 +2,7 @@
   "extends": [
     "../node_modules/@telusdigital/eslint-config/.eslintrc"
   ],
+  "parser": "babel-eslint",
   "rules": {
     "react/require-default-props": "warn",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]

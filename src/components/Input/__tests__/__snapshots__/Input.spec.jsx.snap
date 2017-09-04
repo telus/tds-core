@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input renders 1`] = `
+<div>
+  <label
+    htmlFor="the-label"
+  >
+    The label
+  </label>
+  <input
+    id="the-label"
+    onChange={[Function]}
+    type="text"
+  />
+</div>
+`;
