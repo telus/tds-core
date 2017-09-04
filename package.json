@@ -28,7 +28,7 @@
     "precommit": "yarn lint && yarn test && yarn build",
     "release:changelog": "changelog",
     "release": "scripts/release.sh",
-    "scaffold": "scripts/scaffold.sh",
+    "scaffold": "node scripts/scaffold.js",
     "test:ci": "yarn run lint && yarn run test",
     "test:u": "yarn test -- -u",
     "test:watch": "yarn test -- --watch",
