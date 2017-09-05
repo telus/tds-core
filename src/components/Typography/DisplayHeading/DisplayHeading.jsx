@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import safeRest from '../../../safeRest'
 
+import DisplayHeadingSup from './DisplayHeadingSup/DisplayHeadingSup'
+import DisplayHeadingSub from './DisplayHeadingSub/DisplayHeadingSub'
+
 import styles from './DisplayHeading.modules.scss'
 
 const getClassName = invert => (
@@ -31,5 +34,8 @@ DisplayHeading.propTypes = {
 DisplayHeading.defaultProps = {
   invert: false
 }
+
+DisplayHeading.Sup = DisplayHeadingSup
+DisplayHeading.Sub = DisplayHeadingSub
 
 export default DisplayHeading

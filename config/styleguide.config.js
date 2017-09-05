@@ -180,6 +180,8 @@ module.exports = {
               components() {
                 return [
                   path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
+                  path.resolve('src/components/Typography/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'),
+                  path.resolve('src/components/Typography/DisplayHeading/DisplayHeadingSub/DisplayHeadingSub.jsx'),
                   path.resolve('src/components/Typography/Heading/Heading.jsx'),
                   path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx'),
                   path.resolve('src/components/Typography/Heading/HeadingSub/HeadingSub.jsx')
