@@ -55,11 +55,11 @@
   }
 
   .sup {
-    top: -.6em;
+    top: -1em;
   }
 
   .sub {
-    bottom: -.2em;
+    bottom: -.4em;
   }
 
   @include from-breakpoint(medium) {
@@ -69,7 +69,7 @@
     letter-spacing: 0;
 
     .sup {
-      top: -.9em;
+      top: -1.3em;
     }
 
   }
@@ -87,11 +87,11 @@
   }
 
   .sup {
-    top: -.5em;
+    top: -.8em;
   }
 
   .sub {
-    bottom: -.2em;
+    bottom: -.4em;
   }
 
   @include from-breakpoint(medium) {
@@ -100,7 +100,7 @@
     letter-spacing: -.8px;
 
     .sup {
-      top: -.6em;
+      top: -0.7em;
     }
   }
 }
@@ -120,7 +120,7 @@
   }
 
   .sub {
-    bottom: -.3em;
+    bottom: -.5em;
   }
 }
 
@@ -135,10 +135,10 @@
   }
 
   .sup {
-    top: -.2em;
+    top: -.5em;
   }
 
   .sub {
-    bottom: -.4em;
+    bottom: -.5em;
   }
 }
