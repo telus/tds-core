@@ -38,7 +38,17 @@ module.exports = {
       name = 'Text'
     }
 
-    return `import { ${name} } from '@telusdigital/tds';`
+    // DisplayHeading has name-spaced sub-components
+    if (path.dirname(componentPath).includes('Typography/DisplayHeading')) {
+      name = 'DisplayHeading'
+    }
+
+    // Heading has name-spaced sub-components
+    if (path.dirname(componentPath).includes('Typography/Heading')) {
+      name = 'Heading'
+    }
+
+    return `import { ${name} } from '@telusdigital/tds'`
   },
 
   showUsage: true,
