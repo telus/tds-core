@@ -15,10 +15,6 @@ $body-medium-line-height: 1.5; // 24px
 $body-small-text-size: 14px;
 $body-small-line-height: 1.71; // 24px
 
-@mixin telus-font-family {
-  font-family: $font-telus;
-}
-
 @mixin helvetica-neue-thin-35 {
   font-weight: 300;
 }

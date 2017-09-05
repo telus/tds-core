@@ -2,7 +2,6 @@
 @import '../../../scss/settings/typography';
 
 .link {
-  @include telus-font-family;
   @include helvetica-neue-roman-55;
 
   composes: medium from '../../Typography/Text/Text.modules.scss';

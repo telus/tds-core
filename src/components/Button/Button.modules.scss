@@ -27,6 +27,7 @@ $button-text-color: $color-white;
 
   transition: background .2s;
 
+  font-family: $font-telus;
   composes: medium from '../Typography/Text/Text.modules.scss';
   composes: boldFont from '../Typography/Text/Text.modules.scss';
   text-align: center;
