@@ -4,6 +4,9 @@ import safeRest from '../../../../safeRest'
 
 import styles from '../Heading.modules.scss'
 
+/**
+ * Subscript text for headings.
+ */
 const HeadingSub = ({ children, ...rest }) => (
   <sub {...safeRest(rest)} className={styles.sub}>{children}</sub>
 )
