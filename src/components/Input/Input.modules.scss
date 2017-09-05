@@ -1,0 +1,41 @@
+@import '../../scss/settings/colours';
+@import '../../scss/settings/typography';
+
+$form-field-border-radius: 4px;
+
+.label {
+  composes: medium boldFont from '../Typography/Text/Text.modules.scss';
+
+  display: block;
+  margin-bottom: 3px;
+
+  color: $color-text;
+}
+
+// TODO: All of these are being overridden by forms.scss :(
+.input {
+  width: 100%;
+  padding: 11px;
+
+  outline: 0;
+  border: 1px solid $color-shuttle-grey;
+  border-radius: $form-field-border-radius;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
+
+  font-family: $font-telus;
+
+  // TODO: Adjust the font properties to use the Text modules
+  font-size: rem($body-text-size);
+  letter-spacing: .4px;
+  line-height: 1.4;
+
+  color: $color-shark;
+  background-color: $color-white;
+
+  transition: background-color .1s linear;
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 4px 1px $color-shuttle-grey;
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import safeRest from '../../safeRest'
 
-// import styles from './Input.modules.scss'
+import styles from './Input.modules.scss'
 
 const textToId = text => text.toLowerCase().replace(/ /g, '-')
 
@@ -42,9 +42,9 @@ class Input extends React.Component {
 
     return (
       <div>
-        <label htmlFor={id}>{label}</label>
+        <label htmlFor={id} className={styles.label}>{label}</label>
         <input
-          {...safeRest(rest)} id={id} type={type}
+          {...safeRest(rest)} id={id} type={type} className={styles.input}
           value={this.state.value} onChange={this.onChange}
         />
       </div>

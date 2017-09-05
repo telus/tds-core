@@ -207,10 +207,11 @@ module.exports = {
         {
           name: 'Forms',
           components() {
-            return [
+            return compact([
               path.resolve('src/components/Button/Button.jsx'),
+              toggle(path.resolve('src/components/Input/Input.jsx')),
               path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx')
-            ]
+            ])
           }
         }
       ]

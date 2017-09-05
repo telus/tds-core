@@ -1,3 +1,3 @@
 ```
-<Input> Input </Input>
+<Input label="First name" />
 ```

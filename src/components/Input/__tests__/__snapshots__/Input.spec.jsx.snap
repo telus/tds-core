@@ -3,11 +3,13 @@
 exports[`Input renders 1`] = `
 <div>
   <label
+    className="label"
     htmlFor="the-label"
   >
     The label
   </label>
   <input
+    className="input"
     id="the-label"
     onChange={[Function]}
     type="text"
