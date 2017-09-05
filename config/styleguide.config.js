@@ -33,6 +33,11 @@ module.exports = {
       name = 'ExpandCollapse'
     }
 
+    // Text has name-spaced sub-components
+    if (path.dirname(componentPath).includes('Text')) {
+      name = 'Text'
+    }
+
     return `import { ${name} } from '@telusdigital/tds';`
   },
 

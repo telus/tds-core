@@ -6,7 +6,7 @@ import safeRest from '../../../../safeRest'
 import styles from '../Text.modules.scss'
 
 /**
- * Used for text that should be displayed higher than the main text (superscript).
+ * Text that should be displayed higher than the main text (superscript).
  */
 const TextSup = ({ children, ...rest }) => (
   <sup {...safeRest(rest)} className={styles.sup}>{children}</sup>

@@ -7,7 +7,7 @@ import styles from '../Text.modules.scss'
 
 
 /**
- * Used for text that should be displayed lower than the main text (subscript).
+ * Text that should be displayed lower than the main text (subscript).
  */
 const TextSub = ({ children, ...rest }) => (
   <sub {...safeRest(rest)} className={styles.sub}>{children}</sub>
