@@ -15,4 +15,6 @@ HeadingSub.propTypes = {
   children: PropTypes.string.isRequired
 }
 
+HeadingSub.displayName = 'Heading.Sub'
+
 export default HeadingSub

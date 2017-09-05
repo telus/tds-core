@@ -15,4 +15,6 @@ HeadingSup.propTypes = {
   children: PropTypes.string.isRequired
 }
 
+HeadingSup.displayName = 'Heading.Sup'
+
 export default HeadingSup

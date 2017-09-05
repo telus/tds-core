@@ -15,4 +15,6 @@ DisplayHeadingSup.propTypes = {
   children: PropTypes.string.isRequired
 }
 
+DisplayHeadingSup.displayName = 'DisplayHeading.Sup'
+
 export default DisplayHeadingSup
