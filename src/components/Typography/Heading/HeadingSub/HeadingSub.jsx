@@ -6,6 +6,9 @@ import styles from '../Heading.modules.scss'
 
 /**
  * Subscript text for headings.
+ *
+ * _This component can only be accessed as a name-spaced component: `Heading.Sub`._
+ *
  */
 const HeadingSub = ({ children, ...rest }) => (
   <sub {...safeRest(rest)} className={styles.sub}>{children}</sub>

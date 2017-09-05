@@ -6,6 +6,9 @@ import styles from '../Heading.modules.scss'
 
 /**
  * Superscript text for headings.
+ *
+ * _This component can only be accessed as a name-spaced component: `Heading.Sup`._
+ *
  */
 const HeadingSup = ({ children, ...rest }) => (
   <sup {...safeRest(rest)} className={styles.sup}>{children}</sup>
