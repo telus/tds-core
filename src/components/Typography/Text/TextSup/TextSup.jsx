@@ -19,7 +19,7 @@ const TextSup = ({ children, ...rest }) => (
 
 TextSup.propTypes = {
   /**
-   * Text
+   * The text.
    */
   children: PropTypes.node.isRequired
 }

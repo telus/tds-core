@@ -45,7 +45,7 @@ Text.propTypes = {
    */
   invert: PropTypes.bool,
   /**
-   * Text
+   * The text.
    */
   children: PropTypes.node.isRequired
 }

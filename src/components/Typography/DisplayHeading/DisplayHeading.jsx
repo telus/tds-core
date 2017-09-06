@@ -26,7 +26,7 @@ DisplayHeading.propTypes = {
    */
   invert: PropTypes.bool,
   /**
-   * The heading text.
+   * The text.
    */
   children: PropTypes.node.isRequired
 }

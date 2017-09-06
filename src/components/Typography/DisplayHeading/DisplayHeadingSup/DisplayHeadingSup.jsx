@@ -18,7 +18,7 @@ const DisplayHeadingSup = ({ children, ...rest }) => (
 
 DisplayHeadingSup.propTypes = {
   /**
-   * The text
+   * The text.
    */
   children: PropTypes.string.isRequired
 }

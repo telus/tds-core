@@ -18,7 +18,7 @@ const Small = ({ children, ...rest }) => (
 
 Small.propTypes = {
   /**
-   * The Text
+   * The text.
    */
   children: PropTypes.string.isRequired
 }
