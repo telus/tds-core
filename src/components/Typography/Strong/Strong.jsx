@@ -18,7 +18,7 @@ const Strong = ({ children, ...rest }) => (
 
 Strong.propTypes = {
   /**
-   * The text you wish to embolden
+   * The text
    */
   children: PropTypes.string.isRequired
 }

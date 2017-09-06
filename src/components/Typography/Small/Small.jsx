@@ -18,7 +18,7 @@ const Small = ({ children, ...rest }) => (
 
 Small.propTypes = {
   /**
-   * The text you wish to display in small print
+   * The Text
    */
   children: PropTypes.string.isRequired
 }

@@ -1,3 +1,4 @@
+** The typography CSS classes are deprecated and should not be used. Use the [Typography](#typography-1) components instead. **
 
 ## Overview
 

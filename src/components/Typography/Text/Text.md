@@ -9,7 +9,7 @@ The Text component can be used within other typography components such as [Parag
 ### Inherits props from Paragraph
 
 ```
-<Paragraph size="small"><Text size="small">Tell us what you think></Text>  It's in our nature to listen.</Paragraph>
+<Paragraph size="small"><Text>Tell us what you think</Text>  It's in our nature to listen.</Paragraph>
 ```
 
 ### Invert on dark colours
