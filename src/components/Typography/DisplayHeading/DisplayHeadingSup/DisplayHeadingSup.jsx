@@ -7,6 +7,8 @@ import styles from '../DisplayHeading.modules.scss'
 /**
  * Superscript text for headings.
  *
+ * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
+ *
  * _This component can only be accessed as a name-spaced component: `DisplayHeading.Sup`._
  *
  */
