@@ -6,7 +6,7 @@ import safeRest from '../../../safeRest'
 import styles from '../Text/Text.modules.scss'
 
 /**
- * The text you wish to display in small print
+ * Use for small print, including copyright and legal text
  *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
  */
