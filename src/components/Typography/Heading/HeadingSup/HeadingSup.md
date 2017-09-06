@@ -13,19 +13,11 @@ The Heading Sup component wraps text in a `<sup>` tag. It assures proper font si
     <Heading level="h3">Optik TV<Heading.Sup>®</Heading.Sup></Heading>
     <Heading level="h4">Optik TV<Heading.Sup>®</Heading.Sup></Heading>
   </div>
-
   <div>
     <Heading level="h1">TELUS Pik TV<Heading.Sup>&trade;</Heading.Sup></Heading>
     <Heading level="h2">TELUS Pik TV<Heading.Sup>&trade;</Heading.Sup></Heading>
     <Heading level="h3">TELUS Pik TV<Heading.Sup>&trade;</Heading.Sup></Heading>
     <Heading level="h4">TELUS Pik TV<Heading.Sup>&trade;</Heading.Sup></Heading>
-  </div>
-
-  <div>
-    <Heading level="h1">Beats Solo<Heading.Sup>3</Heading.Sup> Wireless Headphones</Heading>
-    <Heading level="h2">Beats Solo<Heading.Sup>3</Heading.Sup> Wireless Headphones</Heading>
-    <Heading level="h3">Beats Solo<Heading.Sup>3</Heading.Sup> Wireless Headphones</Heading>
-    <Heading level="h4">Beats Solo<Heading.Sup>3</Heading.Sup> Wireless Headphones</Heading>
   </div>
 </div>
 ```

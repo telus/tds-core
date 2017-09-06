@@ -5,6 +5,11 @@ import safeRest from '../../../safeRest'
 
 import styles from '../Text/Text.modules.scss'
 
+/**
+ * The text you wish to display in small print
+ *
+ * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
+ */
 const Small = ({ children, ...rest }) => (
   <small {...safeRest(rest)} className={`${styles.small} ${styles.smallFont}`}>
     {children}
@@ -12,6 +17,9 @@ const Small = ({ children, ...rest }) => (
 )
 
 Small.propTypes = {
+  /**
+   * The text you wish to display in small print
+   */
   children: PropTypes.string.isRequired
 }
 

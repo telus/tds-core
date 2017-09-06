@@ -3,18 +3,12 @@
 @import '../../../scss/settings/typography';
 @import '../../../scss/utility/responsive';
 
-.baseHeadingSupSubScripts {
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 .sup {
-  composes: baseHeadingSupSubScripts;
+  composes: baseSupSubScripts from '../Text/Text.modules.scss';
 }
 
 .sub {
-  composes: baseHeadingSupSubScripts;
+  composes: baseSupSubScripts from '../Text/Text.modules.scss';
 }
 
 .largeHeading {

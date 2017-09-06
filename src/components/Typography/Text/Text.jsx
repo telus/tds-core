@@ -7,6 +7,11 @@ import TextSub from './TextSub/TextSub'
 
 import styles from './Text.modules.scss'
 
+/**
+ * Use to style small print, including copyright and legal text
+ *
+ * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
+ */
 const Text = ({ bold, size, invert, children, ...rest }) => {
   const classes = `
     ${styles[size]}
