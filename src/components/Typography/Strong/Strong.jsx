@@ -5,6 +5,11 @@ import safeRest from '../../../safeRest'
 
 import styles from '../Text/Text.modules.scss'
 
+/**
+  * Use to give portions of a sentence added importance
+  *
+  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
+  */
 const Strong = ({ children, ...rest }) => (
   <strong {...safeRest(rest)} className={styles.boldFont}>
     {children}
