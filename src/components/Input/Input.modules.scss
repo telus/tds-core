@@ -1,26 +1,64 @@
 @import '../../scss/settings/colours';
 @import '../../scss/settings/typography';
 
-$form-field-border-radius: 4px;
+$border-radius: 4px; // TODO: rems?
 
 .label {
   composes: medium boldFont from '../Typography/Text/Text.modules.scss';
 
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 3px; // TODO: rems?
 
   color: $color-text;
 }
 
-// TODO: All of these are being overridden by forms.scss :(
-.input {
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  border: 1px solid;
+  border-radius: $border-radius;
+}
+
+.defaultBoxShadow {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
+}
+
+.default {
+  composes: inputWrapper defaultBoxShadow;
+
+  border-color: $color-shuttle-grey
+}
+
+.focused {
+  composes: inputWrapper;
+
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px $color-shuttle-grey;
+}
+
+.success {
+  composes: inputWrapper defaultBoxShadow;
+
+  border-color: $color-primary;
+}
+
+.error {
+  composes: inputWrapper defaultBoxShadow;
+
+  border-color: $color-cardinal;
+}
+
+// FIXME: Target the <input> element directly to beat the specificity of the global styles in forms.scss.
+// This can be removed when the global styles are purged.
+input.input {
   width: 100%;
-  padding: 11px;
+  padding: 11px; // TODO: rems?
 
   outline: 0;
-  border: 1px solid $color-shuttle-grey;
-  border-radius: $form-field-border-radius;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
+  border: 0;
+  border-radius: $border-radius;
 
   font-family: $font-telus;
 
@@ -32,10 +70,12 @@ $form-field-border-radius: 4px;
   color: $color-shark;
   background-color: $color-white;
 
-  transition: background-color .1s linear;
-
   &:focus {
-    border-color: transparent;
-    box-shadow: 0 0 4px 1px $color-shuttle-grey;
+    // FIXME: Override the global styles in forms.scss. This can be removed when the global styles are purged.
+    box-shadow: none;
   }
+}
+
+.icon {
+  padding: 0 1rem; // TODO: Get an actual value in here
 }

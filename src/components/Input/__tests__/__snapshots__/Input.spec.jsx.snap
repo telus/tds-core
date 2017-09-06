@@ -8,11 +8,19 @@ exports[`Input renders 1`] = `
   >
     The label
   </label>
-  <input
-    className="input"
-    id="the-label"
-    onChange={[Function]}
-    type="text"
-  />
+  <div
+    className="default"
+    data-inputwrapper={true}
+  >
+    <input
+      className="input"
+      id="the-label"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
 </div>
 `;
