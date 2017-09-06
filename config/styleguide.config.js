@@ -168,11 +168,11 @@ module.exports = {
         {
           name: 'Typography',
           components() {
-            return compact([
-              toggle(path.resolve('src/components/Typography/Paragraph/Paragraph.jsx')),
-              toggle(path.resolve('src/components/Typography/Strong/Strong.jsx')),
-              toggle(path.resolve('src/components/Typography/Small/Small.jsx'))
-            ])
+            return [
+              path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
+              path.resolve('src/components/Typography/Strong/Strong.jsx'),
+              path.resolve('src/components/Typography/Small/Small.jsx')
+            ]
           },
           sections: [
             {
