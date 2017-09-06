@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import safeRest from '../../safeRest'
 
+import Fade from './Fade'
 import Icon from '../../old-components/Icon/Icon'
+import safeRest from '../../safeRest'
 
 import styles from './Input.modules.scss'
 
@@ -28,17 +29,7 @@ const iconByFeedbackState = {
   success: 'checkmark',
   error: 'exclamation-point-circle'
 }
-const getIcon = (feedback, focused) => {
-  if (focused || !feedback) {
-    return null
-  }
-
-  return (
-    <span className={styles.icon}>
-      <Icon glyph={iconByFeedbackState[feedback]} aria-hidden="true" />
-    </span>
-  )
-}
+const showFeedbackIcon = (feedback, focused) => (feedback === 'success' || feedback === 'error') && !focused
 
 class Input extends React.Component {
   constructor(props) {
@@ -95,6 +86,7 @@ class Input extends React.Component {
 
     const id = rest.id || rest.name || textToId(label)
     const wrapperClassName = getWrapperClassName(feedback, this.state.focused, rest.disabled)
+    const showIcon = showFeedbackIcon(feedback, this.state.focused)
 
     return (
       <div>
@@ -106,7 +98,14 @@ class Input extends React.Component {
             value={this.state.value}
             onChange={this.onChange} onFocus={this.onFocus} onBlur={this.onBlur}
           />
-          {getIcon(feedback, this.state.focused)}
+
+          <Fade timeout={150} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
+            { () => (
+              <span className={styles.icon}>
+                <Icon glyph={iconByFeedbackState[feedback]} aria-hidden="true" />
+              </span>
+            )}
+          </Fade>
         </div>
       </div>
     )

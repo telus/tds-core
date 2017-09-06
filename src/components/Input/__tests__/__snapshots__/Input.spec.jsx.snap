@@ -3,24 +3,55 @@
 exports[`Input renders 1`] = `
 <div>
   <label
-    className="label"
-    htmlFor="the-label"
+    class="label"
+    for="the-label"
   >
     The label
   </label>
   <div
-    className="default"
-    data-inputwrapper={true}
+    class="default"
+    data-inputwrapper="true"
   >
     <input
-      className="input"
+      class="input"
       id="the-label"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
       type="text"
       value=""
     />
+  </div>
+</div>
+`;
+
+exports[`Input renders with a feedback state and icon 1`] = `
+<div>
+  <label
+    class="label"
+    for="the-label"
+  >
+    The label
+  </label>
+  <div
+    class="error"
+    data-inputwrapper="true"
+  >
+    <input
+      class="input"
+      id="the-label"
+      type="text"
+      value=""
+    />
+    <div
+      style="transition:opacity 150ms ease-in-out;opacity:1;"
+    >
+      <span
+        class="icon"
+      >
+        <i
+          aria-hidden="true"
+          class="icon icon-core-exclamation-point-circle"
+        />
+      </span>
+    </div>
   </div>
 </div>
 `;

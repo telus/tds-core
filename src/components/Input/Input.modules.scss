@@ -81,6 +81,10 @@ input.input {
   color: $color-shark;
   background-color: transparent;
 
+  // FIXME: Override the global styles in forms.scss. This can be removed when the global styles are purged.
+  box-shadow: none;
+  transition: none;
+
   &:focus {
     // FIXME: Override the global styles in forms.scss. This can be removed when the global styles are purged.
     box-shadow: none;

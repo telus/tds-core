@@ -1,8 +1,9 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import Icon from '../../../old-components/Icon/Icon'
+import Fade from '../Fade'
 import Input from '../Input'
 
 describe('Input', () => {
@@ -10,12 +11,19 @@ describe('Input', () => {
     label: 'The label'
   }
   const doShallow = (overrides = {}) => shallow(<Input {...defaultProps} {...overrides} />)
+  const doRender = (overrides = {}) => render(<Input {...defaultProps} {...overrides} />)
 
   const findInputElement = input => input.find('input')
   const findWrapperElement = input => input.find('[data-inputwrapper]')
 
   it('renders', () => {
-    const input = doShallow()
+    const input = doRender()
+
+    expect(toJson(input)).toMatchSnapshot()
+  })
+
+  it('renders with a feedback state and icon', () => {
+    const input = doRender({ feedback: 'error' })
 
     expect(toJson(input)).toMatchSnapshot()
   })
@@ -142,14 +150,14 @@ describe('Input', () => {
       const input = doShallow({ feedback: 'success' })
 
       expect(findWrapperElement(input)).toHaveClassName('success')
-      expect(input).toContainReact(<Icon glyph="checkmark" aria-hidden="true" />)
+      expect(input.find(Fade).dive().dive()).toContainReact(<Icon glyph="checkmark" aria-hidden="true" />)
     })
 
     it('can have an error feedback state', () => {
       const input = doShallow({ feedback: 'error' })
 
       expect(findWrapperElement(input)).toHaveClassName('error')
-      expect(input).toContainReact(<Icon glyph="exclamation-point-circle" aria-hidden="true" />)
+      expect(input.find(Fade).dive().dive()).toContainReact(<Icon glyph="exclamation-point-circle" aria-hidden="true" />)
     })
 
     it('hides the feedback state while focused', () => {
@@ -173,7 +181,6 @@ describe('Input', () => {
     expect(findInputElement(input)).toBeDisabled()
   })
 
-  // TODO: Transitions for showing/hiding the icons
   // TODO: it('can have a field helper')
 
   it('passes additional attributes to the input element', () => {
