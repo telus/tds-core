@@ -17,6 +17,9 @@ const HeadingSup = ({ children, ...rest }) => (
 )
 
 HeadingSup.propTypes = {
+  /**
+   * Text
+   */
   children: PropTypes.string.isRequired
 }
 
