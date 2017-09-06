@@ -6,16 +6,14 @@ The Text Sub component wraps text in a `<sub>` tag. It assures proper font sizes
 
 ```
 <div>
-  <Paragraph>
+  <div>
     <Text size="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna<Text.Sub>aliqua</Text.Sub>.</Text>
-  </Paragraph>
-
-  <Paragraph>
+  </div>
+  <div>
     <Text size="medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna<Text.Sub>aliqua</Text.Sub>.</Text>
-  </Paragraph>
-
-  <Paragraph>
+  </div>
+  <div>
     <Text size="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna<Text.Sub>aliqua</Text.Sub>.</Text>
-  </Paragraph>
+  </div>
 </div>
 ```
