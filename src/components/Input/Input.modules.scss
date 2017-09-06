@@ -1,13 +1,14 @@
 @import '../../scss/settings/colours';
 @import '../../scss/settings/typography';
+@import '../../scss/settings/spacing';
 
-$border-radius: 4px; // TODO: rems?
+$border-radius: 4px;
 
 .label {
   composes: medium boldFont from '../Typography/Text/Text.modules.scss';
 
   display: block;
-  margin-bottom: 3px; // TODO: rems?
+  margin-bottom: $spacing-x-tight;
 
   color: $color-text;
 }
@@ -24,28 +25,38 @@ $border-radius: 4px; // TODO: rems?
 .defaultBoxShadow {
   box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
 }
+.defaultBgColor {
+  background-color: $color-white;
+}
 
 .default {
-  composes: inputWrapper defaultBoxShadow;
+  composes: inputWrapper defaultBgColor defaultBoxShadow;
 
   border-color: $color-shuttle-grey
 }
 
+.disabled {
+  composes: inputWrapper defaultBoxShadow;
+
+  background-color: $color-athens-grey; //TODO: override
+  border-color: $color-shuttle-grey;
+}
+
 .focused {
-  composes: inputWrapper;
+  composes: inputWrapper defaultBgColor;
 
   border-color: transparent;
   box-shadow: 0 0 4px 1px $color-shuttle-grey;
 }
 
 .success {
-  composes: inputWrapper defaultBoxShadow;
+  composes: inputWrapper defaultBgColor defaultBoxShadow;
 
   border-color: $color-primary;
 }
 
 .error {
-  composes: inputWrapper defaultBoxShadow;
+  composes: inputWrapper defaultBgColor defaultBoxShadow;
 
   border-color: $color-cardinal;
 }
@@ -68,7 +79,7 @@ input.input {
   line-height: 1.4;
 
   color: $color-shark;
-  background-color: $color-white;
+  background-color: transparent;
 
   &:focus {
     // FIXME: Override the global styles in forms.scss. This can be removed when the global styles are purged.
@@ -77,5 +88,5 @@ input.input {
 }
 
 .icon {
-  padding: 0 1rem; // TODO: Get an actual value in here
+  padding: 0 $spacing-base;
 }

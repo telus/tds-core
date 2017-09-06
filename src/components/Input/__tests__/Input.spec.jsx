@@ -165,9 +165,11 @@ describe('Input', () => {
 
   it('can be disabled', () => {
     let input = doShallow()
+    expect(findWrapperElement(input)).not.toHaveClassName('disabled')
     expect(findInputElement(input)).not.toBeDisabled()
 
     input = doShallow({ disabled: true })
+    expect(findWrapperElement(input)).toHaveClassName('disabled')
     expect(findInputElement(input)).toBeDisabled()
   })
 

@@ -8,12 +8,20 @@ import styles from './Input.modules.scss'
 
 const textToId = text => text.toLowerCase().replace(/ /g, '-')
 
-const getClassName = (feedback, focused) => {
+const getWrapperClassName = (feedback, focused, disabled) => {
+  if (disabled) {
+    return styles.disabled
+  }
+
   if (focused) {
     return styles.focused
   }
 
-  return feedback ? styles[feedback] : styles.default
+  if (feedback) {
+    return styles[feedback]
+  }
+
+  return styles.default
 }
 
 const iconByFeedbackState = {
@@ -86,12 +94,13 @@ class Input extends React.Component {
     const { type, label, feedback, ...rest } = this.props
 
     const id = rest.id || rest.name || textToId(label)
+    const wrapperClassName = getWrapperClassName(feedback, this.state.focused, rest.disabled)
 
     return (
       <div>
         <label htmlFor={id} className={styles.label}>{label}</label>
 
-        <div className={getClassName(feedback, this.state.focused)} data-inputwrapper>
+        <div className={wrapperClassName} data-inputwrapper>
           <input
             {...safeRest(rest)} id={id} type={type} className={styles.input}
             value={this.state.value}
