@@ -1,3 +1,5 @@
+![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)
+
 **The button CSS classes are deprecated and should not be used. Use the [Button](#button) component instead.**
 
 ## Overview

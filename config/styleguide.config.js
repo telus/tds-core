@@ -284,6 +284,7 @@ module.exports = {
     color: {
       link: '#4B286D',
       linkHover: '#54595F'
-    }
+    },
+    sidebarWidth: 240
   }
 }
