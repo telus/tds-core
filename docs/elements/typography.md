@@ -1,4 +1,4 @@
-![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)
+<span class="docs--badge cardinal">deprecated</span>
 
 ** The typography CSS classes are deprecated and should not be used. Use the [Typography](#typography-1) components instead. **
 

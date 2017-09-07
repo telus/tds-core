@@ -1,6 +1,6 @@
-![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)
+<span class="docs--badge cardinal">deprecated</span>
 
-**The link CSS classes are deprecated and should not be used. Use the [Link](#link) component instead.**
+**The link CSS classes are deprecated and should not be used. Use the [Links](#links-1) component instead.**
 
 ## Text links
 
