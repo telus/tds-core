@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrderedList /> renders 1`] = `
+<ol
+  className="
+    base
+    number
+    medium
+  "
+>
+  &lt;li&gt;One&lt;/li&gt;&lt;li&gt;Two&lt;/li&gt;
+</ol>
+`;

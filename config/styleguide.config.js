@@ -48,6 +48,11 @@ module.exports = {
       name = 'Heading'
     }
 
+    // OrderedList has name-spaced sub-components
+    if (path.dirname(componentPath).includes('OrderedList')) {
+      name = 'OrderedList'
+    }
+
     return `import { ${name} } from '@telusdigital/tds'`
   },
 
@@ -140,7 +145,9 @@ module.exports = {
           name: 'Content',
           components() {
             return compact([
-              path.resolve('src/old-components/Card/Card.jsx')
+              path.resolve('src/old-components/Card/Card.jsx'),
+              toggle(path.resolve('src/components/OrderedList/OrderedList.jsx')),
+              toggle(path.resolve('src/components/OrderedList/OrderedItem/OrderedItem.jsx'))
             ])
           },
           sections: [

@@ -1,0 +1,24 @@
+.base {
+  padding-left: 40px;
+  list-style: none;
+}
+
+.number {
+  list-style-type: decimal;
+}
+
+.capital {
+  list-style-type: upper-alpha;
+}
+
+.lowercase {
+  list-style-type: lower-alpha;
+}
+
+.medium {
+  composes: medium from '../Typography/Text/Text.modules.scss'
+}
+
+.large {
+  composes: large from '../Typography/Text/Text.modules.scss'
+}
