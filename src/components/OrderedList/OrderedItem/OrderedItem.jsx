@@ -16,6 +16,6 @@ OrderedItem.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-OrderedItem.displaName = 'OrderedList.Item'
+OrderedItem.displayName = 'OrderedList.Item'
 
 export default OrderedItem

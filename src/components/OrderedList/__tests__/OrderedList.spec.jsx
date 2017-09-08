@@ -16,7 +16,7 @@ describe('<OrderedList />', () => {
     expect(toJson(orderedList)).toMatchSnapshot()
   })
 
-  it('renders an HTML ul tag', () => {
+  it('renders an HTML ol tag', () => {
     const orderedList = doShallow()
 
     expect(orderedList).toHaveTagName('ol')

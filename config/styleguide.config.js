@@ -145,9 +145,7 @@ module.exports = {
           name: 'Content',
           components() {
             return compact([
-              path.resolve('src/old-components/Card/Card.jsx'),
-              toggle(path.resolve('src/components/OrderedList/OrderedList.jsx')),
-              toggle(path.resolve('src/components/OrderedList/OrderedItem/OrderedItem.jsx'))
+              path.resolve('src/old-components/Card/Card.jsx')
             ])
           },
           sections: [
@@ -159,6 +157,15 @@ module.exports = {
                   path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx'),
                   path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx')
                 ]
+              }
+            },
+            {
+              name: 'Lists',
+              components() {
+                return compact([
+                  toggle(path.resolve('src/components/OrderedList/OrderedList.jsx')),
+                  toggle(path.resolve('src/components/OrderedList/OrderedItem/OrderedItem.jsx'))
+                ])
               }
             },
             {
@@ -174,22 +181,18 @@ module.exports = {
         },
         {
           name: 'Typography',
-          components() {
-            return [
-              path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
-              path.resolve('src/components/Typography/Strong/Strong.jsx'),
-              path.resolve('src/components/Typography/Small/Small.jsx')
-            ]
-          },
           sections: [
             {
               name: 'Text',
               components() {
                 return [
+                  path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
                   path.resolve('src/components/Typography/Text/Text.jsx'),
-                  path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx')
+                  path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
 // Hiding Text subscripts until we identify a concrete use for them
-// path.resolve('src/components/Typography/Text/TextSub/TextSub.jsx')
+// path.resolve('src/components/Typography/Text/TextSub/TextSub.jsx'),
+                  path.resolve('src/components/Typography/Strong/Strong.jsx'),
+                  path.resolve('src/components/Typography/Small/Small.jsx')
                 ]
               }
             },

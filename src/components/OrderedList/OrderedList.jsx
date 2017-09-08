@@ -28,10 +28,16 @@ OrderedList.propTypes = {
     'capital',
     'lowercase'
   ]),
+  /**
+   * The font size
+   */
   size: PropTypes.oneOf([
     'medium',
     'large'
   ]),
+  /**
+   * The list items
+   */
   children: PropTypes.node.isRequired
 }
 
