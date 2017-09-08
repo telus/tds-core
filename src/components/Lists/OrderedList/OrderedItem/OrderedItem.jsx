@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../safeRest'
+import safeRest from '../../../../safeRest'
 
 const OrderedItem = ({ children, ...rest }) => (
   <li {...safeRest(rest)}>

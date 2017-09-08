@@ -163,8 +163,8 @@ module.exports = {
               name: 'Lists',
               components() {
                 return compact([
-                  toggle(path.resolve('src/components/OrderedList/OrderedList.jsx')),
-                  toggle(path.resolve('src/components/OrderedList/OrderedItem/OrderedItem.jsx'))
+                  toggle(path.resolve('src/components/Lists/OrderedList/OrderedList.jsx')),
+                  toggle(path.resolve('src/components/Lists/OrderedList/OrderedItem/OrderedItem.jsx'))
                 ])
               }
             },

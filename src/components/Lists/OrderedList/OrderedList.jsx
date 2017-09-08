@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../safeRest'
+import safeRest from '../../../safeRest'
 import OrderedItem from './OrderedItem/OrderedItem'
 
 import styles from './OrderedList.modules.scss'

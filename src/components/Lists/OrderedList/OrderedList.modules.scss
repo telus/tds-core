@@ -16,9 +16,9 @@
 }
 
 .medium {
-  composes: medium from '../Typography/Text/Text.modules.scss'
+  composes: medium from '../../Typography/Text/Text.modules.scss'
 }
 
 .large {
-  composes: large from '../Typography/Text/Text.modules.scss'
+  composes: large from '../../Typography/Text/Text.modules.scss'
 }
