@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UnorderedList /> renders 1`] = `
+<ul
+  className="
+    base
+    bullet
+  "
+>
+  &lt;li&gt;One&lt;/li&gt;&lt;li&gt;Two&lt;/li&gt;
+</ul>
+`;
