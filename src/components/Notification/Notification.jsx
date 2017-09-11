@@ -9,6 +9,7 @@ import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextPr
 import Paragraph from '../Typography/Paragraph/Paragraph'
 
 import flexboxStyles from '../Flexbox.modules.scss'
+import messagingStyles from '../Messaging.modules.scss'
 import styles from './Notification.modules.scss'
 
 const { Container, Row, Column } = Grid
@@ -35,7 +36,7 @@ const renderContent = (variant, children) => {
 
   if (variant === 'error') {
     return (
-      <ColoredTextProvider colorClassName={styles.errorText}>
+      <ColoredTextProvider colorClassName={messagingStyles.errorText}>
         {content}
       </ColoredTextProvider>
     )

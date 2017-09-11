@@ -7,8 +7,7 @@
 
 .instructional {
   composes: base;
-
-  background-color: $color-athens-grey;
+  composes: default from '../Messaging.modules.scss';
 }
 
 .branded {
@@ -19,21 +18,15 @@
 
 .success {
   composes: base;
-
-  background-color: $color-panache;
+  composes: success from '../Messaging.modules.scss';
 }
 
 .error {
   composes: base;
-
-  background-color: $color-lavender-blush;
+  composes: error from '../Messaging.modules.scss';
 }
 
 .icon {
   margin-right: $spacing-base;
   line-height: 1;
-}
-
-.errorText {
-  color: $color-cardinal;
 }

@@ -5,29 +5,19 @@
   composes: rounded from '../../Borders.modules.scss';
 
   padding: $spacing-base;
-
-  // transition: background-color .1s linear; TODO: Why?
 }
 
 .default {
   composes: base;
-
-  background: $color-athens-grey;
+  composes: default from '../../Messaging.modules.scss';
 }
 
 .success {
   composes: base;
-
-  background: $color-panache;
+  composes: success from '../../Messaging.modules.scss';
 }
 
 .error {
   composes: base;
-
-  background-color: $color-lavender-blush;
-}
-
-// TODO: This is duplicated in Notification...
-.errorText {
-  color: $color-cardinal;
+  composes: error from '../../Messaging.modules.scss';
 }

@@ -1,0 +1,17 @@
+@import '../scss/settings/colours';
+
+.default {
+  background-color: $color-athens-grey;
+}
+
+.success {
+  background-color: $color-panache;
+}
+
+.error {
+  background-color: $color-lavender-blush;
+}
+
+.errorText {
+  color: $color-cardinal;
+}

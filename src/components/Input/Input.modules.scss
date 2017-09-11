@@ -2,9 +2,6 @@
 @import '../../scss/settings/typography';
 @import '../../scss/settings/spacing';
 
-// TODO: Bring over the responsive styles
-// TODO: Bring over/globalize the browser specific styles for the pseudo elements/placeholders
-
 .inputWrapper {
   composes: thin rounded from '../Borders.modules.scss';
 
