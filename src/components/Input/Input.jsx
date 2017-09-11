@@ -129,14 +129,33 @@ class Input extends React.Component {
 }
 
 Input.propTypes = {
+  /**
+   * The HTML5 type of the input field.
+   */
   type: PropTypes.oneOf(['text', 'number', 'password']), // TODO: finish this list
+  /**
+   * The label.
+   */
   label: PropTypes.string.isRequired,
+  /**
+   * The value.
+   */
   value: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number
   ]),
+  /**
+   * A feedback state.
+   */
   feedback: PropTypes.oneOf(['success', 'error']),
+  /**
+   * An error message.
+   */
   error: PropTypes.string,
+  /**
+   * A detailed explanation of the input expected by a form field. Must be a
+   * `Input.Helper` component.
+   */
   /* eslint-disable consistent-return */
   helper: (props, propName, componentName) => {
     const prop = props[propName]
@@ -152,8 +171,23 @@ Input.propTypes = {
     }
   },
   /* eslint-enable consistent-return */
+  /**
+   * A callback function to be invoked when the input value changes.
+   *
+   * @param {SyntheticEvent} event The react `SyntheticEvent`
+   */
   onChange: PropTypes.func,
+  /**
+   * A callback function to be invoked when the input receives focus.
+   *
+   * @param {SyntheticEvent} event The react `SyntheticEvent`
+   */
   onFocus: PropTypes.func,
+  /**
+   * A callback function to be invoked when the input loses focus.
+   *
+   * @param {SyntheticEvent} event The react `SyntheticEvent`
+   */
   onBlur: PropTypes.func
 }
 
