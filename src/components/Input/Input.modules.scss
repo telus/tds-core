@@ -7,12 +7,6 @@ $border-radius: 4px;
 // TODO: Bring over the responsive styles
 // TODO: Bring over/globalize the browser specific styles for the pseudo elements/placeholders
 
-.label {
-  display: block;
-
-  margin-bottom: $spacing-x-tight;
-}
-
 .inputWrapper {
   display: flex;
   flex-direction: row;

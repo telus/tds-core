@@ -1,0 +1,18 @@
+@import '../../../scss/settings/spacing';
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.evenMarginBottom-1 {
+  composes: flexColumn;
+
+  > * {
+    margin-bottom: $spacing-x-tight;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input renders 1`] = `
-<div>
+<div
+  class="evenMarginBottom-1"
+>
   <label
-    class="label"
     for="the-input"
   >
     <span
@@ -32,9 +33,10 @@ exports[`Input renders 1`] = `
 `;
 
 exports[`Input renders with a feedback state and icon 1`] = `
-<div>
+<div
+  class="evenMarginBottom-1"
+>
   <label
-    class="label"
     for="the-input"
   >
     <span

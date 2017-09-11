@@ -3,9 +3,11 @@ import PropTypes from 'prop-types'
 
 import Icon from '../../old-components/Icon/Icon'
 import Text from '../Typography/Text/Text'
-import safeRest from '../../safeRest'
+import WithSpacing from './WithSpacing/WithSpacing'
 import Helper from './Helper/Helper'
 import Fade from './Fade'
+
+import safeRest from '../../safeRest'
 import generateId from './generateId'
 
 import styles from './Input.modules.scss'
@@ -94,8 +96,8 @@ class Input extends React.Component {
     const showIcon = showFeedbackIcon(feedback, this.state.focused)
 
     return (
-      <div>
-        <label htmlFor={inputId.identity()} className={styles.label}>
+      <WithSpacing amount={1}>
+        <label htmlFor={inputId.identity()}>
           <Text size="medium" bold>{label}</Text>
         </label>
 
@@ -121,7 +123,7 @@ class Input extends React.Component {
             )}
           </Fade>
         </div>
-      </div>
+      </WithSpacing>
     )
   }
 }
