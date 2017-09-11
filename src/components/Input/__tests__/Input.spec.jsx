@@ -10,7 +10,7 @@ import Helper from '../Helper/Helper'
 
 describe('Input', () => {
   const defaultProps = {
-    label: 'The label'
+    label: 'The input'
   }
   const doShallow = (overrides = {}) => shallow(<Input {...defaultProps} {...overrides} />)
   const doRender = (overrides = {}) => render(<Input {...defaultProps} {...overrides} />)
@@ -193,17 +193,17 @@ describe('Input', () => {
   })
 
   it('can have an error message', () => {
-    const input = doShallow({ error: 'Oh no a terrible error!' })
+    const input = doShallow({ id: 'some-id', error: 'Oh no a terrible error!' })
 
-    expect(input).toContainReact(<Helper feedback="error">Oh no a terrible error!</Helper>)
+    expect(input).toContainReact(<Helper id="some-id_error-message" feedback="error">Oh no a terrible error!</Helper>)
   })
 
   describe('helpers', () => {
     it('can have a helper', () => {
       const helper = <Input.Helper>Some helper text.</Input.Helper>
-      const input = doShallow({ helper })
+      const input = doShallow({ id: 'some-id', helper })
 
-      expect(input).toContainReact(helper)
+      expect(input).toContainReact(<Input.Helper id="some-id_helper">Some helper text.</Input.Helper>)
     })
 
     it('styles itself based on the input feedback state', () => {
@@ -232,7 +232,41 @@ describe('Input', () => {
   })
 
   describe('accessibility', () => {
-    it('marks the input as invalid when in the error feedback state')
-    it('connects the error message to the input field for screen readers')
+    it('marks the input as invalid when in the error feedback state', () => {
+      let input = doShallow()
+      expect(findInputElement(input)).toHaveProp('aria-invalid', 'false')
+
+      input = doShallow({ feedback: 'error' })
+      expect(findInputElement(input)).toHaveProp('aria-invalid', 'true')
+    })
+
+    it('does not attach aria-describedby to the input field when no error or helper is present', () => {
+      const input = doShallow({ error: undefined, helper: undefined })
+
+      expect(findInputElement(input)).toHaveProp('aria-describedby', undefined)
+    })
+
+    it('connects the error message to the input field for screen readers', () => {
+      const input = doShallow({ id: 'some-field-id', error: 'An error message' })
+
+      expect(findInputElement(input)).toHaveProp('aria-describedby', 'some-field-id_error-message')
+      expect(input.find(Helper)).toHaveProp('id', 'some-field-id_error-message')
+    })
+
+    it('connects the helper to the input field for screen readers', () => {
+      const helper = <Input.Helper>Some helper text.</Input.Helper>
+      const input = doShallow({ id: 'some-field-id', helper })
+
+      expect(findInputElement(input)).toHaveProp('aria-describedby', 'some-field-id_helper')
+      expect(input.find(Helper)).toHaveProp('id', 'some-field-id_helper')
+    })
+
+    it('uses the helpers id if it already has one to connect it to the input field for screen readers', () => {
+      const helper = <Input.Helper id="custom-helper-id">Some helper text.</Input.Helper>
+      const input = doShallow({ helper })
+
+      expect(findInputElement(input)).toHaveProp('aria-describedby', 'custom-helper-id')
+      expect(input.find(Helper)).toHaveProp('id', 'custom-helper-id')
+    })
   })
 })

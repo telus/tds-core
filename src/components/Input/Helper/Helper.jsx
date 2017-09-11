@@ -9,7 +9,7 @@ import styles from './Helper.modules.scss'
 
 const getClassName = feedback => (feedback ? styles[feedback] : styles.default)
 
-const getContent = (feedback, children) => {
+const renderContent = (feedback, children) => {
   const content = (
     <Paragraph>
       {children}
@@ -29,7 +29,7 @@ const getContent = (feedback, children) => {
 
 const Helper = ({ feedback, children, ...rest }) => (
   <div {...safeRest(rest)} className={getClassName(feedback)}>
-    {getContent(feedback, children)}
+    {renderContent(feedback, children)}
   </div>
 )
 Helper.propTypes = {

@@ -4,7 +4,7 @@ exports[`Input renders 1`] = `
 <div>
   <label
     class="label"
-    for="the-label"
+    for="the-input"
   >
     <span
       class="
@@ -13,7 +13,7 @@ exports[`Input renders 1`] = `
         color
       "
     >
-      The label
+      The input
     </span>
   </label>
   <div
@@ -21,8 +21,9 @@ exports[`Input renders 1`] = `
     data-testid="inputWrapper"
   >
     <input
+      aria-invalid="false"
       class="input"
-      id="the-label"
+      id="the-input"
       type="text"
       value=""
     />
@@ -34,7 +35,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
 <div>
   <label
     class="label"
-    for="the-label"
+    for="the-input"
   >
     <span
       class="
@@ -43,7 +44,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
         color
       "
     >
-      The label
+      The input
     </span>
   </label>
   <div
@@ -51,8 +52,9 @@ exports[`Input renders with a feedback state and icon 1`] = `
     data-testid="inputWrapper"
   >
     <input
+      aria-invalid="true"
       class="input"
-      id="the-label"
+      id="the-input"
       type="text"
       value=""
     />

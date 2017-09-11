@@ -6,10 +6,9 @@ import Text from '../Typography/Text/Text'
 import safeRest from '../../safeRest'
 import Helper from './Helper/Helper'
 import Fade from './Fade'
+import generateId from './generateId'
 
 import styles from './Input.modules.scss'
-
-const textToId = text => text.toLowerCase().replace(/ /g, '-')
 
 const getWrapperClassName = (feedback, focused, disabled) => {
   if (disabled) {
@@ -86,25 +85,32 @@ class Input extends React.Component {
   render() {
     const { type, label, feedback, error, helper, ...rest } = this.props
 
-    const id = rest.id || rest.name || textToId(label)
+    const inputId = generateId(rest.id, rest.name, label)
+    const helperId = helper && (helper.props.id || inputId.postfix('helper'))
+    const errorId = error && inputId.postfix('error-message')
+
     const wrapperClassName = getWrapperClassName(feedback, this.state.focused, rest.disabled)
+
     const showIcon = showFeedbackIcon(feedback, this.state.focused)
 
     return (
       <div>
-        <label htmlFor={id} className={styles.label}>
+        <label htmlFor={inputId.identity()} className={styles.label}>
           <Text size="medium" bold>{label}</Text>
         </label>
 
-        { helper && React.cloneElement(helper, { feedback }) }
+        { helper && React.cloneElement(helper, { id: helperId, feedback }) }
 
-        { error && <Helper feedback="error">{error}</Helper> }
+        { error && <Helper id={errorId} feedback="error">{error}</Helper> }
 
         <div className={wrapperClassName} data-testID="inputWrapper">
           <input
-            {...safeRest(rest)} id={id} type={type} className={styles.input}
+            {...safeRest(rest)}
+            id={inputId.identity()} type={type} className={styles.input}
             value={this.state.value}
             onChange={this.onChange} onFocus={this.onFocus} onBlur={this.onBlur}
+            aria-invalid={feedback === 'error' ? 'true' : 'false'}
+            aria-describedby={errorId || helperId || undefined}
           />
 
           <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
