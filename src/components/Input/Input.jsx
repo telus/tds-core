@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Icon from '../../old-components/Icon/Icon'
-import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
-import Paragraph from '../Typography/Paragraph/Paragraph'
-import Fade from './Fade'
+import Text from '../Typography/Text/Text'
 import safeRest from '../../safeRest'
+import Helper from './Helper/Helper'
+import Fade from './Fade'
 
 import styles from './Input.modules.scss'
 
@@ -84,7 +84,7 @@ class Input extends React.Component {
   }
 
   render() {
-    const { type, label, feedback, error, ...rest } = this.props
+    const { type, label, feedback, error, helper, ...rest } = this.props
 
     const id = rest.id || rest.name || textToId(label)
     const wrapperClassName = getWrapperClassName(feedback, this.state.focused, rest.disabled)
@@ -92,15 +92,13 @@ class Input extends React.Component {
 
     return (
       <div>
-        <label htmlFor={id} className={styles.label}>{label}</label>
+        <label htmlFor={id} className={styles.label}>
+          <Text size="medium" bold>{label}</Text>
+        </label>
 
-        { error &&
-          <div className={styles.errorMessage}>
-            <ColoredTextProvider colorClassName={styles.errorText}>
-              <Paragraph>{error}</Paragraph>
-            </ColoredTextProvider>
-          </div>
-        }
+        { helper && React.cloneElement(helper, { feedback }) }
+
+        { error && <Helper feedback="error">{error}</Helper> }
 
         <div className={wrapperClassName} data-testID="inputWrapper">
           <input
@@ -131,6 +129,21 @@ Input.propTypes = {
   ]),
   feedback: PropTypes.oneOf(['success', 'error']),
   error: PropTypes.string,
+  /* eslint-disable consistent-return */
+  helper: (props, propName, componentName) => {
+    const prop = props[propName]
+
+    if (!prop) {
+      return
+    }
+
+    if (prop.type !== Helper) {
+      return new Error(
+        `Unsupported value for \`helper\` on \`${componentName}\` component. Must be a \`Helper\` component.`
+      )
+    }
+  },
+  /* eslint-enable consistent-return */
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func
@@ -141,9 +154,12 @@ Input.defaultProps = {
   value: '',
   feedback: undefined,
   error: undefined,
+  helper: undefined,
   onChange: undefined,
   onFocus: undefined,
   onBlur: undefined
 }
+
+Input.Helper = Helper
 
 export default Input

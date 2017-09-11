@@ -1,0 +1,36 @@
+@import '../../../scss/settings/colours';
+@import '../../../scss/settings/spacing';
+
+$border-radius: 4px;
+
+.base {
+  padding: $spacing-base;
+  margin-bottom: $spacing-tight; // TODO: This should be moved up to be consistent with form field spacing
+
+  border-radius: $border-radius;
+
+  // transition: background-color .1s linear; TODO: Why?
+}
+
+.default {
+  composes: base;
+
+  background: $color-athens-grey;
+}
+
+.success {
+  composes: base;
+
+  background: $color-panache;
+}
+
+.error {
+  composes: base;
+
+  background-color: $color-lavender-blush;
+}
+
+// TODO: This is duplicated in Notification...
+.errorText {
+  color: $color-cardinal;
+}

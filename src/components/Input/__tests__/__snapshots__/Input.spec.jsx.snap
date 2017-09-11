@@ -6,7 +6,15 @@ exports[`Input renders 1`] = `
     class="label"
     for="the-label"
   >
-    The label
+    <span
+      class="
+        medium
+        boldFont
+        color
+      "
+    >
+      The label
+    </span>
   </label>
   <div
     class="default"
@@ -28,7 +36,15 @@ exports[`Input renders with a feedback state and icon 1`] = `
     class="label"
     for="the-label"
   >
-    The label
+    <span
+      class="
+        medium
+        boldFont
+        color
+      "
+    >
+      The label
+    </span>
   </label>
   <div
     class="error"

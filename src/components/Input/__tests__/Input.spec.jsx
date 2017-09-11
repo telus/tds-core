@@ -3,10 +3,10 @@ import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import Icon from '../../../old-components/Icon/Icon'
-import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
-import Paragraph from '../../Typography/Paragraph/Paragraph'
+import Text from '../../Typography/Text/Text'
 import Fade from '../Fade'
 import Input from '../Input'
+import Helper from '../Helper/Helper'
 
 describe('Input', () => {
   const defaultProps = {
@@ -41,7 +41,7 @@ describe('Input', () => {
   it('must have a label', () => {
     const input = doShallow({ label: 'The label' })
 
-    expect(input.find('label')).toHaveText('The label')
+    expect(input.find('label')).toContainReact(<Text size="medium" bold>The label</Text>)
   })
 
   describe('connecting the label to the input', () => {
@@ -195,11 +195,26 @@ describe('Input', () => {
   it('can have an error message', () => {
     const input = doShallow({ error: 'Oh no a terrible error!' })
 
-    expect(input).toContainReact(
-      <ColoredTextProvider colorClassName="errorText">
-        <Paragraph>Oh no a terrible error!</Paragraph>
-      </ColoredTextProvider>
-    )
+    expect(input).toContainReact(<Helper feedback="error">Oh no a terrible error!</Helper>)
+  })
+
+  describe('helpers', () => {
+    it('can have a helper', () => {
+      const helper = <Input.Helper>Some helper text.</Input.Helper>
+      const input = doShallow({ helper })
+
+      expect(input).toContainReact(helper)
+    })
+
+    it('styles itself based on the input feedback state', () => {
+      const helper = <Input.Helper>Some helper text.</Input.Helper>
+
+      let input = doShallow({ feedback: 'success', helper })
+      expect(input.find(Input.Helper).dive()).toHaveClassName('success')
+
+      input = doShallow({ feedback: 'error', helper })
+      expect(input.find(Input.Helper).dive()).toHaveClassName('error')
+    })
   })
 
   it('passes additional attributes to the input element', () => {
