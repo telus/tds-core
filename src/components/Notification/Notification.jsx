@@ -8,6 +8,7 @@ import Icon from '../../old-components/Icon/Icon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 
+import flexboxStyles from '../Flexbox.modules.scss'
 import styles from './Notification.modules.scss'
 
 const { Container, Row, Column } = Grid
@@ -52,7 +53,7 @@ const Notification = ({ variant, children, ...rest }) => (
     <Container limitWidth>
       <Row>
         <Column xs={12}>
-          <div className={styles.flexRow}>
+          <div className={flexboxStyles.row}>
             {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
 
             {renderContent(variant, children)}

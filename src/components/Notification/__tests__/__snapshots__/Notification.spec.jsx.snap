@@ -12,7 +12,7 @@ exports[`<Notification /> renders 1`] = `
         xs={12}
       >
         <div
-          className="flexRow"
+          className="row"
         >
           <Paragraph
             align="left"

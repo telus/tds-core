@@ -8,8 +8,7 @@
 .inputWrapper {
   composes: thin rounded from '../Borders.modules.scss';
 
-  display: flex;
-  flex-direction: row;
+  composes: row from '../Flexbox.modules.scss';
   align-items: center;
 }
 
