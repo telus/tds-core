@@ -2,18 +2,15 @@
 @import '../../scss/settings/typography';
 @import '../../scss/settings/spacing';
 
-$border-radius: 4px;
-
 // TODO: Bring over the responsive styles
 // TODO: Bring over/globalize the browser specific styles for the pseudo elements/placeholders
 
 .inputWrapper {
+  composes: thin rounded from '../Borders.modules.scss';
+
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  border: 1px solid;
-  border-radius: $border-radius;
 }
 
 .defaultBoxShadow {
@@ -32,7 +29,7 @@ $border-radius: 4px;
 .disabled {
   composes: inputWrapper defaultBoxShadow;
 
-  background-color: $color-athens-grey; //TODO: override
+  background-color: $color-athens-grey;
   border-color: $color-shuttle-grey;
 }
 
@@ -62,8 +59,11 @@ input.input {
   padding: 11px; // TODO: rems?
 
   outline: 0;
+
+  // FIXME: Will be able to use composes when removing the targeting of the <input> element above
+  // composes: none rounded from '../Borders.modules.scss';
   border: 0;
-  border-radius: $border-radius;
+  border-radius: 4px;
 
   font-family: $font-telus;
 

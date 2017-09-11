@@ -16,20 +16,17 @@ $button-text-color: $color-white;
 }
 
 .button {
+  composes: none rounded from "../Borders.modules.scss";
 
   display: block;
   width: 100%;
 
   padding: $spacing-base $spacing-wide;
 
-  border: 0;
-  border-radius: 4px;
-
   transition: background .2s;
 
   font-family: $font-telus;
-  composes: medium from '../Typography/Text/Text.modules.scss';
-  composes: boldFont from '../Typography/Text/Text.modules.scss';
+  composes: medium boldFont from '../Typography/Text/Text.modules.scss';
   text-align: center;
 
   cursor: pointer;

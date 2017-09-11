@@ -1,12 +1,10 @@
 @import '../../../scss/settings/colours';
 @import '../../../scss/settings/spacing';
 
-$border-radius: 4px;
-
 .base {
-  padding: $spacing-base;
+  composes: rounded from '../../Borders.modules.scss';
 
-  border-radius: $border-radius;
+  padding: $spacing-base;
 
   // transition: background-color .1s linear; TODO: Why?
 }
