@@ -1,17 +1,22 @@
 .base {
   padding-left: 40px;
-  list-style: none;
 }
 
-.number {
+.decimal {
+  composes: base;
+
   list-style-type: decimal;
 }
 
-.capital {
+.upper-alpha {
+  composes: base;
+
   list-style-type: upper-alpha;
 }
 
-.lowercase {
+.lower-alpha {
+  composes: base;
+
   list-style-type: lower-alpha;
 }
 

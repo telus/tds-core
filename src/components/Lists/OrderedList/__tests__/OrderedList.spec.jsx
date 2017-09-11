@@ -22,12 +22,12 @@ describe('<OrderedList />', () => {
     expect(orderedList).toHaveTagName('ol')
   })
 
-  it('can have a variant', () => {
-    let orderedList = doShallow({ variant: undefined })
-    expect(orderedList).toHaveClassName('number')
+  it('can have a list style', () => {
+    let orderedList = doShallow({ listStyle: undefined })
+    expect(orderedList).toHaveClassName('decimal')
 
-    orderedList = doShallow({ variant: 'capital' })
-    expect(orderedList).toHaveClassName('capital')
+    orderedList = doShallow({ listStyle: 'upper-alpha' })
+    expect(orderedList).toHaveClassName('upper-alpha')
   })
 
 

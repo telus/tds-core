@@ -6,10 +6,9 @@ import OrderedItem from './OrderedItem/OrderedItem'
 
 import styles from './OrderedList.modules.scss'
 
-const OrderedList = ({ variant, size, children, ...rest }) => {
+const OrderedList = ({ listStyle, size, children, ...rest }) => {
   const classes = `
-    ${styles.base}
-    ${styles[variant]}
+    ${styles[listStyle]}
     ${styles[size]}
   `
   return (
@@ -23,10 +22,10 @@ OrderedList.propTypes = {
   /**
    * The type of list.
    */
-  variant: PropTypes.oneOf([
-    'number',
-    'capital',
-    'lowercase'
+  listStyle: PropTypes.oneOf([
+    'decimal',
+    'upper-alpha',
+    'lower-alpha'
   ]),
   /**
    * The font size
@@ -42,7 +41,7 @@ OrderedList.propTypes = {
 }
 
 OrderedList.defaultProps = {
-  variant: 'number',
+  listStyle: 'decimal',
   size: 'medium'
 }
 

@@ -3,8 +3,7 @@
 exports[`<OrderedList /> renders 1`] = `
 <ol
   className="
-    base
-    number
+    decimal
     medium
   "
 >
