@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Fade from './Fade'
 import Icon from '../../old-components/Icon/Icon'
+import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
+import Paragraph from '../Typography/Paragraph/Paragraph'
+import Fade from './Fade'
 import safeRest from '../../safeRest'
 
 import styles from './Input.modules.scss'
@@ -82,7 +84,7 @@ class Input extends React.Component {
   }
 
   render() {
-    const { type, label, feedback, ...rest } = this.props
+    const { type, label, feedback, error, ...rest } = this.props
 
     const id = rest.id || rest.name || textToId(label)
     const wrapperClassName = getWrapperClassName(feedback, this.state.focused, rest.disabled)
@@ -92,14 +94,22 @@ class Input extends React.Component {
       <div>
         <label htmlFor={id} className={styles.label}>{label}</label>
 
-        <div className={wrapperClassName} data-inputwrapper>
+        { error &&
+          <div className={styles.errorMessage}>
+            <ColoredTextProvider colorClassName={styles.errorText}>
+              <Paragraph>{error}</Paragraph>
+            </ColoredTextProvider>
+          </div>
+        }
+
+        <div className={wrapperClassName} data-testID="inputWrapper">
           <input
             {...safeRest(rest)} id={id} type={type} className={styles.input}
             value={this.state.value}
             onChange={this.onChange} onFocus={this.onFocus} onBlur={this.onBlur}
           />
 
-          <Fade timeout={150} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
+          <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
             { () => (
               <span className={styles.icon}>
                 <Icon glyph={iconByFeedbackState[feedback]} aria-hidden="true" />
@@ -120,6 +130,7 @@ Input.propTypes = {
     PropTypes.number
   ]),
   feedback: PropTypes.oneOf(['success', 'error']),
+  error: PropTypes.string,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func
@@ -129,6 +140,7 @@ Input.defaultProps = {
   type: 'text',
   value: '',
   feedback: undefined,
+  error: undefined,
   onChange: undefined,
   onFocus: undefined,
   onBlur: undefined

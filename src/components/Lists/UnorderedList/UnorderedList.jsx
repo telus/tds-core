@@ -8,7 +8,7 @@ import styles from './UnorderedList.modules.scss'
 
 const UnorderedList = ({ variant, children, ...rest }) => {
   const classes = `
-    ${styles['base']}
+    ${styles.base}
     ${styles[variant]}
   `
   return (

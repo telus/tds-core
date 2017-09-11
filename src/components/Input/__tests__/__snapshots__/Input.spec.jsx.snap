@@ -10,7 +10,7 @@ exports[`Input renders 1`] = `
   </label>
   <div
     class="default"
-    data-inputwrapper="true"
+    data-testid="inputWrapper"
   >
     <input
       class="input"
@@ -32,7 +32,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   </label>
   <div
     class="error"
-    data-inputwrapper="true"
+    data-testid="inputWrapper"
   >
     <input
       class="input"
@@ -41,7 +41,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
       value=""
     />
     <div
-      style="transition:opacity 150ms ease-in-out;opacity:1;"
+      style="transition:opacity 100ms ease-in-out;opacity:1;"
     >
       <span
         class="icon"

@@ -7,7 +7,6 @@ import Icon from '../../../../old-components/Icon/Icon'
 import styles from '../UnorderedList.modules.scss'
 
 const UnorderedItem = ({ variant, children, ...rest }) => {
-
   const iconClasses = `
     ${styles.fixedWidth}
     ${styles.icon}

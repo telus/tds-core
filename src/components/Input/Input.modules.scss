@@ -4,6 +4,9 @@
 
 $border-radius: 4px;
 
+// TODO: Bring over the responsive styles
+// TODO: Bring over/globalize the browser specific styles for the pseudo elements/placeholders
+
 .label {
   composes: medium boldFont from '../Typography/Text/Text.modules.scss';
 
@@ -93,4 +96,19 @@ input.input {
 
 .icon {
   padding: 0 $spacing-base;
+}
+
+.errorMessage {
+  padding: $spacing-base;
+  margin-bottom: $spacing-tight;
+
+  background-color: $color-lavender-blush;
+  border-radius: $border-radius;
+
+  // transition: background-color .1s linear; TODO: Why?
+}
+
+// TODO: This is duplicated in Notification...
+.errorText {
+  color: $color-cardinal;
 }

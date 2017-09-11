@@ -3,6 +3,8 @@ import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import Icon from '../../../old-components/Icon/Icon'
+import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
+import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../Fade'
 import Input from '../Input'
 
@@ -14,7 +16,7 @@ describe('Input', () => {
   const doRender = (overrides = {}) => render(<Input {...defaultProps} {...overrides} />)
 
   const findInputElement = input => input.find('input')
-  const findWrapperElement = input => input.find('[data-inputwrapper]')
+  const findWrapperElement = input => input.find('[data-testID="inputWrapper"]')
 
   it('renders', () => {
     const input = doRender()
@@ -169,6 +171,15 @@ describe('Input', () => {
       findInputElement(input).simulate('blur')
       expect(findWrapperElement(input)).toHaveClassName('success')
     })
+
+    it('fades the feedback icon in on focus lost and out on focus gained', () => {
+      const input = doShallow({ feedback: 'success' })
+
+      expect(input.find(Fade)).toHaveProp('in', true)
+
+      findInputElement(input).simulate('focus')
+      expect(input.find(Fade)).toHaveProp('in', false)
+    })
   })
 
   it('can be disabled', () => {
@@ -181,7 +192,15 @@ describe('Input', () => {
     expect(findInputElement(input)).toBeDisabled()
   })
 
-  // TODO: it('can have a field helper')
+  it('can have an error message', () => {
+    const input = doShallow({ error: 'Oh no a terrible error!' })
+
+    expect(input).toContainReact(
+      <ColoredTextProvider colorClassName="errorText">
+        <Paragraph>Oh no a terrible error!</Paragraph>
+      </ColoredTextProvider>
+    )
+  })
 
   it('passes additional attributes to the input element', () => {
     const input = doShallow({ name: 'a name', placeholder: 'a placeholder' })
@@ -195,5 +214,10 @@ describe('Input', () => {
 
     expect(findInputElement(input)).not.toHaveProp('className', 'my-custom-class')
     expect(findInputElement(input)).not.toHaveProp('style')
+  })
+
+  describe('accessibility', () => {
+    it('marks the input as invalid when in the error feedback state')
+    it('connects the error message to the input field for screen readers')
   })
 })
