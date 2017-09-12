@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
 import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
-import Paragraph from '../../Typography/Paragraph/Paragraph'
 
 import messagingStyles from '../../Messaging.modules.scss'
 import styles from './Helper.modules.scss'
@@ -11,21 +10,15 @@ import styles from './Helper.modules.scss'
 const getClassName = feedback => (feedback ? styles[feedback] : styles.default)
 
 const renderContent = (feedback, children) => {
-  const content = (
-    <Paragraph>
-      {children}
-    </Paragraph>
-  )
-
   if (feedback === 'error') {
     return (
       <ColoredTextProvider colorClassName={messagingStyles.errorText}>
-        {content}
+        {children}
       </ColoredTextProvider>
     )
   }
 
-  return content
+  return children
 }
 
 const Helper = ({ feedback, children, ...rest }) => (

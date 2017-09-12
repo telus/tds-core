@@ -3,7 +3,6 @@ import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import ColoredTextProvider from '../../../Typography/ColoredTextProvider/ColoredTextProvider'
-import Paragraph from '../../../Typography/Paragraph/Paragraph'
 
 import Helper from '../Helper'
 
@@ -33,9 +32,7 @@ describe('Helper', () => {
   it('does not color the success content', () => {
     const helper = doShallow({ feedback: 'success' }, 'A success message')
 
-    expect(helper).toContainReact(
-      <Paragraph>A success message</Paragraph>
-    )
+    expect(helper.find(ColoredTextProvider)).not.toBePresent()
   })
 
   it('colors the error content', () => {
@@ -43,7 +40,7 @@ describe('Helper', () => {
 
     expect(helper).toContainReact(
       <ColoredTextProvider colorClassName="errorText">
-        <Paragraph>An error message</Paragraph>
+        An error message
       </ColoredTextProvider>
     )
   })

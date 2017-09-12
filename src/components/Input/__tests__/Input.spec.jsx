@@ -4,6 +4,7 @@ import toJson from 'enzyme-to-json'
 
 import Icon from '../../../old-components/Icon/Icon'
 import Text from '../../Typography/Text/Text'
+import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../Fade'
 import Input from '../Input'
 import Helper from '../Helper/Helper'
@@ -195,25 +196,40 @@ describe('Input', () => {
   it('can have an error message', () => {
     const input = doShallow({ id: 'some-id', error: 'Oh no a terrible error!' })
 
-    expect(input).toContainReact(<Helper id="some-id_error-message" feedback="error">Oh no a terrible error!</Helper>)
+    expect(input).toContainReact(
+      <Helper id="some-id_error-message" feedback="error">
+        <Paragraph>Oh no a terrible error!</Paragraph>
+      </Helper>
+    )
   })
 
   describe('helpers', () => {
-    it('can have a helper', () => {
-      const helper = <Input.Helper>Some helper text.</Input.Helper>
+    it('can have a simple helper of some components', () => {
+      const helper = <Paragraph>Some helper text.</Paragraph>
       const input = doShallow({ id: 'some-id', helper })
 
-      expect(input).toContainReact(<Input.Helper id="some-id_helper">Some helper text.</Input.Helper>)
+      expect(input).toContainReact(
+        <Input.Helper id="some-id_helper">
+          <Paragraph>Some helper text.</Paragraph>
+        </Input.Helper>
+      )
     })
 
     it('styles itself based on the input feedback state', () => {
-      const helper = <Input.Helper>Some helper text.</Input.Helper>
+      const helper = <Paragraph>Some helper text.</Paragraph>
 
       let input = doShallow({ feedback: 'success', helper })
-      expect(input.find(Input.Helper).dive()).toHaveClassName('success')
+      expect(input.find(Helper)).toHaveProp('feedback', 'success')
 
       input = doShallow({ feedback: 'error', helper })
-      expect(input.find(Input.Helper).dive()).toHaveClassName('error')
+      expect(input.find(Helper)).toHaveProp('feedback', 'error')
+    })
+
+    it('can have a complex helper function to give control to the consumer', () => {
+      const helper = jest.fn()
+      doShallow({ id: 'some-id', value: 'current value', feedback: 'error', helper })
+
+      expect(helper).toHaveBeenCalledWith('error', 'current value')
     })
   })
 
@@ -253,20 +269,24 @@ describe('Input', () => {
       expect(input.find(Helper)).toHaveProp('id', 'some-field-id_error-message')
     })
 
-    it('connects the helper to the input field for screen readers', () => {
-      const helper = <Input.Helper>Some helper text.</Input.Helper>
+    it('connects a simple helper to the input field for screen readers', () => {
+      const helper = <Paragraph>Some helper text.</Paragraph>
       const input = doShallow({ id: 'some-field-id', helper })
 
       expect(findInputElement(input)).toHaveProp('aria-describedby', 'some-field-id_helper')
       expect(input.find(Helper)).toHaveProp('id', 'some-field-id_helper')
     })
 
-    it('uses the helpers id if it already has one to connect it to the input field for screen readers', () => {
-      const helper = <Input.Helper id="custom-helper-id">Some helper text.</Input.Helper>
-      const input = doShallow({ helper })
+    it('connects a complex helper to the input field for screen readers', () => {
+      const helper = () => <Helper>Complex helper</Helper>
+      const input = doShallow({ id: 'some-field-id', helper })
 
-      expect(findInputElement(input)).toHaveProp('aria-describedby', 'custom-helper-id')
-      expect(input.find(Helper)).toHaveProp('id', 'custom-helper-id')
+      expect(findInputElement(input)).toHaveProp('aria-describedby', 'some-field-id_helper')
+      expect(input).toContainReact(
+        <div id="some-field-id_helper">
+          <Helper>Complex helper</Helper>
+        </div>
+      )
     })
   })
 })

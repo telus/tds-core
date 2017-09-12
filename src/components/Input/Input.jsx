@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import Icon from '../../old-components/Icon/Icon'
 import Text from '../Typography/Text/Text'
+import Paragraph from '../Typography/Paragraph/Paragraph'
 import WithSpacing from './WithSpacing/WithSpacing'
 import Helper from './Helper/Helper'
 import Fade from './Fade'
@@ -84,11 +85,35 @@ class Input extends React.Component {
     }
   }
 
+  renderError(error, errorId) {
+    return (
+      <Helper id={errorId} feedback="error">
+        <Paragraph>{error}</Paragraph>
+      </Helper>
+    )
+  }
+
+  renderHelper(helper, helperId, feedback, value) {
+    if (typeof helper === 'function') {
+      return (
+        <div id={helperId}>
+          {helper(feedback, value)}
+        </div>
+      )
+    }
+
+    return (
+      <Helper id={helperId} feedback={feedback}>
+        {helper}
+      </Helper>
+    )
+  }
+
   render() {
     const { type, label, feedback, error, helper, ...rest } = this.props
 
     const inputId = generateId(rest.id, rest.name, label)
-    const helperId = helper && (helper.props.id || inputId.postfix('helper'))
+    const helperId = helper && inputId.postfix('helper')
     const errorId = error && inputId.postfix('error-message')
 
     const wrapperClassName = getWrapperClassName(feedback, this.state.focused, rest.disabled)
@@ -101,9 +126,9 @@ class Input extends React.Component {
           <Text size="medium" bold>{label}</Text>
         </label>
 
-        { helper && React.cloneElement(helper, { id: helperId, feedback }) }
+        { helper && this.renderHelper(helper, helperId, feedback, this.state.value) }
 
-        { error && <Helper id={errorId} feedback="error">{error}</Helper> }
+        { error && this.renderError(error, errorId) }
 
         <div className={wrapperClassName} data-testID="inputWrapper">
           <input
@@ -149,44 +174,36 @@ Input.propTypes = {
    */
   feedback: PropTypes.oneOf(['success', 'error']),
   /**
-   * An error message.
+   * An error message. Either an error or a helper should be used, not both.
    */
   error: PropTypes.string,
   /**
-   * A detailed explanation of the input expected by a form field. Must be a
-   * `Input.Helper` component.
+   * A detailed explanation of the input expected by a form field. Can be text,
+   * other components, or HTML elements.
+   *
+   * If a function is provided, it must return a "node". The function will be
+   * invoked with the following arguments.
+   *
+   * @param {String} feedback The input's current feedback state.
+   * @param {String} value The input's current value.
    */
-  /* eslint-disable consistent-return */
-  helper: (props, propName, componentName) => {
-    const prop = props[propName]
-
-    if (!prop) {
-      return
-    }
-
-    if (prop.type !== Helper) {
-      return new Error(
-        `Unsupported value for \`helper\` on \`${componentName}\` component. Must be a \`Helper\` component.`
-      )
-    }
-  },
-  /* eslint-enable consistent-return */
+  helper: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   /**
    * A callback function to be invoked when the input value changes.
    *
-   * @param {SyntheticEvent} event The react `SyntheticEvent`
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
    */
   onChange: PropTypes.func,
   /**
    * A callback function to be invoked when the input receives focus.
    *
-   * @param {SyntheticEvent} event The react `SyntheticEvent`
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
    */
   onFocus: PropTypes.func,
   /**
    * A callback function to be invoked when the input loses focus.
    *
-   * @param {SyntheticEvent} event The react `SyntheticEvent`
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
    */
   onBlur: PropTypes.func
 }

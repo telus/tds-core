@@ -25,8 +25,9 @@ was correct, or highlight errors that must be corrected.
 ```
 <div>
   <Input label="Username" value="guest12345" feedback="success" />
-  <Input label="Email" value="guest@telus.com" feedback="error"
-         error="That email is already associated with another account. Choose another one."
+  <Input
+    label="Email" value="guest@telus.com" feedback="error"
+    error="That email is already associated with another account. Choose another one."
   />
 </div>
 ```
@@ -66,9 +67,10 @@ const validate = (event) => {
 };
 
 <div>
-  <Input label="Name" value={state.value}
-         feedback={state.status} error={state.errorMessage}
-         onChange={updateValue} onBlur={validate}
+  <Input
+    label="Name" value={state.value}
+    feedback={state.status} error={state.errorMessage}
+    onChange={updateValue} onBlur={validate}
   />
 </div>
 ```
@@ -76,24 +78,20 @@ const validate = (event) => {
 ### Supplying extra information
 
 Use a `helper` to offer the user a detailed explanation of the input expected by a form field. Use the `Input.Helper`
-component.
+component, which can contain any content.
 
 ```
-const passwordRequirements = (
-  <Input.Helper>
-    <Text bold>Your password must be:</Text>
-
-    <ul className="list list--compact">
-      <li className="list__item">16 characters or longer</li>
-      <li className="list__item">Not repeated from previous password</li>
-    </ul>
-  </Input.Helper>
+const creditCards = (
+  <Paragraph>
+    We accept the following credit cards: <Text bold>Visa, Mastercard, Discover</Text>.
+  </Paragraph>
 );
 
-<Input label="Password" type="password" helper={passwordRequirements} />
+<Input label="Credit Card Number" helper={creditCards} />
 ```
 
-The helper will also receive the feedback state and will be styled accordingly in response to user input.
+The helper will also receive the feedback state and will be styled accordingly in response to user input. Use the
+typography components to ensure any color changes are inherited.
 
 Here is an example. Enter a value into the field below, then click away to lose focus. If you enter less than the 16
 character minimum the helper will show as an error. Enter 16 or more characters to receive the success feedback.
@@ -102,7 +100,6 @@ character minimum the helper will show as an error. Enter 16 or more characters 
 initialState = {
   value: '',
   status: undefined,
-  errorMessage: undefined
 }
 
 const updateValue = (event) => {
@@ -120,22 +117,33 @@ const validate = (event) => {
   }
 }
 
-const passwordRequirements = (
-  <Input.Helper>
-    <Text bold>Your password must be:</Text>
+const passwordRequirements = (feedback) => {
+  let listType
 
-    <ul className="list list--compact">
-      <li className="list__item">16 characters or longer</li>
-      <li className="list__item">Not repeated from previous password</li>
-    </ul>
-  </Input.Helper>
-);
+  switch(feedback) {
+    case 'success': listType = 'list--checked'; break;
+    case 'error': listType = 'list--error'; break;
+    default: listType = 'list--compact'
+  }
+
+  return (
+    <Input.Helper feedback={feedback}>
+      <Paragraph bold>Your password must be:</Paragraph>
+
+      <ul className={`list ${listType}`}>
+        <li className="list__item">16 characters or longer</li>
+        <li className="list__item">Not repeated from previous password</li>
+      </ul>
+    </Input.Helper>
+  );
+};
 
 <div>
-  <Input label="Password" type="password" id="password-2"
-         value={state.value} feedback={state.status}
-         onChange={updateValue} onBlur={validate}
-         helper={passwordRequirements}
+  <Input
+    label="Password" type="password" id="password-2"
+    value={state.value} feedback={state.status}
+    onChange={updateValue} onBlur={validate}
+    helper={passwordRequirements}
   />
 </div>
 ```
