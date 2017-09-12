@@ -355,6 +355,21 @@ aws-sdk@^2.1.4, aws-sdk@^2.2.4, aws-sdk@^2.6.12:
     xml2js "0.4.17"
     xmlbuilder "4.2.1"
 
+aws-sdk@^2.114.0:
+  version "2.114.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.114.0.tgz#35c919e8de1cfd96eda65cd8a6619973247bb737"
+  dependencies:
+    buffer "4.9.1"
+    crypto-browserify "1.0.9"
+    events "^1.1.1"
+    jmespath "0.15.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    uuid "3.0.1"
+    xml2js "0.4.17"
+    xmlbuilder "4.2.1"
+
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"

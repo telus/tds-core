@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
+// Usage: yarn scaffold <componentName>
+
+/* eslint-disable no-console */
+
 const { readFileSync, writeFileSync, mkdirSync } = require('fs')
 const { resolve } = require('path')
-
-// Usage: yarn scaffold <componentName>
 
 const componentName = process.argv[2]
 

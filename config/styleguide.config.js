@@ -1,5 +1,5 @@
 const path = require('path')
-const version = require('../package.json').version
+const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
