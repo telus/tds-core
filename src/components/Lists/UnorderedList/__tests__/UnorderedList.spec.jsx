@@ -22,11 +22,11 @@ describe('<UnorderedList />', () => {
     expect(unorderedList).toHaveTagName('ul')
   })
 
-  it('can have a variant', () => {
-    let unorderedList = doShallow({ variant: undefined })
-    expect(unorderedList).toHaveClassName('bullet')
-
-    unorderedList = doShallow({ variant: 'checkmark' })
-    expect(unorderedList).toHaveClassName('checkmark')
-  })
+  // it('can have a list style', () => {
+  //   let unorderedList = doShallow({ listStyle: undefined })
+  //   expect(unorderedList).toHaveClassName('bullet')
+  //
+  //   unorderedList = doShallow({ listStyle: 'checkmark' })
+  //   expect(unorderedList).toHaveClassName('checkmark')
+  // })
 })

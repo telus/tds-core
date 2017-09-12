@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
-import UnorderedItem from './UnorderedItem/UnorderedItem'
+import UnorderedItem from './UnorderedItem'
 
 import styles from './UnorderedList.modules.scss'
 

@@ -2,19 +2,29 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
-import OrderedItem from './OrderedItem/OrderedItem'
+import Text from '../../Typography/Text/Text'
+import OrderedItem from './OrderedItem'
 
 import styles from './OrderedList.modules.scss'
 
 const OrderedList = ({ listStyle, size, children, ...rest }) => {
   const classes = `
     ${styles[listStyle]}
-    ${styles[size]}
   `
+
+  const sizeChildren = child =>
+    React.cloneElement(child, {
+      size
+    })
+
+  const items = React.Children.map(children, sizeChildren)
+
   return (
-    <ol {...safeRest(rest)} className={classes}>
-      {children}
-    </ol>
+    <Text size={size}>
+      <ol {...safeRest(rest)} className={classes}>
+        {items}
+      </ol>
+    </Text>
   )
 }
 
@@ -31,6 +41,7 @@ OrderedList.propTypes = {
    * The font size
    */
   size: PropTypes.oneOf([
+    'base',
     'medium',
     'large'
   ]),
@@ -42,7 +53,7 @@ OrderedList.propTypes = {
 
 OrderedList.defaultProps = {
   listStyle: 'decimal',
-  size: 'medium'
+  size: 'base'
 }
 
 OrderedList.Item = OrderedItem
