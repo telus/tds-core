@@ -32,7 +32,9 @@ RUN set -ex && \
 COPY . /app
 
 # Build the app.
-RUN yarn run build
+RUN yarn run build-package && \
+    STYLEGUIDIST_ENV=staging yarn run build-styleguide && \
+    STYLEGUIDIST_ENV=production yarn run build-styleguide
 
 # Set the container's user to the newly created one.
 USER node

@@ -5,10 +5,11 @@
 //  AWS_SECRET_ACCESS_KEY
 
 // Arguments
-//  1 = staging|production; The environment to deploy. Determines which S3 bucket to use. Defaults to "staging"
+//  1 = staging|production; The environment to deploy. Determines which S3 bucket to use and which styleguide to deploy. Defaults to "staging"
 
 // Dependencies
 //  s3-website: https://github.com/klaemo/s3-website
+//  aws-sdk
 
 
 if (!process.env.AWS_ACCESS_KEY_ID || !process.env.AWS_SECRET_ACCESS_KEY) {
@@ -21,10 +22,10 @@ const resolvePath = require('path').resolve;
 const deploy = require('s3-website').deploy;
 const AWS = require('aws-sdk');
 
-const uploadDir = resolvePath('styleguide/');
-
-const version = require(resolvePath('package.json')).version;
 const env = process.argv[2] || 'staging';
+const version = require(resolvePath('package.json')).version;
+
+const uploadDir = resolvePath('styleguide', env);
 
 const config = {
   region: 'us-east-1',

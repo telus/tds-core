@@ -1,14 +1,24 @@
 const path = require('path')
-
 const version = require('../package.json').version
 
-const toggle = (newComponentPath, oldComponentPath) => ( // eslint-disable-line no-unused-vars
-  process.env.NODE_ENV === 'production' ? oldComponentPath : newComponentPath
-)
+const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
-const compact = array => ( // eslint-disable-line no-unused-vars
+const enabledInStaging = ['Input']
+
+/* eslint-disable no-unused-vars */
+const toggleByEnv = (component, newComponentPath, oldComponentPath) => {
+  switch (styleguidistEnv) {
+    case 'dev': return newComponentPath
+    case 'staging': return enabledInStaging.includes(component) ? newComponentPath : oldComponentPath
+    case 'production': return oldComponentPath
+    default: return oldComponentPath
+  }
+}
+
+const compact = array => (
   array.filter(element => element !== undefined)
 )
+/* eslint-enable no-unused-vars */
 
 
 module.exports = {
@@ -163,10 +173,10 @@ module.exports = {
               name: 'Lists',
               components() {
                 return compact([
-                  toggle(path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx')),
-                  toggle(path.resolve('src/components/Lists/UnorderedList/UnorderedItem/UnorderedItem.jsx')),
-                  toggle(path.resolve('src/components/Lists/OrderedList/OrderedList.jsx')),
-                  toggle(path.resolve('src/components/Lists/OrderedList/OrderedItem/OrderedItem.jsx'))
+                  toggleByEnv('Lists', path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx')),
+                  toggleByEnv('Lists', path.resolve('src/components/Lists/UnorderedList/UnorderedItem/UnorderedItem.jsx')),
+                  toggleByEnv('Lists', path.resolve('src/components/Lists/OrderedList/OrderedList.jsx')),
+                  toggleByEnv('Lists', path.resolve('src/components/Lists/OrderedList/OrderedItem/OrderedItem.jsx'))
                 ])
               }
             },
@@ -234,7 +244,7 @@ module.exports = {
           components() {
             return compact([
               path.resolve('src/components/Button/Button.jsx'),
-              toggle(path.resolve('src/components/Input/Input.jsx')),
+              toggleByEnv('Input', path.resolve('src/components/Input/Input.jsx')),
               path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx')
             ])
           }
@@ -246,7 +256,7 @@ module.exports = {
 
   template: path.resolve('docs/index.html'),
   assetsDir: path.resolve('docs/assets/'),
-  styleguideDir: path.resolve('styleguide'),
+  styleguideDir: path.resolve('styleguide', styleguidistEnv),
   require: [
     path.resolve('src/scss/global.scss'),
     path.resolve('docs/scss/styleguide.scss')
