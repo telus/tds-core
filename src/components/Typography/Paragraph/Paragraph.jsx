@@ -11,11 +11,11 @@ import textStyles from '../Text/Text.modules.scss'
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
  */
 const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) => {
-  const paragraphColor = invert ? textStyles.colorInverted : textStyles.color
+  const paragraphColor = invert ? textStyles.invertedColor : textStyles.color
 
   const classes = `
     ${spacingStyles.noSpacing}
-    ${context.inheritColor ? styles.inheritColor : paragraphColor}
+    ${context.inheritColor ? textStyles.inheritColor : paragraphColor}
     ${textStyles[size]}
     ${bold ? textStyles.boldFont : textStyles[`${size}Font`]}
     ${styles[`${align}Align`]}

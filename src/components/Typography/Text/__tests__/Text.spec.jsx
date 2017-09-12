@@ -31,11 +31,11 @@ describe('Text', () => {
 
   it('can be inverted', () => {
     let text = doShallow()
-    expect(text).not.toHaveClassName('colorInverted')
+    expect(text).not.toHaveClassName('invertedColor')
     expect(text).toHaveClassName('color')
 
     text = doShallow({ invert: true })
-    expect(text).toHaveClassName('colorInverted')
+    expect(text).toHaveClassName('invertedColor')
     expect(text).not.toHaveClassName('color')
   })
 

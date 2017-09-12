@@ -67,6 +67,10 @@
   color: $color-text;
 }
 
-.colorInverted {
+.invertedColor {
   color: $color-white;
+}
+
+.inheritColor {
+  color: inherit;
 }

@@ -12,11 +12,13 @@ import styles from './Text.modules.scss'
  *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
  */
-const Text = ({ bold, size, invert, children, ...rest }) => {
+const Text = ({ bold, size, invert, children, ...rest }, context) => {
+  const textColor = invert ? styles.invertedColor : styles.color
+
   const classes = `
     ${styles[size]}
     ${bold ? styles.boldFont : styles[`${size}Font`]}
-    ${invert ? styles.colorInverted : styles.color}
+    ${context.inheritColor ? styles.inheritColor : textColor}
   `
 
   return (
@@ -54,6 +56,10 @@ Text.defaultProps = {
   bold: false,
   size: 'base',
   invert: false
+}
+
+Text.contextTypes = {
+  inheritColor: PropTypes.bool
 }
 
 Text.Sup = TextSup
