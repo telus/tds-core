@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import Icon from '../../../old-components/Icon/Icon'
@@ -13,9 +13,12 @@ describe('<Notification />', () => {
   const doShallow = (props = {}, children = defaultChildren) => (
     shallow(<Notification {...props}>{children}</Notification>)
   )
+  const doRender = (props = {}, children = defaultChildren) => (
+    render(<Notification {...props}>{children}</Notification>)
+  )
 
   it('renders', () => {
-    const notification = doShallow()
+    const notification = doRender()
 
     expect(toJson(notification)).toMatchSnapshot()
   })

@@ -2,29 +2,34 @@
 
 exports[`<Notification /> renders 1`] = `
 <div
-  className="instructional"
+  class="instructional"
 >
-  <Container
-    limitWidth={true}
+  <div
+    class="container container--limited-width"
   >
-    <Row>
-      <Column
-        xs={12}
+    <div
+      class="grid-row"
+    >
+      <div
+        class="xs-12"
       >
         <div
-          className="row"
+          class="row"
         >
-          <Paragraph
-            align="left"
-            bold={false}
-            invert={false}
-            size="medium"
+          <p
+            class="
+              noSpacing
+              color
+              medium
+              mediumFont
+              leftAlign
+              "
           >
             Some content
-          </Paragraph>
+          </p>
         </div>
-      </Column>
-    </Row>
-  </Container>
+      </div>
+    </div>
+  </div>
 </div>
 `;
