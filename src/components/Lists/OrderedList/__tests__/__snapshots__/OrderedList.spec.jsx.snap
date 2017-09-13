@@ -1,40 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<OrderedList /> renders 1`] = `
-<span
+<ol
   class="
-    base
-    baseFont
-    color
+    decimal
   "
 >
-  <ol
-    class="
-      decimal
-    "
+  <li
+    class="undefined"
   >
-    <li>
-      <span
-        class="
-          base
-          baseFont
-          color
-        "
-      >
-        Lorem ipsum
-      </span>
-    </li>
-    <li>
-      <span
-        class="
-          base
-          baseFont
-          color
-        "
-      >
-        Dolor sit amet
-      </span>
-    </li>
-  </ol>
-</span>
+    Lorem ipsum
+  </li>
+  <li
+    class="undefined"
+  >
+    Dolor sit amet
+  </li>
+</ol>
 `;

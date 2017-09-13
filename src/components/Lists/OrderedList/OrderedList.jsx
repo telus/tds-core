@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
-import Text from '../../Typography/Text/Text'
 import OrderedItem from './OrderedItem'
 
 import styles from './OrderedList.modules.scss'
@@ -20,11 +19,9 @@ const OrderedList = ({ listStyle, size, children, ...rest }) => {
   const items = React.Children.map(children, sizeChildren)
 
   return (
-    <Text size={size || 'base'}>
-      <ol {...safeRest(rest)} className={classes}>
-        {items}
-      </ol>
-    </Text>
+    <ol {...safeRest(rest)} className={classes}>
+      {items}
+    </ol>
   )
 }
 

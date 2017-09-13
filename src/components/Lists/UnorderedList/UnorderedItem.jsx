@@ -30,6 +30,11 @@ UnorderedItem.propTypes = {
   children: PropTypes.node.isRequired
 }
 
+UnorderedItem.defaultProps = {
+  listStyle: 'circle',
+  size: undefined
+}
+
 UnorderedItem.displayName = 'UnorderedList.Item'
 
 export default UnorderedItem

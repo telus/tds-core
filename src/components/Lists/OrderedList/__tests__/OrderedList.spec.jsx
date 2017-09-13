@@ -2,7 +2,6 @@ import React from 'react'
 import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import Text from '../../../Typography/Text/Text'
 import OrderedList from '../OrderedList'
 
 describe('<OrderedList />', () => {
@@ -35,14 +34,13 @@ describe('<OrderedList />', () => {
   it('OrderList renders an HTML ol tag', () => {
     const orderedList = doShallowList()
 
-    expect(orderedList).toHaveTagName('Text')
+    expect(orderedList).toHaveTagName('ol')
   })
 
   it('OrderList.Item renders an HTML li tag', () => {
     const orderedListItem = doShallowItem()
 
     expect(orderedListItem).toHaveTagName('li')
-    expect(orderedListItem).toContainReact(<Text>Some content</Text>)
   })
 
   it('can have a list style', () => {

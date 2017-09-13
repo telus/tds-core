@@ -8,13 +8,13 @@
   list-style-type: decimal;
 }
 
-.upper-alpha {
+.upperAlpha {
   composes: base;
 
   list-style-type: upper-alpha;
 }
 
-.lower-alpha {
+.lowerAlpha {
   composes: base;
 
   list-style-type: lower-alpha;
