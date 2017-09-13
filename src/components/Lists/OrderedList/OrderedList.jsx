@@ -20,7 +20,7 @@ const OrderedList = ({ listStyle, size, children, ...rest }) => {
   const items = React.Children.map(children, sizeChildren)
 
   return (
-    <Text size={size}>
+    <Text size={size || 'base'}>
       <ol {...safeRest(rest)} className={classes}>
         {items}
       </ol>
@@ -34,14 +34,13 @@ OrderedList.propTypes = {
    */
   listStyle: PropTypes.oneOf([
     'decimal',
-    'upper-alpha',
-    'lower-alpha'
+    'upperAlpha',
+    'lowerAlpha'
   ]),
   /**
    * The font size
    */
   size: PropTypes.oneOf([
-    'base',
     'medium',
     'large'
   ]),
@@ -53,7 +52,7 @@ OrderedList.propTypes = {
 
 OrderedList.defaultProps = {
   listStyle: 'decimal',
-  size: 'base'
+  size: undefined
 }
 
 OrderedList.Item = OrderedItem

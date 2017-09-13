@@ -1,4 +1,5 @@
 @import '../../../scss/settings/colours';
+@import '../../../scss/settings/typography';
 
 .base {
   padding-left: 40px;
@@ -6,10 +7,47 @@
   margin-bottom: 0.5rem;
 }
 
-.fixedWidth {
-  width: 2rem;
+.item {
+  font-family: $font-icons;
 }
 
-// .icon {
-//   color: $color-telus-purple;
-// }
+.circle {
+  composes: base;
+}
+
+.circleItem::before {
+  // composes: item;
+  font-family: $font-icons;
+
+  display: block;
+  position: absolute;
+  content: '\002022';
+  color: $color-telus-purple;
+  left: -21px;
+}
+
+.checkmark {
+  composes: base;
+}
+
+.checkmarkItem::before {
+  // composes: item;
+  font-family: $font-icons;
+
+  content: "\f101";
+  color: $color-primary;
+  left: -33px;
+}
+
+.x {
+  composes: base;
+}
+
+.xItem::before {
+  // composes: item;
+  font-family: $font-icons;
+
+  content: "\f104";
+  color: $color-cardinal;
+  left: -33px;
+}

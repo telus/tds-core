@@ -49,8 +49,8 @@ describe('<OrderedList />', () => {
     let orderedList = doShallowList({ listStyle: undefined })
     expect(findOrderedList(orderedList)).toHaveClassName('decimal')
 
-    orderedList = doShallowList({ listStyle: 'upper-alpha' })
-    expect(findOrderedList(orderedList)).toHaveClassName('upper-alpha')
+    orderedList = doShallowList({ listStyle: 'upperAlpha' })
+    expect(findOrderedList(orderedList)).toHaveClassName('upperAlpha')
   })
 
   it('passes additional attributes to ol element', () => {

@@ -2,19 +2,31 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
+import Text from '../../Typography/Text/Text'
 import UnorderedItem from './UnorderedItem'
 
 import styles from './UnorderedList.modules.scss'
 
-const UnorderedList = ({ variant, children, ...rest }) => {
+const UnorderedList = ({ listStyle, size, children, ...rest }) => {
   const classes = `
-    ${styles.base}
-    ${styles[variant]}
+    ${styles[listStyle]}
   `
+
+  const generateChildren = child =>
+    React.cloneElement(child, {
+      size,
+      listStyle
+    })
+
+  const items = React.Children.map(children, generateChildren)
+
+
   return (
-    <ul {...safeRest(rest)} className={classes}>
-      {children}
-    </ul>
+    <Text size={size || 'base'}>
+      <ul {...safeRest(rest)} className={classes}>
+        {items}
+      </ul>
+    </Text>
   )
 }
 
@@ -22,16 +34,27 @@ UnorderedList.propTypes = {
   /**
    * The type of list.
    */
-  variant: PropTypes.oneOf([
-    'bullet',
+  listStyle: PropTypes.oneOf([
+    'circle',
     'checkmark',
-    'error'
+    'x'
   ]),
+  /**
+   * The font size
+   */
+  size: PropTypes.oneOf([
+    'medium',
+    'large'
+  ]),
+  /**
+   * The list items
+   */
   children: PropTypes.node.isRequired
 }
 
 UnorderedList.defaultProps = {
-  variant: 'bullet'
+  listStyle: 'circle',
+  size: undefined
 }
 
 UnorderedList.Item = UnorderedItem

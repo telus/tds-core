@@ -2,23 +2,32 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
+import Text from '../../Typography/Text/Text'
 
-// import styles from './UnorderedList.modules.scss'
+import styles from './UnorderedList.modules.scss'
 
-const UnorderedItem = ({ listStyle, children, ...rest }) => {
-  return (
-    <li {...safeRest(rest)}>
+const UnorderedItem = ({ size, listStyle, children, ...rest }) => (
+  <li {...safeRest(rest)} className={styles[`${listStyle}Item`]}>
+    <Text size={size || 'base'}>
       {children}
-    </li>
-  )
-}
+    </Text>
+  </li>
+)
 
 UnorderedItem.propTypes = {
-  listStyle: PropTypes.string,
+  listStyle: PropTypes.oneOf([
+    'circle',
+    'checkmark',
+    'x'
+  ]),
+  size: PropTypes.oneOf([
+    'medium',
+    'large'
+  ]),
+  /**
+   * The content
+   */
   children: PropTypes.node.isRequired
-}
-
-UnorderedItem.defaultProps = {
 }
 
 UnorderedItem.displayName = 'UnorderedList.Item'
