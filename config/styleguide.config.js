@@ -174,9 +174,9 @@ module.exports = {
               components() {
                 return compact([
                   toggleByEnv('Lists', path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx')),
-                  toggleByEnv('Lists', path.resolve('src/components/Lists/UnorderedList/UnorderedItem/UnorderedItem.jsx')),
+                  toggleByEnv('Lists', path.resolve('src/components/Lists/UnorderedList/UnorderedItem.jsx')),
                   toggleByEnv('Lists', path.resolve('src/components/Lists/OrderedList/OrderedList.jsx')),
-                  toggleByEnv('Lists', path.resolve('src/components/Lists/OrderedList/OrderedItem/OrderedItem.jsx'))
+                  toggleByEnv('Lists', path.resolve('src/components/Lists/OrderedList/OrderedItem.jsx'))
                 ])
               }
             },
