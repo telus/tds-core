@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
 
-import spacingStyles from '../../Spacing.modules.scss'
+import spacingStyles from '../../Spacing/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
 import textStyles from '../Text/Text.modules.scss'
 

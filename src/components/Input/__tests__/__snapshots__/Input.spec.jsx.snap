@@ -2,21 +2,26 @@
 
 exports[`Input renders 1`] = `
 <div
-  class="evenMarginBottom-1"
+  class="column"
 >
-  <label
-    for="the-input"
+  <div
+    class="marginBottom-2"
   >
-    <span
-      class="
-        medium
-        boldFont
-        color
-      "
+    <label
+      class="resetLabel"
+      for="the-input"
     >
-      The input
-    </span>
-  </label>
+      <span
+        class="
+          medium
+          boldFont
+          color
+        "
+      >
+        The input
+      </span>
+    </label>
+  </div>
   <div
     class="default"
     data-testid="inputWrapper"
@@ -34,21 +39,26 @@ exports[`Input renders 1`] = `
 
 exports[`Input renders with a feedback state and icon 1`] = `
 <div
-  class="evenMarginBottom-1"
+  class="column"
 >
-  <label
-    for="the-input"
+  <div
+    class="marginBottom-2"
   >
-    <span
-      class="
-        medium
-        boldFont
-        color
-      "
+    <label
+      class="resetLabel"
+      for="the-input"
     >
-      The input
-    </span>
-  </label>
+      <span
+        class="
+          medium
+          boldFont
+          color
+        "
+      >
+        The input
+      </span>
+    </label>
+  </div>
   <div
     class="error"
     data-testid="inputWrapper"

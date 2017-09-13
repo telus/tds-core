@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WithSpacing renders 1`] = `
+<div
+  className="marginBottom-2"
+>
+  Some content
+</div>
+`;

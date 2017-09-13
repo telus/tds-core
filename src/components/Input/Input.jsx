@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 import Icon from '../../old-components/Icon/Icon'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
-import WithSpacing from './WithSpacing/WithSpacing'
+import WithSpacing from '../Spacing/WithSpacing/WithSpacing'
+import Flexbox from '../Flexbox/Flexbox'
 import Helper from './Helper/Helper'
 import Fade from './Fade'
 
@@ -124,14 +125,24 @@ class Input extends React.Component {
     const showIcon = showFeedbackIcon(feedback, this.state.focused)
 
     return (
-      <WithSpacing amount={1}>
-        <label htmlFor={inputId.identity()}>
-          <Text size="medium" bold>{label}</Text>
-        </label>
+      <Flexbox direction="column">
+        <WithSpacing amount={2}>
+          <label htmlFor={inputId.identity()} className={styles.resetLabel}>
+            <Text size="medium" bold>{label}</Text>
+          </label>
+        </WithSpacing>
 
-        { helper && this.renderHelper(helper, helperId, feedback, this.state.value) }
+        { helper &&
+          <WithSpacing amount={3}>
+            {this.renderHelper(helper, helperId, feedback, this.state.value)}
+          </WithSpacing>
+        }
 
-        { error && this.renderError(error, errorId) }
+        { error &&
+          <WithSpacing amount={3}>
+            {this.renderError(error, errorId)}
+          </WithSpacing>
+        }
 
         <div className={wrapperClassName} data-testID="inputWrapper">
           <input
@@ -151,7 +162,7 @@ class Input extends React.Component {
             )}
           </Fade>
         </div>
-      </WithSpacing>
+      </Flexbox>
     )
   }
 }

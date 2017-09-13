@@ -2,6 +2,15 @@
 @import '../../scss/settings/typography';
 @import '../../scss/settings/spacing';
 
+// FIXME: Override the global styles in forms.scss. This can be removed when the global styles are purged.
+.resetLabel {
+  display: initial;
+  color: initial;
+  font-weight: initial;
+  letter-spacing: initial;
+  margin-bottom: 0;
+}
+
 .inputWrapper {
   composes: thin rounded from '../Borders.modules.scss';
 

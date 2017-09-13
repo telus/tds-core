@@ -12,13 +12,13 @@
 }
 
 .largeHeading {
-  composes: noSpacing from '../../Spacing.modules.scss';
+  composes: noSpacing from '../../Spacing/Spacing.modules.scss';
 
   @include helvetica-neue-light-45;
 }
 
 .smallHeading {
-  composes: noSpacing from '../../Spacing.modules.scss';
+  composes: noSpacing from '../../Spacing/Spacing.modules.scss';
 
   @include helvetica-neue-medium-65;
 

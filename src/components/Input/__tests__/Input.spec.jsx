@@ -45,6 +45,14 @@ describe('Input', () => {
     expect(input.find('label')).toContainReact(<Text size="medium" bold>The label</Text>)
   })
 
+  // FIXME: Test for override of the global styles in forms.scss. This can be removed
+  // when the global styles are purged.
+  it('resets the styles of the label to override the global label styles', () => {
+    const input = doShallow()
+
+    expect(input.find('label')).toHaveClassName('resetLabel')
+  })
+
   describe('connecting the label to the input', () => {
     it('connects the label to the input', () => {
       const input = doShallow()
@@ -233,20 +241,6 @@ describe('Input', () => {
     })
   })
 
-  it('passes additional attributes to the input element', () => {
-    const input = doShallow({ name: 'a name', placeholder: 'a placeholder' })
-
-    expect(findInputElement(input)).toHaveProp('name', 'a name')
-    expect(findInputElement(input)).toHaveProp('placeholder', 'a placeholder')
-  })
-
-  it('does not allow custom CSS', () => {
-    const input = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
-
-    expect(findInputElement(input)).not.toHaveProp('className', 'my-custom-class')
-    expect(findInputElement(input)).not.toHaveProp('style')
-  })
-
   describe('accessibility', () => {
     it('marks the input as invalid when in the error feedback state', () => {
       let input = doShallow()
@@ -288,5 +282,19 @@ describe('Input', () => {
         </div>
       )
     })
+  })
+
+  it('passes additional attributes to the input element', () => {
+    const input = doShallow({ name: 'a name', placeholder: 'a placeholder' })
+
+    expect(findInputElement(input)).toHaveProp('name', 'a name')
+    expect(findInputElement(input)).toHaveProp('placeholder', 'a placeholder')
+  })
+
+  it('does not allow custom CSS', () => {
+    const input = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+
+    expect(findInputElement(input)).not.toHaveProp('className', 'my-custom-class')
+    expect(findInputElement(input)).not.toHaveProp('style')
   })
 })
