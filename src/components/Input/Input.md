@@ -1,13 +1,20 @@
 ### Minimal Usage
 
-By default, a "text" input field will be rendered, but other types are also supported.
+By default, a "text" input field will be rendered, but other
+[HTML5 input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types)
+are also supported.
+
+However, the basic Input is limited to a subset of the possible input types. More complex types such as dates
+will be available as additional components.
+
+Supply additional HTML input attributes as normal.
 
 ```
 <div>
   <Input label="First name" value="Lucy" />
 
-  <Input type="number" label="Age" value="35" />
-  <Input type="password" label="Tax ID" value="123456789" />
+  <Input type="tel" label="Mobile phone" pattern="[0-9]{10}" maxLength="10" />
+  <Input type="password" label="Tax ID" value="123456789" autoComplete="on" />
 </div>
 ```
 

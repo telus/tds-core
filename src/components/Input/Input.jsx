@@ -171,7 +171,7 @@ Input.propTypes = {
   /**
    * The HTML5 type of the input field.
    */
-  type: PropTypes.oneOf(['text', 'number', 'password']), // TODO: finish this list
+  type: PropTypes.oneOf(['text', 'number', 'password', 'email', 'search', 'tel', 'url']),
   /**
    * The label.
    */

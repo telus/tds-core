@@ -96,4 +96,11 @@ input.input {
     // FIXME: Override the global styles in forms.scss. This can be removed when the global styles are purged.
     box-shadow: none;
   }
+
+  // Hide the "spinner" element for number inputs
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
