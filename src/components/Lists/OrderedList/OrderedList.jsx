@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { childrenOfType } from 'airbnb-prop-types'
 
 import safeRest from '../../../safeRest'
 import OrderedItem from './OrderedItem'
@@ -42,9 +43,9 @@ OrderedList.propTypes = {
     'large'
   ]),
   /**
-   * The list items
+   * The list items.
    */
-  children: PropTypes.node.isRequired
+  children: childrenOfType(OrderedItem).isRequired
 }
 
 OrderedList.defaultProps = {
