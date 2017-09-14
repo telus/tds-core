@@ -2,7 +2,6 @@ import React from 'react'
 import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import Text from '../../../Typography/Text/Text'
 import UnorderedList from '../UnorderedList'
 
 describe('<UnorderedList />', () => {
@@ -13,17 +12,11 @@ describe('<UnorderedList />', () => {
     </UnorderedList>
   )
 
-  const doShallowList = (overrides = {}) => shallow(
+  const doShallow = (overrides = {}) => shallow(
     <UnorderedList {...overrides}>
       <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>
       <UnorderedList.Item>Dolor sit amet</UnorderedList.Item>
     </UnorderedList>
-  )
-
-  const findUnorderedList = unorderedList => unorderedList.find('ul')
-
-  const doShallowItem = (overrides = {}) => shallow(
-    <UnorderedList.Item {...overrides}>Some content</UnorderedList.Item>
   )
 
   it('renders', () => {
@@ -33,37 +26,46 @@ describe('<UnorderedList />', () => {
   })
 
   it('renders an HTML ul tag', () => {
-    const unorderedList = doShallowList()
+    const unorderedList = doShallow()
 
-    expect(unorderedList).toHaveTagName('Text')
+    expect(unorderedList).toHaveTagName('ul')
   })
 
-  it('UnOrderList.Item renders an HTML li tag', () => {
-    const unorderedListItem = doShallowItem()
+  it('UnorderedList.Item renders an HTML li tag', () => {
+    const unorderedListItem = shallow(
+      <UnorderedList.Item>Some content</UnorderedList.Item>
+    )
 
     expect(unorderedListItem).toHaveTagName('li')
-    expect(unorderedListItem).toContainReact(<Text>Some content</Text>)
   })
 
   it('can have a list style', () => {
-    let unorderedList = doShallowList({ listStyle: undefined })
-    expect(findUnorderedList(unorderedList)).toHaveClassName('circle')
+    let unorderedList = doShallow({ listStyle: undefined })
+    expect(unorderedList.find(UnorderedList.Item).at(0).dive()).toHaveClassName('circle')
+    expect(unorderedList.find(UnorderedList.Item).at(1).dive()).toHaveClassName('circle')
 
-    unorderedList = doShallowList({ listStyle: 'x' })
-    expect(findUnorderedList(unorderedList)).toHaveClassName('x')
+    unorderedList = doShallow({ listStyle: 'x' })
+    expect(unorderedList.find(UnorderedList.Item).at(0).dive()).toHaveClassName('x')
+    expect(unorderedList.find(UnorderedList.Item).at(1).dive()).toHaveClassName('x')
+  })
+
+  it('can be sized', () => {
+    const unorderedList = doShallow({ size: 'large' })
+
+    expect(unorderedList.find(UnorderedList.Item).first().dive()).toHaveClassName('large')
   })
 
   it('passes additional attributes to ul element', () => {
-    const unorderedList = doShallowList({ id: 'the-list', tabindex: 1 })
+    const unorderedList = doShallow({ id: 'the-list', 'data-some-thing': 'some value' })
 
-    expect(findUnorderedList(unorderedList)).toHaveProp('id', 'the-list')
-    expect(findUnorderedList(unorderedList)).toHaveProp('tabindex', 1)
+    expect(unorderedList).toHaveProp('id', 'the-list')
+    expect(unorderedList).toHaveProp('data-some-thing', 'some value')
   })
 
   it('does not allow custom CSS', () => {
-    const unorderedList = doShallowList({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const unorderedList = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
-    expect(findUnorderedList(unorderedList)).not.toHaveProp('className', 'my-custom-class')
-    expect(findUnorderedList(unorderedList)).not.toHaveProp('style')
+    expect(unorderedList).not.toHaveProp('className', 'my-custom-class')
+    expect(unorderedList).not.toHaveProp('style')
   })
 })

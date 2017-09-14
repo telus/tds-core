@@ -1,44 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<UnorderedList /> renders 1`] = `
-<span
-  class="
-    base
-    baseFont
-    color
-  "
+<ul
+  class="base"
 >
-  <ul
+  <li
     class="
       circle
+      undefined
     "
   >
-    <li
-      class="circleItem"
-    >
-      <span
-        class="
-          base
-          baseFont
-          color
-        "
-      >
-        Lorem ipsum
-      </span>
-    </li>
-    <li
-      class="circleItem"
-    >
-      <span
-        class="
-          base
-          baseFont
-          color
-        "
-      >
-        Dolor sit amet
-      </span>
-    </li>
-  </ul>
-</span>
+    Lorem ipsum
+  </li>
+  <li
+    class="
+      circle
+      undefined
+    "
+  >
+    Dolor sit amet
+  </li>
+</ul>
 `;

@@ -1,38 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { childrenOfType } from 'airbnb-prop-types'
 
 import safeRest from '../../../safeRest'
-import Text from '../../Typography/Text/Text'
-import UnorderedItem from './UnorderedItem'
+import UnorderedItem from './UnorderedItem/UnorderedItem'
 
 import styles from './UnorderedList.modules.scss'
 
+const injectSizeAndListStyle = (child, size, listStyle) => (
+  React.cloneElement(child, { size, listStyle })
+)
+
 const UnorderedList = ({ listStyle, size, children, ...rest }) => {
-  const classes = `
-    ${styles[listStyle]}
-  `
-
-  const generateChildren = child =>
-    React.cloneElement(child, {
-      size,
-      listStyle
-    })
-
-  const items = React.Children.map(children, generateChildren)
-
-
   return (
-    <Text size={size || 'base'}>
-      <ul {...safeRest(rest)} className={classes}>
-        {items}
-      </ul>
-    </Text>
+    <ul {...safeRest(rest)} className={styles.base}>
+      {React.Children.map(children, child => injectSizeAndListStyle(child, size, listStyle))}
+    </ul>
   )
 }
 
 UnorderedList.propTypes = {
   /**
-   * The type of list.
+   * The bullet style.
    */
   listStyle: PropTypes.oneOf([
     'circle',
@@ -40,16 +29,16 @@ UnorderedList.propTypes = {
     'x'
   ]),
   /**
-   * The font size
+   * The font size.
    */
   size: PropTypes.oneOf([
     'medium',
     'large'
   ]),
   /**
-   * The list items
+   * The list items. Must be at least one `UnorderedList.Item`.
    */
-  children: PropTypes.node.isRequired
+  children: childrenOfType(UnorderedItem).isRequired
 }
 
 UnorderedList.defaultProps = {
