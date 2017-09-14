@@ -7,28 +7,17 @@ import OrderedItem from './OrderedItem'
 
 import styles from './OrderedList.modules.scss'
 
-const OrderedList = ({ listStyle, size, children, ...rest }) => {
-  const classes = `
-    ${styles[listStyle]}
-  `
+const injectSize = (child, size) => React.cloneElement(child, { size })
 
-  const sizeChildren = child =>
-    React.cloneElement(child, {
-      size
-    })
-
-  const items = React.Children.map(children, sizeChildren)
-
-  return (
-    <ol {...safeRest(rest)} className={classes}>
-      {items}
-    </ol>
-  )
-}
+const OrderedList = ({ listStyle, size, children, ...rest }) => (
+  <ol {...safeRest(rest)} className={styles[listStyle]}>
+    {React.Children.map(children, child => injectSize(child, size))}
+  </ol>
+)
 
 OrderedList.propTypes = {
   /**
-   * The type of list.
+   * The bullet style.
    */
   listStyle: PropTypes.oneOf([
     'decimal',
@@ -36,14 +25,14 @@ OrderedList.propTypes = {
     'lowerAlpha'
   ]),
   /**
-   * The font size
+   * The font size.
    */
   size: PropTypes.oneOf([
     'medium',
     'large'
   ]),
   /**
-   * The list items.
+   * The list items. Must be at least one `OrderedList.Item`.
    */
   children: childrenOfType(OrderedItem).isRequired
 }

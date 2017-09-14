@@ -2,9 +2,7 @@
 
 exports[`<OrderedList /> renders 1`] = `
 <ol
-  class="
-    decimal
-  "
+  class="decimal"
 >
   <li
     class="undefined"

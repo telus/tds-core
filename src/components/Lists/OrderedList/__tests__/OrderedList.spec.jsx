@@ -12,17 +12,11 @@ describe('<OrderedList />', () => {
     </OrderedList>
   )
 
-  const doShallowList = (overrides = {}) => shallow(
+  const doShallow = (overrides = {}) => shallow(
     <OrderedList {...overrides}>
       <OrderedList.Item>Lorem ipsum</OrderedList.Item>
       <OrderedList.Item>Dolor sit amet</OrderedList.Item>
     </OrderedList>
-  )
-
-  const findOrderedList = orderedList => orderedList.find('ol')
-
-  const doShallowItem = (overrides = {}) => shallow(
-    <OrderedList.Item {...overrides}>Some content</OrderedList.Item>
   )
 
   it('renders', () => {
@@ -32,36 +26,36 @@ describe('<OrderedList />', () => {
   })
 
   it('OrderList renders an HTML ol tag', () => {
-    const orderedList = doShallowList()
+    const orderedList = doShallow()
 
     expect(orderedList).toHaveTagName('ol')
   })
 
   it('OrderList.Item renders an HTML li tag', () => {
-    const orderedListItem = doShallowItem()
+    const orderedListItem = shallow(<OrderedList.Item>a list item</OrderedList.Item>)
 
     expect(orderedListItem).toHaveTagName('li')
   })
 
   it('can have a list style', () => {
-    let orderedList = doShallowList({ listStyle: undefined })
-    expect(findOrderedList(orderedList)).toHaveClassName('decimal')
+    let orderedList = doShallow({ listStyle: undefined })
+    expect(orderedList).toHaveClassName('decimal')
 
-    orderedList = doShallowList({ listStyle: 'upperAlpha' })
-    expect(findOrderedList(orderedList)).toHaveClassName('upperAlpha')
+    orderedList = doShallow({ listStyle: 'upperAlpha' })
+    expect(orderedList).toHaveClassName('upperAlpha')
   })
 
   it('passes additional attributes to ol element', () => {
-    const orderedList = doShallowList({ id: 'the-list', tabindex: 1 })
+    const orderedList = doShallow({ id: 'the-list', reversed: 'true' })
 
-    expect(findOrderedList(orderedList)).toHaveProp('id', 'the-list')
-    expect(findOrderedList(orderedList)).toHaveProp('tabindex', 1)
+    expect(orderedList).toHaveProp('id', 'the-list')
+    expect(orderedList).toHaveProp('reversed', 'true')
   })
 
   it('does not allow custom CSS', () => {
-    const orderedList = doShallowList({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const orderedList = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
-    expect(findOrderedList(orderedList)).not.toHaveProp('className', 'my-custom-class')
-    expect(findOrderedList(orderedList)).not.toHaveProp('style')
+    expect(orderedList).not.toHaveProp('className', 'my-custom-class')
+    expect(orderedList).not.toHaveProp('style')
   })
 })
