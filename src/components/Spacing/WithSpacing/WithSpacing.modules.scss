@@ -1,5 +1,13 @@
 @import '../../../scss/settings/spacing';
 
+.marginLeft-2 {
+  margin-left: $spacing-tight;
+}
+
+.marginLeft-3 {
+  margin-left: $spacing-base;
+}
+
 .marginBottom-2 {
   margin-bottom: $spacing-tight;
 }

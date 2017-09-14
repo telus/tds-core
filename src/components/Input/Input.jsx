@@ -126,20 +126,20 @@ class Input extends React.Component {
 
     return (
       <Flexbox direction="column">
-        <WithSpacing amount={2}>
+        <WithSpacing location="bottom" amount={2}>
           <label htmlFor={inputId.identity()} className={styles.resetLabel}>
             <Text size="medium" bold>{label}</Text>
           </label>
         </WithSpacing>
 
         { helper &&
-          <WithSpacing amount={3}>
+          <WithSpacing location="bottom" amount={3}>
             {this.renderHelper(helper, helperId, feedback, this.state.value)}
           </WithSpacing>
         }
 
         { error &&
-          <WithSpacing amount={3}>
+          <WithSpacing location="bottom" amount={3}>
             {this.renderError(error, errorId)}
           </WithSpacing>
         }
@@ -156,9 +156,9 @@ class Input extends React.Component {
 
           <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
             { () => (
-              <span className={styles.icon}>
+              <WithSpacing location="left" amount={3}>
                 <Icon glyph={iconByFeedbackState[feedback]} aria-hidden="true" />
-              </span>
+              </WithSpacing>
             )}
           </Fade>
         </div>

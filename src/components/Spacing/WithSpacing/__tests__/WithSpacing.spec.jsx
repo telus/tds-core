@@ -6,6 +6,7 @@ import WithSpacing from '../WithSpacing'
 
 describe('WithSpacing', () => {
   const defaultProps = {
+    location: 'bottom',
     amount: 2
   }
   const doShallow = (props = {}) => (
@@ -13,28 +14,28 @@ describe('WithSpacing', () => {
   )
 
   it('renders', () => {
-    const flexbox = doShallow()
+    const withSpacing = doShallow()
 
-    expect(toJson(flexbox)).toMatchSnapshot()
+    expect(toJson(withSpacing)).toMatchSnapshot()
   })
 
-  it('applies margin bottom', () => {
-    const flexbox = doShallow({ amount: 3 })
+  it('applies margin by location', () => {
+    const withSpacing = doShallow({ location: 'left', amount: 3 })
 
-    expect(flexbox).toHaveClassName('marginBottom-3')
+    expect(withSpacing).toHaveClassName('marginLeft-3')
   })
 
   it('passes additional attributes to the HTML element', () => {
-    const flexbox = doShallow({ id: 'the-id', 'data-some-property': 'a value' })
+    const withSpacing = doShallow({ id: 'the-id', 'data-some-property': 'a value' })
 
-    expect(flexbox).toHaveProp('id', 'the-id')
-    expect(flexbox).toHaveProp('data-some-property', 'a value')
+    expect(withSpacing).toHaveProp('id', 'the-id')
+    expect(withSpacing).toHaveProp('data-some-property', 'a value')
   })
 
   it('does not allow custom CSS', () => {
-    const flexbox = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const withSpacing = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
-    expect(flexbox).not.toHaveProp('className', 'my-custom-class')
-    expect(flexbox).not.toHaveProp('style')
+    expect(withSpacing).not.toHaveProp('className', 'my-custom-class')
+    expect(withSpacing).not.toHaveProp('style')
   })
 })
