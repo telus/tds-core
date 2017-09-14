@@ -3,7 +3,7 @@ const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
-const enabledInStaging = ['Input']
+const enabledInStaging = ['Input', 'Lists']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, newComponentPath, oldComponentPath) => {
@@ -174,9 +174,7 @@ module.exports = {
               components() {
                 return compact([
                   toggleByEnv('Lists', path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx')),
-                  toggleByEnv('Lists', path.resolve('src/components/Lists/UnorderedList/UnorderedItem.jsx')),
-                  toggleByEnv('Lists', path.resolve('src/components/Lists/OrderedList/OrderedList.jsx')),
-                  toggleByEnv('Lists', path.resolve('src/components/Lists/OrderedList/OrderedItem.jsx'))
+                  toggleByEnv('Lists', path.resolve('src/components/Lists/OrderedList/OrderedList.jsx'))
                 ])
               }
             },

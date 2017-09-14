@@ -11,6 +11,9 @@ const injectSizeAndListStyle = (child, size, listStyle) => (
   React.cloneElement(child, { size, listStyle })
 )
 
+/**
+ * <span class="docs--badge green">wip</span>
+ */
 const UnorderedList = ({ listStyle, size, children, ...rest }) => {
   return (
     <ul {...safeRest(rest)} className={styles.base}>
