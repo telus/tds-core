@@ -1,19 +1,25 @@
 @import '../../../../scss/settings/colours';
 @import '../../../../scss/settings/typography';
 
-.item::before {
-  font-family: $font-icons;
+.item {
+  composes: item from '../../ListItem.modules.scss';
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    left: -24px;
+
+    font-family: $font-icons;
+  }
 }
 
 .circle {
   composes: item;
 
   &::before {
-    display: block;
-    position: absolute;
     content: '\002022';
     color: $color-telus-purple;
-    left: -21px;
   }
 }
 
@@ -23,7 +29,6 @@
   &::before {
     content: "\f101";
     color: $color-primary;
-    left: -33px;
   }
 }
 
@@ -33,6 +38,5 @@
   &::before {
     content: "\f104";
     color: $color-cardinal;
-    left: -33px;
   }
 }

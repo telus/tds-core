@@ -3,13 +3,21 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
 
-import styles from '../../Typography/Text/Text.modules.scss'
+import textStyles from '../../Typography/Text/Text.modules.scss'
+import styles from '../ListItem.modules.scss'
 
-const OrderedItem = ({ size, children, ...rest }) => (
-  <li {...safeRest(rest)} className={styles[size]}>
-    {children}
-  </li>
-)
+const OrderedItem = ({ size, children, ...rest }) => {
+  const classes = `
+    ${styles.item}
+    ${textStyles[size]}
+  `
+
+  return (
+    <li {...safeRest(rest)} className={classes}>
+      {children}
+    </li>
+  )
+}
 
 OrderedItem.propTypes = {
   size: PropTypes.oneOf([

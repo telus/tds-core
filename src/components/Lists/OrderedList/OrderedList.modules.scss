@@ -1,21 +1,17 @@
-.base {
-  padding-left: 40px;
-}
-
 .decimal {
-  composes: base;
+  composes: base from '../List.modules.scss';
 
   list-style-type: decimal;
 }
 
 .upperAlpha {
-  composes: base;
+  composes: base from '../List.modules.scss';
 
   list-style-type: upper-alpha;
 }
 
 .lowerAlpha {
-  composes: base;
+  composes: base from '../List.modules.scss';
 
   list-style-type: lower-alpha;
 }

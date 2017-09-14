@@ -5,7 +5,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 import safeRest from '../../../safeRest'
 import UnorderedItem from './UnorderedItem/UnorderedItem'
 
-import styles from './UnorderedList.modules.scss'
+import styles from '../List.modules.scss'
 
 const injectSizeAndListStyle = (child, size, listStyle) => (
   React.cloneElement(child, { size, listStyle })

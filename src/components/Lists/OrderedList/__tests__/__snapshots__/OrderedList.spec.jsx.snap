@@ -5,12 +5,18 @@ exports[`<OrderedList /> renders 1`] = `
   class="decimal"
 >
   <li
-    class="undefined"
+    class="
+      item
+      undefined
+    "
   >
     Lorem ipsum
   </li>
   <li
-    class="undefined"
+    class="
+      item
+      undefined
+    "
   >
     Dolor sit amet
   </li>
