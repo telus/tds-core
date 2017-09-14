@@ -98,6 +98,14 @@ input.input {
     box-shadow: none;
   }
 
+  &::placeholder {
+    font: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+
+    color: $color-shuttle-grey;
+  }
+
   // Hide the "spinner" element for number inputs
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button {
