@@ -23,6 +23,7 @@
 .defaultBoxShadow {
   box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
 }
+
 .defaultBgColor {
   background-color: $color-white;
 }
@@ -30,7 +31,7 @@
 .default {
   composes: inputWrapper defaultBgColor defaultBoxShadow;
 
-  border-color: $color-shuttle-grey
+  border-color: $color-shuttle-grey;
 }
 
 .disabled {

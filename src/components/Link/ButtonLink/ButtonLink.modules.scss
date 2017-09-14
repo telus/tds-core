@@ -16,6 +16,7 @@ $secondary-bg-color: $color-secondary;
   &:visited {
     color: $button-text-color;
   }
+
   &:hover {
     color: $primary-bg-color;
   }
@@ -29,6 +30,7 @@ $secondary-bg-color: $color-secondary;
   &:visited {
     color: $button-text-color;
   }
+
   &:hover {
     color: $secondary-bg-color;
   }
@@ -42,6 +44,7 @@ $secondary-bg-color: $color-secondary;
   &:visited {
     color: $color-text;
   }
+
   &:hover {
     color: $button-text-color;
   }
