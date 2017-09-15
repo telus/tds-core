@@ -22,7 +22,7 @@
     "deploy:package": "scripts/publish.sh",
     "dev": "styleguidist server --config config/styleguide.config.js",
     "lint:js": "eslint src config docs scripts --ext '.js,.jsx' --config config/.eslintrc.json --fix",
-    "lint:scss": "stylelint 'src/components/**/*.scss' --fix --config config/.stylelintrc.json",
+    "lint:scss": "stylelint 'src/components/**/*.scss' --config config/.stylelintrc.json",
     "lint:ec": "echint",
     "lint": "yarn lint:js && yarn lint:scss && yarn lint:ec",
     "precommit": "yarn lint && yarn test && yarn build-package && yarn build-styleguide",
