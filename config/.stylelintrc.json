@@ -1,7 +1,7 @@
 {
   "extends": [
-    "stylelint-config-recommended",
-    "stylelint-config-css-modules"
+    "stylelint-config-css-modules",
+    "stylelint-config-standard"
   ],
   "plugins": [
     "stylelint-scss"
@@ -23,6 +23,17 @@
           "composes"
         ]
       }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "composes"
+        ]
+      }
+    ],
+    "declaration-empty-line-before": [
+      "never"
     ]
   }
 }

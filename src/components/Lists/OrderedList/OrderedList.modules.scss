@@ -1,17 +1,14 @@
 .decimal {
   composes: base from '../List.modules.scss';
-
   list-style-type: decimal;
 }
 
 .upperAlpha {
   composes: base from '../List.modules.scss';
-
   list-style-type: upper-alpha;
 }
 
 .lowerAlpha {
   composes: base from '../List.modules.scss';
-
   list-style-type: lower-alpha;
 }

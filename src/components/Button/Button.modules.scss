@@ -8,7 +8,6 @@ $primary-bg-color: $color-primary;
 $secondary-bg-color: $color-secondary;
 $button-text-color: $color-white;
 
-
 @mixin border {
   // Don't add a border because it changes the size of the button.
   // Box-shadow gives a "free" border using the text color.
@@ -18,17 +17,12 @@ $button-text-color: $color-white;
 .button {
   composes: none rounded from "../Borders.modules.scss";
   composes: medium boldFont from '../Typography/Text/Text.modules.scss';
-
   display: block;
   width: 100%;
-
   padding: $spacing-base $spacing-wide;
-
-  transition: background .2s;
-
+  transition: background 0.2s;
   font-family: $font-telus;
   text-align: center;
-
   cursor: pointer;
 }
 
@@ -51,20 +45,17 @@ $button-text-color: $color-white;
 
   &:hover {
     @include border;
-
     color: $button-text-color;
   }
 }
 
 .primary {
   composes: button;
-
   background-color: $primary-bg-color;
   color: $button-text-color;
 
   &:hover {
     @include border;
-
     background-color: $button-text-color;
     color: $primary-bg-color;
   }
@@ -72,13 +63,11 @@ $button-text-color: $color-white;
 
 .secondary {
   composes: button;
-
   background-color: $secondary-bg-color;
   color: $button-text-color;
 
   &:hover {
     @include border;
-
     background-color: $button-text-color;
     color: $secondary-bg-color;
   }
@@ -86,7 +75,6 @@ $button-text-color: $color-white;
 
 .secondaryInverted {
   composes: deprecatedInverted button;
-
   color: $secondary-bg-color;
 
   &:hover {
@@ -99,39 +87,33 @@ $button-text-color: $color-white;
   composes: button;
 
   @include border;
-
   background-color: transparent;
   color: $button-text-color;
 
   &:hover {
     background-color: $button-text-color;
     color: $color-text;
-
     box-shadow: none;
   }
 }
 
 .outlinedInverted {
   composes: deprecatedInverted button;
-
   color: $color-text;
 
   &:hover {
     @include border;
-
     background-color: transparent;
   }
 }
 
 .inverted {
   composes: button;
-
   background-color: $button-text-color;
   color: $color-text;
 
   &:hover {
     @include border;
-
     background-color: transparent;
     color: $button-text-color;
   }

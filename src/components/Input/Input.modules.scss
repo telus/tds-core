@@ -13,15 +13,13 @@
 
 .inputWrapper {
   composes: thin rounded from '../Borders.modules.scss';
-
   composes: row from '../Flexbox.modules.scss';
   align-items: center;
-
   padding: $spacing-base;
 }
 
 .defaultBoxShadow {
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
 }
 
 .defaultBgColor {
@@ -30,33 +28,28 @@
 
 .default {
   composes: inputWrapper defaultBgColor defaultBoxShadow;
-
   border-color: $color-shuttle-grey;
 }
 
 .disabled {
   composes: inputWrapper defaultBoxShadow;
-
   background-color: $color-athens-grey;
   border-color: $color-shuttle-grey;
 }
 
 .focused {
   composes: inputWrapper defaultBgColor;
-
   border-color: transparent;
   box-shadow: 0 0 4px 1px $color-shuttle-grey;
 }
 
 .success {
   composes: inputWrapper defaultBgColor defaultBoxShadow;
-
   border-color: $color-primary;
 }
 
 .error {
   composes: inputWrapper defaultBgColor defaultBoxShadow;
-
   border-color: $color-cardinal;
 }
 
@@ -69,14 +62,12 @@ input.input {
   //composes: noSpacing from '../Spacing/Spacing.modules.scss';
   padding: 0;
   margin: 0;
-
   outline: 0;
 
   // FIXME: Will be able to use composes when removing the targeting of the <input> element above
   // composes: none rounded from '../Borders.modules.scss';
   border: 0;
   border-radius: 4px;
-
   font-family: $font-telus;
 
   // FIXME: Will be able to use composes when removing the targeting of the <input> element above
@@ -84,8 +75,8 @@ input.input {
   font-size: 1rem;
   letter-spacing: -0.8px;
   line-height: 1.5;
-  @include helvetica-neue-light-45;
 
+  @include helvetica-neue-light-45;
   color: $color-shark;
   background-color: transparent;
 
@@ -102,7 +93,6 @@ input.input {
     font: inherit;
     letter-spacing: inherit;
     line-height: inherit;
-
     color: $color-shuttle-grey;
   }
 

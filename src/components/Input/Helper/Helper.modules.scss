@@ -3,7 +3,6 @@
 
 .base {
   composes: rounded from '../../Borders.modules.scss';
-
   padding: $spacing-base;
 }
 

@@ -21,8 +21,7 @@
   composes: noSpacing from '../../Spacing/Spacing.modules.scss';
 
   @include helvetica-neue-medium-65;
-
-  letter-spacing: -.6px;
+  letter-spacing: -0.6px;
 }
 
 .inverted {
@@ -39,7 +38,6 @@
 
 .h1 {
   composes: largeHeading;
-
   font-size: 1.75rem;
   line-height: 1.29; // 36px
   letter-spacing: -1.6px;
@@ -54,7 +52,7 @@
   }
 
   .sub {
-    bottom: -.4em;
+    bottom: -0.4em;
   }
 
   @include from-breakpoint(medium) {
@@ -66,16 +64,14 @@
     .sup {
       top: -1.3em;
     }
-
   }
 }
 
 .h2 {
   composes: largeHeading;
-
   font-size: 1.5rem;
   line-height: 1.33; // 30px
-  letter-spacing: -.4px;
+  letter-spacing: -0.4px;
 
   .sup,
   .sub {
@@ -83,17 +79,17 @@
   }
 
   .sup {
-    top: -.8em;
+    top: -0.8em;
   }
 
   .sub {
-    bottom: -.4em;
+    bottom: -0.4em;
   }
 
   @include from-breakpoint(medium) {
     font-size: 1.75rem;
     line-height: 1.29; // 36px
-    letter-spacing: -.8px;
+    letter-spacing: -0.8px;
 
     .sup {
       top: -0.7em;
@@ -103,40 +99,38 @@
 
 .h3 {
   composes: smallHeading;
-
   font-size: 1.25rem;
   line-height: 1.4; // 28px
 
   .sup,
   .sub {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   .sup {
-    top: -.5em;
+    top: -0.5em;
   }
 
   .sub {
-    bottom: -.5em;
+    bottom: -0.5em;
   }
 }
 
 .h4 {
   composes: smallHeading;
-
   font-size: 1rem;
   line-height: 1.25; // 20px
 
   .sup,
   .sub {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   .sup {
-    top: -.5em;
+    top: -0.5em;
   }
 
   .sub {
-    bottom: -.5em;
+    bottom: -0.5em;
   }
 }
