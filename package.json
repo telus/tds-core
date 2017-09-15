@@ -95,7 +95,7 @@
     "style-loader": "^0.18.2",
     "stylelint": "^8.1.1",
     "stylelint-config-css-modules": "^1.1.0",
-    "stylelint-config-sass-guidelines": "^2.2.0",
+    "stylelint-config-recommended": "^1.0.0",
     "stylelint-scss": "^1.5.1",
     "url-loader": "^0.5.9",
     "webpack": "^3.3.0"

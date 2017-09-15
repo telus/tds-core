@@ -17,6 +17,7 @@ $button-text-color: $color-white;
 
 .button {
   composes: none rounded from "../Borders.modules.scss";
+  composes: medium boldFont from '../Typography/Text/Text.modules.scss';
 
   display: block;
   width: 100%;
@@ -26,7 +27,6 @@ $button-text-color: $color-white;
   transition: background .2s;
 
   font-family: $font-telus;
-  composes: medium boldFont from '../Typography/Text/Text.modules.scss';
   text-align: center;
 
   cursor: pointer;

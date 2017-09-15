@@ -5921,16 +5921,6 @@ pretty-format@^20.0.3:
     ansi-regex "^2.1.1"
     ansi-styles "^3.0.0"
 
-primer-support@^4.0.7:
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/primer-support/-/primer-support-4.0.7.tgz#c9c433c5a597a78226870ea3d18c4bf0e96eeab4"
-
-primer-utilities@^4.3.5:
-  version "4.3.5"
-  resolved "https://registry.yarnpkg.com/primer-utilities/-/primer-utilities-4.3.5.tgz#42c58e681459493fe99f2956c4b3bf7c04005d67"
-  dependencies:
-    primer-support "^4.0.7"
-
 private@^0.1.6, private@~0.1.5:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.7.tgz#68ce5e8a1ef0a23bb570cc28537b5332aba63ef1"
@@ -7245,23 +7235,11 @@ stylelint-config-css-modules@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-css-modules/-/stylelint-config-css-modules-1.1.0.tgz#268393b2740540fd72e0cc818d703eb069cda1c5"
 
-stylelint-config-sass-guidelines@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-sass-guidelines/-/stylelint-config-sass-guidelines-2.2.0.tgz#3c61a083dec14c87405b17f8f1e3bf26ccdfd3c5"
-  dependencies:
-    stylelint-order "^0.4.3"
-    stylelint-scss "^1.4.1"
-    stylelint-selector-no-utility "^1.1.0"
+stylelint-config-recommended@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-1.0.0.tgz#752c17fc68fa64cd5e7589e24f6e46e77e14a735"
 
-stylelint-order@^0.4.3:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-0.4.4.tgz#db7dfca0541b5062010c7e2e21e745791fc088ac"
-  dependencies:
-    lodash "^4.17.4"
-    postcss "^5.2.16"
-    stylelint "^7.9.0"
-
-stylelint-scss@^1.4.1, stylelint-scss@^1.5.1:
+stylelint-scss@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-1.5.1.tgz#a5aae203fc5aaaba484c7d1380f28560b6f33ac0"
   dependencies:
@@ -7272,14 +7250,7 @@ stylelint-scss@^1.4.1, stylelint-scss@^1.5.1:
     postcss-value-parser "^3.3.0"
     stylelint "^7.0.3"
 
-stylelint-selector-no-utility@^1.1.0:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/stylelint-selector-no-utility/-/stylelint-selector-no-utility-1.6.1.tgz#a2424235cc8092e9731613fb0f362f72d8338043"
-  dependencies:
-    primer-utilities "^4.3.5"
-    stylelint "^7.0.0"
-
-stylelint@^7.0.0, stylelint@^7.0.3, stylelint@^7.9.0:
+stylelint@^7.0.3:
   version "7.13.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-7.13.0.tgz#111f97b6da72e775c80800d6bb6f5f869997785d"
   dependencies:
