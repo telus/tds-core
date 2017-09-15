@@ -171,6 +171,7 @@ module.exports = {
             },
             {
               name: 'Lists',
+              content: path.resolve('src/components/Lists/Lists.md'),
               components() {
                 return compact([
                   toggleByEnv('Lists', path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx')),
@@ -191,6 +192,7 @@ module.exports = {
         },
         {
           name: 'Typography',
+          content: path.resolve('src/components/Typography/Typography.md'),
           sections: [
             {
               name: 'Text',
