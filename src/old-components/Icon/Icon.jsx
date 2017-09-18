@@ -1,8 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
+import { warn } from '../../warn'
+
 import styles from './Icon.modules.scss'
 
 const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
+  if (className) {
+    warn('Icon', 'Custom CSS classes are deprecated. This component does not support custom styling.')
+  }
+
+  if (rest.style) {
+    warn('Icon', 'Inline styles are deprecated. This component does not support custom styling.')
+  }
+
   const classes = `
     ${styles.icon}
     ${styles[`icon-core-${glyph}`]}
