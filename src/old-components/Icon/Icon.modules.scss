@@ -1,0 +1,90 @@
+@import '../../scss/settings/icons';
+@import '../../scss/settings/colours';
+@import '../../scss/utility/icons-utility';
+
+@font-face {
+  font-family: "TELUS Core Icons";
+  src: url('#{$icon-font-prefix}/core-icons.eot');
+  src:
+    url('#{$icon-font-prefix}/core-icons.woff2') format('woff2'),
+    url('#{$icon-font-prefix}/core-icons.woff') format('woff'),
+    url('#{$icon-font-prefix}/core-icons.ttf') format('truetype'),
+    url('#{$icon-font-prefix}/core-icons.eot?#iefix') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  @include core-icon;
+
+  transition: color .1s linear;
+
+  &--primary {
+    color: $color-icon-primary;
+  }
+
+  &--secondary {
+    color: $color-icon-secondary;
+  }
+
+  &--error {
+    color: $color-cardinal;
+  }
+
+  &--disabled {
+    color: $color-icon-disabled;
+  }
+
+  &--fw {
+    width: 1.09rem;
+    text-align: center;
+  }
+
+  &--small {
+    font-size: 1 rem;
+  }
+
+  &--medium {
+    font-size: 1.5rem;
+  }
+
+  &--large {
+    font-size: 3rem;
+  }
+}
+
+@each $name, $codepoint in $core-icon-codepoints {
+  .icon-core-#{$name}::before {
+    content: $codepoint;
+  }
+}
+
+// Variants
+.icon-color--inherit {
+  color: inherit;
+}
+
+.icon-color--primary {
+  color: $color-primary;
+}
+
+.icon-color--secondary {
+  color: $color-secondary;
+}
+
+.icon-color--inverted {
+  color: $color-white;
+}
+
+.icon-color--error {
+  color: $color-icon-error;
+}
+
+.icon-core-left-chevron {
+  @include core-icon(chevron);
+
+  &::before {
+    display: inline-block;
+    transform: rotate(-180deg) translateY(1.5px);
+  }
+}
