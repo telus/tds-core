@@ -18,6 +18,10 @@ const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }
     deprecate('Icon', '\'disabled\' variant is deprecated.')
   }
 
+  if (fixedWidth) {
+    deprecate('Icon', '\'fixedWidth\' prop is deprecated.')
+  }
+
   const classes = `${styles.icon} ${styles[`icon-core-${glyph}`]}`
     + ` ${variant ? styles[`icon--${variant}`] : ''}`
     + `${fixedWidth ? ` ${styles['icon--fw']}` : ''}`

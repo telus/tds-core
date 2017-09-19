@@ -82,5 +82,13 @@ describe('<Icon />', () => {
       expect(icon).toHaveClassName('icon--disabled')
       expect(deprecate).toHaveBeenCalled()
     })
+
+    it('deprecates fixedWidth prop', () => {
+      jest.clearAllMocks()
+      const icon = doShallow({ fixedWidth: true })
+
+      expect(icon).toHaveClassName('icon--fw')
+      expect(deprecate).toHaveBeenCalled()
+    })
   })
 })
