@@ -1,8 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
+import { deprecate } from '../../../warn'
 
 import Icon from '../Icon'
+
+jest.mock('../../../warn', () => (
+  { deprecate: jest.fn() }
+))
 
 describe('<Icon />', () => {
   const defaultProps = {
@@ -25,7 +30,7 @@ describe('<Icon />', () => {
   it('supports variants', () => {
     const icon = doShallow({ variant: 'secondary' })
 
-    expect(icon).toHaveClassName('icon-color--secondary')
+    expect(icon).toHaveClassName('icon--secondary')
   })
 
   it('can be fixed width', () => {
@@ -47,9 +52,35 @@ describe('<Icon />', () => {
   })
 
   it('passes additional attributes to the icon element', () => {
-    const button = doShallow({ id: 'the-icon', role: 'button' })
+    const icon = doShallow({ id: 'the-icon', role: 'button' })
 
-    expect(button).toHaveProp('id', 'the-icon')
-    expect(button).toHaveProp('role', 'button')
+    expect(icon).toHaveProp('id', 'the-icon')
+    expect(icon).toHaveProp('role', 'button')
+  })
+
+  describe('deprecated props', () => {
+    it('deprecates className', () => {
+      jest.clearAllMocks()
+      const icon = doShallow({ className: 'my-custom-class' })
+
+      expect(icon).toHaveProp('className')
+      expect(deprecate).toHaveBeenCalled()
+    })
+
+    it('deprecates style', () => {
+      jest.clearAllMocks()
+      const icon = doShallow({ style: 'color: hotpink' })
+
+      expect(icon).toHaveProp('style')
+      expect(deprecate).toHaveBeenCalled()
+    })
+
+    it('deprecates disabled variant', () => {
+      jest.clearAllMocks()
+      const icon = doShallow({ variant: 'disabled' })
+
+      expect(icon).toHaveClassName('icon--disabled')
+      expect(deprecate).toHaveBeenCalled()
+    })
   })
 })

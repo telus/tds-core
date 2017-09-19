@@ -1,27 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { warn } from '../../warn'
+import { deprecate } from '../../warn'
 
 import styles from './Icon.modules.scss'
 
 const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
   if (className) {
-    warn('Icon', 'Custom CSS classes are deprecated. This component does not support custom styling.')
+    deprecate('Icon', 'Custom CSS classes are deprecated. This component will soon stop supporting custom styling.')
   }
 
   if (rest.style) {
-    warn('Icon', 'Inline styles are deprecated. This component does not support custom styling.')
+    deprecate('Icon', 'Inline styles are deprecated. This component will soon stop supporting custom styling.')
   }
 
-  const classes = `
-    ${styles.icon}
-    ${styles[`icon-core-${glyph}`]}
-    ${variant ? styles[`icon-color--${variant}`] : styles['icon-color--inherit']}
-    ${fixedWidth ? styles['icon--fw'] : ''}
-    ${size ? styles[`icon--${size}`] : ''}
-    ${className}
-  `
+  if (variant === 'disabled') {
+    deprecate('Icon', '\'disabled\' variant is deprecated.')
+  }
+
+  const classes = `${styles.icon} ${styles[`icon-core-${glyph}`]}`
+    + ` ${variant ? styles[`icon--${variant}`] : ''}`
+    + `${fixedWidth ? ` ${styles['icon--fw']}` : ''}`
+    + `${size ? ` ${styles[`icon--${size}`]}` : ''}`
+    + `${` ${className}`}`
 
   return (
     <i {...rest} className={classes}>
@@ -53,20 +54,19 @@ Icon.propTypes = {
   ]).isRequired,
   /**
    * The appearance of the Icon.
-   *
-   * **Note**: when no variant is specified, the icon's colour is inherited from parent element.
    */
   variant: PropTypes.oneOf([
+    'inherit',
     'primary',
     'secondary',
     'inverted',
+    'disabled',
     'error'
   ]),
   /**
    * Whether or not to give the icon a fixed width.
    *
-   * @deprecated please use [Unordered Lists](#unorderedlist) to
-   * display icons uniformly within a column.
+   * @deprecated an alternative will be provided soon.
    */
   fixedWidth: PropTypes.bool,
   /**
@@ -89,7 +89,7 @@ Icon.propTypes = {
   children: PropTypes.node
 }
 Icon.defaultProps = {
-  variant: undefined,
+  variant: 'inherit',
   fixedWidth: false,
   size: 'medium',
   className: '',
