@@ -91,4 +91,23 @@ describe('<Icon />', () => {
       expect(deprecate).toHaveBeenCalled()
     })
   })
+
+  it('provides a label to specific glyphs', () => {
+    let icon = doShallow({ glyph: 'exclamation-point-circle' })
+    expect(icon).toHaveProp('aria-label', 'alert')
+    expect(icon).not.toHaveProp('aria-hidden', 'undefined')
+
+    icon = doShallow({ glyph: 'hamburger' })
+    expect(icon).toHaveProp('aria-label', 'menu')
+
+    icon = doShallow({ glyph: 'question-mark-circle' })
+    expect(icon).toHaveProp('aria-label', 'help')
+  })
+
+  it('sets aria-hidden to true for some glyphs', () => {
+    const icon = doShallow({ glyph: 'checkmark' })
+
+    expect(icon).toHaveProp('aria-hidden', true)
+    expect(icon).not.toHaveProp('aria-label', 'undefined')
+  })
 })

@@ -5,6 +5,38 @@ import { deprecate } from '../../warn'
 
 import styles from './Icon.modules.scss'
 
+const getLabel = (glyph, hidden) => {
+  let label = ''
+
+  switch (glyph) {
+    case 'exclamation-point-circle':
+      label = 'alert'
+      break
+    case 'hamburger':
+      label = 'menu'
+      break
+    case 'question-mark-circle':
+      label = 'help'
+      break
+    default:
+      break
+  }
+
+  // if icon gets label, aria-hidden is undefined
+  // if icon does not get label, aria-label is undefined
+  if ((hidden && label !== '') || (!hidden && label === '')) {
+    return undefined
+  } else if (hidden) {
+    // if icon does not get label, aria-hidden is true
+    return true
+  } else if (label !== '') {
+    // if icon gets label, aria-label is the label
+    return label
+  }
+
+  return undefined
+}
+
 const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
   if (className) {
     deprecate('Icon', 'Custom CSS classes are deprecated. This component will soon stop supporting custom styling.')
@@ -26,10 +58,14 @@ const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }
     + ` ${variant ? styles[`icon--${variant}`] : ''}`
     + `${fixedWidth ? ` ${styles['icon--fw']}` : ''}`
     + `${size ? ` ${styles[`icon--${size}`]}` : ''}`
-    + `${` ${className}`}`
+    + `${className ? ` ${className}` : ''}`
 
   return (
-    <i {...rest} className={classes}>
+    <i
+      {...rest}
+      className={classes}
+      aria-hidden={getLabel(glyph, true)}
+      aria-label={getLabel(glyph)}>
       {children}
     </i>
   )
