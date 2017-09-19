@@ -72,14 +72,14 @@ Steps.propTypes = {
    *
    * @see See [Steps.Step](#step)
    */
-  children: PropTypes.node,
+  children: PropTypes.node, // eslint-disable-line react/require-default-props
   /**
    * One or more CSS class names separated by spaces to append onto the container.
    * Don't advertise as we plan on removing this feature soon.
    *
    * @ignore
    */
-  className: PropTypes.string
+  className: PropTypes.string // eslint-disable-line react/require-default-props
 }
 
 Steps.defaultProps = {

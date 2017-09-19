@@ -31,7 +31,7 @@ Card.propTypes = {
    * One or more CSS class names separated by spaces to append onto the container.
    * @deprecated since v0.18.0. Card will no longer support custom styling.
    */
-  className: PropTypes.string,
+  className: PropTypes.string, // eslint-disable-line react/require-default-props
   /**
    * The Card's content. Can be text, any HTML element, or any component.
    */

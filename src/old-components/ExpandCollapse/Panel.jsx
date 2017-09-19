@@ -108,7 +108,7 @@ Panel.propTypes = {
   /**
    * @ignore
    */
-  onPanelClick: PropTypes.func,
+  onPanelClick: PropTypes.func, // eslint-disable-line react/require-default-props
   /**
    * @ignore
    */
@@ -116,14 +116,15 @@ Panel.propTypes = {
   /**
    * The panels. Must be TDS ExpandCollapse.Panel components.
    */
-  children: PropTypes.node
+  children: PropTypes.node // eslint-disable-line react/require-default-props
 }
 
 Panel.defaultProps = {
   isActive: false,
   isDisabled: false,
   className: '',
-  header: ''
+  header: '',
+  isFirst: false
 }
 
 

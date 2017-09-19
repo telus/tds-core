@@ -15,19 +15,11 @@ class Spinner extends Component {
     this.isNestedPattern = this.isNestedPattern.bind(this)
   }
 
-  enableBodyScrolling() {
-    document.body.style.overflow = 'inherit'
-  }
-
-  disableBodyScrolling() {
-    document.body.style.overflow = 'hidden'
-  }
-
-  componentDidUpdate() {
+  componentDidMount() {
     this.toggleBodyScrolling(this.props)
   }
 
-  componentDidMount() {
+  componentDidUpdate() {
     this.toggleBodyScrolling(this.props)
   }
 
@@ -35,8 +27,19 @@ class Spinner extends Component {
     this.enableBodyScrolling()
   }
 
-  isNestedPattern() {
-    return !!(this.props && this.props.children)
+  getSpinWrapper(spinEl, spinning, wrapperClassNames) {
+    const containerCls = classnames('spinner-container', {
+      'spinner-container--loading': spinning
+    }, wrapperClassNames)
+    return (
+      <div className="spinner-wrapper">
+        {spinning && <div className="spinner-wrapper__content-blocker" />}
+        {spinEl}
+        <div className={containerCls}>
+          {this.props.children}
+        </div>
+      </div>
+    )
   }
 
   getSpinElement(spinning, tip, fullScreen) {
@@ -66,19 +69,16 @@ class Spinner extends Component {
     )
   }
 
-  getSpinWrapper(spinEl, spinning, wrapperClassNames) {
-    const containerCls = classnames('spinner-container', {
-      'spinner-container--loading': spinning
-    }, wrapperClassNames)
-    return (
-      <div className="spinner-wrapper">
-        {spinning && <div className="spinner-wrapper__content-blocker" />}
-        {spinEl}
-        <div className={containerCls}>
-          {this.props.children}
-        </div>
-      </div>
-    )
+  enableBodyScrolling() {
+    document.body.style.overflow = 'inherit'
+  }
+
+  disableBodyScrolling() {
+    document.body.style.overflow = 'hidden'
+  }
+
+  isNestedPattern() {
+    return !!(this.props && this.props.children)
   }
 
   toggleBodyScrolling({ fullScreen, spinning }) {
@@ -107,7 +107,7 @@ Spinner.propTypes = {
   /**
    * A message to display along with the spinner animation.
    */
-  tip: PropTypes.string,
+  tip: PropTypes.string, // eslint-disable-line react/require-default-props
   /**
    * Whether or not to display the component.
    */
@@ -120,11 +120,12 @@ Spinner.propTypes = {
    * Content to be overlaid when the spinner is active. Can be text, any HTML element,
    * or any component.
    */
-  children: PropTypes.node
+  children: PropTypes.node // eslint-disable-line react/require-default-props
 }
 
 Spinner.defaultProps = {
   wrapperClassNames: '',
+  spinning: false,
   fullScreen: false
 }
 

@@ -132,7 +132,7 @@ SelectorCounter.propTypes = {
    *
    * @ignore
    */
-  className: PropTypes.string,
+  className: PropTypes.string, // eslint-disable-line react/require-default-props
   /**
    * The initial value.
    */
@@ -158,7 +158,7 @@ SelectorCounter.propTypes = {
    *
    * @param {number} value The value.
    */
-  onChange: PropTypes.func,
+  onChange: PropTypes.func, // eslint-disable-line react/require-default-props
   /**
    * Whether or not to disable the input.
    */
@@ -189,6 +189,9 @@ SelectorCounter.defaultProps = {
   id: `sc${Math.ceil(Math.random() * 10000)}`,
   incrementorLabel: 'Increase value',
   decrementorLabel: 'Decrease value',
+  disabled: false,
+  invalid: false,
+  successful: false,
   contextPrefix: '',
   contextSuffix: ''
 }

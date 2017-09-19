@@ -99,7 +99,7 @@ Group.propTypes = {
    *
    * @ignore
    */
-  className: PropTypes.string,
+  className: PropTypes.string, // eslint-disable-line react/require-default-props
   /**
    * A key identifier that corresponds Group toggles with their respective expanded Panels.
    */
@@ -115,14 +115,14 @@ Group.propTypes = {
   /**
    * The panels. Must be TDS ExpandCollapse.Panel components.
    */
-  children: PropTypes.node,
+  children: PropTypes.node, // eslint-disable-line react/require-default-props
   /**
    * A callback to invoke when a Panel is toggled.
    *
    * @param {Object} this The Group's context.
    * @param {String} panelKey The toggled Panel's key.
    */
-  onChange: PropTypes.func
+  onChange: PropTypes.func // eslint-disable-line react/require-default-props
 }
 
 Group.defaultProps = {

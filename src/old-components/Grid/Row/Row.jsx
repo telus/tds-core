@@ -27,7 +27,7 @@ Row.propTypes = {
    *
    * @ignore
    */
-  className: PropTypes.string,
+  className: PropTypes.string, // eslint-disable-line react/require-default-props
   /**
    * The grid's columns. Must be TDS `Grid.Column` components.
    *

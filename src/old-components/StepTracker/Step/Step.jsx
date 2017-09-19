@@ -36,13 +36,13 @@ Step.propTypes = {
    *
    * @ignore
    */
-  status: PropTypes.oneOf(['waiting', 'processing', 'completed']),
+  status: PropTypes.oneOf(['waiting', 'processing', 'completed']), // eslint-disable-line react/require-default-props
   /**
    * Each step's status is determined by its parent Steps component.
    *
    * @ignore
    */
-  stepNumber: PropTypes.number
+  stepNumber: PropTypes.number // eslint-disable-line react/require-default-props
 }
 
 export default Step
