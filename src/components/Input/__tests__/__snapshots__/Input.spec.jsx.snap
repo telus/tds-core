@@ -77,7 +77,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
         class="marginLeft-3"
       >
         <i
-          aria-label="alert"
+          aria-hidden="true"
           class="icon icon-core-exclamation-point-circle icon--inherit icon--medium"
         />
       </div>

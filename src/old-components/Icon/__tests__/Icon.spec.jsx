@@ -13,6 +13,7 @@ describe('<Icon />', () => {
   const defaultProps = {
     glyph: 'checkmark'
   }
+
   const doShallow = (overrides = {}) => shallow(<Icon {...defaultProps} {...overrides} />)
 
   it('renders', () => {
@@ -93,21 +94,16 @@ describe('<Icon />', () => {
   })
 
   it('provides a label to specific glyphs', () => {
-    let icon = doShallow({ glyph: 'exclamation-point-circle' })
+    const icon = doShallow({ glyph: 'exclamation-point-circle', label: 'alert' })
+
     expect(icon).toHaveProp('aria-label', 'alert')
     expect(icon).not.toHaveProp('aria-hidden', 'undefined')
-
-    icon = doShallow({ glyph: 'hamburger' })
-    expect(icon).toHaveProp('aria-label', 'menu')
-
-    icon = doShallow({ glyph: 'question-mark-circle' })
-    expect(icon).toHaveProp('aria-label', 'help')
   })
 
-  it('sets aria-hidden to true for some glyphs', () => {
+  it('sets aria-hidden to true when label is not set', () => {
     const icon = doShallow({ glyph: 'checkmark' })
 
-    expect(icon).toHaveProp('aria-hidden', true)
+    expect(icon).toHaveProp('aria-hidden', 'true')
     expect(icon).not.toHaveProp('aria-label', 'undefined')
   })
 })

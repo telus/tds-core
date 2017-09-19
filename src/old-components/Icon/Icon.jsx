@@ -5,39 +5,7 @@ import { deprecate } from '../../warn'
 
 import styles from './Icon.modules.scss'
 
-const getLabel = (glyph, hidden) => {
-  let label = ''
-
-  switch (glyph) {
-    case 'exclamation-point-circle':
-      label = 'alert'
-      break
-    case 'hamburger':
-      label = 'menu'
-      break
-    case 'question-mark-circle':
-      label = 'help'
-      break
-    default:
-      break
-  }
-
-  // if icon gets label, aria-hidden is undefined
-  // if icon does not get label, aria-label is undefined
-  if ((hidden && label !== '') || (!hidden && label === '')) {
-    return undefined
-  } else if (hidden) {
-    // if icon does not get label, aria-hidden is true
-    return true
-  } else if (label !== '') {
-    // if icon gets label, aria-label is the label
-    return label
-  }
-
-  return undefined
-}
-
-const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
+const Icon = ({ glyph, variant, label, fixedWidth, size, className, children, ...rest }) => {
   if (className) {
     deprecate('Icon', 'Custom CSS classes are deprecated. This component will soon stop supporting custom styling.')
   }
@@ -64,8 +32,9 @@ const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }
     <i
       {...rest}
       className={classes}
-      aria-hidden={getLabel(glyph, true)}
-      aria-label={getLabel(glyph)}>
+      aria-label={label || undefined}
+      aria-hidden={label ? 'false' : 'true'}
+    >
       {children}
     </i>
   )
@@ -120,6 +89,10 @@ Icon.propTypes = {
    * @ignore
    */
   className: PropTypes.string,
+  /**
+   * @ignore
+   */
+  label: PropTypes.string,
   /**
    * This can be used to add screen-reader content into the icon, but it must
    * be hidden from view. This behaviour is better accomplished with aria-* attributes.
