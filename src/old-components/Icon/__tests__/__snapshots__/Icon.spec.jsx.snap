@@ -2,7 +2,13 @@
 
 exports[`<Icon /> renders 1`] = `
 <i
-  aria-hidden="true"
-  className="icon icon-core-checkmark icon--inherit icon--medium"
+  className="
+    icon
+    icon-core-checkmark
+    icon-color--inherit
+    
+    icon--medium
+    
+  "
 />
 `;

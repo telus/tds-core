@@ -1,19 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
-import { deprecate } from '../../../warn'
 
 import Icon from '../Icon'
-
-jest.mock('../../../warn', () => (
-  { deprecate: jest.fn() }
-))
 
 describe('<Icon />', () => {
   const defaultProps = {
     glyph: 'checkmark'
   }
-
   const doShallow = (overrides = {}) => shallow(<Icon {...defaultProps} {...overrides} />)
 
   it('renders', () => {
@@ -31,7 +25,7 @@ describe('<Icon />', () => {
   it('supports variants', () => {
     const icon = doShallow({ variant: 'secondary' })
 
-    expect(icon).toHaveClassName('icon--secondary')
+    expect(icon).toHaveClassName('icon-color--secondary')
   })
 
   it('can be fixed width', () => {
@@ -53,57 +47,9 @@ describe('<Icon />', () => {
   })
 
   it('passes additional attributes to the icon element', () => {
-    const icon = doShallow({ id: 'the-icon', role: 'button' })
+    const button = doShallow({ id: 'the-icon', role: 'button' })
 
-    expect(icon).toHaveProp('id', 'the-icon')
-    expect(icon).toHaveProp('role', 'button')
-  })
-
-  describe('deprecated props', () => {
-    it('deprecates className', () => {
-      jest.clearAllMocks()
-      const icon = doShallow({ className: 'my-custom-class' })
-
-      expect(icon).toHaveProp('className')
-      expect(deprecate).toHaveBeenCalled()
-    })
-
-    it('deprecates style', () => {
-      jest.clearAllMocks()
-      const icon = doShallow({ style: 'color: hotpink' })
-
-      expect(icon).toHaveProp('style')
-      expect(deprecate).toHaveBeenCalled()
-    })
-
-    it('deprecates disabled variant', () => {
-      jest.clearAllMocks()
-      const icon = doShallow({ variant: 'disabled' })
-
-      expect(icon).toHaveClassName('icon--disabled')
-      expect(deprecate).toHaveBeenCalled()
-    })
-
-    it('deprecates fixedWidth prop', () => {
-      jest.clearAllMocks()
-      const icon = doShallow({ fixedWidth: true })
-
-      expect(icon).toHaveClassName('icon--fw')
-      expect(deprecate).toHaveBeenCalled()
-    })
-  })
-
-  it('provides a label to specific glyphs', () => {
-    const icon = doShallow({ glyph: 'exclamation-point-circle', label: 'alert' })
-
-    expect(icon).toHaveProp('aria-label', 'alert')
-    expect(icon).not.toHaveProp('aria-hidden', 'undefined')
-  })
-
-  it('sets aria-hidden to true when label is not set', () => {
-    const icon = doShallow({ glyph: 'checkmark' })
-
-    expect(icon).toHaveProp('aria-hidden', 'true')
-    expect(icon).not.toHaveProp('aria-label', 'undefined')
+    expect(button).toHaveProp('id', 'the-icon')
+    expect(button).toHaveProp('role', 'button')
   })
 })

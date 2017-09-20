@@ -227,7 +227,7 @@ module.exports = {
         },
         {
           name: 'Icons',
-          components: path.resolve('src/old-components/Icon/Icon.jsx')
+          components: toggleByEnv('Icon', path.resolve('src/components/Icon/Icon.jsx'), path.resolve('src/old-components/Icon/Icon.jsx'))
         },
         {
           name: 'Feedback Indicators',

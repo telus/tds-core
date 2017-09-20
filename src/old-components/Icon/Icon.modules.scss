@@ -27,10 +27,6 @@
     color: $color-icon-secondary;
   }
 
-  &--inverted {
-    color: $color-white;
-  }
-
   &--error {
     color: $color-cardinal;
   }
@@ -61,6 +57,27 @@
   .icon-core-#{$name}::before {
     content: $codepoint;
   }
+}
+
+// Variants
+.icon-color--inherit {
+  color: inherit;
+}
+
+.icon-color--primary {
+  color: $color-primary;
+}
+
+.icon-color--secondary {
+  color: $color-secondary;
+}
+
+.icon-color--inverted {
+  color: $color-white;
+}
+
+.icon-color--error {
+  color: $color-icon-error;
 }
 
 .icon-core-left-chevron {

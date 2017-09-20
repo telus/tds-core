@@ -1,40 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import { deprecate } from '../../warn'
-
 import styles from './Icon.modules.scss'
 
-const Icon = ({ glyph, variant, label, fixedWidth, size, className, children, ...rest }) => {
-  if (className) {
-    deprecate('Icon', 'Custom CSS classes are deprecated. This component will soon stop supporting custom styling.')
-  }
-
-  if (rest.style) {
-    deprecate('Icon', 'Inline styles are deprecated. This component will soon stop supporting custom styling.')
-  }
-
-  if (variant === 'disabled') {
-    deprecate('Icon', '\'disabled\' variant is deprecated.')
-  }
-
-  if (fixedWidth) {
-    deprecate('Icon', '\'fixedWidth\' prop is deprecated.')
-  }
-
-  const classes = `${styles.icon} ${styles[`icon-core-${glyph}`]}`
-    + ` ${variant ? styles[`icon--${variant}`] : ''}`
-    + `${fixedWidth ? ` ${styles['icon--fw']}` : ''}`
-    + `${size ? ` ${styles[`icon--${size}`]}` : ''}`
-    + `${className ? ` ${className}` : ''}`
+const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
+  const classes = `
+    ${styles.icon}
+    ${styles[`icon-core-${glyph}`]}
+    ${variant ? styles[`icon-color--${variant}`] : styles['icon-color--inherit']}
+    ${fixedWidth ? styles['icon--fw'] : ''}
+    ${size ? styles[`icon--${size}`] : ''}
+    ${className}
+  `
 
   return (
-    <i
-      {...rest}
-      className={classes}
-      aria-label={label}
-      aria-hidden={label ? undefined : 'true'}
-    >
+    <i {...rest} className={classes}>
       {children}
     </i>
   )
@@ -63,19 +42,20 @@ Icon.propTypes = {
   ]).isRequired,
   /**
    * The appearance of the Icon.
+   *
+   * **Note**: when no variant is specified, the icon's colour is inherited from parent element.
    */
   variant: PropTypes.oneOf([
-    'inherit',
     'primary',
     'secondary',
     'inverted',
-    'disabled',
     'error'
   ]),
   /**
    * Whether or not to give the icon a fixed width.
    *
-   * @deprecated an alternative will be provided soon.
+   * @deprecated please use [Unordered Lists](#unorderedlist) to
+   * display icons uniformly within a column.
    */
   fixedWidth: PropTypes.bool,
   /**
@@ -90,18 +70,15 @@ Icon.propTypes = {
    */
   className: PropTypes.string,
   /**
-   * Creates an `aria-label` attribute with the label you specify.
+   * This can be used to add screen-reader content into the icon, but it must
+   * be hidden from view. This behaviour is better accomplished with aria-* attributes.
    *
-   * If not provided, `aria-hidden` is set to true.
-   */
-  label: PropTypes.string,
-  /**
    * @ignore
    */
   children: PropTypes.node
 }
 Icon.defaultProps = {
-  variant: 'inherit',
+  variant: undefined,
   fixedWidth: false,
   size: 'medium',
   className: '',
