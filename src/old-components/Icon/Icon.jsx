@@ -32,8 +32,8 @@ const Icon = ({ glyph, variant, label, fixedWidth, size, className, children, ..
     <i
       {...rest}
       className={classes}
-      aria-label={label || undefined}
-      aria-hidden={label ? 'false' : 'true'}
+      aria-label={label}
+      aria-hidden={label ? undefined : 'true'}
     >
       {children}
     </i>
@@ -90,13 +90,12 @@ Icon.propTypes = {
    */
   className: PropTypes.string,
   /**
-   * @ignore
+   * Creates an `aria-label` attribute with the label you specify.
+   *
+   * If not provided, `aria-hidden` is set to true.
    */
   label: PropTypes.string,
   /**
-   * This can be used to add screen-reader content into the icon, but it must
-   * be hidden from view. This behaviour is better accomplished with aria-* attributes.
-   *
    * @ignore
    */
   children: PropTypes.node
