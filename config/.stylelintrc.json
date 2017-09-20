@@ -1,7 +1,7 @@
 {
   "extends": [
-    "stylelint-config-css-modules",
-    "stylelint-config-standard"
+    "stylelint-config-standard",
+    "stylelint-config-css-modules"
   ],
   "plugins": [
     "stylelint-scss"
@@ -15,25 +15,6 @@
           "include"
         ]
       }
-    ],
-    "declaration-block-no-duplicate-properties": [
-      true,
-      {
-        "ignoreProperties": [
-          "composes"
-        ]
-      }
-    ],
-    "property-no-unknown": [
-      true,
-      {
-        "ignoreProperties": [
-          "composes"
-        ]
-      }
-    ],
-    "declaration-empty-line-before": [
-      "never"
     ]
   }
 }

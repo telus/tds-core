@@ -45,6 +45,7 @@ $button-text-color: $color-white;
 
   &:hover {
     @include border;
+
     color: $button-text-color;
   }
 }
@@ -56,6 +57,7 @@ $button-text-color: $color-white;
 
   &:hover {
     @include border;
+
     background-color: $button-text-color;
     color: $primary-bg-color;
   }
@@ -68,6 +70,7 @@ $button-text-color: $color-white;
 
   &:hover {
     @include border;
+
     background-color: $button-text-color;
     color: $secondary-bg-color;
   }
@@ -87,6 +90,7 @@ $button-text-color: $color-white;
   composes: button;
 
   @include border;
+
   background-color: transparent;
   color: $button-text-color;
 
@@ -103,6 +107,7 @@ $button-text-color: $color-white;
 
   &:hover {
     @include border;
+
     background-color: transparent;
   }
 }
@@ -114,6 +119,7 @@ $button-text-color: $color-white;
 
   &:hover {
     @include border;
+
     background-color: transparent;
     color: $button-text-color;
   }

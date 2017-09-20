@@ -21,6 +21,7 @@
   composes: noSpacing from '../../Spacing/Spacing.modules.scss';
 
   @include helvetica-neue-medium-65;
+
   letter-spacing: -0.6px;
 }
 

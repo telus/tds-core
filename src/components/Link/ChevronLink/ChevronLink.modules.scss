@@ -2,8 +2,9 @@
 @import '../../../scss/settings/typography';
 
 .link {
-  @include helvetica-neue-roman-55;
   composes: medium from '../../Typography/Text/Text.modules.scss';
+
+  @include helvetica-neue-roman-55;
 
   &:hover {
     .rightChevron {
