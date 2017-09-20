@@ -258,6 +258,7 @@ module.exports = {
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve('styleguide', styleguidistEnv),
   require: [
+    'babel-polyfill',
     path.resolve('src/scss/global.scss'),
     path.resolve('docs/scss/styleguide.scss')
   ],
