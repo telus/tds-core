@@ -2,18 +2,6 @@
 @import '../../scss/settings/colours';
 @import '../../scss/utility/icons-utility';
 
-@font-face {
-  font-family: "TELUS Core Icons";
-  src: url('#{$icon-font-prefix}/core-icons.eot');
-  src:
-    url('#{$icon-font-prefix}/core-icons.woff2') format('woff2'),
-    url('#{$icon-font-prefix}/core-icons.woff') format('woff'),
-    url('#{$icon-font-prefix}/core-icons.ttf') format('truetype'),
-    url('#{$icon-font-prefix}/core-icons.eot?#iefix') format('eot');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .icon {
   @include core-icon;
 
