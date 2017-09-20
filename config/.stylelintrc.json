@@ -12,7 +12,8 @@
       {
         "ignoreAtRules": [
           "mixin",
-          "include"
+          "include",
+          "each"
         ]
       }
     ]
