@@ -89,9 +89,9 @@ component, which can contain any content.
 
 ```
 const creditCards = (
-  <Paragraph>
+  <Text>
     We accept the following credit cards: <Text bold>Visa, Mastercard, Discover</Text>.
-  </Paragraph>
+  </Text>
 );
 
 <Input label="Credit Card Number" helper={creditCards} />

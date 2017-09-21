@@ -206,19 +206,19 @@ describe('Input', () => {
 
     expect(input).toContainReact(
       <Helper id="some-id_error-message" feedback="error">
-        <Paragraph>Oh no a terrible error!</Paragraph>
+        <Paragraph size="small">Oh no a terrible error!</Paragraph>
       </Helper>
     )
   })
 
   describe('helpers', () => {
     it('can have a simple helper of some components', () => {
-      const helper = <Paragraph>Some helper text.</Paragraph>
+      const helper = <div>Some helper text.</div>
       const input = doShallow({ id: 'some-id', helper })
 
       expect(input).toContainReact(
         <Input.Helper id="some-id_helper">
-          <Paragraph>Some helper text.</Paragraph>
+          <Text size="small"><div>Some helper text.</div></Text>
         </Input.Helper>
       )
     })

@@ -92,7 +92,7 @@ class Input extends React.Component {
   renderError(error, errorId) {
     return (
       <Helper id={errorId} feedback="error">
-        <Paragraph>{error}</Paragraph>
+        <Paragraph size="small">{error}</Paragraph>
       </Helper>
     )
   }
@@ -108,7 +108,7 @@ class Input extends React.Component {
 
     return (
       <Helper id={helperId} feedback={feedback}>
-        {helper}
+        <Text size="small">{helper}</Text>
       </Helper>
     )
   }
@@ -195,7 +195,7 @@ Input.propTypes = {
    * A detailed explanation of the input expected by a form field. Can be text,
    * other components, or HTML elements.
    *
-   * If a function is provided, it must return a "node". The function will be
+   * If a function is provided, it must return an `Input.Helper`. The function will be
    * invoked with the following arguments.
    *
    * @param {String} feedback The input's current feedback state.
