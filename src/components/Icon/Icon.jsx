@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { deprecate } from '../../warn'
+import capitalize from './capitalize'
 
 import styles from './Icon.modules.scss'
 
@@ -22,11 +23,12 @@ const Icon = ({ glyph, variant, label, fixedWidth, size, className, children, ..
     deprecate('Icon', '\'fixedWidth\' prop is deprecated.')
   }
 
-  const classes = `${styles.icon} ${styles[`iconCore${glyph.charAt(0).toUpperCase()}${glyph.slice(1)}`]}`
+  const classes = `${styles.icon}`
+    + ` ${styles[`iconCore${capitalize(glyph)}`]}`
     + ` ${variant ? styles[variant] : ''}`
-    + `${fixedWidth ? ` ${styles.fw}` : ''}`
-    + `${size ? ` ${styles[size]}` : ''}`
-    + `${className ? ` ${className}` : ''}`
+    + ` ${fixedWidth ? `${styles.fw}` : ''}`
+    + ` ${size ? `${styles[size]}` : ''}`
+    + ` ${className ? `${className}` : ''}`
 
   return (
     <i

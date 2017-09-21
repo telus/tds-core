@@ -4,21 +4,21 @@
 
 // Unicode points of each icon's location within the font files.
 $core-icon-codepoints: (
-  caretDown: "\f105",
-  caretUp: "\f106",
-  checkmark: "\f101",
-  chevron: "\f107",
-  leftChevron: "\f107",
-  exclamationPointCircle: "\f103",
-  expander: "\f113",
-  hamburger: "\f112",
-  incomplete: "\f104",
-  location: "\f110",
-  minus: "\f109",
-  plus: "\f108",
-  questionMarkCircle: "\f102",
-  spyglass: "\f111",
-  times: "\f104"
+  CaretDown: "\f105",
+  CaretUp: "\f106",
+  Checkmark: "\f101",
+  Chevron: "\f107",
+  LeftChevron: "\f107",
+  ExclamationPointCircle: "\f103",
+  Expander: "\f113",
+  Hamburger: "\f112",
+  Incomplete: "\f104",
+  Location: "\f110",
+  Minus: "\f109",
+  Plus: "\f108",
+  QuestionMarkCircle: "\f102",
+  Spyglass: "\f111",
+  Times: "\f104"
 );
 
 .icon {
@@ -65,7 +65,7 @@ $core-icon-codepoints: (
 }
 
 @each $name, $codepoint in $core-icon-codepoints {
-  .iconCore#{to-upper-case($name)}::before {
+  .iconCore#{$name}::before {
     // composes: icon; TODO: can't use composes inside sass @each and
     // composes doesn't quite make sense on the color modifiers
     content: $codepoint;
