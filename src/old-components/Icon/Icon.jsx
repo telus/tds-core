@@ -1,16 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './Icon.modules.scss'
+import classNames from 'classnames'
 
 const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
-  const classes = `
-    ${styles.icon}
-    ${styles[`icon-core-${glyph}`]}
-    ${variant ? styles[`icon-color--${variant}`] : styles['icon-color--inherit']}
-    ${fixedWidth ? styles['icon--fw'] : ''}
-    ${size ? styles[`icon--${size}`] : ''}
-    ${className}
-  `
+  const classes = classNames(
+    'icon',
+    `icon-core-${glyph}`,
+    className,
+    {
+      'icon--fw': fixedWidth,
+      [`icon--${variant}`]: variant,
+      'icon--large': size
+    }
+  )
 
   return (
     <i {...rest} className={classes}>
@@ -42,26 +44,21 @@ Icon.propTypes = {
   ]).isRequired,
   /**
    * The appearance of the Icon.
-   *
-   * **Note**: when no variant is specified, the icon's colour is inherited from parent element.
    */
   variant: PropTypes.oneOf([
     'primary',
     'secondary',
-    'inverted',
+    'disabled',
     'error'
   ]),
   /**
    * Whether or not to give the icon a fixed width.
-   *
-   * @deprecated please use [Unordered Lists](#unorderedlist) to
-   * display icons uniformly within a column.
    */
   fixedWidth: PropTypes.bool,
   /**
-   *
+   * @ignore
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['large']),
   /**
    * One or more CSS class names separated by spaces to append onto the icon.
    * Don't advertise as we plan on removing this feature soon.
@@ -78,9 +75,9 @@ Icon.propTypes = {
   children: PropTypes.node
 }
 Icon.defaultProps = {
-  variant: undefined,
+  variant: null,
   fixedWidth: false,
-  size: 'medium',
+  size: null,
   className: '',
   children: null
 }

@@ -25,7 +25,7 @@ describe('<Icon />', () => {
   it('supports variants', () => {
     const icon = doShallow({ variant: 'secondary' })
 
-    expect(icon).toHaveClassName('icon-color--secondary')
+    expect(icon).toHaveClassName('icon--secondary')
   })
 
   it('can be fixed width', () => {
@@ -35,9 +35,9 @@ describe('<Icon />', () => {
   })
 
   it('can be sized', () => {
-    const icon = doShallow({ size: 'small' })
+    const icon = doShallow({ size: 'large' })
 
-    expect(icon).toHaveClassName('icon--small')
+    expect(icon).toHaveClassName('icon--large')
   })
 
   it('supports custom CSS classes', () => {
