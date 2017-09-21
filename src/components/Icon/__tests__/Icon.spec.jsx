@@ -41,9 +41,9 @@ describe('<Icon />', () => {
   })
 
   it('can be sized', () => {
-    const icon = doShallow({ size: 'small' })
+    const icon = doShallow({ size: '16px' })
 
-    expect(icon).toHaveClassName('small')
+    expect(icon).toHaveClassName('size16px')
   })
 
   it('supports custom CSS classes', () => {

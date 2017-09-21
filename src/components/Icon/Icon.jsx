@@ -28,7 +28,7 @@ const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }
     `${styles[`iconCore${capitalize(glyph)}`]}`,
     `${variant ? styles[variant] : ''}`,
     `${fixedWidth ? `${styles.fw}` : ''}`,
-    `${size ? `${styles[size]}` : ''}`,
+    `${size ? `${styles[`size${size}`]}` : ''}`,
     `${className ? `${className}` : ''}`
   ].join(' ')
 
@@ -85,7 +85,7 @@ Icon.propTypes = {
   /**
    *
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['16px', '24px', '48px']),
   /**
    * One or more CSS class names separated by spaces to append onto the icon.
    * Don't advertise as we plan on removing this feature soon.
@@ -101,7 +101,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   variant: 'inherit',
   fixedWidth: false,
-  size: 'medium',
+  size: '24px',
   className: '',
   children: null
 }
