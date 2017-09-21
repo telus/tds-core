@@ -2,8 +2,6 @@ import React from 'react'
 import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import ColoredTextProvider from '../../../Typography/ColoredTextProvider/ColoredTextProvider'
-
 import Helper from '../Helper'
 
 describe('Helper', () => {
@@ -27,22 +25,6 @@ describe('Helper', () => {
 
     helper = doShallow({ feedback: 'success' })
     expect(helper).toHaveClassName('success')
-  })
-
-  it('does not color the success content', () => {
-    const helper = doShallow({ feedback: 'success' }, 'A success message')
-
-    expect(helper.find(ColoredTextProvider)).not.toBePresent()
-  })
-
-  it('colors the error content', () => {
-    const helper = doShallow({ feedback: 'error' }, 'An error message')
-
-    expect(helper).toContainReact(
-      <ColoredTextProvider colorClassName="errorText">
-        An error message
-      </ColoredTextProvider>
-    )
   })
 
   it('passes additional attributes to the element', () => {
