@@ -25,25 +25,25 @@ describe('<Icon />', () => {
   it('needs a glyph', () => {
     const icon = doShallow({ glyph: 'spyglass' })
 
-    expect(icon).toHaveClassName('icon-core-spyglass')
+    expect(icon).toHaveClassName('iconCoreSpyglass')
   })
 
   it('supports variants', () => {
     const icon = doShallow({ variant: 'secondary' })
 
-    expect(icon).toHaveClassName('icon--secondary')
+    expect(icon).toHaveClassName('secondary')
   })
 
   it('can be fixed width', () => {
     const icon = doShallow({ fixedWidth: true })
 
-    expect(icon).toHaveClassName('icon--fw')
+    expect(icon).toHaveClassName('fw')
   })
 
   it('can be sized', () => {
     const icon = doShallow({ size: 'small' })
 
-    expect(icon).toHaveClassName('icon--small')
+    expect(icon).toHaveClassName('small')
   })
 
   it('supports custom CSS classes', () => {
@@ -80,7 +80,7 @@ describe('<Icon />', () => {
       jest.clearAllMocks()
       const icon = doShallow({ variant: 'disabled' })
 
-      expect(icon).toHaveClassName('icon--disabled')
+      expect(icon).toHaveClassName('disabled')
       expect(deprecate).toHaveBeenCalled()
     })
 
@@ -88,13 +88,13 @@ describe('<Icon />', () => {
       jest.clearAllMocks()
       const icon = doShallow({ fixedWidth: true })
 
-      expect(icon).toHaveClassName('icon--fw')
+      expect(icon).toHaveClassName('fw')
       expect(deprecate).toHaveBeenCalled()
     })
   })
 
   it('provides a label to specific glyphs', () => {
-    const icon = doShallow({ glyph: 'exclamation-point-circle', label: 'alert' })
+    const icon = doShallow({ glyph: 'exclamationPointCircle', label: 'alert' })
 
     expect(icon).toHaveProp('aria-label', 'alert')
     expect(icon).not.toHaveProp('aria-hidden', 'undefined')

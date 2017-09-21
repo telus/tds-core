@@ -22,10 +22,10 @@ const Icon = ({ glyph, variant, label, fixedWidth, size, className, children, ..
     deprecate('Icon', '\'fixedWidth\' prop is deprecated.')
   }
 
-  const classes = `${styles.icon} ${styles[`icon-core-${glyph}`]}`
-    + ` ${variant ? styles[`icon--${variant}`] : ''}`
-    + `${fixedWidth ? ` ${styles['icon--fw']}` : ''}`
-    + `${size ? ` ${styles[`icon--${size}`]}` : ''}`
+  const classes = `${styles.icon} ${styles[`iconCore${glyph.charAt(0).toUpperCase()}${glyph.slice(1)}`]}`
+    + ` ${variant ? styles[variant] : ''}`
+    + `${fixedWidth ? ` ${styles.fw}` : ''}`
+    + `${size ? ` ${styles[size]}` : ''}`
     + `${className ? ` ${className}` : ''}`
 
   return (
@@ -45,19 +45,19 @@ Icon.propTypes = {
    * Name of the icon glyph.
    */
   glyph: PropTypes.oneOf([
-    'caret-down',
-    'caret-up',
+    'caretDown',
+    'caretUp',
     'checkmark',
     'chevron',
-    'left-chevron',
-    'exclamation-point-circle',
+    'leftChevron',
+    'exclamationPointCircle',
     'expander',
     'hamburger',
     'incomplete',
     'location',
     'minus',
     'plus',
-    'question-mark-circle',
+    'questionMarkCircle',
     'spyglass',
     'times'
   ]).isRequired,
@@ -93,8 +93,10 @@ Icon.propTypes = {
    * Creates an `aria-label` attribute with the label you specify.
    *
    * If not provided, `aria-hidden` is set to true.
+   *
+   * TODO: rename this prop to a11yText
    */
-  label: PropTypes.string,
+  label: PropTypes.string, // eslint-disable-line react/require-default-props
   /**
    * @ignore
    */

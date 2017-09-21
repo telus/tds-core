@@ -2,19 +2,19 @@
 
 ```
 <div className="docs--horizontal-spacing">
-  <Icon glyph="caret-down" />
-  <Icon glyph="caret-up" />
+  <Icon glyph="caretDown" />
+  <Icon glyph="caretUp" />
   <Icon glyph="checkmark" />
-  <Icon glyph="left-chevron" />
+  <Icon glyph="leftChevron" />
   <Icon glyph="chevron" />
-  <Icon glyph="exclamation-point-circle" />
+  <Icon glyph="exclamationPointCircle" />
   <Icon glyph="expander" />
   <Icon glyph="hamburger" />
   <Icon glyph="incomplete" />
   <Icon glyph="location" />
   <Icon glyph="minus" />
   <Icon glyph="plus" />
-  <Icon glyph="question-mark-circle" />
+  <Icon glyph="questionMarkCircle" />
   <Icon glyph="spyglass" />
   <Icon glyph="times" />
 </div>
@@ -28,7 +28,7 @@ Use the `variant` prop to alter the icon's color. Each variant has semantic mean
 <div className="docs--horizontal-spacing">
   <Icon glyph="checkmark" variant="primary" />
   <Icon glyph="incomplete" variant="secondary" />
-  <Icon glyph="exclamation-point-circle" variant="error" />
+  <Icon glyph="exclamationPointCircle" variant="error" />
 </div>
 ```
 
