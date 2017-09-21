@@ -1,6 +1,6 @@
 import generateId from '../generateId'
 
-describe.only('generateId', () => {
+describe('generateId', () => {
   it('picks the first non empty value', () => {
     const id = generateId(undefined, null, '', '1', 'two')
 

@@ -6,7 +6,7 @@ import capitalize from './capitalize'
 
 import styles from './Icon.modules.scss'
 
-const Icon = ({ glyph, variant, label, fixedWidth, size, className, children, ...rest }) => {
+const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
   if (className) {
     deprecate('Icon', 'Custom CSS classes are deprecated. This component will soon stop supporting custom styling.')
   }
@@ -23,19 +23,21 @@ const Icon = ({ glyph, variant, label, fixedWidth, size, className, children, ..
     deprecate('Icon', '\'fixedWidth\' prop is deprecated.')
   }
 
-  const classes = `${styles.icon}`
-    + ` ${styles[`iconCore${capitalize(glyph)}`]}`
-    + ` ${variant ? styles[variant] : ''}`
-    + ` ${fixedWidth ? `${styles.fw}` : ''}`
-    + ` ${size ? `${styles[size]}` : ''}`
-    + ` ${className ? `${className}` : ''}`
+  const classes = [
+    `${styles.icon}`,
+    `${styles[`iconCore${capitalize(glyph)}`]}`,
+    `${variant ? styles[variant] : ''}`,
+    `${fixedWidth ? `${styles.fw}` : ''}`,
+    `${size ? `${styles[size]}` : ''}`,
+    `${className ? `${className}` : ''}`
+  ].join(' ')
 
   return (
     <i
       {...rest}
       className={classes}
-      aria-label={label}
-      aria-hidden={label ? undefined : 'true'}
+      aria-label={rest['aria-label']}
+      aria-hidden={rest['aria-label'] ? undefined : 'true'}
     >
       {children}
     </i>
@@ -91,14 +93,6 @@ Icon.propTypes = {
    * @ignore
    */
   className: PropTypes.string,
-  /**
-   * Creates an `aria-label` attribute with the label you specify.
-   *
-   * If not provided, `aria-hidden` is set to true.
-   *
-   * TODO: rename this prop to a11yText
-   */
-  label: PropTypes.string, // eslint-disable-line react/require-default-props
   /**
    * @ignore
    */

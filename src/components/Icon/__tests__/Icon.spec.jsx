@@ -94,7 +94,7 @@ describe('<Icon />', () => {
   })
 
   it('provides a label to specific glyphs', () => {
-    const icon = doShallow({ glyph: 'exclamationPointCircle', label: 'alert' })
+    const icon = doShallow({ glyph: 'exclamationPointCircle', 'aria-label': 'alert' })
 
     expect(icon).toHaveProp('aria-label', 'alert')
     expect(icon).not.toHaveProp('aria-hidden', 'undefined')

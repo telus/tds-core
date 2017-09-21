@@ -1,6 +1,6 @@
 import capitalize from '../capitalize'
 
-describe.only('capitalize', () => {
+describe('capitalize', () => {
   it('capitalizes a string', () => {
     const string = capitalize('test')
 

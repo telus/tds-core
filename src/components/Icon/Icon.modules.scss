@@ -27,6 +27,10 @@ $core-icon-codepoints: (
   transition: color 0.1s linear;
 }
 
+.inherit {
+  color: inherit;
+}
+
 .primary {
   color: $color-icon-primary;
 }
