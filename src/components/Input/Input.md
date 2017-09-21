@@ -18,12 +18,6 @@ Supply additional HTML input attributes as normal.
 </div>
 ```
 
-### Disabling an input
-
-```
-<Input label="Address" disabled />
-```
-
 ### Showing feedback for entered values
 
 Use the `feedback` attribute to give the user feedback regarding their input. You can affirm that the user's input
