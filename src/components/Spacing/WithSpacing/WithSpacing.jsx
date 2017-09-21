@@ -2,10 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
+import capitalize from '../../../capitalize'
 
 import styles from './WithSpacing.modules.scss'
-
-const capitalize = string => `${string.charAt(0).toUpperCase()}${string.slice(1)}`
 
 const WithSpacing = ({ location, amount, children, ...rest }) => (
   <div {...safeRest(rest)} className={styles[`margin${capitalize(location)}-${amount}`]}>

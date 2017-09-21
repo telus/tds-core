@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { deprecate } from '../../warn'
-import capitalize from './capitalize'
+import capitalize from '../../capitalize'
 
 import styles from './Icon.modules.scss'
 
