@@ -217,9 +217,11 @@ describe('Input', () => {
       const input = doShallow({ id: 'some-id', helper })
 
       expect(input).toContainReact(
-        <Input.Helper id="some-id_helper">
-          <Text size="small"><div>Some helper text.</div></Text>
-        </Input.Helper>
+        <Helper id="some-id_helper">
+          <Text size="small">
+            <div>Some helper text.</div>
+          </Text>
+        </Helper>
       )
     })
 
@@ -235,9 +237,18 @@ describe('Input', () => {
 
     it('can have a complex helper function to give control to the consumer', () => {
       const helper = jest.fn()
-      doShallow({ id: 'some-id', value: 'current value', feedback: 'error', helper })
+      helper.mockReturnValue(<Helper>Some helper text.</Helper>)
+
+      const input = doShallow({ id: 'some-id', value: 'current value', feedback: 'error', helper })
 
       expect(helper).toHaveBeenCalledWith('error', 'current value')
+      expect(input).toContainReact(
+        <div id="some-id_helper">
+          <Text size="small">
+            <Helper>Some helper text.</Helper>
+          </Text>
+        </div>
+      )
     })
   })
 
@@ -278,7 +289,9 @@ describe('Input', () => {
       expect(findInputElement(input)).toHaveProp('aria-describedby', 'some-field-id_helper')
       expect(input).toContainReact(
         <div id="some-field-id_helper">
-          <Helper>Complex helper</Helper>
+          <Text size="small">
+            <Helper>Complex helper</Helper>
+          </Text>
         </div>
       )
     })

@@ -101,7 +101,7 @@ class Input extends React.Component {
     if (typeof helper === 'function') {
       return (
         <div id={helperId}>
-          {helper(feedback, value)}
+          <Text size="small">{helper(feedback, value)}</Text>
         </div>
       )
     }

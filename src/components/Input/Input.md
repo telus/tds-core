@@ -129,7 +129,7 @@ const passwordRequirements = (feedback) => {
 
   return (
     <Input.Helper feedback={feedback}>
-      <Paragraph bold>Your password must be:</Paragraph>
+      <Paragraph size="small" bold>Your password must be:</Paragraph>
 
       <ul className={`list ${listType}`}>
         <li className="list__item">16 characters or longer</li>
