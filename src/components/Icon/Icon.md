@@ -57,7 +57,9 @@ Indicates a problem.
 
 Icons can be either decorative or meaningful.
 
-**Decorative icons** do not perform a role beyond visual aesthetics and should be hidden from screen readers using the
+#### Decorative icons
+
+Decorative icons do not perform a role beyond visual aesthetics and should be hidden from screen readers using the
 `aria-hidden` attribute. Usually, the information being communicated with the icon is also conveyed in another manner.
 
 This example shows a decorative icon that is hidden from screen readers. The Icon component sets `aria-hidden` to `true` by default; you can inspect the element and see.
@@ -68,14 +70,16 @@ This example shows a decorative icon that is hidden from screen readers. The Ico
 </Paragraph>
 ```
 
-**Meaningful icons** have meaning within the context of the page, which should be communicated to screen readers with the
+#### Meaningful icons
+
+Meaningful icons have meaning within the context of the page, which should be communicated to screen readers with the
 `aria-label` attribute. Meaningful icons can also be interactive elements, which should be designated with
 the `role` prop.
 
-This example shows a meaningful icon that needs accessibility attributes.
+This example shows a meaningful icon that represents an action. By applying `aria-label` to the parent `<button>`, screen readers would be able to interpret the button's intention, and the user can use their keyboard to target the button and take that action. The icon itself can remain hidden from screen readers as the button provides all meaningful information.
 
 ```
 <Paragraph>
-  <button style={{appearance: 'none', background: 'none', border: 0, cursor: 'pointer'}} type="submit"><Icon glyph="spyglass" label="search" /></button>
+  <button aria-label="search" style={{appearance: 'none', background: 'none', border: 0, cursor: 'pointer'}} type="submit"><Icon glyph="spyglass" /></button>
 </Paragraph>
 ```

@@ -24,7 +24,6 @@ const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }
   }
 
   const classes = [
-    `${styles.icon}`,
     `${styles[`iconCore${capitalize(glyph)}`]}`,
     `${variant ? styles[variant] : ''}`,
     `${fixedWidth ? `${styles.fw}` : ''}`,
@@ -67,6 +66,10 @@ Icon.propTypes = {
   ]).isRequired,
   /**
    * The appearance of the Icon.
+   *
+   * **Note:** The `disabled` option has been deprecated
+   *
+   * -
    */
   variant: PropTypes.oneOf([
     'inherit',

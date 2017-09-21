@@ -28,26 +28,32 @@ $core-icon-codepoints: (
 }
 
 .inherit {
+  composes: icon;
   color: inherit;
 }
 
 .primary {
+  composes: icon;
   color: $color-icon-primary;
 }
 
 .secondary {
+  composes: icon;
   color: $color-icon-secondary;
 }
 
 .inverted {
+  composes: icon;
   color: $color-white;
 }
 
 .error {
+  composes: icon;
   color: $color-cardinal;
 }
 
 .disabled {
+  composes: icon;
   color: $color-icon-disabled;
 }
 
@@ -70,8 +76,6 @@ $core-icon-codepoints: (
 
 @each $name, $codepoint in $core-icon-codepoints {
   .iconCore#{$name}::before {
-    // composes: icon; TODO: can't use composes inside sass @each and
-    // composes doesn't quite make sense on the color modifiers
     content: $codepoint;
   }
 }
