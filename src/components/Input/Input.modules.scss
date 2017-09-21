@@ -14,6 +14,7 @@
 .inputWrapper {
   composes: thin rounded from '../Borders.modules.scss';
   composes: row from '../Flexbox.modules.scss';
+
   align-items: center;
   padding: $spacing-base;
 }
@@ -28,28 +29,33 @@
 
 .default {
   composes: inputWrapper defaultBgColor defaultBoxShadow;
+
   border-color: $color-shuttle-grey;
 }
 
 .disabled {
-  composes: inputWrapper defaultBoxShadow;
+  composes: inputWrapper;
+
   background-color: $color-athens-grey;
-  border-color: $color-shuttle-grey;
+  border-color: transparent;
 }
 
 .focused {
   composes: inputWrapper defaultBgColor;
+
   border-color: transparent;
   box-shadow: 0 0 4px 1px $color-shuttle-grey;
 }
 
 .success {
   composes: inputWrapper defaultBgColor defaultBoxShadow;
+
   border-color: $color-primary;
 }
 
 .error {
   composes: inputWrapper defaultBgColor defaultBoxShadow;
+
   border-color: $color-cardinal;
 }
 
