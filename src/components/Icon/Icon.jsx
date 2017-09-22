@@ -23,6 +23,10 @@ const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }
     deprecate('Icon', '\'fixedWidth\' prop is deprecated.')
   }
 
+  if (children) {
+    deprecate('Icon', '\'children\' prop is deprecated.')
+  }
+
   const classes = [
     `${styles[`iconCore${capitalize(glyph)}`]}`,
     `${variant ? styles[variant] : ''}`,
@@ -37,8 +41,7 @@ const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }
       className={classes}
       aria-label={rest['aria-label']}
       aria-hidden={rest['aria-label'] ? undefined : 'true'}
-    >
-      {children}
+    >{children}
     </i>
   )
 }
@@ -86,9 +89,9 @@ Icon.propTypes = {
    */
   fixedWidth: PropTypes.bool,
   /**
-   *
+   * The icon size in pixels.
    */
-  size: PropTypes.oneOf(['16px', '24px', '48px']),
+  size: PropTypes.oneOf(['16', '24', '48']),
   /**
    * One or more CSS class names separated by spaces to append onto the icon.
    * Don't advertise as we plan on removing this feature soon.
@@ -97,14 +100,14 @@ Icon.propTypes = {
    */
   className: PropTypes.string,
   /**
-   * @ignore
+   * @deprecated since v0.23.0
    */
   children: PropTypes.node
 }
 Icon.defaultProps = {
   variant: 'inherit',
   fixedWidth: false,
-  size: '24px',
+  size: '24',
   className: '',
   children: null
 }

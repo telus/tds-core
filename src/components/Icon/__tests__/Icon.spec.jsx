@@ -41,9 +41,9 @@ describe('<Icon />', () => {
   })
 
   it('can be sized', () => {
-    const icon = doShallow({ size: '16px' })
+    const icon = doShallow({ size: '16' })
 
-    expect(icon).toHaveClassName('size16px')
+    expect(icon).toHaveClassName('size16')
   })
 
   it('supports custom CSS classes', () => {
@@ -60,8 +60,11 @@ describe('<Icon />', () => {
   })
 
   describe('deprecated props', () => {
-    it('deprecates className', () => {
+    afterEach(() => {
       jest.clearAllMocks()
+    })
+
+    it('deprecates className', () => {
       const icon = doShallow({ className: 'my-custom-class' })
 
       expect(icon).toHaveProp('className')
@@ -69,7 +72,6 @@ describe('<Icon />', () => {
     })
 
     it('deprecates style', () => {
-      jest.clearAllMocks()
       const icon = doShallow({ style: 'color: hotpink' })
 
       expect(icon).toHaveProp('style')
@@ -77,7 +79,6 @@ describe('<Icon />', () => {
     })
 
     it('deprecates disabled variant', () => {
-      jest.clearAllMocks()
       const icon = doShallow({ variant: 'disabled' })
 
       expect(icon).toHaveClassName('disabled')
@@ -85,12 +86,18 @@ describe('<Icon />', () => {
     })
 
     it('deprecates fixedWidth prop', () => {
-      jest.clearAllMocks()
       const icon = doShallow({ fixedWidth: true })
 
       expect(icon).toHaveClassName('fw')
       expect(deprecate).toHaveBeenCalled()
     })
+
+    // it('deprecates children prop', () => {
+    //   const defaultChildren = '<span>Some content</span>'
+    //   const icon = doShallow({ children: defaultChildren })
+    //
+    //   expect(deprecate).toHaveBeenCalled()
+    // })
   })
 
   it('provides a label to specific glyphs', () => {
