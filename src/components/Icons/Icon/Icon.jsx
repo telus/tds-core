@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../../safeRest'
 import joinClassNames from '../../../utils/joinClassNames'
-import capitalize from '../../../capitalize'
+import capitalize from '../../../utils/capitalize'
 
 import styles from './Icon.modules.scss'
 
