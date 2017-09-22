@@ -3,6 +3,6 @@
 exports[`<Icon /> renders 1`] = `
 <i
   aria-hidden="true"
-  className="iconCoreCheckmark inherit  size24 "
+  className="iconCoreCheckmark inherit size24"
 />
 `;

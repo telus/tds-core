@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import { deprecate } from '../../warn'
 import capitalize from '../../capitalize'
+import joinClassNames from '../../utils/joinClassNames'
 
 import styles from './Icon.modules.scss'
 
@@ -16,24 +17,24 @@ const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }
   }
 
   if (variant === 'disabled') {
-    deprecate('Icon', '\'disabled\' variant is deprecated.')
+    deprecate('Icon', 'The `disabled` variant is no longer supported. Use one of the supported variants instead.')
   }
 
   if (fixedWidth) {
-    deprecate('Icon', '\'fixedWidth\' prop is deprecated.')
+    deprecate('Icon', 'Creating `fixedWidth` icons is deprecated. Use `size` instead.')
   }
 
   if (children) {
-    deprecate('Icon', '\'children\' prop is deprecated.')
+    deprecate('Icon', 'Passing children components to Icon is deprecated. To add an accessible label use `aria-label`.')
   }
 
-  const classes = [
-    `${styles[`iconCore${capitalize(glyph)}`]}`,
-    `${variant ? styles[variant] : ''}`,
-    `${fixedWidth ? `${styles.fw}` : ''}`,
-    `${size ? `${styles[`size${size}`]}` : ''}`,
-    `${className ? `${className}` : ''}`
-  ].join(' ')
+  const classes = joinClassNames(
+    styles[`iconCore${capitalize(glyph)}`],
+    variant && styles[variant],
+    fixedWidth && styles.fw,
+    size && styles[`size${size}`],
+    className
+  )
 
   return (
     <i
@@ -91,7 +92,7 @@ Icon.propTypes = {
   /**
    * The icon size in pixels.
    */
-  size: PropTypes.oneOf(['16', '24', '48']),
+  size: PropTypes.oneOf([16, 24, 48]),
   /**
    * One or more CSS class names separated by spaces to append onto the icon.
    * Don't advertise as we plan on removing this feature soon.
@@ -107,7 +108,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   variant: 'inherit',
   fixedWidth: false,
-  size: '24',
+  size: 24,
   className: '',
   children: null
 }

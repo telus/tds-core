@@ -41,7 +41,7 @@ describe('<Icon />', () => {
   })
 
   it('can be sized', () => {
-    const icon = doShallow({ size: '16' })
+    const icon = doShallow({ size: 16 })
 
     expect(icon).toHaveClassName('size16')
   })
@@ -60,7 +60,7 @@ describe('<Icon />', () => {
   })
 
   describe('deprecated props', () => {
-    afterEach(() => {
+    beforeEach(() => {
       jest.clearAllMocks()
     })
 
@@ -92,12 +92,12 @@ describe('<Icon />', () => {
       expect(deprecate).toHaveBeenCalled()
     })
 
-    // it('deprecates children prop', () => {
-    //   const defaultChildren = '<span>Some content</span>'
-    //   const icon = doShallow({ children: defaultChildren })
-    //
-    //   expect(deprecate).toHaveBeenCalled()
-    // })
+    it('deprecates children prop', () => {
+      const icon = doShallow({ children: 'Some content' })
+
+      expect(icon).toHaveText('Some content')
+      expect(deprecate).toHaveBeenCalled()
+    })
   })
 
   it('provides a label to specific glyphs', () => {
