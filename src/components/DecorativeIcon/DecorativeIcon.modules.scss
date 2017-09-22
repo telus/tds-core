@@ -1,0 +1,157 @@
+@import '../../scss/settings/icons';
+@import '../../scss/settings/colours';
+@import '../../scss/utility/icons-utility';
+
+.primary {
+  color: $color-icon-primary;
+}
+
+.secondary {
+  color: $color-icon-secondary;
+}
+
+.inverted {
+  color: $color-white;
+}
+
+.error {
+  color: $color-cardinal;
+}
+
+.size16 {
+  font-size: 1 rem;
+}
+
+.size24 {
+  font-size: 1.5rem;
+}
+
+.size48 {
+  font-size: 3rem;
+}
+
+.icon {
+  @include core-icon;
+}
+
+.iconCaretDown {
+  composes: icon;
+
+  &::before {
+    content: "\f105";
+  }
+}
+
+.iconCaretUp {
+  composes: icon;
+
+  &::before {
+    content: "\f106";
+  }
+}
+
+.iconCheckmark {
+  composes: icon;
+
+  &::before {
+    content: "\f101";
+  }
+}
+
+.iconChevron {
+  composes: icon;
+
+  &::before {
+    content: "\f107";
+  }
+}
+
+.iconLeftChevron {
+  composes: icon;
+
+  &::before {
+    content: "\f107";
+    display: inline-block;
+    transform: rotate(-180deg) translateY(1.5px);
+  }
+}
+
+.iconExclamationPointCircle {
+  composes: icon;
+
+  &::before {
+    content: "\f103";
+  }
+}
+
+.iconExpander {
+  composes: icon;
+
+  &::before {
+    content: "\f113";
+  }
+}
+
+.iconHamburger {
+  composes: icon;
+
+  &::before {
+    content: "\f112";
+  }
+}
+
+.iconIncomplete {
+  composes: icon;
+
+  &::before {
+    content: "\f104";
+  }
+}
+
+.iconLocation {
+  composes: icon;
+
+  &::before {
+    content: "\f110";
+  }
+}
+
+.iconMinus {
+  composes: icon;
+
+  &::before {
+    content: "\f109";
+  }
+}
+
+.iconPlus {
+  composes: icon;
+
+  &::before {
+    content: "\f108";
+  }
+}
+
+.iconQuestionMarkCircle {
+  composes: icon;
+
+  &::before {
+    content: "\f102";
+  }
+}
+
+.iconSpyglass {
+  composes: icon;
+
+  &::before {
+    content: "\f111";
+  }
+}
+
+.iconTimes {
+  composes: icon;
+
+  &::before {
+    content: "\f104";
+  }
+}

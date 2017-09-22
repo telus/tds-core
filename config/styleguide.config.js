@@ -3,7 +3,7 @@ const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
-const enabledInStaging = ['Input', 'Lists', 'Icon']
+const enabledInStaging = ['Input', 'Lists']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, newComponentPath, oldComponentPath) => {
@@ -227,7 +227,7 @@ module.exports = {
         },
         {
           name: 'Icons',
-          components: toggleByEnv('Icon', path.resolve('src/components/Icon/Icon.jsx'), path.resolve('src/old-components/Icon/Icon.jsx'))
+          components: toggleByEnv('Icon', path.resolve('src/components/DecorativeIcon/DecorativeIcon.jsx'), path.resolve('src/old-components/Icon/Icon.jsx'))
         },
         {
           name: 'Feedback Indicators',
