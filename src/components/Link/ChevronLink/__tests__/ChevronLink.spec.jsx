@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { warn } from '../../../../warn'
+import { warn } from '../../../../utils/warn'
 
 import ChevronLink from '../ChevronLink'
 import Icon from '../../../../old-components/Icon/Icon'
 
-jest.mock('../../../../warn', () => (
+jest.mock('../../../../utils/warn', () => (
   { warn: jest.fn() }
 ))
 

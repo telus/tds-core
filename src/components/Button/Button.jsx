@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { warn, deprecate } from '../../warn'
+import { warn, deprecate } from '../../utils/warn'
 import safeRest from '../../safeRest'
 
 import styles from './Button.modules.scss'

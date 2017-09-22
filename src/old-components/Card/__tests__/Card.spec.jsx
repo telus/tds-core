@@ -2,10 +2,10 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import { deprecate } from '../../../warn'
+import { deprecate } from '../../../utils/warn'
 import Card from '../Card'
 
-jest.mock('../../../warn', () => (
+jest.mock('../../../utils/warn', () => (
   { deprecate: jest.fn() }
 ))
 

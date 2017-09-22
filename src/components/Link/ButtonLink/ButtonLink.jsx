@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { warn } from '../../../warn'
+import { warn } from '../../../utils/warn'
 import safeRest from '../../../safeRest'
 
 import styles from './ButtonLink.modules.scss'

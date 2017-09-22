@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../safeRest'
-import { warn } from '../../warn'
+import { warn } from '../../utils/warn'
 
 import styles from './Link.modules.scss'
 

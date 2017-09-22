@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import classNames from 'classnames'
 
-import { deprecate } from '../../warn'
+import { deprecate } from '../../utils/warn'
 
 import './Card.scss'
 

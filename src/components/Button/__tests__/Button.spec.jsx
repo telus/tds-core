@@ -2,11 +2,11 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import { warn, deprecate } from '../../../warn'
+import { warn, deprecate } from '../../../utils/warn'
 
 import Button from '../Button'
 
-jest.mock('../../../warn', () => (
+jest.mock('../../../utils/warn', () => (
   {
     warn: jest.fn(),
     deprecate: jest.fn()

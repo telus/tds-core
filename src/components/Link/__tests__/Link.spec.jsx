@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
-import { warn } from '../../../warn'
+import { warn } from '../../../utils/warn'
 
 import Link from '../Link'
 
-jest.mock('../../../warn', () => (
+jest.mock('../../../utils/warn', () => (
   { warn: jest.fn() }
 ))
 
