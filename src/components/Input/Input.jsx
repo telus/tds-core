@@ -9,7 +9,7 @@ import Flexbox from '../Flexbox/Flexbox'
 import Helper from './Helper/Helper'
 import Fade from './Fade'
 
-import safeRest from '../../safeRest'
+import safeRest from '../../utils/safeRest'
 import generateId from './generateId'
 
 import styles from './Input.modules.scss'

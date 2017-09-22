@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../safeRest'
+import safeRest from '../../utils/safeRest'
 
 import Grid from '../../old-components/Grid/Grid'
 import Icon from '../../old-components/Icon/Icon'

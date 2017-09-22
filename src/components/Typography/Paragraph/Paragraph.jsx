@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../safeRest'
+import safeRest from '../../../utils/safeRest'
 
 import spacingStyles from '../../Spacing/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'

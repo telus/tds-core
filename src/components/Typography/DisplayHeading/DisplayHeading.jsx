@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import safeRest from '../../../safeRest'
+import safeRest from '../../../utils/safeRest'
 
 import DisplayHeadingSup from './DisplayHeadingSup/DisplayHeadingSup'
 import DisplayHeadingSub from './DisplayHeadingSub/DisplayHeadingSub'
