@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StandaloneIcon renders 1`] = `
+<i
+  aria-label="Some screen reader text."
+  class="iconSpyglass size24"
+/>
+`;

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DecorativeIcon renders 1`] = `
+<i
+  aria-hidden="true"
+  class="iconSpyglass size24"
+/>
+`;

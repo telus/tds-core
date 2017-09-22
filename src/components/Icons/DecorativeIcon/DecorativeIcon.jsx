@@ -1,24 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../safeRest'
-import joinClassNames from '../../utils/joinClassNames'
-import capitalize from '../../capitalize'
+import Icon from '../Icon/Icon'
 
-import styles from './DecorativeIcon.modules.scss'
-
-const DecorativeIcon = ({ symbol, variant, size, ...rest }) => {
-
-  const classes = joinClassNames(
-    styles[`icon${capitalize(symbol)}`],
-    variant && styles[variant],
-    size && styles[`size${size}`]
-  )
-
-  return (
-    <i {...safeRest(rest)} className={classes} aria-hidden="true" />
-  )
-}
+const DecorativeIcon = ({ symbol, variant, size, ...rest }) => (
+  <Icon {...rest} symbol={symbol} variant={variant} size={size} aria-hidden="true" />
+)
 
 DecorativeIcon.propTypes = {
   /**
@@ -53,7 +40,7 @@ DecorativeIcon.propTypes = {
   /**
    * The icon size in pixels.
    */
-  size: PropTypes.oneOf([16, 24, 48]),
+  size: PropTypes.oneOf([16, 24, 48])
 }
 
 DecorativeIcon.defaultProps = {

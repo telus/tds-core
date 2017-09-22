@@ -227,7 +227,12 @@ module.exports = {
         },
         {
           name: 'Icons',
-          components: toggleByEnv('Icon', path.resolve('src/components/DecorativeIcon/DecorativeIcon.jsx'), path.resolve('src/old-components/Icon/Icon.jsx'))
+          components() {
+            return compact([
+              toggleByEnv('Icon', path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx')),
+              toggleByEnv('Icon', path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx'), path.resolve('src/old-components/Icon/Icon.jsx'))
+            ])
+          }
         },
         {
           name: 'Feedback Indicators',

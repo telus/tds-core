@@ -1,25 +1,24 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-// import toJson from 'enzyme-to-json'
+import toJson from 'enzyme-to-json'
 
-import DecorativeIcon from '../DecorativeIcon'
+import Icon from '../Icon'
 
-describe('DecorativeIcon', () => {
+describe('Icon', () => {
   const defaultProps = {
     symbol: 'spyglass'
   }
-  const doShallow = (props = {}) => shallow(<DecorativeIcon {...defaultProps} {...props} />)
+  const doShallow = (props = {}) => shallow(<Icon {...defaultProps} {...props} />)
+
+  it('renders', () => {
+    const icon = doShallow()
+    expect(toJson(icon)).toMatchSnapshot()
+  })
 
   it('renders an HTML i tag', () => {
     const icon = doShallow()
 
     expect(icon).toHaveTagName('i')
-  })
-
-  it('is hidden from screen readers', () => {
-    const icon = doShallow()
-
-    expect(icon).toHaveProp('aria-hidden', 'true')
   })
 
   it('needs a symbol', () => {
