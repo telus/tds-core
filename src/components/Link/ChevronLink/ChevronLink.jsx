@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../utils/safeRest'
-import Icon from '../../../old-components/Icon/Icon'
+import DecorativeIcon from '../../../components/Icons/DecorativeIcon/DecorativeIcon'
 import { warn } from '../../../utils/warn'
 
 import styles from './ChevronLink.modules.scss'
@@ -18,9 +18,9 @@ const getClassName = (variant) => {
   }
 }
 
-const getIcon = (glyph, className) => (
+const getIcon = (symbol, className) => (
   <span className={className}>
-    <Icon glyph={glyph} aria-hidden="true" />
+    <DecorativeIcon symbol={symbol} size={16} />
   </span>
 )
 
@@ -42,7 +42,7 @@ const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, .
       ...safeRest(rest),
       className: getClassName(variant)
     },
-    direction === 'left' ? getIcon('left-chevron', styles.leftChevron) : undefined,
+    direction === 'left' ? getIcon('leftChevron', styles.leftChevron) : undefined,
     children,
     direction === 'right' ? getIcon('chevron', styles.rightChevron) : undefined
   )

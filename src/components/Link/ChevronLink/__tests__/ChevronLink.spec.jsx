@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import { warn } from '../../../../utils/warn'
 
 import ChevronLink from '../ChevronLink'
-import Icon from '../../../../old-components/Icon/Icon'
+import DecorativeIcon from '../../../Icons/DecorativeIcon/DecorativeIcon'
 
 jest.mock('../../../../utils/warn', () => (
   { warn: jest.fn() }
@@ -50,14 +50,14 @@ describe('ChevronLink', () => {
     let link = doShallow({ href: 'https://telus.com' })
     expect(link).toContainReact(
       <span className="rightChevron">
-        <Icon glyph="chevron" aria-hidden="true" />
+        <DecorativeIcon symbol="chevron" size={16} />
       </span>
     )
 
     link = doShallow({ href: 'https://telus.com', direction: 'left' })
     expect(link).toContainReact(
       <span className="leftChevron">
-        <Icon glyph="left-chevron" aria-hidden="true" />
+        <DecorativeIcon symbol="leftChevron" size={16} />
       </span>
     )
   })
