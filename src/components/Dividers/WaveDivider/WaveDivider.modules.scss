@@ -1,12 +1,71 @@
 @import "../../../scss/settings/colours";
 
-$transparent-white: rgba(255, 255, 255, 0);
-$transparent-black: rgba(0, 0, 0, 0.13);
-
 .wave {
-  height: 200px;
-  background-image: linear-gradient(-1deg, $color-white 40%, $color-gainsboro 100%), linear-gradient(-172deg, $transparent-white 6%, $color-white 48%), linear-gradient(-90deg, $transparent-white 53%, $color-white 100%);
-  // background-size need to do this later comma-separated as well
-  box-shadow: inset 0 10px 16px 0 $transparent-black;
+
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cls1 {
+  fill: none;
+}
+
+.cls2 {
   opacity: 0.3;
+}
+
+.cls3 {
+  fill: url(#linear-gradient);
+}
+
+.cls4 {
+  opacity: 0.2;
+}
+
+.cls5, .cls7, .cls9 {
+  opacity: 0.5;
+  isolation: isolate;
+}
+
+.cls5 {
+  fill: url(#linear-gradient-2);
+}
+
+.cls6 {
+  fill: url(#linear-gradient-3);
+}
+
+.cls7 {
+  fill: url(#linear-gradient-4);
+}
+
+.cls8 {
+  fill: url(#linear-gradient-5);
+}
+
+.cls9 {
+  fill: url(#linear-gradient-6);
+}
+
+.cls10 {
+  fill: url(#linear-gradient-7);
+}
+
+.cls11 {
+  fill: url(#linear-gradient-8);
+}
+
+.cls12 {
+  fill: url(#linear-gradient-9);
+}
+
+.cls13 {
+  fill: url(#linear-gradient-10);
+}
+
+.cls14 {
+  fill: url(#linear-gradient-11);
 }

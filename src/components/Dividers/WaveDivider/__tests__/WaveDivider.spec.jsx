@@ -16,7 +16,7 @@ describe('WaveDivider', () => {
   it('renders an <hr>', () => {
     const waveDivider = doShallow()
 
-    expect(waveDivider).toHaveTagName('hr')
+    expect(waveDivider).toHaveTagName('div')
   })
 
   it('passes additional attributes to the element', () => {
