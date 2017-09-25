@@ -1,0 +1,12 @@
+@import "../../../scss/settings/colours";
+
+$transparent-white: rgba(255, 255, 255, 0);
+$transparent-black: rgba(0, 0, 0, 0.13);
+
+.wave {
+  height: 200px;
+  background-image: linear-gradient(-1deg, $color-white 40%, $color-gainsboro 100%), linear-gradient(-172deg, $transparent-white 6%, $color-white 48%), linear-gradient(-90deg, $transparent-white 53%, $color-white 100%);
+  // background-size need to do this later comma-separated as well
+  box-shadow: inset 0 10px 16px 0 $transparent-black;
+  opacity: 0.3;
+}

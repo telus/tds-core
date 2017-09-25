@@ -187,6 +187,14 @@ module.exports = {
                   path.resolve('src/old-components/ExpandCollapse/Panel.jsx')
                 ]
               }
+            },
+            {
+              name: 'Dividers',
+              components() {
+                return compact([
+                  toggleByEnv('Dividers', path.resolve('src/components/Dividers/WaveDivider/WaveDivider.jsx'))
+                ])
+              }
             }
           ]
         },
