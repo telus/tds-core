@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import safeRest from '../../utils/safeRest'
 
 import Grid from '../../old-components/Grid/Grid'
-import Icon from '../../old-components/Icon/Icon'
+import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 import Flexbox from '../Flexbox/Flexbox'
@@ -15,15 +15,21 @@ import styles from './Notification.modules.scss'
 const { Container, Row, Column } = Grid
 
 const iconByVariant = {
-  success: 'checkmark',
-  error: 'exclamation-point-circle'
+  success: {
+    symbol: 'checkmark',
+    color: 'primary'
+  },
+  error: {
+    symbol: 'exclamationPointCircle',
+    color: 'error'
+  }
 }
 
 const isImportant = variant => variant === 'success' || variant === 'error'
 
-const renderIcon = glyph => (
+const renderIcon = icon => (
   <span className={styles.icon}>
-    <Icon glyph={glyph} size="large" aria-hidden="true" />
+    <DecorativeIcon symbol={icon.symbol} variant={icon.color} />
   </span>
 )
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import Icon from '../../../old-components/Icon/Icon'
+import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 
 import Notification from '../Notification'
@@ -33,10 +33,10 @@ describe('<Notification />', () => {
 
   it('does not have an icon by default', () => {
     let notification = doShallow()
-    expect(notification.find(Icon)).toBeEmpty()
+    expect(notification.find(DecorativeIcon)).toBeEmpty()
 
     notification = doShallow({ variant: 'branded' })
-    expect(notification.find(Icon)).toBeEmpty()
+    expect(notification.find(DecorativeIcon)).toBeEmpty()
   })
 
   describe('successful variant', () => {
@@ -50,7 +50,7 @@ describe('<Notification />', () => {
       const notification = doShallow({ variant: 'success' })
 
       expect(notification).toContainReact(
-        <Icon glyph="checkmark" size="large" aria-hidden="true" />
+        <DecorativeIcon symbol="checkmark" variant="primary" />
       )
     })
   })
@@ -70,7 +70,7 @@ describe('<Notification />', () => {
       const notification = doShallow({ variant: 'error' })
 
       expect(notification).toContainReact(
-        <Icon glyph="exclamation-point-circle" size="large" aria-hidden="true" />
+        <DecorativeIcon symbol="exclamationPointCircle" variant="error" />
       )
     })
   })
