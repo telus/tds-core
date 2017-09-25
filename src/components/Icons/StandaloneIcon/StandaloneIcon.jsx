@@ -3,6 +3,12 @@ import PropTypes from 'prop-types'
 
 import Icon from '../Icon/Icon'
 
+  /**
+   * An icon that has meaning within the context of the page,
+   * which should be communicated to screen readers.
+   *
+   * <span class="docs--badge green">wip</span>
+   */
 const StandaloneIcon = ({ symbol, variant, size, a11yText, ...rest }) => (
   <Icon {...rest} symbol={symbol} variant={variant} size={size} aria-label={a11yText} />
 )
