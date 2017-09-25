@@ -1,23 +1,29 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-// import toJson from 'enzyme-to-json'
+import { shallow, render } from 'enzyme'
+import toJson from 'enzyme-to-json'
 
 import COMPONENT from '../COMPONENT'
 
 describe('COMPONENT', () => {
   const doShallow = (props = {}) => shallow(<COMPONENT {...props} />)
 
-  it('does things', () => {
+  it('renders', () => {
+    const component = render(<COMPONENT />)
+
+    expect(toJson(component)).toMatchSnapshot()
+  })
+
+  it('does other things', () => {
     const component = doShallow()
 
     expect(component).toBePresent()
   })
 
   it('passes additional attributes to the element', () => {
-    const component = doShallow({ id: 'the-element', role: 'button' })
+    const component = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
-    expect(component).toHaveProp('id', 'the-element')
-    expect(component).toHaveProp('role', 'button')
+    expect(component).toHaveProp('id', 'the-id')
+    expect(component).toHaveProp('data-some-attr', 'some value')
   })
 
   it('does not allow custom CSS', () => {
