@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonLink renders 1`] = `
+<a
+  className="primary"
+  href={null}
+  to={null}
+>
+  Go home
+</a>
+`;

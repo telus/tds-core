@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChevronLink renders 1`] = `
+<a
+  className="primary"
+  href={null}
+  to={null}
+>
+  Go home
+  <span
+    className="rightChevron"
+  >
+    <DecorativeIcon
+      size={16}
+      symbol="chevron"
+    />
+  </span>
+</a>
+`;
