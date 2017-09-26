@@ -14,7 +14,7 @@ const getClassName = invert => (
 /**
  * Large page titles. Renders an HTML `<h1>` element.
  *
- * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.22.0</span>
  */
 const DisplayHeading = ({ invert, children, ...rest }) => (
   <h1 {...safeRest(rest)} className={getClassName(invert)} >{children}</h1>

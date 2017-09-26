@@ -10,7 +10,7 @@ import textStyles from '../Text/Text.modules.scss'
 /**
  * Block text as an HTML `<p>` element.
  *
- * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.22.0</span>
  */
 const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) => {
   const paragraphColor = invert ? textStyles.invertedColor : textStyles.color

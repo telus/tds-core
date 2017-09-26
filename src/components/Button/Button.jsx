@@ -30,7 +30,7 @@ const preventDisabling = ({ disabled, ...props }) => {
 
 /**
  *
- * <span class="docs--badge green">updated!</span> <span class="docs--badge purple">v0.21.0</span>
+ * <span class="docs--badge__new">updated!</span> <span class="docs--badge__version">v0.21.0</span>
  */
 const Button = ({ type, variant, invert, children, ...rest }) => {
   const restNoDisabled = preventDisabling(rest)

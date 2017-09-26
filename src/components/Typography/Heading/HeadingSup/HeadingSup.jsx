@@ -7,9 +7,9 @@ import styles from '../Heading.modules.scss'
 /**
  * Superscript text for `Heading` an as HTML `<sup>` element.
  *
- * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
- *
  * _This component can only be accessed as a name-spaced component: `Heading.Sup`._
+ *
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.22.0</span>
  *
  */
 const HeadingSup = ({ children, ...rest }) => (

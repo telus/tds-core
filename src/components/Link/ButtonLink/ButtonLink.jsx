@@ -7,7 +7,7 @@ import safeRest from '../../../utils/safeRest'
 import styles from './ButtonLink.modules.scss'
 
 /**
- * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.21.0</span>
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.21.0</span>
  */
 const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {

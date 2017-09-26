@@ -3,16 +3,30 @@
   border-radius: 4px;
 
   color: $color-white;
+}
 
-  &.green {
+.docs--badge {
+  &__new {
+    @extend .docs--badge;
+
     background-color: $color-accessible-green;
   }
 
-  &.purple {
+  &__updated {
+    @extend .docs--badge;
+
+    background-color: $color-cardinal;
+  }
+
+  &__version {
+    @extend .docs--badge;
+
     background-color: $color-telus-purple;
   }
 
-  &.cardinal {
+  &__wip {
+    @extend .docs--badge;
+
     background-color: $color-cardinal;
   }
 }

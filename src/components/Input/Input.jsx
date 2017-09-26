@@ -37,7 +37,7 @@ const iconByFeedbackState = {
 const showFeedbackIcon = (feedback, focused) => (feedback === 'success' || feedback === 'error') && !focused
 
 /**
- * <span class="docs--badge green">wip</span>
+ * <span class="docs--badge__wip">wip</span>
  */
 class Input extends React.Component {
   constructor(props) {

@@ -10,7 +10,7 @@ import styles from './Text.modules.scss'
 /**
  * Inline text as an HTML `<span>` element.
  *
- * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.22.0</span>
  */
 const Text = ({ bold, size, invert, children, ...rest }, context) => {
   const textColor = invert ? styles.invertedColor : styles.color

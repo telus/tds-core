@@ -10,7 +10,7 @@ import styles from './OrderedList.modules.scss'
 const injectSize = (child, size) => React.cloneElement(child, { size })
 
 /**
- * <span class="docs--badge green">wip</span>
+ * <span class="docs--badge__wip">wip</span>
  */
 const OrderedList = ({ listStyle, size, children, ...rest }) => (
   <ol {...safeRest(rest)} className={styles[listStyle]}>

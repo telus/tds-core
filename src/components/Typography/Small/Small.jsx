@@ -8,7 +8,7 @@ import styles from '../Text/Text.modules.scss'
 /**
  * Small print, such as copyright and legal text.
  *
- * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.22.0</span>
  */
 const Small = ({ children, ...rest }) => (
   <small {...safeRest(rest)} className={`${styles.small} ${styles.smallFont}`}>

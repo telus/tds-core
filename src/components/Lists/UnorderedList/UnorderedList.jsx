@@ -12,7 +12,7 @@ const injectSizeAndListStyle = (child, size, listStyle) => (
 )
 
 /**
- * <span class="docs--badge green">wip</span>
+ * <span class="docs--badge__wip">wip</span>
  */
 const UnorderedList = ({ listStyle, size, children, ...rest }) => {
   return (
