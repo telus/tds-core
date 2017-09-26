@@ -5,7 +5,7 @@ import safeRest from '../../../utils/safeRest'
 import styles from './DimpleDivider.modules.scss'
 
 /**
- * Separate content.
+ * Separate modules.
  */
 const DimpleDivider = ({ ...rest }) => (
   <hr {...safeRest(rest)} className={styles.dimple} />
