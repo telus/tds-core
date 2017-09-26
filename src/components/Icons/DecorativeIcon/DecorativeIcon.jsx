@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Icon from '../Icon/Icon'
 
 /**
- * An icon that is used just for visual aesthetics.
+ * An icon used for visual aesthetics only.
  *
  * <span class="docs--badge__wip">wip</span>
  */

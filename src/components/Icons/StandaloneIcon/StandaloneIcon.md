@@ -1,20 +1,13 @@
-### Available Icons
+### Making interactive icons
+
+Standalone icons can also be interactive elements. This example shows the preferred way of creating an interactive icon:
 
 ```
-<div className="docs--horizontal-spacing">
-  <StandaloneIcon symbol="caretDown" a11yText="text" />
-  <StandaloneIcon symbol="caretUp" a11yText="text" />
-  <StandaloneIcon symbol="checkmark" a11yText="text" />
-  <StandaloneIcon symbol="leftChevron" a11yText="text" />
-  <StandaloneIcon symbol="chevron" a11yText="text" />
-  <StandaloneIcon symbol="exclamationPointCircle" a11yText="text" />
-  <StandaloneIcon symbol="expander" a11yText="text" />
-  <StandaloneIcon symbol="hamburger" a11yText="text" />
-  <StandaloneIcon symbol="location" a11yText="text" />
-  <StandaloneIcon symbol="minus" a11yText="text" />
-  <StandaloneIcon symbol="plus" a11yText="text" />
-  <StandaloneIcon symbol="questionMarkCircle" a11yText="text" />
-  <StandaloneIcon symbol="spyglass" a11yText="text" />
-  <StandaloneIcon symbol="times" a11yText="text" />
-</div>
+<button
+  style={{appearance: 'none', background: 'none', border: 0, cursor: 'pointer'}}
+  type="submit">
+    <StandaloneIcon symbol="spyglass" size={48} a11yText="Search this site." />
+</button>
 ```
+
+This will be added as a built in feature in the future, until then follow the above example.

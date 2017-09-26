@@ -235,6 +235,7 @@ module.exports = {
         },
         {
           name: 'Icons',
+          content: path.resolve('src/components/Icons/icons.md'),
           components() {
             return compact([
               toggleByEnv('Icon', path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx')),

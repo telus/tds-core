@@ -100,14 +100,6 @@
   }
 }
 
-.iconIncomplete {
-  composes: icon;
-
-  &::before {
-    content: "\f104";
-  }
-}
-
 .iconLocation {
   composes: icon;
 
