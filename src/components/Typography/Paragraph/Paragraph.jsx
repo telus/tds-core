@@ -8,6 +8,8 @@ import styles from './Paragraph.modules.scss'
 import textStyles from '../Text/Text.modules.scss'
 
 /**
+ * Block text as an HTML `<p>` element.
+ *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
  */
 const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) => {
@@ -19,7 +21,7 @@ const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) =>
     ${textStyles[size]}
     ${bold ? textStyles.boldFont : textStyles[`${size}Font`]}
     ${styles[`${align}Align`]}
-    `
+  `
 
   return (
     <p {...safeRest(rest)} className={classes}>
@@ -34,7 +36,7 @@ Paragraph.propTypes = {
    */
   bold: PropTypes.bool,
   /**
-   * Font size.
+   * The font size.
    */
   size: PropTypes.oneOf([
     'small',
@@ -42,7 +44,7 @@ Paragraph.propTypes = {
     'large'
   ]),
   /**
-   * Align content.
+   * Content alignment.
    */
   align: PropTypes.oneOf([
     'left',
@@ -50,7 +52,7 @@ Paragraph.propTypes = {
     'right'
   ]),
   /**
-   * Invert to appear light on dark backgrounds.
+   * Invert the text color to appear light on dark backgrounds.
    */
   invert: PropTypes.bool,
   /**

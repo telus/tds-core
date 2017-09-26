@@ -23,7 +23,7 @@ exports[`<Notification /> renders 1`] = `
               medium
               mediumFont
               leftAlign
-              "
+            "
           >
             Some content
           </p>

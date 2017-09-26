@@ -1,23 +1,17 @@
-### Usage
-
-The Text component can be used within other typography components such as [Paragraph](#paragraph). It is useful for modifying text appearance such as **bold**, or changing text size.
-
 ```
-<Text size="small" bold>Tell us what you think</Text>
+<Text>Tell us what you think</Text>
 ```
 
-### Inherits props from Paragraph
+By default, the Text component will inherit font properties from its parent. Use the props to override this behaviour.
 
 ```
-<Paragraph size="small"><Text>Tell us what you think</Text>  It's in our nature to listen.</Paragraph>
-```
-
-### Invert on dark colours
-
-```
-const PurpleBlock = require('../../__docs__/PurpleBlock').default;
-
-<PurpleBlock>
-  <Text invert>Personal</Text>
-</PurpleBlock>
+<Paragraph>
+  <Text bold>
+    Get Optik TV<Text.Sup>®</Text.Sup> and Internet for $85 per month for 12 months.
+  </Text>
+  <br />
+  <Text size="small">
+    Sign up for 2 years and save BIG on your first 12 months.
+  </Text>
+</Paragraph>
 ```

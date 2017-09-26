@@ -8,7 +8,7 @@ import TextSub from './TextSub/TextSub'
 import styles from './Text.modules.scss'
 
 /**
- * Produces inline text
+ * Inline text as an HTML `<span>` element.
  *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
  */
@@ -34,7 +34,7 @@ Text.propTypes = {
    */
   bold: PropTypes.bool,
   /**
-   * Font size.
+   * The font size.
    */
   size: PropTypes.oneOf([
     'base',
@@ -43,11 +43,11 @@ Text.propTypes = {
     'large'
   ]),
   /**
-   * Invert span style to appear light on dark backgrounds.
+   * Invert the text color to appear light on dark backgrounds.
    */
   invert: PropTypes.bool,
   /**
-   * The text.
+   * The content. Can be text, other components, or HTML elements.
    */
   children: PropTypes.node.isRequired
 }
