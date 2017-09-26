@@ -2,34 +2,34 @@ import React from 'react'
 import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import COMPONENT from '../COMPONENT'
+import $COMPONENT$ from '../$COMPONENT$'
 
-describe('COMPONENT', () => {
-  const doShallow = (props = {}) => shallow(<COMPONENT {...props} />)
+describe('$COMPONENT$', () => {
+  const doShallow = (props = {}) => shallow(<$COMPONENT$ {...props} />)
 
   it('renders', () => {
-    const component = render(<COMPONENT />)
+    const $COMPONENT_CAMEL$ = render(<$COMPONENT$ />)
 
-    expect(toJson(component)).toMatchSnapshot()
+    expect(toJson($COMPONENT_CAMEL$)).toMatchSnapshot()
   })
 
   it('does other things', () => {
-    const component = doShallow()
+    const $COMPONENT_CAMEL$ = doShallow()
 
-    expect(component).toBePresent()
+    expect($COMPONENT_CAMEL$).toBePresent()
   })
 
   it('passes additional attributes to the element', () => {
-    const component = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
+    const $COMPONENT_CAMEL$ = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
-    expect(component).toHaveProp('id', 'the-id')
-    expect(component).toHaveProp('data-some-attr', 'some value')
+    expect($COMPONENT_CAMEL$).toHaveProp('id', 'the-id')
+    expect($COMPONENT_CAMEL$).toHaveProp('data-some-attr', 'some value')
   })
 
   it('does not allow custom CSS', () => {
-    const component = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const $COMPONENT_CAMEL$ = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
-    expect(component).not.toHaveProp('className', 'my-custom-class')
-    expect(component).not.toHaveProp('style')
+    expect($COMPONENT_CAMEL$).not.toHaveProp('className', 'my-custom-class')
+    expect($COMPONENT_CAMEL$).not.toHaveProp('style')
   })
 })

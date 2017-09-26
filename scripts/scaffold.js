@@ -16,8 +16,13 @@ if (!componentName) {
 
 const basePath = `src/components/${componentName}`
 
+const camelize = string => `${string.charAt(0).toLowerCase()}${string.slice(1)}`
+
 const scaffold = (template, destination) => {
-  const contents = readFileSync(resolve(`scripts/scaffolding/${template}`), 'utf8').replace(/COMPONENT/g, componentName)
+  const contents = readFileSync(resolve(`scripts/scaffolding/${template}`), 'utf8')
+    .replace(/\$COMPONENT\$/g, componentName)
+    .replace(/\$COMPONENT_CAMEL\$/g, camelize(componentName))
+
   writeFileSync(resolve(`${basePath}/${destination}`), contents)
 
   console.log(`Created ${basePath}/${destination}`)
