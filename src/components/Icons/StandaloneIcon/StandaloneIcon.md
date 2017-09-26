@@ -10,7 +10,6 @@
   <StandaloneIcon symbol="exclamationPointCircle" a11yText="text" />
   <StandaloneIcon symbol="expander" a11yText="text" />
   <StandaloneIcon symbol="hamburger" a11yText="text" />
-  <StandaloneIcon symbol="incomplete" a11yText="text" />
   <StandaloneIcon symbol="location" a11yText="text" />
   <StandaloneIcon symbol="minus" a11yText="text" />
   <StandaloneIcon symbol="plus" a11yText="text" />

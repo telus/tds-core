@@ -10,7 +10,6 @@
   <DecorativeIcon symbol="exclamationPointCircle" />
   <DecorativeIcon symbol="expander" />
   <DecorativeIcon symbol="hamburger" />
-  <DecorativeIcon symbol="incomplete" />
   <DecorativeIcon symbol="location" />
   <DecorativeIcon symbol="minus" />
   <DecorativeIcon symbol="plus" />

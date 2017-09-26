@@ -25,7 +25,6 @@ DecorativeIcon.propTypes = {
     'exclamationPointCircle',
     'expander',
     'hamburger',
-    'incomplete',
     'location',
     'minus',
     'plus',

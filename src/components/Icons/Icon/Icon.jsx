@@ -29,7 +29,6 @@ Icon.propTypes = {
     'exclamationPointCircle',
     'expander',
     'hamburger',
-    'incomplete',
     'location',
     'minus',
     'plus',
