@@ -239,7 +239,8 @@ module.exports = {
           components() {
             return compact([
               toggleByEnv('Icon', path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx')),
-              toggleByEnv('Icon', path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx'), path.resolve('src/old-components/Icon/Icon.jsx'))
+              toggleByEnv('Icon', path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx')),
+              path.resolve('src/old-components/Icon/Icon.jsx')
             ])
           }
         },

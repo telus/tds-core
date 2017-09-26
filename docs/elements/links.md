@@ -1,4 +1,4 @@
-<span class="docs--badge cardinal">deprecated</span>
+<span class="docs--badge__deprecated">deprecated</span>
 
 **The link CSS classes are deprecated and should not be used. Use the [Links](#links-1) component instead.**
 

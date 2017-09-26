@@ -1,4 +1,4 @@
-<span class="docs--badge cardinal">deprecated</span>
+<span class="docs--badge__deprecated">deprecated</span>
 
 ** The typography CSS classes are deprecated and should not be used. Use the [Typography](#typography-1) components instead. **
 

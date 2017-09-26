@@ -29,4 +29,10 @@
 
     background-color: $color-cardinal;
   }
+
+  &__deprecated {
+    @extend .docs--badge;
+
+    background-color: $color-cardinal;
+  }
 }

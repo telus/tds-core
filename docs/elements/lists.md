@@ -1,4 +1,4 @@
-<span class="docs--badge cardinal">deprecated</span>
+<span class="docs--badge__deprecated">deprecated</span>
 
 ## Overview
 ---
