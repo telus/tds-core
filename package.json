@@ -102,8 +102,8 @@
     "webpack": "^3.3.0"
   },
   "peerDependencies": {
-    "react": "15.x",
-    "react-dom": "15.x"
+    "react": ">=15",
+    "react-dom": ">=15"
   },
   "dependencies": {
     "prop-types": "^15.5.10"
