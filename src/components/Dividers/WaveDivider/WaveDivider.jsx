@@ -5,10 +5,9 @@ import safeRest from '../../../utils/safeRest'
 import styles from './WaveDivider.modules.scss'
 
 const WaveDivider = ({ ...rest }) => (
-  <div className={styles.wave}>
+  <div {...safeRest(rest)}>
     <svg className={styles.svg} viewBox="0 0 1202 226">
       <defs>
-
         <linearGradient
           id="linear-gradient" x1="600" y1="47.26" x2="600" y2="176.96"
           gradientTransform="matrix(1, 0, 0, -1, 0, 227.8)" gradientUnits="userSpaceOnUse"

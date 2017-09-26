@@ -1,9 +1,5 @@
 @import "../../../scss/settings/colours";
 
-.wave {
-
-}
-
 .svg {
   width: 100%;
   height: 100%;
@@ -25,7 +21,9 @@
   opacity: 0.2;
 }
 
-.cls5, .cls7, .cls9 {
+.cls5,
+.cls7,
+.cls9 {
   opacity: 0.5;
   isolation: isolate;
 }

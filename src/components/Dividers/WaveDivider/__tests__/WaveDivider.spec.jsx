@@ -13,12 +13,6 @@ describe('WaveDivider', () => {
     expect(toJson(waveDivider)).toMatchSnapshot()
   })
 
-  it('renders an <hr>', () => {
-    const waveDivider = doShallow()
-
-    expect(waveDivider).toHaveTagName('div')
-  })
-
   it('passes additional attributes to the element', () => {
     const waveDivider = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
