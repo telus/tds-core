@@ -2,12 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-/**
- * <span class="docs--badge__deprecated">deprecated</span>
- *
- * **This component is deprecated and should not be used. Use the
- * [DecorativeIcon](#decorativeicon) or [StandaloneIcon](#standaloneicon) instead.**
- */
 const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
   const classes = classNames(
     'icon',
