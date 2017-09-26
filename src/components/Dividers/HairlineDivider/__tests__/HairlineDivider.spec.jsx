@@ -21,18 +21,18 @@ describe('HairlineDivider', () => {
 
   it('can be horizontal or vertical', () => {
     let hairlineDivider = doShallow()
-    expect(hairlineDivider).toHaveClassName('horizontal')
+    expect(hairlineDivider).toHaveClassName('horizontalThin')
 
     hairlineDivider = doShallow({ vertical: true })
-    expect(hairlineDivider).toHaveClassName('vertical')
+    expect(hairlineDivider).toHaveClassName('verticalThin')
   })
 
   it('can have a gradient', () => {
     let hairlineDivider = doShallow()
-    expect(hairlineDivider).toHaveClassName('thin')
+    expect(hairlineDivider).toHaveClassName('horizontalThin')
 
     hairlineDivider = doShallow({ gradient: true })
-    expect(hairlineDivider).toHaveClassName('gradient')
+    expect(hairlineDivider).toHaveClassName('horizontalGradient')
   })
 
   it('passes additional attributes to the element', () => {

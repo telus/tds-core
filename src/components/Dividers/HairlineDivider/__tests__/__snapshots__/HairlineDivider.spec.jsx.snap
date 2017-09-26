@@ -2,6 +2,6 @@
 
 exports[`HairlineDivider renders 1`] = `
 <hr
-  class="horizontal thin"
+  class="horizontalThin"
 />
 `;
