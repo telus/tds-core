@@ -12,7 +12,7 @@ const getClassName = invert => (
 )
 
 /**
- * Used for big page headings.
+ * Large page titles. Renders an HTML `<h1>` element.
  *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
  */
@@ -22,11 +22,11 @@ const DisplayHeading = ({ invert, children, ...rest }) => (
 
 DisplayHeading.propTypes = {
   /**
-   * Whether or not to invert the colour scheme.
+   * Invert the text color to appear light on dark backgrounds.
    */
   invert: PropTypes.bool,
   /**
-   * The text.
+   * The text. Can be text, other components, or HTML elements.
    */
   children: PropTypes.node.isRequired
 }

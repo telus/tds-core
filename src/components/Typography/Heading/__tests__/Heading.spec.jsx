@@ -5,8 +5,11 @@ import toJson from 'enzyme-to-json'
 import Heading from '../Heading'
 
 describe('Heading', () => {
+  const defaultProps = {
+    level: 'h1'
+  }
   const doShallow = (overrides = {}) => shallow(
-    <Heading {...overrides}>Go home</Heading>
+    <Heading {...defaultProps} {...overrides}>Go home</Heading>
   )
 
   it('renders', () => {

@@ -1,10 +1,5 @@
-### Minimal usage
+Use as an overlay on Hero, Promo or Headline blocks.
 
 ```
-<DisplayHeading>Great Deals</DisplayHeading>
+<DisplayHeading>Smartphones</DisplayHeading>
 ```
-
-#### Usage criteria
-
-- Display Heading outputs an `h1` tag.
-- Use as an overlay on hero, promo or headline blocks.

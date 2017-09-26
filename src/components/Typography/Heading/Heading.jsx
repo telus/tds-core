@@ -18,7 +18,7 @@ const getClassName = (level, invert) => {
 }
 
 /**
- * Used for page headings.
+ * Page headings. Renders an HTML `<h1-h4>` element.
  *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
  */
@@ -34,22 +34,19 @@ const Heading = ({ level, invert, children, ...rest }) => (
 )
 Heading.propTypes = {
   /**
-   * Heading level (default is `h1`).
+   * The heading level.
    */
-  level: PropTypes.oneOf([
-    'h1', 'h2', 'h3', 'h4'
-  ]).isRequired,
+  level: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']).isRequired,
   /**
-   * Whether or not to invert the colour scheme.
+   * Invert the text color to appear light on dark backgrounds.
    */
   invert: PropTypes.bool,
   /**
-   * The text.
+   * The text. Can be text, other components, or HTML elements.
    */
   children: PropTypes.node.isRequired
 }
 Heading.defaultProps = {
-  level: 'h1',
   invert: false
 }
 

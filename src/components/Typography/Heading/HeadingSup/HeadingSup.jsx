@@ -5,7 +5,7 @@ import safeRest from '../../../../utils/safeRest'
 import styles from '../Heading.modules.scss'
 
 /**
- * Superscript text for headings.
+ * Superscript text for `Heading` an as HTML `<sup>` element.
  *
  * <span class="docs--badge green">new!</span> <span class="docs--badge purple">v0.22.0</span>
  *
