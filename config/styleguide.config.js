@@ -192,7 +192,8 @@ module.exports = {
               name: 'Dividers',
               components() {
                 return compact([
-                  toggleByEnv('Dividers', path.resolve('src/components/Dividers/WaveDivider/WaveDivider.jsx'))
+                  toggleByEnv('Dividers', path.resolve('src/components/Dividers/WaveDivider/WaveDivider.jsx')),
+                  toggleByEnv('Dividers', path.resolve('src/components/Dividers/DimpleDivider/DimpleDivider.jsx'))
                 ])
               }
             }
