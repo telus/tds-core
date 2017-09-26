@@ -13,6 +13,18 @@ describe('WaveDivider', () => {
     expect(toJson(waveDivider)).toMatchSnapshot()
   })
 
+  it('is an image', () => {
+    const waveDivider = doShallow()
+
+    expect(waveDivider).toHaveTagName('img')
+  })
+
+  it('indicates that it is not a key part of the content and can be omitted by screen readers', () => {
+    const waveDivider = doShallow()
+
+    expect(waveDivider).toHaveProp('alt', '')
+  })
+
   it('passes additional attributes to the element', () => {
     const waveDivider = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
