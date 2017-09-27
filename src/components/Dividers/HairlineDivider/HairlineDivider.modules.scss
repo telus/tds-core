@@ -1,38 +1,46 @@
 @import '../../../scss/settings/colours';
 
-.base {
+.reset {
   composes: noSpacing from '../../Spacing/Spacing.modules.scss';
-  border: none;
+  composes: none from '../../Borders.modules.scss';
 }
 
-.verticalHeight {
+.horizontal {
+  composes: reset;
+
+  width: 100%;
+  height: 1px;
+}
+
+.vertical {
+  composes: reset;
+
+  display: inline-block;
+
+  width: 1px;
   height: 100%;
 }
 
 .horizontalThin {
-  composes: base;
+  composes: horizontal;
 
-  border-top: 1px solid $color-gainsboro;
-}
-
-.verticalThin {
-  composes: base;
-  composes: verticalHeight;
-
-  border-left: 1px solid $color-gainsboro;
+  background-color: $color-gainsboro;
 }
 
 .horizontalGradient {
-  composes: base;
+  composes: horizontal;
 
-  height: 1px;
   background-image: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, $color-gainsboro 2%, $color-gainsboro 98%, rgba(216, 216, 216, 0) 100%);
 }
 
-.verticalGradient {
-  composes: base;
-  composes: verticalHeight;
+.verticalThin {
+  composes: vertical;
 
-  width: 1px;
+  background-color: $color-gainsboro;
+}
+
+.verticalGradient {
+  composes: vertical;
+
   background-image: linear-gradient(180deg, rgba(216, 216, 216, 0) 0%, $color-gainsboro 5%, $color-gainsboro 95%, rgba(216, 216, 216, 0) 100%);
 }

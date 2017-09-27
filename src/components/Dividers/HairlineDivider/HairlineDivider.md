@@ -1,19 +1,19 @@
 ```
 <div>
   <HairlineDivider />
+
   <br/>
-  <HairlineDivider gradient={true} />
+
+  <HairlineDivider gradient />
 </div>
 ```
 
 ```
-<div style={{height: '100px'}}>
-  <HairlineDivider vertical={true} />
-</div>
-```
+<div style={{height: '150px', display: 'flex'}}>
+  <HairlineDivider vertical />
 
-```
-<div style={{height: '100px'}}>
-  <HairlineDivider vertical={true} gradient={true} />
+  <div style={{width: '20px'}} />
+
+  <HairlineDivider vertical gradient />
 </div>
 ```
