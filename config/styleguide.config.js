@@ -318,7 +318,8 @@ module.exports = {
     },
     color: {
       link: '#4B286D',
-      linkHover: '#54595F'
+      linkHover: '#54595F',
+      sidebarBackground: '#FFFFFF'
     },
     sidebarWidth: 240
   }
