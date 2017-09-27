@@ -3,7 +3,7 @@ font styles.
 
 ## Spacing system
 
-As of v0.22.0, Typography components **do not** have built-in padding or margin. For the interim, designers are strongly
+Typography components **do not** have built-in padding or margin. For the interim, designers are strongly
 advised to follow TDS Sketch assets for spacing rules in order for developers to properly apply the correct spacing between
 related components.
 
