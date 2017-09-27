@@ -1,3 +1,215 @@
+#### 0.22.0 (2017-09-27)
+
+##### Build System / Dependencies
+
+* **s3-website:** Bump version to 3.1.2 to try to fix broken deploy ([2f81a4fd](https://github.com/telusdigital/tds/commit/2f81a4fd07dbb811153c88449e3a4d1fa2fd1878))
+* **lint:** Remove --fix from stylelint to try to fix the build pipeline ([6e89514d](https://github.com/telusdigital/tds/commit/6e89514d223d96cace1aee96806dda8993e001c8))
+
+##### Chores
+
+* **package:** Add typography components to the rollup package ([4117bc60](https://github.com/telusdigital/tds/commit/4117bc600eb5126d0440f8184de4cb98cb9eead3))
+* **react:** Update peer dependecies to support version 16 ([f346cdb5](https://github.com/telusdigital/tds/commit/f346cdb5ead41f63bb0a3c95d7f698722b76cbc9))
+* **icon:**
+  * Remove font-face rule ([40a25a45](https://github.com/telusdigital/tds/commit/40a25a4552adf297e4178c442c88f7b17c66333a))
+  * Add a warning in Javascript console when className and style props are used. ([debd0724](https://github.com/telusdigital/tds/commit/debd0724567a01da6e14c6d6e6ca6cc8305fd112))
+* **lint:** Fix lint warnings in old components to reduce noise, mostly by ignoring them ([5aa9c089](https://github.com/telusdigital/tds/commit/5aa9c0894357f92e21b18c038519f98cc740faa0))
+* **yarn:** Update to yarn.lock ([ba557cae](https://github.com/telusdigital/tds/commit/ba557caee6166712017a228b64a0e42a65dc0924))
+* **stylelint:** Add stylelint-config-standard ([24e5c825](https://github.com/telusdigital/tds/commit/24e5c8250dd6b6e5e84df4c164e436ff320e9f6d))
+* **scripts:** Enable linting of scripts ([00fa39ad](https://github.com/telusdigital/tds/commit/00fa39ad5386b1c14cfe0fba0729a0004cc65e2d))
+* **docs:** Add a deprecation badge to foundation elements that have been deprecated ([e64a1459](https://github.com/telusdigital/tds/commit/e64a14594f1abf1a4dab929ca65fc30285ddcf90))
+* **scaffold:** populate .md file with default content ([d0a82997](https://github.com/telusdigital/tds/commit/d0a82997223bad3384233e98b12ca58e66037a5f))
+* **release:** Make the release script messaging a bit more user friendly ([ae7529ba](https://github.com/telusdigital/tds/commit/ae7529baef2418135918a4613aa72bea929555fa))
+
+##### Continuous Integration
+
+* **feature-toggles:** Add the ability to toggle components on in staging and off in production. Toggle Input on in dev ([b1a938ea](https://github.com/telusdigital/tds/commit/b1a938eab9c1d0d2cdfc33c3ec6a6693d8d090ec))
+
+##### Documentation Changes
+
+* **feature-toggles:** Expanding feature toggling into the element docs ([82fd7fc0](https://github.com/telusdigital/tds/commit/82fd7fc0fb7117547ca481c97d88211667cddc1b))
+* **icon:**
+  * Remove deprecated badge from old Icon component ([1d9e957f](https://github.com/telusdigital/tds/commit/1d9e957f71381d6160de359f997063044c715ed2))
+  * Add old Icon component back and mark it as deprecated ([ad91f883](https://github.com/telusdigital/tds/commit/ad91f883e7edc73c20faa409a233e23193db4da4))
+  * Set toggle to show in staging ([06fc2d3b](https://github.com/telusdigital/tds/commit/06fc2d3b8fe1037d7b78ccb01a26e7c644655fb3))
+  * Add description for Decorative and Standalone icon components ([c450d222](https://github.com/telusdigital/tds/commit/c450d2221bca6528d812949c1926ed888e1cafbb))
+  * Update Accessibility considerations section ([9f94301c](https://github.com/telusdigital/tds/commit/9f94301cda821d7de72b881ee80294f787da186a))
+  * add new prop descriptions ([b7837da4](https://github.com/telusdigital/tds/commit/b7837da40f2110e684b0a9cb63f2bcdb09b909b9))
+* **icons:** Add more documentation and examples ([f8d4c8c4](https://github.com/telusdigital/tds/commit/f8d4c8c43e655dcabda0a03df29fbbb70fd59249))
+* **versions:** Add text to show how to access previous versions ([3d84615e](https://github.com/telusdigital/tds/commit/3d84615ee0f79e5a905b25fb23389e26715fb081))
+* **divider:** Initial docs ([c0d2af7d](https://github.com/telusdigital/tds/commit/c0d2af7db1b6af7baaf096ffce9b4225ab7ac936))
+* **badges:**
+  * Rename badges to be more semantically meaningful ([21587c3a](https://github.com/telusdigital/tds/commit/21587c3a1b833b06ed6d4f6104f03dca7e15156c))
+  * Align deprecation badge look with the new and version badge ([20bf9df2](https://github.com/telusdigital/tds/commit/20bf9df2366c3561450a22669f9a177a369b2801))
+* **headings:** Edits and cleanup to the DisplayHeading and Heading docs ([ccd8a2e3](https://github.com/telusdigital/tds/commit/ccd8a2e38deef51997b8b4e0dbdc1d23f6de8fb3))
+* **typography:**
+  * Edits and cleanup to Text, Paragraph, Strong, Small, and Text.Sup docs ([4830b2bf](https://github.com/telusdigital/tds/commit/4830b2bf27cc7a23b26458c6fac57464a9826699))
+  * Aligned children prop documentation for all typography components ([bcf10ede](https://github.com/telusdigital/tds/commit/bcf10edeecb6ec3634e87cc97c1db414bc8f8d9c))
+  * Add deprecation notice in Foundation Elements section ([f865ec2c](https://github.com/telusdigital/tds/commit/f865ec2c323194a058053b88e46d2de357526204))
+  * Untoggle Paragraph, Strong and Small for staging review ([03d55dbb](https://github.com/telusdigital/tds/commit/03d55dbb5da22148072b7ced3ef50267150ed048))
+  * Add last few tweaks to paragraph documentation ([148c7076](https://github.com/telusdigital/tds/commit/148c7076458d9723a79dc81706f04d31a70ec136))
+  * Clean up css and update documentation ([b082b14d](https://github.com/telusdigital/tds/commit/b082b14d1b23888a69f11b62e3b0105526695255))
+  * Add usage blurb on Sup/Sub components ([297c6bd0](https://github.com/telusdigital/tds/commit/297c6bd0b657882d4c2a2cd2774db7738706a230))
+  * Add a message to Sup/Sub component to denote they are sub components ([8cc4c88a](https://github.com/telusdigital/tds/commit/8cc4c88a7f066302854018c3e978feb81416775e))
+  * untoggle sup/sub for headings for review ([32900fa6](https://github.com/telusdigital/tds/commit/32900fa6be7959a0ad6549a99d0e56b6bac849fa))
+  * general touchup ([09f8045c](https://github.com/telusdigital/tds/commit/09f8045c2b1a3a3d7ade78475aae67d598e1738c))
+  * add typography docs along with spacing system ([6b5209a4](https://github.com/telusdigital/tds/commit/6b5209a471a95e9578e167d6c07e438c6c65e73e))
+* **logo:** Use the Text component for the TDS version text ([4db3102d](https://github.com/telusdigital/tds/commit/4db3102d83e3289ad5d9baf6c97d0e60a1db3877))
+* **lists:**
+  * Add some more examples ([5cc33f9c](https://github.com/telusdigital/tds/commit/5cc33f9c820539a70a78979d94803ec3d32c9e05))
+  * Add deprecation badge to globally scoped css docs ([199c0e8e](https://github.com/telusdigital/tds/commit/199c0e8ed5f9c19ded6c44daf72a9b8131e697c2))
+  * Enable lists in staging ([dfc32ccf](https://github.com/telusdigital/tds/commit/dfc32ccfe414aa4a3e6d969e75cc3214c1cb5d5a))
+* **unordered-list:** Update example with real copy ([ea0cbd46](https://github.com/telusdigital/tds/commit/ea0cbd46e4aee8f85e3b85def1aa217ca5500c48))
+* **input:** Initial commit of docs ([f31e7dfc](https://github.com/telusdigital/tds/commit/f31e7dfc82f75593a5d2a11f3b9963a8a949fe52))
+* **ordered-list:** Adjust displayName (typo) and move things around the sidebar ([9144967c](https://github.com/telusdigital/tds/commit/9144967cc2331d024963004b4b4483a8478a9b7e))
+* **small:** Update Small documentation ([51d82fb3](https://github.com/telusdigital/tds/commit/51d82fb32b2f0f429be9be0052b33268d65828c0))
+* **link:** Update inverted link example to use Paragraph component ([2ed8fa8e](https://github.com/telusdigital/tds/commit/2ed8fa8eee49290e9411b3b8d258d29c7a38d216))
+* **sup:**
+  * Document Heading and DisplayHeading Sup sub-component prop ([563d65d7](https://github.com/telusdigital/tds/commit/563d65d7f4500c30c56e773d7a526069bc35a7b9))
+  * Add doc badges to Sup sub-componentss ([29b8dfd0](https://github.com/telusdigital/tds/commit/29b8dfd001fc0913aedd19ebc9ba897397056ad0))
+* **sub:** Hide subscript subcomponents until we identify concrete use cases for them ([dcc31886](https://github.com/telusdigital/tds/commit/dcc31886a3ee395350e3b18a35edbd550da658ce))
+* **heading:**
+  * Adjust import path for Heading and DisplayHeading for their sub-components ([7e701ced](https://github.com/telusdigital/tds/commit/7e701ced5ba3c514d03b1ec99d48a56e9ce10989))
+  * add displayName to HeadingSup/Sub and DisplayHeadingSup/Sub ([cbaa312a](https://github.com/telusdigital/tds/commit/cbaa312a8f3882b47887aa212e890893b2eb8cf2))
+  * usage update copy ([531e7d65](https://github.com/telusdigital/tds/commit/531e7d65c04b71f2fb8b6b14aceaff5627f1cde9))
+  * updated usage copy ([ada902a3](https://github.com/telusdigital/tds/commit/ada902a39bb07366629cc9024c2aa03f31e9253d))
+  * updated usage copy ([4c8d7435](https://github.com/telusdigital/tds/commit/4c8d74358477a0ff915e52c90f9ff6457f95be48))
+  * updated usage copy ([4205d69b](https://github.com/telusdigital/tds/commit/4205d69b3ffbe3e29da12ecb0d12ee508732c664))
+  * add docs for props and usage ([a99d81da](https://github.com/telusdigital/tds/commit/a99d81dae7d44146e606a3dd1fd150cb5d09348c))
+  * add usage notes and props comments ([f8d5a8a7](https://github.com/telusdigital/tds/commit/f8d5a8a71f14ea1b86ae957bf95dc7638e3e5711))
+* **text:**
+  * add more examples to showcase sub and sup with different font sizes ([75a15e79](https://github.com/telusdigital/tds/commit/75a15e79c85c254f381782a112bc85f722a2b24a))
+  * add usage docs ([653a5106](https://github.com/telusdigital/tds/commit/653a51068e21985e33dab8a44762c90c7343f15c))
+  * fix Text.Sup and Text.Sub example ([8a1ebb80](https://github.com/telusdigital/tds/commit/8a1ebb80abb4ddf73fb15bb35199dce0e0afce91))
+
+##### New Features
+
+* **paragraph:** Join class names with a space instead of new lines. ([9abac7b3](https://github.com/telusdigital/tds/commit/9abac7b342eefbef00f8febd160c1250cf3dbaee))
+* **dividers:**
+  * Adjust styles of hairline to use width and background for consistency. ([134480b2](https://github.com/telusdigital/tds/commit/134480b29e34e1e203727fb79d6407ab04fd95ba))
+  * Add hairline divider ([3cff4d34](https://github.com/telusdigital/tds/commit/3cff4d348b5c905f760629f8262b5bf507fe6765))
+  * Add dimple divider ([f3d461ef](https://github.com/telusdigital/tds/commit/f3d461efe9549831ba73f52e6c9a534c499182c5))
+  * Use a .svg file for the wave instead of trying to inline it. ([5b2f899e](https://github.com/telusdigital/tds/commit/5b2f899e910462b1f639848586aa1202dcd98f6a))
+  * add svg for wave divider ([6b5c70aa](https://github.com/telusdigital/tds/commit/6b5c70aa5b92f95dcb51188539c0084fb2402dc7))
+* **hairline-divider:** Add styles for 4 different options ([9dab0117](https://github.com/telusdigital/tds/commit/9dab01173c9c3f06eb0f0206579636020f5bfe28))
+* **scaffold:** Add camelizeation of component name for test ([e16ed3e1](https://github.com/telusdigital/tds/commit/e16ed3e153e4ce63103331df9977b2ae3bbc775e))
+* **icon:**
+  * Remove duplicate icon (incomplete) ([60035802](https://github.com/telusdigital/tds/commit/60035802800b591980f52583c3912b97c717b9e3))
+  * Change size prop values to numbers only ([1c64c041](https://github.com/telusdigital/tds/commit/1c64c041609fc530e08d47affc7aa78955f0d566))
+  * Add name convention for size prop ([c3f796ea](https://github.com/telusdigital/tds/commit/c3f796eaabd6aa1e45e99aafff4445ea7713df6c))
+  * remove label prop ([561c0d53](https://github.com/telusdigital/tds/commit/561c0d53812368473f44de82f927ed4c608c3a2e))
+  * Add fixes to render icons using new css classes ([a355ae8d](https://github.com/telusdigital/tds/commit/a355ae8d56e1e325002be7b80222416820ae647a))
+  * Align css classname with CSS modules standards ([505bf56c](https://github.com/telusdigital/tds/commit/505bf56c8cdd637cfc76a377fa2c991c4fa425ce))
+  * Copy to /components folder ([ee8f17a5](https://github.com/telusdigital/tds/commit/ee8f17a519b750c9d8371d8b559ea378176947af))
+  * adjust prop usage ([6d55d12a](https://github.com/telusdigital/tds/commit/6d55d12ae3cab23f2b836d7e96565297915ea3df))
+  * Add label prop and corresponding aria attributes ([3fcc8873](https://github.com/telusdigital/tds/commit/3fcc8873ac226131bc928fe620453a02d4de83b6))
+  * add accessibility labels ([2ed56481](https://github.com/telusdigital/tds/commit/2ed56481bd5fd9276432b6d11d5fca0cbb0dc36f))
+  * deprecate fixedWidth prop ([25ce29d0](https://github.com/telusdigital/tds/commit/25ce29d0909086a075406e6d54bcc5d71976a269))
+  * add deprecation tests ([62bc5cc5](https://github.com/telusdigital/tds/commit/62bc5cc5481e41414656789f7dcf0b2838bee12c))
+  * upgrade props ([8720121a](https://github.com/telusdigital/tds/commit/8720121a01b35e9a8f999a1c4183e3008a37406c))
+* **divider:**
+  * Fix linting and tests ([ba06d87b](https://github.com/telusdigital/tds/commit/ba06d87bce3b597af85e8a772cee5ef05ec84eff))
+  * add wave divider component ([895d3c8d](https://github.com/telusdigital/tds/commit/895d3c8dc0ed23410bc8d4ab8dd6e71e14591703))
+* **standalone-icon:** Add new standalone icon ([a7b2cb92](https://github.com/telusdigital/tds/commit/a7b2cb92c6449bb6d83bd71448a8b6a7cb2ba3e4))
+* **decorative-icon:** Add new decorative icon component ([e81344f2](https://github.com/telusdigital/tds/commit/e81344f2d62795a3c12b0ecc81ae3a2b35549de3))
+* **input:**
+  * Make the helper text small for custom helper components ([9a9f0c86](https://github.com/telusdigital/tds/commit/9a9f0c867ec0c2272a1eb594f1c876d11ade75f4))
+  * Make helper text gray for error style instead of red ([d52a190a](https://github.com/telusdigital/tds/commit/d52a190a47fb730e380030a33941a113ac8a2c40))
+  * Show ellipsis when the input value is longer than the input field ([a001526d](https://github.com/telusdigital/tds/commit/a001526de4bef54d71163d7f93b320b2a27df2c7))
+  * Remove the disabled section from the docs to discourage its use ([d59d30bc](https://github.com/telusdigital/tds/commit/d59d30bc093d3dcae04b83f5aa5492541de2e551))
+  * Make the helper text size small ([df0122bc](https://github.com/telusdigital/tds/commit/df0122bc25ab856f2cc614aa3244cd5f58bb863c))
+  * Remove the border from disabled style ([fe11fae1](https://github.com/telusdigital/tds/commit/fe11fae1a872e7a8e3f46cce2eb1843c0b7bed1a))
+  * Add babel-polyfill and a browserslist to fix Input field in the docs ([ec3345e5](https://github.com/telusdigital/tds/commit/ec3345e51afb67083ecbb91b17e68de2761e2251))
+  * Style the input placeholder text ([62544888](https://github.com/telusdigital/tds/commit/625448880ea245edd78dc0fe782f599c779eca46))
+  * Add additional HTML5 input types ([0818c080](https://github.com/telusdigital/tds/commit/0818c080dd184a33d89ccced1fa9fe9f2a708aa6))
+  * Set font properties to medium ([8c3587b0](https://github.com/telusdigital/tds/commit/8c3587b07f2a5cb9d02cefdb84d1a7d84d104811))
+  * Adjust spacing of label, helper, and field to follow spacing system. ([fabe7754](https://github.com/telusdigital/tds/commit/fabe7754e4099d82dd90364eb56fdca04104976b))
+  * Support complex field helpers and simplify the interface for using them. ([0c4f6d0a](https://github.com/telusdigital/tds/commit/0c4f6d0ac873d39fab60bbb6bca1d90eb3e2c39d))
+  * Add a Messaging.modules CSS file to share messaging related styles for Notification and ([2221b6cd](https://github.com/telusdigital/tds/commit/2221b6cda1a87e4b97640a5395ea72986815a082))
+  * Add a Flex.modules CSS file to share flexbox styles among components ([1a15b606](https://github.com/telusdigital/tds/commit/1a15b6062aa4546994ab9b0e141ac9cd11157f6d))
+  * Add a Borders.modules CSS file to share border styling among components ([c1f5c0c3](https://github.com/telusdigital/tds/commit/c1f5c0c35c18b1c9dadb37947de9800aff723b44))
+  * Add WithSpacing to apply consistent spacing to sub components in Input ([d9d3458e](https://github.com/telusdigital/tds/commit/d9d3458e489966feb5110f25cfd6757b3517eac8))
+  * Add accessibility properties for invalid state and error/helper text ([2cfa7829](https://github.com/telusdigital/tds/commit/2cfa7829c47c0540e9ea16a34adbcc56d61b4ea6))
+  * Add field helper ([2b5de941](https://github.com/telusdigital/tds/commit/2b5de94120e916e414c0ec142e839e35a8d0ab79))
+  * Add error message ([f0b3ce63](https://github.com/telusdigital/tds/commit/f0b3ce634c1e3b149db00f4a4a2d457755619aa4))
+  * Animate in/out the feedback icon when focusing and losing focus ([e62baa31](https://github.com/telusdigital/tds/commit/e62baa318cdda06723166e12a90c0fd5e42b6d59))
+  * Add disabled styles ([cdeece00](https://github.com/telusdigital/tds/commit/cdeece00364fc7cff6538bc60e765a14483a3efb))
+  * Add feedback states with styles and icons ([f55ea1a0](https://github.com/telusdigital/tds/commit/f55ea1a08f8181a837a44535e97dd2fbc7406adb))
+  * Add initial styles ([e94a9c02](https://github.com/telusdigital/tds/commit/e94a9c02c6ab485191cd1fd5cffabd12138aab20))
+* **lint:**
+  * add minimal style linter rules ([70611113](https://github.com/telusdigital/tds/commit/70611113001782b8c89efb9c98867a00de628ce5))
+  * reinstate stylelint to only scan component modules ([4c9bf977](https://github.com/telusdigital/tds/commit/4c9bf9772f4775acdb43b68c8621ff83ab8aaeb8))
+* **lists:**
+  * Add styles for UnorderedList ([698a84e8](https://github.com/telusdigital/tds/commit/698a84e8b192d79dde8ce62ec6eae87143da9dd2))
+  * Move UnorderedList and UnorderedItem under Lists directory ([09e769f9](https://github.com/telusdigital/tds/commit/09e769f9444863b5da60f0b3a89ebdcbd9271909))
+  * Add custom prop type validation for OrderedList items ([e333f907](https://github.com/telusdigital/tds/commit/e333f9070628497bae743afb2bdf14cfcd42a72d))
+  * Remove Text component wrapper in OrderedList and OrderedList.Item and set size u ([13e4e71c](https://github.com/telusdigital/tds/commit/13e4e71c1a9aa14a3202b294a58f610d7b963206))
+  * Update variant prop to listStyle ([b7e9c40a](https://github.com/telusdigital/tds/commit/b7e9c40a883cd4531f990829a0564f65d3ca135e))
+  * Add OrderedList component ([51f49141](https://github.com/telusdigital/tds/commit/51f4914126785b93fafa015de4fed35dfe5e9bcd))
+  * Updates to UnorderedList ([5bd600c7](https://github.com/telusdigital/tds/commit/5bd600c72a6cad5c51f78dee2d2351e43abb089a))
+  * Fix local styleguide by correcting the path to the list items in the config file. ([a3de9ebe](https://github.com/telusdigital/tds/commit/a3de9ebe31d4a786d1666abf8ae6bdd78365c2f4))
+  * Merge list item tests into its corresponding parent .spec.jsx file ([b9bd3f87](https://github.com/telusdigital/tds/commit/b9bd3f87ad20265197358d3918caf54dcf4aeafd))
+  * Add UnorderedList and Unordered Item first draft [WIP] ([3485b5df](https://github.com/telusdigital/tds/commit/3485b5df0e85ca40daabc0d524647bb3691382f8))
+* **text:**
+  * Allow Text component to inherit its color, same as Paragraph and Link ([49481c06](https://github.com/telusdigital/tds/commit/49481c06804e84f120ba54a368d997c02adcbf97))
+  * Code Review updates ([66c5dfbf](https://github.com/telusdigital/tds/commit/66c5dfbfa349174f1fbc9c40d504770054710cdf))
+* **display-heading:**
+  * add sup/sub components ([892f9a67](https://github.com/telusdigital/tds/commit/892f9a67a44e6fc11e01d8286ce9885522cbc7de))
+  * Add DisplayHeading component ([68984a6e](https://github.com/telusdigital/tds/commit/68984a6e8573c8c1db73d1b258512b39aa12e646))
+* **Input:** Initial commit. No styles. ([d2cd9266](https://github.com/telusdigital/tds/commit/d2cd92660894b129b2048e74eb90cb9708a9e56f))
+* **heading:**
+  * Add SupHeading and SubHeading components ([07492aec](https://github.com/telusdigital/tds/commit/07492aec4cbfb16fe6622a556c7108b30d709797))
+  * add modular colour classes ([569e436f](https://github.com/telusdigital/tds/commit/569e436f9083292257fac9de1ea1fbbd6fa12174))
+  * remove display heading prop ([d5337ff7](https://github.com/telusdigital/tds/commit/d5337ff72b3dff9b21e8ba0b0b50a5cb0b1c991e))
+  * Reset padding and margin on all headings ([e3aa79db](https://github.com/telusdigital/tds/commit/e3aa79db8bcc2580c587dd8019481c876c1e0c78))
+* **sup:**
+  * Add Sup and Sub components ([323b03c9](https://github.com/telusdigital/tds/commit/323b03c98000aa7efa8a584c0e9a31edcded9791))
+  * Add Sup component as a dependent on Text ([2bf7732a](https://github.com/telusdigital/tds/commit/2bf7732ad9dd050f494ae111de890cb5a47d97b0))
+* **config:** add heading components to official docs ([6285776a](https://github.com/telusdigital/tds/commit/6285776a4ab88f422a063845207c7cc5c247e8d9))
+
+##### Bug Fixes
+
+* **buttonlink:** remove default invert prop ([2078d9af](https://github.com/telusdigital/tds/commit/2078d9afe19386581614201c0b325910a883d632))
+
+##### Refactors
+
+* **notification:**
+  * Update to use new DecorativeIcon component ([e07487ec](https://github.com/telusdigital/tds/commit/e07487ecdf3904285e4b76140573e5ff9ac06265))
+  * Use Flexbox component instead of flexbox styles ([dcca90ae](https://github.com/telusdigital/tds/commit/dcca90ae9313bbc93cb2854d4853fbcd5f12f0e8))
+* **chevron-link:** Update to use new DecorativeIcon component ([6751cc67](https://github.com/telusdigital/tds/commit/6751cc6788b13ff5c837145b46e3e5ecd26638a5))
+* **safeRest:** Move safeRest.js to src/utils folder ([7a12d25f](https://github.com/telusdigital/tds/commit/7a12d25f68b5bf9043d7a0dd692100b4bb0d0cc0))
+* **warn:** Move warn.js to src/utils folder ([f097f2ed](https://github.com/telusdigital/tds/commit/f097f2edee952a56a0494abcc686b9b6f89b8f7d))
+* **capitalize:**
+  * Move capitalize to src/utils folder ([260872f1](https://github.com/telusdigital/tds/commit/260872f12b60c60061755eeba959c9463a760ed8))
+  * Share with WithSpacing and Icon components ([d0c9248f](https://github.com/telusdigital/tds/commit/d0c9248fa48d99daa6cf205063eca7b6346236e9))
+* **icon:** Add joinClassNames utility ([d3a4c9e3](https://github.com/telusdigital/tds/commit/d3a4c9e36b832eb4b321257ba14a0bd162ec7a3b))
+* **unordered-list:** Code cleanup ([b05a06fc](https://github.com/telusdigital/tds/commit/b05a06fceb67b86af0792c04ba50f678ad50e7d8))
+* **ordered-list:** Code clean up ([a159b9ae](https://github.com/telusdigital/tds/commit/a159b9aef245bb79ff4ae39e03b9e8a59dd2a5de))
+* **text:**
+  * Remove telus-font-family mixin ([4aa6d6cf](https://github.com/telusdigital/tds/commit/4aa6d6cf417cea8026ec69f727040713451c6753))
+  * code review updates for TextSup and TextSub ([098c29d9](https://github.com/telusdigital/tds/commit/098c29d9837dc951c2eed05f9e4cbdfc6fa111b7))
+  * Remove css code duplication, using specificity instead of nesting composes ([688c00e7](https://github.com/telusdigital/tds/commit/688c00e7e48b2ffea615b47e2b22ad7f522c142c))
+  * Move TextSup and TextSub to their own folder under Text ([64c504e6](https://github.com/telusdigital/tds/commit/64c504e682c1b517ed93ea4b43e3e4228f5e46a4))
+* **scaffold:** Move scaffold script to JS for more control. Use template files. ([196eb722](https://github.com/telusdigital/tds/commit/196eb7226cd040dcb5065870be05404ef2ace833))
+* **components:** Use new typography classes in ChevronLink and Button components ([5a27d2f9](https://github.com/telusdigital/tds/commit/5a27d2f916d5fa3c43ebe45d89b9ee3e15d40c66))
+
+##### Reverts
+
+* **icon:** Last revert for old-components/Icon component ([feaad99d](https://github.com/telusdigital/tds/commit/feaad99d9258686a6c0977687505e532d1ff409a))
+* **old-icon:** Leave old icon component alone ([a6c96bbd](https://github.com/telusdigital/tds/commit/a6c96bbd0e077af8cc20485cccd9bad527c20975))
+
+##### Code Style Changes
+
+* **scss:** Rearrange the stylint extends so that CSS modules comes second. ([bc081eb8](https://github.com/telusdigital/tds/commit/bc081eb865a1031ed5148d807c3860ca701f3da4))
+* **typography:** Add minor left padding to sub and sup ([fc3a0627](https://github.com/telusdigital/tds/commit/fc3a06271cd7fd0eb5f9fc08a0c93fe8fef3e78c))
+* **heading:** adjust sup/sub position in heading as per design review ([6fde7e4d](https://github.com/telusdigital/tds/commit/6fde7e4d8cd97f8585d7f5ba1272f1305536cd2c))
+
+##### Tests
+
+* **scaffold:**
+  * Add snapshot test ([e797a857](https://github.com/telusdigital/tds/commit/e797a8572e0e4c745af411385bd1e3e230fa6c35))
+  * Add tests to test safeRest ([91106448](https://github.com/telusdigital/tds/commit/91106448297e275606a65178cdea8c6bebac4a9a))
+* **links:** Add missing snapshot test to ButtonLink and ChevronLink ([56240099](https://github.com/telusdigital/tds/commit/56240099b9a642f5a3e1991932481126ceb71a93))
+
 #### 0.21.1 (2017-08-29)
 
 ##### Continuous Integration
