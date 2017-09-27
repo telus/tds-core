@@ -17,13 +17,7 @@ exports[`<Notification /> renders 1`] = `
           class="row"
         >
           <p
-            class="
-              noSpacing
-              color
-              medium
-              mediumFont
-              leftAlign
-            "
+            class="noSpacing color medium mediumFont leftAlign"
           >
             Some content
           </p>

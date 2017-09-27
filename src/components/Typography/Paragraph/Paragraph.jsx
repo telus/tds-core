@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../utils/safeRest'
+import joinClassNames from '../../../utils/joinClassNames'
 
 import spacingStyles from '../../Spacing/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
@@ -15,13 +16,13 @@ import textStyles from '../Text/Text.modules.scss'
 const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) => {
   const paragraphColor = invert ? textStyles.invertedColor : textStyles.color
 
-  const classes = `
-    ${spacingStyles.noSpacing}
-    ${context.inheritColor ? textStyles.inheritColor : paragraphColor}
-    ${textStyles[size]}
-    ${bold ? textStyles.boldFont : textStyles[`${size}Font`]}
-    ${styles[`${align}Align`]}
-  `
+  const classes = joinClassNames(
+    spacingStyles.noSpacing,
+    context.inheritColor ? textStyles.inheritColor : paragraphColor,
+    textStyles[size],
+    bold ? textStyles.boldFont : textStyles[`${size}Font`],
+    styles[`${align}Align`]
+  )
 
   return (
     <p {...safeRest(rest)} className={classes}>

@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../../utils/safeRest'
+import joinClassNames from '../../../utils/joinClassNames'
+
 import TextSup from './TextSup/TextSup'
 import TextSub from './TextSub/TextSub'
 
@@ -15,11 +17,11 @@ import styles from './Text.modules.scss'
 const Text = ({ bold, size, invert, children, ...rest }, context) => {
   const textColor = invert ? styles.invertedColor : styles.color
 
-  const classes = `
-    ${styles[size]}
-    ${bold ? styles.boldFont : styles[`${size}Font`]}
-    ${context.inheritColor ? styles.inheritColor : textColor}
-  `
+  const classes = joinClassNames(
+    styles[size],
+    bold ? styles.boldFont : styles[`${size}Font`],
+    context.inheritColor ? styles.inheritColor : textColor
+  )
 
   return (
     <span {...safeRest(rest)} className={classes}>

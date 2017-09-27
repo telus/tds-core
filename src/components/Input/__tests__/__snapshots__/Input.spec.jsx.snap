@@ -12,11 +12,7 @@ exports[`Input renders 1`] = `
       for="the-input"
     >
       <span
-        class="
-          medium
-          boldFont
-          color
-        "
+        class="medium boldFont color"
       >
         The input
       </span>
@@ -49,11 +45,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
       for="the-input"
     >
       <span
-        class="
-          medium
-          boldFont
-          color
-        "
+        class="medium boldFont color"
       >
         The input
       </span>
