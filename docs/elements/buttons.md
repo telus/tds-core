@@ -1,6 +1,6 @@
 <span class="docs--badge__deprecated">deprecated</span>
 
-**The button CSS classes are deprecated and should not be used. Use the [Button](#button) component instead.**
+<strong>The button CSS classes are deprecated and should not be used. Use the [Button](#button) component instead.</strong>
 
 ## Overview
 

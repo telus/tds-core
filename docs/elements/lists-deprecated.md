@@ -1,3 +1,9 @@
+<span class="docs--badge__deprecated">deprecated</span>
+
+<strong>The list CSS classes are deprecated and should not be used. Use the [OrderedList](#orderedlist) or
+[UnorderedList](#unorderedlist) component instead.</strong>
+
+
 ## Overview
 ---
 

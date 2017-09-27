@@ -1,4 +1,4 @@
-**Moving forward, TDS will be replacing most Foundational Element styles with React components.**
+<strong>Moving forward, TDS will be replacing most Foundational Element styles with React components.</strong>
 
 Past versions of TDS have distributed a large collection of styling, similar to the approach of libraries such as 
 Bootstrap or Semantic UI. TDS not only exposed CSS classes that could be applied to many HTML elements, such as 

@@ -6,12 +6,12 @@ const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, p
 const enabledInStaging = ['Input', 'Lists', 'Icon']
 
 /* eslint-disable no-unused-vars */
-const toggleByEnv = (component, newComponentPath, oldComponentPath) => {
+const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
   switch (styleguidistEnv) {
-    case 'dev': return newComponentPath
-    case 'staging': return enabledInStaging.includes(component) ? newComponentPath : oldComponentPath
-    case 'production': return oldComponentPath
-    default: return oldComponentPath
+    case 'dev': return toggledOffValue
+    case 'staging': return enabledInStaging.includes(component) ? toggledOffValue : toggledOnValue
+    case 'production': return toggledOnValue
+    default: return toggledOnValue
   }
 }
 
@@ -56,11 +56,6 @@ module.exports = {
     // Heading has name-spaced sub-components
     if (path.dirname(componentPath).includes('Typography/Heading')) {
       name = 'Heading'
-    }
-
-    // OrderedList has name-spaced sub-components
-    if (path.dirname(componentPath).includes('OrderedList')) {
-      name = 'OrderedList'
     }
 
     return `import { ${name} } from '@telusdigital/tds'`
@@ -110,7 +105,7 @@ module.exports = {
         },
         {
           name: 'Forms',
-          content: path.resolve('docs/elements/forms.md')
+          content: toggleByEnv('Input', path.resolve('docs/elements/forms-with-deprecated-input.md'), path.resolve('docs/elements/forms.md'))
         },
         {
           name: 'Grid',
@@ -118,7 +113,7 @@ module.exports = {
         },
         {
           name: 'Lists',
-          content: path.resolve('docs/elements/lists.md')
+          content: toggleByEnv('Lists', path.resolve('docs/elements/lists-deprecated.md'), path.resolve('docs/elements/lists.md'))
         },
         {
           name: 'Typography',
@@ -126,7 +121,7 @@ module.exports = {
         },
         {
           name: 'Utility Icons',
-          content: path.resolve('docs/elements/utility-icons.md')
+          content: toggleByEnv('Icon', path.resolve('docs/elements/utility-icons-deprecated.md'), path.resolve('docs/elements/utility-icons.md'))
         },
         {
           name: 'Utility Mixins',
@@ -154,11 +149,11 @@ module.exports = {
         {
           name: 'Content',
           components() {
-            return compact([
+            return [
               path.resolve('src/old-components/Card/Card.jsx')
-            ])
+            ]
           },
-          sections: [
+          sections: compact([
             {
               name: 'Links',
               components() {
@@ -169,16 +164,16 @@ module.exports = {
                 ]
               }
             },
-            {
+            toggleByEnv('Lists', {
               name: 'Lists',
               content: path.resolve('src/components/Lists/Lists.md'),
               components() {
-                return compact([
-                  toggleByEnv('Lists', path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx')),
-                  toggleByEnv('Lists', path.resolve('src/components/Lists/OrderedList/OrderedList.jsx'))
-                ])
+                return [
+                  path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx'),
+                  path.resolve('src/components/Lists/OrderedList/OrderedList.jsx')
+                ]
               }
-            },
+            }),
             {
               name: 'Expand Collapse',
               components() {
@@ -188,17 +183,17 @@ module.exports = {
                 ]
               }
             },
-            {
+            toggleByEnv('Dividers', {
               name: 'Dividers',
               components() {
-                return compact([
-                  toggleByEnv('Dividers', path.resolve('src/components/Dividers/WaveDivider/WaveDivider.jsx')),
-                  toggleByEnv('Dividers', path.resolve('src/components/Dividers/DimpleDivider/DimpleDivider.jsx')),
-                  toggleByEnv('Dividers', path.resolve('src/components/Dividers/HairlineDivider/HairlineDivider.jsx'))
-                ])
+                return [
+                  path.resolve('src/components/Dividers/WaveDivider/WaveDivider.jsx'),
+                  path.resolve('src/components/Dividers/DimpleDivider/DimpleDivider.jsx'),
+                  path.resolve('src/components/Dividers/HairlineDivider/HairlineDivider.jsx')
+                ]
               }
-            }
-          ]
+            })
+          ])
         },
         {
           name: 'Typography',
@@ -237,7 +232,7 @@ module.exports = {
         },
         {
           name: 'Icons',
-          content: path.resolve('src/components/Icons/icons.md'),
+          content: toggleByEnv('Icon', path.resolve('src/components/Icons/icons.md')),
           components() {
             return compact([
               toggleByEnv('Icon', path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx')),
