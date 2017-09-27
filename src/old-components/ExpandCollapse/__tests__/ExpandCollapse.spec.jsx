@@ -17,6 +17,7 @@ describe('<ExpandCollapse/>', () => {
       </Group>
     )
     expect(wrapper.find('.collapsible-panel__label--disabled').length).toEqual(1)
+    expect(wrapper.find('.collapsible-panel__label--disabled').find('button').props().disabled).toBe(true)
     const panel1 = wrapper.find('.collapsible-panel__header').first()
     panel1.simulate('click')
     expect(wrapper.find('.collapsible-panel__content').first().hasClass('collapsible-panel__content--visible')).toEqual(false)
