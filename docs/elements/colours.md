@@ -15,7 +15,7 @@ White is the most dominant colour in our palette and should be the foundation of
 
 For more insight in how we use whitespace and our colour palette, go to [BrandHub](http://brand.telus.com/).
 
-## Buttons/Links/Headings/Body
+## Buttons/links/headings/body
 
 ---
 

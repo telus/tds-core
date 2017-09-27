@@ -160,7 +160,7 @@ The TELUS Core Icons font isn't fixed width, but the `--fw` helper can be used w
 
 In order to use variables, functions, and mixins, TDS' SCSS source code must be imported by your project. See the [Using TDS Core](/2-Use-TDS/1-getting-started.html#using-core) for further instructions.
 
-### Core Icon Codepoint
+### Core icon codepoint
 
 Function `core-icon-codepoint` returns the unicode value for the given icon name.
 
@@ -172,7 +172,7 @@ Function `core-icon-codepoint` returns the unicode value for the given icon name
 }
 ```
 
-### Core Icon
+### Core icon
 
 Mixin `core-icon` outputs the properties of an inline block icon.
 

@@ -8,7 +8,7 @@
 
 Text links are interactive elements. They can be used within body paragraphs or as stand alone elements.
 
-### Body Style
+### Body style
 
 The underline style distinguishes these as interactive elements.
 
@@ -29,7 +29,7 @@ The underline style distinguishes these as interactive elements.
 </p>
 ```
 
-### Primary Colour links
+### Primary colour links
 
 <div class="example example--type">
     <a href="#" class="link link--primary link--descent">View the current page</a>
@@ -39,7 +39,7 @@ The underline style distinguishes these as interactive elements.
 <a href="#" class="link link--primary link--descent">View the current page</a>
 ```
 
-### Secondary Color links
+### Secondary colour links
 
 <div class="example example--type">
     <a href="#" class="link link--secondary link--descent">View the current page</a>
@@ -49,7 +49,7 @@ The underline style distinguishes these as interactive elements.
 <a href="#" class="link link--secondary link--descent">View the current page</a>
 ```
 
-### Inverted links on Primary Color Background
+### Inverted links on primary colour background
 
 <div class="example example--inverted example--primary">
     <a href="#" class="link link--primary link--inverted link--descent">
@@ -79,7 +79,7 @@ The underline style distinguishes these as interactive elements.
 </a>
 ```
 
-### Inverted links on Secondary Color Background
+### Inverted links on secondary colour background
 <div class="example example--inverted example--secondary">
     <a href="#" class="link link--secondary link--inverted link--descent">
         Lorem ipsum
@@ -117,11 +117,11 @@ You'll notice the text links include a `link--descent` modifier. This class crea
     * White background for normal links
     * Telus Grape or Accessible Green background for inverted links
 
-## Chevron Links
+## Chevron links
 
 ---
 
-### Primary Color Chevron Links
+### Primary colour chevron links
 
 <a href="#" class="chevron-link--primary">Large/link</a>
 
@@ -144,7 +144,7 @@ You'll notice the text links include a `link--descent` modifier. This class crea
 </a>
 ```
 
-### Secondary Color Chevron Links
+### Secondary colour chevron links
 
 <a href="#" class="chevron-link--secondary">Large/link</a>
 

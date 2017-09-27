@@ -28,7 +28,7 @@ Scale creates consistency in sizing across elements. Modular scaling was used to
 
 **Headlines:** A base size of 28px is set for headings. Headings scale down to an augmented fourth. Take your heading point size divide it by 1.414 and round to the nearest whole number for mobile.
 
-**Body, Links:** A base size of 16px is set for body copy. As we scale things responsively text values remain the same throughout.
+**Body, links:** A base size of 16px is set for body copy. As we scale things responsively text values remain the same throughout.
 
 ### Type leading
 
@@ -42,7 +42,7 @@ To create consistent leading the line height is set to double the value of the b
 * Looks friendlier and less formal
 
 
-## Fonts for Sketch and Webfonts
+## Fonts for Sketch and webfonts
 ---
 
 - Helvetica Neue LT Std 35 Thin (css: `font-weight: 300;`)
@@ -70,7 +70,7 @@ To create consistent leading the line height is set to double the value of the b
 
 <br>
 
-<h1 class="display-heading-1">Display Heading 1</h1>
+<h1 class="display-heading-1">Display heading 1</h1>
 
 To be used in Hero Banners. Text within it should only wrap to a maximum of 2 lines.
 
@@ -114,7 +114,7 @@ Quaternary headline.
 <div class="heading-4">Heading 4</div>
 ```
 
-## Body & Subhead
+## Body & subhead
 
 ---
 
@@ -162,7 +162,7 @@ Tertiary copy; lowest importance level of of content.
 <small>This is also small body text.</small>
 ```
 
-### Line Length
+### Line length
 
 The ideal line length for body copy is considered to be 50-75 characters per line with the inclusion of spaces. The best way to achieve an optimal character count per line is by putting constraints around how many columns your text block spans.
 

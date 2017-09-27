@@ -1,4 +1,4 @@
-### Minimal Usage
+### Minimal usage
 
 A Button Link is a navigational element that styles itself as a button. Clicking one should navigate to a new "page".
 

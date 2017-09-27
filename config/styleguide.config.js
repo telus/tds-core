@@ -70,11 +70,11 @@ module.exports = {
       content: path.resolve('docs/intro/welcome.md'),
       sections: [
         {
-          name: 'Getting Started',
+          name: 'Getting started',
           content: path.resolve('docs/intro/getting-started.md')
         },
         {
-          name: 'Design Vision',
+          name: 'Design vision',
           content: path.resolve('docs/intro/design-vision.md')
         },
         {
@@ -88,7 +88,7 @@ module.exports = {
       ]
     },
     {
-      name: 'Foundational Elements',
+      name: 'Foundational elements',
       content: path.resolve('docs/elements/intro.md'),
       sections: [
         {
@@ -120,15 +120,15 @@ module.exports = {
           content: path.resolve('docs/elements/typography.md')
         },
         {
-          name: 'Utility Icons',
+          name: 'Utility icons',
           content: toggleByEnv('Icon', path.resolve('docs/elements/utility-icons-deprecated.md'), path.resolve('docs/elements/utility-icons.md'))
         },
         {
-          name: 'Utility Mixins',
+          name: 'Utility mixins',
           content: path.resolve('docs/elements/utility-mixins.md')
         },
         {
-          name: 'Design Tokens',
+          name: 'Design tokens',
           content: path.resolve('docs/elements/design-tokens.md')
         }
       ]
@@ -175,7 +175,7 @@ module.exports = {
               }
             }),
             {
-              name: 'Expand Collapse',
+              name: 'Expand collapse',
               components() {
                 return [
                   path.resolve('src/old-components/ExpandCollapse/Group.jsx'),
@@ -242,7 +242,7 @@ module.exports = {
           }
         },
         {
-          name: 'Feedback Indicators',
+          name: 'Feedback indicators',
           components() {
             return [
               path.resolve('src/components/Notification/Notification.jsx'),

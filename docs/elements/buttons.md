@@ -21,7 +21,7 @@ The shape colour of normal and hover fade between one another on hover of the bu
 * Avoid excessively long button text
 * Make sure the button text describes an action
 
-## Primary Button
+## Primary button
 
 ---
 
@@ -37,7 +37,7 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
-### Outlined Primary button
+### Outlined primary button
 
 <button class="button button--primary button--outlined">
   Submit form
@@ -49,7 +49,7 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
-### Inverted Primary button
+### Inverted primary button
 
 <div class="example example--inverted example--primary">
     <button class="button button--primary button--inverted">
@@ -63,7 +63,7 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
-### Inverted Outlined Primary button
+### Inverted outlined primary button
 
 <div class="example example--inverted example--primary">
     <button class="button button--primary button--inverted button--outlined">
@@ -78,7 +78,7 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 ```
 
 
-## Secondary Button
+## Secondary button
 
 ---
 
@@ -104,7 +104,7 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
-### Inverted Secondary button
+### Inverted secondary button
 
 <div class="example example--inverted example--secondary">
     <button class="button button--secondary button--inverted">
@@ -118,7 +118,7 @@ A button that's used for primary actions. The `button` and `button--primary` blo
 </button>
 ```
 
-### Inverted Outlined Secondary button
+### Inverted outlined secondary button
 
 <div class="example example--inverted example--secondary">
     <button class="button button--secondary button--inverted button--outlined">

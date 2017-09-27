@@ -163,7 +163,7 @@ The `xs-*` helpers are available when you need to lay out columns at the smalles
   </div>
 </div>
 
-### Offset Columns
+### Offset columns
 
 Offset column classes make it possible to add negative space alongside columns.
 

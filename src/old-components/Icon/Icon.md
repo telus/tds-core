@@ -1,4 +1,4 @@
-## Available Icons
+## Available icons
 
 ```
 <div className="docs--horizontal-spacing">
@@ -20,7 +20,7 @@
 </div>
 ```
 
-## Instructive Icons
+## Instructive icons
 
 By default, all icons will inherit the color of the text around them, except for "instructive" icons. Instructive icons
 have special meaning, and are pre-colored.
@@ -33,7 +33,7 @@ have special meaning, and are pre-colored.
 </div>
 ```
 
-## Modifying color
+## Modifying colour
 
 Use the `variant` prop to alter the icon's color. Each variant has semantic meaning.
 

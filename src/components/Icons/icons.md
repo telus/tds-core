@@ -1,4 +1,4 @@
-### Available Icons
+### Available icons
 
 ```
 <div className="docs--horizontal-spacing">

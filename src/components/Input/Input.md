@@ -1,4 +1,4 @@
-### Minimal Usage
+### Minimal usage
 
 By default, a "text" input field will be rendered, but other
 [HTML5 input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types)

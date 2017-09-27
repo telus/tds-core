@@ -34,7 +34,7 @@ fields, such as checkboxes or selects, are not deprecated yet.</strong>
 The simplest implementation of a form field consists of a `.form` block containing a label and an input tag.
 
 <fieldset class="field">
-  <label for="firstname">First Name</label>
+  <label for="firstname">First name</label>
   <input id="firstname" name="firstname" required>
 </fieldset>
 
@@ -45,7 +45,7 @@ The simplest implementation of a form field consists of a `.form` block containi
 
 ```html
 <fieldset class="field">
-  <label for="firstname">First Name</label>
+  <label for="firstname">First name</label>
   <input id="firstname" name="firstname" required>
 </fieldset>
 
@@ -60,13 +60,13 @@ The simplest implementation of a form field consists of a `.form` block containi
 Adding the standard `[disabled]` HTML attribute will cause an input to appear greyed-out.
 
 <fieldset class="field">
-  <label for="lastname">First Name (Disabled)</label>
+  <label for="lastname">First name (Disabled)</label>
   <input id="lastname" name="lastname" disabled>
 </fieldset>
 
 ```html
 <fieldset class="field">
-  <label for="firstname">First Name (Disabled)</label>
+  <label for="firstname">First name (Disabled)</label>
   <input id="firstname" name="firstname" disabled>
 </fieldset>
 ```
@@ -190,7 +190,7 @@ When only one choice is available, we can pare the field down to a simple `.choi
 Create a dropdown by putting a label and select list inside the typical `.field` block, and modifying `.field__control` with `--dropdown`.
 
 <div class="field">
-    <label for="normal-dropdown">Dropdown Normal</label>
+    <label for="normal-dropdown">Dropdown normal</label>
     <div class="field__control field__control--dropdown">
 	<select id="normal-dropdown">
 	    <option value="option1">Option 1</option>
@@ -202,7 +202,7 @@ Create a dropdown by putting a label and select list inside the typical `.field`
 
 ```html
 <div class="field">
-    <label for="normal-dropdown">Dropdown Normal</label>
+    <label for="normal-dropdown">Dropdown normal</label>
     <div class="field__control field__control--dropdown">
 	<select id="normal-dropdown">
 	    <option value="option1">Option 1</option>
@@ -218,7 +218,7 @@ Create a dropdown by putting a label and select list inside the typical `.field`
 Adding a `[disabled]` attribute to the `<select>` element will cause it to appear greyed out. In addition, modify `.field__control` with `--disabled` to correctly color the custom "caret" icon.
 
 <div class="field">
-    <label for="disabled-dropdown">Dropdown Disabled</label>
+    <label for="disabled-dropdown">Dropdown disabled</label>
     <div class="field__control field__control--dropdown field__control--disabled">
 	<select id="disabled-dropdown" disabled>
 	    <option value="option1">Option 1</option>
@@ -230,7 +230,7 @@ Adding a `[disabled]` attribute to the `<select>` element will cause it to appea
 
 ```html
 <div class="field">
-    <label for="disabled-dropdown">Dropdown Disabled</label>
+    <label for="disabled-dropdown">Dropdown disabled</label>
     <div class="field__control field__control--dropdown field__control--disabled">
 	<select id="disabled-dropdown" disabled>
 	    <option value="option1">Option 1</option>
@@ -258,7 +258,7 @@ See [Usable and Accessible Form Validation and Error Recovery](http://webaim.org
 * Apply `aria-invalid="true"` to the control
 * Set focus to the first control which needs attention
 
-<p><small>The [Field Helpers](#field-helpers) section contains more documentation for inline error messages.</small></p>
+<p><small>The [field helpers](#field-helpers) section contains more documentation for inline error messages.</small></p>
 
 ### Text field states
 
@@ -299,7 +299,7 @@ Wrap the input element in a `.field__control` block to ensure correct placement 
 The `.field` `--success` and `--error` modifiers will also style dropdowns with visual feedback.
 
 <div class="field field--success">
-    <label for="success-dropdown">Dropdown Successful</label>
+    <label for="success-dropdown">Dropdown successful</label>
     <div class="field__control field__control--dropdown">
 	<select id="success-dropdown">
 	    <option value="option1">Option 1</option>
@@ -322,7 +322,7 @@ The `.field` `--success` and `--error` modifiers will also style dropdowns with 
 
 ```html
 <div class="field field--success">
-    <label for="success-dropdown">Dropdown Successful</label>
+    <label for="success-dropdown">Dropdown successful</label>
     <div class="field__control field__control--dropdown">
 	<select id="success-dropdown">
 	    <option value="option1">Option 1</option>
@@ -614,7 +614,7 @@ A helper modified with `.helper--error` can give detailed instructions regarding
 </div>
 ```
 
-Use the "Error List" block when a field has a complex error message.
+Use the "Error list" block when a field has a complex error message.
 
 <div class="field field--error">
     <label for="input_f">Error field helper</label>
