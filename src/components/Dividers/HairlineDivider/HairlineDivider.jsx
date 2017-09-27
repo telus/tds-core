@@ -22,16 +22,20 @@ const getClassName = (vertical, gradient) => {
 }
 
 /**
- * Separate content.
+ * Separate content within modules.
  */
-const HairlineDivider = ({ vertical, gradient, ...rest }) => {
-  return (
-    <hr {...safeRest(rest)} className={styles[getClassName(vertical, gradient)]} />
-  )
-}
+const HairlineDivider = ({ vertical, gradient, ...rest }) => (
+  <hr {...safeRest(rest)} className={styles[getClassName(vertical, gradient)]} />
+)
 
 HairlineDivider.propTypes = {
+  /**
+   * Draw the divider vertically.
+   */
   vertical: PropTypes.bool,
+  /**
+   * Use a subtle gradient instead of a solid thin line.
+   */
   gradient: PropTypes.bool
 }
 
