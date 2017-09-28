@@ -30,7 +30,14 @@
 .horizontalGradient {
   composes: horizontal;
 
-  background-image: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, $color-gainsboro 2%, $color-gainsboro 98%, rgba(216, 216, 216, 0) 100%);
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(216, 216, 216, 0) 0%,
+      $color-gainsboro 7%,
+      $color-gainsboro 93%,
+      rgba(216, 216, 216, 0) 100%
+    );
 }
 
 .verticalThin {
@@ -42,5 +49,12 @@
 .verticalGradient {
   composes: vertical;
 
-  background-image: linear-gradient(180deg, rgba(216, 216, 216, 0) 0%, $color-gainsboro 5%, $color-gainsboro 95%, rgba(216, 216, 216, 0) 100%);
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(216, 216, 216, 0) 0%,
+      $color-gainsboro 12%,
+      $color-gainsboro 88%,
+      rgba(216, 216, 216, 0) 100%
+    );
 }
