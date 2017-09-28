@@ -3,7 +3,7 @@ const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
-const enabledInStaging = ['Input', 'Lists', 'Icon']
+const enabledInStaging = ['Input', 'Lists', 'Icon', 'Dividers']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
