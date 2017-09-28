@@ -66,9 +66,10 @@ input.input {
   width: 100%;
 
   // FIXME: Will be able to use composes when removing the targeting of the <input> element above
-  //composes: noSpacing from '../Spacing/Spacing.modules.scss';
-  padding: 0;
+  //composes: noMargin from '../Spacing/Spacing.modules.scss';
   margin: 0;
+  // This top+bottom padding fixes an IE11 bug that was causing the input value to jump slightly and get cut off.
+  padding: $spacing-tight 0;
 
   outline: 0;
 
