@@ -14,9 +14,10 @@
 .inputWrapper {
   composes: thin rounded from '../Borders.modules.scss';
   composes: row from '../Flexbox.modules.scss';
+  composes: height from '../FormFields.modules.scss';
 
   align-items: center;
-  padding: $spacing-base;
+  padding: 0 $spacing-base;
 }
 
 .defaultBoxShadow {
@@ -68,12 +69,16 @@ input.input {
   //composes: noSpacing from '../Spacing/Spacing.modules.scss';
   padding: 0;
   margin: 0;
+
   outline: 0;
 
   // FIXME: Will be able to use composes when removing the targeting of the <input> element above
   // composes: none rounded from '../Borders.modules.scss';
   border: 0;
   border-radius: 4px;
+
+  // FIXME: Will be able to use composes when removing the targeting of the <input> element above
+  // composes: font from '../FormFields.modules.scss';
   font-family: $font-telus;
 
   // FIXME: Will be able to use composes when removing the targeting of the <input> element above

@@ -18,7 +18,7 @@ Supply additional HTML input attributes as normal.
 </div>
 ```
 
-### Showing feedback for entered values
+### Getting feedback for entered values
 
 Use the `feedback` attribute to give the user feedback regarding their input. You can affirm that the user's input
 was correct, or highlight errors that must be corrected.
