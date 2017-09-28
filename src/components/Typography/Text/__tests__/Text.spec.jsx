@@ -15,10 +15,12 @@ describe('Text', () => {
     expect(toJson(text)).toMatchSnapshot()
   })
 
-  it('renders an HTML span tag', () => {
-    const text = doShallow()
-
+  it('renders an HTML span or div tag', () => {
+    let text = doShallow()
     expect(text).toHaveTagName('span')
+
+    text = doShallow({ block: true })
+    expect(text).toHaveTagName('div')
   })
 
   it('can be bold', () => {

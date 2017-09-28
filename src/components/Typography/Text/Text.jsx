@@ -14,7 +14,7 @@ import styles from './Text.modules.scss'
  *
  * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.22.0</span>
  */
-const Text = ({ bold, size, invert, children, ...rest }, context) => {
+const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
   const textColor = invert ? styles.invertedColor : styles.color
 
   const classes = joinClassNames(
@@ -23,14 +23,22 @@ const Text = ({ bold, size, invert, children, ...rest }, context) => {
     context.inheritColor ? styles.inheritColor : textColor
   )
 
-  return (
-    <span {...safeRest(rest)} className={classes}>
-      {children}
-    </span>
+  return React.createElement(
+    block ? 'div' : 'span',
+    {
+      ...safeRest(rest),
+      className: classes
+    },
+    children
   )
 }
 
 Text.propTypes = {
+  /**
+   * If true, renders a block level element.
+   * Otherwise, renders an inline element.
+   */
+  block: PropTypes.bool,
   /**
    * Embolden text without conveying any special importance or relevance.
    */
@@ -55,6 +63,7 @@ Text.propTypes = {
 }
 
 Text.defaultProps = {
+  block: false,
   bold: false,
   size: 'base',
   invert: false
