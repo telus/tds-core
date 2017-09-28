@@ -65,8 +65,10 @@ class Panel extends Component {
         <button
           onClick={onPanelClick}
           aria-expanded={isActive ? 'true' : 'false'}
+          aria-disabled={isDisabled ? 'true' : 'false'}
           aria-controls={this.contentId}
           className={collapsePaneLabelClassName}
+          disabled={isDisabled}
         >
           <span className="collapsible-panel__icon">
             <i className={iconClassName} />
