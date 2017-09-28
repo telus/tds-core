@@ -5,18 +5,12 @@ exports[`<UnorderedList /> renders 1`] = `
   class="base"
 >
   <li
-    class="
-      circle
-      undefined
-    "
+    class="circle"
   >
     Lorem ipsum
   </li>
   <li
-    class="
-      circle
-      undefined
-    "
+    class="circle"
   >
     Dolor sit amet
   </li>

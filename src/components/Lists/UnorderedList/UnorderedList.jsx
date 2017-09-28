@@ -7,17 +7,17 @@ import UnorderedItem from './UnorderedItem/UnorderedItem'
 
 import styles from '../List.modules.scss'
 
-const injectSizeAndListStyle = (child, size, listStyle) => (
-  React.cloneElement(child, { size, listStyle })
+const injectListStyle = (child, listStyle) => (
+  React.cloneElement(child, { listStyle })
 )
 
 /**
  * <span class="docs--badge__wip">wip</span>
  */
-const UnorderedList = ({ listStyle, size, children, ...rest }) => {
+const UnorderedList = ({ listStyle, children, ...rest }) => {
   return (
     <ul {...safeRest(rest)} className={styles.base}>
-      {React.Children.map(children, child => injectSizeAndListStyle(child, size, listStyle))}
+      {React.Children.map(children, child => injectListStyle(child, listStyle))}
     </ul>
   )
 }
@@ -32,21 +32,13 @@ UnorderedList.propTypes = {
     'x'
   ]),
   /**
-   * The font size.
-   */
-  size: PropTypes.oneOf([
-    'medium',
-    'large'
-  ]),
-  /**
    * The list items. Must be at least one `UnorderedList.Item`.
    */
   children: childrenOfType(UnorderedItem).isRequired
 }
 
 UnorderedList.defaultProps = {
-  listStyle: 'circle',
-  size: undefined
+  listStyle: 'circle'
 }
 
 UnorderedList.Item = UnorderedItem

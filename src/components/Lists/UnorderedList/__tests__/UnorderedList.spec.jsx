@@ -49,12 +49,6 @@ describe('<UnorderedList />', () => {
     expect(unorderedList.find(UnorderedList.Item).at(1).dive()).toHaveClassName('x')
   })
 
-  it('can be sized', () => {
-    const unorderedList = doShallow({ size: 'large' })
-
-    expect(unorderedList.find(UnorderedList.Item).first().dive()).toHaveClassName('large')
-  })
-
   it('passes additional attributes to ul element', () => {
     const unorderedList = doShallow({ id: 'the-list', 'data-some-thing': 'some value' })
 
