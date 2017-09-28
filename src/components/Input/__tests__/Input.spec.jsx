@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import Icon from '../../../old-components/Icon/Icon'
+import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../Fade'
@@ -17,7 +17,7 @@ describe('Input', () => {
   const doRender = (overrides = {}) => render(<Input {...defaultProps} {...overrides} />)
 
   const findInputElement = input => input.find('input')
-  const findWrapperElement = input => input.find('[data-testID="inputWrapper"]')
+  const findWrapperElement = input => input.find('[data-testid="inputWrapper"]')
 
   it('renders', () => {
     const input = doRender()
@@ -161,14 +161,18 @@ describe('Input', () => {
       const input = doShallow({ feedback: 'success' })
 
       expect(findWrapperElement(input)).toHaveClassName('success')
-      expect(input.find(Fade).dive().dive()).toContainReact(<Icon glyph="checkmark" aria-hidden="true" />)
+      expect(input.find(Fade).dive().dive()).toContainReact(
+        <StandaloneIcon symbol="checkmark" variant="primary" size={16} a11yText="The value of this input field is valid." />
+      )
     })
 
     it('can have an error feedback state', () => {
       const input = doShallow({ feedback: 'error' })
 
       expect(findWrapperElement(input)).toHaveClassName('error')
-      expect(input.find(Fade).dive().dive()).toContainReact(<Icon glyph="exclamation-point-circle" aria-hidden="true" />)
+      expect(input.find(Fade).dive().dive()).toContainReact(
+        <StandaloneIcon symbol="exclamationPointCircle" variant="error" size={16} a11yText="The value of this input field is invalid." />
+      )
     })
 
     it('hides the feedback state while focused', () => {

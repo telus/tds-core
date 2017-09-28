@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Icon from '../../old-components/Icon/Icon'
+import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 import WithSpacing from '../Spacing/WithSpacing/WithSpacing'
@@ -30,10 +30,6 @@ const getWrapperClassName = (feedback, focused, disabled) => {
   return styles.default
 }
 
-const iconByFeedbackState = {
-  success: 'checkmark',
-  error: 'exclamation-point-circle'
-}
 const showFeedbackIcon = (feedback, focused) => (feedback === 'success' || feedback === 'error') && !focused
 
 /**
@@ -113,6 +109,14 @@ class Input extends React.Component {
     )
   }
 
+  renderIcon(feedback) {
+    if (feedback === 'success') {
+      return <StandaloneIcon symbol="checkmark" variant="primary" size={16} a11yText="The value of this input field is valid." />
+    }
+
+    return <StandaloneIcon symbol="exclamationPointCircle" variant="error" size={16} a11yText="The value of this input field is invalid." />
+  }
+
   render() {
     const { type, label, feedback, error, helper, ...rest } = this.props
 
@@ -144,7 +148,7 @@ class Input extends React.Component {
           </WithSpacing>
         }
 
-        <div className={wrapperClassName} data-testID="inputWrapper">
+        <div className={wrapperClassName} data-testid="inputWrapper">
           <input
             {...safeRest(rest)}
             id={inputId.identity()} type={type} className={styles.input}
@@ -157,7 +161,7 @@ class Input extends React.Component {
           <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
             { () => (
               <WithSpacing location="left" amount={3}>
-                <Icon glyph={iconByFeedbackState[feedback]} aria-hidden="true" />
+                {this.renderIcon(feedback)}
               </WithSpacing>
             )}
           </Fade>
