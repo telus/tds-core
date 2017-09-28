@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip renders 1`] = `
+<div
+  className="wrapper"
+>
+  <span
+    className="right"
+  >
+    Helper text
+  </span>
+  <button
+    className="trigger"
+  >
+    <DecorativeIcon
+      size={24}
+      symbol="questionMarkCircle"
+    />
+  </button>
+</div>
+`;

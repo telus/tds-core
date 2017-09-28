@@ -257,6 +257,7 @@ module.exports = {
             return compact([
               path.resolve('src/components/Button/Button.jsx'),
               toggleByEnv('Input', path.resolve('src/components/Input/Input.jsx')),
+              toggleByEnv('Tooltip', path.resolve('src/components/Tooltip/Tooltip.jsx')),
               path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx')
             ])
           }
