@@ -7,14 +7,12 @@ import OrderedItem from './OrderedItem'
 
 import styles from './OrderedList.modules.scss'
 
-const injectSize = (child, size) => React.cloneElement(child, { size })
-
 /**
  * <span class="docs--badge__wip">wip</span>
  */
-const OrderedList = ({ listStyle, size, children, ...rest }) => (
+const OrderedList = ({ listStyle, children, ...rest }) => (
   <ol {...safeRest(rest)} className={styles[listStyle]}>
-    {React.Children.map(children, child => injectSize(child, size))}
+    {children}
   </ol>
 )
 
@@ -28,21 +26,13 @@ OrderedList.propTypes = {
     'lowerAlpha'
   ]),
   /**
-   * The font size.
-   */
-  size: PropTypes.oneOf([
-    'medium',
-    'large'
-  ]),
-  /**
    * The list items. Must be at least one `OrderedList.Item`.
    */
   children: childrenOfType(OrderedItem).isRequired
 }
 
 OrderedList.defaultProps = {
-  listStyle: 'decimal',
-  size: undefined
+  listStyle: 'decimal'
 }
 
 OrderedList.Item = OrderedItem
