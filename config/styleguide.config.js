@@ -274,7 +274,8 @@ module.exports = {
     path.resolve('docs/scss/styleguide.scss')
   ],
   styleguideComponents: {
-    Logo: path.resolve('docs/components/Logo')
+    Logo: path.resolve('docs/components/Logo/Logo'),
+    Markdown: path.resolve('docs/components/Markdown/Markdown.js')
   },
   webpackConfig: {
     module: {

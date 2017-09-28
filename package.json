@@ -120,7 +120,7 @@
       "config/styleguide/**",
       "**/fonts/**",
       "**/dist/**",
-      "docs/components/Logo.svg",
+      "docs/components/Logo/Logo.svg",
       "**.log",
       "**/__snapshots__/**",
       "docs/elements/**",

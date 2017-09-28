@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { version } from '../../package.json'
+import { version } from '../../../package.json'
 import logo from './Logo.svg'
 
-import Text from '../../src/components/Typography/Text/Text'
+import Text from '../../../src/components/Typography/Text/Text'
 
 const Logo = () => (
   <div>
