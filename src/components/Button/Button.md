@@ -5,7 +5,7 @@ is the button's primary action, as a [Link](#link) is more appropriate.**
 
 ### Usage criteria
 
-* Use buttons to move though a transaction.
+* Use buttons to move through a transaction.
 * Aim to use only one button per page.
 * Avoid excessively long button text.
 * Make sure the button text describes an action.
