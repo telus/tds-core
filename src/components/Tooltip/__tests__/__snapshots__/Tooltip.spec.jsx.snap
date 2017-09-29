@@ -2,19 +2,19 @@
 
 exports[`Tooltip renders 1`] = `
 <div
-  className="wrapper"
+  class="wrapper"
 >
   <span
-    className="right"
+    class="right"
   >
     Helper text
   </span>
   <button
-    className="trigger"
+    class="trigger"
   >
-    <DecorativeIcon
-      size={24}
-      symbol="questionMarkCircle"
+    <i
+      aria-hidden="true"
+      class="iconQuestionMarkCircle size16"
     />
   </button>
 </div>

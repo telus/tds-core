@@ -1,16 +1,21 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import Tooltip from '../Tooltip'
 
 describe('Tooltip', () => {
+
+  const doRender = (overrides = {}) => render(
+    <Tooltip {...overrides}>Helper text</Tooltip>
+  )
+
   const doShallow = (overrides = {}) => shallow(
     <Tooltip {...overrides}>Helper text</Tooltip>
   )
 
   it('renders', () => {
-    const tooltip = doShallow()
+    const tooltip = doRender()
 
     expect(toJson(tooltip)).toMatchSnapshot()
   })
@@ -19,6 +24,18 @@ describe('Tooltip', () => {
     const tooltip = doShallow()
 
     expect(tooltip).toHaveTagName('div')
+  })
+
+  it('has a trigger'), () => {
+    const tooltip = doShallow()
+
+    expect(tooltip.find('button')).toContainReact(<DecorativeIcon symbol="questionMarkCircle" size={16} />)
+  }
+
+  it('has a bubble', () => {
+    const tooltip = doShallow()
+
+    expect(tooltip.find('span').text()).toEqual('Helper text')
   })
 
   // it('can set direction', () => {

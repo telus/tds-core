@@ -17,7 +17,7 @@ const Tooltip = ({ direction, children, ...rest }) => {
         {children}
       </span>
       <button className={styles.trigger}>
-        <DecorativeIcon symbol="questionMarkCircle" />
+        <DecorativeIcon symbol="questionMarkCircle" size={16} />
       </button>
     </div>
   )
