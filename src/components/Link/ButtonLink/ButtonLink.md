@@ -5,7 +5,7 @@ A Button Link is a navigational element that styles itself as a button. Clicking
 By default, Buttons will be displayed in the `primary` variant. Use primary Button Links for the main call to action on a page.
 
 ```
-<ButtonLink href="http://www.telus.com">Find out how</ButtonLink>
+<ButtonLink href="#">Find out how</ButtonLink>
 ```
 
 ### Usage criteria
@@ -26,6 +26,6 @@ Use this variant with caution. There will be accessibility issues if the colour 
 const Hero = require('../../__docs__/Hero').default;
 
 <Hero>
-  <ButtonLink variant="inverted">Advanced solutions</ButtonLink>
+  <ButtonLink href="#" variant="inverted">Advanced solutions</ButtonLink>
 </Hero>
 ```

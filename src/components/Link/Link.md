@@ -1,7 +1,7 @@
 ### Minimal usage
 
 ```
-<Link href="https://www.telus.com">Go to TELUS.com</Link>
+<Link href="#">Go to the TDS homepage</Link>
 ```
 
 ### Usage criteria
@@ -15,7 +15,7 @@
 const PurpleBlock = require('../__docs__/PurpleBlock').default;
 
 <PurpleBlock>
-  <Paragraph invert>Call Screen requires a subscription. <Link href="" invert>Log in</Link> to your account and make sure you are subscribed.</Paragraph>
+  <Paragraph invert>Call Screen requires a subscription. <Link href="#" invert>Log in</Link> to your account and make sure you are subscribed.</Paragraph>
 </PurpleBlock>
 ```
 
@@ -25,35 +25,33 @@ When using Link with React Router, you must pass in the React Router Link compon
 
 It is recommended to set up a component wrapper in your project to avoid repetition, like so:
 
-**LinkWrapper.jsx (React Router version 3)**
+**LinkWrapper.jsx**
 ```jsx
 import React from 'react'
+
+// React Router version 3
 import { Link as ReactRouterLink } from 'react-router'
+
+// React Router version 4
+// import { Link as ReactRouterLink } from 'react-router-dom'
+
 import { Link as TdsLink } from '@telusdigital/tds'
 
-const Link = ({ children, ...rest }) => (
+const LinkWrapper = ({ children, ...rest }) => (
   <TdsLink
     {...rest}
-    reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}>
+    reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}
+  >
     {children}
   </TdsLink>
 )
 
-export default Link
+export default LinkWrapper
 ```
 
-**LinkWrapper.jsx (React Router DOM version 4)**
+**App.js**
 ```jsx
-import React from 'react'
-import { Link as ReactRouterLink } from 'react-router-dom'
-import { Link as TdsLink } from '@telusdigital/tds'
-
-// Same component wrapper as above
-```
-
-**app.js**
-```jsx
-import Link from 'LinkWrapper'
+import Link from './LinkWrapper'
 
 const MyApp = () => (
   <main>
