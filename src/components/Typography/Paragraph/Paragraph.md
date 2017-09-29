@@ -15,7 +15,7 @@
 Use the `invert` prop.
 
 ```
-const PurpleBlock = require('../../__docs__/PurpleBlock').default;
+const PurpleBlock = require('../../../../docs/components/PurpleBlock/PurpleBlock').default;
 
 <PurpleBlock>
   <Paragraph invert>Order online and save an extra $150.</Paragraph>

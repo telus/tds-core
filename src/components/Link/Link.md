@@ -12,7 +12,7 @@
 ### Inverted
 
 ```
-const PurpleBlock = require('../__docs__/PurpleBlock').default;
+const PurpleBlock = require('../../../docs/components/PurpleBlock/PurpleBlock').default;
 
 <PurpleBlock>
   <Paragraph invert>Call Screen requires a subscription. <Link href="#" invert>Log in</Link> to your account and make sure you are subscribed.</Paragraph>

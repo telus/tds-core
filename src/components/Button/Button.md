@@ -37,7 +37,7 @@ Use the `inverted` button on top of a dark background (TELUS approved colours or
 Use this variant with caution. There will be accessibility issues if the colour contrast of the image and the button text is too low in the hover state.
 
 ```
-const PurpleBlock = require('../__docs__/PurpleBlock').default;
+const PurpleBlock = require('../../../docs/components/PurpleBlock/PurpleBlock').default;
 
 <PurpleBlock>
   <Button variant="inverted">Get started</Button>
