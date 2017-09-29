@@ -3,9 +3,9 @@ import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import Tooltip from '../Tooltip'
+import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 
 describe('Tooltip', () => {
-
   const doRender = (overrides = {}) => render(
     <Tooltip {...overrides}>Helper text</Tooltip>
   )
@@ -26,11 +26,11 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveTagName('div')
   })
 
-  it('has a trigger'), () => {
+  it('has a trigger', () => {
     const tooltip = doShallow()
 
     expect(tooltip.find('button')).toContainReact(<DecorativeIcon symbol="questionMarkCircle" size={16} />)
-  }
+  })
 
   it('has a bubble', () => {
     const tooltip = doShallow()
