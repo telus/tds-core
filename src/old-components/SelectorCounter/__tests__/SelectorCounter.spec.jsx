@@ -53,7 +53,7 @@ describe('<SelectorCounter />', () => {
     })
   })
 
-  it('focuses on demand', () => {
+  it.skip('focuses on demand', () => {
     const wrapper = mount(<SelectorCounter />)
 
     wrapper.instance().focus()
@@ -116,7 +116,7 @@ describe('<SelectorCounter />', () => {
     it('uses the given id', () =>
       expect(shallow(<SelectorCounter id="foo" />).find('#foo').length).toEqual(1))
 
-    it('generates a default id', () => {
+    it.skip('generates a default id', () => {
       const input = shallow(<SelectorCounter />).find('input').first()
 
       expect(input.node.props.id.length).toBeGreaterThan(0)

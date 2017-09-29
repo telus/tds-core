@@ -4,5 +4,7 @@ exports[`StandaloneIcon renders 1`] = `
 <i
   aria-label="Some screen reader text."
   class="iconSpyglass size24"
-/>
+>
+  
+</i>
 `;

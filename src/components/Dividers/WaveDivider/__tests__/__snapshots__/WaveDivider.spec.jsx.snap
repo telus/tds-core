@@ -5,5 +5,7 @@ exports[`WaveDivider renders 1`] = `
   alt=""
   class="wave"
   src="file content"
-/>
+>
+  
+</img>
 `;

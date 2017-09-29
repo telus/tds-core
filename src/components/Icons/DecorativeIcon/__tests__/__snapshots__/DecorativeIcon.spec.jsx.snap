@@ -4,5 +4,7 @@ exports[`DecorativeIcon renders 1`] = `
 <i
   aria-hidden="true"
   class="iconSpyglass size24"
-/>
+>
+  
+</i>
 `;

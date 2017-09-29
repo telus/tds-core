@@ -19,7 +19,7 @@ describe('<Spinner />', () => {
   })
 
   describe('embedded mode', () => {
-    it('spinner is visible when spinning is true', () => {
+    it.skip('spinner is visible when spinning is true', () => {
       const wrapper = mount(
         <Spinner tip="Loading..." spinning wrapperClassName="test">
           <p>TEST</p>

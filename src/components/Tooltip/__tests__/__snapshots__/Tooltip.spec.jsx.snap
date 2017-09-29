@@ -15,7 +15,9 @@ exports[`Tooltip renders 1`] = `
     <i
       aria-hidden="true"
       class="iconQuestionMarkCircle size16"
-    />
+    >
+      
+    </i>
   </button>
 </div>
 `;

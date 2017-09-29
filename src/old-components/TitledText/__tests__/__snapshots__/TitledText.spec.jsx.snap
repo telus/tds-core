@@ -32,6 +32,7 @@ exports[`TitledText matches snapshot 1`] = `
           </h1>
           <div
             className="title-text-block__content"
+            key="0"
           >
             <h2
               className="heading-4"
