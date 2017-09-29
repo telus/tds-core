@@ -10,7 +10,6 @@ import './Steps.scss'
  * Show the current position in a sequence of steps.
  */
 class Steps extends Component {
-
   getStatus(current, index) {
     if (index < current) {
       return 'completed'

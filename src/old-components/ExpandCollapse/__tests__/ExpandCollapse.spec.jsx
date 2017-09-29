@@ -34,10 +34,7 @@ describe('<ExpandCollapse/>', () => {
       </Group>
     )
     expect(wrapper.find('.collapsible-panel').length).toEqual(2)
-    expect(
-      wrapper.find('.collapsible-panel__header').first()
-      .render().text())
-      .toEqual('This is panel 1')
+    expect(wrapper.find('.collapsible-panel__header').first().render().text()).toEqual('This is panel 1')
 
     wrapper.find('.collapsible-panel__content').forEach((node) => {
       expect(node.hasClass('collapsible-panel__content--visible')).toEqual(false)

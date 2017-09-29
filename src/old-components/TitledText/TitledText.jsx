@@ -6,7 +6,6 @@ import PropTypes from 'prop-types'
 import './TitledText.scss'
 
 class TitledText extends Component {
-
   render() {
     const { title, content, titleHeadingClass } = this.props
 

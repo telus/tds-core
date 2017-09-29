@@ -206,8 +206,7 @@ module.exports = {
                   path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
                   path.resolve('src/components/Typography/Text/Text.jsx'),
                   path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
-// Hiding Text subscripts until we identify a concrete use for them
-// path.resolve('src/components/Typography/Text/TextSub/TextSub.jsx'),
+                  // Hiding Text subscripts until we identify a concrete use for them
                   path.resolve('src/components/Typography/Strong/Strong.jsx'),
                   path.resolve('src/components/Typography/Small/Small.jsx')
                 ]
@@ -219,12 +218,10 @@ module.exports = {
                 return [
                   path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
                   path.resolve('src/components/Typography/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'),
-// Hiding DisplayHeading subscripts until we identify a concrete use for them
-// path.resolve('src/components/Typography/DisplayHeading/DisplayHeadingSub/DisplayHeadingSub.jsx')
+                  // Hiding DisplayHeading subscripts until we identify a concrete use for them
                   path.resolve('src/components/Typography/Heading/Heading.jsx'),
                   path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx')
-// Hiding Heading subscripts until we identify a concrete use for them
-// path.resolve('src/components/Typography/Heading/HeadingSub/HeadingSub.jsx')
+                  // Hiding Heading subscripts until we identify a concrete use for them
                 ]
               }
             }

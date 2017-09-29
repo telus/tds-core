@@ -11,7 +11,6 @@ import classNames from 'classnames'
  * See [ExpandCollapse.Panel](#panel) for example.
  */
 class Group extends Component {
-
   constructor(props) {
     super(props)
     const { activeKeys } = this.props

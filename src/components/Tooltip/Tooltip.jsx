@@ -7,9 +7,9 @@ import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 
 import styles from './Tooltip.modules.scss'
 
-  /**
-   * Used to provide more detailed instructions.
-   */
+/**
+ * Provide more detailed instructions.
+ */
 const Tooltip = ({ direction, children, ...rest }) => {
   return (
     <div {...safeRest(rest)} className={styles.wrapper}>
@@ -24,10 +24,7 @@ const Tooltip = ({ direction, children, ...rest }) => {
 }
 
 Tooltip.propTypes = {
-  direction: PropTypes.oneOf([
-    'left',
-    'right'
-  ]),
+  direction: PropTypes.oneOf(['left', 'right']),
   /**
    * The content.
    */

@@ -12,7 +12,6 @@ import './Panel.scss'
  * Panel is used with `ExpandCollapse.Group` to produce an ExpandCollapse set.
  */
 class Panel extends Component {
-
   componentWillMount() {
     const id = Math.random().toString(36).substr(2, 9)
     this.setId(id)
