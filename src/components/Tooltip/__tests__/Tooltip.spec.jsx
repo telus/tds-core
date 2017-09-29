@@ -32,20 +32,19 @@ describe('Tooltip', () => {
     expect(tooltip.find('button')).toContainReact(<DecorativeIcon symbol="questionMarkCircle" size={16} />)
   })
 
-  it('has a bubble', () => {
+  it('has a direction', () => {
+    let tooltip = doShallow()
+    expect(tooltip.find('span')).toHaveClassName('right')
+
+    tooltip = doShallow({direction: 'left'})
+    expect(tooltip.find('span')).toHaveClassName('left')
+  })
+
+  it('has a bubble and is hidden by default', () => {
     const tooltip = doShallow()
 
     expect(tooltip.find('span').text()).toEqual('Helper text')
   })
-
-  // it('can set direction', () => {
-  //   let tooltip = doShallow()
-  //   expect(tooltip).toHaveClassName('right')
-  //
-  //   tooltip = doShallow({ direction: 'left' })
-  //   expect(tooltip).toHaveClassName('left')
-  //
-  // })
 
   it('passes additional attributes to the element', () => {
     const tooltip = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
