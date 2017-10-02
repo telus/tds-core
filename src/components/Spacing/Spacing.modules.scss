@@ -3,6 +3,7 @@ $spacing-base: 1rem;              // 16px
 $spacing-1: $spacing-base * 0.25; // 4px
 $spacing-2: $spacing-base * 0.5;  // 8px
 $spacing-3: $spacing-base;        // 16px
+$spacing-4: $spacing-base * 1.25;  // 20px
 
 .noSpacing {
   padding: 0;
@@ -24,6 +25,11 @@ $spacing-3: $spacing-base;        // 16px
   padding-bottom: $spacing-3;
 }
 
+.verticalPadding-4 {
+  padding-top: $spacing-4;
+  padding-bottom: $spacing-4;
+}
+
 .horizontalPadding-1 {
   padding-left: $spacing-1;
   padding-right: $spacing-1;
@@ -37,4 +43,9 @@ $spacing-3: $spacing-base;        // 16px
 .horizontalPadding-3 {
   padding-left: $spacing-3;
   padding-right: $spacing-3;
+}
+
+.horizontalPadding-4 {
+  padding-left: $spacing-4;
+  padding-right: $spacing-4;
 }
