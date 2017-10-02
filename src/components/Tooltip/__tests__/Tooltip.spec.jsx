@@ -14,6 +14,9 @@ describe('Tooltip', () => {
     <Tooltip {...overrides}>Helper text</Tooltip>
   )
 
+  const findTriggerElement = button => button.find('button')
+  const findBubbleElement = bubble => bubble.find('span')
+
   it('renders', () => {
     const tooltip = doRender()
 
@@ -32,18 +35,22 @@ describe('Tooltip', () => {
     expect(tooltip.find('button')).toContainReact(<DecorativeIcon symbol="questionMarkCircle" />)
   })
 
-  it('has a direction', () => {
-    let tooltip = doShallow()
-    expect(tooltip.find('span')).toHaveClassName('right')
-
-    tooltip = doShallow({ direction: 'left' })
-    expect(tooltip.find('span')).toHaveClassName('left')
-  })
-
-  it('has a bubble and is hidden by default', () => {
+  it('show a bubble on click', () => {
     const tooltip = doShallow()
 
-    expect(tooltip.find('span').text()).toEqual('Helper text')
+    findTriggerElement(tooltip).simulate('click')
+    expect(findBubbleElement(tooltip)).toHaveClassName('showBubble')
+  })
+
+  it('has a direction', () => {
+    let tooltip = doShallow()
+
+    findTriggerElement(tooltip).simulate('click')
+    expect(findBubbleElement(tooltip)).toHaveClassName('right')
+
+    tooltip = doShallow({ direction: 'left' })
+    findTriggerElement(tooltip).simulate('click')
+    expect(findBubbleElement(tooltip)).toHaveClassName('left')
   })
 
   it('passes additional attributes to the element', () => {

@@ -20,7 +20,7 @@ class Tooltip extends React.Component {
     }
   }
 
-  toggleBubble() {
+  toggleBubble = () => {
     if (this.state.opened) {
       this.setState({
         opened: false
@@ -32,20 +32,29 @@ class Tooltip extends React.Component {
     }
   }
 
-  render() {
-    const { direction, children, ...rest } = this.props
-
+  renderBubble(direction, children) {
     const bubbleClasses = joinClassNames(
       styles[direction],
       this.state.opened ? styles.showBubble : styles.hideBubble
     )
 
-    // TODO: create renderBubble()
+    return (
+      <span className={bubbleClasses}>
+        {children}
+      </span>
+    )
+  }
+
+  render() {
+    const { direction, children, ...rest } = this.props
+
     return (
       <div {...safeRest(rest)} className={styles.wrapper}>
-        <span className={bubbleClasses}>
-          {children}
-        </span>
+
+        { this.state.opened &&
+          this.renderBubble(direction, children)
+        }
+
         <button className={styles.trigger} onClick={this.toggleBubble}>
           <DecorativeIcon symbol="questionMarkCircle" />
         </button>
@@ -56,6 +65,7 @@ class Tooltip extends React.Component {
 
 Tooltip.propTypes = {
   direction: PropTypes.oneOf(['left', 'right']),
+  bubble: PropTypes.node,
   /**
    * The content.
    */
@@ -63,7 +73,8 @@ Tooltip.propTypes = {
 }
 
 Tooltip.defaultProps = {
-  direction: 'right'
+  direction: 'right',
+  bubble: undefined
 }
 
 export default Tooltip

@@ -4,11 +4,6 @@ exports[`Tooltip renders 1`] = `
 <div
   class="wrapper"
 >
-  <span
-    class="right hideBubble"
-  >
-    Helper text
-  </span>
   <button
     class="trigger"
   >
