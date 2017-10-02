@@ -4,23 +4,21 @@ import toJson from 'enzyme-to-json'
 
 import Tooltip from '../Tooltip'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
+import Text from '../../Typography/Text/Text'
 
 describe('Tooltip', () => {
-  const doRender = (overrides = {}) => render(
-    <Tooltip {...overrides}>Helper text</Tooltip>
+  const defaultChildren = 'Helper text'
+  const doShallow = (overrides = {}, children = defaultChildren) => shallow(
+    <Tooltip {...overrides}>{children}</Tooltip>
   )
 
-  const doShallow = (overrides = {}) => shallow(
-    <Tooltip {...overrides}>Helper text</Tooltip>
-  )
-
-  const findTriggerElement = button => button.find('button')
-  const findBubbleElement = bubble => bubble.find('span')
-
-  // TODO: create open Function
+  const findBubbleElement = tooltip => tooltip.find('span')
+  const openBubble = tooltip => tooltip.find('button').simulate('click')
 
   it('renders', () => {
-    const tooltip = doRender()
+    const tooltip = render(
+      <Tooltip>Helper text</Tooltip>
+    )
 
     expect(toJson(tooltip)).toMatchSnapshot()
   })
@@ -31,21 +29,31 @@ describe('Tooltip', () => {
     expect(tooltip.find('button')).toContainReact(<DecorativeIcon symbol="questionMarkCircle" />)
   })
 
-  it('shows a bubble on click', () => {
-    const tooltip = doShallow()
+  it('shows the bubble content', () => {
+    const tooltip = doShallow({}, 'Some content')
+    openBubble(tooltip)
 
-    findTriggerElement(tooltip).simulate('click')
-    expect(findBubbleElement(tooltip)).toHaveClassName('showBubble') // TODO: use ContaineReact to check what's inside or check fot content
+    expect(findBubbleElement(tooltip).find(Text).dive()).toHaveText('Some content')
+  })
+
+  it('has small text in the bubble', () => {
+    const tooltip = doShallow({}, 'Some content')
+    openBubble(tooltip)
+
+    expect(findBubbleElement(tooltip)).toContainReact(
+      <Text size="small">Some content</Text>
+    )
   })
 
   it('has a direction', () => {
     let tooltip = doShallow()
+    openBubble(tooltip)
 
-    findTriggerElement(tooltip).simulate('click')
     expect(findBubbleElement(tooltip)).toHaveClassName('right')
 
     tooltip = doShallow({ direction: 'left' })
-    findTriggerElement(tooltip).simulate('click')
+    openBubble(tooltip)
+
     expect(findBubbleElement(tooltip)).toHaveClassName('left')
   })
 
