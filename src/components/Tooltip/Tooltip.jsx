@@ -6,6 +6,7 @@ import joinClassNames from '../../utils/joinClassNames'
 
 import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../Typography/Text/Text'
+import WithPadding from '../Spacing/WithPadding/WithPadding'
 
 import styles from './Tooltip.modules.scss'
 
@@ -36,7 +37,11 @@ class Tooltip extends React.Component {
 
     return (
       <span className={bubbleClasses}>
-        <Text size="small">{children}</Text>
+        <WithPadding location="vertical" scale={3}>
+          <WithPadding location="horizontal" scale={4}>
+            <Text size="small">{children}</Text>
+          </WithPadding>
+        </WithPadding>
       </span>
     )
   }

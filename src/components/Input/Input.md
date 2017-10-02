@@ -25,7 +25,7 @@ was correct, or highlight errors that must be corrected.
 
 ```
 <div>
-  <Input label="Username" value="guest12345" feedback="success" />
+  <Input label="Username" value="guest12345" feedback="success" tooltip={<Tooltip>This is some random text</Tooltip>} />
   <Input
     label="Email" value="guest@telus.com" feedback="error"
     error="That email is already associated with another account. Choose another one."

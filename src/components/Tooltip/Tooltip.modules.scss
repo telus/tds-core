@@ -1,8 +1,7 @@
 @import '../../scss/settings/colours';
 
 .wrapper {
-  background: $color-panache;
-  display: inline-block;
+  position: relative;
 }
 
 .trigger {
@@ -24,9 +23,9 @@
 
 .baseBubble {
   position: absolute;
-  // top: -10px;
-  // right: 5px;
-  max-width: 400px; // TODO: check what the value should be
+  top: -10px;
+  min-width: 200px;
+  max-width: 600px; // TODO: check what the value should be
   background-color: $color-white;
   box-shadow: 0 0 2px 0 $color-shark, 0 3px 2px 0 rgba(84, 89, 95, 0.25);
   border-radius: 4px;
@@ -40,29 +39,52 @@
   position: absolute;
 }
 
-.baseBubble::before {
+.left {
+  composes: baseBubble;
+
+  right: 12px;
+}
+
+.left::before {
   box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, 0.4);
-  background-color: white;
+  background-color: $color-white;
   bottom: -7px;
   right: 12px;
   border-width: 7px;
   border-style: solid;
-  border-color: transparent white white transparent;
+  border-color: transparent $color-white $color-white transparent;
   transform: rotate(45deg);
 }
 
-.baseBubble::after {
+.left::after {
   bottom: 0;
   right: 5px;
   width: 27px;
   height: 14px;
-  background: white;
-}
-
-.left {
-  composes: baseBubble;
+  background: $color-white;
 }
 
 .right {
   composes: baseBubble;
+
+  left: -17px;
+}
+
+.right::before {
+  box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, 0.4);
+  background-color: $color-white;
+  bottom: -7px;
+  left: 12px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent $color-white $color-white transparent;
+  transform: rotate(45deg);
+}
+
+.right::after {
+  bottom: 0;
+  left: 5px;
+  width: 27px;
+  height: 14px;
+  background: $color-white;
 }
