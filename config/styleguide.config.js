@@ -3,7 +3,7 @@ const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
-const enabledInStaging = ['Input', 'Lists', 'Icon', 'Dividers']
+const enabledInStaging = ['Icon', 'Dividers']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
@@ -105,7 +105,7 @@ module.exports = {
         },
         {
           name: 'Forms',
-          content: toggleByEnv('Input', path.resolve('docs/elements/forms-with-deprecated-input.md'), path.resolve('docs/elements/forms.md'))
+          content: path.resolve('docs/elements/forms-with-deprecated-input.md')
         },
         {
           name: 'Grid',
@@ -113,7 +113,7 @@ module.exports = {
         },
         {
           name: 'Lists',
-          content: toggleByEnv('Lists', path.resolve('docs/elements/lists-deprecated.md'), path.resolve('docs/elements/lists.md'))
+          content: path.resolve('docs/elements/lists-deprecated.md')
         },
         {
           name: 'Typography',
@@ -164,7 +164,7 @@ module.exports = {
                 ]
               }
             },
-            toggleByEnv('Lists', {
+            {
               name: 'Lists',
               content: path.resolve('src/components/Lists/Lists.md'),
               components() {
@@ -173,7 +173,7 @@ module.exports = {
                   path.resolve('src/components/Lists/OrderedList/OrderedList.jsx')
                 ]
               }
-            }),
+            },
             {
               name: 'Expand collapse',
               components() {
@@ -253,7 +253,7 @@ module.exports = {
           components() {
             return compact([
               path.resolve('src/components/Button/Button.jsx'),
-              toggleByEnv('Input', path.resolve('src/components/Input/Input.jsx')),
+              path.resolve('src/components/Input/Input.jsx'),
               toggleByEnv('Tooltip', path.resolve('src/components/Tooltip/Tooltip.jsx')),
               path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx')
             ])

@@ -33,7 +33,10 @@ export default {
       extensions: ['.js', '.jsx']
     }),
     commonjs({
-      include: 'node_modules/**'
+      include: 'node_modules/**',
+      namedExports: {
+        'airbnb-prop-types': ['childrenOfType']
+      }
     }),
     postcss({
       extract: path.resolve('./dist/tds.css'),

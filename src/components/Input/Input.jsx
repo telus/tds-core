@@ -33,7 +33,7 @@ const getWrapperClassName = (feedback, focused, disabled) => {
 const showFeedbackIcon = (feedback, focused) => (feedback === 'success' || feedback === 'error') && !focused
 
 /**
- * <span class="docs--badge__wip">wip</span>
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.23.0</span>
  */
 class Input extends React.Component {
   constructor(props) {
