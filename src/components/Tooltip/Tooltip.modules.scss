@@ -32,36 +32,31 @@
   transform: translate(15px, -100%);
 }
 
-// &::before,
-// &::after {
-//   display: block;
-//   content: '';
-//   position: absolute;
-// }
-//
-// // The 'before' pseudo element is the triangle at the bottom of the
-// // speech bubble.
-// &::before {
-//   box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, .4);
-//   background-color: white;
-//   bottom: -7px;
-//   right: 12px;
-//   border-width: 7px;
-//   border-style: solid;
-//   border-color: transparent white white transparent;
-//   transform: rotate(45deg);
-// }
-//
-// // The 'after' pseudo element masks the top half of the triangle,
-// // preventing the box-shadow from appearing inside the speech
-// // bubble.
-// &::after {
-//   bottom: 0;
-//   right: 5px;
-//   width: 27px;
-//   height: 14px;
-//   background: white;
-// }
+.baseBubble::before,
+.baseBubble::after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+.baseBubble::before {
+  box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, .4);
+  background-color: white;
+  bottom: -7px;
+  right: 12px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent white white transparent;
+  transform: rotate(45deg);
+}
+
+.baseBubble::after {
+  bottom: 0;
+  right: 5px;
+  width: 27px;
+  height: 14px;
+  background: white;
+}
 
 .left {
   composes: baseBubble;
