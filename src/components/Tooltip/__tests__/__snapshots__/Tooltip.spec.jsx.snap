@@ -5,7 +5,7 @@ exports[`Tooltip renders 1`] = `
   class="wrapper"
 >
   <span
-    class="right"
+    class="right hideBubble"
   >
     Helper text
   </span>
@@ -14,7 +14,7 @@ exports[`Tooltip renders 1`] = `
   >
     <i
       aria-hidden="true"
-      class="iconQuestionMarkCircle size16"
+      class="iconQuestionMarkCircle size24"
     >
       
     </i>

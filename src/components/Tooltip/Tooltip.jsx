@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
+import joinClassNames from '../../utils/joinClassNames'
 
 import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 
@@ -19,26 +20,37 @@ class Tooltip extends React.Component {
     }
   }
 
-  onClick = (event) => {
-    const { onClick } = this.props
-
-    this.setState({ opened: true })
+  toggleBubble() {
+    if (this.state.opened) {
+      this.setState({
+        opened: false
+      })
+    } else {
+      this.setState({
+        opened: true
+      })
+    }
   }
 
   render() {
     const { direction, children, ...rest } = this.props
 
+    const bubbleClasses = joinClassNames(
+      styles[direction],
+      this.state.opened ? styles.showBubble : styles.hideBubble
+    )
+
+    // TODO: create renderBubble()
     return (
       <div {...safeRest(rest)} className={styles.wrapper}>
-        <span className={styles[direction]}>
+        <span className={bubbleClasses}>
           {children}
         </span>
-        <button className={styles.trigger}>
-          <DecorativeIcon symbol="questionMarkCircle" size={16} />
+        <button className={styles.trigger} onClick={this.toggleBubble}>
+          <DecorativeIcon symbol="questionMarkCircle" />
         </button>
       </div>
     )
-
   }
 }
 

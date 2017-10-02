@@ -29,14 +29,14 @@ describe('Tooltip', () => {
   it('has a trigger', () => {
     const tooltip = doShallow()
 
-    expect(tooltip.find('button')).toContainReact(<DecorativeIcon symbol="questionMarkCircle" size={16} />)
+    expect(tooltip.find('button')).toContainReact(<DecorativeIcon symbol="questionMarkCircle" />)
   })
 
   it('has a direction', () => {
     let tooltip = doShallow()
     expect(tooltip.find('span')).toHaveClassName('right')
 
-    tooltip = doShallow({direction: 'left'})
+    tooltip = doShallow({ direction: 'left' })
     expect(tooltip.find('span')).toHaveClassName('left')
   })
 
