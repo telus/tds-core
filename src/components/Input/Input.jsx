@@ -1,15 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { childrenOfType } from 'airbnb-prop-types'
 
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 import WithSpacing from '../Spacing/WithSpacing/WithSpacing'
 import Flexbox from '../Flexbox/Flexbox'
+import Tooltip from '../Tooltip/Tooltip'
 import Helper from './Helper/Helper'
 import Fade from './Fade'
 
 import safeRest from '../../utils/safeRest'
+import joinClassNames from '../../utils/joinClassNames'
 import generateId from './generateId'
 
 import styles from './Input.modules.scss'
@@ -118,22 +121,29 @@ class Input extends React.Component {
   }
 
   render() {
-    const { type, label, feedback, error, helper, ...rest } = this.props
+    const { type, label, feedback, error, helper, tooltip, ...rest } = this.props
 
     const inputId = generateId(rest.id, rest.name, label)
     const helperId = helper && inputId.postfix('helper')
     const errorId = error && inputId.postfix('error-message')
 
     const wrapperClassName = getWrapperClassName(feedback, this.state.focused, rest.disabled)
+    const labelClassNames = joinClassNames(
+      styles.resetLabel,
+      styles.label
+    )
 
     const showIcon = showFeedbackIcon(feedback, this.state.focused)
 
     return (
       <Flexbox direction="column">
         <WithSpacing location="bottom" amount={2}>
-          <label htmlFor={inputId.identity()} className={styles.resetLabel}>
-            <Text size="medium" bold>{label}</Text>
-          </label>
+          <Flexbox direction="row">
+            <label htmlFor={inputId.identity()} className={labelClassNames}>
+              <Text size="medium" bold>{label}</Text>
+            </label>
+            {tooltip}
+          </Flexbox>
         </WithSpacing>
 
         { helper &&
@@ -206,6 +216,7 @@ Input.propTypes = {
    * @param {String} value The input's current value.
    */
   helper: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  tooltip: childrenOfType(Tooltip),
   /**
    * A callback function to be invoked when the input value changes.
    *
@@ -232,6 +243,7 @@ Input.defaultProps = {
   feedback: undefined,
   error: undefined,
   helper: undefined,
+  tooltip: undefined,
   onChange: undefined,
   onFocus: undefined,
   onBlur: undefined

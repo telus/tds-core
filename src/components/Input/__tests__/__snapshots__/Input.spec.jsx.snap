@@ -7,16 +7,20 @@ exports[`Input renders 1`] = `
   <div
     class="marginBottom-2"
   >
-    <label
-      class="resetLabel"
-      for="the-input"
+    <div
+      class="row"
     >
-      <span
-        class="medium boldFont color"
+      <label
+        class="resetLabel label"
+        for="the-input"
       >
-        The input
-      </span>
-    </label>
+        <span
+          class="medium boldFont color"
+        >
+          The input
+        </span>
+      </label>
+    </div>
   </div>
   <div
     class="default"
@@ -42,16 +46,20 @@ exports[`Input renders with a feedback state and icon 1`] = `
   <div
     class="marginBottom-2"
   >
-    <label
-      class="resetLabel"
-      for="the-input"
+    <div
+      class="row"
     >
-      <span
-        class="medium boldFont color"
+      <label
+        class="resetLabel label"
+        for="the-input"
       >
-        The input
-      </span>
-    </label>
+        <span
+          class="medium boldFont color"
+        >
+          The input
+        </span>
+      </label>
+    </div>
   </div>
   <div
     class="error"

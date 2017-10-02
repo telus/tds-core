@@ -17,16 +17,12 @@ describe('Tooltip', () => {
   const findTriggerElement = button => button.find('button')
   const findBubbleElement = bubble => bubble.find('span')
 
+  // TODO: create open Function
+
   it('renders', () => {
     const tooltip = doRender()
 
     expect(toJson(tooltip)).toMatchSnapshot()
-  })
-
-  it('renders an HTML div tag', () => {
-    const tooltip = doShallow()
-
-    expect(tooltip).toHaveTagName('div')
   })
 
   it('has a trigger', () => {
@@ -35,11 +31,11 @@ describe('Tooltip', () => {
     expect(tooltip.find('button')).toContainReact(<DecorativeIcon symbol="questionMarkCircle" />)
   })
 
-  it('show a bubble on click', () => {
+  it('shows a bubble on click', () => {
     const tooltip = doShallow()
 
     findTriggerElement(tooltip).simulate('click')
-    expect(findBubbleElement(tooltip)).toHaveClassName('showBubble')
+    expect(findBubbleElement(tooltip)).toHaveClassName('showBubble') // TODO: use ContaineReact to check what's inside or check fot content
   })
 
   it('has a direction', () => {

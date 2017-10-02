@@ -16,20 +16,15 @@ class Tooltip extends React.Component {
     super(props)
 
     this.state = {
+      // TODO: change to open
       opened: false
     }
   }
 
   toggleBubble = () => {
-    if (this.state.opened) {
-      this.setState({
-        opened: false
-      })
-    } else {
-      this.setState({
-        opened: true
-      })
-    }
+    this.setState({
+      opened: !this.state.opened
+    })
   }
 
   renderBubble(direction, children) {
@@ -65,7 +60,6 @@ class Tooltip extends React.Component {
 
 Tooltip.propTypes = {
   direction: PropTypes.oneOf(['left', 'right']),
-  bubble: PropTypes.node,
   /**
    * The content.
    */

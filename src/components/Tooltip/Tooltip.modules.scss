@@ -2,6 +2,7 @@
 
 .wrapper {
   background: $color-panache;
+  display: inline-block;
 }
 
 .trigger {
@@ -22,7 +23,7 @@
 }
 
 .baseBubble {
-  //position: absolute;
+  position: absolute;
   // top: -10px;
   // right: 5px;
   max-width: 400px; // TODO: check what the value should be
@@ -40,7 +41,7 @@
 }
 
 .baseBubble::before {
-  box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, .4);
+  box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, 0.4);
   background-color: white;
   bottom: -7px;
   right: 12px;

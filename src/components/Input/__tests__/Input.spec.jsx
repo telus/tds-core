@@ -5,6 +5,7 @@ import toJson from 'enzyme-to-json'
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
+import Tooltip from '../../Tooltip/Tooltip'
 import Fade from '../Fade'
 import Input from '../Input'
 import Helper from '../Helper/Helper'
@@ -254,6 +255,12 @@ describe('Input', () => {
         </div>
       )
     })
+  })
+
+  it('can have a tooltip', () => {
+    const input = doShallow({ tooltip: <Tooltip>The tooltip content</Tooltip> })
+
+    expect(input).toContainReact(<Tooltip>The tooltip content</Tooltip>)
   })
 
   describe('accessibility', () => {

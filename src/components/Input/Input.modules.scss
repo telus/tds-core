@@ -11,6 +11,10 @@
   margin-bottom: 0;
 }
 
+.label {
+  flex: 1;
+}
+
 .inputWrapper {
   composes: thin rounded from '../Borders.modules.scss';
   composes: row from '../Flexbox.modules.scss';
