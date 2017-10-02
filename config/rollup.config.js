@@ -26,7 +26,7 @@ export default {
   ],
   sourceMap: true,
 
-  external: ['react', 'prop-types'],
+  external: ['react', 'react-dom', 'prop-types'],
 
   plugins: [
     nodeResolve({
