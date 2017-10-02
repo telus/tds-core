@@ -1,3 +1,57 @@
+#### 0.23.0 (2017-10-02)
+
+##### Build System / Dependencies
+
+* **react:** Bump react and related dependencies to v16 ([9b1f0498](https://github.com/telusdigital/tds/commit/9b1f04986c82711152e6cdad859e8245a2be6ece))
+
+##### Documentation Changes
+
+* **components:** Moving docs components into a single place: docs/components ([d88ee7b3](https://github.com/telusdigital/tds/commit/d88ee7b3484e33197953bc8d3223bc79a9cdcd26))
+* **button:** Fix spelling mistake on Usage criteria section ([30439905](https://github.com/telusdigital/tds/commit/30439905ce144e12c531ef7e4ccb7fa04c60b04d))
+* **cta:** Make sure all CTA links have an href so they can be focused. ([c841fd48](https://github.com/telusdigital/tds/commit/c841fd48f4c9ad545069972889577e01d44778d2))
+* **ordered-list:** Update example with real text ([437b4093](https://github.com/telusdigital/tds/commit/437b409349004981fb94bfeb86ec6ecdf1373383))
+* **links:** Use TDS Link component for documentation links ([3114b799](https://github.com/telusdigital/tds/commit/3114b79957c5a98bcff9c206044599cfcadf76b1))
+* **dividers:**
+  * Turn divders on in staging. ([fbed813d](https://github.com/telusdigital/tds/commit/fbed813d18bdbf7a397831a7533975c5e93d6372))
+  * Add prop descriptions for HairlineDivider ([2f3a6ab7](https://github.com/telusdigital/tds/commit/2f3a6ab7f144a7aea9b2309ec3affd067fb5b1f8))
+* **theme:** Update sidebar background colour to white ([b3636e42](https://github.com/telusdigital/tds/commit/b3636e424f6bfd4cf11961afeb7a6aff6e173c07))
+* **copy:** Use sentence case for headings and labels ([a0487de5](https://github.com/telusdigital/tds/commit/a0487de5b4dbffac9b1ab58a7d78295c611a6da9))
+
+##### New Features
+
+* **tooltip:**
+  * Display pointer on tooltip trigger ([d1e1952d](https://github.com/telusdigital/tds/commit/d1e1952d2af36dd5770c6a677539c93a464ce89b))
+  * Add renderBubble function to show/hide tooltip text ([cd43e35e](https://github.com/telusdigital/tds/commit/cd43e35ee5cd0acdf7bb83a95ad146b59bad629c))
+  * Add ability to toggle tooltip bubble ([1699d136](https://github.com/telusdigital/tds/commit/1699d136124e6d591a04a70fa396d9696b61983d))
+  * Extend React.Component ([c18c7f4f](https://github.com/telusdigital/tds/commit/c18c7f4f5edc26d3d6f19a144b8906e4676089bf))
+  * Add first draft [WIP] ([12d5c55a](https://github.com/telusdigital/tds/commit/12d5c55a40fcebe14da988715f0c794f5dbd96bd))
+* prep for v0.23.0 release ([8561a011](https://github.com/telusdigital/tds/commit/8561a01143f057e0054cf748ae9b7ca99eeb3ed8))
+* **icon:** Update Icon font-size typo ([17433835](https://github.com/telusdigital/tds/commit/17433835e68d37a2f3af97879626d2eae1b1fa9f))
+* **dividers:** New gradient properties for hairline gradients ([8aa51def](https://github.com/telusdigital/tds/commit/8aa51def3ac19dc211dfedf2db49c3624f638078))
+* **unordered-list:** Remove size prop ([a9a65f40](https://github.com/telusdigital/tds/commit/a9a65f4037399755c90bbafc74c752bea246efee))
+* **ordered-list:** Remove size prop ([d5aeef2c](https://github.com/telusdigital/tds/commit/d5aeef2cc89285ff9f73d85bebe80783bed67284))
+* **text:** Add ability to render a block element ([c823ae8b](https://github.com/telusdigital/tds/commit/c823ae8bfd4e87f1aae554117cbc55be4558d317))
+* **input:**
+  * Add top and bottom padding to the input field. ([05100faf](https://github.com/telusdigital/tds/commit/05100fafc2a5d7e0628dd62fc99a0876abd9e77a))
+  * Use the StandaloneIcon component for the icons in the feedback states ([6a1205c7](https://github.com/telusdigital/tds/commit/6a1205c73c73212bf7dc1a4b4d18aec59cd5c43e))
+  * Set the height of inputs and buttons to ensure they are the same cross-browser. ([f316a2bf](https://github.com/telusdigital/tds/commit/f316a2bf424a83137e72d339b28c2f2c5f379e89))
+  * Use core-js/array/find instead of native find to ensure browser compatibility. ([14c75e2b](https://github.com/telusdigital/tds/commit/14c75e2b62981042690481a0640c02758d26f4d9))
+
+##### Bug Fixes
+
+* **rollup:** add react-dom as an external ([463e2fed](https://github.com/telusdigital/tds/commit/463e2fed003b1e25511d2272216b7d1b9f3f8208))
+* **button-link:** Center align the text in button link. ([9a55ebe9](https://github.com/telusdigital/tds/commit/9a55ebe9796ac96c9f2dccad7b6cbe40959ceb64))
+
+##### Code Style Changes
+
+* **lint:** Update lint dependencies: eslint, eslint-plugin-jsx-a11y, eslint-plugin-react ([d7f0ec98](https://github.com/telusdigital/tds/commit/d7f0ec98e4f7b4ee8403deed9fd9f8a3a2d31794))
+
+##### Tests
+
+* **tooltip:**
+  * Add tests to check for trigger and bubble ([47066e6f](https://github.com/telusdigital/tds/commit/47066e6f8c08740647d5b6f23da1cc1cbb5d4247))
+  * Add test to check for trigger and bubble ([d82c0bdd](https://github.com/telusdigital/tds/commit/d82c0bdd71c0e7945359e2413d04773cd41acd79))
+
 #### 0.22.0 (2017-09-27)
 
 ##### Build System / Dependencies
