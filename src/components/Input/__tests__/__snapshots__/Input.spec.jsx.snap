@@ -23,18 +23,22 @@ exports[`Input renders 1`] = `
     </div>
   </div>
   <div
-    class="default"
+    class="horizontalPadding-3 default"
     data-testid="inputWrapper"
   >
-    <input
-      aria-invalid="false"
-      class="input"
-      id="the-input"
-      type="text"
-      value=""
+    <div
+      class="row sizing"
     >
-      
-    </input>
+      <input
+        aria-invalid="false"
+        class="input"
+        id="the-input"
+        type="text"
+        value=""
+      >
+        
+      </input>
+    </div>
   </div>
 </div>
 `;
@@ -62,30 +66,34 @@ exports[`Input renders with a feedback state and icon 1`] = `
     </div>
   </div>
   <div
-    class="error"
+    class="horizontalPadding-3 error"
     data-testid="inputWrapper"
   >
-    <input
-      aria-invalid="true"
-      class="input"
-      id="the-input"
-      type="text"
-      value=""
-    >
-      
-    </input>
     <div
-      style="transition:opacity 100ms ease-in-out;opacity:1"
+      class="row sizing"
     >
-      <div
-        class="marginLeft-3"
+      <input
+        aria-invalid="true"
+        class="input"
+        id="the-input"
+        type="text"
+        value=""
       >
-        <i
-          aria-label="The value of this input field is invalid."
-          class="iconExclamationPointCircle error size16"
+        
+      </input>
+      <div
+        style="transition:opacity 100ms ease-in-out;opacity:1"
+      >
+        <div
+          class="marginLeft-3"
         >
-          
-        </i>
+          <i
+            aria-label="The value of this input field is invalid."
+            class="iconExclamationPointCircle error size16"
+          >
+            
+          </i>
+        </div>
       </div>
     </div>
   </div>

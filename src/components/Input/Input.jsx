@@ -6,6 +6,7 @@ import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 import WithSpacing from '../Spacing/WithSpacing/WithSpacing'
+import WithPadding from '../Spacing/WithPadding/WithPadding'
 import Flexbox from '../Flexbox/Flexbox'
 import Tooltip from '../Tooltip/Tooltip'
 import Helper from './Helper/Helper'
@@ -158,24 +159,26 @@ class Input extends React.Component {
           </WithSpacing>
         }
 
-        <div className={wrapperClassName} data-testid="inputWrapper">
-          <input
-            {...safeRest(rest)}
-            id={inputId.identity()} type={type} className={styles.input}
-            value={this.state.value}
-            onChange={this.onChange} onFocus={this.onFocus} onBlur={this.onBlur}
-            aria-invalid={feedback === 'error' ? 'true' : 'false'}
-            aria-describedby={errorId || helperId || undefined}
-          />
+        <WithPadding location="horizontal" scale={3} dangerouslyAddClassName={wrapperClassName} data-testid="inputWrapper">
+          <Flexbox direction="row" dangerouslyAddClassName={styles.sizing}>
+            <input
+              {...safeRest(rest)}
+              id={inputId.identity()} type={type} className={styles.input}
+              value={this.state.value}
+              onChange={this.onChange} onFocus={this.onFocus} onBlur={this.onBlur}
+              aria-invalid={feedback === 'error' ? 'true' : 'false'}
+              aria-describedby={errorId || helperId || undefined}
+            />
 
-          <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
-            { () => (
-              <WithSpacing location="left" amount={3}>
-                {this.renderIcon(feedback)}
-              </WithSpacing>
-            )}
-          </Fade>
-        </div>
+            <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
+              { () => (
+                <WithSpacing location="left" amount={3}>
+                  {this.renderIcon(feedback)}
+                </WithSpacing>
+              )}
+            </Fade>
+          </Flexbox>
+        </WithPadding>
       </Flexbox>
     )
   }

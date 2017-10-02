@@ -17,11 +17,6 @@
 
 .inputWrapper {
   composes: thin rounded from '../Borders.modules.scss';
-  composes: row from '../Flexbox.modules.scss';
-  composes: height from '../FormFields.modules.scss';
-
-  align-items: center;
-  padding: 0 $spacing-base;
 }
 
 .defaultBoxShadow {
@@ -62,6 +57,12 @@
   composes: inputWrapper defaultBgColor defaultBoxShadow;
 
   border-color: $color-cardinal;
+}
+
+.sizing {
+  composes: height from '../FormFields.modules.scss';
+
+  align-items: center;
 }
 
 // FIXME: Target the <input> element directly to beat the specificity of the global styles in forms.scss.

@@ -30,8 +30,8 @@
     "release": "scripts/release.sh",
     "scaffold": "node scripts/scaffold.js",
     "test:ci": "yarn run lint && yarn run test",
-    "test:u": "yarn test -- -u",
-    "test:watch": "yarn test -- --watch",
+    "test:u": "yarn test -u",
+    "test:watch": "yarn test --watch",
     "test": "jest --config config/jest.config.js"
   },
   "repository": {

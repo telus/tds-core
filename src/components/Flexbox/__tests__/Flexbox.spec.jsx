@@ -18,16 +18,18 @@ describe('Flexbox', () => {
     expect(toJson(flexbox)).toMatchSnapshot()
   })
 
-  it('can be a flex column', () => {
-    const flexbox = doShallow({ direction: 'column' })
-
+  it('can be a flex row or column', () => {
+    let flexbox = doShallow({ direction: 'column' })
     expect(flexbox).toHaveClassName('column')
+
+    flexbox = doShallow({ direction: 'row' })
+    expect(flexbox).toHaveClassName('row')
   })
 
-  it('can be a flex row', () => {
-    const flexbox = doShallow({ direction: 'row' })
+  it('will add additional arbitrary class names', () => {
+    const flexbox = doShallow({ dangerouslyAddClassName: 'a-class' })
 
-    expect(flexbox).toHaveClassName('row')
+    expect(flexbox).toHaveClassName('a-class')
   })
 
   it('passes additional attributes to the HTML element', () => {

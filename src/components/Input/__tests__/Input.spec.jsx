@@ -129,13 +129,13 @@ describe('Input', () => {
     it('can be focused', () => {
       const input = doShallow()
 
-      expect(findWrapperElement(input)).toHaveClassName('default')
+      expect(findWrapperElement(input).dive()).toHaveClassName('default')
 
       findInputElement(input).simulate('focus')
-      expect(findWrapperElement(input)).toHaveClassName('focused')
+      expect(findWrapperElement(input).dive()).toHaveClassName('focused')
 
       findInputElement(input).simulate('blur')
-      expect(findWrapperElement(input)).not.toHaveClassName('focused')
+      expect(findWrapperElement(input).dive()).not.toHaveClassName('focused')
     })
 
     it('will notify when focus is gained', () => {
@@ -161,7 +161,7 @@ describe('Input', () => {
     it('can have a success feedback state', () => {
       const input = doShallow({ feedback: 'success' })
 
-      expect(findWrapperElement(input)).toHaveClassName('success')
+      expect(findWrapperElement(input).dive()).toHaveClassName('success')
       expect(input.find(Fade).dive().dive()).toContainReact(
         <StandaloneIcon symbol="checkmark" variant="primary" size={16} a11yText="The value of this input field is valid." />
       )
@@ -170,7 +170,7 @@ describe('Input', () => {
     it('can have an error feedback state', () => {
       const input = doShallow({ feedback: 'error' })
 
-      expect(findWrapperElement(input)).toHaveClassName('error')
+      expect(findWrapperElement(input).dive()).toHaveClassName('error')
       expect(input.find(Fade).dive().dive()).toContainReact(
         <StandaloneIcon symbol="exclamationPointCircle" variant="error" size={16} a11yText="The value of this input field is invalid." />
       )
@@ -180,10 +180,10 @@ describe('Input', () => {
       const input = doShallow({ feedback: 'success' })
 
       findInputElement(input).simulate('focus')
-      expect(findWrapperElement(input)).not.toHaveClassName('success')
+      expect(findWrapperElement(input).dive()).not.toHaveClassName('success')
 
       findInputElement(input).simulate('blur')
-      expect(findWrapperElement(input)).toHaveClassName('success')
+      expect(findWrapperElement(input).dive()).toHaveClassName('success')
     })
 
     it('fades the feedback icon in on focus lost and out on focus gained', () => {
@@ -198,11 +198,11 @@ describe('Input', () => {
 
   it('can be disabled', () => {
     let input = doShallow()
-    expect(findWrapperElement(input)).not.toHaveClassName('disabled')
+    expect(findWrapperElement(input).dive()).not.toHaveClassName('disabled')
     expect(findInputElement(input)).not.toBeDisabled()
 
     input = doShallow({ disabled: true })
-    expect(findWrapperElement(input)).toHaveClassName('disabled')
+    expect(findWrapperElement(input).dive()).toHaveClassName('disabled')
     expect(findInputElement(input)).toBeDisabled()
   })
 
