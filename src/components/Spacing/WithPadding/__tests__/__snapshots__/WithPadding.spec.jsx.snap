@@ -2,7 +2,7 @@
 
 exports[`WithPadding renders 1`] = `
 <div
-  class="horizontalPadding-3"
+  class="allPadding-3"
 >
   Some content
 </div>

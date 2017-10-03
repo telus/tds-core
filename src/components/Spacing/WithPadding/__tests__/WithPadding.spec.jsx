@@ -6,22 +6,33 @@ import WithPadding from '../WithPadding'
 
 describe('WithPadding', () => {
   const defaultProps = {
-    location: 'horizontal',
-    scale: 3
+    scale: 3,
   }
 
-  const doShallow = (props = {}) => (
-    shallow(<WithPadding {...defaultProps} {...props}>Some content</WithPadding>)
-  )
+  const doShallow = (props = {}) =>
+    shallow(
+      <WithPadding {...defaultProps} {...props}>
+        Some content
+      </WithPadding>
+    )
 
-  const doRender = (props = {}) => (
-    render(<WithPadding {...defaultProps} {...props}>Some content</WithPadding>)
-  )
+  const doRender = (props = {}) =>
+    render(
+      <WithPadding {...defaultProps} {...props}>
+        Some content
+      </WithPadding>
+    )
 
   it('renders', () => {
     const withPadding = doRender()
 
     expect(toJson(withPadding)).toMatchSnapshot()
+  })
+
+  it('defaults to padding on all sides', () => {
+    const withPadding = doShallow({ scale: 1 })
+
+    expect(withPadding).toHaveClassName('allPadding-1')
   })
 
   it('can have padding', () => {

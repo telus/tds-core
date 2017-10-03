@@ -4,6 +4,10 @@ exports[`Helper renders 1`] = `
 <div
   class="default"
 >
-  Some helper text.
+  <div
+    class="allPadding-3"
+  >
+    Some helper text.
+  </div>
 </div>
 `;

@@ -1,9 +1,5 @@
-@import '../../../scss/settings/colours';
-@import '../../../scss/settings/spacing';
-
 .base {
   composes: rounded from '../../Borders.modules.scss';
-  padding: $spacing-base;
 }
 
 .default {
