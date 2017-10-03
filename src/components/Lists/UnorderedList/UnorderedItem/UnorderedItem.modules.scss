@@ -2,7 +2,6 @@
 @import '../../../../scss/settings/typography';
 
 .item {
-  composes: item from '../../ListItem.modules.scss';
   position: relative;
 
   &::before {

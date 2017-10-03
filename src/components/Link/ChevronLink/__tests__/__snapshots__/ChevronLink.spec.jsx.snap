@@ -2,18 +2,19 @@
 
 exports[`ChevronLink renders 1`] = `
 <a
-  className="primary"
-  href={null}
-  to={null}
+  class="primary"
+  href="test.com"
 >
   Go home
   <span
-    className="rightChevron"
+    class="leftMargin-2 rightChevron"
   >
-    <DecorativeIcon
-      size={16}
-      symbol="chevron"
-    />
+    <i
+      aria-hidden="true"
+      class="iconChevron size16"
+    >
+      
+    </i>
   </span>
 </a>
 `;

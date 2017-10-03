@@ -1,18 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Box from '../../Box/Box'
+
 import safeRest from '../../../utils/safeRest'
 
-import styles from '../ListItem.modules.scss'
-
 const OrderedItem = ({ children, ...rest }) => (
-  <li {...safeRest(rest)} className={styles.item}>
-    {children}
+  <li {...safeRest(rest)}>
+    <Box spacing="margin" bottom={2}>
+      {children}
+    </Box>
   </li>
 )
 
 OrderedItem.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 OrderedItem.displayName = 'OrderedList.Item'

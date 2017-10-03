@@ -1,5 +1,4 @@
 @import '../../scss/settings/colours';
-@import '../../scss/settings/spacing';
 @import '../../scss/settings/responsive-grid';
 @import '../../scss/utility/responsive';
 
@@ -22,7 +21,7 @@ $button-text-color: $color-white;
   align-items: center;
   justify-content: center;
 
-  padding: 0 $spacing-wide;
+  padding: 0 2rem;
 
   transition: background 0.2s;
 
@@ -41,7 +40,7 @@ $button-text-color: $color-white;
   .button + .button {
     // Using < 20px to compensate for the extra margin which appears between inline-block
     // elements due to whitespace in the actual markup.
-    margin-left: 16px;
+    margin-left: 1rem;
   }
 }
 

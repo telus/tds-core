@@ -38,6 +38,7 @@ const getClasses = (
   )
 
 const Box = ({
+  inline,
   spacing,
   all,
   vertical,
@@ -49,26 +50,28 @@ const Box = ({
   dangerouslyAddClassName,
   children,
   ...rest
-}) => (
-  <div
-    {...safeRest(rest)}
-    className={getClasses(
-      spacing,
-      all,
-      vertical,
-      horizontal,
-      top,
-      right,
-      bottom,
-      left,
-      dangerouslyAddClassName
-    )}
-  >
-    {children}
-  </div>
-)
+}) =>
+  React.createElement(
+    inline ? 'span' : 'div',
+    {
+      ...safeRest(rest),
+      className: getClasses(
+        spacing,
+        all,
+        vertical,
+        horizontal,
+        top,
+        right,
+        bottom,
+        left,
+        dangerouslyAddClassName
+      ),
+    },
+    children
+  )
 
 Box.propTypes = {
+  inline: PropTypes.bool,
   spacing: PropTypes.oneOf(['margin', 'padding']).isRequired,
   all: PropTypes.oneOf([1, 2, 3, 4, 6]),
   vertical: PropTypes.oneOf([1, 2, 3, 4, 6]),
@@ -82,6 +85,7 @@ Box.propTypes = {
 }
 
 Box.defaultProps = {
+  inline: false,
   all: undefined,
   vertical: undefined,
   horizontal: undefined,

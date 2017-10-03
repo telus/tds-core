@@ -1,10 +1,11 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 import { warn } from '../../../../utils/warn'
 
 import ChevronLink from '../ChevronLink'
 import DecorativeIcon from '../../../Icons/DecorativeIcon/DecorativeIcon'
+import Box from '../../../Box/Box'
 
 jest.mock('../../../../utils/warn', () => (
   { warn: jest.fn() }
@@ -20,7 +21,7 @@ describe('ChevronLink', () => {
   })
 
   it('renders', () => {
-    const link = doShallow()
+    const link = render(<ChevronLink href="test.com">Go home</ChevronLink>)
 
     expect(toJson(link)).toMatchSnapshot()
   })
@@ -41,13 +42,13 @@ describe('ChevronLink', () => {
 
   it('must use `reactRouterLinkComponent` and `to` props together', () => {
     const MyLink = () => <span />
-    let link = doShallow({ reactRouterLinkComponent: MyLink })
+    doShallow({ reactRouterLinkComponent: MyLink })
 
     expect(warn).toHaveBeenCalled()
 
     jest.clearAllMocks()
 
-    link = doShallow({ to: '/about' })
+    const link = doShallow({ to: '/about' })
 
     expect(link).toHaveProp('to')
     expect(warn).toHaveBeenCalled()
@@ -56,16 +57,16 @@ describe('ChevronLink', () => {
   it('has a chevron icon', () => {
     let link = doShallow({ href: 'https://telus.com' })
     expect(link).toContainReact(
-      <span className="rightChevron">
+      <Box inline spacing="margin" left={2} dangerouslyAddClassName="rightChevron">
         <DecorativeIcon symbol="chevron" size={16} />
-      </span>
+      </Box>
     )
 
     link = doShallow({ href: 'https://telus.com', direction: 'left' })
     expect(link).toContainReact(
-      <span className="leftChevron">
+      <Box inline spacing="margin" right={2} dangerouslyAddClassName="leftChevron">
         <DecorativeIcon symbol="leftChevron" size={16} />
-      </span>
+      </Box>
     )
   })
 

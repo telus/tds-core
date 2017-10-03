@@ -4,15 +4,19 @@ exports[`<OrderedList /> renders 1`] = `
 <ol
   class="decimal"
 >
-  <li
-    class="item"
-  >
-    Lorem ipsum
+  <li>
+    <div
+      class="bottomMargin-2"
+    >
+      Lorem ipsum
+    </div>
   </li>
-  <li
-    class="item"
-  >
-    Dolor sit amet
+  <li>
+    <div
+      class="bottomMargin-2"
+    >
+      Dolor sit amet
+    </div>
   </li>
 </ol>
 `;

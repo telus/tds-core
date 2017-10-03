@@ -1,7 +1,6 @@
 @import '../../../src/scss/settings/colours';
-@import '../../../src/scss/settings/spacing';
 
 .purpleBlock {
   background-color: $color-secondary;
-  padding: $spacing-wide;
+  padding: 2rem;
 }

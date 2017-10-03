@@ -1,5 +1,3 @@
-@import '../../../src/scss/settings/spacing';
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -8,5 +6,5 @@
   background-image: url("./hero-background.jpg");
   background-size: cover;
   height: 200px;
-  padding: $spacing-wide;
+  padding: 2rem;
 }

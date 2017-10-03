@@ -7,7 +7,7 @@ import Box from '../Box'
 describe('Box', () => {
   const defaultProps = {
     spacing: 'padding',
-    vertical: 2
+    vertical: 2,
   }
 
   const doShallow = (props = {}) =>
@@ -64,6 +64,14 @@ describe('Box', () => {
 
     box = doShallow({ spacing: 'padding', top: 1, right: 2, bottom: 3, left: 4 })
     expect(box).toHaveClassName('topPadding-1 rightPadding-2 bottomPadding-3 leftPadding-4')
+  })
+
+  it('can be either inline or block', () => {
+    let box = doShallow()
+    expect(box).toHaveTagName('div')
+
+    box = doShallow({ inline: true })
+    expect(box).toHaveTagName('span')
   })
 
   it('will add additional arbitrary class names', () => {

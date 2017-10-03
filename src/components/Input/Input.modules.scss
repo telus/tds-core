@@ -1,6 +1,5 @@
 @import '../../scss/settings/colours';
 @import '../../scss/settings/typography';
-@import '../../scss/settings/spacing';
 
 // FIXME: Override the global styles in forms.scss. This can be removed when the global styles are purged.
 .resetLabel {
@@ -75,7 +74,9 @@ input.input {
   //composes: noMargin from '../Spacing/Spacing.modules.scss';
   margin: 0;
   // This top+bottom padding fixes an IE11 bug that was causing the input value to jump slightly and get cut off.
-  padding: $spacing-tight 0;
+  // FIXME: Will be able to use composes when removing the targeting of the <input> element above
+  // composes: verticalPadding-2 from '../Box/Box.modules.scss';
+  padding: 0.5rem 0;
 
   outline: 0;
 

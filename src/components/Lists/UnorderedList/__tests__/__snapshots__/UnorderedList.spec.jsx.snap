@@ -7,12 +7,20 @@ exports[`<UnorderedList /> renders 1`] = `
   <li
     class="circle"
   >
-    Lorem ipsum
+    <div
+      class="bottomMargin-2"
+    >
+      Lorem ipsum
+    </div>
   </li>
   <li
     class="circle"
   >
-    Dolor sit amet
+    <div
+      class="bottomMargin-2"
+    >
+      Dolor sit amet
+    </div>
   </li>
 </ul>
 `;
