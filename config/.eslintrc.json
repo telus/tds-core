@@ -1,10 +1,13 @@
 {
   "extends": [
-    "../node_modules/@telusdigital/eslint-config/.eslintrc"
+    "../node_modules/@telusdigital/eslint-config/.eslintrc",
+    "prettier"
   ],
   "parser": "babel-eslint",
   "rules": {
     "react/require-default-props": "warn",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": true
+    }]
   }
 }
