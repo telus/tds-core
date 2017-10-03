@@ -34,12 +34,14 @@ class Tooltip extends React.Component {
       this.state.open ? styles.showBubble : styles.hideBubble
     )
 
+    const ariaHidden = this.state.open ? 'false' : 'true'
+
     return (
-      <span className={bubbleClasses} id={id} role='tooltip'>
-        <Box spacing="padding" vertical={3} horizontal={4}>
+      <div className={bubbleClasses} id={id} role='tooltip' aria-hidden={ariaHidden}>
+        <Box spacing="padding" vertical={2} horizontal={3}>
           <Text size="small">{children}</Text>
         </Box>
-      </span>
+      </div>
     )
   }
 

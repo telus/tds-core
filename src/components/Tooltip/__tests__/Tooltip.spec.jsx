@@ -13,7 +13,7 @@ describe('Tooltip', () => {
     <Tooltip {...overrides} id={id}>{children}</Tooltip>
   )
 
-  const findBubbleElement = tooltip => tooltip.find('span')
+  const findBubbleElement = tooltip => tooltip.find('div').at(1)
   const openBubble = tooltip => tooltip.find('button').simulate('click')
 
   it('renders', () => {
