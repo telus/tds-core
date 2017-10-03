@@ -6,7 +6,7 @@ import joinClassNames from '../../utils/joinClassNames'
 
 import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../Typography/Text/Text'
-import Box from '../Spacing/Box/Box'
+import Box from '../Box/Box'
 
 import styles from './Tooltip.modules.scss'
 

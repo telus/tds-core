@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../utils/safeRest'
-import joinClassNames from '../../../utils/joinClassNames'
-import capitalize from '../../../utils/capitalize'
+import safeRest from '../../utils/safeRest'
+import joinClassNames from '../../utils/joinClassNames'
+import capitalize from '../../utils/capitalize'
 
-import styles from '../Spacing.modules.scss'
+import styles from '../Spacing/Spacing.modules.scss'
 
 const getClassName = (spacing, location, scale) => {
   if (!scale) {

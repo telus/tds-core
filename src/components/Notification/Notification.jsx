@@ -8,7 +8,7 @@ import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 import Flexbox from '../Flexbox/Flexbox'
-import Box from '../Spacing/Box/Box'
+import Box from '../Box/Box'
 
 import messagingStyles from '../Messaging.modules.scss'
 import styles from './Notification.modules.scss'

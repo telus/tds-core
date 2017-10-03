@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Box from '../../Spacing/Box/Box'
+import Box from '../../Box/Box'
 
 import safeRest from '../../../utils/safeRest'
 
