@@ -50,9 +50,15 @@ class Tooltip extends React.Component {
 
     return (
       <div {...safeRest(rest)} className={styles.wrapper}>
-        {this.state.open && this.renderBubble(id, direction, children)}
+        {this.renderBubble(id, direction, children)}
 
-        <button className={styles.trigger} onClick={this.toggleBubble}>
+        <button
+          className={styles.trigger}
+          onClick={this.toggleBubble}
+          aria-haspopup="true"
+          aria-expanded={this.state.open ? 'true' : 'false'}
+          aria-labelledby={id}
+        >
           <DecorativeIcon symbol="questionMarkCircle" />
         </button>
       </div>

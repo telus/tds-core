@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import {childrenOfType} from 'airbnb-prop-types'
 
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
@@ -58,7 +58,7 @@ class Input extends React.Component {
   }
 
   onChange = event => {
-    const { onChange } = this.props
+    const {onChange} = this.props
 
     this.setState({
       value: event.target.value,
@@ -70,9 +70,9 @@ class Input extends React.Component {
   }
 
   onFocus = event => {
-    const { onFocus } = this.props
+    const {onFocus} = this.props
 
-    this.setState({ focus: true })
+    this.setState({focus: true})
 
     if (onFocus) {
       onFocus(event)
@@ -80,9 +80,9 @@ class Input extends React.Component {
   }
 
   onBlur = event => {
-    const { onBlur } = this.props
+    const {onBlur} = this.props
 
-    this.setState({ focus: false })
+    this.setState({focus: false})
 
     if (onBlur) {
       onBlur(event)
@@ -136,12 +136,11 @@ class Input extends React.Component {
   }
 
   render() {
-    const { type, label, feedback, error, helper, tooltip, ...rest } = this.props
+    const {type, label, feedback, error, helper, tooltip, ...rest} = this.props
 
     const inputId = generateId(rest.id, rest.name, label)
     const helperId = helper && inputId.postfix('helper')
     const errorId = error && inputId.postfix('error-message')
-    const tooltipId = tooltip && tooltip.props.id
 
     const wrapperClassName = getWrapperClassName(feedback, this.state.focus, rest.disabled)
     const labelClassNames = joinClassNames(styles.resetLabel, styles.label)
@@ -190,7 +189,7 @@ class Input extends React.Component {
               onFocus={this.onFocus}
               onBlur={this.onBlur}
               aria-invalid={feedback === 'error' ? 'true' : 'false'}
-              aria-describedby={errorId || helperId || tooltipId || undefined}  // TODO: merge helperId and TooltipId text if both are present
+              aria-describedby={errorId || helperId || undefined}
             />
 
             <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>

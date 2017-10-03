@@ -4,7 +4,26 @@ exports[`Tooltip renders 1`] = `
 <div
   class="wrapper"
 >
+  <div
+    aria-hidden="true"
+    class="right hideBubble"
+    id="the-id"
+    role="tooltip"
+  >
+    <div
+      class="verticalPadding-2 horizontalPadding-3"
+    >
+      <span
+        class="small smallFont color"
+      >
+        Helper text
+      </span>
+    </div>
+  </div>
   <button
+    aria-expanded="false"
+    aria-haspopup="true"
+    aria-labelledby="the-id"
     class="trigger"
   >
     <i
