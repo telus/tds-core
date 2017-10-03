@@ -115,6 +115,12 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "echint": {
     "ignore": [
       "**/node_modules/**",

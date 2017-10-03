@@ -18,13 +18,13 @@ class Tooltip extends React.Component {
     super(props)
 
     this.state = {
-      open: false
+      open: false,
     }
   }
 
   toggleBubble = () => {
     this.setState({
-      open: !this.state.open
+      open: !this.state.open,
     })
   }
 
@@ -37,7 +37,7 @@ class Tooltip extends React.Component {
     const ariaHidden = this.state.open ? 'false' : 'true'
 
     return (
-      <div className={bubbleClasses} id={id} role='tooltip' aria-hidden={ariaHidden}>
+      <div className={bubbleClasses} id={id} role="tooltip" aria-hidden={ariaHidden}>
         <Box spacing="padding" vertical={2} horizontal={3}>
           <Text size="small">{children}</Text>
         </Box>
@@ -46,7 +46,7 @@ class Tooltip extends React.Component {
   }
 
   render() {
-    const { id, direction, children, ...rest } = this.props
+    const {id, direction, children, ...rest} = this.props
 
     return (
       <div {...safeRest(rest)} className={styles.wrapper}>
