@@ -132,10 +132,10 @@ describe('Input', () => {
       expect(findWrapperElement(input).dive()).toHaveClassName('default')
 
       findInputElement(input).simulate('focus')
-      expect(findWrapperElement(input).dive()).toHaveClassName('focused')
+      expect(findWrapperElement(input).dive()).toHaveClassName('focus')
 
       findInputElement(input).simulate('blur')
-      expect(findWrapperElement(input).dive()).not.toHaveClassName('focused')
+      expect(findWrapperElement(input).dive()).not.toHaveClassName('focus')
     })
 
     it('will notify when focus is gained', () => {

@@ -18,13 +18,13 @@ import generateId from './generateId'
 
 import styles from './Input.modules.scss'
 
-const getWrapperClassName = (feedback, focused, disabled) => {
+const getWrapperClassName = (feedback, focus, disabled) => {
   if (disabled) {
     return styles.disabled
   }
 
-  if (focused) {
-    return styles.focused
+  if (focus) {
+    return styles.focus
   }
 
   if (feedback) {
@@ -34,7 +34,7 @@ const getWrapperClassName = (feedback, focused, disabled) => {
   return styles.default
 }
 
-const showFeedbackIcon = (feedback, focused) => (feedback === 'success' || feedback === 'error') && !focused
+const showFeedbackIcon = (feedback, focus) => (feedback === 'success' || feedback === 'error') && !focus
 
 /**
  * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.23.0</span>
@@ -45,7 +45,7 @@ class Input extends React.Component {
 
     this.state = {
       value: this.props.value,
-      focused: false
+      focus: false
     }
   }
 
@@ -72,7 +72,7 @@ class Input extends React.Component {
   onFocus = (event) => {
     const { onFocus } = this.props
 
-    this.setState({ focused: true })
+    this.setState({ focus: true })
 
     if (onFocus) {
       onFocus(event)
@@ -82,7 +82,7 @@ class Input extends React.Component {
   onBlur = (event) => {
     const { onBlur } = this.props
 
-    this.setState({ focused: false })
+    this.setState({ focus: false })
 
     if (onBlur) {
       onBlur(event)
@@ -128,13 +128,13 @@ class Input extends React.Component {
     const helperId = helper && inputId.postfix('helper')
     const errorId = error && inputId.postfix('error-message')
 
-    const wrapperClassName = getWrapperClassName(feedback, this.state.focused, rest.disabled)
+    const wrapperClassName = getWrapperClassName(feedback, this.state.focus, rest.disabled)
     const labelClassNames = joinClassNames(
       styles.resetLabel,
       styles.label
     )
 
-    const showIcon = showFeedbackIcon(feedback, this.state.focused)
+    const showIcon = showFeedbackIcon(feedback, this.state.focus)
 
     return (
       <Flexbox direction="column">

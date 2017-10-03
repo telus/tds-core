@@ -13,6 +13,7 @@
 
 .label {
   flex: 1;
+  // padding-top: 10px; // TODO:  is there a better way to align label with tooltip
 }
 
 .inputWrapper {
@@ -40,7 +41,7 @@
   border-color: transparent;
 }
 
-.focused {
+.focus {
   composes: inputWrapper defaultBgColor;
 
   border-color: transparent;
