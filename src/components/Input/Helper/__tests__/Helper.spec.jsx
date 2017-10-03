@@ -21,10 +21,10 @@ describe('Helper', () => {
 
   it('can have a feedback state', () => {
     let helper = doShallow()
-    expect(helper).toHaveClassName('default')
+    expect(helper.dive()).toHaveClassName('default')
 
     helper = doShallow({ feedback: 'success' })
-    expect(helper).toHaveClassName('success')
+    expect(helper.dive()).toHaveClassName('success')
   })
 
   it('passes additional attributes to the element', () => {

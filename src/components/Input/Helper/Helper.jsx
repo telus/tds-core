@@ -1,16 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import WithPadding from '../../Spacing/WithPadding/WithPadding'
+import Box from '../../Spacing/Box/Box'
 
 import safeRest from '../../../utils/safeRest'
 
 import styles from './Helper.modules.scss'
 
 const Helper = ({ feedback, children, ...rest }) => (
-  <div {...safeRest(rest)} className={feedback ? styles[feedback] : styles.default}>
-    <WithPadding scale={3}>{children}</WithPadding>
-  </div>
+  <Box
+    {...safeRest(rest)}
+    spacing="padding"
+    all={3}
+    dangerouslyAddClassName={feedback ? styles[feedback] : styles.default}
+  >
+    {children}
+  </Box>
 )
 
 Helper.propTypes = {

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`WithPadding renders 1`] = `
+exports[`Box renders 1`] = `
 <div
-  class="allPadding-3"
+  class="verticalPadding-2"
 >
   Some content
 </div>

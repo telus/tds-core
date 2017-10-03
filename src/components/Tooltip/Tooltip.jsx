@@ -6,7 +6,7 @@ import joinClassNames from '../../utils/joinClassNames'
 
 import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../Typography/Text/Text'
-import WithPadding from '../Spacing/WithPadding/WithPadding'
+import Box from '../Spacing/Box/Box'
 
 import styles from './Tooltip.modules.scss'
 
@@ -19,13 +19,13 @@ class Tooltip extends React.Component {
 
     this.state = {
       // TODO: change to open
-      opened: false
+      opened: false,
     }
   }
 
   toggleBubble = () => {
     this.setState({
-      opened: !this.state.opened
+      opened: !this.state.opened,
     })
   }
 
@@ -37,11 +37,9 @@ class Tooltip extends React.Component {
 
     return (
       <span className={bubbleClasses}>
-        <WithPadding location="vertical" scale={3}>
-          <WithPadding location="horizontal" scale={4}>
-            <Text size="small">{children}</Text>
-          </WithPadding>
-        </WithPadding>
+        <Box spacing="padding" vertical={3} horizontal={4}>
+          <Text size="small">{children}</Text>
+        </Box>
       </span>
     )
   }
@@ -51,10 +49,7 @@ class Tooltip extends React.Component {
 
     return (
       <div {...safeRest(rest)} className={styles.wrapper}>
-
-        { this.state.opened &&
-          this.renderBubble(direction, children)
-        }
+        {this.state.opened && this.renderBubble(direction, children)}
 
         <button className={styles.trigger} onClick={this.toggleBubble}>
           <DecorativeIcon symbol="questionMarkCircle" />
@@ -69,12 +64,12 @@ Tooltip.propTypes = {
   /**
    * The content.
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 Tooltip.defaultProps = {
   direction: 'right',
-  bubble: undefined
+  bubble: undefined,
 }
 
 export default Tooltip

@@ -2,7 +2,7 @@
 
 exports[`<Notification /> renders 1`] = `
 <div
-  class="instructional"
+  class="verticalPadding-3 instructional"
 >
   <div
     class="container container--limited-width"

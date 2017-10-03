@@ -1,31 +1,21 @@
 @import '../../scss/settings/colours';
-@import '../../scss/settings/spacing';
-
-.base {
-  padding: $spacing-base 0;
-}
 
 .instructional {
-  composes: base;
   composes: default from '../Messaging.modules.scss';
 }
 
 .branded {
-  composes: base;
   background-color: $color-white-lilac;
 }
 
 .success {
-  composes: base;
   composes: success from '../Messaging.modules.scss';
 }
 
 .error {
-  composes: base;
   composes: error from '../Messaging.modules.scss';
 }
 
 .icon {
-  margin-right: $spacing-base;
   line-height: 1;
 }

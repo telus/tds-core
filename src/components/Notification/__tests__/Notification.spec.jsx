@@ -25,10 +25,10 @@ describe('<Notification />', () => {
 
   it('can have a variant', () => {
     let notification = doShallow({ variant: undefined })
-    expect(notification).toHaveClassName('instructional')
+    expect(notification.dive()).toHaveClassName('instructional')
 
     notification = doShallow({ variant: 'success' })
-    expect(notification).toHaveClassName('success')
+    expect(notification.dive()).toHaveClassName('success')
   })
 
   it('does not have an icon by default', () => {

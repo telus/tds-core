@@ -8,6 +8,7 @@ import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 import Flexbox from '../Flexbox/Flexbox'
+import Box from '../Spacing/Box/Box'
 
 import messagingStyles from '../Messaging.modules.scss'
 import styles from './Notification.modules.scss'
@@ -17,28 +18,24 @@ const { Container, Row, Column } = Grid
 const iconByVariant = {
   success: {
     symbol: 'checkmark',
-    color: 'primary'
+    color: 'primary',
   },
   error: {
     symbol: 'exclamationPointCircle',
-    color: 'error'
-  }
+    color: 'error',
+  },
 }
 
 const isImportant = variant => variant === 'success' || variant === 'error'
 
 const renderIcon = icon => (
-  <span className={styles.icon}>
+  <Box spacing="margin" right={3} dangerouslyAddClassName={styles.icon}>
     <DecorativeIcon symbol={icon.symbol} variant={icon.color} />
-  </span>
+  </Box>
 )
 
 const renderContent = (variant, children) => {
-  const content = (
-    <Paragraph bold={isImportant(variant)}>
-      {children}
-    </Paragraph>
-  )
+  const content = <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
 
   if (variant === 'error') {
     return (
@@ -57,7 +54,12 @@ const renderContent = (variant, children) => {
  * <span class="docs--badge__new">updated!</span> <span class="docs--badge__version">v0.21.0</span>
  */
 const Notification = ({ variant, children, ...rest }) => (
-  <div {...safeRest(rest)} className={styles[variant]}>
+  <Box
+    {...safeRest(rest)}
+    spacing="padding"
+    vertical={3}
+    dangerouslyAddClassName={styles[variant]}
+  >
     <Container limitWidth>
       <Row>
         <Column xs={12}>
@@ -69,27 +71,22 @@ const Notification = ({ variant, children, ...rest }) => (
         </Column>
       </Row>
     </Container>
-  </div>
+  </Box>
 )
 
 Notification.propTypes = {
   /**
    * The appearance.
    */
-  variant: PropTypes.oneOf([
-    'instructional',
-    'branded',
-    'success',
-    'error'
-  ]),
+  variant: PropTypes.oneOf(['instructional', 'branded', 'success', 'error']),
   /**
    * The message. Can be raw text or text components.
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 Notification.defaultProps = {
-  variant: 'instructional'
+  variant: 'instructional',
 }
 
 export default Notification

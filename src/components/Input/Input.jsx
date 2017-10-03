@@ -5,8 +5,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
-import WithSpacing from '../Spacing/WithSpacing/WithSpacing'
-import WithPadding from '../Spacing/WithPadding/WithPadding'
+import Box from '../Spacing/Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
 import Tooltip from '../Tooltip/Tooltip'
 import Helper from './Helper/Helper'
@@ -34,7 +33,8 @@ const getWrapperClassName = (feedback, focus, disabled) => {
   return styles.default
 }
 
-const showFeedbackIcon = (feedback, focus) => (feedback === 'success' || feedback === 'error') && !focus
+const showFeedbackIcon = (feedback, focus) =>
+  (feedback === 'success' || feedback === 'error') && !focus
 
 /**
  * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.23.0</span>
@@ -45,23 +45,23 @@ class Input extends React.Component {
 
     this.state = {
       value: this.props.value,
-      focus: false
+      focus: false,
     }
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.state.value !== nextProps.value) {
       this.setState({
-        value: nextProps.value
+        value: nextProps.value,
       })
     }
   }
 
-  onChange = (event) => {
+  onChange = event => {
     const { onChange } = this.props
 
     this.setState({
-      value: event.target.value
+      value: event.target.value,
     })
 
     if (onChange) {
@@ -69,7 +69,7 @@ class Input extends React.Component {
     }
   }
 
-  onFocus = (event) => {
+  onFocus = event => {
     const { onFocus } = this.props
 
     this.setState({ focus: true })
@@ -79,7 +79,7 @@ class Input extends React.Component {
     }
   }
 
-  onBlur = (event) => {
+  onBlur = event => {
     const { onBlur } = this.props
 
     this.setState({ focus: false })
@@ -115,10 +115,24 @@ class Input extends React.Component {
 
   renderIcon(feedback) {
     if (feedback === 'success') {
-      return <StandaloneIcon symbol="checkmark" variant="primary" size={16} a11yText="The value of this input field is valid." />
+      return (
+        <StandaloneIcon
+          symbol="checkmark"
+          variant="primary"
+          size={16}
+          a11yText="The value of this input field is valid."
+        />
+      )
     }
 
-    return <StandaloneIcon symbol="exclamationPointCircle" variant="error" size={16} a11yText="The value of this input field is invalid." />
+    return (
+      <StandaloneIcon
+        symbol="exclamationPointCircle"
+        variant="error"
+        size={16}
+        a11yText="The value of this input field is invalid."
+      />
+    )
   }
 
   render() {
@@ -129,56 +143,64 @@ class Input extends React.Component {
     const errorId = error && inputId.postfix('error-message')
 
     const wrapperClassName = getWrapperClassName(feedback, this.state.focus, rest.disabled)
-    const labelClassNames = joinClassNames(
-      styles.resetLabel,
-      styles.label
-    )
+    const labelClassNames = joinClassNames(styles.resetLabel, styles.label)
 
     const showIcon = showFeedbackIcon(feedback, this.state.focus)
 
     return (
       <Flexbox direction="column">
-        <WithSpacing location="bottom" amount={2}>
+        <Box spacing="margin" bottom={2}>
           <Flexbox direction="row">
             <label htmlFor={inputId.identity()} className={labelClassNames}>
-              <Text size="medium" bold>{label}</Text>
+              <Text size="medium" bold>
+                {label}
+              </Text>
             </label>
             {tooltip}
           </Flexbox>
-        </WithSpacing>
+        </Box>
 
-        { helper &&
-          <WithSpacing location="bottom" amount={3}>
+        {helper && (
+          <Box spacing="margin" bottom={3}>
             {this.renderHelper(helper, helperId, feedback, this.state.value)}
-          </WithSpacing>
-        }
+          </Box>
+        )}
 
-        { error &&
-          <WithSpacing location="bottom" amount={3}>
+        {error && (
+          <Box spacing="margin" bottom={3}>
             {this.renderError(error, errorId)}
-          </WithSpacing>
-        }
+          </Box>
+        )}
 
-        <WithPadding location="horizontal" scale={3} dangerouslyAddClassName={wrapperClassName} data-testid="inputWrapper">
+        <Box
+          spacing="padding"
+          horizontal={3}
+          dangerouslyAddClassName={wrapperClassName}
+          data-testid="inputWrapper"
+        >
           <Flexbox direction="row" dangerouslyAddClassName={styles.sizing}>
             <input
               {...safeRest(rest)}
-              id={inputId.identity()} type={type} className={styles.input}
+              id={inputId.identity()}
+              type={type}
+              className={styles.input}
               value={this.state.value}
-              onChange={this.onChange} onFocus={this.onFocus} onBlur={this.onBlur}
+              onChange={this.onChange}
+              onFocus={this.onFocus}
+              onBlur={this.onBlur}
               aria-invalid={feedback === 'error' ? 'true' : 'false'}
               aria-describedby={errorId || helperId || undefined}
             />
 
             <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
-              { () => (
-                <WithSpacing location="left" amount={3}>
+              {() => (
+                <Box spacing="margin" left={3}>
                   {this.renderIcon(feedback)}
-                </WithSpacing>
+                </Box>
               )}
             </Fade>
           </Flexbox>
-        </WithPadding>
+        </Box>
       </Flexbox>
     )
   }
@@ -196,10 +218,7 @@ Input.propTypes = {
   /**
    * The value.
    */
-  value: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ]),
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
    * A feedback state.
    */
@@ -237,7 +256,7 @@ Input.propTypes = {
    *
    * @param {SyntheticEvent} event The React `SyntheticEvent`
    */
-  onBlur: PropTypes.func
+  onBlur: PropTypes.func,
 }
 
 Input.defaultProps = {
@@ -249,7 +268,7 @@ Input.defaultProps = {
   tooltip: undefined,
   onChange: undefined,
   onFocus: undefined,
-  onBlur: undefined
+  onBlur: undefined,
 }
 
 Input.Helper = Helper
