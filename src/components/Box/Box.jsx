@@ -5,7 +5,7 @@ import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import capitalize from '../../utils/capitalize'
 
-import styles from '../Spacing/Spacing.modules.scss'
+import styles from './Box.modules.scss'
 
 const getClassName = (spacing, location, scale) => {
   if (!scale) {

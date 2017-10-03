@@ -1,7 +1,7 @@
 @import '../../../scss/settings/colours';
 
 .reset {
-  composes: noSpacing from '../../Spacing/Spacing.modules.scss';
+  composes: noSpacing from '../../Spacing.modules.scss';
   composes: none from '../../Borders.modules.scss';
 }
 

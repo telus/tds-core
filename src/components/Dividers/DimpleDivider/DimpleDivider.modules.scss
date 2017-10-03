@@ -1,5 +1,5 @@
 .dimple {
-  composes: noSpacing from '../../Spacing/Spacing.modules.scss';
+  composes: noSpacing from '../../Spacing.modules.scss';
   composes: none from '../../Borders.modules.scss';
 
   height: 32px;
