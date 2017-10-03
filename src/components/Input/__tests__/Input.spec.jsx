@@ -258,9 +258,9 @@ describe('Input', () => {
   })
 
   it('can have a tooltip', () => {
-    const input = doShallow({ tooltip: <Tooltip>The tooltip content</Tooltip> })
+    const input = doShallow({ tooltip: <Tooltip id="the-tooltip-id">The tooltip content</Tooltip> })
 
-    expect(input).toContainReact(<Tooltip>The tooltip content</Tooltip>)
+    expect(input).toContainReact(<Tooltip id="the-tooltip-id">The tooltip content</Tooltip>)
   })
 
   describe('accessibility', () => {

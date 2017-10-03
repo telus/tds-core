@@ -1,3 +1,3 @@
 ```
-<Tooltip>This text describes the field.</Tooltip>
+<Tooltip id="the-id-1">This text describes the field.</Tooltip>
 ```

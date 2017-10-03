@@ -8,8 +8,9 @@ import Text from '../../Typography/Text/Text'
 
 describe('Tooltip', () => {
   const defaultChildren = 'Helper text'
-  const doShallow = (overrides = {}, children = defaultChildren) => shallow(
-    <Tooltip {...overrides}>{children}</Tooltip>
+  const randomId = 'the-id'
+  const doShallow = (overrides = {}, children = defaultChildren, id = randomId ) => shallow(
+    <Tooltip {...overrides} id={id}>{children}</Tooltip>
   )
 
   const findBubbleElement = tooltip => tooltip.find('span')
@@ -17,10 +18,17 @@ describe('Tooltip', () => {
 
   it('renders', () => {
     const tooltip = render(
-      <Tooltip>Helper text</Tooltip>
+      <Tooltip id="the-id">Helper text</Tooltip>
     )
 
     expect(toJson(tooltip)).toMatchSnapshot()
+  })
+
+  it('has an id', () => {
+    const tooltip = doShallow({ id: 'the-bubble-id'})
+    openBubble(tooltip)
+
+    expect(findBubbleElement(tooltip)).toHaveProp('id' : 'the-bubble-id')
   })
 
   it('has a trigger', () => {
@@ -58,9 +66,8 @@ describe('Tooltip', () => {
   })
 
   it('passes additional attributes to the element', () => {
-    const tooltip = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
+    const tooltip = doShallow({ 'data-some-attr': 'some value' })
 
-    expect(tooltip).toHaveProp('id', 'the-id')
     expect(tooltip).toHaveProp('data-some-attr', 'some value')
   })
 

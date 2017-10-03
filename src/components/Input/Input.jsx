@@ -141,6 +141,7 @@ class Input extends React.Component {
     const inputId = generateId(rest.id, rest.name, label)
     const helperId = helper && inputId.postfix('helper')
     const errorId = error && inputId.postfix('error-message')
+    const tooltipId = tooltip && tooltip.props.id
 
     const wrapperClassName = getWrapperClassName(feedback, this.state.focus, rest.disabled)
     const labelClassNames = joinClassNames(styles.resetLabel, styles.label)
@@ -189,7 +190,7 @@ class Input extends React.Component {
               onFocus={this.onFocus}
               onBlur={this.onBlur}
               aria-invalid={feedback === 'error' ? 'true' : 'false'}
-              aria-describedby={errorId || helperId || undefined}
+              aria-describedby={errorId || helperId || tooltipId || undefined}  // TODO: merge helperId and TooltipId text if both are present
             />
 
             <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
