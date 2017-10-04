@@ -10,6 +10,7 @@ import Text from '../Typography/Text/Text'
 import Box from '../Box/Box'
 
 import displayStyles from '../Display.modules.scss'
+import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 import styles from './Tooltip.modules.scss'
 
 const getTriggerA11yText = connectedFieldLabel => {
@@ -64,7 +65,7 @@ class Tooltip extends React.Component {
     const id = generateId(connectedFieldLabel, 'unknown-field').postfix('tooltip')
 
     return (
-      <div {...safeRest(rest)} className={styles.wrapper}>
+      <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>
         {this.renderBubble(id, direction, this.state.open, children)}
 
         <button

@@ -1,18 +1,12 @@
 @import '../../scss/settings/colours';
 
-$bubble-trigger-size: 16px;
+$bubble-trigger-size: 24px;
+
+$bubble-offset: 7px;
 
 $bubble-triangle-height: 10px;
 $bubble-triangle-width: 7px;
 $bubble-triangle-position: $bubble-triangle-width + 5px;
-
-$bubble-position: $bubble-trigger-size * -0.5;
-
-.wrapper {
-  composes: fixLineHeight from '../Icons/IconWrapper.modules.scss';
-
-  position: relative;
-}
 
 .trigger {
   composes: none from '../Borders.modules.scss';
@@ -22,18 +16,18 @@ $bubble-position: $bubble-trigger-size * -0.5;
   cursor: pointer;
 
   // FIXME: Without the 1px padding the icon gets clipped just barely. This is due to the odd sizing/positioning of
-  //  the icon font
+  // the icon font. Can switch to the composes when using SVGs.
   // composes: noSpacing from '../Spacing.modules.scss';
   padding: 0 1px;
 }
 
-.baseBubble {
+.bubble {
   composes: rounded from '../Borders.modules.scss';
 
   position: absolute;
   bottom: calc(100% + #{$bubble-triangle-height});
 
-  min-width: 200px;
+  min-width: 200px; // TODO: check what the value should be
   max-width: 600px; // TODO: check what the value should be
 
   background-color: $color-white;
@@ -59,9 +53,9 @@ $bubble-position: $bubble-trigger-size * -0.5;
 }
 
 .left {
-  composes: baseBubble;
+  composes: bubble;
 
-  right: $bubble-position;
+  right: $bubble-offset * -1;
 
   &::before {
     right: $bubble-triangle-position;
@@ -69,9 +63,9 @@ $bubble-position: $bubble-trigger-size * -0.5;
 }
 
 .right {
-  composes: baseBubble;
+  composes: bubble;
 
-  left: $bubble-position;
+  left: calc(100% - #{$bubble-trigger-size} - #{$bubble-offset});
 
   &::before {
     left: $bubble-triangle-position;

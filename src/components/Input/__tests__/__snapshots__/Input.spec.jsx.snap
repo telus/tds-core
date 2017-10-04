@@ -8,7 +8,7 @@ exports[`Input renders 1`] = `
     class="bottomMargin-2"
   >
     <div
-      class="row"
+      class="row containsTooltip"
     >
       <label
         class="resetLabel label"
@@ -51,7 +51,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
     class="bottomMargin-2"
   >
     <div
-      class="row"
+      class="row containsTooltip"
     >
       <label
         class="resetLabel label"

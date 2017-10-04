@@ -2,7 +2,7 @@
 
 exports[`Tooltip renders 1`] = `
 <div
-  class="wrapper"
+  class="fixLineHeight"
   id="the-id"
 >
   <div

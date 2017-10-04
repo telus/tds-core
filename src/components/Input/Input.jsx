@@ -15,6 +15,7 @@ import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import generateId from '../../utils/generateId'
 
+import formFieldStyles from '../FormFields.modules.scss'
 import styles from './Input.modules.scss'
 
 const getWrapperClassName = (feedback, focus, disabled) => {
@@ -150,7 +151,7 @@ class Input extends React.Component {
     return (
       <Flexbox direction="column">
         <Box spacing="margin" bottom={2}>
-          <Flexbox direction="row">
+          <Flexbox direction="row" dangerouslyAddClassName={formFieldStyles.containsTooltip}>
             <label htmlFor={inputId.identity()} className={labelClassNames}>
               <Text size="medium" bold>
                 {label}
