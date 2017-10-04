@@ -1,90 +1,73 @@
 @import '../../scss/settings/colours';
 
+$bubble-trigger-size: 16px;
+
+$bubble-triangle-height: 10px;
+$bubble-triangle-width: 7px;
+$bubble-triangle-position: $bubble-triangle-width + 5px;
+
+$bubble-position: $bubble-trigger-size * -0.5;
+
 .wrapper {
   position: relative;
 }
 
 .trigger {
+  composes: noSpacing from '../Spacing.modules.scss';
   composes: none from '../Borders.modules.scss';
 
-  background-image: none;
-  background-color: transparent;
+  background: none;
   box-shadow: none;
   cursor: pointer;
 }
 
-.showBubble {
-  display: block;
-}
-
-.hideBubble {
-  display: none;
-}
-
 .baseBubble {
+  composes: rounded from '../Borders.modules.scss';
+
   position: absolute;
-  top: -10px;
+  bottom: calc(100% + #{$bubble-triangle-height});
+
   min-width: 200px;
   max-width: 600px; // TODO: check what the value should be
+
   background-color: $color-white;
   box-shadow: 0 0 2px 0 $color-shark, 0 3px 2px 0 rgba(84, 89, 95, 0.25);
-  border-radius: 4px;
-  transform: translate(15px, -100%);
-}
 
-.baseBubble::before,
-.baseBubble::after {
-  display: block;
-  content: '';
-  position: absolute;
+  // This is the bubble triangle
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+
+    bottom: $bubble-triangle-width * -1;
+
+    border-width: $bubble-triangle-width;
+    border-style: solid;
+    border-color: transparent $color-white $color-white transparent;
+
+    background-color: $color-white;
+    box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, 0.4);
+
+    transform: rotate(45deg);
+  }
 }
 
 .left {
   composes: baseBubble;
 
-  right: 12px;
-}
+  right: $bubble-position;
 
-.left::before {
-  box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, 0.4);
-  background-color: $color-white;
-  bottom: -7px;
-  right: 12px;
-  border-width: 7px;
-  border-style: solid;
-  border-color: transparent $color-white $color-white transparent;
-  transform: rotate(45deg);
-}
-
-.left::after {
-  bottom: 0;
-  right: 5px;
-  width: 27px;
-  height: 14px;
-  background: $color-white;
+  &::before {
+    right: $bubble-triangle-position;
+  }
 }
 
 .right {
   composes: baseBubble;
 
-  left: -17px;
-}
+  left: $bubble-position;
 
-.right::before {
-  box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, 0.4);
-  background-color: $color-white;
-  bottom: -7px;
-  left: 12px;
-  border-width: 7px;
-  border-style: solid;
-  border-color: transparent $color-white $color-white transparent;
-  transform: rotate(45deg);
-}
-
-.right::after {
-  bottom: 0;
-  left: 5px;
-  width: 27px;
-  height: 14px;
-  background: $color-white;
+  &::before {
+    left: $bubble-triangle-position;
+  }
 }

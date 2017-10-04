@@ -1,10 +1,11 @@
 import React from 'react'
-import {shallow, render} from 'enzyme'
+import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import Tooltip from '../Tooltip'
-import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
+import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
+
+import Tooltip from '../Tooltip'
 
 describe('Tooltip', () => {
   const defaultChildren = 'Helper text'
@@ -16,9 +17,9 @@ describe('Tooltip', () => {
       </Tooltip>
     )
 
-  const findBubbleElement = tooltip => tooltip.find('div').at(1)
+  const findBubble = tooltip => tooltip.find('[data-testid="bubble"]')
   const findTrigger = tooltip => tooltip.find('button')
-  const openBubble = tooltip => tooltip.find('button').simulate('click')
+  const openBubble = tooltip => findTrigger(tooltip).simulate('click')
 
   it('renders', () => {
     const tooltip = render(<Tooltip id="the-id">Helper text</Tooltip>)
@@ -26,61 +27,71 @@ describe('Tooltip', () => {
     expect(toJson(tooltip)).toMatchSnapshot()
   })
 
+  // TODO: fixme I don't need an id
   it('has an id', () => {
     const tooltip = doShallow({}, 'Some text', 'the-bubble-id')
     openBubble(tooltip)
 
-    expect(findBubbleElement(tooltip)).toHaveProp('id', 'the-bubble-id')
+    expect(findBubble(tooltip)).toHaveProp('id', 'the-bubble-id')
   })
 
   it('has a trigger', () => {
     const tooltip = doShallow()
 
-    expect(findTrigger(tooltip)).toContainReact(<DecorativeIcon symbol="questionMarkCircle" />)
+    expect(findTrigger(tooltip)).toContainReact(
+      <StandaloneIcon symbol="questionMarkCircle" a11yText="Reveal additional information." />
+    )
   })
 
-  it('shows the bubble content', () => {
-    const tooltip = doShallow({}, 'Some content')
-    openBubble(tooltip)
+  it('shows and hides the bubble', () => {
+    const tooltip = doShallow()
+    expect(findBubble(tooltip).dive()).toHaveClassName('hide')
 
-    expect(
-      findBubbleElement(tooltip)
-        .find(Text)
-        .dive()
-    ).toHaveText('Some content')
+    openBubble(tooltip)
+    expect(findBubble(tooltip).dive()).not.toHaveClassName('hide')
   })
 
   it('has small text in the bubble', () => {
     const tooltip = doShallow({}, 'Some content')
     openBubble(tooltip)
 
-    expect(findBubbleElement(tooltip)).toContainReact(<Text size="small">Some content</Text>)
+    expect(findBubble(tooltip)).toContainReact(<Text size="small">Some content</Text>)
   })
 
   it('has a direction', () => {
     let tooltip = doShallow()
-    openBubble(tooltip)
+    expect(findBubble(tooltip).dive()).toHaveClassName('right')
 
-    expect(findBubbleElement(tooltip)).toHaveClassName('right')
-
-    tooltip = doShallow({direction: 'left'})
-    openBubble(tooltip)
-
-    expect(findBubbleElement(tooltip)).toHaveClassName('left')
+    tooltip = doShallow({ direction: 'left' })
+    expect(findBubble(tooltip).dive()).toHaveClassName('left')
   })
 
   describe('accessibility', () => {
     it('connects the bubble message to the trigger button for screen readers', () => {
       const tooltip = doShallow({}, 'Random text', 'random-id')
 
-      expect(findBubbleElement(tooltip)).toHaveProp('id', 'random-id')
+      expect(findBubble(tooltip)).toHaveProp('id', 'random-id')
+      expect(findBubble(tooltip)).toHaveProp('role', 'tooltip')
+
       expect(findTrigger(tooltip)).toHaveProp('aria-labelledby', 'random-id')
       expect(findTrigger(tooltip)).toHaveProp('aria-haspopup', 'true')
+    })
+
+    it('shows and hides the bubble for screen readers', () => {
+      const tooltip = doShallow()
+
+      expect(findTrigger(tooltip)).toHaveProp('aria-expanded', 'false')
+      expect(findBubble(tooltip)).toHaveProp('aria-hidden', 'true')
+
+      openBubble(tooltip)
+
+      expect(findTrigger(tooltip)).toHaveProp('aria-expanded', 'true')
+      expect(findBubble(tooltip)).toHaveProp('aria-hidden', 'false')
     })
   })
 
   it('passes additional attributes to the element', () => {
-    const tooltip = doShallow({'data-some-attr': 'some value'})
+    const tooltip = doShallow({ 'data-some-attr': 'some value' })
 
     expect(tooltip).toHaveProp('data-some-attr', 'some value')
   })
@@ -88,7 +99,7 @@ describe('Tooltip', () => {
   it('does not allow custom CSS', () => {
     const tooltip = doShallow({
       className: 'my-custom-class',
-      style: {color: 'hotpink'},
+      style: { color: 'hotpink' },
     })
 
     expect(tooltip).not.toHaveProp('className', 'my-custom-class')

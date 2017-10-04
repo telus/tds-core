@@ -6,19 +6,16 @@ exports[`Tooltip renders 1`] = `
 >
   <div
     aria-hidden="true"
-    class="right hideBubble"
+    class="verticalPadding-2 horizontalPadding-3 right hide"
+    data-testid="bubble"
     id="the-id"
     role="tooltip"
   >
-    <div
-      class="verticalPadding-2 horizontalPadding-3"
+    <span
+      class="small smallFont color"
     >
-      <span
-        class="small smallFont color"
-      >
-        Helper text
-      </span>
-    </div>
+      Helper text
+    </span>
   </div>
   <button
     aria-expanded="false"
@@ -27,7 +24,7 @@ exports[`Tooltip renders 1`] = `
     class="trigger"
   >
     <i
-      aria-hidden="true"
+      aria-label="Reveal additional information."
       class="iconQuestionMarkCircle size24"
     >
       

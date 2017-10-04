@@ -4,11 +4,12 @@ import PropTypes from 'prop-types'
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 
-import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
+import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
 import Box from '../Box/Box'
 
 import styles from './Tooltip.modules.scss'
+import displayStyles from '../Display.modules.scss'
 
 /**
  * Provide more detailed instructions.
@@ -28,29 +29,31 @@ class Tooltip extends React.Component {
     })
   }
 
-  renderBubble(id, direction, children) {
-    const bubbleClasses = joinClassNames(
-      styles[direction],
-      this.state.open ? styles.showBubble : styles.hideBubble
-    )
-
-    const ariaHidden = this.state.open ? 'false' : 'true'
+  renderBubble(id, direction, open, content) {
+    const classes = joinClassNames(styles[direction], !open && displayStyles.hide)
 
     return (
-      <div className={bubbleClasses} id={id} role="tooltip" aria-hidden={ariaHidden}>
-        <Box spacing="padding" vertical={2} horizontal={3}>
-          <Text size="small">{children}</Text>
-        </Box>
-      </div>
+      <Box
+        spacing="padding"
+        vertical={2}
+        horizontal={3}
+        dangerouslyAddClassName={classes}
+        id={id}
+        role="tooltip"
+        aria-hidden={open ? 'false' : 'true'}
+        data-testid="bubble"
+      >
+        <Text size="small">{content}</Text>
+      </Box>
     )
   }
 
   render() {
-    const {id, direction, children, ...rest} = this.props
+    const { id, direction, children, ...rest } = this.props
 
     return (
       <div {...safeRest(rest)} className={styles.wrapper}>
-        {this.renderBubble(id, direction, children)}
+        {this.renderBubble(id, direction, this.state.open, children)}
 
         <button
           className={styles.trigger}
@@ -59,7 +62,7 @@ class Tooltip extends React.Component {
           aria-expanded={this.state.open ? 'true' : 'false'}
           aria-labelledby={id}
         >
-          <DecorativeIcon symbol="questionMarkCircle" />
+          <StandaloneIcon symbol="questionMarkCircle" a11yText="Reveal additional information." />
         </button>
       </div>
     )
@@ -68,6 +71,9 @@ class Tooltip extends React.Component {
 
 Tooltip.propTypes = {
   id: PropTypes.string.isRequired,
+  /**
+   * Open the bubble to the left or right of the trigger.
+   */
   direction: PropTypes.oneOf(['left', 'right']),
   /**
    * The content.
@@ -77,7 +83,6 @@ Tooltip.propTypes = {
 
 Tooltip.defaultProps = {
   direction: 'right',
-  bubble: undefined,
 }
 
 export default Tooltip
