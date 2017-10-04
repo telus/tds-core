@@ -5,17 +5,13 @@ import toJson from 'enzyme-to-json'
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
 
+import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'
 
 describe('Tooltip', () => {
   const defaultChildren = 'Helper text'
-  const randomId = 'the-id'
-  const doShallow = (overrides = {}, children = defaultChildren, id = randomId) =>
-    shallow(
-      <Tooltip {...overrides} id={id}>
-        {children}
-      </Tooltip>
-    )
+  const doShallow = (overrides = {}, children = defaultChildren) =>
+    shallow(<Tooltip {...overrides}>{children}</Tooltip>)
 
   const findBubble = tooltip => tooltip.find('[data-testid="bubble"]')
   const findTrigger = tooltip => tooltip.find('button')
@@ -25,14 +21,6 @@ describe('Tooltip', () => {
     const tooltip = render(<Tooltip id="the-id">Helper text</Tooltip>)
 
     expect(toJson(tooltip)).toMatchSnapshot()
-  })
-
-  // TODO: fixme I don't need an id
-  it('has an id', () => {
-    const tooltip = doShallow({}, 'Some text', 'the-bubble-id')
-    openBubble(tooltip)
-
-    expect(findBubble(tooltip)).toHaveProp('id', 'the-bubble-id')
   })
 
   it('has a trigger', () => {
@@ -68,13 +56,14 @@ describe('Tooltip', () => {
 
   describe('accessibility', () => {
     it('connects the bubble message to the trigger button for screen readers', () => {
-      const tooltip = doShallow({}, 'Random text', 'random-id')
+      const tooltip = doShallow({ connectedFieldLabel: 'Some field' })
 
-      expect(findBubble(tooltip)).toHaveProp('id', 'random-id')
+      expect(findBubble(tooltip)).toHaveProp('id', 'some-field_tooltip')
       expect(findBubble(tooltip)).toHaveProp('role', 'tooltip')
+      expect(findBubble(tooltip)).toHaveProp('aria-live', 'polite')
 
-      expect(findTrigger(tooltip)).toHaveProp('aria-labelledby', 'random-id')
       expect(findTrigger(tooltip)).toHaveProp('aria-haspopup', 'true')
+      expect(findTrigger(tooltip)).toHaveProp('aria-controls', 'some-field_tooltip')
     })
 
     it('shows and hides the bubble for screen readers', () => {
@@ -104,5 +93,24 @@ describe('Tooltip', () => {
 
     expect(tooltip).not.toHaveProp('className', 'my-custom-class')
     expect(tooltip).not.toHaveProp('style')
+  })
+})
+
+describe('Connecting Tooltips to form fields', () => {
+  it('has a default when not connected to any form field', () => {
+    const tooltip = shallow(<Tooltip>The tooltip</Tooltip>)
+
+    expect(tooltip.find(StandaloneIcon)).toHaveProp('a11yText', 'Reveal additional information.')
+  })
+
+  it('connects to Input', () => {
+    const input = shallow(<Input label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />)
+
+    expect(
+      input
+        .find(Tooltip)
+        .dive()
+        .find(StandaloneIcon)
+    ).toHaveProp('a11yText', 'Reveal additional information about Some field.')
   })
 })

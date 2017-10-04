@@ -5,14 +5,13 @@ import toJson from 'enzyme-to-json'
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
-import Tooltip from '../../Tooltip/Tooltip'
 import Fade from '../Fade'
 import Input from '../Input'
 import Helper from '../Helper/Helper'
 
 describe('Input', () => {
   const defaultProps = {
-    label: 'The input'
+    label: 'The input',
   }
   const doShallow = (overrides = {}) => shallow(<Input {...defaultProps} {...overrides} />)
   const doRender = (overrides = {}) => render(<Input {...defaultProps} {...overrides} />)
@@ -43,7 +42,11 @@ describe('Input', () => {
   it('must have a label', () => {
     const input = doShallow({ label: 'The label' })
 
-    expect(input.find('label')).toContainReact(<Text size="medium" bold>The label</Text>)
+    expect(input.find('label')).toContainReact(
+      <Text size="medium" bold>
+        The label
+      </Text>
+    )
   })
 
   // FIXME: Test for override of the global styles in forms.scss. This can be removed
@@ -162,8 +165,18 @@ describe('Input', () => {
       const input = doShallow({ feedback: 'success' })
 
       expect(findWrapperElement(input).dive()).toHaveClassName('success')
-      expect(input.find(Fade).dive().dive()).toContainReact(
-        <StandaloneIcon symbol="checkmark" variant="primary" size={16} a11yText="The value of this input field is valid." />
+      expect(
+        input
+          .find(Fade)
+          .dive()
+          .dive()
+      ).toContainReact(
+        <StandaloneIcon
+          symbol="checkmark"
+          variant="primary"
+          size={16}
+          a11yText="The value of this input field is valid."
+        />
       )
     })
 
@@ -171,8 +184,18 @@ describe('Input', () => {
       const input = doShallow({ feedback: 'error' })
 
       expect(findWrapperElement(input).dive()).toHaveClassName('error')
-      expect(input.find(Fade).dive().dive()).toContainReact(
-        <StandaloneIcon symbol="exclamationPointCircle" variant="error" size={16} a11yText="The value of this input field is invalid." />
+      expect(
+        input
+          .find(Fade)
+          .dive()
+          .dive()
+      ).toContainReact(
+        <StandaloneIcon
+          symbol="exclamationPointCircle"
+          variant="error"
+          size={16}
+          a11yText="The value of this input field is invalid."
+        />
       )
     })
 
@@ -255,12 +278,6 @@ describe('Input', () => {
         </div>
       )
     })
-  })
-
-  it('can have a tooltip', () => {
-    const input = doShallow({ tooltip: <Tooltip id="the-tooltip-id">The tooltip content</Tooltip> })
-
-    expect(input).toContainReact(<Tooltip id="the-tooltip-id">The tooltip content</Tooltip>)
   })
 
   describe('accessibility', () => {

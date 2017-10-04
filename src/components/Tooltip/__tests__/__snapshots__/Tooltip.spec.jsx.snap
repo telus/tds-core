@@ -3,12 +3,14 @@
 exports[`Tooltip renders 1`] = `
 <div
   class="wrapper"
+  id="the-id"
 >
   <div
     aria-hidden="true"
+    aria-live="polite"
     class="verticalPadding-2 horizontalPadding-3 right hide"
     data-testid="bubble"
-    id="the-id"
+    id="unknown-field_tooltip"
     role="tooltip"
   >
     <span
@@ -18,9 +20,9 @@ exports[`Tooltip renders 1`] = `
     </span>
   </div>
   <button
+    aria-controls="unknown-field_tooltip"
     aria-expanded="false"
     aria-haspopup="true"
-    aria-labelledby="the-id"
     class="trigger"
   >
     <i

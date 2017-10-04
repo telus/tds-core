@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
+import generateId from '../../utils/generateId'
 
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
@@ -10,6 +11,14 @@ import Box from '../Box/Box'
 
 import displayStyles from '../Display.modules.scss'
 import styles from './Tooltip.modules.scss'
+
+const getTriggerA11yText = connectedFieldLabel => {
+  if (!connectedFieldLabel) {
+    return 'Reveal additional information.'
+  }
+
+  return `Reveal additional information about ${connectedFieldLabel}.`
+}
 
 /**
  * Provide more detailed instructions.
@@ -40,6 +49,7 @@ class Tooltip extends React.Component {
         dangerouslyAddClassName={classes}
         id={id}
         role="tooltip"
+        aria-live="polite"
         aria-hidden={open ? 'false' : 'true'}
         data-testid="bubble"
       >
@@ -49,7 +59,9 @@ class Tooltip extends React.Component {
   }
 
   render() {
-    const { id, direction, children, ...rest } = this.props
+    const { direction, connectedFieldLabel, children, ...rest } = this.props
+
+    const id = generateId(connectedFieldLabel, 'unknown-field').postfix('tooltip')
 
     return (
       <div {...safeRest(rest)} className={styles.wrapper}>
@@ -58,11 +70,14 @@ class Tooltip extends React.Component {
         <button
           className={styles.trigger}
           onClick={this.toggleBubble}
+          aria-controls={id}
           aria-haspopup="true"
           aria-expanded={this.state.open ? 'true' : 'false'}
-          aria-labelledby={id}
         >
-          <StandaloneIcon symbol="questionMarkCircle" a11yText="Reveal additional information." />
+          <StandaloneIcon
+            symbol="questionMarkCircle"
+            a11yText={getTriggerA11yText(connectedFieldLabel)}
+          />
         </button>
       </div>
     )
@@ -70,19 +85,27 @@ class Tooltip extends React.Component {
 }
 
 Tooltip.propTypes = {
-  id: PropTypes.string.isRequired,
   /**
    * Open the bubble to the left or right of the trigger.
    */
   direction: PropTypes.oneOf(['left', 'right']),
   /**
-   * The content.
+   * The input field that using this tooltip must pass its label so that the tooltip trigger can connect itself. Do not
+   * show this prop as it is not part of the public API. If this prop is not specified, the tooltip will generate
+   * a generic ID, which could produce duplicate ids.
+   *
+   * @ignore
+   */
+  connectedFieldLabel: PropTypes.string,
+  /**
+   * The message. Can be raw text or text components.
    */
   children: PropTypes.node.isRequired,
 }
 
 Tooltip.defaultProps = {
   direction: 'right',
+  connectedFieldLabel: undefined,
 }
 
 export default Tooltip
