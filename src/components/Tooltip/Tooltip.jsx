@@ -8,8 +8,8 @@ import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
 import Box from '../Box/Box'
 
-import styles from './Tooltip.modules.scss'
 import displayStyles from '../Display.modules.scss'
+import styles from './Tooltip.modules.scss'
 
 /**
  * Provide more detailed instructions.

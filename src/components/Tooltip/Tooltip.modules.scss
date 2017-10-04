@@ -9,16 +9,22 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
 $bubble-position: $bubble-trigger-size * -0.5;
 
 .wrapper {
+  composes: fixLineHeight from '../Icons/IconWrapper.modules.scss';
+
   position: relative;
 }
 
 .trigger {
-  composes: noSpacing from '../Spacing.modules.scss';
   composes: none from '../Borders.modules.scss';
 
   background: none;
   box-shadow: none;
   cursor: pointer;
+
+  // FIXME: Without the 1px padding the icon gets clipped just barely. This is due to the odd sizing/positioning of
+  //  the icon font
+  // composes: noSpacing from '../Spacing.modules.scss';
+  padding: 0 1px;
 }
 
 .baseBubble {

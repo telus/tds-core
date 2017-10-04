@@ -11,6 +11,7 @@ import Flexbox from '../Flexbox/Flexbox'
 import Box from '../Box/Box'
 
 import messagingStyles from '../Messaging.modules.scss'
+import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 import styles from './Notification.modules.scss'
 
 const { Container, Row, Column } = Grid
@@ -29,7 +30,7 @@ const iconByVariant = {
 const isImportant = variant => variant === 'success' || variant === 'error'
 
 const renderIcon = icon => (
-  <Box spacing="margin" right={3} dangerouslyAddClassName={styles.icon}>
+  <Box spacing="margin" right={3} dangerouslyAddClassName={iconWrapperStyles.fixLineHeight}>
     <DecorativeIcon symbol={icon.symbol} variant={icon.color} />
   </Box>
 )

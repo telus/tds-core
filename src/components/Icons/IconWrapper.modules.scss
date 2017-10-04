@@ -1,0 +1,5 @@
+// FIXME: This is meant to be used as a class on elements that directly wrap Icons. There is some odd positioning
+// of the icon font, so this should be able to be removed when we switch to SVG icons.
+.fixLineHeight {
+  line-height: 1;
+}
