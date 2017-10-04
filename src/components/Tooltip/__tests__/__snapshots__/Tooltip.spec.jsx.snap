@@ -3,7 +3,6 @@
 exports[`Tooltip renders 1`] = `
 <div
   class="fixLineHeight"
-  id="the-id"
 >
   <div
     aria-hidden="true"

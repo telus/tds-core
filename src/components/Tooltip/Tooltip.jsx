@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import generateId from '../../utils/generateId'
+import { doc as document } from '../../utils/browser'
 
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
@@ -33,9 +34,17 @@ class Tooltip extends React.Component {
     }
   }
 
+  componentDidUpdate() {
+    if (this.state.open) {
+      document.addEventListener('click', this.toggleBubble)
+    } else {
+      document.removeEventListener('click', this.toggleBubble)
+    }
+  }
+
   toggleBubble = () => {
-    this.setState({
-      open: !this.state.open,
+    this.setState(({ open }) => {
+      return { open: !open }
     })
   }
 

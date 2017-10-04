@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, render, mount } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
@@ -8,17 +8,21 @@ import Text from '../../Typography/Text/Text'
 import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'
 
+import { doc } from '../../../utils/browser'
+
+jest.mock('../../../utils/browser')
+
 describe('Tooltip', () => {
-  const defaultChildren = 'Helper text'
+  const defaultChildren = 'Tooltip text'
   const doShallow = (overrides = {}, children = defaultChildren) =>
     shallow(<Tooltip {...overrides}>{children}</Tooltip>)
 
   const findBubble = tooltip => tooltip.find('[data-testid="bubble"]')
   const findTrigger = tooltip => tooltip.find('button')
-  const openBubble = tooltip => findTrigger(tooltip).simulate('click')
+  const toggleBubble = tooltip => findTrigger(tooltip).simulate('click')
 
   it('renders', () => {
-    const tooltip = render(<Tooltip id="the-id">Helper text</Tooltip>)
+    const tooltip = render(<Tooltip>Helper text</Tooltip>)
 
     expect(toJson(tooltip)).toMatchSnapshot()
   })
@@ -31,17 +35,9 @@ describe('Tooltip', () => {
     )
   })
 
-  it('shows and hides the bubble', () => {
-    const tooltip = doShallow()
-    expect(findBubble(tooltip).dive()).toHaveClassName('hide')
-
-    openBubble(tooltip)
-    expect(findBubble(tooltip).dive()).not.toHaveClassName('hide')
-  })
-
   it('has small text in the bubble', () => {
     const tooltip = doShallow({}, 'Some content')
-    openBubble(tooltip)
+    toggleBubble(tooltip)
 
     expect(findBubble(tooltip)).toContainReact(<Text size="small">Some content</Text>)
   })
@@ -52,6 +48,29 @@ describe('Tooltip', () => {
 
     tooltip = doShallow({ direction: 'left' })
     expect(findBubble(tooltip).dive()).toHaveClassName('left')
+  })
+
+  describe('interactivity', () => {
+    it('shows and hides the bubble', () => {
+      const tooltip = doShallow()
+      expect(findBubble(tooltip).dive()).toHaveClassName('hide')
+
+      toggleBubble(tooltip)
+      expect(findBubble(tooltip).dive()).not.toHaveClassName('hide')
+
+      toggleBubble(tooltip)
+      expect(findBubble(tooltip).dive()).toHaveClassName('hide')
+    })
+
+    it('shows and hides the bubble when clicking the browser document', () => {
+      const tooltip = mount(<Tooltip>Tooltip text</Tooltip>)
+
+      toggleBubble(tooltip)
+      expect(doc.addEventListener).toHaveBeenCalledWith('click', expect.any(Function))
+
+      toggleBubble(tooltip)
+      expect(doc.removeEventListener).toHaveBeenCalledWith('click', expect.any(Function))
+    })
   })
 
   describe('accessibility', () => {
@@ -72,7 +91,7 @@ describe('Tooltip', () => {
       expect(findTrigger(tooltip)).toHaveProp('aria-expanded', 'false')
       expect(findBubble(tooltip)).toHaveProp('aria-hidden', 'true')
 
-      openBubble(tooltip)
+      toggleBubble(tooltip)
 
       expect(findTrigger(tooltip)).toHaveProp('aria-expanded', 'true')
       expect(findBubble(tooltip)).toHaveProp('aria-hidden', 'false')
