@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import generateId from '../../utils/generateId'
-import { doc as document } from '../../utils/browser'
 
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
@@ -20,6 +19,11 @@ const getTriggerA11yText = connectedFieldLabel => {
   }
 
   return `Reveal additional information about ${connectedFieldLabel}.`
+}
+
+const interruptEvent = event => {
+  event.stopPropagation()
+  event.nativeEvent.stopImmediatePropagation()
 }
 
 /**
@@ -62,6 +66,7 @@ class Tooltip extends React.Component {
         aria-live="polite"
         aria-hidden={open ? 'false' : 'true'}
         data-testid="bubble"
+        onClick={interruptEvent}
       >
         <Text size="small">{content}</Text>
       </Box>

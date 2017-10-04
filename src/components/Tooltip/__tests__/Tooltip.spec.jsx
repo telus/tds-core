@@ -8,10 +8,6 @@ import Text from '../../Typography/Text/Text'
 import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'
 
-import { doc } from '../../../utils/browser'
-
-jest.mock('../../../utils/browser')
-
 describe('Tooltip', () => {
   const defaultChildren = 'Tooltip text'
   const doShallow = (overrides = {}, children = defaultChildren) =>
@@ -51,6 +47,20 @@ describe('Tooltip', () => {
   })
 
   describe('interactivity', () => {
+    const getBubbleClassNames = tooltip =>
+      findBubble(tooltip)
+        .at(1) // Not sure why it finds two...
+        .render()
+        .attr('class')
+
+    let mountedToolTip
+
+    afterEach(() => {
+      if (mountedToolTip) {
+        mountedToolTip.unmount()
+      }
+    })
+
     it('shows and hides the bubble', () => {
       const tooltip = doShallow()
       expect(findBubble(tooltip).dive()).toHaveClassName('hide')
@@ -62,14 +72,33 @@ describe('Tooltip', () => {
       expect(findBubble(tooltip).dive()).toHaveClassName('hide')
     })
 
-    it("hides the bubble when clicking the browser's document", () => {
-      const tooltip = mount(<Tooltip>Tooltip text</Tooltip>)
+    it('hides the bubble when clicking outside of it', () => {
+      mountedToolTip = mount(<Tooltip>Tooltip text</Tooltip>, {
+        attachTo: document.body.appendChild(document.createElement('div')),
+      })
 
-      toggleBubble(tooltip)
-      expect(doc.addEventListener).toHaveBeenCalledWith('click', expect.any(Function))
+      toggleBubble(mountedToolTip)
+      document.dispatchEvent(new Event('click'))
 
-      toggleBubble(tooltip)
-      expect(doc.removeEventListener).toHaveBeenCalledWith('click', expect.any(Function))
+      expect(getBubbleClassNames(mountedToolTip)).toContain('hide')
+
+      // And it removes the event listener so on subsequent clicks it is still hidden
+      document.dispatchEvent(new Event('click'))
+
+      expect(getBubbleClassNames(mountedToolTip)).toContain('hide')
+    })
+
+    it('will not hide the bubble when clicking inside the bubble', () => {
+      mountedToolTip = mount(<Tooltip>Tooltip text</Tooltip>, {
+        attachTo: document.body.appendChild(document.createElement('div')),
+      })
+
+      toggleBubble(mountedToolTip)
+      document
+        .querySelector('[data-testid="bubble"]')
+        .dispatchEvent(new Event('click', { bubbles: true }))
+
+      expect(getBubbleClassNames(mountedToolTip)).not.toContain('hide')
     })
   })
 
