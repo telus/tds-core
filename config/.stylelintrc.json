@@ -1,22 +1,14 @@
 {
-  "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-css-modules"
-  ],
-  "plugins": [
-    "stylelint-scss"
-  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-css-modules"],
+  "plugins": ["stylelint-scss"],
   "rules": {
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": [
-          "mixin",
-          "include",
-          "each"
-        ]
+        "ignoreAtRules": ["mixin", "include", "each"]
       }
     ],
-    "declaration-empty-line-before": null
+    "declaration-empty-line-before": null,
+    "indentation": null
   }
 }

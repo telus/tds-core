@@ -1,246 +1,78 @@
+@import '../../scss/settings/responsive-grid';
+@import '../../scss/utility/responsive';
+
 $spacing-base: 1rem; // 16px
 
-$spacing-1: $spacing-base * 0.25; // 4px
-$spacing-2: $spacing-base * 0.5; // 8px
-$spacing-3: $spacing-base; // 16px
-$spacing-4: $spacing-base * 1.25; // 20px
+$spacings: (
+  1: $spacing-base * 0.25,
+  2: $spacing-base * 0.5,
+  3: $spacing-base,
+  4: $spacing-base * 1.5,
+  5: $spacing-base * 2,
+  6: $spacing-base * 2.5,
+  7: $spacing-base * 3,
+  8: $spacing-base * 4
+);
 
-.allPadding-1 {
-  padding: $spacing-1;
+$responsive-spacings: (
+  medium:
+    (
+      4: $spacing-base * 2,
+      5: $spacing-base * 3,
+      6: $spacing-base * 4,
+      7: $spacing-base * 4.5,
+      8: $spacing-base * 6
+    )
+);
+
+$boxProps: ('margin': 'Margin', 'padding': 'Padding');
+
+@mixin spacingClasses ($level, $value) {
+  @each $p, $v in $boxProps {
+    .all#{$v}-#{$level} {
+      #{$p}: $value;
+    }
+
+    .vertical#{$v}-#{$level} {
+      #{$p}-top: $value;
+      #{$p}-bottom: $value;
+    }
+
+    .horizontal#{$v}-#{$level} {
+      #{$p}-left: $value;
+      #{$p}-right: $value;
+    }
+
+    .top#{$v}-#{$level} {
+      #{$p}-top: $value;
+    }
+
+    .right#{$v}-#{$level} {
+      #{$p}-right: $value;
+    }
+
+    .bottom#{$v}-#{$level} {
+      #{$p}-bottom: $value;
+    }
+
+    .left#{$v}-#{$level} {
+      #{$p}-left: $value;
+    }
+  }
 }
 
-.allPadding-2 {
-  padding: $spacing-2;
+@mixin responsiveSpacingClasses ($bp, $map) {
+  @include from-breakpoint($bp) {
+    @each $level, $value in $map {
+      @include spacingClasses($level, $value);
+    }
+  }
 }
 
-.allPadding-3 {
-  padding: $spacing-3;
+@each $level, $value in $spacings {
+  @include spacingClasses($level, $value);
 }
 
-.allPadding-4 {
-  padding: $spacing-4;
-}
-
-.verticalPadding-1 {
-  padding-top: $spacing-1;
-  padding-bottom: $spacing-1;
-}
-
-.verticalPadding-2 {
-  padding-top: $spacing-2;
-  padding-bottom: $spacing-2;
-}
-
-.verticalPadding-3 {
-  padding-top: $spacing-3;
-  padding-bottom: $spacing-3;
-}
-
-.verticalPadding-4 {
-  padding-top: $spacing-4;
-  padding-bottom: $spacing-4;
-}
-
-.horizontalPadding-1 {
-  padding-left: $spacing-1;
-  padding-right: $spacing-1;
-}
-
-.horizontalPadding-2 {
-  padding-left: $spacing-2;
-  padding-right: $spacing-2;
-}
-
-.horizontalPadding-3 {
-  padding-left: $spacing-3;
-  padding-right: $spacing-3;
-}
-
-.horizontalPadding-4 {
-  padding-left: $spacing-4;
-  padding-right: $spacing-4;
-}
-
-.topPadding-1 {
-  padding-top: $spacing-1;
-}
-
-.topPadding-2 {
-  padding-top: $spacing-2;
-}
-
-.topPadding-3 {
-  padding-top: $spacing-3;
-}
-
-.topPadding-4 {
-  padding-top: $spacing-4;
-}
-
-.rightPadding-1 {
-  padding-right: $spacing-1;
-}
-
-.rightPadding-2 {
-  padding-right: $spacing-2;
-}
-
-.rightPadding-3 {
-  padding-right: $spacing-3;
-}
-
-.rightPadding-4 {
-  padding-right: $spacing-4;
-}
-
-.bottomPadding-1 {
-  padding-bottom: $spacing-1;
-}
-
-.bottomPadding-2 {
-  padding-bottom: $spacing-2;
-}
-
-.bottomPadding-3 {
-  padding-bottom: $spacing-3;
-}
-
-.bottomPadding-4 {
-  padding-bottom: $spacing-4;
-}
-
-.leftPadding-1 {
-  padding-left: $spacing-1;
-}
-
-.leftPadding-2 {
-  padding-left: $spacing-2;
-}
-
-.leftPadding-3 {
-  padding-left: $spacing-3;
-}
-
-.leftPadding-4 {
-  padding-left: $spacing-4;
-}
-
-.allMargin-1 {
-  margin: $spacing-1;
-}
-
-.allMargin-2 {
-  margin: $spacing-2;
-}
-
-.allMargin-3 {
-  margin: $spacing-3;
-}
-
-.allMargin-4 {
-  margin: $spacing-4;
-}
-
-.verticalMargin-1 {
-  margin-top: $spacing-1;
-  margin-bottom: $spacing-1;
-}
-
-.verticalMargin-2 {
-  margin-top: $spacing-2;
-  margin-bottom: $spacing-2;
-}
-
-.verticalMargin-3 {
-  margin-top: $spacing-3;
-  margin-bottom: $spacing-3;
-}
-
-.verticalMargin-4 {
-  margin-top: $spacing-4;
-  margin-bottom: $spacing-4;
-}
-
-.horizontalMargin-1 {
-  margin-left: $spacing-1;
-  margin-right: $spacing-1;
-}
-
-.horizontalMargin-2 {
-  margin-left: $spacing-2;
-  margin-right: $spacing-2;
-}
-
-.horizontalMargin-3 {
-  margin-left: $spacing-3;
-  margin-right: $spacing-3;
-}
-
-.horizontalMargin-4 {
-  margin-left: $spacing-4;
-  margin-right: $spacing-4;
-}
-
-.topMargin-1 {
-  margin-top: $spacing-1;
-}
-
-.topMargin-2 {
-  margin-top: $spacing-2;
-}
-
-.topMargin-3 {
-  margin-top: $spacing-3;
-}
-
-.topMargin-4 {
-  margin-top: $spacing-4;
-}
-
-.rightMargin-1 {
-  margin-right: $spacing-1;
-}
-
-.rightMargin-2 {
-  margin-right: $spacing-2;
-}
-
-.rightMargin-3 {
-  margin-right: $spacing-3;
-}
-
-.rightMargin-4 {
-  margin-right: $spacing-4;
-}
-
-.bottomMargin-1 {
-  margin-bottom: $spacing-1;
-}
-
-.bottomMargin-2 {
-  margin-bottom: $spacing-2;
-}
-
-.bottomMargin-3 {
-  margin-bottom: $spacing-3;
-}
-
-.bottomMargin-4 {
-  margin-bottom: $spacing-4;
-}
-
-.leftMargin-1 {
-  margin-left: $spacing-1;
-}
-
-.leftMargin-2 {
-  margin-left: $spacing-2;
-}
-
-.leftMargin-3 {
-  margin-left: $spacing-3;
-}
-
-.leftMargin-4 {
-  margin-left: $spacing-4;
+@each $bp, $map in $responsive-spacings {
+  @include responsiveSpacingClasses($bp, $map);
 }
