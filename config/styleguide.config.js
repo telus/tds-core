@@ -3,23 +3,24 @@ const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
-const enabledInStaging = ['Icon', 'Dividers']
+const enabledInStaging = ['Icon', 'Dividers', 'Tooltip']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
   switch (styleguidistEnv) {
-    case 'dev': return toggledOffValue
-    case 'staging': return enabledInStaging.includes(component) ? toggledOffValue : toggledOnValue
-    case 'production': return toggledOnValue
-    default: return toggledOnValue
+    case 'dev':
+      return toggledOffValue
+    case 'staging':
+      return enabledInStaging.includes(component) ? toggledOffValue : toggledOnValue
+    case 'production':
+      return toggledOnValue
+    default:
+      return toggledOnValue
   }
 }
 
-const compact = array => (
-  array.filter(element => element !== undefined)
-)
+const compact = array => array.filter(element => element !== undefined)
 /* eslint-enable no-unused-vars */
-
 
 module.exports = {
   title: `TDS v${version}`,
@@ -71,21 +72,21 @@ module.exports = {
       sections: [
         {
           name: 'Getting started',
-          content: path.resolve('docs/intro/getting-started.md')
+          content: path.resolve('docs/intro/getting-started.md'),
         },
         {
           name: 'Design vision',
-          content: path.resolve('docs/intro/design-vision.md')
+          content: path.resolve('docs/intro/design-vision.md'),
         },
         {
           name: 'Releases',
-          content: path.resolve('docs/intro/releases.md')
+          content: path.resolve('docs/intro/releases.md'),
         },
         {
           name: 'Contributing',
-          content: path.resolve('docs/intro/contributions.md')
-        }
-      ]
+          content: path.resolve('docs/intro/contributions.md'),
+        },
+      ],
     },
     {
       name: 'Foundational elements',
@@ -93,45 +94,49 @@ module.exports = {
       sections: [
         {
           name: 'Buttons',
-          content: path.resolve('docs/elements/buttons.md')
+          content: path.resolve('docs/elements/buttons.md'),
         },
         {
           name: 'Links',
-          content: path.resolve('docs/elements/links.md')
+          content: path.resolve('docs/elements/links.md'),
         },
         {
           name: 'Colours',
-          content: path.resolve('docs/elements/colours.md')
+          content: path.resolve('docs/elements/colours.md'),
         },
         {
           name: 'Forms',
-          content: path.resolve('docs/elements/forms-with-deprecated-input.md')
+          content: path.resolve('docs/elements/forms-with-deprecated-input.md'),
         },
         {
           name: 'Grid',
-          content: path.resolve('docs/elements/grid.md')
+          content: path.resolve('docs/elements/grid.md'),
         },
         {
           name: 'Lists',
-          content: path.resolve('docs/elements/lists-deprecated.md')
+          content: path.resolve('docs/elements/lists-deprecated.md'),
         },
         {
           name: 'Typography',
-          content: path.resolve('docs/elements/typography.md')
+          content: path.resolve('docs/elements/typography.md'),
         },
         {
           name: 'Utility icons',
-          content: toggleByEnv('Icon', path.resolve('docs/elements/utility-icons-deprecated.md'), path.resolve('docs/elements/utility-icons.md'))
+          content: toggleByEnv(
+            'Icon',
+            path.resolve('docs/elements/utility-icons-deprecated.md'),
+            path.resolve('docs/elements/utility-icons.md')
+          ),
         },
         {
           name: 'Utility mixins',
-          content: path.resolve('docs/elements/utility-mixins.md')
+          content: path.resolve('docs/elements/utility-mixins.md'),
         },
         {
           name: 'Design tokens',
-          content: path.resolve('docs/elements/design-tokens.md')
-        }
-      ]
+          content: path.resolve('docs/elements/design-tokens.md'),
+        },
+      ],
     },
     {
       name: 'Components',
@@ -142,16 +147,14 @@ module.exports = {
             return [
               path.resolve('src/old-components/Grid/Container/Container.jsx'),
               path.resolve('src/old-components/Grid/Row/Row.jsx'),
-              path.resolve('src/old-components/Grid/Column/Column.jsx')
+              path.resolve('src/old-components/Grid/Column/Column.jsx'),
             ]
-          }
+          },
         },
         {
           name: 'Content',
           components() {
-            return [
-              path.resolve('src/old-components/Card/Card.jsx')
-            ]
+            return [path.resolve('src/old-components/Card/Card.jsx')]
           },
           sections: compact([
             {
@@ -160,9 +163,9 @@ module.exports = {
                 return [
                   path.resolve('src/components/Link/Link.jsx'),
                   path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx'),
-                  path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx')
+                  path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx'),
                 ]
-              }
+              },
             },
             {
               name: 'Lists',
@@ -170,18 +173,18 @@ module.exports = {
               components() {
                 return [
                   path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx'),
-                  path.resolve('src/components/Lists/OrderedList/OrderedList.jsx')
+                  path.resolve('src/components/Lists/OrderedList/OrderedList.jsx'),
                 ]
-              }
+              },
             },
             {
               name: 'Expand collapse',
               components() {
                 return [
                   path.resolve('src/old-components/ExpandCollapse/Group.jsx'),
-                  path.resolve('src/old-components/ExpandCollapse/Panel.jsx')
+                  path.resolve('src/old-components/ExpandCollapse/Panel.jsx'),
                 ]
-              }
+              },
             },
             toggleByEnv('Dividers', {
               name: 'Dividers',
@@ -189,11 +192,11 @@ module.exports = {
                 return [
                   path.resolve('src/components/Dividers/WaveDivider/WaveDivider.jsx'),
                   path.resolve('src/components/Dividers/DimpleDivider/DimpleDivider.jsx'),
-                  path.resolve('src/components/Dividers/HairlineDivider/HairlineDivider.jsx')
+                  path.resolve('src/components/Dividers/HairlineDivider/HairlineDivider.jsx'),
                 ]
-              }
-            })
-          ])
+              },
+            }),
+          ]),
         },
         {
           name: 'Typography',
@@ -208,35 +211,43 @@ module.exports = {
                   path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
                   // Hiding Text subscripts until we identify a concrete use for them
                   path.resolve('src/components/Typography/Strong/Strong.jsx'),
-                  path.resolve('src/components/Typography/Small/Small.jsx')
+                  path.resolve('src/components/Typography/Small/Small.jsx'),
                 ]
-              }
+              },
             },
             {
               name: 'Headings',
               components() {
                 return [
                   path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
-                  path.resolve('src/components/Typography/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'),
+                  path.resolve(
+                    'src/components/Typography/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'
+                  ),
                   // Hiding DisplayHeading subscripts until we identify a concrete use for them
                   path.resolve('src/components/Typography/Heading/Heading.jsx'),
-                  path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx')
+                  path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx'),
                   // Hiding Heading subscripts until we identify a concrete use for them
                 ]
-              }
-            }
-          ]
+              },
+            },
+          ],
         },
         {
           name: 'Icons',
           content: toggleByEnv('Icon', path.resolve('src/components/Icons/icons.md')),
           components() {
             return compact([
-              toggleByEnv('Icon', path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx')),
-              toggleByEnv('Icon', path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx')),
-              path.resolve('src/old-components/Icon/Icon.jsx')
+              toggleByEnv(
+                'Icon',
+                path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx')
+              ),
+              toggleByEnv(
+                'Icon',
+                path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx')
+              ),
+              path.resolve('src/old-components/Icon/Icon.jsx'),
             ])
-          }
+          },
         },
         {
           name: 'Feedback indicators',
@@ -244,9 +255,9 @@ module.exports = {
             return [
               path.resolve('src/components/Notification/Notification.jsx'),
               path.resolve('src/old-components/Spinner/Spinner.jsx'),
-              path.resolve('src/old-components/StepTracker/Steps/Steps.jsx')
+              path.resolve('src/old-components/StepTracker/Steps/Steps.jsx'),
             ]
-          }
+          },
         },
         {
           name: 'Forms',
@@ -255,25 +266,21 @@ module.exports = {
               path.resolve('src/components/Button/Button.jsx'),
               path.resolve('src/components/Input/Input.jsx'),
               toggleByEnv('Tooltip', path.resolve('src/components/Tooltip/Tooltip.jsx')),
-              path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx')
+              path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx'),
             ])
-          }
-        }
-      ]
-    }
+          },
+        },
+      ],
+    },
   ],
-
 
   template: path.resolve('docs/index.html'),
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve('styleguide', styleguidistEnv),
-  require: [
-    path.resolve('src/scss/global.scss'),
-    path.resolve('docs/scss/styleguide.scss')
-  ],
+  require: [path.resolve('src/scss/global.scss'), path.resolve('docs/scss/styleguide.scss')],
   styleguideComponents: {
     Logo: path.resolve('docs/components/Logo/Logo'),
-    Markdown: path.resolve('docs/components/Markdown/Markdown.js')
+    Markdown: path.resolve('docs/components/Markdown/Markdown.js'),
   },
   webpackConfig: {
     module: {
@@ -281,7 +288,7 @@ module.exports = {
         {
           test: /\.jsx?$/,
           exclude: /node_modules/,
-          use: 'babel-loader'
+          use: 'babel-loader',
         },
         {
           test: /\.modules.scss$/,
@@ -292,33 +299,33 @@ module.exports = {
               options: {
                 modules: true,
                 localIdentName: 'TDS_[name]__[local]___[hash:base64:5]',
-                importLoaders: 1 // Number of loaders applied before CSS loader
-              }
+                importLoaders: 1, // Number of loaders applied before CSS loader
+              },
             },
-            'sass-loader'
-          ]
+            'sass-loader',
+          ],
         },
         {
           test: /\.scss$/,
           exclude: /\.modules.scss$/,
-          use: ['style-loader', 'css-loader', 'sass-loader']
+          use: ['style-loader', 'css-loader', 'sass-loader'],
         },
         {
           test: /\.(png|jpg|svg)$/,
-          use: 'url-loader'
-        }
-      ]
-    }
+          use: 'url-loader',
+        },
+      ],
+    },
   },
   theme: {
     fontFamily: {
-      base: ['TELUS-Web', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
+      base: ['TELUS-Web', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
     },
     color: {
       link: '#4B286D',
       linkHover: '#54595F',
-      sidebarBackground: '#FFFFFF'
+      sidebarBackground: '#FFFFFF',
     },
-    sidebarWidth: 240
-  }
+    sidebarWidth: 240,
+  },
 }
