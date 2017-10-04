@@ -62,7 +62,7 @@ describe('Tooltip', () => {
       expect(findBubble(tooltip).dive()).toHaveClassName('hide')
     })
 
-    it('shows and hides the bubble when clicking the browser document', () => {
+    it("hides the bubble when clicking the browser's document", () => {
       const tooltip = mount(<Tooltip>Tooltip text</Tooltip>)
 
       toggleBubble(tooltip)

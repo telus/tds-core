@@ -6,16 +6,10 @@ import { warn } from '../../../../utils/warn'
 
 import ButtonLink from '../ButtonLink'
 
-jest.mock('../../../../utils/warn', () => (
-  {
-    warn: jest.fn()
-  }
-))
+jest.mock('../../../../utils/warn')
 
 describe('ButtonLink', () => {
-  const doShallow = (overrides = {}) => shallow(
-    <ButtonLink {...overrides}>Go home</ButtonLink>
-  )
+  const doShallow = (overrides = {}) => shallow(<ButtonLink {...overrides}>Go home</ButtonLink>)
 
   afterEach(() => {
     jest.clearAllMocks()
@@ -43,13 +37,13 @@ describe('ButtonLink', () => {
 
   it('must use `reactRouterLinkComponent` and `to` props together', () => {
     const MyLink = () => <span />
-    let link = doShallow({ reactRouterLinkComponent: MyLink })
+    doShallow({ reactRouterLinkComponent: MyLink })
 
     expect(warn).toHaveBeenCalled()
 
     jest.clearAllMocks()
 
-    link = doShallow({ to: '/about' })
+    const link = doShallow({ to: '/about' })
 
     expect(link).toHaveProp('to')
     expect(warn).toHaveBeenCalled()

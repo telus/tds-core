@@ -3,11 +3,10 @@ import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import { deprecate } from '../../../utils/warn'
+
 import Card from '../Card'
 
-jest.mock('../../../utils/warn', () => (
-  { deprecate: jest.fn() }
-))
+jest.mock('../../../utils/warn')
 
 describe('<Card />', () => {
   it('renders', () => {
@@ -17,7 +16,11 @@ describe('<Card />', () => {
   })
 
   it('passes attributes to DOM node', () => {
-    const card = shallow(<Card id="hello" title="my title">Some content</Card>)
+    const card = shallow(
+      <Card id="hello" title="my title">
+        Some content
+      </Card>
+    )
 
     expect(card).toHaveProp('id', 'hello')
     expect(card).toHaveProp('title', 'my title')

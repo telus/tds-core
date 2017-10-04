@@ -1,15 +1,14 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
+
 import { warn } from '../../../../utils/warn'
 
 import ChevronLink from '../ChevronLink'
 import DecorativeIcon from '../../../Icons/DecorativeIcon/DecorativeIcon'
 import Box from '../../../Box/Box'
 
-jest.mock('../../../../utils/warn', () => (
-  { warn: jest.fn() }
-))
+jest.mock('../../../../utils/warn')
 
 describe('ChevronLink', () => {
   const doShallow = (overrides = {}) => shallow(

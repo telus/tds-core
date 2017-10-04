@@ -6,12 +6,7 @@ import { warn, deprecate } from '../../../utils/warn'
 
 import Button from '../Button'
 
-jest.mock('../../../utils/warn', () => (
-  {
-    warn: jest.fn(),
-    deprecate: jest.fn()
-  }
-))
+jest.mock('../../../utils/warn')
 
 describe('Button', () => {
   const doShallow = (overrides = {}) => shallow(<Button {...overrides}>Submit</Button>)

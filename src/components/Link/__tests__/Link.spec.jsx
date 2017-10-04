@@ -1,14 +1,12 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
+
 import { warn } from '../../../utils/warn'
 
 import Link from '../Link'
 
-jest.mock('../../../utils/warn', () => (
-  { warn: jest.fn() }
-))
-
+jest.mock('../../../utils/warn')
 
 describe('Link', () => {
   const doShallow = (overrides = {}) => shallow(
