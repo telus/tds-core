@@ -47,6 +47,13 @@ describe('Tooltip', () => {
   })
 
   describe('interactivity', () => {
+    const createRootElement = () => {
+      const root = document.createElement('div')
+      root.setAttribute('id', `tooltip-${Math.random()}`)
+
+      return root
+    }
+
     const getBubbleClassNames = tooltip =>
       findBubble(tooltip)
         .at(1) // Not sure why it finds two...
@@ -73,28 +80,32 @@ describe('Tooltip', () => {
     })
 
     it('hides the bubble when clicking outside of it', () => {
+      const root = createRootElement()
+
       mountedToolTip = mount(<Tooltip>Tooltip text</Tooltip>, {
-        attachTo: document.body.appendChild(document.createElement('div')),
+        attachTo: document.body.appendChild(root),
       })
 
       toggleBubble(mountedToolTip)
-      document.dispatchEvent(new Event('click'))
+      root.dispatchEvent(new Event('click', { bubbles: true }))
 
       expect(getBubbleClassNames(mountedToolTip)).toContain('hide')
 
-      // And it removes the event listener so on subsequent clicks it is still hidden
-      document.dispatchEvent(new Event('click'))
+      // And it removes the event listener so on subsequent clicks it remains hidden
+      root.dispatchEvent(new Event('click'), { bubbles: true })
 
       expect(getBubbleClassNames(mountedToolTip)).toContain('hide')
     })
 
     it('will not hide the bubble when clicking inside the bubble', () => {
+      const root = createRootElement()
+
       mountedToolTip = mount(<Tooltip>Tooltip text</Tooltip>, {
-        attachTo: document.body.appendChild(document.createElement('div')),
+        attachTo: document.body.appendChild(root),
       })
 
       toggleBubble(mountedToolTip)
-      document
+      root
         .querySelector('[data-testid="bubble"]')
         .dispatchEvent(new Event('click', { bubbles: true }))
 

@@ -1,3 +1,5 @@
+import 'element-closest'
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -21,9 +23,13 @@ const getTriggerA11yText = connectedFieldLabel => {
   return `Reveal additional information about ${connectedFieldLabel}.`
 }
 
-const interruptEvent = event => {
-  event.stopPropagation()
-  event.nativeEvent.stopImmediatePropagation()
+const getIds = connectedFieldLabel => {
+  const id = generateId(connectedFieldLabel, 'unknown-field')
+
+  return {
+    bubbleId: id.postfix('tooltip'),
+    triggerId: id.postfix('trigger'),
+  }
 }
 
 /**
@@ -40,16 +46,28 @@ class Tooltip extends React.Component {
 
   componentDidUpdate() {
     if (this.state.open) {
-      document.addEventListener('click', this.toggleBubbleOutsideOfTrigger)
-      document.addEventListener('keypress', this.toggleBubbleOutsideOfTrigger)
+      document.addEventListener('click', this.toggleBubbleOnOutsideEvent)
+      document.addEventListener('keypress', this.toggleBubbleOnOutsideEvent)
     } else {
-      document.removeEventListener('click', this.toggleBubbleOutsideOfTrigger)
-      document.removeEventListener('keypress', this.toggleBubbleOutsideOfTrigger)
+      document.removeEventListener('click', this.toggleBubbleOnOutsideEvent)
+      document.removeEventListener('keypress', this.toggleBubbleOnOutsideEvent)
     }
   }
 
-  toggleBubbleOutsideOfTrigger = event => {
-    if (event.target !== this.trigger) {
+  componentWillUnmount() {
+    document.removeEventListener('click', this.toggleBubbleOnOutsideEvent)
+    document.removeEventListener('keypress', this.toggleBubbleOnOutsideEvent)
+  }
+
+  toggleBubbleOnOutsideEvent = event => {
+    const { connectedFieldLabel } = this.props
+
+    const { bubbleId, triggerId } = getIds(connectedFieldLabel)
+
+    const inBubble = event.target.closest(`#${bubbleId}`)
+    const inTrigger = event.target.closest(`#${triggerId}`)
+
+    if (!inBubble && !inTrigger) {
       this.toggleBubble()
     }
   }
@@ -74,7 +92,6 @@ class Tooltip extends React.Component {
         aria-live="polite"
         aria-hidden={open ? 'false' : 'true'}
         data-testid="bubble"
-        onClick={interruptEvent}
       >
         <Text size="small">{content}</Text>
       </Box>
@@ -84,21 +101,19 @@ class Tooltip extends React.Component {
   render() {
     const { direction, connectedFieldLabel, children, ...rest } = this.props
 
-    const id = generateId(connectedFieldLabel, 'unknown-field').postfix('tooltip')
+    const { bubbleId, triggerId } = getIds(connectedFieldLabel)
 
     return (
       <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>
-        {this.renderBubble(id, direction, this.state.open, children)}
+        {this.renderBubble(bubbleId, direction, this.state.open, children)}
 
         <button
+          id={triggerId}
           className={styles.trigger}
           onClick={this.toggleBubble}
-          aria-controls={id}
+          aria-controls={bubbleId}
           aria-haspopup="true"
           aria-expanded={this.state.open ? 'true' : 'false'}
-          ref={trigger => {
-            this.trigger = trigger
-          }}
         >
           <StandaloneIcon
             symbol="questionMarkCircle"

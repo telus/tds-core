@@ -23,6 +23,7 @@ exports[`Tooltip renders 1`] = `
     aria-expanded="false"
     aria-haspopup="true"
     class="trigger"
+    id="unknown-field_trigger"
   >
     <i
       aria-label="Reveal additional information."
