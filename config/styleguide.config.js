@@ -283,6 +283,9 @@ module.exports = {
     Markdown: path.resolve('docs/components/Markdown/Markdown.js'),
   },
   webpackConfig: {
+    devServer: {
+      disableHostCheck: true,
+    },
     module: {
       loaders: [
         {
