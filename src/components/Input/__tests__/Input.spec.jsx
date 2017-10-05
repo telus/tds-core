@@ -39,14 +39,34 @@ describe('Input', () => {
     expect(findInputElement(input)).toHaveProp('type', 'number')
   })
 
-  it('must have a label', () => {
-    const input = doShallow({ label: 'The label' })
+  describe('label', () => {
+    it('must have a label', () => {
+      const input = doShallow({ label: 'The label' })
 
-    expect(input.find('label')).toContainReact(
-      <Text size="medium" bold>
-        The label
-      </Text>
-    )
+      expect(input.find('label')).toContainReact(
+        <Text size="medium" bold>
+          The label
+        </Text>
+      )
+    })
+
+    it('should contain sublabel', () => {
+      const input = doShallow({ sublabel: 'The sublabel' })
+
+      const sublabel = input
+        .find('[data-test="sublabel"]')
+        .dive()
+
+      expect(sublabel).toHaveText('The sublabel')
+    })
+
+    it('should not contain sublabel when not provided', () => {
+      const input = doShallow({ sublabel: undefined })
+
+      const sublabel = input.find('[data-test="sublabel"]')
+
+      expect(sublabel).not.toBePresent()
+    })
   })
 
   // FIXME: Test for override of the global styles in forms.scss. This can be removed

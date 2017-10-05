@@ -78,6 +78,16 @@ const validate = (event) => {
 
 ### Supplying extra information
 
+Use `sublabel` to display some smaller text next to the label.
+
+```
+<div>
+  <Input
+    label="Transit number" sublabel="5 digits" type="number"
+  />
+</div>
+```
+
 Use a `helper` to offer the user a detailed explanation of the input expected by a form field. Use the `Input.Helper`
 component, which can contain any content.
 
