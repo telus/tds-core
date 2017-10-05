@@ -239,6 +239,9 @@ Input.propTypes = {
    * @param {String} value The input's current value.
    */
   helper: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  /**
+   * A `Tooltip`
+   */
   tooltip: childrenOfType(Tooltip),
   /**
    * A callback function to be invoked when the input value changes.
