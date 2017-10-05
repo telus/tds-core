@@ -158,8 +158,8 @@ class Input extends React.Component {
               </Text>
 
               {sublabel &&
-                <Box inline spacing="margin" left={2}>
-                  <Text size="small" data-test="sublabel">
+                <Box inline spacing="margin" left={2} data-testid="sublabel">
+                  <Text size="small">
                     {sublabel}
                   </Text>
                 </Box>
@@ -225,7 +225,7 @@ Input.propTypes = {
    */
   label: PropTypes.string.isRequired,
   /**
-   * Smaller text to display next to the label.
+   * Clarify attributes of the expected input.
    */
   sublabel: PropTypes.string,
   /**
