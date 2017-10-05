@@ -40,9 +40,17 @@ class Tooltip extends React.Component {
 
   componentDidUpdate() {
     if (this.state.open) {
-      document.addEventListener('click', this.toggleBubble)
+      document.addEventListener('click', this.toggleBubbleOutsideOfTrigger)
+      document.addEventListener('keypress', this.toggleBubbleOutsideOfTrigger)
     } else {
-      document.removeEventListener('click', this.toggleBubble)
+      document.removeEventListener('click', this.toggleBubbleOutsideOfTrigger)
+      document.removeEventListener('keypress', this.toggleBubbleOutsideOfTrigger)
+    }
+  }
+
+  toggleBubbleOutsideOfTrigger = event => {
+    if (event.target !== this.trigger) {
+      this.toggleBubble()
     }
   }
 
@@ -88,6 +96,9 @@ class Tooltip extends React.Component {
           aria-controls={id}
           aria-haspopup="true"
           aria-expanded={this.state.open ? 'true' : 'false'}
+          ref={trigger => {
+            this.trigger = trigger
+          }}
         >
           <StandaloneIcon
             symbol="questionMarkCircle"
