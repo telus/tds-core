@@ -34,11 +34,19 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
   position: absolute;
   bottom: calc(100% + #{$bubble-triangle-height});
 
-  min-width: 200px; // TODO: check what the value should be
-  max-width: 600px; // TODO: check what the value should be
-
   background-color: $color-white;
   box-shadow: 0 0 2px 0 $color-shark, 0 3px 2px 0 rgba(84, 89, 95, 0.25);
+
+  min-width: 100px;
+  max-width: 100%;
+
+  @include from-breakpoint(medium) {
+    max-width: 50%;
+  }
+
+  @include from-breakpoint(large) {
+    max-width: 25%;
+  }
 
   // This is the bubble triangle
   &::before {

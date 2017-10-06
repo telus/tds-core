@@ -7,10 +7,24 @@ describe('generateId', () => {
     expect(id.identity()).toEqual('1')
   })
 
-  it('sanitizes values to be appropriate for HTML IDs', () => {
-    const id = generateId('ID with CaPs and SpAcEs')
+  describe('sanitization', () => {
+    it('lowercases all characters', () => {
+      const id = generateId('ALLCAPS')
 
-    expect(id.identity()).toEqual('id-with-caps-and-spaces')
+      expect(id.identity()).toEqual('allcaps')
+    })
+
+    it('replaces spaces with dashes', () => {
+      const id = generateId('an id with spaces')
+
+      expect(id.identity()).toEqual('an-id-with-spaces')
+    })
+
+    it('only preserves characters and numbers', () => {
+      const id = generateId('an id with invalid characters :"/*123')
+
+      expect(id.identity()).toEqual('an-id-with-invalid-characters-123')
+    })
   })
 
   it('can add postfixes', () => {
