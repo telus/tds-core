@@ -40,11 +40,11 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
   min-width: 100px;
   max-width: 100%;
 
-  @include from-breakpoint(medium) {
+  @include from-breakpoint(small) {
     max-width: 50%;
   }
 
-  @include from-breakpoint(large) {
+  @include from-breakpoint(medium) {
     max-width: 25%;
   }
 

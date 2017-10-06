@@ -1,4 +1,4 @@
-Tooltips provide information a user may need to complete a form field. While a label is the succinct, essential text 
+Tooltips provide information a user may need to complete a form field. While a label is the succinct, essential text
 identifying the purpose of an input field, a tooltip can be used to provide more detailed instructions.
 
 Use the `direction` prop to open the tooltip to the left or right of the trigger, so that it does not block other
@@ -17,4 +17,3 @@ On small screen sizes Tooltips will always open to the left to ensure they will 
   }
 />
 ```
-
