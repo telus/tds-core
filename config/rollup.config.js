@@ -13,30 +13,31 @@ import CssModulesSassLoader from './CssModulesSassLoader'
 
 const cssExportMap = {}
 
-const sassPreprocessor = (content, id) => new Promise((resolve) => {
-  const result = sass.renderSync({ file: id })
-  resolve({ code: result.css.toString() })
-})
+const sassPreprocessor = (content, id) =>
+  new Promise(resolve => {
+    const result = sass.renderSync({ file: id })
+    resolve({ code: result.css.toString() })
+  })
 
 export default {
-  entry: path.resolve('./src/index.js'),
-  targets: [
-    { format: 'cjs', dest: path.resolve('./dist/tds.cjs.js') },
-    { format: 'es', dest: path.resolve('./dist/tds.es.js') }
+  input: path.resolve('./src/index.js'),
+  output: [
+    { format: 'cjs', file: path.resolve('./dist/tds.cjs.js') },
+    { format: 'es', file: path.resolve('./dist/tds.es.js') },
   ],
-  sourceMap: true,
+  sourcemap: true,
 
   external: ['react', 'react-dom', 'prop-types'],
 
   plugins: [
     nodeResolve({
-      extensions: ['.js', '.jsx']
+      extensions: ['.js', '.jsx'],
     }),
     commonjs({
       include: 'node_modules/**',
       namedExports: {
-        'airbnb-prop-types': ['childrenOfType']
-      }
+        'airbnb-prop-types': ['childrenOfType'],
+      },
     }),
     postcss({
       extract: path.resolve('./dist/tds.css'),
@@ -51,17 +52,17 @@ export default {
           generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
           getJSON(id, exportTokens) {
             cssExportMap[id] = exportTokens
-          }
-        })
+          },
+        }),
       ],
       getExportNamed: false,
       getExport(id) {
         return cssExportMap[id]
-      }
+      },
     }),
     babel({
       plugins: ['external-helpers'],
-      exclude: 'node_modules/**'
-    })
-  ]
+      exclude: 'node_modules/**',
+    }),
+  ],
 }

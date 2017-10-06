@@ -1,3 +1,67 @@
 .wave {
   width: 100%;
 }
+
+// SVG
+.cls1 {
+  fill: none;
+}
+
+.cls2 {
+  opacity: 0.3;
+}
+
+.cls3 {
+  fill: url(#linear-gradient);
+}
+
+.cls4 {
+  opacity: 0.2;
+}
+
+.cls5,
+.cls7,
+.cls9 {
+  opacity: 0.5;
+  isolation: isolate;
+}
+
+.cls5 {
+  fill: url(#linear-gradient-2);
+}
+
+.cls6 {
+  fill: url(#linear-gradient-3);
+}
+
+.cls7 {
+  fill: url(#linear-gradient-4);
+}
+
+.cls8 {
+  fill: url(#linear-gradient-5);
+}
+
+.cls9 {
+  fill: url(#linear-gradient-6);
+}
+
+.cls10 {
+  fill: url(#linear-gradient-7);
+}
+
+.cls11 {
+  fill: url(#linear-gradient-8);
+}
+
+.cls12 {
+  fill: url(#linear-gradient-9);
+}
+
+.cls13 {
+  fill: url(#linear-gradient-10);
+}
+
+.cls14 {
+  fill: url(#linear-gradient-11);
+}
