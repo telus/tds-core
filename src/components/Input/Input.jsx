@@ -137,7 +137,7 @@ class Input extends React.Component {
   }
 
   render() {
-    const { type, label, feedback, error, helper, tooltip, ...rest } = this.props
+    const { type, label, sublabel, feedback, error, helper, tooltip, ...rest } = this.props
 
     const inputId = generateId(rest.id, rest.name, label)
     const helperId = helper && inputId.postfix('helper')
@@ -156,6 +156,14 @@ class Input extends React.Component {
               <Text size="medium" bold>
                 {label}
               </Text>
+
+              {sublabel &&
+                <Box inline spacing="margin" left={2} data-testid="sublabel">
+                  <Text size="small">
+                    {sublabel}
+                  </Text>
+                </Box>
+              }
             </label>
             {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
           </Flexbox>
@@ -216,6 +224,10 @@ Input.propTypes = {
    * The label.
    */
   label: PropTypes.string.isRequired,
+  /**
+   * Clarify attributes of the expected input.
+   */
+  sublabel: PropTypes.string,
   /**
    * The value.
    */
