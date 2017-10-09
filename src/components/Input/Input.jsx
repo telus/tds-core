@@ -157,13 +157,11 @@ class Input extends React.Component {
                 {label}
               </Text>
 
-              {sublabel &&
-                <Box inline spacing="margin" left={2} data-testid="sublabel">
-                  <Text size="small">
-                    {sublabel}
-                  </Text>
+              {sublabel && (
+                <Box inline spacing="margin" left={2}>
+                  <Text size="small">{sublabel}</Text>
                 </Box>
-              }
+              )}
             </label>
             {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
           </Flexbox>
@@ -277,6 +275,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   type: 'text',
+  sublabel: undefined,
   value: '',
   feedback: undefined,
   error: undefined,

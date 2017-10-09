@@ -50,25 +50,10 @@ describe('Input', () => {
       )
     })
 
-    it('should contain sublabel', () => {
+    it('can have a sublabel', () => {
       const input = doShallow({ sublabel: 'The sublabel' })
 
-      const sublabel = input
-        .find('[data-testid="sublabel"]')
-
-      expect(sublabel).toContainReact(
-        <Text size="small">
-          The sublabel
-        </Text>
-      )
-    })
-
-    it('should not contain sublabel when not provided', () => {
-      const input = doShallow({ sublabel: undefined })
-
-      const sublabel = input.find('[data-testid="sublabel"]')
-
-      expect(sublabel).not.toBePresent()
+      expect(input.find('label')).toContainReact(<Text size="small">The sublabel</Text>)
     })
   })
 
