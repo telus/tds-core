@@ -3,65 +3,69 @@
 }
 
 // SVG
-.TDS_waveDivider_class1 {
+.noFill {
   fill: none;
 }
 
-.TDS_waveDivider_class2 {
+.opacity3 {
   opacity: 0.3;
 }
 
-.TDS_waveDivider_class3 {
-  fill: url(#TDS_wave-divider_gradient);
-}
-
-.TDS_waveDivider_class4 {
+.opacity2 {
   opacity: 0.2;
 }
 
-.TDS_waveDivider_class5,
-.TDS_waveDivider_class7,
-.TDS_waveDivider_class9 {
+.isolate {
   opacity: 0.5;
   isolation: isolate;
 }
 
-.TDS_waveDivider_class5 {
-  fill: url(#TDS_wave-divider_gradient-2);
+.gradient1 {
+  fill: url(#TDS_WaveDivider_gradient-1);
 }
 
-.TDS_waveDivider_class6 {
-  fill: url(#TDS_wave-divider_gradient-3);
+.gradient2 {
+  composes: isolate;
+
+  fill: url(#TDS_WaveDivider_gradient-2);
 }
 
-.TDS_waveDivider_class7 {
-  fill: url(#TDS_wave-divider_gradient-4);
+.gradient3 {
+  fill: url(#TDS_WaveDivider_gradient-3);
 }
 
-.TDS_waveDivider_class8 {
-  fill: url(#TDS_wave-divider_gradient-5);
+.gradient4 {
+  composes: isolate;
+
+  fill: url(#TDS_WaveDivider_gradient-4);
 }
 
-.TDS_waveDivider_class9 {
-  fill: url(#TDS_wave-divider_gradient-6);
+.gradient5 {
+  fill: url(#TDS_WaveDivider_gradient-5);
 }
 
-.TDS_waveDivider_class10 {
-  fill: url(#TDS_wave-divider_gradient-7);
+.gradient6 {
+  composes: isolate;
+
+  fill: url(#TDS_WaveDivider_gradient-6);
 }
 
-.TDS_waveDivider_class11 {
-  fill: url(#TDS_wave-divider_gradient-8);
+.gradient7 {
+  fill: url(#TDS_WaveDivider_gradient-7);
 }
 
-.TDS_waveDivider_class12 {
-  fill: url(#TDS_wave-divider_gradient-9);
+.gradient8 {
+  fill: url(#TDS_WaveDivider_gradient-8);
 }
 
-.TDS_waveDivider_class13 {
-  fill: url(#TDS_wave-divider_gradient-10);
+.gradient9 {
+  fill: url(#TDS_WaveDivider_gradient-9);
 }
 
-.TDS_waveDivider_class14 {
-  fill: url(#TDS_wave-divider_gradient-11);
+.gradient10 {
+  fill: url(#TDS_WaveDivider_gradient-10);
+}
+
+.gradient11 {
+  fill: url(#TDS_WaveDivider_gradient-11);
 }
