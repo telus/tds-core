@@ -1,0 +1,25 @@
+// he = helper example
+
+@import '../settings/colours';
+
+[class*='rsg--'].he_purple-block,
+.he_purple-block {
+  background-color: $color-secondary;
+  padding: 2rem;
+}
+
+[class*='rsg--'].he_vertical-divider,
+.he_vertical-divider {
+  display: flex;
+  height: 150px;
+}
+
+[class*='rsg--'].he_standalone-icon,
+.he_standalone-icon {
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}

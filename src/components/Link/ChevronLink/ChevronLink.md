@@ -26,12 +26,10 @@ Specify the variant to create a button for secondary actions.
 
 Use the inverted Chevron Link on top of any solid dark colour such as TELUS purple.
 
-```
-const PurpleBlock = require('../../../../docs/components/PurpleBlock/PurpleBlock').default;
-
-<PurpleBlock>
+```jsx { "props": { "className": "he_purple-block" } }
+<div>
   <ChevronLink href="#" variant="inverted">Find out how</ChevronLink>
-</PurpleBlock>
+</div>
 ```
 
 ### Using Chevron Link for navigation in a multi-step operation

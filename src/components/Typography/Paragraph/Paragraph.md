@@ -14,10 +14,8 @@
 
 Use the `invert` prop.
 
-```
-const PurpleBlock = require('../../../../docs/components/PurpleBlock/PurpleBlock').default;
-
-<PurpleBlock>
+```jsx { "props": { "className": "he_purple-block" } }
+<div>
   <Paragraph invert>Order online and save an extra $150.</Paragraph>
-</PurpleBlock>
+</div>
 ```

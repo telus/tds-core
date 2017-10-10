@@ -11,12 +11,10 @@
 
 ### Inverted
 
-```
-const PurpleBlock = require('../../../docs/components/PurpleBlock/PurpleBlock').default;
-
-<PurpleBlock>
+```jsx { "props": { "className": "he_purple-block" } }
+<div>
   <Paragraph invert>Call Screen requires a subscription. <Link href="#" invert>Log in</Link> to your account and make sure you are subscribed.</Paragraph>
-</PurpleBlock>
+</div>
 ```
 
 ### Using with React Router Links
@@ -26,7 +24,7 @@ When using Link with React Router, you must pass in the React Router Link compon
 It is recommended to set up a component wrapper in your project to avoid repetition, like so:
 
 **LinkWrapper.jsx**
-```jsx
+```jsx noeditor static
 import React from 'react'
 
 // React Router version 3
@@ -50,7 +48,7 @@ export default LinkWrapper
 ```
 
 **App.js**
-```jsx
+```jsx noeditor static
 import Link from './LinkWrapper'
 
 const MyApp = () => (

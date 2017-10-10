@@ -43,8 +43,8 @@ $tds-style-typography-html-tags: true;
 @import 'settings/variables';
 
 // utility
-@import "utility/helpers";
-@import "utility/mixins";
+@import 'utility/helpers';
+@import 'utility/mixins';
 
 // foundation
 @import 'foundation/reset';
@@ -59,3 +59,6 @@ $tds-style-typography-html-tags: true;
 @import 'elements/buttons';
 @import 'elements/forms';
 @import 'elements/lists';
+
+// docs overrides
+@import 'docs/examples';
