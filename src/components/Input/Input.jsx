@@ -224,6 +224,8 @@ Input.propTypes = {
   label: PropTypes.string.isRequired,
   /**
    * Clarify attributes of the expected input.
+   *
+   * @since v0.24.0
    */
   sublabel: PropTypes.string,
   /**

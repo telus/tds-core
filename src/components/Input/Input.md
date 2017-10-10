@@ -81,6 +81,8 @@ const validate = (event) => {
 Use a `sublabel` to clarify attributes of the expected input. It is a more usable and accessible option than the 
 HTML `placeholder` attribute.
 
+<span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
+
 ```
 <Input label="Transit number" sublabel="5 digits" type="number" />
 ```
