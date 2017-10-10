@@ -37,17 +37,6 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
   background-color: $color-white;
   box-shadow: 0 0 2px 0 $color-shark, 0 3px 2px 0 rgba(84, 89, 95, 0.25);
 
-  min-width: 100px;
-  max-width: 100%;
-
-  @include from-breakpoint(small) {
-    max-width: 50%;
-  }
-
-  @include from-breakpoint(medium) {
-    max-width: 25%;
-  }
-
   // This is the bubble triangle
   &::before {
     display: block;
@@ -86,18 +75,30 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
 }
 
 @include at-breakpoint(xs) {
+  .bubble {
+    width: 100%;
+  }
+
   .right {
     @include left-bubble;
   }
 }
 
 @include at-breakpoint(small) {
+  .bubble {
+    width: 50%;
+  }
+
   .right {
     @include left-bubble;
   }
 }
 
 @include from-breakpoint(medium) {
+  .bubble {
+    width: 25%;
+  }
+
   .right {
     left: calc(100% - #{$bubble-trigger-size} - #{$bubble-offset});
 
