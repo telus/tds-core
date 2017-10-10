@@ -16,9 +16,6 @@ const getClassName = (invert, context) => {
   return styles.base
 }
 
-/**
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.21.0</span>
- */
 const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) => {
   if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')

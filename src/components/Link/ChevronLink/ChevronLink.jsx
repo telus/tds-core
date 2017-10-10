@@ -31,8 +31,6 @@ const getIcon = (symbol, className) => {
 
 /**
  * A call to action link.
- *
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.21.0</span>
  */
 const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, ...rest }) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {

@@ -6,7 +6,7 @@ import Icon from '../Icon/Icon'
 /**
  * An icon used for visual aesthetics only.
  *
- * <span class="docs--badge__wip">wip</span>
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
  */
 const DecorativeIcon = ({ symbol, variant, size, ...rest }) => (
   <Icon {...rest} symbol={symbol} variant={variant} size={size} aria-hidden="true" />

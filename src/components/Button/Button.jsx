@@ -28,19 +28,21 @@ const preventDisabling = ({ disabled, ...props }) => {
   return props
 }
 
-/**
- *
- * <span class="docs--badge__new">updated!</span> <span class="docs--badge__version">v0.21.0</span>
- */
 const Button = ({ type, variant, invert, children, ...rest }) => {
   const restNoDisabled = preventDisabling(rest)
 
   if (invert) {
-    deprecate('Button', 'The invert prop is deprecated. Create an inverted Button with the inverted variant.')
+    deprecate(
+      'Button',
+      'The invert prop is deprecated. Create an inverted Button with the inverted variant.'
+    )
   }
 
   if (variant === 'outlined') {
-    deprecate('Button', 'The outlined variant is deprecated. Create an inverted Button with the inverted variant.')
+    deprecate(
+      'Button',
+      'The outlined variant is deprecated. Create an inverted Button with the inverted variant.'
+    )
   }
 
   return (
@@ -72,12 +74,12 @@ Button.propTypes = {
   /**
    * The label.
    */
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
 }
 Button.defaultProps = {
   type: 'button',
   variant: 'primary',
-  invert: false
+  invert: false,
 }
 
 export default Button

@@ -51,16 +51,9 @@ const renderContent = (variant, children) => {
 
 /**
  * A banner that highlights important messages.
- *
- * <span class="docs--badge__new">updated!</span> <span class="docs--badge__version">v0.21.0</span>
  */
 const Notification = ({ variant, children, ...rest }) => (
-  <Box
-    {...safeRest(rest)}
-    spacing="padding"
-    vertical={3}
-    dangerouslyAddClassName={styles[variant]}
-  >
+  <Box {...safeRest(rest)} spacing="padding" vertical={3} dangerouslyAddClassName={styles[variant]}>
     <Container limitWidth>
       <Row>
         <Column xs={12}>

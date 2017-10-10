@@ -3,7 +3,7 @@ const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
-const enabledInStaging = ['Icon', 'Dividers', 'Tooltip']
+const enabledInStaging = []
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
@@ -122,11 +122,8 @@ module.exports = {
         },
         {
           name: 'Utility icons',
-          content: toggleByEnv(
-            'Icon',
-            path.resolve('docs/elements/utility-icons-deprecated.md'),
-            path.resolve('docs/elements/utility-icons.md')
-          ),
+          content: path.resolve('docs/elements/utility-icons-deprecated.md'),
+
         },
         {
           name: 'Utility mixins',
@@ -186,7 +183,7 @@ module.exports = {
                 ]
               },
             },
-            toggleByEnv('Dividers', {
+            {
               name: 'Dividers',
               components() {
                 return [
@@ -195,7 +192,7 @@ module.exports = {
                   path.resolve('src/components/Dividers/HairlineDivider/HairlineDivider.jsx'),
                 ]
               },
-            }),
+            },
           ]),
         },
         {
@@ -234,19 +231,13 @@ module.exports = {
         },
         {
           name: 'Icons',
-          content: toggleByEnv('Icon', path.resolve('src/components/Icons/icons.md')),
+          content: path.resolve('src/components/Icons/icons.md'),
           components() {
-            return compact([
-              toggleByEnv(
-                'Icon',
-                path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx')
-              ),
-              toggleByEnv(
-                'Icon',
-                path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx')
-              ),
+            return [
+              path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx'),
+              path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx'),
               path.resolve('src/old-components/Icon/Icon.jsx'),
-            ])
+            ]
           },
         },
         {
@@ -265,7 +256,7 @@ module.exports = {
             return compact([
               path.resolve('src/components/Button/Button.jsx'),
               path.resolve('src/components/Input/Input.jsx'),
-              toggleByEnv('Tooltip', path.resolve('src/components/Tooltip/Tooltip.jsx')),
+              path.resolve('src/components/Tooltip/Tooltip.jsx'),
               path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx'),
             ])
           },

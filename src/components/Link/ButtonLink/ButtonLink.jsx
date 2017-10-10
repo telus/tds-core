@@ -7,7 +7,7 @@ import safeRest from '../../../utils/safeRest'
 import styles from './ButtonLink.modules.scss'
 
 /**
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.21.0</span>
+ * A link that is styled as a button.
  */
 const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
@@ -18,7 +18,7 @@ const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) =>
     reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
-      className: styles[variant]
+      className: styles[variant],
     },
     children
   )
@@ -44,13 +44,13 @@ ButtonLink.propTypes = {
   /**
    * The label.
    */
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
 }
 ButtonLink.defaultProps = {
   variant: 'primary',
   reactRouterLinkComponent: null,
   to: null,
-  href: null
+  href: null,
 }
 
 export default ButtonLink

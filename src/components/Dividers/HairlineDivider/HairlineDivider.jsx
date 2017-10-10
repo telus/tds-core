@@ -23,6 +23,8 @@ const getClassName = (vertical, gradient) => {
 
 /**
  * Separate content within modules.
+ *
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
  */
 const HairlineDivider = ({ vertical, gradient, ...rest }) => (
   <hr {...safeRest(rest)} className={styles[getClassName(vertical, gradient)]} />

@@ -4,10 +4,9 @@ import PropTypes from 'prop-types'
 import Icon from '../Icon/Icon'
 
 /**
- * An icon that has meaning within the context of the page,
- * which should be communicated to screen readers.
+ * An icon that has meaning within the context of the page, which should be communicated to screen readers.
  *
- * <span class="docs--badge__wip">wip</span>
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
  */
 const StandaloneIcon = ({ symbol, variant, size, a11yText, ...rest }) => (
   <Icon {...rest} symbol={symbol} variant={variant} size={size} aria-label={a11yText} />
@@ -31,17 +30,12 @@ StandaloneIcon.propTypes = {
     'plus',
     'questionMarkCircle',
     'spyglass',
-    'times'
+    'times',
   ]).isRequired,
   /**
    * The appearance of the Icon.
    */
-  variant: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'inverted',
-    'error'
-  ]),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted', 'error']),
   /**
    * The icon size in pixels.
    */
@@ -49,12 +43,12 @@ StandaloneIcon.propTypes = {
   /**
    * A description of the icon for screen readers.
    */
-  a11yText: PropTypes.string.isRequired
+  a11yText: PropTypes.string.isRequired,
 }
 
 StandaloneIcon.defaultProps = {
   variant: undefined,
-  size: 24
+  size: 24,
 }
 
 export default StandaloneIcon

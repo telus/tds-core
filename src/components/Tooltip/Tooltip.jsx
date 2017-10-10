@@ -34,6 +34,8 @@ const getIds = connectedFieldLabel => {
 
 /**
  * Provide more detailed instructions.
+ *
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
  */
 class Tooltip extends React.Component {
   constructor(props) {
