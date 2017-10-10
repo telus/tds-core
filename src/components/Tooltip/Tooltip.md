@@ -1,5 +1,6 @@
-Tooltips provide information a user may need to complete a form field. While a label is the succinct, essential text
-identifying the purpose of an input field, a tooltip can be used to provide more detailed instructions.
+Tooltips provide a descriptive and detailed explanation or instructions to help the user fill in the form field. You may
+use one when the information is useful only to a small percentage of users (ie. tech savvy people wouldn't need this info).
+Tooltips may also be useful when vertical space is an issue.
 
 Use the `direction` prop to open the tooltip to the left or right of the trigger, so that it does not block other
 content on the page. Be careful not to let the Tooltip extend beyond the edge of the page if opening to the right though.

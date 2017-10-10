@@ -33,7 +33,7 @@ const getIds = connectedFieldLabel => {
 }
 
 /**
- * Provide more detailed instructions.
+ * Provide an explanation or instructions for a form field that most users do not need.
  *
  * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
  */
