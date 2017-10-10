@@ -2,11 +2,15 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
+import { deprecate } from '../../../utils/warn'
+
 import Icon from '../Icon'
+
+jest.mock('../../../utils/warn')
 
 describe('<Icon />', () => {
   const defaultProps = {
-    glyph: 'checkmark'
+    glyph: 'checkmark',
   }
   const doShallow = (overrides = {}) => shallow(<Icon {...defaultProps} {...overrides} />)
 
@@ -14,6 +18,12 @@ describe('<Icon />', () => {
     const icon = doShallow()
 
     expect(toJson(icon)).toMatchSnapshot()
+  })
+
+  it('is deprecated', () => {
+    doShallow()
+
+    expect(deprecate).toHaveBeenCalled()
   })
 
   it('needs a glyph', () => {

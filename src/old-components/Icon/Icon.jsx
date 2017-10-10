@@ -2,17 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
+import { deprecate } from '../../utils/warn'
+
+/**
+ * <span class="docs--badge__deprecated">deprecated</span>
+ */
 const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
-  const classes = classNames(
-    'icon',
-    `icon-core-${glyph}`,
-    className,
-    {
-      'icon--fw': fixedWidth,
-      [`icon--${variant}`]: variant,
-      'icon--large': size
-    }
+  deprecate(
+    'Icon',
+    'The Icon component is deprecated and will be remove in a later release. Use DecorativeIcon or Standalone Icon instead.'
   )
+
+  const classes = classNames('icon', `icon-core-${glyph}`, className, {
+    'icon--fw': fixedWidth,
+    [`icon--${variant}`]: variant,
+    'icon--large': size,
+  })
 
   return (
     <i {...rest} className={classes}>
@@ -40,17 +45,12 @@ Icon.propTypes = {
     'plus',
     'question-mark-circle',
     'spyglass',
-    'times'
+    'times',
   ]).isRequired,
   /**
    * The appearance of the Icon.
    */
-  variant: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'disabled',
-    'error'
-  ]),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'disabled', 'error']),
   /**
    * Whether or not to give the icon a fixed width.
    */
@@ -72,14 +72,14 @@ Icon.propTypes = {
    *
    * @ignore
    */
-  children: PropTypes.node
+  children: PropTypes.node,
 }
 Icon.defaultProps = {
   variant: null,
   fixedWidth: false,
   size: null,
   className: '',
-  children: null
+  children: null,
 }
 
 export default Icon
