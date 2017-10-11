@@ -2,8 +2,8 @@
 
 Standalone icons can also be interactive elements. This example shows the preferred way of creating an interactive icon:
 
-```jsx
-<button className="he_standalone-icon" type="submit">
+```
+<button style={{appearance: 'none', background: 'none', border: 0, cursor: 'pointer'}} type="submit">
     <StandaloneIcon symbol="spyglass" size={48} a11yText="Search this site." />
 </button>
 ```

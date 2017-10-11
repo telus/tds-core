@@ -46,3 +46,15 @@
   border: 0;
   cursor: pointer;
 }
+
+[class*='rsg--'].docs_hero,
+.docs_hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-image: url('../images/hero-background.jpg');
+  background-size: cover;
+  height: 200px;
+  padding: 2rem;
+}
