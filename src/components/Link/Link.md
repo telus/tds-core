@@ -11,10 +11,8 @@
 
 ### Inverted
 
-```jsx { "props": { "className": "he_purple-block" } }
-<div>
-  <Paragraph invert>Call Screen requires a subscription. <Link href="#" invert>Log in</Link> to your account and make sure you are subscribed.</Paragraph>
-</div>
+```jsx { "props": { "className": "docs_purple-block" } }
+<Paragraph invert>Call Screen requires a subscription. <Link href="#" invert>Log in</Link> to your account and make sure you are subscribed.</Paragraph>
 ```
 
 ### Using with React Router Links

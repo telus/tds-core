@@ -26,7 +26,7 @@ Specify the variant to create a button for secondary actions.
 
 Use the inverted Chevron Link on top of any solid dark colour such as TELUS purple.
 
-```jsx { "props": { "className": "he_purple-block" } }
+```jsx { "props": { "className": "docs_purple-block" } }
 <div>
   <ChevronLink href="#" variant="inverted">Find out how</ChevronLink>
 </div>
