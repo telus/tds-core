@@ -90,6 +90,28 @@ class Input extends React.Component {
     }
   }
 
+  renderLabel(label, hint, tooltip, inputId) {
+    const labelClassNames = joinClassNames(styles.resetLabel, styles.label)
+
+    return (
+      <Flexbox direction="row" dangerouslyAddClassName={formFieldStyles.containsTooltip}>
+        <label htmlFor={inputId.identity()} className={labelClassNames}>
+          <Text size="medium" bold>
+            {label}
+          </Text>
+
+          {hint && (
+            <Box inline spacing="margin" left={2}>
+              <Text size="small">{hint}</Text>
+            </Box>
+          )}
+        </label>
+
+        {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
+      </Flexbox>
+    )
+  }
+
   renderError(error, errorId) {
     return (
       <Helper id={errorId} feedback="error">
@@ -137,34 +159,20 @@ class Input extends React.Component {
   }
 
   render() {
-    const { type, label, sublabel, feedback, error, helper, tooltip, ...rest } = this.props
+    const { type, label, hint, feedback, error, helper, tooltip, ...rest } = this.props
 
     const inputId = generateId(rest.id, rest.name, label)
     const helperId = helper && inputId.postfix('helper')
     const errorId = error && inputId.postfix('error-message')
 
     const wrapperClassName = getWrapperClassName(feedback, this.state.focus, rest.disabled)
-    const labelClassNames = joinClassNames(styles.resetLabel, styles.label)
 
     const showIcon = showFeedbackIcon(feedback, this.state.focus)
 
     return (
       <Flexbox direction="column">
         <Box spacing="margin" bottom={2}>
-          <Flexbox direction="row" dangerouslyAddClassName={formFieldStyles.containsTooltip}>
-            <label htmlFor={inputId.identity()} className={labelClassNames}>
-              <Text size="medium" bold>
-                {label}
-              </Text>
-
-              {sublabel && (
-                <Box inline spacing="margin" left={2}>
-                  <Text size="small">{sublabel}</Text>
-                </Box>
-              )}
-            </label>
-            {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
-          </Flexbox>
+          {this.renderLabel(label, hint, tooltip, inputId)}
         </Box>
 
         {helper && (
@@ -223,11 +231,11 @@ Input.propTypes = {
    */
   label: PropTypes.string.isRequired,
   /**
-   * Clarify attributes of the expected input.
+   * Clarify the expected input.
    *
    * @since v0.24.0
    */
-  sublabel: PropTypes.string,
+  hint: PropTypes.string,
   /**
    * The value.
    */
@@ -277,7 +285,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   type: 'text',
-  sublabel: undefined,
+  hint: undefined,
   value: '',
   feedback: undefined,
   error: undefined,

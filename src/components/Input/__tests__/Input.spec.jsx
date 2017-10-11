@@ -50,10 +50,10 @@ describe('Input', () => {
       )
     })
 
-    it('can have a sublabel', () => {
-      const input = doShallow({ sublabel: 'The sublabel' })
+    it('can have a short hint', () => {
+      const input = doShallow({ hint: 'The short hint' })
 
-      expect(input.find('label')).toContainReact(<Text size="small">The sublabel</Text>)
+      expect(input.find('label')).toContainReact(<Text size="small">The short hint</Text>)
     })
   })
 

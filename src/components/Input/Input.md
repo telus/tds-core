@@ -78,16 +78,16 @@ const validate = (event) => {
 
 ### Supplying extra information
 
-Use a `sublabel` to succinctly clarify attributes of the expected input data, such as the expected format or an indicator that the 
-field is optional. It is a more usable and accessible option than the HTML `placeholder` attribute.
+Use a `hint` to succinctly clarify attributes of the expected input data, such as the expected format, or an indicator 
+that the field is optional. It is a more usable and accessible option than the HTML `placeholder` attribute.
 
 <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
 
 ```
-<Input label="Transit number" sublabel="5 digits" type="number" />
+<Input label="Transit number" hint="5 digits" type="number" />
 ```
 
-Use a `helper` to show additional context that will guide the user while completing the form field.
+Use a `helper` message to show additional context that will guide the user while completing the form field.
 
 ```
 const creditCards = (
