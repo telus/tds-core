@@ -1,3 +1,84 @@
+#### 0.24.0 (2017-10-12)
+
+##### Chores
+
+* **prettier:** remove prettier config file ([311e0551](https://github.com/telusdigital/tds/commit/311e0551d23ec31dd198be71166e84f023a9c24f))
+
+##### Documentation Changes
+
+* **meta:** Remove Hero block ([7d044528](https://github.com/telusdigital/tds/commit/7d044528bf322b7250f796abcab652b6bcdca467))
+* **tooltip:** Rewording the tooltip and sublabel descriptions. ([877c6ee1](https://github.com/telusdigital/tds/commit/877c6ee14965571b9a95183a422e245ca4d6758b))
+* **badges:**
+  * Add badge for sublabel ([dca1f31f](https://github.com/telusdigital/tds/commit/dca1f31f36ba0d8dd19487b5695b372e2664ce67))
+  * Adjust badges for v0.24.0 release ([73f1cbf2](https://github.com/telusdigital/tds/commit/73f1cbf2acd40e6b57ebf0a907a61dc17b1bf053))
+* **staging:** Enable tooltip in staging. ([066e38e4](https://github.com/telusdigital/tds/commit/066e38e425d5d8f3da3815896e4ca99a0ac46670))
+
+##### New Features
+
+* **tooltip:**
+  * Replace Element#closest polyfill with a non-invasive function ([cc2a431c](https://github.com/telusdigital/tds/commit/cc2a431c06d8746c3035939ff788e357bf112b5e))
+  * Set width instead of using min and max to be more browser compatible ([0057a0f8](https://github.com/telusdigital/tds/commit/0057a0f8130317e511c0f282d98574c7819d7c5d))
+  * Change responsive sizes of tooltip ([c23939c8](https://github.com/telusdigital/tds/commit/c23939c8f63fa045b1a27d60d2aef4ca4e2a6a17))
+  * Set responsive max sizing for the tooltip relative to the container size ([a873892a](https://github.com/telusdigital/tds/commit/a873892a2ecbe0b0ff4d3b4c632fedbf07bc1b4b))
+  * Use Element#closest for a better way of keeping the bubble open if clicking in it ([c97808bc](https://github.com/telusdigital/tds/commit/c97808bc1dd93e3b0ca2d97b1d08b650cbb2cfbe))
+  * Set the text color of the trigger button for Safari ([908540f7](https://github.com/telusdigital/tds/commit/908540f781e88c2dcd981f16ae33e9c8cff3d762))
+  * Close tooltip on keypress ([cd7916e5](https://github.com/telusdigital/tds/commit/cd7916e5e4bc3ce02c36cdde0ca9c3172f0d7690))
+  * Keep the tooltip open when clicking inside the bubble ([397fd805](https://github.com/telusdigital/tds/commit/397fd8056770574ae1f27abfc48652abeba9d33f))
+  * Close the tooltip when clicking anywhere on the document ([72d4c688](https://github.com/telusdigital/tds/commit/72d4c68809d4a2acabec12b72ce5d1c2fac5385e))
+  * Force the bubble to display to the left at small breakpoints ([7b0546a1](https://github.com/telusdigital/tds/commit/7b0546a1978d274cba65a6fe120a32e306030096))
+  * Set tooltip min and max widths ([7bc9ff8d](https://github.com/telusdigital/tds/commit/7bc9ff8d3ab89643ca98334146eff10da5978496))
+  * Pass the label of the connected form field to tooltip ([4c6dee42](https://github.com/telusdigital/tds/commit/4c6dee42379346b1df94b6e085f69b362dfd98da))
+  * Align the tooltip icon ([7a737477](https://github.com/telusdigital/tds/commit/7a7374774bebc2bdf44a6fff7561b8eab39b1447))
+  * Clean up styles and component ([4adffd87](https://github.com/telusdigital/tds/commit/4adffd87f27065470951dccb8d2c502c54692249))
+  * Add accessibility enhancements ([a69c73e3](https://github.com/telusdigital/tds/commit/a69c73e3a226beedbccb92f8039abe2a143e9b43))
+  * Update bubble wrapper to a div tag ([7c95a1f1](https://github.com/telusdigital/tds/commit/7c95a1f1c2b179f33b5bb3271af5449e15912b76))
+  * Remove WithPadding component for spacing ([30795bfe](https://github.com/telusdigital/tds/commit/30795bfe4561d298848d4ef3095b77e864a5655a))
+  * Add WithPadding to bubble ([65615a23](https://github.com/telusdigital/tds/commit/65615a23bba2afc1d7f55f63c29934bd1abc12be))
+  * Render bubble with small text ([c7051a9e](https://github.com/telusdigital/tds/commit/c7051a9e429d79635db393a316324f8e07f50016))
+  * Integrate with Input component ([f9411191](https://github.com/telusdigital/tds/commit/f9411191a0e0d199e2c118e0c7001d4a59401c7d))
+  * Add tooltip CSS wedge at bottom of bubble ([37ac93a1](https://github.com/telusdigital/tds/commit/37ac93a134611de435d9bbb014a2613dc0a6b9e8))
+* **hint:** TDS-358: Rename sublabel to hint. ([b54a80f0](https://github.com/telusdigital/tds/commit/b54a80f05aff3ce4e4d84223a88f9b09229b0c65))
+* **package:** upgrade styleguidist - simplify markdown examples - add global 'helper example' classes ([dcfc106b](https://github.com/telusdigital/tds/commit/dcfc106be4a9f0f168130d92951425da3ef788b9))
+* **wave-divider:** A little more cleanup of the class names. Removing un-necessary prefixes, CSS Mo ([ba2f1ca8](https://github.com/telusdigital/tds/commit/ba2f1ca8825530725f33ba59b8b24e8e9f305c0d))
+* **rollup:** Add Icons, Tooltip, and Dividers to the package entry point ([905530b8](https://github.com/telusdigital/tds/commit/905530b823eadd3e575defa4bc3abecb39a43918))
+* **icon:** Add deprecation warning. Gearing up for v0.24.0 release. ([b3331f3d](https://github.com/telusdigital/tds/commit/b3331f3d28a22ee7147ce508c3b97ccda9b7fa4b))
+* **input:**
+  * Add sublabel for smaller text next to input label (#421) ([87d5cfda](https://github.com/telusdigital/tds/commit/87d5cfda679eba317e34ad6cc0f11e6d4174829c))
+  * Update focused state to focus to align with standards ([0ac1243e](https://github.com/telusdigital/tds/commit/0ac1243eb1e88b0cd86af0b32c361b83b2355102))
+* **box:**
+  * add responsive spacing classes ([f2084651](https://github.com/telusdigital/tds/commit/f2084651e17f1e2fb4609ce8667c89b13b0a93c9))
+  * Change WithPadding to Box and use it in Notification, Input, Helper, and Tooltip ([87a90df8](https://github.com/telusdigital/tds/commit/87a90df845c84bbc3f7fff27f3518459f583c746))
+* **with-padding:**
+  * add all-sided padding ([59570658](https://github.com/telusdigital/tds/commit/595706580cd98f3c9d8237f5382970cb91c8cace))
+  * Add CSS classess for scale 3 and 4 ([bfbbcf49](https://github.com/telusdigital/tds/commit/bfbbcf4968d466ad5bc3dc0c4757d2685873140c))
+* **spacing:** Introduce a WithPadding component to do internal spacing of components ([39d69765](https://github.com/telusdigital/tds/commit/39d6976560e96257a6098702b38a8bbf9fe79249))
+
+##### Bug Fixes
+
+* **package:** restore build commands to fix openshift builds ([2cc9677e](https://github.com/telusdigital/tds/commit/2cc9677ee3e1e3bcb6dd01b0ff9e7feab5178528))
+* **wavedivider:** render as an svg element to work in ie11 ([785b86e6](https://github.com/telusdigital/tds/commit/785b86e63fe086c301b77a7616ecb30a9d1dcf1f))
+
+##### Other Changes
+
+* **webpack:** disable host check when running dev server ([49ede6b6](https://github.com/telusdigital/tds/commit/49ede6b631b3da7fd206bdecc641deaefeacfde3))
+
+##### Refactors
+
+* **css:** move docs classes out of source scss ([f14ede46](https://github.com/telusdigital/tds/commit/f14ede4624fe0c62dab5020c0fb80b17938fc625))
+* **wavedivider:** optimise wave svg ([c767d9e5](https://github.com/telusdigital/tds/commit/c767d9e51b91121470a0912ef78472fbe690dab1))
+* **input:** Remove data-testid from sublabel. Not needed. ([6bc5278a](https://github.com/telusdigital/tds/commit/6bc5278aeaef876b256ab1c4bed8369fd5ab3a81))
+* **spacing:** Removed all usages of the spacing Sass variables ([281264b2](https://github.com/telusdigital/tds/commit/281264b28bf28142735fa4d19eb2788a9dd25747))
+* **box:**
+  * Move Box styles into the module. ([611e0d7d](https://github.com/telusdigital/tds/commit/611e0d7dc70a3d3ea141f2c1fdb668d7ded12982))
+  * Move Box into its own module. ([702323d9](https://github.com/telusdigital/tds/commit/702323d95a3a9f6bf94493145f39b871d9976f2d))
+
+##### Code Style Changes
+
+* **editorconfig:** Allow trailing whitespace in markdown files ([11110671](https://github.com/telusdigital/tds/commit/11110671247d7e9406cdaf6250646acbd594f63f))
+* **prettier:**
+  * Add config settings to package.json ([39893cba](https://github.com/telusdigital/tds/commit/39893cbacc0c46039f0181612523457576a34e94))
+  * Introduce prettier to experiment with it ([2b0c4db8](https://github.com/telusdigital/tds/commit/2b0c4db85d7d4656389fb1bbd42f91faab537d73))
+
 #### 0.23.0 (2017-10-02)
 
 ##### Build System / Dependencies
