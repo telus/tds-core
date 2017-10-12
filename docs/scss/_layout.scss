@@ -3,13 +3,8 @@
   flex-direction: column;
 }
 
-.docs--layout-horizontally {
-  display: flex;
-  flex-direction: row;
-}
-
-.docs--horizontal-spacing {
-  > * {
+.docs__horizontal-spacing {
+  div > * {
     margin-right: 1rem;
   }
 }

@@ -15,7 +15,7 @@
 Use the `invert` prop.
 
 ```jsx { "props": { "className": "docs_purple-block" } }
-<div>
-  <Paragraph invert>Order online and save an extra $150.</Paragraph>
-</div>
+<Paragraph invert>
+  Order online and save an extra $150.
+</Paragraph>
 ```
