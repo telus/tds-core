@@ -65,10 +65,14 @@ const togglePanel = (panelKey) => {
 };
 
 <div>
-  <button className="button button--secondary button--link"
-    onClick={() => togglePanel('panel-1')}>Toggle panel #1</button>
-  <button className="button button--secondary button--link"
-    onClick={() => togglePanel('panel-2')}>Toggle panel #2</button>
+  <div style={{marginBottom: 10}}>
+    <Button variant="secondary" onClick={() => togglePanel('panel-1')}>
+      Toggle panel #1
+    </Button>
+    <Button variant="secondary" onClick={() => togglePanel('panel-2')}>
+      Toggle panel #2
+    </Button>
+  </div>
 
   <Group activeKeys={state.activeKeys}>
     <Panel header="Panel #1" panelKey="panel-1">

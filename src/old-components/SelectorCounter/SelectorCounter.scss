@@ -14,6 +14,16 @@
     width: rem(158px);
   }
 
+  &__plain-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+  }
+
   &__button {
     position: absolute;
     right: 15px;

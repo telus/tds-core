@@ -10,14 +10,14 @@ const propTypes = {
   label: PropTypes.string,
   icon: PropTypes.string,
   onClick: PropTypes.func,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 }
 
 const defaultProps = {
   label: 'Change value',
   icon: 'caret-up',
   onClick: () => {},
-  disabled: false
+  disabled: false,
 }
 
 const noop = () => {}
@@ -28,7 +28,7 @@ export default function counterButton(props) {
   return (
     <button
       aria-label={label}
-      className="button--plain selector-counter__button"
+      className="selector-counter__plain-button selector-counter__button"
       onClick={disabled ? noop : onClick}
       disabled={disabled}
       {...extraProps}
