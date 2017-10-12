@@ -20,7 +20,7 @@ Strong.propTypes = {
   /**
    * The text.
    */
-  children: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Strong
