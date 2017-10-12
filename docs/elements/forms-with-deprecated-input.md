@@ -471,33 +471,21 @@ When laying out fields that'll potentially fill the entire viewport, the respons
 
 These limits can be achieved by combining grid column helpers (`.medium-7.large-5.xl-4`) or with the block `.field-col`
 
-<div class="grid-row">
-    <div class="field-col">
-	<fieldset class="field">
-	    <label for="query">What are you looking for?</label>
-	    <input type="text" id="query" placeholder="Smart phones">
-	</fieldset>
+```
+<div>
+  <div className="grid-row">
+    <div className="field-col">
+      <fieldset className="field">
+        <label htmlFor="query">What are you looking for?</label>
+        <input type="text" id="query" placeholder="Smart phones" />
+      </fieldset>
     </div>
-</div>
-<div class="button-row">
-    <button type="submit" class="button button--primary">
-	Search
-    </button>
-</div>
-
-```html
-<div class="grid-row">
-    <div class="field-col">
-	<fieldset class="field">
-	    <label for="query">What are you looking for?</label>
-	    <input type="text" id="query" placeholder="Smart phones">
-	</fieldset>
-    </div>
-</div>
-<div class="button-row">
-    <button type="submit" class="button button--primary">
-	Search
-    </button>
+  </div>
+  <div className="button-row">
+    <Button type="submit" variant="primary">
+      Search
+    </Button>
+  </div>
 </div>
 ```
 
@@ -673,29 +661,35 @@ Hints provide information a user may need to complete a form field. While a labe
 * Toggle the text's `aria-hidden` attribute when the button hides or shows the tooltip.
 
 <div id="example-hint" class="field field--hinted">
-    <label for="hinted-field">Interactive hint</label>
-    <input type="text" id="hinted-field" aria-describedby="some-hint">
-    <div class="hint hint--active">
-	<button class="button--plain hint__trigger" aria-controls="some-hint">
-	    <span class="accessible-hide">Toggle helper text visibility</span>
-	</button>
-	<span id="some-hint" class="hint__text" aria-role="tooltip" aria-hidden="false">
-	    This text describes the field.
-	</span>
-    </div>
+  <label for="hinted-field">Interactive hint</label>
+  <input type="text" id="hinted-field" aria-describedby="some-hint" />
+  
+  <div class="hint hint--active">
+    <button class="hint__trigger" aria-controls="some-hint"
+      style="appearance: none; margin: 0; padding: 0; background: none; border: 0; cursor: pointer;"
+    >
+      <span class="accessible-hide">Toggle helper text visibility</span>
+    </button>
+    <span id="some-hint" class="hint__text" aria-role="tooltip" aria-hidden="false">
+        This text describes the field.
+    </span>
+  </div>
 </div>
 
 ```html
 <div id="example-hint" class="field field--hinted">
-    <label for="hinted-field">Interactive hint</label>
-    <input type="text" id="hinted-field" aria-describedby="some-hint">
-    <div class="hint hint--active">
-	<button class="button--plain hint__trigger" aria-controls="some-hint">
-	    <span class="accessible-hide">Toggle helper text visibility</span>
-	</button>
-	<span id="some-hint" class="hint__text" aria-role="tooltip" aria-hidden="false">
-	    This text describes the field.
-	</span>
-    </div>
+  <label for="hinted-field">Interactive hint</label>
+  <input type="text" id="hinted-field" aria-describedby="some-hint" />
+  
+  <div class="hint hint--active">
+    <button class="hint__trigger" aria-controls="some-hint"
+      style="appearance: none; margin: 0; padding: 0; background: none; border: 0; cursor: pointer;"
+    >
+      <span class="accessible-hide">Toggle helper text visibility</span>
+    </button>
+    <span id="some-hint" class="hint__text" aria-role="tooltip" aria-hidden="false">
+        This text describes the field.
+    </span>
+  </div>
 </div>
 ```
