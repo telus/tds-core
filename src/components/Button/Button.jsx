@@ -1,24 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { warn, deprecate } from '../../utils/warn'
+import { warn } from '../../utils/warn'
 import safeRest from '../../utils/safeRest'
 
 import styles from './Button.modules.scss'
-
-const getClassName = (variant, invert) => {
-  if (variant === 'primary' && invert) {
-    warn('Button', 'Primary buttons cannot be inverted.')
-
-    return styles.primary
-  }
-
-  if (invert) {
-    return styles[`${variant}Inverted`]
-  }
-
-  return styles[variant]
-}
 
 const preventDisabling = ({ disabled, ...props }) => {
   if (disabled) {
@@ -28,25 +14,11 @@ const preventDisabling = ({ disabled, ...props }) => {
   return props
 }
 
-const Button = ({ type, variant, invert, children, ...rest }) => {
+const Button = ({ type, variant, children, ...rest }) => {
   const restNoDisabled = preventDisabling(rest)
 
-  if (invert) {
-    deprecate(
-      'Button',
-      'The invert prop is deprecated. Create an inverted Button with the inverted variant.'
-    )
-  }
-
-  if (variant === 'outlined') {
-    deprecate(
-      'Button',
-      'The outlined variant is deprecated. Create an inverted Button with the inverted variant.'
-    )
-  }
-
   return (
-    <button {...safeRest(restNoDisabled)} type={type} className={getClassName(variant, invert)}>
+    <button {...safeRest(restNoDisabled)} type={type} className={styles[variant]}>
       {children}
     </button>
   )
@@ -60,17 +32,9 @@ Button.propTypes = {
   /**
    * The style.
    *
-   * @since v0.21.0. Added 'inverted' to replace 'outlined'.
+   * @since v0.21.0. Added 'inverted' to replace 'outlined' prop.
    */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'outlined', 'inverted']),
-  /**
-   * Whether or not to invert the variant's color scheme.
-   *
-   * **Note:** Doesn't apply to `primary` variant.
-   *
-   * @deprecated since v0.21.0. Create inverted buttons with the inverted variant.
-   */
-  invert: PropTypes.bool,
+  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
   /**
    * The label.
    */
@@ -79,7 +43,6 @@ Button.propTypes = {
 Button.defaultProps = {
   type: 'button',
   variant: 'primary',
-  invert: false,
 }
 
 export default Button
