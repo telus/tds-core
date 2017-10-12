@@ -1,11 +1,10 @@
-import 'element-closest'
-
 import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import generateId from '../../utils/generateId'
+import closest from './element-closest'
 
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
@@ -66,8 +65,8 @@ class Tooltip extends React.Component {
 
     const { bubbleId, triggerId } = getIds(connectedFieldLabel)
 
-    const inBubble = event.target.closest(`#${bubbleId}`)
-    const inTrigger = event.target.closest(`#${triggerId}`)
+    const inBubble = closest(event.target, `#${bubbleId}`)
+    const inTrigger = closest(event.target, `#${triggerId}`)
 
     if (!inBubble && !inTrigger) {
       this.toggleBubble()
