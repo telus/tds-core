@@ -26,8 +26,8 @@ Specify the `variant` to create a button for secondary actions.
 
 ### Sizes
 
-All buttons are inline, with a minimum width of 180px for screens larger than 768. They will occupy 100% width of their 
-parent's at the small viewport and below. Resize your browser window to see this behaviour.
+All buttons are inline, with a minimum width of 180px for screens larger than 768px. They will occupy 100% width of their 
+parent's width at the small viewport and below. Resize your browser window to see this behaviour.
 
 
 ### Placing buttons on dark backgrounds
