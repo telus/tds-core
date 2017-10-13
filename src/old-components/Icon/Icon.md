@@ -1,7 +1,7 @@
 ## Available icons
 
-```
-<div className="docs--horizontal-spacing">
+```jsx { "props": { "className": "docs__horizontal-spacing" } }
+<div>
   <Icon glyph="caret-down" />
   <Icon glyph="caret-up" />
   <Icon glyph="checkmark" />
@@ -25,8 +25,8 @@
 By default, all icons will inherit the color of the text around them, except for "instructive" icons. Instructive icons
 have special meaning, and are pre-colored.
 
-```
-<div className="docs--horizontal-spacing">
+```jsx { "props": { "className": "docs__horizontal-spacing" } }
+<div>
   <Icon glyph="checkmark" />
   <Icon glyph="exclamation-point-circle" />
   <Icon glyph="incomplete" />
@@ -43,10 +43,10 @@ Use the `variant` prop to alter the icon's color. Each variant has semantic mean
 Indicates a primary or secondary action.
 
 ```
-<div>
+<Text block size="medium">
   <div><Icon glyph="plus" variant="primary" /> Add a user</div>
   <div><Icon glyph="minus" variant="secondary" /> Remove a user</div>
-</div>
+</Text>
 ```
 
 ### Disabled
@@ -54,9 +54,9 @@ Indicates a primary or secondary action.
 Indicates that an action is turned off.
 
 ```
-<div>
+<Text size="medium">
   <Icon glyph="spyglass" variant="disabled" /> Search for a phone
-</div>
+</Text>
 ```
 
 ### Error
@@ -64,21 +64,21 @@ Indicates that an action is turned off.
 Indicates a problem.
 
 ```
-<div>
+<Text size="medium">
   <Icon glyph="location" variant="error" /> Your location needs to be updated
-</div>
+</Text>
 ```
 
 ## Controlling alignment
 
 Use the `fixedWidth` prop when aligning icons vertically.
 
-```
-<div className="docs--layout-vertically">
+```jsx { "props": { "className": "docs__layout-vertically" } }
+<Text block size="medium">
   <span><Icon glyph='hamburger' fixedWidth /> Close the menu</span>
   <span><Icon glyph='chevron' fixedWidth /> Account</span>
   <span><Icon glyph='chevron' fixedWidth /> Sign out</span>
-</div>
+</Text>
 ```
 
 ## Accessibility considerations
@@ -91,9 +91,9 @@ Icons can be either decorative or meaningful.
 This example shows a decorative icon that is hidden from screen readers.
 
 ```
-<p>
+<Paragraph>
   <Icon glyph="location" aria-hidden="true" /> You are located in British Columbia.
-</p>
+</Paragraph>
 ```
 
 **Meaningful icons** have meaning within the context of the page, which should be communicated to screen readers with the
@@ -103,7 +103,7 @@ the `role` prop.
 This example shows a meaningful icon that needs accessibility attributes. (View the code to see the props)
 
 ```
-<p>
+<Paragraph>
   Click the X to close. <Icon glyph="times" role="button" aria-label="Click here to close the dialog." />
-</p>
+</Paragraph>
 ```

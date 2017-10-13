@@ -1,6 +1,8 @@
-.docs--layout-vertically {
-  display: flex;
-  flex-direction: column;
+.docs__layout-vertically {
+  div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .docs__horizontal-spacing {
