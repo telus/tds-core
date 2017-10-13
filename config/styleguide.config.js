@@ -93,10 +93,6 @@ module.exports = {
       content: path.resolve('docs/elements/intro.md'),
       sections: [
         {
-          name: 'Buttons',
-          content: path.resolve('docs/elements/buttons.md'),
-        },
-        {
           name: 'Links',
           content: path.resolve('docs/elements/links.md'),
         },
@@ -123,7 +119,6 @@ module.exports = {
         {
           name: 'Utility icons',
           content: path.resolve('docs/elements/utility-icons-deprecated.md'),
-
         },
         {
           name: 'Utility mixins',
