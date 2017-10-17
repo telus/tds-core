@@ -317,4 +317,11 @@ module.exports = {
     },
     sidebarWidth: 240,
   },
+  styles: {
+    Markdown: {
+      pre: {
+        'overflow-x': 'auto',
+      },
+    },
+  },
 }
