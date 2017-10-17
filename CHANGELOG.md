@@ -1,3 +1,27 @@
+#### 0.25.0 (2017-10-17)
+
+##### Documentation Changes
+
+* **icons:** Fix spacing in Icon examples. ([e3737e73](https://github.com/telusdigital/tds/commit/e3737e7362f108226a74def282eeed51e51fc9b1))
+* **buttons:**
+  * Remove the button styles section ([d2daab78](https://github.com/telusdigital/tds/commit/d2daab785706baddb1785e6b2e3d0df6258811bd))
+  * Remove documentation for button styles ([346f61ee](https://github.com/telusdigital/tds/commit/346f61ee17ac0bb8b3422276e9b34fdcc7d61c20))
+  * Remove usages of button classes from old forms docs ([3054c6d6](https://github.com/telusdigital/tds/commit/3054c6d6079eca01aafacff3e63dbc234a0f713b))
+* **examples:** Move the horizontal spacing class into the class name of the editors ([b3a03f8d](https://github.com/telusdigital/tds/commit/b3a03f8d0000cc00be58d4e7e9f4310e3cca4f29))
+
+##### New Features
+
+* **buttons:**
+  * Remove the button classes ([58c6abb1](https://github.com/telusdigital/tds/commit/58c6abb1aeeb240945c6d1e1c44936546eca7fde))
+  * Switch usages of button classes in the docs to use the Button component ([73c8944c](https://github.com/telusdigital/tds/commit/73c8944cc79f736cc21b7b381c19f218998b3c44))
+  * Remove deprecated invert and variant="outlined" props ([1e952f5a](https://github.com/telusdigital/tds/commit/1e952f5af363ff69d4e158491ab46e0af8efa374))
+
+##### Bug Fixes
+
+* **docs:**
+  * remove horizontal scrolling on mobile viewports ([215fbfe8](https://github.com/telusdigital/tds/commit/215fbfe8a65f5eb4bf4506cee124c8d4fe342f67))
+  * apply overflow to code blocks on mobile ([e1202f47](https://github.com/telusdigital/tds/commit/e1202f476f578142ffea8e86688fa5756c2960d6))
+
 #### 0.24.0 (2017-10-12)
 
 ##### Chores
