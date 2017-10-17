@@ -15,7 +15,7 @@ White is the most dominant colour in our palette and should be the foundation of
 
 For more insight in how we use whitespace and our colour palette, go to [BrandHub](http://brand.telus.com/).
 
-## Buttons/links/headings/body
+## Buttons / links / headings / body
 
 ---
 
@@ -98,7 +98,7 @@ For more insight in how we use whitespace and our colour palette, go to [BrandHu
 </div>
 
 
-## Notifications/messaging/errors
+## Notifications / messaging / errors
 
 These colours are not part of the TELUS brand colour palette, however are used sparingly, but intentionally to play a functional role and support a positive user experience.
 

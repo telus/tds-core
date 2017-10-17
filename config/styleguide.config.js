@@ -323,5 +323,10 @@ module.exports = {
         'overflow-x': 'auto',
       },
     },
+    ReactComponent: {
+      tabs: {
+        'overflow-x': 'auto',
+      },
+    },
   },
 }
