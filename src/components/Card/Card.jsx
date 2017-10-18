@@ -7,7 +7,7 @@ import safeRest from '../../utils/safeRest'
 import styles from './Card.modules.scss'
 
 /**
- * A container that serves as an entry point to more detailed information.
+ * A content container.
  */
 const Card = ({ variant, children, ...rest }) => (
   <Box
@@ -22,6 +22,9 @@ const Card = ({ variant, children, ...rest }) => (
 )
 
 Card.propTypes = {
+  /**
+   * The style.
+   */
   variant: PropTypes.oneOf(['white', 'lavender', 'gray']).isRequired,
   /**
    * The content. Can be text, any HTML element, or any component.
