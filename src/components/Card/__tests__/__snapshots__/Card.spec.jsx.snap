@@ -2,8 +2,8 @@
 
 exports[`<Card /> renders 1`] = `
 <div
-  className="white"
+  class="verticalPadding-3 horizontalPadding-4 white"
 >
-  Some content
+  Children
 </div>
 `;

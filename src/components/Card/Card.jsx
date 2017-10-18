@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Box from '../Box/Box'
 import safeRest from '../../utils/safeRest'
 
 import styles from './Card.modules.scss'
@@ -9,9 +10,15 @@ import styles from './Card.modules.scss'
  * A container that serves as an entry point to more detailed information.
  */
 const Card = ({ variant, children, ...rest }) => (
-  <div {...safeRest(rest)} className={styles[variant]}>
+  <Box
+    {...safeRest(rest)}
+    spacing="padding"
+    horizontal={4}
+    vertical={3}
+    dangerouslyAddClassName={styles[variant]}
+  >
     {children}
-  </div>
+  </Box>
 )
 
 Card.propTypes = {

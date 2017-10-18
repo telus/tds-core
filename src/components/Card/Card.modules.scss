@@ -2,8 +2,6 @@
 
 .card {
   composes: none rounded from '../Borders.modules.scss';
-
-  padding: 30px;
 }
 
 .white {

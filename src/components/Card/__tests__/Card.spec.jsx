@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import Card from '../Card'
@@ -8,23 +8,23 @@ describe('<Card />', () => {
   const doShallow = (props = {}) => shallow(<Card {...props}>Some content</Card>)
 
   it('renders', () => {
-    const card = doShallow()
+    const card = render(<Card>Children</Card>)
 
     expect(toJson(card)).toMatchSnapshot()
   })
 
   it('can be presented as one of the allowed variants', () => {
     let card = doShallow()
-    expect(card).toHaveClassName('white')
+    expect(card.dive()).toHaveClassName('white')
 
     card = doShallow({ variant: 'white' })
-    expect(card).toHaveClassName('white')
+    expect(card.dive()).toHaveClassName('white')
 
     card = doShallow({ variant: 'lavender' })
-    expect(card).toHaveClassName('lavender')
+    expect(card.dive()).toHaveClassName('lavender')
 
     card = doShallow({ variant: 'gray' })
-    expect(card).toHaveClassName('gray')
+    expect(card.dive()).toHaveClassName('gray')
   })
 
   it('passes additional attributes to the input element', () => {
