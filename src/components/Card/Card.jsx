@@ -1,26 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import classNames from 'classnames'
-
 import { deprecate } from '../../utils/warn'
 
-import './Card.scss'
+import styles from './Card.modules.scss'
 
 /**
  * A container that serves as an entry point to more detailed information.
  */
 const Card = ({ className, children, ...rest }) => {
   if (className) {
-    deprecate('Card', 'Custom CSS classes are deprecated. This component does not support custom styling.')
+    deprecate(
+      'Card',
+      'Custom CSS classes are deprecated. This component does not support custom styling.'
+    )
   }
 
   if (rest.style) {
-    deprecate('Card', 'Inline styles are deprecated. This component does not support custom styling.')
+    deprecate(
+      'Card',
+      'Inline styles are deprecated. This component does not support custom styling.'
+    )
   }
 
   return (
-    <div {...rest} className={classNames('card', className)}>
+    <div {...rest} className={styles.card}>
       {children}
     </div>
   )
@@ -35,7 +39,7 @@ Card.propTypes = {
   /**
    * The Card's content. Can be text, any HTML element, or any component.
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Card

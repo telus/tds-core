@@ -2,7 +2,7 @@ import './scss/global.scss'
 
 export { default as Button } from './components/Button/Button'
 export { default as ButtonLink } from './components/Link/ButtonLink/ButtonLink'
-export { default as Card } from './old-components/Card/Card'
+export { default as Card } from './components/Card/Card'
 export { default as ChevronLink } from './components/Link/ChevronLink/ChevronLink'
 export { default as DecorativeIcon } from './components/Icons/DecorativeIcon/DecorativeIcon'
 export { default as DimpleDivider } from './components/Dividers/DimpleDivider/DimpleDivider'

@@ -146,7 +146,7 @@ module.exports = {
         {
           name: 'Content',
           components() {
-            return [path.resolve('src/old-components/Card/Card.jsx')]
+            return [path.resolve('src/components/Card/Card.jsx')]
           },
           sections: compact([
             {
