@@ -1,7 +1,7 @@
 ## Available icons
 
 ```jsx { "props": { "className": "docs__horizontal-spacing" } }
-<div>
+<div className="wrapperExtend">
   <Icon glyph="caret-down" />
   <Icon glyph="caret-up" />
   <Icon glyph="checkmark" />
@@ -26,7 +26,7 @@ By default, all icons will inherit the color of the text around them, except for
 have special meaning, and are pre-colored.
 
 ```jsx { "props": { "className": "docs__horizontal-spacing" } }
-<div>
+<div className="wrapperExtend">
   <Icon glyph="checkmark" />
   <Icon glyph="exclamation-point-circle" />
   <Icon glyph="incomplete" />
@@ -74,11 +74,13 @@ Indicates a problem.
 Use the `fixedWidth` prop when aligning icons vertically.
 
 ```jsx { "props": { "className": "docs__layout-vertically" } }
-<Text block size="medium">
-  <span><Icon glyph='hamburger' fixedWidth /> Close the menu</span>
-  <span><Icon glyph='chevron' fixedWidth /> Account</span>
-  <span><Icon glyph='chevron' fixedWidth /> Sign out</span>
-</Text>
+<div className="wrapperExtend">
+  <Text block size="medium">
+    <span><Icon glyph='hamburger' fixedWidth /> Close the menu</span>
+    <span><Icon glyph='chevron' fixedWidth /> Account</span>
+    <span><Icon glyph='chevron' fixedWidth /> Sign out</span>
+  </Text>
+</div>
 ```
 
 ## Accessibility considerations

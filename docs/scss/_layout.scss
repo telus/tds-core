@@ -1,12 +1,20 @@
 .docs__layout-vertically {
-  div {
+  .wrapper,
+  .wrapperExtend > * {
     display: flex;
     flex-direction: column;
   }
 }
 
+.docs__layout-horizontally {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .docs__horizontal-spacing {
-  div > * {
+  .wrapperExtend > * {
     margin-right: 1rem;
   }
 }

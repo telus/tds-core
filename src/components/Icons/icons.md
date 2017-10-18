@@ -1,7 +1,7 @@
 ### Available icons
 
 ```jsx { "props": { "className": "docs__horizontal-spacing" } }
-<div>
+<div className="wrapperExtend">
   <DecorativeIcon symbol="caretDown" />
   <DecorativeIcon symbol="caretUp" />
   <DecorativeIcon symbol="checkmark" />
@@ -24,7 +24,7 @@
 Use the `variant` prop to alter the icon's colour. Each variant has semantic meaning.
 
 ```jsx { "props": { "className": "docs__horizontal-spacing" } }
-<div>
+<div className="wrapperExtend">
   <DecorativeIcon symbol="checkmark" variant="primary" />
   <DecorativeIcon symbol="times" variant="secondary" />
   <DecorativeIcon symbol="exclamationPointCircle" variant="error" />
@@ -36,7 +36,7 @@ Use the `variant` prop to alter the icon's colour. Each variant has semantic mea
 Use the `size` prop to adjust the icon's size.
 
 ```jsx { "props": { "className": "docs__horizontal-spacing" } }
-<div>
+<div className="wrapperExtend">
   <DecorativeIcon symbol="exclamationPointCircle" size={16} />
   <DecorativeIcon symbol="exclamationPointCircle" size={24} />
 </div>
