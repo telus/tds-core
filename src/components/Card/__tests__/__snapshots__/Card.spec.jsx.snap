@@ -2,7 +2,7 @@
 
 exports[`<Card /> renders 1`] = `
 <div
-  className="card"
+  className="white"
 >
   Some content
 </div>

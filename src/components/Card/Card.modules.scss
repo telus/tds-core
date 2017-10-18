@@ -1,10 +1,26 @@
-@import '../../scss/settings/variables';
+@import '../../scss/settings/colours.scss';
 
 .card {
-  border: 0;
-  box-sizing: border-box;
-  border-radius: 4px;
+  composes: none rounded from '../Borders.modules.scss';
+
+  padding: 30px;
+}
+
+.white {
+  composes: card;
+
   box-shadow: 0 0 16px 0 rgba(213, 213, 213, 0.5);
   background-color: $color-white;
-  padding: 30px;
+}
+
+.lavender {
+  composes: card;
+
+  background-color: $color-lavender-blush;
+}
+
+.gray {
+  composes: card;
+
+  background-color: $color-athens-grey;
 }

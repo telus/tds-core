@@ -13,6 +13,20 @@ describe('<Card />', () => {
     expect(toJson(card)).toMatchSnapshot()
   })
 
+  it('can be presented as one of the allowed variants', () => {
+    let card = doShallow()
+    expect(card).toHaveClassName('white')
+
+    card = doShallow({ variant: 'white' })
+    expect(card).toHaveClassName('white')
+
+    card = doShallow({ variant: 'lavender' })
+    expect(card).toHaveClassName('lavender')
+
+    card = doShallow({ variant: 'gray' })
+    expect(card).toHaveClassName('gray')
+  })
+
   it('passes additional attributes to the input element', () => {
     const card = doShallow({ role: 'some-role', 'data-some-value': 'some value' })
 
