@@ -2,35 +2,28 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import { deprecate } from '../../../utils/warn'
-
 import Card from '../Card'
 
-jest.mock('../../../utils/warn')
-
 describe('<Card />', () => {
+  const doShallow = (props = {}) => shallow(<Card {...props}>Some content</Card>)
+
   it('renders', () => {
-    const card = shallow(<Card>Some content</Card>)
+    const card = doShallow()
 
     expect(toJson(card)).toMatchSnapshot()
   })
 
-  it('passes attributes to DOM node', () => {
-    const card = shallow(
-      <Card id="hello" title="my title">
-        Some content
-      </Card>
-    )
+  it('passes additional attributes to the input element', () => {
+    const card = doShallow({ role: 'some-role', 'data-some-value': 'some value' })
 
-    expect(card).toHaveProp('id', 'hello')
-    expect(card).toHaveProp('title', 'my title')
+    expect(card).toHaveProp('role', 'some-role')
+    expect(card).toHaveProp('data-some-value', 'some value')
   })
 
-  it('accepts but deprecates inline styles', () => {
-    const styles = { color: 'blue' }
-    const card = shallow(<Card style={styles}>Some content</Card>)
+  it('does not allow custom CSS', () => {
+    const card = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
-    expect(card).toHaveProp('style', styles)
-    expect(deprecate).toHaveBeenCalled()
+    expect(card).not.toHaveProp('className', 'my-custom-class')
+    expect(card).not.toHaveProp('style')
   })
 })
