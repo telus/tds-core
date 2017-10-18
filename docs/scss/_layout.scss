@@ -9,12 +9,31 @@
 .docs__layout-horizontally {
   .wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
   }
 }
 
 .docs__horizontal-spacing {
-  .wrapperExtend > * {
+  .wrapperExtend > *,
+  .wrapperExtendHS > * {
     margin-right: 1rem;
+  }
+}
+
+.docs__vertical-spacing {
+  .wrapperExtend > *,
+  .wrapperExtendVS > * {
+    margin-bottom: 1rem;
+  }
+}
+
+.docs__max-width400 {
+  .wrapperExtend > *,
+  .wrapperExtendMW > * {
+    max-width: 400px;
   }
 }

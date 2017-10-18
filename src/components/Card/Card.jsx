@@ -13,8 +13,8 @@ const Card = ({ variant, children, ...rest }) => (
   <Box
     {...safeRest(rest)}
     spacing="padding"
-    horizontal={4}
-    vertical={3}
+    horizontal={3}
+    vertical={4}
     dangerouslyAddClassName={styles[variant]}
   >
     {children}
