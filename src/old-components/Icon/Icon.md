@@ -1,7 +1,7 @@
 ## Available icons
 
-```jsx { "props": { "className": "docs__horizontal-spacing" } }
-<div className="wrapperExtend">
+```jsx { "props": { "className": "docs__simple-horizontal-spacing" } }
+<div className="wrapper">
   <Icon glyph="caret-down" />
   <Icon glyph="caret-up" />
   <Icon glyph="checkmark" />
@@ -25,8 +25,8 @@
 By default, all icons will inherit the color of the text around them, except for "instructive" icons. Instructive icons
 have special meaning, and are pre-colored.
 
-```jsx { "props": { "className": "docs__horizontal-spacing" } }
-<div className="wrapperExtend">
+```jsx { "props": { "className": "docs__simple-horizontal-spacing" } }
+<div className="wrapper">
   <Icon glyph="checkmark" />
   <Icon glyph="exclamation-point-circle" />
   <Icon glyph="incomplete" />
@@ -73,14 +73,12 @@ Indicates a problem.
 
 Use the `fixedWidth` prop when aligning icons vertically.
 
-```jsx { "props": { "className": "docs__layout-vertically" } }
-<div className="wrapperExtend">
-  <Text block size="medium">
-    <span><Icon glyph='hamburger' fixedWidth /> Close the menu</span>
-    <span><Icon glyph='chevron' fixedWidth /> Account</span>
-    <span><Icon glyph='chevron' fixedWidth /> Sign out</span>
-  </Text>
-</div>
+```jsx
+<Text block size="medium">
+  <div><Icon glyph='hamburger' fixedWidth /> Close the menu</div>
+  <div><Icon glyph='chevron' fixedWidth /> Account</div>
+  <div><Icon glyph='chevron' fixedWidth /> Sign out</div>
+</Text>
 ```
 
 ## Accessibility considerations
@@ -93,7 +91,7 @@ Icons can be either decorative or meaningful.
 This example shows a decorative icon that is hidden from screen readers.
 
 ```
-<Paragraph>
+<Paragraph size="medium">
   <Icon glyph="location" aria-hidden="true" /> You are located in British Columbia.
 </Paragraph>
 ```
@@ -105,7 +103,7 @@ the `role` prop.
 This example shows a meaningful icon that needs accessibility attributes. (View the code to see the props)
 
 ```
-<Paragraph>
+<Paragraph size="medium">
   Click the X to close. <Icon glyph="times" role="button" aria-label="Click here to close the dialog." />
 </Paragraph>
 ```
