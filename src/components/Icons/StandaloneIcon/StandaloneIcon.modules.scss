@@ -1,12 +1,17 @@
 .interactive {
-  composes: noSpacing from '../../Spacing.modules.scss';
   composes: none from '../../Borders.modules.scss';
+  // Reset the text color because Safari tries to set its own color for buttons
+  composes: color from '../../Typography/Text/Text.modules.scss';
+
+  // FIXME: Without the 1px padding the icon gets clipped just barely. This is due to the odd sizing/positioning of
+  // the icon font. Can switch to the composes when using SVGs.
+  // composes: noSpacing from '../Spacing.modules.scss';
+  padding: 0 1px;
+  margin: 0;
 
   appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-
   background: none;
+  box-shadow: none;
 
   cursor: pointer;
 }

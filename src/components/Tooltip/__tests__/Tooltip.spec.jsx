@@ -14,7 +14,7 @@ describe('Tooltip', () => {
     shallow(<Tooltip {...overrides}>{children}</Tooltip>)
 
   const findBubble = tooltip => tooltip.find('[data-testid="bubble"]')
-  const findTrigger = tooltip => tooltip.find('button')
+  const findTrigger = tooltip => tooltip.find(StandaloneIcon)
   const toggleBubble = tooltip => findTrigger(tooltip).simulate('click')
 
   it('renders', () => {
@@ -26,9 +26,8 @@ describe('Tooltip', () => {
   it('has a trigger', () => {
     const tooltip = doShallow()
 
-    expect(findTrigger(tooltip)).toContainReact(
-      <StandaloneIcon symbol="questionMarkCircle" a11yText="Reveal additional information." />
-    )
+    expect(findTrigger(tooltip)).toHaveProp('symbol', 'questionMarkCircle')
+    expect(findTrigger(tooltip)).toHaveProp('a11yText', 'Reveal additional information.')
   })
 
   it('has small text in the bubble', () => {

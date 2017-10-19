@@ -10,24 +10,6 @@ $bubble-triangle-height: 10px;
 $bubble-triangle-width: 7px;
 $bubble-triangle-position: $bubble-triangle-width + 5px;
 
-.trigger {
-  composes: none from '../Borders.modules.scss';
-  composes: color from '../Typography/Text/Text.modules.scss';
-
-  // FIXME: Without the 1px padding the icon gets clipped just barely. This is due to the odd sizing/positioning of
-  // the icon font. Can switch to the composes when using SVGs.
-  // composes: noSpacing from '../Spacing.modules.scss';
-  padding: 0 1px;
-
-  background: none;
-  box-shadow: none;
-
-  cursor: pointer;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
 .bubble {
   composes: rounded from '../Borders.modules.scss';
 

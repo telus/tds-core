@@ -22,7 +22,7 @@ exports[`Tooltip renders 1`] = `
     aria-controls="unknown-field_tooltip"
     aria-expanded="false"
     aria-haspopup="true"
-    class="trigger"
+    class="interactive"
     id="unknown-field_trigger"
   >
     <i

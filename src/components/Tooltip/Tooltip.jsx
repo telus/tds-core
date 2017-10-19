@@ -108,19 +108,15 @@ class Tooltip extends React.Component {
       <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>
         {this.renderBubble(bubbleId, direction, this.state.open, children)}
 
-        <button
-          id={triggerId}
-          className={styles.trigger}
+        <StandaloneIcon
+          symbol="questionMarkCircle"
+          a11yText={getTriggerA11yText(connectedFieldLabel)}
           onClick={this.toggleBubble}
+          id={triggerId}
           aria-controls={bubbleId}
           aria-haspopup="true"
           aria-expanded={this.state.open ? 'true' : 'false'}
-        >
-          <StandaloneIcon
-            symbol="questionMarkCircle"
-            a11yText={getTriggerA11yText(connectedFieldLabel)}
-          />
-        </button>
+        />
       </div>
     )
   }
