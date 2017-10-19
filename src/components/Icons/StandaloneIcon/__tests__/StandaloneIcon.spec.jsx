@@ -78,6 +78,26 @@ describe('StandaloneIcon', () => {
       expect(onClickMock).toHaveBeenCalled()
     })
 
+    describe('touch area', () => {
+      it('expands the touch area to be large enough for a finger when the icon is small', () => {
+        let interactiveIcon = doShallow({ size: 16 })
+        expect(interactiveIcon).toHaveStyle('padding', '8px')
+        expect(interactiveIcon).toHaveStyle('margin', '-8px')
+
+        interactiveIcon = doShallow({ size: 24 })
+
+        expect(interactiveIcon).toHaveStyle('padding', '4px')
+        expect(interactiveIcon).toHaveStyle('margin', '-4px')
+      })
+
+      it('does not expand the touch area when the icon is large', () => {
+        const interactiveIcon = doShallow({ size: 48 })
+
+        expect(interactiveIcon).not.toHaveStyle('padding')
+        expect(interactiveIcon).not.toHaveStyle('margin')
+      })
+    })
+
     it('passes additional attributes to the button element', () => {
       const interactiveIcon = doShallow({
         id: 'the-interactiveIcon',
@@ -95,7 +115,7 @@ describe('StandaloneIcon', () => {
       })
 
       expect(interactiveIcon).not.toHaveProp('className', 'my-custom-class')
-      expect(interactiveIcon).not.toHaveProp('style')
+      expect(interactiveIcon).not.toHaveStyle('color', 'hotpink')
     })
   })
 })

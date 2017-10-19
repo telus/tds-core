@@ -2,10 +2,13 @@
 
 Use the `onClick` prop to create an accessible interactive icon.
 
+Interactive icons will have a minimum click/tap area of about 32px, or 8-10mm, to ensure that they can be touched eacily on 
+mobile devices. Take care not to place other elements too close to interactive icons, as the touch area could overlap. 
+
 ```
 <StandaloneIcon 
   symbol="spyglass" 
-  size={48}
+  size={24}
   a11yText="Search this site." 
   onClick={() => console.log("searching...")}
 />

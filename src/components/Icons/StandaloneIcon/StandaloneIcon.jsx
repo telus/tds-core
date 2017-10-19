@@ -7,6 +7,16 @@ import Icon from '../Icon/Icon'
 
 import styles from './StandaloneIcon.modules.scss'
 
+const mobileDeviceTapArea = 32 // https://www.w3.org/TR/mobile-accessibility-mapping/#touch-target-size-and-spacing
+const touchAreaStyles = iconSize => {
+  const length = (mobileDeviceTapArea - iconSize) / 2
+
+  return {
+    padding: `${length}px`,
+    margin: `-${length}px`,
+  }
+}
+
 /**
  * An icon that has meaning within the context of the page, which should be communicated to screen readers.
  *
@@ -21,8 +31,15 @@ const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, ...rest }) =
   }
 
   if (onClick) {
+    const needsExpandedTouchArea = size < mobileDeviceTapArea
+
     return (
-      <button {...safeRest(rest)} onClick={onClick} className={styles.interactive}>
+      <button
+        {...safeRest(rest)}
+        onClick={onClick}
+        className={styles.interactive}
+        style={needsExpandedTouchArea && touchAreaStyles(size)}
+      >
         <Icon {...iconProps} />
       </button>
     )
