@@ -1,6 +1,12 @@
 .interactive {
+  composes: noSpacing from '../../Spacing.modules.scss';
+  composes: none from '../../Borders.modules.scss';
+
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
   background: none;
-  border: 0;
+
   cursor: pointer;
 }

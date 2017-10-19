@@ -1,8 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`StandaloneIcon Interactive StandaloneIcon renders 1`] = `
+<button
+  class="interactive"
+>
+  <i
+    aria-label="Some text for the screen readers."
+    class="iconSpyglass size24"
+  >
+    
+  </i>
+</button>
+`;
+
 exports[`StandaloneIcon Plain StandaloneIcon renders 1`] = `
 <i
-  aria-label="Some screen reader text."
+  aria-label="Some text for the screen readers."
   class="iconSpyglass size24"
 >
   

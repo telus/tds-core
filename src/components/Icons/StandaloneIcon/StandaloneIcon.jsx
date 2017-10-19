@@ -12,28 +12,23 @@ import styles from './StandaloneIcon.modules.scss'
  *
  * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
  */
-class StandaloneIcon extends React.Component {
-  onClick = event => {
-    const {onClick} = this.props
-
-    if (onClick) {
-      onClick(event)
-    }
+const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, ...rest }) => {
+  const iconProps = {
+    symbol,
+    variant,
+    size,
+    'aria-label': a11yText,
   }
 
-  render() {
-    const {symbol, variant, size, interactive, onClick, a11yText, ...rest} = this.props
-
-    if (interactive) {
-      return (
-        <button {...safeRest(rest)} className={styles.interactive} aria-label={a11yText}>
-          <Icon symbol={symbol} variant={variant} size={size} />
-        </button>
-      )
-    }
-
-    return <Icon {...rest} symbol={symbol} variant={variant} size={size} aria-label={a11yText} />
+  if (onClick) {
+    return (
+      <button {...safeRest(rest)} onClick={onClick} className={styles.interactive}>
+        <Icon {...iconProps} />
+      </button>
+    )
   }
+
+  return <Icon {...safeRest(rest)} {...iconProps} />
 }
 
 StandaloneIcon.propTypes = {
@@ -65,12 +60,8 @@ StandaloneIcon.propTypes = {
    */
   size: PropTypes.oneOf([16, 24, 48]),
   /**
-   * Make the icon interactive
+   * Pass a handler to the icon to make it interactive. Wraps the icon with a `<button>`.
    */
-  interactive: PropTypes.bool,
-  /**
-  * A callback function to be invoked when the interactive icon is clicked.
-  */
   onClick: PropTypes.func,
   /**
    * A description of the icon for screen readers.
@@ -81,7 +72,6 @@ StandaloneIcon.propTypes = {
 StandaloneIcon.defaultProps = {
   variant: undefined,
   size: 24,
-  interactive: false,
   onClick: undefined,
 }
 
