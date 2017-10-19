@@ -38,7 +38,7 @@ const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, ...rest }) =
         {...safeRest(rest)}
         onClick={onClick}
         className={styles.interactive}
-        style={needsExpandedTouchArea && touchAreaStyles(size)}
+        style={needsExpandedTouchArea ? touchAreaStyles(size) : undefined}
       >
         <Icon {...iconProps} />
       </button>
