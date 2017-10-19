@@ -288,7 +288,14 @@ module.exports = {
               options: {
                 modules: true,
                 localIdentName: 'TDS_[name]__[local]___[hash:base64:5]',
-                importLoaders: 1, // Number of loaders applied before CSS loader
+                importLoaders: 2, // Number of loaders applied before CSS loader
+              },
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                ident: 'postcss',
+                plugins: [require('autoprefixer')()],
               },
             },
             'sass-loader',
