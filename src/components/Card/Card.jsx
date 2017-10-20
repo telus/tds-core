@@ -9,7 +9,7 @@ import styles from './Card.modules.scss'
 /**
  * A content container.
  */
-const Card = ({ variant, children, ...rest }) => (
+const Card = ({variant, children, ...rest}) => (
   <Box
     {...safeRest(rest)}
     spacing="padding"
@@ -25,7 +25,7 @@ Card.propTypes = {
   /**
    * The style.
    */
-  variant: PropTypes.oneOf(['white', 'lavender', 'gray']).isRequired,
+  variant: PropTypes.oneOf(['white', 'lavender', 'grey']).isRequired,
   /**
    * The content. Can be text, any HTML element, or any component.
    */

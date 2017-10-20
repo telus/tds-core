@@ -16,11 +16,11 @@ Cards will stretch to fill their container. Wrap the card in another element to 
 
 ### Coloured variants
 
-Card also supports a gray or lilac `variant`. These appear flat, while the default white Card appears floating.
+Card also supports a grey or lilac `variant`. These appear flat, while the default white Card appears floating.
 
 ```jsx {"props": {"className": "docs__layout-horizontally"}}
 <div className="wrapper">
-  <Card variant="gray">
+  <Card variant="grey">
     <Heading level="h4">I am new to TELUS.</Heading>
     
     <div style={{ margin: "1rem 0" }}>
@@ -30,7 +30,7 @@ Card also supports a gray or lilac `variant`. These appear flat, while the defau
     <ButtonLink href="#" variant="secondary">Get started</ButtonLink>
   </Card>
   
-  <Card variant="gray">
+  <Card variant="grey">
     <Heading level="h4">I am an existing TELUS customer.</Heading>
     
     <div style={{ margin: "1rem 0" }}>
