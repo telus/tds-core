@@ -18,11 +18,6 @@ Cards will stretch to fill their container. Wrap the card in another element to 
 
 Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while the default white Card appears floating.
 
-Note:
-
-- Headings should use their natural colour
-- Spacing between Headings and content should be `1rem`
-
 ```jsx {"props": {"className": "docs__layout-horizontally"}}
 <div className="wrapper">
   <Card variant="lavender">
