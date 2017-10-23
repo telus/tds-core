@@ -39,29 +39,3 @@ Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while th
   </Card>
 </div>
 ```
-
-```jsx {"props": {"className": "docs__layout-horizontally"}}
-<div className="wrapper">
-  <Card variant="lavender">
-    <Heading level="h4">Holiday deal</Heading>
-    
-    <div style={{display: 'flex', 'align-content': 'flex-start', 'width': '280px'}}>
-      <div style={{'margin-top': '12px'}}>$</div>
-      <div style={{'font-size': '44px'}}>0</div>
-      <div style={{'margin-top': '12px', 'line-height': '1.4', 'font-size': '16px', 'margin-left': '16px'}}>on a 2-year <br/> SharePlus Ultra Plan</div>
-    </div>
-
-  </Card>
-  
-  <Card variant="lavender">
-    <Heading level="h4">Holiday deal</Heading>
-    
-    <div style={{display: 'flex', 'align-content': 'flex-start', 'width': '280px'}}>
-      <div style={{'margin-top': '12px'}}>$</div>
-      <div style={{'font-size': '44px'}}>400</div>
-      <div style={{'margin-top': '12px', 'line-height': '1.4', 'font-size': '16px', 'margin-left': '16px'}}>on a 2-year <br/> SharePlus Ultra Plan</div>
-    </div>
-
-  </Card>
-</div>
-```
