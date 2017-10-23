@@ -16,28 +16,31 @@ Cards will stretch to fill their container. Wrap the card in another element to 
 
 ### Coloured variants
 
-Card also supports a grey or lilac `variant`. These appear flat, while the default white Card appears floating.
+Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while the default white Card appears floating.
+
+Note:
+
+- Headings should use their natural colour
+- Spacing between Headings and content should be `1rem`
 
 ```jsx {"props": {"className": "docs__layout-horizontally"}}
 <div className="wrapper">
-  <Card variant="grey">
-    <Heading level="h4">I am new to TELUS.</Heading>
+  <Card variant="lavender">
+    <Heading level="h4">Holiday deal</Heading>
     
     <div style={{ margin: "1rem 0" }}>
-      <Paragraph size="small">Order Pik TV, Internet and media box.</Paragraph>
+      <Paragraph size="medium">Get a new smartphone for $0<br/>on a 2-year plan.</Paragraph>
     </div>
-    
-    <ButtonLink href="#" variant="secondary">Get started</ButtonLink>
   </Card>
   
   <Card variant="grey">
-    <Heading level="h4">I am an existing TELUS customer.</Heading>
+    <Heading level="h4">Find the right gift</Heading>
     
     <div style={{ margin: "1rem 0" }}>
-      <Paragraph size="small">Add Pik TV to My Account.</Paragraph>
+      <Paragraph>Find something they'll love from our<br/>selection of great devices.</Paragraph>
     </div>
     
-    <ButtonLink href="#" variant="secondary">Continue</ButtonLink>
+    <ChevronLink variant="primary" href="">Explore latest devices</ChevronLink>
   </Card>
 </div>
 ```
