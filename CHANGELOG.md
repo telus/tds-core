@@ -1,3 +1,49 @@
+#### 0.26.0 (2017-10-23)
+
+##### Chores
+
+* **echint:** Ignore .tgz files ([40fd2abd](https://github.com/telusdigital/tds/commit/40fd2abdbab612cb5930c38467a2a109380d44ca))
+
+##### Documentation Changes
+
+* **badges:** Update for v0.26.0 ([777074f3](https://github.com/telusdigital/tds/commit/777074f3f5bfcf12e7f266d3ffc46b6214562949))
+* **card:**
+  * Remove price-lockup example ([bf83b7db](https://github.com/telusdigital/tds/commit/bf83b7dbb8e68426ab0016b605198178d3b56eca))
+  * remove usage notes ([c57418c0](https://github.com/telusdigital/tds/commit/c57418c0ed3b6393c8440a4e52be699819b57cbe))
+  * add coloured examples ([c80c99ad](https://github.com/telusdigital/tds/commit/c80c99ad0901b69ad545010bdd493594f2b83c0b))
+  * Add new card example to match the example on the Sketch file/Jira issue ([a172ed61](https://github.com/telusdigital/tds/commit/a172ed619f8eac0486ff1206085076acaca032fb))
+  * Simplify the docs, especially the wrapper classes. ([4d48312c](https://github.com/telusdigital/tds/commit/4d48312c3372ff229c6fda261301ac148648e80c))
+  * Add missing docs for variant prop ([6b50b5b4](https://github.com/telusdigital/tds/commit/6b50b5b4c58836c6f1f54a8e9364917437da7d36))
+* **standalone-icon:** Fix spelling error ([7e751272](https://github.com/telusdigital/tds/commit/7e751272e1b03bdb80fde094b84d6d56526dad4e))
+* **config:** Add autoprefixing ([ba198f58](https://github.com/telusdigital/tds/commit/ba198f58fc6d8b8d61d267a8ba481f13b391ef02))
+
+##### New Features
+
+* **standalone-icon:**
+  * Expand the touch area of small interactive icons to be at least 32px ([7c16e38c](https://github.com/telusdigital/tds/commit/7c16e38cde4301be6d002d34fb487f9cc80996ce))
+  * Make it interactive when passing onClick ([eebaa004](https://github.com/telusdigital/tds/commit/eebaa00417efab2827360197e0502ce7572920f7))
+  * Add interactivity to icon ([6c609740](https://github.com/telusdigital/tds/commit/6c609740ebfd5e7894615ee11ff54af59a3a7e11))
+* **card:**
+  * adjust padding and lavender variant ([3882851e](https://github.com/telusdigital/tds/commit/3882851e24a6ebdf41dee9fa2a46f754b9f72a09))
+  * replace padding css with box component ([60f835b0](https://github.com/telusdigital/tds/commit/60f835b08ae555acf647683d5cd68659338f9097))
+  * add coloured variants ([54197f81](https://github.com/telusdigital/tds/commit/54197f81b8bc98b7499be7a2519712787788a4c7))
+  * remove deprecated props - remove className and pass all props to safeRest ([398cfc7b](https://github.com/telusdigital/tds/commit/398cfc7bd83b23352a7abe6559c3e8070f36d82c))
+  * use css modules and disallow custom classes - move card to components dir ([dcc8dba2](https://github.com/telusdigital/tds/commit/dcc8dba213ab05b601a3159d3c0e35aa420b9663))
+* **docs:** improve docs css for flex selection ([4249997a](https://github.com/telusdigital/tds/commit/4249997adba866f9ecb5cba2ed76ce4cecdd5e6e))
+
+##### Bug Fixes
+
+* **standalone-icon:** Fix styles for 48px icon. ([e34297c8](https://github.com/telusdigital/tds/commit/e34297c80f107055969a63bd713b8e50b75e21fb))
+* **button:** Make buttons 100% width on mobile ([65ac25ed](https://github.com/telusdigital/tds/commit/65ac25ed8f24844e476043337a1a3b3be08c8c75))
+
+##### Refactors
+
+* **tooltip:** Use interactive standalone icon ([24ef293a](https://github.com/telusdigital/tds/commit/24ef293ae6e57e74e0d29624e269dde3865e9379))
+
+##### Code Style Changes
+
+* **card:** Change gray variant to grey ([817386c8](https://github.com/telusdigital/tds/commit/817386c84cf1321d247abba94ee484ddf10359c3))
+
 #### 0.25.0 (2017-10-17)
 
 ##### Documentation Changes
