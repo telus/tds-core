@@ -20,9 +20,9 @@ const touchAreaStyles = iconSize => {
 /**
  * An icon that has meaning within the context of the page, which should be communicated to screen readers.
  *
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
+ * <span class="docs--badge__updated">updated!</span> <span class="docs--badge__version">v0.26.0</span>
  */
-const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, ...rest }) => {
+const StandaloneIcon = ({symbol, variant, size, onClick, a11yText, ...rest}) => {
   const iconProps = {
     symbol,
     variant,

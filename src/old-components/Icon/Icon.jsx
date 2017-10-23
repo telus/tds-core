@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import { deprecate } from '../../utils/warn'
+import {deprecate} from '../../utils/warn'
 
 /**
  * <span class="docs--badge__deprecated">deprecated</span>
  */
-const Icon = ({ glyph, variant, fixedWidth, size, className, children, ...rest }) => {
+const Icon = ({glyph, variant, fixedWidth, size, className, children, ...rest}) => {
   deprecate(
     'Icon',
     'The Icon component is deprecated and will be remove in a later release. Use DecorativeIcon or Standalone Icon instead.'

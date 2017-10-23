@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { warn } from '../../utils/warn'
+import {warn} from '../../utils/warn'
 import safeRest from '../../utils/safeRest'
 
 import styles from './Button.modules.scss'
 
-const preventDisabling = ({ disabled, ...props }) => {
+const preventDisabling = ({disabled, ...props}) => {
   if (disabled) {
     warn('Button', 'Buttons are not able to be disabled.')
   }
@@ -14,7 +14,7 @@ const preventDisabling = ({ disabled, ...props }) => {
   return props
 }
 
-const Button = ({ type, variant, children, ...rest }) => {
+const Button = ({type, variant, children, ...rest}) => {
   const restNoDisabled = preventDisabling(rest)
 
   return (
@@ -31,8 +31,6 @@ Button.propTypes = {
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
   /**
    * The style.
-   *
-   * @since v0.21.0. Added 'inverted' to replace 'outlined' prop.
    */
   variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
   /**

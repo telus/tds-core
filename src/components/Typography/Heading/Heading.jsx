@@ -7,9 +7,8 @@ import HeadingSub from './HeadingSub/HeadingSub'
 
 import styles from './Heading.modules.scss'
 
-const getColorClassName = level => (
+const getColorClassName = level =>
   level === 'h1' || level === 'h2' ? styles.secondary : styles.default
-)
 
 const getClassName = (level, invert) => {
   const colorClassName = invert ? styles.inverted : getColorClassName(level)
@@ -19,19 +18,16 @@ const getClassName = (level, invert) => {
 
 /**
  * Page headings. Renders an HTML `<h1-h4>` element.
- *
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.22.0</span>
  */
-const Heading = ({ level, invert, children, ...rest }) => (
+const Heading = ({level, invert, children, ...rest}) =>
   React.createElement(
     level,
     {
       ...safeRest(rest),
-      className: getClassName(level, invert)
+      className: getClassName(level, invert),
     },
     children
   )
-)
 Heading.propTypes = {
   /**
    * The heading level.
@@ -44,10 +40,10 @@ Heading.propTypes = {
   /**
    * The text. Can be text, other components, or HTML elements.
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 Heading.defaultProps = {
-  invert: false
+  invert: false,
 }
 
 Heading.Sup = HeadingSup

@@ -11,10 +11,8 @@ import styles from './Text.modules.scss'
 
 /**
  * Inline text as an HTML `<span>` element.
- *
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.22.0</span>
  */
-const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
+const Text = ({block, bold, size, invert, children, ...rest}, context) => {
   const textColor = invert ? styles.invertedColor : styles.color
 
   const classes = joinClassNames(
@@ -27,7 +25,7 @@ const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
     block ? 'div' : 'span',
     {
       ...safeRest(rest),
-      className: classes
+      className: classes,
     },
     children
   )
@@ -46,12 +44,7 @@ Text.propTypes = {
   /**
    * The font size.
    */
-  size: PropTypes.oneOf([
-    'base',
-    'small',
-    'medium',
-    'large'
-  ]),
+  size: PropTypes.oneOf(['base', 'small', 'medium', 'large']),
   /**
    * Invert the text color to appear light on dark backgrounds.
    */
@@ -59,18 +52,18 @@ Text.propTypes = {
   /**
    * The content. Can be text, other components, or HTML elements.
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 Text.defaultProps = {
   block: false,
   bold: false,
   size: 'base',
-  invert: false
+  invert: false,
 }
 
 Text.contextTypes = {
-  inheritColor: PropTypes.bool
+  inheritColor: PropTypes.bool,
 }
 
 Text.Sup = TextSup
