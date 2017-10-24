@@ -93,10 +93,6 @@ module.exports = {
       content: path.resolve('docs/elements/intro.md'),
       sections: [
         {
-          name: 'Links',
-          content: path.resolve('docs/elements/links.md'),
-        },
-        {
           name: 'Colours',
           content: path.resolve('docs/elements/colours.md'),
         },
