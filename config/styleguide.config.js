@@ -1,5 +1,5 @@
 const path = require('path')
-const { version } = require('../package.json')
+const {version} = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
@@ -262,7 +262,31 @@ module.exports = {
   require: [path.resolve('src/scss/global.scss'), path.resolve('docs/scss/styleguide.scss')],
   styleguideComponents: {
     Logo: path.resolve('docs/components/Logo/Logo'),
-    Markdown: path.resolve('docs/components/Markdown/Markdown.js'),
+    Markdown: path.resolve('docs/components/Markdown/Markdown'),
+    SectionHeadingRenderer: path.resolve('docs/components/SectionHeading/SectionHeadingRenderer'),
+  },
+  theme: {
+    fontFamily: {
+      base: ['TELUS-Web', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+    },
+    color: {
+      link: '#4B286D',
+      linkHover: '#54595F',
+      sidebarBackground: '#FFFFFF',
+    },
+    sidebarWidth: 240,
+  },
+  styles: {
+    Markdown: {
+      pre: {
+        'overflow-x': 'auto',
+      },
+    },
+    ReactComponent: {
+      tabs: {
+        'overflow-x': 'auto',
+      },
+    },
   },
   webpackConfig: {
     devServer: {
@@ -307,29 +331,6 @@ module.exports = {
           use: 'url-loader',
         },
       ],
-    },
-  },
-  theme: {
-    fontFamily: {
-      base: ['TELUS-Web', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-    },
-    color: {
-      link: '#4B286D',
-      linkHover: '#54595F',
-      sidebarBackground: '#FFFFFF',
-    },
-    sidebarWidth: 240,
-  },
-  styles: {
-    Markdown: {
-      pre: {
-        'overflow-x': 'auto',
-      },
-    },
-    ReactComponent: {
-      tabs: {
-        'overflow-x': 'auto',
-      },
     },
   },
 }
