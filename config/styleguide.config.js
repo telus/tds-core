@@ -89,44 +89,6 @@ module.exports = {
       ],
     },
     {
-      name: 'Foundational elements',
-      content: path.resolve('docs/elements/intro.md'),
-      sections: [
-        {
-          name: 'Colours',
-          content: path.resolve('docs/elements/colours.md'),
-        },
-        {
-          name: 'Forms',
-          content: path.resolve('docs/elements/forms-with-deprecated-input.md'),
-        },
-        {
-          name: 'Grid',
-          content: path.resolve('docs/elements/grid.md'),
-        },
-        {
-          name: 'Lists',
-          content: path.resolve('docs/elements/lists-deprecated.md'),
-        },
-        {
-          name: 'Typography',
-          content: path.resolve('docs/elements/typography.md'),
-        },
-        {
-          name: 'Utility icons',
-          content: path.resolve('docs/elements/utility-icons-deprecated.md'),
-        },
-        {
-          name: 'Utility mixins',
-          content: path.resolve('docs/elements/utility-mixins.md'),
-        },
-        {
-          name: 'Design tokens',
-          content: path.resolve('docs/elements/design-tokens.md'),
-        },
-      ],
-    },
-    {
       name: 'Components',
       sections: [
         {
@@ -251,6 +213,44 @@ module.exports = {
               path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx'),
             ])
           },
+        },
+      ],
+    },
+    {
+      name: 'Foundational elements',
+      content: path.resolve('docs/elements/intro.md'),
+      sections: [
+        {
+          name: 'Colours',
+          content: path.resolve('docs/elements/colours.md'),
+        },
+        {
+          name: 'Forms',
+          content: path.resolve('docs/elements/forms-with-deprecated-input.md'),
+        },
+        {
+          name: 'Grid',
+          content: path.resolve('docs/elements/grid.md'),
+        },
+        {
+          name: 'Lists',
+          content: path.resolve('docs/elements/lists-deprecated.md'),
+        },
+        {
+          name: 'Typography',
+          content: path.resolve('docs/elements/typography.md'),
+        },
+        {
+          name: 'Utility icons',
+          content: path.resolve('docs/elements/utility-icons-deprecated.md'),
+        },
+        {
+          name: 'Utility mixins',
+          content: path.resolve('docs/elements/utility-mixins.md'),
+        },
+        {
+          name: 'Design tokens',
+          content: path.resolve('docs/elements/design-tokens.md'),
         },
       ],
     },
