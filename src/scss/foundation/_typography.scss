@@ -26,7 +26,7 @@ body {
   @include from-breakpoint(medium) {
     font-size: rem(72px);
     line-height: 1.11; // 80px
-    letter-spacing: .2px;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -50,7 +50,7 @@ body {
   font-weight: 400;
   font-size: rem(24px);
   line-height: 1.33; // 30px
-  letter-spacing: -.4px;
+  letter-spacing: -0.4px;
   color: $color-secondary;
   margin-bottom: baseline-margin(40px);
 
@@ -58,7 +58,7 @@ body {
     font-weight: 400;
     font-size: rem(28px);
     line-height: 1.29; // 36px
-    letter-spacing: -.8px;
+    letter-spacing: -0.8px;
   }
 }
 
@@ -66,7 +66,7 @@ body {
   font-weight: 700;
   font-size: rem(20px);
   line-height: 1.4; // 28px
-  letter-spacing: -.6px;
+  letter-spacing: -0.6px;
   color: $color-shark;
   margin-bottom: baseline-margin(48px);
 }
@@ -74,7 +74,7 @@ body {
 %h4 {
   font-weight: 700;
   font-size: rem(16px);
-  letter-spacing: -.6px;
+  letter-spacing: -0.6px;
   color: $color-shark;
   line-height: 1.25; // 20px
   margin-bottom: baseline-margin(40px);
@@ -106,7 +106,7 @@ body {
 %text--medium {
   font-size: rem($body-medium-text-size);
   line-height: $body-medium-line-height;
-  letter-spacing: -.8px;
+  letter-spacing: -0.8px;
 }
 
 %text--small {
@@ -117,7 +117,7 @@ body {
   @include from-breakpoint(medium) {
     font-size: rem($body-small-text-size);
     line-height: $body-small-line-height; // 24px;
-    letter-spacing: -.6px;
+    letter-spacing: -0.6px;
   }
 }
 
@@ -129,7 +129,7 @@ body {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-  top: -.5em;
+  top: -0.5em;
 }
 
 %text--sub {
@@ -137,7 +137,7 @@ body {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 .heading-1 {
@@ -211,10 +211,6 @@ body {
 
   p {
     @extend %paragraph;
-
-    a {
-      text-decoration: underline;
-    }
   }
 
   small {
