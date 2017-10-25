@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarkdownHeading renders 1`] = `
+<Box
+  bottom={3}
+  inline={false}
+  spacing="margin"
+>
+  <Heading
+    invert={false}
+    level="h1"
+  >
+    Random Heading
+  </Heading>
+</Box>
+`;

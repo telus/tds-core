@@ -1,37 +1,39 @@
 /* eslint-disable */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import { compiler } from 'markdown-to-jsx';
-import mapValues from 'lodash/mapValues';
+import React from 'react'
+import PropTypes from 'prop-types'
+import {compiler} from 'markdown-to-jsx'
+import mapValues from 'lodash/mapValues'
 // import memoize from 'lodash/memoize';
-import Styled from 'react-styleguidist/lib/rsg-components/Styled';
+import Styled from 'react-styleguidist/lib/rsg-components/Styled'
 
-import { styles as paraStyles } from 'react-styleguidist/lib/rsg-components/Para';
+import {styles as paraStyles} from 'react-styleguidist/lib/rsg-components/Para'
 
 import Link from '../../../src/components/Link/Link'
+// import Heading from '../../../src/components/Typography/Heading/Heading'
+import MarkdownHeading from '../MarkdownHeading/MarkdownHeading'
 
 // We’re explicitly specifying Webpack loaders here so we could skip specifying them in Webpack configuration.
 // That way we could avoid clashes between our loaders and user loaders.
 // eslint-disable-next-line import/no-unresolved
-require('!!react-styleguidist/loaders/style-loader!react-styleguidist/loaders/css-loader!highlight.js/styles/tomorrow.css');
+require('!!react-styleguidist/loaders/style-loader!react-styleguidist/loaders/css-loader!highlight.js/styles/tomorrow.css')
 
 // Temporary disable memoization to fix: https://github.com/styleguidist/react-styleguidist/issues/348
 // TODO: Remove after merge: https://github.com/probablyup/markdown-to-jsx/pull/96
-const memoize = a => a;
+const memoize = a => a
 
 // Code blocks with server-side syntax highlight
-function Code({ children, className }) {
-  const isHighlighted = className && className.indexOf('lang-') !== -1;
+function Code({children, className}) {
+  const isHighlighted = className && className.indexOf('lang-') !== -1
   if (isHighlighted) {
-    return <code className={className} dangerouslySetInnerHTML={{ __html: children }} />;
+    return <code className={className} dangerouslySetInnerHTML={{__html: children}} />
   }
-  return <code className={className}>{children}</code>;
+  return <code className={className}>{children}</code>
 }
 Code.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-};
+}
 
 // Custom CSS classes for each tag: <em> → <em className={s.em}> + custom components
 const getBaseOverrides = memoize(classes => {
@@ -39,12 +41,40 @@ const getBaseOverrides = memoize(classes => {
     props: {
       className: value,
     },
-  }));
+  }))
 
   return {
     ...styleOverrides,
     a: {
-      component: Link
+      component: Link,
+    },
+    h1: {
+      component: MarkdownHeading,
+      props: {
+        level: 'h1',
+        spacing: 3,
+      },
+    },
+    h2: {
+      component: MarkdownHeading,
+      props: {
+        level: 'h2',
+        spacing: 3,
+      },
+    },
+    h3: {
+      component: MarkdownHeading,
+      props: {
+        level: 'h3',
+        spacing: 3,
+      },
+    },
+    h4: {
+      component: MarkdownHeading,
+      props: {
+        level: 'h4',
+        spacing: 3,
+      },
     },
     code: {
       component: Code,
@@ -52,12 +82,12 @@ const getBaseOverrides = memoize(classes => {
         className: classes.code,
       },
     },
-  };
-}, () => 'getBaseOverrides');
+  }
+}, () => 'getBaseOverrides')
 
 // Inline mode: replace <p> (usual root component) with <span>
 const getInlineOverrides = memoize(classes => {
-  const overrides = getBaseOverrides(classes);
+  const overrides = getBaseOverrides(classes)
 
   return {
     ...overrides,
@@ -67,37 +97,37 @@ const getInlineOverrides = memoize(classes => {
         className: classes.base,
       },
     },
-  };
-}, () => 'getInlineOverrides');
+  }
+}, () => 'getInlineOverrides')
 
-const styles = ({ space, fontFamily, fontSize, color, borderRadius }) => ({
+const styles = ({space, fontFamily, fontSize, color, borderRadius}) => ({
   base: {
     color: color.base,
     fontFamily: fontFamily.base,
     fontSize: 'inherit',
   },
-  para: paraStyles({ space, color, fontFamily }).para,
+  para: paraStyles({space, color, fontFamily}).para,
   // a: linkStyles({ color }).link,
-  h1: {
-    composes: '$para',
-    fontSize: fontSize.h1,
-    fontWeight: 'normal',
-  },
-  h2: {
-    composes: '$para',
-    fontSize: fontSize.h2,
-    fontWeight: 'normal',
-  },
-  h3: {
-    composes: '$para',
-    fontSize: fontSize.h3,
-    fontWeight: 'normal',
-  },
-  h4: {
-    composes: '$para',
-    fontSize: fontSize.h4,
-    fontWeight: 'normal',
-  },
+  // h1: {
+  //   composes: '$para',
+  //   fontSize: fontSize.h1,
+  //   fontWeight: 'normal',
+  // },
+  // h2: {
+  //   composes: '$para',
+  //   fontSize: fontSize.h2,
+  //   fontWeight: 'normal',
+  // },
+  // h3: {
+  //   composes: '$para',
+  //   fontSize: fontSize.h3,
+  //   fontWeight: 'normal',
+  // },
+  // h4: {
+  //   composes: '$para',
+  //   fontSize: fontSize.h4,
+  //   fontWeight: 'normal',
+  // },
   h5: {
     composes: '$para',
     fontSize: fontSize.h5,
@@ -185,17 +215,17 @@ const styles = ({ space, fontFamily, fontSize, color, borderRadius }) => ({
     fontWeight: 'bold',
   },
   tr: {},
-});
+})
 
-function Markdown({ classes, text, inline }) {
-  const overrides = inline ? getInlineOverrides(classes) : getBaseOverrides(classes);
-  return compiler(text, { overrides });
+function Markdown({classes, text, inline}) {
+  const overrides = inline ? getInlineOverrides(classes) : getBaseOverrides(classes)
+  return compiler(text, {overrides})
 }
 
 Markdown.propTypes = {
   classes: PropTypes.object.isRequired,
   text: PropTypes.string.isRequired,
   inline: PropTypes.bool,
-};
+}
 
-export default Styled(styles)(Markdown);
+export default Styled(styles)(Markdown)
