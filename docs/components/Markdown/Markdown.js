@@ -14,6 +14,8 @@ import Text from '../../../src/components/Typography/Text/Text'
 import Strong from '../../../src/components/Typography/Strong/Strong'
 import MarkdownHeading from '../MarkdownHeading/MarkdownHeading'
 import MarkdownParagraph from '../MarkdownParagraph/MarkdownParagraph'
+import MarkdownUnorderedList from '../MarkdownUnorderedList/MarkdownUnorderedList'
+import MarkdownOrderedList from '../MarkdownOrderedList/MarkdownOrderedList'
 
 // We’re explicitly specifying Webpack loaders here so we could skip specifying them in Webpack configuration.
 // That way we could avoid clashes between our loaders and user loaders.
@@ -89,6 +91,12 @@ const getBaseOverrides = memoize(classes => {
         level: 'h4',
       },
     },
+    ul: {
+      component: MarkdownUnorderedList,
+    },
+    ol: {
+      component: MarkdownOrderedList,
+    },
     strong: {
       component: Strong,
     },
@@ -120,19 +128,6 @@ const styles = ({space, fontFamily, fontSize, color, borderRadius}) => ({
     fontSize: 'inherit',
   },
   para: paraStyles({space, color, fontFamily}).para,
-  ul: {
-    composes: '$para',
-    paddingLeft: space[3],
-  },
-  ol: {
-    composes: '$para',
-    listStyleType: 'decimal',
-    paddingLeft: space[3],
-  },
-  li: {
-    composes: '$base',
-    listStyleType: 'inherit',
-  },
   input: {
     color: color.base,
     display: 'inline-block',
