@@ -277,6 +277,7 @@ module.exports = {
     sidebarWidth: 240,
   },
   styles: {
+    // Fixing mobile overflow of code examples
     Markdown: {
       pre: {
         'overflow-x': 'auto',
@@ -285,6 +286,30 @@ module.exports = {
     ReactComponent: {
       tabs: {
         'overflow-x': 'auto',
+      },
+    },
+    // [TDS-381] Increase font size in props tables to match default Paragraph size.
+    Table: {
+      cell: {
+        fontSize: '1rem',
+      },
+      cellHeading: {
+        fontSize: '1rem',
+      },
+    },
+    Name: {
+      name: {
+        fontSize: 'inherit',
+      },
+    },
+    Type: {
+      type: {
+        fontSize: 'inherit',
+      },
+    },
+    Text: {
+      text: {
+        fontSize: 'inherit',
       },
     },
   },
