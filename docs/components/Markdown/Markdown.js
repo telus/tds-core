@@ -10,6 +10,7 @@ import Styled from 'react-styleguidist/lib/rsg-components/Styled'
 import {styles as paraStyles} from 'react-styleguidist/lib/rsg-components/Para'
 
 import Link from '../../../src/components/Link/Link'
+import Text from '../../../src/components/Typography/Text/Text'
 import MarkdownHeading from '../MarkdownHeading/MarkdownHeading'
 import MarkdownParagraph from '../MarkdownParagraph/MarkdownParagraph'
 
@@ -55,28 +56,36 @@ const getBaseOverrides = memoize(classes => {
       component: MarkdownHeading,
       props: {
         level: 'h1',
-        spacing: 3,
       },
     },
     h2: {
       component: MarkdownHeading,
       props: {
         level: 'h2',
-        spacing: 3,
       },
     },
     h3: {
       component: MarkdownHeading,
       props: {
         level: 'h3',
-        spacing: 3,
       },
     },
     h4: {
       component: MarkdownHeading,
       props: {
         level: 'h4',
-        spacing: 3,
+      },
+    },
+    h5: {
+      component: MarkdownHeading,
+      props: {
+        level: 'h4',
+      },
+    },
+    h6: {
+      component: MarkdownHeading,
+      props: {
+        level: 'h4',
       },
     },
     code: {
@@ -95,10 +104,7 @@ const getInlineOverrides = memoize(classes => {
   return {
     ...overrides,
     p: {
-      component: 'span',
-      props: {
-        className: classes.base,
-      },
+      component: Text,
     },
   }
 }, () => 'getInlineOverrides')
@@ -110,20 +116,6 @@ const styles = ({space, fontFamily, fontSize, color, borderRadius}) => ({
     fontSize: 'inherit',
   },
   para: paraStyles({space, color, fontFamily}).para,
-  h5: {
-    composes: '$para',
-    fontSize: fontSize.h5,
-    fontWeight: 'normal',
-  },
-  h6: {
-    composes: '$para',
-    fontSize: fontSize.h6,
-    fontWeight: 'normal',
-    fontStyle: 'italic',
-  },
-  p: {
-    composes: '$para',
-  },
   ul: {
     composes: '$para',
     paddingLeft: space[3],
