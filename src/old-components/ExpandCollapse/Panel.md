@@ -21,10 +21,10 @@ Accordion is a special kind of Collapse, which allows only one panel to be expan
 ```
 <Group accordion>
   <Panel header="Specs">
-    <p>A fast CPU, a striking GPU.</p>
+    A fast CPU, a striking GPU.
   </Panel>
   <Panel header="Colours">
-    <p>Everything from tulips to crimsons.</p>
+    Everything from tulips to crimsons.
   </Panel>
 </Group>
 ```

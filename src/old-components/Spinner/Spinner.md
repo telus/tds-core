@@ -21,8 +21,8 @@ Wrap the `Spinner` around the content to use embedded mode.
 ```
 <Spinner spinning>
   <section>
-    <h3>Current Bill</h3>
-    <p>View your latest bill here.</p>
+    <Heading level="h3">Current Bill</Heading>
+    <Paragraph>View your latest bill here.</Paragraph>
   </section>
 </Spinner>
 ```

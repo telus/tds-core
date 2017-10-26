@@ -65,8 +65,7 @@ const handleSubmit = (e) => {
 const successful = state.succeeded;
 const invalid = (state.curr === 5);
 
-const listError = invalid? 'list--error':'';
-const listChecked = successful? 'list--checked':'';
+const listType = invalid? 'x': 'checkmark';
 
 const fieldError = invalid? 'field--error':'';
 const fieldSuccess = successful? 'field--success':'';
@@ -78,10 +77,10 @@ const helperSuccess = successful? 'helper--success':'';
   <div className={`field ${fieldError} ${fieldSuccess}`}>
     <label htmlFor="ex-selcounter">How many smartphone plans?</label>
     <div id="ex-selcounter-desc">
-      <p className="text--small">Instructions</p>
-      <ul className={`list list--compact ${listError} ${listChecked}`}>
-        <li className="list__item">Do not pick 5</li>
-      </ul>
+      <Paragraph size="small">Instructions</Paragraph>
+      <UnorderedList listStyle={listType}>
+        <UnorderedList.Item >Do not pick 5</UnorderedList.Item>
+      </UnorderedList>
     </div>
     <SelectorCounter
       ref={(counter) => this.counter = counter}
