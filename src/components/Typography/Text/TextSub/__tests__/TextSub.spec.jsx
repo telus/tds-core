@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import TextSub from '../TextSub'
 
@@ -12,7 +12,7 @@ describe('TextSub', () => {
   it('renders', () => {
     const textSub = doShallow()
 
-    expect(toJson(textSub)).toMatchSnapshot()
+    expect(textSub).toMatchSnapshot()
   })
 
   it('renders an HTML sub tag', () => {

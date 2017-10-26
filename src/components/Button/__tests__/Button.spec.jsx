@@ -1,6 +1,5 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
 
 import { warn } from '../../../utils/warn'
 
@@ -18,7 +17,7 @@ describe('Button', () => {
   it('renders', () => {
     const button = doShallow()
 
-    expect(toJson(button)).toMatchSnapshot()
+    expect(button).toMatchSnapshot()
   })
 
   it('has one of the HTML button types', () => {

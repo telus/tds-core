@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render, mount } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
@@ -20,7 +20,7 @@ describe('Tooltip', () => {
   it('renders', () => {
     const tooltip = render(<Tooltip>Helper text</Tooltip>)
 
-    expect(toJson(tooltip)).toMatchSnapshot()
+    expect(tooltip).toMatchSnapshot()
   })
 
   it('has a trigger', () => {

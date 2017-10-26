@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import UnorderedList from '../UnorderedList'
 
@@ -22,7 +22,7 @@ describe('<UnorderedList />', () => {
   it('renders', () => {
     const unorderedList = doRender()
 
-    expect(toJson(unorderedList)).toMatchSnapshot()
+    expect(unorderedList).toMatchSnapshot()
   })
 
   it('renders an HTML ul tag', () => {

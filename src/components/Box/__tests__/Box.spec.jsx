@@ -1,6 +1,5 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+import { shallow } from 'enzyme'
 
 import Box from '../Box'
 
@@ -17,17 +16,10 @@ describe('Box', () => {
       </Box>
     )
 
-  const doRender = (props = {}) =>
-    render(
-      <Box {...defaultProps} {...props}>
-        Some content
-      </Box>
-    )
-
   it('renders', () => {
-    const box = doRender()
+    const box = doShallow()
 
-    expect(toJson(box)).toMatchSnapshot()
+    expect(box).toMatchSnapshot()
   })
 
   it('can have padding or margin', () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import Strong from '../Strong'
 
@@ -12,7 +12,7 @@ describe('Strong', () => {
   it('renders', () => {
     const strong = doShallow()
 
-    expect(toJson(strong)).toMatchSnapshot()
+    expect(strong).toMatchSnapshot()
   })
 
   it('renders an HTML strong tag', () => {

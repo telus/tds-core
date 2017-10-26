@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
@@ -22,13 +22,13 @@ describe('Input', () => {
   it('renders', () => {
     const input = doRender()
 
-    expect(toJson(input)).toMatchSnapshot()
+    expect(input).toMatchSnapshot()
   })
 
   it('renders with a feedback state and icon', () => {
     const input = doRender({ feedback: 'error' })
 
-    expect(toJson(input)).toMatchSnapshot()
+    expect(input).toMatchSnapshot()
   })
 
   it('supports different input types', () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import { warn } from '../../../../utils/warn'
 
@@ -22,7 +22,7 @@ describe('ChevronLink', () => {
   it('renders', () => {
     const link = render(<ChevronLink href="test.com">Go home</ChevronLink>)
 
-    expect(toJson(link)).toMatchSnapshot()
+    expect(link).toMatchSnapshot()
   })
 
   it('is an anchor HTML element when using the href attribute', () => {

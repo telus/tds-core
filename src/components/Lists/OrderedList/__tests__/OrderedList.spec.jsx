@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import OrderedList from '../OrderedList'
 
@@ -22,7 +22,7 @@ describe('<OrderedList />', () => {
   it('renders', () => {
     const orderedList = doRender()
 
-    expect(toJson(orderedList)).toMatchSnapshot()
+    expect(orderedList).toMatchSnapshot()
   })
 
   it('OrderList renders an HTML ol tag', () => {

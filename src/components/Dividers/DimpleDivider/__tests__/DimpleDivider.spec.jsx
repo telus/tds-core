@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import DimpleDivider from '../DimpleDivider'
 
@@ -10,7 +10,7 @@ describe('DimpleDivider', () => {
   it('renders', () => {
     const dimpleDivider = render(<DimpleDivider />)
 
-    expect(toJson(dimpleDivider)).toMatchSnapshot()
+    expect(dimpleDivider).toMatchSnapshot()
   })
 
   it('is an HTML <hr> element', () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import { warn } from '../../../../utils/warn'
 
@@ -18,7 +18,7 @@ describe('ButtonLink', () => {
   it('renders', () => {
     const link = doShallow()
 
-    expect(toJson(link)).toMatchSnapshot()
+    expect(link).toMatchSnapshot()
   })
 
   it('is an anchor HTML element when using the href attribute', () => {

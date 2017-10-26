@@ -2,7 +2,7 @@
 
 exports[`Box renders 1`] = `
 <div
-  class="verticalPadding-2"
+  className="verticalPadding-2"
 >
   Some content
 </div>

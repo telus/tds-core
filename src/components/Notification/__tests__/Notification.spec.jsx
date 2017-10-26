@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
@@ -20,7 +20,7 @@ describe('<Notification />', () => {
   it('renders', () => {
     const notification = doRender()
 
-    expect(toJson(notification)).toMatchSnapshot()
+    expect(notification).toMatchSnapshot()
   })
 
   it('can have a variant', () => {

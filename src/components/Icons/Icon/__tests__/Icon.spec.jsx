@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import Icon from '../Icon'
 
@@ -12,7 +12,7 @@ describe('Icon', () => {
 
   it('renders', () => {
     const icon = doShallow()
-    expect(toJson(icon)).toMatchSnapshot()
+    expect(icon).toMatchSnapshot()
   })
 
   it('renders an HTML i tag', () => {

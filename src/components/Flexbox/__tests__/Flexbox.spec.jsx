@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import Flexbox from '../Flexbox'
 
@@ -15,7 +15,7 @@ describe('Flexbox', () => {
   it('renders', () => {
     const flexbox = doShallow()
 
-    expect(toJson(flexbox)).toMatchSnapshot()
+    expect(flexbox).toMatchSnapshot()
   })
 
   it('can be a flex row or column', () => {

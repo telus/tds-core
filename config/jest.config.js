@@ -13,4 +13,5 @@ module.exports = {
     path.resolve('config/jest/setupEnzyme.js'),
   ],
   setupTestFrameworkScriptFile: path.resolve('node_modules/jest-enzyme/lib/index.js'),
+  snapshotSerializers: ['enzyme-to-json/serializer'],
 }

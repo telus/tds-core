@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import Helper from '../Helper'
 
@@ -16,7 +16,7 @@ describe('Helper', () => {
   it('renders', () => {
     const helper = doRender()
 
-    expect(toJson(helper)).toMatchSnapshot()
+    expect(helper).toMatchSnapshot()
   })
 
   it('can have a feedback state', () => {

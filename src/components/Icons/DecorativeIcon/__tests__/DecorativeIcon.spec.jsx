@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import DecorativeIcon from '../DecorativeIcon'
 
@@ -12,7 +12,8 @@ describe('DecorativeIcon', () => {
 
   it('renders', () => {
     const icon = render(<DecorativeIcon symbol="spyglass" />)
-    expect(toJson(icon)).toMatchSnapshot()
+
+    expect(icon).toMatchSnapshot()
   })
 
   it('passes attributes to the Icon component', () => {

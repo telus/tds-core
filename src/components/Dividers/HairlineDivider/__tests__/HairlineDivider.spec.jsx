@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import HairlineDivider from '../HairlineDivider'
 
@@ -10,7 +10,7 @@ describe('HairlineDivider', () => {
   it('renders', () => {
     const hairlineDivider = render(<HairlineDivider />)
 
-    expect(toJson(hairlineDivider)).toMatchSnapshot()
+    expect(hairlineDivider).toMatchSnapshot()
   })
 
   it('is an HTMl hr element', () => {

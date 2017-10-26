@@ -1,6 +1,5 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
 
 import $COMPONENT$ from '../$COMPONENT$'
 
@@ -10,7 +9,7 @@ describe('$COMPONENT$', () => {
   it('renders', () => {
     const $COMPONENT_CAMEL$ = render(<$COMPONENT$ />)
 
-    expect(toJson($COMPONENT_CAMEL$)).toMatchSnapshot()
+    expect($COMPONENT_CAMEL$).toMatchSnapshot()
   })
 
   it('does other things', () => {
@@ -27,7 +26,10 @@ describe('$COMPONENT$', () => {
   })
 
   it('does not allow custom CSS', () => {
-    const $COMPONENT_CAMEL$ = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const $COMPONENT_CAMEL$ = doShallow({
+      className: 'my-custom-class',
+      style: { color: 'hotpink' },
+    })
 
     expect($COMPONENT_CAMEL$).not.toHaveProp('className', 'my-custom-class')
     expect($COMPONENT_CAMEL$).not.toHaveProp('style')

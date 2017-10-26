@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import DisplayHeadingSup from '../DisplayHeadingSup'
 
@@ -12,7 +12,7 @@ describe('DisplayHeadingSup', () => {
   it('renders', () => {
     const displayHeadingSup = doShallow()
 
-    expect(toJson(displayHeadingSup)).toMatchSnapshot()
+    expect(displayHeadingSup).toMatchSnapshot()
   })
 
   it('renders an HTML sub tag', () => {

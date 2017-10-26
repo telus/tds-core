@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import StandaloneIcon from '../StandaloneIcon'
 
@@ -14,7 +14,7 @@ describe('StandaloneIcon', () => {
 
     it('renders', () => {
       const icon = render(<StandaloneIcon {...defaultProps} />)
-      expect(toJson(icon)).toMatchSnapshot()
+      expect(icon).toMatchSnapshot()
     })
 
     it('passes attributes to the Icon component', () => {
@@ -60,7 +60,7 @@ describe('StandaloneIcon', () => {
     it('renders', () => {
       const interactiveIcon = render(<StandaloneIcon {...defaultProps} />)
 
-      expect(toJson(interactiveIcon)).toMatchSnapshot()
+      expect(interactiveIcon).toMatchSnapshot()
     })
 
     it('renders an HTML button tag', () => {

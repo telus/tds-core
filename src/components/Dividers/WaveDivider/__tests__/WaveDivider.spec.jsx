@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import WaveDivider from '../WaveDivider'
 
@@ -10,7 +10,7 @@ describe('WaveDivider', () => {
   it('renders', () => {
     const waveDivider = render(<WaveDivider />)
 
-    expect(toJson(waveDivider)).toMatchSnapshot()
+    expect(waveDivider).toMatchSnapshot()
   })
 
   it('is an svg', () => {

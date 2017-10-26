@@ -1,6 +1,5 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
 
 import Small from '../Small'
 
@@ -12,7 +11,7 @@ describe('Small', () => {
   it('renders', () => {
     const small = doShallow()
 
-    expect(toJson(small)).toMatchSnapshot()
+    expect(small).toMatchSnapshot()
   })
 
   it('renders an HTML small tag', () => {

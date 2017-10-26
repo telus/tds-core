@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
+
 
 import Paragraph from '../Paragraph'
 
@@ -12,7 +12,7 @@ describe('Paragraph', () => {
   it('renders', () => {
     const paragraph = doShallow()
 
-    expect(toJson(paragraph)).toMatchSnapshot()
+    expect(paragraph).toMatchSnapshot()
   })
 
   it('renders an HTML p tag', () => {
