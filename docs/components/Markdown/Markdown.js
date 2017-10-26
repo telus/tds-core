@@ -11,6 +11,7 @@ import {styles as paraStyles} from 'react-styleguidist/lib/rsg-components/Para'
 
 import Link from '../../../src/components/Link/Link'
 import Text from '../../../src/components/Typography/Text/Text'
+import Strong from '../../../src/components/Typography/Strong/Strong'
 import MarkdownHeading from '../MarkdownHeading/MarkdownHeading'
 import MarkdownParagraph from '../MarkdownParagraph/MarkdownParagraph'
 
@@ -88,6 +89,9 @@ const getBaseOverrides = memoize(classes => {
         level: 'h4',
       },
     },
+    strong: {
+      component: Strong,
+    },
     code: {
       component: Code,
       props: {
@@ -150,10 +154,6 @@ const styles = ({space, fontFamily, fontSize, color, borderRadius}) => ({
   em: {
     composes: '$base',
     fontStyle: 'italic',
-  },
-  strong: {
-    composes: '$base',
-    fontWeight: 'bold',
   },
   code: {
     fontFamily: fontFamily.monospace,
