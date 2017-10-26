@@ -10,8 +10,8 @@ import Styled from 'react-styleguidist/lib/rsg-components/Styled'
 import {styles as paraStyles} from 'react-styleguidist/lib/rsg-components/Para'
 
 import Link from '../../../src/components/Link/Link'
-// import Heading from '../../../src/components/Typography/Heading/Heading'
 import MarkdownHeading from '../MarkdownHeading/MarkdownHeading'
+import MarkdownParagraph from '../MarkdownParagraph/MarkdownParagraph'
 
 // We’re explicitly specifying Webpack loaders here so we could skip specifying them in Webpack configuration.
 // That way we could avoid clashes between our loaders and user loaders.
@@ -47,6 +47,9 @@ const getBaseOverrides = memoize(classes => {
     ...styleOverrides,
     a: {
       component: Link,
+    },
+    p: {
+      component: MarkdownParagraph,
     },
     h1: {
       component: MarkdownHeading,
@@ -107,27 +110,6 @@ const styles = ({space, fontFamily, fontSize, color, borderRadius}) => ({
     fontSize: 'inherit',
   },
   para: paraStyles({space, color, fontFamily}).para,
-  // a: linkStyles({ color }).link,
-  // h1: {
-  //   composes: '$para',
-  //   fontSize: fontSize.h1,
-  //   fontWeight: 'normal',
-  // },
-  // h2: {
-  //   composes: '$para',
-  //   fontSize: fontSize.h2,
-  //   fontWeight: 'normal',
-  // },
-  // h3: {
-  //   composes: '$para',
-  //   fontSize: fontSize.h3,
-  //   fontWeight: 'normal',
-  // },
-  // h4: {
-  //   composes: '$para',
-  //   fontSize: fontSize.h4,
-  //   fontWeight: 'normal',
-  // },
   h5: {
     composes: '$para',
     fontSize: fontSize.h5,

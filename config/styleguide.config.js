@@ -62,8 +62,8 @@ module.exports = {
     return `import { ${name} } from '@telusdigital/tds'`
   },
 
-  showUsage: true,
-  showCode: true,
+  showUsage: false,
+  showCode: false,
 
   sections: [
     {
