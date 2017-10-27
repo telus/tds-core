@@ -1,11 +1,10 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
-import Fade from '../Fade'
+import Fade from '../../Animation/Fade'
 import Input from '../Input'
 import Helper from '../Helper/Helper'
 

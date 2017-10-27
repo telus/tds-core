@@ -9,7 +9,7 @@ import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../../Typography/Text/Text'
 import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
 import DimpleDivider from '../../Dividers/DimpleDivider/DimpleDivider'
-import Slide from './Slide'
+import Reveal from '../../Animation/Reveal'
 import Panel from '../Panel/Panel'
 
 import styles from '../Panel/Panel.modules.scss'
@@ -54,7 +54,7 @@ class PanelWrapper extends React.Component {
           </Box>
         </Clickable>
 
-        <Slide timeout={500} in={this.state.open}>
+        <Reveal timeout={500} in={this.state.open}>
           {() => (
             <div>
               <DimpleDivider />
@@ -64,7 +64,7 @@ class PanelWrapper extends React.Component {
               </Box>
             </div>
           )}
-        </Slide>
+        </Reveal>
 
         {last && <HairlineDivider />}
       </div>

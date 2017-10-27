@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reveal renders when the transition is not triggered 1`] = `
+<div
+  style="transition:height 500ms ease-in-out;height:0;overflow:hidden"
+>
+  <div>
+    Content to reveal
+  </div>
+</div>
+`;
+
+exports[`Reveal renders when the transition is triggered 1`] = `
+<div
+  style="transition:height 500ms ease-in-out;height:200px;overflow:hidden"
+>
+  <div>
+    Content to reveal
+  </div>
+</div>
+`;

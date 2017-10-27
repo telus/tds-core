@@ -1,7 +1,7 @@
 import React from 'react'
 import {shallow, mount} from 'enzyme'
 
-import Slide from '../PanelWrapper/Slide'
+import Reveal from '../../Animation/Reveal'
 import ExpandCollapse from '../ExpandCollapse'
 
 describe('ExpandCollapse', () => {
@@ -29,8 +29,8 @@ describe('ExpandCollapse', () => {
     }
   }
 
-  const expectPanelToBeOpen = panel => expect(panel.find(Slide)).toHaveProp('in', true)
-  const expectPanelToBeClosed = panel => expect(panel.find(Slide)).toHaveProp('in', false)
+  const expectPanelToBeOpen = panel => expect(panel.find(Reveal)).toHaveProp('in', true)
+  const expectPanelToBeClosed = panel => expect(panel.find(Reveal)).toHaveProp('in', false)
 
   it('renders', () => {
     const {expandCollapse} = doMount(

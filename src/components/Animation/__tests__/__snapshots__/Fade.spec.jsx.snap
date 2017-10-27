@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fade renders when the transition is not triggered 1`] = `
+<div
+  style="transition:opacity 500ms ease-in-out;opacity:0"
+>
+  <div>
+    Content to fade
+  </div>
+</div>
+`;
+
+exports[`Fade renders when the transition is triggered 1`] = `
+<div
+  style="transition:opacity 500ms ease-in-out;opacity:1"
+>
+  <div>
+    Content to fade
+  </div>
+</div>
+`;

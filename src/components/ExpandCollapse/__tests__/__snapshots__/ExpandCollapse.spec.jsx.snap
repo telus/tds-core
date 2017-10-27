@@ -117,7 +117,7 @@ exports[`ExpandCollapse renders 1`] = `
             </Box>
           </button>
         </Clickable>
-        <Slide
+        <Reveal
           in={true}
           timeout={500}
         >
@@ -189,7 +189,7 @@ exports[`ExpandCollapse renders 1`] = `
               </div>
             </div>
           </Transition>
-        </Slide>
+        </Reveal>
       </div>
     </PanelWrapper>
     <PanelWrapper
@@ -294,7 +294,7 @@ exports[`ExpandCollapse renders 1`] = `
             </Box>
           </button>
         </Clickable>
-        <Slide
+        <Reveal
           in={false}
           timeout={500}
         >
@@ -366,7 +366,7 @@ exports[`ExpandCollapse renders 1`] = `
               </div>
             </div>
           </Transition>
-        </Slide>
+        </Reveal>
         <HairlineDivider
           gradient={false}
           vertical={false}

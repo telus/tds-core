@@ -2,19 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
 
+// Based off of the Fade example at https://reactcommunity.org/react-transition-group/
+
 const defaultStyle = timeout => ({
-  transition: `height ${timeout}ms ease-in-out`,
-  height: 0,
-  overflow: 'hidden',
+  transition: `opacity ${timeout}ms ease-in-out`,
+  opacity: 0,
 })
 
 const transitionStyles = {
-  entered: { height: '200px' },
+  entered: { opacity: 1 },
 }
 
-// TODO Fix the height! Can't do transition with "height: auto"
-
-const Slide = ({ children, ...rest }) => (
+const Fade = ({ children, ...rest }) => (
   <Transition {...rest}>
     {status => (
       <div
@@ -28,8 +27,8 @@ const Slide = ({ children, ...rest }) => (
     )}
   </Transition>
 )
-Slide.propTypes = {
+Fade.propTypes = {
   children: PropTypes.func.isRequired,
 }
 
-export default Slide
+export default Fade

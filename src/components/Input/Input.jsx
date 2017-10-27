@@ -9,7 +9,7 @@ import Box from '../Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
 import Tooltip from '../Tooltip/Tooltip'
 import Helper from './Helper/Helper'
-import Fade from './Fade'
+import Fade from '../Animation/Fade'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
