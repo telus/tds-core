@@ -4,27 +4,10 @@ import { childrenOfType } from 'airbnb-prop-types'
 import Set from 'core-js/es6/set'
 
 import safeRest from '../../utils/safeRest'
+import { isEqual } from '../../utils/sets'
 
 import PanelWrapper from './PanelWrapper/PanelWrapper'
 import Panel from './Panel/Panel'
-
-// TODO: Write some tests for this just to be sure...
-
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
-const setDifference = (start, compare) => {
-  const difference = new Set(start)
-
-  compare.forEach(element => difference.delete(element))
-
-  return difference
-}
-
-const areSetsEqual = (a, b) => {
-  const difference1 = setDifference(a, b)
-  const difference2 = setDifference(b, a)
-
-  return difference1.size === 0 && difference2.size === 0
-}
 
 class ExpandCollapse extends React.Component {
   constructor(props) {
@@ -38,7 +21,7 @@ class ExpandCollapse extends React.Component {
   componentWillReceiveProps(nextProps) {
     const nextPanels = new Set(nextProps.open)
 
-    if (!areSetsEqual(this.state.panels, nextPanels)) {
+    if (!isEqual(this.state.panels, nextPanels)) {
       this.setState({ panels: nextPanels })
     }
   }
