@@ -1,5 +1,5 @@
 const path = require('path')
-const {version} = require('../package.json')
+const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
@@ -130,10 +130,18 @@ module.exports = {
             {
               name: 'Expand collapse',
               components() {
-                return [
-                  path.resolve('src/old-components/ExpandCollapse/Group.jsx'),
-                  path.resolve('src/old-components/ExpandCollapse/Panel.jsx'),
-                ]
+                return compact([
+                  toggleByEnv(
+                    'ExpandCollapse',
+                    path.resolve('src/components/ExpandCollapse/ExpandCollapse.jsx'),
+                    path.resolve('src/old-components/ExpandCollapse/Group.jsx')
+                  ),
+                  toggleByEnv(
+                    'ExpandCollapse',
+                    undefined,
+                    path.resolve('src/old-components/ExpandCollapse/Panel.jsx')
+                  ),
+                ])
               },
             },
             {
