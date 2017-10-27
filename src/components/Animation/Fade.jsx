@@ -28,6 +28,7 @@ const Fade = ({ children, ...rest }) => (
   </Transition>
 )
 Fade.propTypes = {
+  timeout: PropTypes.number.isRequired,
   children: PropTypes.func.isRequired,
 }
 

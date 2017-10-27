@@ -118,6 +118,7 @@ exports[`ExpandCollapse renders 1`] = `
           </button>
         </Clickable>
         <Reveal
+          height={0}
           in={true}
           timeout={500}
         >
@@ -139,9 +140,9 @@ exports[`ExpandCollapse renders 1`] = `
             <div
               style={
                 Object {
-                  "height": "200px",
+                  "height": "0px",
                   "overflow": "hidden",
-                  "transition": "height 500ms ease-in-out",
+                  "transition": "height 500ms ease",
                 }
               }
             >
@@ -295,6 +296,7 @@ exports[`ExpandCollapse renders 1`] = `
           </button>
         </Clickable>
         <Reveal
+          height={0}
           in={false}
           timeout={500}
         >
@@ -318,7 +320,7 @@ exports[`ExpandCollapse renders 1`] = `
                 Object {
                   "height": 0,
                   "overflow": "hidden",
-                  "transition": "height 500ms ease-in-out",
+                  "transition": "height 500ms ease",
                 }
               }
             >

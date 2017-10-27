@@ -18,6 +18,8 @@ class PanelWrapper extends React.Component {
   constructor(props) {
     super(props)
 
+    this.contentWrapper = null
+
     this.state = {
       open: props.open,
     }
@@ -54,9 +56,17 @@ class PanelWrapper extends React.Component {
           </Box>
         </Clickable>
 
-        <Reveal timeout={500} in={this.state.open}>
+        <Reveal
+          timeout={500}
+          in={this.state.open}
+          height={this.contentWrapper ? this.contentWrapper.offsetHeight : 0}
+        >
           {() => (
-            <div>
+            <div
+              ref={contentWrapper => {
+                this.contentWrapper = contentWrapper
+              }}
+            >
               <DimpleDivider />
 
               <Box spacing="padding" vertical={3}>

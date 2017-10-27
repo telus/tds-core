@@ -79,7 +79,7 @@ describe('ExpandCollapse', () => {
     expectPanelToBeClosed(findPanel('panel-1'))
   })
 
-  it.skip('lets a parent component control the open and closed panels', () => {
+  it('lets a parent component control the open and closed panels', () => {
     const { expandCollapse, findPanel } = doMount(
       <ExpandCollapse>
         <ExpandCollapse.Panel id="panel-1" header="First panel title">
@@ -95,7 +95,7 @@ describe('ExpandCollapse', () => {
     expectPanelToBeClosed(findPanel('panel-1'))
   })
 
-  it.skip('triggers callbacks when panels are opened and closed', () => {
+  it('triggers callbacks when panels are opened and closed', () => {
     const onPanelToggle = jest.fn()
 
     const { expandCollapse, togglePanel } = doMount(
