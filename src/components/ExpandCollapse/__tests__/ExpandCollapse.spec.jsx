@@ -1,5 +1,5 @@
 import React from 'react'
-import {shallow, mount} from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import Reveal from '../../Animation/Reveal'
 import ExpandCollapse from '../ExpandCollapse'
@@ -33,7 +33,7 @@ describe('ExpandCollapse', () => {
   const expectPanelToBeClosed = panel => expect(panel.find(Reveal)).toHaveProp('in', false)
 
   it('renders', () => {
-    const {expandCollapse} = doMount(
+    const { expandCollapse } = doMount(
       <ExpandCollapse open={['panel-1']}>
         <ExpandCollapse.Panel id="panel-1" header="First panel title">
           First panel
@@ -48,7 +48,7 @@ describe('ExpandCollapse', () => {
   })
 
   it('can have some panels open and some panels closed by default', () => {
-    const {findPanel} = doMount(
+    const { findPanel } = doMount(
       <ExpandCollapse open={['panel-1']}>
         <ExpandCollapse.Panel id="panel-1" header="First panel title">
           First panel
@@ -64,7 +64,7 @@ describe('ExpandCollapse', () => {
   })
 
   it('opens and closes panels by clicking them', () => {
-    const {findPanel, togglePanel} = doMount(
+    const { findPanel, togglePanel } = doMount(
       <ExpandCollapse>
         <ExpandCollapse.Panel id="panel-1" header="First panel title">
           First panel
@@ -79,44 +79,44 @@ describe('ExpandCollapse', () => {
     expectPanelToBeClosed(findPanel('panel-1'))
   })
 
-  // it('lets a parent component control the open and closed panels', () => {
-  //   const { expandCollapse, findPanel } = doMount(
-  //     <ExpandCollapse>
-  //       <ExpandCollapse.Panel id="panel-1" header="First panel title">
-  //         First panel
-  //       </ExpandCollapse.Panel>
-  //     </ExpandCollapse>
-  //   )
-  //
-  //   expandCollapse.setProps({ open: ['panel-1'] })
-  //   expectPanelToBeOpen(findPanel('panel-1'))
-  //
-  //   expandCollapse.setProps({ open: [] })
-  //   expectPanelToBeClosed(findPanel('panel-1'))
-  // })
+  it.skip('lets a parent component control the open and closed panels', () => {
+    const { expandCollapse, findPanel } = doMount(
+      <ExpandCollapse>
+        <ExpandCollapse.Panel id="panel-1" header="First panel title">
+          First panel
+        </ExpandCollapse.Panel>
+      </ExpandCollapse>
+    )
 
-  // it('triggers callbacks when panels are opened and closed', () => {
-  //   const onPanelToggle = jest.fn()
-  //
-  //   const {expandCollapse, togglePanel} = doMount(
-  //     <ExpandCollapse>
-  //       <ExpandCollapse.Panel id="panel-1" header="First panel title" onToggle={onPanelToggle}>
-  //         First panel
-  //       </ExpandCollapse.Panel>
-  //     </ExpandCollapse>
-  //   )
-  //
-  //   togglePanel('panel-1')
-  //   expect(onPanelToggle).toHaveBeenCalledWith(true)
-  //
-  //   expandCollapse.setProps({open: []})
-  //   expect(onPanelToggle).toHaveBeenCalledWith(false)
-  //
-  //   // TODO: onToggle for the entire expand collapse that receives all the state
-  // })
+    expandCollapse.setProps({ open: ['panel-1'] })
+    expectPanelToBeOpen(findPanel('panel-1'))
+
+    expandCollapse.setProps({ open: [] })
+    expectPanelToBeClosed(findPanel('panel-1'))
+  })
+
+  it.skip('triggers callbacks when panels are opened and closed', () => {
+    const onPanelToggle = jest.fn()
+
+    const { expandCollapse, togglePanel } = doMount(
+      <ExpandCollapse>
+        <ExpandCollapse.Panel id="panel-1" header="First panel title" onToggle={onPanelToggle}>
+          First panel
+        </ExpandCollapse.Panel>
+      </ExpandCollapse>
+    )
+
+    togglePanel('panel-1')
+    expect(onPanelToggle).toHaveBeenCalledWith(true)
+
+    expandCollapse.setProps({ open: [] })
+    expect(onPanelToggle).toHaveBeenCalledWith(false)
+
+    // TODO: onToggle for the entire expand collapse that receives all the state
+  })
 
   it('passes additional attributes to the element', () => {
-    const expandCollapse = doShallow({id: 'the-id', 'data-some-attr': 'some value'})
+    const expandCollapse = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(expandCollapse).toHaveProp('id', 'the-id')
     expect(expandCollapse).toHaveProp('data-some-attr', 'some value')
@@ -125,7 +125,7 @@ describe('ExpandCollapse', () => {
   it('does not allow custom CSS', () => {
     const expandCollapse = doShallow({
       className: 'my-custom-class',
-      style: {color: 'hotpink'},
+      style: { color: 'hotpink' },
     })
 
     expect(expandCollapse).not.toHaveProp('className', 'my-custom-class')
