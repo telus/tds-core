@@ -1,3 +1,39 @@
+#### 0.27.0 (2017-10-30)
+
+##### Documentation Changes
+
+* **notification:** use text component for bold faces ([d79691de](https://github.com/telusdigital/tds/commit/d79691de0a85373c3a228ee23f4095e3656a9bf7))
+* **colours:** Set font-size to 1rem ([9ebb36ed](https://github.com/telusdigital/tds/commit/9ebb36ed0775673c58f9e1b7099cc96cf503d4cd))
+* **examples:** Use Typography components in code examples within the /old-components folder ([4a7d497c](https://github.com/telusdigital/tds/commit/4a7d497ce7eb8857c85ae42d90aa88818c401702))
+* **markdown-lists:** Add MarkdownUnorderedList and MarkdownOrderedList ([c15b7617](https://github.com/telusdigital/tds/commit/c15b76170030aa67789b9b792044f8b93da204e3))
+* **strong:** Use Strong component in Markdown ([bfbcd2c9](https://github.com/telusdigital/tds/commit/bfbcd2c9c847637b84ab3d71a2e99ca30e57cc86))
+* **markdown-heading:**
+  * Remove spacing prop ([9d59ff1b](https://github.com/telusdigital/tds/commit/9d59ff1b066d18f639246f151351fbcd02bf7be6))
+  * Add MarkdownHeading component ([8e795fb2](https://github.com/telusdigital/tds/commit/8e795fb27f427244890c7c7399eea5af8852b0da))
+* **props:** Increase font size in props tables to match default Paragraph size ([5b3aa1d7](https://github.com/telusdigital/tds/commit/5b3aa1d7fd932a4d4425387a79fe8834720d751f))
+* **markdown-paragraph:** Add MarkdownParagraph ([d65e6216](https://github.com/telusdigital/tds/commit/d65e6216b070c03c93431dd55d494f5c782e710d))
+* **sidebar:** Move the Components section up ([acac1c59](https://github.com/telusdigital/tds/commit/acac1c5937e3ed2d5e1f2aef09b2cee4730b75b7))
+* **section-heading:** Use TDS Heading component instead Styleguidist default heading styles ([f777d0de](https://github.com/telusdigital/tds/commit/f777d0dee5c028f69d048ff3bced068ecaba462e))
+
+##### New Features
+
+* **css:** remove link css and mixins ([55a3dd31](https://github.com/telusdigital/tds/commit/55a3dd319f3ab7cf8dec49ab81864afc03ce9ef9))
+* **link:** remove deprecated link css ([088283cc](https://github.com/telusdigital/tds/commit/088283cce054541941989f6b93b68edacde92a05))
+
+##### Refactors
+
+* **expandcollapse:**
+  * Calculate the height of the reveal based on content offsetHeight ([600a53cf](https://github.com/telusdigital/tds/commit/600a53cf1143671e6c083086267888a27eec379c))
+  * Move set logic into a separate module and add tests for it ([e588f5be](https://github.com/telusdigital/tds/commit/e588f5be8b0c9f23eb11c9079b46ee537b69af6e))
+  * Re-writing expand collapse using modern TDS components ([8852dcc6](https://github.com/telusdigital/tds/commit/8852dcc63ae2c0fbf8e7630bcac9a2bb03f54632))
+* **animations:** Move Fade and Reveal into an Animations module ([f9528a6d](https://github.com/telusdigital/tds/commit/f9528a6de75835c025b6545a4545d2e677166833))
+
+##### Tests
+
+* **expandcollapse:** Mark tests as skipped instead of commented ([3727264c](https://github.com/telusdigital/tds/commit/3727264ca1ab362a3b67cff2a1d346dea407a144))
+* **expand-collapse:** Comment out broken tests ([26af1a7c](https://github.com/telusdigital/tds/commit/26af1a7c3577fffa6ca74e24f161381885333ab0))
+* **snapshots:** Use the enzyme-to-json snapshot serializer for easier snapshot config ([e4a37b17](https://github.com/telusdigital/tds/commit/e4a37b1709fa428839997913fc5f144e71094b66))
+
 #### 0.26.0 (2017-10-23)
 
 ##### Chores
