@@ -6,7 +6,7 @@ By default, notifications will be displayed in the `instructional` variant.
 
 ```
 <Notification>
-  <strong>Tip:</strong> The services are best suited for larger business organizations ordering more than 50 plans on one account.
+  <Text bold>Tip:</Text> The services are best suited for larger business organizations ordering more than 50 plans on one account.
 </Notification>
 ```
 
@@ -27,7 +27,7 @@ Use the `branded` variant for feedback or chat related messages.
 
 ```
 <Notification variant="branded">
-  <strong>Tell us what you think</strong> It’s in our nature to listen. As TELUS.com continues to evolve, we’d love to <Link href="http://telus.com">hear more from you</Link>.
+  <Text bold>Tell us what you think.</Text> It’s in our nature to listen. As TELUS.com continues to evolve, we’d love to <Link href="http://telus.com">hear more from you</Link>.
 </Notification>
 ```
 
