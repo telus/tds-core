@@ -109,10 +109,6 @@ module.exports = {
           content: path.resolve('docs/elements/lists-deprecated.md'),
         },
         {
-          name: 'Typography',
-          content: path.resolve('docs/elements/typography.md'),
-        },
-        {
           name: 'Utility icons',
           content: path.resolve('docs/elements/utility-icons-deprecated.md'),
         },

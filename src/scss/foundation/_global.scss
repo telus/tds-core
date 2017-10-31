@@ -29,6 +29,9 @@ html {
 body {
   background-color: $color-white;
   line-height: inherit;
+  color: $color-text;
+  font-weight: 400;
+  font-size: rem($body-text-size);
 }
 
 img {
