@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StandaloneIcon Interactive StandaloneIcon renders 1`] = `
+exports[`StandaloneIcon Interactive icon renders 1`] = `
 <button
-  class="interactive"
+  class="clickable"
   style="padding:4px;margin:-4px"
 >
   <i

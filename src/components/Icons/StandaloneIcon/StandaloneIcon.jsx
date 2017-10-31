@@ -4,8 +4,7 @@ import PropTypes from 'prop-types'
 import safeRest from '../../../utils/safeRest'
 
 import Icon from '../Icon/Icon'
-
-import styles from './StandaloneIcon.modules.scss'
+import Clickable from '../../Clickable/Clickable'
 
 const mobileDeviceTapArea = 32 // https://www.w3.org/TR/mobile-accessibility-mapping/#touch-target-size-and-spacing
 const touchAreaStyles = iconSize => {
@@ -22,7 +21,7 @@ const touchAreaStyles = iconSize => {
  *
  * <span class="docs--badge__updated">updated!</span> <span class="docs--badge__version">v0.26.0</span>
  */
-const StandaloneIcon = ({symbol, variant, size, onClick, a11yText, ...rest}) => {
+const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, ...rest }) => {
   const iconProps = {
     symbol,
     variant,
@@ -34,14 +33,13 @@ const StandaloneIcon = ({symbol, variant, size, onClick, a11yText, ...rest}) => 
     const needsExpandedTouchArea = size < mobileDeviceTapArea
 
     return (
-      <button
+      <Clickable
         {...safeRest(rest)}
         onClick={onClick}
-        className={styles.interactive}
-        style={needsExpandedTouchArea ? touchAreaStyles(size) : undefined}
+        dangerouslyAddStyle={needsExpandedTouchArea ? touchAreaStyles(size) : undefined}
       >
         <Icon {...iconProps} />
-      </button>
+      </Clickable>
     )
   }
 

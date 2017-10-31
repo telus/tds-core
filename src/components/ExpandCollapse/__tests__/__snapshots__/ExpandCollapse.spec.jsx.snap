@@ -37,11 +37,13 @@ exports[`ExpandCollapse renders 1`] = `
         </HairlineDivider>
         <Clickable
           dangerouslyAddClassName="header"
+          dangerouslyAddStyle={undefined}
           onClick={[Function]}
         >
           <button
             className="clickable header"
             onClick={[Function]}
+            style={undefined}
           >
             <Box
               all={undefined}
@@ -215,11 +217,13 @@ exports[`ExpandCollapse renders 1`] = `
         </HairlineDivider>
         <Clickable
           dangerouslyAddClassName="header"
+          dangerouslyAddStyle={undefined}
           onClick={[Function]}
         >
           <button
             className="clickable header"
             onClick={[Function]}
+            style={undefined}
           >
             <Box
               all={undefined}

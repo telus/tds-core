@@ -18,6 +18,12 @@ describe('Clickable', () => {
     expect(clickable).toHaveClassName('a-class')
   })
 
+  it('will add additional arbitrary styles', () => {
+    const clickable = doShallow({ dangerouslyAddStyle: { color: 'green' } })
+
+    expect(clickable).toHaveStyle('color', 'green')
+  })
+
   it('passes additional attributes to the button', () => {
     const clickable = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
@@ -32,6 +38,6 @@ describe('Clickable', () => {
     })
 
     expect(clickable).not.toHaveProp('className', 'my-custom-class')
-    expect(clickable).not.toHaveProp('style')
+    expect(clickable).not.toHaveProp('style', { color: 'hotpink' })
   })
 })

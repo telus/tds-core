@@ -1,7 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-
 import StandaloneIcon from '../StandaloneIcon'
 
 describe('StandaloneIcon', () => {
@@ -49,13 +48,20 @@ describe('StandaloneIcon', () => {
     })
   })
 
-  describe('Interactive StandaloneIcon', () => {
+  describe('Interactive icon', () => {
     const defaultProps = {
       symbol: 'spyglass',
       a11yText: 'Some text for the screen readers.',
       onClick: jest.fn(),
     }
-    const doShallow = (props = {}) => shallow(<StandaloneIcon {...defaultProps} {...props} />)
+    const doShallow = (props = {}) => {
+      const interactiveIcon = shallow(<StandaloneIcon {...defaultProps} {...props} />)
+
+      return {
+        interactiveIcon,
+        button: interactiveIcon.dive(),
+      }
+    }
 
     it('renders', () => {
       const interactiveIcon = render(<StandaloneIcon {...defaultProps} />)
@@ -64,14 +70,14 @@ describe('StandaloneIcon', () => {
     })
 
     it('renders an HTML button tag', () => {
-      const interactiveIcon = doShallow({ onClick: jest.fn() })
+      const { interactiveIcon } = doShallow({ onClick: jest.fn() })
 
-      expect(interactiveIcon).toHaveTagName('button')
+      expect(interactiveIcon.dive()).toHaveTagName('button')
     })
 
     it('triggers the click handler', () => {
       const onClickMock = jest.fn()
-      const interactiveIcon = doShallow({ onClick: onClickMock })
+      const { interactiveIcon } = doShallow({ onClick: onClickMock })
 
       interactiveIcon.simulate('click')
 
@@ -80,42 +86,42 @@ describe('StandaloneIcon', () => {
 
     describe('touch area', () => {
       it('expands the touch area to be large enough for a finger when the icon is small', () => {
-        let interactiveIcon = doShallow({ size: 16 })
-        expect(interactiveIcon).toHaveStyle('padding', '8px')
-        expect(interactiveIcon).toHaveStyle('margin', '-8px')
+        let { button } = doShallow({ size: 16 })
+        expect(button).toHaveStyle('padding', '8px')
+        expect(button).toHaveStyle('margin', '-8px')
 
-        interactiveIcon = doShallow({ size: 24 })
+        button = doShallow({ size: 24 }).button
 
-        expect(interactiveIcon).toHaveStyle('padding', '4px')
-        expect(interactiveIcon).toHaveStyle('margin', '-4px')
+        expect(button).toHaveStyle('padding', '4px')
+        expect(button).toHaveStyle('margin', '-4px')
       })
 
       it('does not expand the touch area when the icon is large', () => {
-        const interactiveIcon = doShallow({ size: 48 })
+        const { button } = doShallow({ size: 48 })
 
-        expect(interactiveIcon).not.toHaveStyle('padding')
-        expect(interactiveIcon).not.toHaveStyle('margin')
+        expect(button).not.toHaveStyle('padding')
+        expect(button).not.toHaveStyle('margin')
       })
     })
 
     it('passes additional attributes to the button element', () => {
-      const interactiveIcon = doShallow({
+      const { button } = doShallow({
         id: 'the-interactiveIcon',
         role: 'button',
       })
 
-      expect(interactiveIcon).toHaveProp('id', 'the-interactiveIcon')
-      expect(interactiveIcon).toHaveProp('role', 'button')
+      expect(button).toHaveProp('id', 'the-interactiveIcon')
+      expect(button).toHaveProp('role', 'button')
     })
 
     it('does not allow custom CSS', () => {
-      const interactiveIcon = doShallow({
+      const { button } = doShallow({
         className: 'my-custom-class',
         style: { color: 'hotpink' },
       })
 
-      expect(interactiveIcon).not.toHaveProp('className', 'my-custom-class')
-      expect(interactiveIcon).not.toHaveStyle('color', 'hotpink')
+      expect(button).not.toHaveProp('className', 'my-custom-class')
+      expect(button).not.toHaveStyle('color', 'hotpink')
     })
   })
 })
