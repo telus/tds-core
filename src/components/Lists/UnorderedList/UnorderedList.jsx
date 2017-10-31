@@ -7,13 +7,8 @@ import UnorderedItem from './UnorderedItem/UnorderedItem'
 
 import styles from '../List.modules.scss'
 
-const injectListStyle = (child, listStyle) => (
-  React.cloneElement(child, { listStyle })
-)
+const injectListStyle = (child, listStyle) => React.cloneElement(child, { listStyle })
 
-/**
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.23.0</span>
- */
 const UnorderedList = ({ listStyle, children, ...rest }) => {
   return (
     <ul {...safeRest(rest)} className={styles.base}>
@@ -26,19 +21,15 @@ UnorderedList.propTypes = {
   /**
    * The bullet style.
    */
-  listStyle: PropTypes.oneOf([
-    'circle',
-    'checkmark',
-    'x'
-  ]),
+  listStyle: PropTypes.oneOf(['circle', 'checkmark', 'x']),
   /**
    * The list items. Must be at least one `UnorderedList.Item`.
    */
-  children: childrenOfType(UnorderedItem).isRequired
+  children: childrenOfType(UnorderedItem).isRequired,
 }
 
 UnorderedList.defaultProps = {
-  listStyle: 'circle'
+  listStyle: 'circle',
 }
 
 UnorderedList.Item = UnorderedItem
