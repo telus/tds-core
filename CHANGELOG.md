@@ -1,3 +1,19 @@
+#### 0.28.0 (2017-11-01)
+
+##### Documentation Changes
+
+* remove 0.24 badges ([d1ab319d](https://github.com/telusdigital/tds/commit/d1ab319d84bcdc34b799efe41f7c95c84f8c9111))
+* remove 0.23.0 badges ([9376459c](https://github.com/telusdigital/tds/commit/9376459c4639c6131691459fce06624f4ff216cf))
+
+##### New Features
+
+* **css:** move typography guideline to typography component ([53c9b8dc](https://github.com/telusdigital/tds/commit/53c9b8dc7c01fcc5b19937eae8a3137bd30b5d8a))
+
+##### Refactors
+
+* **css:** remove unneeded variable ([dd752652](https://github.com/telusdigital/tds/commit/dd7526525124b0939d3f15fd374ab40bf441a900))
+* **standalone-icon:** Use Clickable component ([4d4e915f](https://github.com/telusdigital/tds/commit/4d4e915f5695c379e74f1d3729a83ed14fc69894))
+
 #### 0.27.0 (2017-10-30)
 
 ##### Documentation Changes
