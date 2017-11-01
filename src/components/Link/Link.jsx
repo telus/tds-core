@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
-import { warn } from '../../utils/warn'
+import {warn} from '../../utils/warn'
 
 import styles from './Link.modules.scss'
 
@@ -16,7 +16,7 @@ const getClassName = (invert, context) => {
   return styles.base
 }
 
-const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) => {
+const Link = ({reactRouterLinkComponent, invert, children, ...rest}, context) => {
   if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
@@ -25,7 +25,7 @@ const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) 
     reactRouterLinkComponent || 'a',
     {
       ...safeRest(rest),
-      className: getClassName(invert, context)
+      className: getClassName(invert, context),
     },
     children
   )
@@ -38,7 +38,7 @@ Link.propTypes = {
   /**
    * Target URL (if using 'reactRouterLinkComponent')
    */
-  to: PropTypes.string,
+  to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   /**
    * Target URL.
    */
@@ -50,17 +50,17 @@ Link.propTypes = {
   /**
    * Link text.
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 Link.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
   href: null,
-  invert: false
+  invert: false,
 }
 
 Link.contextTypes = {
-  inheritColor: PropTypes.bool
+  inheritColor: PropTypes.bool,
 }
 
 export default Link

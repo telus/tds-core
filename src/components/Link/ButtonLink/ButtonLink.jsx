@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { warn } from '../../../utils/warn'
+import {warn} from '../../../utils/warn'
 import safeRest from '../../../utils/safeRest'
 
 import styles from './ButtonLink.modules.scss'
@@ -9,7 +9,7 @@ import styles from './ButtonLink.modules.scss'
 /**
  * A link that is styled as a button.
  */
-const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
+const ButtonLink = ({reactRouterLinkComponent, variant, children, ...rest}) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
     warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
@@ -36,7 +36,7 @@ ButtonLink.propTypes = {
   /**
    * Target URL (if using 'reactRouterLinkComponent')
    */
-  to: PropTypes.string,
+  to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   /**
    * Target URL
    */
