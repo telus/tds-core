@@ -6,8 +6,6 @@ import styles from './WaveDivider.modules.scss'
 
 /**
  * Separate page content blocks.
- *
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
  */
 const WaveDivider = ({ ...rest }) => (
   <svg

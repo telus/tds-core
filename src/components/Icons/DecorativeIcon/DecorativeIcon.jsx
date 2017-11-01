@@ -5,8 +5,6 @@ import Icon from '../Icon/Icon'
 
 /**
  * An icon used for visual aesthetics only.
- *
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.24.0</span>
  */
 const DecorativeIcon = ({ symbol, variant, size, ...rest }) => (
   <Icon {...rest} symbol={symbol} variant={variant} size={size} aria-hidden="true" />
@@ -30,26 +28,21 @@ DecorativeIcon.propTypes = {
     'plus',
     'questionMarkCircle',
     'spyglass',
-    'times'
+    'times',
   ]).isRequired,
   /**
    * The appearance of the Icon.
    */
-  variant: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'inverted',
-    'error'
-  ]),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted', 'error']),
   /**
    * The icon size in pixels.
    */
-  size: PropTypes.oneOf([16, 24, 48])
+  size: PropTypes.oneOf([16, 24, 48]),
 }
 
 DecorativeIcon.defaultProps = {
   variant: undefined,
-  size: 24
+  size: 24,
 }
 
 export default DecorativeIcon
