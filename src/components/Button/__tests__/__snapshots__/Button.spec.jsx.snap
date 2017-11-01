@@ -2,9 +2,14 @@
 
 exports[`Button renders 1`] = `
 <button
-  className="primary"
+  className="button"
   type="button"
 >
-  Submit
+  <Flexbox
+    dangerouslyAddClassName="primary"
+    direction="row"
+  >
+    Submit
+  </Flexbox>
 </button>
 `;
