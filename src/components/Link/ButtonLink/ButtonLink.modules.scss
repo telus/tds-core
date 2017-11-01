@@ -9,7 +9,6 @@ $secondary-bg-color: $color-secondary;
 }
 
 .primary {
-  composes: button primary from '../../Button/Button.modules.scss';
   composes: base;
 
   &:link,
@@ -23,7 +22,6 @@ $secondary-bg-color: $color-secondary;
 }
 
 .secondary {
-  composes: button secondary from '../../Button/Button.modules.scss';
   composes: base;
 
   &:link,
@@ -37,7 +35,6 @@ $secondary-bg-color: $color-secondary;
 }
 
 .inverted {
-  composes: button inverted from '../../Button/Button.modules.scss';
   composes: base;
 
   &:link,

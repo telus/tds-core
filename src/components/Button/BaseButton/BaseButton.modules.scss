@@ -1,6 +1,6 @@
-@import '../../scss/settings/colours';
-@import '../../scss/settings/responsive-grid';
-@import '../../scss/utility/responsive';
+@import '../../../scss/settings/colours';
+@import '../../../scss/settings/responsive-grid';
+@import '../../../scss/utility/responsive';
 
 $primary-bg-color: $color-primary;
 $secondary-bg-color: $color-secondary;
@@ -13,29 +13,24 @@ $button-text-color: $color-white;
 }
 
 .button {
-  composes: none from '../Borders.modules.scss';
+  composes: none from '../../Spacing.modules.scss';
+  composes: none rounded from '../../Borders.modules.scss';
+  composes: medium boldFont from '../../Typography/Text/Text.modules.scss';
+  composes: height font from '../../FormFields.modules.scss';
 
-  padding: 0;
-  cursor: pointer;
-  background: none;
+  display: block;
+
   width: 100%;
-}
 
-.inner {
-  composes: none rounded from '../Borders.modules.scss';
-  composes: medium boldFont from '../Typography/Text/Text.modules.scss';
-  composes: height font from '../FormFields.modules.scss';
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
+
+  background: none;
   transition: background 0.2s;
-  flex: 1;
-  padding: 0 2rem;
 }
 
 @include from-breakpoint(medium) {
   .button {
-    display: inline-flex;
+    display: inline-block;
 
     width: auto;
     min-width: 180px;
@@ -49,7 +44,7 @@ $button-text-color: $color-white;
 }
 
 .primary {
-  composes: inner;
+  composes: button;
 
   background-color: $primary-bg-color;
   color: $button-text-color;
@@ -63,7 +58,7 @@ $button-text-color: $color-white;
 }
 
 .secondary {
-  composes: inner;
+  composes: button;
 
   background-color: $secondary-bg-color;
   color: $button-text-color;
@@ -77,7 +72,7 @@ $button-text-color: $color-white;
 }
 
 .inverted {
-  composes: inner;
+  composes: button;
 
   background-color: $button-text-color;
   color: $color-text;
@@ -88,4 +83,14 @@ $button-text-color: $color-white;
     background-color: transparent;
     color: $button-text-color;
   }
+}
+
+.centered {
+  composes: rounded from '../../Borders.modules.scss';
+
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
 }

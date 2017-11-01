@@ -1,26 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import {warn} from '../../../utils/warn'
+import { warn } from '../../../utils/warn'
 import safeRest from '../../../utils/safeRest'
+
+import BaseButton from '../../Button/BaseButton/BaseButton'
 
 import styles from './ButtonLink.modules.scss'
 
 /**
  * A link that is styled as a button.
  */
-const ButtonLink = ({reactRouterLinkComponent, variant, children, ...rest}) => {
+const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
     warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
 
-  return React.createElement(
-    reactRouterLinkComponent || 'a',
-    {
-      ...safeRest(rest),
-      className: styles[variant],
-    },
-    children
+  return (
+    <BaseButton
+      {...safeRest(rest)}
+      element={reactRouterLinkComponent || 'a'}
+      variant={variant}
+      dangerouslyAddClassName={styles[variant]}
+    >
+      {children}
+    </BaseButton>
   )
 }
 

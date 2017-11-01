@@ -2,10 +2,12 @@
 
 exports[`ButtonLink renders 1`] = `
 <a
-  className="primary"
-  href={null}
-  to={null}
+  class="primary primary"
 >
-  Go home
+  <div
+    class="row centered"
+  >
+    Go home
+  </div>
 </a>
 `;

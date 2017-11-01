@@ -4,9 +4,7 @@ import PropTypes from 'prop-types'
 import { warn } from '../../utils/warn'
 import safeRest from '../../utils/safeRest'
 
-import styles from './Button.modules.scss'
-
-import FlexBox from '../Flexbox/Flexbox'
+import BaseButton from './BaseButton/BaseButton'
 
 const preventDisabling = ({ disabled, ...props }) => {
   if (disabled) {
@@ -20,11 +18,9 @@ const Button = ({ type, variant, children, ...rest }) => {
   const restNoDisabled = preventDisabling(rest)
 
   return (
-    <button {...safeRest(restNoDisabled)} type={type} className={styles.button}>
-      <FlexBox direction="row" dangerouslyAddClassName={styles[variant]}>
-        {children}
-      </FlexBox>
-    </button>
+    <BaseButton {...safeRest(restNoDisabled)} element="button" variant={variant} type={type}>
+      {children}
+    </BaseButton>
   )
 }
 
