@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import {childrenOfType} from 'airbnb-prop-types'
 
 import Box from '../../Box/Box'
 import Flexbox from '../../Flexbox/Flexbox'
@@ -26,10 +26,10 @@ class PanelWrapper extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const { panelOnToggle } = this.props
+    const {panelOnToggle} = this.props
 
     if (this.state.open !== nextProps.open) {
-      this.setState({ open: nextProps.open })
+      this.setState({open: nextProps.open})
 
       if (panelOnToggle) {
         panelOnToggle(nextProps.open)
@@ -38,14 +38,14 @@ class PanelWrapper extends React.Component {
   }
 
   render() {
-    const { panelId, panelHeader, last, onClick, children } = this.props
+    const {panelId, panelHeader, last, onClick, children} = this.props
 
     return (
       <div data-testid={panelId}>
         <HairlineDivider />
 
         <Clickable onClick={onClick} dangerouslyAddClassName={styles.header}>
-          <Box spacing="padding" vertical={3}>
+          <Box y={3}>
             <Flexbox direction="row">
               <Box spacing="margin" right={3}>
                 <DecorativeIcon symbol="caretDown" variant="primary" />
@@ -69,7 +69,7 @@ class PanelWrapper extends React.Component {
             >
               <DimpleDivider />
 
-              <Box spacing="padding" vertical={3}>
+              <Box y={3}>
                 <Text block>{children}</Text>
               </Box>
             </div>

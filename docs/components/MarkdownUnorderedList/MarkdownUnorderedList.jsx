@@ -6,7 +6,7 @@ import UnorderedList from '../../../src/components/Lists/UnorderedList/Unordered
 import Text from '../../../src/components/Typography/Text/Text'
 
 const MarkdownUnorderedList = ({children}) => (
-  <Box spacing="margin" bottom={3}>
+  <Box below={3}>
     <Text block size="medium">
       <UnorderedList>
         {React.Children.map(children, li => (

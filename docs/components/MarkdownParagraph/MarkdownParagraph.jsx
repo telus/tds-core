@@ -5,7 +5,7 @@ import Box from '../../../src/components/Box/Box'
 import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
 
 const MarkdownParagraph = ({small, children}) => (
-  <Box spacing="margin" bottom={3}>
+  <Box below={3}>
     <Paragraph size={small ? 'small' : 'medium'}>{children}</Paragraph>
   </Box>
 )

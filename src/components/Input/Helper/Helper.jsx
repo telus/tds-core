@@ -7,11 +7,10 @@ import safeRest from '../../../utils/safeRest'
 
 import styles from './Helper.modules.scss'
 
-const Helper = ({ feedback, children, ...rest }) => (
+const Helper = ({feedback, children, ...rest}) => (
   <Box
     {...safeRest(rest)}
-    spacing="padding"
-    all={3}
+    inset={3}
     dangerouslyAddClassName={feedback ? styles[feedback] : styles.default}
   >
     {children}

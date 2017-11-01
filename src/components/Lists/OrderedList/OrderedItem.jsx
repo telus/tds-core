@@ -5,11 +5,9 @@ import Box from '../../Box/Box'
 
 import safeRest from '../../../utils/safeRest'
 
-const OrderedItem = ({ children, ...rest }) => (
+const OrderedItem = ({children, ...rest}) => (
   <li {...safeRest(rest)}>
-    <Box spacing="margin" bottom={2}>
-      {children}
-    </Box>
+    <Box below={2}>{children}</Box>
   </li>
 )
 

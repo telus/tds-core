@@ -47,15 +47,19 @@ exports[`ExpandCollapse renders 1`] = `
           >
             <Box
               all={undefined}
+              below={undefined}
               bottom={undefined}
               dangerouslyAddClassName={undefined}
               horizontal={undefined}
               inline={false}
+              inset={undefined}
               left={undefined}
               right={undefined}
-              spacing="padding"
+              spacing={undefined}
               top={undefined}
-              vertical={3}
+              vertical={undefined}
+              x={undefined}
+              y={3}
             >
               <div
                 className="verticalPadding-3"
@@ -69,18 +73,22 @@ exports[`ExpandCollapse renders 1`] = `
                   >
                     <Box
                       all={undefined}
+                      below={undefined}
                       bottom={undefined}
                       dangerouslyAddClassName={undefined}
                       horizontal={undefined}
                       inline={false}
+                      inset={undefined}
                       left={undefined}
                       right={3}
                       spacing="margin"
                       top={undefined}
                       vertical={undefined}
+                      x={undefined}
+                      y={undefined}
                     >
                       <div
-                        className="rightMargin-3"
+                        className=""
                       >
                         <DecorativeIcon
                           size={24}
@@ -156,15 +164,19 @@ exports[`ExpandCollapse renders 1`] = `
                 </DimpleDivider>
                 <Box
                   all={undefined}
+                  below={undefined}
                   bottom={undefined}
                   dangerouslyAddClassName={undefined}
                   horizontal={undefined}
                   inline={false}
+                  inset={undefined}
                   left={undefined}
                   right={undefined}
-                  spacing="padding"
+                  spacing={undefined}
                   top={undefined}
-                  vertical={3}
+                  vertical={undefined}
+                  x={undefined}
+                  y={3}
                 >
                   <div
                     className="verticalPadding-3"
@@ -227,15 +239,19 @@ exports[`ExpandCollapse renders 1`] = `
           >
             <Box
               all={undefined}
+              below={undefined}
               bottom={undefined}
               dangerouslyAddClassName={undefined}
               horizontal={undefined}
               inline={false}
+              inset={undefined}
               left={undefined}
               right={undefined}
-              spacing="padding"
+              spacing={undefined}
               top={undefined}
-              vertical={3}
+              vertical={undefined}
+              x={undefined}
+              y={3}
             >
               <div
                 className="verticalPadding-3"
@@ -249,18 +265,22 @@ exports[`ExpandCollapse renders 1`] = `
                   >
                     <Box
                       all={undefined}
+                      below={undefined}
                       bottom={undefined}
                       dangerouslyAddClassName={undefined}
                       horizontal={undefined}
                       inline={false}
+                      inset={undefined}
                       left={undefined}
                       right={3}
                       spacing="margin"
                       top={undefined}
                       vertical={undefined}
+                      x={undefined}
+                      y={undefined}
                     >
                       <div
-                        className="rightMargin-3"
+                        className=""
                       >
                         <DecorativeIcon
                           size={24}
@@ -336,15 +356,19 @@ exports[`ExpandCollapse renders 1`] = `
                 </DimpleDivider>
                 <Box
                   all={undefined}
+                  below={undefined}
                   bottom={undefined}
                   dangerouslyAddClassName={undefined}
                   horizontal={undefined}
                   inline={false}
+                  inset={undefined}
                   left={undefined}
                   right={undefined}
-                  spacing="padding"
+                  spacing={undefined}
                   top={undefined}
-                  vertical={3}
+                  vertical={undefined}
+                  x={undefined}
+                  y={3}
                 >
                   <div
                     className="verticalPadding-3"

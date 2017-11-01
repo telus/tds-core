@@ -6,7 +6,7 @@ import OrderedList from '../../../src/components/Lists/OrderedList/OrderedList'
 import Text from '../../../src/components/Typography/Text/Text'
 
 const MarkdownOrderedList = ({children}) => (
-  <Box spacing="margin" bottom={3}>
+  <Box below={3}>
     <Text block size="medium">
       <OrderedList>
         {React.Children.map(children, li => (

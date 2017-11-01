@@ -59,9 +59,9 @@ class Tooltip extends React.Component {
   }
 
   toggleBubbleOnOutsideEvent = event => {
-    const { connectedFieldLabel } = this.props
+    const {connectedFieldLabel} = this.props
 
-    const { bubbleId, triggerId } = getIds(connectedFieldLabel)
+    const {bubbleId, triggerId} = getIds(connectedFieldLabel)
 
     const inBubble = closest(event.target, `#${bubbleId}`)
     const inTrigger = closest(event.target, `#${triggerId}`)
@@ -72,8 +72,8 @@ class Tooltip extends React.Component {
   }
 
   toggleBubble = () => {
-    this.setState(({ open }) => {
-      return { open: !open }
+    this.setState(({open}) => {
+      return {open: !open}
     })
   }
 
@@ -82,9 +82,8 @@ class Tooltip extends React.Component {
 
     return (
       <Box
-        spacing="padding"
-        vertical={2}
-        horizontal={3}
+        y={2}
+        x={3}
         dangerouslyAddClassName={classes}
         id={id}
         role="tooltip"
@@ -98,9 +97,9 @@ class Tooltip extends React.Component {
   }
 
   render() {
-    const { direction, connectedFieldLabel, children, ...rest } = this.props
+    const {direction, connectedFieldLabel, children, ...rest} = this.props
 
-    const { bubbleId, triggerId } = getIds(connectedFieldLabel)
+    const {bubbleId, triggerId} = getIds(connectedFieldLabel)
 
     return (
       <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>

@@ -14,7 +14,7 @@ import messagingStyles from '../Messaging.modules.scss'
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 import styles from './Notification.modules.scss'
 
-const { Container, Row, Column } = Grid
+const {Container, Row, Column} = Grid
 
 const iconByVariant = {
   success: {
@@ -52,8 +52,8 @@ const renderContent = (variant, children) => {
 /**
  * A banner that highlights important messages.
  */
-const Notification = ({ variant, children, ...rest }) => (
-  <Box {...safeRest(rest)} spacing="padding" vertical={3} dangerouslyAddClassName={styles[variant]}>
+const Notification = ({variant, children, ...rest}) => (
+  <Box {...safeRest(rest)} y={3} dangerouslyAddClassName={styles[variant]}>
     <Container limitWidth>
       <Row>
         <Column xs={12}>

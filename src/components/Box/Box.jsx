@@ -3,39 +3,33 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
-import capitalize from '../../utils/capitalize'
+// import capitalize from '../../utils/capitalize'
 
 import styles from './Box.modules.scss'
 
-const getClassName = (spacing, location, scale) => {
-  if (!scale) {
+const getXClasses = xSize => {
+  if (!xSize) {
     return undefined
   }
 
-  return styles[`${location}${capitalize(spacing)}-${scale}`]
+  return styles[`horizontalPadding-${xSize}`]
 }
 
-const getClasses = (
-  spacing,
-  all,
-  vertical,
-  horizontal,
-  top,
-  right,
-  bottom,
-  left,
-  dangerousClassName
-) =>
-  joinClassNames(
-    getClassName(spacing, 'all', all),
-    getClassName(spacing, 'vertical', vertical),
-    getClassName(spacing, 'horizontal', horizontal),
-    getClassName(spacing, 'top', top),
-    getClassName(spacing, 'right', right),
-    getClassName(spacing, 'bottom', bottom),
-    getClassName(spacing, 'left', left),
-    dangerousClassName
-  )
+const getBelowClasses = belowSize => {
+  if (!belowSize) {
+    return undefined
+  }
+
+  return styles[`bottomMargin-${belowSize}`]
+}
+
+const getYClasses = ySize => {
+  if (!ySize) {
+    return undefined
+  }
+
+  return styles[`verticalPadding-${ySize}`]
+}
 
 const Box = ({
   inline,
@@ -47,32 +41,36 @@ const Box = ({
   right,
   bottom,
   left,
+  inset,
+  x,
+  y,
+  below,
   dangerouslyAddClassName,
   children,
   ...rest
-}) =>
-  React.createElement(
-    inline ? 'span' : 'div',
-    {
-      ...safeRest(rest),
-      className: getClasses(
-        spacing,
-        all,
-        vertical,
-        horizontal,
-        top,
-        right,
-        bottom,
-        left,
-        dangerouslyAddClassName
-      ),
-    },
-    children
+}) => {
+  const xSize = inset || x
+  const ySize = inset || y
+
+  const Tag = inline ? 'span' : 'div'
+
+  const classes = joinClassNames(
+    getXClasses(xSize),
+    getYClasses(ySize),
+    getBelowClasses(below),
+    dangerouslyAddClassName
   )
+
+  return (
+    <Tag {...safeRest(rest)} className={classes}>
+      {children}
+    </Tag>
+  )
+}
 
 Box.propTypes = {
   inline: PropTypes.bool,
-  spacing: PropTypes.oneOf(['margin', 'padding']).isRequired,
+  spacing: PropTypes.oneOf(['margin', 'padding']),
   all: PropTypes.oneOf([1, 2, 3, 4, 6]),
   vertical: PropTypes.oneOf([1, 2, 3, 4, 6]),
   horizontal: PropTypes.oneOf([1, 2, 3, 4, 6]),
@@ -80,12 +78,17 @@ Box.propTypes = {
   right: PropTypes.oneOf([1, 2, 3, 4, 6]),
   bottom: PropTypes.oneOf([1, 2, 3, 4, 6]),
   left: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  inset: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  x: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  y: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  below: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   dangerouslyAddClassName: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 
 Box.defaultProps = {
   inline: false,
+  spacing: undefined,
   all: undefined,
   vertical: undefined,
   horizontal: undefined,
@@ -93,6 +96,10 @@ Box.defaultProps = {
   right: undefined,
   bottom: undefined,
   left: undefined,
+  inset: undefined,
+  x: undefined,
+  y: undefined,
+  below: undefined,
   dangerouslyAddClassName: undefined,
 }
 

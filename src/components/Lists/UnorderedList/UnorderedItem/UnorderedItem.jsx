@@ -7,11 +7,9 @@ import safeRest from '../../../../utils/safeRest'
 
 import styles from './UnorderedItem.modules.scss'
 
-const UnorderedItem = ({ listStyle, children, ...rest }) => (
+const UnorderedItem = ({listStyle, children, ...rest}) => (
   <li {...safeRest(rest)} className={styles[listStyle]}>
-    <Box spacing="margin" bottom={2}>
-      {children}
-    </Box>
+    <Box below={2}>{children}</Box>
   </li>
 )
 

@@ -2,9 +2,8 @@
 
 exports[`SectionHeadingRenderer renders 1`] = `
 <Box
-  bottom={3}
+  below={3}
   inline={false}
-  spacing="margin"
 >
   <Heading
     id="a-section"

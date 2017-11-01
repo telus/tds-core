@@ -5,7 +5,7 @@ import Box from '../../../src/components/Box/Box'
 import Heading from '../../../src/components/Typography/Heading/Heading'
 
 const MarkdownHeading = ({level, children}) => (
-  <Box spacing="margin" bottom={3}>
+  <Box below={3}>
     <Heading level={level}>{children}</Heading>
   </Box>
 )

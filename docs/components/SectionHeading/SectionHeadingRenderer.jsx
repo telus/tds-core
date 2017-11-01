@@ -11,7 +11,7 @@ const SectionHeadingRenderer = ({id, depth, toolbar, children}) => {
   const level = Math.min(depth, 4)
 
   return (
-    <Box spacing="margin" bottom={3}>
+    <Box below={3}>
       <Heading level={`h${level}`} id={id}>
         <Flexbox direction="row">
           {children}

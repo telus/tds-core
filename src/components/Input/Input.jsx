@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import {childrenOfType} from 'airbnb-prop-types'
 
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
@@ -56,7 +56,7 @@ class Input extends React.Component {
   }
 
   onChange = event => {
-    const { onChange } = this.props
+    const {onChange} = this.props
 
     this.setState({
       value: event.target.value,
@@ -68,9 +68,9 @@ class Input extends React.Component {
   }
 
   onFocus = event => {
-    const { onFocus } = this.props
+    const {onFocus} = this.props
 
-    this.setState({ focus: true })
+    this.setState({focus: true})
 
     if (onFocus) {
       onFocus(event)
@@ -78,9 +78,9 @@ class Input extends React.Component {
   }
 
   onBlur = event => {
-    const { onBlur } = this.props
+    const {onBlur} = this.props
 
-    this.setState({ focus: false })
+    this.setState({focus: false})
 
     if (onBlur) {
       onBlur(event)
@@ -104,7 +104,7 @@ class Input extends React.Component {
           )}
         </label>
 
-        {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
+        {tooltip && React.cloneElement(tooltip, {connectedFieldLabel: label})}
       </Flexbox>
     )
   }
@@ -156,7 +156,7 @@ class Input extends React.Component {
   }
 
   render() {
-    const { type, label, hint, feedback, error, helper, tooltip, ...rest } = this.props
+    const {type, label, hint, feedback, error, helper, tooltip, ...rest} = this.props
 
     const inputId = generateId(rest.id, rest.name, label)
     const helperId = helper && inputId.postfix('helper')
@@ -168,28 +168,15 @@ class Input extends React.Component {
 
     return (
       <Flexbox direction="column">
-        <Box spacing="margin" bottom={2}>
-          {this.renderLabel(label, hint, tooltip, inputId)}
-        </Box>
+        <Box below={2}>{this.renderLabel(label, hint, tooltip, inputId)}</Box>
 
         {helper && (
-          <Box spacing="margin" bottom={3}>
-            {this.renderHelper(helper, helperId, feedback, this.state.value)}
-          </Box>
+          <Box below={3}>{this.renderHelper(helper, helperId, feedback, this.state.value)}</Box>
         )}
 
-        {error && (
-          <Box spacing="margin" bottom={3}>
-            {this.renderError(error, errorId)}
-          </Box>
-        )}
+        {error && <Box below={3}>{this.renderError(error, errorId)}</Box>}
 
-        <Box
-          spacing="padding"
-          horizontal={3}
-          dangerouslyAddClassName={wrapperClassName}
-          data-testid="inputWrapper"
-        >
+        <Box x={3} dangerouslyAddClassName={wrapperClassName} data-testid="inputWrapper">
           <Flexbox direction="row" dangerouslyAddClassName={styles.sizing}>
             <input
               {...safeRest(rest)}
