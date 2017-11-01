@@ -4,6 +4,7 @@ import { shallow } from 'enzyme'
 import { warn } from '../../../utils/warn'
 
 import Button from '../Button'
+import FlexBox from '../../Flexbox/Flexbox'
 
 jest.mock('../../../utils/warn')
 
@@ -30,16 +31,30 @@ describe('Button', () => {
 
   it('can be presented as one of the allowed variants', () => {
     let button = doShallow()
-    expect(button).toHaveClassName('primary')
+    let flexboxQuery = button.find(FlexBox)
+    let flexbox
+
+    expect(flexboxQuery).toHaveLength(1)
+    flexbox = flexboxQuery.first()
+    expect(flexbox.props().dangerouslyAddClassName).toBe('primary')
 
     button = doShallow({ variant: 'primary' })
-    expect(button).toHaveClassName('primary')
+    flexboxQuery = button.find(FlexBox)
+    expect(flexboxQuery).toHaveLength(1)
+    flexbox = flexboxQuery.first()
+    expect(flexbox.props().dangerouslyAddClassName).toBe('primary')
 
     button = doShallow({ variant: 'secondary' })
-    expect(button).toHaveClassName('secondary')
+    flexboxQuery = button.find(FlexBox)
+    expect(flexboxQuery).toHaveLength(1)
+    flexbox = flexboxQuery.first()
+    expect(flexbox.props().dangerouslyAddClassName).toBe('secondary')
 
     button = doShallow({ variant: 'inverted' })
-    expect(button).toHaveClassName('inverted')
+    flexboxQuery = button.find(FlexBox)
+    expect(flexboxQuery).toHaveLength(1)
+    flexbox = flexboxQuery.first()
+    expect(flexbox.props().dangerouslyAddClassName).toBe('inverted')
   })
 
   it('can not be disabled', () => {
