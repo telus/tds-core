@@ -45,9 +45,9 @@ class PanelWrapper extends React.Component {
         <HairlineDivider />
 
         <Clickable onClick={onClick} dangerouslyAddClassName={styles.header}>
-          <Box y={3}>
+          <Box vertical={3}>
             <Flexbox direction="row">
-              <Box spacing="margin" right={3}>
+              <Box right={3}>
                 <DecorativeIcon symbol="caretDown" variant="primary" />
               </Box>
 
@@ -69,7 +69,7 @@ class PanelWrapper extends React.Component {
             >
               <DimpleDivider />
 
-              <Box y={3}>
+              <Box vertical={3}>
                 <Text block>{children}</Text>
               </Box>
             </div>

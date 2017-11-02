@@ -12,7 +12,7 @@ import styles from './Card.modules.scss'
  * <span class="docs--badge__updated">updated!</span> <span class="docs--badge__version">v0.26.0</span>
  */
 const Card = ({variant, children, ...rest}) => (
-  <Box {...safeRest(rest)} x={3} y={4} dangerouslyAddClassName={styles[variant]}>
+  <Box {...safeRest(rest)} horizontal={3} vertical={4} dangerouslyAddClassName={styles[variant]}>
     {children}
   </Box>
 )

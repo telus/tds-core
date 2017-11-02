@@ -30,7 +30,7 @@ const iconByVariant = {
 const isImportant = variant => variant === 'success' || variant === 'error'
 
 const renderIcon = icon => (
-  <Box spacing="margin" right={3} dangerouslyAddClassName={iconWrapperStyles.fixLineHeight}>
+  <Box right={3} dangerouslyAddClassName={iconWrapperStyles.fixLineHeight}>
     <DecorativeIcon symbol={icon.symbol} variant={icon.color} />
   </Box>
 )

@@ -54,12 +54,10 @@ exports[`ExpandCollapse renders 1`] = `
               inset={undefined}
               right={undefined}
               tag={undefined}
-              vertical={undefined}
-              y={3}
+              vertical={3}
             >
               <div
-                className=""
-                y={3}
+                className="verticalPadding-3"
               >
                 <Flexbox
                   dangerouslyAddClassName={undefined}
@@ -76,13 +74,11 @@ exports[`ExpandCollapse renders 1`] = `
                       inline={false}
                       inset={undefined}
                       right={3}
-                      spacing="margin"
                       tag={undefined}
                       vertical={undefined}
                     >
                       <div
                         className="rightMargin-3"
-                        spacing="margin"
                       >
                         <DecorativeIcon
                           size={24}
@@ -165,12 +161,10 @@ exports[`ExpandCollapse renders 1`] = `
                   inset={undefined}
                   right={undefined}
                   tag={undefined}
-                  vertical={undefined}
-                  y={3}
+                  vertical={3}
                 >
                   <div
-                    className=""
-                    y={3}
+                    className="verticalPadding-3"
                   >
                     <Text
                       block={true}
@@ -237,12 +231,10 @@ exports[`ExpandCollapse renders 1`] = `
               inset={undefined}
               right={undefined}
               tag={undefined}
-              vertical={undefined}
-              y={3}
+              vertical={3}
             >
               <div
-                className=""
-                y={3}
+                className="verticalPadding-3"
               >
                 <Flexbox
                   dangerouslyAddClassName={undefined}
@@ -259,13 +251,11 @@ exports[`ExpandCollapse renders 1`] = `
                       inline={false}
                       inset={undefined}
                       right={3}
-                      spacing="margin"
                       tag={undefined}
                       vertical={undefined}
                     >
                       <div
                         className="rightMargin-3"
-                        spacing="margin"
                       >
                         <DecorativeIcon
                           size={24}
@@ -348,12 +338,10 @@ exports[`ExpandCollapse renders 1`] = `
                   inset={undefined}
                   right={undefined}
                   tag={undefined}
-                  vertical={undefined}
-                  y={3}
+                  vertical={3}
                 >
                   <div
-                    className=""
-                    y={3}
+                    className="verticalPadding-3"
                   >
                     <Text
                       block={true}

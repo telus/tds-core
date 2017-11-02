@@ -82,8 +82,8 @@ class Tooltip extends React.Component {
 
     return (
       <Box
-        y={2}
-        x={3}
+        vertical={2}
+        horizontal={3}
         dangerouslyAddClassName={classes}
         id={id}
         role="tooltip"

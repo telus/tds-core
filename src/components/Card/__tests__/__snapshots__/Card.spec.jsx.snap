@@ -2,9 +2,7 @@
 
 exports[`<Card /> renders 1`] = `
 <div
-  class="white"
-  x="3"
-  y="4"
+  class="horizontalPadding-3 verticalPadding-4 white"
 >
   Children
 </div>
