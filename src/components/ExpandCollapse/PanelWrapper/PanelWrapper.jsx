@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {childrenOfType} from 'airbnb-prop-types'
+import { childrenOfType } from 'airbnb-prop-types'
 
 import Box from '../../Box/Box'
 import Flexbox from '../../Flexbox/Flexbox'
@@ -10,6 +10,7 @@ import Text from '../../Typography/Text/Text'
 import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
 import DimpleDivider from '../../Dividers/DimpleDivider/DimpleDivider'
 import Reveal from '../../Animation/Reveal'
+import Translate from '../../Animation/Translate'
 import Panel from '../Panel/Panel'
 
 import styles from '../Panel/Panel.modules.scss'
@@ -22,14 +23,15 @@ class PanelWrapper extends React.Component {
 
     this.state = {
       open: props.open,
+      hover: false,
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    const {panelOnToggle} = this.props
+    const { panelOnToggle } = this.props
 
     if (this.state.open !== nextProps.open) {
-      this.setState({open: nextProps.open})
+      this.setState({ open: nextProps.open })
 
       if (panelOnToggle) {
         panelOnToggle(nextProps.open)
@@ -37,18 +39,36 @@ class PanelWrapper extends React.Component {
     }
   }
 
+  mouseEnter = () => {
+    this.setState({ hover: true })
+  }
+
+  mouseLeave = () => {
+    this.setState({ hover: false })
+  }
+
   render() {
-    const {panelId, panelHeader, last, onClick, children} = this.props
+    const { panelId, panelHeader, last, onClick, children } = this.props
 
     return (
       <div data-testid={panelId}>
         <HairlineDivider />
 
-        <Clickable onClick={onClick} dangerouslyAddClassName={styles.header}>
+        <Clickable
+          onClick={onClick}
+          onMouseEnter={this.mouseEnter}
+          onMouseLeave={this.mouseLeave}
+          dangerouslyAddClassName={styles.header}
+        >
           <Box vertical={3}>
+            {/* padding */}
             <Flexbox direction="row">
               <Box right={3}>
-                <DecorativeIcon symbol="caretDown" variant="primary" />
+                {' '}
+                {/* margin */}
+                <Translate timeout={300} in={this.state.hover} direction="y" length="0.25rem">
+                  {() => <DecorativeIcon symbol="caretDown" variant="primary" />}
+                </Translate>
               </Box>
 
               <Text size="medium">{panelHeader}</Text>

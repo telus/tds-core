@@ -17,7 +17,7 @@ exports[`ExpandCollapse renders 1`] = `
   >
     <PanelWrapper
       key=".0"
-      last={false}
+      last={true}
       onClick={[Function]}
       open={true}
       panelHeader="First panel title"
@@ -39,22 +39,26 @@ exports[`ExpandCollapse renders 1`] = `
           dangerouslyAddClassName="header"
           dangerouslyAddStyle={undefined}
           onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
           <button
             className="clickable header"
             onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={undefined}
           >
             <Box
-              below={undefined}
-              between={undefined}
+              all={undefined}
+              bottom={undefined}
               dangerouslyAddClassName={undefined}
               horizontal={undefined}
               inline={false}
-              inset={undefined}
               left={undefined}
               right={undefined}
-              tag={undefined}
+              spacing="padding"
+              top={undefined}
               vertical={3}
             >
               <div
@@ -68,37 +72,68 @@ exports[`ExpandCollapse renders 1`] = `
                     className="row"
                   >
                     <Box
-                      below={undefined}
-                      between={undefined}
+                      all={undefined}
+                      bottom={undefined}
                       dangerouslyAddClassName={undefined}
                       horizontal={undefined}
                       inline={false}
-                      inset={undefined}
                       left={undefined}
                       right={3}
-                      tag={undefined}
+                      spacing="margin"
+                      top={undefined}
                       vertical={undefined}
                     >
                       <div
                         className="rightMargin-3"
                       >
-                        <DecorativeIcon
-                          size={24}
-                          symbol="caretDown"
-                          variant="primary"
+                        <Translate
+                          direction="y"
+                          in={false}
+                          length="0.25rem"
+                          timeout={300}
                         >
-                          <Icon
-                            aria-hidden="true"
-                            size={24}
-                            symbol="caretDown"
-                            variant="primary"
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
                           >
-                            <i
-                              aria-hidden="true"
-                              className="iconCaretDown primary size24"
-                            />
-                          </Icon>
-                        </DecorativeIcon>
+                            <div
+                              style={
+                                Object {
+                                  "transition": "transform 300ms",
+                                }
+                              }
+                            >
+                              <DecorativeIcon
+                                size={24}
+                                symbol="caretDown"
+                                variant="primary"
+                              >
+                                <Icon
+                                  aria-hidden="true"
+                                  size={24}
+                                  symbol="caretDown"
+                                  variant="primary"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    className="iconCaretDown primary size24"
+                                  />
+                                </Icon>
+                              </DecorativeIcon>
+                            </div>
+                          </Transition>
+                        </Translate>
                       </div>
                     </Box>
                     <Text
@@ -144,7 +179,7 @@ exports[`ExpandCollapse renders 1`] = `
                 Object {
                   "height": "0px",
                   "overflow": "hidden",
-                  "transition": "height 500ms ease",
+                  "transition": "height 500ms",
                 }
               }
             >
@@ -155,15 +190,15 @@ exports[`ExpandCollapse renders 1`] = `
                   />
                 </DimpleDivider>
                 <Box
-                  below={undefined}
-                  between={undefined}
+                  all={undefined}
+                  bottom={undefined}
                   dangerouslyAddClassName={undefined}
                   horizontal={undefined}
                   inline={false}
-                  inset={undefined}
                   left={undefined}
                   right={undefined}
-                  tag={undefined}
+                  spacing="padding"
+                  top={undefined}
                   vertical={3}
                 >
                   <div
@@ -184,186 +219,6 @@ exports[`ExpandCollapse renders 1`] = `
                           onToggle={undefined}
                         >
                           First panel
-                        </Panel>
-                      </div>
-                    </Text>
-                  </div>
-                </Box>
-              </div>
-            </div>
-          </Transition>
-        </Reveal>
-      </div>
-    </PanelWrapper>
-    <PanelWrapper
-      key=".1"
-      last={true}
-      onClick={[Function]}
-      open={false}
-      panelHeader="Second panel title"
-      panelId="panel-2"
-      panelOnToggle={undefined}
-    >
-      <div
-        data-testid="panel-2"
-      >
-        <HairlineDivider
-          gradient={false}
-          vertical={false}
-        >
-          <hr
-            className="horizontalThin"
-          />
-        </HairlineDivider>
-        <Clickable
-          dangerouslyAddClassName="header"
-          dangerouslyAddStyle={undefined}
-          onClick={[Function]}
-        >
-          <button
-            className="clickable header"
-            onClick={[Function]}
-            style={undefined}
-          >
-            <Box
-              below={undefined}
-              between={undefined}
-              dangerouslyAddClassName={undefined}
-              horizontal={undefined}
-              inline={false}
-              inset={undefined}
-              left={undefined}
-              right={undefined}
-              tag={undefined}
-              vertical={3}
-            >
-              <div
-                className="verticalPadding-3"
-              >
-                <Flexbox
-                  dangerouslyAddClassName={undefined}
-                  direction="row"
-                >
-                  <div
-                    className="row"
-                  >
-                    <Box
-                      below={undefined}
-                      between={undefined}
-                      dangerouslyAddClassName={undefined}
-                      horizontal={undefined}
-                      inline={false}
-                      inset={undefined}
-                      left={undefined}
-                      right={3}
-                      tag={undefined}
-                      vertical={undefined}
-                    >
-                      <div
-                        className="rightMargin-3"
-                      >
-                        <DecorativeIcon
-                          size={24}
-                          symbol="caretDown"
-                          variant="primary"
-                        >
-                          <Icon
-                            aria-hidden="true"
-                            size={24}
-                            symbol="caretDown"
-                            variant="primary"
-                          >
-                            <i
-                              aria-hidden="true"
-                              className="iconCaretDown primary size24"
-                            />
-                          </Icon>
-                        </DecorativeIcon>
-                      </div>
-                    </Box>
-                    <Text
-                      block={false}
-                      bold={false}
-                      invert={false}
-                      size="medium"
-                    >
-                      <span
-                        className="medium mediumFont color"
-                      >
-                        Second panel title
-                      </span>
-                    </Text>
-                  </div>
-                </Flexbox>
-              </div>
-            </Box>
-          </button>
-        </Clickable>
-        <Reveal
-          height={0}
-          in={false}
-          timeout={500}
-        >
-          <Transition
-            appear={false}
-            enter={true}
-            exit={true}
-            in={false}
-            mountOnEnter={false}
-            onEnter={[Function]}
-            onEntered={[Function]}
-            onEntering={[Function]}
-            onExit={[Function]}
-            onExited={[Function]}
-            onExiting={[Function]}
-            timeout={500}
-            unmountOnExit={false}
-          >
-            <div
-              style={
-                Object {
-                  "height": 0,
-                  "overflow": "hidden",
-                  "transition": "height 500ms ease",
-                }
-              }
-            >
-              <div>
-                <DimpleDivider>
-                  <hr
-                    className="dimple"
-                  />
-                </DimpleDivider>
-                <Box
-                  below={undefined}
-                  between={undefined}
-                  dangerouslyAddClassName={undefined}
-                  horizontal={undefined}
-                  inline={false}
-                  inset={undefined}
-                  left={undefined}
-                  right={undefined}
-                  tag={undefined}
-                  vertical={3}
-                >
-                  <div
-                    className="verticalPadding-3"
-                  >
-                    <Text
-                      block={true}
-                      bold={false}
-                      invert={false}
-                      size="base"
-                    >
-                      <div
-                        className="base baseFont color"
-                      >
-                        <Panel
-                          header="Second panel title"
-                          id="panel-2"
-                          onToggle={undefined}
-                        >
-                          Second panel
                         </Panel>
                       </div>
                     </Text>

@@ -2,6 +2,7 @@ import React from 'react'
 import { shallow, mount } from 'enzyme'
 
 import Reveal from '../../Animation/Reveal'
+import Translate from '../../Animation/Translate'
 import ExpandCollapse from '../ExpandCollapse'
 
 describe('ExpandCollapse', () => {
@@ -18,14 +19,14 @@ describe('ExpandCollapse', () => {
     const expandCollapse = mount(component)
 
     const findPanel = id => expandCollapse.find(`[data-testid="${id}"]`)
+    const findPanelHeader = id => findPanel(id).find('button')
 
     return {
       expandCollapse,
       findPanel,
-      togglePanel: id =>
-        findPanel(id)
-          .find('button')
-          .simulate('click'),
+      hoverPanel: id => findPanelHeader(id).simulate('mouseEnter'),
+      unHoverPanel: id => findPanelHeader(id).simulate('mouseLeave'),
+      togglePanel: id => findPanelHeader(id).simulate('click'),
     }
   }
 
@@ -38,13 +39,26 @@ describe('ExpandCollapse', () => {
         <ExpandCollapse.Panel id="panel-1" header="First panel title">
           First panel
         </ExpandCollapse.Panel>
-        <ExpandCollapse.Panel id="panel-2" header="Second panel title">
-          Second panel
-        </ExpandCollapse.Panel>
       </ExpandCollapse>
     )
 
     expect(expandCollapse).toMatchSnapshot()
+  })
+
+  it('translates the caret icon on hover', () => {
+    const { findPanel, hoverPanel, unHoverPanel } = doMount(
+      <ExpandCollapse>
+        <ExpandCollapse.Panel id="panel-1" header="First panel title">
+          First panel
+        </ExpandCollapse.Panel>
+      </ExpandCollapse>
+    )
+
+    hoverPanel('panel-1')
+    expect(findPanel('panel-1').find(Translate)).toHaveProp('in', true)
+
+    unHoverPanel('panel-1')
+    expect(findPanel('panel-1').find(Translate)).toHaveProp('in', false)
   })
 
   it('can have some panels open and some panels closed by default', () => {

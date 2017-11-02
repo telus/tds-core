@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Translate renders when the transition is not triggered 1`] = `
+<div
+  style="transition:transform 500ms"
+>
+  <div>
+    Content to translate
+  </div>
+</div>
+`;
+
+exports[`Translate renders when the transition is triggered 1`] = `
+<div
+  style="transition:transform 500ms;transform:translateX(1rem)"
+>
+  <div>
+    Content to translate
+  </div>
+</div>
+`;

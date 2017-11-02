@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
 
 const defaultStyle = timeout => ({
-  transition: `height ${timeout}ms ease`,
+  transition: `height ${timeout}ms`,
   height: 0,
   overflow: 'hidden',
 })
@@ -11,8 +11,6 @@ const defaultStyle = timeout => ({
 const transitionStyles = height => ({
   entered: { height: `${height}px` },
 })
-
-// TODO Fix the height! Can't do transition with "height: auto"
 
 const Reveal = ({ height, children, ...rest }) => (
   <Transition {...rest}>
