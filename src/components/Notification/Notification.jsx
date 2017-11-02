@@ -53,7 +53,7 @@ const renderContent = (variant, children) => {
  * A banner that highlights important messages.
  */
 const Notification = ({variant, children, ...rest}) => (
-  <Box {...safeRest(rest)} y={3} dangerouslyAddClassName={styles[variant]}>
+  <Box {...safeRest(rest)} vertical={3} dangerouslyAddClassName={styles[variant]}>
     <Container limitWidth>
       <Row>
         <Column xs={12}>
