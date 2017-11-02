@@ -33,6 +33,7 @@ const getYClasses = ySize => {
 
 const Box = ({
   inline,
+  tag,
   spacing,
   all,
   vertical,
@@ -52,7 +53,14 @@ const Box = ({
   const xSize = inset || x
   const ySize = inset || y
 
-  const Tag = inline ? 'span' : 'div'
+  let Tag = ''
+  if (tag) {
+    Tag = tag
+  } else if (inline) {
+    Tag = 'span'
+  } else {
+    Tag = 'div'
+  }
 
   const classes = joinClassNames(
     getXClasses(xSize),
@@ -70,6 +78,7 @@ const Box = ({
 
 Box.propTypes = {
   inline: PropTypes.bool,
+  tag: PropTypes.string,
   spacing: PropTypes.oneOf(['margin', 'padding']),
   all: PropTypes.oneOf([1, 2, 3, 4, 6]),
   vertical: PropTypes.oneOf([1, 2, 3, 4, 6]),
@@ -88,6 +97,7 @@ Box.propTypes = {
 
 Box.defaultProps = {
   inline: false,
+  tag: undefined,
   spacing: undefined,
   all: undefined,
   vertical: undefined,
