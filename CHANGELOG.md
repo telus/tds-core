@@ -1,3 +1,17 @@
+#### 0.28.1 (2017-11-02)
+
+##### Bug Fixes
+
+* **button:**
+  * fixed issue with button text being left aligned on mobile Safari ([f68ba8ef](https://github.com/telusdigital/tds/commit/f68ba8ef7757cebe8bbf2c82ed0f8fab119c4db7))
+  * fixed issue with button text being left aligned on mobile Safari ([e0c00a09](https://github.com/telusdigital/tds/commit/e0c00a09df647ca5c3a6949059889d14412ad92e))
+  * fixed issue with button text being left aligned on safari 10 ([9117282d](https://github.com/telusdigital/tds/commit/9117282d3fada470c0c844d29a84c49f972282ba))
+* **links:** Allow objects in to prop ([a1de2fb0](https://github.com/telusdigital/tds/commit/a1de2fb07ea2d395b7474605b2bdd78a6a774804))
+
+##### Refactors
+
+* **button:** Bring Button and ButtonLink into a common base component ([309271bf](https://github.com/telusdigital/tds/commit/309271bff529a690532b781e4b3dd26939642f37))
+
 #### 0.28.0 (2017-11-01)
 
 ##### Documentation Changes
