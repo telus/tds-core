@@ -2,6 +2,7 @@
 
 exports[`ExpandCollapse renders 1`] = `
 <ExpandCollapse
+  onToggle={undefined}
   open={
     Array [
       "panel-1",
@@ -9,6 +10,7 @@ exports[`ExpandCollapse renders 1`] = `
   }
 >
   <div
+    onToggle={undefined}
     open={
       Array [
         "panel-1",

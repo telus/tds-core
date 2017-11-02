@@ -61,72 +61,99 @@ describe('ExpandCollapse', () => {
     expect(findPanel('panel-1').find(Translate)).toHaveProp('in', false)
   })
 
-  it('can have some panels open and some panels closed by default', () => {
-    const { findPanel } = doMount(
-      <ExpandCollapse open={['panel-1']}>
-        <ExpandCollapse.Panel id="panel-1" header="First panel title">
-          First panel
-        </ExpandCollapse.Panel>
-        <ExpandCollapse.Panel id="panel-2" header="Second panel title">
-          Second panel
-        </ExpandCollapse.Panel>
-      </ExpandCollapse>
-    )
+  describe('panel interactions', () => {
+    it('can have some panels open and some panels closed by default', () => {
+      const { findPanel } = doMount(
+        <ExpandCollapse open={['panel-1']}>
+          <ExpandCollapse.Panel id="panel-1" header="First panel title">
+            First panel
+          </ExpandCollapse.Panel>
+          <ExpandCollapse.Panel id="panel-2" header="Second panel title">
+            Second panel
+          </ExpandCollapse.Panel>
+        </ExpandCollapse>
+      )
 
-    expectPanelToBeOpen(findPanel('panel-1'))
-    expectPanelToBeClosed(findPanel('panel-2'))
-  })
+      expectPanelToBeOpen(findPanel('panel-1'))
+      expectPanelToBeClosed(findPanel('panel-2'))
+    })
 
-  it('opens and closes panels by clicking them', () => {
-    const { findPanel, togglePanel } = doMount(
-      <ExpandCollapse>
-        <ExpandCollapse.Panel id="panel-1" header="First panel title">
-          First panel
-        </ExpandCollapse.Panel>
-      </ExpandCollapse>
-    )
+    it('opens and closes panels by clicking them', () => {
+      const { findPanel, togglePanel } = doMount(
+        <ExpandCollapse>
+          <ExpandCollapse.Panel id="panel-1" header="First panel title">
+            First panel
+          </ExpandCollapse.Panel>
+        </ExpandCollapse>
+      )
 
-    togglePanel('panel-1')
-    expectPanelToBeOpen(findPanel('panel-1'))
+      togglePanel('panel-1')
+      expectPanelToBeOpen(findPanel('panel-1'))
 
-    togglePanel('panel-1')
-    expectPanelToBeClosed(findPanel('panel-1'))
-  })
+      togglePanel('panel-1')
+      expectPanelToBeClosed(findPanel('panel-1'))
+    })
 
-  it('lets a parent component control the open and closed panels', () => {
-    const { expandCollapse, findPanel } = doMount(
-      <ExpandCollapse>
-        <ExpandCollapse.Panel id="panel-1" header="First panel title">
-          First panel
-        </ExpandCollapse.Panel>
-      </ExpandCollapse>
-    )
+    it('lets a parent component control the open and closed panels', () => {
+      const { expandCollapse, findPanel } = doMount(
+        <ExpandCollapse>
+          <ExpandCollapse.Panel id="panel-1" header="First panel title">
+            First panel
+          </ExpandCollapse.Panel>
+        </ExpandCollapse>
+      )
 
-    expandCollapse.setProps({ open: ['panel-1'] })
-    expectPanelToBeOpen(findPanel('panel-1'))
+      expandCollapse.setProps({ open: ['panel-1'] })
+      expectPanelToBeOpen(findPanel('panel-1'))
 
-    expandCollapse.setProps({ open: [] })
-    expectPanelToBeClosed(findPanel('panel-1'))
-  })
+      expandCollapse.setProps({ open: [] })
+      expectPanelToBeClosed(findPanel('panel-1'))
+    })
 
-  it('triggers callbacks when panels are opened and closed', () => {
-    const onPanelToggle = jest.fn()
+    it('triggers individual panel callbacks when panels are opened and closed', () => {
+      const onPanelToggle = jest.fn()
 
-    const { expandCollapse, togglePanel } = doMount(
-      <ExpandCollapse>
-        <ExpandCollapse.Panel id="panel-1" header="First panel title" onToggle={onPanelToggle}>
-          First panel
-        </ExpandCollapse.Panel>
-      </ExpandCollapse>
-    )
+      const { expandCollapse, togglePanel } = doMount(
+        <ExpandCollapse>
+          <ExpandCollapse.Panel id="panel-1" header="First panel title" onToggle={onPanelToggle}>
+            First panel
+          </ExpandCollapse.Panel>
+        </ExpandCollapse>
+      )
 
-    togglePanel('panel-1')
-    expect(onPanelToggle).toHaveBeenCalledWith(true)
+      togglePanel('panel-1')
+      expect(onPanelToggle).toHaveBeenCalledWith(true)
 
-    expandCollapse.setProps({ open: [] })
-    expect(onPanelToggle).toHaveBeenCalledWith(false)
+      expandCollapse.setProps({ open: [] })
+      expect(onPanelToggle).toHaveBeenCalledWith(false)
 
-    // TODO: onToggle for the entire expand collapse that receives all the state
+      // TODO: onToggle for the entire expand collapse that receives all the state
+    })
+
+    it('triggers a callback when any panel is opened or closed', () => {
+      const onToggle = jest.fn()
+
+      const { togglePanel } = doMount(
+        <ExpandCollapse onToggle={onToggle}>
+          <ExpandCollapse.Panel id="panel-1" header="First panel title">
+            First panel
+          </ExpandCollapse.Panel>
+          <ExpandCollapse.Panel id="panel-2" header="Second panel title">
+            Second panel
+          </ExpandCollapse.Panel>
+        </ExpandCollapse>
+      )
+
+      togglePanel('panel-1')
+      // TODO: Can I convert back to an array?
+      expect(onToggle).toHaveBeenCalledWith(new Set(['panel-1']))
+
+      // TODO: Can I just clear the onToggle mock?
+      jest.clearAllMocks()
+
+      togglePanel('panel-2')
+      expect(onToggle).toHaveBeenCalledWith(new Set(['panel-1', 'panel-2']))
+    })
   })
 
   it('passes additional attributes to the element', () => {

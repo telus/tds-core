@@ -27,17 +27,26 @@ class ExpandCollapse extends React.Component {
   }
 
   togglePanel = panelId => {
-    this.setState(({ panels }) => {
-      const nextPanels = new Set(panels)
+    const { onToggle } = this.props
 
-      if (nextPanels.has(panelId)) {
-        nextPanels.delete(panelId)
-      } else {
-        nextPanels.add(panelId)
+    this.setState(
+      ({ panels }) => {
+        const nextPanels = new Set(panels)
+
+        if (nextPanels.has(panelId)) {
+          nextPanels.delete(panelId)
+        } else {
+          nextPanels.add(panelId)
+        }
+
+        return { panels: nextPanels }
+      },
+      () => {
+        if (onToggle) {
+          onToggle(this.state.panels)
+        }
       }
-
-      return { panels: nextPanels }
-    })
+    )
   }
 
   render() {
@@ -68,11 +77,13 @@ class ExpandCollapse extends React.Component {
 
 ExpandCollapse.propTypes = {
   open: PropTypes.array,
+  onToggle: PropTypes.func,
   children: childrenOfType(Panel).isRequired,
 }
 
 ExpandCollapse.defaultProps = {
   open: [],
+  onToggle: undefined,
 }
 
 ExpandCollapse.Panel = Panel
