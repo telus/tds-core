@@ -93,15 +93,13 @@ class Input extends React.Component {
     return (
       <Flexbox direction="row" dangerouslyAddClassName={formFieldStyles.containsTooltip}>
         <label htmlFor={inputId.identity()} className={labelClassNames}>
-          <Text size="medium" bold>
-            {label}
-          </Text>
+          <Box right={2} inline>
+            <Text size="medium" bold>
+              {label}
+            </Text>
+          </Box>
 
-          {hint && (
-            <Box inline spacing="margin" left={2}>
-              <Text size="small">{hint}</Text>
-            </Box>
-          )}
+          {hint && <Text size="small">{hint}</Text>}
         </label>
 
         {tooltip && React.cloneElement(tooltip, {connectedFieldLabel: label})}
@@ -176,27 +174,25 @@ class Input extends React.Component {
 
         {error && <Box below={3}>{this.renderError(error, errorId)}</Box>}
 
-        <Box x={3} dangerouslyAddClassName={wrapperClassName} data-testid="inputWrapper">
+        <Box horizontal={3} dangerouslyAddClassName={wrapperClassName} data-testid="inputWrapper">
           <Flexbox direction="row" dangerouslyAddClassName={styles.sizing}>
-            <input
-              {...safeRest(rest)}
-              id={inputId.identity()}
-              type={type}
-              className={styles.input}
-              value={this.state.value}
-              onChange={this.onChange}
-              onFocus={this.onFocus}
-              onBlur={this.onBlur}
-              aria-invalid={feedback === 'error' ? 'true' : 'false'}
-              aria-describedby={errorId || helperId || undefined}
-            />
+            <Box right={3} dangerouslyAddClassName={styles.fullWidth}>
+              <input
+                {...safeRest(rest)}
+                id={inputId.identity()}
+                type={type}
+                className={styles.input}
+                value={this.state.value}
+                onChange={this.onChange}
+                onFocus={this.onFocus}
+                onBlur={this.onBlur}
+                aria-invalid={feedback === 'error' ? 'true' : 'false'}
+                aria-describedby={errorId || helperId || undefined}
+              />
+            </Box>
 
             <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
-              {() => (
-                <Box spacing="margin" left={3}>
-                  {this.renderIcon(feedback)}
-                </Box>
-              )}
+              {() => <Box>{this.renderIcon(feedback)}</Box>}
             </Fade>
           </Flexbox>
         </Box>

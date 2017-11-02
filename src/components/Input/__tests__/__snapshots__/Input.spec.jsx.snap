@@ -15,9 +15,13 @@ exports[`Input renders 1`] = `
         for="the-input"
       >
         <span
-          class="medium boldFont color"
+          class="rightMargin-2"
         >
-          The input
+          <span
+            class="medium boldFont color"
+          >
+            The input
+          </span>
         </span>
       </label>
     </div>
@@ -29,15 +33,19 @@ exports[`Input renders 1`] = `
     <div
       class="row sizing"
     >
-      <input
-        aria-invalid="false"
-        class="input"
-        id="the-input"
-        type="text"
-        value=""
+      <div
+        class="rightMargin-3 fullWidth"
       >
-        
-      </input>
+        <input
+          aria-invalid="false"
+          class="input"
+          id="the-input"
+          type="text"
+          value=""
+        >
+          
+        </input>
+      </div>
     </div>
   </div>
 </div>
@@ -58,9 +66,13 @@ exports[`Input renders with a feedback state and icon 1`] = `
         for="the-input"
       >
         <span
-          class="medium boldFont color"
+          class="rightMargin-2"
         >
-          The input
+          <span
+            class="medium boldFont color"
+          >
+            The input
+          </span>
         </span>
       </label>
     </div>
@@ -72,15 +84,19 @@ exports[`Input renders with a feedback state and icon 1`] = `
     <div
       class="row sizing"
     >
-      <input
-        aria-invalid="true"
-        class="input"
-        id="the-input"
-        type="text"
-        value=""
+      <div
+        class="rightMargin-3 fullWidth"
       >
-        
-      </input>
+        <input
+          aria-invalid="true"
+          class="input"
+          id="the-input"
+          type="text"
+          value=""
+        >
+          
+        </input>
+      </div>
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >

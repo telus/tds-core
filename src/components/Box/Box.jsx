@@ -3,11 +3,10 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
-// import capitalize from '../../utils/capitalize'
 
 import styles from './Box.modules.scss'
 
-const getXClasses = xSize => {
+const getHorizontalClasses = xSize => {
   if (!xSize) {
     return undefined
   }
@@ -15,7 +14,7 @@ const getXClasses = xSize => {
   return styles[`horizontalPadding-${xSize}`]
 }
 
-const getYClasses = ySize => {
+const getVerticalClasses = ySize => {
   if (!ySize) {
     return undefined
   }
@@ -23,7 +22,7 @@ const getYClasses = ySize => {
   return styles[`verticalPadding-${ySize}`]
 }
 
-const getBelowClasses = belowSize => {
+const getBelowClass = belowSize => {
   if (!belowSize) {
     return undefined
   }
@@ -31,7 +30,15 @@ const getBelowClasses = belowSize => {
   return styles[`bottomMargin-${belowSize}`]
 }
 
-const getBetweenClasses = (betweenSize, inline) => {
+const getRightClass = rightSize => {
+  if (!rightSize) {
+    return undefined
+  }
+
+  return styles[`rightMargin-${rightSize}`]
+}
+
+const getBetweenClasses = betweenSize => {
   if (!betweenSize) {
     return undefined
   }
@@ -42,25 +49,18 @@ const getBetweenClasses = (betweenSize, inline) => {
 const Box = ({
   inline,
   tag,
-  spacing,
-  all,
   vertical,
   horizontal,
-  top,
-  right,
-  bottom,
-  left,
   inset,
-  x,
-  y,
   below,
+  right,
   between,
   dangerouslyAddClassName,
   children,
   ...rest
 }) => {
-  const xSize = inset || x
-  const ySize = inset || y
+  const xSize = inset || horizontal
+  const ySize = inset || vertical
 
   let Tag = ''
   if (tag) {
@@ -72,10 +72,11 @@ const Box = ({
   }
 
   const classes = joinClassNames(
-    getXClasses(xSize),
-    getYClasses(ySize),
-    getBelowClasses(below),
-    getBetweenClasses(between, inline),
+    getHorizontalClasses(xSize),
+    getVerticalClasses(ySize),
+    getBelowClass(below),
+    getRightClass(right),
+    getBetweenClasses(between),
     dangerouslyAddClassName
   )
 
@@ -89,18 +90,11 @@ const Box = ({
 Box.propTypes = {
   inline: PropTypes.bool,
   tag: PropTypes.string,
-  spacing: PropTypes.oneOf(['margin', 'padding']),
-  all: PropTypes.oneOf([1, 2, 3, 4, 6]),
   vertical: PropTypes.oneOf([1, 2, 3, 4, 6]),
   horizontal: PropTypes.oneOf([1, 2, 3, 4, 6]),
-  top: PropTypes.oneOf([1, 2, 3, 4, 6]),
-  right: PropTypes.oneOf([1, 2, 3, 4, 6]),
-  bottom: PropTypes.oneOf([1, 2, 3, 4, 6]),
-  left: PropTypes.oneOf([1, 2, 3, 4, 6]),
   inset: PropTypes.oneOf([1, 2, 3, 4, 6]),
-  x: PropTypes.oneOf([1, 2, 3, 4, 6]),
-  y: PropTypes.oneOf([1, 2, 3, 4, 6]),
   below: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  right: PropTypes.oneOf([1, 2, 3, 4, 6]),
   between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   dangerouslyAddClassName: PropTypes.string,
   children: PropTypes.node.isRequired,
@@ -109,18 +103,11 @@ Box.propTypes = {
 Box.defaultProps = {
   inline: false,
   tag: undefined,
-  spacing: undefined,
-  all: undefined,
   vertical: undefined,
   horizontal: undefined,
-  top: undefined,
-  right: undefined,
-  bottom: undefined,
-  left: undefined,
   inset: undefined,
-  x: undefined,
-  y: undefined,
   below: undefined,
+  right: undefined,
   between: undefined,
   dangerouslyAddClassName: undefined,
 }
