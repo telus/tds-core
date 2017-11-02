@@ -48,6 +48,7 @@ exports[`ExpandCollapse renders 1`] = `
             <Box
               all={undefined}
               below={undefined}
+              between={undefined}
               bottom={undefined}
               dangerouslyAddClassName={undefined}
               horizontal={undefined}
@@ -75,6 +76,7 @@ exports[`ExpandCollapse renders 1`] = `
                     <Box
                       all={undefined}
                       below={undefined}
+                      between={undefined}
                       bottom={undefined}
                       dangerouslyAddClassName={undefined}
                       horizontal={undefined}
@@ -167,6 +169,7 @@ exports[`ExpandCollapse renders 1`] = `
                 <Box
                   all={undefined}
                   below={undefined}
+                  between={undefined}
                   bottom={undefined}
                   dangerouslyAddClassName={undefined}
                   horizontal={undefined}
@@ -243,6 +246,7 @@ exports[`ExpandCollapse renders 1`] = `
             <Box
               all={undefined}
               below={undefined}
+              between={undefined}
               bottom={undefined}
               dangerouslyAddClassName={undefined}
               horizontal={undefined}
@@ -270,6 +274,7 @@ exports[`ExpandCollapse renders 1`] = `
                     <Box
                       all={undefined}
                       below={undefined}
+                      between={undefined}
                       bottom={undefined}
                       dangerouslyAddClassName={undefined}
                       horizontal={undefined}
@@ -362,6 +367,7 @@ exports[`ExpandCollapse renders 1`] = `
                 <Box
                   all={undefined}
                   below={undefined}
+                  between={undefined}
                   bottom={undefined}
                   dangerouslyAddClassName={undefined}
                   horizontal={undefined}

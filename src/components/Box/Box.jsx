@@ -15,6 +15,14 @@ const getXClasses = xSize => {
   return styles[`horizontalPadding-${xSize}`]
 }
 
+const getYClasses = ySize => {
+  if (!ySize) {
+    return undefined
+  }
+
+  return styles[`verticalPadding-${ySize}`]
+}
+
 const getBelowClasses = belowSize => {
   if (!belowSize) {
     return undefined
@@ -23,12 +31,12 @@ const getBelowClasses = belowSize => {
   return styles[`bottomMargin-${belowSize}`]
 }
 
-const getYClasses = ySize => {
-  if (!ySize) {
+const getBetweenClasses = (betweenSize, inline) => {
+  if (!betweenSize) {
     return undefined
   }
 
-  return styles[`verticalPadding-${ySize}`]
+  return styles[`betweenBottomMargin-${betweenSize}`]
 }
 
 const Box = ({
@@ -46,6 +54,7 @@ const Box = ({
   x,
   y,
   below,
+  between,
   dangerouslyAddClassName,
   children,
   ...rest
@@ -66,6 +75,7 @@ const Box = ({
     getXClasses(xSize),
     getYClasses(ySize),
     getBelowClasses(below),
+    getBetweenClasses(between, inline),
     dangerouslyAddClassName
   )
 
@@ -91,6 +101,7 @@ Box.propTypes = {
   x: PropTypes.oneOf([1, 2, 3, 4, 6]),
   y: PropTypes.oneOf([1, 2, 3, 4, 6]),
   below: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   dangerouslyAddClassName: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
@@ -110,6 +121,7 @@ Box.defaultProps = {
   x: undefined,
   y: undefined,
   below: undefined,
+  between: undefined,
   dangerouslyAddClassName: undefined,
 }
 

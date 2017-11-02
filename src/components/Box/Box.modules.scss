@@ -55,6 +55,11 @@ $boxProps: ('margin': 'Margin', 'padding': 'Padding');
       #{$p}-bottom: $value;
     }
 
+    // TODO: refactor to not generate unnecessary .betweenBottomPadding-*
+    .betweenBottom#{$v}-#{$level} > *:not(:last-child) {
+      #{$p}-bottom: $value;
+    }
+
     .left#{$v}-#{$level} {
       #{$p}-left: $value;
     }
