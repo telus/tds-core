@@ -3,39 +3,16 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
+import capitalize from '../../utils/capitalize'
 
 import styles from './Box.modules.scss'
 
-const getHorizontalClasses = xSize => {
-  if (!xSize) {
+const getClassName = (spacing, location, scale) => {
+  if (!scale) {
     return undefined
   }
 
-  return styles[`horizontalPadding-${xSize}`]
-}
-
-const getVerticalClasses = ySize => {
-  if (!ySize) {
-    return undefined
-  }
-
-  return styles[`verticalPadding-${ySize}`]
-}
-
-const getBelowClass = belowSize => {
-  if (!belowSize) {
-    return undefined
-  }
-
-  return styles[`bottomMargin-${belowSize}`]
-}
-
-const getRightClass = rightSize => {
-  if (!rightSize) {
-    return undefined
-  }
-
-  return styles[`rightMargin-${rightSize}`]
+  return styles[`${location}${capitalize(spacing)}-${scale}`]
 }
 
 const getBetweenClasses = betweenSize => {
@@ -54,6 +31,7 @@ const Box = ({
   inset,
   below,
   right,
+  left,
   between,
   dangerouslyAddClassName,
   children,
@@ -72,10 +50,11 @@ const Box = ({
   }
 
   const classes = joinClassNames(
-    getHorizontalClasses(xSize),
-    getVerticalClasses(ySize),
-    getBelowClass(below),
-    getRightClass(right),
+    getClassName('padding', 'horizontal', xSize),
+    getClassName('padding', 'vertical', ySize),
+    getClassName('margin', 'bottom', below),
+    getClassName('margin', 'right', right),
+    getClassName('margin', 'left', left),
     getBetweenClasses(between),
     dangerouslyAddClassName
   )
@@ -95,6 +74,7 @@ Box.propTypes = {
   inset: PropTypes.oneOf([1, 2, 3, 4, 6]),
   below: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   right: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  left: PropTypes.oneOf([1, 2, 3, 4, 6]),
   between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   dangerouslyAddClassName: PropTypes.string,
   children: PropTypes.node.isRequired,
@@ -108,6 +88,7 @@ Box.defaultProps = {
   inset: undefined,
   below: undefined,
   right: undefined,
+  left: undefined,
   between: undefined,
   dangerouslyAddClassName: undefined,
 }

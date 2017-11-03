@@ -23,7 +23,7 @@ const getIcon = (symbol, className) => {
   const direction = symbol === 'leftChevron' ? {right: 2} : {left: 2}
 
   return (
-    <Box inline spacing="margin" {...direction} dangerouslyAddClassName={className}>
+    <Box inline {...direction} dangerouslyAddClassName={className}>
       <DecorativeIcon symbol={symbol} size={16} />
     </Box>
   )

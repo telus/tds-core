@@ -7,9 +7,7 @@ exports[`ChevronLink renders 1`] = `
 >
   Go home
   <span
-    class="rightChevron"
-    left="2"
-    spacing="margin"
+    class="leftMargin-2 rightChevron"
   >
     <i
       aria-hidden="true"
