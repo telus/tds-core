@@ -24,6 +24,7 @@ class PanelWrapper extends React.Component {
     this.state = {
       open: props.open,
       hover: false,
+      contentWrapperHeight: 0,
     }
   }
 
@@ -36,6 +37,20 @@ class PanelWrapper extends React.Component {
       if (panelOnToggle) {
         panelOnToggle(nextProps.open)
       }
+    }
+  }
+
+  componentDidMount() {
+    this.adjustContentHeight()
+  }
+
+  componentDidUpdate() {
+    this.adjustContentHeight()
+  }
+
+  adjustContentHeight() {
+    if (this.contentWrapper.offsetHeight !== this.state.contentWrapperHeight) {
+      this.setState({ contentWrapperHeight: this.contentWrapper.offsetHeight })
     }
   }
 
@@ -93,11 +108,7 @@ class PanelWrapper extends React.Component {
           </Box>
         </Clickable>
 
-        <Reveal
-          timeout={500}
-          in={this.state.open}
-          height={this.contentWrapper ? this.contentWrapper.offsetHeight : 0}
-        >
+        <Reveal timeout={500} in={this.state.open} height={this.state.contentWrapperHeight}>
           {() => (
             <div
               ref={contentWrapper => {
