@@ -55,12 +55,13 @@ class ExpandCollapse extends React.Component {
     return (
       <div {...safeRest(rest)}>
         {React.Children.map(children, (panel, index) => {
-          const { id, header, onToggle } = panel.props
+          const { id, header, subtext, onToggle } = panel.props
 
           return (
             <PanelWrapper
               panelId={id}
               panelHeader={header}
+              panelSubtext={subtext}
               panelOnToggle={onToggle}
               open={this.state.panels.has(id)}
               last={index === React.Children.count(children) - 1}

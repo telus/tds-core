@@ -6,12 +6,14 @@ const Panel = ({ children }) => children
 
 Panel.propTypes = {
   id: PropTypes.string.isRequired,
-  header: PropTypes.string.isRequired,
+  header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  subtext: PropTypes.string,
   onToggle: PropTypes.func,
   children: PropTypes.node.isRequired,
 }
 
 Panel.defaultProps = {
+  subtext: undefined,
   onToggle: undefined
 }
 

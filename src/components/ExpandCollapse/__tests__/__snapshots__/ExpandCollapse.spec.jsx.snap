@@ -22,9 +22,10 @@ exports[`ExpandCollapse renders 1`] = `
       last={true}
       onClick={[Function]}
       open={true}
-      panelHeader="First panel title"
+      panelHeader="Panel title"
       panelId="panel-1"
       panelOnToggle={undefined}
+      panelSubtext={undefined}
     >
       <div
         data-testid="panel-1"
@@ -138,18 +139,44 @@ exports[`ExpandCollapse renders 1`] = `
                         </Translate>
                       </div>
                     </Box>
-                    <Text
-                      block={false}
-                      bold={false}
-                      invert={false}
-                      size="medium"
+                    <Flexbox
+                      dangerouslyAddClassName={undefined}
+                      direction="column"
                     >
-                      <span
-                        className="medium mediumFont color"
+                      <div
+                        className="column"
                       >
-                        First panel title
-                      </span>
-                    </Text>
+                        <Box
+                          all={undefined}
+                          bottom={2}
+                          dangerouslyAddClassName={undefined}
+                          horizontal={undefined}
+                          inline={false}
+                          left={undefined}
+                          right={undefined}
+                          spacing="margin"
+                          top={undefined}
+                          vertical={undefined}
+                        >
+                          <div
+                            className="bottomMargin-2"
+                          >
+                            <Text
+                              block={false}
+                              bold={false}
+                              invert={false}
+                              size="medium"
+                            >
+                              <span
+                                className="medium mediumFont color"
+                              >
+                                Panel title
+                              </span>
+                            </Text>
+                          </div>
+                        </Box>
+                      </div>
+                    </Flexbox>
                   </div>
                 </Flexbox>
               </div>
@@ -216,11 +243,12 @@ exports[`ExpandCollapse renders 1`] = `
                         className="base baseFont color"
                       >
                         <Panel
-                          header="First panel title"
+                          header="Panel title"
                           id="panel-1"
                           onToggle={undefined}
+                          subtext={undefined}
                         >
-                          First panel
+                          Panel content
                         </Panel>
                       </div>
                     </Text>

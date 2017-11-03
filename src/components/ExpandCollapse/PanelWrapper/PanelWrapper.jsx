@@ -13,7 +13,7 @@ import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
 import Panel from '../Panel/Panel'
 
-import styles from '../Panel/Panel.modules.scss'
+import styles from './PanelWrapper.modules.scss'
 
 class PanelWrapper extends React.Component {
   constructor(props) {
@@ -47,8 +47,25 @@ class PanelWrapper extends React.Component {
     this.setState({ hover: false })
   }
 
+  renderHeader(header, subtext) {
+    if (typeof header !== 'string') {
+      return header
+    }
+
+    // FIXME: Use between here!
+    return (
+      <Flexbox direction="column">
+        <Box spacing="margin" bottom={2}>
+          <Text size="medium">{header}</Text>
+        </Box>
+
+        {subtext && <Text size="small">{subtext}</Text>}
+      </Flexbox>
+    )
+  }
+
   render() {
-    const { panelId, panelHeader, last, onClick, children } = this.props
+    const { panelId, panelHeader, panelSubtext, last, onClick, children } = this.props
 
     return (
       <div data-testid={panelId}>
@@ -71,7 +88,7 @@ class PanelWrapper extends React.Component {
                 </Translate>
               </Box>
 
-              <Text size="medium">{panelHeader}</Text>
+              {this.renderHeader(panelHeader, panelSubtext)}
             </Flexbox>
           </Box>
         </Clickable>
@@ -103,7 +120,8 @@ class PanelWrapper extends React.Component {
 }
 PanelWrapper.propTypes = {
   panelId: PropTypes.string.isRequired,
-  panelHeader: PropTypes.string.isRequired,
+  panelHeader: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  panelSubtext: PropTypes.string,
   panelOnToggle: PropTypes.func,
   open: PropTypes.bool,
   last: PropTypes.bool.isRequired,
@@ -112,6 +130,7 @@ PanelWrapper.propTypes = {
 }
 
 PanelWrapper.defaultProps = {
+  panelSubtext: undefined,
   panelOnToggle: undefined,
   open: false,
 }
