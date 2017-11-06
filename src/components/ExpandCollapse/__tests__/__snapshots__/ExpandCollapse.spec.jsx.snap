@@ -10,6 +10,7 @@ exports[`ExpandCollapse renders 1`] = `
   }
 >
   <div
+    className="base"
     onToggle={undefined}
     open={
       Array [
@@ -22,6 +23,7 @@ exports[`ExpandCollapse renders 1`] = `
       last={true}
       onClick={[Function]}
       open={true}
+      panelDisabled={false}
       panelHeader="Panel title"
       panelId="panel-1"
       panelOnToggle={undefined}
@@ -41,12 +43,14 @@ exports[`ExpandCollapse renders 1`] = `
         <Clickable
           dangerouslyAddClassName="header"
           dangerouslyAddStyle={undefined}
+          disabled={false}
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
           <button
             className="clickable header"
+            disabled={false}
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
@@ -243,6 +247,7 @@ exports[`ExpandCollapse renders 1`] = `
                         className="base baseFont color"
                       >
                         <Panel
+                          disabled={false}
                           header="Panel title"
                           id="panel-1"
                           onToggle={undefined}

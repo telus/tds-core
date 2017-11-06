@@ -51,3 +51,16 @@ const trigger = () => {
   </ExpandCollapse.Panel>
 </ExpandCollapse>
 ```
+
+### Disabled
+
+```
+<ExpandCollapse>
+  <ExpandCollapse.Panel id="panel-30" header="First panel title" disabled>
+    First panel
+  </ExpandCollapse.Panel>
+  <ExpandCollapse.Panel id="panel-31" header="Second panel title" subtext="Some subtext">
+    Second panel
+  </ExpandCollapse.Panel>
+</ExpandCollapse>
+```

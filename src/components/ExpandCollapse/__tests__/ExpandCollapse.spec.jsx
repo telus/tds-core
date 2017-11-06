@@ -4,6 +4,7 @@ import { shallow, mount } from 'enzyme'
 import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
 import Text from '../../Typography/Text/Text'
+import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import ExpandCollapse from '../ExpandCollapse'
 
 describe('ExpandCollapse', () => {
@@ -175,6 +176,29 @@ describe('ExpandCollapse', () => {
 
       clickPanel('panel-2')
       expect(onToggle).toHaveBeenCalledWith(new Set(['panel-1', 'panel-2']))
+    })
+  })
+
+  describe('disabled panels', () => {
+    it('are rendered in a disabled treatment', () => {
+      const { findPanelHeader } = doMount(
+        <ExpandCollapse>{aPanel({ id: 'panel-1', disabled: true })}</ExpandCollapse>
+      )
+
+      const panelHeader = findPanelHeader('panel-1')
+      expect(panelHeader).toHaveClassName('disabled')
+      expect(panelHeader).toBeDisabled()
+      expect(panelHeader.find(DecorativeIcon)).not.toBePresent()
+    })
+
+    it('are not able to be opened', () => {
+      const { clickPanel, findPanel } = doMount(
+        <ExpandCollapse>{aPanel({ id: 'panel-1', disabled: true })}</ExpandCollapse>
+      )
+
+      clickPanel('panel-1')
+
+      expectPanelToBeClosed(findPanel('panel-1'))
     })
   })
 

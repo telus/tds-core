@@ -13,6 +13,8 @@ import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
 import Panel from '../Panel/Panel'
 
+import joinClassNames from '../../../utils/joinClassNames'
+
 import styles from './PanelWrapper.modules.scss'
 
 class PanelWrapper extends React.Component {
@@ -80,7 +82,15 @@ class PanelWrapper extends React.Component {
   }
 
   render() {
-    const { panelId, panelHeader, panelSubtext, last, onClick, children } = this.props
+    const {
+      panelId,
+      panelHeader,
+      panelSubtext,
+      panelDisabled,
+      last,
+      onClick,
+      children,
+    } = this.props
 
     return (
       <div data-testid={panelId}>
@@ -90,13 +100,13 @@ class PanelWrapper extends React.Component {
           onClick={onClick}
           onMouseEnter={this.mouseEnter}
           onMouseLeave={this.mouseLeave}
-          dangerouslyAddClassName={styles.header}
+          dangerouslyAddClassName={joinClassNames(styles.header, panelDisabled && styles.disabled)}
+          disabled={panelDisabled}
         >
           <Box vertical={3}>
             {/* padding */}
             <Flexbox direction="row">
               <Box right={3}>
-                {' '}
                 {/* margin */}
                 <Translate timeout={300} in={this.state.hover} direction="y" length="0.25rem">
                   {() => <DecorativeIcon symbol="caretDown" variant="primary" />}
@@ -134,6 +144,7 @@ PanelWrapper.propTypes = {
   panelHeader: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   panelSubtext: PropTypes.string,
   panelOnToggle: PropTypes.func,
+  panelDisabled: PropTypes.bool,
   open: PropTypes.bool,
   last: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
@@ -142,6 +153,7 @@ PanelWrapper.propTypes = {
 
 PanelWrapper.defaultProps = {
   panelSubtext: undefined,
+  panelDisabled: false,
   panelOnToggle: undefined,
   open: false,
 }

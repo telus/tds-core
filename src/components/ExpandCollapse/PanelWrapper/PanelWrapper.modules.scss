@@ -1,4 +1,11 @@
+@import '../../../scss/settings/colours';
+
 .header {
   width: 100%;
   text-align: left;
+}
+
+.disabled {
+  background-color: $color-athens-grey;
+  cursor: default;
 }

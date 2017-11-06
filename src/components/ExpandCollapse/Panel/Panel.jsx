@@ -8,13 +8,15 @@ Panel.propTypes = {
   id: PropTypes.string.isRequired,
   header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   subtext: PropTypes.string,
+  disabled: PropTypes.bool,
   onToggle: PropTypes.func,
   children: PropTypes.node.isRequired,
 }
 
 Panel.defaultProps = {
   subtext: undefined,
-  onToggle: undefined
+  disabled: false,
+  onToggle: undefined,
 }
 
 export default Panel

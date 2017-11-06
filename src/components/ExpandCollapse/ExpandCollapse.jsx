@@ -9,6 +9,8 @@ import { isEqual } from '../../utils/sets'
 import PanelWrapper from './PanelWrapper/PanelWrapper'
 import Panel from './Panel/Panel'
 
+import styles from './ExpandCollapse.modules.scss'
+
 class ExpandCollapse extends React.Component {
   constructor(props) {
     super(props)
@@ -53,9 +55,9 @@ class ExpandCollapse extends React.Component {
     const { children, ...rest } = this.props
 
     return (
-      <div {...safeRest(rest)}>
+      <div {...safeRest(rest)} className={styles.base}>
         {React.Children.map(children, (panel, index) => {
-          const { id, header, subtext, onToggle } = panel.props
+          const { id, header, subtext, disabled, onToggle } = panel.props
 
           return (
             <PanelWrapper
@@ -63,6 +65,7 @@ class ExpandCollapse extends React.Component {
               panelHeader={header}
               panelSubtext={subtext}
               panelOnToggle={onToggle}
+              panelDisabled={disabled}
               open={this.state.panels.has(id)}
               last={index === React.Children.count(children) - 1}
               onClick={() => this.togglePanel(id)}
