@@ -47,7 +47,19 @@ describe('ExpandCollapse', () => {
     </ExpandCollapse.Panel>
   )
 
-  it('renders', () => {
+  it('renders a closed panel', () => {
+    const { expandCollapse } = doMount(
+      <ExpandCollapse>
+        <ExpandCollapse.Panel id="panel-1" header="Panel title">
+          Panel content
+        </ExpandCollapse.Panel>
+      </ExpandCollapse>
+    )
+
+    expect(expandCollapse).toMatchSnapshot()
+  })
+
+  it('renders an open panel', () => {
     const { expandCollapse } = doMount(
       <ExpandCollapse open={['panel-1']}>
         <ExpandCollapse.Panel id="panel-1" header="Panel title">
@@ -102,9 +114,7 @@ describe('ExpandCollapse', () => {
     expect(findPanel('panel-1').find(Translate)).toHaveProp('in', false)
   })
 
-  // TODO: it flips the caret when it opens. Need internet to see the icon.
-
-  describe('panel interactions', () => {
+  describe('panel opening and closing', () => {
     it('can have some panels open and some panels closed by default', () => {
       const { findPanel } = doMount(
         <ExpandCollapse open={['panel-1']}>
@@ -153,8 +163,6 @@ describe('ExpandCollapse', () => {
 
       expandCollapse.setProps({ open: [] })
       expect(onPanelToggle).toHaveBeenCalledWith(false)
-
-      // TODO: onToggle for the entire expand collapse that receives all the state
     })
 
     it('triggers a callback when any panel is opened or closed', () => {
@@ -175,6 +183,17 @@ describe('ExpandCollapse', () => {
 
       clickPanel('panel-2')
       expect(onToggle).toHaveBeenCalledWith(['panel-1', 'panel-2'])
+    })
+
+    it('swaps the direction of the caret icon when opening and closing', () => {
+      const { findPanelHeader, clickPanel } = doMount(
+        <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
+      )
+
+      expect(findPanelHeader('panel-1').find(DecorativeIcon)).toHaveProp('symbol', 'caretDown')
+
+      clickPanel('panel-1')
+      expect(findPanelHeader('panel-1').find(DecorativeIcon)).toHaveProp('symbol', 'caretUp')
     })
   })
 

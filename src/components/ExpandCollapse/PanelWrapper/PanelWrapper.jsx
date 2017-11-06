@@ -107,10 +107,19 @@ class PanelWrapper extends React.Component {
             {/* padding */}
             <Flexbox direction="row">
               <Box right={3}>
+                {' '}
                 {/* margin */}
-                <Translate timeout={300} in={this.state.hover} direction="y" length="0.25rem">
-                  {() => <DecorativeIcon symbol="caretDown" variant="primary" />}
-                </Translate>
+                {!panelDisabled && (
+                  <Translate timeout={300} in={this.state.hover} direction="y" length="0.25rem">
+                    {() => (
+                      <DecorativeIcon
+                        symbol={this.state.open ? 'caretUp' : 'caretDown'}
+                        variant="primary"
+                        size={16}
+                      />
+                    )}
+                  </Translate>
+                )}
               </Box>
 
               {this.renderHeader(panelHeader, panelSubtext)}

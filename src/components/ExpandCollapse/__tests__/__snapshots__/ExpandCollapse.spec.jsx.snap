@@ -1,6 +1,280 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ExpandCollapse renders 1`] = `
+exports[`ExpandCollapse renders a closed panel 1`] = `
+<ExpandCollapse
+  onToggle={undefined}
+  open={Array []}
+>
+  <div
+    className="base"
+    onToggle={undefined}
+    open={Array []}
+  >
+    <PanelWrapper
+      key=".0"
+      last={true}
+      onClick={[Function]}
+      open={false}
+      panelDisabled={false}
+      panelHeader="Panel title"
+      panelId="panel-1"
+      panelOnToggle={undefined}
+      panelSubtext={undefined}
+    >
+      <div
+        data-testid="panel-1"
+      >
+        <HairlineDivider
+          gradient={false}
+          vertical={false}
+        >
+          <hr
+            className="horizontalThin"
+          />
+        </HairlineDivider>
+        <Clickable
+          dangerouslyAddClassName="header"
+          dangerouslyAddStyle={undefined}
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <button
+            className="clickable header"
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={undefined}
+          >
+            <Box
+              below={undefined}
+              between={undefined}
+              dangerouslyAddClassName={undefined}
+              horizontal={undefined}
+              inline={false}
+              inset={undefined}
+              left={undefined}
+              right={undefined}
+              tag={undefined}
+              vertical={3}
+            >
+              <div
+                className="verticalPadding-3"
+              >
+                <Flexbox
+                  dangerouslyAddClassName={undefined}
+                  direction="row"
+                >
+                  <div
+                    className="row"
+                  >
+                    <Box
+                      below={undefined}
+                      between={undefined}
+                      dangerouslyAddClassName={undefined}
+                      horizontal={undefined}
+                      inline={false}
+                      inset={undefined}
+                      left={undefined}
+                      right={3}
+                      tag={undefined}
+                      vertical={undefined}
+                    >
+                      <div
+                        className="rightMargin-3"
+                      >
+                         
+                        <Translate
+                          direction="y"
+                          in={false}
+                          length="0.25rem"
+                          timeout={300}
+                        >
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "transition": "transform 300ms",
+                                }
+                              }
+                            >
+                              <DecorativeIcon
+                                size={16}
+                                symbol="caretDown"
+                                variant="primary"
+                              >
+                                <Icon
+                                  aria-hidden="true"
+                                  size={16}
+                                  symbol="caretDown"
+                                  variant="primary"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    className="iconCaretDown primary size16"
+                                  />
+                                </Icon>
+                              </DecorativeIcon>
+                            </div>
+                          </Transition>
+                        </Translate>
+                      </div>
+                    </Box>
+                    <Flexbox
+                      dangerouslyAddClassName={undefined}
+                      direction="column"
+                    >
+                      <div
+                        className="column"
+                      >
+                        <Box
+                          below={undefined}
+                          between={undefined}
+                          bottom={2}
+                          dangerouslyAddClassName={undefined}
+                          horizontal={undefined}
+                          inline={false}
+                          inset={undefined}
+                          left={undefined}
+                          right={undefined}
+                          spacing="margin"
+                          tag={undefined}
+                          vertical={undefined}
+                        >
+                          <div
+                            bottom={2}
+                            className=""
+                            spacing="margin"
+                          >
+                            <Text
+                              block={false}
+                              bold={false}
+                              invert={false}
+                              size="medium"
+                            >
+                              <span
+                                className="medium mediumFont color"
+                              >
+                                Panel title
+                              </span>
+                            </Text>
+                          </div>
+                        </Box>
+                      </div>
+                    </Flexbox>
+                  </div>
+                </Flexbox>
+              </div>
+            </Box>
+          </button>
+        </Clickable>
+        <Reveal
+          height={0}
+          in={false}
+          timeout={500}
+        >
+          <Transition
+            appear={false}
+            enter={true}
+            exit={true}
+            in={false}
+            mountOnEnter={false}
+            onEnter={[Function]}
+            onEntered={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            onExiting={[Function]}
+            timeout={500}
+            unmountOnExit={false}
+          >
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "overflow": "hidden",
+                  "transition": "height 500ms",
+                }
+              }
+            >
+              <div>
+                <DimpleDivider>
+                  <hr
+                    className="dimple"
+                  />
+                </DimpleDivider>
+                <Box
+                  below={undefined}
+                  between={undefined}
+                  dangerouslyAddClassName={undefined}
+                  horizontal={undefined}
+                  inline={false}
+                  inset={undefined}
+                  left={undefined}
+                  right={undefined}
+                  tag={undefined}
+                  vertical={3}
+                >
+                  <div
+                    className="verticalPadding-3"
+                  >
+                    <Text
+                      block={true}
+                      bold={false}
+                      invert={false}
+                      size="base"
+                    >
+                      <div
+                        className="base baseFont color"
+                      >
+                        <Panel
+                          disabled={false}
+                          header="Panel title"
+                          id="panel-1"
+                          onToggle={undefined}
+                          subtext={undefined}
+                        >
+                          Panel content
+                        </Panel>
+                      </div>
+                    </Text>
+                  </div>
+                </Box>
+              </div>
+            </div>
+          </Transition>
+        </Reveal>
+        <HairlineDivider
+          gradient={false}
+          vertical={false}
+        >
+          <hr
+            className="horizontalThin"
+          />
+        </HairlineDivider>
+      </div>
+    </PanelWrapper>
+  </div>
+</ExpandCollapse>
+`;
+
+exports[`ExpandCollapse renders an open panel 1`] = `
 <ExpandCollapse
   onToggle={undefined}
   open={
@@ -57,15 +331,15 @@ exports[`ExpandCollapse renders 1`] = `
             style={undefined}
           >
             <Box
-              all={undefined}
-              bottom={undefined}
+              below={undefined}
+              between={undefined}
               dangerouslyAddClassName={undefined}
               horizontal={undefined}
               inline={false}
+              inset={undefined}
               left={undefined}
               right={undefined}
-              spacing="padding"
-              top={undefined}
+              tag={undefined}
               vertical={3}
             >
               <div
@@ -79,20 +353,21 @@ exports[`ExpandCollapse renders 1`] = `
                     className="row"
                   >
                     <Box
-                      all={undefined}
-                      bottom={undefined}
+                      below={undefined}
+                      between={undefined}
                       dangerouslyAddClassName={undefined}
                       horizontal={undefined}
                       inline={false}
+                      inset={undefined}
                       left={undefined}
                       right={3}
-                      spacing="margin"
-                      top={undefined}
+                      tag={undefined}
                       vertical={undefined}
                     >
                       <div
                         className="rightMargin-3"
                       >
+                         
                         <Translate
                           direction="y"
                           in={false}
@@ -122,19 +397,19 @@ exports[`ExpandCollapse renders 1`] = `
                               }
                             >
                               <DecorativeIcon
-                                size={24}
-                                symbol="caretDown"
+                                size={16}
+                                symbol="caretUp"
                                 variant="primary"
                               >
                                 <Icon
                                   aria-hidden="true"
-                                  size={24}
-                                  symbol="caretDown"
+                                  size={16}
+                                  symbol="caretUp"
                                   variant="primary"
                                 >
                                   <i
                                     aria-hidden="true"
-                                    className="iconCaretDown primary size24"
+                                    className="iconCaretUp primary size16"
                                   />
                                 </Icon>
                               </DecorativeIcon>
@@ -151,19 +426,23 @@ exports[`ExpandCollapse renders 1`] = `
                         className="column"
                       >
                         <Box
-                          all={undefined}
+                          below={undefined}
+                          between={undefined}
                           bottom={2}
                           dangerouslyAddClassName={undefined}
                           horizontal={undefined}
                           inline={false}
+                          inset={undefined}
                           left={undefined}
                           right={undefined}
                           spacing="margin"
-                          top={undefined}
+                          tag={undefined}
                           vertical={undefined}
                         >
                           <div
-                            className="bottomMargin-2"
+                            bottom={2}
+                            className=""
+                            spacing="margin"
                           >
                             <Text
                               block={false}
@@ -223,15 +502,15 @@ exports[`ExpandCollapse renders 1`] = `
                   />
                 </DimpleDivider>
                 <Box
-                  all={undefined}
-                  bottom={undefined}
+                  below={undefined}
+                  between={undefined}
                   dangerouslyAddClassName={undefined}
                   horizontal={undefined}
                   inline={false}
+                  inset={undefined}
                   left={undefined}
                   right={undefined}
-                  spacing="padding"
-                  top={undefined}
+                  tag={undefined}
                   vertical={3}
                 >
                   <div
