@@ -3,6 +3,7 @@
 
 .link {
   composes: medium from '../../Typography/Text/Text.modules.scss';
+  text-decoration: none;
 
   @include helvetica-neue-roman-55;
 
