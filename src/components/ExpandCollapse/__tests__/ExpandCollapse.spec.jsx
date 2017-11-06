@@ -178,8 +178,7 @@ describe('ExpandCollapse', () => {
       clickPanel('panel-1')
       expect(onToggle).toHaveBeenCalledWith(['panel-1'])
 
-      // TODO: Can I clear JUST the onToggle mock?
-      jest.clearAllMocks()
+      onToggle.mockClear()
 
       clickPanel('panel-2')
       expect(onToggle).toHaveBeenCalledWith(['panel-1', 'panel-2'])
@@ -217,6 +216,19 @@ describe('ExpandCollapse', () => {
       clickPanel('panel-1')
 
       expectPanelToBeClosed(findPanel('panel-1'))
+    })
+  })
+
+  describe('accessibility', () => {
+    it('marks the panel as an expandable trigger for content for screen readers', () => {
+      const { findPanelHeader, clickPanel } = doMount(
+        <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
+      )
+
+      expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', 'false')
+
+      clickPanel('panel-1')
+      expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', 'true')
     })
   })
 

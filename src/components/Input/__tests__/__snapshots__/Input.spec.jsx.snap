@@ -42,9 +42,7 @@ exports[`Input renders 1`] = `
           id="the-input"
           type="text"
           value=""
-        >
-          
-        </input>
+        />
       </div>
     </div>
   </div>
@@ -93,9 +91,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
           id="the-input"
           type="text"
           value=""
-        >
-          
-        </input>
+        />
       </div>
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
@@ -106,9 +102,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
           <i
             aria-label="The value of this input field is invalid."
             class="iconExclamationPointCircle error size16"
-          >
-            
-          </i>
+          />
         </div>
       </div>
     </div>

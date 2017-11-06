@@ -2,12 +2,10 @@
 
 exports[`ExpandCollapse renders a closed panel 1`] = `
 <ExpandCollapse
-  onToggle={undefined}
   open={Array []}
 >
   <div
     className="base"
-    onToggle={undefined}
     open={Array []}
   >
     <PanelWrapper
@@ -18,8 +16,6 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
       panelDisabled={false}
       panelHeader="Panel title"
       panelId="panel-1"
-      panelOnToggle={undefined}
-      panelSubtext={undefined}
     >
       <div
         data-testid="panel-1"
@@ -33,59 +29,41 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
           />
         </HairlineDivider>
         <Clickable
+          aria-expanded="false"
           dangerouslyAddClassName="header"
-          dangerouslyAddStyle={undefined}
           disabled={false}
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
           <button
+            aria-expanded="false"
             className="clickable header"
             disabled={false}
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
-            style={undefined}
           >
             <Box
-              below={undefined}
-              between={undefined}
-              dangerouslyAddClassName={undefined}
-              horizontal={undefined}
               inline={false}
-              inset={undefined}
-              left={undefined}
-              right={undefined}
-              tag={undefined}
               vertical={3}
             >
               <div
                 className="verticalPadding-3"
               >
                 <Flexbox
-                  dangerouslyAddClassName={undefined}
                   direction="row"
                 >
                   <div
                     className="row"
                   >
                     <Box
-                      below={undefined}
-                      between={undefined}
-                      dangerouslyAddClassName={undefined}
-                      horizontal={undefined}
                       inline={false}
-                      inset={undefined}
-                      left={undefined}
                       right={3}
-                      tag={undefined}
-                      vertical={undefined}
                     >
                       <div
                         className="rightMargin-3"
                       >
-                         
                         <Translate
                           direction="y"
                           in={false}
@@ -137,25 +115,15 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                       </div>
                     </Box>
                     <Flexbox
-                      dangerouslyAddClassName={undefined}
                       direction="column"
                     >
                       <div
                         className="column"
                       >
                         <Box
-                          below={undefined}
-                          between={undefined}
                           bottom={2}
-                          dangerouslyAddClassName={undefined}
-                          horizontal={undefined}
                           inline={false}
-                          inset={undefined}
-                          left={undefined}
-                          right={undefined}
                           spacing="margin"
-                          tag={undefined}
-                          vertical={undefined}
                         >
                           <div
                             bottom={2}
@@ -220,15 +188,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                   />
                 </DimpleDivider>
                 <Box
-                  below={undefined}
-                  between={undefined}
-                  dangerouslyAddClassName={undefined}
-                  horizontal={undefined}
                   inline={false}
-                  inset={undefined}
-                  left={undefined}
-                  right={undefined}
-                  tag={undefined}
                   vertical={3}
                 >
                   <div
@@ -247,8 +207,6 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                           disabled={false}
                           header="Panel title"
                           id="panel-1"
-                          onToggle={undefined}
-                          subtext={undefined}
                         >
                           Panel content
                         </Panel>
@@ -276,7 +234,6 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
 
 exports[`ExpandCollapse renders an open panel 1`] = `
 <ExpandCollapse
-  onToggle={undefined}
   open={
     Array [
       "panel-1",
@@ -285,7 +242,6 @@ exports[`ExpandCollapse renders an open panel 1`] = `
 >
   <div
     className="base"
-    onToggle={undefined}
     open={
       Array [
         "panel-1",
@@ -300,8 +256,6 @@ exports[`ExpandCollapse renders an open panel 1`] = `
       panelDisabled={false}
       panelHeader="Panel title"
       panelId="panel-1"
-      panelOnToggle={undefined}
-      panelSubtext={undefined}
     >
       <div
         data-testid="panel-1"
@@ -315,59 +269,41 @@ exports[`ExpandCollapse renders an open panel 1`] = `
           />
         </HairlineDivider>
         <Clickable
+          aria-expanded="true"
           dangerouslyAddClassName="header"
-          dangerouslyAddStyle={undefined}
           disabled={false}
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
           <button
+            aria-expanded="true"
             className="clickable header"
             disabled={false}
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
-            style={undefined}
           >
             <Box
-              below={undefined}
-              between={undefined}
-              dangerouslyAddClassName={undefined}
-              horizontal={undefined}
               inline={false}
-              inset={undefined}
-              left={undefined}
-              right={undefined}
-              tag={undefined}
               vertical={3}
             >
               <div
                 className="verticalPadding-3"
               >
                 <Flexbox
-                  dangerouslyAddClassName={undefined}
                   direction="row"
                 >
                   <div
                     className="row"
                   >
                     <Box
-                      below={undefined}
-                      between={undefined}
-                      dangerouslyAddClassName={undefined}
-                      horizontal={undefined}
                       inline={false}
-                      inset={undefined}
-                      left={undefined}
                       right={3}
-                      tag={undefined}
-                      vertical={undefined}
                     >
                       <div
                         className="rightMargin-3"
                       >
-                         
                         <Translate
                           direction="y"
                           in={false}
@@ -419,25 +355,15 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                       </div>
                     </Box>
                     <Flexbox
-                      dangerouslyAddClassName={undefined}
                       direction="column"
                     >
                       <div
                         className="column"
                       >
                         <Box
-                          below={undefined}
-                          between={undefined}
                           bottom={2}
-                          dangerouslyAddClassName={undefined}
-                          horizontal={undefined}
                           inline={false}
-                          inset={undefined}
-                          left={undefined}
-                          right={undefined}
                           spacing="margin"
-                          tag={undefined}
-                          vertical={undefined}
                         >
                           <div
                             bottom={2}
@@ -502,15 +428,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                   />
                 </DimpleDivider>
                 <Box
-                  below={undefined}
-                  between={undefined}
-                  dangerouslyAddClassName={undefined}
-                  horizontal={undefined}
                   inline={false}
-                  inset={undefined}
-                  left={undefined}
-                  right={undefined}
-                  tag={undefined}
                   vertical={3}
                 >
                   <div
@@ -529,8 +447,6 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                           disabled={false}
                           header="Panel title"
                           id="panel-1"
-                          onToggle={undefined}
-                          subtext={undefined}
                         >
                           Panel content
                         </Panel>

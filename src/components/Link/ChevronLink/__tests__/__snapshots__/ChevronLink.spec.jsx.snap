@@ -12,9 +12,7 @@ exports[`ChevronLink renders 1`] = `
     <i
       aria-hidden="true"
       class="iconChevron size16"
-    >
-      
-    </i>
+    />
   </span>
 </a>
 `;

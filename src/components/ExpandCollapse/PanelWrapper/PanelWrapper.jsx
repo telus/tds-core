@@ -30,6 +30,10 @@ class PanelWrapper extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.adjustContentHeight()
+  }
+
   componentWillReceiveProps(nextProps) {
     const { panelOnToggle } = this.props
 
@@ -40,10 +44,6 @@ class PanelWrapper extends React.Component {
         panelOnToggle(nextProps.open)
       }
     }
-  }
-
-  componentDidMount() {
-    this.adjustContentHeight()
   }
 
   componentDidUpdate() {
@@ -102,13 +102,11 @@ class PanelWrapper extends React.Component {
           onMouseLeave={this.mouseLeave}
           dangerouslyAddClassName={joinClassNames(styles.header, panelDisabled && styles.disabled)}
           disabled={panelDisabled}
+          aria-expanded={this.state.open ? 'true' : 'false'}
         >
           <Box vertical={3}>
-            {/* padding */}
             <Flexbox direction="row">
               <Box right={3}>
-                {' '}
-                {/* margin */}
                 {!panelDisabled && (
                   <Translate timeout={300} in={this.state.hover} direction="y" length="0.25rem">
                     {() => (

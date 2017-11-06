@@ -8,9 +8,7 @@ exports[`StandaloneIcon Interactive icon renders 1`] = `
   <i
     aria-label="Some text for the screen readers."
     class="iconSpyglass size24"
-  >
-    
-  </i>
+  />
 </button>
 `;
 
@@ -18,7 +16,5 @@ exports[`StandaloneIcon Plain StandaloneIcon renders 1`] = `
 <i
   aria-label="Some text for the screen readers."
   class="iconSpyglass size24"
->
-  
-</i>
+/>
 `;

@@ -3,7 +3,5 @@
 exports[`DimpleDivider renders 1`] = `
 <hr
   class="dimple"
->
-  
-</hr>
+/>
 `;

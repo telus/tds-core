@@ -18,15 +18,15 @@ class ExpandCollapse extends React.Component {
     super(props)
 
     this.state = {
-      panels: new Set(props.open),
+      openPanels: new Set(props.open),
     }
   }
 
   componentWillReceiveProps(nextProps) {
     const nextPanels = new Set(nextProps.open)
 
-    if (!isEqual(this.state.panels, nextPanels)) {
-      this.setState({ panels: nextPanels })
+    if (!isEqual(this.state.openPanels, nextPanels)) {
+      this.setState({ openPanels: nextPanels })
     }
   }
 
@@ -34,8 +34,8 @@ class ExpandCollapse extends React.Component {
     const { onToggle } = this.props
 
     this.setState(
-      ({ panels }) => {
-        const nextPanels = new Set(panels)
+      ({ openPanels }) => {
+        const nextPanels = new Set(openPanels)
 
         if (nextPanels.has(panelId)) {
           nextPanels.delete(panelId)
@@ -43,11 +43,11 @@ class ExpandCollapse extends React.Component {
           nextPanels.add(panelId)
         }
 
-        return { panels: nextPanels }
+        return { openPanels: nextPanels }
       },
       () => {
         if (onToggle) {
-          onToggle(arrayFrom(this.state.panels))
+          onToggle(arrayFrom(this.state.openPanels))
         }
       }
     )
@@ -68,7 +68,7 @@ class ExpandCollapse extends React.Component {
               panelSubtext={subtext}
               panelOnToggle={onToggle}
               panelDisabled={disabled}
-              open={this.state.panels.has(id)}
+              open={this.state.openPanels.has(id)}
               last={index === React.Children.count(children) - 1}
               onClick={() => this.togglePanel(id)}
             >
