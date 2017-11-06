@@ -1,3 +1,37 @@
+#### 0.28.2 (2017-11-06)
+
+##### Chores
+
+* **prettier:** Add bracketSpacing option explicitly on package.json ([6309faf8](https://github.com/telusdigital/tds/commit/6309faf824d109bcafa91b9a4cc12ded91ee6f41))
+* **flexbox:** Remove duplicate Flexbox.modules.scss ([62f4edbb](https://github.com/telusdigital/tds/commit/62f4edbb3319f1b2fde3c64b13078cd06326f727))
+
+##### New Features
+
+* **expandcollapse:** Add support for subtext and arbitrary header content ([3c5f4c82](https://github.com/telusdigital/tds/commit/3c5f4c822ec018d6b257e83eeddd284ccf2e10e9))
+* **box:**
+  * Add left prop so we can easily set margin left for ChevronLink and refactor how to calcul ([0daf3b90](https://github.com/telusdigital/tds/commit/0daf3b9098e05580ab7968058cbf6661379fed9d))
+  * Update vertical padding on Notification to use the vertical prop ([79e44a00](https://github.com/telusdigital/tds/commit/79e44a0094bbaca8c87d663ef0d872854ea5f81d))
+  * Update Card, ExpandCollapse, Notification and Tooltip to use the new Box props ([e97130fd](https://github.com/telusdigital/tds/commit/e97130fd6fab64d09ba4ed21405e5beac166b75b))
+  * Aligned on new interface. Renamed x and y props to horizontal and vertical and refactored right prop to add right margin. Also refactored the Input component to use the new interface. WIP because there are a few more components to fix ([115db024](https://github.com/telusdigital/tds/commit/115db0246e518e09da8e3fb62d06e910266cbe7e))
+  * Add between prop to add bottom margin to all children except for last ([170d67e5](https://github.com/telusdigital/tds/commit/170d67e5c17b67090a5aab6c244dad5fec7646ae))
+  * add tag prop ([68bda42a](https://github.com/telusdigital/tds/commit/68bda42acd994251d6f9646ba844c56df938777e))
+
+##### Bug Fixes
+
+* **chevronlink:** remove underline ([7b71b946](https://github.com/telusdigital/tds/commit/7b71b9465f4abcb52668f786a55da01c38e396c6))
+* **button:** add padding to the left and right of every button ([243e4114](https://github.com/telusdigital/tds/commit/243e4114fa19b1f7b85346a6b0b12753c7a50113))
+
+##### Refactors
+
+* **expandcollapse:**
+  * swap caret direction when panel opens and closes ([5babd4ed](https://github.com/telusdigital/tds/commit/5babd4eda649228cab913dd27d81e44f3c431f70))
+  * Convert back from a set to an array when calling onToggle callbacks ([5f9e48b7](https://github.com/telusdigital/tds/commit/5f9e48b7c9811fe1ee5f0b6b132dc2f6be5fdc46))
+  * Add ability to disable panels ([9e169141](https://github.com/telusdigital/tds/commit/9e16914165f161e5d3c3bc767b286a672d482209))
+  * Adjust panel content height when inner content changes ([5b2c369e](https://github.com/telusdigital/tds/commit/5b2c369edb8affb763758afe54c6406576f532fd))
+  * Fire callback when any panel is opened or closed with full panel state ([52c52ec7](https://github.com/telusdigital/tds/commit/52c52ec76c65bcb9e13be55f215109916d596d96))
+  * Add Translate animation to move the caret on hover ([6f686bd1](https://github.com/telusdigital/tds/commit/6f686bd1e742dfe0dda6e62a251b34729491323b))
+* **box:** Update language and interface for adding padding and margin ([4bf05c29](https://github.com/telusdigital/tds/commit/4bf05c2964678bdea3949d4e0579c3c9f24ebd46))
+
 #### 0.28.1 (2017-11-02)
 
 ##### Bug Fixes
