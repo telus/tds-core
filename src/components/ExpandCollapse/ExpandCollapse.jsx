@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
+
 import Set from 'core-js/es6/set'
+import arrayFrom from 'core-js/fn/array/from'
 
 import safeRest from '../../utils/safeRest'
 import { isEqual } from '../../utils/sets'
@@ -45,7 +47,7 @@ class ExpandCollapse extends React.Component {
       },
       () => {
         if (onToggle) {
-          onToggle(this.state.panels)
+          onToggle(arrayFrom(this.state.panels))
         }
       }
     )

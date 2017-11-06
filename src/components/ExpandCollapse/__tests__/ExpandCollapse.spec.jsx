@@ -168,14 +168,13 @@ describe('ExpandCollapse', () => {
       )
 
       clickPanel('panel-1')
-      // TODO: Can I convert back to an array?
-      expect(onToggle).toHaveBeenCalledWith(new Set(['panel-1']))
+      expect(onToggle).toHaveBeenCalledWith(['panel-1'])
 
-      // TODO: Can I just clear the onToggle mock?
+      // TODO: Can I clear JUST the onToggle mock?
       jest.clearAllMocks()
 
       clickPanel('panel-2')
-      expect(onToggle).toHaveBeenCalledWith(new Set(['panel-1', 'panel-2']))
+      expect(onToggle).toHaveBeenCalledWith(['panel-1', 'panel-2'])
     })
   })
 
