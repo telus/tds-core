@@ -2,21 +2,13 @@
 
 exports[`<OrderedList /> renders 1`] = `
 <ol
-  class="decimal"
+  class="betweenBottomMargin-2 decimal"
 >
   <li>
-    <div
-      class="bottomMargin-2"
-    >
-      Lorem ipsum
-    </div>
+    Lorem ipsum
   </li>
   <li>
-    <div
-      class="bottomMargin-2"
-    >
-      Dolor sit amet
-    </div>
+    Dolor sit amet
   </li>
 </ol>
 `;

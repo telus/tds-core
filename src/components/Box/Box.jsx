@@ -15,9 +15,11 @@ const getClassName = (spacing, location, scale) => {
   return styles[`${location}${capitalize(spacing)}-${scale}`]
 }
 
-const getBetweenClasses = betweenSize => {
+const getBetweenClasses = (betweenSize, inline) => {
   if (!betweenSize) {
     return undefined
+  } else if (inline) {
+    return styles[`betweenRightMargin-${betweenSize}`]
   }
 
   return styles[`betweenBottomMargin-${betweenSize}`]
@@ -58,14 +60,17 @@ const Box = ({
     getClassName('margin', 'bottom', below),
     getClassName('margin', 'right', right),
     getClassName('margin', 'left', left),
-    getBetweenClasses(between),
+    getBetweenClasses(between, inline),
     dangerouslyAddClassName
   )
 
-  return (
-    <Tag {...safeRest(rest)} className={classes}>
-      {children}
-    </Tag>
+  return React.createElement(
+    Tag,
+    {
+      ...safeRest(rest),
+      className: classes || undefined,
+    },
+    children
   )
 }
 
@@ -77,7 +82,7 @@ Box.propTypes = {
   /**
    *
    */
-  tag: PropTypes.string,
+  tag: PropTypes.node,
   /**
    * Sets a `padding-top` and `padding-bottom`.
    */

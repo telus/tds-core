@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
 import safeRest from '../../../utils/safeRest'
+
 import UnorderedItem from './UnorderedItem/UnorderedItem'
+import Box from '../../Box/Box'
 
 import styles from '../List.modules.scss'
 
@@ -11,9 +13,9 @@ const injectListStyle = (child, listStyle) => React.cloneElement(child, { listSt
 
 const UnorderedList = ({ listStyle, children, ...rest }) => {
   return (
-    <ul {...safeRest(rest)} className={styles.base}>
+    <Box tag="ul" between={2} {...safeRest(rest)} dangerouslyAddClassName={styles.base}>
       {React.Children.map(children, child => injectListStyle(child, listStyle))}
-    </ul>
+    </Box>
   )
 }
 

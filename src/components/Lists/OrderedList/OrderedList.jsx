@@ -3,14 +3,16 @@ import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
 import safeRest from '../../../utils/safeRest'
+
 import OrderedItem from './OrderedItem'
+import Box from '../../Box/Box'
 
 import styles from './OrderedList.modules.scss'
 
 const OrderedList = ({ listStyle, children, ...rest }) => (
-  <ol {...safeRest(rest)} className={styles[listStyle]}>
+  <Box {...safeRest(rest)} tag="ol" between={2} dangerouslyAddClassName={styles[listStyle]}>
     {children}
-  </ol>
+  </Box>
 )
 
 OrderedList.propTypes = {

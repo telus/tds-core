@@ -34,7 +34,7 @@ The Box component contains props that accept values from `1` to `8`. These numbe
 ### Example separating blocks
 
 ```jsx noeditor static
-<Box el="section" below={5} inset={4}>
+<Box tag="section" below={5} inset={4}>
   <Box below={3}>
     <Heading level="h2">Lots to discover</Heading>
   </Box>

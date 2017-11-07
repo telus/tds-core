@@ -96,9 +96,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
-        <div
-          class=""
-        >
+        <div>
           <i
             aria-label="The value of this input field is invalid."
             class="iconExclamationPointCircle error size16"

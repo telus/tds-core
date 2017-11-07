@@ -1,23 +1,24 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-
 import UnorderedList from '../UnorderedList'
 
 describe('<UnorderedList />', () => {
-  const doRender = (overrides = {}) => render(
-    <UnorderedList {...overrides}>
-      <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>
-      <UnorderedList.Item>Dolor sit amet</UnorderedList.Item>
-    </UnorderedList>
-  )
+  const doRender = (overrides = {}) =>
+    render(
+      <UnorderedList {...overrides}>
+        <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>
+        <UnorderedList.Item>Dolor sit amet</UnorderedList.Item>
+      </UnorderedList>
+    )
 
-  const doShallow = (overrides = {}) => shallow(
-    <UnorderedList {...overrides}>
-      <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>
-      <UnorderedList.Item>Dolor sit amet</UnorderedList.Item>
-    </UnorderedList>
-  )
+  const doShallow = (overrides = {}) =>
+    shallow(
+      <UnorderedList {...overrides}>
+        <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>
+        <UnorderedList.Item>Dolor sit amet</UnorderedList.Item>
+      </UnorderedList>
+    )
 
   it('renders', () => {
     const unorderedList = doRender()
@@ -28,25 +29,43 @@ describe('<UnorderedList />', () => {
   it('renders an HTML ul tag', () => {
     const unorderedList = doShallow()
 
-    expect(unorderedList).toHaveTagName('ul')
+    expect(unorderedList.dive()).toHaveTagName('ul')
   })
 
   it('UnorderedList.Item renders an HTML li tag', () => {
-    const unorderedListItem = shallow(
-      <UnorderedList.Item>Some content</UnorderedList.Item>
-    )
+    const unorderedListItem = shallow(<UnorderedList.Item>Some content</UnorderedList.Item>)
 
     expect(unorderedListItem).toHaveTagName('li')
   })
 
   it('can have a list style', () => {
     let unorderedList = doShallow({ listStyle: undefined })
-    expect(unorderedList.find(UnorderedList.Item).at(0).dive()).toHaveClassName('circle')
-    expect(unorderedList.find(UnorderedList.Item).at(1).dive()).toHaveClassName('circle')
+    expect(
+      unorderedList
+        .find(UnorderedList.Item)
+        .at(0)
+        .dive()
+    ).toHaveClassName('circle')
+    expect(
+      unorderedList
+        .find(UnorderedList.Item)
+        .at(1)
+        .dive()
+    ).toHaveClassName('circle')
 
     unorderedList = doShallow({ listStyle: 'x' })
-    expect(unorderedList.find(UnorderedList.Item).at(0).dive()).toHaveClassName('x')
-    expect(unorderedList.find(UnorderedList.Item).at(1).dive()).toHaveClassName('x')
+    expect(
+      unorderedList
+        .find(UnorderedList.Item)
+        .at(0)
+        .dive()
+    ).toHaveClassName('x')
+    expect(
+      unorderedList
+        .find(UnorderedList.Item)
+        .at(1)
+        .dive()
+    ).toHaveClassName('x')
   })
 
   it('passes additional attributes to ul element', () => {

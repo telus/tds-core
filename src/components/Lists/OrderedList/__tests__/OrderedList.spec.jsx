@@ -1,23 +1,24 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-
 import OrderedList from '../OrderedList'
 
 describe('<OrderedList />', () => {
-  const doRender = (overrides = {}) => render(
-    <OrderedList {...overrides}>
-      <OrderedList.Item>Lorem ipsum</OrderedList.Item>
-      <OrderedList.Item>Dolor sit amet</OrderedList.Item>
-    </OrderedList>
-  )
+  const doRender = (overrides = {}) =>
+    render(
+      <OrderedList {...overrides}>
+        <OrderedList.Item>Lorem ipsum</OrderedList.Item>
+        <OrderedList.Item>Dolor sit amet</OrderedList.Item>
+      </OrderedList>
+    )
 
-  const doShallow = (overrides = {}) => shallow(
-    <OrderedList {...overrides}>
-      <OrderedList.Item>Lorem ipsum</OrderedList.Item>
-      <OrderedList.Item>Dolor sit amet</OrderedList.Item>
-    </OrderedList>
-  )
+  const doShallow = (overrides = {}) =>
+    shallow(
+      <OrderedList {...overrides}>
+        <OrderedList.Item>Lorem ipsum</OrderedList.Item>
+        <OrderedList.Item>Dolor sit amet</OrderedList.Item>
+      </OrderedList>
+    )
 
   it('renders', () => {
     const orderedList = doRender()
@@ -28,7 +29,7 @@ describe('<OrderedList />', () => {
   it('OrderList renders an HTML ol tag', () => {
     const orderedList = doShallow()
 
-    expect(orderedList).toHaveTagName('ol')
+    expect(orderedList.dive()).toHaveTagName('ol')
   })
 
   it('OrderList.Item renders an HTML li tag', () => {
@@ -39,10 +40,10 @@ describe('<OrderedList />', () => {
 
   it('can have a list style', () => {
     let orderedList = doShallow({ listStyle: undefined })
-    expect(orderedList).toHaveClassName('decimal')
+    expect(orderedList.dive()).toHaveClassName('decimal')
 
     orderedList = doShallow({ listStyle: 'upperAlpha' })
-    expect(orderedList).toHaveClassName('upperAlpha')
+    expect(orderedList.dive()).toHaveClassName('upperAlpha')
   })
 
   it('passes additional attributes to ol element', () => {

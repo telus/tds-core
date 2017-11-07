@@ -1,15 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Box from '../../../Box/Box'
-
 import safeRest from '../../../../utils/safeRest'
 
 import styles from './UnorderedItem.modules.scss'
 
-const UnorderedItem = ({listStyle, children, ...rest}) => (
+const UnorderedItem = ({ listStyle, children, ...rest }) => (
   <li {...safeRest(rest)} className={styles[listStyle]}>
-    <Box below={2}>{children}</Box>
+    {children}
   </li>
 )
 
