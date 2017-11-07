@@ -18,11 +18,10 @@ const getClassName = (spacing, location, scale) => {
 const getBetweenClasses = (betweenSize, inline) => {
   if (!betweenSize) {
     return undefined
-  } else if (inline) {
-    return styles[`betweenRightMargin-${betweenSize}`]
   }
 
-  return styles[`betweenBottomMargin-${betweenSize}`]
+  const direction = inline ? 'Right' : 'Bottom'
+  return styles[`between${direction}Margin-${betweenSize}`]
 }
 
 /**
@@ -45,14 +44,7 @@ const Box = ({
   const xSize = inset || horizontal
   const ySize = inset || vertical
 
-  let Tag = ''
-  if (tag) {
-    Tag = tag
-  } else if (inline) {
-    Tag = 'span'
-  } else {
-    Tag = 'div'
-  }
+  const Tag = tag || (inline ? 'span' : 'div')
 
   const classes = joinClassNames(
     getClassName('padding', 'horizontal', xSize),
@@ -80,9 +72,9 @@ Box.propTypes = {
    */
   inline: PropTypes.bool,
   /**
-   *
+   * Specifies which HTML element to render Box as. Example: `"ul"`
    */
-  tag: PropTypes.node,
+  tag: PropTypes.string,
   /**
    * Sets a `padding-top` and `padding-bottom`.
    */
