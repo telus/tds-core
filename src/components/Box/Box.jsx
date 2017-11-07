@@ -23,6 +23,9 @@ const getBetweenClasses = betweenSize => {
   return styles[`betweenBottomMargin-${betweenSize}`]
 }
 
+/**
+ * Box - apply spacing within or around components
+ */
 const Box = ({
   inline,
   tag,
@@ -67,16 +70,49 @@ const Box = ({
 }
 
 Box.propTypes = {
+  /**
+   * If `true`, render a `<span>` instead of `<div>`.
+   */
   inline: PropTypes.bool,
+  /**
+   *
+   */
   tag: PropTypes.string,
+  /**
+   * Sets a `padding-top` and `padding-bottom`.
+   */
   vertical: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  /**
+   * Sets a `padding-left` and `padding-right`.
+   */
   horizontal: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  /**
+   * Sets `padding` on all four sides.
+   */
   inset: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  /**
+   * Sets a `margin-bottom`.
+   */
   below: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  /**
+   * Sets a `margin-right`.
+   */
   right: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  /**
+   * Sets a `margin-left`.
+   */
   left: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  /**
+   * Sets a `margin-bottom` to all direct children except the last. If the `inline` prop is set to `true`, this sets a `margin-right` to all direct children except the last.
+   */
   between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  /**
+   * Append custom classes to `className`.
+   */
   dangerouslyAddClassName: PropTypes.string,
+  /**
+   * The content. Can be text, any HTML element, or any component.
+   */
   children: PropTypes.node.isRequired,
 }
 

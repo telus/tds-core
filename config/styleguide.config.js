@@ -126,6 +126,14 @@ module.exports = {
       name: 'Components',
       sections: [
         {
+          name: 'Layout',
+          components() {
+            return compact([
+              toggleByEnv('Box', path.resolve('src/components/Box/Box.jsx'), undefined),
+            ])
+          },
+        },
+        {
           name: 'Grid',
           components() {
             return [
