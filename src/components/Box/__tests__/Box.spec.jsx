@@ -3,42 +3,6 @@ import { shallow } from 'enzyme'
 
 import Box from '../Box'
 
-describe.skip('Box deprecated', () => {
-  const defaultProps = {
-    spacing: 'padding',
-    vertical: 2,
-  }
-
-  const doShallow = (props = {}) =>
-    shallow(
-      <Box {...defaultProps} {...props}>
-        Some content
-      </Box>
-    )
-
-  it('can have padding or margin', () => {
-    let box = doShallow({ spacing: 'padding', all: 1 })
-    expect(box).toHaveClassName('allPadding-1')
-
-    box = doShallow({ spacing: 'margin', all: 1 })
-    expect(box).toHaveClassName('allMargin-1')
-  })
-
-  it('can have directional spacing', () => {
-    let box = doShallow({ spacing: 'padding', top: 1 })
-    expect(box).toHaveClassName('topPadding-1')
-
-    box = doShallow({ spacing: 'padding', top: 1, right: 2 })
-    expect(box).toHaveClassName('topPadding-1 rightPadding-2')
-
-    box = doShallow({ spacing: 'padding', top: 1, right: 2, bottom: 3 })
-    expect(box).toHaveClassName('topPadding-1 rightPadding-2 bottomPadding-3')
-
-    box = doShallow({ spacing: 'padding', top: 1, right: 2, bottom: 3, left: 4 })
-    expect(box).toHaveClassName('topPadding-1 rightPadding-2 bottomPadding-3 leftPadding-4')
-  })
-})
-
 describe('Box', () => {
   const doShallow = (props = {}) => shallow(<Box {...props}>Some content</Box>)
 
