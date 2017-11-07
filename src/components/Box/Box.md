@@ -40,3 +40,41 @@ The Box component contains props that accept values from `1` to `8`. These numbe
   </Box>
 </Box>
 ```
+
+## Spacing in between elements
+
+When wrapping a Box element around a series of elements, use the `between` prop to add either `margin-right` for inline elements or `margin-bottom` for stacked elements. Spacing will be applied to all directly-descending children except the last in the series.
+
+### Stacked
+
+```jsx 
+<Box between={3}>
+  <Box between={2}>
+    <Heading level="h4">Wi-Fi Enabled</Heading>
+
+    <Paragraph>Control any device connected to your SmartPlug from any location with internet access.</Paragraph>
+  </Box>
+
+  <Box between={2}>
+    <Heading level="h4">Create ‘Scenes’</Heading>
+
+    <Paragraph>Create your own scenes and rooms such as 'Kitchen' and manage all SmartPlugs in that scene.</Paragraph>
+  </Box>
+
+  <Box between={2}>
+    <Heading level="h4">Compatibility</Heading>
+
+    <Paragraph>Works with Google Assistant, Amazon Alexa, Apple HomeKit, and Nest.</Paragraph>
+  </Box>
+</Box>
+```
+
+### Inline
+
+```jsx
+<Box inline between={3}>
+  <DecorativeIcon symbol="exclamationPointCircle"></DecorativeIcon>
+  <DecorativeIcon symbol="location"></DecorativeIcon>
+  <DecorativeIcon symbol="questionMarkCircle"></DecorativeIcon>
+</Box>
+```
