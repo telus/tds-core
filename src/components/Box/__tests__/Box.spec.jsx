@@ -4,7 +4,13 @@ import { shallow } from 'enzyme'
 import Box from '../Box'
 
 describe('Box', () => {
-  const doShallow = (props = {}) => shallow(<Box {...props}>Some content</Box>)
+  const defaultProps = { between: 3 }
+  const doShallow = (props = {}) =>
+    shallow(
+      <Box {...defaultProps} {...props}>
+        Some content
+      </Box>
+    )
 
   it('renders', () => {
     const box = doShallow()
