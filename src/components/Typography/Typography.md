@@ -58,21 +58,18 @@ Too narrow – if a line is too short, the eye will have to travel back too ofte
 
 ## Spacing system
 
-Typography components **do not** have built-in padding or margin. For the interim, designers are strongly
+Typography components **do not** have built-in padding or margin. Designers are strongly
 advised to follow TDS Sketch assets for spacing rules in order for developers to properly apply the correct spacing between
 related components.
 
-For example, a `<Paragraph>` component immediately following a `<Heading>` component would require `1rem` spacing between
-them. For this case, we recommend:
+Developers are encouraged to use the [Box](#box) component for handling spacing in their applications. For example, a `<Paragraph>` component immediately following a `<Heading>` component would require `1rem` spacing between
+them.
 
-```
-<div>
+```jsx
+<Box between={3}>
   <Heading level="h2">Great Deals</Heading>
-
-  <div style={{paddingTop: '1rem'}}>
-    <Paragraph>
-      See how this great deal can benefit you and your shared lines.
-    </Paragraph>
-  </div>
-</div>
+  <Paragraph>
+    See how this great deal can benefit you and your shared lines.
+  </Paragraph>
+</Box>
 ```

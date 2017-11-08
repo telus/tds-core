@@ -1,12 +1,10 @@
 ```jsx
 <Card>
-  <Box below={3}>
+  <Box between={3}>
     <Heading level="h1">Our latest and greatest</Heading>
-  </Box>
-  <Box below={3}>
     <Paragraph>Everything you would expect, without conditions.</Paragraph>
+    <ButtonLink href="//telus.com">Learn more</ButtonLink>
   </Box>
-  <ButtonLink href="//telus.com">Learn more</ButtonLink>
 </Card>
 ```
 
@@ -14,7 +12,7 @@
 
 The Box component contains props that accept values from `1` to `8`. These numbered values correspond to our spacing system. Numbers `4` and above feature responsive spacing, as detailed in this table:
 
-| Number | Default value | Value in viewports above or equal to `768px` | 
+| Number | Default value | Value in viewports greater or equal to `768px` | 
 | ------ | ------------: | -------------------------------------------: |
 | 1 | 0.25rem | _unchanged_ |
 | 2 | 0.5rem | _unchanged_ |
@@ -28,15 +26,23 @@ The Box component contains props that accept values from `1` to `8`. These numbe
 ### Usage tips
 
 - Numbers `1` to `3` are suitable for spacing inline content such as [Typography](#typography), [Button](#button), and [ButtonLink](#buttonlink) components
-- Numbers `4` to `8` are suitable for spacing major types of content, usually with the `below` prop wrapping [Cards](#card) and [Dividers](#dividers)
+- Numbers `4` to `8` are suitable for spacing major types of content such as [Cards](#card) and [Dividers](#dividers)
 - Numbers `5`, `7`, and `8` are exclusively used to separating blocks vertically
 
 ### Example separating blocks
 
-```jsx noeditor static
-<Box tag="section" below={5} inset={4}>
-  <Box below={3}>
+```jsx
+<Box between={5}>
+  <Box tag="section" inset={4} between={3}>
     <Heading level="h2">Lots to discover</Heading>
+    <Paragraph>See our collection of home electronics.</Paragraph>
+  </Box>
+
+  <DimpleDivider/>
+
+  <Box tag="section" inset={4} between={3}>
+    <Heading level="h2">Something for everyone</Heading>
+    <Paragraph>For you, your family and even your dog.</Paragraph>
   </Box>
 </Box>
 ```
