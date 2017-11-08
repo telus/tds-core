@@ -132,17 +132,20 @@ module.exports = {
               toggleByEnv('Box', path.resolve('src/components/Box/Box.jsx'), undefined),
             ])
           },
+          sections: compact([
+            {
+              name: 'Grid',
+              components() {
+                return [
+                  path.resolve('src/old-components/Grid/Container/Container.jsx'),
+                  path.resolve('src/old-components/Grid/Row/Row.jsx'),
+                  path.resolve('src/old-components/Grid/Column/Column.jsx'),
+                ]
+              },
+            },
+          ]),
         },
-        {
-          name: 'Grid',
-          components() {
-            return [
-              path.resolve('src/old-components/Grid/Container/Container.jsx'),
-              path.resolve('src/old-components/Grid/Row/Row.jsx'),
-              path.resolve('src/old-components/Grid/Column/Column.jsx'),
-            ]
-          },
-        },
+
         {
           name: 'Content',
           components() {

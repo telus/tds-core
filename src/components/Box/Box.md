@@ -73,9 +73,12 @@ When wrapping a Box element around a series of elements, use the `between` prop 
 
 ```jsx
 <Box inline between={3}>
-  <Link href="//telus.com">Home</Link>
-  <Link href="//telus.com">Shop</Link>
-  <Link href="//telus.com">My Account</Link>
-  <Link href="//telus.com">Support</Link>
+  <Link href="//telus.com">Phones</Link>
+  <Box inline>|</Box>
+  <Link href="//telus.com">Pre-Owned</Link>
+  <Box inline>|</Box>
+  <Link href="//telus.com">Prepaid</Link>
+  <Box inline>|</Box>
+  <Link href="//telus.com">Sale</Link>
 </Box>
 ```
