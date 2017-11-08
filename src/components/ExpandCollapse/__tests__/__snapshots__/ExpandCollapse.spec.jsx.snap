@@ -71,8 +71,8 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                         >
                           <Translate
                             direction="y"
+                            distance="0.25rem"
                             in={false}
-                            length="0.25rem"
                             timeout={300}
                           >
                             <Transition
@@ -320,8 +320,8 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                         >
                           <Translate
                             direction="y"
+                            distance="-0.25rem"
                             in={false}
-                            length="0.25rem"
                             timeout={300}
                           >
                             <Transition

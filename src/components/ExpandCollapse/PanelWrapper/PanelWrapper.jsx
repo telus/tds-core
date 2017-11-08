@@ -64,6 +64,21 @@ class PanelWrapper extends React.Component {
     this.setState({ hover: false })
   }
 
+  renderCaret(disabled, hover, open) {
+    if (disabled) {
+      // FIXME: Replace with undefined. And use "between" above
+      return false
+    }
+
+    return (
+      <Translate timeout={300} in={hover} direction="y" distance={open ? '-0.25rem' : '0.25rem'}>
+        {() => (
+          <DecorativeIcon symbol={open ? 'caretUp' : 'caretDown'} variant="primary" size={16} />
+        )}
+      </Translate>
+    )
+  }
+
   renderHeader(header, subtext) {
     if (typeof header !== 'string') {
       return header
@@ -107,17 +122,7 @@ class PanelWrapper extends React.Component {
           <Box vertical={3}>
             <Flexbox direction="row">
               <Box right={3}>
-                {!panelDisabled && (
-                  <Translate timeout={300} in={this.state.hover} direction="y" length="0.25rem">
-                    {() => (
-                      <DecorativeIcon
-                        symbol={this.state.open ? 'caretUp' : 'caretDown'}
-                        variant="primary"
-                        size={16}
-                      />
-                    )}
-                  </Translate>
-                )}
+                {this.renderCaret(panelDisabled, this.state.hover, this.state.open)}
               </Box>
 
               {this.renderHeader(panelHeader, panelSubtext)}

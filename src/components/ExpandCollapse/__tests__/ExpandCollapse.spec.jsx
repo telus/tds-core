@@ -102,16 +102,31 @@ describe('ExpandCollapse', () => {
     })
   })
 
-  it('translates the caret icon on hover', () => {
-    const { findPanel, hoverPanel, unHoverPanel } = doMount(
-      <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
-    )
+  describe('the caret icon', () => {
+    it('translates it on hover', () => {
+      const { findPanelHeader, hoverPanel, unHoverPanel } = doMount(
+        <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
+      )
 
-    hoverPanel('panel-1')
-    expect(findPanel('panel-1').find(Translate)).toHaveProp('in', true)
+      hoverPanel('panel-1')
+      expect(findPanelHeader('panel-1').find(Translate)).toHaveProp('in', true)
 
-    unHoverPanel('panel-1')
-    expect(findPanel('panel-1').find(Translate)).toHaveProp('in', false)
+      unHoverPanel('panel-1')
+      expect(findPanelHeader('panel-1').find(Translate)).toHaveProp('in', false)
+    })
+
+    it('reverses its direction when opening and closing', () => {
+      const { findPanelHeader, clickPanel } = doMount(
+        <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
+      )
+
+      expect(findPanelHeader('panel-1').find(Translate)).toHaveProp('distance', '0.25rem')
+      expect(findPanelHeader('panel-1').find(DecorativeIcon)).toHaveProp('symbol', 'caretDown')
+
+      clickPanel('panel-1')
+      expect(findPanelHeader('panel-1').find(Translate)).toHaveProp('distance', '-0.25rem')
+      expect(findPanelHeader('panel-1').find(DecorativeIcon)).toHaveProp('symbol', 'caretUp')
+    })
   })
 
   describe('panel opening and closing', () => {
@@ -182,17 +197,6 @@ describe('ExpandCollapse', () => {
 
       clickPanel('panel-2')
       expect(onToggle).toHaveBeenCalledWith(['panel-1', 'panel-2'])
-    })
-
-    it('swaps the direction of the caret icon when opening and closing', () => {
-      const { findPanelHeader, clickPanel } = doMount(
-        <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
-      )
-
-      expect(findPanelHeader('panel-1').find(DecorativeIcon)).toHaveProp('symbol', 'caretDown')
-
-      clickPanel('panel-1')
-      expect(findPanelHeader('panel-1').find(DecorativeIcon)).toHaveProp('symbol', 'caretUp')
     })
   })
 

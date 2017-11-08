@@ -6,7 +6,7 @@ import Translate from '../Translate'
 describe('Translate', () => {
   it('renders when the transition is triggered', () => {
     const translate = render(
-      <Translate timeout={500} in={true} direction="x" length="1rem">
+      <Translate timeout={500} in={true} direction="x" distance="1rem">
         {() => <div>Content to translate</div>}
       </Translate>
     )
@@ -16,7 +16,7 @@ describe('Translate', () => {
 
   it('renders when the transition is not triggered', () => {
     const translate = render(
-      <Translate timeout={500} in={false} direction="x" length="1rem">
+      <Translate timeout={500} in={false} direction="x" distance="1rem">
         {() => <div>Content to translate</div>}
       </Translate>
     )

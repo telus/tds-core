@@ -6,9 +6,9 @@ const defaultStyle = timeout => ({
   transition: `transform ${timeout}ms`,
 })
 
-const transitionStyles = (direction, length) => {
+const transitionStyles = (direction, distance) => {
   const styles = {
-    transform: `translate${direction.toUpperCase()}(${length})`,
+    transform: `translate${direction.toUpperCase()}(${distance})`,
   }
 
   return {
@@ -17,13 +17,13 @@ const transitionStyles = (direction, length) => {
   }
 }
 
-const Translate = ({ direction, length, children, ...rest }) => (
+const Translate = ({ direction, distance, children, ...rest }) => (
   <Transition {...rest}>
     {status => (
       <div
         style={{
           ...defaultStyle(rest.timeout),
-          ...transitionStyles(direction, length)[status],
+          ...transitionStyles(direction, distance)[status],
         }}
       >
         {children()}
@@ -34,7 +34,7 @@ const Translate = ({ direction, length, children, ...rest }) => (
 Translate.propTypes = {
   timeout: PropTypes.number.isRequired,
   direction: PropTypes.oneOf(['x', 'y']).isRequired,
-  length: PropTypes.string.isRequired,
+  distance: PropTypes.string.isRequired,
   children: PropTypes.func.isRequired,
 }
 
