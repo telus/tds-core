@@ -5,6 +5,8 @@ import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import capitalize from '../../utils/capitalize'
 
+import FlexBox from '../Flexbox/Flexbox'
+
 import styles from './Box.modules.scss'
 
 const getClassName = (spacing, location, scale) => {
@@ -21,7 +23,10 @@ const getBetweenClasses = (betweenSize, inline) => {
   }
 
   const direction = inline ? 'Right' : 'Bottom'
-  return styles[`between${direction}Margin-${betweenSize}`]
+  return joinClassNames(
+    styles[`between${direction}Margin-${betweenSize}`],
+    inline ? styles.betweenRight : undefined
+  )
 }
 
 /**
@@ -46,8 +51,6 @@ const Box = ({
   const xSize = inset || horizontal
   const ySize = inset || vertical
 
-  const Tag = tag || (inline ? 'span' : 'div')
-
   const classes = joinClassNames(
     getClassName('padding', 'horizontal', xSize),
     getClassName('padding', 'vertical', ySize),
@@ -58,14 +61,9 @@ const Box = ({
     dangerouslyAddClassName
   )
 
-  return React.createElement(
-    Tag,
-    {
-      ...safeRest(rest),
-      className: classes || undefined,
-    },
-    children
-  )
+  const BoxOutput = React.createElement(tag || 'div')
+
+  return React.createElement(tag || 'div', { ...safeRest(rest), className: classes }, children)
 }
 
 Box.propTypes = {

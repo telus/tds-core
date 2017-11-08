@@ -27,6 +27,12 @@ $responsive-spacings: (
 
 $boxProps: ('margin': 'Margin', 'padding': 'Padding');
 
+.betweenRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 // Todo remove unneeded classes related to margin
 @mixin spacingClasses ($level, $value) {
   @each $p, $v in $boxProps {

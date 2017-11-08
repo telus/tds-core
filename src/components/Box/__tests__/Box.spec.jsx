@@ -1,6 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
+import FlexBox from '../../Flexbox/Flexbox'
 import Box from '../Box'
 
 describe('Box', () => {
@@ -23,7 +24,7 @@ describe('Box', () => {
     expect(box).toHaveTagName('div')
 
     box = doShallow({ inline: true })
-    expect(box).toHaveTagName('span')
+    expect(box).toHaveClassName('betweenRight betweenRightMargin-3')
   })
 
   it('can render as other elements', () => {
@@ -72,7 +73,7 @@ describe('Box', () => {
   it('can have between margin as inline', () => {
     const box = doShallow({ between: 2, inline: true })
 
-    expect(box).toHaveClassName('betweenRightMargin-2')
+    expect(box).toHaveClassName('betweenRight betweenRightMargin-2')
   })
 
   it('passes additional attributes to the element', () => {

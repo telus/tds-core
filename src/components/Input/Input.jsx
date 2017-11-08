@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {childrenOfType} from 'airbnb-prop-types'
+import { childrenOfType } from 'airbnb-prop-types'
 
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
@@ -56,7 +56,7 @@ class Input extends React.Component {
   }
 
   onChange = event => {
-    const {onChange} = this.props
+    const { onChange } = this.props
 
     this.setState({
       value: event.target.value,
@@ -68,9 +68,9 @@ class Input extends React.Component {
   }
 
   onFocus = event => {
-    const {onFocus} = this.props
+    const { onFocus } = this.props
 
-    this.setState({focus: true})
+    this.setState({ focus: true })
 
     if (onFocus) {
       onFocus(event)
@@ -78,32 +78,26 @@ class Input extends React.Component {
   }
 
   onBlur = event => {
-    const {onBlur} = this.props
+    const { onBlur } = this.props
 
-    this.setState({focus: false})
+    this.setState({ focus: false })
 
     if (onBlur) {
       onBlur(event)
     }
   }
 
-  renderLabel(label, hint, tooltip, inputId) {
+  renderLabel(label, hint, inputId) {
     const labelClassNames = joinClassNames(styles.resetLabel, styles.label)
 
     return (
-      <Flexbox direction="row" dangerouslyAddClassName={formFieldStyles.containsTooltip}>
-        <label htmlFor={inputId.identity()} className={labelClassNames}>
-          <Box right={2} inline>
-            <Text size="medium" bold>
-              {label}
-            </Text>
-          </Box>
+      <Box tag="label" inline between={2} htmlFor={inputId.identity()} className={labelClassNames}>
+        <Text size="medium" bold>
+          {label}
+        </Text>
 
-          {hint && <Text size="small">{hint}</Text>}
-        </label>
-
-        {tooltip && React.cloneElement(tooltip, {connectedFieldLabel: label})}
-      </Flexbox>
+        {hint && <Text size="small">{hint}</Text>}
+      </Box>
     )
   }
 
@@ -154,7 +148,7 @@ class Input extends React.Component {
   }
 
   render() {
-    const {type, label, hint, feedback, error, helper, tooltip, ...rest} = this.props
+    const { type, label, hint, feedback, error, helper, tooltip, ...rest } = this.props
 
     const inputId = generateId(rest.id, rest.name, label)
     const helperId = helper && inputId.postfix('helper')
@@ -166,7 +160,10 @@ class Input extends React.Component {
 
     return (
       <Flexbox direction="column">
-        <Box below={2}>{this.renderLabel(label, hint, tooltip, inputId)}</Box>
+        <Box between={2} dangerouslyAddClassName={formFieldStyles.containsTooltip}>
+          {this.renderLabel(label, hint, inputId)}
+          {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
+        </Box>
 
         {helper && (
           <Box below={3}>{this.renderHelper(helper, helperId, feedback, this.state.value)}</Box>

@@ -5,26 +5,18 @@ exports[`Input renders 1`] = `
   class="column"
 >
   <div
-    class="bottomMargin-2"
+    class="betweenBottomMargin-2 containsTooltip"
   >
-    <div
-      class="row containsTooltip"
+    <label
+      class="resetLabel label"
+      for="the-input"
     >
-      <label
-        class="resetLabel label"
-        for="the-input"
+      <span
+        class="medium boldFont color"
       >
-        <span
-          class="rightMargin-2"
-        >
-          <span
-            class="medium boldFont color"
-          >
-            The input
-          </span>
-        </span>
-      </label>
-    </div>
+        The input
+      </span>
+    </label>
   </div>
   <div
     class="horizontalPadding-3 default"
@@ -54,26 +46,18 @@ exports[`Input renders with a feedback state and icon 1`] = `
   class="column"
 >
   <div
-    class="bottomMargin-2"
+    class="betweenBottomMargin-2 containsTooltip"
   >
-    <div
-      class="row containsTooltip"
+    <label
+      class="resetLabel label"
+      for="the-input"
     >
-      <label
-        class="resetLabel label"
-        for="the-input"
+      <span
+        class="medium boldFont color"
       >
-        <span
-          class="rightMargin-2"
-        >
-          <span
-            class="medium boldFont color"
-          >
-            The input
-          </span>
-        </span>
-      </label>
-    </div>
+        The input
+      </span>
+    </label>
   </div>
   <div
     class="horizontalPadding-3 error"
@@ -96,7 +80,9 @@ exports[`Input renders with a feedback state and icon 1`] = `
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
-        <div>
+        <div
+          class=""
+        >
           <i
             aria-label="The value of this input field is invalid."
             class="iconExclamationPointCircle error size16"

@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Box from '../../Box/Box'
 import DecorativeIcon from '../../../components/Icons/DecorativeIcon/DecorativeIcon'
 import safeRest from '../../../utils/safeRest'
-import {warn} from '../../../utils/warn'
+import { warn } from '../../../utils/warn'
+
+import Box from '../../Box/Box'
 
 import styles from './ChevronLink.modules.scss'
 
@@ -19,23 +20,27 @@ const getClassName = variant => {
   }
 }
 
-const getIcon = (symbol, className) => {
-  const direction = symbol === 'leftChevron' ? {right: 2} : {left: 2}
-
-  return (
-    <Box inline {...direction} dangerouslyAddClassName={className}>
-      <DecorativeIcon symbol={symbol} size={16} />
-    </Box>
-  )
-}
+const getIcon = (symbol, classes) => (
+  <span className={classes}>
+    <DecorativeIcon symbol={symbol} size={16} />
+  </span>
+)
 
 /**
  * A call to action link.
  */
-const ChevronLink = ({reactRouterLinkComponent, variant, direction, children, ...rest}) => {
+const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, ...rest }) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
     warn('Chevron Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
+
+  const innerLink = (
+    <Box inline between={2}>
+      {direction === 'left' ? getIcon('leftChevron', styles.leftChevron) : undefined}
+      <span>{children}</span>
+      {direction === 'right' ? getIcon('chevron', styles.rightChevron) : undefined}
+    </Box>
+  )
 
   return React.createElement(
     reactRouterLinkComponent || 'a',
@@ -43,9 +48,7 @@ const ChevronLink = ({reactRouterLinkComponent, variant, direction, children, ..
       ...safeRest(rest),
       className: getClassName(variant),
     },
-    direction === 'left' ? getIcon('leftChevron', styles.leftChevron) : undefined,
-    children,
-    direction === 'right' ? getIcon('chevron', styles.rightChevron) : undefined
+    innerLink
   )
 }
 
