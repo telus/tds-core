@@ -5,13 +5,10 @@ import { childrenOfType } from 'airbnb-prop-types'
 import Set from 'core-js/es6/set'
 import arrayFrom from 'core-js/fn/array/from'
 
-import safeRest from '../../utils/safeRest'
 import { isEqual } from '../../utils/sets'
 
-import PanelWrapper from './PanelWrapper/PanelWrapper'
+import Panels from './Panels'
 import Panel from './Panel/Panel'
-
-import styles from './ExpandCollapse.modules.scss'
 
 class ExpandCollapse extends React.Component {
   constructor(props) {
@@ -53,30 +50,17 @@ class ExpandCollapse extends React.Component {
     )
   }
 
+  isPanelOpen = panelId => {
+    return this.state.openPanels.has(panelId)
+  }
+
   render() {
     const { children, ...rest } = this.props
 
     return (
-      <div {...safeRest(rest)} className={styles.base}>
-        {React.Children.map(children, (panel, index) => {
-          const { id, header, subtext, disabled, onToggle } = panel.props
-
-          return (
-            <PanelWrapper
-              panelId={id}
-              panelHeader={header}
-              panelSubtext={subtext}
-              panelOnToggle={onToggle}
-              panelDisabled={disabled}
-              open={this.state.openPanels.has(id)}
-              last={index === React.Children.count(children) - 1}
-              onClick={() => this.togglePanel(id)}
-            >
-              {panel}
-            </PanelWrapper>
-          )
-        })}
-      </div>
+      <Panels {...rest} isPanelOpen={this.isPanelOpen} togglePanel={this.togglePanel}>
+        {children}
+      </Panels>
     )
   }
 }

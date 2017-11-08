@@ -1,17 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ExpandCollapse renders a closed panel 1`] = `
-<ExpandCollapse
-  open={Array []}
->
+exports[`Accordion renders a closed accordion 1`] = `
+<Accordion>
   <Panels
     isPanelOpen={[Function]}
-    open={Array []}
     togglePanel={[Function]}
   >
     <div
       className="base"
-      open={Array []}
     >
       <PanelWrapper
         key=".0"
@@ -234,33 +230,21 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
       </PanelWrapper>
     </div>
   </Panels>
-</ExpandCollapse>
+</Accordion>
 `;
 
-exports[`ExpandCollapse renders an open panel 1`] = `
-<ExpandCollapse
-  open={
-    Array [
-      "panel-1",
-    ]
-  }
+exports[`Accordion renders an open accordion 1`] = `
+<Accordion
+  open="panel-1"
 >
   <Panels
     isPanelOpen={[Function]}
-    open={
-      Array [
-        "panel-1",
-      ]
-    }
+    open="panel-1"
     togglePanel={[Function]}
   >
     <div
       className="base"
-      open={
-        Array [
-          "panel-1",
-        ]
-      }
+      open="panel-1"
     >
       <PanelWrapper
         key=".0"
@@ -483,5 +467,5 @@ exports[`ExpandCollapse renders an open panel 1`] = `
       </PanelWrapper>
     </div>
   </Panels>
-</ExpandCollapse>
+</Accordion>
 `;

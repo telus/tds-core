@@ -15,7 +15,7 @@ describe('ExpandCollapse', () => {
           The panel content
         </ExpandCollapse.Panel>
       </ExpandCollapse>
-    )
+    ).dive()
 
   const doMount = component => {
     const expandCollapse = mount(component)

@@ -64,3 +64,18 @@ const trigger = () => {
   </ExpandCollapse.Panel>
 </ExpandCollapse>
 ```
+
+### Accordions
+
+```
+const Accordion = require('./Accordion/Accordion').default;
+
+<Accordion>
+  <Accordion.Panel id="panel-40" header="First panel title">
+    First panel
+  </Accordion.Panel>
+  <Accordion.Panel id="panel-41" header="Second panel title" subtext="Some subtext">
+    Second panel
+  </Accordion.Panel>
+</Accordion>
+```
