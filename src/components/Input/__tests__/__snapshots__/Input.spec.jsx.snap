@@ -2,7 +2,7 @@
 
 exports[`Input renders 1`] = `
 <div
-  class="column"
+  class="betweenBottomMargin-2"
 >
   <div
     class="betweenBottomMargin-2 containsTooltip"
@@ -11,11 +11,15 @@ exports[`Input renders 1`] = `
       class="resetLabel label"
       for="the-input"
     >
-      <span
-        class="medium boldFont color"
+      <div
+        class="betweenRightMargin-2 betweenRight"
       >
-        The input
-      </span>
+        <span
+          class="medium boldFont color"
+        >
+          The input
+        </span>
+      </div>
     </label>
   </div>
   <div
@@ -43,7 +47,7 @@ exports[`Input renders 1`] = `
 
 exports[`Input renders with a feedback state and icon 1`] = `
 <div
-  class="column"
+  class="betweenBottomMargin-2"
 >
   <div
     class="betweenBottomMargin-2 containsTooltip"
@@ -52,11 +56,15 @@ exports[`Input renders with a feedback state and icon 1`] = `
       class="resetLabel label"
       for="the-input"
     >
-      <span
-        class="medium boldFont color"
+      <div
+        class="betweenRightMargin-2 betweenRight"
       >
-        The input
-      </span>
+        <span
+          class="medium boldFont color"
+        >
+          The input
+        </span>
+      </div>
     </label>
   </div>
   <div

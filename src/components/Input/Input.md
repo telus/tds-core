@@ -10,12 +10,12 @@ will be available as additional components.
 Supply additional HTML input attributes as normal.
 
 ```
-<div>
+<Box between={2}>
   <Input label="First name" value="Lucy" />
 
   <Input type="tel" label="Mobile phone" pattern="[0-9]{10}" maxLength="10" />
   <Input type="password" label="Tax ID" value="123456789" autoComplete="on" />
-</div>
+</Box>
 ```
 
 ### Getting feedback for entered values

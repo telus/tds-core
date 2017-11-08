@@ -91,13 +91,15 @@ class Input extends React.Component {
     const labelClassNames = joinClassNames(styles.resetLabel, styles.label)
 
     return (
-      <Box tag="label" inline between={2} htmlFor={inputId.identity()} className={labelClassNames}>
-        <Text size="medium" bold>
-          {label}
-        </Text>
+      <label htmlFor={inputId.identity()} className={labelClassNames}>
+        <Box inline between={2}>
+          <Text size="medium" bold>
+            {label}
+          </Text>
 
-        {hint && <Text size="small">{hint}</Text>}
-      </Box>
+          {hint && <Text size="small">{hint}</Text>}
+        </Box>
+      </label>
     )
   }
 
@@ -159,11 +161,11 @@ class Input extends React.Component {
     const showIcon = showFeedbackIcon(feedback, this.state.focus)
 
     return (
-      <Flexbox direction="column">
-        <Box between={2} dangerouslyAddClassName={formFieldStyles.containsTooltip}>
+      <Box between={2}>
+        <Flexbox direction="row" dangerouslyAddClassName={formFieldStyles.containsTooltip}>
           {this.renderLabel(label, hint, inputId)}
           {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
-        </Box>
+        </Flexbox>
 
         {helper && (
           <Box below={3}>{this.renderHelper(helper, helperId, feedback, this.state.value)}</Box>
@@ -193,7 +195,7 @@ class Input extends React.Component {
             </Fade>
           </Flexbox>
         </Box>
-      </Flexbox>
+      </Box>
     )
   }
 }
