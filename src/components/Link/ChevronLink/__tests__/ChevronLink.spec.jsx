@@ -5,7 +5,6 @@ import { warn } from '../../../../utils/warn'
 
 import ChevronLink from '../ChevronLink'
 import DecorativeIcon from '../../../Icons/DecorativeIcon/DecorativeIcon'
-import Box from '../../../Box/Box'
 
 jest.mock('../../../../utils/warn')
 

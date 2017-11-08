@@ -5,7 +5,7 @@ import Box from '../../../src/components/Box/Box'
 import UnorderedList from '../../../src/components/Lists/UnorderedList/UnorderedList'
 import Text from '../../../src/components/Typography/Text/Text'
 
-const MarkdownUnorderedList = ({children}) => (
+const MarkdownUnorderedList = ({ children }) => (
   <Box below={3}>
     <Text block size="medium">
       <UnorderedList>

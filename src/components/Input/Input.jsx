@@ -174,8 +174,8 @@ class Input extends React.Component {
         {error && <Box below={3}>{this.renderError(error, errorId)}</Box>}
 
         <Box horizontal={3} dangerouslyAddClassName={wrapperClassName} data-testid="inputWrapper">
-          <Flexbox direction="row" dangerouslyAddClassName={styles.sizing}>
-            <Box right={3} dangerouslyAddClassName={styles.fullWidth}>
+          <Box inline between={3} dangerouslyAddClassName={styles.sizing}>
+            <Box dangerouslyAddClassName={styles.fullWidth}>
               <input
                 {...safeRest(rest)}
                 id={inputId.identity()}
@@ -191,9 +191,9 @@ class Input extends React.Component {
             </Box>
 
             <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
-              {() => <Box>{this.renderIcon(feedback)}</Box>}
+              {() => this.renderIcon(feedback)}
             </Fade>
-          </Flexbox>
+          </Box>
         </Box>
       </Box>
     )

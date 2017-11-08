@@ -5,8 +5,6 @@ import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import capitalize from '../../utils/capitalize'
 
-import FlexBox from '../Flexbox/Flexbox'
-
 import styles from './Box.modules.scss'
 
 const getClassName = (spacing, location, scale) => {
@@ -60,8 +58,6 @@ const Box = ({
     getBetweenClasses(between, inline),
     dangerouslyAddClassName
   )
-
-  const BoxOutput = React.createElement(tag || 'div')
 
   return React.createElement(tag || 'div', { ...safeRest(rest), className: classes }, children)
 }

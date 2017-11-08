@@ -1,7 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import FlexBox from '../../Flexbox/Flexbox'
 import Box from '../Box'
 
 describe('Box', () => {
