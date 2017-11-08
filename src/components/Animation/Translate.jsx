@@ -6,9 +6,16 @@ const defaultStyle = timeout => ({
   transition: `transform ${timeout}ms`,
 })
 
-const transitionStyles = (direction, length) => ({
-  entered: { transform: `translate${direction.toUpperCase()}(${length})` },
-})
+const transitionStyles = (direction, length) => {
+  const styles = {
+    transform: `translate${direction.toUpperCase()}(${length})`,
+  }
+
+  return {
+    entering: styles,
+    entered: styles,
+  }
+}
 
 const Translate = ({ direction, length, children, ...rest }) => (
   <Transition {...rest}>

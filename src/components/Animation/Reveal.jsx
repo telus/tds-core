@@ -8,9 +8,16 @@ const defaultStyle = timeout => ({
   overflow: 'hidden',
 })
 
-const transitionStyles = height => ({
-  entered: { height: `${height}px` },
-})
+const transitionStyles = height => {
+  const styles = {
+    height: `${height}px`
+  }
+
+  return {
+    entering: styles,
+    entered: styles,
+  }
+}
 
 const Reveal = ({ height, children, ...rest }) => (
   <Transition {...rest}>
