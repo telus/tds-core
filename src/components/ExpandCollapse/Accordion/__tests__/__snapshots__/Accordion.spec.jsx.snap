@@ -112,7 +112,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                         inline={false}
                       >
                         <div
-                          className="betweenBottomMargin-2"
+                          className="betweenBottomMargin-2 betweenBottom"
                         >
                           <Text
                             block={false}
@@ -331,7 +331,7 @@ exports[`Accordion renders an open accordion 1`] = `
                         inline={false}
                       >
                         <div
-                          className="betweenBottomMargin-2"
+                          className="betweenBottomMargin-2 betweenBottom"
                         >
                           <Text
                             block={false}

@@ -2,7 +2,7 @@
 
 exports[`Input renders 1`] = `
 <div
-  class="betweenBottomMargin-2"
+  class="betweenBottomMargin-2 betweenBottom"
 >
   <div
     class="row containsTooltip"
@@ -47,7 +47,7 @@ exports[`Input renders 1`] = `
 
 exports[`Input renders with a feedback state and icon 1`] = `
 <div
-  class="betweenBottomMargin-2"
+  class="betweenBottomMargin-2 betweenBottom"
 >
   <div
     class="row containsTooltip"

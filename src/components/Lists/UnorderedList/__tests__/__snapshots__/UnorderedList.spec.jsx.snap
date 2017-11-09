@@ -2,7 +2,7 @@
 
 exports[`<UnorderedList /> renders 1`] = `
 <ul
-  class="betweenBottomMargin-2 base"
+  class="betweenBottomMargin-2 betweenBottom base"
 >
   <li
     class="circle"
