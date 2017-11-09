@@ -28,7 +28,7 @@ const getBetweenClasses = (betweenSize, inline) => {
 }
 
 /**
- * Box - apply spacing within or around components
+ * Apply spacing within or around components
  *
  * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.29.0</span>
  */
@@ -60,11 +60,11 @@ const Box = ({
 
 Box.propTypes = {
   /**
-   * If `true`, render a `<span>` instead of `<div>`.
+   * If `true`, apply inline flexbox styles to all direct children, arranging them as a row. This is used in conjunction with the `between` prop.
    */
   inline: PropTypes.bool,
   /**
-   * Specifies which HTML element to render Box as. Example: `"ul"`
+   * Specifies which HTML element to render Box as. Example: `"section"`.
    */
   tag: PropTypes.string,
   /**
