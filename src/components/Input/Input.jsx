@@ -161,17 +161,15 @@ class Input extends React.Component {
     const showIcon = showFeedbackIcon(feedback, this.state.focus)
 
     return (
-      <Box between={2}>
+      <Box between={3}>
         <Flexbox direction="row" dangerouslyAddClassName={formFieldStyles.containsTooltip}>
           {this.renderLabel(label, hint, inputId)}
           {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
         </Flexbox>
 
-        {helper && (
-          <Box below={3}>{this.renderHelper(helper, helperId, feedback, this.state.value)}</Box>
-        )}
+        {helper && this.renderHelper(helper, helperId, feedback, this.state.value)}
 
-        {error && <Box below={3}>{this.renderError(error, errorId)}</Box>}
+        {error && this.renderError(error, errorId)}
 
         <Box horizontal={3} dangerouslyAddClassName={wrapperClassName} data-testid="inputWrapper">
           <Box inline between={3} dangerouslyAddClassName={styles.sizing}>

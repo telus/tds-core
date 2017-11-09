@@ -2,10 +2,10 @@
 
 exports[`Input renders 1`] = `
 <div
-  class="betweenBottomMargin-2"
+  class="betweenBottomMargin-3"
 >
   <div
-    class="betweenBottomMargin-2 containsTooltip"
+    class="row containsTooltip"
   >
     <label
       class="resetLabel label"
@@ -27,10 +27,10 @@ exports[`Input renders 1`] = `
     data-testid="inputWrapper"
   >
     <div
-      class="row sizing"
+      class="betweenRightMargin-3 betweenRight sizing"
     >
       <div
-        class="rightMargin-3 fullWidth"
+        class="fullWidth"
       >
         <input
           aria-invalid="false"
@@ -47,10 +47,10 @@ exports[`Input renders 1`] = `
 
 exports[`Input renders with a feedback state and icon 1`] = `
 <div
-  class="betweenBottomMargin-2"
+  class="betweenBottomMargin-3"
 >
   <div
-    class="betweenBottomMargin-2 containsTooltip"
+    class="row containsTooltip"
   >
     <label
       class="resetLabel label"
@@ -72,10 +72,10 @@ exports[`Input renders with a feedback state and icon 1`] = `
     data-testid="inputWrapper"
   >
     <div
-      class="row sizing"
+      class="betweenRightMargin-3 betweenRight sizing"
     >
       <div
-        class="rightMargin-3 fullWidth"
+        class="fullWidth"
       >
         <input
           aria-invalid="true"
@@ -88,14 +88,10 @@ exports[`Input renders with a feedback state and icon 1`] = `
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
-        <div
-          class=""
-        >
-          <i
-            aria-label="The value of this input field is invalid."
-            class="iconExclamationPointCircle error size16"
-          />
-        </div>
+        <i
+          aria-label="The value of this input field is invalid."
+          class="iconExclamationPointCircle error size16"
+        />
       </div>
     </div>
   </div>
