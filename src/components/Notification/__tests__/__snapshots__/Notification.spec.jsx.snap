@@ -14,7 +14,7 @@ exports[`<Notification /> renders 1`] = `
         class="xs-12"
       >
         <div
-          class="row"
+          class="betweenRightMargin-3 betweenRight"
         >
           <p
             class="noSpacing color medium mediumFont leftAlign"
