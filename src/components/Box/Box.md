@@ -14,14 +14,14 @@ The Box component contains props that accept values from `1` to `8`. These numbe
 
 | Number | Default value | Value in viewports greater or equal to `768px` | 
 | ------ | ------------: | -------------------------------------------: |
-| 1 | 0.25rem | _unchanged_ |
-| 2 | 0.5rem | _unchanged_ |
-| 3 | 1rem | _unchanged_ |
-| 4 | 1.5rem | 2rem |
-| 5 | 2rem | 3rem |
-| 6 | 2.5rem | 4rem |
-| 7 | 3rem | 4.5rem |
-| 8 | 4rem | 6rem |
+| 1 | 0.25rem (4px) | _unchanged_ |
+| 2 | 0.5rem (8px) | _unchanged_ |
+| 3 | 1rem (16px) | _unchanged_ |
+| 4 | 1.5rem (24px) | 2rem (32px) |
+| 5 | 2rem (32px) | 3rem (48px) |
+| 6 | 2.5rem (40px) | 4rem (64px) |
+| 7 | 3rem (48px) | 4.5rem (72px) |
+| 8 | 4rem (64px) | 6rem (96px) |
 
 ### Usage tips
 
@@ -80,11 +80,11 @@ When wrapping a Box element around a series of elements, use the `between` prop 
 ```jsx
 <Box inline between={3}>
   <Link href="//telus.com">Phones</Link>
-  <Box inline>|</Box>
+  <span>|</span>
   <Link href="//telus.com">Pre-Owned</Link>
-  <Box inline>|</Box>
+  <span>|</span>
   <Link href="//telus.com">Prepaid</Link>
-  <Box inline>|</Box>
+  <span>|</span>
   <Link href="//telus.com">Sale</Link>
 </Box>
 ```
