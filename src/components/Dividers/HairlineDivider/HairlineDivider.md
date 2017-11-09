@@ -1,19 +1,13 @@
 ```
-<div>
+<Box between={4}>
   <HairlineDivider />
-
-  <br/>
-
   <HairlineDivider gradient />
-</div>
+</Box>
 ```
 
 ```
-<div style={{height: '150px', display: 'flex'}}>
+<Box inline between={4} dangerouslyAddClassName="docs_divider-height">
   <HairlineDivider vertical />
-
-  <div style={{width: '20px'}} />
-
   <HairlineDivider vertical gradient />
-</div>
+</Box>
 ```
