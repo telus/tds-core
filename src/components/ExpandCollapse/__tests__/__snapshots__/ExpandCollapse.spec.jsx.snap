@@ -56,102 +56,84 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                 <div
                   className="verticalPadding-3"
                 >
-                  <Flexbox
-                    direction="row"
+                  <Box
+                    between={3}
+                    inline={true}
                   >
                     <div
-                      className="row"
+                      className="betweenRightMargin-3 betweenRight"
                     >
+                      <Translate
+                        direction="y"
+                        distance="0.25rem"
+                        in={false}
+                        timeout={300}
+                      >
+                        <Transition
+                          appear={false}
+                          enter={true}
+                          exit={true}
+                          in={false}
+                          mountOnEnter={false}
+                          onEnter={[Function]}
+                          onEntered={[Function]}
+                          onEntering={[Function]}
+                          onExit={[Function]}
+                          onExited={[Function]}
+                          onExiting={[Function]}
+                          timeout={300}
+                          unmountOnExit={false}
+                        >
+                          <div
+                            style={
+                              Object {
+                                "transition": "transform 300ms",
+                              }
+                            }
+                          >
+                            <DecorativeIcon
+                              size={16}
+                              symbol="caretDown"
+                              variant="primary"
+                            >
+                              <Icon
+                                aria-hidden="true"
+                                size={16}
+                                symbol="caretDown"
+                                variant="primary"
+                              >
+                                <i
+                                  aria-hidden="true"
+                                  className="iconCaretDown primary size16"
+                                />
+                              </Icon>
+                            </DecorativeIcon>
+                          </div>
+                        </Transition>
+                      </Translate>
                       <Box
+                        between={2}
                         inline={false}
-                        right={3}
                       >
                         <div
-                          className="rightMargin-3"
+                          className="betweenBottomMargin-2"
                         >
-                          <Translate
-                            direction="y"
-                            distance="0.25rem"
-                            in={false}
-                            timeout={300}
+                          <Text
+                            block={false}
+                            bold={false}
+                            invert={false}
+                            size="medium"
                           >
-                            <Transition
-                              appear={false}
-                              enter={true}
-                              exit={true}
-                              in={false}
-                              mountOnEnter={false}
-                              onEnter={[Function]}
-                              onEntered={[Function]}
-                              onEntering={[Function]}
-                              onExit={[Function]}
-                              onExited={[Function]}
-                              onExiting={[Function]}
-                              timeout={300}
-                              unmountOnExit={false}
+                            <span
+                              className="medium mediumFont color"
                             >
-                              <div
-                                style={
-                                  Object {
-                                    "transition": "transform 300ms",
-                                  }
-                                }
-                              >
-                                <DecorativeIcon
-                                  size={16}
-                                  symbol="caretDown"
-                                  variant="primary"
-                                >
-                                  <Icon
-                                    aria-hidden="true"
-                                    size={16}
-                                    symbol="caretDown"
-                                    variant="primary"
-                                  >
-                                    <i
-                                      aria-hidden="true"
-                                      className="iconCaretDown primary size16"
-                                    />
-                                  </Icon>
-                                </DecorativeIcon>
-                              </div>
-                            </Transition>
-                          </Translate>
+                              Panel title
+                            </span>
+                          </Text>
                         </div>
                       </Box>
-                      <Flexbox
-                        direction="column"
-                      >
-                        <div
-                          className="column"
-                        >
-                          <Box
-                            bottom={2}
-                            className=""
-                            spacing="margin"
-                          >
-                            <div
-                              bottom={2}
-                              spacing="margin"
-                            >
-                              <Text
-                                block={false}
-                                bold={false}
-                                invert={false}
-                                size="medium"
-                              >
-                                <span
-                                  className="medium mediumFont color"
-                                >
-                                  Panel title
-                                </span>
-                              </Text>
-                            </div>
-                          </Box>
-                        </div>
-                      </Flexbox>
                     </div>
-                  </Flexbox>
+                  </Box>
                 </div>
               </Box>
             </button>
@@ -305,102 +287,84 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                 <div
                   className="verticalPadding-3"
                 >
-                  <Flexbox
-                    direction="row"
+                  <Box
+                    between={3}
+                    inline={true}
                   >
                     <div
-                      className="row"
+                      className="betweenRightMargin-3 betweenRight"
                     >
+                      <Translate
+                        direction="y"
+                        distance="-0.25rem"
+                        in={false}
+                        timeout={300}
+                      >
+                        <Transition
+                          appear={false}
+                          enter={true}
+                          exit={true}
+                          in={false}
+                          mountOnEnter={false}
+                          onEnter={[Function]}
+                          onEntered={[Function]}
+                          onEntering={[Function]}
+                          onExit={[Function]}
+                          onExited={[Function]}
+                          onExiting={[Function]}
+                          timeout={300}
+                          unmountOnExit={false}
+                        >
+                          <div
+                            style={
+                              Object {
+                                "transition": "transform 300ms",
+                              }
+                            }
+                          >
+                            <DecorativeIcon
+                              size={16}
+                              symbol="caretUp"
+                              variant="primary"
+                            >
+                              <Icon
+                                aria-hidden="true"
+                                size={16}
+                                symbol="caretUp"
+                                variant="primary"
+                              >
+                                <i
+                                  aria-hidden="true"
+                                  className="iconCaretUp primary size16"
+                                />
+                              </Icon>
+                            </DecorativeIcon>
+                          </div>
+                        </Transition>
+                      </Translate>
                       <Box
+                        between={2}
                         inline={false}
-                        right={3}
                       >
                         <div
-                          className="rightMargin-3"
+                          className="betweenBottomMargin-2"
                         >
-                          <Translate
-                            direction="y"
-                            distance="-0.25rem"
-                            in={false}
-                            timeout={300}
+                          <Text
+                            block={false}
+                            bold={false}
+                            invert={false}
+                            size="medium"
                           >
-                            <Transition
-                              appear={false}
-                              enter={true}
-                              exit={true}
-                              in={false}
-                              mountOnEnter={false}
-                              onEnter={[Function]}
-                              onEntered={[Function]}
-                              onEntering={[Function]}
-                              onExit={[Function]}
-                              onExited={[Function]}
-                              onExiting={[Function]}
-                              timeout={300}
-                              unmountOnExit={false}
+                            <span
+                              className="medium mediumFont color"
                             >
-                              <div
-                                style={
-                                  Object {
-                                    "transition": "transform 300ms",
-                                  }
-                                }
-                              >
-                                <DecorativeIcon
-                                  size={16}
-                                  symbol="caretUp"
-                                  variant="primary"
-                                >
-                                  <Icon
-                                    aria-hidden="true"
-                                    size={16}
-                                    symbol="caretUp"
-                                    variant="primary"
-                                  >
-                                    <i
-                                      aria-hidden="true"
-                                      className="iconCaretUp primary size16"
-                                    />
-                                  </Icon>
-                                </DecorativeIcon>
-                              </div>
-                            </Transition>
-                          </Translate>
+                              Panel title
+                            </span>
+                          </Text>
                         </div>
                       </Box>
-                      <Flexbox
-                        direction="column"
-                      >
-                        <div
-                          className="column"
-                        >
-                          <Box
-                            bottom={2}
-                            className=""
-                            spacing="margin"
-                          >
-                            <div
-                              bottom={2}
-                              spacing="margin"
-                            >
-                              <Text
-                                block={false}
-                                bold={false}
-                                invert={false}
-                                size="medium"
-                              >
-                                <span
-                                  className="medium mediumFont color"
-                                >
-                                  Panel title
-                                </span>
-                              </Text>
-                            </div>
-                          </Box>
-                        </div>
-                      </Flexbox>
                     </div>
-                  </Flexbox>
+                  </Box>
                 </div>
               </Box>
             </button>

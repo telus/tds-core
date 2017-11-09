@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
 import Box from '../../Box/Box'
-import Flexbox from '../../Flexbox/Flexbox'
 import Clickable from '../../Clickable/Clickable'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../../Typography/Text/Text'
@@ -84,15 +83,12 @@ class PanelWrapper extends React.Component {
       return header
     }
 
-    // FIXME: Use between here!
     return (
-      <Flexbox direction="column">
-        <Box spacing="margin" bottom={2}>
-          <Text size="medium">{header}</Text>
-        </Box>
+      <Box between={2}>
+        <Text size="medium">{header}</Text>
 
         {subtext && <Text size="small">{subtext}</Text>}
-      </Flexbox>
+      </Box>
     )
   }
 
@@ -120,13 +116,11 @@ class PanelWrapper extends React.Component {
           aria-expanded={this.state.open ? 'true' : 'false'}
         >
           <Box vertical={3}>
-            <Flexbox direction="row">
-              <Box right={3}>
-                {this.renderCaret(panelDisabled, this.state.hover, this.state.open)}
-              </Box>
+            <Box inline between={3}>
+              {this.renderCaret(panelDisabled, this.state.hover, this.state.open)}
 
               {this.renderHeader(panelHeader, panelSubtext)}
-            </Flexbox>
+            </Box>
           </Box>
         </Clickable>
 
