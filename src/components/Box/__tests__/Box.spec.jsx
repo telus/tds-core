@@ -57,12 +57,6 @@ describe('Box', () => {
     expect(box).toHaveClassName('bottomMargin-2')
   })
 
-  it('can have right margin', () => {
-    const box = doShallow({ right: 4 })
-
-    expect(box).toHaveClassName('rightMargin-4')
-  })
-
   it('can have between margin as a stack', () => {
     const box = doShallow({ between: 2 })
 

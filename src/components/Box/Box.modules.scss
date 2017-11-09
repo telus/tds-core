@@ -46,10 +46,6 @@ $boxProps: ('margin': 'Margin', 'padding': 'Padding');
       #{$p}-right: $value;
     }
 
-    .right#{$v}-#{$level} {
-      #{$p}-right: $value;
-    }
-
     .bottom#{$v}-#{$level} {
       #{$p}-bottom: $value;
     }
@@ -61,10 +57,6 @@ $boxProps: ('margin': 'Margin', 'padding': 'Padding');
 
     .betweenRight#{$v}-#{$level} > *:not(:last-child) {
       #{$p}-right: $value;
-    }
-
-    .left#{$v}-#{$level} {
-      #{$p}-left: $value;
     }
   }
 }

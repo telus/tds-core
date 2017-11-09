@@ -39,8 +39,6 @@ const Box = ({
   horizontal,
   inset,
   below,
-  right,
-  left,
   between,
   dangerouslyAddClassName,
   children,
@@ -53,8 +51,6 @@ const Box = ({
     getClassName('padding', 'horizontal', xSize),
     getClassName('padding', 'vertical', ySize),
     getClassName('margin', 'bottom', below),
-    getClassName('margin', 'right', right),
-    getClassName('margin', 'left', left),
     getBetweenClasses(between, inline),
     dangerouslyAddClassName
   )
@@ -88,14 +84,6 @@ Box.propTypes = {
    */
   below: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
-   * Sets a `margin-right`.
-   */
-  right: PropTypes.oneOf([1, 2, 3, 4, 6]),
-  /**
-   * Sets a `margin-left`.
-   */
-  left: PropTypes.oneOf([1, 2, 3, 4, 6]),
-  /**
    * Sets a `margin-bottom` to all direct children except the last. If the `inline` prop is set to `true`, this sets a `margin-right` to all direct children except the last.
    */
   between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
@@ -116,8 +104,6 @@ Box.defaultProps = {
   horizontal: undefined,
   inset: undefined,
   below: undefined,
-  right: undefined,
-  left: undefined,
   between: undefined,
   dangerouslyAddClassName: undefined,
 }
