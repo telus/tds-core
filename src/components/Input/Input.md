@@ -24,13 +24,13 @@ Use the `feedback` attribute to give the user feedback regarding their input. Yo
 was correct, or highlight errors that must be corrected.
 
 ```
-<div>
+<Box between={2}>
   <Input label="Username" value="guest12345" feedback="success" />
   <Input
     label="Email" value="guest@telus.com" feedback="error"
     error="That email is already associated with another account. Choose another one."
   />
-</div>
+</Box>
 ```
 
 TDS does not perform input validations, as that is an application level concern. You will need to track the value of your

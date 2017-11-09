@@ -25,8 +25,6 @@ $responsive-spacings: (
     )
 );
 
-$boxProps: ('margin': 'Margin', 'padding': 'Padding');
-
 .betweenRight {
   display: flex;
   flex-direction: row;
@@ -35,29 +33,26 @@ $boxProps: ('margin': 'Margin', 'padding': 'Padding');
 
 // Todo remove unneeded classes related to margin
 @mixin spacingClasses ($level, $value) {
-  @each $p, $v in $boxProps {
-    .vertical#{$v}-#{$level} {
-      #{$p}-top: $value;
-      #{$p}-bottom: $value;
-    }
+  .verticalPadding-#{$level} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
 
-    .horizontal#{$v}-#{$level} {
-      #{$p}-left: $value;
-      #{$p}-right: $value;
-    }
+  .horizontalPadding-#{$level} {
+    padding-left: $value;
+    padding-right: $value;
+  }
 
-    .bottom#{$v}-#{$level} {
-      #{$p}-bottom: $value;
-    }
+  .bottomMargin-#{$level} {
+    margin-bottom: $value;
+  }
 
-    // TODO: refactor to not generate unnecessary .betweenBottomPadding-*
-    .betweenBottom#{$v}-#{$level} > *:not(:last-child) {
-      #{$p}-bottom: $value;
-    }
+  .betweenBottomMargin-#{$level} > *:not(:last-child) {
+    margin-bottom: $value;
+  }
 
-    .betweenRight#{$v}-#{$level} > *:not(:last-child) {
-      #{$p}-right: $value;
-    }
+  .betweenRightMargin-#{$level} > *:not(:last-child) {
+    margin-right: $value;
   }
 }
 

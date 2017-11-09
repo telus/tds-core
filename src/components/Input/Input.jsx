@@ -161,7 +161,7 @@ class Input extends React.Component {
     const showIcon = showFeedbackIcon(feedback, this.state.focus)
 
     return (
-      <Box between={3}>
+      <Box between={2}>
         <Flexbox direction="row" dangerouslyAddClassName={formFieldStyles.containsTooltip}>
           {this.renderLabel(label, hint, inputId)}
           {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
