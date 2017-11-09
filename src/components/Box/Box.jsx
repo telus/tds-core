@@ -23,7 +23,7 @@ const getBetweenClasses = (betweenSize, inline) => {
   const direction = inline ? 'Right' : 'Bottom'
   return joinClassNames(
     styles[`between${direction}Margin-${betweenSize}`],
-    inline ? styles.betweenRight : undefined
+    inline ? styles.betweenRight : styles.betweenBottom
   )
 }
 
