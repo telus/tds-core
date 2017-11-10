@@ -14,6 +14,7 @@ import Panel from '../Panel/Panel'
 import joinClassNames from '../../../utils/joinClassNames'
 
 import styles from './PanelWrapper.modules.scss'
+import Flexbox from '../../Flexbox/Flexbox'
 
 class PanelWrapper extends React.Component {
   constructor(props) {
@@ -77,19 +78,27 @@ class PanelWrapper extends React.Component {
     )
   }
 
-  renderHeader(header, subtext) {
-    if (typeof header !== 'string') {
-      return header
-    }
+  renderHeader(header, subtext, tertiaryText) {
+    // FIXME: Figure out if the wrapping <div>s are necessary
 
     return (
-      <Box between={2}>
-        <Text size="medium" bold={!!subtext}>
-          {header}
-        </Text>
+      <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
+        <Box between={2} dangerouslyAddClassName={styles.headerAlign}>
+          <div>
+            <Text size="medium" bold={!!subtext}>
+              {header}
+            </Text>
+          </div>
 
-        {subtext && <Text size="small">{subtext}</Text>}
-      </Box>
+          {subtext && (
+            <div>
+              <Text size="small">{subtext}</Text>
+            </div>
+          )}
+        </Box>
+
+        {tertiaryText && <Text size="large">{tertiaryText}</Text>}
+      </Flexbox>
     )
   }
 
@@ -98,6 +107,7 @@ class PanelWrapper extends React.Component {
       panelId,
       panelHeader,
       panelSubtext,
+      panelTertiaryText,
       panelDisabled,
       onClick,
       children,
@@ -117,7 +127,7 @@ class PanelWrapper extends React.Component {
             <Box inline between={3}>
               {this.renderCaret(panelDisabled, this.state.hover, this.state.open)}
 
-              {this.renderHeader(panelHeader, panelSubtext)}
+              {this.renderHeader(panelHeader, panelSubtext, panelTertiaryText)}
             </Box>
           </Box>
         </Clickable>
@@ -143,8 +153,9 @@ class PanelWrapper extends React.Component {
 }
 PanelWrapper.propTypes = {
   panelId: PropTypes.string.isRequired,
-  panelHeader: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  panelHeader: PropTypes.string.isRequired,
   panelSubtext: PropTypes.string,
+  panelTertiaryText: PropTypes.string,
   panelOnToggle: PropTypes.func,
   panelDisabled: PropTypes.bool,
   open: PropTypes.bool,
@@ -154,6 +165,7 @@ PanelWrapper.propTypes = {
 
 PanelWrapper.defaultProps = {
   panelSubtext: undefined,
+  panelTertiaryText: undefined,
   panelDisabled: false,
   panelOnToggle: undefined,
   open: false,

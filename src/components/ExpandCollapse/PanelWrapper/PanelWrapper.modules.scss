@@ -5,6 +5,11 @@
   text-align: left;
 }
 
+.headerAlign {
+  flex: 1;
+  align-items: flex-start;
+}
+
 .disabled {
   background-color: $color-athens-grey;
   cursor: default;

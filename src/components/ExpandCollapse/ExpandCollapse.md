@@ -6,19 +6,11 @@
   <ExpandCollapse.Panel id="panel-2" header="Second panel title" subtext="Some subtext">
     Second panel
   </ExpandCollapse.Panel>
-</ExpandCollapse>
-```
-
-### Arbitrary header component
-
-```
-<ExpandCollapse>
-  <ExpandCollapse.Panel id="panel-10" header={<Text size="large">I'm large and misligned</Text>}>
-    First panel
+  <ExpandCollapse.Panel id="panel-3" header="Third panel title" subtext="Some subtext" tertiaryText="$100">
+    Third panel
   </ExpandCollapse.Panel>
 </ExpandCollapse>
 ```
-
 
 ### Adjusting height
 
@@ -74,7 +66,7 @@ const Accordion = require('./Accordion/Accordion').default;
   <Accordion.Panel id="panel-40" header="First panel title">
     First panel
   </Accordion.Panel>
-  <Accordion.Panel id="panel-41" header="Second panel title" subtext="Some subtext">
+  <Accordion.Panel id="panel-41" header="Second panel title">
     Second panel
   </Accordion.Panel>
 </Accordion>

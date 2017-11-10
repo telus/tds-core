@@ -96,14 +96,16 @@ describe('ExpandCollapse', () => {
       expect(findPanelHeader('panel-1')).toContainReact(<Text size="small">Some subtext</Text>)
     })
 
-    it('can be arbitrary components', () => {
-      const Header = () => <div>A complex header</div>
-
+    it('can have additional tertiary text', () => {
       const { findPanelHeader } = doMount(
-        <ExpandCollapse>{aPanel({ id: 'panel-1', header: <Header /> })}</ExpandCollapse>
+        <ExpandCollapse>
+          {aPanel({ id: 'panel-1', tertiaryText: 'Some tertiary text' })}
+        </ExpandCollapse>
       )
 
-      expect(findPanelHeader('panel-1')).toContainReact(<div>A complex header</div>)
+      expect(findPanelHeader('panel-1')).toContainReact(
+        <Text size="large">Some tertiary text</Text>
+      )
     })
   })
 

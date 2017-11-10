@@ -12,13 +12,14 @@ import styles from './ExpandCollapse.modules.scss'
 
 const getPanelWrappers = (isPanelOpen, togglePanel, children) =>
   React.Children.map(children, panel => {
-    const { id, header, subtext, disabled, onToggle } = panel.props
+    const { id, header, subtext, tertiaryText, disabled, onToggle } = panel.props
 
     return (
       <PanelWrapper
         panelId={id}
         panelHeader={header}
         panelSubtext={subtext}
+        panelTertiaryText={tertiaryText}
         panelOnToggle={onToggle}
         panelDisabled={disabled}
         open={isPanelOpen(id)}

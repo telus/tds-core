@@ -107,27 +107,39 @@ exports[`Accordion renders a closed accordion 1`] = `
                           </div>
                         </Transition>
                       </Translate>
-                      <Box
-                        between={2}
-                        inline={false}
+                      <Flexbox
+                        dangerouslyAddClassName="headerAlign"
+                        direction="row"
                       >
                         <div
-                          className="betweenBottomMargin-2 betweenBottom"
+                          className="row headerAlign"
                         >
-                          <Text
-                            block={false}
-                            bold={false}
-                            invert={false}
-                            size="medium"
+                          <Box
+                            between={2}
+                            dangerouslyAddClassName="headerAlign"
+                            inline={false}
                           >
-                            <span
-                              className="medium mediumFont color"
+                            <div
+                              className="betweenBottomMargin-2 headerAlign"
                             >
-                              Panel title
-                            </span>
-                          </Text>
+                              <div>
+                                <Text
+                                  block={false}
+                                  bold={false}
+                                  invert={false}
+                                  size="medium"
+                                >
+                                  <span
+                                    className="medium mediumFont color"
+                                  >
+                                    Panel title
+                                  </span>
+                                </Text>
+                              </div>
+                            </div>
+                          </Box>
                         </div>
-                      </Box>
+                      </Flexbox>
                     </div>
                   </Box>
                 </div>
@@ -327,27 +339,39 @@ exports[`Accordion renders an open accordion 1`] = `
                           </div>
                         </Transition>
                       </Translate>
-                      <Box
-                        between={2}
-                        inline={false}
+                      <Flexbox
+                        dangerouslyAddClassName="headerAlign"
+                        direction="row"
                       >
                         <div
-                          className="betweenBottomMargin-2 betweenBottom"
+                          className="row headerAlign"
                         >
-                          <Text
-                            block={false}
-                            bold={false}
-                            invert={false}
-                            size="medium"
+                          <Box
+                            between={2}
+                            dangerouslyAddClassName="headerAlign"
+                            inline={false}
                           >
-                            <span
-                              className="medium mediumFont color"
+                            <div
+                              className="betweenBottomMargin-2 headerAlign"
                             >
-                              Panel title
-                            </span>
-                          </Text>
+                              <div>
+                                <Text
+                                  block={false}
+                                  bold={false}
+                                  invert={false}
+                                  size="medium"
+                                >
+                                  <span
+                                    className="medium mediumFont color"
+                                  >
+                                    Panel title
+                                  </span>
+                                </Text>
+                              </div>
+                            </div>
+                          </Box>
                         </div>
-                      </Box>
+                      </Flexbox>
                     </div>
                   </Box>
                 </div>
