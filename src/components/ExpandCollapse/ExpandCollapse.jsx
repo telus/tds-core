@@ -74,6 +74,10 @@ ExpandCollapse.propTypes = {
    */
   open: PropTypes.array,
   /**
+   * Whether or not to show the divider above the first panel.
+   */
+  topDivider: PropTypes.bool,
+  /**
    * A callback function to be invoked when any panel is opened or closed.
    *
    * @param {Array} openPanels A list of the currently open panel identifiers.
@@ -87,6 +91,7 @@ ExpandCollapse.propTypes = {
 
 ExpandCollapse.defaultProps = {
   open: [],
+  topDivider: true,
   onToggle: undefined,
 }
 

@@ -10,48 +10,33 @@ import Panel from './Panel/Panel'
 
 import styles from './ExpandCollapse.modules.scss'
 
-const getPanelWrappers = (isPanelOpen, togglePanel, children) =>
-  React.Children.map(children, panel => {
-    const { id, header, subtext, tertiaryText, disabled, onToggle } = panel.props
+const Panels = ({ topDivider, isPanelOpen, togglePanel, children, ...rest }) => (
+  <div {...safeRest(rest)} className={styles.base}>
+    {topDivider && <HairlineDivider />}
 
-    return (
-      <PanelWrapper
-        panelId={id}
-        panelHeader={header}
-        panelSubtext={subtext}
-        panelTertiaryText={tertiaryText}
-        panelOnToggle={onToggle}
-        panelDisabled={disabled}
-        open={isPanelOpen(id)}
-        onClick={() => togglePanel(id)}
-      >
-        {panel}
-      </PanelWrapper>
-    )
-  })
+    {React.Children.map(children, panel => {
+      const { id, header, subtext, tertiaryText, disabled, onToggle } = panel.props
 
-const wrapWithDividers = panels =>
-  panels.map((panel, index) => {
-    const last = index === panels.length - 1
-
-    return [
-      <HairlineDivider key={1} />,
-      panel,
-      last && <HairlineDivider key={2} />,
-    ]
-  })
-
-const Panels = ({ isPanelOpen, togglePanel, children, ...rest }) => {
-  const panels = getPanelWrappers(isPanelOpen, togglePanel, children)
-
-  return (
-    <div {...safeRest(rest)} className={styles.base}>
-      {wrapWithDividers(panels)}
-    </div>
-  )
-}
+      return (
+        <PanelWrapper
+          panelId={id}
+          panelHeader={header}
+          panelSubtext={subtext}
+          panelTertiaryText={tertiaryText}
+          panelOnToggle={onToggle}
+          panelDisabled={disabled}
+          open={isPanelOpen(id)}
+          onClick={() => togglePanel(id)}
+        >
+          {panel}
+        </PanelWrapper>
+      )
+    })}
+  </div>
+)
 
 Panels.propTypes = {
+  topDivider: PropTypes.bool.isRequired,
   isPanelOpen: PropTypes.func.isRequired,
   togglePanel: PropTypes.func.isRequired,
   children: childrenOfType(Panel).isRequired,

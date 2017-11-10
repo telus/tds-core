@@ -3,11 +3,13 @@
 exports[`ExpandCollapse renders a closed panel 1`] = `
 <ExpandCollapse
   open={Array []}
+  topDivider={true}
 >
   <Panels
     isPanelOpen={[Function]}
     open={Array []}
     togglePanel={[Function]}
+    topDivider={true}
   >
     <div
       className="base"
@@ -15,7 +17,6 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
     >
       <HairlineDivider
         gradient={false}
-        key="1"
         vertical={false}
       >
         <hr
@@ -221,17 +222,16 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
               </div>
             </Transition>
           </Reveal>
+          <HairlineDivider
+            gradient={false}
+            vertical={false}
+          >
+            <hr
+              className="horizontalThin"
+            />
+          </HairlineDivider>
         </div>
       </PanelWrapper>
-      <HairlineDivider
-        gradient={false}
-        key="2"
-        vertical={false}
-      >
-        <hr
-          className="horizontalThin"
-        />
-      </HairlineDivider>
     </div>
   </Panels>
 </ExpandCollapse>
@@ -244,6 +244,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
       "panel-1",
     ]
   }
+  topDivider={true}
 >
   <Panels
     isPanelOpen={[Function]}
@@ -253,6 +254,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
       ]
     }
     togglePanel={[Function]}
+    topDivider={true}
   >
     <div
       className="base"
@@ -264,7 +266,6 @@ exports[`ExpandCollapse renders an open panel 1`] = `
     >
       <HairlineDivider
         gradient={false}
-        key="1"
         vertical={false}
       >
         <hr
@@ -470,17 +471,16 @@ exports[`ExpandCollapse renders an open panel 1`] = `
               </div>
             </Transition>
           </Reveal>
+          <HairlineDivider
+            gradient={false}
+            vertical={false}
+          >
+            <hr
+              className="horizontalThin"
+            />
+          </HairlineDivider>
         </div>
       </PanelWrapper>
-      <HairlineDivider
-        gradient={false}
-        key="2"
-        vertical={false}
-      >
-        <hr
-          className="horizontalThin"
-        />
-      </HairlineDivider>
     </div>
   </Panels>
 </ExpandCollapse>

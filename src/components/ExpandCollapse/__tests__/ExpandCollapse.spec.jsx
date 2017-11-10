@@ -256,15 +256,28 @@ describe('ExpandCollapse', () => {
     })
   })
 
-  it('surrounds all panels with dividers', () => {
-    const { expandCollapse } = doMount(
-      <ExpandCollapse>
-        {aPanel()}
-        {aPanel()}
-      </ExpandCollapse>
-    )
+  describe('panel dividers', () => {
+    it('surrounds all the panels', () => {
+      const { expandCollapse } = doMount(
+        <ExpandCollapse>
+          {aPanel()}
+          {aPanel()}
+        </ExpandCollapse>
+      )
 
-    expect(expandCollapse.find(HairlineDivider).length).toBe(3)
+      expect(expandCollapse.find(HairlineDivider).length).toBe(3)
+    })
+
+    it('can turn off the top divider', () => {
+      const { expandCollapse } = doMount(
+        <ExpandCollapse topDivider={false}>
+          {aPanel()}
+          {aPanel()}
+        </ExpandCollapse>
+      )
+
+      expect(expandCollapse.find(HairlineDivider).length).toBe(2)
+    })
   })
 
   it('passes additional attributes to the element', () => {

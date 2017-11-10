@@ -6,6 +6,7 @@ import Box from '../../Box/Box'
 import Clickable from '../../Clickable/Clickable'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../../Typography/Text/Text'
+import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
 import DimpleDivider from '../../Dividers/DimpleDivider/DimpleDivider'
 import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
@@ -149,6 +150,8 @@ class PanelWrapper extends React.Component {
             </div>
           )}
         </Reveal>
+
+        <HairlineDivider />
       </div>
     )
   }

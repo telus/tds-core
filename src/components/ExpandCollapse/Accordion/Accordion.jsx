@@ -63,6 +63,10 @@ Accordion.propTypes = {
    */
   open: PropTypes.string,
   /**
+   * Whether or not to show the divider above the first panel.
+   */
+  topDivider: PropTypes.bool,
+  /**
    * A callback function to be invoked when any panel is opened or closed.
    *
    * @param {String} openPanel The currently open panel identifier.
@@ -76,6 +80,7 @@ Accordion.propTypes = {
 
 Accordion.defaultProps = {
   open: undefined,
+  topDivider: true,
   onToggle: undefined,
 }
 
