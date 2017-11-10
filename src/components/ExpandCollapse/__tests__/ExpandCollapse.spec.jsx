@@ -5,6 +5,7 @@ import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
 import Text from '../../Typography/Text/Text'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
+import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
 import ExpandCollapse from '../ExpandCollapse'
 
 describe('ExpandCollapse', () => {
@@ -238,6 +239,17 @@ describe('ExpandCollapse', () => {
       clickPanel('panel-1')
       expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', 'true')
     })
+  })
+
+  it('surrounds all panels with dividers', () => {
+    const { expandCollapse } = doMount(
+      <ExpandCollapse>
+        {aPanel()}
+        {aPanel()}
+      </ExpandCollapse>
+    )
+
+    expect(expandCollapse.find(HairlineDivider).length).toBe(3)
   })
 
   it('passes additional attributes to the element', () => {

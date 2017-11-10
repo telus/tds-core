@@ -13,9 +13,17 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
       className="base"
       open={Array []}
     >
+      <HairlineDivider
+        gradient={false}
+        key="1"
+        vertical={false}
+      >
+        <hr
+          className="horizontalThin"
+        />
+      </HairlineDivider>
       <PanelWrapper
         key=".0"
-        last={true}
         onClick={[Function]}
         open={false}
         panelDisabled={false}
@@ -25,14 +33,6 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
         <div
           data-testid="panel-1"
         >
-          <HairlineDivider
-            gradient={false}
-            vertical={false}
-          >
-            <hr
-              className="horizontalThin"
-            />
-          </HairlineDivider>
           <Clickable
             aria-expanded="false"
             dangerouslyAddClassName="header"
@@ -204,16 +204,17 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
               </div>
             </Transition>
           </Reveal>
-          <HairlineDivider
-            gradient={false}
-            vertical={false}
-          >
-            <hr
-              className="horizontalThin"
-            />
-          </HairlineDivider>
         </div>
       </PanelWrapper>
+      <HairlineDivider
+        gradient={false}
+        key="2"
+        vertical={false}
+      >
+        <hr
+          className="horizontalThin"
+        />
+      </HairlineDivider>
     </div>
   </Panels>
 </ExpandCollapse>
@@ -244,9 +245,17 @@ exports[`ExpandCollapse renders an open panel 1`] = `
         ]
       }
     >
+      <HairlineDivider
+        gradient={false}
+        key="1"
+        vertical={false}
+      >
+        <hr
+          className="horizontalThin"
+        />
+      </HairlineDivider>
       <PanelWrapper
         key=".0"
-        last={true}
         onClick={[Function]}
         open={true}
         panelDisabled={false}
@@ -256,14 +265,6 @@ exports[`ExpandCollapse renders an open panel 1`] = `
         <div
           data-testid="panel-1"
         >
-          <HairlineDivider
-            gradient={false}
-            vertical={false}
-          >
-            <hr
-              className="horizontalThin"
-            />
-          </HairlineDivider>
           <Clickable
             aria-expanded="true"
             dangerouslyAddClassName="header"
@@ -435,16 +436,17 @@ exports[`ExpandCollapse renders an open panel 1`] = `
               </div>
             </Transition>
           </Reveal>
-          <HairlineDivider
-            gradient={false}
-            vertical={false}
-          >
-            <hr
-              className="horizontalThin"
-            />
-          </HairlineDivider>
         </div>
       </PanelWrapper>
+      <HairlineDivider
+        gradient={false}
+        key="2"
+        vertical={false}
+      >
+        <hr
+          className="horizontalThin"
+        />
+      </HairlineDivider>
     </div>
   </Panels>
 </ExpandCollapse>

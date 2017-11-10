@@ -4,33 +4,51 @@ import { childrenOfType } from 'airbnb-prop-types'
 
 import safeRest from '../../utils/safeRest'
 
+import HairlineDivider from '../Dividers/HairlineDivider/HairlineDivider'
 import PanelWrapper from './PanelWrapper/PanelWrapper'
 import Panel from './Panel/Panel'
 
 import styles from './ExpandCollapse.modules.scss'
 
-const Panels = ({ isPanelOpen, togglePanel, children, ...rest }) => (
-  <div {...safeRest(rest)} className={styles.base}>
-    {React.Children.map(children, (panel, index) => {
-      const { id, header, subtext, disabled, onToggle } = panel.props
+const getPanelWrappers = (isPanelOpen, togglePanel, children) =>
+  React.Children.map(children, panel => {
+    const { id, header, subtext, disabled, onToggle } = panel.props
 
-      return (
-        <PanelWrapper
-          panelId={id}
-          panelHeader={header}
-          panelSubtext={subtext}
-          panelOnToggle={onToggle}
-          panelDisabled={disabled}
-          open={isPanelOpen(id)}
-          last={index === React.Children.count(children) - 1}
-          onClick={() => togglePanel(id)}
-        >
-          {panel}
-        </PanelWrapper>
-      )
-    })}
-  </div>
-)
+    return (
+      <PanelWrapper
+        panelId={id}
+        panelHeader={header}
+        panelSubtext={subtext}
+        panelOnToggle={onToggle}
+        panelDisabled={disabled}
+        open={isPanelOpen(id)}
+        onClick={() => togglePanel(id)}
+      >
+        {panel}
+      </PanelWrapper>
+    )
+  })
+
+const wrapWithDividers = panels =>
+  panels.map((panel, index) => {
+    const last = index === panels.length - 1
+
+    return [
+      <HairlineDivider key={1} />,
+      panel,
+      last && <HairlineDivider key={2} />,
+    ]
+  })
+
+const Panels = ({ isPanelOpen, togglePanel, children, ...rest }) => {
+  const panels = getPanelWrappers(isPanelOpen, togglePanel, children)
+
+  return (
+    <div {...safeRest(rest)} className={styles.base}>
+      {wrapWithDividers(panels)}
+    </div>
+  )
+}
 
 Panels.propTypes = {
   isPanelOpen: PropTypes.func.isRequired,

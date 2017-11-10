@@ -6,7 +6,6 @@ import Box from '../../Box/Box'
 import Clickable from '../../Clickable/Clickable'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../../Typography/Text/Text'
-import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
 import DimpleDivider from '../../Dividers/DimpleDivider/DimpleDivider'
 import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
@@ -100,15 +99,12 @@ class PanelWrapper extends React.Component {
       panelHeader,
       panelSubtext,
       panelDisabled,
-      last,
       onClick,
       children,
     } = this.props
 
     return (
       <div data-testid={panelId}>
-        <HairlineDivider />
-
         <Clickable
           onClick={onClick}
           onMouseEnter={this.mouseEnter}
@@ -141,8 +137,6 @@ class PanelWrapper extends React.Component {
             </div>
           )}
         </Reveal>
-
-        {last && <HairlineDivider />}
       </div>
     )
   }
@@ -154,7 +148,6 @@ PanelWrapper.propTypes = {
   panelOnToggle: PropTypes.func,
   panelDisabled: PropTypes.bool,
   open: PropTypes.bool,
-  last: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
   children: childrenOfType(Panel).isRequired,
 }
