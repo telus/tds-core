@@ -129,10 +129,10 @@ exports[`Accordion renders a closed accordion 1`] = `
                                   block={false}
                                   bold={false}
                                   invert={false}
-                                  size="medium"
+                                  size="large"
                                 >
                                   <span
-                                    className="medium mediumFont color"
+                                    className="large largeFont color"
                                   >
                                     Panel title
                                   </span>
@@ -366,10 +366,10 @@ exports[`Accordion renders an open accordion 1`] = `
                                   block={false}
                                   bold={false}
                                   invert={false}
-                                  size="medium"
+                                  size="large"
                                 >
                                   <span
-                                    className="medium mediumFont color"
+                                    className="large largeFont color"
                                   >
                                     Panel title
                                   </span>

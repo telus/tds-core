@@ -132,10 +132,10 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                   block={false}
                                   bold={false}
                                   invert={false}
-                                  size="medium"
+                                  size="large"
                                 >
                                   <span
-                                    className="medium mediumFont color"
+                                    className="large largeFont color"
                                   >
                                     Panel title
                                   </span>
@@ -381,10 +381,10 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                   block={false}
                                   bold={false}
                                   invert={false}
-                                  size="medium"
+                                  size="large"
                                 >
                                   <span
-                                    className="medium mediumFont color"
+                                    className="large largeFont color"
                                   >
                                     Panel title
                                   </span>

@@ -80,7 +80,7 @@ describe('ExpandCollapse', () => {
         <ExpandCollapse>{aPanel({ id: 'panel-1', header: 'Panel title' })}</ExpandCollapse>
       )
 
-      expect(findPanelHeader('panel-1')).toContainReact(<Text size="medium">Panel title</Text>)
+      expect(findPanelHeader('panel-1')).toContainReact(<Text size="large">Panel title</Text>)
     })
 
     it('can have additional subtext', () => {
@@ -90,11 +90,6 @@ describe('ExpandCollapse', () => {
         </ExpandCollapse>
       )
 
-      expect(findPanelHeader('panel-1')).toContainReact(
-        <Text size="medium" bold>
-          Panel title
-        </Text>
-      )
       expect(findPanelHeader('panel-1')).toContainReact(<Text size="small">Some subtext</Text>)
     })
 
@@ -106,7 +101,7 @@ describe('ExpandCollapse', () => {
       )
 
       expect(findPanelHeader('panel-1')).toContainReact(
-        <Text size="large">Some tertiary text</Text>
+        <Text size="medium">Some tertiary text</Text>
       )
     })
   })

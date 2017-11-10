@@ -66,8 +66,7 @@ class PanelWrapper extends React.Component {
 
   renderCaret(disabled, hover, open) {
     if (disabled) {
-      // FIXME: Replace with undefined. And use "between" above
-      return false
+      return undefined
     }
 
     return (
@@ -86,9 +85,7 @@ class PanelWrapper extends React.Component {
       <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
         <Box between={2} dangerouslyAddClassName={styles.headerAlign}>
           <div>
-            <Text size="medium" bold={!!subtext}>
-              {header}
-            </Text>
+            <Text size="large">{header}</Text>
           </div>
 
           {subtext && (
@@ -98,7 +95,7 @@ class PanelWrapper extends React.Component {
           )}
         </Box>
 
-        {tertiaryText && <Text size="large">{tertiaryText}</Text>}
+        {tertiaryText && <Text size="medium">{tertiaryText}</Text>}
       </Flexbox>
     )
   }
