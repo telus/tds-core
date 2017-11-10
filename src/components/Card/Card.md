@@ -2,14 +2,14 @@ Cards will stretch to fill their container. Wrap the card in another element to 
 
 ```jsx
 <Card>
-  <Box between={3} dangerouslyAddClassName="docs_flex-button">
+  <Box between={4} dangerouslyAddClassName="docs_flex-button">
+  <Box between={3}>
     <Heading level="h2">Need a hand?</Heading>
-    
     <Paragraph>
       Ready to order? Have a question? We'll get back to you, with volume discounts available to larger accounts.
     </Paragraph>
-    
-    <ButtonLink href="#">Request sales callback</ButtonLink>
+  </Box>
+  <ButtonLink href="#">Request sales callback</ButtonLink>
   </Box>
 </Card>
 ```

@@ -1,8 +1,10 @@
 ```jsx
 <Card>
-  <Box between={3} dangerouslyAddClassName="docs_flex-button">
-    <Heading level="h1">Our latest and greatest</Heading>
-    <Paragraph>Everything you would expect, without conditions.</Paragraph>
+  <Box between={4} dangerouslyAddClassName="docs_flex-button">
+    <Box between={3}>
+      <Heading level="h1">Our latest and greatest</Heading>
+      <Paragraph>Everything you would expect, without conditions.</Paragraph>
+    </Box>
     <ButtonLink href="//telus.com">Learn more</ButtonLink>
   </Box>
 </Card>
