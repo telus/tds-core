@@ -92,7 +92,7 @@ class Input extends React.Component {
 
     return (
       <label htmlFor={inputId.identity()} className={labelClassNames}>
-        <Box inline between={2}>
+        <Box inline between={2} dangerouslyAddClassName={styles.alignCenter}>
           <Text size="medium" bold>
             {label}
           </Text>

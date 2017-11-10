@@ -60,7 +60,7 @@ const Box = ({
 
 Box.propTypes = {
   /**
-   * If `true`, apply inline flexbox styles to all direct children, arranging them as a row. This is used in conjunction with the `between` prop.
+   * If `true`, sets `flex-direction: row` to Box, arranging direct children as a row. This is used in conjunction with the `between` prop.
    */
   inline: PropTypes.bool,
   /**
@@ -86,7 +86,7 @@ Box.propTypes = {
    */
   below: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
-   * Sets a `margin-bottom` to all direct children except the last. If the `inline` prop is set to `true`, this sets a `margin-right` to all direct children except the last.
+   * Sets a `margin-bottom` to all direct children except the last. If the `inline` prop is set to `true`, this sets a `margin-right` to all direct children except the last. When the `inline` prop is not used, the Box will have `flex-direction: column` set.
    */
   between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
