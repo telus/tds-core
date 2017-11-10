@@ -1,6 +1,6 @@
 ```jsx
 <Card>
-  <Box between={3}>
+  <Box between={3} dangerouslyAddClassName="docs_flex-button">
     <Heading level="h1">Our latest and greatest</Heading>
     <Paragraph>Everything you would expect, without conditions.</Paragraph>
     <ButtonLink href="//telus.com">Learn more</ButtonLink>
