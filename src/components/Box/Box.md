@@ -27,7 +27,7 @@ The Box component contains props that accept values from `1` to `8`. These numbe
 
 - Numbers `1` to `3` are suitable for spacing inline content such as [Typography](#typography), [Button](#button), and [ButtonLink](#buttonlink) components
 - Numbers `4` to `8` are suitable for spacing major types of content such as [Cards](#card) and [Dividers](#dividers)
-- Numbers `5`, `7`, and `8` are exclusively used to separating blocks vertically
+- Numbers `5`, `7`, and `8` are used to space blocks vertically
 
 ### Example separating blocks
 

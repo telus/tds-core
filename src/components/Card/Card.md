@@ -2,7 +2,7 @@ Cards will stretch to fill their container. Wrap the card in another element to 
 
 ```jsx
 <Card>
-  <Box between={3}>
+  <Box between={3} dangerouslyAddClassName="docs_flex-button">
     <Heading level="h2">Need a hand?</Heading>
     
     <Paragraph>
@@ -21,7 +21,7 @@ Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while th
 ```jsx
 <Box inline between={3}>
   <Card variant="lavender">
-    <Box between={3}>
+    <Box between={3} dangerouslyAddClassName="docs_flex-button">
       <Heading level="h4">Holiday deal</Heading>
       
       <Paragraph size="medium">Get a new smartphone for $0<br/>on a 2-year plan.</Paragraph>
@@ -29,7 +29,7 @@ Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while th
   </Card>
   
   <Card variant="grey">
-    <Box between={3}>
+    <Box between={3} dangerouslyAddClassName="docs_flex-button">
       <Heading level="h4">Find the right gift</Heading>
     
       <Paragraph>Find something they'll love from our<br/>selection of great devices.</Paragraph>

@@ -70,15 +70,15 @@ Box.propTypes = {
   /**
    * Sets a `padding-top` and `padding-bottom`.
    */
-  vertical: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  vertical: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
    * Sets a `padding-left` and `padding-right`.
    */
-  horizontal: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  horizontal: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
    * Sets `padding` on all four sides.
    */
-  inset: PropTypes.oneOf([1, 2, 3, 4, 6]),
+  inset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
    * @ignore
    *
