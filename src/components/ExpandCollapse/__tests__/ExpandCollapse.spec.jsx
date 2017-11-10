@@ -23,11 +23,13 @@ describe('ExpandCollapse', () => {
 
     const findPanel = id => expandCollapse.find(`[data-testid="${id}"]`)
     const findPanelHeader = id => findPanel(id).find('button')
+    const findPanelContent = id => findPanel(id).find('[data-testid="content"]')
 
     return {
       expandCollapse,
       findPanel,
       findPanelHeader,
+      findPanelContent,
       hoverPanel: id => findPanelHeader(id).simulate('mouseEnter'),
       unHoverPanel: id => findPanelHeader(id).simulate('mouseLeave'),
       clickPanel: id => findPanelHeader(id).simulate('click'),
@@ -236,10 +238,21 @@ describe('ExpandCollapse', () => {
         <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
       )
 
-      expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', 'false')
+      expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', false)
 
       clickPanel('panel-1')
-      expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', 'true')
+      expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', true)
+    })
+
+    it('hides panel content from screen readers until they are opened', () => {
+      const { findPanelContent, clickPanel } = doMount(
+        <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
+      )
+
+      expect(findPanelContent('panel-1')).toHaveProp('aria-hidden', true)
+
+      clickPanel('panel-1')
+      expect(findPanelContent('panel-1')).toHaveProp('aria-hidden', false)
     })
   })
 

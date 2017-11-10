@@ -121,7 +121,7 @@ class PanelWrapper extends React.Component {
           onMouseLeave={this.mouseLeave}
           dangerouslyAddClassName={joinClassNames(styles.header, panelDisabled && styles.disabled)}
           disabled={panelDisabled}
-          aria-expanded={this.state.open ? 'true' : 'false'}
+          aria-expanded={this.state.open}
         >
           <Box vertical={3}>
             <Box inline between={3}>
@@ -138,6 +138,8 @@ class PanelWrapper extends React.Component {
               ref={contentWrapper => {
                 this.contentWrapper = contentWrapper
               }}
+              aria-hidden={!this.state.open}
+              data-testid="content"
             >
               <DimpleDivider />
 

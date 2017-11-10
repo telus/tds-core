@@ -30,7 +30,7 @@ exports[`Accordion renders a closed accordion 1`] = `
           data-testid="panel-1"
         >
           <Clickable
-            aria-expanded="false"
+            aria-expanded={false}
             dangerouslyAddClassName="header"
             disabled={false}
             onClick={[Function]}
@@ -38,7 +38,7 @@ exports[`Accordion renders a closed accordion 1`] = `
             onMouseLeave={[Function]}
           >
             <button
-              aria-expanded="false"
+              aria-expanded={false}
               className="clickable header"
               disabled={false}
               onClick={[Function]}
@@ -175,7 +175,10 @@ exports[`Accordion renders a closed accordion 1`] = `
                   }
                 }
               >
-                <div>
+                <div
+                  aria-hidden={true}
+                  data-testid="content"
+                >
                   <DimpleDivider>
                     <hr
                       className="dimple"
@@ -262,7 +265,7 @@ exports[`Accordion renders an open accordion 1`] = `
           data-testid="panel-1"
         >
           <Clickable
-            aria-expanded="true"
+            aria-expanded={true}
             dangerouslyAddClassName="header"
             disabled={false}
             onClick={[Function]}
@@ -270,7 +273,7 @@ exports[`Accordion renders an open accordion 1`] = `
             onMouseLeave={[Function]}
           >
             <button
-              aria-expanded="true"
+              aria-expanded={true}
               className="clickable header"
               disabled={false}
               onClick={[Function]}
@@ -407,7 +410,10 @@ exports[`Accordion renders an open accordion 1`] = `
                   }
                 }
               >
-                <div>
+                <div
+                  aria-hidden={false}
+                  data-testid="content"
+                >
                   <DimpleDivider>
                     <hr
                       className="dimple"
