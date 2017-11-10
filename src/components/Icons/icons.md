@@ -1,7 +1,7 @@
 ### Available icons
 
-```jsx { "props": { "className": "docs__simple-horizontal-spacing" } }
-<div className="wrapper">
+```jsx
+<Box inline between={3}>
   <DecorativeIcon symbol="caretDown" />
   <DecorativeIcon symbol="caretUp" />
   <DecorativeIcon symbol="checkmark" />
@@ -16,28 +16,28 @@
   <DecorativeIcon symbol="questionMarkCircle" />
   <DecorativeIcon symbol="spyglass" />
   <DecorativeIcon symbol="times" />
-</div>
+</Box>
 ```
 
 ### Modifying colour
 
 Use the `variant` prop to alter the icon's colour. Each variant has semantic meaning.
 
-```jsx { "props": { "className": "docs__simple-horizontal-spacing" } }
-<div className="wrapper">
+```jsx
+<Box inline between={3}>
   <DecorativeIcon symbol="checkmark" variant="primary" />
   <DecorativeIcon symbol="times" variant="secondary" />
   <DecorativeIcon symbol="exclamationPointCircle" variant="error" />
-</div>
+</Box>
 ```
 
 ### Adjusting size
 
 Use the `size` prop to adjust the icon's size.
 
-```jsx { "props": { "className": "docs__simple-horizontal-spacing" } }
-<div className="wrapper">
+```jsx
+<Box inline between={3}>
   <DecorativeIcon symbol="exclamationPointCircle" size={16} />
   <DecorativeIcon symbol="exclamationPointCircle" size={24} />
-</div>
+</Box>
 ```

@@ -18,48 +18,60 @@ For more insight in how we use whitespace and our colour palette, go to [BrandHu
   <div className="grid-row">
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(36,135,0)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>Accessible Green</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-accessible-green</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #248700</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Primary button backgrounds/outline, text links</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>Accessible Green</Strong></Paragraph>
+        <Paragraph>$color-accessible-green</Paragraph>
+        <Paragraph>Hex: #248700</Paragraph>
+        <Paragraph>Usage: Primary button backgrounds/outline, text links</Paragraph>
+      </Box>
     </div>
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(102, 204, 0)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>TELUS Green</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-telus-green</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #66CC00</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Decorative elements (graphs/charts).</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Use only for decorative items (when it doesn't need to be colour accessible)</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>TELUS Green</Strong></Paragraph>
+        <Paragraph>$color-telus-green</Paragraph>
+        <Paragraph>Hex: #66CC00</Paragraph>
+        <Paragraph>Usage: Decorative elements (graphs/charts).</Paragraph>
+        <Paragraph>Use only for decorative items (when it doesn't need to be colour accessible)</Paragraph>
+      </Box>
     </div>
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(75,40,109)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>TELUS Purple</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-telus-purple</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #4B286D</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Headings, secondary button background/outline, chevron links</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>TELUS Purple</Strong></Paragraph>
+        <Paragraph>$color-telus-purple</Paragraph>
+        <Paragraph>Hex: #4B286D</Paragraph>
+        <Paragraph>Usage: Headings, secondary button background/outline, chevron links</Paragraph>
+      </Box>
     </div>
   </div>
   <div className="grid-row">
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(42, 44, 46)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>Shark</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-shark</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #2A2C2E</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Sub headings (H3, H4), body text, and focus form objects borders</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>Shark</Strong></Paragraph>
+        <Paragraph>$color-shark</Paragraph>
+        <Paragraph>Hex: #2A2C2E</Paragraph>
+        <Paragraph>Usage: Sub headings (H3, H4), body text, and focus form objects borders</Paragraph>
+      </Box>
     </div>
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(84,89,95)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>Shuttle Grey</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-shuttle-grey</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #54595F</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Colour for default links</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>Shuttle Grey</Strong></Paragraph>
+        <Paragraph>$color-shuttle-grey</Paragraph>
+        <Paragraph>Hex: #54595F</Paragraph>
+        <Paragraph>Usage: Colour for default links</Paragraph>
+      </Box>
     </div>
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(255, 255, 255)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>White</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-white</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #FFFFFF</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Page background, inverted links/buttons</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>White</Strong></Paragraph>
+        <Paragraph>$color-white</Paragraph>
+        <Paragraph>Hex: #FFFFFF</Paragraph>
+        <Paragraph>Usage: Page background, inverted links/buttons</Paragraph>
+      </Box>
     </div>
   </div>
 </div>
@@ -74,47 +86,59 @@ These colours are not part of the TELUS brand colour palette, however are used s
   <div className="grid-row">
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(193,35,53)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>Cardinal</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-cardinal</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #C12335</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Error body text and icons</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>Cardinal</Strong></Paragraph>
+        <Paragraph>$color-cardinal</Paragraph>
+        <Paragraph>Hex: #C12335</Paragraph>
+        <Paragraph>Usage: Error body text and icons</Paragraph>
+      </Box>
     </div>
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(255,246,248)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>Lavender Blush</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-lavender-blush</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #FFF6F8</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Notification/error messaging background</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>Lavender Blush</Strong></Paragraph>
+        <Paragraph>$color-lavender-blush</Paragraph>
+        <Paragraph>Hex: #FFF6F8</Paragraph>
+        <Paragraph>Usage: Notification/error messaging background</Paragraph>
+      </Box>
     </div>
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(242,239,244)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>White Lilac</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-white-lilac</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #F2EFF4</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Branded messaging background</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>White Lilac</Strong></Paragraph>
+        <Paragraph>$color-white-lilac</Paragraph>
+        <Paragraph>Hex: #F2EFF4</Paragraph>
+        <Paragraph>Usage: Branded messaging background</Paragraph>
+      </Box>
     </div>
   </div>
   <div className="grid-row">
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(216,216,216)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>Gainsboro</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-gainsboro</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #D8D8D8</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Horizontal, vertical and wave dividers</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>Gainsboro</Strong></Paragraph>
+        <Paragraph>$color-gainsboro</Paragraph>
+        <Paragraph>Hex: #D8D8D8</Paragraph>
+        <Paragraph>Usage: Horizontal, vertical and wave dividers</Paragraph>
+      </Box>
     </div>
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(247,247,248)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>Athens Grey</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-athens-grey</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #F7F7F8</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Helper/disabled state background</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>Athens Grey</Strong></Paragraph>
+        <Paragraph>$color-athens-grey</Paragraph>
+        <Paragraph>Hex: #F7F7F8</Paragraph>
+        <Paragraph>Usage: Helper/disabled state background</Paragraph>
+      </Box>
     </div>
     <div className="medium-4">
       <span className="color-preview" style={{backgroundColor: 'rgb(244,249,242)'}}></span>
-      <div className="docs__paragraph-spacing"><Paragraph><Strong>Panache</Strong></Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>$color-panache</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Hex: #F4F9F2</Paragraph></div>
-      <div className="docs__paragraph-spacing"><Paragraph>Usage: Success messaging background</Paragraph></div>
+      <Box between={3} below={3}>
+        <Paragraph><Strong>Panache</Strong></Paragraph>
+        <Paragraph>$color-panache</Paragraph>
+        <Paragraph>Hex: #F4F9F2</Paragraph>
+        <Paragraph>Usage: Success messaging background</Paragraph>
+      </Box>
     </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
 ## Available icons
 
-```jsx { "props": { "className": "docs__simple-horizontal-spacing" } }
-<div className="wrapper">
+```jsx
+<Box inline between={3}>
   <Icon glyph="caret-down" />
   <Icon glyph="caret-up" />
   <Icon glyph="checkmark" />
@@ -17,7 +17,7 @@
   <Icon glyph="question-mark-circle" />
   <Icon glyph="spyglass" />
   <Icon glyph="times" />
-</div>
+</Box>
 ```
 
 ## Instructive icons
@@ -25,12 +25,12 @@
 By default, all icons will inherit the color of the text around them, except for "instructive" icons. Instructive icons
 have special meaning, and are pre-colored.
 
-```jsx { "props": { "className": "docs__simple-horizontal-spacing" } }
-<div className="wrapper">
+```jsx
+<Box inline between={3}>
   <Icon glyph="checkmark" />
   <Icon glyph="exclamation-point-circle" />
   <Icon glyph="incomplete" />
-</div>
+</Box>
 ```
 
 ## Modifying colour

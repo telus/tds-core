@@ -18,8 +18,8 @@ Cards will stretch to fill their container. Wrap the card in another element to 
 
 Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while the default white Card appears floating.
 
-```jsx {"props": {"className": "docs__layout-horizontally"}}
-<div className="wrapper">
+```jsx
+<Box inline between={3}>
   <Card variant="lavender">
     <Box between={3}>
       <Heading level="h4">Holiday deal</Heading>
@@ -37,5 +37,5 @@ Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while th
       <ChevronLink variant="primary" href="">Explore latest devices</ChevronLink>
     </Box>
   </Card>
-</div>
+</Box>
 ```
