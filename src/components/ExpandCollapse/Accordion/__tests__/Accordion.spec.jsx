@@ -80,7 +80,17 @@ describe('Accordion', () => {
     expectPanelToBeClosed(findPanel('panel-2'))
   })
 
-  it('closes all other panels when opening a panel', () => {
+  it('can open and close a panel', () => {
+    const { findPanel, clickPanel } = doMount(<Accordion>{aPanel({ id: 'panel-1' })}</Accordion>)
+
+    clickPanel('panel-1')
+    expectPanelToBeOpen(findPanel('panel-1'))
+
+    clickPanel('panel-1')
+    expectPanelToBeClosed(findPanel('panel-1'))
+  })
+
+  it('closes all other panels when opening a new panel', () => {
     const { findPanel, clickPanel } = doMount(
       <Accordion>
         {aPanel({ id: 'panel-1' })}

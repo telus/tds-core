@@ -25,11 +25,18 @@ class Accordion extends React.Component {
   togglePanel = panelId => {
     const { onToggle } = this.props
 
-    this.setState({ openPanel: panelId }, () => {
-      if (onToggle) {
-        onToggle(this.state.openPanel)
+    this.setState(
+      ({ openPanel }) => {
+        return {
+          openPanel: openPanel === panelId ? undefined : panelId,
+        }
+      },
+      () => {
+        if (onToggle) {
+          onToggle(this.state.openPanel)
+        }
       }
-    })
+    )
   }
 
   isPanelOpen = panelId => {
