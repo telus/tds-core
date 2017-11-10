@@ -41,7 +41,10 @@ module.exports = {
     }
 
     // ExpandCollapse has name-spaced sub-components
-    if (path.dirname(componentPath).includes('ExpandCollapse')) {
+    if (path.dirname(componentPath).includes('old-components/ExpandCollapse')) {
+      name = 'ExpandCollapse'
+    }
+    if (path.dirname(componentPath).includes('components/ExpandCollapse/Panel')) {
       name = 'ExpandCollapse'
     }
 
@@ -184,7 +187,12 @@ module.exports = {
                   ),
                   toggleByEnv(
                     'ExpandCollapse',
-                    undefined,
+                    path.resolve('src/components/ExpandCollapse/Accordion/Accordion.jsx'),
+                    undefined
+                  ),
+                  toggleByEnv(
+                    'ExpandCollapse',
+                    path.resolve('src/components/ExpandCollapse/Panel/Panel.jsx'),
                     path.resolve('src/old-components/ExpandCollapse/Panel.jsx')
                   ),
                 ])

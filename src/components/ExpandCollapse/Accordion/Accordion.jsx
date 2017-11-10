@@ -5,6 +5,9 @@ import { childrenOfType } from 'airbnb-prop-types'
 import Panels from '../Panels'
 import Panel from '../Panel/Panel'
 
+/**
+ * A specialized `ExpandCollapse` in which only one panel can be open at a time.
+ */
 class Accordion extends React.Component {
   constructor(props) {
     super(props)
@@ -55,8 +58,19 @@ class Accordion extends React.Component {
 }
 
 Accordion.propTypes = {
+  /**
+   * A panel identifier to programmatically open.
+   */
   open: PropTypes.string,
+  /**
+   * A callback function to be invoked when any panel is opened or closed.
+   *
+   * @param {String} openPanel The currently open panel identifier.
+   */
   onToggle: PropTypes.func,
+  /**
+   * The expandable panels. Must be at least one `Accordion.Panel`.
+   */
   children: childrenOfType(Panel).isRequired,
 }
 

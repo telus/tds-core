@@ -10,6 +10,9 @@ import { isEqual } from '../../utils/sets'
 import Panels from './Panels'
 import Panel from './Panel/Panel'
 
+/**
+ * A connected series of expandable content areas.
+ */
 class ExpandCollapse extends React.Component {
   constructor(props) {
     super(props)
@@ -66,8 +69,19 @@ class ExpandCollapse extends React.Component {
 }
 
 ExpandCollapse.propTypes = {
+  /**
+   * A list of panel identifiers to programmatically open.
+   */
   open: PropTypes.array,
+  /**
+   * A callback function to be invoked when any panel is opened or closed.
+   *
+   * @param {Array} openPanels A list of the currently open panel identifiers.
+   */
   onToggle: PropTypes.func,
+  /**
+   * The expandable panels. Must be at least one `ExpandCollapse.Panel`.
+   */
   children: childrenOfType(Panel).isRequired,
 }
 

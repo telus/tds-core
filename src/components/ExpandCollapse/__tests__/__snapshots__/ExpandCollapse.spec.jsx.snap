@@ -124,7 +124,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                             inline={false}
                           >
                             <div
-                              className="betweenBottomMargin-2 headerAlign"
+                              className="betweenBottomMargin-2 betweenBottom headerAlign"
                             >
                               <div>
                                 <Text
@@ -209,7 +209,9 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                             header="Panel title"
                             id="panel-1"
                           >
-                            Panel content
+                            <div>
+                              Panel content
+                            </div>
                           </Panel>
                         </div>
                       </Text>
@@ -371,7 +373,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                             inline={false}
                           >
                             <div
-                              className="betweenBottomMargin-2 headerAlign"
+                              className="betweenBottomMargin-2 betweenBottom headerAlign"
                             >
                               <div>
                                 <Text
@@ -456,7 +458,9 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                             header="Panel title"
                             id="panel-1"
                           >
-                            Panel content
+                            <div>
+                              Panel content
+                            </div>
                           </Panel>
                         </div>
                       </Text>
