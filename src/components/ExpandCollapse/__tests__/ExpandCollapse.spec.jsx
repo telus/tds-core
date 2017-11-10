@@ -87,7 +87,11 @@ describe('ExpandCollapse', () => {
         </ExpandCollapse>
       )
 
-      expect(findPanelHeader('panel-1')).toContainReact(<Text size="medium">Panel title</Text>)
+      expect(findPanelHeader('panel-1')).toContainReact(
+        <Text size="medium" bold>
+          Panel title
+        </Text>
+      )
       expect(findPanelHeader('panel-1')).toContainReact(<Text size="small">Some subtext</Text>)
     })
 

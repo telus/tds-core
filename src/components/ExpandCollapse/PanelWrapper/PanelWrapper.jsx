@@ -85,7 +85,9 @@ class PanelWrapper extends React.Component {
 
     return (
       <Box between={2}>
-        <Text size="medium">{header}</Text>
+        <Text size="medium" bold={!!subtext}>
+          {header}
+        </Text>
 
         {subtext && <Text size="small">{subtext}</Text>}
       </Box>
