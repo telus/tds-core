@@ -56,20 +56,9 @@ Too wide – if a line of text is too long, the user’s eye will have a hard ti
 
 Too narrow – if a line is too short, the eye will have to travel back too often, breaking the reader’s rhythm. Too short lines also tend to stress people, making them begin on the next line before finishing the current one (hence skipping potentially important words)
 
-## Spacing system
+### Spacing system
 
-Typography components **do not** have built-in padding or margin. Designers are strongly
-advised to follow TDS Sketch assets for spacing rules in order for developers to properly apply the correct spacing between
-related components.
+Typography components **do not** have built-in padding or margin. Designers are strongly advised to follow TDS Sketch assets
+for spacing rules in order for developers to properly apply the correct spacing between related components.
 
-Developers are encouraged to use the [Box](#box) component for handling spacing in their applications. For example, a `<Paragraph>` component immediately following a `<Heading>` component would require `1rem` spacing between
-them.
-
-```jsx
-<Box between={3}>
-  <Heading level="h2">Great Deals</Heading>
-  <Paragraph>
-    See how this great deal can benefit you and your shared lines.
-  </Paragraph>
-</Box>
-```
+See the [Box](#box) component for the spacing interface and usage examples.
