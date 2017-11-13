@@ -1,0 +1,16 @@
+@import '../../src/scss/settings/colours';
+
+// This is used only in grid.md and should not be replicated.
+
+.example {
+  .grid-row {
+    margin-bottom: 2rem;
+
+    > div {
+      background: $color-white-lilac;
+      border: solid 1px $color-secondary;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+  }
+}
