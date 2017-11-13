@@ -35,7 +35,6 @@ $responsive-spacings: (
   flex-direction: column;
 }
 
-// Todo remove unneeded classes related to margin
 @mixin spacingClasses ($level, $value) {
   .verticalPadding-#{$level} {
     padding-top: $value;

@@ -4,6 +4,7 @@ exports[`SectionHeadingRenderer renders 1`] = `
 <Box
   below={3}
   inline={false}
+  tag="div"
 >
   <Heading
     id="a-section"

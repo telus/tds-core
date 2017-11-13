@@ -4,6 +4,7 @@ exports[`MarkdownHeading renders 1`] = `
 <Box
   below={3}
   inline={false}
+  tag="div"
 >
   <Heading
     invert={false}

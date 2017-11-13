@@ -49,6 +49,7 @@ exports[`Accordion renders a closed accordion 1`] = `
             >
               <Box
                 inline={false}
+                tag="div"
                 vertical={3}
               >
                 <div
@@ -57,6 +58,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                   <Box
                     between={3}
                     inline={true}
+                    tag="div"
                   >
                     <div
                       className="betweenRightMargin-3 betweenRight"
@@ -120,6 +122,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                             between={2}
                             dangerouslyAddClassName="headerAlign"
                             inline={false}
+                            tag="div"
                           >
                             <div
                               className="betweenBottomMargin-2 betweenBottom headerAlign"
@@ -188,6 +191,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                   </DimpleDivider>
                   <Box
                     inline={false}
+                    tag="div"
                     vertical={3}
                   >
                     <div
@@ -286,6 +290,7 @@ exports[`Accordion renders an open accordion 1`] = `
             >
               <Box
                 inline={false}
+                tag="div"
                 vertical={3}
               >
                 <div
@@ -294,6 +299,7 @@ exports[`Accordion renders an open accordion 1`] = `
                   <Box
                     between={3}
                     inline={true}
+                    tag="div"
                   >
                     <div
                       className="betweenRightMargin-3 betweenRight"
@@ -357,6 +363,7 @@ exports[`Accordion renders an open accordion 1`] = `
                             between={2}
                             dangerouslyAddClassName="headerAlign"
                             inline={false}
+                            tag="div"
                           >
                             <div
                               className="betweenBottomMargin-2 betweenBottom headerAlign"
@@ -425,6 +432,7 @@ exports[`Accordion renders an open accordion 1`] = `
                   </DimpleDivider>
                   <Box
                     inline={false}
+                    tag="div"
                     vertical={3}
                   >
                     <div

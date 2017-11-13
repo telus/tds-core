@@ -28,18 +28,18 @@ const getBetweenClasses = (betweenSize, inline) => {
 }
 
 /**
- * Apply spacing within or around components
+ * Apply spacing within or around components.
  *
  * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.29.0</span>
  */
 const Box = ({
-  inline,
   tag,
   vertical,
   horizontal,
   inset,
   below,
   between,
+  inline,
   dangerouslyAddClassName,
   children,
   ...rest
@@ -55,42 +55,52 @@ const Box = ({
     dangerouslyAddClassName
   )
 
-  return React.createElement(tag || 'div', { ...safeRest(rest), className: classes }, children)
+  return React.createElement(tag, { ...safeRest(rest), className: classes }, children)
 }
 
 Box.propTypes = {
   /**
-   * If `true`, sets `flex-direction: row` to Box, arranging direct children as a row. This is used in conjunction with the `between` prop.
-   */
-  inline: PropTypes.bool,
-  /**
-   * Specifies which HTML element to render Box as. Example: `"section"`.
+   * Specify an HTML element to render, such as `section`.
    */
   tag: PropTypes.string,
   /**
-   * Sets a `padding-top` and `padding-bottom`.
+   * Indent content from the container's top and bottom edge by applying padding.
    */
   vertical: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
-   * Sets a `padding-left` and `padding-right`.
+   * Indent content from the container's left and right edge by applying padding.
    */
   horizontal: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
-   * Sets `padding` on all four sides.
+   * Indent content from all of the container's edges by applying padding.
    */
   inset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
    * @ignore
    *
+   * We are keeping this hidden for now as we are not sold on the necessity. We use it internally still to apply
+   * spacing to Markdown components, but would like to use between instead if the library allows it.
+   *
    * Sets a `margin-bottom`.
    */
   below: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
-   * Sets a `margin-bottom` to all direct children except the last. If the `inline` prop is set to `true`, this sets a `margin-right` to all direct children except the last. When the `inline` prop is not used, the Box will have `flex-direction: column` set.
+   * Create either a block or an inline stack, applying margin in between every direct child. Margin will not be
+   * applied to the last component in the stack.
+   *
+   * By default, `between` will arrange the Box's children as a flex column. Combine with `inline` to arrange them
+   * as a flex row.
    */
   between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
-   * Append custom classes to `className`.
+   * Arrange children in a row. Combine with `between` to apply margins in between the row's elements.
+   */
+  inline: PropTypes.bool,
+  /**
+   * Append custom classes to `className`. Use sparingly, and do not attempt to override Box style properties as that
+   * may cause unexpected behaviour.
+   *
+   * You would typically use this feature to apply flex alignment properties in combination with `between`.
    */
   dangerouslyAddClassName: PropTypes.string,
   /**
@@ -101,7 +111,7 @@ Box.propTypes = {
 
 Box.defaultProps = {
   inline: false,
-  tag: undefined,
+  tag: 'div',
   vertical: undefined,
   horizontal: undefined,
   inset: undefined,
