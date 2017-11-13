@@ -67,13 +67,11 @@ const validate = (event) => {
   }
 };
 
-<div>
-  <Input
-    label="Name" value={state.value}
-    feedback={state.status} error={state.errorMessage}
-    onChange={updateValue} onBlur={validate}
-  />
-</div>
+<Input
+  label="Name" value={state.value}
+  feedback={state.status} error={state.errorMessage}
+  onChange={updateValue} onBlur={validate}
+/>
 ```
 
 ### Supplying extra information
@@ -125,22 +123,24 @@ const validate = (event) => {
 }
 
 const passwordRequirements = (feedback) => {
-  let listType
+  let listStyle
 
   switch(feedback) {
-    case 'success': listType = 'list--checked'; break;
-    case 'error': listType = 'list--error'; break;
-    default: listType = 'list--compact'
+    case 'success': listStyle = 'checkmark'; break;
+    case 'error': listStyle = 'x'; break;
+    default: listStyle = 'circle'
   }
 
   return (
     <Input.Helper feedback={feedback}>
-      <Paragraph size="small" bold>Your password must be:</Paragraph>
-
-      <ul className={`list ${listType}`}>
-        <li className="list__item">16 characters or longer</li>
-        <li className="list__item">Not repeated from previous password</li>
-      </ul>
+      <Box between={2}>
+        <Paragraph size="small" bold>Your password must be:</Paragraph>
+        
+        <UnorderedList listStyle={listStyle}>
+          <UnorderedList.Item>16 characters or longer</UnorderedList.Item>
+          <UnorderedList.Item>Not repeated from previous password</UnorderedList.Item>
+        </UnorderedList>
+      </Box>
     </Input.Helper>
   );
 };
