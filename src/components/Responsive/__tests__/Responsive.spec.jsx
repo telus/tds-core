@@ -1,10 +1,21 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import ReactTestUtils from 'react-dom/test-utils'
 
 import Responsive from '../Responsive'
 
 describe('Responsive', () => {
-  const doShallow = (props = {}) => shallow(<Responsive {...props}>This is children</Responsive>)
+  const defaultProps = {
+    minWidth: 'sm',
+  }
+  const defaultChildren = 'Some content'
+
+  const doShallow = (props = defaultProps, children = defaultChildren) =>
+    shallow(<Responsive {...props}>{children}</Responsive>)
+
+  const doBrowserRender = (props = defaultProps, children = <div>Some children</div>) => {
+    ReactTestUtils.renderIntoDocument(<Responsive {...props}>{children}</Responsive>)
+  }
 
   it('renders', () => {
     const responsive = doShallow()
@@ -18,7 +29,17 @@ describe('Responsive', () => {
     expect(responsive).toBePresent()
   })
 
-  it('passes additional attributes to the element', () => {
+  it('return children', () => {
+    const responsive = doBrowserRender()
+
+    ReactTestUtils.isElementOfType(responsive, 'div')
+  })
+
+  it.skip('can have minWidth', () => {})
+
+  it.skip('can have maxWidth', () => {})
+
+  it.skip('passes additional attributes to the element', () => {
     const responsive = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(responsive).toHaveProp('id', 'the-id')

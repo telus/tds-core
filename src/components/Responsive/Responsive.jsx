@@ -1,32 +1,35 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import MediaQuery from 'react-responsive'
+import MediaQuery from 'react-responsive'
 
-import safeRest from '../../utils/safeRest'
+const breakpoints = {
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+}
 
-// import styles from './Responsive.modules.scss'
+const getQuery = breakpoint => {
+  if (!breakpoint) {
+    return undefined
+  }
 
-// const breakpoints = {
-//   small: 576,
-//   medium: 768,
-//   large: 992,
-//   xl: 1200,
-// }
+  return `(min-width: ${breakpoints[breakpoint]}px)`
+}
 
-// const Small = props => <MediaQuery {...props} minWidth={breakpoints.small} />
-// const Medium = props => <MediaQuery {...props} minWidth={breakpoints.medium} />
-// const Large = props => <MediaQuery {...props} minWidth={breakpoints.large} />
-// const XL = props => <MediaQuery {...props} minWidth={breakpoints.xl} />
-
-const Responsive = ({ children, ...rest }) => <div {...safeRest(rest)}>{children}</div>
+const Responsive = ({ minWidth, children }) => (
+  <MediaQuery query={getQuery(minWidth)}>{children}</MediaQuery>
+)
 
 Responsive.propTypes = {
-  query: PropTypes.string,
+  minWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+  // maxWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   children: PropTypes.node.isRequired,
 }
 
 Responsive.defaultProps = {
-  query: undefined,
+  minWidth: undefined,
+  // maxWidth: undefined,
 }
 
 export default Responsive

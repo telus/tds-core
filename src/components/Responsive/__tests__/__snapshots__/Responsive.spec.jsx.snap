@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Responsive renders 1`] = `
-<div>
-  This is children
-</div>
+<MediaQuery
+  query="(min-width: 576px)"
+  values={Object {}}
+>
+  Some content
+</MediaQuery>
 `;
