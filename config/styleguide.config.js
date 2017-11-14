@@ -147,7 +147,18 @@ module.exports = {
             },
           ],
         },
-
+        {
+          name: 'Utilities',
+          components() {
+            return compact([
+              toggleByEnv(
+                'Responsive',
+                path.resolve('src/components/Responsive/Responsive.jsx'),
+                undefined
+              ),
+            ])
+          },
+        },
         {
           name: 'Content',
           components() {
