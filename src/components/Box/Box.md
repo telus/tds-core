@@ -26,15 +26,20 @@ Note the compositional nature of `Box`. Use multiple Boxes to achieve complex la
 ```jsx
 <Box between={5}>
   <Box tag="section" inset={4} between={3}>
-    <Heading level="h2">Lots to discover</Heading>
-    <Paragraph>See our collection of home electronics.</Paragraph>
+    <Heading level="h2">Mobile internet plans</Heading>
+    <Paragraph>
+      Take your business out of the office. All across Canada businesses use TELUS mobile phones to go where their customers are and stay connected.
+     </Paragraph>
   </Box>
 
   <DimpleDivider/>
 
   <Box tag="section" inset={4} between={3}>
-    <Heading level="h2">Something for everyone</Heading>
-    <Paragraph>For you, your family and even your dog.</Paragraph>
+    <Heading level="h3">Bundle and save</Heading>
+    <Paragraph>
+      Save up to $200 on any new Smartphone when you add TELUS Mobility to your TELUS PureFibre home services account.
+    </Paragraph>
+    <ChevronLink href="#">Learn more</ChevronLink>
   </Box>
 </Box>
 ```
