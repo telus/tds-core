@@ -4,7 +4,7 @@ const { version } = require('../package.json')
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = ['Box']
+const enabledInStaging = []
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
@@ -132,11 +132,9 @@ module.exports = {
         {
           name: 'Layout',
           components() {
-            return compact([
-              toggleByEnv('Box', path.resolve('src/components/Box/Box.jsx'), undefined),
-            ])
+            return [path.resolve('src/components/Box/Box.jsx')]
           },
-          sections: compact([
+          sections: [
             {
               name: 'Grid',
               components() {
@@ -147,7 +145,7 @@ module.exports = {
                 ]
               },
             },
-          ]),
+          ],
         },
 
         {
