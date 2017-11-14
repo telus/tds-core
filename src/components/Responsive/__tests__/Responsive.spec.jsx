@@ -3,6 +3,9 @@ import { shallow } from 'enzyme'
 import ReactTestUtils from 'react-dom/test-utils'
 
 import Responsive from '../Responsive'
+import { warn } from '../../../utils/warn'
+
+jest.mock('../../../utils/warn')
 
 describe('Responsive', () => {
   const defaultProps = {
@@ -35,9 +38,30 @@ describe('Responsive', () => {
     ReactTestUtils.isElementOfType(responsive, 'div')
   })
 
-  it.skip('can have minWidth', () => {})
+  it('warns when mixWidth and maxWidth are not define', () => {
+    const responsive = doShallow({})
 
-  it.skip('can have maxWidth', () => {})
+    expect(responsive).not.toHaveProp('query')
+    expect(warn).toHaveBeenCalled()
+  })
+
+  it('can define a media query for a particular viewport', () => {
+    const responsive = doShallow({ minWidth: 'sm', maxWidth: 'md' })
+
+    expect(responsive).toHaveProp('query', '(min-width: 576px) and (max-width: 767px)')
+  })
+
+  it('can have minWidth', () => {
+    const responsive = doShallow()
+
+    expect(responsive).toHaveProp('query', '(min-width: 576px)')
+  })
+
+  it('can have maxWidth', () => {
+    const responsive = doShallow({ maxWidth: 'sm' })
+
+    expect(responsive).toHaveProp('query', '(max-width: 575px)')
+  })
 
   it.skip('passes additional attributes to the element', () => {
     const responsive = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })

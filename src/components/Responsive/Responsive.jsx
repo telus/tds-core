@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 
+import { warn } from '../../utils/warn'
+
 const breakpoints = {
   sm: 576,
   md: 768,
@@ -9,27 +11,37 @@ const breakpoints = {
   xl: 1200,
 }
 
-const getQuery = breakpoint => {
-  if (!breakpoint) {
+const getQuery = (minBreakpoint, maxBreakpoint) => {
+  if (!minBreakpoint && !maxBreakpoint) {
     return undefined
+  } else if (minBreakpoint && maxBreakpoint) {
+    return `(min-width: ${breakpoints[minBreakpoint]}px) and (max-width: ${breakpoints[
+      maxBreakpoint
+    ] - 1}px)`
+  } else if (minBreakpoint) {
+    return `(min-width: ${breakpoints[minBreakpoint]}px)`
+  } else {
+    return `(max-width: ${breakpoints[maxBreakpoint] - 1}px)`
   }
-
-  return `(min-width: ${breakpoints[breakpoint]}px)`
 }
 
-const Responsive = ({ minWidth, children }) => (
-  <MediaQuery query={getQuery(minWidth)}>{children}</MediaQuery>
-)
+const Responsive = ({ minWidth, maxWidth, children }) => {
+  if (!minWidth && !maxWidth) {
+    warn('Responsive', 'Responsive needs a minWidth or maxWith prop')
+  } else {
+    return <MediaQuery query={getQuery(minWidth, maxWidth)}>{children}</MediaQuery>
+  }
+}
 
 Responsive.propTypes = {
   minWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
-  // maxWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+  maxWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   children: PropTypes.node.isRequired,
 }
 
 Responsive.defaultProps = {
   minWidth: undefined,
-  // maxWidth: undefined,
+  maxWidth: undefined,
 }
 
 export default Responsive
