@@ -1,6 +1,6 @@
 <div style="text-align: center;">
-  <img src="/box_inset.png" />
-  <img src="/box_between.png" />
+  <img src="box_inset.png" />
+  <img src="box_between.png" />
 </div>
 
 ### Spacing levels
