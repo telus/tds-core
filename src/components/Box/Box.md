@@ -1,3 +1,8 @@
+<div style="text-align: center;">
+  <img src="/box_inset.png" />
+  <img src="/box_between.png" />
+</div>
+
 ### Spacing levels
 
 The spacing system defines 8 levels of spacing. Levels `4` and above are responsive, as detailed in this table:
@@ -29,7 +34,7 @@ Note the compositional nature of `Box`. Use multiple Boxes to achieve complex la
     <Heading level="h2">Mobile internet plans</Heading>
     <Paragraph>
       Take your business out of the office. All across Canada businesses use TELUS mobile phones to go where their customers are and stay connected.
-     </Paragraph>
+    </Paragraph>
   </Box>
 
   <DimpleDivider/>
