@@ -1,6 +1,5 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import ReactTestUtils from 'react-dom/test-utils'
 
 import Responsive from '../Responsive'
 import { warn } from '../../../utils/warn'
@@ -16,54 +15,28 @@ describe('Responsive', () => {
   const doShallow = (props = defaultProps, children = defaultChildren) =>
     shallow(<Responsive {...props}>{children}</Responsive>)
 
-  const doBrowserRender = (props = defaultProps, children = <div>Some children</div>) => {
-    ReactTestUtils.renderIntoDocument(<Responsive {...props}>{children}</Responsive>)
-  }
-
   it('renders', () => {
     const responsive = doShallow()
 
     expect(responsive).toMatchSnapshot()
   })
 
-  it('does other things', () => {
-    const responsive = doShallow()
-
-    expect(responsive).toBePresent()
-  })
-
-  it('return children', () => {
-    const responsive = doBrowserRender()
-
-    ReactTestUtils.isElementOfType(responsive, 'div')
-  })
-
-  it('warns when mixWidth and maxWidth are not define', () => {
+  it('warns when mixWidth and maxWidth are not defined', () => {
     const responsive = doShallow({})
 
-    expect(responsive).toHaveProp('query', undefined)
+    expect(responsive).toHaveProp('minWidth', undefined)
+    expect(responsive).toHaveProp('maxWidth', undefined)
     expect(warn).toHaveBeenCalled()
   })
 
-  it('can define a media query for a particular viewport', () => {
+  it('can have a minWidth or maxWidth', () => {
     const responsive = doShallow({ minWidth: 'sm', maxWidth: 'md' })
 
-    expect(responsive).toHaveProp('query', '(min-width: 576px) and (max-width: 767px)')
+    expect(responsive).toHaveProp('minWidth', 576)
+    expect(responsive).toHaveProp('maxWidth', 767)
   })
 
-  it('can have minWidth', () => {
-    const responsive = doShallow()
-
-    expect(responsive).toHaveProp('query', '(min-width: 576px)')
-  })
-
-  it('can have maxWidth', () => {
-    const responsive = doShallow({ maxWidth: 'sm' })
-
-    expect(responsive).toHaveProp('query', '(max-width: 575px)')
-  })
-
-  it.skip('passes additional attributes to the element', () => {
+  it('passes additional attributes to the element', () => {
     const responsive = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(responsive).toHaveProp('id', 'the-id')

@@ -2,7 +2,7 @@
 
 exports[`Responsive renders 1`] = `
 <MediaQuery
-  query="(min-width: 576px)"
+  minWidth={576}
   values={Object {}}
 >
   Some content
