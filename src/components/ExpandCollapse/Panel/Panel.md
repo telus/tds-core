@@ -1,1 +1,1 @@
-See [Expand Collapse](#expandcollapse) or [Accordion](#accordion) for usage of `Panel`.
+See [ExpandCollapse](#expandcollapse) above for usage of `Panel`.

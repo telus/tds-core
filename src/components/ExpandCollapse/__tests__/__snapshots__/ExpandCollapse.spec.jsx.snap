@@ -94,23 +94,34 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                               }
                             }
                           >
-                            <DecorativeIcon
-                              size={16}
-                              symbol="caretDown"
-                              variant="primary"
+                            <Text
+                              block={false}
+                              bold={false}
+                              invert={false}
+                              size="large"
                             >
-                              <Icon
-                                aria-hidden="true"
-                                size={16}
-                                symbol="caretDown"
-                                variant="primary"
+                              <span
+                                className="large largeFont color"
                               >
-                                <i
-                                  aria-hidden="true"
-                                  className="iconCaretDown primary size16"
-                                />
-                              </Icon>
-                            </DecorativeIcon>
+                                <DecorativeIcon
+                                  size={16}
+                                  symbol="caretDown"
+                                  variant="primary"
+                                >
+                                  <Icon
+                                    aria-hidden="true"
+                                    size={16}
+                                    symbol="caretDown"
+                                    variant="primary"
+                                  >
+                                    <i
+                                      aria-hidden="true"
+                                      className="iconCaretDown primary size16"
+                                    />
+                                  </Icon>
+                                </DecorativeIcon>
+                              </span>
+                            </Text>
                           </div>
                         </Transition>
                       </Translate>
@@ -121,31 +132,27 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                         <div
                           className="row headerAlign"
                         >
-                          <Box
-                            between={2}
+                          <Flexbox
                             dangerouslyAddClassName="headerAlign"
-                            inline={false}
-                            tag="div"
+                            direction="column"
                           >
                             <div
-                              className="betweenBottomMargin-2 betweenBottom headerAlign"
+                              className="column headerAlign"
                             >
-                              <div>
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="large"
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
+                              >
+                                <span
+                                  className="large largeFont color"
                                 >
-                                  <span
-                                    className="large largeFont color"
-                                  >
-                                    Panel title
-                                  </span>
-                                </Text>
-                              </div>
+                                  Panel title
+                                </span>
+                              </Text>
                             </div>
-                          </Box>
+                          </Flexbox>
                         </div>
                       </Flexbox>
                     </div>
@@ -194,11 +201,11 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                   </DimpleDivider>
                   <Box
                     inline={false}
+                    inset={4}
                     tag="div"
-                    vertical={3}
                   >
                     <div
-                      className="verticalPadding-3"
+                      className="horizontalPadding-4 verticalPadding-4"
                     >
                       <Text
                         block={true}
@@ -347,23 +354,34 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                               }
                             }
                           >
-                            <DecorativeIcon
-                              size={16}
-                              symbol="caretUp"
-                              variant="primary"
+                            <Text
+                              block={false}
+                              bold={false}
+                              invert={false}
+                              size="large"
                             >
-                              <Icon
-                                aria-hidden="true"
-                                size={16}
-                                symbol="caretUp"
-                                variant="primary"
+                              <span
+                                className="large largeFont color"
                               >
-                                <i
-                                  aria-hidden="true"
-                                  className="iconCaretUp primary size16"
-                                />
-                              </Icon>
-                            </DecorativeIcon>
+                                <DecorativeIcon
+                                  size={16}
+                                  symbol="caretUp"
+                                  variant="primary"
+                                >
+                                  <Icon
+                                    aria-hidden="true"
+                                    size={16}
+                                    symbol="caretUp"
+                                    variant="primary"
+                                  >
+                                    <i
+                                      aria-hidden="true"
+                                      className="iconCaretUp primary size16"
+                                    />
+                                  </Icon>
+                                </DecorativeIcon>
+                              </span>
+                            </Text>
                           </div>
                         </Transition>
                       </Translate>
@@ -374,31 +392,27 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                         <div
                           className="row headerAlign"
                         >
-                          <Box
-                            between={2}
+                          <Flexbox
                             dangerouslyAddClassName="headerAlign"
-                            inline={false}
-                            tag="div"
+                            direction="column"
                           >
                             <div
-                              className="betweenBottomMargin-2 betweenBottom headerAlign"
+                              className="column headerAlign"
                             >
-                              <div>
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="large"
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
+                              >
+                                <span
+                                  className="large largeFont color"
                                 >
-                                  <span
-                                    className="large largeFont color"
-                                  >
-                                    Panel title
-                                  </span>
-                                </Text>
-                              </div>
+                                  Panel title
+                                </span>
+                              </Text>
                             </div>
-                          </Box>
+                          </Flexbox>
                         </div>
                       </Flexbox>
                     </div>
@@ -447,11 +461,11 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                   </DimpleDivider>
                   <Box
                     inline={false}
+                    inset={4}
                     tag="div"
-                    vertical={3}
                   >
                     <div
-                      className="verticalPadding-3"
+                      className="horizontalPadding-4 verticalPadding-4"
                     >
                       <Text
                         block={true}

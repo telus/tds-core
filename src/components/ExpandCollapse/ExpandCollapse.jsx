@@ -72,7 +72,7 @@ ExpandCollapse.propTypes = {
   /**
    * A list of panel identifiers to programmatically open.
    */
-  open: PropTypes.array,
+  open: PropTypes.arrayOf(PropTypes.string),
   /**
    * Whether or not to show the divider above the first panel.
    */

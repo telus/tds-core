@@ -1,10 +1,7 @@
-```
-<Accordion>
-  <Accordion.Panel id="panel-40" header="First panel title">
-    First panel
-  </Accordion.Panel>
-  <Accordion.Panel id="panel-41" header="Second panel title">
-    Second panel
-  </Accordion.Panel>
-</Accordion>
-```
+The `Accordion` has the same design and behaviours as the `ExpandCollpse`, except that only one panel can be opened at
+a time.
+
+Note that the `Accordion`'s `open` prop accepts only a single string, while the `ExpandCollapse`'s `open` prop accepts an
+array of strings.
+
+See [`ExpandCollapse`](#expandcollapse) above for examples. 

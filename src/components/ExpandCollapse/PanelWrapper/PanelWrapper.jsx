@@ -72,30 +72,24 @@ class PanelWrapper extends React.Component {
     return (
       <Translate timeout={300} in={hover} direction="y" distance={open ? '-0.25rem' : '0.25rem'}>
         {() => (
-          <DecorativeIcon symbol={open ? 'caretUp' : 'caretDown'} variant="primary" size={16} />
+          <Text size="large">
+            <DecorativeIcon symbol={open ? 'caretUp' : 'caretDown'} variant="primary" size={16} />
+          </Text>
         )}
       </Translate>
     )
   }
 
   renderHeader(header, subtext, tertiaryText) {
-    // FIXME: Figure out if the wrapping <div>s are necessary
-
     return (
       <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
-        <Box between={2} dangerouslyAddClassName={styles.headerAlign}>
-          <div>
-            <Text size="large">{header}</Text>
-          </div>
+        <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlign}>
+          <Text size="large">{header}</Text>
 
-          {subtext && (
-            <div>
-              <Text size="small">{subtext}</Text>
-            </div>
-          )}
-        </Box>
+          {subtext && <Text size="small">{subtext}</Text>}
+        </Flexbox>
 
-        {tertiaryText && <Text size="medium">{tertiaryText}</Text>}
+        {tertiaryText && <Text size="large">{tertiaryText}</Text>}
       </Flexbox>
     )
   }
@@ -141,7 +135,7 @@ class PanelWrapper extends React.Component {
             >
               <DimpleDivider />
 
-              <Box vertical={3}>
+              <Box inset={4}>
                 <Text block>{children}</Text>
               </Box>
             </div>
