@@ -1,3 +1,86 @@
+#### 0.29.0 (2017-11-15)
+
+##### Chores
+
+* **react:** Update react and react-dom to v16.1.0 ([ffeba8db](https://github.com/telusdigital/tds/commit/ffeba8db640eefc03e99153e745facb3b1562898))
+
+##### Documentation Changes
+
+* **responsive:**
+  * Add example to visualize the current interface ([c8ef3c18](https://github.com/telusdigital/tds/commit/c8ef3c188d0a315b88d4a942fcf8a8218202e0b9))
+  * Add component to styleguidist in dev ([2eb504f1](https://github.com/telusdigital/tds/commit/2eb504f16120cc5ed89ab2de0c01307de7b2d742))
+* **box:**
+  * Fix path for image examples ([1a57ade5](https://github.com/telusdigital/tds/commit/1a57ade5e9da7c8ee374b2089b5446062757d5e7))
+  * Add inset and between example images ([a1f49cc1](https://github.com/telusdigital/tds/commit/a1f49cc1cd934e259d4bb81a11d47b216d5fef0a))
+  * updated the example in the docs ([14340451](https://github.com/telusdigital/tds/commit/14340451c65368e11a930e314a97fa426cabd8c2))
+  * Add alignment back to Card examples. Use box in Input helper example. ([21bfb94d](https://github.com/telusdigital/tds/commit/21bfb94df2585d6a89e46f1b4871bc4fc86205ef))
+  * Adjust examples and props descriptions ([f4a4d372](https://github.com/telusdigital/tds/commit/f4a4d37295b6f5e15de41a72df5c62709f5b0e76))
+  * Fix Card component content spacing to match Sketch file ([e3084662](https://github.com/telusdigital/tds/commit/e308466221dc38e3c1f1742e4674ead6a961485d))
+  * Fix example with ButtonLink spaced out using between ([350b133b](https://github.com/telusdigital/tds/commit/350b133b603c2b2f78f27bb4279b570b0f12b9a7))
+  * Use Box component in jsx examples ([99367a9e](https://github.com/telusdigital/tds/commit/99367a9e95626e73635baa6cba0c11f46839b0e2))
+  * Update HairlineDividr examples ([0ee80499](https://github.com/telusdigital/tds/commit/0ee80499d051b2aa8949ea5d1356e0b98e1c9c88))
+  * simplify component description ([3ea70535](https://github.com/telusdigital/tds/commit/3ea70535350ce62cfa8f953d97e3c62a1f6d8055))
+  * hide below prop, add pixel values to spacing matrix ([d04d479b](https://github.com/telusdigital/tds/commit/d04d479bfb59a7294977117e71add675e102496a))
+  * add badge, use between prop exclusively ([f9a23456](https://github.com/telusdigital/tds/commit/f9a234565059ca1108e831155c66cbe29d8abc47))
+  * update inline example ([1960428f](https://github.com/telusdigital/tds/commit/1960428fbecca3bd3a57fb5b23719983a2655536))
+  * add between examples ([66db3c4c](https://github.com/telusdigital/tds/commit/66db3c4cba20de6d9456fca9baae77e692a1f272))
+  * add documentation to dev and staging ([7fa08450](https://github.com/telusdigital/tds/commit/7fa08450da9643a702ed66ab560dacc1b24c0e8d))
+* **0.29.0:** Remove badges from 0.26 release ([01560fd5](https://github.com/telusdigital/tds/commit/01560fd5e5ae162d05340e5900fcc2a877187547))
+* **typography:** Small wording adjustment to the spacing system callout ([616d2bfe](https://github.com/telusdigital/tds/commit/616d2bfef6ed928550fa5b8431a7c899c3b47ed3))
+* **styles:** Remove unused docs styles and cleanup used ones ([543fffd6](https://github.com/telusdigital/tds/commit/543fffd6e8455c4466a4f54d354e31794b37897a))
+* **expandcollapse:** Initial docs and props descriptions ([708abdad](https://github.com/telusdigital/tds/commit/708abdad4e0607b2afeacd99fb3125454725d955))
+* **utility-icons:** Fix primary/secondary colours mixup in Variables section ([3a4b80d0](https://github.com/telusdigital/tds/commit/3a4b80d051414839d9496bd8ba491e88ee2f80cc))
+* **getting-started:** changed the link of the sketch file ([b0295d6d](https://github.com/telusdigital/tds/commit/b0295d6df3a75a831345f8d44c7581ba10f5558e))
+
+##### New Features
+
+* **responsive:**
+  * Add maxWidth prop ([568ca849](https://github.com/telusdigital/tds/commit/568ca849026295747cfc29b7ee922f800dc14c34))
+  * add minWidth prop ([700119af](https://github.com/telusdigital/tds/commit/700119afdeed2143d0fe3ee4f51ec372f55decd7))
+  * start responsive component ([9caedbb2](https://github.com/telusdigital/tds/commit/9caedbb2858060b9dcac69b10bc726ad7031d89c))
+* **box:**
+  * Remove feature toggle from Box and add it to the package ([2a1bcac8](https://github.com/telusdigital/tds/commit/2a1bcac867e0059c130e9c18be7ea104aefd4af7))
+  * offload align-items css to consumers ([3b3e7af0](https://github.com/telusdigital/tds/commit/3b3e7af07882fdb05c7db38681047e1d385d529c))
+  * Set flexbox properties to stacked boxes ([c0875823](https://github.com/telusdigital/tds/commit/c0875823ad177557d753204937e2cbe3ba6d43bd))
+  * Removed extra CSS classes from Box.modules.scss ([7b051507](https://github.com/telusdigital/tds/commit/7b051507bacf50e9d2638c0b8f3e808a27341cfe))
+  * Remove right and left prop from Box component ([304216b9](https://github.com/telusdigital/tds/commit/304216b9511d6b7387c4cf98efc3e2f84360a0b4))
+  * Remove below prop in Box from Input component ([b628adae](https://github.com/telusdigital/tds/commit/b628adae80ff3485fdfbcf23852c6fe8dcb1e30d))
+  * Use Box between in ExpandCollapse component ([0eda8eed](https://github.com/telusdigital/tds/commit/0eda8eedb8c57d246adc7fd71bc40882a444c92a))
+  * Use Box inline between in Notification component ([32c220dc](https://github.com/telusdigital/tds/commit/32c220dc4987d0fd37d9643907b5272928c8cb97))
+  * Remove Box right prop in Input Component ([d147d79e](https://github.com/telusdigital/tds/commit/d147d79e2d754ba4f78410fa84f3e2b7627d1a99))
+  * Adjust spacing on Input component ([54f84380](https://github.com/telusdigital/tds/commit/54f84380ae9d2c4d5824fadae4bfc113ed12efca))
+  * wip use between prop everywhere ([8e9598ba](https://github.com/telusdigital/tds/commit/8e9598ba155769f0b66835b68626d20396a62fcf))
+  * add between inline classes ([0ef38855](https://github.com/telusdigital/tds/commit/0ef3885523a04f9dd41a9bb80e02b75706e968f4))
+* **styleguide:** enable box in staging ([062053fb](https://github.com/telusdigital/tds/commit/062053fb41255631637aa7a5f0ab28c390ed04b1))
+
+##### Bug Fixes
+
+* **card:**
+  * change padding to horizontal-4 and vertical-5 ([bc31d495](https://github.com/telusdigital/tds/commit/bc31d49564b4655e0b1d5c0f0fb916edcd7aabda))
+  * Update horizontal padding on Card component to match Sketch ([946df5c8](https://github.com/telusdigital/tds/commit/946df5c849a3f6a3468732b8939c10297b037319))
+
+##### Refactors
+
+* **expandcollapse:**
+  * Change font sizes of header texts ([a32bc421](https://github.com/telusdigital/tds/commit/a32bc4217da97e24a3892fdb81a7b36f135449cf))
+  * Add ability to disable the top divider ([626b63cd](https://github.com/telusdigital/tds/commit/626b63cdea65059de5f5b6180a8d972d157aa80d))
+  * Hide panel content from screen readers until it is opened ([eb1a215a](https://github.com/telusdigital/tds/commit/eb1a215a1fa92c68e849c76aa1a721e22efd7302))
+  * Add tertiary text in the header ([192226a3](https://github.com/telusdigital/tds/commit/192226a3496249f04c0b90c61c4079bf18dbd1bc))
+  * Move hairline dividers outside of all the panels ([692c50c6](https://github.com/telusdigital/tds/commit/692c50c68e4c5757bcbb75c230d15c0a2ab9e391))
+  * Make header text bold when there is subtext ([5c1eec5e](https://github.com/telusdigital/tds/commit/5c1eec5e0e413c13de62c86200dd0a04bb19c66f))
+  * Close accordion panels on click when they are open ([843a9f26](https://github.com/telusdigital/tds/commit/843a9f263fd7de929174633cd90de1a684ddd0e9))
+  * Reverse the caret translation direction when the panel is open ([f9cbc2a6](https://github.com/telusdigital/tds/commit/f9cbc2a6d8b7f34c09a2d142e73b103f25ce3b77))
+  * Add Accordion component ([1f0cf377](https://github.com/telusdigital/tds/commit/1f0cf3779fc8849bda68526e212a01fbd6041a45))
+  * Add aria-expanded for screen reader support ([fa17403e](https://github.com/telusdigital/tds/commit/fa17403e95dd1aea8b50f8a554b6d2396201da9c))
+* **unorderedlist:** rearrange props ([16cf6784](https://github.com/telusdigital/tds/commit/16cf67843d67a2fd410a76e03ddece10ba8fdffc))
+* **box:** simplify internal logic ([f9a1036f](https://github.com/telusdigital/tds/commit/f9a1036f3b996213059e6464846f0312b6416282))
+
+##### Tests
+
+* **box:**
+  * Update snapshots to show the new betweenBottom class ([1a5dd52e](https://github.com/telusdigital/tds/commit/1a5dd52e235cd6ecda7a9392158cbbd5f366c714))
+  * revert defaultprops ([0b36da6f](https://github.com/telusdigital/tds/commit/0b36da6f7e99524a540a07b700b0d905e98080db))
+
 #### 0.28.2 (2017-11-06)
 
 ##### Chores
