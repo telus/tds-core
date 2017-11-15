@@ -32,8 +32,17 @@ const Responsive = ({ minWidth, maxWidth, children, ...rest }) => {
 }
 
 Responsive.propTypes = {
+  /**
+   * Set browser min-width media query.
+   */
   minWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+  /**
+   * Set browser max-width media query.
+   */
   maxWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+  /**
+   * The content. Can be text, any HTML element, or any component.
+   */
   children: PropTypes.node.isRequired,
 }
 
