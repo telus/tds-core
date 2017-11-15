@@ -15,7 +15,7 @@ Using the `minWidth` and `maxWidth` props, you can pass a breakpoint key. They r
 
 ```jsx
 <div>
-  <Responsive minWidth="xs" maxWidth="md">
+  <Responsive minWidth="sm" maxWidth="md">
     <Heading level="h1">Hello I'm a heading in XS and SM</Heading>
   </Responsive>
   <Responsive minWidth="md" maxWidth="lg">

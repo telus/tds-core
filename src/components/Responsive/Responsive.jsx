@@ -43,7 +43,7 @@ Responsive.propTypes = {
   /**
    * The content. Can be text, any HTML element, or any component.
    */
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
 }
 
 Responsive.defaultProps = {
