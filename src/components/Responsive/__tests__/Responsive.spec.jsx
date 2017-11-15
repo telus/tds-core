@@ -41,7 +41,7 @@ describe('Responsive', () => {
   it('warns when mixWidth and maxWidth are not define', () => {
     const responsive = doShallow({})
 
-    expect(responsive).not.toHaveProp('query')
+    expect(responsive).toHaveProp('query', undefined)
     expect(warn).toHaveBeenCalled()
   })
 

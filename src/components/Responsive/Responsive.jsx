@@ -5,6 +5,7 @@ import MediaQuery from 'react-responsive'
 import { warn } from '../../utils/warn'
 
 const breakpoints = {
+  xs: 0,
   sm: 576,
   md: 768,
   lg: 992,
@@ -20,22 +21,21 @@ const getQuery = (minBreakpoint, maxBreakpoint) => {
     ] - 1}px)`
   } else if (minBreakpoint) {
     return `(min-width: ${breakpoints[minBreakpoint]}px)`
-  } else {
-    return `(max-width: ${breakpoints[maxBreakpoint] - 1}px)`
   }
+  return `(max-width: ${breakpoints[maxBreakpoint] - 1}px)`
 }
 
 const Responsive = ({ minWidth, maxWidth, children }) => {
   if (!minWidth && !maxWidth) {
     warn('Responsive', 'Responsive needs a minWidth or maxWith prop')
-  } else {
-    return <MediaQuery query={getQuery(minWidth, maxWidth)}>{children}</MediaQuery>
   }
+
+  return <MediaQuery query={getQuery(minWidth, maxWidth)}>{children}</MediaQuery>
 }
 
 Responsive.propTypes = {
-  minWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
-  maxWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+  minWidth: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+  maxWidth: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
   children: PropTypes.node.isRequired,
 }
 
