@@ -1,13 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-
 import DisplayHeading from '../DisplayHeading'
 
 describe('DisplayHeading', () => {
-  const doShallow = ({ ...props }) => shallow(
-    <DisplayHeading {...props}>Great Deals</DisplayHeading>
-  )
+  const doShallow = ({ ...props }) =>
+    shallow(<DisplayHeading {...props}>Great Deals</DisplayHeading>)
+      .dive()
+      .dive()
 
   it('renders', () => {
     const heading = doShallow()
@@ -37,7 +37,10 @@ describe('DisplayHeading', () => {
   })
 
   it('does not allow custom CSS', () => {
-    const displayHeading = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const displayHeading = doShallow({
+      className: 'my-custom-class',
+      style: { color: 'hotpink' },
+    })
 
     expect(displayHeading).not.toHaveProp('className', 'my-custom-class')
     expect(displayHeading).not.toHaveProp('style')

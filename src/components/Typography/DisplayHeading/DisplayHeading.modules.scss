@@ -31,16 +31,6 @@
   .sub {
     bottom: -0.5em;
   }
-
-  @include from-breakpoint(medium) {
-    font-size: 4.5rem;
-    line-height: 1.11; // 80px
-    letter-spacing: 0.2px;
-
-    .sup {
-      top: -2.2em;
-    }
-  }
 }
 
 .inverted {
@@ -51,4 +41,25 @@
 .default {
   composes: displayHeading;
   color: $color-secondary;
+}
+
+.desktop {
+  font-size: 4.5rem;
+  line-height: 1.11; // 80px
+  letter-spacing: 0.2px;
+}
+
+.invertedDesktop {
+  composes: inverted;
+  composes: desktop;
+}
+
+.defaultDesktop {
+  composes: default;
+  composes: desktop;
+}
+
+.invertedDesktop .sup,
+.defaultDesktop .sup {
+  top: -2.2em;
 }
