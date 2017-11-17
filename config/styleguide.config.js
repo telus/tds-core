@@ -297,6 +297,7 @@ module.exports = {
     Logo: path.resolve('docs/components/Logo/Logo'),
     Markdown: path.resolve('docs/components/Markdown/Markdown'),
     SectionHeadingRenderer: path.resolve('docs/components/SectionHeading/SectionHeadingRenderer'),
+    TableOfContentsRenderer: path.resolve('docs/components/TableOfContents/TableOfContentsRenderer')
   },
   theme: {
     fontFamily: {

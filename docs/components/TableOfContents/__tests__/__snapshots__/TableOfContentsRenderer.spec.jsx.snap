@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableOfContentsRenderer renders 1`] = `
+<Box
+  inline={false}
+  tag="div"
+>
+  <Box
+    below={2}
+    inline={false}
+    inset={3}
+    tag="div"
+  >
+    <Input
+      label="Filter by name"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </Box>
+  <div>
+    Children
+  </div>
+</Box>
+`;
