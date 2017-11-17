@@ -5,14 +5,13 @@ import safeRest from '../../../utils/safeRest'
 import joinClassNames from '../../../utils/joinClassNames'
 
 import TextSup from './TextSup/TextSup'
-import TextSub from './TextSub/TextSub'
 
 import styles from './Text.modules.scss'
 
 /**
  * Inline text as an HTML `<span>` element.
  */
-const Text = ({block, bold, size, invert, children, ...rest}, context) => {
+const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
   const textColor = invert ? styles.invertedColor : styles.color
 
   const classes = joinClassNames(
@@ -67,6 +66,5 @@ Text.contextTypes = {
 }
 
 Text.Sup = TextSup
-Text.Sub = TextSub
 
 export default Text

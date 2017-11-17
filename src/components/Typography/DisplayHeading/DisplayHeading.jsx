@@ -5,7 +5,6 @@ import joinClassNames from '../../../utils/joinClassNames'
 
 import Responsive from '../../Responsive/Responsive'
 import DisplayHeadingSup from './DisplayHeadingSup/DisplayHeadingSup'
-import DisplayHeadingSub from './DisplayHeadingSub/DisplayHeadingSub'
 
 import styles from './DisplayHeading.modules.scss'
 
@@ -46,6 +45,5 @@ DisplayHeading.defaultProps = {
 }
 
 DisplayHeading.Sup = DisplayHeadingSup
-DisplayHeading.Sub = DisplayHeadingSub
 
 export default DisplayHeading

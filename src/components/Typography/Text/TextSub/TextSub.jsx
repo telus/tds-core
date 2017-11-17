@@ -5,7 +5,6 @@ import safeRest from '../../../../utils/safeRest'
 
 import styles from '../Text.modules.scss'
 
-
 /**
  * Text that should be displayed lower than the main text (subscript).
  *
@@ -13,14 +12,16 @@ import styles from '../Text.modules.scss'
  *
  */
 const TextSub = ({ children, ...rest }) => (
-  <sub {...safeRest(rest)} className={styles.sub}>{children}</sub>
+  <sub {...safeRest(rest)} className={styles.sub}>
+    {children}
+  </sub>
 )
 
 TextSub.propTypes = {
   /**
    * Text
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 TextSub.displayName = 'Text.Sub'

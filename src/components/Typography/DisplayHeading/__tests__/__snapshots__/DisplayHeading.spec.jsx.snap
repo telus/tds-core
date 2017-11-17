@@ -2,7 +2,7 @@
 
 exports[`DisplayHeading renders 1`] = `
 <h1
-  className="default"
+  className="heading headingSize default"
 >
   Great Deals
 </h1>

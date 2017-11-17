@@ -7,10 +7,6 @@
   composes: baseSupSubScripts from '../Text/Text.modules.scss';
 }
 
-.sub {
-  composes: baseSupSubScripts from '../Text/Text.modules.scss';
-}
-
 .largeHeading {
   composes: noSpacing from '../../Spacing.modules.scss';
 
@@ -47,11 +43,6 @@
     font-size: 1.25rem;
     top: -1em;
   }
-
-  .sub {
-    font-size: 1.25rem;
-    bottom: -0.4em;
-  }
 }
 
 .h1Desktop {
@@ -76,11 +67,6 @@
   .sup {
     font-size: 1rem;
     top: -0.8em;
-  }
-
-  .sub {
-    font-size: 1rem;
-    bottom: -0.4em;
   }
 }
 

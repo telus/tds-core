@@ -7,10 +7,6 @@
   composes: baseSupSubScripts from '../Text/Text.modules.scss';
 }
 
-.sub {
-  composes: baseSupSubScripts from '../Text/Text.modules.scss';
-}
-
 .heading {
   composes: noSpacing from '../../Spacing.modules.scss';
 
@@ -24,11 +20,6 @@
   .sup {
     font-size: 1.25rem;
     top: -1.2em;
-  }
-
-  .sub {
-    font-size: 1.25rem;
-    bottom: -0.5em;
   }
 }
 

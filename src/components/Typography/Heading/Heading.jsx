@@ -6,7 +6,6 @@ import joinClassNames from '../../../utils/joinClassNames'
 
 import Responsive from '../../Responsive/Responsive'
 import HeadingSup from './HeadingSup/HeadingSup'
-import HeadingSub from './HeadingSub/HeadingSub'
 
 import styles from './Heading.modules.scss'
 
@@ -75,6 +74,5 @@ Heading.defaultProps = {
 }
 
 Heading.Sup = HeadingSup
-Heading.Sub = HeadingSub
 
 export default Heading
