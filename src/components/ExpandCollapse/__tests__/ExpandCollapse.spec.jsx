@@ -213,7 +213,6 @@ describe('ExpandCollapse', () => {
       const panelHeader = findPanelHeader('panel-1')
       expect(panelHeader).toHaveClassName('disabled')
       expect(panelHeader).toBeDisabled()
-      expect(panelHeader.find(DecorativeIcon)).not.toBePresent()
     })
 
     it('are not able to be opened', () => {

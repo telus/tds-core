@@ -66,65 +66,67 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                     <div
                       className="betweenRightMargin-3 betweenRight"
                     >
-                      <Translate
-                        direction="y"
-                        distance="0.25rem"
-                        in={false}
-                        timeout={300}
-                      >
-                        <Transition
-                          appear={false}
-                          enter={true}
-                          exit={true}
+                      <div>
+                        <Translate
+                          direction="y"
+                          distance="0.25rem"
                           in={false}
-                          mountOnEnter={false}
-                          onEnter={[Function]}
-                          onEntered={[Function]}
-                          onEntering={[Function]}
-                          onExit={[Function]}
-                          onExited={[Function]}
-                          onExiting={[Function]}
                           timeout={300}
-                          unmountOnExit={false}
                         >
-                          <div
-                            style={
-                              Object {
-                                "transition": "transform 300ms",
-                              }
-                            }
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
                           >
-                            <Text
-                              block={false}
-                              bold={false}
-                              invert={false}
-                              size="large"
+                            <div
+                              style={
+                                Object {
+                                  "transition": "transform 300ms",
+                                }
+                              }
                             >
-                              <span
-                                className="large largeFont color"
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
                               >
-                                <DecorativeIcon
-                                  size={16}
-                                  symbol="caretDown"
-                                  variant="primary"
+                                <span
+                                  className="large largeFont color"
                                 >
-                                  <Icon
-                                    aria-hidden="true"
+                                  <DecorativeIcon
                                     size={16}
                                     symbol="caretDown"
                                     variant="primary"
                                   >
-                                    <i
+                                    <Icon
                                       aria-hidden="true"
-                                      className="iconCaretDown primary size16"
-                                    />
-                                  </Icon>
-                                </DecorativeIcon>
-                              </span>
-                            </Text>
-                          </div>
-                        </Transition>
-                      </Translate>
+                                      size={16}
+                                      symbol="caretDown"
+                                      variant="primary"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        className="iconCaretDown primary size16"
+                                      />
+                                    </Icon>
+                                  </DecorativeIcon>
+                                </span>
+                              </Text>
+                            </div>
+                          </Transition>
+                        </Translate>
+                      </div>
                       <Flexbox
                         dangerouslyAddClassName="headerAlign"
                         direction="row"
@@ -326,65 +328,67 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                     <div
                       className="betweenRightMargin-3 betweenRight"
                     >
-                      <Translate
-                        direction="y"
-                        distance="-0.25rem"
-                        in={false}
-                        timeout={300}
-                      >
-                        <Transition
-                          appear={false}
-                          enter={true}
-                          exit={true}
+                      <div>
+                        <Translate
+                          direction="y"
+                          distance="-0.25rem"
                           in={false}
-                          mountOnEnter={false}
-                          onEnter={[Function]}
-                          onEntered={[Function]}
-                          onEntering={[Function]}
-                          onExit={[Function]}
-                          onExited={[Function]}
-                          onExiting={[Function]}
                           timeout={300}
-                          unmountOnExit={false}
                         >
-                          <div
-                            style={
-                              Object {
-                                "transition": "transform 300ms",
-                              }
-                            }
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
                           >
-                            <Text
-                              block={false}
-                              bold={false}
-                              invert={false}
-                              size="large"
+                            <div
+                              style={
+                                Object {
+                                  "transition": "transform 300ms",
+                                }
+                              }
                             >
-                              <span
-                                className="large largeFont color"
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
                               >
-                                <DecorativeIcon
-                                  size={16}
-                                  symbol="caretUp"
-                                  variant="primary"
+                                <span
+                                  className="large largeFont color"
                                 >
-                                  <Icon
-                                    aria-hidden="true"
+                                  <DecorativeIcon
                                     size={16}
                                     symbol="caretUp"
                                     variant="primary"
                                   >
-                                    <i
+                                    <Icon
                                       aria-hidden="true"
-                                      className="iconCaretUp primary size16"
-                                    />
-                                  </Icon>
-                                </DecorativeIcon>
-                              </span>
-                            </Text>
-                          </div>
-                        </Transition>
-                      </Translate>
+                                      size={16}
+                                      symbol="caretUp"
+                                      variant="primary"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        className="iconCaretUp primary size16"
+                                      />
+                                    </Icon>
+                                  </DecorativeIcon>
+                                </span>
+                              </Text>
+                            </div>
+                          </Transition>
+                        </Translate>
+                      </div>
                       <Flexbox
                         dangerouslyAddClassName="headerAlign"
                         direction="row"

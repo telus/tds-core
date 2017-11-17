@@ -10,12 +10,13 @@ import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
 import DimpleDivider from '../../Dividers/DimpleDivider/DimpleDivider'
 import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
+import Flexbox from '../../Flexbox/Flexbox'
 import Panel from '../Panel/Panel'
 
 import joinClassNames from '../../../utils/joinClassNames'
 
 import styles from './PanelWrapper.modules.scss'
-import Flexbox from '../../Flexbox/Flexbox'
+import displayStyles from '../../Display.modules.scss'
 
 class PanelWrapper extends React.Component {
   constructor(props) {
@@ -65,18 +66,16 @@ class PanelWrapper extends React.Component {
   }
 
   renderCaret(disabled, hover, open) {
-    if (disabled) {
-      return undefined
-    }
-
     return (
-      <Translate timeout={300} in={hover} direction="y" distance={open ? '-0.25rem' : '0.25rem'}>
-        {() => (
-          <Text size="large">
-            <DecorativeIcon symbol={open ? 'caretUp' : 'caretDown'} variant="primary" size={16} />
-          </Text>
-        )}
-      </Translate>
+      <div className={disabled ? displayStyles.invisible : undefined}>
+        <Translate timeout={300} in={hover} direction="y" distance={open ? '-0.25rem' : '0.25rem'}>
+          {() => (
+            <Text size="large">
+              <DecorativeIcon symbol={open ? 'caretUp' : 'caretDown'} variant="primary" size={16} />
+            </Text>
+          )}
+        </Translate>
+      </div>
     )
   }
 
