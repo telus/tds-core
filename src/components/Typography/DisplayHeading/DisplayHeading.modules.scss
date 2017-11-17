@@ -11,55 +11,42 @@
   composes: baseSupSubScripts from '../Text/Text.modules.scss';
 }
 
-.displayHeading {
+.heading {
   composes: noSpacing from '../../Spacing.modules.scss';
 
   @include helvetica-neue-thin-35;
+}
 
+.headingSize {
   font-size: 2.75rem;
   line-height: 1.14; // 48px
 
-  .sup,
-  .sub {
-    font-size: 1.25rem;
-  }
-
   .sup {
+    font-size: 1.25rem;
     top: -1.2em;
   }
 
   .sub {
+    font-size: 1.25rem;
     bottom: -0.5em;
   }
 }
 
+.headingSizeDesktop {
+  font-size: 4.5rem;
+  line-height: 1.11; // 80px
+  letter-spacing: 0.2px;
+
+  .sup {
+    font-size: 1.25rem;
+    top: -2.2em;
+  }
+}
+
 .inverted {
-  composes: displayHeading;
   color: $color-white;
 }
 
 .default {
-  composes: displayHeading;
   color: $color-secondary;
-}
-
-.desktop {
-  font-size: 4.5rem;
-  line-height: 1.11; // 80px
-  letter-spacing: 0.2px;
-}
-
-.invertedDesktop {
-  composes: inverted;
-  composes: desktop;
-}
-
-.defaultDesktop {
-  composes: default;
-  composes: desktop;
-}
-
-.invertedDesktop .sup,
-.defaultDesktop .sup {
-  top: -2.2em;
 }
