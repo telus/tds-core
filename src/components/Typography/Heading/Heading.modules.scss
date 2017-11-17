@@ -42,30 +42,24 @@
   font-size: 1.75rem;
   line-height: 1.29; // 36px
   letter-spacing: -1.6px;
+}
 
-  .sup,
-  .sub {
-    font-size: 1.25rem;
-  }
+.h1 .sup {
+  font-size: 1.25rem; // ???
+  top: -1em;
+}
 
-  .sup {
-    top: -1em;
-  }
+.h1Desktop {
+  composes: largeHeading;
+  font-weight: 300;
+  font-size: 2.75rem;
+  line-height: 1.18; // 52px
+  letter-spacing: 0;
+}
 
-  .sub {
-    bottom: -0.4em;
-  }
-
-  @include from-breakpoint(medium) {
-    font-weight: 300;
-    font-size: 2.75rem;
-    line-height: 1.18; // 52px
-    letter-spacing: 0;
-
-    .sup {
-      top: -1.3em;
-    }
-  }
+.h1Desktop .sup {
+  font-size: 1.25rem; // ???
+  top: -1.3em;
 }
 
 .h2 {
@@ -73,29 +67,23 @@
   font-size: 1.5rem;
   line-height: 1.33; // 30px
   letter-spacing: -0.4px;
+}
 
-  .sup,
-  .sub {
-    font-size: 1rem;
-  }
+.h2 .sup {
+  font-size: 1rem; // ???
+  top: -0.8em;
+}
 
-  .sup {
-    top: -0.8em;
-  }
+.h2Desktop {
+  composes: largeHeading;
+  font-size: 1.75rem;
+  line-height: 1.29; // 36px
+  letter-spacing: -0.8px;
+}
 
-  .sub {
-    bottom: -0.4em;
-  }
-
-  @include from-breakpoint(medium) {
-    font-size: 1.75rem;
-    line-height: 1.29; // 36px
-    letter-spacing: -0.8px;
-
-    .sup {
-      top: -0.7em;
-    }
-  }
+.h2Desktop .sup {
+  font-size: 1rem; // ???
+  top: -0.7em;
 }
 
 .h3 {
@@ -103,17 +91,9 @@
   font-size: 1.25rem;
   line-height: 1.4; // 28px
 
-  .sup,
-  .sub {
-    font-size: 0.875rem;
-  }
-
   .sup {
+    font-size: 0.875rem;
     top: -0.5em;
-  }
-
-  .sub {
-    bottom: -0.5em;
   }
 }
 
@@ -122,16 +102,8 @@
   font-size: 1rem;
   line-height: 1.25; // 20px
 
-  .sup,
-  .sub {
-    font-size: 0.875rem;
-  }
-
   .sup {
+    font-size: 0.875rem;
     top: -0.5em;
-  }
-
-  .sub {
-    bottom: -0.5em;
   }
 }

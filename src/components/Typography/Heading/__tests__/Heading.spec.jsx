@@ -1,37 +1,49 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-
 import Heading from '../Heading'
 
 describe('Heading', () => {
   const defaultProps = {
-    level: 'h1'
+    level: 'h1',
   }
-  const doShallow = (overrides = {}) => shallow(
-    <Heading {...defaultProps} {...overrides}>Go home</Heading>
-  )
+
+  const doShallow = (overrides = {}) =>
+    shallow(
+      <Heading {...defaultProps} {...overrides}>
+        Go home
+      </Heading>
+    )
+
+  const doShallowResponsive = (overrides = {}) =>
+    shallow(
+      <Heading {...defaultProps} {...overrides}>
+        Go home
+      </Heading>
+    )
+      .dive()
+      .dive()
 
   it('renders', () => {
-    const heading = doShallow()
+    const responsiveHeading = doShallowResponsive()
 
-    expect(heading).toMatchSnapshot()
+    expect(responsiveHeading).toMatchSnapshot()
   })
 
   it('renders text', () => {
-    const heading = doShallow()
+    const responsiveHeading = doShallowResponsive()
 
-    expect(heading).toHaveText('Go home')
+    expect(responsiveHeading).toHaveText('Go home')
   })
 
   it('renders a heading in four levels', () => {
-    let heading = doShallow({ level: 'h1' })
-    expect(heading).toHaveTagName('h1')
+    let responsiveHeading = doShallowResponsive({ level: 'h1' })
+    expect(responsiveHeading).toHaveTagName('h1')
 
-    heading = doShallow({ level: 'h2' })
-    expect(heading).toHaveTagName('h2')
+    responsiveHeading = doShallowResponsive({ level: 'h2' })
+    expect(responsiveHeading).toHaveTagName('h2')
 
-    heading = doShallow({ level: 'h3' })
+    let heading = doShallow({ level: 'h3' })
     expect(heading).toHaveTagName('h3')
 
     heading = doShallow({ level: 'h4' })
@@ -39,16 +51,16 @@ describe('Heading', () => {
   })
 
   it('has appropriate colour', () => {
-    let heading = doShallow({ invert: true })
-    expect(heading).toHaveClassName('inverted')
+    let responsiveHeading = doShallowResponsive({ invert: true })
+    expect(responsiveHeading).toHaveClassName('inverted')
 
-    heading = doShallow({ level: 'h1' })
-    expect(heading).toHaveClassName('secondary')
+    responsiveHeading = doShallowResponsive({ level: 'h1' })
+    expect(responsiveHeading).toHaveClassName('secondary')
 
-    heading = doShallow({ level: 'h2' })
-    expect(heading).toHaveClassName('secondary')
+    responsiveHeading = doShallowResponsive({ level: 'h2' })
+    expect(responsiveHeading).toHaveClassName('secondary')
 
-    heading = doShallow({ level: 'h3' })
+    let heading = doShallow({ level: 'h3' })
     expect(heading).toHaveClassName('default')
 
     heading = doShallow({ level: 'h4' })
@@ -56,16 +68,19 @@ describe('Heading', () => {
   })
 
   it('passes additional attributes to heading element', () => {
-    const heading = doShallow({ id: 'the-heading', tabindex: 1 })
+    const responsiveHeading = doShallowResponsive({ id: 'the-heading', tabindex: 1 })
 
-    expect(heading).toHaveProp('id', 'the-heading')
-    expect(heading).toHaveProp('tabindex', 1)
+    expect(responsiveHeading).toHaveProp('id', 'the-heading')
+    expect(responsiveHeading).toHaveProp('tabindex', 1)
   })
 
   it('does not allow custom CSS', () => {
-    const heading = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const responsiveHeading = doShallowResponsive({
+      className: 'my-custom-class',
+      style: { color: 'hotpink' },
+    })
 
-    expect(heading).not.toHaveProp('className', 'my-custom-class')
-    expect(heading).not.toHaveProp('style')
+    expect(responsiveHeading).not.toHaveProp('className', 'my-custom-class')
+    expect(responsiveHeading).not.toHaveProp('style')
   })
 })
