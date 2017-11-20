@@ -192,7 +192,7 @@ This mixin has one optional parameter - the name of an icon. If this parameter i
 
 Variable | Value
 --- | ---
-`$color-icon-primary` | <span style="color: #177a00;">#177a00</span>
+`$color-icon-primary` | <span style="color: #177a00;">#248700</span>
 `$color-icon-secondary` | <span style="color:#4b286d;">#4b286d</span>
 `$color-icon-disabled` | <span style="color: #54595f;">#54595f</span>
 `$color-icon-error` | <span style="color: #c12335;">#c12335</span>
