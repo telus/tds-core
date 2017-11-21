@@ -2,7 +2,7 @@
 
 exports[`Box renders 1`] = `
 <div
-  className="betweenBottomMargin-3 betweenBottom"
+  className="mobile betweenBottomMargin-3 betweenBottom"
 >
   Some content
 </div>

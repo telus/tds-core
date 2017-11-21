@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Responsive from '../Responsive/Responsive'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
@@ -11,7 +12,6 @@ const getClassName = (spacing, location, scale) => {
   if (!scale) {
     return undefined
   }
-
   return styles[`${location}${capitalize(spacing)}-${scale}`]
 }
 
@@ -47,15 +47,21 @@ const Box = ({
   const xSize = inset || horizontal
   const ySize = inset || vertical
 
-  const classes = joinClassNames(
-    getClassName('padding', 'horizontal', xSize),
-    getClassName('padding', 'vertical', ySize),
-    getClassName('margin', 'bottom', below),
-    getBetweenClasses(between, inline),
-    dangerouslyAddClassName
+  return (
+    <Responsive minWidth="md">
+      {isDesktop => {
+        const classes = joinClassNames(
+          styles[isDesktop ? 'desktop' : 'mobile'],
+          getClassName('padding', 'horizontal', xSize),
+          getClassName('padding', 'vertical', ySize),
+          getClassName('margin', 'bottom', below),
+          getBetweenClasses(between, inline),
+          dangerouslyAddClassName
+        )
+        return React.createElement(tag, { ...safeRest(rest), className: classes }, children)
+      }}
+    </Responsive>
   )
-
-  return React.createElement(tag, { ...safeRest(rest), className: classes }, children)
 }
 
 Box.propTypes = {

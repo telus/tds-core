@@ -11,6 +11,8 @@ describe('Box', () => {
         Some content
       </Box>
     )
+      .dive()
+      .dive()
 
   it('renders', () => {
     const box = doShallow()

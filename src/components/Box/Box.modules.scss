@@ -3,7 +3,7 @@
 
 $spacing-base: 1rem; // 16px
 
-$spacings: (
+$mobile: (
   1: $spacing-base * 0.25,
   2: $spacing-base * 0.5,
   3: $spacing-base,
@@ -14,15 +14,15 @@ $spacings: (
   8: $spacing-base * 4
 );
 
-$responsive-spacings: (
-  medium:
-    (
-      4: $spacing-base * 2,
-      5: $spacing-base * 3,
-      6: $spacing-base * 4,
-      7: $spacing-base * 4.5,
-      8: $spacing-base * 6
-    )
+$desktop: (
+  1: $spacing-base * 0.25,
+  2: $spacing-base * 0.5,
+  3: $spacing-base,
+  4: $spacing-base * 2,
+  5: $spacing-base * 3,
+  6: $spacing-base * 4,
+  7: $spacing-base * 4.5,
+  8: $spacing-base * 6
 );
 
 .betweenRight {
@@ -59,18 +59,14 @@ $responsive-spacings: (
   }
 }
 
-@mixin responsiveSpacingClasses ($bp, $map) {
-  @include from-breakpoint($bp) {
-    @each $level, $value in $map {
-      @include spacingClasses($level, $value);
-    }
+.desktop {
+  @each $level, $value in $desktop {
+    @include spacingClasses($level, $value);
   }
 }
 
-@each $level, $value in $spacings {
-  @include spacingClasses($level, $value);
-}
-
-@each $bp, $map in $responsive-spacings {
-  @include responsiveSpacingClasses($bp, $map);
+.mobile {
+  @each $level, $value in $mobile {
+    @include spacingClasses($level, $value);
+  }
 }
