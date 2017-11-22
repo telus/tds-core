@@ -9,7 +9,10 @@ jest.mock('../../../../utils/warn')
 
 describe('ButtonLink', () => {
   const doShallowAndDive = (overrides = {}) =>
-    shallow(<ButtonLink {...overrides}>Go home</ButtonLink>).dive()
+    shallow(<ButtonLink {...overrides}>Go home</ButtonLink>)
+      .dive()
+      .dive()
+      .dive()
 
   afterEach(() => {
     jest.clearAllMocks()

@@ -8,7 +8,11 @@ import Button from '../Button'
 jest.mock('../../../utils/warn')
 
 describe('Button', () => {
-  const doShallowAndDive = (overrides = {}) => shallow(<Button {...overrides}>Submit</Button>).dive()
+  const doShallowAndDive = (overrides = {}) =>
+    shallow(<Button {...overrides}>Submit</Button>)
+      .dive()
+      .dive()
+      .dive()
 
   afterEach(() => {
     jest.clearAllMocks()
