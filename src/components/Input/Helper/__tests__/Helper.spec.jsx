@@ -1,17 +1,14 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-
 import Helper from '../Helper'
 
 describe('Helper', () => {
   const defaultChildren = 'Some helper text.'
-  const doShallow = (props = {}, children = defaultChildren) => (
+  const doShallow = (props = {}, children = defaultChildren) =>
     shallow(<Helper {...props}>{children}</Helper>)
-  )
-  const doRender = (props = {}, children = defaultChildren) => (
+  const doRender = (props = {}, children = defaultChildren) =>
     render(<Helper {...props}>{children}</Helper>)
-  )
 
   it('renders', () => {
     const helper = doRender()
@@ -21,10 +18,20 @@ describe('Helper', () => {
 
   it('can have a feedback state', () => {
     let helper = doShallow()
-    expect(helper.dive()).toHaveClassName('default')
+    expect(
+      helper
+        .dive()
+        .dive()
+        .dive()
+    ).toHaveClassName('default')
 
     helper = doShallow({ feedback: 'success' })
-    expect(helper.dive()).toHaveClassName('success')
+    expect(
+      helper
+        .dive()
+        .dive()
+        .dive()
+    ).toHaveClassName('success')
   })
 
   it('passes additional attributes to the element', () => {

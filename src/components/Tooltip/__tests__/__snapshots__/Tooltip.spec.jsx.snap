@@ -7,7 +7,7 @@ exports[`Tooltip renders 1`] = `
   <div
     aria-hidden="true"
     aria-live="polite"
-    class="horizontalPadding-3 verticalPadding-2 right hide"
+    class="false horizontalPadding-3 verticalPadding-2 right hide"
     data-testid="bubble"
     id="unknown-field_tooltip"
     role="tooltip"

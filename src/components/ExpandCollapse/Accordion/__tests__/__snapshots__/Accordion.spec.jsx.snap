@@ -52,111 +52,129 @@ exports[`Accordion renders a closed accordion 1`] = `
                 tag="div"
                 vertical={3}
               >
-                <div
-                  className="verticalPadding-3"
+                <Responsive
+                  minWidth="md"
                 >
-                  <Box
-                    between={3}
-                    inline={true}
-                    tag="div"
+                  <MediaQuery
+                    minWidth={768}
+                    values={Object {}}
                   >
                     <div
-                      className="betweenRightMargin-3 betweenRight"
+                      className="false verticalPadding-3"
                     >
-                      <div>
-                        <Translate
-                          direction="y"
-                          distance="0.25rem"
-                          in={false}
-                          timeout={300}
-                        >
-                          <Transition
-                            appear={false}
-                            enter={true}
-                            exit={true}
-                            in={false}
-                            mountOnEnter={false}
-                            onEnter={[Function]}
-                            onEntered={[Function]}
-                            onEntering={[Function]}
-                            onExit={[Function]}
-                            onExited={[Function]}
-                            onExiting={[Function]}
-                            timeout={300}
-                            unmountOnExit={false}
-                          >
-                            <div
-                              style={
-                                Object {
-                                  "transition": "transform 300ms",
-                                }
-                              }
-                            >
-                              <Text
-                                block={false}
-                                bold={false}
-                                invert={false}
-                                size="large"
-                              >
-                                <span
-                                  className="large largeFont color"
-                                >
-                                  <DecorativeIcon
-                                    size={16}
-                                    symbol="caretDown"
-                                    variant="primary"
-                                  >
-                                    <Icon
-                                      aria-hidden="true"
-                                      size={16}
-                                      symbol="caretDown"
-                                      variant="primary"
-                                    >
-                                      <i
-                                        aria-hidden="true"
-                                        className="iconCaretDown primary size16"
-                                      />
-                                    </Icon>
-                                  </DecorativeIcon>
-                                </span>
-                              </Text>
-                            </div>
-                          </Transition>
-                        </Translate>
-                      </div>
-                      <Flexbox
-                        dangerouslyAddClassName="headerAlign"
-                        direction="row"
+                      <Box
+                        between={3}
+                        inline={true}
+                        tag="div"
                       >
-                        <div
-                          className="row headerAlign"
+                        <Responsive
+                          minWidth="md"
                         >
-                          <Flexbox
-                            dangerouslyAddClassName="headerAlign"
-                            direction="column"
+                          <MediaQuery
+                            minWidth={768}
+                            values={Object {}}
                           >
                             <div
-                              className="column headerAlign"
+                              className="false betweenRightMargin-3 betweenRight"
                             >
-                              <Text
-                                block={false}
-                                bold={false}
-                                invert={false}
-                                size="large"
-                              >
-                                <span
-                                  className="large largeFont color"
+                              <div>
+                                <Translate
+                                  direction="y"
+                                  distance="0.25rem"
+                                  in={false}
+                                  timeout={300}
                                 >
-                                  Panel title
-                                </span>
-                              </Text>
+                                  <Transition
+                                    appear={false}
+                                    enter={true}
+                                    exit={true}
+                                    in={false}
+                                    mountOnEnter={false}
+                                    onEnter={[Function]}
+                                    onEntered={[Function]}
+                                    onEntering={[Function]}
+                                    onExit={[Function]}
+                                    onExited={[Function]}
+                                    onExiting={[Function]}
+                                    timeout={300}
+                                    unmountOnExit={false}
+                                  >
+                                    <div
+                                      style={
+                                        Object {
+                                          "transition": "transform 300ms",
+                                        }
+                                      }
+                                    >
+                                      <Text
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="large largeFont color"
+                                        >
+                                          <DecorativeIcon
+                                            size={16}
+                                            symbol="caretDown"
+                                            variant="primary"
+                                          >
+                                            <Icon
+                                              aria-hidden="true"
+                                              size={16}
+                                              symbol="caretDown"
+                                              variant="primary"
+                                            >
+                                              <i
+                                                aria-hidden="true"
+                                                className="iconCaretDown primary size16"
+                                              />
+                                            </Icon>
+                                          </DecorativeIcon>
+                                        </span>
+                                      </Text>
+                                    </div>
+                                  </Transition>
+                                </Translate>
+                              </div>
+                              <Flexbox
+                                dangerouslyAddClassName="headerAlign"
+                                direction="row"
+                              >
+                                <div
+                                  className="row headerAlign"
+                                >
+                                  <Flexbox
+                                    dangerouslyAddClassName="headerAlign"
+                                    direction="column"
+                                  >
+                                    <div
+                                      className="column headerAlign"
+                                    >
+                                      <Text
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="large largeFont color"
+                                        >
+                                          Panel title
+                                        </span>
+                                      </Text>
+                                    </div>
+                                  </Flexbox>
+                                </div>
+                              </Flexbox>
                             </div>
-                          </Flexbox>
-                        </div>
-                      </Flexbox>
+                          </MediaQuery>
+                        </Responsive>
+                      </Box>
                     </div>
-                  </Box>
-                </div>
+                  </MediaQuery>
+                </Responsive>
               </Box>
             </button>
           </Clickable>
@@ -203,30 +221,39 @@ exports[`Accordion renders a closed accordion 1`] = `
                     inset={4}
                     tag="div"
                   >
-                    <div
-                      className="horizontalPadding-4 verticalPadding-4"
+                    <Responsive
+                      minWidth="md"
                     >
-                      <Text
-                        block={true}
-                        bold={false}
-                        invert={false}
-                        size="base"
+                      <MediaQuery
+                        minWidth={768}
+                        values={Object {}}
                       >
                         <div
-                          className="base baseFont color"
+                          className="false horizontalPadding-4 verticalPadding-4"
                         >
-                          <Panel
-                            disabled={false}
-                            header="Panel title"
-                            id="panel-1"
+                          <Text
+                            block={true}
+                            bold={false}
+                            invert={false}
+                            size="base"
                           >
-                            <div>
-                              Panel content
+                            <div
+                              className="base baseFont color"
+                            >
+                              <Panel
+                                disabled={false}
+                                header="Panel title"
+                                id="panel-1"
+                              >
+                                <div>
+                                  Panel content
+                                </div>
+                              </Panel>
                             </div>
-                          </Panel>
+                          </Text>
                         </div>
-                      </Text>
-                    </div>
+                      </MediaQuery>
+                    </Responsive>
                   </Box>
                 </div>
               </div>
@@ -302,111 +329,129 @@ exports[`Accordion renders an open accordion 1`] = `
                 tag="div"
                 vertical={3}
               >
-                <div
-                  className="verticalPadding-3"
+                <Responsive
+                  minWidth="md"
                 >
-                  <Box
-                    between={3}
-                    inline={true}
-                    tag="div"
+                  <MediaQuery
+                    minWidth={768}
+                    values={Object {}}
                   >
                     <div
-                      className="betweenRightMargin-3 betweenRight"
+                      className="false verticalPadding-3"
                     >
-                      <div>
-                        <Translate
-                          direction="y"
-                          distance="-0.25rem"
-                          in={false}
-                          timeout={300}
-                        >
-                          <Transition
-                            appear={false}
-                            enter={true}
-                            exit={true}
-                            in={false}
-                            mountOnEnter={false}
-                            onEnter={[Function]}
-                            onEntered={[Function]}
-                            onEntering={[Function]}
-                            onExit={[Function]}
-                            onExited={[Function]}
-                            onExiting={[Function]}
-                            timeout={300}
-                            unmountOnExit={false}
-                          >
-                            <div
-                              style={
-                                Object {
-                                  "transition": "transform 300ms",
-                                }
-                              }
-                            >
-                              <Text
-                                block={false}
-                                bold={false}
-                                invert={false}
-                                size="large"
-                              >
-                                <span
-                                  className="large largeFont color"
-                                >
-                                  <DecorativeIcon
-                                    size={16}
-                                    symbol="caretUp"
-                                    variant="primary"
-                                  >
-                                    <Icon
-                                      aria-hidden="true"
-                                      size={16}
-                                      symbol="caretUp"
-                                      variant="primary"
-                                    >
-                                      <i
-                                        aria-hidden="true"
-                                        className="iconCaretUp primary size16"
-                                      />
-                                    </Icon>
-                                  </DecorativeIcon>
-                                </span>
-                              </Text>
-                            </div>
-                          </Transition>
-                        </Translate>
-                      </div>
-                      <Flexbox
-                        dangerouslyAddClassName="headerAlign"
-                        direction="row"
+                      <Box
+                        between={3}
+                        inline={true}
+                        tag="div"
                       >
-                        <div
-                          className="row headerAlign"
+                        <Responsive
+                          minWidth="md"
                         >
-                          <Flexbox
-                            dangerouslyAddClassName="headerAlign"
-                            direction="column"
+                          <MediaQuery
+                            minWidth={768}
+                            values={Object {}}
                           >
                             <div
-                              className="column headerAlign"
+                              className="false betweenRightMargin-3 betweenRight"
                             >
-                              <Text
-                                block={false}
-                                bold={false}
-                                invert={false}
-                                size="large"
-                              >
-                                <span
-                                  className="large largeFont color"
+                              <div>
+                                <Translate
+                                  direction="y"
+                                  distance="-0.25rem"
+                                  in={false}
+                                  timeout={300}
                                 >
-                                  Panel title
-                                </span>
-                              </Text>
+                                  <Transition
+                                    appear={false}
+                                    enter={true}
+                                    exit={true}
+                                    in={false}
+                                    mountOnEnter={false}
+                                    onEnter={[Function]}
+                                    onEntered={[Function]}
+                                    onEntering={[Function]}
+                                    onExit={[Function]}
+                                    onExited={[Function]}
+                                    onExiting={[Function]}
+                                    timeout={300}
+                                    unmountOnExit={false}
+                                  >
+                                    <div
+                                      style={
+                                        Object {
+                                          "transition": "transform 300ms",
+                                        }
+                                      }
+                                    >
+                                      <Text
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="large largeFont color"
+                                        >
+                                          <DecorativeIcon
+                                            size={16}
+                                            symbol="caretUp"
+                                            variant="primary"
+                                          >
+                                            <Icon
+                                              aria-hidden="true"
+                                              size={16}
+                                              symbol="caretUp"
+                                              variant="primary"
+                                            >
+                                              <i
+                                                aria-hidden="true"
+                                                className="iconCaretUp primary size16"
+                                              />
+                                            </Icon>
+                                          </DecorativeIcon>
+                                        </span>
+                                      </Text>
+                                    </div>
+                                  </Transition>
+                                </Translate>
+                              </div>
+                              <Flexbox
+                                dangerouslyAddClassName="headerAlign"
+                                direction="row"
+                              >
+                                <div
+                                  className="row headerAlign"
+                                >
+                                  <Flexbox
+                                    dangerouslyAddClassName="headerAlign"
+                                    direction="column"
+                                  >
+                                    <div
+                                      className="column headerAlign"
+                                    >
+                                      <Text
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="large largeFont color"
+                                        >
+                                          Panel title
+                                        </span>
+                                      </Text>
+                                    </div>
+                                  </Flexbox>
+                                </div>
+                              </Flexbox>
                             </div>
-                          </Flexbox>
-                        </div>
-                      </Flexbox>
+                          </MediaQuery>
+                        </Responsive>
+                      </Box>
                     </div>
-                  </Box>
-                </div>
+                  </MediaQuery>
+                </Responsive>
               </Box>
             </button>
           </Clickable>
@@ -453,30 +498,39 @@ exports[`Accordion renders an open accordion 1`] = `
                     inset={4}
                     tag="div"
                   >
-                    <div
-                      className="horizontalPadding-4 verticalPadding-4"
+                    <Responsive
+                      minWidth="md"
                     >
-                      <Text
-                        block={true}
-                        bold={false}
-                        invert={false}
-                        size="base"
+                      <MediaQuery
+                        minWidth={768}
+                        values={Object {}}
                       >
                         <div
-                          className="base baseFont color"
+                          className="false horizontalPadding-4 verticalPadding-4"
                         >
-                          <Panel
-                            disabled={false}
-                            header="Panel title"
-                            id="panel-1"
+                          <Text
+                            block={true}
+                            bold={false}
+                            invert={false}
+                            size="base"
                           >
-                            <div>
-                              Panel content
+                            <div
+                              className="base baseFont color"
+                            >
+                              <Panel
+                                disabled={false}
+                                header="Panel title"
+                                id="panel-1"
+                              >
+                                <div>
+                                  Panel content
+                                </div>
+                              </Panel>
                             </div>
-                          </Panel>
+                          </Text>
                         </div>
-                      </Text>
-                    </div>
+                      </MediaQuery>
+                    </Responsive>
                   </Box>
                 </div>
               </div>

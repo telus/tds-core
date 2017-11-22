@@ -6,7 +6,7 @@ exports[`ChevronLink renders 1`] = `
   href="test.com"
 >
   <div
-    class="betweenRightMargin-2 betweenRight"
+    class="false betweenRightMargin-2 betweenRight"
   >
     <span>
       Go home

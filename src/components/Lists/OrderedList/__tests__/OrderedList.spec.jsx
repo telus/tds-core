@@ -29,7 +29,12 @@ describe('<OrderedList />', () => {
   it('OrderList renders an HTML ol tag', () => {
     const orderedList = doShallow()
 
-    expect(orderedList.dive()).toHaveTagName('ol')
+    expect(
+      orderedList
+        .dive()
+        .dive()
+        .dive()
+    ).toHaveTagName('ol')
   })
 
   it('OrderList.Item renders an HTML li tag', () => {
@@ -40,10 +45,20 @@ describe('<OrderedList />', () => {
 
   it('can have a list style', () => {
     let orderedList = doShallow({ listStyle: undefined })
-    expect(orderedList.dive()).toHaveClassName('decimal')
+    expect(
+      orderedList
+        .dive()
+        .dive()
+        .dive()
+    ).toHaveClassName('decimal')
 
     orderedList = doShallow({ listStyle: 'upperAlpha' })
-    expect(orderedList.dive()).toHaveClassName('upperAlpha')
+    expect(
+      orderedList
+        .dive()
+        .dive()
+        .dive()
+    ).toHaveClassName('upperAlpha')
   })
 
   it('passes additional attributes to ol element', () => {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 
@@ -10,12 +9,10 @@ import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTex
 
 describe('<Notification />', () => {
   const defaultChildren = 'Some content'
-  const doShallow = (props = {}, children = defaultChildren) => (
+  const doShallow = (props = {}, children = defaultChildren) =>
     shallow(<Notification {...props}>{children}</Notification>)
-  )
-  const doRender = (props = {}, children = defaultChildren) => (
+  const doRender = (props = {}, children = defaultChildren) =>
     render(<Notification {...props}>{children}</Notification>)
-  )
 
   it('renders', () => {
     const notification = doRender()
@@ -25,10 +22,20 @@ describe('<Notification />', () => {
 
   it('can have a variant', () => {
     let notification = doShallow({ variant: undefined })
-    expect(notification.dive()).toHaveClassName('instructional')
+    expect(
+      notification
+        .dive()
+        .dive()
+        .dive()
+    ).toHaveClassName('instructional')
 
     notification = doShallow({ variant: 'success' })
-    expect(notification.dive()).toHaveClassName('success')
+    expect(
+      notification
+        .dive()
+        .dive()
+        .dive()
+    ).toHaveClassName('success')
   })
 
   it('does not have an icon by default', () => {
@@ -49,9 +56,7 @@ describe('<Notification />', () => {
     it('adds a checkmark icon', () => {
       const notification = doShallow({ variant: 'success' })
 
-      expect(notification).toContainReact(
-        <DecorativeIcon symbol="checkmark" variant="primary" />
-      )
+      expect(notification).toContainReact(<DecorativeIcon symbol="checkmark" variant="primary" />)
     })
   })
 

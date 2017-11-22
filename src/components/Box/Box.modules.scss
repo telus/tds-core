@@ -59,14 +59,12 @@ $desktop: (
   }
 }
 
-.desktop {
-  @each $level, $value in $desktop {
-    @include spacingClasses($level, $value);
-  }
+@each $level, $value in $mobile {
+  @include spacingClasses($level, $value);
 }
 
-.mobile {
-  @each $level, $value in $mobile {
+.desktop {
+  @each $level, $value in $desktop {
     @include spacingClasses($level, $value);
   }
 }

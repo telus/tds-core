@@ -1,7 +1,6 @@
 import React from 'react'
 import { shallow, render, mount } from 'enzyme'
 
-
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
 
@@ -39,10 +38,20 @@ describe('Tooltip', () => {
 
   it('has a direction', () => {
     let tooltip = doShallow()
-    expect(findBubble(tooltip).dive()).toHaveClassName('right')
+    expect(
+      findBubble(tooltip)
+        .dive()
+        .dive()
+        .dive()
+    ).toHaveClassName('right')
 
     tooltip = doShallow({ direction: 'left' })
-    expect(findBubble(tooltip).dive()).toHaveClassName('left')
+    expect(
+      findBubble(tooltip)
+        .dive()
+        .dive()
+        .dive()
+    ).toHaveClassName('left')
   })
 
   describe('interactivity', () => {
@@ -69,13 +78,28 @@ describe('Tooltip', () => {
 
     it('shows and hides the bubble', () => {
       const tooltip = doShallow()
-      expect(findBubble(tooltip).dive()).toHaveClassName('hide')
+      expect(
+        findBubble(tooltip)
+          .dive()
+          .dive()
+          .dive()
+      ).toHaveClassName('hide')
 
       toggleBubble(tooltip)
-      expect(findBubble(tooltip).dive()).not.toHaveClassName('hide')
+      expect(
+        findBubble(tooltip)
+          .dive()
+          .dive()
+          .dive()
+      ).not.toHaveClassName('hide')
 
       toggleBubble(tooltip)
-      expect(findBubble(tooltip).dive()).toHaveClassName('hide')
+      expect(
+        findBubble(tooltip)
+          .dive()
+          .dive()
+          .dive()
+      ).toHaveClassName('hide')
     })
 
     it('hides the bubble when clicking outside of it', () => {

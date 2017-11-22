@@ -51,7 +51,7 @@ const Box = ({
     <Responsive minWidth="md">
       {isDesktop => {
         const classes = joinClassNames(
-          styles[isDesktop ? 'desktop' : 'mobile'],
+          styles[isDesktop && 'desktop'],
           getClassName('padding', 'horizontal', xSize),
           getClassName('padding', 'vertical', ySize),
           getClassName('margin', 'bottom', below),
