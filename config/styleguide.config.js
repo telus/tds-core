@@ -208,6 +208,14 @@ module.exports = {
               },
             },
             {
+              name: 'Media',
+              components() {
+                return compact([
+                  toggleByEnv('Image', path.resolve('src/components/Image/Image.jsx'), undefined),
+                ])
+              },
+            },
+            {
               name: 'Dividers',
               components() {
                 return [
@@ -297,7 +305,9 @@ module.exports = {
     Logo: path.resolve('docs/components/Logo/Logo'),
     Markdown: path.resolve('docs/components/Markdown/Markdown'),
     SectionHeadingRenderer: path.resolve('docs/components/SectionHeading/SectionHeadingRenderer'),
-    TableOfContentsRenderer: path.resolve('docs/components/TableOfContents/TableOfContentsRenderer')
+    TableOfContentsRenderer: path.resolve(
+      'docs/components/TableOfContents/TableOfContentsRenderer'
+    ),
   },
   theme: {
     fontFamily: {
