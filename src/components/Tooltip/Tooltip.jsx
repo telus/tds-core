@@ -101,19 +101,31 @@ class Tooltip extends React.Component {
       <div>
         <Responsive maxWidth="sm">
           {matches => {
+<<<<<<< HEAD
             let size = 'bubbleXsmall'
+=======
+            const size = 'bubbleXsmall'
+>>>>>>> refactor(tooltip): Use Responsive component to replace css media-queries
             return matches && this.renderBubble(id, direction, open, content, size)
           }}
         </Responsive>
         <Responsive minWidth="sm" maxWidth="md">
           {matches => {
+<<<<<<< HEAD
             let size = 'bubbleSmall'
+=======
+            const size = 'bubbleSmall'
+>>>>>>> refactor(tooltip): Use Responsive component to replace css media-queries
             return matches && this.renderBubble(id, direction, open, content, size)
           }}
         </Responsive>
         <Responsive minWidth="md">
           {matches => {
+<<<<<<< HEAD
             let size = 'bubbleDesktop'
+=======
+            const size = 'bubbleDesktop'
+>>>>>>> refactor(tooltip): Use Responsive component to replace css media-queries
             return matches && this.renderBubble(id, direction, open, content, size)
           }}
         </Responsive>
