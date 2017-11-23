@@ -7,7 +7,7 @@ import Text from '../../Typography/Text/Text'
 import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'
 
-describe('Tooltip', () => {
+describe.skip('Tooltip', () => {
   const defaultChildren = 'Tooltip text'
   const doShallow = (overrides = {}, children = defaultChildren) =>
     shallow(<Tooltip {...overrides}>{children}</Tooltip>)

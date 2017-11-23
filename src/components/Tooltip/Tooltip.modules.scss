@@ -56,30 +56,24 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
   composes: bubble;
 }
 
-@include at-breakpoint(xs) {
-  .bubble {
-    width: 100%;
-  }
+.bubbleXsmall {
+  width: 100%;
 
   .right {
     @include left-bubble;
   }
 }
 
-@include at-breakpoint(small) {
-  .bubble {
-    width: 50%;
-  }
+.bubbleSmall {
+  width: 50%;
 
   .right {
     @include left-bubble;
   }
 }
 
-@include from-breakpoint(medium) {
-  .bubble {
-    width: 25%;
-  }
+.bubbleDesktop {
+  width: 25%;
 
   .right {
     left: calc(100% - #{$bubble-trigger-size} - #{$bubble-offset});

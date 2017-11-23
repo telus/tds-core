@@ -9,6 +9,7 @@ import closest from './element-closest'
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../Typography/Text/Text'
 import Box from '../Box/Box'
+import Responsive from '../Responsive/Responsive'
 
 import displayStyles from '../Display.modules.scss'
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
@@ -59,9 +60,9 @@ class Tooltip extends React.Component {
   }
 
   toggleBubbleOnOutsideEvent = event => {
-    const {connectedFieldLabel} = this.props
+    const { connectedFieldLabel } = this.props
 
-    const {bubbleId, triggerId} = getIds(connectedFieldLabel)
+    const { bubbleId, triggerId } = getIds(connectedFieldLabel)
 
     const inBubble = closest(event.target, `#${bubbleId}`)
     const inTrigger = closest(event.target, `#${triggerId}`)
@@ -72,14 +73,13 @@ class Tooltip extends React.Component {
   }
 
   toggleBubble = () => {
-    this.setState(({open}) => {
-      return {open: !open}
+    this.setState(({ open }) => {
+      return { open: !open }
     })
   }
 
-  renderBubble(id, direction, open, content) {
-    const classes = joinClassNames(styles[direction], !open && displayStyles.hide)
-
+  renderBubble(id, direction, open, content, size) {
+    const classes = joinClassNames(styles[direction], styles[size], !open && displayStyles.hide)
     return (
       <Box
         vertical={2}
@@ -96,14 +96,39 @@ class Tooltip extends React.Component {
     )
   }
 
-  render() {
-    const {direction, connectedFieldLabel, children, ...rest} = this.props
+  renderResponsiveBubble(id, direction, open, content) {
+    return (
+      <div>
+        <Responsive maxWidth="sm">
+          {matches => {
+            let size = 'bubbleXsmall'
+            return matches && this.renderBubble(id, direction, open, content, size)
+          }}
+        </Responsive>
+        <Responsive minWidth="sm" maxWidth="md">
+          {matches => {
+            let size = 'bubbleSmall'
+            return matches && this.renderBubble(id, direction, open, content, size)
+          }}
+        </Responsive>
+        <Responsive minWidth="md">
+          {matches => {
+            let size = 'bubbleDesktop'
+            return matches && this.renderBubble(id, direction, open, content, size)
+          }}
+        </Responsive>
+      </div>
+    )
+  }
 
-    const {bubbleId, triggerId} = getIds(connectedFieldLabel)
+  render() {
+    const { direction, connectedFieldLabel, children, ...rest } = this.props
+
+    const { bubbleId, triggerId } = getIds(connectedFieldLabel)
 
     return (
       <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>
-        {this.renderBubble(bubbleId, direction, this.state.open, children)}
+        {this.renderResponsiveBubble(bubbleId, direction, this.state.open, children)}
 
         <StandaloneIcon
           symbol="questionMarkCircle"
