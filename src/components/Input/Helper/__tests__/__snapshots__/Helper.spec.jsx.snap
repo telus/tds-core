@@ -2,7 +2,7 @@
 
 exports[`Helper renders 1`] = `
 <div
-  class="false horizontalPadding-3 verticalPadding-3 default"
+  class="horizontalPadding-3 verticalPadding-3 default"
 >
   Some helper text.
 </div>

@@ -60,7 +60,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                     values={Object {}}
                   >
                     <div
-                      className="false verticalPadding-3"
+                      className="verticalPadding-3"
                     >
                       <Box
                         between={3}
@@ -75,7 +75,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                             values={Object {}}
                           >
                             <div
-                              className="false betweenRightMargin-3 betweenRight"
+                              className="betweenRightMargin-3 betweenRight"
                             >
                               <div>
                                 <Translate
@@ -229,7 +229,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                         values={Object {}}
                       >
                         <div
-                          className="false horizontalPadding-4 verticalPadding-4"
+                          className="horizontalPadding-4 verticalPadding-4"
                         >
                           <Text
                             block={true}
@@ -337,7 +337,7 @@ exports[`Accordion renders an open accordion 1`] = `
                     values={Object {}}
                   >
                     <div
-                      className="false verticalPadding-3"
+                      className="verticalPadding-3"
                     >
                       <Box
                         between={3}
@@ -352,7 +352,7 @@ exports[`Accordion renders an open accordion 1`] = `
                             values={Object {}}
                           >
                             <div
-                              className="false betweenRightMargin-3 betweenRight"
+                              className="betweenRightMargin-3 betweenRight"
                             >
                               <div>
                                 <Translate
@@ -506,7 +506,7 @@ exports[`Accordion renders an open accordion 1`] = `
                         values={Object {}}
                       >
                         <div
-                          className="false horizontalPadding-4 verticalPadding-4"
+                          className="horizontalPadding-4 verticalPadding-4"
                         >
                           <Text
                             block={true}

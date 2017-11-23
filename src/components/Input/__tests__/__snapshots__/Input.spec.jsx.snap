@@ -2,7 +2,7 @@
 
 exports[`Input renders 1`] = `
 <div
-  class="false betweenBottomMargin-2 betweenBottom"
+  class="betweenBottomMargin-2 betweenBottom"
 >
   <div
     class="row containsTooltip"
@@ -12,7 +12,7 @@ exports[`Input renders 1`] = `
       for="the-input"
     >
       <div
-        class="false betweenRightMargin-2 betweenRight alignCenter"
+        class="betweenRightMargin-2 betweenRight alignCenter"
       >
         <span
           class="medium boldFont color"
@@ -23,14 +23,14 @@ exports[`Input renders 1`] = `
     </label>
   </div>
   <div
-    class="false horizontalPadding-3 default"
+    class="horizontalPadding-3 default"
     data-testid="inputWrapper"
   >
     <div
-      class="false betweenRightMargin-3 betweenRight sizing"
+      class="betweenRightMargin-3 betweenRight sizing"
     >
       <div
-        class="false fullWidth"
+        class="fullWidth"
       >
         <input
           aria-invalid="false"
@@ -47,7 +47,7 @@ exports[`Input renders 1`] = `
 
 exports[`Input renders with a feedback state and icon 1`] = `
 <div
-  class="false betweenBottomMargin-2 betweenBottom"
+  class="betweenBottomMargin-2 betweenBottom"
 >
   <div
     class="row containsTooltip"
@@ -57,7 +57,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
       for="the-input"
     >
       <div
-        class="false betweenRightMargin-2 betweenRight alignCenter"
+        class="betweenRightMargin-2 betweenRight alignCenter"
       >
         <span
           class="medium boldFont color"
@@ -68,14 +68,14 @@ exports[`Input renders with a feedback state and icon 1`] = `
     </label>
   </div>
   <div
-    class="false horizontalPadding-3 error"
+    class="horizontalPadding-3 error"
     data-testid="inputWrapper"
   >
     <div
-      class="false betweenRightMargin-3 betweenRight sizing"
+      class="betweenRightMargin-3 betweenRight sizing"
     >
       <div
-        class="false fullWidth"
+        class="fullWidth"
       >
         <input
           aria-invalid="true"

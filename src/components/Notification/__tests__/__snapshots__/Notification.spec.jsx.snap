@@ -2,7 +2,7 @@
 
 exports[`<Notification /> renders 1`] = `
 <div
-  class="false verticalPadding-3 instructional"
+  class="verticalPadding-3 instructional"
 >
   <div
     class="container container--limited-width"
@@ -14,7 +14,7 @@ exports[`<Notification /> renders 1`] = `
         class="xs-12"
       >
         <div
-          class="false betweenRightMargin-3 betweenRight"
+          class="betweenRightMargin-3 betweenRight"
         >
           <p
             class="noSpacing color medium mediumFont leftAlign"

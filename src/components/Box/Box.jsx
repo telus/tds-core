@@ -27,6 +27,10 @@ const getBetweenClasses = (betweenSize, inline) => {
   )
 }
 
+const getDesktopClass = isDesktop => {
+  return isDesktop ? styles.desktop : undefined
+}
+
 /**
  * Apply spacing within or around components.
  *
@@ -51,7 +55,7 @@ const Box = ({
     <Responsive minWidth="md">
       {isDesktop => {
         const classes = joinClassNames(
-          styles[isDesktop && 'desktop'],
+          getDesktopClass(isDesktop),
           getClassName('padding', 'horizontal', xSize),
           getClassName('padding', 'vertical', ySize),
           getClassName('margin', 'bottom', below),
