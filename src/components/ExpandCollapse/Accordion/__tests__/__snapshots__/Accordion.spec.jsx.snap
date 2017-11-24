@@ -138,36 +138,44 @@ exports[`Accordion renders a closed accordion 1`] = `
                                   </Transition>
                                 </Translate>
                               </div>
-                              <Flexbox
-                                dangerouslyAddClassName="headerAlign"
-                                direction="row"
+                              <Responsive
+                                minWidth="md"
                               >
-                                <div
-                                  className="row headerAlign"
+                                <MediaQuery
+                                  minWidth={768}
+                                  values={Object {}}
                                 >
                                   <Flexbox
-                                    dangerouslyAddClassName="headerAlign"
+                                    dangerouslyAddClassName="header"
                                     direction="column"
                                   >
                                     <div
-                                      className="column headerAlign"
+                                      className="column header"
                                     >
-                                      <Text
-                                        block={false}
+                                      <Paragraph
+                                        align="left"
                                         bold={false}
                                         invert={false}
                                         size="large"
                                       >
-                                        <span
-                                          className="large largeFont color"
+                                        <p
+                                          className="noSpacing color large largeFont leftAlign"
                                         >
                                           Panel title
-                                        </span>
-                                      </Text>
+                                        </p>
+                                      </Paragraph>
+                                      <Flexbox
+                                        dangerouslyAddClassName="headerAlign"
+                                        direction="row"
+                                      >
+                                        <div
+                                          className="row headerAlign"
+                                        />
+                                      </Flexbox>
                                     </div>
                                   </Flexbox>
-                                </div>
-                              </Flexbox>
+                                </MediaQuery>
+                              </Responsive>
                             </div>
                           </MediaQuery>
                         </Responsive>
@@ -415,36 +423,44 @@ exports[`Accordion renders an open accordion 1`] = `
                                   </Transition>
                                 </Translate>
                               </div>
-                              <Flexbox
-                                dangerouslyAddClassName="headerAlign"
-                                direction="row"
+                              <Responsive
+                                minWidth="md"
                               >
-                                <div
-                                  className="row headerAlign"
+                                <MediaQuery
+                                  minWidth={768}
+                                  values={Object {}}
                                 >
                                   <Flexbox
-                                    dangerouslyAddClassName="headerAlign"
+                                    dangerouslyAddClassName="header"
                                     direction="column"
                                   >
                                     <div
-                                      className="column headerAlign"
+                                      className="column header"
                                     >
-                                      <Text
-                                        block={false}
+                                      <Paragraph
+                                        align="left"
                                         bold={false}
                                         invert={false}
                                         size="large"
                                       >
-                                        <span
-                                          className="large largeFont color"
+                                        <p
+                                          className="noSpacing color large largeFont leftAlign"
                                         >
                                           Panel title
-                                        </span>
-                                      </Text>
+                                        </p>
+                                      </Paragraph>
+                                      <Flexbox
+                                        dangerouslyAddClassName="headerAlign"
+                                        direction="row"
+                                      >
+                                        <div
+                                          className="row headerAlign"
+                                        />
+                                      </Flexbox>
                                     </div>
                                   </Flexbox>
-                                </div>
-                              </Flexbox>
+                                </MediaQuery>
+                              </Responsive>
                             </div>
                           </MediaQuery>
                         </Responsive>

@@ -6,12 +6,14 @@ import Box from '../../Box/Box'
 import Clickable from '../../Clickable/Clickable'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../../Typography/Text/Text'
+import Paragraph from '../../Typography/Paragraph/Paragraph'
 import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
 import DimpleDivider from '../../Dividers/DimpleDivider/DimpleDivider'
 import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
 import Flexbox from '../../Flexbox/Flexbox'
 import Panel from '../Panel/Panel'
+import Responsive from '../../Responsive/Responsive'
 
 import joinClassNames from '../../../utils/joinClassNames'
 
@@ -79,17 +81,39 @@ class PanelWrapper extends React.Component {
     )
   }
 
+  renderResponsiveHeader(header, subtext, tertiaryText, desktop) {
+    if (desktop) {
+      return (
+        <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlignDesktop}>
+          <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlignDesktop}>
+            <Text size="large">{header}</Text>
+
+            {subtext && <Text size="small">{subtext}</Text>}
+          </Flexbox>
+
+          {tertiaryText && <Text size="large">{tertiaryText}</Text>}
+        </Flexbox>
+      )
+    }
+
+    return (
+      <Flexbox direction="column" dangerouslyAddClassName={styles.header}>
+        <Paragraph size="large">{header}</Paragraph>
+        <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
+          {subtext && <Text size="small">{subtext}</Text>}
+          {tertiaryText && <Text size="medium">{tertiaryText}</Text>}
+        </Flexbox>
+      </Flexbox>
+    )
+  }
+
   renderHeader(header, subtext, tertiaryText) {
     return (
-      <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
-        <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlign}>
-          <Text size="large">{header}</Text>
-
-          {subtext && <Text size="small">{subtext}</Text>}
-        </Flexbox>
-
-        {tertiaryText && <Text size="large">{tertiaryText}</Text>}
-      </Flexbox>
+      <Responsive minWidth="md">
+        {desktop => {
+          return this.renderResponsiveHeader(header, subtext, tertiaryText, desktop)
+        }}
+      </Responsive>
     )
   }
 
