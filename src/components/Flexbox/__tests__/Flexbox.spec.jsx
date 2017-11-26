@@ -1,16 +1,18 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-
 import Flexbox from '../Flexbox'
 
 describe('Flexbox', () => {
   const defaultProps = {
-    direction: 'row'
+    direction: 'row',
   }
-  const doShallow = (props = {}) => (
-    shallow(<Flexbox {...defaultProps} {...props}>Some content</Flexbox>)
-  )
+  const doShallow = (props = {}) =>
+    shallow(
+      <Flexbox {...defaultProps} {...props}>
+        Some content
+      </Flexbox>
+    )
 
   it('renders', () => {
     const flexbox = doShallow()
@@ -24,6 +26,12 @@ describe('Flexbox', () => {
 
     flexbox = doShallow({ direction: 'row' })
     expect(flexbox).toHaveClassName('row')
+  })
+
+  it('can justify content', () => {
+    const flexbox = doShallow({ justifyContent: 'spaceBetween' })
+
+    expect(flexbox).toHaveClassName('justifyContentSpaceBetween')
   })
 
   it('will add additional arbitrary class names', () => {

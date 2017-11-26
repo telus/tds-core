@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea renders 1`] = `
+<div
+  class="betweenBottomMargin-2 betweenBottom"
+>
+  <div
+    class="row justifyContentSpaceBetween relative"
+  >
+    <label
+      data-no-global-styles="true"
+      for="the-textarea"
+    >
+      <div
+        class="betweenRightMargin-2 betweenRight alignCenter"
+      >
+        <span
+          class="medium boldFont color"
+        >
+          The textarea
+        </span>
+      </div>
+    </label>
+  </div>
+  <div
+    class="relative"
+  >
+    <textarea
+      aria-invalid="false"
+      class="default"
+      data-no-global-styles="true"
+      id="the-textarea"
+      type="text"
+    />
+    <div
+      class="absolute fixLineHeight iconPosition"
+    />
+  </div>
+</div>
+`;
+
+exports[`Textarea renders with a feedback state and icon 1`] = `
+<div
+  class="betweenBottomMargin-2 betweenBottom"
+>
+  <div
+    class="row justifyContentSpaceBetween relative"
+  >
+    <label
+      data-no-global-styles="true"
+      for="the-textarea"
+    >
+      <div
+        class="betweenRightMargin-2 betweenRight alignCenter"
+      >
+        <span
+          class="medium boldFont color"
+        >
+          The textarea
+        </span>
+      </div>
+    </label>
+  </div>
+  <div
+    class="relative"
+  >
+    <textarea
+      aria-invalid="true"
+      class="error"
+      data-no-global-styles="true"
+      id="the-textarea"
+      type="text"
+    />
+    <div
+      class="absolute fixLineHeight iconPosition"
+    >
+      <div
+        style="transition:opacity 100ms ease-in-out;opacity:1"
+      >
+        <i
+          aria-label="The value of this input field is invalid."
+          class="iconExclamationPointCircle error size16"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

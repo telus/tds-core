@@ -3,27 +3,34 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
+import capitalize from '../../utils/capitalize'
 
 import styles from './Flexbox.modules.scss'
 
-const getClassName = (direction, dangerousClassName) => (
-  joinClassNames(styles[direction], dangerousClassName)
-)
+const Flexbox = ({ direction, justifyContent, dangerouslyAddClassName, children, ...rest }) => {
+  const classNames = joinClassNames(
+    styles[direction],
+    justifyContent && styles[`justifyContent${capitalize(justifyContent)}`],
+    dangerouslyAddClassName
+  )
 
-const Flexbox = ({ direction, dangerouslyAddClassName, children, ...rest }) => (
-  <div {...safeRest(rest)} className={getClassName(direction, dangerouslyAddClassName)}>
-    {children}
-  </div>
-)
+  return (
+    <div {...safeRest(rest)} className={classNames}>
+      {children}
+    </div>
+  )
+}
 
 Flexbox.propTypes = {
   direction: PropTypes.oneOf(['column', 'row']).isRequired,
+  justifyContent: PropTypes.oneOf(['spaceBetween']),
   dangerouslyAddClassName: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 Flexbox.defaultProps = {
-  dangerouslyAddClassName: undefined
+  justifyContent: undefined,
+  dangerouslyAddClassName: undefined,
 }
 
 export default Flexbox

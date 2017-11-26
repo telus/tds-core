@@ -1,0 +1,87 @@
+@import '../../scss/settings/colours';
+@import '../../scss/settings/typography';
+
+/* LABEL */
+
+.alignCenter {
+  align-items: center;
+}
+
+/* END LABEL */
+
+/* FIELD */
+
+.formField {
+  width: 100%;
+
+  composes: noMargin from '../Spacing.modules.scss';
+  // This vertical padding fixes an IE11 bug that was causing the input value to jump slightly and get cut off.
+  composes: verticalPadding-3 horizontalPadding-3 from '../Box/Box.modules.scss';
+
+  composes: thin rounded from '../Borders.modules.scss';
+
+  composes: font from '../FormFields.modules.scss';
+  composes: medium mediumFont color from '../Typography/Text/Text.modules.scss';
+
+  outline: 0;
+
+  text-overflow: ellipsis;
+
+  &::placeholder {
+    font: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    color: $color-shuttle-grey;
+  }
+}
+
+.defaultBoxShadow {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.defaultBgColor {
+  background-color: $color-white;
+}
+
+.default {
+  composes: formField defaultBgColor defaultBoxShadow;
+
+  border-color: $color-shuttle-grey;
+}
+
+.disabled {
+  composes: formField;
+
+  background-color: $color-athens-grey;
+  border-color: transparent;
+}
+
+.focus {
+  composes: formField defaultBgColor;
+
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px $color-shuttle-grey;
+}
+
+.success {
+  composes: formField defaultBgColor defaultBoxShadow;
+
+  border-color: $color-primary;
+}
+
+.error {
+  composes: formField defaultBgColor defaultBoxShadow;
+
+  border-color: $color-cardinal;
+}
+
+/* END FIELD */
+
+/* ICON */
+
+.iconPosition {
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+/* END ICON */

@@ -7,8 +7,11 @@ $form-field-bottom-spacing: 18px;
 // Default input styling
 //
 
+// TODO: The :not([data-no-global-styles]) prevents these styles from overriding the modular styles for the new components
+//       The data-no-global-styles attribute can be completely removed when deleting these styles.
+
 input:not([type='radio']),
-textarea,
+textarea:not([data-no-global-styles]),
 select {
   border: 1px solid $color-shuttle-grey;
   border-radius: $form-field-border-radius;
@@ -46,7 +49,7 @@ select {
   box-shadow: 0 0 4px 1px $color-shuttle-grey;
 }
 
-textarea:focus {
+textarea:not([data-no-global-styles]):focus {
   @extend %input-focus-style;
 }
 
@@ -86,7 +89,7 @@ select {
   }
 }
 
-label {
+label:not([data-no-global-styles]) {
   display: inline-block;
   color: $color-shark;
   font-weight: 700;
@@ -96,7 +99,7 @@ label {
 
 // Prevent IE11 from color placeholders the same as regular text.
 input,
-textarea {
+textarea:not([data-no-global-styles]) {
   &:-ms-input-placeholder {
     color: GrayText !important;
   }
@@ -119,7 +122,7 @@ textarea {
   position: relative;
 
   &--hinted {
-    label {
+    label:not([data-no-global-styles]) {
       width: 91%;
     }
   }
@@ -182,7 +185,7 @@ textarea {
     // is colored white, to support placing form fields on a non-white bg.
     input:not([type='radio']):not([type='checkbox']),
     select,
-    textarea {
+    textarea:not([data-no-global-styles]) {
       background: transparent;
       margin-bottom: 0;
       position: relative;
@@ -198,7 +201,7 @@ textarea {
 // Textarea
 //
 
-textarea {
+textarea:not([data-no-global-styles]) {
   height: 12em;
   padding-top: 18px;
   line-height: $body-line-height;
@@ -238,7 +241,8 @@ textarea {
 // Thickness of the green border when a radio input is checked
 $radio-checked-stroke-size: 6px;
 
-.choice {
+// HACK ALERT! Temporary. This makes the choice class more specific than the label:not([data-no-global-styles]) selector. #ihateglobalcss
+.choice.choice {
   font-weight: 400;
   display: block;
   cursor: pointer;
