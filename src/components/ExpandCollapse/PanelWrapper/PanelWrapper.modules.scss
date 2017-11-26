@@ -1,10 +1,8 @@
 @import '../../../scss/settings/colours';
-@import '../../../scss/settings/typography';
 
 .header {
   width: 100%;
   text-align: left;
-  font-family: $font-telus; /* FIX ME: we shouldn't have to do this because we are already using the Text components */
 }
 
 .headerAlign {
