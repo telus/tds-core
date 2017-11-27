@@ -30,37 +30,25 @@ module.exports = {
   getComponentPathLine(componentPath) {
     let name = path.basename(componentPath, '.jsx')
 
-    // Grid has name-spaced sub-components
-    if (path.dirname(componentPath).includes('Grid')) {
-      name = 'Grid'
+    // Add other namespaced components here.
+    // key is a path to match, value is the name to show in the styleguide for the import statement
+    const namespacedComponents = {
+      Grid: 'Grid',
+      StepTracker: 'Steps',
+      'old-components/ExpandCollapse': 'ExpandCollapse',
+      'components/ExpandCollapse/Panel': 'ExpandCollapse',
+      'Typography/Text': 'Text',
+      'Typography/DisplayHeading': 'DisplayHeading',
+      'Typography/Heading': 'Heading',
     }
 
-    // Steps has name-spaced sub-components
-    if (path.dirname(componentPath).includes('StepTracker')) {
-      name = 'Steps'
-    }
+    const componentDirectory = path.dirname(componentPath)
 
-    // ExpandCollapse has name-spaced sub-components
-    if (path.dirname(componentPath).includes('old-components/ExpandCollapse')) {
-      name = 'ExpandCollapse'
-    }
-    if (path.dirname(componentPath).includes('components/ExpandCollapse/Panel')) {
-      name = 'ExpandCollapse'
-    }
-
-    // Text has name-spaced sub-components
-    if (path.dirname(componentPath).includes('Text')) {
-      name = 'Text'
-    }
-
-    // DisplayHeading has name-spaced sub-components
-    if (path.dirname(componentPath).includes('Typography/DisplayHeading')) {
-      name = 'DisplayHeading'
-    }
-
-    // Heading has name-spaced sub-components
-    if (path.dirname(componentPath).includes('Typography/Heading')) {
-      name = 'Heading'
+    const componentPathTest = Object.keys(namespacedComponents).find(pathTest =>
+      componentDirectory.includes(pathTest)
+    )
+    if (componentPathTest) {
+      name = namespacedComponents[componentPathTest]
     }
 
     return `import { ${name} } from '@telusdigital/tds'`
@@ -238,7 +226,6 @@ module.exports = {
                   path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
                   path.resolve('src/components/Typography/Text/Text.jsx'),
                   path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
-                  // Hiding Text subscripts until we identify a concrete use for them
                   path.resolve('src/components/Typography/Strong/Strong.jsx'),
                   path.resolve('src/components/Typography/Small/Small.jsx'),
                 ]
@@ -252,10 +239,8 @@ module.exports = {
                   path.resolve(
                     'src/components/Typography/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'
                   ),
-                  // Hiding DisplayHeading subscripts until we identify a concrete use for them
                   path.resolve('src/components/Typography/Heading/Heading.jsx'),
                   path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx'),
-                  // Hiding Heading subscripts until we identify a concrete use for them
                 ]
               },
             },
