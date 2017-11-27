@@ -7,16 +7,14 @@
 
 .headerAlign {
   flex: 1;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.headerAlignDesktop {
-  flex: 1;
   align-items: flex-start;
 }
 
 .disabled {
   background-color: $color-athens-grey;
   cursor: default;
+}
+
+.alignSelfFlexEnd {
+  align-self: flex-end;
 }

@@ -4,7 +4,6 @@ import { shallow, mount } from 'enzyme'
 import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
 import Text from '../../Typography/Text/Text'
-import Paragraph from '../../Typography/Paragraph/Paragraph'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
 import ExpandCollapse from '../ExpandCollapse'
@@ -81,9 +80,7 @@ describe('ExpandCollapse', () => {
         <ExpandCollapse>{aPanel({ id: 'panel-1', header: 'Panel title' })}</ExpandCollapse>
       )
 
-      expect(findPanelHeader('panel-1')).toContainReact(
-        <Paragraph size="large">Panel title</Paragraph>
-      )
+      expect(findPanelHeader('panel-1')).toContainReact(<Text size="large">Panel title</Text>)
     })
 
     it('can have additional subtext', () => {
@@ -104,7 +101,7 @@ describe('ExpandCollapse', () => {
       )
 
       expect(findPanelHeader('panel-1')).toContainReact(
-        <Text size="medium">Some tertiary text</Text>
+        <Text size="large">Some tertiary text</Text>
       )
     })
   })

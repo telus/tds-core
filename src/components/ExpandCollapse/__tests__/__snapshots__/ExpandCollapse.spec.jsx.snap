@@ -142,38 +142,39 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                 </Translate>
                               </div>
                               <Responsive
-                                minWidth="md"
+                                maxWidth="md"
                               >
                                 <MediaQuery
-                                  minWidth={768}
+                                  maxWidth={767}
                                   values={Object {}}
                                 >
                                   <Flexbox
-                                    dangerouslyAddClassName="header"
-                                    direction="column"
+                                    dangerouslyAddClassName="headerAlign"
+                                    direction="row"
                                   >
                                     <div
-                                      className="column header"
+                                      className="row headerAlign"
                                     >
-                                      <Paragraph
-                                        align="left"
-                                        bold={false}
-                                        invert={false}
-                                        size="large"
-                                      >
-                                        <p
-                                          className="noSpacing color large largeFont leftAlign"
-                                        >
-                                          Panel title
-                                        </p>
-                                      </Paragraph>
                                       <Flexbox
                                         dangerouslyAddClassName="headerAlign"
-                                        direction="row"
+                                        direction="column"
                                       >
                                         <div
-                                          className="row headerAlign"
-                                        />
+                                          className="column headerAlign"
+                                        >
+                                          <Text
+                                            block={false}
+                                            bold={false}
+                                            invert={false}
+                                            size="large"
+                                          >
+                                            <span
+                                              className="large largeFont color"
+                                            >
+                                              Panel title
+                                            </span>
+                                          </Text>
+                                        </div>
                                       </Flexbox>
                                     </div>
                                   </Flexbox>
@@ -439,38 +440,39 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                 </Translate>
                               </div>
                               <Responsive
-                                minWidth="md"
+                                maxWidth="md"
                               >
                                 <MediaQuery
-                                  minWidth={768}
+                                  maxWidth={767}
                                   values={Object {}}
                                 >
                                   <Flexbox
-                                    dangerouslyAddClassName="header"
-                                    direction="column"
+                                    dangerouslyAddClassName="headerAlign"
+                                    direction="row"
                                   >
                                     <div
-                                      className="column header"
+                                      className="row headerAlign"
                                     >
-                                      <Paragraph
-                                        align="left"
-                                        bold={false}
-                                        invert={false}
-                                        size="large"
-                                      >
-                                        <p
-                                          className="noSpacing color large largeFont leftAlign"
-                                        >
-                                          Panel title
-                                        </p>
-                                      </Paragraph>
                                       <Flexbox
                                         dangerouslyAddClassName="headerAlign"
-                                        direction="row"
+                                        direction="column"
                                       >
                                         <div
-                                          className="row headerAlign"
-                                        />
+                                          className="column headerAlign"
+                                        >
+                                          <Text
+                                            block={false}
+                                            bold={false}
+                                            invert={false}
+                                            size="large"
+                                          >
+                                            <span
+                                              className="large largeFont color"
+                                            >
+                                              Panel title
+                                            </span>
+                                          </Text>
+                                        </div>
                                       </Flexbox>
                                     </div>
                                   </Flexbox>
