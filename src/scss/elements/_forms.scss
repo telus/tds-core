@@ -12,7 +12,7 @@ $form-field-bottom-spacing: 18px;
 
 input:not([type='radio']),
 textarea:not([data-no-global-styles]),
-select {
+select:not([data-no-global-styles]) {
   border: 1px solid $color-shuttle-grey;
   border-radius: $form-field-border-radius;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
@@ -59,28 +59,28 @@ input[type='radio']:focus + span::before {
 }
 
 input:not([type='radio']),
-input:not([type='checkbox'])
-select {
+input:not([type='checkbox']),
+select:not([data-no-global-styles]) {
   &:focus {
     @extend %input-focus-style;
   }
 }
 
 input,
-select {
+select:not([data-no-global-styles]) {
   &:disabled {
     background-color: $color-athens-grey;
     border-color: $color-shuttle-grey;
   }
 }
 
-select,
+select:not([data-no-global-styles]),
 option {
   appearance: none;
   background: none;
 }
 
-select {
+select:not([data-no-global-styles]) {
   height: rem(52px);
 
   // Hide the "drop down selector" pseudo element inserted by IE.

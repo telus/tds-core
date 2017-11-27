@@ -2,29 +2,55 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import Tooltip from '../Tooltip/Tooltip'
+import joinClassNames from '../../utils/joinClassNames'
 
+import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
+import Tooltip from '../Tooltip/Tooltip'
 import FormField from '../FormField/FormField'
 import FeedbackIcon from '../FormField/FeedbackIcon'
 
-import styles from './Textarea.modules.scss'
+import styles from './Select.modules.scss'
+import formFieldStyles from '../FormFields.modules.scss'
 import positionStyles from '../Position.modules.scss'
+import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 
-const Textarea = ({ ...props }) => (
+const Select = ({ options, ...props }) => (
   <FormField {...props}>
-    {(textareaProps, showIcon, feedback) => (
+    {({ className, ...selectProps }, showIcon, feedback) => (
       <div className={positionStyles.relative}>
-        <textarea {...textareaProps} />
+        <select
+          {...selectProps}
+          className={joinClassNames(className, styles.select, formFieldStyles.height)}
+        >
+          {options.map(({ text, value }) => (
+            <option key={value} value={value}>
+              {text}
+            </option>
+          ))}
+        </select>
 
         <div className={styles.feedbackIconPosition}>
           <FeedbackIcon showIcon={showIcon} feedback={feedback} />
+        </div>
+
+        <div className={joinClassNames(iconWrapperStyles.fixLineHeight, styles.caretPosition)}>
+          <DecorativeIcon symbol="caretDown" variant="primary" size={16} />
         </div>
       </div>
     )}
   </FormField>
 )
 
-Textarea.propTypes = {
+Select.propTypes = {
+  /**
+   * The selectable options
+   */
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string,
+      value: PropTypes.string,
+    })
+  ).isRequired,
   /**
    * The label.
    */
@@ -36,7 +62,7 @@ Textarea.propTypes = {
   /**
    * The value.
    */
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
    * A feedback state.
    */
@@ -80,7 +106,7 @@ Textarea.propTypes = {
   onBlur: PropTypes.func,
 }
 
-Textarea.defaultProps = {
+Select.defaultProps = {
   hint: undefined,
   value: '',
   feedback: undefined,
@@ -92,4 +118,4 @@ Textarea.defaultProps = {
   onBlur: undefined,
 }
 
-export default Textarea
+export default Select

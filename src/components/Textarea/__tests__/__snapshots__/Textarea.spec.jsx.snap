@@ -30,10 +30,9 @@ exports[`Textarea renders 1`] = `
       class="default"
       data-no-global-styles="true"
       id="the-textarea"
-      type="text"
     />
     <div
-      class="absolute fixLineHeight iconPosition"
+      class="feedbackIconPosition"
     />
   </div>
 </div>
@@ -69,18 +68,21 @@ exports[`Textarea renders with a feedback state and icon 1`] = `
       class="error"
       data-no-global-styles="true"
       id="the-textarea"
-      type="text"
     />
     <div
-      class="absolute fixLineHeight iconPosition"
+      class="feedbackIconPosition"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
-        <i
-          aria-label="The value of this input field is invalid."
-          class="iconExclamationPointCircle error size16"
-        />
+        <div
+          class="fixLineHeight"
+        >
+          <i
+            aria-label="The value of this input field is invalid."
+            class="iconExclamationPointCircle error size16"
+          />
+        </div>
       </div>
     </div>
   </div>

@@ -2,23 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
+import safeRest from '../../utils/safeRest'
 import generateId from '../../utils/generateId'
-import joinClassNames from '../../utils/joinClassNames'
 
 import Box from '../Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
-import Fade from '../Animation/Fade'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 import Helper from '../Input/Helper/Helper'
-import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 import Tooltip from '../Tooltip/Tooltip'
 
 import styles from './FormField.modules.scss'
 import positionStyles from '../Position.modules.scss'
-import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 
-const getWrapperClassName = (feedback, focus, disabled) => {
+const getClassName = (feedback, focus, disabled) => {
   if (disabled) {
     return styles.disabled
   }
@@ -71,95 +68,113 @@ const renderHelper = (helper, helperId, feedback, value) => {
   )
 }
 
-const renderIcon = feedback => {
-  if (feedback === 'success') {
-    return (
-      <StandaloneIcon
-        symbol="checkmark"
-        variant="primary"
-        size={16}
-        a11yText="The value of this input field is valid."
-      />
-    )
+class FormField extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      value: props.value,
+      focus: false,
+    }
   }
 
-  return (
-    <StandaloneIcon
-      symbol="exclamationPointCircle"
-      variant="error"
-      size={16}
-      a11yText="The value of this input field is invalid."
-    />
-  )
-}
+  componentWillReceiveProps(nextProps) {
+    if (this.state.value !== nextProps.value) {
+      this.setState({
+        value: nextProps.value,
+      })
+    }
+  }
 
-const FormField = ({
-  value,
-  label,
-  hint,
-  focus,
-  feedback,
-  error,
-  helper,
-  tooltip,
-  children,
-  ...rest
-}) => {
-  const fieldId = generateId(rest.id, rest.name, label)
-  const helperId = helper && fieldId.postfix('helper')
-  const errorId = error && fieldId.postfix('error-message')
+  onChange = event => {
+    const { onChange } = this.props
 
-  const wrapperClassName = getWrapperClassName(feedback, focus, rest.disabled)
+    this.setState({
+      value: event.target.value,
+    })
 
-  const showIcon = showFeedbackIcon(feedback, focus)
+    if (onChange) {
+      onChange(event)
+    }
+  }
 
-  const ariaInvalid = feedback === 'error'
-  const ariaDescribedBy = errorId || helperId || undefined
+  onFocus = event => {
+    const { onFocus } = this.props
 
-  return (
-    <Box between={2}>
-      <Flexbox
-        direction="row"
-        justifyContent="spaceBetween"
-        dangerouslyAddClassName={positionStyles.relative}
-      >
-        {renderLabel(label, hint, fieldId)}
+    this.setState({ focus: true })
 
-        {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
-      </Flexbox>
+    if (onFocus) {
+      onFocus(event)
+    }
+  }
 
-      {helper && renderHelper(helper, helperId, feedback, value)}
+  onBlur = event => {
+    const { onBlur } = this.props
 
-      {error && renderError(error, errorId)}
+    this.setState({ focus: false })
 
-      <div className={positionStyles.relative}>
-        {children(fieldId.identity(), ariaInvalid, ariaDescribedBy, wrapperClassName)}
+    if (onBlur) {
+      onBlur(event)
+    }
+  }
 
-        <div
-          className={joinClassNames(
-            positionStyles.absolute,
-            iconWrapperStyles.fixLineHeight,
-            styles.iconPosition
-          )}
+  render() {
+    const { label, hint, feedback, error, helper, tooltip, children, ...rest } = this.props
+
+    const fieldId = generateId(rest.id, rest.name, label)
+    const helperId = helper && fieldId.postfix('helper')
+    const errorId = error && fieldId.postfix('error-message')
+
+    const showIcon = showFeedbackIcon(feedback, this.state.focus)
+
+    return (
+      <Box between={2}>
+        <Flexbox
+          direction="row"
+          justifyContent="spaceBetween"
+          dangerouslyAddClassName={positionStyles.relative}
         >
-          <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
-            {() => renderIcon(feedback)}
-          </Fade>
-        </div>
-      </div>
-    </Box>
-  )
+          {renderLabel(label, hint, fieldId)}
+
+          {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
+        </Flexbox>
+
+        {helper && renderHelper(helper, helperId, feedback, this.state.value)}
+
+        {error && renderError(error, errorId)}
+
+        {children(
+          {
+            ...safeRest(rest),
+            id: fieldId.identity(),
+            className: getClassName(feedback, this.state.focus, rest.disabled),
+            value: this.state.value,
+            onChange: this.onChange,
+            onFocus: this.onFocus,
+            onBlur: this.onBlur,
+            'aria-invalid': feedback === 'error',
+            'aria-describedby': errorId || helperId || undefined,
+            'data-no-global-styles': true, // TODO: Remove me when removing the global form styles
+          },
+          showIcon,
+          feedback
+        )}
+      </Box>
+    )
+  }
 }
 
 FormField.propTypes = {
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   label: PropTypes.string.isRequired,
   hint: PropTypes.string,
-  focus: PropTypes.bool.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   feedback: PropTypes.oneOf(['success', 'error']),
   error: PropTypes.string,
   helper: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   tooltip: childrenOfType(Tooltip),
+  onChange: PropTypes.func,
+  onFocus: PropTypes.func,
+  onBlur: PropTypes.func,
   children: PropTypes.func.isRequired,
 }
 
@@ -170,6 +185,8 @@ FormField.defaultProps = {
   helper: undefined,
   tooltip: undefined,
   onChange: undefined,
+  onFocus: undefined,
+  onBlur: undefined,
 }
 
 export default FormField

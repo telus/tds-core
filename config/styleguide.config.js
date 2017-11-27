@@ -289,6 +289,7 @@ module.exports = {
               path.resolve('src/components/Button/Button.jsx'),
               path.resolve('src/components/Input/Input.jsx'),
               toggleByEnv('Textarea', path.resolve('src/components/Textarea/Textarea.jsx')),
+              toggleByEnv('Select', path.resolve('src/components/Select/Select.jsx')),
               path.resolve('src/components/Tooltip/Tooltip.jsx'),
               path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx'),
             ])

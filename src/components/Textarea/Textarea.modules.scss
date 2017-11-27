@@ -1,0 +1,6 @@
+.feedbackIconPosition {
+  composes: absolute from '../Position.modules.scss';
+
+  top: 0.5rem;
+  right: 0.5rem;
+}

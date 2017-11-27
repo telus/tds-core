@@ -1,0 +1,21 @@
+.select {
+  // Hide the arrows
+  appearance: none;
+
+  // Hide the arrows for IE
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.feedbackIconPosition {
+  composes: absolute centerVertically from '../Position.modules.scss';
+
+  right: 2rem;
+}
+
+.caretPosition {
+  composes: absolute centerVertically from '../Position.modules.scss';
+
+  right: 0;
+}

@@ -16,7 +16,7 @@
 
   composes: noMargin from '../Spacing.modules.scss';
   // This vertical padding fixes an IE11 bug that was causing the input value to jump slightly and get cut off.
-  composes: verticalPadding-3 horizontalPadding-3 from '../Box/Box.modules.scss';
+  composes: verticalPadding-2 horizontalPadding-3 from '../Box/Box.modules.scss';
 
   composes: thin rounded from '../Borders.modules.scss';
 

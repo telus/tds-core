@@ -5,3 +5,8 @@
 .absolute {
   position: absolute;
 }
+
+.centerVertically {
+  top: 50%;
+  transform: translateY(-50%);
+}
