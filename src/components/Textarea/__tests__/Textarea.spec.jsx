@@ -151,7 +151,6 @@ describe('Textarea', () => {
       const { focus } = doMount({ onFocus: onFocusMock })
       focus(event)
 
-      // TODO: Need to do jest.matches or something to match only part of the event
       expect(onFocusMock).toHaveBeenCalledWith(expect.objectContaining(event))
     })
 
