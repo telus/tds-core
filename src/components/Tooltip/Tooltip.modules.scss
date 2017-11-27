@@ -59,7 +59,7 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
 .bubbleXsmall {
   width: 100%;
 
-  .right {
+  &.right {
     @include left-bubble;
   }
 }
@@ -67,7 +67,7 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
 .bubbleSmall {
   width: 50%;
 
-  .right {
+  &.right {
     @include left-bubble;
   }
 }
@@ -75,7 +75,7 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
 .bubbleDesktop {
   width: 25%;
 
-  .right {
+  &.right {
     left: calc(100% - #{$bubble-trigger-size} - #{$bubble-offset});
 
     &::before {

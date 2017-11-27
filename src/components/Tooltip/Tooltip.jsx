@@ -96,31 +96,6 @@ class Tooltip extends React.Component {
     )
   }
 
-  renderResponsiveBubble(id, direction, open, content) {
-    return (
-      <div>
-        <Responsive maxWidth="sm">
-          {matches => {
-            const size = 'bubbleXsmall'
-            return matches && this.renderBubble(id, direction, open, content, size)
-          }}
-        </Responsive>
-        <Responsive minWidth="sm" maxWidth="md">
-          {matches => {
-            const size = 'bubbleSmall'
-            return matches && this.renderBubble(id, direction, open, content, size)
-          }}
-        </Responsive>
-        <Responsive minWidth="md">
-          {matches => {
-            const size = 'bubbleDesktop'
-            return matches && this.renderBubble(id, direction, open, content, size)
-          }}
-        </Responsive>
-      </div>
-    )
-  }
-
   render() {
     const { direction, connectedFieldLabel, children, ...rest } = this.props
 
@@ -128,7 +103,15 @@ class Tooltip extends React.Component {
 
     return (
       <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>
-        {this.renderResponsiveBubble(bubbleId, direction, this.state.open, children)}
+        <Responsive maxWidth="sm">
+          {this.renderBubble(bubbleId, direction, this.state.open, children, 'bubbleXsmall')}
+        </Responsive>
+        <Responsive minWidth="sm" maxWidth="md">
+          {this.renderBubble(bubbleId, direction, this.state.open, children, 'bubbleSmall')}
+        </Responsive>
+        <Responsive minWidth="md">
+          {this.renderBubble(bubbleId, direction, this.state.open, children, 'bubbleDesktop')}
+        </Responsive>
 
         <StandaloneIcon
           symbol="questionMarkCircle"
