@@ -1,5 +1,6 @@
 import './scss/global.scss'
 
+export { default as Accordion } from './components/ExpandCollapse/Accordion/Accordion'
 export { default as Box } from './components/Box/Box'
 export { default as Button } from './components/Button/Button'
 export { default as ButtonLink } from './components/Link/ButtonLink/ButtonLink'
@@ -8,7 +9,7 @@ export { default as ChevronLink } from './components/Link/ChevronLink/ChevronLin
 export { default as DecorativeIcon } from './components/Icons/DecorativeIcon/DecorativeIcon'
 export { default as DimpleDivider } from './components/Dividers/DimpleDivider/DimpleDivider'
 export { default as DisplayHeading } from './components/Typography/DisplayHeading/DisplayHeading'
-export { default as ExpandCollapse } from './old-components/ExpandCollapse/ExpandCollapse'
+export { default as ExpandCollapse } from './components/ExpandCollapse/ExpandCollapse'
 export { default as Grid } from './old-components/Grid/Grid'
 export { default as HairlineDivider } from './components/Dividers/HairlineDivider/HairlineDivider'
 export { default as Heading } from './components/Typography/Heading/Heading'

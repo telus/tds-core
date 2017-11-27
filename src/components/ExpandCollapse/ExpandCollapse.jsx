@@ -12,6 +12,8 @@ import Panel from './Panel/Panel'
 
 /**
  * A connected series of expandable content areas.
+ *
+ * <span class="docs--badge__updated">updated</span> <span class="docs--badge__version">v0.30.0</span>
  */
 class ExpandCollapse extends React.Component {
   constructor(props) {

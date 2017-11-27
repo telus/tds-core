@@ -4,7 +4,7 @@ const { version } = require('../package.json')
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = ['Responsive', 'ExpandCollapse', 'Image']
+const enabledInStaging = ['Responsive', 'Image']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
@@ -35,7 +35,6 @@ module.exports = {
     const namespacedComponents = {
       Grid: 'Grid',
       StepTracker: 'Steps',
-      'old-components/ExpandCollapse': 'ExpandCollapse',
       'components/ExpandCollapse/Panel': 'ExpandCollapse',
       'Typography/Text': 'Text',
       'Typography/DisplayHeading': 'DisplayHeading',
@@ -176,23 +175,11 @@ module.exports = {
             {
               name: 'Expand collapse',
               components() {
-                return compact([
-                  toggleByEnv(
-                    'ExpandCollapse',
-                    path.resolve('src/components/ExpandCollapse/ExpandCollapse.jsx'),
-                    path.resolve('src/old-components/ExpandCollapse/Group.jsx')
-                  ),
-                  toggleByEnv(
-                    'ExpandCollapse',
-                    path.resolve('src/components/ExpandCollapse/Accordion/Accordion.jsx'),
-                    undefined
-                  ),
-                  toggleByEnv(
-                    'ExpandCollapse',
-                    path.resolve('src/components/ExpandCollapse/Panel/Panel.jsx'),
-                    path.resolve('src/old-components/ExpandCollapse/Panel.jsx')
-                  ),
-                ])
+                return [
+                  path.resolve('src/components/ExpandCollapse/ExpandCollapse.jsx'),
+                  path.resolve('src/components/ExpandCollapse/Accordion/Accordion.jsx'),
+                  path.resolve('src/components/ExpandCollapse/Panel/Panel.jsx'),
+                ]
               },
             },
             {

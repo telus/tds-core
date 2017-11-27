@@ -7,6 +7,8 @@ import Panel from '../Panel/Panel'
 
 /**
  * A specialized `ExpandCollapse` in which only one panel can be open at a time.
+ *
+ * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.30.0</span>
  */
 class Accordion extends React.Component {
   constructor(props) {
