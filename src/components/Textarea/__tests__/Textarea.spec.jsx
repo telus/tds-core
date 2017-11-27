@@ -111,13 +111,15 @@ describe('Textarea', () => {
       expect(findTextareaElement()).toHaveValue('new value')
     })
 
-    it.skip('will notify when its value changes', () => {
+    it('will notify when its value changes', () => {
       const onChangeMock = jest.fn()
 
       const { changeValueTo, findTextareaElement } = doMount({ onChange: onChangeMock })
       changeValueTo('new value')
 
-      expect(onChangeMock).toHaveBeenCalledWith({ target: { value: 'new value' } })
+      expect(onChangeMock).toHaveBeenCalledWith(
+        expect.objectContaining({ target: { value: 'new value' } })
+      )
       expect(findTextareaElement()).toHaveValue('new value')
     })
 
@@ -142,7 +144,7 @@ describe('Textarea', () => {
       expect(findTextareaElement()).not.toHaveClassName('focus')
     })
 
-    it.skip('will notify when focus is gained', () => {
+    it('will notify when focus is gained', () => {
       const onFocusMock = jest.fn()
       const event = { target: { value: 'the value' } }
 
@@ -150,17 +152,17 @@ describe('Textarea', () => {
       focus(event)
 
       // TODO: Need to do jest.matches or something to match only part of the event
-      expect(onFocusMock).toHaveBeenCalledWith(event)
+      expect(onFocusMock).toHaveBeenCalledWith(expect.objectContaining(event))
     })
 
-    it.skip('will notify when focus is lost', () => {
+    it('will notify when focus is lost', () => {
       const onBlurMock = jest.fn()
       const event = { target: { value: 'the value' } }
 
       const { blur } = doMount({ onBlur: onBlurMock })
       blur(event)
 
-      expect(onBlurMock).toHaveBeenCalledWith(event)
+      expect(onBlurMock).toHaveBeenCalledWith(expect.objectContaining(event))
     })
   })
 
