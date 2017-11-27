@@ -1,3 +1,60 @@
+#### 0.30.0 (2017-11-27)
+
+##### Chores
+
+* **image:** Enable Image component in staging ([7a1aa6b4](https://github.com/telusdigital/tds/commit/7a1aa6b47d772386f0ef797cb31534eefaec6a2a))
+
+##### Documentation Changes
+
+* **searchComponent:** Standardize search box with TDS input ([c49cd742](https://github.com/telusdigital/tds/commit/c49cd7423474e8fa1656cee7f9c1c59b68959520))
+* **expand-collapse:** enable in staging ([636e0a5c](https://github.com/telusdigital/tds/commit/636e0a5cf76aa36f519a3ec32008dc5d880cc48e))
+* **responsive:**
+  * add child function usage notes ([e569fce9](https://github.com/telusdigital/tds/commit/e569fce91d783fe09727b1e54656c4eb0e44229d))
+  * add prop and usage descriptions ([494edaba](https://github.com/telusdigital/tds/commit/494edaba50698d97189a53ec4056dbfa4fa33dcc))
+* **icons:** fixed accessible green typo ([f92c9204](https://github.com/telusdigital/tds/commit/f92c9204d0533fd7717eab888ea84a4c87d503ce))
+
+##### New Features
+
+* **0.30.0:** add expandcollapse and accordion to the production bundle and docs ([7b05673c](https://github.com/telusdigital/tds/commit/7b05673cc11c20f5d7e4212f497786040d748088))
+* **expand-collapse:**
+  * Use flex alignment on tertiary text instead of different layout for responsive ([078da3a6](https://github.com/telusdigital/tds/commit/078da3a66def71c4b78d6ca7ce493d875c3be17c))
+  * use font CSS module on Clickable ([e86d3051](https://github.com/telusdigital/tds/commit/e86d3051bb06ade5f44fe8eea062455b9b85a70b))
+  * Indent header text properly when panel is disabled ([9bae4e1d](https://github.com/telusdigital/tds/commit/9bae4e1d44d34ec0408214b1f034f686fd0149f5))
+  * Adjust spacing again based on design specs ([e47ccea2](https://github.com/telusdigital/tds/commit/e47ccea2fb135edc8d9014de1a6e51616aaaeb07))
+  * Make location of the tertiary-text  in Panel responsive ([24dc41e6](https://github.com/telusdigital/tds/commit/24dc41e663ecdebbbfa6901fb5384f35741c2b07))
+* **select:** Initial commit of Select ([eeb5e69e](https://github.com/telusdigital/tds/commit/eeb5e69e76fe93eb935e6bc05a37baa2dbee5aa2))
+* **textarea:** Initial commit of textarea component ([2a5c5338](https://github.com/telusdigital/tds/commit/2a5c5338ceead0714dc77799a32ecf15e91b79f5)) 
+* **responsive:**
+  * New responsive box wrapper / unit test refactoring ([231ff919](https://github.com/telusdigital/tds/commit/231ff9197093c2458999a84eabeae5e8055196c1))
+  * Apply new responsive skill to box component ([18924b1e](https://github.com/telusdigital/tds/commit/18924b1e1a5dcec4027fa023dda76979f4482379))
+  * Allow children to be either a node or a function ([77bd4649](https://github.com/telusdigital/tds/commit/77bd4649b43fbe54478d0a3a946908484b59361d))
+  * simplify props, remove responsive test ([a078df82](https://github.com/telusdigital/tds/commit/a078df82c5d0782ffb72290b07a23a7a53c6249e))
+
+##### Bug Fixes
+
+* **expand-collapse:** Force TELUS-Web font family in PanelWrapper.modules.scss ([518ed5f3](https://github.com/telusdigital/tds/commit/518ed5f3ed09b01e3029c2d0c8c86d5edf219823))
+* **small:** Change Small/Text size="small" components line-height to 20px ([fd8d56e0](https://github.com/telusdigital/tds/commit/fd8d56e05f6df520388fb6f6262343948e8d2b23))
+
+##### Refactors
+
+* **styleguide-config:** Refactor how we set up namespaced components import statements ([4056345b](https://github.com/telusdigital/tds/commit/4056345b2bf0050aacde5c289034a849c1248991))
+* **box:** Remove the .false class from Box.jsx when not minWidth="md" is false ([20ce8d74](https://github.com/telusdigital/tds/commit/20ce8d747dd40587971679451fbf79e134151e08))
+* **tooltip:**
+  * Use Responsive component to replace css media-queries ([1706343c](https://github.com/telusdigital/tds/commit/1706343c908387e978ce61bc165f41ecf75a6b9f))
+  * Use Responsive component to replace css media-queries ([41d30c02](https://github.com/telusdigital/tds/commit/41d30c02a18c749619c21a72e752391aa30bf41a))
+* **button:** Update BaseButton to use the Responsive component ([b76b13f0](https://github.com/telusdigital/tds/commit/b76b13f0b680fae172c584f2029966d7bb271dff))
+* **sub:** Remove unused Heading.Sub, DisplayHeading.Sub and Text.Sub components ([ae8a612e](https://github.com/telusdigital/tds/commit/ae8a612e5785f71ac22e85744c80a785954b98c7))
+* **heading:** re-org sup and sub classes ([8f7c8f56](https://github.com/telusdigital/tds/commit/8f7c8f56553922b3022fdcfe027bb641c510b1e6))
+* **display-heading:** Cleaned up css now that Responsive component is used ([35e8d722](https://github.com/telusdigital/tds/commit/35e8d7222dce7a65149cf0f239d6e9a8af04ccce))
+* **responsive:**
+  * Use Responsive component in Heading component to replace media queries respons ([d7508a98](https://github.com/telusdigital/tds/commit/d7508a98653f0ca66e2a25d203d03966f3d55e5c))
+  * Use Responsive component instead of css media queries to handle responsiveness ([b2842380](https://github.com/telusdigital/tds/commit/b284238077d815f8529f648b4c7f53824d6b309f))
+
+##### Tests
+
+* **select:** Add tests for select. ([4b40d557](https://github.com/telusdigital/tds/commit/4b40d557248ec4174e7c04e2b5fba8ce8b16d91a))
+* **textarea:** Un-skip tests using expect.objectContaining for matching partial events ([727600a5](https://github.com/telusdigital/tds/commit/727600a5e53cf83afee854ab5498ef3a57951163))
+
 #### 0.29.0 (2017-11-15)
 
 ##### Chores
