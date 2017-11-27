@@ -16,6 +16,7 @@ const getColorClassName = (level, invert) => {
   if (invert) {
     return styles.inverted
   }
+
   return level === 'h1' || level === 'h2' ? styles.secondary : styles.default
 }
 
@@ -26,9 +27,7 @@ const Heading = ({ level, invert, children, ...rest }) => {
   if (level === 'h1' || level === 'h2') {
     return (
       <Responsive minWidth="md">
-        {matches => {
-          const desktop = !!matches
-
+        {desktop => {
           return React.createElement(
             level,
             {
