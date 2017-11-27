@@ -21,10 +21,10 @@
   * use font CSS module on Clickable ([e86d3051](https://github.com/telusdigital/tds/commit/e86d3051bb06ade5f44fe8eea062455b9b85a70b))
   * Indent header text properly when panel is disabled ([9bae4e1d](https://github.com/telusdigital/tds/commit/9bae4e1d44d34ec0408214b1f034f686fd0149f5))
   * Adjust spacing again based on design specs ([e47ccea2](https://github.com/telusdigital/tds/commit/e47ccea2fb135edc8d9014de1a6e51616aaaeb07))
-  * Make location of the tertiary-text  in Panel responsive ([24dc41e6](https://github.com/telusdigital/tds/commit/24dc41e663ecdebbbfa6901fb5384f35741c2b07))
 * **select:** Initial commit of Select ([eeb5e69e](https://github.com/telusdigital/tds/commit/eeb5e69e76fe93eb935e6bc05a37baa2dbee5aa2))
-* **textarea:** Initial commit of textarea component ([2a5c5338](https://github.com/telusdigital/tds/commit/2a5c5338ceead0714dc77799a32ecf15e91b79f5)) 
-* **responsive:**
+* **textarea:** Initial commit of textarea component ([2a5c5338](https://github.com/telusdigital/tds/commit/2a5c5338ceead0714dc77799a32ecf15e91b79f5))
+* **expand-collapse:** Make location of the tertiary-text  in Panel responsive ([24dc41e6](https://github.com/telusdigital/tds/commit/24dc41e663ecdebbbfa6901fb5384f35741c2b07))
+* **responsive**
   * New responsive box wrapper / unit test refactoring ([231ff919](https://github.com/telusdigital/tds/commit/231ff9197093c2458999a84eabeae5e8055196c1))
   * Apply new responsive skill to box component ([18924b1e](https://github.com/telusdigital/tds/commit/18924b1e1a5dcec4027fa023dda76979f4482379))
   * Allow children to be either a node or a function ([77bd4649](https://github.com/telusdigital/tds/commit/77bd4649b43fbe54478d0a3a946908484b59361d))
@@ -32,6 +32,9 @@
 
 ##### Bug Fixes
 
+* **heading:** Fix responsive heading classes ([d4962ed7](https://github.com/telusdigital/tds/commit/d4962ed76990bfdd0c224cc9dd9d3691ac559e26))
+* **box:** Fix responsive classes ([07feb4a0](https://github.com/telusdigital/tds/commit/07feb4a005ca47d26614f68f4001a62ab5ea091f))
+* **tooltip:** Change class hierarchy of responsive classes to properly to directionality ([01ee4d28](https://github.com/telusdigital/tds/commit/01ee4d2821d5eeff180383d15c418cf9c60352ef))
 * **expand-collapse:** Force TELUS-Web font family in PanelWrapper.modules.scss ([518ed5f3](https://github.com/telusdigital/tds/commit/518ed5f3ed09b01e3029c2d0c8c86d5edf219823))
 * **small:** Change Small/Text size="small" components line-height to 20px ([fd8d56e0](https://github.com/telusdigital/tds/commit/fd8d56e05f6df520388fb6f6262343948e8d2b23))
 
