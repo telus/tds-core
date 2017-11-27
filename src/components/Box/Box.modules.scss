@@ -35,36 +35,34 @@ $desktop: (
   flex-direction: column;
 }
 
-@mixin spacingClasses ($level, $value) {
-  .verticalPadding-#{$level} {
+@mixin spacingClasses ($level, $value, $viewportSize) {
+  .verticalPadding#{$viewportSize}-#{$level} {
     padding-top: $value;
     padding-bottom: $value;
   }
 
-  .horizontalPadding-#{$level} {
+  .horizontalPadding#{$viewportSize}-#{$level} {
     padding-left: $value;
     padding-right: $value;
   }
 
-  .bottomMargin-#{$level} {
+  .bottomMargin#{$viewportSize}-#{$level} {
     margin-bottom: $value;
   }
 
-  .betweenBottomMargin-#{$level} > *:not(:last-child) {
+  .betweenBottomMargin#{$viewportSize}-#{$level} > *:not(:last-child) {
     margin-bottom: $value;
   }
 
-  .betweenRightMargin-#{$level} > *:not(:last-child) {
+  .betweenRightMargin#{$viewportSize}-#{$level} > *:not(:last-child) {
     margin-right: $value;
   }
 }
 
 @each $level, $value in $mobile {
-  @include spacingClasses($level, $value);
+  @include spacingClasses($level, $value, '');
 }
 
-.desktop {
-  @each $level, $value in $desktop {
-    @include spacingClasses($level, $value);
-  }
+@each $level, $value in $desktop {
+  @include spacingClasses($level, $value, 'Desktop');
 }

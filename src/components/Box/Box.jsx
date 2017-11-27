@@ -8,27 +8,25 @@ import capitalize from '../../utils/capitalize'
 
 import styles from './Box.modules.scss'
 
-const getClassName = (spacing, location, scale) => {
+const viewportSuffix = desktop => (desktop ? 'Desktop' : '')
+
+const getClassName = (spacing, location, scale, desktop) => {
   if (!scale) {
     return undefined
   }
-  return styles[`${location}${capitalize(spacing)}-${scale}`]
+  return styles[`${location}${capitalize(spacing)}${viewportSuffix(desktop)}-${scale}`]
 }
 
-const getBetweenClasses = (betweenSize, inline) => {
+const getBetweenClasses = (betweenSize, inline, desktop) => {
   if (!betweenSize) {
     return undefined
   }
 
   const direction = inline ? 'Right' : 'Bottom'
   return joinClassNames(
-    styles[`between${direction}Margin-${betweenSize}`],
+    styles[`between${direction}Margin${viewportSuffix(desktop)}-${betweenSize}`],
     inline ? styles.betweenRight : styles.betweenBottom
   )
-}
-
-const getDesktopClass = isDesktop => {
-  return isDesktop ? styles.desktop : undefined
 }
 
 /**
@@ -53,15 +51,15 @@ const Box = ({
 
   return (
     <Responsive minWidth="md">
-      {isDesktop => {
+      {desktop => {
         const classes = joinClassNames(
-          getDesktopClass(isDesktop),
-          getClassName('padding', 'horizontal', xSize),
-          getClassName('padding', 'vertical', ySize),
-          getClassName('margin', 'bottom', below),
-          getBetweenClasses(between, inline),
+          getClassName('padding', 'horizontal', xSize, desktop),
+          getClassName('padding', 'vertical', ySize, desktop),
+          getClassName('margin', 'bottom', below, desktop),
+          getBetweenClasses(between, inline, desktop),
           dangerouslyAddClassName
         )
+
         return React.createElement(tag, { ...safeRest(rest), className: classes }, children)
       }}
     </Responsive>
