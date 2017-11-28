@@ -9,48 +9,59 @@ import HeadingSup from './HeadingSup/HeadingSup'
 
 import styles from './Heading.modules.scss'
 
-const getDesktopClassName = (level, desktop) =>
-  desktop ? styles[`${level}Desktop`] : styles[level]
+const BaseHeading = ({ level, color, size, children, ...rest }) =>
+  React.createElement(
+    level,
+    {
+      ...safeRest(rest),
+      className: joinClassNames(size, color),
+    },
+    children
+  )
 
-const getColorClassName = (level, invert) => {
-  if (invert) {
-    return styles.inverted
-  }
-
-  return level === 'h1' || level === 'h2' ? styles.secondary : styles.default
+BaseHeading.propTypes = {
+  level: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']).isRequired,
+  color: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 /**
  * Page headings. Renders an HTML `<h1-h4>` element.
  */
 const Heading = ({ level, invert, children, ...rest }) => {
+  const baseHeadingProps = {
+    ...rest,
+    level,
+  }
+
   if (level === 'h1' || level === 'h2') {
+    const color = invert ? styles.inverted : styles.secondary
+
     return (
       <Responsive minWidth="md">
-        {desktop => {
-          return React.createElement(
-            level,
-            {
-              ...safeRest(rest),
-              className: joinClassNames(
-                getDesktopClassName(level, desktop),
-                getColorClassName(level, invert)
-              ),
-            },
-            children
-          )
-        }}
+        {desktop =>
+          desktop ? (
+            <BaseHeading {...baseHeadingProps} color={color} size={styles[`${level}Desktop`]}>
+              {children}
+            </BaseHeading>
+          ) : (
+            <BaseHeading {...baseHeadingProps} color={color} size={styles[level]}>
+              {children}
+            </BaseHeading>
+          )}
       </Responsive>
     )
   }
 
-  return React.createElement(
-    level,
-    {
-      ...safeRest(rest),
-      className: joinClassNames(styles[level], getColorClassName(level, invert)),
-    },
-    children
+  return (
+    <BaseHeading
+      {...baseHeadingProps}
+      color={invert ? styles.inverted : styles.default}
+      size={styles[level]}
+    >
+      {children}
+    </BaseHeading>
   )
 }
 
