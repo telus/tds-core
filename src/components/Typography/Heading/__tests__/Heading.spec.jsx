@@ -1,5 +1,7 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount } from 'enzyme'
+
+import mockMatchMedia from '../../../../__mocks__/matchMedia'
 
 import Heading from '../Heading'
 
@@ -8,79 +10,90 @@ describe('Heading', () => {
     level: 'h1',
   }
 
-  const doShallow = (overrides = {}) =>
-    shallow(
+  const doMount = (overrides = {}) => {
+    const heading = mount(
       <Heading {...defaultProps} {...overrides}>
-        Go home
+        The content
       </Heading>
     )
 
-  const doShallowResponsive = (overrides = {}) =>
-    shallow(
-      <Heading {...defaultProps} {...overrides}>
-        Go home
-      </Heading>
-    )
-      .dive()
-      .dive()
+    return heading.find(heading.props().level)
+  }
+
+  beforeEach(() => {
+    mockMatchMedia()
+  })
 
   it('renders', () => {
-    const responsiveHeading = doShallowResponsive()
+    const heading = doMount()
 
-    expect(responsiveHeading).toMatchSnapshot()
+    expect(heading).toMatchSnapshot()
   })
 
   it('renders text', () => {
-    const responsiveHeading = doShallowResponsive()
+    const heading = doMount()
 
-    expect(responsiveHeading).toHaveText('Go home')
+    expect(heading).toHaveText('The content')
   })
 
-  it('renders a heading in four levels', () => {
-    let responsiveHeading = doShallowResponsive({ level: 'h1' })
-    expect(responsiveHeading).toHaveTagName('h1')
+  it('renders a heading in the specified level', () => {
+    const heading = doMount({ level: 'h3' })
 
-    responsiveHeading = doShallowResponsive({ level: 'h2' })
-    expect(responsiveHeading).toHaveTagName('h2')
-
-    let heading = doShallow({ level: 'h3' })
     expect(heading).toHaveTagName('h3')
-
-    heading = doShallow({ level: 'h4' })
-    expect(heading).toHaveTagName('h4')
   })
 
-  it('has appropriate colour', () => {
-    let responsiveHeading = doShallowResponsive({ invert: true })
-    expect(responsiveHeading).toHaveClassName('inverted')
+  describe('colour', () => {
+    it('can be inverted', () => {
+      const heading = doMount({ invert: true })
 
-    responsiveHeading = doShallowResponsive({ level: 'h1' })
-    expect(responsiveHeading).toHaveClassName('secondary')
+      expect(heading).toHaveClassName('inverted')
+    })
 
-    responsiveHeading = doShallowResponsive({ level: 'h2' })
-    expect(responsiveHeading).toHaveClassName('secondary')
+    it('is secondary for h1 and h2', () => {
+      let heading = doMount({ level: 'h1' })
+      expect(heading).toHaveClassName('secondary')
 
-    let heading = doShallow({ level: 'h3' })
-    expect(heading).toHaveClassName('default')
+      heading = doMount({ level: 'h2' })
+      expect(heading).toHaveClassName('secondary')
+    })
 
-    heading = doShallow({ level: 'h4' })
-    expect(heading).toHaveClassName('default')
+    it('is default for h3 and h4', () => {
+      let heading = doMount({ level: 'h3' })
+      expect(heading).toHaveClassName('default')
+
+      heading = doMount({ level: 'h4' })
+      expect(heading).toHaveClassName('default')
+    })
+  })
+
+  describe('large headings (h1 and h2)', () => {
+    it('renders differently above the medium breakpoint', () => {
+      mockMatchMedia(768)
+
+      let heading = doMount()
+      expect(heading).toHaveClassName('h1Desktop')
+
+      mockMatchMedia(767)
+
+      heading = doMount()
+      expect(heading).toHaveClassName('h1')
+    })
   })
 
   it('passes additional attributes to heading element', () => {
-    const responsiveHeading = doShallowResponsive({ id: 'the-heading', tabindex: 1 })
+    const heading = doMount({ id: 'the-heading', tabIndex: 1 })
 
-    expect(responsiveHeading).toHaveProp('id', 'the-heading')
-    expect(responsiveHeading).toHaveProp('tabindex', 1)
+    expect(heading).toHaveProp('id', 'the-heading')
+    expect(heading).toHaveProp('tabIndex', 1)
   })
 
   it('does not allow custom CSS', () => {
-    const responsiveHeading = doShallowResponsive({
+    const heading = doMount({
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })
 
-    expect(responsiveHeading).not.toHaveProp('className', 'my-custom-class')
-    expect(responsiveHeading).not.toHaveProp('style')
+    expect(heading).not.toHaveProp('className', 'my-custom-class')
+    expect(heading).not.toHaveProp('style')
   })
 })

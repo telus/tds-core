@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Responsive with react-media renders 1`] = `
+<Media
+  defaultMatches={true}
+  query={
+    Object {
+      "minWidth": 576,
+    }
+  }
+>
+  Some content
+</Media>
+`;

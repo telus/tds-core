@@ -2,8 +2,8 @@
 
 exports[`Heading renders 1`] = `
 <h1
-  className="h1 secondary"
+  className="h1Desktop secondary"
 >
-  Go home
+  The content
 </h1>
 `;
