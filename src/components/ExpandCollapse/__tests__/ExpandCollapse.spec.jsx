@@ -8,6 +8,8 @@ import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
 import ExpandCollapse from '../ExpandCollapse'
 
+import mockMatchMedia from '../../../__mocks__/matchMedia'
+
 describe('ExpandCollapse', () => {
   const doShallow = (props = {}) =>
     shallow(
@@ -49,6 +51,10 @@ describe('ExpandCollapse', () => {
       {children}
     </ExpandCollapse.Panel>
   )
+
+  beforeEach(() => {
+    mockMatchMedia(768)
+  })
 
   it('renders a closed panel', () => {
     const { expandCollapse } = doMount(
@@ -93,7 +99,7 @@ describe('ExpandCollapse', () => {
       expect(findPanelHeader('panel-1')).toContainReact(<Text size="small">Some subtext</Text>)
     })
 
-    it.skip('can have additional tertiary text', () => {
+    it('can have additional tertiary text', () => {
       const { findPanelHeader } = doMount(
         <ExpandCollapse>
           {aPanel({ id: 'panel-1', tertiaryText: 'Some tertiary text' })}
@@ -271,6 +277,26 @@ describe('ExpandCollapse', () => {
       )
 
       expect(expandCollapse.find(HairlineDivider).length).toBe(2)
+    })
+  })
+
+  describe('responsiveness on small viewports', () => {
+    beforeEach(() => {
+      mockMatchMedia(767)
+    })
+
+    it('aligns the tertiary text with the subtext and drops the font size to medium', () => {
+      const { findPanelHeader } = doMount(
+        <ExpandCollapse>
+          {aPanel({ id: 'panel-1', tertiaryText: 'Some tertiary text' })}
+        </ExpandCollapse>
+      )
+
+      expect(findPanelHeader('panel-1')).toContainReact(
+        <span className="alignSelfFlexEnd">
+          <Text size="medium">Some tertiary text</Text>
+        </span>
+      )
     })
   })
 

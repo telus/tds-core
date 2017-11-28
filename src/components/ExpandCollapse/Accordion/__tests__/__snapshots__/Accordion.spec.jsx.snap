@@ -150,10 +150,15 @@ exports[`Accordion renders a closed accordion 1`] = `
                               </div>
                               <Responsive
                                 maxWidth="md"
+                                query={Object {}}
                               >
-                                <MediaQuery
-                                  maxWidth={767}
-                                  values={Object {}}
+                                <Media
+                                  defaultMatches={true}
+                                  query={
+                                    Object {
+                                      "maxWidth": 767,
+                                    }
+                                  }
                                 >
                                   <Flexbox
                                     dangerouslyAddClassName="headerAlign"
@@ -185,7 +190,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                       </Flexbox>
                                     </div>
                                   </Flexbox>
-                                </MediaQuery>
+                                </Media>
                               </Responsive>
                             </div>
                           </Media>
@@ -451,10 +456,15 @@ exports[`Accordion renders an open accordion 1`] = `
                               </div>
                               <Responsive
                                 maxWidth="md"
+                                query={Object {}}
                               >
-                                <MediaQuery
-                                  maxWidth={767}
-                                  values={Object {}}
+                                <Media
+                                  defaultMatches={true}
+                                  query={
+                                    Object {
+                                      "maxWidth": 767,
+                                    }
+                                  }
                                 >
                                   <Flexbox
                                     dangerouslyAddClassName="headerAlign"
@@ -486,7 +496,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                       </Flexbox>
                                     </div>
                                   </Flexbox>
-                                </MediaQuery>
+                                </Media>
                               </Responsive>
                             </div>
                           </Media>

@@ -153,10 +153,15 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                               </div>
                               <Responsive
                                 maxWidth="md"
+                                query={Object {}}
                               >
-                                <MediaQuery
-                                  maxWidth={767}
-                                  values={Object {}}
+                                <Media
+                                  defaultMatches={true}
+                                  query={
+                                    Object {
+                                      "maxWidth": 767,
+                                    }
+                                  }
                                 >
                                   <Flexbox
                                     dangerouslyAddClassName="headerAlign"
@@ -188,7 +193,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                       </Flexbox>
                                     </div>
                                   </Flexbox>
-                                </MediaQuery>
+                                </Media>
                               </Responsive>
                             </div>
                           </Media>
@@ -466,10 +471,15 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                               </div>
                               <Responsive
                                 maxWidth="md"
+                                query={Object {}}
                               >
-                                <MediaQuery
-                                  maxWidth={767}
-                                  values={Object {}}
+                                <Media
+                                  defaultMatches={true}
+                                  query={
+                                    Object {
+                                      "maxWidth": 767,
+                                    }
+                                  }
                                 >
                                   <Flexbox
                                     dangerouslyAddClassName="headerAlign"
@@ -501,7 +511,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                       </Flexbox>
                                     </div>
                                   </Flexbox>
-                                </MediaQuery>
+                                </Media>
                               </Responsive>
                             </div>
                           </Media>
