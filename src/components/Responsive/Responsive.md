@@ -1,4 +1,7 @@
-The Responsive component is a thin wrapper over the [**react-responsive**](https://github.com/contra/react-responsive) community component. We encourage mobile-first development by using the `minWidth` prop exclusively, though you're welcome to use `maxWidth` or any of the other props supplied by **react-responsive** if the need arises; **note** if you do use props supplied by react-responsive, you must provide pixel values and not breakpoint keys as used by the Responsive component.
+The Responsive component is a thin wrapper over the [**react-media**](https://github.com/ReactTraining/react-media) community 
+component. We encourage mobile-first development by using the `minWidth` prop exclusively, though you're welcome to use 
+`maxWidth` or any of the other props supplied by **react-media** if the need arises; **note** if you do use props 
+supplied by react-media, you must provide pixel values and not breakpoint keys as used by the Responsive component.
 
 ### Breakpoints
 
@@ -31,7 +34,8 @@ Using the `minWidth` and `maxWidth` props, you can pass a breakpoint key. They r
 
 ### Passing a child function
 
-Since the Responsive component wraps **react-responsive**, you may pass a function as the only child to perform logical operations based on whether or not the query matches the browser viewport.
+Since the Responsive component wraps **react-media**, you may pass a function as the only child to perform logical 
+operations based on whether or not the query matches the browser viewport.
 
 ```jsx
 <Responsive minWidth="sm">

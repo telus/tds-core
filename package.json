@@ -87,7 +87,6 @@
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-media": "^1.6.1",
-    "react-responsive": "^3.0.0",
     "react-styleguidist": "^6.0.29",
     "react-test-renderer": "^16.0.0",
     "react-transition-group": "^2.2.1",

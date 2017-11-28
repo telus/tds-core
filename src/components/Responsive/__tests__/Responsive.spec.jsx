@@ -6,7 +6,7 @@ import { warn } from '../../../utils/warn'
 
 jest.mock('../../../utils/warn')
 
-describe('Responsive', () => {
+describe('Responsive with react-media', () => {
   const defaultProps = {
     minWidth: 'sm',
   }
@@ -21,35 +21,49 @@ describe('Responsive', () => {
     expect(responsive).toMatchSnapshot()
   })
 
-  it('warns when mixWidth and maxWidth are not defined', () => {
-    const responsive = doShallow({})
+  // TODO: Maybe this warning should not exist? What is you just want to query for screen vs print or something?
+  it('warns when min width and max width are not defined', () => {
+    doShallow({ minWidth: undefined, maxWidth: undefined })
 
-    expect(responsive).toHaveProp('minWidth', undefined)
-    expect(responsive).toHaveProp('maxWidth', undefined)
     expect(warn).toHaveBeenCalled()
   })
 
-  it('can have a minWidth or maxWidth', () => {
+  it('translates min and max width to pixel breakpoints', () => {
     const responsive = doShallow({ minWidth: 'sm', maxWidth: 'md' })
 
-    expect(responsive).toHaveProp('minWidth', 576)
-    expect(responsive).toHaveProp('maxWidth', 767)
+    expect(responsive).toHaveProp('query', { minWidth: 576, maxWidth: 767 })
   })
 
-  it('passes additional attributes to the element', () => {
-    const responsive = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
+  it('does not generate a query with undefined min or max widths', () => {
+    let responsive = doShallow({ minWidth: 'sm' })
 
-    expect(responsive).toHaveProp('id', 'the-id')
-    expect(responsive).toHaveProp('data-some-attr', 'some value')
+    let query = responsive.props().query
+    expect(query.hasOwnProperty('maxWidth')).toBeFalsy() // eslint-disable-line no-prototype-builtins
+
+    responsive = doShallow({ maxWidth: 'sm' })
+
+    query = responsive.props().query
+    expect(query.hasOwnProperty('minWidth')).toBeFalsy() // eslint-disable-line no-prototype-builtins
   })
 
-  it('does not allow custom CSS', () => {
-    const responsive = doShallow({
-      className: 'my-custom-class',
-      style: { color: 'hotpink' },
-    })
+  it('accepts other media query characteristics', () => {
+    const responsive = doShallow({ query: { screen: true, orientation: 'portrait' } })
 
-    expect(responsive).not.toHaveProp('className', 'my-custom-class')
-    expect(responsive).not.toHaveProp('style')
+    expect(responsive).toHaveProp(
+      'query',
+      expect.objectContaining({ screen: true, orientation: 'portrait' })
+    )
+  })
+
+  it('allows overriding the min and max width with a query', () => {
+    const responsive = doShallow({ query: { minWidth: 100, maxWidth: 2000 } })
+
+    expect(responsive).toHaveProp('query', { minWidth: 100, maxWidth: 2000 })
+  })
+
+  it('passes additional attributes to the Media component', () => {
+    const responsive = doShallow({ defaultMatches: false })
+
+    expect(responsive).toHaveProp('defaultMatches', false)
   })
 })

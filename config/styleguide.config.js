@@ -119,7 +119,10 @@ module.exports = {
         {
           name: 'Layout',
           components() {
-            return [path.resolve('src/components/Box/Box.jsx')]
+            return compact([
+              path.resolve('src/components/Box/Box.jsx'),
+              toggleByEnv('Responsive', path.resolve('src/components/Responsive/Responsive.jsx')),
+            ])
           },
           sections: [
             {
@@ -133,18 +136,6 @@ module.exports = {
               },
             },
           ],
-        },
-        {
-          name: 'Utilities',
-          components() {
-            return compact([
-              toggleByEnv(
-                'Responsive',
-                path.resolve('src/components/Responsive/Responsive.jsx'),
-                undefined
-              ),
-            ])
-          },
         },
         {
           name: 'Content',

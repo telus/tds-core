@@ -1,10 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Responsive renders 1`] = `
-<MediaQuery
-  minWidth={576}
-  values={Object {}}
+exports[`Responsive with react-media renders 1`] = `
+<Media
+  defaultMatches={true}
+  query={
+    Object {
+      "minWidth": 576,
+    }
+  }
 >
   Some content
-</MediaQuery>
+</Media>
 `;
