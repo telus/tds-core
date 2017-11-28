@@ -25,12 +25,12 @@ $desktop: (
   8: $spacing-base * 6
 );
 
-.betweenRight {
+.inline {
   display: flex;
   flex-direction: row;
 }
 
-.betweenBottom {
+.stack {
   display: flex;
   flex-direction: column;
 }

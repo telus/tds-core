@@ -2,7 +2,7 @@
 
 exports[`Textarea renders 1`] = `
 <div
-  class="betweenBottomMargin-2 betweenBottom"
+  class="betweenBottomMarginDesktop-2 stack"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -12,7 +12,7 @@ exports[`Textarea renders 1`] = `
       for="the-textarea"
     >
       <div
-        class="betweenRightMargin-2 betweenRight alignCenter"
+        class="betweenRightMarginDesktop-2 inline alignCenter"
       >
         <span
           class="medium boldFont color"
@@ -40,7 +40,7 @@ exports[`Textarea renders 1`] = `
 
 exports[`Textarea renders with a feedback state and icon 1`] = `
 <div
-  class="betweenBottomMargin-2 betweenBottom"
+  class="betweenBottomMarginDesktop-2 stack"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -50,7 +50,7 @@ exports[`Textarea renders with a feedback state and icon 1`] = `
       for="the-textarea"
     >
       <div
-        class="betweenRightMargin-2 betweenRight alignCenter"
+        class="betweenRightMarginDesktop-2 inline alignCenter"
       >
         <span
           class="medium boldFont color"

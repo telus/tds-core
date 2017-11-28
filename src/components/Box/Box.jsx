@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Responsive from '../Responsive/Responsive'
+import Responsive from '../ResponsiveReactMedia/ResponsiveReactMedia'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
@@ -17,15 +17,15 @@ const getClassName = (spacing, location, scale, desktop) => {
   return styles[`${location}${capitalize(spacing)}${viewportSuffix(desktop)}-${scale}`]
 }
 
-const getBetweenClasses = (betweenSize, inline, desktop) => {
-  if (!betweenSize) {
+const getBetweenClasses = (scale, inline, desktop) => {
+  if (!scale) {
     return undefined
   }
 
   const direction = inline ? 'Right' : 'Bottom'
   return joinClassNames(
-    styles[`between${direction}Margin${viewportSuffix(desktop)}-${betweenSize}`],
-    inline ? styles.betweenRight : styles.betweenBottom
+    styles[`between${direction}Margin${viewportSuffix(desktop)}-${scale}`],
+    inline ? styles.inline : styles.stack
   )
 }
 

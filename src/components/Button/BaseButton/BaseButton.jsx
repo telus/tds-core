@@ -9,10 +9,6 @@ import Responsive from '../../ResponsiveReactMedia/ResponsiveReactMedia'
 
 import styles from './BaseButton.modules.scss'
 
-const getSizeClassName = desktop => {
-  return desktop ? styles.inline : styles.fullWidth
-}
-
 /**
  * A common base for Button and ButtonLink.
  */
@@ -25,7 +21,7 @@ const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...re
           {
             ...safeRest(rest),
             className: joinClassNames(
-              getSizeClassName(desktop),
+              desktop ? styles.inline : styles.fullWidth,
               styles[variant],
               dangerouslyAddClassName
             ),

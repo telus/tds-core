@@ -16,10 +16,6 @@ describe('ButtonLink', () => {
     return link.find('a')
   }
 
-  beforeEach(() => {
-    mockMatchMedia()
-  })
-
   afterEach(() => {
     jest.clearAllMocks()
   })

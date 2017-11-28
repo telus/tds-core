@@ -2,7 +2,7 @@
 
 exports[`Box renders 1`] = `
 <div
-  className="betweenBottomMargin-3 betweenBottom"
+  className="betweenBottomMargin-3 stack"
 >
   Some content
 </div>

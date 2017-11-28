@@ -12,10 +12,6 @@ describe('DisplayHeading', () => {
     return heading.find('h1')
   }
 
-  beforeEach(() => {
-    mockMatchMedia()
-  })
-
   it('renders', () => {
     const heading = render(<DisplayHeading>The heading</DisplayHeading>)
 

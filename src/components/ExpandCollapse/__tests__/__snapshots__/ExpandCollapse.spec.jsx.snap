@@ -57,13 +57,18 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
               >
                 <Responsive
                   minWidth="md"
+                  query={Object {}}
                 >
-                  <MediaQuery
-                    minWidth={768}
-                    values={Object {}}
+                  <Media
+                    defaultMatches={true}
+                    query={
+                      Object {
+                        "minWidth": 768,
+                      }
+                    }
                   >
                     <div
-                      className="verticalPadding-3"
+                      className="verticalPaddingDesktop-3"
                     >
                       <Box
                         between={3}
@@ -72,13 +77,18 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                       >
                         <Responsive
                           minWidth="md"
+                          query={Object {}}
                         >
-                          <MediaQuery
-                            minWidth={768}
-                            values={Object {}}
+                          <Media
+                            defaultMatches={true}
+                            query={
+                              Object {
+                                "minWidth": 768,
+                              }
+                            }
                           >
                             <div
-                              className="betweenRightMargin-3 betweenRight"
+                              className="betweenRightMarginDesktop-3 inline"
                             >
                               <div>
                                 <Translate
@@ -181,11 +191,11 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                 </MediaQuery>
                               </Responsive>
                             </div>
-                          </MediaQuery>
+                          </Media>
                         </Responsive>
                       </Box>
                     </div>
-                  </MediaQuery>
+                  </Media>
                 </Responsive>
               </Box>
             </button>
@@ -235,13 +245,18 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                   >
                     <Responsive
                       minWidth="md"
+                      query={Object {}}
                     >
-                      <MediaQuery
-                        minWidth={768}
-                        values={Object {}}
+                      <Media
+                        defaultMatches={true}
+                        query={
+                          Object {
+                            "minWidth": 768,
+                          }
+                        }
                       >
                         <div
-                          className="horizontalPadding-4 verticalPadding-4"
+                          className="horizontalPaddingDesktop-4 verticalPaddingDesktop-4"
                         >
                           <Text
                             block={true}
@@ -264,7 +279,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                             </div>
                           </Text>
                         </div>
-                      </MediaQuery>
+                      </Media>
                     </Responsive>
                   </Box>
                 </div>
@@ -355,13 +370,18 @@ exports[`ExpandCollapse renders an open panel 1`] = `
               >
                 <Responsive
                   minWidth="md"
+                  query={Object {}}
                 >
-                  <MediaQuery
-                    minWidth={768}
-                    values={Object {}}
+                  <Media
+                    defaultMatches={true}
+                    query={
+                      Object {
+                        "minWidth": 768,
+                      }
+                    }
                   >
                     <div
-                      className="verticalPadding-3"
+                      className="verticalPaddingDesktop-3"
                     >
                       <Box
                         between={3}
@@ -370,13 +390,18 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                       >
                         <Responsive
                           minWidth="md"
+                          query={Object {}}
                         >
-                          <MediaQuery
-                            minWidth={768}
-                            values={Object {}}
+                          <Media
+                            defaultMatches={true}
+                            query={
+                              Object {
+                                "minWidth": 768,
+                              }
+                            }
                           >
                             <div
-                              className="betweenRightMargin-3 betweenRight"
+                              className="betweenRightMarginDesktop-3 inline"
                             >
                               <div>
                                 <Translate
@@ -479,11 +504,11 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                 </MediaQuery>
                               </Responsive>
                             </div>
-                          </MediaQuery>
+                          </Media>
                         </Responsive>
                       </Box>
                     </div>
-                  </MediaQuery>
+                  </Media>
                 </Responsive>
               </Box>
             </button>
@@ -533,13 +558,18 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                   >
                     <Responsive
                       minWidth="md"
+                      query={Object {}}
                     >
-                      <MediaQuery
-                        minWidth={768}
-                        values={Object {}}
+                      <Media
+                        defaultMatches={true}
+                        query={
+                          Object {
+                            "minWidth": 768,
+                          }
+                        }
                       >
                         <div
-                          className="horizontalPadding-4 verticalPadding-4"
+                          className="horizontalPaddingDesktop-4 verticalPaddingDesktop-4"
                         >
                           <Text
                             block={true}
@@ -562,7 +592,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                             </div>
                           </Text>
                         </div>
-                      </MediaQuery>
+                      </Media>
                     </Responsive>
                   </Box>
                 </div>

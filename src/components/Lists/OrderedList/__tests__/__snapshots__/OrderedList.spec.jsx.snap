@@ -2,7 +2,7 @@
 
 exports[`<OrderedList /> renders 1`] = `
 <ol
-  class="betweenBottomMargin-2 betweenBottom decimal"
+  class="betweenBottomMarginDesktop-2 stack decimal"
 >
   <li>
     Lorem ipsum

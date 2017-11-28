@@ -20,10 +20,6 @@ describe('Heading', () => {
     return heading.find(heading.props().level)
   }
 
-  beforeEach(() => {
-    mockMatchMedia()
-  })
-
   it('renders', () => {
     const heading = render(<Heading level="h2">The heading</Heading>)
 
