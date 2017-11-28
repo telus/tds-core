@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading renders 1`] = `
-<h1
-  className="h1Desktop secondary"
+<h2
+  class="h2Desktop secondary"
 >
-  The content
-</h1>
+  The heading
+</h2>
 `;

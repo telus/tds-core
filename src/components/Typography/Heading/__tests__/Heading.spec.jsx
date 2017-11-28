@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { mount, render } from 'enzyme'
 
 import mockMatchMedia from '../../../../__mocks__/matchMedia'
 
@@ -25,7 +25,7 @@ describe('Heading', () => {
   })
 
   it('renders', () => {
-    const heading = doMount()
+    const heading = render(<Heading level="h2">The heading</Heading>)
 
     expect(heading).toMatchSnapshot()
   })

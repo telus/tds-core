@@ -1,43 +1,62 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount, render } from 'enzyme'
 
 import DisplayHeading from '../DisplayHeading'
 
+import mockMatchMedia from '../../../../__mocks__/matchMedia'
+
 describe('DisplayHeading', () => {
-  const doShallow = ({ ...props }) =>
-    shallow(<DisplayHeading {...props}>Great Deals</DisplayHeading>)
-      .dive()
-      .dive()
+  const doMount = (props = {}) => {
+    const heading = mount(<DisplayHeading {...props}>Great Deals</DisplayHeading>)
+
+    return heading.find('h1')
+  }
+
+  beforeEach(() => {
+    mockMatchMedia()
+  })
 
   it('renders', () => {
-    const heading = doShallow()
+    const heading = render(<DisplayHeading>The heading</DisplayHeading>)
 
     expect(heading).toMatchSnapshot()
   })
 
   it('renders an h1', () => {
-    const displayHeading = doShallow()
+    const displayHeading = doMount()
 
     expect(displayHeading).toHaveTagName('h1')
   })
 
   it('can be inverted', () => {
-    let displayHeading = doShallow({ invert: true })
+    let displayHeading = doMount({ invert: true })
     expect(displayHeading).toHaveClassName('inverted')
 
-    displayHeading = doShallow()
+    displayHeading = doMount()
     expect(displayHeading).toHaveClassName('default')
   })
 
+  it('renders differently above the medium breakpoint', () => {
+    mockMatchMedia(768)
+
+    let heading = doMount()
+    expect(heading).toHaveClassName('headingDesktop')
+
+    mockMatchMedia(767)
+
+    heading = doMount()
+    expect(heading).toHaveClassName('heading')
+  })
+
   it('passes additional attributes to h1 element', () => {
-    const displayHeading = doShallow({ id: 'the-heading', tabindex: 1 })
+    const displayHeading = doMount({ id: 'the-heading', tabIndex: 1 })
 
     expect(displayHeading).toHaveProp('id', 'the-heading')
-    expect(displayHeading).toHaveProp('tabindex', 1)
+    expect(displayHeading).toHaveProp('tabIndex', 1)
   })
 
   it('does not allow custom CSS', () => {
-    const displayHeading = doShallow({
+    const displayHeading = doMount({
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })

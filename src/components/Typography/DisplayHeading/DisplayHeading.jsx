@@ -1,20 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
 import safeRest from '../../../utils/safeRest'
 import joinClassNames from '../../../utils/joinClassNames'
 
-import Responsive from '../../Responsive/Responsive'
+import Responsive from '../../ResponsiveReactMedia/ResponsiveReactMedia'
 import DisplayHeadingSup from './DisplayHeadingSup/DisplayHeadingSup'
 
 import styles from './DisplayHeading.modules.scss'
 
-const getClassName = (invert, desktop) => {
-  return joinClassNames(
-    styles.heading,
-    desktop ? styles.headingSizeDesktop : styles.headingSize,
+const getClassName = (invert, desktop) =>
+  joinClassNames(
+    desktop ? styles.headingDesktop : styles.heading,
     invert ? styles.inverted : styles.default
   )
-}
 
 /**
  * Large page titles. Renders an HTML `<h1>` element.
