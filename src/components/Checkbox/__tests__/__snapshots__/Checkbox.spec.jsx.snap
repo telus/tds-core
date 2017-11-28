@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders 1`] = `
+<label
+  data-no-global-styles={true}
+  htmlFor="the-input"
+>
+  <input
+    data-no-global-styles={true}
+    id="the-input"
+    type="checkbox"
+  />
+  <Text
+    block={false}
+    bold={false}
+    invert={false}
+    size="medium"
+  >
+    The input
+  </Text>
+</label>
+`;

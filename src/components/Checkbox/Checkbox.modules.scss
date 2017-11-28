@@ -1,0 +1,28 @@
+@import '../../scss/settings/variables';
+@import '../../scss/utility/mixins';
+
+/* FIXME: resetting globally scoped styles in form.scss
+   because of input:not(type='radio')
+*/
+input[data-no-global-styles] {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: transparent;
+  font-size: inherit;
+  line-height: inherit;
+  outline: inherit;
+  padding: 0;
+  width: auto;
+  transition: none;
+  font-family: inherit;
+
+  &:focus {
+    box-shadow: none;
+    border-color: inherit;
+  }
+
+  @include from-breakpoint(medium) {
+    letter-spacing: inherit;
+  }
+}

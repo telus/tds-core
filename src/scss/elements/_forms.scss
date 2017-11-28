@@ -15,16 +15,16 @@ textarea:not([data-no-global-styles]),
 select:not([data-no-global-styles]) {
   border: 1px solid $color-shuttle-grey;
   border-radius: $form-field-border-radius;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
   color: $color-shark;
   font-family: $font-telus;
   font-size: rem($body-text-size);
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   line-height: 1.4;
   outline: 0;
   padding: 11px;
   width: 100%;
-  transition: background-color .1s linear;
+  transition: background-color 0.1s linear;
 
   .field & {
     margin-bottom: $form-field-bottom-spacing;
@@ -40,7 +40,7 @@ select:not([data-no-global-styles]) {
   }
 
   @include from-breakpoint(medium) {
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -53,7 +53,7 @@ textarea:not([data-no-global-styles]):focus {
   @extend %input-focus-style;
 }
 
-input[type='checkbox']:focus + span::before,
+input[type='checkbox']:not([data-no-global-styles]):focus + span::before,
 input[type='radio']:focus + span::before {
   @extend %input-focus-style;
 }
@@ -93,7 +93,7 @@ label:not([data-no-global-styles]) {
   display: inline-block;
   color: $color-shark;
   font-weight: 700;
-  letter-spacing: -.6px;
+  letter-spacing: -0.6px;
   margin-bottom: 3px;
 }
 
@@ -218,7 +218,7 @@ textarea:not([data-no-global-styles]) {
   padding: 11px 16px 16px;
   border-radius: 4px;
   margin-bottom: 11px;
-  transition: background-color .1s linear;
+  transition: background-color 0.1s linear;
 
   &--success {
     background: $color-panache;
@@ -254,7 +254,7 @@ $radio-checked-stroke-size: 6px;
 }
 
 [type='radio'],
-[type='checkbox'] {
+[type='checkbox']:not([data-no-global-styles]) {
   @extend %accessible-hide;
 
   cursor: pointer;
@@ -270,7 +270,7 @@ $radio-checked-stroke-size: 6px;
       & + .choice__text {
         &::before {
           border-color: $color-shark;
-          box-shadow: 0 0 0 1px rgba(35, 135, 0, .25);
+          box-shadow: 0 0 0 1px rgba(35, 135, 0, 0.25);
         }
       }
     }
@@ -320,7 +320,7 @@ $radio-checked-stroke-size: 6px;
       height: 22px;
       width: 22px;
       line-height: 1.4;
-      transition: all .1s linear;
+      transition: all 0.1s linear;
     }
   }
 }
@@ -362,7 +362,7 @@ $radio-checked-stroke-size: 6px;
   }
 }
 
-[type='checkbox'] {
+[type='checkbox']:not([data-no-global-styles]) {
   &:checked {
     & + .choice__text {
       &::before {
@@ -462,7 +462,7 @@ $radio-checked-stroke-size: 6px;
     width: 200px;
     padding: 15px 20px;
     background-color: white;
-    box-shadow: 0 0 2px 0 #2a2c2e, 0 3px 2px 0 rgba(84, 89, 95, .25);
+    box-shadow: 0 0 2px 0 #2a2c2e, 0 3px 2px 0 rgba(84, 89, 95, 0.25);
     border-radius: 4px;
     transform: translate(15px, -100%);
 
@@ -476,7 +476,7 @@ $radio-checked-stroke-size: 6px;
     // The 'before' pseudo element is the triangle at the bottom of the
     // speech bubble.
     &::before {
-      box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, .4);
+      box-shadow: 2px 2px 3px 0 rgba(42, 42, 44, 0.4);
       background-color: white;
       bottom: -7px;
       right: 12px;
