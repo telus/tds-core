@@ -7,14 +7,31 @@ import Text from '../../Typography/Text/Text'
 import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'
 
-describe.skip('Tooltip', () => {
+import mockMatchMedia from '../../../__mocks__/matchMedia'
+
+describe('Tooltip', () => {
   const defaultChildren = 'Tooltip text'
   const doShallow = (overrides = {}, children = defaultChildren) =>
     shallow(<Tooltip {...overrides}>{children}</Tooltip>)
 
-  const findBubble = tooltip => tooltip.find('[data-testid="bubble"]')
-  const findTrigger = tooltip => tooltip.find(StandaloneIcon)
-  const toggleBubble = tooltip => findTrigger(tooltip).simulate('click')
+  const doMount = (overrides = {}, children = defaultChildren, options = {}) => {
+    const tooltip = mount(<Tooltip {...overrides}>{children}</Tooltip>, options)
+
+    const findTrigger = () => tooltip.find(StandaloneIcon)
+
+    return {
+      tooltip,
+      findTrigger,
+      findBubble: () => tooltip.find('div[data-testid="bubble"]'),
+      toggleBubble: () => findTrigger().simulate('click'),
+    }
+  }
+
+  beforeEach(() => {
+    mockMatchMedia(575)
+  })
+
+  // TODO: test for the defaultMatches behaviour?
 
   it('renders', () => {
     const tooltip = render(<Tooltip>Helper text</Tooltip>)
@@ -23,35 +40,65 @@ describe.skip('Tooltip', () => {
   })
 
   it('has a trigger', () => {
-    const tooltip = doShallow()
+    const { findTrigger } = doMount()
 
-    expect(findTrigger(tooltip)).toHaveProp('symbol', 'questionMarkCircle')
-    expect(findTrigger(tooltip)).toHaveProp('a11yText', 'Reveal additional information.')
+    expect(findTrigger()).toHaveProp('symbol', 'questionMarkCircle')
+    expect(findTrigger()).toHaveProp('a11yText', 'Reveal additional information.')
   })
 
   it('has small text in the bubble', () => {
-    const tooltip = doShallow({}, 'Some content')
-    toggleBubble(tooltip)
+    const { toggleBubble, findBubble } = doMount({}, 'Some content')
+    toggleBubble()
 
-    expect(findBubble(tooltip)).toContainReact(<Text size="small">Some content</Text>)
+    expect(findBubble()).toContainReact(<Text size="small">Some content</Text>)
   })
 
-  it('has a direction', () => {
-    let tooltip = doShallow()
-    expect(
-      findBubble(tooltip)
-        .dive()
-        .dive()
-        .dive()
-    ).toHaveClassName('right')
+  describe('responsive bubble', () => {
+    it('is full width at xsmall viewports', () => {
+      mockMatchMedia(575)
 
-    tooltip = doShallow({ direction: 'left' })
-    expect(
-      findBubble(tooltip)
-        .dive()
-        .dive()
-        .dive()
-    ).toHaveClassName('left')
+      const { findBubble } = doMount()
+
+      expect(findBubble()).toHaveClassName('full')
+    })
+
+    it('is half width at small viewports', () => {
+      mockMatchMedia(576)
+
+      const { findBubble } = doMount()
+
+      expect(findBubble()).toHaveClassName('half')
+    })
+
+    it('is quarter width at medium viewports and above', () => {
+      mockMatchMedia(768)
+
+      const { findBubble } = doMount()
+
+      expect(findBubble()).toHaveClassName('quarter')
+    })
+
+    it('forces the direction to the left at xsmall and small viewports', () => {
+      mockMatchMedia(575)
+      let findBubble = doMount({ direction: 'right' }).findBubble
+
+      expect(findBubble()).toHaveClassName('left')
+
+      mockMatchMedia(576)
+      findBubble = doMount({ direction: 'right' }).findBubble
+
+      expect(findBubble()).toHaveClassName('left')
+    })
+
+    it('has a direction only on medium viewports and above', () => {
+      mockMatchMedia(768)
+
+      let findBubble = doMount().findBubble
+      expect(findBubble()).toHaveClassName('right')
+
+      findBubble = doMount({ direction: 'left' }).findBubble
+      expect(findBubble()).toHaveClassName('left')
+    })
   })
 
   describe('interactivity', () => {
@@ -62,106 +109,85 @@ describe.skip('Tooltip', () => {
       return root
     }
 
+    // Not sure why `expect(findBubble()).toHaveClassName(...)` doesn't work
     const getBubbleClassNames = tooltip =>
-      findBubble(tooltip)
-        .at(1) // Not sure why it finds two...
+      tooltip
+        .find('[data-testid="bubble"]')
+        .at(1)
         .render()
         .attr('class')
 
-    let mountedToolTip
-
-    afterEach(() => {
-      if (mountedToolTip) {
-        mountedToolTip.unmount()
-      }
-    })
-
     it('shows and hides the bubble', () => {
-      const tooltip = doShallow()
-      expect(
-        findBubble(tooltip)
-          .dive()
-          .dive()
-          .dive()
-      ).toHaveClassName('hide')
+      const { findBubble, toggleBubble } = doMount()
+      expect(findBubble()).toHaveClassName('hide')
 
-      toggleBubble(tooltip)
-      expect(
-        findBubble(tooltip)
-          .dive()
-          .dive()
-          .dive()
-      ).not.toHaveClassName('hide')
+      toggleBubble()
+      expect(findBubble()).not.toHaveClassName('hide')
 
-      toggleBubble(tooltip)
-      expect(
-        findBubble(tooltip)
-          .dive()
-          .dive()
-          .dive()
-      ).toHaveClassName('hide')
+      toggleBubble()
+      expect(findBubble()).toHaveClassName('hide')
     })
 
     it('hides the bubble when clicking outside of it', () => {
       const root = createRootElement()
 
-      mountedToolTip = mount(<Tooltip>Tooltip text</Tooltip>, {
+      const { tooltip, toggleBubble } = doMount({}, 'Tooltip text', {
         attachTo: document.body.appendChild(root),
       })
 
-      toggleBubble(mountedToolTip)
+      toggleBubble()
       root.dispatchEvent(new Event('click', { bubbles: true }))
 
-      expect(getBubbleClassNames(mountedToolTip)).toContain('hide')
+      expect(getBubbleClassNames(tooltip)).toContain('hide')
 
       // And it removes the event listener so on subsequent clicks it remains hidden
       root.dispatchEvent(new Event('click'), { bubbles: true })
 
-      expect(getBubbleClassNames(mountedToolTip)).toContain('hide')
+      expect(getBubbleClassNames(tooltip)).toContain('hide')
     })
 
     it('will not hide the bubble when clicking inside the bubble', () => {
       const root = createRootElement()
 
-      mountedToolTip = mount(<Tooltip>Tooltip text</Tooltip>, {
+      const { tooltip, toggleBubble } = doMount({}, 'Tooltip text', {
         attachTo: document.body.appendChild(root),
       })
 
-      toggleBubble(mountedToolTip)
+      toggleBubble()
       root
         .querySelector('[data-testid="bubble"]')
         .dispatchEvent(new Event('click', { bubbles: true }))
 
-      expect(getBubbleClassNames(mountedToolTip)).not.toContain('hide')
+      expect(getBubbleClassNames(tooltip)).not.toContain('hide')
     })
   })
 
   describe('accessibility', () => {
     it('connects the bubble message to the trigger button for screen readers', () => {
-      const tooltip = doShallow({ connectedFieldLabel: 'Some field' })
+      const { findTrigger, findBubble } = doMount({ connectedFieldLabel: 'Some field' })
 
-      expect(findBubble(tooltip)).toHaveProp('id', 'some-field_tooltip')
-      expect(findBubble(tooltip)).toHaveProp('role', 'tooltip')
-      expect(findBubble(tooltip)).toHaveProp('aria-live', 'polite')
+      expect(findBubble()).toHaveProp('id', 'some-field_tooltip')
+      expect(findBubble()).toHaveProp('role', 'tooltip')
+      expect(findBubble()).toHaveProp('aria-live', 'polite')
 
-      expect(findTrigger(tooltip)).toHaveProp('aria-haspopup', 'true')
-      expect(findTrigger(tooltip)).toHaveProp('aria-controls', 'some-field_tooltip')
+      expect(findTrigger()).toHaveProp('aria-haspopup', 'true')
+      expect(findTrigger()).toHaveProp('aria-controls', 'some-field_tooltip')
     })
 
     it('shows and hides the bubble for screen readers', () => {
-      const tooltip = doShallow()
+      const { findTrigger, findBubble, toggleBubble } = doMount()
 
-      expect(findTrigger(tooltip)).toHaveProp('aria-expanded', 'false')
-      expect(findBubble(tooltip)).toHaveProp('aria-hidden', 'true')
+      expect(findTrigger()).toHaveProp('aria-expanded', 'false')
+      expect(findBubble()).toHaveProp('aria-hidden', 'true')
 
-      toggleBubble(tooltip)
+      toggleBubble()
 
-      expect(findTrigger(tooltip)).toHaveProp('aria-expanded', 'true')
-      expect(findBubble(tooltip)).toHaveProp('aria-hidden', 'false')
+      expect(findTrigger()).toHaveProp('aria-expanded', 'true')
+      expect(findBubble()).toHaveProp('aria-hidden', 'false')
     })
   })
 
-  it('passes additional attributes to the element', () => {
+  it('passes additional attributes to the wrapper element', () => {
     const tooltip = doShallow({ 'data-some-attr': 'some value' })
 
     expect(tooltip).toHaveProp('data-some-attr', 'some value')
@@ -186,13 +212,11 @@ describe('Connecting Tooltips to form fields', () => {
   })
 
   it('connects to Input', () => {
-    const input = shallow(<Input label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />)
+    const input = mount(<Input label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />)
 
-    expect(
-      input
-        .find(Tooltip)
-        .dive()
-        .find(StandaloneIcon)
-    ).toHaveProp('a11yText', 'Reveal additional information about Some field.')
+    expect(input.find(StandaloneIcon)).toHaveProp(
+      'a11yText',
+      'Reveal additional information about Some field.'
+    )
   })
 })

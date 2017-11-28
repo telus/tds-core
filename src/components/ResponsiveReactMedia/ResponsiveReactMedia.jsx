@@ -58,13 +58,14 @@ Responsive.propTypes = {
   /**
    * The content. Can be text, any HTML element, a function, or any component.
    */
-  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
 }
 
 Responsive.defaultProps = {
   minWidth: undefined,
   maxWidth: undefined,
   query: {},
+  children: undefined,
 }
 
 export default Responsive

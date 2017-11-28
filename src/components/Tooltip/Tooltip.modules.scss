@@ -38,7 +38,9 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
   }
 }
 
-@mixin left-bubble {
+.left {
+  composes: bubble;
+
   right: $bubble-offset * -1;
 
   &::before {
@@ -46,40 +48,24 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
   }
 }
 
-.left {
-  composes: bubble;
-
-  @include left-bubble;
-}
-
 .right {
   composes: bubble;
+
+  left: calc(100% - #{$bubble-trigger-size} - #{$bubble-offset});
+
+  &::before {
+    left: $bubble-triangle-position;
+  }
 }
 
-.bubbleXsmall {
+.full {
   width: 100%;
-
-  &.right {
-    @include left-bubble;
-  }
 }
 
-.bubbleSmall {
+.half {
   width: 50%;
-
-  &.right {
-    @include left-bubble;
-  }
 }
 
-.bubbleDesktop {
+.quarter {
   width: 25%;
-
-  &.right {
-    left: calc(100% - #{$bubble-trigger-size} - #{$bubble-offset});
-
-    &::before {
-      left: $bubble-triangle-position;
-    }
-  }
 }

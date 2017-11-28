@@ -2,18 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
-import joinClassNames from '../../utils/joinClassNames'
 import generateId from '../../utils/generateId'
 import closest from './element-closest'
 
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
-import Text from '../Typography/Text/Text'
-import Box from '../Box/Box'
-import Responsive from '../Responsive/Responsive'
+import Responsive from '../ResponsiveReactMedia/ResponsiveReactMedia'
 
-import displayStyles from '../Display.modules.scss'
+import Bubble from './Bubble'
+
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
-import styles from './Tooltip.modules.scss'
 
 const getTriggerA11yText = connectedFieldLabel => {
   if (!connectedFieldLabel) {
@@ -78,24 +75,6 @@ class Tooltip extends React.Component {
     })
   }
 
-  renderBubble(id, direction, open, content, size) {
-    const classes = joinClassNames(styles[direction], styles[size], !open && displayStyles.hide)
-    return (
-      <Box
-        vertical={2}
-        horizontal={3}
-        dangerouslyAddClassName={classes}
-        id={id}
-        role="tooltip"
-        aria-live="polite"
-        aria-hidden={open ? 'false' : 'true'}
-        data-testid="bubble"
-      >
-        <Text size="small">{content}</Text>
-      </Box>
-    )
-  }
-
   render() {
     const { direction, connectedFieldLabel, children, ...rest } = this.props
 
@@ -103,15 +82,34 @@ class Tooltip extends React.Component {
 
     return (
       <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>
-        <Responsive maxWidth="sm">
-          {this.renderBubble(bubbleId, direction, this.state.open, children, 'bubbleXsmall')}
-        </Responsive>
-        <Responsive minWidth="sm" maxWidth="md">
-          {this.renderBubble(bubbleId, direction, this.state.open, children, 'bubbleSmall')}
-        </Responsive>
-        <Responsive minWidth="md">
-          {this.renderBubble(bubbleId, direction, this.state.open, children, 'bubbleDesktop')}
-        </Responsive>
+        <Responsive
+          defaultMatches
+          maxWidth="sm"
+          render={() => (
+            <Bubble id={bubbleId} direction="left" width="full" open={this.state.open}>
+              {children}
+            </Bubble>
+          )}
+        />
+        <Responsive
+          defaultMatches={false}
+          minWidth="sm"
+          maxWidth="md"
+          render={() => (
+            <Bubble id={bubbleId} direction="left" width="half" open={this.state.open}>
+              {children}
+            </Bubble>
+          )}
+        />
+        <Responsive
+          defaultMatches={false}
+          minWidth="md"
+          render={() => (
+            <Bubble id={bubbleId} direction={direction} width="quarter" open={this.state.open}>
+              {children}
+            </Bubble>
+          )}
+        />
 
         <StandaloneIcon
           symbol="questionMarkCircle"
