@@ -49,7 +49,7 @@
     "airbnb-prop-types": "^2.8.1",
     "autoprefixer": "^7.1.5",
     "aws-sdk": "^2.114.0",
-    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
     "babel-plugin-external-helpers": "^6.22.0",
