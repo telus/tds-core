@@ -2,7 +2,7 @@
 
 exports[`ButtonLink renders 1`] = `
 <a
-  class="primary button primary"
+  class="inline primary primary"
 >
   <div
     class="row centered"

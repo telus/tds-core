@@ -5,12 +5,12 @@ import safeRest from '../../../utils/safeRest'
 import joinClassNames from '../../../utils/joinClassNames'
 
 import FlexBox from '../../Flexbox/Flexbox'
-import Responsive from '../../Responsive/Responsive'
+import Responsive from '../../ResponsiveReactMedia/ResponsiveReactMedia'
 
 import styles from './BaseButton.modules.scss'
 
 const getSizeClassName = desktop => {
-  return desktop ? styles.buttonDesktop : styles.button
+  return desktop ? styles.inline : styles.fullWidth
 }
 
 /**
@@ -19,22 +19,21 @@ const getSizeClassName = desktop => {
 const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...rest }) => {
   return (
     <Responsive minWidth="md">
-      {desktop => {
-        return React.createElement(
+      {desktop =>
+        React.createElement(
           element,
           {
             ...safeRest(rest),
             className: joinClassNames(
-              styles[variant],
               getSizeClassName(desktop),
+              styles[variant],
               dangerouslyAddClassName
             ),
           },
           <FlexBox direction="row" dangerouslyAddClassName={styles.centered}>
             {children}
           </FlexBox>
-        )
-      }}
+        )}
     </Responsive>
   )
 }
