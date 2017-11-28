@@ -12,29 +12,28 @@ const breakpoints = {
 }
 
 /**
- * Define content within viewport breakpoints
+ * Respond to the device's characteristics, such as the browser viewport size.
  *
  * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.30.0</span>
  */
-// TODO: What about other media query properties such as screen, etc...
-const Responsive = ({ minWidth, maxWidth, children, ...rest }) => {
+const Responsive = ({ minWidth, maxWidth, query, children, ...rest }) => {
   if (!minWidth && !maxWidth) {
     warn('Responsive', 'Responsive needs a minWidth or maxWith prop')
   }
 
-  // Do it this way to not create an object with keys that have the value "undefined", which causes the generated media-query to be invalid
+  // Do it this way to not create an object where some keys have the value "undefined", which causes the generated media-query to be invalid.
   // (min-width: 300px) and (max-width: undefined) is bad :(
   // (min-width: 300px) is good :)
-  const query = {}
+  const mediaQuery = {}
   if (minWidth) {
-    query.minWidth = breakpoints[minWidth]
+    mediaQuery.minWidth = breakpoints[minWidth]
   }
   if (maxWidth) {
-    query.maxWidth = breakpoints[maxWidth] - 1
+    mediaQuery.maxWidth = breakpoints[maxWidth] - 1
   }
 
   return (
-    <Media {...rest} query={query}>
+    <Media {...rest} query={{ ...mediaQuery, ...query }}>
       {children}
     </Media>
   )
@@ -42,15 +41,22 @@ const Responsive = ({ minWidth, maxWidth, children, ...rest }) => {
 
 Responsive.propTypes = {
   /**
-   * Set browser min-width media query.
+   * Set the min-width media query.
    */
   minWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   /**
-   * Set browser max-width media query.
+   * Set the max-width media query.
    */
   maxWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   /**
-   * The content. Can be text, any HTML element, or any component.
+   * An object containing any valid CSS media query characteristics. It will be converted to a CSS media query.
+   * Use `query` if you need characteristics other than `minWidth` and `maxWidth`.
+   *
+   * Any `minWidth` or `maxWidth` values here will override the props by the same name.
+   */
+  query: PropTypes.object,
+  /**
+   * The content. Can be text, any HTML element, a function, or any component.
    */
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
 }
@@ -58,6 +64,7 @@ Responsive.propTypes = {
 Responsive.defaultProps = {
   minWidth: undefined,
   maxWidth: undefined,
+  query: {},
 }
 
 export default Responsive

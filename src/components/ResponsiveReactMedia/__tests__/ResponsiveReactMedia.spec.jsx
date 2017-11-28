@@ -21,19 +21,20 @@ describe('Responsive with react-media', () => {
     expect(responsive).toMatchSnapshot()
   })
 
-  it('warns when mixWidth and maxWidth are not defined', () => {
+  // TODO: Maybe this warning should not exist? What is you just want to query for screen vs print or something?
+  it('warns when min width and max width are not defined', () => {
     doShallow({ minWidth: undefined, maxWidth: undefined })
 
     expect(warn).toHaveBeenCalled()
   })
 
-  it('can have a minWidth or maxWidth', () => {
+  it('translates min and max width to pixel breakpoints', () => {
     const responsive = doShallow({ minWidth: 'sm', maxWidth: 'md' })
 
     expect(responsive).toHaveProp('query', { minWidth: 576, maxWidth: 767 })
   })
 
-  it('does not include undefined query properties', () => {
+  it('does not generate a query with undefined min or max widths', () => {
     let responsive = doShallow({ minWidth: 'sm' })
 
     let query = responsive.props().query
@@ -43,6 +44,21 @@ describe('Responsive with react-media', () => {
 
     query = responsive.props().query
     expect(query.hasOwnProperty('minWidth')).toBeFalsy() // eslint-disable-line no-prototype-builtins
+  })
+
+  it('accepts other media query characteristics', () => {
+    const responsive = doShallow({ query: { screen: true, orientation: 'portrait' } })
+
+    expect(responsive).toHaveProp(
+      'query',
+      expect.objectContaining({ screen: true, orientation: 'portrait' })
+    )
+  })
+
+  it('allows overriding the min and max width with a query', () => {
+    const responsive = doShallow({ query: { minWidth: 100, maxWidth: 2000 } })
+
+    expect(responsive).toHaveProp('query', { minWidth: 100, maxWidth: 2000 })
   })
 
   it('passes additional attributes to the Media component', () => {
