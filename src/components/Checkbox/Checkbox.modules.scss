@@ -28,8 +28,9 @@
   background-color: transparent;
 }
 
-.fakeCheckboxDisabled {
+.disabled {
   composes: fakeCheckbox;
+  border: none;
   background-color: $color-gainsboro;
 }
 
@@ -47,10 +48,11 @@
 }
 
 .focused {
+  border: none;
   box-shadow: 0 0 4px 1px $color-shuttle-grey;
 }
 
-.fakeCheckboxCheckedDisabled {
+.disabledChecked {
   composes: fakeCheckbox;
   border: none;
   background-color: $color-gainsboro;

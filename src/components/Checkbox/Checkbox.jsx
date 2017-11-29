@@ -14,10 +14,18 @@ import styles from './Checkbox.modules.scss'
 import displayStyles from '../Display.modules.scss'
 import messagingStyles from '../Messaging.modules.scss'
 
-const renderLabel = (label, feedback) => {
+const getClassNames = (checked, focus, feedback, disabled) => {
+  return joinClassNames(
+    checked ? styles.checked : styles.unchecked,
+    focus && styles.focused,
+    feedback === 'error' && !checked && styles.error,
+    disabled && styles.disabled
+  )
+}
+const renderLabel = (label, feedback, checked) => {
   const content = <Text size="medium">{label}</Text>
 
-  if (feedback === 'error') {
+  if (feedback === 'error' && !checked) {
     return (
       <ColoredTextProvider colorClassName={messagingStyles.errorText}>
         {content}
@@ -31,7 +39,6 @@ const renderLabel = (label, feedback) => {
 class Checkbox extends React.Component {
   state = {
     checked: this.props.checked,
-    feedback: this.props.feedback,
     focus: false,
   }
 
@@ -48,10 +55,6 @@ class Checkbox extends React.Component {
     this.setState(({ checked }) => ({
       checked: !checked,
     }))
-
-    if (this.state.feedback === 'error') {
-      this.setState({ feedback: undefined })
-    }
 
     if (onChange) {
       onChange(event)
@@ -79,18 +82,14 @@ class Checkbox extends React.Component {
   }
 
   render() {
-    const { label, ...rest } = this.props
+    const { label, feedback, ...rest } = this.props
     const checkboxId = generateId(rest.id, rest.name, label)
 
     return (
       <label data-no-global-styles htmlFor={checkboxId.identity()}>
         <Box inline between={3}>
           <span
-            className={joinClassNames(
-              this.state.checked ? styles.checked : styles.unchecked,
-              this.state.focus && styles.focused,
-              this.state.feedback && styles.error
-            )}
+            className={getClassNames(this.state.checked, this.state.focus, feedback, rest.disabled)}
             data-testid="fake-checkbox"
           >
             <input
@@ -107,7 +106,7 @@ class Checkbox extends React.Component {
               <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
             )}
           </span>
-          {renderLabel(label, this.state.feedback)}
+          {renderLabel(label, feedback, this.state.checked)}
         </Box>
       </label>
     )

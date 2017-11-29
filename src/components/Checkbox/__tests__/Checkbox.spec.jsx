@@ -4,6 +4,7 @@ import { mount } from 'enzyme'
 import Text from '../../Typography/Text/Text'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Checkbox from '../Checkbox'
+import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('Checkbox', () => {
   const defaultProps = {
@@ -167,10 +168,43 @@ describe('Checkbox', () => {
     })
   })
 
-  it('can have an error feedback state', () => {
-    const { checkbox } = doMount({ label: 'Some error', feedback: 'error' })
+  describe('error', () => {
+    it('can have an error feedback state', () => {
+      const { checkbox, findFakeCheckbox } = doMount({ label: 'Some error', feedback: 'error' })
 
-    expect(checkbox.find('[colorClassName="errorText"]')).toBePresent()
+      expect(checkbox).toContainReact(
+        <ColoredTextProvider colorClassName="errorText">
+          <Text size="medium">Some error</Text>
+        </ColoredTextProvider>
+      )
+
+      expect(findFakeCheckbox()).toHaveClassName('error')
+    })
+
+    it('does not appear as an error when it is checked', () => {
+      const { checkbox, findFakeCheckbox, check } = doMount({
+        label: 'Some error',
+        feedback: 'error',
+        checked: false,
+      })
+
+      check()
+
+      expect(checkbox.find(ColoredTextProvider)).toBeEmpty()
+      expect(findFakeCheckbox()).toHaveClassName('checked')
+      expect(findFakeCheckbox()).not.toHaveClassName('error')
+    })
+  })
+
+  it.skip('can be disabled', () => {
+    const onChangeMock = jest.fn()
+    const { findFakeCheckbox, check, uncheck } = doMount({ onChange: onChangeMock, disabled: true })
+
+    uncheck()
+    expect(findFakeCheckbox()).toHaveClassName('disabled')
+
+    check()
+    expect(findFakeCheckbox()).toHaveClassName('disabledChecked')
   })
 
   //
