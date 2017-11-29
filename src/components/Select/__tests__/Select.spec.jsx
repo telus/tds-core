@@ -233,6 +233,16 @@ describe('Select', () => {
     expect(findSelectElement()).toBeDisabled()
   })
 
+  it('can have an un-selectable placeholder', () => {
+    const { findSelectElement } = doMount({ placeholder: 'Please select...' })
+
+    expect(findSelectElement()).toContainReact(
+      <option value="" disabled hidden>
+        Please select...
+      </option>
+    )
+  })
+
   it('can have an error message', () => {
     const { select } = doMount({ id: 'some-id', error: 'Oh no a terrible error!' })
 
@@ -336,10 +346,10 @@ describe('Select', () => {
   })
 
   it('passes additional attributes to the select element', () => {
-    const { findSelectElement } = doMount({ name: 'a name', placeholder: 'a placeholder' })
+    const { findSelectElement } = doMount({ name: 'a name', id: 'the-id' })
 
     expect(findSelectElement()).toHaveProp('name', 'a name')
-    expect(findSelectElement()).toHaveProp('placeholder', 'a placeholder')
+    expect(findSelectElement()).toHaveProp('id', 'the-id')
   })
 
   it('does not allow custom CSS', () => {

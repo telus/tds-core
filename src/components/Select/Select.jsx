@@ -14,7 +14,7 @@ import formFieldStyles from '../FormFields.modules.scss'
 import positionStyles from '../Position.modules.scss'
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 
-const Select = ({ options, ...props }) => (
+const Select = ({ options, placeholder, ...props }) => (
   <FormField {...props}>
     {({ className, ...selectProps }, showIcon, feedback) => (
       <div className={positionStyles.relative}>
@@ -22,6 +22,11 @@ const Select = ({ options, ...props }) => (
           {...selectProps}
           className={joinClassNames(className, styles.select, formFieldStyles.height)}
         >
+          {placeholder && (
+            <option value="" hidden disabled>
+              {placeholder}
+            </option>
+          )}
           {options.map(({ text, value }) => (
             <option key={value} value={value}>
               {text}
@@ -43,7 +48,7 @@ const Select = ({ options, ...props }) => (
 
 Select.propTypes = {
   /**
-   * The selectable options
+   * The selectable options.
    */
   options: PropTypes.arrayOf(
     PropTypes.shape({
@@ -59,6 +64,10 @@ Select.propTypes = {
    * Clarify the expected input.
    */
   hint: PropTypes.string,
+  /**
+   * Show a un-selectable initial option.
+   */
+  placeholder: PropTypes.string,
   /**
    * The value.
    */
@@ -108,6 +117,7 @@ Select.propTypes = {
 
 Select.defaultProps = {
   hint: undefined,
+  placeholder: undefined,
   value: '',
   feedback: undefined,
   error: undefined,
