@@ -6,51 +6,32 @@ import joinClasses from '../../utils/joinClassNames'
 import safeRest from '../../utils/safeRest'
 
 import styles from './Image.modules.scss'
+import borderStyles from '../Borders.modules.scss'
+
+const getClipPathStyles = (width, height) => {
+  const radius = Math.min(width, height) / 2
+
+  const clipPath = `circle(${radius}px at center)`
+
+  return { clipPath }
+}
 
 /**
  * An image is a graphic representation of something.
  */
+const Image = ({ src, width, height, alt, rounded, ...rest }) => {
+  const isCircle = rounded === 'circle'
+  const isSquare = width === height
 
-const ImageCicularlyMasked = ({ y, x, children }) => {
-  const smaller = Math.min(x, y)
-  // const perfectRadius = Math.sqrt(smaller / 100) * 90
+  const classes = joinClasses(
+    styles.fluid,
+    rounded === 'corners' && borderStyles.rounded,
+    isCircle && isSquare && borderStyles.circular
+  )
 
-  const perfectRadius = smaller / 2
-
-  const getStyle = () => {
-    const css = {}
-
-    if (x === y) {
-      css.borderRadius = '50%'
-    }
-
-    if (x > y || x < y) {
-      css.clipPath = `circle(${perfectRadius}px at center)`
-    }
-
-    return {
-      style: { ...css },
-    }
-  }
+  const style = isCircle && !isSquare ? getClipPathStyles(width, height) : undefined
 
   return (
-    <div width={smaller} height={smaller} className={styles.wrapper}>
-      {React.cloneElement(children, getStyle())}
-    </div>
-  )
-}
-
-ImageCicularlyMasked.propTypes = {
-  x: PropTypes.number.isRequired,
-  y: PropTypes.number.isRequired,
-  children: PropTypes.node.isRequired,
-}
-
-const Image = ({ src, width, height, alt, rounded, fluid, ...rest }) => {
-  const isCircle = rounded === 'circle'
-  const classes = joinClasses(fluid && styles.fluid, isCircle ? styles.circle : styles.corners)
-
-  const hidratedImage = (
     <img
       {...safeRest(rest)}
       src={src}
@@ -58,17 +39,9 @@ const Image = ({ src, width, height, alt, rounded, fluid, ...rest }) => {
       height={height}
       alt={alt}
       className={classes}
+      style={style}
     />
   )
-
-  if (isCircle) {
-    return (
-      <ImageCicularlyMasked y={height} x={width}>
-        {hidratedImage}
-      </ImageCicularlyMasked>
-    )
-  }
-  return hidratedImage
 }
 
 Image.propTypes = {
@@ -92,14 +65,9 @@ Image.propTypes = {
    * Makes the border of the image rounded (4pxs)
    */
   rounded: PropTypes.oneOf(['circle', 'corners']),
-  /**
-   * Makes the image be fluid
-   */
-  fluid: PropTypes.bool,
 }
 
 Image.defaultProps = {
-  fluid: false,
   rounded: undefined,
 }
 

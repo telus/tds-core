@@ -11,39 +11,34 @@ describe('Image', () => {
     height: 200,
   }
 
-  const dummyClass = 'dummy-class'
   const doShallow = (newProps = {}) => shallow(<Image {...defaultProps} {...newProps} />)
 
-  it.skip('renders', () => {
+  it('renders', () => {
     const image = doShallow({})
 
     expect(image).toMatchSnapshot()
   })
 
-  it('returns the image rounded', () => {
+  it('rounds 4 corners', () => {
     const image = doShallow({ rounded: 'corners' })
-    expect(image).toHaveClassName('corners')
+
+    expect(image).toHaveClassName('rounded')
   })
 
-  it.skip('returns the circular image', () => {
-    const image = doShallow({ rounded: 'circle' })
-    expect(image).toHaveClassName('circle')
-  })
+  describe('circular masking', () => {
+    it('applies 50% border radius when the image is square', () => {
+      const image = doShallow({ rounded: 'circle', width: 50, height: 50 })
 
-  it('should set width and height', () => {
-    const image = doShallow({ width: 300, height: 300 })
-    expect(image).toHaveProp('width', 300)
-    expect(image).toHaveProp('height', 300)
-  })
+      expect(image).toHaveClassName('circular')
+    })
 
-  it('should not be able to pass custom className', () => {
-    const image = doShallow({ className: dummyClass })
-    expect(image).not.toHaveClassName(dummyClass)
-  })
+    it('applies a circular clip when the image is not a square', () => {
+      let image = doShallow({ rounded: 'circle', width: 50, height: 60 })
+      expect(image).toHaveStyle('clipPath', 'circle(25px at center)')
 
-  it('must render fluidly, it must be boolean', () => {
-    const image = doShallow({ fluid: true })
-    expect(image).toHaveClassName('fluid')
+      image = doShallow({ rounded: 'circle', width: 60, height: 50 })
+      expect(image).toHaveStyle('clipPath', 'circle(25px at center)')
+    })
   })
 
   it('passed additional attributes to image element', () => {
@@ -55,6 +50,6 @@ describe('Image', () => {
   it('does not allow custom CSS', () => {
     const image = doShallow({ className: 'my-custom-class', style: { color: 'purple' } })
     expect(image).not.toHaveProp('className', 'my-custom-class')
-    expect(image).not.toHaveProp('style')
+    expect(image).not.toHaveStyle('color', 'purple')
   })
 })
