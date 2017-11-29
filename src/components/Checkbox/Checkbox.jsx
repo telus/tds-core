@@ -15,7 +15,15 @@ import displayStyles from '../Display.modules.scss'
 class Checkbox extends React.Component {
   state = {
     checked: this.props.checked,
-    focused: false,
+    focus: false,
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.state.checked !== nextProps.checked) {
+      this.setState({
+        checked: nextProps.checked,
+      })
+    }
   }
 
   onChange = event => {
@@ -30,16 +38,28 @@ class Checkbox extends React.Component {
     }
   }
 
-  onFocus = () => {
-    this.setState({ focused: true })
+  onFocus = event => {
+    const { onFocus } = this.props
+
+    this.setState({ focus: true })
+
+    if (onFocus) {
+      onFocus(event)
+    }
   }
 
-  onBlur = () => {
-    this.setState({ focused: false })
+  onBlur = event => {
+    const { onBlur } = this.props
+
+    this.setState({ focus: false })
+
+    if (onBlur) {
+      onBlur(event)
+    }
   }
 
   render() {
-    const { label, checked, ...rest } = this.props
+    const { label, ...rest } = this.props
     const checkboxId = generateId(rest.id, rest.name, label)
 
     return (
@@ -48,7 +68,7 @@ class Checkbox extends React.Component {
           <span
             className={joinClassNames(
               this.state.checked ? styles.checked : styles.unchecked,
-              this.state.focused && styles.focused
+              this.state.focus && styles.focused
             )}
             data-testid="fake-checkbox"
           >
@@ -78,11 +98,15 @@ Checkbox.propTypes = {
   label: PropTypes.string.isRequired,
   checked: PropTypes.bool,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
+  onBlur: PropTypes.func,
 }
 
 Checkbox.defaultProps = {
   checked: false,
   onChange: undefined,
+  onFocus: undefined,
+  onBlur: undefined,
 }
 
 export default Checkbox

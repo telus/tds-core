@@ -69,13 +69,9 @@ const renderHelper = (helper, helperId, feedback, value) => {
 }
 
 class FormField extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      value: props.value,
-      focus: false,
-    }
+  state = {
+    value: this.props.value,
+    focus: false,
   }
 
   componentWillReceiveProps(nextProps) {

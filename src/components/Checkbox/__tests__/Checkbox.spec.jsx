@@ -21,8 +21,8 @@ describe('Checkbox', () => {
       findFakeCheckbox: () => checkbox.find('[data-testid="fake-checkbox"]'),
       check: () => findCheckboxElement().simulate('change', { target: { checked: true } }),
       uncheck: () => findCheckboxElement().simulate('change', { target: { checked: false } }),
-      focus: () => findCheckboxElement().simulate('focus'),
-      blur: () => findCheckboxElement().simulate('blur'),
+      focus: (focusEvent = {}) => findCheckboxElement().simulate('focus', focusEvent),
+      blur: (blurEvent = {}) => findCheckboxElement().simulate('blur', blurEvent),
     }
   }
 
@@ -109,19 +109,27 @@ describe('Checkbox', () => {
       expect(findFakeCheckbox().find(DecorativeIcon)).toBeEmpty()
     })
 
-    it('triggers a change handler when checked or unchecked', () => {
-      const onChangeSpy = jest.fn()
-      const { check, uncheck } = doMount({ onChange: onChangeSpy })
+    it('notifies when it is checked or unchecked', () => {
+      const onChangeMock = jest.fn()
+      const { check, uncheck } = doMount({ onChange: onChangeMock })
 
       check()
-      expect(onChangeSpy).toHaveBeenCalledWith(
+      expect(onChangeMock).toHaveBeenCalledWith(
         expect.objectContaining({ target: { checked: true } })
       )
 
       uncheck()
-      expect(onChangeSpy).toHaveBeenCalledWith(
+      expect(onChangeMock).toHaveBeenCalledWith(
         expect.objectContaining({ target: { checked: false } })
       )
+    })
+
+    it('can receive a new value from a parent component', () => {
+      const { checkbox, findCheckboxElement } = doMount({ checked: false })
+
+      checkbox.setProps({ checked: true })
+
+      expect(findCheckboxElement()).toHaveProp('checked', true)
     })
   })
 
@@ -135,6 +143,26 @@ describe('Checkbox', () => {
       blur()
       expect(findFakeCheckbox()).not.toHaveClassName('focused')
       expect(findFakeCheckbox()).toHaveClassName('unchecked')
+    })
+
+    it('will notify when focus is gained', () => {
+      const onFocusMock = jest.fn()
+      const event = { target: { value: 'the value' } }
+
+      const { focus } = doMount({ onFocus: onFocusMock })
+      focus(event)
+
+      expect(onFocusMock).toHaveBeenCalledWith(expect.objectContaining(event))
+    })
+
+    it('will notify when focus is lost', () => {
+      const onBlurMock = jest.fn()
+      const event = { target: { value: 'the value' } }
+
+      const { blur } = doMount({ onBlur: onBlurMock })
+      blur(event)
+
+      expect(onBlurMock).toHaveBeenCalledWith(expect.objectContaining(event))
     })
   })
 
