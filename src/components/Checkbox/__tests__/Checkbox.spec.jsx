@@ -196,34 +196,55 @@ describe('Checkbox', () => {
     })
   })
 
-  it.skip('can be disabled', () => {
-    const onChangeMock = jest.fn()
-    const { findFakeCheckbox, check, uncheck } = doMount({ onChange: onChangeMock, disabled: true })
+  describe('disabled', () => {
+    it('can be disabled', () => {
+      const { findFakeCheckbox, findCheckboxElement, checkbox } = doMount({
+        label: 'A label',
+        disabled: true,
+      })
 
-    uncheck()
-    expect(findFakeCheckbox()).toHaveClassName('disabled')
+      expect(checkbox).toContainReact(
+        <ColoredTextProvider colorClassName="disabledText">
+          <Text size="medium">A label</Text>
+        </ColoredTextProvider>
+      )
+      expect(findCheckboxElement()).toHaveProp('disabled', true)
+      expect(findFakeCheckbox()).toHaveClassName('disabled')
+    })
 
-    check()
-    expect(findFakeCheckbox()).toHaveClassName('disabledChecked')
+    it('can be checked and disabled', () => {
+      const { findFakeCheckbox, findCheckboxElement, checkbox } = doMount({
+        label: 'A label',
+        checked: true,
+        disabled: true,
+      })
+
+      expect(checkbox).toContainReact(
+        <ColoredTextProvider colorClassName="disabledText">
+          <Text size="medium">A label</Text>
+        </ColoredTextProvider>
+      )
+      expect(findCheckboxElement()).toHaveProp('disabled', true)
+      expect(findFakeCheckbox()).toHaveClassName('disabledChecked')
+    })
   })
 
-  //
-  // it('passes additional attributes to the element', () => {
-  //   const checkbox = doShallow({
-  //     disabled: 'true',
-  //     'data-some-attr': 'some value',
-  //   })
-  //   expect(findInputElement(checkbox)).toHaveProp('disabled', 'true')
-  //   expect(findInputElement(checkbox)).toHaveProp('data-some-attr', 'some value')
-  // })
-  //
-  // it('does not allow custom CSS', () => {
-  //   const checkbox = doShallow({
-  //     className: 'my-custom-class',
-  //     style: { color: 'hotpink' },
-  //   })
-  //
-  //   expect(findInputElement(checkbox)).not.toHaveProp('className', 'my-custom-class')
-  //   expect(findInputElement(checkbox)).not.toHaveProp('style')
-  // })
+  it('passes additional attributes to the checkbox', () => {
+    const { findCheckboxElement } = doMount({
+      disabled: true,
+      'data-some-attr': 'some value',
+    })
+    expect(findCheckboxElement()).toHaveProp('disabled', true)
+    expect(findCheckboxElement()).toHaveProp('data-some-attr', 'some value')
+  })
+
+  it('does not allow custom CSS', () => {
+    const { findCheckboxElement } = doMount({
+      className: 'my-custom-class',
+      style: { color: 'hotpink' },
+    })
+
+    expect(findCheckboxElement()).not.toHaveProp('className', 'my-custom-class')
+    expect(findCheckboxElement()).not.toHaveProp('style')
+  })
 })

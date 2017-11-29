@@ -15,19 +15,30 @@ import displayStyles from '../Display.modules.scss'
 import messagingStyles from '../Messaging.modules.scss'
 
 const getClassNames = (checked, focus, feedback, disabled) => {
+  if (disabled) {
+    return checked ? styles.disabledChecked : styles.disabled
+  }
+
   return joinClassNames(
     checked ? styles.checked : styles.unchecked,
     focus && styles.focused,
-    feedback === 'error' && !checked && styles.error,
-    disabled && styles.disabled
+    feedback === 'error' && !checked && styles.error
   )
 }
-const renderLabel = (label, feedback, checked) => {
+const renderLabel = (label, feedback, checked, disabled) => {
   const content = <Text size="medium">{label}</Text>
 
   if (feedback === 'error' && !checked) {
     return (
       <ColoredTextProvider colorClassName={messagingStyles.errorText}>
+        {content}
+      </ColoredTextProvider>
+    )
+  }
+
+  if (disabled) {
+    return (
+      <ColoredTextProvider colorClassName={messagingStyles.disabledText}>
         {content}
       </ColoredTextProvider>
     )
@@ -106,7 +117,7 @@ class Checkbox extends React.Component {
               <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
             )}
           </span>
-          {renderLabel(label, feedback, this.state.checked)}
+          {renderLabel(label, feedback, this.state.checked, rest.disabled)}
         </Box>
       </label>
     )
