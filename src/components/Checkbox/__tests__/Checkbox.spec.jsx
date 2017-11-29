@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { mount, render } from 'enzyme'
 
 import Text from '../../Typography/Text/Text'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
@@ -20,7 +20,7 @@ describe('Checkbox', () => {
       label: checkbox.find('label'),
       findCheckboxElement,
       findFakeCheckbox: () => checkbox.find('[data-testid="fake-checkbox"]'),
-
+      findColoredLabel: () => checkbox.find(ColoredTextProvider),
       check: () => findCheckboxElement().simulate('change', { target: { checked: true } }),
       uncheck: () => findCheckboxElement().simulate('change', { target: { checked: false } }),
       focus: (focusEvent = {}) => findCheckboxElement().simulate('focus', focusEvent),
@@ -28,12 +28,11 @@ describe('Checkbox', () => {
     }
   }
 
-  // it('renders', () => {
-  //   const checkbox = doShallow()
-  //
-  //   expect(checkbox).toMatchSnapshot()
-  // })
-  //
+  it('renders', () => {
+    const checkbox = render(<Checkbox label="A label" />)
+
+    expect(checkbox).toMatchSnapshot()
+  })
 
   it('must have a label', () => {
     const { label } = doMount({ label: 'Some label' })
@@ -170,19 +169,18 @@ describe('Checkbox', () => {
 
   describe('error', () => {
     it('can have an error feedback state', () => {
-      const { checkbox, findFakeCheckbox } = doMount({ label: 'Some error', feedback: 'error' })
+      const { findFakeCheckbox, findColoredLabel } = doMount({
+        label: 'Some error',
+        feedback: 'error',
+      })
 
-      expect(checkbox).toContainReact(
-        <ColoredTextProvider colorClassName="errorText">
-          <Text size="medium">Some error</Text>
-        </ColoredTextProvider>
-      )
-
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText')
       expect(findFakeCheckbox()).toHaveClassName('error')
+      expect(findFakeCheckbox()).not.toHaveClassName('unchecked')
     })
 
     it('does not appear as an error when it is checked', () => {
-      const { checkbox, findFakeCheckbox, check } = doMount({
+      const { findFakeCheckbox, findColoredLabel, check } = doMount({
         label: 'Some error',
         feedback: 'error',
         checked: false,
@@ -190,43 +188,21 @@ describe('Checkbox', () => {
 
       check()
 
-      expect(checkbox.find(ColoredTextProvider)).toBeEmpty()
+      expect(findColoredLabel()).toBeEmpty()
       expect(findFakeCheckbox()).toHaveClassName('checked')
       expect(findFakeCheckbox()).not.toHaveClassName('error')
     })
   })
 
-  describe('disabled', () => {
-    it('can be disabled', () => {
-      const { findFakeCheckbox, findCheckboxElement, checkbox } = doMount({
-        label: 'A label',
-        disabled: true,
-      })
-
-      expect(checkbox).toContainReact(
-        <ColoredTextProvider colorClassName="disabledText">
-          <Text size="medium">A label</Text>
-        </ColoredTextProvider>
-      )
-      expect(findCheckboxElement()).toHaveProp('disabled', true)
-      expect(findFakeCheckbox()).toHaveClassName('disabled')
+  it('can be disabled', () => {
+    const { findFakeCheckbox, findCheckboxElement, findColoredLabel } = doMount({
+      label: 'A label',
+      disabled: true,
     })
 
-    it('can be checked and disabled', () => {
-      const { findFakeCheckbox, findCheckboxElement, checkbox } = doMount({
-        label: 'A label',
-        checked: true,
-        disabled: true,
-      })
-
-      expect(checkbox).toContainReact(
-        <ColoredTextProvider colorClassName="disabledText">
-          <Text size="medium">A label</Text>
-        </ColoredTextProvider>
-      )
-      expect(findCheckboxElement()).toHaveProp('disabled', true)
-      expect(findFakeCheckbox()).toHaveClassName('disabledChecked')
-    })
+    expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
+    expect(findCheckboxElement()).toHaveProp('disabled', true)
+    expect(findFakeCheckbox()).toHaveClassName('disabled')
   })
 
   it('passes additional attributes to the checkbox', () => {

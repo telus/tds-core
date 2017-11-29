@@ -9,6 +9,7 @@ import Text from '../Typography/Text/Text'
 import Box from '../Box/Box'
 import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
+import Flexbox from '../Flexbox/Flexbox'
 
 import styles from './Checkbox.modules.scss'
 import displayStyles from '../Display.modules.scss'
@@ -16,32 +17,38 @@ import messagingStyles from '../Messaging.modules.scss'
 
 const getClassNames = (checked, focus, feedback, disabled) => {
   if (disabled) {
-    return checked ? styles.disabledChecked : styles.disabled
+    return styles.disabled
   }
 
-  return joinClassNames(
-    checked ? styles.checked : styles.unchecked,
-    focus && styles.focused,
-    feedback === 'error' && !checked && styles.error
-  )
+  let className
+  if (checked) {
+    className = styles.checked
+  } else if (feedback === 'error') {
+    className = styles.error
+  } else {
+    className = styles.unchecked
+  }
+
+  return joinClassNames(className, focus && styles.focused)
 }
+
+const renderColoredLabel = (color, content) => (
+  <ColoredTextProvider colorClassName={color}>
+    <Flexbox direction="row" dangerouslyAddClassName={styles.alignCenter}>
+      {content}
+    </Flexbox>
+  </ColoredTextProvider>
+)
+
 const renderLabel = (label, feedback, checked, disabled) => {
   const content = <Text size="medium">{label}</Text>
 
   if (feedback === 'error' && !checked) {
-    return (
-      <ColoredTextProvider colorClassName={messagingStyles.errorText}>
-        {content}
-      </ColoredTextProvider>
-    )
+    return renderColoredLabel(messagingStyles.errorText, content)
   }
 
   if (disabled) {
-    return (
-      <ColoredTextProvider colorClassName={messagingStyles.disabledText}>
-        {content}
-      </ColoredTextProvider>
-    )
+    return renderColoredLabel(messagingStyles.disabledText, content)
   }
 
   return content
@@ -98,7 +105,7 @@ class Checkbox extends React.Component {
 
     return (
       <label data-no-global-styles htmlFor={checkboxId.identity()}>
-        <Box inline between={3}>
+        <Box inline between={3} dangerouslyAddClassName={styles.alignCenter}>
           <span
             className={getClassNames(this.state.checked, this.state.focus, feedback, rest.disabled)}
             data-testid="fake-checkbox"
@@ -117,6 +124,7 @@ class Checkbox extends React.Component {
               <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
             )}
           </span>
+
           {renderLabel(label, feedback, this.state.checked, rest.disabled)}
         </Box>
       </label>
