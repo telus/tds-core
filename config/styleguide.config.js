@@ -140,10 +140,10 @@ module.exports = {
         {
           name: 'Content',
           components() {
-            return [
+            return compact([
               path.resolve('src/components/Card/Card.jsx'),
-              toggleByEnv('Image', path.resolve('src/components/Image/Image.jsx'), undefined),
-            ]
+              toggleByEnv('Image', path.resolve('src/components/Image/Image.jsx')),
+            ])
           },
           sections: compact([
             {
