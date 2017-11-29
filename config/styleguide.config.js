@@ -140,7 +140,10 @@ module.exports = {
         {
           name: 'Content',
           components() {
-            return [path.resolve('src/components/Card/Card.jsx')]
+            return [
+              path.resolve('src/components/Card/Card.jsx'),
+              toggleByEnv('Image', path.resolve('src/components/Image/Image.jsx'), undefined),
+            ]
           },
           sections: compact([
             {
@@ -163,6 +166,7 @@ module.exports = {
                 ]
               },
             },
+
             {
               name: 'Expand collapse',
               components() {
@@ -173,14 +177,14 @@ module.exports = {
                 ]
               },
             },
-            {
-              name: 'Media',
-              components() {
-                return compact([
-                  toggleByEnv('Image', path.resolve('src/components/Image/Image.jsx'), undefined),
-                ])
-              },
-            },
+            // {
+            //   name: 'Media',
+            //   components() {
+            //     return compact([
+            //       toggleByEnv('Image', path.resolve('src/components/Image/Image.jsx'), undefined),
+            //     ])
+            //   },
+            // },
             {
               name: 'Dividers',
               components() {

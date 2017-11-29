@@ -27,9 +27,12 @@
   align-items: flex-start;
 }
 
-.docs_image_sample {
+[class*='rsg--'].docs_image_sample {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // padding: 20px;
 }

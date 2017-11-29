@@ -1,6 +1,6 @@
 
 
 ```jsx { "props": { "className": "docs_image_sample" }}
-<Image src={'https://images.contentful.com/qqswi6c8cvkj/6x5TmicNocYcYMmWk2iKKk/0d61c8caf2460dbc59280e1493780570/Lifestyle_2Girls_RoofTop_Selfie_d.jpg?w=300&h=300'} alt="Two happy people taking a selfie" rounded/>
+<Image src="https://image.shutterstock.com/z/stock-vector-vertical-rectangular-red-white-motivation-read-sci-fibook-poster-based-in-vintage-retro-style-keep-550670074.jpg" alt="Two happy people taking a selfie" rounded="corners" width={287} height={490}/>
 
 ```

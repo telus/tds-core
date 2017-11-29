@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
 import joinClasses from '../../utils/joinClassNames'
-import { warn } from '../../utils/warn'
 
 import safeRest from '../../utils/safeRest'
 
@@ -11,32 +11,46 @@ import styles from './Image.modules.scss'
  * An image is a graphic representation of something.
  */
 
-const Image = ({
-  src,
-  width,
-  height,
-  alt,
-  rounded,
-  circular,
-  fluid,
-  dangerouslyAddClassName,
-  ...rest
-}) => {
-  if (rounded && circular) {
-    warn(
-      'Image',
-      'The props `rounded` and `circular` cannot be used together. `rounded` will be overwritten'
-    )
+const ImageCicularlyMasked = ({ y, x, children }) => {
+  const smaller = Math.min(x, y)
+  // const perfectRadius = Math.sqrt(smaller / 100) * 90
+
+  const perfectRadius = smaller / 2
+
+  const getStyle = () => {
+    const css = {}
+
+    if (x === y) {
+      css.borderRadius = '50%'
+    }
+
+    if (x > y || x < y) {
+      css.clipPath = `circle(${perfectRadius}px at center)`
+    }
+
+    return {
+      style: { ...css },
+    }
   }
 
-  const classes = joinClasses(
-    styles[fluid && 'fluid'],
-    styles[circular && 'circular'],
-    styles[rounded && !circular && 'rounded'],
-    dangerouslyAddClassName
-  )
-
   return (
+    <div width={smaller} height={smaller} className={styles.wrapper}>
+      {React.cloneElement(children, getStyle())}
+    </div>
+  )
+}
+
+ImageCicularlyMasked.propTypes = {
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  children: PropTypes.node.isRequired,
+}
+
+const Image = ({ src, width, height, alt, rounded, fluid, ...rest }) => {
+  const isCircle = rounded === 'circle'
+  const classes = joinClasses(fluid && styles.fluid, isCircle ? styles.circle : styles.corners)
+
+  const hidratedImage = (
     <img
       {...safeRest(rest)}
       src={src}
@@ -46,6 +60,15 @@ const Image = ({
       className={classes}
     />
   )
+
+  if (isCircle) {
+    return (
+      <ImageCicularlyMasked y={height} x={width}>
+        {hidratedImage}
+      </ImageCicularlyMasked>
+    )
+  }
+  return hidratedImage
 }
 
 Image.propTypes = {
@@ -60,36 +83,24 @@ Image.propTypes = {
   /**
    * The width attribute from img element tag
    */
-  width: PropTypes.number,
+  width: PropTypes.number.isRequired,
   /**
    * The height attribute from img element tag
    */
-  height: PropTypes.number,
+  height: PropTypes.number.isRequired,
   /**
    * Makes the border of the image rounded (4pxs)
    */
-  rounded: PropTypes.bool,
-  /**
-   * Transform the image circular
-   */
-  circular: PropTypes.bool,
+  rounded: PropTypes.oneOf(['circle', 'corners']),
   /**
    * Makes the image be fluid
    */
   fluid: PropTypes.bool,
-  /**
-   * Can dangerously pass a custom css className
-   */
-  dangerouslyAddClassName: PropTypes.string,
 }
 
 Image.defaultProps = {
+  fluid: false,
   rounded: undefined,
-  circular: undefined,
-  fluid: undefined,
-  width: undefined,
-  height: undefined,
-  dangerouslyAddClassName: undefined,
 }
 
 export default Image

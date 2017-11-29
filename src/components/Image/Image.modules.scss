@@ -1,12 +1,19 @@
-.rounded {
+.corners {
   border-radius: 4px;
-}
-
-.circular {
-  border-radius: 50%;
 }
 
 .fluid {
   height: auto;
   max-width: 100%;
+}
+
+.circle {
+  clip-path: circle(100px at center);
+}
+
+.wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
