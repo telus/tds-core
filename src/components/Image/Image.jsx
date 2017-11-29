@@ -2,19 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import joinClasses from '../../utils/joinClassNames'
-
+import { warn } from '../../utils/warn'
 import safeRest from '../../utils/safeRest'
 
 import styles from './Image.modules.scss'
 import borderStyles from '../Borders.modules.scss'
-
-const getClipPathStyles = (width, height) => {
-  const radius = Math.min(width, height) / 2
-
-  const clipPath = `circle(${radius}px at center)`
-
-  return { clipPath }
-}
 
 /**
  * An image is a graphic representation of something.
@@ -26,10 +18,15 @@ const Image = ({ src, width, height, alt, rounded, ...rest }) => {
   const classes = joinClasses(
     styles.fluid,
     rounded === 'corners' && borderStyles.rounded,
-    isCircle && isSquare && borderStyles.circular
+    isCircle && borderStyles.circular
   )
 
-  const style = isCircle && !isSquare ? getClipPathStyles(width, height) : undefined
+  if (isCircle && !isSquare) {
+    warn(
+      'Image',
+      'rounded="circle" is not supported for non-square images. Please provide a square image, otherwise the resulting shape will not a circle.'
+    )
+  }
 
   return (
     <img
@@ -39,7 +36,6 @@ const Image = ({ src, width, height, alt, rounded, ...rest }) => {
       height={height}
       alt={alt}
       className={classes}
-      style={style}
     />
   )
 }

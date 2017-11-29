@@ -1,7 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import { warn } from '../../../utils/warn'
 
 import Image from '../Image'
+
+jest.mock('../../../utils/warn')
 
 describe('Image', () => {
   const defaultProps = {
@@ -26,18 +29,16 @@ describe('Image', () => {
   })
 
   describe('circular masking', () => {
-    it('applies 50% border radius when the image is square', () => {
-      const image = doShallow({ rounded: 'circle', width: 50, height: 50 })
+    it('applies 50% border radius', () => {
+      const image = doShallow({ rounded: 'circle' })
 
       expect(image).toHaveClassName('circular')
     })
 
-    it('applies a circular clip when the image is not a square', () => {
-      let image = doShallow({ rounded: 'circle', width: 50, height: 60 })
-      expect(image).toHaveStyle('clipPath', 'circle(25px at center)')
+    it('shows a warning when the image is not a square', () => {
+      doShallow({ rounded: 'circle', width: 50, height: 60 })
 
-      image = doShallow({ rounded: 'circle', width: 60, height: 50 })
-      expect(image).toHaveStyle('clipPath', 'circle(25px at center)')
+      expect(warn).toHaveBeenCalled()
     })
   })
 
