@@ -8,9 +8,6 @@ import safeRest from '../../utils/safeRest'
 import styles from './Image.modules.scss'
 import borderStyles from '../Borders.modules.scss'
 
-/**
- * An image is a graphic representation of something.
- */
 const Image = ({ src, width, height, alt, rounded, ...rest }) => {
   const isCircle = rounded === 'circle'
   const isSquare = width === height
@@ -42,23 +39,23 @@ const Image = ({ src, width, height, alt, rounded, ...rest }) => {
 
 Image.propTypes = {
   /**
-   * The source attribute from img element tag
+   * The src attribute for the HTML img element.
    */
   src: PropTypes.string.isRequired,
   /**
-   * The alt attribute from img element tag for accessibility
+   * The alt attribute for the HTML img element. Setting this attribute to an empty string (alt="") indicates that this image is not a key part of the content, and that non-visual browsers may omit it from rendering.
    */
   alt: PropTypes.string.isRequired,
   /**
-   * The width attribute from img element tag
+   * The image's width.
    */
   width: PropTypes.number.isRequired,
   /**
-   * The height attribute from img element tag
+   * The image's height.
    */
   height: PropTypes.number.isRequired,
   /**
-   * Makes the border of the image rounded (4pxs)
+   * Apply rounding.
    */
   rounded: PropTypes.oneOf(['circle', 'corners']),
 }
