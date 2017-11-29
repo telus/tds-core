@@ -12,9 +12,8 @@ const breakpoints = {
 }
 
 /**
- * Respond to the device's characteristics, such as the browser viewport size.
+ * Respond to device features, most commonly the browser viewport size.
  *
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.30.0</span>
  */
 const Responsive = ({ minWidth, maxWidth, query, children, ...rest }) => {
   if (!minWidth && !maxWidth) {
@@ -41,11 +40,11 @@ const Responsive = ({ minWidth, maxWidth, query, children, ...rest }) => {
 
 Responsive.propTypes = {
   /**
-   * Set the min-width media query.
+   * Set a min-width media query.
    */
   minWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   /**
-   * Set the max-width media query.
+   * Set a max-width media query.
    */
   maxWidth: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   /**

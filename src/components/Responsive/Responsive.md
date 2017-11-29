@@ -1,47 +1,44 @@
-The Responsive component is a thin wrapper over the [**react-media**](https://github.com/ReactTraining/react-media) community 
-component. We encourage mobile-first development by using the `minWidth` prop exclusively, though you're welcome to use 
-`maxWidth` or any of the other props supplied by **react-media** if the need arises; **note** if you do use props 
-supplied by react-media, you must provide pixel values and not breakpoint keys as used by the Responsive component.
+The `Responsive` component is a thin wrapper over the [**react-media**](https://github.com/ReactTraining/react-media) community 
+component, which "listens for matches to a CSS media query and renders stuff based on whether the query matches or not."
 
-### Breakpoints
+### Responding to browser width
 
-Using the `minWidth` and `maxWidth` props, you can pass a breakpoint key. They represent the following:
+Use `minWidth` and `maxWidth` to configure viewport size ranges. The breakpoint specifiers will be converted to pixel-based
+media queries:
 
-| Breakpoint key | Value as `minWidth` | Value as `maxWidth` |
+| Breakpoint key | `minWidth` media query | `maxWidth` media query |
 | -------------- | ------------------- | ------------------- |
-| `sm` | 576px | 575px |
-| `md` | 768px | 767px |
-| `lg` | 992px | 991px |
-| `xl` | 1200px | 1199px |
+| `sm` | `(min-width: 576px)` | `(max-width: 575px)` |
+| `md` | `(min-width: 768px)` | `(max-width: 767px)` |
+| `lg` | `(min-width: 992px)` | `(max-width: 991px)` |
+| `xl` | `(min-width: 1200px)` | `(max-width: 1199px)` |
 
-### Basic usage
+Use the `query` prop if you need to match on [other media features](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_features). 
+
+### Usage
+
+Use the `render` prop for the common case of rendering a component only when the media query matches.
 
 ```jsx
 <div>
-  <Responsive minWidth="sm" maxWidth="md">
-    <Heading level="h1">Hello I'm a heading in XS and SM</Heading>
-  </Responsive>
-  <Responsive minWidth="md" maxWidth="lg">
-    <Card>
-      Hello I'm a Card in MD
-    </Card>
-  </Responsive>
-  <Responsive minWidth="lg">
-    <Button>Hello I'm a Button in L and XL</Button>
-  </Responsive>
+  <Responsive minWidth="sm" maxWidth="md" render={() => (
+    <Text>The document is at "small".</Text>
+  )}/>
+  <Responsive minWidth="md" render={() => (
+    <Text>The document is at "medium" or above.</Text>
+  )}/>
 </div>
 ```
 
-### Passing a child function
-
-Since the Responsive component wraps **react-media**, you may pass a function as the only child to perform logical 
-operations based on whether or not the query matches the browser viewport.
+For more power use a child function, whose only argument will be a boolean flag that indicates whether the media query 
+matches or not. 
 
 ```jsx
-<Responsive minWidth="sm">
-{
-  (matches) => 
-    matches ? "You're using a large display." : "You're viewing this on mobile."
-}
+<Responsive minWidth="md">
+  {matches => matches ? (
+    <Text>The document is at "medium" or above.</Text>
+  ) : (
+    <Text>The document is less than "medium".</Text>
+  )}
 </Responsive>
 ```
