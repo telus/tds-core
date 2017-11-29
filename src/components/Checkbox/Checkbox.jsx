@@ -8,13 +8,30 @@ import generateId from '../../utils/generateId'
 import Text from '../Typography/Text/Text'
 import Box from '../Box/Box'
 import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
+import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 
 import styles from './Checkbox.modules.scss'
 import displayStyles from '../Display.modules.scss'
+import messagingStyles from '../Messaging.modules.scss'
+
+const renderLabel = (label, feedback) => {
+  const content = <Text size="medium">{label}</Text>
+
+  if (feedback === 'error') {
+    return (
+      <ColoredTextProvider colorClassName={messagingStyles.errorText}>
+        {content}
+      </ColoredTextProvider>
+    )
+  }
+
+  return content
+}
 
 class Checkbox extends React.Component {
   state = {
     checked: this.props.checked,
+    feedback: this.props.feedback,
     focus: false,
   }
 
@@ -28,10 +45,13 @@ class Checkbox extends React.Component {
 
   onChange = event => {
     const { onChange } = this.props
-
     this.setState(({ checked }) => ({
       checked: !checked,
     }))
+
+    if (this.state.feedback === 'error') {
+      this.setState({ feedback: undefined })
+    }
 
     if (onChange) {
       onChange(event)
@@ -68,7 +88,8 @@ class Checkbox extends React.Component {
           <span
             className={joinClassNames(
               this.state.checked ? styles.checked : styles.unchecked,
-              this.state.focus && styles.focused
+              this.state.focus && styles.focused,
+              this.state.feedback && styles.error
             )}
             data-testid="fake-checkbox"
           >
@@ -86,8 +107,7 @@ class Checkbox extends React.Component {
               <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
             )}
           </span>
-
-          <Text size="medium">{label}</Text>
+          {renderLabel(label, this.state.feedback)}
         </Box>
       </label>
     )
@@ -97,6 +117,10 @@ class Checkbox extends React.Component {
 Checkbox.propTypes = {
   label: PropTypes.string.isRequired,
   checked: PropTypes.bool,
+  /**
+   * A feedback state.
+   */
+  feedback: PropTypes.oneOf(['error']),
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
@@ -104,6 +128,7 @@ Checkbox.propTypes = {
 
 Checkbox.defaultProps = {
   checked: false,
+  feedback: undefined,
   onChange: undefined,
   onFocus: undefined,
   onBlur: undefined,

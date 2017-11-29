@@ -22,7 +22,7 @@
   background-color: transparent;
 }
 
-.fakeCheckboxError {
+.error {
   composes: fakeCheckbox;
   border: solid 1px $color-cardinal;
   background-color: transparent;

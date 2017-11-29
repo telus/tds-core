@@ -19,6 +19,7 @@ describe('Checkbox', () => {
       label: checkbox.find('label'),
       findCheckboxElement,
       findFakeCheckbox: () => checkbox.find('[data-testid="fake-checkbox"]'),
+
       check: () => findCheckboxElement().simulate('change', { target: { checked: true } }),
       uncheck: () => findCheckboxElement().simulate('change', { target: { checked: false } }),
       focus: (focusEvent = {}) => findCheckboxElement().simulate('focus', focusEvent),
@@ -164,6 +165,12 @@ describe('Checkbox', () => {
 
       expect(onBlurMock).toHaveBeenCalledWith(expect.objectContaining(event))
     })
+  })
+
+  it('can have an error feedback state', () => {
+    const { checkbox } = doMount({ label: 'Some error', feedback: 'error' })
+
+    expect(checkbox.find('[colorClassName="errorText"]')).toBePresent()
   })
 
   //
