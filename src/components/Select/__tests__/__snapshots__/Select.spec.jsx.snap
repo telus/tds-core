@@ -23,11 +23,11 @@ exports[`Select renders 1`] = `
     </label>
   </div>
   <div
-    class="relative"
+    class="wrapper"
   >
     <select
       aria-invalid="false"
-      class="default select height"
+      class="default select positionSelectOnTop height"
       data-no-global-styles="true"
       id="the-select"
     >
@@ -80,11 +80,11 @@ exports[`Select renders with a feedback state and icon 1`] = `
     </label>
   </div>
   <div
-    class="relative"
+    class="wrapper"
   >
     <select
       aria-invalid="true"
-      class="error select height"
+      class="error select positionSelectOnTop height"
       data-no-global-styles="true"
       id="the-select"
     >

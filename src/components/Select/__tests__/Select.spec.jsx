@@ -7,6 +7,7 @@ import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
 import Select from '../Select'
 import Helper from '../../Input/Helper/Helper'
+import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 
 describe('Select', () => {
   const defaultProps = {
@@ -223,14 +224,35 @@ describe('Select', () => {
     })
   })
 
-  it('can be disabled', () => {
-    let findSelectElement = doMount().findSelectElement
-    expect(findSelectElement()).not.toHaveClassName('disabled')
-    expect(findSelectElement()).not.toBeDisabled()
+  it('positions the select on top of the icons so that it can be clicked', () => {
+    const { findSelectElement } = doMount()
 
-    findSelectElement = doMount({ disabled: true }).findSelectElement
-    expect(findSelectElement()).toHaveProp('disabled')
-    expect(findSelectElement()).toBeDisabled()
+    expect(findSelectElement()).toHaveClassName('positionSelectOnTop')
+  })
+
+  describe('disabling', () => {
+    it('deactivates the select', () => {
+      let findSelectElement = doMount().findSelectElement
+      expect(findSelectElement()).not.toHaveClassName('disabled')
+      expect(findSelectElement()).not.toBeDisabled()
+
+      findSelectElement = doMount({ disabled: true }).findSelectElement
+      expect(findSelectElement()).toHaveProp('disabled')
+      expect(findSelectElement()).toBeDisabled()
+    })
+
+    it('removes the positioning of the select so that the disabled treatment is displayed', () => {
+      const { findSelectElement } = doMount({ disabled: true })
+
+      expect(findSelectElement()).not.toHaveClassName('positionSelectOnTop')
+    })
+
+    it('hides the icons', () => {
+      const { select } = doMount({ disabled: true })
+
+      expect(select.find(StandaloneIcon)).toBeEmpty()
+      expect(select.find(DecorativeIcon)).toBeEmpty()
+    })
   })
 
   it('can have an un-selectable placeholder', () => {

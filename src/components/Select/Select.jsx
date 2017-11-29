@@ -11,16 +11,20 @@ import FeedbackIcon from '../FormField/FeedbackIcon'
 
 import styles from './Select.modules.scss'
 import formFieldStyles from '../FormFields.modules.scss'
-import positionStyles from '../Position.modules.scss'
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 
 const Select = ({ options, placeholder, ...props }) => (
   <FormField {...props}>
     {({ className, ...selectProps }, showIcon, feedback) => (
-      <div className={positionStyles.relative}>
+      <div className={styles.wrapper}>
         <select
           {...selectProps}
-          className={joinClassNames(className, styles.select, formFieldStyles.height)}
+          className={joinClassNames(
+            className,
+            styles.select,
+            !selectProps.disabled && styles.positionSelectOnTop,
+            formFieldStyles.height
+          )}
         >
           {placeholder && (
             <option value="" hidden disabled>
@@ -34,13 +38,17 @@ const Select = ({ options, placeholder, ...props }) => (
           ))}
         </select>
 
-        <div className={styles.feedbackIconPosition}>
-          <FeedbackIcon showIcon={showIcon} feedback={feedback} />
-        </div>
+        {!selectProps.disabled && (
+          <div className={styles.feedbackIconPosition}>
+            <FeedbackIcon showIcon={showIcon} feedback={feedback} />
+          </div>
+        )}
 
-        <div className={joinClassNames(iconWrapperStyles.fixLineHeight, styles.caretPosition)}>
-          <DecorativeIcon symbol="caretDown" variant="primary" size={16} />
-        </div>
+        {!selectProps.disabled && (
+          <div className={joinClassNames(iconWrapperStyles.fixLineHeight, styles.caretPosition)}>
+            <DecorativeIcon symbol="caretDown" variant="primary" size={16} />
+          </div>
+        )}
       </div>
     )}
   </FormField>

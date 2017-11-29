@@ -1,3 +1,11 @@
+@import '../../scss/settings/colours';
+
+.wrapper {
+  composes: relative from '../Position.modules.scss';
+
+  background-color: $color-white;
+}
+
 .select {
   // Hide the arrows
   appearance: none;
@@ -8,8 +16,18 @@
   }
 }
 
+.positionSelectOnTop {
+  composes: relative from '../Position.modules.scss';
+
+  z-index: 2;
+
+  background: transparent;
+}
+
 .feedbackIconPosition {
   composes: absolute centerVertically from '../Position.modules.scss';
+
+  z-index: 1;
 
   // FIXME: This value is made up.
   right: 2rem;
@@ -17,6 +35,8 @@
 
 .caretPosition {
   composes: absolute centerVertically from '../Position.modules.scss';
+
+  z-index: 1;
 
   // FIXME: This value is made up.
   right: 1rem;
