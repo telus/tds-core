@@ -16,7 +16,7 @@ import messagingStyles from '../Messaging.modules.scss'
 
 const getClassNames = (checked, focus, feedback, disabled) => {
   if (disabled) {
-    return checked ? styles.checkedDisabled : styles.disabled
+    return checked ? styles.disabledChecked : styles.disabled
   }
 
   let className
@@ -119,7 +119,13 @@ class Radio extends React.Component {
               onFocus={this.onFocus}
               onBlur={this.onBlur}
             />
-            {this.state.checked && <span className={styles.checkedRadio} />}
+
+            {this.state.checked && (
+              <span
+                className={rest.disabled ? styles.innerDisabledChecked : styles.innerChecked}
+                data-testid="fake-inner-radio"
+              />
+            )}
           </span>
 
           {renderLabel(label, feedback, this.state.checked, rest.disabled)}

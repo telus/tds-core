@@ -20,6 +20,7 @@ describe('Radio', () => {
       label: radio.find('label'),
       findRadioElement,
       findFakeRadio: () => radio.find('[data-testid="fake-radio"]'),
+      findFakeInnerRadio: () => radio.find('[data-testid="fake-inner-radio"]'),
       findColoredLabel: () => radio.find(ColoredTextProvider),
       check: () => findRadioElement().simulate('change', { target: { checked: true } }),
       uncheck: () => findRadioElement().simulate('change', { target: { checked: false } }),
@@ -73,25 +74,25 @@ describe('Radio', () => {
     })
   })
 
-  describe.skip('interactivity', () => {
+  describe('interactivity', () => {
     it('can be unchecked', () => {
-      const { findRadioElement, findFakeRadio } = doMount({ checked: false })
+      const { findRadioElement, findFakeRadio, findFakeInnerRadio } = doMount({ checked: false })
+
       expect(findRadioElement()).toHaveProp('checked', false)
       expect(findFakeRadio()).toHaveClassName('unchecked')
+      expect(findFakeInnerRadio()).toBeEmpty()
       expect(findFakeRadio().find(DecorativeIcon)).toBeEmpty()
     })
 
     it('can be checked', () => {
-      const { findRadioElement, findFakeRadio } = doMount({ checked: true })
+      const { findRadioElement, findFakeRadio, findFakeInnerRadio } = doMount({ checked: true })
 
       expect(findRadioElement()).toHaveProp('checked', true)
       expect(findFakeRadio()).toHaveClassName('checked')
-      expect(findFakeRadio()).toContainReact(
-        <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
-      )
+      expect(findFakeInnerRadio()).toHaveClassName('innerChecked')
     })
 
-    it('checks and unchecks when clicking', () => {
+    it.skip('checks and unchecks when clicking', () => {
       const { findRadioElement, findFakeRadio, check, uncheck } = doMount()
 
       check()
@@ -109,7 +110,7 @@ describe('Radio', () => {
       expect(findFakeRadio().find(DecorativeIcon)).toBeEmpty()
     })
 
-    it('notifies when it is checked or unchecked', () => {
+    it.skip('notifies when it is checked or unchecked', () => {
       const onChangeMock = jest.fn()
       const { check, uncheck } = doMount({ onChange: onChangeMock })
 
@@ -124,7 +125,7 @@ describe('Radio', () => {
       )
     })
 
-    it('can receive a new value from a parent component', () => {
+    it.skip('can receive a new value from a parent component', () => {
       const { radio, findRadioElement } = doMount({ checked: false })
 
       radio.setProps({ checked: true })
@@ -193,15 +194,30 @@ describe('Radio', () => {
     })
   })
 
-  it('can be disabled', () => {
-    const { findFakeRadio, findRadioElement, findColoredLabel } = doMount({
-      label: 'A label',
-      disabled: true,
+  describe('disabled', () => {
+    it('can be disabled', () => {
+      const { findFakeRadio, findRadioElement, findColoredLabel } = doMount({
+        label: 'A label',
+        disabled: true,
+      })
+
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
+      expect(findRadioElement()).toHaveProp('disabled', true)
+      expect(findFakeRadio()).toHaveClassName('disabled')
     })
 
-    expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
-    expect(findRadioElement()).toHaveProp('disabled', true)
-    expect(findFakeRadio()).toHaveClassName('disabled')
+    it('can be disabled and checked', () => {
+      const { findFakeRadio, findFakeInnerRadio, findRadioElement, findColoredLabel } = doMount({
+        label: 'A label',
+        disabled: true,
+        checked: true,
+      })
+
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
+      expect(findRadioElement()).toHaveProp('disabled', true)
+      expect(findFakeRadio()).toHaveClassName('disabledChecked')
+      expect(findFakeInnerRadio()).toHaveClassName('innerDisabledChecked')
+    })
   })
 
   it('passes additional attributes to the radio', () => {
