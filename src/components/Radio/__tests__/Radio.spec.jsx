@@ -25,7 +25,6 @@ describe('Radio', () => {
       findFakeInnerRadio: () => radio.find('[data-testid="fake-inner-radio"]'),
       findColoredLabel: () => radio.find(ColoredTextProvider),
       check: () => findRadioElement().simulate('change', { target: { checked: true } }),
-      uncheck: () => findRadioElement().simulate('change', { target: { checked: false } }),
       focus: (focusEvent = {}) => findRadioElement().simulate('focus', focusEvent),
       blur: (blurEvent = {}) => findRadioElement().simulate('blur', blurEvent),
     }
@@ -94,40 +93,27 @@ describe('Radio', () => {
       expect(findFakeInnerRadio()).toHaveClassName('innerChecked')
     })
 
-    it.skip('checks and unchecks when clicking', () => {
-      const { findRadioElement, findFakeRadio, check, uncheck } = doMount()
+    it('checks when clicking', () => {
+      const { findRadioElement, findFakeRadio, findFakeInnerRadio, check } = doMount()
 
       check()
 
       expect(findRadioElement()).toHaveProp('checked', true)
       expect(findFakeRadio()).toHaveClassName('checked')
-      expect(findFakeRadio()).toContainReact(
-        <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
-      )
-
-      uncheck()
-
-      expect(findRadioElement()).toHaveProp('checked', false)
-      expect(findFakeRadio()).toHaveClassName('unchecked')
-      expect(findFakeRadio().find(DecorativeIcon)).toBeEmpty()
+      expect(findFakeInnerRadio()).toHaveClassName('innerChecked')
     })
 
-    it.skip('notifies when it is checked or unchecked', () => {
+    it('notifies when it is checked', () => {
       const onChangeMock = jest.fn()
-      const { check, uncheck } = doMount({ onChange: onChangeMock })
+      const { check } = doMount({ onChange: onChangeMock })
 
       check()
       expect(onChangeMock).toHaveBeenCalledWith(
         expect.objectContaining({ target: { checked: true } })
       )
-
-      uncheck()
-      expect(onChangeMock).toHaveBeenCalledWith(
-        expect.objectContaining({ target: { checked: false } })
-      )
     })
 
-    it.skip('can receive a new value from a parent component', () => {
+    it('can receive a new value from a parent component', () => {
       const { radio, findRadioElement } = doMount({ checked: false })
 
       radio.setProps({ checked: true })
