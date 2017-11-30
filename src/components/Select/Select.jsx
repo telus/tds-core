@@ -46,7 +46,11 @@ const Select = ({ options, placeholder, ...props }) => (
 
         {!selectProps.disabled && (
           <div className={joinClassNames(iconWrapperStyles.fixLineHeight, styles.caretPosition)}>
-            <DecorativeIcon symbol="caretDown" variant="primary" size={16} />
+            <DecorativeIcon
+              symbol="caretDown"
+              variant={feedback === 'error' ? 'error' : 'primary'}
+              size={16}
+            />
           </div>
         )}
       </div>

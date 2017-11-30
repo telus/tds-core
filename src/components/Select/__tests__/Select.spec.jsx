@@ -192,7 +192,9 @@ describe('Select', () => {
     })
 
     it('can have an error feedback state', () => {
-      const { findSelectElement, findFeedbackIconFade } = doMount({ feedback: 'error' })
+      const { select, findSelectElement, findFeedbackIconFade } = doMount({ feedback: 'error' })
+
+      expect(select.find(DecorativeIcon)).toHaveProp('variant', 'error')
       expect(findSelectElement()).toHaveClassName('error')
       expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
