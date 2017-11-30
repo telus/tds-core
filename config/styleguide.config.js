@@ -120,6 +120,7 @@ module.exports = {
           name: 'Layout',
           components() {
             return compact([
+              toggleByEnv('FlexGrid', path.resolve('src/components/FlexGrid/FlexGrid.jsx')),
               path.resolve('src/components/Box/Box.jsx'),
               toggleByEnv('Responsive', path.resolve('src/components/Responsive/Responsive.jsx')),
             ])
@@ -177,14 +178,6 @@ module.exports = {
                 ]
               },
             },
-            // {
-            //   name: 'Media',
-            //   components() {
-            //     return compact([
-            //       toggleByEnv('Image', path.resolve('src/components/Image/Image.jsx'), undefined),
-            //     ])
-            //   },
-            // },
             {
               name: 'Dividers',
               components() {
@@ -339,7 +332,7 @@ module.exports = {
           use: 'babel-loader',
         },
         {
-          test: /\.modules.scss$/,
+          test: /(\.modules\.scss|\.css)$/,
           use: [
             'style-loader',
             {

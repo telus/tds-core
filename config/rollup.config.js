@@ -42,7 +42,7 @@ export default {
     postcss({
       extract: path.resolve('./dist/tds.css'),
       sourceMap: true,
-      extensions: ['.scss'],
+      extensions: ['.scss', '.css'],
       preprocessor: sassPreprocessor,
       plugins: [
         autoprefixer(),

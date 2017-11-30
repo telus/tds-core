@@ -3262,6 +3262,12 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
+flexboxgrid2@^7.0.0-alpha7:
+  version "7.0.0-alpha9"
+  resolved "https://registry.yarnpkg.com/flexboxgrid2/-/flexboxgrid2-7.0.0-alpha9.tgz#f4025e67ef36b2a1e0700af77c94ca3f5eee2ec9"
+  dependencies:
+    normalize.css "^7.0.0"
+
 flush-write-stream@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flush-write-stream/-/flush-write-stream-1.0.2.tgz#c81b90d8746766f1a609a46809946c45dd8ae417"
@@ -5522,6 +5528,10 @@ normalize-url@^1.4.0:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
+normalize.css@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-7.0.0.tgz#abfb1dd82470674e0322b53ceb1aaf412938e4bf"
+
 npm-run-path@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-2.0.2.tgz#35a9232dfa35d7067b4cb2ddf2357b1871536c5f"
@@ -6642,6 +6652,13 @@ react-event-listener@^0.4.5:
     fbjs "^0.8.4"
     prop-types "^15.5.4"
     warning "^3.0.0"
+
+react-flexbox-grid@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-flexbox-grid/-/react-flexbox-grid-2.0.0.tgz#6ffbe30a28fc6113e147715a5adc1f6a6f472e54"
+  dependencies:
+    flexboxgrid2 "^7.0.0-alpha7"
+    prop-types "^15.5.8"
 
 react-group@^1.0.5:
   version "1.0.5"
