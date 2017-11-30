@@ -12,7 +12,6 @@
   min-height: 20px;
   min-width: 20px;
 
-  cursor: pointer;
   outline: 0;
   line-height: 0;
 
@@ -26,6 +25,8 @@
   border-color: $color-shuttle-grey;
   background-color: $color-white;
 
+  cursor: pointer;
+
   &.focused {
     border-color: $color-white;
   }
@@ -35,6 +36,8 @@
   composes: fakeCheckbox;
   border-color: $color-cardinal;
   background-color: $color-white;
+
+  cursor: pointer;
 }
 
 .disabled {
@@ -47,6 +50,8 @@
   composes: fakeCheckbox;
   border-color: $color-accessible-green;
   background-color: $color-accessible-green;
+
+  cursor: pointer;
 }
 
 .focused {
