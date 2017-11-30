@@ -7,7 +7,6 @@ import generateId from '../../utils/generateId'
 
 import Text from '../Typography/Text/Text'
 import Box from '../Box/Box'
-import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Flexbox from '../Flexbox/Flexbox'
 
@@ -17,7 +16,7 @@ import messagingStyles from '../Messaging.modules.scss'
 
 const getClassNames = (checked, focus, feedback, disabled) => {
   if (disabled) {
-    return styles.disabled
+    return checked ? styles.checkedDisabled : styles.disabled
   }
 
   let className
@@ -120,9 +119,7 @@ class Radio extends React.Component {
               onFocus={this.onFocus}
               onBlur={this.onBlur}
             />
-            {this.state.checked && (
-              <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
-            )}
+            {this.state.checked && <span className={styles.checkedRadio} />}
           </span>
 
           {renderLabel(label, feedback, this.state.checked, rest.disabled)}

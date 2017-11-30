@@ -73,10 +73,9 @@ describe('Radio', () => {
     })
   })
 
-  describe('interactivity', () => {
+  describe.skip('interactivity', () => {
     it('can be unchecked', () => {
       const { findRadioElement, findFakeRadio } = doMount({ checked: false })
-
       expect(findRadioElement()).toHaveProp('checked', false)
       expect(findFakeRadio()).toHaveClassName('unchecked')
       expect(findFakeRadio().find(DecorativeIcon)).toBeEmpty()

@@ -4,8 +4,8 @@
   align-items: center;
 }
 
-.fakeCheckbox {
-  composes: thin rounded from '../Borders.modules.scss';
+.fakeRadio {
+  composes: thin circular from '../Borders.modules.scss';
 
   height: 20px;
   width: 20px;
@@ -22,7 +22,7 @@
 }
 
 .unchecked {
-  composes: fakeCheckbox;
+  composes: fakeRadio;
   border-color: $color-shuttle-grey;
   background-color: $color-white;
 
@@ -32,20 +32,31 @@
 }
 
 .error {
-  composes: fakeCheckbox;
+  composes: fakeRadio;
   border-color: $color-cardinal;
   background-color: $color-white;
 }
 
 .disabled {
-  composes: fakeCheckbox;
+  composes: fakeRadio;
   border-color: $color-gainsboro;
   background-color: $color-gainsboro;
+
+  &.checkedRadio {
+    background-color: $color-gainsboro;
+  }
 }
 
 .checked {
-  composes: fakeCheckbox;
-  border-color: $color-accessible-green;
+  composes: fakeRadio;
+  border-color: $color-shuttle-grey;
+  background-color: $color-white;
+}
+
+.checkedRadio {
+  composes: circular from '../Borders.modules.scss';
+  height: 12px;
+  width: 12px;
   background-color: $color-accessible-green;
 }
 
