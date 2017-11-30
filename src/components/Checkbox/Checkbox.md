@@ -11,7 +11,7 @@
 
 ### Getting feedback for an unchecked checkbox
 
-Use the feedback attribute to give the user feedback regarding a missed checked checkbox by highlighting the label and checkbox element.
+Use the feedback attribute to give the user feedback regarding a missed checkbox by highlighting the label and checkbox element.
 
 
 ```

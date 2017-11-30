@@ -4,7 +4,7 @@ const { version } = require('../package.json')
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = ['Responsive', 'Image', 'Checkbox', 'Select', 'Textarea']
+const enabledInStaging = ['Responsive', 'Image', 'Checkbox', 'Radio', 'Select', 'Textarea']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
