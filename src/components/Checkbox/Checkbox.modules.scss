@@ -52,3 +52,16 @@
 .focused {
   box-shadow: 0 0 4px 1px $color-shuttle-grey;
 }
+
+// FIXME: Doubling the specificity to beat global styles.
+.hiddenCheckbox.hiddenCheckbox {
+  // composes: noSpacing from '../Spacing.modules.scss';
+  padding: 0;
+  margin: 0;
+
+  // Set opacity: 0 instead of display: none so that the checkbox can still
+  //  emit focus/blur events
+  opacity: 0;
+  width: 0;
+  height: 0;
+}

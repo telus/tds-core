@@ -27,12 +27,12 @@ const Select = ({ options, placeholder, ...props }) => (
           )}
         >
           {placeholder && (
-            <option value="" hidden disabled>
+            <option value="" hidden disabled data-no-global-styles>
               {placeholder}
             </option>
           )}
           {options.map(({ text, value }) => (
-            <option key={value} value={value}>
+            <option key={value} value={value} data-no-global-styles>
               {text}
             </option>
           ))}

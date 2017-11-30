@@ -185,6 +185,7 @@ class Input extends React.Component {
                 onBlur={this.onBlur}
                 aria-invalid={feedback === 'error' ? 'true' : 'false'}
                 aria-describedby={errorId || helperId || undefined}
+                data-no-global-styles
               />
             </Box>
 

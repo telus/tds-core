@@ -32,11 +32,13 @@ exports[`Select renders 1`] = `
       id="the-select"
     >
       <option
+        data-no-global-styles="true"
         value="value-1"
       >
         text one
       </option>
       <option
+        data-no-global-styles="true"
         value="value-2"
       >
         text two
@@ -89,11 +91,13 @@ exports[`Select renders with a feedback state and icon 1`] = `
       id="the-select"
     >
       <option
+        data-no-global-styles="true"
         value="value-1"
       >
         text one
       </option>
       <option
+        data-no-global-styles="true"
         value="value-2"
       >
         text two

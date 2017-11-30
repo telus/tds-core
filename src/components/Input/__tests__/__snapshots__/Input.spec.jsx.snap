@@ -35,6 +35,7 @@ exports[`Input renders 1`] = `
         <input
           aria-invalid="false"
           class="input"
+          data-no-global-styles="true"
           id="the-input"
           type="text"
           value=""
@@ -80,6 +81,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
         <input
           aria-invalid="true"
           class="input"
+          data-no-global-styles="true"
           id="the-input"
           type="text"
           value=""

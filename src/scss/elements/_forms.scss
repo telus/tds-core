@@ -54,7 +54,7 @@ textarea:not([data-no-global-styles]):focus {
 }
 
 input[type='checkbox']:not([data-no-global-styles]):focus + span::before,
-input[type='radio']:focus + span::before {
+input[type='radio']:not([data-no-global-styles]):focus + span::before {
   @extend %input-focus-style;
 }
 
@@ -66,16 +66,16 @@ select:not([data-no-global-styles]) {
   }
 }
 
-input,
+input:not([data-no-global-styles]),
 select:not([data-no-global-styles]) {
   &:disabled {
-    background-color: $color-athens-grey;
-    border-color: $color-shuttle-grey;
+    background-color: $color-athens-grey !important;
+    border-color: $color-shuttle-grey !important;
   }
 }
 
 select:not([data-no-global-styles]),
-option {
+option:not([data-no-global-styles]) {
   appearance: none;
   background: none;
 }
@@ -98,7 +98,7 @@ label:not([data-no-global-styles]) {
 }
 
 // Prevent IE11 from color placeholders the same as regular text.
-input,
+input:not([data-no-global-styles]),
 textarea:not([data-no-global-styles]) {
   &:-ms-input-placeholder {
     color: GrayText !important;
@@ -184,7 +184,7 @@ textarea:not([data-no-global-styles]) {
     // The .field__control parent element is the same size as the input and
     // is colored white, to support placing form fields on a non-white bg.
     input:not([type='radio']):not([type='checkbox']),
-    select,
+    select:not([data-no-global-styles]),
     textarea:not([data-no-global-styles]) {
       background: transparent;
       margin-bottom: 0;
@@ -253,7 +253,7 @@ $radio-checked-stroke-size: 6px;
   }
 }
 
-[type='radio'],
+[type='radio']:not([data-no-global-styles]),
 [type='checkbox']:not([data-no-global-styles]) {
   @extend %accessible-hide;
 
@@ -325,7 +325,7 @@ $radio-checked-stroke-size: 6px;
   }
 }
 
-[type='radio'] {
+[type='radio']:not([data-no-global-styles]) {
   &:active {
     & + .choice__text {
       &::before {

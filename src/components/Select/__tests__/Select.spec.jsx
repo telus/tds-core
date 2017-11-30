@@ -51,8 +51,16 @@ describe('Select', () => {
       options: [{ text: 'some text', value: 'value-1' }, { text: 'other text', value: 'value-2' }],
     })
 
-    expect(findSelectElement()).toContainReact(<option value="value-1">some text</option>)
-    expect(findSelectElement()).toContainReact(<option value="value-2">other text</option>)
+    expect(findSelectElement()).toContainReact(
+      <option value="value-1" data-no-global-styles>
+        some text
+      </option>
+    )
+    expect(findSelectElement()).toContainReact(
+      <option value="value-2" data-no-global-styles>
+        other text
+      </option>
+    )
   })
 
   describe('label', () => {
@@ -261,7 +269,7 @@ describe('Select', () => {
     const { findSelectElement } = doMount({ placeholder: 'Please select...' })
 
     expect(findSelectElement()).toContainReact(
-      <option value="" disabled hidden>
+      <option value="" disabled hidden data-no-global-styles>
         Please select...
       </option>
     )

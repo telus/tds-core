@@ -13,7 +13,8 @@ exports[`Radio renders 1`] = `
       data-testid="fake-radio"
     >
       <input
-        class="hide"
+        class="hiddenRadio"
+        data-no-global-styles="true"
         id="the-group_the-value"
         name="the-group"
         type="radio"

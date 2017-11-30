@@ -12,7 +12,6 @@ import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextPr
 import Flexbox from '../Flexbox/Flexbox'
 
 import styles from './Checkbox.modules.scss'
-import displayStyles from '../Display.modules.scss'
 import messagingStyles from '../Messaging.modules.scss'
 
 const getClassNames = (checked, focus, feedback, disabled) => {
@@ -115,11 +114,13 @@ class Checkbox extends React.Component {
               id={checkboxId.identity()}
               type="checkbox"
               checked={this.state.checked}
-              className={displayStyles.hide}
+              className={styles.hiddenCheckbox}
               onChange={this.onChange}
               onFocus={this.onFocus}
               onBlur={this.onBlur}
+              data-no-global-styles
             />
+
             {this.state.checked && (
               <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
             )}

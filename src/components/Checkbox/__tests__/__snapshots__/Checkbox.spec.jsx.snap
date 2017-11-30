@@ -13,7 +13,8 @@ exports[`Checkbox renders 1`] = `
       data-testid="fake-checkbox"
     >
       <input
-        class="hide"
+        class="hiddenCheckbox"
+        data-no-global-styles="true"
         id="a-label"
         type="checkbox"
       />

@@ -11,7 +11,6 @@ import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextPr
 import Flexbox from '../Flexbox/Flexbox'
 
 import styles from './Radio.modules.scss'
-import displayStyles from '../Display.modules.scss'
 import messagingStyles from '../Messaging.modules.scss'
 
 const getClassNames = (checked, focus, feedback, disabled) => {
@@ -122,10 +121,11 @@ class Radio extends React.Component {
               name={name}
               value={value}
               checked={this.state.checked}
-              className={displayStyles.hide}
+              className={styles.hiddenRadio}
               onChange={this.onChange}
               onFocus={this.onFocus}
               onBlur={this.onBlur}
+              data-no-global-styles
             />
 
             {this.state.checked && (
