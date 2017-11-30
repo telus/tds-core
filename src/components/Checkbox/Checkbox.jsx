@@ -133,14 +133,35 @@ class Checkbox extends React.Component {
 }
 
 Checkbox.propTypes = {
+  /**
+   * The label.
+   */
   label: PropTypes.string.isRequired,
+  /**
+   * The checked state
+   */
   checked: PropTypes.bool,
   /**
    * A feedback state.
    */
   feedback: PropTypes.oneOf(['error']),
+  /**
+   * A callback function to be invoked when the checkbox is checked or unchecked.
+   *
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
+   */
   onChange: PropTypes.func,
+  /**
+   * A callback function to be invoked when the checkbox receives focus.
+   *
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
+   */
   onFocus: PropTypes.func,
+  /**
+   * A callback function to be invoked when the checkbox loses focus.
+   *
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
+   */
   onBlur: PropTypes.func,
 }
 
