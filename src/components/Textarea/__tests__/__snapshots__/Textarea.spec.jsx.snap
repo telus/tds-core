@@ -23,11 +23,11 @@ exports[`Textarea renders 1`] = `
     </label>
   </div>
   <div
-    class="relative"
+    class="relative preventWidthResizing"
   >
     <textarea
       aria-invalid="false"
-      class="default"
+      class="default preventWidthResizing"
       data-no-global-styles="true"
       id="the-textarea"
     />
@@ -61,11 +61,11 @@ exports[`Textarea renders with a feedback state and icon 1`] = `
     </label>
   </div>
   <div
-    class="relative"
+    class="relative preventWidthResizing"
   >
     <textarea
       aria-invalid="true"
-      class="error"
+      class="error preventWidthResizing"
       data-no-global-styles="true"
       id="the-textarea"
     />

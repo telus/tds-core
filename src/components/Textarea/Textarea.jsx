@@ -2,19 +2,23 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import Tooltip from '../Tooltip/Tooltip'
+import joinClassNames from '../../utils/joinClassNames'
 
+import Tooltip from '../Tooltip/Tooltip'
 import FormField from '../FormField/FormField'
 import FeedbackIcon from '../FormField/FeedbackIcon'
 
 import styles from './Textarea.modules.scss'
 import positionStyles from '../Position.modules.scss'
 
-const Textarea = ({ ...props }) => (
+const Textarea = props => (
   <FormField {...props}>
-    {(textareaProps, showIcon, feedback) => (
-      <div className={positionStyles.relative}>
-        <textarea {...textareaProps} />
+    {({ className, ...textareaProps }, showIcon, feedback) => (
+      <div className={joinClassNames(positionStyles.relative, styles.preventWidthResizing)}>
+        <textarea
+          {...textareaProps}
+          className={joinClassNames(className, styles.preventWidthResizing)}
+        />
 
         <div className={styles.feedbackIconPosition}>
           <FeedbackIcon showIcon={showIcon} feedback={feedback} />
