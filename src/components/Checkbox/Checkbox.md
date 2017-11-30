@@ -1,10 +1,10 @@
 ```
 <Box tag="fieldset" between={2}>
   <legend>Show me deals for...</legend>
-  <Checkbox label="Mobility" />
-  <Checkbox label="Internet" />
-  <Checkbox label="TV" />
-  <Checkbox label="Home Phone" />
+  <Checkbox name="services" value="mobility" label="Mobility" />
+  <Checkbox name="services" value="internet" label="Internet" />
+  <Checkbox name="services" value="tv" label="TV" />
+  <Checkbox name="services" value="home-phone" label="Home Phone" />
 </Box>
 ```
 
@@ -15,5 +15,5 @@ Use the feedback attribute to give the user feedback regarding a missed checked 
 
 
 ```
-  <Checkbox label="I agree to the terms and conditions" feedback="error" />
+  <Checkbox name="terms" value="agree" label="I agree to the terms and conditions" feedback="error" />
 ```

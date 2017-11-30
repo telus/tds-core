@@ -9,6 +9,8 @@ import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTex
 describe('Checkbox', () => {
   const defaultProps = {
     label: 'The checkbox',
+    name: 'the-group-name',
+    value: 'the-value',
   }
   const doMount = (overrides = {}) => {
     const checkbox = mount(<Checkbox {...defaultProps} {...overrides} />)
@@ -29,7 +31,7 @@ describe('Checkbox', () => {
   }
 
   it('renders', () => {
-    const checkbox = render(<Checkbox label="A label" />)
+    const checkbox = render(<Checkbox label="A label" name="the-group-name" value="the-value" />)
 
     expect(checkbox).toMatchSnapshot()
   })
@@ -38,6 +40,13 @@ describe('Checkbox', () => {
     const { label } = doMount({ label: 'Some label' })
 
     expect(label).toContainReact(<Text size="medium">Some label</Text>)
+  })
+
+  it('must have a name and a value', () => {
+    const { findCheckboxElement } = doMount({ name: 'some-checkbox-group', value: 'some-value' })
+
+    expect(findCheckboxElement()).toHaveProp('name', 'some-checkbox-group')
+    expect(findCheckboxElement()).toHaveProp('value', 'some-value')
   })
 
   describe('connecting the label to the checkbox', () => {
@@ -50,26 +59,22 @@ describe('Checkbox', () => {
     it('uses the id when provided', () => {
       const { label, findCheckboxElement } = doMount({
         id: 'the-id',
-        name: 'the-name',
-        label: 'The label',
+        name: 'the-checkbox-group',
+        value: 'the-value',
       })
 
       expect(label).toHaveProp('htmlFor', 'the-id')
       expect(findCheckboxElement()).toHaveProp('id', 'the-id')
     })
 
-    it('uses the name when no id is provided', () => {
-      const { label, findCheckboxElement } = doMount({ name: 'the-name', label: 'The label' })
+    it('uses the name and the value when no id is provided', () => {
+      const { label, findCheckboxElement } = doMount({
+        name: 'the-checkbox-group',
+        value: 'the-value',
+      })
 
-      expect(label).toHaveProp('htmlFor', 'the-name')
-      expect(findCheckboxElement()).toHaveProp('id', 'the-name')
-    })
-
-    it('generates an id from the label when no id or name is provided', () => {
-      const { label, findCheckboxElement } = doMount({ label: 'The label' })
-
-      expect(label).toHaveProp('htmlFor', 'the-label')
-      expect(findCheckboxElement()).toHaveProp('id', 'the-label')
+      expect(label).toHaveProp('htmlFor', 'the-checkbox-group_the-value')
+      expect(findCheckboxElement()).toHaveProp('id', 'the-checkbox-group_the-value')
     })
   })
 

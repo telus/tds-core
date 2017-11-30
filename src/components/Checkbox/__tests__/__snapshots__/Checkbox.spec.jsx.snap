@@ -3,7 +3,7 @@
 exports[`Checkbox renders 1`] = `
 <label
   data-no-global-styles="true"
-  for="a-label"
+  for="the-group-name_the-value"
 >
   <div
     class="betweenRightMarginDesktop-3 inline alignCenter"
@@ -15,8 +15,10 @@ exports[`Checkbox renders 1`] = `
       <input
         class="hiddenCheckbox"
         data-no-global-styles="true"
-        id="a-label"
+        id="the-group-name_the-value"
+        name="the-group-name"
         type="checkbox"
+        value="the-value"
       />
     </span>
     <span

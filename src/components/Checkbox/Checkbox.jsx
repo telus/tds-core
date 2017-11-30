@@ -99,11 +99,17 @@ class Checkbox extends React.Component {
   }
 
   render() {
-    const { label, feedback, ...rest } = this.props
-    const checkboxId = generateId(rest.id, rest.name, label)
+    const { label, name, value, feedback, ...rest } = this.props
+
+    let checkboxId
+    if (rest.id) {
+      checkboxId = generateId(rest.id).identity()
+    } else {
+      checkboxId = generateId(name).postfix(value)
+    }
 
     return (
-      <label data-no-global-styles htmlFor={checkboxId.identity()}>
+      <label data-no-global-styles htmlFor={checkboxId}>
         <Box inline between={3} dangerouslyAddClassName={styles.alignCenter}>
           <span
             className={getClassNames(this.state.checked, this.state.focus, feedback, rest.disabled)}
@@ -111,8 +117,10 @@ class Checkbox extends React.Component {
           >
             <input
               {...safeRest(rest)}
-              id={checkboxId.identity()}
+              id={checkboxId}
               type="checkbox"
+              name={name}
+              value={value}
               checked={this.state.checked}
               className={styles.hiddenCheckbox}
               onChange={this.onChange}
@@ -138,6 +146,14 @@ Checkbox.propTypes = {
    * The label.
    */
   label: PropTypes.string.isRequired,
+  /**
+   * Associate this checkbox with a group. Set as the HTML name attribute.
+   */
+  name: PropTypes.string.isRequired,
+  /**
+   * The value. Must be unique within the group.
+   */
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   /**
    * The checked state
    */
