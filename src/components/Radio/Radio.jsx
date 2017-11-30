@@ -99,11 +99,17 @@ class Radio extends React.Component {
   }
 
   render() {
-    const { label, feedback, ...rest } = this.props
-    const radioId = generateId(rest.id, rest.name, label)
+    const { label, name, value, feedback, ...rest } = this.props
+
+    let radioId
+    if (rest.id) {
+      radioId = generateId(rest.id).identity()
+    } else {
+      radioId = generateId(name).postfix(value)
+    }
 
     return (
-      <label data-no-global-styles htmlFor={radioId.identity()}>
+      <label data-no-global-styles htmlFor={radioId}>
         <Box inline between={3} dangerouslyAddClassName={styles.alignCenter}>
           <span
             className={getClassNames(this.state.checked, this.state.focus, feedback, rest.disabled)}
@@ -111,8 +117,10 @@ class Radio extends React.Component {
           >
             <input
               {...safeRest(rest)}
-              id={radioId.identity()}
+              id={radioId}
               type="radio"
+              name={name}
+              value={value}
               checked={this.state.checked}
               className={displayStyles.hide}
               onChange={this.onChange}
@@ -140,6 +148,14 @@ Radio.propTypes = {
    * The label.
    */
   label: PropTypes.string.isRequired,
+  /**
+   * Associate this radio with a group. Set as the HTML name attribute.
+   */
+  name: PropTypes.string.isRequired,
+  /**
+   * The value. Must be unique within the group.
+   */
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   /**
    * The checked state
    */

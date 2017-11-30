@@ -3,7 +3,7 @@
 exports[`Radio renders 1`] = `
 <label
   data-no-global-styles="true"
-  for="a-label"
+  for="the-group_the-value"
 >
   <div
     class="betweenRightMarginDesktop-3 inline alignCenter"
@@ -14,8 +14,10 @@ exports[`Radio renders 1`] = `
     >
       <input
         class="hide"
-        id="a-label"
+        id="the-group_the-value"
+        name="the-group"
         type="radio"
+        value="the-value"
       />
     </span>
     <span

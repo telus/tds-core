@@ -9,6 +9,8 @@ import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTex
 describe('Radio', () => {
   const defaultProps = {
     label: 'The radio',
+    name: 'radio_group',
+    value: 'the-value',
   }
   const doMount = (overrides = {}) => {
     const radio = mount(<Radio {...defaultProps} {...overrides} />)
@@ -30,7 +32,7 @@ describe('Radio', () => {
   }
 
   it('renders', () => {
-    const radio = render(<Radio label="A label" />)
+    const radio = render(<Radio label="A label" name="the-group" value="the-value" />)
 
     expect(radio).toMatchSnapshot()
   })
@@ -39,6 +41,13 @@ describe('Radio', () => {
     const { label } = doMount({ label: 'Some label' })
 
     expect(label).toContainReact(<Text size="medium">Some label</Text>)
+  })
+
+  it('must have a name and a value', () => {
+    const { findRadioElement } = doMount({ name: 'some-radio-group', value: 'some-value' })
+
+    expect(findRadioElement()).toHaveProp('name', 'some-radio-group')
+    expect(findRadioElement()).toHaveProp('value', 'some-value')
   })
 
   describe('connecting the label to the radio', () => {
@@ -51,26 +60,19 @@ describe('Radio', () => {
     it('uses the id when provided', () => {
       const { label, findRadioElement } = doMount({
         id: 'the-id',
-        name: 'the-name',
-        label: 'The label',
+        name: 'the-radio-group',
+        value: 'the-value',
       })
 
       expect(label).toHaveProp('htmlFor', 'the-id')
       expect(findRadioElement()).toHaveProp('id', 'the-id')
     })
 
-    it('uses the name when no id is provided', () => {
-      const { label, findRadioElement } = doMount({ name: 'the-name', label: 'The label' })
+    it('uses the name and the value when no id is provided', () => {
+      const { label, findRadioElement } = doMount({ name: 'the-radio-group', value: 'the-value' })
 
-      expect(label).toHaveProp('htmlFor', 'the-name')
-      expect(findRadioElement()).toHaveProp('id', 'the-name')
-    })
-
-    it('generates an id from the label when no id or name is provided', () => {
-      const { label, findRadioElement } = doMount({ label: 'The label' })
-
-      expect(label).toHaveProp('htmlFor', 'the-label')
-      expect(findRadioElement()).toHaveProp('id', 'the-label')
+      expect(label).toHaveProp('htmlFor', 'the-radio-group_the-value')
+      expect(findRadioElement()).toHaveProp('id', 'the-radio-group_the-value')
     })
   })
 
