@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio renders 1`] = `
+<label
+  data-no-global-styles="true"
+  for="a-label"
+>
+  <div
+    class="betweenRightMarginDesktop-3 inline alignCenter"
+  >
+    <span
+      class="unchecked"
+      data-testid="fake-radio"
+    >
+      <input
+        class="hide"
+        id="a-label"
+        type="radio"
+      />
+    </span>
+    <span
+      class="medium mediumFont color"
+    >
+      A label
+    </span>
+  </div>
+</label>
+`;

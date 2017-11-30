@@ -1,0 +1,54 @@
+@import '../../scss/settings/colours';
+
+.alignCenter {
+  align-items: center;
+}
+
+.fakeCheckbox {
+  composes: thin rounded from '../Borders.modules.scss';
+
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+
+  cursor: pointer;
+  outline: 0;
+  line-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unchecked {
+  composes: fakeCheckbox;
+  border-color: $color-shuttle-grey;
+  background-color: $color-white;
+
+  &.focused {
+    border-color: $color-white;
+  }
+}
+
+.error {
+  composes: fakeCheckbox;
+  border-color: $color-cardinal;
+  background-color: $color-white;
+}
+
+.disabled {
+  composes: fakeCheckbox;
+  border-color: $color-gainsboro;
+  background-color: $color-gainsboro;
+}
+
+.checked {
+  composes: fakeCheckbox;
+  border-color: $color-accessible-green;
+  background-color: $color-accessible-green;
+}
+
+.focused {
+  box-shadow: 0 0 4px 1px $color-shuttle-grey;
+}
