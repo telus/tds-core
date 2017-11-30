@@ -9,11 +9,11 @@ exports[`Checkbox renders 1`] = `
     class="betweenRightMarginDesktop-3 inline alignCenter"
   >
     <span
-      class="unchecked"
-      data-testid="fake-checkbox"
+      class="fakeCheckbox unchecked"
+      data-testid="fake-input"
     >
       <input
-        class="hiddenCheckbox"
+        class="hiddenInput"
         data-no-global-styles="true"
         id="the-group-name_the-value"
         name="the-group-name"

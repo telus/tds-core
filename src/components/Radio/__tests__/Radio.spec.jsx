@@ -21,7 +21,7 @@ describe('Radio', () => {
       radio,
       label: radio.find('label'),
       findRadioElement,
-      findFakeRadio: () => radio.find('[data-testid="fake-radio"]'),
+      findFakeRadio: () => radio.find('[data-testid="fake-input"]'),
       findFakeInnerRadio: () => radio.find('[data-testid="fake-inner-radio"]'),
       findColoredLabel: () => radio.find(ColoredTextProvider),
       check: () => findRadioElement().simulate('change', { target: { checked: true } }),
@@ -47,6 +47,12 @@ describe('Radio', () => {
 
     expect(findRadioElement()).toHaveProp('name', 'some-radio-group')
     expect(findRadioElement()).toHaveProp('value', 'some-value')
+  })
+
+  it('has a fake radio', () => {
+    const { findFakeRadio } = doMount()
+
+    expect(findFakeRadio()).toHaveClassName('fakeRadio')
   })
 
   describe('connecting the label to the radio', () => {

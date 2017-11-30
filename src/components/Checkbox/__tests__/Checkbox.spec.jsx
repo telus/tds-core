@@ -21,7 +21,7 @@ describe('Checkbox', () => {
       checkbox,
       label: checkbox.find('label'),
       findCheckboxElement,
-      findFakeCheckbox: () => checkbox.find('[data-testid="fake-checkbox"]'),
+      findFakeCheckbox: () => checkbox.find('[data-testid="fake-input"]'),
       findColoredLabel: () => checkbox.find(ColoredTextProvider),
       check: () => findCheckboxElement().simulate('change', { target: { checked: true } }),
       uncheck: () => findCheckboxElement().simulate('change', { target: { checked: false } }),
@@ -47,6 +47,12 @@ describe('Checkbox', () => {
 
     expect(findCheckboxElement()).toHaveProp('name', 'some-checkbox-group')
     expect(findCheckboxElement()).toHaveProp('value', 'some-value')
+  })
+
+  it('has a fake checkbox', () => {
+    const { findFakeCheckbox } = doMount()
+
+    expect(findFakeCheckbox()).toHaveClassName('fakeCheckbox')
   })
 
   describe('connecting the label to the checkbox', () => {
@@ -199,15 +205,29 @@ describe('Checkbox', () => {
     })
   })
 
-  it('can be disabled', () => {
-    const { findFakeCheckbox, findCheckboxElement, findColoredLabel } = doMount({
-      label: 'A label',
-      disabled: true,
+  describe('disabled', () => {
+    it('can be disabled', () => {
+      const { findFakeCheckbox, findCheckboxElement, findColoredLabel } = doMount({
+        label: 'A label',
+        disabled: true,
+      })
+
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
+      expect(findCheckboxElement()).toHaveProp('disabled', true)
+      expect(findFakeCheckbox()).toHaveClassName('disabled')
     })
 
-    expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
-    expect(findCheckboxElement()).toHaveProp('disabled', true)
-    expect(findFakeCheckbox()).toHaveClassName('disabled')
+    it('can be disabled and checked', () => {
+      const { findFakeCheckbox, findCheckboxElement, findColoredLabel } = doMount({
+        label: 'A label',
+        disabled: true,
+        checked: true,
+      })
+
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
+      expect(findCheckboxElement()).toHaveProp('disabled', true)
+      expect(findFakeCheckbox()).toHaveClassName('disabledChecked')
+    })
   })
 
   it('passes additional attributes to the checkbox', () => {
