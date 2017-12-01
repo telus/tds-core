@@ -257,8 +257,8 @@ describe('Select', () => {
       expect(findSelectElement()).not.toHaveClassName('positionSelectOnTop')
     })
 
-    it('hides the icons', () => {
-      const { select } = doMount({ disabled: true })
+    it('hides any icons', () => {
+      const { select } = doMount({ disabled: true, feedback: 'error' })
 
       expect(select.find(StandaloneIcon)).toBeEmpty()
       expect(select.find(DecorativeIcon)).toBeEmpty()

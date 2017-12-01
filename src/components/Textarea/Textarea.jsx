@@ -20,9 +20,11 @@ const Textarea = props => (
           className={joinClassNames(className, styles.preventWidthResizing)}
         />
 
-        <div className={styles.feedbackIconPosition}>
-          <FeedbackIcon showIcon={showIcon} feedback={feedback} />
-        </div>
+        {!textareaProps.disabled && (
+          <div className={styles.feedbackIconPosition}>
+            <FeedbackIcon showIcon={showIcon} feedback={feedback} />
+          </div>
+        )}
       </div>
     )}
   </FormField>

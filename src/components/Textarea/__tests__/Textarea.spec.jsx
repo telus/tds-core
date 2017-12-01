@@ -2,6 +2,7 @@ import React from 'react'
 import { render, mount } from 'enzyme'
 
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
+import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
@@ -213,14 +214,23 @@ describe('Textarea', () => {
     })
   })
 
-  it('can be disabled', () => {
-    let findTextareaElement = doMount().findTextareaElement
-    expect(findTextareaElement()).not.toHaveClassName('disabled')
-    expect(findTextareaElement()).not.toBeDisabled()
+  describe('disabling', () => {
+    it('can be disabled', () => {
+      let findTextareaElement = doMount().findTextareaElement
+      expect(findTextareaElement()).not.toHaveClassName('disabled')
+      expect(findTextareaElement()).not.toBeDisabled()
 
-    findTextareaElement = doMount({ disabled: true }).findTextareaElement
-    expect(findTextareaElement()).toHaveProp('disabled')
-    expect(findTextareaElement()).toBeDisabled()
+      findTextareaElement = doMount({ disabled: true }).findTextareaElement
+      expect(findTextareaElement()).toHaveProp('disabled')
+      expect(findTextareaElement()).toBeDisabled()
+    })
+
+    it('hides any icons', () => {
+      const { textarea } = doMount({ disabled: true, feedback: 'error' })
+
+      expect(textarea.find(StandaloneIcon)).toBeEmpty()
+      expect(textarea.find(DecorativeIcon)).toBeEmpty()
+    })
   })
 
   it('can have an error message', () => {
