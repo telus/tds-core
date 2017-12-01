@@ -14,7 +14,7 @@
 .formField {
   width: 100%;
 
-  composes: noMargin from '../Spacing.modules.scss';
+  margin: 0;
   // This vertical padding fixes an IE11 bug that was causing the input value to jump slightly and get cut off.
   composes: verticalPadding-2 horizontalPadding-3 from '../Box/Box.modules.scss';
 

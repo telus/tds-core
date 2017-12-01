@@ -5,10 +5,10 @@ exports[`Input renders 1`] = `
   class="betweenBottomMarginDesktop-2 stack"
 >
   <div
-    class="row containsTooltip"
+    class="row justifyContentSpaceBetween relative"
   >
     <label
-      class="resetLabel label"
+      data-no-global-styles="true"
       for="the-input"
     >
       <div
@@ -23,25 +23,19 @@ exports[`Input renders 1`] = `
     </label>
   </div>
   <div
-    class="horizontalPaddingDesktop-3 default"
-    data-testid="inputWrapper"
+    class="relative"
   >
+    <input
+      aria-invalid="false"
+      class="default height hideNumberSpinner"
+      data-no-global-styles="true"
+      id="the-input"
+      type="text"
+      value=""
+    />
     <div
-      class="betweenRightMarginDesktop-3 inline sizing"
-    >
-      <div
-        class="fullWidth"
-      >
-        <input
-          aria-invalid="false"
-          class="input"
-          data-no-global-styles="true"
-          id="the-input"
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
+      class="iconsPosition"
+    />
   </div>
 </div>
 `;
@@ -51,10 +45,10 @@ exports[`Input renders with a feedback state and icon 1`] = `
   class="betweenBottomMarginDesktop-2 stack"
 >
   <div
-    class="row containsTooltip"
+    class="row justifyContentSpaceBetween relative"
   >
     <label
-      class="resetLabel label"
+      data-no-global-styles="true"
       for="the-input"
     >
       <div
@@ -69,31 +63,31 @@ exports[`Input renders with a feedback state and icon 1`] = `
     </label>
   </div>
   <div
-    class="horizontalPaddingDesktop-3 error"
-    data-testid="inputWrapper"
+    class="relative"
   >
+    <input
+      aria-invalid="true"
+      class="error height hideNumberSpinner"
+      data-no-global-styles="true"
+      id="the-input"
+      style="padding-right:calc(16px + 2rem)"
+      type="text"
+      value=""
+    />
     <div
-      class="betweenRightMarginDesktop-3 inline sizing"
+      class="iconsPosition"
     >
-      <div
-        class="fullWidth"
-      >
-        <input
-          aria-invalid="true"
-          class="input"
-          data-no-global-styles="true"
-          id="the-input"
-          type="text"
-          value=""
-        />
-      </div>
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
-        <i
-          aria-label="The value of this input field is invalid."
-          class="iconExclamationPointCircle error size16"
-        />
+        <div
+          class="fixLineHeight"
+        >
+          <i
+            aria-label="The value of this input field is invalid."
+            class="iconExclamationPointCircle error size16"
+          />
+        </div>
       </div>
     </div>
   </div>

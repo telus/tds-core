@@ -2,202 +2,38 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
-import Text from '../Typography/Text/Text'
-import Paragraph from '../Typography/Paragraph/Paragraph'
-import Box from '../Box/Box'
-import Flexbox from '../Flexbox/Flexbox'
+import joinClassNames from '../../utils/joinClassNames'
+
 import Tooltip from '../Tooltip/Tooltip'
 import Helper from '../FormField/Helper/Helper'
-import Fade from '../Animation/Fade'
+import FormField from '../FormField/FormField'
+import FeedbackIcon from '../FormField/FeedbackIcon'
 
-import safeRest from '../../utils/safeRest'
-import joinClassNames from '../../utils/joinClassNames'
-import generateId from '../../utils/generateId'
+import addRightPadding from '../FormField/addRightPadding'
 
+import positionStyles from '../Position.modules.scss'
 import formStyles from '../Forms.modules.scss'
 import styles from './Input.modules.scss'
 
-const getWrapperClassName = (feedback, focus, disabled) => {
-  if (disabled) {
-    return styles.disabled
-  }
-
-  if (focus) {
-    return styles.focus
-  }
-
-  if (feedback) {
-    return styles[feedback]
-  }
-
-  return styles.default
-}
-
-const showFeedbackIcon = (feedback, focus) =>
-  (feedback === 'success' || feedback === 'error') && !focus
-
-class Input extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      value: this.props.value,
-      focus: false,
-    }
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (this.state.value !== nextProps.value) {
-      this.setState({
-        value: nextProps.value,
-      })
-    }
-  }
-
-  onChange = event => {
-    const { onChange } = this.props
-
-    this.setState({
-      value: event.target.value,
-    })
-
-    if (onChange) {
-      onChange(event)
-    }
-  }
-
-  onFocus = event => {
-    const { onFocus } = this.props
-
-    this.setState({ focus: true })
-
-    if (onFocus) {
-      onFocus(event)
-    }
-  }
-
-  onBlur = event => {
-    const { onBlur } = this.props
-
-    this.setState({ focus: false })
-
-    if (onBlur) {
-      onBlur(event)
-    }
-  }
-
-  renderLabel(label, hint, inputId) {
-    const labelClassNames = joinClassNames(styles.resetLabel, styles.label)
-
-    return (
-      <label htmlFor={inputId.identity()} className={labelClassNames}>
-        <Box inline between={2} dangerouslyAddClassName={styles.alignCenter}>
-          <Text size="medium" bold>
-            {label}
-          </Text>
-
-          {hint && <Text size="small">{hint}</Text>}
-        </Box>
-      </label>
-    )
-  }
-
-  renderError(error, errorId) {
-    return (
-      <Helper id={errorId} feedback="error">
-        <Paragraph size="small">{error}</Paragraph>
-      </Helper>
-    )
-  }
-
-  renderHelper(helper, helperId, feedback, value) {
-    if (typeof helper === 'function') {
-      return (
-        <div id={helperId}>
-          <Text size="small">{helper(feedback, value)}</Text>
-        </div>
-      )
-    }
-
-    return (
-      <Helper id={helperId} feedback={feedback}>
-        <Text size="small">{helper}</Text>
-      </Helper>
-    )
-  }
-
-  renderIcon(feedback) {
-    if (feedback === 'success') {
-      return (
-        <StandaloneIcon
-          symbol="checkmark"
-          variant="primary"
-          size={16}
-          a11yText="The value of this input field is valid."
+const Input = props => (
+  <FormField {...props}>
+    {({ className, ...inputProps }, showFeedbackIcon, feedback) => (
+      <div className={positionStyles.relative}>
+        <input
+          {...inputProps}
+          className={joinClassNames(className, formStyles.height, styles.hideNumberSpinner)}
+          style={addRightPadding(showFeedbackIcon ? 1 : 0)}
         />
-      )
-    }
 
-    return (
-      <StandaloneIcon
-        symbol="exclamationPointCircle"
-        variant="error"
-        size={16}
-        a11yText="The value of this input field is invalid."
-      />
-    )
-  }
-
-  render() {
-    const { type, label, hint, feedback, error, helper, tooltip, ...rest } = this.props
-
-    const inputId = generateId(rest.id, rest.name, label)
-    const helperId = helper && inputId.postfix('helper')
-    const errorId = error && inputId.postfix('error-message')
-
-    const wrapperClassName = getWrapperClassName(feedback, this.state.focus, rest.disabled)
-
-    const showIcon = showFeedbackIcon(feedback, this.state.focus)
-
-    return (
-      <Box between={2}>
-        <Flexbox direction="row" dangerouslyAddClassName={formStyles.containsTooltip}>
-          {this.renderLabel(label, hint, inputId)}
-          {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
-        </Flexbox>
-
-        {helper && this.renderHelper(helper, helperId, feedback, this.state.value)}
-
-        {error && this.renderError(error, errorId)}
-
-        <Box horizontal={3} dangerouslyAddClassName={wrapperClassName} data-testid="inputWrapper">
-          <Box inline between={3} dangerouslyAddClassName={styles.sizing}>
-            <Box dangerouslyAddClassName={styles.fullWidth}>
-              <input
-                {...safeRest(rest)}
-                id={inputId.identity()}
-                type={type}
-                className={styles.input}
-                value={this.state.value}
-                onChange={this.onChange}
-                onFocus={this.onFocus}
-                onBlur={this.onBlur}
-                aria-invalid={feedback === 'error' ? 'true' : 'false'}
-                aria-describedby={errorId || helperId || undefined}
-                data-no-global-styles
-              />
-            </Box>
-
-            <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
-              {() => this.renderIcon(feedback)}
-            </Fade>
-          </Box>
-        </Box>
-      </Box>
-    )
-  }
-}
+        {!inputProps.disabled && (
+          <div className={styles.iconsPosition}>
+            <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
+          </div>
+        )}
+      </div>
+    )}
+  </FormField>
+)
 
 Input.propTypes = {
   /**
@@ -272,7 +108,7 @@ Input.defaultProps = {
   onBlur: undefined,
 }
 
-// TODO: This is no longer necessary because Helper is exported on its own. Removing this will be a breaking change.
+// TODO: This will no longer necessary once Helper is exported on its own. Removing this will be a breaking change.
 Input.Helper = Helper
 
 export default Input

@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { render, mount } from 'enzyme'
 
 import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
@@ -7,16 +7,30 @@ import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
 import Input from '../Input'
 import Helper from '../../FormField/Helper/Helper'
+import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 
 describe('Input', () => {
   const defaultProps = {
     label: 'The input',
   }
-  const doShallow = (overrides = {}) => shallow(<Input {...defaultProps} {...overrides} />)
   const doRender = (overrides = {}) => render(<Input {...defaultProps} {...overrides} />)
 
-  const findInputElement = input => input.find('input')
-  const findWrapperElement = input => input.find('[data-testid="inputWrapper"]')
+  const doMount = (overrides = {}) => {
+    const input = mount(<Input {...defaultProps} {...overrides} />)
+
+    const findInputElement = () => input.find('input')
+
+    return {
+      input,
+      label: input.find('label'),
+      findFeedbackIconFade: () => input.find(Fade),
+      findHelper: () => input.find(Helper),
+      findInputElement,
+      changeValueTo: value => findInputElement().simulate('change', { target: { value } }),
+      focus: (focusEvent = {}) => findInputElement().simulate('focus', focusEvent),
+      blur: (blurEvent = {}) => findInputElement().simulate('blur', blurEvent),
+    }
+  }
 
   it('renders', () => {
     const input = doRender()
@@ -31,18 +45,18 @@ describe('Input', () => {
   })
 
   it('supports different input types', () => {
-    let input = doShallow()
-    expect(findInputElement(input)).toHaveProp('type', 'text')
+    let findInputElement = doMount().findInputElement
+    expect(findInputElement()).toHaveProp('type', 'text')
 
-    input = doShallow({ type: 'number' })
-    expect(findInputElement(input)).toHaveProp('type', 'number')
+    findInputElement = doMount({ type: 'number' }).findInputElement
+    expect(findInputElement()).toHaveProp('type', 'number')
   })
 
   describe('label', () => {
     it('must have a label', () => {
-      const input = doShallow({ label: 'The label' })
+      const { label } = doMount({ label: 'The label' })
 
-      expect(input.find('label')).toContainReact(
+      expect(label).toContainReact(
         <Text size="medium" bold>
           The label
         </Text>
@@ -50,153 +64,126 @@ describe('Input', () => {
     })
 
     it('can have a short hint', () => {
-      const input = doShallow({ hint: 'The short hint' })
+      const { label } = doMount({ hint: 'The short hint' })
 
-      expect(input.find('label')).toContainReact(<Text size="small">The short hint</Text>)
+      expect(label).toContainReact(<Text size="small">The short hint</Text>)
     })
-  })
-
-  // FIXME: Test for override of the global styles in forms.scss. This can be removed
-  // when the global styles are purged.
-  it('resets the styles of the label to override the global label styles', () => {
-    const input = doShallow()
-
-    expect(input.find('label')).toHaveClassName('resetLabel')
   })
 
   describe('connecting the label to the input', () => {
     it('connects the label to the input', () => {
-      const input = doShallow()
+      const { label, findInputElement } = doMount()
 
-      const label = input.find('label')
-      const inputElement = findInputElement(input)
-
-      expect(label.prop('htmlFor')).toEqual(inputElement.prop('id'))
+      expect(label.prop('htmlFor')).toEqual(findInputElement().prop('id'))
     })
 
     it('uses the id when provided', () => {
-      const input = doShallow({ id: 'the-id', name: 'the-name', label: 'The label' })
+      const { label, findInputElement } = doMount({
+        id: 'the-id',
+        name: 'the-name',
+        label: 'The label',
+      })
 
-      expect(input.find('label')).toHaveProp('htmlFor', 'the-id')
-      expect(findInputElement(input)).toHaveProp('id', 'the-id')
+      expect(label).toHaveProp('htmlFor', 'the-id')
+      expect(findInputElement()).toHaveProp('id', 'the-id')
     })
 
     it('uses the name when no id is provided', () => {
-      const input = doShallow({ name: 'the-name', label: 'The label' })
+      const { label, findInputElement } = doMount({ name: 'the-name', label: 'The label' })
 
-      expect(input.find('label')).toHaveProp('htmlFor', 'the-name')
-      expect(findInputElement(input)).toHaveProp('id', 'the-name')
+      expect(label).toHaveProp('htmlFor', 'the-name')
+      expect(findInputElement()).toHaveProp('id', 'the-name')
     })
 
     it('generates an id from the label when no id or name is provided', () => {
-      const input = doShallow({ label: 'The label' })
+      const { label, findInputElement } = doMount({ label: 'The label' })
 
-      expect(input.find('label')).toHaveProp('htmlFor', 'the-label')
-      expect(findInputElement(input)).toHaveProp('id', 'the-label')
+      expect(label).toHaveProp('htmlFor', 'the-label')
+      expect(findInputElement()).toHaveProp('id', 'the-label')
     })
   })
 
   describe('editability', () => {
     it('supports string values or number values', () => {
-      let input = doShallow()
-      expect(findInputElement(input)).toHaveValue('')
+      let findInputElement = doMount().findInputElement
+      expect(findInputElement()).toHaveValue('')
 
-      input = doShallow({ value: 'some value' })
-      expect(findInputElement(input)).toHaveValue('some value')
+      findInputElement = doMount({ value: 'some value' }).findInputElement
+      expect(findInputElement()).toHaveValue('some value')
 
-      input = doShallow({ value: 55 })
-      expect(findInputElement(input)).toHaveValue(55)
+      findInputElement = doMount({ value: 55 }).findInputElement
+      expect(findInputElement()).toHaveValue(55)
     })
 
     it('has a value that can be changed', () => {
-      const inputField = doShallow({ value: 'initial value' })
-      inputField.find('input').simulate('change', { target: { value: 'new value' } })
+      const { findInputElement, changeValueTo } = doMount({ value: 'initial value' })
 
-      expect(inputField.find('input')).toHaveValue('new value')
+      changeValueTo('new value')
+
+      expect(findInputElement()).toHaveValue('new value')
     })
 
     it('will notify when its value changes', () => {
       const onChangeMock = jest.fn()
 
-      const inputField = doShallow({ onChange: onChangeMock })
-      inputField.find('input').simulate('change', { target: { value: 'new value' } })
+      const { findInputElement, changeValueTo } = doMount({ onChange: onChangeMock })
+      changeValueTo('new value')
 
-      expect(onChangeMock).toHaveBeenCalledWith({ target: { value: 'new value' } })
-      expect(inputField.find('input')).toHaveValue('new value')
+      expect(onChangeMock).toHaveBeenCalledWith(
+        expect.objectContaining({ target: { value: 'new value' } })
+      )
+      expect(findInputElement()).toHaveValue('new value')
     })
 
     it('can receive a new value from a parent component', () => {
-      const input = doShallow({ value: 'initial value' })
-      expect(findInputElement(input)).toHaveValue('initial value')
+      const { input, findInputElement } = doMount({ value: 'initial value' })
+      expect(findInputElement()).toHaveValue('initial value')
 
       input.setProps({ value: 'new value' })
 
-      expect(findInputElement(input)).toHaveValue('new value')
+      expect(findInputElement()).toHaveValue('new value')
     })
   })
 
   describe('focusing', () => {
     it('can be focused', () => {
-      const input = doShallow()
-      expect(
-        findWrapperElement(input)
-          .dive()
-          .dive()
-          .dive()
-      ).toHaveClassName('default')
+      const { findInputElement, focus, blur } = doMount()
+      expect(findInputElement()).toHaveClassName('default')
 
-      findInputElement(input).simulate('focus')
-      expect(
-        findWrapperElement(input)
-          .dive()
-          .dive()
-          .dive()
-      ).toHaveClassName('focus')
+      focus()
+      expect(findInputElement()).toHaveClassName('focus')
 
-      findInputElement(input).simulate('blur')
-      expect(
-        findWrapperElement(input)
-          .dive()
-          .dive()
-          .dive()
-      ).not.toHaveClassName('focus')
+      blur()
+      expect(findInputElement()).not.toHaveClassName('focus')
     })
 
     it('will notify when focus is gained', () => {
       const onFocusMock = jest.fn()
+      const event = { target: { value: 'the value' } }
 
-      const input = doShallow({ onFocus: onFocusMock })
-      findInputElement(input).simulate('focus', { target: { value: 'the value' } })
+      const { focus } = doMount({ onFocus: onFocusMock })
+      focus(event)
 
-      expect(onFocusMock).toHaveBeenCalledWith({ target: { value: 'the value' } })
+      expect(onFocusMock).toHaveBeenCalledWith(expect.objectContaining(event))
     })
 
     it('will notify when focus is lost', () => {
       const onBlurMock = jest.fn()
+      const event = { target: { value: 'the value' } }
 
-      const input = doShallow({ onBlur: onBlurMock })
-      findInputElement(input).simulate('blur', { target: { value: 'the value' } })
+      const { blur } = doMount({ onBlur: onBlurMock })
+      blur(event)
 
-      expect(onBlurMock).toHaveBeenCalledWith({ target: { value: 'the value' } })
+      expect(onBlurMock).toHaveBeenCalledWith(expect.objectContaining(event))
     })
   })
 
   describe('feedback states', () => {
     it('can have a success feedback state', () => {
-      const input = doShallow({ feedback: 'success' })
+      const { findInputElement, findFeedbackIconFade } = doMount({ feedback: 'success' })
 
-      expect(
-        findWrapperElement(input)
-          .dive()
-          .dive()
-          .dive()
-      ).toHaveClassName('success')
-      expect(
-        input
-          .find(Fade)
-          .dive()
-          .dive()
-      ).toContainReact(
+      expect(findInputElement()).toHaveClassName('success')
+      expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
           symbol="checkmark"
           variant="primary"
@@ -207,19 +194,10 @@ describe('Input', () => {
     })
 
     it('can have an error feedback state', () => {
-      const input = doShallow({ feedback: 'error' })
-      expect(
-        findWrapperElement(input)
-          .dive()
-          .dive()
-          .dive()
-      ).toHaveClassName('error')
-      expect(
-        input
-          .find(Fade)
-          .dive()
-          .dive()
-      ).toContainReact(
+      const { findInputElement, findFeedbackIconFade } = doMount({ feedback: 'error' })
+
+      expect(findInputElement()).toHaveClassName('error')
+      expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
           symbol="exclamationPointCircle"
           variant="error"
@@ -230,47 +208,52 @@ describe('Input', () => {
     })
 
     it('hides the feedback state while focused', () => {
-      const input = doShallow({ feedback: 'success' })
+      const { findInputElement, focus, blur } = doMount({ feedback: 'success' })
 
-      findInputElement(input).simulate('focus')
-      expect(
-        findWrapperElement(input)
-          .dive()
-          .dive()
-          .dive()
-      ).not.toHaveClassName('success')
+      focus()
+      expect(findInputElement()).not.toHaveClassName('success')
 
-      findInputElement(input).simulate('blur')
-      expect(
-        findWrapperElement(input)
-          .dive()
-          .dive()
-          .dive()
-      ).toHaveClassName('success')
+      blur()
+      expect(findInputElement()).toHaveClassName('success')
     })
 
     it('fades the feedback icon in on focus lost and out on focus gained', () => {
-      const input = doShallow({ feedback: 'success' })
+      const { findFeedbackIconFade, focus } = doMount({ feedback: 'success' })
 
-      expect(input.find(Fade)).toHaveProp('in', true)
+      expect(findFeedbackIconFade()).toHaveProp('in', true)
 
-      findInputElement(input).simulate('focus')
-      expect(input.find(Fade)).toHaveProp('in', false)
+      focus()
+      expect(findFeedbackIconFade()).toHaveProp('in', false)
+    })
+
+    it('ensures that the contents do not overlap the icons', () => {
+      const { findInputElement } = doMount({ feedback: 'success' })
+
+      expect(findInputElement()).toHaveStyle('paddingRight', 'calc(16px + 2rem)')
     })
   })
 
-  it('can be disabled', () => {
-    let node = doShallow()
-    expect(findInputElement(node)).not.toHaveClassName('disabled')
-    expect(findInputElement(node)).not.toBeDisabled()
+  describe('disabling', () => {
+    it('deactivates the input', () => {
+      let findInputElement = doMount().findInputElement
+      expect(findInputElement()).not.toHaveClassName('disabled')
+      expect(findInputElement()).not.toBeDisabled()
 
-    node = doShallow({ disabled: true })
-    expect(findInputElement(node)).toHaveProp('disabled')
-    expect(findInputElement(node)).toBeDisabled()
+      findInputElement = doMount({ disabled: true }).findInputElement
+      expect(findInputElement()).toHaveProp('disabled')
+      expect(findInputElement()).toBeDisabled()
+    })
+
+    it('hides any icons', () => {
+      const { input } = doMount({ disabled: true, feedback: 'error' })
+
+      expect(input.find(StandaloneIcon)).toBeEmpty()
+      expect(input.find(DecorativeIcon)).toBeEmpty()
+    })
   })
 
   it('can have an error message', () => {
-    const input = doShallow({ id: 'some-id', error: 'Oh no a terrible error!' })
+    const { input } = doMount({ id: 'some-id', error: 'Oh no a terrible error!' })
 
     expect(input).toContainReact(
       <Helper id="some-id_error-message" feedback="error">
@@ -282,7 +265,7 @@ describe('Input', () => {
   describe('helpers', () => {
     it('can have a simple helper of some components', () => {
       const helper = <div>Some helper text.</div>
-      const input = doShallow({ id: 'some-id', helper })
+      const { input } = doMount({ id: 'some-id', helper })
 
       expect(input).toContainReact(
         <Helper id="some-id_helper">
@@ -293,21 +276,24 @@ describe('Input', () => {
       )
     })
 
-    it('styles itself based on the input feedback state', () => {
+    it('styles itself based on the feedback state', () => {
       const helper = <Paragraph>Some helper text.</Paragraph>
 
-      let input = doShallow({ feedback: 'success', helper })
-      expect(input.find(Helper)).toHaveProp('feedback', 'success')
+      const { findHelper } = doMount({ feedback: 'success', helper })
 
-      input = doShallow({ feedback: 'error', helper })
-      expect(input.find(Helper)).toHaveProp('feedback', 'error')
+      expect(findHelper()).toHaveProp('feedback', 'success')
     })
 
     it('can have a complex helper function to give control to the consumer', () => {
       const helper = jest.fn()
       helper.mockReturnValue(<Helper>Some helper text.</Helper>)
 
-      const input = doShallow({ id: 'some-id', value: 'current value', feedback: 'error', helper })
+      const { input } = doMount({
+        id: 'some-id',
+        value: 'current value',
+        feedback: 'error',
+        helper,
+      })
 
       expect(helper).toHaveBeenCalledWith('error', 'current value')
       expect(input).toContainReact(
@@ -322,39 +308,42 @@ describe('Input', () => {
 
   describe('accessibility', () => {
     it('marks the input as invalid when in the error feedback state', () => {
-      let input = doShallow()
-      expect(findInputElement(input)).toHaveProp('aria-invalid', 'false')
+      let findInputElement = doMount().findInputElement
+      expect(findInputElement()).toHaveProp('aria-invalid', false)
 
-      input = doShallow({ feedback: 'error' })
-      expect(findInputElement(input)).toHaveProp('aria-invalid', 'true')
+      findInputElement = doMount({ feedback: 'error' }).findInputElement
+      expect(findInputElement()).toHaveProp('aria-invalid', true)
     })
 
     it('does not attach aria-describedby to the input field when no error or helper is present', () => {
-      const input = doShallow({ error: undefined, helper: undefined })
+      const { findInputElement } = doMount({ error: undefined, helper: undefined })
 
-      expect(findInputElement(input)).toHaveProp('aria-describedby', undefined)
+      expect(findInputElement()).toHaveProp('aria-describedby', undefined)
     })
 
     it('connects the error message to the input field for screen readers', () => {
-      const input = doShallow({ id: 'some-field-id', error: 'An error message' })
+      const { findInputElement, findHelper } = doMount({
+        id: 'some-field-id',
+        error: 'An error message',
+      })
 
-      expect(findInputElement(input)).toHaveProp('aria-describedby', 'some-field-id_error-message')
-      expect(input.find(Helper)).toHaveProp('id', 'some-field-id_error-message')
+      expect(findInputElement()).toHaveProp('aria-describedby', 'some-field-id_error-message')
+      expect(findHelper()).toHaveProp('id', 'some-field-id_error-message')
     })
 
     it('connects a simple helper to the input field for screen readers', () => {
       const helper = <Paragraph>Some helper text.</Paragraph>
-      const input = doShallow({ id: 'some-field-id', helper })
+      const { findInputElement, findHelper } = doMount({ id: 'some-field-id', helper })
 
-      expect(findInputElement(input)).toHaveProp('aria-describedby', 'some-field-id_helper')
-      expect(input.find(Helper)).toHaveProp('id', 'some-field-id_helper')
+      expect(findInputElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
+      expect(findHelper()).toHaveProp('id', 'some-field-id_helper')
     })
 
     it('connects a complex helper to the input field for screen readers', () => {
       const helper = () => <Helper>Complex helper</Helper>
-      const input = doShallow({ id: 'some-field-id', helper })
+      const { input, findInputElement } = doMount({ id: 'some-field-id', helper })
 
-      expect(findInputElement(input)).toHaveProp('aria-describedby', 'some-field-id_helper')
+      expect(findInputElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
       expect(input).toContainReact(
         <div id="some-field-id_helper">
           <Text size="small">
@@ -366,16 +355,19 @@ describe('Input', () => {
   })
 
   it('passes additional attributes to the input element', () => {
-    const input = doShallow({ name: 'a name', placeholder: 'a placeholder' })
+    const { findInputElement } = doMount({ name: 'a name', id: 'the-id' })
 
-    expect(findInputElement(input)).toHaveProp('name', 'a name')
-    expect(findInputElement(input)).toHaveProp('placeholder', 'a placeholder')
+    expect(findInputElement()).toHaveProp('name', 'a name')
+    expect(findInputElement()).toHaveProp('id', 'the-id')
   })
 
   it('does not allow custom CSS', () => {
-    const input = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const { findInputElement } = doMount({
+      className: 'my-custom-class',
+      style: { color: 'hotpink' },
+    })
 
-    expect(findInputElement(input)).not.toHaveProp('className', 'my-custom-class')
-    expect(findInputElement(input)).not.toHaveProp('style')
+    expect(findInputElement()).not.toHaveClassName('my-custom-class')
+    expect(findInputElement()).not.toHaveStyle('color', 'hotpink')
   })
 })

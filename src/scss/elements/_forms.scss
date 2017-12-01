@@ -10,7 +10,7 @@ $form-field-bottom-spacing: 18px;
 // TODO: The :not([data-no-global-styles]) prevents these styles from overriding the modular styles for the new components
 //       The data-no-global-styles attribute can be completely removed when deleting these styles.
 
-input:not([type='radio']),
+input:not([type='radio']):not([data-no-global-styles]),
 textarea:not([data-no-global-styles]),
 select:not([data-no-global-styles]) {
   border: 1px solid $color-shuttle-grey;
