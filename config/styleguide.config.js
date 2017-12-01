@@ -261,7 +261,7 @@ module.exports = {
     },
   ],
 
-  template: path.resolve('docs/index.html'),
+  template: styleguidistEnv === 'production' ? path.resolve('docs/index.html') : undefined,
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve('styleguide', styleguidistEnv),
   require: [path.resolve('src/scss/global.scss'), path.resolve('docs/scss/styleguide.scss')],
