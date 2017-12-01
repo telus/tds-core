@@ -68,6 +68,7 @@ exports[`Textarea renders with a feedback state and icon 1`] = `
       class="error preventWidthResizing"
       data-no-global-styles="true"
       id="the-textarea"
+      style="padding-right:calc(16px + 2rem)"
     />
     <div
       class="feedbackIconPosition"

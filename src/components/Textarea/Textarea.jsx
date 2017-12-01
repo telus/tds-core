@@ -8,21 +8,24 @@ import Tooltip from '../Tooltip/Tooltip'
 import FormField from '../FormField/FormField'
 import FeedbackIcon from '../FormField/FeedbackIcon'
 
+import addRightPadding from '../FormField/addRightPadding'
+
 import styles from './Textarea.modules.scss'
 import positionStyles from '../Position.modules.scss'
 
 const Textarea = props => (
   <FormField {...props}>
-    {({ className, ...textareaProps }, showIcon, feedback) => (
+    {({ className, ...textareaProps }, showFeedbackIcon, feedback) => (
       <div className={joinClassNames(positionStyles.relative, styles.preventWidthResizing)}>
         <textarea
           {...textareaProps}
           className={joinClassNames(className, styles.preventWidthResizing)}
+          style={addRightPadding(showFeedbackIcon ? 1 : 0)}
         />
 
         {!textareaProps.disabled && (
           <div className={styles.feedbackIconPosition}>
-            <FeedbackIcon showIcon={showIcon} feedback={feedback} />
+            <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
           </div>
         )}
       </div>

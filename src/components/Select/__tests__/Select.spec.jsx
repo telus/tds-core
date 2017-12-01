@@ -63,6 +63,18 @@ describe('Select', () => {
     )
   })
 
+  it('positions the select on top of the icons so that it can be clicked', () => {
+    const { findSelectElement } = doMount()
+
+    expect(findSelectElement()).toHaveClassName('positionSelectOnTop')
+  })
+
+  it('positions the down caret so that the text does not overlap it', () => {
+    const { findSelectElement } = doMount()
+
+    expect(findSelectElement()).toHaveStyle('paddingRight', 'calc(16px + 2rem)')
+  })
+
   describe('label', () => {
     it('must have a label', () => {
       const { label } = doMount({ label: 'The label' })
@@ -232,12 +244,12 @@ describe('Select', () => {
       focus()
       expect(findFeedbackIconFade()).toHaveProp('in', false)
     })
-  })
 
-  it('positions the select on top of the icons so that it can be clicked', () => {
-    const { findSelectElement } = doMount()
+    it('ensures that the contents do not overlap the icons', () => {
+      const { findSelectElement } = doMount({ feedback: 'success' })
 
-    expect(findSelectElement()).toHaveClassName('positionSelectOnTop')
+      expect(findSelectElement()).toHaveStyle('paddingRight', 'calc(32px + 3rem)')
+    })
   })
 
   describe('disabling', () => {
@@ -390,7 +402,7 @@ describe('Select', () => {
       style: { color: 'hotpink' },
     })
 
-    expect(findSelectElement()).not.toHaveProp('className', 'my-custom-class')
-    expect(findSelectElement()).not.toHaveProp('style')
+    expect(findSelectElement()).not.toHaveClassName('my-custom-class')
+    expect(findSelectElement()).not.toHaveStyle('color', 'hotpink')
   })
 })

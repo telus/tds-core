@@ -8,21 +8,25 @@ import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import Tooltip from '../Tooltip/Tooltip'
 import FormField from '../FormField/FormField'
 import FeedbackIcon from '../FormField/FeedbackIcon'
+import Box from '../Box/Box'
+
+import addRightPadding from '../FormField/addRightPadding'
 
 import styles from './Select.modules.scss'
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 
 const Select = ({ options, placeholder, ...props }) => (
   <FormField {...props}>
-    {({ className, ...selectProps }, showIcon, feedback) => (
+    {({ className, ...selectProps }, showFeedbackIcon, feedback) => (
       <div className={styles.wrapper}>
         <select
           {...selectProps}
           className={joinClassNames(
             className,
             styles.select,
-            !selectProps.disabled && styles.positionSelectOnTop,
+            !selectProps.disabled && styles.positionSelectOnTop
           )}
+          style={addRightPadding(showFeedbackIcon ? 2 : 1)}
         >
           {placeholder && (
             <option value="" hidden disabled data-no-global-styles>
@@ -37,19 +41,17 @@ const Select = ({ options, placeholder, ...props }) => (
         </select>
 
         {!selectProps.disabled && (
-          <div className={styles.feedbackIconPosition}>
-            <FeedbackIcon showIcon={showIcon} feedback={feedback} />
-          </div>
-        )}
+          <Box inline between={3} dangerouslyAddClassName={styles.iconsPosition}>
+            <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
 
-        {!selectProps.disabled && (
-          <div className={joinClassNames(iconWrapperStyles.fixLineHeight, styles.caretPosition)}>
-            <DecorativeIcon
-              symbol="caretDown"
-              variant={feedback === 'error' ? 'error' : 'primary'}
-              size={16}
-            />
-          </div>
+            <div className={iconWrapperStyles.fixLineHeight}>
+              <DecorativeIcon
+                symbol="caretDown"
+                variant={feedback === 'error' ? 'error' : 'primary'}
+                size={16}
+              />
+            </div>
+          </Box>
         )}
       </div>
     )}

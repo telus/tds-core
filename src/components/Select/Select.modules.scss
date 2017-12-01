@@ -26,20 +26,9 @@
   background: transparent;
 }
 
-.feedbackIconPosition {
+.iconsPosition {
   composes: absolute centerVertically from '../Position.modules.scss';
+  composes: iconRight from '../FormField/FormField.modules.scss';
 
   z-index: 1;
-
-  // FIXME: This value is made up.
-  right: 2rem;
-}
-
-.caretPosition {
-  composes: absolute centerVertically from '../Position.modules.scss';
-
-  z-index: 1;
-
-  // FIXME: This value is made up.
-  right: 1rem;
 }

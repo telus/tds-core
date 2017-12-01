@@ -183,6 +183,7 @@ describe('Textarea', () => {
 
     it('can have an error feedback state', () => {
       const { findTextareaElement, findFeedbackIconFade } = doMount({ feedback: 'error' })
+
       expect(findTextareaElement()).toHaveClassName('error')
       expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
@@ -211,6 +212,18 @@ describe('Textarea', () => {
 
       focus()
       expect(findFeedbackIconFade()).toHaveProp('in', false)
+    })
+
+    it('ensures that the contents do not overlap the icon', () => {
+      const { findTextareaElement } = doMount({ feedback: 'success' })
+
+      expect(findTextareaElement()).toHaveStyle('paddingRight', 'calc(16px + 2rem)')
+    })
+
+    it('does not add any extra padding when there are no icons displayed', () => {
+      const { findTextareaElement } = doMount()
+
+      expect(findTextareaElement()).toHaveProp('style', undefined)
     })
   })
 
@@ -348,7 +361,7 @@ describe('Textarea', () => {
       style: { color: 'hotpink' },
     })
 
-    expect(findTextareaElement()).not.toHaveProp('className', 'my-custom-class')
-    expect(findTextareaElement()).not.toHaveProp('style')
+    expect(findTextareaElement()).not.toHaveClassName('my-custom-class')
+    expect(findTextareaElement()).not.toHaveStyle('color', 'hotpink')
   })
 })

@@ -30,6 +30,7 @@ exports[`Select renders 1`] = `
       class="default select positionSelectOnTop"
       data-no-global-styles="true"
       id="the-select"
+      style="padding-right:calc(16px + 2rem)"
     >
       <option
         data-no-global-styles="true"
@@ -45,15 +46,16 @@ exports[`Select renders 1`] = `
       </option>
     </select>
     <div
-      class="feedbackIconPosition"
-    />
-    <div
-      class="fixLineHeight caretPosition"
+      class="betweenRightMarginDesktop-3 inline iconsPosition"
     >
-      <i
-        aria-hidden="true"
-        class="iconCaretDown primary size16"
-      />
+      <div
+        class="fixLineHeight"
+      >
+        <i
+          aria-hidden="true"
+          class="iconCaretDown primary size16"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -89,6 +91,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
       class="error select positionSelectOnTop"
       data-no-global-styles="true"
       id="the-select"
+      style="padding-right:calc(32px + 3rem)"
     >
       <option
         data-no-global-styles="true"
@@ -104,7 +107,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
       </option>
     </select>
     <div
-      class="feedbackIconPosition"
+      class="betweenRightMarginDesktop-3 inline iconsPosition"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
@@ -118,14 +121,14 @@ exports[`Select renders with a feedback state and icon 1`] = `
           />
         </div>
       </div>
-    </div>
-    <div
-      class="fixLineHeight caretPosition"
-    >
-      <i
-        aria-hidden="true"
-        class="iconCaretDown error size16"
-      />
+      <div
+        class="fixLineHeight"
+      >
+        <i
+          aria-hidden="true"
+          class="iconCaretDown error size16"
+        />
+      </div>
     </div>
   </div>
 </div>
