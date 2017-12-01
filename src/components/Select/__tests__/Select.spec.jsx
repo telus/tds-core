@@ -6,7 +6,7 @@ import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
 import Select from '../Select'
-import Helper from '../../Input/Helper/Helper'
+import Helper from '../../FormField/Helper/Helper'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 
 describe('Select', () => {

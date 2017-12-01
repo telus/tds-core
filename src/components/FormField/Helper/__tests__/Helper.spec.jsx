@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, mount, render } from 'enzyme'
 
 import Helper from '../Helper'
 
@@ -7,31 +7,25 @@ describe('Helper', () => {
   const defaultChildren = 'Some helper text.'
   const doShallow = (props = {}, children = defaultChildren) =>
     shallow(<Helper {...props}>{children}</Helper>)
-  const doRender = (props = {}, children = defaultChildren) =>
-    render(<Helper {...props}>{children}</Helper>)
+
+  const doMount = (props = {}, children = defaultChildren) => {
+    const helper = mount(<Helper {...props}>{children}</Helper>)
+
+    return helper.find('div')
+  }
 
   it('renders', () => {
-    const helper = doRender()
+    const helper = render(<Helper>Some helper text.</Helper>)
 
     expect(helper).toMatchSnapshot()
   })
 
   it('can have a feedback state', () => {
-    let helper = doShallow()
-    expect(
-      helper
-        .dive()
-        .dive()
-        .dive()
-    ).toHaveClassName('default')
+    let helper = doMount()
+    expect(helper).toHaveClassName('default')
 
-    helper = doShallow({ feedback: 'success' })
-    expect(
-      helper
-        .dive()
-        .dive()
-        .dive()
-    ).toHaveClassName('success')
+    helper = doMount({ feedback: 'success' })
+    expect(helper).toHaveClassName('success')
   })
 
   it('passes additional attributes to the element', () => {

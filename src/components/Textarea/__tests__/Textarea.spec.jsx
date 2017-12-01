@@ -7,7 +7,7 @@ import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
 import Textarea from '../Textarea'
-import Helper from '../../Input/Helper/Helper'
+import Helper from '../../FormField/Helper/Helper'
 
 describe('Textarea', () => {
   const defaultProps = {

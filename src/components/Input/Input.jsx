@@ -8,7 +8,7 @@ import Paragraph from '../Typography/Paragraph/Paragraph'
 import Box from '../Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
 import Tooltip from '../Tooltip/Tooltip'
-import Helper from './Helper/Helper'
+import Helper from '../FormField/Helper/Helper'
 import Fade from '../Animation/Fade'
 
 import safeRest from '../../utils/safeRest'
@@ -272,6 +272,7 @@ Input.defaultProps = {
   onBlur: undefined,
 }
 
+// TODO: This is no longer necessary because Helper is exported on its own. Removing this will be a breaking change.
 Input.Helper = Helper
 
 export default Input

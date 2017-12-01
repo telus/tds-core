@@ -7,7 +7,7 @@ import safeRest from '../../../utils/safeRest'
 
 import styles from './Helper.modules.scss'
 
-const Helper = ({feedback, children, ...rest}) => (
+const Helper = ({ feedback, children, ...rest }) => (
   <Box
     {...safeRest(rest)}
     inset={3}
@@ -25,7 +25,5 @@ Helper.propTypes = {
 Helper.defaultProps = {
   feedback: undefined,
 }
-
-Helper.displayName = 'Input.Helper'
 
 export default Helper
