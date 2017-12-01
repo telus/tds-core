@@ -12,7 +12,7 @@ describe('FlexGrid', () => {
   }
 
   const doMountWithChildren = (props = {}) => {
-    const wrapper = mount(
+    const flexGrid = mount(
       <FlexGrid {...props}>
         <Responsive id="responsive" minWidth="md">
           {match => {
@@ -30,7 +30,12 @@ describe('FlexGrid', () => {
       </FlexGrid>
     )
 
-    return wrapper.find('Grid')
+    return {
+      findColum: index => flexGrid.find('Col').at(index),
+      findRow: index => flexGrid.find('Row').at(index),
+      findNowRelated: el => flexGrid.find(el),
+      gutterless: { padding: 0, margin: 0 },
+    }
   }
   it('renders', () => {
     const flexGrid = doMount()
@@ -51,22 +56,21 @@ describe('FlexGrid', () => {
   })
 
   it('should render all children related to Grid with no gutter', () => {
-    const flexGrid = doMountWithChildren({ gutterless: true })
+    const { findColum, findRow, findNowRelated, gutterless } = doMountWithChildren({
+      gutterless: true,
+    })
 
-    const gutterless = { padding: 0, margin: 0 }
-    const getElementStyleProp = (target, idx) => flexGrid.find(target).get(idx).props.style
+    const col1 = findColum(1)
+    const col2 = findColum(3)
+    const col3 = findColum(5)
+    const row = findRow(1)
+    const NonRelatedElement = findNowRelated('Responsive')
 
-    const col1 = getElementStyleProp('Col', 1)
-    const col2 = getElementStyleProp('Col', 3)
-    const col3 = getElementStyleProp('Col', 5)
-    const row = getElementStyleProp('Row', 1)
-    const NonRelatedElement = flexGrid.find('Responsive')
-
-    expect(col1).toEqual(gutterless)
-    expect(col2).toEqual(gutterless)
-    expect(col3).toEqual(gutterless)
-    expect(row).toEqual(gutterless)
-    expect(NonRelatedElement).not.toEqual(gutterless)
+    expect(col1).toHaveProp('style', gutterless)
+    expect(col2).toHaveProp('style', gutterless)
+    expect(col3).toHaveProp('style', gutterless)
+    expect(row).toHaveProp('style', gutterless)
+    expect(NonRelatedElement).not.toHaveProp('style', gutterless)
   })
 
   it('passes additional attributes to the element', () => {
