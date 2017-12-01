@@ -85,6 +85,7 @@
     "postcss-modules": "^0.8.0",
     "prettier": "^1.7.4",
     "react": "^16.1.0",
+    "react-broadcast": "^0.6.0",
     "react-dom": "^16.1.0",
     "react-flexbox-grid": "^2.0.0",
     "react-media": "^1.6.1",
@@ -111,8 +112,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "react-broadcast": "^0.6.0"
+    "prop-types": "^15.5.10"
   },
   "config": {
     "commitizen": {
