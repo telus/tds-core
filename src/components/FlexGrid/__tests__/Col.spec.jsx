@@ -6,7 +6,7 @@ import FlexGrid from '../FlexGrid'
 import Col from '../Col'
 
 describe('Col', () => {
-  const doShallow = (props = {}) => {
+  const doMount = (props = {}) => {
     const wrapper = mount(
       <FlexGrid>
         <Col {...props}>Some content</Col>)
@@ -17,37 +17,37 @@ describe('Col', () => {
   }
 
   it('renders', () => {
-    const col = doShallow()
+    const col = doMount()
 
     expect(col).toMatchSnapshot()
   })
 
   it('renders a react-flexbox-grid Col component', () => {
-    const col = doShallow()
+    const col = doMount()
 
     expect(col).toMatchSelector(ReactFlexboxGridCol)
   })
 
   it('has auto width by default', () => {
-    const col = doShallow()
+    const col = doMount()
 
     expect(col).toHaveProp('xs', true)
   })
 
   it('can span a specified number of columns', () => {
-    const col = doShallow({ span: 10 })
+    const col = doMount({ span: 10 })
 
     expect(col).toHaveProp('xs', 10)
   })
 
   it('can offset a number of columns', () => {
-    const col = doShallow({ offset: 2 })
+    const col = doMount({ offset: 2 })
 
     expect(col).toHaveProp('xsOffset', 2)
   })
 
   it('does not support responsive column spans', () => {
-    const col = doShallow({ xs: 1, sm: 2, md: 3, lg: 4, xl: 5, span: 10 })
+    const col = doMount({ xs: 1, sm: 2, md: 3, lg: 4, xl: 5, span: 10 })
 
     expect(col).toHaveProp('xs', 10)
     expect(col).not.toHaveProp('sm')
@@ -57,7 +57,7 @@ describe('Col', () => {
   })
 
   it('does not support responsive offsets', () => {
-    const col = doShallow({
+    const col = doMount({
       xsOffset: 1,
       smOffset: 2,
       mdOffset: 3,
@@ -74,14 +74,14 @@ describe('Col', () => {
   })
 
   it('passes additional attributes to the react-flexbox-grid Col', () => {
-    const col = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
+    const col = doMount({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(col).toHaveProp('id', 'the-id')
     expect(col).toHaveProp('data-some-attr', 'some value')
   })
 
   it('does not allow custom CSS', () => {
-    const col = doShallow({
+    const col = doMount({
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })

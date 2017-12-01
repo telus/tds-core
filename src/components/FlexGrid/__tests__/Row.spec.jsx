@@ -6,7 +6,7 @@ import FlexGrid from '../FlexGrid'
 import Row from '../Row'
 
 describe('Col', () => {
-  const doShallow = (props = {}) => {
+  const doMount = (props = {}) => {
     const wrapper = mount(
       <FlexGrid>
         <Row {...props}>Some content</Row>)
@@ -16,25 +16,25 @@ describe('Col', () => {
   }
 
   it('renders', () => {
-    const col = doShallow()
+    const col = doMount()
     expect(col).toMatchSnapshot()
   })
 
   it('renders a react-flexbox-grid Col component', () => {
-    const row = doShallow()
+    const row = doMount()
 
     expect(row).toMatchSelector(ReactFlexboxGridRow)
   })
 
   it('passes additional attributes to the react-flexbox-grid Col', () => {
-    const col = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
+    const col = doMount({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(col).toHaveProp('id', 'the-id')
     expect(col).toHaveProp('data-some-attr', 'some value')
   })
 
   it('does not allow custom CSS', () => {
-    const col = doShallow({
+    const col = doMount({
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })
