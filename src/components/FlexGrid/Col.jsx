@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Subscriber } from 'react-broadcast'
 
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 
@@ -20,9 +21,20 @@ const removeProps = ({
 }) => safeRest(rest)
 
 const Col = ({ span, offset, children, ...rest }) => (
-  <ReactFlexboxGridCol {...removeProps(rest)} xs={span || true} xsOffset={offset}>
-    {children}
-  </ReactFlexboxGridCol>
+  <Subscriber channel="gutterless">
+    {gutterless => {
+      return (
+        <ReactFlexboxGridCol
+          {...removeProps(rest)}
+          xs={span || true}
+          xsOffset={offset}
+          style={gutterless}
+        >
+          {children}
+        </ReactFlexboxGridCol>
+      )
+    }}
+  </Subscriber>
 )
 
 Col.propTypes = {

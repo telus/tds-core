@@ -1,12 +1,20 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-
+import { mount } from 'enzyme'
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 
+import FlexGrid from '../FlexGrid'
 import Col from '../Col'
 
 describe('Col', () => {
-  const doShallow = (props = {}) => shallow(<Col {...props}>Some content</Col>)
+  const doShallow = (props = {}) => {
+    const wrapper = mount(
+      <FlexGrid>
+        <Col {...props}>Some content</Col>)
+      </FlexGrid>
+    )
+
+    return wrapper.find(ReactFlexboxGridCol)
+  }
 
   it('renders', () => {
     const col = doShallow()
@@ -79,6 +87,6 @@ describe('Col', () => {
     })
 
     expect(col).not.toHaveProp('className', 'my-custom-class')
-    expect(col).not.toHaveProp('style')
+    expect(col).not.toHaveProp('style', { color: 'hotpink' })
   })
 })

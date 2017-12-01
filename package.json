@@ -111,7 +111,8 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "react-broadcast": "^0.6.0"
   },
   "config": {
     "commitizen": {

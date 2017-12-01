@@ -1,13 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Col renders 1`] = `
-<Col
-  xs={true}
->
+<Row>
   <div
-    className="col-xs col-xs-offset"
+    className="row"
   >
     Some content
   </div>
-</Col>
+</Row>
 `;

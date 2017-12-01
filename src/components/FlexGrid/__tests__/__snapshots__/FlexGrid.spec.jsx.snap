@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlexGrid renders 1`] = `
+<Grid
+  fluid={true}
+>
+  <div
+    className="container-fluid"
+  >
+    Some grid stuff
+  </div>
+</Grid>
+`;
