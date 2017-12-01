@@ -15,7 +15,7 @@ import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import generateId from '../../utils/generateId'
 
-import formFieldStyles from '../FormFields.modules.scss'
+import formStyles from '../Forms.modules.scss'
 import styles from './Input.modules.scss'
 
 const getWrapperClassName = (feedback, focus, disabled) => {
@@ -162,7 +162,7 @@ class Input extends React.Component {
 
     return (
       <Box between={2}>
-        <Flexbox direction="row" dangerouslyAddClassName={formFieldStyles.containsTooltip}>
+        <Flexbox direction="row" dangerouslyAddClassName={formStyles.containsTooltip}>
           {this.renderLabel(label, hint, inputId)}
           {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
         </Flexbox>

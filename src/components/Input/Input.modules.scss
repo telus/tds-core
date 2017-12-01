@@ -63,7 +63,7 @@
 }
 
 .sizing {
-  composes: height from '../FormFields.modules.scss';
+  composes: height from '../Forms.modules.scss';
 
   align-items: center;
 }
@@ -89,7 +89,7 @@ input.input {
   border-radius: 4px;
 
   // FIXME: Will be able to use composes when removing the targeting of the <input> element above
-  // composes: font from '../FormFields.modules.scss';
+  // composes: font from '../Forms.modules.scss';
   font-family: $font-telus;
 
   // FIXME: Will be able to use composes when removing the targeting of the <input> element above

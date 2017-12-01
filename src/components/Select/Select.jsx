@@ -10,7 +10,6 @@ import FormField from '../FormField/FormField'
 import FeedbackIcon from '../FormField/FeedbackIcon'
 
 import styles from './Select.modules.scss'
-import formFieldStyles from '../FormFields.modules.scss'
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 
 const Select = ({ options, placeholder, ...props }) => (
@@ -23,7 +22,6 @@ const Select = ({ options, placeholder, ...props }) => (
             className,
             styles.select,
             !selectProps.disabled && styles.positionSelectOnTop,
-            formFieldStyles.height
           )}
         >
           {placeholder && (

@@ -2,7 +2,7 @@
   composes: noSpacing from '../Spacing.modules.scss';
   composes: none from '../Borders.modules.scss';
 
-  composes: font from '../FormFields.modules.scss';
+  composes: font from '../Forms.modules.scss';
   // Reset the text color because Safari tries to set its own color for buttons
   composes: color from '../Typography/Text/Text.modules.scss';
 

@@ -27,7 +27,7 @@ exports[`Select renders 1`] = `
   >
     <select
       aria-invalid="false"
-      class="default select positionSelectOnTop height"
+      class="default select positionSelectOnTop"
       data-no-global-styles="true"
       id="the-select"
     >
@@ -86,7 +86,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   >
     <select
       aria-invalid="true"
-      class="error select positionSelectOnTop height"
+      class="error select positionSelectOnTop"
       data-no-global-styles="true"
       id="the-select"
     >
