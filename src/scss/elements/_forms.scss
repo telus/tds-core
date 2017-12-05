@@ -60,6 +60,13 @@ input[type='radio']:not([data-no-global-styles]):focus + span::before {
 
 input:not([type='radio']),
 input:not([type='checkbox']),
+input[type='text']:not([data-no-global-styles]),
+input[type='tel']:not([data-no-global-styles]),
+input[type='number']:not([data-no-global-styles]),
+input[type='search']:not([data-no-global-styles]),
+input[type='email']:not([data-no-global-styles]),
+input[type='ulr']:not([data-no-global-styles]),
+input[type='password']:not([data-no-global-styles]),
 select:not([data-no-global-styles]) {
   &:focus {
     @extend %input-focus-style;

@@ -68,14 +68,15 @@
   }
 }
 
-input.selector-counter__value {
+// FIXME: remove redundant specificity once global css styles (forms.scss) are removed
+input.selector-counter__value.selector-counter__value {
   font-weight: 300;
   font-size: rem(44px);
   line-height: rem(44px);
   padding: 0 35px 0 25px;
   height: 52px;
   max-width: 100%;
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 
   // Hide the built-in up/down arrows
   &::-webkit-inner-spin-button,
