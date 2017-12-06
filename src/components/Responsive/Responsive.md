@@ -46,8 +46,7 @@ matches or not.
 
 ### Testing responsive behaviour
 
-Now that we are moving the responsive behaviour into JSX we can write tests to match or not to match a query so we can test which class gets put on an element. 
+Moving the responsive behaviour into JavaScript enables testing of the results of media queries, which is impossible with CSS-based media queries. It is straightforwards to mock or stub the result of a media query for testing environments. Here are some examples of how we incorporated unit tests for responsive behaviour in some of the TDS components:
 
-On a server, for instance in a test, a query will match by default and you can mock or stub the query for tests. Here are some examples how we incorporated unit tests for responsive behaviour in some of our components:
 * [Button component tests](https://github.com/telusdigital/tds/blob/master/src/components/Button/__tests__/Button.spec.jsx#L52-L68) and its corresponding [JSX](https://github.com/telusdigital/tds/blob/master/src/components/Button/BaseButton/BaseButton.jsx#L17-L33) using the matches boolean flag
 * [Tooltip component tests](https://github.com/telusdigital/tds/blob/master/src/components/Tooltip/__tests__/Tooltip.spec.jsx#L56-L102)  and its corresponding [JSX](https://github.com/telusdigital/tds/blob/master/src/components/Tooltip/Tooltip.jsx#L85-L112) rendering a particular bubble only when the media query matches
