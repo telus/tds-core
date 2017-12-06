@@ -1,3 +1,87 @@
+#### 0.31.0 (2017-12-06)
+
+##### Build System / Dependencies
+
+* **dependencies:** Move react-braodcast to dev dependencies ([b7fdc4a0](https://github.com/telusdigital/tds/commit/b7fdc4a0dca259bf9c3985a5eea704dedaf898ea))
+* **babel:** Remove babel-cli in favor of babel-core ([b4ec4d01](https://github.com/telusdigital/tds/commit/b4ec4d0184794063efab1d5725dea9cccd5b87e3))
+
+##### Documentation Changes
+
+* **v0.31.0:** Prep: add badge and update index.js ([73b96d39](https://github.com/telusdigital/tds/commit/73b96d39494cf130dc13b332f45c6f5106f9527a))
+* **responsive:**
+  * Fix copy typo ([5127cf88](https://github.com/telusdigital/tds/commit/5127cf88fc63d1764345252dc52dde84ef05c4a8))
+  * Add a blurb on how to test responsive behaviour ([06995613](https://github.com/telusdigital/tds/commit/069956132560f3b2bf5a96aa45d296c675608b35))
+  * Change docs for react-media interface ([620a3e51](https://github.com/telusdigital/tds/commit/620a3e51a8f457398a06c35f04c5ef7751e066ea))
+* **analytics:** Only load Adobe analytics script in production ([8cb77f1e](https://github.com/telusdigital/tds/commit/8cb77f1e6f0786af6262db469d2a098c18c561eb))
+* **radio:** Show Radio component in staging ([754b57bf](https://github.com/telusdigital/tds/commit/754b57bf13e810ea4a64ae859d07c9a42838ece2))
+* **styleguide:** Enable Select and Textarea in staging ([df34764c](https://github.com/telusdigital/tds/commit/df34764ccfe2dad726ea7bc15c3cf3a52f4b0f4e))
+* **checkbox:** Add basic examples ([210a04d1](https://github.com/telusdigital/tds/commit/210a04d1c9ec84a87b7ba80de4ac94c81732c532))
+* **image:** Add local image example and wording changes to prop descriptions. ([6ce8c768](https://github.com/telusdigital/tds/commit/6ce8c768b4cdf3bd226ae3c93876e4650a9c8103))
+
+##### New Features
+
+* **textarea:**
+  * Hide any icons when it is disabled ([d9f5f6b5](https://github.com/telusdigital/tds/commit/d9f5f6b54352df0c583fba8f0e6a33e5af80ec76))
+  * Prevent width resizing to avoid edge cases with the absolutely positioned icons ([23dd5236](https://github.com/telusdigital/tds/commit/23dd5236e3587c7fa6e33d96786ddf00849414e2))
+* **flexgrid:**
+  * Add Row component with react-broadcast support / add gutterless prop FlexGrid / fully unit-tested ([03bb4750](https://github.com/telusdigital/tds/commit/03bb475074ad6df17278dd82d2597208d59379e5))
+  * Add FlexGrid dependency / Create FlexGrid, Col components ([aaeb671b](https://github.com/telusdigital/tds/commit/aaeb671b5f31c804af649d8a5f358536871db2a6))
+* **styles:** Remove pointer from disabled checkbox and radio components ([63566cbf](https://github.com/telusdigital/tds/commit/63566cbfe9a09ea19f0a735273e2c5a427ab2c5c))
+* **radio:**
+  * Add name and value required props ([81c9f97d](https://github.com/telusdigital/tds/commit/81c9f97d4d511d5dda2877d1e73c3a526da81c73))
+  * Add new classes for inner radio ([d7d77c32](https://github.com/telusdigital/tds/commit/d7d77c32d4d20a8611041f8a4ad30c3c8226282f))
+  * adjust styles to mimic a radio button ([bdfe1786](https://github.com/telusdigital/tds/commit/bdfe17860d0765972f24ba38899b4d0defdb07d3))
+  * Copy Checkbox and rename it Radio to get a head start on Radio component because they a ([6a80ddc8](https://github.com/telusdigital/tds/commit/6a80ddc8f5412f1c695d3fac752f3b57163583b5))
+* **select:**
+  * Make the down caret red when in error state ([eac70736](https://github.com/telusdigital/tds/commit/eac70736a02fb9978b12ef4d0f355780a301c98b))
+  * Position the select on top of the icons so that they can be clicked ([fc407a50](https://github.com/telusdigital/tds/commit/fc407a50c8585977b72005275f7015bdadec5c36))
+  * Add an unselectable placeholder ([85ca1958](https://github.com/telusdigital/tds/commit/85ca19586f5143da0fa8bb4e1235a3a99cd2f3a8))
+* **checkbox:**
+  * Center align label and refactored css ([5efd7208](https://github.com/telusdigital/tds/commit/5efd7208b5444a6484a890bb7497c568fce48868))
+  * Add disabled states ([200c6f56](https://github.com/telusdigital/tds/commit/200c6f560960b032196abed6b4bee3144baec796))
+  * Fix error state logic and styles ([a192b5fc](https://github.com/telusdigital/tds/commit/a192b5fcc39dbdb06791522c645639e72c85f3d6))
+  * Add feedback prop to display error styles ([541e4040](https://github.com/telusdigital/tds/commit/541e404006b8bf8cbda8c553164f7e5dc88e1917))
+  * Add onFocus and onBlur callbacks and willReceiveProps ([6786a758](https://github.com/telusdigital/tds/commit/6786a758c0c34f6fa19f2c3e88a7e65672bb5ade))
+  * Add interactivity and focusing/blurring ([2a26d061](https://github.com/telusdigital/tds/commit/2a26d0613a170af159cfe2f2acc88c51346cd5f2))
+  * Initial commit to reset globally scoped CSS styles ([bb5c2b10](https://github.com/telusdigital/tds/commit/bb5c2b1086630d43b5e2e4a6e88e7c96cdbff15b))
+* **image:**
+  * No longer support non-square circular masking ([b8f7bab4](https://github.com/telusdigital/tds/commit/b8f7bab45cc15b005f94ae51e0ba446ff8545274))
+  * clip image for any size ([ffd3ea76](https://github.com/telusdigital/tds/commit/ffd3ea762aeeafc6599785b799c9a360dc3eff13))
+* **responsive:** Add query prop to allow targeting of media query characteristics ([441401ee](https://github.com/telusdigital/tds/commit/441401eea826b0a99f07f54e84b6fa1c95d5c0ec))
+
+##### Bug Fixes
+
+* **forms:** Adjust font size on SelectorCounter and remove coloured border from focus states on inpu ([5d62e27a](https://github.com/telusdigital/tds/commit/5d62e27a4ee22e98f962220268c03b8f77a508be))
+* **styleguide:** Add compact to remove the 'undefined' path ([ee574fae](https://github.com/telusdigital/tds/commit/ee574faeb91a0431ae7a480bc7baa062aea31a9b))
+
+##### Refactors
+
+* **input:** Use FormField child component. Ensure global styles do not apply to it. ([1d641663](https://github.com/telusdigital/tds/commit/1d641663372888e171ccf79af020e0bfbd5e71fc))
+* **textarea:** Insert padding-right in order to prevent overlapping text and icons ([d29634c4](https://github.com/telusdigital/tds/commit/d29634c47c5c81efed19aeb649fae9171af9f338))
+* **forms-styles:** Rename FormFields.modules.scss as Forms.modules.scss to prevent confusion wi ([3d6c0635](https://github.com/telusdigital/tds/commit/3d6c06356d68086ab5ca2ed8a3d7eebc1b2c4802))
+* **helper:** Move helper into the Formfield folder ([af7036cc](https://github.com/telusdigital/tds/commit/af7036cc0ad137642502959d7a51b53b6429dcf6))
+* **flexgrid:**
+  * Change on how tests are being applied (from .get  to .at ). ([7028d646](https://github.com/telusdigital/tds/commit/7028d646f498b4c01672e92d881445f3a697ec54))
+  * Adjust test variables accordingly (from doShallow to doMount) ([80765980](https://github.com/telusdigital/tds/commit/80765980eb57ada7a8d87478ff7927e061d5c06b))
+* **radio:** Refactor commont subcomponents of radio and checkbox into Choice ([d100c60f](https://github.com/telusdigital/tds/commit/d100c60f3ddfeb820deed5b00e82dfdf299bcb4a))
+* **styles:** Allow radio and checkbox to emit focus/blur events ([05f5d7f7](https://github.com/telusdigital/tds/commit/05f5d7f78c3eac9f88892d460a19229399659bdd))
+* **image:** Use inline clip-path to do circular masking ([9b8e2fc9](https://github.com/telusdigital/tds/commit/9b8e2fc979b99163748fd059a4ef8b4e29bf0810))
+* **select:** Apply better spacing to the icons ([fbfa3d3b](https://github.com/telusdigital/tds/commit/fbfa3d3bebca8a6b0b41770420a6faac1de818f7))
+* **responsive:**
+  * Remove old responsive component ([723ba862](https://github.com/telusdigital/tds/commit/723ba862e793ad0d4291ff4d9d87ebd6acbaad6b))
+  * Start replacing react-responsive with react-media. Replace in Heading componen ([c2c5b3ca](https://github.com/telusdigital/tds/commit/c2c5b3ca7d7bba48fcfd228df8dab1b7ed511832))
+* **expand-collapse:** Use new responsive component ([4f8135ce](https://github.com/telusdigital/tds/commit/4f8135cef063b61b3af96aeda9bc8bd8c2eca4a7))
+* **box:** Use new responsive component ([9d3dba4b](https://github.com/telusdigital/tds/commit/9d3dba4bb3e582fa38fab45d4f9c8c592098ee2f))
+* **button:** Use new responsive component ([9dce6e32](https://github.com/telusdigital/tds/commit/9dce6e32f21cbe04a4938fadc24fc45d77db921c))
+* **tooltip:** Use the new responsive component ([b05f35d5](https://github.com/telusdigital/tds/commit/b05f35d5d88622cc87a8d4246b66328fafe6bc60))
+* **heading:** Use a sub component to make the conditionals easier to follow ([9ea7b15d](https://github.com/telusdigital/tds/commit/9ea7b15dc091658abe69ec36b2bc576e1d9594b1))
+* **display-heading:** Use react-media based responsive component ([36dbd444](https://github.com/telusdigital/tds/commit/36dbd444176809f96c2bd331954e6ee518e0b0cb))
+* **choice:** Add transition styles in Choice.modules.scss ([e9b498e6](https://github.com/telusdigital/tds/commit/e9b498e61e14e64ee2f8d1661156e39bac997a48))
+
+##### Tests
+
+* **radio:** Remove the uncheck tests ([ee04b902](https://github.com/telusdigital/tds/commit/ee04b902b004bfccd41b7c20caf54f25c553bf58))
+
 #### 0.30.0 (2017-11-27)
 
 ##### Chores
