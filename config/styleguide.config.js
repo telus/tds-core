@@ -4,7 +4,7 @@ const { version } = require('../package.json')
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = ['Responsive', 'Image', 'Checkbox', 'Radio', 'Select', 'Textarea']
+const enabledInStaging = ['Image', 'Checkbox', 'Radio', 'Select', 'Textarea']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
@@ -122,7 +122,7 @@ module.exports = {
             return compact([
               toggleByEnv('FlexGrid', path.resolve('src/components/FlexGrid/FlexGrid.jsx')),
               path.resolve('src/components/Box/Box.jsx'),
-              toggleByEnv('Responsive', path.resolve('src/components/Responsive/Responsive.jsx')),
+              path.resolve('src/components/Responsive/Responsive.jsx'),
             ])
           },
           sections: [

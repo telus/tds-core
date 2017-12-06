@@ -14,6 +14,7 @@ const breakpoints = {
 /**
  * Respond to device features, most commonly the browser viewport size.
  *
+ * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.31.0</span>
  */
 const Responsive = ({ minWidth, maxWidth, query, children, ...rest }) => {
   if (!minWidth && !maxWidth) {
