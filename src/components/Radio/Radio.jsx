@@ -24,7 +24,7 @@ Radio.propTypes = {
   /**
    * The label.
    */
-  label: PropTypes.string.isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   /**
    * Associate this radio with a group. Set as the HTML name attribute.
    */
