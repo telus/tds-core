@@ -16,6 +16,7 @@ exports[`Checkbox renders 1`] = `
         data-testid="fake-input"
       >
         <input
+          aria-invalid="false"
           class="hiddenInput"
           data-no-global-styles="true"
           id="the-group-name_the-value"

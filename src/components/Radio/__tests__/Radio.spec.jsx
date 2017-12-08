@@ -234,6 +234,31 @@ describe('Radio', () => {
     })
   })
 
+  describe('accessibility', () => {
+    it('marks the checkbox as invalid when in the error feedback state', () => {
+      let findRadioElement = doMount().findRadioElement
+      expect(findRadioElement()).toHaveProp('aria-invalid', false)
+
+      findRadioElement = doMount({ feedback: 'error' }).findRadioElement
+      expect(findRadioElement()).toHaveProp('aria-invalid', true)
+    })
+
+    it('does not attach aria-describedby to the checkbox when no error is present', () => {
+      const { findRadioElement } = doMount({ error: undefined })
+
+      expect(findRadioElement()).toHaveProp('aria-describedby', undefined)
+    })
+
+    it('connects the error message to the checkbox for screen readers', () => {
+      const { findRadioElement } = doMount({
+        id: 'some-field-id',
+        error: 'An error message',
+      })
+
+      expect(findRadioElement()).toHaveProp('aria-describedby', 'some-field-id_error-message')
+    })
+  })
+
   it('passes additional attributes to the radio', () => {
     const { findRadioElement } = doMount({
       disabled: true,

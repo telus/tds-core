@@ -250,6 +250,31 @@ describe('Checkbox', () => {
     })
   })
 
+  describe('accessibility', () => {
+    it('marks the checkbox as invalid when in the error feedback state', () => {
+      let findCheckboxElement = doMount().findCheckboxElement
+      expect(findCheckboxElement()).toHaveProp('aria-invalid', false)
+
+      findCheckboxElement = doMount({ feedback: 'error' }).findCheckboxElement
+      expect(findCheckboxElement()).toHaveProp('aria-invalid', true)
+    })
+
+    it('does not attach aria-describedby to the checkbox when no error is present', () => {
+      const { findCheckboxElement } = doMount({ error: undefined })
+
+      expect(findCheckboxElement()).toHaveProp('aria-describedby', undefined)
+    })
+
+    it('connects the error message to the checkbox for screen readers', () => {
+      const { findCheckboxElement } = doMount({
+        id: 'some-field-id',
+        error: 'An error message',
+      })
+
+      expect(findCheckboxElement()).toHaveProp('aria-describedby', 'some-field-id_error-message')
+    })
+  })
+
   it('passes additional attributes to the checkbox', () => {
     const { findCheckboxElement } = doMount({
       disabled: true,

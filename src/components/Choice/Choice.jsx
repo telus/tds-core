@@ -148,6 +148,8 @@ class Choice extends React.Component {
                 value={value}
                 checked={this.state.checked}
                 className={styles.hiddenInput}
+                aria-invalid={feedback === 'error'}
+                aria-describedby={errorId || undefined}
                 onChange={this.onChange}
                 onFocus={this.onFocus}
                 onBlur={this.onBlur}
