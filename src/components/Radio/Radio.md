@@ -6,7 +6,7 @@ initialState = {
 const setChoice = (value) => setState({choice: value});
 
 <Box tag="fieldset" between={3}>
-	<Text size="small">
+  <Text size="small">
     Choose one combination of area code and first 3 digits to see the available numbers in that range:
   </Text>
   <Box tag="fieldset" between={2}>
