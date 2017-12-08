@@ -36,6 +36,10 @@ Checkbox.propTypes = {
    */
   feedback: PropTypes.oneOf(['error']),
   /**
+   * An error message.
+   */
+  error: PropTypes.string,
+  /**
    * A callback function to be invoked when the checkbox is checked or unchecked.
    *
    * @param {SyntheticEvent} event The React `SyntheticEvent`
@@ -58,6 +62,7 @@ Checkbox.propTypes = {
 Checkbox.defaultProps = {
   checked: false,
   feedback: undefined,
+  error: undefined,
   onChange: undefined,
   onFocus: undefined,
   onBlur: undefined,

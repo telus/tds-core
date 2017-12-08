@@ -6,9 +6,11 @@ import joinClassNames from '../../utils/joinClassNames'
 import generateId from '../../utils/generateId'
 
 import Text from '../Typography/Text/Text'
+import Paragraph from '../Typography/Paragraph/Paragraph'
 import Box from '../Box/Box'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Flexbox from '../Flexbox/Flexbox'
+import Helper from '../FormField/Helper/Helper'
 
 import styles from './Choice.modules.scss'
 import messagingStyles from '../Messaging.modules.scss'
@@ -60,6 +62,12 @@ const renderLabel = (label, feedback, checked, disabled) => {
   return content
 }
 
+const renderError = (error, errorId) => (
+  <Helper id={errorId} feedback="error">
+    <Paragraph size="small">{error}</Paragraph>
+  </Helper>
+)
+
 class Choice extends React.Component {
   state = {
     checked: this.props.checked,
@@ -106,9 +114,20 @@ class Choice extends React.Component {
   }
 
   render() {
-    const { label, name, value, feedback, type, inputTypeStyles, children, ...rest } = this.props
+    const {
+      label,
+      name,
+      value,
+      feedback,
+      error,
+      type,
+      inputTypeStyles,
+      children,
+      ...rest
+    } = this.props
 
     const choiceId = getId(rest.id, name, value)
+    const errorId = error && generateId(choiceId).postfix('error-message')
 
     const fakeInputClassNames = joinClassNames(
       type === 'radio' ? styles.fakeRadio : styles.fakeCheckbox,
@@ -116,29 +135,32 @@ class Choice extends React.Component {
     )
 
     return (
-      <label data-no-global-styles htmlFor={choiceId}>
-        <Box inline between={3} dangerouslyAddClassName={styles.alignCenter}>
-          <span className={fakeInputClassNames} data-testid="fake-input">
-            <input
-              {...safeRest(rest)}
-              id={choiceId}
-              type={type}
-              name={name}
-              value={value}
-              checked={this.state.checked}
-              className={styles.hiddenInput}
-              onChange={this.onChange}
-              onFocus={this.onFocus}
-              onBlur={this.onBlur}
-              data-no-global-styles
-            />
+      <Box between={2}>
+        {feedback === 'error' && error && renderError(error, errorId)}
+        <label data-no-global-styles htmlFor={choiceId}>
+          <Box inline between={3} dangerouslyAddClassName={styles.alignCenter}>
+            <span className={fakeInputClassNames} data-testid="fake-input">
+              <input
+                {...safeRest(rest)}
+                id={choiceId}
+                type={type}
+                name={name}
+                value={value}
+                checked={this.state.checked}
+                className={styles.hiddenInput}
+                onChange={this.onChange}
+                onFocus={this.onFocus}
+                onBlur={this.onBlur}
+                data-no-global-styles
+              />
 
-            {children(this.state.checked, rest.disabled)}
-          </span>
+              {children(this.state.checked, rest.disabled)}
+            </span>
 
-          {renderLabel(label, feedback, this.state.checked, rest.disabled)}
-        </Box>
-      </label>
+            {renderLabel(label, feedback, this.state.checked, rest.disabled)}
+          </Box>
+        </label>
+      </Box>
     )
   }
 }
@@ -149,6 +171,7 @@ Choice.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   checked: PropTypes.bool.isRequired,
   feedback: PropTypes.oneOf(['error']),
+  error: PropTypes.string,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
@@ -159,6 +182,7 @@ Choice.propTypes = {
 
 Choice.defaultProps = {
   feedback: undefined,
+  error: undefined,
   onChange: undefined,
   onFocus: undefined,
   onBlur: undefined,

@@ -1,31 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio renders 1`] = `
-<label
-  data-no-global-styles="true"
-  for="the-group_the-value"
+<div
+  class="betweenBottomMarginDesktop-2 stack"
 >
-  <div
-    class="betweenRightMarginDesktop-3 inline alignCenter"
+  <label
+    data-no-global-styles="true"
+    for="the-group_the-value"
   >
-    <span
-      class="fakeRadio unchecked"
-      data-testid="fake-input"
+    <div
+      class="betweenRightMarginDesktop-3 inline alignCenter"
     >
-      <input
-        class="hiddenInput"
-        data-no-global-styles="true"
-        id="the-group_the-value"
-        name="the-group"
-        type="radio"
-        value="the-value"
-      />
-    </span>
-    <span
-      class="medium mediumFont color"
-    >
-      A label
-    </span>
-  </div>
-</label>
+      <span
+        class="fakeRadio unchecked"
+        data-testid="fake-input"
+      >
+        <input
+          class="hiddenInput"
+          data-no-global-styles="true"
+          id="the-group_the-value"
+          name="the-group"
+          type="radio"
+          value="the-value"
+        />
+      </span>
+      <span
+        class="medium mediumFont color"
+      >
+        A label
+      </span>
+    </div>
+  </label>
+</div>
 `;

@@ -2,8 +2,10 @@ import React from 'react'
 import { mount, render } from 'enzyme'
 
 import Text from '../../Typography/Text/Text'
+import Paragraph from '../../Typography/Paragraph/Paragraph'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Checkbox from '../Checkbox'
+import Helper from '../../FormField/Helper/Helper'
 import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('Checkbox', () => {
@@ -23,6 +25,7 @@ describe('Checkbox', () => {
       findCheckboxElement,
       findFakeCheckbox: () => checkbox.find('[data-testid="fake-input"]'),
       findColoredLabel: () => checkbox.find(ColoredTextProvider),
+      findErrorMessage: () => checkbox.find(Helper),
       check: () => findCheckboxElement().simulate('change', { target: { checked: true } }),
       uncheck: () => findCheckboxElement().simulate('change', { target: { checked: false } }),
       focus: (focusEvent = {}) => findCheckboxElement().simulate('focus', focusEvent),
@@ -188,6 +191,23 @@ describe('Checkbox', () => {
       expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText')
       expect(findFakeCheckbox()).toHaveClassName('error')
       expect(findFakeCheckbox()).not.toHaveClassName('unchecked')
+    })
+
+    it('can have an error message', () => {
+      const { findErrorMessage, findFakeCheckbox, findColoredLabel } = doMount({
+        label: 'Some error',
+        feedback: 'error',
+        error: 'Error message',
+      })
+
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText')
+      expect(findFakeCheckbox()).toHaveClassName('error')
+      expect(findFakeCheckbox()).not.toHaveClassName('unchecked')
+      expect(findErrorMessage()).toContainReact(
+        <Helper id="the-group-namethe-value_error-message" feedback="error">
+          <Paragraph size="small">Error message</Paragraph>
+        </Helper>
+      )
     })
 
     it('does not appear as an error when it is checked', () => {

@@ -2,8 +2,10 @@ import React from 'react'
 import { mount, render } from 'enzyme'
 
 import Text from '../../Typography/Text/Text'
+import Paragraph from '../../Typography/Paragraph/Paragraph'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Radio from '../Radio'
+import Helper from '../../FormField/Helper/Helper'
 import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('Radio', () => {
@@ -24,6 +26,7 @@ describe('Radio', () => {
       findFakeRadio: () => radio.find('[data-testid="fake-input"]'),
       findFakeInnerRadio: () => radio.find('[data-testid="fake-inner-radio"]'),
       findColoredLabel: () => radio.find(ColoredTextProvider),
+      findErrorMessage: () => radio.find(Helper),
       check: () => findRadioElement().simulate('change', { target: { checked: true } }),
       focus: (focusEvent = {}) => findRadioElement().simulate('focus', focusEvent),
       blur: (blurEvent = {}) => findRadioElement().simulate('blur', blurEvent),
@@ -171,6 +174,23 @@ describe('Radio', () => {
       expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText')
       expect(findFakeRadio()).toHaveClassName('error')
       expect(findFakeRadio()).not.toHaveClassName('unchecked')
+    })
+
+    it('can have an error message', () => {
+      const { findErrorMessage, findFakeRadio, findColoredLabel } = doMount({
+        label: 'Some error',
+        feedback: 'error',
+        error: 'Error message',
+      })
+
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText')
+      expect(findFakeRadio()).toHaveClassName('error')
+      expect(findFakeRadio()).not.toHaveClassName('unchecked')
+      expect(findErrorMessage()).toContainReact(
+        <Helper id="radiogroupthe-value_error-message" feedback="error">
+          <Paragraph size="small">Error message</Paragraph>
+        </Helper>
+      )
     })
 
     it('does not appear as an error when it is checked', () => {

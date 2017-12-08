@@ -42,6 +42,10 @@ Radio.propTypes = {
    */
   feedback: PropTypes.oneOf(['error']),
   /**
+   * An error message.
+   */
+  error: PropTypes.string,
+  /**
    * A callback function to be invoked when the radio is checked or unchecked.
    *
    * @param {SyntheticEvent} event The React `SyntheticEvent`
@@ -64,6 +68,7 @@ Radio.propTypes = {
 Radio.defaultProps = {
   checked: false,
   feedback: undefined,
+  error: undefined,
   onChange: undefined,
   onFocus: undefined,
   onBlur: undefined,
