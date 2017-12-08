@@ -1,7 +1,7 @@
 ```
 <Box tag="fieldset" between={2}>
   <legend>Show me deals for...</legend>
-  <Checkbox name="services" value="mobility" label="Mobility Please confirm you have read the terms and conditions Please confirm you have read the terms and conditions Please confirm you have read the terms and conditions" />
+  <Checkbox name="services" value="mobility" label="Mobility" />
   <Checkbox name="services" value="internet" label="Internet" />
   <Checkbox name="services" value="tv" label="TV" />
   <Checkbox name="services" value="home-phone" label="Home Phone" />
