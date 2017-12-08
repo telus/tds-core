@@ -25,7 +25,8 @@ COPY .npmrc package.json yarn.lock ./
 # Install dependencies.
 RUN set -ex && \
     yarn install --pure-lockfile && \
-    yarn cache clean
+    yarn cache clean && \
+    yarn gitbook:install
 
 # Copy all source and test files into the working directory.
 # We use a .dockerignore file to prevent unnecessary or large files from being inadvertently copied.
