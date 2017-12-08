@@ -13,7 +13,7 @@
     "build-package": "yarn build:js && yarn build:css && yarn build:scss",
     "build-styleguide": "styleguidist build --config config/styleguide.config.js",
     "build:for-staging":
-      "yarn build-package && yarn build-styleguide && gitbook build guide guide/staging",
+      "yarn build-package && STYLEGUIDIST_ENV=staging yarn build-styleguide && gitbook build guide guide/staging",
     "deploy:docs": "node ./scripts/deploy-docs.js",
     "deploy:package": "scripts/publish.sh",
     "dev": "styleguidist server --config config/styleguide.config.js",
@@ -137,8 +137,7 @@
       "icons/scripts/icons.js",
       "styleguide/**",
       "**.tgz",
-      "guide/_book/**",
-      "guide/staging/**"
+      "guide/**"
     ]
   }
 }
