@@ -9,7 +9,7 @@ exports[`Checkbox renders 1`] = `
     for="the-group-name_the-value"
   >
     <div
-      class="betweenRightMarginDesktop-3 inline alignCenter"
+      class="betweenRightMarginDesktop-3 inline alignFlexStart"
     >
       <span
         class="fakeCheckbox unchecked"

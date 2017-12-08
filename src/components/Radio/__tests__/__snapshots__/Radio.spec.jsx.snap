@@ -9,7 +9,7 @@ exports[`Radio renders 1`] = `
     for="the-group_the-value"
   >
     <div
-      class="betweenRightMarginDesktop-3 inline alignCenter"
+      class="betweenRightMarginDesktop-3 inline alignFlexStart"
     >
       <span
         class="fakeRadio unchecked"

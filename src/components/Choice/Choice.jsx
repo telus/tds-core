@@ -42,7 +42,7 @@ const getClassNames = (inputTypeStyles, checked, focus, feedback, disabled) => {
 
 const renderColoredLabel = (color, content) => (
   <ColoredTextProvider colorClassName={color}>
-    <Flexbox direction="row" dangerouslyAddClassName={styles.alignCenter}>
+    <Flexbox direction="row" dangerouslyAddClassName={styles.alignFlexStart}>
       {content}
     </Flexbox>
   </ColoredTextProvider>
@@ -138,7 +138,7 @@ class Choice extends React.Component {
       <Box between={2}>
         {feedback === 'error' && error && renderError(error, errorId)}
         <label data-no-global-styles htmlFor={choiceId}>
-          <Box inline between={3} dangerouslyAddClassName={styles.alignCenter}>
+          <Box inline between={3} dangerouslyAddClassName={styles.alignFlexStart}>
             <span className={fakeInputClassNames} data-testid="fake-input">
               <input
                 {...safeRest(rest)}
