@@ -29,9 +29,7 @@ const AWS = require('aws-sdk')
 const env = process.argv[2] || 'staging'
 const { version } = require('../package.json')
 
-const _path = env === 'staging' ? 'guide' : 'styleguide'
-
-const uploadDir = resolvePath(_path, env)
+const uploadDir = resolvePath('build', env)
 
 const config = {
   region: 'us-east-1',

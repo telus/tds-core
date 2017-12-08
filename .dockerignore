@@ -7,3 +7,5 @@ dist/
 
 icons/
 styleguide/
+build/
+_book/
