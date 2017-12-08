@@ -25,8 +25,7 @@ COPY .npmrc package.json yarn.lock ./
 # Install dependencies.
 RUN set -ex && \
     yarn install --pure-lockfile && \
-    yarn cache clean && \
-    yarn gitbook:install
+    yarn cache clean
 
 # Copy all source and test files into the working directory.
 # We use a .dockerignore file to prevent unnecessary or large files from being inadvertently copied.
@@ -34,6 +33,7 @@ COPY . /app
 
 # Build the app.
 RUN yarn run build-package && \
+    yarn gitbook:install && \
     STYLEGUIDIST_ENV=staging yarn run build:docs-staging && \
     STYLEGUIDIST_ENV=production yarn run build-styleguide
 
