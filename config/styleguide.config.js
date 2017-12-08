@@ -2,6 +2,7 @@ const path = require('path')
 const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
+const getDirectory = env => (env === 'staging' ? 'guide/staging' : 'styleguide')
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
 const enabledInStaging = ['Image', 'Checkbox', 'Radio', 'Select', 'Textarea']
@@ -263,7 +264,7 @@ module.exports = {
 
   template: styleguidistEnv === 'production' ? path.resolve('docs/index.html') : undefined,
   assetsDir: path.resolve('docs/assets/'),
-  styleguideDir: path.resolve('styleguide', styleguidistEnv),
+  styleguideDir: path.resolve(getDirectory(styleguidistEnv), styleguidistEnv),
   require: [path.resolve('src/scss/global.scss'), path.resolve('docs/scss/styleguide.scss')],
   styleguideComponents: {
     Logo: path.resolve('docs/components/Logo/Logo'),
