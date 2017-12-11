@@ -1,4 +1,5 @@
 # Summary
 
-* [Introduction](README.md)
+* [TELUS Design System - Introduction](README.md)
+* [Contributing](CONTRIBUTING.md)
 * [Components](ref://components/index.html)
