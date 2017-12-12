@@ -23,13 +23,12 @@ initialState = {
 };
 
 const handleCheck = (event) => {
-  if (event.target.checked === true) {
+  if (event.target.checked) {
     setState({ checked: false, feedback: undefined, message: undefined});
   } else {
     setState({ checked: true, feedback: 'error', message: message});
   }
 };
 
-
-  <Checkbox name="terms" value="agree" label="I agree to the terms and conditions" feedback={state.feedback} error={state.message} onChange={handleCheck} checked={state.checked} />
+<Checkbox name="terms" value="agree" label="I agree to the terms and conditions" feedback={state.feedback} error={state.message} onChange={handleCheck} checked={state.checked} />
 ```
