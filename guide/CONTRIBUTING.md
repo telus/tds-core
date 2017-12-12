@@ -7,9 +7,10 @@
 
 # Contributing to TDS
 
-Thank you for deciding to make a contribution! There are several ways you can contribute to TDS.
+<!-- TODO: update this after releasing v1 -->
+**_At this time, the core TDS team is working to release version 1.0.0 of the React component library. We are currently not accepting contributions for new components. Submission of bug fixes and discussions are still welcome._ Learn more by reading our [roadmap](ROADMAP.md).**
 
-Contributions to design, code, accessibility, usability, documentation, etc are all welcome! If you have any questions, see [support](SUPPORT.md).
+Thank you for deciding to make a contribution! There are several ways you can contribute to TDS that includes designs, code, accessibility and usability improvements, and documentation.
 
 **Note**: the TDS 'Core' React library undergoes a rigorous review process as we address several important characteristics that make up a 'core' React component, which includes but is not limited to:
 
@@ -18,11 +19,11 @@ Contributions to design, code, accessibility, usability, documentation, etc are 
 * Does the component satisfy an immediate and ongoing outcome for multiple teams?
 * Does the component comply with TELUS branding guidelines? <!-- TODO add link -->
 
-We would appreciate your patience during this process. Once a cataloguing system has been released, there will be opportunities to self-govern your own components; learn more by reading our [roadmap](ROADMAP.md).
+We would appreciate your patience during this process. Once a cataloguing system has been released, there will be opportunities to self-govern your own components. learn more by reading our [roadmap](ROADMAP.md).
 
 When in doubt, feel free to [reach out to us](SUPPORT.md).
 
-## Contribution process (TDS Core)
+## Contribution process (TDS Core) {#process}
 
 ### 1. Submit an issue {#1-submit-issue}
 
@@ -48,12 +49,58 @@ After completion, you may open a pull request.
   Current assumption: issue/discussion first
 -->
 
-First, thanks! :) 
+First, thanks for taking the time. :) 
 
-* Ensure the pull request description clearly describes the problem and solution. Include the relevant issue number if applicable
+* Ensure the pull request description clearly describes the problem and solution. Include the relevant issue number if applicable, and then submit your pull request
 * Sit back and wait for the core team to get back to you
 
 Learn [how to open a pull request on GitHub](https://help.github.com/articles/creating-a-pull-request/)
+
+## Developer guide
+
+### Set up your environment
+
+After forking TDS, do the following steps to get started.
+
+```sh
+# Install yarn
+brew install yarn # alternatively: npm i -g yarn
+
+# Install commitizen to write commit messages according to our preferred format.
+yarn global add commitizen
+
+# Clone your fork
+git clone https://github.com/<your-username>/tds.git && cd tds
+
+# Install dependencies
+yarn
+```
+
+### Development
+
+```sh
+# Start the docs server, check output for the location of the docs
+yarn dev
+
+# Open a new terminal window
+
+# Start the test watcher
+yarn test:watch
+```
+
+After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will
+automatically refresh when there are changes to any of the source files.
+
+### When you are ready to make a commit
+
+<!-- TODO: consider using husky to install a git-push hook -->
+```sh
+# Run build, linting and tests
+yarn precommit
+
+# Make a commit using commitizen
+git cz
+```
 
 <!-- META -->
 [PR]: #3-pull-request

@@ -13,9 +13,11 @@ We value transparency with our developments and decisions. Here you will find a 
 <!-- TODO: include diagram of before and after -->
 - Create and maintain a 'component catalogue' system for easy sharability of React components
   - Include a federated 'Core' suite of components (currently distributed as [@telusdigital/tds](https://www.npmjs.com/package/@telusdigital/tds) on npm), and a 'Labs' catalogue of TELUS developer components with relaxed governance
+  - Improved contribution process for 'core' components
 
 ## Future
 
 <!-- TODO: add a link here to GitHub discussions, or create a discussion anchor in the sidebar, or add to 'support' document -->
 - Component bundling and caching across all TELUS web properties
+- Adopting a CSS-in-JS methodology
 - You decide! [Learn how to contribute](CONTRIBUTING.md#discuss) and discuss features

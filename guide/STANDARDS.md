@@ -13,58 +13,134 @@ When it comes to writing code, documentation, or Sketch assets, we have internal
   TODO: include markdown, code snippet rules (spaces over tabs, etc)
   language, bevity, etc
 -->
+TBD
+[Documenting components](#documenting-components)
 
 ## Design standards
 
 <!-- TODO: make these -->
+TBD
 
-## Coding standards
+## Code standards
 
-### Set up your environment
+At a high level, all components are written in ECMAScript2015+ and React using JSX syntax. Component documentation is powered by [react-styleguidist](react-styleguidist.js.org) and [jest](https://facebook.github.io/jest/) is the testing framework. We broadly follow the comprehensive AirBnb style guides for [JavaScript](https://github.com/airbnb/javascript) and [React](https://github.com/airbnb/javascript/tree/master/react).
 
-After forking TDS, do the following steps to get started.
+Currently, our styling language is [CSS Modules](https://github.com/css-modules/css-modules). This may likely change in the future.
 
-```sh
-# Install yarn
-brew install yarn # alternatively: npm i -g yarn
+Writing components for a widely-used component library has additional considerations than writing components for an application. Extra care is necessary to ensure safety and reusability. Make sure you read the section on [Component Library Considerations](#component-library-considerations).
 
-# Install commitizen to write commit messages according to our preferred format.
-yarn global add commitizen
+### JavaScript
 
-# Clone your fork
-git clone https://github.com/<your-username>/tds.git && cd tds
+* Always use ES2015+ syntax.
 
-# Install dependencies
-yarn install
+### Basic React
+
+* Name the component file, style file, and test file using the name of the component in PascalCase. Avoid using "index.js" as it is hard to use an IDE to search for a component when everything is named the same. (Ex: MyComponent.jsx, MyComponent.scss, and MyComponent.spec.jsx)
+* Prefer functional stateless components. Only create a class when you either need state or need lifecycle methods.
+* Prefer React state over "ref". Avoid storing components in state. Only store data in state.
+* Keep inline styles to a minimum. If using inline styles, create the styles object outside of the component's render method if possible. Creating the object in the render method will create a brand new object on every render.
+
+### Props
+
+* De-structure props in the function signature to make it easy to see all of the used props.
+* Always accept `rest` props (except for `className` and `style`) to allow for common global HTML attributes such as `id`. Spread these onto the main HTML element of the component _before_ other props. This is to prevent accidental or purposeful overriding.
+* Always use propTypes. Always use isRequired when the prop is necessary.
+* Only use defaultProps when there is a sensible default. Its fine to not provide a default.
+* Use PropTypes.oneOf when there are a fixed number of values for a prop.
+* Establish prop naming conventions across components. Ex: use "a11y..." as prop names for accessibility properties.
+* Don't name props after attributes that already have meaning in HTML or React, such as "style", "title" or "name".
+* If a parent component does not use props and only passes them down to its children, pass components as props instead.
+
+Props de-structuring example:
+
+**Do**
+```jsx
+const MyLink = ({children, link, className, style, ...props}) => (
+  <a {...props} href={link}>children</a>
+)
 ```
 
-### Develop Components
+**Do not**
+```jsx
+const MyLink = ({children, link, ...props}) => (
+  <a href={link} {...props}>children</a>
+)
+```
 
+### Component Library Considerations
+
+* Do not accept additional class names or styles as props (`className` or `style` props). Instead, provide a prop to customize the appearance.
+* Always include accessibility attributes when appropriate.
+* In general, a component should not know anything about other components. It can only control itself and any direct children.
+* Do not give components external margins.
+* Prefer `children` for nested text or components.
+* Avoid letting components touch globals such as document or window. If that is necessary, consider a HOC or letting the app pass in a prop to do that.
+* Avoid using React.cloneElement as it can get confusing as to what is happening.
+* React's context can be helpful in communicating with deeply nested children, but use sparingly. Consider using a library to abstract it away too. (react-broadcast)
+* Keep dependencies to an absolute minimum. Keep application responsibilities out of the design system. (CMS, application state, APIs, etc)
+* When changing props, always deprecate a prop first. Avoid breaking changes. Same for a component name.
+* Use polyfills when appropriate to ensure features used will be available in a wide range of browsers.
+
+### Styles
+
+* Always use component local styles
+* Avoid use of float
+* Avoid hard coding pixels aka "magic numbers". Everything should be based on rem or em or should be a derived values
+* Responsive by default
+* Avoid styling html tags directly. Avoid styling based on id or other properties. Only apply styles based on class name
+* Use flexbox, but be aware of IE11 bugs. Test in IE11
+
+### SCSS & CSS Modules
+
+* Prefer mixins and `composes` over extending classes
+* Keep nesting to a minimum. 2 levels max
+* For variations, use a different class name to represent each variation that `composes` a base class
+
+## Documenting components
+
+* Write in complete sentences, using plain language
+* Avoid jargon
+* Avoid overly specific or "React-y" phrases like "It renders its children prop"
+* Be brief, but complete
+
+### Component comment docs
+
+* Use the component declaration comment for a short (1 to 2 sentence) description of what the component is. Not what it does
+* Use prop type comments on all props. Be consistent across components. Write in complete sentences here, with punctuation
+* Each component must be accompanied by an example/docs file. Name it the same as the component (something like MyComponent.docs.md). Do not name it README.md as that is hard to search for with an IDE
+* Use prop type annotations appropriately (`@deprecated`, `@since,` etc)
+
+### Example file
+
+* Start with the minimal usage of the component, passing in only required props.
+* Add additional text to add more context as often as needed
+* Include additional examples for the optional props. You don't necessarily need an example for each optional prop or value.
+* When a component is interactive, provide an example that lets the documentation reader interact with it. Tell the reader what to do and what to expect.
+* Examples should look "real". Avoid lorum ipsum. Use real looking data.
+* Use "badges" to denote the version at which components where changed or added. Badges can go anywhere.
+* Provide explicit guidelines on when to use or when not to use the component or specific props
+* Call out when accessibility props are necessary
+* Use the shorthand for boolean props. (Ex: `<MyComponent someBool />`. not `<MyComponent someBool={true} />`)
+
+### Tests (jest)
+
+* Use assertions that produce helpful error messages. [enzyme-matchers](https://github.com/blainekasten/enzyme-matchers) is good for this.
+
+  **Do**:
+  ```js
+  expect(myComponent).toHaveProp("someBoolean", true)
+  // => Expected myComponent to have the prop "someBoolean" with the value of true, but it was false.
+  ```
+
+  **Do not**: 
+  ```js
+  expect(myComponent.props().someBoolean).toBeTruthy()
+  // Expected false to be truthy
+  ```
+
+* Always prefer "shallow" rendering, then "render", then "mount". Only "mount" if you are testing the lifecycle methods.
+* Use a snapshot test for components that do not have any logic and to increase confidence in the structure of the component. Snapshot tests do not replace unit tests.
 This codebase uses [react-styleguidist](https://react-styleguidist.js.org) to document components, and
 [jest](https://facebook.github.io/jest/)/[enzyme](http://airbnb.io/enzyme/) for unit testing.
 
-See the [Coding Standards](https://github.com/telusdigital/tds/wiki/Coding-Standards) guide to know more about coding
-conventions.
-
-```sh
-# Start the docs server, check output for the location of the docs
-yarn dev
-
-# Open a new terminal window
-
-# Start the test watcher
-yarn test:watch
-```
-
-After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will
-automatically refresh when there are changes to any of the source files.
-
-### When you are ready to make a commit
-
-```sh
-# Run build, linting and tests
-yarn precommit
-
-# Make a commit using commitizen
-git cz
-```
+We use [Prettier](https://prettier.io/), a tool that integrates with your text editor to automatically format your code to use our standards.
