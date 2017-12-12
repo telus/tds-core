@@ -1,94 +1,59 @@
-<!-- TODO: split into sections: Workflow, Contributing Code, Contributing Designs -->
+<!-- 
+  TODO: split into sections:
+    Workflow, Contributing Code, Contributing Designs
+  TODO: once this guide is deployed,
+    slim down the repository CONTRIBUTING.md file
+-->
 
 # Contributing to TDS
 
-The TELUS Design System (TDS) is a platform that contains tools, practices, assets, components, and guidelines. As such, there are several ways you can contribute to TDS.
+Thank you for deciding to make a contribution! There are several ways you can contribute to TDS.
 
-## How to contribute to TDS
+Contributions to design, code, accessibility, usability, documentation, etc are all welcome! If you have any questions, see [support](SUPPORT.md).
 
-<!-- TODO move to support/contact -->
-We’re so glad you’re thinking about contributing to the TELUS Design System! If you’re unsure about anything, just ask —
-or submit your issue or pull request anyway. The worst that can happen is we’ll politely ask you to change something. We
-appreciate all friendly contributions.
+**Note**: the TDS 'Core' React library undergoes a rigorous review process as we address several important characteristics that make up a 'core' React component, which includes but is not limited to:
 
-If you have any questions, ping us on the #tds-tech-support or the #tds-guild Slack channel.
+* Is the component highly reusable?
+* Is the component accessible?
+* Does the component satisfy an immediate and ongoing outcome for multiple teams?
+* Does the component comply with TELUS branding guidelines? <!-- TODO add link -->
 
-### Did you find a bug?
+We would appreciate your patience during this process. Once a cataloguing system has been released, there will be opportunities to self-govern your own components; learn more by reading our [roadmap](ROADMAP.md).
 
-* Ensure the bug was not already reported by searching the GitHub [Issues](https://github.com/telusdigital/tds/issues)
+When in doubt, feel free to [reach out to us](SUPPORT.md).
+
+## Contribution process (TDS Core)
+
+### 1. Submit an issue {#1-submit-issue}
+
+If you found a bug, fixed a bug, have a suggestion, or would like to begin a conversation, the first step is to open a new issue. If you would like to make a small adjustment to documentation, you may jump to [opening a pull request][PR].
+
+* Ensure the issue was not already reported by searching the GitHub [issues](https://github.com/telusdigital/tds/issues)
 * If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/telusdigital/tds/issues/new)
-* Be sure to include a title and clear description, as much relevant information as possible, and a code sample or an executable test case demonstrating the expected behaviour that is not occurring
+* Be sure to include a title and clear description, as much relevant information as possible, and - if applicable - a code sample or executable test case demonstrating the expected behaviour that is not occurring
 
-### Did you fix a bug?
-<!-- TODO: do we want people to go straight to PR, or to open an issue first? -->
+Learn [how to open an issue on GitHub](https://help.github.com/articles/creating-an-issue/).
 
-* First, thanks! :)
-* Open a new GitHub issue with the patch's details or reach out to the TDS team to help expedite the contribution process
-* Before submitting a pull request, please refer to the [Getting Started](getting-started.md) guide for coding standards
-* Ensure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable
+### 2. Develop solution
 
-### Do you have a suggestion for a new component or feature?
+Once an issue has been delegated to you, or if you are making an adjustment to documentation, you may develop your solution.
 
-**We are not currently accepting pull requests for new components or features.** For details on when you can expect to create your own components or contribute to those found in TDS, please refer to our [roadmap](roadmap.md).
-<!-- TODO: ensure the roadmap link works -->
+* Before submitting a pull request, please refer to the [Standards guide](STANDARDS.md) to comply with all our standards <!-- TODO: make this a CI linting thing as well -->
 
-* Ensure the component/feature is not already requested by searching the GitHub [Issues](https://github.com/telusdigital/tds/issues).
-* If you're unable to find a feature request, open a new one by [creating an issue](https://github.com/telusdigital/tds/issues/new) to start a discussion.
+After completion, you may open a pull request.
 
-When in doubt, please consult a TDS team member on brand alignment, reusable components, or new ideas.
+### 3. Pull request {#3-pull-request}
+<!-- 
+  TODO: do we want people to go straight to PR, or to open an issue first? 
+  Current assumption: issue/discussion first
+-->
 
-## Contributing to the TDS code
+First, thanks! :) 
 
-### Set up your environment
+* Ensure the pull request description clearly describes the problem and solution. Include the relevant issue number if applicable
+* Sit back and wait for the core team to get back to you
 
-After forking TDS, do the following steps to get started.
+Learn [how to open a pull request on GitHub](https://help.github.com/articles/creating-a-pull-request/)
 
-```sh
-# Install yarn
-brew install yarn # alternatively: npm i -g yarn
-
-# Install commitizen to write commit messages according to our preferred format.
-yarn global add commitizen
-
-# Clone your fork
-git clone https://github.com/<your-username>/tds.git && cd tds
-
-# Install dependencies
-yarn install
-```
-
-### Develop Components
-
-This codebase uses [react-styleguidist](https://react-styleguidist.js.org) to document components, and
-[jest](https://facebook.github.io/jest/)/[enzyme](http://airbnb.io/enzyme/) for unit testing.
-
-See the [Coding Standards](https://github.com/telusdigital/tds/wiki/Coding-Standards) guide to know more about coding
-conventions.
-
-```sh
-# Start the docs server, check output for the location of the docs
-yarn dev
-
-# Open a new terminal window
-
-# Start the test watcher
-yarn test:watch
-```
-
-After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will
-automatically refresh when there are changes to any of the source files.
-
-### When you are ready to make a commit
-
-```sh
-# Run build, linting and tests
-yarn precommit
-
-# Make a commit using commitizen
-git cz
-```
-
-### Make a Pull Request
-
-When your branch is ready for review, create a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
-to the main TDS repository.
+<!-- META -->
+[PR]: #3-pull-request
