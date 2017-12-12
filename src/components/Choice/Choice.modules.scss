@@ -74,4 +74,6 @@
 
   // to make sure the selected state (green circle) is properly aligned on mobile devices
   position: absolute;
+  left: -10000px;
+  top: auto;
 }
