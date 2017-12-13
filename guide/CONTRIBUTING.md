@@ -19,11 +19,11 @@ Thank you for deciding to make a contribution! There are several ways you can co
 * Does the component satisfy an immediate and ongoing outcome for multiple teams?
 * Does the component comply with TELUS branding guidelines? <!-- TODO add link -->
 
-We would appreciate your patience during this process. Once a cataloguing system has been released, there will be opportunities to self-govern your own components. learn more by reading our [roadmap](ROADMAP.md).
+We would appreciate your patience during this process. Once a cataloguing system has been released, there will be opportunities to self-govern your own components. Learn more by reading our [roadmap](ROADMAP.md).
 
 When in doubt, feel free to [reach out to us](SUPPORT.md).
 
-## Contribution process (TDS Core) {#process}
+## Contribution process {#process}
 
 ### 1. Submit an issue {#1-submit-issue}
 
@@ -56,15 +56,24 @@ First, thanks for taking the time. :)
 
 Learn [how to open a pull request on GitHub](https://help.github.com/articles/creating-a-pull-request/)
 
+## Designer guide
+
+As a designer contributing to TDS, be sure to follow our [design standards][DESIGN]
+
 ## Developer guide
+
+When contributing to TDS, be sure to follow our [coding standards][CODE].
 
 ### Set up your environment
 
-After forking TDS, do the following steps to get started.
+After forking TDS, the following steps will get you started:
 
-```sh
+```bash
 # Install yarn
-brew install yarn # alternatively: npm i -g yarn
+brew install yarn
+
+# you can also use npm
+# npm i -g yarn
 
 # Install commitizen to write commit messages according to our preferred format.
 yarn global add commitizen
@@ -76,9 +85,13 @@ git clone https://github.com/<your-username>/tds.git && cd tds
 yarn
 ```
 
+We use [Prettier](https://prettier.io/), a tool that integrates with your text editor to automatically format your code to use our standards. You can configure your IDE to format your code automatically on save, and Prettier will adjust your syntax in accordance with [TDS standards][CODE].
+
 ### Development
 
-```sh
+**Dev environment**:
+
+```bash
 # Start the docs server, check output for the location of the docs
 yarn dev
 
@@ -88,19 +101,38 @@ yarn dev
 yarn test:watch
 ```
 
-After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will
-automatically refresh when there are changes to any of the source files.
+After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will automatically refresh when there are changes to any of the source files.
+
+**Creating a new component**:
+
+```bash
+# create a new component of `<componentname>` in /src/components
+yarn scaffold <componentname>
+
+# example result of `yarn scaffold PriceLock`
+# /src/components/PriceLock/PriceLock.md
+# /src/components/PriceLock/PriceLock.jsx
+# /src/components/PriceLock/PriceLock.module.scss
+# /src/components/PriceLock/__tests__/PriceLock.spec.jsx
+```
 
 ### When you are ready to make a commit
 
-<!-- TODO: consider using husky to install a git-push hook -->
-```sh
+<!--
+  TODO: consider using husky to install a git-push hook
+  That way developers don't need to use precommit
+-->
+```bash
 # Run build, linting and tests
 yarn precommit
 
-# Make a commit using commitizen
+# Stage your files and then make a commit using commitizen
 git cz
 ```
 
+After development, you may open a [pull request][PR].
+
 <!-- META -->
 [PR]: #3-pull-request
+[CODE]: STANDARDS.md#code
+[DESIGN]: STANDARDS.md#design
