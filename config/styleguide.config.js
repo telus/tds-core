@@ -9,7 +9,7 @@ const getStyleguideDir = () => {
 }
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = ['Image', 'Checkbox', 'Radio', 'Select', 'Textarea']
+const enabledInStaging = ['Image', 'Checkbox', 'Radio', 'Select', 'Textarea', 'FlexGrid']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
@@ -38,7 +38,8 @@ module.exports = {
     // Add other namespaced components here.
     // key is a path to match, value is the name to show in the styleguide for the import statement
     const namespacedComponents = {
-      Grid: 'Grid',
+      'old-components/Grid': 'Grid',
+      FlexGrid: 'FlexGrid',
       StepTracker: 'Steps',
       'components/ExpandCollapse/Panel': 'ExpandCollapse',
       'Typography/Text': 'Text',
@@ -124,13 +125,22 @@ module.exports = {
         {
           name: 'Layout',
           components() {
-            return compact([
-              toggleByEnv('FlexGrid', path.resolve('src/components/FlexGrid/FlexGrid.jsx')),
+            return [
               path.resolve('src/components/Box/Box.jsx'),
               path.resolve('src/components/Responsive/Responsive.jsx'),
-            ])
+            ]
           },
-          sections: [
+          sections: compact([
+            toggleByEnv('FlexGrid', {
+              name: 'FlexGrid',
+              components() {
+                return [
+                  path.resolve('src/components/FlexGrid/FlexGrid.jsx'),
+                  path.resolve('src/components/FlexGrid/Col.jsx'),
+                  path.resolve('src/components/FlexGrid/Row.jsx'),
+                ]
+              },
+            }),
             {
               name: 'Grid',
               components() {
@@ -141,7 +151,7 @@ module.exports = {
                 ]
               },
             },
-          ],
+          ]),
         },
         {
           name: 'Content',
