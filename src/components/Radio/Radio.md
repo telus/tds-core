@@ -5,18 +5,11 @@ initialState = {
 
 const setChoice = (event) => setState({choice: event.target.value});
 
-<Box tag="fieldset" between={3}>
-  <Text size="small">
-    Choose one combination of area code and first 3 digits to see the available numbers in that range:
+<Box tag="fieldset" between={2}>
+  <Text bold size="medium">
+    How would you like to recieve your monthly bill?
   </Text>
-  <Box tag="fieldset" between={2}>
-    <Text bold size="small">
-      Area code (416)
-    </Text>
-    <Radio label="(416) 547" name="area-code" value="547" checked={state.choice === "547"} onChange={setChoice} />
-    <Radio label="(416) 871" name="area-code" value="871" checked={state.choice === "871"} onChange={setChoice} />
-    <Radio label="(416) 321" name="area-code" value="321" checked={state.choice === "321"} onChange={setChoice} />
-    <Radio label="(416) 384" name="area-code" value="384" checked={state.choice === "384"} onChange={setChoice} />
-  </Box>
+  <Radio label="e.Bill" name="monthly-bill" value="e.Bill" checked={state.choice === "e.bill"} onChange={setChoice} />
+  <Radio label="Paper bill" name="monthly-bill" value="paper bill" checked={state.choice === "paper bill"} onChange={setChoice} />
 </Box>
 ```
