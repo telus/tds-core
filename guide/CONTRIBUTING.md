@@ -27,7 +27,7 @@ When in doubt, feel free to [reach out to us](SUPPORT.md).
 
 ### 1. Submit an issue {#1-submit-issue}
 
-If you found a bug, fixed a bug, have a suggestion, or would like to begin a conversation, the first step is to open a new issue. If you would like to make a small adjustment to documentation, you may jump to [opening a pull request][PR].
+If you would like to make a small adjustment to documentation, you may jump to [opening a pull request][PR]. If you found a bug, fixed a bug, have a suggestion, or would like to begin a conversation, follow these steps:
 
 * Ensure the issue was not already reported by searching the GitHub [issues](https://github.com/telusdigital/tds/issues)
 * If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/telusdigital/tds/issues/new)
