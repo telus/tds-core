@@ -16,7 +16,7 @@
 Use the feedback and error props to give the user feedback regarding a missed checkbox by highlighting the label, checkbox element and adding an error message stating how to proceed.
 
 ```
-const message = "Please confirm you have read the terms and conditions";
+const message = "Please agree to the terms and conditions";
 
 initialState = {
   checked: false,
