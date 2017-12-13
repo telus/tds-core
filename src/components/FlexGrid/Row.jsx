@@ -7,14 +7,12 @@ import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 import safeRest from '../../utils/safeRest'
 
 const Row = ({ children, ...rest }) => (
-  <Subscriber channel="gutterless">
-    {gutterless => {
-      return (
-        <ReactFlexboxGridRow {...safeRest(rest)} style={gutterless}>
-          {children}
-        </ReactFlexboxGridRow>
-      )
-    }}
+  <Subscriber channel="flex-grid">
+    {gutterStyle => (
+      <ReactFlexboxGridRow {...safeRest(rest)} style={gutterStyle}>
+        {children}
+      </ReactFlexboxGridRow>
+    )}
   </Subscriber>
 )
 

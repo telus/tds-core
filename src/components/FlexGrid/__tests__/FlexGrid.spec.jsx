@@ -1,87 +1,79 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { mount, render } from 'enzyme'
+
 import { Grid } from 'react-flexbox-grid'
 
-import Responsive from '../../Responsive/Responsive'
 import FlexGrid from '../FlexGrid'
 
 describe('FlexGrid', () => {
   const doMount = (props = {}) => {
-    const wrapper = mount(<FlexGrid {...props}>Some grid stuff</FlexGrid>)
-    return wrapper.find('Grid')
-  }
-
-  const doMountWithChildren = (props = {}) => {
     const flexGrid = mount(
       <FlexGrid {...props}>
-        <Responsive id="responsive" minWidth="md">
-          {match => {
-            return (
-              <FlexGrid.Col>
-                <div>HALF: {match}</div>
-              </FlexGrid.Col>
-            )
-          }}
-        </Responsive>
-        <FlexGrid.Row>
-          <FlexGrid.Col>HALF</FlexGrid.Col>
-          <FlexGrid.Col>HALF</FlexGrid.Col>
+        <FlexGrid.Row id="row-1">
+          <FlexGrid.Col id="col-1">1st column content</FlexGrid.Col>
+          <FlexGrid.Col id="col-2">2nd column content</FlexGrid.Col>
         </FlexGrid.Row>
       </FlexGrid>
     )
 
     return {
-      findColum: index => flexGrid.find('Col').at(index),
-      findRow: index => flexGrid.find('Row').at(index),
-      findNowRelated: el => flexGrid.find(el),
-      gutterless: { padding: 0, margin: 0 },
+      flexGrid: flexGrid.find(Grid),
+      findColumn: index => flexGrid.find(`div#col-${index}`),
+      findRow: index => flexGrid.find(`div#row-${index}`),
     }
   }
+
+  const expectToHaveNoGutter = element => {
+    expect(element).toHaveStyle('padding', 0)
+    expect(element).toHaveStyle('margin', 0)
+  }
+
   it('renders', () => {
-    const flexGrid = doMount()
+    const flexGrid = render(
+      <FlexGrid>
+        <FlexGrid.Row>
+          <FlexGrid.Col>1st column content</FlexGrid.Col>
+          <FlexGrid.Col>2nd column content</FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
+    )
 
     expect(flexGrid).toMatchSnapshot()
   })
 
   it('renders a react-flexbox-grid Grid component', () => {
-    const flexGrid = doMount()
+    const { flexGrid } = doMount()
 
     expect(flexGrid).toMatchSelector(Grid)
   })
 
   it('is fluid by default', () => {
-    const flexGrid = doMount()
+    const { flexGrid } = doMount()
 
     expect(flexGrid).toHaveProp('fluid', true)
   })
 
   it('should render all children related to Grid with no gutter', () => {
-    const { findColum, findRow, findNowRelated, gutterless } = doMountWithChildren({
-      gutterless: true,
-    })
+    const { findColumn, findRow } = doMount({ gutter: false })
 
-    const col1 = findColum(1)
-    const col2 = findColum(3)
-    const col3 = findColum(5)
+    const col1 = findColumn(1)
+    const col2 = findColumn(2)
     const row = findRow(1)
-    const NonRelatedElement = findNowRelated('Responsive')
 
-    expect(col1).toHaveProp('style', gutterless)
-    expect(col2).toHaveProp('style', gutterless)
-    expect(col3).toHaveProp('style', gutterless)
-    expect(row).toHaveProp('style', gutterless)
-    expect(NonRelatedElement).not.toHaveProp('style', gutterless)
+    expectToHaveNoGutter(col1)
+    expectToHaveNoGutter(col2)
+    expectToHaveNoGutter(row)
   })
 
   it('passes additional attributes to the element', () => {
-    const flexGrid = doMount({ id: 'the-id', 'data-some-attr': 'some value' })
+    const { flexGrid } = doMount({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(flexGrid).toHaveProp('id', 'the-id')
     expect(flexGrid).toHaveProp('data-some-attr', 'some value')
   })
 
   it('does not allow custom CSS', () => {
-    const flexGrid = doMount({
+    const { flexGrid } = doMount({
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })

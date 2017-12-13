@@ -21,25 +21,33 @@ const removeProps = ({
 }) => safeRest(rest)
 
 const Col = ({ span, offset, children, ...rest }) => (
-  <Subscriber channel="gutterless">
-    {gutterless => {
-      return (
-        <ReactFlexboxGridCol
-          {...removeProps(rest)}
-          xs={span || true}
-          xsOffset={offset}
-          style={gutterless}
-        >
-          {children}
-        </ReactFlexboxGridCol>
-      )
-    }}
+  <Subscriber channel="flex-grid">
+    {gutterStyle => (
+      <ReactFlexboxGridCol
+        {...removeProps(rest)}
+        xs={span || true}
+        xsOffset={offset}
+        style={gutterStyle}
+      >
+        {children}
+      </ReactFlexboxGridCol>
+    )}
   </Subscriber>
 )
 
 Col.propTypes = {
+  /**
+   * Span the specified number of columns.
+   */
   span: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+  /**
+   * Offset the specified number of columns.
+   */
   offset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+  /**
+   * The columns of the Grid. Will typically be `FlexGrid.Col` components, but could be other components such as a
+   * `Responsive` wrapper.
+   */
   children: PropTypes.node.isRequired,
 }
 

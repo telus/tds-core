@@ -9,12 +9,12 @@ import safeRest from '../../utils/safeRest'
 import Col from './Col'
 import Row from './Row'
 
-const FlexGrid = ({ gutterless, children, ...rest }) => {
-  const css = gutterless ? { padding: 0, margin: 0 } : undefined
+const FlexGrid = ({ gutter, children, ...rest }) => {
+  const gutterStyle = gutter ? undefined : { padding: 0, margin: 0 }
 
   return (
-    <Broadcast channel="gutterless" value={css}>
-      <Grid {...safeRest(rest)} fluid style={css}>
+    <Broadcast channel="flex-grid" value={gutterStyle}>
+      <Grid {...safeRest(rest)} fluid style={gutterStyle}>
         {children}
       </Grid>
     </Broadcast>
@@ -22,12 +22,19 @@ const FlexGrid = ({ gutterless, children, ...rest }) => {
 }
 
 FlexGrid.propTypes = {
-  gutterless: PropTypes.bool,
+  /**
+   * Whether or not to include gutters in between columns.
+   */
+  gutter: PropTypes.bool,
+  /**
+   * The rows of the Grid. Will typically be `FlexGrid.Row` components, but could be other components such as a
+   * `Responsive` wrapper.
+   */
   children: PropTypes.node.isRequired,
 }
 
 FlexGrid.defaultProps = {
-  gutterless: false,
+  gutter: true,
 }
 
 FlexGrid.Row = Row
