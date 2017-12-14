@@ -21,7 +21,7 @@ const Image = ({ src, width, height, alt, rounded, ...rest }) => {
   if (isCircle && !isSquare) {
     warn(
       'Image',
-      'rounded="circle" is not supported for non-square images. Please provide a square image, otherwise the resulting shape will not a circle.'
+      'rounded="circle" is not supported for non-square images. Please provide a square image, otherwise the resulting shape will not be a circle.'
     )
   }
 
