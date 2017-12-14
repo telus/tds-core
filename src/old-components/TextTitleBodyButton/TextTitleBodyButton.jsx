@@ -1,18 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
-import { components } from '@telusdigital/redux-contentful'
 
-const { Legal: { WithLegal } } = components
+// Comment out redux-contentful so that we can remove the redux-contentful dependency. This makes
+//  it easier for potential contributors because they will not need an .npmrc file.
+// import { components } from '@telusdigital/redux-contentful'
+// const { Legal: { WithLegal } } = components
 
-const TextTitleBodyButton = (props) => {
+const WithLegal = () => <div />
+
+const TextTitleBodyButton = props => {
   const { className, ctaLink, title, description } = props
 
   const cls = cx(className)
 
   return (
     <div className={cls}>
-      <h4><WithLegal content={title} /></h4>
+      <h4>
+        <WithLegal content={title} />
+      </h4>
       <p>
         <WithLegal content={description} />
       </p>
@@ -27,7 +33,7 @@ TextTitleBodyButton.propTypes = {
   className: PropTypes.string,
   ctaLink: PropTypes.object,
   title: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.string,
 }
 
 TextTitleBodyButton.defaultProps = {
@@ -35,10 +41,10 @@ TextTitleBodyButton.defaultProps = {
   ctaLink: {
     target: '',
     href: '',
-    text: ''
+    text: '',
   },
   title: '',
-  description: ''
+  description: '',
 }
 
 export default TextTitleBodyButton
