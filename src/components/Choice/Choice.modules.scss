@@ -69,11 +69,8 @@
   // Set opacity: 0 instead of display: none so that the checkbox can still
   //  emit focus/blur events
   opacity: 0;
-  width: 0;
-  height: 0;
 
   // to make sure the selected state (green circle) is properly aligned on mobile devices
   position: absolute;
-  left: -10000px;
   top: auto;
 }
