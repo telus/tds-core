@@ -1,6 +1,7 @@
-# TDS Support
+# Support
 
 **Work in progress...**
+
 
 The TELUS design system exclusively caters to people designing and developing for TELUS properties. It is not intended for general public consumption.
 

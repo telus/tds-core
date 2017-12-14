@@ -1,21 +1,18 @@
-## Developer guide
+# Developer guide
 
-### Set up your environment
+## Prerequisites
+
+* [Git](https://git-scm.com/)
+* [Node.JS](https://nodejs.org), >= 6.0
+* [Yarn](https://yarnpkg.com) (We use yarn for dependency management instead of npm.)
+
+## Set up your environment
 
 After forking TDS, the following steps will get you started:
 
 ```bash
-# Install yarn
-brew install yarn
-
-# you can also use npm
-# npm install -g yarn
-
-# Install commitizen to write commit messages according to our preferred format.
-yarn global add commitizen
-
 # Clone your fork
-git clone https://github.com/<your-username>/tds.git && cd tds
+git clone <your fork> && cd tds
 
 # Install dependencies
 yarn
@@ -27,7 +24,7 @@ We use [Prettier](https://prettier.io/), an opinionated code formatter that inte
 IDE or text editor](https://prettier.io/docs/en/editors.html) to format your code automatically on save, and Prettier will
 adjust your syntax in accordance with the TDS conventions.
 
-### Set up your TDS dev environment
+## Set up your TDS dev environment
 
 ```bash
 # Start the styleguidist dev server, check output for the location of the docs
@@ -42,9 +39,9 @@ yarn test:watch
 After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will 
 automatically refresh when there are changes to any of the source files.
 
-### Write some code
+## Write some code
 
-The [codebase overview](../codebase-overview.md) will help you understand the structure of the codebase and the conventions being followed.
+The [codebase overview](codebase-overview.md) will help you understand the structure of the codebase and the conventions being followed.
 
 If you need to create a new component, run the scaffolding script to generate the basic folder structure, React component, 
 documentation, and base unit tests for a new component. 
@@ -53,7 +50,7 @@ documentation, and base unit tests for a new component.
 yarn scaffold MyComponent
 ```
 
-### Make a commit
+## Make a commit
 
 ```bash
 # Run linting, tests, and builds

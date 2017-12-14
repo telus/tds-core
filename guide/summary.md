@@ -1,9 +1,7 @@
-# Summary
-
 ## Quick links
 
 * [Components](ref://components/index.html)
-<!-- TODO: add Sketch file here -->
+* TODO Sketch file?
 
 ## Guide
 
