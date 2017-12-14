@@ -8,10 +8,10 @@
 ## Guide
 
 * [Home](readme.md)
-* [Contributing](contributing.md)
-  * [How to contribute](contributing.md#process)
-  * [Designer guide](contributing.md#designer-guide)
-  * [Developer guide](contributing.md#developer-guide)
+* [Contributing](/contributing/contributing.md)
+  * [How to contribute](/contributing/contributing.md#how-to)
+  * [Designer guide](/contributing/designer-guide.md)
+  * [Developer guide](/contributing/developer-guide.md)
   * [Codebase overview](codebase-overview.md)
 * [Standards](standards.md)
   * [Documentation](standards.md#docs)
