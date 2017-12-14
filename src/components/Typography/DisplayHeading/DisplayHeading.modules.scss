@@ -9,6 +9,7 @@
 
 .base {
   composes: noSpacing from '../../Spacing.modules.scss';
+  composes: baseHeading from '../Heading/Heading.modules.scss';
 
   @include helvetica-neue-thin-35;
 }
