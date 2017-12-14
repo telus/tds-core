@@ -22,10 +22,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   margin-top: 4px;
 
-  transition: all 0.1s linear;
+  transition: border-color 0.1s linear, background-color 0.1s linear;
 }
 
 .fakeCheckbox {
@@ -63,12 +64,16 @@
 // FIXME: Doubling the specificity to beat global styles.
 .hiddenInput.hiddenInput {
   // composes: noSpacing from '../Spacing.modules.scss';
+  width: 10px;
+  height: 10px;
+
   padding: 0;
   margin: 0;
 
   // Set opacity: 0 instead of display: none so that the checkbox can still
   //  emit focus/blur events
   opacity: 0;
+  cursor: pointer;
 
   // to make sure the selected state (green circle) is properly aligned on mobile devices
   position: absolute;
