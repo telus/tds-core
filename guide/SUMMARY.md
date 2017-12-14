@@ -5,7 +5,7 @@
 
 ## Guide
 
-* [Home](readme.md)
+* [Home](README.md)
 * [Contributing](/contributing/contributing.md)
   * [How to contribute](/contributing/contributing.md#how-to)
   * [Designer guide](/contributing/designer-guide.md)
