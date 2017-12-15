@@ -1,3 +1,11 @@
+### Minimal usage
+
+Checkboxes are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn't uncheck the others.
+
+A stand-alone checkbox is used for a single option that the user can turn on or off.
+
+<a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" target="_blank">Reference</a>
+
 ```
 <Box tag="fieldset" between={2}>
   <Text bold size="medium">

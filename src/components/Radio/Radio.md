@@ -1,3 +1,9 @@
+### Minimal usage
+
+Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.
+
+<a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" target="_blank">Reference</a>
+
 ```
 initialState = {
   choice: undefined
