@@ -83,18 +83,18 @@ The `small-*` grid classes allow you to lay out all twelve columns in a variety 
       <div class="small-12"><code>.small-12</code></div>
 	  </div>
   	<div class="grid-row">
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
-  	    <div class="small-1"><code>.small-1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
+  	    <div class="small-1"><code>1</code></div>
   	</div>
   	<div class="grid-row">
   	    <div class="small-2"><code>.small-2</code></div>
