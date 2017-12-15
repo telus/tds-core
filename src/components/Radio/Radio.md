@@ -6,7 +6,7 @@ Radio buttons are used when there is a list of two or more options that are mutu
 
 ```
 initialState = {
-  choice: undefined
+  choice: "e.bill"
 };
 
 const setChoice = (event) => setState({choice: event.target.value});
