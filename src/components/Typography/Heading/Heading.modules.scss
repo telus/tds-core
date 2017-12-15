@@ -7,13 +7,8 @@
   composes: baseSupSubScripts from '../Text/Text.modules.scss';
 }
 
-.baseHeading {
-  word-break: normal;
-  hyphens: auto;
-}
-
 .h1 {
-  composes: baseHeading;
+  composes: wordBreak from '../../Typography.modules.scss';
   composes: noSpacing from '../../Spacing.modules.scss';
 
   @include helvetica-neue-light-45;
@@ -29,7 +24,7 @@
 }
 
 .h1Desktop {
-  composes: baseHeading;
+  composes: wordBreak from '../../Typography.modules.scss';
   composes: noSpacing from '../../Spacing.modules.scss';
 
   @include helvetica-neue-thin-35;
@@ -45,7 +40,7 @@
 }
 
 .h2 {
-  composes: baseHeading;
+  composes: wordBreak from '../../Typography.modules.scss';
   composes: noSpacing from '../../Spacing.modules.scss';
 
   @include helvetica-neue-light-45;
@@ -61,7 +56,7 @@
 }
 
 .h2Desktop {
-  composes: baseHeading;
+  composes: wordBreak from '../../Typography.modules.scss';
   composes: noSpacing from '../../Spacing.modules.scss';
 
   @include helvetica-neue-light-45;
@@ -77,7 +72,7 @@
 }
 
 .smallHeading {
-  composes: baseHeading;
+  composes: wordBreak from '../../Typography.modules.scss';
   composes: noSpacing from '../../Spacing.modules.scss';
 
   @include helvetica-neue-medium-65;

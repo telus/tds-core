@@ -17,7 +17,7 @@ exports[`<Notification /> renders 1`] = `
           class="betweenRightMarginDesktop-3 inline"
         >
           <p
-            class="noSpacing color medium mediumFont leftAlign"
+            class="wordBreak noSpacing color medium mediumFont leftAlign"
           >
             Some content
           </p>

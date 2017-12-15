@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import safeRest from '../../../utils/safeRest'
 import joinClassNames from '../../../utils/joinClassNames'
 
+import typographyStyles from '../../Typography.modules.scss'
 import spacingStyles from '../../Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
 import textStyles from '../Text/Text.modules.scss'
@@ -11,10 +12,11 @@ import textStyles from '../Text/Text.modules.scss'
 /**
  * Block text as an HTML `<p>` element.
  */
-const Paragraph = ({bold, size, align, invert, children, ...rest}, context) => {
+const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) => {
   const paragraphColor = invert ? textStyles.invertedColor : textStyles.color
 
   const classes = joinClassNames(
+    typographyStyles.wordBreak,
     spacingStyles.noSpacing,
     context.inheritColor ? textStyles.inheritColor : paragraphColor,
     textStyles[size],
