@@ -95,7 +95,7 @@ module.exports = {
         },
         {
           name: 'Forms',
-          content: path.resolve('docs/elements/forms-with-deprecated-input.md'),
+          content: path.resolve('docs/elements/forms-with-deprecated-input-checkbox-radio.md'),
         },
         {
           name: 'Grid',

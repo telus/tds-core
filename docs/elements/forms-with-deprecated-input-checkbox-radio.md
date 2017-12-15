@@ -83,6 +83,8 @@ A selection input allows a user to choose one, or many values from a set.
 
 ### Radio inputs
 
+<span class="docs--badge__deprecated">deprecated</span>
+
 A radio input lets the user pick a single value from one or more choices.
 
 <fieldset class="field">
@@ -120,6 +122,8 @@ A radio input lets the user pick a single value from one or more choices.
 ```
 
 ### Checkboxes
+
+<span class="docs--badge__deprecated">deprecated</span>
 
 Checkboxes are similar to radio buttons in their appearance and markup. The key difference is that checkboxes can accept a multiple choice response.
 
