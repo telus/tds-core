@@ -7,7 +7,7 @@ While we are not looking for direct contributions of _new_ components to the mai
 other ways you can contribute, including submission of bug fixes, documentation improvements, and participation in discussions.
 
 That being said, we welcome contributions of _enhancements_ to the currently available components in accordance with 
-the component roadmaps. Check the [component documentation](ref:///components/index.html) to see what is on the roadmap 
+the component roadmaps. Check the [component documentation](ref://../components/index.html) to see what is on the roadmap 
 for each one. If you'd like to contribute to any of the available TDS components, [follow the steps below](#1-submit-issue).
 
 Expect architectural changes and governance processes to be established soon that will drive a more mature contribution 
