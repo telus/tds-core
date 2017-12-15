@@ -1,3 +1,70 @@
+#### 0.32.0 (2017-12-15)
+
+##### Build System / Dependencies
+
+* **dependencies:** Remove redux-contentful as a dependency ([2089e84e](https://github.com/telusdigital/tds/commit/2089e84ec27834aa5e27af808fa7eb42abf44d2a))
+
+##### Continuous Integration
+
+* **dockerfile:** Move the gitbook:install step after the guide files are copied into the Docker image ([dbd216c8](https://github.com/telusdigital/tds/commit/dbd216c874d05bca32d54ce12256a2b88ddf6aad))
+
+##### Documentation Changes
+
+* **v0.32.0:** release prep ([4e847f53](https://github.com/telusdigital/tds/commit/4e847f533087a6fa1c0c648af75d4cc708b09f80))
+* **config:**
+  * Set the page title to TELUS Design System ([aaad3b37](https://github.com/telusdigital/tds/commit/aaad3b37331c8ac07aa75915ea7b1314dce7656c))
+  * Make readme and summary all caps to follow gitbook conventions ([99aa5bf8](https://github.com/telusdigital/tds/commit/99aa5bf822328bbbd34eb38cf4c784aa84f77e21))
+  * Hide code and props/methods table for better performance ([6caef5c1](https://github.com/telusdigital/tds/commit/6caef5c1461ebd5992fad3cd23061d617f23e4b2))
+* **roadmap:** Fill out the online roadmap ([30451f74](https://github.com/telusdigital/tds/commit/30451f74032455bf8002496a406d2761cd1bfd47))
+* **image:**
+  * added to the usage docs ([91a5b929](https://github.com/telusdigital/tds/commit/91a5b929000e1f63310037968cd5b1d35adaed0f))
+  * Add documentation for Image component - styleguide ([c3b29a36](https://github.com/telusdigital/tds/commit/c3b29a36fdf2797b056511b60b1def37dc296f49))
+* **contributing:**
+  * Split up the contributing guides into separate files for better separate. ([05bb56d3](https://github.com/telusdigital/tds/commit/05bb56d3241ae60bf86c0379d1ce81a763455749))
+  * start guide ([d9594191](https://github.com/telusdigital/tds/commit/d95941915aa4f2d6f86a957afb361d97629ee282))
+* **flex-grid:** Enable in staging ([35e4fb02](https://github.com/telusdigital/tds/commit/35e4fb02f3adf933a8c458603da09366fcc40400))
+* **guide:**
+  * add clarity to opening issues in contribution guide ([08fd4620](https://github.com/telusdigital/tds/commit/08fd462091d0b4b7a0be2815c514b4de4564d9ee))
+  * update developer contribution guide ([43057450](https://github.com/telusdigital/tds/commit/43057450c50dd888ed33fff02ea2daffaab4fe3c))
+  * add code standards ([7b16f2d7](https://github.com/telusdigital/tds/commit/7b16f2d772f429491219d30e5e77dee12f78a0e3))
+  * add roadmap, standards, and support pages ([59e06bab](https://github.com/telusdigital/tds/commit/59e06babd4cacee32edd290b17f8b773b2682e14))
+* **radio:**
+  * updated example ([372919e0](https://github.com/telusdigital/tds/commit/372919e0f51a938d50153ddec54593cdd5f63239))
+  * Fix radio area code example ([cea07d6b](https://github.com/telusdigital/tds/commit/cea07d6b8794df682cb5f5e74f50609ed4ed6bb8))
+  * add a relevant example ([15cbf074](https://github.com/telusdigital/tds/commit/15cbf0740a0325c5e14f09c1c181636a66e5f9aa))
+  * Add legend to basic example ([8d68f718](https://github.com/telusdigital/tds/commit/8d68f718af9b09c0bf5673b77595a06f8c7e4659))
+* **checkbox:**
+  * updated example ([f1be6753](https://github.com/telusdigital/tds/commit/f1be67533929e6d05b3b3212773809e301333b56))
+  * updated example ([48f7b97b](https://github.com/telusdigital/tds/commit/48f7b97b3ca1428da08f8f55baf10cc947236506))
+  * Minor update to example with  multiple checkboxes ([ca037701](https://github.com/telusdigital/tds/commit/ca037701b3c26deae75ce32666cbffb2c31ac19f))
+  * Add example with error message ([b13444db](https://github.com/telusdigital/tds/commit/b13444dbbcedd5a72bd877bf00195566a1d9531f))
+* **choice:** Minor updates to example ([d6e00cb0](https://github.com/telusdigital/tds/commit/d6e00cb09f93665d25499f415698dc79176bacfe))
+* **gitbook:**
+  * Add gitbook install in dockfile ([ff00cfa5](https://github.com/telusdigital/tds/commit/ff00cfa5ff91047bc129c19d1c38183994db0231))
+  * Integration Gitbook and Styleguidist - part 3 ([134c629a](https://github.com/telusdigital/tds/commit/134c629a3be53a8111c79ff401caa9cc5c3180bd))
+  * Integration Gitbook & Styleguidist part 2 ([a33a2b61](https://github.com/telusdigital/tds/commit/a33a2b619e6a7fd0d3714e455dea989fc58fb629))
+* **integration:** Integration Gitbook with styleguidist ([9bdfd3e7](https://github.com/telusdigital/tds/commit/9bdfd3e7a89e55181a471015c0f9c7d0f91ec805))
+
+##### New Features
+
+* **image:** Fix minor typo in warning ([8da5904d](https://github.com/telusdigital/tds/commit/8da5904d4e589ad94e457087462b28716ce32272))
+* **getting-started:** Add first draft of getting started for developers ([57b5dee7](https://github.com/telusdigital/tds/commit/57b5dee720c3f5c46de6c4716fc92a3e33c6fead))
+* **flex-grid:** Document the props. Refactor the gutterless prop to be in the positive. ([937682ce](https://github.com/telusdigital/tds/commit/937682ce693e6bd3d412cff501b596fa88df1e89))
+* **radio:** Remove error prop ([4d258acd](https://github.com/telusdigital/tds/commit/4d258acd0f13fc1bf97048521152c4484ccf6395))
+* **choice:**
+  * Add top and left attributes to hiddenInput ([e6baeea4](https://github.com/telusdigital/tds/commit/e6baeea4f6ddd624912184a2086cc5ac09389741))
+  * Fix alignment of selected state on mobile devices ([532ada36](https://github.com/telusdigital/tds/commit/532ada363b7ce1c38f23c4c2b6dc591f241a66b6))
+  * Add accessibility enhancements re: aria-invalid and aria-describedby ([2f9b16dc](https://github.com/telusdigital/tds/commit/2f9b16dc376b02fcf3265504c66e3c5cfdae88d4))
+  * Top align choice element to handle labels that wrap into more than on line ([13178d92](https://github.com/telusdigital/tds/commit/13178d92266a8687d3051a873cbaaeefcb934a7a))
+  * Add ability to display error message above the input field ([a798186d](https://github.com/telusdigital/tds/commit/a798186dbaaa0c3ac9adeb140d108b0012fce5bc))
+  * Update label prop to accept nodes ([4d08fdb4](https://github.com/telusdigital/tds/commit/4d08fdb424ea52fd4aee6e82e0df22dd47090676))
+
+##### Bug Fixes
+
+* **choice:** add pointer cursor to input ([4acfbe86](https://github.com/telusdigital/tds/commit/4acfbe868047fcda2a9d7d0789ea5267ff11507a))
+* **checkbox:** improve accessibility on safari ([e2213a1e](https://github.com/telusdigital/tds/commit/e2213a1eb110565b6654d5ca1864e74903c155ff))
+* **docs:** Correct tabbing on Radio.md ([4fdb7b3f](https://github.com/telusdigital/tds/commit/4fdb7b3fc95eab6eee7144d5e4011f39c558782b))
+
 #### 0.31.0 (2017-12-06)
 
 ##### Build System / Dependencies
