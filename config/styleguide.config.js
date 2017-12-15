@@ -9,7 +9,7 @@ const getStyleguideDir = () => {
 }
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = ['Image', 'Checkbox', 'Radio', 'Select', 'Textarea', 'FlexGrid']
+const enabledInStaging = ['Select', 'Textarea', 'FlexGrid']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
@@ -158,7 +158,7 @@ module.exports = {
           components() {
             return compact([
               path.resolve('src/components/Card/Card.jsx'),
-              toggleByEnv('Image', path.resolve('src/components/Image/Image.jsx')),
+              path.resolve('src/components/Image/Image.jsx'),
             ])
           },
           sections: compact([
@@ -263,8 +263,8 @@ module.exports = {
             return compact([
               path.resolve('src/components/Button/Button.jsx'),
               path.resolve('src/components/Input/Input.jsx'),
-              toggleByEnv('Checkbox', path.resolve('src/components/Checkbox/Checkbox.jsx')),
-              toggleByEnv('Radio', path.resolve('src/components/Radio/Radio.jsx')),
+              path.resolve('src/components/Checkbox/Checkbox.jsx'),
+              path.resolve('src/components/Radio/Radio.jsx'),
               toggleByEnv('Select', path.resolve('src/components/Select/Select.jsx')),
               toggleByEnv('Textarea', path.resolve('src/components/Textarea/Textarea.jsx')),
               path.resolve('src/components/Tooltip/Tooltip.jsx'),

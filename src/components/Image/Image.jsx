@@ -8,6 +8,10 @@ import safeRest from '../../utils/safeRest'
 import styles from './Image.modules.scss'
 import borderStyles from '../Borders.modules.scss'
 
+/**
+ *
+ * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.32.0</span>
+ */
 const Image = ({ src, width, height, alt, rounded, ...rest }) => {
   const isCircle = rounded === 'circle'
   const isSquare = width === height
