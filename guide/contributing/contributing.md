@@ -7,13 +7,13 @@ While we are not looking for direct contributions of _new_ components to the mai
 other ways you can contribute, including submission of bug fixes, documentation improvements, and participation in discussions.
 
 That being said, we welcome contributions of _enhancements_ to the currently available components in accordance with 
-the component roadmaps. Check the [component documentation](ref://components/index.html) to see what is on the roadmap 
+the component roadmaps. Check the [component documentation](ref:///components/index.html) to see what is on the roadmap 
 for each one. If you'd like to contribute to any of the available TDS components, [follow the steps below](#1-submit-issue).
 
 Expect architectural changes and governance processes to be established soon that will drive a more mature contribution 
 process. Thank you for your patience.  
 
-Learn more by reading the [TELUS Design Platform road map](roadmap.md) or by [reaching out to us](support.md).
+Learn more by reading the [TELUS Design Platform roadmap](/roadmap.md) or by [reaching out to us](/support.md).
 
 
 ## How to contribute {#how-to}
@@ -37,9 +37,10 @@ Learn [how to open an issue on GitHub](https://help.github.com/articles/creating
 
 To get started, fork [the repository](https://github.com/telusdigital/tds) and create your branch from master.
 
-* The [designer guide](/contributing/designer-guide.md) will DO THINGASDKAFSDJFAKSDFJAKF.
-* The [developer guide](/contributing/developer-guide.md) will help you set up your environment for TDS development.
-* The [codebase overview](codebase-overview.md) will help you understand the structure of the codebase and the conventions being followed.
+* **Designers**: follow the [designer guide](/contributing/designer-guide.md) to TODO FINISH THIS SENTENCE.
+* **Developers**: follow the [developer guide](/contributing/developer-guide.md) to set up your environment for TDS development.
+* **Developers**: read the [codebase overview](/codebase-overview.md) to understand the structure of the codebase and 
+the conventions being followed.
 
 Learn [how to fork a repository on Github](https://help.github.com/articles/fork-a-repo/).
 

@@ -41,7 +41,7 @@ automatically refresh when there are changes to any of the source files.
 
 ## Write some code
 
-The [codebase overview](codebase-overview.md) will help you understand the structure of the codebase and the conventions being followed.
+Read the [codebase overview](/codebase-overview.md) to understand the structure of the codebase and the conventions being followed.
 
 If you need to create a new component, run the scaffolding script to generate the basic folder structure, React component, 
 documentation, and base unit tests for a new component. 
