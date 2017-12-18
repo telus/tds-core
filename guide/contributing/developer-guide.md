@@ -15,7 +15,7 @@ After forking TDS, the following steps will get you started:
 git clone <your fork> && cd tds
 
 # Install dependencies
-yarn
+yarn && yarn gitbook:install
 ```
 
 Learn more about [commitizen](https://github.com/commitizen/cz-cli).

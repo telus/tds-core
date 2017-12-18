@@ -7,6 +7,7 @@ digital design guidelines, code patterns and UI elements.
 TDS usage, documentation & examples: <http://tds.telus.com>
 
 ## Installation
+
 _If you are using the [isomorphic-starter-kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), these steps should already be done._
 
 ```sh
@@ -19,6 +20,7 @@ npm install @telusdigital/tds --save
 ## Usage
 
 ### 1. Import the TDS styles
+
 First, import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles and the
 component styles. Webpack will bundle the TDS styles with your application specific styles.
 
@@ -39,6 +41,7 @@ render(
 ```
 
 ### 2. Use TDS Components
+
 Now, use TDS components in your application components.
 
 ```js

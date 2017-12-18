@@ -50,7 +50,7 @@ yarn global add commitizen
 git clone https://github.com/<your-username>/tds.git && cd tds
 
 # Install dependencies
-yarn install
+yarn && yarn gitbook:install
 ```
 
 ### Develop Components
