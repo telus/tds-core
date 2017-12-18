@@ -5,6 +5,13 @@
 
 # Standards at TDS
 
+**Delete me**
+
+**WIP: Move this information into other docs, and delete this. Most likely the info here will live in the Getting Started Guides, Contributing Guides, and the Codebase Overview.**
+
+
+
+
 When it comes to writing code, documentation, or Sketch assets, we have internal standards that help keep everything consistent and highly maintainable.
 
 ## Documentation standards {#docs}
