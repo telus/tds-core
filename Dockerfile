@@ -5,7 +5,7 @@
 
 
 # Start from the official Node 6 alpine image. https://hub.docker.com/_/node/
-FROM node:6-alpine
+FROM node:8-alpine
 
 # Set the working directory for following commands.
 ENV HOME=/app
@@ -14,8 +14,8 @@ WORKDIR /app
 # Add a user so that we don't run as root:
 #  https://github.com/telusdigital/reference-architecture/blob/master/delivery/docker.md#root-vs-user-mode
 RUN set -ex && \
-    adduser node root && \
-    chmod g+w /app
+  adduser node root && \
+  chmod g+w /app
 
 # Copy only the files necessary to install dependencies into the working directory.
 # Docker builds the image in layers and caches them. Because the app files change more often than the dependencies, we
@@ -24,8 +24,8 @@ COPY .npmrc package.json yarn.lock ./
 
 # Install dependencies.
 RUN set -ex && \
-    yarn install --pure-lockfile && \
-    yarn cache clean
+  yarn install --pure-lockfile && \
+  yarn cache clean
 
 # Copy all source and test files into the working directory.
 # We use a .dockerignore file to prevent unnecessary or large files from being inadvertently copied.
@@ -33,9 +33,9 @@ COPY . /app
 
 # Build the app.
 RUN yarn run build-package && \
-    yarn gitbook:install && \
-    STYLEGUIDIST_ENV=staging yarn run build:docs-staging && \
-    STYLEGUIDIST_ENV=production yarn run build-styleguide
+  yarn gitbook:install && \
+  STYLEGUIDIST_ENV=staging yarn run build:docs-staging && \
+  STYLEGUIDIST_ENV=production yarn run build-styleguide
 
 # Set the container's user to the newly created one.
 USER node
