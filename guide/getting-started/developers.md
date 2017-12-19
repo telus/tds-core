@@ -1,14 +1,14 @@
+# Getting started guide for developers
 
 The TELUS Design System (TDS) includes the resources needed to build consistent user interfaces within the TELUS Digital Platform.
 
 The components in TDS include:
 * semantic and accessible component markup
-* cross-browser compatible CSS
+* cross-browser compatible styling and animations
 
 These components free developers up to focus on solving unique application challenges, rather than having to reinvent standard interface elements.
 
-In order to build a new TELUS web property, it is strongly recommended to use the TELUS Digital Platform, and TDS is the default standard package that provides the UI foundational elements needed to get started.
-
+This guide assumes that you are building user experiences on the [TELUS Digital Platform](https://github.com/telusdigital/telus-isomorphic-starter-kit), which TDS is part of and provides the [UI foundational elements](https://github.com/telusdigital/telus-isomorphic-starter-kit/tree/master/ui) needed to get started.
 
 ## Installing
 
@@ -16,65 +16,66 @@ To install the latest version:
 
 ```sh
 yarn add @telusdigital/tds
+```
 
+Don't have yarn? Learn how to install yarn [here](https://yarnpkg.com/en/docs/install).
+
+```sh
 # Or, with npm :)
 npm install @telusdigital/tds --save
 ```
 
 ## Usage
 
-1. Import the TDS styles
+**1. Import the TDS styles**
 
-Import the TDS stylesheet into the main entry point of your application. 
+  Import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles. Webpack will bundle the TDS styles with your application specific styles.
 
-`// index.js
+  ```js 
+  // index.js
+  import React from 'react';
+  import { render } from 'react-dom';
 
-import React from 'react';
-import { render } from 'react-dom';
+  import App from './App';
 
-import App from './App';
+  import '@telusdigital/tds/dist/tds.css'
 
-import '@telusdigital/tds/dist/tds.css'
+  render(
+    <App />,
+    document.getElementById("root")
+  );
+  ```
 
-render(
-  <App />,
-  document.getElementById("root")
-);`
+**2. Use TDS Components**
 
-The `tds.css` stylesheet contains the following global styles:
+  Now, use TDS components in your application
 
-* reset: to standardize the different way browsers render elements by default
-* font: to map the different brand approved Helvetica Neue webfonts to their corresponding TELUS-Web font-weight
-* border-box: to make iteasier to size elements by telling the browser to account for any border and padding in the value you specify for width and height
-* default body styles: to render the default fonts size and color
+  ```js 
+  // MyBanner.jsx
+  import React from 'react';
 
-Note that webpack will bundle the TDS styles with your application specific styles.
+  import { Box, DisplayHeading, Paragraph, Button } from '@telusdigital/tds';
 
-2. Use TDS Components
+  const BannerText = () => (
+    <Box between={5}>
+      <DisplayHeading>Pay your bills and monitor internet usage on the go</DisplayHeading>
+      <Paragraph>Download the new and improved My Account app today.</Paragraph>
+      <Button>Download now</Button>
+    </Box>
+  );
+  ```
 
-Now, use TDS components in your application
+**3. Use TDS colour sass variables**
 
-` // MyBanner.jsx
-import React from 'react';
+  Use TDS colour Sass variables in your Sass files to ensure that only brand approved colours are used within your application. 
+  
+  Only add this import into files that need to use the provided colour variables.
 
-import { Box, DisplayHeading, Paragraph, Button } from '@telusdigital/tds';
+  ```scss 
+  // MyBanner.scss
+  @import '~@telusdigital/tds/dist/scss/colours';
 
-const BannerText = () => (
-  <Box between={5}>
-    <DisplayHeading>Pay your bills and monitor internet usage on the go</DisplayHeading>
-    <Paragraph>Download the new and improved My Account app today.</Paragraph>
-    <Button>Download now</Button>
-  </Box>
-);`
-
-3. Use TDS colour sass variables 
-
-Use TDS colour Sass variables in your Sass files to ensure that only brand approved colours are used within your application. Only add this import into files that need to use the provided colour variables.
-
-`// MyBanner.scss
-
-@import '~@telusdigital/tds/dist/scss/colours';
-
-.banner{
-  background-color: $color-purple;
-}`
+  .banner{
+    background-color: $color-purple;
+  }
+  ```
