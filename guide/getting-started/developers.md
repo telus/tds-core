@@ -5,6 +5,10 @@ The TELUS Design System (TDS) includes the resources needed to build consistent 
 The components in TDS include:
 * semantic and accessible component markup
 * cross-browser compatible styling and animations
+* small bits of UI logic/interactivity
+
+The components in TDS do not include:
+* any business logic such as validations or API calls
 
 These components free developers up to focus on solving unique application challenges, rather than having to reinvent standard interface elements.
 
@@ -29,7 +33,9 @@ npm install @telusdigital/tds --save
 
 **1. Import the TDS styles**
 
-  Import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles. Webpack will bundle the TDS styles with your application specific styles.
+  Import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles and the components styles that have been uniquefied by CSS Modules to prevent any conflicts with application styles. 
+  
+  Note that webpack will bundle the TDS styles with your application specific styles. 
 
   ```js 
   // index.js
