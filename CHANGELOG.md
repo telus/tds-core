@@ -1,3 +1,44 @@
+#### 0.32.1 (2017-12-20)
+
+##### Build System / Dependencies
+
+* **package.json:** Set engines to node 8 ([99bb8e61](https://github.com/telusdigital/tds/commit/99bb8e614a55a26aecdb6521bb4cce1fa919988d))
+
+##### Chores
+
+* **icons:** Remove old icons.js script. Not used. ([2346c56a](https://github.com/telusdigital/tds/commit/2346c56ab12941466b335f67bbd40bb51d78684f))
+* **expand-collapse:** Remove old ExpandCollapse component that is no longer used ([8d3893c2](https://github.com/telusdigital/tds/commit/8d3893c2ee0ea5a91f6ddcfe4a327062176c3a06))
+
+##### Documentation Changes
+
+* **getting-started:**
+  * Added the missing faqs and incorporated feedback from code review ([95b6f422](https://github.com/telusdigital/tds/commit/95b6f422a1a658467221d4e4302e0c07d6b79156))
+  * Add faq.md ([37d3f5a6](https://github.com/telusdigital/tds/commit/37d3f5a67027d182c636593bb47598dec5eebc00))
+* **contributing:**
+  * add gitbook installation ([f73ee31d](https://github.com/telusdigital/tds/commit/f73ee31d41bfad3e091bf503cff82d21b1a556c4))
+  * Fix the link to the component docs again. ([f14003a9](https://github.com/telusdigital/tds/commit/f14003a9b87fc53df7389f8ad592c9ecb18a0d67))
+  * Fix hyperlink paths ([e64aa1b8](https://github.com/telusdigital/tds/commit/e64aa1b88afe783605cf1e380a69a57e6b6780e4))
+* **link:** fix syntax highlighting ([30c74ddb](https://github.com/telusdigital/tds/commit/30c74ddb0fdbcbdc39f45a4b6fb054a28841e71b))
+* **standards:** Add a WIP notice at the top ([59d82866](https://github.com/telusdigital/tds/commit/59d828669a34e002666f4763904bde60402b0957))
+* **radio:** add default radio to example ([2fb101b0](https://github.com/telusdigital/tds/commit/2fb101b007a9ee41cc5829260e4772f908796552))
+* **grid:** remove screen-breaking words ([cfbea93a](https://github.com/telusdigital/tds/commit/cfbea93a485abd31ddb2c23ef4f3b8abaace54cc))
+* **form:** add usage guide for checkbox and radio ([8ad34c47](https://github.com/telusdigital/tds/commit/8ad34c47f494c387fcf4a9f3d5168132e9747bbd))
+* **forms:** Add deprecation badge on CSS checkbox and radio inputs ([6766075c](https://github.com/telusdigital/tds/commit/6766075c12cfb5b3466b2545bcb30666b12e263e))
+
+##### New Features
+
+* **docker:** upgrade alpine to node 8 ([15151407](https://github.com/telusdigital/tds/commit/151514076db4a79fe16885bc1c4632b5be327d4d))
+
+##### Bug Fixes
+
+* **typography:**
+  * revert the use of break-all ([e88b9b6c](https://github.com/telusdigital/tds/commit/e88b9b6cafdc3a4da2db3080dba45ea2d16b465b))
+  * Update wordBreak to use `break-all` ([370e8346](https://github.com/telusdigital/tds/commit/370e8346692773aadf70d6542114481f4ec0bcba))
+  * add wordBreak class to all components ([070f5939](https://github.com/telusdigital/tds/commit/070f593917bc7fdb452e826f5b52d04abcbb0a71))
+* **display-heading:** Add wordBreak class ([0941d1fb](https://github.com/telusdigital/tds/commit/0941d1fb30c93af6e0982dbc46fcfb48499ceba6))
+* **heading:** hyphenate and break long words ([12bef2b6](https://github.com/telusdigital/tds/commit/12bef2b60f40f567d6300cab05af239c03a7e3a4))
+* **borders:** change border specificity ([7bf0ee55](https://github.com/telusdigital/tds/commit/7bf0ee556fa48b1148cc2a636dd76d6945e764a7))
+
 #### 0.32.0 (2017-12-15)
 
 ##### Build System / Dependencies
