@@ -5,7 +5,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 import joinClassNames from '../../utils/joinClassNames'
 
 import Tooltip from '../Tooltip/Tooltip'
-import Helper from '../FormField/Helper/Helper'
+import InputFeedback from '../InputFeedback/InputFeedback'
 import FormField from '../FormField/FormField'
 import FeedbackIcon from '../FormField/FeedbackIcon'
 
@@ -64,7 +64,7 @@ Input.propTypes = {
    * A detailed explanation of the input expected by a form field. Can be text,
    * other components, or HTML elements.
    *
-   * If a function is provided, it must return an `Input.Helper`. The function will be
+   * If a function is provided, it must return an `Input.InputFeedback`. The function will be
    * invoked with the following arguments.
    *
    * @param {String} feedback The input's current feedback state.
@@ -108,7 +108,7 @@ Input.defaultProps = {
   onBlur: undefined,
 }
 
-// TODO: This will no longer necessary once Helper is exported on its own. Removing this will be a breaking change.
-Input.Helper = Helper
+// TODO: This will no longer necessary once InputFeedback is exported on its own. Removing this will be a breaking change.
+Input.Helper = InputFeedback
 
 export default Input

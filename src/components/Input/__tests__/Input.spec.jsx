@@ -6,7 +6,7 @@ import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
 import Input from '../Input'
-import Helper from '../../FormField/Helper/Helper'
+import InputFeedback from '../../InputFeedback/InputFeedback'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 
 describe('Input', () => {
@@ -24,7 +24,7 @@ describe('Input', () => {
       input,
       label: input.find('label'),
       findFeedbackIconFade: () => input.find(Fade),
-      findHelper: () => input.find(Helper),
+      findHelper: () => input.find(InputFeedback),
       findInputElement,
       changeValueTo: value => findInputElement().simulate('change', { target: { value } }),
       focus: (focusEvent = {}) => findInputElement().simulate('focus', focusEvent),
@@ -256,9 +256,9 @@ describe('Input', () => {
     const { input } = doMount({ id: 'some-id', error: 'Oh no a terrible error!' })
 
     expect(input).toContainReact(
-      <Helper id="some-id_error-message" feedback="error">
+      <InputFeedback id="some-id_error-message" feedback="error">
         <Paragraph size="small">Oh no a terrible error!</Paragraph>
-      </Helper>
+      </InputFeedback>
     )
   })
 
@@ -268,11 +268,11 @@ describe('Input', () => {
       const { input } = doMount({ id: 'some-id', helper })
 
       expect(input).toContainReact(
-        <Helper id="some-id_helper">
+        <InputFeedback id="some-id_helper">
           <Text size="small">
             <div>Some helper text.</div>
           </Text>
-        </Helper>
+        </InputFeedback>
       )
     })
 
@@ -286,7 +286,7 @@ describe('Input', () => {
 
     it('can have a complex helper function to give control to the consumer', () => {
       const helper = jest.fn()
-      helper.mockReturnValue(<Helper>Some helper text.</Helper>)
+      helper.mockReturnValue(<InputFeedback>Some helper text.</InputFeedback>)
 
       const { input } = doMount({
         id: 'some-id',
@@ -299,7 +299,7 @@ describe('Input', () => {
       expect(input).toContainReact(
         <div id="some-id_helper">
           <Text size="small">
-            <Helper>Some helper text.</Helper>
+            <InputFeedback>Some helper text.</InputFeedback>
           </Text>
         </div>
       )
@@ -340,14 +340,14 @@ describe('Input', () => {
     })
 
     it('connects a complex helper to the input field for screen readers', () => {
-      const helper = () => <Helper>Complex helper</Helper>
+      const helper = () => <InputFeedback>Complex helper</InputFeedback>
       const { input, findInputElement } = doMount({ id: 'some-field-id', helper })
 
       expect(findInputElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
       expect(input).toContainReact(
         <div id="some-field-id_helper">
           <Text size="small">
-            <Helper>Complex helper</Helper>
+            <InputFeedback>Complex helper</InputFeedback>
           </Text>
         </div>
       )

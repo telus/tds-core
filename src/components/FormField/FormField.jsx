@@ -9,7 +9,7 @@ import Box from '../Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
-import Helper from './Helper/Helper'
+import InputFeedback from '../InputFeedback/InputFeedback'
 import Tooltip from '../Tooltip/Tooltip'
 
 import styles from './FormField.modules.scss'
@@ -47,9 +47,9 @@ const renderLabel = (label, hint, fieldId) => (
 )
 
 const renderError = (error, errorId) => (
-  <Helper id={errorId} feedback="error">
+  <InputFeedback id={errorId} feedback="error">
     <Paragraph size="small">{error}</Paragraph>
-  </Helper>
+  </InputFeedback>
 )
 
 const renderHelper = (helper, helperId, feedback, value) => {
@@ -62,9 +62,9 @@ const renderHelper = (helper, helperId, feedback, value) => {
   }
 
   return (
-    <Helper id={helperId} feedback={feedback}>
+    <InputFeedback id={helperId} feedback={feedback}>
       <Text size="small">{helper}</Text>
-    </Helper>
+    </InputFeedback>
   )
 }
 

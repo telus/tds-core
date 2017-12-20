@@ -7,7 +7,7 @@ import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
 import Textarea from '../Textarea'
-import Helper from '../../FormField/Helper/Helper'
+import InputFeedback from '../../InputFeedback/InputFeedback'
 
 describe('Textarea', () => {
   const defaultProps = {
@@ -26,7 +26,7 @@ describe('Textarea', () => {
       label: textarea.find('label'),
       findTextareaElement,
       findFeedbackIconFade: () => textarea.find(Fade),
-      findHelper: () => textarea.find(Helper),
+      findHelper: () => textarea.find(InputFeedback),
       changeValueTo: value => findTextareaElement().simulate('change', { target: { value } }),
       focus: (focusEvent = {}) => findTextareaElement().simulate('focus', focusEvent),
       blur: (blurEvent = {}) => findTextareaElement().simulate('blur', blurEvent),
@@ -250,9 +250,9 @@ describe('Textarea', () => {
     const { textarea } = doMount({ id: 'some-id', error: 'Oh no a terrible error!' })
 
     expect(textarea).toContainReact(
-      <Helper id="some-id_error-message" feedback="error">
+      <InputFeedback id="some-id_error-message" feedback="error">
         <Paragraph size="small">Oh no a terrible error!</Paragraph>
-      </Helper>
+      </InputFeedback>
     )
   })
 
@@ -262,11 +262,11 @@ describe('Textarea', () => {
       const { textarea } = doMount({ id: 'some-id', helper })
 
       expect(textarea).toContainReact(
-        <Helper id="some-id_helper">
+        <InputFeedback id="some-id_helper">
           <Text size="small">
             <div>Some helper text.</div>
           </Text>
-        </Helper>
+        </InputFeedback>
       )
     })
 
@@ -280,7 +280,7 @@ describe('Textarea', () => {
 
     it('can have a complex helper function to give control to the consumer', () => {
       const helper = jest.fn()
-      helper.mockReturnValue(<Helper>Some helper text.</Helper>)
+      helper.mockReturnValue(<InputFeedback>Some helper text.</InputFeedback>)
 
       const { textarea } = doMount({
         id: 'some-id',
@@ -293,7 +293,7 @@ describe('Textarea', () => {
       expect(textarea).toContainReact(
         <div id="some-id_helper">
           <Text size="small">
-            <Helper>Some helper text.</Helper>
+            <InputFeedback>Some helper text.</InputFeedback>
           </Text>
         </div>
       )
@@ -334,14 +334,14 @@ describe('Textarea', () => {
     })
 
     it('connects a complex helper to the textarea field for screen readers', () => {
-      const helper = () => <Helper>Complex helper</Helper>
+      const helper = () => <InputFeedback>Complex helper</InputFeedback>
       const { textarea, findTextareaElement } = doMount({ id: 'some-field-id', helper })
 
       expect(findTextareaElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
       expect(textarea).toContainReact(
         <div id="some-field-id_helper">
           <Text size="small">
-            <Helper>Complex helper</Helper>
+            <InputFeedback>Complex helper</InputFeedback>
           </Text>
         </div>
       )

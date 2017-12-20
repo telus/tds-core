@@ -4,7 +4,7 @@ import { mount, render } from 'enzyme'
 import Text from '../../Typography/Text/Text'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Radio from '../Radio'
-import Helper from '../../FormField/Helper/Helper'
+import InputFeedback from '../../InputFeedback/InputFeedback'
 import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('Radio', () => {
@@ -25,7 +25,7 @@ describe('Radio', () => {
       findFakeRadio: () => radio.find('[data-testid="fake-input"]'),
       findFakeInnerRadio: () => radio.find('[data-testid="fake-inner-radio"]'),
       findColoredLabel: () => radio.find(ColoredTextProvider),
-      findErrorMessage: () => radio.find(Helper),
+      findErrorMessage: () => radio.find(InputFeedback),
       check: () => findRadioElement().simulate('change', { target: { checked: true } }),
       focus: (focusEvent = {}) => findRadioElement().simulate('focus', focusEvent),
       blur: (blurEvent = {}) => findRadioElement().simulate('blur', blurEvent),

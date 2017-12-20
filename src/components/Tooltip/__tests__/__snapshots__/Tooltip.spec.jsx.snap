@@ -15,7 +15,7 @@ exports[`Tooltip renders 1`] = `
     <span
       class="small smallFont color"
     >
-      Helper text
+      InputFeedback text
     </span>
   </div>
   <button

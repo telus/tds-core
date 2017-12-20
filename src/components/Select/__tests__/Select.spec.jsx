@@ -6,7 +6,7 @@ import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
 import Select from '../Select'
-import Helper from '../../FormField/Helper/Helper'
+import InputFeedback from '../../InputFeedback/InputFeedback'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 
 describe('Select', () => {
@@ -27,7 +27,7 @@ describe('Select', () => {
       label: select.find('label'),
       findSelectElement,
       findFeedbackIconFade: () => select.find(Fade),
-      findHelper: () => select.find(Helper),
+      findHelper: () => select.find(InputFeedback),
       changeValueTo: value => findSelectElement().simulate('change', { target: { value } }),
       focus: (focusEvent = {}) => findSelectElement().simulate('focus', focusEvent),
       blur: (blurEvent = {}) => findSelectElement().simulate('blur', blurEvent),
@@ -291,9 +291,9 @@ describe('Select', () => {
     const { select } = doMount({ id: 'some-id', error: 'Oh no a terrible error!' })
 
     expect(select).toContainReact(
-      <Helper id="some-id_error-message" feedback="error">
+      <InputFeedback id="some-id_error-message" feedback="error">
         <Paragraph size="small">Oh no a terrible error!</Paragraph>
-      </Helper>
+      </InputFeedback>
     )
   })
 
@@ -303,11 +303,11 @@ describe('Select', () => {
       const { select } = doMount({ id: 'some-id', helper })
 
       expect(select).toContainReact(
-        <Helper id="some-id_helper">
+        <InputFeedback id="some-id_helper">
           <Text size="small">
             <div>Some helper text.</div>
           </Text>
-        </Helper>
+        </InputFeedback>
       )
     })
 
@@ -321,7 +321,7 @@ describe('Select', () => {
 
     it('can have a complex helper function to give control to the consumer', () => {
       const helper = jest.fn()
-      helper.mockReturnValue(<Helper>Some helper text.</Helper>)
+      helper.mockReturnValue(<InputFeedback>Some helper text.</InputFeedback>)
 
       const { select } = doMount({
         id: 'some-id',
@@ -334,7 +334,7 @@ describe('Select', () => {
       expect(select).toContainReact(
         <div id="some-id_helper">
           <Text size="small">
-            <Helper>Some helper text.</Helper>
+            <InputFeedback>Some helper text.</InputFeedback>
           </Text>
         </div>
       )
@@ -375,14 +375,14 @@ describe('Select', () => {
     })
 
     it('connects a complex helper to the select field for screen readers', () => {
-      const helper = () => <Helper>Complex helper</Helper>
+      const helper = () => <InputFeedback>Complex helper</InputFeedback>
       const { select, findSelectElement } = doMount({ id: 'some-field-id', helper })
 
       expect(findSelectElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
       expect(select).toContainReact(
         <div id="some-field-id_helper">
           <Text size="small">
-            <Helper>Complex helper</Helper>
+            <InputFeedback>Complex helper</InputFeedback>
           </Text>
         </div>
       )

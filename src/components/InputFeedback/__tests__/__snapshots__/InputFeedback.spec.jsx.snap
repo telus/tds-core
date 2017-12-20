@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Helper renders 1`] = `
+exports[`InputFeedback renders 1`] = `
 <div
   class="horizontalPaddingDesktop-3 verticalPaddingDesktop-3 default"
 >
-  Some helper text.
+  Some inputFeedback text.
 </div>
 `;

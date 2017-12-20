@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Box from '../../Box/Box'
+import Box from '../Box/Box'
 
-import safeRest from '../../../utils/safeRest'
+import safeRest from '../../utils/safeRest'
 
-import styles from './Helper.modules.scss'
+import styles from './InputFeedback.modules.scss'
 
-const Helper = ({ feedback, children, ...rest }) => (
+const InputFeedback = ({ feedback, children, ...rest }) => (
   <Box
     {...safeRest(rest)}
     inset={3}
@@ -17,13 +17,13 @@ const Helper = ({ feedback, children, ...rest }) => (
   </Box>
 )
 
-Helper.propTypes = {
+InputFeedback.propTypes = {
   feedback: PropTypes.oneOf(['success', 'error']),
   children: PropTypes.node.isRequired,
 }
 
-Helper.defaultProps = {
+InputFeedback.defaultProps = {
   feedback: undefined,
 }
 
-export default Helper
+export default InputFeedback
