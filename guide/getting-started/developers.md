@@ -3,11 +3,13 @@
 The TELUS Design System (TDS) includes the resources needed to build consistent user interfaces within the TELUS Digital Platform.
 
 The components in TDS include:
+
 * semantic and accessible component markup
 * cross-browser compatible styling and animations
 * small bits of UI logic/interactivity
 
 The components in TDS do not include:
+
 * any business logic such as validations or API calls
 
 These components free developers up to focus on solving unique application challenges, rather than having to reinvent standard interface elements.
@@ -31,57 +33,57 @@ npm install @telusdigital/tds --save
 
 ## Usage
 
-**1. Import the TDS styles**
+### 1. Import the TDS styles
 
-  Import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles and the components styles that have been uniquefied by CSS Modules to prevent any conflicts with application styles. 
-  
-  Note that webpack will bundle the TDS styles with your application specific styles. 
+Import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles and the components' styles that have been uniquified by CSS Modules to prevent any conflicts with application styles. 
 
-  ```js 
-  // index.js
-  import React from 'react';
-  import { render } from 'react-dom';
+Note that webpack will bundle the TDS styles with your application-specific styles. 
 
-  import App from './App';
+```js
+// index.js
+import React from 'react';
+import { render } from 'react-dom';
 
-  import '@telusdigital/tds/dist/tds.css'
+import App from './App';
 
-  render(
-    <App />,
-    document.getElementById("root")
-  );
-  ```
+import '@telusdigital/tds/dist/tds.css';
 
-**2. Use TDS Components**
+render(
+  <App />,
+  document.getElementById("root")
+);
+```
 
-  Now, use TDS components in your application
+### 2. Use TDS Components
 
-  ```js 
-  // MyBanner.jsx
-  import React from 'react';
+Now, use TDS components in your application
 
-  import { Box, DisplayHeading, Paragraph, Button } from '@telusdigital/tds';
+```js
+// MyBanner.jsx
+import React from 'react';
 
-  const BannerText = () => (
-    <Box between={5}>
-      <DisplayHeading>Pay your bills and monitor internet usage on the go</DisplayHeading>
-      <Paragraph>Download the new and improved My Account app today.</Paragraph>
-      <Button>Download now</Button>
-    </Box>
-  );
-  ```
+import { Box, DisplayHeading, Paragraph, Button } from '@telusdigital/tds';
 
-**3. Use TDS colour sass variables**
+const BannerText = () => (
+  <Box between={5}>
+    <DisplayHeading>Pay your bills and monitor internet usage on the go</DisplayHeading>
+    <Paragraph>Download the new and improved My Account app today.</Paragraph>
+    <Button>Download now</Button>
+  </Box>
+);
+```
 
-  Use TDS colour Sass variables in your Sass files to ensure that only brand approved colours are used within your application. 
-  
-  Only add this import into files that need to use the provided colour variables.
+### 3. Use TDS colour sass variables
 
-  ```scss 
-  // MyBanner.scss
-  @import '~@telusdigital/tds/dist/scss/colours';
+Use TDS colour Sass variables in your Sass files to ensure that only brand approved colours are used within your application. 
 
-  .banner{
-    background-color: $color-purple;
-  }
-  ```
+Only add this import into files that need to use the provided colour variables.
+
+```scss 
+// MyBanner.scss
+@import '~@telusdigital/tds/dist/scss/colours';
+
+.banner{
+  background-color: $color-purple;
+}
+```
