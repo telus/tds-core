@@ -13,6 +13,9 @@ import addRightPadding from '../FormField/addRightPadding'
 import styles from './Textarea.modules.scss'
 import positionStyles from '../Position.modules.scss'
 
+/**
+ * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.33.0</span>
+ */
 const Textarea = props => (
   <FormField {...props}>
     {({ className, ...textareaProps }, showFeedbackIcon, feedback) => (
@@ -58,7 +61,7 @@ Textarea.propTypes = {
    * A detailed explanation of the input expected by a form field. Can be text,
    * other components, or HTML elements.
    *
-   * If a function is provided, it must return a `InputFeedback`. The function will be
+   * If a function is provided, it must return an `InputFeedback`. The function will be
    * invoked with the following arguments.
    *
    * @param {String} feedback The input's current feedback state.
