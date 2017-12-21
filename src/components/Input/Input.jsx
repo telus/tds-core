@@ -5,7 +5,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 import joinClassNames from '../../utils/joinClassNames'
 
 import Tooltip from '../Tooltip/Tooltip'
-import Helper from '../FormField/Helper/Helper'
+import Feedback from '../Feedback/Feedback'
 import FormField from '../FormField/FormField'
 import FeedbackIcon from '../FormField/FeedbackIcon'
 
@@ -109,6 +109,6 @@ Input.defaultProps = {
 }
 
 // TODO: This will no longer necessary once Helper is exported on its own. Removing this will be a breaking change.
-Input.Helper = Helper
+Input.Helper = Feedback
 
 export default Input

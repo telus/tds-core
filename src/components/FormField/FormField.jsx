@@ -9,7 +9,7 @@ import Box from '../Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
-import Helper from './Helper/Helper'
+import Feedback from '../Feedback/Feedback'
 import Tooltip from '../Tooltip/Tooltip'
 
 import styles from './FormField.modules.scss'
@@ -34,22 +34,22 @@ const getClassName = (feedback, focus, disabled) => {
 const showFeedbackIcon = (feedback, focus) =>
   (feedback === 'success' || feedback === 'error') && !focus
 
-const renderLabel = (label, hint, fieldId) => (
-  <label htmlFor={fieldId.identity()} data-no-global-styles>
-    <Box inline between={2} dangerouslyAddClassName={styles.alignCenter}>
-      <Text size="medium" bold>
-        {label}
-      </Text>
-
-      {hint && <Text size="small">{hint}</Text>}
-    </Box>
-  </label>
-)
-
+const renderLabel = (label, hint, fieldId) => {
+  return (
+    <label htmlFor={fieldId.identity()} data-no-global-styles>
+      <Box inline between={2} dangerouslyAddClassName={styles.alignCenter}>
+        <Text size="medium" bold>
+          {label}
+        </Text>
+        {hint && <Text size="small">{hint}</Text>}
+      </Box>
+    </label>
+  )
+}
 const renderError = (error, errorId) => (
-  <Helper id={errorId} feedback="error">
+  <Feedback id={errorId} feedback="error">
     <Paragraph size="small">{error}</Paragraph>
-  </Helper>
+  </Feedback>
 )
 
 const renderHelper = (helper, helperId, feedback, value) => {
@@ -62,9 +62,9 @@ const renderHelper = (helper, helperId, feedback, value) => {
   }
 
   return (
-    <Helper id={helperId} feedback={feedback}>
+    <Feedback id={helperId} feedback={feedback}>
       <Text size="small">{helper}</Text>
-    </Helper>
+    </Feedback>
   )
 }
 

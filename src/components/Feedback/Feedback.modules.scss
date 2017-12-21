@@ -1,0 +1,18 @@
+.base {
+  composes: rounded from '../Borders.modules.scss';
+}
+
+.default {
+  composes: base;
+  composes: default from '../Messaging.modules.scss';
+}
+
+.success {
+  composes: base;
+  composes: success from '../Messaging.modules.scss';
+}
+
+.error {
+  composes: base;
+  composes: error from '../Messaging.modules.scss';
+}

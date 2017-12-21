@@ -6,7 +6,7 @@ import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
 import Input from '../Input'
-import Helper from '../../FormField/Helper/Helper'
+import Helper from '../../Feedback/Feedback'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 
 describe('Input', () => {

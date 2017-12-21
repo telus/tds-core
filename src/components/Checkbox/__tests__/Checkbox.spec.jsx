@@ -5,7 +5,7 @@ import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Checkbox from '../Checkbox'
-import Helper from '../../FormField/Helper/Helper'
+import Helper from '../../Feedback/Feedback'
 import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('Checkbox', () => {

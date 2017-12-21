@@ -10,7 +10,7 @@ import Paragraph from '../Typography/Paragraph/Paragraph'
 import Box from '../Box/Box'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Flexbox from '../Flexbox/Flexbox'
-import Helper from '../FormField/Helper/Helper'
+import Feedback from '../Feedback/Feedback'
 
 import styles from './Choice.modules.scss'
 import messagingStyles from '../Messaging.modules.scss'
@@ -63,9 +63,9 @@ const renderLabel = (label, feedback, checked, disabled) => {
 }
 
 const renderError = (error, errorId) => (
-  <Helper id={errorId} feedback="error">
+  <Feedback id={errorId} feedback="error">
     <Paragraph size="small">{error}</Paragraph>
-  </Helper>
+  </Feedback>
 )
 
 class Choice extends React.Component {

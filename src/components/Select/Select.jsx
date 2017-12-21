@@ -96,7 +96,7 @@ Select.propTypes = {
    * A detailed explanation of the input expected by a form field. Can be text,
    * other components, or HTML elements.
    *
-   * If a function is provided, it must return a `Helper`. The function will be
+   * If a function is provided, it must return a `Feedback` component. The function will be
    * invoked with the following arguments.
    *
    * @param {String} feedback The input's current feedback state.

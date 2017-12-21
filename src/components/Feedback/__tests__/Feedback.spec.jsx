@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, mount, render } from 'enzyme'
 
-import Helper from '../Helper'
+import Helper from '../Feedback'
 
 describe('Helper', () => {
   const defaultChildren = 'Some helper text.'
