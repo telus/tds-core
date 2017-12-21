@@ -34,18 +34,18 @@ const getClassName = (feedback, focus, disabled) => {
 const showFeedbackIcon = (feedback, focus) =>
   (feedback === 'success' || feedback === 'error') && !focus
 
-const renderLabel = (label, hint, fieldId) => (
-  <label htmlFor={fieldId.identity()} data-no-global-styles>
-    <Box inline between={2} dangerouslyAddClassName={styles.alignCenter}>
-      <Text size="medium" bold>
-        {label}
-      </Text>
-
-      {hint && <Text size="small">{hint}</Text>}
-    </Box>
-  </label>
-)
-
+const renderLabel = (label, hint, fieldId) => {
+  return (
+    <label htmlFor={fieldId.identity()} data-no-global-styles>
+      <Box inline between={2} dangerouslyAddClassName={styles.alignCenter}>
+        <Text size="medium" bold>
+          {label}
+        </Text>
+        {hint && <Text size="small">{hint}</Text>}
+      </Box>
+    </label>
+  )
+}
 const renderError = (error, errorId) => (
   <InputFeedback id={errorId} feedback="error">
     <Paragraph size="small">{error}</Paragraph>
