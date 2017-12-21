@@ -1,43 +1,69 @@
 # Getting started guide for developers
 
-The TELUS Design System (TDS) includes the resources needed to build consistent user interfaces within the TELUS Digital Platform.
+As a developer, your primary interaction point with TDS is through React components. Though the components are currently distributed in a single bundle, you should conceptualize them as independent, composable components.
 
-The components in TDS include:
+TDS components include:
 
-* semantic and accessible component markup
-* cross-browser compatible styling and animations
-* small bits of UI logic/interactivity
+* semantic and accessible markup
+* cross-browser compatible styling
+* responsive behaviour
+* small, contained bits of UI logic
 
-The components in TDS do not include:
+TDS components do not include:
 
-* any business logic such as validations or API calls
+* business logic, such as validations or API calls
+* external margins or global side effects
 
-These components free developers up to focus on solving unique application challenges, rather than having to reinvent standard interface elements.
-
-This guide assumes that you are building user experiences on the [TELUS Digital Platform](https://github.com/telusdigital/telus-isomorphic-starter-kit), which TDS is part of and provides the [UI foundational elements](https://github.com/telusdigital/telus-isomorphic-starter-kit/tree/master/ui) needed to get started.
 
 ## Installing
+
+If you are using the [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), TDS is already installed and configured. You can jump straight to [using the components](#use-components).
 
 To install the latest version:
 
 ```sh
 yarn add @telusdigital/tds
-```
 
-Don't have yarn? Learn how to install yarn [here](https://yarnpkg.com/en/docs/install).
-
-```sh
-# Or, with npm :)
+# or with npm
 npm install @telusdigital/tds --save
 ```
 
+That's it! You don't need any other dependencies to use the TDS.
+
+Don't have yarn? Learn [how to install it](https://yarnpkg.com/en/docs/install).
+
 ## Usage
 
-### 1. Import the TDS styles
+### 1. Configure webpack to load CSS
 
-Import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles and the components' styles that have been uniquified by CSS Modules to prevent any conflicts with application styles. 
+Add an entry to the `module.rules` array to load CSS. You may also provide other configuration such as the [ExtractTextPlugin](https://github.com/webpack-contrib/extract-text-webpack-plugin) to extract all styles into a separate stylesheet file.
 
-Note that webpack will bundle the TDS styles with your application-specific styles. 
+
+```js
+// webpack.config.js
+{
+  module: {
+    rules: [
+      // other rules
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
+  }
+}
+```
+
+### 2. Import the TDS styles
+
+Import the TDS stylesheet into the main entry point of your application. It contains a small amount of page level styles and the pre-compiled components' styles. We use CSS Modules to generate unique class names, which guarantees that TDS component styles will not conflict with your application's class names.
+
+You will not use these styles directly. Webpack will bundle the TDS styles with your application-specific styles, and they will be consumed by the TDS components.
+
+See the FAQ for [more info about the specific global styles that are applied](faq.md#global-styles).
 
 ```js
 // index.js
@@ -54,36 +80,41 @@ render(
 );
 ```
 
-### 2. Use TDS Components
+### 3. Use TDS Components {#use-components}
 
-Now, use TDS components in your application
+TDS components are made to be composed. Each one accomplishes a specific purpose. Combine them to create more complex components for your application.
 
 ```js
-// MyBanner.jsx
-import React from 'react';
+// BannerText.jsx
 
-import { Box, DisplayHeading, Paragraph, Button } from '@telusdigital/tds';
+import React from 'react'
 
-const BannerText = () => (
+import { Box, Button, DisplayHeading, Paragraph } from '@telusdigital/tds'
+
+const BannerText = ({ onDownloadClick }) => (
   <Box between={5}>
     <DisplayHeading>Pay your bills and monitor internet usage on the go</DisplayHeading>
     <Paragraph>Download the new and improved My Account app today.</Paragraph>
-    <Button>Download now</Button>
+
+    <Button onClick={onDownloadClick}>Download now</Button>
   </Box>
-);
+)
+
+export default BannerText
 ```
 
-### 3. Use TDS colour sass variables
+### 4. Use TDS colours
 
-Use TDS colour Sass variables in your Sass files to ensure that only brand approved colours are used within your application. 
+Colour is the one exception, as the colour palette is available as Sass variables. While the TDS components already have colour baked in, you may use the TDS colour variables to add style to your own components such as setting background colours or border colours.
 
-Only add this import into files that need to use the provided colour variables.
+A list of the available colours and their use cases can be found on the TDS website. (TODO link to it! tds.telus.com/...)
 
-```scss 
-// MyBanner.scss
+```scss
+// BannerText.scss
+
 @import '~@telusdigital/tds/dist/scss/colours';
 
-.banner{
+.banner {
   background-color: $color-purple;
 }
 ```
