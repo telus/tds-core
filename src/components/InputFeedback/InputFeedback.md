@@ -1,6 +1,6 @@
 ### Minimal usage
 
-InputFeedback displays a feedback box. Its primary use is to facilitate feedback states for other Form components such as [Input](#input) or [Checkbox](#checkbox). Rather than basic text, you may utilise [Typography](#typography) components as well as other components to customise your feedback message.
+InputFeedback displays a feedback box. Its primary use is to facilitate feedback states for other Form components such as [Input](#input) or [Checkbox](#checkbox). Rather than basic text, you may use [Typography](#typography) components as well as other components to customize your feedback message.
 
 ```jsx
 <InputFeedback>
