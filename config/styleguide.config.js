@@ -9,7 +9,7 @@ const getStyleguideDir = () => {
 }
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = ['Select', 'Textarea', 'FlexGrid']
+const enabledInStaging = ['Select', 'Textarea', 'FlexGrid', 'InputFeedback']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
