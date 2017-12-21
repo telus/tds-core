@@ -132,7 +132,7 @@ const passwordRequirements = (feedback) => {
   }
 
   return (
-    <Input.Helper feedback={feedback}>
+    <InputFeedback feedback={feedback}>
       <Box between={2}>
         <Paragraph size="small" bold>Your password must be:</Paragraph>
         
@@ -141,7 +141,7 @@ const passwordRequirements = (feedback) => {
           <UnorderedList.Item>Not repeated from previous password</UnorderedList.Item>
         </UnorderedList>
       </Box>
-    </Input.Helper>
+    </InputFeedback>
   );
 };
 
