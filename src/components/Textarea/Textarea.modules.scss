@@ -6,7 +6,7 @@
   // - I chose to prevent resizing the width to avoid edge cases due to the absolutely positioned icon.
   max-width: 100%;
   min-width: 100%;
-  min-height: 208px;
+  min-height: 208px; // preferred over `rows` attribute for cross-browser consistency
 }
 
 .feedbackIconPosition {

@@ -64,7 +64,7 @@ Input.propTypes = {
    * A detailed explanation of the input expected by a form field. Can be text,
    * other components, or HTML elements.
    *
-   * If a function is provided, it must return an `Input.InputFeedback`. The function will be
+   * If a function is provided, it must return an `Input.Helper`. The function will be
    * invoked with the following arguments.
    *
    * @param {String} feedback The input's current feedback state.
