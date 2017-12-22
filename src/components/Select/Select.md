@@ -1,4 +1,3 @@
-
 ### Usage criteria
 
 * Selects should be used sparingly where possible or need to reduce space on forms etc. (Work with design for specifics)
@@ -14,6 +13,7 @@ const info = (
 
 <Select 
   label="Select your province"
+  placeholder="Please select your province..."
   helper={info}
   options={[{text: 'British Columbia', value: 'BC'}, {text: 'Ontario', value: 'ON'}, {text: 'Quebec', value: 'QC'}]}
   onChange={e => console.log(e.target.value)}
