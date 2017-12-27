@@ -1,4 +1,4 @@
 {
   "title": "TELUS Design System",
-  "plugins": ["otherlink"]
+  "plugins": ["otherlink", "collapsible-menu"]
 }
