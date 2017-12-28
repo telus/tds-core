@@ -2,6 +2,7 @@
 
 * [Components](ref://components/index.html)
 * TODO Sketch file?
+* [TDS on GitHub](https://github.com/TelusDigital/tds)
 
 ## Guide
 
