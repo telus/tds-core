@@ -1,7 +1,7 @@
 ### Minimal usage
 
-When a form requests detailed content from the user, such as product feedback or support queries, then the Textarea component can be used to gather long-form information.
+Use the Textarea component to collect long-form information such as product feedback or support queries.
 
 ```
-<Textarea label="Enter some comments" onChange={e => console.log(e.target.value)}/>
+<Textarea label="Enter your feedback" />
 ```

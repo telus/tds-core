@@ -8,6 +8,8 @@ import safeRest from '../../utils/safeRest'
 import styles from './InputFeedback.modules.scss'
 
 /**
+ * A feedback box commonly used with form fields.
+ *
  * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.33.0</span>
  */
 const InputFeedback = ({ feedback, children, ...rest }) => (
@@ -22,11 +24,11 @@ const InputFeedback = ({ feedback, children, ...rest }) => (
 
 InputFeedback.propTypes = {
   /**
-   * A feedback state that changes the background colour of InputFeedback.
+   * A feedback state that changes the background colour.
    */
   feedback: PropTypes.oneOf(['success', 'error']),
   /**
-   * Description of your feedback.
+   * The content. Can be text, any HTML element, or any component.
    */
   children: PropTypes.node.isRequired,
 }
