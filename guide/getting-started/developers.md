@@ -107,7 +107,7 @@ export default BannerText
 
 Colour is the one exception, as the colour palette is available as Sass variables. While the TDS components already have colour baked in, you may use the TDS colour variables to add style to your own components such as setting background colours or border colours.
 
-A list of the available colours and their use cases can be found on the TDS website. (TODO link to it! tds.telus.com/...)
+A list of the available colours and their use cases can be found [in the Design section](/design/colour.md).
 
 ```scss
 // BannerText.scss
