@@ -10,5 +10,5 @@ some of that pain, but do not eliminate it. In addition, CSS classes only provid
 concerns such as accessibility and interactive behaviors. Finally, CSS classes are tough to evolve, often requiring breaking 
 changes.
 
-TELUS Digital is aligned on React as the target for creating UIs. Because React makes components a first-class citizen, 
+TELUS digital is aligned on React as the target for creating UIs. Because React makes components a first-class citizen, 
 the stylesheet-first approach of TDS makes less sense. We can provide a richer TDS experience by embracing React completely.

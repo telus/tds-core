@@ -42,7 +42,7 @@
     "type": "git",
     "url": "git+https://github.com/telusdigital/tds.git"
   },
-  "author": "TELUS Digital",
+  "author": "TELUS digital",
   "engines": {
     "node": ">=8"
   },

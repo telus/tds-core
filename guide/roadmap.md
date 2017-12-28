@@ -17,7 +17,7 @@ From the alpha and beta periods, we learned that large amounts of CSS in the glo
 at scale. CSS classes only provide look-and-feel, while missing other critical concerns such as accessibility and interactivity. 
 Finally, CSS classes do not have a straightforward evolution path, often requiring breaking changes.
 
-TELUS Digital is aligned on JavaScript and React as the target for creating rich user experiences on the web. Because React 
+TELUS digital is aligned on JavaScript and React as the target for creating rich user experiences on the web. Because React 
 makes components a first-class citizen, the CSS-first approach of TDS makes less sense. We can provide a richer 
 TDS experience by embracing React completely.
 

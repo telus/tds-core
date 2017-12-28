@@ -67,4 +67,4 @@ All TDS components accept most standard HTML attributes, which are helpful with 
 
 ## What if I'm not using the RA?
 
-Technically, TDS is a library of React components that are bundled as transpiled ES6 modules that can be used outside of the RA. However, it is **strongly** encouraged to use it together with the RA (TELUS Digital Platform) to easily implement all of the standards that TELUS web properties need to follow and are enforced by [DRB](https://drb.telus.com).
+Technically, TDS is a library of React components that are bundled as transpiled ES6 modules that can be used outside of the RA. However, it is **strongly** encouraged to use it together with the RA (TELUS digital Platform) to easily implement all of the standards that TELUS web properties need to follow and are enforced by [DRB](https://drb.telus.com).
