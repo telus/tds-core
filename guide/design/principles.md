@@ -42,7 +42,7 @@ must meet these principles. They are used to assess whether an experience is goo
 
 * Collaborate by involving cross-functional team members
 * Ensure design is technically feasible understand how it impacts performance 
-* Share your ideas early and often to explore many different solutions and iterations.
+* Share your ideas early and often to explore many different solutions and iterations
 
 ## Think end-to-end
 
@@ -52,8 +52,8 @@ must meet these principles. They are used to assess whether an experience is goo
 
 ## Align with TELUS Standards
 
-* Accessibility 
-* Privacy & Security 
-* Performance 
-* Brand
-* Content
+* [Accessibility](https://digitalstandards.telus.com/accessibility) 
+* [Privacy & Security](https://digitalstandards.telus.com/security) 
+* Performance
+* [Brand](https://brand.telus.com)
+* [Content](https://docs.google.com/a/telus.com/document/d/1hEAbRxEeKDwruhYKsNnF-788rZ_W10gyAO2-0IPM5uo/edit?usp=sharing)

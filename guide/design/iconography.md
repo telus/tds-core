@@ -13,7 +13,7 @@ of the edges should be at the standard measurement of 16px, 24px, or 48px.
 
 ### Dos
 
-* All icons should be interactive, except stop and warning icons.
+* All icons should be interactive, except stop and warning icons
 * Icons should be accompanied with supportive text with the exception of the utility icons
 
 ### Don’ts
@@ -33,4 +33,5 @@ accepted into the system must provide ‘sufficient additional value’.
 ## Roadmap
 
 * Integrate a small subset of Picons into the component library
+* Deprecate and retire the icon font in favor of SVG-based icons
 * Provide more guidance on use of colour with iconography

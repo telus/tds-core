@@ -7,7 +7,7 @@ is conveyed in a way that is not accessible, an alternative, accessible text ver
 
 ## Usage
 
-See the [TELUS Standards site](https://digitalstandards.telus.com/accessibility/overview) for detailed usage information.
+See the [TELUS Standards site](https://digitalstandards.telus.com/accessibility) for detailed usage information.
 
 ## Governance
 

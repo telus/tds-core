@@ -5,8 +5,8 @@ Coming soon...
 
 ## Governance
 
-As we do not yet have any official guidelines please consult your Design Leads or use existing patterns on TELUS.com 
-when undertaking work that requires motion or animation.
+As we do not yet have any official guidelines please consult your Design Leads or use existing TELUS patterns when undertaking 
+work that requires motion or animation.
 
 
 ## Roadmap

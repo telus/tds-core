@@ -8,7 +8,7 @@ Make sure keyboard functionality works with VoiceOver and use alt text only wher
 
 ## Usage
 
-See the [TELUS Standards site](https://digitalstandards.telus.com/accessibility/overview) for detailed usage information.
+See the [TELUS Standards site](https://digitalstandards.telus.com/accessibility) for detailed usage information.
 
 ## Governance
 

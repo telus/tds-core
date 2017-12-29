@@ -28,20 +28,21 @@ with a purpose is to read your work out loud.
 * Use simple words rather than their longer equivalent
 * Write sentences that are 14 words or less
 * Include only one main idea in each paragraph	
-* Write in the active voice. 
-* Focus on what customers need to know.
+* Write in the active voice
+* Focus on what customers need to know
 * Use subheadings to present information in a logical manner
 * Keep your readers in mind. If you’re confused by what you’ve written, they will be too
-* Watch for redundancy - and don’t duplicate or reiterate what you want to say when it’s redundant or unnecessary.
+* Watch for redundancy - and don’t duplicate or reiterate what you want to say when it’s redundant or unnecessary
 
 ### Dont’s
 
-* Use jargon, acronyms or corporate-speak.
-* Use words like “bargain” and “deal” that devalue the message.
-* Write in the passive voice.
-* Get lost in the details. 
+* Use jargon, acronyms or corporate-speak
+* Use words like “bargain” and “deal” that devalue the message
+* Write in the passive voice
+* Get lost in the details
 
-See the TELUS Content Standards for detailed information on usage and implementation.
+See the [TELUS Content Standards](https://docs.google.com/a/telus.com/document/d/1hEAbRxEeKDwruhYKsNnF-788rZ_W10gyAO2-0IPM5uo/edit?usp=sharing) 
+for detailed information on usage and implementation.
 
 
 ## Governance

@@ -24,3 +24,4 @@ have any ideas, suggestions or questions regarding implementation please [get in
 ## Roadmap
 
 * More documentation on the overall layout system
+* Deprecate and retire the float-based grid in favor of the Flexbox-based implementation

@@ -8,7 +8,7 @@ interactive elements on a page and using the Enter key or the Spacebar to activa
 
 ## Usage
 
-See the [TELUS Standards site](https://digitalstandards.telus.com/accessibility/overview) for detailed usage information.
+See the [TELUS Standards site](https://digitalstandards.telus.com/accessibility) for detailed usage information.
 
 ### Focus State
 

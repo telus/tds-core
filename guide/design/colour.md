@@ -133,5 +133,5 @@ you should have any questions regarding implementation, please [get in touch wit
 * v1.0: Basic colour palette implemented as Sass variables
 * Expose colour tokens to JavaScript
 * Expand the colour palette to include more shade/tints of specific hues of colour
-* Shift to more semantically named colours
+* Adopt a more semantically naming scheme
 * Document and codify accessible colour combinations

@@ -4,4 +4,4 @@ The TELUS Design System (TDS) is a set of living guidelines that communicates ou
 It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for
 digital design guidelines, code patterns and UI elements.
 
-TDS is intended for use by any TELUS employee or approved vendor. (<-- Make this sound better)
+TDS is intended for use by any TELUS employee or approved vendor. (<-- TODO Make this sound better)
