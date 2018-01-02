@@ -10,7 +10,6 @@
 
 - [ ] Provide access to finalised designs in Sketch and Invision
 - [ ] Add documentation
-- [ ] Include any notes/discussion points as covered in grooming by DEV/QA regarding approach/implementation.
 
 ## Dev Acceptance Criteria
 
@@ -18,5 +17,5 @@
 - [ ] Documentation is finalized
 - [ ] Code meets AA accessibility guidelines
 - [ ] Code passes automated tests and style checks
-- [ ] New code is [unit tested](https://github.com/telusdigital/tds/wiki/Coding-Standards#tests-jest) where appropriate (developer should use own judgement)
+- [ ] New code is unit tested where appropriate (developer should use own judgement)
 - [ ] Code passes Pull Request review with 1 approval
