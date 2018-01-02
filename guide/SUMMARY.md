@@ -10,7 +10,7 @@
   * [Designers](/getting-started/designers.md)
   * [Developers](/getting-started/developers.md)
   * [FAQ](/getting-started/faq.md)
-* [Design](/design/principles.md)
+* [Design Principles](/design/principles.md)
   * [Colour](/design/colour.md)
   * [Typography](/design/typography.md)
   * [Iconography](/design/iconography.md)
