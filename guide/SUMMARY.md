@@ -1,10 +1,7 @@
-## Quick links
+## Assets
 
 * [Components](ref://components/index.html)
-* [TDS on GitHub](https://github.com/telusdigital/tds)
-* [Report an issue](https://github.com/telusdigital/tds/issues)
 * [Download the Sketch file](https://github.com/telusdigital/tds/releases/latest)
-* [Contact us](/support.md)
 
 ## Guide
 
@@ -32,4 +29,9 @@
   * [Developer guide](/contributing/developer-guide.md)
   * [Codebase overview](codebase-overview.md)
 * [Roadmap](/roadmap.md)
-* [Support](/support.md)
+
+## Support &amp; links
+
+* [TDS on GitHub](https://github.com/telusdigital/tds)
+* [Report an issue](https://github.com/telusdigital/tds/issues)
+* [Contact us](/support.md)
