@@ -1,6 +1,6 @@
 # Design Principles
 
-The TELUS design principles are a simple set of rules that enable teams to create great digital experiences. All experiences 
+The TELUS design principles are a simple set of rules that enable teams to craft great digital experiences. All experiences 
 must meet these principles. They are used to assess whether an experience is good enough for our customers to use.
 
 ## Clear and simple designs
@@ -57,3 +57,13 @@ must meet these principles. They are used to assess whether an experience is goo
 * Performance
 * [Brand](https://brand.telus.com)
 * [Content](https://docs.google.com/a/telus.com/document/d/1hEAbRxEeKDwruhYKsNnF-788rZ_W10gyAO2-0IPM5uo/edit?usp=sharing)
+
+## Design Guidelines
+
+* [Colour](/design/colour.md)
+* [Typography](/design/typography.md)
+* [Iconography](/design/iconography.md)
+* [Writing](/design/writing.md)
+* [Layout](/design/layout.md)
+* [Motion](/design/motion.md)
+* [Depth](/design/depth.md)
