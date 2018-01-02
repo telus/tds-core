@@ -13,7 +13,7 @@ for each one. If you'd like to contribute to any of the available TDS components
 Expect architectural changes and governance processes to be established soon that will drive a more mature contribution 
 process. Thank you for your patience.  
 
-Learn more by reading the [TELUS Design Platform roadmap](/roadmap.md) or by [reaching out to us](/support.md).
+Learn more by reading the [TELUS Design Platform roadmap](/roadmap.md) or by [reaching out to us](/contact.md).
 
 
 ## How to contribute {#how-to}

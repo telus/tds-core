@@ -29,7 +29,7 @@ See the [Image component](ref:///components/index.html#image) for implementation
 ## Governance
 
 The TELUS Imagery guidelines and Brand Hub microsite are managed by the TELUS Brand team and should be strictly followed 
-unless explicit approval has been granted. If you would have any questions regarding implementation please [get in touch with us](/support.md).
+unless explicit approval has been granted. If you would have any questions regarding implementation please [get in touch with us](/contact.md).
 
 
 ## Roadmap

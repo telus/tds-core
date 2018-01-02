@@ -34,4 +34,4 @@
 
 * [TDS on GitHub](https://github.com/telusdigital/tds)
 * [Report an issue](https://github.com/telusdigital/tds/issues)
-* [Contact us](/support.md)
+* [Contact us](/contact.md)

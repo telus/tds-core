@@ -6,7 +6,7 @@ The design system must strike a balance between flexibility and consistency. If 
 
 If your design shows a component being used in a way that does not match what is available in code, it may be either a mistake in the design, or a feature that has not yet been coded.
 
-Either way, [let us know about it](/support.md) so that we can work with you on the appropriate solution.
+Either way, [let us know about it](/contact.md) so that we can work with you on the appropriate solution.
 
 
 ## How is TDS versioned?

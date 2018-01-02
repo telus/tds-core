@@ -69,4 +69,4 @@ We continuously tune the plan based on feedback and priorities. Please follow al
 
 Learn [how to contribute](/contributing/contributing.md) and discuss features.
 
-[Reach out to us](support.md)!
+[Reach out to us](contact.md)!
