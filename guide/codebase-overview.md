@@ -108,17 +108,19 @@ such as "style", "title" or "name".
 #### Annotated React example
 
 ```jsx
+import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './ButtonLink.modules.scss'
 
+
                     // Destructure props in function signature
                     // and use `rest` props
-const ButtonLink = ({variant, href, children, ...rest}) => (
+const ButtonLink = ({variant, href, children, ...rest}) => {
 
     // spread `rest` props at the front of the component
     // to be overridable by latter props
-  <a {...rest} href={href} className={styles[variant]}>{children}</a>
-)
+  return <a {...rest} href={href} className={styles[variant]}>{children}</a>
+}
 
 // Always use `propTypes`
 ButtonLink.propTypes = {
@@ -127,7 +129,7 @@ ButtonLink.propTypes = {
    */
                     // use `PropTypes.oneOf` when there are a
                     // fixed number of values for a prop
-  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted'])
+  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
   /**
    * Documentation for `href` prop 
    */
@@ -194,6 +196,8 @@ over how a page is laid out, in order to make their placement flexible and highl
 **ButtonLink.jsx**
 
 ```jsx
+// ... other imports
+
       // `styles` is a JavaScript object containing all class names as keys
 import styles from './ButtonLink.modules.scss'
 
