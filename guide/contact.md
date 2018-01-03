@@ -9,7 +9,7 @@ It is not intended for general public consumption.
 1. **GitHub**: discuss in [open issues](https://github.com/telusdigital/tds/issues) before 
   [creating a new one](https://github.com/telusdigital/tds/issues/new). See 
   [Contributing guide](contributing/contributing.md#how-to) for more information.  
-  _Response time: within 5 business days<sup>1</sup>_
+  _Response time: within 3 business days<sup>1</sup>_
 2. **TELUS digital Slack**: this Slack network is exclusively available to TELUS digital employees, 
   contractors, and vendors. The following channels are for support or discussion around TDS:  
   _Response time: within 8 business hours<sup>1</sup>_
