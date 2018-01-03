@@ -9,7 +9,9 @@
 
 #### Usage criteria
 
-- Be mindful of SEO and accessibility.
-- Organise headers in a nested order: h1, then h2, then h3.
-- Do **not** skip levels: h1, then h3.
-- For Hero overlays, Headlines, or Promo blocks, use [`DisplayHeading`](#displayheading).
+- Be mindful of SEO and accessibility
+- Organise headers in a nested order: h1, then h2, then h3
+- Try **not** to skip levels where possible: h1, then h3
+- Have 1 h1 per page
+- For Hero overlays, Headlines, or Promo blocks, use [`DisplayHeading`](#displayheading)
+- For subtext in the Hero overlays, or Headlines, use [`Text`](#text)
