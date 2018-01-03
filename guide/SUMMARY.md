@@ -1,6 +1,7 @@
 ## Assets
 
-* [Components](ref://components/index.html)
+* [Components styleguide](ref://components/index.html)
+* [npm package](https://www.npmjs.com/package/@telusdigital/tds)
 * [Download the Sketch file](https://github.com/telusdigital/tds/releases/latest)
 
 ## Guide
