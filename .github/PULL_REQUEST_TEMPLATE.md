@@ -3,7 +3,6 @@
 - Link to related issues: `#<issue number>`
 - Description of the problem the contribution solves or link to design issue
   - [ ] Explanation of how existing TDS code falls short
-  - [ ] Implementation method (how do you intend to do it)
   - [ ] Explanation of backwards compatibility for users who are already on this feature
 
 ## Considerations
