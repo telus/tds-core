@@ -15,6 +15,9 @@ import addRightPadding from '../FormField/addRightPadding'
 import styles from './Select.modules.scss'
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 
+/**
+ * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.33.0</span>
+ */
 const Select = ({ options, placeholder, ...props }) => (
   <FormField {...props}>
     {({ className, ...selectProps }, showFeedbackIcon, feedback) => (

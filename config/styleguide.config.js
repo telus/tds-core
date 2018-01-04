@@ -9,7 +9,7 @@ const getStyleguideDir = () => {
 }
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = ['Select', 'Textarea', 'FlexGrid', 'InputFeedback']
+const enabledInStaging = ['FlexGrid']
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
@@ -265,12 +265,9 @@ module.exports = {
               path.resolve('src/components/Input/Input.jsx'),
               path.resolve('src/components/Checkbox/Checkbox.jsx'),
               path.resolve('src/components/Radio/Radio.jsx'),
-              toggleByEnv('Select', path.resolve('src/components/Select/Select.jsx')),
-              toggleByEnv('Textarea', path.resolve('src/components/Textarea/Textarea.jsx')),
-              toggleByEnv(
-                'InputFeedback',
-                path.resolve('src/components/InputFeedback/InputFeedback.jsx')
-              ),
+              path.resolve('src/components/Select/Select.jsx'),
+              path.resolve('src/components/Textarea/Textarea.jsx'),
+              path.resolve('src/components/InputFeedback/InputFeedback.jsx'),
               path.resolve('src/components/Tooltip/Tooltip.jsx'),
               path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx'),
             ])

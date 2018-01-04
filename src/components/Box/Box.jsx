@@ -31,8 +31,6 @@ const getBetweenClasses = (scale, inline, desktop) => {
 
 /**
  * Apply spacing within or around components.
- *
- * <span class="docs--badge__new">new!</span> <span class="docs--badge__version">v0.29.0</span>
  */
 const Box = ({
   tag,
