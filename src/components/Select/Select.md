@@ -1,8 +1,11 @@
-### Usage criteria
+## Usage criteria
 
 * Include a `placeholder` to provide instructions such as "Please select…" as an unselectabale option (recommended) 
-* Selects are most appropriate when there are at least 4 choices. Checkboxes or radio groups are more appropriate for 
-less than 4.
+* Use when options are between 7-15 (recommended)
+* For options are 6 and under, use [`radio`](#radio) groups
+* For options 15 and above, look for alternatives (e.g grouping into categories, or input field with auto-complete etc.) 
+
+<a href=“https://baymard.com/blog/drop-down-usability” target="_blank">Reference</a>
 
 ```
 <Select 
