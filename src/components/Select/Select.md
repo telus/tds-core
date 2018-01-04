@@ -1,4 +1,4 @@
-## Usage criteria
+### Usage criteria
 
 * Include a `placeholder` to provide instructions such as "Please select…" as an unselectabale option (recommended) 
 * Use when options are between 7-15 (recommended)
