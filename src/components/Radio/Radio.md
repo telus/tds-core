@@ -4,6 +4,12 @@ Radio buttons are used when there is a list of two or more options that are mutu
 
 <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" target="_blank">Reference</a>
 
+### Usage criteria
+
+* Use when there can only be one choice from mulitple options
+* Use there are 2-6 options to choose from
+* Use  [`Select`](#select) (dropdown) when there are over 6 options
+
 ```
 initialState = {
   choice: "e.bill"
