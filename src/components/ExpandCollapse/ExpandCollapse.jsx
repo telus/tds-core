@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
@@ -64,7 +64,7 @@ class ExpandCollapse extends React.Component {
 
     return (
       <Panels {...rest} isPanelOpen={this.isPanelOpen} togglePanel={this.togglePanel}>
-        {Children.toArray(children).filter(Boolean)}
+        {children}
       </Panels>
     )
   }

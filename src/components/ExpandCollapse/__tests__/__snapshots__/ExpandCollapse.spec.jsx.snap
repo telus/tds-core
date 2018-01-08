@@ -24,7 +24,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
         />
       </HairlineDivider>
       <PanelWrapper
-        key=".$.0"
+        key="panel-1"
         onClick={[Function]}
         open={false}
         panelDisabled={false}
@@ -343,7 +343,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
         />
       </HairlineDivider>
       <PanelWrapper
-        key=".$.0"
+        key="panel-1"
         onClick={[Function]}
         open={true}
         panelDisabled={false}

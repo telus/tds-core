@@ -79,34 +79,18 @@ describe('ExpandCollapse', () => {
 
     expect(expandCollapse).toMatchSnapshot()
   })
-  /* eslint-disable no-constant-condition */
+
   it('renders panels conditionally', () => {
     const { expandCollapse } = doMount(
       <ExpandCollapse open={['panel-1']}>
-        { true && <ExpandCollapse.Panel id="panel-1" header="Panel title">
-              Panel content
-            </ExpandCollapse.Panel>
-        }
-        { true ? <ExpandCollapse.Panel id="panel-2" header="Panel title">
-            Panel content
-          </ExpandCollapse.Panel> : null
-        }
-        { false && <ExpandCollapse.Panel id="panel-3" header="Panel title">
-            Panel content
-          </ExpandCollapse.Panel>
-        }
-        { false ? <ExpandCollapse.Panel id="panel-4" header="Panel title">
-            Panel content
-          </ExpandCollapse.Panel> : null
-        }
-        <ExpandCollapse.Panel id="panel-5" header="Panel title">
-          Panel content
-        </ExpandCollapse.Panel>
+        { false }
+        { null }
+        { undefined }
+        { aPanel({id: 'panel-1'}) }
       </ExpandCollapse>
     )
-  /* eslint-enable no-constant-condition */
 
-    expect(expandCollapse.find('Panel').length).toBe(3)
+    expect(expandCollapse.find('Panel').length).toBe(1)
   })
 
   describe('the panel header', () => {
@@ -289,8 +273,8 @@ describe('ExpandCollapse', () => {
     it('surrounds all the panels', () => {
       const { expandCollapse } = doMount(
         <ExpandCollapse>
-          {aPanel()}
-          {aPanel()}
+          {aPanel({id: 'panel-1'})}
+          {aPanel({id: 'panel-2'})}
         </ExpandCollapse>
       )
 
@@ -300,8 +284,8 @@ describe('ExpandCollapse', () => {
     it('can turn off the top divider', () => {
       const { expandCollapse } = doMount(
         <ExpandCollapse topDivider={false}>
-          {aPanel()}
-          {aPanel()}
+          {aPanel({id: 'panel-1'})}
+          {aPanel({id: 'panel-2'})}
         </ExpandCollapse>
       )
 
