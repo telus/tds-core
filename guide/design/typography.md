@@ -28,7 +28,7 @@ _Body, links: Body copy is 16px across all devices and screen sizes._
 
 ### Type leading
 
-Type leading is in most cases is the font size + 8px. However, in some instances it may be modified slightly smaller 
+Type leading (in most cases) is the font size + 8px. However, in some instances it may be modified slightly smaller 
 depending on the application.
 
 ### Line length
