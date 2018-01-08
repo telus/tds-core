@@ -1,0 +1,20 @@
+@import '../../scss/settings/responsive-grid';
+@import '../../scss/utility/responsive';
+
+$max-widths: (xs: auto, small: 544px, medium: 736px, large: 960px, xl: 1168px);
+
+.limitedWidth {
+  @each $viewport, $max-width in $max-widths {
+    @include from-breakpoint($viewport) {
+      max-width: $max-width;
+    }
+  }
+}
+
+.gutterless {
+  padding: 0;
+}
+
+.centre {
+  margin: 0 auto;
+}

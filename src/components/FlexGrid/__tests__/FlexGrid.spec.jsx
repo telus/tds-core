@@ -1,9 +1,10 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
-
 import { Grid } from 'react-flexbox-grid'
 
 import FlexGrid from '../FlexGrid'
+
+import mockMatchMedia from '../../../__mocks__/matchMedia'
 
 describe('FlexGrid', () => {
   const doMount = (props = {}) => {
@@ -21,11 +22,6 @@ describe('FlexGrid', () => {
       findColumn: index => flexGrid.find(`div#col-${index}`),
       findRow: index => flexGrid.find(`div#row-${index}`),
     }
-  }
-
-  const expectToHaveNoGutter = element => {
-    expect(element).toHaveStyle('padding', 0)
-    expect(element).toHaveStyle('margin', 0)
   }
 
   it('renders', () => {
@@ -60,9 +56,9 @@ describe('FlexGrid', () => {
     const col2 = findColumn(2)
     const row = findRow(1)
 
-    expectToHaveNoGutter(col1)
-    expectToHaveNoGutter(col2)
-    expectToHaveNoGutter(row)
+    expect(col1).toHaveClassName('gutterless')
+    expect(col2).toHaveClassName('gutterless')
+    expect(row).toHaveClassName('gutterless')
   })
 
   it('passes additional attributes to the element', () => {
@@ -70,6 +66,19 @@ describe('FlexGrid', () => {
 
     expect(flexGrid).toHaveProp('id', 'the-id')
     expect(flexGrid).toHaveProp('data-some-attr', 'some value')
+  })
+
+  it('can have limited width at various viewport sizes', () => {
+    mockMatchMedia(360)
+    const { flexGrid } = doMount({ limitedWidth: true })
+
+    expect(flexGrid).toHaveClassName('limitedWidth')
+  })
+
+  it('can be horizontally centred', () => {
+    const { flexGrid } = doMount({ limitedWidth: true, centre: true })
+
+    expect(flexGrid).toHaveClassName('centre')
   })
 
   it('does not allow custom CSS', () => {

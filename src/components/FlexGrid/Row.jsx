@@ -9,7 +9,7 @@ import safeRest from '../../utils/safeRest'
 const Row = ({ children, ...rest }) => (
   <Subscriber channel="flex-grid">
     {gutterStyle => (
-      <ReactFlexboxGridRow {...safeRest(rest)} style={gutterStyle}>
+      <ReactFlexboxGridRow {...safeRest(rest)} className={gutterStyle}>
         {children}
       </ReactFlexboxGridRow>
     )}

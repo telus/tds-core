@@ -1,20 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Broadcast } from 'react-broadcast'
-
 import { Grid } from 'react-flexbox-grid'
 
 import safeRest from '../../utils/safeRest'
+import joinClassNames from '../../utils/joinClassNames'
+import styles from './FlexGrid.modules.scss'
 
 import Col from './Col'
 import Row from './Row'
 
-const FlexGrid = ({ gutter, children, ...rest }) => {
-  const gutterStyle = gutter ? undefined : { padding: 0, margin: 0 }
+const getClasses = (centre, limitedWidth, gutterless) =>
+  joinClassNames(
+    centre && styles.centre,
+    limitedWidth && styles.limitedWidth,
+    gutterless && styles.gutterless
+  )
+
+const FlexGrid = ({ centre, limitedWidth, gutter, children, ...rest }) => {
+  const gutterStyle = gutter ? undefined : styles.gutterless
 
   return (
     <Broadcast channel="flex-grid" value={gutterStyle}>
-      <Grid {...safeRest(rest)} fluid style={gutterStyle}>
+      <Grid {...safeRest(rest)} fluid className={getClasses(centre, limitedWidth, !gutter)}>
         {children}
       </Grid>
     </Broadcast>
@@ -22,6 +30,14 @@ const FlexGrid = ({ gutter, children, ...rest }) => {
 }
 
 FlexGrid.propTypes = {
+  /**
+   * Centres the grid horizontally. This is useful when using `limitedWidth`.
+   */
+  centre: PropTypes.bool,
+  /**
+   * Whether or not to give the grid a fixed width.
+   */
+  limitedWidth: PropTypes.bool,
   /**
    * Whether or not to include gutters in between columns.
    */
@@ -34,6 +50,8 @@ FlexGrid.propTypes = {
 }
 
 FlexGrid.defaultProps = {
+  centre: undefined,
+  limitedWidth: undefined,
   gutter: true,
 }
 

@@ -27,7 +27,7 @@ const Col = ({ span, offset, children, ...rest }) => (
         {...removeProps(rest)}
         xs={span || true}
         xsOffset={offset}
-        style={gutterStyle}
+        className={gutterStyle}
       >
         {children}
       </ReactFlexboxGridCol>
