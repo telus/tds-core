@@ -20,7 +20,7 @@ keyboard.
 
 The order in which interactive elements receive focus should be logical and predictable. Create the tab flow hierarchy by 
 using the source code to arrange the keyboard navigation. Begin with the header, followed by the main navigation, then 
-page navigation (from to to bottom, left to right), and end with the footer.
+page navigation (from top to bottom, left to right), and end with the footer.
 
 ## Governance
 
