@@ -1,7 +1,7 @@
 # Writing
 
 ## Overview
-The customers needs, wants and expectations should shape every piece of content that we create. How we communicate to 
+The customer's needs, wants and expectations should shape every piece of content that we create. How we communicate to 
 them depends on our understanding of their interests, behaviours and activities that will inform the content formats and 
 messaging that is used.
 
