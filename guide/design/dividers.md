@@ -2,7 +2,7 @@
 
 ## Overview
 
-Vertical dividers are used separate content and create a visual consistency that aids the user understand the message. The 
+Vertical dividers are used to separate content and create a visual consistency that aids the user in understanding the message. The 
 system currently includes 3 types of dividers - Wave, Dimple and Hairline - each of which should be used in a unique scenario.
 
 Wave Dividers are used to break up distinct messages on a page. There should be at most 1 Wave Divider per page and images 
