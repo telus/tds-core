@@ -17,8 +17,7 @@ See the following components for implementation details:
 
 ## Governance
 
-The layout system is managed by the Design Strategy team and we are open to improvements and contributions. If you would 
-have any ideas, suggestions or questions regarding implementation please [get in touch with us](/contact.md).
+The layout system is managed by the Design Strategy team and we are open to improvements and contributions. If you have any ideas, suggestions or questions regarding implementation please [get in touch with us](/contact.md).
 
 
 ## Roadmap
