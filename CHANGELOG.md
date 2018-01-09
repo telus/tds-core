@@ -1,3 +1,23 @@
+#### 0.33.1 (2018-01-09)
+
+##### Documentation Changes
+
+* **ExpandCollapse:** Update update label to 0.33.1 ([99c7458b](https://github.com/telusdigital/tds/commit/99c7458bb25a9b30a14f749025525ab6caa4cb10))
+* **writing:** fixed typo in overview ([79adf68d](https://github.com/telusdigital/tds/commit/79adf68d4edc4d0bdc499a6596b0fada5c8fef5c))
+* **imagery:** updated docs ([52506f72](https://github.com/telusdigital/tds/commit/52506f722b00e89785f1668eaa0e56088fec58ef))
+* **keyboard-nav:** typo in tab order ([9ad1cb94](https://github.com/telusdigital/tds/commit/9ad1cb94275633d55d28f0f26a473315e18755b3))
+* **dividers:** update overview ([bfa5874e](https://github.com/telusdigital/tds/commit/bfa5874e37d0e5b4db7ceab414dc4a631cbe1ee7))
+* **layout:** update governance ([12be662f](https://github.com/telusdigital/tds/commit/12be662fd9c1345136e9f4599c90c65d86e2c23c))
+* **typography:** updated type leading ([002654e6](https://github.com/telusdigital/tds/commit/002654e6a472fbc8ab1e8163d16a1ea94fec37f8))
+
+##### New Features
+
+* **flexgrid:** add css styles ([fa658e70](https://github.com/telusdigital/tds/commit/fa658e709d2890c03b8984f20a91017b60325e11))
+
+##### Bug Fixes
+
+* **ExpandCollapse:** remove the core-js/es6/set import from ExpandCollapse ([92de7314](https://github.com/telusdigital/tds/commit/92de7314fc5a1795d3eb4ca71aed5cddeabcf5cd))
+
 #### 0.33.0 (2018-01-04)
 
 ##### Documentation Changes
