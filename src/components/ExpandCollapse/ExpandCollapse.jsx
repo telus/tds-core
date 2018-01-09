@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import Set from 'core-js/es6/set'
 import arrayFrom from 'core-js/fn/array/from'
 
 import { isEqual } from '../../utils/sets'
