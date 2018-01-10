@@ -14,7 +14,7 @@ A description of the structure of the codebase, conventions being followed, and 
 
 ## Tools
 
-The TDS codebase maintains a set of organisational and syntactical standards.
+The TDS codebase maintains a set of organizational and syntactical standards.
 We utilize the following tools for the development, release, and distribution processes:
 
 - [Styleguidist](https://react-styleguidist.js.org/): isolated React component development environment with a
@@ -98,7 +98,7 @@ Though the following patterns are not strictly enforced, they are strongly encou
   purposeful overriding. `className` and `style` are also not available as a prop interface in most components because
   TDS strictly enforces the TELUS brand through styles, and as such there should be no potential inaccurate brand
   representations.
-- If a parent component does not use props and only passes them down to its children, pass components as props instead.
+- If a parent component does not use props and only passes them down to its children, pass components as props.
 
 [Here is an example of a React component that follows the above patterns](https://github.com/telusdigital/tds/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.jsx).
 
@@ -117,6 +117,8 @@ their respective **ComponentName.modules.scss** file. The following patterns are
 
 **Rendered DOM**
 
+From the `composes` example above:
+
 ```html
 <!-- the 'class' attribute contains the 'primary'
 and 'base' classes since 'primary' composes' base -->
@@ -125,12 +127,11 @@ and 'base' classes since 'primary' composes' base -->
 
 ### Writing tests {#tests}
 
-Tests utilise Jest and Enzyme matchers. Tests are treated as a first-class citizen. Tests
+Tests utilize Jest and Enzyme matchers. Tests are treated as a first-class citizen. Tests
 should clearly outline the features and expected output for a component. For some inspiration, have a look at how
 pre-existing TDS components' tests are written.
 
-Use assertions that produce helpful error messages.
-enzyme-matchers is useful for this.
+Use assertions that produce helpful error messages, [enzyme-matchers](https://github.com/blainekasten/enzyme-matchers) is useful for this.
 
 Do:
 
