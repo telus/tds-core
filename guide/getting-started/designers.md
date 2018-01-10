@@ -60,7 +60,7 @@ The TDS Master Sketch file is a document that will help you get started with you
 
 2. **Invision Enterprise**: If you have access to the TDS project in the [TELUS Invision Enterprise](https://www.invisionapp.com/) account you can view access the latest (and previous) Master Sketch files in the assets > source files
 
-![image alt text](image_0.png)
+![InVision Asset Source Files](invision_assets_sourcefiles.png)
 
 ## TDS component library
 
@@ -74,49 +74,64 @@ The TDS Master Sketch file is a document that will help you get started with you
 
 <table>
   <tr>
-    <td></td>
-    <td>Once you’ve gotten access to Invision DSM and have installed the Craft Manager, you should see the Craft logo at the top of your taskbar on your computer. (Make sure you’re on the latest version of Craft Manager)
-Once selected, you should see a dropdown window with a list of all your Craft Sketch tools.
-
-Note: We have a sneak preview of DSM as it’s in beta and not public, so the following steps must be done before using the tool. </td>
+    <td><img src="craftmanager1.png" /></td>
+    <td>
+      <ol>
+        <li>Once you’ve gotten access to Invision DSM and have installed the Craft Manager, you should see the Craft logo at the top of your taskbar on your computer. (Make sure you’re on the latest version of Craft Manager)</li>
+        <li>Once selected, you should see a dropdown window with a list of all your Craft Sketch tools.</li>
+      </ol>
+      <br>
+      <strong>Note</strong>: We have a sneak preview of DSM as it’s in beta and not public, so the following steps must be done before using the tool.
+    </td>
   </tr>
   <tr>
-    <td></td>
-    <td>While the dropdown window is open, hold down: ⌘ + Shift + b
-You will get the Craft Beta screen. Enter the code: dsm-preview and hit the Activate code button
-Follow the instructions and fill in your information and hit the Activate code button again.</td>
+    <td><img src="craftmanager2.png" /></td>
+    <td>
+      <ol>
+        <li>While the dropdown window is open, hold down: ⌘ + Shift + b</li>
+        <li>You will get the Craft Beta screen. Enter the code: dsm-preview and hit the Activate code button</li>
+        <li>Follow the instructions and fill in your information and hit the Activate code button again.</li>
+      </ol>
+    </td>
   </tr>
   <tr>
-    <td></td>
+    <td><img src="craftmanager3.png" /></td>
     <td>Once you’re back in Craft Manager go to the bottom of the window and select ‘Design System Manager in the Environment bar.</td>
   </tr>
   <tr>
-    <td></td>
+    <td><img src="craftmanager4.png" /></td>
     <td>Install the Craft Tools for Sketch 3+</td>
   </tr>
   <tr>
-    <td></td>
-    <td>Once installed, you should see all the other Sketch tools along with Design System Manager.
-Restart Sketch to see the Design System Manager tool in Sketch.</td>
+    <td><img src="craftmanager5.png" /></td>
+    <td>
+      <ol>
+        <li>Once installed, you should see all the other Sketch tools along with Design System Manager</li>
+        <li>Restart Sketch to see the Design System Manager tool in Sketch</li>
+      </ol>
+    </td>
   </tr>
   <tr>
-    <td></td>
-    <td>Select the DSM icon at the bottom of your Craft Manager icon tool kit.
-You will see a window asking you to log into your InVision account.
-Select ‘Enterprise sign in’ and sign into your Invision account.
+    <td><img src="craftmanager6.png" /></td>
+    <td>
+      <ol>
+        <li>Select the DSM icon at the bottom of your Craft Manager icon tool kit</li>
+        <li>You will see a window asking you to log into your InVision account</li>
+        <li>Select ‘Enterprise sign in’ and sign into your Invision account</li>
+      </ol>
 
-Note: It’s important that you sign in using the ‘Enterprise sign in’ link. Otherwise you will be creating your own library on your personal account.</td>
+<br><strong>Note</strong>: It’s important that you sign in using the ‘Enterprise sign in’ link. Otherwise you will be creating your own library on your personal account.</td>
   </tr>
   <tr>
-    <td></td>
+    <td><img src="craftmanager7.png" /></td>
     <td>Enter "telus.invisionapp.com" as the enterprise domain and hit ‘Continue’</td>
   </tr>
   <tr>
-    <td></td>
+    <td><img src="craftmanager8.png" /></td>
     <td>Sign into your InVision account.</td>
   </tr>
   <tr>
-    <td></td>
+    <td><img src="craftmanager9.png" /></td>
     <td>All of the libraries you’re invited to should now appear in a new window.</td>
   </tr>
 </table>
