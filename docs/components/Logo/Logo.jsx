@@ -7,11 +7,11 @@ import Text from '../../../src/components/Typography/Text/Text'
 
 const Logo = () => (
   <div>
-    <a href="/" title="TELUS Design System">
+    <a href="#styleguidist-top" title="TELUS Design System">
       <img src={logo} alt="TELUS Logo" />
     </a>
 
-    <Text>TDS v{version}</Text>
+    <Text size="small">TDS v{version}</Text>
   </div>
 )
 

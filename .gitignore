@@ -17,7 +17,6 @@ coverage
 
 # TDS build artifacts
 dist
-styleguide
 guide/components/
 _book
 build

@@ -282,6 +282,7 @@ module.exports = {
   styleguideDir: getStyleguideDir(),
   require: [path.resolve('src/scss/global.scss'), path.resolve('docs/scss/styleguide.scss')],
   styleguideComponents: {
+    StyleGuideRenderer: path.resolve('docs/components/StyleGuide/StyleGuideRenderer'),
     Logo: path.resolve('docs/components/Logo/Logo'),
     Markdown: path.resolve('docs/components/Markdown/Markdown'),
     SectionHeadingRenderer: path.resolve('docs/components/SectionHeading/SectionHeadingRenderer'),
