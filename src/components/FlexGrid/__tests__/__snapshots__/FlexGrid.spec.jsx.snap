@@ -2,21 +2,17 @@
 
 exports[`FlexGrid renders 1`] = `
 <div
-  class="container-fluid"
+  class="flexGrid container-fluid"
 >
   <div
-    class="row"
+    class="col-xs col-xs-offset column"
   >
-    <div
-      class="col-xs col-xs-offset"
-    >
-      1st column content
-    </div>
-    <div
-      class="col-xs col-xs-offset"
-    >
-      2nd column content
-    </div>
+    1st column content
+  </div>
+  <div
+    class="col-xs col-xs-offset column"
+  >
+    2nd column content
   </div>
 </div>
 `;

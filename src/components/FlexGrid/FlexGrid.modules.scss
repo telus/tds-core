@@ -3,6 +3,16 @@
 
 $max-widths: (xs: auto, small: 544px, medium: 736px, large: 960px, xl: 1168px);
 
+.flexGrid {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+}
+
+.centre {
+  margin: 0 auto;
+}
+
 /*
   Possible alternatives to responsive CSS
   1) use mutiple 'react-media' queries when it becomes available
@@ -10,7 +20,7 @@ $max-widths: (xs: auto, small: 544px, medium: 736px, large: 960px, xl: 1168px);
   2) use multiple Responsive components nested in React 16.2 fragments once all teams
   adopt it https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html
 */
-.limitedWidth {
+.limitWidth {
   @each $viewport, $max-width in $max-widths {
     @include from-breakpoint($viewport) {
       max-width: $max-width;
@@ -19,9 +29,19 @@ $max-widths: (xs: auto, small: 544px, medium: 736px, large: 960px, xl: 1168px);
 }
 
 .gutterless {
-  padding: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-.centre {
-  margin: 0 auto;
+.around {
+  justify-content: space-around;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.column {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

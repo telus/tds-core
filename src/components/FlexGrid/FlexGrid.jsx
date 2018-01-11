@@ -3,26 +3,27 @@ import PropTypes from 'prop-types'
 import { Broadcast } from 'react-broadcast'
 import { Grid } from 'react-flexbox-grid'
 
+import Col from './Col'
+
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import styles from './FlexGrid.modules.scss'
 
-import Col from './Col'
-import Row from './Row'
-
-const getClasses = (centre, limitedWidth, gutterless) =>
-  joinClassNames(
-    centre && styles.centre,
-    limitedWidth && styles.limitedWidth,
-    gutterless && styles.gutterless
-  )
-
-const FlexGrid = ({ centre, limitedWidth, gutter, children, ...rest }) => {
+const FlexGrid = ({ centre, limitWidth, gutter, around, between, children, ...rest }) => {
   const gutterStyle = gutter ? undefined : styles.gutterless
+
+  const getClasses = () =>
+    joinClassNames(
+      styles.flexGrid,
+      centre && styles.centre,
+      limitWidth && styles.limitWidth,
+      around && styles.around,
+      between && styles.between
+    )
 
   return (
     <Broadcast channel="flex-grid" value={gutterStyle}>
-      <Grid {...safeRest(rest)} fluid className={getClasses(centre, limitedWidth, !gutter)}>
+      <Grid {...safeRest(rest)} fluid className={getClasses()}>
         {children}
       </Grid>
     </Broadcast>
@@ -31,19 +32,21 @@ const FlexGrid = ({ centre, limitedWidth, gutter, children, ...rest }) => {
 
 FlexGrid.propTypes = {
   /**
-   * Centres the grid horizontally. This is useful when using `limitedWidth`.
+   * Centres the grid horizontally. This is useful when using `limitWidth`.
    */
   centre: PropTypes.bool,
   /**
    * Whether or not to give the grid a fixed width.
    */
-  limitedWidth: PropTypes.bool,
+  limitWidth: PropTypes.bool,
   /**
    * Whether or not to include gutters in between columns.
    */
   gutter: PropTypes.bool,
+  around: PropTypes.bool,
+  between: PropTypes.bool,
   /**
-   * The rows of the Grid. Will typically be `FlexGrid.Row` components, but could be other components such as a
+   * The children of the Grid. Will typically be `FlexGrid.Col` components, but could be other components such as a
    * `Responsive` wrapper.
    */
   children: PropTypes.node.isRequired,
@@ -51,11 +54,12 @@ FlexGrid.propTypes = {
 
 FlexGrid.defaultProps = {
   centre: undefined,
-  limitedWidth: undefined,
+  limitWidth: undefined,
   gutter: true,
+  around: undefined,
+  between: undefined,
 }
 
-FlexGrid.Row = Row
 FlexGrid.Col = Col
 
 export default FlexGrid

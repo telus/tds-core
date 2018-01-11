@@ -2,10 +2,11 @@
 
 exports[`Col renders 1`] = `
 <Col
+  className="column"
   xs={true}
 >
   <div
-    className="col-xs col-xs-offset"
+    className="col-xs col-xs-offset column"
   >
     Some content
   </div>

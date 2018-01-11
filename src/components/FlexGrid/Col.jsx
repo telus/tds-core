@@ -4,7 +4,9 @@ import { Subscriber } from 'react-broadcast'
 
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 
+import joinClassNames from '../../utils/joinClassNames'
 import safeRest from '../../utils/safeRest'
+import styles from './FlexGrid.modules.scss'
 
 const removeProps = ({
   xs,
@@ -27,7 +29,7 @@ const Col = ({ span, offset, children, ...rest }) => (
         {...removeProps(rest)}
         xs={span || true}
         xsOffset={offset}
-        className={gutterStyle}
+        className={joinClassNames(gutterStyle, styles.column)}
       >
         {children}
       </ReactFlexboxGridCol>
