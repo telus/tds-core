@@ -38,7 +38,7 @@ Visit our Github wiki for a more [detailed list of plugins](https://github.com/t
 
 ## Setting up Invision
 
-From design to prototyping to collaborating on the designs, the TELUS Design team uses Invision suite of app to help with our design workflow. You can use InVision to share your prototypes and Craft Sync to sync up your designs.
+From design to prototyping to collaborating on the designs, the TELUS Design team uses the Invision platform to help with their design workflow. You can use InVision to share your prototypes and Craft Sync to sync up your designs.
 
 During your initial onboarding to the design team, you would have gotten an invitation sent to your TELUS email to set up an account to [TELUS Invision Enterprise](https://projects.invisionapp.com/d/login). If you haven’t please contact your design lead, or your InVision administrator ([@brianlam1](mailto:brian.lam1@telus.com)) to add you to the project.
 
