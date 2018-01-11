@@ -18,7 +18,7 @@ For vendors or designers outside of TELUS Digital, you can purchase and [downloa
 
 ### Sketch Plugins
 
-There are a variety of plugins available for Sketch. Here is a short list of plugins that will be useful in viewing the TDS master Sketch file and the DSM component library:
+There are a variety of plugins available for Sketch. Here is a short list of plugins that will be useful in viewing the TDS master Sketch file and the Design System Manager (DSM) component library:
 
 #### Required
 
@@ -38,15 +38,15 @@ Visit our Github wiki for a more [detailed list of plugins](https://github.com/t
 
 ## Setting up Invision
 
-From design to prototyping to collaborating on the designs, the TELUS Design team uses Invision suite of app to help with our design workflow. You can use InVision to share your prototypes and Craft Sync to sync up your designs.
+From design to prototyping, the TELUS Design team uses Invision suite of apps to help with our design workflow and to assist with collaboration. You can use InVision to share your prototypes and Craft Sync to sync up your designs.
 
-During your initial onboarding to the design team, you would have gotten an invitation sent to your TELUS email to set up an account to [TELUS Invision Enterprise](https://projects.invisionapp.com/d/login). If you haven’t please contact your design lead, or your InVision administrator ([@brianlam1](mailto:brian.lam1@telus.com)) to add you to the project.
+During your initial onboarding to the design team, you should have gotten an invitation sent to your TELUS email to set up a [TELUS Invision Enterprise](https://projects.invisionapp.com/d/login) account. If you haven’t please contact your design lead, or your InVision administrator ([@brianlam1](mailto:brian.lam1@telus.com)) to add you to the project.
 
 TDS has two projects set up on Invision:
 
 1. [TDS_blocks](https://telus.invisionapp.com/share/PCEVXUFT9) (not yet coded): Inspirational blocks that use TDS components/symbols that can be used in your Sketch file. These blocks live in the master Sketch file as designs and some of the blocks have been coded and can be found in SiteBuilder.
 
-2. [TDS_components](https://telus.invisionapp.com/share/5BE5MX08E)): Library of all the components that can be found in TDS.
+2. [TDS_components](https://telus.invisionapp.com/share/5BE5MX08E): Library of all the components that can be found in TDS.
 
 These are both working projects that continue to get updated, and improved on as we add components and blocks to the system. 
 
@@ -66,7 +66,7 @@ The TDS Master Sketch file is a document that will help you get started with you
 
 ### What you’ll need:
 
-1. **Invision DSM** (Design Systems Manager): You would have gotten access to DSM if you already have access to TELUS Invision Enterprise. If not, please contact your Invision administrator ([@BrianLam1](mailto:Brian.Lam1@telus.com)) or your design lead so they can add you to DSM and Invision Enterprise.
+1. **Invision DSM** (Design Systems Manager): You should have access to DSM if you have access to TELUS Invision Enterprise. If not, please contact your Invision administrator ([@BrianLam1](mailto:Brian.Lam1@telus.com)) or your design lead so they can add you to DSM and Invision Enterprise.
 
 2. **Craft Manager** is a suite of Sketch tools by Invision that helps with your workflow. [Download and install the plugin](https://www.invisionapp.com/craft) before continuing to the next section.
 
@@ -162,3 +162,7 @@ Please follow the [TELUS Brand Photography Guidelines](https://drive.google.com/
 # Releases
 
 The TELUS Design System team often makes improvements to the TDS component library and Master Sketch file. We track all release updates in our version page in the Master Sketch file and [change log on Github](https://github.com/telusdigital/tds/releases), so check back frequently for updates to the system.
+
+# Support
+
+Please take the time to join our [#TDS-Guild Slack channel](https://telusdigital.slack.com/messages/C2WK9TP5F). It's the perfect place for general discussions, announcements, and design questions related to TDS. For further help please see our [Support Page](/contact.html)
