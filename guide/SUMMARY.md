@@ -5,18 +5,13 @@
   * [Designers](/getting-started/designers.md)
   * [Developers](/getting-started/developers.md)
   * [FAQ](/getting-started/faq.md)
+* [Components](ref://components/index.html)
 * [Contributing](/contributing/contributing.md)
   * [How to contribute](/contributing/contributing.md#how-to)
   * [Designer guide](/contributing/designer-guide.md)
   * [Developer guide](/contributing/developer-guide.md)
   * [Codebase overview](codebase-overview.md)
 * [Roadmap](/roadmap.md)
-
-## Assets
-
-* [Components styleguide](ref://components/index.html)
-* [npm package](https://www.npmjs.com/package/@telusdigital/tds)
-* [Download the Sketch file](https://github.com/telusdigital/tds/releases/latest)
 
 ## Design principles &amp; guidelines
 
@@ -34,8 +29,12 @@
 * [Motion](/design/motion.md)
 * [Depth](/design/depth.md)
 
+## Assets
+* [Download the Sketch file](https://github.com/telusdigital/tds/releases/latest)
+
 ## Support &amp; links
 
 * [Contact us](/contact.md)
 * [Report an issue](https://github.com/telusdigital/tds/issues)
 * [TDS on GitHub](https://github.com/telusdigital/tds)
+* [npm package](https://www.npmjs.com/package/@telusdigital/tds)
