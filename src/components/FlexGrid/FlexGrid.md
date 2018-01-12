@@ -12,7 +12,7 @@ in conjunction with the [FlexGrid.Col](#col) component.
 </FlexGrid>
 ```
 
-### Responsive example
+### Responsive grid
 
 ```jsx
 <Responsive minWidth="sm">
