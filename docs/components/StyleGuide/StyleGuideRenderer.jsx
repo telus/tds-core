@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Logo from '../Logo/Logo.jsx'
-import Markdown from '../Markdown/Markdown.js'
-import Styled from 'rsg-components/Styled'
+import Styled from 'react-styleguidist/lib/rsg-components/Styled'
 import cx from 'classnames'
+import Logo from '../Logo/Logo'
+import Markdown from '../Markdown/Markdown'
 
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
   root: {
@@ -57,7 +57,7 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
 export function StyleGuideRenderer({ classes, title, homepageUrl, children, toc, hasSidebar }) {
   return (
     <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
-      <a id="styleguidist-top" />
+      <a id="styleguidist-top">&nbsp;</a>
       <main className={classes.content}>
         {children}
         <footer className={classes.footer}>
@@ -83,6 +83,10 @@ StyleGuideRenderer.propTypes = {
   children: PropTypes.node.isRequired,
   toc: PropTypes.node.isRequired,
   hasSidebar: PropTypes.bool,
+}
+
+StyleGuideRenderer.defaultProps = {
+  hasSidebar: undefined,
 }
 
 export default Styled(styles)(StyleGuideRenderer)
