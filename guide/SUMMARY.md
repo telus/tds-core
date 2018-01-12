@@ -5,6 +5,7 @@
   * [Designers](/getting-started/designers.md)
   * [Developers](/getting-started/developers.md)
   * [FAQ](/getting-started/faq.md)
+* [Upgrading from 0.x.y](/upgrading/upgrading.md)
 * [Components](ref://components/index.html)
 * [Contributing](/contributing/contributing.md)
   * [How to contribute](/contributing/contributing.md#how-to)
