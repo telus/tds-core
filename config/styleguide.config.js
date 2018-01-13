@@ -243,7 +243,6 @@ module.exports = {
             return [
               path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx'),
               path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx'),
-              path.resolve('src/old-components/Icon/Icon.jsx'),
             ]
           },
         },
