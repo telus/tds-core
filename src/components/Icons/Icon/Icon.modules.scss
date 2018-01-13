@@ -1,39 +1,6 @@
 @import '../../../scss/settings/colours';
 
-// Unicode points of each icon's location within the font files.
-$core-icon-codepoints: (
-  alert: '\f103',
-  caret-down: '\f105',
-  caret-up: '\f106',
-  checkmark: '\f101',
-  chevron: '\f107',
-  close: '\f104',
-  dash: '\f109',
-  exclamation-point-circle: '\f103',
-  expander: '\f113',
-  hamburger: '\f112',
-  help: '\f102',
-  incomplete: '\f104',
-  location: '\f110',
-  minus: '\f109',
-  plus: '\f108',
-  question-mark-circle: '\f102',
-  spyglass: '\f111',
-  times: '\f104'
-);
-
-// Get the unicode point for a given icon name
-@function core-icon-codepoint($name) {
-  @return map-get($core-icon-codepoints, $name);
-}
-
 @mixin core-icon($name: null) {
-  @if $name {
-    &::before {
-      content: core-icon-codepoint($name);
-    }
-  }
-
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
