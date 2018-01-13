@@ -106,10 +106,6 @@ module.exports = {
           content: path.resolve('docs/elements/lists-deprecated.md'),
         },
         {
-          name: 'Utility icons',
-          content: path.resolve('docs/elements/utility-icons-deprecated.md'),
-        },
-        {
           name: 'Utility mixins',
           content: path.resolve('docs/elements/utility-mixins.md'),
         },

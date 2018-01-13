@@ -1,6 +1,29 @@
 @import '../../scss/settings/variables';
 @import '../../scss/utility/mixins';
 
+.icon {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transition: color 0.1s linear;
+}
+
+.icon-core-caret-up::before {
+  content: '\f106';
+}
+
+.icon-core-caret-down::before {
+  content: '\f105';
+}
+
 .selector-counter {
   position: relative;
   display: inline-block;
