@@ -94,16 +94,8 @@ module.exports = {
           content: path.resolve('docs/elements/colours.md'),
         },
         {
-          name: 'Forms',
-          content: path.resolve('docs/elements/forms-with-deprecated-input-checkbox-radio.md'),
-        },
-        {
           name: 'Grid',
           content: path.resolve('docs/elements/grid-deprecated.md'),
-        },
-        {
-          name: 'Lists',
-          content: path.resolve('docs/elements/lists-deprecated.md'),
         },
         {
           name: 'Utility mixins',

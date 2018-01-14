@@ -116,3 +116,22 @@ input.selector-counter__value.selector-counter__value {
     border-color: $color-primary;
   }
 }
+
+.field .selector-counter__value {
+  margin-bottom: 18px;
+}
+
+.selector-counter__value {
+  border: 1px solid $color-shuttle-grey;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+  color: $color-shark;
+  font-family: $font-telus;
+  font-size: rem($body-text-size);
+  letter-spacing: 0.4px;
+  line-height: 1.4;
+  outline: 0;
+  padding: 11px;
+  width: 100%;
+  transition: background-color 0.1s linear;
+}
