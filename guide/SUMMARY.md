@@ -4,9 +4,8 @@
 * [Getting Started](/getting-started/getting-started.md)
   * [Designers](/getting-started/designers.md)
   * [Developers](/getting-started/developers.md)
-  * [FAQ](/getting-started/faq.md)
-* [Upgrading from 0.x.y](/upgrading/upgrading.md)
 * [Components](ref://components/index.html)
+* [Upgrading from 0.x.y](/upgrading/upgrading.md)
 * [Contributing](/contributing/contributing.md)
   * [How to contribute](/contributing/contributing.md#how-to)
   * [Designer guide](/contributing/designer-guide.md)
@@ -36,6 +35,7 @@
 ## Support &amp; links
 
 * [Contact us](/contact.md)
+* [FAQs](/getting-started/faq.md)
 * [Report an issue](https://github.com/telusdigital/tds/issues)
 * [TDS on GitHub](https://github.com/telusdigital/tds)
 * [npm package](https://www.npmjs.com/package/@telusdigital/tds)
