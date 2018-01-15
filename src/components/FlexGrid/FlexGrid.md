@@ -3,7 +3,7 @@ The `FlexGrid` component is a wrapper over [react-flexbox-grid](https://github.c
 ### Basic usage
 
 FlexGrid is handy for basic grid layouts or 1-dimensional positioning. It is used
-in conjunction with the [FlexGrid.Col](#col) component.
+in conjunction with the [FlexGrid.Row](#row) and [FlexGrid.Col](#col) components.
 
 ```jsx
 <FlexGrid>

@@ -4,22 +4,17 @@ import { Broadcast } from 'react-broadcast'
 import { Grid } from 'react-flexbox-grid'
 
 import Col from './Col'
+import Row from './Row'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import styles from './FlexGrid.modules.scss'
 
-const FlexGrid = ({ centre, limitWidth, gutter, around, between, children, ...rest }) => {
+const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {
   const gutterStyle = gutter ? undefined : styles.gutterless
 
   const getClasses = () =>
-    joinClassNames(
-      styles.flexGrid,
-      centre && styles.centre,
-      limitWidth && styles.limitWidth,
-      around && styles.around,
-      between && styles.between
-    )
+    joinClassNames(styles.flexGrid, centre && styles.centre, limitWidth && styles.limitWidth)
 
   return (
     <Broadcast channel="flex-grid" value={gutterStyle}>
@@ -43,11 +38,9 @@ FlexGrid.propTypes = {
    * Whether or not to include gutters in between columns.
    */
   gutter: PropTypes.bool,
-  around: PropTypes.bool,
-  between: PropTypes.bool,
   /**
-   * The children of the Grid. Will typically be `FlexGrid.Col` components, but could be other components such as a
-   * `Responsive` wrapper.
+   * The rows or columns of the Grid. Will typically be `FlexGrid.Row` or `FlexGrid.Col` components,
+   * but could be other components such as a `Responsive` wrapper.
    */
   children: PropTypes.node.isRequired,
 }
@@ -56,10 +49,9 @@ FlexGrid.defaultProps = {
   centre: undefined,
   limitWidth: undefined,
   gutter: true,
-  around: undefined,
-  between: undefined,
 }
 
+FlexGrid.Row = Row
 FlexGrid.Col = Col
 
 export default FlexGrid

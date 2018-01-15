@@ -5,14 +5,18 @@ exports[`FlexGrid renders 1`] = `
   class="flexGrid container-fluid"
 >
   <div
-    class="col-xs col-xs-offset column"
+    class="flexGridRow row"
   >
-    1st column content
-  </div>
-  <div
-    class="col-xs col-xs-offset column"
-  >
-    2nd column content
+    <div
+      class="col-xs col-xs-offset flexGridColumn"
+    >
+      1st column content
+    </div>
+    <div
+      class="col-xs col-xs-offset flexGridColumn"
+    >
+      2nd column content
+    </div>
   </div>
 </div>
 `;

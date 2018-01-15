@@ -10,22 +10,27 @@ describe('FlexGrid', () => {
   const doMount = (props = {}) => {
     const flexGrid = mount(
       <FlexGrid {...props}>
-        <FlexGrid.Col id="col-1">1st column content</FlexGrid.Col>
-        <FlexGrid.Col id="col-2">2nd column content</FlexGrid.Col>
+        <FlexGrid.Row id="row-1">
+          <FlexGrid.Col id="col-1">1st column content</FlexGrid.Col>
+          <FlexGrid.Col id="col-2">2nd column content</FlexGrid.Col>
+        </FlexGrid.Row>
       </FlexGrid>
     )
 
     return {
       flexGrid: flexGrid.find(Grid),
       findColumn: index => flexGrid.find(`div#col-${index}`),
+      findRow: index => flexGrid.find(`div#row-${index}`),
     }
   }
 
   it('renders', () => {
     const flexGrid = render(
       <FlexGrid>
-        <FlexGrid.Col>1st column content</FlexGrid.Col>
-        <FlexGrid.Col>2nd column content</FlexGrid.Col>
+        <FlexGrid.Row>
+          <FlexGrid.Col>1st column content</FlexGrid.Col>
+          <FlexGrid.Col>2nd column content</FlexGrid.Col>
+        </FlexGrid.Row>
       </FlexGrid>
     )
 
@@ -45,25 +50,15 @@ describe('FlexGrid', () => {
   })
 
   it('should render all children related to Grid with no gutter', () => {
-    const { findColumn } = doMount({ gutter: false })
+    const { findColumn, findRow } = doMount({ gutter: false })
 
     const col1 = findColumn(1)
     const col2 = findColumn(2)
+    const row = findRow(1)
 
     expect(col1).toHaveClassName('gutterless')
     expect(col2).toHaveClassName('gutterless')
-  })
-
-  it('can add space between columns', () => {
-    const { flexGrid } = doMount({ between: true })
-
-    expect(flexGrid).toHaveClassName('between')
-  })
-
-  it('can add space around columns', () => {
-    const { flexGrid } = doMount({ around: true })
-
-    expect(flexGrid).toHaveClassName('around')
+    expect(row).toHaveClassName('gutterless')
   })
 
   it('passes additional attributes to the element', () => {

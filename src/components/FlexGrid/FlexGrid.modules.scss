@@ -33,15 +33,13 @@ $max-widths: (xs: auto, small: 544px, medium: 736px, large: 960px, xl: 1168px);
   padding-right: 0 !important;
 }
 
-.around {
-  justify-content: space-around;
-}
-
-.between {
-  justify-content: space-between;
-}
-
-.column {
+.flexGridColumn {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+// Row styles
+.flexGridRow {
+  margin: 0;
+  flex: 1 1 auto;
 }

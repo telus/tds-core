@@ -29,7 +29,7 @@ const Col = ({ span, offset, children, ...rest }) => (
         {...removeProps(rest)}
         xs={span || true}
         xsOffset={offset}
-        className={joinClassNames(gutterStyle, styles.column)}
+        className={joinClassNames(gutterStyle, styles.flexGridColumn)}
       >
         {children}
       </ReactFlexboxGridCol>

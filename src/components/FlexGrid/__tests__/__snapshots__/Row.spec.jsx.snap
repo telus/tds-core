@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row renders 1`] = `
+<Row
+  className="flexGridRow"
+>
+  <div
+    className="flexGridRow row"
+  >
+    Some content
+  </div>
+</Row>
+`;
