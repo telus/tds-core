@@ -1,7 +1,7 @@
 @import '../../scss/settings/responsive-grid';
 @import '../../scss/utility/responsive';
 
-$max-widths: (xs: auto, small: 544px, medium: 736px, large: 960px, xl: 1168px);
+$max-widths: (xs: auto, small: 576px, medium: 768px, large: 992px, xl: 1200px);
 
 .flexGrid {
   display: flex;
