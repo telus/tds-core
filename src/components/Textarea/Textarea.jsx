@@ -10,7 +10,7 @@ import FeedbackIcon from '../FormField/FeedbackIcon'
 
 import addRightPadding from '../FormField/addRightPadding'
 
-import styles from './Textarea.modules.scss'
+import styles from './TextArea.modules.scss'
 import positionStyles from '../Position.modules.scss'
 
 /**

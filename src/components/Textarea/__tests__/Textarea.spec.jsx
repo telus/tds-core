@@ -6,30 +6,30 @@ import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../Animation/Fade'
-import Textarea from '../Textarea'
+import TextArea from '../TextArea'
 import InputFeedback from '../../InputFeedback/InputFeedback'
 
-describe('Textarea', () => {
+describe('TextArea', () => {
   const defaultProps = {
     label: 'The textarea',
   }
 
-  const doRender = (overrides = {}) => render(<Textarea {...defaultProps} {...overrides} />)
+  const doRender = (overrides = {}) => render(<TextArea {...defaultProps} {...overrides} />)
 
   const doMount = (overrides = {}) => {
-    const textarea = mount(<Textarea {...defaultProps} {...overrides} />)
+    const textarea = mount(<TextArea {...defaultProps} {...overrides} />)
 
-    const findTextareaElement = () => textarea.find('textarea')
+    const findTextAreaElement = () => textarea.find('textarea')
 
     return {
       textarea,
       label: textarea.find('label'),
-      findTextareaElement,
+      findTextAreaElement,
       findFeedbackIconFade: () => textarea.find(Fade),
       findHelper: () => textarea.find(InputFeedback),
-      changeValueTo: value => findTextareaElement().simulate('change', { target: { value } }),
-      focus: (focusEvent = {}) => findTextareaElement().simulate('focus', focusEvent),
-      blur: (blurEvent = {}) => findTextareaElement().simulate('blur', blurEvent),
+      changeValueTo: value => findTextAreaElement().simulate('change', { target: { value } }),
+      focus: (focusEvent = {}) => findTextAreaElement().simulate('focus', focusEvent),
+      blur: (blurEvent = {}) => findTextAreaElement().simulate('blur', blurEvent),
     }
   }
 
@@ -65,84 +65,84 @@ describe('Textarea', () => {
 
   describe('connecting the label to the textarea', () => {
     it('connects the label to the textarea', () => {
-      const { label, findTextareaElement } = doMount()
+      const { label, findTextAreaElement } = doMount()
 
-      expect(label.prop('htmlFor')).toEqual(findTextareaElement().prop('id'))
+      expect(label.prop('htmlFor')).toEqual(findTextAreaElement().prop('id'))
     })
 
     it('uses the id when provided', () => {
-      const { label, findTextareaElement } = doMount({
+      const { label, findTextAreaElement } = doMount({
         id: 'the-id',
         name: 'the-name',
         label: 'The label',
       })
 
       expect(label).toHaveProp('htmlFor', 'the-id')
-      expect(findTextareaElement()).toHaveProp('id', 'the-id')
+      expect(findTextAreaElement()).toHaveProp('id', 'the-id')
     })
 
     it('uses the name when no id is provided', () => {
-      const { label, findTextareaElement } = doMount({ name: 'the-name', label: 'The label' })
+      const { label, findTextAreaElement } = doMount({ name: 'the-name', label: 'The label' })
 
       expect(label).toHaveProp('htmlFor', 'the-name')
-      expect(findTextareaElement()).toHaveProp('id', 'the-name')
+      expect(findTextAreaElement()).toHaveProp('id', 'the-name')
     })
 
     it('generates an id from the label when no id or name is provided', () => {
-      const { label, findTextareaElement } = doMount({ label: 'The label' })
+      const { label, findTextAreaElement } = doMount({ label: 'The label' })
 
       expect(label).toHaveProp('htmlFor', 'the-label')
-      expect(findTextareaElement()).toHaveProp('id', 'the-label')
+      expect(findTextAreaElement()).toHaveProp('id', 'the-label')
     })
   })
 
   describe('editability', () => {
     it('supports string values or number values', () => {
-      let findTextareaElement = doMount().findTextareaElement
-      expect(findTextareaElement()).toHaveValue('')
+      let findTextAreaElement = doMount().findTextAreaElement
+      expect(findTextAreaElement()).toHaveValue('')
 
-      findTextareaElement = doMount({ value: 'some value' }).findTextareaElement
-      expect(findTextareaElement()).toHaveValue('some value')
+      findTextAreaElement = doMount({ value: 'some value' }).findTextAreaElement
+      expect(findTextAreaElement()).toHaveValue('some value')
     })
 
     it('has a value that can be changed', () => {
-      const { changeValueTo, findTextareaElement } = doMount({ value: 'initial value' })
+      const { changeValueTo, findTextAreaElement } = doMount({ value: 'initial value' })
       changeValueTo('new value')
 
-      expect(findTextareaElement()).toHaveValue('new value')
+      expect(findTextAreaElement()).toHaveValue('new value')
     })
 
     it('will notify when its value changes', () => {
       const onChangeMock = jest.fn()
 
-      const { changeValueTo, findTextareaElement } = doMount({ onChange: onChangeMock })
+      const { changeValueTo, findTextAreaElement } = doMount({ onChange: onChangeMock })
       changeValueTo('new value')
 
       expect(onChangeMock).toHaveBeenCalledWith(
         expect.objectContaining({ target: { value: 'new value' } })
       )
-      expect(findTextareaElement()).toHaveValue('new value')
+      expect(findTextAreaElement()).toHaveValue('new value')
     })
 
     it('can receive a new value from a parent component', () => {
-      const { textarea, findTextareaElement } = doMount({ value: 'initial value' })
+      const { textarea, findTextAreaElement } = doMount({ value: 'initial value' })
 
       textarea.setProps({ value: 'new value' })
 
-      expect(findTextareaElement()).toHaveValue('new value')
+      expect(findTextAreaElement()).toHaveValue('new value')
     })
   })
 
   describe('focusing', () => {
     it('can be focused', () => {
-      const { findTextareaElement, focus, blur } = doMount()
-      expect(findTextareaElement()).toHaveClassName('default')
+      const { findTextAreaElement, focus, blur } = doMount()
+      expect(findTextAreaElement()).toHaveClassName('default')
 
       focus()
-      expect(findTextareaElement()).toHaveClassName('focus')
+      expect(findTextAreaElement()).toHaveClassName('focus')
 
       blur()
-      expect(findTextareaElement()).not.toHaveClassName('focus')
+      expect(findTextAreaElement()).not.toHaveClassName('focus')
     })
 
     it('will notify when focus is gained', () => {
@@ -168,9 +168,9 @@ describe('Textarea', () => {
 
   describe('feedback states', () => {
     it('can have a success feedback state', () => {
-      const { findTextareaElement, findFeedbackIconFade } = doMount({ feedback: 'success' })
+      const { findTextAreaElement, findFeedbackIconFade } = doMount({ feedback: 'success' })
 
-      expect(findTextareaElement()).toHaveClassName('success')
+      expect(findTextAreaElement()).toHaveClassName('success')
       expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
           symbol="checkmark"
@@ -182,9 +182,9 @@ describe('Textarea', () => {
     })
 
     it('can have an error feedback state', () => {
-      const { findTextareaElement, findFeedbackIconFade } = doMount({ feedback: 'error' })
+      const { findTextAreaElement, findFeedbackIconFade } = doMount({ feedback: 'error' })
 
-      expect(findTextareaElement()).toHaveClassName('error')
+      expect(findTextAreaElement()).toHaveClassName('error')
       expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
           symbol="exclamationPointCircle"
@@ -196,13 +196,13 @@ describe('Textarea', () => {
     })
 
     it('hides the feedback state while focused', () => {
-      const { findTextareaElement, focus, blur } = doMount({ feedback: 'success' })
+      const { findTextAreaElement, focus, blur } = doMount({ feedback: 'success' })
 
       focus()
-      expect(findTextareaElement()).not.toHaveClassName('success')
+      expect(findTextAreaElement()).not.toHaveClassName('success')
 
       blur()
-      expect(findTextareaElement()).toHaveClassName('success')
+      expect(findTextAreaElement()).toHaveClassName('success')
     })
 
     it('fades the feedback icon in on focus lost and out on focus gained', () => {
@@ -215,27 +215,27 @@ describe('Textarea', () => {
     })
 
     it('ensures that the contents do not overlap the icon', () => {
-      const { findTextareaElement } = doMount({ feedback: 'success' })
+      const { findTextAreaElement } = doMount({ feedback: 'success' })
 
-      expect(findTextareaElement()).toHaveStyle('paddingRight', 'calc(16px + 2rem)')
+      expect(findTextAreaElement()).toHaveStyle('paddingRight', 'calc(16px + 2rem)')
     })
 
     it('does not add any extra padding when there are no icons displayed', () => {
-      const { findTextareaElement } = doMount()
+      const { findTextAreaElement } = doMount()
 
-      expect(findTextareaElement()).toHaveProp('style', undefined)
+      expect(findTextAreaElement()).toHaveProp('style', undefined)
     })
   })
 
   describe('disabling', () => {
     it('can be disabled', () => {
-      let findTextareaElement = doMount().findTextareaElement
-      expect(findTextareaElement()).not.toHaveClassName('disabled')
-      expect(findTextareaElement()).not.toBeDisabled()
+      let findTextAreaElement = doMount().findTextAreaElement
+      expect(findTextAreaElement()).not.toHaveClassName('disabled')
+      expect(findTextAreaElement()).not.toBeDisabled()
 
-      findTextareaElement = doMount({ disabled: true }).findTextareaElement
-      expect(findTextareaElement()).toHaveProp('disabled')
-      expect(findTextareaElement()).toBeDisabled()
+      findTextAreaElement = doMount({ disabled: true }).findTextAreaElement
+      expect(findTextAreaElement()).toHaveProp('disabled')
+      expect(findTextAreaElement()).toBeDisabled()
     })
 
     it('hides any icons', () => {
@@ -302,42 +302,42 @@ describe('Textarea', () => {
 
   describe('accessibility', () => {
     it('marks the textarea as invalid when in the error feedback state', () => {
-      let findTextareaElement = doMount().findTextareaElement
-      expect(findTextareaElement()).toHaveProp('aria-invalid', false)
+      let findTextAreaElement = doMount().findTextAreaElement
+      expect(findTextAreaElement()).toHaveProp('aria-invalid', false)
 
-      findTextareaElement = doMount({ feedback: 'error' }).findTextareaElement
-      expect(findTextareaElement()).toHaveProp('aria-invalid', true)
+      findTextAreaElement = doMount({ feedback: 'error' }).findTextAreaElement
+      expect(findTextAreaElement()).toHaveProp('aria-invalid', true)
     })
 
     it('does not attach aria-describedby to the textarea field when no error or helper is present', () => {
-      const { findTextareaElement } = doMount({ error: undefined, helper: undefined })
+      const { findTextAreaElement } = doMount({ error: undefined, helper: undefined })
 
-      expect(findTextareaElement()).toHaveProp('aria-describedby', undefined)
+      expect(findTextAreaElement()).toHaveProp('aria-describedby', undefined)
     })
 
     it('connects the error message to the textarea field for screen readers', () => {
-      const { findTextareaElement, findHelper } = doMount({
+      const { findTextAreaElement, findHelper } = doMount({
         id: 'some-field-id',
         error: 'An error message',
       })
 
-      expect(findTextareaElement()).toHaveProp('aria-describedby', 'some-field-id_error-message')
+      expect(findTextAreaElement()).toHaveProp('aria-describedby', 'some-field-id_error-message')
       expect(findHelper()).toHaveProp('id', 'some-field-id_error-message')
     })
 
     it('connects a simple helper to the textarea field for screen readers', () => {
       const helper = <Paragraph>Some helper text.</Paragraph>
-      const { findTextareaElement, findHelper } = doMount({ id: 'some-field-id', helper })
+      const { findTextAreaElement, findHelper } = doMount({ id: 'some-field-id', helper })
 
-      expect(findTextareaElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
+      expect(findTextAreaElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
       expect(findHelper()).toHaveProp('id', 'some-field-id_helper')
     })
 
     it('connects a complex helper to the textarea field for screen readers', () => {
       const helper = () => <InputFeedback>Complex helper</InputFeedback>
-      const { textarea, findTextareaElement } = doMount({ id: 'some-field-id', helper })
+      const { textarea, findTextAreaElement } = doMount({ id: 'some-field-id', helper })
 
-      expect(findTextareaElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
+      expect(findTextAreaElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
       expect(textarea).toContainReact(
         <div id="some-field-id_helper">
           <Text size="small">
@@ -349,19 +349,19 @@ describe('Textarea', () => {
   })
 
   it('passes additional attributes to the textarea element', () => {
-    const { findTextareaElement } = doMount({ name: 'a name', placeholder: 'a placeholder' })
+    const { findTextAreaElement } = doMount({ name: 'a name', placeholder: 'a placeholder' })
 
-    expect(findTextareaElement()).toHaveProp('name', 'a name')
-    expect(findTextareaElement()).toHaveProp('placeholder', 'a placeholder')
+    expect(findTextAreaElement()).toHaveProp('name', 'a name')
+    expect(findTextAreaElement()).toHaveProp('placeholder', 'a placeholder')
   })
 
   it('does not allow custom CSS', () => {
-    const { findTextareaElement } = doMount({
+    const { findTextAreaElement } = doMount({
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })
 
-    expect(findTextareaElement()).not.toHaveClassName('my-custom-class')
-    expect(findTextareaElement()).not.toHaveStyle('color', 'hotpink')
+    expect(findTextAreaElement()).not.toHaveClassName('my-custom-class')
+    expect(findTextAreaElement()).not.toHaveStyle('color', 'hotpink')
   })
 })

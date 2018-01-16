@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Textarea renders 1`] = `
+exports[`TextArea renders 1`] = `
 <div
   class="betweenBottomMarginDesktop-2 stack"
 >
@@ -38,7 +38,7 @@ exports[`Textarea renders 1`] = `
 </div>
 `;
 
-exports[`Textarea renders with a feedback state and icon 1`] = `
+exports[`TextArea renders with a feedback state and icon 1`] = `
 <div
   class="betweenBottomMarginDesktop-2 stack"
 >
