@@ -9,19 +9,11 @@ import './SelectorCounter.scss'
  * Choose a number.
  */
 class SelectorCounter extends Component {
-  constructor(props) {
-    super(props)
-
-    this.handleChange = this.handleChange.bind(this)
-    this.handleInput = this.handleInput.bind(this)
-    this.handleIncrement = this.handleIncrement.bind(this)
-    this.handleDecrement = this.handleDecrement.bind(this)
-    this.state = {
-      value: props.defaultValue
-    }
+  state = {
+    value: this.props.defaultValue
   }
 
-  handleChange(value) {
+  handleChange = (value) => {
     this.setState({ value })
 
     if (typeof this.props.onChange === 'function') {
@@ -33,7 +25,7 @@ class SelectorCounter extends Component {
    * Handle the "increment" button
    * @param event
    */
-  handleIncrement(event) {
+  handleIncrement = (event) => {
     event.preventDefault()
     this.handleChange(parseInt(this.state.value, 10) + 1)
   }
@@ -42,7 +34,7 @@ class SelectorCounter extends Component {
    * Handle the "decrement" button
    * @param event
    */
-  handleDecrement(event) {
+  handleDecrement = (event) => {
     event.preventDefault()
     this.handleChange(parseInt(this.state.value, 10) - 1)
   }
@@ -51,7 +43,7 @@ class SelectorCounter extends Component {
    * Handle when the user types in a freeform value
    * @param event
    */
-  handleInput(event) {
+  handleInput = (event) => {
     this.handleChange(event.target.value)
   }
 

@@ -11,12 +11,8 @@ import Panel from '../Panel/Panel'
  * <span class="docs--badge__version">v0.30.0</span>
  */
 class Accordion extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      openPanel: props.open,
-    }
+  state = {
+    openPanel: this.props.open,
   }
 
   componentWillReceiveProps(nextProps) {

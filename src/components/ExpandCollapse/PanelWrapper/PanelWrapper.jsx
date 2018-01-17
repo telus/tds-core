@@ -20,16 +20,12 @@ import styles from './PanelWrapper.modules.scss'
 import displayStyles from '../../Display.modules.scss'
 
 class PanelWrapper extends React.Component {
-  constructor(props) {
-    super(props)
+  contentWrapper = null;
 
-    this.contentWrapper = null
-
-    this.state = {
-      open: props.open,
-      hover: false,
-      contentWrapperHeight: 0,
-    }
+  state = {
+    open: this.props.open,
+    hover: false,
+    contentWrapperHeight: 0,
   }
 
   componentDidMount() {
