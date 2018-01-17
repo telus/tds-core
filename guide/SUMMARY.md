@@ -7,7 +7,6 @@
 * [Components](ref://components/index.html)
 * [Upgrading from 0.x.y](/upgrading/upgrading.md)
 * [Contributing](/contributing/contributing.md)
-  * [How to contribute](/contributing/contributing.md#how-to)
   * [Designer guide](/contributing/designer-guide.md)
   * [Developer guide](/contributing/developer-guide.md)
   * [Codebase overview](codebase-overview.md)

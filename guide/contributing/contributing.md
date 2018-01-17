@@ -28,8 +28,8 @@ If you found a bug or would like to begin a conversation, follow these steps:
 
 * Ensure the issue was not already reported by searching the [issues](https://github.com/telusdigital/tds/issues)
 * If you're unable to find an open issue addressing your concern, either:
-  * [Open a new bug ticket](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
-  * [Open a new feature request](https://github.com/telusdigital/tds/issues/new?template=defect_template.md?template=feature_template.md)
+  * [Report an issue](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
+  * [Suggest a feature](https://github.com/telusdigital/tds/issues/new?template=feature_template.md)
 * Be sure to include a title and clear description, as much relevant information as possible, and - if applicable - a code 
 sample or executable test case demonstrating the expected behaviour that is not occurring
 
@@ -37,14 +37,15 @@ Learn [how to open an issue on GitHub](https://help.github.com/articles/creating
 
 ### 2. Develop a solution
 
-To get started, fork [the repository](https://github.com/telusdigital/tds) and create your branch from master.
+There are different paths to developing a solution depending on your goal:
 
-* **Designers**: follow the [designer guide](/contributing/designer-guide.md) to TODO FINISH THIS SENTENCE.
-* **Developers**: follow the [developer guide](/contributing/developer-guide.md) to set up your environment for TDS development.
-* **Developers**: read the [codebase overview](/codebase-overview.md) to understand the structure of the codebase and 
-the conventions being followed.
-
-Learn [how to fork a repository on Github](https://help.github.com/articles/fork-a-repo/).
+* **Making documentation changes within GitHub**: you can make changes to TDS documentation from GitHub without having
+to write code. You can follow this guide on [how to edit files within GitHub](https://help.github.com/articles/editing-files-in-your-repository/).
+When making commits, be sure to follow the [TELUS commit standards](https://github.com/telusdigital/reference-architecture/blob/master/process/contribution-model.md#commit-template).
+There is no need to create an issue first, you may edit documentation and create a pull request anytime.
+* **Designers producing assets or symbols**: follow the [designer guide](/contributing/designer-guide.md) to TODO FINISH THIS SENTENCE
+* **Developers making changes to components**: follow the [developer guide](/contributing/developer-guide.md) to set up your environment for TDS development and read the [codebase overview](/codebase-overview.md) to understand the structure of the codebase and 
+the conventions being followed
 
 ### 3. Make a pull request {#3-pull-request}
 

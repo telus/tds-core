@@ -8,6 +8,9 @@
 
 ## Set up your environment
 
+To get started, fork [the repository](https://github.com/telusdigital/tds) and create your branch from master.  
+Learn [how to fork a repository on GitHub](https://help.github.com/articles/fork-a-repo/).
+
 After forking TDS, the following steps will get you started:
 
 ```bash
