@@ -15,7 +15,7 @@ The `FlexGrid.Row` component can be optionally used for Column alignment and dis
 ```jsx
 <FlexGrid>
   <FlexGrid.Row horizontalAlign="center" verticalAlign="bottom">
-    <FlexGrid.Col span={3}>Hello</FlexGrid.Col>
+    <FlexGrid.Col span={3}>Hello, have a nice day!</FlexGrid.Col>
     <FlexGrid.Col span={3}>You seem healthy</FlexGrid.Col>
     <FlexGrid.Col span={3}>Take care</FlexGrid.Col>
   </FlexGrid.Row>

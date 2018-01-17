@@ -10,6 +10,9 @@ import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import styles from './FlexGrid.modules.scss'
 
+/**
+ * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.34.0</span>
+ */
 const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {
   const gutterStyle = gutter ? undefined : styles.gutterless
 

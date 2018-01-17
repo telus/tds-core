@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 import cx from 'classnames'
 
 /**
+ * <span class="docs--badge__deprecated">deprecated</span>
+ *
+ * <strong>The grid components are deprecated and should not be used. Use the [FlexGrid](#flexgrid) component instead.</strong>
+ *
  * Establish a 12-column grid layout.
  *
  * _This component must be accessed as a name-spaced component: `Grid.Container`._
@@ -12,7 +16,7 @@ import cx from 'classnames'
 function Container(props) {
   const { className, limitWidth, ...extraProps } = props
   const classes = cx('container', className, {
-    'container--limited-width': limitWidth === true
+    'container--limited-width': limitWidth === true,
   })
 
   return (
@@ -39,11 +43,11 @@ Container.propTypes = {
    *
    * @see See [Grid.Row](#row)
    */
-  children: PropTypes.node // eslint-disable-line react/require-default-props
+  children: PropTypes.node, // eslint-disable-line react/require-default-props
 }
 
 Container.defaultProps = {
-  limitWidth: false
+  limitWidth: false,
 }
 
 export default Container

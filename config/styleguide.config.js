@@ -9,7 +9,7 @@ const getStyleguideDir = () => {
 }
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
-const enabledInStaging = ['FlexGrid']
+const enabledInStaging = []
 
 /* eslint-disable no-unused-vars */
 const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
@@ -99,7 +99,7 @@ module.exports = {
         },
         {
           name: 'Grid',
-          content: path.resolve('docs/elements/grid.md'),
+          content: path.resolve('docs/elements/grid-deprecated.md'),
         },
         {
           name: 'Lists',
@@ -131,7 +131,7 @@ module.exports = {
             ]
           },
           sections: compact([
-            toggleByEnv('FlexGrid', {
+            {
               name: 'FlexGrid',
               components() {
                 return [
@@ -140,7 +140,7 @@ module.exports = {
                   path.resolve('src/components/FlexGrid/Col.jsx'),
                 ]
               },
-            }),
+            },
             {
               name: 'Grid',
               components() {

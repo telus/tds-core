@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
+ * <span class="docs--badge__deprecated">deprecated</span>
+ *
+ * <strong>The grid components are deprecated and should not be used. Use the [FlexGrid](#flexgrid) component instead.</strong>
+ *
  * Align grid content horizontally.
  *
  * _This component can only be used as a child of `Grid.Container`, and must be accessed as a
@@ -33,7 +37,7 @@ Row.propTypes = {
    *
    * @see See [Grid.Column](#column)
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Row

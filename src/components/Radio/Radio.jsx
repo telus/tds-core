@@ -7,7 +7,7 @@ import styles from './Radio.modules.scss'
 
 /**
  *
- * <span class="docs--badge__version">v0.32.0</span>
+ * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.32.0</span>
  */
 const Radio = props => (
   <Choice {...props} type="radio" inputTypeStyles={styles}>

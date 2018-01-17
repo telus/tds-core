@@ -40,10 +40,14 @@ const propTypes = {
   smHiddenUp: PropTypes.bool,
   mdHiddenUp: PropTypes.bool,
   lgHiddenUp: PropTypes.bool,
-  xlHiddenUp: PropTypes.bool
+  xlHiddenUp: PropTypes.bool,
 }
 
 /**
+ * <span class="docs--badge__deprecated">deprecated</span>
+ *
+ * <strong>The grid components are deprecated and should not be used. Use the [FlexGrid](#flexgrid) component instead.</strong>
+ *
  * Align grid content vertically.
  *
  * _This component can only be used as a child of `Grid.Row`, and must be accessed as a
@@ -53,7 +57,7 @@ function Column(props) {
   // Collect any "extra" props, that aren't explicitly consumed.
   const extraProps = {}
 
-  Object.keys(props).forEach((propName) => {
+  Object.keys(props).forEach(propName => {
     if (!propTypes[propName]) {
       extraProps[propName] = props[propName]
     }
@@ -65,10 +69,10 @@ function Column(props) {
     sm: 'small',
     md: 'medium',
     lg: 'large',
-    xl: 'xl'
+    xl: 'xl',
   }
 
-  Object.keys(deviceSizes).forEach((size) => {
+  Object.keys(deviceSizes).forEach(size => {
     const sizeProp = props[size]
     const offsetProp = props[`${size}Offset`]
     const pushProp = props[`${size}Push`]
@@ -171,7 +175,7 @@ Column.propTypes = {
   /**
    * The Column's content. Can be text, any HTML element, or any component.
    */
-  children: PropTypes.node
+  children: PropTypes.node,
 }
 
 export default Column

@@ -1,3 +1,7 @@
+<span class="docs--badge__deprecated">deprecated</span>
+
+<strong>The grid CSS classes are deprecated and should not be used. Use the [FlexGrid](#flexgrid) component instead.</strong>
+
 ## Overview
 
 ---
@@ -82,39 +86,39 @@ The `small-*` grid classes allow you to lay out all twelve columns in a variety 
 	  <div class="grid-row">
       <div class="small-12"><code>.small-12</code></div>
 	  </div>
-  	<div class="grid-row">
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	    <div class="small-1"><code>1</code></div>
-  	</div>
-  	<div class="grid-row">
-  	    <div class="small-2"><code>.small-2</code></div>
-  	    <div class="small-2"><code>.small-2</code></div>
-  	    <div class="small-2"><code>.small-2</code></div>
-  	    <div class="small-2"><code>.small-2</code></div>
-  	    <div class="small-2"><code>.small-2</code></div>
-  	    <div class="small-2"><code>.small-2</code></div>
-  	</div>
-  	<div class="grid-row">
-  	    <div class="small-3"><code>.small-3</code></div>
-  	    <div class="small-3"><code>.small-3</code></div>
-  	    <div class="small-3"><code>.small-3</code></div>
-  	    <div class="small-3"><code>.small-3</code></div>
-  	</div>
-  	<div class="grid-row">
-  	    <div class="small-6"><code>.small-6</code></div>
-  	    <div class="small-3"><code>.small-3</code></div>
-  	    <div class="small-3"><code>.small-3</code></div>
-  	</div>
+	<div class="grid-row">
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	    <div class="small-1"><code>1</code></div>
+	</div>
+	<div class="grid-row">
+	    <div class="small-2"><code>.small-2</code></div>
+	    <div class="small-2"><code>.small-2</code></div>
+	    <div class="small-2"><code>.small-2</code></div>
+	    <div class="small-2"><code>.small-2</code></div>
+	    <div class="small-2"><code>.small-2</code></div>
+	    <div class="small-2"><code>.small-2</code></div>
+	</div>
+	<div class="grid-row">
+	    <div class="small-3"><code>.small-3</code></div>
+	    <div class="small-3"><code>.small-3</code></div>
+	    <div class="small-3"><code>.small-3</code></div>
+	    <div class="small-3"><code>.small-3</code></div>
+	</div>
+	<div class="grid-row">
+	    <div class="small-6"><code>.small-6</code></div>
+	    <div class="small-3"><code>.small-3</code></div>
+	    <div class="small-3"><code>.small-3</code></div>
+	</div>
     </div>
 </div>
 
@@ -180,10 +184,10 @@ This example lays out two content blocks, each spanning 3 columns, with the fina
 
 <div class="example">
   <div class="container">
-  	<div class="grid-row">
-  	  <div class="small-3">Normal col.</div>
-  	  <div class="small-6 offset-small-3">Offset col.</div>
-  	</div>
+	<div class="grid-row">
+	  <div class="small-3">Normal col.</div>
+	  <div class="small-6 offset-small-3">Offset col.</div>
+	</div>
   </div>
 </div>
 
@@ -213,8 +217,8 @@ Grid rows can be placed inside columns, in order to nest more columns (no need t
     <div class="grid-row">
 	    <div class="small-8">
         <div class="grid-row">
-  		    <div class="small-4"><code>.small-4</code></div>
-  		    <div class="small-4"><code>.small-4</code></div>
+		    <div class="small-4"><code>.small-4</code></div>
+		    <div class="small-4"><code>.small-4</code></div>
 		    </div>
 	    </div>
 	    <div class="small-4"><code>.small-4</code></div>
@@ -255,19 +259,19 @@ The `hidden-*` classes prevents content from displaying at a certain breakpoint.
 ```html
 <div class="container">
   <div class="grid-row">
-  	<div class="small-4">Always visible</div>
-  	<div class="small-4 hidden-medium">Hidden at medium</div>
-  	<div class="small-4 hidden-medium-up">Hidden at medium+</div>
+	<div class="small-4">Always visible</div>
+	<div class="small-4 hidden-medium">Hidden at medium</div>
+	<div class="small-4 hidden-medium-up">Hidden at medium+</div>
   </div>
 </div>
 ```
 
 <div class="example">
   <div class="container">
-  	<div class="grid-row">
+	<div class="grid-row">
 	    <div class="small-4">Always visible</div>
 	    <div class="small-4 hidden-medium">Hidden at medium</div>
 	    <div class="small-4 hidden-medium-up">Hidden at medium+</div>
-  	</div>
+	</div>
   </div>
 </div>
