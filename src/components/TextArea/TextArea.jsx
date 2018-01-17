@@ -16,7 +16,7 @@ import positionStyles from '../Position.modules.scss'
 /**
  * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.33.0</span>
  */
-const Textarea = props => (
+const TextArea = props => (
   <FormField {...props}>
     {({ className, ...textareaProps }, showFeedbackIcon, feedback) => (
       <div className={joinClassNames(positionStyles.relative, styles.preventWidthResizing)}>
@@ -36,7 +36,7 @@ const Textarea = props => (
   </FormField>
 )
 
-Textarea.propTypes = {
+TextArea.propTypes = {
   /**
    * The label.
    */
@@ -92,7 +92,7 @@ Textarea.propTypes = {
   onBlur: PropTypes.func,
 }
 
-Textarea.defaultProps = {
+TextArea.defaultProps = {
   hint: undefined,
   value: '',
   feedback: undefined,
@@ -104,4 +104,4 @@ Textarea.defaultProps = {
   onBlur: undefined,
 }
 
-export default Textarea
+export default TextArea
