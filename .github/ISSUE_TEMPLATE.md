@@ -23,8 +23,8 @@
 
 - [ ] TDS version: vX.Y.Z
 - [ ] Willing to develop solution
-- Has workaround? Yes or no
-- Impact: Low, medium, or high
+- [ ] Has workaround
+- [ ] High impact
 
 ## Screenshots
 

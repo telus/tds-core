@@ -27,7 +27,9 @@ However, if you would like to make a small adjustment to documentation, you may 
 If you found a bug or would like to begin a conversation, follow these steps:
 
 * Ensure the issue was not already reported by searching the [issues](https://github.com/telusdigital/tds/issues)
-* If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/telusdigital/tds/issues/new)
+* If you're unable to find an open issue addressing your concern, either:
+  * [Open a new bug ticket](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
+  * [Open a new feature request](https://github.com/telusdigital/tds/issues/new?template=defect_template.md?template=feature_template.md)
 * Be sure to include a title and clear description, as much relevant information as possible, and - if applicable - a code 
 sample or executable test case demonstrating the expected behaviour that is not occurring
 
