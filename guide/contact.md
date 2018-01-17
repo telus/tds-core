@@ -17,7 +17,8 @@ It is not intended for general public consumption.
   - **#tds-tech-support** for fast support directly related to components or code within the TDS 
   repository or served by the TDS npm package. If you do not require immediate support, it is preferred to [open a GitHub issue](./contributing/contributing.md#1-submit-issue)
 3. **Anonymous form**: We would rather use Github for logging all issues, however, if you feel the need to submit feedback anonymously then feel free to do so [here](https://goo.gl/forms/8g8n7BMjvLJN7bDr1).
-4. **Email**: **Coming soon**
+4. **Email**: If all else fails then you can get intouch with the team [via e-mail](
+n6k7q6p0r9m4c1l4@telusdigital.slack.com)
 
 <sup>1</sup>If there is a high quantity of issues, the core team may take longer than noted above, 
 and may provide an estimated response time.
