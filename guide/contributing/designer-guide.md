@@ -42,8 +42,4 @@ Note: We understand that there are some cases that require the type stack to cha
 
 * **Any new components being contributed, should NOT be made into a symbol**. We will do this on our end and add it to the master Sketch file. This will ensure that the NEW symbol is named and put in the appropriate section.
 
-* To reduce duplication or confusion between versions, TDS will manage any new symbols/components being contributed. We will add them to the DSM library once there is a code contribution for that component. This will ensure that code and design is aligned before we release for broader consumption.
-
-Example contribution file:
-
-![image alt text](image_0.png)
+* To reduce duplication or confusion between versions, TDS will manage any new symbols/components being contributed. We will add them to the DSM library once the code contribution has been made. This will ensure that code and design is aligned before we release for broader consumption.
