@@ -26,13 +26,13 @@ The following is a responsive layout that uses the Box component and its `horizo
       return (
         <FlexGrid limitWidth gutter={false}>
           <FlexGrid.Col span={12}>
-            <Box horizontal={3}>
+            <Box horizontal={3} vertical={3}>
               <Paragraph>{text}</Paragraph>
             </Box>
           </FlexGrid.Col>
 
           <FlexGrid.Col span={columns}>
-            <Box horizontal={3} vertical={3}>
+            <Box horizontal={3} vertical={3} dangerouslyAddClassName="docs_display-flex-height">
               <Card>
                 <Paragraph size="large">Only Optik TV offers the most 4K entertainment</Paragraph>
               </Card>
@@ -40,7 +40,7 @@ The following is a responsive layout that uses the Box component and its `horizo
           </FlexGrid.Col>
 
           <FlexGrid.Col span={columns}>
-            <Box horizontal={3} vertical={3}>
+            <Box horizontal={3} vertical={3} dangerouslyAddClassName="docs_display-flex-height">
               <Card>
                 <Paragraph size="large">The most HD channels</Paragraph>
               </Card>
@@ -48,7 +48,7 @@ The following is a responsive layout that uses the Box component and its `horizo
           </FlexGrid.Col>
 
           <FlexGrid.Col span={columns}>
-            <Box horizontal={3} vertical={3}>
+            <Box horizontal={3} vertical={3} dangerouslyAddClassName="docs_display-flex-height">
               <Card>
                 <Paragraph size="large">The largest On Demand library</Paragraph>
               </Card>
@@ -79,7 +79,7 @@ Alternatively, the same layout can be achieved by enabling/disabling the `gutter
             </FlexGrid.Col>
 
             <FlexGrid.Col span={columns}>
-              <Box vertical={3}>
+              <Box vertical={3} dangerouslyAddClassName="docs_display-flex-height">
                 <Card>
                   <Paragraph size="large">Only Optik TV offers the most 4K entertainment</Paragraph>
                 </Card>
@@ -87,7 +87,7 @@ Alternatively, the same layout can be achieved by enabling/disabling the `gutter
             </FlexGrid.Col>
 
             <FlexGrid.Col span={columns}>
-              <Box vertical={3}>
+              <Box vertical={3} dangerouslyAddClassName="docs_display-flex-height">
                 <Card>
                   <Paragraph size="large">The most HD channels</Paragraph>
                 </Card>
@@ -95,7 +95,7 @@ Alternatively, the same layout can be achieved by enabling/disabling the `gutter
             </FlexGrid.Col>
 
             <FlexGrid.Col span={columns}>
-              <Box vertical={3}>
+              <Box vertical={3} dangerouslyAddClassName="docs_display-flex-height">
                 <Card>
                   <Paragraph size="large">The largest On Demand library</Paragraph>
                 </Card>
