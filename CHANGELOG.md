@@ -1,3 +1,68 @@
+#### 0.34.0 (2018-01-17)
+
+##### Build System / Dependencies
+
+* **lint:** adjust echint for .svg files ([1a9313f5](https://github.com/telusdigital/tds/commit/1a9313f5cb9f790bcd78294bf2d6439b0f8ade01))
+
+##### Documentation Changes
+
+* **roadmap:** add roadmap image ([13ba9a4b](https://github.com/telusdigital/tds/commit/13ba9a4b9c1c4e384249de282108277e25f4600b))
+* **flex-grid:**
+  * Align cards in responsive example ([714bb88b](https://github.com/telusdigital/tds/commit/714bb88b22261424e4a05be9b839c5e4f3eb91ad))
+  * Update docs to use IRL copy for cards ([e9dc0fb1](https://github.com/telusdigital/tds/commit/e9dc0fb11cc3dd0cdc825f8488697681fc9f4db3))
+* **designer-guide:**
+  * delete example screenshot ([f48290f4](https://github.com/telusdigital/tds/commit/f48290f4052e65ca9b731e0c3a0a910e82426e40))
+  * update docs ([6f0c801e](https://github.com/telusdigital/tds/commit/6f0c801ec00e372e4d82651a9a520aee07ca8201))
+  * add content ([55a3048f](https://github.com/telusdigital/tds/commit/55a3048f840e50c07c25bddd7170591aaecf1f74))
+  * add column examples ([f66375e2](https://github.com/telusdigital/tds/commit/f66375e2a6dd18c0a080a516793c1014cc9965de))
+* **contact:** updated copy ([d747f715](https://github.com/telusdigital/tds/commit/d747f715c62a179c187ea03ebb2ede5298756aa3))
+* **guide:** 
+  * add template for issues and feature requests ([3c553097](https://github.com/telusdigital/tds/commit/3c553097c3a46a0329ef790f380e5150742e4bee))
+  * Match Styleguidist sidebar background color and width ([a81726c7](https://github.com/telusdigital/tds/commit/a81726c7ef359ff32388bcbe7fb385c9ed9663dc))
+  * Add Logo and favicon to static site docs ([a267790f](https://github.com/telusdigital/tds/commit/a267790f1d57a602ec74b63ecba60248f783279a))
+* **summary:** move faqs to support ([e102f304](https://github.com/telusdigital/tds/commit/e102f30496706ad3f5ce6ca3c5f049c8d2bc76ad))
+* **upgrading:** Add initial draft of Upgrading from 0.21.1 to v1 section ([33aa9f47](https://github.com/telusdigital/tds/commit/33aa9f4711cda6f7107d844addd2d5444c00ca5d))
+* **designers:**
+  * fix typo ([7aa5bc4d](https://github.com/telusdigital/tds/commit/7aa5bc4da5e72c1323475c5d66c17670b93d321f))
+  * update docs ([e9d5ebab](https://github.com/telusdigital/tds/commit/e9d5ebabd53e72910eaa3fa6b4795caa3181041b))
+  * add guide text ([0d5e943f](https://github.com/telusdigital/tds/commit/0d5e943ffdcffb3dc550593b05aae0b91a05eb7b))
+* **codebase:** Minor edits while in QA ([cda84714](https://github.com/telusdigital/tds/commit/cda84714df2d116d8af0d34d7898ae398211b760))
+* **getting-started:** add screenshots ([2339efb6](https://github.com/telusdigital/tds/commit/2339efb674db28fb50b102f5d6a1f9a44ed99c51))
+
+##### New Features
+
+* **guide:** 
+  * remove erroneous sidebar link ([cd644b59](https://github.com/telusdigital/tds/commit/cd644b5909edbdf9ebdbd8ee50a3f361461660be))
+  * Re-order Navigation items ([d6aa6f48](https://github.com/telusdigital/tds/commit/d6aa6f48e2f49252c73d3b4bab134c3628f39dd7))
+  * TDSify headings ([2a675598](https://github.com/telusdigital/tds/commit/2a67559835aca4732c7fd4821ace3f1fcdec0f32))
+* **flex-grid:** 
+  * Add 32px to all fixed widths ([fe16728c](https://github.com/telusdigital/tds/commit/fe16728c3acd33f68be76ef011c8e83f6998bcfa))
+  * Make limitWidth prop to always be center aligned ([e8b9e321](https://github.com/telusdigital/tds/commit/e8b9e321f041a06d59bd599b13a56f5f89f80d93))
+  * remove reliance on a row ([9696c57b](https://github.com/telusdigital/tds/commit/9696c57b580733612023ffe6c33d9f28fc62835d))
+  * add documentation examples and css rationale ([8a915e2f](https://github.com/telusdigital/tds/commit/8a915e2fe9dcda0b56f4900d9b649c467edfb0b0))
+* **styleguidist:** Fix TELUS logo to link to the top of the Styleguidist page ([f8f5fbed](https://github.com/telusdigital/tds/commit/f8f5fbedb25fb398d69c881321d441d52a3349cc))
+* **getting-started:** adjust message and grammar ([a6d1bb77](https://github.com/telusdigital/tds/commit/a6d1bb77d86d43abea7ce2b9a356abba669a3d75))
+* **link:** Use insert-logo-link and add a few TELUS css styles ([10de916d](https://github.com/telusdigital/tds/commit/10de916d38ca0c6414b2376032f7083000ce9358))
+
+##### Bug Fixes
+
+* **textarea:**
+  * export textarea using  pascalcase ([e641ae91](https://github.com/telusdigital/tds/commit/e641ae91f433b0c31487b5059ea8eb4e7ac3344a))
+  * change file structure to pascalcase ([e0db0816](https://github.com/telusdigital/tds/commit/e0db08166375d317e4654805f530cef2797ade8e))
+* **styleguiderenderer:** pass tests ([fcd6ec58](https://github.com/telusdigital/tds/commit/fcd6ec58cff476ce5ff8ad604461974c534a373d))
+
+##### Other Changes
+
+* **github:** move issue templates to prescribed dir ([9fa107c7](https://github.com/telusdigital/tds/commit/9fa107c724ab0f3332a80f452f9cc1af610cb4c5))
+* **textarea:** change filename case ([5a966289](https://github.com/telusdigital/tds/commit/5a9662893846dd1f3f34021db45508f987827df3))
+* **summary:**
+  * revert ([f2cb0bec](https://github.com/telusdigital/tds/commit/f2cb0bec508ce7d56d101efc99aad8d257bbbf2e))
+  * add TDS ([38051484](https://github.com/telusdigital/tds/commit/38051484155c39ef59b98124dcc68daeb76ba1ed))
+
+##### Reverts
+
+* **flex-grid:** restore row component ([e69612ce](https://github.com/telusdigital/tds/commit/e69612ce6d4eddeeb8350b46681a842595cd9d60))
+
 #### 0.33.1 (2018-01-09)
 
 ##### Documentation Changes
