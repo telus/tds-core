@@ -8,7 +8,6 @@ exports[`Input renders 1`] = `
     class="row justifyContentSpaceBetween relative"
   >
     <label
-      data-no-global-styles="true"
       for="the-input"
     >
       <div
@@ -28,7 +27,6 @@ exports[`Input renders 1`] = `
     <input
       aria-invalid="false"
       class="default height hideNumberSpinner"
-      data-no-global-styles="true"
       id="the-input"
       type="text"
       value=""
@@ -48,7 +46,6 @@ exports[`Input renders with a feedback state and icon 1`] = `
     class="row justifyContentSpaceBetween relative"
   >
     <label
-      data-no-global-styles="true"
       for="the-input"
     >
       <div
@@ -68,7 +65,6 @@ exports[`Input renders with a feedback state and icon 1`] = `
     <input
       aria-invalid="true"
       class="error height hideNumberSpinner"
-      data-no-global-styles="true"
       id="the-input"
       style="padding-right:calc(16px + 2rem)"
       type="text"

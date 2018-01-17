@@ -137,7 +137,7 @@ class Choice extends React.Component {
     return (
       <Box between={2}>
         {feedback === 'error' && error && renderError(error, errorId)}
-        <label data-no-global-styles htmlFor={choiceId}>
+        <label htmlFor={choiceId}>
           <Box inline between={3} dangerouslyAddClassName={styles.alignFlexStart}>
             <span className={fakeInputClassNames} data-testid="fake-input">
               <input
@@ -153,7 +153,6 @@ class Choice extends React.Component {
                 onChange={this.onChange}
                 onFocus={this.onFocus}
                 onBlur={this.onBlur}
-                data-no-global-styles
               />
 
               {children(this.state.checked, rest.disabled)}

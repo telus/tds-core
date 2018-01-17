@@ -5,7 +5,6 @@ exports[`Checkbox renders 1`] = `
   class="betweenBottomMarginDesktop-2 stack"
 >
   <label
-    data-no-global-styles="true"
     for="the-group-name_the-value"
   >
     <div
@@ -18,7 +17,6 @@ exports[`Checkbox renders 1`] = `
         <input
           aria-invalid="false"
           class="hiddenInput"
-          data-no-global-styles="true"
           id="the-group-name_the-value"
           name="the-group-name"
           type="checkbox"

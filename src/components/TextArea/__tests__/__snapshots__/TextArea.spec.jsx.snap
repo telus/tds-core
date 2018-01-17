@@ -8,7 +8,6 @@ exports[`TextArea renders 1`] = `
     class="row justifyContentSpaceBetween relative"
   >
     <label
-      data-no-global-styles="true"
       for="the-textarea"
     >
       <div
@@ -28,7 +27,6 @@ exports[`TextArea renders 1`] = `
     <textarea
       aria-invalid="false"
       class="default preventWidthResizing"
-      data-no-global-styles="true"
       id="the-textarea"
     />
     <div
@@ -46,7 +44,6 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
     class="row justifyContentSpaceBetween relative"
   >
     <label
-      data-no-global-styles="true"
       for="the-textarea"
     >
       <div
@@ -66,7 +63,6 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
     <textarea
       aria-invalid="true"
       class="error preventWidthResizing"
-      data-no-global-styles="true"
       id="the-textarea"
       style="padding-right:calc(16px + 2rem)"
     />

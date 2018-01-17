@@ -32,12 +32,12 @@ const Select = ({ options, placeholder, ...props }) => (
           style={addRightPadding(showFeedbackIcon ? 2 : 1)}
         >
           {placeholder && (
-            <option value="" hidden disabled data-no-global-styles>
+            <option value="" hidden disabled>
               {placeholder}
             </option>
           )}
           {options.map(({ text, value }) => (
-            <option key={value} value={value} data-no-global-styles>
+            <option key={value} value={value}>
               {text}
             </option>
           ))}
