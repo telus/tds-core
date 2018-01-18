@@ -118,7 +118,7 @@ module.exports = {
               },
             },
             {
-              name: 'Grid',
+              name: 'Grid (deprecated)',
               components() {
                 return [
                   path.resolve('src/old-components/Grid/Container/Container.jsx'),
