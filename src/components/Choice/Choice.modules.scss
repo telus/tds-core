@@ -61,8 +61,7 @@
   box-shadow: 0 0 4px 1px $color-shuttle-grey;
 }
 
-// FIXME: Doubling the specificity to beat global styles.
-.hiddenInput.hiddenInput {
+.hiddenInput {
   // composes: noSpacing from '../Spacing.modules.scss';
   width: 10px;
   height: 10px;

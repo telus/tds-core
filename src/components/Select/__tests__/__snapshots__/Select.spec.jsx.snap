@@ -8,7 +8,6 @@ exports[`Select renders 1`] = `
     class="row justifyContentSpaceBetween relative"
   >
     <label
-      data-no-global-styles="true"
       for="the-select"
     >
       <div
@@ -28,18 +27,15 @@ exports[`Select renders 1`] = `
     <select
       aria-invalid="false"
       class="default select positionSelectOnTop"
-      data-no-global-styles="true"
       id="the-select"
       style="padding-right:calc(16px + 2rem)"
     >
       <option
-        data-no-global-styles="true"
         value="value-1"
       >
         text one
       </option>
       <option
-        data-no-global-styles="true"
         value="value-2"
       >
         text two
@@ -69,7 +65,6 @@ exports[`Select renders with a feedback state and icon 1`] = `
     class="row justifyContentSpaceBetween relative"
   >
     <label
-      data-no-global-styles="true"
       for="the-select"
     >
       <div
@@ -89,18 +84,15 @@ exports[`Select renders with a feedback state and icon 1`] = `
     <select
       aria-invalid="true"
       class="error select positionSelectOnTop"
-      data-no-global-styles="true"
       id="the-select"
       style="padding-right:calc(32px + 3rem)"
     >
       <option
-        data-no-global-styles="true"
         value="value-1"
       >
         text one
       </option>
       <option
-        data-no-global-styles="true"
         value="value-2"
       >
         text two

@@ -5,7 +5,6 @@ exports[`Radio renders 1`] = `
   class="betweenBottomMarginDesktop-2 stack"
 >
   <label
-    data-no-global-styles="true"
     for="the-group_the-value"
   >
     <div
@@ -18,7 +17,6 @@ exports[`Radio renders 1`] = `
         <input
           aria-invalid="false"
           class="hiddenInput"
-          data-no-global-styles="true"
           id="the-group_the-value"
           name="the-group"
           type="radio"

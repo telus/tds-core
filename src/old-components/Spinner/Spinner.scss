@@ -1,5 +1,10 @@
 @import '../../scss/settings/variables';
 @import '../../scss/utility/mixins';
+
+$zindex-negative: -1 !default;
+$zindex-modal-backdrop: 1400 !default;
+$zindex-popover: 1600 !default;
+
 // Spinner
 // ---------
 
@@ -14,9 +19,9 @@
 }
 
 .spinner-container {
-  transition: opacity .3s;
+  transition: opacity 0.3s;
   &--loading {
-    opacity: .1;
+    opacity: 0.1;
     z-index: $zindex-negative;
   }
 }
@@ -54,11 +59,11 @@
 
 .spinner__full-screen-layer {
   background-color: $color-white;
-  opacity: .85;
+  opacity: 0.85;
   top: 0;
   bottom: 0;
   left: 0;
-  right :0;
+  right: 0;
   position: fixed;
 }
 
@@ -75,7 +80,7 @@
 }
 
 .spinner__circle {
-    animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
+  animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
 }
 
 .spinner__tip {
@@ -96,17 +101,17 @@
 
 @keyframes spinner-dash {
   0% {
-    stroke-dasharray: 1,200;
+    stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
   }
 
   50% {
-    stroke-dasharray: 89,200;
+    stroke-dasharray: 89, 200;
     stroke-dashoffset: -35;
   }
 
   100% {
-    stroke-dasharray: 89,200;
+    stroke-dasharray: 89, 200;
     stroke-dashoffset: -124;
   }
 }

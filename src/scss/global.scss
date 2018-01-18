@@ -42,7 +42,6 @@
 @import 'settings/variables';
 
 // utility
-@import 'utility/helpers';
 @import 'utility/mixins';
 
 // foundation
@@ -50,8 +49,3 @@
 @import 'foundation/fonts';
 @import 'foundation/grid';
 @import 'foundation/global';
-@import 'foundation/core-icons';
-
-// elements
-@import 'elements/forms';
-@import 'elements/lists';

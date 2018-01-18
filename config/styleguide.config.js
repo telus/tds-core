@@ -94,28 +94,8 @@ module.exports = {
           content: path.resolve('docs/elements/colours.md'),
         },
         {
-          name: 'Forms',
-          content: path.resolve('docs/elements/forms-with-deprecated-input-checkbox-radio.md'),
-        },
-        {
           name: 'Grid',
           content: path.resolve('docs/elements/grid-deprecated.md'),
-        },
-        {
-          name: 'Lists',
-          content: path.resolve('docs/elements/lists-deprecated.md'),
-        },
-        {
-          name: 'Utility icons',
-          content: path.resolve('docs/elements/utility-icons-deprecated.md'),
-        },
-        {
-          name: 'Utility mixins',
-          content: path.resolve('docs/elements/utility-mixins.md'),
-        },
-        {
-          name: 'Design tokens',
-          content: path.resolve('docs/elements/design-tokens.md'),
         },
       ],
     },
@@ -243,7 +223,6 @@ module.exports = {
             return [
               path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx'),
               path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx'),
-              path.resolve('src/old-components/Icon/Icon.jsx'),
             ]
           },
         },
