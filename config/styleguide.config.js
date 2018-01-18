@@ -93,10 +93,6 @@ module.exports = {
           name: 'Colours',
           content: path.resolve('docs/elements/colours.md'),
         },
-        {
-          name: 'Grid',
-          content: path.resolve('docs/elements/grid-deprecated.md'),
-        },
       ],
     },
     {
