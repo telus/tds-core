@@ -97,10 +97,6 @@ module.exports = {
           name: 'Grid',
           content: path.resolve('docs/elements/grid-deprecated.md'),
         },
-        {
-          name: 'Utility mixins',
-          content: path.resolve('docs/elements/utility-mixins.md'),
-        },
       ],
     },
     {
