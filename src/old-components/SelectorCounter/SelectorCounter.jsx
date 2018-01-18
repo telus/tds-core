@@ -17,7 +17,7 @@ class SelectorCounter extends Component {
     this.handleIncrement = this.handleIncrement.bind(this)
     this.handleDecrement = this.handleDecrement.bind(this)
     this.state = {
-      value: props.defaultValue
+      value: props.defaultValue,
     }
   }
 
@@ -71,14 +71,14 @@ class SelectorCounter extends Component {
       invalid,
       max,
       min,
-      successful
+      successful,
     } = this.props
     const value = this.state.value
 
     const cssClasses = {
       'selector-counter--disabled': disabled,
       'selector-counter--error': invalid,
-      'selector-counter--successful': successful
+      'selector-counter--successful': successful,
     }
     /* eslint-disable */
     return (
@@ -87,7 +87,7 @@ class SelectorCounter extends Component {
           {`${contextPrefix} ${value} ${contextSuffix}`}
         </div>
         <input
-          ref={input => this.input = input}
+          ref={input => (this.input = input)}
           id={id}
           type="number"
           pattern="\d*"
@@ -112,11 +112,11 @@ class SelectorCounter extends Component {
           label={decrementorLabel}
           icon="caret-down"
           onClick={this.handleDecrement}
-          disabled={(disabled === true || value <= min)}
+          disabled={disabled === true || value <= min}
           aria-controls={id}
         />
       </div>
-    );
+    )
     /* eslint-enable */
   }
 }
@@ -179,7 +179,7 @@ SelectorCounter.propTypes = {
    *
    * Accessible text suffix for the change event announcement.
    */
-  contextSuffix: PropTypes.string
+  contextSuffix: PropTypes.string,
 }
 
 SelectorCounter.defaultProps = {
@@ -193,7 +193,7 @@ SelectorCounter.defaultProps = {
   invalid: false,
   successful: false,
   contextPrefix: '',
-  contextSuffix: ''
+  contextSuffix: '',
 }
 
 export default SelectorCounter

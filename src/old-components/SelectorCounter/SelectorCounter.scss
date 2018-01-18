@@ -135,3 +135,18 @@ input.selector-counter__value.selector-counter__value {
   width: 100%;
   transition: background-color 0.1s linear;
 }
+
+.accessible-hide {
+  display: block;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}

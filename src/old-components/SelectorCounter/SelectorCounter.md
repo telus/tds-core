@@ -75,7 +75,7 @@ const helperSuccess = successful? 'helper--success':'';
 
 <form onSubmit={handleSubmit}>
   <div className={`field ${fieldError} ${fieldSuccess}`}>
-    <label htmlFor="ex-selcounter">How many smartphone plans?</label>
+    <label htmlFor="ex-selcounter" className="docs_selcounter-label">How many smartphone plans?</label>
     <div id="ex-selcounter-desc">
       <Paragraph size="small">Instructions</Paragraph>
       <UnorderedList listStyle={listType}>
