@@ -17,7 +17,7 @@ TDS components do not include:
 
 ## Installing
 
-If you are using the [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), TDS is already installed and configured. You can jump straight to [using the components](#use-components).
+If you are using the [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), TDS is already installed and configured. You can jump straight to [using the components](#3-use-tds-components).
 
 To install the latest version:
 
@@ -80,7 +80,7 @@ render(
 );
 ```
 
-### 3. Use TDS Components {#use-components}
+### 3. Use TDS Components
 
 TDS components are made to be composed. Each one accomplishes a specific purpose. Combine them to create more complex components for your application.
 
@@ -107,7 +107,7 @@ export default BannerText
 
 Colour is the one exception, as the colour palette is available as Sass variables. While the TDS components already have colour baked in, you may use the TDS colour variables to add style to your own components such as setting background colours or border colours.
 
-A list of the available colours and their use cases can be found [in the Design section](/design/colour.md).
+A list of the available colours and their use cases can be found [in the Design section](../design/colour.md).
 
 ```scss
 // BannerText.scss

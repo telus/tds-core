@@ -67,6 +67,6 @@ and [html-sketchapp](https://github.com/brainly/html-sketchapp)
 
 We continuously tune the plan based on feedback and priorities. Please follow along and let us know what you think!
 
-Learn [how to contribute](/contributing/contributing.md) and discuss features.
+Learn [how to contribute](./contributing/contributing.md) and discuss features.
 
 [Reach out to us](contact.md)!

@@ -126,7 +126,7 @@ Sass: $color-panache</code></pre>
 ## Governance
 
 The TELUS digital colour palette is mandated by the TELUS Brand team and should not be adjusted without explicit approval. If 
-you should have any questions regarding implementation, please [get in touch with us](/contact.md).
+you should have any questions regarding implementation, please [get in touch with us](../contact.md).
 
 ## Roadmap
 

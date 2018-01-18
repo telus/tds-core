@@ -23,7 +23,7 @@ See the [Divider components](ref:///components/index.html#dividers) for implemen
 ## Governance
 
 The dividers are managed by the Design Strategy team and we are currently not accepting any further contributions at this 
-time. However If you have any ideas, improvements or any questions regarding implementation please [get in touch with us](/contact.md).
+time. However If you have any ideas, improvements or any questions regarding implementation please [get in touch with us](../contact.md).
 
 
 ## Roadmap

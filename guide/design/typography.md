@@ -52,7 +52,7 @@ See the [Typography components](ref:///components/index.html#typography) for imp
 ## Governance
 
 The typography is mandated by the TELUS Brand team and should not be adjusted without explicit approval. If you would 
-have any questions regarding implementation please [get in touch with us](/contact.md).
+have any questions regarding implementation please [get in touch with us](../contact.md).
 
 
 ## Roadmap

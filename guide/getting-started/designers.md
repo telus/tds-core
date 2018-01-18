@@ -165,4 +165,4 @@ The TELUS Design System team often makes improvements to the TDS component libra
 
 # Support
 
-Please take the time to join our [#TDS-Guild Slack channel](https://telusdigital.slack.com/messages/C2WK9TP5F). It's the perfect place for general discussions, announcements, and design questions related to TDS. For further help please see our [Support Page](/contact.html)
+Please take the time to join our [#TDS-Guild Slack channel](https://telusdigital.slack.com/messages/C2WK9TP5F). It's the perfect place for general discussions, announcements, and design questions related to TDS. For further help please see our [Support Page](../contact.html)

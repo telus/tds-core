@@ -9,7 +9,7 @@
 * [Contributing](./contributing/contributing.md)
   * [Designer guide](./contributing/designer-guide.md)
   * [Developer guide](./contributing/developer-guide.md)
-  * [Codebase overview](codebase-overview.md)
+  * [Codebase overview](./contributing/codebase-overview.md)
 * [Roadmap](./roadmap.md)
 
 ## Design principles &amp; guidelines

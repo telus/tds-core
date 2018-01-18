@@ -8,22 +8,22 @@ other ways you can contribute, including submission of bug fixes, documentation 
 
 That being said, we welcome contributions of _enhancements_ to the currently available components in accordance with 
 the component roadmaps. Check the [component documentation](ref://../components/index.html) to see what is on the roadmap 
-for each one. If you'd like to contribute to any of the available TDS components, [follow the steps below](#1-submit-issue).
+for each one. If you'd like to contribute to any of the available TDS components, [follow the steps below](#1-submit-an-issue).
 
 Expect architectural changes and governance processes to be established soon that will drive a more mature contribution 
 process. Thank you for your patience.  
 
-Learn more by reading the [TELUS Design Platform roadmap](/roadmap.md) or by [reaching out to us](/contact.md).
+Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md) or by [reaching out to us](../contact.md).
 
 
-## How to contribute {#how-to}
+## How to contribute
 
-### 1. Submit an issue {#1-submit-issue}
+### 1. Submit an issue
 
 We use [Github Issues](https://github.com/telusdigital/tds/issues) to track all of our bugs and open discussions so that 
 they are visible to the community. 
 
-However, if you would like to make a small adjustment to documentation, you may jump straight to [opening a pull request](#3-pull-request). 
+However, if you would like to make a small adjustment to documentation, you may jump straight to [opening a pull request](#3-make-a-pull-request). 
 If you found a bug or would like to begin a conversation, follow these steps:
 
 * Ensure the issue was not already reported by searching the [issues](https://github.com/telusdigital/tds/issues)
@@ -43,11 +43,11 @@ There are different paths to developing a solution depending on your goal:
 to write code. You can follow this guide on [how to edit files within GitHub](https://help.github.com/articles/editing-files-in-your-repository/).
 When making commits, be sure to follow the [TELUS commit standards](https://github.com/telusdigital/reference-architecture/blob/master/process/contribution-model.md#commit-template).
 There is no need to create an issue first, you may edit documentation and create a pull request anytime.
-* **Designers producing assets or symbols**: follow the [designer guide](/contributing/designer-guide.md) to TODO FINISH THIS SENTENCE
-* **Developers making changes to components**: follow the [developer guide](/contributing/developer-guide.md) to set up your environment for TDS development and read the [codebase overview](/codebase-overview.md) to understand the structure of the codebase and 
+* **Designers producing assets or symbols**: follow the [designer guide](./designer-guide.md) to TODO FINISH THIS SENTENCE
+* **Developers making changes to components**: follow the [developer guide](./developer-guide.md) to set up your environment for TDS development and read the [codebase overview](./codebase-overview.md) to understand the structure of the codebase and 
 the conventions being followed
 
-### 3. Make a pull request {#3-pull-request}
+### 3. Make a pull request
 
 First, thanks for taking the time. :) 
 
