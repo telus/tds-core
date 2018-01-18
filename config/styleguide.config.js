@@ -101,10 +101,6 @@ module.exports = {
           name: 'Utility mixins',
           content: path.resolve('docs/elements/utility-mixins.md'),
         },
-        {
-          name: 'Design tokens',
-          content: path.resolve('docs/elements/design-tokens.md'),
-        },
       ],
     },
     {
