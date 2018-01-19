@@ -64,36 +64,8 @@ module.exports = {
 
   sections: [
     {
-      name: 'TELUS Design System',
-      content: path.resolve('docs/intro/welcome.md'),
-      sections: [
-        {
-          name: 'Getting started',
-          content: path.resolve('docs/intro/getting-started.md'),
-        },
-        {
-          name: 'Design vision',
-          content: path.resolve('docs/intro/design-vision.md'),
-        },
-        {
-          name: 'Releases',
-          content: path.resolve('docs/intro/releases.md'),
-        },
-        {
-          name: 'Contributing',
-          content: path.resolve('docs/intro/contributions.md'),
-        },
-      ],
-    },
-    {
       name: 'Foundational elements',
-      content: path.resolve('docs/elements/intro.md'),
-      sections: [
-        {
-          name: 'Colours',
-          content: path.resolve('docs/elements/colours.md'),
-        },
-      ],
+      content: path.resolve('docs/elements/colours.md'),
     },
     {
       name: 'Components',

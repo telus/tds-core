@@ -1,6 +1,12 @@
-These are the brand-approved colours available as sass variables which can be consumed in your application styles by including the following statement: `@import '~@telusdigital/tds/dist/scss/colours';`.
+## Colours
 
-For more information on the usage of each colour please refer to the [colour principles and guidelines](//tds.telus.com/design/colour.html) section.
+These are the brand-approved colours available as sass variables which can be consumed in your application styles by including the following statement:
+
+```scss
+@import '~@telusdigital/tds/dist/scss/colours';
+```
+
+For more information on the usage of each colour please refer to the [colour principles and guidelines](//tds.telus.com/design/colour.html).
 
 ```jsx noeditor
 <div className="container colors">
