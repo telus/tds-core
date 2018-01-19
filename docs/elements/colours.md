@@ -10,7 +10,7 @@ For more information on the usage of each colour please refer to the [colour pri
 <FlexGrid>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(36,135,0)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(36,135,0)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>Accessible Green</Strong></Paragraph>
         <Paragraph>$color-accessible-green</Paragraph>
@@ -20,7 +20,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-    <span className="color-preview" style={{backgroundColor: 'rgb(102, 204, 0)'}}></span>
+    <span className="docs_color-preview" style={{backgroundColor: 'rgb(102, 204, 0)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>TELUS Green</Strong></Paragraph>
         <Paragraph>$color-telus-green</Paragraph>
@@ -30,7 +30,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(75,40,109)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(75,40,109)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>TELUS Purple</Strong></Paragraph>
         <Paragraph>$color-telus-purple</Paragraph>
@@ -40,7 +40,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(42, 44, 46)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(42, 44, 46)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>Shark</Strong></Paragraph>
         <Paragraph>$color-shark</Paragraph>
@@ -50,7 +50,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(84,89,95)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(84,89,95)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>Shuttle Grey</Strong></Paragraph>
         <Paragraph>$color-shuttle-grey</Paragraph>
@@ -60,7 +60,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(255, 255, 255)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(255, 255, 255)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>White</Strong></Paragraph>
         <Paragraph>$color-white</Paragraph>
@@ -70,7 +70,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(193,35,53)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(193,35,53)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>Cardinal</Strong></Paragraph>
         <Paragraph>$color-cardinal</Paragraph>
@@ -80,7 +80,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(255,246,248)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(255,246,248)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>Lavender Blush</Strong></Paragraph>
         <Paragraph>$color-lavender-blush</Paragraph>
@@ -90,7 +90,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(242,239,244)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(242,239,244)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>White Lilac</Strong></Paragraph>
         <Paragraph>$color-white-lilac</Paragraph>
@@ -100,7 +100,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(216,216,216)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(216,216,216)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>Gainsboro</Strong></Paragraph>
         <Paragraph>$color-gainsboro</Paragraph>
@@ -110,7 +110,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(247,247,248)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(247,247,248)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>Athens Grey</Strong></Paragraph>
         <Paragraph>$color-athens-grey</Paragraph>
@@ -120,7 +120,7 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Col>
   <FlexGrid.Col span={4}>
     <Box vertical={3}>
-      <span className="color-preview" style={{backgroundColor: 'rgb(244,249,242)'}}></span>
+      <span className="docs_color-preview" style={{backgroundColor: 'rgb(244,249,242)'}}></span>
       <Box between={3}>
         <Paragraph><Strong>Panache</Strong></Paragraph>
         <Paragraph>$color-panache</Paragraph>
