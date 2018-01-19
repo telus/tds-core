@@ -1,5 +1,6 @@
-@import '../../scss/settings/variables';
-@import '../../scss/utility/mixins';
+@import '../../scss/settings/colours';
+@import '../../scss/settings/typography';
+@import '../../scss/utility/responsive';
 
 .icon {
   font-family: 'TELUS Core Icons';
@@ -30,11 +31,11 @@
   width: 100%;
 
   @include from-breakpoint(medium) {
-    width: rem(178px);
+    width: 11.125rem;
   }
 
   @include from-breakpoint(xl) {
-    width: rem(158px);
+    width: 9.875rem;
   }
 
   &__plain-button {
@@ -94,8 +95,8 @@
 // FIXME: remove redundant specificity once global css styles (forms.scss) are removed
 input.selector-counter__value.selector-counter__value {
   font-weight: 300;
-  font-size: rem(44px);
-  line-height: rem(44px);
+  font-size: 2.75rem;
+  line-height: 2.75rem;
   padding: 0 35px 0 25px;
   height: 52px;
   max-width: 100%;
@@ -127,7 +128,7 @@ input.selector-counter__value.selector-counter__value {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
   color: $color-shark;
   font-family: $font-telus;
-  font-size: rem($body-text-size);
+  font-size: 1.25rem;
   letter-spacing: 0.4px;
   line-height: 1.4;
   outline: 0;

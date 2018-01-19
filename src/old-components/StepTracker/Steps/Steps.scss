@@ -1,5 +1,5 @@
-@import '../../../scss/settings/variables';
-@import '../../../scss/utility/mixins';
+@import '../../../scss/settings/colours';
+@import '../../../scss/utility/responsive';
 
 .step-tracker {
   list-style: none;
@@ -14,13 +14,13 @@
   }
 }
 
-
 .step-tracker__step {
   width: 100%;
   position: relative;
   text-align: center;
   height: 35px;
-  &:before, &:after {
+  &:before,
+  &:after {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -35,14 +35,13 @@
     right: 0;
   }
 
-
   &--completed {
     .step-tracker__icon {
       color: $color-white;
       background-color: $color-primary;
       &:before {
-        font-family: "TELUS Core Icons";
-        content: "\F101";
+        font-family: 'TELUS Core Icons';
+        content: '\F101';
       }
     }
   }
@@ -57,7 +56,6 @@
   }
 }
 
-
 .step-tracker__step:first-child {
   &:before {
     content: none;
@@ -71,13 +69,13 @@
 
 .step-tracker__icon {
   display: inline-block;
-  border:0.1rem solid $color-primary;
+  border: 0.1rem solid $color-primary;
   border-radius: 50%;
   font-size: 1.2rem;
   width: 35px;
   height: 35px;
   &:before {
-    font-family: "TELUS Core Icons";
+    font-family: 'TELUS Core Icons';
     line-height: 35px;
   }
 }
@@ -103,7 +101,6 @@
     display: none;
   }
   color: $color-primary;
-
 }
 .step-tracker__mobile-label-step-info {
   color: $color-shark;

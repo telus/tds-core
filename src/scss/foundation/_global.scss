@@ -1,4 +1,6 @@
 // Global styles
+@import '../settings/colours';
+@import '../settings/typography';
 
 * {
   background-repeat: no-repeat;
@@ -11,6 +13,8 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
+  font: inherit;
+
   &::before,
   &::after {
     box-sizing: border-box;
@@ -18,23 +22,14 @@
 }
 
 html {
-  color: $color-shuttle-grey;
   font-family: $font-telus;
   font-weight: 400;
-  font-kerning: normal;
   font-size: $font-size-base;
+  font-kerning: normal;
   line-height: 1.5;
 }
 
 body {
   background-color: $color-white;
-  line-height: inherit;
   color: $color-text;
-  font-weight: 400;
-  font-size: rem($body-text-size);
-}
-
-img {
-  height: auto;
-  max-width: 100%;
 }
