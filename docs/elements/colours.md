@@ -1,5 +1,3 @@
-## Colours
-
 These are the brand-approved colours available as sass variables which can be consumed in your application styles by including the following statement:
 
 ```scss

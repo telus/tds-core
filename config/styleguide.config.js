@@ -65,7 +65,12 @@ module.exports = {
   sections: [
     {
       name: 'Foundational elements',
-      content: path.resolve('docs/elements/colours.md'),
+      sections: [
+        {
+          name: 'Colours',
+          content: path.resolve('docs/elements/colours.md'),
+        },
+      ],
     },
     {
       name: 'Components',
