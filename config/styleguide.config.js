@@ -38,7 +38,6 @@ module.exports = {
     // Add other namespaced components here.
     // key is a path to match, value is the name to show in the styleguide for the import statement
     const namespacedComponents = {
-      'old-components/Grid': 'Grid',
       FlexGrid: 'FlexGrid',
       StepTracker: 'Steps',
       'components/ExpandCollapse/Panel': 'ExpandCollapse',
@@ -91,16 +90,6 @@ module.exports = {
                   path.resolve('src/components/FlexGrid/FlexGrid.jsx'),
                   path.resolve('src/components/FlexGrid/Row.jsx'),
                   path.resolve('src/components/FlexGrid/Col.jsx'),
-                ]
-              },
-            },
-            {
-              name: 'Grid (deprecated)',
-              components() {
-                return [
-                  path.resolve('src/old-components/Grid/Container/Container.jsx'),
-                  path.resolve('src/old-components/Grid/Row/Row.jsx'),
-                  path.resolve('src/old-components/Grid/Column/Column.jsx'),
                 ]
               },
             },

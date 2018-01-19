@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
 
-import Grid from '../../old-components/Grid/Grid'
+import FlexGrid from '../../components/FlexGrid/FlexGrid'
 import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'
@@ -11,8 +11,6 @@ import Box from '../Box/Box'
 
 import messagingStyles from '../Messaging.modules.scss'
 import styles from './Notification.modules.scss'
-
-const { Container, Row, Column } = Grid
 
 const iconByVariant = {
   success: {
@@ -48,17 +46,15 @@ const renderContent = (variant, children) => {
  */
 const Notification = ({ variant, children, ...rest }) => (
   <Box {...safeRest(rest)} vertical={3} dangerouslyAddClassName={styles[variant]}>
-    <Container limitWidth>
-      <Row>
-        <Column xs={12}>
-          <Box inline between={3}>
-            {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
+    <FlexGrid limitWidth>
+      <FlexGrid.Col>
+        <Box inline between={3}>
+          {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
 
-            {renderContent(variant, children)}
-          </Box>
-        </Column>
-      </Row>
-    </Container>
+          {renderContent(variant, children)}
+        </Box>
+      </FlexGrid.Col>
+    </FlexGrid>
   </Box>
 )
 

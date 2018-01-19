@@ -5,23 +5,19 @@ exports[`<Notification /> renders 1`] = `
   class="verticalPaddingDesktop-3 instructional"
 >
   <div
-    class="container container--limited-width"
+    class="flexGrid limitWidth container-fluid"
   >
     <div
-      class="grid-row"
+      class="col-xs col-xs-offset flexGridColumn"
     >
       <div
-        class="xs-12"
+        class="betweenRightMarginDesktop-3 inline"
       >
-        <div
-          class="betweenRightMarginDesktop-3 inline"
+        <p
+          class="wordBreak noSpacing color medium mediumFont leftAlign"
         >
-          <p
-            class="wordBreak noSpacing color medium mediumFont leftAlign"
-          >
-            Some content
-          </p>
-        </div>
+          Some content
+        </p>
       </div>
     </div>
   </div>
