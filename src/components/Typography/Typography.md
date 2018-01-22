@@ -22,4 +22,4 @@ To use the above sass mixins in your app, import the following file on any sass 
 
 ### Spacing system
 
-Typography components **do not** have built-in padding or margin. See the [Box](#box) component for the spacing interface add padding and margin to typography components.
+Typography components **do not** have built-in padding or margin. See the [Box](#box) component and the examples below to learn how to space out typography components.
