@@ -51,7 +51,7 @@
   &__button {
     position: absolute;
     right: 15px;
-    top: 7px;
+    top: 1px;
     cursor: pointer;
     margin: 0;
     padding: 0;
@@ -61,7 +61,7 @@
     background: transparent;
 
     &:last-child {
-      top: 30px;
+      top: 24px;
     }
 
     &:disabled {
@@ -71,6 +71,8 @@
 
   &__icon {
     color: $color-primary;
+    font-size: 11px;
+    line-height: normal;
 
     &:hover {
       color: $color-primary;
