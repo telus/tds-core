@@ -1,3 +1,11 @@
+<!--
+  ### IMPORTANT SECURITY NOTE ###
+
+  When opening pull requests, be sure NOT to include any private or personal
+  information such as secrets, passwords, or any source code that involves
+  data retrieval. 
+-->
+
 ## Description
 
 - Link to related issues: `#<issue number>`
