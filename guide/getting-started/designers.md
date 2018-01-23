@@ -167,9 +167,9 @@ Please follow the [TELUS Brand Photography Guidelines](https://drive.google.com/
 
 The TELUS Design System team often makes design improvements to the TDS component library and Master Sketch file. We track all release updates in our version page in the Master Sketch file and on the [DSM release page] (https://telus.invisionapp.com/dsm/telus/telus-design-system/releases) on Invision.
 
-<img alt="" src="craftmanager11.png" style="max-width: 500px; width: 100%;" />
+When TDS makes releases you will get notified the next time you are on Sketch and signed into DSM.
 
-When TDS makes releases you will get notified the next time you are on Sketch and signed into DSM. 
+<img alt="" src="craftmanager11.png" style="max-width: 500px; width: 100%;" />
 
 Releases updates to the system can be found on the [change log on Github](https://github.com/telusdigital/tds/releases), so check back frequently for updates to the system.
 
