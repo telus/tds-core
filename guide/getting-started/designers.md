@@ -132,7 +132,7 @@ The TDS Master Sketch file is a document that will help you get started with you
   </tr>
   <tr>
     <td><img src="craftmanager9.png" /></td>
-    <td>All of the libraries you’re invited to should now appear in a new window.</td>
+    <td>All of the libraries you’re invited to should now appear in the DSM window.</td>
   </tr>
     <tr>
     <td><img src="craftmanager10.png" /></td>
