@@ -58,7 +58,7 @@ The TDS Master Sketch file is a document that will help you get started with you
 
 1. **GitHub**: You can always download the latest (and previous) Master Sketch file on the [TDS release page](https://github.com/telusdigital/tds/releases).
 
-2. **Invision Enterprise**: If you have access to the TDS project in the [TELUS Invision Enterprise](https://www.invisionapp.com/) account you can view access the latest (and previous) Master Sketch files in the assets > source files
+2. **Invision Enterprise**: If you have access to the TDS project in the [TELUS Invision Enterprise](https://www.invisionapp.com/) account you can view access the **latest** (and previous versions) Master Sketch files in the assets > source files
 
 ![InVision Asset Source Files](invision_assets_sourcefiles.png)
 
@@ -134,6 +134,10 @@ The TDS Master Sketch file is a document that will help you get started with you
     <td><img src="craftmanager9.png" /></td>
     <td>All of the libraries you’re invited to should now appear in a new window.</td>
   </tr>
+    <tr>
+    <td><img src="craftmanager10.png" /></td>
+    <td>To switch between versions, go to the TELUS Design System dropdown on the top left of the DSM window and select TELUS Design System>Switch Version.</td>
+  </tr>
 </table>
 
 
@@ -161,7 +165,7 @@ Please follow the [TELUS Brand Photography Guidelines](https://drive.google.com/
 
 # Releases
 
-The TELUS Design System team often makes improvements to the TDS component library and Master Sketch file. We track all release updates in our version page in the Master Sketch file and [change log on Github](https://github.com/telusdigital/tds/releases), so check back frequently for updates to the system.
+The TELUS Design System team often makes improvements to the TDS component library and Master Sketch file. We track all release updates in our version page in the Master Sketch file and on the [DSM release page] (https://telus.invisionapp.com/dsm/telus/telus-design-system/releases) on Invision. Releases from a code based can be found on the [change log on Github](https://github.com/telusdigital/tds/releases), so check back frequently for updates to the system.
 
 # Support
 
