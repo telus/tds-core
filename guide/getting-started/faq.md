@@ -36,9 +36,7 @@ Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md).
 
 ## Do I need any polyfills?
 
-No.
-
-TDS uses non-invasive [ponyfills](https://github.com/sindresorhus/ponyfill) (a polyfill that does not modify built-in APIs) if it uses a browser API that is not widely supported natively.
+TDS is striving to use non-invasive [ponyfills](https://github.com/sindresorhus/ponyfill) (a polyfill that does not modify built-in APIs) if it uses a browser API that is not widely supported natively. But at the moment we recommend the use of the Set object in [polyfill.io](https://polyfill.io/v2/docs/) (see starter kit [example](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/ui/src/server/registerServerSideRenderMiddleware.jsx#L131)) for rendering the ExpandCollapse component in older browsers.
 
 Also, though TDS is written in ES6 it is transpiled so that the resulting JavaScript will run in all supported browsers. Run Babel on your JavaScript, not ours.
 
