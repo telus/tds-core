@@ -7,7 +7,7 @@ must meet these principles. They are used to assess whether an experience is goo
 
 * Promote the brand aesthetic
 * Reduce complexity by constraining choices
-* Customers can complete task on first attempt
+* Ensure customers can complete task on first attempt
 * Leverage usability heuristics
 
 ## Respect our customers
@@ -41,7 +41,7 @@ must meet these principles. They are used to assess whether an experience is goo
 ## Seek the perspective of others
 
 * Collaborate by involving cross-functional team members
-* Ensure design is technically feasible understand how it impacts performance 
+* Ensure design is technically feasible and understand how it impacts performance 
 * Share your ideas early and often to explore many different solutions and iterations
 
 ## Think end-to-end
