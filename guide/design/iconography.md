@@ -13,8 +13,8 @@ of the edges should be at the standard measurement of 16px, 24px, or 48px.
 
 ### Dos
 
-* All icons should be interactive, except stop and warning icons
-* Icons should be accompanied with supportive text with the exception of the utility icons
+* Make all icons interactive, except stop and warning icons
+* Ensure all icons are accompanied by supportive text, with the exception of utility icons
 
 ### Don’ts
 
