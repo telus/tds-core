@@ -15,7 +15,7 @@ TDS component usage, documentation & examples: <http://tds.telus.com>
 * [Getting Started](guide/getting-started/getting-started.md)
   * [Designers](guide/getting-started/designers.md)
   * [Developers](guide/getting-started/developers.md)
-* [Components](ref://components/index.html)
+* [Components](http://tds.telus.com)
 * [Contributing](guide/contributing/contributing.md)
   * [Designer guide](guide/contributing/designer-guide.md)
   * [Developer guide](guide/contributing/developer-guide.md)
@@ -39,7 +39,7 @@ TDS component usage, documentation & examples: <http://tds.telus.com>
 * [Depth](guide/design/depth.md)
 
 #### Assets
-* [Download the Sketch file](https://github.com/telusdigital/tds/releases/latest)
+* [Master Sketch file](https://github.com/telusdigital/tds/releases/latest)
 
 #### Support &amp; links
 
