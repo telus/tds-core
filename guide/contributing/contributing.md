@@ -43,7 +43,7 @@ There are different paths to developing a solution depending on your goal:
 to write code. You can follow this guide on [how to edit files within GitHub](https://help.github.com/articles/editing-files-in-your-repository/).
 When making commits, be sure to follow the [TELUS commit standards](https://github.com/telusdigital/reference-architecture/blob/master/process/contribution-model.md#commit-template).
 There is no need to create an issue first, you may edit documentation and create a pull request anytime.
-* **Designers producing assets or symbols**: follow the [designer guide](./designer-guide.md) to TODO FINISH THIS SENTENCE
+* **Designers producing assets or symbols**: follow the [designer guide](./designer-guide.md) to contributing Sketch files.
 * **Developers making changes to components**: follow the [developer guide](./developer-guide.md) to set up your environment for TDS development and read the [codebase overview](./codebase-overview.md) to understand the structure of the codebase and 
 the conventions being followed
 
