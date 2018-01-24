@@ -8,6 +8,55 @@ It's a holistic platform that integrates documentation, guidelines and design ma
 digital design guidelines, code patterns and UI elements.
 
 TDS usage, documentation & examples: <http://tds.telus.com>
+## Table of Contents
+
+## TELUS Design System
+
+* [Getting Started](./getting-started/getting-started.md)
+  * [Designers](./getting-started/designers.md)
+  * [Developers](./getting-started/developers.md)
+* [Components](ref://components/index.html)
+* [Contributing](./contributing/contributing.md)
+  * [Designer guide](./contributing/designer-guide.md)
+  * [Developer guide](./contributing/developer-guide.md)
+  * [Codebase overview](./contributing/codebase-overview.md)
+* [Roadmap](./roadmap.md)
+
+## Design principles &amp; guidelines
+
+* [Design Principles](./design/principles.md)
+* [Accessibility](./accessibility/accessibility.md)
+  * [Colour and contrast](./accessibility/colour-contrast.md)
+  * [Keyboard navigation](./accessibility/keyboard-nav.md)
+  * [Screen readers](./accessibility/screen-readers.md)
+  * [Content](./accessibility/content.md)
+* [Colour](./design/colour.md)
+* [Typography](./design/typography.md)
+* [Iconography](./design/iconography.md)
+* [Writing](./design/writing.md)
+* [Layout](./design/layout.md)
+* [Motion](./design/motion.md)
+* [Depth](./design/depth.md)
+
+## Assets
+* [Download the Sketch file](https://github.com/telusdigital/tds/releases/latest)
+
+## Support &amp; links
+
+* [Contact us](./contact.md)
+* [FAQs](./getting-started/faq.md)
+* [Report an issue](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
+* [Suggest a feature](https://github.com/telusdigital/tds/issues/new?template=feature_template.md)
+* [TDS on GitHub](https://github.com/telusdigital/tds)
+* [npm package](https://www.npmjs.com/package/@telusdigital/tds)
+
+## Maintainers & ARB (Architecture Review Board)
+
+The following group of Tech Leads and Senior Developers are the maintainers of this project, and have merge rights accordingly. Please reach out to them if you have questions or need support for your contribution to SiteBuilder.
+
+| Member | Team | Slack | Github | 
+| --- | --- | --- | --- |
+
 
 ## Installation
 
