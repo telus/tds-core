@@ -45,8 +45,8 @@ With a foundational set of components available in the system for immediate use,
 components to delivery of a platform that enables others to contribute components into the system. This will likely include:
 
 * **Architecture changes** such as splitting up the TDS components into separately versioned packages
-* The initial release of a **component catalogue** so that you can share and reuse components developed by others in the community.
-* More scalable **governance strategies** so that the system can self-govern as the number of participants increases.
+* The initial release of a **component catalogue** so that you can share and reuse components developed by others in the community
+* More scalable **governance strategies** so that the system can self-govern as the number of participants increases
 
 At the same time we will continue to enhance and expand the components in the design system in accordance with their individual
 roadmaps.
