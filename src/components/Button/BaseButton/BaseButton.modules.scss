@@ -12,11 +12,11 @@ $button-text-color: $color-white;
 }
 
 .base {
-  composes: noSpacing from '../../Spacing.modules.scss';
   composes: none rounded from '../../Borders.modules.scss';
   composes: medium boldFont from '../../Typography/Text/Text.modules.scss';
   composes: height font from '../../Forms.modules.scss';
 
+  margin: 0;
   padding: 0 2rem;
 
   cursor: pointer;
