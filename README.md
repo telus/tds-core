@@ -58,88 +58,14 @@ The following group are the maintainers of this project, and have merge rights a
 
 | Member | Role | Slack | Github | 
 | --- | --- | --- | --- |
-| Ryan Oglesby | Tech Lead | @roglesby | ryanoglesby08 |
-| Enrico Sacchetti | Sr. Dev | @enrico | theetrain | 
-| Laura Cabrera | Dev | @laura.cabrera | lzcabrera |
-| Lucy List | Design Lead | @lucylist | lucylist |
+| Ryan Oglesby | Tech Lead | @roglesby | @ryanoglesby08 |
+| Enrico Sacchetti | Sr. Dev | @enrico | @theetrain |
+| Laura Cabrera | Dev | @laura.cabrera | @lzcabrera |
+| Lucy List | Design Lead | @lucylist | @lucylist |
 | Stephen McGuinness | Design | @stephenmcg | |
-| Alexandra Fedyk | Scrum Master | @alexandra.fedyk | |
+| Alexandra Fedyk | Scrum Master | @alexandra.fedyk | @alexandramfedyk |
 
-
-## Installation
-
-_If you are using the [isomorphic-starter-kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), these steps should already be done._
-
-```sh
-yarn add @telusdigital/tds
-
-# Or, with npm :)
-npm install @telusdigital/tds --save
-```
-
-## Usage
-
-### 1. Import the TDS styles
-
-First, import the TDS stylesheet into the main entry point of your application. This stylesheet contains all the global TDS styles and the
-component styles. Webpack will bundle the TDS styles with your application specific styles.
-
-```js
-// index.js
-
-import React from 'react';
-import { render } from 'react-dom';
-
-import App from './App';
-
-import '@telusdigital/tds/dist/tds.css'
-
-render(
-  <App />,
-  document.getElementById("root")
-);
-```
-
-### 2. Use TDS Components
-
-Now, use TDS components in your application components.
-
-```js
-// MyLoadingCard.js
-
-import React from 'react';
-
-import { Card, Spinner } from '@telusdigital/tds';
-
-const MyLoadingCard = ({loading, children}) => (
-  <div>
-    {loading && <Spinner spinning={true} tip="Loading..." />}
-
-    <Card>
-      {children}
-    </Card>
-  </div>
-);
-```
-
-### 3. Use TDS Sass variables and mixins
-
-Finally, use TDS Sass variables and mixins in your Sass files. Only add these imports into files that use the provided
-variables, functions, or mixins.
-
-```scss
-// MyLoadingCard.scss
-
-@import '~@telusdigital/tds/dist/scss/helpers';
-@import '~@telusdigital/tds/dist/scss/mixins';
-@import '~@telusdigital/tds/dist/scss/variables';
-
-.my-loading-card {
-  color: $color-accessible-green;
-}
-```
-
-[license-url]: http://choosealicense.com/licenses/isc/
+[license-url]: http://choosealicense.com/licenses/mit/
 
 [npm-url]: https://www.npmjs.com/package/@telusdigital/tds
 [npm-version]: https://img.shields.io/npm/v/@telusdigital/tds.svg?style=flat-square
