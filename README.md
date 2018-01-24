@@ -1,3 +1,5 @@
+![TELUS Design System](TDS_logo_lockup.png "TELUS Design System")
+
 # TELUS Design System [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
