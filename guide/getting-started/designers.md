@@ -140,7 +140,6 @@ The TDS Master Sketch file is a document that will help you get started with you
   </tr>
 </table>
 
-
 You can use the TDS component library by dragging and dropping the assets onto your artboard. For more information or detailed instructions on how to use DSM, please visit the [Invision DSM Support Centre](https://support.invisionapp.com/hc/en-us/articles/115005685166).
 
 ## TDS Component Documentation
@@ -149,17 +148,17 @@ To view the code and usage of the components please visit the [TDS components do
 
 ## Fonts
 
-TELUS’s primary typeface is Helvetica Neue which is available as a system fonts up to Mac OS X 10.7 Lion. No other fonts are needed to use the TDS component library, or the Master Sketch file.
+TELUS' primary typeface is Helvetica Neue which is available as a system font on Mac OS X 10.7 Lion and later. No other fonts are needed to use the TDS component library, or the Master Sketch file.
 
 ## Icons
 
-Currently [Utility icons](https://tds.telus.com/#icons) are available to use as components in the TELUS Design System. Decorative icon usage is currently being reviewed by the TELUS Brand team. Stay tuned for more updates. In the meantime, you can continue to use the Brand approved icons available on the [TELUS Brand Hub](https://brand.telus.com/library/all?media_type%5B0%5D=media_icons).
+Currently [Utility icons](https://tds.telus.com/#icons) are available to use as components in the TELUS Design System. Decorative icon usage is currently being reviewed by the TELUS Brand team. Stay tuned for more updates. In the meantime, you can continue to use the Brand approved icons available on the [TELUS BrandHub](https://brand.telus.com/library/all?media_type%5B0%5D=media_icons).
 
 ## Images
 
-For nature, TELUS critters and devices images, please visit the [TELUS Brand Hub](https://brand.telus.com/library/all?media_type%5B0%5D=media_images&imgcat=All&search_terms=&sort_by=created&sort_order=DESC) for a library of brand approved images to use with your project. You will need your TELUS ID to log in or you can follow the instructions to sign up for a an account. There is an approval process to sign up for an account so make sure you allot time to it.
+For nature, TELUS critters and devices images, please visit the [TELUS BrandHub](https://brand.telus.com/library/all?media_type%5B0%5D=media_images&imgcat=All&search_terms=&sort_by=created&sort_order=DESC) for a library of brand-approved images to use with your project. You will need your TELUS ID to log in or you can follow the instructions to sign up for a an account. There is an approval process to sign up for an account so make sure you allot time to it.
 
-The brand team is working towards creating a library of lifestyle photography. Until then, use your preferred stock photography site to source lifestyle images if your project requires lifestyle photography. Where possible, please consider using images from the TELUS Brand Hub before trying to source lifestyle photography.
+The brand team is working towards creating a library of lifestyle photography. Until then, use your preferred stock photography site to source lifestyle images if your project requires lifestyle photography. Where possible, please consider using images from the TELUS BrandHub before trying to source lifestyle photography.
 
 Please follow the [TELUS Brand Photography Guidelines](https://drive.google.com/a/telus.com/file/d/0BzlWahrSc56DenY4YzBndm1mWkk/view?usp=sharing) for detailed information on usage and implementation of the images.
 
