@@ -6,15 +6,15 @@ As a developer, your primary interaction point with TDS is through React compone
 
 TDS components include:
 
-* semantic and accessible markup
-* cross-browser compatible styling
-* responsive behaviour
-* small, contained bits of UI logic
+* Semantic and accessible markup
+* Cross-browser compatible styling
+* Responsive behaviour
+* Small, contained bits of UI logic
 
 TDS components do not include:
 
-* business logic, such as validations or API calls
-* external margins or global side effects
+* Business logic, such as validations or API calls
+* External margins or global side effects
 
 
 ## Installing
