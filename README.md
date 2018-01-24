@@ -1,4 +1,4 @@
-![TELUS Design System](TDS_logo_lockup.png "TELUS Design System")
+![TELUS Design System](docs/components/Logo/Logo.svg "TELUS Design System")
 
 # TELUS Design System [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
 
