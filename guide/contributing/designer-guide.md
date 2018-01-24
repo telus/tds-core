@@ -26,13 +26,13 @@ For each viewport supplied, the [TDS grid](http://tds.telus.com/3-Foundational-E
 
 #### Page/Layer Naming:
 
-Layers should be named clearly and not using the default naming (i.e. Layer 1, Layer 1 Copy).
+Layers should be named clearly and not using the default naming (e.g. Layer 1, Layer 1 Copy).
 
 Applying the above standards to the contributed sketch files will ensure a clean contribution that can be easily added to the DSM library and used by all teams. Contributed components will be used by teams within TELUS and also external vendors.
 
 ## Typestyles: 
 
-For any of the components being contributed, the file should have the [TDS type stack](http://tds.telus.com/3-Foundational-Elements/6-typography.html) applied to any and ALL of the text blocks in the contribution (ie. Display, H1, H2, H3, etc). 
+For any of the components being contributed, the file should have the [TDS type stack](http://tds.telus.com/3-Foundational-Elements/6-typography.html) applied to any and ALL of the text blocks in the contribution (e.g. Display, H1, H2, H3, etc). 
 
 Note: We understand that there are some cases that require the type stack to change slightly (ie. colour of H1). In these cases, please make the appropriate change to the file, and note it during the contribution and we can add the new type stack style to the TDS component library. This will help us manage and update the typestack in the DSM library for others consume.
 
