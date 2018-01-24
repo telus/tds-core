@@ -7,44 +7,44 @@ The TELUS Design System (TDS) is a set of living guidelines that communicates ou
 It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for
 digital design guidelines, code patterns and UI elements.
 
-TDS usage, documentation & examples: <http://tds.telus.com>
+TDS component usage, documentation & examples: <http://tds.telus.com>
 ## Table of Contents
 
-### TELUS Design System
+#### TELUS Design System
 
-* [Getting Started](./getting-started/getting-started.md)
-  * [Designers](./getting-started/designers.md)
-  * [Developers](./getting-started/developers.md)
+* [Getting Started](guide/getting-started/getting-started.md)
+  * [Designers](guide/getting-started/designers.md)
+  * [Developers](guide/getting-started/developers.md)
 * [Components](ref://components/index.html)
-* [Contributing](./contributing/contributing.md)
-  * [Designer guide](./contributing/designer-guide.md)
-  * [Developer guide](./contributing/developer-guide.md)
-  * [Codebase overview](./contributing/codebase-overview.md)
-* [Roadmap](./roadmap.md)
+* [Contributing](guide/contributing/contributing.md)
+  * [Designer guide](guide/contributing/designer-guide.md)
+  * [Developer guide](guide/contributing/developer-guide.md)
+  * [Codebase overview](guide/contributing/codebase-overview.md)
+* [Roadmap](guide/roadmap.md)
 
-### Design principles &amp; guidelines
+#### Design principles &amp; guidelines
 
-* [Design Principles](./design/principles.md)
-* [Accessibility](./accessibility/accessibility.md)
-  * [Colour and contrast](./accessibility/colour-contrast.md)
-  * [Keyboard navigation](./accessibility/keyboard-nav.md)
-  * [Screen readers](./accessibility/screen-readers.md)
-  * [Content](./accessibility/content.md)
-* [Colour](./design/colour.md)
-* [Typography](./design/typography.md)
-* [Iconography](./design/iconography.md)
-* [Writing](./design/writing.md)
-* [Layout](./design/layout.md)
-* [Motion](./design/motion.md)
-* [Depth](./design/depth.md)
+* [Design Principles](guide/design/principles.md)
+* [Accessibility](guide/accessibility/accessibility.md)
+  * [Colour and contrast](guide/accessibility/colour-contrast.md)
+  * [Keyboard navigation](guide/accessibility/keyboard-nav.md)
+  * [Screen readers](guide/accessibility/screen-readers.md)
+  * [Content](guide/accessibility/content.md)
+* [Colour](guide/design/colour.md)
+* [Typography](guide/design/typography.md)
+* [Iconography](guide/design/iconography.md)
+* [Writing](guide/design/writing.md)
+* [Layout](guide/design/layout.md)
+* [Motion](guide/design/motion.md)
+* [Depth](guide/design/depth.md)
 
-### Assets
+#### Assets
 * [Download the Sketch file](https://github.com/telusdigital/tds/releases/latest)
 
-### Support &amp; links
+#### Support &amp; links
 
-* [Contact us](./contact.md)
-* [FAQs](./getting-started/faq.md)
+* [Contact us](guide/contact.md)
+* [FAQs](guide/getting-started/faq.md)
 * [Report an issue](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
 * [Suggest a feature](https://github.com/telusdigital/tds/issues/new?template=feature_template.md)
 * [TDS on GitHub](https://github.com/telusdigital/tds)
@@ -61,6 +61,7 @@ The following group are the maintainers of this project, and have merge rights a
 | Laura Cabrera | Dev | @laura.cabrera | lzcabrera |
 | Lucy List | Design Lead | @lucylist | lucylist |
 | Stephen McGuinness | Design | @stephenmcg | |
+| Alexandra Fedyk | Scrum Master | @alexandra.fedyk | |
 
 
 ## Installation
