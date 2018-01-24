@@ -22,7 +22,7 @@ easily. Aim for a grade 8 reading level.
 To do this, we need to write and speak naturally with a purpose. A helpful way to make sure you’re writing naturally and 
 with a purpose is to read your work out loud.
 
-### Do’s
+### Dos
 
 * Be concise and to the point
 * Use simple words rather than their longer equivalent
@@ -34,7 +34,7 @@ with a purpose is to read your work out loud.
 * Keep your readers in mind. If you’re confused by what you’ve written, they will be too
 * Watch for redundancy - and don’t duplicate or reiterate what you want to say when it’s redundant or unnecessary
 
-### Dont’s
+### Don'ts
 
 * Use jargon, acronyms or corporate-speak
 * Use words like “bargain” and “deal” that devalue the message
