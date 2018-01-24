@@ -10,7 +10,7 @@ digital design guidelines, code patterns and UI elements.
 TDS usage, documentation & examples: <http://tds.telus.com>
 ## Table of Contents
 
-## TELUS Design System
+### TELUS Design System
 
 * [Getting Started](./getting-started/getting-started.md)
   * [Designers](./getting-started/designers.md)
@@ -22,7 +22,7 @@ TDS usage, documentation & examples: <http://tds.telus.com>
   * [Codebase overview](./contributing/codebase-overview.md)
 * [Roadmap](./roadmap.md)
 
-## Design principles &amp; guidelines
+### Design principles &amp; guidelines
 
 * [Design Principles](./design/principles.md)
 * [Accessibility](./accessibility/accessibility.md)
@@ -38,10 +38,10 @@ TDS usage, documentation & examples: <http://tds.telus.com>
 * [Motion](./design/motion.md)
 * [Depth](./design/depth.md)
 
-## Assets
+### Assets
 * [Download the Sketch file](https://github.com/telusdigital/tds/releases/latest)
 
-## Support &amp; links
+### Support &amp; links
 
 * [Contact us](./contact.md)
 * [FAQs](./getting-started/faq.md)
@@ -50,12 +50,17 @@ TDS usage, documentation & examples: <http://tds.telus.com>
 * [TDS on GitHub](https://github.com/telusdigital/tds)
 * [npm package](https://www.npmjs.com/package/@telusdigital/tds)
 
-## Maintainers & ARB (Architecture Review Board)
+## TDS Maintainers
 
-The following group of Tech Leads and Senior Developers are the maintainers of this project, and have merge rights accordingly. Please reach out to them if you have questions or need support for your contribution to SiteBuilder.
+The following group are the maintainers of this project, and have merge rights accordingly. Please reach out to them if you have questions or need support for your contribution to the TELUS Design System.
 
-| Member | Team | Slack | Github | 
+| Member | Role | Slack | Github | 
 | --- | --- | --- | --- |
+| Ryan Oglesby | Tech Lead | @roglesby | ryanoglesby08 |
+| Enrico Sacchetti | Sr. Dev | @enrico | theetrain | 
+| Laura Cabrera | Dev | @laura.cabrera | lzcabrera |
+| Lucy List | Design Lead | @lucylist | lucylist |
+| Stephen McGuinness | Design | @stephenmcg | |
 
 
 ## Installation
