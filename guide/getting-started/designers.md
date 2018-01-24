@@ -12,7 +12,7 @@ You will need Sketch set up on your computer before starting any project. Please
 
 **For TELUS designers**:
 
-You would have gotten a Sketch license during your onboarding, but if not, you can [download a trial version](https://www.sketchapp.com/) of the latest Sketch app and then contact [@BrianLam1](mailto:Brian.Lam1@telus.com) from the Design Strategy team for a license.
+You should have been given a Sketch license during your onboarding. If not, you can [download a trial version](https://www.sketchapp.com/) of the latest Sketch app and then contact [@BrianLam1](mailto:Brian.Lam1@telus.com) from the Design Strategy team for a license.
 
 For vendors or designers outside of TELUS Digital, you can purchase and [download Sketch](https://www.sketchapp.com/pricing/) for $99/year.
 
