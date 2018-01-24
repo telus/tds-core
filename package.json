@@ -2,7 +2,7 @@
   "name": "@telusdigital/tds",
   "version": "0.34.0",
   "description": "TELUS Design System",
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/tds.cjs.js",
   "module": "dist/tds.es.js",
   "files": ["dist", "src", "CHANGELOG.md", "CONTRIBUTING.md", "UPGRADING.md"],
