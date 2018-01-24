@@ -1,4 +1,7 @@
-# TELUS Design System [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
+# TELUS Design System [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences.
 It's a holistic platform that integrates documentation, guidelines and design management and that serves as single source for
@@ -78,3 +81,9 @@ variables, functions, or mixins.
   color: $color-accessible-green;
 }
 ```
+
+[license-url]: http://choosealicense.com/licenses/isc/
+
+[npm-url]: https://www.npmjs.com/package/@telusdigital/tds
+[npm-version]: https://img.shields.io/npm/v/@telusdigital/tds.svg?style=flat-square
+[npm-license]: https://img.shields.io/npm/l/@telusdigital/tds.svg?style=flat-square
