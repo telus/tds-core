@@ -1,4 +1,6 @@
-# Getting started guide for developers
+# TDS Getting Started
+
+A Guide for Developers
 
 As a developer, your primary interaction point with TDS is through React components. Though the components are currently distributed in a single bundle, you should conceptualize them as independent, composable components.
 
