@@ -25,8 +25,7 @@
     "lint:ec": "echint",
     "lint": "yarn lint:js && yarn lint:scss && yarn lint:ec",
     "packup": "yarn build-package && yarn pack",
-    "precommit":
-      "yarn lint && yarn test && yarn build-package && yarn build-styleguide && yarn build-gitbook",
+    "precommit": "yarn lint && yarn test && yarn build-package && yarn build-styleguide",
     "release:changelog": "changelog",
     "release": "scripts/release.sh",
     "scaffold": "node scripts/scaffold.js",
