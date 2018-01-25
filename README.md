@@ -5,49 +5,14 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
+* [Component catalogue](http://tds.telus.com)
+* [Guidelines](/guide/README.md)
+
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences.
 It's a holistic platform that integrates documentation, guidelines and design management that serves as single source for
 digital design guidelines, code patterns and UI elements.
 
 TDS is intended for use by TELUS employees and approved vendors.
-
-TDS component usage, documentation & examples: <http://tds.telus.com>
-
-## Table of Contents
-
-* [Getting Started](guide/getting-started/getting-started.md)
-  * [Designers](guide/getting-started/designers.md)
-  * [Developers](guide/getting-started/developers.md)
-* [Components](http://tds.telus.com)
-* [Contributing](guide/contributing/contributing.md)
-  * [Designer guide](guide/contributing/designer-guide.md)
-  * [Developer guide](guide/contributing/developer-guide.md)
-  * [Codebase overview](guide/contributing/codebase-overview.md)
-* [Roadmap](guide/roadmap.md)
-
-#### Design principles &amp; guidelines
-
-* [Design Principles](guide/design/principles.md)
-* [Accessibility](guide/accessibility/accessibility.md)
-  * [Colour and contrast](guide/accessibility/colour-contrast.md)
-  * [Keyboard navigation](guide/accessibility/keyboard-nav.md)
-  * [Screen readers](guide/accessibility/screen-readers.md)
-  * [Content](guide/accessibility/content.md)
-* [Colour](guide/design/colour.md)
-* [Typography](guide/design/typography.md)
-* [Iconography](guide/design/iconography.md)
-* [Writing](guide/design/writing.md)
-* [Layout](guide/design/layout.md)
-* [Motion](guide/design/motion.md)
-* [Depth](guide/design/depth.md)
-
-#### Support &amp; links
-
-* [Contact us](guide/contact.md)
-* [FAQs](guide/getting-started/faq.md)
-* [Report an issue](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
-* [Suggest a feature](https://github.com/telusdigital/tds/issues/new?template=feature_template.md)
-* [npm package](https://www.npmjs.com/package/@telusdigital/tds)
 
 ## TDS Maintainers
 

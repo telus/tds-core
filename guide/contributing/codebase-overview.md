@@ -5,9 +5,9 @@ A description of the structure of the codebase, conventions being followed, and 
 ## Contents
 
 - [Tools](#tools)
-- [Component structure &amp; standards](#standards)
+- [Component structure and standards](#component-structure-and-standards)
 - [Building components](#building-components)
-- [Writing test](#tests)
+- [Writing test](#writing-tests)
 
 ## Tools
 
@@ -30,7 +30,7 @@ We utilize the following tools for the development, release, and distribution pr
 - [Openshift](https://www.openshift.com/) and [Docker](https://www.docker.com/): the CI pipeline is largely
   based on the isomorphic stater kit pipeline, using Docker as the build artifact
 
-## Component structure &amp; standards
+## Component structure and standards
 
 All TDS components have a common directory structure and set of standards. Where you have a
 component named `ButtonLink`, the files are organized like this:
