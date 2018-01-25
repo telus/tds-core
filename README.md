@@ -60,7 +60,7 @@ The following group are the maintainers of this project, and have merge rights a
 | Enrico Sacchetti | Developer | @enrico | @theetrain |
 | Laura Cabrera | Developer | @laura.cabrera | @lzcabrera |
 | Lucy List | Design | @lucylist | @lucylist |
-| Stephen McGuinness | Design | @stephenmcg | |
+| Stephen McGuinness | Design | @stephenmcg | stephenmcguinness |
 
 [license-url]: http://choosealicense.com/licenses/mit/
 
