@@ -1,3 +1,98 @@
+#### 1.0.0 (2018-01-25)
+
+##### Build System / Dependencies
+
+* **scripts:** Remove scss/utility from dist/scss ([44758988](https://github.com/telusdigital/tds/commit/447589889707134b6c34bff675beb73cae7434f6))
+
+##### Chores
+
+* **guide:** clean up links to make them GitHub friendly ([afbc6842](https://github.com/telusdigital/tds/commit/afbc684266ee7d92e0179b11dbe0282690778657))
+
+##### Documentation Changes
+
+* **readme:**
+  * Add missing @ on Stephen's slack handle ([fb40643c](https://github.com/telusdigital/tds/commit/fb40643cd995f4080bb2b81cb6048b912212f994))
+  * Removing duplicate content in /guide ([2e5b95a4](https://github.com/telusdigital/tds/commit/2e5b95a44d2b3e52411fcc96755af86321a0e351))
+  * update maintainer list ([cae21a8d](https://github.com/telusdigital/tds/commit/cae21a8d1efda6543c82165edb9b347b64d7b5ff))
+  * Remove duplicate content in README ([0dd7e078](https://github.com/telusdigital/tds/commit/0dd7e078cfd761f4b41e8cd8911b5e15bcca5bb7))
+  * update logo ([9d42ac67](https://github.com/telusdigital/tds/commit/9d42ac671c88652047117a18001af2b7b2b010ae))
+  * update component link ([2b303f23](https://github.com/telusdigital/tds/commit/2b303f236a8bfe5f71ca58436f0d04ed41e66f77))
+  * update second paragraph ([79212da6](https://github.com/telusdigital/tds/commit/79212da660a261cfc4f455ef94a5c77b673e3359))
+  * add licence and npm badges ([927b684a](https://github.com/telusdigital/tds/commit/927b684ab05ef4a382ececa816097520053888f3))
+  * Update shields ([af6dfd93](https://github.com/telusdigital/tds/commit/af6dfd939292d8c35004c2912a8023a14ed4ca4a))
+  * add npm and prettier shields ([9bfca11a](https://github.com/telusdigital/tds/commit/9bfca11abb9b55c177fe8ed0e8a4fb7f023901ff))
+* **styleguidist:**
+  * Update back to Guidelines link on sidebar to point to github ToC ([f31ba8b7](https://github.com/telusdigital/tds/commit/f31ba8b7135cf443383b63d5b79bbca4160621b0))
+  * Cleanup colour palette sass ([94820480](https://github.com/telusdigital/tds/commit/94820480c7b044aab1087c79a04463b618406d82))
+* **ToC:** Moved Table of Contents to guide/README.md ([405f359b](https://github.com/telusdigital/tds/commit/405f359bd4dc48b521af335e19ddd1565b0e9f27))
+* **guide:**
+  * Clean up links in codebase-overview ([6dac445c](https://github.com/telusdigital/tds/commit/6dac445ccd711c35910013845c6f2472b3ddbe76))
+  * remove upgrade guide ([ca7e80d0](https://github.com/telusdigital/tds/commit/ca7e80d098f4026d85735b98affecf529e5d83ec))
+* **input:** change name example ([21a39f63](https://github.com/telusdigital/tds/commit/21a39f631ab0bd86aed604c91e32c6df75b562bd))
+* **contributing:**
+  * Add ToC for subpages in guide/contributing/contributing.md ([a2144240](https://github.com/telusdigital/tds/commit/a2144240abc5a75404cb6ec5fed5a9d2f27b100b))
+  * Update /contributing.md ([16b1f0a0](https://github.com/telusdigital/tds/commit/16b1f0a06100e7c0433d6a871bf2885983859b22))
+  * add michael edits ([ad4ab224](https://github.com/telusdigital/tds/commit/ad4ab22442c1dd3b776d9695146226420b01825b))
+* **faq:**
+  * remove transpiled statement ([7adb4ed8](https://github.com/telusdigital/tds/commit/7adb4ed842b41c1f4b6021e89183922636c968a7))
+  * Update polyfill documentation ([5455c1a6](https://github.com/telusdigital/tds/commit/5455c1a6f218055ce3388c8107291dc02d175e60))
+* **icons:** add 48px sized icon example ([0d52747e](https://github.com/telusdigital/tds/commit/0d52747e37dc392d529f94a862c8d35793311b65))
+* **TDS_logo_lockup.png:** no longer need logo ([3d5111a9](https://github.com/telusdigital/tds/commit/3d5111a9a47385f4ff6ad0c52530f3afa8f4ad04))
+* **license:**
+  * Update package.json license ([989a5a54](https://github.com/telusdigital/tds/commit/989a5a5405f4ac25ef9f4b0c214ea21268d31aa2))
+  * Update to MIT License ([53867ef4](https://github.com/telusdigital/tds/commit/53867ef47395ae996f1f0fe3fa0cfe111dd2ac94))
+* **writing:** add michael edits ([1f4a0427](https://github.com/telusdigital/tds/commit/1f4a0427b16639ff14db36dc9ae0f31b413ed0eb))
+* **iconography:** add michael edits ([78fe8a27](https://github.com/telusdigital/tds/commit/78fe8a272c00e77de5e51179360b5b6a56780ac3))
+* **typography:**
+  * add michael edits ([0cbc1591](https://github.com/telusdigital/tds/commit/0cbc1591c4948adde091161e81a59f961193c692))
+  * fix typo ([c64ef5b1](https://github.com/telusdigital/tds/commit/c64ef5b11ba7f6e7ceb77f58d98024d8faef7597))
+  * Clean up typography copy in styleguidist ([abe3570f](https://github.com/telusdigital/tds/commit/abe3570f1e680a36cf79a5b03d0158e589f3bb4a))
+* **principles:** add michael edits ([d266da28](https://github.com/telusdigital/tds/commit/d266da282976dc0d9d64aaf631f9e67803f1d362))
+* **roadmap:** add michael edits ([41544079](https://github.com/telusdigital/tds/commit/4154407975356799981faa3d45b2baa77e0e9f47))
+* **designer-guide:** add michael edits ([1eb9cd35](https://github.com/telusdigital/tds/commit/1eb9cd3557d6f0a8da6556173b9ce10bee0f8d38))
+* **developers:** add michael edits ([7a027411](https://github.com/telusdigital/tds/commit/7a0274110f61be10f9c779e05c2ed49c323e04e1))
+* **designers:**
+  * add michael edits ([9e9edf7c](https://github.com/telusdigital/tds/commit/9e9edf7c79b88b0c6d6b916053fe875d7d151b8e))
+  * adjust width of craft image ([67be25d9](https://github.com/telusdigital/tds/commit/67be25d9a96298969e7f2dea629c4225e81f084c))
+  * removed table ([44d7f8dc](https://github.com/telusdigital/tds/commit/44d7f8dc5e72e20972486a5a48756c52121d612a))
+  * update releases ([39829bba](https://github.com/telusdigital/tds/commit/39829bbad431a0070a0015de87e2741afa58226c))
+  * fix typo ([2be5a481](https://github.com/telusdigital/tds/commit/2be5a481c9a15aa3dad9fc10351c37c13295b5d8))
+* **getting-started:**
+  * added Michael's edits ([e2791b06](https://github.com/telusdigital/tds/commit/e2791b06a637eab43e90b178a986f88d46a1e42c))
+  * add craftmanager11 image ([67c803e0](https://github.com/telusdigital/tds/commit/67c803e048ad2e2d754e33a112383aee1c72bbf2))
+  * add craftmanager10 image ([b3723a1d](https://github.com/telusdigital/tds/commit/b3723a1d23f5b6b3cb7139683873f35122063a35))
+* **upgrading:** Remove upgrading.md ([60a69739](https://github.com/telusdigital/tds/commit/60a69739acae3a933e963de8dc8ee58218b48282))
+* **foundational-elements:**
+  * Add Colours section back to sidebar ([165f4ba6](https://github.com/telusdigital/tds/commit/165f4ba60d95136b29d2015fb5da61c40dc34cc7))
+  * Remove dated copy ([307f3a75](https://github.com/telusdigital/tds/commit/307f3a75e2045d649594e635d5e90ec4823f30a6))
+  * Remove duplicate copy in colours section and add link to guidelines cop ([63322567](https://github.com/telusdigital/tds/commit/633225672169ae7c3918f1576ef1b6e83b907102))
+  * remove Grid section and deleted previously removed files used in styleg ([c08d857e](https://github.com/telusdigital/tds/commit/c08d857e8a4cccb348f639e3e272d429fbe49964))
+* **grid:** Add (deprecated) on the sidebar listing ([53073ced](https://github.com/telusdigital/tds/commit/53073ced04f8bf263adef1ee6bee95508b4fccd6))
+
+##### New Features
+
+* **package:**
+  * remove gitbook precommit check ([ee652318](https://github.com/telusdigital/tds/commit/ee652318ac457cde25f90b5dc40a634d6370d626))
+  * add packup script ([fb2343d3](https://github.com/telusdigital/tds/commit/fb2343d3adc15f3cd65cb05ed7bf6b9e1af4d3ab))
+* **github:** add security notice ([a22377bd](https://github.com/telusdigital/tds/commit/a22377bd1c27ae57b8bff374bed8c2369e8fbc84))
+* **scripts:** only copy colours to dist ([5aaafe11](https://github.com/telusdigital/tds/commit/5aaafe1186fb3948ff48e673dd05d4e453556225))
+* **grid:** Remove old Grid sass, components and documentation ([53145d4f](https://github.com/telusdigital/tds/commit/53145d4f1117227527de831cb6283468ed6c66bc))
+* **selector-counter:** Add .accessible-hide and also style the label on the last example ([2fbd048c](https://github.com/telusdigital/tds/commit/2fbd048cbe7b314ccfba9e276a44bf8e025509fd))
+
+##### Bug Fixes
+
+* **styleguide:** link properly to github ([3fe40d87](https://github.com/telusdigital/tds/commit/3fe40d87477c9d4e38e9a2ec9798a9d200a2bbb5))
+* **select:**
+  * show chevron on top of select ([29366b21](https://github.com/telusdigital/tds/commit/29366b212411692d590638d4a59ab155f0580f68))
+  * Prevent the first option from being selected ([18fb65d4](https://github.com/telusdigital/tds/commit/18fb65d4f029a1530dab88c08cf3a875fe99878c))
+* **base-button:** Fix padding when long cta copy is used ([efc3f610](https://github.com/telusdigital/tds/commit/efc3f610b1c54920d68c6383598760d77540656b))
+* **selector-counter:** Adjust caret size to match what's in production ([f4185596](https://github.com/telusdigital/tds/commit/f4185596d933e1a8b74b72964f6daa05263c27d8))
+* **line-height:** in globally scoped css ([0d01091f](https://github.com/telusdigital/tds/commit/0d01091f1b8d5e576fda12c3a2990f82d3c4038c))
+
+##### Refactors
+
+* **css-cleanup:** Removed mixins and variables sass files ([9325f6b8](https://github.com/telusdigital/tds/commit/9325f6b8cbe3e5511a0c89ae7cfb05bd1e9e7b4e))
+
 #### 0.34.0 (2018-01-17)
 
 ##### Build System / Dependencies
