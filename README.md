@@ -55,12 +55,12 @@ The following group are the maintainers of this project, and have merge rights a
 
 | Member | Role | Slack | Github | 
 | --- | --- | --- | --- |
-| Ryan Oglesby | Tech Lead | @roglesby | @ryanoglesby08 |
-| Enrico Sacchetti | Sr. Dev | @enrico | @theetrain |
-| Laura Cabrera | Dev | @laura.cabrera | @lzcabrera |
-| Lucy List | Design Lead | @lucylist | @lucylist |
-| Stephen McGuinness | Design | @stephenmcg | |
 | Alexandra Fedyk | Scrum Master | @alexandra.fedyk | @alexandramfedyk |
+| Ryan Oglesby | Developer | @roglesby | @ryanoglesby08 |
+| Enrico Sacchetti | Developer | @enrico | @theetrain |
+| Laura Cabrera | Developer | @laura.cabrera | @lzcabrera |
+| Lucy List | Design | @lucylist | @lucylist |
+| Stephen McGuinness | Design | @stephenmcg | |
 
 [license-url]: http://choosealicense.com/licenses/mit/
 
