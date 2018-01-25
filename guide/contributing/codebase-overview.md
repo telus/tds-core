@@ -7,9 +7,6 @@ A description of the structure of the codebase, conventions being followed, and 
 - [Tools](#tools)
 - [Component structure &amp; standards](#standards)
 - [Building components](#building-components)
-  - [Creating a new component from scratch](#creating-component)
-  - [React &amp; JSX patterns](#react-patterns)
-  - [Styling components](#styling)
 - [Writing test](#tests)
 
 ## Tools
@@ -32,9 +29,8 @@ We utilize the following tools for the development, release, and distribution pr
   manager for its speed and deep dependency version locking
 - [Openshift](https://www.openshift.com/) and [Docker](https://www.docker.com/): the CI pipeline is largely
   based on the isomorphic stater kit pipeline, using Docker as the build artifact
-- [gitbook](https://www.gitbook.com/): create and edit static documentation
 
-## Component structure &amp; standards {#structure}
+## Component structure &amp; standards
 
 All TDS components have a common directory structure and set of standards. Where you have a
 component named `ButtonLink`, the files are organized like this:
@@ -69,7 +65,7 @@ and form across the codebase. Though the majority of syntax is automatically for
 with the aid of Prettier (see [Developer Guide](./contributing/developer-guide.md) for setup), this guide covers
 the more subjective rules we uphold.
 
-### Creating new components from scratch {#creating-component}
+### Creating new components from scratch
 
 When starting fresh, you can use the scaffolding script to generate a component directory structure:
 
@@ -77,9 +73,9 @@ When starting fresh, you can use the scaffolding script to generate a component 
 yarn scaffold ButtonLink
 ```
 
-This will output a set of files in the [aforementioned structure](#structure).
+This will output a set of files in the aforementioned structure.
 
-### React &amp; JSX patterns {#react-patterns}
+### React &amp; JSX patterns
 
 Though the following patterns are not strictly enforced, they are strongly encouraged:
 
@@ -102,7 +98,7 @@ Though the following patterns are not strictly enforced, they are strongly encou
 
 [Here is an example of a React component that follows the above patterns](https://github.com/telusdigital/tds/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.jsx).
 
-### Styling components {#styling}
+### Styling components
 
 TDS components use CSS Modules with Sass. You can learn about its usage and design from the 
 [CSS Modules GitHub repository](https://github.com/css-modules/css-modules). TDS components derive CSS modules from 
@@ -125,7 +121,7 @@ and 'base' classes since 'primary' composes' base -->
 <a class="primary base" href="#">Find out how</a>
 ```
 
-### Writing tests {#tests}
+### Writing tests
 
 Tests utilize Jest and Enzyme matchers. Tests are treated as a first-class citizen. Tests
 should clearly outline the features and expected output for a component. For some inspiration, have a look at how
