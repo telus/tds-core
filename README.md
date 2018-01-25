@@ -12,8 +12,6 @@ digital design guidelines, code patterns and UI elements.
 TDS component usage, documentation & examples: <http://tds.telus.com>
 ## Table of Contents
 
-#### TELUS Design System
-
 * [Getting Started](guide/getting-started/getting-started.md)
   * [Designers](guide/getting-started/designers.md)
   * [Developers](guide/getting-started/developers.md)
