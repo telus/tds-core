@@ -17,7 +17,7 @@ const Logo = () => (
 
     <Box horizontal={1} vertical={2}>
       <ChevronLink
-        href="//github.com/telusdigital/tds/tree/master/guide"
+        href="https://github.com/telusdigital/tds/tree/master/guide"
         variant="secondary"
         direction="left"
       >
