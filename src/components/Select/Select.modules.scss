@@ -30,5 +30,5 @@
   composes: absolute centerVertically from '../Position.modules.scss';
   composes: iconRight from '../FormField/FormField.modules.scss';
 
-  z-index: 1;
+  z-index: 3;
 }
