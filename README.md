@@ -47,7 +47,6 @@ TDS component usage, documentation & examples: <http://tds.telus.com>
 * [FAQs](guide/getting-started/faq.md)
 * [Report an issue](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
 * [Suggest a feature](https://github.com/telusdigital/tds/issues/new?template=feature_template.md)
-* [TDS on GitHub](https://github.com/telusdigital/tds)
 * [npm package](https://www.npmjs.com/package/@telusdigital/tds)
 
 ## TDS Maintainers
