@@ -11,7 +11,7 @@ Supply additional HTML input attributes as normal.
 
 ```
 <Box between={2}>
-  <Input label="First name" value="Lucy" />
+  <Input label="First name" value="Harry" />
 
   <Input type="tel" label="Mobile phone" pattern="[0-9]{10}" maxLength="10" />
   <Input type="password" label="Tax ID" value="123456789" autoComplete="on" />
