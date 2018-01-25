@@ -8,7 +8,6 @@ If your design shows a component being used in a way that does not match what is
 
 Either way, [let us know about it](../contact.md) so that we can work with you on the appropriate solution.
 
-
 ## How is TDS versioned?
 
 TDS adheres to [Semantic Versioning](https://semver.org/) so that consumers have a predictable way of managing the dependency.
@@ -23,7 +22,6 @@ While TDS is currently structured as a single package, we intend to separate eac
 
 Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md).
 
-
 ## What browsers does TDS support?
 
 * Chrome
@@ -33,13 +31,12 @@ Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md).
 * Internet Explorer: 10
 * Opera
 
-
 ## Do I need any polyfills?
 
-TDS is striving to use non-invasive [ponyfills](https://github.com/sindresorhus/ponyfill) (a polyfill that does not modify built-in APIs) if it uses a browser API that is not widely supported natively. But at the moment we recommend the use of the Set object in [polyfill.io](https://polyfill.io/v2/docs/) (see starter kit [example](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/ui/src/server/registerServerSideRenderMiddleware.jsx#L131)) for rendering the ExpandCollapse component in older browsers.
-
-Also, though TDS is written in ES6 it is transpiled so that the resulting JavaScript will run in all supported browsers. Run Babel on your JavaScript, not ours.
-
+TDS is striving to use non-invasive [ponyfills](https://github.com/sindresorhus/ponyfill) (a polyfill that does
+not modify built-in APIs) if it uses a browser API that is not widely supported natively. At the moment we
+recommend the use of the Set object in [polyfill.io](https://polyfill.io/v2/docs/) (see 
+[starter kit example][starter-kit-polyfill]) for rendering the ExpandCollapse component in older browsers.
 
 ## What global styles does TDS set on the page? {#global-styles}
 
@@ -54,15 +51,14 @@ Specifically, the `tds.css` stylesheet contains the following page level styles:
 
 Please do not override these global styles. Doing so will likely produce non-deterministic behaviour and UI defects.
 
-
 ## How do I test with TDS components?
 
 Treat TDS as you would any other third party dependency. Focus on testing the UI and business logic of _your_ components, without relying on the internals of TDS components.
 
 All TDS components accept most standard HTML attributes, which are helpful with testing. We recommend giving TDS components either `id` or `data-testid` attributes when you need to find or interact with them in tests.
 
-
-
 ## What if I'm not using the RA?
 
 Technically, TDS is a library of React components that are bundled as transpiled ES6 modules that can be used outside of the RA. However, it is **strongly** encouraged to use it together with the RA (TELUS digital Platform) to easily implement all of the standards that TELUS web properties need to follow and are enforced by [DRB](https://drb.telus.com).
+
+[starter-kit-polyfill]: https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/4d2ab3608c6868f9ab10429e6037fb4f26372686/ui/src/server/registerServerSideRenderMiddleware.jsx#L131
