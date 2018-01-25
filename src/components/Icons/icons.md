@@ -39,5 +39,6 @@ Use the `size` prop to adjust the icon's size.
 <Box inline between={3}>
   <DecorativeIcon symbol="exclamationPointCircle" size={16} />
   <DecorativeIcon symbol="exclamationPointCircle" size={24} />
+  <DecorativeIcon symbol="exclamationPointCircle" size={48} />
 </Box>
 ```
