@@ -16,7 +16,11 @@ const Logo = () => (
     <Text size="small">v{version}</Text>
 
     <Box horizontal={1} vertical={2}>
-      <ChevronLink href="//tds.telus.com" variant="secondary" direction="left">
+      <ChevronLink
+        href="//github.com/telusdigital/tds/tree/master/guide"
+        variant="secondary"
+        direction="left"
+      >
         TDS Guidelines
       </ChevronLink>
     </Box>
