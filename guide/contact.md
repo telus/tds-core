@@ -3,7 +3,6 @@
 The TELUS design system exclusively caters to people designing and developing for TELUS properties.
 It is not intended for general public consumption.
 
-<!-- TODO: is it necessary to separate channels for CRAFT-related support? -->
 ## Support channels
 
 1. **GitHub**: Please discuss in [open issues](https://github.com/telusdigital/tds/issues) before 
