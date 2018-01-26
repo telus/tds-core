@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlockComparisonCards should match snapshot 1`] = `
+<section
+  className="container container--limited-width b-comparison-cards"
+>
+  <div
+    className="container--mobile-padding"
+  >
+    <h1>
+      My plans
+    </h1>
+    <div
+      className="b-comparison-cards__cards"
+    >
+      <Card
+        className="c-comparison-plan"
+      >
+        <h3
+          className="heading-4 text--primary"
+        >
+          Basic
+        </h3>
+        <div
+          className="c-comparison-plan__features"
+        >
+          <div
+            className="c-comparison-plan__feature-left"
+          >
+            <div
+              className="c-comparison-plan__feature-value"
+            >
+              <div
+                className="heading-1"
+              >
+                1
+              </div>
+              <span
+                className="text--medium"
+              >
+                capybara
+              </span>
+            </div>
+          </div>
+          <div
+            className="c-comparison-plan__feature-right"
+          >
+            <ul
+              className="list list--checked "
+            >
+              <li
+                className="list__item text--medium"
+              >
+                Feature 2
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Card>
+      <Card
+        className="c-comparison-plan"
+      >
+        <h3
+          className="heading-4 text--primary"
+        >
+          Advanced
+        </h3>
+        <div
+          className="c-comparison-plan__features"
+        >
+          <div
+            className="c-comparison-plan__feature-left"
+          >
+            <div
+              className="c-comparison-plan__feature-value"
+            >
+              <div
+                className="heading-1"
+              >
+                10
+              </div>
+              <span
+                className="text--medium"
+              >
+                capybaras
+              </span>
+            </div>
+          </div>
+          <div
+            className="c-comparison-plan__feature-right"
+          >
+            <ul
+              className="list list--checked "
+            >
+              <li
+                className="list__item text--medium"
+              >
+                Feature 2
+              </li>
+              <li
+                className="list__item text--medium"
+              >
+                Feature 3
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Card>
+      <Card
+        className="c-comparison-plan"
+      >
+        <h3
+          className="heading-4 text--primary"
+        >
+          Super
+        </h3>
+        <div
+          className="c-comparison-plan__features"
+        >
+          <div
+            className="c-comparison-plan__feature-left"
+          >
+            <div
+              className="c-comparison-plan__feature-value"
+            >
+              <div
+                className="heading-1"
+              >
+                100
+              </div>
+              <span
+                className="text--medium"
+              >
+                capybaras
+              </span>
+            </div>
+          </div>
+          <div
+            className="c-comparison-plan__feature-right"
+          >
+            <ul
+              className="list list--checked "
+            >
+              <li
+                className="list__item text--medium"
+              >
+                Feature 2
+              </li>
+              <li
+                className="list__item text--medium"
+              >
+                Feature 3
+              </li>
+              <li
+                className="list__item text--medium"
+              >
+                Feature 4
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Card>
+    </div>
+  </div>
+</section>
+`;
