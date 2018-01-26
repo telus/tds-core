@@ -15,7 +15,7 @@ To view documentation from a version prior to v1.0.0, change the version at the 
   * [Codebase overview](contributing/codebase-overview.md)
 * [Platform roadmap](roadmap.md)
 
-### Design principles &amp; foundational elements
+### Design &amp; foundational principles
 
 * [Design Principles](design/principles.md)
 * [Accessibility](accessibility/accessibility.md)
