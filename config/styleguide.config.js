@@ -63,6 +63,10 @@ module.exports = {
 
   sections: [
     {
+      name: 'TELUS Design System',
+      content: path.resolve('docs/intro/welcome.md'),
+    },
+    {
       name: 'Foundational elements',
       sections: [
         {
