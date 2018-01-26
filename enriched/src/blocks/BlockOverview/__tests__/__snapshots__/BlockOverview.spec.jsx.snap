@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockOverview /> matches snapshot 1`] = `
+<section
+  className="b-overview container container--limited-width class"
+>
+  <div
+    className="grid-row"
+  >
+    <div
+      className="large-7 medium-7 small-12 b-overview__body"
+    >
+      <ComponentTextEyebrowTitleBodyButton
+        bodyClass=""
+        chevron={false}
+        className=""
+        content="description"
+        eyebrow=""
+        headingClass="heading-4"
+        link={
+          Object {
+            "href": "href",
+            "target": "target",
+            "text": "text",
+          }
+        }
+        title="title"
+      />
+    </div>
+    <div
+      className="large-4 offset-large-1 medium-5 small-12 b-overview__checklist"
+    >
+      <ComponentChecklist
+        className=""
+        listItems={
+          Array [
+            "one",
+            "two",
+          ]
+        }
+        listTitle="title"
+      />
+    </div>
+  </div>
+</section>
+`;

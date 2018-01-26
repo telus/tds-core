@@ -1,0 +1,11 @@
+@import '~telus-thorium-core/scss/settings/variables';
+@import '~telus-thorium-core/scss/utility/mixins';
+
+.b-overview {
+  &__body, &__checklist {
+    margin-bottom: 40px;
+    @include from-breakpoint(medium) {
+      margin-bottom: 0;
+    }
+  }
+}
