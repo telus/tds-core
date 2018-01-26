@@ -1,6 +1,9 @@
 # TDS guidelines
 
 These guidelines are for the usage, contribution, principles, and support for the TELUS design system. To view the documentation for components, see the [component catalogue](http://tds.telus.com).
+
+To view documentation from a version prior to v1.0.0, change the version at the end of this URL: [http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/).
+
 ## Table of Contents
 
 * [Getting started](getting-started/getting-started.md)
@@ -12,7 +15,7 @@ These guidelines are for the usage, contribution, principles, and support for th
   * [Codebase overview](contributing/codebase-overview.md)
 * [Platform roadmap](roadmap.md)
 
-#### Design principles &amp; guidelines
+### Design principles &amp; foundational elements
 
 * [Design Principles](design/principles.md)
 * [Accessibility](accessibility/accessibility.md)
@@ -28,7 +31,7 @@ These guidelines are for the usage, contribution, principles, and support for th
 * [Motion](design/motion.md)
 * [Depth](design/depth.md)
 
-#### Support &amp; links
+### Support &amp; links
 
 * [Contact us](contact.md)
 * [FAQs](getting-started/faq.md)

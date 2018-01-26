@@ -19,9 +19,9 @@ const Logo = () => (
       <ChevronLink
         href="https://github.com/telusdigital/tds/tree/master/guide"
         variant="secondary"
-        direction="left"
+        direction="right"
       >
-        TDS Guidelines
+        TDS guidelines
       </ChevronLink>
     </Box>
   </div>
