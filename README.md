@@ -1,4 +1,4 @@
-![TELUS Design System](docs/components/Logo/Logo.svg "TELUS Design System")
+![TELUS Design System](https://cdn.rawgit.com/telusdigital/tds/de9e745a/guide/Logo.svg "TELUS Design System")
 
 # TELUS Design System [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
 
