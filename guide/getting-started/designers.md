@@ -1,4 +1,4 @@
-# TDS getting started - designer guide
+# Getting started - designer guide
 
 ## Tools
 

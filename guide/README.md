@@ -9,8 +9,8 @@ These guidelines are for the usage, contribution, principles, and support for th
 * [Contributing to TDS](contributing/contributing.md)
   * [Designer guide](contributing/designer-guide.md)
   * [Developer guide](contributing/developer-guide.md)
-  * [Codebase overview and standards](contributing/codebase-overview.md)
-* [The TELUS design platform roadmap](roadmap.md)
+  * [Codebase overview](contributing/codebase-overview.md)
+* [Platform roadmap](roadmap.md)
 
 #### Design principles &amp; guidelines
 

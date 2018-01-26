@@ -1,4 +1,4 @@
-# The TELUS Design Platform Roadmap
+# Platform roadmap
 
 We plan the TELUS Design Platform roadmap based on the priorities of TELUS and vendor teams. In addition, we coordinate with 
 the wider Digital Platform teams to provide a holistic platform for building rich Web experiences in the TELUS ecosystem.
