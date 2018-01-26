@@ -1,0 +1,65 @@
+@import '../../../styles/core';
+
+.image_text_50-50 {
+  @include from-breakpoint(small) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+
+    &.align-right {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      .image_text_50-50__copy .inner-copy {
+        float: none;
+      }
+    }
+  }
+}
+
+.image_text_50-50__content {
+  @include from-breakpoint(small) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+}
+
+.image_text_50-50__image {
+  margin-bottom: 1.5rem;
+  @include from-breakpoint(small) {
+    width: 50%;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.image_text_50-50__copy {
+  @include from-breakpoint(small) {
+    max-width: 50%;
+    .inner-copy {
+      width: 80%;
+      float: right;
+    }
+  }
+
+  @include at-breakpoint(small) {
+    p:not(.text--small) {
+      font-size: 1rem;
+    }
+  }
+
+  .text--small {
+    font-size: 0.875rem;
+  }
+}
+
+.image_text_50-50__headline {
+  margin-bottom: 0.5rem;
+
+  @include from-breakpoint(small) {
+    margin-bottom: 1.5rem;
+  }
+}
