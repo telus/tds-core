@@ -1,0 +1,124 @@
+@import '../../../styles/core';
+
+.hero-overlay {
+  display: flex;
+  position: relative;
+  width: 100%;
+	height: 19rem;
+  align-items: flex-start;
+	background-repeat: no-repeat;
+  background-position: 25% center;
+	background-size: cover;
+  background-color: $color-gainsboro;
+
+  @include from-breakpoint(small) {
+    align-items: center;
+  }
+  @include from-breakpoint(medium) {
+    height: 26.5rem;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    background: linear-gradient(88deg, rgba(0, 0, 0, 0.0), rgba(34, 34, 34, 0.89));
+    pointer-events: none;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-height: 100px;
+    width: 100%;
+    padding-bottom: 8.13037%;
+    background-image: url(../../../images/wave_landing.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%, auto, contain;
+  }
+}
+
+.hero-overlay__container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 2rem;
+  width: 100%;
+
+  @include from-breakpoint(small) {
+    padding-top: 0;
+  }
+  @include from-breakpoint(medium) {
+    padding-bottom: 50px;
+  }
+}
+
+.hero-overlay__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  @include from-breakpoint(medium) {
+    max-width: 75%;
+  }
+}
+
+.hero-overlay.align-content-left {
+  background-position: 75% center;
+  &:before {
+    right: auto;
+    left: 0;
+    background: linear-gradient(88deg, rgba(34, 34, 34, 0.89), rgba(0, 0, 0, 0.0));
+  }
+  .hero-overlay__container {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .hero-overlay__text {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.hero-overlay.align-content-centre {
+  &:before {
+    background: rgba(34, 34, 34, 0.5);
+  }
+  .hero-overlay__container {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-overlay__text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero-overlay__title {
+  margin-bottom: 0;
+  font-size: 42px;
+  font-weight: 300;
+  color: $color-white;
+
+  @include from-breakpoint(medium) {
+    margin-bottom: 8px;
+    font-size: 72px;
+    letter-spacing: -.3px;
+  }
+}
+
+.hero-overlay__subtitle {
+  display: block;
+  color: $color-white;
+  font-weight: 500;
+}
