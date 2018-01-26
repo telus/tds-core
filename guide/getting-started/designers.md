@@ -52,7 +52,7 @@ These are both working projects that continue to get updated, and improved on as
 
 ## TDS component library
 
-TDS has two component libraries available. TDS components and TDS Blocks (as mentioned in the previous section). These libraries are part of DSM (Design Systems Manager) and is accessilble through Craft Manager. Follow the below instructions to get set up with the component libraries.
+There are two component libraries available in TDS to help you with your designs, TDS components and TDS Blocks (as mentioned in the previous section). These libraries are part of DSM (Design Systems Manager) and is accessilble through Craft Manager. Follow the below instructions to get set up with the component libraries.
 
 ### What you’ll need:
 
