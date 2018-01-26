@@ -50,17 +50,9 @@ These are both working projects that continue to get updated, and improved on as
 
 # Assets
 
-## Master Sketch file
-
-The TDS Master Sketch file is a document that will help you get started with your project. It’s where most of the TDS design inspiration blocks will live. There are two ways to download the TDS Master Sketch file:
-
-1. **GitHub**: You can always download the latest (and previous) Master Sketch file on the [TDS release page](https://github.com/telusdigital/tds/releases).
-
-2. **Invision Enterprise**: If you have access to the TDS project in the [TELUS Invision Enterprise](https://www.invisionapp.com/) account you can view access the **latest** (and previous versions) Master Sketch files in the assets > source files
-
-![InVision Asset Source Files](invision_assets_sourcefiles.png)
-
 ## TDS component library
+
+TDS has two component libraries available. TDS components and TDS Blocks (as mentioned in the previous section). These libraries are part of DSM (Design Systems Manager) and is accessilble through Craft Manager. Follow the below instructions to get set up with the component libraries.
 
 ### What you’ll need:
 
@@ -130,7 +122,7 @@ The TDS Master Sketch file is a document that will help you get started with you
   </tr>
   <tr>
     <td><img src="craftmanager9.png" /></td>
-    <td>All of the libraries you’re invited to should now appear in the DSM window.</td>
+    <td>Both the TDS component and TDS block libraries (and any other libraries you belong to) should now appear in the DSM window.</td>
   </tr>
     <tr>
     <td><img src="craftmanager10.png" /></td>
@@ -143,6 +135,16 @@ You can use the TDS component library by dragging and dropping the assets onto y
 ## TDS Component Documentation
 
 To view the code and usage of the components please visit the [TDS components documentation site](https://tds.telus.com/components/).
+
+## Master Sketch file
+
+The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, there are two ways you can download them.
+
+1. **GitHub**: You can always download the latest (and previous) Master Sketch file on the [TDS release page](https://github.com/telusdigital/tds/releases).
+
+2. **Invision Enterprise**: If you have access to the TDS project in the [TELUS Invision Enterprise](https://www.invisionapp.com/) account you can view access the **latest** (and previous versions) Master Sketch files in the assets > source files
+
+![InVision Asset Source Files](invision_assets_sourcefiles.png)
 
 ## Fonts
 
