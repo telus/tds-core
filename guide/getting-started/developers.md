@@ -1,6 +1,4 @@
-# TDS Getting Started
-
-A Guide for Developers
+# TDS getting started - developer guide
 
 As a developer, your primary interaction point with TDS is through React components. Though the components are currently distributed in a single bundle, you should conceptualize them as independent, composable components.
 
@@ -65,7 +63,7 @@ Import the TDS stylesheet into the main entry point of your application. It cont
 
 You will not use these styles directly. Webpack will bundle the TDS styles with your application-specific styles, and they will be consumed by the TDS components.
 
-See the FAQ for [more info about the specific global styles that are applied](faq.md#global-styles).
+See the FAQ for [more info about the specific global styles that are applied](faq.md#what-global-styles-does-tds-set-on-the-page).
 
 ```js
 // index.js

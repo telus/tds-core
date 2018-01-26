@@ -1,4 +1,4 @@
-# TDS Design Contribution
+# Contributing to TDS - designer guide
 
 Guidelines & Standards
 

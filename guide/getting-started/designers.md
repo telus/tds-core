@@ -1,6 +1,4 @@
-# TDS Getting Started
-
-A Guide for Designers
+# TDS getting started - designer guide
 
 ## Tools
 

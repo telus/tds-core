@@ -1,14 +1,16 @@
+# TDS guidelines
+
+These guidelines are for the usage, contribution, principles, and support for the TELUS design system. To view the documentation for components, see the [component catalogue](http://tds.telus.com).
 ## Table of Contents
 
-* [Getting Started](getting-started/getting-started.md)
-  * [Designers](getting-started/designers.md)
-  * [Developers](getting-started/developers.md)
-* [Components](http://tds.telus.com)
-* [Contributing](contributing/contributing.md)
+* [Getting started](getting-started/getting-started.md)
+  * [Designer guide](getting-started/designers.md)
+  * [Developer guide](getting-started/developers.md)
+* [Contributing to TDS](contributing/contributing.md)
   * [Designer guide](contributing/designer-guide.md)
   * [Developer guide](contributing/developer-guide.md)
-  * [Codebase overview](contributing/codebase-overview.md)
-* [Roadmap](roadmap.md)
+  * [Codebase overview and standards](contributing/codebase-overview.md)
+* [The TELUS design platform roadmap](roadmap.md)
 
 #### Design principles &amp; guidelines
 

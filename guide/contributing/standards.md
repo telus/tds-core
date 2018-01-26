@@ -1,8 +1,8 @@
-# Development Standards at TDS
+# Codebase overview and standards
 
 When it comes to writing code and documentation we have internal standards that help keep everything consistent and highly maintainable.
 
-## Documentation standards {#docs}
+## Documentation standards
 
 [Documenting components](#documenting-components)
 
