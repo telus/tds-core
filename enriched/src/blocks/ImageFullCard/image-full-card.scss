@@ -1,0 +1,69 @@
+@import '../../../styles/core';
+
+.image-full-card {
+  @include at-breakpoint(xs) {
+    background: none !important;
+  }
+
+  @include from-breakpoint(small) {
+    padding: 80px 0 144px;
+    background-size: cover;
+  }
+}
+
+.image-full-card--left {
+  @include from-breakpoint(small) {
+    background-position: 75% bottom;
+    .image-full-card__content {
+      float: left;
+    }
+  }
+}
+
+.image-full-card--right {
+  @include from-breakpoint(small) {
+    background-position: 25% bottom;
+    .image-full-card__content {
+      float: right;
+    }
+  }
+}
+
+.image-full-card__image {
+  height: 265px;
+  margin-bottom: 2rem;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.image-full-card__content {
+  @include from-breakpoint(small) {
+    width: 75%;
+    padding: 48px 40px;
+    border-radius: 2.5px;
+  	background-color: #fff;
+  	box-shadow: 0 0 2px 0 rgba(197, 199, 200, 0.31), 0 10px 20px 0 rgba(197, 199, 200, 0.5);
+  }
+
+  @include from-breakpoint(medium) {
+    width: 50%;
+  }
+
+  @include at-breakpoint(small) {
+    p:not(.text--small) {
+      font-size: 1rem;
+    }
+  }
+
+  .text--small {
+    font-size: 0.875rem;
+  }
+}
+
+.image-full-card__headline {
+  margin-bottom: 0.5rem;
+
+  @include from-breakpoint(small) {
+    margin-bottom: 1.5rem;
+  }
+}
