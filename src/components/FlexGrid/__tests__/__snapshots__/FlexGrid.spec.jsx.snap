@@ -5,7 +5,7 @@ exports[`FlexGrid renders 1`] = `
   class="flexGrid container-fluid"
 >
   <div
-    class="flexGridRow row"
+    class="row"
   >
     <div
       class="col-xs col-xs-offset flexGridColumn"

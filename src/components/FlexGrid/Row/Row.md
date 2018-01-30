@@ -1,4 +1,4 @@
-The `FlexGrid.Row` component can be optionally used for Column alignment and distribution.
+The `FlexGrid.Row` component can be used for Column alignment and distribution.
 
 ### Alignment
 

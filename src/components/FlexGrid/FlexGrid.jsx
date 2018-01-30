@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { Broadcast } from 'react-broadcast'
 import { Grid } from 'react-flexbox-grid'
 
-import Col from './Col'
-import Row from './Row'
+import Col from './Col/Col'
+import Row from './Row/Row'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'

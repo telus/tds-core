@@ -2,7 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 
-import FlexGrid from '../FlexGrid'
+import FlexGrid from '../../FlexGrid'
 import Row from '../Row'
 
 describe('Row', () => {
