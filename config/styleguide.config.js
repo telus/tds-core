@@ -88,7 +88,7 @@ module.exports = {
           },
           sections: compact([
             {
-              name: 'FlexGrid',
+              name: 'Grid',
               components() {
                 return [
                   path.resolve('src/components/FlexGrid/FlexGrid.jsx'),

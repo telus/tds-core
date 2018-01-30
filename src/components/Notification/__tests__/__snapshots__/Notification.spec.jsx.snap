@@ -8,7 +8,7 @@ exports[`<Notification /> renders 1`] = `
     class="flexGrid limitWidth container-fluid"
   >
     <div
-      class="col-xs col-xs-offset flexGridColumn"
+      class="col-xs col-xs-offset padding"
     >
       <div
         class="betweenRightMarginDesktop-3 inline"
