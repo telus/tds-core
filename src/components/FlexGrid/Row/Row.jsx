@@ -4,9 +4,8 @@ import { Subscriber } from 'react-broadcast'
 
 import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 
-import safeRest from '../../utils/safeRest'
-import joinClassNames from '../../utils/joinClassNames'
-import styles from './FlexGrid.modules.scss'
+import safeRest from '../../../utils/safeRest'
+import joinClassNames from '../../../utils/joinClassNames'
 
 /**
  * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.34.0</span>
@@ -35,7 +34,7 @@ const Row = ({ horizontalAlign, verticalAlign, distribute, children, ...rest }) 
       {gutterStyle => (
         <ReactFlexboxGridRow
           {...safeRest(rest)}
-          className={joinClassNames(gutterStyle, styles.flexGridRow)}
+          className={gutterStyle}
           {...getAlignment()}
           {...getDistribution()}
         >
