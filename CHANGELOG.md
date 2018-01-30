@@ -1,3 +1,35 @@
+#### 1.0.1 (2018-01-30)
+
+##### Documentation Changes
+
+* re-add flexgrid components to styleguide ([ff87605f](https://github.com/telusdigital/tds/commit/ff87605f7cb0580696cb83c36d2fcd7ad234b0e2))
+* **readme:**
+  * use rawgit to serve svg headers ([874ea4fc](https://github.com/telusdigital/tds/commit/874ea4fcf5d77da946646b5802495bf2a681bc5b))
+  * update elements to principles ([de9e745a](https://github.com/telusdigital/tds/commit/de9e745a4060238928b1f8235dc09a4588286e3f))
+* **welcome:**
+  * add clear links to guidelines ([236a347a](https://github.com/telusdigital/tds/commit/236a347a168b8de79bac30f2b20663285fb47f5f))
+  * shorten new to tds heading ([b13843f8](https://github.com/telusdigital/tds/commit/b13843f8a456fabf2a5547c07f724b93a6ddd2ca))
+  * add explicit links to guide ([523d606b](https://github.com/telusdigital/tds/commit/523d606b89baaab06ca242785d7e00f1a5c5ed9c))
+* **styleguide:** add welcoming paragraph ([cfa3d934](https://github.com/telusdigital/tds/commit/cfa3d934fcdd8db88ddd6c7e789a8cbdb45a9f50))
+* **designers:**
+  * update text ([e2530172](https://github.com/telusdigital/tds/commit/e2530172c72bda55420b408a77e9b5d68b67a7c5))
+  * removed master sketch ([374612a8](https://github.com/telusdigital/tds/commit/374612a88e52b3950662cd637f8d3a2275c4ec8e))
+* **getting-started:** replace craftmanager9 image ([7edf0320](https://github.com/telusdigital/tds/commit/7edf03209809b3c8ac17f7001ac64df71c963f5f))
+* **guide:**
+  * adjust titles ([fb6097d0](https://github.com/telusdigital/tds/commit/fb6097d064c47abab27c4940338c4615cf594949))
+  * adjust table of contents ([416aa273](https://github.com/telusdigital/tds/commit/416aa2739e86c25e06973eec1b1fdb5c16ec67c0))
+* **github:** add code of conduct ([61cd17b3](https://github.com/telusdigital/tds/commit/61cd17b3417da00d2e8c529991e09fb26ee106c4))
+
+##### Bug Fixes
+
+* **flexgrid:**
+  * remove joinclassnames from row ([3da01319](https://github.com/telusdigital/tds/commit/3da013194dbacb7b37d7ebdc6f6534b64ad4fb51))
+  * have row component wrap properly ([2885e961](https://github.com/telusdigital/tds/commit/2885e9612571da9500d75b03ba3d61ca48fb7d94))
+
+##### Refactors
+
+* **flexgrid:** Rename of the column class name ([ad200711](https://github.com/telusdigital/tds/commit/ad200711d000807875c008c4eee230c2de620e4e))
+
 #### 1.0.0 (2018-01-25)
 
 ##### Build System / Dependencies
