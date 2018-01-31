@@ -15,12 +15,8 @@ import Panel from './Panel/Panel'
  * <span class="docs--badge__updated">updated</span> <span class="docs--badge__version">v0.33.1</span>
  */
 class ExpandCollapse extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      openPanels: new Set(props.open),
-    }
+  state = {
+    openPanels: new Set(this.props.open),
   }
 
   componentWillReceiveProps(nextProps) {

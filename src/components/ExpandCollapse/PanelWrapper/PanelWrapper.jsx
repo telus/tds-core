@@ -20,16 +20,10 @@ import styles from './PanelWrapper.modules.scss'
 import displayStyles from '../../Display.modules.scss'
 
 class PanelWrapper extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.contentWrapper = null
-
-    this.state = {
-      open: props.open,
-      hover: false,
-      contentWrapperHeight: 0,
-    }
+  state = {
+    open: this.props.open,
+    hover: false,
+    contentWrapperHeight: 0,
   }
 
   componentDidMount() {
@@ -52,7 +46,9 @@ class PanelWrapper extends React.Component {
     this.adjustContentHeight()
   }
 
-  adjustContentHeight() {
+  contentWrapper = null
+
+  adjustContentHeight = () => {
     if (this.contentWrapper.offsetHeight !== this.state.contentWrapperHeight) {
       this.setState({ contentWrapperHeight: this.contentWrapper.offsetHeight })
     }
@@ -66,41 +62,37 @@ class PanelWrapper extends React.Component {
     this.setState({ hover: false })
   }
 
-  renderCaret(disabled, hover, open) {
-    return (
-      <div className={disabled ? displayStyles.invisible : undefined}>
-        <Translate timeout={300} in={hover} direction="y" distance={open ? '-0.25rem' : '0.25rem'}>
-          {() => (
-            <Text size="large">
-              <DecorativeIcon symbol={open ? 'caretUp' : 'caretDown'} variant="primary" size={16} />
-            </Text>
-          )}
-        </Translate>
-      </div>
-    )
-  }
-
-  renderHeader(header, subtext, tertiaryText) {
-    return (
-      <Responsive maxWidth="md">
-        {mobile => (
-          <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
-            <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlign}>
-              <Text size="large">{header}</Text>
-
-              {subtext && <Text size="small">{subtext}</Text>}
-            </Flexbox>
-
-            {tertiaryText && (
-              <span className={mobile ? styles.alignSelfFlexEnd : undefined}>
-                <Text size={mobile ? 'medium' : 'large'}>{tertiaryText}</Text>
-              </span>
-            )}
-          </Flexbox>
+  renderCaret = (disabled, hover, open) => (
+    <div className={disabled ? displayStyles.invisible : undefined}>
+      <Translate timeout={300} in={hover} direction="y" distance={open ? '-0.25rem' : '0.25rem'}>
+        {() => (
+          <Text size="large">
+            <DecorativeIcon symbol={open ? 'caretUp' : 'caretDown'} variant="primary" size={16} />
+          </Text>
         )}
-      </Responsive>
-    )
-  }
+      </Translate>
+    </div>
+  )
+
+  renderHeader = (header, subtext, tertiaryText) => (
+    <Responsive maxWidth="md">
+      {mobile => (
+        <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
+          <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlign}>
+            <Text size="large">{header}</Text>
+
+            {subtext && <Text size="small">{subtext}</Text>}
+          </Flexbox>
+
+          {tertiaryText && (
+            <span className={mobile ? styles.alignSelfFlexEnd : undefined}>
+              <Text size={mobile ? 'medium' : 'large'}>{tertiaryText}</Text>
+            </span>
+          )}
+        </Flexbox>
+      )}
+    </Responsive>
+  )
 
   render() {
     const {
@@ -155,6 +147,7 @@ class PanelWrapper extends React.Component {
     )
   }
 }
+
 PanelWrapper.propTypes = {
   panelId: PropTypes.string.isRequired,
   panelHeader: PropTypes.string.isRequired,
