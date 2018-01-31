@@ -9,12 +9,8 @@ import Panel from '../Panel/Panel'
  * A specialized `ExpandCollapse` in which only one panel can be open at a time.
  */
 class Accordion extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      openPanel: props.open,
-    }
+  state = {
+    openPanel: this.props.open,
   }
 
   componentWillReceiveProps(nextProps) {

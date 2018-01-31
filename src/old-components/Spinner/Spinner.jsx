@@ -8,13 +8,6 @@ import './Spinner.scss'
  * A waiting indicator.
  */
 class Spinner extends Component {
-  constructor(props) {
-    super(props)
-    this.getSpinElement = this.getSpinElement.bind(this)
-    this.getSpinWrapper = this.getSpinWrapper.bind(this)
-    this.isNestedPattern = this.isNestedPattern.bind(this)
-  }
-
   componentDidMount() {
     this.toggleBodyScrolling(this.props)
   }
@@ -27,7 +20,7 @@ class Spinner extends Component {
     this.enableBodyScrolling()
   }
 
-  getSpinWrapper(spinEl, spinning, wrapperClassNames) {
+  getSpinWrapper = (spinEl, spinning, wrapperClassNames) => {
     const containerCls = classnames('spinner-container', {
       'spinner-container--loading': spinning
     }, wrapperClassNames)
@@ -42,7 +35,7 @@ class Spinner extends Component {
     )
   }
 
-  getSpinElement(spinning, tip, fullScreen) {
+  getSpinElement = (spinning, tip, fullScreen) => {
     const cls = classnames('spinner', {
       'spinner--spinning': spinning,
       'spinner--full-screen': fullScreen
@@ -77,7 +70,7 @@ class Spinner extends Component {
     document.body.style.overflow = 'hidden'
   }
 
-  isNestedPattern() {
+  isNestedPattern = () => {
     return !!(this.props && this.props.children)
   }
 
