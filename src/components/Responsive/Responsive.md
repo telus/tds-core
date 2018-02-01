@@ -49,25 +49,25 @@ This component comes with a `defaultMatches` prop and its default is set to true
 
 When rendering on the server you can use the `defaultMatches` prop to set the initial state on the server to match whatever you think it will be on the client.
 
-We cannot be 100% sure what the client will render, but we can make an educated guess by sniffing the user agent and populating your redux store with that information before triggering a React render:
+You can detect the user's device by analyzing the user-agent string from the HTTP request in your server-side rendering code. There are many ways of doing this, a popular tool is [mobile-detect](https://www.npmjs.com/package/mobile-detect).
 
 ```
-const isUserAgentSignallingMobile = () => {
-  return true;
+initialState = {
+  device: 'desktop' // replace 'desktop' with your own guessing logic
 };
 
 <div>
-  <Responsive maxWidth="md" defaultMatches={isUserAgentSignallingMobile()} render={() => (
+  <Responsive maxWidth="md" defaultMatches={state.device === 'mobile'} render={() => (
     <Text>Render me below medium breakpoint.</Text>
   )}/>
 
-  <Responsive minWidth="md" defaultMatches={!isUserAgentSignallingMobile()} render={() => (
+  <Responsive minWidth="md" defaultMatches={state.device === 'desktop'} render={() => (
     <Text>Render me above medium breakpoint.</Text>
   )}/>
 </div>
 ```
 
-In the above example you can insert your own guessing logic on the `isUserAgentSignallingMobile()` function; therefore if you have a media query to target small screens and the request is coming from a mobile device, only the render on the Media component that matches the user agent renders on the server side.
+In the above example you can insert your own guessing logic for the initial state of the device variable. Therefore, if you have a media query to target small screens and the request is coming from a mobile device, only the render on the Media component that matches the user agent renders on the server side.
 
 ### Testing responsive behaviour
 
