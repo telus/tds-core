@@ -67,7 +67,7 @@ initialState = {
 </div>
 ```
 
-In the above example you can insert your own guessing logic for the initial state of the device variable. Therefore, if you have a media query to target small screens and the request is coming from a mobile device, only the render on the Media component that matches the user agent renders on the server side.
+In the above example you can insert your own guessing logic for the initial state of the device variable. Therefore, if you have a media query to target large screens and the request is coming from a desktop device, only the render on the `Responsive` component that matches the user agent renders on the server side.
 
 ### Testing responsive behaviour
 
