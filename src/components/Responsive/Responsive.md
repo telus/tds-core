@@ -43,6 +43,27 @@ matches or not.
 </Responsive>
 ```
 
+### `defaultMatches` prop for server-side rendering
+
+This component comes with a `defaultMatches` prop and its default is set to true.
+
+When rendering on the server you can use the `defaultMatches` prop to set the initial state on the server to match whatever you think it will be on the client.
+
+We cannot be 100% sure what the client will render, but we can make an educated guess by sniffing the user agent and populating your redux store with that information before triggering a React render:
+
+```
+<div>
+  <Media query=“(max-width: 500px)" defaultMatches={isUserAgentSignallingMobile()} render={() => (
+    <Text>Render me below medium breakpoint.</Text>
+  )}/>
+
+  <Media query=“(min-width: 501px)" defaultMatches={!isUserAgentSignallingMobile()} render={() => (
+    <Text>Render me above medium breakpoint.</Text>
+  )}/>
+</div>
+```
+
+In the above example you can insert your own guessing logic on the `isUserAgentSignallingMobile()` function; therefore if you have a media query to target small screens and the request is coming from a mobile device, only the render on the Media component that matches the user agent renders on the server side.
 
 ### Testing responsive behaviour
 
