@@ -53,7 +53,7 @@ You can detect the user's device by analyzing the user-agent string from the HTT
 
 ```
 initialState = {
-  device: 'desktop' // replace 'desktop' with your own guessing logic
+  device: 'desktop' // add your own guessing logic here
 };
 
 <div>
@@ -66,8 +66,6 @@ initialState = {
   )}/>
 </div>
 ```
-
-In the above example you can insert your own guessing logic for the initial state of the device variable. Therefore, if you have a media query to target large screens and the request is coming from a desktop device, only the render on the `Responsive` component that matches the user agent renders on the server side.
 
 ### Testing responsive behaviour
 
