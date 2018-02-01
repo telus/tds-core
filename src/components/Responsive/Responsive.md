@@ -53,11 +53,11 @@ We cannot be 100% sure what the client will render, but we can make an educated 
 
 ```
 <div>
-  <Media query=“(max-width: 500px)" defaultMatches={isUserAgentSignallingMobile()} render={() => (
+  <Media query="(max-width: 500px)" defaultMatches={isUserAgentSignallingMobile()} render={() => (
     <Text>Render me below medium breakpoint.</Text>
   )}/>
 
-  <Media query=“(min-width: 501px)" defaultMatches={!isUserAgentSignallingMobile()} render={() => (
+  <Media query="(min-width: 501px)" defaultMatches={!isUserAgentSignallingMobile()} render={() => (
     <Text>Render me above medium breakpoint.</Text>
   )}/>
 </div>
