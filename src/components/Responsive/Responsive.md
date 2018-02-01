@@ -52,12 +52,16 @@ When rendering on the server you can use the `defaultMatches` prop to set the in
 We cannot be 100% sure what the client will render, but we can make an educated guess by sniffing the user agent and populating your redux store with that information before triggering a React render:
 
 ```
+const isUserAgentSignallingMobile = () => {
+  return true;
+};
+
 <div>
-  <Media query="(max-width: 500px)" defaultMatches={isUserAgentSignallingMobile()} render={() => (
+  <Responsive maxWidth="md" defaultMatches={isUserAgentSignallingMobile()} render={() => (
     <Text>Render me below medium breakpoint.</Text>
   )}/>
 
-  <Media query="(min-width: 501px)" defaultMatches={!isUserAgentSignallingMobile()} render={() => (
+  <Responsive minWidth="md" defaultMatches={!isUserAgentSignallingMobile()} render={() => (
     <Text>Render me above medium breakpoint.</Text>
   )}/>
 </div>
