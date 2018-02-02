@@ -21,7 +21,7 @@ exports[`Accordion renders a closed accordion 1`] = `
         />
       </HairlineDivider>
       <PanelWrapper
-        key=".0"
+        key="panel-1"
         onClick={[Function]}
         open={false}
         panelDisabled={false}
@@ -273,6 +273,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                 disabled={false}
                                 header="Panel title"
                                 id="panel-1"
+                                key=".0"
                               >
                                 <div>
                                   Panel content
@@ -327,7 +328,7 @@ exports[`Accordion renders an open accordion 1`] = `
         />
       </HairlineDivider>
       <PanelWrapper
-        key=".0"
+        key="panel-1"
         onClick={[Function]}
         open={true}
         panelDisabled={false}
@@ -579,6 +580,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                 disabled={false}
                                 header="Panel title"
                                 id="panel-1"
+                                key=".0"
                               >
                                 <div>
                                   Panel content

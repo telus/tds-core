@@ -80,6 +80,19 @@ describe('ExpandCollapse', () => {
     expect(expandCollapse).toMatchSnapshot()
   })
 
+  it('renders panels conditionally', () => {
+    const { expandCollapse } = doMount(
+      <ExpandCollapse open={['panel-1']}>
+        { false }
+        { null }
+        { undefined }
+        { aPanel({id: 'panel-1'}) }
+      </ExpandCollapse>
+    )
+
+    expect(expandCollapse.find('Panel').length).toBe(1)
+  })
+
   describe('the panel header', () => {
     it('can be a simple string', () => {
       const { findPanelHeader } = doMount(
@@ -260,8 +273,8 @@ describe('ExpandCollapse', () => {
     it('surrounds all the panels', () => {
       const { expandCollapse } = doMount(
         <ExpandCollapse>
-          {aPanel()}
-          {aPanel()}
+          {aPanel({id: 'panel-1'})}
+          {aPanel({id: 'panel-2'})}
         </ExpandCollapse>
       )
 
@@ -271,8 +284,8 @@ describe('ExpandCollapse', () => {
     it('can turn off the top divider', () => {
       const { expandCollapse } = doMount(
         <ExpandCollapse topDivider={false}>
-          {aPanel()}
-          {aPanel()}
+          {aPanel({id: 'panel-1'})}
+          {aPanel({id: 'panel-2'})}
         </ExpandCollapse>
       )
 
