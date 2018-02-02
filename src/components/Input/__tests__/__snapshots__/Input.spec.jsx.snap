@@ -11,7 +11,7 @@ exports[`Input renders 1`] = `
       data-no-global-styles="true"
       for="the-input"
     >
-      <div
+      <span
         class="betweenRightMarginDesktop-2 inline alignCenter"
       >
         <span
@@ -19,7 +19,7 @@ exports[`Input renders 1`] = `
         >
           The input
         </span>
-      </div>
+      </span>
     </label>
   </div>
   <div
@@ -51,7 +51,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
       data-no-global-styles="true"
       for="the-input"
     >
-      <div
+      <span
         class="betweenRightMarginDesktop-2 inline alignCenter"
       >
         <span
@@ -59,7 +59,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
         >
           The input
         </span>
-      </div>
+      </span>
     </label>
   </div>
   <div
