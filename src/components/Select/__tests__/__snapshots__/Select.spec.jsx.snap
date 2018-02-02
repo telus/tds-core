@@ -10,7 +10,7 @@ exports[`Select renders 1`] = `
     <label
       for="the-select"
     >
-      <div
+      <span
         class="betweenRightMarginDesktop-2 inline alignCenter"
       >
         <span
@@ -18,7 +18,7 @@ exports[`Select renders 1`] = `
         >
           The select
         </span>
-      </div>
+      </span>
     </label>
   </div>
   <div
@@ -67,7 +67,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
     <label
       for="the-select"
     >
-      <div
+      <span
         class="betweenRightMarginDesktop-2 inline alignCenter"
       >
         <span
@@ -75,7 +75,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
         >
           The select
         </span>
-      </div>
+      </span>
     </label>
   </div>
   <div

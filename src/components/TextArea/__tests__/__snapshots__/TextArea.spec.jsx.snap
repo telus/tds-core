@@ -10,7 +10,7 @@ exports[`TextArea renders 1`] = `
     <label
       for="the-textarea"
     >
-      <div
+      <span
         class="betweenRightMarginDesktop-2 inline alignCenter"
       >
         <span
@@ -18,7 +18,7 @@ exports[`TextArea renders 1`] = `
         >
           The textarea
         </span>
-      </div>
+      </span>
     </label>
   </div>
   <div
@@ -46,7 +46,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
     <label
       for="the-textarea"
     >
-      <div
+      <span
         class="betweenRightMarginDesktop-2 inline alignCenter"
       >
         <span
@@ -54,7 +54,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
         >
           The textarea
         </span>
-      </div>
+      </span>
     </label>
   </div>
   <div
