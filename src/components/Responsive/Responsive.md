@@ -43,7 +43,7 @@ matches or not.
 </Responsive>
 ```
 
-### `defaultMatches` prop for server-side rendering
+### defaultMatches prop for server-side rendering
 
 This component comes with a `defaultMatches` prop and its default is set to true.
 
