@@ -39,15 +39,15 @@ yarn dev
 yarn test:watch
 ```
 
-After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will 
+After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will
 automatically refresh when there are changes to any of the source files.
 
 ## Write some code
 
 Read the [codebase overview](./codebase-overview.md) to understand the structure of the codebase and the conventions being followed.
 
-If you need to create a new component, run the scaffolding script to generate the basic folder structure, React component, 
-documentation, and base unit tests for a new component. 
+If you need to create a new component, run the scaffolding script to generate the basic folder structure, React component,
+documentation, and base unit tests for a new component.
 
 ```bash
 yarn scaffold MyComponent
@@ -55,12 +55,10 @@ yarn scaffold MyComponent
 
 ## Make a commit
 
+We use [husky](https://github.com/typicode/husky) to run precommit tasks on staged files, which includes code formatting, linting, and tests.
+You will not be able to make a commit until the precommit tasks pass. We also have a prepush hook to run a full build before pushing your code.
+
 ```bash
-# Run linting, tests, and builds
-yarn precommit
-
-# If the precommit is successful, you are good to make your commit!
-
-# Stage your files and then make a commit using commitizen
+# Stage your files and make a commit using commitizen
 git cz
 ```
