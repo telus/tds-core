@@ -8,7 +8,7 @@ exports[`Checkbox renders 1`] = `
     data-no-global-styles="true"
     for="the-group-name_the-value"
   >
-    <div
+    <span
       class="betweenRightMarginDesktop-3 inline alignFlexStart"
     >
       <span
@@ -30,7 +30,7 @@ exports[`Checkbox renders 1`] = `
       >
         A label
       </span>
-    </div>
+    </span>
   </label>
 </div>
 `;
