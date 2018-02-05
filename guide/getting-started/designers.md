@@ -126,7 +126,7 @@ There are two component libraries available in TDS to help you with your designs
   </tr>
     <tr>
     <td><img src="craftmanager10.png" /></td>
-    <td>To switch between versions, go to the TELUS Design System dropdown on the top left of the DSM window and select TELUS Design System>Switch Version.</td>
+    <td>To switch between versions, go to the TELUS Design System dropdown on the top left of the DSM window and select TELUS Design System>Switch Version. **Note** Please fix yourself to the latest version of DSM and not on the 'shared draft'.</td>
   </tr>
 </table>
 
