@@ -20,16 +20,16 @@ import styles from './PanelWrapper.modules.scss'
 import displayStyles from '../../Display.modules.scss'
 
 class PanelWrapper extends React.Component {
+  state = {
+    open: this.props.open,
+    hover: false,
+    contentWrapperHeight: 0,
+  }
+
   constructor(props) {
     super(props)
 
     this.contentWrapper = null
-
-    this.state = {
-      open: props.open,
-      hover: false,
-      contentWrapperHeight: 0,
-    }
   }
 
   componentDidMount() {
@@ -52,7 +52,7 @@ class PanelWrapper extends React.Component {
     this.adjustContentHeight()
   }
 
-  adjustContentHeight() {
+  adjustContentHeight = () => {
     if (this.contentWrapper.offsetHeight !== this.state.contentWrapperHeight) {
       this.setState({ contentWrapperHeight: this.contentWrapper.offsetHeight })
     }
@@ -66,7 +66,7 @@ class PanelWrapper extends React.Component {
     this.setState({ hover: false })
   }
 
-  renderCaret(disabled, hover, open) {
+  renderCaret = (disabled, hover, open) => {
     return (
       <div className={disabled ? displayStyles.invisible : undefined}>
         <Translate timeout={300} in={hover} direction="y" distance={open ? '-0.25rem' : '0.25rem'}>
@@ -80,7 +80,7 @@ class PanelWrapper extends React.Component {
     )
   }
 
-  renderHeader(header, subtext, tertiaryText) {
+  renderHeader = (header, subtext, tertiaryText) => {
     return (
       <Responsive maxWidth="md">
         {mobile => (
@@ -155,6 +155,7 @@ class PanelWrapper extends React.Component {
     )
   }
 }
+
 PanelWrapper.propTypes = {
   panelId: PropTypes.string.isRequired,
   panelHeader: PropTypes.string.isRequired,
