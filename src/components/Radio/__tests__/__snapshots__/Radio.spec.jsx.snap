@@ -7,7 +7,7 @@ exports[`Radio renders 1`] = `
   <label
     for="the-group_the-value"
   >
-    <div
+    <span
       class="betweenRightMarginDesktop-3 inline alignFlexStart"
     >
       <span
@@ -28,7 +28,7 @@ exports[`Radio renders 1`] = `
       >
         A label
       </span>
-    </div>
+    </span>
   </label>
 </div>
 `;

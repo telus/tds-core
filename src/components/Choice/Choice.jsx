@@ -138,7 +138,7 @@ class Choice extends React.Component {
       <Box between={2}>
         {feedback === 'error' && error && renderError(error, errorId)}
         <label htmlFor={choiceId}>
-          <Box inline between={3} dangerouslyAddClassName={styles.alignFlexStart}>
+          <Box tag="span" inline between={3} dangerouslyAddClassName={styles.alignFlexStart}>
             <span className={fakeInputClassNames} data-testid="fake-input">
               <input
                 {...safeRest(rest)}
