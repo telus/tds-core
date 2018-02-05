@@ -34,11 +34,6 @@ if [[ `git status --porcelain` ]]; then
 fi
 
 #
-# Make sure codebase is in working order.
-#
-yarn precommit
-
-#
 # Bump the version. Don't create a tag yet so that we can add the Changelog into the commit.
 #
 yarn version --no-git-tag-version --new-version $VERSION_NUM
