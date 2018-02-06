@@ -1,3 +1,46 @@
+#### 1.0.2 (2018-02-06)
+
+##### Build System / Dependencies
+
+* **release.sh:** Remove precommit from release.sh. It will be run automatically now on git commit ([3e3d94d5](https://github.com/telusdigital/tds/commit/3e3d94d5d720d193ebc86c0bfce21b8fadc868c4))
+* **precommit:** Introduce lint-staged to only lint staged files in the precommit ([b790cc19](https://github.com/telusdigital/tds/commit/b790cc195d2965aa3e938d66924503aad06dab49))
+
+##### Chores
+
+* **precommit:** Add husky and pretty-quick for precommit and prepush hook enhancements ([cdf3a4a5](https://github.com/telusdigital/tds/commit/cdf3a4a5212ca9eda860cdd707da40c1638e233c))
+
+##### Documentation Changes
+
+* **developer-guide:** Add precommit and prepush hooks docs ([54763db7](https://github.com/telusdigital/tds/commit/54763db7075e0c2f032a7c9c78bdd6ae32e26f40))
+* **styleguidist:** Add Set polyfill via polyfill.io ([f94a711f](https://github.com/telusdigital/tds/commit/f94a711f33d6e7e11f628466aa17c3b477970e1b))
+* **designers:**
+  * update spacing ([1639989c](https://github.com/telusdigital/tds/commit/1639989cebbbc9cd112fc305de47fa86cf724292))
+  * typo ([881389ea](https://github.com/telusdigital/tds/commit/881389ea274c0d27e7e894d2b160bd7c88170e02))
+  * add fix version sentence ([b6901bd8](https://github.com/telusdigital/tds/commit/b6901bd8ab5f642cc5e9e434d522167b5db6303b))
+* **welcome:** Fix console warning by adding HairlineDivider into Box spacers ([08cde465](https://github.com/telusdigital/tds/commit/08cde465f1d6ae7ccfaac0307d1a0b8e87e13290))
+* **responsive:**
+  * Fix console warning due to single quotes on MardownHeading ([9f601339](https://github.com/telusdigital/tds/commit/9f601339759ed7605fcb4ce490d29c56c06a5eff))
+  * Remove example explanation to keep it simple ([1ec1f7af](https://github.com/telusdigital/tds/commit/1ec1f7afea5de17e922c6f7e58b60b8e4fd31023))
+  * Minor tweak to example explanation ([3e276dbf](https://github.com/telusdigital/tds/commit/3e276dbfba122f0e4860b2758babbb904ca223df))
+  * Update example and sniffing user-agent info ([121e5c5d](https://github.com/telusdigital/tds/commit/121e5c5dfa3face4ed62ee56dd378b58d6905c99))
+  * Use Responsive instead of Media in example : ([2d25da57](https://github.com/telusdigital/tds/commit/2d25da571fc47c88d2524b0f295bba1d559ce4d3))
+  * Fix code example for defaultMatches ([469f194d](https://github.com/telusdigital/tds/commit/469f194db3bcf43d29df3fa703ba78c862922b23))
+  * document defaultMatches prop ([7d5aca4b](https://github.com/telusdigital/tds/commit/7d5aca4bbb50a46d79a4985ee20f41ff783497d1))
+
+##### Bug Fixes
+
+* **choice:** use span instead of div ([4c6ee5b6](https://github.com/telusdigital/tds/commit/4c6ee5b605ee7004e6826cc6b097953feb351b76))
+* **form-field:** Update Box inside label to use the tag prop ([14845697](https://github.com/telusdigital/tds/commit/14845697ecc0d22bf85e6616929041497904c483))
+* **expand-collapse:** Enable conditional rendering of panels (#447) ([444dd461](https://github.com/telusdigital/tds/commit/444dd461d464f88e092a2c024b9ac3c7e8001690))
+
+##### Refactors
+
+* use class properties transform (#464) ([6c99087c](https://github.com/telusdigital/tds/commit/6c99087c39e3a4aba59dd88143d55213d1510a35))
+
+##### Code Style Changes
+
+* **expand-collapse:** Move state after the constructor in PanelWrapper ([6aeb1888](https://github.com/telusdigital/tds/commit/6aeb1888f9fa9a3bd4f307802e004601818c9c2f))
+
 #### 1.0.1 (2018-01-30)
 
 ##### Documentation Changes
@@ -143,7 +186,7 @@
   * add content ([55a3048f](https://github.com/telusdigital/tds/commit/55a3048f840e50c07c25bddd7170591aaecf1f74))
   * add column examples ([f66375e2](https://github.com/telusdigital/tds/commit/f66375e2a6dd18c0a080a516793c1014cc9965de))
 * **contact:** updated copy ([d747f715](https://github.com/telusdigital/tds/commit/d747f715c62a179c187ea03ebb2ede5298756aa3))
-* **guide:** 
+* **guide:**
   * add template for issues and feature requests ([3c553097](https://github.com/telusdigital/tds/commit/3c553097c3a46a0329ef790f380e5150742e4bee))
   * Match Styleguidist sidebar background color and width ([a81726c7](https://github.com/telusdigital/tds/commit/a81726c7ef359ff32388bcbe7fb385c9ed9663dc))
   * Add Logo and favicon to static site docs ([a267790f](https://github.com/telusdigital/tds/commit/a267790f1d57a602ec74b63ecba60248f783279a))
@@ -158,11 +201,11 @@
 
 ##### New Features
 
-* **guide:** 
+* **guide:**
   * remove erroneous sidebar link ([cd644b59](https://github.com/telusdigital/tds/commit/cd644b5909edbdf9ebdbd8ee50a3f361461660be))
   * Re-order Navigation items ([d6aa6f48](https://github.com/telusdigital/tds/commit/d6aa6f48e2f49252c73d3b4bab134c3628f39dd7))
   * TDSify headings ([2a675598](https://github.com/telusdigital/tds/commit/2a67559835aca4732c7fd4821ace3f1fcdec0f32))
-* **flex-grid:** 
+* **flex-grid:**
   * Add 32px to all fixed widths ([fe16728c](https://github.com/telusdigital/tds/commit/fe16728c3acd33f68be76ef011c8e83f6998bcfa))
   * Make limitWidth prop to always be center aligned ([e8b9e321](https://github.com/telusdigital/tds/commit/e8b9e321f041a06d59bd599b13a56f5f89f80d93))
   * remove reliance on a row ([9696c57b](https://github.com/telusdigital/tds/commit/9696c57b580733612023ffe6c33d9f28fc62835d))
@@ -174,7 +217,7 @@
 ##### Bug Fixes
 
 * **textarea:**
-  * export textarea using  pascalcase ([e641ae91](https://github.com/telusdigital/tds/commit/e641ae91f433b0c31487b5059ea8eb4e7ac3344a))
+  * export textarea using pascalcase ([e641ae91](https://github.com/telusdigital/tds/commit/e641ae91f433b0c31487b5059ea8eb4e7ac3344a))
   * change file structure to pascalcase ([e0db0816](https://github.com/telusdigital/tds/commit/e0db08166375d317e4654805f530cef2797ade8e))
 * **styleguiderenderer:** pass tests ([fcd6ec58](https://github.com/telusdigital/tds/commit/fcd6ec58cff476ce5ff8ad604461974c534a373d))
 
@@ -360,7 +403,7 @@
 * **checkbox:**
   * updated example ([f1be6753](https://github.com/telusdigital/tds/commit/f1be67533929e6d05b3b3212773809e301333b56))
   * updated example ([48f7b97b](https://github.com/telusdigital/tds/commit/48f7b97b3ca1428da08f8f55baf10cc947236506))
-  * Minor update to example with  multiple checkboxes ([ca037701](https://github.com/telusdigital/tds/commit/ca037701b3c26deae75ce32666cbffb2c31ac19f))
+  * Minor update to example with multiple checkboxes ([ca037701](https://github.com/telusdigital/tds/commit/ca037701b3c26deae75ce32666cbffb2c31ac19f))
   * Add example with error message ([b13444db](https://github.com/telusdigital/tds/commit/b13444dbbcedd5a72bd877bf00195566a1d9531f))
 * **choice:** Minor updates to example ([d6e00cb0](https://github.com/telusdigital/tds/commit/d6e00cb09f93665d25499f415698dc79176bacfe))
 * **gitbook:**
@@ -452,7 +495,7 @@
 * **forms-styles:** Rename FormFields.modules.scss as Forms.modules.scss to prevent confusion wi ([3d6c0635](https://github.com/telusdigital/tds/commit/3d6c06356d68086ab5ca2ed8a3d7eebc1b2c4802))
 * **helper:** Move helper into the Formfield folder ([af7036cc](https://github.com/telusdigital/tds/commit/af7036cc0ad137642502959d7a51b53b6429dcf6))
 * **flexgrid:**
-  * Change on how tests are being applied (from .get  to .at ). ([7028d646](https://github.com/telusdigital/tds/commit/7028d646f498b4c01672e92d881445f3a697ec54))
+  * Change on how tests are being applied (from .get to .at ). ([7028d646](https://github.com/telusdigital/tds/commit/7028d646f498b4c01672e92d881445f3a697ec54))
   * Adjust test variables accordingly (from doShallow to doMount) ([80765980](https://github.com/telusdigital/tds/commit/80765980eb57ada7a8d87478ff7927e061d5c06b))
 * **radio:** Refactor commont subcomponents of radio and checkbox into Choice ([d100c60f](https://github.com/telusdigital/tds/commit/d100c60f3ddfeb820deed5b00e82dfdf299bcb4a))
 * **styles:** Allow radio and checkbox to emit focus/blur events ([05f5d7f7](https://github.com/telusdigital/tds/commit/05f5d7f78c3eac9f88892d460a19229399659bdd))
@@ -498,7 +541,7 @@
   * Adjust spacing again based on design specs ([e47ccea2](https://github.com/telusdigital/tds/commit/e47ccea2fb135edc8d9014de1a6e51616aaaeb07))
 * **select:** Initial commit of Select ([eeb5e69e](https://github.com/telusdigital/tds/commit/eeb5e69e76fe93eb935e6bc05a37baa2dbee5aa2))
 * **textarea:** Initial commit of textarea component ([2a5c5338](https://github.com/telusdigital/tds/commit/2a5c5338ceead0714dc77799a32ecf15e91b79f5))
-* **expand-collapse:** Make location of the tertiary-text  in Panel responsive ([24dc41e6](https://github.com/telusdigital/tds/commit/24dc41e663ecdebbbfa6901fb5384f35741c2b07))
+* **expand-collapse:** Make location of the tertiary-text in Panel responsive ([24dc41e6](https://github.com/telusdigital/tds/commit/24dc41e663ecdebbbfa6901fb5384f35741c2b07))
 * **responsive**
   * New responsive box wrapper / unit test refactoring ([231ff919](https://github.com/telusdigital/tds/commit/231ff9197093c2458999a84eabeae5e8055196c1))
   * Apply new responsive skill to box component ([18924b1e](https://github.com/telusdigital/tds/commit/18924b1e1a5dcec4027fa023dda76979f4482379))
@@ -893,7 +936,7 @@
   * Add renderBubble function to show/hide tooltip text ([cd43e35e](https://github.com/telusdigital/tds/commit/cd43e35ee5cd0acdf7bb83a95ad146b59bad629c))
   * Add ability to toggle tooltip bubble ([1699d136](https://github.com/telusdigital/tds/commit/1699d136124e6d591a04a70fa396d9696b61983d))
   * Extend React.Component ([c18c7f4f](https://github.com/telusdigital/tds/commit/c18c7f4f5edc26d3d6f19a144b8906e4676089bf))
-  * Add first draft [WIP] ([12d5c55a](https://github.com/telusdigital/tds/commit/12d5c55a40fcebe14da988715f0c794f5dbd96bd))
+  * Add first draft [WIP](<[12d5c55a](https://github.com/telusdigital/tds/commit/12d5c55a40fcebe14da988715f0c794f5dbd96bd)>)
 * prep for v0.23.0 release ([8561a011](https://github.com/telusdigital/tds/commit/8561a01143f057e0054cf748ae9b7ca99eeb3ed8))
 * **icon:** Update Icon font-size typo ([17433835](https://github.com/telusdigital/tds/commit/17433835e68d37a2f3af97879626d2eae1b1fa9f))
 * **dividers:** New gradient properties for hairline gradients ([8aa51def](https://github.com/telusdigital/tds/commit/8aa51def3ac19dc211dfedf2db49c3624f638078))
@@ -1071,7 +1114,7 @@
   * Updates to UnorderedList ([5bd600c7](https://github.com/telusdigital/tds/commit/5bd600c72a6cad5c51f78dee2d2351e43abb089a))
   * Fix local styleguide by correcting the path to the list items in the config file. ([a3de9ebe](https://github.com/telusdigital/tds/commit/a3de9ebe31d4a786d1666abf8ae6bdd78365c2f4))
   * Merge list item tests into its corresponding parent .spec.jsx file ([b9bd3f87](https://github.com/telusdigital/tds/commit/b9bd3f87ad20265197358d3918caf54dcf4aeafd))
-  * Add UnorderedList and Unordered Item first draft [WIP] ([3485b5df](https://github.com/telusdigital/tds/commit/3485b5df0e85ca40daabc0d524647bb3691382f8))
+  * Add UnorderedList and Unordered Item first draft [WIP](<[3485b5df](https://github.com/telusdigital/tds/commit/3485b5df0e85ca40daabc0d524647bb3691382f8)>)
 * **text:**
   * Allow Text component to inherit its color, same as Paragraph and Link ([49481c06](https://github.com/telusdigital/tds/commit/49481c06804e84f120ba54a368d997c02adcbf97))
   * Code Review updates ([66c5dfbf](https://github.com/telusdigital/tds/commit/66c5dfbfa349174f1fbc9c40d504770054710cdf))
@@ -1319,6 +1362,7 @@
 * **Old docs:** Remove old Wintersmith docs. They are no longer used. ([86e1ec2a](https://github.com/telusdigital/tds/commit/86e1ec2a98e878e623b8ed4b03fac3686268d8ac))
 
 ##### Documentation Changes
+
 * **button:**
   * Add version badge to Button docs. ([26f02d02](https://github.com/telusdigital/tds/commit/26f02d02975129c1bf763b19f77309bb4e73c087))
   * Move around the disabled button docs for clarity. ([6a74cccc](https://github.com/telusdigital/tds/commit/6a74cccc7334c23d265f848c5e7cf0999b1de787))
@@ -1326,6 +1370,7 @@
 * **grid:** adjust grammar ([d6b6356e](https://github.com/telusdigital/tds/commit/d6b6356e50672d62708c86d9649c27a98a95d48b))
 
 ##### New Features
+
 * **button:**
   * Use button component in docs examples. ([65fb9a65](https://github.com/telusdigital/tds/commit/65fb9a6593a2409908eb6e6698c609061fa8fd94))
   * Add disabled and sizing to the Button docs. ([07603082](https://github.com/telusdigital/tds/commit/07603082ea21fa1155b6357f5146f30c52696212))
@@ -1340,6 +1385,7 @@
   * add icon to chevron link ([085be090](https://github.com/telusdigital/tds/commit/085be090ddb679d54802ff92ef04a555f931bf48))
 
 #### 0.19.1 (2017-08-08)
+
 ##### Continuous Integration
 
 * **Publish package:**
@@ -1478,1598 +1524,1445 @@
 * **mocks:** Replace sinon with jest mocks ([fe6439cb](https://github.com/telusdigital/tds/commit/fe6439cbdab46b73a2c3d248360789cdbc6d66d1))
 * **snapshots:** Correct misnamed snapshot to try to fix Docker build. ([bb904bb5](https://github.com/telusdigital/tds/commit/bb904bb54d2b3dcf4f3911d3737417bab89b3a02))
 
-
-
-
-
 ## v0.18.1
-
 
 https://github.com/telusdigital/tds/releases/tag/v0.18.1
 
-- fix(Card and Notification): import css using require just like on previous versions
-
-
+* fix(Card and Notification): import css using require just like on previous versions
 
 ## v0.18.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.18.0
 
-- fix(links): cleaned up link underline mixin
-- fix(buttons): update anchor styles when styled as buttons
-- fix(notification): make it more accessible by using role="banner"
-- fix(Expand Collapse): fix hover states by using chevrons to indicate state
-- docs(sketch file): update
-- docs(hide blocks and block components): because they are not following latest standards and no one i
-- Changelog and version bump for v0.18.0
-
-
+* fix(links): cleaned up link underline mixin
+* fix(buttons): update anchor styles when styled as buttons
+* fix(notification): make it more accessible by using role="banner"
+* fix(Expand Collapse): fix hover states by using chevrons to indicate state
+* docs(sketch file): update
+* docs(hide blocks and block components): because they are not following latest standards and no one i
+* Changelog and version bump for v0.18.0
 
 ## v0.17.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.17.0
 
-- docs(sketch): update file to show colour updates
-- docs(sketch): updates to versioning art board with details about colour changes
-- docs(sketch): minor update to versioning details in sketch
-- docs(sketch): update re: raven - shade of grey in forms
-- build(dependencies): remove js-dom as a dependency as it was unused and causing install problems
-- build(dependencies): add yarn.lock files to lock down dependencies for devs using yarn
-- chore(editor): Add an .editorconfig file for aligning editor configurations
-- feat(Card): Deprecate className and style.
-- refactor(notification): deprecate className and style
-- Changelog and version bump for v0.17.0
-
-
+* docs(sketch): update file to show colour updates
+* docs(sketch): updates to versioning art board with details about colour changes
+* docs(sketch): minor update to versioning details in sketch
+* docs(sketch): update re: raven - shade of grey in forms
+* build(dependencies): remove js-dom as a dependency as it was unused and causing install problems
+* build(dependencies): add yarn.lock files to lock down dependencies for devs using yarn
+* chore(editor): Add an .editorconfig file for aligning editor configurations
+* feat(Card): Deprecate className and style.
+* refactor(notification): deprecate className and style
+* Changelog and version bump for v0.17.0
 
 ## v0.16.3
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.16.3
 
-- docs(documentation to use 0.16.1 to fix release):
-- Changelog and version bump for v0.16.3
-
-
+* docs(documentation to use 0.16.1 to fix release):
+* Changelog and version bump for v0.16.3
 
 ## v0.16.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.16.1
 
-- docs(changelog): usual manual update
-- fix(repo rename updates): to keep the old repo instead of using the newly created so we don't loose
-- fix(colours, chevron and display h1 updates): - colour renaming and updates
-- chore(move over beta 0.16.1):
-
-
+* docs(changelog): usual manual update
+* fix(repo rename updates): to keep the old repo instead of using the newly created so we don't loose
+* fix(colours, chevron and display h1 updates): - colour renaming and updates
+* chore(move over beta 0.16.1):
 
 ## v0.16.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.16.0
 
-- docs(changelog): update
-- Update README.md
-- Remove console.log (#344)
-- Update README.md
-- Beta Release (#369)
-- docs(typography example): fix typo on list class
-- docs(links): update code to match example
-- Changelog and version bump for v0.16.0
-
-
+* docs(changelog): update
+* Update README.md
+* Remove console.log (#344)
+* Update README.md
+* Beta Release (#369)
+* docs(typography example): fix typo on list class
+* docs(links): update code to match example
+* Changelog and version bump for v0.16.0
 
 ## v0.15.3
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.15.3
 
-- Revert updates of latest blocks + component
-- fix(component collapsible): make collapsible content height dynamic
-- Revert "Revert updates of latest blocks + component"
-- refactor(changed react.propTypes to PropTypes): (#337)
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- build(add prop-type package to enriched package.json):
-- Changelog and version bump for v0.15.3
-
-
+* Revert updates of latest blocks + component
+* fix(component collapsible): make collapsible content height dynamic
+* Revert "Revert updates of latest blocks + component"
+* refactor(changed react.propTypes to PropTypes): (#337)
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* build(add prop-type package to enriched package.json):
+* Changelog and version bump for v0.15.3
 
 ## v0.15.2
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.15.2
 
-- fix(linting): remove jsx-filename-extension rule because spec.js need to be written using a differen
-- fix(linting): fix javascript linting
-- fix(linting): fix linting errors and warnings caused by updates to eslint file
-- docs(changelog): manually update changelog.md with jade header :S
-- Merge branch 'fix/linting' of github.com:telusdigital/telus-thorium-core
-- build(preinstall): remove preinstall task and call /scripts/init-npm.sh instead
-- build: groovy.ci
-- build(groovy.ci): cd into /scripts folder to run init-npm.sh
-- build(groovy.ci): updating path to init-npm.sh :)
-- Changelog and version bump for v0.15.2
-
-
+* fix(linting): remove jsx-filename-extension rule because spec.js need to be written using a differen
+* fix(linting): fix javascript linting
+* fix(linting): fix linting errors and warnings caused by updates to eslint file
+* docs(changelog): manually update changelog.md with jade header :S
+* Merge branch 'fix/linting' of github.com:telusdigital/telus-thorium-core
+* build(preinstall): remove preinstall task and call /scripts/init-npm.sh instead
+* build: groovy.ci
+* build(groovy.ci): cd into /scripts folder to run init-npm.sh
+* build(groovy.ci): updating path to init-npm.sh :)
+* Changelog and version bump for v0.15.2
 
 ## v0.15.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.15.1
 
-- Merge remote-tracking branch 'origin/qatesting' into qatesting
-- Merge remote-tracking branch 'origin/qatesting' into qatesting
-- Merge branch 'master' into qatesting
-- docs(changelog): update manually
-- fix(viewport): adding initial-scale to test
-- Merge branch 'qatesting' of github.com:telusdigital/telus-thorium-core into qatesting
-- fix(layout): make tablet view same as desktop
-- fix(layout): css update for docs
-- Merge remote-tracking branch 'origin/qatesting' into qatesting
-- fix(change nav bg on medium to match large view):
-- Merge branch 'qatesting' of github.com:telusdigital/telus-thorium-core into qatesting
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
-- add polyfill.io to fix layout issues on IE11
-- Revert "add polyfill.io to fix layout issues on IE11"
-- feat(buttons): remove styles from html tag
-- switch from include to indexof
-- typo fix
-- fix(set <main/> to display:block on reset.css for IE11):
-- fix(changelog.sh): update changelog_entry()
-- docs(navigation): add classname to navigation items
-- fix(button): make min-width: 180px
-- feat(button): remove css styles from button html tag
-- docs(sketch): update version on sketch file to v0.15.0
-- BEMize button styles
-- docs(links): moved links documentation to its own page, it didn't really make sense to have it on th
-- docs(upgrading.md): add note about changes made to buttons.scss
-- fix(buttons): remove border on hover state of disabled button
-- fix(buttons): BEMized style for button's disabled state
-- docs(buttons): add TOC
-- feat(chevron links): refactor css/html to reduce markup, ie. chevron is now displayed using :after p
-- docs(typography): showcase of typography layout changes
-- fix(buttons): inverted button hover state to match the other buttons
-- docs(upgrading.md): documenting updates to reset offsets
-- add Steps component
-- feat(buttons): refactor css to clean up buttons css and documentation
-- add in unit tests
-- fix(component: Card): remove border
-- fix(buttons): on selector counter component needed .tds-button--plain class
-- fix(component card): remove 1px border from Card component
-- fix(collapsible): Fixes vertical alignment of items win Collapsible.Panel using flex (#321)
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- docs(components with buttons in doc): update button classes
-- fix(buttons): update cursor on button's disabled state
-- Merge branch 'feature/steps' of github.com:telusdigital/telus-thorium-core into qatesting
-- ci(package.json): remove --watch from test task
-- add Spinner component
-- add in unit tests
-- add api in doc
-- build(jest): update to version 0.19.0
-- test(test snapshots): update
-- Merge branch 'feature/Spinner' of github.com:telusdigital/telus-thorium-core into qatesting
-- fix(component steps): add references to Steps in enriched/ and docs/ so the Step Tracker shows on it
-- fix(steps): fix button on step tracker page
-- docs(component collapsible): spelling mistake
-- fix(button): fix button related bugs in documentation
-- docs(forms): update code sample using tds-button--plain
-- add spinner full screen mode
-- remove console
-- update style
-- fix full screen bug
-- type fix
-- bug fix
-- remove transition
-- remove bulr effect
-- Revert "docs(forms): update code sample using tds-button--plain"
-- Revert "fix(button): fix button related bugs in documentation"
-- Revert "fix(buttons): update cursor on button's disabled state"
-- Revert "docs(components with buttons in doc): update button classes"
-- Revert "Merge branch 'master' of github.com:telusdigital/telus-thorium-core"
-- Revert "feat(buttons): refactor css to clean up buttons css and documentation"
-- Revert "fix(buttons): inverted button hover state to match the other buttons"
-- Revert "feat(chevron links): refactor css/html to reduce markup, ie. chevron is now displayed using :after p"
-- Revert "docs(buttons): add TOC"
-- Revert "fix(buttons): BEMized style for button's disabled state"
-- Revert "docs(upgrading.md): add note about changes made to buttons.scss"
-- Revert "BEMize button styles"
-- Revert "feat(button): remove css styles from button html tag"
-- Revert "fix(button): make min-width: 180px"
-- Revert "fix(component: Card): remove border"
-- Revert "docs(links): moved links documentation to its own page, it didn't really make sense to have it on th"
-- refactor a bit
-- refactor
-- Merge branch 'qatesting'
-- Revert "Merge branch 'qatesting'"
-- fix(collapsible component): fix toggle buttons on collapsible doc and the ControlledCollapsible.jsx
-- docs(sketch): update version number on sketch file because it was missed on 0.15.0 release
-- updating issue template (#336)
-- Changelog and version bump for v0.15.1
-
-
+* Merge remote-tracking branch 'origin/qatesting' into qatesting
+* Merge remote-tracking branch 'origin/qatesting' into qatesting
+* Merge branch 'master' into qatesting
+* docs(changelog): update manually
+* fix(viewport): adding initial-scale to test
+* Merge branch 'qatesting' of github.com:telusdigital/telus-thorium-core into qatesting
+* fix(layout): make tablet view same as desktop
+* fix(layout): css update for docs
+* Merge remote-tracking branch 'origin/qatesting' into qatesting
+* fix(change nav bg on medium to match large view):
+* Merge branch 'qatesting' of github.com:telusdigital/telus-thorium-core into qatesting
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
+* add polyfill.io to fix layout issues on IE11
+* Revert "add polyfill.io to fix layout issues on IE11"
+* feat(buttons): remove styles from html tag
+* switch from include to indexof
+* typo fix
+* fix(set <main/> to display:block on reset.css for IE11):
+* fix(changelog.sh): update changelog_entry()
+* docs(navigation): add classname to navigation items
+* fix(button): make min-width: 180px
+* feat(button): remove css styles from button html tag
+* docs(sketch): update version on sketch file to v0.15.0
+* BEMize button styles
+* docs(links): moved links documentation to its own page, it didn't really make sense to have it on th
+* docs(upgrading.md): add note about changes made to buttons.scss
+* fix(buttons): remove border on hover state of disabled button
+* fix(buttons): BEMized style for button's disabled state
+* docs(buttons): add TOC
+* feat(chevron links): refactor css/html to reduce markup, ie. chevron is now displayed using :after p
+* docs(typography): showcase of typography layout changes
+* fix(buttons): inverted button hover state to match the other buttons
+* docs(upgrading.md): documenting updates to reset offsets
+* add Steps component
+* feat(buttons): refactor css to clean up buttons css and documentation
+* add in unit tests
+* fix(component: Card): remove border
+* fix(buttons): on selector counter component needed .tds-button--plain class
+* fix(component card): remove 1px border from Card component
+* fix(collapsible): Fixes vertical alignment of items win Collapsible.Panel using flex (#321)
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* docs(components with buttons in doc): update button classes
+* fix(buttons): update cursor on button's disabled state
+* Merge branch 'feature/steps' of github.com:telusdigital/telus-thorium-core into qatesting
+* ci(package.json): remove --watch from test task
+* add Spinner component
+* add in unit tests
+* add api in doc
+* build(jest): update to version 0.19.0
+* test(test snapshots): update
+* Merge branch 'feature/Spinner' of github.com:telusdigital/telus-thorium-core into qatesting
+* fix(component steps): add references to Steps in enriched/ and docs/ so the Step Tracker shows on it
+* fix(steps): fix button on step tracker page
+* docs(component collapsible): spelling mistake
+* fix(button): fix button related bugs in documentation
+* docs(forms): update code sample using tds-button--plain
+* add spinner full screen mode
+* remove console
+* update style
+* fix full screen bug
+* type fix
+* bug fix
+* remove transition
+* remove bulr effect
+* Revert "docs(forms): update code sample using tds-button--plain"
+* Revert "fix(button): fix button related bugs in documentation"
+* Revert "fix(buttons): update cursor on button's disabled state"
+* Revert "docs(components with buttons in doc): update button classes"
+* Revert "Merge branch 'master' of github.com:telusdigital/telus-thorium-core"
+* Revert "feat(buttons): refactor css to clean up buttons css and documentation"
+* Revert "fix(buttons): inverted button hover state to match the other buttons"
+* Revert "feat(chevron links): refactor css/html to reduce markup, ie. chevron is now displayed using :after p"
+* Revert "docs(buttons): add TOC"
+* Revert "fix(buttons): BEMized style for button's disabled state"
+* Revert "docs(upgrading.md): add note about changes made to buttons.scss"
+* Revert "BEMize button styles"
+* Revert "feat(button): remove css styles from button html tag"
+* Revert "fix(button): make min-width: 180px"
+* Revert "fix(component: Card): remove border"
+* Revert "docs(links): moved links documentation to its own page, it didn't really make sense to have it on th"
+* refactor a bit
+* refactor
+* Merge branch 'qatesting'
+* Revert "Merge branch 'qatesting'"
+* fix(collapsible component): fix toggle buttons on collapsible doc and the ControlledCollapsible.jsx
+* docs(sketch): update version number on sketch file because it was missed on 0.15.0 release
+* updating issue template (#336)
+* Changelog and version bump for v0.15.1
 
 ## v0.15.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.15.0
 
-- fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
-- Issue #304
-- update doc
-- fix(form hinter): adjust font size to make it more legible
-- docs(contributing): add Alex's email to email us links
-- ci(changelog.sh): add .jade header to avoid seeing Untitled in left nav after a release
-- Revert "fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally"
-- feat(dimple): add tds-dimple mixin and use it in accordion component
-- feat(grid offset): revert back to previous offset functionality and added offset reset for each view
-- Merge remote-tracking branch 'origin/collapsible-disable-state' into qatesting
-- docs(changelog): updating .jade header manually for the last time
-- Issue #304 (#306)
-- Merge branch 'qatesting'
-- Changelog and version bump for v0.15.0
-
-
+* fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
+* Issue #304
+* update doc
+* fix(form hinter): adjust font size to make it more legible
+* docs(contributing): add Alex's email to email us links
+* ci(changelog.sh): add .jade header to avoid seeing Untitled in left nav after a release
+* Revert "fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally"
+* feat(dimple): add tds-dimple mixin and use it in accordion component
+* feat(grid offset): revert back to previous offset functionality and added offset reset for each view
+* Merge remote-tracking branch 'origin/collapsible-disable-state' into qatesting
+* docs(changelog): updating .jade header manually for the last time
+* Issue #304 (#306)
+* Merge branch 'qatesting'
+* Changelog and version bump for v0.15.0
 
 ## v0.14.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.14.1
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- docs(fix container on sample forms page):
-- docs(sketch): update new file v0.14.1
-- Changelog and version bump for v0.14.1
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* docs(fix container on sample forms page):
+* docs(sketch): update new file v0.14.1
+* Changelog and version bump for v0.14.1
 
 ## v0.14.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.14.0
 
-- fix(typography): add etext for helvetica 45(400), 55(600), 65(700) and the corresponding line-height
-- fix(fonts): adjust font-url-prefix for new extext fonts
-- fix(grid): fix containers, including add new .container--fluid
-- fix(typography): letter-spacing audit for etext
-- docs(typography): update typography example layout
-- fix(typography): adjust line-height on h2 mobile
-- feat(grid): update dimensions
-- docs(grid): update documentation re: grid containers
-- docs(fonts): update list of fonts in documentation
-- fix(etext): update path to load from cdn /production/core/fonts/etext
-- BMK-000 - Dan & Guille: Add index to blocks directory. (#276)
-- docs(PR template and changelog): update PR template with acceptance criteria and manually update cha
-- add url loader to doc webpack config
-- BMK-123: Rodrigo - Add WithLegal to OverviewBlock (#282)
-- feat(titled text block): Adds titled text block and documentation (#279)
-- docs(gh #281): update md parsing to display classes
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- fix(build): add .npmrc to /enriched so we can install private contentful-redux package
-- build(ci.groovy): call npm run preinstall explicitly
-- build(ci.groovy and package.json): call npm run preinstall explicitly
-- build(ci.groovy): add new jenkins job to get triggered from test branch to not pollute the master br
-- build(ci.groovy): add ability to push to qa from test branch
-- fix(package.json): move init-npm.sh to /enriched
-- fix(init-npm.sh): update path to .npmrc
-- Fixing tests (#291)
-- fix(video block): fix unit test missing colon in console statement
-- build(ci.groovy): update builds to accommodate pushing to qa to test
-- fix(package.json): set react to 15.3.2 on peerDependencies
-- Adding wrapper object to create an sshAgent containing an SSH key (#293)
-- fix(docs): fix missing navigation
-- build(ci.groovy): add sshAgent wrapper on new qa jenkins job
-- build(ci.groovy): remove qa jenkins job
-- fix(blocks): fix title on headline and titled text blocks due to title -> caption search and replace
-- build(ci.groovy): setup jenkins job for qatesting branch
-- feat(sketch): new version of sketch file
-- Add overflow: hidden to collapsible to fix #294 (#295)
-- docs(typography): map helvetica neue to it's corresponding css attribute (font-weight value)
-- build(ci.groovy): remove tds-deploy line, not needed to push to qa
-- build(ci.groovy): remove tds-deploy line for qa-build because we are not generating git tags
-- Update ci.groovy
-- refactor(package.json): consume redux-contentful
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- feat(grid and typography updates): grid gutter is now 16px on each side of a column and typography f
-- fix(grid): offset class are now viewport specific
-- docs(grid): update sample page to use .container--fluid
-- docs(changelog): manually update changelog because it won't update automatically
-- docs(markdown): fix broken TOC links and broken roadmap link
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
-- build(ci.groovy): add sshAgent to release job
-- Changelog and version bump for v0.14.0
-
-
+* fix(typography): add etext for helvetica 45(400), 55(600), 65(700) and the corresponding line-height
+* fix(fonts): adjust font-url-prefix for new extext fonts
+* fix(grid): fix containers, including add new .container--fluid
+* fix(typography): letter-spacing audit for etext
+* docs(typography): update typography example layout
+* fix(typography): adjust line-height on h2 mobile
+* feat(grid): update dimensions
+* docs(grid): update documentation re: grid containers
+* docs(fonts): update list of fonts in documentation
+* fix(etext): update path to load from cdn /production/core/fonts/etext
+* BMK-000 - Dan & Guille: Add index to blocks directory. (#276)
+* docs(PR template and changelog): update PR template with acceptance criteria and manually update cha
+* add url loader to doc webpack config
+* BMK-123: Rodrigo - Add WithLegal to OverviewBlock (#282)
+* feat(titled text block): Adds titled text block and documentation (#279)
+* docs(gh #281): update md parsing to display classes
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* fix(build): add .npmrc to /enriched so we can install private contentful-redux package
+* build(ci.groovy): call npm run preinstall explicitly
+* build(ci.groovy and package.json): call npm run preinstall explicitly
+* build(ci.groovy): add new jenkins job to get triggered from test branch to not pollute the master br
+* build(ci.groovy): add ability to push to qa from test branch
+* fix(package.json): move init-npm.sh to /enriched
+* fix(init-npm.sh): update path to .npmrc
+* Fixing tests (#291)
+* fix(video block): fix unit test missing colon in console statement
+* build(ci.groovy): update builds to accommodate pushing to qa to test
+* fix(package.json): set react to 15.3.2 on peerDependencies
+* Adding wrapper object to create an sshAgent containing an SSH key (#293)
+* fix(docs): fix missing navigation
+* build(ci.groovy): add sshAgent wrapper on new qa jenkins job
+* build(ci.groovy): remove qa jenkins job
+* fix(blocks): fix title on headline and titled text blocks due to title -> caption search and replace
+* build(ci.groovy): setup jenkins job for qatesting branch
+* feat(sketch): new version of sketch file
+* Add overflow: hidden to collapsible to fix #294 (#295)
+* docs(typography): map helvetica neue to it's corresponding css attribute (font-weight value)
+* build(ci.groovy): remove tds-deploy line, not needed to push to qa
+* build(ci.groovy): remove tds-deploy line for qa-build because we are not generating git tags
+* Update ci.groovy
+* refactor(package.json): consume redux-contentful
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* feat(grid and typography updates): grid gutter is now 16px on each side of a column and typography f
+* fix(grid): offset class are now viewport specific
+* docs(grid): update sample page to use .container--fluid
+* docs(changelog): manually update changelog because it won't update automatically
+* docs(markdown): fix broken TOC links and broken roadmap link
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
+* build(ci.groovy): add sshAgent to release job
+* Changelog and version bump for v0.14.0
 
 ## v0.13.2
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.13.2
 
-- fix(blocks): got rid of `blocks/blocks` folder
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- Changelog and version bump for v0.13.2
-
-
+* fix(blocks): got rid of `blocks/blocks` folder
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* Changelog and version bump for v0.13.2
 
 ## v0.13.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.13.1
-
-
-
-
 
 ## v0.13.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.13.0
 
-- docs(overview block): update order of elements in overview documentation page
-- fix(headline block): Fixing headline block tests (#273)
-- fix(overview block): move to blocks/blocks folder
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- fix(overview block): update path to checklist now that block was  moved to blocks/blocks folder
-- Changelog and version bump for v0.13.0
-
-
+* docs(overview block): update order of elements in overview documentation page
+* fix(headline block): Fixing headline block tests (#273)
+* fix(overview block): move to blocks/blocks folder
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* fix(overview block): update path to checklist now that block was moved to blocks/blocks folder
+* Changelog and version bump for v0.13.0
 
 ## v0.12.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.12.0
 
-- Feature/bmk 30 overview check list block (#270)
-- docs(changelog): update
-- test(overview block): update test
-- feat(package.json): update telus-thorium-core to 0.11.4
-- feat(package.json): updates to package.jsons to manually update 0.10.2 to 0.11.4
-- docs(blocks template): update layout on layout-blocks.jade to improve presentation of blocks
-- update jest config to only scan src folder for unit tests; remove the extra block folder
-- Changelog and version bump for v0.12.0
-
-
+* Feature/bmk 30 overview check list block (#270)
+* docs(changelog): update
+* test(overview block): update test
+* feat(package.json): update telus-thorium-core to 0.11.4
+* feat(package.json): updates to package.jsons to manually update 0.10.2 to 0.11.4
+* docs(blocks template): update layout on layout-blocks.jade to improve presentation of blocks
+* update jest config to only scan src folder for unit tests; remove the extra block folder
+* Changelog and version bump for v0.12.0
 
 ## v0.11.4
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.11.4
 
-- Changelog and version bump for v0.11.4
-
-
+* Changelog and version bump for v0.11.4
 
 ## v0.11.3
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.11.3
 
-- Changelog and version bump for v0.11.3
-
-
+* Changelog and version bump for v0.11.3
 
 ## v0.11.2
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.11.2
 
-- Changelog and version bump for v0.11.2
-
-
+* Changelog and version bump for v0.11.2
 
 ## v0.11.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.11.1
 
-- Changelog and version bump for v0.11.1
-
-
+* Changelog and version bump for v0.11.1
 
 ## v0.11.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.11.0
 
-- docs(sketch): add version number on all TDS.sketch links
-- Create ISSUE_TEMPLATE.md
-- Create PULL_REQUEST_TEMPLATE.md
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- fix(typography): adjust letter-spacing and font-weight for h2
-- docs(display heading 1): add .display-heading-1 to typography.md documentation
-- BMK-28 - Dan, Bruno, Fernanda: Add Checklist Component.
-- Merge branch 'feature/BMK-28_check_list_component' of github.com:telusdigital/telus-thorium-core
-- fix(icons): update core-icons.* path to fix .woff2 404 issue #260
-- revert(checklist): Bo to review the code before it gets published
-- docs(typography): add example on how sup and sub look like with p1,p2 and p3 on typography.html
-- docs(blocks): add blocks section within documentation and Overview block boilerplate
-- feat(blocks-components): add ability to add non-global components and their corresponding documentat
-- feat(blocks): add sample Overview Block and corresponding documentation template and page
-- Changelog and version bump for v0.11.0
-
-
+* docs(sketch): add version number on all TDS.sketch links
+* Create ISSUE_TEMPLATE.md
+* Create PULL_REQUEST_TEMPLATE.md
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* fix(typography): adjust letter-spacing and font-weight for h2
+* docs(display heading 1): add .display-heading-1 to typography.md documentation
+* BMK-28 - Dan, Bruno, Fernanda: Add Checklist Component.
+* Merge branch 'feature/BMK-28_check_list_component' of github.com:telusdigital/telus-thorium-core
+* fix(icons): update core-icons.\* path to fix .woff2 404 issue #260
+* revert(checklist): Bo to review the code before it gets published
+* docs(typography): add example on how sup and sub look like with p1,p2 and p3 on typography.html
+* docs(blocks): add blocks section within documentation and Overview block boilerplate
+* feat(blocks-components): add ability to add non-global components and their corresponding documentat
+* feat(blocks): add sample Overview Block and corresponding documentation template and page
+* Changelog and version bump for v0.11.0
 
 ## v0.10.2
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.10.2
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- docs(buttons): accessibility: add role="button" in documentation
-- fix(typography): fix p2 and p3 font-size
-- Changelog and version bump for v0.10.2
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* docs(buttons): accessibility: add role="button" in documentation
+* fix(typography): fix p2 and p3 font-size
+* Changelog and version bump for v0.10.2
 
 ## v0.10.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.10.1
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- docs(manually run changelog script because deployment is buggy):
-- Changelog and version bump for v0.10.1
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* docs(manually run changelog script because deployment is buggy):
+* Changelog and version bump for v0.10.1
 
 ## v0.10.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.10.0
 
-- remove ## from readme link
-- update stylelint to fix linting warnings
-- adjust button padding to 17px 20px 17px 20px just like business site buttons
-- fix issue#191 (#197)
-- Updated grid boards to include max width (#180)
-- adjust top/bottom padding on button
-- update colours on documentation to match latest sketch file
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- add sass vars to documentation
-- change hex value from upppercase to lowercase to prevent build from failing
-- align colour documentation to the left
-- Layout fix (#201)
-- hide nav on automatically generated changelog page
-- fix to changelog page
-- remove fluidity section on grid.md
-- remove hack for Changelog link on Nav
-- hide doc nav on load on mobile views
-- add box-shadow to buttons to avoid shifting on hover
-- fix issue#188
-- fix formatting on changelog
-- add zip file with fonts needed to load sketch file
-- add links to font-for-sketch.zip file
-- remove min-height: 60px on buttons
-- minor style updates to content in colours.md
-- update Thorium to TDS in README.md copy
-- update upgrading guide
-- update getting started documentation
-- add ToC and reviewed content in setting-up-projects
-- update adoption thresholds section
-- update receiving updates content
-- update overview content
-- remove more instances of “Thorium” in documentation
-- add link to ttfautohint in icons script
-- update homepage content
-- fix issue#205
-- add background to show how max-width on container—limited-width works
-- document utility mixins
-- fix for documentation mobile nav
-- add ontouchstart event handler for mobile on doc nav
-- refactor mobile nav using css
-- add more details on how to use tds SCSS
-- Collapsible top border fix (#210)
-- add core-icons.otd to downloads page [doc]
-- update Roadmap.md
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- make ms-input-placeholder pseudo class style more specific
-- move core-icon mixin to mixins.scss
-- minor copy updates/links
-- add styles for sup and sub
-- add minor copy updates
-- Squashed commit of the following:
-- generate core-icons.woff2
-- remove font-weight: normal instances
-- fix(buttons): adjust size of input fields and buttons now that default font-size has changed from 19
-- docs(update to UPGRADING.md): with latest changes
-- chore(add commitizen): command line utility used to follow standards for writing good commit message
-- docs(foundations): add toc
-- fix(webfonts): load helvetica 45, 55, 65 fonts from cdn
-- remove core-icons from download because .otf is not working with font-book
-- docs(downloads): updates fonts-for-sketch.zip with helvetica eText Pro 45, 55, 65
-- docs(colours): switch green and purple colours between primary and response sections
-- docs(docs navigation): remove bold style on links
-- fix(grid): adjust padding on xs view columns
-- docs(docs): add grid test example
-- add grid test example
-- docs(grid): adjust sample page with colorful grid
-- fix(buttons): set font size to 16px
-- fix(add new font size, line-heights and letter-spacing as per sketch file):
-- fix(fonts): use cdn old helvetica fonts until brand buys etext font
-- docs(colours): update colours section to match sketch file
-- docs(docs): minor updates to colours and grid documentation
-- docs(fonts): remove zip file with fonts for sketch
-- docs(grid): add 12 column colorful grid example
-- refactor(colours): update colour variables to match the colour names on sketch
-- Changelog and version bump for v0.10.0
-
-
+* remove ## from readme link
+* update stylelint to fix linting warnings
+* adjust button padding to 17px 20px 17px 20px just like business site buttons
+* fix issue#191 (#197)
+* Updated grid boards to include max width (#180)
+* adjust top/bottom padding on button
+* update colours on documentation to match latest sketch file
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* add sass vars to documentation
+* change hex value from upppercase to lowercase to prevent build from failing
+* align colour documentation to the left
+* Layout fix (#201)
+* hide nav on automatically generated changelog page
+* fix to changelog page
+* remove fluidity section on grid.md
+* remove hack for Changelog link on Nav
+* hide doc nav on load on mobile views
+* add box-shadow to buttons to avoid shifting on hover
+* fix issue#188
+* fix formatting on changelog
+* add zip file with fonts needed to load sketch file
+* add links to font-for-sketch.zip file
+* remove min-height: 60px on buttons
+* minor style updates to content in colours.md
+* update Thorium to TDS in README.md copy
+* update upgrading guide
+* update getting started documentation
+* add ToC and reviewed content in setting-up-projects
+* update adoption thresholds section
+* update receiving updates content
+* update overview content
+* remove more instances of “Thorium” in documentation
+* add link to ttfautohint in icons script
+* update homepage content
+* fix issue#205
+* add background to show how max-width on container—limited-width works
+* document utility mixins
+* fix for documentation mobile nav
+* add ontouchstart event handler for mobile on doc nav
+* refactor mobile nav using css
+* add more details on how to use tds SCSS
+* Collapsible top border fix (#210)
+* add core-icons.otd to downloads page [doc]
+* update Roadmap.md
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* make ms-input-placeholder pseudo class style more specific
+* move core-icon mixin to mixins.scss
+* minor copy updates/links
+* add styles for sup and sub
+* add minor copy updates
+* Squashed commit of the following:
+* generate core-icons.woff2
+* remove font-weight: normal instances
+* fix(buttons): adjust size of input fields and buttons now that default font-size has changed from 19
+* docs(update to UPGRADING.md): with latest changes
+* chore(add commitizen): command line utility used to follow standards for writing good commit message
+* docs(foundations): add toc
+* fix(webfonts): load helvetica 45, 55, 65 fonts from cdn
+* remove core-icons from download because .otf is not working with font-book
+* docs(downloads): updates fonts-for-sketch.zip with helvetica eText Pro 45, 55, 65
+* docs(colours): switch green and purple colours between primary and response sections
+* docs(docs navigation): remove bold style on links
+* fix(grid): adjust padding on xs view columns
+* docs(docs): add grid test example
+* add grid test example
+* docs(grid): adjust sample page with colorful grid
+* fix(buttons): set font size to 16px
+* fix(add new font size, line-heights and letter-spacing as per sketch file):
+* fix(fonts): use cdn old helvetica fonts until brand buys etext font
+* docs(colours): update colours section to match sketch file
+* docs(docs): minor updates to colours and grid documentation
+* docs(fonts): remove zip file with fonts for sketch
+* docs(grid): add 12 column colorful grid example
+* refactor(colours): update colour variables to match the colour names on sketch
+* Changelog and version bump for v0.10.0
 
 ## v0.9.5
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.9.5
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- Changelog and version bump for v0.9.5
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* Changelog and version bump for v0.9.5
 
 ## v0.9.4
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.9.4
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- update buttons color/styles
-- adjust disabled hover styles
-- fix auto-width on SelectorCounter component
-- Changelog and version bump for v0.9.4
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* update buttons color/styles
+* adjust disabled hover styles
+* fix auto-width on SelectorCounter component
+* Changelog and version bump for v0.9.4
 
 ## v0.9.3
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.9.3
 
-- Changelog and version bump for v0.9.3
-
-
+* Changelog and version bump for v0.9.3
 
 ## v0.9.2
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.9.2
 
-- Fix inconsistent newlines in the changelog (#167)
-- Bug fix for collapsible pannel not receiving props
-- update doc
-- [[DSR-203](https://telusdigital.atlassian.net/browse/DSR-203)] Adding opt-in max-width to responsive grid (#145)
-- Changelog and version bump for v0.9.2
-
-
+* Fix inconsistent newlines in the changelog (#167)
+* Bug fix for collapsible pannel not receiving props
+* update doc
+* [[DSR-203](https://telusdigital.atlassian.net/browse/DSR-203)] Adding opt-in max-width to responsive grid (#145)
+* Changelog and version bump for v0.9.2
 
 ## v0.9.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.9.1
 
-- feature/BCM-165: Updated styling for Notification (#165)
-- Changelog and version bump for v0.9.1
-
-
+* feature/BCM-165: Updated styling for Notification (#165)
+* Changelog and version bump for v0.9.1
 
 ## v0.9.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.9.0
 
-- Notification Component [[BCM-165](https://telusdigital.atlassian.net/browse/BCM-165)] (#156)
-- Changelog and version bump for v0.9.0
-
-
+* Notification Component [[BCM-165](https://telusdigital.atlassian.net/browse/BCM-165)](#156)
+* Changelog and version bump for v0.9.0
 
 ## v0.8.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.8.0
 
-- Bug fixes for version bumps and changelog formatting during automated deployment
-- Fix misspelled card scss import (#159)
-- Publish the Icon component documentation (#160)
-- Changelog and version bump for v0.8.0
-
-
+* Bug fixes for version bumps and changelog formatting during automated deployment
+* Fix misspelled card scss import (#159)
+* Publish the Icon component documentation (#160)
+* Changelog and version bump for v0.8.0
 
 ## v0.7.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.7.1
 
-- Update dev & peer dependencies to TDS 0.7 (#157)
-- Changelog and version bump for v0.7.1
-
-
+* Update dev & peer dependencies to TDS 0.7 (#157)
+* Changelog and version bump for v0.7.1
 
 ## v0.7.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.7.0
 
-- Added react import line to grid docs.
-- Removed unused column div at the bottom of docs.
-- Fixed a typo in an example.
-- Updated to export a single Grid component, instead of individual ones.
-- Updated grid components to match linter specs.
-- Merge branch 'master' into feature/B4YBD-891_grid_components
-- Fixing CounterButton code style (#123)
-- [[DSR-143](https://telusdigital.atlassian.net/browse/DSR-143)] Adding Jenkins jobs configuration script
-- [[DSR-143](https://telusdigital.atlassian.net/browse/DSR-143)] Updating build pipeline
-- Merge pull request #108 from telusdigital/feature/DSR-143_jenkins
-- [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] Adding CDN Jenkins deployment
-- Sketch Update v0.7.0 (#124)
-- Merge pull request #127 from telusdigital/feature/DSR-143_jenkins-cdn-release
-- Merge pull request #115 from telusdigital/feature/B4YBD-891_grid_components
-- Screen reader SelectorCounter improvements (#128)
-- [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] SelectorCounter label fixes
-- [[DSR-194](https://telusdigital.atlassian.net/browse/DSR-194)] Adding Release/Rollback documentation (#129)
-- implementation from #93 - adds a mixin to allow easy mapping of hover styles to focus states (#131)
-- Fixing sidebar nav layout in iOS 8 (#138)
-- [DSR] Deploy static site to S3 via Jenkins (#139)
-- Automating NPM Publish (#141)
-- Creating a seed job for Jenkins Job DSL
-- Merge pull request #142 from telusdigital/feature/DSR_seed-ci
-- Adding include pattern for Copy Artifacts steps
-- Add collapsible component (#140)
-- Updating breakpoint documentation (#143)
-- Updating stylelint binary path
-- Consolidating install/lint/test/build into one Jenkins Job (#146)
-- Run a fresh build before each npm start (#147)
-- Authenticate with AWS using Jenkins credentials
-- Bind AWS credentials for CDN deployment
-- Moving CDN deployment credentials binding
-- Add auth token for Jenkins to execute NPM publish (#149)
-- Automate changelog generation [[BCM-211](https://telusdigital.atlassian.net/browse/BCM-211)] (#150)
-- End-to-end release automation with Jenkins [[BCM-213](https://telusdigital.atlassian.net/browse/BCM-213)] (#153)
-- Use bash instead of sh for shell scripts (#154)
-- Changelog and version bump for v0.7.0
-
-
+* Added react import line to grid docs.
+* Removed unused column div at the bottom of docs.
+* Fixed a typo in an example.
+* Updated to export a single Grid component, instead of individual ones.
+* Updated grid components to match linter specs.
+* Merge branch 'master' into feature/B4YBD-891_grid_components
+* Fixing CounterButton code style (#123)
+* [[DSR-143](https://telusdigital.atlassian.net/browse/DSR-143)] Adding Jenkins jobs configuration script
+* [[DSR-143](https://telusdigital.atlassian.net/browse/DSR-143)] Updating build pipeline
+* Merge pull request #108 from telusdigital/feature/DSR-143_jenkins
+* [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] Adding CDN Jenkins deployment
+* Sketch Update v0.7.0 (#124)
+* Merge pull request #127 from telusdigital/feature/DSR-143_jenkins-cdn-release
+* Merge pull request #115 from telusdigital/feature/B4YBD-891_grid_components
+* Screen reader SelectorCounter improvements (#128)
+* [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] SelectorCounter label fixes
+* [[DSR-194](https://telusdigital.atlassian.net/browse/DSR-194)] Adding Release/Rollback documentation (#129)
+* implementation from #93 - adds a mixin to allow easy mapping of hover styles to focus states (#131)
+* Fixing sidebar nav layout in iOS 8 (#138)
+* [DSR] Deploy static site to S3 via Jenkins (#139)
+* Automating NPM Publish (#141)
+* Creating a seed job for Jenkins Job DSL
+* Merge pull request #142 from telusdigital/feature/DSR_seed-ci
+* Adding include pattern for Copy Artifacts steps
+* Add collapsible component (#140)
+* Updating breakpoint documentation (#143)
+* Updating stylelint binary path
+* Consolidating install/lint/test/build into one Jenkins Job (#146)
+* Run a fresh build before each npm start (#147)
+* Authenticate with AWS using Jenkins credentials
+* Bind AWS credentials for CDN deployment
+* Moving CDN deployment credentials binding
+* Add auth token for Jenkins to execute NPM publish (#149)
+* Automate changelog generation [[BCM-211](https://telusdigital.atlassian.net/browse/BCM-211)](#150)
+* End-to-end release automation with Jenkins [[BCM-213](https://telusdigital.atlassian.net/browse/BCM-213)](#153)
+* Use bash instead of sh for shell scripts (#154)
+* Changelog and version bump for v0.7.0
 
 ## v0.6.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.6.0
 
-- Fixing the sketch file download
-- Fixing webpack URL on consumption page
-- Fixing enriched npm example
-- Alpha 0.5.0 Update (#90)
-- Fix build of docs (#96)
-- [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Adding link examples (#97)
-- Adding SelectorCounter tests and refactoring component (#98)
-- Updated documentation (#95)
-- [[DSR-176](https://telusdigital.atlassian.net/browse/DSR-176)] Fixing off-by-1 breakpoints bug
-- Sketch Update v0.6.0
-- Merge pull request #101 from telusdigital/bugfix/DSR-176
-- [DSR] simplifying comments
-- [DSR] simplifying comments (#103)
-- Merge pull request #102 from telusdigital/sketchupdate11012016
-- [DSR] Adding Hot Module Replacement to the documentation site
-- Merge pull request #104 from telusdigital/task/DSR_docs-hot-reload
-- [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] Better Selector Counter accessibility
-- Merge pull request #107 from telusdigital/bugfix/DSR-167_selector-counter-accessibility
-- [[DSR-194](https://telusdigital.atlassian.net/browse/DSR-194)] Document changelog & version maintenance
-- Documenting README maintenance
-- Merge pull request #109 from telusdigital/task/DSR-194_release-documentation
-- [[DSR-152](https://telusdigital.atlassian.net/browse/DSR-152)] Updating product documentation
-- Merge pull request #111 from telusdigital/feature/DSR-152_product-doc-updates
-- [B4YBD-891] Added Icon component.
-- Updated and added deps
-- Merge pull request #112 from telusdigital/feature/B4YBD-891_icon_component
-- Prevent click handler from executing for disabled button
-- Merge pull request #114 from telusdigital/bugfix/DSR-failing-selector-counter-tests
-- [RFC] Deprecated custom React rendering and implemented React rendering on client (#116)
-- Cleaning up Docs Site SCSS comments (issue #72) (#118)
-- [[DSR-199](https://telusdigital.atlassian.net/browse/DSR-199)] IA re-organization (#121)
-- Restoring original Foundational Components in IA
-- Re-arranging Getting Started, nav menu
-- [[DSR-195](https://telusdigital.atlassian.net/browse/DSR-195)] Automated release to CDN (#119)
-- Releasing/v0.6.0 (#122)
-- Updating inter-module dependencies
-
-
+* Fixing the sketch file download
+* Fixing webpack URL on consumption page
+* Fixing enriched npm example
+* Alpha 0.5.0 Update (#90)
+* Fix build of docs (#96)
+* [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Adding link examples (#97)
+* Adding SelectorCounter tests and refactoring component (#98)
+* Updated documentation (#95)
+* [[DSR-176](https://telusdigital.atlassian.net/browse/DSR-176)] Fixing off-by-1 breakpoints bug
+* Sketch Update v0.6.0
+* Merge pull request #101 from telusdigital/bugfix/DSR-176
+* [DSR] simplifying comments
+* [DSR] simplifying comments (#103)
+* Merge pull request #102 from telusdigital/sketchupdate11012016
+* [DSR] Adding Hot Module Replacement to the documentation site
+* Merge pull request #104 from telusdigital/task/DSR_docs-hot-reload
+* [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] Better Selector Counter accessibility
+* Merge pull request #107 from telusdigital/bugfix/DSR-167_selector-counter-accessibility
+* [[DSR-194](https://telusdigital.atlassian.net/browse/DSR-194)] Document changelog & version maintenance
+* Documenting README maintenance
+* Merge pull request #109 from telusdigital/task/DSR-194_release-documentation
+* [[DSR-152](https://telusdigital.atlassian.net/browse/DSR-152)] Updating product documentation
+* Merge pull request #111 from telusdigital/feature/DSR-152_product-doc-updates
+* [B4YBD-891] Added Icon component.
+* Updated and added deps
+* Merge pull request #112 from telusdigital/feature/B4YBD-891_icon_component
+* Prevent click handler from executing for disabled button
+* Merge pull request #114 from telusdigital/bugfix/DSR-failing-selector-counter-tests
+* [RFC] Deprecated custom React rendering and implemented React rendering on client (#116)
+* Cleaning up Docs Site SCSS comments (issue #72) (#118)
+* [[DSR-199](https://telusdigital.atlassian.net/browse/DSR-199)] IA re-organization (#121)
+* Restoring original Foundational Components in IA
+* Re-arranging Getting Started, nav menu
+* [[DSR-195](https://telusdigital.atlassian.net/browse/DSR-195)] Automated release to CDN (#119)
+* Releasing/v0.6.0 (#122)
+* Updating inter-module dependencies
 
 ## v0.5.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.5.0
 
-- Renaming icons to reflect their form. (#60)
-- Alpha 0.4.1 Update (#61)
-- [[DSR-115](https://telusdigital.atlassian.net/browse/DSR-115)] Optimizing Core Icons web fonts for Windows (#62)
-- [[DSR-115](https://telusdigital.atlassian.net/browse/DSR-115)] Adding ttfautohint to the webfont build (#63)
-- [[DSR-131](https://telusdigital.atlassian.net/browse/DSR-131)] Easy download of thorium.sketch (#64)
-- Adding the downloads directory to the Documentation Site (#65)
-- Fixing Markdown list rendering (#66)
-- [[DSR-105](https://telusdigital.atlassian.net/browse/DSR-105)] Updating font sizes to match the type stack audit (#67)
-- [[DSR-105](https://telusdigital.atlassian.net/browse/DSR-105)] Increase h2 to 2rem/32px on mobile (#68)
-- [[DSR-96](https://telusdigital.atlassian.net/browse/DSR-96)] Documenting build/release/deploy/tech stack (#69)
-- #73 - adding a helper function for getting breakpoints in sass (#74)
-- [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Add enriched library and re-format project (#75)
-- [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Adding testing frameworks (#76)
-- [[DSR-69](https://telusdigital.atlassian.net/browse/DSR-69)] Implementing selector counter (#77)
-- Bumping required version of core by enriched
-- Fixing sass include paths
-- Adding an example of the Selector Counter (#78)
-- [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Links (enhanced) (#79)
-- Removing leading zero to fix linter error
-- Fixing package.json warnings
-- Fixing missing README files
-- [[DSR-140](https://telusdigital.atlassian.net/browse/DSR-140)] Type stack size adjustments (#80)
-- [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Adjusting Documentation build (#81)
-- Updating local setup (#82)
-- [[DSR-140](https://telusdigital.atlassian.net/browse/DSR-140)] Adjusting H3, P1, P2 sizes (#83)
-- [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Implementing descender-aware underlines (#84)
-- [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Isomorphic React build pipeline (#88)
-- Alpha 0.5.0 Update (#85)
-- Updating version number and changelog for v0.5.0 (#89)
-
-
+* Renaming icons to reflect their form. (#60)
+* Alpha 0.4.1 Update (#61)
+* [[DSR-115](https://telusdigital.atlassian.net/browse/DSR-115)] Optimizing Core Icons web fonts for Windows (#62)
+* [[DSR-115](https://telusdigital.atlassian.net/browse/DSR-115)] Adding ttfautohint to the webfont build (#63)
+* [[DSR-131](https://telusdigital.atlassian.net/browse/DSR-131)] Easy download of thorium.sketch (#64)
+* Adding the downloads directory to the Documentation Site (#65)
+* Fixing Markdown list rendering (#66)
+* [[DSR-105](https://telusdigital.atlassian.net/browse/DSR-105)] Updating font sizes to match the type stack audit (#67)
+* [[DSR-105](https://telusdigital.atlassian.net/browse/DSR-105)] Increase h2 to 2rem/32px on mobile (#68)
+* [[DSR-96](https://telusdigital.atlassian.net/browse/DSR-96)] Documenting build/release/deploy/tech stack (#69)
+* #73 - adding a helper function for getting breakpoints in sass (#74)
+* [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Add enriched library and re-format project (#75)
+* [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Adding testing frameworks (#76)
+* [[DSR-69](https://telusdigital.atlassian.net/browse/DSR-69)] Implementing selector counter (#77)
+* Bumping required version of core by enriched
+* Fixing sass include paths
+* Adding an example of the Selector Counter (#78)
+* [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Links (enhanced) (#79)
+* Removing leading zero to fix linter error
+* Fixing package.json warnings
+* Fixing missing README files
+* [[DSR-140](https://telusdigital.atlassian.net/browse/DSR-140)] Type stack size adjustments (#80)
+* [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Adjusting Documentation build (#81)
+* Updating local setup (#82)
+* [[DSR-140](https://telusdigital.atlassian.net/browse/DSR-140)] Adjusting H3, P1, P2 sizes (#83)
+* [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Implementing descender-aware underlines (#84)
+* [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Isomorphic React build pipeline (#88)
+* Alpha 0.5.0 Update (#85)
+* Updating version number and changelog for v0.5.0 (#89)
 
 ## v0.4.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.4.0
 
-- Updating version & changelog for v0.3.1 (#38)
-- Updating consumption page for v0.3.1 (#39)
-- Alpha 0.3 Update (#40)
-- [[DSR-35](https://telusdigital.atlassian.net/browse/DSR-35)] Implementing lists (#41)
-- Optimizing NPM module size (#42)
-- Making TELUS uppercase everywhere (#43)
-- [[DSR-44](https://telusdigital.atlassian.net/browse/DSR-44)] Form states (#44)
-- Refactoring the form states interactive example (#45)
-- Bugfix: hovered selections should have a gray border (#46)
-- [[DSR-51](https://telusdigital.atlassian.net/browse/DSR-51)] Dropdowns (#47)
-- Documenting accessible form error reporting (#48)
-- [[DSR-33](https://telusdigital.atlassian.net/browse/DSR-33)] Utility Icons (#49)
-- Adding voids to the Spyglass and Location icons (#50)
-- Bugfix: restore missing "plus" icon (#51)
-- [[DSR-112](https://telusdigital.atlassian.net/browse/DSR-112)] Show all core features under one nav category (#52)
-- Bugfix: restore missing icons to lists and forms (#53)
-- [[DSR-109](https://telusdigital.atlassian.net/browse/DSR-109)] Fixing docs hamburger alignment on mobile (#54)
-- Task: improving the accessible icon documentation (#55)
-- Restoring the header to the examples pages (#56)
-- Alpha 0.4.0 Update (#57)
-- Releasing v0.4.0 (#58)
-
-
+* Updating version & changelog for v0.3.1 (#38)
+* Updating consumption page for v0.3.1 (#39)
+* Alpha 0.3 Update (#40)
+* [[DSR-35](https://telusdigital.atlassian.net/browse/DSR-35)] Implementing lists (#41)
+* Optimizing NPM module size (#42)
+* Making TELUS uppercase everywhere (#43)
+* [[DSR-44](https://telusdigital.atlassian.net/browse/DSR-44)] Form states (#44)
+* Refactoring the form states interactive example (#45)
+* Bugfix: hovered selections should have a gray border (#46)
+* [[DSR-51](https://telusdigital.atlassian.net/browse/DSR-51)] Dropdowns (#47)
+* Documenting accessible form error reporting (#48)
+* [[DSR-33](https://telusdigital.atlassian.net/browse/DSR-33)] Utility Icons (#49)
+* Adding voids to the Spyglass and Location icons (#50)
+* Bugfix: restore missing "plus" icon (#51)
+* [[DSR-112](https://telusdigital.atlassian.net/browse/DSR-112)] Show all core features under one nav category (#52)
+* Bugfix: restore missing icons to lists and forms (#53)
+* [[DSR-109](https://telusdigital.atlassian.net/browse/DSR-109)] Fixing docs hamburger alignment on mobile (#54)
+* Task: improving the accessible icon documentation (#55)
+* Restoring the header to the examples pages (#56)
+* Alpha 0.4.0 Update (#57)
+* Releasing v0.4.0 (#58)
 
 ## v0.3.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.3.1
 
-- Updating version & changelog for v0.3.1 (#38)
-- Updating consumption page for v0.3.1 (#39)
-
-
+* Updating version & changelog for v0.3.1 (#38)
+* Updating consumption page for v0.3.1 (#39)
 
 ## v0.3.0
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.3.0
 
-- Sketch file updates (#20)
-- [[DSR-20](https://telusdigital.atlassian.net/browse/DSR-20)] Order nav links consistently (#21)
-- [[DSR-39](https://telusdigital.atlassian.net/browse/DSR-39)] Text fields & labels (#22)
-- [[DSR-47](https://telusdigital.atlassian.net/browse/DSR-47)] Field helpers (#23)
-- [[DSR-45](https://telusdigital.atlassian.net/browse/DSR-45)] Radio buttons & checkboxes (#24)
-- [[DSR-67](https://telusdigital.atlassian.net/browse/DSR-67)] Fixing clipped descenders inside form fields (#25)
-- [[DSR-70](https://telusdigital.atlassian.net/browse/DSR-70)] Making form fields & buttons the same height (#26)
-- Bug: fixing mis-aligned and mis-colored checkboxes (#27)
-- [[DSR-73](https://telusdigital.atlassian.net/browse/DSR-73)] Fixing color of form placeholders in IE11 (#28)
-- [[DSR-81](https://telusdigital.atlassian.net/browse/DSR-81)] Fixing check box alignment (#29)
-- [[DSR-74](https://telusdigital.atlassian.net/browse/DSR-74)] fixing content width on Android 5 & 4 (#30)
-- [[DSR-46](https://telusdigital.atlassian.net/browse/DSR-46)] Form hints (#31)
-- Using web fonts from the Thorium CDN (#32)
-- Bugfix: making subhead/strong/label text heavier (#33)
-- Task: fixing checkbox example indentation (#34)
-- Task: adding a feature switch to Form Hints (#35)
-- Updating changelog & version for 0.3.0 (#36)
-
-
+* Sketch file updates (#20)
+* [[DSR-20](https://telusdigital.atlassian.net/browse/DSR-20)] Order nav links consistently (#21)
+* [[DSR-39](https://telusdigital.atlassian.net/browse/DSR-39)] Text fields & labels (#22)
+* [[DSR-47](https://telusdigital.atlassian.net/browse/DSR-47)] Field helpers (#23)
+* [[DSR-45](https://telusdigital.atlassian.net/browse/DSR-45)] Radio buttons & checkboxes (#24)
+* [[DSR-67](https://telusdigital.atlassian.net/browse/DSR-67)] Fixing clipped descenders inside form fields (#25)
+* [[DSR-70](https://telusdigital.atlassian.net/browse/DSR-70)] Making form fields & buttons the same height (#26)
+* Bug: fixing mis-aligned and mis-colored checkboxes (#27)
+* [[DSR-73](https://telusdigital.atlassian.net/browse/DSR-73)] Fixing color of form placeholders in IE11 (#28)
+* [[DSR-81](https://telusdigital.atlassian.net/browse/DSR-81)] Fixing check box alignment (#29)
+* [[DSR-74](https://telusdigital.atlassian.net/browse/DSR-74)] fixing content width on Android 5 & 4 (#30)
+* [[DSR-46](https://telusdigital.atlassian.net/browse/DSR-46)] Form hints (#31)
+* Using web fonts from the Thorium CDN (#32)
+* Bugfix: making subhead/strong/label text heavier (#33)
+* Task: fixing checkbox example indentation (#34)
+* Task: adding a feature switch to Form Hints (#35)
+* Updating changelog & version for 0.3.0 (#36)
 
 ## v0.2.1
 
-
 https://github.com/telusdigital/tds/releases/tag/v0.2.1
 
-- Updating to latest v0.1 Sketch file (#2)
-- [[DSR-14](https://telusdigital.atlassian.net/browse/DSR-14)] Migrate documentation site scaffolding (#3)
-- Fixing dist directory error on Jenkins
-- Updating Contributor Quick Start with dependency instructions
-- [[DSR-1](https://telusdigital.atlassian.net/browse/DSR-1)] Responsive grid (#4)
-- [[DSR-7](https://telusdigital.atlassian.net/browse/DSR-7)] Light Governance - Contribution Model
-- Implementing grid padding & ordering feedback
-- Migrating "Introduction" documentation section. (#6)
-- Updating documentation
-- Adding & documenting column nesting and utility classes
-- Merge pull request #8 from telusdigital/feedback/DSR-1_grid
-- [[DSR-7](https://telusdigital.atlassian.net/browse/DSR-7)] Light Governance - Contribution Model (#5)
-- [[DSR-3](https://telusdigital.atlassian.net/browse/DSR-3)] Typography (#10)
-- DSR-2 Colour (#9)
-- [[DSR-4](https://telusdigital.atlassian.net/browse/DSR-4)] Buttons (#11)
-- [[DSR-24](https://telusdigital.atlassian.net/browse/DSR-24)] use small body copy below level 3 heading (#12)
-- [[DSR-25](https://telusdigital.atlassian.net/browse/DSR-25)] Implementing button spacing feedback (#13)
-- [[DSR-8](https://telusdigital.atlassian.net/browse/DSR-8)] Consumption model
-- Updating consumption model with more SCSS instructions
-- Merge pull request #14 from telusdigital/feature/DSR-8_consumption-model
-- Updating Sketch file
-- Updated type color and weight as per Thorium Designers (#16)
-- Updating headline levels in Contributor docs (#17)
-
-
+* Updating to latest v0.1 Sketch file (#2)
+* [[DSR-14](https://telusdigital.atlassian.net/browse/DSR-14)] Migrate documentation site scaffolding (#3)
+* Fixing dist directory error on Jenkins
+* Updating Contributor Quick Start with dependency instructions
+* [[DSR-1](https://telusdigital.atlassian.net/browse/DSR-1)] Responsive grid (#4)
+* [[DSR-7](https://telusdigital.atlassian.net/browse/DSR-7)] Light Governance - Contribution Model
+* Implementing grid padding & ordering feedback
+* Migrating "Introduction" documentation section. (#6)
+* Updating documentation
+* Adding & documenting column nesting and utility classes
+* Merge pull request #8 from telusdigital/feedback/DSR-1_grid
+* [[DSR-7](https://telusdigital.atlassian.net/browse/DSR-7)] Light Governance - Contribution Model (#5)
+* [[DSR-3](https://telusdigital.atlassian.net/browse/DSR-3)] Typography (#10)
+* DSR-2 Colour (#9)
+* [[DSR-4](https://telusdigital.atlassian.net/browse/DSR-4)] Buttons (#11)
+* [[DSR-24](https://telusdigital.atlassian.net/browse/DSR-24)] use small body copy below level 3 heading (#12)
+* [[DSR-25](https://telusdigital.atlassian.net/browse/DSR-25)] Implementing button spacing feedback (#13)
+* [[DSR-8](https://telusdigital.atlassian.net/browse/DSR-8)] Consumption model
+* Updating consumption model with more SCSS instructions
+* Merge pull request #14 from telusdigital/feature/DSR-8_consumption-model
+* Updating Sketch file
+* Updated type color and weight as per Thorium Designers (#16)
+* Updating headline levels in Contributor docs (#17)
 
 ## 0.18.1
+
 14 July 2017
 
 https://github.com/telusdigital/tds/releases/tag/0.18.1
 
-- fix(Card and Notification): import css using require just like on previous versions
-- Changelog and version bump for v0.18.1
-
-
+* fix(Card and Notification): import css using require just like on previous versions
+* Changelog and version bump for v0.18.1
 
 ## v0.18.0
+
 11 July 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.18.0
 
-- fix(links): cleaned up link underline mixin
-- fix(buttons): update anchor styles when styled as buttons
-- fix(notification): make it more accessible by using role="banner"
-- fix(Expand Collapse): fix hover states by using chevrons to indicate state
-- docs(sketch file): update
-- docs(hide blocks and block components): because they are not following latest standards and no one i
-- Changelog and version bump for v0.18.0
-
-
+* fix(links): cleaned up link underline mixin
+* fix(buttons): update anchor styles when styled as buttons
+* fix(notification): make it more accessible by using role="banner"
+* fix(Expand Collapse): fix hover states by using chevrons to indicate state
+* docs(sketch file): update
+* docs(hide blocks and block components): because they are not following latest standards and no one i
+* Changelog and version bump for v0.18.0
 
 ## v0.17.0
+
 06 July 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.17.0
 
-- docs(sketch): update file to show colour updates
-- docs(sketch): updates to versioning art board with details about colour changes
-- docs(sketch): minor update to versioning details in sketch
-- docs(sketch): update re: raven - shade of grey in forms
-- build(dependencies): remove js-dom as a dependency as it was unused and causing install problems
-- build(dependencies): add yarn.lock files to lock down dependencies for devs using yarn
-- chore(editor): Add an .editorconfig file for aligning editor configurations
-- feat(Card): Deprecate className and style.
-- refactor(notification): deprecate className and style
-- Changelog and version bump for v0.17.0
-
-
+* docs(sketch): update file to show colour updates
+* docs(sketch): updates to versioning art board with details about colour changes
+* docs(sketch): minor update to versioning details in sketch
+* docs(sketch): update re: raven - shade of grey in forms
+* build(dependencies): remove js-dom as a dependency as it was unused and causing install problems
+* build(dependencies): add yarn.lock files to lock down dependencies for devs using yarn
+* chore(editor): Add an .editorconfig file for aligning editor configurations
+* feat(Card): Deprecate className and style.
+* refactor(notification): deprecate className and style
+* Changelog and version bump for v0.17.0
 
 ## v0.16.3
+
 21 June 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.16.3
 
-- docs(documentation to use 0.16.1 to fix release):
-- Changelog and version bump for v0.16.3
-
-
+* docs(documentation to use 0.16.1 to fix release):
+* Changelog and version bump for v0.16.3
 
 ## v0.16.1
+
 20 June 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.16.1
 
-- docs(changelog): usual manual update
-- fix(repo rename updates): to keep the old repo instead of using the newly created so we don't loose
-- fix(colours, chevron and display h1 updates): - colour renaming and updates
-- chore(move over beta 0.16.1):
-
-
+* docs(changelog): usual manual update
+* fix(repo rename updates): to keep the old repo instead of using the newly created so we don't loose
+* fix(colours, chevron and display h1 updates): - colour renaming and updates
+* chore(move over beta 0.16.1):
 
 ## v0.16.0
+
 14 June 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.16.0
 
-- docs(changelog): update
-- Update README.md
-- Remove console.log (#344)
-- Update README.md
-- Beta Release (#369)
-- docs(typography example): fix typo on list class
-- docs(links): update code to match example
-- Changelog and version bump for v0.16.0
-
-
+* docs(changelog): update
+* Update README.md
+* Remove console.log (#344)
+* Update README.md
+* Beta Release (#369)
+* docs(typography example): fix typo on list class
+* docs(links): update code to match example
+* Changelog and version bump for v0.16.0
 
 ## v0.15.3
+
 17 May 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.15.3
 
-- Revert updates of latest blocks + component
-- fix(component collapsible): make collapsible content height dynamic
-- Revert "Revert updates of latest blocks + component"
-- refactor(changed react.propTypes to PropTypes): (#337)
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- build(add prop-type package to enriched package.json):
-- Changelog and version bump for v0.15.3
-
-
+* Revert updates of latest blocks + component
+* fix(component collapsible): make collapsible content height dynamic
+* Revert "Revert updates of latest blocks + component"
+* refactor(changed react.propTypes to PropTypes): (#337)
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* build(add prop-type package to enriched package.json):
+* Changelog and version bump for v0.15.3
 
 ## v0.15.2
+
 16 May 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.15.2
 
-- fix(linting): remove jsx-filename-extension rule because spec.js need to be written using a differen
-- fix(linting): fix javascript linting
-- fix(linting): fix linting errors and warnings caused by updates to eslint file
-- docs(changelog): manually update changelog.md with jade header :S
-- Merge branch 'fix/linting' of github.com:telusdigital/telus-thorium-core
-- build(preinstall): remove preinstall task and call /scripts/init-npm.sh instead
-- build: groovy.ci
-- build(groovy.ci): cd into /scripts folder to run init-npm.sh
-- build(groovy.ci): updating path to init-npm.sh :)
-- Changelog and version bump for v0.15.2
-
-
+* fix(linting): remove jsx-filename-extension rule because spec.js need to be written using a differen
+* fix(linting): fix javascript linting
+* fix(linting): fix linting errors and warnings caused by updates to eslint file
+* docs(changelog): manually update changelog.md with jade header :S
+* Merge branch 'fix/linting' of github.com:telusdigital/telus-thorium-core
+* build(preinstall): remove preinstall task and call /scripts/init-npm.sh instead
+* build: groovy.ci
+* build(groovy.ci): cd into /scripts folder to run init-npm.sh
+* build(groovy.ci): updating path to init-npm.sh :)
+* Changelog and version bump for v0.15.2
 
 ## v0.15.1
+
 15 May 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.15.1
 
-- Merge remote-tracking branch 'origin/qatesting' into qatesting
-- Merge remote-tracking branch 'origin/qatesting' into qatesting
-- Merge branch 'master' into qatesting
-- docs(changelog): update manually
-- fix(viewport): adding initial-scale to test
-- Merge branch 'qatesting' of github.com:telusdigital/telus-thorium-core into qatesting
-- fix(layout): make tablet view same as desktop
-- fix(layout): css update for docs
-- Merge remote-tracking branch 'origin/qatesting' into qatesting
-- fix(change nav bg on medium to match large view):
-- Merge branch 'qatesting' of github.com:telusdigital/telus-thorium-core into qatesting
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
-- add polyfill.io to fix layout issues on IE11
-- Revert "add polyfill.io to fix layout issues on IE11"
-- feat(buttons): remove styles from html tag
-- switch from include to indexof
-- typo fix
-- fix(set <main/> to display:block on reset.css for IE11):
-- fix(changelog.sh): update changelog_entry()
-- docs(navigation): add classname to navigation items
-- fix(button): make min-width: 180px
-- feat(button): remove css styles from button html tag
-- docs(sketch): update version on sketch file to v0.15.0
-- BEMize button styles
-- docs(links): moved links documentation to its own page, it didn't really make sense to have it on th
-- docs(upgrading.md): add note about changes made to buttons.scss
-- fix(buttons): remove border on hover state of disabled button
-- fix(buttons): BEMized style for button's disabled state
-- docs(buttons): add TOC
-- feat(chevron links): refactor css/html to reduce markup, ie. chevron is now displayed using :after p
-- docs(typography): showcase of typography layout changes
-- fix(buttons): inverted button hover state to match the other buttons
-- docs(upgrading.md): documenting updates to reset offsets
-- add Steps component
-- feat(buttons): refactor css to clean up buttons css and documentation
-- add in unit tests
-- fix(component: Card): remove border
-- fix(buttons): on selector counter component needed .tds-button--plain class
-- fix(component card): remove 1px border from Card component
-- fix(collapsible): Fixes vertical alignment of items win Collapsible.Panel using flex (#321)
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- docs(components with buttons in doc): update button classes
-- fix(buttons): update cursor on button's disabled state
-- Merge branch 'feature/steps' of github.com:telusdigital/telus-thorium-core into qatesting
-- ci(package.json): remove --watch from test task
-- add Spinner component
-- add in unit tests
-- add api in doc
-- build(jest): update to version 0.19.0
-- test(test snapshots): update
-- Merge branch 'feature/Spinner' of github.com:telusdigital/telus-thorium-core into qatesting
-- fix(component steps): add references to Steps in enriched/ and docs/ so the Step Tracker shows on it
-- fix(steps): fix button on step tracker page
-- docs(component collapsible): spelling mistake
-- fix(button): fix button related bugs in documentation
-- docs(forms): update code sample using tds-button--plain
-- add spinner full screen mode
-- remove console
-- update style
-- fix full screen bug
-- type fix
-- bug fix
-- remove transition
-- remove bulr effect
-- Revert "docs(forms): update code sample using tds-button--plain"
-- Revert "fix(button): fix button related bugs in documentation"
-- Revert "fix(buttons): update cursor on button's disabled state"
-- Revert "docs(components with buttons in doc): update button classes"
-- Revert "Merge branch 'master' of github.com:telusdigital/telus-thorium-core"
-- Revert "feat(buttons): refactor css to clean up buttons css and documentation"
-- Revert "fix(buttons): inverted button hover state to match the other buttons"
-- Revert "feat(chevron links): refactor css/html to reduce markup, ie. chevron is now displayed using :after p"
-- Revert "docs(buttons): add TOC"
-- Revert "fix(buttons): BEMized style for button's disabled state"
-- Revert "docs(upgrading.md): add note about changes made to buttons.scss"
-- Revert "BEMize button styles"
-- Revert "feat(button): remove css styles from button html tag"
-- Revert "fix(button): make min-width: 180px"
-- Revert "fix(component: Card): remove border"
-- Revert "docs(links): moved links documentation to its own page, it didn't really make sense to have it on th"
-- refactor a bit
-- refactor
-- Merge branch 'qatesting'
-- Revert "Merge branch 'qatesting'"
-- fix(collapsible component): fix toggle buttons on collapsible doc and the ControlledCollapsible.jsx
-- docs(sketch): update version number on sketch file because it was missed on 0.15.0 release
-- updating issue template (#336)
-- Changelog and version bump for v0.15.1
-
-
+* Merge remote-tracking branch 'origin/qatesting' into qatesting
+* Merge remote-tracking branch 'origin/qatesting' into qatesting
+* Merge branch 'master' into qatesting
+* docs(changelog): update manually
+* fix(viewport): adding initial-scale to test
+* Merge branch 'qatesting' of github.com:telusdigital/telus-thorium-core into qatesting
+* fix(layout): make tablet view same as desktop
+* fix(layout): css update for docs
+* Merge remote-tracking branch 'origin/qatesting' into qatesting
+* fix(change nav bg on medium to match large view):
+* Merge branch 'qatesting' of github.com:telusdigital/telus-thorium-core into qatesting
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
+* add polyfill.io to fix layout issues on IE11
+* Revert "add polyfill.io to fix layout issues on IE11"
+* feat(buttons): remove styles from html tag
+* switch from include to indexof
+* typo fix
+* fix(set <main/> to display:block on reset.css for IE11):
+* fix(changelog.sh): update changelog_entry()
+* docs(navigation): add classname to navigation items
+* fix(button): make min-width: 180px
+* feat(button): remove css styles from button html tag
+* docs(sketch): update version on sketch file to v0.15.0
+* BEMize button styles
+* docs(links): moved links documentation to its own page, it didn't really make sense to have it on th
+* docs(upgrading.md): add note about changes made to buttons.scss
+* fix(buttons): remove border on hover state of disabled button
+* fix(buttons): BEMized style for button's disabled state
+* docs(buttons): add TOC
+* feat(chevron links): refactor css/html to reduce markup, ie. chevron is now displayed using :after p
+* docs(typography): showcase of typography layout changes
+* fix(buttons): inverted button hover state to match the other buttons
+* docs(upgrading.md): documenting updates to reset offsets
+* add Steps component
+* feat(buttons): refactor css to clean up buttons css and documentation
+* add in unit tests
+* fix(component: Card): remove border
+* fix(buttons): on selector counter component needed .tds-button--plain class
+* fix(component card): remove 1px border from Card component
+* fix(collapsible): Fixes vertical alignment of items win Collapsible.Panel using flex (#321)
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* docs(components with buttons in doc): update button classes
+* fix(buttons): update cursor on button's disabled state
+* Merge branch 'feature/steps' of github.com:telusdigital/telus-thorium-core into qatesting
+* ci(package.json): remove --watch from test task
+* add Spinner component
+* add in unit tests
+* add api in doc
+* build(jest): update to version 0.19.0
+* test(test snapshots): update
+* Merge branch 'feature/Spinner' of github.com:telusdigital/telus-thorium-core into qatesting
+* fix(component steps): add references to Steps in enriched/ and docs/ so the Step Tracker shows on it
+* fix(steps): fix button on step tracker page
+* docs(component collapsible): spelling mistake
+* fix(button): fix button related bugs in documentation
+* docs(forms): update code sample using tds-button--plain
+* add spinner full screen mode
+* remove console
+* update style
+* fix full screen bug
+* type fix
+* bug fix
+* remove transition
+* remove bulr effect
+* Revert "docs(forms): update code sample using tds-button--plain"
+* Revert "fix(button): fix button related bugs in documentation"
+* Revert "fix(buttons): update cursor on button's disabled state"
+* Revert "docs(components with buttons in doc): update button classes"
+* Revert "Merge branch 'master' of github.com:telusdigital/telus-thorium-core"
+* Revert "feat(buttons): refactor css to clean up buttons css and documentation"
+* Revert "fix(buttons): inverted button hover state to match the other buttons"
+* Revert "feat(chevron links): refactor css/html to reduce markup, ie. chevron is now displayed using :after p"
+* Revert "docs(buttons): add TOC"
+* Revert "fix(buttons): BEMized style for button's disabled state"
+* Revert "docs(upgrading.md): add note about changes made to buttons.scss"
+* Revert "BEMize button styles"
+* Revert "feat(button): remove css styles from button html tag"
+* Revert "fix(button): make min-width: 180px"
+* Revert "fix(component: Card): remove border"
+* Revert "docs(links): moved links documentation to its own page, it didn't really make sense to have it on th"
+* refactor a bit
+* refactor
+* Merge branch 'qatesting'
+* Revert "Merge branch 'qatesting'"
+* fix(collapsible component): fix toggle buttons on collapsible doc and the ControlledCollapsible.jsx
+* docs(sketch): update version number on sketch file because it was missed on 0.15.0 release
+* updating issue template (#336)
+* Changelog and version bump for v0.15.1
 
 ## v0.15.0
+
 28 April 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.15.0
 
-- fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
-- Issue #304
-- update doc
-- fix(form hinter): adjust font size to make it more legible
-- docs(contributing): add Alex's email to email us links
-- ci(changelog.sh): add .jade header to avoid seeing Untitled in left nav after a release
-- Revert "fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally"
-- feat(dimple): add tds-dimple mixin and use it in accordion component
-- feat(grid offset): revert back to previous offset functionality and added offset reset for each view
-- Merge remote-tracking branch 'origin/collapsible-disable-state' into qatesting
-- docs(changelog): updating .jade header manually for the last time
-- Issue #304 (#306)
-- Merge branch 'qatesting'
-- Changelog and version bump for v0.15.0
-
-
+* fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
+* Issue #304
+* update doc
+* fix(form hinter): adjust font size to make it more legible
+* docs(contributing): add Alex's email to email us links
+* ci(changelog.sh): add .jade header to avoid seeing Untitled in left nav after a release
+* Revert "fix(html tags style): remove styles on <button/> and set default font-weight: 400 globally"
+* feat(dimple): add tds-dimple mixin and use it in accordion component
+* feat(grid offset): revert back to previous offset functionality and added offset reset for each view
+* Merge remote-tracking branch 'origin/collapsible-disable-state' into qatesting
+* docs(changelog): updating .jade header manually for the last time
+* Issue #304 (#306)
+* Merge branch 'qatesting'
+* Changelog and version bump for v0.15.0
 
 ## v0.14.1
+
 26 April 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.14.1
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- docs(fix container on sample forms page):
-- docs(sketch): update new file v0.14.1
-- Changelog and version bump for v0.14.1
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* docs(fix container on sample forms page):
+* docs(sketch): update new file v0.14.1
+* Changelog and version bump for v0.14.1
 
 ## v0.14.0
+
 25 April 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.14.0
 
-- fix(typography): add etext for helvetica 45(400), 55(600), 65(700) and the corresponding line-height
-- fix(fonts): adjust font-url-prefix for new extext fonts
-- fix(grid): fix containers, including add new .container--fluid
-- fix(typography): letter-spacing audit for etext
-- docs(typography): update typography example layout
-- fix(typography): adjust line-height on h2 mobile
-- feat(grid): update dimensions
-- docs(grid): update documentation re: grid containers
-- docs(fonts): update list of fonts in documentation
-- fix(etext): update path to load from cdn /production/core/fonts/etext
-- BMK-000 - Dan & Guille: Add index to blocks directory. (#276)
-- docs(PR template and changelog): update PR template with acceptance criteria and manually update cha
-- add url loader to doc webpack config
-- BMK-123: Rodrigo - Add WithLegal to OverviewBlock (#282)
-- feat(titled text block): Adds titled text block and documentation (#279)
-- docs(gh #281): update md parsing to display classes
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- fix(build): add .npmrc to /enriched so we can install private contentful-redux package
-- build(ci.groovy): call npm run preinstall explicitly
-- build(ci.groovy and package.json): call npm run preinstall explicitly
-- build(ci.groovy): add new jenkins job to get triggered from test branch to not pollute the master br
-- build(ci.groovy): add ability to push to qa from test branch
-- fix(package.json): move init-npm.sh to /enriched
-- fix(init-npm.sh): update path to .npmrc
-- Fixing tests (#291)
-- fix(video block): fix unit test missing colon in console statement
-- build(ci.groovy): update builds to accommodate pushing to qa to test
-- fix(package.json): set react to 15.3.2 on peerDependencies
-- Adding wrapper object to create an sshAgent containing an SSH key (#293)
-- fix(docs): fix missing navigation
-- build(ci.groovy): add sshAgent wrapper on new qa jenkins job
-- build(ci.groovy): remove qa jenkins job
-- fix(blocks): fix title on headline and titled text blocks due to title -> caption search and replace
-- build(ci.groovy): setup jenkins job for qatesting branch
-- feat(sketch): new version of sketch file
-- Add overflow: hidden to collapsible to fix #294 (#295)
-- docs(typography): map helvetica neue to it's corresponding css attribute (font-weight value)
-- build(ci.groovy): remove tds-deploy line, not needed to push to qa
-- build(ci.groovy): remove tds-deploy line for qa-build because we are not generating git tags
-- Update ci.groovy
-- refactor(package.json): consume redux-contentful
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- feat(grid and typography updates): grid gutter is now 16px on each side of a column and typography f
-- fix(grid): offset class are now viewport specific
-- docs(grid): update sample page to use .container--fluid
-- docs(changelog): manually update changelog because it won't update automatically
-- docs(markdown): fix broken TOC links and broken roadmap link
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
-- build(ci.groovy): add sshAgent to release job
-- Changelog and version bump for v0.14.0
-
-
+* fix(typography): add etext for helvetica 45(400), 55(600), 65(700) and the corresponding line-height
+* fix(fonts): adjust font-url-prefix for new extext fonts
+* fix(grid): fix containers, including add new .container--fluid
+* fix(typography): letter-spacing audit for etext
+* docs(typography): update typography example layout
+* fix(typography): adjust line-height on h2 mobile
+* feat(grid): update dimensions
+* docs(grid): update documentation re: grid containers
+* docs(fonts): update list of fonts in documentation
+* fix(etext): update path to load from cdn /production/core/fonts/etext
+* BMK-000 - Dan & Guille: Add index to blocks directory. (#276)
+* docs(PR template and changelog): update PR template with acceptance criteria and manually update cha
+* add url loader to doc webpack config
+* BMK-123: Rodrigo - Add WithLegal to OverviewBlock (#282)
+* feat(titled text block): Adds titled text block and documentation (#279)
+* docs(gh #281): update md parsing to display classes
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* fix(build): add .npmrc to /enriched so we can install private contentful-redux package
+* build(ci.groovy): call npm run preinstall explicitly
+* build(ci.groovy and package.json): call npm run preinstall explicitly
+* build(ci.groovy): add new jenkins job to get triggered from test branch to not pollute the master br
+* build(ci.groovy): add ability to push to qa from test branch
+* fix(package.json): move init-npm.sh to /enriched
+* fix(init-npm.sh): update path to .npmrc
+* Fixing tests (#291)
+* fix(video block): fix unit test missing colon in console statement
+* build(ci.groovy): update builds to accommodate pushing to qa to test
+* fix(package.json): set react to 15.3.2 on peerDependencies
+* Adding wrapper object to create an sshAgent containing an SSH key (#293)
+* fix(docs): fix missing navigation
+* build(ci.groovy): add sshAgent wrapper on new qa jenkins job
+* build(ci.groovy): remove qa jenkins job
+* fix(blocks): fix title on headline and titled text blocks due to title -> caption search and replace
+* build(ci.groovy): setup jenkins job for qatesting branch
+* feat(sketch): new version of sketch file
+* Add overflow: hidden to collapsible to fix #294 (#295)
+* docs(typography): map helvetica neue to it's corresponding css attribute (font-weight value)
+* build(ci.groovy): remove tds-deploy line, not needed to push to qa
+* build(ci.groovy): remove tds-deploy line for qa-build because we are not generating git tags
+* Update ci.groovy
+* refactor(package.json): consume redux-contentful
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* feat(grid and typography updates): grid gutter is now 16px on each side of a column and typography f
+* fix(grid): offset class are now viewport specific
+* docs(grid): update sample page to use .container--fluid
+* docs(changelog): manually update changelog because it won't update automatically
+* docs(markdown): fix broken TOC links and broken roadmap link
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core into qatesting
+* build(ci.groovy): add sshAgent to release job
+* Changelog and version bump for v0.14.0
 
 ## v0.13.2
+
 18 April 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.13.2
 
-- fix(blocks): got rid of `blocks/blocks` folder
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- Changelog and version bump for v0.13.2
-
-
+* fix(blocks): got rid of `blocks/blocks` folder
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* Changelog and version bump for v0.13.2
 
 ## v0.13.1
+
 18 April 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.13.1
 
-- docs(sketch): add version number on all TDS.sketch links
-- Create ISSUE_TEMPLATE.md
-- Create PULL_REQUEST_TEMPLATE.md
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- fix(typography): adjust letter-spacing and font-weight for h2
-- docs(display heading 1): add .display-heading-1 to typography.md documentation
-- BMK-28 - Dan, Bruno, Fernanda: Add Checklist Component.
-- Merge branch 'feature/BMK-28_check_list_component' of github.com:telusdigital/telus-thorium-core
-- fix(icons): update core-icons.* path to fix .woff2 404 issue #260
-- revert(checklist): Bo to review the code before it gets published
-- docs(typography): add example on how sup and sub look like with p1,p2 and p3 on typography.html
-- docs(blocks): add blocks section within documentation and Overview block boilerplate
-- feat(blocks-components): add ability to add non-global components and their corresponding documentat
-- feat(blocks): add sample Overview Block and corresponding documentation template and page
-- docs(changelog): manually update changelog for 0.10.2 release
-- build(jenkins): update deployment key for repo tagging
-- build(jenkins): add ssh agent wrapper
-- fix(icons): update core icons path to cdn v0.4.0
-- Feature/bmk 30 overview check list block (#269)
-- Feature/bmk 30 overview check list block (#270)
-- docs(changelog): update
-- test(overview block): update test
-- feat(package.json): update telus-thorium-core to 0.11.4
-- feat(package.json): updates to package.jsons to manually update 0.10.2 to 0.11.4
-- docs(blocks template): update layout on layout-blocks.jade to improve presentation of blocks
-- update jest config to only scan src folder for unit tests; remove the extra block folder
-- Feature/bmk 102 headline block (#271)
-- docs(overview block): update order of elements in overview documentation page
-- fix(headline block): Fixing headline block tests (#273)
-- fix(overview block): move to blocks/blocks folder
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- fix(overview block): update path to checklist now that block was  moved to blocks/blocks folder
-- Changelog and version bump for v0.13.1
-
-
+* docs(sketch): add version number on all TDS.sketch links
+* Create ISSUE_TEMPLATE.md
+* Create PULL_REQUEST_TEMPLATE.md
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* fix(typography): adjust letter-spacing and font-weight for h2
+* docs(display heading 1): add .display-heading-1 to typography.md documentation
+* BMK-28 - Dan, Bruno, Fernanda: Add Checklist Component.
+* Merge branch 'feature/BMK-28_check_list_component' of github.com:telusdigital/telus-thorium-core
+* fix(icons): update core-icons.\* path to fix .woff2 404 issue #260
+* revert(checklist): Bo to review the code before it gets published
+* docs(typography): add example on how sup and sub look like with p1,p2 and p3 on typography.html
+* docs(blocks): add blocks section within documentation and Overview block boilerplate
+* feat(blocks-components): add ability to add non-global components and their corresponding documentat
+* feat(blocks): add sample Overview Block and corresponding documentation template and page
+* docs(changelog): manually update changelog for 0.10.2 release
+* build(jenkins): update deployment key for repo tagging
+* build(jenkins): add ssh agent wrapper
+* fix(icons): update core icons path to cdn v0.4.0
+* Feature/bmk 30 overview check list block (#269)
+* Feature/bmk 30 overview check list block (#270)
+* docs(changelog): update
+* test(overview block): update test
+* feat(package.json): update telus-thorium-core to 0.11.4
+* feat(package.json): updates to package.jsons to manually update 0.10.2 to 0.11.4
+* docs(blocks template): update layout on layout-blocks.jade to improve presentation of blocks
+* update jest config to only scan src folder for unit tests; remove the extra block folder
+* Feature/bmk 102 headline block (#271)
+* docs(overview block): update order of elements in overview documentation page
+* fix(headline block): Fixing headline block tests (#273)
+* fix(overview block): move to blocks/blocks folder
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* fix(overview block): update path to checklist now that block was moved to blocks/blocks folder
+* Changelog and version bump for v0.13.1
 
 ## v0.10.2
+
 06 April 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.10.2
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- docs(buttons): accessibility: add role="button" in documentation
-- fix(typography): fix p2 and p3 font-size
-- Changelog and version bump for v0.10.2
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* docs(buttons): accessibility: add role="button" in documentation
+* fix(typography): fix p2 and p3 font-size
+* Changelog and version bump for v0.10.2
 
 ## v0.10.1
+
 06 April 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.10.1
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- docs(manually run changelog script because deployment is buggy):
-- Changelog and version bump for v0.10.1
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* docs(manually run changelog script because deployment is buggy):
+* Changelog and version bump for v0.10.1
 
 ## v0.10.0
+
 05 April 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.10.0
 
-- remove ## from readme link
-- update stylelint to fix linting warnings
-- adjust button padding to 17px 20px 17px 20px just like business site buttons
-- fix issue#191 (#197)
-- Updated grid boards to include max width (#180)
-- adjust top/bottom padding on button
-- update colours on documentation to match latest sketch file
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- add sass vars to documentation
-- change hex value from upppercase to lowercase to prevent build from failing
-- align colour documentation to the left
-- Layout fix (#201)
-- hide nav on automatically generated changelog page
-- fix to changelog page
-- remove fluidity section on grid.md
-- remove hack for Changelog link on Nav
-- hide doc nav on load on mobile views
-- add box-shadow to buttons to avoid shifting on hover
-- fix issue#188
-- fix formatting on changelog
-- add zip file with fonts needed to load sketch file
-- add links to font-for-sketch.zip file
-- remove min-height: 60px on buttons
-- minor style updates to content in colours.md
-- update Thorium to TDS in README.md copy
-- update upgrading guide
-- update getting started documentation
-- add ToC and reviewed content in setting-up-projects
-- update adoption thresholds section
-- update receiving updates content
-- update overview content
-- remove more instances of “Thorium” in documentation
-- add link to ttfautohint in icons script
-- update homepage content
-- fix issue#205
-- add background to show how max-width on container—limited-width works
-- document utility mixins
-- fix for documentation mobile nav
-- add ontouchstart event handler for mobile on doc nav
-- refactor mobile nav using css
-- add more details on how to use tds SCSS
-- Collapsible top border fix (#210)
-- add core-icons.otd to downloads page [doc]
-- update Roadmap.md
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- make ms-input-placeholder pseudo class style more specific
-- move core-icon mixin to mixins.scss
-- minor copy updates/links
-- add styles for sup and sub
-- add minor copy updates
-- Squashed commit of the following:
-- generate core-icons.woff2
-- remove font-weight: normal instances
-- fix(buttons): adjust size of input fields and buttons now that default font-size has changed from 19
-- docs(update to UPGRADING.md): with latest changes
-- chore(add commitizen): command line utility used to follow standards for writing good commit message
-- docs(foundations): add toc
-- fix(webfonts): load helvetica 45, 55, 65 fonts from cdn
-- remove core-icons from download because .otf is not working with font-book
-- docs(downloads): updates fonts-for-sketch.zip with helvetica eText Pro 45, 55, 65
-- docs(colours): switch green and purple colours between primary and response sections
-- docs(docs navigation): remove bold style on links
-- fix(grid): adjust padding on xs view columns
-- docs(docs): add grid test example
-- add grid test example
-- docs(grid): adjust sample page with colorful grid
-- fix(buttons): set font size to 16px
-- fix(add new font size, line-heights and letter-spacing as per sketch file):
-- fix(fonts): use cdn old helvetica fonts until brand buys etext font
-- docs(colours): update colours section to match sketch file
-- docs(docs): minor updates to colours and grid documentation
-- docs(fonts): remove zip file with fonts for sketch
-- docs(grid): add 12 column colorful grid example
-- refactor(colours): update colour variables to match the colour names on sketch
-- Changelog and version bump for v0.10.0
-
-
+* remove ## from readme link
+* update stylelint to fix linting warnings
+* adjust button padding to 17px 20px 17px 20px just like business site buttons
+* fix issue#191 (#197)
+* Updated grid boards to include max width (#180)
+* adjust top/bottom padding on button
+* update colours on documentation to match latest sketch file
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* add sass vars to documentation
+* change hex value from upppercase to lowercase to prevent build from failing
+* align colour documentation to the left
+* Layout fix (#201)
+* hide nav on automatically generated changelog page
+* fix to changelog page
+* remove fluidity section on grid.md
+* remove hack for Changelog link on Nav
+* hide doc nav on load on mobile views
+* add box-shadow to buttons to avoid shifting on hover
+* fix issue#188
+* fix formatting on changelog
+* add zip file with fonts needed to load sketch file
+* add links to font-for-sketch.zip file
+* remove min-height: 60px on buttons
+* minor style updates to content in colours.md
+* update Thorium to TDS in README.md copy
+* update upgrading guide
+* update getting started documentation
+* add ToC and reviewed content in setting-up-projects
+* update adoption thresholds section
+* update receiving updates content
+* update overview content
+* remove more instances of “Thorium” in documentation
+* add link to ttfautohint in icons script
+* update homepage content
+* fix issue#205
+* add background to show how max-width on container—limited-width works
+* document utility mixins
+* fix for documentation mobile nav
+* add ontouchstart event handler for mobile on doc nav
+* refactor mobile nav using css
+* add more details on how to use tds SCSS
+* Collapsible top border fix (#210)
+* add core-icons.otd to downloads page [doc]
+* update Roadmap.md
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* make ms-input-placeholder pseudo class style more specific
+* move core-icon mixin to mixins.scss
+* minor copy updates/links
+* add styles for sup and sub
+* add minor copy updates
+* Squashed commit of the following:
+* generate core-icons.woff2
+* remove font-weight: normal instances
+* fix(buttons): adjust size of input fields and buttons now that default font-size has changed from 19
+* docs(update to UPGRADING.md): with latest changes
+* chore(add commitizen): command line utility used to follow standards for writing good commit message
+* docs(foundations): add toc
+* fix(webfonts): load helvetica 45, 55, 65 fonts from cdn
+* remove core-icons from download because .otf is not working with font-book
+* docs(downloads): updates fonts-for-sketch.zip with helvetica eText Pro 45, 55, 65
+* docs(colours): switch green and purple colours between primary and response sections
+* docs(docs navigation): remove bold style on links
+* fix(grid): adjust padding on xs view columns
+* docs(docs): add grid test example
+* add grid test example
+* docs(grid): adjust sample page with colorful grid
+* fix(buttons): set font size to 16px
+* fix(add new font size, line-heights and letter-spacing as per sketch file):
+* fix(fonts): use cdn old helvetica fonts until brand buys etext font
+* docs(colours): update colours section to match sketch file
+* docs(docs): minor updates to colours and grid documentation
+* docs(fonts): remove zip file with fonts for sketch
+* docs(grid): add 12 column colorful grid example
+* refactor(colours): update colour variables to match the colour names on sketch
+* Changelog and version bump for v0.10.0
 
 ## v0.9.5
+
 01 March 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.9.5
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- Changelog and version bump for v0.9.5
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* Changelog and version bump for v0.9.5
 
 ## v0.9.4
+
 01 March 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.9.4
 
-- Merge branch 'master' of github.com:telusdigital/telus-thorium-core
-- update buttons color/styles
-- adjust disabled hover styles
-- fix auto-width on SelectorCounter component
-- Changelog and version bump for v0.9.4
-
-
+* Merge branch 'master' of github.com:telusdigital/telus-thorium-core
+* update buttons color/styles
+* adjust disabled hover styles
+* fix auto-width on SelectorCounter component
+* Changelog and version bump for v0.9.4
 
 ## v0.9.3
+
 28 February 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.9.3
 
-- Changelog and version bump for v0.9.3
-
-
+* Changelog and version bump for v0.9.3
 
 ## v0.9.2
+
 15 February 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.9.2
 
-- Fix inconsistent newlines in the changelog (#167)
-- Bug fix for collapsible pannel not receiving props
-- update doc
-- [[DSR-203](https://telusdigital.atlassian.net/browse/DSR-203)] Adding opt-in max-width to responsive grid (#145)
-- Changelog and version bump for v0.9.2
-
-
+* Fix inconsistent newlines in the changelog (#167)
+* Bug fix for collapsible pannel not receiving props
+* update doc
+* [[DSR-203](https://telusdigital.atlassian.net/browse/DSR-203)] Adding opt-in max-width to responsive grid (#145)
+* Changelog and version bump for v0.9.2
 
 ## v0.9.1
+
 25 January 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.9.1
 
-- feature/BCM-165: Updated styling for Notification (#165)
-- Changelog and version bump for v0.9.1
-
-
+* feature/BCM-165: Updated styling for Notification (#165)
+* Changelog and version bump for v0.9.1
 
 ## v0.9.0
+
 23 January 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.9.0
 
-- Notification Component [[BCM-165](https://telusdigital.atlassian.net/browse/BCM-165)] (#156)
-- Changelog and version bump for v0.9.0
-
-
+* Notification Component [[BCM-165](https://telusdigital.atlassian.net/browse/BCM-165)](#156)
+* Changelog and version bump for v0.9.0
 
 ## v0.8.0
+
 20 January 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.8.0
 
-- Bug fixes for version bumps and changelog formatting during automated deployment
-- Fix misspelled card scss import (#159)
-- Publish the Icon component documentation (#160)
-- Changelog and version bump for v0.8.0
-
-
+* Bug fixes for version bumps and changelog formatting during automated deployment
+* Fix misspelled card scss import (#159)
+* Publish the Icon component documentation (#160)
+* Changelog and version bump for v0.8.0
 
 ## v0.7.1
+
 19 January 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.7.1
 
-- Update dev & peer dependencies to TDS 0.7 (#157)
-- Changelog and version bump for v0.7.1
-
-
+* Update dev & peer dependencies to TDS 0.7 (#157)
+* Changelog and version bump for v0.7.1
 
 ## v0.7.0
+
 19 January 2017
 
 https://github.com/telusdigital/tds/releases/tag/v0.7.0
 
-- Added react import line to grid docs.
-- Removed unused column div at the bottom of docs.
-- Fixed a typo in an example.
-- Updated to export a single Grid component, instead of individual ones.
-- Updated grid components to match linter specs.
-- Merge branch 'master' into feature/B4YBD-891_grid_components
-- Fixing CounterButton code style (#123)
-- [[DSR-143](https://telusdigital.atlassian.net/browse/DSR-143)] Adding Jenkins jobs configuration script
-- [[DSR-143](https://telusdigital.atlassian.net/browse/DSR-143)] Updating build pipeline
-- Merge pull request #108 from telusdigital/feature/DSR-143_jenkins
-- [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] Adding CDN Jenkins deployment
-- Sketch Update v0.7.0 (#124)
-- Merge pull request #127 from telusdigital/feature/DSR-143_jenkins-cdn-release
-- Merge pull request #115 from telusdigital/feature/B4YBD-891_grid_components
-- Screen reader SelectorCounter improvements (#128)
-- [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] SelectorCounter label fixes
-- [[DSR-194](https://telusdigital.atlassian.net/browse/DSR-194)] Adding Release/Rollback documentation (#129)
-- implementation from #93 - adds a mixin to allow easy mapping of hover styles to focus states (#131)
-- Fixing sidebar nav layout in iOS 8 (#138)
-- [DSR] Deploy static site to S3 via Jenkins (#139)
-- Automating NPM Publish (#141)
-- Creating a seed job for Jenkins Job DSL
-- Merge pull request #142 from telusdigital/feature/DSR_seed-ci
-- Adding include pattern for Copy Artifacts steps
-- Add collapsible component (#140)
-- Updating breakpoint documentation (#143)
-- Updating stylelint binary path
-- Consolidating install/lint/test/build into one Jenkins Job (#146)
-- Run a fresh build before each npm start (#147)
-- Authenticate with AWS using Jenkins credentials
-- Bind AWS credentials for CDN deployment
-- Moving CDN deployment credentials binding
-- Add auth token for Jenkins to execute NPM publish (#149)
-- Automate changelog generation [[BCM-211](https://telusdigital.atlassian.net/browse/BCM-211)] (#150)
-- End-to-end release automation with Jenkins [[BCM-213](https://telusdigital.atlassian.net/browse/BCM-213)] (#153)
-- Use bash instead of sh for shell scripts (#154)
-- Changelog and version bump for v0.7.0
-
-
+* Added react import line to grid docs.
+* Removed unused column div at the bottom of docs.
+* Fixed a typo in an example.
+* Updated to export a single Grid component, instead of individual ones.
+* Updated grid components to match linter specs.
+* Merge branch 'master' into feature/B4YBD-891_grid_components
+* Fixing CounterButton code style (#123)
+* [[DSR-143](https://telusdigital.atlassian.net/browse/DSR-143)] Adding Jenkins jobs configuration script
+* [[DSR-143](https://telusdigital.atlassian.net/browse/DSR-143)] Updating build pipeline
+* Merge pull request #108 from telusdigital/feature/DSR-143_jenkins
+* [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] Adding CDN Jenkins deployment
+* Sketch Update v0.7.0 (#124)
+* Merge pull request #127 from telusdigital/feature/DSR-143_jenkins-cdn-release
+* Merge pull request #115 from telusdigital/feature/B4YBD-891_grid_components
+* Screen reader SelectorCounter improvements (#128)
+* [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] SelectorCounter label fixes
+* [[DSR-194](https://telusdigital.atlassian.net/browse/DSR-194)] Adding Release/Rollback documentation (#129)
+* implementation from #93 - adds a mixin to allow easy mapping of hover styles to focus states (#131)
+* Fixing sidebar nav layout in iOS 8 (#138)
+* [DSR] Deploy static site to S3 via Jenkins (#139)
+* Automating NPM Publish (#141)
+* Creating a seed job for Jenkins Job DSL
+* Merge pull request #142 from telusdigital/feature/DSR_seed-ci
+* Adding include pattern for Copy Artifacts steps
+* Add collapsible component (#140)
+* Updating breakpoint documentation (#143)
+* Updating stylelint binary path
+* Consolidating install/lint/test/build into one Jenkins Job (#146)
+* Run a fresh build before each npm start (#147)
+* Authenticate with AWS using Jenkins credentials
+* Bind AWS credentials for CDN deployment
+* Moving CDN deployment credentials binding
+* Add auth token for Jenkins to execute NPM publish (#149)
+* Automate changelog generation [[BCM-211](https://telusdigital.atlassian.net/browse/BCM-211)](#150)
+* End-to-end release automation with Jenkins [[BCM-213](https://telusdigital.atlassian.net/browse/BCM-213)](#153)
+* Use bash instead of sh for shell scripts (#154)
+* Changelog and version bump for v0.7.0
 
 ## v0.6.0
+
 30 November 2016
 
 https://github.com/telusdigital/tds/releases/tag/v0.6.0
 
-- Fixing the sketch file download
-- Fixing webpack URL on consumption page
-- Fixing enriched npm example
-- Alpha 0.5.0 Update (#90)
-- Fix build of docs (#96)
-- [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Adding link examples (#97)
-- Adding SelectorCounter tests and refactoring component (#98)
-- Updated documentation (#95)
-- [[DSR-176](https://telusdigital.atlassian.net/browse/DSR-176)] Fixing off-by-1 breakpoints bug
-- Sketch Update v0.6.0
-- Merge pull request #101 from telusdigital/bugfix/DSR-176
-- [DSR] simplifying comments
-- [DSR] simplifying comments (#103)
-- Merge pull request #102 from telusdigital/sketchupdate11012016
-- [DSR] Adding Hot Module Replacement to the documentation site
-- Merge pull request #104 from telusdigital/task/DSR_docs-hot-reload
-- [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] Better Selector Counter accessibility
-- Merge pull request #107 from telusdigital/bugfix/DSR-167_selector-counter-accessibility
-- [[DSR-194](https://telusdigital.atlassian.net/browse/DSR-194)] Document changelog & version maintenance
-- Documenting README maintenance
-- Merge pull request #109 from telusdigital/task/DSR-194_release-documentation
-- [[DSR-152](https://telusdigital.atlassian.net/browse/DSR-152)] Updating product documentation
-- Merge pull request #111 from telusdigital/feature/DSR-152_product-doc-updates
-- [B4YBD-891] Added Icon component.
-- Updated and added deps
-- Merge pull request #112 from telusdigital/feature/B4YBD-891_icon_component
-- Prevent click handler from executing for disabled button
-- Merge pull request #114 from telusdigital/bugfix/DSR-failing-selector-counter-tests
-- [RFC] Deprecated custom React rendering and implemented React rendering on client (#116)
-- Cleaning up Docs Site SCSS comments (issue #72) (#118)
-- [[DSR-199](https://telusdigital.atlassian.net/browse/DSR-199)] IA re-organization (#121)
-- Restoring original Foundational Components in IA
-- Re-arranging Getting Started, nav menu
-- [[DSR-195](https://telusdigital.atlassian.net/browse/DSR-195)] Automated release to CDN (#119)
-- Releasing/v0.6.0 (#122)
-- Updating inter-module dependencies
-
-
+* Fixing the sketch file download
+* Fixing webpack URL on consumption page
+* Fixing enriched npm example
+* Alpha 0.5.0 Update (#90)
+* Fix build of docs (#96)
+* [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Adding link examples (#97)
+* Adding SelectorCounter tests and refactoring component (#98)
+* Updated documentation (#95)
+* [[DSR-176](https://telusdigital.atlassian.net/browse/DSR-176)] Fixing off-by-1 breakpoints bug
+* Sketch Update v0.6.0
+* Merge pull request #101 from telusdigital/bugfix/DSR-176
+* [DSR] simplifying comments
+* [DSR] simplifying comments (#103)
+* Merge pull request #102 from telusdigital/sketchupdate11012016
+* [DSR] Adding Hot Module Replacement to the documentation site
+* Merge pull request #104 from telusdigital/task/DSR_docs-hot-reload
+* [[DSR-167](https://telusdigital.atlassian.net/browse/DSR-167)] Better Selector Counter accessibility
+* Merge pull request #107 from telusdigital/bugfix/DSR-167_selector-counter-accessibility
+* [[DSR-194](https://telusdigital.atlassian.net/browse/DSR-194)] Document changelog & version maintenance
+* Documenting README maintenance
+* Merge pull request #109 from telusdigital/task/DSR-194_release-documentation
+* [[DSR-152](https://telusdigital.atlassian.net/browse/DSR-152)] Updating product documentation
+* Merge pull request #111 from telusdigital/feature/DSR-152_product-doc-updates
+* [B4YBD-891] Added Icon component.
+* Updated and added deps
+* Merge pull request #112 from telusdigital/feature/B4YBD-891_icon_component
+* Prevent click handler from executing for disabled button
+* Merge pull request #114 from telusdigital/bugfix/DSR-failing-selector-counter-tests
+* [RFC] Deprecated custom React rendering and implemented React rendering on client (#116)
+* Cleaning up Docs Site SCSS comments (issue #72) (#118)
+* [[DSR-199](https://telusdigital.atlassian.net/browse/DSR-199)] IA re-organization (#121)
+* Restoring original Foundational Components in IA
+* Re-arranging Getting Started, nav menu
+* [[DSR-195](https://telusdigital.atlassian.net/browse/DSR-195)] Automated release to CDN (#119)
+* Releasing/v0.6.0 (#122)
+* Updating inter-module dependencies
 
 ## v0.5.0
+
 20 October 2016
 
 https://github.com/telusdigital/tds/releases/tag/v0.5.0
 
-- Renaming icons to reflect their form. (#60)
-- Alpha 0.4.1 Update (#61)
-- [[DSR-115](https://telusdigital.atlassian.net/browse/DSR-115)] Optimizing Core Icons web fonts for Windows (#62)
-- [[DSR-115](https://telusdigital.atlassian.net/browse/DSR-115)] Adding ttfautohint to the webfont build (#63)
-- [[DSR-131](https://telusdigital.atlassian.net/browse/DSR-131)] Easy download of thorium.sketch (#64)
-- Adding the downloads directory to the Documentation Site (#65)
-- Fixing Markdown list rendering (#66)
-- [[DSR-105](https://telusdigital.atlassian.net/browse/DSR-105)] Updating font sizes to match the type stack audit (#67)
-- [[DSR-105](https://telusdigital.atlassian.net/browse/DSR-105)] Increase h2 to 2rem/32px on mobile (#68)
-- [[DSR-96](https://telusdigital.atlassian.net/browse/DSR-96)] Documenting build/release/deploy/tech stack (#69)
-- #73 - adding a helper function for getting breakpoints in sass (#74)
-- [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Add enriched library and re-format project (#75)
-- [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Adding testing frameworks (#76)
-- [[DSR-69](https://telusdigital.atlassian.net/browse/DSR-69)] Implementing selector counter (#77)
-- Bumping required version of core by enriched
-- Fixing sass include paths
-- Adding an example of the Selector Counter (#78)
-- [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Links (enhanced) (#79)
-- Removing leading zero to fix linter error
-- Fixing package.json warnings
-- Fixing missing README files
-- [[DSR-140](https://telusdigital.atlassian.net/browse/DSR-140)] Type stack size adjustments (#80)
-- [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Adjusting Documentation build (#81)
-- Updating local setup (#82)
-- [[DSR-140](https://telusdigital.atlassian.net/browse/DSR-140)] Adjusting H3, P1, P2 sizes (#83)
-- [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Implementing descender-aware underlines (#84)
-- [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Isomorphic React build pipeline (#88)
-- Alpha 0.5.0 Update (#85)
-- Updating version number and changelog for v0.5.0 (#89)
-
-
+* Renaming icons to reflect their form. (#60)
+* Alpha 0.4.1 Update (#61)
+* [[DSR-115](https://telusdigital.atlassian.net/browse/DSR-115)] Optimizing Core Icons web fonts for Windows (#62)
+* [[DSR-115](https://telusdigital.atlassian.net/browse/DSR-115)] Adding ttfautohint to the webfont build (#63)
+* [[DSR-131](https://telusdigital.atlassian.net/browse/DSR-131)] Easy download of thorium.sketch (#64)
+* Adding the downloads directory to the Documentation Site (#65)
+* Fixing Markdown list rendering (#66)
+* [[DSR-105](https://telusdigital.atlassian.net/browse/DSR-105)] Updating font sizes to match the type stack audit (#67)
+* [[DSR-105](https://telusdigital.atlassian.net/browse/DSR-105)] Increase h2 to 2rem/32px on mobile (#68)
+* [[DSR-96](https://telusdigital.atlassian.net/browse/DSR-96)] Documenting build/release/deploy/tech stack (#69)
+* #73 - adding a helper function for getting breakpoints in sass (#74)
+* [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Add enriched library and re-format project (#75)
+* [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Adding testing frameworks (#76)
+* [[DSR-69](https://telusdigital.atlassian.net/browse/DSR-69)] Implementing selector counter (#77)
+* Bumping required version of core by enriched
+* Fixing sass include paths
+* Adding an example of the Selector Counter (#78)
+* [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Links (enhanced) (#79)
+* Removing leading zero to fix linter error
+* Fixing package.json warnings
+* Fixing missing README files
+* [[DSR-140](https://telusdigital.atlassian.net/browse/DSR-140)] Type stack size adjustments (#80)
+* [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Adjusting Documentation build (#81)
+* Updating local setup (#82)
+* [[DSR-140](https://telusdigital.atlassian.net/browse/DSR-140)] Adjusting H3, P1, P2 sizes (#83)
+* [[DSR-32](https://telusdigital.atlassian.net/browse/DSR-32)] Implementing descender-aware underlines (#84)
+* [[DSR-113](https://telusdigital.atlassian.net/browse/DSR-113)] Isomorphic React build pipeline (#88)
+* Alpha 0.5.0 Update (#85)
+* Updating version number and changelog for v0.5.0 (#89)
 
 ## v0.4.0
+
 04 October 2016
 
 https://github.com/telusdigital/tds/releases/tag/v0.4.0
 
-- Updating version & changelog for v0.3.1 (#38)
-- Updating consumption page for v0.3.1 (#39)
-- Alpha 0.3 Update (#40)
-- [[DSR-35](https://telusdigital.atlassian.net/browse/DSR-35)] Implementing lists (#41)
-- Optimizing NPM module size (#42)
-- Making TELUS uppercase everywhere (#43)
-- [[DSR-44](https://telusdigital.atlassian.net/browse/DSR-44)] Form states (#44)
-- Refactoring the form states interactive example (#45)
-- Bugfix: hovered selections should have a gray border (#46)
-- [[DSR-51](https://telusdigital.atlassian.net/browse/DSR-51)] Dropdowns (#47)
-- Documenting accessible form error reporting (#48)
-- [[DSR-33](https://telusdigital.atlassian.net/browse/DSR-33)] Utility Icons (#49)
-- Adding voids to the Spyglass and Location icons (#50)
-- Bugfix: restore missing "plus" icon (#51)
-- [[DSR-112](https://telusdigital.atlassian.net/browse/DSR-112)] Show all core features under one nav category (#52)
-- Bugfix: restore missing icons to lists and forms (#53)
-- [[DSR-109](https://telusdigital.atlassian.net/browse/DSR-109)] Fixing docs hamburger alignment on mobile (#54)
-- Task: improving the accessible icon documentation (#55)
-- Restoring the header to the examples pages (#56)
-- Alpha 0.4.0 Update (#57)
-- Releasing v0.4.0 (#58)
-
-
+* Updating version & changelog for v0.3.1 (#38)
+* Updating consumption page for v0.3.1 (#39)
+* Alpha 0.3 Update (#40)
+* [[DSR-35](https://telusdigital.atlassian.net/browse/DSR-35)] Implementing lists (#41)
+* Optimizing NPM module size (#42)
+* Making TELUS uppercase everywhere (#43)
+* [[DSR-44](https://telusdigital.atlassian.net/browse/DSR-44)] Form states (#44)
+* Refactoring the form states interactive example (#45)
+* Bugfix: hovered selections should have a gray border (#46)
+* [[DSR-51](https://telusdigital.atlassian.net/browse/DSR-51)] Dropdowns (#47)
+* Documenting accessible form error reporting (#48)
+* [[DSR-33](https://telusdigital.atlassian.net/browse/DSR-33)] Utility Icons (#49)
+* Adding voids to the Spyglass and Location icons (#50)
+* Bugfix: restore missing "plus" icon (#51)
+* [[DSR-112](https://telusdigital.atlassian.net/browse/DSR-112)] Show all core features under one nav category (#52)
+* Bugfix: restore missing icons to lists and forms (#53)
+* [[DSR-109](https://telusdigital.atlassian.net/browse/DSR-109)] Fixing docs hamburger alignment on mobile (#54)
+* Task: improving the accessible icon documentation (#55)
+* Restoring the header to the examples pages (#56)
+* Alpha 0.4.0 Update (#57)
+* Releasing v0.4.0 (#58)
 
 ## v0.3.1
+
 21 September 2016
 
 https://github.com/telusdigital/tds/releases/tag/v0.3.1
 
-- Updating version & changelog for v0.3.1 (#38)
-- Updating consumption page for v0.3.1 (#39)
-
-
+* Updating version & changelog for v0.3.1 (#38)
+* Updating consumption page for v0.3.1 (#39)
 
 ## v0.3.0
+
 20 September 2016
 
 https://github.com/telusdigital/tds/releases/tag/v0.3.0
 
-- Sketch file updates (#20)
-- [[DSR-20](https://telusdigital.atlassian.net/browse/DSR-20)] Order nav links consistently (#21)
-- [[DSR-39](https://telusdigital.atlassian.net/browse/DSR-39)] Text fields & labels (#22)
-- [[DSR-47](https://telusdigital.atlassian.net/browse/DSR-47)] Field helpers (#23)
-- [[DSR-45](https://telusdigital.atlassian.net/browse/DSR-45)] Radio buttons & checkboxes (#24)
-- [[DSR-67](https://telusdigital.atlassian.net/browse/DSR-67)] Fixing clipped descenders inside form fields (#25)
-- [[DSR-70](https://telusdigital.atlassian.net/browse/DSR-70)] Making form fields & buttons the same height (#26)
-- Bug: fixing mis-aligned and mis-colored checkboxes (#27)
-- [[DSR-73](https://telusdigital.atlassian.net/browse/DSR-73)] Fixing color of form placeholders in IE11 (#28)
-- [[DSR-81](https://telusdigital.atlassian.net/browse/DSR-81)] Fixing check box alignment (#29)
-- [[DSR-74](https://telusdigital.atlassian.net/browse/DSR-74)] fixing content width on Android 5 & 4 (#30)
-- [[DSR-46](https://telusdigital.atlassian.net/browse/DSR-46)] Form hints (#31)
-- Using web fonts from the Thorium CDN (#32)
-- Bugfix: making subhead/strong/label text heavier (#33)
-- Task: fixing checkbox example indentation (#34)
-- Task: adding a feature switch to Form Hints (#35)
-- Updating changelog & version for 0.3.0 (#36)
-
-
+* Sketch file updates (#20)
+* [[DSR-20](https://telusdigital.atlassian.net/browse/DSR-20)] Order nav links consistently (#21)
+* [[DSR-39](https://telusdigital.atlassian.net/browse/DSR-39)] Text fields & labels (#22)
+* [[DSR-47](https://telusdigital.atlassian.net/browse/DSR-47)] Field helpers (#23)
+* [[DSR-45](https://telusdigital.atlassian.net/browse/DSR-45)] Radio buttons & checkboxes (#24)
+* [[DSR-67](https://telusdigital.atlassian.net/browse/DSR-67)] Fixing clipped descenders inside form fields (#25)
+* [[DSR-70](https://telusdigital.atlassian.net/browse/DSR-70)] Making form fields & buttons the same height (#26)
+* Bug: fixing mis-aligned and mis-colored checkboxes (#27)
+* [[DSR-73](https://telusdigital.atlassian.net/browse/DSR-73)] Fixing color of form placeholders in IE11 (#28)
+* [[DSR-81](https://telusdigital.atlassian.net/browse/DSR-81)] Fixing check box alignment (#29)
+* [[DSR-74](https://telusdigital.atlassian.net/browse/DSR-74)] fixing content width on Android 5 & 4 (#30)
+* [[DSR-46](https://telusdigital.atlassian.net/browse/DSR-46)] Form hints (#31)
+* Using web fonts from the Thorium CDN (#32)
+* Bugfix: making subhead/strong/label text heavier (#33)
+* Task: fixing checkbox example indentation (#34)
+* Task: adding a feature switch to Form Hints (#35)
+* Updating changelog & version for 0.3.0 (#36)
 
 ## v0.2.1
+
 06 September 2016
 
 https://github.com/telusdigital/tds/releases/tag/v0.2.1
 
-- Updating to latest v0.1 Sketch file (#2)
-- [[DSR-14](https://telusdigital.atlassian.net/browse/DSR-14)] Migrate documentation site scaffolding (#3)
-- Fixing dist directory error on Jenkins
-- Updating Contributor Quick Start with dependency instructions
-- [[DSR-1](https://telusdigital.atlassian.net/browse/DSR-1)] Responsive grid (#4)
-- [[DSR-7](https://telusdigital.atlassian.net/browse/DSR-7)] Light Governance - Contribution Model
-- Implementing grid padding & ordering feedback
-- Migrating "Introduction" documentation section. (#6)
-- Updating documentation
-- Adding & documenting column nesting and utility classes
-- Merge pull request #8 from telusdigital/feedback/DSR-1_grid
-- [[DSR-7](https://telusdigital.atlassian.net/browse/DSR-7)] Light Governance - Contribution Model (#5)
-- [[DSR-3](https://telusdigital.atlassian.net/browse/DSR-3)] Typography (#10)
-- DSR-2 Colour (#9)
-- [[DSR-4](https://telusdigital.atlassian.net/browse/DSR-4)] Buttons (#11)
-- [[DSR-24](https://telusdigital.atlassian.net/browse/DSR-24)] use small body copy below level 3 heading (#12)
-- [[DSR-25](https://telusdigital.atlassian.net/browse/DSR-25)] Implementing button spacing feedback (#13)
-- [[DSR-8](https://telusdigital.atlassian.net/browse/DSR-8)] Consumption model
-- Updating consumption model with more SCSS instructions
-- Merge pull request #14 from telusdigital/feature/DSR-8_consumption-model
-- Updating Sketch file
-- Updated type color and weight as per Thorium Designers (#16)
-- Updating headline levels in Contributor docs (#17)
+* Updating to latest v0.1 Sketch file (#2)
+* [[DSR-14](https://telusdigital.atlassian.net/browse/DSR-14)] Migrate documentation site scaffolding (#3)
+* Fixing dist directory error on Jenkins
+* Updating Contributor Quick Start with dependency instructions
+* [[DSR-1](https://telusdigital.atlassian.net/browse/DSR-1)] Responsive grid (#4)
+* [[DSR-7](https://telusdigital.atlassian.net/browse/DSR-7)] Light Governance - Contribution Model
+* Implementing grid padding & ordering feedback
+* Migrating "Introduction" documentation section. (#6)
+* Updating documentation
+* Adding & documenting column nesting and utility classes
+* Merge pull request #8 from telusdigital/feedback/DSR-1_grid
+* [[DSR-7](https://telusdigital.atlassian.net/browse/DSR-7)] Light Governance - Contribution Model (#5)
+* [[DSR-3](https://telusdigital.atlassian.net/browse/DSR-3)] Typography (#10)
+* DSR-2 Colour (#9)
+* [[DSR-4](https://telusdigital.atlassian.net/browse/DSR-4)] Buttons (#11)
+* [[DSR-24](https://telusdigital.atlassian.net/browse/DSR-24)] use small body copy below level 3 heading (#12)
+* [[DSR-25](https://telusdigital.atlassian.net/browse/DSR-25)] Implementing button spacing feedback (#13)
+* [[DSR-8](https://telusdigital.atlassian.net/browse/DSR-8)] Consumption model
+* Updating consumption model with more SCSS instructions
+* Merge pull request #14 from telusdigital/feature/DSR-8_consumption-model
+* Updating Sketch file
+* Updated type color and weight as per Thorium Designers (#16)
+* Updating headline levels in Contributor docs (#17)
