@@ -4,6 +4,7 @@ import { mount, render } from 'enzyme'
 import { warn } from '../../../../utils/warn'
 
 import ButtonLink from '../ButtonLink'
+import Responsive from '../../../Responsive/Responsive'
 
 import mockMatchMedia from '../../../../__mocks__/matchMedia'
 
@@ -16,6 +17,12 @@ describe('ButtonLink', () => {
     return link.find('a')
   }
 
+  const doShallow = (overrides = {}) => {
+    const button = mount(<ButtonLink {...overrides}>Submit</ButtonLink>)
+
+    return button
+  }
+
   afterEach(() => {
     jest.clearAllMocks()
   })
@@ -24,6 +31,12 @@ describe('ButtonLink', () => {
     const link = render(<ButtonLink>Go home</ButtonLink>)
 
     expect(link).toMatchSnapshot()
+  })
+
+  it('defaults to mobile', () => {
+    const button = doShallow()
+
+    expect(button.find(Responsive)).toHaveProp('defaultMatches', false)
   })
 
   it('is an anchor HTML element when using the href attribute', () => {

@@ -39,7 +39,7 @@ const Heading = ({ level, invert, children, ...rest }) => {
     const color = invert ? styles.inverted : styles.secondary
 
     return (
-      <Responsive minWidth="md">
+      <Responsive minWidth="md" defaultMatches={false}>
         {desktop =>
           desktop ? (
             <BaseHeading {...baseHeadingProps} color={color} size={styles[`${level}Desktop`]}>
@@ -49,7 +49,8 @@ const Heading = ({ level, invert, children, ...rest }) => {
             <BaseHeading {...baseHeadingProps} color={color} size={styles[level]}>
               {children}
             </BaseHeading>
-          )}
+          )
+        }
       </Responsive>
     )
   }

@@ -83,10 +83,10 @@ describe('ExpandCollapse', () => {
   it('renders panels conditionally', () => {
     const { expandCollapse } = doMount(
       <ExpandCollapse open={['panel-1']}>
-        { false }
-        { null }
-        { undefined }
-        { aPanel({id: 'panel-1'}) }
+        {false}
+        {null}
+        {undefined}
+        {aPanel({ id: 'panel-1' })}
       </ExpandCollapse>
     )
 
@@ -120,7 +120,9 @@ describe('ExpandCollapse', () => {
       )
 
       expect(findPanelHeader('panel-1')).toContainReact(
-        <Text size="large">Some tertiary text</Text>
+        <Text data-testid="tertiarytext" size="large">
+          Some tertiary text
+        </Text>
       )
     })
   })
@@ -273,8 +275,8 @@ describe('ExpandCollapse', () => {
     it('surrounds all the panels', () => {
       const { expandCollapse } = doMount(
         <ExpandCollapse>
-          {aPanel({id: 'panel-1'})}
-          {aPanel({id: 'panel-2'})}
+          {aPanel({ id: 'panel-1' })}
+          {aPanel({ id: 'panel-2' })}
         </ExpandCollapse>
       )
 
@@ -284,8 +286,8 @@ describe('ExpandCollapse', () => {
     it('can turn off the top divider', () => {
       const { expandCollapse } = doMount(
         <ExpandCollapse topDivider={false}>
-          {aPanel({id: 'panel-1'})}
-          {aPanel({id: 'panel-2'})}
+          {aPanel({ id: 'panel-1' })}
+          {aPanel({ id: 'panel-2' })}
         </ExpandCollapse>
       )
 
@@ -307,7 +309,9 @@ describe('ExpandCollapse', () => {
 
       expect(findPanelHeader('panel-1')).toContainReact(
         <span className="alignSelfFlexEnd">
-          <Text size="medium">Some tertiary text</Text>
+          <Text data-testid="tertiarytext" size="medium">
+            Some tertiary text
+          </Text>
         </span>
       )
     })

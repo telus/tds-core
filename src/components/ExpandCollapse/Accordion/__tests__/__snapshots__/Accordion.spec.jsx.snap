@@ -53,11 +53,12 @@ exports[`Accordion renders a closed accordion 1`] = `
                 vertical={3}
               >
                 <Responsive
+                  defaultMatches={false}
                   minWidth="md"
                   query={Object {}}
                 >
                   <Media
-                    defaultMatches={true}
+                    defaultMatches={false}
                     query={
                       Object {
                         "minWidth": 768,
@@ -73,11 +74,12 @@ exports[`Accordion renders a closed accordion 1`] = `
                         tag="div"
                       >
                         <Responsive
+                          defaultMatches={false}
                           minWidth="md"
                           query={Object {}}
                         >
                           <Media
-                            defaultMatches={true}
+                            defaultMatches={false}
                             query={
                               Object {
                                 "minWidth": 768,
@@ -246,11 +248,12 @@ exports[`Accordion renders a closed accordion 1`] = `
                     tag="div"
                   >
                     <Responsive
+                      defaultMatches={false}
                       minWidth="md"
                       query={Object {}}
                     >
                       <Media
-                        defaultMatches={true}
+                        defaultMatches={false}
                         query={
                           Object {
                             "minWidth": 768,
@@ -360,11 +363,12 @@ exports[`Accordion renders an open accordion 1`] = `
                 vertical={3}
               >
                 <Responsive
+                  defaultMatches={false}
                   minWidth="md"
                   query={Object {}}
                 >
                   <Media
-                    defaultMatches={true}
+                    defaultMatches={false}
                     query={
                       Object {
                         "minWidth": 768,
@@ -380,11 +384,12 @@ exports[`Accordion renders an open accordion 1`] = `
                         tag="div"
                       >
                         <Responsive
+                          defaultMatches={false}
                           minWidth="md"
                           query={Object {}}
                         >
                           <Media
-                            defaultMatches={true}
+                            defaultMatches={false}
                             query={
                               Object {
                                 "minWidth": 768,
@@ -553,11 +558,12 @@ exports[`Accordion renders an open accordion 1`] = `
                     tag="div"
                   >
                     <Responsive
+                      defaultMatches={false}
                       minWidth="md"
                       query={Object {}}
                     >
                       <Media
-                        defaultMatches={true}
+                        defaultMatches={false}
                         query={
                           Object {
                             "minWidth": 768,
