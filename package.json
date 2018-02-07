@@ -159,7 +159,7 @@
       "guide/components/**",
       "guide/_book/**",
       "build/**",
-      "tests/reports/**"
+      "**/reports/*.xml"
     ]
   }
 }

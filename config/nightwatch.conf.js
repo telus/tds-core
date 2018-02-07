@@ -1,12 +1,12 @@
 const path = require('path')
 
 module.exports = {
-  src_folders: path.resolve('tests/specs/'),
-  globals_path: path.resolve('tests/globals.js'),
-  output_folder: path.resolve('tests/reports'),
+  src_folders: path.resolve('functional-tests/specs/'),
+  globals_path: path.resolve('functional-tests/globals.js'),
+  output_folder: path.resolve('functional-tests/reports'),
   custom_commands_path: [path.resolve('node_modules/nightwatch-accessibility/commands')],
   custom_assertions_path: [path.resolve('node_modules/nightwatch-accessibility/assertions')],
-  page_objects_path: path.resolve('tests/page-objects'),
+  page_objects_path: path.resolve('functional-tests/page-objects'),
   selenium: {
     start_process: false,
   },
