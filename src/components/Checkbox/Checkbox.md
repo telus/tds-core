@@ -7,19 +7,17 @@ A stand-alone checkbox is used for a single option that the user can turn on or 
 <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" target="_blank">Reference</a>
 
 ```
-<fieldset>
-  <Box tag="fieldset" between={2}>
-    <legend>
-      <Text bold size="medium">
-        Show me deals for:
-      </Text>
-    </legend>
-    <Checkbox name="services" value="mobility" label="Mobility" />
-    <Checkbox name="services" value="internet" label="Internet" />
-    <Checkbox name="services" value="tv" label="TV" />
-    <Checkbox name="services" value="home-phone" label="Home Phone" />
-  </Box>
-</fieldset>
+<Box tag="fieldset" between={2}>
+  <legend>
+    <Text bold size="medium">
+      Show me deals for:
+    </Text>
+  </legend>
+  <Checkbox name="services" value="mobility" label="Mobility" />
+  <Checkbox name="services" value="internet" label="Internet" />
+  <Checkbox name="services" value="tv" label="TV" />
+  <Checkbox name="services" value="home-phone" label="Home Phone" />
+</Box>
 ```
 
 ### Getting feedback for an unchecked checkbox
