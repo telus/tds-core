@@ -1,4 +1,3 @@
-/* eslint-disable */
 const timeout = 30000
 const styleguidistTests = {
   beforeEach: browser => {
@@ -12,7 +11,7 @@ const styleguidistTests = {
   },
 }
 
-styleguidistTests['Goto Styleguidist SPA'] = function(browser) {
+styleguidistTests['Goto Styleguidist SPA'] = function goToStyleguidist(browser) {
   const styleguidistPage = browser.page.styleguidist()
   const root = '@root'
   const title = '@title'
