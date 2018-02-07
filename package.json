@@ -158,7 +158,8 @@
       "**.tgz",
       "guide/components/**",
       "guide/_book/**",
-      "build/**"
+      "build/**",
+      "tests/reports/**"
     ]
   }
 }
