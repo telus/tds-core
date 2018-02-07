@@ -14,15 +14,11 @@ const styleguidistTests = {
 styleguidistTests['Goto Styleguidist SPA'] = function goToStyleguidist(browser) {
   const styleguidistPage = browser.page.styleguidist()
   const root = '@root'
-  const title = '@title'
 
   styleguidistPage
     // Accessibility check
     .initAccessibility()
     .assert.accessibility(root, { verbose: true })
-
-    // Custom checks
-    .assert.containsText(title, 'TELUS Design System')
 }
 
 module.exports = styleguidistTests

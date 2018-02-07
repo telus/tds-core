@@ -6,8 +6,5 @@ module.exports = {
     root: {
       selector: 'div[id="app"]',
     },
-    title: {
-      selector: 'h1',
-    },
   },
 }

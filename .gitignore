@@ -21,4 +21,4 @@ dist
 guide/components/
 _book
 build
-/tests/reports/*.xml
+**/reports/**
