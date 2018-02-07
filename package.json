@@ -100,7 +100,7 @@
     "react-dom": "^16.1.0",
     "react-flexbox-grid": "^2.0.0",
     "react-media": "^1.6.1",
-    "react-styleguidist": "^6.0.29",
+    "react-styleguidist": "^6.2.3",
     "react-test-renderer": "^16.0.0",
     "react-transition-group": "^2.2.1",
     "rollup": "^0.50.0",
