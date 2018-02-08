@@ -140,13 +140,11 @@ To view the code and usage of the components please visit the [TDS components do
 
 ## Master Sketch file
 
-The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, there are two ways you can download them. Here you can also find the **TDS_Grid.sketch** file that may be used to kick start your project.
-
-1. **GitHub**: You can always download the latest (and previous) Master Sketch file on the [TDS release page](https://github.com/telusdigital/tds/releases).
-
-2. **Invision Enterprise**: If you have access to the TDS project in the [TELUS Invision Enterprise](https://www.invisionapp.com/) account you can view access the **latest** (and previous versions) Master Sketch files in the assets > source files
+The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, you can download them from the *assets > source files* in the TDS project on [Invision Enterprise](https://telus.invisionapp.com/).
 
 ![InVision Asset Source Files](invision_assets_sourcefiles.png)
+
+Here you can also find the [**TDS_Grid.sketch**](https://invis.io/a/R31H14GV9THP) file that may be used to kick start your project.
 
 ## Fonts
 
