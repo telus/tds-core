@@ -48,7 +48,7 @@ const Box = ({
   const ySize = inset || vertical
 
   return (
-    <Responsive minWidth="md">
+    <Responsive minWidth="md" defaultMatches={false}>
       {desktop => {
         const classes = joinClassNames(
           getClassName('padding', 'horizontal', xSize, desktop),

@@ -14,7 +14,7 @@ import styles from './BaseButton.modules.scss'
  */
 const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...rest }) => {
   return (
-    <Responsive minWidth="md">
+    <Responsive minWidth="md" defaultMatches={false}>
       {desktop =>
         React.createElement(
           element,
@@ -29,7 +29,8 @@ const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...re
           <FlexBox direction="row" dangerouslyAddClassName={styles.centered}>
             {children}
           </FlexBox>
-        )}
+        )
+      }
     </Responsive>
   )
 }
