@@ -16,6 +16,8 @@
   &::-ms-expand {
     display: none;
   }
+
+  background-color: transparent;
 }
 
 .positionSelectOnTop {
@@ -30,5 +32,5 @@
   composes: absolute centerVertically from '../Position.modules.scss';
   composes: iconRight from '../FormField/FormField.modules.scss';
 
-  z-index: 3;
+  z-index: 1;
 }
