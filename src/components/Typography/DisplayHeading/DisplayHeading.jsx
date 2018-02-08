@@ -19,7 +19,7 @@ const getClassName = (invert, desktop) =>
  * Large page titles. Renders an HTML `<h1>` element.
  */
 const DisplayHeading = ({ invert, children, ...rest }) => (
-  <Responsive minWidth="md">
+  <Responsive minWidth="md" defaultMatches={false}>
     {desktop => (
       <h1 {...safeRest(rest)} className={getClassName(invert, desktop)}>
         {children}

@@ -93,7 +93,9 @@ class PanelWrapper extends React.Component {
 
             {tertiaryText && (
               <span className={mobile ? styles.alignSelfFlexEnd : undefined}>
-                <Text size={mobile ? 'medium' : 'large'}>{tertiaryText}</Text>
+                <Text data-testid="tertiarytext" size={mobile ? 'medium' : 'large'}>
+                  {tertiaryText}
+                </Text>
               </span>
             )}
           </Flexbox>
