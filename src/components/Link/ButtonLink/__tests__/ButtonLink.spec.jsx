@@ -16,12 +16,6 @@ describe('ButtonLink', () => {
     return link.find('a')
   }
 
-  const doShallow = (overrides = {}) => {
-    const button = mount(<ButtonLink {...overrides}>Submit</ButtonLink>)
-
-    return button
-  }
-
   afterEach(() => {
     jest.clearAllMocks()
   })

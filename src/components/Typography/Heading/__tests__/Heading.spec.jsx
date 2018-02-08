@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount, shallow, render } from 'enzyme'
+import { mount, render } from 'enzyme'
 
 import mockMatchMedia from '../../../../__mocks__/matchMedia'
 
@@ -18,16 +18,6 @@ describe('Heading', () => {
     )
 
     return heading.find(heading.props().level)
-  }
-
-  const doShallow = (overrides = {}) => {
-    const heading = shallow(
-      <Heading {...defaultProps} {...overrides}>
-        The content
-      </Heading>
-    )
-
-    return heading
   }
 
   it('renders', () => {
