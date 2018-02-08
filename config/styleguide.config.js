@@ -154,19 +154,16 @@ module.exports = {
         {
           name: 'Typography',
           content: path.resolve('src/components/Typography/Typography.md'),
+          components() {
+            return [
+              path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
+              path.resolve('src/components/Typography/Text/Text.jsx'),
+              path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
+              path.resolve('src/components/Typography/Strong/Strong.jsx'),
+              path.resolve('src/components/Typography/Small/Small.jsx'),
+            ]
+          },
           sections: [
-            {
-              name: 'Text',
-              components() {
-                return [
-                  path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
-                  path.resolve('src/components/Typography/Text/Text.jsx'),
-                  path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
-                  path.resolve('src/components/Typography/Strong/Strong.jsx'),
-                  path.resolve('src/components/Typography/Small/Small.jsx'),
-                ]
-              },
-            },
             {
               name: 'Headings',
               components() {
