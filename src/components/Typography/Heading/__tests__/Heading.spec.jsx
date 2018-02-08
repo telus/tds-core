@@ -36,12 +36,6 @@ describe('Heading', () => {
     expect(heading).toMatchSnapshot()
   })
 
-  it('renders mobile styles by default', () => {
-    const heading = doShallow()
-
-    expect(heading).toHaveProp('defaultMatches', false)
-  })
-
   it('renders text', () => {
     const heading = doMount()
 

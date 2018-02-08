@@ -7,7 +7,7 @@ import { render } from 'enzyme'
 
 import Tooltip from '../Tooltip'
 
-describe('responsive behaviour', () => {
+describe('Tooltip server side rendering', () => {
   it('uses mobile styles first', () => {
     const tooltip = render(<Tooltip>My tooltip text</Tooltip>)
 

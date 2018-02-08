@@ -7,7 +7,7 @@ import { render } from 'enzyme'
 
 import DisplayHeading from '../DisplayHeading'
 
-describe('responsive behaviour', () => {
+describe('DisplayHeading server side rendering', () => {
   it('uses mobile styles first', () => {
     const heading = render(<DisplayHeading>My heading text</DisplayHeading>)
 

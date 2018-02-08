@@ -7,7 +7,7 @@ import { render } from 'enzyme'
 
 import Box from '../Box'
 
-describe('responsive behaviour', () => {
+describe('Box server side rendering', () => {
   it('uses mobile styles first', () => {
     const box = render(<Box horizontal={4}>Submit</Box>)
 

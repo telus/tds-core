@@ -5,11 +5,11 @@
 import React from 'react'
 import { render } from 'enzyme'
 
-import Button from '../Button'
+import ButtonLink from '../ButtonLink'
 
-describe('Button server side rendering', () => {
+describe('ButtonLink server side rendering', () => {
   it('uses mobile styles first', () => {
-    const button = render(<Button>Submit</Button>)
+    const button = render(<ButtonLink>Submit</ButtonLink>)
 
     expect(button.hasClass('fullWidth')).toBe(true)
   })

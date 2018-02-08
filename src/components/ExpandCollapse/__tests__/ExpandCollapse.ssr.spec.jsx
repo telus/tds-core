@@ -7,7 +7,7 @@ import { render } from 'enzyme'
 
 import ExpandCollapse from '../ExpandCollapse'
 
-describe('responsive behaviour', () => {
+describe('ExpandCollapse server side rendering', () => {
   it('uses mobile styles first', () => {
     const expandCollapse = render(
       <ExpandCollapse>
