@@ -19,7 +19,7 @@ Card.propTypes = {
   /**
    * The style.
    */
-  variant: PropTypes.oneOf(['white', 'lavender', 'grey']).isRequired,
+  variant: PropTypes.oneOf(['white', 'lavender', 'grey']),
   /**
    * The content. Can be text, any HTML element, or any component.
    */
