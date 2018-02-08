@@ -16,7 +16,7 @@ For vendors or designers outside of TELUS Digital, you can purchase and [downloa
 
 ### Sketch Plugins
 
-There are a variety of plugins available for Sketch. Here is a short list of plugins that will be useful in viewing the TDS master Sketch file and the Design System Manager (DSM) component library:
+There are a variety of plugins available for Sketch. Here is a short list of plugins that will be useful when setting up your Sketch file and using the Design System Manager (DSM) component library:
 
 #### Required
 
@@ -140,7 +140,7 @@ To view the code and usage of the components please visit the [TDS components do
 
 ## Master Sketch file
 
-The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, there are two ways you can download them.
+The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, there are two ways you can download them. Here you can also find the **TDS_Grid.sketch** file that may be used to kick start your project.
 
 1. **GitHub**: You can always download the latest (and previous) Master Sketch file on the [TDS release page](https://github.com/telusdigital/tds/releases).
 
