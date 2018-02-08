@@ -154,33 +154,21 @@ module.exports = {
         {
           name: 'Typography',
           content: path.resolve('src/components/Typography/Typography.md'),
-          sections: [
-            {
-              name: 'Text',
-              components() {
-                return [
-                  path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
-                  path.resolve('src/components/Typography/Text/Text.jsx'),
-                  path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
-                  path.resolve('src/components/Typography/Strong/Strong.jsx'),
-                  path.resolve('src/components/Typography/Small/Small.jsx'),
-                ]
-              },
-            },
-            {
-              name: 'Headings',
-              components() {
-                return [
-                  path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
-                  path.resolve(
-                    'src/components/Typography/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'
-                  ),
-                  path.resolve('src/components/Typography/Heading/Heading.jsx'),
-                  path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx'),
-                ]
-              },
-            },
-          ],
+          components() {
+            return [
+              path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
+              path.resolve(
+                'src/components/Typography/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'
+              ),
+              path.resolve('src/components/Typography/Heading/Heading.jsx'),
+              path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx'),
+              path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
+              path.resolve('src/components/Typography/Text/Text.jsx'),
+              path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
+              path.resolve('src/components/Typography/Strong/Strong.jsx'),
+              path.resolve('src/components/Typography/Small/Small.jsx'),
+            ]
+          },
         },
         {
           name: 'Icons',
