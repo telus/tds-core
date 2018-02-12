@@ -16,14 +16,14 @@
   &::-ms-expand {
     display: none;
   }
+
+  background-color: transparent;
 }
 
 .positionSelectOnTop {
   composes: relative from '../Position.modules.scss';
 
   z-index: 2;
-
-  background: transparent;
 }
 
 .iconsPosition {
@@ -31,4 +31,5 @@
   composes: iconRight from '../FormField/FormField.modules.scss';
 
   z-index: 3;
+  pointer-events: none;
 }
