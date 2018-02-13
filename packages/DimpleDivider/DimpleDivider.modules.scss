@@ -1,0 +1,12 @@
+.dimple {
+  composes: noSpacing from '../../src/components/Spacing.modules.scss';
+  composes: none from '../../src/components/Borders.modules.scss';
+
+  height: 32px;
+
+  background-image: radial-gradient(
+    ellipse at top,
+    rgba(150, 150, 150, 0.1) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
