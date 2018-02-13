@@ -50,9 +50,9 @@ export default {
           Loader: CssModulesSassLoader,
           globalModulePaths: [
             /src\/scss/,
-            /src\/old-components/,
             /packages\/SelectorCounter/,
             /packages\/Spinner/,
+            /packages\/StepTracker/,
           ],
           generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
           getJSON(id, exportTokens) {

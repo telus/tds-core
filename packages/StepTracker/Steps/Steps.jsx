@@ -39,22 +39,25 @@ class Steps extends Component {
     return (
       <div role="progressbar">
         <ul className={cls}>
-          {
-            React.Children.map(children, (element, index) => {
+          {React.Children.map(
+            children,
+            (element, index) => {
               const stepNumber = index + 1
               const status = this.getStatus(current, index)
               const props = {
                 stepNumber,
-                status
+                status,
               }
               return React.cloneElement(element, props)
-            }, this)
-          }
+            },
+            this
+          )}
         </ul>
         <div className="step-tracker__mobile-label">
           <span className="step-tracker__mobile-label-step-info">
             Step {currentStepNumber} of {totalSteps}:
-          </span> {currentStepLabel}
+          </span>{' '}
+          {currentStepLabel}
         </div>
       </div>
     )
@@ -78,11 +81,11 @@ Steps.propTypes = {
    *
    * @ignore
    */
-  className: PropTypes.string // eslint-disable-line react/require-default-props
+  className: PropTypes.string, // eslint-disable-line react/require-default-props
 }
 
 Steps.defaultProps = {
-  current: 0
+  current: 0,
 }
 
 Steps.Step = Step

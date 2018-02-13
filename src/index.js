@@ -28,7 +28,7 @@ export { default as SelectorCounter } from '../packages/SelectorCounter/Selector
 export { default as Small } from './components/Typography/Small/Small'
 export { default as Spinner } from '../packages/Spinner/Spinner'
 export { default as StandaloneIcon } from './components/Icons/StandaloneIcon/StandaloneIcon'
-export { default as Steps } from './old-components/StepTracker/Steps/Steps'
+export { default as Steps } from '../packages/StepTracker/Steps/Steps'
 export { default as Strong } from './components/Typography/Strong/Strong'
 export { default as Text } from './components/Typography/Text/Text'
 export { default as TextArea } from './components/TextArea/TextArea'
