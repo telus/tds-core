@@ -21,16 +21,18 @@ class Spinner extends Component {
   }
 
   getSpinWrapper = (spinEl, spinning, wrapperClassNames) => {
-    const containerCls = classnames('spinner-container', {
-      'spinner-container--loading': spinning
-    }, wrapperClassNames)
+    const containerCls = classnames(
+      'spinner-container',
+      {
+        'spinner-container--loading': spinning,
+      },
+      wrapperClassNames
+    )
     return (
       <div className="spinner-wrapper">
         {spinning && <div className="spinner-wrapper__content-blocker" />}
         {spinEl}
-        <div className={containerCls}>
-          {this.props.children}
-        </div>
+        <div className={containerCls}>{this.props.children}</div>
       </div>
     )
   }
@@ -38,11 +40,11 @@ class Spinner extends Component {
   getSpinElement = (spinning, tip, fullScreen) => {
     const cls = classnames('spinner', {
       'spinner--spinning': spinning,
-      'spinner--full-screen': fullScreen
+      'spinner--full-screen': fullScreen,
     })
     return (
       <div className={cls}>
-        { fullScreen && <div className="spinner__full-screen-layer" />}
+        {fullScreen && <div className="spinner__full-screen-layer" />}
         <svg className="spinner__svg" viewBox="0 0 100 100" width="0" height="0">
           <circle
             className="spinner__circle"
@@ -86,7 +88,10 @@ class Spinner extends Component {
     const { spinning, tip, wrapperClassNames, fullScreen } = this.props
     if (this.isNestedPattern()) {
       return this.getSpinWrapper(
-        this.getSpinElement(spinning, tip, fullScreen), spinning, wrapperClassNames)
+        this.getSpinElement(spinning, tip, fullScreen),
+        spinning,
+        wrapperClassNames
+      )
     }
     return this.getSpinElement(spinning, tip, fullScreen)
   }
@@ -113,13 +118,13 @@ Spinner.propTypes = {
    * Content to be overlaid when the spinner is active. Can be text, any HTML element,
    * or any component.
    */
-  children: PropTypes.node // eslint-disable-line react/require-default-props
+  children: PropTypes.node, // eslint-disable-line react/require-default-props
 }
 
 Spinner.defaultProps = {
   wrapperClassNames: '',
   spinning: false,
-  fullScreen: false
+  fullScreen: false,
 }
 
 export default Spinner

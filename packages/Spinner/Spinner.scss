@@ -1,5 +1,5 @@
-@import '../../scss/settings/colours';
-@import '../../scss/utility/responsive';
+@import '../../src/scss/settings/colours';
+@import '../../src/scss/utility/responsive';
 
 $zindex-negative: -1 !default;
 $zindex-modal-backdrop: 1400 !default;
@@ -10,6 +10,7 @@ $zindex-popover: 1600 !default;
 
 .spinner-wrapper {
   position: relative;
+
   .spinner {
     position: absolute;
     top: calc(50% - 50px);
@@ -20,11 +21,13 @@ $zindex-popover: 1600 !default;
 
 .spinner-container {
   transition: opacity 0.3s;
+
   &--loading {
     opacity: 0.1;
     z-index: $zindex-negative;
   }
 }
+
 .spinner-wrapper__content-blocker {
   z-index: $zindex-modal-backdrop;
   position: absolute;

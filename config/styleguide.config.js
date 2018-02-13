@@ -185,7 +185,7 @@ module.exports = {
           components() {
             return [
               path.resolve('src/components/Notification/Notification.jsx'),
-              path.resolve('src/old-components/Spinner/Spinner.jsx'),
+              path.resolve('packages/Spinner/Spinner.jsx'),
               path.resolve('src/old-components/StepTracker/Steps/Steps.jsx'),
             ]
           },
