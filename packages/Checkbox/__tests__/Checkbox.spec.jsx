@@ -1,12 +1,12 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 
-import Text from '../../Typography/Text/Text'
-import Paragraph from '../../Typography/Paragraph/Paragraph'
-import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
+import Text from '../../../src/components/Typography/Text/Text'
+import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
+import DecorativeIcon from '../../../src/components/Icons/DecorativeIcon/DecorativeIcon'
 import Checkbox from '../Checkbox'
-import InputFeedback from '../../InputFeedback/InputFeedback'
-import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
+import InputFeedback from '../../../src/components/InputFeedback/InputFeedback'
+import ColoredTextProvider from '../../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('Checkbox', () => {
   const defaultProps = {
