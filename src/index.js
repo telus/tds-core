@@ -4,7 +4,7 @@ export { default as Accordion } from './components/ExpandCollapse/Accordion/Acco
 export { default as Box } from '../packages/Box/Box'
 export { default as Button } from '../packages/Button/Button'
 export { default as ButtonLink } from './components/Link/ButtonLink/ButtonLink'
-export { default as Card } from './components/Card/Card'
+export { default as Card } from '../packages/Card/Card'
 export { default as Checkbox } from './components/Checkbox/Checkbox'
 export { default as ChevronLink } from './components/Link/ChevronLink/ChevronLink'
 export { default as DecorativeIcon } from './components/Icons/DecorativeIcon/DecorativeIcon'

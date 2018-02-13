@@ -1,7 +1,7 @@
-@import '../../scss/settings/colours.scss';
+@import '../../src/scss/settings/colours';
 
 .card {
-  composes: none rounded from '../Borders.modules.scss';
+  composes: none rounded from '../../src/components/Borders.modules.scss';
 }
 
 .white {

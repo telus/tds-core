@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Box from '../../../packages/Box/Box'
-import safeRest from '../../utils/safeRest'
+import Box from '../Box/Box'
+import safeRest from '../../src/utils/safeRest'
 
 import styles from './Card.modules.scss'
 

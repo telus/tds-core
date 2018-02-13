@@ -103,7 +103,7 @@ module.exports = {
           name: 'Content',
           components() {
             return compact([
-              path.resolve('src/components/Card/Card.jsx'),
+              path.resolve('packages/Card/Card.jsx'),
               path.resolve('src/components/Image/Image.jsx'),
             ])
           },
