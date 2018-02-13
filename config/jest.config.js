@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   rootDir: path.resolve('src'),
-  roots: ['<rootDir>', path.resolve('docs/components')],
+  roots: ['<rootDir>', path.resolve('docs/components'), path.resolve('packages')],
   moduleNameMapper: {
     '\\.modules.scss$': 'identity-obj-proxy',
     '^.+\\.(css|scss)$': '<rootDir>/__mocks__/styleMock.js',

@@ -18,7 +18,6 @@ Use the `successful` or `invalid` props to style the input appropriately.
 
 In this example, any number greater than 5 is a success.
 
-
 ```
 initialState = {
   value: 5

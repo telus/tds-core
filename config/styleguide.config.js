@@ -202,7 +202,7 @@ module.exports = {
               path.resolve('src/components/TextArea/TextArea.jsx'),
               path.resolve('src/components/InputFeedback/InputFeedback.jsx'),
               path.resolve('src/components/Tooltip/Tooltip.jsx'),
-              path.resolve('src/old-components/SelectorCounter/SelectorCounter.jsx'),
+              path.resolve('packages/SelectorCounter/SelectorCounter.jsx'),
             ])
           },
         },

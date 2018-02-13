@@ -4,15 +4,19 @@ import CounterButton from '../CounterButton'
 
 describe('<CounterButton />', () => {
   it('has accessible text', () => {
-    expect(shallow(<CounterButton label="Hello, World!" />)
-      .find('button').is('[aria-label="Hello, World!"]'))
-      .toEqual(true)
+    expect(
+      shallow(<CounterButton label="Hello, World!" />)
+        .find('button')
+        .is('[aria-label="Hello, World!"]')
+    ).toEqual(true)
   })
 
   it('renders a given icon', () => {
-    expect(shallow(<CounterButton icon="foo" />)
-      .find('.selector-counter__icon').is('.icon.icon-core-foo'))
-      .toEqual(true)
+    expect(
+      shallow(<CounterButton icon="foo" />)
+        .find('.selector-counter__icon')
+        .is('.icon.icon-core-foo')
+    ).toEqual(true)
   })
 
   it('calls a given onClick handler', () => {
@@ -35,12 +39,7 @@ describe('<CounterButton />', () => {
 
     it('calls a given onClick handler', () => {
       const onChangeSpy = jest.fn()
-      const wrapper = mount(
-        <CounterButton
-          onClick={onChangeSpy}
-          disabled
-        />
-      )
+      const wrapper = mount(<CounterButton onClick={onChangeSpy} disabled />)
       const button = wrapper.find('button')
 
       expect(button.length).toEqual(1)

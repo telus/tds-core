@@ -24,7 +24,7 @@ export { default as Paragraph } from './components/Typography/Paragraph/Paragrap
 export { default as Radio } from './components/Radio/Radio'
 export { default as Responsive } from './components/Responsive/Responsive'
 export { default as Select } from './components/Select/Select'
-export { default as SelectorCounter } from './old-components/SelectorCounter/SelectorCounter'
+export { default as SelectorCounter } from '../packages/SelectorCounter/SelectorCounter'
 export { default as Small } from './components/Typography/Small/Small'
 export { default as Spinner } from './old-components/Spinner/Spinner'
 export { default as StandaloneIcon } from './components/Icons/StandaloneIcon/StandaloneIcon'
