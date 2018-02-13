@@ -5,7 +5,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 import safeRest from '../../../utils/safeRest'
 
 import OrderedItem from './OrderedItem'
-import Box from '../../Box/Box'
+import Box from '../../../../packages/Box/Box'
 
 import styles from './OrderedList.modules.scss'
 

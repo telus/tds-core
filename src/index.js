@@ -1,7 +1,7 @@
 import './scss/global.scss'
 
 export { default as Accordion } from './components/ExpandCollapse/Accordion/Accordion'
-export { default as Box } from './components/Box/Box'
+export { default as Box } from '../packages/Box/Box'
 export { default as Button } from './components/Button/Button'
 export { default as ButtonLink } from './components/Link/ButtonLink/ButtonLink'
 export { default as Card } from './components/Card/Card'

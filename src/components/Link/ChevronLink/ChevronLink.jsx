@@ -5,7 +5,7 @@ import DecorativeIcon from '../../../components/Icons/DecorativeIcon/DecorativeI
 import safeRest from '../../../utils/safeRest'
 import { warn } from '../../../utils/warn'
 
-import Box from '../../Box/Box'
+import Box from '../../../../packages/Box/Box'
 
 import styles from './ChevronLink.modules.scss'
 

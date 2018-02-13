@@ -7,7 +7,7 @@ import FlexGrid from '../../components/FlexGrid/FlexGrid'
 import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'
-import Box from '../Box/Box'
+import Box from '../../../packages/Box/Box'
 
 import messagingStyles from '../Messaging.modules.scss'
 import styles from './Notification.modules.scss'

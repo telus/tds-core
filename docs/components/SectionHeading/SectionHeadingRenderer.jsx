@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 
 import Heading from '../../../src/components/Typography/Heading/Heading'
 import Flexbox from '../../../src/components/Flexbox/Flexbox'
-import Box from '../../../src/components/Box/Box'
+import Box from '../../../packages/Box/Box'
 
 import styles from './SectionHeadingRenderer.modules.scss'
 
-const SectionHeadingRenderer = ({id, depth, toolbar, children}) => {
+const SectionHeadingRenderer = ({ id, depth, toolbar, children }) => {
   const level = Math.min(depth, 4)
 
   return (

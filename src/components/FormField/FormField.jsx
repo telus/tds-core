@@ -5,7 +5,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 import safeRest from '../../utils/safeRest'
 import generateId from '../../utils/generateId'
 
-import Box from '../Box/Box'
+import Box from '../../../packages/Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import joinClassNames from '../../utils/joinClassNames'
 
 import Text from '../Typography/Text/Text'
-import Box from '../Box/Box'
+import Box from '../../../packages/Box/Box'
 
 import styles from './Tooltip.modules.scss'
 import displayStyles from '../Display.modules.scss'

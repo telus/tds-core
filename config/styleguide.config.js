@@ -82,7 +82,7 @@ module.exports = {
           name: 'Layout',
           components() {
             return [
-              path.resolve('src/components/Box/Box.jsx'),
+              path.resolve('packages/Box/Box.jsx'),
               path.resolve('src/components/Responsive/Responsive.jsx'),
             ]
           },

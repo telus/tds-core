@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Box from '../../../src/components/Box/Box'
+import Box from '../../../packages/Box/Box'
 import Heading from '../../../src/components/Typography/Heading/Heading'
 
-const MarkdownHeading = ({level, children}) => (
+const MarkdownHeading = ({ level, children }) => (
   <Box below={3}>
     <Heading level={level}>{children}</Heading>
   </Box>

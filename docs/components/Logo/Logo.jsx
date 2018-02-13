@@ -3,7 +3,7 @@ import React from 'react'
 import { version } from '../../../package.json'
 import logo from './Logo.svg'
 
-import Box from '../../../src/components/Box/Box'
+import Box from '../../../packages/Box/Box'
 import Text from '../../../src/components/Typography/Text/Text'
 import ChevronLink from '../../../src/components/Link/ChevronLink/ChevronLink'
 

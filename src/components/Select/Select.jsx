@@ -8,7 +8,7 @@ import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import Tooltip from '../Tooltip/Tooltip'
 import FormField from '../FormField/FormField'
 import FeedbackIcon from '../FormField/FeedbackIcon'
-import Box from '../Box/Box'
+import Box from '../../../packages/Box/Box'
 
 import addRightPadding from '../FormField/addRightPadding'
 

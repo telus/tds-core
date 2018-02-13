@@ -7,7 +7,7 @@ import generateId from '../../utils/generateId'
 
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
-import Box from '../Box/Box'
+import Box from '../../../packages/Box/Box'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Flexbox from '../Flexbox/Flexbox'
 import InputFeedback from '../InputFeedback/InputFeedback'
