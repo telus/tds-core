@@ -4,7 +4,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 
 import safeRest from '../../utils/safeRest'
 
-import HairlineDivider from '../Dividers/HairlineDivider/HairlineDivider'
+import HairlineDivider from '../../../packages/HairlineDivider/HairlineDivider'
 import PanelWrapper from './PanelWrapper/PanelWrapper'
 import Panel from './Panel/Panel'
 
@@ -14,8 +14,7 @@ const Panels = ({ topDivider, isPanelOpen, togglePanel, children, ...rest }) => 
   <div {...safeRest(rest)} className={styles.base}>
     {topDivider && <HairlineDivider />}
 
-    {React.Children
-      .toArray(children)
+    {React.Children.toArray(children)
       .filter(Boolean)
       .map(panel => {
         const { id, header, subtext, tertiaryText, disabled, onToggle } = panel.props

@@ -12,7 +12,7 @@ export { default as DimpleDivider } from '../packages/DimpleDivider/DimpleDivide
 export { default as DisplayHeading } from './components/Typography/DisplayHeading/DisplayHeading'
 export { default as ExpandCollapse } from './components/ExpandCollapse/ExpandCollapse'
 export { default as FlexGrid } from './components/FlexGrid/FlexGrid'
-export { default as HairlineDivider } from './components/Dividers/HairlineDivider/HairlineDivider'
+export { default as HairlineDivider } from '../packages/HairlineDivider/HairlineDivider'
 export { default as Heading } from './components/Typography/Heading/Heading'
 export { default as Image } from './components/Image/Image'
 export { default as Input } from './components/Input/Input'

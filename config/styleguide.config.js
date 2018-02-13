@@ -145,7 +145,7 @@ module.exports = {
                 return [
                   path.resolve('src/components/Dividers/WaveDivider/WaveDivider.jsx'),
                   path.resolve('packages/DimpleDivider/DimpleDivider.jsx'),
-                  path.resolve('src/components/Dividers/HairlineDivider/HairlineDivider.jsx'),
+                  path.resolve('packages/HairlineDivider/HairlineDivider.jsx'),
                 ]
               },
             },

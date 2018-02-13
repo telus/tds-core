@@ -5,7 +5,7 @@ import Reveal from '../../Animation/Reveal'
 import Translate from '../../Animation/Translate'
 import Text from '../../Typography/Text/Text'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
-import HairlineDivider from '../../Dividers/HairlineDivider/HairlineDivider'
+import HairlineDivider from '../../../../packages/HairlineDivider/HairlineDivider'
 import ExpandCollapse from '../ExpandCollapse'
 
 import mockMatchMedia from '../../../__mocks__/matchMedia'
