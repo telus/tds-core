@@ -194,7 +194,7 @@ module.exports = {
           name: 'Forms',
           components() {
             return compact([
-              path.resolve('src/components/Button/Button.jsx'),
+              path.resolve('packages/Button/Button.jsx'),
               path.resolve('src/components/Input/Input.jsx'),
               path.resolve('src/components/Checkbox/Checkbox.jsx'),
               path.resolve('src/components/Radio/Radio.jsx'),

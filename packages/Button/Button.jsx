@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { warn } from '../../utils/warn'
-import safeRest from '../../utils/safeRest'
+import { warn } from '../../src/utils/warn'
+import safeRest from '../../src/utils/safeRest'
 
-import BaseButton from './BaseButton/BaseButton'
+import BaseButton from '../../shared/BaseButton/BaseButton'
 
 const preventDisabling = ({ disabled, ...props }) => {
   if (disabled) {

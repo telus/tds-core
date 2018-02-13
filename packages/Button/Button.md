@@ -26,15 +26,14 @@ Specify the `variant` to create a button for secondary actions.
 
 ### Sizes
 
-All buttons are inline, with a minimum width of 180px for screens larger than 768px. They will occupy 100% width of their 
+All buttons are inline, with a minimum width of 180px for screens larger than 768px. They will occupy 100% width of their
 parent's width at the small viewport and below. Resize your browser window to see this behaviour.
-
 
 ### Placing buttons on dark backgrounds
 
 Use the `inverted` button on top of a dark background (TELUS approved colours or images).
 
-Use this variant with caution. There will be accessibility issues if the colour contrast of the image and the button 
+Use this variant with caution. There will be accessibility issues if the colour contrast of the image and the button
 text is too low in the hover state.
 
 ```jsx { "props": { "className": "docs_purple-block" } }

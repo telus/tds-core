@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../utils/safeRest'
-import joinClassNames from '../../../utils/joinClassNames'
+import safeRest from '../../src/utils/safeRest'
+import joinClassNames from '../../src/utils/joinClassNames'
 
-import FlexBox from '../../Flexbox/Flexbox'
-import Responsive from '../../Responsive/Responsive'
+import FlexBox from '../../src/components/Flexbox/Flexbox'
+import Responsive from '../../src/components/Responsive/Responsive'
 
 import styles from './BaseButton.modules.scss'
 
