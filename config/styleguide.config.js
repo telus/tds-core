@@ -133,9 +133,9 @@ module.exports = {
               name: 'Expand collapse',
               components() {
                 return [
-                  path.resolve('src/components/ExpandCollapse/ExpandCollapse.jsx'),
-                  path.resolve('src/components/ExpandCollapse/Accordion/Accordion.jsx'),
-                  path.resolve('src/components/ExpandCollapse/Panel/Panel.jsx'),
+                  path.resolve('packages/ExpandCollapse/ExpandCollapse.jsx'),
+                  path.resolve('packages/ExpandCollapse/Accordion/Accordion.jsx'),
+                  path.resolve('packages/ExpandCollapse/Panel/Panel.jsx'),
                 ]
               },
             },

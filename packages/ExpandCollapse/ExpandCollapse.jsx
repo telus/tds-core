@@ -4,7 +4,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 
 import arrayFrom from 'core-js/fn/array/from'
 
-import { isEqual } from '../../utils/sets'
+import { isEqual } from '../../src/utils/sets'
 
 import Panels from './Panels'
 import Panel from './Panel/Panel'

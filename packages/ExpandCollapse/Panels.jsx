@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import safeRest from '../../utils/safeRest'
+import safeRest from '../../src/utils/safeRest'
 
-import HairlineDivider from '../../../packages/HairlineDivider/HairlineDivider'
+import HairlineDivider from '../HairlineDivider/HairlineDivider'
 import PanelWrapper from './PanelWrapper/PanelWrapper'
 import Panel from './Panel/Panel'
 

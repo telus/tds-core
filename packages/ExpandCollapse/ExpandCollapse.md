@@ -8,7 +8,7 @@
           Connect to your phone's GPS to see real-time run stats.
         </Paragraph>
       </Box>
-      
+
       <Box between={2}>
         <Heading level="h4">Notifications</Heading>
         <Paragraph size="medium">
@@ -17,14 +17,14 @@
       </Box>
     </Box>
   </ExpandCollapse.Panel>
-  
+
   <ExpandCollapse.Panel id="specs" header="Specifications">
     <Box between={3}>
       <Box between={2}>
         <Heading level="h4">Display</Heading>
         <Paragraph size="medium">OLED</Paragraph>
       </Box>
-      
+
       <Box between={2}>
         <Heading level="h4">Battery Life</Heading>
         <Paragraph size="medium">Up to 5 days</Paragraph>
@@ -37,7 +37,7 @@
 ```
 <div>
   <Heading level="h2">Charges on this new bill</Heading>
-  
+
   <ExpandCollapse topDivider={false}>
     <ExpandCollapse.Panel
       id="monthly-plan"
@@ -49,13 +49,13 @@
           <br />
           <Text size="small">Includes Local Line, Call Display, and Voice Mail</Text>
         </Paragraph>
-        
+
         <Paragraph size="medium">
           E 9-1-1 Provincial Network Fee $0.50
         </Paragraph>
       </Box>
     </ExpandCollapse.Panel>
-    
+
     <ExpandCollapse.Panel
       id="additional-charges"
       header="Additional charges and credits" subtext="Jun 10-Jul 9" tertiaryText="$7.50"
@@ -66,7 +66,7 @@
           <br />
           <Text size="small">8 calls, 133:00 mins $7.50</Text>
         </Paragraph>
-        
+
         <Paragraph size="medium">
           LD Network Access Charge
           <br />
@@ -76,5 +76,4 @@
     </ExpandCollapse.Panel>
   </ExpandCollapse>
 </div>
-
 ```
