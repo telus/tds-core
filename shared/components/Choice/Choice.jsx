@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../utils/safeRest'
-import joinClassNames from '../../utils/joinClassNames'
-import generateId from '../../utils/generateId'
+import safeRest from '../../../src/utils/safeRest'
+import joinClassNames from '../../../src/utils/joinClassNames'
+import generateId from '../../../src/utils/generateId'
 
-import Text from '../Typography/Text/Text'
-import Paragraph from '../Typography/Paragraph/Paragraph'
+import Text from '../../../src/components/Typography/Text/Text'
+import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
 import Box from '../../../packages/Box/Box'
-import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
-import Flexbox from '../Flexbox/Flexbox'
-import InputFeedback from '../InputFeedback/InputFeedback'
+import ColoredTextProvider from '../../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'
+import Flexbox from '../../../src/components/Flexbox/Flexbox'
+import InputFeedback from '../../../src/components/InputFeedback/InputFeedback'
 
 import styles from './Choice.modules.scss'
-import messagingStyles from '../Messaging.modules.scss'
+import messagingStyles from '../../../src/components/Messaging.modules.scss'
 
 const getId = (id, name, value) => {
   if (id) {

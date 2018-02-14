@@ -1,4 +1,4 @@
-@import '../../scss/settings/colours';
+@import '../../../src/scss/settings/colours';
 
 .alignCenter {
   align-items: center;
@@ -9,7 +9,7 @@
 }
 
 .fakeInput {
-  composes: thin from '../Borders.modules.scss';
+  composes: thin from '../../../src/components/Borders.modules.scss';
 
   height: 20px;
   width: 20px;
@@ -31,12 +31,12 @@
 
 .fakeCheckbox {
   composes: fakeInput;
-  composes: rounded from '../Borders.modules.scss';
+  composes: rounded from '../../../src/components/Borders.modules.scss';
 }
 
 .fakeRadio {
   composes: fakeInput;
-  composes: circular from '../Borders.modules.scss';
+  composes: circular from '../../../src/components/Borders.modules.scss';
 }
 
 .unchecked {

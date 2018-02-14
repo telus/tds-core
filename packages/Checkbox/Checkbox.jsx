@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import DecorativeIcon from '../../src/components/Icons/DecorativeIcon/DecorativeIcon'
-import Choice from '../../src/components/Choice/Choice'
+import Choice from '../../shared/components/Choice/Choice'
 
 import styles from './Checkbox.modules.scss'
 
