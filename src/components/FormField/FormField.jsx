@@ -6,7 +6,7 @@ import safeRest from '../../utils/safeRest'
 import generateId from '../../utils/generateId'
 
 import Box from '../../../packages/Box/Box'
-import Flexbox from '../Flexbox/Flexbox'
+import Flexbox from '../../../shared/components/Flexbox/Flexbox'
 import Text from '../Typography/Text/Text'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 import InputFeedback from '../InputFeedback/InputFeedback'

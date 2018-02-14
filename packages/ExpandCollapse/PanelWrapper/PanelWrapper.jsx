@@ -10,7 +10,7 @@ import HairlineDivider from '../../HairlineDivider/HairlineDivider'
 import DimpleDivider from '../../DimpleDivider/DimpleDivider'
 import Reveal from '../../../shared/components/Animation/Reveal'
 import Translate from '../../../shared/components/Animation/Translate'
-import Flexbox from '../../../src/components/Flexbox/Flexbox'
+import Flexbox from '../../../shared/components/Flexbox/Flexbox'
 import Panel from '../Panel/Panel'
 import Responsive from '../../../src/components/Responsive/Responsive'
 

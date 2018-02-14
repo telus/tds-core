@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Heading from '../../../src/components/Typography/Heading/Heading'
-import Flexbox from '../../../src/components/Flexbox/Flexbox'
+import Flexbox from '../../../shared/components/Flexbox/Flexbox'
 import Box from '../../../packages/Box/Box'
 
 import styles from './SectionHeadingRenderer.modules.scss'
