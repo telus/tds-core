@@ -143,7 +143,7 @@ module.exports = {
               name: 'Dividers',
               components() {
                 return [
-                  path.resolve('src/components/Dividers/WaveDivider/WaveDivider.jsx'),
+                  path.resolve('packages/WaveDivider/WaveDivider.jsx'),
                   path.resolve('packages/DimpleDivider/DimpleDivider.jsx'),
                   path.resolve('packages/HairlineDivider/HairlineDivider.jsx'),
                 ]
