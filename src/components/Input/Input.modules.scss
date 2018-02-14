@@ -9,5 +9,5 @@
 
 .iconsPosition {
   composes: absolute centerVertically from '../Position.modules.scss';
-  composes: iconRight from '../FormField/FormField.modules.scss';
+  composes: iconRight from '../../../shared/components/FormField/FormField.modules.scss';
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Fade from '../../../shared/components/Animation/Fade'
-import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
+import Fade from '../Animation/Fade'
+import StandaloneIcon from '../../../src/components/Icons/StandaloneIcon/StandaloneIcon'
 
-import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
+import iconWrapperStyles from '../../../src/components/Icons/IconWrapper.modules.scss'
 
 const FeedbackIcon = ({ showIcon, feedback }) => (
   <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>

@@ -2,18 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import safeRest from '../../utils/safeRest'
-import generateId from '../../utils/generateId'
+import safeRest from '../../../src/utils/safeRest'
+import generateId from '../../../src/utils/generateId'
 
 import Box from '../../../packages/Box/Box'
-import Flexbox from '../../../shared/components/Flexbox/Flexbox'
-import Text from '../Typography/Text/Text'
-import Paragraph from '../Typography/Paragraph/Paragraph'
-import InputFeedback from '../InputFeedback/InputFeedback'
-import Tooltip from '../Tooltip/Tooltip'
+import Flexbox from '../Flexbox/Flexbox'
+import Text from '../../../src/components/Typography/Text/Text'
+import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
+import InputFeedback from '../../../src/components/InputFeedback/InputFeedback'
+import Tooltip from '../../../src/components/Tooltip/Tooltip'
 
 import styles from './FormField.modules.scss'
-import positionStyles from '../Position.modules.scss'
+import positionStyles from '../../../src/components/Position.modules.scss'
 
 const getClassName = (feedback, focus, disabled) => {
   if (disabled) {

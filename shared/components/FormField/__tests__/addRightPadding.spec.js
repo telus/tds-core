@@ -1,4 +1,4 @@
-import addRightPadding  from '../addRightPadding'
+import addRightPadding from '../addRightPadding'
 
 describe('icon positioning calculations to prevent text overlapping', () => {
   it('does not add padding when there are no visible icons', () => {

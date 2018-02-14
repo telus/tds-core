@@ -1,5 +1,5 @@
-@import '../../scss/settings/colours';
-@import '../../scss/settings/typography';
+@import '../../../src/scss/settings/colours';
+@import '../../../src/scss/settings/typography';
 
 /* LABEL */
 
@@ -18,10 +18,10 @@
   // This vertical padding fixes an IE11 bug that was causing the input value to jump slightly and get cut off.
   composes: verticalPadding-2 horizontalPadding-3 from '../../../packages/Box/Box.modules.scss';
 
-  composes: thin rounded from '../Borders.modules.scss';
+  composes: thin rounded from '../../../src/components/Borders.modules.scss';
 
-  composes: font from '../Forms.modules.scss';
-  composes: medium mediumFont color from '../Typography/Text/Text.modules.scss';
+  composes: font from '../../../src/components/Forms.modules.scss';
+  composes: medium mediumFont color from '../../../src/components/Typography/Text/Text.modules.scss';
 
   outline: 0;
 

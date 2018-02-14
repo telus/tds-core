@@ -5,10 +5,10 @@ import { childrenOfType } from 'airbnb-prop-types'
 import joinClassNames from '../../utils/joinClassNames'
 
 import Tooltip from '../Tooltip/Tooltip'
-import FormField from '../FormField/FormField'
-import FeedbackIcon from '../FormField/FeedbackIcon'
+import FormField from '../../../shared/components/FormField/FormField'
+import FeedbackIcon from '../../../shared/components/FormField/FeedbackIcon'
 
-import addRightPadding from '../FormField/addRightPadding'
+import addRightPadding from '../../../shared/components/FormField/addRightPadding'
 
 import styles from './TextArea.modules.scss'
 import positionStyles from '../Position.modules.scss'
