@@ -1,3 +1,17 @@
+#### 0.34.3 (2018-02-14)
+
+##### Bug Fixes
+
+* **select:**
+  * Remove background-color: transparent because it is not doing anything ([78058a8e](https://github.com/telusdigital/tds/commit/78058a8ed7cd690509db84af7990732978361f3b))
+  * Add pointer-events attribute ([a594a905](https://github.com/telusdigital/tds/commit/a594a905a189f3720335cbbd0a9754ad87aed971))
+  * Make chevron visible and clickable ([bec4ac06](https://github.com/telusdigital/tds/commit/bec4ac06e1bd024b40dd0dae9e12f38eadd9a7a5))
+* **responsive:** use defaultmatches for all uses (#471) (#461) ([7d305eb1](https://github.com/telusdigital/tds/commit/7d305eb14e30a4fc6c85f036423241d0d773043f))
+
+##### Other Changes
+
+* **expand-collapse:** Fix expand collapse ssr test ([bc1f9bcc](https://github.com/telusdigital/tds/commit/bc1f9bccdb8efeae46d079e95353a2c142d7a916))
+
 #### 0.34.0 (2018-01-17)
 
 ##### Build System / Dependencies
