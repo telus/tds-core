@@ -12,7 +12,7 @@ describe('ExpandCollapse server side rendering', () => {
     const expandCollapse = render(
       <ExpandCollapse>
         <ExpandCollapse.Panel id="ssr" header="Yes" tertiaryText="Is that so?">
-          Here's what's inside
+          Heres whats inside
         </ExpandCollapse.Panel>
       </ExpandCollapse>
     )
