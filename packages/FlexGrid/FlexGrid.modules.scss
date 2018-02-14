@@ -1,6 +1,12 @@
-@import '../../scss/utility/responsive';
+@import '../../src/scss/utility/responsive';
 
-$max-widths: (xs: auto, small: 576px, medium: 768px, large: 992px, xl: 1200px);
+$max-widths: (
+  xs: auto,
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  xl: 1200px
+);
 
 .flexGrid {
   padding: 0;

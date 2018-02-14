@@ -4,7 +4,7 @@ import { Grid } from 'react-flexbox-grid'
 
 import FlexGrid from '../FlexGrid'
 
-import mockMatchMedia from '../../../__mocks__/matchMedia'
+import mockMatchMedia from '../../../src/__mocks__/matchMedia'
 
 describe('FlexGrid', () => {
   const doMount = (props = {}) => {

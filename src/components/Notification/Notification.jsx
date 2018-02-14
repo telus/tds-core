@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../utils/safeRest'
 
-import FlexGrid from '../../components/FlexGrid/FlexGrid'
+import FlexGrid from '../../../packages/FlexGrid/FlexGrid'
 import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'

@@ -91,9 +91,9 @@ module.exports = {
               name: 'Grid',
               components() {
                 return [
-                  path.resolve('src/components/FlexGrid/FlexGrid.jsx'),
-                  path.resolve('src/components/FlexGrid/Row/Row.jsx'),
-                  path.resolve('src/components/FlexGrid/Col/Col.jsx'),
+                  path.resolve('packages/FlexGrid/FlexGrid.jsx'),
+                  path.resolve('packages/FlexGrid/Row/Row.jsx'),
+                  path.resolve('packages/FlexGrid/Col/Col.jsx'),
                 ]
               },
             },

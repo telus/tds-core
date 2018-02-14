@@ -11,7 +11,7 @@ export { default as DecorativeIcon } from './components/Icons/DecorativeIcon/Dec
 export { default as DimpleDivider } from '../packages/DimpleDivider/DimpleDivider'
 export { default as DisplayHeading } from './components/Typography/DisplayHeading/DisplayHeading'
 export { default as ExpandCollapse } from './components/ExpandCollapse/ExpandCollapse'
-export { default as FlexGrid } from './components/FlexGrid/FlexGrid'
+export { default as FlexGrid } from '../packages/FlexGrid/FlexGrid'
 export { default as HairlineDivider } from '../packages/HairlineDivider/HairlineDivider'
 export { default as Heading } from './components/Typography/Heading/Heading'
 export { default as Image } from './components/Image/Image'

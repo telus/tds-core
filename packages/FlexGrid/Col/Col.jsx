@@ -4,8 +4,8 @@ import { Subscriber } from 'react-broadcast'
 
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 
-import joinClassNames from '../../../utils/joinClassNames'
-import safeRest from '../../../utils/safeRest'
+import joinClassNames from '../../../src/utils/joinClassNames'
+import safeRest from '../../../src/utils/safeRest'
 import styles from './Col.modules.scss'
 
 const removeProps = ({

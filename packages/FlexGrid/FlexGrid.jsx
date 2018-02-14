@@ -6,8 +6,9 @@ import { Grid } from 'react-flexbox-grid'
 import Col from './Col/Col'
 import Row from './Row/Row'
 
-import safeRest from '../../utils/safeRest'
-import joinClassNames from '../../utils/joinClassNames'
+import safeRest from '../../src/utils/safeRest'
+import joinClassNames from '../../src/utils/joinClassNames'
+
 import styles from './FlexGrid.modules.scss'
 
 /**
