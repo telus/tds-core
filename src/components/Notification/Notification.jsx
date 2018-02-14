@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import safeRest from '../../utils/safeRest'
 
 import FlexGrid from '../../../packages/FlexGrid/FlexGrid'
-import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../../packages/DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../Typography/Paragraph/Paragraph'
 import Box from '../../../packages/Box/Box'

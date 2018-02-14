@@ -4,7 +4,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 
 import joinClassNames from '../../utils/joinClassNames'
 
-import DecorativeIcon from '../Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../../packages/DecorativeIcon/DecorativeIcon'
 import Tooltip from '../Tooltip/Tooltip'
 import FormField from '../../../shared/components/FormField/FormField'
 import FeedbackIcon from '../../../shared/components/FormField/FeedbackIcon'
@@ -13,7 +13,7 @@ import Box from '../../../packages/Box/Box'
 import addRightPadding from '../../../shared/components/FormField/addRightPadding'
 
 import styles from './Select.modules.scss'
-import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
+import iconWrapperStyles from '../IconWrapper.modules.scss'
 
 /**
  * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.33.0</span>

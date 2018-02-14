@@ -3,7 +3,7 @@ import { mount, render } from 'enzyme'
 
 import Text from '../../../src/components/Typography/Text/Text'
 import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
-import DecorativeIcon from '../../../src/components/Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 import Checkbox from '../Checkbox'
 import InputFeedback from '../../../src/components/InputFeedback/InputFeedback'
 import ColoredTextProvider from '../../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'

@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../utils/safeRest'
-import joinClassNames from '../../../utils/joinClassNames'
-import capitalize from '../../../utils/capitalize'
+import safeRest from '../../../src/utils/safeRest'
+import joinClassNames from '../../../src/utils/joinClassNames'
+import capitalize from '../../../src/utils/capitalize'
 
 import styles from './Icon.modules.scss'
 
@@ -14,9 +14,7 @@ const Icon = ({ symbol, variant, size, ...rest }) => {
     size && styles[`size${size}`]
   )
 
-  return (
-    <i {...safeRest(rest)} className={classes} />
-  )
+  return <i {...safeRest(rest)} className={classes} />
 }
 
 Icon.propTypes = {
@@ -34,20 +32,15 @@ Icon.propTypes = {
     'plus',
     'questionMarkCircle',
     'spyglass',
-    'times'
+    'times',
   ]).isRequired,
-  variant: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'inverted',
-    'error'
-  ]),
-  size: PropTypes.oneOf([16, 24, 48])
+  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted', 'error']),
+  size: PropTypes.oneOf([16, 24, 48]),
 }
 
 Icon.defaultProps = {
   variant: undefined,
-  size: 24
+  size: 24,
 }
 
 export default Icon

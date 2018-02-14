@@ -5,12 +5,12 @@ import safeRest from '../../utils/safeRest'
 import generateId from '../../utils/generateId'
 import closest from './element-closest'
 
-import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
+import StandaloneIcon from '../../../packages/StandaloneIcon/StandaloneIcon'
 import Responsive from '../Responsive/Responsive'
 
 import Bubble from './Bubble'
 
-import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
+import iconWrapperStyles from '../IconWrapper.modules.scss'
 
 const getTriggerA11yText = connectedFieldLabel => {
   if (!connectedFieldLabel) {

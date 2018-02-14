@@ -172,11 +172,11 @@ module.exports = {
         },
         {
           name: 'Icons',
-          content: path.resolve('src/components/Icons/icons.md'),
+          content: path.resolve('docs/icons.md'),
           components() {
             return [
-              path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx'),
-              path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx'),
+              path.resolve('packages/DecorativeIcon/DecorativeIcon.jsx'),
+              path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
             ]
           },
         },

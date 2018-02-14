@@ -2,7 +2,7 @@ import React from 'react'
 import { mount, render } from 'enzyme'
 
 import Text from '../../Typography/Text/Text'
-import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../../../packages/DecorativeIcon/DecorativeIcon'
 import Radio from '../Radio'
 import InputFeedback from '../../InputFeedback/InputFeedback'
 import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'

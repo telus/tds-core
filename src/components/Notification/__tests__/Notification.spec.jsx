@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../../../packages/DecorativeIcon/DecorativeIcon'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 
 import Notification from '../Notification'

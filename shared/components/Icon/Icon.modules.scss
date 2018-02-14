@@ -1,17 +1,4 @@
-@import '../../../scss/settings/colours';
-
-@mixin core-icon($name: null) {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import '../../../src/scss/settings/colours';
 
 .primary {
   color: $color-icon-primary;
@@ -42,7 +29,17 @@
 }
 
 .icon {
-  @include core-icon;
+  font-family: 'TELUS Core Icons';
+
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   line-height: 1;
   vertical-align: middle;

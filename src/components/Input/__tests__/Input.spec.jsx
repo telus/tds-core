@@ -1,13 +1,13 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
+import StandaloneIcon from '../../../../packages/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../../../shared/components/Animation/Fade'
 import Input from '../Input'
 import InputFeedback from '../../InputFeedback/InputFeedback'
-import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../../../packages/DecorativeIcon/DecorativeIcon'
 
 describe('Input', () => {
   const defaultProps = {

@@ -1,12 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-
 import Icon from '../Icon'
 
 describe('Icon', () => {
   const defaultProps = {
-    symbol: 'spyglass'
+    symbol: 'spyglass',
   }
   const doShallow = (props = {}) => shallow(<Icon {...defaultProps} {...props} />)
 

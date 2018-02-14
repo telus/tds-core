@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Icon from '../Icon/Icon'
+import Icon from '../../shared/components/Icon/Icon'
 
 /**
  * An icon used for visual aesthetics only.

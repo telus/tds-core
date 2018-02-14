@@ -4,7 +4,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 
 import Box from '../../Box/Box'
 import Clickable from '../../../shared/components/Clickable/Clickable'
-import DecorativeIcon from '../../../src/components/Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 import Text from '../../../src/components/Typography/Text/Text'
 import HairlineDivider from '../../HairlineDivider/HairlineDivider'
 import DimpleDivider from '../../DimpleDivider/DimpleDivider'

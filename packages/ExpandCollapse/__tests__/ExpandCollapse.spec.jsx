@@ -4,7 +4,7 @@ import { shallow, mount } from 'enzyme'
 import Reveal from '../../../shared/components/Animation/Reveal'
 import Translate from '../../../shared/components/Animation/Translate'
 import Text from '../../../src/components/Typography/Text/Text'
-import DecorativeIcon from '../../../src/components/Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 import HairlineDivider from '../../HairlineDivider/HairlineDivider'
 import ExpandCollapse from '../ExpandCollapse'
 

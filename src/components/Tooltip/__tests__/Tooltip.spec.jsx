@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, render, mount } from 'enzyme'
 
-import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
+import StandaloneIcon from '../../../../packages/StandaloneIcon/StandaloneIcon'
 import Text from '../../Typography/Text/Text'
 
 import Input from '../../Input/Input'

@@ -4,7 +4,7 @@ import { shallow, render } from 'enzyme'
 import { warn } from '../../../../utils/warn'
 
 import ChevronLink from '../ChevronLink'
-import DecorativeIcon from '../../../Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../../../../packages/DecorativeIcon/DecorativeIcon'
 
 jest.mock('../../../../utils/warn')
 

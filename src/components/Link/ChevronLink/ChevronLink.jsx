@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import DecorativeIcon from '../../../components/Icons/DecorativeIcon/DecorativeIcon'
+import DecorativeIcon from '../../../../packages/DecorativeIcon/DecorativeIcon'
 import safeRest from '../../../utils/safeRest'
 import { warn } from '../../../utils/warn'
 

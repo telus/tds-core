@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../utils/safeRest'
+import safeRest from '../../src/utils/safeRest'
 
-import Icon from '../Icon/Icon'
-import Clickable from '../../../../shared/components/Clickable/Clickable'
+import Icon from '../../shared/components/Icon/Icon'
+import Clickable from '../../shared/components/Clickable/Clickable'
 
 const mobileDeviceTapArea = 32 // https://www.w3.org/TR/mobile-accessibility-mapping/#touch-target-size-and-spacing
 const touchAreaStyles = iconSize => {
