@@ -27,7 +27,7 @@
     "lint": "yarn lint:js && yarn lint:scss && yarn lint:ec",
     "packup": "yarn build-package && yarn pack",
     "precommit": "pretty-quick --staged && lint-staged && yarn test",
-    "prepush": "yarn test && yarn build-package && yarn build-styleguide",
+    "prepush": "yarn test && yarn build-package && yarn build-styleguide && yarn build-gitbook",
     "release:changelog": "changelog",
     "release": "scripts/release.sh",
     "scaffold": "node scripts/scaffold.js",
