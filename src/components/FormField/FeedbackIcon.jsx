@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Fade from '../Animation/Fade'
+import Fade from '../../../shared/components/Animation/Fade'
 import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
@@ -34,7 +34,7 @@ FeedbackIcon.propTypes = {
   feedback: PropTypes.oneOf(['success', 'error']),
 }
 FeedbackIcon.defaultProps = {
-  feedback: undefined
+  feedback: undefined,
 }
 
 export default FeedbackIcon

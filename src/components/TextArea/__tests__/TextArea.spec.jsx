@@ -5,7 +5,7 @@ import StandaloneIcon from '../../Icons/StandaloneIcon/StandaloneIcon'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
-import Fade from '../../Animation/Fade'
+import Fade from '../../../../shared/components/Animation/Fade'
 import TextArea from '../TextArea'
 import InputFeedback from '../../InputFeedback/InputFeedback'
 

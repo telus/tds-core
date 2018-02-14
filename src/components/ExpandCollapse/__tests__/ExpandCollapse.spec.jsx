@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import Reveal from '../../Animation/Reveal'
-import Translate from '../../Animation/Translate'
+import Reveal from '../../../../shared/components/Animation/Reveal'
+import Translate from '../../../../shared/components/Animation/Translate'
 import Text from '../../Typography/Text/Text'
 import DecorativeIcon from '../../Icons/DecorativeIcon/DecorativeIcon'
 import HairlineDivider from '../../../../packages/HairlineDivider/HairlineDivider'

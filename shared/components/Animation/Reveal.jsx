@@ -10,7 +10,7 @@ const defaultStyle = timeout => ({
 
 const transitionStyles = height => {
   const styles = {
-    height: `${height}px`
+    height: `${height}px`,
   }
 
   return {
