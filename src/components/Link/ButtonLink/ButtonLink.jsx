@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { warn } from '../../../utils/warn'
 import safeRest from '../../../utils/safeRest'
 
-import BaseButton from '../../../../shared/BaseButton/BaseButton'
+import BaseButton from '../../../../shared/components/BaseButton/BaseButton'
 
 import styles from './ButtonLink.modules.scss'
 
