@@ -163,7 +163,7 @@ module.exports = {
               path.resolve('packages/Paragraph/Paragraph.jsx'),
               path.resolve('src/components/Typography/Text/Text.jsx'),
               path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
-              path.resolve('src/components/Typography/Strong/Strong.jsx'),
+              path.resolve('packages/Strong/Strong.jsx'),
               path.resolve('packages/Small/Small.jsx'),
             ]
           },

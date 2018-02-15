@@ -1,13 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-
 import Strong from '../Strong'
 
 describe('Strong', () => {
-  const doShallow = props => (
-    shallow(<Strong {...props}>Some content</Strong>)
-  )
+  const doShallow = props => shallow(<Strong {...props}>Some content</Strong>)
 
   it('renders', () => {
     const strong = doShallow()

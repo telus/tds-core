@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../utils/safeRest'
+import safeRest from '../../src/utils/safeRest'
 
-import styles from '../Text/Text.modules.scss'
+import styles from '../../src/components/Typography/Text/Text.modules.scss'
 
 /**
-  * Give portions of a sentence added importance.
-  */
-const Strong = ({children, ...rest}) => (
+ * Give portions of a sentence added importance.
+ */
+const Strong = ({ children, ...rest }) => (
   <strong {...safeRest(rest)} className={styles.boldFont}>
     {children}
   </strong>

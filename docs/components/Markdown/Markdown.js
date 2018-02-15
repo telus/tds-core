@@ -11,7 +11,7 @@ import { styles as paraStyles } from 'react-styleguidist/lib/rsg-components/Para
 
 import Link from '../../../packages/Link/Link'
 import Text from '../../../src/components/Typography/Text/Text'
-import Strong from '../../../src/components/Typography/Strong/Strong'
+import Strong from '../../../packages/Strong/Strong'
 import MarkdownHeading from '../MarkdownHeading/MarkdownHeading'
 import MarkdownParagraph from '../MarkdownParagraph/MarkdownParagraph'
 import MarkdownUnorderedList from '../MarkdownUnorderedList/MarkdownUnorderedList'
