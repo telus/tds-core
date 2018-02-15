@@ -40,10 +40,10 @@ module.exports = {
     const namespacedComponents = {
       FlexGrid: 'FlexGrid',
       StepTracker: 'Steps',
-      'components/ExpandCollapse/Panel': 'ExpandCollapse',
+      'ExpandCollapse/Panel': 'ExpandCollapse',
       'Typography/Text': 'Text',
       DisplayHeading: 'DisplayHeading',
-      'Typography/Heading': 'Heading',
+      Heading: 'Heading',
     }
 
     const componentDirectory = path.dirname(componentPath)
@@ -158,8 +158,8 @@ module.exports = {
             return [
               path.resolve('packages/DisplayHeading/DisplayHeading.jsx'),
               path.resolve('packages/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'),
-              path.resolve('src/components/Typography/Heading/Heading.jsx'),
-              path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx'),
+              path.resolve('packages/Heading/Heading.jsx'),
+              path.resolve('packages/Heading/HeadingSup/HeadingSup.jsx'),
               path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
               path.resolve('src/components/Typography/Text/Text.jsx'),
               path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),

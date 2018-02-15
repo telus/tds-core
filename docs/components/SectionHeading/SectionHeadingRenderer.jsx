@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Heading from '../../../src/components/Typography/Heading/Heading'
+import Heading from '../../../packages/Heading/Heading'
 import Flexbox from '../../../shared/components/Flexbox/Flexbox'
 import Box from '../../../packages/Box/Box'
 

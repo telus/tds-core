@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import safeRest from '../../../../utils/safeRest'
+import safeRest from '../../../src/utils/safeRest'
 
 import styles from '../Heading.modules.scss'
 
@@ -9,7 +9,7 @@ import styles from '../Heading.modules.scss'
  *
  * _This component can only be accessed as a name-spaced component: `Heading.Sup`._
  */
-const HeadingSup = ({children, ...rest}) => (
+const HeadingSup = ({ children, ...rest }) => (
   <sup {...safeRest(rest)} className={styles.sup}>
     {children}
   </sup>

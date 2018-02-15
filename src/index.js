@@ -13,7 +13,7 @@ export { default as DisplayHeading } from '../packages/DisplayHeading/DisplayHea
 export { default as ExpandCollapse } from '../packages/ExpandCollapse/ExpandCollapse'
 export { default as FlexGrid } from '../packages/FlexGrid/FlexGrid'
 export { default as HairlineDivider } from '../packages/HairlineDivider/HairlineDivider'
-export { default as Heading } from './components/Typography/Heading/Heading'
+export { default as Heading } from '../packages/Heading/Heading'
 export { default as Image } from '../packages/Image/Image'
 export { default as Input } from '../packages/Input/Input'
 export { default as InputFeedback } from '../packages/InputFeedback/InputFeedback'

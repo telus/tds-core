@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 
-import mockMatchMedia from '../../../../__mocks__/matchMedia'
+import mockMatchMedia from '../../../src/__mocks__/matchMedia'
 
 import Heading from '../Heading'
 

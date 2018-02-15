@@ -1,13 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-
 import HeadingSup from '../HeadingSup'
 
 describe('HeadingSup', () => {
-  const doShallow = props => (
-    shallow(<HeadingSup {...props}>Some content</HeadingSup>)
-  )
+  const doShallow = props => shallow(<HeadingSup {...props}>Some content</HeadingSup>)
 
   it('renders', () => {
     const headingSup = doShallow()

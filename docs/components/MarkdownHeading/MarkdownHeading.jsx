@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Box from '../../../packages/Box/Box'
-import Heading from '../../../src/components/Typography/Heading/Heading'
+import Heading from '../../../packages/Heading/Heading'
 
 const MarkdownHeading = ({ level, children }) => (
   <Box below={3}>
