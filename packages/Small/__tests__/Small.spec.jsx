@@ -4,9 +4,7 @@ import { shallow } from 'enzyme'
 import Small from '../Small'
 
 describe('Small', () => {
-  const doShallow = props => (
-    shallow(<Small {...props}>Some content</Small>)
-  )
+  const doShallow = props => shallow(<Small {...props}>Some content</Small>)
 
   it('renders', () => {
     const small = doShallow()

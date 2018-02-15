@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../utils/safeRest'
+import safeRest from '../../src/utils/safeRest'
 
-import styles from '../Text/Text.modules.scss'
+import styles from '../../src/components/Typography/Text/Text.modules.scss'
 
 /**
  * Small print, such as copyright and legal text.
  */
-const Small = ({children, ...rest}) => (
+const Small = ({ children, ...rest }) => (
   <small {...safeRest(rest)} className={`${styles.small} ${styles.smallFont}`}>
     {children}
   </small>

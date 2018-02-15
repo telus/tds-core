@@ -164,7 +164,7 @@ module.exports = {
               path.resolve('src/components/Typography/Text/Text.jsx'),
               path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
               path.resolve('src/components/Typography/Strong/Strong.jsx'),
-              path.resolve('src/components/Typography/Small/Small.jsx'),
+              path.resolve('packages/Small/Small.jsx'),
             ]
           },
         },
