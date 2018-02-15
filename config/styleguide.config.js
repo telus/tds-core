@@ -153,7 +153,7 @@ module.exports = {
         },
         {
           name: 'Typography',
-          content: path.resolve('src/components/Typography/Typography.md'),
+          content: path.resolve('docs/Typography.md'),
           components() {
             return [
               path.resolve('packages/DisplayHeading/DisplayHeading.jsx'),
@@ -161,8 +161,8 @@ module.exports = {
               path.resolve('packages/Heading/Heading.jsx'),
               path.resolve('packages/Heading/HeadingSup/HeadingSup.jsx'),
               path.resolve('packages/Paragraph/Paragraph.jsx'),
-              path.resolve('src/components/Typography/Text/Text.jsx'),
-              path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
+              path.resolve('packages/Text/Text.jsx'),
+              path.resolve('packages/Text/TextSup/TextSup.jsx'),
               path.resolve('packages/Strong/Strong.jsx'),
               path.resolve('packages/Small/Small.jsx'),
             ]

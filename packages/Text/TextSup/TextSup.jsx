@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../../utils/safeRest'
+import safeRest from '../../../src/utils/safeRest'
 
 import styles from '../Text.modules.scss'
 
@@ -10,7 +10,7 @@ import styles from '../Text.modules.scss'
  *
  * _This component can only be accessed as a name-spaced component: `Text.Sup`._
  */
-const TextSup = ({children, ...rest}) => (
+const TextSup = ({ children, ...rest }) => (
   <sup {...safeRest(rest)} className={styles.sup}>
     {children}
   </sup>

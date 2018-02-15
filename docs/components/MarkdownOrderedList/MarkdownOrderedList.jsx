@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import Box from '../../../packages/Box/Box'
 import OrderedList from '../../../packages/OrderedList/OrderedList'
-import Text from '../../../src/components/Typography/Text/Text'
+import Text from '../../../packages/Text/Text'
 
 const MarkdownOrderedList = ({ children }) => (
   <Box below={3}>

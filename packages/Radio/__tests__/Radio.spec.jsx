@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 
-import Text from '../../../src/components/Typography/Text/Text'
+import Text from '../../Text/Text'
 import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 import Radio from '../Radio'
 import InputFeedback from '../../InputFeedback/InputFeedback'

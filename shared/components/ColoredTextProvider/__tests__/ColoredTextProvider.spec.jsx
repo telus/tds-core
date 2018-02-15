@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 
 import Paragraph from '../../../../packages/Paragraph/Paragraph'
 import Link from '../../../../packages/Link/Link'
-import Text from '../../../../src/components/Typography/Text/Text'
+import Text from '../../../../packages/Text/Text'
 import ColoredTextProvider from '../ColoredTextProvider'
 
 describe('ColoredTextProvider', () => {

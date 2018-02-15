@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow, render, mount } from 'enzyme'
 
 import StandaloneIcon from '../../StandaloneIcon/StandaloneIcon'
-import Text from '../../../src/components/Typography/Text/Text'
+import Text from '../../Text/Text'
 
 import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'

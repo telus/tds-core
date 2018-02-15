@@ -5,7 +5,7 @@ import safeRest from '../../../src/utils/safeRest'
 import joinClassNames from '../../../src/utils/joinClassNames'
 import generateId from '../../../src/utils/generateId'
 
-import Text from '../../../src/components/Typography/Text/Text'
+import Text from '../../../packages/Text/Text'
 import Paragraph from '../../../packages/Paragraph/Paragraph'
 import Box from '../../../packages/Box/Box'
 import ColoredTextProvider from '../ColoredTextProvider/ColoredTextProvider'

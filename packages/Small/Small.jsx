@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../src/utils/safeRest'
 
-import styles from '../../src/components/Typography/Text/Text.modules.scss'
+import styles from '../Text/Text.modules.scss'
 
 /**
  * Small print, such as copyright and legal text.

@@ -1,13 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-
 import TextSup from '../TextSup'
 
 describe('TextSup', () => {
-  const doShallow = props => (
-    shallow(<TextSup {...props}>Some content</TextSup>)
-  )
+  const doShallow = props => shallow(<TextSup {...props}>Some content</TextSup>)
 
   it('renders', () => {
     const textSup = doShallow()

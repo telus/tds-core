@@ -10,7 +10,7 @@ import Styled from 'react-styleguidist/lib/rsg-components/Styled'
 import { styles as paraStyles } from 'react-styleguidist/lib/rsg-components/Para'
 
 import Link from '../../../packages/Link/Link'
-import Text from '../../../src/components/Typography/Text/Text'
+import Text from '../../../packages/Text/Text'
 import Strong from '../../../packages/Strong/Strong'
 import MarkdownHeading from '../MarkdownHeading/MarkdownHeading'
 import MarkdownParagraph from '../MarkdownParagraph/MarkdownParagraph'

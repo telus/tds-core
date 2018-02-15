@@ -3,7 +3,7 @@
 @import '../../src/scss/utility/responsive';
 
 .sup {
-  composes: baseSupSubScripts from '../../src/components/Typography/Text/Text.modules.scss';
+  composes: baseSupSubScripts from '../Text/Text.modules.scss';
 }
 
 .base {

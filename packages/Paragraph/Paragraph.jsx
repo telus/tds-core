@@ -7,7 +7,7 @@ import joinClassNames from '../../src/utils/joinClassNames'
 import typographyStyles from '../../src/components/Typography.modules.scss'
 import spacingStyles from '../../src/components/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
-import textStyles from '../../src/components/Typography/Text/Text.modules.scss'
+import textStyles from '../Text/Text.modules.scss'
 
 /**
  * Block text as an HTML `<p>` element.

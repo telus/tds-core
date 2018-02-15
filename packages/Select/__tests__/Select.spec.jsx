@@ -2,7 +2,7 @@ import React from 'react'
 import { render, mount } from 'enzyme'
 
 import StandaloneIcon from '../../StandaloneIcon/StandaloneIcon'
-import Text from '../../../src/components/Typography/Text/Text'
+import Text from '../../Text/Text'
 import Paragraph from '../../Paragraph/Paragraph'
 import Fade from '../../../shared/components/Animation/Fade'
 import Select from '../Select'
