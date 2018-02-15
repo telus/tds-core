@@ -1,4 +1,4 @@
-@import '../../scss/settings/colours';
+@import '../../src/scss/settings/colours';
 
 .disabled {
   border-color: $color-gainsboro;
@@ -18,7 +18,7 @@
 }
 
 .inner {
-  composes: circular from '../Borders.modules.scss';
+  composes: circular from '../../src/components/Borders.modules.scss';
 
   height: 12px;
   width: 12px;

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Choice from '../../../shared/components/Choice/Choice'
+import Choice from '../../shared/components/Choice/Choice'
 
 import styles from './Radio.modules.scss'
 
