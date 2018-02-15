@@ -42,7 +42,7 @@ module.exports = {
       StepTracker: 'Steps',
       'components/ExpandCollapse/Panel': 'ExpandCollapse',
       'Typography/Text': 'Text',
-      'Typography/DisplayHeading': 'DisplayHeading',
+      DisplayHeading: 'DisplayHeading',
       'Typography/Heading': 'Heading',
     }
 
@@ -156,10 +156,8 @@ module.exports = {
           content: path.resolve('src/components/Typography/Typography.md'),
           components() {
             return [
-              path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
-              path.resolve(
-                'src/components/Typography/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'
-              ),
+              path.resolve('packages/DisplayHeading/DisplayHeading.jsx'),
+              path.resolve('packages/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'),
               path.resolve('src/components/Typography/Heading/Heading.jsx'),
               path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx'),
               path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),

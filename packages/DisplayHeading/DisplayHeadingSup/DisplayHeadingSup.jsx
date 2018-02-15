@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import safeRest from '../../../../utils/safeRest'
+import safeRest from '../../../src/utils/safeRest'
 
 import styles from '../DisplayHeading.modules.scss'
 
@@ -9,7 +9,7 @@ import styles from '../DisplayHeading.modules.scss'
  *
  * _This component can only be accessed as a name-spaced component: `DisplayHeading.Sup`._
  */
-const DisplayHeadingSup = ({children, ...rest}) => (
+const DisplayHeadingSup = ({ children, ...rest }) => (
   <sup {...safeRest(rest)} className={styles.sup}>
     {children}
   </sup>

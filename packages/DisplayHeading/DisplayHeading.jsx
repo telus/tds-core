@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../utils/safeRest'
-import joinClassNames from '../../../utils/joinClassNames'
+import safeRest from '../../src/utils/safeRest'
+import joinClassNames from '../../src/utils/joinClassNames'
 
-import Responsive from '../../../../packages/Responsive/Responsive'
+import Responsive from '../Responsive/Responsive'
 import DisplayHeadingSup from './DisplayHeadingSup/DisplayHeadingSup'
 
 import styles from './DisplayHeading.modules.scss'

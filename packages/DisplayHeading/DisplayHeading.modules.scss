@@ -1,14 +1,14 @@
-@import '../../../scss/settings/colours';
-@import '../../../scss/settings/typography';
-@import '../../../scss/utility/responsive';
+@import '../../src/scss/settings/colours';
+@import '../../src/scss/settings/typography';
+@import '../../src/scss/utility/responsive';
 
 .sup {
-  composes: baseSupSubScripts from '../Text/Text.modules.scss';
+  composes: baseSupSubScripts from '../../src/components/Typography/Text/Text.modules.scss';
 }
 
 .base {
-  composes: noSpacing from '../../Spacing.modules.scss';
-  composes: wordBreak from '../../Typography.modules.scss';
+  composes: noSpacing from '../../src/components/Spacing.modules.scss';
+  composes: wordBreak from '../../src/components/Typography.modules.scss';
 
   @include helvetica-neue-thin-35;
 }

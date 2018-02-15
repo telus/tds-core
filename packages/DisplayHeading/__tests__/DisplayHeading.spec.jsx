@@ -3,7 +3,7 @@ import { mount, render } from 'enzyme'
 
 import DisplayHeading from '../DisplayHeading'
 
-import mockMatchMedia from '../../../../__mocks__/matchMedia'
+import mockMatchMedia from '../../../src/__mocks__/matchMedia'
 
 describe('DisplayHeading', () => {
   const doMount = (props = {}) => {

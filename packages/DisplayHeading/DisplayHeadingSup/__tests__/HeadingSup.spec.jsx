@@ -1,13 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-
 import DisplayHeadingSup from '../DisplayHeadingSup'
 
 describe('DisplayHeadingSup', () => {
-  const doShallow = props => (
-    shallow(<DisplayHeadingSup {...props}>Some content</DisplayHeadingSup>)
-  )
+  const doShallow = props => shallow(<DisplayHeadingSup {...props}>Some content</DisplayHeadingSup>)
 
   it('renders', () => {
     const displayHeadingSup = doShallow()
@@ -28,7 +25,10 @@ describe('DisplayHeadingSup', () => {
   })
 
   it('does not allow custom CSS', () => {
-    const displayHeadingSup = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const displayHeadingSup = doShallow({
+      className: 'my-custom-class',
+      style: { color: 'hotpink' },
+    })
 
     expect(displayHeadingSup).not.toHaveProp('className', 'my-custom-class')
     expect(displayHeadingSup).not.toHaveProp('style')
