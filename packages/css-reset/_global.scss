@@ -1,6 +1,6 @@
 // Global styles
-@import '../settings/colours';
-@import '../settings/typography';
+@import '../colour/colours';
+@import '../../shared/scss/typography';
 
 * {
   background-repeat: no-repeat;

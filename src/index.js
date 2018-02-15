@@ -1,4 +1,4 @@
-import './scss/global.scss'
+import '../packages/css-reset/global.scss'
 
 export { default as Accordion } from '../packages/ExpandCollapse/Accordion/Accordion'
 export { default as Box } from '../packages/Box/Box'

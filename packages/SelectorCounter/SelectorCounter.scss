@@ -1,6 +1,6 @@
-@import '../../src/scss/settings/colours';
-@import '../../src/scss/settings/typography';
-@import '../../src/scss/utility/responsive';
+@import '../colour/colours';
+@import '../../shared/scss/typography';
+@import '../../shared/scss/responsive';
 
 .icon {
   font-family: 'TELUS Core Icons';

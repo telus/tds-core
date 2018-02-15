@@ -1,4 +1,4 @@
-@import '../../src/scss/settings/colours';
+@import '../colour/colours';
 
 @mixin add-skinny-underline {
   background: linear-gradient(transparent, transparent), linear-gradient(transparent, transparent),

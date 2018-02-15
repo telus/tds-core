@@ -1,4 +1,4 @@
-@import '../../src/scss/settings/colours';
+@import '../colour/colours';
 
 .wrapper {
   composes: relative from '../../shared/styles/Position.modules.scss';

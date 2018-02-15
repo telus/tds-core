@@ -1,5 +1,5 @@
-@import '../../../src/scss/settings/colours';
-@import '../../../src/scss/utility/responsive';
+@import '../../../packages/colour/colours';
+@import '../../scss/responsive';
 
 $primary-bg-color: $color-primary;
 $secondary-bg-color: $color-secondary;

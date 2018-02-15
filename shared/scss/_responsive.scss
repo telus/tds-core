@@ -10,10 +10,22 @@ $breakpoints: (
   xl: (1200px, null)
 );
 
-$max-widths: (xs: auto, small: 544px, medium: 736px, large: 960px, xl: 1168px);
+$max-widths: (
+  xs: auto,
+  small: 544px,
+  medium: 736px,
+  large: 960px,
+  xl: 1168px
+);
 
 // 12 columns all the way down.
-$columns: (xs: 12, small: 12, medium: 12, large: 12, xl: 12);
+$columns: (
+  xs: 12,
+  small: 12,
+  medium: 12,
+  large: 12,
+  xl: 12
+);
 
 $gutter: 32px;
 
@@ -67,10 +79,12 @@ $gutter: 32px;
 @function breakpoint($which: xs, $bound: 'upper') {
   @if not map-has-key($breakpoints, $which) {
     $valid-bps: map-keys($breakpoints);
+
     @error "`#{$which}` is not a valid breakpoint. Try one of these: `#{$valid-bps}`";
   }
 
   $bp: map-get($breakpoints, $which);
+
   @if ($bound == 'upper') and ($which != 'xl') {
     @return nth($bp, 2);
   } @else {

@@ -1,5 +1,5 @@
-@import '../../src/scss/settings/colours';
-@import '../../src/scss/settings/typography';
+@import '../colour/colours';
+@import '../../shared/scss/typography';
 
 .link {
   composes: medium from '../Text/Text.modules.scss';
