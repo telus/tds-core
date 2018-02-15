@@ -215,7 +215,7 @@ module.exports = {
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: getStyleguideDir(),
   require: [
-    path.resolve('packages/css-reset/global.scss'),
+    path.resolve('packages/css-reset/index.scss'),
     path.resolve('docs/scss/styleguide.scss'),
   ],
   styleguideComponents: {
