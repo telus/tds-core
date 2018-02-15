@@ -10,6 +10,7 @@
     ],
     "declaration-empty-line-before": null,
     "indentation": null,
-    "declaration-colon-newline-after": null
+    "declaration-colon-newline-after": null,
+    "value-list-comma-newline-after": null
   }
 }

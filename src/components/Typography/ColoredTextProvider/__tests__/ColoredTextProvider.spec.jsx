@@ -2,7 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 
 import Paragraph from '../../Paragraph/Paragraph'
-import Link from '../../../Link/Link'
+import Link from '../../../../../packages/Link/Link'
 import Text from '../../Text/Text'
 import ColoredTextProvider from '../ColoredTextProvider'
 
@@ -10,9 +10,7 @@ describe('ColoredTextProvider', () => {
   it('allows Paragraph to inherit its color', () => {
     const coloredText = mount(
       <ColoredTextProvider colorClassName="some-class-name">
-        <Paragraph>
-          Some content
-        </Paragraph>
+        <Paragraph>Some content</Paragraph>
       </ColoredTextProvider>
     )
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../utils/safeRest'
-import {warn} from '../../utils/warn'
+import safeRest from '../../src/utils/safeRest'
+import { warn } from '../../src/utils/warn'
 
 import styles from './Link.modules.scss'
 
@@ -16,7 +16,7 @@ const getClassName = (invert, context) => {
   return styles.base
 }
 
-const Link = ({reactRouterLinkComponent, invert, children, ...rest}, context) => {
+const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) => {
   if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
@@ -44,8 +44,8 @@ Link.propTypes = {
    */
   href: PropTypes.string,
   /**
-    * Invert link style to appear light on dark backgrounds.
-    */
+   * Invert link style to appear light on dark backgrounds.
+   */
   invert: PropTypes.bool,
   /**
    * Link text.

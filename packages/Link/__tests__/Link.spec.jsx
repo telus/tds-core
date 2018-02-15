@@ -1,16 +1,14 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import { warn } from '../../../utils/warn'
+import { warn } from '../../../src/utils/warn'
 
 import Link from '../Link'
 
-jest.mock('../../../utils/warn')
+jest.mock('../../../src/utils/warn')
 
 describe('Link', () => {
-  const doShallow = (overrides = {}) => shallow(
-    <Link {...overrides}>Go home</Link>
-  )
+  const doShallow = (overrides = {}) => shallow(<Link {...overrides}>Go home</Link>)
 
   afterEach(() => {
     jest.clearAllMocks()

@@ -6,8 +6,8 @@
 
 ### Usage criteria
 
-- Links inherit the font size of surrounding text.
-- Their colour is either shuttle grey or white.
+* Links inherit the font size of surrounding text.
+* Their colour is either shuttle grey or white.
 
 ### Inverted
 
@@ -22,6 +22,7 @@ When using Link with React Router, you must pass in the React Router Link compon
 It is recommended to set up a component wrapper in your project to avoid repetition, like so:
 
 **LinkWrapper.jsx**
+
 ```jsx noeditor static
 import React from 'react';
 
@@ -46,6 +47,7 @@ export default LinkWrapper;
 ```
 
 **App.js**
+
 ```js noeditor static
 import Link from './LinkWrapper';
 

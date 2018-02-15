@@ -2,14 +2,14 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import {compiler} from 'markdown-to-jsx'
+import { compiler } from 'markdown-to-jsx'
 import mapValues from 'lodash/mapValues'
 // import memoize from 'lodash/memoize';
 import Styled from 'react-styleguidist/lib/rsg-components/Styled'
 
-import {styles as paraStyles} from 'react-styleguidist/lib/rsg-components/Para'
+import { styles as paraStyles } from 'react-styleguidist/lib/rsg-components/Para'
 
-import Link from '../../../src/components/Link/Link'
+import Link from '../../../packages/Link/Link'
 import Text from '../../../src/components/Typography/Text/Text'
 import Strong from '../../../src/components/Typography/Strong/Strong'
 import MarkdownHeading from '../MarkdownHeading/MarkdownHeading'
@@ -27,10 +27,10 @@ require('!!react-styleguidist/loaders/style-loader!react-styleguidist/loaders/cs
 const memoize = a => a
 
 // Code blocks with server-side syntax highlight
-function Code({children, className}) {
+function Code({ children, className }) {
   const isHighlighted = className && className.indexOf('lang-') !== -1
   if (isHighlighted) {
-    return <code className={className} dangerouslySetInnerHTML={{__html: children}} />
+    return <code className={className} dangerouslySetInnerHTML={{ __html: children }} />
   }
   return <code className={className}>{children}</code>
 }
@@ -121,13 +121,13 @@ const getInlineOverrides = memoize(classes => {
   }
 }, () => 'getInlineOverrides')
 
-const styles = ({space, fontFamily, fontSize, color, borderRadius}) => ({
+const styles = ({ space, fontFamily, fontSize, color, borderRadius }) => ({
   base: {
     color: color.base,
     fontFamily: fontFamily.base,
     fontSize: 'inherit',
   },
-  para: paraStyles({space, color, fontFamily}).para,
+  para: paraStyles({ space, color, fontFamily }).para,
   input: {
     color: color.base,
     display: 'inline-block',
@@ -186,9 +186,9 @@ const styles = ({space, fontFamily, fontSize, color, borderRadius}) => ({
   tr: {},
 })
 
-function Markdown({classes, text, inline}) {
+function Markdown({ classes, text, inline }) {
   const overrides = inline ? getInlineOverrides(classes) : getBaseOverrides(classes)
-  return compiler(text, {overrides})
+  return compiler(text, { overrides })
 }
 
 Markdown.propTypes = {
