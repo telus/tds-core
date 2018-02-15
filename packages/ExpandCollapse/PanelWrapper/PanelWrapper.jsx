@@ -14,7 +14,7 @@ import Flexbox from '../../../shared/components/Flexbox/Flexbox'
 import Panel from '../Panel/Panel'
 import Responsive from '../../Responsive/Responsive'
 
-import joinClassNames from '../../../src/utils/joinClassNames'
+import joinClassNames from '../../../shared/utils/joinClassNames'
 
 import styles from './PanelWrapper.modules.scss'
 import displayStyles from '../../../shared/styles/Display.modules.scss'

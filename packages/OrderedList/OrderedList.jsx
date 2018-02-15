@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import safeRest from '../../src/utils/safeRest'
+import safeRest from '../../shared/utils/safeRest'
 
 import OrderedItem from './OrderedItem'
 import Box from '../Box/Box'

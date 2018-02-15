@@ -1,10 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { warn } from '../../../src/utils/warn'
+import { warn } from '../../../shared/utils/warn'
 
 import Image from '../Image'
 
-jest.mock('../../../src/utils/warn')
+jest.mock('../../../shared/utils/warn')
 
 describe('Image', () => {
   const defaultProps = {

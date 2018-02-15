@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import joinClassNames from '../../../src/utils/joinClassNames'
-import safeRest from '../../../src/utils/safeRest'
+import joinClassNames from '../../utils/joinClassNames'
+import safeRest from '../../utils/safeRest'
 
 import styles from './Clickable.modules.scss'
 

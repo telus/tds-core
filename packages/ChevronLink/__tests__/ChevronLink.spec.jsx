@@ -1,12 +1,12 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-import { warn } from '../../../src/utils/warn'
+import { warn } from '../../../shared/utils/warn'
 
 import ChevronLink from '../ChevronLink'
 import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 
-jest.mock('../../../src/utils/warn')
+jest.mock('../../../shared/utils/warn')
 
 describe('ChevronLink', () => {
   const doShallow = (overrides = {}) => shallow(<ChevronLink {...overrides}>Go home</ChevronLink>)

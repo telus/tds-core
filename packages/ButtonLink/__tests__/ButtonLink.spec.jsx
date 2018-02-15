@@ -1,13 +1,13 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 
-import { warn } from '../../../src/utils/warn'
+import { warn } from '../../../shared/utils/warn'
 
 import ButtonLink from '../ButtonLink'
 
 import mockMatchMedia from '../../../src/__mocks__/matchMedia'
 
-jest.mock('../../../src/utils/warn')
+jest.mock('../../../shared/utils/warn')
 
 describe('ButtonLink', () => {
   const doMount = (overrides = {}) => {

@@ -4,7 +4,7 @@ import { Subscriber } from 'react-broadcast'
 
 import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 
-import safeRest from '../../../src/utils/safeRest'
+import safeRest from '../../../shared/utils/safeRest'
 
 /**
  * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.34.0</span>

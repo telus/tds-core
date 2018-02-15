@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../src/utils/safeRest'
-import joinClassNames from '../../../src/utils/joinClassNames'
-import generateId from '../../../src/utils/generateId'
+import safeRest from '../../utils/safeRest'
+import joinClassNames from '../../utils/joinClassNames'
+import generateId from '../../utils/generateId'
 
 import Text from '../../../packages/Text/Text'
 import Paragraph from '../../../packages/Paragraph/Paragraph'

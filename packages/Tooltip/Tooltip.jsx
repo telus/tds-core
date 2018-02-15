@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../src/utils/safeRest'
-import generateId from '../../src/utils/generateId'
+import safeRest from '../../shared/utils/safeRest'
+import generateId from '../../shared/utils/generateId'
 import closest from './element-closest'
 
 import StandaloneIcon from '../StandaloneIcon/StandaloneIcon'

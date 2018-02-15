@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import joinClassNames from '../../src/utils/joinClassNames'
+import joinClassNames from '../../shared/utils/joinClassNames'
 
 import Text from '../Text/Text'
 import Box from '../Box/Box'

@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import { warn } from '../../../src/utils/warn'
+import { warn } from '../../../shared/utils/warn'
 
 import Link from '../Link'
 
-jest.mock('../../../src/utils/warn')
+jest.mock('../../../shared/utils/warn')
 
 describe('Link', () => {
   const doShallow = (overrides = {}) => shallow(<Link {...overrides}>Go home</Link>)

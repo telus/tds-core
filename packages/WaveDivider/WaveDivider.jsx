@@ -1,6 +1,6 @@
 import React from 'react'
 
-import safeRest from '../../src/utils/safeRest'
+import safeRest from '../../shared/utils/safeRest'
 
 import styles from './WaveDivider.modules.scss'
 

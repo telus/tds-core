@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../src/utils/safeRest'
-import { warn } from '../../src/utils/warn'
+import safeRest from '../../shared/utils/safeRest'
+import { warn } from '../../shared/utils/warn'
 
 import styles from './Link.modules.scss'
 

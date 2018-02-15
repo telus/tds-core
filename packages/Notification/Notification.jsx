@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../src/utils/safeRest'
+import safeRest from '../../shared/utils/safeRest'
 
 import FlexGrid from '../FlexGrid/FlexGrid'
 import DecorativeIcon from '../DecorativeIcon/DecorativeIcon'

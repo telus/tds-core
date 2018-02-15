@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import joinClassNames from '../../src/utils/joinClassNames'
+import joinClassNames from '../../shared/utils/joinClassNames'
 
 import DecorativeIcon from '../DecorativeIcon/DecorativeIcon'
 import Tooltip from '../Tooltip/Tooltip'

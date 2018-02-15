@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import Box from '../Box/Box'
 
-import safeRest from '../../src/utils/safeRest'
+import safeRest from '../../shared/utils/safeRest'
 
 import styles from './InputFeedback.modules.scss'
 

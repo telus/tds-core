@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../src/utils/safeRest'
-import joinClassNames from '../../src/utils/joinClassNames'
+import safeRest from '../../shared/utils/safeRest'
+import joinClassNames from '../../shared/utils/joinClassNames'
 
 import TextSup from './TextSup/TextSup'
 
