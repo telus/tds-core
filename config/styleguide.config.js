@@ -113,7 +113,7 @@ module.exports = {
               components() {
                 return [
                   path.resolve('src/components/Link/Link.jsx'),
-                  path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx'),
+                  path.resolve('packages/ChevronLink/ChevronLink.jsx'),
                   path.resolve('packages/ButtonLink/ButtonLink.jsx'),
                 ]
               },

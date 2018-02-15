@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import DecorativeIcon from '../../../../packages/DecorativeIcon/DecorativeIcon'
-import safeRest from '../../../utils/safeRest'
-import { warn } from '../../../utils/warn'
+import DecorativeIcon from '../DecorativeIcon/DecorativeIcon'
+import safeRest from '../../src/utils/safeRest'
+import { warn } from '../../src/utils/warn'
 
-import Box from '../../../../packages/Box/Box'
+import Box from '../Box/Box'
 
 import styles from './ChevronLink.modules.scss'
 

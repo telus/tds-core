@@ -1,8 +1,8 @@
-@import '../../../scss/settings/colours';
-@import '../../../scss/settings/typography';
+@import '../../src/scss/settings/colours';
+@import '../../src/scss/settings/typography';
 
 .link {
-  composes: medium from '../../Typography/Text/Text.modules.scss';
+  composes: medium from '../../src/components/Typography/Text/Text.modules.scss';
   display: inline-block;
   text-decoration: none;
 

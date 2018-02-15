@@ -5,7 +5,7 @@ import logo from './Logo.svg'
 
 import Box from '../../../packages/Box/Box'
 import Text from '../../../src/components/Typography/Text/Text'
-import ChevronLink from '../../../src/components/Link/ChevronLink/ChevronLink'
+import ChevronLink from '../../../packages/ChevronLink/ChevronLink'
 
 const Logo = () => (
   <div>
