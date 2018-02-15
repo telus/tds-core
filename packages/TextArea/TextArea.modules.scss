@@ -10,7 +10,7 @@
 }
 
 .feedbackIconPosition {
-  composes: absolute from '../../src/components/Position.modules.scss';
+  composes: absolute from '../../shared/styles/Position.modules.scss';
   composes: iconRight from '../../shared/components/FormField/FormField.modules.scss';
 
   top: 0.5rem;

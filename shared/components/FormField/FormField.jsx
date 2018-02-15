@@ -13,7 +13,7 @@ import InputFeedback from '../../../packages/InputFeedback/InputFeedback'
 import Tooltip from '../../../packages/Tooltip/Tooltip'
 
 import styles from './FormField.modules.scss'
-import positionStyles from '../../../src/components/Position.modules.scss'
+import positionStyles from '../../styles/Position.modules.scss'
 
 const getClassName = (feedback, focus, disabled) => {
   if (disabled) {

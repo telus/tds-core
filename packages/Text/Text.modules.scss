@@ -17,7 +17,7 @@
 }
 
 .base {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
 
   font-size: inherit;
 }
@@ -27,7 +27,7 @@
 }
 
 .small {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
 
   font-size: 0.875rem;
   letter-spacing: -0.6px;
@@ -39,7 +39,7 @@
 }
 
 .medium {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
 
   font-size: 1rem;
   letter-spacing: -0.8px;
@@ -51,7 +51,7 @@
 }
 
 .large {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
 
   font-size: 1.25rem;
   letter-spacing: -1px;
@@ -59,13 +59,13 @@
 }
 
 .largeFont {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
 
   @include helvetica-neue-light-45;
 }
 
 .boldFont {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
 
   @include helvetica-neue-medium-65;
 }

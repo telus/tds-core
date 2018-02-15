@@ -12,9 +12,9 @@ $button-text-color: $color-white;
 }
 
 .base {
-  composes: none rounded from '../../../src/components/Borders.modules.scss';
+  composes: none rounded from '../../styles/Borders.modules.scss';
   composes: medium boldFont from '../../../packages/Text/Text.modules.scss';
-  composes: height font from '../../../src/components/Forms.modules.scss';
+  composes: height font from '../../styles/Forms.modules.scss';
 
   margin: 0;
   padding: 0 2rem;
@@ -83,7 +83,7 @@ $button-text-color: $color-white;
 }
 
 .centered {
-  composes: rounded from '../../../src/components/Borders.modules.scss';
+  composes: rounded from '../../styles/Borders.modules.scss';
 
   width: 100%;
   height: 100%;

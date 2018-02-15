@@ -11,8 +11,8 @@ import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
 
 import addRightPadding from '../../shared/components/FormField/addRightPadding'
 
-import positionStyles from '../../src/components/Position.modules.scss'
-import formStyles from '../../src/components/Forms.modules.scss'
+import positionStyles from '../../shared/styles/Position.modules.scss'
+import formStyles from '../../shared/styles/Forms.modules.scss'
 import styles from './Input.modules.scss'
 
 /**

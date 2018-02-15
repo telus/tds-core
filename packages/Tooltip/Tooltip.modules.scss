@@ -10,7 +10,7 @@ $bubble-triangle-width: 7px;
 $bubble-triangle-position: $bubble-triangle-width + 5px;
 
 .bubble {
-  composes: rounded from '../../src/components/Borders.modules.scss';
+  composes: rounded from '../../shared/styles/Borders.modules.scss';
 
   position: absolute;
   bottom: calc(100% + #{$bubble-triangle-height});

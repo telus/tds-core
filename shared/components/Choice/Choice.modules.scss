@@ -9,7 +9,7 @@
 }
 
 .fakeInput {
-  composes: thin from '../../../src/components/Borders.modules.scss';
+  composes: thin from '../../styles/Borders.modules.scss';
 
   height: 20px;
   width: 20px;
@@ -31,12 +31,12 @@
 
 .fakeCheckbox {
   composes: fakeInput;
-  composes: rounded from '../../../src/components/Borders.modules.scss';
+  composes: rounded from '../../styles/Borders.modules.scss';
 }
 
 .fakeRadio {
   composes: fakeInput;
-  composes: circular from '../../../src/components/Borders.modules.scss';
+  composes: circular from '../../styles/Borders.modules.scss';
 }
 
 .unchecked {

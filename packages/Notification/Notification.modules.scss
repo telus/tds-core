@@ -1,7 +1,7 @@
 @import '../../src/scss/settings/colours';
 
 .instructional {
-  composes: default from '../../src/components/Messaging.modules.scss';
+  composes: default from '../../shared/styles/Messaging.modules.scss';
 }
 
 .branded {
@@ -9,9 +9,9 @@
 }
 
 .success {
-  composes: success from '../../src/components/Messaging.modules.scss';
+  composes: success from '../../shared/styles/Messaging.modules.scss';
 }
 
 .error {
-  composes: error from '../../src/components/Messaging.modules.scss';
+  composes: error from '../../shared/styles/Messaging.modules.scss';
 }

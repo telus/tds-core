@@ -13,7 +13,7 @@ import Box from '../Box/Box'
 import addRightPadding from '../../shared/components/FormField/addRightPadding'
 
 import styles from './Select.modules.scss'
-import iconWrapperStyles from '../../src/components/IconWrapper.modules.scss'
+import iconWrapperStyles from '../../shared/styles/IconWrapper.modules.scss'
 
 /**
  * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.33.0</span>

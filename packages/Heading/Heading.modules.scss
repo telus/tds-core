@@ -7,8 +7,8 @@
 }
 
 .h1 {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
-  composes: noSpacing from '../../src/components/Spacing.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
 
   @include helvetica-neue-light-45;
 
@@ -23,8 +23,8 @@
 }
 
 .h1Desktop {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
-  composes: noSpacing from '../../src/components/Spacing.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
 
   @include helvetica-neue-thin-35;
 
@@ -39,8 +39,8 @@
 }
 
 .h2 {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
-  composes: noSpacing from '../../src/components/Spacing.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
 
   @include helvetica-neue-light-45;
 
@@ -55,8 +55,8 @@
 }
 
 .h2Desktop {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
-  composes: noSpacing from '../../src/components/Spacing.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
 
   @include helvetica-neue-light-45;
 
@@ -71,8 +71,8 @@
 }
 
 .smallHeading {
-  composes: wordBreak from '../../src/components/Typography.modules.scss';
-  composes: noSpacing from '../../src/components/Spacing.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
 
   @include helvetica-neue-medium-65;
 

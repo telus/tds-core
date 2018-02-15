@@ -9,7 +9,7 @@ import ColoredTextProvider from '../../shared/components/ColoredTextProvider/Col
 import Paragraph from '../Paragraph/Paragraph'
 import Box from '../Box/Box'
 
-import messagingStyles from '../../src/components/Messaging.modules.scss'
+import messagingStyles from '../../shared/styles/Messaging.modules.scss'
 import styles from './Notification.modules.scss'
 
 const iconByVariant = {

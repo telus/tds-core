@@ -11,7 +11,7 @@ import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
 import addRightPadding from '../../shared/components/FormField/addRightPadding'
 
 import styles from './TextArea.modules.scss'
-import positionStyles from '../../src/components/Position.modules.scss'
+import positionStyles from '../../shared/styles/Position.modules.scss'
 
 /**
  * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.33.0</span>

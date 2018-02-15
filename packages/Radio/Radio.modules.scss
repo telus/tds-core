@@ -18,7 +18,7 @@
 }
 
 .inner {
-  composes: circular from '../../src/components/Borders.modules.scss';
+  composes: circular from '../../shared/styles/Borders.modules.scss';
 
   height: 12px;
   width: 12px;

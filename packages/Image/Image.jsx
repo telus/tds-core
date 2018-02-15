@@ -6,7 +6,7 @@ import { warn } from '../../src/utils/warn'
 import safeRest from '../../src/utils/safeRest'
 
 import styles from './Image.modules.scss'
-import borderStyles from '../../src/components/Borders.modules.scss'
+import borderStyles from '../../shared/styles/Borders.modules.scss'
 
 /**
  *

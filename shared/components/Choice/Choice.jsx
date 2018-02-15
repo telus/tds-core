@@ -13,7 +13,7 @@ import Flexbox from '../Flexbox/Flexbox'
 import InputFeedback from '../../../packages/InputFeedback/InputFeedback'
 
 import styles from './Choice.modules.scss'
-import messagingStyles from '../../../src/components/Messaging.modules.scss'
+import messagingStyles from '../../styles/Messaging.modules.scss'
 
 const getId = (id, name, value) => {
   if (id) {

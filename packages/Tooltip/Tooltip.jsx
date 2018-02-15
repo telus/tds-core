@@ -10,7 +10,7 @@ import Responsive from '../Responsive/Responsive'
 
 import Bubble from './Bubble'
 
-import iconWrapperStyles from '../../src/components/IconWrapper.modules.scss'
+import iconWrapperStyles from '../../shared/styles/IconWrapper.modules.scss'
 
 const getTriggerA11yText = connectedFieldLabel => {
   if (!connectedFieldLabel) {

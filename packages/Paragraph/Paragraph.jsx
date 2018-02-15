@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import safeRest from '../../src/utils/safeRest'
 import joinClassNames from '../../src/utils/joinClassNames'
 
-import typographyStyles from '../../src/components/Typography.modules.scss'
-import spacingStyles from '../../src/components/Spacing.modules.scss'
+import typographyStyles from '../../shared/styles/Typography.modules.scss'
+import spacingStyles from '../../shared/styles/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
 import textStyles from '../Text/Text.modules.scss'
 

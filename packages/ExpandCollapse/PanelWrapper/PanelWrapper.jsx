@@ -17,7 +17,7 @@ import Responsive from '../../Responsive/Responsive'
 import joinClassNames from '../../../src/utils/joinClassNames'
 
 import styles from './PanelWrapper.modules.scss'
-import displayStyles from '../../../src/components/Display.modules.scss'
+import displayStyles from '../../../shared/styles/Display.modules.scss'
 
 class PanelWrapper extends React.Component {
   constructor(props) {

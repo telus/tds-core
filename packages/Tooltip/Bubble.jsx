@@ -7,7 +7,7 @@ import Text from '../Text/Text'
 import Box from '../Box/Box'
 
 import styles from './Tooltip.modules.scss'
-import displayStyles from '../../src/components/Display.modules.scss'
+import displayStyles from '../../shared/styles/Display.modules.scss'
 
 const Bubble = ({ id, direction, width, open, children }) => {
   const classes = joinClassNames(styles[direction], styles[width], !open && displayStyles.hide)
