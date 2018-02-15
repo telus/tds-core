@@ -7,7 +7,7 @@ import Text from '../../Typography/Text/Text'
 import Paragraph from '../../Typography/Paragraph/Paragraph'
 import Fade from '../../../../shared/components/Animation/Fade'
 import TextArea from '../TextArea'
-import InputFeedback from '../../InputFeedback/InputFeedback'
+import InputFeedback from '../../../../packages/InputFeedback/InputFeedback'
 
 describe('TextArea', () => {
   const defaultProps = {

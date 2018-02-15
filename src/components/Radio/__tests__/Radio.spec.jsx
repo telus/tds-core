@@ -4,7 +4,7 @@ import { mount, render } from 'enzyme'
 import Text from '../../Typography/Text/Text'
 import DecorativeIcon from '../../../../packages/DecorativeIcon/DecorativeIcon'
 import Radio from '../Radio'
-import InputFeedback from '../../InputFeedback/InputFeedback'
+import InputFeedback from '../../../../packages/InputFeedback/InputFeedback'
 import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('Radio', () => {

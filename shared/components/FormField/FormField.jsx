@@ -9,7 +9,7 @@ import Box from '../../../packages/Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
 import Text from '../../../src/components/Typography/Text/Text'
 import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
-import InputFeedback from '../../../src/components/InputFeedback/InputFeedback'
+import InputFeedback from '../../../packages/InputFeedback/InputFeedback'
 import Tooltip from '../../../src/components/Tooltip/Tooltip'
 
 import styles from './FormField.modules.scss'

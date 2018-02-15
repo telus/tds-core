@@ -200,7 +200,7 @@ module.exports = {
               path.resolve('src/components/Radio/Radio.jsx'),
               path.resolve('src/components/Select/Select.jsx'),
               path.resolve('src/components/TextArea/TextArea.jsx'),
-              path.resolve('src/components/InputFeedback/InputFeedback.jsx'),
+              path.resolve('packages/InputFeedback/InputFeedback.jsx'),
               path.resolve('src/components/Tooltip/Tooltip.jsx'),
               path.resolve('packages/SelectorCounter/SelectorCounter.jsx'),
             ])

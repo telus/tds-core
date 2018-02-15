@@ -10,7 +10,7 @@ import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
 import Box from '../../../packages/Box/Box'
 import ColoredTextProvider from '../../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'
 import Flexbox from '../Flexbox/Flexbox'
-import InputFeedback from '../../../src/components/InputFeedback/InputFeedback'
+import InputFeedback from '../../../packages/InputFeedback/InputFeedback'
 
 import styles from './Choice.modules.scss'
 import messagingStyles from '../../../src/components/Messaging.modules.scss'

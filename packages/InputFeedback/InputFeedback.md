@@ -11,7 +11,7 @@ While its primary use is to facilitate feedback states for other form components
 ### Advanced use with form components
 
 Passing a function that returns an `InputFeedback` to the `helper` prop of form components gives you more control over the
-contents of the `InputFeedback` component by giving you access to the `feedback` state of the form field and the current `value`. 
+contents of the `InputFeedback` component by giving you access to the `feedback` state of the form field and the current `value`.
 
 As an example, enter a value into the field below, then click away to lose focus. If you enter less than the 16
 character minimum the helper will show as an error. Enter 16 or more characters to receive the success feedback.
@@ -50,7 +50,7 @@ const passwordRequirements = (feedback) => {
     <InputFeedback feedback={feedback}>
       <Box between={2}>
         <Paragraph size="small" bold>Your password must be:</Paragraph>
-        
+
         <UnorderedList listStyle={listStyle}>
           <UnorderedList.Item>16 characters or longer</UnorderedList.Item>
           <UnorderedList.Item>Not repeated from previous password</UnorderedList.Item>

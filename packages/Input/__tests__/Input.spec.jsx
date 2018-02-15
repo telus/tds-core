@@ -6,7 +6,7 @@ import Text from '../../../src/components/Typography/Text/Text'
 import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
 import Fade from '../../../shared/components/Animation/Fade'
 import Input from '../Input'
-import InputFeedback from '../../../src/components/InputFeedback/InputFeedback'
+import InputFeedback from '../../InputFeedback/InputFeedback'
 import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 
 describe('Input', () => {

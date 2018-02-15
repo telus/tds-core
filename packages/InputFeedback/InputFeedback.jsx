@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Box from '../../../packages/Box/Box'
+import Box from '../Box/Box'
 
-import safeRest from '../../utils/safeRest'
+import safeRest from '../../src/utils/safeRest'
 
 import styles from './InputFeedback.modules.scss'
 

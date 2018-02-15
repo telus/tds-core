@@ -16,7 +16,7 @@ export { default as HairlineDivider } from '../packages/HairlineDivider/Hairline
 export { default as Heading } from './components/Typography/Heading/Heading'
 export { default as Image } from '../packages/Image/Image'
 export { default as Input } from '../packages/Input/Input'
-export { default as InputFeedback } from './components/InputFeedback/InputFeedback'
+export { default as InputFeedback } from '../packages/InputFeedback/InputFeedback'
 export { default as Link } from './components/Link/Link'
 export { default as Notification } from './components/Notification/Notification'
 export { default as OrderedList } from './components/Lists/OrderedList/OrderedList'
