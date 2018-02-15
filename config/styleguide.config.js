@@ -124,7 +124,7 @@ module.exports = {
               components() {
                 return [
                   path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx'),
-                  path.resolve('src/components/Lists/OrderedList/OrderedList.jsx'),
+                  path.resolve('packages/OrderedList/OrderedList.jsx'),
                 ]
               },
             },

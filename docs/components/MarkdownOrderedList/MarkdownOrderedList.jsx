@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Box from '../../../packages/Box/Box'
-import OrderedList from '../../../src/components/Lists/OrderedList/OrderedList'
+import OrderedList from '../../../packages/OrderedList/OrderedList'
 import Text from '../../../src/components/Typography/Text/Text'
 
 const MarkdownOrderedList = ({ children }) => (
