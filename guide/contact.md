@@ -5,13 +5,9 @@ It is not intended for general public consumption.
 
 ## Support channels
 
-1. **GitHub**: Please discuss in [open issues](https://github.com/telusdigital/tds/issues) before [creating a new one](https://github.com/telusdigital/tds/issues/new). See [Contributing guide](/contributing/contributing.md#how-to) for more information.
+1. **GitHub**: Please discuss in [open issues](https://github.com/telusdigital/tds/issues) before [creating a new one](https://github.com/telusdigital/tds/issues/new). See [Contributing guide](/contributing/contributing.md#how-to) for more information. _Response time: within 3 business days<sup>1</sup>_
 
-_Response time: within 3 business days<sup>1</sup>_
-
-2. **TELUS Digital Slack**: Channels exclusively available to TELUS digital employees, contractors, and vendors.
-
-_Response time: within 8 business hours<sup>1</sup>_
+2. **TELUS Digital Slack**: Channels exclusively available to TELUS digital employees, contractors, and vendors. _Response time: within 8 business hours<sup>1</sup>_
 
 * **#tds-guild** for general discussions, announcements, and design questions related to TDS
 * **#tds-tech-support** for fast support directly related to components or code within the TDS

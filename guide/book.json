@@ -3,7 +3,7 @@
   "plugins": ["otherlink", "collapsible-menu", "insert-logo-link", "-sharing"],
   "pluginsConfig": {
     "insert-logo-link": {
-      "src": "/Logo.svg",
+      "src": "Logo.svg",
       "url": "/"
     }
   }
