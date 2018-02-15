@@ -1,13 +1,13 @@
 import React from 'react'
 import { shallow, render, mount } from 'enzyme'
 
-import StandaloneIcon from '../../../../packages/StandaloneIcon/StandaloneIcon'
-import Text from '../../Typography/Text/Text'
+import StandaloneIcon from '../../StandaloneIcon/StandaloneIcon'
+import Text from '../../../src/components/Typography/Text/Text'
 
-import Input from '../../../../packages/Input/Input'
+import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'
 
-import mockMatchMedia from '../../../__mocks__/matchMedia'
+import mockMatchMedia from '../../../src/__mocks__/matchMedia'
 
 describe('Tooltip', () => {
   const defaultChildren = 'Tooltip text'

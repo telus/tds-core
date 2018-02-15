@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../utils/safeRest'
-import generateId from '../../utils/generateId'
+import safeRest from '../../src/utils/safeRest'
+import generateId from '../../src/utils/generateId'
 import closest from './element-closest'
 
-import StandaloneIcon from '../../../packages/StandaloneIcon/StandaloneIcon'
-import Responsive from '../../../packages/Responsive/Responsive'
+import StandaloneIcon from '../StandaloneIcon/StandaloneIcon'
+import Responsive from '../Responsive/Responsive'
 
 import Bubble from './Bubble'
 
-import iconWrapperStyles from '../IconWrapper.modules.scss'
+import iconWrapperStyles from '../../src/components/IconWrapper.modules.scss'
 
 const getTriggerA11yText = connectedFieldLabel => {
   if (!connectedFieldLabel) {

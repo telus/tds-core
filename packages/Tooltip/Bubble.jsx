@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import joinClassNames from '../../utils/joinClassNames'
+import joinClassNames from '../../src/utils/joinClassNames'
 
-import Text from '../Typography/Text/Text'
-import Box from '../../../packages/Box/Box'
+import Text from '../../src/components/Typography/Text/Text'
+import Box from '../Box/Box'
 
 import styles from './Tooltip.modules.scss'
-import displayStyles from '../Display.modules.scss'
+import displayStyles from '../../src/components/Display.modules.scss'
 
 const Bubble = ({ id, direction, width, open, children }) => {
   const classes = joinClassNames(styles[direction], styles[width], !open && displayStyles.hide)

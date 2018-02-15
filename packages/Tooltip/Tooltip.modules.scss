@@ -1,5 +1,5 @@
-@import '../../scss/settings/colours';
-@import '../../scss/utility/responsive';
+@import '../../src/scss/settings/colours';
+@import '../../src/scss/utility/responsive';
 
 $bubble-trigger-size: 24px;
 
@@ -10,7 +10,7 @@ $bubble-triangle-width: 7px;
 $bubble-triangle-position: $bubble-triangle-width + 5px;
 
 .bubble {
-  composes: rounded from '../Borders.modules.scss';
+  composes: rounded from '../../src/components/Borders.modules.scss';
 
   position: absolute;
   bottom: calc(100% + #{$bubble-triangle-height});

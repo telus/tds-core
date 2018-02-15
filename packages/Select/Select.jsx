@@ -5,7 +5,7 @@ import { childrenOfType } from 'airbnb-prop-types'
 import joinClassNames from '../../src/utils/joinClassNames'
 
 import DecorativeIcon from '../DecorativeIcon/DecorativeIcon'
-import Tooltip from '../../src/components/Tooltip/Tooltip'
+import Tooltip from '../Tooltip/Tooltip'
 import FormField from '../../shared/components/FormField/FormField'
 import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
 import Box from '../Box/Box'
