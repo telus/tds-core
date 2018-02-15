@@ -31,7 +31,7 @@ export { default as StandaloneIcon } from '../packages/StandaloneIcon/Standalone
 export { default as Steps } from '../packages/StepTracker/Steps/Steps'
 export { default as Strong } from './components/Typography/Strong/Strong'
 export { default as Text } from './components/Typography/Text/Text'
-export { default as TextArea } from './components/TextArea/TextArea'
+export { default as TextArea } from '../packages/TextArea/TextArea'
 export { default as Tooltip } from './components/Tooltip/Tooltip'
 export { default as UnorderedList } from '../packages/UnorderedList/UnorderedList'
 export { default as WaveDivider } from '../packages/WaveDivider/WaveDivider'

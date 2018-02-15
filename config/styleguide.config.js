@@ -199,7 +199,7 @@ module.exports = {
               path.resolve('packages/Checkbox/Checkbox.jsx'),
               path.resolve('packages/Radio/Radio.jsx'),
               path.resolve('packages/Select/Select.jsx'),
-              path.resolve('src/components/TextArea/TextArea.jsx'),
+              path.resolve('packages/TextArea/TextArea.jsx'),
               path.resolve('packages/InputFeedback/InputFeedback.jsx'),
               path.resolve('src/components/Tooltip/Tooltip.jsx'),
               path.resolve('packages/SelectorCounter/SelectorCounter.jsx'),
