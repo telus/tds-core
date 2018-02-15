@@ -1,0 +1,16 @@
+{
+  "name": "@tds/core-responsive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "react-media": "^1.8.0"
+  }
+}

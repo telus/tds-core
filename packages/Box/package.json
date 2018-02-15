@@ -1,0 +1,15 @@
+{
+  "name": "@tds/core-box",
+  "version": "1.0.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "dependencies": {
+    "@tds/core-responsive": "^1.0.0",
+    "prop-types": "^15.5.10"
+  }
+}

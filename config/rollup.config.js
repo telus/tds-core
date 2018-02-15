@@ -1,5 +1,3 @@
-import path from 'path'
-
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 
@@ -19,55 +17,65 @@ const sassPreprocessor = (content, id) =>
     resolve({ code: result.css.toString() })
   })
 
-export default {
-  input: path.resolve('./src/index.js'),
-  output: [
-    { format: 'cjs', file: path.resolve('./dist/tds.cjs.js') },
-    { format: 'es', file: path.resolve('./dist/tds.es.js') },
-  ],
-  sourcemap: true,
+export default opts => {
+  const options = Object.assign(
+    {
+      css: true,
+      external: [],
+    },
+    opts
+  )
 
-  external: ['react', 'react-dom', 'prop-types'],
+  return {
+    input: options.input,
+    output: [
+      { format: 'cjs', file: './dist/index.cjs.js' },
+      { format: 'es', file: './dist/index.es.js' },
+    ],
+    sourcemap: true,
 
-  plugins: [
-    nodeResolve({
-      extensions: ['.js', '.jsx'],
-    }),
-    commonjs({
-      include: 'node_modules/**',
-      namedExports: {
-        'airbnb-prop-types': ['childrenOfType'],
-      },
-    }),
-    postcss({
-      extract: path.resolve('./dist/tds.css'),
-      sourceMap: true,
-      extensions: ['.scss', '.css'],
-      preprocessor: sassPreprocessor,
-      plugins: [
-        autoprefixer(),
-        postcssModules({
-          Loader: CssModulesSassLoader,
-          globalModulePaths: [
-            /src\/scss/,
-            /packages\/SelectorCounter/,
-            /packages\/Spinner/,
-            /packages\/StepTracker/,
+    external: ['react', 'react-dom', 'prop-types'].concat(options.external),
+
+    plugins: [
+      nodeResolve({
+        extensions: ['.js', '.jsx'],
+      }),
+      commonjs({
+        include: 'node_modules/**',
+        namedExports: {
+          'airbnb-prop-types': ['childrenOfType'],
+        },
+      }),
+      options.css &&
+        postcss({
+          extract: './dist/index.css',
+          sourceMap: true,
+          extensions: ['.scss', '.css'],
+          preprocessor: sassPreprocessor,
+          plugins: [
+            autoprefixer(),
+            postcssModules({
+              Loader: CssModulesSassLoader,
+              globalModulePaths: [
+                /packages\/SelectorCounter/,
+                /packages\/Spinner/,
+                /packages\/StepTracker/,
+              ],
+              generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
+              getJSON(id, exportTokens) {
+                cssExportMap[id] = exportTokens
+              },
+            }),
           ],
-          generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
-          getJSON(id, exportTokens) {
-            cssExportMap[id] = exportTokens
+          getExportNamed: false,
+          getExport(id) {
+            return cssExportMap[id]
           },
         }),
-      ],
-      getExportNamed: false,
-      getExport(id) {
-        return cssExportMap[id]
-      },
-    }),
-    babel({
-      plugins: ['external-helpers'],
-      exclude: 'node_modules/**',
-    }),
-  ],
+      babel({
+        plugins: ['external-helpers'],
+        exclude: 'node_modules/**',
+      }),
+    ],
+  }
 }
