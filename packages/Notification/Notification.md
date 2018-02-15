@@ -13,9 +13,8 @@ By default, notifications will be displayed in the `instructional` variant.
 ### Usage criteria
 
 * The message of a notification must be text content only. You may use text-based styling such as bold text or links. Do
-not use other complex components or paragraphs.
+  not use other complex components or paragraphs.
 * Use complete sentences, while keeping the content succinct.
-
 
 ### Communicating with notifications
 

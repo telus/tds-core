@@ -184,7 +184,7 @@ module.exports = {
           name: 'Feedback indicators',
           components() {
             return [
-              path.resolve('src/components/Notification/Notification.jsx'),
+              path.resolve('packages/Notification/Notification.jsx'),
               path.resolve('packages/Spinner/Spinner.jsx'),
               path.resolve('packages/StepTracker/Steps/Steps.jsx'),
             ]

@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-import DecorativeIcon from '../../../../packages/DecorativeIcon/DecorativeIcon'
-import Paragraph from '../../Typography/Paragraph/Paragraph'
+import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
+import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
 
 import Notification from '../Notification'
-import ColoredTextProvider from '../../Typography/ColoredTextProvider/ColoredTextProvider'
+import ColoredTextProvider from '../../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'
 
 describe('<Notification />', () => {
   const defaultChildren = 'Some content'

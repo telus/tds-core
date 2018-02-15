@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../utils/safeRest'
+import safeRest from '../../src/utils/safeRest'
 
-import FlexGrid from '../../../packages/FlexGrid/FlexGrid'
-import DecorativeIcon from '../../../packages/DecorativeIcon/DecorativeIcon'
-import ColoredTextProvider from '../Typography/ColoredTextProvider/ColoredTextProvider'
-import Paragraph from '../Typography/Paragraph/Paragraph'
-import Box from '../../../packages/Box/Box'
+import FlexGrid from '../FlexGrid/FlexGrid'
+import DecorativeIcon from '../DecorativeIcon/DecorativeIcon'
+import ColoredTextProvider from '../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'
+import Paragraph from '../../src/components/Typography/Paragraph/Paragraph'
+import Box from '../Box/Box'
 
-import messagingStyles from '../Messaging.modules.scss'
+import messagingStyles from '../../src/components/Messaging.modules.scss'
 import styles from './Notification.modules.scss'
 
 const iconByVariant = {
