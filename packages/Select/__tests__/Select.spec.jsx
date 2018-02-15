@@ -1,13 +1,13 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import StandaloneIcon from '../../../../packages/StandaloneIcon/StandaloneIcon'
-import Text from '../../Typography/Text/Text'
-import Paragraph from '../../Typography/Paragraph/Paragraph'
-import Fade from '../../../../shared/components/Animation/Fade'
+import StandaloneIcon from '../../StandaloneIcon/StandaloneIcon'
+import Text from '../../../src/components/Typography/Text/Text'
+import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
+import Fade from '../../../shared/components/Animation/Fade'
 import Select from '../Select'
-import InputFeedback from '../../../../packages/InputFeedback/InputFeedback'
-import DecorativeIcon from '../../../../packages/DecorativeIcon/DecorativeIcon'
+import InputFeedback from '../../InputFeedback/InputFeedback'
+import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 
 describe('Select', () => {
   const defaultProps = {
