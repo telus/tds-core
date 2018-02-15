@@ -6,7 +6,7 @@ import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
 import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 import Checkbox from '../Checkbox'
 import InputFeedback from '../../InputFeedback/InputFeedback'
-import ColoredTextProvider from '../../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'
+import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 describe('Checkbox', () => {
   const defaultProps = {

@@ -5,7 +5,7 @@ import safeRest from '../../src/utils/safeRest'
 
 import FlexGrid from '../FlexGrid/FlexGrid'
 import DecorativeIcon from '../DecorativeIcon/DecorativeIcon'
-import ColoredTextProvider from '../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'
+import ColoredTextProvider from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
 import Paragraph from '../../src/components/Typography/Paragraph/Paragraph'
 import Box from '../Box/Box'
 

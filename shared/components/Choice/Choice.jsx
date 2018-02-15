@@ -8,7 +8,7 @@ import generateId from '../../../src/utils/generateId'
 import Text from '../../../src/components/Typography/Text/Text'
 import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
 import Box from '../../../packages/Box/Box'
-import ColoredTextProvider from '../../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'
+import ColoredTextProvider from '../ColoredTextProvider/ColoredTextProvider'
 import Flexbox from '../Flexbox/Flexbox'
 import InputFeedback from '../../../packages/InputFeedback/InputFeedback'
 

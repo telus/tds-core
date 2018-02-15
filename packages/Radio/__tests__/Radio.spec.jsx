@@ -5,7 +5,7 @@ import Text from '../../../src/components/Typography/Text/Text'
 import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 import Radio from '../Radio'
 import InputFeedback from '../../InputFeedback/InputFeedback'
-import ColoredTextProvider from '../../../src/components/Typography/ColoredTextProvider/ColoredTextProvider'
+import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 describe('Radio', () => {
   const defaultProps = {
