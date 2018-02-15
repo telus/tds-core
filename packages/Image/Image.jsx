@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import joinClasses from '../../utils/joinClassNames'
-import { warn } from '../../utils/warn'
-import safeRest from '../../utils/safeRest'
+import joinClasses from '../../src/utils/joinClassNames'
+import { warn } from '../../src/utils/warn'
+import safeRest from '../../src/utils/safeRest'
 
 import styles from './Image.modules.scss'
-import borderStyles from '../Borders.modules.scss'
+import borderStyles from '../../src/components/Borders.modules.scss'
 
 /**
  *

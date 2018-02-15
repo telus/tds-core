@@ -9,5 +9,11 @@
 * When using the image symbol in the Sketch file, replace the image in the overrides with and image with the same aspect ratio.
 
 ```jsx
-<Image src="image-example.jpg" rounded="corners" width={300} height={300} alt="Image of co-workers collaborating" />
+<Image
+  src="image-example.jpg"
+  rounded="corners"
+  width={300}
+  height={300}
+  alt="Image of co-workers collaborating"
+/>
 ```

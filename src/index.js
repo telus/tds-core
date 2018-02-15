@@ -14,7 +14,7 @@ export { default as ExpandCollapse } from '../packages/ExpandCollapse/ExpandColl
 export { default as FlexGrid } from '../packages/FlexGrid/FlexGrid'
 export { default as HairlineDivider } from '../packages/HairlineDivider/HairlineDivider'
 export { default as Heading } from './components/Typography/Heading/Heading'
-export { default as Image } from './components/Image/Image'
+export { default as Image } from '../packages/Image/Image'
 export { default as Input } from './components/Input/Input'
 export { default as InputFeedback } from './components/InputFeedback/InputFeedback'
 export { default as Link } from './components/Link/Link'

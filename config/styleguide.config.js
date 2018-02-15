@@ -104,7 +104,7 @@ module.exports = {
           components() {
             return compact([
               path.resolve('packages/Card/Card.jsx'),
-              path.resolve('src/components/Image/Image.jsx'),
+              path.resolve('packages/Image/Image.jsx'),
             ])
           },
           sections: compact([
