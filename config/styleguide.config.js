@@ -83,7 +83,7 @@ module.exports = {
           components() {
             return [
               path.resolve('packages/Box/Box.jsx'),
-              path.resolve('src/components/Responsive/Responsive.jsx'),
+              path.resolve('packages/Responsive/Responsive.jsx'),
             ]
           },
           sections: compact([

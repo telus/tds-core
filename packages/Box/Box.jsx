@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Responsive from '../../src/components/Responsive/Responsive'
+import Responsive from '../Responsive/Responsive'
 
 import safeRest from '../../src/utils/safeRest'
 import joinClassNames from '../../src/utils/joinClassNames'

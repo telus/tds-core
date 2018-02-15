@@ -2,9 +2,9 @@ import React from 'react'
 import { shallow } from 'enzyme'
 
 import Responsive from '../Responsive'
-import { warn } from '../../../utils/warn'
+import { warn } from '../../../src/utils/warn'
 
-jest.mock('../../../utils/warn')
+jest.mock('../../../src/utils/warn')
 
 describe('Responsive with react-media', () => {
   const defaultProps = {

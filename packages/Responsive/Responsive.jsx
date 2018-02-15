@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Media from 'react-media'
 
-import { warn } from '../../utils/warn'
+import { warn } from '../../src/utils/warn'
 
 const breakpoints = {
   sm: 576,

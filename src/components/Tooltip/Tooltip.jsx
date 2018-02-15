@@ -6,7 +6,7 @@ import generateId from '../../utils/generateId'
 import closest from './element-closest'
 
 import StandaloneIcon from '../../../packages/StandaloneIcon/StandaloneIcon'
-import Responsive from '../Responsive/Responsive'
+import Responsive from '../../../packages/Responsive/Responsive'
 
 import Bubble from './Bubble'
 

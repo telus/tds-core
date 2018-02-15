@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import safeRest from '../../../utils/safeRest'
 import joinClassNames from '../../../utils/joinClassNames'
 
-import Responsive from '../../Responsive/Responsive'
+import Responsive from '../../../../packages/Responsive/Responsive'
 import HeadingSup from './HeadingSup/HeadingSup'
 
 import styles from './Heading.modules.scss'

@@ -5,7 +5,7 @@ import safeRest from '../../../src/utils/safeRest'
 import joinClassNames from '../../../src/utils/joinClassNames'
 
 import FlexBox from '../Flexbox/Flexbox'
-import Responsive from '../../../src/components/Responsive/Responsive'
+import Responsive from '../../../packages/Responsive/Responsive'
 
 import styles from './BaseButton.modules.scss'
 

@@ -12,7 +12,7 @@ import Reveal from '../../../shared/components/Animation/Reveal'
 import Translate from '../../../shared/components/Animation/Translate'
 import Flexbox from '../../../shared/components/Flexbox/Flexbox'
 import Panel from '../Panel/Panel'
-import Responsive from '../../../src/components/Responsive/Responsive'
+import Responsive from '../../Responsive/Responsive'
 
 import joinClassNames from '../../../src/utils/joinClassNames'
 
