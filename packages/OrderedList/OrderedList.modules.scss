@@ -1,14 +1,14 @@
 .decimal {
-  composes: base from '../../src/components/Lists/List.modules.scss';
+  composes: base from '../../shared/styles/List.modules.scss';
   list-style-type: decimal;
 }
 
 .upperAlpha {
-  composes: base from '../../src/components/Lists/List.modules.scss';
+  composes: base from '../../shared/styles/List.modules.scss';
   list-style-type: upper-alpha;
 }
 
 .lowerAlpha {
-  composes: base from '../../src/components/Lists/List.modules.scss';
+  composes: base from '../../shared/styles/List.modules.scss';
   list-style-type: lower-alpha;
 }

@@ -120,10 +120,10 @@ module.exports = {
             },
             {
               name: 'Lists',
-              content: path.resolve('src/components/Lists/Lists.md'),
+              content: path.resolve('docs/Lists.md'),
               components() {
                 return [
-                  path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx'),
+                  path.resolve('packages/UnorderedList/UnorderedList.jsx'),
                   path.resolve('packages/OrderedList/OrderedList.jsx'),
                 ]
               },

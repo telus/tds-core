@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import safeRest from '../../../utils/safeRest'
+import safeRest from '../../src/utils/safeRest'
 
 import UnorderedItem from './UnorderedItem/UnorderedItem'
-import Box from '../../../../packages/Box/Box'
+import Box from '../Box/Box'
 
-import styles from '../List.modules.scss'
+import styles from '../../shared/styles/List.modules.scss'
 
 const injectListStyle = (child, listStyle) => React.cloneElement(child, { listStyle })
 
