@@ -6,7 +6,7 @@ import joinClassNames from '../../../src/utils/joinClassNames'
 import generateId from '../../../src/utils/generateId'
 
 import Text from '../../../src/components/Typography/Text/Text'
-import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
+import Paragraph from '../../../packages/Paragraph/Paragraph'
 import Box from '../../../packages/Box/Box'
 import ColoredTextProvider from '../ColoredTextProvider/ColoredTextProvider'
 import Flexbox from '../Flexbox/Flexbox'

@@ -6,7 +6,7 @@ import safeRest from '../../src/utils/safeRest'
 import FlexGrid from '../FlexGrid/FlexGrid'
 import DecorativeIcon from '../DecorativeIcon/DecorativeIcon'
 import ColoredTextProvider from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
-import Paragraph from '../../src/components/Typography/Paragraph/Paragraph'
+import Paragraph from '../Paragraph/Paragraph'
 import Box from '../Box/Box'
 
 import messagingStyles from '../../src/components/Messaging.modules.scss'

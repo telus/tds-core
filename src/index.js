@@ -20,7 +20,7 @@ export { default as InputFeedback } from '../packages/InputFeedback/InputFeedbac
 export { default as Link } from '../packages/Link/Link'
 export { default as Notification } from '../packages/Notification/Notification'
 export { default as OrderedList } from '../packages/OrderedList/OrderedList'
-export { default as Paragraph } from './components/Typography/Paragraph/Paragraph'
+export { default as Paragraph } from '../packages/Paragraph/Paragraph'
 export { default as Radio } from '../packages/Radio/Radio'
 export { default as Responsive } from '../packages/Responsive/Responsive'
 export { default as Select } from '../packages/Select/Select'

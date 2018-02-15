@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow, render } from 'enzyme'
 
 import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
-import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
+import Paragraph from '../../Paragraph/Paragraph'
 
 import Notification from '../Notification'
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'

@@ -1,13 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-
 import Paragraph from '../Paragraph'
 
 describe('Paragraph', () => {
-  const doShallow = props => (
-    shallow(<Paragraph {...props}>Some content</Paragraph>)
-  )
+  const doShallow = props => shallow(<Paragraph {...props}>Some content</Paragraph>)
 
   it('renders', () => {
     const paragraph = doShallow()

@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../../utils/safeRest'
-import joinClassNames from '../../../utils/joinClassNames'
+import safeRest from '../../src/utils/safeRest'
+import joinClassNames from '../../src/utils/joinClassNames'
 
-import typographyStyles from '../../Typography.modules.scss'
-import spacingStyles from '../../Spacing.modules.scss'
+import typographyStyles from '../../src/components/Typography.modules.scss'
+import spacingStyles from '../../src/components/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
-import textStyles from '../Text/Text.modules.scss'
+import textStyles from '../../src/components/Typography/Text/Text.modules.scss'
 
 /**
  * Block text as an HTML `<p>` element.

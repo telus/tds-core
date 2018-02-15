@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import Paragraph from '../../../../src/components/Typography/Paragraph/Paragraph'
+import Paragraph from '../../../../packages/Paragraph/Paragraph'
 import Link from '../../../../packages/Link/Link'
 import Text from '../../../../src/components/Typography/Text/Text'
 import ColoredTextProvider from '../ColoredTextProvider'

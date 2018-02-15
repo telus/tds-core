@@ -8,7 +8,7 @@ import generateId from '../../../src/utils/generateId'
 import Box from '../../../packages/Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
 import Text from '../../../src/components/Typography/Text/Text'
-import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
+import Paragraph from '../../../packages/Paragraph/Paragraph'
 import InputFeedback from '../../../packages/InputFeedback/InputFeedback'
 import Tooltip from '../../../packages/Tooltip/Tooltip'
 
