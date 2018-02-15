@@ -2,17 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import joinClassNames from '../../utils/joinClassNames'
+import joinClassNames from '../../src/utils/joinClassNames'
 
-import Tooltip from '../Tooltip/Tooltip'
-import InputFeedback from '../InputFeedback/InputFeedback'
-import FormField from '../../../shared/components/FormField/FormField'
-import FeedbackIcon from '../../../shared/components/FormField/FeedbackIcon'
+import Tooltip from '../../src/components/Tooltip/Tooltip'
+import InputFeedback from '../../src/components/InputFeedback/InputFeedback'
+import FormField from '../../shared/components/FormField/FormField'
+import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
 
-import addRightPadding from '../../../shared/components/FormField/addRightPadding'
+import addRightPadding from '../../shared/components/FormField/addRightPadding'
 
-import positionStyles from '../Position.modules.scss'
-import formStyles from '../Forms.modules.scss'
+import positionStyles from '../../src/components/Position.modules.scss'
+import formStyles from '../../src/components/Forms.modules.scss'
 import styles from './Input.modules.scss'
 
 /**
@@ -113,7 +113,7 @@ Input.defaultProps = {
   onBlur: undefined,
 }
 
-// TODO: This will no longer necessary once InputFeedback is exported on its own. Removing this will be a breaking change.
+// TODO: This will no longer be necessary once InputFeedback is exported on its own. Removing this will be a breaking change.
 Input.Helper = InputFeedback
 
 export default Input

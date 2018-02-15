@@ -76,7 +76,7 @@ const validate = (event) => {
 
 ### Supplying extra information
 
-Use a `hint` to succinctly clarify attributes of the expected input data, such as the expected format, or an indicator 
+Use a `hint` to succinctly clarify attributes of the expected input data, such as the expected format, or an indicator
 that the field is optional. It is a more usable and accessible option than the HTML `placeholder` attribute.
 
 ```

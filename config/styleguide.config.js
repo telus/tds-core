@@ -195,7 +195,7 @@ module.exports = {
           components() {
             return compact([
               path.resolve('packages/Button/Button.jsx'),
-              path.resolve('src/components/Input/Input.jsx'),
+              path.resolve('packages/Input/Input.jsx'),
               path.resolve('packages/Checkbox/Checkbox.jsx'),
               path.resolve('src/components/Radio/Radio.jsx'),
               path.resolve('src/components/Select/Select.jsx'),
