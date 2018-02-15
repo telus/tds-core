@@ -5,7 +5,7 @@ import { warn } from '../../../shared/utils/warn'
 
 import ButtonLink from '../ButtonLink'
 
-import mockMatchMedia from '../../../src/__mocks__/matchMedia'
+import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'
 
 jest.mock('../../../shared/utils/warn')
 

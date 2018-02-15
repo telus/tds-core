@@ -1,20 +1,15 @@
 const path = require('path')
 
 module.exports = {
-  rootDir: path.resolve('src'),
-  roots: [
-    '<rootDir>',
-    path.resolve('docs/components'),
-    path.resolve('packages'),
-    path.resolve('shared'),
-  ],
+  rootDir: path.resolve('packages'),
+  roots: ['<rootDir>', path.resolve('docs/components'), path.resolve('shared')],
   moduleNameMapper: {
     '\\.modules.scss$': 'identity-obj-proxy',
-    '^.+\\.(css|scss)$': '<rootDir>/__mocks__/styleMock.js',
-    '^.+\\.(svg)$': '<rootDir>/__mocks__/fileMock.js',
+    '^.+\\.(css|scss)$': path.resolve('config/jest/__mocks__/styleMock.js'),
+    '^.+\\.(svg)$': path.resolve('config/jest/__mocks__/fileMock.js'),
   },
   setupFiles: [
-    '<rootDir>/__mocks__/requestAnimationFrame.js',
+    path.resolve('config/jest/__mocks__/requestAnimationFrame.js'),
     path.resolve('config/jest/setupEnzyme.js'),
     path.resolve('config/jest/setupGlobals.js'),
   ],

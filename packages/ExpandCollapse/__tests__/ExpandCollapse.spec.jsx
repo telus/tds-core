@@ -8,7 +8,7 @@ import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 import HairlineDivider from '../../HairlineDivider/HairlineDivider'
 import ExpandCollapse from '../ExpandCollapse'
 
-import mockMatchMedia from '../../../src/__mocks__/matchMedia'
+import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'
 
 describe('ExpandCollapse', () => {
   const doShallow = (props = {}) =>

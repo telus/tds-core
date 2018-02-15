@@ -7,7 +7,7 @@ import Text from '../../Text/Text'
 import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'
 
-import mockMatchMedia from '../../../src/__mocks__/matchMedia'
+import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'
 
 describe('Tooltip', () => {
   const defaultChildren = 'Tooltip text'
