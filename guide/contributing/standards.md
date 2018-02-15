@@ -39,18 +39,14 @@ Writing components for a widely-used component library has additional considerat
 Props de-structuring example:
 
 **Do**
-```jsx
 const MyLink = ({children, link, className, style, ...props}) => (
-  <a {...props} href={link}>children</a>
+<a {...props} href={link}>children</a>
 )
-```
 
 **Do not**
-```jsx
 const MyLink = ({children, link, ...props}) => (
-  <a href={link} {...props}>children</a>
+<a href={link} {...props}>children</a>
 )
-```
 
 ### Component Library Considerations
 

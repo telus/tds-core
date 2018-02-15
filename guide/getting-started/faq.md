@@ -6,7 +6,7 @@ The design system must strike a balance between flexibility and consistency. If 
 
 If your design shows a component being used in a way that does not match what is available in code, it may be either a mistake in the design, or a feature that has not yet been coded.
 
-Either way, [let us know about it](../contact.md) so that we can work with you on the appropriate solution.
+Either way, [let us know about it](/contact.md) so that we can work with you on the appropriate solution.
 
 ## How is TDS versioned?
 
@@ -35,7 +35,7 @@ Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md).
 
 TDS is striving to use non-invasive [ponyfills](https://github.com/sindresorhus/ponyfill) (a polyfill that does
 not modify built-in APIs) if it uses a browser API that is not widely supported natively. At the moment we
-recommend the use of the Set object in [polyfill.io](https://polyfill.io/v2/docs/) (see 
+recommend the use of the Set object in [polyfill.io](https://polyfill.io/v2/docs/) (see
 [starter kit example][starter-kit-polyfill]) for rendering the ExpandCollapse component in older browsers.
 
 ## What global styles does TDS set on the page?

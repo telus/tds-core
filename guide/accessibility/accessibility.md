@@ -1,11 +1,11 @@
 # Accessibility
 
-The TDS documentation is a starting point for accessibility information. 
+The TDS documentation is a starting point for accessibility information.
 
-  * [Colour and contrast](./colour-contrast.md)
-  * [Keyboard navigation](./keyboard-nav.md)
-  * [Screen readers](./screen-readers.md)
-  * [Content](./content.md)
+* [Colour and contrast](/accessibility/colour-contrast.md)
+* [Keyboard navigation](/accessibility/keyboard-nav.md)
+* [Screen readers](/accessibility/screen-readers.md)
+* [Content](/accessibility/content.md)
 
 You will find more detailed usage and implementation details at the following complementary sites.
 
