@@ -21,9 +21,12 @@ export default opts => {
   const options = Object.assign(
     {
       css: true,
-      external: [],
     },
     opts
+  )
+
+  const tdsExternals = Object.keys(options.dependencies).filter(dependency =>
+    dependency.startsWith('@tds')
   )
 
   return {
@@ -34,7 +37,7 @@ export default opts => {
     ],
     sourcemap: true,
 
-    external: ['react', 'react-dom', 'prop-types'].concat(options.external),
+    external: ['react', 'react-dom', 'prop-types'].concat(tdsExternals),
 
     plugins: [
       nodeResolve({
