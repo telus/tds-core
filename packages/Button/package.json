@@ -1,5 +1,5 @@
 {
-  "name": "@tds/core-box",
+  "name": "@tds/core-button",
   "version": "0.0.0-development",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -21,7 +21,6 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-responsive": "^0.0.0-development",
     "prop-types": "^15.5.10"
   }
 }
