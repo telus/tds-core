@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Box from '../Box/Box'
+import Box from '@tds/core-box'
 
 import safeRest from '../../shared/utils/safeRest'
 

@@ -1,11 +1,11 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 
-import Text from '../../Text/Text'
-import Paragraph from '../../Paragraph/Paragraph'
-import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
+import Text from '@tds/core-text'
+import Paragraph from '@tds/core-paragraph'
+import DecorativeIcon from '@tds/core-decorative-icon'
+import InputFeedback from '@tds/core-input-feedback'
 import Checkbox from '../Checkbox'
-import InputFeedback from '../../InputFeedback/InputFeedback'
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 describe('Checkbox', () => {
