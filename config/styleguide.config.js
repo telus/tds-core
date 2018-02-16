@@ -35,10 +35,10 @@ module.exports = {
     const namespacedComponents = {
       FlexGrid: 'FlexGrid',
       StepTracker: 'Steps',
-      'components/ExpandCollapse/Panel': 'ExpandCollapse',
+      'ExpandCollapse/Panel': 'ExpandCollapse',
       'Typography/Text': 'Text',
-      'Typography/DisplayHeading': 'DisplayHeading',
-      'Typography/Heading': 'Heading',
+      DisplayHeading: 'DisplayHeading',
+      Heading: 'Heading',
     }
 
     const componentDirectory = path.dirname(componentPath)
@@ -78,7 +78,7 @@ module.exports = {
           components() {
             return [
               path.resolve('packages/Box/Box.jsx'),
-              path.resolve('src/components/Responsive/Responsive.jsx'),
+              path.resolve('packages/Responsive/Responsive.jsx'),
             ]
           },
           sections: compact([
@@ -86,9 +86,9 @@ module.exports = {
               name: 'Grid',
               components() {
                 return [
-                  path.resolve('src/components/FlexGrid/FlexGrid.jsx'),
-                  path.resolve('src/components/FlexGrid/Row/Row.jsx'),
-                  path.resolve('src/components/FlexGrid/Col/Col.jsx'),
+                  path.resolve('packages/FlexGrid/FlexGrid.jsx'),
+                  path.resolve('packages/FlexGrid/Row/Row.jsx'),
+                  path.resolve('packages/FlexGrid/Col/Col.jsx'),
                 ]
               },
             },
@@ -99,7 +99,7 @@ module.exports = {
           components() {
             return compact([
               path.resolve('packages/Card/Card.jsx'),
-              path.resolve('src/components/Image/Image.jsx'),
+              path.resolve('packages/Image/Image.jsx'),
             ])
           },
           sections: compact([
@@ -107,19 +107,19 @@ module.exports = {
               name: 'Links',
               components() {
                 return [
-                  path.resolve('src/components/Link/Link.jsx'),
-                  path.resolve('src/components/Link/ChevronLink/ChevronLink.jsx'),
-                  path.resolve('src/components/Link/ButtonLink/ButtonLink.jsx'),
+                  path.resolve('packages/Link/Link.jsx'),
+                  path.resolve('packages/ChevronLink/ChevronLink.jsx'),
+                  path.resolve('packages/ButtonLink/ButtonLink.jsx'),
                 ]
               },
             },
             {
               name: 'Lists',
-              content: path.resolve('src/components/Lists/Lists.md'),
+              content: path.resolve('docs/Lists.md'),
               components() {
                 return [
-                  path.resolve('src/components/Lists/UnorderedList/UnorderedList.jsx'),
-                  path.resolve('src/components/Lists/OrderedList/OrderedList.jsx'),
+                  path.resolve('packages/UnorderedList/UnorderedList.jsx'),
+                  path.resolve('packages/OrderedList/OrderedList.jsx'),
                 ]
               },
             },
@@ -128,9 +128,9 @@ module.exports = {
               name: 'Expand collapse',
               components() {
                 return [
-                  path.resolve('src/components/ExpandCollapse/ExpandCollapse.jsx'),
-                  path.resolve('src/components/ExpandCollapse/Accordion/Accordion.jsx'),
-                  path.resolve('src/components/ExpandCollapse/Panel/Panel.jsx'),
+                  path.resolve('packages/ExpandCollapse/ExpandCollapse.jsx'),
+                  path.resolve('packages/ExpandCollapse/Accordion/Accordion.jsx'),
+                  path.resolve('packages/ExpandCollapse/Panel/Panel.jsx'),
                 ]
               },
             },
@@ -138,7 +138,7 @@ module.exports = {
               name: 'Dividers',
               components() {
                 return [
-                  path.resolve('src/components/Dividers/WaveDivider/WaveDivider.jsx'),
+                  path.resolve('packages/WaveDivider/WaveDivider.jsx'),
                   path.resolve('packages/DimpleDivider/DimpleDivider.jsx'),
                   path.resolve('packages/HairlineDivider/HairlineDivider.jsx'),
                 ]
@@ -148,30 +148,28 @@ module.exports = {
         },
         {
           name: 'Typography',
-          content: path.resolve('src/components/Typography/Typography.md'),
+          content: path.resolve('docs/Typography.md'),
           components() {
             return [
-              path.resolve('src/components/Typography/DisplayHeading/DisplayHeading.jsx'),
-              path.resolve(
-                'src/components/Typography/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'
-              ),
-              path.resolve('src/components/Typography/Heading/Heading.jsx'),
-              path.resolve('src/components/Typography/Heading/HeadingSup/HeadingSup.jsx'),
-              path.resolve('src/components/Typography/Paragraph/Paragraph.jsx'),
-              path.resolve('src/components/Typography/Text/Text.jsx'),
-              path.resolve('src/components/Typography/Text/TextSup/TextSup.jsx'),
-              path.resolve('src/components/Typography/Strong/Strong.jsx'),
-              path.resolve('src/components/Typography/Small/Small.jsx'),
+              path.resolve('packages/DisplayHeading/DisplayHeading.jsx'),
+              path.resolve('packages/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'),
+              path.resolve('packages/Heading/Heading.jsx'),
+              path.resolve('packages/Heading/HeadingSup/HeadingSup.jsx'),
+              path.resolve('packages/Paragraph/Paragraph.jsx'),
+              path.resolve('packages/Text/Text.jsx'),
+              path.resolve('packages/Text/TextSup/TextSup.jsx'),
+              path.resolve('packages/Strong/Strong.jsx'),
+              path.resolve('packages/Small/Small.jsx'),
             ]
           },
         },
         {
           name: 'Icons',
-          content: path.resolve('src/components/Icons/icons.md'),
+          content: path.resolve('docs/icons.md'),
           components() {
             return [
-              path.resolve('src/components/Icons/DecorativeIcon/DecorativeIcon.jsx'),
-              path.resolve('src/components/Icons/StandaloneIcon/StandaloneIcon.jsx'),
+              path.resolve('packages/DecorativeIcon/DecorativeIcon.jsx'),
+              path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
             ]
           },
         },
@@ -179,7 +177,7 @@ module.exports = {
           name: 'Feedback indicators',
           components() {
             return [
-              path.resolve('src/components/Notification/Notification.jsx'),
+              path.resolve('packages/Notification/Notification.jsx'),
               path.resolve('packages/Spinner/Spinner.jsx'),
               path.resolve('packages/StepTracker/Steps/Steps.jsx'),
             ]
@@ -190,13 +188,13 @@ module.exports = {
           components() {
             return compact([
               path.resolve('packages/Button/Button.jsx'),
-              path.resolve('src/components/Input/Input.jsx'),
+              path.resolve('packages/Input/Input.jsx'),
               path.resolve('packages/Checkbox/Checkbox.jsx'),
-              path.resolve('src/components/Radio/Radio.jsx'),
-              path.resolve('src/components/Select/Select.jsx'),
-              path.resolve('src/components/TextArea/TextArea.jsx'),
-              path.resolve('src/components/InputFeedback/InputFeedback.jsx'),
-              path.resolve('src/components/Tooltip/Tooltip.jsx'),
+              path.resolve('packages/Radio/Radio.jsx'),
+              path.resolve('packages/Select/Select.jsx'),
+              path.resolve('packages/TextArea/TextArea.jsx'),
+              path.resolve('packages/InputFeedback/InputFeedback.jsx'),
+              path.resolve('packages/Tooltip/Tooltip.jsx'),
               path.resolve('packages/SelectorCounter/SelectorCounter.jsx'),
             ])
           },
@@ -211,7 +209,10 @@ module.exports = {
       : path.resolve('docs/dev-index.html'),
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve('guide/components'),
-  require: [path.resolve('src/scss/global.scss'), path.resolve('docs/scss/styleguide.scss')],
+  require: [
+    path.resolve('packages/css-reset/index.scss'),
+    path.resolve('docs/scss/styleguide.scss'),
+  ],
   styleguideComponents: {
     StyleGuideRenderer: path.resolve('docs/components/StyleGuide/StyleGuideRenderer'),
     Logo: path.resolve('docs/components/Logo/Logo'),

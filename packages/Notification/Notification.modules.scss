@@ -1,0 +1,17 @@
+@import '../colour/colours';
+
+.instructional {
+  composes: default from '../../shared/styles/Messaging.modules.scss';
+}
+
+.branded {
+  background-color: $color-white-lilac;
+}
+
+.success {
+  composes: success from '../../shared/styles/Messaging.modules.scss';
+}
+
+.error {
+  composes: error from '../../shared/styles/Messaging.modules.scss';
+}

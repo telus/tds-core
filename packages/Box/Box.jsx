@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Responsive from '../../src/components/Responsive/Responsive'
+import Responsive from '../Responsive/Responsive'
 
-import safeRest from '../../src/utils/safeRest'
-import joinClassNames from '../../src/utils/joinClassNames'
-import capitalize from '../../src/utils/capitalize'
+import safeRest from '../../shared/utils/safeRest'
+import joinClassNames from '../../shared/utils/joinClassNames'
+import capitalize from '../../shared/utils/capitalize'
 
 import styles from './Box.modules.scss'
 

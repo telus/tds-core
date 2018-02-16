@@ -1,6 +1,6 @@
 .dimple {
-  composes: noSpacing from '../../src/components/Spacing.modules.scss';
-  composes: none from '../../src/components/Borders.modules.scss';
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
+  composes: none from '../../shared/styles/Borders.modules.scss';
 
   height: 32px;
 

@@ -5,11 +5,25 @@
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["mixin", "include", "each"]
+        "ignoreAtRules": [
+          "mixin",
+          "include",
+          "each",
+          "if",
+          "else",
+          "content",
+          "function",
+          "error",
+          "return",
+          "extend"
+        ]
       }
     ],
     "declaration-empty-line-before": null,
     "indentation": null,
-    "declaration-colon-newline-after": null
+    "declaration-colon-newline-after": null,
+    "value-list-comma-newline-after": null,
+    "block-closing-brace-newline-after": null,
+    "at-rule-empty-line-before": null
   }
 }

@@ -1,0 +1,48 @@
+@import '../colour/colours';
+
+$button-text-color: $color-white;
+$primary-bg-color: $color-primary;
+$secondary-bg-color: $color-secondary;
+
+.base {
+  text-decoration: none;
+}
+
+.primary {
+  composes: base;
+
+  &:link,
+  &:visited {
+    color: $button-text-color;
+  }
+
+  &:hover {
+    color: $primary-bg-color;
+  }
+}
+
+.secondary {
+  composes: base;
+
+  &:link,
+  &:visited {
+    color: $button-text-color;
+  }
+
+  &:hover {
+    color: $secondary-bg-color;
+  }
+}
+
+.inverted {
+  composes: base;
+
+  &:link,
+  &:visited {
+    color: $color-text;
+  }
+
+  &:hover {
+    color: $button-text-color;
+  }
+}

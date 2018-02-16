@@ -1,3 +1,61 @@
+#### 1.0.3 (2018-02-14)
+
+##### Build System / Dependencies
+
+* **nightwatch:**
+  * Remove h1/title check in styleguidist ([da7b4781](https://github.com/telusdigital/tds/commit/da7b47819572d802a1f4bac355a636ccc58a81a9))
+  * Rename /tests to /functional-tests ([e9e451aa](https://github.com/telusdigital/tds/commit/e9e451aab64595a037f01c979d45bd322ff924c6))
+  * Add ability to run accessibility tests locally ([a44865f3](https://github.com/telusdigital/tds/commit/a44865f308bd8544f86cb4fdb8ee514fe1b309f8))
+
+##### Documentation Changes
+
+* Remove unused documentation files ([052fda52](https://github.com/telusdigital/tds/commit/052fda524f83799d5ea8ff582969a9c6409009fc))
+* **designers:**
+  * removed copy ([1b2faea0](https://github.com/telusdigital/tds/commit/1b2faea0f54ef94ab742f15d81b0f313c43afa11))
+  * add grid.sketch file reference ([27da7ac5](https://github.com/telusdigital/tds/commit/27da7ac5eb1a69939caae889c90ad92df8cdfd19))
+* **typography:** Remove inaccurate references to typography Sass ([#472](https://github.com/telusdigital/tds/pull/472)) ([2885e933](https://github.com/telusdigital/tds/commit/2885e9337e91e32aaca8d6ff436c2db4bfd9c369))
+* **checkbox/radio:**
+  * Remove double fieldset wrappers ([96b56c8b](https://github.com/telusdigital/tds/commit/96b56c8bd1e47a922759d05c67f347f4e9bce256))
+  * Fix accessibility warnings in code snippets ([9481d7ce](https://github.com/telusdigital/tds/commit/9481d7ce90b447762cff191dd265288ea2205303))
+* **styleguidist:** Upgrade styleguidist to 6.2. Remove leftover Adobe script stuff from the index. ([f68681b4](https://github.com/telusdigital/tds/commit/f68681b4e0917a7000da1d598c6d1483d6863b09))
+* **box:** Add alt attribute to box sample images ([593da043](https://github.com/telusdigital/tds/commit/593da04320172749a66e8ed8f5bb9df790704786))
+
+##### Bug Fixes
+
+* **select:**
+  * Remove background-color: transparent because it is not doing anything ([55e7a385](https://github.com/telusdigital/tds/commit/55e7a385b3663f23b14e738c942fd1e6ba203cf1))
+  * Add pointer-events attribute ([97b7fb22](https://github.com/telusdigital/tds/commit/97b7fb22e16d500ac08f4fa9b89265c211d4baad))
+  * Make chevron visible and clickable ([e3b3f38c](https://github.com/telusdigital/tds/commit/e3b3f38cd42ef19d450365026db4998b1bf08117))
+* **eslint:** upgrade ([#473](https://github.com/telusdigital/tds/pull/473)) ([af48250e](https://github.com/telusdigital/tds/commit/af48250e2b062e6786eabf20e50111ccb91f9640))
+* **responsive:** use defaultmatches for all uses ([#471](https://github.com/telusdigital/tds/pull/471)) ([#461](https://github.com/telusdigital/tds/pull/461)) ([314bc55d](https://github.com/telusdigital/tds/commit/314bc55ddd23c49a7e0c7b9550f340ffd4a92fc8))
+* **nighwatch:** Update path to /tests in config file ([0c59c7b3](https://github.com/telusdigital/tds/commit/0c59c7b3e824e60ad005c5b2301df50de1f28bd6))
+
+##### Refactors
+
+* **icons:** move to packages for split versions ([38e3cbc6](https://github.com/telusdigital/tds/commit/38e3cbc6179e94c2ec5e8248baf061d4944555ea))
+* **form-field:** move to shared for split packages ([2033d4fe](https://github.com/telusdigital/tds/commit/2033d4fe319067bf39e6efe539aea4d594882ef2))
+* **flexbox:** move to shared for split versions ([2580de1c](https://github.com/telusdigital/tds/commit/2580de1c65200eec1bac904926671df9b943c6b2))
+* **expand-collapse:** move to packages for split versions ([34e0d3fb](https://github.com/telusdigital/tds/commit/34e0d3fbdcd260bdbeb254d4b96878a438697d2c))
+* **clickable:** move to shared for split versions ([41243b2c](https://github.com/telusdigital/tds/commit/41243b2cbd8ef545645907bafb40bb9ca7312281))
+* **choice:** move to packages for split versions ([e7d1c192](https://github.com/telusdigital/tds/commit/e7d1c192c33c54e4ddae5127713848c1da43521a))
+* **animation:** move to shared for split versions ([1a5cb634](https://github.com/telusdigital/tds/commit/1a5cb634ff4931d702e921a63ab3b0e7b375d03a))
+* **flex-grid:** move to packages for split versioning ([bbeb8310](https://github.com/telusdigital/tds/commit/bbeb83104150661583fce31292de4b2f3ec932ad))
+* **wave-divider:** move to packages for split versions ([85f5d310](https://github.com/telusdigital/tds/commit/85f5d310cf972435f065be66ba419eed0999eef5))
+* **hairline-divider:** move to packages for split versioning ([d1e0216a](https://github.com/telusdigital/tds/commit/d1e0216ab7b43fc3e7d28b2095133e1e2c23809e))
+* **dimple-divider:** move to packages for split versioning ([cd1e93eb](https://github.com/telusdigital/tds/commit/cd1e93eb3eb897c9dd1b4405c9a7afa25adc3dda))
+* **checkbox:** move to packages for split versioning ([32299541](https://github.com/telusdigital/tds/commit/32299541cee874c15b7754de1dca4e5179fdf055))
+* **card:** move to packages for split versioning ([995b006b](https://github.com/telusdigital/tds/commit/995b006b17c112a0e629a48542de1e666ea9d813))
+* **button:** move button to packages for split versioning ([ce89b99b](https://github.com/telusdigital/tds/commit/ce89b99b43ea5cee545fa48b619f0c74bb90a61b))
+* **box:** move to packages for split versioning ([8cdd965f](https://github.com/telusdigital/tds/commit/8cdd965fc77d841384087773d3a89cfcff90e105))
+* **step-tracker:** move to packages for split versioning ([53a2a8b1](https://github.com/telusdigital/tds/commit/53a2a8b160827912347e09738dbf557aef8d6ea8))
+* **spinner:** move to packages directory for split versioning ([13accebd](https://github.com/telusdigital/tds/commit/13accebd42367c11f6c757ba6a0ef57aae033572))
+* **selector-counter:** Move to packages folder to prepare for indepedent versioning ([30f6ee95](https://github.com/telusdigital/tds/commit/30f6ee9565c87055fe6bebc602ab1e75795f3b13))
+
+##### Code Style Changes
+
+* **nightwatch:** Remove eslint disabled statements ([8808ba01](https://github.com/telusdigital/tds/commit/8808ba01a3076da8868056e8f0bce765d3e23014))
+* **echint:** Ignore nightwatch accessibility reports in tests/reports ([bdf81355](https://github.com/telusdigital/tds/commit/bdf813554a690cab0d59b76e254cdd546a95dced))
+
 #### 1.0.2 (2018-02-06)
 
 ##### Build System / Dependencies

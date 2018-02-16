@@ -1,5 +1,5 @@
-@import '../../src/scss/settings/colours';
-@import '../../src/scss/utility/responsive';
+@import '../colour/colours';
+@import '../../shared/scss/responsive';
 
 $zindex-negative: -1 !default;
 $zindex-modal-backdrop: 1400 !default;

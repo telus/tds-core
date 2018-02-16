@@ -1,0 +1,35 @@
+@import '../colour/colours';
+
+.wrapper {
+  composes: relative from '../../shared/styles/Position.modules.scss';
+
+  background-color: $color-white;
+}
+
+.select {
+  composes: height from '../../shared/styles/Forms.modules.scss';
+
+  // Hide the arrows
+  appearance: none;
+
+  // Hide the arrows for IE
+  &::-ms-expand {
+    display: none;
+  }
+
+  background-color: transparent;
+}
+
+.positionSelectOnTop {
+  composes: relative from '../../shared/styles/Position.modules.scss';
+
+  z-index: 2;
+}
+
+.iconsPosition {
+  composes: absolute centerVertically from '../../shared/styles/Position.modules.scss';
+  composes: iconRight from '../../shared/components/FormField/FormField.modules.scss';
+
+  z-index: 3;
+  pointer-events: none;
+}

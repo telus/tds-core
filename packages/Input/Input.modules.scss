@@ -1,0 +1,13 @@
+.hideNumberSpinner {
+  // Hide the "spinner" element for input[type="number]
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.iconsPosition {
+  composes: absolute centerVertically from '../../shared/styles/Position.modules.scss';
+  composes: iconRight from '../../shared/components/FormField/FormField.modules.scss';
+}

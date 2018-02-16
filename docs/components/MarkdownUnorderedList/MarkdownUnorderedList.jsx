@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Box from '../../../packages/Box/Box'
-import UnorderedList from '../../../src/components/Lists/UnorderedList/UnorderedList'
-import Text from '../../../src/components/Typography/Text/Text'
+import UnorderedList from '../../../packages/UnorderedList/UnorderedList'
+import Text from '../../../packages/Text/Text'
 
 const MarkdownUnorderedList = ({ children }) => (
   <Box below={3}>

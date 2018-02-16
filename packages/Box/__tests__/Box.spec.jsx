@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 
 import Box from '../Box'
 
-import mockMatchMedia from '../../../src/__mocks__/matchMedia'
+import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'
 
 describe('Box', () => {
   const defaultProps = { between: 3 }

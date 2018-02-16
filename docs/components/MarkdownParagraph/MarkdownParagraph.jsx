@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Box from '../../../packages/Box/Box'
-import Paragraph from '../../../src/components/Typography/Paragraph/Paragraph'
+import Paragraph from '../../../packages/Paragraph/Paragraph'
 
 const MarkdownParagraph = ({ small, children }) => (
   <Box below={3}>

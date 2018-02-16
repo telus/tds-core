@@ -1,0 +1,47 @@
+@import '../colour/colours';
+@import '../../shared/scss/typography';
+@import '../../shared/scss/responsive';
+
+.sup {
+  composes: baseSupSubScripts from '../Text/Text.modules.scss';
+}
+
+.base {
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
+
+  @include helvetica-neue-thin-35;
+}
+
+.heading {
+  composes: base;
+
+  font-size: 2.75rem;
+  line-height: 1.14; // 48px
+
+  .sup {
+    font-size: 1.25rem;
+    top: -1.2em;
+  }
+}
+
+.headingDesktop {
+  composes: base;
+
+  font-size: 4.5rem;
+  line-height: 1.11; // 80px
+  letter-spacing: 0.2px;
+
+  .sup {
+    font-size: 1.25rem;
+    top: -2.2em;
+  }
+}
+
+.inverted {
+  color: $color-white;
+}
+
+.default {
+  color: $color-secondary;
+}
