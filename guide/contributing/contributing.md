@@ -1,8 +1,8 @@
 # Contributing to TDS
 
-* [Designer guide](/contributing/designer-guide.md)
-* [Developer guide](/contributing/developer-guide.md)
-* [Codebase overview](/contributing/codebase-overview.md)
+* [Designer guide](./designer-guide.md)
+* [Developer guide](./developer-guide.md)
+* [Codebase overview](./codebase-overview.md)
 
 **_In early 2018, the TDS Platform team will be rolling out more robust architecture, tooling, and processes to better scale community
 component development and contribution._**
@@ -17,7 +17,7 @@ for each one. If you'd like to contribute to any of the available TDS components
 Expect architectural changes and governance processes to be established soon that will drive a more mature contribution
 process. Thank you for your patience.
 
-Learn more by reading the [TELUS Design Platform roadmap](/roadmap.md) or by [reaching out to us](/contact.md).
+Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md) or by [reaching out to us](../contact.md).
 
 ## How to contribute {#how-to}
 
@@ -46,8 +46,8 @@ There are different paths to developing a solution depending on your goal:
   to write code. You can follow this guide on [how to edit files within GitHub](https://help.github.com/articles/editing-files-in-your-repository/).
   When making commits, be sure to follow the [TELUS commit standards](https://github.com/telusdigital/reference-architecture/blob/master/process/contribution-model.md#commit-template).
   There is no need to create an issue first, you may edit documentation and create a pull request anytime.
-* **Designers producing assets or symbols**: follow the [designer guide](/contributing/designer-guide.md) to contributing Sketch files.
-* **Developers making changes to components**: follow the [developer guide](/contributing/developer-guide.md) to set up your environment for TDS development and read the [codebase overview](/contributing/codebase-overview.md) to understand the structure of the codebase and
+* **Designers producing assets or symbols**: follow the [designer guide](./designer-guide.md) to contributing Sketch files.
+* **Developers making changes to components**: follow the [developer guide](./developer-guide.md) to set up your environment for TDS development and read the [codebase overview](./codebase-overview.md) to understand the structure of the codebase and
   the conventions being followed
 
 ### 3. Make a pull request {#3-make-a-pull-request}
