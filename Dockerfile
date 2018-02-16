@@ -34,8 +34,8 @@ COPY . /app
 # Build the app.
 RUN yarn run build-package && \
   yarn gitbook:install && \
-  STYLEGUIDIST_ENV=staging yarn run build:docs-staging && \
-  STYLEGUIDIST_ENV=production yarn run build-styleguide
+  STYLEGUIDIST_ENV=staging yarn run build-docs && mkdir -p build/staging && mv guide/_book/* build/staging && \
+  STYLEGUIDIST_ENV=production yarn run build-docs && mkdir -p build/production && mv guide/_book/* build/production
 
 # Set the container's user to the newly created one.
 USER node

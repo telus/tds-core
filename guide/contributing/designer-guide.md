@@ -4,7 +4,7 @@ Guidelines & Standards
 
 ## Format:
 
-* Design contributions should be contributed in the form of a Sketch file (*.sketch).
+* Design contributions should be contributed in the form of a Sketch file (\*.sketch).
 
 * The component being contributed should be in a stand-alone artboard and not part of a mock-up (this will reduce the risk of any confusion of what is being supplied for contribution)
 
@@ -22,7 +22,7 @@ Each design contribution should be supplied in the following viewports:
 
 * XS (mobile): 320 px with container width 288 px
 
-For each viewport supplied, the [TDS grid](http://tds.telus.com/3-Foundational-Elements/4-grid.html) should be applied to ensure consistent sizing and measurements across the system.
+For each viewport supplied, the TDS grid should be applied to ensure consistent sizing and measurements across the system.
 
 #### Page/Layer Naming:
 
@@ -30,15 +30,15 @@ Layers should be named clearly and not using the default naming (e.g. Layer 1, L
 
 Applying the above standards to the contributed sketch files will ensure a clean contribution that can be easily added to the DSM library and used by all teams. Contributed components will be used by teams within TELUS and also external vendors.
 
-## Typestyles: 
+## Typestyles:
 
-For any of the components being contributed, the file should have the [TDS type stack](http://tds.telus.com/3-Foundational-Elements/6-typography.html) applied to any and ALL of the text blocks in the contribution (e.g. Display, H1, H2, H3, etc). 
+For any of the components being contributed, the file should have the TDS type stack applied to any and ALL of the text blocks in the contribution (e.g. Display, H1, H2, H3, etc).
 
 Note: We understand that there are some cases that require the type stack to change slightly (ie. colour of H1). In these cases, please make the appropriate change to the file, and note it during the contribution and we can add the new type stack style to the TDS component library. This will help us manage and update the typestack in the DSM library for others consume.
 
 ## Use of Symbols:
 
-* Any of the existing components in TDS being used in the *NEW* component being contributed should be maintained as a symbol from the DSM component library. 
+* Any of the existing components in TDS being used in the _NEW_ component being contributed should be maintained as a symbol from the DSM component library.
 
 * **Any new components being contributed, should NOT be made into a symbol**. We will do this on our end and add it to the master Sketch file. This will ensure that the NEW symbol is named and put in the appropriate section.
 

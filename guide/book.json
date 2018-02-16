@@ -1,9 +1,9 @@
 {
   "title": "TELUS Design System",
-  "plugins": ["otherlink", "collapsible-menu", "insert-logo-link"],
+  "plugins": ["otherlink", "collapsible-menu", "insert-logo-link", "-sharing"],
   "pluginsConfig": {
     "insert-logo-link": {
-      "src": "/Logo.svg",
+      "src": "https://cdn.rawgit.com/telusdigital/tds/de9e745a/guide/Logo.svg",
       "url": "/"
     }
   }

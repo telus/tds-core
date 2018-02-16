@@ -35,7 +35,7 @@ Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md).
 
 TDS is striving to use non-invasive [ponyfills](https://github.com/sindresorhus/ponyfill) (a polyfill that does
 not modify built-in APIs) if it uses a browser API that is not widely supported natively. At the moment we
-recommend the use of the Set object in [polyfill.io](https://polyfill.io/v2/docs/) (see 
+recommend the use of the Set object in [polyfill.io](https://polyfill.io/v2/docs/) (see
 [starter kit example][starter-kit-polyfill]) for rendering the ExpandCollapse component in older browsers.
 
 ## What global styles does TDS set on the page?

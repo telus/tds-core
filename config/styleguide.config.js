@@ -3,11 +3,6 @@ const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
-const getStyleguideDir = () => {
-  const isStaging = styleguidistEnv === 'staging'
-  return path.resolve(isStaging ? 'guide/components' : `build/${styleguidistEnv}`)
-}
-
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
 const enabledInStaging = []
 
@@ -213,7 +208,7 @@ module.exports = {
       ? path.resolve('docs/index.html')
       : path.resolve('docs/dev-index.html'),
   assetsDir: path.resolve('docs/assets/'),
-  styleguideDir: getStyleguideDir(),
+  styleguideDir: path.resolve('guide/components'),
   require: [
     path.resolve('packages/css-reset/index.scss'),
     path.resolve('docs/scss/styleguide.scss'),
