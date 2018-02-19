@@ -22,7 +22,7 @@ Brand approved imagery can be found by accessing [BrandHub](http://brand.telus.c
 
 See the TELUS Brand Photography Guidelines for detailed information on usage and implementation.
 
-See the [Image component](ref:///components/index.html#image) for implementation details.
+See the [Image component](ref://../components/index.html#image) for implementation details.
 
 ## Governance
 

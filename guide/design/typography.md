@@ -46,7 +46,7 @@ potentially important words)
 
 ## Usage
 
-See the [Typography components](ref:///components/index.html#typography) for implementation details.
+See the [Typography components](ref://../components/index.html#typography) for implementation details.
 
 ## Governance
 

@@ -16,7 +16,7 @@ the message up to help with comprehension and recall. Hairlines are the visual c
 
 ## Usage
 
-See the [Divider components](ref:///components/index.html#dividers) for implementation details:
+See the [Divider components](ref://../components/index.html#dividers) for implementation details:
 
 ## Governance
 

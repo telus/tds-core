@@ -24,6 +24,7 @@
 * [Iconography](design/iconography.md)
 * [Writing](design/writing.md)
 * [Layout](design/layout.md)
+* [Dividers](design/dividers.md)
 * [Motion](design/motion.md)
 * [Depth](design/depth.md)
 

@@ -9,9 +9,9 @@ System uses a 12 column grid and a spacing system to assist you in creating a vi
 
 See the following components for implementation details:
 
-* [FlexGrid](ref:///components/index.html#flexgrid)
-* [Responsive](ref:///components/index.html#responsive)
-* [Box](ref:///components/index.html#box)
+* [FlexGrid](ref://../components/index.html#flexgrid)
+* [Responsive](ref://../components/index.html#responsive)
+* [Box](ref://../components/index.html#box)
 
 ## Governance
 

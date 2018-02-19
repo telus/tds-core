@@ -137,7 +137,7 @@ You can use the TDS component library by dragging and dropping the assets onto y
 
 ## TDS Component Documentation
 
-To view the code and usage of the components please visit the [TDS components documentation site](ref:///components/index.html).
+To view the code and usage of the components please visit the [TDS components documentation site](ref://../components/index.html).
 
 ## Master Sketch file
 
@@ -153,7 +153,7 @@ TELUS' primary typeface is Helvetica Neue which is available as a system font on
 
 ## Icons
 
-Currently [Utility icons](ref:///components/index.html#icons) are available to use as components in the TELUS Design System. Decorative icon usage is currently being reviewed by the TELUS Brand team. Stay tuned for more updates. In the meantime, you can continue to use the Brand approved icons available on the [TELUS BrandHub](https://brand.telus.com/library/all?media_type%5B0%5D=media_icons).
+Currently [Utility icons](ref://../components/index.html#icons) are available to use as components in the TELUS Design System. Decorative icon usage is currently being reviewed by the TELUS Brand team. Stay tuned for more updates. In the meantime, you can continue to use the Brand approved icons available on the [TELUS BrandHub](https://brand.telus.com/library/all?media_type%5B0%5D=media_icons).
 
 ## Images
 
