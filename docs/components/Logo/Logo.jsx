@@ -16,7 +16,7 @@ const Logo = () => (
     <Text size="small">v{version}</Text>
 
     <Box horizontal={1} vertical={2}>
-      <ChevronLink href="/" variant="secondary" direction="left">
+      <ChevronLink href="../" variant="secondary" direction="left">
         TDS guidelines
       </ChevronLink>
     </Box>
