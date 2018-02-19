@@ -17,7 +17,7 @@ exports[`Accordion renders a closed accordion 1`] = `
         vertical={false}
       >
         <hr
-          className="horizontalThin"
+          className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
         />
       </HairlineDivider>
       <PanelWrapper
@@ -66,7 +66,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                     }
                   >
                     <div
-                      className="verticalPaddingDesktop-3"
+                      className="TDS_Box-modules__verticalPaddingDesktop-3___a3GtY"
                     >
                       <Box
                         between={3}
@@ -87,7 +87,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                             }
                           >
                             <div
-                              className="betweenRightMarginDesktop-3 inline"
+                              className="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz"
                             >
                               <div>
                                 <Translate
@@ -125,7 +125,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                         size="large"
                                       >
                                         <span
-                                          className="large largeFont color"
+                                          className="TDS_Text-modules__large___qDFJY TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__largeFont___3KY0Z TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
                                         >
                                           <DecorativeIcon
                                             size={16}
@@ -140,7 +140,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                             >
                                               <i
                                                 aria-hidden="true"
-                                                className="iconCaretDown primary size16"
+                                                className="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
                                               />
                                             </Icon>
                                           </DecorativeIcon>
@@ -183,7 +183,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                             size="large"
                                           >
                                             <span
-                                              className="large largeFont color"
+                                              className="TDS_Text-modules__large___qDFJY TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__largeFont___3KY0Z TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
                                             >
                                               Panel title
                                             </span>
@@ -239,7 +239,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                 >
                   <DimpleDivider>
                     <hr
-                      className="dimple"
+                      className="TDS_DimpleDivider-modules__dimple___1OWjL TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
                     />
                   </DimpleDivider>
                   <Box
@@ -261,7 +261,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                         }
                       >
                         <div
-                          className="horizontalPaddingDesktop-4 verticalPaddingDesktop-4"
+                          className="TDS_Box-modules__horizontalPaddingDesktop-4___awwLJ TDS_Box-modules__verticalPaddingDesktop-4___1KCGS"
                         >
                           <Text
                             block={true}
@@ -270,7 +270,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                             size="base"
                           >
                             <div
-                              className="base baseFont color"
+                              className="TDS_Text-modules__base___2egO5 TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__baseFont___1t0na TDS_Text-modules__color___2axbI"
                             >
                               <Panel
                                 disabled={false}
@@ -297,7 +297,7 @@ exports[`Accordion renders a closed accordion 1`] = `
             vertical={false}
           >
             <hr
-              className="horizontalThin"
+              className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
             />
           </HairlineDivider>
         </div>
@@ -327,7 +327,7 @@ exports[`Accordion renders an open accordion 1`] = `
         vertical={false}
       >
         <hr
-          className="horizontalThin"
+          className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
         />
       </HairlineDivider>
       <PanelWrapper
@@ -376,7 +376,7 @@ exports[`Accordion renders an open accordion 1`] = `
                     }
                   >
                     <div
-                      className="verticalPaddingDesktop-3"
+                      className="TDS_Box-modules__verticalPaddingDesktop-3___a3GtY"
                     >
                       <Box
                         between={3}
@@ -397,7 +397,7 @@ exports[`Accordion renders an open accordion 1`] = `
                             }
                           >
                             <div
-                              className="betweenRightMarginDesktop-3 inline"
+                              className="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz"
                             >
                               <div>
                                 <Translate
@@ -435,7 +435,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                         size="large"
                                       >
                                         <span
-                                          className="large largeFont color"
+                                          className="TDS_Text-modules__large___qDFJY TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__largeFont___3KY0Z TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
                                         >
                                           <DecorativeIcon
                                             size={16}
@@ -450,7 +450,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                             >
                                               <i
                                                 aria-hidden="true"
-                                                className="iconCaretUp primary size16"
+                                                className="TDS_Icon-modules__iconCaretUp___3PL_K TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
                                               />
                                             </Icon>
                                           </DecorativeIcon>
@@ -493,7 +493,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                             size="large"
                                           >
                                             <span
-                                              className="large largeFont color"
+                                              className="TDS_Text-modules__large___qDFJY TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__largeFont___3KY0Z TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
                                             >
                                               Panel title
                                             </span>
@@ -549,7 +549,7 @@ exports[`Accordion renders an open accordion 1`] = `
                 >
                   <DimpleDivider>
                     <hr
-                      className="dimple"
+                      className="TDS_DimpleDivider-modules__dimple___1OWjL TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
                     />
                   </DimpleDivider>
                   <Box
@@ -571,7 +571,7 @@ exports[`Accordion renders an open accordion 1`] = `
                         }
                       >
                         <div
-                          className="horizontalPaddingDesktop-4 verticalPaddingDesktop-4"
+                          className="TDS_Box-modules__horizontalPaddingDesktop-4___awwLJ TDS_Box-modules__verticalPaddingDesktop-4___1KCGS"
                         >
                           <Text
                             block={true}
@@ -580,7 +580,7 @@ exports[`Accordion renders an open accordion 1`] = `
                             size="base"
                           >
                             <div
-                              className="base baseFont color"
+                              className="TDS_Text-modules__base___2egO5 TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__baseFont___1t0na TDS_Text-modules__color___2axbI"
                             >
                               <Panel
                                 disabled={false}
@@ -607,7 +607,7 @@ exports[`Accordion renders an open accordion 1`] = `
             vertical={false}
           >
             <hr
-              className="horizontalThin"
+              className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
             />
           </HairlineDivider>
         </div>

@@ -2,17 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
-import Box from '../../Box/Box'
+import Box from '@tds/core-box'
+import DecorativeIcon from '@tds/core-decorative-icon'
+import Text from '@tds/core-text'
+import HairlineDivider from '@tds/core-hairline-divider'
+import DimpleDivider from '@tds/core-dimple-divider'
+import Responsive from '@tds/core-responsive'
+
 import Clickable from '../../../shared/components/Clickable/Clickable'
-import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
-import Text from '../../Text/Text'
-import HairlineDivider from '../../HairlineDivider/HairlineDivider'
-import DimpleDivider from '../../DimpleDivider/DimpleDivider'
 import Reveal from '../../../shared/components/Animation/Reveal'
 import Translate from '../../../shared/components/Animation/Translate'
 import Flexbox from '../../../shared/components/Flexbox/Flexbox'
+
 import Panel from '../Panel/Panel'
-import Responsive from '../../Responsive/Responsive'
+
 
 import joinClassNames from '../../../shared/utils/joinClassNames'
 

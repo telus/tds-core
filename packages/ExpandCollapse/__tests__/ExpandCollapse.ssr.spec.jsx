@@ -8,7 +8,7 @@ import { render } from 'enzyme'
 import ExpandCollapse from '../ExpandCollapse'
 
 describe('ExpandCollapse server side rendering', () => {
-  it('uses mobile styles first', () => {
+  it.skip('uses mobile styles first', () => {
     const expandCollapse = render(
       <ExpandCollapse>
         <ExpandCollapse.Panel id="ssr" header="Yes" tertiaryText="Is that so?">
