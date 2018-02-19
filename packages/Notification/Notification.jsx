@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../shared/utils/safeRest'
+import FlexGrid from '@tds/core-flex-grid'
+import DecorativeIcon from '@tds/core-decorative-icon'
+import Paragraph from '@tds/core-paragraph'
+import Box from '@tds/core-box'
 
-import FlexGrid from '../FlexGrid/FlexGrid'
-import DecorativeIcon from '../DecorativeIcon/DecorativeIcon'
+import safeRest from '../../shared/utils/safeRest'
 import ColoredTextProvider from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
-import Paragraph from '../Paragraph/Paragraph'
-import Box from '../Box/Box'
 
 import messagingStyles from '../../shared/styles/Messaging.modules.scss'
 import styles from './Notification.modules.scss'
