@@ -2,15 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
+import Box from '@tds/core-box'
+import Text from '@tds/core-text'
+import Paragraph from '@tds/core-paragraph'
+import InputFeedback from '@tds/core-input-feedback'
+import Tooltip from '@tds/core-tooltip'
+
 import safeRest from '../../utils/safeRest'
 import generateId from '../../utils/generateId'
 
-import Box from '../../../packages/Box/Box'
 import Flexbox from '../Flexbox/Flexbox'
-import Text from '../../../packages/Text/Text'
-import Paragraph from '../../../packages/Paragraph/Paragraph'
-import InputFeedback from '../../../packages/InputFeedback/InputFeedback'
-import Tooltip from '../../../packages/Tooltip/Tooltip'
 
 import styles from './FormField.modules.scss'
 import positionStyles from '../../styles/Position.modules.scss'
