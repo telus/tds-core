@@ -1,5 +1,5 @@
 {
-  "name": "@tds/core-select",
+  "name": "@tds/core-text-area",
   "version": "0.0.0-development",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "@tds/core-box": "^0.0.0-development",
-    "@tds/core-decorative-icon": "^0.0.0-development",
     "@tds/core-input-feedback": "^0.0.0-development",
     "@tds/core-paragraph": "^0.0.0-development",
     "@tds/core-standalone-icon": "^0.0.0-development",

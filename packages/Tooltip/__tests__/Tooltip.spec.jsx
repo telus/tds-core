@@ -4,7 +4,6 @@ import { shallow, render, mount } from 'enzyme'
 import StandaloneIcon from '@tds/core-standalone-icon'
 import Text from '@tds/core-text'
 
-import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'
 
 import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'
@@ -209,14 +208,5 @@ describe('Connecting Tooltips to form fields', () => {
     const tooltip = shallow(<Tooltip>The tooltip</Tooltip>)
 
     expect(tooltip.find(StandaloneIcon)).toHaveProp('a11yText', 'Reveal additional information.')
-  })
-
-  it('connects to Input', () => {
-    const input = mount(<Input label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />)
-
-    expect(input.find(StandaloneIcon)).toHaveProp(
-      'a11yText',
-      'Reveal additional information about Some field.'
-    )
   })
 })

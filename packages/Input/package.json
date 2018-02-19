@@ -30,7 +30,9 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
+    "@tds/core-text-area": "^0.0.0-development",
     "airbnb-prop-types": "^2.8.1",
-    "core-js": "^2.5.3"
+    "core-js": "^2.5.3",
+    "react-transition-group": "^2.2.1"
   }
 }

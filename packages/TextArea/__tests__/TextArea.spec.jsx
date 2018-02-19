@@ -1,13 +1,14 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import StandaloneIcon from '../../StandaloneIcon/StandaloneIcon'
-import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
-import Text from '../../Text/Text'
-import Paragraph from '../../Paragraph/Paragraph'
+import StandaloneIcon from '@tds/core-standalone-icon'
+import Text from '@tds/core-text'
+import Paragraph from '@tds/core-paragraph'
+import InputFeedback from '@tds/core-input-feedback'
+
 import Fade from '../../../shared/components/Animation/Fade'
 import TextArea from '../TextArea'
-import InputFeedback from '../../InputFeedback/InputFeedback'
+
 
 describe('TextArea', () => {
   const defaultProps = {
@@ -242,7 +243,6 @@ describe('TextArea', () => {
       const { textarea } = doMount({ disabled: true, feedback: 'error' })
 
       expect(textarea.find(StandaloneIcon)).toBeEmpty()
-      expect(textarea.find(DecorativeIcon)).toBeEmpty()
     })
   })
 
