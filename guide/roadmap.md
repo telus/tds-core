@@ -1,12 +1,12 @@
 # Platform roadmap
 
-We plan the TELUS Design Platform roadmap based on the priorities of TELUS and vendor teams. In addition, we coordinate with 
+We plan the TELUS Design Platform roadmap based on the priorities of TELUS and partner teams. In addition, we coordinate with 
 the wider Digital Platform teams to provide a holistic platform for building rich Web experiences in the TELUS ecosystem.
 
 TDS will continue to release incrementally while we work towards our larger goals.
 
 
-## TDS Alpha and Beta versions (2016-2017)
+## TDS Alpha and Beta versions (2017)
 
 TDS alpha and beta versions established a structure of "core" and "enriched" packages, which separated styles from interactive React 
 components. The Core layer contained the styles needed to skin all fundamental HTML elements (e.g. text, links, lists, 
