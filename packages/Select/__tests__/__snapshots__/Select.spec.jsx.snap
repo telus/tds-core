@@ -2,7 +2,7 @@
 
 exports[`Select renders 1`] = `
 <div
-  class="betweenBottomMarginDesktop-2 stack"
+  class="TDS_Box-modules__betweenBottomMarginDesktop-2___1XXWE TDS_Box-modules__stack___33m4D"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -11,10 +11,10 @@ exports[`Select renders 1`] = `
       for="the-select"
     >
       <span
-        class="betweenRightMarginDesktop-2 inline alignCenter"
+        class="TDS_Box-modules__betweenRightMarginDesktop-2___2mNnI TDS_Box-modules__inline___jTHcz alignCenter"
       >
         <span
-          class="medium boldFont color"
+          class="TDS_Text-modules__medium___2iIvC TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__boldFont___WfuUE TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
         >
           The select
         </span>
@@ -42,14 +42,14 @@ exports[`Select renders 1`] = `
       </option>
     </select>
     <div
-      class="betweenRightMarginDesktop-3 inline iconsPosition"
+      class="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz iconsPosition"
     >
       <div
         class="fixLineHeight"
       >
         <i
           aria-hidden="true"
-          class="iconCaretDown primary size16"
+          class="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
         />
       </div>
     </div>
@@ -59,7 +59,7 @@ exports[`Select renders 1`] = `
 
 exports[`Select renders with a feedback state and icon 1`] = `
 <div
-  class="betweenBottomMarginDesktop-2 stack"
+  class="TDS_Box-modules__betweenBottomMarginDesktop-2___1XXWE TDS_Box-modules__stack___33m4D"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -68,10 +68,10 @@ exports[`Select renders with a feedback state and icon 1`] = `
       for="the-select"
     >
       <span
-        class="betweenRightMarginDesktop-2 inline alignCenter"
+        class="TDS_Box-modules__betweenRightMarginDesktop-2___2mNnI TDS_Box-modules__inline___jTHcz alignCenter"
       >
         <span
-          class="medium boldFont color"
+          class="TDS_Text-modules__medium___2iIvC TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__boldFont___WfuUE TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
         >
           The select
         </span>
@@ -99,7 +99,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
       </option>
     </select>
     <div
-      class="betweenRightMarginDesktop-3 inline iconsPosition"
+      class="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz iconsPosition"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
@@ -109,7 +109,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
         >
           <i
             aria-label="The value of this input field is invalid."
-            class="iconExclamationPointCircle error size16"
+            class="TDS_Icon-modules__iconExclamationPointCircle___1HgRN TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
           />
         </div>
       </div>
@@ -118,7 +118,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
       >
         <i
           aria-hidden="true"
-          class="iconCaretDown error size16"
+          class="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
         />
       </div>
     </div>
