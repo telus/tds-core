@@ -77,7 +77,7 @@ export default opts => {
         }),
       babel({
         plugins: ['external-helpers'],
-        exclude: 'node_modules/**',
+        exclude: '../../node_modules/**',
       }),
     ],
   }
