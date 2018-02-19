@@ -1,10 +1,11 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
+import DecorativeIcon from '@tds/core-decorative-icon'
+
 import { warn } from '../../../shared/utils/warn'
 
 import ChevronLink from '../ChevronLink'
-import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 
 jest.mock('../../../shared/utils/warn')
 
