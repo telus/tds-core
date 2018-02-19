@@ -2,10 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
+import Box from '@tds/core-box'
+
 import safeRest from '../../shared/utils/safeRest'
 
 import OrderedItem from './OrderedItem'
-import Box from '../Box/Box'
 
 import styles from './OrderedList.modules.scss'
 
