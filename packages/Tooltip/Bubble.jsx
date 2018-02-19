@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import joinClassNames from '../../shared/utils/joinClassNames'
+import Text from '@tds/core-text'
+import Box from '@tds/core-box'
 
-import Text from '../Text/Text'
-import Box from '../Box/Box'
+import joinClassNames from '../../shared/utils/joinClassNames'
 
 import styles from './Tooltip.modules.scss'
 import displayStyles from '../../shared/styles/Display.modules.scss'

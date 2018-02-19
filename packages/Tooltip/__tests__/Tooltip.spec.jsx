@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow, render, mount } from 'enzyme'
 
-import StandaloneIcon from '../../StandaloneIcon/StandaloneIcon'
-import Text from '../../Text/Text'
+import StandaloneIcon from '@tds/core-standalone-icon'
+import Text from '@tds/core-text'
 
 import Input from '../../Input/Input'
 import Tooltip from '../Tooltip'
