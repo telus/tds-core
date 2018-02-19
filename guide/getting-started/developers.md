@@ -14,7 +14,6 @@ TDS components do not include:
 * Business logic, such as validations or API calls
 * External margins or global side effects
 
-
 ## Installing
 
 If you are using the [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), TDS is already installed and configured. You can jump straight to [using the components](#3-use-tds-components).
@@ -38,7 +37,6 @@ Don't have yarn? Learn [how to install it](https://yarnpkg.com/en/docs/install).
 
 Add an entry to the `module.rules` array to load CSS. You may also provide other configuration such as the [ExtractTextPlugin](https://github.com/webpack-contrib/extract-text-webpack-plugin) to extract all styles into a separate stylesheet file.
 
-
 ```js
 // webpack.config.js
 {
@@ -47,11 +45,8 @@ Add an entry to the `module.rules` array to load CSS. You may also provide other
       // other rules
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      }
+        use: ['style-loader', 'css-loader'],
+      },
     ]
   }
 }
@@ -63,21 +58,18 @@ Import the TDS stylesheet into the main entry point of your application. It cont
 
 You will not use these styles directly. Webpack will bundle the TDS styles with your application-specific styles, and they will be consumed by the TDS components.
 
-See the FAQ for [more info about the specific global styles that are applied](faq.md#what-global-styles-does-tds-set-on-the-page).
+See the FAQ for [more info about the specific global styles that are applied](../faq.md#what-global-styles-does-tds-set-on-the-page).
 
 ```js
 // index.js
-import React from 'react';
-import { render } from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
 
-import App from './App';
+import App from './App'
 
-import '@telusdigital/tds/dist/tds.css';
+import '@telusdigital/tds/dist/tds.css'
 
-render(
-  <App />,
-  document.getElementById("root")
-);
+render(<App />, document.getElementById('root'))
 ```
 
 ### 3. Use TDS Components

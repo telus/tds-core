@@ -5,6 +5,7 @@
 * [Git](https://git-scm.com/)
 * [Node.JS](https://nodejs.org), >= 6.0
 * [Yarn](https://yarnpkg.com) (We use yarn for dependency management instead of npm.)
+* [Commitizen](https://github.com/commitizen/cz-cli)
 
 ## Set up your environment
 
@@ -18,16 +19,14 @@ After forking TDS, the following steps will get you started:
 git clone <your fork> && cd tds
 
 # Install dependencies
-yarn && yarn gitbook:install
+yarn
 ```
-
-Learn more about [commitizen](https://github.com/commitizen/cz-cli).
 
 We use [Prettier](https://prettier.io/), an opinionated code formatter that integrates with your text editor. Configure [your
 IDE or text editor](https://prettier.io/docs/en/editors.html) to format your code automatically on save, and Prettier will
 adjust your syntax in accordance with the TDS conventions.
 
-## Set up your TDS dev environment
+## Set up your dev environment
 
 ```bash
 # Start the styleguidist dev server, check output for the location of the docs

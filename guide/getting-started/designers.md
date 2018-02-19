@@ -46,7 +46,7 @@ TDS has two projects set up on Invision:
 
 2. [TDS_components](https://telus.invisionapp.com/share/5BE5MX08E): Library of all the components that can be found in TDS.
 
-These are both working projects that continue to get updated, and improved on as we add components and blocks to the system. 
+These are both working projects that continue to get updated, and improved on as we add components and blocks to the system.
 
 # Assets
 
@@ -111,6 +111,7 @@ There are two component libraries available in TDS to help you with your designs
       </ol>
 
 <br><strong>Note</strong>: It’s important that you sign in using the ‘Enterprise sign in’ link. Otherwise you will be creating your own library on your personal account.</td>
+
   </tr>
   <tr>
     <td><img src="craftmanager7.png" /></td>
@@ -136,11 +137,11 @@ You can use the TDS component library by dragging and dropping the assets onto y
 
 ## TDS Component Documentation
 
-To view the code and usage of the components please visit the [TDS components documentation site](https://tds.telus.com/components/).
+To view the code and usage of the components please visit the [TDS components documentation site](ref:///components/index.html).
 
 ## Master Sketch file
 
-The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, you can download them from the *assets > source files* in the TDS project on [Invision Enterprise](https://telus.invisionapp.com/).
+The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, you can download them from the _assets > source files_ in the TDS project on [Invision Enterprise](https://telus.invisionapp.com/).
 
 ![InVision Asset Source Files](invision_assets_sourcefiles.png)
 
@@ -152,7 +153,7 @@ TELUS' primary typeface is Helvetica Neue which is available as a system font on
 
 ## Icons
 
-Currently [Utility icons](https://tds.telus.com/#icons) are available to use as components in the TELUS Design System. Decorative icon usage is currently being reviewed by the TELUS Brand team. Stay tuned for more updates. In the meantime, you can continue to use the Brand approved icons available on the [TELUS BrandHub](https://brand.telus.com/library/all?media_type%5B0%5D=media_icons).
+Currently [Utility icons](ref:///components/index.html#icons) are available to use as components in the TELUS Design System. Decorative icon usage is currently being reviewed by the TELUS Brand team. Stay tuned for more updates. In the meantime, you can continue to use the Brand approved icons available on the [TELUS BrandHub](https://brand.telus.com/library/all?media_type%5B0%5D=media_icons).
 
 ## Images
 
@@ -164,13 +165,13 @@ Please follow the [TELUS Brand Photography Guidelines](https://drive.google.com/
 
 # Releases
 
-The TELUS Design System team often makes design improvements to the TDS component library and Master Sketch file. We track all release updates in our version page in the Master Sketch file and on the [DSM release page] (https://telus.invisionapp.com/dsm/telus/telus-design-system/releases) on Invision.
+The TELUS Design System team often makes design improvements to the TDS component library and Master Sketch file. We track all release updates in our version page in the Master Sketch file and on the [DSM release page](https://telus.invisionapp.com/dsm/telus/telus-design-system/releases) on Invision.
 
 When TDS makes releases you will get notified the next time you are on Sketch and signed into DSM.
 
 <img alt="" src="craftmanager11.png" style="max-width: 500px; width: 100%;" />
 
-Releases updates to the system can be found on the [change log on Github](https://github.com/telusdigital/tds/releases), so check back frequently for updates to the system.
+Releases updates to the system can be found on the [release notes on Github](https://github.com/telusdigital/tds/releases), so check back frequently for updates to the system.
 
 # Support
 

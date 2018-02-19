@@ -30,7 +30,7 @@
 ## Support &amp; links
 
 * [Contact us](contact.md)
-* [FAQs](getting-started/faq.md)
+* [FAQs](faq.md)
 * [Report an issue](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
 * [Suggest a feature](https://github.com/telusdigital/tds/issues/new?template=feature_template.md)
 * [TDS on GitHub](https://github.com/telusdigital/tds)

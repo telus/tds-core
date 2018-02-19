@@ -1,9 +1,9 @@
-# TDS guidelines
+# TELUS Design System
 
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences. It's a holistic platform that integrates documentation, guidelines, and design management that serves as single source for digital design guidelines, code patterns, and UI elements.
 
-TDS is intended for use by TELUS employees and approved vendors.
+At this time, TDS is intended for use by TELUS employees and approved vendors.
 
-These guidelines are for the usage, contribution, principles, and support for the TELUS design system. To view the documentation for components, see the [component catalogue](http://tds.telus.com).
+To view the technical documentation for the components, see the [component catalogue](ref://components/index.html).
 
-To view documentation from a version prior to v1.0.0, change the version at the end of this URL: [http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/).
+To view documentation from a previous version, copy this URL into your browser's address bar, changing the version at the end to the desired version: [http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/).
