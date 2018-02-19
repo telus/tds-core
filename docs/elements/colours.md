@@ -4,7 +4,7 @@ These are the brand-approved colours available as sass variables which can be co
 @import '~@telusdigital/tds/dist/scss/colours';
 ```
 
-For more information on the usage of each colour please refer to the [colour principles and guidelines](//tds.telus.com/design/colour.html).
+For more information on the usage of each colour please refer to the [colour principles and guidelines](../design/colour.html).
 
 ```jsx noeditor
 <FlexGrid>
