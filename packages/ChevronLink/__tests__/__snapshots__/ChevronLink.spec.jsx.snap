@@ -6,7 +6,7 @@ exports[`ChevronLink renders 1`] = `
   href="test.com"
 >
   <div
-    class="betweenRightMarginDesktop-2 inline"
+    class="TDS_Box-modules__betweenRightMarginDesktop-2___2mNnI TDS_Box-modules__inline___jTHcz"
   >
     <span>
       Go home
@@ -16,7 +16,7 @@ exports[`ChevronLink renders 1`] = `
     >
       <i
         aria-hidden="true"
-        class="iconChevron size16"
+        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
       />
     </span>
   </div>
