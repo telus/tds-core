@@ -1,0 +1,18 @@
+{
+  "name": "@tds/core-colours",
+  "version": "0.0.0-development",
+  "main": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telusdigital/tds.git"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telusdigital/tds/issues"
+  },
+  "homepage": "http://tds.telus.com"
+}

@@ -19,6 +19,7 @@
 import path from 'path'
 import Core from 'css-modules-loader-core'
 import sass from 'node-sass'
+import tildeImporter from 'node-sass-tilde-importer'
 
 // Sorts dependencies in the following way:
 // AAA comes before AA and A
@@ -49,7 +50,7 @@ export default class CssModulesSassLoader {
 
   fetch(_newPath, relativeTo, _trace) {
     let newPath = _newPath.replace(/^["']|["']$/g, ''),
-        trace = _trace || String.fromCharCode(this.importNr++)
+      trace = _trace || String.fromCharCode(this.importNr++)
 
     return new Promise((resolve, reject) => {
       let relativeDir = path.dirname(relativeTo),
@@ -60,9 +61,7 @@ export default class CssModulesSassLoader {
       if (newPath[0] !== '.' && newPath[0] !== '/') {
         try {
           fileRelativePath = require.resolve(newPath)
-        }
-        catch (e) {
-        }
+        } catch (e) {}
       }
 
       const tokens = this.tokensByFile[fileRelativePath]
@@ -81,9 +80,10 @@ export default class CssModulesSassLoader {
       //     }, reject )
       // } )
 
-      sass.render({ file: fileRelativePath }, (err, source) => {
+      sass.render({ file: fileRelativePath, importer: tildeImporter }, (err, source) => {
         if (err) reject(err)
-        this.core.load(source.css.toString(), rootRelativePath, trace, this.fetch.bind(this))
+        this.core
+          .load(source.css.toString(), rootRelativePath, trace, this.fetch.bind(this))
           .then(({ injectableSource, exportTokens }) => {
             this.sources[fileRelativePath] = injectableSource
             this.traces[trace] = fileRelativePath
@@ -99,14 +99,17 @@ export default class CssModulesSassLoader {
     const sources = this.sources
     let written = new Set()
 
-    return Object.keys(traces).sort(traceKeySorter).map(key => {
-      const filename = traces[key]
-      if (written.has(filename)) {
-        return null
-      }
-      written.add(filename)
+    return Object.keys(traces)
+      .sort(traceKeySorter)
+      .map(key => {
+        const filename = traces[key]
+        if (written.has(filename)) {
+          return null
+        }
+        written.add(filename)
 
-      return sources[filename]
-    }).join('')
+        return sources[filename]
+      })
+      .join('')
   }
 }

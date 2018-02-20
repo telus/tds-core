@@ -24,6 +24,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
+    "@tds/core-colours": "^0.0.0-development",
     "classnames": "^2.2.5"
   }
 }

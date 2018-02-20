@@ -5,11 +5,20 @@
   "license": "MIT",
   "main": "dist/tds.cjs.js",
   "module": "dist/tds.es.js",
-  "files": ["dist", "packages", "src", "CHANGELOG.md", "CONTRIBUTING.md", "UPGRADING.md"],
+  "files": [
+    "dist",
+    "packages",
+    "src",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "UPGRADING.md"
+  ],
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "build": "lerna exec -- rollup -c",
+    "build": "lerna exec --ignore @tds/core-colours -- rollup -c",
     "build-gitbook": "gitbook build guide guide/_book",
     "build-styleguide": "styleguidist build --config config/styleguide.config.js",
     "build:docs-staging": "yarn build-styleguide && gitbook build guide build/staging",
@@ -19,8 +28,7 @@
     "gitbook": "gitbook serve guide",
     "gitbook:install": "gitbook install guide",
     "lerna:bootstrap": "lerna bootstrap",
-    "lint:js":
-      "eslint packages shared config docs scripts --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
+    "lint:js": "eslint packages shared config docs scripts --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/.stylelintrc.json",
     "lint:ec": "echint",
     "lint": "yarn lint:js && yarn lint:scss && yarn lint:ec",
@@ -88,6 +96,7 @@
     "nightwatch": "^0.9.19",
     "nightwatch-accessibility": "^1.6.0",
     "node-sass": "^4.7.2",
+    "node-sass-tilde-importer": "^1.0.1",
     "postcss": "^6.0.17",
     "postcss-cli": "^4.1.0",
     "postcss-loader": "^2.1.0",
@@ -129,7 +138,10 @@
     "bracketSpacing": true
   },
   "lint-staged": {
-    "*.{js,jsx}": ["eslint --config config/eslint.config.js --max-warnings 0 --fix", "git add"],
+    "*.{js,jsx}": [
+      "eslint --config config/eslint.config.js --max-warnings 0 --fix",
+      "git add"
+    ],
     "*.scss": "stylelint --config config/.stylelintrc.json",
     "*": "echint"
   },

@@ -4,6 +4,7 @@ import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
 
 import sass from 'node-sass'
+import tildeImporter from 'node-sass-tilde-importer'
 import postcss from 'rollup-plugin-postcss'
 import postcssModules from 'postcss-modules'
 import autoprefixer from 'autoprefixer'
@@ -13,7 +14,7 @@ const cssExportMap = {}
 
 const sassPreprocessor = (content, id) =>
   new Promise(resolve => {
-    const result = sass.renderSync({ file: id })
+    const result = sass.renderSync({ file: id, importer: tildeImporter })
     resolve({ code: result.css.toString() })
   })
 

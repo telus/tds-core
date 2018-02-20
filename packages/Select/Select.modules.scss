@@ -1,4 +1,4 @@
-@import '../colour/colours';
+@import '~@tds/core-colours/colours';
 
 .wrapper {
   composes: relative from '../../shared/styles/Position.modules.scss';

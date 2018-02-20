@@ -1,4 +1,4 @@
-@import '../colour/colours';
+@import '~@tds/core-colours/colours';
 
 @mixin add-skinny-underline {
   background: linear-gradient(transparent, transparent), linear-gradient(transparent, transparent),
