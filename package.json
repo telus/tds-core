@@ -26,9 +26,8 @@
     "lerna:test": "yarn lerna:build && yarn test",
     "lerna:test:watch": "yarn lerna:build && yarn test --watch",
     "lint:js":
-      "eslint packages shared src config docs scripts --ext '.js,.jsx' --config config/.eslintrc.json --max-warnings 0 --fix",
-    "lint:scss":
-      "stylelint '{src/components,packages,shared}/**/*.scss' --config config/.stylelintrc.json",
+      "eslint packages shared config docs scripts --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
+    "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/.stylelintrc.json",
     "lint:ec": "echint",
     "lint": "yarn lint:js && yarn lint:scss && yarn lint:ec",
     "packup": "yarn build-package && yarn pack",
@@ -136,7 +135,7 @@
     "bracketSpacing": true
   },
   "lint-staged": {
-    "*.{js,jsx}": ["eslint --config config/.eslintrc.json --max-warnings 0 --fix", "git add"],
+    "*.{js,jsx}": ["eslint --config config/eslint.config.js --max-warnings 0 --fix", "git add"],
     "*.scss": "stylelint --config config/.stylelintrc.json",
     "*": "echint"
   },
