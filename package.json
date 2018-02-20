@@ -18,7 +18,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --ignore @tds/core-colours -- rollup -c",
+    "build": "lerna exec --ignore '@tds/{core-colours,core-css-reset}' -- rollup -c && lerna run build",
     "build-gitbook": "gitbook build guide guide/_book",
     "build-styleguide": "styleguidist build --config config/styleguide.config.js",
     "build:docs-staging": "yarn build-styleguide && gitbook build guide build/staging",
