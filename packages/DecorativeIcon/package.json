@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-decorative-icon",
   "version": "0.0.0-development",
+  "description": "An icon used for visual aesthetics only",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

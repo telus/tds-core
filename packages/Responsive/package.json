@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-responsive",
   "version": "0.0.0-development",
+  "description": "Respond to device features, most commonly the browser viewport size",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

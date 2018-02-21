@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-small",
   "version": "0.0.0-development",
+  "description": "Small print, such as copyright and legal text",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

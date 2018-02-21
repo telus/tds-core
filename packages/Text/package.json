@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-text",
   "version": "0.0.0-development",
+  "description": "Inline text",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

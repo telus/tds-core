@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-flex-grid",
   "version": "0.0.0-development",
+  "description": "A flexbox-based grid system",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

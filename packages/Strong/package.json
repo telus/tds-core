@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-strong",
   "version": "0.0.0-development",
+  "description": "Give portions of a sentence added importance",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

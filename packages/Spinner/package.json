@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-spinner",
   "version": "0.0.0-development",
+  "description": "A waiting indicator",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

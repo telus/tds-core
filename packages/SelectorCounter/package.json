@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-selector-counter",
   "version": "0.0.0-development",
+  "description": "Choose a number",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

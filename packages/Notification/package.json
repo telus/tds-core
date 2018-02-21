@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-notification",
   "version": "0.0.0-development",
+  "description": "A banner that highlights important messages",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

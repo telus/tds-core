@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-paragraph",
   "version": "0.0.0-development",
+  "description": "Block text",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

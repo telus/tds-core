@@ -32,6 +32,9 @@ module.exports = {
   title: `TDS v${version}`,
 
   skipComponentsWithoutExample: true,
+  getExampleFilename(componentPath) {
+    return componentPath.replace(/\.jsx?$/, '.md')
+  },
   getComponentPathLine(componentPath) {
     let name = path.basename(componentPath, '.jsx')
 

@@ -9,7 +9,7 @@ import TextSup from './TextSup/TextSup'
 import styles from './Text.modules.scss'
 
 /**
- * Inline text as an HTML `<span>` element.
+ * Inline text usually as an HTML `<span>` element.
  */
 const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
   const textColor = invert ? styles.invertedColor : styles.color

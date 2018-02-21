@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-css-reset",
   "version": "0.0.0-development",
+  "description": "TDS root styles and fonts",
   "main": "",
   "license": "MIT",
   "repository": {

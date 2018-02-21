@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-step-tracker",
   "version": "0.0.0-development",
+  "description": "Show the current position in a sequence of steps",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

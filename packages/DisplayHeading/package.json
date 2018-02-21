@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-display-heading",
   "version": "0.0.0-development",
+  "description": "Large page titles",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

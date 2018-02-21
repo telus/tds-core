@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-chevron-link",
   "version": "0.0.0-development",
+  "description": "A call to action link",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

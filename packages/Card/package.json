@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-card",
   "version": "0.0.0-development",
+  "description": "A content container",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

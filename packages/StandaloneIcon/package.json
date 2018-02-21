@@ -1,6 +1,7 @@
 {
   "name": "@tds/core-standalone-icon",
   "version": "0.0.0-development",
+  "description": "An icon that has meaning within the context of the page",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
