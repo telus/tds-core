@@ -148,16 +148,10 @@
   "echint": {
     "ignore": [
       "**/node_modules/**",
-      "config/styleguide/**",
-      "**/fonts/**",
       "**/dist/**",
-      "docs/components/Logo/Logo.svg",
       "**/**.svg",
       "**.log",
       "**/__snapshots__/**",
-      "docs/elements/**",
-      "icons/scripts/icons.js",
-      "styleguide/**",
       "**.tgz",
       "guide/components/**",
       "guide/_book/**",
