@@ -32,7 +32,8 @@ RUN set -ex && \
 COPY . /app
 
 # Build the app.
-RUN yarn run build-package && \
+RUN yarn lerna:bootstrap && \
+  yarn build && \
   yarn gitbook:install && \
   STYLEGUIDIST_ENV=staging yarn run build:docs-staging && \
   STYLEGUIDIST_ENV=production yarn run build-styleguide
