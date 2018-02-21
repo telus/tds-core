@@ -9,6 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/telusdigital/tds.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "TELUS digital",
   "engines": {
     "node": ">=8"
