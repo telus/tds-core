@@ -1,12 +1,16 @@
 {
   "name": "@tds/core-$COMPONENT_SNAKE$",
   "version": "0.0.0-development",
+  "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/telusdigital/tds.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "TELUS digital",
   "engines": {
