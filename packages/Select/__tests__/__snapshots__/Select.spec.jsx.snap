@@ -14,7 +14,7 @@ exports[`Select renders 1`] = `
         class="TDS_Box-modules__betweenRightMarginDesktop-2___2mNnI TDS_Box-modules__inline___jTHcz alignCenter"
       >
         <span
-          class="TDS_Text-modules__medium___2iIvC TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__boldFont___WfuUE TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
+          class="TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__boldFont___30Cjc TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
         >
           The select
         </span>
@@ -71,7 +71,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
         class="TDS_Box-modules__betweenRightMarginDesktop-2___2mNnI TDS_Box-modules__inline___jTHcz alignCenter"
       >
         <span
-          class="TDS_Text-modules__medium___2iIvC TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__boldFont___WfuUE TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
+          class="TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__boldFont___30Cjc TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
         >
           The select
         </span>

@@ -24,7 +24,7 @@ exports[`Checkbox renders 1`] = `
         />
       </span>
       <span
-        class="TDS_Text-modules__medium___2iIvC TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__mediumFont___APMyT TDS_Text-modules__color___2axbI"
+        class="TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__mediumFont___36OCZ TDS_Typography-modules__color___22Swj"
       >
         A label
       </span>

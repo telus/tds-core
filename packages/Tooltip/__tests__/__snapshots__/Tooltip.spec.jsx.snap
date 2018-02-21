@@ -13,7 +13,7 @@ exports[`Tooltip renders 1`] = `
     role="tooltip"
   >
     <span
-      class="TDS_Text-modules__small___Wmtvd TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__smallFont___1OIOj TDS_Text-modules__color___2axbI"
+      class="TDS_Typography-modules__small___2C82x TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__smallFont___LAiJ9 TDS_Typography-modules__color___22Swj"
     >
       InputFeedback text
     </span>

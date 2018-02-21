@@ -125,7 +125,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                         size="large"
                                       >
                                         <span
-                                          className="TDS_Text-modules__large___qDFJY TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__largeFont___3KY0Z TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
+                                          className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
                                         >
                                           <DecorativeIcon
                                             size={16}
@@ -183,7 +183,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                             size="large"
                                           >
                                             <span
-                                              className="TDS_Text-modules__large___qDFJY TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__largeFont___3KY0Z TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
+                                              className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
                                             >
                                               Panel title
                                             </span>
@@ -270,7 +270,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                             size="base"
                           >
                             <div
-                              className="TDS_Text-modules__base___2egO5 TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__baseFont___1t0na TDS_Text-modules__color___2axbI"
+                              className="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
                             >
                               <Panel
                                 disabled={false}
@@ -435,7 +435,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                         size="large"
                                       >
                                         <span
-                                          className="TDS_Text-modules__large___qDFJY TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__largeFont___3KY0Z TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
+                                          className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
                                         >
                                           <DecorativeIcon
                                             size={16}
@@ -493,7 +493,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                             size="large"
                                           >
                                             <span
-                                              className="TDS_Text-modules__large___qDFJY TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__largeFont___3KY0Z TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__color___2axbI"
+                                              className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
                                             >
                                               Panel title
                                             </span>
@@ -580,7 +580,7 @@ exports[`Accordion renders an open accordion 1`] = `
                             size="base"
                           >
                             <div
-                              className="TDS_Text-modules__base___2egO5 TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__baseFont___1t0na TDS_Text-modules__color___2axbI"
+                              className="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
                             >
                               <Panel
                                 disabled={false}

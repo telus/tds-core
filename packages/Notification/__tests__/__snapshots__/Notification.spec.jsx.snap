@@ -14,7 +14,7 @@ exports[`<Notification /> renders 1`] = `
         class="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz"
       >
         <p
-          class="TDS_Typography-modules__wordBreak___11Xyp TDS_Spacing-modules__noSpacing___XPYDG TDS_Text-modules__color___2f6lE TDS_Text-modules__medium___2nhjL TDS_Typography-modules__wordBreak___11Xyp TDS_Text-modules__mediumFont___1huOZ TDS_Paragraph-modules__leftAlign___KgwhE"
+          class="TDS_Typography-modules__wordBreak___11Xyp TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___22Swj TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__mediumFont___36OCZ TDS_Paragraph-modules__leftAlign___KgwhE"
         >
           Some content
         </p>
