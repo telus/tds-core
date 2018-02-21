@@ -2,7 +2,7 @@
 
 exports[`<UnorderedList /> renders 1`] = `
 <ul
-  class="betweenBottomMarginDesktop-2 stack base"
+  class="TDS_Box-modules__betweenBottomMarginDesktop-2___1XXWE TDS_Box-modules__stack___33m4D base"
 >
   <li
     class="circle"

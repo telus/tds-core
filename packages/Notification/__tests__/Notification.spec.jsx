@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
-import Paragraph from '../../Paragraph/Paragraph'
+import DecorativeIcon from '@tds/core-decorative-icon'
+import Paragraph from '@tds/core-paragraph'
 
 import Notification from '../Notification'
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'

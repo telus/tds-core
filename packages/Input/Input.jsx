@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { childrenOfType } from 'airbnb-prop-types'
 
+import Tooltip from '@tds/core-tooltip'
+import InputFeedback from '@tds/core-input-feedback'
+
 import joinClassNames from '../../shared/utils/joinClassNames'
 
-import Tooltip from '../Tooltip/Tooltip'
-import InputFeedback from '../InputFeedback/InputFeedback'
 import FormField from '../../shared/components/FormField/FormField'
 import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
-
 import addRightPadding from '../../shared/components/FormField/addRightPadding'
 
 import positionStyles from '../../shared/styles/Position.modules.scss'

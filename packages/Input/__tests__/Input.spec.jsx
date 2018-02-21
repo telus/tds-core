@@ -1,13 +1,14 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import StandaloneIcon from '../../StandaloneIcon/StandaloneIcon'
-import Text from '../../Text/Text'
-import Paragraph from '../../Paragraph/Paragraph'
+import StandaloneIcon from '@tds/core-standalone-icon'
+import Text from '@tds/core-text'
+import Paragraph from '@tds/core-paragraph'
+import InputFeedback from '@tds/core-input-feedback'
+import Tooltip from '@tds/core-tooltip'
+
 import Fade from '../../../shared/components/Animation/Fade'
 import Input from '../Input'
-import InputFeedback from '../../InputFeedback/InputFeedback'
-import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 
 describe('Input', () => {
   const defaultProps = {
@@ -248,7 +249,6 @@ describe('Input', () => {
       const { input } = doMount({ disabled: true, feedback: 'error' })
 
       expect(input.find(StandaloneIcon)).toBeEmpty()
-      expect(input.find(DecorativeIcon)).toBeEmpty()
     })
   })
 
@@ -302,6 +302,17 @@ describe('Input', () => {
             <InputFeedback>Some helper text.</InputFeedback>
           </Text>
         </div>
+      )
+    })
+  })
+
+  describe('tooltip', () => {
+    it('connects to Input', () => {
+      const input = mount(<Input label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />)
+
+      expect(input.find(StandaloneIcon)).toHaveProp(
+        'a11yText',
+        'Reveal additional information about Some field.'
       )
     })
   })

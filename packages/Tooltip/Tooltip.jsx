@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Responsive from '@tds/core-responsive'
+import StandaloneIcon from '@tds/core-standalone-icon'
+
 import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId'
 import closest from './element-closest'
-
-import StandaloneIcon from '../StandaloneIcon/StandaloneIcon'
-import Responsive from '../Responsive/Responsive'
 
 import Bubble from './Bubble'
 

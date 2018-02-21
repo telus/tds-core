@@ -1,10 +1,10 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 
-import Text from '../../Text/Text'
-import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
+import Text from '@tds/core-text'
+import DecorativeIcon from '@tds/core-decorative-icon'
+import InputFeedback from '@tds/core-input-feedback'
 import Radio from '../Radio'
-import InputFeedback from '../../InputFeedback/InputFeedback'
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 describe('Radio', () => {

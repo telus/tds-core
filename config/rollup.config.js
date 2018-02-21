@@ -1,11 +1,10 @@
-import path from 'path'
-
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 
 import babel from 'rollup-plugin-babel'
 
 import sass from 'node-sass'
+import tildeImporter from 'node-sass-tilde-importer'
 import postcss from 'rollup-plugin-postcss'
 import postcssModules from 'postcss-modules'
 import autoprefixer from 'autoprefixer'
@@ -15,59 +14,72 @@ const cssExportMap = {}
 
 const sassPreprocessor = (content, id) =>
   new Promise(resolve => {
-    const result = sass.renderSync({ file: id })
+    const result = sass.renderSync({ file: id, importer: tildeImporter })
     resolve({ code: result.css.toString() })
   })
 
-export default {
-  input: path.resolve('./src/index.js'),
-  output: [
-    { format: 'cjs', file: path.resolve('./dist/tds.cjs.js') },
-    { format: 'es', file: path.resolve('./dist/tds.es.js') },
-  ],
-  sourcemap: true,
+export default opts => {
+  const options = Object.assign(
+    {
+      css: true,
+    },
+    opts
+  )
 
-  external: ['react', 'react-dom', 'prop-types'],
+  const tdsExternals = Object.keys(options.dependencies).filter(dependency =>
+    dependency.startsWith('@tds')
+  )
 
-  plugins: [
-    nodeResolve({
-      extensions: ['.js', '.jsx'],
-    }),
-    commonjs({
-      include: 'node_modules/**',
-      namedExports: {
-        'airbnb-prop-types': ['childrenOfType'],
-      },
-    }),
-    postcss({
-      extract: path.resolve('./dist/tds.css'),
-      sourceMap: true,
-      extensions: ['.scss', '.css'],
-      preprocessor: sassPreprocessor,
-      plugins: [
-        autoprefixer(),
-        postcssModules({
-          Loader: CssModulesSassLoader,
-          globalModulePaths: [
-            /src\/scss/,
-            /packages\/SelectorCounter/,
-            /packages\/Spinner/,
-            /packages\/StepTracker/,
+  return {
+    input: options.input,
+    output: [
+      { format: 'cjs', file: './dist/index.cjs.js' },
+      { format: 'es', file: './dist/index.es.js' },
+    ],
+    sourcemap: true,
+
+    external: ['react', 'react-dom', 'prop-types'].concat(tdsExternals),
+
+    plugins: [
+      nodeResolve({
+        extensions: ['.js', '.jsx'],
+      }),
+      commonjs({
+        include: '../../node_modules/**',
+        namedExports: {
+          'airbnb-prop-types': ['childrenOfType'],
+        },
+      }),
+      options.css &&
+        postcss({
+          extract: './dist/index.css',
+          sourceMap: true,
+          extensions: ['.scss', '.css'],
+          preprocessor: sassPreprocessor,
+          plugins: [
+            autoprefixer(),
+            postcssModules({
+              Loader: CssModulesSassLoader,
+              globalModulePaths: [
+                /packages\/SelectorCounter/,
+                /packages\/Spinner/,
+                /packages\/StepTracker/,
+              ],
+              generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
+              getJSON(id, exportTokens) {
+                cssExportMap[id] = exportTokens
+              },
+            }),
           ],
-          generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
-          getJSON(id, exportTokens) {
-            cssExportMap[id] = exportTokens
+          getExportNamed: false,
+          getExport(id) {
+            return cssExportMap[id]
           },
         }),
-      ],
-      getExportNamed: false,
-      getExport(id) {
-        return cssExportMap[id]
-      },
-    }),
-    babel({
-      plugins: ['external-helpers'],
-      exclude: 'node_modules/**',
-    }),
-  ],
+      babel({
+        plugins: ['external-helpers'],
+        exclude: '../../node_modules/**',
+      }),
+    ],
+  }
 }

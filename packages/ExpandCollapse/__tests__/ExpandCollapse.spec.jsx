@@ -1,11 +1,13 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
+import Text from '@tds/core-text'
+import DecorativeIcon from '@tds/core-decorative-icon'
+import HairlineDivider from '@tds/core-hairline-divider'
+
 import Reveal from '../../../shared/components/Animation/Reveal'
 import Translate from '../../../shared/components/Animation/Translate'
-import Text from '../../Text/Text'
-import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
-import HairlineDivider from '../../HairlineDivider/HairlineDivider'
+
 import ExpandCollapse from '../ExpandCollapse'
 
 import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'

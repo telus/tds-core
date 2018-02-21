@@ -2,13 +2,13 @@
 
 exports[`Checkbox renders 1`] = `
 <div
-  class="betweenBottomMarginDesktop-2 stack"
+  class="TDS_Box-modules__betweenBottomMarginDesktop-2___1XXWE TDS_Box-modules__stack___33m4D"
 >
   <label
     for="the-group-name_the-value"
   >
     <span
-      class="betweenRightMarginDesktop-3 inline alignFlexStart"
+      class="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz alignFlexStart"
     >
       <span
         class="fakeCheckbox unchecked"
@@ -24,7 +24,7 @@ exports[`Checkbox renders 1`] = `
         />
       </span>
       <span
-        class="medium mediumFont color"
+        class="TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__mediumFont___36OCZ TDS_Typography-modules__color___22Swj"
       >
         A label
       </span>

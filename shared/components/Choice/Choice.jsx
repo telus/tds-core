@@ -1,16 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Text from '@tds/core-text'
+import Paragraph from '@tds/core-paragraph'
+import Box from '@tds/core-box'
+import InputFeedback from '@tds/core-input-feedback'
+
+import Flexbox from '../Flexbox/Flexbox'
+import ColoredTextProvider from '../ColoredTextProvider/ColoredTextProvider'
+
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 import generateId from '../../utils/generateId'
-
-import Text from '../../../packages/Text/Text'
-import Paragraph from '../../../packages/Paragraph/Paragraph'
-import Box from '../../../packages/Box/Box'
-import ColoredTextProvider from '../ColoredTextProvider/ColoredTextProvider'
-import Flexbox from '../Flexbox/Flexbox'
-import InputFeedback from '../../../packages/InputFeedback/InputFeedback'
 
 import styles from './Choice.modules.scss'
 import messagingStyles from '../../styles/Messaging.modules.scss'

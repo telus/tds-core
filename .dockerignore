@@ -4,7 +4,6 @@
 node_modules/
 
 dist/
-
-styleguide/
 build/
-_book/
+guide/_book/
+guide/components

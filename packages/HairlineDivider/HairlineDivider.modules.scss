@@ -1,4 +1,4 @@
-@import '../colour/colours';
+@import '~@tds/core-colours/colours';
 
 .reset {
   composes: noSpacing from '../../shared/styles/Spacing.modules.scss';

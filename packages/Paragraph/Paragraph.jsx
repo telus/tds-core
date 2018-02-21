@@ -7,20 +7,19 @@ import joinClassNames from '../../shared/utils/joinClassNames'
 import typographyStyles from '../../shared/styles/Typography.modules.scss'
 import spacingStyles from '../../shared/styles/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
-import textStyles from '../Text/Text.modules.scss'
 
 /**
  * Block text as an HTML `<p>` element.
  */
 const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) => {
-  const paragraphColor = invert ? textStyles.invertedColor : textStyles.color
+  const paragraphColor = invert ? typographyStyles.invertedColor : typographyStyles.color
 
   const classes = joinClassNames(
     typographyStyles.wordBreak,
     spacingStyles.noSpacing,
-    context.inheritColor ? textStyles.inheritColor : paragraphColor,
-    textStyles[size],
-    bold ? textStyles.boldFont : textStyles[`${size}Font`],
+    context.inheritColor ? typographyStyles.inheritColor : paragraphColor,
+    typographyStyles[size],
+    bold ? typographyStyles.boldFont : typographyStyles[`${size}Font`],
     styles[`${align}Align`]
   )
 

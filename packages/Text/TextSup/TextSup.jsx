@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../../shared/utils/safeRest'
 
-import styles from '../Text.modules.scss'
+import styles from '../../../shared/styles/Typography.modules.scss'
 
 /**
  * Superscript text an as HTML `<sup>` element.

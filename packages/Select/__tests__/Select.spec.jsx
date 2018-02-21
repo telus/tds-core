@@ -1,13 +1,14 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import StandaloneIcon from '../../StandaloneIcon/StandaloneIcon'
-import Text from '../../Text/Text'
-import Paragraph from '../../Paragraph/Paragraph'
+import StandaloneIcon from '@tds/core-standalone-icon'
+import Text from '@tds/core-text'
+import Paragraph from '@tds/core-paragraph'
+import InputFeedback from '@tds/core-input-feedback'
+import DecorativeIcon from '@tds/core-decorative-icon'
+
 import Fade from '../../../shared/components/Animation/Fade'
 import Select from '../Select'
-import InputFeedback from '../../InputFeedback/InputFeedback'
-import DecorativeIcon from '../../DecorativeIcon/DecorativeIcon'
 
 describe('Select', () => {
   const defaultProps = {

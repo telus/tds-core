@@ -1,0 +1,34 @@
+{
+  "name": "@tds/core-card",
+  "version": "0.0.0-development",
+  "description": "A content container",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telusdigital/tds.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telusdigital/tds/issues"
+  },
+  "homepage": "http://tds.telus.com",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "dependencies": {
+    "@tds/core-box": "^0.0.0-development",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "@tds/core-colours": "^0.0.0-development"
+  }
+}

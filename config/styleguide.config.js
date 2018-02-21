@@ -27,6 +27,9 @@ module.exports = {
   title: `TDS v${version}`,
 
   skipComponentsWithoutExample: true,
+  getExampleFilename(componentPath) {
+    return componentPath.replace(/\.jsx?$/, '.md')
+  },
   getComponentPathLine(componentPath) {
     let name = path.basename(componentPath, '.jsx')
 
@@ -282,7 +285,7 @@ module.exports = {
           use: 'babel-loader',
         },
         {
-          test: /(\.modules\.scss|\.css)$/,
+          test: /(\.modules\.scss)$/,
           use: [
             'style-loader',
             {
@@ -307,6 +310,10 @@ module.exports = {
           test: /\.scss$/,
           exclude: /\.modules.scss$/,
           use: ['style-loader', 'css-loader', 'sass-loader'],
+        },
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.(png|jpg|svg)$/,

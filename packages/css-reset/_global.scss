@@ -1,5 +1,5 @@
 // Global styles
-@import '../colour/colours';
+@import '~@tds/core-colours/colours';
 @import '../../shared/scss/typography';
 
 * {
@@ -22,8 +22,9 @@
 }
 
 html {
+  @include helvetica-neue-light-45;
+
   font-family: $font-telus;
-  font-weight: 400;
   font-size: $font-size-base;
   font-kerning: normal;
 }

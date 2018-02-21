@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Responsive from '../Responsive/Responsive'
+import Responsive from '@tds/core-responsive'
 
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
