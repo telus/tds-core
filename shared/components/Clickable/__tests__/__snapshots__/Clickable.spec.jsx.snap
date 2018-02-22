@@ -3,6 +3,7 @@
 exports[`Clickable renders 1`] = `
 <button
   className="clickable"
+  type="button"
 >
   Some content
 </button>
