@@ -24,7 +24,7 @@ Clickable.propTypes = {
   dangerouslyAddClassName: PropTypes.string,
   dangerouslyAddStyle: PropTypes.object,
   children: PropTypes.node.isRequired,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(['submit', 'reset', 'button']),
 }
 
 Clickable.defaultProps = {
