@@ -29,7 +29,7 @@
 }
 
 .icon {
-  font-family: 'TELUS Core Icons';
+  font-family: 'TELUS Core Icons'; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
 
   display: inline-block;
   font-weight: normal;

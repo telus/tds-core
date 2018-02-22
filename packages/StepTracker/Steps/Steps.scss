@@ -1,6 +1,9 @@
 @import '~@tds/core-colours/colours';
 @import '../../../shared/scss/responsive';
 
+/* stylelint-disable */
+// Disabling stylelint on this file as it will be rewritten in CSS Modules form
+
 .step-tracker {
   list-style: none;
   padding: 0;
@@ -118,3 +121,5 @@
   color: $color-shark;
   font-size: 1rem;
 }
+
+/* stylelint-enable */

@@ -13,12 +13,10 @@
 }
 
 .sup {
-  font-size: 0.875rem;
-}
-
-.sup {
   composes: baseSupSubScripts;
+
   top: -0.5em;
+  font-size: 0.875rem;
 }
 
 .base {

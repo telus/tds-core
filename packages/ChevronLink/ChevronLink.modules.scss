@@ -1,6 +1,19 @@
 @import '~@tds/core-colours/colours';
 @import '../../shared/scss/typography';
 
+.chevron {
+  display: inline-block;
+  transition: transform 300ms;
+}
+
+.rightChevron {
+  composes: chevron;
+}
+
+.leftChevron {
+  composes: chevron;
+}
+
 .link {
   composes: medium from '../Text/Text.modules.scss';
   display: inline-block;
@@ -44,17 +57,4 @@
   &:visited {
     color: $color-white;
   }
-}
-
-.chevron {
-  display: inline-block;
-  transition: transform 300ms;
-}
-
-.rightChevron {
-  composes: chevron;
-}
-
-.leftChevron {
-  composes: chevron;
 }

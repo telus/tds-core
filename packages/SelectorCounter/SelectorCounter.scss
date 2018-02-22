@@ -2,6 +2,9 @@
 @import '../../shared/scss/typography';
 @import '../../shared/scss/responsive';
 
+/* stylelint-disable */
+// Disabling stylelint on this file as it will be rewritten in CSS Modules form
+
 .icon {
   font-family: 'TELUS Core Icons';
   display: inline-block;
@@ -153,3 +156,5 @@ input.selector-counter__value.selector-counter__value {
   border: 0;
   overflow: hidden;
 }
+
+/* stylelint-enable */

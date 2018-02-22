@@ -8,6 +8,31 @@ $zindex-popover: 1600 !default;
 // Spinner
 // ---------
 
+.spinner {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  margin: auto;
+  text-align: center;
+
+  &--spinning {
+    display: block;
+  }
+
+  &--full-screen {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: $zindex-modal-backdrop;
+  }
+}
+
 .spinner-wrapper {
   position: relative;
 
@@ -33,31 +58,6 @@ $zindex-popover: 1600 !default;
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-.spinner {
-  display: none;
-  width: 100px;
-  height: 100px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  margin: auto;
-  text-align: center;
-
-  &--spinning {
-    display: block;
-  }
-
-  &--full-screen {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: $zindex-modal-backdrop;
-  }
 }
 
 .spinner__full-screen-layer {
