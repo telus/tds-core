@@ -3,16 +3,6 @@
   "version": "1.0.3",
   "description": "TELUS Design System",
   "license": "MIT",
-  "main": "dist/tds.cjs.js",
-  "module": "dist/tds.es.js",
-  "files": [
-    "dist",
-    "packages",
-    "src",
-    "CHANGELOG.md",
-    "CONTRIBUTING.md",
-    "UPGRADING.md"
-  ],
   "private": true,
   "workspaces": [
     "packages/*"
