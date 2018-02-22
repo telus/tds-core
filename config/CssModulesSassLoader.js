@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 /**
- * This is a copy of the FileSystemLoader from https://github.com/css-modules/css-modules-loader-core/blob/master/src/file-system-loader.js
+ * This is a copy of the FileSystemLoader from https://github.com/css-modules/css-modules-loader-core/blob/c419d46b9f8b0fc63676bc142a8f4ad79e7448e5/src/file-system-loader.js
  * with one key difference. Instead of loading files using Node's built-int file system module (`fs`), it loads files
  * with Sass. This allows us to use Sass with CSS Modules `composes`:
  *
