@@ -1,5 +1,4 @@
 const path = require('path')
-const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
@@ -24,7 +23,7 @@ const compact = array => array.filter(element => element !== undefined)
 /* eslint-enable no-unused-vars */
 
 module.exports = {
-  title: `TDS v${version}`,
+  title: `TDS`,
 
   skipComponentsWithoutExample: true,
   getExampleFilename(componentPath) {
@@ -37,11 +36,10 @@ module.exports = {
     // key is a path to match, value is the name to show in the styleguide for the import statement
     const namespacedComponents = {
       FlexGrid: 'FlexGrid',
-      StepTracker: 'Steps',
       'ExpandCollapse/Panel': 'ExpandCollapse',
-      'Typography/Text': 'Text',
       DisplayHeading: 'DisplayHeading',
       Heading: 'Heading',
+      Text: 'Text',
     }
 
     const componentDirectory = path.dirname(componentPath)
@@ -49,11 +47,21 @@ module.exports = {
     const componentPathTest = Object.keys(namespacedComponents).find(pathTest =>
       componentDirectory.includes(pathTest)
     )
+
     if (componentPathTest) {
       name = namespacedComponents[componentPathTest]
     }
 
-    return `import { ${name} } from '@telusdigital/tds'`
+    let kebabizeName = name
+      .split(/(?=[A-Z])/)
+      .join('-')
+      .toLowerCase()
+
+    if (name === 'Accordion') {
+      kebabizeName = 'expand-collapse'
+    }
+
+    return `import { ${name} } from '@tds/core-${kebabizeName}'`
   },
 
   showUsage: false,
