@@ -9,5 +9,5 @@ If you find yourself with some extra time (at the end of the day, waiting for a 
 * ~~Add a postinstall npm script to do the gitbook install~~
 * Remove the checkboxes in the github templates as they display progress and no one seems to use that
 * Set up linter to lint code that is embedded in markdown files
-* Rectify prettier with our style lint rules (we have ignored a bunch of rules in "config/.stylelintrc.json")
+* ~~Rectify prettier with our style lint rules (we have ignored a bunch of rules in "config/.stylelintrc.json")~~
 * Fix all the unmet peer dependency warnings we have
