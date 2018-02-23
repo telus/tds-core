@@ -39,7 +39,8 @@ module.exports = {
       'ExpandCollapse/Panel': 'ExpandCollapse',
       DisplayHeading: 'DisplayHeading',
       Heading: 'Heading',
-      Text: 'Text',
+      'Text/TextSup': 'Text',
+      'TextArea/TextArea': 'TextArea',
     }
 
     const componentDirectory = path.dirname(componentPath)
