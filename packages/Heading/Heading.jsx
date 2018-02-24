@@ -28,6 +28,8 @@ BaseHeading.propTypes = {
 }
 
 /**
+ * @version 0.0.0-development
+ *
  * Page headings. Renders an HTML `<h1-h4>` element.
  */
 const Heading = ({ level, invert, children, ...rest }) => {

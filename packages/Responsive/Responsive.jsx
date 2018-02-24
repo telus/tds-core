@@ -12,6 +12,8 @@ const breakpoints = {
 }
 
 /**
+ * @version 0.0.0-development
+ *
  * Respond to device features, most commonly the browser viewport size.
  */
 const Responsive = ({ minWidth, maxWidth, query, children, ...rest }) => {

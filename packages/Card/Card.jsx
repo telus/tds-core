@@ -7,6 +7,8 @@ import safeRest from '../../shared/utils/safeRest'
 import styles from './Card.modules.scss'
 
 /**
+ * @version 0.0.0-development
+ *
  * A content container.
  */
 const Card = ({ variant, children, ...rest }) => (

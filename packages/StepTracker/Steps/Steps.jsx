@@ -7,6 +7,8 @@ import Step from '../Step/Step'
 import './Steps.scss'
 
 /**
+ * @version 0.0.0-development
+ *
  * Show the current position in a sequence of steps.
  */
 class Steps extends Component {

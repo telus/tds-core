@@ -9,6 +9,8 @@ import TextSup from './TextSup/TextSup'
 import styles from '../../shared/styles/Typography.modules.scss'
 
 /**
+ * @version 0.0.0-development
+ *
  * Inline text usually as an HTML `<span>` element.
  */
 const Text = ({ block, bold, size, invert, children, ...rest }, context) => {

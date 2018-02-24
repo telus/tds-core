@@ -17,6 +17,8 @@ const getClassName = (invert, desktop) =>
   )
 
 /**
+ * @version 0.0.0-development
+ *
  * Large page titles. Renders an HTML `<h1>` element.
  */
 const DisplayHeading = ({ invert, children, ...rest }) => (

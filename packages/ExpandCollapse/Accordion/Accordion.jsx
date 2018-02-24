@@ -6,6 +6,8 @@ import Panels from '../Panels'
 import Panel from '../Panel/Panel'
 
 /**
+ * @version 0.0.0-development
+ *
  * A specialized `ExpandCollapse` in which only one panel can be open at a time.
  */
 class Accordion extends React.Component {

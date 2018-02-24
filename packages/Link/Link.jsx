@@ -16,6 +16,9 @@ const getClassName = (invert, context) => {
   return styles.base
 }
 
+/**
+ * @version 0.0.0-development
+ */
 const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) => {
   if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')

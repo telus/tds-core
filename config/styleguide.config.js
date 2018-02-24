@@ -78,12 +78,12 @@ module.exports = {
       name: 'Component Catalogue',
       sections: [
         {
-          name: 'Colours',
-          content: path.resolve('docs/elements/colours.md'),
-        },
-        {
           name: 'CSS reset',
           content: path.resolve('docs/elements/css-reset.md'),
+        },
+        {
+          name: 'Colours',
+          content: path.resolve('docs/elements/colours.md'),
         },
         {
           name: 'Layout',

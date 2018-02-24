@@ -17,6 +17,8 @@ const touchAreaStyles = iconSize => {
 }
 
 /**
+ * @version 0.0.0-development
+ *
  * An icon that has meaning within the context of the page, which should be communicated to screen readers.
  */
 const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, ...rest }) => {

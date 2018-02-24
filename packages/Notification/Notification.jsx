@@ -42,6 +42,8 @@ const renderContent = (variant, children) => {
 }
 
 /**
+ * @version 0.0.0-development
+ *
  * A banner that highlights important messages.
  */
 const Notification = ({ variant, children, ...rest }) => (

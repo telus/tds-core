@@ -9,8 +9,7 @@ import styles from './Image.modules.scss'
 import borderStyles from '../../shared/styles/Borders.modules.scss'
 
 /**
- *
- * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.32.0</span>
+ * @version 0.0.0-development
  */
 const Image = ({ src, width, height, alt, rounded, ...rest }) => {
   const isCircle = rounded === 'circle'
