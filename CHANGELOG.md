@@ -1,3 +1,13 @@
+#### 0.34.4 (2018-02-26)
+
+##### New Features
+
+* **yarn:** update lock ([6759a7d8](https://github.com/telusdigital/tds/commit/6759a7d8fae925f7586556d029fc3abc61ff49d1))
+
+##### Bug Fixes
+
+* **clickable:** Add default type (#493) ([d45733dd](https://github.com/telusdigital/tds/commit/d45733dd4c8de0310bf9313dde5b8799fc3e3edc))
+
 #### 0.34.3 (2018-02-14)
 
 ##### Bug Fixes
