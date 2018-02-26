@@ -6,11 +6,7 @@ Version: 0.0.0-development
 
 These are the brand-approved colours available as sass variables to be consumed within your application styles.
 
-```scss
-@import '~@telusdigital/tds/dist/scss/colours';
-```
-
-For more information on the usage of each colour please refer to the [colour principles and guidelines](../design/colour.html).
+For more information on the usage of each colour please refer to the [colour principles and guidelines](https://tds.telus.com/design/colour.html).
 
 ```jsx noeditor
 <FlexGrid>
