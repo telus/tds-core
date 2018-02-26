@@ -1,5 +1,5 @@
 ```css noeditor
-@import '~@tds/core-colours/colours';`
+@import '~@tds/core-css-reset/index';`
 ```
 
 Version: 0.0.0-development
