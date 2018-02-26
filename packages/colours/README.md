@@ -1,6 +1,10 @@
+```css noeditor
+@import '~@tds/core-colours/colours';`
+```
+
 Version: 0.0.0-development
 
-These are the brand-approved colours available as sass variables which can be consumed in your application styles by including the following statement:
+These are the brand-approved colours available as sass variables to be consumed within your application styles.
 
 ```scss
 @import '~@telusdigital/tds/dist/scss/colours';
