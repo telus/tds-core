@@ -1,3 +1,9 @@
+#### 1.0.4 (2018-02-26)
+
+##### Bug Fixes
+
+* **clickable:**  Add default type ([#493](https://github.com/telusdigital/tds/pull/493)) ([a2ffb62c](https://github.com/telusdigital/tds/commit/a2ffb62c784fa5d46ecc609a8d517dcfdb47927e))
+
 #### 1.0.3 (2018-02-14)
 
 ##### Build System / Dependencies
