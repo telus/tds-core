@@ -1,6 +1,5 @@
 module.exports = {
-  extends: ['../node_modules/@telusdigital/eslint-config/index.js', 'prettier'],
-  plugins: ['prettier'],
+  extends: ['@telusdigital/eslint-config', 'plugin:prettier/recommended'], // Recommended eslint + prettier config: https://prettier.io/docs/en/eslint.html#why-not-both
   parser: 'babel-eslint',
   rules: {
     'react/require-default-props': 'warn',
