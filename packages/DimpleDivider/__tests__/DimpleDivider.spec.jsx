@@ -1,7 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
-
 import DimpleDivider from '../DimpleDivider'
 
 describe('DimpleDivider', () => {
