@@ -44,7 +44,7 @@ TDS has two projects set up on Invision:
 
 1. [TDS_blocks](https://telus.invisionapp.com/share/PCEVXUFT9) (not yet coded): Inspirational blocks that use TDS components/symbols that can be used in your Sketch file. These blocks live in the master Sketch file as designs and some of the blocks have been coded and can be found in SiteBuilder.
 
-2. [TDS_components](https://telus.invisionapp.com/share/5BE5MX08E): Library of all the components that can be found in TDS.
+2. [TDS_components](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097): Library of all the components that can be found in TDS.
 
 These are both working projects that continue to get updated, and improved on as we add components and blocks to the system.
 
@@ -141,11 +141,11 @@ To view the code and usage of the components please visit the [TDS components do
 
 ## Master Sketch file
 
-The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, you can download them from the _assets > source files_ in the TDS project on [Invision Enterprise](https://telus.invisionapp.com/).
+The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, you can download them from the _assets > source files_ in the TDS project on [Invision Enterprise](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097/assets).
 
 ![InVision Asset Source Files](invision_assets_sourcefiles.png)
 
-Here you can also find the [**TDS_Grid.sketch**](https://invis.io/a/R31H14GV9THP) file that may be used to kick start your project.
+Here you can also find the [**TDS_Grid.sketch**](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097/assets) file that may be used to kick start your project.
 
 ## Fonts
 
