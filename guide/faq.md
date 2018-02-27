@@ -10,15 +10,13 @@ Either way, [let us know about it](contact.md) so that we can work with you on t
 
 ## How is TDS versioned?
 
-TDS adheres to [Semantic Versioning](https://semver.org/) so that consumers have a predictable way of managing the dependency.
+As of March 2018, TDS switched to an individually version components and each TDS component is an npm package that adheres to [Semantic Versioning](https://semver.org/) to make it easier for consumers to manage upgrades across independent components.
 
 In short:
 
 * Major version changes denote breaking API changes such as renaming a component.
 * Minor version changes denote backwards compatible changes such as introducing a new prop to a component.
 * Patch changes denote bug fixes.
-
-While TDS is currently structured as a single package, we intend to separate each component into its own independently versioned package soon. We hope this will make it even easier to manage upgrades across independent components.
 
 Learn more by reading the [TELUS Design Platform roadmap](roadmap.md).
 
