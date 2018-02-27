@@ -76,6 +76,7 @@ ExpandCollapse.propTypes = {
   topDivider: PropTypes.bool,
   /**
    * A callback function to be invoked when any panel is opened or closed.
+   * The function can accept a single parameter: `openPanels`.
    *
    * @param {Array} openPanels A list of the currently open panel identifiers.
    */
