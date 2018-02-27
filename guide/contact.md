@@ -11,7 +11,7 @@ It is not intended for general public consumption.
 
 3. **#tds-guild** for general discussions, announcements, and TDS-related design questions
 
-4. **#tds-support** for fast support directly related to components or code within the TDS repository or served by the TDS npm package. If you do not require immediate support, it is preferred to [open a GitHub issue](contributing/contributing.md#1-submit-issue)
+4. **#tds-support** for fast support directly related to components or code within the TDS repository or served by the TDS core npm packages. If you do not require immediate support, it is preferred to [open a GitHub issue](contributing/contributing.md#1-submit-issue)
 
 5. **Anonymous form**: We would rather you use Github for logging all issues, however, you can [submit anonymous feedback](https://goo.gl/forms/8g8n7BMjvLJN7bDr1).
 

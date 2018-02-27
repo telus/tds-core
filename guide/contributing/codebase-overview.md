@@ -25,7 +25,7 @@ We utilize the following tools for the development, release, and distribution pr
 * Linters and Prettier: standardize code style and format
 * [CSS Modules](https://github.com/css-modules/css-modules): facilitates the buildup of scoped
   CSS while maintaining the familiar interface of SCSS
-* [Yarn](https://github.com/css-modules/css-modules): we chose Yarn as our node package
+* [Yarn](https://yarnpkg.com/en/): we chose Yarn as our node package
   manager for its speed and deep dependency version locking
 * [Openshift](https://www.openshift.com/) and [Docker](https://www.docker.com/): the CI pipeline is largely
   based on the isomorphic stater kit pipeline, using Docker as the build artifact
