@@ -59,11 +59,12 @@ module.exports = {
       .join('-')
       .toLowerCase()
 
-    if (name === 'Accordion') {
+    if (name === 'Accordion' || name === 'ExpandCollapse') {
       kebabizeName = 'expand-collapse'
+      return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
 
-    return `import { ${name} } from '@tds/core-${kebabizeName}'`
+    return `import ${name} from '@tds/core-${kebabizeName}'`
   },
 
   showUsage: false,
@@ -75,7 +76,7 @@ module.exports = {
       content: path.resolve('docs/intro/welcome.md'),
     },
     {
-      name: 'Component Catalogue',
+      name: 'Components',
       sections: [
         {
           name: 'CSS reset',
