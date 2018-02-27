@@ -1,6 +1,6 @@
 # Getting started - developer guide
 
-As a developer, your primary interaction point with TDS is through React components. These components are currently are independent, composable components distributed as individual packages.
+As a developer, your primary interaction point with TDS is through React components. These components are independent, composable components distributed as individual packages.
 
 TDS components include:
 
@@ -21,10 +21,10 @@ If you are using the [Isomorphic Starter Kit](https://github.com/telusdigital/te
 To install the latest version of a component:
 
 ```sh
-yarn add @tds/core-component-name
+yarn add @tds/core-<component-name>
 
 # or with npm
-npm install @tds/core-component-name --save
+npm install @tds/core-<component-name>--save
 ```
 
 That's it! You don't need any other dependencies to use the TDS.
