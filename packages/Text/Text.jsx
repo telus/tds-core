@@ -9,7 +9,7 @@ import TextSup from './TextSup/TextSup'
 import styles from '../../shared/styles/Typography.modules.scss'
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * Inline text usually as an HTML `<span>` element.
  */

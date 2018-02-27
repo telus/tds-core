@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-css-reset",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "TDS root styles and fonts",
   "main": "",
   "license": "MIT",
@@ -25,6 +25,6 @@
     "build": "yarn build:sass && yarn build:postcss"
   },
   "devDependencies": {
-    "@tds/core-colours": "^0.0.0-development"
+    "@tds/core-colours": "^1.0.0"
   }
 }

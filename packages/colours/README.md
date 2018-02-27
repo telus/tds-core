@@ -2,7 +2,7 @@
 @import '~@tds/core-colours/colours';`
 ```
 
-Version: 0.0.0-development
+Version: 1.0.0
 
 These are the brand-approved colours available as sass variables to be consumed within your application styles.
 

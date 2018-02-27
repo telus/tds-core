@@ -17,7 +17,7 @@ const touchAreaStyles = iconSize => {
 }
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * An icon that has meaning within the context of the page, which should be communicated to screen readers.
  */

@@ -15,7 +15,7 @@ const preventDisabling = ({ disabled, ...props }) => {
 }
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  */
 const Button = ({ type, variant, children, ...rest }) => {
   const restNoDisabled = preventDisabling(rest)

@@ -7,7 +7,7 @@ import CounterButton from './CounterButton'
 import './SelectorCounter.scss'
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * Choose a number.
  */

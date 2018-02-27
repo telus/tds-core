@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-button-link",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "A link that is styled as a button",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,6 +28,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^0.0.0-development"
+    "@tds/core-colours": "^1.0.0"
   }
 }

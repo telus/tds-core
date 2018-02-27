@@ -6,7 +6,7 @@ import safeRest from '../../shared/utils/safeRest'
 import styles from '../../shared/styles/Typography.modules.scss'
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * Small print, such as copyright and legal text.
  */

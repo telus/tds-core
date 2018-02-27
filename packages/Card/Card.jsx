@@ -7,7 +7,7 @@ import safeRest from '../../shared/utils/safeRest'
 import styles from './Card.modules.scss'
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * A content container.
  */
