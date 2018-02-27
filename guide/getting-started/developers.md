@@ -52,9 +52,9 @@ Add an entry to the `module.rules` array to load CSS. You may also provide other
 }
 ```
 
-### 2. Import the TDS styles
+### 2. Import the TDS css-reset styles
 
-Import the TDS stylesheet into the main entry point of your application. It contains a small amount of page level styles and the pre-compiled components' styles. We use CSS Modules to generate unique class names, which guarantees that TDS component styles will not conflict with your application's class names.
+Import the TDS stylesheet into the main entry point of your application. It contains a small amount of page level styles.
 
 You will not use these styles directly. Webpack will bundle the TDS styles with your application-specific styles, and they will be consumed by the TDS components.
 
@@ -67,7 +67,7 @@ import { render } from 'react-dom'
 
 import App from './App'
 
-import '@tds/core-css-reset/index.css'
+import '@tds/core-css-reset/dist/index.css'
 
 render(<App />, document.getElementById('root'))
 ```
@@ -81,7 +81,10 @@ TDS components are made to be composed. Each one accomplishes a specific purpose
 
 import React from 'react'
 
-import { Box, Button, DisplayHeading, Paragraph } from '@telusdigital/tds'
+import Box from '@tds/core-box'
+import Button from '@tds/core-button'
+import DisplayHeading from '@tds/core-display-heading'
+import Paragraph from '@tds/core-paragraph'
 
 const BannerText = ({ onDownloadClick }) => (
   <Box between={5}>
@@ -104,7 +107,7 @@ A list of the available colours and their use cases can be found [in the Design 
 ```scss
 // BannerText.scss
 
-@import '~@telusdigital/tds/dist/scss/colours';
+@import '~@tds/core-colours/colours';
 
 .banner {
   background-color: $color-purple;
