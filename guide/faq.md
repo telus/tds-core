@@ -10,7 +10,7 @@ Either way, [let us know about it](contact.md) so that we can work with you on t
 
 ## How is TDS versioned?
 
-As of March 2018, TDS switched to an individually-versioned components and each TDS component is an npm package that adheres to [Semantic Versioning](https://semver.org/) to make it easier for consumers to manage upgrades across independent components.
+As of March 2018, TDS switched to individually-versioned components and each TDS component is an npm package that adheres to [Semantic Versioning](https://semver.org/) to make it easier for consumers to manage upgrades across independent components.
 
 In short:
 
