@@ -10,9 +10,9 @@ import Panels from './Panels'
 import Panel from './Panel/Panel'
 
 /**
- * A connected series of expandable content areas.
+ * @version 1.0.0
  *
- * <span class="docs--badge__updated">updated</span> <span class="docs--badge__version">v0.33.1</span>
+ * A connected series of expandable content areas.
  */
 class ExpandCollapse extends React.Component {
   state = {

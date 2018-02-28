@@ -5,6 +5,8 @@ import safeRest from '../../shared/utils/safeRest'
 import styles from './WaveDivider.modules.scss'
 
 /**
+ * @version 1.0.0
+ *
  * Separate page content blocks.
  */
 const WaveDivider = ({ ...rest }) => (

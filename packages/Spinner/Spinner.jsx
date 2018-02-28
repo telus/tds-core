@@ -5,6 +5,8 @@ import classnames from 'classnames'
 import './Spinner.scss'
 
 /**
+ * @version 1.0.0
+ *
  * A waiting indicator.
  */
 class Spinner extends Component {

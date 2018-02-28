@@ -14,7 +14,7 @@ import styles from './TextArea.modules.scss'
 import positionStyles from '../../shared/styles/Position.modules.scss'
 
 /**
- * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.33.0</span>
+ * @version 1.0.0
  */
 const TextArea = props => (
   <FormField {...props}>

@@ -9,6 +9,8 @@ import spacingStyles from '../../shared/styles/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
 
 /**
+ * @version 1.0.0
+ *
  * Block text as an HTML `<p>` element.
  */
 const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) => {

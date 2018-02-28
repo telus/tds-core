@@ -30,6 +30,8 @@ const getIds = connectedFieldLabel => {
 }
 
 /**
+ * @version 1.0.0
+ *
  * Provide an explanation or instructions for a form field that most users do not need.
  */
 class Tooltip extends React.Component {

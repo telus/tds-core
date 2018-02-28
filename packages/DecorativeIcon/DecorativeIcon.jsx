@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import Icon from '../../shared/components/Icon/Icon'
 
 /**
+ * @version 1.0.0
+ *
  * An icon used for visual aesthetics only.
  */
 const DecorativeIcon = ({ symbol, variant, size, ...rest }) => (

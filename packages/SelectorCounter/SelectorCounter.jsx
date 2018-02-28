@@ -7,6 +7,8 @@ import CounterButton from './CounterButton'
 import './SelectorCounter.scss'
 
 /**
+ * @version 1.0.0
+ *
  * Choose a number.
  */
 class SelectorCounter extends Component {

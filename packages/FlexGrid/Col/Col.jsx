@@ -23,7 +23,7 @@ const removeProps = ({
 }) => safeRest(rest)
 
 /**
- * <span class="docs--badge__new">new</span> <span class="docs--badge__version">v0.34.0</span>
+ * @version 1.0.0
  */
 const Col = ({ span, offset, children, ...rest }) => (
   <Subscriber channel="flex-grid">

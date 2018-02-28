@@ -1,5 +1,4 @@
 const path = require('path')
-const { version } = require('../package.json')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
 
@@ -24,7 +23,7 @@ const compact = array => array.filter(element => element !== undefined)
 /* eslint-enable no-unused-vars */
 
 module.exports = {
-  title: `TDS v${version}`,
+  title: `TDS`,
 
   skipComponentsWithoutExample: true,
   getExampleFilename(componentPath) {
@@ -37,11 +36,12 @@ module.exports = {
     // key is a path to match, value is the name to show in the styleguide for the import statement
     const namespacedComponents = {
       FlexGrid: 'FlexGrid',
-      StepTracker: 'Steps',
       'ExpandCollapse/Panel': 'ExpandCollapse',
-      'Typography/Text': 'Text',
       DisplayHeading: 'DisplayHeading',
       Heading: 'Heading',
+      'Text/TextSup': 'Text',
+      'TextArea/TextArea': 'TextArea',
+      'StepTracker/Steps': 'StepTracker',
     }
 
     const componentDirectory = path.dirname(componentPath)
@@ -49,11 +49,22 @@ module.exports = {
     const componentPathTest = Object.keys(namespacedComponents).find(pathTest =>
       componentDirectory.includes(pathTest)
     )
+
     if (componentPathTest) {
       name = namespacedComponents[componentPathTest]
     }
 
-    return `import { ${name} } from '@telusdigital/tds'`
+    let kebabizeName = name
+      .split(/(?=[A-Z])/)
+      .join('-')
+      .toLowerCase()
+
+    if (name === 'Accordion' || name === 'ExpandCollapse') {
+      kebabizeName = 'expand-collapse'
+      return `import { ${name} } from '@tds/core-${kebabizeName}'`
+    }
+
+    return `import ${name} from '@tds/core-${kebabizeName}'`
   },
 
   showUsage: false,
@@ -65,26 +76,19 @@ module.exports = {
       content: path.resolve('docs/intro/welcome.md'),
     },
     {
-      name: 'Foundational elements',
-      sections: [
-        {
-          name: 'Colours',
-          content: path.resolve('docs/elements/colours.md'),
-        },
-      ],
-    },
-    {
       name: 'Components',
       sections: [
         {
+          name: 'CSS reset',
+          content: path.resolve('packages/css-reset/README.md'),
+        },
+        {
+          name: 'Colours',
+          content: path.resolve('packages/colours/README.md'),
+        },
+        {
           name: 'Layout',
-          components() {
-            return [
-              path.resolve('packages/Box/Box.jsx'),
-              path.resolve('packages/Responsive/Responsive.jsx'),
-            ]
-          },
-          sections: compact([
+          sections: [
             {
               name: 'Grid',
               components() {
@@ -92,48 +96,6 @@ module.exports = {
                   path.resolve('packages/FlexGrid/FlexGrid.jsx'),
                   path.resolve('packages/FlexGrid/Row/Row.jsx'),
                   path.resolve('packages/FlexGrid/Col/Col.jsx'),
-                ]
-              },
-            },
-          ]),
-        },
-        {
-          name: 'Content',
-          components() {
-            return compact([
-              path.resolve('packages/Card/Card.jsx'),
-              path.resolve('packages/Image/Image.jsx'),
-            ])
-          },
-          sections: compact([
-            {
-              name: 'Links',
-              components() {
-                return [
-                  path.resolve('packages/Link/Link.jsx'),
-                  path.resolve('packages/ChevronLink/ChevronLink.jsx'),
-                  path.resolve('packages/ButtonLink/ButtonLink.jsx'),
-                ]
-              },
-            },
-            {
-              name: 'Lists',
-              content: path.resolve('docs/Lists.md'),
-              components() {
-                return [
-                  path.resolve('packages/UnorderedList/UnorderedList.jsx'),
-                  path.resolve('packages/OrderedList/OrderedList.jsx'),
-                ]
-              },
-            },
-
-            {
-              name: 'Expand collapse',
-              components() {
-                return [
-                  path.resolve('packages/ExpandCollapse/ExpandCollapse.jsx'),
-                  path.resolve('packages/ExpandCollapse/Accordion/Accordion.jsx'),
-                  path.resolve('packages/ExpandCollapse/Panel/Panel.jsx'),
                 ]
               },
             },
@@ -147,7 +109,13 @@ module.exports = {
                 ]
               },
             },
-          ]),
+          ],
+          components() {
+            return [
+              path.resolve('packages/Box/Box.jsx'),
+              path.resolve('packages/Responsive/Responsive.jsx'),
+            ]
+          },
         },
         {
           name: 'Typography',
@@ -167,6 +135,16 @@ module.exports = {
           },
         },
         {
+          name: 'Links',
+          components() {
+            return [
+              path.resolve('packages/Link/Link.jsx'),
+              path.resolve('packages/ChevronLink/ChevronLink.jsx'),
+              path.resolve('packages/ButtonLink/ButtonLink.jsx'),
+            ]
+          },
+        },
+        {
           name: 'Icons',
           content: path.resolve('docs/icons.md'),
           components() {
@@ -177,19 +155,9 @@ module.exports = {
           },
         },
         {
-          name: 'Feedback indicators',
-          components() {
-            return [
-              path.resolve('packages/Notification/Notification.jsx'),
-              path.resolve('packages/Spinner/Spinner.jsx'),
-              path.resolve('packages/StepTracker/Steps/Steps.jsx'),
-            ]
-          },
-        },
-        {
           name: 'Forms',
           components() {
-            return compact([
+            return [
               path.resolve('packages/Button/Button.jsx'),
               path.resolve('packages/Input/Input.jsx'),
               path.resolve('packages/Checkbox/Checkbox.jsx'),
@@ -199,7 +167,46 @@ module.exports = {
               path.resolve('packages/InputFeedback/InputFeedback.jsx'),
               path.resolve('packages/Tooltip/Tooltip.jsx'),
               path.resolve('packages/SelectorCounter/SelectorCounter.jsx'),
-            ])
+            ]
+          },
+        },
+        {
+          name: 'Lists',
+          content: path.resolve('docs/Lists.md'),
+          components() {
+            return [
+              path.resolve('packages/UnorderedList/UnorderedList.jsx'),
+              path.resolve('packages/OrderedList/OrderedList.jsx'),
+            ]
+          },
+        },
+        {
+          name: 'Expand collapse',
+          components() {
+            return [
+              path.resolve('packages/ExpandCollapse/ExpandCollapse.jsx'),
+              path.resolve('packages/ExpandCollapse/Accordion/Accordion.jsx'),
+              path.resolve('packages/ExpandCollapse/Panel/Panel.jsx'),
+            ]
+          },
+        },
+        {
+          name: 'Content',
+          components() {
+            return [
+              path.resolve('packages/Card/Card.jsx'),
+              path.resolve('packages/Image/Image.jsx'),
+            ]
+          },
+        },
+        {
+          name: 'Feedback Indicators',
+          components() {
+            return [
+              path.resolve('packages/Notification/Notification.jsx'),
+              path.resolve('packages/Spinner/Spinner.jsx'),
+              path.resolve('packages/StepTracker/Steps/Steps.jsx'),
+            ]
           },
         },
       ],

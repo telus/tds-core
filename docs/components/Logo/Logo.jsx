@@ -1,10 +1,8 @@
 import React from 'react'
 
-import { version } from '../../../package.json'
 import logo from './Logo.svg'
 
 import Box from '../../../packages/Box/Box'
-import Text from '../../../packages/Text/Text'
 import ChevronLink from '../../../packages/ChevronLink/ChevronLink'
 
 const Logo = () => (
@@ -12,8 +10,6 @@ const Logo = () => (
     <a href="#styleguidist-top" title="TELUS Design System">
       <img src={logo} alt="TELUS Logo" />
     </a>
-
-    <Text size="small">v{version}</Text>
 
     <Box horizontal={1} vertical={2}>
       <ChevronLink href="../" variant="secondary" direction="left">

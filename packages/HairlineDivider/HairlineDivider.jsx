@@ -22,6 +22,8 @@ const getClassName = (vertical, gradient) => {
 }
 
 /**
+ * @version 1.0.0
+ *
  * Separate content within modules.
  */
 const HairlineDivider = ({ vertical, gradient, ...rest }) => (

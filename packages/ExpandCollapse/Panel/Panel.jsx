@@ -4,6 +4,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
+ * @version 1.0.0
+ *
  * Expandable content areas for use with the `ExpandCollapse` or `Accordion`
  *
  * _This component can only be accessed as a name-spaced component: `ExpandCollapse.Panel` or `Accordion.Panel`._

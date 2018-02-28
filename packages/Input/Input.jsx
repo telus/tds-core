@@ -16,7 +16,7 @@ import formStyles from '../../shared/styles/Forms.modules.scss'
 import styles from './Input.modules.scss'
 
 /**
- * <span class="docs--badge__updated">updated</span> <span class="docs--badge__version">v0.33.0</span>
+ * @version 1.0.0
  */
 const Input = props => (
   <FormField {...props}>

@@ -1,6 +1,6 @@
 # Getting started - developer guide
 
-As a developer, your primary interaction point with TDS is through React components. Though the components are currently distributed in a single bundle, you should conceptualize them as independent, composable components.
+As a developer, your primary interaction point with TDS is through React components. These components are independent, composable components distributed as individual packages.
 
 TDS components include:
 
@@ -18,13 +18,13 @@ TDS components do not include:
 
 If you are using the [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), TDS is already installed and configured. You can jump straight to [using the components](#3-use-tds-components).
 
-To install the latest version:
+To install the latest version of a component:
 
 ```sh
-yarn add @telusdigital/tds
+yarn add @tds/core-<component-name>
 
 # or with npm
-npm install @telusdigital/tds --save
+npm install @tds/core-<component-name> --save
 ```
 
 That's it! You don't need any other dependencies to use the TDS.
@@ -52,13 +52,18 @@ Add an entry to the `module.rules` array to load CSS. You may also provide other
 }
 ```
 
-### 2. Import the TDS styles
+### 2. Import the TDS css-reset styles
 
-Import the TDS stylesheet into the main entry point of your application. It contains a small amount of page level styles and the pre-compiled components' styles. We use CSS Modules to generate unique class names, which guarantees that TDS component styles will not conflict with your application's class names.
+The css reset stylesheet contains a small amount of page level styles.
 
 You will not use these styles directly. Webpack will bundle the TDS styles with your application-specific styles, and they will be consumed by the TDS components.
 
-See the FAQ for [more info about the specific global styles that are applied](../faq.md#what-global-styles-does-tds-set-on-the-page).
+Before importing the css-reset stylesheet into the main entry point of your application, you need to install the css-reset package as a dependency.
+
+```sh
+# install the core-css-reset package as a dependency in `ui/package.json`
+yarn add @tds/core-css-reset
+```
 
 ```js
 // index.js
@@ -67,7 +72,7 @@ import { render } from 'react-dom'
 
 import App from './App'
 
-import '@telusdigital/tds/dist/tds.css'
+import '@tds/core-css-reset/dist/index.css'
 
 render(<App />, document.getElementById('root'))
 ```
@@ -81,7 +86,10 @@ TDS components are made to be composed. Each one accomplishes a specific purpose
 
 import React from 'react'
 
-import { Box, Button, DisplayHeading, Paragraph } from '@telusdigital/tds'
+import Box from '@tds/core-box'
+import Button from '@tds/core-button'
+import DisplayHeading from '@tds/core-display-heading'
+import Paragraph from '@tds/core-paragraph'
 
 const BannerText = ({ onDownloadClick }) => (
   <Box between={5}>
@@ -101,10 +109,14 @@ Colour is the one exception, as the colour palette is available as Sass variable
 
 A list of the available colours and their use cases can be found [in the Design section](../design/colour.md).
 
-```scss
-// BannerText.scss
+```sh
+# install the @tds/core-colours package as a dependency in `ui/package.json`
+yarn add @tds/core-colours
+```
 
-@import '~@telusdigital/tds/dist/scss/colours';
+```css
+/* BannerText.scss */
+@import '~@tds/core-colours/colours';
 
 .banner {
   background-color: $color-purple;

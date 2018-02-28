@@ -25,10 +25,11 @@ We utilize the following tools for the development, release, and distribution pr
 * Linters and Prettier: standardize code style and format
 * [CSS Modules](https://github.com/css-modules/css-modules): facilitates the buildup of scoped
   CSS while maintaining the familiar interface of SCSS
-* [Yarn](https://github.com/css-modules/css-modules): we chose Yarn as our node package
+* [Yarn](https://yarnpkg.com/en/): we chose Yarn as our node package
   manager for its speed and deep dependency version locking
 * [Openshift](https://www.openshift.com/) and [Docker](https://www.docker.com/): the CI pipeline is largely
   based on the isomorphic stater kit pipeline, using Docker as the build artifact
+* [Lerna](https://lernajs.io/): A tool for managing JavaScript projects with multiple packages.
 
 ## Component structure and standards {#component-structure-and-standards}
 
@@ -36,13 +37,18 @@ All TDS components have a common directory structure and set of standards. Where
 component named `ButtonLink`, the files are organized like this:
 
 ```
-/src/components/
+/packages/
 │
 └─── ButtonLink
     │  ButtonLink.md
     │  ButtonLink.jsx
     │  ButtonLink.modules.scss
-    │
+    |  index.cjs.js
+    │  index.es.js
+    |  package.json
+    |  README.md
+    |  rollup.config.js
+    |
     └─── __tests__
         │  ButtonLink.spec.jsx
         |
@@ -53,10 +59,10 @@ component named `ButtonLink`, the files are organized like this:
 Here you may notice some of our standards:
 
 * Use PascalCase for all file names
-* Avoid non-verbose filenames such as `index.jsx`
 * Every component must include a set of unit tests and snapshot
 * If a component requires custom styling, use CSS Modules and suffix your scss file with `.modules.scss`
 * To include custom documentation with a component, use `<ComponentName>.md`
+* To include documentation for the npm registry page, use `README.md`
 
 ## Building components {#building-components}
 
