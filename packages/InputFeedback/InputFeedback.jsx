@@ -8,7 +8,7 @@ import safeRest from '../../shared/utils/safeRest'
 import styles from './InputFeedback.modules.scss'
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  *
  * A feedback box commonly used with form fields.
  */

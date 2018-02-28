@@ -17,7 +17,7 @@ const getClassName = (invert, desktop) =>
   )
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  *
  * Large page titles. Renders an HTML `<h1>` element.
  */

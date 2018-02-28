@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-text",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Inline text",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,6 +28,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.0"
+    "@tds/core-colours": "^0.0.0-development"
   }
 }

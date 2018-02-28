@@ -12,7 +12,7 @@ const breakpoints = {
 }
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  *
  * Respond to device features, most commonly the browser viewport size.
  */

@@ -13,7 +13,7 @@ import styles from '../../shared/styles/List.modules.scss'
 const injectListStyle = (child, listStyle) => React.cloneElement(child, { listStyle })
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  */
 const UnorderedList = ({ listStyle, children, ...rest }) => {
   return (

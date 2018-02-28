@@ -12,7 +12,7 @@ import joinClassNames from '../../shared/utils/joinClassNames'
 import styles from './FlexGrid.modules.scss'
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  */
 const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {
   const gutterStyle = gutter ? undefined : styles.gutterless

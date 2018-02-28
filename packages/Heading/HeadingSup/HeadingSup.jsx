@@ -5,7 +5,7 @@ import safeRest from '../../../shared/utils/safeRest'
 import styles from '../Heading.modules.scss'
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  *
  * Superscript text for `Heading` an as HTML `<sup>` element.
  *

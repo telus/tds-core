@@ -5,7 +5,7 @@ import classnames from 'classnames'
 import './Spinner.scss'
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  *
  * A waiting indicator.
  */

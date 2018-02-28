@@ -6,7 +6,7 @@ import safeRest from '../../shared/utils/safeRest'
 import styles from '../../shared/styles/Typography.modules.scss'
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  *
  * Give portions of a sentence added importance.
  */

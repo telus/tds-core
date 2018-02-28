@@ -22,7 +22,7 @@ const getClassName = (vertical, gradient) => {
 }
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  *
  * Separate content within modules.
  */

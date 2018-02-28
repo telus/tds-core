@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-link",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -27,6 +27,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.0"
+    "@tds/core-colours": "^0.0.0-development"
   }
 }

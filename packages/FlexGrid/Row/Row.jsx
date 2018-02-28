@@ -7,7 +7,7 @@ import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 import safeRest from '../../../shared/utils/safeRest'
 
 /**
- * @version 1.0.0
+ * @version 0.0.0-development
  */
 const Row = ({ horizontalAlign, verticalAlign, distribute, children, ...rest }) => {
   const getAlignment = () => {

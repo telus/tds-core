@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-ordered-list",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.0.0",
+    "@tds/core-box": "^0.0.0-development",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
