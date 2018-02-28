@@ -7,7 +7,7 @@ import Step from '../Step/Step'
 import './Steps.scss'
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * Show the current position in a sequence of steps.
  */

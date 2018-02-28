@@ -30,7 +30,7 @@ const getBetweenClasses = (scale, inline, desktop) => {
 }
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * Apply spacing within or around components.
  */

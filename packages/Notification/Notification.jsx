@@ -42,7 +42,7 @@ const renderContent = (variant, children) => {
 }
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * A banner that highlights important messages.
  */

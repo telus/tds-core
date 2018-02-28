@@ -9,7 +9,7 @@ import spacingStyles from '../../shared/styles/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * Block text as an HTML `<p>` element.
  */

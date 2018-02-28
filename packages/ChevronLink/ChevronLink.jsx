@@ -27,7 +27,7 @@ const getIcon = (symbol, classes) => (
 )
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  *
  * A call to action link.
  */

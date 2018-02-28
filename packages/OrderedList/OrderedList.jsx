@@ -11,7 +11,7 @@ import OrderedItem from './OrderedItem'
 import styles from './OrderedList.modules.scss'
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  */
 const OrderedList = ({ listStyle, children, ...rest }) => (
   <Box {...safeRest(rest)} tag="ol" between={2} dangerouslyAddClassName={styles[listStyle]}>

@@ -3,7 +3,7 @@
 import '@tds/core-reset/dist/index.css'
 ```
 
-Version: 0.0.0-development
+Version: 1.0.0
 
 These stylesheet includes a small amount of page level styles to establish a common baseline.
 

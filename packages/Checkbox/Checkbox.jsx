@@ -7,7 +7,7 @@ import Choice from '../../shared/components/Choice/Choice'
 import styles from './Checkbox.modules.scss'
 
 /**
- * @version 0.0.0-development
+ * @version 1.0.0
  */
 const Checkbox = props => (
   <Choice {...props} type="checkbox" inputTypeStyles={styles}>
