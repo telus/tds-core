@@ -1,9 +1,6 @@
 ```css noeditor
 // in jsx
 import '@tds/core-reset/dist/index.css'
-
-// in Sass
-import "~@tds/core-reset/dist/index"
 ```
 
 Version: 1.0.0
@@ -18,3 +15,5 @@ Specifically, the `index.css` stylesheet in this package contains the following 
 * **default body styles**: to establish the base font size and colour
 
 Please do not override these global styles. Doing so will likely produce non-deterministic behaviour and UI defects.
+
+Note: for the import statement above to work in your application you must also use the [ignore-styles](https://www.npmjs.com/package/ignore-styles) packages to ignore style imports when running in Node (SSR).
