@@ -24,7 +24,7 @@ To install the latest version of a component:
 yarn add @tds/core-<component-name>
 
 # or with npm
-npm install @tds/core-<component-name>--save
+npm install @tds/core-<component-name> --save
 ```
 
 That's it! You don't need any other dependencies to use the TDS.
@@ -54,11 +54,16 @@ Add an entry to the `module.rules` array to load CSS. You may also provide other
 
 ### 2. Import the TDS css-reset styles
 
-Import the TDS stylesheet into the main entry point of your application. It contains a small amount of page level styles.
+The css reset stylesheet contains a small amount of page level styles.
 
 You will not use these styles directly. Webpack will bundle the TDS styles with your application-specific styles, and they will be consumed by the TDS components.
 
-See the FAQ for [more info about the specific global styles that are applied](../faq.md#what-global-styles-does-tds-set-on-the-page).
+Before importing the css-reset stylesheet into the main entry point of your application, you need to install the css-reset package as a dependency.
+
+```sh
+# install the core-css-reset package as a dependency in `ui/package.json`
+yarn add @tds/core-css-reset
+```
 
 ```js
 // index.js
@@ -104,9 +109,13 @@ Colour is the one exception, as the colour palette is available as Sass variable
 
 A list of the available colours and their use cases can be found [in the Design section](../design/colour.md).
 
-```scss
-// BannerText.scss
+```sh
+# install the @tds/core-colours package as a dependency in `ui/package.json`
+yarn add @tds/core-colours
+```
 
+```css
+/* BannerText.scss */
 @import '~@tds/core-colours/colours';
 
 .banner {

@@ -1,4 +1,10 @@
+```sh noeditor
+# install the colours package into your /ui/package.json
+yarn add @tds/core-colours
+```
+
 ```css noeditor
+/* in .scss files that will use the sass colour variables */
 @import '~@tds/core-colours/colours';`
 ```
 
