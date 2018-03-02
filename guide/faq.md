@@ -24,9 +24,9 @@ Learn more by reading the [TELUS Design Platform roadmap](roadmap.md).
 
 * Chrome
 * Firefox
-* Safari: 9
+* Safari: 10
 * MS Edge
-* Internet Explorer: 10
+* Internet Explorer: 11
 * Opera
 
 ## Do I need any polyfills?
