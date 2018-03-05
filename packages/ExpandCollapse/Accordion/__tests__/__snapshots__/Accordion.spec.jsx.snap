@@ -38,6 +38,7 @@ exports[`Accordion renders a closed accordion 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            type="button"
           >
             <button
               aria-expanded={false}
@@ -46,6 +47,7 @@ exports[`Accordion renders a closed accordion 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              type="button"
             >
               <Box
                 inline={false}
@@ -348,6 +350,7 @@ exports[`Accordion renders an open accordion 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            type="button"
           >
             <button
               aria-expanded={true}
@@ -356,6 +359,7 @@ exports[`Accordion renders an open accordion 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              type="button"
             >
               <Box
                 inline={false}

@@ -4,6 +4,7 @@ exports[`StandaloneIcon Interactive icon renders 1`] = `
 <button
   class="clickable"
   style="padding:4px;margin:-4px"
+  type="button"
 >
   <i
     aria-label="Some text for the screen readers."

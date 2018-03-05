@@ -8,20 +8,20 @@
 
 ## Description
 
-- Description of the problem
+* Description of the problem
 
 ## Recommendation
 
-- Description of the proposed solution
+* Description of the proposed solution
 
 ## Designs
 
-- Screenshots
-- Sketch file
+* Screenshots
+* Sketch file
 
 ## Meta
 
-- [ ] Currently using TDS version: vX.Y.Z
-- [ ] Willing to develop solution
-- [ ] Has workaround
-- [ ] High impact
+* TDS version: vX.Y.Z
+* Willing to develop solution: Yes/No
+* Has workaround: Yes/No
+* High impact: Yes/No

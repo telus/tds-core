@@ -41,6 +41,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            type="button"
           >
             <button
               aria-expanded={false}
@@ -49,6 +50,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              type="button"
             >
               <Box
                 inline={false}
@@ -363,6 +365,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            type="button"
           >
             <button
               aria-expanded={true}
@@ -371,6 +374,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              type="button"
             >
               <Box
                 inline={false}

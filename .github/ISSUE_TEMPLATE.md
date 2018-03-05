@@ -15,28 +15,28 @@
 
 ## Description
 
-- Description of the defect 
+* Description of the defect
 
 ## Reproduction Steps
 
-- Click this thing
-- Now click this
-- Observe this happens
+* Click this thing
+* Now click this
+* Observe this happens
 
 ## Reproduction Percentage (if applicable)
 
-- 0/10 times
+* 0/10 times
 
 ## Meta
 
-- [ ] TDS version: vX.Y.Z
-- [ ] Willing to develop solution
-- [ ] Has workaround
-- [ ] High impact
+* TDS version: vX.Y.Z
+* Willing to develop solution: Yes/No
+* Has workaround: Yes/No
+* High impact: Yes/No
 
 ## Screenshots
 
-- Include any relevant screenshots
+* Include any relevant screenshots
 
 <!--
   Template for logging FEATURE REQUESTS
@@ -47,20 +47,20 @@
 
 ## Description
 
-- Description of the problem
+* Description of the problem
 
 ## Recommendation
 
-- Description of the proposed solution
+* Description of the proposed solution
 
 ## Designs
 
-- Screenshots
-- Sketch file
+* Screenshots
+* Sketch file
 
 ## Meta
 
-- [ ] Currently using TDS version: vX.Y.Z
-- [ ] Willing to develop solution
-- Has workaround? Yes or no
-- Impact: Low, medium, or high
+* TDS version: vX.Y.Z
+* Willing to develop solution: Yes/No
+* Has workaround: Yes/No
+* High impact: Yes/No
