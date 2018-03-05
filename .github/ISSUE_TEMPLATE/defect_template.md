@@ -8,25 +8,25 @@
 
 ## Description
 
-- Description of the defect 
+* Description of the defect
 
 ## Reproduction Steps
 
-- Click this thing
-- Now click this
-- Observe this happens
+* Click this thing
+* Now click this
+* Observe this happens
 
 ## Reproduction Percentage (if applicable)
 
-- 0/10 times
+* 0/10 times
 
 ## Meta
 
-- [ ] TDS version: vX.Y.Z
-- [ ] Willing to develop solution
-- [ ] Has workaround
-- [ ] High impact
+* TDS version: vX.Y.Z
+* Willing to develop solution: Yes/No
+* Has workaround: Yes/No
+* High impact: Yes/No
 
 ## Screenshots
 
-- Include any relevant screenshots
+* Include any relevant screenshots
