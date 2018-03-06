@@ -1,2 +1,5 @@
 scripts/scaffolding
 dist
+docs/components/Editor
+docs/components/Pathline
+docs/components/TabButton

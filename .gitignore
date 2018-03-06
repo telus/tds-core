@@ -21,3 +21,7 @@ guide/components/
 guide/_book/
 build
 **/reports/**
+
+functional-tests/screenshots/baseline/*.png
+functional-tests/screenshots/diffs/*.png
+functional-tests/screenshots/results/*.png

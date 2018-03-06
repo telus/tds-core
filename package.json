@@ -85,6 +85,7 @@
     "lint-staged": "^6.1.0",
     "nightwatch": "^0.9.19",
     "nightwatch-accessibility": "^1.6.0",
+    "node-resemble-js": "^0.2.0",
     "node-sass": "^4.7.2",
     "node-sass-tilde-importer": "^1.0.1",
     "postcss": "^6.0.17",

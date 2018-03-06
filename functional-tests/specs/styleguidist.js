@@ -19,6 +19,9 @@ styleguidistTests['Goto Styleguidist SPA'] = function goToStyleguidist(browser) 
     // Accessibility check
     .initAccessibility()
     .assert.accessibility(root, { verbose: true })
+    // CSS regression test
+    .moveToElement(root, 0, 0)
+    .compareScreenshot('styleguidist')
 }
 
 module.exports = styleguidistTests
