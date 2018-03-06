@@ -231,6 +231,8 @@ module.exports = {
     TableOfContentsRenderer: path.resolve(
       'docs/components/TableOfContents/TableOfContentsRenderer'
     ),
+    TabButtonRenderer: path.resolve('docs/components/TabButton/TabButtonRenderer'),
+    PathlineRenderer: path.resolve('docs/components/Pathline/PathlineRenderer'),
   },
   theme: {
     fontFamily: {
@@ -240,6 +242,7 @@ module.exports = {
       link: '#4B286D',
       linkHover: '#54595F',
       sidebarBackground: '#FFFFFF',
+      codeBackground: '#ffffff',
     },
     sidebarWidth: 240,
   },

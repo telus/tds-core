@@ -48,7 +48,7 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
   },
   footer: {
     display: 'block',
-    color: color.light,
+    color: '#2A2C2E',
     fontFamily: fontFamily.base,
     fontSize: fontSize.small,
   },

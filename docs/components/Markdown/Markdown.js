@@ -17,10 +17,8 @@ import MarkdownParagraph from '../MarkdownParagraph/MarkdownParagraph'
 import MarkdownUnorderedList from '../MarkdownUnorderedList/MarkdownUnorderedList'
 import MarkdownOrderedList from '../MarkdownOrderedList/MarkdownOrderedList'
 
-// We’re explicitly specifying Webpack loaders here so we could skip specifying them in Webpack configuration.
-// That way we could avoid clashes between our loaders and user loaders.
-// eslint-disable-next-line import/no-unresolved
-require('!!react-styleguidist/loaders/style-loader!react-styleguidist/loaders/css-loader!highlight.js/styles/tomorrow.css')
+// loading our own custom version of highlight.js docco theme to make code examples AAA colour accessible
+import codeStyles from '../../css/highlight_js/docco.css'
 
 // Temporary disable memoization to fix: https://github.com/styleguidist/react-styleguidist/issues/348
 // TODO: Remove after merge: https://github.com/probablyup/markdown-to-jsx/pull/96
@@ -103,7 +101,7 @@ const getBaseOverrides = memoize(classes => {
     code: {
       component: Code,
       props: {
-        className: classes.code,
+        className: codeStyles,
       },
     },
   }
@@ -158,10 +156,11 @@ const styles = ({ space, fontFamily, fontSize, color, borderRadius }) => ({
     whiteSpace: 'inherit',
   },
   pre: {
-    composes: '$para',
+    fontFamily: 'Consolas, "Liberation Mono", Menlo, monospace',
     backgroundColor: color.codeBackground,
     border: [[1, color.border, 'solid']],
     padding: [[space[1], space[2]]],
+    margin: [[space[2], space[0]]],
     fontSize: fontSize.small,
     borderRadius,
     whiteSpace: 'pre',

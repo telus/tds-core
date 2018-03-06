@@ -1,7 +1,10 @@
 ## Minimal usage
 
 ```
-<SelectorCounter />
+<Box between={2}>
+  <label htmlFor="docs_example-1" className="docs_selcounter-label">Simple example</label>
+  <SelectorCounter id="docs_example-1" />
+</Box>
 ```
 
 ## Disabled
@@ -9,7 +12,10 @@
 Use the `disabled` prop to disable the input.
 
 ```
-<SelectorCounter disabled />
+<Box between={2}>
+  <label htmlFor="docs_example-2" className="docs_selcounter-label">Disabled example</label>
+  <SelectorCounter id="docs_example-2" disabled />
+</Box>
 ```
 
 ## Displaying feedback
@@ -23,9 +29,12 @@ initialState = {
   value: 5
 };
 
-<SelectorCounter defaultValue={state.value}
+<Box between={2}>
+  <label htmlFor="docs_example-3" className="docs_selcounter-label">Feedback example</label>
+  <SelectorCounter id="docs_example-3" defaultValue={state.value}
                 onChange={(value) => setState({ value: value})}
                 successful={state.value > 5} invalid={state.value <= 5}  />
+</Box>
 ```
 
 ## Accessibility
