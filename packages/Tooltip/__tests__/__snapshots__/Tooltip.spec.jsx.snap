@@ -15,7 +15,7 @@ exports[`Tooltip renders 1`] = `
     <span
       class="TDS_Typography-modules__small___2C82x TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__smallFont___LAiJ9 TDS_Typography-modules__color___22Swj"
     >
-      InputFeedback text
+      Tooltip text
     </span>
   </div>
   <button

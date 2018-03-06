@@ -1,6 +1,6 @@
-//
-// Helvetica Neue Thin 35
-//
+/*
+ Helvetica Neue Thin 35
+*/
 @font-face {
   font-family: 'TELUS-Web';
   font-style: normal;
@@ -15,9 +15,9 @@
       format('eot');
 }
 
-//
-// Helvetica Neue Light 45
-//
+/*
+ Helvetica Neue Light 45
+*/
 @font-face {
   font-family: 'TELUS-Web';
   font-style: normal;
@@ -32,9 +32,9 @@
       format('eot');
 }
 
-//
-// Helvetica Neue Roman 55
-//
+/*
+ Helvetica Neue Roman 55
+*/
 @font-face {
   font-family: 'TELUS-Web';
   font-style: normal;
@@ -49,9 +49,9 @@
       format('eot');
 }
 
-//
-// Helvetica Neue Medium 65
-//
+/*
+ Helvetica Neue Medium 65
+*/
 @font-face {
   font-family: 'TELUS-Web';
   font-style: normal;
@@ -66,7 +66,9 @@
       format('eot');
 }
 
-// Utility Icons web font
+/*
+ Utility Icons web font
+*/
 @font-face {
   font-family: 'TELUS Core Icons';
   src: url('https://cdn.telus.digital/thorium/core/v0.4.0/core-icons.eot');
