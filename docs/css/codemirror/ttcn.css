@@ -1,5 +1,7 @@
 .CodeMirror {
   height: auto;
+  font-family: 'Consolas', 'Menlo', monospace;
+  font-size: 1rem;
 }
 .cm-s-ttcn .cm-quote {
   color: #090;

@@ -43,7 +43,6 @@ export default class Editor extends Component {
     let { editorConfig } = this.context.config
     editorConfig = Object.assign(editorConfig, {
       lineWrapping: true,
-      viewportMargin: Infinity,
     })
     /* eslint-disable */
     return (
