@@ -11,3 +11,6 @@ If you find yourself with some extra time (at the end of the day, waiting for a 
 * Set up linter to lint code that is embedded in markdown files
 * ~~Rectify prettier with our style lint rules (we have ignored a bunch of rules in "config/.stylelintrc.json")~~
 * ~~Fix all the unmet peer dependency warnings we have~~
+* In FlexGrid and FlexGrid/Row, "unwrap" the nested functions that are inside the components. These functions should either
+  be changed to variable declarations, or hoisted out of the component function. For example: `getClasses` function inside
+  of `FlexGrid` component function.
