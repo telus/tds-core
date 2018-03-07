@@ -5,7 +5,7 @@ import '@tds/core-reset/dist/index.css'
 
 Version: 1.0.0
 
-These stylesheet includes a small amount of page level styles to establish a common baseline.
+This stylesheet includes a small amount of page level styles to establish a common baseline.
 
 Specifically, the index.css stylesheet in this package contains the following page level styles:
 
