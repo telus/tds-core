@@ -2,7 +2,7 @@ const resemble = require('node-resemble-js')
 const fs = require('fs')
 const path = require('path')
 
-exports.assertion = function compare(name, tolerance = 7) {
+exports.assertion = (name, tolerance = 7) => {
   const filename = `${name}.png`
   const screenshotPath = path.join(__dirname, '..', 'screenshots')
   const baselinePath = path.join(screenshotPath, 'baseline', filename)
@@ -25,8 +25,7 @@ exports.assertion = function compare(name, tolerance = 7) {
         blue: 255,
       },
       errorType: 'movement',
-      transparency: 0.1,
-      largeImageThreshold: 1200,
+      transparency: 0.3,
     })
 
     resemble(baselinePath)
@@ -51,7 +50,7 @@ exports.assertion = function compare(name, tolerance = 7) {
 
     this.message = `Screenshots ${
       isMatching ? 'Matched' : 'Match Failed'
-    } for ${name} with a tolerance of ${this.expected}%.`
+    } for ${name} with a tolerance of ${this.expected}%, actual was ${value}%.`
 
     return isMatching
   }

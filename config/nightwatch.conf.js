@@ -25,7 +25,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions: {
-          args: ['--no-sandbox', 'window-size=1280,800'],
+          args: ['--no-sandbox', 'window-size=1280,10000'],
         },
         javascriptEnabled: true,
         acceptSslCerts: true,
@@ -39,7 +39,7 @@ module.exports = {
     headless: {
       desiredCapabilities: {
         chromeOptions: {
-          args: ['--no-sandbox', '--headless', 'window-size=1280,800'],
+          args: ['--no-sandbox', '--headless', 'window-size=1280,10000'],
         },
       },
     },
