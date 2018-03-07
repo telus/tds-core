@@ -233,6 +233,7 @@ module.exports = {
     ),
     TabButtonRenderer: path.resolve('docs/components/TabButton/TabButtonRenderer'),
     PathlineRenderer: path.resolve('docs/components/Pathline/PathlineRenderer'),
+    Editor: path.resolve('docs/components/Editor/Editor'),
   },
   theme: {
     fontFamily: {
