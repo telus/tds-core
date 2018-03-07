@@ -6,12 +6,12 @@ import 'codemirror/mode/jsx/jsx'
 
 // We’re explicitly specifying Webpack loaders here so we could skip specifying them in Webpack configuration.
 // That way we could avoid clashes between our loaders and user loaders.
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import/no-unresolved, import/no-webpack-loader-syntax
 require('!!../../../loaders/style-loader!../../../loaders/css-loader!codemirror/lib/codemirror.css')
 
 // loading our own (TDS) custom AAA colour accessible ttcn.css theme instead of loading the ttcn theme from the
 // codemirror package mapped to the rsg-codemirror-theme.css webpack alias
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import/no-unresolved, import/no-webpack-loader-syntax
 require('!!../../../loaders/style-loader!../../../loaders/css-loader!../../css/codemirror/ttcn.css')
 
 const UPDATE_DELAY = 10
@@ -41,6 +41,6 @@ export default class Editor extends Component {
   render() {
     const { code } = this.props
     const { editorConfig } = this.context.config
-    return <CodeMirror value={code} onChange={this.handleChange} options={editorConfig} />
+    return <CodeMirror value={code} onChange={this.handleChange} options={editorConfig} /> // eslint-disable-line
   }
 }
