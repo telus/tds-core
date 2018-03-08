@@ -33,7 +33,7 @@ describe('Tooltip', () => {
   // TODO: test for the defaultMatches behaviour?
 
   it('renders', () => {
-    const tooltip = render(<Tooltip>InputFeedback text</Tooltip>)
+    const tooltip = render(<Tooltip>Tooltip text</Tooltip>)
 
     expect(tooltip).toMatchSnapshot()
   })
