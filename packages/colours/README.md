@@ -1,16 +1,10 @@
-```sh noeditor
-# install the colours package into your /ui/package.json
-yarn add @tds/core-colours
-```
-
-```css noeditor
-/* in .scss files that will use the sass colour variables */
+```scss static
 @import '~@tds/core-colours/colours';`
 ```
 
 Version: 1.0.0
 
-These are the brand-approved colours available as sass variables to be consumed within your application styles.
+These are the brand-approved colours available as Sass variables to be consumed within your application styles.
 
 For more information on the usage of each colour please refer to the [colour principles and guidelines](https://tds.telus.com/design/colour.html).
 
