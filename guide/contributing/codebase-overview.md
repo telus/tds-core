@@ -76,7 +76,7 @@ the more subjective rules we uphold.
 When starting fresh, you can use the scaffolding script to generate a component directory structure:
 
 ```sh
-yarn scaffold ButtonLink
+yarn scaffold [ComponentName]
 ```
 
 This will output a set of files in the aforementioned structure.

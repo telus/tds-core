@@ -96,7 +96,9 @@ const BannerText = ({ onDownloadClick }) => (
     <DisplayHeading>Pay your bills and monitor internet usage on the go</DisplayHeading>
     <Paragraph>Download the new and improved My Account app today.</Paragraph>
 
-    <Button onClick={onDownloadClick}>Download now</Button>
+    <div>
+      <Button onClick={onDownloadClick}>Download now</Button>
+    </div>
   </Box>
 )
 
