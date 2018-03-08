@@ -2,7 +2,7 @@ const resemble = require('node-resemble-js')
 const fs = require('fs')
 const path = require('path')
 
-exports.assertion = (name, tolerance = 7) => {
+exports.assertion = function compare(name, tolerance = 7) {
   const filename = `${name}.png`
   const screenshotPath = path.join(__dirname, '..', 'screenshots')
   const baselinePath = path.join(screenshotPath, 'baseline', filename)
