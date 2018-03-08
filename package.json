@@ -142,7 +142,7 @@
       "**/**.svg",
       "**.log",
       "**/__snapshots__/**",
-      "**.tgz",
+      "**/**.tgz",
       "guide/components/**",
       "guide/_book/**",
       "build/**",
