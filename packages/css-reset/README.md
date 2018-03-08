@@ -6,7 +6,7 @@ import '@tds/core-css-reset/dist/index.css'
 
 Version: 1.0.0
 
-This package includes a small amount of page-level styles to establish a common baseline.
+This package includes a small amount of page-level styles to establish a common baseline:
 
 * A CSS reset to standardize default styling of HTML5 elements across browsers, using the popular Eric Meyer Reset
 * `@font-face` declarations to load the TELUS web fonts
