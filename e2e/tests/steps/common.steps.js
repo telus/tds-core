@@ -2,7 +2,7 @@
 const root = '#app'
 
 const accessibilityScan = (browser, page) => {
-  if (browser.globals.accessibilityTesting) {
+  if (browser.globals.accessibilityTesting && page) {
     console.log('Accessibility Scanning on the page: ', page.name)
     page.initAccessibility().assert.accessibility(root, {
       verbose: false,
@@ -15,7 +15,8 @@ const accessibilityScan = (browser, page) => {
 
 const visualScan = (browser, page, fileName, selector, tolerance) => {
   const testName = browser.currentTest.module
-  if (browser.globals.visualTesting) {
+
+  if (browser.globals.visualTesting && page) {
     console.log('Visual Scanning on the page/file name: ', `${testName}/${fileName}`)
     page.moveToElement(root, 0, 0).compareScreenshot(testName, fileName, selector, tolerance)
   }

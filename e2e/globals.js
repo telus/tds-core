@@ -4,7 +4,7 @@ const chromedriver = require('chromedriver')
 const request = require('request')
 const config = require('./config/index')
 
-const SCREENSHOT_PATH = './functional-tests/failure-screenshots/'
+const SCREENSHOT_PATH = './e2e/tests/failure-screenshots/'
 
 const getFileName = testName => {
   const name = testName.replace(/ /g, '_')
@@ -43,12 +43,13 @@ module.exports = {
       client.currentTest.results.errors > 0 || client.currentTest.results.failed > 0
     if (weHaveFailures) {
       if (!client.sessionId) {
-        console.log('Session already ended.')
+        // console.log('Session already ended.')
         done()
         return
       }
 
       const testName = client.currentTest.module
+      // console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~ ${testName}`)
       const time = client.currentTest.results.time
       const fileName = getFileName(`${testName}${time}`)
       client.saveScreenshot(fileName, result => {

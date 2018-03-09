@@ -28,7 +28,7 @@
     "release:changelog": "changelog",
     "release": "scripts/release.sh",
     "scaffold": "node scripts/scaffold.js",
-    "test:accessibility": "nightwatch -c ./config/nightwatch.conf.js --env headless",
+    "test:e2e": "nightwatch -c ./config/nightwatch.conf.js --env headless",
     "test:ci": "yarn run lint && yarn run test",
     "test:u": "yarn test -u",
     "test:watch": "yarn test --watch",
@@ -88,6 +88,7 @@
     "node-resemble-js": "^0.2.0",
     "node-sass": "^4.7.2",
     "node-sass-tilde-importer": "^1.0.1",
+    "png-crop": "^0.0.1",
     "postcss": "^6.0.17",
     "postcss-cli": "^4.1.0",
     "postcss-loader": "^2.1.0",
@@ -148,7 +149,8 @@
       "guide/components/**",
       "guide/_book/**",
       "build/**",
-      "**/reports/*.xml"
+      "**/reports/*.xml",
+      "**/**.png"
     ]
   }
 }
