@@ -21,7 +21,7 @@ exports.assertion = function(testName, fileName, tolerance = 3) {
     this.command = function(callback) {
       // create new baseline photo if none exists
       if (!fs.existsSync(baselinePath)) {
-        // console.log(`Creating Baseline Folder from Result: ${baselineFolder}`)
+        console.log(`Creating Baseline Folder from Result: ${baselineFolder}`)
         try {
           fs.mkdirSync(baselineFolder)
         } catch (err) {

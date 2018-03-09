@@ -1,7 +1,8 @@
+/* eslint-disable func-names */
 const root = '#app'
 const path = require('path')
 
-const resizeWindow = browser => {
+const resizeWindow = function(browser) {
   return browser.element('css selector', 'html', element => {
     browser.elementIdSize(element.value.ELEMENT, pageSize => {
       const width = pageSize.value.width
@@ -24,7 +25,7 @@ const takeScreenshot = (resultPath, browser, selector = root, callback) => {
   })
 }
 
-exports.command = (testName, fileName, selector, tolerance, callback) => {
+exports.command = function(testName, fileName, selector, tolerance, callback) {
   if (testName && fileName) {
     const file = `${fileName}.png`
     const resultPath = path.join(__dirname, '..', testName, 'results', file)
