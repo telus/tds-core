@@ -1,3 +1,10 @@
+#### 0.34.5 (2018-03-13)
+
+##### Bug Fixes
+
+* **package:**  upgrade generate-changelog ([c6caebf4](https://github.com/telusdigital/tds/commit/c6caebf4522f16a914f1795258ac3507648dd675))
+* **core-radio, core-checkbox:**  fix label alignment issue ([#516](https://github.com/telusdigital/tds/pull/516)) ([198299f9](https://github.com/telusdigital/tds/commit/198299f9ab450c15f4a263c015c9138882740495))
+
 #### 0.34.4 (2018-02-26)
 
 ##### New Features
