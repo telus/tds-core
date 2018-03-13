@@ -6,7 +6,7 @@ const coloursPage = {
     const url = `${browser.launch_url}/#!/Colours`
 
     browser.url(url)
-    this.waitForElementVisible('@header').expect.element('@backToSpa').to.be.visible
+    this.waitForElementVisible('@header')
 
     return this
   },
@@ -26,6 +26,5 @@ module.exports = {
   commands: [coloursPage],
   elements: {
     header: { selector: '[id="colours"]' },
-    backToSpa: { selector: '[title = "Show all components"]' },
   },
 }

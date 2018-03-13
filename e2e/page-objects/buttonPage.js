@@ -6,7 +6,7 @@ const buttonPage = {
     const url = `${browser.launch_url}/#!/Button`
 
     browser.url(url)
-    this.waitForElementVisible('@header').expect.element('@backToSpa').to.be.visible
+    this.waitForElementVisible('@header')
 
     return this
   },
@@ -26,6 +26,5 @@ module.exports = {
   commands: [buttonPage],
   elements: {
     header: { selector: '[id="button"]' },
-    backToSpa: { selector: '[title = "Show all components"]' },
   },
 }

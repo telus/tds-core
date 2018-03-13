@@ -6,7 +6,7 @@ const cssResetPage = {
     const url = `${browser.launch_url}/#!/CSS reset`
 
     browser.url(url)
-    this.waitForElementVisible('@header').expect.element('@backToSpa').to.be.visible
+    this.waitForElementVisible('@header')
 
     return this
   },
@@ -26,6 +26,5 @@ module.exports = {
   commands: [cssResetPage],
   elements: {
     header: { selector: '[id="css-reset"]' },
-    backToSpa: { selector: '[title = "Show all components"]' },
   },
 }

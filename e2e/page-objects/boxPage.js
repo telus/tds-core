@@ -6,7 +6,7 @@ const boxPage = {
     const url = `${browser.launch_url}/#!/Box`
 
     browser.url(url)
-    this.waitForElementVisible('@header').expect.element('@backToSpa').to.be.visible
+    this.waitForElementVisible('@header')
 
     return this
   },
@@ -26,6 +26,5 @@ module.exports = {
   commands: [boxPage],
   elements: {
     header: { selector: '[id="box"]' },
-    backToSpa: { selector: '[title = "Show all components"]' },
   },
 }
