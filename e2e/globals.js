@@ -14,9 +14,9 @@ const getFileName = testName => {
 let counter = 0
 
 const healthCheck = done => {
-  console.log(`${counter}/20 Health Checking the UI Container...`)
   request(config.healthCheckUrl, (err, response, body) => {
     if (!body && counter < 20) {
+      console.log(`${counter}/20 Health Checking the UI Container...`)
       counter += 1
       setTimeout(healthCheck, 6000, done)
     } else {
@@ -43,13 +43,12 @@ module.exports = {
       client.currentTest.results.errors > 0 || client.currentTest.results.failed > 0
     if (weHaveFailures) {
       if (!client.sessionId) {
-        // console.log('Session already ended.')
+        console.log('Session already ended.')
         done()
         return
       }
 
       const testName = client.currentTest.module
-      // console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~ ${testName}`)
       const time = client.currentTest.results.time
       const fileName = getFileName(`${testName}${time}`)
       client.saveScreenshot(fileName, result => {
