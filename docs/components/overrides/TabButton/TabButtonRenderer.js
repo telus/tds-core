@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Styled from 'react-styleguidist/lib/rsg-components/Styled'
+import Styled from 'rsg-components/Styled'
 import cx from 'classnames'
 
 export const styles = function styles(_ref) {
@@ -48,11 +48,9 @@ export function TabButtonRenderer({ classes, name, className, onClick, active, c
   })
 
   return (
-    /* eslint-disable */
     <button type="button" name={name} className={classNames} onClick={onClick}>
       {children}
     </button>
-    /* eslint-enable */
   )
 }
 

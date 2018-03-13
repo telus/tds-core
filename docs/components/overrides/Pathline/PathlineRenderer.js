@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import copy from 'clipboard-copy'
 import MdContentCopy from 'react-icons/lib/md/content-copy'
-import ToolbarButton from 'react-styleguidist/lib/rsg-components/ToolbarButton'
-import Styled from 'react-styleguidist/lib/rsg-components/Styled'
+import ToolbarButton from 'rsg-components/ToolbarButton'
+import Styled from 'rsg-components/Styled'
 
 export const styles = ({ space, fontFamily, fontSize }) => ({
   pathline: {
@@ -17,7 +17,6 @@ export const styles = ({ space, fontFamily, fontSize }) => ({
 })
 
 export function PathlineRenderer({ classes, children }) {
-  /* eslint-disable */
   return (
     <div className={classes.pathline}>
       {children}
@@ -31,7 +30,6 @@ export function PathlineRenderer({ classes, children }) {
       </ToolbarButton>
     </div>
   )
-  /* eslint-enable */
 }
 
 PathlineRenderer.propTypes = {
