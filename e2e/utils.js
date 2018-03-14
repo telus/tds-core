@@ -1,4 +1,5 @@
 const { resolve } = require('path')
+const Case = require('case')
 const { outputPath } = require('./config')
 
 const getVisualRegressionFolders = componentName => {
@@ -11,6 +12,9 @@ const getVisualRegressionFolders = componentName => {
   }
 }
 
+const toComponentName = packageName => Case.pascal(packageName.replace('@tds/core-', ''))
+
 module.exports = {
   getVisualRegressionFolders,
+  toComponentName,
 }

@@ -28,8 +28,8 @@
     "release:changelog": "changelog",
     "release": "scripts/release.sh",
     "scaffold": "node scripts/scaffold.js",
-    "test:e2e": "nightwatch -c ./config/nightwatch.conf.js --env headless",
     "test:ci": "yarn run lint && yarn run test",
+    "test:e2e": "./scripts/e2e.sh",
     "test:u": "yarn test -u",
     "test:watch": "yarn test --watch",
     "test": "jest --config config/jest.config.js"
@@ -57,6 +57,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "case": "^1.5.4",
     "chromedriver": "^2.35.0",
     "css-loader": "^0.28.9",
     "css-mediaquery": "^0.1.2",
