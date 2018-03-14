@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-expressions */
-const { accessibilityScan, visualScan } = require('../tests/steps/common.steps')
+const { accessibilityScan, visualScan } = require('../steps/common.steps')
 
 const cssResetPage = {
   visitPage(browser) {

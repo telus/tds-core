@@ -21,8 +21,7 @@ guide/components/
 guide/_book/
 build
 
-e2e/reports
-!e2e/reports/.gitkeep
-e2e/tests/failure-screenshots/*.png
-e2e/tests/visual-regression/*/diffs/*.png
-e2e/tests/visual-regression/*/results/*.png
+e2e/output/reports
+e2e/output/failure-screenshots/
+e2e/output/components/*/diffs/*.png
+e2e/output/components/*/results/*.png

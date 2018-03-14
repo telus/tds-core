@@ -1,20 +1,22 @@
 /* eslint-disable no-console */
-const path = require('path')
+const { resolve } = require('path')
 const chromedriver = require('chromedriver')
 const request = require('request')
-const config = require('./config/index')
 
-const SCREENSHOT_PATH = './e2e/tests/failure-screenshots/'
+const { outputPath, healthCheckUrl } = require('./config')
 
-const getFileName = testName => {
-  const name = testName.replace(/ /g, '_')
-  return path.resolve(`${SCREENSHOT_PATH}${name}.png`)
+const getFailureScreenshotName = currentTest => {
+  const testName = currentTest.module
+  const time = currentTest.results.time
+  const fileName = `${testName}${time}`.replace(/ /g, '_')
+
+  return resolve(outputPath, 'failure-screenshots', `${fileName}.png`)
 }
 
 let counter = 0
 
 const healthCheck = done => {
-  request(config.healthCheckUrl, (err, response, body) => {
+  request(healthCheckUrl, (err, response, body) => {
     if (!body && counter < 20) {
       console.log(`${counter}/20 Health Checking the UI Container...`)
       counter += 1
@@ -38,6 +40,8 @@ module.exports = {
     done()
   },
 
+  // TODO: Come back to this. I don't think this gets called until after the file. We would want a failure screenshot
+  // right after the test, not the entire file since we have many tests in one file.
   afterEach: (client, done) => {
     const weHaveFailures =
       client.currentTest.results.errors > 0 || client.currentTest.results.failed > 0
@@ -48,15 +52,15 @@ module.exports = {
         return
       }
 
-      const testName = client.currentTest.module
-      const time = client.currentTest.results.time
-      const fileName = getFileName(`${testName}${time}`)
+      const fileName = getFailureScreenshotName(client.currentTest)
       client.saveScreenshot(fileName, result => {
         if (!result || result.status !== 0) {
           console.log('Error saving screenshot...', result)
         }
       })
     }
+
+    console.log('after each')
 
     client.end(done)
   },

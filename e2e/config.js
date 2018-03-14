@@ -1,3 +1,11 @@
+const { resolve } = require('path')
+
+const config = {
+  outputPath: resolve(__dirname, 'output'),
+  rootSelector: '#app',
+  tolerance: 3, // percentage
+}
+
 const envConfig = {
   development: {
     launchUrl: 'http://localhost:6060',
@@ -15,4 +23,4 @@ const envConfig = {
   },
 }
 
-module.exports = envConfig[process.env.APP_ENV || 'development']
+module.exports = Object.assign(config, envConfig[process.env.APP_ENV || 'development'])
