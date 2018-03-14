@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import { compiler } from 'markdown-to-jsx'
@@ -12,10 +10,10 @@ import { styles as paraStyles } from 'rsg-components/Para'
 import Link from '../../../../packages/Link/Link'
 import Text from '../../../../packages/Text/Text'
 import Strong from '../../../../packages/Strong/Strong'
-import MarkdownHeading from '../MarkdownHeading/MarkdownHeading'
-import MarkdownParagraph from '../MarkdownParagraph/MarkdownParagraph'
-import MarkdownUnorderedList from '../MarkdownUnorderedList/MarkdownUnorderedList'
-import MarkdownOrderedList from '../MarkdownOrderedList/MarkdownOrderedList'
+import MarkdownHeading from '../../custom/MarkdownHeading/MarkdownHeading'
+import MarkdownParagraph from '../../custom/MarkdownParagraph/MarkdownParagraph'
+import MarkdownUnorderedList from '../../custom/MarkdownUnorderedList/MarkdownUnorderedList'
+import MarkdownOrderedList from '../../custom/MarkdownOrderedList/MarkdownOrderedList'
 
 // loading our own custom version of highlight.js docco theme to make code examples AAA colour accessible
 import codeStyles from './highlight_js/docco.css'

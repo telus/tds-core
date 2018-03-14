@@ -226,7 +226,7 @@ module.exports = {
   styleguideComponents: {
     StyleGuideRenderer: path.resolve('docs/components/overrides/StyleGuide/StyleGuideRenderer'),
     Logo: path.resolve('docs/components/custom/Logo/Logo'),
-    Markdown: path.resolve('docs/components/custom/Markdown/Markdown'),
+    Markdown: path.resolve('docs/components/overrides/Markdown/Markdown'),
     SectionHeadingRenderer: path.resolve(
       'docs/components/custom/SectionHeading/SectionHeadingRenderer'
     ),
