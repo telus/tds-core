@@ -23,6 +23,7 @@ RUN set -ex && \
 COPY .npmrc package.json yarn.lock ./
 
 # Install dependencies.
+# `yarn gitbook:install` will happen in the "prepare" hook, right after `yarn install`
 RUN set -ex && \
   yarn install --pure-lockfile && \
   yarn cache clean
@@ -33,10 +34,8 @@ COPY . /app
 
 # Build the app.
 RUN yarn lerna:bootstrap && \
-  yarn build:ci && \
-  yarn gitbook:install && \
-  STYLEGUIDIST_ENV=staging yarn run build-docs && mkdir -p build/staging && mv guide/_book/* build/staging && \
-  STYLEGUIDIST_ENV=production yarn run build-docs && mkdir -p build/production && mv guide/_book/* build/production
+  yarn ci:build && \
+  scripts/ci-build-docs.sh
 
 # Set the container's user to the newly created one.
 USER node
