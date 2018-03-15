@@ -16,8 +16,8 @@ coverage
 .vscode
 
 # TDS build artifacts
-dist
-guide/components/
+dist/
 guide/_book/
-build
+styleguide/
+build/
 **/reports/**

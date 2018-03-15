@@ -1,9 +1,16 @@
-.idea
-.git
+.DS_Store
+.idea/
+.git/
 
-node_modules/
+*.log
+**/*.tgz
 
-dist/
+**/node_modules
+
+**/dist
 build/
 guide/_book/
-guide/components
+styleguide/
+
+# Ignore all of e2e for now until we use it in the pipeline
+e2e/

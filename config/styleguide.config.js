@@ -218,7 +218,7 @@ module.exports = {
       ? path.resolve('docs/index.html')
       : path.resolve('docs/dev-index.html'),
   assetsDir: path.resolve('docs/assets/'),
-  styleguideDir: path.resolve('guide/components'),
+  styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
   require: [
     path.resolve('packages/css-reset/index.scss'),
     path.resolve('docs/scss/styleguide.scss'),
