@@ -79,12 +79,12 @@ module.exports = {
       name: 'Components',
       sections: [
         {
-          name: 'CSS reset',
-          content: path.resolve('packages/css-reset/README.md'),
+          name: 'CssReset',
+          content: path.resolve('packages/css-reset/CssReset.md'),
         },
         {
           name: 'Colours',
-          content: path.resolve('packages/colours/README.md'),
+          content: path.resolve('packages/colours/Colours.md'),
         },
         {
           name: 'Layout',
