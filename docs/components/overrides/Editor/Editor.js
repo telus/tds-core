@@ -7,12 +7,12 @@ import 'codemirror/mode/jsx/jsx'
 // We’re explicitly specifying Webpack loaders here so we could skip specifying them in Webpack configuration.
 // That way we could avoid clashes between our loaders and user loaders.
 // eslint-disable-next-line import/no-unresolved, import/no-webpack-loader-syntax
-require('!!../../../node_modules/react-styleguidist/loaders/style-loader!../../../node_modules/react-styleguidist/loaders/css-loader!../../../node_modules/codemirror/lib/codemirror.css')
+require('!!../../../../node_modules/react-styleguidist/loaders/style-loader!../../../../node_modules/react-styleguidist/loaders/css-loader!../../../../node_modules/codemirror/lib/codemirror.css')
 
 // loading our own (TDS) custom AAA colour accessible ttcn.css theme instead of loading the ttcn theme from the
 // codemirror package mapped to the rsg-codemirror-theme.css webpack alias
 // eslint-disable-next-line import/no-unresolved, import/no-webpack-loader-syntax
-require('!!../../../node_modules/react-styleguidist/loaders/style-loader!../../../node_modules/react-styleguidist/loaders/css-loader!../../css/codemirror/ttcn.css')
+require('!!../../../../node_modules/react-styleguidist/loaders/style-loader!../../../../node_modules/react-styleguidist/loaders/css-loader!./codemirror/ttcn.css')
 
 const UPDATE_DELAY = 10
 
@@ -44,7 +44,6 @@ export default class Editor extends Component {
     editorConfig = Object.assign(editorConfig, {
       lineWrapping: true,
     })
-    /* eslint-disable */
     return (
       <CodeMirror
         value={code}
@@ -53,6 +52,5 @@ export default class Editor extends Component {
         className="cm-s-ttcn"
       />
     )
-    /* eslint-enable */
   }
 }

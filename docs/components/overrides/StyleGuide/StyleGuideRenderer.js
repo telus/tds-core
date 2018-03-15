@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Styled from 'react-styleguidist/lib/rsg-components/Styled'
+import Styled from 'rsg-components/Styled'
 import cx from 'classnames'
-import Logo from '../Logo/Logo'
-import Markdown from '../Markdown/Markdown'
+import Logo from 'rsg-components/Logo'
+import Markdown from 'rsg-components/Markdown'
 
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
   root: {
