@@ -22,7 +22,9 @@ There are a variety of plugins available for Sketch. Here is a short list of plu
 
 * [Craft Manager](https://www.invisionapp.com/craft): Suite of plugins by Invision to help streamline your workflow. (**Note:** This is required to use the DSM Component library)
 
-* [Launchpad by Anima](https://animaapp.github.io/): Customize designs with responsive settings (**Note**: without this plugin, some of the responsive components will not work properly)
+* [Launchpad by Anima](https://animaapp.github.io/): Customize designs with responsive settings (**Note**: Without this plugin, some of the responsive components will not work properly)
+
+* [Dynamic Button](https://github.com/fuggfuggfugg/sketch-dynamic-button-3.5): Create buttons with fixed padding (**Note**: Used for resizing of our buttons)
 
 #### Recommended
 
