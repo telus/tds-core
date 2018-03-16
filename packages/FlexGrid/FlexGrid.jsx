@@ -18,8 +18,11 @@ import styles from './FlexGrid.modules.scss'
 const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {
   const gutterStyle = gutter ? undefined : styles.gutterless
 
-  if (centre){
-    deprecate("core-flex-grid", "The centre prop is deprecated due to the limitWidth prop centring the grid on its own. Please remove the centre prop from your grid definition.")
+  if (centre) {
+    deprecate(
+      'core-flex-grid',
+      'The centre prop is deprecated due to the limitWidth prop centring the grid on its own. Please remove the centre prop from your grid definition.'
+    )
   }
 
   const getClasses = () =>
