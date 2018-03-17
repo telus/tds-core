@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import { elementType } from 'airbnb-prop-types'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
@@ -167,7 +167,7 @@ FormField.propTypes = {
   feedback: PropTypes.oneOf(['success', 'error']),
   error: PropTypes.string,
   helper: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
-  tooltip: childrenOfType(Tooltip),
+  tooltip: elementType(Tooltip),
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,

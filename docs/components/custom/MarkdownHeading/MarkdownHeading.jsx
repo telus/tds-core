@@ -12,7 +12,7 @@ const MarkdownHeading = ({ level, children }) => (
 
 MarkdownHeading.propTypes = {
   level: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.array.isRequired,
 }
 
 export default MarkdownHeading

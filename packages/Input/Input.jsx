@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import { elementType } from 'airbnb-prop-types'
 
 import Tooltip from '@tds/core-tooltip'
 import InputFeedback from '@tds/core-input-feedback'
@@ -79,7 +79,7 @@ Input.propTypes = {
   /**
    * A `Tooltip`
    */
-  tooltip: childrenOfType(Tooltip),
+  tooltip: elementType(Tooltip),
   /**
    * A callback function to be invoked when the input value changes.
    *
