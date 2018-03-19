@@ -2,5 +2,10 @@
   "lerna": "2.9.0",
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "commands": {
+    "publish": {
+      "ignore": ["*.md", "*.spec.jsx"]
+    }
+  }
 }
