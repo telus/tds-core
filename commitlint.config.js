@@ -5,8 +5,8 @@
 const packages = require('@commitlint/config-lerna-scopes')
 
 function applyCustomScope() {
-  customScope = packages.rules[`scope-enum`]()[2]
-  customScope.push('docs', 'build', 'tech-snacks', 'lint', 'github', 'packages', 'misc')
+  let customScope = packages.rules[`scope-enum`]()[2]
+  customScope.push('docs', 'build', 'tech-snacks', 'lint', 'github', 'e2e')
   return customScope
 }
 
@@ -17,6 +17,6 @@ module.exports = {
     'scope-empty': [2, 'never'],
     'type-enum': [2, 'always', ['feat', 'fix', 'docs', 'style', 'refactor', 'test', 'chore']],
     'subject-case': [2, 'always', 'lowerCase'],
-    'subject-empty': [2, 'never']
+    'subject-empty': [2, 'never'],
   },
 }
