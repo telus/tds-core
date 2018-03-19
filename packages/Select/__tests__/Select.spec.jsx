@@ -6,6 +6,7 @@ import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
 import DecorativeIcon from '@tds/core-decorative-icon'
+import Tooltip from '@tds/core-tooltip'
 
 import Fade from '../../../shared/components/Animation/Fade'
 import Select from '../Select'
@@ -378,6 +379,32 @@ describe('Select', () => {
             <InputFeedback>Complex helper</InputFeedback>
           </Text>
         </div>
+      )
+    })
+  })
+
+  describe('tooltip prop', () => {
+    it('connects to Select', () => {
+      const { select } = doMount({
+        tooltip: <Tooltip>The tooltip</Tooltip>,
+      })
+
+      expect(select.find(StandaloneIcon)).toHaveProp(
+        'a11yText',
+        'Reveal additional information about The select.'
+      )
+    })
+
+    it('allows custom tooltip names to be used', () => {
+      const Tool = Tooltip
+
+      const { select } = doMount({
+        tooltip: <Tool>The tooltip</Tool>,
+      })
+
+      expect(select.find(StandaloneIcon)).toHaveProp(
+        'a11yText',
+        'Reveal additional information about The select.'
       )
     })
   })
