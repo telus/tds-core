@@ -30,11 +30,11 @@
     "@tds/core-paragraph": "^1.0.0",
     "@tds/core-standalone-icon": "^1.0.0",
     "@tds/core-text": "^1.0.0",
-    "@tds/core-tooltip": "^1.0.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
+    "@tds/shared-form-field": "^1.0.0",
     "airbnb-prop-types": "^2.8.1",
     "react-transition-group": "^2.2.1"
   }

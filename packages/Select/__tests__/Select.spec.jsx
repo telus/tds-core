@@ -385,27 +385,20 @@ describe('Select', () => {
 
   describe('tooltip prop', () => {
     it('connects to Select', () => {
-      const { select } = doMount({
-        tooltip: <Tooltip>The tooltip</Tooltip>,
-      })
-
-      expect(select.find(StandaloneIcon)).toHaveProp(
-        'a11yText',
-        'Reveal additional information about The select.'
+      const select = mount(
+        <Select
+          label="Some field"
+          options={[
+            {
+              text: 'hi',
+              value: 'hi',
+            },
+          ]}
+          tooltip={<Tooltip>The tooltip</Tooltip>}
+        />
       )
-    })
 
-    it('allows custom tooltip names to be used', () => {
-      const Tool = Tooltip
-
-      const { select } = doMount({
-        tooltip: <Tool>The tooltip</Tool>,
-      })
-
-      expect(select.find(StandaloneIcon)).toHaveProp(
-        'a11yText',
-        'Reveal additional information about The select.'
-      )
+      expect(select).toContainReact(<Tooltip connectedFieldLabel="Some field">The tooltip</Tooltip>)
     })
   })
 

@@ -350,26 +350,12 @@ describe('TextArea', () => {
 
   describe('tooltip prop', () => {
     it('connects to TextArea', () => {
-      const { textarea } = doMount({
-        tooltip: <Tooltip>The tooltip</Tooltip>,
-      })
-
-      expect(textarea.find(StandaloneIcon)).toHaveProp(
-        'a11yText',
-        'Reveal additional information about The textarea.'
+      const textarea = mount(
+        <TextArea label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />
       )
-    })
 
-    it('allows custom tooltip names to be used', () => {
-      const Tool = Tooltip
-
-      const { textarea } = doMount({
-        tooltip: <Tool>The tooltip</Tool>,
-      })
-
-      expect(textarea.find(StandaloneIcon)).toHaveProp(
-        'a11yText',
-        'Reveal additional information about The textarea.'
+      expect(textarea).toContainReact(
+        <Tooltip connectedFieldLabel="Some field">The tooltip</Tooltip>
       )
     })
   })

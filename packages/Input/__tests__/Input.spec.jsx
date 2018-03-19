@@ -310,21 +310,7 @@ describe('Input', () => {
     it('connects to Input', () => {
       const input = mount(<Input label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />)
 
-      expect(input.find(StandaloneIcon)).toHaveProp(
-        'a11yText',
-        'Reveal additional information about Some field.'
-      )
-    })
-
-    it('allows custom tooltip names to be used', () => {
-      const Tool = Tooltip
-
-      const input = mount(<Input label="Some field" tooltip={<Tool>The tooltip</Tool>} />)
-
-      expect(input.find(StandaloneIcon)).toHaveProp(
-        'a11yText',
-        'Reveal additional information about Some field.'
-      )
+      expect(input).toContainReact(<Tooltip connectedFieldLabel="Some field">The tooltip</Tooltip>)
     })
   })
 
