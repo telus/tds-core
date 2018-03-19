@@ -47,12 +47,7 @@ module.exports = {
       globals: {
         accessibilityTesting,
         visualTesting,
-        // TODO: Come back to these
-        // waitForConditionTimeout: 30000,
-        // retryAssertionTimeout: 10000,
       },
-      // end_session_on_fail: false,
-      // skip_testcases_on_fail: false,
     },
     headless: {
       desiredCapabilities: {
