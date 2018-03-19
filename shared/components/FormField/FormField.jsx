@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { elementType } from 'airbnb-prop-types'
+import { componentWithName } from 'airbnb-prop-types'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
-import Tooltip from '@tds/core-tooltip'
 
 import safeRest from '../../utils/safeRest'
 import generateId from '../../utils/generateId'
@@ -167,7 +166,7 @@ FormField.propTypes = {
   feedback: PropTypes.oneOf(['success', 'error']),
   error: PropTypes.string,
   helper: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
-  tooltip: elementType(Tooltip),
+  tooltip: componentWithName('Tooltip'),
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
