@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -33,8 +33,7 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "@tds/core-text-area": "^1.0.0",
-    "@tds/shared-form-field": "^1.0.0",
+    "@tds/shared-form-field": "^1.0.1",
     "airbnb-prop-types": "^2.8.1",
     "core-js": "^2.5.3",
     "react-transition-group": "^2.2.1"
