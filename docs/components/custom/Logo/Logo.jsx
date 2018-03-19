@@ -2,8 +2,8 @@ import React from 'react'
 
 import logo from './Logo.svg'
 
-import Box from '../../../packages/Box/Box'
-import ChevronLink from '../../../packages/ChevronLink/ChevronLink'
+import Box from '../../../../packages/Box/Box'
+import ChevronLink from '../../../../packages/ChevronLink/ChevronLink'
 
 const Logo = () => (
   <div>

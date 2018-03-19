@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Box from '../../../packages/Box/Box'
-import Input from '../../../packages/Input/Input'
+import Box from '../../../../packages/Box/Box'
+import Input from '../../../../packages/Input/Input'
 
 const TableOfContentsRenderer = ({ children, searchTerm, onSearchTermChange }) => {
   return (

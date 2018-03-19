@@ -16,10 +16,12 @@ coverage
 .vscode
 
 # TDS build artifacts
-dist
-guide/components/
+dist/
 guide/_book/
-build
+build/
+# Include the styleguide build directory, but not the StyleGuide component
+styleguide/
+!docs/components/overrides/StyleGuide
 
 e2e/output/reports
 e2e/output/failure-screenshots/

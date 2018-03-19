@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-checkbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
+    "@tds/shared-choice": "^1.0.1",
     "core-js": "^2.5.3"
   }
 }
