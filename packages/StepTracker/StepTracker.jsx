@@ -2,16 +2,16 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import Step from '../Step/Step'
+import Step from './Step/Step'
 
-import './Steps.scss'
+import './StepTracker.scss'
 
 /**
  * @version 1.0.0
  *
  * Show the current position in a sequence of steps.
  */
-class Steps extends Component {
+class StepTracker extends Component {
   getStatus(current, index) {
     if (index < current) {
       return 'completed'
@@ -66,15 +66,15 @@ class Steps extends Component {
   }
 }
 
-Steps.propTypes = {
+StepTracker.propTypes = {
   /**
    * The active step.
    */
   current: PropTypes.number,
   /**
-   * The steps. Must be TDS `Steps.Step` components.
+   * The steps. Must be TDS `StepTracker.Step` components.
    *
-   * @see See [Steps.Step](#step)
+   * @see See [StepTracker.Step](#steptracker)
    */
   children: PropTypes.node, // eslint-disable-line react/require-default-props
   /**
@@ -86,10 +86,10 @@ Steps.propTypes = {
   className: PropTypes.string, // eslint-disable-line react/require-default-props
 }
 
-Steps.defaultProps = {
+StepTracker.defaultProps = {
   current: 0,
 }
 
-Steps.Step = Step
+StepTracker.Step = Step
 
-export default Steps
+export default StepTracker

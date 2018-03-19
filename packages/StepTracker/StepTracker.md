@@ -1,10 +1,10 @@
-As the user progresses through the steps, tell `Steps` which step is active with the `current` prop. `Steps`
+As the user progresses through the steps, tell `StepTracker` which step is active with the `current` prop. `StepTracker`
 will indicate both the active step and the completed steps.
 
 This component is not interactive, so the user can not use it to navigate through the steps. The application will
 need to provide its own navigation mechanism.
 
-`Steps` adjusts to accommodate smaller screens by hiding the labels, displaying only a summary. Resize your browser
+`StepTracker` adjusts to accommodate smaller screens by hiding the labels, displaying only a summary. Resize your browser
 window to see this behavior.
 
 ```
@@ -13,13 +13,13 @@ initialState = {
 };
 
 <div>
-  <Steps current={state.current}>
-    <Steps.Step label="Plans & addons" />
-    <Steps.Step label="Account creation" />
-    <Steps.Step label="Phone information" />
-    <Steps.Step label="Payment setup" />
-    <Steps.Step label="Submit" />
-  </Steps>
+  <StepTracker current={state.current}>
+    <StepTracker.Step label="Plans & addons" />
+    <StepTracker.Step label="Account creation" />
+    <StepTracker.Step label="Phone information" />
+    <StepTracker.Step label="Payment setup" />
+    <StepTracker.Step label="Submit" />
+  </StepTracker>
 
   <Button variant="secondary" onClick={() => setState({ current: state.current-1 })}>
     Previous Step

@@ -41,7 +41,7 @@ module.exports = {
       Heading: 'Heading',
       'Text/TextSup': 'Text',
       'TextArea/TextArea': 'TextArea',
-      'StepTracker/Steps': 'StepTracker',
+      StepTracker: 'StepTracker',
     }
 
     const componentDirectory = path.dirname(componentPath)
@@ -205,7 +205,7 @@ module.exports = {
             return [
               path.resolve('packages/Notification/Notification.jsx'),
               path.resolve('packages/Spinner/Spinner.jsx'),
-              path.resolve('packages/StepTracker/Steps/Steps.jsx'),
+              path.resolve('packages/StepTracker/StepTracker.jsx'),
             ]
           },
         },

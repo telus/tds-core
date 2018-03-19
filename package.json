@@ -24,7 +24,7 @@
     "lint": "yarn lint:js && yarn lint:scss && yarn lint:ec",
     "precommit": "pretty-quick --staged && lint-staged && yarn test",
     "prepare": "yarn gitbook:install",
-    "prepush": "yarn build && yarn test && yarn test:e2e && yarn build-docs",
+    "prepush": "yarn build && yarn test && yarn build-docs",
     "release:changelog": "changelog",
     "release": "scripts/release.sh",
     "scaffold": "node scripts/scaffold.js",
