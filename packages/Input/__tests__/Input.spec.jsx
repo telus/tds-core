@@ -306,14 +306,11 @@ describe('Input', () => {
     })
   })
 
-  describe('tooltip', () => {
+  describe('tooltip prop', () => {
     it('connects to Input', () => {
       const input = mount(<Input label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />)
 
-      expect(input.find(StandaloneIcon)).toHaveProp(
-        'a11yText',
-        'Reveal additional information about Some field.'
-      )
+      expect(input).toContainReact(<Tooltip connectedFieldLabel="Some field">The tooltip</Tooltip>)
     })
   })
 

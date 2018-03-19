@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import { componentWithName } from 'airbnb-prop-types'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
-import Tooltip from '@tds/core-tooltip'
 import Box from '@tds/core-box'
 
 import joinClassNames from '../../shared/utils/joinClassNames'
@@ -109,7 +108,7 @@ Select.propTypes = {
   /**
    * A `Tooltip`
    */
-  tooltip: childrenOfType(Tooltip),
+  tooltip: componentWithName('Tooltip'),
   /**
    * A callback function to be invoked when the input value changes.
    *

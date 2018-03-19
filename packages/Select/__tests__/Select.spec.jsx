@@ -6,6 +6,7 @@ import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
 import DecorativeIcon from '@tds/core-decorative-icon'
+import Tooltip from '@tds/core-tooltip'
 
 import Fade from '../../../shared/components/Animation/Fade'
 import Select from '../Select'
@@ -379,6 +380,25 @@ describe('Select', () => {
           </Text>
         </div>
       )
+    })
+  })
+
+  describe('tooltip prop', () => {
+    it('connects to Select', () => {
+      const select = mount(
+        <Select
+          label="Some field"
+          options={[
+            {
+              text: 'hi',
+              value: 'hi',
+            },
+          ]}
+          tooltip={<Tooltip>The tooltip</Tooltip>}
+        />
+      )
+
+      expect(select).toContainReact(<Tooltip connectedFieldLabel="Some field">The tooltip</Tooltip>)
     })
   })
 

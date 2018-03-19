@@ -5,6 +5,7 @@ import StandaloneIcon from '@tds/core-standalone-icon'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
+import Tooltip from '@tds/core-tooltip'
 
 import Fade from '../../../shared/components/Animation/Fade'
 import TextArea from '../TextArea'
@@ -343,6 +344,18 @@ describe('TextArea', () => {
             <InputFeedback>Complex helper</InputFeedback>
           </Text>
         </div>
+      )
+    })
+  })
+
+  describe('tooltip prop', () => {
+    it('connects to TextArea', () => {
+      const textarea = mount(
+        <TextArea label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />
+      )
+
+      expect(textarea).toContainReact(
+        <Tooltip connectedFieldLabel="Some field">The tooltip</Tooltip>
       )
     })
   })

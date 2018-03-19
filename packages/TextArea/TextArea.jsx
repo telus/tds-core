@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import { componentWithName } from 'airbnb-prop-types'
 
 import joinClassNames from '../../shared/utils/joinClassNames'
 
-import Tooltip from '../Tooltip/Tooltip'
 import FormField from '../../shared/components/FormField/FormField'
 import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
 
@@ -71,7 +70,7 @@ TextArea.propTypes = {
   /**
    * A `Tooltip`
    */
-  tooltip: childrenOfType(Tooltip),
+  tooltip: componentWithName('Tooltip'),
   /**
    * A callback function to be invoked when the input value changes.
    *
