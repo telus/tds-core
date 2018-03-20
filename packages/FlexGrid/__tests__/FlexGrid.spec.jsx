@@ -49,7 +49,7 @@ describe('FlexGrid', () => {
     expect(flexGrid).toHaveProp('fluid', true)
   })
 
-  it('should render all children related to Grid with no gutter', () => {
+  it.skip('should render all children related to Grid with no gutter', () => {
     const { findColumn, findRow } = doMount({ gutter: false })
 
     const col1 = findColumn(1)

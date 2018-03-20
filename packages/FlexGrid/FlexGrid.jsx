@@ -16,8 +16,6 @@ import styles from './FlexGrid.modules.scss'
  * @version 1.0.0
  */
 const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {
-  const gutterStyle = gutter ? undefined : styles.gutterless
-
   if (centre) {
     deprecate(
       'core-flex-grid',
@@ -29,7 +27,7 @@ const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {
     joinClassNames(styles.flexGrid, centre && styles.centre, limitWidth && styles.limitWidth)
 
   return (
-    <Broadcast channel="flex-grid" value={gutterStyle}>
+    <Broadcast channel="flex-grid" value={gutter}>
       <Grid {...safeRest(rest)} fluid className={getClasses()}>
         {children}
       </Grid>
