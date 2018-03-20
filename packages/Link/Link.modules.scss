@@ -26,6 +26,7 @@
 
 .base {
   composes: underlineOnHover;
+  composes: focusOutline from '../../shared/styles/Links.modules.scss';
 
   &:link,
   &:visited {
