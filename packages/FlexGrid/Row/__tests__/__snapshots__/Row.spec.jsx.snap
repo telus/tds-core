@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Row renders 1`] = `
-<Row>
+<Row
+  className="flexRow"
+>
   <div
-    className="row"
+    className="flexRow row"
   >
     Some content
   </div>

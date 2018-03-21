@@ -1,10 +1,13 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 import { Grid } from 'react-flexbox-grid'
+import { deprecate } from '../../../shared/utils/warn'
 
 import FlexGrid from '../FlexGrid'
 
 import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'
+
+jest.mock('../../../shared/utils/warn')
 
 describe('FlexGrid', () => {
   const doMount = (props = {}) => {
@@ -49,7 +52,7 @@ describe('FlexGrid', () => {
     expect(flexGrid).toHaveProp('fluid', true)
   })
 
-  it.skip('should render all children related to Grid with no gutter', () => {
+  it('should render all children related to Grid with no gutter', () => {
     const { findColumn, findRow } = doMount({ gutter: false })
 
     const col1 = findColumn(1)
@@ -58,7 +61,7 @@ describe('FlexGrid', () => {
 
     expect(col1).toHaveClassName('gutterless')
     expect(col2).toHaveClassName('gutterless')
-    expect(row).toHaveClassName('gutterless')
+    expect(row).toHaveClassName('flexRow')
   })
 
   it('passes additional attributes to the element', () => {
@@ -79,6 +82,12 @@ describe('FlexGrid', () => {
     const { flexGrid } = doMount({ limitWidth: true, centre: true })
 
     expect(flexGrid).toHaveClassName('centre')
+  })
+
+  it('will show a centre is deprecated warning', () => {
+    doMount({ centre: true })
+
+    expect(deprecate).toHaveBeenCalled()
   })
 
   it('does not allow custom CSS', () => {

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 
 import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 
+import styles from '../FlexGrid.modules.scss'
+
 import safeRest from '../../../shared/utils/safeRest'
 
 /**
@@ -28,7 +30,12 @@ const Row = ({ horizontalAlign, verticalAlign, distribute, children, ...rest }) 
   }
 
   return (
-    <ReactFlexboxGridRow {...safeRest(rest)} {...getAlignment()} {...getDistribution()}>
+    <ReactFlexboxGridRow
+      {...safeRest(rest)}
+      {...getAlignment()}
+      {...getDistribution()}
+      className={styles.flexRow}
+    >
       {children}
     </ReactFlexboxGridRow>
   )
