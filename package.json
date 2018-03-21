@@ -5,14 +5,7 @@
   "license": "MIT",
   "main": "dist/tds.cjs.js",
   "module": "dist/tds.es.js",
-  "files": [
-    "dist",
-    "packages",
-    "src",
-    "CHANGELOG.md",
-    "CONTRIBUTING.md",
-    "UPGRADING.md"
-  ],
+  "files": ["dist", "packages", "src", "CHANGELOG.md", "CONTRIBUTING.md", "UPGRADING.md"],
   "scripts": {
     "build:css": "postcss --use cssnano --replace dist/tds.css",
     "build:js": "rollup -c config/rollup.config.js",
@@ -26,8 +19,10 @@
     "dev": "styleguidist server --config config/styleguide.config.js",
     "gitbook": "gitbook serve guide",
     "gitbook:install": "gitbook install guide",
-    "lint:js": "eslint packages shared src config docs scripts --ext '.js,.jsx' --config config/.eslintrc.json --max-warnings 0 --fix",
-    "lint:scss": "stylelint '{src/components,packages,shared}/**/*.scss' --config config/.stylelintrc.json",
+    "lint:js":
+      "eslint packages shared src config docs scripts --ext '.js,.jsx' --config config/.eslintrc.json --max-warnings 0 --fix",
+    "lint:scss":
+      "stylelint '{src/components,packages,shared}/**/*.scss' --config config/.stylelintrc.json",
     "lint:ec": "echint",
     "lint": "yarn lint:js && yarn lint:scss && yarn lint:ec",
     "packup": "yarn build-package && yarn pack",
@@ -118,6 +113,7 @@
     "rollup-plugin-postcss": "^0.5.5",
     "s3-website": "^3.1.2",
     "sass-loader": "^6.0.6",
+    "sass-mq": "^4.0.2",
     "style-loader": "^0.18.2",
     "stylelint": "^8.2.0",
     "stylelint-config-css-modules": "^1.1.0",
@@ -146,10 +142,7 @@
     "bracketSpacing": true
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --config config/.eslintrc.json --max-warnings 0 --fix",
-      "git add"
-    ],
+    "*.{js,jsx}": ["eslint --config config/.eslintrc.json --max-warnings 0 --fix", "git add"],
     "*.scss": "stylelint --config config/.stylelintrc.json",
     "*": "echint"
   },

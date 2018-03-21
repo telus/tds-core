@@ -5,9 +5,7 @@ import { warn } from '../../../../utils/warn'
 
 import ButtonLink from '../ButtonLink'
 
-import mockMatchMedia from '../../../../__mocks__/matchMedia'
-
-jest.mock('../../../../utils/warn')
+jest.mock('../../../../utils/warn.js')
 
 describe('ButtonLink', () => {
   const doMount = (overrides = {}) => {
@@ -55,20 +53,10 @@ describe('ButtonLink', () => {
   })
 
   describe('responsiveness', () => {
-    it('is full width below medium viewports', () => {
-      mockMatchMedia(767)
+    it('is being assigned responsive css class', () => {
+      const button = doMount()
 
-      const link = doMount()
-
-      expect(link).toHaveClassName('fullWidth')
-    })
-
-    it('is inline at medium viewports and above', () => {
-      mockMatchMedia(768)
-
-      const link = doMount()
-
-      expect(link).toHaveClassName('inline')
+      expect(button).toHaveClassName('buttonSizing')
     })
   })
 

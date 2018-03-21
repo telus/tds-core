@@ -5,8 +5,6 @@ import { warn } from '../../../src/utils/warn'
 
 import Button from '../Button'
 
-import mockMatchMedia from '../../../src/__mocks__/matchMedia'
-
 jest.mock('../../../src/utils/warn')
 
 describe('Button', () => {
@@ -50,20 +48,10 @@ describe('Button', () => {
   })
 
   describe('responsiveness', () => {
-    it('is full width below medium viewports', () => {
-      mockMatchMedia(767)
-
+    it('is being assigned responsive css class', () => {
       const button = doMount()
 
-      expect(button).toHaveClassName('fullWidth')
-    })
-
-    it('is inline at medium viewports and above', () => {
-      mockMatchMedia(768)
-
-      const button = doMount()
-
-      expect(button).toHaveClassName('inline')
+      expect(button).toHaveClassName('buttonSizing')
     })
   })
 
