@@ -28,6 +28,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.0"
+    "@tds/core-colours": "^1.0.0",
+    "@tds/shared-base-button": "^1.0.0"
   }
 }

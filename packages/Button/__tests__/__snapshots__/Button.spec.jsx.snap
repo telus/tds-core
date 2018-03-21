@@ -2,7 +2,7 @@
 
 exports[`Button renders 1`] = `
 <button
-  class="inline primary"
+  class="buttonSizing primary"
   type="button"
 >
   <div
