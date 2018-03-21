@@ -15,7 +15,7 @@ import styles from './Select.modules.scss'
 import iconWrapperStyles from '../../shared/styles/IconWrapper.modules.scss'
 
 /**
- * @version 1.0.0
+ * @version 1.0.2
  */
 const Select = ({ options, placeholder, ...props }) => (
   <FormField {...props}>

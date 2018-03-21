@@ -68,6 +68,9 @@ const renderHelper = (helper, helperId, feedback, value) => {
   )
 }
 
+/**
+ * @version 1.0.2
+ */
 class FormField extends React.Component {
   state = {
     value: this.props.value,
