@@ -1,4 +1,8 @@
+// TODO: general styles refactor
+
+// TODO: re-evaluate these z indexes
 $zindex-popover: 1600 !default;
+$zindex-modal-backdrop: 1400 !default;
 
 @keyframes spinner-rotate {
   100% {
@@ -33,6 +37,13 @@ $zindex-popover: 1600 !default;
   text-align: center;
 }
 
+.centered {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: 0;
+  width: 100%;
+}
+
 .svg {
   z-index: $zindex-popover;
   animation-name: spinner-rotate;
@@ -47,4 +58,21 @@ $zindex-popover: 1600 !default;
 
 .circle {
   animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
+}
+
+.overlayContainer {
+  // TODO: replace with relative from Position.modules.scss
+  position: relative;
+}
+
+.overlay {
+  z-index: $zindex-modal-backdrop;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.opaque {
+  // TODO: reimplement opacity transition using an Animation component
+  opacity: 0.1;
 }

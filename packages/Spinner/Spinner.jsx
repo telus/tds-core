@@ -1,89 +1,85 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import classnames from 'classnames'
 
 import Text from '@tds/core-text'
 
-import './Spinner.scss'
+import joinClassNames from '../../shared/utils/joinClassNames'
+
 import styles from './Spinner.modules.scss'
+
+// TODO: maybe make this a component instead of a function
+const getSpinner = (tip, overlay) => (
+  <div
+    className={joinClassNames(styles.container, overlay && styles.centered)}
+    data-testid="spinner"
+  >
+    {/* TODO: hard coded colour. Can we use a class instead? */}
+    {/* TODO: accessibility props for the svg? */}
+    <svg className={styles.svg} viewBox="0 0 100 100" width="0" height="0">
+      <circle
+        className={styles.circle}
+        stroke="#177a00"
+        strokeWidth="4"
+        fill="none"
+        strokeLinecap="round"
+        strokeDasharray="89, 200"
+        strokeDashoffset="0"
+        cx="50"
+        cy="50"
+        r="20"
+      />
+    </svg>
+    {tip && <Text size="small">{tip}</Text>}
+  </div>
+)
+
+// TODO: don't forget to bump the version here!
 
 /**
  * @version 1.0.0
  *
  * A waiting indicator.
  */
-class Spinner extends Component {
-  getSpinWrapper = (spinEl, spinning) => {
-    const containerCls = classnames('spinner-container', {
-      'spinner-container--loading': spinning,
-    })
+const Spinner = ({ spinning, tip, children }) => {
+  if (!spinning) {
+    return children || null
+  }
+
+  if (children) {
     return (
-      <div className="spinner-wrapper">
-        {spinning && <div className="spinner-wrapper__content-blocker" />}
-        {spinEl}
-        <div className={containerCls}>{this.props.children}</div>
+      <div className={styles.overlayContainer}>
+        {getSpinner(tip, true)}
+
+        <div className={styles.overlay} data-testid="overlay" />
+
+        <div className={styles.opaque}>{children}</div>
       </div>
     )
   }
 
-  getSpinElement = (spinning, tip) => {
-    return (
-      <div className={styles.container}>
-        <svg className={styles.svg} viewBox="0 0 100 100" width="0" height="0">
-          <circle
-            className={styles.circle}
-            stroke="#177a00"
-            strokeWidth="4"
-            fill="none"
-            strokeLinecap="round"
-            strokeDasharray="89, 200"
-            strokeDashoffset="0"
-            cx="50"
-            cy="50"
-            r="20"
-          />
-        </svg>
-        {tip && <Text size="small">{tip}</Text>}
-      </div>
-    )
-  }
-
-  isNestedPattern = () => {
-    return !!(this.props && this.props.children)
-  }
-
-  render() {
-    const { spinning, tip } = this.props
-
-    if (!spinning) {
-      return null
-    }
-
-    if (this.isNestedPattern()) {
-      return this.getSpinWrapper(this.getSpinElement(spinning, tip), spinning)
-    }
-    return this.getSpinElement(spinning, tip)
-  }
+  return getSpinner(tip)
 }
 
 Spinner.propTypes = {
   /**
-   * A message to display along with the spinner animation.
-   */
-  tip: PropTypes.string, // eslint-disable-line react/require-default-props
-  /**
-   * Whether or not to display the component.
+   * Whether or not to render the spinner.
    */
   spinning: PropTypes.bool,
+  /**
+   * A additional message.
+   */
+  tip: PropTypes.string,
   /**
    * Content to be overlaid while the spinner is active. Can be text, any HTML element,
    * or any component.
    */
-  children: PropTypes.node, // eslint-disable-line react/require-default-props
+  children: PropTypes.node,
 }
 
 Spinner.defaultProps = {
   spinning: false,
+  tip: undefined,
+  children: undefined,
 }
 
 export default Spinner

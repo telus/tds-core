@@ -60,11 +60,7 @@ export default opts => {
             autoprefixer(),
             postcssModules({
               Loader: CssModulesSassLoader,
-              globalModulePaths: [
-                /packages\/SelectorCounter/,
-                /packages\/Spinner/,
-                /packages\/StepTracker/,
-              ],
+              globalModulePaths: [/packages\/SelectorCounter/, /packages\/StepTracker/],
               generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
               getJSON(id, exportTokens) {
                 cssExportMap[id] = exportTokens

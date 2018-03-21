@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import { shallow } from 'enzyme'
 
 import Text from '@tds/core-text'
 
@@ -9,83 +9,62 @@ describe('Spinner', () => {
   const defaultProps = {
     spinning: true,
   }
-  const doShallow = (overrides = {}) => shallow(<Spinner {...defaultProps} {...overrides} />)
+  const doShallow = (overrides = {}, children) => {
+    const spinner = shallow(
+      <Spinner {...defaultProps} {...overrides}>
+        {children}
+      </Spinner>
+    )
+
+    return {
+      spinner,
+      findOverlay: () => spinner.find('[data-testid="overlay"]'),
+      findSpinnerContainer: () => spinner.find('[data-testid="spinner"]'),
+    }
+  }
+
+  it('renders', () => {
+    const { spinner } = doShallow()
+
+    expect(spinner).toMatchSnapshot()
+  })
+
+  it('renders with children', () => {
+    const { spinner } = doShallow({}, <span>Overlay me with the spinner</span>)
+
+    expect(spinner).toMatchSnapshot()
+  })
 
   it('is only visible while spinning', () => {
-    let spinner = doShallow({ spinning: false })
+    let { spinner } = doShallow({ spinning: false })
     expect(spinner).toBeEmptyRender()
 
-    spinner = doShallow({ spinning: true })
+    spinner = doShallow({ spinning: true }).spinner
     expect(spinner).not.toBeEmptyRender()
   })
 
   it('can have a tip', () => {
-    const spinner = doShallow({ tip: 'A tip' })
+    const { spinner } = doShallow({ tip: 'A tip' })
 
     expect(spinner).toContainReact(<Text size="small">A tip</Text>)
   })
 
-  describe.skip('in container mode', () => {
-    it('spinner is visible when spinning is true', () => {
-      const wrapper = shallow(<Spinner tip="Loading..." spinning />)
-      expect(
-        wrapper
-          .find('.spinner')
-          .first()
-          .hasClass('spinner--spinning')
-      ).toBeTruthy()
-      expect(
-        wrapper
-          .find('.spinner__tip')
-          .first()
-          .text()
-      ).toBe('Loading...')
-      wrapper.setProps({
-        spinning: false,
-      })
-      expect(
-        wrapper
-          .find('.spinner')
-          .first()
-          .hasClass('spinner--spinning')
-      ).toBeFalsy()
+  describe('overlaying content', () => {
+    it('places the spinner on top of the content while spinning', () => {
+      const { findOverlay, findSpinnerContainer } = doShallow(
+        { spinning: true },
+        <span>Overlay me with the spinner</span>
+      )
+      expect(findOverlay()).toExist()
+      expect(findSpinnerContainer()).toHaveClassName('centered')
+    })
+
+    it('only shows the children while not spinning', () => {
+      const { spinner } = doShallow({ spinning: false }, <span>Overlay me with the spinner</span>)
+
+      expect(spinner).toMatchElement(<span>Overlay me with the spinner</span>)
     })
   })
 
-  describe.skip('embedded mode', () => {
-    it('spinner is visible when spinning is true', () => {
-      const wrapper = mount(
-        <Spinner tip="Loading..." spinning wrapperClassName="test">
-          <p>TEST</p>
-        </Spinner>
-      )
-      expect(
-        wrapper
-          .find('.spinner')
-          .first()
-          .hasClass('spinner--spinning')
-      ).toBeTruthy()
-      expect(
-        wrapper
-          .find('.spinner__tip')
-          .first()
-          .text()
-      ).toBe('Loading...')
-      expect(
-        wrapper
-          .find('.spinner-container')
-          .first()
-          .hasClass('spinner-container--loading')
-      ).toBeTruthy()
-      wrapper.setProps({
-        spinning: false,
-      })
-      expect(
-        wrapper
-          .find('.spinner-container > p')
-          .first()
-          .text()
-      ).toBe('TEST')
-    })
-  })
+  // TODO: spread rest and class name tests
 })
