@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
+import Text from '@tds/core-text'
+
 import './Spinner.scss'
+import styles from './Spinner.modules.scss'
 
 /**
  * @version 1.0.0
@@ -24,14 +27,11 @@ class Spinner extends Component {
   }
 
   getSpinElement = (spinning, tip) => {
-    const cls = classnames('spinner', {
-      'spinner--spinning': spinning,
-    })
     return (
-      <div className={cls}>
-        <svg className="spinner__svg" viewBox="0 0 100 100" width="0" height="0">
+      <div className={styles.container}>
+        <svg className={styles.svg} viewBox="0 0 100 100" width="0" height="0">
           <circle
-            className="spinner__circle"
+            className={styles.circle}
             stroke="#177a00"
             strokeWidth="4"
             fill="none"
@@ -43,7 +43,7 @@ class Spinner extends Component {
             r="20"
           />
         </svg>
-        {tip && <div className="spinner__tip">{tip}</div>}
+        {tip && <Text size="small">{tip}</Text>}
       </div>
     )
   }
@@ -54,6 +54,11 @@ class Spinner extends Component {
 
   render() {
     const { spinning, tip } = this.props
+
+    if (!spinning) {
+      return null
+    }
+
     if (this.isNestedPattern()) {
       return this.getSpinWrapper(this.getSpinElement(spinning, tip), spinning)
     }
