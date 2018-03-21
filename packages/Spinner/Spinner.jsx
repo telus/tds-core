@@ -10,14 +10,10 @@ import './Spinner.scss'
  * A waiting indicator.
  */
 class Spinner extends Component {
-  getSpinWrapper = (spinEl, spinning, wrapperClassNames) => {
-    const containerCls = classnames(
-      'spinner-container',
-      {
-        'spinner-container--loading': spinning,
-      },
-      wrapperClassNames
-    )
+  getSpinWrapper = (spinEl, spinning) => {
+    const containerCls = classnames('spinner-container', {
+      'spinner-container--loading': spinning,
+    })
     return (
       <div className="spinner-wrapper">
         {spinning && <div className="spinner-wrapper__content-blocker" />}
@@ -57,19 +53,15 @@ class Spinner extends Component {
   }
 
   render() {
-    const { spinning, tip, wrapperClassNames } = this.props
+    const { spinning, tip } = this.props
     if (this.isNestedPattern()) {
-      return this.getSpinWrapper(this.getSpinElement(spinning, tip), spinning, wrapperClassNames)
+      return this.getSpinWrapper(this.getSpinElement(spinning, tip), spinning)
     }
     return this.getSpinElement(spinning, tip)
   }
 }
 
 Spinner.propTypes = {
-  /**
-   * Additional class names to add custom styling to the container while in embedded mode.
-   */
-  wrapperClassNames: PropTypes.string,
   /**
    * A message to display along with the spinner animation.
    */
@@ -86,7 +78,6 @@ Spinner.propTypes = {
 }
 
 Spinner.defaultProps = {
-  wrapperClassNames: '',
   spinning: false,
 }
 
