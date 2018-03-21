@@ -15,4 +15,5 @@ module.exports = {
   ],
   setupTestFrameworkScriptFile: path.resolve('node_modules/jest-enzyme/lib/index.js'),
   snapshotSerializers: ['enzyme-to-json/serializer'],
+  testEnvironment: 'enzyme',
 }

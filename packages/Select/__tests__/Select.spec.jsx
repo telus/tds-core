@@ -266,8 +266,8 @@ describe('Select', () => {
     it('hides any icons', () => {
       const { select } = doMount({ disabled: true, feedback: 'error' })
 
-      expect(select.find(StandaloneIcon)).toBeEmpty()
-      expect(select.find(DecorativeIcon)).toBeEmpty()
+      expect(select.find(StandaloneIcon)).not.toExist()
+      expect(select.find(DecorativeIcon)).not.toExist()
     })
   })
 
