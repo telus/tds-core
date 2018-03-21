@@ -1,6 +1,5 @@
 @import '../../../scss/settings/colours';
-@import '../../../scss/settings/responsive-grid';
-@import '../../../scss/utility/responsive';
+@import '../../../scss/utility/sass-mq';
 
 $primary-bg-color: $color-primary;
 $secondary-bg-color: $color-secondary;
@@ -26,19 +25,21 @@ $button-text-color: $color-white;
   transition: background 0.2s;
 }
 
-.fullWidth {
+.buttonSizing {
   composes: base;
-  display: block;
 
-  width: 100%;
-}
+  @include mq($until: md) {
+    display: block;
 
-.inline {
-  composes: base;
-  display: inline-block;
+    width: 100%;
+  }
 
-  width: auto;
-  min-width: 180px;
+  @include mq($from: md) {
+    display: inline-block;
+
+    width: auto;
+    min-width: 180px;
+  }
 }
 
 .inline + .inline {

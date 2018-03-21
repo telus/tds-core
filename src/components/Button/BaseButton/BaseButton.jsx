@@ -5,7 +5,6 @@ import safeRest from '../../../utils/safeRest'
 import joinClassNames from '../../../utils/joinClassNames'
 
 import FlexBox from '../../Flexbox/Flexbox'
-import Responsive from '../../Responsive/Responsive'
 
 import styles from './BaseButton.modules.scss'
 
@@ -13,25 +12,15 @@ import styles from './BaseButton.modules.scss'
  * A common base for Button and ButtonLink.
  */
 const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...rest }) => {
-  return (
-    <Responsive minWidth="md" defaultMatches={false}>
-      {desktop =>
-        React.createElement(
-          element,
-          {
-            ...safeRest(rest),
-            className: joinClassNames(
-              desktop ? styles.inline : styles.fullWidth,
-              styles[variant],
-              dangerouslyAddClassName
-            ),
-          },
-          <FlexBox direction="row" dangerouslyAddClassName={styles.centered}>
-            {children}
-          </FlexBox>
-        )
-      }
-    </Responsive>
+  return React.createElement(
+    element,
+    {
+      ...safeRest(rest),
+      className: joinClassNames(styles.buttonSizing, styles[variant], dangerouslyAddClassName),
+    },
+    <FlexBox direction="row" dangerouslyAddClassName={styles.centered}>
+      {children}
+    </FlexBox>
   )
 }
 
