@@ -10,18 +10,6 @@ import './Spinner.scss'
  * A waiting indicator.
  */
 class Spinner extends Component {
-  componentDidMount() {
-    this.toggleBodyScrolling(this.props)
-  }
-
-  componentDidUpdate() {
-    this.toggleBodyScrolling(this.props)
-  }
-
-  componentWillUnmount() {
-    this.enableBodyScrolling()
-  }
-
   getSpinWrapper = (spinEl, spinning, wrapperClassNames) => {
     const containerCls = classnames(
       'spinner-container',
@@ -39,14 +27,12 @@ class Spinner extends Component {
     )
   }
 
-  getSpinElement = (spinning, tip, fullScreen) => {
+  getSpinElement = (spinning, tip) => {
     const cls = classnames('spinner', {
       'spinner--spinning': spinning,
-      'spinner--full-screen': fullScreen,
     })
     return (
       <div className={cls}>
-        {fullScreen && <div className="spinner__full-screen-layer" />}
         <svg className="spinner__svg" viewBox="0 0 100 100" width="0" height="0">
           <circle
             className="spinner__circle"
@@ -66,36 +52,16 @@ class Spinner extends Component {
     )
   }
 
-  enableBodyScrolling = () => {
-    document.body.style.overflow = 'inherit'
-  }
-
-  disableBodyScrolling = () => {
-    document.body.style.overflow = 'hidden'
-  }
-
   isNestedPattern = () => {
     return !!(this.props && this.props.children)
   }
 
-  toggleBodyScrolling = ({ fullScreen, spinning }) => {
-    if (fullScreen === true && spinning === true) {
-      this.disableBodyScrolling()
-    } else {
-      this.enableBodyScrolling()
-    }
-  }
-
   render() {
-    const { spinning, tip, wrapperClassNames, fullScreen } = this.props
+    const { spinning, tip, wrapperClassNames } = this.props
     if (this.isNestedPattern()) {
-      return this.getSpinWrapper(
-        this.getSpinElement(spinning, tip, fullScreen),
-        spinning,
-        wrapperClassNames
-      )
+      return this.getSpinWrapper(this.getSpinElement(spinning, tip), spinning, wrapperClassNames)
     }
-    return this.getSpinElement(spinning, tip, fullScreen)
+    return this.getSpinElement(spinning, tip)
   }
 }
 
@@ -113,11 +79,7 @@ Spinner.propTypes = {
    */
   spinning: PropTypes.bool,
   /**
-   * Whether or not to display as a full screen overlay.
-   */
-  fullScreen: PropTypes.bool,
-  /**
-   * Content to be overlaid when the spinner is active. Can be text, any HTML element,
+   * Content to be overlaid while the spinner is active. Can be text, any HTML element,
    * or any component.
    */
   children: PropTypes.node, // eslint-disable-line react/require-default-props
@@ -126,7 +88,6 @@ Spinner.propTypes = {
 Spinner.defaultProps = {
   wrapperClassNames: '',
   spinning: false,
-  fullScreen: false,
 }
 
 export default Spinner
