@@ -13,7 +13,7 @@ import styles from './TextArea.modules.scss'
 import positionStyles from '../../shared/styles/Position.modules.scss'
 
 /**
- * @version 1.0.0
+ * @version 1.0.2
  */
 const TextArea = props => (
   <FormField {...props}>
