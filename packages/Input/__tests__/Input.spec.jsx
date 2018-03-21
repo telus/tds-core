@@ -248,7 +248,7 @@ describe('Input', () => {
     it('hides any icons', () => {
       const { input } = doMount({ disabled: true, feedback: 'error' })
 
-      expect(input.find(StandaloneIcon)).toBeEmpty()
+      expect(input.find(StandaloneIcon)).not.toExist()
     })
   })
 

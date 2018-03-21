@@ -15,7 +15,7 @@ describe('$COMPONENT$', () => {
   it('does other things', () => {
     const $COMPONENT_CAMEL$ = doShallow()
 
-    expect($COMPONENT_CAMEL$).toBePresent()
+    expect($COMPONENT_CAMEL$).toExist()
   })
 
   it('passes additional attributes to the element', () => {

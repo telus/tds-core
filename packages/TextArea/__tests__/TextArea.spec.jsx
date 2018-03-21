@@ -242,7 +242,7 @@ describe('TextArea', () => {
     it('hides any icons', () => {
       const { textarea } = doMount({ disabled: true, feedback: 'error' })
 
-      expect(textarea.find(StandaloneIcon)).toBeEmpty()
+      expect(textarea.find(StandaloneIcon)).not.toExist()
     })
   })
 

@@ -37,7 +37,7 @@ describe('ButtonLink', () => {
     const MyLink = () => <span />
     const link = mount(<ButtonLink reactRouterLinkComponent={MyLink}>The link test</ButtonLink>)
 
-    expect(link.find(MyLink)).toBePresent()
+    expect(link.find(MyLink)).toExist()
   })
 
   it('must use `reactRouterLinkComponent` and `to` props together', () => {

@@ -89,8 +89,8 @@ describe('Radio', () => {
 
       expect(findRadioElement()).toHaveProp('checked', false)
       expect(findFakeRadio()).toHaveClassName('unchecked')
-      expect(findFakeInnerRadio()).toBeEmpty()
-      expect(findFakeRadio().find(DecorativeIcon)).toBeEmpty()
+      expect(findFakeInnerRadio()).not.toExist()
+      expect(findFakeRadio().find(DecorativeIcon)).not.toExist()
     })
 
     it('can be checked', () => {
@@ -184,7 +184,7 @@ describe('Radio', () => {
 
       check()
 
-      expect(findColoredLabel()).toBeEmpty()
+      expect(findColoredLabel()).not.toExist()
       expect(findFakeRadio()).toHaveClassName('checked')
       expect(findFakeRadio()).not.toHaveClassName('error')
     })

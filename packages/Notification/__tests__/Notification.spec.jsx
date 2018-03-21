@@ -40,10 +40,10 @@ describe('<Notification />', () => {
 
   it('does not have an icon by default', () => {
     let notification = doShallow()
-    expect(notification.find(DecorativeIcon)).toBeEmpty()
+    expect(notification.find(DecorativeIcon)).not.toExist()
 
     notification = doShallow({ variant: 'branded' })
-    expect(notification.find(DecorativeIcon)).toBeEmpty()
+    expect(notification.find(DecorativeIcon)).not.toExist()
   })
 
   describe('successful variant', () => {

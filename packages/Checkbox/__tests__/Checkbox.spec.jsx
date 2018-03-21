@@ -93,7 +93,7 @@ describe('Checkbox', () => {
 
       expect(findCheckboxElement()).toHaveProp('checked', false)
       expect(findFakeCheckbox()).toHaveClassName('unchecked')
-      expect(findFakeCheckbox().find(DecorativeIcon)).toBeEmpty()
+      expect(findFakeCheckbox().find(DecorativeIcon)).not.toExist()
     })
 
     it('can be checked', () => {
@@ -121,7 +121,7 @@ describe('Checkbox', () => {
 
       expect(findCheckboxElement()).toHaveProp('checked', false)
       expect(findFakeCheckbox()).toHaveClassName('unchecked')
-      expect(findFakeCheckbox().find(DecorativeIcon)).toBeEmpty()
+      expect(findFakeCheckbox().find(DecorativeIcon)).not.toExist()
     })
 
     it('notifies when it is checked or unchecked', () => {
@@ -219,7 +219,7 @@ describe('Checkbox', () => {
 
       check()
 
-      expect(findColoredLabel()).toBeEmpty()
+      expect(findColoredLabel()).not.toExist()
       expect(findFakeCheckbox()).toHaveClassName('checked')
       expect(findFakeCheckbox()).not.toHaveClassName('error')
     })
