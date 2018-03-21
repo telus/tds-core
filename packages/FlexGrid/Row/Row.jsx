@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 
-import styles from '../FlexGrid.modules.scss'
+import styles from './Row.modules.scss'
 
 import safeRest from '../../../shared/utils/safeRest'
 
