@@ -9,7 +9,7 @@
     "shared/components/*"
   ],
   "scripts": {
-    "build": "lerna exec --since -- \\$LERNA_ROOT_PATH/scripts/build.sh && lerna run build --since",
+    "build": "node scripts/build.js",
     "build-docs:gitbook": "gitbook build guide",
     "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
     "build-docs": "yarn build-docs:styleguide && yarn build-docs:gitbook",
