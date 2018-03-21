@@ -25,7 +25,8 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "sass-mq": "^4.0.2"
   },
   "devDependencies": {
     "react-media": "^1.8.0"
