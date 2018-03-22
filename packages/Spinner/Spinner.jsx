@@ -4,18 +4,26 @@ import PropTypes from 'prop-types'
 import Text from '@tds/core-text'
 
 import joinClassNames from '../../shared/utils/joinClassNames'
+import safeRest from '../../shared/utils/safeRest'
 
 import styles from './Spinner.modules.scss'
 
 // TODO: maybe make this a component instead of a function
-const getSpinner = (tip, overlay) => (
+const getSpinner = (tip, overlay, rest) => (
   <div
     className={joinClassNames(styles.container, overlay && styles.centered)}
     data-testid="spinner"
   >
     {/* TODO: hard coded colour. Can we use a class instead? */}
     {/* TODO: accessibility props for the svg? */}
-    <svg className={styles.svg} viewBox="0 0 100 100" width="0" height="0">
+    <svg
+      {...safeRest(rest)}
+      className={styles.svg}
+      viewBox="0 0 100 100"
+      width="0"
+      height="0"
+      data-testid="svg"
+    >
       <circle
         className={styles.circle}
         stroke="#177a00"
@@ -40,7 +48,7 @@ const getSpinner = (tip, overlay) => (
  *
  * A waiting indicator.
  */
-const Spinner = ({ spinning, tip, children }) => {
+const Spinner = ({ spinning, tip, children, ...rest }) => {
   if (!spinning) {
     return children || null
   }
@@ -48,7 +56,7 @@ const Spinner = ({ spinning, tip, children }) => {
   if (children) {
     return (
       <div className={styles.overlayContainer}>
-        {getSpinner(tip, true)}
+        {getSpinner(tip, true, rest)}
 
         <div className={styles.overlay} data-testid="overlay" />
 
@@ -57,7 +65,7 @@ const Spinner = ({ spinning, tip, children }) => {
     )
   }
 
-  return getSpinner(tip)
+  return getSpinner(tip, false, rest)
 }
 
 Spinner.propTypes = {

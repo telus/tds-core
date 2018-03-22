@@ -20,6 +20,7 @@ describe('Spinner', () => {
       spinner,
       findOverlay: () => spinner.find('[data-testid="overlay"]'),
       findSpinnerContainer: () => spinner.find('[data-testid="spinner"]'),
+      findSpinner: () => spinner.find('[data-testid="svg"]'),
     }
   }
 
@@ -66,5 +67,17 @@ describe('Spinner', () => {
     })
   })
 
-  // TODO: spread rest and class name tests
+  it('passes additional attributes to svg element', () => {
+    const { findSpinner } = doShallow({ id: 'the-spinner', 'data-some-attr': 'some value' })
+
+    expect(findSpinner()).toHaveProp({ id: 'the-spinner', 'data-some-attr': 'some value' })
+  })
+
+  it('does not allow custom CSS', () => {
+    const { findSpinner } = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+
+    const spinner = findSpinner()
+    expect(spinner).not.toHaveProp('className', 'my-custom-class')
+    expect(spinner).not.toHaveProp('style')
+  })
 })
