@@ -1,3 +1,8 @@
+**This package has been deprecated and is no longer supported.**
+
+The SelectorCounter component is no longer recommended due to it being inaccessible
+on small displays. We recommend you use either the [Select](#select) or [Input](#input) components instead.
+
 ## Minimal usage
 
 ```
