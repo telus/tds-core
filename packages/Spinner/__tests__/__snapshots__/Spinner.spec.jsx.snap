@@ -37,7 +37,7 @@ exports[`Spinner renders 1`] = `
 
 exports[`Spinner renders with children 1`] = `
 <div
-  class="overlayContainer"
+  class="relative"
 >
   <div
     class="container centered"

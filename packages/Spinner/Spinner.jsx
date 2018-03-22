@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import SpinnerSvg from './SpinnerSvg/SpinnerSvg'
+
+import positionStyles from '../../shared/styles/Position.modules.scss'
 import styles from './Spinner.modules.scss'
 
 // TODO: don't forget to bump the version here!
@@ -17,7 +19,7 @@ const Spinner = ({ spinning, tip, a11yLabel, children, ...rest }) => {
 
   if (children) {
     return (
-      <div className={styles.overlayContainer}>
+      <div className={positionStyles.relative}>
         {<SpinnerSvg {...rest} tip={tip} a11yLabel={a11yLabel} overlay={true} />}
 
         <div className={styles.overlay} data-testid="overlay" />

@@ -1,17 +1,12 @@
-// TODO: general styles refactor
 // TODO: re-evaluate these z indexes
 $zindex-modal-backdrop: 1400 !default;
 
-.overlayContainer {
-  // TODO: replace with relative from Position.modules.scss
-  position: relative;
-}
-
 .overlay {
-  z-index: $zindex-modal-backdrop;
   position: absolute;
   width: 100%;
   height: 100%;
+
+  z-index: $zindex-modal-backdrop;
 }
 
 .opaque {
