@@ -58,7 +58,7 @@ describe('FlexGrid', () => {
 
     expect(col1).toHaveClassName('gutterless')
     expect(col2).toHaveClassName('gutterless')
-    expect(row).toHaveClassName('gutterless')
+    expect(row).toHaveClassName('flexRow')
   })
 
   it('passes additional attributes to the element', () => {
