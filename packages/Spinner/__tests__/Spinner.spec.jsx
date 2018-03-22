@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount, render } from 'enzyme'
 
 import Text from '@tds/core-text'
 
@@ -9,75 +9,109 @@ describe('Spinner', () => {
   const defaultProps = {
     spinning: true,
   }
-  const doShallow = (overrides = {}, children) => {
-    const spinner = shallow(
+  const doShallow = (overrides = {}, children) =>
+    shallow(
       <Spinner {...defaultProps} {...overrides}>
         {children}
       </Spinner>
     )
 
+  const doMount = (overrides = {}, children) => {
+    const spinner = mount(
+      <Spinner {...defaultProps} {...overrides}>
+        {children}
+      </Spinner>
+    )
+
+    const spinnerSvg = spinner.find('[data-testid="svg"]')
+
     return {
       spinner,
-      findOverlay: () => spinner.find('[data-testid="overlay"]'),
-      findSpinnerContainer: () => spinner.find('[data-testid="spinner"]'),
-      findSpinner: () => spinner.find('[data-testid="svg"]'),
+      overlay: spinner.find('[data-testid="overlay"]'),
+      spinnerContainer: spinner.find('[data-testid="spinner"]'),
+      spinnerSvg,
+      a11yLabel: spinnerSvg.find('title[id^="spinner-title-"]'),
     }
   }
 
   it('renders', () => {
-    const { spinner } = doShallow()
+    const spinner = render(<Spinner spinning />)
 
     expect(spinner).toMatchSnapshot()
   })
 
   it('renders with children', () => {
-    const { spinner } = doShallow({}, <span>Overlay me with the spinner</span>)
+    const spinner = render(
+      <Spinner spinning>
+        <span>Overlay me with the spinner</span>
+      </Spinner>
+    )
 
     expect(spinner).toMatchSnapshot()
   })
 
   it('is only visible while spinning', () => {
-    let { spinner } = doShallow({ spinning: false })
+    let spinner = doShallow({ spinning: false })
     expect(spinner).toBeEmptyRender()
 
-    spinner = doShallow({ spinning: true }).spinner
+    spinner = doShallow({ spinning: true })
     expect(spinner).not.toBeEmptyRender()
   })
 
   it('can have a tip', () => {
-    const { spinner } = doShallow({ tip: 'A tip' })
+    const { spinner } = doMount({ tip: 'A tip' })
 
     expect(spinner).toContainReact(<Text size="small">A tip</Text>)
   })
 
   describe('overlaying content', () => {
     it('places the spinner on top of the content while spinning', () => {
-      const { findOverlay, findSpinnerContainer } = doShallow(
+      const { overlay, spinnerContainer } = doMount(
         { spinning: true },
         <span>Overlay me with the spinner</span>
       )
-      expect(findOverlay()).toExist()
-      expect(findSpinnerContainer()).toHaveClassName('centered')
+
+      expect(overlay).toExist()
+      expect(spinnerContainer).toHaveClassName('centered')
     })
 
     it('only shows the children while not spinning', () => {
-      const { spinner } = doShallow({ spinning: false }, <span>Overlay me with the spinner</span>)
+      const spinner = doShallow({ spinning: false }, <span>Overlay me with the spinner</span>)
 
       expect(spinner).toMatchElement(<span>Overlay me with the spinner</span>)
     })
   })
 
-  it('passes additional attributes to svg element', () => {
-    const { findSpinner } = doShallow({ id: 'the-spinner', 'data-some-attr': 'some value' })
+  describe('accessibility', () => {
+    it('gives the svg a default a11y label', () => {
+      const { spinnerSvg, a11yLabel } = doMount()
 
-    expect(findSpinner()).toHaveProp({ id: 'the-spinner', 'data-some-attr': 'some value' })
+      expect(a11yLabel).toHaveText(
+        'A spinner is active. Please wait while the page completes a task.'
+      )
+      expect(spinnerSvg).toHaveProp('aria-labelledby', a11yLabel.props().id)
+    })
+
+    it('allows a custom a11y label', () => {
+      const { a11yLabel } = doMount({ a11yLabel: 'Something is busy' })
+
+      expect(a11yLabel).toHaveText('Something is busy')
+    })
+  })
+
+  it('passes additional attributes to svg element', () => {
+    const { spinnerSvg } = doMount({ id: 'the-spinner', 'data-some-attr': 'some value' })
+
+    expect(spinnerSvg).toHaveProp({ id: 'the-spinner', 'data-some-attr': 'some value' })
   })
 
   it('does not allow custom CSS', () => {
-    const { findSpinner } = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const { spinnerSvg } = doMount({
+      className: 'my-custom-class',
+      style: { color: 'hotpink' },
+    })
 
-    const spinner = findSpinner()
-    expect(spinner).not.toHaveProp('className', 'my-custom-class')
-    expect(spinner).not.toHaveProp('style')
+    expect(spinnerSvg).not.toHaveProp('className', 'my-custom-class')
+    expect(spinnerSvg).not.toHaveProp('style')
   })
 })
