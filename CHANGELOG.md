@@ -1,3 +1,13 @@
+#### 0.34.8 (2018-03-22)
+
+##### Build System / Dependencies
+
+* **release.sh:**  comment out the push to master ([a5438629](https://github.com/telusdigital/tds/commit/a5438629506bb882e643f9544aa4e1e256d486ca))
+
+##### Bug Fixes
+
+* **flex-grid:**  fix gutterless alignment issue ([#526](https://github.com/telusdigital/tds/pull/526)) ([75b329a1](https://github.com/telusdigital/tds/commit/75b329a1d2f5f576a861ac4e5b9b5a8465133921))
+
 #### 0.34.7 (2018-03-22)
 
 ##### Bug Fixes
