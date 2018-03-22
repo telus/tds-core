@@ -5,7 +5,7 @@ $primary-bg-color: $color-primary;
 $secondary-bg-color: $color-secondary;
 
 .base {
-  composes: focusOutline from '../../shared/styles/Links.modules.scss';
+  composes: focusOutline from '../../../../shared/styles/Links.modules.scss';
 
   text-decoration: none;
 }
