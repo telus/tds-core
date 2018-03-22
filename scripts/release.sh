@@ -33,6 +33,9 @@ if [[ `git status --porcelain` ]]; then
   exit 1
 fi
 
+#
+# Build the package.
+#
 yarn build-package
 
 #
@@ -61,9 +64,9 @@ fi
 #
 git add CHANGELOG.md package.json
 
-git commit -m "$VERSION_TAG"
+git commit -m "$VERSION_TAG" --no-verify
 git tag $VERSION_TAG
 
 # Don't push to master! You should be on a branch.
 # git push origin master
-git push origin $VERSION_TAG
+git push origin $VERSION_TAG --no-verify
