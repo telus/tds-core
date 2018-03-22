@@ -1,3 +1,13 @@
+#### 1.0.7 (2018-03-22)
+
+##### Build System / Dependencies
+
+* **release.sh:**  dont run precommit or prepush hooks when pushing the tag ([ad431ee1](https://github.com/telusdigital/tds/commit/ad431ee19641710abe54068f934cc84a72507e56))
+
+##### Bug Fixes
+
+* **flex-grid:**  fix gutterless alignment issue ([#526](https://github.com/telusdigital/tds/pull/526)) ([774ed7fc](https://github.com/telusdigital/tds/commit/774ed7fc87c6715cf8be7d41bc9c84165611a46e))
+
 #### 1.0.6 (2018-03-22)
 
 ##### Bug Fixes
