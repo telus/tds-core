@@ -9,7 +9,7 @@ import BaseButton from '../../shared/components/BaseButton/BaseButton'
 import styles from './ButtonLink.modules.scss'
 
 /**
- * @version 1.0.0
+ * @version 1.0.1
  *
  * A link that is styled as a button.
  */
