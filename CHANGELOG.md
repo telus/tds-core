@@ -1,3 +1,10 @@
+#### 1.0.6 (2018-03-22)
+
+##### Bug Fixes
+
+* **core-link:** standardize focus outline across browsers ([43a345d1](https://github.com/telusdigital/tds/commit/43a345d12fc3af64ac66fdd6ff024a50435542c0))
+* **core-button-link:** standardize focus outline across browsers ([0392f1e4](https://github.com/telusdigital/tds/commit/0392f1e4fa6bb967882ed1d2ec7f17e97a450195))
+
 #### 1.0.5 (2018-03-13)
 
 ##### Bug Fixes
