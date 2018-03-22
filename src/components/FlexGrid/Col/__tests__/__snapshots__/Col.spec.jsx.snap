@@ -2,11 +2,11 @@
 
 exports[`Col renders 1`] = `
 <Col
-  className="flexGridColumn"
+  className="padding"
   xs={true}
 >
   <div
-    className="col-xs col-xs-offset flexGridColumn"
+    className="col-xs col-xs-offset padding"
   >
     Some content
   </div>
