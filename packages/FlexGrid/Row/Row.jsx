@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Subscriber } from 'react-broadcast'
 
 import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
+
+import styles from './Row.modules.scss'
 
 import safeRest from '../../../shared/utils/safeRest'
 
@@ -29,18 +30,14 @@ const Row = ({ horizontalAlign, verticalAlign, distribute, children, ...rest }) 
   }
 
   return (
-    <Subscriber channel="flex-grid">
-      {gutterStyle => (
-        <ReactFlexboxGridRow
-          {...safeRest(rest)}
-          className={gutterStyle}
-          {...getAlignment()}
-          {...getDistribution()}
-        >
-          {children}
-        </ReactFlexboxGridRow>
-      )}
-    </Subscriber>
+    <ReactFlexboxGridRow
+      {...safeRest(rest)}
+      {...getAlignment()}
+      {...getDistribution()}
+      className={styles.flexRow}
+    >
+      {children}
+    </ReactFlexboxGridRow>
   )
 }
 
