@@ -7,6 +7,7 @@ exports[`Spinner renders 1`] = `
 >
   <svg
     className="svg"
+    data-testid="svg"
     height="0"
     viewBox="0 0 100 100"
     width="0"
@@ -37,6 +38,7 @@ exports[`Spinner renders with children 1`] = `
   >
     <svg
       className="svg"
+      data-testid="svg"
       height="0"
       viewBox="0 0 100 100"
       width="0"
