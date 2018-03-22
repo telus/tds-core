@@ -1,3 +1,10 @@
+#### 0.34.7 (2018-03-22)
+
+##### Bug Fixes
+
+* **core-link:**  standardize focus outline across browsers ([a8f9ee25](https://github.com/telusdigital/tds/commit/a8f9ee25728f6e7c6944256f126c52141de8a990))
+* **core-button-link:**  standardize focus outline across browsers ([bdc87895](https://github.com/telusdigital/tds/commit/bdc87895a7b3cbcce7a3247327c0d4c307695e52))
+
 #### 0.34.6 (2018-03-13)
 
 ##### Bug Fixes
@@ -47,7 +54,7 @@
   * add content ([55a3048f](https://github.com/telusdigital/tds/commit/55a3048f840e50c07c25bddd7170591aaecf1f74))
   * add column examples ([f66375e2](https://github.com/telusdigital/tds/commit/f66375e2a6dd18c0a080a516793c1014cc9965de))
 * **contact:** updated copy ([d747f715](https://github.com/telusdigital/tds/commit/d747f715c62a179c187ea03ebb2ede5298756aa3))
-* **guide:** 
+* **guide:**
   * add template for issues and feature requests ([3c553097](https://github.com/telusdigital/tds/commit/3c553097c3a46a0329ef790f380e5150742e4bee))
   * Match Styleguidist sidebar background color and width ([a81726c7](https://github.com/telusdigital/tds/commit/a81726c7ef359ff32388bcbe7fb385c9ed9663dc))
   * Add Logo and favicon to static site docs ([a267790f](https://github.com/telusdigital/tds/commit/a267790f1d57a602ec74b63ecba60248f783279a))
@@ -62,11 +69,11 @@
 
 ##### New Features
 
-* **guide:** 
+* **guide:**
   * remove erroneous sidebar link ([cd644b59](https://github.com/telusdigital/tds/commit/cd644b5909edbdf9ebdbd8ee50a3f361461660be))
   * Re-order Navigation items ([d6aa6f48](https://github.com/telusdigital/tds/commit/d6aa6f48e2f49252c73d3b4bab134c3628f39dd7))
   * TDSify headings ([2a675598](https://github.com/telusdigital/tds/commit/2a67559835aca4732c7fd4821ace3f1fcdec0f32))
-* **flex-grid:** 
+* **flex-grid:**
   * Add 32px to all fixed widths ([fe16728c](https://github.com/telusdigital/tds/commit/fe16728c3acd33f68be76ef011c8e83f6998bcfa))
   * Make limitWidth prop to always be center aligned ([e8b9e321](https://github.com/telusdigital/tds/commit/e8b9e321f041a06d59bd599b13a56f5f89f80d93))
   * remove reliance on a row ([9696c57b](https://github.com/telusdigital/tds/commit/9696c57b580733612023ffe6c33d9f28fc62835d))
