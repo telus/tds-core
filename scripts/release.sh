@@ -33,6 +33,8 @@ if [[ `git status --porcelain` ]]; then
   exit 1
 fi
 
+yarn build-package
+
 #
 # Bump the version. Don't create a tag yet so that we can add the Changelog into the commit.
 #
@@ -62,5 +64,6 @@ git add CHANGELOG.md package.json
 git commit -m "$VERSION_TAG"
 git tag $VERSION_TAG
 
-git push origin master
+# Don't push to master! You should be on a branch.
+# git push origin master
 git push origin $VERSION_TAG
