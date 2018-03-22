@@ -2,27 +2,34 @@
 
 exports[`Spinner renders 1`] = `
 <div
-  className="container"
+  class="container"
   data-testid="spinner"
 >
   <svg
-    className="svg"
+    aria-labelledby="spinner-title-1"
+    class="svg"
     data-testid="svg"
     height="0"
+    role="img"
     viewBox="0 0 100 100"
     width="0"
   >
+    <title
+      id="spinner-title-1"
+    >
+      A spinner is active. Please wait while the page completes a task.
+    </title>
     <circle
-      className="circle"
+      class="circle"
       cx="50"
       cy="50"
       fill="none"
       r="20"
       stroke="#177a00"
-      strokeDasharray="89, 200"
-      strokeDashoffset="0"
-      strokeLinecap="round"
-      strokeWidth="4"
+      stroke-dasharray="89, 200"
+      stroke-dashoffset="0"
+      stroke-linecap="round"
+      stroke-width="4"
     />
   </svg>
 </div>
@@ -30,39 +37,46 @@ exports[`Spinner renders 1`] = `
 
 exports[`Spinner renders with children 1`] = `
 <div
-  className="overlayContainer"
+  class="overlayContainer"
 >
   <div
-    className="container centered"
+    class="container centered"
     data-testid="spinner"
   >
     <svg
-      className="svg"
+      aria-labelledby="spinner-title-2"
+      class="svg"
       data-testid="svg"
       height="0"
+      role="img"
       viewBox="0 0 100 100"
       width="0"
     >
+      <title
+        id="spinner-title-2"
+      >
+        A spinner is active. Please wait while the page completes a task.
+      </title>
       <circle
-        className="circle"
+        class="circle"
         cx="50"
         cy="50"
         fill="none"
         r="20"
         stroke="#177a00"
-        strokeDasharray="89, 200"
-        strokeDashoffset="0"
-        strokeLinecap="round"
-        strokeWidth="4"
+        stroke-dasharray="89, 200"
+        stroke-dashoffset="0"
+        stroke-linecap="round"
+        stroke-width="4"
       />
     </svg>
   </div>
   <div
-    className="overlay"
+    class="overlay"
     data-testid="overlay"
   />
   <div
-    className="opaque"
+    class="opaque"
   >
     <span>
       Overlay me with the spinner
