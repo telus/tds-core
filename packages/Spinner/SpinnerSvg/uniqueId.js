@@ -1,4 +1,4 @@
-// TODO: either use lodash or link to it
+// Taken from lodash: https://github.com/lodash/lodash/blob/master/uniqueId.js
 
 let idCounter = 0
 

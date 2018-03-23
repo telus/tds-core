@@ -6,9 +6,8 @@ import SpinnerSvg from './SpinnerSvg/SpinnerSvg'
 import positionStyles from '../../shared/styles/Position.modules.scss'
 import styles from './Spinner.modules.scss'
 
-// TODO: don't forget to bump the version here!
 /**
- * @version 1.0.0
+ * @version 2.0.0
  *
  * A waiting indicator.
  */
@@ -38,10 +37,12 @@ Spinner.propTypes = {
    */
   spinning: PropTypes.bool,
   /**
-   * A additional message.
+   * A additional displayed message.
    */
   tip: PropTypes.string,
-  // TODO: Document me and mark as a new prop
+  /**
+   * A label for assistive technology.
+   */
   a11yLabel: PropTypes.string,
   /**
    * Content to be overlaid while the spinner is active. Can be text, any HTML element,
@@ -53,7 +54,6 @@ Spinner.propTypes = {
 Spinner.defaultProps = {
   spinning: false,
   tip: undefined,
-  // TODO: Consider using aria-live assertive here too...
   a11yLabel: 'A spinner is active. Please wait while the page completes a task.',
   children: undefined,
 }
