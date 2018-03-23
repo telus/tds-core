@@ -2,7 +2,7 @@
 
 exports[`Heading renders 1`] = `
 <h2
-  class="h2Desktop secondary"
+  class="h2 secondary"
 >
   The heading
 </h2>

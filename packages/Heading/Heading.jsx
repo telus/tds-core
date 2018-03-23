@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Responsive from '@tds/core-responsive'
-
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
 
@@ -42,19 +40,9 @@ const Heading = ({ level, invert, children, ...rest }) => {
     const color = invert ? styles.inverted : styles.secondary
 
     return (
-      <Responsive minWidth="md" defaultMatches={false}>
-        {desktop =>
-          desktop ? (
-            <BaseHeading {...baseHeadingProps} color={color} size={styles[`${level}Desktop`]}>
-              {children}
-            </BaseHeading>
-          ) : (
-            <BaseHeading {...baseHeadingProps} color={color} size={styles[level]}>
-              {children}
-            </BaseHeading>
-          )
-        }
-      </Responsive>
+      <BaseHeading {...baseHeadingProps} color={color} size={styles[level]}>
+        {children}
+      </BaseHeading>
     )
   }
 

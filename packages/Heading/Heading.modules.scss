@@ -1,6 +1,7 @@
 @import '~@tds/core-colours/colours';
 @import '../../shared/scss/typography';
 @import '../../shared/scss/responsive';
+@import '../../packages/Responsive/scss/responsive.scss';
 
 .sup {
   composes: baseSupSubScripts from '../Text/Text.modules.scss';
@@ -10,63 +11,58 @@
   composes: wordBreak from '../../shared/styles/Typography.modules.scss';
   composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
 
-  @include helvetica-neue-light-45;
+  @include mq($until: md) {
+    @include helvetica-neue-light-45;
 
-  font-size: 1.75rem;
-  line-height: 1.29; // 36px
-  letter-spacing: -1.6px;
+    font-size: 1.75rem;
+    line-height: 1.29; // 36px
+    letter-spacing: -1.6px;
 
-  .sup {
-    font-size: 1.25rem;
-    top: -1em;
+    .sup {
+      font-size: 1.25rem;
+      top: -1em;
+    }
   }
-}
 
-.h1Desktop {
-  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
-  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
+  @include mq($from: md) {
+    @include helvetica-neue-thin-35;
 
-  @include helvetica-neue-thin-35;
+    font-size: 2.75rem;
+    line-height: 1.18; // 52px
+    letter-spacing: 0;
 
-  font-size: 2.75rem;
-  line-height: 1.18; // 52px
-  letter-spacing: 0;
-
-  .sup {
-    font-size: 1.25rem;
-    top: -1.3em;
+    .sup {
+      font-size: 1.25rem;
+      top: -1.3em;
+    }
   }
 }
 
 .h2 {
   composes: wordBreak from '../../shared/styles/Typography.modules.scss';
   composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
-
   @include helvetica-neue-light-45;
 
-  font-size: 1.5rem;
-  line-height: 1.33; // 30px
-  letter-spacing: -0.4px;
+  @include mq($until: md) {
+    font-size: 1.5rem;
+    line-height: 1.33; // 30px
+    letter-spacing: -0.4px;
 
-  .sup {
-    font-size: 1rem;
-    top: -0.8em;
+    .sup {
+      font-size: 1rem;
+      top: -0.8em;
+    }
   }
-}
 
-.h2Desktop {
-  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
-  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
+  @include mq($from: md) {
+    font-size: 1.75rem;
+    line-height: 1.29; // 36px
+    letter-spacing: -0.8px;
 
-  @include helvetica-neue-light-45;
-
-  font-size: 1.75rem;
-  line-height: 1.29; // 36px
-  letter-spacing: -0.8px;
-
-  .sup {
-    font-size: 1rem;
-    top: -0.7em;
+    .sup {
+      font-size: 1rem;
+      top: -0.7em;
+    }
   }
 }
 
