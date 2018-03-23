@@ -12,8 +12,8 @@ mkdir -p build/staging
 mkdir -p build/production
 
 # 2
-cp -R guide/_book/ build/staging
-cp -R guide/_book/ build/production
+cp -R guide/_book/* build/staging
+cp -R guide/_book/* build/production
 
 # 3
 cp -R styleguide/staging/ build/staging/components
