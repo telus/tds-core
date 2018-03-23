@@ -152,50 +152,36 @@ exports[`Accordion renders a closed accordion 1`] = `
                                   </Transition>
                                 </Translate>
                               </div>
-                              <Responsive
-                                maxWidth="md"
-                                query={Object {}}
+                              <Flexbox
+                                dangerouslyAddClassName="headerAlign"
+                                direction="row"
                               >
-                                <Media
-                                  defaultMatches={true}
-                                  query={
-                                    Object {
-                                      "maxWidth": 767,
-                                    }
-                                  }
+                                <div
+                                  className="row headerAlign"
                                 >
                                   <Flexbox
                                     dangerouslyAddClassName="headerAlign"
-                                    direction="row"
+                                    direction="column"
                                   >
                                     <div
-                                      className="row headerAlign"
+                                      className="column headerAlign"
                                     >
-                                      <Flexbox
-                                        dangerouslyAddClassName="headerAlign"
-                                        direction="column"
+                                      <Text
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
+                                        size="large"
                                       >
-                                        <div
-                                          className="column headerAlign"
+                                        <span
+                                          className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
                                         >
-                                          <Text
-                                            block={false}
-                                            bold={false}
-                                            invert={false}
-                                            size="large"
-                                          >
-                                            <span
-                                              className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
-                                            >
-                                              Panel title
-                                            </span>
-                                          </Text>
-                                        </div>
-                                      </Flexbox>
+                                          Panel title
+                                        </span>
+                                      </Text>
                                     </div>
                                   </Flexbox>
-                                </Media>
-                              </Responsive>
+                                </div>
+                              </Flexbox>
                             </div>
                           </Media>
                         </Responsive>
@@ -464,50 +450,36 @@ exports[`Accordion renders an open accordion 1`] = `
                                   </Transition>
                                 </Translate>
                               </div>
-                              <Responsive
-                                maxWidth="md"
-                                query={Object {}}
+                              <Flexbox
+                                dangerouslyAddClassName="headerAlign"
+                                direction="row"
                               >
-                                <Media
-                                  defaultMatches={true}
-                                  query={
-                                    Object {
-                                      "maxWidth": 767,
-                                    }
-                                  }
+                                <div
+                                  className="row headerAlign"
                                 >
                                   <Flexbox
                                     dangerouslyAddClassName="headerAlign"
-                                    direction="row"
+                                    direction="column"
                                   >
                                     <div
-                                      className="row headerAlign"
+                                      className="column headerAlign"
                                     >
-                                      <Flexbox
-                                        dangerouslyAddClassName="headerAlign"
-                                        direction="column"
+                                      <Text
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
+                                        size="large"
                                       >
-                                        <div
-                                          className="column headerAlign"
+                                        <span
+                                          className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
                                         >
-                                          <Text
-                                            block={false}
-                                            bold={false}
-                                            invert={false}
-                                            size="large"
-                                          >
-                                            <span
-                                              className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
-                                            >
-                                              Panel title
-                                            </span>
-                                          </Text>
-                                        </div>
-                                      </Flexbox>
+                                          Panel title
+                                        </span>
+                                      </Text>
                                     </div>
                                   </Flexbox>
-                                </Media>
-                              </Responsive>
+                                </div>
+                              </Flexbox>
                             </div>
                           </Media>
                         </Responsive>

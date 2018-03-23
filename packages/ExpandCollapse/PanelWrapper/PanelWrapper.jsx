@@ -7,7 +7,6 @@ import DecorativeIcon from '@tds/core-decorative-icon'
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import DimpleDivider from '@tds/core-dimple-divider'
-import Responsive from '@tds/core-responsive'
 
 import Clickable from '../../../shared/components/Clickable/Clickable'
 import Reveal from '../../../shared/components/Animation/Reveal'
@@ -84,25 +83,21 @@ class PanelWrapper extends React.Component {
 
   renderHeader = (header, subtext, tertiaryText) => {
     return (
-      <Responsive maxWidth="md">
-        {mobile => (
-          <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
-            <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlign}>
-              <Text size="large">{header}</Text>
+      <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
+        <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlign}>
+          <Text size="large">{header}</Text>
 
-              {subtext && <Text size="small">{subtext}</Text>}
-            </Flexbox>
+          {subtext && <Text size="small">{subtext}</Text>}
+        </Flexbox>
 
-            {tertiaryText && (
-              <span className={mobile ? styles.alignSelfFlexEnd : undefined}>
-                <Text data-testid="tertiarytext" size={mobile ? 'medium' : 'large'}>
-                  {tertiaryText}
-                </Text>
-              </span>
-            )}
-          </Flexbox>
+        {tertiaryText && (
+          <span className={styles.alignSelfFlexEnd}>
+            <Text data-testid="tertiarytext" size="large">
+              {tertiaryText}
+            </Text>
+          </span>
         )}
-      </Responsive>
+      </Flexbox>
     )
   }
 
