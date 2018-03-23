@@ -297,28 +297,6 @@ describe('ExpandCollapse', () => {
     })
   })
 
-  describe('responsiveness on small viewports', () => {
-    beforeEach(() => {
-      mockMatchMedia(767)
-    })
-
-    it('aligns the tertiary text with the subtext and drops the font size to medium', () => {
-      const { findPanelHeader } = doMount(
-        <ExpandCollapse>
-          {aPanel({ id: 'panel-1', tertiaryText: 'Some tertiary text' })}
-        </ExpandCollapse>
-      )
-
-      expect(findPanelHeader('panel-1')).toContainReact(
-        <span className="alignSelfFlexEnd">
-          <Text data-testid="tertiarytext" size="medium">
-            Some tertiary text
-          </Text>
-        </span>
-      )
-    })
-  })
-
   it('passes additional attributes to the element', () => {
     const expandCollapse = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
