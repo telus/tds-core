@@ -10,7 +10,6 @@ import uniqueId from './uniqueId'
 import styles from './SpinnerSvg.modules.scss'
 
 class SpinnerSvg extends React.Component {
-  // TODO: Check on SSR with this
   componentWillMount() {
     this.setState({
       titleId: uniqueId('spinner-title-'),
