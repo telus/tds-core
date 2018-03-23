@@ -1,5 +1,4 @@
-// TODO: re-evaluate these z indexes
-$zindex-modal-backdrop: 1400 !default;
+$zindex-modal-backdrop: 1400;
 
 .overlay {
   position: absolute;
@@ -10,6 +9,5 @@ $zindex-modal-backdrop: 1400 !default;
 }
 
 .opaque {
-  // TODO: reimplement opacity transition using an Animation component
   opacity: 0.1;
 }

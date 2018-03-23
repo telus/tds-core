@@ -1,6 +1,6 @@
-// TODO: general styles refactor
-// TODO: re-evaluate these z indexes
-$zindex-popover: 1600 !default;
+@import '~@tds/core-colours/colours';
+
+$zindex-popover: 1600;
 
 @keyframes spinner-rotate {
   100% {
@@ -26,34 +26,30 @@ $zindex-popover: 1600 !default;
 }
 
 .container {
-  width: 100px;
-  height: 100px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  margin: auto;
-  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .centered {
   position: absolute;
-  top: calc(50% - 50px);
-  left: 0;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: $zindex-popover;
 }
 
 .svg {
-  z-index: $zindex-popover;
-  animation-name: spinner-rotate;
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  height: 100%;
-  width: 100%;
-  max-width: 100px;
-  max-height: 100px;
+  animation: spinner-rotate 1.8s linear infinite;
 }
 
 .circle {
-  animation: spinner-dash 1.7s ease-in-out infinite 0s, spinner-color 6s ease-in-out infinite -0.75s;
+  stroke: $color-accessible-green;
+
+  animation: spinner-dash 1.7s ease-in-out infinite 0s;
+}
+
+.tip {
+  margin-top: -1.5rem;
 }
