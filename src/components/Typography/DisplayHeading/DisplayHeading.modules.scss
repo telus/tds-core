@@ -1,6 +1,7 @@
 @import '../../../scss/settings/colours';
 @import '../../../scss/settings/typography';
-@import '../../../scss/utility/responsive';
+@import '../../../scss/settings/responsive-grid';
+@import '../../../scss/utility/sass-mq';
 
 .sup {
   composes: baseSupSubScripts from '../Text/Text.modules.scss';
@@ -23,18 +24,16 @@
     font-size: 1.25rem;
     top: -1.2em;
   }
-}
 
-.headingDesktop {
-  composes: base;
+  @include mq($from: md) {
+    font-size: 4.5rem;
+    line-height: 1.11; // 80px
+    letter-spacing: 0.2px;
 
-  font-size: 4.5rem;
-  line-height: 1.11; // 80px
-  letter-spacing: 0.2px;
-
-  .sup {
-    font-size: 1.25rem;
-    top: -2.2em;
+    .sup {
+      font-size: 1.25rem;
+      top: -2.2em;
+    }
   }
 }
 

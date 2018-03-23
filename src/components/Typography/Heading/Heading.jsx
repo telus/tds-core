@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import safeRest from '../../../utils/safeRest'
 import joinClassNames from '../../../utils/joinClassNames'
 
-import Responsive from '../../Responsive/Responsive'
 import HeadingSup from './HeadingSup/HeadingSup'
 
 import styles from './Heading.modules.scss'
@@ -39,19 +38,9 @@ const Heading = ({ level, invert, children, ...rest }) => {
     const color = invert ? styles.inverted : styles.secondary
 
     return (
-      <Responsive minWidth="md" defaultMatches={false}>
-        {desktop =>
-          desktop ? (
-            <BaseHeading {...baseHeadingProps} color={color} size={styles[`${level}Desktop`]}>
-              {children}
-            </BaseHeading>
-          ) : (
-            <BaseHeading {...baseHeadingProps} color={color} size={styles[level]}>
-              {children}
-            </BaseHeading>
-          )
-        }
-      </Responsive>
+      <BaseHeading {...baseHeadingProps} color={color} size={styles[level]}>
+        {children}
+      </BaseHeading>
     )
   }
 
