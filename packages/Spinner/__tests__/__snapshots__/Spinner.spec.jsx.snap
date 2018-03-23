@@ -9,10 +9,10 @@ exports[`Spinner renders 1`] = `
     aria-labelledby="spinner-title-1"
     class="svg"
     data-testid="svg"
-    height="0"
+    height="100"
     role="img"
     viewBox="0 0 100 100"
-    width="0"
+    width="100"
   >
     <title
       id="spinner-title-1"
@@ -25,7 +25,6 @@ exports[`Spinner renders 1`] = `
       cy="50"
       fill="none"
       r="20"
-      stroke="#177a00"
       stroke-dasharray="89, 200"
       stroke-dashoffset="0"
       stroke-linecap="round"
@@ -47,10 +46,10 @@ exports[`Spinner renders with children 1`] = `
       aria-labelledby="spinner-title-2"
       class="svg"
       data-testid="svg"
-      height="0"
+      height="100"
       role="img"
       viewBox="0 0 100 100"
-      width="0"
+      width="100"
     >
       <title
         id="spinner-title-2"
@@ -63,7 +62,6 @@ exports[`Spinner renders with children 1`] = `
         cy="50"
         fill="none"
         r="20"
-        stroke="#177a00"
         stroke-dasharray="89, 200"
         stroke-dashoffset="0"
         stroke-linecap="round"

@@ -30,8 +30,8 @@ class SpinnerSvg extends React.Component {
           {...safeRest(rest)}
           className={styles.svg}
           viewBox="0 0 100 100"
-          width="0"
-          height="0"
+          width="100"
+          height="100"
           role="img"
           aria-labelledby={this.state.titleId}
           data-testid="svg"
@@ -39,7 +39,6 @@ class SpinnerSvg extends React.Component {
           <title id={this.state.titleId}>{a11yLabel}</title>
           <circle
             className={styles.circle}
-            stroke="#177a00"
             strokeWidth="4"
             fill="none"
             strokeLinecap="round"
@@ -50,7 +49,11 @@ class SpinnerSvg extends React.Component {
             r="20"
           />
         </svg>
-        {tip && <Text size="small">{tip}</Text>}
+        {tip && (
+          <div className={styles.tip}>
+            <Text size="small">{tip}</Text>
+          </div>
+        )}
       </div>
     )
   }

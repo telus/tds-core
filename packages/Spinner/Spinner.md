@@ -9,7 +9,7 @@
 Provide a `tip` to give more context about what is happening.
 
 ```
-<Spinner spinning tip='Loading' />
+<Spinner spinning tip="Loading" />
 ```
 
 ### Overlaying content
