@@ -39,6 +39,7 @@
 .h2 {
   composes: wordBreak from '../../Typography.modules.scss';
   composes: noSpacing from '../../Spacing.modules.scss';
+
   @include helvetica-neue-light-45;
 
   font-size: 1.5rem;
