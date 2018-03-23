@@ -2,7 +2,7 @@
 
 exports[`DisplayHeading renders 1`] = `
 <h1
-  class="headingDesktop default"
+  class="heading default"
 >
   The heading
 </h1>

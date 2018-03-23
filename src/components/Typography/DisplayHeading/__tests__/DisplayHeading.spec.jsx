@@ -3,8 +3,6 @@ import { mount, render } from 'enzyme'
 
 import DisplayHeading from '../DisplayHeading'
 
-import mockMatchMedia from '../../../../__mocks__/matchMedia'
-
 describe('DisplayHeading', () => {
   const doMount = (props = {}) => {
     const heading = mount(<DisplayHeading {...props}>Great Deals</DisplayHeading>)
@@ -30,18 +28,6 @@ describe('DisplayHeading', () => {
 
     displayHeading = doMount()
     expect(displayHeading).toHaveClassName('default')
-  })
-
-  it('renders differently above the medium breakpoint', () => {
-    mockMatchMedia(768)
-
-    let heading = doMount()
-    expect(heading).toHaveClassName('headingDesktop')
-
-    mockMatchMedia(767)
-
-    heading = doMount()
-    expect(heading).toHaveClassName('heading')
   })
 
   it('passes additional attributes to h1 element', () => {

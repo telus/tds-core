@@ -4,28 +4,20 @@ import PropTypes from 'prop-types'
 import safeRest from '../../../utils/safeRest'
 import joinClassNames from '../../../utils/joinClassNames'
 
-import Responsive from '../../Responsive/Responsive'
 import DisplayHeadingSup from './DisplayHeadingSup/DisplayHeadingSup'
 
 import styles from './DisplayHeading.modules.scss'
 
-const getClassName = (invert, desktop) =>
-  joinClassNames(
-    desktop ? styles.headingDesktop : styles.heading,
-    invert ? styles.inverted : styles.default
-  )
+const getClassName = invert =>
+  joinClassNames(styles.heading, invert ? styles.inverted : styles.default)
 
 /**
  * Large page titles. Renders an HTML `<h1>` element.
  */
 const DisplayHeading = ({ invert, children, ...rest }) => (
-  <Responsive minWidth="md" defaultMatches={false}>
-    {desktop => (
-      <h1 {...safeRest(rest)} className={getClassName(invert, desktop)}>
-        {children}
-      </h1>
-    )}
-  </Responsive>
+  <h1 {...safeRest(rest)} className={getClassName(invert)}>
+    {children}
+  </h1>
 )
 
 DisplayHeading.propTypes = {

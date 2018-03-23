@@ -1,8 +1,6 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 
-import mockMatchMedia from '../../../../__mocks__/matchMedia'
-
 import Heading from '../Heading'
 
 describe('Heading', () => {
@@ -59,20 +57,6 @@ describe('Heading', () => {
 
       heading = doMount({ level: 'h4' })
       expect(heading).toHaveClassName('default')
-    })
-  })
-
-  describe('large headings (h1 and h2)', () => {
-    it('renders differently above the medium breakpoint', () => {
-      mockMatchMedia(768)
-
-      let heading = doMount()
-      expect(heading).toHaveClassName('h1Desktop')
-
-      mockMatchMedia(767)
-
-      heading = doMount()
-      expect(heading).toHaveClassName('h1')
     })
   })
 

@@ -1,7 +1,7 @@
 @import '../../../scss/settings/colours';
 @import '../../../scss/settings/responsive-grid';
 @import '../../../scss/settings/typography';
-@import '../../../scss/utility/responsive';
+@import '../../../scss/utility/sass-mq';
 
 .sup {
   composes: baseSupSubScripts from '../Text/Text.modules.scss';
@@ -21,28 +21,24 @@
     font-size: 1.25rem;
     top: -1em;
   }
-}
 
-.h1Desktop {
-  composes: wordBreak from '../../Typography.modules.scss';
-  composes: noSpacing from '../../Spacing.modules.scss';
+  @include mq($from: md) {
+    @include helvetica-neue-thin-35;
 
-  @include helvetica-neue-thin-35;
+    font-size: 2.75rem;
+    line-height: 1.18; // 52px
+    letter-spacing: 0;
 
-  font-size: 2.75rem;
-  line-height: 1.18; // 52px
-  letter-spacing: 0;
-
-  .sup {
-    font-size: 1.25rem;
-    top: -1.3em;
+    .sup {
+      font-size: 1.25rem;
+      top: -1.3em;
+    }
   }
 }
 
 .h2 {
   composes: wordBreak from '../../Typography.modules.scss';
   composes: noSpacing from '../../Spacing.modules.scss';
-
   @include helvetica-neue-light-45;
 
   font-size: 1.5rem;
@@ -53,21 +49,16 @@
     font-size: 1rem;
     top: -0.8em;
   }
-}
 
-.h2Desktop {
-  composes: wordBreak from '../../Typography.modules.scss';
-  composes: noSpacing from '../../Spacing.modules.scss';
+  @include mq($from: md) {
+    font-size: 1.75rem;
+    line-height: 1.29; // 36px
+    letter-spacing: -0.8px;
 
-  @include helvetica-neue-light-45;
-
-  font-size: 1.75rem;
-  line-height: 1.29; // 36px
-  letter-spacing: -0.8px;
-
-  .sup {
-    font-size: 1rem;
-    top: -0.7em;
+    .sup {
+      font-size: 1rem;
+      top: -0.7em;
+    }
   }
 }
 
