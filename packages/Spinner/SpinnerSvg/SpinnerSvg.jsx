@@ -25,7 +25,6 @@ class SpinnerSvg extends React.Component {
         className={joinClassNames(styles.container, overlay && styles.centered)}
         data-testid="spinner"
       >
-        {/* TODO: hard coded colour. Can we use a class instead? */}
         <svg
           {...safeRest(rest)}
           className={styles.svg}
