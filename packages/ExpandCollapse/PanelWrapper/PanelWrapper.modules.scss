@@ -1,4 +1,5 @@
-@import '../../../src/scss/settings/colours';
+@import '../../../scss/settings/colours';
+@import '../../../scss/utility/sass-mq';
 
 .header {
   width: 100%;
@@ -16,5 +17,8 @@
 }
 
 .alignSelfFlexEnd {
-  align-self: flex-end;
+  @include mq($until: md) {
+    align-self: flex-end;
+    transform: scale(0.8); //TODO: This is a hack! Remove when Text component is responsive.
+  }
 }

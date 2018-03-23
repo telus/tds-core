@@ -155,50 +155,36 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                   </Transition>
                                 </Translate>
                               </div>
-                              <Responsive
-                                maxWidth="md"
-                                query={Object {}}
+                              <Flexbox
+                                dangerouslyAddClassName="headerAlign"
+                                direction="row"
                               >
-                                <Media
-                                  defaultMatches={true}
-                                  query={
-                                    Object {
-                                      "maxWidth": 767,
-                                    }
-                                  }
+                                <div
+                                  className="row headerAlign"
                                 >
                                   <Flexbox
                                     dangerouslyAddClassName="headerAlign"
-                                    direction="row"
+                                    direction="column"
                                   >
                                     <div
-                                      className="row headerAlign"
+                                      className="column headerAlign"
                                     >
-                                      <Flexbox
-                                        dangerouslyAddClassName="headerAlign"
-                                        direction="column"
+                                      <Text
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
+                                        size="large"
                                       >
-                                        <div
-                                          className="column headerAlign"
+                                        <span
+                                          className="large largeFont color"
                                         >
-                                          <Text
-                                            block={false}
-                                            bold={false}
-                                            invert={false}
-                                            size="large"
-                                          >
-                                            <span
-                                              className="large largeFont color"
-                                            >
-                                              Panel title
-                                            </span>
-                                          </Text>
-                                        </div>
-                                      </Flexbox>
+                                          Panel title
+                                        </span>
+                                      </Text>
                                     </div>
                                   </Flexbox>
-                                </Media>
-                              </Responsive>
+                                </div>
+                              </Flexbox>
                             </div>
                           </Media>
                         </Responsive>
@@ -479,50 +465,36 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                   </Transition>
                                 </Translate>
                               </div>
-                              <Responsive
-                                maxWidth="md"
-                                query={Object {}}
+                              <Flexbox
+                                dangerouslyAddClassName="headerAlign"
+                                direction="row"
                               >
-                                <Media
-                                  defaultMatches={true}
-                                  query={
-                                    Object {
-                                      "maxWidth": 767,
-                                    }
-                                  }
+                                <div
+                                  className="row headerAlign"
                                 >
                                   <Flexbox
                                     dangerouslyAddClassName="headerAlign"
-                                    direction="row"
+                                    direction="column"
                                   >
                                     <div
-                                      className="row headerAlign"
+                                      className="column headerAlign"
                                     >
-                                      <Flexbox
-                                        dangerouslyAddClassName="headerAlign"
-                                        direction="column"
+                                      <Text
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
+                                        size="large"
                                       >
-                                        <div
-                                          className="column headerAlign"
+                                        <span
+                                          className="large largeFont color"
                                         >
-                                          <Text
-                                            block={false}
-                                            bold={false}
-                                            invert={false}
-                                            size="large"
-                                          >
-                                            <span
-                                              className="large largeFont color"
-                                            >
-                                              Panel title
-                                            </span>
-                                          </Text>
-                                        </div>
-                                      </Flexbox>
+                                          Panel title
+                                        </span>
+                                      </Text>
                                     </div>
                                   </Flexbox>
-                                </Media>
-                              </Responsive>
+                                </div>
+                              </Flexbox>
                             </div>
                           </Media>
                         </Responsive>
