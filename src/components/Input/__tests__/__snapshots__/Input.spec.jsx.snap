@@ -2,7 +2,7 @@
 
 exports[`Input renders 1`] = `
 <div
-  class="betweenBottomMarginDesktop-2 stack"
+  class="betweenBottomMargin-2 stack"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -12,7 +12,7 @@ exports[`Input renders 1`] = `
       for="the-input"
     >
       <span
-        class="betweenRightMarginDesktop-2 inline alignCenter"
+        class="betweenRightMargin-2 inline alignCenter"
       >
         <span
           class="medium boldFont color"
@@ -42,7 +42,7 @@ exports[`Input renders 1`] = `
 
 exports[`Input renders with a feedback state and icon 1`] = `
 <div
-  class="betweenBottomMarginDesktop-2 stack"
+  class="betweenBottomMargin-2 stack"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -52,7 +52,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
       for="the-input"
     >
       <span
-        class="betweenRightMarginDesktop-2 inline alignCenter"
+        class="betweenRightMargin-2 inline alignCenter"
       >
         <span
           class="medium boldFont color"
