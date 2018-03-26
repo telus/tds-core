@@ -23,11 +23,7 @@ const Select = ({ options, placeholder, ...props }) => (
       <div className={styles.wrapper}>
         <select
           {...selectProps}
-          className={joinClassNames(
-            className,
-            styles.select,
-            !selectProps.disabled && styles.positionSelectOnTop
-          )}
+          className={joinClassNames(className, styles.select)}
           style={addRightPadding(showFeedbackIcon ? 2 : 1)}
         >
           {placeholder && (
