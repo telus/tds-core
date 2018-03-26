@@ -93,6 +93,9 @@ class PanelWrapper extends React.Component {
             <Text data-testid="tertiarytext" size="large">
               {tertiaryText}
             </Text>
+            <Text data-testid="tertiarytext" size="medium">
+              {tertiaryText}
+            </Text>
           </span>
         )}
       </Flexbox>
