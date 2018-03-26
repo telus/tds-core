@@ -1,39 +1,33 @@
 #!/usr/bin/env node
 
-/* eslint-disable no-console */
+const { spawnSync } = require('child_process')
 
-const { exec, spawnSync } = require('child_process')
+const getUpdatedPackageNames = require('./utils/getUpdatedPackageNames')
+const arrayToGlob = require('./utils/arrayToGlob')
 
-exec('./node_modules/.bin/lerna updated --json', (error, stdout) => {
-  if (stdout === '') {
-    console.log('No components have been changed, nothing to do. Exiting.')
-  } else {
-    const updatedPackages = JSON.parse(stdout)
+getUpdatedPackageNames(packageNames => {
+  const scopeGlob = arrayToGlob(packageNames)
 
-    const packageNames = updatedPackages.map(packageObject => packageObject.name)
-    const scopeGlob = packageNames.length === 1 ? packageNames[0] : `{${packageNames.join(',')}}`
-
-    spawnSync(
-      './node_modules/.bin/lerna',
-      [
-        'exec',
-        '--scope',
-        scopeGlob,
-        '--ignore',
-        '@tds/shared-*',
-        '--',
-        '$LERNA_ROOT_PATH/scripts/build.sh',
-      ],
-      {
-        stdio: 'inherit',
-      }
-    )
-    spawnSync(
-      './node_modules/.bin/lerna',
-      ['run', '--scope', scopeGlob, '--ignore', '@tds/shared-*', 'build'],
-      {
-        stdio: 'inherit',
-      }
-    )
-  }
+  spawnSync(
+    './node_modules/.bin/lerna',
+    [
+      'exec',
+      '--scope',
+      scopeGlob,
+      '--ignore',
+      '@tds/shared-*',
+      '--',
+      '$LERNA_ROOT_PATH/scripts/build.sh',
+    ],
+    {
+      stdio: 'inherit',
+    }
+  )
+  spawnSync(
+    './node_modules/.bin/lerna',
+    ['run', '--scope', scopeGlob, '--ignore', '@tds/shared-*', 'build'],
+    {
+      stdio: 'inherit',
+    }
+  )
 })
