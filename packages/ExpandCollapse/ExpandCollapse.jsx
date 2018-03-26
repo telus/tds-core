@@ -10,7 +10,7 @@ import Panels from './Panels'
 import Panel from './Panel/Panel'
 
 /**
- * @version 1.0.0
+ * @version 1.0.1
  *
  * A connected series of expandable content areas.
  */
