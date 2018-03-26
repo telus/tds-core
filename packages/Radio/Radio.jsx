@@ -6,7 +6,7 @@ import Choice from '../../shared/components/Choice/Choice'
 import styles from './Radio.modules.scss'
 
 /**
- * @version 1.0.0
+ * @version 1.0.2
  */
 const Radio = props => (
   <Choice {...props} type="radio" inputTypeStyles={styles}>
