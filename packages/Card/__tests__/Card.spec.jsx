@@ -14,36 +14,16 @@ describe('<Card />', () => {
 
   it('can be presented as one of the allowed variants', () => {
     let card = doShallow()
-    expect(
-      card
-        .dive()
-        .dive()
-        .dive()
-    ).toHaveClassName('white')
+    expect(card.dive()).toHaveClassName('white')
 
     card = doShallow({ variant: 'white' })
-    expect(
-      card
-        .dive()
-        .dive()
-        .dive()
-    ).toHaveClassName('white')
+    expect(card.dive()).toHaveClassName('white')
 
     card = doShallow({ variant: 'lavender' })
-    expect(
-      card
-        .dive()
-        .dive()
-        .dive()
-    ).toHaveClassName('lavender')
+    expect(card.dive()).toHaveClassName('lavender')
 
     card = doShallow({ variant: 'grey' })
-    expect(
-      card
-        .dive()
-        .dive()
-        .dive()
-    ).toHaveClassName('grey')
+    expect(card.dive()).toHaveClassName('grey')
   })
 
   it('passes additional attributes to the input element', () => {

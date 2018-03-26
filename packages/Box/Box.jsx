@@ -14,7 +14,7 @@ const getClassName = (spacing, location, scale) => {
   return styles[`${location}${capitalize(spacing)}-${scale}`]
 }
 
-const getBetweenClasses = (scale, inline, desktop) => {
+const getBetweenClasses = (scale, inline) => {
   if (!scale) {
     return undefined
   }
