@@ -2,11 +2,9 @@
 const path = require('path')
 const config = require('../e2e/config')
 
-// console.log('CONFIG', config)
 const GLOBALS_PATH = path.resolve('e2e/globals.js')
 const REPORT_PATH = path.resolve('e2e/output/reports/')
 const SPEC_PATH = path.resolve('e2e/tests/')
-const PAGE_OBJECTS_PATH = path.resolve('e2e/page-objects')
 const CUSTOM_COMMANDS = [
   path.resolve('e2e/commands'),
   path.resolve('node_modules/nightwatch-accessibility/commands'),
@@ -22,7 +20,6 @@ const visualTesting = process.env.visualTesting || true
 module.exports = {
   src_folders: SPEC_PATH,
   globals_path: GLOBALS_PATH,
-  page_objects_path: PAGE_OBJECTS_PATH,
   output_folder: REPORT_PATH,
   custom_commands_path: CUSTOM_COMMANDS,
   custom_assertions_path: CUSTOM_ASSERTIONS,
