@@ -16,12 +16,6 @@
   &::-ms-expand {
     display: none;
   }
-
-  background-color: transparent;
-}
-
-.positionSelectOnTop {
-  composes: relative from '../Position.modules.scss';
 }
 
 .iconsPosition {

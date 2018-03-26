@@ -63,12 +63,6 @@ describe('Select', () => {
     )
   })
 
-  it('positions the select on top of the icons so that it can be clicked', () => {
-    const { findSelectElement } = doMount()
-
-    expect(findSelectElement()).toHaveClassName('positionSelectOnTop')
-  })
-
   it('positions the down caret so that the text does not overlap it', () => {
     const { findSelectElement } = doMount()
 
