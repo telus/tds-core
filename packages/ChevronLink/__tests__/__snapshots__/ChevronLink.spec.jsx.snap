@@ -6,7 +6,7 @@ exports[`ChevronLink renders 1`] = `
   href="test.com"
 >
   <div
-    class="TDS_Box-modules__betweenRightMarginDesktop-2___2mNnI TDS_Box-modules__inline___jTHcz"
+    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
   >
     <span>
       Go home
