@@ -26,7 +26,7 @@ BaseHeading.propTypes = {
 }
 
 /**
- * @version 1.0.0
+ * @version 1.0.1
  *
  * Page headings. Renders an HTML `<h1-h4>` element.
  */
