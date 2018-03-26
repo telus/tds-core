@@ -22,14 +22,11 @@
 
 .positionSelectOnTop {
   composes: relative from '../Position.modules.scss';
-
-  z-index: 2;
 }
 
 .iconsPosition {
   composes: absolute centerVertically from '../Position.modules.scss';
   composes: iconRight from '../../../shared/components/FormField/FormField.modules.scss';
 
-  z-index: 3;
   pointer-events: none;
 }
