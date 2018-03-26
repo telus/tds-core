@@ -15,7 +15,7 @@ Provide a `tip` to give more context about what is happening.
 ### Overlaying content
 
 The spinner can be overlaid on a section of content, which will prevent interactions with the content while active.
-Use this feature judiciously, as blocking interaction is often not a desirable user experience.
+Please note, blocking interaction is often not a desirable user experience.
 
 Avoid overlaying the entire window with the `Spinner`.
 
