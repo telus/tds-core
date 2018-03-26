@@ -19,6 +19,19 @@
 .alignSelfFlexEnd {
   @include mq($until: md) {
     align-self: flex-end;
-    transform: scale(0.8); //TODO: This is a hack! Remove when Text component is responsive.
+    span:nth-child(1) {
+      display: none;
+    }
+    span:nth-child(2) {
+      display: initial;
+    }
+  }
+  @include mq($from: md) {
+    span:nth-child(1) {
+      display: initial;
+    }
+    span:nth-child(2) {
+      display: none;
+    }
   }
 }
