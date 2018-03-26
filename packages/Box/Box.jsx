@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Responsive from '../../src/components/Responsive/Responsive'
 
 import safeRest from '../../src/utils/safeRest'
 import joinClassNames from '../../src/utils/joinClassNames'
@@ -8,23 +7,21 @@ import capitalize from '../../src/utils/capitalize'
 
 import styles from './Box.modules.scss'
 
-const viewportSuffix = desktop => (desktop ? 'Desktop' : '')
-
-const getClassName = (spacing, location, scale, desktop) => {
+const getClassName = (spacing, location, scale) => {
   if (!scale) {
     return undefined
   }
-  return styles[`${location}${capitalize(spacing)}${viewportSuffix(desktop)}-${scale}`]
+  return styles[`${location}${capitalize(spacing)}-${scale}`]
 }
 
-const getBetweenClasses = (scale, inline, desktop) => {
+const getBetweenClasses = (scale, inline) => {
   if (!scale) {
     return undefined
   }
 
   const direction = inline ? 'Right' : 'Bottom'
   return joinClassNames(
-    styles[`between${direction}Margin${viewportSuffix(desktop)}-${scale}`],
+    styles[`between${direction}Margin-${scale}`],
     inline ? styles.inline : styles.stack
   )
 }
@@ -47,21 +44,15 @@ const Box = ({
   const xSize = inset || horizontal
   const ySize = inset || vertical
 
-  return (
-    <Responsive minWidth="md" defaultMatches={false}>
-      {desktop => {
-        const classes = joinClassNames(
-          getClassName('padding', 'horizontal', xSize, desktop),
-          getClassName('padding', 'vertical', ySize, desktop),
-          getClassName('margin', 'bottom', below, desktop),
-          getBetweenClasses(between, inline, desktop),
-          dangerouslyAddClassName
-        )
-
-        return React.createElement(tag, { ...safeRest(rest), className: classes }, children)
-      }}
-    </Responsive>
+  const classes = joinClassNames(
+    getClassName('padding', 'horizontal', xSize),
+    getClassName('padding', 'vertical', ySize),
+    getClassName('margin', 'bottom', below),
+    getBetweenClasses(between, inline),
+    dangerouslyAddClassName
   )
+
+  return React.createElement(tag, { ...safeRest(rest), className: classes }, children)
 }
 
 Box.propTypes = {

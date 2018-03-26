@@ -2,13 +2,13 @@
 
 exports[`Radio renders 1`] = `
 <div
-  class="betweenBottomMarginDesktop-2 stack"
+  class="betweenBottomMargin-2 stack"
 >
   <label
     for="the-group_the-value"
   >
     <span
-      class="betweenRightMarginDesktop-3 inline alignFlexStart"
+      class="betweenRightMargin-3 inline alignFlexStart"
     >
       <span
         class="fakeRadio unchecked"

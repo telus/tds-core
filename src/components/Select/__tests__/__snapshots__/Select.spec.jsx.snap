@@ -2,7 +2,7 @@
 
 exports[`Select renders 1`] = `
 <div
-  class="betweenBottomMarginDesktop-2 stack"
+  class="betweenBottomMargin-2 stack"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -11,7 +11,7 @@ exports[`Select renders 1`] = `
       for="the-select"
     >
       <span
-        class="betweenRightMarginDesktop-2 inline alignCenter"
+        class="betweenRightMargin-2 inline alignCenter"
       >
         <span
           class="medium boldFont color"
@@ -42,7 +42,7 @@ exports[`Select renders 1`] = `
       </option>
     </select>
     <div
-      class="betweenRightMarginDesktop-3 inline iconsPosition"
+      class="betweenRightMargin-3 inline iconsPosition"
     >
       <div
         class="fixLineHeight"
@@ -59,7 +59,7 @@ exports[`Select renders 1`] = `
 
 exports[`Select renders with a feedback state and icon 1`] = `
 <div
-  class="betweenBottomMarginDesktop-2 stack"
+  class="betweenBottomMargin-2 stack"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -68,7 +68,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
       for="the-select"
     >
       <span
-        class="betweenRightMarginDesktop-2 inline alignCenter"
+        class="betweenRightMargin-2 inline alignCenter"
       >
         <span
           class="medium boldFont color"
@@ -99,7 +99,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
       </option>
     </select>
     <div
-      class="betweenRightMarginDesktop-3 inline iconsPosition"
+      class="betweenRightMargin-3 inline iconsPosition"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"

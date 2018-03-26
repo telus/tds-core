@@ -57,141 +57,111 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                 tag="div"
                 vertical={3}
               >
-                <Responsive
-                  defaultMatches={false}
-                  minWidth="md"
-                  query={Object {}}
+                <div
+                  className="verticalPadding-3"
                 >
-                  <Media
-                    defaultMatches={false}
-                    query={
-                      Object {
-                        "minWidth": 768,
-                      }
-                    }
+                  <Box
+                    between={3}
+                    inline={true}
+                    tag="div"
                   >
                     <div
-                      className="verticalPaddingDesktop-3"
+                      className="betweenRightMargin-3 inline"
                     >
-                      <Box
-                        between={3}
-                        inline={true}
-                        tag="div"
-                      >
-                        <Responsive
-                          defaultMatches={false}
-                          minWidth="md"
-                          query={Object {}}
+                      <div>
+                        <Translate
+                          direction="y"
+                          distance="0.25rem"
+                          in={false}
+                          timeout={300}
                         >
-                          <Media
-                            defaultMatches={false}
-                            query={
-                              Object {
-                                "minWidth": 768,
-                              }
-                            }
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
                           >
                             <div
-                              className="betweenRightMarginDesktop-3 inline"
+                              style={
+                                Object {
+                                  "transition": "transform 300ms",
+                                }
+                              }
                             >
-                              <div>
-                                <Translate
-                                  direction="y"
-                                  distance="0.25rem"
-                                  in={false}
-                                  timeout={300}
-                                >
-                                  <Transition
-                                    appear={false}
-                                    enter={true}
-                                    exit={true}
-                                    in={false}
-                                    mountOnEnter={false}
-                                    onEnter={[Function]}
-                                    onEntered={[Function]}
-                                    onEntering={[Function]}
-                                    onExit={[Function]}
-                                    onExited={[Function]}
-                                    onExiting={[Function]}
-                                    timeout={300}
-                                    unmountOnExit={false}
-                                  >
-                                    <div
-                                      style={
-                                        Object {
-                                          "transition": "transform 300ms",
-                                        }
-                                      }
-                                    >
-                                      <Text
-                                        block={false}
-                                        bold={false}
-                                        invert={false}
-                                        size="large"
-                                      >
-                                        <span
-                                          className="large largeFont color"
-                                        >
-                                          <DecorativeIcon
-                                            size={16}
-                                            symbol="caretDown"
-                                            variant="primary"
-                                          >
-                                            <Icon
-                                              aria-hidden="true"
-                                              size={16}
-                                              symbol="caretDown"
-                                              variant="primary"
-                                            >
-                                              <i
-                                                aria-hidden="true"
-                                                className="iconCaretDown primary size16"
-                                              />
-                                            </Icon>
-                                          </DecorativeIcon>
-                                        </span>
-                                      </Text>
-                                    </div>
-                                  </Transition>
-                                </Translate>
-                              </div>
-                              <Flexbox
-                                dangerouslyAddClassName="headerAlign"
-                                direction="row"
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
                               >
-                                <div
-                                  className="row headerAlign"
+                                <span
+                                  className="large largeFont color"
                                 >
-                                  <Flexbox
-                                    dangerouslyAddClassName="headerAlign"
-                                    direction="column"
+                                  <DecorativeIcon
+                                    size={16}
+                                    symbol="caretDown"
+                                    variant="primary"
                                   >
-                                    <div
-                                      className="column headerAlign"
+                                    <Icon
+                                      aria-hidden="true"
+                                      size={16}
+                                      symbol="caretDown"
+                                      variant="primary"
                                     >
-                                      <Text
-                                        block={false}
-                                        bold={false}
-                                        invert={false}
-                                        size="large"
-                                      >
-                                        <span
-                                          className="large largeFont color"
-                                        >
-                                          Panel title
-                                        </span>
-                                      </Text>
-                                    </div>
-                                  </Flexbox>
-                                </div>
-                              </Flexbox>
+                                      <i
+                                        aria-hidden="true"
+                                        className="iconCaretDown primary size16"
+                                      />
+                                    </Icon>
+                                  </DecorativeIcon>
+                                </span>
+                              </Text>
                             </div>
-                          </Media>
-                        </Responsive>
-                      </Box>
+                          </Transition>
+                        </Translate>
+                      </div>
+                      <Flexbox
+                        dangerouslyAddClassName="headerAlign"
+                        direction="row"
+                      >
+                        <div
+                          className="row headerAlign"
+                        >
+                          <Flexbox
+                            dangerouslyAddClassName="headerAlign"
+                            direction="column"
+                          >
+                            <div
+                              className="column headerAlign"
+                            >
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
+                              >
+                                <span
+                                  className="large largeFont color"
+                                >
+                                  Panel title
+                                </span>
+                              </Text>
+                            </div>
+                          </Flexbox>
+                        </div>
+                      </Flexbox>
                     </div>
-                  </Media>
-                </Responsive>
+                  </Box>
+                </div>
               </Box>
             </button>
           </Clickable>
@@ -238,46 +208,31 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                     inset={4}
                     tag="div"
                   >
-                    <Responsive
-                      defaultMatches={false}
-                      minWidth="md"
-                      query={Object {}}
+                    <div
+                      className="horizontalPadding-4 verticalPadding-4"
                     >
-                      <Media
-                        defaultMatches={false}
-                        query={
-                          Object {
-                            "minWidth": 768,
-                          }
-                        }
+                      <Text
+                        block={true}
+                        bold={false}
+                        invert={false}
+                        size="base"
                       >
                         <div
-                          className="horizontalPaddingDesktop-4 verticalPaddingDesktop-4"
+                          className="base baseFont color"
                         >
-                          <Text
-                            block={true}
-                            bold={false}
-                            invert={false}
-                            size="base"
+                          <Panel
+                            disabled={false}
+                            header="Panel title"
+                            id="panel-1"
+                            key=".0"
                           >
-                            <div
-                              className="base baseFont color"
-                            >
-                              <Panel
-                                disabled={false}
-                                header="Panel title"
-                                id="panel-1"
-                                key=".0"
-                              >
-                                <div>
-                                  Panel content
-                                </div>
-                              </Panel>
+                            <div>
+                              Panel content
                             </div>
-                          </Text>
+                          </Panel>
                         </div>
-                      </Media>
-                    </Responsive>
+                      </Text>
+                    </div>
                   </Box>
                 </div>
               </div>
@@ -367,141 +322,111 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                 tag="div"
                 vertical={3}
               >
-                <Responsive
-                  defaultMatches={false}
-                  minWidth="md"
-                  query={Object {}}
+                <div
+                  className="verticalPadding-3"
                 >
-                  <Media
-                    defaultMatches={false}
-                    query={
-                      Object {
-                        "minWidth": 768,
-                      }
-                    }
+                  <Box
+                    between={3}
+                    inline={true}
+                    tag="div"
                   >
                     <div
-                      className="verticalPaddingDesktop-3"
+                      className="betweenRightMargin-3 inline"
                     >
-                      <Box
-                        between={3}
-                        inline={true}
-                        tag="div"
-                      >
-                        <Responsive
-                          defaultMatches={false}
-                          minWidth="md"
-                          query={Object {}}
+                      <div>
+                        <Translate
+                          direction="y"
+                          distance="-0.25rem"
+                          in={false}
+                          timeout={300}
                         >
-                          <Media
-                            defaultMatches={false}
-                            query={
-                              Object {
-                                "minWidth": 768,
-                              }
-                            }
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
                           >
                             <div
-                              className="betweenRightMarginDesktop-3 inline"
+                              style={
+                                Object {
+                                  "transition": "transform 300ms",
+                                }
+                              }
                             >
-                              <div>
-                                <Translate
-                                  direction="y"
-                                  distance="-0.25rem"
-                                  in={false}
-                                  timeout={300}
-                                >
-                                  <Transition
-                                    appear={false}
-                                    enter={true}
-                                    exit={true}
-                                    in={false}
-                                    mountOnEnter={false}
-                                    onEnter={[Function]}
-                                    onEntered={[Function]}
-                                    onEntering={[Function]}
-                                    onExit={[Function]}
-                                    onExited={[Function]}
-                                    onExiting={[Function]}
-                                    timeout={300}
-                                    unmountOnExit={false}
-                                  >
-                                    <div
-                                      style={
-                                        Object {
-                                          "transition": "transform 300ms",
-                                        }
-                                      }
-                                    >
-                                      <Text
-                                        block={false}
-                                        bold={false}
-                                        invert={false}
-                                        size="large"
-                                      >
-                                        <span
-                                          className="large largeFont color"
-                                        >
-                                          <DecorativeIcon
-                                            size={16}
-                                            symbol="caretUp"
-                                            variant="primary"
-                                          >
-                                            <Icon
-                                              aria-hidden="true"
-                                              size={16}
-                                              symbol="caretUp"
-                                              variant="primary"
-                                            >
-                                              <i
-                                                aria-hidden="true"
-                                                className="iconCaretUp primary size16"
-                                              />
-                                            </Icon>
-                                          </DecorativeIcon>
-                                        </span>
-                                      </Text>
-                                    </div>
-                                  </Transition>
-                                </Translate>
-                              </div>
-                              <Flexbox
-                                dangerouslyAddClassName="headerAlign"
-                                direction="row"
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
                               >
-                                <div
-                                  className="row headerAlign"
+                                <span
+                                  className="large largeFont color"
                                 >
-                                  <Flexbox
-                                    dangerouslyAddClassName="headerAlign"
-                                    direction="column"
+                                  <DecorativeIcon
+                                    size={16}
+                                    symbol="caretUp"
+                                    variant="primary"
                                   >
-                                    <div
-                                      className="column headerAlign"
+                                    <Icon
+                                      aria-hidden="true"
+                                      size={16}
+                                      symbol="caretUp"
+                                      variant="primary"
                                     >
-                                      <Text
-                                        block={false}
-                                        bold={false}
-                                        invert={false}
-                                        size="large"
-                                      >
-                                        <span
-                                          className="large largeFont color"
-                                        >
-                                          Panel title
-                                        </span>
-                                      </Text>
-                                    </div>
-                                  </Flexbox>
-                                </div>
-                              </Flexbox>
+                                      <i
+                                        aria-hidden="true"
+                                        className="iconCaretUp primary size16"
+                                      />
+                                    </Icon>
+                                  </DecorativeIcon>
+                                </span>
+                              </Text>
                             </div>
-                          </Media>
-                        </Responsive>
-                      </Box>
+                          </Transition>
+                        </Translate>
+                      </div>
+                      <Flexbox
+                        dangerouslyAddClassName="headerAlign"
+                        direction="row"
+                      >
+                        <div
+                          className="row headerAlign"
+                        >
+                          <Flexbox
+                            dangerouslyAddClassName="headerAlign"
+                            direction="column"
+                          >
+                            <div
+                              className="column headerAlign"
+                            >
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
+                              >
+                                <span
+                                  className="large largeFont color"
+                                >
+                                  Panel title
+                                </span>
+                              </Text>
+                            </div>
+                          </Flexbox>
+                        </div>
+                      </Flexbox>
                     </div>
-                  </Media>
-                </Responsive>
+                  </Box>
+                </div>
               </Box>
             </button>
           </Clickable>
@@ -548,46 +473,31 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                     inset={4}
                     tag="div"
                   >
-                    <Responsive
-                      defaultMatches={false}
-                      minWidth="md"
-                      query={Object {}}
+                    <div
+                      className="horizontalPadding-4 verticalPadding-4"
                     >
-                      <Media
-                        defaultMatches={false}
-                        query={
-                          Object {
-                            "minWidth": 768,
-                          }
-                        }
+                      <Text
+                        block={true}
+                        bold={false}
+                        invert={false}
+                        size="base"
                       >
                         <div
-                          className="horizontalPaddingDesktop-4 verticalPaddingDesktop-4"
+                          className="base baseFont color"
                         >
-                          <Text
-                            block={true}
-                            bold={false}
-                            invert={false}
-                            size="base"
+                          <Panel
+                            disabled={false}
+                            header="Panel title"
+                            id="panel-1"
+                            key=".0"
                           >
-                            <div
-                              className="base baseFont color"
-                            >
-                              <Panel
-                                disabled={false}
-                                header="Panel title"
-                                id="panel-1"
-                                key=".0"
-                              >
-                                <div>
-                                  Panel content
-                                </div>
-                              </Panel>
+                            <div>
+                              Panel content
                             </div>
-                          </Text>
+                          </Panel>
                         </div>
-                      </Media>
-                    </Responsive>
+                      </Text>
+                    </div>
                   </Box>
                 </div>
               </div>

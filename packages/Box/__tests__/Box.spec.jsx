@@ -3,8 +3,6 @@ import { mount } from 'enzyme'
 
 import Box from '../Box'
 
-import mockMatchMedia from '../../../src/__mocks__/matchMedia'
-
 describe('Box', () => {
   const defaultProps = { between: 3 }
   const doMount = (props = {}) => {
@@ -16,10 +14,6 @@ describe('Box', () => {
 
     return box.find(box.props().tag)
   }
-
-  beforeEach(() => {
-    mockMatchMedia(575)
-  })
 
   it('renders', () => {
     const box = doMount()
@@ -77,32 +71,6 @@ describe('Box', () => {
       const box = doMount({ between: 2, inline: true })
 
       expect(box).toHaveClassName('betweenRightMargin-2')
-    })
-  })
-
-  describe('responsive spacing above medium viewport', () => {
-    beforeEach(() => {
-      mockMatchMedia(768)
-    })
-
-    it('applies greater insets', () => {
-      let box = doMount({ inset: 2 })
-      expect(box).toHaveClassName('verticalPaddingDesktop-2 horizontalPaddingDesktop-2')
-
-      box = doMount({ vertical: 3, horizontal: 4 })
-      expect(box).toHaveClassName('verticalPaddingDesktop-3 horizontalPaddingDesktop-4')
-    })
-
-    it('applies greater bottom margin', () => {
-      const box = doMount({ below: 5 })
-
-      expect(box).toHaveClassName('bottomMarginDesktop-5')
-    })
-
-    it('applies greater separation between children', () => {
-      const box = doMount({ between: 6 })
-
-      expect(box).toHaveClassName('betweenBottomMarginDesktop-6')
     })
   })
 

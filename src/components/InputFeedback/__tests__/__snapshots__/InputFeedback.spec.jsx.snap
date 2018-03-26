@@ -2,7 +2,7 @@
 
 exports[`InputFeedback renders 1`] = `
 <div
-  class="horizontalPaddingDesktop-3 verticalPaddingDesktop-3 default"
+  class="horizontalPadding-3 verticalPadding-3 default"
 >
   Some inputFeedback text.
 </div>

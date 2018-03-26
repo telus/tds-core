@@ -1,3 +1,5 @@
+@import '../../scss/utility/sass-mq';
+
 $spacing-base: 1rem; // 16px
 
 $mobile: (
@@ -32,34 +34,52 @@ $desktop: (
   flex-direction: column;
 }
 
-@mixin spacingClasses ($level, $value, $viewportSize) {
-  .verticalPadding#{$viewportSize}-#{$level} {
-    padding-top: $value;
-    padding-bottom: $value;
+@mixin spacingClasses ($level, $mobileValue, $desktopValue) {
+  .verticalPadding-#{$level} {
+    padding-top: $mobileValue;
+    padding-bottom: $mobileValue;
+
+    @include mq($from: md) {
+      padding-top: $desktopValue;
+      padding-bottom: $desktopValue;
+    }
   }
 
-  .horizontalPadding#{$viewportSize}-#{$level} {
-    padding-left: $value;
-    padding-right: $value;
+  .horizontalPadding-#{$level} {
+    padding-left: $mobileValue;
+    padding-right: $mobileValue;
+
+    @include mq($from: md) {
+      padding-left: $desktopValue;
+      padding-right: $desktopValue;
+    }
   }
 
-  .bottomMargin#{$viewportSize}-#{$level} {
-    margin-bottom: $value;
+  .bottomMargin-#{$level} {
+    margin-bottom: $mobileValue;
+
+    @include mq($from: md) {
+      margin-bottom: $desktopValue;
+    }
   }
 
-  .betweenBottomMargin#{$viewportSize}-#{$level} > *:not(:last-child) {
-    margin-bottom: $value;
+  .betweenBottomMargin-#{$level} > *:not(:last-child) {
+    margin-bottom: $mobileValue;
+
+    @include mq($from: md) {
+      margin-bottom: $desktopValue;
+    }
   }
 
-  .betweenRightMargin#{$viewportSize}-#{$level} > *:not(:last-child) {
-    margin-right: $value;
+  .betweenRightMargin-#{$level} > *:not(:last-child) {
+    margin-right: $mobileValue;
+
+    @include mq($from: md) {
+      margin-right: $desktopValue;
+    }
   }
 }
 
 @each $level, $value in $mobile {
-  @include spacingClasses($level, $value, '');
-}
-
-@each $level, $value in $desktop {
-  @include spacingClasses($level, $value, 'Desktop');
+  @include spacingClasses($level, $value, nth($desktop, $level));
 }

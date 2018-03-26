@@ -2,7 +2,7 @@
 
 exports[`<Notification /> renders 1`] = `
 <div
-  class="verticalPaddingDesktop-3 instructional"
+  class="verticalPadding-3 instructional"
 >
   <div
     class="flexGrid limitWidth container-fluid"
@@ -11,7 +11,7 @@ exports[`<Notification /> renders 1`] = `
       class="col-xs col-xs-offset padding"
     >
       <div
-        class="betweenRightMarginDesktop-3 inline"
+        class="betweenRightMargin-3 inline"
       >
         <p
           class="wordBreak noSpacing color medium mediumFont leftAlign"
