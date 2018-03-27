@@ -2,7 +2,7 @@
 
 exports[`Button renders 1`] = `
 <button
-  class="buttonSizing primary"
+  class="sizing primary"
   type="button"
 >
   <div
