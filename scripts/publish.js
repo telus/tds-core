@@ -2,11 +2,20 @@
 
 /* eslint-disable no-console */
 
+/*
+Usage: yarn lerna:publish <component 1> <component 2> ... <other lerna options>
+
+All options will be forwarded directly onto lerna commands.
+
+Example: yarn lerna:publish @tds/core-select -- --since @tds/core-select@1.0.2
+*/
+
 const { spawnSync } = require('child_process')
 const readline = require('readline')
 
 const getUpdatedPackageNames = require('./utils/getUpdatedPackageNames')
 const arrayToGlob = require('./utils/arrayToGlob')
+const { lernaOptions } = require('./utils/parseArgs')
 
 const read = readline.createInterface({
   input: process.stdin,
@@ -22,7 +31,9 @@ getUpdatedPackageNames(packageNames => {
       if (answer === 'Y' || answer === 'y') {
         spawnSync(
           './node_modules/.bin/lerna',
-          ['publish', '--conventional-commits', '--scope', arrayToGlob(packageNames)],
+          ['publish', '--conventional-commits', '--scope', arrayToGlob(packageNames)].concat(
+            lernaOptions
+          ),
           {
             stdio: 'inherit',
           }

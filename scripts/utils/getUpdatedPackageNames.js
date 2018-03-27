@@ -1,16 +1,15 @@
 /* eslint-disable no-console */
 
 const { exec } = require('child_process')
+const { userPackageNames, lernaOptions } = require('./parseArgs')
 
 const getUpdatedPackageNames = callback => {
-  const userPackages = process.argv.slice(2)
-
-  if (userPackages.length > 0) {
-    callback(userPackages)
+  if (userPackageNames.length > 0) {
+    callback(userPackageNames)
     return
   }
 
-  exec('./node_modules/.bin/lerna updated --json', (error, stdout) => {
+  exec(`./node_modules/.bin/lerna updated --json ${lernaOptions.join(' ')}`, (error, stdout) => {
     if (stdout === '') {
       console.log('No components have been changed, nothing to do. Exiting.')
     } else {
