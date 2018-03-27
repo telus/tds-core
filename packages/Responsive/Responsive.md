@@ -1,5 +1,5 @@
 The `Responsive` component is a thin wrapper over the [**react-media**](https://github.com/ReactTraining/react-media) community
-component, which "listens for matches to a CSS media query and renders stuff based on whether the query matches or not."
+component, which "listens for matches to a CSS media query and renders stuff based on whether the query matches or not." It also implements [**sass-mq**](https://github.com/sass-mq/sass-mq) for an easy implementation of responsive behaviour through SASS.
 
 ### Responding to browser width
 
@@ -16,6 +16,8 @@ media queries:
 Use the `query` prop if you need to match on [other media features](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_features).
 
 ### Usage
+
+#### React Component
 
 Use the `render` prop for the common case of rendering a component only when the media query matches.
 
@@ -41,7 +43,7 @@ matches or not.
 </Responsive>
 ```
 
-### defaultMatches prop for server-side rendering
+#### defaultMatches prop for server-side rendering
 
 This component comes with a `defaultMatches` prop and its default is set to true.
 
@@ -65,9 +67,63 @@ initialState = {
 </div>
 ```
 
-### Testing responsive behaviour
+#### Testing responsive behaviour
 
 Moving the responsive behaviour into JavaScript enables testing of the results of media queries, which is impossible with CSS-based media queries. It is straightforwards to mock or stub the result of a media query for testing environments. Here are some examples of how we incorporated unit tests for responsive behaviour in some of the TDS components:
 
 * [Button component tests](https://github.com/telusdigital/tds/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/packages/Button/__tests__/Button.spec.jsx#L52-L68) and its corresponding [JSX](https://github.com/telusdigital/tds/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/shared/components/BaseButton/BaseButton.jsx#L17-L34) using the matches boolean flag
 * [Tooltip component tests](https://github.com/telusdigital/tds/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/packages/Tooltip/__tests__/Tooltip.spec.jsx#L56-L102) and its corresponding [JSX](https://github.com/telusdigital/tds/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/packages/Tooltip/Tooltip.jsx#L81-L108) rendering a particular bubble only when the media query matches
+
+#### SASS Media Queries
+
+SASS-based media queries are available, and are recommended for static sites. This style of responsiveness provides a few benefits like:
+* Prevents sudden scaling when server-side rendered components first appear
+* Prevents the need to wrap Responsive around your component
+  * This in turn removes the requirement for separate CSS classes for different screen sizes that your application must programmatically switch between.
+
+However, using this implementation means losing the ability to programmatically change what is rendered through JSX on resize, so keep the design of your component in mind.
+
+To make use of SASS media queries through the Responsive component, first declare the following import at the top of your .scss file.
+
+```scss
+@import '~@tds/core-responsive/responsive';
+```
+
+Once this is done, you may leverage [**sass-mq**](https://github.com/sass-mq/sass-mq) style media queries to add responsive behaviour to your component.
+
+```scss
+.someClass {
+  @include mq($from: sm, $until: lg) {
+    width: 500px;
+  }
+  @include mq($from: xl) {
+    width: 900px;
+  }
+}
+
+.someOtherClass {
+  @include mq($until: md, $and: '(orientation: landscape)') {
+    width: 100%;
+    height: 100%;
+  }
+}
+```
+
+#### MQ Parameters
+
+| Parameter     |Values | Effect                                                                                                                         |
+| ------------- |-|-----------------------------------------------------------------------------------------------------------------------------------|
+| `$from`       | `sm`, `md`, `lg`, `xl` |The CSS rules contained within will start at the defined point.                                                                        |
+| `$until`      | `sm`, `md`, `lg`, `xl` |The CSS rules contained within will end at the defined point.                                                                          |
+| `$and`        | Standard CSS Media Query Arguments |Allows for custom arguments like orientation or DPI specifications using the standard CSS syntax. These are encased in quotation marks.|
+
+#### MQ Default Breakpoints
+
+SASS-based media queries will accept the same pre-defined breakpoints as the React component. `sm`, `md`, `lg` and `xl` are all available and break at the same screen widths.
+
+Breakpoint key | Width |
+| -------------- | --------|
+| `sm`           | 576px   |
+| `md`           | 768px   |
+| `lg`           | 992px   |
+| `xl`           | 1200px  |
