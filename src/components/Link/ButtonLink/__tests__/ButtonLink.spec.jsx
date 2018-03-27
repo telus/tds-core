@@ -52,14 +52,6 @@ describe('ButtonLink', () => {
     expect(warn).toHaveBeenCalled()
   })
 
-  describe('responsiveness', () => {
-    it('is being assigned responsive css class', () => {
-      const button = doMount()
-
-      expect(button).toHaveClassName('buttonSizing')
-    })
-  })
-
   it('can be presented as one of the allowed variants', () => {
     let link = doMount()
     expect(link).toHaveClassName('primary')
