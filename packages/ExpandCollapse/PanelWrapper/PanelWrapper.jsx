@@ -90,12 +90,16 @@ class PanelWrapper extends React.Component {
 
         {tertiaryText && (
           <span className={styles.alignSelfFlexEnd}>
-            <Text data-testid="tertiarytext" size="large">
-              {tertiaryText}
-            </Text>
-            <Text data-testid="tertiarytext" size="medium">
-              {tertiaryText}
-            </Text>
+            <span className={styles.showFromMd}>
+              <Text data-testid="tertiarytext" size="large">
+                {tertiaryText}
+              </Text>
+            </span>
+            <span className={styles.showUntilMd}>
+              <Text data-testid="tertiarytext" size="medium">
+                {tertiaryText}
+              </Text>
+            </span>
           </span>
         )}
       </Flexbox>
