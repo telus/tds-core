@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-select",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
