@@ -1,3 +1,10 @@
+#### 0.35.9 (2018-03-27)
+
+##### Bug Fixes
+
+* **select:**  remove the transparent background so that the disabled gray shows up ([71c4dd2d](https://github.com/telusdigital/tds/commit/71c4dd2d0f38d52cd1389e6988899958fda46de9))
+* **select:**  remove z-index ([#533](https://github.com/telusdigital/tds/pull/533)) ([78d50e0d](https://github.com/telusdigital/tds/commit/78d50e0d57b94d0a195331a13041023fd56e7d2e))
+
 #### 0.34.8 (2018-03-22)
 
 ##### Build System / Dependencies
