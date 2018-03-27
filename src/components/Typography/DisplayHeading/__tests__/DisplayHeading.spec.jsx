@@ -1,11 +1,11 @@
 import React from 'react'
-import { mount, render } from 'enzyme'
+import { shallow, render } from 'enzyme'
 
 import DisplayHeading from '../DisplayHeading'
 
 describe('DisplayHeading', () => {
-  const doMount = (props = {}) => {
-    const heading = mount(<DisplayHeading {...props}>Great Deals</DisplayHeading>)
+  const doShallow = (props = {}) => {
+    const heading = shallow(<DisplayHeading {...props}>Great Deals</DisplayHeading>)
 
     return heading.find('h1')
   }
@@ -17,28 +17,28 @@ describe('DisplayHeading', () => {
   })
 
   it('renders an h1', () => {
-    const displayHeading = doMount()
+    const displayHeading = doShallow()
 
     expect(displayHeading).toHaveTagName('h1')
   })
 
   it('can be inverted', () => {
-    let displayHeading = doMount({ invert: true })
+    let displayHeading = doShallow({ invert: true })
     expect(displayHeading).toHaveClassName('inverted')
 
-    displayHeading = doMount()
+    displayHeading = doShallow()
     expect(displayHeading).toHaveClassName('default')
   })
 
   it('passes additional attributes to h1 element', () => {
-    const displayHeading = doMount({ id: 'the-heading', tabIndex: 1 })
+    const displayHeading = doShallow({ id: 'the-heading', tabIndex: 1 })
 
     expect(displayHeading).toHaveProp('id', 'the-heading')
     expect(displayHeading).toHaveProp('tabIndex', 1)
   })
 
   it('does not allow custom CSS', () => {
-    const displayHeading = doMount({
+    const displayHeading = doShallow({
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })

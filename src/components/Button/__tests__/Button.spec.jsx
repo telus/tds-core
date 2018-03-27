@@ -47,14 +47,6 @@ describe('Button', () => {
     expect(warn).toHaveBeenCalled()
   })
 
-  describe('responsiveness', () => {
-    it('is being assigned responsive css class', () => {
-      const button = doMount()
-
-      expect(button).toHaveClassName('buttonSizing')
-    })
-  })
-
   it('passes additional attributes to button element', () => {
     const button = doMount({ id: 'the-button', tabIndex: 1 })
 
