@@ -19,19 +19,19 @@
 .alignSelfFlexEnd {
   @include mq($until: md) {
     align-self: flex-end;
-    span:nth-child(1) {
-      display: none;
-    }
-    span:nth-child(2) {
-      display: initial;
-    }
   }
+}
+
+.showFromMd {
   @include mq($from: md) {
-    span:nth-child(1) {
-      display: initial;
-    }
-    span:nth-child(2) {
-      display: none;
-    }
+    display: initial;
   }
+  display: none;
+}
+
+.showUntilMd {
+  @include mq($until: md) {
+    display: initial;
+  }
+  display: none;
 }
