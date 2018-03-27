@@ -25,7 +25,7 @@ $button-text-color: $color-white;
   transition: background 0.2s;
 }
 
-.buttonSizing {
+.sizing {
   composes: base;
   @include mq($until: md) {
     display: block;
