@@ -16,7 +16,7 @@ const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...re
     element,
     {
       ...safeRest(rest),
-      className: joinClassNames(styles.buttonSizing, styles[variant], dangerouslyAddClassName),
+      className: joinClassNames(styles.sizing, styles[variant], dangerouslyAddClassName),
     },
     <FlexBox direction="row" dangerouslyAddClassName={styles.centered}>
       {children}
