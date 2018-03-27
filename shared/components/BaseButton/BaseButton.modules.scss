@@ -27,11 +27,10 @@ $button-text-color: $color-white;
 
 .sizing {
   composes: base;
-  @include mq($until: md) {
-    display: block;
 
-    width: 100%;
-  }
+  display: block;
+  width: 100%;
+
   @include mq($from: md) {
     display: inline-block;
 
