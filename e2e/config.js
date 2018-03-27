@@ -3,7 +3,7 @@ const { resolve } = require('path')
 const config = {
   outputPath: resolve(__dirname, 'output'),
   rootSelector: '#app',
-  tolerance: 3, // percentage
+  tolerance: 0, // percentage
 }
 
 const envConfig = {
