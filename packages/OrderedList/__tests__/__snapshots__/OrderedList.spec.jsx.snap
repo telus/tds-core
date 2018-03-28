@@ -2,7 +2,7 @@
 
 exports[`<OrderedList /> renders 1`] = `
 <ol
-  class="TDS_Box-modules__betweenBottomMarginDesktop-2___1XXWE TDS_Box-modules__stack___33m4D decimal"
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D decimal"
 >
   <li>
     Lorem ipsum

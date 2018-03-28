@@ -57,155 +57,125 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                 tag="div"
                 vertical={3}
               >
-                <Responsive
-                  defaultMatches={false}
-                  minWidth="md"
-                  query={Object {}}
+                <div
+                  className="TDS_Box-modules__verticalPadding-3___Fsv37"
                 >
-                  <Media
-                    defaultMatches={false}
-                    query={
-                      Object {
-                        "minWidth": 768,
-                      }
-                    }
+                  <Box
+                    between={3}
+                    inline={true}
+                    tag="div"
                   >
                     <div
-                      className="TDS_Box-modules__verticalPaddingDesktop-3___a3GtY"
+                      className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
                     >
-                      <Box
-                        between={3}
-                        inline={true}
-                        tag="div"
-                      >
-                        <Responsive
-                          defaultMatches={false}
-                          minWidth="md"
-                          query={Object {}}
+                      <div>
+                        <Translate
+                          direction="y"
+                          distance="0.25rem"
+                          in={false}
+                          timeout={300}
                         >
-                          <Media
-                            defaultMatches={false}
-                            query={
-                              Object {
-                                "minWidth": 768,
-                              }
-                            }
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
                           >
                             <div
-                              className="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz"
+                              style={
+                                Object {
+                                  "transition": "transform 300ms",
+                                }
+                              }
                             >
-                              <div>
-                                <Translate
-                                  direction="y"
-                                  distance="0.25rem"
-                                  in={false}
-                                  timeout={300}
-                                >
-                                  <Transition
-                                    appear={false}
-                                    enter={true}
-                                    exit={true}
-                                    in={false}
-                                    mountOnEnter={false}
-                                    onEnter={[Function]}
-                                    onEntered={[Function]}
-                                    onEntering={[Function]}
-                                    onExit={[Function]}
-                                    onExited={[Function]}
-                                    onExiting={[Function]}
-                                    timeout={300}
-                                    unmountOnExit={false}
-                                  >
-                                    <div
-                                      style={
-                                        Object {
-                                          "transition": "transform 300ms",
-                                        }
-                                      }
-                                    >
-                                      <Text
-                                        block={false}
-                                        bold={false}
-                                        invert={false}
-                                        size="large"
-                                      >
-                                        <span
-                                          className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
-                                        >
-                                          <DecorativeIcon
-                                            size={16}
-                                            symbol="caretDown"
-                                            variant="primary"
-                                          >
-                                            <Icon
-                                              aria-hidden="true"
-                                              size={16}
-                                              symbol="caretDown"
-                                              variant="primary"
-                                            >
-                                              <i
-                                                aria-hidden="true"
-                                                className="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
-                                              />
-                                            </Icon>
-                                          </DecorativeIcon>
-                                        </span>
-                                      </Text>
-                                    </div>
-                                  </Transition>
-                                </Translate>
-                              </div>
-                              <Responsive
-                                maxWidth="md"
-                                query={Object {}}
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
                               >
-                                <Media
-                                  defaultMatches={true}
-                                  query={
-                                    Object {
-                                      "maxWidth": 767,
-                                    }
-                                  }
+                                <span
+                                  className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
                                 >
-                                  <Flexbox
-                                    dangerouslyAddClassName="headerAlign"
-                                    direction="row"
+                                  <DecorativeIcon
+                                    size={16}
+                                    symbol="caretDown"
+                                    variant="primary"
                                   >
-                                    <div
-                                      className="row headerAlign"
+                                    <Icon
+                                      aria-hidden="true"
+                                      size={16}
+                                      symbol="caretDown"
+                                      variant="primary"
                                     >
-                                      <Flexbox
-                                        dangerouslyAddClassName="headerAlign"
-                                        direction="column"
-                                      >
-                                        <div
-                                          className="column headerAlign"
-                                        >
-                                          <Text
-                                            block={false}
-                                            bold={false}
-                                            invert={false}
-                                            size="large"
-                                          >
-                                            <span
-                                              className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
-                                            >
-                                              Panel title
-                                            </span>
-                                          </Text>
-                                        </div>
-                                      </Flexbox>
-                                    </div>
-                                  </Flexbox>
-                                </Media>
-                              </Responsive>
+                                      <i
+                                        aria-hidden="true"
+                                        className="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
+                                      />
+                                    </Icon>
+                                  </DecorativeIcon>
+                                </span>
+                              </Text>
                             </div>
-                          </Media>
-                        </Responsive>
-                      </Box>
+                          </Transition>
+                        </Translate>
+                      </div>
+                      <Responsive
+                        maxWidth="md"
+                        query={Object {}}
+                      >
+                        <Media
+                          defaultMatches={true}
+                          query={
+                            Object {
+                              "maxWidth": 767,
+                            }
+                          }
+                        >
+                          <Flexbox
+                            dangerouslyAddClassName="headerAlign"
+                            direction="row"
+                          >
+                            <div
+                              className="row headerAlign"
+                            >
+                              <Flexbox
+                                dangerouslyAddClassName="headerAlign"
+                                direction="column"
+                              >
+                                <div
+                                  className="column headerAlign"
+                                >
+                                  <Text
+                                    block={false}
+                                    bold={false}
+                                    invert={false}
+                                    size="large"
+                                  >
+                                    <span
+                                      className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
+                                    >
+                                      Panel title
+                                    </span>
+                                  </Text>
+                                </div>
+                              </Flexbox>
+                            </div>
+                          </Flexbox>
+                        </Media>
+                      </Responsive>
                     </div>
-                  </Media>
-                </Responsive>
+                  </Box>
+                </div>
               </Box>
             </button>
           </Clickable>
@@ -252,46 +222,31 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                     inset={4}
                     tag="div"
                   >
-                    <Responsive
-                      defaultMatches={false}
-                      minWidth="md"
-                      query={Object {}}
+                    <div
+                      className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-4___QMNNa"
                     >
-                      <Media
-                        defaultMatches={false}
-                        query={
-                          Object {
-                            "minWidth": 768,
-                          }
-                        }
+                      <Text
+                        block={true}
+                        bold={false}
+                        invert={false}
+                        size="base"
                       >
                         <div
-                          className="TDS_Box-modules__horizontalPaddingDesktop-4___awwLJ TDS_Box-modules__verticalPaddingDesktop-4___1KCGS"
+                          className="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
                         >
-                          <Text
-                            block={true}
-                            bold={false}
-                            invert={false}
-                            size="base"
+                          <Panel
+                            disabled={false}
+                            header="Panel title"
+                            id="panel-1"
+                            key=".0"
                           >
-                            <div
-                              className="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
-                            >
-                              <Panel
-                                disabled={false}
-                                header="Panel title"
-                                id="panel-1"
-                                key=".0"
-                              >
-                                <div>
-                                  Panel content
-                                </div>
-                              </Panel>
+                            <div>
+                              Panel content
                             </div>
-                          </Text>
+                          </Panel>
                         </div>
-                      </Media>
-                    </Responsive>
+                      </Text>
+                    </div>
                   </Box>
                 </div>
               </div>
@@ -381,155 +336,125 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                 tag="div"
                 vertical={3}
               >
-                <Responsive
-                  defaultMatches={false}
-                  minWidth="md"
-                  query={Object {}}
+                <div
+                  className="TDS_Box-modules__verticalPadding-3___Fsv37"
                 >
-                  <Media
-                    defaultMatches={false}
-                    query={
-                      Object {
-                        "minWidth": 768,
-                      }
-                    }
+                  <Box
+                    between={3}
+                    inline={true}
+                    tag="div"
                   >
                     <div
-                      className="TDS_Box-modules__verticalPaddingDesktop-3___a3GtY"
+                      className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
                     >
-                      <Box
-                        between={3}
-                        inline={true}
-                        tag="div"
-                      >
-                        <Responsive
-                          defaultMatches={false}
-                          minWidth="md"
-                          query={Object {}}
+                      <div>
+                        <Translate
+                          direction="y"
+                          distance="-0.25rem"
+                          in={false}
+                          timeout={300}
                         >
-                          <Media
-                            defaultMatches={false}
-                            query={
-                              Object {
-                                "minWidth": 768,
-                              }
-                            }
+                          <Transition
+                            appear={false}
+                            enter={true}
+                            exit={true}
+                            in={false}
+                            mountOnEnter={false}
+                            onEnter={[Function]}
+                            onEntered={[Function]}
+                            onEntering={[Function]}
+                            onExit={[Function]}
+                            onExited={[Function]}
+                            onExiting={[Function]}
+                            timeout={300}
+                            unmountOnExit={false}
                           >
                             <div
-                              className="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz"
+                              style={
+                                Object {
+                                  "transition": "transform 300ms",
+                                }
+                              }
                             >
-                              <div>
-                                <Translate
-                                  direction="y"
-                                  distance="-0.25rem"
-                                  in={false}
-                                  timeout={300}
-                                >
-                                  <Transition
-                                    appear={false}
-                                    enter={true}
-                                    exit={true}
-                                    in={false}
-                                    mountOnEnter={false}
-                                    onEnter={[Function]}
-                                    onEntered={[Function]}
-                                    onEntering={[Function]}
-                                    onExit={[Function]}
-                                    onExited={[Function]}
-                                    onExiting={[Function]}
-                                    timeout={300}
-                                    unmountOnExit={false}
-                                  >
-                                    <div
-                                      style={
-                                        Object {
-                                          "transition": "transform 300ms",
-                                        }
-                                      }
-                                    >
-                                      <Text
-                                        block={false}
-                                        bold={false}
-                                        invert={false}
-                                        size="large"
-                                      >
-                                        <span
-                                          className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
-                                        >
-                                          <DecorativeIcon
-                                            size={16}
-                                            symbol="caretUp"
-                                            variant="primary"
-                                          >
-                                            <Icon
-                                              aria-hidden="true"
-                                              size={16}
-                                              symbol="caretUp"
-                                              variant="primary"
-                                            >
-                                              <i
-                                                aria-hidden="true"
-                                                className="TDS_Icon-modules__iconCaretUp___3PL_K TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
-                                              />
-                                            </Icon>
-                                          </DecorativeIcon>
-                                        </span>
-                                      </Text>
-                                    </div>
-                                  </Transition>
-                                </Translate>
-                              </div>
-                              <Responsive
-                                maxWidth="md"
-                                query={Object {}}
+                              <Text
+                                block={false}
+                                bold={false}
+                                invert={false}
+                                size="large"
                               >
-                                <Media
-                                  defaultMatches={true}
-                                  query={
-                                    Object {
-                                      "maxWidth": 767,
-                                    }
-                                  }
+                                <span
+                                  className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
                                 >
-                                  <Flexbox
-                                    dangerouslyAddClassName="headerAlign"
-                                    direction="row"
+                                  <DecorativeIcon
+                                    size={16}
+                                    symbol="caretUp"
+                                    variant="primary"
                                   >
-                                    <div
-                                      className="row headerAlign"
+                                    <Icon
+                                      aria-hidden="true"
+                                      size={16}
+                                      symbol="caretUp"
+                                      variant="primary"
                                     >
-                                      <Flexbox
-                                        dangerouslyAddClassName="headerAlign"
-                                        direction="column"
-                                      >
-                                        <div
-                                          className="column headerAlign"
-                                        >
-                                          <Text
-                                            block={false}
-                                            bold={false}
-                                            invert={false}
-                                            size="large"
-                                          >
-                                            <span
-                                              className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
-                                            >
-                                              Panel title
-                                            </span>
-                                          </Text>
-                                        </div>
-                                      </Flexbox>
-                                    </div>
-                                  </Flexbox>
-                                </Media>
-                              </Responsive>
+                                      <i
+                                        aria-hidden="true"
+                                        className="TDS_Icon-modules__iconCaretUp___3PL_K TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
+                                      />
+                                    </Icon>
+                                  </DecorativeIcon>
+                                </span>
+                              </Text>
                             </div>
-                          </Media>
-                        </Responsive>
-                      </Box>
+                          </Transition>
+                        </Translate>
+                      </div>
+                      <Responsive
+                        maxWidth="md"
+                        query={Object {}}
+                      >
+                        <Media
+                          defaultMatches={true}
+                          query={
+                            Object {
+                              "maxWidth": 767,
+                            }
+                          }
+                        >
+                          <Flexbox
+                            dangerouslyAddClassName="headerAlign"
+                            direction="row"
+                          >
+                            <div
+                              className="row headerAlign"
+                            >
+                              <Flexbox
+                                dangerouslyAddClassName="headerAlign"
+                                direction="column"
+                              >
+                                <div
+                                  className="column headerAlign"
+                                >
+                                  <Text
+                                    block={false}
+                                    bold={false}
+                                    invert={false}
+                                    size="large"
+                                  >
+                                    <span
+                                      className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
+                                    >
+                                      Panel title
+                                    </span>
+                                  </Text>
+                                </div>
+                              </Flexbox>
+                            </div>
+                          </Flexbox>
+                        </Media>
+                      </Responsive>
                     </div>
-                  </Media>
-                </Responsive>
+                  </Box>
+                </div>
               </Box>
             </button>
           </Clickable>
@@ -576,46 +501,31 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                     inset={4}
                     tag="div"
                   >
-                    <Responsive
-                      defaultMatches={false}
-                      minWidth="md"
-                      query={Object {}}
+                    <div
+                      className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-4___QMNNa"
                     >
-                      <Media
-                        defaultMatches={false}
-                        query={
-                          Object {
-                            "minWidth": 768,
-                          }
-                        }
+                      <Text
+                        block={true}
+                        bold={false}
+                        invert={false}
+                        size="base"
                       >
                         <div
-                          className="TDS_Box-modules__horizontalPaddingDesktop-4___awwLJ TDS_Box-modules__verticalPaddingDesktop-4___1KCGS"
+                          className="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
                         >
-                          <Text
-                            block={true}
-                            bold={false}
-                            invert={false}
-                            size="base"
+                          <Panel
+                            disabled={false}
+                            header="Panel title"
+                            id="panel-1"
+                            key=".0"
                           >
-                            <div
-                              className="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
-                            >
-                              <Panel
-                                disabled={false}
-                                header="Panel title"
-                                id="panel-1"
-                                key=".0"
-                              >
-                                <div>
-                                  Panel content
-                                </div>
-                              </Panel>
+                            <div>
+                              Panel content
                             </div>
-                          </Text>
+                          </Panel>
                         </div>
-                      </Media>
-                    </Responsive>
+                      </Text>
+                    </div>
                   </Box>
                 </div>
               </div>

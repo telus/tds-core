@@ -2,7 +2,7 @@
 
 exports[`<Notification /> renders 1`] = `
 <div
-  class="TDS_Box-modules__verticalPaddingDesktop-3___a3GtY instructional"
+  class="TDS_Box-modules__verticalPadding-3___Fsv37 instructional"
 >
   <div
     class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -11,7 +11,7 @@ exports[`<Notification /> renders 1`] = `
       class="TDS_flexboxgrid2__col-xs___2KrHO col-xs-offset TDS_Col-modules__padding___2tLQS"
     >
       <div
-        class="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz"
+        class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
       >
         <p
           class="TDS_Typography-modules__wordBreak___11Xyp TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___22Swj TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__mediumFont___36OCZ TDS_Paragraph-modules__leftAlign___KgwhE"
