@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "main": "",
-  "module": ""
+  "module": "",
+  "dependencies": {
+    "@tds/core-responsive": "^1.0.0"
+  }
 }
