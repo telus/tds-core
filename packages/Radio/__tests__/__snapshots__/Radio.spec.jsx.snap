@@ -2,13 +2,13 @@
 
 exports[`Radio renders 1`] = `
 <div
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+  class="TDS_Box-modules__betweenBottomMarginDesktop-2___1XXWE TDS_Box-modules__stack___33m4D"
 >
   <label
     for="the-group_the-value"
   >
     <span
-      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz alignFlexStart"
+      class="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz alignFlexStart"
     >
       <span
         class="fakeRadio unchecked"

@@ -2,7 +2,7 @@
 
 exports[`Select renders 1`] = `
 <div
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+  class="TDS_Box-modules__betweenBottomMarginDesktop-2___1XXWE TDS_Box-modules__stack___33m4D"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -11,7 +11,7 @@ exports[`Select renders 1`] = `
       for="the-select"
     >
       <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz alignCenter"
+        class="TDS_Box-modules__betweenRightMarginDesktop-2___2mNnI TDS_Box-modules__inline___jTHcz alignCenter"
       >
         <span
           class="TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__boldFont___30Cjc TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
@@ -42,7 +42,7 @@ exports[`Select renders 1`] = `
       </option>
     </select>
     <div
-      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz iconsPosition"
+      class="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz iconsPosition"
     >
       <div
         class="fixLineHeight"
@@ -59,7 +59,7 @@ exports[`Select renders 1`] = `
 
 exports[`Select renders with a feedback state and icon 1`] = `
 <div
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+  class="TDS_Box-modules__betweenBottomMarginDesktop-2___1XXWE TDS_Box-modules__stack___33m4D"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -68,7 +68,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
       for="the-select"
     >
       <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz alignCenter"
+        class="TDS_Box-modules__betweenRightMarginDesktop-2___2mNnI TDS_Box-modules__inline___jTHcz alignCenter"
       >
         <span
           class="TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__boldFont___30Cjc TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
@@ -99,7 +99,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
       </option>
     </select>
     <div
-      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz iconsPosition"
+      class="TDS_Box-modules__betweenRightMarginDesktop-3___1pe04 TDS_Box-modules__inline___jTHcz iconsPosition"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
