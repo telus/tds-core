@@ -5,7 +5,7 @@
   "useWorkspaces": true,
   "commands": {
     "publish": {
-      "ignore": ["*.md", "*.spec.jsx"]
+      "ignore": ["*.md", "*.spec.jsx", "*.snap"]
     }
   }
 }
