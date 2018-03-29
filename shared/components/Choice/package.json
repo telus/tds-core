@@ -3,5 +3,11 @@
   "version": "1.0.1",
   "private": true,
   "main": "",
-  "module": ""
+  "module": "",
+  "dependencies": {
+    "@tds/core-box": "^1.0.0",
+    "@tds/core-input-feedback": "^1.0.0",
+    "@tds/core-paragraph": "^1.0.0",
+    "@tds/core-text": "^1.0.0"
+  }
 }
