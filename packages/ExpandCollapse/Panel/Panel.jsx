@@ -4,7 +4,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * @version 1.0.0
+ * @version 1.0.1
  *
  * Expandable content areas for use with the `ExpandCollapse` or `Accordion`
  *
