@@ -29,12 +29,12 @@
     "@tds/core-decorative-icon": "^1.0.0",
     "@tds/core-dimple-divider": "^1.0.0",
     "@tds/core-hairline-divider": "^1.0.0",
-    "@tds/core-responsive": "^1.0.0",
     "@tds/core-text": "^1.0.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
+    "@tds/core-responsive": "^1.0.0",
     "airbnb-prop-types": "^2.8.1",
     "core-js": "^2.5.3",
     "react-transition-group": "^2.2.1"
