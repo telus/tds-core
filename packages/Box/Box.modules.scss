@@ -76,5 +76,5 @@ $desktop: (
 }
 
 @each $level, $value in $mobile {
-  @include spacingClasses($level, $value, nth($desktop, $level));
+  @include spacingClasses($level, $value, map-get($desktop, $level));
 }
