@@ -109,14 +109,12 @@ module.exports = {
                 ]
               },
             },
-            {
-              name: 'Responsiveness',
-              content: path.resolve('packages/Responsive/docs/SassResponsive.md'),
-              components: path.resolve('packages/Responsive/Responsive.jsx'),
-            },
           ],
           components() {
-            return [path.resolve('packages/Box/Box.jsx')]
+            return [
+              path.resolve('packages/Responsive/Responsive.jsx'),
+              path.resolve('packages/Box/Box.jsx'),
+            ]
           },
         },
         {
