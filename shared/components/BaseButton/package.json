@@ -4,7 +4,7 @@
   "private": true,
   "main": "",
   "module": "",
-  "dependencies": {
+  "devDependencies": {
     "@tds/core-responsive": "^1.0.0"
   }
 }
