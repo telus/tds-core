@@ -15,7 +15,7 @@ import formStyles from '../../shared/styles/Forms.modules.scss'
 import styles from './Input.modules.scss'
 
 /**
- * @version 1.0.2
+ * @version 1.0.3
  */
 const Input = props => (
   <FormField {...props}>
