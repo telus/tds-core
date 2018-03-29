@@ -23,17 +23,17 @@
 }
 
 .showFromMd {
-  @include mq($from: md) {
-    display: initial;
-  }
-
   display: none;
+
+  @include mq($from: md) {
+    display: inline-block;
+  }
 }
 
 .showUntilMd {
-  @include mq($until: md) {
-    display: initial;
-  }
+  display: inline-block;
 
-  display: none;
+  @include mq($from: md) {
+    display: none;
+  }
 }
