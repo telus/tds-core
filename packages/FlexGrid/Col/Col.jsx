@@ -21,9 +21,6 @@ const removeProps = ({
   ...rest
 }) => safeRest(rest)
 
-/**
- * @version 1.0.0
- */
 const Col = ({ span, offset, children, ...rest }) => (
   <Subscriber channel="flex-grid">
     {gutter => (

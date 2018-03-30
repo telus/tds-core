@@ -17,7 +17,7 @@ const getClassName = (invert, context) => {
 }
 
 /**
- * @version 1.0.1
+ * @version ./package.json
  */
 const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) => {
   if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {

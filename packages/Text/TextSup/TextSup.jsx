@@ -6,8 +6,6 @@ import safeRest from '../../../shared/utils/safeRest'
 import styles from '../../../shared/styles/Typography.modules.scss'
 
 /**
- * @version 1.0.0
- *
  * Superscript text an as HTML `<sup>` element.
  *
  * _This component can only be accessed as a name-spaced component: `Text.Sup`._

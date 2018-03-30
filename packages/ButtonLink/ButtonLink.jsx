@@ -9,9 +9,9 @@ import BaseButton from '../../shared/components/BaseButton/BaseButton'
 import styles from './ButtonLink.modules.scss'
 
 /**
- * @version 1.0.1
- *
  * A link that is styled as a button.
+ *
+ * @version ./package.json
  */
 const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {

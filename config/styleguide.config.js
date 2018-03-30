@@ -290,6 +290,19 @@ module.exports = {
       },
     },
   },
+  updateDocs(docs, file) {
+    const updatedDocs = Object.assign({}, docs)
+
+    if (updatedDocs.doclets.version) {
+      const versionFilePath = path.resolve(path.dirname(file), updatedDocs.doclets.version)
+      const version = require(versionFilePath).version // eslint-disable-line import/no-dynamic-require
+
+      updatedDocs.doclets.version = version
+      updatedDocs.tags.version[0].description = version
+    }
+
+    return updatedDocs
+  },
   webpackConfig: {
     devServer: {
       disableHostCheck: true,

@@ -8,9 +8,9 @@ import safeRest from '../../shared/utils/safeRest'
 import styles from './InputFeedback.modules.scss'
 
 /**
- * @version 1.0.1
- *
  * A feedback box commonly used with form fields.
+ *
+ * @version ./package.json
  */
 const InputFeedback = ({ feedback, children, ...rest }) => (
   <Box
