@@ -224,18 +224,22 @@ module.exports = {
     path.resolve('docs/scss/styleguide.scss'),
   ],
   styleguideComponents: {
-    StyleGuideRenderer: path.resolve('docs/components/overrides/StyleGuide/StyleGuideRenderer'),
+    Editor: path.resolve('docs/components/overrides/Editor/Editor'),
     Logo: path.resolve('docs/components/custom/Logo/Logo'),
-    Markdown: path.resolve('docs/components/overrides/Markdown/Markdown'),
+    'Markdown/List': path.resolve('docs/components/custom/MarkdownList/MarkdownList'),
+    'Markdown/MarkdownHeading': path.resolve(
+      'docs/components/custom/MarkdownHeading/MarkdownHeading'
+    ),
+    'Markdown/Markdown': path.resolve('docs/components/overrides/Markdown/Markdown'),
+    PathlineRenderer: path.resolve('docs/components/overrides/Pathline/PathlineRenderer'),
     SectionHeadingRenderer: path.resolve(
       'docs/components/custom/SectionHeading/SectionHeadingRenderer'
     ),
+    StyleGuideRenderer: path.resolve('docs/components/overrides/StyleGuide/StyleGuideRenderer'),
+    TabButtonRenderer: path.resolve('docs/components/overrides/TabButton/TabButtonRenderer'),
     TableOfContentsRenderer: path.resolve(
       'docs/components/custom/TableOfContents/TableOfContentsRenderer'
     ),
-    TabButtonRenderer: path.resolve('docs/components/overrides/TabButton/TabButtonRenderer'),
-    PathlineRenderer: path.resolve('docs/components/overrides/Pathline/PathlineRenderer'),
-    Editor: path.resolve('docs/components/overrides/Editor/Editor'),
   },
   theme: {
     fontFamily: {

@@ -1,197 +1,161 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { compiler } from 'markdown-to-jsx'
-import mapValues from 'lodash/mapValues'
-// import memoize from 'lodash/memoize';
-import Styled from 'rsg-components/Styled'
+// Copied from https://github.com/styleguidist/react-styleguidist/blob/master/src/rsg-components/Markdown/Markdown.js
 
-import { styles as paraStyles } from 'rsg-components/Para'
+import PropTypes from 'prop-types';
+import { compiler } from 'markdown-to-jsx';
+// import Link from 'rsg-components/Link';
+import Text from 'rsg-components/Text';
+// import Para from 'rsg-components/Para';
+import MarkdownHeading from 'rsg-components/Markdown/MarkdownHeading';
+import List from 'rsg-components/Markdown/List';
+import Blockquote from 'rsg-components/Markdown/Blockquote';
+import Pre from 'rsg-components/Markdown/Pre';
+import Code from 'rsg-components/Code';
+import Checkbox from 'rsg-components/Markdown/Checkbox';
+import Hr from 'rsg-components/Markdown/Hr';
+import { Table, TableHead, TableBody, TableRow, TableCell } from 'rsg-components/Markdown/Table';
 
 import Link from '../../../../packages/Link/Link'
-import Text from '../../../../packages/Text/Text'
-import Strong from '../../../../packages/Strong/Strong'
-import MarkdownHeading from '../../custom/MarkdownHeading/MarkdownHeading'
 import MarkdownParagraph from '../../custom/MarkdownParagraph/MarkdownParagraph'
-import MarkdownUnorderedList from '../../custom/MarkdownUnorderedList/MarkdownUnorderedList'
-import MarkdownOrderedList from '../../custom/MarkdownOrderedList/MarkdownOrderedList'
+import Strong from '../../../../packages/Strong/Strong'
+import { default as TdsText } from '../../../../packages/Text/Text'
 
-// loading our own custom version of highlight.js docco theme to make code examples AAA colour accessible
-import codeStyles from './highlight_js/docco.css'
+// We’re explicitly specifying Webpack loaders here so we could skip specifying them in Webpack configuration.
+// That way we could avoid clashes between our loaders and user loaders.
+// eslint-disable-next-line import/no-unresolved
+// require('!!../../../loaders/style-loader!../../../loaders/css-loader!highlight.js/styles/tomorrow.css');
 
-// Temporary disable memoization to fix: https://github.com/styleguidist/react-styleguidist/issues/348
-// TODO: Remove after merge: https://github.com/probablyup/markdown-to-jsx/pull/96
-const memoize = a => a
+// Load a custom version of highlight.js docco theme to make code examples AAA colour accessible
+import './highlight_js/docco.css'
 
-// Code blocks with server-side syntax highlight
-function Code({ children, className }) {
-  const isHighlighted = className && className.indexOf('lang-') !== -1
-  if (isHighlighted) {
-    return <code className={className} dangerouslySetInnerHTML={{ __html: children }} />
-  }
-  return <code className={className}>{children}</code>
-}
-Code.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-}
-
-// Custom CSS classes for each tag: <em> → <em className={s.em}> + custom components
-const getBaseOverrides = memoize(classes => {
-  const styleOverrides = mapValues(classes, value => ({
+const baseOverrides = {
+  a: {
+    component: Link,
+  },
+  h1: {
+    component: MarkdownHeading,
     props: {
-      className: value,
+      level: 1,
     },
-  }))
-
-  return {
-    ...styleOverrides,
-    a: {
-      component: Link,
-    },
-    p: {
-      component: MarkdownParagraph,
-    },
-    h1: {
-      component: MarkdownHeading,
-      props: {
-        level: 'h1',
-      },
-    },
-    h2: {
-      component: MarkdownHeading,
-      props: {
-        level: 'h2',
-      },
-    },
-    h3: {
-      component: MarkdownHeading,
-      props: {
-        level: 'h3',
-      },
-    },
-    h4: {
-      component: MarkdownHeading,
-      props: {
-        level: 'h4',
-      },
-    },
-    h5: {
-      component: MarkdownHeading,
-      props: {
-        level: 'h4',
-      },
-    },
-    h6: {
-      component: MarkdownHeading,
-      props: {
-        level: 'h4',
-      },
-    },
-    ul: {
-      component: MarkdownUnorderedList,
-    },
-    ol: {
-      component: MarkdownOrderedList,
-    },
-    strong: {
-      component: Strong,
-    },
-    code: {
-      component: Code,
-      props: {
-        className: codeStyles,
-      },
-    },
-  }
-}, () => 'getBaseOverrides')
-
-// Inline mode: replace <p> (usual root component) with <span>
-const getInlineOverrides = memoize(classes => {
-  const overrides = getBaseOverrides(classes)
-
-  return {
-    ...overrides,
-    p: {
-      component: Text,
-    },
-  }
-}, () => 'getInlineOverrides')
-
-const styles = ({ space, fontFamily, fontSize, color, borderRadius }) => ({
-  base: {
-    color: color.base,
-    fontFamily: fontFamily.base,
-    fontSize: 'inherit',
   },
-  para: paraStyles({ space, color, fontFamily }).para,
-  input: {
-    color: color.base,
-    display: 'inline-block',
-    margin: [[0, '0.35em', '0.25em', '-1.2em']],
-    verticalAlign: 'middle',
+  h2: {
+    component: MarkdownHeading,
+    props: {
+      level: 2,
+    },
   },
-  blockquote: {
-    composes: '$para',
-    fontSize: fontSize.base,
-    margin: [[space[2], space[4]]],
-    padding: 0,
+  h3: {
+    component: MarkdownHeading,
+    props: {
+      level: 3,
+    },
   },
-  hr: {
-    composes: '$para',
-    borderWidth: [[0, 0, 1, 0]],
-    borderColor: color.border,
-    borderStyle: 'solid',
+  h4: {
+    component: MarkdownHeading,
+    props: {
+      level: 4,
+    },
+  },
+  h5: {
+    component: MarkdownHeading,
+    props: {
+      level: 5,
+    },
+  },
+  h6: {
+    component: MarkdownHeading,
+    props: {
+      level: 6,
+    },
+  },
+  // p: {
+  //   component: Para,
+  //   props: {
+  //     semantic: 'p',
+  //   },
+  // },
+  p: {
+    component: MarkdownParagraph,
   },
   em: {
-    composes: '$base',
-    fontStyle: 'italic',
+    component: Text,
+    props: {
+      semantic: 'em',
+    },
+  },
+  // strong: {
+  //   component: Text,
+  //   props: {
+  //     semantic: 'strong',
+  //   },
+  // },
+  strong: {
+    component: Strong
+  },
+  ul: {
+    component: List,
+  },
+  ol: {
+    component: List,
+    props: {
+      ordered: true,
+    },
+  },
+  blockquote: {
+    component: Blockquote,
   },
   code: {
-    fontFamily: fontFamily.monospace,
-    fontSize: 'inherit',
-    color: 'inherit',
-    background: 'transparent',
-    whiteSpace: 'inherit',
+    component: Code,
   },
   pre: {
-    fontFamily: 'Consolas, "Liberation Mono", Menlo, monospace',
-    backgroundColor: color.codeBackground,
-    border: [[1, color.border, 'solid']],
-    padding: [[space[1], space[2]]],
-    margin: [[space[2], space[0]]],
-    fontSize: fontSize.small,
-    borderRadius,
-    whiteSpace: 'pre',
+    component: Pre,
+  },
+  input: {
+    component: Checkbox,
+  },
+  hr: {
+    component: Hr,
   },
   table: {
-    composes: '$para',
-    borderCollapse: 'collapse',
+    component: Table,
   },
   thead: {
-    composes: '$hr',
-  },
-  tbody: {},
-  td: {
-    fontFamily: fontFamily.base,
-    padding: [[space[0], space[2], space[0], 0]],
-    fontSize: fontSize.base,
+    component: TableHead,
   },
   th: {
-    composes: '$td',
-    fontWeight: 'bold',
+    component: TableCell,
+    props: {
+      header: true,
+    },
   },
-  tr: {},
-})
+  tbody: {
+    component: TableBody,
+  },
+  tr: {
+    component: TableRow,
+  },
+  td: {
+    component: TableCell,
+  },
+};
 
-function Markdown({ classes, text, inline }) {
-  const overrides = inline ? getInlineOverrides(classes) : getBaseOverrides(classes)
-  return compiler(text, { overrides })
+const inlineOverrides = {
+  ...baseOverrides,
+  // p: {
+  //   component: Text,
+  // },
+  p: {
+    component: TdsText,
+  },
+};
+
+function Markdown({ text, inline }) {
+  const overrides = inline ? inlineOverrides : baseOverrides;
+  return compiler(text, { overrides, forceBlock: true });
 }
 
 Markdown.propTypes = {
-  classes: PropTypes.object.isRequired,
   text: PropTypes.string.isRequired,
   inline: PropTypes.bool,
-}
+};
 
-export default Styled(styles)(Markdown)
+export default Markdown;
