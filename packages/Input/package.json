@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -24,8 +24,8 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.0.0",
-    "@tds/core-input-feedback": "^1.0.0",
+    "@tds/core-box": "^1.0.1",
+    "@tds/core-input-feedback": "^1.0.1",
     "@tds/core-paragraph": "^1.0.0",
     "@tds/core-standalone-icon": "^1.0.0",
     "@tds/core-text": "^1.0.0",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "@tds/shared-form-field": "^1.0.2",
+    "@tds/shared-form-field": "^1.0.3",
     "airbnb-prop-types": "^2.8.1",
     "core-js": "^2.5.3",
     "react-transition-group": "^2.2.1"
