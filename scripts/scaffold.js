@@ -6,6 +6,7 @@
 
 const { readFileSync, writeFileSync, mkdirSync } = require('fs')
 const { resolve } = require('path')
+const { camel, kebab } = require('case')
 
 const componentName = process.argv[2]
 
@@ -16,18 +17,11 @@ if (!componentName) {
 
 const basePath = `packages/${componentName}`
 
-const camelize = string => `${string.charAt(0).toLowerCase()}${string.slice(1)}`
-const kebabize = string =>
-  `${string
-    .split(/(?=[A-Z])/)
-    .join('-')
-    .toLowerCase()}`
-
 const scaffold = (template, destination) => {
   const contents = readFileSync(resolve(`scripts/scaffolding/${template}`), 'utf8')
     .replace(/\$COMPONENT\$/g, componentName)
-    .replace(/\$COMPONENT_CAMEL\$/g, camelize(componentName))
-    .replace(/\$COMPONENT_SNAKE\$/g, kebabize(componentName))
+    .replace(/\$COMPONENT_CAMEL\$/g, camel(componentName))
+    .replace(/\$COMPONENT_KEBAB\$/g, kebab(componentName))
 
   writeFileSync(resolve(`${basePath}/${destination}`), contents)
 
