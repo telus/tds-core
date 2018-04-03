@@ -1,8 +1,13 @@
 ```scss static
-@import '~@tds/core-colours/colours';`
+@import '~@tds/core-colours/colours';
 ```
 
-Version: 1.0.0
+```jsx noeditor
+const { version } = require('./package.json');
+const PackageVersion = require('../../docs/components/custom/PackageVersion/PackageVersion').default;
+
+<PackageVersion version={version} />
+```
 
 These are the brand-approved colours available as Sass variables to be consumed within your application styles.
 

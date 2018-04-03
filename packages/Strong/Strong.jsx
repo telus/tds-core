@@ -6,9 +6,9 @@ import safeRest from '../../shared/utils/safeRest'
 import styles from '../../shared/styles/Typography.modules.scss'
 
 /**
- * @version 1.0.0
- *
  * Give portions of a sentence added importance.
+ *
+ * @version ./package.json
  */
 const Strong = ({ children, ...rest }) => (
   <strong {...safeRest(rest)} className={styles.boldFont}>

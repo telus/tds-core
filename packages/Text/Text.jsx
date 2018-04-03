@@ -9,9 +9,9 @@ import TextSup from './TextSup/TextSup'
 import styles from '../../shared/styles/Typography.modules.scss'
 
 /**
- * @version 1.0.0
- *
  * Inline text usually as an HTML `<span>` element.
+ *
+ * @version ./package.json
  */
 const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
   const textColor = invert ? styles.invertedColor : styles.color

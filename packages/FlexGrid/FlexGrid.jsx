@@ -13,7 +13,7 @@ import { deprecate } from '../../shared/utils/warn'
 import styles from './FlexGrid.modules.scss'
 
 /**
- * @version 1.1.0
+ * @version ./package.json
  */
 const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {
   if (centre) {

@@ -10,7 +10,7 @@ exports[`MarkdownHeading renders 1`] = `
     invert={false}
     level="h1"
   >
-    Random Heading
+    Some heading
   </Heading>
 </Box>
 `;

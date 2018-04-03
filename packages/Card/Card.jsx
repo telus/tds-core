@@ -7,9 +7,9 @@ import safeRest from '../../shared/utils/safeRest'
 import styles from './Card.modules.scss'
 
 /**
- * @version 1.0.1
- *
  * A content container.
+ *
+ * @version ./package.json
  */
 const Card = ({ variant, children, ...rest }) => (
   <Box {...safeRest(rest)} horizontal={4} vertical={5} dangerouslyAddClassName={styles[variant]}>

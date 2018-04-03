@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarkdownHeading can render an ordered list 1`] = `
+<Box
+  below={3}
+  inline={false}
+  tag="div"
+>
+  <Text
+    block={true}
+    bold={false}
+    invert={false}
+    size="medium"
+  >
+    <OrderedList
+      listStyle="decimal"
+    >
+      <OrderedList.Item
+        key=".0"
+      >
+        Item 1
+      </OrderedList.Item>
+      <OrderedList.Item
+        key=".1"
+      >
+        Item 1
+      </OrderedList.Item>
+    </OrderedList>
+  </Text>
+</Box>
+`;
+
+exports[`MarkdownHeading can render an unordered list 1`] = `
+<Box
+  below={3}
+  inline={false}
+  tag="div"
+>
+  <Text
+    block={true}
+    bold={false}
+    invert={false}
+    size="medium"
+  >
+    <UnorderedList
+      listStyle="circle"
+    >
+      <UnorderedList.Item
+        key=".0"
+        listStyle="circle"
+      >
+        Item 1
+      </UnorderedList.Item>
+      <UnorderedList.Item
+        key=".1"
+        listStyle="circle"
+      >
+        Item 1
+      </UnorderedList.Item>
+    </UnorderedList>
+  </Text>
+</Box>
+`;

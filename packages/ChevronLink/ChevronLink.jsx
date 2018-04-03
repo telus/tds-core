@@ -27,9 +27,9 @@ const getIcon = (symbol, classes) => (
 )
 
 /**
- * @version 1.0.1
- *
  * A call to action link.
+ *
+ * @version ./package.json
  */
 const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, ...rest }) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
