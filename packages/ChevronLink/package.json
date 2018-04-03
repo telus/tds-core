@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-chevron-link",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A call to action link",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -25,7 +25,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.0.0",
+    "@tds/core-box": "^1.0.1",
     "@tds/core-decorative-icon": "^1.0.0",
     "prop-types": "^15.5.10"
   },
