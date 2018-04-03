@@ -22,8 +22,46 @@ const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
 const compact = array => array.filter(element => element !== undefined)
 /* eslint-enable no-unused-vars */
 
+const devTemplate = {
+  lang: 'en',
+  favicon: '/favicon.ico',
+  head: {
+    scripts: [
+      {
+        src: '//cdn.polyfill.io/v2/polyfill.min.js?features=Set',
+      },
+    ],
+  },
+}
+const productionTemplate = {
+  lang: 'en',
+  favicon: '/favicon.ico',
+  head: {
+    scripts: [
+      {
+        src: '//cdn.polyfill.io/v2/polyfill.min.js?features=Set',
+      },
+      {
+        src:
+          'https://assets.adobedtm.com/6462022b939758565769298a6393ed7a46ee6817/satelliteLib-1a62f312773f2a4b9eaa85dbf0ec0bb49095fd2e.js',
+      },
+    ],
+    raw: `
+<script>
+  window.dataLayer = {
+    page: {
+      name: 'TELUS Design System'
+    }
+  }
+</script>`,
+  },
+  body: {
+    raw: `<script type="text/javascript">_satellite.pageBottom();</script>`,
+  },
+}
+
 module.exports = {
-  title: `TDS`,
+  title: 'TELUS Design System',
 
   skipComponentsWithoutExample: true,
   getExampleFilename(componentPath) {
@@ -213,10 +251,7 @@ module.exports = {
     },
   ],
 
-  template:
-    styleguidistEnv === 'production'
-      ? path.resolve('docs/index.html')
-      : path.resolve('docs/dev-index.html'),
+  template: styleguidistEnv === 'production' ? productionTemplate : devTemplate,
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
   require: [
@@ -308,7 +343,7 @@ module.exports = {
       disableHostCheck: true,
     },
     module: {
-      loaders: [
+      rules: [
         {
           test: /\.jsx?$/,
           exclude: /node_modules/,
