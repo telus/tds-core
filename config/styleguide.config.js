@@ -24,7 +24,7 @@ const compact = array => array.filter(element => element !== undefined)
 
 const devTemplate = {
   lang: 'en',
-  favicon: '/favicon.ico',
+  favicon: 'favicon.ico',
   head: {
     scripts: [
       {
@@ -35,7 +35,7 @@ const devTemplate = {
 }
 const productionTemplate = {
   lang: 'en',
-  favicon: '/favicon.ico',
+  favicon: 'favicon.ico',
   head: {
     scripts: [
       {
