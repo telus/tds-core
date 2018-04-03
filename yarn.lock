@@ -9277,9 +9277,9 @@ postcss-modules-values@1.3.0, postcss-modules-values@^1.3.0:
     icss-replace-symbols "^1.1.0"
     postcss "^6.0.1"
 
-postcss-modules@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/postcss-modules/-/postcss-modules-0.8.0.tgz#a9d01806dffe19c2607dee88ea1cbd80dc059992"
+postcss-modules@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-modules/-/postcss-modules-1.1.0.tgz#c9f94f76ff6addf7c35b842e69ed442118156bb0"
   dependencies:
     css-modules-loader-core "^1.1.0"
     generic-names "^1.0.2"
