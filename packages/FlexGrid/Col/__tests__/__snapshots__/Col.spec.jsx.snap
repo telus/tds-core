@@ -3,10 +3,14 @@
 exports[`Col renders 1`] = `
 <Col
   className="padding"
+  lg={0}
+  md={0}
+  sm={0}
+  xl={0}
   xs={true}
 >
   <div
-    className="col-xs col-xs-offset padding"
+    className="col-xs col-sm-0 col-md-0 col-lg-0 col-xl-0 col-xs-offset padding"
   >
     Some content
   </div>

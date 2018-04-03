@@ -46,16 +46,6 @@ describe('Col', () => {
     expect(col).toHaveProp('xsOffset', 2)
   })
 
-  it('does not support responsive column spans', () => {
-    const col = doMount({ xs: 1, sm: 2, md: 3, lg: 4, xl: 5, span: 10 })
-
-    expect(col).toHaveProp('xs', 10)
-    expect(col).not.toHaveProp('sm')
-    expect(col).not.toHaveProp('md')
-    expect(col).not.toHaveProp('lg')
-    expect(col).not.toHaveProp('xl')
-  })
-
   it('does not support responsive offsets', () => {
     const col = doMount({
       xsOffset: 1,

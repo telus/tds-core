@@ -8,12 +8,12 @@ exports[`FlexGrid renders 1`] = `
     class="flexRow row"
   >
     <div
-      class="col-xs col-xs-offset padding"
+      class="col-xs col-sm-0 col-md-0 col-lg-0 col-xl-0 col-xs-offset padding"
     >
       1st column content
     </div>
     <div
-      class="col-xs col-xs-offset padding"
+      class="col-xs col-sm-0 col-md-0 col-lg-0 col-xl-0 col-xs-offset padding"
     >
       2nd column content
     </div>
