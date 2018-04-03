@@ -88,7 +88,7 @@
     "jest-environment-enzyme": "^6.0.0",
     "jest-enzyme": "^6.0.0",
     "lerna": "^2.9.0",
-    "lint-staged": "^6.1.0",
+    "lint-staged": "^7.0.0",
     "minimist": "^1.2.0",
     "nightwatch": "^0.9.19",
     "nightwatch-accessibility": "^1.6.0",
