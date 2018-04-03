@@ -7,9 +7,6 @@ import styles from './Row.modules.scss'
 
 import safeRest from '../../../shared/utils/safeRest'
 
-/**
- * @version 1.0.0
- */
 const Row = ({ horizontalAlign, verticalAlign, distribute, children, ...rest }) => {
   const getAlignment = () => {
     return {

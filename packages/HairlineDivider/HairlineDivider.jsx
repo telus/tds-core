@@ -22,9 +22,9 @@ const getClassName = (vertical, gradient) => {
 }
 
 /**
- * @version 1.0.0
- *
  * Separate content within modules.
+ *
+ * @version ./package.json
  */
 const HairlineDivider = ({ vertical, gradient, ...rest }) => (
   <hr {...safeRest(rest)} className={styles[getClassName(vertical, gradient)]} />

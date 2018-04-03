@@ -42,9 +42,9 @@ const renderContent = (variant, children) => {
 }
 
 /**
- * @version 1.0.2
- *
  * A banner that highlights important messages.
+ *
+ * @version ./package.json
  */
 const Notification = ({ variant, children, ...rest }) => (
   <Box {...safeRest(rest)} vertical={3} dangerouslyAddClassName={styles[variant]}>

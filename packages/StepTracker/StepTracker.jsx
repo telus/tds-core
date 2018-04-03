@@ -7,9 +7,9 @@ import Step from './Step/Step'
 import './StepTracker.scss'
 
 /**
- * @version 1.0.0
- *
  * Show the current position in a sequence of steps.
+ *
+ * @version ./package.json
  */
 class StepTracker extends Component {
   getStatus(current, index) {

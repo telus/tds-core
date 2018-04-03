@@ -7,9 +7,9 @@ import positionStyles from '../../shared/styles/Position.modules.scss'
 import styles from './Spinner.modules.scss'
 
 /**
- * @version 2.0.0
- *
  * A waiting indicator.
+ *
+ * @version ./package.json
  */
 const Spinner = ({ spinning, tip, a11yLabel, children, ...rest }) => {
   if (!spinning) {

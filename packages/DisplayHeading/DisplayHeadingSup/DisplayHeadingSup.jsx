@@ -5,8 +5,6 @@ import safeRest from '../../../shared/utils/safeRest'
 import styles from '../DisplayHeading.modules.scss'
 
 /**
- * @version 1.0.0
- *
  * Superscript text for `DisplayHeading` an as HTML `<sup>` element.
  *
  * _This component can only be accessed as a name-spaced component: `DisplayHeading.Sup`._

@@ -12,9 +12,9 @@ const getClassName = invert =>
   joinClassNames(styles.heading, invert ? styles.inverted : styles.default)
 
 /**
- * @version 1.0.1
- *
  * Large page titles. Renders an HTML `<h1>` element.
+ *
+ * @version ./package.json
  */
 const DisplayHeading = ({ invert, children, ...rest }) => (
   <h1 {...safeRest(rest)} className={getClassName(invert)}>
