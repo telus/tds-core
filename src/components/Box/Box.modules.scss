@@ -38,6 +38,7 @@ $desktop: (
   .verticalPadding-#{$level} {
     padding-top: $mobileValue;
     padding-bottom: $mobileValue;
+
     @include mq($from: md) {
       padding-top: $desktopValue;
       padding-bottom: $desktopValue;
@@ -47,6 +48,7 @@ $desktop: (
   .horizontalPadding-#{$level} {
     padding-left: $mobileValue;
     padding-right: $mobileValue;
+
     @include mq($from: md) {
       padding-left: $desktopValue;
       padding-right: $desktopValue;
@@ -55,6 +57,7 @@ $desktop: (
 
   .bottomMargin-#{$level} {
     margin-bottom: $mobileValue;
+
     @include mq($from: md) {
       margin-bottom: $desktopValue;
     }
@@ -62,6 +65,7 @@ $desktop: (
 
   .betweenBottomMargin-#{$level} > *:not(:last-child) {
     margin-bottom: $mobileValue;
+
     @include mq($from: md) {
       margin-bottom: $desktopValue;
     }
@@ -69,6 +73,7 @@ $desktop: (
 
   .betweenRightMargin-#{$level} > *:not(:last-child) {
     margin-right: $mobileValue;
+
     @include mq($from: md) {
       margin-right: $desktopValue;
     }
