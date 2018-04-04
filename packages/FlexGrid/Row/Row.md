@@ -5,9 +5,9 @@ The `FlexGrid.Row` component can be used for Column alignment and distribution.
 ```jsx
 <FlexGrid>
   <FlexGrid.Row horizontalAlign="center">
-    <FlexGrid.Col span={3}>Have a nice day</FlexGrid.Col>
-    <FlexGrid.Col span={3}>You seem healthy</FlexGrid.Col>
-    <FlexGrid.Col span={3}>Take care</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>Have a nice day</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>You seem healthy</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>Take care</FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
 ```
@@ -15,9 +15,9 @@ The `FlexGrid.Row` component can be used for Column alignment and distribution.
 ```jsx
 <FlexGrid>
   <FlexGrid.Row horizontalAlign="center" verticalAlign="bottom">
-    <FlexGrid.Col span={3}>Hello, have a nice day!</FlexGrid.Col>
-    <FlexGrid.Col span={3}>You seem healthy</FlexGrid.Col>
-    <FlexGrid.Col span={3}>Take care</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>Hello, have a nice day!</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>You seem healthy</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>Take care</FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
 ```
@@ -27,9 +27,9 @@ The `FlexGrid.Row` component can be used for Column alignment and distribution.
 ```jsx
 <FlexGrid>
   <FlexGrid.Row horizontalAlign="center" distribute="around">
-    <FlexGrid.Col span={3}>Hello</FlexGrid.Col>
-    <FlexGrid.Col span={3}>You seem healthy</FlexGrid.Col>
-    <FlexGrid.Col span={3}>Take care</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>Hello</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>You seem healthy</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>Take care</FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
 ```
@@ -37,9 +37,9 @@ The `FlexGrid.Row` component can be used for Column alignment and distribution.
 ```jsx
 <FlexGrid gutter={false}>
   <FlexGrid.Row distribute="between">
-    <FlexGrid.Col span={3}>Hello</FlexGrid.Col>
-    <FlexGrid.Col span={3}>You seem healthy</FlexGrid.Col>
-    <FlexGrid.Col span={3}>Take care</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>Hello</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>You seem healthy</FlexGrid.Col>
+    <FlexGrid.Col xs={3}>Take care</FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
 ```
