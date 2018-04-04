@@ -1,3 +1,36 @@
+#### 1.0.9 (2018-04-04)
+
+##### New Features
+
+* **scripts:**  enforce patch versions ([c62d8867](https://github.com/telusdigital/tds/commit/c62d8867688ba983807cc56068aade41fa8e0c32))
+
+##### Bug Fixes
+
+* **scss:**  adjust module paths ([f4beb1ee](https://github.com/telusdigital/tds/commit/f4beb1eef4e7a76d16727c7daae0d96b236d6485))
+* **echint:**  ignore tgz and log files everywhere ([7df4a72f](https://github.com/telusdigital/tds/commit/7df4a72ffc5518a9919e948c000dbfec3c23abc0))
+* **expand-collapse:**
+  *  fix tertiary text in ie11 - move responsive dependency to devdependency ([5bc4b73b](https://github.com/telusdigital/tds/commit/5bc4b73b3715a7fa066dbeb535a3d93d4669e21b))
+  *  change responsive tertiary text approach ([1db807be](https://github.com/telusdigital/tds/commit/1db807be5a9619c9b9720fd03f4d37f1c282bc5f))
+  *  change tertiaryText sizing ([15c72dd6](https://github.com/telusdigital/tds/commit/15c72dd610648a9a86e88ccbd7c69d83701c704b))
+  *  refactor to use sass-mq media queries ([450a5d8a](https://github.com/telusdigital/tds/commit/450a5d8a6a4cf98996223241bc0e3aab0afa06c0))
+* **box:**
+  *  correct desktop styles ([169d0b43](https://github.com/telusdigital/tds/commit/169d0b43e8892435fa885b3e66c6601fa5050aee))
+  *  refactor to use sass-mq media queries ([494805a3](https://github.com/telusdigital/tds/commit/494805a360c84605be9fe3104bf8f85c46679ca0))
+* **button:**
+  *  remove unnecessary media query ([4b193e22](https://github.com/telusdigital/tds/commit/4b193e22c875ea7bb890b27721b07e0464f14b1c))
+  *  refactor for sass based responsiveness ([8b24360b](https://github.com/telusdigital/tds/commit/8b24360bffcb82c3c48f2f425bf0f5fd8f80e6db))
+* **shared-base-button:**  change sizing class name ([81ba7837](https://github.com/telusdigital/tds/commit/81ba78377a319076827921f4dc9858298a0db93c))
+* **heading:**  use media queries instead of Responsive ([18c31b20](https://github.com/telusdigital/tds/commit/18c31b205d7b58e4a687a022e3c7f3e9bff7bb1e))
+
+##### Refactors
+
+* **scss:**  pass linter errors ([e827027a](https://github.com/telusdigital/tds/commit/e827027a8557bef0f2a981f874abff2285c0619c))
+
+##### Tests
+
+* **heading:**  remove ssr test ([f16223a1](https://github.com/telusdigital/tds/commit/f16223a1e2dc4ac663a9642ec20fd21d312cba8b))
+*  update tests ([2d77ebdb](https://github.com/telusdigital/tds/commit/2d77ebdb2ff5e3cc0254dfa72b6c5a8c2f4352bc))
+
 #### 1.0.8 (2018-03-27)
 
 ##### Bug Fixes
