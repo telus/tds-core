@@ -1,3 +1,35 @@
+#### 0.34.10 (2018-04-04)
+
+##### New Features
+
+* **scripts:**  enforce patch versions ([29a61692](https://github.com/telusdigital/tds/commit/29a616921510b51453c850b0cf9a34dc2c833ff7))
+
+##### Bug Fixes
+
+* **echint:**  ignore tgz and log files everywhere ([36d7481d](https://github.com/telusdigital/tds/commit/36d7481dad4a0cc0a974813c0dfcab574da7260e))
+* **expand-collapse:**
+  *  fix tertiary text in ie11 - move responsive dependency to devdependency ([ef70b67f](https://github.com/telusdigital/tds/commit/ef70b67f8f946914aef16b6ea2978c9f223b3fcf))
+  *  change responsive tertiary text approach ([54b1bf84](https://github.com/telusdigital/tds/commit/54b1bf84229c5909765d9d2eef26485b95f65c5c))
+  *  change tertiaryText sizing ([38af958f](https://github.com/telusdigital/tds/commit/38af958f2aa5b1a6252739ef69318ff01481e7ae))
+  *  refactor to use sass-mq media queries ([77b66a0f](https://github.com/telusdigital/tds/commit/77b66a0fb35bfa75ec3bf754c5ac115e4babac83))
+* **box:**
+  *  correct desktop styles ([8b40d59b](https://github.com/telusdigital/tds/commit/8b40d59b294098edaea67d5aadf5b76e1e7f0619))
+  *  refactor to use sass-mq media queries ([dbad2c0d](https://github.com/telusdigital/tds/commit/dbad2c0dbbdac91ef5feaf376aeb8da4b547b305))
+* **button:**
+  *  remove unnecessary media query ([9cbb9aa5](https://github.com/telusdigital/tds/commit/9cbb9aa548e5a7c37318b82323f9d5b5e7c974a3))
+  *  refactor for sass based responsiveness ([e57b3ac1](https://github.com/telusdigital/tds/commit/e57b3ac1e8ddfaa157e3bc1f9abf187b90417003))
+* **shared-base-button:**  change sizing class name ([066914a8](https://github.com/telusdigital/tds/commit/066914a8dca62cba896afe72f780d251e23bdc2a))
+* **heading:**  use media queries instead of Responsive ([c4917c7e](https://github.com/telusdigital/tds/commit/c4917c7e7f4029b4628c716189a1110d148d6bbd))
+
+##### Refactors
+
+* **scss:**  pass linter errors ([7fec0d8e](https://github.com/telusdigital/tds/commit/7fec0d8e62eba9a03e1907cf7fd8a46e4bc6439a))
+
+##### Tests
+
+* **heading:**  remove ssr test ([b4cd60b5](https://github.com/telusdigital/tds/commit/b4cd60b5c7b9b9353c3b73f81f92df5c25603138))
+*  update tests ([c483d7c9](https://github.com/telusdigital/tds/commit/c483d7c9205d67f04c74c4db322d41f60471dee9))
+
 #### 0.34.9 (2018-03-27)
 
 ##### Bug Fixes
