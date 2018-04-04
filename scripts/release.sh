@@ -8,9 +8,9 @@ VERSION_TAG="v$1"
 #
 # Validate the given semantic version number.
 #
-if ! [[ "$VERSION_NUM" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-  echo "Please give a semantic version number, such as 1.2.3. "
-  echo "Usage: yarn release -- <version>"
+if ! [[ "$VERSION_NUM" =~ ^[0]+\.[34]+\.[0-9]+$ ]]; then
+  echo "Please give a semantic patch version number, such as 0.34.10 "
+  echo "Usage: yarn release <version>"
 
   exit 1
 fi
@@ -20,7 +20,7 @@ fi
 #
 if [[ `git tag | grep $VERSION_TAG` ]]; then
   echo "Version ${VERSION_TAG} already exists."
-  echo "Usage: yarn release -- <version>"
+  echo "Usage: yarn release <version>"
 
   exit 1
 fi
