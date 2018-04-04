@@ -11,9 +11,6 @@ import styles from './Col.modules.scss'
 const removeProps = ({ xsOffset, smOffset, mdOffset, lgOffset, xlOffset, ...rest }) =>
   safeRest(rest)
 
-/**
- * @version 1.0.0
- */
 const Col = ({ span, offset, xs, sm, md, lg, xl, children, ...rest }) => {
   if (span) {
     deprecate(
