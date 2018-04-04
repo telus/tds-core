@@ -55,7 +55,7 @@ describe('<Notification />', () => {
       const notification = doShallow({ variant: 'error' }, 'An error message')
 
       expect(notification).toContainReact(
-        <ColoredTextProvider colorClassName="errorText">
+        <ColoredTextProvider colorClassName="errorTextNotification">
           <Paragraph bold>An error message</Paragraph>
         </ColoredTextProvider>
       )
