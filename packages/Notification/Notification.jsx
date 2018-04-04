@@ -32,7 +32,7 @@ const renderContent = (variant, children) => {
 
   if (variant === 'error') {
     return (
-      <ColoredTextProvider colorClassName={messagingStyles.errorText}>
+      <ColoredTextProvider colorClassName={messagingStyles.errorTextNotification}>
         {content}
       </ColoredTextProvider>
     )
