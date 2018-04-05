@@ -50,7 +50,7 @@ describe('<Notification />', () => {
   })
 
   describe('error variant', () => {
-    it('bolds and colors the content', () => {
+    it('bolds the content', () => {
       const notification = doShallow({ variant: 'error' }, 'An error message')
 
       expect(notification).toContainReact(<Paragraph bold>An error message</Paragraph>)
