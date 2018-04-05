@@ -53,14 +53,13 @@ describe('Col', () => {
       mdOffset: 3,
       lgOffset: 4,
       xlOffset: 5,
-      offset: 10,
     })
 
-    expect(col).toHaveProp('xsOffset', 10)
-    expect(col).not.toHaveProp('smOffset')
-    expect(col).not.toHaveProp('mdOffset')
-    expect(col).not.toHaveProp('lgOffset')
-    expect(col).not.toHaveProp('xlOffset')
+    expect(col).toHaveProp('xsOffset', 1)
+    expect(col).toHaveProp('smOffset', 2)
+    expect(col).toHaveProp('mdOffset', 3)
+    expect(col).toHaveProp('lgOffset', 4)
+    expect(col).toHaveProp('xlOffset', 5)
   })
 
   it('passes additional attributes to the react-flexbox-grid Col', () => {
