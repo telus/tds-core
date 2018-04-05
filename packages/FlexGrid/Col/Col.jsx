@@ -8,49 +8,33 @@ import safeRest from '../../../shared/utils/safeRest'
 import { deprecate } from '../../../shared/utils/warn'
 import styles from './Col.modules.scss'
 
-const removeProps = ({ ...rest }) => safeRest(rest)
-
-const Col = ({
-  span,
-  offset,
-  xsOffset,
-  smOffset,
-  mdOffset,
-  lgOffset,
-  xlOffset,
-  xs,
-  sm,
-  md,
-  lg,
-  xl,
-  children,
-  ...rest
-}) => {
-  const flexProps = {}
-
-  if (sm) flexProps.sm = sm
-  if (md) flexProps.md = md
-  if (lg) flexProps.lg = lg
-  if (xl) flexProps.xl = xl
-
+const Col = ({ children, span, offset, ...rest }) => {
+  if (offset) {
+    deprecate(
+      'core-flex-grid',
+      `The offset prop is deprecated due to the addition of the new responsive
+    offset props.
+    Replace offset in your Col definition with xsOffset for identical functionality.`
+    )
+  }
   if (span) {
     deprecate(
       'core-flex-grid',
-      'The span prop is deprecated due to the addition of the new responsive props. Replace span in your Col definition with xs for identical functionality.'
+      `The span prop is deprecated due to the addition of the new responsive props.
+      Replace span in your Col definition with xs for identical functionality.`
     )
   }
+
+  const props = rest
+
+  if (offset && !props.xsOffset) props.xsOffset = offset
+
   return (
     <Subscriber channel="flex-grid">
       {gutter => (
         <ReactFlexboxGridCol
-          {...removeProps(rest)}
-          xs={xs || span || true}
-          {...flexProps}
-          xsOffset={xsOffset || offset}
-          smOffset={smOffset}
-          mdOffset={mdOffset}
-          lgOffset={lgOffset}
-          xlOffset={xlOffset}
+          {...safeRest(rest)}
+          xs={rest.xs || span || true}
           className={gutter ? styles.padding : styles.gutterless}
         >
           {children}
@@ -60,6 +44,12 @@ const Col = ({
   )
 }
 
+/* eslint-disable react/require-default-props */
+/*
+ * We're disabling default props since passing undefined props to
+ * the react-flexbox-grid component sets up blank classes that may cause
+ * styling issues.
+*/
 Col.propTypes = {
   /**
    * @deprecated Span the specified number of columns.
@@ -119,20 +109,11 @@ Col.propTypes = {
    */
   children: PropTypes.node.isRequired,
 }
+/* eslint-enable */
 
 Col.defaultProps = {
   span: undefined,
   offset: undefined,
-  xs: undefined,
-  sm: undefined,
-  md: undefined,
-  lg: undefined,
-  xl: undefined,
-  xsOffset: undefined,
-  smOffset: undefined,
-  mdOffset: undefined,
-  lgOffset: undefined,
-  xlOffset: undefined,
 }
 
 export default Col
