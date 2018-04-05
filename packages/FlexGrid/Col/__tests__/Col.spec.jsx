@@ -2,8 +2,12 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 
+import { deprecate } from '../../../../shared/utils/warn'
+
 import FlexGrid from '../../FlexGrid'
 import Col from '../Col'
+
+jest.mock('../../../../shared/utils/warn')
 
 describe('Col', () => {
   const doMount = (props = {}) => {
@@ -40,6 +44,12 @@ describe('Col', () => {
     expect(col).toHaveProp('xs', 10)
   })
 
+  it('will show a span is deprecated warning', () => {
+    doMount({ span: 10 })
+
+    expect(deprecate).toHaveBeenCalled()
+  })
+
   it('supports responsive offsets', () => {
     const col = doMount({
       xsOffset: 1,
@@ -54,6 +64,12 @@ describe('Col', () => {
     expect(col).toHaveProp('mdOffset', 3)
     expect(col).toHaveProp('lgOffset', 4)
     expect(col).toHaveProp('xlOffset', 5)
+  })
+
+  it('will show an offset is deprecated warning', () => {
+    doMount({ offset: 10 })
+
+    expect(deprecate).toHaveBeenCalled()
   })
 
   it('passes additional attributes to the react-flexbox-grid Col', () => {
