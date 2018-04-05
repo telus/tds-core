@@ -63,6 +63,8 @@ const Col = ({
 Col.propTypes = {
   /**
    * @deprecated Span the specified number of columns.
+   *
+   * Use the xs prop instead for identical functionality.
    */
   span: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
   /**
@@ -87,6 +89,8 @@ Col.propTypes = {
   xl: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
   /**
    * @deprecated Offset the specified number of columns.
+   *
+   * Use the xsOffset prop instead for identical functionality.
    */
   offset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
