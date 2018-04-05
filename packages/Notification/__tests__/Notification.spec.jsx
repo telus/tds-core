@@ -5,7 +5,6 @@ import DecorativeIcon from '@tds/core-decorative-icon'
 import Paragraph from '@tds/core-paragraph'
 
 import Notification from '../Notification'
-import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 describe('<Notification />', () => {
   const defaultChildren = 'Some content'
@@ -51,14 +50,10 @@ describe('<Notification />', () => {
   })
 
   describe('error variant', () => {
-    it('bolds and colors the content', () => {
+    it('bolds the content', () => {
       const notification = doShallow({ variant: 'error' }, 'An error message')
 
-      expect(notification).toContainReact(
-        <ColoredTextProvider colorClassName="errorText">
-          <Paragraph bold>An error message</Paragraph>
-        </ColoredTextProvider>
-      )
+      expect(notification).toContainReact(<Paragraph bold>An error message</Paragraph>)
     })
 
     it('adds an exclamation point icon', () => {
