@@ -35,18 +35,12 @@ describe('Col', () => {
   })
 
   it('can span a specified number of columns', () => {
-    const col = doMount({ span: 10 })
+    const col = doMount({ xs: 10 })
 
     expect(col).toHaveProp('xs', 10)
   })
 
-  it('can offset a number of columns', () => {
-    const col = doMount({ offset: 2 })
-
-    expect(col).toHaveProp('xsOffset', 2)
-  })
-
-  it('does not support responsive offsets', () => {
+  it('supports responsive offsets', () => {
     const col = doMount({
       xsOffset: 1,
       smOffset: 2,
