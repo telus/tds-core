@@ -25,12 +25,6 @@ const isImportant = variant => variant === 'success' || variant === 'error'
 
 const renderIcon = icon => <DecorativeIcon symbol={icon.symbol} variant={icon.color} />
 
-const renderContent = (variant, children) => {
-  const content = <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
-
-  return content
-}
-
 /**
  * A banner that highlights important messages.
  *
@@ -43,7 +37,7 @@ const Notification = ({ variant, children, ...rest }) => (
         <Box inline between={3}>
           {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
 
-          {renderContent(variant, children)}
+          <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
         </Box>
       </FlexGrid.Col>
     </FlexGrid>
