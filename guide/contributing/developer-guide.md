@@ -5,7 +5,6 @@
 * [Git](https://git-scm.com/)
 * [Node.JS](https://nodejs.org), >= 6.0
 * [Yarn](https://yarnpkg.com) (We use yarn for dependency management instead of npm.)
-* [Commitizen](https://github.com/commitizen/cz-cli)
 
 ## Set up your environment
 
@@ -54,10 +53,13 @@ yarn scaffold MyComponent
 
 ## Make a commit
 
-We use [husky](https://github.com/typicode/husky) to run precommit tasks on staged files, which includes code formatting, linting, and tests.
+We use [commitizen](https://github.com/commitizen/cz-cli) and [commitlint](https://github.com/marionebl/commitlint) to
+ensure conventional commit messages, which supports our publishing workflow and versioning scheme.
+
+[husky](https://github.com/typicode/husky) is used to run precommit tasks on staged files, which includes code formatting, linting, and tests.
 You will not be able to make a commit until the precommit tasks pass. We also have a prepush hook to run a full build before pushing your code.
 
 ```bash
 # Stage your files and make a commit using commitizen
-git cz
+yarn cz
 ```
