@@ -1,6 +1,6 @@
 ### Minimal usage
 
-```
+```jsx
 <Link href="#">Go to the TDS homepage</Link>
 ```
 
@@ -24,15 +24,15 @@ It is recommended to set up a component wrapper in your project to avoid repetit
 **LinkWrapper.jsx**
 
 ```jsx noeditor static
-import React from 'react';
+import React from 'react'
 
 // React Router version 3
-import { Link as ReactRouterLink } from 'react-router';
+import { Link as ReactRouterLink } from 'react-router'
 
 // React Router version 4
 // import { Link as ReactRouterLink } from 'react-router-dom'
 
-import { Link as TdsLink } from '@telusdigital/tds';
+import { Link as TdsLink } from '@telusdigital/tds'
 
 const LinkWrapper = ({ children, ...rest }) => (
   <TdsLink
@@ -41,15 +41,15 @@ const LinkWrapper = ({ children, ...rest }) => (
   >
     {children}
   </TdsLink>
-);
+)
 
-export default LinkWrapper;
+export default LinkWrapper
 ```
 
 **App.js**
 
 ```js noeditor static
-import Link from './LinkWrapper';
+import Link from './LinkWrapper'
 
 const MyApp = () => (
   <main>
@@ -57,7 +57,7 @@ const MyApp = () => (
     <Link to="/more">Read More</Link>
     <Link href="https://www.telus.com/">Telus Website</Link>
   </main>
-);
+)
 ```
 
 This way, you can output normal anchors or react router links using a single component.
