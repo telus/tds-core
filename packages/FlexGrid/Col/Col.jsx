@@ -33,7 +33,7 @@ const Col = ({ children, span, offset, ...rest }) => {
     <Subscriber channel="flex-grid">
       {gutter => (
         <ReactFlexboxGridCol
-          {...safeRest(rest)}
+          {...safeRest(props)}
           xs={rest.xs || span || true}
           className={gutter ? styles.padding : styles.gutterless}
         >
