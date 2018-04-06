@@ -9,7 +9,7 @@ will be available as additional components.
 
 Supply additional HTML input attributes as normal.
 
-```
+```jsx
 <Box between={2}>
   <Input label="First name" value="Harry" />
 
@@ -23,11 +23,13 @@ Supply additional HTML input attributes as normal.
 Use the `feedback` attribute to give the user feedback regarding their input. You can affirm that the user's input
 was correct, or highlight errors that must be corrected.
 
-```
+```jsx
 <Box between={2}>
   <Input label="Username" value="guest12345" feedback="success" />
   <Input
-    label="Email" value="guest@telus.com" feedback="error"
+    label="Email"
+    value="guest@telus.com"
+    feedback="error"
     error="That email is already associated with another account. Choose another one."
   />
 </Box>
@@ -39,38 +41,40 @@ input fields and perform any required data validations either client side or ser
 Here is an example. Enter a value into the field below, then click away to lose focus. If you enter less than 10
 characters you will receive an error message. Enter 10 or more characters to receive the success feedback.
 
-```
+```jsx
 initialState = {
   value: '',
   status: undefined,
-  errorMessage: undefined
-};
+  errorMessage: undefined,
+}
 
-const updateValue = (event) => {
+const updateValue = event => {
   setState({ value: event.target.value })
 }
 
-const validate = (event) => {
+const validate = event => {
   const value = event.target.value
 
   if (value.length < 10) {
     setState({
       status: 'error',
-      errorMessage: 'Your name must be greater than 10 characters'
+      errorMessage: 'Your name must be greater than 10 characters',
     })
-  }
-  else {
+  } else {
     setState({
       status: 'success',
-      errorMessage: undefined
+      errorMessage: undefined,
     })
   }
-};
+}
 
 <Input
-  label="Name" value={state.value}
-  feedback={state.status} error={state.errorMessage}
-  onChange={updateValue} onBlur={validate}
+  label="Name"
+  value={state.value}
+  feedback={state.status}
+  error={state.errorMessage}
+  onChange={updateValue}
+  onBlur={validate}
 />
 ```
 
@@ -79,18 +83,17 @@ const validate = (event) => {
 Use a `hint` to succinctly clarify attributes of the expected input data, such as the expected format, or an indicator
 that the field is optional. It is a more usable and accessible option than the HTML `placeholder` attribute.
 
-```
+```jsx
 <Input label="Transit number" hint="5 digits" type="number" />
 ```
 
 Use a `helper` message to show additional context that will guide the user while completing the form field.
 
-```
+```jsx
 const creditCards = (
   <Text>
     We accept the following credit cards: <Text bold>Visa, Mastercard, Discover</Text>.
   </Text>
-);
-
-<Input label="Credit Card Number" helper={creditCards} />
+)
+;<Input label="Credit Card Number" helper={creditCards} />
 ```

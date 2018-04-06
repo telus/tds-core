@@ -14,13 +14,13 @@ is the primary action, as a [Link](#link) is more appropriate.**
 By default, Buttons will be displayed in the `primary` variant. Use primary buttons for the main action on a page or
 in a form.
 
-```
+```jsx
 <Button>Submit</Button>
 ```
 
 Specify the `variant` to create a button for secondary actions.
 
-```
+```jsx
 <Button variant="secondary">Find out more</Button>
 ```
 

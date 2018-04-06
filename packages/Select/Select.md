@@ -7,10 +7,15 @@
 
 [Reference](https://baymard.com/blog/drop-down-usability)
 
-```
+```jsx
 <Select
   label="Province"
   placeholder="Please select..."
-  options={[{text: 'Alberta', value: 'AB'}, {text: 'British Columbia', value: 'BC'}, {text: 'Ontario', value: 'ON'}, {text: 'Quebec', value: 'QC'}]}
+  options={[
+    { text: 'Alberta', value: 'AB' },
+    { text: 'British Columbia', value: 'BC' },
+    { text: 'Ontario', value: 'ON' },
+    { text: 'Quebec', value: 'QC' },
+  ]}
 />
 ```
