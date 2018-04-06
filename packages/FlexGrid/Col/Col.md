@@ -32,7 +32,7 @@ Supplying an `xsOffset`, `smOffset`, `mdOffset`, `lgOffset` or `xlOffset` prop w
     <FlexGrid.Col xsOffset={3}>
       <Text>3 columns away</Text>
     </FlexGrid.Col>
-    <FlexGrid.Col xsOffset={1} lgOffset{4}>
+    <FlexGrid.Col xsOffset={1} lgOffset={4}>
       <Text>1 or 4 columns away</Text>
     </FlexGrid.Col>
   </FlexGrid.Row>

@@ -25,7 +25,7 @@ const Col = ({ children, span, offset, ...rest }) => {
     )
   }
 
-  const props = rest
+  const props = { ...rest }
 
   if (offset && !props.xsOffset) props.xsOffset = offset
 
