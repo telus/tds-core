@@ -3,10 +3,10 @@
 ```
 
 ```jsx noeditor
-const { version } = require('./package.json');
-const PackageVersion = require('../../docs/components/custom/PackageVersion/PackageVersion').default;
+const { version } = require('./package.json')
+const PackageVersion = require('../../docs/components/custom/PackageVersion/PackageVersion').default
 
-<PackageVersion version={version} />
+;<PackageVersion version={version} />
 ```
 
 These are the brand-approved colours available as Sass variables to be consumed within your application styles.

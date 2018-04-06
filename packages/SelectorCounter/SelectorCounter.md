@@ -5,9 +5,11 @@ on small displays. We recommend you use either the [Select](#select) or [Input](
 
 ## Minimal usage
 
-```
+```jsx
 <Box between={2}>
-  <label htmlFor="docs_example-1" className="docs_selcounter-label">Simple example</label>
+  <label htmlFor="docs_example-1" className="docs_selcounter-label">
+    Simple example
+  </label>
   <SelectorCounter id="docs_example-1" />
 </Box>
 ```
@@ -16,9 +18,11 @@ on small displays. We recommend you use either the [Select](#select) or [Input](
 
 Use the `disabled` prop to disable the input.
 
-```
+```jsx
 <Box between={2}>
-  <label htmlFor="docs_example-2" className="docs_selcounter-label">Disabled example</label>
+  <label htmlFor="docs_example-2" className="docs_selcounter-label">
+    Disabled example
+  </label>
   <SelectorCounter id="docs_example-2" disabled />
 </Box>
 ```
@@ -29,16 +33,21 @@ Use the `successful` or `invalid` props to style the input appropriately.
 
 In this example, any number greater than 5 is a success.
 
-```
+```jsx
 initialState = {
-  value: 5
-};
-
-<Box between={2}>
-  <label htmlFor="docs_example-3" className="docs_selcounter-label">Feedback example</label>
-  <SelectorCounter id="docs_example-3" defaultValue={state.value}
-                onChange={(value) => setState({ value: value})}
-                successful={state.value > 5} invalid={state.value <= 5}  />
+  value: 5,
+}
+;<Box between={2}>
+  <label htmlFor="docs_example-3" className="docs_selcounter-label">
+    Feedback example
+  </label>
+  <SelectorCounter
+    id="docs_example-3"
+    defaultValue={state.value}
+    onChange={value => setState({ value: value })}
+    successful={state.value > 5}
+    invalid={state.value <= 5}
+  />
 </Box>
 ```
 
@@ -54,49 +63,50 @@ The `contextPrefix` and `contextSuffix` props can be used to define text that he
 
 The contextual prefix & suffix can be used together or separately. They’re also optional - if an accessible field can be built using the standard label/description/aria markup, then use those first.
 
-```
+```jsx
 initialState = {
   succeeded: false,
-  curr: 0
-};
+  curr: 0,
+}
 
-const handleNumber = (curr) => {
-  setState({curr, succeeded: false});
-};
+const handleNumber = curr => {
+  setState({ curr, succeeded: false })
+}
 
-const handleSubmit = (e) => {
-  e.preventDefault();
+const handleSubmit = e => {
+  e.preventDefault()
 
-  state.invalid = (state.curr === 5);
-  setState({ succeeded: !invalid});
+  state.invalid = state.curr === 5
+  setState({ succeeded: !invalid })
 
   if (state.invalid) {
-    this.counter.focus();
+    this.counter.focus()
   }
-};
+}
 
-const successful = state.succeeded;
-const invalid = (state.curr === 5);
+const successful = state.succeeded
+const invalid = state.curr === 5
 
-const listType = invalid? 'x': 'checkmark';
+const listType = invalid ? 'x' : 'checkmark'
 
-const fieldError = invalid? 'field--error':'';
-const fieldSuccess = successful? 'field--success':'';
+const fieldError = invalid ? 'field--error' : ''
+const fieldSuccess = successful ? 'field--success' : ''
 
-const helperError = invalid? 'helper--error':'';
-const helperSuccess = successful? 'helper--success':'';
-
-<form onSubmit={handleSubmit}>
+const helperError = invalid ? 'helper--error' : ''
+const helperSuccess = successful ? 'helper--success' : ''
+;<form onSubmit={handleSubmit}>
   <div className={`field ${fieldError} ${fieldSuccess}`}>
-    <label htmlFor="ex-selcounter" className="docs_selcounter-label">How many smartphone plans?</label>
+    <label htmlFor="ex-selcounter" className="docs_selcounter-label">
+      How many smartphone plans?
+    </label>
     <div id="ex-selcounter-desc">
       <Paragraph size="small">Instructions</Paragraph>
       <UnorderedList listStyle={listType}>
-        <UnorderedList.Item >Do not pick 5</UnorderedList.Item>
+        <UnorderedList.Item>Do not pick 5</UnorderedList.Item>
       </UnorderedList>
     </div>
     <SelectorCounter
-      ref={(counter) => this.counter = counter}
+      ref={counter => (this.counter = counter)}
       id="ex-selcounter"
       incrementorLabel="Add a plan"
       decrementorLabel="Remove a plan"

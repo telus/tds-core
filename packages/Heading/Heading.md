@@ -1,4 +1,4 @@
-```
+```jsx
 <Box between={3}>
   <Heading level="h1">Heading level 1</Heading>
   <Heading level="h2">Heading level 2</Heading>

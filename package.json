@@ -147,6 +147,7 @@
       "git add"
     ],
     "*.scss": "stylelint --config config/stylelint.config.js",
+    "*.md": ["prettier --write", "git add"],
     "*": "echint"
   },
   "echint": {

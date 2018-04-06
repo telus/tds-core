@@ -1,19 +1,15 @@
-```
+```jsx
 <ExpandCollapse>
   <ExpandCollapse.Panel id="features" header="Features">
     <Box between={3}>
       <Box between={2}>
         <Heading level="h4">Connected GPS</Heading>
-        <Paragraph size="medium">
-          Connect to your phone's GPS to see real-time run stats.
-        </Paragraph>
+        <Paragraph size="medium">Connect to your phone's GPS to see real-time run stats.</Paragraph>
       </Box>
 
       <Box between={2}>
         <Heading level="h4">Notifications</Heading>
-        <Paragraph size="medium">
-          See call, text and calendar alerts on your wrist.
-        </Paragraph>
+        <Paragraph size="medium">See call, text and calendar alerts on your wrist.</Paragraph>
       </Box>
     </Box>
   </ExpandCollapse.Panel>
@@ -34,14 +30,16 @@
 </ExpandCollapse>
 ```
 
-```
+```jsx
 <div>
   <Heading level="h2">Charges on this new bill</Heading>
 
   <ExpandCollapse topDivider={false}>
     <ExpandCollapse.Panel
       id="monthly-plan"
-      header="Monthly Home Phone plan" subtext="Jul 10-Aug 9" tertiaryText="$20.50"
+      header="Monthly Home Phone plan"
+      subtext="Jul 10-Aug 9"
+      tertiaryText="$20.50"
     >
       <Box between={3}>
         <Paragraph size="medium">
@@ -50,15 +48,15 @@
           <Text size="small">Includes Local Line, Call Display, and Voice Mail</Text>
         </Paragraph>
 
-        <Paragraph size="medium">
-          E 9-1-1 Provincial Network Fee $0.50
-        </Paragraph>
+        <Paragraph size="medium">E 9-1-1 Provincial Network Fee $0.50</Paragraph>
       </Box>
     </ExpandCollapse.Panel>
 
     <ExpandCollapse.Panel
       id="additional-charges"
-      header="Additional charges and credits" subtext="Jun 10-Jul 9" tertiaryText="$7.50"
+      header="Additional charges and credits"
+      subtext="Jun 10-Jul 9"
+      tertiaryText="$7.50"
     >
       <Box between={3}>
         <Paragraph size="medium">

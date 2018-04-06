@@ -54,19 +54,22 @@ When rendering on the server you can use the `defaultMatches` prop to set the in
 
 You can detect the user's device by analyzing the user-agent string from the HTTP request in your server-side rendering code. There are many ways of doing this, a popular tool is [mobile-detect](https://www.npmjs.com/package/mobile-detect).
 
-```
+```jsx
 initialState = {
-  device: 'desktop' // add your own guessing logic here
-};
+  device: 'desktop', // add your own detection logic here
+}
+;<div>
+  <Responsive
+    maxWidth="md"
+    defaultMatches={state.device === 'mobile'}
+    render={() => <Text>Render me below medium breakpoint.</Text>}
+  />
 
-<div>
-  <Responsive maxWidth="md" defaultMatches={state.device === 'mobile'} render={() => (
-    <Text>Render me below medium breakpoint.</Text>
-  )}/>
-
-  <Responsive minWidth="md" defaultMatches={state.device === 'desktop'} render={() => (
-    <Text>Render me above medium breakpoint.</Text>
-  )}/>
+  <Responsive
+    minWidth="md"
+    defaultMatches={state.device === 'desktop'}
+    render={() => <Text>Render me above medium breakpoint.</Text>}
+  />
 </div>
 ```
 

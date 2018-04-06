@@ -6,7 +6,7 @@ A stand-alone checkbox is used for a single option that the user can turn on or 
 
 <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" target="_blank">Reference</a>
 
-```
+```jsx
 <Box tag="fieldset" between={2}>
   <legend>
     <Text bold size="medium">
@@ -24,22 +24,30 @@ A stand-alone checkbox is used for a single option that the user can turn on or 
 
 Use the feedback and error props to give the user feedback regarding a missed checkbox by highlighting the label, checkbox element and adding an error message stating how to proceed.
 
-```
-const message = "Please agree to the terms and conditions";
+```jsx
+const message = 'Please agree to the terms and conditions'
 
 initialState = {
   checked: false,
   feedback: 'error',
   message: message,
-};
+}
 
-const handleCheck = (event) => {
+const handleCheck = event => {
   if (event.target.checked) {
-    setState({ checked: false, feedback: undefined, message: undefined});
+    setState({ checked: false, feedback: undefined, message: undefined })
   } else {
-    setState({ checked: true, feedback: 'error', message: message});
+    setState({ checked: true, feedback: 'error', message: message })
   }
-};
+}
 
-<Checkbox name="terms" value="agree" label="I agree to the terms and conditions" feedback={state.feedback} error={state.message} onChange={handleCheck} checked={state.checked} />
+<Checkbox
+  name="terms"
+  value="agree"
+  label="I agree to the terms and conditions"
+  feedback={state.feedback}
+  error={state.message}
+  onChange={handleCheck}
+  checked={state.checked}
+/>
 ```

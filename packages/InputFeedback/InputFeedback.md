@@ -2,7 +2,7 @@
 
 While its primary use is to facilitate feedback states for other form components such as [Input](#input), you may use it standalone.
 
-```
+```jsx
 <InputFeedback>
   <Paragraph>Provide a brief description of your issue</Paragraph>
 </InputFeedback>
@@ -16,40 +16,46 @@ contents of the `InputFeedback` component by giving you access to the `feedback`
 As an example, enter a value into the field below, then click away to lose focus. If you enter less than the 16
 character minimum the helper will show as an error. Enter 16 or more characters to receive the success feedback.
 
-```
+```jsx
 initialState = {
   value: '',
   status: undefined,
-};
+}
 
-const updateValue = (event) => {
+const updateValue = event => {
   setState({ value: event.target.value })
-};
+}
 
-const validate = (event) => {
+const validate = event => {
   const value = event.target.value
 
   if (value.length < 16) {
     setState({ status: 'error' })
-  }
-  else {
+  } else {
     setState({ status: 'success' })
   }
-};
+}
 
-const passwordRequirements = (feedback) => {
+const passwordRequirements = feedback => {
   let listStyle
 
-  switch(feedback) {
-    case 'success': listStyle = 'checkmark'; break;
-    case 'error': listStyle = 'x'; break;
-    default: listStyle = 'circle'
+  switch (feedback) {
+    case 'success':
+      listStyle = 'checkmark'
+      break
+    case 'error':
+      listStyle = 'x'
+      break
+    default:
+      listStyle = 'circle'
   }
 
   return (
     <InputFeedback feedback={feedback}>
       <Box between={2}>
-        <Paragraph size="small" bold>Your password must be:</Paragraph>
+        <Paragraph size="small" bold>
+          Your password must be:
+        </Paragraph>
 
         <UnorderedList listStyle={listStyle}>
           <UnorderedList.Item>16 characters or longer</UnorderedList.Item>
@@ -57,13 +63,17 @@ const passwordRequirements = (feedback) => {
         </UnorderedList>
       </Box>
     </InputFeedback>
-  );
-};
+  )
+}
 
 <Input
-  label="Password" type="password" id="password-2"
-  value={state.value} feedback={state.status}
-  onChange={updateValue} onBlur={validate}
+  label="Password"
+  type="password"
+  id="password-2"
+  value={state.value}
+  feedback={state.status}
+  onChange={updateValue}
+  onBlur={validate}
   helper={passwordRequirements}
 />
 ```
