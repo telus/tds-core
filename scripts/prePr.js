@@ -61,7 +61,7 @@ getUpdatedPackageNames(async packageNames => {
       )}.`
     )
     console.log(
-      '\r\nOtherwise, paste the entire output of the verifyPr task into the body of your Pull Request so that a maintainer can verify when publishing.'
+      '\r\nOtherwise, paste the entire output of this task into the body of your Pull Request so that a maintainer can verify before merging/publishing.'
     )
   })
 })
