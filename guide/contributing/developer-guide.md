@@ -57,7 +57,25 @@ yarn scaffold MyComponent
 We use [husky](https://github.com/typicode/husky) to run precommit tasks on staged files, which includes code formatting, linting, and tests.
 You will not be able to make a commit until the precommit tasks pass. We also have a prepush hook to run a full build before pushing your code.
 
+Automated component versioning is facilitated by the [Conventional Commits specification](https://conventionalcommits.org/), so you must
+be deliberate when choosing the type of commit. For example, only use the "feat" type if you are adding a backwards-compatible feature
+to a component.
+
 ```bash
 # Stage your files and make a commit using commitizen
 git cz
 ```
+
+## Make a Pull Request
+
+Before making your Pull Request, we have a pre-pr tasks as a final verification step. You may make your PR only after its successful
+completion.
+
+Paste the full output of the pre-pr task into the body of your PR so that a maintainer/publisher can verify when publishing.
+
+```bash
+yarn prepr
+```
+
+The pre-pr task will show you the version change that will result from your changeset. If the output is unexpected, you may need
+to adjust your commit messages before making your PR. See the [Conventional Commits spec FAQ](https://conventionalcommits.org/#faq) for more info on correcting mistakes.
