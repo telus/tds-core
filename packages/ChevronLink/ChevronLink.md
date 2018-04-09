@@ -4,7 +4,7 @@ A Chevron Link is a navigational element that should only be used as a standalon
 
 By default, Chevron Links will be displayed in the `primary` variant.
 
-```
+```jsx
 <ChevronLink href="#">Go to the TDS homepage</ChevronLink>
 ```
 
@@ -17,8 +17,10 @@ By default, Chevron Links will be displayed in the `primary` variant.
 
 Specify the variant to create a button for secondary actions.
 
-```
-<ChevronLink href="#" variant="secondary">Get great deals</ChevronLink>
+```jsx
+<ChevronLink href="#" variant="secondary">
+  Get great deals
+</ChevronLink>
 ```
 
 ### Placing Chevron Links on solid colours
@@ -35,6 +37,8 @@ Use the inverted Chevron Link on top of any solid dark colour such as TELUS purp
 
 Chevron Link can be used as a "back" button by specifying the `direction`. These are not suitable for breadcrumb navigation due to the chevron's hover animation.
 
-```
-<ChevronLink href="#" direction="left">Back to your plans</ChevronLink>
+```jsx
+<ChevronLink href="#" direction="left">
+  Back to your plans
+</ChevronLink>
 ```

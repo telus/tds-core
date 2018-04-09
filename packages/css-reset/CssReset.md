@@ -5,10 +5,10 @@ import '@tds/core-css-reset/dist/index.css'
 ```
 
 ```jsx noeditor
-const { version } = require('./package.json');
-const PackageVersion = require('../../docs/components/custom/PackageVersion/PackageVersion').default;
+const { version } = require('./package.json')
+const PackageVersion = require('../../docs/components/custom/PackageVersion/PackageVersion').default
 
-<PackageVersion version={version} />
+;<PackageVersion version={version} />
 ```
 
 This package includes a small amount of page-level styles to establish a common baseline:

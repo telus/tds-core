@@ -1,6 +1,6 @@
 ### Minimal usage
 
-```
+```jsx
 <Spinner spinning />
 ```
 
@@ -8,7 +8,7 @@
 
 Provide a `tip` to give more context about what is happening.
 
-```
+```jsx
 <Spinner spinning tip="Loading" />
 ```
 
@@ -21,7 +21,7 @@ Avoid overlaying the entire window with the `Spinner`.
 
 Wrap the `Spinner` around the content to overlay it.
 
-```
+```jsx
 <Spinner spinning>
   <section>
     <Heading level="h3">Current Bill</Heading>

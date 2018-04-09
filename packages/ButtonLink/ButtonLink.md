@@ -4,7 +4,7 @@ A Button Link is a navigational element that styles itself as a button. Clicking
 
 By default, Buttons will be displayed in the `primary` variant. Use primary Button Links for the main call to action on a page.
 
-```
+```jsx
 <ButtonLink href="#">Find out how</ButtonLink>
 ```
 

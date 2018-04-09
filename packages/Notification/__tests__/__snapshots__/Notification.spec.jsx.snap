@@ -8,7 +8,7 @@ exports[`<Notification /> renders 1`] = `
     class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_flexboxgrid2__container-fluid___3c7kO"
   >
     <div
-      class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__padding___2tLQS"
+      class="TDS_flexboxgrid2__col-xs___2KrHO col-xs-offset TDS_Col-modules__padding___2tLQS"
     >
       <div
         class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
