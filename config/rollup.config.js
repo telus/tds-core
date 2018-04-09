@@ -33,10 +33,9 @@ export default opts => {
   return {
     input: options.input,
     output: [
-      { format: 'cjs', file: './dist/index.cjs.js' },
-      { format: 'es', file: './dist/index.es.js' },
+      { format: 'cjs', file: './dist/index.cjs.js', sourcemap: true },
+      { format: 'es', file: './dist/index.es.js', sourcemap: true },
     ],
-    sourcemap: true,
 
     external: ['react', 'react-dom', 'prop-types'].concat(tdsExternals),
 
@@ -52,26 +51,37 @@ export default opts => {
       }),
       options.css &&
         postcss({
-          extract: './dist/index.css',
+          extract: true, // check the filename to see if we need index.css instead
           sourceMap: true,
-          extensions: ['.scss', '.css'],
-          preprocessor: sassPreprocessor,
-          plugins: [
-            autoprefixer(),
-            postcssModules({
-              Loader: CssModulesSassLoader,
-              globalModulePaths: [/packages\/SelectorCounter/, /packages\/StepTracker/],
-              generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
-              getJSON(id, exportTokens) {
-                cssExportMap[id] = exportTokens
-              },
-            }),
-          ],
-          getExportNamed: false,
-          getExport(id) {
-            return cssExportMap[id]
+          plugins: [autoprefixer()],
+          modules: {
+            globalModulePaths: [/packages\/SelectorCounter/, /packages\/StepTracker/],
+            generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
           },
+          // look into autoModules :)
         }),
+
+      // postcss({
+      //   extract: './dist/index.css',
+      //   sourceMap: true,
+      //   extensions: ['.scss', '.css'],
+      //   preprocessor: sassPreprocessor,
+      //   plugins: [
+      //     autoprefixer(),
+      //     postcssModules({
+      //       Loader: CssModulesSassLoader,
+      //       globalModulePaths: [/packages\/SelectorCounter/, /packages\/StepTracker/],
+      //       generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
+      //       getJSON(id, exportTokens) {
+      //         cssExportMap[id] = exportTokens
+      //       },
+      //     }),
+      //   ],
+      //   getExportNamed: false,
+      //   getExport(id) {
+      //     return cssExportMap[id]
+      //   },
+      // }),
       babel({
         plugins: ['external-helpers'],
         exclude: '../../node_modules/**',
