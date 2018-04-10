@@ -61,27 +61,39 @@ The `FlexGrid.Row` component can be used for Column alignment and distribution.
 
 ```jsx
 <FlexGrid>
-  <FlexGrid.Row horizontalAlign="center" distribute="around">
-    <FlexGrid.Col xs={4} sm={3}>
-      <Input label="Around 1" />
+  <FlexGrid.Row distribute="around" verticalAlign="middle">
+    <FlexGrid.Col xs={3} sm={3}>
+      <div className="docs_coloured-box">
+        <p>Around</p>
+      </div>
     </FlexGrid.Col>
-    <FlexGrid.Col xs={4} sm={3}>
-      <Input label="Around 2" />
+    <FlexGrid.Col xs={3} sm={3}>
+      <div className="docs_coloured-box">
+        <p>Around</p>
+      </div>
     </FlexGrid.Col>
-    <FlexGrid.Col xs={4} sm={3}>
-      <Input label="Around 3" />
+    <FlexGrid.Col xs={3} sm={3}>
+      <div className="docs_coloured-box">
+        <p>Around</p>
+      </div>
     </FlexGrid.Col>
   </FlexGrid.Row>
 
-  <FlexGrid.Row distribute="between">
-    <FlexGrid.Col xs={4} sm={3}>
-      <Input label="Between 1" />
+  <FlexGrid.Row distribute="between" verticalAlign="middle">
+    <FlexGrid.Col xs={3} sm={3}>
+      <div className="docs_coloured-box">
+        <p>Between</p>
+      </div>
     </FlexGrid.Col>
-    <FlexGrid.Col xs={4} sm={3}>
-      <Input label="Between 2" />
+    <FlexGrid.Col xs={3} sm={3}>
+      <div className="docs_coloured-box">
+        <p>Between</p>
+      </div>
     </FlexGrid.Col>
-    <FlexGrid.Col xs={4} sm={3}>
-      <Input label="Between 3" />
+    <FlexGrid.Col xs={3} sm={3}>
+      <div className="docs_coloured-box">
+        <p>Between</p>
+      </div>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>

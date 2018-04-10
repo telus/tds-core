@@ -9,13 +9,13 @@ The `span` and `offset` props is now deprecated. Please use the `xs` and `xsOffs
 ```jsx
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col xs={3}>
+    <FlexGrid.Col xs={12} sm={3}>
       <Text>3 column</Text>
     </FlexGrid.Col>
-    <FlexGrid.Col xs={3} sm={4} md={5} lg={6} xl={7}>
+    <FlexGrid.Col xs={12} sm={4} md={5} lg={6} xl={7}>
       <Text>3-7 columns, depending on window size</Text>
     </FlexGrid.Col>
-    <FlexGrid.Col md={2}>
+    <FlexGrid.Col xs={12} md={2}>
       <Text>2 columns</Text>
     </FlexGrid.Col>
   </FlexGrid.Row>
