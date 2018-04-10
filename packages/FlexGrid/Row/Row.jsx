@@ -40,15 +40,15 @@ const Row = ({ horizontalAlign, verticalAlign, distribute, children, ...rest }) 
 
 Row.propTypes = {
   /**
-   * Align columns horizontally at the start, center, or end of their Row.
+   * Align columns horizontally within their row.
    */
   horizontalAlign: PropTypes.oneOf(['start', 'center', 'end']),
   /**
-   * Align columns vertically at the top, middle, or bottom of their Row.
+   * Align columns vertically within their row.
    */
   verticalAlign: PropTypes.oneOf(['top', 'middle', 'bottom']),
   /**
-   * Choose which flexbox distribution to use on your nested columns.
+   * Distribute empty space around columns.
    */
   distribute: PropTypes.oneOf(['around', 'between']),
   children: PropTypes.node.isRequired,

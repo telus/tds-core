@@ -13,6 +13,8 @@ import { deprecate } from '../../shared/utils/warn'
 import styles from './FlexGrid.modules.scss'
 
 /**
+ * A mobile-first flexbox grid.
+ *
  * @version ./package.json
  */
 const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {

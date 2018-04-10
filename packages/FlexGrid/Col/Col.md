@@ -1,49 +1,50 @@
-### Responsive Props
+### Responsive column widths
 
-When not supplied an `xs`, `sm`, `md`, `lg` or `xl` prop, Col components automatically expand to fill the width of their container. You can specify a column amount from 1 to 12 when they are specified.
+Use the `xs`, `sm`, `md`, `lg` and `xl` props to set the number of column widths to span. When not specified,
+columns will automatically span equal widths in their row.
 
-The `xs`, `sm`, `md`, `lg` or `xl` props correspond to their min-width breakpoints. For example, when `md` is defined as `6`, your column width will be `6` from the `md` breakpoint and greater, unless you specify a value for `lg` or `xl`. Refer to the chart in the [**Responsive**](#responsive) section to learn what each breakpoint equates to.
+The column span props correspond to their min-width breakpoints. For example, when `md` is defined as `6`, your column
+width will be `6` from the `md` breakpoint and greater, unless you specify a value for `lg` or `xl`.
 
-The `span` and `offset` props is now deprecated. Please use the `xs` and `xsOffset` props for identical functionality.
+Refer to the table in the [**Responsive**](#responsive) section for the breakpoins.
 
-```jsx
+```jsx { "props": { "className": "docs_flex-grid-coloring" } }
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col xs={12} sm={3}>
-      <div className="docs_coloured-box">
-        <Text>3 column</Text>
-      </div>
+    <FlexGrid.Col xs={12} md={6}>
+      <Box vertical={2}><Text>12 xs, 6 md</Text></Box>
     </FlexGrid.Col>
-    <FlexGrid.Col xs={12} sm={4} md={5} lg={6} xl={7}>
-      <div className="docs_coloured-box">
-        <Text>3-7 columns, depending on window size</Text>
-      </div>
+    <FlexGrid.Col xs={12} md={6}>
+      <Box vertical={2}><Text>12 xs, 6 md</Text></Box>
     </FlexGrid.Col>
-    <FlexGrid.Col xs={12} md={2}>
-      <div className="docs_coloured-box">
-        <Text>2 columns</Text>
-      </div>
+  </FlexGrid.Row>
+
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={6} md={4}>
+      <Box vertical={2}><Text>6 xs, 4 md</Text></Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={6} md={4}>
+      <Box vertical={2}><Text>6 xs, 4 md</Text></Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={6} md={4}>
+      <Box vertical={2}><Text>6 xs, 4 md</Text></Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
 ```
 
-### Offset
+### Offsetting columns
 
-Supplying an `xsOffset`, `smOffset`, `mdOffset`, `lgOffset` or `xlOffset` prop will add a left margin to your Col depending on screen size.
+Move columns to the right using the responsive `offset` props.
 
-```jsx
+```jsx { "props": { "className": "docs_flex-grid-coloring" } }
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col xsOffset={3}>
-      <div className="docs_coloured-box">
-        <Text>3 columns away</Text>
-      </div>
+    <FlexGrid.Col xs={4}>
+      <Box vertical={2}><Text>4 xs</Text></Box>
     </FlexGrid.Col>
-    <FlexGrid.Col xsOffset={1} lgOffset={4}>
-      <div className="docs_coloured-box">
-        <Text>1 or 4 columns away</Text>
-      </div>
+    <FlexGrid.Col xs={4} xsOffset={4}>
+      <Box vertical={2}><Text>4 xs, offset 4</Text></Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
