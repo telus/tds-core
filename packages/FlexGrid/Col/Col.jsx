@@ -8,13 +8,12 @@ import safeRest from '../../../shared/utils/safeRest'
 import { deprecate } from '../../../shared/utils/warn'
 import styles from './Col.modules.scss'
 
-const Col = ({ children, span, offset, ...rest }) => {
+const Col = ({ span, offset, children, ...rest }) => {
   if (offset) {
     deprecate(
       'core-flex-grid',
-      `The offset prop is deprecated due to the addition of the new responsive
-    offset props.
-    Replace offset in your Col definition with xsOffset for identical functionality.`
+      `The offset prop is deprecated due to the addition of the new responsive offset props.
+      Replace offset in your Col definition with xsOffset for identical functionality.`
     )
   }
   if (span) {
@@ -27,7 +26,9 @@ const Col = ({ children, span, offset, ...rest }) => {
 
   const props = { ...rest }
 
-  if (offset && !props.xsOffset) props.xsOffset = offset
+  if (offset && !props.xsOffset) {
+    props.xsOffset = offset
+  }
 
   return (
     <Subscriber channel="flex-grid">
