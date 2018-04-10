@@ -5,16 +5,40 @@ The `FlexGrid.Row` component can be used for Column alignment and distribution.
 ```jsx
 <FlexGrid>
   <FlexGrid.Row horizontalAlign="start">
-    <FlexGrid.Col xs={2}>Left</FlexGrid.Col>
-    <FlexGrid.Col xs={2}>aligned</FlexGrid.Col>
+    <FlexGrid.Col xs={4} md={2}>
+      <div className="docs_coloured-box">
+        <Text>Left</Text>
+      </div>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={4} md={2}>
+      <div className="docs_coloured-box">
+        <Text>aligned</Text>
+      </div>
+    </FlexGrid.Col>
   </FlexGrid.Row>
   <FlexGrid.Row horizontalAlign="center">
-    <FlexGrid.Col xs={2}>Center</FlexGrid.Col>
-    <FlexGrid.Col xs={2}>aligned</FlexGrid.Col>
+    <FlexGrid.Col xs={4} md={2}>
+      <div className="docs_coloured-box">
+        <Text>Center</Text>
+      </div>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={4} md={2}>
+      <div className="docs_coloured-box">
+        <Text>aligned</Text>
+      </div>
+    </FlexGrid.Col>
   </FlexGrid.Row>
   <FlexGrid.Row horizontalAlign="end">
-    <FlexGrid.Col xs={2}>Right</FlexGrid.Col>
-    <FlexGrid.Col xs={2}>aligned</FlexGrid.Col>
+    <FlexGrid.Col xs={4} md={2}>
+      <div className="docs_coloured-box">
+        <Text>Right</Text>
+      </div>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={4} md={2}>
+      <div className="docs_coloured-box">
+        <Text>aligned</Text>
+      </div>
+    </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
 ```
@@ -61,38 +85,38 @@ The `FlexGrid.Row` component can be used for Column alignment and distribution.
 
 ```jsx
 <FlexGrid>
-  <FlexGrid.Row distribute="around" verticalAlign="middle">
+  <FlexGrid.Row distribute="around">
     <FlexGrid.Col xs={3} sm={3}>
       <div className="docs_coloured-box">
-        <p>Around</p>
+        <Text>Around</Text>
       </div>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3} sm={3}>
       <div className="docs_coloured-box">
-        <p>Around</p>
+        <Text>Around</Text>
       </div>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3} sm={3}>
       <div className="docs_coloured-box">
-        <p>Around</p>
+        <Text>Around</Text>
       </div>
     </FlexGrid.Col>
   </FlexGrid.Row>
 
-  <FlexGrid.Row distribute="between" verticalAlign="middle">
+  <FlexGrid.Row distribute="between">
     <FlexGrid.Col xs={3} sm={3}>
       <div className="docs_coloured-box">
-        <p>Between</p>
+        <Text>Between</Text>
       </div>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3} sm={3}>
       <div className="docs_coloured-box">
-        <p>Between</p>
+        <Text>Between</Text>
       </div>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3} sm={3}>
       <div className="docs_coloured-box">
-        <p>Between</p>
+        <Text>Between</Text>
       </div>
     </FlexGrid.Col>
   </FlexGrid.Row>

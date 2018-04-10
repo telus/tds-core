@@ -10,13 +10,19 @@ The `span` and `offset` props is now deprecated. Please use the `xs` and `xsOffs
 <FlexGrid>
   <FlexGrid.Row>
     <FlexGrid.Col xs={12} sm={3}>
-      <Text>3 column</Text>
+      <div className="docs_coloured-box">
+        <Text>3 column</Text>
+      </div>
     </FlexGrid.Col>
     <FlexGrid.Col xs={12} sm={4} md={5} lg={6} xl={7}>
-      <Text>3-7 columns, depending on window size</Text>
+      <div className="docs_coloured-box">
+        <Text>3-7 columns, depending on window size</Text>
+      </div>
     </FlexGrid.Col>
     <FlexGrid.Col xs={12} md={2}>
-      <Text>2 columns</Text>
+      <div className="docs_coloured-box">
+        <Text>2 columns</Text>
+      </div>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
@@ -30,10 +36,14 @@ Supplying an `xsOffset`, `smOffset`, `mdOffset`, `lgOffset` or `xlOffset` prop w
 <FlexGrid>
   <FlexGrid.Row>
     <FlexGrid.Col xsOffset={3}>
-      <Text>3 columns away</Text>
+      <div className="docs_coloured-box">
+        <Text>3 columns away</Text>
+      </div>
     </FlexGrid.Col>
     <FlexGrid.Col xsOffset={1} lgOffset={4}>
-      <Text>1 or 4 columns away</Text>
+      <div className="docs_coloured-box">
+        <Text>1 or 4 columns away</Text>
+      </div>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
