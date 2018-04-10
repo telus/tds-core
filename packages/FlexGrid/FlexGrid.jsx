@@ -38,6 +38,7 @@ const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {
 FlexGrid.propTypes = {
   /**
    * @deprecated Centres the grid horizontally. This is useful when using `limitWidth`.
+   * @since 1.1.0
    *
    * When using `limitWidth`, the grid will centre.
    */
@@ -51,8 +52,7 @@ FlexGrid.propTypes = {
    */
   gutter: PropTypes.bool,
   /**
-   * The rows or columns of the Grid. Will typically be `FlexGrid.Row` or `FlexGrid.Col` components,
-   * but could be other components such as a `Responsive` wrapper.
+   * The rows and columns of the Grid. Will typically be `FlexGrid.Row` and `FlexGrid.Col` components.
    */
   children: PropTypes.node.isRequired,
 }

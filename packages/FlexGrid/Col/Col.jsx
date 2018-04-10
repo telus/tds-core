@@ -12,15 +12,13 @@ const Col = ({ span, offset, children, ...rest }) => {
   if (offset) {
     deprecate(
       'core-flex-grid',
-      `The offset prop is deprecated due to the addition of the new responsive offset props.
-      Replace offset in your Col definition with xsOffset for identical functionality.`
+      'The `offset` prop is deprecated due to the addition of the responsive offset props. Use `xsOffset` instead.'
     )
   }
   if (span) {
     deprecate(
       'core-flex-grid',
-      `The span prop is deprecated due to the addition of the new responsive props.
-      Replace span in your Col definition with xs for identical functionality.`
+      'The `span` prop is deprecated due to the addition of the responsive props. Use `xs` instead.'
     )
   }
 
@@ -54,59 +52,82 @@ const Col = ({ span, offset, children, ...rest }) => {
 Col.propTypes = {
   /**
    * @deprecated Span the specified number of columns.
+   * @since 1.2.0
    *
    * Use the xs prop instead for identical functionality.
    */
   span: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
   /**
    * Specify number of columns within the 'xs' breakpoint range.
+   *
+   * @since 1.2.0
    */
   xs: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
   /**
    * Specify number of columns within the 'sm' breakpoint range.
+   *
+   * @since 1.2.0
    */
   sm: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
   /**
    * Specify number of columns within the 'md' breakpoint range.
+   *
+   * @since 1.2.0
    */
   md: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
   /**
    * Specify number of columns within the 'lg' breakpoint range.
+   *
+   * @since 1.2.0
    */
   lg: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
   /**
    * Specify number of columns after the 'xl' breakpoint.
+   *
+   * @since 1.2.0
    */
   xl: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
   /**
    * @deprecated Offset the specified number of columns.
+   * @since 1.2.0
    *
    * Use the xsOffset prop instead for identical functionality.
    */
   offset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
    * Offset the specified number of columns within the 'xs' breakpoint range.
+   *
+   * @since 1.2.0
    */
   xsOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
    * Offset the specified number of columns within the 'sm' breakpoint range.
+   *
+   * @since 1.2.0
    */
   smOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
    * Offset the specified number of columns within the 'md' breakpoint range.
+   *
+   * @since 1.2.0
    */
   mdOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
    * Offset the specified number of columns within the 'lg' breakpoint range.
+   *
+   * @since 1.2.0
    */
   lgOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
    * Offset the specified number of columns within the 'xl' breakpoint range.
+   *
+   * @since 1.2.0
    */
   xlOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
-   * The columns of the Grid. Will typically be `FlexGrid.Col` components, but could be other components such as a
-   * `Responsive` wrapper.
+   * The columns of the Grid. Will typically be `FlexGrid.Col` components.
+   *
+   * @since 1.2.0
    */
   children: PropTypes.node.isRequired,
 }
