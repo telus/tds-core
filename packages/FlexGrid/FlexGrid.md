@@ -9,8 +9,16 @@ used together.
 ```jsx
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col>half</FlexGrid.Col>
-    <FlexGrid.Col>half</FlexGrid.Col>
+    <FlexGrid.Col>
+      <div className="docs_coloured-box">
+        <Text>half</Text>
+      </div>
+    </FlexGrid.Col>
+    <FlexGrid.Col>
+      <div className="docs_coloured-box">
+        <Text>half</Text>
+      </div>
+    </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
 ```

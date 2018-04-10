@@ -6,7 +6,7 @@ exports[`Col renders 1`] = `
   xs={true}
 >
   <div
-    className="col-xs col-xs-offset padding"
+    className="col-xs padding"
   >
     Some content
   </div>

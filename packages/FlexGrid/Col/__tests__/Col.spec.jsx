@@ -2,8 +2,12 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 
+import { deprecate } from '../../../../shared/utils/warn'
+
 import FlexGrid from '../../FlexGrid'
 import Col from '../Col'
+
+jest.mock('../../../../shared/utils/warn')
 
 describe('Col', () => {
   const doMount = (props = {}) => {
@@ -35,42 +39,37 @@ describe('Col', () => {
   })
 
   it('can span a specified number of columns', () => {
-    const col = doMount({ span: 10 })
+    const col = doMount({ xs: 10 })
 
     expect(col).toHaveProp('xs', 10)
   })
 
-  it('can offset a number of columns', () => {
-    const col = doMount({ offset: 2 })
+  it('will show a span is deprecated warning', () => {
+    doMount({ span: 10 })
 
-    expect(col).toHaveProp('xsOffset', 2)
+    expect(deprecate).toHaveBeenCalled()
   })
 
-  it('does not support responsive column spans', () => {
-    const col = doMount({ xs: 1, sm: 2, md: 3, lg: 4, xl: 5, span: 10 })
-
-    expect(col).toHaveProp('xs', 10)
-    expect(col).not.toHaveProp('sm')
-    expect(col).not.toHaveProp('md')
-    expect(col).not.toHaveProp('lg')
-    expect(col).not.toHaveProp('xl')
-  })
-
-  it('does not support responsive offsets', () => {
+  it('supports responsive offsets', () => {
     const col = doMount({
       xsOffset: 1,
       smOffset: 2,
       mdOffset: 3,
       lgOffset: 4,
       xlOffset: 5,
-      offset: 10,
     })
 
-    expect(col).toHaveProp('xsOffset', 10)
-    expect(col).not.toHaveProp('smOffset')
-    expect(col).not.toHaveProp('mdOffset')
-    expect(col).not.toHaveProp('lgOffset')
-    expect(col).not.toHaveProp('xlOffset')
+    expect(col).toHaveProp('xsOffset', 1)
+    expect(col).toHaveProp('smOffset', 2)
+    expect(col).toHaveProp('mdOffset', 3)
+    expect(col).toHaveProp('lgOffset', 4)
+    expect(col).toHaveProp('xlOffset', 5)
+  })
+
+  it('will show an offset is deprecated warning', () => {
+    doMount({ offset: 10 })
+
+    expect(deprecate).toHaveBeenCalled()
   })
 
   it('passes additional attributes to the react-flexbox-grid Col', () => {

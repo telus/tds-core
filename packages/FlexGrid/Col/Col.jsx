@@ -5,52 +5,112 @@ import { Subscriber } from 'react-broadcast'
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 
 import safeRest from '../../../shared/utils/safeRest'
+import { deprecate } from '../../../shared/utils/warn'
 import styles from './Col.modules.scss'
 
-const removeProps = ({
-  xs,
-  sm,
-  md,
-  lg,
-  xl,
-  xsOffset,
-  smOffset,
-  mdOffset,
-  lgOffset,
-  xlOffset,
-  ...rest
-}) => safeRest(rest)
+const Col = ({ span, offset, children, ...rest }) => {
+  if (offset) {
+    deprecate(
+      'core-flex-grid',
+      `The offset prop is deprecated due to the addition of the new responsive offset props.
+      Replace offset in your Col definition with xsOffset for identical functionality.`
+    )
+  }
+  if (span) {
+    deprecate(
+      'core-flex-grid',
+      `The span prop is deprecated due to the addition of the new responsive props.
+      Replace span in your Col definition with xs for identical functionality.`
+    )
+  }
 
-const Col = ({ span, offset, children, ...rest }) => (
-  <Subscriber channel="flex-grid">
-    {gutter => (
-      <ReactFlexboxGridCol
-        {...removeProps(rest)}
-        xs={span || true}
-        xsOffset={offset}
-        className={gutter ? styles.padding : styles.gutterless}
-      >
-        {children}
-      </ReactFlexboxGridCol>
-    )}
-  </Subscriber>
-)
+  const props = { ...rest }
 
+  if (offset && !props.xsOffset) {
+    props.xsOffset = offset
+  }
+
+  return (
+    <Subscriber channel="flex-grid">
+      {gutter => (
+        <ReactFlexboxGridCol
+          {...safeRest(props)}
+          xs={rest.xs || span || true}
+          className={gutter ? styles.padding : styles.gutterless}
+        >
+          {children}
+        </ReactFlexboxGridCol>
+      )}
+    </Subscriber>
+  )
+}
+
+/* eslint-disable react/require-default-props */
+/*
+ * We're disabling default props since passing undefined props to
+ * the react-flexbox-grid component sets up blank classes that may cause
+ * styling issues.
+*/
 Col.propTypes = {
   /**
-   * Span the specified number of columns.
+   * @deprecated Span the specified number of columns.
+   *
+   * Use the xs prop instead for identical functionality.
    */
   span: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
   /**
-   * Offset the specified number of columns.
+   * Specify number of columns within the 'xs' breakpoint range.
+   */
+  xs: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
+  /**
+   * Specify number of columns within the 'sm' breakpoint range.
+   */
+  sm: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
+  /**
+   * Specify number of columns within the 'md' breakpoint range.
+   */
+  md: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
+  /**
+   * Specify number of columns within the 'lg' breakpoint range.
+   */
+  lg: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
+  /**
+   * Specify number of columns after the 'xl' breakpoint.
+   */
+  xl: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
+  /**
+   * @deprecated Offset the specified number of columns.
+   *
+   * Use the xsOffset prop instead for identical functionality.
    */
   offset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+  /**
+   * Offset the specified number of columns within the 'xs' breakpoint range.
+   */
+  xsOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+  /**
+   * Offset the specified number of columns within the 'sm' breakpoint range.
+   */
+  smOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+  /**
+   * Offset the specified number of columns within the 'md' breakpoint range.
+   */
+  mdOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+  /**
+   * Offset the specified number of columns within the 'lg' breakpoint range.
+   */
+  lgOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+  /**
+   * Offset the specified number of columns within the 'xl' breakpoint range.
+   */
+  xlOffset: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
    * The columns of the Grid. Will typically be `FlexGrid.Col` components, but could be other components such as a
    * `Responsive` wrapper.
    */
   children: PropTypes.node.isRequired,
 }
+/* eslint-enable */
 
 Col.defaultProps = {
   span: undefined,
