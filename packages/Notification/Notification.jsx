@@ -33,13 +33,15 @@ const renderIcon = icon => <DecorativeIcon symbol={icon.symbol} variant={icon.co
 const Notification = ({ variant, children, ...rest }) => (
   <Box {...safeRest(rest)} vertical={3} dangerouslyAddClassName={styles[variant]}>
     <FlexGrid limitWidth>
-      <FlexGrid.Col>
-        <Box inline between={3}>
-          {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
+      <FlexGrid.Row>
+        <FlexGrid.Col>
+          <Box inline between={3}>
+            {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
 
-          <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
-        </Box>
-      </FlexGrid.Col>
+            <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
+          </Box>
+        </FlexGrid.Col>
+      </FlexGrid.Row>
     </FlexGrid>
   </Box>
 )

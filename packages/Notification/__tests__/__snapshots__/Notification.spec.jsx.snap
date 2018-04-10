@@ -8,16 +8,20 @@ exports[`<Notification /> renders 1`] = `
     class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_flexboxgrid2__container-fluid___3c7kO"
   >
     <div
-      class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__padding___2tLQS"
+      class="TDS_Row-modules__flexRow___3CHOR TDS_flexboxgrid2__row___3YyB2"
     >
       <div
-        class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+        class="TDS_flexboxgrid2__col-xs___2KrHO col-xs-offset TDS_Col-modules__padding___2tLQS"
       >
-        <p
-          class="TDS_Typography-modules__wordBreak___11Xyp TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___22Swj TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__mediumFont___36OCZ TDS_Paragraph-modules__leftAlign___KgwhE"
+        <div
+          class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
         >
-          Some content
-        </p>
+          <p
+            class="TDS_Typography-modules__wordBreak___11Xyp TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___22Swj TDS_Typography-modules__medium___2XcY8 TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__mediumFont___36OCZ TDS_Paragraph-modules__leftAlign___KgwhE"
+          >
+            Some content
+          </p>
+        </div>
       </div>
     </div>
   </div>
