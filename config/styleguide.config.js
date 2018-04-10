@@ -350,7 +350,7 @@ module.exports = {
           use: 'babel-loader',
         },
         {
-          test: /(\.modules\.scss)$/,
+          test: /(\.modules\.scss|flexboxgrid)/,
           use: [
             'style-loader',
             {
@@ -378,6 +378,7 @@ module.exports = {
         },
         {
           test: /\.css$/,
+          exclude: /flexboxgrid/,
           use: ['style-loader', 'css-loader'],
         },
         {
