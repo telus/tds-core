@@ -16,7 +16,7 @@ For more information on the usage of each colour please refer to the [colour pri
 ```jsx noeditor
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(36,135,0)'}}></span>
         <Box between={3}>
@@ -26,7 +26,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
       <span className="docs_color-preview" style={{backgroundColor: 'rgb(102, 204, 0)'}}></span>
         <Box between={3}>
@@ -36,7 +36,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(75,40,109)'}}></span>
         <Box between={3}>
@@ -46,7 +46,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(42, 44, 46)'}}></span>
         <Box between={3}>
@@ -56,7 +56,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(84,89,95)'}}></span>
         <Box between={3}>
@@ -66,7 +66,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(255, 255, 255)'}}></span>
         <Box between={3}>
@@ -76,7 +76,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(193,35,53)'}}></span>
         <Box between={3}>
@@ -86,7 +86,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(255,246,248)'}}></span>
         <Box between={3}>
@@ -96,7 +96,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(242,239,244)'}}></span>
         <Box between={3}>
@@ -106,7 +106,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(216,216,216)'}}></span>
         <Box between={3}>
@@ -116,7 +116,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(247,247,248)'}}></span>
         <Box between={3}>
@@ -126,7 +126,7 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
-    <FlexGrid.Col span={4}>
+    <FlexGrid.Col xs={4}>
       <Box vertical={3}>
         <span className="docs_color-preview" style={{backgroundColor: 'rgb(244,249,242)'}}></span>
         <Box between={3}>
