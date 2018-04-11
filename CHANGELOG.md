@@ -1,8 +1,10 @@
+#### 1.0.10 (2018-04-11)
+
+##### Bug Fixes
+
+* **notification:**  make error text meet WCAG AAA compliance ([4b146897](https://github.com/telusdigital/tds/commit/4b146897396c9ddedb4757d54543276b69bc9901))
+
 #### 1.0.9 (2018-04-04)
-
-##### New Features
-
-* **scripts:**  enforce patch versions ([c62d8867](https://github.com/telusdigital/tds/commit/c62d8867688ba983807cc56068aade41fa8e0c32))
 
 ##### Bug Fixes
 
