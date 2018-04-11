@@ -23,16 +23,16 @@ Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md) or by [
 
 ### 1. Submit an issue {#1-submit-issue}
 
-We use [Github Issues](https://github.com/telusdigital/tds/issues) to track all of our bugs and open discussions so that
+We use [Github Issues](https://github.com/telusdigital/tds-core/issues) to track all of our bugs and open discussions so that
 they are visible to the community.
 
 However, if you would like to make a small adjustment to documentation, you may jump straight to [opening a pull request](#3-make-a-pull-request).
 If you found a bug or would like to begin a conversation, follow these steps:
 
-* Ensure the issue was not already reported by searching the [issues](https://github.com/telusdigital/tds/issues)
+* Ensure the issue was not already reported by searching the [issues](https://github.com/telusdigital/tds-core/issues)
 * If you're unable to find an open issue addressing your concern, either:
-  * [Report an issue](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
-  * [Suggest a feature](https://github.com/telusdigital/tds/issues/new?template=feature_template.md)
+  * [Report an issue](https://github.com/telusdigital/tds-core/issues/new?template=defect_template.md)
+  * [Suggest a feature](https://github.com/telusdigital/tds-core/issues/new?template=feature_template.md)
 * Be sure to include a title and clear description, as much relevant information as possible, and - if applicable - a code
   sample or executable test case demonstrating the expected behaviour that is not occurring
 

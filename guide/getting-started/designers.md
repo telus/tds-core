@@ -34,8 +34,6 @@ There are a variety of plugins available for Sketch. Here is a short list of plu
 
 * [Nudge Push Shove](http://nudgepushshove.com/): Set up custom nudge settings
 
-Visit our Github wiki for a more [detailed list of plugins](https://github.com/telusdigital/tds/wiki/Sketch-Plugins-for-TDS) that can also help with your project.
-
 ## Setting up Invision
 
 From design to prototyping, the TELUS Design team uses Invision suite of apps to help with our design workflow and to assist with collaboration. You can use InVision to share your prototypes and Craft Sync to sync up your designs.
@@ -173,7 +171,7 @@ When TDS makes releases you will get notified the next time you are on Sketch an
 
 <img alt="" src="craftmanager11.png" style="max-width: 500px; width: 100%;" />
 
-Releases updates to the system can be found on the [release notes on Github](https://github.com/telusdigital/tds/releases), so check back frequently for updates to the system.
+Releases updates to the system can be found on the [release notes on Github](https://github.com/telusdigital/tds-core/releases), so check back frequently for updates to the system.
 
 # Support
 
