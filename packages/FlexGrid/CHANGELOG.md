@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@1.1.0...@tds/core-flex-grid@1.2.0) (2018-04-11)
+
+
+### Features
+
+* **core-flex-grid:** add responsive props ([#566](https://github.com/telusdigital/tds/issues/566)) ([10e492c](https://github.com/telusdigital/tds/commit/10e492c)), closes [#465](https://github.com/telusdigital/tds/issues/465)
+
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@1.0.0...@tds/core-flex-grid@1.1.0) (2018-03-22)
 
