@@ -10,3 +10,4 @@ If you find yourself with some extra time (at the end of the day, waiting for a 
   "unwrap" the nested functions that are inside the components. These functions should either be changed to variable declarations, or hoisted out of the component function.
 * Make it more obvious via comments as to what changes have been made to the various Styleguidist components that are being copied and slightly modified (such as Pathline, TabButton, or Editor)
 * Spike using [repng](https://github.com/jxnblk/repng) to render individual React components as images. This strategy could be a superior replacement for visual regression over screenshotting the styleguide.
+* Use Git LFS for e2e baseline images and sketch files
