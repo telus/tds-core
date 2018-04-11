@@ -1,4 +1,4 @@
-![TELUS Design System](https://cdn.rawgit.com/telusdigital/tds/de9e745a/guide/Logo.svg 'TELUS Design System')
+![TELUS Design System](https://cdn.rawgit.com/telusdigital/tds-core/de9e745a/guide/Logo.svg 'TELUS Design System')
 
 # [TELUS Design System](https://tds.telus.com) [![npm version](https://img.shields.io/npm/v/@telusdigital/tds.svg)](https://www.npmjs.com/package/@telusdigital/tds) [![license](https://img.shields.io/github/license/telusdigital/tds.svg)](https://github.com/telusdigital/tds/blob/master/LICENSE.md)
 
@@ -14,7 +14,7 @@ digital design guidelines, code patterns and UI elements.
 
 TDS is intended for use by TELUS employees and approved vendors.
 
-## TDS active maintainers
+## Active maintainers
 
 The following group are the active maintainers of this project, and have merge rights accordingly. Please reach out to them if you have questions or need support for your contribution to the TELUS Design System.
 

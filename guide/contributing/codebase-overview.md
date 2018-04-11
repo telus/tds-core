@@ -102,7 +102,7 @@ Though the following patterns are not strictly enforced, they are strongly encou
   representations.
 * If a parent component does not use props and only passes them down to its children, pass components as props.
 
-[Here is an example of a React component that follows the above patterns](https://github.com/telusdigital/tds/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.jsx).
+[Here is an example of a React component that follows the above patterns](https://github.com/telusdigital/tds-core/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.jsx).
 
 ### Styling components
 
@@ -115,7 +115,7 @@ their respective **ComponentName.modules.scss** file. The following patterns are
 * Use flexbox, but be aware of cross-browser limitations
 * Components should make effective use of 'layout' components such as Box or Responsive, rather than styles
 
-[Here is an example of a scss file that uses the `composes` property from CSS modules](https://github.com/telusdigital/tds/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.modules.scss).
+[Here is an example of a scss file that uses the `composes` property from CSS modules](https://github.com/telusdigital/tds-core/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.modules.scss).
 
 **Rendered DOM**
 

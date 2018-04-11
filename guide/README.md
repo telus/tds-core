@@ -10,8 +10,8 @@ To view the **technical documentation** for the components, see the [component c
 
 To view **documentation from a previous version**, copy this URL into your browser's address bar, changing the version at the end to the desired version: [http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/).
 
-If you're on version 0.y.z of `@telusdigital/tds`, please follow our migration guide for [upgrading to v1.y.z](https://github.com/telusdigital/tds/releases/tag/v1.0.0).
+If you're on version 0.y.z of `@telusdigital/tds`, please follow our migration guide for [upgrading to v1.y.z](https://github.com/telusdigital/tds-core/releases/tag/v1.0.0).
 
-If you're already on v1.y.z of `@telusdigital/tds`, please follow our migration guide for [upgrading to split components](https://github.com/telusdigital/tds/releases/tag/v2.0.0).
+If you're already on v1.y.z of `@telusdigital/tds`, please follow our migration guide for [upgrading to split components](https://github.com/telusdigital/tds-core/releases/tag/v2.0.0).
 
 Feel free to [contact us](./contact.md) for any support-related queries.

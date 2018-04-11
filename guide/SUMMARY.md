@@ -32,7 +32,7 @@
 
 * [Contact us](contact.md)
 * [FAQs](faq.md)
-* [Report an issue](https://github.com/telusdigital/tds/issues/new?template=defect_template.md)
-* [Suggest a feature](https://github.com/telusdigital/tds/issues/new?template=feature_template.md)
-* [TDS on GitHub](https://github.com/telusdigital/tds)
+* [Report an issue](https://github.com/telusdigital/tds-core/issues/new?template=defect_template.md)
+* [Suggest a feature](https://github.com/telusdigital/tds-core/issues/new?template=feature_template.md)
+* [TDS on GitHub](https://github.com/telusdigital/tds-core)
 * [npm packages](https://www.npmjs.com/org/tds)
