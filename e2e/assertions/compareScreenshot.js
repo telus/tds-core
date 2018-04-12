@@ -2,6 +2,8 @@
 const resemble = require('node-resemble-js')
 const fs = require('fs')
 const path = require('path')
+const readline = require('readline')
+const { spawnSync } = require('child_process')
 
 const { tolerance } = require('../config')
 const { getVisualRegressionFolders } = require('../utils')
@@ -13,6 +15,25 @@ const ensureBaselinePhotoExists = (baselinePath, resultPath) => {
 
     fs.writeFileSync(baselinePath, fs.readFileSync(resultPath))
   }
+}
+
+const update = (baselinePath, resultPath, callback, data) => {
+  const read = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  })
+
+  read.question('Would you like to update the baseline for this screenshot? (y/n) ', answer => {
+    if (answer.toLowerCase() === 'y' || answer.toLowerCase() === 'yes') {
+      console.log('Generating new baseline screenshot...')
+      spawnSync('rm', [baselinePath], {
+        stdio: 'inherit',
+      })
+      fs.writeFileSync(baselinePath, fs.readFileSync(resultPath))
+    }
+    read.close()
+    callback(data)
+  })
 }
 
 exports.assertion = function(componentName, fileName) {
@@ -43,7 +64,13 @@ exports.assertion = function(componentName, fileName) {
       .compareTo(resultPath)
       // .ignoreAntialiasing()
       // .ignoreColors()
-      .onComplete(callback)
+      .onComplete(data => {
+        if (Number(data.misMatchPercentage) > 0.01) {
+          update(baselinePath, resultPath, callback, data)
+        } else {
+          callback(data)
+        }
+      })
 
     return this
   }

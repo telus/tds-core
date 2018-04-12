@@ -52,7 +52,7 @@ exports.command = function compareScreenshot(componentName, browserName, browser
   resizeWindow(this)
 
   takeScreenshot(resultScreenshotPath, this, rootSelector, () => {
-    this.assert.compareScreenshot(componentName, fileName)
+    this.verify.compareScreenshot(componentName, fileName)
   })
 
   return this
