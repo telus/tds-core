@@ -39,6 +39,54 @@ const config = {
 }
 const s3 = new AWS.S3({ region: config.region })
 
+/* eslint-disable consistent-return */
+const deleteLatest = () =>
+  new Promise((resolve, reject) => {
+    console.log('Removing old files from latest')
+
+    const params = {
+      Bucket: config.domain,
+      Key: 'latest',
+    }
+
+    s3.listObjects(params, (err, data) => {
+      if (err) {
+        console.error('Could not list objects', err)
+        return reject()
+      }
+
+      if (data.Contents.length === 0) {
+        console.log('There are no objects to list')
+        return resolve()
+      }
+
+      params.Delete = { Objects: [] }
+
+      data.Contents.forEach(content => {
+        params.Delete.Objects.push({
+          Key: content.Key,
+        })
+      })
+    })
+
+    if (params.Delete.Objects.length === 0) {
+      console.log('There are no objects to delete')
+      return resolve()
+    }
+
+    // Delete all objects in specified directory (up to 1000 objects)
+    s3.deleteObjects(params, (err, data) => {
+      if (err) {
+        console.error(err, err.stack)
+        reject()
+      } else {
+        console.log('Successfully removed objects from latest/', data)
+        resolve()
+      }
+    })
+  })
+/* eslint-enable consistent-return */
+
 const deployToS3 = prefix =>
   new Promise((resolve, reject) => {
     const deployConfig = Object.assign(config, { prefix })
@@ -81,5 +129,5 @@ if (env === 'production') {
     // TODO: Rip this out when the domain name is pointed at the new bucket: TDS-286
     .then(() => deployToS3Deprecated())
 } else {
-  deployToS3('staging')
+  deleteLatest().then(() => deployToS3('staging'))
 }
