@@ -1,4 +1,4 @@
-![TELUS Design System](https://cdn.rawgit.com/telusdigital/tds-core/de9e745a/guide/Logo.svg 'TELUS Design System')
+![TELUS Design System](https://cdn.rawgit.com/telusdigital/tds-core/1627991c/guide/Logo.svg)
 
 # [TELUS Design System](https://tds.telus.com) [![npm version](https://img.shields.io/npm/v/@telusdigital/tds.svg)](https://www.npmjs.com/package/@telusdigital/tds) [![license](https://img.shields.io/github/license/telusdigital/tds.svg)](https://github.com/telusdigital/tds-core/blob/master/LICENSE.md)
 
