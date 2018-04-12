@@ -1,6 +1,6 @@
 ![TELUS Design System](https://cdn.rawgit.com/telusdigital/tds-core/de9e745a/guide/Logo.svg 'TELUS Design System')
 
-# [TELUS Design System](https://tds.telus.com) [![npm version](https://img.shields.io/npm/v/@telusdigital/tds.svg)](https://www.npmjs.com/package/@telusdigital/tds) [![license](https://img.shields.io/github/license/telusdigital/tds.svg)](https://github.com/telusdigital/tds/blob/master/LICENSE.md)
+# [TELUS Design System](https://tds.telus.com) [![npm version](https://img.shields.io/npm/v/@telusdigital/tds.svg)](https://www.npmjs.com/package/@telusdigital/tds) [![license](https://img.shields.io/github/license/telusdigital/tds.svg)](https://github.com/telusdigital/tds-core/blob/master/LICENSE.md)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
