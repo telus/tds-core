@@ -33,7 +33,7 @@
     "lint": "npm-run-all --parallel lint:*",
     "precommit": "lint-staged && yarn test",
     "prepare": "yarn gitbook:install",
-    "prepr": "yarn test:e2e && node scripts/prePr.js",
+    "prepr": "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
     "prepush": "npm-run-all --parallel build test build-docs:*",
     "scaffold": "node scripts/scaffold.js",
     "test:e2e": "node scripts/e2e.js",
@@ -99,6 +99,7 @@
     "minimist": "^1.2.0",
     "nightwatch": "^0.9.19",
     "nightwatch-accessibility": "^1.6.0",
+    "node-emoji": "^1.8.1",
     "node-resemble-js": "^0.2.0",
     "node-sass": "^4.7.2",
     "node-sass-tilde-importer": "^1.0.1",
@@ -126,7 +127,8 @@
     "stylelint-config-recommended-scss": "^3.1.0",
     "stylelint-scss": "^3.0.0",
     "url-loader": "^1.0.1",
-    "webpack": "^4.4.1"
+    "webpack": "^4.4.1",
+    "yargs": "^11.0.0"
   },
   "dependencies": {
     "prop-types": "^15.5.10"
@@ -149,7 +151,10 @@
       "git add"
     ],
     "*.scss": "stylelint --config config/stylelint.config.js",
-    "*.md": ["prettier --write", "git add"],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ],
     "*": "echint"
   },
   "echint": {
