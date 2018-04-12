@@ -65,7 +65,7 @@ exports.assertion = function(componentName, fileName) {
       // .ignoreAntialiasing()
       // .ignoreColors()
       .onComplete(data => {
-        if (Number(data.misMatchPercentage) > 0.01) {
+        if (Number(data.misMatchPercentage) > 0.01 && process.env.UPDATE_SCREENSHOTS === 'true') {
           update(baselinePath, resultPath, callback, data)
         } else {
           callback(data)

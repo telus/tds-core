@@ -13,6 +13,7 @@ getUpdatedPackageNames(packageNames => {
     {
       env: Object.assign({}, process.env, {
         PACKAGES: onlyCorePackages,
+        UPDATE_SCREENSHOTS: process.argv[2] === '-u',
       }),
       stdio: 'inherit',
     }
