@@ -34,6 +34,7 @@ const update = (baselinePath, resultPath, callback, data) => {
     read.close()
     callback(data)
   })
+  return 'User was prompted to update screenshot.'
 }
 
 exports.assertion = function(componentName, fileName) {
@@ -66,7 +67,7 @@ exports.assertion = function(componentName, fileName) {
       // .ignoreColors()
       .onComplete(data => {
         if (Number(data.misMatchPercentage) > 0.01 && process.env.UPDATE_SCREENSHOTS === 'true') {
-          update(baselinePath, resultPath, callback, data)
+          this.message = update(baselinePath, resultPath, callback, data)
         } else {
           callback(data)
         }
@@ -86,9 +87,11 @@ exports.assertion = function(componentName, fileName) {
   this.pass = function pass(value) {
     const pass = value <= this.expected
 
-    this.message = `Screenshots ${
-      pass ? 'Matched' : 'Match Failed'
-    } for ${fileName} with a tolerance of ${this.expected}%, actual was ${value}%.`
+    if (process.env.UPDATE_SCREENSHOTS === 'false' || pass) {
+      this.message = `Screenshots ${
+        pass ? 'Matched' : 'Match Failed'
+      } for ${fileName} with a tolerance of ${this.expected}%, actual was ${value}%.`
+    }
 
     return pass
   }
