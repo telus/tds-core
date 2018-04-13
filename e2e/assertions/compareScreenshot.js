@@ -17,7 +17,6 @@ const ensureBaselinePhotoExists = (baselinePath, resultPath) => {
 }
 
 const update = (baselinePath, resultPath, callback, data) => {
-  let updateMessage
   if (process.env.UPDATE_SCREENSHOTS === 'true') {
     const read = readline.createInterface({
       input: process.stdin,
@@ -36,7 +35,6 @@ const update = (baselinePath, resultPath, callback, data) => {
     fs.writeFileSync(baselinePath, fs.readFileSync(resultPath))
     callback(data)
   }
-  return updateMessage
 }
 
 exports.assertion = function(componentName, fileName) {
@@ -73,7 +71,7 @@ exports.assertion = function(componentName, fileName) {
           (process.env.UPDATE_SCREENSHOTS === 'true' ||
             process.env.UPDATE_ALL_SCREENSHOTS === 'true')
         ) {
-          this.message = update(baselinePath, resultPath, callback, data)
+          update(baselinePath, resultPath, callback, data)
         } else {
           callback(data)
         }
