@@ -5,6 +5,8 @@ import cx from 'classnames'
 import Logo from 'rsg-components/Logo'
 import Markdown from 'rsg-components/Markdown'
 
+import FlexGrid from '../../../../packages/FlexGrid/FlexGrid'
+
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
   root: {
     backgroundColor: color.baseBackground,
@@ -54,16 +56,32 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
   },
 })
 
+const TdsGrid = ({ children }) => (
+  <FlexGrid limitWidth>
+    <FlexGrid.Row>
+      <FlexGrid.Col xs={12}>
+        {children}
+      </FlexGrid.Col>
+    </FlexGrid.Row>
+  </FlexGrid>
+)
+
 export function StyleGuideRenderer({ classes, title, homepageUrl, children, toc, hasSidebar }) {
+  const main = (
+    <main className={cx(hasSidebar && classes.content)}>
+      {children}
+      <footer className={classes.footer}>
+        <Markdown text={`Generated with [React Styleguidist](${homepageUrl})`} />
+      </footer>
+    </main>
+  )
+
   return (
     <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
       <a id="styleguidist-top">&nbsp;</a>
-      <main className={classes.content}>
-        {children}
-        <footer className={classes.footer}>
-          <Markdown text={`Generated with [React Styleguidist](${homepageUrl})`} />
-        </footer>
-      </main>
+
+      {hasSidebar ? main : <TdsGrid>{main}</TdsGrid>}
+
       {hasSidebar && (
         <div className={classes.sidebar}>
           <div className={classes.logo}>
