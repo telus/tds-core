@@ -74,7 +74,7 @@ exports.assertion = function(componentName, fileName) {
       // .ignoreColors()
       .onComplete(data => {
         if (
-          Number(data.misMatchPercentage) > 0.01 &&
+          Number(data.misMatchPercentage) > tolerance &&
           (updateScreenshots === 'true' || updateAllScreenshots === 'true')
         ) {
           update(baselinePath, resultPath, callback, data)
