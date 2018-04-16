@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
 const { spawnSync } = require('child_process')
+const parseArgs = require('minimist')
 
 const getUpdatedPackageNames = require('./utils/getUpdatedPackageNames')
 
 getUpdatedPackageNames(packageNames => {
+  const parsedArgs = parseArgs(process.argv.slice(2))
   const onlyCorePackages = packageNames.filter(name => name.startsWith('@tds/core-')).join(' ')
 
   const { status } = spawnSync(
@@ -13,8 +15,8 @@ getUpdatedPackageNames(packageNames => {
     {
       env: Object.assign({}, process.env, {
         PACKAGES: onlyCorePackages,
-        UPDATE_SCREENSHOTS: process.argv[2] === '-i',
-        UPDATE_ALL_SCREENSHOTS: process.argv[2] === '-u',
+        UPDATE_SCREENSHOTS: parsedArgs.i,
+        UPDATE_ALL_SCREENSHOTS: parsedArgs.u,
       }),
       stdio: 'inherit',
     }
