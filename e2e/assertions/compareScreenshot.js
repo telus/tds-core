@@ -7,8 +7,8 @@ const readline = require('readline')
 const { tolerance } = require('../config')
 const { getVisualRegressionFolders } = require('../utils')
 
-const updateScreenshots = process.env.UPDATE_SCREENSHOTS
-const updateAllScreenshots = process.env.UPDATE_ALL_SCREENSHOTS
+const updateScreenshots = process.env.UPDATE_SCREENSHOTS === 'true'
+const updateAllScreenshots = process.env.UPDATE_ALL_SCREENSHOTS === 'true'
 
 let promptAccepted = false
 
@@ -22,7 +22,7 @@ const ensureBaselinePhotoExists = (baselinePath, resultPath) => {
 }
 
 const update = (baselinePath, resultPath, callback, data) => {
-  if (updateScreenshots === 'true') {
+  if (updateScreenshots) {
     const read = readline.createInterface({
       input: process.stdin,
       output: process.stdout,
@@ -36,7 +36,7 @@ const update = (baselinePath, resultPath, callback, data) => {
       read.close()
       callback(data)
     })
-  } else if (updateAllScreenshots === 'true') {
+  } else if (updateAllScreenshots) {
     console.log('Generating new baseline screenshot...')
     promptAccepted = true
     fs.writeFileSync(baselinePath, fs.readFileSync(resultPath))
@@ -75,7 +75,7 @@ exports.assertion = function(componentName, fileName) {
       .onComplete(data => {
         if (
           Number(data.misMatchPercentage) > tolerance &&
-          (updateScreenshots === 'true' || updateAllScreenshots === 'true')
+          (updateScreenshots || updateAllScreenshots)
         ) {
           update(baselinePath, resultPath, callback, data)
         } else {
@@ -96,21 +96,19 @@ exports.assertion = function(componentName, fileName) {
   this.pass = function pass(value) {
     let pass = value <= this.expected
 
-    if (
-      (updateScreenshots === 'false' && updateAllScreenshots === 'false') ||
-      !promptAccepted ||
-      pass
-    ) {
+    if ((!updateScreenshots && !updateAllScreenshots) || !promptAccepted || pass) {
       this.message = `Screenshots ${
         pass ? 'Matched' : 'Match Failed'
       } for ${fileName} with a tolerance of ${this.expected}%, actual was ${value}%.`
-    } else if (updateScreenshots === 'true') {
+    } else if (updateScreenshots) {
       this.message = 'User updated failing baseline screenshot.'
       pass = true
-    } else if (updateAllScreenshots === 'true') {
+    } else if (updateAllScreenshots) {
       this.message = 'Initial screenshot match failed, but baseline screenshot was updated.'
       pass = true
     }
+
+    promptAccepted = false
 
     return pass
   }
