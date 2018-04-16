@@ -1,3 +1,5 @@
+**Use the "Open isolated" button above to view this component in full-width mode.**
+
 The `FlexGrid` system is a thin wrapper over [react-flexbox-grid](https://github.com/roylee0704/react-flexbox-grid),
 which implements [flexboxgrid.css](http://flexboxgrid.com/). It uses a series of rows and columns to layout and align
 content 2-dimensionally.
@@ -8,7 +10,7 @@ for background, terminology, guidelines, and code snippets.**
 Below is a quick example of how the components fit together. See the [FlexGrid.Row](#row) and [FlexGrid.Col](#col)
 components below for a more in-depth look.
 
-```jsx { "props": { "className": "docs_flex-grid-coloring" } }
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <FlexGrid limitWidth>
   <FlexGrid.Row>
     <FlexGrid.Col>
@@ -40,8 +42,8 @@ components below for a more in-depth look.
 Remove the 16px gutter surrounding columns by passing `gutter={false}` to the `FlexGrid` container. This removes the horizontal padding
 from all children columns.
 
-```jsx { "props": { "className": "docs_flex-grid-coloring" } }
-<FlexGrid gutter={false}>
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
+<FlexGrid limitWidth gutter={false}>
   <FlexGrid.Row>
     <FlexGrid.Col>
       <Box vertical={2}><Text>1/3 no gutter</Text></Box>

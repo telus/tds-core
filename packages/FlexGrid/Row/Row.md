@@ -2,8 +2,8 @@
 
 Use flexbox alignment properties to vertically and horizontally align columns.
 
-```jsx { "props": { "className": "docs_flex-grid-coloring" } }
-<FlexGrid>
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
+<FlexGrid limitWidth>
   <FlexGrid.Row horizontalAlign="start">
     <FlexGrid.Col xs={4} md={2}>
       <Box vertical={2}><Text>Left</Text></Box>
@@ -33,8 +33,8 @@ Use flexbox alignment properties to vertically and horizontally align columns.
 </FlexGrid>
 ```
 
-```jsx { "props": { "className": "docs_flex-grid-coloring" } }
-<FlexGrid>
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
+<FlexGrid limitWidth>
   <FlexGrid.Row verticalAlign="top">
     <FlexGrid.Col>
       <Box vertical={2}>
@@ -80,8 +80,8 @@ Use flexbox alignment properties to vertically and horizontally align columns.
 
 Use flexbox distribution properties to control the negative space around columns.
 
-```jsx { "props": { "className": "docs_flex-grid-coloring" } }
-<FlexGrid>
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
+<FlexGrid limitWidth>
   <FlexGrid.Row distribute="around">
     <FlexGrid.Col xs={3}>
       <Box vertical={2}><Text>Around</Text></Box>
