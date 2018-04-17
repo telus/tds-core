@@ -6,12 +6,22 @@ const path = require('path')
 const { tolerance } = require('../config')
 const { getVisualRegressionFolders } = require('../utils')
 
+const updateAllScreenshots = process.env.UPDATE_ALL_SCREENSHOTS === 'true'
+
 const ensureBaselinePhotoExists = (baselinePath, resultPath) => {
   if (!fs.existsSync(baselinePath)) {
     console.log('WARNING: baseline photo does NOT exist.')
     console.log(`Creating baseline photo from result: ${baselinePath}`)
 
     fs.writeFileSync(baselinePath, fs.readFileSync(resultPath))
+  }
+}
+
+const update = (baselinePath, resultPath, callback, data) => {
+  if (updateAllScreenshots) {
+    console.log('Generating new baseline screenshot...')
+    fs.writeFileSync(baselinePath, fs.readFileSync(resultPath))
+    callback(data)
   }
 }
 
@@ -43,8 +53,13 @@ exports.assertion = function(componentName, fileName) {
       .compareTo(resultPath)
       // .ignoreAntialiasing()
       // .ignoreColors()
-      .onComplete(callback)
-
+      .onComplete(data => {
+        if (Number(data.misMatchPercentage) > tolerance && updateAllScreenshots) {
+          update(baselinePath, resultPath, callback, data)
+        } else {
+          callback(data)
+        }
+      })
     return this
   }
 
@@ -57,11 +72,16 @@ exports.assertion = function(componentName, fileName) {
   }
 
   this.pass = function pass(value) {
-    const pass = value <= this.expected
+    let pass = value <= this.expected
 
-    this.message = `Screenshots ${
-      pass ? 'Matched' : 'Match Failed'
-    } for ${fileName} with a tolerance of ${this.expected}%, actual was ${value}%.`
+    if (!updateAllScreenshots || pass) {
+      this.message = `Screenshots ${
+        pass ? 'Matched' : 'Match Failed'
+      } for ${fileName} with a tolerance of ${this.expected}%, actual was ${value}%.`
+    } else if (updateAllScreenshots) {
+      this.message = 'Initial screenshot match failed, but baseline screenshot was updated.'
+      pass = true
+    }
 
     return pass
   }
