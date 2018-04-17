@@ -2,7 +2,7 @@
 
 exports[`Reveal renders when the transition is not triggered 1`] = `
 <div
-  style="transition:height 500ms;height:0;overflow:hidden"
+  style="transition:height 500ms;height:0;overflow:hidden;visibility:hidden"
 >
   <div>
     Content to reveal

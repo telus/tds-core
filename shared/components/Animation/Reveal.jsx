@@ -13,9 +13,14 @@ const transitionStyles = height => {
     height: `${height}px`,
   }
 
+  const hiddenContent = {
+    visibility: 'hidden',
+  }
+
   return {
     entering: styles,
     entered: styles,
+    exited: hiddenContent,
   }
 }
 
@@ -28,7 +33,7 @@ const Reveal = ({ height, children, ...rest }) => (
           ...transitionStyles(height)[status],
         }}
       >
-        {children(status)}
+        {children()}
       </div>
     )}
   </Transition>

@@ -139,7 +139,7 @@ class PanelWrapper extends React.Component {
         </Clickable>
 
         <Reveal timeout={500} in={this.state.open} height={this.state.contentWrapperHeight}>
-          {status => (
+          {() => (
             <div
               ref={contentWrapper => {
                 this.contentWrapper = contentWrapper
@@ -150,7 +150,7 @@ class PanelWrapper extends React.Component {
               <DimpleDivider />
 
               <Box inset={4}>
-                <Text block>{!this.state.open && status === 'exited' ? '' : children}</Text>
+                <Text block>{children}</Text>
               </Box>
             </div>
           )}

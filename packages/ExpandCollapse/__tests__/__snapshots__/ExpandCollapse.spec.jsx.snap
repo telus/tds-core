@@ -191,6 +191,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                     "height": 0,
                     "overflow": "hidden",
                     "transition": "height 500ms",
+                    "visibility": "hidden",
                   }
                 }
               >
@@ -219,7 +220,18 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                       >
                         <div
                           className="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
-                        />
+                        >
+                          <Panel
+                            disabled={false}
+                            header="Panel title"
+                            id="panel-1"
+                            key=".0"
+                          >
+                            <div>
+                              Panel content
+                            </div>
+                          </Panel>
+                        </div>
                       </Text>
                     </div>
                   </Box>
