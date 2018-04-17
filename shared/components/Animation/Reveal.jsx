@@ -28,7 +28,7 @@ const Reveal = ({ height, children, ...rest }) => (
           ...transitionStyles(height)[status],
         }}
       >
-        {children()}
+        {children(status)}
       </div>
     )}
   </Transition>
