@@ -187,6 +187,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
             >
               <div
                 aria-hidden={true}
+                data-testid="childrenContainer"
                 style={
                   Object {
                     "height": 0,
@@ -453,6 +454,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
             >
               <div
                 aria-hidden={false}
+                data-testid="childrenContainer"
                 style={
                   Object {
                     "height": "0px",

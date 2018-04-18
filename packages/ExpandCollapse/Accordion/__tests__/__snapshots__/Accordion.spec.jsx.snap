@@ -184,6 +184,7 @@ exports[`Accordion renders a closed accordion 1`] = `
             >
               <div
                 aria-hidden={true}
+                data-testid="childrenContainer"
                 style={
                   Object {
                     "height": 0,
@@ -438,6 +439,7 @@ exports[`Accordion renders an open accordion 1`] = `
             >
               <div
                 aria-hidden={false}
+                data-testid="childrenContainer"
                 style={
                   Object {
                     "height": "0px",
