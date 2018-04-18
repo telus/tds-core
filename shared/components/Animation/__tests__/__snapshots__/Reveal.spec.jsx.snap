@@ -2,6 +2,7 @@
 
 exports[`Reveal renders when the transition is not triggered 1`] = `
 <div
+  aria-hidden="true"
   style="transition:height 500ms;height:0;overflow:hidden;visibility:hidden"
 >
   <div>
@@ -12,6 +13,7 @@ exports[`Reveal renders when the transition is not triggered 1`] = `
 
 exports[`Reveal renders when the transition is triggered 1`] = `
 <div
+  aria-hidden="false"
   style="transition:height 500ms;height:300px;overflow:hidden"
 >
   <div>

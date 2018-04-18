@@ -32,6 +32,7 @@ const Reveal = ({ height, children, ...rest }) => (
           ...defaultStyle(rest.timeout),
           ...transitionStyles(height)[status],
         }}
+        aria-hidden={status === 'exited'}
       >
         {children()}
       </div>

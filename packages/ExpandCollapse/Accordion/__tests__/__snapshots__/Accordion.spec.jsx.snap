@@ -183,6 +183,7 @@ exports[`Accordion renders a closed accordion 1`] = `
               unmountOnExit={false}
             >
               <div
+                aria-hidden={true}
                 style={
                   Object {
                     "height": 0,
@@ -193,7 +194,6 @@ exports[`Accordion renders a closed accordion 1`] = `
                 }
               >
                 <div
-                  aria-hidden={true}
                   data-testid="content"
                 >
                   <DimpleDivider>
@@ -437,6 +437,7 @@ exports[`Accordion renders an open accordion 1`] = `
               unmountOnExit={false}
             >
               <div
+                aria-hidden={false}
                 style={
                   Object {
                     "height": "0px",
@@ -446,7 +447,6 @@ exports[`Accordion renders an open accordion 1`] = `
                 }
               >
                 <div
-                  aria-hidden={false}
                   data-testid="content"
                 >
                   <DimpleDivider>
