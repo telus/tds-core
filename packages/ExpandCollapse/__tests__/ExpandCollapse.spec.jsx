@@ -249,6 +249,19 @@ describe('ExpandCollapse', () => {
     })
   })
 
+  describe('accessibility', () => {
+    it('marks the panel as an expandable trigger for content for screen readers', () => {
+      const { findPanelHeader, clickPanel } = doMount(
+        <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
+      )
+
+      expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', false)
+
+      clickPanel('panel-1')
+      expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', true)
+    })
+  })
+
   describe('panel dividers', () => {
     it('surrounds all the panels', () => {
       const { expandCollapse } = doMount(
