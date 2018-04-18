@@ -35,7 +35,7 @@ const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, .
   }
 
   const innerLink = (
-    <Box inline between={2}>
+    <Box tag="span" inline between={2}>
       {direction === 'left' ? getIcon('leftChevron', styles.leftChevron) : undefined}
       <span>{children}</span>
       {direction === 'right' ? getIcon('chevron', styles.rightChevron) : undefined}

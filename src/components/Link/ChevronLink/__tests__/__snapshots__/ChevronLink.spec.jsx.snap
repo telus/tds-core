@@ -5,7 +5,7 @@ exports[`ChevronLink renders 1`] = `
   class="primary"
   href="test.com"
 >
-  <div
+  <span
     class="betweenRightMargin-2 inline"
   >
     <span>
@@ -19,6 +19,6 @@ exports[`ChevronLink renders 1`] = `
         class="iconChevron size16"
       />
     </span>
-  </div>
+  </span>
 </a>
 `;
