@@ -5,7 +5,7 @@ exports[`ChevronLink renders 1`] = `
   class="primary"
   href="test.com"
 >
-  <div
+  <span
     class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
   >
     <span>
@@ -19,6 +19,6 @@ exports[`ChevronLink renders 1`] = `
         class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
       />
     </span>
-  </div>
+  </span>
 </a>
 `;
