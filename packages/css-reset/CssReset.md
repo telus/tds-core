@@ -1,7 +1,7 @@
 ```js static
 // App.jsx
 
-import '@tds/core-css-reset/dist/index.css'
+import '~@tds/core-css-reset/dist/index.css'
 ```
 
 ```jsx noeditor
