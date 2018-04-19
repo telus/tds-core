@@ -1,24 +1,31 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { render, mount } from 'enzyme'
 
 import Reveal from '../Reveal'
 
 describe('Reveal', () => {
   const doMount = (overrides = {}) =>
     mount(
-      <Reveal {...overrides} timeout={500} height={300}>
+      <Reveal timeout={500} height={300} in={true} {...overrides}>
+        {() => <div>Content to reveal</div>}
+      </Reveal>
+    )
+
+  const doRender = (overrides = {}) =>
+    render(
+      <Reveal timeout={500} height={300} in={true} {...overrides}>
         {() => <div>Content to reveal</div>}
       </Reveal>
     )
 
   it('renders when the transition is triggered', () => {
-    const reveal = doMount({ in: true })
+    const reveal = doRender({ in: true })
 
     expect(reveal).toMatchSnapshot()
   })
 
   it('renders when the transition is not triggered', () => {
-    const reveal = doMount({ in: false })
+    const reveal = doRender({ in: false })
 
     expect(reveal).toMatchSnapshot()
   })

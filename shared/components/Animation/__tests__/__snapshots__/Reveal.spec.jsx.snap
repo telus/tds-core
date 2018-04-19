@@ -1,82 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Reveal renders when the transition is not triggered 1`] = `
-<Reveal
-  height={300}
-  in={false}
-  timeout={500}
+<div
+  aria-hidden="true"
+  data-testid="childrenContainer"
+  style="transition:height 500ms;height:0;overflow:hidden;visibility:hidden"
 >
-  <Transition
-    appear={false}
-    enter={true}
-    exit={true}
-    in={false}
-    mountOnEnter={false}
-    onEnter={[Function]}
-    onEntered={[Function]}
-    onEntering={[Function]}
-    onExit={[Function]}
-    onExited={[Function]}
-    onExiting={[Function]}
-    timeout={500}
-    unmountOnExit={false}
-  >
-    <div
-      aria-hidden={true}
-      data-testid="childrenContainer"
-      style={
-        Object {
-          "height": 0,
-          "overflow": "hidden",
-          "transition": "height 500ms",
-          "visibility": "hidden",
-        }
-      }
-    >
-      <div>
-        Content to reveal
-      </div>
-    </div>
-  </Transition>
-</Reveal>
+  <div>
+    Content to reveal
+  </div>
+</div>
 `;
 
 exports[`Reveal renders when the transition is triggered 1`] = `
-<Reveal
-  height={300}
-  in={true}
-  timeout={500}
+<div
+  aria-hidden="false"
+  data-testid="childrenContainer"
+  style="transition:height 500ms;height:300px;overflow:hidden"
 >
-  <Transition
-    appear={false}
-    enter={true}
-    exit={true}
-    in={true}
-    mountOnEnter={false}
-    onEnter={[Function]}
-    onEntered={[Function]}
-    onEntering={[Function]}
-    onExit={[Function]}
-    onExited={[Function]}
-    onExiting={[Function]}
-    timeout={500}
-    unmountOnExit={false}
-  >
-    <div
-      aria-hidden={false}
-      data-testid="childrenContainer"
-      style={
-        Object {
-          "height": "300px",
-          "overflow": "hidden",
-          "transition": "height 500ms",
-        }
-      }
-    >
-      <div>
-        Content to reveal
-      </div>
-    </div>
-  </Transition>
-</Reveal>
+  <div>
+    Content to reveal
+  </div>
+</div>
 `;
