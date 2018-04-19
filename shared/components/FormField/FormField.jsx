@@ -85,13 +85,18 @@ class FormField extends React.Component {
   onChange = event => {
     const { onChange } = this.props
 
-    this.setState({
-      value: event.target.value,
-    })
+    event.persist()
 
-    if (onChange) {
-      onChange(event)
-    }
+    this.setState(
+      {
+        value: event.target.value,
+      },
+      () => {
+        if (onChange) {
+          onChange(event)
+        }
+      }
+    )
   }
 
   onFocus = event => {
