@@ -1,3 +1,9 @@
+#### 0.34.12 (2018-04-19)
+
+##### Bug Fixes
+
+* **core-chevron-link:**  changed tag from div to span ([25dcdf9c](https://github.com/telusdigital/tds/commit/25dcdf9cd83b372cabf4d6c59a522b0766a11003))
+
 #### 0.34.11 (2018-04-11)
 
 ##### Bug Fixes
