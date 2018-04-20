@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-chevron-link",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A call to action link",
   "main": "index.cjs.js",
   "module": "index.es.js",

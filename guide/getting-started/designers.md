@@ -24,15 +24,17 @@ There are a variety of plugins available for Sketch. Here is a short list of plu
 
 * [Launchpad by Anima](https://animaapp.github.io/): Customize designs with responsive settings (**Note**: Without this plugin, some of the responsive components will not work properly)
 
-* [Dynamic Button](https://github.com/fuggfuggfugg/sketch-dynamic-button-3.5): Create buttons with fixed padding (**Note**: Used for resizing of our buttons)
+* [Paddy](https://github.com/DWilliames/paddy-sketch-plugin): Create components with fixed padding (**Note**: Used for automatic resizing of our button component)
 
 #### Recommended
 
-* [Sketch Toolbox](http://sketchtoolbox.com/): Manage your Sketch plugins
+* [Sketch Toolbox](http://sketchtoolbox.com/): Manage and install your Sketch plugins
 
 * [Shared Text Styles](http://www.textstyl.es/): Import/export text styles within your Sketch files
 
 * [Nudge Push Shove](http://nudgepushshove.com/): Set up custom nudge settings
+
+* [Dynamic Button](https://github.com/fuggfuggfugg/sketch-dynamic-button-3.5): Create components with fixed padding
 
 ## Setting up Invision
 

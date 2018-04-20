@@ -33,13 +33,13 @@ publishCommand.initialize(() => {
   console.log(
     `\r\n${emoji.get(
       'thinking_face'
-    )} If this is not what you expected, ensure that your commit messages follow the Conventional Commits specification: ${chalk.underline(
+    )} If this is not what you expected, ensure that your commit messages follow the Conventional Commits specification (${chalk.underline(
       'https://conventionalcommits.org'
-    )}.`
+    )}) and try again.`
   )
   console.log(
     `\r\n${emoji.get(
       'rocket'
-    )} Otherwise, paste the entire output of this task into the body of your Pull Request so that a maintainer can verify before merging/publishing.`
+    )} Please paste the entire output of this task into the body of your Pull Request so that a maintainer can verify before merging/publishing.`
   )
 })
