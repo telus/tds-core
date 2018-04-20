@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/telusdigital/tds/compare/@tds/core-text-area@1.0.3...@tds/core-text-area@1.0.4) (2018-04-20)
+
+
+### Bug Fixes
+
+* **core-expand-collapse:** prevent tabbing to items while collapsed ([#586](https://github.com/telusdigital/tds/issues/586)) ([eb94102](https://github.com/telusdigital/tds/commit/eb94102)), closes [#535](https://github.com/telusdigital/tds/issues/535)
+
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/telusdigital/tds/compare/@tds/core-text-area@1.0.2...@tds/core-text-area@1.0.3) (2018-04-02)
 
