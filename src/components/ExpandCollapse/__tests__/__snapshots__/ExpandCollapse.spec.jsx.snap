@@ -186,16 +186,18 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
               unmountOnExit={false}
             >
               <div
+                aria-hidden={true}
+                data-testid="childrenContainer"
                 style={
                   Object {
                     "height": 0,
                     "overflow": "hidden",
                     "transition": "height 500ms",
+                    "visibility": "hidden",
                   }
                 }
               >
                 <div
-                  aria-hidden={true}
                   data-testid="content"
                 >
                   <DimpleDivider>
@@ -451,6 +453,8 @@ exports[`ExpandCollapse renders an open panel 1`] = `
               unmountOnExit={false}
             >
               <div
+                aria-hidden={false}
+                data-testid="childrenContainer"
                 style={
                   Object {
                     "height": "0px",
@@ -460,7 +464,6 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                 }
               >
                 <div
-                  aria-hidden={false}
                   data-testid="content"
                 >
                   <DimpleDivider>
