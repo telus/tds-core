@@ -8,6 +8,10 @@ const defaultStyle = timeout => ({
   overflow: 'hidden',
 })
 
+const hiddenContent = {
+  visibility: 'hidden',
+}
+
 const transitionStyles = height => {
   const styles = {
     height: `${height}px`,
@@ -16,6 +20,7 @@ const transitionStyles = height => {
   return {
     entering: styles,
     entered: styles,
+    exited: hiddenContent,
   }
 }
 
@@ -27,6 +32,8 @@ const Reveal = ({ height, children, ...rest }) => (
           ...defaultStyle(rest.timeout),
           ...transitionStyles(height)[status],
         }}
+        aria-hidden={status === 'exited'}
+        data-testid="childrenContainer"
       >
         {children()}
       </div>
