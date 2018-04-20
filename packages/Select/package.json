@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
+    "@tds/shared-animation": "^1.0.0",
     "@tds/shared-form-field": "^1.0.3",
     "airbnb-prop-types": "^2.8.1",
     "react-transition-group": "^2.2.1"

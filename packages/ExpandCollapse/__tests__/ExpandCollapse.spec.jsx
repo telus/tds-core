@@ -260,17 +260,6 @@ describe('ExpandCollapse', () => {
       clickPanel('panel-1')
       expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', true)
     })
-
-    it('hides panel content from screen readers until they are opened', () => {
-      const { findPanelContent, clickPanel } = doMount(
-        <ExpandCollapse>{aPanel({ id: 'panel-1' })}</ExpandCollapse>
-      )
-
-      expect(findPanelContent('panel-1')).toHaveProp('aria-hidden', true)
-
-      clickPanel('panel-1')
-      expect(findPanelContent('panel-1')).toHaveProp('aria-hidden', false)
-    })
   })
 
   describe('panel dividers', () => {

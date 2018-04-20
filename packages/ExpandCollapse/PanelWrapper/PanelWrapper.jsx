@@ -144,7 +144,6 @@ class PanelWrapper extends React.Component {
               ref={contentWrapper => {
                 this.contentWrapper = contentWrapper
               }}
-              aria-hidden={!this.state.open}
               data-testid="content"
             >
               <DimpleDivider />
