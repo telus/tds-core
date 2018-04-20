@@ -1,3 +1,9 @@
+#### 0.34.13 (2018-04-20)
+
+##### Bug Fixes
+
+* **expand-collapse:**  prevent content within collapsed panels from being tabbed to [#535](https://github.com/telusdigital/tds/pull/535) ([0b76d687](https://github.com/telusdigital/tds/commit/0b76d687739b94e7acffd5c8977cb7a5abb8db40))
+
 #### 0.34.12 (2018-04-19)
 
 ##### Bug Fixes
