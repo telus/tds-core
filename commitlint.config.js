@@ -13,7 +13,8 @@ const applyCustomScope = () => {
     'guide',
     'tech-snacks',
     'lint',
-    'scaffolding'
+    'scaffolding',
+    'shared-styles'
   )
   return customScope
 }

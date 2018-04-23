@@ -13,10 +13,3 @@
 .font {
   font-family: $font-telus;
 }
-
-// The tooltip is positioned absolutely and this is needed on the row that contains the tooltip so that the bubble
-// has enough available width to be sized properly.
-// TODO: Replace with Position.modules.scss --> .relative
-.containsTooltip {
-  position: relative;
-}
