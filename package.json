@@ -107,7 +107,7 @@
     "postcss": "^6.0.17",
     "postcss-cli": "^4.1.0",
     "postcss-loader": "^2.1.0",
-    "postcss-modules": "^0.8.0",
+    "postcss-modules": "^1.0.0",
     "prettier": "^1.10.2",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
