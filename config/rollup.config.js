@@ -3,20 +3,10 @@ import commonjs from 'rollup-plugin-commonjs'
 
 import babel from 'rollup-plugin-babel'
 
-import sass from 'node-sass'
-import tildeImporter from 'node-sass-tilde-importer'
 import postcss from 'rollup-plugin-postcss'
-import postcssModules from 'postcss-modules'
 import autoprefixer from 'autoprefixer'
+
 import CssModulesSassLoader from './CssModulesSassLoader'
-
-const cssExportMap = {}
-
-const sassPreprocessor = (content, id) =>
-  new Promise(resolve => {
-    const result = sass.renderSync({ file: id, importer: tildeImporter })
-    resolve({ code: result.css.toString() })
-  })
 
 export default opts => {
   const options = Object.assign(
@@ -33,10 +23,9 @@ export default opts => {
   return {
     input: options.input,
     output: [
-      { format: 'cjs', file: './dist/index.cjs.js' },
-      { format: 'es', file: './dist/index.es.js' },
+      { format: 'cjs', file: './dist/index.cjs.js', sourcemap: true },
+      { format: 'es', file: './dist/index.es.js', sourcemap: true },
     ],
-    sourcemap: true,
 
     external: ['react', 'react-dom', 'prop-types'].concat(tdsExternals),
 
@@ -54,22 +43,11 @@ export default opts => {
         postcss({
           extract: './dist/index.css',
           sourceMap: true,
-          extensions: ['.scss', '.css'],
-          preprocessor: sassPreprocessor,
-          plugins: [
-            autoprefixer(),
-            postcssModules({
-              Loader: CssModulesSassLoader,
-              globalModulePaths: [/packages\/SelectorCounter/, /packages\/StepTracker/],
-              generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
-              getJSON(id, exportTokens) {
-                cssExportMap[id] = exportTokens
-              },
-            }),
-          ],
-          getExportNamed: false,
-          getExport(id) {
-            return cssExportMap[id]
+          plugins: [autoprefixer()],
+          modules: {
+            Loader: CssModulesSassLoader,
+            globalModulePaths: [/packages\/SelectorCounter/, /packages\/StepTracker/],
+            generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
           },
         }),
       babel({
