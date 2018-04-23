@@ -5,34 +5,26 @@ the other Digital Platform teams to provide a comprehensive platform for buildin
 
 The TELUS Design System will continue to release incrementally while we work towards wide-reaching Platform initiatives.
 
-## Current release: TELUS Design System "v2": independently versioned components (March 2018)
-
-Version 1 paved the way for re-architecting the React components into separately versioned packages. We now have a growing library
-of components that are identifiable with the `core-` prefix, which represents our seal of quality.
-
-Independently versioned components unlocks many optimizations for consumers, including:
-
-* Applications only need to depend on the core components that are actually being used, reducing bundle size
-* Component upgrades can be done more granularly
-* The overall versioning scheme is more predictable
-
-Upgrading from v1.0 to "v2" is straightforward and short. Follow [the upgrade instructions](https://github.com/telusdigital/tds-core/releases/v2.0.0) in
-Github and use the [tds-codemod](https://github.com/telusdigital/tds-codemod) automatic refactoring tool.
-
-**Note: As of "v2", there will be no more feature releases to the [@telusdigital/tds](https://www.npmjs.com/package/@telusdigital/tds) package.
-Instead, all design system components will be released independenly. View available TELUS Design System component packages
-[in the TDS npm organization](https://www.npmjs.com/org/tds).**
-
-## Next release: TELUS Design Platform MVP (Q2 2018)
+## Current: TELUS Design Platform MVP (Q2 2018)
 
 With a foundational set of components available in the system for immediate use, we are shifting our focus from delivery of
 _components_ to delivery of a _platform_ that enables others to contribute components into the system. The major initiatives are:
 
 * Creation of the tds-community platform, which enables others to publish components safely and smoothly
 * Kickoff the Digital Platform Ambassadors to provide community leadership
-* Establish self-governance strategies so that the system can scale organicly
+* Establish self-governance strategies so that the system can scale organically
 
 We will continue to enhance and expand the core components in the design system in accordance with their needs.
+
+## Next: Speed and scale (Q3 2018)
+
+With a community platform running with mid to light governance, we can focus
+on further enhancing the design platform with forward-thinking initiatives including:
+
+* Generating design assets from code
+* Supporting more experiences outside web
+* Enhancing the component catalogue
+* Additional tooling and resources for prototyping with TDS
 
 ## More information
 
@@ -46,7 +38,7 @@ Learn [how to contribute](./contributing/contributing.md) and discuss features. 
 
 ## History
 
-### Alpha and Beta (2017)
+### Alpha and beta (2017)
 
 TDS alpha and beta versions established a structure of "core" and "enriched" packages, which separated styles from interactive React
 components. The core layer contained the styles needed to skin all fundamental HTML elements (e.g. text, links, lists,
@@ -84,3 +76,21 @@ More specifically, the TELUS Design System at v1.0 focuses on foundational compo
 * **Feedback**: notification, busy indicator
 
 See the [v1.0.0 release](https://github.com/telusdigital/tds-core/releases/v1.0.0) in Github.
+
+## TELUS Design System "v2": independently versioned components (March 2018)
+
+Version 1 paved the way for re-architecting the React components into separately versioned packages. We now have a growing library
+of components that are identifiable with the `core-` prefix, which represents our seal of quality.
+
+Independently versioned components unlocks many optimizations for consumers, including:
+
+* Applications only need to depend on the core components that are actually being used, reducing bundle size
+* Component upgrades can be done more granularly
+* The overall versioning scheme is more predictable
+
+Upgrading from v1.0 to "v2" is straightforward and short. Follow [the upgrade instructions](https://github.com/telusdigital/tds-core/releases/v2.0.0) in
+Github and use the [tds-codemod](https://github.com/telusdigital/tds-codemod) automatic refactoring tool.
+
+**Note: As of "v2", there will be no more feature releases to the [@telusdigital/tds](https://www.npmjs.com/package/@telusdigital/tds) package.
+Instead, all design system components will be released independently. View available TELUS Design System component packages
+[in the TDS npm organization](https://www.npmjs.com/org/tds).**
