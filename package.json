@@ -116,7 +116,7 @@
     "request": "^2.83.0",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.3",
-    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-commonjs": "^9.0.0",
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-postcss": "^0.5.5",
     "s3-website": "^3.1.2",
