@@ -14,7 +14,7 @@ By default, Chevron Links will be displayed in the `primary` variant.
 * Due to the chevron's hover animation, provide ample whitespace so that it does not overlap with nearby elements.
 * Do not place them within other paragraph text.
 * They can appear below or next to [Button Links](#linkbutton) as a secondary call to action.
-* We recommend a character range between 2-30 characters
+* We recommend a character range between 2-32 characters
 
 Specify the variant to create a button for secondary actions.
 
