@@ -35,7 +35,8 @@ COPY . /app
 # Build the app.
 RUN yarn lerna:bootstrap && \
   yarn ci:build && \
-  scripts/ci-build-docs.sh
+  scripts/ci-build-docs.sh && \
+  rm .npmrc
 
 # Set the container's user to the newly created one.
 USER node
