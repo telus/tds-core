@@ -12,7 +12,7 @@ By default, Buttons will be displayed in the `primary` variant. Use primary Butt
 
 * Use Buttons Links to navigate to a new "page".
 * Aim to use only one button per page.
-* Avoid excessively long button text.
+* Keep the text short and able to fit on a single line (our recommendation is 2-25 characters)
 * Make sure the button text describes an action.
 * Buttons should not be disabled.
 
