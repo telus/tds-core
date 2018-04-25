@@ -46,7 +46,7 @@ potentially important words)
 
 ## Usage
 
-See the [Typography components](ref://../components/index.html#typography) for implementation details.
+For guidelines on the usage of our font please refer to [TELUS BrandHub](https://brand.telus.com/node/771). We do not recommend using any other type styles outside of the ones available in TDS. Please see the [Typography components](ref://../components/index.html#typography) for implementation details.
 
 ## Governance
 
