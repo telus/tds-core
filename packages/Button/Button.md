@@ -7,7 +7,7 @@ is the primary action, as a [Link](#link) is more appropriate.**
 
 * Use buttons to move through a transaction.
 * Aim to use only one primary button per page.
-* Keep the text short and able to fit on a single line (our recommendation is 2-25 characters)
+* Keep the text short and able to fit on a single line (our recommendation is 2-24 characters)
 * Make sure the button text describes an action.
 * Buttons should not be disabled. Use inline (on blur) error messaging to provide feedback when the form is invalid.
 
