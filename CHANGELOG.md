@@ -1,3 +1,10 @@
+#### 1.0.13 (2018-04-26)
+
+##### Bug Fixes
+
+* **shared-form-field:**  call onchange after async setstate ([a9da1400](https://github.com/telusdigital/tds/commit/a9da140015d61e1f6c4381842c6b2a00de4a0f74))
+* **core-link:**  update link colour to be AAA WCAG compliant ([#601](https://github.com/telusdigital/tds/pull/601)) ([98a8986e](https://github.com/telusdigital/tds/commit/98a8986efacd1470a32c3dc073b98c4b42ce833b))
+
 #### 1.0.12 (2018-04-20)
 
 ##### Bug Fixes
