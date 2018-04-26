@@ -11,3 +11,4 @@ If you find yourself with some extra time (at the end of the day, waiting for a 
 * Make it more obvious via comments as to what changes have been made to the various Styleguidist components that are being copied and slightly modified (such as Pathline, TabButton, or Editor)
 * Spike using [repng](https://github.com/jxnblk/repng) to render individual React components as images. This strategy could be a superior replacement for visual regression over screenshotting the styleguide.
 * This repository's git history contains somewhat large binary files including Sketch documents and PNGs. Let's set up Git LFS for `".png"` and `".sketch"` patterns in order to retroactively apply large file storage to those files. The benefit of Git LFS is to only download those files at checkout, and not fetch or clone.
+* Some component tests are still using `mount` since they used to test server side rendering, let's change them to use `shallow` to help speed up tests
