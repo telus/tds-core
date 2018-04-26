@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/telusdigital/tds-core/compare/@tds/shared-form-field@1.0.3...@tds/shared-form-field@1.0.4) (2018-04-26)
+
+
+### Bug Fixes
+
+* **shared-form-field:** call onchange after async setstate ([b5486ca](https://github.com/telusdigital/tds-core/commit/b5486ca))
+
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/telusdigital/tds/compare/@tds/shared-form-field@1.0.2...@tds/shared-form-field@1.0.3) (2018-04-02)
 
