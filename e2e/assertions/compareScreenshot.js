@@ -51,8 +51,6 @@ exports.assertion = function(componentName, fileName) {
 
     resemble(baselinePath)
       .compareTo(resultPath)
-      // .ignoreAntialiasing()
-      // .ignoreColors()
       .onComplete(data => {
         if (Number(data.misMatchPercentage) > tolerance && updateAllScreenshots) {
           update(baselinePath, resultPath, callback, data)

@@ -1,6 +1,6 @@
 const path = require('path')
 
-const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, staging, production
+const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, e2e, staging, production
 
 // Append strings to this array to enable components in staging, e.g. `['Box', 'ExpandCollapse']`
 const enabledInStaging = []
@@ -323,6 +323,14 @@ module.exports = {
       text: {
         fontSize: 'inherit',
       },
+    },
+    StyleGuide: {
+      '@global body *':
+        styleguidistEnv === 'e2e'
+          ? {
+              animationPlayState: 'paused !important',
+            }
+          : {},
     },
   },
   updateDocs(docs, file) {
