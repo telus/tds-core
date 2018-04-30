@@ -14,7 +14,8 @@ const applyCustomScope = () => {
     'tech-snacks',
     'lint',
     'scaffolding',
-    'shared'
+    'shared',
+    'config'
   )
   return customScope
 }
