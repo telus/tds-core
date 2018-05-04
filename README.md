@@ -35,8 +35,6 @@ The following group are the active maintainers of this project, and have merge r
 
 ## Contributors
 
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
-
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
 <!-- prettier-ignore -->
@@ -48,5 +46,3 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 | [<img src="https://avatars0.githubusercontent.com/u/2081077?v=4" width="100px;"/><br /><sub><b>Rodrigo Maia</b></sub>](http://rodrigomaia.me)<br />[](#tds-rodrigomaia17 "") | [<img src="https://avatars3.githubusercontent.com/u/2011006?v=4" width="100px;"/><br /><sub><b>Sebastian Krumhausen</b></sub>](http://krumhausen.com)<br />[](#tds-mrkrumhausen "") | [<img src="https://avatars0.githubusercontent.com/u/2330366?v=4" width="100px;"/><br /><sub><b>Suet Yi Lee</b></sub>](https://github.com/sy-lee)<br />[](#tds-sy-lee "") | [<img src="https://avatars2.githubusercontent.com/u/1456613?v=4" width="100px;"/><br /><sub><b>Travis Allan</b></sub>](https://github.com/travis-eh)<br />[](#tds-travis-eh "") | [<img src="https://avatars3.githubusercontent.com/u/32460479?v=4" width="100px;"/><br /><sub><b>aquirkles</b></sub>](https://github.com/aquirkles)<br />[](#tds-aquirkles "") | [<img src="https://avatars1.githubusercontent.com/u/18177753?v=4" width="100px;"/><br /><sub><b>gfroome</b></sub>](https://github.com/gfroome)<br />[](#tds-gfroome "") |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
