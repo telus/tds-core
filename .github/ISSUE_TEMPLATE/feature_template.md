@@ -1,3 +1,8 @@
+---
+name: Feature request
+about: Suggest an idea for tds-core
+---
+
 <!--
   ### IMPORTANT SECURITY NOTE ###
 
