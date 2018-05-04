@@ -3,6 +3,12 @@
   "projectOwner": "telusdigital",
   "repoType": "github",
   "repoHost": "https://github.com",
+  "types": {
+    "tds": {
+      "symbol": "",
+      "description": ""
+    }
+  },
   "files": [
     "README.md"
   ],
@@ -15,7 +21,7 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/677496?v=4",
       "profile": "https://github.com/lzcabrera",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -24,7 +30,7 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/1375942?v=4",
       "profile": "http://ryanogles.by",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -33,7 +39,7 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/12798751?v=4",
       "profile": "http://theetrain.ca",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -42,7 +48,7 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/613921?v=4",
       "profile": "http://www.thetomharrison.com/",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -51,7 +57,7 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/17018330?v=4",
       "profile": "http://www.telus.com",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -60,7 +66,7 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/10531523?v=4",
       "profile": "https://github.com/marcod1419",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -69,7 +75,7 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/3753196?v=4",
       "profile": "http://www.lavamelon.com",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -78,7 +84,7 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/17863803?v=4",
       "profile": "https://github.com/codedavinci",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -87,7 +93,7 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/5008307?v=4",
       "profile": "https://github.com/claflamme",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -96,7 +102,7 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/27707082?v=4",
       "profile": "https://github.com/malikalim1",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -105,7 +111,7 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/22059850?v=4",
       "profile": "https://github.com/saulfougnier",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -114,7 +120,7 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/9420407?v=4",
       "profile": "https://github.com/jackreeves",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -123,7 +129,7 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/4711480?v=4",
       "profile": "https://github.com/jakent",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -132,7 +138,7 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/4040680?v=4",
       "profile": "https://github.com/ParkDan",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -141,7 +147,7 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/208883?v=4",
       "profile": "http://www.doctrine-project.org",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -150,7 +156,7 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/145619?v=4",
       "profile": "https://github.com/pdufault",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -159,7 +165,7 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/21041962?v=4",
       "profile": "https://github.com/ianMcHuge",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -168,7 +174,7 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/17952850?v=4",
       "profile": "https://github.com/Jebbie87",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -177,7 +183,7 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/5900772?v=4",
       "profile": "https://github.com/kkwoker",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -186,7 +192,7 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/3606708?v=4",
       "profile": "http://jackmakesthings.com",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -195,7 +201,7 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/22376665?v=4",
       "profile": "https://github.com/nealmcgann",
       "contributions": [
-        "code"
+        "tds"
       ]
     },
     {
@@ -204,7 +210,115 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/183195?v=4",
       "profile": "https://www.ahmadnassri.com",
       "contributions": [
-        "code"
+        "tds"
+      ]
+    },
+    {
+      "login": "ctafts",
+      "name": "Chris Tafts",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/782892?v=4",
+      "profile": "https://github.com/ctafts",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "DJDA",
+      "name": "David DeAngelis",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2502296?v=4",
+      "profile": "https://github.com/DJDA",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "drewminns",
+      "name": "Drew Minns",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/448452?v=4",
+      "profile": "http://www.drewminns.com",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "ethome",
+      "name": "Ed Thome",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5311720?v=4",
+      "profile": "https://github.com/ethome",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "mattseburn",
+      "name": "mattseburn",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5891333?v=4",
+      "profile": "https://github.com/mattseburn",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "wintorez",
+      "name": "Reza Sadr",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1269616?v=4",
+      "profile": "https://linkedin.com/in/wintorez",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "rodrigomaia17",
+      "name": "Rodrigo Maia",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2081077?v=4",
+      "profile": "http://rodrigomaia.me",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "mrkrumhausen",
+      "name": "Sebastian Krumhausen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2011006?v=4",
+      "profile": "http://krumhausen.com",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "sy-lee",
+      "name": "Suet Yi Lee",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2330366?v=4",
+      "profile": "https://github.com/sy-lee",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "travis-eh",
+      "name": "Travis Allan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1456613?v=4",
+      "profile": "https://github.com/travis-eh",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "aquirkles",
+      "name": "aquirkles",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/32460479?v=4",
+      "profile": "https://github.com/aquirkles",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "gfroome",
+      "name": "gfroome",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/18177753?v=4",
+      "profile": "https://github.com/gfroome",
+      "contributions": [
+        "tds"
       ]
     }
   ]

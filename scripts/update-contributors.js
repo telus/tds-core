@@ -21,13 +21,15 @@ const trimList = peopleList.map(name => {
 
 if (trimList.length > 0) {
   trimList.map(name => {
-    if (filteredNames.indexOf(name) === -1) {
-      spawnSync('all-contributors', ['add', name, 'code'])
+    if (filteredNames.indexOf(name) === -1 && name !== null) {
+      spawnSync('all-contributors', ['add', name, 'tds'])
       console.log(`Added ${name} as a contributor.`)
       return true
     }
     return false
   })
+} else {
+  console.log('Contributor list up to date.')
 }
 
 spawnSync('all-contributors', ['generate'], {
