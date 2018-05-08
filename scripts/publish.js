@@ -3,17 +3,20 @@
 /* eslint-disable no-console */
 
 /*
-Usage: yarn lerna:publish <component 1> <component 2> ... <other lerna options>
+Usage: yarn lerna:publish [component name...] [options] [lerna options]
 
-All options will be forwarded directly onto lerna commands.
+  By default, only updated packages will be built.
+  All lerna options will be forwarded onto lerna commands.
 
-Example: yarn lerna:publish @tds/core-select -- --since @tds/core-select@1.0.2
+  Options:
+
+    [component name...]       space separated list of package names to build
 */
 
 const { spawnSync } = require('child_process')
 const readline = require('readline')
 
-const getUpdatedPackageNames = require('./utils/getUpdatedPackageNames')
+const getPackageNames = require('./utils/getPackageNames')
 const arrayToGlob = require('./utils/arrayToGlob')
 const { lernaOptions } = require('./utils/parseArgs')
 
@@ -22,7 +25,7 @@ const read = readline.createInterface({
   output: process.stdout,
 })
 
-getUpdatedPackageNames(packageNames => {
+getPackageNames(packageNames => {
   console.warn(`You are about to publish the following packages: ${packageNames}`)
 
   read.question(
@@ -30,10 +33,14 @@ getUpdatedPackageNames(packageNames => {
     answer => {
       if (answer === 'Y' || answer === 'y') {
         spawnSync(
-          './node_modules/.bin/lerna',
-          ['publish', '--conventional-commits', '--scope', arrayToGlob(packageNames)].concat(
-            lernaOptions
-          ),
+          'npx',
+          [
+            'lerna',
+            'publish',
+            '--conventional-commits',
+            '--scope',
+            arrayToGlob(packageNames),
+          ].concat(lernaOptions),
           {
             stdio: 'inherit',
           }

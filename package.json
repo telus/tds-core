@@ -12,7 +12,7 @@
     "build": "node scripts/build.js",
     "build-docs:gitbook": "gitbook build guide",
     "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
-    "ci:build": "lerna exec -- \\$LERNA_ROOT_PATH/scripts/build.sh && lerna run build",
+    "ci:build": "yarn build --all",
     "ci:build-docs:styleguide-staging": "STYLEGUIDIST_ENV=staging yarn run build-docs:styleguide",
     "ci:build-docs:styleguide-production": "STYLEGUIDIST_ENV=production yarn run build-docs:styleguide",
     "ci:build-docs": "npm-run-all --parallel ci:build-docs:styleguide-* build-docs:gitbook",

@@ -1,27 +1,32 @@
 #!/usr/bin/env node
 
-// Usage notes
-// Nightwatch CLI options http://nightwatchjs.org/guide#command-line-options
-// Pass -u to update baseline images while running e2e tests
-// Pass -a to test all packages regardless if they've been updated
-// Pass the name of the package you wish to test such as `@tds/core-link`
+/*
+Usage: yarn test:e2e [component name...] [options] [lerna options]
+
+  By default, only updated packages will be tested.
+  All lerna options will be forwarded onto lerna commands.
+
+  Options:
+
+    [component name...]       space separated list of package names to test
+    -a, --all                 test all packages
+    -u, --update-screenshots  update baseline images on failure
+*/
 
 const { spawnSync } = require('child_process')
-const parseArgs = require('minimist')
-const getUpdatedPackageNames = require('./utils/getUpdatedPackageNames')
+const { tdsOptions } = require('./utils/parseArgs')
+const getPackageNames = require('./utils/getPackageNames')
 
-const parsedArgs = parseArgs(process.argv.slice(2))
-
-const runE2e = packageNames => {
+getPackageNames(packageNames => {
   const onlyCorePackages = packageNames.filter(name => name.startsWith('@tds/core-')).join(' ')
 
   const { status } = spawnSync(
-    './node_modules/.bin/nightwatch',
-    ['-c', './config/nightwatch.conf.js', '--env', 'headless'],
+    'npx',
+    ['nightwatch', '-c', './config/nightwatch.conf.js', '--env', 'headless'],
     {
       env: Object.assign({}, process.env, {
         PACKAGES: onlyCorePackages,
-        UPDATE_ALL_SCREENSHOTS: parsedArgs.u,
+        UPDATE_ALL_SCREENSHOTS: tdsOptions['update-screenshots'],
       }),
       stdio: 'inherit',
     }
@@ -30,6 +35,4 @@ const runE2e = packageNames => {
   if (status !== 0) {
     process.exit(status)
   }
-}
-
-getUpdatedPackageNames(packageNames => runE2e(packageNames), parsedArgs.a ? 'ls' : 'updated')
+})
