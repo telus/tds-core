@@ -12,25 +12,16 @@ const people = spawnSync('all-contributors', ['check'], {
 
 const peopleList = people.output[1].slice(people.output[1].indexOf('\n', 25)).split(',')
 
-const trimList = peopleList.map(name => {
-  if (name.trim() !== '') {
-    return name.trim()
-  }
-  return null
-})
-
-if (trimList.length > 0) {
-  trimList.map(name => {
-    if (filteredNames.indexOf(name) === -1 && name !== null) {
-      spawnSync('all-contributors', ['add', name, 'tds'])
-      console.log(`Added ${name} as a contributor.`)
-      return true
-    }
-    return false
+peopleList
+  .map(name => name.trim())
+  // filter out empty names
+  .filter(name => name.length > 0)
+  // filter out bots
+  .filter(name => !filteredNames.includes(name))
+  .forEach(name => {
+    spawnSync('all-contributors', ['add', name, 'tds'])
+    console.log(`Added ${name} as a contributor.`)
   })
-} else {
-  console.log('Contributor list up to date.')
-}
 
 spawnSync('all-contributors', ['generate'], {
   stdio: 'inherit',
