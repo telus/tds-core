@@ -18,7 +18,7 @@ export default opts => {
 
   const tdsExternals = options.dependencies
     ? Object.keys(options.dependencies).filter(dependency => dependency.startsWith('@tds'))
-    : null
+    : []
 
   return {
     input: options.input,
