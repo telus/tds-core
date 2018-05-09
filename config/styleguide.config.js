@@ -1,4 +1,5 @@
 const path = require('path')
+const { fonts } = require('../packages/css-reset')
 
 const styleguidistEnv = process.env.STYLEGUIDIST_ENV || 'dev' // dev, e2e, staging, production
 
@@ -22,6 +23,14 @@ const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
 const compact = array => array.filter(element => element !== undefined)
 /* eslint-enable no-unused-vars */
 
+const fontLinks = fonts.filter(fontUrl => path.extname(fontUrl) === '.woff2').map(fontUrl => ({
+  href: fontUrl,
+  rel: 'preload',
+  as: 'font',
+  type: 'font/woff2',
+  crossorigin: true,
+}))
+
 const devTemplate = {
   lang: 'en',
   favicon: 'favicon.ico',
@@ -31,6 +40,7 @@ const devTemplate = {
         src: '//cdn.polyfill.io/v2/polyfill.min.js?features=Set',
       },
     ],
+    links: fontLinks,
   },
 }
 const productionTemplate = {
@@ -46,6 +56,7 @@ const productionTemplate = {
           'https://assets.adobedtm.com/6462022b939758565769298a6393ed7a46ee6817/satelliteLib-1a62f312773f2a4b9eaa85dbf0ec0bb49095fd2e.js',
       },
     ],
+    links: fontLinks,
     raw: `
 <script>
   window.dataLayer = {
