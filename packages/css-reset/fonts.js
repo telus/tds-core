@@ -22,7 +22,6 @@ const fonts = [
   `${fontBase}etext/aac5a4b8-ffd3-4529-a098-21b91bc86f9a.ttf`,
   `${fontBase}etext/a747e1ea-ecdf-4f3d-ad47-3df9cfbee3cc.eot?#iefix`,
 
-  `${iconFontBase}core-icons.eot`,
   `${iconFontBase}core-icons.woff2`,
   `${iconFontBase}core-icons.woff`,
   `${iconFontBase}core-icons.ttf`,
