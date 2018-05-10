@@ -1,7 +1,6 @@
 @import '~@tds/core-colours/colours';
 @import '~@tds/core-responsive/responsive';
 @import '../../shared/scss/typography';
-@import '../../shared/scss/responsive';
 
 .sup {
   composes: baseSupSubScripts from '../Text/Text.modules.scss';
