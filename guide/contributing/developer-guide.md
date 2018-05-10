@@ -17,8 +17,8 @@ After forking TDS, the following steps will get you started:
 # Clone your fork
 git clone <your fork> && cd tds
 
-# Install dependencies
-yarn
+# Bootstrap your dev environment
+yarn bootstrap
 ```
 
 We use [Prettier](https://prettier.io/), an opinionated code formatter that integrates with your text editor. Configure [your

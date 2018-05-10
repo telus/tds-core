@@ -9,6 +9,7 @@
     "shared/components/*"
   ],
   "scripts": {
+    "bootstrap": "yarn install && yarn gitbook:install && lerna bootstrap && yarn build --all",
     "build": "node scripts/build.js",
     "build-docs:gitbook": "gitbook build guide",
     "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
@@ -27,7 +28,6 @@
     "dev:e2e": "STYLEGUIDIST_ENV=e2e styleguidist server --config config/styleguide.config.js",
     "gitbook": "gitbook serve guide",
     "gitbook:install": "gitbook install guide",
-    "lerna:bootstrap": "lerna bootstrap",
     "lerna:publish": "node scripts/publish.js",
     "lint:js": "eslint packages shared config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/stylelint.config.js",
