@@ -1,12 +1,4 @@
-@import '../../shared/scss/responsive';
-
-$max-widths: (
-  xs: auto,
-  small: 576px,
-  medium: 768px,
-  large: 992px,
-  xl: 1200px
-);
+@import '~@tds/core-responsive/responsive';
 
 .flexGrid {
   padding: 0;
@@ -16,18 +8,11 @@ $max-widths: (
   margin: 0 auto;
 }
 
-/*
-  Possible alternatives to responsive CSS
-  1) use mutiple 'react-media' queries when it becomes available
-  https://github.com/ReactTraining/react-media/issues/69
-  2) use multiple Responsive components nested in React 16.2 fragments once all teams
-  adopt it https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html
-*/
 .limitWidth {
-  @each $viewport, $max-width in $max-widths {
-    @include from-breakpoint($viewport) {
-      max-width: $max-width;
-      margin: 0 auto;
+  margin: 0 auto;
+  @each $viewport, $mq-breakpoint in $mq-breakpoints {
+    @include mq($from: $viewport) {
+      max-width: $mq-breakpoint;
     }
   }
 }
