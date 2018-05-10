@@ -36,6 +36,7 @@ const config = {
   domain: 'telus-design-system-docs',
   uploadDir,
   lockConfig: true,
+  exclude: ['community/*'],
 }
 const s3 = new AWS.S3({ region: config.region })
 

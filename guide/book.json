@@ -1,5 +1,6 @@
 {
   "title": "TELUS Design System",
+  "gitbook": "3.2.2",
   "plugins": ["otherlink", "collapsible-menu", "insert-logo-link", "-sharing"],
   "pluginsConfig": {
     "insert-logo-link": {
