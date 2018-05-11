@@ -3,19 +3,20 @@
 ## Prerequisites
 
 * [Git](https://git-scm.com/)
-* [Node.JS](https://nodejs.org), >= 6.0
+* [Node.JS](https://nodejs.org), >= 8.0
 * [Yarn](https://yarnpkg.com) (We use yarn for dependency management instead of npm.)
 
 ## Set up your environment
 
-To get started, fork [the repository](https://github.com/telusdigital/tds-core) and create your branch from master.  
+To get started, clone [the repository](https://github.com/telusdigital/tds-core) and create your branch from master.
+If you are not part of the TELUS digital organization, you may fork the repository instead.
 Learn [how to fork a repository on GitHub](https://help.github.com/articles/fork-a-repo/).
 
-After forking TDS, the following steps will get you started:
+After setting up TDS locally, the following steps will get you started:
 
 ```bash
 # Clone your fork
-git clone <your fork> && cd tds
+git clone <tds-core OR your fork> && cd tds-core
 
 # Bootstrap your dev environment
 yarn bootstrap
@@ -62,6 +63,12 @@ You will not be able to make a commit until the precommit tasks pass. We also ha
 Automated component versioning is facilitated by the [Conventional Commits specification](https://conventionalcommits.org/), so you must
 be deliberate when choosing the type of commit. For example, only use the "feat" type if you are adding a backwards-compatible feature
 to a component.
+
+Due to the subjectivity of versioning front-end components, keep these suggestions in mind when making conventional commits:
+
+* **Breaking changes** are removals of features such as props, changes that affect the [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model), or dramatic changes in branding or appearance
+* **Minor changes** are new features, animations, props, or visual options
+* **Patches** are defect fixes that do not remove features, alter pixel dimensions related to the box model, nor add new features. If an intended feature was not working in a previous release, changing that feature to match the original design counts as a patch even if it affects the box model
 
 ```bash
 # Stage your files and make a commit using commitizen
