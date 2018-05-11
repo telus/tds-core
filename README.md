@@ -18,15 +18,15 @@ TDS is intended for use by TELUS employees and approved vendors.
 
 The following group are the active maintainers of this project, and have merge rights accordingly. Please reach out to them if you have questions or need support for your contribution to the TELUS Design System.
 
-| Member              | Role           | Slack            | GitHub           |
-| ------------------- | -------------- | ---------------- | ---------------- |
-| Varun Jain          | Product Owner  | @varunjain       | @varunj90        |
-| Anirudh Swaminathan | Developer      | @ani             | @simpleimpulse   |
-| Ryan Oglesby        | Developer      | @roglesby        | @ryanoglesby08   |
-| Enrico Sacchetti    | Developer      | @enrico          | @theetrain       |
-| Marco Donnici       | Developer      | @marcod          | @marcod1419      |
-| Lucy List           | Design         | @lucylist        | @lucylist        |
-| Donna Vitan         | Design         | @donnavitan      | @donnavitan      |
+| Member              | Role          | Slack       | GitHub         |
+| ------------------- | ------------- | ----------- | -------------- |
+| Varun Jain          | Product Owner | @varunjain  | @varunj90      |
+| Anirudh Swaminathan | Developer     | @ani        | @simpleimpulse |
+| Ryan Oglesby        | Developer     | @roglesby   | @ryanoglesby08 |
+| Enrico Sacchetti    | Developer     | @enrico     | @theetrain     |
+| Marco Donnici       | Developer     | @marcod     | @marcod1419    |
+| Lucy List           | Design        | @lucylist   | @lucylist      |
+| Donna Vitan         | Design        | @donnavitan | @donnavitan    |
 
 ## Inactive members
 
@@ -45,4 +45,5 @@ The following group are the active maintainers of this project, and have merge r
 | [<img src="https://avatars1.githubusercontent.com/u/208883?v=4" width="100px;"/><br /><sub><b>Guilherme Blanco</b></sub>](http://www.doctrine-project.org)<br />[](#tds-guilhermeblanco "") | [<img src="https://avatars3.githubusercontent.com/u/145619?v=4" width="100px;"/><br /><sub><b>Phil Dufault</b></sub>](https://github.com/pdufault)<br />[](#tds-pdufault "") | [<img src="https://avatars3.githubusercontent.com/u/21041962?v=4" width="100px;"/><br /><sub><b>Ian McGonigle</b></sub>](https://github.com/ianMcHuge)<br />[](#tds-ianMcHuge "") | [<img src="https://avatars0.githubusercontent.com/u/17952850?v=4" width="100px;"/><br /><sub><b>Jeffrey Chang</b></sub>](https://github.com/Jebbie87)<br />[](#tds-Jebbie87 "") | [<img src="https://avatars1.githubusercontent.com/u/5900772?v=4" width="100px;"/><br /><sub><b>Kinnan Kwok</b></sub>](https://github.com/kkwoker)<br />[](#tds-kkwoker "") | [<img src="https://avatars1.githubusercontent.com/u/3606708?v=4" width="100px;"/><br /><sub><b>jack</b></sub>](http://jackmakesthings.com)<br />[](#tds-jackmakesthings "") | [<img src="https://avatars0.githubusercontent.com/u/22376665?v=4" width="100px;"/><br /><sub><b>nealmcgann</b></sub>](https://github.com/nealmcgann)<br />[](#tds-nealmcgann "") |
 | [<img src="https://avatars2.githubusercontent.com/u/183195?v=4" width="100px;"/><br /><sub><b>Ahmad Nassri</b></sub>](https://www.ahmadnassri.com)<br />[](#tds-ahmadnassri "") | [<img src="https://avatars0.githubusercontent.com/u/782892?v=4" width="100px;"/><br /><sub><b>Chris Tafts</b></sub>](https://github.com/ctafts)<br />[](#tds-ctafts "") | [<img src="https://avatars2.githubusercontent.com/u/2502296?v=4" width="100px;"/><br /><sub><b>David DeAngelis</b></sub>](https://github.com/DJDA)<br />[](#tds-DJDA "") | [<img src="https://avatars0.githubusercontent.com/u/448452?v=4" width="100px;"/><br /><sub><b>Drew Minns</b></sub>](http://www.drewminns.com)<br />[](#tds-drewminns "") | [<img src="https://avatars2.githubusercontent.com/u/5311720?v=4" width="100px;"/><br /><sub><b>Ed Thome</b></sub>](https://github.com/ethome)<br />[](#tds-ethome "") | [<img src="https://avatars3.githubusercontent.com/u/5891333?v=4" width="100px;"/><br /><sub><b>mattseburn</b></sub>](https://github.com/mattseburn)<br />[](#tds-mattseburn "") | [<img src="https://avatars0.githubusercontent.com/u/1269616?v=4" width="100px;"/><br /><sub><b>Reza Sadr</b></sub>](https://linkedin.com/in/wintorez)<br />[](#tds-wintorez "") |
 | [<img src="https://avatars0.githubusercontent.com/u/2081077?v=4" width="100px;"/><br /><sub><b>Rodrigo Maia</b></sub>](http://rodrigomaia.me)<br />[](#tds-rodrigomaia17 "") | [<img src="https://avatars3.githubusercontent.com/u/2011006?v=4" width="100px;"/><br /><sub><b>Sebastian Krumhausen</b></sub>](http://krumhausen.com)<br />[](#tds-mrkrumhausen "") | [<img src="https://avatars0.githubusercontent.com/u/2330366?v=4" width="100px;"/><br /><sub><b>Suet Yi Lee</b></sub>](https://github.com/sy-lee)<br />[](#tds-sy-lee "") | [<img src="https://avatars2.githubusercontent.com/u/1456613?v=4" width="100px;"/><br /><sub><b>Travis Allan</b></sub>](https://github.com/travis-eh)<br />[](#tds-travis-eh "") | [<img src="https://avatars3.githubusercontent.com/u/32460479?v=4" width="100px;"/><br /><sub><b>aquirkles</b></sub>](https://github.com/aquirkles)<br />[](#tds-aquirkles "") | [<img src="https://avatars1.githubusercontent.com/u/18177753?v=4" width="100px;"/><br /><sub><b>gfroome</b></sub>](https://github.com/gfroome)<br />[](#tds-gfroome "") | [<img src="https://avatars3.githubusercontent.com/u/224624?v=4" width="100px;"/><br /><sub><b>Josh Arndt</b></sub>](https://github.com/githubjosh)<br />[](#tds-githubjosh "") |
+| [<img src="https://avatars2.githubusercontent.com/u/2739819?v=4" width="100px;"/><br /><sub><b>Ani</b></sub>](https://github.com/simpleimpulse)<br />[](#tds-simpleimpulse "") | [<img src="https://avatars1.githubusercontent.com/u/3495961?v=4" width="100px;"/><br /><sub><b>Varun Jain</b></sub>](https://github.com/varunj90)<br />[](#tds-varunj90 "") |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
