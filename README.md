@@ -18,14 +18,15 @@ TDS is intended for use by TELUS employees and approved vendors.
 
 The following group are the active maintainers of this project, and have merge rights accordingly. Please reach out to them if you have questions or need support for your contribution to the TELUS Design System.
 
-| Member           | Role         | Slack            | GitHub           |
-| ---------------- | ------------ | ---------------- | ---------------- |
-| Alexandra Fedyk  | Scrum Master | @alexandra.fedyk | @alexandramfedyk |
-| Ryan Oglesby     | Developer    | @roglesby        | @ryanoglesby08   |
-| Enrico Sacchetti | Developer    | @enrico          | @theetrain       |
-| Marco Donnici    | Developer    | @marcod          | @marcod1419      |
-| Lucy List        | Design       | @lucylist        | @lucylist        |
-| Donna Vitan      | Design       | @donnavitan      | @donnavitan      |
+| Member              | Role           | Slack            | GitHub           |
+| ------------------- | -------------- | ---------------- | ---------------- |
+| Varun Jain          | Product Owner  | @varunjain       | @varunj90        |
+| Anirudh Swaminathan | Developer      | @ani             | @simpleimpulse   |
+| Ryan Oglesby        | Developer      | @roglesby        | @ryanoglesby08   |
+| Enrico Sacchetti    | Developer      | @enrico          | @theetrain       |
+| Marco Donnici       | Developer      | @marcod          | @marcod1419      |
+| Lucy List           | Design         | @lucylist        | @lucylist        |
+| Donna Vitan         | Design         | @donnavitan      | @donnavitan      |
 
 ## Inactive members
 
