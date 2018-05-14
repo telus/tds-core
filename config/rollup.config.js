@@ -46,7 +46,7 @@ export default opts => {
           plugins: [autoprefixer()],
           modules: {
             Loader: CssModulesSassLoader,
-            globalModulePaths: [/packages\/SelectorCounter/, /packages\/StepTracker/],
+            globalModulePaths: [/packages\/SelectorCounter/],
             generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
           },
         }),
