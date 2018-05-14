@@ -25,10 +25,11 @@
     "react-dom": ">=15"
   },
   "dependencies": {
+    "@tds/core-decorative-icon": "^1.0.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "classnames": "^2.2.5"
+    "@tds/core-responsive": "^1.1.0"
   }
 }

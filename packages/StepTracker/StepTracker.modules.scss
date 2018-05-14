@@ -1,0 +1,109 @@
+@import '~@tds/core-colours/colours';
+@import '~@tds/core-responsive/responsive';
+
+.container {
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem -1.5rem;
+
+  @include mq($from: md) {
+    margin: 1rem 0;
+  }
+}
+
+.step {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  list-style: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 17px;
+    width: calc(50% - 1.07rem);
+    content: ' ';
+    border-bottom: 0.1rem solid $color-shuttle-grey;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  .icon {
+    display: inline-block;
+    border: 0.1rem solid $color-shuttle-grey;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  .label {
+    position: relative;
+    color: $color-shark;
+    font-size: 1rem;
+    width: 102%;
+    display: none;
+    text-align: center;
+
+    @include mq($from: md) {
+      display: block;
+    }
+  }
+
+  &.completed {
+    .icon {
+      background-color: $color-primary;
+      text-align: center;
+      border: 0.1rem solid $color-primary;
+    }
+  }
+
+  &.processing {
+    .icon {
+      background-color: $color-primary;
+      text-align: center;
+      border: 0.1rem solid $color-primary;
+    }
+
+    .label {
+      color: $color-primary;
+      font-weight: bold;
+    }
+  }
+}
+
+.step:first-child {
+  &::before {
+    content: none;
+  }
+}
+
+.step:last-child {
+  &::after {
+    content: none;
+  }
+}
+
+.mobileLabel {
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  color: $color-primary;
+
+  @include mq($from: md) {
+    display: none;
+  }
+}
+
+.mobileLabelStepInfo {
+  color: $color-shark;
+  font-size: 1rem;
+}

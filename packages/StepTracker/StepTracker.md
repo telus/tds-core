@@ -9,21 +9,28 @@ window to see this behavior.
 
 ```jsx
 initialState = {
-  current: 1,
+  current: 0,
 }
 ;<div>
-  <StepTracker current={state.current}>
-    <StepTracker.Step label="Plans & addons" />
-    <StepTracker.Step label="Account creation" />
-    <StepTracker.Step label="Phone information" />
-    <StepTracker.Step label="Payment setup" />
-    <StepTracker.Step label="Submit" />
-  </StepTracker>
-
-  <Button variant="secondary" onClick={() => setState({ current: state.current - 1 })}>
+  <StepTracker
+    current={state.current}
+    steps={['Plans & Addons', 'Account Creation', 'Phone Information', 'Payment Setup', 'Submit']}
+  />
+  <br />
+  <Button
+    variant="secondary"
+    onClick={() => {
+      setState({ current: state.current - 1 })
+    }}
+  >
     Previous Step
   </Button>
-  <Button variant="secondary" onClick={() => setState({ current: state.current + 1 })}>
+  <Button
+    variant="secondary"
+    onClick={() => {
+      setState({ current: state.current + 1 })
+    }}
+  >
     Next Step
   </Button>
 </div>
