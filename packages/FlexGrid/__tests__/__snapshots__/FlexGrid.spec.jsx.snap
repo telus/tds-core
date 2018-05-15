@@ -2,7 +2,7 @@
 
 exports[`FlexGrid renders 1`] = `
 <div
-  class="flexGrid container-fluid"
+  class="flexGrid limitWidth container-fluid"
 >
   <div
     class="flexRow row"

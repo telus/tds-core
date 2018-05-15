@@ -61,7 +61,7 @@ FlexGrid.propTypes = {
 
 FlexGrid.defaultProps = {
   centre: undefined,
-  limitWidth: undefined,
+  limitWidth: true,
   gutter: true,
 }
 
