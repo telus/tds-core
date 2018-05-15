@@ -11,7 +11,7 @@ Below is a quick example of how the components fit together. See the [FlexGrid.R
 components below for a more in-depth look.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
-<FlexGrid limitWidth>
+<FlexGrid>
   <FlexGrid.Row>
     <FlexGrid.Col>
       <Box vertical={2}><Text>1/3</Text></Box>
@@ -28,9 +28,9 @@ components below for a more in-depth look.
 
 ### How it works
 
-* `FlexGrid` is the top-level container. It centers and horizontally pads your site’s contents (optionally).
-* `FlexGrid.Row`s are wrappers for columns. Columns have horizontal padding (called a gutter) for controlling the space between them.
-* Place content inside `FlexGrid.Col` components. These should be the immediate children of rows.
+* `FlexGrid` is the top-level container. It centers and horizontally pads your site’s contents
+* `FlexGrid.Row`s are wrappers for columns. Columns have horizontal padding (called a gutter) for controlling the space between them
+* Place content inside `FlexGrid.Col` components. These should be the immediate children of rows
 * Columns without a specified width will automatically layout as equal width columns
 * Column widths can be made responsive by using the responsive props, which match the props used in `Responsive`: `xs`, `sm`,
   `md`, `lg` and `xl`
@@ -43,7 +43,7 @@ Remove the 16px gutter surrounding columns by passing `gutter={false}` to the `F
 from all children columns.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
-<FlexGrid limitWidth gutter={false}>
+<FlexGrid gutter={false}>
   <FlexGrid.Row>
     <FlexGrid.Col>
       <Box vertical={2}><Text>1/3 no gutter</Text></Box>
