@@ -10,13 +10,13 @@ Either way, [let us know about it](contact.md) so that we can work with you on t
 
 ## How is TDS versioned?
 
-As of March 2018, TDS switched to individually-versioned components and each TDS component is an npm package that adheres to [Semantic Versioning](https://semver.org/) to make it easier for consumers to manage upgrades across independent components.
+As of March 2018, TDS switched to "split components" and each TDS component is an npm package that adheres to [Semantic Versioning](https://semver.org/) to make it easier for consumers to manage upgrades across independent components.
 
-In short:
+Due to the subjectivity of versioning front-end components, this is the guide we use:
 
-* Major version changes denote breaking API changes such as renaming a component.
-* Minor version changes denote backwards compatible changes such as introducing a new prop to a component.
-* Patch changes denote bug fixes.
+* **Breaking changes** are removals of features such as props, changes that affect the [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model), or dramatic changes in branding or appearance
+* **Minor changes** are new features, animations, props, or visual options
+* **Patches** are defect fixes that do not remove features, alter pixel dimensions related to the box model, nor add new features. If an intended feature was not working in a previous release, changing that feature to match the original design counts as a patch even if it affects the box model
 
 Learn more by reading the [TELUS Design Platform roadmap](roadmap.md).
 
