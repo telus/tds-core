@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Text from '@tds/core-text'
+import Box from '@tds/core-box'
+
 import Step from './Step/Step'
 
 import styles from './StepTracker.modules.scss'
@@ -11,30 +14,31 @@ import styles from './StepTracker.modules.scss'
  * @version ./package.json
  */
 
-const StepTracker = props => {
+const StepTracker = ({ current, steps, stepText }) => {
   return (
     <div>
-      <ul className={styles.container}>
-        {props.steps.map((label, index) => {
-          return React.createElement(StepTracker.Step, {
-            label,
-            status: props.current,
-            label: props.steps[index], // eslint-disable-line no-dupe-keys
-            stepNumber: index + 1,
-            stepIndex: index,
-            key: index, // eslint-disable-line react/no-array-index-key
-          })
+      <Box vertical={2} dangerouslyAddClassName={styles.container}>
+        {steps.map((label, index) => {
+          return (
+            /* eslint-disable react/no-array-index-key */
+            <StepTracker.Step
+              status={current}
+              label={steps[index]}
+              stepNumber={index + 1}
+              stepIndex={index}
+              key={index}
+            />
+            /* eslint-enable react/no-array-index-key */
+          )
         })}
-      </ul>
+      </Box>
       <div className={styles.mobileLabel}>
-        <span className={styles.mobileLabelStepInfo}>
-          {props.stepText}{' '}
-          {props.current < props.steps.length ? props.current + 1 : props.steps.length}{' '}
-          {props.outOfText} {props.steps.length}:{' '}
-        </span>
-        {props.current < props.steps.length
-          ? props.steps[props.current]
-          : props.steps[props.steps.length - 1]}
+        <Text>
+          {stepText
+            .replace('%current', current < steps.length ? current + 1 : steps.length)
+            .replace('%total', steps.length)}{' '}
+          {current < steps.length ? steps[current] : steps[steps.length - 1]}
+        </Text>
       </div>
     </div>
   )
@@ -67,18 +71,14 @@ StepTracker.propTypes = {
    */
   steps: PropTypes.array.isRequired,
   /**
-   * String for text to display in front of current step number.
+   * String for text to display current step progress on mobile devices.
+   * Use %current to place the current step and use %total to place the total amount of steps.
    */
   stepText: PropTypes.string,
-  /**
-   * String for text to display in between current step and total step numbers.
-   */
-  outOfText: PropTypes.string,
 }
 
 StepTracker.defaultProps = {
-  stepText: 'Step',
-  outOfText: 'of',
+  stepText: 'Step %current of %total:',
 }
 
 StepTracker.Step = Step
