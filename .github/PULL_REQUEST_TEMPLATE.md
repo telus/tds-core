@@ -6,23 +6,41 @@
   data retrieval. 
 -->
 
-## Description
+## Related issues
 
-- Link to related issues: `#<issue number>`
-- Description of the problem the contribution solves or link to design issue
-  - [ ] Explanation of how existing TDS code falls short
-  - [ ] Explanation of backwards compatibility for users who are already on this feature
+See <!-- put issue number here, or delete this section -->
 
-## Considerations
+## Notes
 
-- [ ] Provide access to finalised designs in Sketch and Invision
-- [ ] Add documentation
+* Feature 1
+* Feature 2
+* Patch 1
+* Patch 2
 
-## Dev Acceptance Criteria
+## Merge Notes
 
-- [ ] Alignment to approved Sketch file and creative mockups
-- [ ] Documentation is finalized
-- [ ] Code meets AA accessibility guidelines
-- [ ] Code passes automated tests and style checks
-- [ ] New code is unit tested where appropriate (developer should use own judgement)
-- [ ] Code passes Pull Request review with 1 approval
+<!--
+  Indicate whether you would prefer to 'rebase and merge' or 'squash and merge'
+  Also, add any notes regarding how the code should be handled post-merge
+
+  For your convenience, you can uncomment the canned responses below
+-->
+
+<!-- Please rebase and merge -->
+
+<!-- Please squash and merge -->
+
+<!-- After merging, please ... -->
+
+## Package changes
+
+```
+Run `yarn prepr` locally and paste its output here, even when there are no changes
+```
+
+## Checklist before submitting pull request
+
+* [ ] For code changes, run `yarn prepr` locally
+  * make sure visual tests pass
+  * paste the lerna version output
+* [ ] New code is unit tested where appropriate
