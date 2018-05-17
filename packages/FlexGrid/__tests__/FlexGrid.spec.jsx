@@ -6,8 +6,6 @@ import FlexGrid from '../FlexGrid'
 
 import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'
 
-jest.mock('../../../shared/utils/warn')
-
 describe('FlexGrid', () => {
   const doMount = (props = {}) => {
     const flexGrid = mount(
@@ -88,5 +86,13 @@ describe('FlexGrid', () => {
 
     expect(flexGrid).not.toHaveProp('className', 'my-custom-class')
     expect(flexGrid).not.toHaveProp('style', { color: 'hotpink' })
+  })
+
+  it('allows the limitWidth prop to be unset', () => {
+    const { flexGrid } = doMount({
+      limitWidth: false,
+    })
+
+    expect(flexGrid).not.toHaveClassName('limitWidth')
   })
 })
