@@ -52,6 +52,9 @@ yarn scaffold MyComponent
 
 ## Make a commit
 
+To view a guide on how TDS components are versioned, see our [FAQ](../faq.md#how-is-tds-versioned).  
+To view TELUS standards for commit format, see our [contribution model][contribution-model] on the Reference Architecture.
+
 We use [commitizen](https://github.com/commitizen/cz-cli) and [commitlint](https://github.com/marionebl/commitlint) to
 ensure conventional commit messages, which supports our publishing workflow and versioning scheme.
 
@@ -61,13 +64,38 @@ You will not be able to make a commit until the precommit tasks pass. We also ha
 Automated component versioning is facilitated by the [Conventional Commits specification](https://conventionalcommits.org/), so you must
 be deliberate when choosing the type of commit.
 
-You can follow conventional commits like this:
+### Commit format
+
+Given the commit format:
+
+```
+type(scope): subject
+
+body
+
+footer
+```
+
+Use the `type` field to inform lerna what Conventional Commit you intend to use:
 
 * For breaking changes, use the **feat** commit type with body text that begins with the phrase "BREAKING CHANGE"
 * For minor changes, use the **feat** commit type
 * For patches, use the **fix** commit type
 
-To view a guide on how TDS components are versioned, see our [FAQ](../faq.md#how-is-tds-versioned).
+Use the `scope` field when referring to an area in the codebase, such as a package name (e.g. `core-button-link`) or
+a directory (e.g. `e2e`).
+
+Use the `subject` field to write a succinct description of the change. The first word is often a verb using present
+imperative tense such as 'change' or 'remove'.
+
+The `body` field can include more detailed notes regarding the change. If there is a breaking change, it must begin with
+the phrase 'BREAKING CHANGE:'.
+
+The `footer` field can be used to reference a commit hash or issue number on GitHub.
+
+### Use commitizen
+
+The TDS codebase includes a script to run commitizen for a streamline commit-making experience:
 
 ```bash
 # Stage your files and make a commit using commitizen
@@ -101,3 +129,5 @@ yarn prepr
 
 The pre-pr task will show you the version change that will result from your changeset. If the output is unexpected, you may need
 to adjust your commit messages before making your PR. See the [Conventional Commits spec FAQ](https://conventionalcommits.org/#faq) for more info on correcting mistakes.
+
+[contribution-model]: https://github.com/telusdigital/reference-architecture/blob/f9d0670a8303351ed80589ea09fddb4f7757d19a/process/contribution-model.md
