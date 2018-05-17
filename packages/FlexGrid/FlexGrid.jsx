@@ -17,11 +17,13 @@ import styles from './FlexGrid.modules.scss'
  * @version ./package.json
  */
 const FlexGrid = ({ limitWidth, gutter, children, ...rest }) => {
-  const getClasses = () => joinClassNames(styles.flexGrid, limitWidth && styles.limitWidth)
-
   return (
     <Broadcast channel="flex-grid" value={gutter}>
-      <Grid {...safeRest(rest)} fluid className={getClasses()}>
+      <Grid
+        {...safeRest(rest)}
+        fluid
+        className={joinClassNames(styles.flexGrid, limitWidth && styles.limitWidth)}
+      >
         {children}
       </Grid>
     </Broadcast>
