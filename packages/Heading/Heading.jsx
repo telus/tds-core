@@ -30,17 +30,16 @@ BaseHeading.propTypes = {
  *
  * @version ./package.json
  */
-const Heading = ({ level, invert, children, ...rest }) => {
+const Heading = ({ level, size = level, invert, children, ...rest }) => {
   const baseHeadingProps = {
     ...rest,
     level,
   }
-
   if (level === 'h1' || level === 'h2') {
     const color = invert ? styles.inverted : styles.secondary
 
     return (
-      <BaseHeading {...baseHeadingProps} color={color} size={styles[level]}>
+      <BaseHeading {...baseHeadingProps} color={color} size={styles[size]}>
         {children}
       </BaseHeading>
     )
@@ -50,7 +49,7 @@ const Heading = ({ level, invert, children, ...rest }) => {
     <BaseHeading
       {...baseHeadingProps}
       color={invert ? styles.inverted : styles.default}
-      size={styles[level]}
+      size={styles[size]}
     >
       {children}
     </BaseHeading>
@@ -59,9 +58,13 @@ const Heading = ({ level, invert, children, ...rest }) => {
 
 Heading.propTypes = {
   /**
-   * The heading level.
+   * The semantic level of the heading.
    */
   level: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']).isRequired,
+  /**
+   * The size of the heading.
+   */
+  size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
   /**
    * Invert the text color to appear light on dark backgrounds.
    */
@@ -73,6 +76,7 @@ Heading.propTypes = {
 }
 Heading.defaultProps = {
   invert: false,
+  size: undefined,
 }
 
 Heading.Sup = HeadingSup
