@@ -65,10 +65,7 @@ describe('FlexGrid', () => {
   })
 
   it('passes additional attributes to the element', () => {
-    const { flexGrid } = doMount({
-      id: 'the-id',
-      'data-some-attr': 'some value',
-    })
+    const { flexGrid } = doMount({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(flexGrid).toHaveProp('id', 'the-id')
     expect(flexGrid).toHaveProp('data-some-attr', 'some value')
@@ -76,7 +73,7 @@ describe('FlexGrid', () => {
 
   it('can have limited width at various viewport sizes', () => {
     mockMatchMedia(360)
-    const { flexGrid } = doMount()
+    const { flexGrid } = doMount({ limitWidth: true })
 
     expect(flexGrid).toHaveClassName('limitWidth')
   })
