@@ -32,7 +32,7 @@ const renderIcon = icon => <DecorativeIcon symbol={icon.symbol} variant={icon.co
  */
 const Notification = ({ variant, children, ...rest }) => (
   <Box {...safeRest(rest)} vertical={3} dangerouslyAddClassName={styles[variant]}>
-    <FlexGrid>
+    <FlexGrid limitWidth>
       <FlexGrid.Row>
         <FlexGrid.Col>
           <Box inline between={3}>
