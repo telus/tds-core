@@ -1,6 +1,7 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 import { Grid } from 'react-flexbox-grid'
+import { deprecate } from '../../../shared/utils/warn'
 
 import FlexGrid from '../FlexGrid'
 
@@ -78,6 +79,18 @@ describe('FlexGrid', () => {
     const { flexGrid } = doMount()
 
     expect(flexGrid).toHaveClassName('limitWidth')
+  })
+
+  it('can be horizontally centred', () => {
+    const { flexGrid } = doMount({ limitWidth: true, centre: true })
+
+    expect(flexGrid).toHaveClassName('centre')
+  })
+
+  it('will show a centre is deprecated warning', () => {
+    doMount({ centre: true })
+
+    expect(deprecate).toHaveBeenCalled()
   })
 
   it('does not allow custom CSS', () => {
