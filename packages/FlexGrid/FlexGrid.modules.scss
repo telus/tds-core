@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-.centre {
-  margin: 0 auto;
-}
-
 .limitWidth {
   margin: 0 auto;
   @each $viewport, $mq-breakpoint in $mq-breakpoints {
