@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StepTracker /> renders 1`] = `
+<div
+  data-testid="stepTrackerContainer"
+>
+  <div
+    class="row"
+  >
+    <div
+      aria-current="false"
+      aria-label="Login"
+      class="stepActive"
+      data-testid="singleStepContainer-0"
+    >
+      <span
+        class="icon"
+      >
+        <i
+          aria-hidden="true"
+          class="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
+        />
+      </span>
+      <div
+        class="row justifyContentCenter label"
+      >
+        <span
+          class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
+        >
+          1. Login
+        </span>
+      </div>
+    </div>
+    <div
+      aria-current="true"
+      aria-label="Purchase"
+      class="stepActive"
+      data-testid="singleStepContainer-1"
+    >
+      <span
+        class="icon"
+      >
+        <br />
+      </span>
+      <div
+        class="row justifyContentCenter label"
+      >
+        <span
+          class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__boldFont___30Cjc TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
+        >
+          2. Purchase
+        </span>
+      </div>
+    </div>
+    <div
+      aria-current="false"
+      aria-label="Checkout"
+      class="step"
+      data-testid="singleStepContainer-2"
+    >
+      <span
+        class="icon"
+      >
+        <br />
+      </span>
+      <div
+        class="row justifyContentCenter label"
+      >
+        <span
+          class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
+        >
+          3. Checkout
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mobileLabel"
+  >
+    <span
+      class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
+    >
+      function () {
+            parseStepText(current, steps, mobileStepLabelTemplate);
+          } function () {
+            getStepLabel(current, steps);
+          }
+    </span>
+  </div>
+</div>
+`;

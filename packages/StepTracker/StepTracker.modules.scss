@@ -1,13 +1,6 @@
 @import '~@tds/core-colours/colours';
 @import '~@tds/core-responsive/responsive';
 
-.container {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 .step {
   width: 100%;
   position: relative;
@@ -34,15 +27,13 @@
     display: inline-block;
     border: 0.1rem solid $color-shuttle-grey;
     border-radius: 50%;
-    font-size: 1.2rem;
+    line-height: 1.7rem;
     width: 35px;
     height: 35px;
     margin-bottom: 1rem;
   }
 
   .label {
-    position: relative;
-    width: 100%;
     display: none;
     text-align: center;
 
