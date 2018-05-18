@@ -23,7 +23,7 @@ const Flexbox = ({ direction, justifyContent, dangerouslyAddClassName, children,
 
 Flexbox.propTypes = {
   direction: PropTypes.oneOf(['column', 'row']).isRequired,
-  justifyContent: PropTypes.oneOf(['spaceBetween']),
+  justifyContent: PropTypes.oneOf(['spaceBetween', 'center']),
   dangerouslyAddClassName: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
