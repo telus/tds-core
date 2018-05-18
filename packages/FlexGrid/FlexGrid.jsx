@@ -8,6 +8,7 @@ import Row from './Row/Row'
 
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
+import { deprecate } from '../../shared/utils/warn'
 
 import styles from './FlexGrid.modules.scss'
 
@@ -16,14 +17,20 @@ import styles from './FlexGrid.modules.scss'
  *
  * @version ./package.json
  */
-const FlexGrid = ({ limitWidth, gutter, children, ...rest }) => {
+const FlexGrid = ({ centre, limitWidth, gutter, children, ...rest }) => {
+  if (centre) {
+    deprecate(
+      'core-flex-grid',
+      'The centre prop is deprecated due to the limitWidth prop centring the grid on its own. Please remove the centre prop from your grid definition.'
+    )
+  }
+
+  const getClasses = () =>
+    joinClassNames(styles.flexGrid, centre && styles.centre, limitWidth && styles.limitWidth)
+
   return (
     <Broadcast channel="flex-grid" value={gutter}>
-      <Grid
-        {...safeRest(rest)}
-        fluid
-        className={joinClassNames(styles.flexGrid, limitWidth && styles.limitWidth)}
-      >
+      <Grid {...safeRest(rest)} fluid className={getClasses()}>
         {children}
       </Grid>
     </Broadcast>
@@ -31,6 +38,13 @@ const FlexGrid = ({ limitWidth, gutter, children, ...rest }) => {
 }
 
 FlexGrid.propTypes = {
+  /**
+   * @deprecated Centres the grid horizontally. This is useful when using `limitWidth`.
+   * @since 1.1.0
+   *
+   * When using `limitWidth`, the grid will centre.
+   */
+  centre: PropTypes.bool,
   /**
    * Whether or not to give the grid a fixed width. This also centres the grid horizontally.
    */
@@ -46,7 +60,8 @@ FlexGrid.propTypes = {
 }
 
 FlexGrid.defaultProps = {
-  limitWidth: true,
+  centre: undefined,
+  limitWidth: undefined,
   gutter: true,
 }
 

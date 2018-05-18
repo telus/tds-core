@@ -1,10 +1,13 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
 import { Grid } from 'react-flexbox-grid'
+import { deprecate } from '../../../shared/utils/warn'
 
 import FlexGrid from '../FlexGrid'
 
 import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'
+
+jest.mock('../../../shared/utils/warn')
 
 describe('FlexGrid', () => {
   const doMount = (props = {}) => {
@@ -62,10 +65,7 @@ describe('FlexGrid', () => {
   })
 
   it('passes additional attributes to the element', () => {
-    const { flexGrid } = doMount({
-      id: 'the-id',
-      'data-some-attr': 'some value',
-    })
+    const { flexGrid } = doMount({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(flexGrid).toHaveProp('id', 'the-id')
     expect(flexGrid).toHaveProp('data-some-attr', 'some value')
@@ -73,9 +73,21 @@ describe('FlexGrid', () => {
 
   it('can have limited width at various viewport sizes', () => {
     mockMatchMedia(360)
-    const { flexGrid } = doMount()
+    const { flexGrid } = doMount({ limitWidth: true })
 
     expect(flexGrid).toHaveClassName('limitWidth')
+  })
+
+  it('can be horizontally centred', () => {
+    const { flexGrid } = doMount({ limitWidth: true, centre: true })
+
+    expect(flexGrid).toHaveClassName('centre')
+  })
+
+  it('will show a centre is deprecated warning', () => {
+    doMount({ centre: true })
+
+    expect(deprecate).toHaveBeenCalled()
   })
 
   it('does not allow custom CSS', () => {
@@ -86,13 +98,5 @@ describe('FlexGrid', () => {
 
     expect(flexGrid).not.toHaveProp('className', 'my-custom-class')
     expect(flexGrid).not.toHaveProp('style', { color: 'hotpink' })
-  })
-
-  it('allows the limitWidth prop to be unset', () => {
-    const { flexGrid } = doMount({
-      limitWidth: false,
-    })
-
-    expect(flexGrid).not.toHaveClassName('limitWidth')
   })
 })
