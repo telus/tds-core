@@ -357,54 +357,5 @@ module.exports = {
 
     return updatedDocs
   },
-  webpackConfig: {
-    devServer: {
-      disableHostCheck: true,
-    },
-    module: {
-      rules: [
-        {
-          test: /\.jsx?$/,
-          exclude: /node_modules/,
-          use: 'babel-loader',
-        },
-        {
-          test: /(\.modules\.scss|flexboxgrid)/,
-          use: [
-            'style-loader',
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
-                localIdentName: 'TDS_[name]__[local]___[hash:base64:5]',
-                importLoaders: 2, // Number of loaders applied before CSS loader
-              },
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                ident: 'postcss',
-                plugins: [require('autoprefixer')()],
-              },
-            },
-            'sass-loader',
-          ],
-        },
-        {
-          test: /\.scss$/,
-          exclude: /\.modules.scss$/,
-          use: ['style-loader', 'css-loader', 'sass-loader'],
-        },
-        {
-          test: /\.css$/,
-          exclude: /flexboxgrid/,
-          use: ['style-loader', 'css-loader'],
-        },
-        {
-          test: /\.(png|jpg|svg)$/,
-          use: 'url-loader',
-        },
-      ],
-    },
-  },
+  webpackConfig: require('./styleguide.webpack.config'),
 }
