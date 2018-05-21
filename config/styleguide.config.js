@@ -268,7 +268,7 @@ module.exports = {
   require: [
     path.resolve('packages/css-reset/index.scss'),
     path.resolve('docs/scss/styleguide.scss'),
-  ],
+  ].concat(styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []),
   styleguideComponents: {
     Editor: path.resolve('docs/components/overrides/Editor/Editor'),
     Logo: path.resolve('docs/components/custom/Logo/Logo'),
@@ -334,14 +334,6 @@ module.exports = {
       text: {
         fontSize: 'inherit',
       },
-    },
-    StyleGuide: {
-      '@global body *':
-        styleguidistEnv === 'e2e'
-          ? {
-              animationPlayState: 'paused !important',
-            }
-          : {},
     },
   },
   updateDocs(docs, file) {
