@@ -9,6 +9,7 @@ npm-debug.log*
 
 # Jest
 coverage
+__diff_output__
 
 # IDE project files
 .idea
