@@ -3,7 +3,7 @@
 ## Prerequisites
 
 * [Git](https://git-scm.com/)
-* [Node.JS](https://nodejs.org), >= 8.0
+* [Node.JS](https://nodejs.org) >= 8.0
 * [Yarn](https://yarnpkg.com) (We use yarn for dependency management instead of npm.)
 
 ## Set up your environment
