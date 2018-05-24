@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "@tds/core-responsive": "^1.1.0"
+    "@tds/core-responsive": "^1.1.0",
+    "@tds/shared-flexbox": "^1.0.0"
   }
 }
