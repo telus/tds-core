@@ -84,13 +84,19 @@ class Choice extends React.Component {
 
   onChange = event => {
     const { onChange } = this.props
-    this.setState(({ checked }) => ({
-      checked: !checked,
-    }))
 
-    if (onChange) {
-      onChange(event)
-    }
+    event.persist()
+
+    this.setState(
+      ({ checked }) => {
+        return { checked: !checked }
+      },
+      () => {
+        if (onChange) {
+          onChange(event)
+        }
+      }
+    )
   }
 
   onFocus = event => {

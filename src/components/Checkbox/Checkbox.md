@@ -34,9 +34,9 @@ initialState = {
 
 const handleCheck = (event) => {
   if (event.target.checked) {
-    setState({ checked: false, feedback: undefined, message: undefined});
+    setState({ checked: true, feedback: undefined, message: undefined })
   } else {
-    setState({ checked: true, feedback: 'error', message: message});
+    setState({ checked: false, feedback: 'error', message: message })
   }
 };
 
