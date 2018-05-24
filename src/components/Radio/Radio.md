@@ -11,11 +11,13 @@ Radio buttons are used when there is a list of two or more options that are mutu
 * Use [`Select`](#select) (dropdown) when there are over 6 options
 
 ```
+const setChoice = event => {
+  setState({ choice: event.target.value })
+}
+
 initialState = {
   choice: "e.bill"
 };
-
-const setChoice = (event) => setState({choice: event.target.value});
 
 <Box tag="fieldset" between={2}>
   <legend>
@@ -23,7 +25,19 @@ const setChoice = (event) => setState({choice: event.target.value});
       How would you like to recieve your monthly bill?
     </Text>
   </legend>
-  <Radio label="e.Bill" name="monthly-bill" value="e.Bill" checked={state.choice === "e.bill"} onChange={setChoice} />
-  <Radio label="Paper bill" name="monthly-bill" value="paper bill" checked={state.choice === "paper bill"} onChange={setChoice} />
+  <Radio
+    label="e.Bill"
+    name="monthly-bill"
+    value="e.bill"
+    checked={state.choice === 'e.bill'}
+    onChange={setChoice}
+  />
+  <Radio
+    label="Paper bill"
+    name="monthly-bill"
+    value="paper bill"
+    checked={state.choice === 'paper bill'}
+    onChange={setChoice}
+  />
 </Box>
 ```
