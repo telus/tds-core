@@ -15,8 +15,11 @@ initialState = {
   choice: 'e.bill',
 }
 
-const setChoice = event => setState({ choice: event.target.value })
-;<Box tag="fieldset" between={2}>
+const setChoice = event => {
+  setState({ choice: event.target.value })
+}
+
+<Box tag="fieldset" between={2}>
   <legend>
     <Text bold size="medium">
       How would you like to recieve your monthly bill?
@@ -25,7 +28,7 @@ const setChoice = event => setState({ choice: event.target.value })
   <Radio
     label="e.Bill"
     name="monthly-bill"
-    value="e.Bill"
+    value="e.bill"
     checked={state.choice === 'e.bill'}
     onChange={setChoice}
   />
