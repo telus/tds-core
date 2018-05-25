@@ -79,6 +79,7 @@ exports[`<StepTracker /> renders 1`] = `
   >
     <span
       class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
+      data-testid="mobileStepLabel"
     >
       function () {
             parseStepText(current, steps, mobileStepLabelTemplate);

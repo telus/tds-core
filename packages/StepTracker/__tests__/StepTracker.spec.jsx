@@ -59,6 +59,17 @@ describe('<StepTracker />', () => {
     )
   })
 
+  it('properly renders the mobile step label template', () => {
+    const stepTracker = doMount({ current: 0 })
+
+    expect(
+      stepTracker
+        .find('[data-testid="mobileStepLabel"]')
+        .first()
+        .text()
+    ).toBe('Step 1 of 3')
+  })
+
   it('passes additional attributes to button element', () => {
     const stepTracker = doMount({ id: 'step-tracker', tabIndex: 1 })
 
