@@ -44,7 +44,7 @@ const StepTracker = ({ current, steps, mobileStepLabelTemplate, ...rest }) => {
         })}
       </Flexbox>
       <div className={styles.mobileLabel}>
-        <Text>
+        <Text data-testid="mobileStepLabel">
           {`${() => {
             parseStepText(current, steps, mobileStepLabelTemplate)
           }} ${() => {
