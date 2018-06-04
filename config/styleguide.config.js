@@ -90,7 +90,6 @@ module.exports = {
       Heading: 'Heading',
       'Text/TextSup': 'Text',
       'TextArea/TextArea': 'TextArea',
-      StepTracker: 'StepTracker',
     }
 
     const componentDirectory = path.dirname(componentPath)
