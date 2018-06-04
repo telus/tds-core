@@ -67,7 +67,7 @@ describe('<StepTracker />', () => {
         .find('[data-testid="mobileStepLabel"]')
         .first()
         .text()
-    ).toBe('Step 1 of 3')
+    ).toBe('Step 1 of 3: Login')
   })
 
   it('passes additional attributes to button element', () => {

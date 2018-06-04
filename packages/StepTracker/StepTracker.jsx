@@ -16,17 +16,23 @@ import styles from './StepTracker.modules.scss'
  * @version ./package.json
  */
 
-const parseStepText = ({ current, steps, mobileStepLabelTemplate }) => {
-  return mobileStepLabelTemplate
-    .replace('%{current}', current < steps.length ? current + 1 : steps.length)
-    .replace('%{total}', steps.length)
+const parseStepText = (current, steps, mobileStepLabelTemplate) => {
+  return (
+    <div>
+      {mobileStepLabelTemplate
+        .replace('%{current}', current < steps.length ? current + 1 : steps.length)
+        .replace('%{total}', steps.length)}
+    </div>
+  )
 }
 
-const getStepLabel = ({ current, steps }) => {
+const getStepLabel = (current, steps) => {
   return current < steps.length ? steps[current] : steps[steps.length - 1]
 }
 
 const StepTracker = ({ current, steps, mobileStepLabelTemplate, ...rest }) => {
+  const stepText = parseStepText(current, steps, mobileStepLabelTemplate)
+  const stepLabel = getStepLabel(current, steps)
   return (
     <div {...safeRest(rest)} data-testid="stepTrackerContainer">
       <Flexbox direction="row">
@@ -45,11 +51,7 @@ const StepTracker = ({ current, steps, mobileStepLabelTemplate, ...rest }) => {
       </Flexbox>
       <div className={styles.mobileLabel}>
         <Text data-testid="mobileStepLabel">
-          {`${() => {
-            parseStepText(current, steps, mobileStepLabelTemplate)
-          }} ${() => {
-            getStepLabel(current, steps)
-          }}`}
+          {stepText} {stepLabel}
         </Text>
       </div>
     </div>
