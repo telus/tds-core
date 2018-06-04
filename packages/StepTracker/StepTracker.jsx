@@ -10,12 +10,6 @@ import Step from './Step/Step'
 
 import styles from './StepTracker.modules.scss'
 
-/**
- * Show the current position in a sequence of steps.
- *
- * @version ./package.json
- */
-
 const parseStepText = (current, steps, mobileStepLabelTemplate) => {
   return (
     <span>
@@ -29,6 +23,12 @@ const parseStepText = (current, steps, mobileStepLabelTemplate) => {
 const getStepLabel = (current, steps) => {
   return current < steps.length ? steps[current] : steps[steps.length - 1]
 }
+
+/**
+ * Show the current position in a sequence of steps.
+ *
+ * @version ./package.json
+ */
 
 const StepTracker = ({ current, steps, mobileStepLabelTemplate, ...rest }) => {
   const stepText = parseStepText(current, steps, mobileStepLabelTemplate)

@@ -10,11 +10,12 @@ exports[`<StepTracker /> renders 1`] = `
     <div
       aria-current="false"
       aria-label="Login"
-      class="stepActive"
+      class="step"
+      data-isactive="true"
       data-testid="singleStepContainer-0"
     >
       <span
-        class="icon"
+        class="iconActive"
       >
         <i
           aria-hidden="true"
@@ -34,11 +35,12 @@ exports[`<StepTracker /> renders 1`] = `
     <div
       aria-current="true"
       aria-label="Purchase"
-      class="stepActive"
+      class="step"
+      data-isactive="true"
       data-testid="singleStepContainer-1"
     >
       <span
-        class="icon"
+        class="iconActive"
       >
         <br />
       </span>
@@ -56,6 +58,7 @@ exports[`<StepTracker /> renders 1`] = `
       aria-current="false"
       aria-label="Checkout"
       class="step"
+      data-isactive="false"
       data-testid="singleStepContainer-2"
     >
       <span
