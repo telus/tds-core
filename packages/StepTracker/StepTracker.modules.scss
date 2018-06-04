@@ -23,16 +23,6 @@
     right: 0;
   }
 
-  .icon {
-    display: inline-block;
-    border: 0.1rem solid $color-shuttle-grey;
-    border-radius: 50%;
-    line-height: 1.7rem;
-    width: 35px;
-    height: 35px;
-    margin-bottom: 1rem;
-  }
-
   .label {
     display: none;
     text-align: center;
@@ -43,13 +33,22 @@
   }
 }
 
-.stepActive {
-  composes: step;
-  .icon {
-    background-color: $color-primary;
-    text-align: center;
-    border: 0.1rem solid $color-primary;
-  }
+.icon {
+  display: inline-block;
+  border: 0.1rem solid $color-shuttle-grey;
+  border-radius: 50%;
+  line-height: 1.7rem;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 1rem;
+}
+
+.iconActive {
+  composes: icon;
+
+  background-color: $color-primary;
+  text-align: center;
+  border: 0.1rem solid $color-primary;
 }
 
 .step:first-child {

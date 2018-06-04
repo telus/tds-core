@@ -13,19 +13,17 @@ import styles from '../StepTracker.modules.scss'
 
 const Step = ({ label, status, stepNumber, stepIndex }) => {
   const isStepActive = () => {
-    if (status > stepIndex || status === stepIndex) {
-      return styles.stepActive
-    }
-    return styles.step
+    return status > stepIndex || status === stepIndex
   }
   return (
     <div
-      className={isStepActive()}
+      className={styles.step}
       aria-label={label}
       aria-current={status === stepIndex ? 'true' : 'false'}
       data-testid={`singleStepContainer-${stepIndex}`}
+      data-isactive={isStepActive()}
     >
-      <span className={styles.icon}>
+      <span className={isStepActive() ? styles.iconActive : styles.icon}>
         {status > stepIndex ? <Icon symbol="checkmark" size={16} variant="inverted" /> : <br />}
       </span>
       <Flexbox direction="row" justifyContent="center" dangerouslyAddClassName={styles.label}>

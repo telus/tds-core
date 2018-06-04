@@ -37,17 +37,26 @@ describe('<StepTracker />', () => {
     expect(stepTracker.find('[data-testid="step-0"]')).toContainReact(
       <Icon symbol="checkmark" size={16} variant="inverted" />
     )
-    expect(stepTracker.find('[data-testid="step-0"]').hasClass('stepActive'))
+    expect(stepTracker.find('[data-testid="singleStepContainer-0"]')).toHaveProp(
+      'data-isactive',
+      true
+    )
 
     expect(stepTracker.find('[data-testid="step-1"]')).toContainReact(
       <Icon symbol="checkmark" size={16} variant="inverted" />
     )
-    expect(stepTracker.find('[data-testid="step-1"]').hasClass('stepActive'))
+    expect(stepTracker.find('[data-testid="singleStepContainer-1"]')).toHaveProp(
+      'data-isactive',
+      true
+    )
 
     expect(stepTracker.find('[data-testid="step-2"]')).not.toContainReact(
       <Icon symbol="checkmark" size={16} variant="inverted" />
     )
-    expect(stepTracker.find('[data-testid="step-2"]').hasClass('stepActive'))
+    expect(stepTracker.find('[data-testid="singleStepContainer-2"]')).toHaveProp(
+      'data-isactive',
+      true
+    )
   })
 
   it('applies the right value to aria-current', () => {
