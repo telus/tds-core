@@ -18,11 +18,11 @@ import styles from './StepTracker.modules.scss'
 
 const parseStepText = (current, steps, mobileStepLabelTemplate) => {
   return (
-    <div>
+    <span>
       {mobileStepLabelTemplate
         .replace('%{current}', current < steps.length ? current + 1 : steps.length)
         .replace('%{total}', steps.length)}
-    </div>
+    </span>
   )
 }
 
