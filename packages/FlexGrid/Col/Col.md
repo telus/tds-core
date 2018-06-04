@@ -9,7 +9,7 @@ width will be `6` from the `md` breakpoint and greater, unless you specify a val
 Refer to the table in the [**Responsive**](#responsive) section for the breakpoins.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
-<FlexGrid limitWidth>
+<FlexGrid>
   <FlexGrid.Row>
     <FlexGrid.Col xs={12} md={6}>
       <Box vertical={2}><Text>12 xs, 6 md</Text></Box>
@@ -38,7 +38,7 @@ Refer to the table in the [**Responsive**](#responsive) section for the breakpoi
 Move columns to the right using the responsive `offset` props.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
-<FlexGrid limitWidth>
+<FlexGrid>
   <FlexGrid.Row>
     <FlexGrid.Col xs={4}>
       <Box vertical={2}><Text>4 xs</Text></Box>
