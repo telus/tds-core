@@ -5,7 +5,7 @@ exports[`<Notification /> renders 1`] = `
   class="TDS_Box-modules__verticalPadding-3___Fsv37 instructional"
 >
   <div
-    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_flexboxgrid2__container-fluid___3c7kO"
+    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_flexboxgrid2__container-fluid___3c7kO"
   >
     <div
       class="TDS_Row-modules__flexRow___3CHOR TDS_flexboxgrid2__row___3YyB2"
