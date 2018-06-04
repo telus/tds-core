@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@1.2.1...@tds/core-flex-grid@2.0.0) (2018-06-04)
+
+
+### Features
+
+* **core-flex-grid:** make limitWidth true by default ([9ce0b69](https://github.com/telusdigital/tds/commit/9ce0b69))
+* **core-flex-grid:** remove centre prop ([45ebff9](https://github.com/telusdigital/tds/commit/45ebff9))
+
+
+### BREAKING CHANGES
+
+* **core-flex-grid:** remove the centre prop
+* **core-flex-grid:** set limitWidth prop to true by default
+
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@1.2.0...@tds/core-flex-grid@1.2.1) (2018-05-14)
 
