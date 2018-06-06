@@ -14,8 +14,7 @@ describe('Heading', () => {
         The content
       </Heading>
     )
-
-    return heading.find(heading.props().level)
+    return heading.find(heading.props().tag || heading.props().level)
   }
 
   it('renders', () => {
@@ -34,6 +33,19 @@ describe('Heading', () => {
     const heading = doMount({ level: 'h3' })
 
     expect(heading).toHaveTagName('h3')
+  })
+
+  it('renders a heading in the specified level and specified tag, when level and tag are different', () => {
+    const heading = doMount({ level: 'h4', tag: 'h3' })
+
+    expect(heading).toHaveClassName('h4')
+    expect(heading).toHaveTagName('h3')
+  })
+
+  it('renders a heading in the same tag as level if tag is not specified', () => {
+    const heading = doMount({ level: 'h4' })
+
+    expect(heading).toHaveTagName('h4')
   })
 
   describe('colour', () => {
