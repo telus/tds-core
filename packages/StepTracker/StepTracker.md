@@ -1,11 +1,13 @@
 As the user progresses through the steps, tell `StepTracker` which step is active with the `current` prop. `StepTracker`
 will indicate both the active step and the completed steps.
 
-This component is not interactive, so the user can not use it to navigate through the steps. The application will
-need to provide its own navigation mechanism.
-
 `StepTracker` adjusts to accommodate smaller screens by hiding the labels, displaying only a summary. Resize your browser
 window to see this behavior.
+
+**Note** this component is not interactive, so the user cannot use it to navigate through the steps. The application will
+need to provide its own navigation mechanism and state control. `StepTracker` also does not prevent the current step
+from reaching integers beyond the number of steps provided; the application must prevent negative or exceeding
+steps from being reached by the customer.
 
 ```jsx
 initialState = {
