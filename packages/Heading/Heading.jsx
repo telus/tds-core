@@ -8,63 +8,40 @@ import HeadingSup from './HeadingSup/HeadingSup'
 
 import styles from './Heading.modules.scss'
 
-const BaseHeading = ({ level, color, size, children, ...rest }) =>
-  React.createElement(
-    level,
-    {
-      ...safeRest(rest),
-      className: joinClassNames(size, color),
-    },
-    children
-  )
-
-BaseHeading.propTypes = {
-  level: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']).isRequired,
-  color: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-}
-
 /**
  * Page headings. Renders an HTML `<h1-h4>` element.
  *
  * @version ./package.json
  */
-const Heading = ({ level, size = level, invert, children, ...rest }) => {
-  const baseHeadingProps = {
-    ...rest,
-    level,
+const Heading = ({ level, tag = level, invert, children, ...rest }) => {
+  const getClassNames = () => {
+    if (invert) {
+      return styles.inverted
+    }
+    if (level === 'h1' || level === 'h2') {
+      return styles.secondary
+    }
+    return styles.default
   }
-  if (level === 'h1' || level === 'h2') {
-    const color = invert ? styles.inverted : styles.secondary
-
-    return (
-      <BaseHeading {...baseHeadingProps} color={color} size={styles[size]}>
-        {children}
-      </BaseHeading>
-    )
-  }
-
-  return (
-    <BaseHeading
-      {...baseHeadingProps}
-      color={invert ? styles.inverted : styles.default}
-      size={styles[size]}
-    >
-      {children}
-    </BaseHeading>
+  return React.createElement(
+    tag,
+    {
+      ...safeRest(rest),
+      className: joinClassNames(styles[level], getClassNames()),
+    },
+    children
   )
 }
 
 Heading.propTypes = {
   /**
-   * The semantic level of the heading.
+   * The stylistic level of the heading.
    */
   level: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']).isRequired,
   /**
-   * The size of the heading.
+   * The semantic level of the heading.
    */
-  size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
+  tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
   /**
    * Invert the text color to appear light on dark backgrounds.
    */
@@ -76,7 +53,7 @@ Heading.propTypes = {
 }
 Heading.defaultProps = {
   invert: false,
-  size: undefined,
+  tag: undefined,
 }
 
 Heading.Sup = HeadingSup
