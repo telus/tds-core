@@ -1,3 +1,9 @@
+#### 0.34.15 (2018-06-07)
+
+##### Bug Fixes
+
+* **shared-choice:**  call onchange after async setstate, update examples ([2e058682](https://github.com/telusdigital/tds/commit/2e058682341f3378d7c7e2fe0c569784d8ebc439))
+
 #### 0.34.14 (2018-04-26)
 
 ##### Bug Fixes
