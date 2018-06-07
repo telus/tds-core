@@ -8,26 +8,27 @@ import HeadingSup from './HeadingSup/HeadingSup'
 
 import styles from './Heading.modules.scss'
 
+const getClassNames = (invert, level) => {
+  if (invert) {
+    return styles.inverted
+  }
+  if (level === 'h1' || level === 'h2') {
+    return styles.secondary
+  }
+  return styles.default
+}
+
 /**
  * Page headings. Renders an HTML `<h1-h4>` element.
  *
  * @version ./package.json
  */
 const Heading = ({ level, tag = level, invert, children, ...rest }) => {
-  const getClassNames = () => {
-    if (invert) {
-      return styles.inverted
-    }
-    if (level === 'h1' || level === 'h2') {
-      return styles.secondary
-    }
-    return styles.default
-  }
   return React.createElement(
     tag,
     {
       ...safeRest(rest),
-      className: joinClassNames(styles[level], getClassNames()),
+      className: joinClassNames(styles[level], getClassNames(invert, level)),
     },
     children
   )
@@ -35,11 +36,11 @@ const Heading = ({ level, tag = level, invert, children, ...rest }) => {
 
 Heading.propTypes = {
   /**
-   * The stylistic level of the heading.
+   * The visual level of the heading. If `tag` is not specified, then `level` determines what HTML element to render.
    */
   level: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']).isRequired,
   /**
-   * The semantic level of the heading.
+   * The semantic level of the heading. Renders the specified HTML element, otherwise it matches `level`.
    */
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
   /**
@@ -47,7 +48,7 @@ Heading.propTypes = {
    */
   invert: PropTypes.bool,
   /**
-   * The text. Can be text, other components, or HTML elements.
+   * The content. Can be text, other components, or HTML elements.
    */
   children: PropTypes.node.isRequired,
 }
