@@ -16,9 +16,9 @@
 #### Usage criteria
 
 * Be mindful of SEO and accessibility
-* Organise headers in a nested order: h1, then h2, then h3
+* Organize headers in a nested order: h1, then h2, then h3
 * Try **not** to skip levels where possible: h1, then h3
 * Use one h1 per page
-* The semantic html tag and stylistic level of the heading can be decoupled by explicitly setting the `tag` property.
+* The semantic HTML tag and visual appearance of the Heading component can be controlled using the `level` and `tag` props together
 * For Hero overlays, Headlines, or Promo blocks, use [`DisplayHeading`](#displayheading)
 * For subtext in the Hero overlays, or Headlines, use [`Text`](#text)
