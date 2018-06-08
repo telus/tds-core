@@ -10,27 +10,14 @@
 
 See <!-- put issue number here, or delete this section -->
 
-## Notes
+## Description
+
+<!-- 'Description' section is optional -->
 
 * Feature 1
 * Feature 2
 * Patch 1
 * Patch 2
-
-## Merge Notes
-
-<!--
-  Indicate whether you would prefer to 'rebase and merge' or 'squash and merge'
-  Also, add any notes regarding how the code should be handled post-merge
-
-  For your convenience, you can uncomment the canned responses below
--->
-
-<!-- Please rebase and merge -->
-
-<!-- Please squash and merge -->
-
-<!-- After merging, please ... -->
 
 ## Package changes
 
@@ -40,7 +27,8 @@ Run `yarn prepr` locally and paste its output here, even when there are no chang
 
 ## Checklist before submitting pull request
 
+* [ ] New code is unit tested
+* Commits follow our [Developer Guide](https://tds.telus.com/contributing/developer-guide.html#make-a-commit)
 * [ ] For code changes, run `yarn prepr` locally
-  * make sure visual tests pass
+  * make sure visual and accessibility tests pass
   * paste the lerna version output
-* [ ] New code is unit tested where appropriate
