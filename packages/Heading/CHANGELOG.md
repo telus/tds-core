@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.0.2...@tds/core-heading@1.1.0) (2018-06-08)
+
+
+### Features
+
+* **core-heading:** decouple semantic heading level from visual size ([2153864](https://github.com/telusdigital/tds/commit/2153864))
+* **core-heading:** decouple visual heading level from semantic tag ([364a8b3](https://github.com/telusdigital/tds/commit/364a8b3))
+
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.0.1...@tds/core-heading@1.0.2) (2018-05-14)
 
