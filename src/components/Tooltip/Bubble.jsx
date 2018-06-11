@@ -19,7 +19,7 @@ const Bubble = ({ id, direction, width, open, children }) => {
       dangerouslyAddClassName={classes}
       id={id}
       role="tooltip"
-      aria-live="polite"
+      aria-live="assertive"
       aria-hidden={open ? 'false' : 'true'}
       data-testid="bubble"
     >

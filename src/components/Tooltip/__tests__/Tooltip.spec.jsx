@@ -168,7 +168,7 @@ describe('Tooltip', () => {
 
       expect(findBubble()).toHaveProp('id', 'some-field_tooltip')
       expect(findBubble()).toHaveProp('role', 'tooltip')
-      expect(findBubble()).toHaveProp('aria-live', 'polite')
+      expect(findBubble()).toHaveProp('aria-live', 'assertive')
 
       expect(findTrigger()).toHaveProp('aria-haspopup', 'true')
       expect(findTrigger()).toHaveProp('aria-controls', 'some-field_tooltip')
