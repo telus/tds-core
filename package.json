@@ -6,7 +6,8 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "shared/components/*"
+    "shared/components/*",
+    "shared/styles/*"
   ],
   "scripts": {
     "bootstrap": "yarn install && yarn gitbook:install && lerna bootstrap && yarn build --all",

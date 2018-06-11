@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "@tds/core-responsive": "^1.1.0"
+    "@tds/core-responsive": "^1.1.0",
+    "@tds/shared-typography": "^1.0.0"
   }
 }

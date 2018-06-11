@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import safeRest from '../../shared/utils/safeRest'
 
-import styles from '../../shared/styles/Typography.modules.scss'
+import styles from '../../shared/styles/Typography/Typography.modules.scss'
 
 /**
  * Give portions of a sentence added importance.
