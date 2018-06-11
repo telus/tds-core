@@ -78,6 +78,15 @@ class Tooltip extends React.Component {
 
     return (
       <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>
+        <StandaloneIcon
+          symbol="questionMarkCircle"
+          a11yText={getTriggerA11yText(connectedFieldLabel)}
+          onClick={this.toggleBubble}
+          id={triggerId}
+          aria-controls={bubbleId}
+          aria-haspopup="true"
+          aria-expanded={this.state.open ? 'true' : 'false'}
+        />
         <Responsive
           defaultMatches
           maxWidth="sm"
@@ -105,16 +114,6 @@ class Tooltip extends React.Component {
               {children}
             </Bubble>
           )}
-        />
-
-        <StandaloneIcon
-          symbol="questionMarkCircle"
-          a11yText={getTriggerA11yText(connectedFieldLabel)}
-          onClick={this.toggleBubble}
-          id={triggerId}
-          aria-controls={bubbleId}
-          aria-haspopup="true"
-          aria-expanded={this.state.open ? 'true' : 'false'}
         />
       </div>
     )

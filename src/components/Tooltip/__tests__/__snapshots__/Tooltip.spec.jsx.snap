@@ -4,20 +4,6 @@ exports[`Tooltip renders 1`] = `
 <div
   class="fixLineHeight"
 >
-  <div
-    aria-hidden="true"
-    aria-live="polite"
-    class="horizontalPadding-3 verticalPadding-2 left full hide"
-    data-testid="bubble"
-    id="unknown-field_tooltip"
-    role="tooltip"
-  >
-    <span
-      class="small smallFont color"
-    >
-      InputFeedback text
-    </span>
-  </div>
   <button
     aria-controls="unknown-field_tooltip"
     aria-expanded="false"
@@ -32,5 +18,19 @@ exports[`Tooltip renders 1`] = `
       class="iconQuestionMarkCircle size24"
     />
   </button>
+  <div
+    aria-hidden="true"
+    aria-live="assertive"
+    class="horizontalPadding-3 verticalPadding-2 left full hide"
+    data-testid="bubble"
+    id="unknown-field_tooltip"
+    role="tooltip"
+  >
+    <span
+      class="small smallFont color"
+    >
+      InputFeedback text
+    </span>
+  </div>
 </div>
 `;
