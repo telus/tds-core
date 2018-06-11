@@ -93,7 +93,7 @@
     "gitbook-cli": "^2.3.2",
     "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^22.3.0",
+    "jest": "^23.0.0",
     "jest-environment-enzyme": "^6.0.0",
     "jest-enzyme": "^6.0.0",
     "lerna": "^2.9.0",
