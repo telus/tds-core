@@ -8,7 +8,7 @@
 
 .base {
   composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
-  composes: wordBreak from '../../shared/styles/Typography.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography/Typography.modules.scss';
 
   @include helvetica-neue-thin-35;
 }

@@ -6,7 +6,7 @@ import joinClassNames from '../../shared/utils/joinClassNames'
 
 import TextSup from './TextSup/TextSup'
 
-import styles from '../../shared/styles/Typography.modules.scss'
+import styles from '../../shared/styles/Typography/Typography.modules.scss'
 
 /**
  * Inline text usually as an HTML `<span>` element.
