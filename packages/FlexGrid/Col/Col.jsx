@@ -51,14 +51,10 @@ const Col = ({ span, offset, children, ...rest }) => {
 */
 Col.propTypes = {
   /**
-   * @deprecated Span the specified number of columns.
-   * @since 1.2.0
-   *
-   * Use the xs prop instead for identical functionality.
-   */
-  span: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-  /**
    * Specify number of columns within the 'xs' breakpoint range.
+   *
+   * `true` sets the column width automatically;
+   * `false` disables the prop
    *
    * @since 1.2.0
    */
@@ -66,11 +62,17 @@ Col.propTypes = {
   /**
    * Specify number of columns within the 'sm' breakpoint range.
    *
+   * `true` sets the column width automatically;
+   * `false` disables the prop
+   *
    * @since 1.2.0
    */
   sm: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
   /**
    * Specify number of columns within the 'md' breakpoint range.
+   *
+   * `true` sets the column width automatically;
+   * `false` disables the prop
    *
    * @since 1.2.0
    */
@@ -78,22 +80,21 @@ Col.propTypes = {
   /**
    * Specify number of columns within the 'lg' breakpoint range.
    *
+   * `true` sets the column width automatically;
+   * `false` disables the prop
+   *
    * @since 1.2.0
    */
   lg: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
   /**
    * Specify number of columns after the 'xl' breakpoint.
    *
+   * `true` sets the column width automatically;
+   * `false` disables the prop
+   *
    * @since 1.2.0
    */
   xl: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, true, false]),
-  /**
-   * @deprecated Offset the specified number of columns.
-   * @since 1.2.0
-   *
-   * Use the xsOffset prop instead for identical functionality.
-   */
-  offset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
    * Offset the specified number of columns within the 'xs' breakpoint range.
    *
@@ -130,6 +131,20 @@ Col.propTypes = {
    * @since 1.2.0
    */
   children: PropTypes.node.isRequired,
+  /**
+   * @deprecated Span the specified number of columns.
+   * @since 1.2.0
+   *
+   * Use the xs prop instead for identical functionality.
+   */
+  span: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+  /**
+   * @deprecated Offset the specified number of columns.
+   * @since 1.2.0
+   *
+   * Use the xsOffset prop instead for identical functionality.
+   */
+  offset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
 }
 /* eslint-enable */
 
