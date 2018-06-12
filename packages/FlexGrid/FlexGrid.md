@@ -39,8 +39,8 @@ components below for a more in-depth look.
 
 ### Removing the gutter
 
-Remove the 16px gutter surrounding columns by passing `gutter={false}` to the `FlexGrid` container. This removes the horizontal padding
-from all children columns.
+Remove the 16px gutter surrounding columns by passing `gutter={false}` to the `FlexGrid` container. This removes the
+horizontal padding from all child columns.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <FlexGrid gutter={false}>
@@ -53,6 +53,39 @@ from all children columns.
     </FlexGrid.Col>
     <FlexGrid.Col>
       <Box vertical={2}><Text>3/3 no gutter</Text></Box>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```
+
+### Working with full-width and limited-width content
+
+Pages should have multiple instances of `FlexGrid` to separate full-width content and regular limited-width content.
+See expanded example by clicking the full-screen icon below.
+
+```jsx { "props": { "className": "docs_full-width-playground" } }
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col>
+      <Box vertical={3}>
+        <Paragraph>
+          This is page content that has a fixed width.
+        </Paragraph>
+      </Box>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+
+<Notification>This is a notification that has a full-width background, and fixed-width content.</Notification>
+
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col>
+      <Box vertical={3}>
+        <Paragraph>
+          This is more page content that has a fixed width.
+        </Paragraph>
+      </Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
