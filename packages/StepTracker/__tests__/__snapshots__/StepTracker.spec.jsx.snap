@@ -26,7 +26,7 @@ exports[`<StepTracker /> renders 1`] = `
         class="row justifyContentCenter label"
       >
         <span
-          class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
+          class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
         >
           1. Login
         </span>
@@ -48,7 +48,7 @@ exports[`<StepTracker /> renders 1`] = `
         class="row justifyContentCenter label"
       >
         <span
-          class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__boldFont___30Cjc TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
+          class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
         >
           2. Purchase
         </span>
@@ -70,7 +70,7 @@ exports[`<StepTracker /> renders 1`] = `
         class="row justifyContentCenter label"
       >
         <span
-          class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
+          class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
         >
           3. Checkout
         </span>
@@ -81,7 +81,7 @@ exports[`<StepTracker /> renders 1`] = `
     class="mobileLabel"
   >
     <span
-      class="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
+      class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
       data-testid="mobileStepLabel"
     >
       <span>

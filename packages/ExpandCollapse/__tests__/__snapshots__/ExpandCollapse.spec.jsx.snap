@@ -104,7 +104,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                 size="large"
                               >
                                 <span
-                                  className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
+                                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
                                 >
                                   <DecorativeIcon
                                     size={16}
@@ -150,7 +150,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                 size="large"
                               >
                                 <span
-                                  className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
+                                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
                                 >
                                   Panel title
                                 </span>
@@ -220,7 +220,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                         size="base"
                       >
                         <div
-                          className="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
+                          className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
                         >
                           <Panel
                             disabled={false}
@@ -371,7 +371,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                 size="large"
                               >
                                 <span
-                                  className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
+                                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
                                 >
                                   <DecorativeIcon
                                     size={16}
@@ -417,7 +417,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                 size="large"
                               >
                                 <span
-                                  className="TDS_Typography-modules__large___3n6Vn TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__largeFont___2ELMx TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__color___22Swj"
+                                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
                                 >
                                   Panel title
                                 </span>
@@ -486,7 +486,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                         size="base"
                       >
                         <div
-                          className="TDS_Typography-modules__base___3JQ2A TDS_Typography-modules__wordBreak___11Xyp TDS_Typography-modules__baseFont___-Br-_ TDS_Typography-modules__color___22Swj"
+                          className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
                         >
                           <Panel
                             disabled={false}
