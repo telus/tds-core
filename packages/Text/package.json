@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inline text",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -29,6 +29,6 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "@tds/shared-typography": "^1.0.0"
+    "@tds/shared-typography": "^1.0.1"
   }
 }

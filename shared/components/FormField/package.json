@@ -1,13 +1,13 @@
 {
   "name": "@tds/shared-form-field",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "main": "",
   "module": "",
   "dependencies": {
     "@tds/core-box": "^1.0.1",
     "@tds/core-input-feedback": "^1.0.1",
-    "@tds/core-paragraph": "^1.0.0",
-    "@tds/core-text": "^1.0.0"
+    "@tds/core-paragraph": "^1.0.1",
+    "@tds/core-text": "^1.0.1"
   }
 }
