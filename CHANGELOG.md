@@ -1,3 +1,9 @@
+#### 1.0.15 (2018-06-14)
+
+##### Bug Fixes
+
+* **typography:**  remove hyphens from shared CSS ([13c95945](https://github.com/telusdigital/tds/commit/13c95945275fed53a048257022e874a9c01ebf16))
+
 #### 1.0.14 (2018-06-07)
 
 ##### Bug Fixes
