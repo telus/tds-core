@@ -1,3 +1,9 @@
+#### 0.34.16 (2018-06-14)
+
+##### Bug Fixes
+
+* **typography:**  remove hyphens CSS ([5aa36286](https://github.com/telusdigital/tds/commit/5aa36286af91e002febf39200db3db5b3d286d7d))
+
 #### 0.34.15 (2018-06-07)
 
 ##### Bug Fixes
