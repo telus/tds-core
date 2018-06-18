@@ -1,3 +1,9 @@
+#### 0.34.17 (2018-06-18)
+
+##### Bug Fixes
+
+* **core-tooltip:**  enhance ability for screen readers to see text ([223e22b3](https://github.com/telusdigital/tds/commit/223e22b3925b6a693649eb01ccda2cfa9e8cc1e7))
+
 #### 0.34.16 (2018-06-14)
 
 ##### Bug Fixes
