@@ -4,6 +4,20 @@ exports[`Tooltip renders 1`] = `
 <div
   class="fixLineHeight"
 >
+  <div
+    aria-hidden="true"
+    aria-live="assertive"
+    class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T right hide"
+    data-testid="bubble"
+    id="unknown-field_tooltip"
+    role="tooltip"
+  >
+    <span
+      class="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
+    >
+      Tooltip text
+    </span>
+  </div>
   <button
     aria-controls="unknown-field_tooltip"
     aria-expanded="false"
@@ -18,19 +32,5 @@ exports[`Tooltip renders 1`] = `
       class="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
     />
   </button>
-  <div
-    aria-hidden="true"
-    aria-live="assertive"
-    class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T left full hide"
-    data-testid="bubble"
-    id="unknown-field_tooltip"
-    role="tooltip"
-  >
-    <span
-      class="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
-    >
-      Tooltip text
-    </span>
-  </div>
 </div>
 `;

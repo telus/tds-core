@@ -1,4 +1,5 @@
 @import '~@tds/core-colours/colours';
+@import '~@tds/core-responsive/responsive';
 
 $bubble-trigger-size: 24px;
 
@@ -16,6 +17,18 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
 
   background-color: $color-white;
   box-shadow: 0 0 2px 0 $color-shark, 0 3px 2px 0 rgba(84, 89, 95, 0.25);
+
+  @include mq($until: sm) {
+    width: 100%;
+  }
+
+  @include mq($from: sm) {
+    width: 50%;
+  }
+
+  @include mq($from: md) {
+    width: 25%;
+  }
 
   // This is the bubble triangle
   &::before {
@@ -54,16 +67,4 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
   &::before {
     left: $bubble-triangle-position;
   }
-}
-
-.full {
-  width: 100%;
-}
-
-.half {
-  width: 50%;
-}
-
-.quarter {
-  width: 25%;
 }
