@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Responsive from '@tds/core-responsive'
 import StandaloneIcon from '@tds/core-standalone-icon'
 
 import safeRest from '../../shared/utils/safeRest'
@@ -80,6 +79,9 @@ class Tooltip extends React.Component {
 
     return (
       <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>
+        <Bubble id={bubbleId} direction={direction} open={this.state.open}>
+          {children}
+        </Bubble>
         <StandaloneIcon
           symbol="questionMarkCircle"
           a11yText={getTriggerA11yText(connectedFieldLabel)}
@@ -88,34 +90,6 @@ class Tooltip extends React.Component {
           aria-controls={bubbleId}
           aria-haspopup="true"
           aria-expanded={this.state.open ? 'true' : 'false'}
-        />
-        <Responsive
-          defaultMatches
-          maxWidth="sm"
-          render={() => (
-            <Bubble id={bubbleId} direction="left" width="full" open={this.state.open}>
-              {children}
-            </Bubble>
-          )}
-        />
-        <Responsive
-          defaultMatches={false}
-          minWidth="sm"
-          maxWidth="md"
-          render={() => (
-            <Bubble id={bubbleId} direction="left" width="half" open={this.state.open}>
-              {children}
-            </Bubble>
-          )}
-        />
-        <Responsive
-          defaultMatches={false}
-          minWidth="md"
-          render={() => (
-            <Bubble id={bubbleId} direction={direction} width="quarter" open={this.state.open}>
-              {children}
-            </Bubble>
-          )}
         />
       </div>
     )

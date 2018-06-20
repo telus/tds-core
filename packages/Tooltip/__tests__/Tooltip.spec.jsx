@@ -52,54 +52,6 @@ describe('Tooltip', () => {
     expect(findBubble()).toContainReact(<Text size="small">Some content</Text>)
   })
 
-  describe('responsive bubble', () => {
-    it('is full width at xsmall viewports', () => {
-      mockMatchMedia(575)
-
-      const { findBubble } = doMount()
-
-      expect(findBubble()).toHaveClassName('full')
-    })
-
-    it('is half width at small viewports', () => {
-      mockMatchMedia(576)
-
-      const { findBubble } = doMount()
-
-      expect(findBubble()).toHaveClassName('half')
-    })
-
-    it('is quarter width at medium viewports and above', () => {
-      mockMatchMedia(768)
-
-      const { findBubble } = doMount()
-
-      expect(findBubble()).toHaveClassName('quarter')
-    })
-
-    it('forces the direction to the left at xsmall and small viewports', () => {
-      mockMatchMedia(575)
-      let findBubble = doMount({ direction: 'right' }).findBubble
-
-      expect(findBubble()).toHaveClassName('left')
-
-      mockMatchMedia(576)
-      findBubble = doMount({ direction: 'right' }).findBubble
-
-      expect(findBubble()).toHaveClassName('left')
-    })
-
-    it('has a direction only on medium viewports and above', () => {
-      mockMatchMedia(768)
-
-      let findBubble = doMount().findBubble
-      expect(findBubble()).toHaveClassName('right')
-
-      findBubble = doMount({ direction: 'left' }).findBubble
-      expect(findBubble()).toHaveClassName('left')
-    })
-  })
-
   describe('interactivity', () => {
     const createRootElement = () => {
       const root = document.createElement('div')
