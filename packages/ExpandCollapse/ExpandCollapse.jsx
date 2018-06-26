@@ -55,10 +55,10 @@ class ExpandCollapse extends React.Component {
   }
 
   render() {
-    const { children, ...rest } = this.props
+    const { tag, children, ...rest } = this.props
 
     return (
-      <Panels {...rest} isPanelOpen={this.isPanelOpen} togglePanel={this.togglePanel}>
+      <Panels {...rest} isPanelOpen={this.isPanelOpen} togglePanel={this.togglePanel} tag={tag}>
         {children}
       </Panels>
     )
@@ -80,6 +80,10 @@ ExpandCollapse.propTypes = {
    * @param {Array} openPanels A list of the currently open panel identifiers.
    */
   onToggle: PropTypes.func,
+  /**
+   * Wrap each ExpandCollapse button in a heading tag. This adds context for screen readers, and does not affect text style.
+   */
+  tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
   /**
    * The expandable panels. Must be at least one `ExpandCollapse.Panel`.
    */
