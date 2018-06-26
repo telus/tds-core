@@ -163,7 +163,9 @@ class PanelWrapper extends React.Component {
 
     return (
       <div data-testid={panelId}>
-        {tag ? React.createElement(tag, {}, this.renderPanelWrapper()) : this.renderPanelWrapper()}
+        {tag
+          ? React.createElement(tag, { 'data-testid': 'headerWrapper' }, this.renderPanelWrapper())
+          : this.renderPanelWrapper()}
       </div>
     )
   }
