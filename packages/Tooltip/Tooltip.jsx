@@ -45,8 +45,7 @@ class Tooltip extends React.Component {
   }
 
   componentDidMount() {
-    this.halfPageWidth = window.innerWidth / 2
-    this.tooltipPos = this.refTooltip.offsetLeft
+    this.updatePageWidth()
   }
 
   componentDidUpdate() {
@@ -92,8 +91,10 @@ class Tooltip extends React.Component {
   }
 
   updatePageWidth = () => {
-    this.halfPageWidth = window.innerWidth / 2
-    this.tooltipPos = this.refTooltip.offsetLeft
+    if (this.refTooltip) {
+      this.halfPageWidth = window.innerWidth / 2
+      this.tooltipPos = this.refTooltip.offsetLeft
+    }
   }
 
   render() {
@@ -108,7 +109,7 @@ class Tooltip extends React.Component {
         <div className={styles.tooltipContainer} data-testid="tooltipContainer">
           <Bubble
             id={bubbleId}
-            direction={this.tooltipPos > this.halfPageWidth ? 'left' : 'right'}
+            direction={direction || (this.tooltipPos > this.halfPageWidth ? 'left' : 'right')}
             open={this.state.open}
           >
             {children}
