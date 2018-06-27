@@ -1,0 +1,30 @@
+{
+  "name": "@tds/core-a11y-content",
+  "version": "0.1.0",
+  "description": "Hide content that should only be seen by screen readers",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telusdigital/tds.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telusdigital/tds/issues"
+  },
+  "homepage": "http://tds.telus.com",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  }
+}
