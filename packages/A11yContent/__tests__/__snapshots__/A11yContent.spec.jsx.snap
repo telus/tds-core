@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A11yContent renders 1`] = `
+<p
+  className="a11yContent"
+>
+  Some text
+</p>
+`;
