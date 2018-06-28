@@ -13,7 +13,14 @@ import styles from './ButtonLink.modules.scss'
  *
  * @version ./package.json
  */
-const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
+const ButtonLink = ({
+  reactRouterLinkComponent,
+  variant,
+  a11yContent,
+  a11yContentPosition,
+  children,
+  ...rest
+}) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
     warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
@@ -24,6 +31,8 @@ const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) =>
       element={reactRouterLinkComponent || 'a'}
       variant={variant}
       dangerouslyAddClassName={styles[variant]}
+      a11yContent={a11yContent}
+      a11yContentPosition={a11yContent ? a11yContentPosition : null}
     >
       {children}
     </BaseButton>
@@ -48,6 +57,14 @@ ButtonLink.propTypes = {
    */
   href: PropTypes.string,
   /**
+   * Text that is hidden from view, but visible to screen readers
+   */
+  a11yContent: PropTypes.string,
+  /**
+   * Position of hidden A11yContent text. 'left' reads the content before the button label is read, and 'right' reads it after the label
+   */
+  a11yContentPosition: PropTypes.oneOf(['left', 'right']),
+  /**
    * The label.
    */
   children: PropTypes.string.isRequired,
@@ -57,6 +74,8 @@ ButtonLink.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
   href: null,
+  a11yContent: null,
+  a11yContentPosition: 'right',
 }
 
 export default ButtonLink
