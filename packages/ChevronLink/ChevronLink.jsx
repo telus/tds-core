@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import A11yContent from '@tds/core-a11y-content'
 import Box from '@tds/core-box'
 import DecorativeIcon from '@tds/core-decorative-icon'
 
@@ -31,7 +32,15 @@ const getIcon = (symbol, classes) => (
  *
  * @version ./package.json
  */
-const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, ...rest }) => {
+const ChevronLink = ({
+  reactRouterLinkComponent,
+  variant,
+  direction,
+  a11yContent,
+  a11yContentPosition,
+  children,
+  ...rest
+}) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
     warn('Chevron Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
@@ -50,7 +59,17 @@ const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, .
       ...safeRest(rest),
       className: getClassName(variant),
     },
-    innerLink
+    a11yContent && a11yContentPosition === 'left' ? (
+      <span>
+        <A11yContent>{a11yContent}</A11yContent>{' '}
+      </span>
+    ) : null,
+    innerLink,
+    a11yContent && a11yContentPosition === 'right' ? (
+      <span>
+        <A11yContent>{a11yContent}</A11yContent>
+      </span>
+    ) : null
   )
 }
 
@@ -75,6 +94,14 @@ ChevronLink.propTypes = {
    * Target URL.
    */
   href: PropTypes.string,
+  /**
+   * Text that is hidden from view, but visible to screen readers
+   */
+  a11yContent: PropTypes.string,
+  /**
+   * Position of hidden A11yContent text. 'left' reads the content before the button label is read, and 'right' reads it after the label
+   */
+  a11yContentPosition: PropTypes.oneOf(['left', 'right']),
   /**
    * The label.
    */
