@@ -28,12 +28,18 @@ const BaseButton = ({
       ...safeRest(rest),
       className: joinClassNames(styles.sizing, styles[variant], dangerouslyAddClassName),
     },
-    <FlexBox
-      direction={a11yContentPosition === 'right' ? 'row-reverse' : 'row'}
-      dangerouslyAddClassName={styles.centered}
-    >
-      {a11yContent ? <A11yContent>{a11yContent}</A11yContent> : null}
-      {children}
+    <FlexBox direction="row" dangerouslyAddClassName={styles.centered}>
+      <span>
+        {a11yContent && a11yContentPosition === 'left' ? (
+          <A11yContent>{a11yContent}</A11yContent>
+        ) : null}
+      </span>
+      <span>{children}</span>
+      <span>
+        {a11yContent && a11yContentPosition === 'right' ? (
+          <A11yContent>{a11yContent}</A11yContent>
+        ) : null}
+      </span>
     </FlexBox>
   )
 }
@@ -43,7 +49,7 @@ BaseButton.propTypes = {
   variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']).isRequired,
   dangerouslyAddClassName: PropTypes.string,
   a11yContent: PropTypes.string,
-  a11yContentPosition: PropTypes.string,
+  a11yContentPosition: PropTypes.oneOf(['left', 'right']),
   children: PropTypes.string.isRequired,
 }
 

@@ -32,7 +32,7 @@ const ButtonLink = ({
       variant={variant}
       dangerouslyAddClassName={styles[variant]}
       a11yContent={a11yContent}
-      a11yContentPosition={a11yContent ? a11yContentPosition : null}
+      a11yContentPosition={a11yContentPosition}
     >
       {children}
     </BaseButton>
