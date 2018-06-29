@@ -8,7 +8,11 @@ exports[`Button renders 1`] = `
   <div
     class="row centered"
   >
-    Submit
+    <span />
+    <span>
+      Submit
+    </span>
+    <span />
   </div>
 </button>
 `;

@@ -25,3 +25,13 @@ Use this variant with caution. There will be accessibility issues if the colour 
 ```jsx { "props": { "className": "docs_hero" }}
 <ButtonLink href="#" variant="inverted">Advanced solutions</ButtonLink>
 ```
+
+### Using A11yContent
+
+Use the `A11yContent` prop to create invisible text that only screen readers can see. The `A11yContentPosition` prop determines if the text is read before or after the button label.
+
+```jsx
+<ButtonLink a11yContent="Learn more about" a11yContentPosition="left" href="#">
+  Phones
+</ButtonLink>
+```
