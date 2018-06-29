@@ -74,7 +74,6 @@ ButtonLink.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
   href: null,
-  a11yContent: null,
   a11yContentPosition: 'right',
 }
 

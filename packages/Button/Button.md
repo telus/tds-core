@@ -39,3 +39,13 @@ text is too low in the hover state.
 ```jsx { "props": { "className": "docs_purple-block" } }
 <Button variant="inverted">Get started</Button>
 ```
+
+### Using A11yContent
+
+Use the `A11yContent` prop to create invisible text that only screen readers can see. The `A11yContentPosition` prop determines if the text is read before or after the button label.
+
+```jsx
+<Button a11yContent="Learn more about" a11yContentPosition="left" href="#">
+  Plans
+</Button>
+```
