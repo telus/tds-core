@@ -17,11 +17,18 @@ const preventDisabling = ({ disabled, ...props }) => {
 /**
  * @version ./package.json
  */
-const Button = ({ type, variant, children, ...rest }) => {
+const Button = ({ type, variant, a11yContent, a11yContentPosition, children, ...rest }) => {
   const restNoDisabled = preventDisabling(rest)
 
   return (
-    <BaseButton {...safeRest(restNoDisabled)} element="button" variant={variant} type={type}>
+    <BaseButton
+      {...safeRest(restNoDisabled)}
+      element="button"
+      variant={variant}
+      type={type}
+      a11yContent={a11yContent}
+      a11yContentPosition={a11yContentPosition}
+    >
       {children}
     </BaseButton>
   )
@@ -37,6 +44,14 @@ Button.propTypes = {
    */
   variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
   /**
+   * Text that is hidden from view, but visible to screen readers
+   */
+  a11yContent: PropTypes.string,
+  /**
+   * Position of hidden A11yContent text. 'left' reads the content before the button label is read, and 'right' reads it after the label
+   */
+  a11yContentPosition: PropTypes.oneOf(['left', 'right']),
+  /**
    * The label.
    */
   children: PropTypes.string.isRequired,
@@ -44,6 +59,7 @@ Button.propTypes = {
 Button.defaultProps = {
   type: 'button',
   variant: 'primary',
+  a11yContentPosition: 'right',
 }
 
 export default Button
