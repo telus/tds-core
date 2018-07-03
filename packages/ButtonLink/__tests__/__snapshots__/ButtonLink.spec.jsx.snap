@@ -6,12 +6,11 @@ exports[`ButtonLink renders 1`] = `
 >
   <div
     class="row centered"
+    data-testid="button"
   >
-    <span />
     <span>
       Go home
     </span>
-    <span />
   </div>
 </a>
 `;

@@ -7,12 +7,11 @@ exports[`Button renders 1`] = `
 >
   <div
     class="row centered"
+    data-testid="button"
   >
-    <span />
     <span>
       Submit
     </span>
-    <span />
   </div>
 </button>
 `;

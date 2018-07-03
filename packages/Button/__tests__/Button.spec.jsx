@@ -1,6 +1,8 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
+import A11yContent from '@tds/core-a11y-content'
+
 import { warn } from '../../../shared/utils/warn'
 
 import Button from '../Button'
@@ -52,6 +54,37 @@ describe('Button', () => {
 
     expect(button).toHaveProp('id', 'the-button')
     expect(button).toHaveProp('tabIndex', 1)
+  })
+
+  it('properly handles A11yContent in the default right side position', () => {
+    const button = doMount({ a11yContent: 'testing' })
+    /* eslint-disable react/jsx-key */
+    const contentOrder = [
+      <div data-testid="button" className="row centered">
+        <span>Submit</span>
+        <A11yContent>testing</A11yContent>
+      </div>,
+    ]
+    /* eslint-enable react/jsx-key */
+    expect(
+      button.find('div[data-testid="button"]').containsAllMatchingElements(contentOrder)
+    ).toEqual(true)
+  })
+
+  it('properly handles A11yContent in the left side position', () => {
+    const button = doMount({ a11yContent: 'testing', a11yContentPosition: 'left' })
+    /* eslint-disable react/jsx-key */
+    const contentOrder = [
+      <div data-testid="button" className="row centered">
+        <A11yContent>testing</A11yContent>
+        <span>Submit</span>
+      </div>,
+    ]
+    /* eslint-enable react/jsx-key */
+
+    expect(
+      button.find('div[data-testid="button"]').containsAllMatchingElements(contentOrder)
+    ).toEqual(true)
   })
 
   it('does not allow custom CSS', () => {
