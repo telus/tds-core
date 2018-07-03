@@ -28,18 +28,16 @@ const BaseButton = ({
       ...safeRest(rest),
       className: joinClassNames(styles.sizing, styles[variant], dangerouslyAddClassName),
     },
-    <FlexBox direction="row" dangerouslyAddClassName={styles.centered}>
-      <span>
-        {a11yContent && a11yContentPosition === 'left' ? (
-          <A11yContent>{a11yContent}</A11yContent>
-        ) : null}
-      </span>
+    <FlexBox direction="row" dangerouslyAddClassName={styles.centered} data-testid="button">
+      {a11yContent && a11yContentPosition === 'left' ? (
+        <A11yContent>{a11yContent}</A11yContent>
+      ) : null}
+
       <span>{children}</span>
-      <span>
-        {a11yContent && a11yContentPosition === 'right' ? (
-          <A11yContent>{a11yContent}</A11yContent>
-        ) : null}
-      </span>
+
+      {a11yContent && a11yContentPosition === 'right' ? (
+        <A11yContent>{a11yContent}</A11yContent>
+      ) : null}
     </FlexBox>
   )
 }

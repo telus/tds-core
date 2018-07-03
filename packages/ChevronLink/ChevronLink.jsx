@@ -59,17 +59,9 @@ const ChevronLink = ({
       ...safeRest(rest),
       className: getClassName(variant),
     },
-    a11yContent && a11yContentPosition === 'left' ? (
-      <span>
-        <A11yContent>{a11yContent}</A11yContent>{' '}
-      </span>
-    ) : null,
+    a11yContent && a11yContentPosition === 'left' ? <A11yContent>{a11yContent}</A11yContent> : null,
     innerLink,
-    a11yContent && a11yContentPosition === 'right' ? (
-      <span>
-        <A11yContent>{a11yContent}</A11yContent>
-      </span>
-    ) : null
+    a11yContent && a11yContentPosition === 'right' ? <A11yContent>{a11yContent}</A11yContent> : null
   )
 }
 
@@ -110,6 +102,7 @@ ChevronLink.propTypes = {
 ChevronLink.defaultProps = {
   variant: 'primary',
   direction: 'right',
+  a11yContentPosition: 'right',
   reactRouterLinkComponent: null,
   to: null,
   href: null,
