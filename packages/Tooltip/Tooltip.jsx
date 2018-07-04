@@ -5,11 +5,13 @@ import StandaloneIcon from '@tds/core-standalone-icon'
 
 import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId'
+import joinClassNames from '../../shared/utils/joinClassNames'
 import closest from './element-closest'
 
 import Bubble from './Bubble'
 
 import iconWrapperStyles from '../../shared/styles/IconWrapper.modules.scss'
+import styles from './Tooltip.modules.scss'
 
 const getTriggerA11yText = connectedFieldLabel => {
   if (!connectedFieldLabel) {
@@ -34,23 +36,39 @@ const getIds = connectedFieldLabel => {
  * @version ./package.json
  */
 class Tooltip extends React.Component {
+  constructor() {
+    super()
+    this.refTooltip = null
+  }
   state = {
     open: false,
+  }
+
+  componentDidMount() {
+    this.updatePageWidth()
   }
 
   componentDidUpdate() {
     if (this.state.open) {
       document.addEventListener('click', this.toggleBubbleOnOutsideEvent)
       document.addEventListener('keypress', this.toggleBubbleOnOutsideEvent)
+      window.addEventListener('resize', this.updatePageWidth)
+      this.updatePageWidth()
     } else {
       document.removeEventListener('click', this.toggleBubbleOnOutsideEvent)
       document.removeEventListener('keypress', this.toggleBubbleOnOutsideEvent)
+      window.removeEventListener('resize', this.updatePageWidth)
     }
   }
 
   componentWillUnmount() {
     document.removeEventListener('click', this.toggleBubbleOnOutsideEvent)
     document.removeEventListener('keypress', this.toggleBubbleOnOutsideEvent)
+    window.removeEventListener('resize', this.updatePageWidth)
+  }
+
+  setTooltipRef = element => {
+    this.refTooltip = element
   }
 
   toggleBubbleOnOutsideEvent = event => {
@@ -72,25 +90,40 @@ class Tooltip extends React.Component {
     })
   }
 
+  updatePageWidth = () => {
+    if (this.refTooltip) {
+      this.halfPageWidth = window.innerWidth / 2
+      this.tooltipPos = this.refTooltip.offsetLeft
+    }
+  }
+
   render() {
     const { direction, connectedFieldLabel, children, ...rest } = this.props
 
     const { bubbleId, triggerId } = getIds(connectedFieldLabel)
 
+    const classes = joinClassNames(iconWrapperStyles.fixLineHeight, styles.tooltip)
+
     return (
-      <div {...safeRest(rest)} className={iconWrapperStyles.fixLineHeight}>
-        <Bubble id={bubbleId} direction={direction} open={this.state.open}>
-          {children}
-        </Bubble>
-        <StandaloneIcon
-          symbol="questionMarkCircle"
-          a11yText={getTriggerA11yText(connectedFieldLabel)}
-          onClick={this.toggleBubble}
-          id={triggerId}
-          aria-controls={bubbleId}
-          aria-haspopup="true"
-          aria-expanded={this.state.open ? 'true' : 'false'}
-        />
+      <div {...safeRest(rest)} className={classes} ref={this.setTooltipRef}>
+        <div className={styles.tooltipContainer} data-testid="tooltipContainer">
+          <Bubble
+            id={bubbleId}
+            direction={direction || (this.tooltipPos > this.halfPageWidth ? 'left' : 'right')}
+            open={this.state.open}
+          >
+            {children}
+          </Bubble>
+          <StandaloneIcon
+            symbol="questionMarkCircle"
+            a11yText={getTriggerA11yText(connectedFieldLabel)}
+            onClick={this.toggleBubble}
+            id={triggerId}
+            aria-controls={bubbleId}
+            aria-haspopup="true"
+            aria-expanded={this.state.open ? 'true' : 'false'}
+          />
+        </div>
       </div>
     )
   }
@@ -116,7 +149,6 @@ Tooltip.propTypes = {
 }
 
 Tooltip.defaultProps = {
-  direction: 'right',
   connectedFieldLabel: undefined,
 }
 
