@@ -85,6 +85,7 @@ class Tooltip extends React.Component {
   }
 
   toggleBubble = () => {
+    this.updatePageWidth()
     this.setState(({ open }) => {
       return { open: !open }
     })
@@ -104,14 +105,18 @@ class Tooltip extends React.Component {
 
     const classes = joinClassNames(iconWrapperStyles.fixLineHeight, styles.tooltip)
 
+    let trueDirection = null
+
+    if (direction === 'auto') {
+      trueDirection = this.tooltipPos > this.halfPageWidth ? 'left' : 'right'
+    } else {
+      trueDirection = direction
+    }
+
     return (
       <div {...safeRest(rest)} className={classes} ref={this.setTooltipRef}>
         <div className={styles.tooltipContainer} data-testid="tooltipContainer">
-          <Bubble
-            id={bubbleId}
-            direction={direction || (this.tooltipPos > this.halfPageWidth ? 'left' : 'right')}
-            open={this.state.open}
-          >
+          <Bubble id={bubbleId} direction={trueDirection} open={this.state.open}>
             {children}
           </Bubble>
           <StandaloneIcon
@@ -133,7 +138,7 @@ Tooltip.propTypes = {
   /**
    * Open the bubble to the left or right of the trigger.
    */
-  direction: PropTypes.oneOf(['left', 'right']),
+  direction: PropTypes.oneOf(['left', 'right', 'auto']),
   /**
    * The input field that using this tooltip must pass its label so that the tooltip trigger can connect itself. Do not
    * show this prop as it is not part of the public API. If this prop is not specified, the tooltip will generate
@@ -149,6 +154,7 @@ Tooltip.propTypes = {
 }
 
 Tooltip.defaultProps = {
+  direction: 'auto',
   connectedFieldLabel: undefined,
 }
 
