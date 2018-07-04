@@ -28,17 +28,17 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
   background-color: $color-white;
   box-shadow: 0 0 2px 0 $color-shark, 0 3px 2px 0 rgba(84, 89, 95, 0.25);
 
-  @include mq($until: sm) {
-    width: 80vw;
-  }
+  // @include mq($until: sm) {
+  //   width: 80vw;
+  // }
 
-  @include mq($from: sm) {
-    width: 50vw;
-  }
+  // @include mq($from: sm) {
+  //   width: 50vw;
+  // }
 
-  @include mq($from: md) {
-    width: 25vw;
-  }
+  // @include mq($from: md) {
+  //   width: 25vw;
+  // }
 
   // This is the bubble triangle
   &::before {

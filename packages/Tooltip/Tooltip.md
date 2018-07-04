@@ -19,3 +19,14 @@ On small screen sizes Tooltips will always open to the left to ensure they will 
   }
 />
 ```
+
+You can also place Tooltips anywhere you like as a standalone element.
+
+```jsx
+<div>
+  <Box between={2} inline>
+    <Text>Here is the all-new quadcopter </Text>
+    <Tooltip>A quadcoptor is a flying drone with 4 propellors.</Tooltip>
+  </Box>
+</div>
+```

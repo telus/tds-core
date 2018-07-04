@@ -16,11 +16,13 @@ exports[`Tooltip renders 1`] = `
       id="unknown-field_tooltip"
       role="tooltip"
     >
-      <span
-        class="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
-      >
-        Tooltip text
-      </span>
+      <div>
+        <span
+          class="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
+        >
+          Tooltip text
+        </span>
+      </div>
     </div>
     <button
       aria-controls="unknown-field_tooltip"
