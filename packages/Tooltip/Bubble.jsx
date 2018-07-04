@@ -23,7 +23,7 @@ const Bubble = ({ id, direction, open, width, children }) => {
       aria-hidden={open ? 'false' : 'true'}
       data-testid="bubble"
     >
-      <div style={width}>
+      <div className={styles.innerBubble} style={width}>
         <Text size="small">{children}</Text>
       </div>
     </Box>

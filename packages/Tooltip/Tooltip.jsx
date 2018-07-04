@@ -42,6 +42,8 @@ class Tooltip extends React.Component {
   }
   state = {
     open: false,
+    halfPageWidth: 0,
+    tooltipPos: 0,
   }
 
   componentDidMount() {
@@ -53,7 +55,6 @@ class Tooltip extends React.Component {
       document.addEventListener('click', this.toggleBubbleOnOutsideEvent)
       document.addEventListener('keypress', this.toggleBubbleOnOutsideEvent)
       window.addEventListener('resize', this.updatePageWidth)
-      this.updatePageWidth()
     } else {
       document.removeEventListener('click', this.toggleBubbleOnOutsideEvent)
       document.removeEventListener('keypress', this.toggleBubbleOnOutsideEvent)
@@ -93,8 +94,10 @@ class Tooltip extends React.Component {
 
   updatePageWidth = () => {
     if (this.refTooltip) {
-      this.halfPageWidth = window.innerWidth / 2
-      this.tooltipPos = this.refTooltip.offsetLeft
+      this.setState({
+        halfPageWidth: window.innerWidth / 2,
+        tooltipPos: this.refTooltip.getBoundingClientRect().left,
+      })
     }
   }
 
@@ -108,15 +111,21 @@ class Tooltip extends React.Component {
     let trueDirection = null
 
     if (direction === 'auto') {
-      trueDirection = this.tooltipPos > this.halfPageWidth ? 'left' : 'right'
+      trueDirection = this.state.tooltipPos > this.state.halfPageWidth ? 'left' : 'right'
     } else {
       trueDirection = direction
+    }
+
+    const width = {
+      width: `calc(
+        ${this.state.tooltipPos}px -
+        ${trueDirection === 'right' ? 2 : 1}rem - 0.5rem)`,
     }
 
     return (
       <div {...safeRest(rest)} className={classes} ref={this.setTooltipRef}>
         <div className={styles.tooltipContainer} data-testid="tooltipContainer">
-          <Bubble id={bubbleId} direction={trueDirection} open={this.state.open}>
+          <Bubble id={bubbleId} direction={trueDirection} open={this.state.open} width={width}>
             {children}
           </Bubble>
           <StandaloneIcon
