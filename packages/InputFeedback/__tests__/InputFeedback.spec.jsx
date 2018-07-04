@@ -29,9 +29,14 @@ describe('InputFeedback', () => {
   })
 
   it('passes additional attributes to the element', () => {
-    const inputFeedback = doShallow({ id: 'the-inputFeedback', role: 'alert' })
+    const inputFeedback = doShallow({ id: 'the-inputFeedback' })
 
     expect(inputFeedback).toHaveProp('id', 'the-inputFeedback')
+  })
+
+  it('sets role to alert on error', () => {
+    const inputFeedback = doShallow({ feedback: 'error' })
+
     expect(inputFeedback).toHaveProp('role', 'alert')
   })
 
