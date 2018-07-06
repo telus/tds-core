@@ -18,9 +18,7 @@ exports[`Tooltip renders 1`] = `
     >
       <div
         class="innerBubble"
-        style="width:calc(
-        0px -
-        2rem - 0.5rem)"
+        style="width:calc(-16px - 1rem - 0.5rem)"
       >
         <span
           class="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
