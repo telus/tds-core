@@ -116,10 +116,13 @@ class Tooltip extends React.Component {
       trueDirection = direction
     }
 
+    const bubbleWidth =
+      trueDirection === 'left'
+        ? this.state.tooltipPos
+        : this.state.halfPageWidth * 2 - this.state.tooltipPos - 16
+
     const width = {
-      width: `calc(
-        ${this.state.tooltipPos}px -
-        ${trueDirection === 'right' ? 2 : 1}rem - 0.5rem)`,
+      width: `calc(${bubbleWidth}px - 1rem - 0.5rem)`,
     }
 
     return (
