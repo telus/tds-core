@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@1.0.4...@tds/core-tooltip@1.1.0) (2018-07-09)
+
+
+### Bug Fixes
+
+* **core-tooltip:** adjust bubble size when facing right ([c8cba07](https://github.com/telusdigital/tds/commit/c8cba07))
+* **core-tooltip:** remove width prop from bubble, use SASS mq ([a7f2119](https://github.com/telusdigital/tds/commit/a7f2119))
+
+
+### Features
+
+* **core-tooltip:** add ability to be standalone, automate bubble side ([#666](https://github.com/telusdigital/tds/issues/666)) ([2bfa0bb](https://github.com/telusdigital/tds/commit/2bfa0bb))
+* **core-tooltip:** add auto as a direction wip ([3288333](https://github.com/telusdigital/tds/commit/3288333))
+* **core-tooltip:** add bubble styles ([9921e87](https://github.com/telusdigital/tds/commit/9921e87))
+
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@1.0.3...@tds/core-tooltip@1.0.4) (2018-06-18)
 
