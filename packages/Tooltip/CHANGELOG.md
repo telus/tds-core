@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@1.1.0...@tds/core-tooltip@1.1.1) (2018-07-09)
+
+
+### Bug Fixes
+
+* **core-tooltip:** revert default value for the direction prop ([432da53](https://github.com/telusdigital/tds/commit/432da53))
+
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@1.0.4...@tds/core-tooltip@1.1.0) (2018-07-09)
 
