@@ -166,7 +166,7 @@ Tooltip.propTypes = {
 }
 
 Tooltip.defaultProps = {
-  direction: 'right',
+  direction: 'auto',
   connectedFieldLabel: undefined,
 }
 
