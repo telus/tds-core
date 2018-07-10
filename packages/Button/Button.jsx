@@ -44,11 +44,11 @@ Button.propTypes = {
    */
   variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
   /**
-   * Text that is hidden from view, but visible to screen readers
+   * Text that is hidden from view, but read out loud by screen readers
    */
   a11yContent: PropTypes.string,
   /**
-   * Position of hidden A11yContent text. 'left' reads the content before the button label is read, and 'right' reads it after the label
+   * Position of hidden A11yContent text. `left` reads the content before the button label is read, and `right` reads it after the label
    */
   a11yContentPosition: PropTypes.oneOf(['left', 'right']),
   /**
@@ -59,6 +59,7 @@ Button.propTypes = {
 Button.defaultProps = {
   type: 'button',
   variant: 'primary',
+  a11yContent: undefined,
   a11yContentPosition: 'right',
 }
 

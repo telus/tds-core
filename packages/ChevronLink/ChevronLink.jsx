@@ -87,11 +87,11 @@ ChevronLink.propTypes = {
    */
   href: PropTypes.string,
   /**
-   * Text that is hidden from view, but visible to screen readers
+   * Text that is hidden from view, but read out loud by screen readers
    */
   a11yContent: PropTypes.string,
   /**
-   * Position of hidden A11yContent text. 'left' reads the content before the button label is read, and 'right' reads it after the label
+   * Position of hidden A11yContent text. `left` reads the content before the button label is read, and `right` reads it after the label
    */
   a11yContentPosition: PropTypes.oneOf(['left', 'right']),
   /**
@@ -102,6 +102,7 @@ ChevronLink.propTypes = {
 ChevronLink.defaultProps = {
   variant: 'primary',
   direction: 'right',
+  a11yContent: undefined,
   a11yContentPosition: 'right',
   reactRouterLinkComponent: null,
   to: null,
