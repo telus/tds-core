@@ -45,7 +45,7 @@ text is too low in the hover state.
 Use the `A11yContent` prop to create invisible text that is read out loud by screen readers. The `A11yContentPosition` prop determines if the text is read before or after the button label.
 
 ```jsx
-<Button a11yContent="Learn more about" a11yContentPosition="left" href="#">
-  Plans
+<Button a11yContent="iPhone" a11yContentPosition="right" href="#">
+  Shop
 </Button>
 ```
