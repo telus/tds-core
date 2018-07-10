@@ -356,6 +356,24 @@
       "contributions": [
         "tds"
       ]
+    },
+    {
+      "login": "jraff",
+      "name": "Jordan Raffoul",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1036187?v=4",
+      "profile": "http://jordanraffoul.com",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "derekkramer",
+      "name": "Derek Kramer",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/25651179?v=4",
+      "profile": "http://derekkramer.co",
+      "contributions": [
+        "tds"
+      ]
     }
   ]
 }
