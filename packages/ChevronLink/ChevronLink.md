@@ -49,7 +49,7 @@ Chevron Link can be used as a "back" button by specifying the `direction`. These
 Use the `A11yContent` prop to create invisible text that is read out loud by screen readers. The `A11yContentPosition` prop determines if the text is read before or after the chevron link label.
 
 ```jsx
-<ChevronLink a11yContent="Learn more about" a11yContentPosition="left" href="#">
-  Coverage
+<ChevronLink a11yContent="iPhone" a11yContentPosition="right" href="#">
+  Shop
 </ChevronLink>
 ```
