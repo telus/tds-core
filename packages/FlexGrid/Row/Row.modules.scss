@@ -1,3 +1,66 @@
+@import '~@tds/core-responsive/responsive';
+
 div.flexRow {
   margin: 0 auto;
+  width: 100%;
+}
+
+.xsReverse {
+  @include mq($until: sm) {
+    flex-direction: row-reverse;
+  }
+}
+
+.smReverse {
+  @include mq($from: sm) {
+    flex-direction: row-reverse;
+  }
+}
+
+.mdReverse {
+  @include mq($from: md) {
+    flex-direction: row-reverse;
+  }
+}
+
+.lgReverse {
+  @include mq($from: lg) {
+    flex-direction: row-reverse;
+  }
+}
+
+.xlReverse {
+  @include mq($from: xl) {
+    flex-direction: row-reverse;
+  }
+}
+
+.xsReverseCancel {
+  @include mq($until: sm) {
+    flex-direction: row;
+  }
+}
+
+.smReverseCancel {
+  @include mq($from: sm, $until: md) {
+    flex-direction: row;
+  }
+}
+
+.mdReverseCancel {
+  @include mq($from: md, $until: lg) {
+    flex-direction: row;
+  }
+}
+
+.lgReverseCancel {
+  @include mq($from: lg, $until: xl) {
+    flex-direction: row;
+  }
+}
+
+.xlReverseCancel {
+  @include mq($from: xl) {
+    flex-direction: row;
+  }
 }
