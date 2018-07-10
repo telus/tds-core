@@ -163,12 +163,14 @@ exports[`Accordion renders a closed accordion 1`] = `
             </button>
           </Clickable>
           <Reveal
+            duration={500}
             height={0}
             in={false}
-            timeout={500}
+            timeout={0}
           >
             <Transition
               appear={false}
+              duration={500}
               enter={true}
               exit={true}
               in={false}
@@ -179,7 +181,7 @@ exports[`Accordion renders a closed accordion 1`] = `
               onExit={[Function]}
               onExited={[Function]}
               onExiting={[Function]}
-              timeout={500}
+              timeout={0}
               unmountOnExit={false}
             >
               <div
@@ -418,12 +420,14 @@ exports[`Accordion renders an open accordion 1`] = `
             </button>
           </Clickable>
           <Reveal
+            duration={500}
             height={0}
             in={true}
             timeout={500}
           >
             <Transition
               appear={false}
+              duration={500}
               enter={true}
               exit={true}
               in={true}
@@ -442,7 +446,7 @@ exports[`Accordion renders an open accordion 1`] = `
                 data-testid="childrenContainer"
                 style={
                   Object {
-                    "height": "0px",
+                    "height": "auto",
                     "overflow": "hidden",
                     "transition": "height 500ms",
                   }
