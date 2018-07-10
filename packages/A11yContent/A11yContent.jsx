@@ -8,7 +8,7 @@ import styles from './A11yContent.modules.scss'
  */
 
 const A11yContent = ({ children }) => {
-  return <p className={styles.a11yContent}>{children}</p>
+  return <span className={styles.a11yContent}>{children}</span>
 }
 
 A11yContent.propTypes = {
