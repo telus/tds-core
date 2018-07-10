@@ -136,7 +136,12 @@ class PanelWrapper extends React.Component {
           </Box>
         </Clickable>
 
-        <Reveal timeout={500} in={this.state.open} height={this.state.contentWrapperHeight}>
+        <Reveal
+          timeout={this.state.open ? 500 : 0}
+          duration={500}
+          in={this.state.open}
+          height={this.state.contentWrapperHeight}
+        >
           {() => (
             <div
               ref={contentWrapper => {
