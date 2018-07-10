@@ -52,6 +52,8 @@ BaseButton.propTypes = {
 }
 
 BaseButton.defaultProps = {
+  a11yContent: undefined,
+  a11yContentPosition: 'right',
   dangerouslyAddClassName: undefined,
 }
 
