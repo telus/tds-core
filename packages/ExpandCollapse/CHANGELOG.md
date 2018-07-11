@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.5"></a>
+## [1.0.5](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.0.4...@tds/core-expand-collapse@1.0.5) (2018-07-11)
+
+
+### Bug Fixes
+
+* **core-expand-collapse:** enable adaptive panel size ([0ed278d](https://github.com/telusdigital/tds/commit/0ed278d))
+
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.0.3...@tds/core-expand-collapse@1.0.4) (2018-07-10)
 
