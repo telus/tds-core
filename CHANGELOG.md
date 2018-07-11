@@ -1,3 +1,11 @@
+#### 0.34.18 (2018-07-11)
+
+##### Bug Fixes
+
+* **core-expand-collapse:**  enable adaptive panel size ([aaaead7c](https://github.com/telusdigital/tds/commit/aaaead7cbcfc104fe5e15afe387294a9c6d67a56))
+* **shared-typography:**  fixed text/paragraph(large) line-height ([29fe32fe](https://github.com/telusdigital/tds/commit/29fe32feab7c763274e1d7233bde0f79c5e49778))
+* **core-input-feedback:**  add role alert to error message ([5c601b01](https://github.com/telusdigital/tds/commit/5c601b01f4ed398486edaabd1ee7b3da37291c6b))
+
 #### 0.34.17 (2018-06-18)
 
 ##### Bug Fixes
