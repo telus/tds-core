@@ -11,7 +11,7 @@ import Panel from './Panel/Panel'
 
 import styles from './ExpandCollapse.modules.scss'
 
-const Panels = ({ topDivider, isPanelOpen, togglePanel, children, ...rest }) => (
+const Panels = ({ topDivider, isPanelOpen, togglePanel, tag, children, ...rest }) => (
   <div {...safeRest(rest)} className={styles.base}>
     {topDivider && <HairlineDivider />}
 
@@ -29,6 +29,7 @@ const Panels = ({ topDivider, isPanelOpen, togglePanel, children, ...rest }) => 
             panelTertiaryText={tertiaryText}
             panelOnToggle={onToggle}
             panelDisabled={disabled}
+            tag={tag}
             open={isPanelOpen(id)}
             onClick={() => togglePanel(id)}
           >
@@ -44,6 +45,11 @@ Panels.propTypes = {
   isPanelOpen: PropTypes.func.isRequired,
   togglePanel: PropTypes.func.isRequired,
   children: childrenOfType(Panel).isRequired,
+  tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
+}
+
+Panels.defaultProps = {
+  tag: undefined,
 }
 
 export default Panels
