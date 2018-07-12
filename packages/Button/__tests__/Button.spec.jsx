@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, mount } from 'enzyme'
+import { render, mount, shallow } from 'enzyme'
 
 import A11yContent from '@tds/core-a11y-content'
 
@@ -15,6 +15,11 @@ describe('Button', () => {
 
     return button.find('button')
   }
+  const doShallow = (overrides = {}) => {
+    const button = shallow(<Button {...overrides}>Submit</Button>)
+
+    return button
+  }
 
   afterEach(() => {
     jest.clearAllMocks()
@@ -27,10 +32,10 @@ describe('Button', () => {
   })
 
   it('has one of the HTML button types', () => {
-    let button = doMount()
+    let button = doShallow()
     expect(button).toHaveProp('type', 'button')
 
-    button = doMount({ type: 'reset' })
+    button = doShallow({ type: 'reset' })
     expect(button).toHaveProp('type', 'reset')
   })
 
@@ -43,52 +48,33 @@ describe('Button', () => {
   })
 
   it('can not be disabled', () => {
-    const button = doMount({ disabled: true })
+    const button = doShallow({ disabled: true })
 
     expect(button).not.toHaveProp('disabled')
     expect(warn).toHaveBeenCalled()
   })
 
   it('passes additional attributes to button element', () => {
-    const button = doMount({ id: 'the-button', tabIndex: 1 })
+    const button = doShallow({ id: 'the-button', tabIndex: 1 })
 
     expect(button).toHaveProp('id', 'the-button')
     expect(button).toHaveProp('tabIndex', 1)
   })
 
-  it('properly handles A11yContent in the default right side position', () => {
-    const button = doMount({ a11yContent: 'testing' })
-    /* eslint-disable react/jsx-key */
-    const contentOrder = [
-      <div data-testid="button" className="row centered">
-        <span>Submit</span>
-        <A11yContent>testing</A11yContent>
-      </div>,
-    ]
-    /* eslint-enable react/jsx-key */
-    expect(
-      button.find('div[data-testid="button"]').containsAllMatchingElements(contentOrder)
-    ).toEqual(true)
-  })
+  describe('A11yContent', () => {
+    it('connects to Button', () => {
+      const button = shallow(
+        <Button>
+          Go home<A11yContent>testing</A11yContent>
+        </Button>
+      )
 
-  it('properly handles A11yContent in the left side position', () => {
-    const button = doMount({ a11yContent: 'testing', a11yContentPosition: 'left' })
-    /* eslint-disable react/jsx-key */
-    const contentOrder = [
-      <div data-testid="button" className="row centered">
-        <A11yContent>testing</A11yContent>
-        <span>Submit</span>
-      </div>,
-    ]
-    /* eslint-enable react/jsx-key */
-
-    expect(
-      button.find('div[data-testid="button"]').containsAllMatchingElements(contentOrder)
-    ).toEqual(true)
+      expect(button).toContainReact(<A11yContent>testing</A11yContent>)
+    })
   })
 
   it('does not allow custom CSS', () => {
-    const button = doMount({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const button = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
     expect(button).not.toHaveProp('className', 'my-custom-class')
     expect(button).not.toHaveProp('style')
