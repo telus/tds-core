@@ -62,23 +62,23 @@ FlexGrid.propTypes = {
    */
   gutter: PropTypes.bool,
   /**
-   * Choose if the item order should be reversed within the 'xs' breakpoint range.
+   * Choose if the item order should be reversed from the 'xs' breakpoint. When you pass in false, the order will be normal from the xs breakpoint. By default, it inherits the behaviour set by the preceding prop.
    */
   xsReverse: PropTypes.bool,
   /**
-   * Choose if the item order should be reversed within the 'sm' breakpoint range.
+   * Choose if the item order should be reversed from the 'sm' breakpoint. When you pass in false, the order will be normal from the sm breakpoint. By default, it inherits the behaviour set by the preceding prop.
    */
   smReverse: PropTypes.bool,
   /**
-   * Choose if the item order should be reversed within the 'md' breakpoint range.
+   * Choose if the item order should be reversed from the 'md' breakpoint. When you pass in false, the order will be normal from the md breakpoint. By default, it inherits the behaviour set by the preceding prop.
    */
   mdReverse: PropTypes.bool,
   /**
-   * Choose if the item order should be reversed within the 'lg' breakpoint range.
+   * Choose if the item order should be reversed from the 'lg' breakpoint. When you pass in false, the order will be normal from the lg breakpoint. By default, it inherits the behaviour set by the preceding prop.
    */
   lgReverse: PropTypes.bool,
   /**
-   * Choose if the item order should be reversed within the 'xl' breakpoint range.
+   * Choose if the item order should be reversed from the 'xl' breakpoint. When you pass in false, the order will be normal from the xl breakpoint. By default, it inherits the behaviour set by the preceding prop.
    */
   xlReverse: PropTypes.bool,
   /**

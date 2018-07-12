@@ -112,7 +112,7 @@ Use flexbox distribution properties to control the negative space around columns
 
 On certain layouts, the order of items within the row may need to be reversed. To do this, set the corresponding prop for the target breakpoint range as `true`. If a breakpoint is defined as `true`, it will affect all other breakpoints after it until a latter breakpoint assigned as `false` is found.
 
-In the following example, the items are set to reverse until the `md` breakpoint. Then, once the `xl` breakpoint is expanded to, the items will reverse again.
+In the following example, the items are set to reverse until the `md` breakpoint. Then, at the `xl` breakpoint, the items will reverse again.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <FlexGrid>
