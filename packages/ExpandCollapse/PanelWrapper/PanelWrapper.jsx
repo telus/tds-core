@@ -108,9 +108,8 @@ class PanelWrapper extends React.Component {
     )
   }
 
-  render() {
+  renderPanelWrapper = () => {
     const {
-      panelId,
       panelHeader,
       panelSubtext,
       panelTertiaryText,
@@ -120,7 +119,7 @@ class PanelWrapper extends React.Component {
     } = this.props
 
     return (
-      <div data-testid={panelId}>
+      <div>
         <Clickable
           onClick={onClick}
           onMouseEnter={this.mouseEnter}
@@ -132,7 +131,6 @@ class PanelWrapper extends React.Component {
           <Box vertical={3}>
             <Box inline between={3}>
               {this.renderCaret(panelDisabled, this.state.hover, this.state.open)}
-
               {this.renderHeader(panelHeader, panelSubtext, panelTertiaryText)}
             </Box>
           </Box>
@@ -164,6 +162,18 @@ class PanelWrapper extends React.Component {
       </div>
     )
   }
+
+  render() {
+    const { panelId, tag } = this.props
+
+    return (
+      <div data-testid={panelId}>
+        {tag
+          ? React.createElement(tag, { 'data-testid': 'headerWrapper' }, this.renderPanelWrapper())
+          : this.renderPanelWrapper()}
+      </div>
+    )
+  }
 }
 
 PanelWrapper.propTypes = {
@@ -174,6 +184,7 @@ PanelWrapper.propTypes = {
   panelOnToggle: PropTypes.func,
   panelDisabled: PropTypes.bool,
   open: PropTypes.bool,
+  tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
   onClick: PropTypes.func.isRequired,
   children: childrenOfType(Panel).isRequired,
 }
@@ -184,6 +195,7 @@ PanelWrapper.defaultProps = {
   panelDisabled: false,
   panelOnToggle: undefined,
   open: false,
+  tag: undefined,
 }
 
 export default PanelWrapper

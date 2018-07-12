@@ -1,5 +1,5 @@
 ```jsx
-<ExpandCollapse>
+<ExpandCollapse tag="h2">
   <ExpandCollapse.Panel id="features" header="Features">
     <Box between={3}>
       <Box between={2}>
@@ -34,7 +34,7 @@
 <div>
   <Heading level="h2">Charges on this new bill</Heading>
 
-  <ExpandCollapse topDivider={false}>
+  <ExpandCollapse topDivider={false} tag="h2">
     <ExpandCollapse.Panel
       id="monthly-plan"
       header="Monthly Home Phone plan"
