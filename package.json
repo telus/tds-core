@@ -79,7 +79,6 @@
     "css-loader": "^0.28.9",
     "css-mediaquery": "^0.1.2",
     "css-modules-loader-core": "^1.1.0",
-    "cssnano": "^4.0.0",
     "echint": "^4.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
