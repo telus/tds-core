@@ -8,7 +8,9 @@ exports[`ButtonLink renders 1`] = `
     class="row centered"
     data-testid="button"
   >
-    Go home
+    <span>
+      Go home
+    </span>
   </div>
 </a>
 `;

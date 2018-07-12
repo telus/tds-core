@@ -20,7 +20,7 @@ const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...re
       className: joinClassNames(styles.sizing, styles[variant], dangerouslyAddClassName),
     },
     <FlexBox direction="row" dangerouslyAddClassName={styles.centered} data-testid="button">
-      {children}
+      <span>{children}</span>
     </FlexBox>
   )
 }
