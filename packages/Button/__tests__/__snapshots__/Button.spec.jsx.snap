@@ -9,9 +9,7 @@ exports[`Button renders 1`] = `
     class="row centered"
     data-testid="button"
   >
-    <span>
-      Submit
-    </span>
+    Submit
   </div>
 </button>
 `;
