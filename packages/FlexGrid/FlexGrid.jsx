@@ -5,6 +5,7 @@ import { Grid } from 'react-flexbox-grid'
 
 import Col from './Col/Col'
 import Row from './Row/Row'
+import calculateReverseLevel from './calculateReverseLevel'
 
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
@@ -16,6 +17,7 @@ import styles from './FlexGrid.modules.scss'
  *
  * @version ./package.json
  */
+
 const FlexGrid = ({
   limitWidth,
   gutter,
@@ -27,22 +29,7 @@ const FlexGrid = ({
   children,
   ...rest
 }) => {
-  const calculateReverseLevel = () => {
-    const levelToggles = [xsReverse, smReverse, mdReverse, lgReverse, xlReverse]
-    const enabledLevels = [false, false, false, false, false]
-
-    for (let toggles = 0; toggles < levelToggles.length; toggles += 1) {
-      for (let levels = toggles; levels < enabledLevels.length; levels += 1) {
-        if (levelToggles[toggles] !== undefined) {
-          enabledLevels[levels] = levelToggles[toggles]
-        }
-      }
-    }
-
-    return enabledLevels
-  }
-
-  const reverseLevel = calculateReverseLevel()
+  const reverseLevel = calculateReverseLevel(xsReverse, smReverse, mdReverse, lgReverse, xlReverse)
 
   return (
     <Broadcast channel="flex-grid" value={gutter}>

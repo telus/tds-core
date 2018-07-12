@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
+import calculateReverseLevel from '../calculateReverseLevel'
 
 import styles from './Row.modules.scss'
 
@@ -38,22 +39,7 @@ const Row = ({
     }
   }
 
-  const calculateReverseLevel = () => {
-    const levelToggles = [xsReverse, smReverse, mdReverse, lgReverse, xlReverse]
-    const enabledLevels = [false, false, false, false, false]
-
-    for (let toggles = 0; toggles < levelToggles.length; toggles += 1) {
-      for (let levels = toggles; levels < enabledLevels.length; levels += 1) {
-        if (levelToggles[toggles] !== undefined) {
-          enabledLevels[levels] = levelToggles[toggles]
-        }
-      }
-    }
-
-    return enabledLevels
-  }
-
-  const reverseLevel = calculateReverseLevel()
+  const reverseLevel = calculateReverseLevel(xsReverse, smReverse, mdReverse, lgReverse, xlReverse)
 
   return (
     <ReactFlexboxGridRow
