@@ -1,6 +1,5 @@
 import React from 'react'
-import { mount, render } from 'enzyme'
-
+import { mount, shallow, render } from 'enzyme'
 import A11yContent from '@tds/core-a11y-content'
 
 import { warn } from '../../../shared/utils/warn'
@@ -14,6 +13,12 @@ describe('ButtonLink', () => {
     const link = mount(<ButtonLink {...overrides}>Go home</ButtonLink>)
 
     return link.find('a')
+  }
+
+  const doShallow = (overrides = {}) => {
+    const link = shallow(<ButtonLink {...overrides}>Go home</ButtonLink>)
+
+    return link
   }
 
   afterEach(() => {
@@ -42,13 +47,13 @@ describe('ButtonLink', () => {
 
   it('must use `reactRouterLinkComponent` and `to` props together', () => {
     const MyLink = () => <span />
-    doMount({ reactRouterLinkComponent: MyLink })
+    doShallow({ reactRouterLinkComponent: MyLink })
 
     expect(warn).toHaveBeenCalled()
 
     jest.clearAllMocks()
 
-    const link = doMount({ to: '/about' })
+    const link = doShallow({ to: '/about' })
 
     expect(link).toHaveProp('to')
     expect(warn).toHaveBeenCalled()
@@ -63,40 +68,22 @@ describe('ButtonLink', () => {
   })
 
   it('passes additional attributes to link element', () => {
-    const link = doMount({ id: 'the-link', tabIndex: 1 })
+    const link = doShallow({ id: 'the-link', tabIndex: 1 })
 
     expect(link).toHaveProp('id', 'the-link')
     expect(link).toHaveProp('tabIndex', 1)
   })
 
-  it('properly handles A11yContent in the default right side position', () => {
-    const link = doMount({ a11yContent: 'testing' })
-    /* eslint-disable react/jsx-key */
-    const contentOrder = [
-      <div data-testid="button" className="row centered">
-        <span>Go home</span>
-        <A11yContent>testing</A11yContent>
-      </div>,
-    ]
-    /* eslint-enable react/jsx-key */
-    expect(
-      link.find('div[data-testid="button"]').containsAllMatchingElements(contentOrder)
-    ).toEqual(true)
-  })
+  describe('A11yContent', () => {
+    it('connects to ButtonLink', () => {
+      const link = shallow(
+        <ButtonLink>
+          Go home<A11yContent>testing</A11yContent>
+        </ButtonLink>
+      )
 
-  it('properly handles A11yContent in the left side position', () => {
-    const link = doMount({ a11yContent: 'testing', a11yContentPosition: 'left' })
-    /* eslint-disable react/jsx-key */
-    const contentOrder = [
-      <div data-testid="button" className="row centered">
-        <A11yContent>testing</A11yContent>
-        <span>Go home</span>
-      </div>,
-    ]
-    /* eslint-enable react/jsx-key */
-    expect(
-      link.find('div[data-testid="button"]').containsAllMatchingElements(contentOrder)
-    ).toEqual(true)
+      expect(link).toContainReact(<A11yContent>testing</A11yContent>)
+    })
   })
 
   it('does not allow custom CSS', () => {
