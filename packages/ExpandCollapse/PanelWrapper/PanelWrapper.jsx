@@ -195,6 +195,7 @@ PanelWrapper.defaultProps = {
   panelDisabled: false,
   panelOnToggle: undefined,
   open: false,
+  tag: undefined,
 }
 
 export default PanelWrapper

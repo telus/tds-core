@@ -48,4 +48,8 @@ Panels.propTypes = {
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
 }
 
+Panels.defaultProps = {
+  tag: undefined,
+}
+
 export default Panels

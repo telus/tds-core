@@ -94,6 +94,7 @@ ExpandCollapse.defaultProps = {
   open: [],
   topDivider: true,
   onToggle: undefined,
+  tag: undefined,
 }
 
 ExpandCollapse.Panel = Panel
