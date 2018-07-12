@@ -2,7 +2,6 @@ import React from 'react'
 import { shallow, render } from 'enzyme'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
-import Box from '@tds/core-box'
 import A11yContent from '@tds/core-a11y-content'
 
 import { warn } from '../../../shared/utils/warn'
@@ -81,36 +80,16 @@ describe('ChevronLink', () => {
     expect(link).toHaveProp('role', 'button')
   })
 
-  it('properly handles A11yContent in the default right side position', () => {
-    const link = doShallow({ a11yContent: 'testing' })
-    /* eslint-disable react/jsx-key */
-    const contentOrder = [
-      <A11yContent>testing</A11yContent>,
-      <Box tag="span" inline={true} between={2}>
-        <span>Go home</span>
-        <span className="rightChevron">
-          <DecorativeIcon symbol="chevron" size={16} />
-        </span>
-      </Box>,
-    ]
-    /* eslint-enable react/jsx-key */
-    expect(link.containsAllMatchingElements(contentOrder)).toEqual(true)
-  })
+  describe('A11yContent', () => {
+    it('connects to ButtonLink', () => {
+      const link = shallow(
+        <ChevronLink>
+          Go home<A11yContent>testing</A11yContent>
+        </ChevronLink>
+      )
 
-  it('properly handles A11yContent in the left side position', () => {
-    const link = doShallow({ a11yContent: 'testing', a11yContentPosition: 'left' })
-    /* eslint-disable react/jsx-key */
-    const contentOrder = [
-      <Box tag="span" inline={true} between={2}>
-        <span>Go home</span>
-        <span className="rightChevron">
-          <DecorativeIcon symbol="chevron" size={16} />
-        </span>
-      </Box>,
-      <A11yContent>testing</A11yContent>,
-    ]
-    /* eslint-enable react/jsx-key */
-    expect(link.containsAllMatchingElements(contentOrder)).toEqual(true)
+      expect(link).toContainReact(<A11yContent>testing</A11yContent>)
+    })
   })
 
   it('does not allow custom CSS', () => {
