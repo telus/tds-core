@@ -3,22 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-<a name="3.0.0"></a>
-
-# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@1.1.0...@tds/core-tooltip@3.0.0) (2018-07-10)
-
-### Bug Fixes
-
-* **core-tooltip:** revert default value for the direction prop ([432da53](https://github.com/telusdigital/tds/commit/432da53))
-
-### Features
-
-* **core-tooltip:** change direction prop default to auto ([9835ce0](https://github.com/telusdigital/tds/commit/9835ce0))
-
-### BREAKING CHANGES
-
-* **core-tooltip:** direction prop is set to auto by default instead of right
-
 <a name="2.0.0"></a>
 
 # [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@1.1.1...@tds/core-tooltip@2.0.0) (2018-07-09)
