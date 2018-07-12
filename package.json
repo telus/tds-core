@@ -76,7 +76,7 @@
     "chalk": "^2.4.1",
     "chromedriver": "^2.35.0",
     "commitizen": "^2.9.6",
-    "css-loader": "^0.28.9",
+    "css-loader": "^1.0.0",
     "css-mediaquery": "^0.1.2",
     "css-modules-loader-core": "^1.1.0",
     "echint": "^4.0.1",
