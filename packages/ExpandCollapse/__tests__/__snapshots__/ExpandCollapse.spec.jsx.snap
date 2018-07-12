@@ -167,12 +167,14 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
               </button>
             </Clickable>
             <Reveal
+              duration={500}
               height={0}
               in={false}
-              timeout={500}
+              timeout={0}
             >
               <Transition
                 appear={false}
+                duration={500}
                 enter={true}
                 exit={true}
                 in={false}
@@ -183,7 +185,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                 onExit={[Function]}
                 onExited={[Function]}
                 onExiting={[Function]}
-                timeout={500}
+                timeout={0}
                 unmountOnExit={false}
               >
                 <div
@@ -436,12 +438,14 @@ exports[`ExpandCollapse renders an open panel 1`] = `
               </button>
             </Clickable>
             <Reveal
+              duration={500}
               height={0}
               in={true}
               timeout={500}
             >
               <Transition
                 appear={false}
+                duration={500}
                 enter={true}
                 exit={true}
                 in={true}
@@ -460,7 +464,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                   data-testid="childrenContainer"
                   style={
                     Object {
-                      "height": "0px",
+                      "height": "auto",
                       "overflow": "hidden",
                       "transition": "height 500ms",
                     }

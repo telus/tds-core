@@ -1,17 +1,13 @@
 import React from 'react'
-import { shallow, render, mount } from 'enzyme'
+import { render, mount } from 'enzyme'
 
 import StandaloneIcon from '@tds/core-standalone-icon'
 import Text from '@tds/core-text'
 
 import Tooltip from '../Tooltip'
 
-import mockMatchMedia from '../../../config/jest/__mocks__/matchMedia'
-
 describe('Tooltip', () => {
   const defaultChildren = 'Tooltip text'
-  const doShallow = (overrides = {}, children = defaultChildren) =>
-    shallow(<Tooltip {...overrides}>{children}</Tooltip>)
 
   const doMount = (overrides = {}, children = defaultChildren, options = {}) => {
     const tooltip = mount(<Tooltip {...overrides}>{children}</Tooltip>, options)
@@ -25,12 +21,6 @@ describe('Tooltip', () => {
       toggleBubble: () => findTrigger().simulate('click'),
     }
   }
-
-  beforeEach(() => {
-    mockMatchMedia(575)
-  })
-
-  // TODO: test for the defaultMatches behaviour?
 
   it('renders', () => {
     const tooltip = render(<Tooltip>Tooltip text</Tooltip>)
@@ -139,25 +129,25 @@ describe('Tooltip', () => {
   })
 
   it('passes additional attributes to the wrapper element', () => {
-    const tooltip = doShallow({ 'data-some-attr': 'some value' })
+    const { tooltip } = doMount({ 'data-some-attr': 'some value' })
 
     expect(tooltip).toHaveProp('data-some-attr', 'some value')
   })
 
   it('does not allow custom CSS', () => {
-    const tooltip = doShallow({
-      className: 'my-custom-class',
+    const { tooltip } = doMount({
+      className: 'some-custom-class',
       style: { color: 'hotpink' },
     })
 
-    expect(tooltip).not.toHaveProp('className', 'my-custom-class')
-    expect(tooltip).not.toHaveProp('style')
-  })
-})
+    const tt = tooltip.find('div[data-testid="tooltipContainer"]')
 
-describe('Connecting Tooltips to form fields', () => {
+    expect(tt).not.toHaveProp('className', 'some-custom-class')
+    expect(tt).not.toHaveProp('style')
+  })
+
   it('has a default when not connected to any form field', () => {
-    const tooltip = shallow(<Tooltip>The tooltip</Tooltip>)
+    const { tooltip } = doMount()
 
     expect(tooltip.find(StandaloneIcon)).toHaveProp('a11yText', 'Reveal additional information.')
   })

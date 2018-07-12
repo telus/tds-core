@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
 
-const defaultStyle = timeout => ({
-  transition: `height ${timeout}ms`,
+const defaultStyle = (duration, timeout) => ({
+  transition: `height ${duration || timeout}ms`,
   height: 0,
   overflow: 'hidden',
 })
@@ -19,7 +19,8 @@ const transitionStyles = height => {
 
   return {
     entering: styles,
-    entered: styles,
+    entered: { height: 'auto' },
+    exiting: styles,
     exited: hiddenContent,
   }
 }
@@ -29,7 +30,7 @@ const Reveal = ({ height, children, ...rest }) => (
     {status => (
       <div
         style={{
-          ...defaultStyle(rest.timeout),
+          ...defaultStyle(rest.duration, rest.timeout),
           ...transitionStyles(height)[status],
         }}
         aria-hidden={status === 'exited'}
@@ -42,8 +43,13 @@ const Reveal = ({ height, children, ...rest }) => (
 )
 Reveal.propTypes = {
   timeout: PropTypes.number.isRequired,
+  duration: PropTypes.number,
   height: PropTypes.number.isRequired,
   children: PropTypes.func.isRequired,
+}
+
+Reveal.defaultProps = {
+  duration: undefined,
 }
 
 export default Reveal

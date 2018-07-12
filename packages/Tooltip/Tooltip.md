@@ -12,10 +12,21 @@ On small screen sizes Tooltips will always open to the left to ensure they will 
   label="Enter your device's IMEI number"
   type="number"
   tooltip={
-    <Tooltip direction="left">
+    <Tooltip>
       You can find your device's IMEI by typing *#06# on its dialpad. Please enter the complete
       15-digit number, without spaces or characters.
     </Tooltip>
   }
 />
+```
+
+You can also place Tooltips anywhere you like as a standalone element.
+
+```jsx
+<div>
+  <Box between={2} inline>
+    <Text>Here is the all-new quadcopter </Text>
+    <Tooltip>A quadcoptor is a flying drone with 4 propellors.</Tooltip>
+  </Box>
+</div>
 ```

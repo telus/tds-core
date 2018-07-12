@@ -9,6 +9,16 @@ $bubble-triangle-height: 10px;
 $bubble-triangle-width: 7px;
 $bubble-triangle-position: $bubble-triangle-width + 5px;
 
+.tooltip {
+  position: relative;
+  width: 1rem;
+  height: 1.3rem;
+}
+
+.tooltipContainer {
+  position: absolute;
+}
+
 .bubble {
   composes: rounded from '../../shared/styles/Borders.modules.scss';
 
@@ -19,15 +29,15 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
   box-shadow: 0 0 2px 0 $color-shark, 0 3px 2px 0 rgba(84, 89, 95, 0.25);
 
   @include mq($until: sm) {
-    width: 100%;
+    max-width: 80vw;
   }
 
   @include mq($from: sm) {
-    width: 50%;
+    max-width: 50vw;
   }
 
   @include mq($from: md) {
-    width: 25%;
+    max-width: 25vw;
   }
 
   // This is the bubble triangle
@@ -47,6 +57,10 @@ $bubble-triangle-position: $bubble-triangle-width + 5px;
 
     transform: rotate(45deg);
   }
+}
+
+.innerBubble {
+  max-width: 100%;
 }
 
 .left {

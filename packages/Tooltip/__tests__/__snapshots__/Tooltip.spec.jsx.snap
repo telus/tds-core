@@ -2,35 +2,45 @@
 
 exports[`Tooltip renders 1`] = `
 <div
-  class="fixLineHeight"
+  class="fixLineHeight tooltip"
 >
   <div
-    aria-hidden="true"
-    aria-live="assertive"
-    class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T right hide"
-    data-testid="bubble"
-    id="unknown-field_tooltip"
-    role="tooltip"
+    class="tooltipContainer"
+    data-testid="tooltipContainer"
   >
-    <span
-      class="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
+    <div
+      aria-hidden="true"
+      aria-live="assertive"
+      class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T right hide"
+      data-testid="bubble"
+      id="unknown-field_tooltip"
+      role="tooltip"
     >
-      Tooltip text
-    </span>
+      <div
+        class="innerBubble"
+        style="width:calc(-16px - 1rem - 0.5rem)"
+      >
+        <span
+          class="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
+        >
+          Tooltip text
+        </span>
+      </div>
+    </div>
+    <button
+      aria-controls="unknown-field_tooltip"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="TDS_Clickable-modules__clickable___Wf5Qr TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ TDS_Forms-modules__font___g7OGX TDS_Text-modules__color___2f6lE"
+      id="unknown-field_trigger"
+      style="padding:4px;margin:-4px"
+      type="button"
+    >
+      <i
+        aria-label="Reveal additional information."
+        class="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
+      />
+    </button>
   </div>
-  <button
-    aria-controls="unknown-field_tooltip"
-    aria-expanded="false"
-    aria-haspopup="true"
-    class="TDS_Clickable-modules__clickable___Wf5Qr TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ TDS_Forms-modules__font___g7OGX TDS_Text-modules__color___2f6lE"
-    id="unknown-field_trigger"
-    style="padding:4px;margin:-4px"
-    type="button"
-  >
-    <i
-      aria-label="Reveal additional information."
-      class="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
-    />
-  </button>
 </div>
 `;
