@@ -28,10 +28,10 @@ Use this variant with caution. There will be accessibility issues if the colour 
 
 ### Using A11yContent
 
-Use the `A11yContent` prop to create invisible text that is read out loud by screen readers. The `A11yContentPosition` prop determines if the text is read before or after the button label.
+Use the `A11yContent` component to create invisible text that is read out loud by screen readers.
 
 ```jsx
-<ButtonLink a11yContent="iPhone" a11yContentPosition="right" href="#">
-  Shop
-</ButtonLink>
+<Button href="#">
+  Shop <A11yContent>iPhone</A11yContent>
+</Button>
 ```

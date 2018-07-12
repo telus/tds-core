@@ -5,6 +5,7 @@
   "main": "",
   "module": "",
   "devDependencies": {
-    "@tds/core-responsive": "^1.1.0"
+    "@tds/core-responsive": "^1.1.0",
+    "airbnb-prop-types": "2.8.1"
   }
 }

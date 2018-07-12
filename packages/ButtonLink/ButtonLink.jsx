@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { componentWithName, or } from 'airbnb-prop-types'
 
 import { warn } from '../../shared/utils/warn'
 import safeRest from '../../shared/utils/safeRest'
@@ -13,14 +14,7 @@ import styles from './ButtonLink.modules.scss'
  *
  * @version ./package.json
  */
-const ButtonLink = ({
-  reactRouterLinkComponent,
-  variant,
-  a11yContent,
-  a11yContentPosition,
-  children,
-  ...rest
-}) => {
+const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
     warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
@@ -31,8 +25,6 @@ const ButtonLink = ({
       element={reactRouterLinkComponent || 'a'}
       variant={variant}
       dangerouslyAddClassName={styles[variant]}
-      a11yContent={a11yContent}
-      a11yContentPosition={a11yContentPosition}
     >
       {children}
     </BaseButton>
@@ -57,25 +49,15 @@ ButtonLink.propTypes = {
    */
   href: PropTypes.string,
   /**
-   * Text that is hidden from view, but read out loud by screen readers
+   * The label. It can include the `A11yContent` component.
    */
-  a11yContent: PropTypes.string,
-  /**
-   * Position of hidden A11yContent text. `left` reads the content before the button label is read, and `right` reads it after the label
-   */
-  a11yContentPosition: PropTypes.oneOf(['left', 'right']),
-  /**
-   * The label.
-   */
-  children: PropTypes.string.isRequired,
+  children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
 }
 ButtonLink.defaultProps = {
   variant: 'primary',
   reactRouterLinkComponent: null,
   to: null,
   href: null,
-  a11yContent: undefined,
-  a11yContentPosition: 'right',
 }
 
 export default ButtonLink

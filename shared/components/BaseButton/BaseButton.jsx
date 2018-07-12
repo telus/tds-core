@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import A11yContent from '@tds/core-a11y-content'
+import { componentWithName, or } from 'airbnb-prop-types'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
@@ -13,15 +12,7 @@ import styles from './BaseButton.modules.scss'
 /**
  * A common base for Button and ButtonLink.
  */
-const BaseButton = ({
-  element,
-  variant,
-  dangerouslyAddClassName,
-  a11yContent,
-  a11yContentPosition,
-  children,
-  ...rest
-}) => {
+const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...rest }) => {
   return React.createElement(
     element,
     {
@@ -29,15 +20,7 @@ const BaseButton = ({
       className: joinClassNames(styles.sizing, styles[variant], dangerouslyAddClassName),
     },
     <FlexBox direction="row" dangerouslyAddClassName={styles.centered} data-testid="button">
-      {a11yContent && a11yContentPosition === 'left' ? (
-        <A11yContent>{a11yContent}</A11yContent>
-      ) : null}
-
-      <span>{children}</span>
-
-      {a11yContent && a11yContentPosition === 'right' ? (
-        <A11yContent>{a11yContent}</A11yContent>
-      ) : null}
+      {children}
     </FlexBox>
   )
 }
@@ -46,14 +29,10 @@ BaseButton.propTypes = {
   element: PropTypes.oneOfType([PropTypes.func, PropTypes.string]).isRequired,
   variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']).isRequired,
   dangerouslyAddClassName: PropTypes.string,
-  a11yContent: PropTypes.string,
-  a11yContentPosition: PropTypes.oneOf(['left', 'right']),
-  children: PropTypes.string.isRequired,
+  children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
 }
 
 BaseButton.defaultProps = {
-  a11yContent: undefined,
-  a11yContentPosition: 'right',
   dangerouslyAddClassName: undefined,
 }
 
