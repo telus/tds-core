@@ -12,7 +12,7 @@ const A11yContent = ({ children }) => {
 }
 
 A11yContent.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.string.isRequired,
 }
 A11yContent.defaultProps = {}
 
