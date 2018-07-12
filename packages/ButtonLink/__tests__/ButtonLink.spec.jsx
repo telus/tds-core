@@ -87,7 +87,7 @@ describe('ButtonLink', () => {
   })
 
   it('does not allow custom CSS', () => {
-    const link = doMount({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const link = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
     expect(link).not.toHaveProp('className', 'my-custom-class')
     expect(link).not.toHaveProp('style')
