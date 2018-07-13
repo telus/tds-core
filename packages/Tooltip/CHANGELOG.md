@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.0...@tds/core-tooltip@2.0.1) (2018-07-13)
+
+
+### Bug Fixes
+
+* **core-tooltip:** add fix for line-height inherited from core-text ([262ab8b](https://github.com/telusdigital/tds/commit/262ab8b))
+
+
+
+
 <a name="2.0.0"></a>
 
 # [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@1.1.1...@tds/core-tooltip@2.0.0) (2018-07-09)
