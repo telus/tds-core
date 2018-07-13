@@ -261,12 +261,13 @@ describe('ExpandCollapse', () => {
       expect(findPanelHeader('panel-1')).toHaveProp('aria-expanded', true)
     })
 
-    it('wraps a heading tag around a panel', () => {
+    it('wraps a heading tag around a panel label', () => {
       const { expandCollapse } = doMount(
         <ExpandCollapse tag="h3">{aPanel({ id: 'panel-1' })}</ExpandCollapse>
       )
-
-      expect(expandCollapse.find(`[data-testid="headerWrapper"]`).type()).toEqual('h3')
+      expect(expandCollapse.find(`[data-testid="headerWrapper"]`).children()).toHaveTagName(
+        'Clickable'
+      )
     })
   })
 
