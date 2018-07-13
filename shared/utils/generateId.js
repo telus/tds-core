@@ -2,6 +2,7 @@ import find from 'core-js/fn/array/find'
 
 const sanitize = text =>
   text
+    .toString()
     .toLowerCase()
     .replace(/ /g, '-')
     .replace(/[^a-zA-Z0-9-]/g, '')
