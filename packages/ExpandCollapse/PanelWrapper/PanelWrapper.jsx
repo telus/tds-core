@@ -114,27 +114,34 @@ class PanelWrapper extends React.Component {
       panelSubtext,
       panelTertiaryText,
       panelDisabled,
+      tag,
       onClick,
       children,
     } = this.props
 
+    const headerButton = (
+      <Clickable
+        onClick={onClick}
+        onMouseEnter={this.mouseEnter}
+        onMouseLeave={this.mouseLeave}
+        dangerouslyAddClassName={joinClassNames(styles.header, panelDisabled && styles.disabled)}
+        disabled={panelDisabled}
+        aria-expanded={this.state.open}
+      >
+        <Box vertical={3}>
+          <Box inline between={3}>
+            {this.renderCaret(panelDisabled, this.state.hover, this.state.open)}
+            {this.renderHeader(panelHeader, panelSubtext, panelTertiaryText)}
+          </Box>
+        </Box>
+      </Clickable>
+    )
+
     return (
       <div>
-        <Clickable
-          onClick={onClick}
-          onMouseEnter={this.mouseEnter}
-          onMouseLeave={this.mouseLeave}
-          dangerouslyAddClassName={joinClassNames(styles.header, panelDisabled && styles.disabled)}
-          disabled={panelDisabled}
-          aria-expanded={this.state.open}
-        >
-          <Box vertical={3}>
-            <Box inline between={3}>
-              {this.renderCaret(panelDisabled, this.state.hover, this.state.open)}
-              {this.renderHeader(panelHeader, panelSubtext, panelTertiaryText)}
-            </Box>
-          </Box>
-        </Clickable>
+        {tag
+          ? React.createElement(tag, { 'data-testid': 'headerWrapper' }, headerButton)
+          : headerButton}
 
         <Reveal
           timeout={this.state.open ? 500 : 0}
@@ -164,15 +171,9 @@ class PanelWrapper extends React.Component {
   }
 
   render() {
-    const { panelId, tag } = this.props
+    const { panelId } = this.props
 
-    return (
-      <div data-testid={panelId}>
-        {tag
-          ? React.createElement(tag, { 'data-testid': 'headerWrapper' }, this.renderPanelWrapper())
-          : this.renderPanelWrapper()}
-      </div>
-    )
+    return <div data-testid={panelId}>{this.renderPanelWrapper()}</div>
   }
 }
 
