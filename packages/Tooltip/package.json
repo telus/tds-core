@@ -34,6 +34,7 @@
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
     "@tds/core-responsive": "^1.1.0",
+    "@tds/util-generate-id": "^1.0.0-dev",
     "core-js": "^2.5.3"
   }
 }

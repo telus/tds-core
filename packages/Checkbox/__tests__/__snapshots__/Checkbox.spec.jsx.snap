@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Checkbox allows numbers as value 1`] = `
+<div
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+>
+  <label
+    for="the-group-name_1"
+  >
+    <span
+      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz alignFlexStart"
+    >
+      <span
+        class="fakeCheckbox unchecked"
+        data-testid="fake-input"
+      >
+        <input
+          aria-invalid="false"
+          class="hiddenInput"
+          id="the-group-name_1"
+          name="the-group-name"
+          type="checkbox"
+          value="1"
+        />
+      </span>
+      <span
+        class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+      >
+        A label
+      </span>
+    </span>
+  </label>
+</div>
+`;
+
 exports[`Checkbox renders 1`] = `
 <div
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"

@@ -8,7 +8,7 @@ import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
 
 import safeRest from '../../utils/safeRest'
-import generateId from '../../utils/generateId'
+import generateId from '../../utils/generateId/generateId'
 
 import Flexbox from '../Flexbox/Flexbox'
 

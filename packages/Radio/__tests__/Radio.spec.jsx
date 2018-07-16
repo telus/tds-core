@@ -38,6 +38,12 @@ describe('Radio', () => {
     expect(radio).toMatchSnapshot()
   })
 
+  it('allows numbers as value', () => {
+    const radio = render(<Radio label="A label" name="the-group" value={1} />)
+
+    expect(radio).toMatchSnapshot()
+  })
+
   it('must have a label', () => {
     const { label } = doMount({ label: 'Some label' })
 

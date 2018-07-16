@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import StandaloneIcon from '@tds/core-standalone-icon'
 
 import safeRest from '../../shared/utils/safeRest'
-import generateId from '../../shared/utils/generateId'
+import generateId from '../../shared/utils/generateId/generateId'
 import joinClassNames from '../../shared/utils/joinClassNames'
 import closest from './element-closest'
 
