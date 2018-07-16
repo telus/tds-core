@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.1.0...@tds/core-expand-collapse@1.1.1) (2018-07-16)
+
+
+### Bug Fixes
+
+* **core-expand-collapse:** wrap header tags around correct element ([#684](https://github.com/telusdigital/tds/issues/684)) ([5c9dd63](https://github.com/telusdigital/tds/commit/5c9dd63))
+
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.0.5...@tds/core-expand-collapse@1.1.0) (2018-07-13)
 
