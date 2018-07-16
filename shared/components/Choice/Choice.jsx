@@ -11,7 +11,7 @@ import ColoredTextProvider from '../ColoredTextProvider/ColoredTextProvider'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
-import generateId from '../../utils/generateId'
+import generateId from '../../utils/generateId/generateId'
 
 import styles from './Choice.modules.scss'
 import messagingStyles from '../../styles/Messaging.modules.scss'

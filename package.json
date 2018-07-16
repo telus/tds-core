@@ -7,7 +7,8 @@
   "workspaces": [
     "packages/*",
     "shared/components/*",
-    "shared/styles/*"
+    "shared/styles/*",
+    "shared/utils/*"
   ],
   "scripts": {
     "bootstrap": "yarn install && yarn gitbook:install && lerna bootstrap && yarn build --all",

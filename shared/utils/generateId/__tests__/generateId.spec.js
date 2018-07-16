@@ -14,6 +14,12 @@ describe('generateId', () => {
       expect(id.identity()).toEqual('allcaps')
     })
 
+    it('handles numbers', () => {
+      const id = generateId(1)
+
+      expect(id.identity()).toEqual('1')
+    })
+
     it('replaces spaces with dashes', () => {
       const id = generateId('an id with spaces')
 
