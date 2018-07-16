@@ -5,10 +5,10 @@ exports[`<Notification /> renders 1`] = `
   class="TDS_Box-modules__verticalPadding-3___Fsv37 instructional"
 >
   <div
-    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_flexboxgrid2__container-fluid___3c7kO"
   >
     <div
-      class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+      class="TDS_Row-modules__flexRow___3CHOR TDS_flexboxgrid2__row___3YyB2"
     >
       <div
         class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__padding___2tLQS"
