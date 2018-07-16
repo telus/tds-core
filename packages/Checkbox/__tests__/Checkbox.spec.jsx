@@ -39,6 +39,12 @@ describe('Checkbox', () => {
     expect(checkbox).toMatchSnapshot()
   })
 
+  it('allows numbers as value', () => {
+    const checkbox = render(<Checkbox label="A label" name="the-group-name" value={1} />)
+
+    expect(checkbox).toMatchSnapshot()
+  })
+
   it('must have a label', () => {
     const { label } = doMount({ label: 'Some label' })
 
