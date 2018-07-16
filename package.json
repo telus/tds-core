@@ -37,7 +37,7 @@
     "precommit": "lint-staged && yarn test && yarn contributors:update",
     "prepare": "yarn gitbook:install",
     "prepr": "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
-    "prepush": "npm-run-all --parallel build test lint build-docs:*",
+    "prepush": "yarn ci:build && npm-run-all --parallel test lint build-docs:*",
     "scaffold": "node scripts/scaffold.js",
     "test:e2e": "node scripts/e2e.js",
     "test:u": "yarn test -u",
