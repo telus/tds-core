@@ -45,7 +45,7 @@ text is too low in the hover state.
 Use the `A11yContent` component to create invisible text that is read out loud by screen readers.
 
 ```jsx
-<Button href="#">
+<Button>
   Shop <A11yContent>iPhone</A11yContent>
 </Button>
 ```
