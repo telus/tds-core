@@ -72,6 +72,22 @@ describe('Row', () => {
     expect(row).toHaveProp('between', 'xs')
   })
 
+  it('supports responsive reversal', () => {
+    const row = doMount({
+      xsReverse: true,
+      smReverse: true,
+      mdReverse: true,
+      lgReverse: false,
+      xlReverse: true,
+    })
+
+    expect(row.hasClass('xsReverse')).toEqual(true)
+    expect(row.hasClass('smReverse')).toEqual(true)
+    expect(row.hasClass('mdReverse')).toEqual(true)
+    expect(row.hasClass('lgReverseCancel')).toEqual(true)
+    expect(row.hasClass('xlReverse')).toEqual(true)
+  })
+
   it('does not allow custom CSS', () => {
     const row = doMount({
       className: 'my-custom-class',

@@ -2,10 +2,10 @@
 
 exports[`Row renders 1`] = `
 <Row
-  className="flexRow"
+  className="flexRow xsReverseCancel smReverseCancel mdReverseCancel lgReverseCancel xlReverseCancel"
 >
   <div
-    className="flexRow row"
+    className="flexRow xsReverseCancel smReverseCancel mdReverseCancel lgReverseCancel xlReverseCancel row"
   >
     Some content
   </div>
