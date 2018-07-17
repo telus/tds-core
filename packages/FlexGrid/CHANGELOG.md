@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.0.2...@tds/core-flex-grid@2.1.0) (2018-07-17)
+
+
+### Features
+
+* **core-flex-grid:** add reversible grid props ([#681](https://github.com/telusdigital/tds/issues/681)) ([9d10ec6](https://github.com/telusdigital/tds/commit/9d10ec6))
+
+
+
+
 <a name="2.0.2"></a>
 ## [2.0.2](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.0.1...@tds/core-flex-grid@2.0.2) (2018-06-12)
 
