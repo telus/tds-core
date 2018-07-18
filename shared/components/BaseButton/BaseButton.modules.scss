@@ -28,11 +28,13 @@ $button-text-color: $color-white;
 .sizing {
   composes: base;
 
-  display: block;
+  display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 
   @include mq($from: md) {
-    display: inline-block;
+    display: inline-flex;
 
     width: auto;
     min-width: 180px;

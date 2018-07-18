@@ -4,8 +4,6 @@ import PropTypes from 'prop-types'
 import safeRest from '../../../src/utils/safeRest'
 import joinClassNames from '../../../src/utils/joinClassNames'
 
-import FlexBox from '../../components/Flexbox/Flexbox'
-
 import styles from './BaseButton.modules.scss'
 
 /**
@@ -18,9 +16,7 @@ const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...re
       ...safeRest(rest),
       className: joinClassNames(styles.sizing, styles[variant], dangerouslyAddClassName),
     },
-    <FlexBox direction="row" dangerouslyAddClassName={styles.centered}>
-      {children}
-    </FlexBox>
+    children
   )
 }
 
