@@ -78,6 +78,22 @@ describe('FlexGrid', () => {
     expect(flexGrid).toHaveClassName('limitWidth')
   })
 
+  it('supports responsive reversal', () => {
+    const { flexGrid } = doMount({
+      xsReverse: true,
+      smReverse: true,
+      mdReverse: true,
+      lgReverse: false,
+      xlReverse: true,
+    })
+
+    expect(flexGrid.hasClass('xsReverse')).toEqual(true)
+    expect(flexGrid.hasClass('smReverse')).toEqual(true)
+    expect(flexGrid.hasClass('mdReverse')).toEqual(true)
+    expect(flexGrid.hasClass('lgReverseCancel')).toEqual(true)
+    expect(flexGrid.hasClass('xlReverse')).toEqual(true)
+  })
+
   it('does not allow custom CSS', () => {
     const { flexGrid } = doMount({
       className: 'my-custom-class',

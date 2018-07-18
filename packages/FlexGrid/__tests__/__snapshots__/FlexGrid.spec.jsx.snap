@@ -2,10 +2,10 @@
 
 exports[`FlexGrid renders 1`] = `
 <div
-  class="flexGrid limitWidth container-fluid"
+  class="flexGrid limitWidth xsReverseCancel smReverseCancel mdReverseCancel lgReverseCancel xlReverseCancel container-fluid"
 >
   <div
-    class="flexRow row"
+    class="flexRow xsReverseCancel smReverseCancel mdReverseCancel lgReverseCancel xlReverseCancel row"
   >
     <div
       class="col-xs padding"

@@ -2,6 +2,8 @@
 
 .flexGrid {
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .limitWidth {
@@ -10,5 +12,65 @@
     @include mq($from: $viewport) {
       max-width: $mq-breakpoint;
     }
+  }
+}
+
+.xsReverse {
+  @include mq($until: sm) {
+    flex-direction: column-reverse;
+  }
+}
+
+.smReverse {
+  @include mq($from: sm) {
+    flex-direction: column-reverse;
+  }
+}
+
+.mdReverse {
+  @include mq($from: md) {
+    flex-direction: column-reverse;
+  }
+}
+
+.lgReverse {
+  @include mq($from: lg) {
+    flex-direction: column-reverse;
+  }
+}
+
+.xlReverse {
+  @include mq($from: xl) {
+    flex-direction: column-reverse;
+  }
+}
+
+.xsReverseCancel {
+  @include mq($until: sm) {
+    flex-direction: column;
+  }
+}
+
+.smReverseCancel {
+  @include mq($from: sm, $until: md) {
+    flex-direction: column;
+  }
+}
+
+.mdReverseCancel {
+  @include mq($from: md, $until: lg) {
+    flex-direction: column;
+  }
+}
+
+.lgReverseCancel {
+  @include mq($from: lg, $until: xl) {
+    flex-direction: column;
+  }
+}
+
+.xlReverseCancel {
+  @include mq($from: xl) {
+    flex-direction: column;
   }
 }
