@@ -5,13 +5,6 @@ exports[`Button renders 1`] = `
   class="sizing primary"
   type="button"
 >
-  <div
-    class="row centered"
-    data-testid="button"
-  >
-    <span>
-      Submit
-    </span>
-  </div>
+  Submit
 </button>
 `;
