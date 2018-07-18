@@ -5,8 +5,6 @@ import { componentWithName, or } from 'airbnb-prop-types'
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
 
-import FlexBox from '../Flexbox/Flexbox'
-
 import styles from './BaseButton.modules.scss'
 
 /**
@@ -19,9 +17,7 @@ const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...re
       ...safeRest(rest),
       className: joinClassNames(styles.sizing, styles[variant], dangerouslyAddClassName),
     },
-    <FlexBox direction="row" dangerouslyAddClassName={styles.centered} data-testid="button">
-      <span>{children}</span>
-    </FlexBox>
+    children
   )
 }
 

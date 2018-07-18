@@ -4,13 +4,6 @@ exports[`ButtonLink renders 1`] = `
 <a
   class="sizing primary primary"
 >
-  <div
-    class="row centered"
-    data-testid="button"
-  >
-    <span>
-      Go home
-    </span>
-  </div>
+  Go home
 </a>
 `;
