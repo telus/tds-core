@@ -47,4 +47,10 @@ describe('HairlineDivider', () => {
     expect(hairlineDivider).not.toHaveProp('className', 'my-custom-class')
     expect(hairlineDivider).not.toHaveProp('style')
   })
+
+  it('is hidden from screen readers', () => {
+    const hairlineDivider = doShallow()
+
+    expect(hairlineDivider).toHaveProp('aria-hidden', 'true')
+  })
 })
