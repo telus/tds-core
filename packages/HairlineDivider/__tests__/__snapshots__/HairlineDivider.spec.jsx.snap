@@ -2,6 +2,7 @@
 
 exports[`HairlineDivider renders 1`] = `
 <hr
+  aria-hidden="true"
   class="horizontalThin"
 />
 `;
