@@ -20,6 +20,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
         vertical={false}
       >
         <hr
+          aria-hidden="true"
           className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
         />
       </HairlineDivider>
@@ -205,6 +206,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                   >
                     <DimpleDivider>
                       <hr
+                        aria-hidden="true"
                         className="TDS_DimpleDivider-modules__dimple___1OWjL TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
                       />
                     </DimpleDivider>
@@ -248,6 +250,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
               vertical={false}
             >
               <hr
+                aria-hidden="true"
                 className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
               />
             </HairlineDivider>
@@ -291,6 +294,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
         vertical={false}
       >
         <hr
+          aria-hidden="true"
           className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
         />
       </HairlineDivider>
@@ -475,6 +479,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                   >
                     <DimpleDivider>
                       <hr
+                        aria-hidden="true"
                         className="TDS_DimpleDivider-modules__dimple___1OWjL TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
                       />
                     </DimpleDivider>
@@ -518,6 +523,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
               vertical={false}
             >
               <hr
+                aria-hidden="true"
                 className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
               />
             </HairlineDivider>
