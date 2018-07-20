@@ -17,6 +17,7 @@ exports[`Accordion renders a closed accordion 1`] = `
         vertical={false}
       >
         <hr
+          aria-hidden="true"
           className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
         />
       </HairlineDivider>
@@ -202,6 +203,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                   >
                     <DimpleDivider>
                       <hr
+                        aria-hidden="true"
                         className="TDS_DimpleDivider-modules__dimple___1OWjL TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
                       />
                     </DimpleDivider>
@@ -245,6 +247,7 @@ exports[`Accordion renders a closed accordion 1`] = `
               vertical={false}
             >
               <hr
+                aria-hidden="true"
                 className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
               />
             </HairlineDivider>
@@ -276,6 +279,7 @@ exports[`Accordion renders an open accordion 1`] = `
         vertical={false}
       >
         <hr
+          aria-hidden="true"
           className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
         />
       </HairlineDivider>
@@ -460,6 +464,7 @@ exports[`Accordion renders an open accordion 1`] = `
                   >
                     <DimpleDivider>
                       <hr
+                        aria-hidden="true"
                         className="TDS_DimpleDivider-modules__dimple___1OWjL TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
                       />
                     </DimpleDivider>
@@ -503,6 +508,7 @@ exports[`Accordion renders an open accordion 1`] = `
               vertical={false}
             >
               <hr
+                aria-hidden="true"
                 className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
               />
             </HairlineDivider>
