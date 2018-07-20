@@ -17,6 +17,7 @@ const WaveDivider = ({ ...rest }) => (
     width="1202"
     height="226"
     viewBox="0 0 1202 226"
+    aria-hidden="true"
   >
     <defs>
       <linearGradient
