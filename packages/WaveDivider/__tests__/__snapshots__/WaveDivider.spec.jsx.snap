@@ -2,6 +2,7 @@
 
 exports[`WaveDivider renders 1`] = `
 <svg
+  aria-hidden="true"
   class="wave"
   height="226"
   viewBox="0 0 1202 226"

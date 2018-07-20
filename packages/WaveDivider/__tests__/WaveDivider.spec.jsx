@@ -31,4 +31,10 @@ describe('WaveDivider', () => {
     expect(waveDivider).not.toHaveProp('className', 'my-custom-class')
     expect(waveDivider).not.toHaveProp('style')
   })
+
+  it('is hidden from screen readers', () => {
+    const waveDivider = doShallow()
+
+    expect(waveDivider).toHaveProp('aria-hidden', 'true')
+  })
 })
