@@ -31,4 +31,10 @@ describe('DimpleDivider', () => {
     expect(dimpleDivider).not.toHaveProp('className', 'my-custom-class')
     expect(dimpleDivider).not.toHaveProp('style')
   })
+
+  it('is hidden from screen readers', () => {
+    const dimpleDivider = doShallow()
+
+    expect(dimpleDivider).toHaveProp('aria-hidden', 'true')
+  })
 })
