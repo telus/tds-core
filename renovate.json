@@ -1,4 +1,5 @@
 {
   "extends": ["@telusdigital"],
-  "recreateClosed": true
+  "recreateClosed": true,
+  "rebaseStalePrs": true
 }
