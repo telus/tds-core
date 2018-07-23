@@ -31,6 +31,6 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "airbnb-prop-types": "2.10.0"
+    "airbnb-prop-types": "2.8.1"
   }
 }
