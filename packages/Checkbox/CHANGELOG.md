@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.0.5...@tds/core-checkbox@1.1.0) (2018-07-23)
+
+
+### Features
+
+* **core-checkbox:** allow boolean proptype for value ([a526c03](https://github.com/telusdigital/tds/commit/a526c03))
+
+
+
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.0.4...@tds/core-checkbox@1.0.5) (2018-07-10)
 

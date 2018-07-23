@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-choice",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "main": "",
   "module": "",
@@ -11,6 +11,6 @@
     "@tds/core-text": "^1.0.2"
   },
   "devDependencies": {
-    "@tds/util-generate-id": "^1.0.0-dev"
+    "@tds/util-generate-id": "^1.0.0"
   }
 }
