@@ -28,7 +28,7 @@ const Select = ({ options, placeholder, ...props }) => (
           style={addRightPadding(showFeedbackIcon ? 2 : 1)}
         >
           {placeholder && (
-            <option value="" hidden disabled>
+            <option value="" disabled>
               {placeholder}
             </option>
           )}
