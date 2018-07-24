@@ -1,3 +1,13 @@
+#### 0.34.19 (2018-07-24)
+
+##### Bug Fixes
+
+* **core-select:**  removed hidden property on placeholder ([#698](https://github.com/telusdigital/tds/pull/698)) ([47370c48](https://github.com/telusdigital/tds/commit/47370c48d9bc1104140fa23326fcff2d07d5757a))
+
+##### Refactors
+
+* **shared-base-button:**  remove flexbox ([ca6eb004](https://github.com/telusdigital/tds/commit/ca6eb00471ac43b26fa760b2c8ef005f5d6019f8))
+
 #### 0.34.18 (2018-07-11)
 
 ##### Bug Fixes
