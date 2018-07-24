@@ -265,11 +265,11 @@ describe('Select', () => {
     })
   })
 
-  it('can have an un-selectable placeholder', () => {
+  it('can have a selectable placeholder', () => {
     const { findSelectElement } = doMount({ placeholder: 'Please select...' })
 
     expect(findSelectElement()).toContainReact(
-      <option value="" hidden disabled>
+      <option value="" disabled>
         Please select...
       </option>
     )
