@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.10"></a>
+## [1.0.10](https://github.com/telusdigital/tds/compare/@tds/core-input@1.0.9...@tds/core-input@1.0.10) (2018-07-25)
+
+
+### Bug Fixes
+
+* **core-input:** prevent text cutoff for hanging characters ([411d58f](https://github.com/telusdigital/tds/commit/411d58f))
+* **core-input:** remove height class ([702f7e3](https://github.com/telusdigital/tds/commit/702f7e3))
+
+
+
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/telusdigital/tds/compare/@tds/core-input@1.0.8...@tds/core-input@1.0.9) (2018-07-23)
 
