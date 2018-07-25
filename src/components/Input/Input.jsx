@@ -12,7 +12,6 @@ import FeedbackIcon from '../../../shared/components/FormField/FeedbackIcon'
 import addRightPadding from '../../../shared/components/FormField/addRightPadding'
 
 import positionStyles from '../Position.modules.scss'
-import formStyles from '../Forms.modules.scss'
 import styles from './Input.modules.scss'
 
 /**
@@ -24,12 +23,7 @@ const Input = props => (
       <div className={positionStyles.relative}>
         <input
           {...inputProps}
-          className={joinClassNames(
-            className,
-            formStyles.height,
-            styles.hideNumberSpinner,
-            styles.input
-          )}
+          className={joinClassNames(className, styles.hideNumberSpinner, styles.input)}
           style={addRightPadding(showFeedbackIcon ? 1 : 0)}
         />
 
