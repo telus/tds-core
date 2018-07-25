@@ -27,7 +27,7 @@ exports[`Input renders 1`] = `
   >
     <input
       aria-invalid="false"
-      class="default height hideNumberSpinner"
+      class="default height hideNumberSpinner input"
       data-no-global-styles="true"
       id="the-input"
       type="text"
@@ -67,7 +67,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   >
     <input
       aria-invalid="true"
-      class="error height hideNumberSpinner"
+      class="error height hideNumberSpinner input"
       data-no-global-styles="true"
       id="the-input"
       style="padding-right:calc(16px + 2rem)"

@@ -11,3 +11,9 @@
   composes: absolute centerVertically from '../Position.modules.scss';
   composes: iconRight from '../FormField/FormField.modules.scss';
 }
+
+.input {
+  min-height: 3.25rem;
+  max-height: 3.25rem;
+  height: auto;
+}
