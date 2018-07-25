@@ -23,7 +23,12 @@ const Input = props => (
       <div className={positionStyles.relative}>
         <input
           {...inputProps}
-          className={joinClassNames(className, formStyles.height, styles.hideNumberSpinner)}
+          className={joinClassNames(
+            className,
+            formStyles.height,
+            styles.hideNumberSpinner,
+            styles.input
+          )}
           style={addRightPadding(showFeedbackIcon ? 1 : 0)}
         />
 
