@@ -9,6 +9,8 @@ import styles from './DimpleDivider.modules.scss'
  *
  * @version ./package.json
  */
-const DimpleDivider = ({ ...rest }) => <hr {...safeRest(rest)} className={styles.dimple} />
+const DimpleDivider = ({ ...rest }) => (
+  <hr {...safeRest(rest)} className={styles.dimple} aria-hidden="true" />
+)
 
 export default DimpleDivider
