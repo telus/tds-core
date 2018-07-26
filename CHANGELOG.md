@@ -1,3 +1,11 @@
+#### 0.34.20 (2018-07-26)
+
+##### Bug Fixes
+
+* **core-input:**
+  *  remove height class ([fa08bd09](https://github.com/telusdigital/tds/commit/fa08bd09aa8801c6dc621036622b09509faf7c8e))
+  *  prevent text cutoff for hanging characters ([d1c420ff](https://github.com/telusdigital/tds/commit/d1c420ff502304aea862243026468208ec8ae1d4))
+
 #### 0.34.19 (2018-07-24)
 
 ##### Bug Fixes
