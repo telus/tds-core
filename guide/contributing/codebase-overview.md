@@ -28,7 +28,7 @@ We utilize the following tools for the development, release, and distribution pr
 * [Yarn](https://yarnpkg.com/en/): we chose Yarn as our node package
   manager for its speed and deep dependency version locking
 * [Openshift](https://www.openshift.com/) and [Docker](https://www.docker.com/): the CI pipeline is largely
-  based on the isomorphic stater kit pipeline, using Docker as the build artifact
+  based on the TELUS isomorphic starter kit pipeline, using Docker as the build artifact
 * [Lerna](https://lernajs.io/): A tool for managing JavaScript projects with multiple packages.
 
 ## Component structure and standards {#component-structure-and-standards}
