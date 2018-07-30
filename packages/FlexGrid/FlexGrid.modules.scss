@@ -15,61 +15,61 @@
   }
 }
 
-.xsReverse {
+div.xsReverse {
   @include mq($until: sm) {
     flex-direction: column-reverse;
   }
 }
 
-.smReverse {
+div.smReverse {
   @include mq($from: sm) {
     flex-direction: column-reverse;
   }
 }
 
-.mdReverse {
+div.mdReverse {
   @include mq($from: md) {
     flex-direction: column-reverse;
   }
 }
 
-.lgReverse {
+div.lgReverse {
   @include mq($from: lg) {
     flex-direction: column-reverse;
   }
 }
 
-.xlReverse {
+div.xlReverse {
   @include mq($from: xl) {
     flex-direction: column-reverse;
   }
 }
 
-.xsReverseCancel {
+div.xsReverseCancel {
   @include mq($until: sm) {
     flex-direction: column;
   }
 }
 
-.smReverseCancel {
+div.smReverseCancel {
   @include mq($from: sm, $until: md) {
     flex-direction: column;
   }
 }
 
-.mdReverseCancel {
+div.mdReverseCancel {
   @include mq($from: md, $until: lg) {
     flex-direction: column;
   }
 }
 
-.lgReverseCancel {
+div.lgReverseCancel {
   @include mq($from: lg, $until: xl) {
     flex-direction: column;
   }
 }
 
-.xlReverseCancel {
+div.xlReverseCancel {
   @include mq($from: xl) {
     flex-direction: column;
   }
