@@ -1,12 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Col renders 1`] = `
+exports[`Col can hide columns 1`] = `
 <Col
-  className="padding"
+  className="xsHidden smHidden mdVisible lgVisible xlHidden padding"
   xs={true}
 >
   <div
-    className="col-xs padding"
+    className="col-xs xsHidden smHidden mdVisible lgVisible xlHidden padding"
+  >
+    Some content
+  </div>
+</Col>
+`;
+
+exports[`Col renders 1`] = `
+<Col
+  className="xsVisible smVisible mdVisible lgVisible xlVisible padding"
+  xs={true}
+>
+  <div
+    className="col-xs xsVisible smVisible mdVisible lgVisible xlVisible padding"
   >
     Some content
   </div>

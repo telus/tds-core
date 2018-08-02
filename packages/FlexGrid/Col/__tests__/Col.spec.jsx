@@ -44,6 +44,12 @@ describe('Col', () => {
     expect(col).toHaveProp('xs', 10)
   })
 
+  it('can hide columns', () => {
+    const col = doMount({ xsHidden: true, mdHidden: false, xlHidden: true })
+
+    expect(col).toMatchSnapshot()
+  })
+
   it('will show a span is deprecated warning', () => {
     doMount({ span: 10 })
 
@@ -87,5 +93,21 @@ describe('Col', () => {
 
     expect(col).not.toHaveProp('className', 'my-custom-class')
     expect(col).not.toHaveProp('style', { color: 'hotpink' })
+  })
+
+  it('supports responsive hidden columns', () => {
+    const col = doMount({
+      xsHidden: true,
+      smHidden: false,
+      mdHidden: true,
+      lgHidden: false,
+      xlHidden: true,
+    })
+
+    expect(col.hasClass('xsHidden')).toEqual(true)
+    expect(col.hasClass('smVisible')).toEqual(true)
+    expect(col.hasClass('mdHidden')).toEqual(true)
+    expect(col.hasClass('lgVisible')).toEqual(true)
+    expect(col.hasClass('xlHidden')).toEqual(true)
   })
 })

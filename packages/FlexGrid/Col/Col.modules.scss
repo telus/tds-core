@@ -1,3 +1,5 @@
+@import '~@tds/core-responsive/responsive';
+
 div.padding {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -5,4 +7,64 @@ div.padding {
 
 div.gutterless {
   padding: 0;
+}
+
+.xsHidden {
+  @include mq($until: sm) {
+    display: none;
+  }
+}
+
+.smHidden {
+  @include mq($from: sm) {
+    display: none;
+  }
+}
+
+.mdHidden {
+  @include mq($from: md) {
+    display: none;
+  }
+}
+
+.lgHidden {
+  @include mq($from: lg) {
+    display: none;
+  }
+}
+
+.xlHidden {
+  @include mq($from: xl) {
+    display: none;
+  }
+}
+
+.xsVisible {
+  @include mq($until: sm) {
+    display: block;
+  }
+}
+
+.smVisible {
+  @include mq($from: sm, $until: md) {
+    display: block;
+  }
+}
+
+.mdVisible {
+  @include mq($from: md, $until: lg) {
+    display: block;
+  }
+}
+
+.lgVisible {
+  @include mq($from: lg, $until: xl) {
+    display: block;
+  }
+}
+
+.xlVisible {
+  @include mq($from: xl) {
+    display: block;
+  }
 }
