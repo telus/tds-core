@@ -4,11 +4,24 @@ import { Subscriber } from 'react-broadcast'
 
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 
+import joinClassNames from '../../../shared/utils/joinClassNames'
 import safeRest from '../../../shared/utils/safeRest'
 import { deprecate } from '../../../shared/utils/warn'
+import calculateLevel from '../calculateLevel'
+
 import styles from './Col.modules.scss'
 
-const Col = ({ span, offset, children, ...rest }) => {
+const Col = ({
+  span,
+  offset,
+  xsHidden,
+  smHidden,
+  mdHidden,
+  lgHidden,
+  xlHidden,
+  children,
+  ...rest
+}) => {
   if (offset) {
     deprecate(
       'core-flex-grid',
@@ -28,13 +41,22 @@ const Col = ({ span, offset, children, ...rest }) => {
     props.xsOffset = offset
   }
 
+  const hiddenLevel = calculateLevel(xsHidden, smHidden, mdHidden, lgHidden, xlHidden)
+
   return (
     <Subscriber channel="flex-grid">
       {gutter => (
         <ReactFlexboxGridCol
           {...safeRest(props)}
           xs={rest.xs || span || true}
-          className={gutter ? styles.padding : styles.gutterless}
+          className={joinClassNames(
+            hiddenLevel[0] ? styles.xsHidden : styles.xsVisible,
+            hiddenLevel[1] ? styles.smHidden : styles.smVisible,
+            hiddenLevel[2] ? styles.mdHidden : styles.mdVisible,
+            hiddenLevel[3] ? styles.lgHidden : styles.lgVisible,
+            hiddenLevel[4] ? styles.xlHidden : styles.xlVisible,
+            gutter ? styles.padding : styles.gutterless
+          )}
         >
           {children}
         </ReactFlexboxGridCol>
@@ -145,12 +167,63 @@ Col.propTypes = {
    * Use the xsOffset prop instead for identical functionality.
    */
   offset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+  /**
+   * Hides the column from the 'xs' breakpoint range.
+   *
+   * `true` hides the column from xs;
+   * `false` shows the column
+   * By default, it is set to false.
+   *
+   * @since 2.1.0
+   */
+  xsHidden: PropTypes.bool,
+  /**
+   * Hides the column from the 'sm' breakpoint range.
+   *
+   * `true` hides the column from sm;
+   * `false` shows the column;
+   * By default, it inherits the behaviour set by the preceding prop.
+   * @since 2.1.0
+   */
+  smHidden: PropTypes.bool,
+  /**
+   * Hides the column from the 'md' breakpoint range.
+   *
+   * `true` hides the column from md;
+   * `false` shows the column;
+   * By default, it inherits the behaviour set by the preceding prop.
+   * @since 2.1.0
+   */
+  mdHidden: PropTypes.bool,
+  /**
+   * Hides the column from the 'lg' breakpoint range.
+   *
+   * `true` hides the column from lg;
+   * `false` shows the column;
+   * By default, it inherits the behaviour set by the preceding prop.
+   * @since 2.1.0
+   */
+  lgHidden: PropTypes.bool,
+  /**
+   * Hides the column from the 'xl' breakpoint range.
+   *
+   * `true` hides the column from xl;
+   * `false` shows the column;
+   * By default, it inherits the behaviour set by the preceding prop.
+   * @since 2.1.0
+   */
+  xlHidden: PropTypes.bool,
 }
 /* eslint-enable */
 
 Col.defaultProps = {
   span: undefined,
   offset: undefined,
+  xsHidden: undefined,
+  smHidden: undefined,
+  mdHidden: undefined,
+  lgHidden: undefined,
+  xlHidden: undefined,
 }
 
 export default Col

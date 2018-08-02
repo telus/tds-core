@@ -1,4 +1,4 @@
-const calculateReverseLevel = (xsReverse, smReverse, mdReverse, lgReverse, xlReverse) => {
+const calculateLevel = (xsReverse, smReverse, mdReverse, lgReverse, xlReverse) => {
   const levelToggles = [xsReverse, smReverse, mdReverse, lgReverse, xlReverse]
   const enabledLevels = [false, false, false, false, false]
 
@@ -13,4 +13,4 @@ const calculateReverseLevel = (xsReverse, smReverse, mdReverse, lgReverse, xlRev
   return enabledLevels
 }
 
-export default calculateReverseLevel
+export default calculateLevel

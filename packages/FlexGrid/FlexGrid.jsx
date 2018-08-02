@@ -5,7 +5,7 @@ import { Grid } from 'react-flexbox-grid'
 
 import Col from './Col/Col'
 import Row from './Row/Row'
-import calculateReverseLevel from './calculateReverseLevel'
+import calculateLevel from './calculateLevel'
 
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
@@ -29,7 +29,7 @@ const FlexGrid = ({
   children,
   ...rest
 }) => {
-  const reverseLevel = calculateReverseLevel(xsReverse, smReverse, mdReverse, lgReverse, xlReverse)
+  const reverseLevel = calculateLevel(xsReverse, smReverse, mdReverse, lgReverse, xlReverse)
 
   return (
     <Broadcast channel="flex-grid" value={gutter}>
