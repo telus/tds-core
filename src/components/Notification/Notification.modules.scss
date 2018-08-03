@@ -15,3 +15,11 @@
 .error {
   composes: error from '../Messaging.modules.scss';
 }
+
+.withoutIcon {
+  width: 100%;
+}
+
+.withIcon {
+  width: calc(100% - 2.5rem);
+}

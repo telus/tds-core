@@ -8,16 +8,24 @@ exports[`<Notification /> renders 1`] = `
     class="flexGrid limitWidth container-fluid"
   >
     <div
-      class="col-xs col-xs-offset padding"
+      class="flexRow row"
     >
       <div
-        class="betweenRightMargin-3 inline"
+        class="col-xs col-xs-offset padding"
       >
-        <p
-          class="wordBreak noSpacing color medium mediumFont leftAlign"
+        <div
+          class="betweenRightMargin-3 inline"
         >
-          Some content
-        </p>
+          <div
+            class="withoutIcon"
+          >
+            <p
+              class="wordBreak noSpacing color medium mediumFont leftAlign"
+            >
+              Some content
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
