@@ -17,7 +17,6 @@ const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) =>
   const paragraphColor = invert ? typographyStyles.invertedColor : typographyStyles.color
 
   const classes = joinClassNames(
-    styles.base,
     typographyStyles.wordBreak,
     spacingStyles.noSpacing,
     context.inheritColor ? typographyStyles.inheritColor : paragraphColor,
