@@ -7,6 +7,7 @@ import Paragraph from '@tds/core-paragraph'
 import Box from '@tds/core-box'
 
 import safeRest from '../../shared/utils/safeRest'
+import joinClassNames from '../../shared/utils/joinClassNames'
 
 import styles from './Notification.modules.scss'
 
@@ -37,8 +38,13 @@ const Notification = ({ variant, children, ...rest }) => (
         <FlexGrid.Col>
           <Box inline between={3}>
             {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
-
-            <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
+            <div
+              className={joinClassNames(
+                isImportant(variant) ? styles.withIcon : styles.withoutIcon
+              )}
+            >
+              <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
+            </div>
           </Box>
         </FlexGrid.Col>
       </FlexGrid.Row>

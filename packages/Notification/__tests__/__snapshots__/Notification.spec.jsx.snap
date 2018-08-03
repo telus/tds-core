@@ -16,11 +16,15 @@ exports[`<Notification /> renders 1`] = `
         <div
           class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
         >
-          <p
-            class="TDS_Typography-modules__wordBreak___3dmWU TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Paragraph-modules__leftAlign___KgwhE"
+          <div
+            class="withoutIcon"
           >
-            Some content
-          </p>
+            <p
+              class="TDS_Typography-modules__wordBreak___3dmWU TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Paragraph-modules__leftAlign___KgwhE"
+            >
+              Some content
+            </p>
+          </div>
         </div>
       </div>
     </div>
