@@ -1,5 +1,5 @@
-const calculateLevel = (xsReverse, smReverse, mdReverse, lgReverse, xlReverse) => {
-  const levelToggles = [xsReverse, smReverse, mdReverse, lgReverse, xlReverse]
+const calculateLevel = (xs, sm, md, lg, xl) => {
+  const levelToggles = [xs, sm, md, lg, xl]
   const enabledLevels = [false, false, false, false, false]
 
   for (let toggles = 0; toggles < levelToggles.length; toggles += 1) {
