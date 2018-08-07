@@ -52,7 +52,7 @@ Move columns to the right using the responsive `offset` props.
 
 ### Hiding Columns
 
-On certain layouts, certain columns may want to be hidden. To do this, set the corresponding prop for the target breakpoint range as `true`. If a breakpoint is defined as `true`, it will affect all other breakpoints after it until a latter breakpoint assigned as `false` is found.
+Hide columns at certain breakpoints by setting the corresponding prop for the target breakpoint range as `true`. If a breakpoint is defined as `true`, it will affect all other breakpoints after it until a latter breakpoint assigned as `false` is found.
 
 In the following example, the second column is set to hidden for `xs`, `sm`, and `xl` breakpoints. This column is not hidden for `md` and `lg` breakpoints.
 

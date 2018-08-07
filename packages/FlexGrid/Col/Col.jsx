@@ -171,8 +171,8 @@ Col.propTypes = {
    * Hides the column from the 'xs' breakpoint range.
    *
    * `true` hides the column from xs;
-   * `false` shows the column
-   * By default, it is set to false.
+   * `false` shows the column;
+   * By default, the column is visible.
    *
    * @since 2.1.0
    */
