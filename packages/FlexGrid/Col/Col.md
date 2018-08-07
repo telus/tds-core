@@ -1,7 +1,7 @@
 ### Responsive column widths
 
 Use the `xs`, `sm`, `md`, `lg` and `xl` props to set the number of column widths to span. When not specified,
-columns will automatically span equal widths in their row.
+columns will automatically span equal widths in their row. If the prop is set to `0`, the column at that breakpoint will be hidden.
 
 The column span props correspond to their min-width breakpoints. For example, when `md` is defined as `6`, your column
 width will be `6` from the `md` breakpoint and greater, unless you specify a value for `lg` or `xl`.
@@ -52,7 +52,7 @@ Move columns to the right using the responsive `offset` props.
 
 ### Hiding Columns
 
-Hide columns at certain breakpoints by setting the corresponding prop for the target breakpoint range as `true`. If a breakpoint is defined as `true`, it will affect all other breakpoints after it until a latter breakpoint assigned as `false` is found.
+Hide columns at certain breakpoints by setting the corresponding prop for the target breakpoint range as `0`.
 
 In the following example, the second column is set to hidden for `xs`, `sm`, and `xl` breakpoints. This column is not hidden for `md` and `lg` breakpoints.
 
@@ -62,7 +62,7 @@ In the following example, the second column is set to hidden for `xs`, `sm`, and
     <FlexGrid.Col>
       <Box vertical={2}><Text>1</Text></Box>
     </FlexGrid.Col>
-    <FlexGrid.Col xsHidden mdHidden={false} xlHidden>
+    <FlexGrid.Col xs={0} sm={0} xl={0}>
       <Box vertical={2}><Text>2</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col>
