@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.8"></a>
+## [1.1.8](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.1.7...@tds/core-notification@1.1.8) (2018-08-07)
+
+
+### Bug Fixes
+
+* **core-notification:** prevent overflow of long text ([c88850b](https://github.com/telusdigital/tds/commit/c88850b))
+* **core-paragraph:** prevent overflow on ie11 ([5ce482e](https://github.com/telusdigital/tds/commit/5ce482e))
+
+
+
+
 <a name="1.1.7"></a>
 ## [1.1.7](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.1.6...@tds/core-notification@1.1.7) (2018-07-18)
 
