@@ -45,7 +45,7 @@ describe('Col', () => {
   })
 
   it('can hide columns', () => {
-    const col = doMount({ xsHidden: true, mdHidden: false, xlHidden: true })
+    const col = doMount({ xs: 0, sm: 0, xl: 0 })
 
     expect(col).toMatchSnapshot()
   })
@@ -97,11 +97,11 @@ describe('Col', () => {
 
   it('supports responsive hidden columns', () => {
     const col = doMount({
-      xsHidden: true,
-      smHidden: false,
-      mdHidden: true,
-      lgHidden: false,
-      xlHidden: true,
+      xs: 0,
+      sm: undefined,
+      md: 0,
+      lg: undefined,
+      xl: 0,
     })
 
     expect(col.hasClass('xsHidden')).toEqual(true)
