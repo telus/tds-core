@@ -7,6 +7,7 @@ import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 import joinClassNames from '../../../shared/utils/joinClassNames'
 import safeRest from '../../../shared/utils/safeRest'
 import { deprecate } from '../../../shared/utils/warn'
+import calculateLevel from '../calculateLevel'
 
 import styles from './Col.modules.scss'
 
@@ -30,6 +31,8 @@ const Col = ({ span, offset, children, ...rest }) => {
     props.xsOffset = offset
   }
 
+  const hiddenLevel = calculateLevel(rest.xs, rest.sm, rest.md, rest.lg, rest.xl)
+
   return (
     <Subscriber channel="flex-grid">
       {gutter => (
@@ -37,11 +40,11 @@ const Col = ({ span, offset, children, ...rest }) => {
           {...safeRest(props)}
           xs={rest.xs || span || true}
           className={joinClassNames(
-            rest.xs === 0 ? styles.xsHidden : styles.xsVisible,
-            rest.sm === 0 ? styles.smHidden : styles.smVisible,
-            rest.md === 0 ? styles.mdHidden : styles.mdVisible,
-            rest.lg === 0 ? styles.lgHidden : styles.lgVisible,
-            rest.xl === 0 ? styles.xlHidden : styles.xlVisible,
+            hiddenLevel[0] === 0 ? styles.xsHidden : styles.xsVisible,
+            hiddenLevel[1] === 0 ? styles.smHidden : styles.smVisible,
+            hiddenLevel[2] === 0 ? styles.mdHidden : styles.mdVisible,
+            hiddenLevel[3] === 0 ? styles.lgHidden : styles.lgVisible,
+            hiddenLevel[4] === 0 ? styles.xlHidden : styles.xlVisible,
             gutter ? styles.padding : styles.gutterless
           )}
         >

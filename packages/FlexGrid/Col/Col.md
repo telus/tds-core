@@ -52,7 +52,7 @@ Move columns to the right using the responsive `offset` props.
 
 ### Hiding Columns
 
-Hide columns at certain breakpoints by setting the corresponding prop for the target breakpoint range as `0`.
+Hide columns starting from certain breakpoints by setting the corresponding prop for the target breakpoint range as `0`. If a breakpoint is defined as `0`, it will affect all other breakpoints after it until a latter breakpoint assigned as not `0` nor `undefined` is found.
 
 In the following example, the second column is set to hidden for `xs`, `sm`, and `xl` breakpoints. This column is not hidden for `md` and `lg` breakpoints.
 
@@ -62,7 +62,7 @@ In the following example, the second column is set to hidden for `xs`, `sm`, and
     <FlexGrid.Col>
       <Box vertical={2}><Text>1</Text></Box>
     </FlexGrid.Col>
-    <FlexGrid.Col xs={0} sm={0} xl={0}>
+    <FlexGrid.Col xs={0} sm={0} md={4} xl={0}>
       <Box vertical={2}><Text>2</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col>
