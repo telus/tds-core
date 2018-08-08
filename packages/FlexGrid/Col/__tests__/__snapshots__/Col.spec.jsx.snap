@@ -3,12 +3,13 @@
 exports[`Col can hide columns 1`] = `
 <Col
   className="xsHidden smHidden mdVisible lgVisible xlHidden padding"
+  md={1}
   sm={0}
   xl={0}
   xs={true}
 >
   <div
-    className="col-xs col-sm-0 col-xl-0 xsHidden smHidden mdVisible lgVisible xlHidden padding"
+    className="col-xs col-sm-0 col-md-1 col-xl-0 xsHidden smHidden mdVisible lgVisible xlHidden padding"
   >
     Some content
   </div>
