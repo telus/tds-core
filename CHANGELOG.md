@@ -1,3 +1,9 @@
+#### 1.0.20 (2018-08-09)
+
+##### Bug Fixes
+
+* **core-notification:**  prevent overflow of long text ([6f34805c](https://github.com/telusdigital/tds/commit/6f34805c0bdb5064204832e1a64aecce6701f55e))
+
 #### 1.0.19 (2018-07-26)
 
 ##### Bug Fixes
