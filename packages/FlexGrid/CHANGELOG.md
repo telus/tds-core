@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.1.1...@tds/core-flex-grid@2.2.0) (2018-08-09)
+
+
+### Features
+
+* **core-flex-grid:** add hide props to col ([1f4ed86](https://github.com/telusdigital/tds/commit/1f4ed86))
+* **core-flex-grid:** hides column starting from breakpoint ([7d6f267](https://github.com/telusdigital/tds/commit/7d6f267))
+* **core-flex-grid:** more abstraction in calculateLevels ([faec59d](https://github.com/telusdigital/tds/commit/faec59d))
+* **core-flex-grid:** removed hidden flags and enabled 0 for breakpoints ([867599e](https://github.com/telusdigital/tds/commit/867599e))
+
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.1.0...@tds/core-flex-grid@2.1.1) (2018-08-07)
 
