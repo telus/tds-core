@@ -1,30 +1,96 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
 import capitalize from '../../shared/utils/capitalize'
 
-import styles from './Box.modules.scss'
-
-const getClassName = (spacing, location, scale) => {
-  if (!scale) {
-    return undefined
-  }
-  return styles[`${location}${capitalize(spacing)}-${scale}`]
+const BoxTag = ({ props, className, children }) => {
+  return React.createElement(props.tag, { className: className }, children)
 }
 
-const getBetweenClasses = (scale, inline) => {
-  if (!scale) {
-    return undefined
-  }
+const spacingBase = 1 // 16px
 
-  const direction = inline ? 'Right' : 'Bottom'
-  return joinClassNames(
-    styles[`between${direction}Margin-${scale}`],
-    inline ? styles.inline : styles.stack
-  )
+const mobileSize = {
+  1: spacingBase * 0.25 + 'rem',
+  2: spacingBase * 0.5 + 'rem',
+  3: spacingBase + 'rem',
+  4: spacingBase * 1.5 + 'rem',
+  5: spacingBase * 2 + 'rem',
+  6: spacingBase * 2.5 + 'rem',
+  7: spacingBase * 3 + 'rem',
+  8: spacingBase * 4 + 'rem',
 }
+
+const desktopSize = {
+  1: spacingBase * 0.25 + 'rem',
+  2: spacingBase * 0.5 + 'rem',
+  3: spacingBase + 'rem',
+  4: spacingBase * 2 + 'rem',
+  5: spacingBase * 3 + 'rem',
+  6: spacingBase * 4 + 'rem',
+  7: spacingBase * 4.5 + 'rem',
+  8: spacingBase * 6 + 'rem',
+}
+
+const breakpoints = {
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+}
+
+const StyledBoxTag = styled(BoxTag)`
+  display: flex;
+  flex-direction: ${props => {
+    props.inline ? 'row' : 'column'
+  }}
+  padding-top: ${props => {
+    props.inset ? mobileSize[props.inset] : mobileSize[props.vertical]
+  }};
+  padding-bottom: ${props => {
+    props.inset ? mobileSize[props.inset] : mobileSize[props.vertical]
+  }};
+  padding-left: ${props => {
+    props.inset ? mobileSize[props.inset] : mobileSize[props.horizontal]
+  }};
+  padding-right: ${props => {
+    props.inset ? mobileSize[props.inset] : mobileSize[props.horizontal]
+  }};
+  margin-bottom: ${props => {
+    !props.inline && !props.below && props.between
+      ? mobileSize[props.between]
+      : props.below ? mobileSize[props.below] : spacingBase + 'rem'
+  }};
+   > *:not(:last-child) {
+     margin-right: ${props =>
+       props.inline && props.between ? mobileSize[props.between] : spacingBase + 'rem'};
+}
+
+  @media only screen and (min-width: ${breakpoints.md}px) {
+    padding-top: ${props => {
+      props.inset ? desktopSize[props.inset] : desktopSize[props.vertical]
+    }};
+    padding-bottom: ${props => {
+      props.inset ? desktopSize[props.inset] : desktopSize[props.vertical]
+    }};
+    padding-left: ${props => {
+      props.inset ? desktopSize[props.inset] : desktopSize[props.horizontal]
+    }};
+    padding-right: ${props => {
+      props.inset ? desktopSize[props.inset] : desktopSize[props.horizontal]
+    }};
+    margin-bottom: ${props => {
+      !props.inline && !props.below && props.between
+        ? desktopSize[props.between]
+        : props.below ? desktopSize[props.below] : spacingBase + 'rem'
+    }};
+     > *:not(:last-child) {
+    margin-right: ${props => desktopSize[props.between]};
+    }
+  }
+`
 
 /**
  * Apply spacing within or around components.
@@ -43,18 +109,22 @@ const Box = ({
   children,
   ...rest
 }) => {
-  const xSize = inset || horizontal
-  const ySize = inset || vertical
-
-  const classes = joinClassNames(
-    getClassName('padding', 'horizontal', xSize),
-    getClassName('padding', 'vertical', ySize),
-    getClassName('margin', 'bottom', below),
-    getBetweenClasses(between, inline),
-    dangerouslyAddClassName
+  return React.createElement(
+    StyledBoxTag,
+    {
+      ...safeRest(rest),
+      props: {
+        tag,
+        vertical,
+        horizontal,
+        inset,
+        below,
+        between,
+        inline,
+      },
+    },
+    children
   )
-
-  return React.createElement(tag, { ...safeRest(rest), className: classes }, children)
 }
 
 Box.propTypes = {
