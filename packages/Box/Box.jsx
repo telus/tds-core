@@ -6,8 +6,18 @@ import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
 import capitalize from '../../shared/utils/capitalize'
 
-const BoxTag = ({ props, className, children }) => {
-  return React.createElement(props.tag, { className: className }, children)
+const BoxTag = ({
+  tag,
+  vertical,
+  horizontal,
+  inset,
+  below,
+  between,
+  inline,
+  className,
+  children,
+}) => {
+  return React.createElement(tag, { className: className }, children)
 }
 
 const spacingBase = 1 // 16px
@@ -43,51 +53,34 @@ const breakpoints = {
 
 const StyledBoxTag = styled(BoxTag)`
   display: flex;
-  flex-direction: ${props => {
-    props.inline ? 'row' : 'column'
-  }}
-  padding-top: ${props => {
-    props.inset ? mobileSize[props.inset] : mobileSize[props.vertical]
-  }};
-  padding-bottom: ${props => {
-    props.inset ? mobileSize[props.inset] : mobileSize[props.vertical]
-  }};
-  padding-left: ${props => {
-    props.inset ? mobileSize[props.inset] : mobileSize[props.horizontal]
-  }};
-  padding-right: ${props => {
-    props.inset ? mobileSize[props.inset] : mobileSize[props.horizontal]
-  }};
-  margin-bottom: ${props => {
-    !props.inline && !props.below && props.between
-      ? mobileSize[props.between]
-      : props.below ? mobileSize[props.below] : spacingBase + 'rem'
-  }};
-   > *:not(:last-child) {
-     margin-right: ${props =>
-       props.inline && props.between ? mobileSize[props.between] : spacingBase + 'rem'};
-}
+  flex-direction: ${props => (props.inline ? 'row' : 'column')};
+  padding-top: ${props => (props.inset ? mobileSize[props.inset] : mobileSize[props.vertical])};
+  padding-bottom: ${props => (props.inset ? mobileSize[props.inset] : mobileSize[props.vertical])};
+  padding-left: ${props => (props.inset ? mobileSize[props.inset] : mobileSize[props.horizontal])};
+  padding-right: ${props => (props.inset ? mobileSize[props.inset] : mobileSize[props.horizontal])};
+  margin-bottom: ${props =>
+    !props.inline && props.below && !props.between ? mobileSize[props.below] : '0rem'};
+  > *:not(:last-child) {
+    margin-bottom: ${props =>
+      !props.inline && !props.below && props.between ? mobileSize[props.between] : '0rem'};
+    margin-right: ${props => (props.inline && props.between ? mobileSize[props.between] : '0rem')};
+  }
 
   @media only screen and (min-width: ${breakpoints.md}px) {
-    padding-top: ${props => {
-      props.inset ? desktopSize[props.inset] : desktopSize[props.vertical]
-    }};
-    padding-bottom: ${props => {
-      props.inset ? desktopSize[props.inset] : desktopSize[props.vertical]
-    }};
-    padding-left: ${props => {
-      props.inset ? desktopSize[props.inset] : desktopSize[props.horizontal]
-    }};
-    padding-right: ${props => {
-      props.inset ? desktopSize[props.inset] : desktopSize[props.horizontal]
-    }};
-    margin-bottom: ${props => {
-      !props.inline && !props.below && props.between
-        ? desktopSize[props.between]
-        : props.below ? desktopSize[props.below] : spacingBase + 'rem'
-    }};
-     > *:not(:last-child) {
-    margin-right: ${props => desktopSize[props.between]};
+    padding-top: ${props => (props.inset ? desktopSize[props.inset] : desktopSize[props.vertical])};
+    padding-bottom: ${props =>
+      props.inset ? desktopSize[props.inset] : desktopSize[props.vertical]};
+    padding-left: ${props =>
+      props.inset ? desktopSize[props.inset] : desktopSize[props.horizontal]};
+    padding-right: ${props =>
+      props.inset ? desktopSize[props.inset] : desktopSize[props.horizontal]};
+    margin-bottom: ${props =>
+      !props.inline && props.below && !props.between ? desktopSize[props.below] : '0rem'};
+    > *:not(:last-child) {
+      margin-bottom: ${props =>
+        !props.inline && !props.below && props.between ? desktopSize[props.between] : '0rem'};
+      margin-right: ${props =>
+        props.inline && props.between ? desktopSize[props.between] : '0rem'};
     }
   }
 `
@@ -109,21 +102,18 @@ const Box = ({
   children,
   ...rest
 }) => {
-  return React.createElement(
-    StyledBoxTag,
-    {
-      ...safeRest(rest),
-      props: {
-        tag,
-        vertical,
-        horizontal,
-        inset,
-        below,
-        between,
-        inline,
-      },
-    },
-    children
+  return (
+    <StyledBoxTag
+      tag={tag}
+      vertical={vertical}
+      horizontal={horizontal}
+      inset={inset}
+      below={below}
+      between={between}
+      inline={inline}
+    >
+      {children}
+    </StyledBoxTag>
   )
 }
 
