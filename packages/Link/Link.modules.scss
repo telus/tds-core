@@ -1,16 +1,12 @@
 @import '~@tds/core-colours/colours';
 
 @mixin add-skinny-underline {
-  background: linear-gradient(transparent, transparent), linear-gradient(transparent, transparent),
-    linear-gradient(currentColor, currentColor);
-  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  background-position: 0 100%, 100% 100%, 0 100%;
+  border-bottom: 0.05em solid currentColor;
   text-decoration: none;
 }
 
 @mixin clear-skinny-underline {
-  background-size: 0.05em 1px, 0.05em 1px, 1px 0;
+  border-bottom: 0.05em solid transparent;
 }
 
 .underlineOnHover {
