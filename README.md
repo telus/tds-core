@@ -27,17 +27,14 @@ component styles. Webpack will bundle the TDS styles with your application speci
 ```js
 // index.js
 
-import React from 'react';
-import { render } from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
 
-import App from './App';
+import App from './App'
 
 import '@telusdigital/tds/dist/tds.css'
 
-render(
-  <App />,
-  document.getElementById("root")
-);
+render(<App />, document.getElementById('root'))
 ```
 
 ### 2. Use TDS Components
@@ -47,19 +44,17 @@ Now, use TDS components in your application components.
 ```js
 // MyLoadingCard.js
 
-import React from 'react';
+import React from 'react'
 
-import { Card, Spinner } from '@telusdigital/tds';
+import { Card, Spinner } from '@telusdigital/tds'
 
-const MyLoadingCard = ({loading, children}) => (
+const MyLoadingCard = ({ loading, children }) => (
   <div>
     {loading && <Spinner spinning={true} tip="Loading..." />}
 
-    <Card>
-      {children}
-    </Card>
+    <Card>{children}</Card>
   </div>
-);
+)
 ```
 
 ### 3. Use TDS Sass variables and mixins

@@ -1,37 +1,13 @@
 @import '../../scss/settings/colours';
 
-@mixin add-skinny-underline {
-  background:
-    linear-gradient(transparent, transparent),
-    linear-gradient(transparent, transparent),
-    linear-gradient(currentColor, currentColor);
-  background-size:
-    0.05em 1px,
-    0.05em 1px,
-    1px 1px;
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    repeat-x;
-  background-position:
-    0 100%,
-    100% 100%,
-    0 100%;
-  text-decoration: none;
-}
-
-@mixin clear-skinny-underline {
-  background-size: 0.05em 1px, 0.05em 1px, 1px 0;
-}
-
 .underlineOnHover {
   &:link,
   &:visited {
-    @include add-skinny-underline;
+    text-decoration: underline;
   }
 
   &:hover {
-    @include clear-skinny-underline;
+    text-decoration: none;
   }
 }
 
