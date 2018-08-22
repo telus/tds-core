@@ -52,14 +52,16 @@ const breakpoints = {
 }
 
 const StyledBoxTag = styled(BoxTag)`
-  display: flex;
-  flex-direction: ${props => (props.inline ? 'row' : 'column')};
+  display: ${props => (props.between ? 'flex' : 'initial')};
+  flex-direction: ${props =>
+    props.inline && props.between ? 'row' : props.between ? 'column' : 'initial'};
   padding-top: ${props => (props.inset ? mobileSize[props.inset] : mobileSize[props.vertical])};
   padding-bottom: ${props => (props.inset ? mobileSize[props.inset] : mobileSize[props.vertical])};
   padding-left: ${props => (props.inset ? mobileSize[props.inset] : mobileSize[props.horizontal])};
   padding-right: ${props => (props.inset ? mobileSize[props.inset] : mobileSize[props.horizontal])};
   margin-bottom: ${props =>
     !props.inline && props.below && !props.between ? mobileSize[props.below] : '0rem'};
+
   > *:not(:last-child) {
     margin-bottom: ${props =>
       !props.inline && !props.below && props.between ? mobileSize[props.between] : '0rem'};
@@ -76,6 +78,7 @@ const StyledBoxTag = styled(BoxTag)`
       props.inset ? desktopSize[props.inset] : desktopSize[props.horizontal]};
     margin-bottom: ${props =>
       !props.inline && props.below && !props.between ? desktopSize[props.below] : '0rem'};
+
     > *:not(:last-child) {
       margin-bottom: ${props =>
         !props.inline && !props.below && props.between ? desktopSize[props.between] : '0rem'};
