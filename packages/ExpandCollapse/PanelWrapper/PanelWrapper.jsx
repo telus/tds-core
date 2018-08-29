@@ -85,9 +85,10 @@ class PanelWrapper extends React.Component {
     return (
       <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
         <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlign}>
-          <Text size="large">{header}</Text>
-
-          {subtext && <Text size="small">{subtext}</Text>}
+          <div className={styles.fullWidth}>
+            <Text size="large">{header}</Text>
+            {subtext && <Text size="small">{subtext}</Text>}
+          </div>
         </Flexbox>
 
         {tertiaryText && (

@@ -141,18 +141,22 @@ exports[`Accordion renders a closed accordion 1`] = `
                               <div
                                 className="column headerAlign"
                               >
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="large"
+                                <div
+                                  className="fullWidth"
                                 >
-                                  <span
-                                    className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                  <Text
+                                    block={false}
+                                    bold={false}
+                                    invert={false}
+                                    size="large"
                                   >
-                                    Panel title
-                                  </span>
-                                </Text>
+                                    <span
+                                      className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                    >
+                                      Panel title
+                                    </span>
+                                  </Text>
+                                </div>
                               </div>
                             </Flexbox>
                           </div>
@@ -400,18 +404,22 @@ exports[`Accordion renders an open accordion 1`] = `
                               <div
                                 className="column headerAlign"
                               >
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="large"
+                                <div
+                                  className="fullWidth"
                                 >
-                                  <span
-                                    className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                  <Text
+                                    block={false}
+                                    bold={false}
+                                    invert={false}
+                                    size="large"
                                   >
-                                    Panel title
-                                  </span>
-                                </Text>
+                                    <span
+                                      className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                    >
+                                      Panel title
+                                    </span>
+                                  </Text>
+                                </div>
                               </div>
                             </Flexbox>
                           </div>

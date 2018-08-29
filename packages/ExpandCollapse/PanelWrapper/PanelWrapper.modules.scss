@@ -1,13 +1,16 @@
 @import '~@tds/core-colours/colours';
 @import '~@tds/core-responsive/responsive';
 
+.fullWidth { width: 100%; }
+
 .header {
-  width: 100%;
+  composes: fullWidth;
   text-align: left;
 }
 
 .headerAlign {
-  flex: 1;
+  flex: 1 1 auto;
+  composes: fullWidth;
   align-items: flex-start;
 }
 
