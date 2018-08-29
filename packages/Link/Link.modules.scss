@@ -1,21 +1,13 @@
 @import '~@tds/core-colours/colours';
 
-@mixin add-skinny-underline {
-  text-decoration: underline;
-}
-
-@mixin clear-skinny-underline {
-  text-decoration: none;
-}
-
 .underlineOnHover {
   &:link,
   &:visited {
-    @include add-skinny-underline;
+    text-decoration: underline;
   }
 
   &:hover {
-    @include clear-skinny-underline;
+    text-decoration: none;
   }
 }
 
