@@ -1,12 +1,11 @@
 @import '~@tds/core-colours/colours';
 
 @mixin add-skinny-underline {
-  border-bottom: 0.05em solid currentColor;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 @mixin clear-skinny-underline {
-  border-bottom: 0.05em solid transparent;
+  text-decoration: none;
 }
 
 .underlineOnHover {
