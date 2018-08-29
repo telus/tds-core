@@ -1,7 +1,8 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, render, mount } from 'enzyme'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
+import StandaloneIcon from '@tds/core-standalone-icon'
 import Paragraph from '@tds/core-paragraph'
 
 import Notification from '../Notification'
@@ -12,6 +13,8 @@ describe('<Notification />', () => {
     shallow(<Notification {...props}>{children}</Notification>)
   const doRender = (props = {}, children = defaultChildren) =>
     render(<Notification {...props}>{children}</Notification>)
+  const doMount = (props = {}, children = defaultChildren) =>
+    mount(<Notification {...props}>{children}</Notification>)
 
   it('renders', () => {
     const notification = doRender()
@@ -33,6 +36,11 @@ describe('<Notification />', () => {
 
     notification = doShallow({ variant: 'branded' })
     expect(notification.find(DecorativeIcon)).not.toExist()
+  })
+
+  it('does not have a dismiss icon by default', () => {
+    const notification = doShallow()
+    expect(notification.find(StandaloneIcon)).not.toExist()
   })
 
   describe('successful variant', () => {
@@ -77,5 +85,54 @@ describe('<Notification />', () => {
 
     expect(notification).not.toHaveProp('className', 'my-custom-class')
     expect(notification).not.toHaveProp('style')
+  })
+
+  describe('dismissible', () => {
+    it('adds a dismiss button', () => {
+      const notification = doMount({ dismissible: true, dismissibleA11yLabel: 'Close' })
+      expect(notification.find(StandaloneIcon)).toExist()
+    })
+
+    it('is accessible', () => {
+      const notification = doMount({ dismissible: true, dismissibleA11yLabel: 'Close' })
+      const icon = notification.find(StandaloneIcon)
+      expect(icon.props().a11yText).toBe('Close')
+    })
+
+    it('should use a purple X on a default notification', () => {
+      const notification = doMount({ dismissible: true, dismissibleA11yLabel: 'Close' })
+      const icon = notification.find(StandaloneIcon)
+      expect(icon.props().variant).toBe('secondary')
+    })
+
+    it('should use a grey X on a branded notification', () => {
+      const notification = doMount({
+        variant: 'branded',
+        dismissible: true,
+        dismissibleA11yLabel: 'Close',
+      })
+      const icon = notification.find(StandaloneIcon)
+      expect(icon.props().variant).toBeUndefined()
+    })
+
+    it('should use a grey X on a success notification', () => {
+      const notification = doMount({
+        variant: 'success',
+        dismissible: true,
+        dismissibleA11yLabel: 'Close',
+      })
+      const icon = notification.find(StandaloneIcon)
+      expect(icon.props().variant).toBeUndefined()
+    })
+
+    it('should use a grey X on an error notification', () => {
+      const notification = doMount({
+        variant: 'error',
+        dismissible: true,
+        dismissibleA11yLabel: 'Close',
+      })
+      const icon = notification.find(StandaloneIcon)
+      expect(icon.props().variant).toBeUndefined()
+    })
   })
 })
