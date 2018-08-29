@@ -1,5 +1,9 @@
 @import '~@tds/core-colours/colours';
 
+.base {
+  position: relative;
+}
+
 .instructional {
   composes: default from '../../shared/styles/Messaging.modules.scss';
 }
@@ -22,4 +26,10 @@
 
 .withIcon {
   width: calc(100% - 2.5rem);
+}
+
+.dismiss {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
 }
