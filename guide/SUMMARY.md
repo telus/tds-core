@@ -17,6 +17,7 @@
 * [Design Principles](design/principles.md)
 * [Accessibility](accessibility/accessibility.md)
   * [Colour and contrast](accessibility/colour-contrast.md)
+  * [Responsive content](accessibility/responsive-content.md)
   * [Keyboard navigation](accessibility/keyboard-nav.md)
   * [Screen readers](accessibility/screen-readers.md)
   * [Content](accessibility/content.md)

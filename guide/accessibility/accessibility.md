@@ -3,6 +3,7 @@
 The TDS documentation is a starting point for accessibility information.
 
 * [Colour and contrast](./colour-contrast.md)
+* [Responsive content](./responsive-content.md)
 * [Keyboard navigation](./keyboard-nav.md)
 * [Screen readers](./screen-readers.md)
 * [Content](./content.md)
