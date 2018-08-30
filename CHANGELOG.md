@@ -1,3 +1,9 @@
+#### 1.0.21 (2018-08-30)
+
+##### Bug Fixes
+
+* **core-link:**  prevent link underline from hiding when zooming out ([02c788da](https://github.com/telusdigital/tds/commit/02c788da9fa029d72d8d68f7e5f05c9a1eee8325))
+
 #### 1.0.20 (2018-08-09)
 
 ##### Bug Fixes
