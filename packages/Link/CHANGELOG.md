@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/telusdigital/tds/compare/@tds/core-link@1.0.2...@tds/core-link@1.0.3) (2018-08-30)
+
+
+### Bug Fixes
+
+* **core-link:** clean up css ([afaaa55](https://github.com/telusdigital/tds/commit/afaaa55))
+* **core-link:** prevent link underline from hiding when zooming out ([48b5647](https://github.com/telusdigital/tds/commit/48b5647))
+* **core-link:** use text-decoration: underline ([a045d83](https://github.com/telusdigital/tds/commit/a045d83))
+
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/telusdigital/tds/compare/@tds/core-link@1.0.1...@tds/core-link@1.0.2) (2018-04-26)
 
