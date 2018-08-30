@@ -89,7 +89,7 @@ class PanelWrapper extends React.Component {
             <Text size="large">{header}</Text>
           </div>
           {subtext && (
-            <div className={styles.fullWidth}>
+            <div className={styles.subtextContainer}>
               <Text size="small">{subtext}</Text>
             </div>
           )}

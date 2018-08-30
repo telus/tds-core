@@ -1,7 +1,13 @@
 @import '~@tds/core-colours/colours';
 @import '~@tds/core-responsive/responsive';
 
-.fullWidth { width: 100%; }
+.fullWidth {
+  width: 100%;
+}
+
+.subtextContainer {
+  line-height: 1px;
+}
 
 .header {
   composes: fullWidth;
