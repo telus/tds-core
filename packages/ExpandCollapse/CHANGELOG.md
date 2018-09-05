@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.1.1...@tds/core-expand-collapse@1.1.2) (2018-09-05)
+
+
+### Bug Fixes
+
+* **core-expand-collapse:** fix header overflow on tertiary text for IE11 ([fbf58be](https://github.com/telusdigital/tds/commit/fbf58be))
+* **core-expand-collapse:** fix subtext wrapping ([fc31d74](https://github.com/telusdigital/tds/commit/fc31d74))
+* **core-expand-collapse:** fix subtext wrapping ([d9642aa](https://github.com/telusdigital/tds/commit/d9642aa))
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.1.0...@tds/core-expand-collapse@1.1.1) (2018-07-16)
 
