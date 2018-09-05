@@ -123,7 +123,7 @@
     "rollup-plugin-postcss": "^1.6.1",
     "s3-website": "^3.1.2",
     "sass-loader": "^7.0.0",
-    "style-loader": "^0.22.0",
+    "style-loader": "^0.23.0",
     "stylelint": "^9.3.0",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended-scss": "^3.1.0",
