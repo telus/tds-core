@@ -1,0 +1,15 @@
+language: node_js
+node_js: 8
+os: osx
+addons:
+  chrome: stable
+  artifacts: true
+before_script:
+  - npm run ci:build
+  - npm run dev:e2e &
+script:
+  - npm-run-all --parallel test lint
+  - npm run test:e2e -- --all
+cache:
+  directories:
+    - node_modules
