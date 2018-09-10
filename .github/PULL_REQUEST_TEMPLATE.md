@@ -3,7 +3,7 @@
 
   When opening pull requests, be sure NOT to include any private or personal
   information such as secrets, passwords, or any source code that involves
-  data retrieval. 
+  data retrieval.
 -->
 
 ## Related issues
@@ -19,11 +19,6 @@ See <!-- put issue number here, or delete this section -->
 * Patch 1
 * Patch 2
 
-## Package changes
-
-```
-Run `yarn prepr` locally and paste its output here, even when there are no changes
-```
 
 ## Checklist before submitting pull request
 
@@ -31,4 +26,3 @@ Run `yarn prepr` locally and paste its output here, even when there are no chang
 * Commits follow our [Developer Guide](https://tds.telus.com/contributing/developer-guide.html#make-a-commit)
 * [ ] For code changes, run `yarn prepr` locally
   * make sure visual and accessibility tests pass
-  * paste the lerna version output
