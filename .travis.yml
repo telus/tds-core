@@ -1,0 +1,18 @@
+language: node_js
+node_js: 8
+os: osx
+addons:
+  chrome: stable
+before_script:
+  - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then git fetch origin refs/heads/master:refs/heads/master; git checkout -b "$TRAVIS_PULL_REQUEST_BRANCH" ; fi
+  - npm run ci:build
+  - npm run dev:e2e &
+script:
+  - npm-run-all --parallel test lint
+  - npm run test:e2e -- --all
+after_success:
+  - node scripts/prePr.js --conventional-commits --yes
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then node ./scripts/travis/github-pr.js ; fi'
+cache:
+  directories:
+    - node_modules
