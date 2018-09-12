@@ -3,7 +3,6 @@ node_js: 8
 os: osx
 addons:
   chrome: stable
-  artifacts: true
 before_script:
   - npm run ci:build
   - npm run dev:e2e &
