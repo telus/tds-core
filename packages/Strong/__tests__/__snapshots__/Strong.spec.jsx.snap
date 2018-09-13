@@ -3,6 +3,7 @@
 exports[`Strong renders 1`] = `
 <strong
   className="boldFont"
+  foo="bar"
 >
   Some content
 </strong>
