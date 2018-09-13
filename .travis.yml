@@ -4,6 +4,7 @@ os: osx
 addons:
   chrome: stable
 before_script:
+  - git checkout ${TRAVIS_BRANCH}
   - npm run ci:build
   - npm run dev:e2e &
 script:
