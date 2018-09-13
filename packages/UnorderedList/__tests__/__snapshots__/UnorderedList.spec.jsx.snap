@@ -2,17 +2,25 @@
 
 exports[`<UnorderedList /> renders 1`] = `
 <ul
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D base"
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D base medium"
 >
   <li
-    class="circle"
+    class="circle medium"
   >
-    Lorem ipsum
+    <span
+      class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+    >
+      Lorem ipsum
+    </span>
   </li>
   <li
-    class="circle"
+    class="circle medium"
   >
-    Dolor sit amet
+    <span
+      class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+    >
+      Dolor sit amet
+    </span>
   </li>
 </ul>
 `;
