@@ -14,14 +14,17 @@ exports[`MarkdownHeading can render an ordered list 1`] = `
   >
     <OrderedList
       listStyle="decimal"
+      size="medium"
     >
       <OrderedList.Item
         key=".0"
+        size="medium"
       >
         Item 1
       </OrderedList.Item>
       <OrderedList.Item
         key=".1"
+        size="medium"
       >
         Item 1
       </OrderedList.Item>
@@ -44,16 +47,19 @@ exports[`MarkdownHeading can render an unordered list 1`] = `
   >
     <UnorderedList
       listStyle="circle"
+      size="medium"
     >
       <UnorderedList.Item
         key=".0"
         listStyle="circle"
+        size="medium"
       >
         Item 1
       </UnorderedList.Item>
       <UnorderedList.Item
         key=".1"
         listStyle="circle"
+        size="medium"
       >
         Item 1
       </UnorderedList.Item>
