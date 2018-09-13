@@ -11,7 +11,7 @@ import styles from '../../shared/styles/Typography/Typography.modules.scss'
  * @version ./package.json
  */
 const Strong = ({ children, ...rest }) => (
-  <strong {...safeRest(rest)} className={styles.boldFont}>
+  <strong {...safeRest(rest)} foo="bar" className={styles.boldFont}>
     {children}
   </strong>
 )
