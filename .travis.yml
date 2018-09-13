@@ -4,7 +4,8 @@ os: osx
 addons:
   chrome: stable
 before_script:
-  - git checkout ${TRAVIS_PULL_REQUEST_BRANCH}
+  - git fetch origin refs/heads/master:refs/heads/master
+  - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then git checkout -b "$TRAVIS_PULL_REQUEST_BRANCH" ; fi
   - npm run ci:build
   - npm run dev:e2e &
 script:
