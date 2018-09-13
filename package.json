@@ -31,13 +31,14 @@
     "gitbook": "gitbook serve guide",
     "gitbook:install": "gitbook install guide",
     "lerna:publish": "node scripts/publish.js",
+    "lerna:updated": "node scripts/prePr.js --conventional-commits --yes",
     "lint:js": "eslint packages shared config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
     "lint": "npm-run-all --parallel lint:*",
     "precommit": "lint-staged && yarn test && yarn contributors:update",
     "prepare": "yarn gitbook:install",
-    "prepr": "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
+    "prepr": "yarn test:e2e && yarn lerna:updated",
     "prepush": "yarn ci:build && npm-run-all --parallel test lint build-docs:*",
     "scaffold": "node scripts/scaffold.js",
     "test:e2e": "node scripts/e2e.js",
@@ -49,7 +50,7 @@
     "type": "git",
     "url": "git+https://github.com/telusdigital/tds-core.git"
   },
-  "author": "TELUS digital",
+"author": "TELUS digital",
   "engines": {
     "node": ">=8"
   },

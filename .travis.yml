@@ -9,6 +9,8 @@ before_script:
 script:
   - npm-run-all --parallel test lint
   - npm run test:e2e -- --all
+after_success:
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then node ./scripts/travis/github-pr.js --github-token=${GITHUB_TOKEN} --repo=${TRAVIS_REPO_SLUG} --pull-request=${TRAVIS_PULL_REQUEST}; fi'
 cache:
   directories:
     - node_modules
