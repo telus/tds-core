@@ -3,10 +3,12 @@ import PropTypes from 'prop-types'
 
 import Text from '@tds/core-text'
 
-import safeRest from '../../shared/utils/safeRest'
+import safeRest from '../../../shared/utils/safeRest'
+
+import styles from './OrderedItem.modules.scss'
 
 const OrderedItem = ({ children, size, ...rest }) => (
-  <li {...safeRest(rest)}>
+  <li {...safeRest(rest)} className={styles.base}>
     <Text size={size}>{children}</Text>
   </li>
 )
