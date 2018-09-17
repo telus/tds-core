@@ -21,19 +21,19 @@
   }
   &.small {
     &::before {
-      font-size: 12px;
+      font-size: 0.75rem;
     }
   }
 
   &.medium {
     &::before {
-      font-size: 15px;
+      font-size: 0.9rem;
     }
   }
 
   &.large {
     &::before {
-      font-size: 18px;
+      font-size: 1.12rem;
     }
   }
 }
@@ -42,7 +42,7 @@
   composes: item;
 
   &::before {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     content: '\f101';
     color: $color-primary;
   }
@@ -52,7 +52,7 @@
   composes: item;
 
   &::before {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     content: '\f104';
     color: $color-cardinal;
   }
