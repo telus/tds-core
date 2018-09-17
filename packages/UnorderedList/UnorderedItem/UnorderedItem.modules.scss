@@ -7,7 +7,7 @@
   &::before {
     display: block;
     position: absolute;
-    left: -1.5rem;
+    left: -2rem;
     font-family: $font-icons;
   }
 }
@@ -16,29 +16,24 @@
   composes: item;
 
   &::before {
-    content: '';
-    border-radius: 50%;
-    top: 0.6rem;
-    background-color: $color-telus-purple;
+    content: '\002022';
+    color: $color-telus-purple;
   }
   &.small {
     &::before {
-      width: 0.25rem;
-      height: 0.25rem;
+      font-size: 12px;
     }
   }
 
   &.medium {
     &::before {
-      width: 0.3125rem;
-      height: 0.3125rem;
+      font-size: 15px;
     }
   }
 
   &.large {
     &::before {
-      width: 0.375rem;
-      height: 0.375rem;
+      font-size: 18px;
     }
   }
 }
