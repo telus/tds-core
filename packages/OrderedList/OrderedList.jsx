@@ -7,9 +7,10 @@ import Box from '@tds/core-box'
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
 
-import OrderedItem from './OrderedItem'
+import OrderedItem from './OrderedItem/OrderedItem'
 
 import styles from './OrderedList.modules.scss'
+import typographyStyle from '../../shared/styles/Typography/Typography.modules.scss'
 
 const injectListStyle = (child, size) => React.cloneElement(child, { size })
 
@@ -22,7 +23,7 @@ const OrderedList = ({ listStyle, size, children, ...rest }) => {
       {...safeRest(rest)}
       tag="ol"
       between={2}
-      dangerouslyAddClassName={joinClassNames(styles[listStyle], styles[size])}
+      dangerouslyAddClassName={joinClassNames(styles[listStyle], typographyStyle[size])}
     >
       {React.Children.map(children, child => injectListStyle(child, size))}
     </Box>
