@@ -148,16 +148,20 @@
     "bracketSpacing": true
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --ext '.js,.jsx' --config config/eslint.config.js --quiet --fix",
-      "git add"
-    ],
-    "*.scss": "stylelint --config config/stylelint.config.js",
-    "*.md": [
-      "prettier --write",
-      "git add"
-    ],
-    "*": "echint"
+    "linters": {
+      "*.{js,jsx}": [
+        "eslint --ext '.js,.jsx' --config config/eslint.config.js --quiet --fix",
+        "git add"
+      ],
+      "*.scss": "stylelint --config config/stylelint.config.js",
+      "*.md": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/*.{png,jpeg,jpg}"
+    ]
   },
   "echint": {
     "ignore": [
