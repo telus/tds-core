@@ -36,20 +36,41 @@ heading with a visual level 2 and `<h2>` tag. To maintain order of information i
 the use of a smaller heading level while still rendering an `<h3>` tag.
 
 ```jsx
-<Box between={3}>
-  <Heading level="h2">Phone description</Heading>
+<FlexGrid>
+  <FlexGrid.Row xsReverse={true} smReverse={true} mdReverse={false}>
+    <FlexGrid.Col xs={12} md={0}>
+      <Image src="aside-image.jpg" />
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={12} md={6}>
+      <Box between={3}>
+        <Box between={4}>
+          {/* Heading level 4 with an h1 tag */}
+          <Heading level="h4" tag="h1">
+            Consider this: $0 first month
+          </Heading>
 
-  <Paragraph>Our best phone yet.</Paragraph>
+          {/* Heading level 4 with an h3 tag */}
+          <Heading level="h1" tag="h2">
+            Stream live TV on any screen with Pik TV
+          </Heading>
+        </Box>
 
-  {/* Heading level 4 with an h3 tag */}
-  <Heading level="h4" tag="h3">
-    Specifications
-  </Heading>
+        <Text>
+          Stream live TV or On Demand shows and movies on any screen with TELUS Pik TV<Text.Sup>
+            TM
+          </Text.Sup>. Get Pik TV from just $10 a month, and get your first month for $0<Text.Sup>
+            1
+          </Text.Sup> when you sign up.
+        </Text>
 
-  <UnorderedList>
-    <UnorderedList.Item>4-Core CPU</UnorderedList.Item>
-    <UnorderedList.Item>13 Megapixel Camera</UnorderedList.Item>
-    <UnorderedList.Item>All-day battery life</UnorderedList.Item>
-  </UnorderedList>
-</Box>
+        <div>
+          <ButtonLink>Get Started</ButtonLink>
+        </div>
+      </Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={0} md={6}>
+      <Image src="aside-image.jpg" />
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
 ```
