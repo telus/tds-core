@@ -16,24 +16,31 @@
   composes: item;
 
   &::before {
-    content: '\002022';
+    content: '';
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==);
     color: $color-telus-purple;
   }
   &.small {
     &::before {
-      font-size: 0.75rem;
+      width: 0.25rem; // ~4px
+      height: 0.25rem; // ~4px
+      top: 0.63rem;
     }
   }
 
   &.medium {
     &::before {
-      font-size: 0.9rem;
+      width: 0.31rem; // ~5px
+      height: 0.31rem; // ~5px
+      top: 0.65rem;
     }
   }
 
   &.large {
     &::before {
-      font-size: 1.12rem;
+      width: 0.37rem; // ~6px
+      height: 0.37rem; // ~6px
+      top: 0.87rem;
     }
   }
 }
