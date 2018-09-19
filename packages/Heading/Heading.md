@@ -31,9 +31,13 @@ levels; for example, have an h2 element directly follow an h1, or an h3 directly
 assistive technology to navigate through content predictably since headings represent information
 hierarchy.
 
-TELUS pages may require the use of smaller heading styles, such as a `Heading` with level 4, but it may follow a
-heading with a visual level 2 and `<h2>` tag. To maintain order of information in this example, designers can propose
-the use of a smaller heading level while still rendering an `<h3>` tag.
+In the example below, the content would appear at the top of a page, as a Promo.
+
+* The first line of text (Consider this...) appears as a visual heading 4, but renders with an `<h1>` tag
+* The second line of text (Stream live...) appears as a visual heading 1, but renders with an `<h2>`
+
+When we provide different heading tags, the heading hierarchy is in order for assistive technology, but we are able
+to have a different visual hierarchy of text.
 
 ```jsx
 <FlexGrid>
