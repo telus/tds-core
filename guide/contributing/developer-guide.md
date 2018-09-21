@@ -52,7 +52,7 @@ yarn scaffold MyComponent
 
 ## Make a commit
 
-To view a guide on how TDS components are versioned, see our [FAQ](../faq.md#how-is-tds-versioned).  
+To view a guide on how TDS components are versioned, see our [FAQ](../faq.md#how-is-tds-versioned).
 To view TELUS standards for commit format, see our [contribution model][contribution-model] on the Reference Architecture.
 
 We use [commitizen](https://github.com/commitizen/cz-cli) and [commitlint](https://github.com/marionebl/commitlint) to
@@ -78,7 +78,7 @@ footer
 
 Use the `type` field to inform lerna what Conventional Commit you intend to use:
 
-* For breaking changes, use the **feat** commit type with body text that begins with the phrase "BREAKING CHANGE"
+* For breaking changes, use the **feat** commit type with body text that begins with the phrase "BREAKING CHANGE:"
 * For minor changes, use the **feat** commit type
 * For patches, use the **fix** commit type
 
