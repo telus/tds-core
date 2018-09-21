@@ -43,7 +43,7 @@ to have a different visual hierarchy of text.
 <FlexGrid>
   <FlexGrid.Row xsReverse={true} smReverse={true} mdReverse={false}>
     <FlexGrid.Col xs={12} md={0}>
-      <Image src="aside-image.jpg" />
+      <Image src="aside-image.jpg" alt="" width={1580} height={1264} />
     </FlexGrid.Col>
     <FlexGrid.Col xs={12} md={6}>
       <Box between={3}>
@@ -73,7 +73,7 @@ to have a different visual hierarchy of text.
       </Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={0} md={6}>
-      <Image src="aside-image.jpg" />
+      <Image src="aside-image.jpg" alt="" width={1580} height={1264} />
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
