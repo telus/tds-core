@@ -20,7 +20,7 @@ Learn more about the design system, design principles, contribution flow, our su
 ```
 
 ```jsx noeditor
-<ChevronLink variant="primary" href="../getting-started/developers.html">Community Components</ChevronLink>
+<ChevronLink variant="primary" href="../community/">Community Components</ChevronLink>
 ```
 
 ```jsx noeditor
