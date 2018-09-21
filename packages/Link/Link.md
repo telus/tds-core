@@ -34,6 +34,9 @@ import { Link as ReactRouterLink } from 'react-router'
 
 import { Link as TdsLink } from '@telusdigital/tds'
 
+// If you're importing from @tds instead of telusdigital
+// import TdsLink from '@tds/core-link';
+
 const LinkWrapper = ({ children, ...rest }) => (
   <TdsLink
     {...rest}
