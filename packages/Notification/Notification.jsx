@@ -11,6 +11,7 @@ import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
 import Fade from '../../shared/components/Animation/Fade'
 import Reveal from '../../shared/components/Animation/Reveal'
+import { warn } from '../../shared/utils/warn'
 
 import styles from './Notification.modules.scss'
 
@@ -64,7 +65,7 @@ class Notification extends React.Component {
     return (
       <Box
         {...safeRest(rest)}
-        inset={3}
+        vertical={3}
         dangerouslyAddClassName={joinClassNames(styles.base, styles[variant])}
       >
         <FlexGrid>
@@ -99,6 +100,15 @@ class Notification extends React.Component {
   }
 
   render() {
+    if (
+      (this.props.dismissible || this.props.dismissibleA11yLabel) &&
+      !(this.props.dismissible && this.props.dismissibleA11yLabel)
+    ) {
+      warn(
+        'Notification',
+        'The props `dismissible` and `dismissibleA11yLabel` must be used together.'
+      )
+    }
     if (this.props.dismissible) {
       return (
         <Reveal
