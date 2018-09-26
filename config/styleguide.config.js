@@ -90,6 +90,7 @@ module.exports = {
       Heading: 'Heading',
       'Text/TextSup': 'Text',
       'TextArea/TextArea': 'TextArea',
+      Breadcrumbs: 'Breadcrumbs',
     }
 
     const componentDirectory = path.dirname(componentPath)
@@ -184,6 +185,17 @@ module.exports = {
         },
         {
           name: 'Links',
+          sections: [
+            {
+              name: 'Breadcrumb',
+              components() {
+                return [
+                  path.resolve('packages/Breadcrumbs/Breadcrumbs.jsx'),
+                  path.resolve('packages/Breadcrumbs/Item/Item.jsx'),
+                ]
+              },
+            },
+          ],
           components() {
             return [
               path.resolve('packages/Link/Link.jsx'),

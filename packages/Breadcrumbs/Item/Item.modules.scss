@@ -1,0 +1,50 @@
+@import '~@tds/core-colours/colours';
+@import '~@tds/core-responsive/responsive';
+
+.item {
+  display: inline;
+  composes: small from from '../../../shared/styles/Typography/Typography.modules.scss';
+
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 0.8em;
+    transform: rotate(15deg);
+    border-right: 1px solid currentColor;
+    margin: 0 0.3rem;
+  }
+}
+
+@include mq($from: md) {
+  .item {
+    composes: medium from from '../../../shared/styles/Typography/Typography.modules.scss';
+  }
+}
+
+.linkItem {
+  composes: item;
+  color: $color-shuttle-grey;
+}
+
+.lastItem {
+  composes: item;
+  color: $color-telus-purple;
+  font-weight: bold;
+
+  &:after {
+    content: '';
+    border-right: 0;
+    margin: 0;
+  }
+}
+
+.lastLink {
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
