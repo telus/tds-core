@@ -11,8 +11,7 @@ script:
   - npm-run-all --parallel test lint
   - npm run test:e2e -- --all
 after_success:
-  - node scripts/prePr.js --conventional-commits --yes
-  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then node ./scripts/travis/github-pr.js ; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then node scripts/prePr.js --conventional-commits --yes ; node ./scripts/travis/github-pr.js ; fi'
 cache:
   directories:
     - node_modules
