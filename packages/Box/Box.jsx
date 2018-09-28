@@ -34,7 +34,11 @@ const getBetweenClasses = (scale, inline) => {
 const Box = ({
   tag,
   vertical,
+  top,
+  bottom,
   horizontal,
+  left,
+  right,
   inset,
   below,
   between,
@@ -45,10 +49,18 @@ const Box = ({
 }) => {
   const xSize = inset || horizontal
   const ySize = inset || vertical
+  const leftSize = inset || left
+  const rightSize = inset || right
+  const topSize = inset || top
+  const bottomSize = inset || bottom
 
   const classes = joinClassNames(
     getClassName('padding', 'horizontal', xSize),
+    getClassName('padding', 'left', leftSize),
+    getClassName('padding', 'right', rightSize),
     getClassName('padding', 'vertical', ySize),
+    getClassName('padding', 'top', topSize),
+    getClassName('padding', 'bottom', bottomSize),
     getClassName('margin', 'bottom', below),
     getBetweenClasses(between, inline),
     dangerouslyAddClassName
@@ -67,9 +79,25 @@ Box.propTypes = {
    */
   vertical: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
+   * Indent content from the container's top edge by applying padding.
+   */
+  top: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  /**
+   * Indent content from the container's bottom edge by applying padding.
+   */
+  bottom: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  /**
    * Indent content from the container's left and right edge by applying padding.
    */
   horizontal: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  /**
+   * Indent content from the container's left edge by applying padding.
+   */
+  left: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  /**
+   * Indent content from the container's right edge by applying padding.
+   */
+  right: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
   /**
    * Indent content from all of the container's edges by applying padding.
    */
@@ -112,7 +140,11 @@ Box.defaultProps = {
   inline: false,
   tag: 'div',
   vertical: undefined,
+  top: undefined,
+  bottom: undefined,
   horizontal: undefined,
+  left: undefined,
+  right: undefined,
   inset: undefined,
   below: undefined,
   between: undefined,

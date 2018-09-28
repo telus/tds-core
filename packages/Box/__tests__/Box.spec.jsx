@@ -48,6 +48,29 @@ describe('Box', () => {
       box = doShallow({ vertical: 2, horizontal: 3 })
       expect(box).toHaveClassName('verticalPadding-2 horizontalPadding-3')
     })
+
+    it('can be either top, bottom, left, or right', () => {
+      let box = doShallow({ top: 1 })
+      expect(box).toHaveClassName('topPadding-1')
+
+      box = doShallow({ bottom: 1 })
+      expect(box).toHaveClassName('bottomPadding-1')
+
+      box = doShallow({ left: 1 })
+      expect(box).toHaveClassName('leftPadding-1')
+
+      box = doShallow({ right: 1 })
+      expect(box).toHaveClassName('rightPadding-1')
+
+      box = doShallow({ top: 2, right: 3 })
+      expect(box).toHaveClassName('topPadding-2 rightPadding-3')
+
+      box = doShallow({ top: 2, right: 3, bottom: 4 })
+      expect(box).toHaveClassName('topPadding-2 rightPadding-3')
+
+      box = doShallow({ top: 2, right: 3, bottom: 4, left: 5 })
+      expect(box).toHaveClassName('topPadding-2 rightPadding-3 bottomPadding-4 leftPadding-5')
+    })
   })
 
   describe('between', () => {

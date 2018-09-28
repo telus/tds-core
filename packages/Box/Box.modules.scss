@@ -44,11 +44,39 @@ $desktop: (
     }
   }
 
+  .topPadding-#{$level} {
+    padding-top: $mobileValue;
+    @include mq($from: md) {
+      padding-top: $desktopValue;
+    }
+  }
+
+  .bottomPadding-#{$level} {
+    padding-bottom: $mobileValue;
+    @include mq($from: md) {
+      padding-bottom: $desktopValue;
+    }
+  }
+
   .horizontalPadding-#{$level} {
     padding-left: $mobileValue;
     padding-right: $mobileValue;
     @include mq($from: md) {
       padding-left: $desktopValue;
+      padding-right: $desktopValue;
+    }
+  }
+
+  .leftPadding-#{$level} {
+    padding-left: $mobileValue;
+    @include mq($from: md) {
+      padding-left: $desktopValue;
+    }
+  }
+
+  .rightPadding-#{$level} {
+    padding-right: $mobileValue;
+    @include mq($from: md) {
       padding-right: $desktopValue;
     }
   }
