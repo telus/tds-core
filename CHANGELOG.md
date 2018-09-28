@@ -1,3 +1,9 @@
+#### 1.0.22 (2018-09-28)
+
+##### Bug Fixes
+
+* **core-heading:**  reduce h2 character spacing ([af6b551f](https://github.com/telusdigital/tds/commit/af6b551fad4aa1a3d31f3b3772778343678bc5db))
+
 #### 1.0.21 (2018-08-30)
 
 ##### Bug Fixes
