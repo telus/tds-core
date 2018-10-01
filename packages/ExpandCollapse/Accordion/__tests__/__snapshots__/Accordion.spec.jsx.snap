@@ -215,7 +215,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                       tag="div"
                     >
                       <div
-                        className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-4___QMNNa"
+                        className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__leftPadding-4___3mnFs TDS_Box-modules__rightPadding-4___1JQlq TDS_Box-modules__verticalPadding-4___QMNNa TDS_Box-modules__topPadding-4___hDDLi TDS_Box-modules__bottomPadding-4___1bH8J"
                       >
                         <Text
                           block={true}
@@ -477,7 +477,7 @@ exports[`Accordion renders an open accordion 1`] = `
                       tag="div"
                     >
                       <div
-                        className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-4___QMNNa"
+                        className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__leftPadding-4___3mnFs TDS_Box-modules__rightPadding-4___1JQlq TDS_Box-modules__verticalPadding-4___QMNNa TDS_Box-modules__topPadding-4___hDDLi TDS_Box-modules__bottomPadding-4___1bH8J"
                       >
                         <Text
                           block={true}

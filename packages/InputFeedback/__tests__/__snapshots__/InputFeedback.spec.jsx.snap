@@ -2,7 +2,7 @@
 
 exports[`InputFeedback renders 1`] = `
 <div
-  class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 default"
+  class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__leftPadding-3___3_cxL TDS_Box-modules__rightPadding-3___3Ywf_ TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__topPadding-3___1gwGh TDS_Box-modules__bottomPadding-3___3L055 default"
 >
   Some inputFeedback text.
 </div>
