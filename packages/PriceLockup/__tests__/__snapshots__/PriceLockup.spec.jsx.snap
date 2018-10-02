@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriceLockup renders 1`] = `
+<div>
+  <span
+    className="priceLabel priceLabel--medium"
+  />
+  <div>
+    <PriceValueSign
+      signDirection="left"
+    />
+    <span
+      className="priceRate priceRate--medium"
+    />
+  </div>
+  <div
+    className="priceBottomLabel priceBottomLabel--medium"
+  />
+</div>
+`;

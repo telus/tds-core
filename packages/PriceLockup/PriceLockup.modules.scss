@@ -1,0 +1,66 @@
+.priceWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.priceLabel,
+.priceLabel--medium,
+.priceBottomLabel,
+.priceBottomLabel--medium {
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 230px;
+  word-wrap: break-word;
+}
+
+.priceBottomLabel {
+  font-weight: 400
+}
+
+.priceLabel--large {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.priceSign {
+  font-size: 16px;
+  vertical-align: 5px;
+  padding-right: 1px;
+}
+
+.priceSign--medium {
+  font-size: 21px;
+  vertical-align: 15px;
+}
+
+.priceSign--large {
+  font-size: 46px;
+  vertical-align: 17px;
+}
+
+.priceValue {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.priceValue--medium {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.priceValue--large {
+  font-size: 70px;
+  font-weight: 300;
+}
+
+.priceRate, .priceRate--medium {
+  font-size: 14px;
+}
+
+.priceRate--large {
+  font-size: 19px;
+}
+
+.priceValue--bold {
+  font-weight: 500;
+}
