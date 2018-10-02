@@ -40,8 +40,8 @@ const PriceLockup = ({
 
   const priceValueClass = joinClassNames(
     styles.priceValue,
-    priceBold ? 'priceValue--bold' : '',
-    priceStyle('priceValue', size)
+    priceStyle('priceValue', size),
+    priceBold ? styles['priceValue--bold'] : ''
   )
 
   const priceRateClass = joinClassNames(styles.priceRate, priceStyle('priceRate', size))
