@@ -109,6 +109,10 @@ PriceLockup.propTypes = {
 PriceLockup.defaultProps = {
   size: 'medium',
   signDirection: 'left',
+  topLabel: '',
+  bottomLabel: '',
+  rateLabel: '',
+  priceBold: false,
 }
 
 export default PriceLockup
