@@ -13,10 +13,10 @@ By default, notifications will be displayed in the `instructional` variant.
 
 ### Usage criteria
 
-* The message of a notification must be text content only. You may use text-based styling such as bold text or links. Do
+- The message of a notification must be text content only. You may use text-based styling such as bold text or links. Do
   not use other complex components or paragraphs.
-* Use complete sentences, while keeping the content succinct.
-* Dismissible notifications should only be used for branded or general style notifications where there is no action needed from the user.
+- Use complete sentences, while keeping the content succinct.
+- Dismissible notifications should only be used for branded or general style notifications where there is no action needed from the user.
 
 ### Communicating with notifications
 
@@ -50,13 +50,14 @@ bold to indicate its importance.**
 ```jsx { "props": { "className": "docs_full-width-playground" } }
 <Notification variant="error">
   Looks like our registration system is temporarily down. You’ll need to come back another time to
-  register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>.
+  register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>
+  .
 </Notification>
 ```
 
 ### Dismissible
 
-Use the `dismissible` prop to allow users to dismiss the `Notification` at any time. The `dismissible` prop must be used together with the `dismissibleA11yLabel` to remain accessibile. Once dismissed, the `Notification` is removed from the DOM.
+Use the `dismissible` prop to allow users to dismiss the `Notification` at any time. The `dismissible` prop must be used together with the `dismissibleA11yLabel` to remain accessible. Once dismissed, the `Notification` is removed from the DOM.
 
 ```jsx { "props": { "className": "docs_full-width-playground" } }
 <Notification variant="branded" dismissible dismissibleA11yLabel="Close">
