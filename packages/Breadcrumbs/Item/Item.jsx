@@ -9,7 +9,6 @@ import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/
 import styles from './Item.modules.scss'
 import linkStyles from '../../Link/Link.modules.scss'
 
-
 const renderLastLink = (href, children) => (
   <a
     href={href}
@@ -70,6 +69,7 @@ Item.propTypes = {
 Item.defaultProps = {
   reactRouterLinkComponent: undefined,
   isLast: false,
+  mainId: undefined,
 }
 
 export default Item

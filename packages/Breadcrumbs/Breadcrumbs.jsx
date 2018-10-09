@@ -89,7 +89,7 @@ Breadcrumbs.propTypes = {
     })
   ),
   /**
-  * The in-page link to the current page. This will be the href of the last item in the `<Breadcrumbs>`. The mainId property will be passed down from from the parent `<Breadcrumbs>`.
+   * The in-page link to the current page. This will be the href of the last item in the `<Breadcrumbs>`. The mainId property will be passed down from from the parent `<Breadcrumbs>`.
    */
   mainId: PropTypes.string,
   /**

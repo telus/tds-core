@@ -4,10 +4,6 @@ import { render, shallow, mount } from 'enzyme'
 import Breadcrumbs from '../Breadcrumbs'
 
 describe('Breadcrumbs', () => {
-  const doRender = (props = {}) => render(<Breadcrumbs {...defaultProps} {...props} />)
-  const doShallow = (props = {}) => shallow(<Breadcrumbs {...defaultProps} {...props} />)
-  const doMount = (props = {}) => mount(<Breadcrumbs {...defaultProps} {...props} />)
-
   const defaultProps = {
     routes: [
       {
@@ -24,6 +20,10 @@ describe('Breadcrumbs', () => {
       },
     ],
   }
+
+  const doRender = (props = {}) => render(<Breadcrumbs {...defaultProps} {...props} />)
+  const doShallow = (props = {}) => shallow(<Breadcrumbs {...defaultProps} {...props} />)
+  const doMount = (props = {}) => mount(<Breadcrumbs {...defaultProps} {...props} />)
 
   it('does not allow custom CSS', () => {
     const breadcrumbs = doShallow({
@@ -83,9 +83,15 @@ describe('Breadcrumbs', () => {
     const defaultPropsWithChildren = {
       routes: undefined,
       children: [
-        <Breadcrumbs.Item href="/">Home</Breadcrumbs.Item>,
-        <Breadcrumbs.Item href="/mobility">Mobility</Breadcrumbs.Item>,
-        <Breadcrumbs.Item href="/mobility/accessories">Accessories</Breadcrumbs.Item>,
+        <Breadcrumbs.Item key="/" href="/">
+          Home
+        </Breadcrumbs.Item>,
+        <Breadcrumbs.Item key="/mobility" href="/mobility">
+          Mobility
+        </Breadcrumbs.Item>,
+        <Breadcrumbs.Item key="/mobility/accessories" href="/mobility/accessories">
+          Accessories
+        </Breadcrumbs.Item>,
       ],
     }
 
@@ -98,9 +104,15 @@ describe('Breadcrumbs', () => {
     it('doest not concatenate paths', () => {
       const breadcrumbs = doMount({
         children: [
-          <Breadcrumbs.Item href="/one">One</Breadcrumbs.Item>,
-          <Breadcrumbs.Item href="/one/two">Two</Breadcrumbs.Item>,
-          <Breadcrumbs.Item href="/one/two/three">Three</Breadcrumbs.Item>,
+          <Breadcrumbs.Item key="/one" href="/one">
+            One
+          </Breadcrumbs.Item>,
+          <Breadcrumbs.Item key="/one/two" href="/one/two">
+            Two
+          </Breadcrumbs.Item>,
+          <Breadcrumbs.Item key="/one/two/three" href="/one/two/three">
+            Three
+          </Breadcrumbs.Item>,
         ],
       })
 
