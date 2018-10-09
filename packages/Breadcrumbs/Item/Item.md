@@ -1,1 +1,1 @@
-See [Breadcrumbs](#breadcrumbs) above for usage of `Breadcrumbs`.
+See [Breadcrumbs](#breadcrumbs) above for usage of `Breadcrumbs.Item`.
