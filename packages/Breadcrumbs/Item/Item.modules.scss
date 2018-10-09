@@ -1,9 +1,10 @@
 @import '~@tds/core-colours/colours';
 @import '~@tds/core-responsive/responsive';
+@import '../../../shared/scss/typography';
 
 .item {
   display: inline;
-  composes: small from from '../../../shared/styles/Typography/Typography.modules.scss';
+  @include size-small;
 
   &:after {
     content: '';
@@ -13,11 +14,9 @@
     border-right: 1px solid currentColor;
     margin: 0 0.3rem;
   }
-}
 
-@include mq($from: md) {
-  .item {
-    composes: medium from from '../../../shared/styles/Typography/Typography.modules.scss';
+  @include mq($from: md) {
+    @include size-medium;
   }
 }
 
