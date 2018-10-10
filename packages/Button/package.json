@@ -29,6 +29,6 @@
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
     "@tds/shared-base-button": "^1.2.1",
-    "airbnb-prop-types": "2.8.1"
+    "airbnb-prop-types": "2.11.0"
   }
 }
