@@ -30,3 +30,4 @@ about: Suggest an idea for tds-core
 * Willing to develop solution: Yes/No
 * Has workaround: Yes/No
 * High impact: Yes/No
+* Designer/Developer Pair: Your name, your design/dev pair's name 
