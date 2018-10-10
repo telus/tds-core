@@ -2,19 +2,13 @@
 
 exports[`PriceLockup renders 1`] = `
 <div>
-  <span
-    className="priceLabel priceLabel--medium"
-  />
-  <div>
-    <PriceValueSign
-      signDirection="left"
-    />
-    <span
-      className="priceRate priceRate--medium"
-    />
-  </div>
+  <TopText />
   <div
-    className="priceBottomLabel priceBottomLabel--medium"
-  />
+    className="priceWrapper"
+  >
+    <PriceValueSign />
+    <RateText />
+  </div>
+  <Hairline />
 </div>
 `;

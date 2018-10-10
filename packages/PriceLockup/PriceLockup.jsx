@@ -1,76 +1,116 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Heading from '@tds/core-heading'
+import Text from '@tds/core-text'
+import DisplayHeading from '@tds/core-display-heading'
+import HairlineDivider from '@tds/core-hairline-divider'
 import styles from './PriceLockup.modules.scss'
-import joinClassNames from '../../shared/utils/joinClassNames'
 import safeRest from '../../shared/utils/safeRest'
 
 /**
+ * A component presenting Telus product pricing information.
  * @version ./package.json
  */
 
-const priceStyle = (element, size) => {
-  switch (size) {
+const TopTextStyleDecider = componentSize => {
+  switch (componentSize) {
+    case 'small':
     case 'medium':
-      return styles[`${element}--medium`]
+      return 'small'
     case 'large':
-      return styles[`${element}--large`]
+      return 'large'
     default:
       return ''
   }
 }
 
-const PriceLockup = ({
-  size,
-  price,
-  priceBold,
-  topLabel,
-  signDirection,
-  rateLabel,
-  bottomLabel,
-  ...rest
-}) => {
-  const priceLabelClass = joinClassNames(styles.priceLabel, priceStyle('priceLabel', size))
+const DollarSignStyleDecider = componentSize => {
+  switch (componentSize) {
+    case 'small':
+      return 'medium'
+    case 'medium':
+      return 'large'
+    default:
+      return ''
+  }
+}
 
-  const priceBottomLabelClass = joinClassNames(
-    styles.priceBottomLabel,
-    priceStyle('priceBottomLabel', size)
-  )
+const RateTextSizeDecider = componentSize => {
+  switch (componentSize) {
+    case 'small':
+    case 'medium':
+      return 'medium'
+    case 'large':
+      return 'large'
+    default:
+      return ''
+  }
+}
 
-  const priceSignClass = joinClassNames(styles.priceSign, priceStyle('priceSign', size))
+const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText, ...rest }) => {
+  const TopText = () => {
+    const topTextSize = TopTextStyleDecider(size)
+    return <Text size={topTextSize}>{topText}</Text>
+  }
 
-  const priceValueClass = joinClassNames(
-    styles.priceValue,
-    priceStyle('priceValue', size),
-    priceBold ? styles['priceValue--bold'] : ''
-  )
+  const BottomText = () => {
+    return <Text size={size}>{bottomText}</Text>
+  }
 
-  const priceRateClass = joinClassNames(styles.priceRate, priceStyle('priceRate', size))
+  const DollarSign = () => {
+    if (size === 'large') {
+      return <h1 className={styles.dollarSignH1Style}>&#36;</h1>
+    }
+    const DollarSignSize = DollarSignStyleDecider(size)
+    return <Text size={DollarSignSize}>&#36;</Text>
+  }
+
+  const DollarValue = () => {
+    if (size === 'small' || 'medium') {
+      return <Heading level={size === 'small' ? 'h2' : 'h1'}>{price}</Heading>
+    }
+    return <DisplayHeading>{price}</DisplayHeading>
+  }
+
+  const RateText = () => {
+    const RateTextSize = RateTextSizeDecider(size)
+    return (
+      <div className={size === 'small' ? styles.rateWrapperSmall : styles.rateWrapperMedium}>
+        <Text size={RateTextSize}>{rateText}</Text>
+      </div>
+    )
+  }
 
   const PriceValueSign = () => {
-    if (signDirection === 'right') {
-      return (
-        <span>
-          <span className={priceValueClass}>{price}</span>
-          <span className={priceSignClass}>&#36;</span>
-        </span>
-      )
-    }
     return (
-      <span>
-        <span className={priceSignClass}>&#36;</span>
-        <span className={priceValueClass}>{price}</span>
+      <span className={styles.priceValueSign}>
+        {signDirection === 'left' ? <DollarSign /> : undefined}
+        <DollarValue />
+        {signDirection === 'right' ? <DollarSign /> : undefined}
       </span>
     )
   }
 
+  const Hairline = () => {
+    if (rateText && bottomText && size === 'medium') {
+      return (
+        <div className={styles.hairlineWrapper}>
+          <HairlineDivider />
+        </div>
+      )
+    }
+    return ''
+  }
+
   return (
     <div {...safeRest(rest)}>
-      <span className={priceLabelClass}>{topLabel}</span>
-      <div>
-        <PriceValueSign signDirection={signDirection} price={price} />
-        <span className={priceRateClass}>{rateLabel}</span>
+      <TopText />
+      <div className={styles.priceWrapper}>
+        <PriceValueSign />
+        <RateText />
       </div>
-      <div className={priceBottomLabelClass}>{bottomLabel}</div>
+      <Hairline />
+      {size === 'medium' ? <BottomText /> : ''}
     </div>
   )
 }
@@ -87,32 +127,27 @@ PriceLockup.propTypes = {
   /**
    * Statement above Price Value
    */
-  topLabel: PropTypes.string,
+  topText: PropTypes.string,
   /**
    * Statement below Price Value
    */
-  bottomLabel: PropTypes.string,
+  bottomText: PropTypes.string,
   /**
    * Statement right of Price Value
    */
-  rateLabel: PropTypes.string,
+  rateText: PropTypes.string,
   /**
    * Price value of component
    */
   price: PropTypes.string.isRequired,
-  /**
-   * Bold Price Value
-   */
-  priceBold: PropTypes.bool,
 }
 
 PriceLockup.defaultProps = {
-  size: 'medium',
-  signDirection: 'left',
-  topLabel: '',
-  bottomLabel: '',
-  rateLabel: '',
-  priceBold: false,
+  size: undefined,
+  signDirection: undefined,
+  topText: undefined,
+  bottomText: undefined,
+  rateText: undefined,
 }
 
 export default PriceLockup

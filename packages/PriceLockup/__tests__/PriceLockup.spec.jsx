@@ -5,17 +5,10 @@ import PriceLockup from '../PriceLockup'
 
 describe('PriceLockup', () => {
   const doShallow = (props = {}) => shallow(<PriceLockup {...props} />)
-
   it('renders', () => {
     const priceLockup = doShallow()
 
     expect(priceLockup).toMatchSnapshot()
-  })
-
-  it('does other things', () => {
-    const priceLockup = doShallow()
-
-    expect(priceLockup).toExist()
   })
 
   it('passes additional attributes to the element', () => {
@@ -33,5 +26,15 @@ describe('PriceLockup', () => {
 
     expect(priceLockup).not.toHaveProp('className', 'my-custom-class')
     expect(priceLockup).not.toHaveProp('style')
+  })
+
+  it('will render BottomText when size prop is medium', () => {
+    const priceLockup = doShallow({ size: 'medium' })
+    expect(priceLockup.text()).toContain('<BottomText />')
+  })
+
+  it('will not render BottomText when size prop is not medium', () => {
+    const priceLockup = doShallow({ size: 'large' })
+    expect(priceLockup.text()).not.toContain('<BottomText />')
   })
 })
