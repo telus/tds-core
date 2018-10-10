@@ -1,66 +1,32 @@
+@import '~@tds/core-colours/colours'; // be sure to add core-colours as a dependency first
+
+.hairlineWrapper {
+  padding: 0.5rem;
+}
+
+.priceValueSign {
+  display: flex;
+  composes: h1 from '../Heading/Heading.modules.scss';
+  h1, h2 {
+    color: $color-text;
+  }
+}
+
 .priceWrapper {
   display: flex;
-  flex-direction: row;
+  align-items: flex-end;
 }
 
-.priceLabel,
-.priceLabel--medium,
-.priceBottomLabel,
-.priceBottomLabel--medium {
-  font-size: 14px;
-  font-weight: 500;
-  max-width: 230px;
-  word-wrap: break-word;
+.rateWrapperSmall {
+  padding-bottom: 0.1rem;
 }
 
-.priceBottomLabel {
-  font-weight: 400
+.rateWrapperMedium {
+  padding-bottom: 0.2rem;
 }
 
-.priceLabel--large {
-  font-size: 17px;
-  font-weight: 400;
+.dollarSignH1Style {
+  font-size: 1.8rem;
+  padding-top: 0.3rem;
 }
 
-.priceSign {
-  font-size: 16px;
-  vertical-align: 5px;
-  padding-right: 1px;
-}
-
-.priceSign--medium {
-  font-size: 21px;
-  vertical-align: 15px;
-}
-
-.priceSign--large {
-  font-size: 46px;
-  vertical-align: 17px;
-}
-
-.priceValue {
-  font-size: 25px;
-  font-weight: 400;
-}
-
-.priceValue--medium {
-  font-size: 45px;
-  font-weight: 300;
-}
-
-.priceValue--large {
-  font-size: 70px;
-  font-weight: 300;
-}
-
-.priceRate, .priceRate--medium {
-  font-size: 14px;
-}
-
-.priceRate--large {
-  font-size: 19px;
-}
-
-.priceValue--bold {
-  font-weight: 500;
-}
