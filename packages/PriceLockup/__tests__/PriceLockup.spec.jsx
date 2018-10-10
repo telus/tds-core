@@ -4,7 +4,10 @@ import { shallow } from 'enzyme'
 import PriceLockup from '../PriceLockup'
 
 describe('PriceLockup', () => {
-  const doShallow = (props = {}) => shallow(<PriceLockup {...props} />)
+  const defaultProps = {
+    price: '25',
+  }
+  const doShallow = (overrides = {}) => shallow(<PriceLockup {...defaultProps} {...overrides} />)
   it('renders', () => {
     const priceLockup = doShallow()
 
