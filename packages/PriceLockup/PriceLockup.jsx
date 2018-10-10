@@ -10,17 +10,6 @@ import styles from './PriceLockup.modules.scss'
  * @version ./package.json
  */
 
-const Hairline = ({ rateText, bottomText, size }) => {
-  if (rateText && bottomText && size === 'medium') {
-    return (
-      <div className={styles.hairlineWrapper}>
-        <HairlineDivider />
-      </div>
-    )
-  }
-  return ''
-}
-
 const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText }) => {
   const BottomText = () => {
     return <Text size={size}>{bottomText}</Text>
@@ -37,6 +26,11 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     if (size === 'small') {
       return <Text size="medium">{rateText}</Text>
     }
+    return <DisplayHeading>{price}</DisplayHeading>
+  }
+
+  const RateText = () => {
+    const RateTextSize = RateTextSizeDecider(size)
     return (
       <div className={styles.rateTextWrapper}>
         <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>
@@ -55,6 +49,17 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
         {signDirection === 'right' ? <DollarSign /> : undefined}
       </span>
     )
+  }
+
+  const Hairline = () => {
+    if (rateText && bottomText && size === 'medium') {
+      return (
+        <div className={styles.hairlineWrapper}>
+          <HairlineDivider />
+        </div>
+      )
+    }
+    return ''
   }
 
   return (
