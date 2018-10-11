@@ -9,13 +9,13 @@ describe('PriceLockup', () => {
   }
   const doShallow = (overrides = {}) => shallow(<PriceLockup {...defaultProps} {...overrides} />)
   it('renders', () => {
-    const priceLockup = doShallow()
+    const priceLockup = doShallow({ price: '25' })
 
     expect(priceLockup).toMatchSnapshot()
   })
 
   it('passes additional attributes to the element', () => {
-    const priceLockup = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
+    const priceLockup = doShallow({ id: 'the-id', 'data-some-attr': 'some value', price: '25' })
 
     expect(priceLockup).toHaveProp('id', 'the-id')
     expect(priceLockup).toHaveProp('data-some-attr', 'some value')
@@ -25,6 +25,7 @@ describe('PriceLockup', () => {
     const priceLockup = doShallow({
       className: 'my-custom-class',
       style: { color: 'hotpink' },
+      price: '25',
     })
 
     expect(priceLockup).not.toHaveProp('className', 'my-custom-class')
