@@ -7,6 +7,9 @@ import safeRest from '../../shared/utils/safeRest'
 import Item from './Item/Item'
 
 const getBreadcrumbName = (item, params) => {
+  if (!item.breadcrumbName) {
+    return null
+  }
   let breadcrumbName = item.breadcrumbName
   Object.keys(params).forEach(key => {
     breadcrumbName = breadcrumbName.replace(`:${key}`, params[key])
@@ -16,8 +19,8 @@ const getBreadcrumbName = (item, params) => {
 
 const renderItems = (items, params, mainId, reactRouterLinkComponent, concatenatePaths) => {
   const paths = []
-  return items.map((item, i) => {
-    const isLastItem = i === items.length - 1
+  return items.filter(item => item.path).map((item, i, filteredItems) => {
+    const isLastItem = i === filteredItems.length - 1
 
     const breadcrumbName = getBreadcrumbName(item, params)
 
