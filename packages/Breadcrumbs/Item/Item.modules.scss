@@ -28,7 +28,7 @@
 .lastItem {
   composes: item;
   color: $color-telus-purple;
-  font-weight: bold;
+  font-weight: 700;
 
   &:after {
     content: '';
