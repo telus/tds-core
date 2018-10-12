@@ -31,9 +31,7 @@
 .small {
   composes: wordBreak;
 
-  font-size: 0.875rem;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
+  @include size-small;
 }
 
 .smallFont {
@@ -43,9 +41,7 @@
 .medium {
   composes: wordBreak;
 
-  font-size: 1rem;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
+  @include size-medium;
 }
 
 .mediumFont {
@@ -55,9 +51,7 @@
 .large {
   composes: wordBreak;
 
-  font-size: 1.25rem;
-  letter-spacing: -1px;
-  line-height: 1.6;
+  @include size-large;
 }
 
 .largeFont {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 
 import Paragraph from '../../../../packages/Paragraph/Paragraph'
 import Link from '../../../../packages/Link/Link'
@@ -35,5 +35,25 @@ describe('ColoredTextProvider', () => {
     )
 
     expect(coloredText.find('span')).toHaveClassName('inheritColor')
+  })
+
+  describe('tag', () => {
+    it('renders as a div by defualt', () => {
+      const coloredText = shallow(
+        <ColoredTextProvider colorClassName="some-class-name">
+          <Text>Some inline content</Text>
+        </ColoredTextProvider>
+      )
+      expect(coloredText.type()).toEqual('div')
+    })
+
+    it('renders as the tag prop', () => {
+      const coloredText = shallow(
+        <ColoredTextProvider colorClassName="some-class-name" tag="li">
+          <Text>Some inline content</Text>
+        </ColoredTextProvider>
+      )
+      expect(coloredText.type()).toEqual('li')
+    })
   })
 })
