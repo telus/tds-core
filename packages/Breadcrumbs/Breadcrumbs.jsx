@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { componentWithName } from '@tds/util-proptypes'
+import { componentWithName } from '../../shared/utils/propTypes'
 
 import safeRest from '../../shared/utils/safeRest'
 
