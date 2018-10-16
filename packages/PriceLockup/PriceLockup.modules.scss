@@ -1,15 +1,15 @@
 @import '~@tds/core-colours/colours'; // be sure to add core-colours as a dependency first
 
-.hairlineWrapper {
-  padding: 0.5rem;
-}
-
 .priceValueSign {
   display: flex;
+}
+
+.priceValueSignsmall {
+  composes: h2 from '../Heading/Heading.modules.scss';
+}
+
+.priceValueSignmedium, .priceValueSignlarge {
   composes: h1 from '../Heading/Heading.modules.scss';
-  h1, h2 {
-    color: $color-text;
-  }
 }
 
 .priceWrapper {
@@ -17,15 +17,12 @@
   align-items: flex-end;
 }
 
-.rateWrapperSmall {
-  padding-bottom: 0.1rem;
-}
-
-.rateWrapperMedium {
-  padding-bottom: 0.2rem;
+.rateTextWrapper {
+  span {
+    vertical-align: 0.2rem;
+  }
 }
 
 .dollarSignH1Style {
   font-size: 1.8rem;
-  padding-top: 0.3rem;
 }
