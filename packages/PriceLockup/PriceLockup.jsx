@@ -1,117 +1,72 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Heading from '@tds/core-heading'
 import Text from '@tds/core-text'
-import DisplayHeading from '@tds/core-display-heading'
 import HairlineDivider from '@tds/core-hairline-divider'
+import Box from '@tds/core-box'
 import styles from './PriceLockup.modules.scss'
-import safeRest from '../../shared/utils/safeRest'
 
 /**
  * A component presenting Telus product pricing information.
  * @version ./package.json
  */
 
-const TopTextStyleDecider = componentSize => {
-  switch (componentSize) {
-    case 'small':
-    case 'medium':
-      return 'small'
-    case 'large':
-      return 'large'
-    default:
-      return ''
+const Hairline = ({ rateText, bottomText, size }) => {
+  if (rateText && bottomText && size === 'medium') {
+    return (
+      <div className={styles.hairlineWrapper}>
+        <HairlineDivider />
+      </div>
+    )
   }
+  return ''
 }
 
-const DollarSignStyleDecider = componentSize => {
-  switch (componentSize) {
-    case 'small':
-      return 'medium'
-    case 'medium':
-      return 'large'
-    default:
-      return ''
-  }
-}
-
-const RateTextSizeDecider = componentSize => {
-  switch (componentSize) {
-    case 'small':
-    case 'medium':
-      return 'medium'
-    case 'large':
-      return 'large'
-    default:
-      return ''
-  }
-}
-
-const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText, ...rest }) => {
-  const TopText = () => {
-    const topTextSize = TopTextStyleDecider(size)
-    return <Text size={topTextSize}>{topText}</Text>
-  }
-
+const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText }) => {
   const BottomText = () => {
     return <Text size={size}>{bottomText}</Text>
   }
 
   const DollarSign = () => {
     if (size === 'large') {
-      return <h1 className={styles.dollarSignH1Style}>&#36;</h1>
+      return <span className={styles.dollarSignH1Style}>&#36;</span>
     }
-    const DollarSignSize = DollarSignStyleDecider(size)
-    return <Text size={DollarSignSize}>&#36;</Text>
-  }
-
-  const DollarValue = () => {
-    if (size === 'small' || 'medium') {
-      return <Heading level={size === 'small' ? 'h2' : 'h1'}>{price}</Heading>
-    }
-    return <DisplayHeading>{price}</DisplayHeading>
+    return <Text size={size === 'small' ? 'medium' : 'large'}>&#36;</Text>
   }
 
   const RateText = () => {
-    const RateTextSize = RateTextSizeDecider(size)
+    if (size === 'small') {
+      return <Text size="medium">{rateText}</Text>
+    }
     return (
-      <div className={size === 'small' ? styles.rateWrapperSmall : styles.rateWrapperMedium}>
-        <Text size={RateTextSize}>{rateText}</Text>
+      <div className={styles.rateTextWrapper}>
+        <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>
       </div>
     )
   }
-
   const PriceValueSign = () => {
     return (
       <span className={styles.priceValueSign}>
         {signDirection === 'left' ? <DollarSign /> : undefined}
-        <DollarValue />
+        {size === 'small' ? (
+          <span className={styles.priceValueSignsmall}>{price}</span>
+        ) : (
+          <span className={styles.priceValueSignmedium}>{price}</span>
+        )}
         {signDirection === 'right' ? <DollarSign /> : undefined}
       </span>
     )
   }
 
-  const Hairline = () => {
-    if (rateText && bottomText && size === 'medium') {
-      return (
-        <div className={styles.hairlineWrapper}>
-          <HairlineDivider />
-        </div>
-      )
-    }
-    return ''
-  }
-
   return (
-    <div {...safeRest(rest)}>
-      <TopText />
+    <Box between={3}>
+      {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
       <div className={styles.priceWrapper}>
         <PriceValueSign />
-        <RateText />
+        {rateText ? <RateText /> : ''}
       </div>
-      <Hairline />
-      {size === 'medium' ? <BottomText /> : ''}
-    </div>
+      <Hairline rateText={rateText} bottomText={bottomText} size={size} />
+      {size === 'medium' && bottomText ? <BottomText /> : ''}
+    </Box>
   )
 }
 
@@ -144,7 +99,7 @@ PriceLockup.propTypes = {
 
 PriceLockup.defaultProps = {
   size: undefined,
-  signDirection: undefined,
+  signDirection: 'left',
   topText: undefined,
   bottomText: undefined,
   rateText: undefined,

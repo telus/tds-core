@@ -1,223 +1,219 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PriceLockup dollarSign size is H1, dollarValue will be DisplayH1, rateText is large, topText is large, bottomText is absent, when size Prop is large 1`] = `
+exports[`PriceLockup BottomText Component will not render on size="large" and bottomText="" 1`] = `
 <PriceLockup
-  bottomText="great"
+  bottomText=""
   price="25"
-  rateText="/month"
   signDirection="left"
   size="large"
-  topText="buy"
 >
-  <div>
-    <TopText>
-      <Text
-        block={false}
-        bold={false}
-        invert={false}
-        size="large"
-      >
-        <span
-          className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
-        >
-          buy
-        </span>
-      </Text>
-    </TopText>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
     <div
-      className="priceWrapper"
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
     >
-      <PriceValueSign>
-        <span
-          className="priceValueSign"
-        >
-          <DollarSign>
-            <h1
-              className="dollarSignH1Style"
-            >
-              $
-            </h1>
-          </DollarSign>
-          <DollarValue>
-            <Heading
-              invert={false}
-              level="h1"
-            >
-              <h1
-                className="TDS_Heading-modules__h1___1iaO2 TDS_Typography-modules__wordBreak___3dmWU TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
-              >
-                25
-              </h1>
-            </Heading>
-          </DollarValue>
-        </span>
-      </PriceValueSign>
-      <RateText>
-        <div
-          className="rateWrapperMedium"
-        >
-          <Text
-            block={false}
-            bold={false}
-            invert={false}
-            size="large"
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
           >
-            <span
-              className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
-            >
-              /month
-            </span>
-          </Text>
-        </div>
-      </RateText>
-    </div>
-    <Hairline />
-  </div>
-</PriceLockup>
-`;
-
-exports[`PriceLockup dollarSign size is large, dollarValue will be H1, rateText is medium, topText is small, with HairlineDivider bottomText is medium, when size Prop is medium 1`] = `
-<PriceLockup
-  bottomText="great"
-  price="25"
-  rateText="/month"
-  signDirection="left"
-  size="medium"
-  topText="buy"
->
-  <div>
-    <TopText>
-      <Text
-        block={false}
-        bold={false}
-        invert={false}
-        size="small"
-      >
-        <span
-          className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
-        >
-          buy
-        </span>
-      </Text>
-    </TopText>
-    <div
-      className="priceWrapper"
-    >
-      <PriceValueSign>
-        <span
-          className="priceValueSign"
-        >
-          <DollarSign>
-            <Text
-              block={false}
-              bold={false}
-              invert={false}
-              size="large"
-            >
+            <DollarSign>
               <span
-                className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                className="dollarSignH1Style"
               >
                 $
               </span>
-            </Text>
-          </DollarSign>
-          <DollarValue>
-            <Heading
-              invert={false}
-              level="h1"
-            >
-              <h1
-                className="TDS_Heading-modules__h1___1iaO2 TDS_Typography-modules__wordBreak___3dmWU TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
-              >
-                25
-              </h1>
-            </Heading>
-          </DollarValue>
-        </span>
-      </PriceValueSign>
-      <RateText>
-        <div
-          className="rateWrapperMedium"
-        >
-          <Text
-            block={false}
-            bold={false}
-            invert={false}
-            size="medium"
-          >
+            </DollarSign>
             <span
-              className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+              className="priceValueSignmedium"
             >
-              /month
+              25
             </span>
-          </Text>
-        </div>
-      </RateText>
-    </div>
-    <Hairline>
-      <div
-        className="hairlineWrapper"
-      >
-        <HairlineDivider
-          gradient={false}
-          vertical={false}
-        >
-          <hr
-            className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-          />
-        </HairlineDivider>
+          </span>
+        </PriceValueSign>
       </div>
-    </Hairline>
-    <BottomText>
-      <Text
-        block={false}
-        bold={false}
-        invert={false}
-        size="medium"
-      >
-        <span
-          className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
-        >
-          great
-        </span>
-      </Text>
-    </BottomText>
-  </div>
+      <Hairline
+        bottomText=""
+        size="large"
+      />
+    </div>
+  </Box>
 </PriceLockup>
 `;
 
-exports[`PriceLockup dollarSign size is medium, dollarValue will be H2, rateText is medium, topText is small, bottomText is absent, when size Prop is small 1`] = `
+exports[`PriceLockup BottomText Component will not render on size="small" and bottomText="" 1`] = `
 <PriceLockup
-  bottomText="great"
+  bottomText=""
   price="25"
-  rateText="/month"
   signDirection="left"
   size="small"
-  topText="buy"
 >
-  <div>
-    <TopText>
-      <Text
-        block={false}
-        bold={false}
-        invert={false}
-        size="small"
-      >
-        <span
-          className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
-        >
-          buy
-        </span>
-      </Text>
-    </TopText>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
     <div
-      className="priceWrapper"
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
     >
-      <PriceValueSign>
-        <span
-          className="priceValueSign"
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="medium"
+              >
+                <span
+                  className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignsmall"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline
+        bottomText=""
+        size="small"
+      />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup BottomText Component will render only on size="medium" and bottomText="text" 1`] = `
+<PriceLockup
+  bottomText="text"
+  price="25"
+  signDirection="left"
+  size="medium"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline
+        bottomText="text"
+        size="medium"
+      />
+      <BottomText>
+        <Text
+          block={false}
+          bold={false}
+          invert={false}
+          size="medium"
         >
-          <DollarSign>
+          <span
+            className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+          >
+            text
+          </span>
+        </Text>
+      </BottomText>
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup Hairline Component only render with bottomText="test" and rateText="/rate" and size="medium" 1`] = `
+<PriceLockup
+  bottomText="test"
+  price="25"
+  rateText="/rate"
+  signDirection="left"
+  size="medium"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+        <RateText>
+          <div
+            className="rateTextWrapper"
+          >
             <Text
               block={false}
               bold={false}
@@ -227,28 +223,281 @@ exports[`PriceLockup dollarSign size is medium, dollarValue will be H2, rateText
               <span
                 className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
               >
-                $
+                /rate
               </span>
             </Text>
-          </DollarSign>
-          <DollarValue>
-            <Heading
-              invert={false}
-              level="h2"
-            >
-              <h2
-                className="TDS_Heading-modules__h2___l3LmI TDS_Typography-modules__wordBreak___3dmWU TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__secondary___3skcz"
-              >
-                25
-              </h2>
-            </Heading>
-          </DollarValue>
-        </span>
-      </PriceValueSign>
-      <RateText>
+          </div>
+        </RateText>
+      </div>
+      <Hairline
+        bottomText="test"
+        rateText="/rate"
+        size="medium"
+      >
         <div
-          className="rateWrapperSmall"
+          className="hairlineWrapper"
         >
+          <HairlineDivider
+            gradient={false}
+            vertical={false}
+          >
+            <hr
+              className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+            />
+          </HairlineDivider>
+        </div>
+      </Hairline>
+      <BottomText>
+        <Text
+          block={false}
+          bold={false}
+          invert={false}
+          size="medium"
+        >
+          <span
+            className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+          >
+            test
+          </span>
+        </Text>
+      </BottomText>
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup Hairline Component will not render when bottomText="" and rateText="" and size is not medium 1`] = `
+<PriceLockup
+  bottomText=""
+  price="25"
+  rateText=""
+  signDirection="left"
+  size="small"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="medium"
+              >
+                <span
+                  className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignsmall"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline
+        bottomText=""
+        rateText=""
+        size="small"
+      />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup RateText Component only render with rateText="/month 1`] = `
+<PriceLockup
+  price="25"
+  rateText="/month"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+        <RateText>
+          <div
+            className="rateTextWrapper"
+          >
+            <Text
+              block={false}
+              bold={false}
+              invert={false}
+              size="medium"
+            >
+              <span
+                className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+              >
+                /month
+              </span>
+            </Text>
+          </div>
+        </RateText>
+      </div>
+      <Hairline
+        rateText="/month"
+      />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup RateText Component will render and component will be large-sized, when size="large" 1`] = `
+<PriceLockup
+  price="25"
+  rateText="/month"
+  signDirection="left"
+  size="large"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <span
+                className="dollarSignH1Style"
+              >
+                $
+              </span>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+        <RateText>
+          <div
+            className="rateTextWrapper"
+          >
+            <Text
+              block={false}
+              bold={false}
+              invert={false}
+              size="large"
+            >
+              <span
+                className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+              >
+                /month
+              </span>
+            </Text>
+          </div>
+        </RateText>
+      </div>
+      <Hairline
+        rateText="/month"
+        size="large"
+      />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup RateText Component will render and component will be medium-sized, when size="small" 1`] = `
+<PriceLockup
+  price="25"
+  rateText="/month"
+  signDirection="left"
+  size="small"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="medium"
+              >
+                <span
+                  className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignsmall"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+        <RateText>
           <Text
             block={false}
             bold={false}
@@ -261,23 +510,739 @@ exports[`PriceLockup dollarSign size is medium, dollarValue will be H2, rateText
               /month
             </span>
           </Text>
-        </div>
-      </RateText>
+        </RateText>
+      </div>
+      <Hairline
+        rateText="/month"
+        size="small"
+      />
     </div>
-    <Hairline />
-  </div>
+  </Box>
 </PriceLockup>
 `;
 
-exports[`PriceLockup renders 1`] = `
-<div>
-  <TopText />
+exports[`PriceLockup bottomText prop has a string 1`] = `
+<PriceLockup
+  bottomText="test bottom"
+  price="25"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline
+        bottomText="test bottom"
+      />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup bottomText prop is undefined 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup price prop wil render component with a price 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup rateText prop has a string 1`] = `
+<PriceLockup
+  price="25"
+  rateText="test rate"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+        <RateText>
+          <div
+            className="rateTextWrapper"
+          >
+            <Text
+              block={false}
+              bold={false}
+              invert={false}
+              size="medium"
+            >
+              <span
+                className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+              >
+                test rate
+              </span>
+            </Text>
+          </div>
+        </RateText>
+      </div>
+      <Hairline
+        rateText="test rate"
+      />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup rateText prop is undefined 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup renders with default props 1`] = `
+<Box
+  between={3}
+  inline={false}
+  tag="div"
+>
   <div
     className="priceWrapper"
   >
     <PriceValueSign />
-    <RateText />
   </div>
   <Hairline />
-</div>
+</Box>
+`;
+
+exports[`PriceLockup signDirection prop is left 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup signDirection prop is right 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="right"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup signDirection prop is undefined 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup size prop is large 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+  size="large"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <span
+                className="dollarSignH1Style"
+              >
+                $
+              </span>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline
+        size="large"
+      />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup size prop is medium 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+  size="medium"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline
+        size="medium"
+      />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup size prop is small 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+  size="small"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="medium"
+              >
+                <span
+                  className="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignsmall"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline
+        size="small"
+      />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup size prop is undefined 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup topText prop has a string 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+  topText="test top"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <Text
+        block={false}
+        bold={false}
+        invert={false}
+        size="small"
+      >
+        <span
+          className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
+        >
+          test top
+        </span>
+      </Text>
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline />
+    </div>
+  </Box>
+</PriceLockup>
+`;
+
+exports[`PriceLockup topText prop is undefined 1`] = `
+<PriceLockup
+  price="25"
+  signDirection="left"
+>
+  <Box
+    between={3}
+    inline={false}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <div
+        className="priceWrapper"
+      >
+        <PriceValueSign>
+          <span
+            className="priceValueSign"
+          >
+            <DollarSign>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="large"
+              >
+                <span
+                  className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                >
+                  $
+                </span>
+              </Text>
+            </DollarSign>
+            <span
+              className="priceValueSignmedium"
+            >
+              25
+            </span>
+          </span>
+        </PriceValueSign>
+      </div>
+      <Hairline />
+    </div>
+  </Box>
+</PriceLockup>
 `;
