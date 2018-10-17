@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs with children renders 1`] = `
+<nav>
+  <ol>
+    <li
+      class="linkItem"
+    >
+      <a
+        class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+        href="/"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      class="linkItem"
+    >
+      <a
+        class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+        href="/mobility"
+      >
+        Mobility
+      </a>
+    </li>
+    <li
+      class="lastItem"
+    >
+      <a
+        aria-current="page"
+        class="base inheritColor lastLink"
+        href="/mobility/accessories#main"
+      >
+        Accessories
+      </a>
+    </li>
+  </ol>
+</nav>
+`;
+
+exports[`Breadcrumbs with routes renders 1`] = `
+<nav>
+  <ol>
+    <li
+      class="linkItem"
+    >
+      <a
+        class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+        href="/"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      class="linkItem"
+    >
+      <a
+        class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+        href="/mobility"
+      >
+        Mobility
+      </a>
+    </li>
+    <li
+      class="lastItem"
+    >
+      <a
+        aria-current="page"
+        class="base inheritColor lastLink"
+        href="/mobility/accessories#main"
+      >
+        Accessories
+      </a>
+    </li>
+  </ol>
+</nav>
+`;
