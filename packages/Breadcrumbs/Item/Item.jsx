@@ -9,33 +9,34 @@ import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/
 import styles from './Item.modules.scss'
 import linkStyles from '../../Link/Link.modules.scss'
 
-const renderLastLink = (href, children) => (
-  <a
-    href={href}
-    className={joinClassNames(linkStyles.base, linkStyles.inheritColor, styles.lastLink)}
-    aria-current="page"
-  >
-    {children}
-  </a>
-)
-const Item = ({ href, reactRouterLinkComponent, children, isLast }) => {
-  let item
-  if (isLast) {
-    item = renderLastLink(href, children)
+const Item = ({ href, reactRouterLinkComponent, children, current }) => {
+  const linkOptions = {}
+
+  if (reactRouterLinkComponent) {
+    linkOptions.to = href
+    linkOptions.reactRouterLinkComponent = reactRouterLinkComponent
   } else {
-    const linkOptions = {}
-    if (reactRouterLinkComponent) {
-      linkOptions.to = href
-      linkOptions.reactRouterLinkComponent = reactRouterLinkComponent
-    } else {
-      linkOptions.href = href
-    }
-    item = <Link {...linkOptions}>{children}</Link>
+    linkOptions.href = href
+  }
+  if (current) {
+    linkOptions['aria-current'] = 'page'
+    return (
+      <ColoredTextProvider tag="li" colorClassName={current ? styles.lastItem : styles.linkItem}>
+        {React.createElement(
+          reactRouterLinkComponent || 'a',
+          {
+            ...linkOptions,
+            className: joinClassNames(linkStyles.base, linkStyles.inheritColor, styles.lastLink),
+          },
+          children
+        )}
+      </ColoredTextProvider>
+    )
   }
 
   return (
-    <ColoredTextProvider tag="li" colorClassName={isLast ? styles.lastItem : styles.linkItem}>
-      {item}
+    <ColoredTextProvider tag="li" colorClassName={current ? styles.lastItem : styles.linkItem}>
+      <Link {...linkOptions}>{children}</Link>
     </ColoredTextProvider>
   )
 }
@@ -63,12 +64,12 @@ Item.propTypes = {
   /**
    * @ignore
    */
-  isLast: PropTypes.bool,
+  current: PropTypes.bool,
 }
 
 Item.defaultProps = {
   reactRouterLinkComponent: undefined,
-  isLast: false,
+  current: false,
   mainId: undefined,
 }
 

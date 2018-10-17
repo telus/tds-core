@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { Helmet } from 'react-helmet'
+
 import { componentWithName } from '../../shared/utils/propTypes'
 
 import safeRest from '../../shared/utils/safeRest'
@@ -18,39 +20,44 @@ const getBreadcrumbName = (item, params) => {
   return breadcrumbName
 }
 
-const renderItems = (items, params, mainId, reactRouterLinkComponent, concatenatePaths) => {
+const getPath = (path, params, concatenatePaths, paths) => {
+  let p = path
+  if (concatenatePaths) {
+    p = p.replace(/^\//, '')
+    Object.keys(params).forEach(key => {
+      p = p.replace(`:${key}`, params[key])
+    })
+    if (p) {
+      paths.push(p)
+    }
+    return `/${paths.join('/')}`
+  }
+  return p
+}
+
+const getItems = (items, params, concatenatePaths) => {
   const paths = []
   return items.filter(item => item.path).map((item, i, filteredItems) => {
-    const isLastItem = i === filteredItems.length - 1
-
+    const isLast = i === filteredItems.length - 1
     const breadcrumbName = getBreadcrumbName(item, params)
-
-    let href
-    if (concatenatePaths) {
-      let path = item.path || ''
-      path = path.replace(/^\//, '')
-      Object.keys(params).forEach(key => {
-        path = path.replace(`:${key}`, params[key])
-      })
-      if (path) {
-        paths.push(path)
-      }
-      href = `/${paths.join('/')}`
-    } else {
-      href = item.path
+    const href = getPath(item.path, params, concatenatePaths, paths)
+    return {
+      breadcrumbName,
+      href,
+      current: isLast,
     }
-
-    return (
-      <Breadcrumbs.Item
-        key={href}
-        href={isLastItem ? mainId : href}
-        reactRouterLinkComponent={reactRouterLinkComponent}
-        isLast={isLastItem}
-      >
-        {breadcrumbName}
-      </Breadcrumbs.Item>
-    )
   })
+}
+
+const getStructuredData = (items, baseUrl) => {
+  return items.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@id': `${baseUrl || ''}${item.href}`,
+      name: item.breadcrumbName,
+    },
+  }))
 }
 
 /**
@@ -61,23 +68,47 @@ const Breadcrumbs = ({
   mainId,
   reactRouterLinkComponent,
   params = {},
+  baseUrl,
   children,
   ...rest
 }) => {
   let items
   if (children) {
-    items = React.Children.map(children, child => ({
+    items = React.Children.toArray(children).map(child => ({
       path: child.props.href,
       breadcrumbName: child.props.children,
     }))
   } else {
     items = routes
   }
-  items = renderItems(items, params, mainId, reactRouterLinkComponent, !children)
+  items = getItems(items, params, !children)
+  const structuredData = getStructuredData(items, baseUrl)
 
   return (
     <nav {...safeRest(rest)}>
-      <ol>{items}</ol>
+      <ol>
+        {items.map(({ href, current, breadcrumbName }) => (
+          <Breadcrumbs.Item
+            key={href}
+            href={current ? `${href}${mainId}` : href}
+            reactRouterLinkComponent={reactRouterLinkComponent}
+            current={current}
+          >
+            {breadcrumbName}
+          </Breadcrumbs.Item>
+        ))}
+      </ol>
+      <Helmet>
+        <script type="application/ld+json">
+          {`
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": ${JSON.stringify(structuredData)}
+}
+`}
+        </script>
+      </Helmet>
     </nav>
   )
 }
@@ -92,6 +123,10 @@ Breadcrumbs.propTypes = {
       breadcrumbName: PropTypes.string.isRequired,
     })
   ),
+  /**
+   * Base URL used to build structured data.
+   */
+  baseUrl: PropTypes.string,
   /**
    * The in-page link to the current page. This will be the href of the last item in the `<Breadcrumbs>`. The mainId property will be passed down from from the parent `<Breadcrumbs>`.
    */
@@ -112,6 +147,7 @@ Breadcrumbs.propTypes = {
 
 Breadcrumbs.defaultProps = {
   routes: undefined,
+  baseUrl: undefined,
   mainId: '#main',
   reactRouterLinkComponent: undefined,
   params: {},

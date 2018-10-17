@@ -1,7 +1,7 @@
 ### Using `children`
 
 ```jsx
-<Breadcrumbs>
+<Breadcrumbs baseUrl="http://localhost:6060/en">
   <Breadcrumbs.Item href="/">Home</Breadcrumbs.Item>
   <Breadcrumbs.Item href="/mobility">Mobility</Breadcrumbs.Item>
   <Breadcrumbs.Item href="/mobility/accessories">Accessories</Breadcrumbs.Item>
@@ -25,7 +25,7 @@ const routes = [
     breadcrumbName: 'Accessories',
   },
 ]
-;<Breadcrumbs routes={routes} />
+;<Breadcrumbs routes={routes} baseUrl="http://localhost:6060/en" />
 ```
 
 ### Usage with React Router
@@ -48,7 +48,7 @@ const App = () => (
 
 ```jsx static
 // accessories.jsx
-import { ReactRouterLink } from 'react-router';
+import { ReactRouterLink } from 'react-router'
 
 const Accessories = ({ routes, params }) => (
   <Breadcrumbs routes={routes} params={params} reactRouterLinkComponent={ReactRouterLink} />
@@ -63,7 +63,7 @@ const Accessories = ({ routes, params }) => (
 const breadcrumbNameMap = {
   '/mobility': 'Mobility',
   '/mobility/accessories': 'Accessories',
-  '/something/else': 'Something else'
+  '/something/else': 'Something else',
 }
 
 const BreadcrumbNavigation = ({ location }) => {
@@ -71,23 +71,15 @@ const BreadcrumbNavigation = ({ location }) => {
   const crumbs = location.pathname.split('/').filter(i => i)
   const extraBreadcrumbItems = crumbs.map((i, index) => {
     const url = `/${crumbs.slice(0, index + 1).join('/')}`
-    return (
-      <Item>
-        {breadcrumbNameMap[url]}
-      </Item>
-    )
+    return <Item>{breadcrumbNameMap[url]}</Item>
   })
 
-  const breadcrumbItems = [(
+  const breadcrumbItems = [
     <Item key="home" href="/">
       Home
-    </Item>
-  )].concat(extraBreadcrumbItems)
+    </Item>,
+  ].concat(extraBreadcrumbItems)
 
-  return (
-    <Breadcrumbs reactRouterLinkComponent={Link}>
-      {breadcrumbItems}
-    </Breadcrumbs>
-  )
+  return <Breadcrumbs reactRouterLinkComponent={Link}>{breadcrumbItems}</Breadcrumbs>
 }
 ```

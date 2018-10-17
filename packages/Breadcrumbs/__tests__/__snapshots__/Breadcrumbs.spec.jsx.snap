@@ -29,7 +29,7 @@ exports[`Breadcrumbs with children renders 1`] = `
       <a
         aria-current="page"
         class="base inheritColor lastLink"
-        href="#main"
+        href="/mobility/accessories#main"
       >
         Accessories
       </a>
@@ -67,7 +67,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
       <a
         aria-current="page"
         class="base inheritColor lastLink"
-        href="#main"
+        href="/mobility/accessories#main"
       >
         Accessories
       </a>

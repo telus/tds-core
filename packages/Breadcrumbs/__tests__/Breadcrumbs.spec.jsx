@@ -40,7 +40,7 @@ describe('Breadcrumbs', () => {
       mainId: '#content',
     })
 
-    expect(breadcrumbs.find('a').last()).toHaveProp('href', '#content')
+    expect(breadcrumbs.find('a').last()).toHaveProp('href', '/mobility/accessories#content')
   })
 
   describe('with routes', () => {
@@ -82,6 +82,7 @@ describe('Breadcrumbs', () => {
   describe('with children', () => {
     const defaultPropsWithChildren = {
       routes: undefined,
+      baseUrl: 'http://localhost:6060/en',
       children: [
         <Breadcrumbs.Item key="/" href="/">
           Home

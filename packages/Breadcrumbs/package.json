@@ -27,7 +27,8 @@
   "dependencies": {
     "@tds/core-link": "^1.0.3",
     "airbnb-prop-types": "2.8.1",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
     "@tds/util-proptypes": "^1.0.0"
