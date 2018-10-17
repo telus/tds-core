@@ -2,9 +2,9 @@
 
 ## Prerequisites
 
-* [Git](https://git-scm.com/)
-* [Node.JS](https://nodejs.org) >= 8.0
-* [Yarn](https://yarnpkg.com) (We use yarn for dependency management instead of npm.)
+- [Git](https://git-scm.com/)
+- [Node.JS](https://nodejs.org) >= 8.0
+- [Yarn](https://yarnpkg.com) (We use yarn for dependency management instead of npm.)
 
 ## Set up your environment
 
@@ -50,6 +50,46 @@ documentation, and base unit tests for a new component.
 yarn scaffold MyComponent
 ```
 
+## Running and updating tests
+
+All TDS components use a combination of [Jest](https://jestjs.io/) tests and [Nightwatch](http://nightwatchjs.org/) visual regression tests. As part of our Git hooks, these tests are run automatically on commit and on push. However, there are cases where you may want to run these tests manually, or require the ability to update test snapshots that are no longer up to date with the component you're working on.
+
+### Jest (unit tests)
+
+Jest unit tests are integrated into all TDS React components. These are run to ensure that a component's functionality has not been compromised by a change. These unit tests will check the component's different states by providing different sets of prop values, and compare them to a set of pre-defined criteria. It is important to create new unit tests whenever a feature is added or significantly modified to ensure the stability of the component.
+
+If a component's structure has significantly changed, it may require a snapshot update with the update command listed below. However, it is important to use discretion here, as a failing snapshot may be the symptom of a larger problem with the component. (Such as unexpected extra/missing classes or unintended shuffling of the component's DOM structure) _Always review the log of a snapshot failure before running the update command._ When in doubt, reach out to our support avenues.
+
+```bash
+# Manually run unit tests on modified components
+yarn test
+
+# Options:
+# -a: Run tests on all components regardless of if they were recently modified.
+# -u: Update test snapshots. (Useful if the component's structure has changed)
+```
+
+### Nightwatch (e2e)
+
+Nightwatch e2e tests are run to ensure that no unexpected visual regressions were made to a component. These tests are run automatically on all components with no test writing required on the developer's part.
+
+Before tests can be run, the TDS docs must be running locally on your machine in e2e mode.
+
+```bash
+yarn dev:e2e
+```
+
+Once the local server is up and running, you may now run e2e tests. These tests will fail if the component's appearance has diverged from its saved screenshot. Visual modifications to a component will almost always require screenshots to be updated.
+
+```bash
+# Manually run visual regression tests on modified components
+yarn test:e2e
+
+# Options:
+# -a: Run tests on all components regardless of if they were recently modified.
+# -u: Update test screenshots. (Useful if the component was purposefully changed visually)
+```
+
 ## Make a commit
 
 To view a guide on how TDS components are versioned, see our [FAQ](../faq.md#how-is-tds-versioned).
@@ -78,9 +118,9 @@ footer
 
 Use the `type` field to inform lerna what Conventional Commit you intend to use:
 
-* For breaking changes, use the **feat** commit type with body text that begins with the phrase "BREAKING CHANGE:"
-* For minor changes, use the **feat** commit type
-* For patches, use the **fix** commit type
+- For breaking changes, use the **feat** commit type with body text that begins with the phrase "BREAKING CHANGE:"
+- For minor changes, use the **feat** commit type
+- For patches, use the **fix** commit type
 
 Use the `scope` field when referring to an area in the codebase, such as a package name (e.g. `core-button-link`) or
 a directory (e.g. `e2e`).
