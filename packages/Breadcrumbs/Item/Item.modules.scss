@@ -1,0 +1,49 @@
+@import '~@tds/core-colours/colours';
+@import '~@tds/core-responsive/responsive';
+@import '../../../shared/scss/typography';
+
+.item {
+  display: inline;
+  @include size-small;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 0.8em;
+    transform: rotate(15deg);
+    border-right: 1px solid currentColor;
+    margin: 0 0.3rem;
+  }
+
+  @include mq($from: md) {
+    @include size-medium;
+  }
+}
+
+.linkItem {
+  composes: item;
+  color: $color-shuttle-grey;
+}
+
+.lastItem {
+  composes: item;
+  color: $color-telus-purple;
+  font-weight: 700;
+
+  &:after {
+    content: '';
+    border-right: 0;
+    margin: 0;
+  }
+}
+
+.lastLink {
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

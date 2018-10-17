@@ -1,0 +1,36 @@
+{
+  "name": "@tds/core-breadcrumbs",
+  "version": "1.0.0-dev",
+  "description": "",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telusdigital/tds-core.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telusdigital/tds-core/issues"
+  },
+  "homepage": "http://tds.telus.com",
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "dependencies": {
+    "@tds/core-link": "^1.0.3",
+    "airbnb-prop-types": "2.8.1",
+    "prop-types": "^15.5.10",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@tds/util-proptypes": "^1.0.0-dev"
+  }
+}
