@@ -184,9 +184,9 @@ class PanelWrapper extends React.Component {
 
 PanelWrapper.propTypes = {
   panelId: PropTypes.string.isRequired,
-  panelHeader: PropTypes.string.isRequired,
-  panelSubtext: PropTypes.string,
-  panelTertiaryText: PropTypes.string,
+  panelHeader: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  panelSubtext: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  panelTertiaryText: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   panelOnToggle: PropTypes.func,
   panelDisabled: PropTypes.bool,
   open: PropTypes.bool,

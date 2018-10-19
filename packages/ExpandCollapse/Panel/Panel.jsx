@@ -18,15 +18,15 @@ Panel.propTypes = {
   /**
    * The title.
    */
-  header: PropTypes.string.isRequired,
+  header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   /**
    * Optional subtext.
    */
-  subtext: PropTypes.string,
+  subtext: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /**
    * Optional tertiary text. Will be displayed on the right side of the panel header.
    */
-  tertiaryText: PropTypes.string,
+  tertiaryText: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /**
    * Whether or not to disable the panel from being opened or closed.
    */
