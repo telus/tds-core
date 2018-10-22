@@ -12,7 +12,7 @@ const getVisualRegressionFolders = componentName => {
   }
 }
 
-const toComponentName = packageName => Case.pascal(packageName.replace('@tds/core-', ''))
+const toComponentName = packageName => Case.pascal(packageName.replace(/@tds\/(core|util-)/, ''))
 
 module.exports = {
   getVisualRegressionFolders,
