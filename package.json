@@ -95,7 +95,7 @@
     "husky": "^1.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.0.0",
-    "jest-environment-enzyme": "^6.0.0",
+    "jest-environment-enzyme": "^7.0.0",
     "jest-enzyme": "^6.0.0",
     "lerna": "^2.9.0",
     "lint-staged": "^7.0.2",

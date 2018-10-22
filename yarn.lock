@@ -7566,6 +7566,13 @@ jest-environment-enzyme@^6.0.0:
   dependencies:
     jest-environment-jsdom "^22.4.1"
 
+jest-environment-enzyme@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/jest-environment-enzyme/-/jest-environment-enzyme-7.0.0.tgz#9244a8b256e944e77c0d507767fa45cabcb873c6"
+  integrity sha512-UZOM8tVdIYM6Mq5wTBtBaoCmAZWXQN3hlS9MpArH5zWHQc95widWmBNc+IE/37wNldR1TUVjbRLpIO4mE3XzOg==
+  dependencies:
+    jest-environment-jsdom "^22.4.1"
+
 jest-environment-jsdom@^22.4.1:
   version "22.4.1"
   resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-22.4.1.tgz#754f408872441740100d3917e5ec40c74de6447f"
