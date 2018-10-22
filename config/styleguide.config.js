@@ -260,6 +260,15 @@ module.exports = {
         },
       ],
     },
+    {
+      name: 'Utilities',
+      sections: [
+        {
+          name: 'PropTypes',
+          content: path.resolve('packages/prop-types/PropTypes.md'),
+        },
+      ],
+    },
   ],
 
   template: styleguidistEnv === 'production' ? productionTemplate : devTemplate,
