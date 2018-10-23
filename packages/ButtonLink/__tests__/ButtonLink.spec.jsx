@@ -78,7 +78,8 @@ describe('ButtonLink', () => {
     it('connects to ButtonLink', () => {
       const link = shallow(
         <ButtonLink>
-          Go home<A11yContent>testing</A11yContent>
+          Go home
+          <A11yContent>testing</A11yContent>
         </ButtonLink>
       )
 
