@@ -6,6 +6,8 @@ export const componentWithName = passedName => {
   }
   const checkProp = (props, propName, componentName) => {
     if (Array.isArray(props[propName])) {
+      // Iterates through every child and try to find the first element that does not match the passed name
+      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
       return props[propName]
         .map((_, index) => checkProp(props[propName], index, componentName))
         .find(Boolean)
