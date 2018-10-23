@@ -27,7 +27,7 @@ describe('prop-types', () => {
       it('passes validation with a FunctionalComponent', () => {
         const validator = componentWithName('FunctionalComponent')
         const status = validator(
-          { children: <FunctionalComponent>Foo</FunctionalComponent> },
+          { children: <FunctionalComponent>Some content</FunctionalComponent> },
           'children',
           'FunctionalComponent'
         )
@@ -37,22 +37,44 @@ describe('prop-types', () => {
       it('passes validation with a ClassComponent', () => {
         const validator = componentWithName('ClassComponent')
         const status = validator(
-          { children: <ClassComponent>Foo</ClassComponent> },
+          { children: <ClassComponent>Some content</ClassComponent> },
           'children',
           'ClassComponent'
         )
         expect(status).toBeUndefined()
       })
 
+      it('passes when a single required element is supplied and matching', () => {
+        const validator = componentWithName('FunctionalComponent').isRequired
+        const status = validator(
+          { children: <FunctionalComponent /> },
+          'children',
+          'FunctionalComponent'
+        )
+        expect(status).toBeUndefined()
+      })
+
       it('fails validation with a FunctionalComponent', () => {
         const validator = componentWithName('FunctionalComponent')
-        const status = validator({ children: 'foobar' }, 'children', 'FunctionalComponent')
+        const status = validator({ children: 'Button' }, 'children', 'FunctionalComponent')
         expect(status).toBeInstanceOf(Error)
       })
 
       it('fails validation with a ClassComponent', () => {
         const validator = componentWithName('ClassComponent')
-        const status = validator({ children: 'foobar' }, 'children', 'ClassComponent')
+        const status = validator({ children: 'Button' }, 'children', 'ClassComponent')
+        expect(status).toBeInstanceOf(Error)
+      })
+
+      it('fails when a single required element is not supplied', () => {
+        const validator = componentWithName('FunctionalComponent').isRequired
+        const status = validator({}, 'children', 'FunctionalComponent')
+        expect(status).toBeInstanceOf(Error)
+      })
+
+      it('fails when a single required element is supplied but not matching', () => {
+        const validator = componentWithName('FunctionalComponent').isRequired
+        const status = validator({ children: 'Button' }, 'children', 'FunctionalComponent')
         expect(status).toBeInstanceOf(Error)
       })
     })
@@ -63,8 +85,8 @@ describe('prop-types', () => {
         const status = validator(
           {
             children: [
-              <FunctionalComponent key="one">One</FunctionalComponent>,
-              <FunctionalComponent key="two">Two</FunctionalComponent>,
+              <FunctionalComponent key={1}>One</FunctionalComponent>,
+              <FunctionalComponent key={2}>Two</FunctionalComponent>,
             ],
           },
           'children',
@@ -78,12 +100,24 @@ describe('prop-types', () => {
         const status = validator(
           {
             children: [
-              <ClassComponent key="one">One</ClassComponent>,
-              <ClassComponent key="two">Two</ClassComponent>,
+              <ClassComponent key={1}>One</ClassComponent>,
+              <ClassComponent key={2}>Two</ClassComponent>,
             ],
           },
           'children',
           'ClassComponent'
+        )
+        expect(status).toBeUndefined()
+      })
+
+      it('passes when all supplied elements are matching and required', () => {
+        const validator = componentWithName('FunctionalComponent').isRequired
+        const status = validator(
+          {
+            children: [<FunctionalComponent key={1} />, <FunctionalComponent key={2} />],
+          },
+          'children',
+          'FunctionalComponent'
         )
         expect(status).toBeUndefined()
       })
@@ -93,8 +127,8 @@ describe('prop-types', () => {
         const status = validator(
           {
             children: [
-              <FunctionalComponent key="one">One</FunctionalComponent>,
-              <FunctionalComponent key="two">Two</FunctionalComponent>,
+              <FunctionalComponent key={1}>One</FunctionalComponent>,
+              <FunctionalComponent key={2}>Two</FunctionalComponent>,
               'String',
             ],
           },
@@ -109,13 +143,29 @@ describe('prop-types', () => {
         const status = validator(
           {
             children: [
-              <ClassComponent key="one">One</ClassComponent>,
-              <ClassComponent key="two">Two</ClassComponent>,
+              <ClassComponent key={1}>One</ClassComponent>,
+              <ClassComponent key={2}>Two</ClassComponent>,
               'String',
             ],
           },
           'children',
           'ClassComponent'
+        )
+        expect(status).toBeInstanceOf(Error)
+      })
+
+      it('fails when at least one supplied array elements are not matching when required', () => {
+        const validator = componentWithName('FunctionalComponent').isRequired
+        const status = validator(
+          {
+            children: [
+              <FunctionalComponent key={1}>One</FunctionalComponent>,
+              <FunctionalComponent key={2}>Two</FunctionalComponent>,
+              'String',
+            ],
+          },
+          'children',
+          'FunctionalComponent'
         )
         expect(status).toBeInstanceOf(Error)
       })
