@@ -24,102 +24,100 @@ describe('prop-types', () => {
     })
 
     describe('single child', () => {
-      describe('passes', () => {
-        it('validation with a FunctionalComponent', () => {
-          const validator = componentWithName('FunctionalComponent')
-          const status = validator(
-            { children: <FunctionalComponent>Foo</FunctionalComponent> },
-            'children',
-            'FunctionalComponent'
-          )
-          expect(status).toBeUndefined()
-        })
-
-        it('validation with a ClassComponent', () => {
-          const validator = componentWithName('ClassComponent')
-          const status = validator(
-            { children: <ClassComponent>Foo</ClassComponent> },
-            'children',
-            'ClassComponent'
-          )
-          expect(status).toBeUndefined()
-        })
+      it('passes validation with a FunctionalComponent', () => {
+        const validator = componentWithName('FunctionalComponent')
+        const status = validator(
+          { children: <FunctionalComponent>Foo</FunctionalComponent> },
+          'children',
+          'FunctionalComponent'
+        )
+        expect(status).toBeUndefined()
       })
 
-      describe('fails', () => {
-        it('validation', () => {
-          const validator = componentWithName('FunctionalComponent')
-          const status = validator({ children: 'String' }, 'children', 'FunctionalComponent')
-          expect(status).toBeInstanceOf(Error)
-        })
+      it('passes validation with a ClassComponent', () => {
+        const validator = componentWithName('ClassComponent')
+        const status = validator(
+          { children: <ClassComponent>Foo</ClassComponent> },
+          'children',
+          'ClassComponent'
+        )
+        expect(status).toBeUndefined()
+      })
+
+      it('fails validation with a FunctionalComponent', () => {
+        const validator = componentWithName('FunctionalComponent')
+        const status = validator({ children: 'foobar' }, 'children', 'FunctionalComponent')
+        expect(status).toBeInstanceOf(Error)
+      })
+
+      it('fails validation with a ClassComponent', () => {
+        const validator = componentWithName('ClassComponent')
+        const status = validator({ children: 'foobar' }, 'children', 'ClassComponent')
+        expect(status).toBeInstanceOf(Error)
       })
     })
 
     describe('multiple children', () => {
-      describe('passes', () => {
-        it('validation with a FunctionalComponent', () => {
-          const validator = componentWithName('FunctionalComponent')
-          const status = validator(
-            {
-              children: [
-                <FunctionalComponent key="one">One</FunctionalComponent>,
-                <FunctionalComponent key="two">Two</FunctionalComponent>,
-              ],
-            },
-            'children',
-            'FunctionalComponent'
-          )
-          expect(status).toBeUndefined()
-        })
-
-        it('validation with a ClassComponent', () => {
-          const validator = componentWithName('ClassComponent')
-          const status = validator(
-            {
-              children: [
-                <ClassComponent key="one">One</ClassComponent>,
-                <ClassComponent key="two">Two</ClassComponent>,
-              ],
-            },
-            'children',
-            'ClassComponent'
-          )
-          expect(status).toBeUndefined()
-        })
+      it('passes validation with a FunctionalComponent', () => {
+        const validator = componentWithName('FunctionalComponent')
+        const status = validator(
+          {
+            children: [
+              <FunctionalComponent key="one">One</FunctionalComponent>,
+              <FunctionalComponent key="two">Two</FunctionalComponent>,
+            ],
+          },
+          'children',
+          'FunctionalComponent'
+        )
+        expect(status).toBeUndefined()
       })
 
-      describe('fails', () => {
-        it('validation with a FunctionalComponent', () => {
-          const validator = componentWithName('FunctionalComponent')
-          const status = validator(
-            {
-              children: [
-                <FunctionalComponent key="one">One</FunctionalComponent>,
-                <FunctionalComponent key="two">Two</FunctionalComponent>,
-                'String',
-              ],
-            },
-            'children',
-            'FunctionalComponent'
-          )
-          expect(status).toBeInstanceOf(Error)
-        })
+      it('passes validation with a ClassComponent', () => {
+        const validator = componentWithName('ClassComponent')
+        const status = validator(
+          {
+            children: [
+              <ClassComponent key="one">One</ClassComponent>,
+              <ClassComponent key="two">Two</ClassComponent>,
+            ],
+          },
+          'children',
+          'ClassComponent'
+        )
+        expect(status).toBeUndefined()
+      })
 
-        it('validation with a ClassComponent', () => {
-          const validator = componentWithName('ClassComponent')
-          const status = validator(
-            {
-              children: [
-                <ClassComponent key="one">One</ClassComponent>,
-                <ClassComponent key="two">Two</ClassComponent>,
-                'String',
-              ],
-            },
-            'children',
-            'ClassComponent'
-          )
-          expect(status).toBeInstanceOf(Error)
-        })
+      it('fails validation with a FunctionalComponent', () => {
+        const validator = componentWithName('FunctionalComponent')
+        const status = validator(
+          {
+            children: [
+              <FunctionalComponent key="one">One</FunctionalComponent>,
+              <FunctionalComponent key="two">Two</FunctionalComponent>,
+              'String',
+            ],
+          },
+          'children',
+          'FunctionalComponent'
+        )
+        expect(status).toBeInstanceOf(Error)
+      })
+
+      it('fails validation with a ClassComponent', () => {
+        const validator = componentWithName('ClassComponent')
+        const status = validator(
+          {
+            children: [
+              <ClassComponent key="one">One</ClassComponent>,
+              <ClassComponent key="two">Two</ClassComponent>,
+              'String',
+            ],
+          },
+          'children',
+          'ClassComponent'
+        )
+        expect(status).toBeInstanceOf(Error)
       })
     })
   })
