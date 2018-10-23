@@ -13,7 +13,16 @@ const PackageVersion = require('../../docs/components/custom/PackageVersion/Pack
 Limits the prop to only allow components with a specific name.
 
 ```jsx noeditor static
-const propTypes = {
-  children: TDSPropTypes.componentWithName('Button'),
+const PlanChooser = () => <fieldset>{children}</fieldset>
+
+const App = () => (
+  <PlanChooser>
+    <Radio>Super Plan</Radio>
+    <Radio>Smaller Plan</Radio>
+  </PlanChooser>
+)
+
+PlanChooser.propTypes = {
+  children: TDSPropTypes.componentWithName('Radio').isRequired,
 }
 ```
