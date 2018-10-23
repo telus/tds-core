@@ -36,8 +36,13 @@ export const componentWithName = passedName => {
   const createValidate = isRequired => {
     if (isRequired) {
       return (props, propName, componentName) => {
-        checkProp(props, propName, componentName)
-        checkRequired(props, propName, componentName)
+        const checkForError = checkProp(props, propName, componentName)
+
+        if (checkForError) {
+          return checkForError
+        }
+
+        return checkRequired(props, propName, componentName)
       }
     }
 
