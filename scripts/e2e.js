@@ -18,9 +18,7 @@ const { tdsOptions } = require('./utils/parseArgs')
 const getPackageNames = require('./utils/getPackageNames')
 
 getPackageNames(packageNames => {
-  const onlyCorePackages = packageNames
-    .filter(name => name.startsWith('@tds/core-') || name === '@tds/util-prop-types')
-    .join(' ')
+  const onlyCorePackages = packageNames.filter(name => name.startsWith('@tds/core-')).join(' ')
 
   const { status } = spawnSync(
     'npx',
