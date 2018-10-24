@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType, componentWithName, or } from 'airbnb-prop-types'
+import { childrenOfType } from 'airbnb-prop-types'
+import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 import DecorativeIcon from '@tds/core-decorative-icon'
@@ -184,9 +185,9 @@ class PanelWrapper extends React.Component {
 
 PanelWrapper.propTypes = {
   panelId: PropTypes.string.isRequired,
-  panelHeader: or([PropTypes.string, componentWithName('Text')]).isRequired,
-  panelSubtext: or([PropTypes.string, componentWithName('Text')]),
-  panelTertiaryText: or([PropTypes.string, componentWithName('Text')]),
+  panelHeader: PropTypes.oneOfType([PropTypes.string, componentWithName('Text')]).isRequired,
+  panelSubtext: PropTypes.oneOfType([PropTypes.string, componentWithName('Text')]),
+  panelTertiaryText: PropTypes.oneOfType([PropTypes.string, componentWithName('Text')]),
   panelOnToggle: PropTypes.func,
   panelDisabled: PropTypes.bool,
   open: PropTypes.bool,

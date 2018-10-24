@@ -30,6 +30,7 @@
     "@tds/core-dimple-divider": "^1.0.0",
     "@tds/core-hairline-divider": "^1.0.0",
     "@tds/core-text": "^1.0.2",
+    "@tds/util-prop-types": "^1.0.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
