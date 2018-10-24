@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.1.9...@tds/core-notification@1.2.0) (2018-10-24)
+
+
+### Features
+
+* **core-notification:** add dismissible ([b419a2c](https://github.com/telusdigital/tds/commit/b419a2c))
+* **core-notification:** fix sapcing, warn when dismiss props not passed ([6d02f9d](https://github.com/telusdigital/tds/commit/6d02f9d))
+
+
+
+
 <a name="1.1.9"></a>
 ## [1.1.9](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.1.8...@tds/core-notification@1.1.9) (2018-08-09)
 
