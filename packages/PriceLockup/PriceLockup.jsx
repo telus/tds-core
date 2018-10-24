@@ -11,10 +11,6 @@ import styles from './PriceLockup.modules.scss'
  */
 
 const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText }) => {
-  const BottomText = () => {
-    return <Text size={size}>{bottomText}</Text>
-  }
-
   const DollarSign = () => {
     if (size === 'large') {
       return <span className={styles.dollarSignH1Style}>&#36;</span>
@@ -29,25 +25,13 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     return <DisplayHeading>{price}</DisplayHeading>
   }
 
-  const RateText = () => {
-    const RateTextSize = RateTextSizeDecider(size)
-    return (
-      <div className={styles.rateTextWrapper}>
-        <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>
-      </div>
-    )
-  }
   const PriceValueSign = () => {
     return (
-      <span className={styles.priceValueSign}>
+      <Box between={size === 'large' ? 2 : 1} inline className={styles.priceValueSign}>
         {signDirection === 'left' ? <DollarSign /> : undefined}
-        {size === 'small' ? (
-          <span className={styles.priceValueSignsmall}>{price}</span>
-        ) : (
-          <span className={styles.priceValueSignmedium}>{price}</span>
-        )}
+        <span className={styles[`priceValueSign${size}`]}>{price}</span>
         {signDirection === 'right' ? <DollarSign /> : undefined}
-      </span>
+      </Box>
     )
   }
 
@@ -65,12 +49,12 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
   return (
     <Box between={3}>
       {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-      <div className={styles.priceWrapper}>
+      <Box between={size === 'small' ? 1 : 2} inline dangerouslyAddClassName={styles.priceWrapper}>
         <PriceValueSign />
-        {rateText ? <RateText /> : ''}
-      </div>
-      <Hairline rateText={rateText} bottomText={bottomText} size={size} />
-      {size === 'medium' && bottomText ? <BottomText /> : ''}
+        {rateText && <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>}
+      </Box>
+      {rateText && bottomText && size === 'medium' ? <HairlineDivider /> : ''}
+      {size === 'medium' && bottomText ? <Text size={size}>{bottomText}</Text> : ''}
     </Box>
   )
 }
