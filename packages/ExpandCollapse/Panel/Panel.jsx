@@ -2,6 +2,7 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import { componentWithName, or } from 'airbnb-prop-types'
 
 /**
  * Expandable content areas for use with the `ExpandCollapse` or `Accordion`
@@ -18,15 +19,15 @@ Panel.propTypes = {
   /**
    * The title.
    */
-  header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  header: or([PropTypes.string, componentWithName('Text')]).isRequired,
   /**
    * Optional subtext.
    */
-  subtext: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  subtext: or([PropTypes.string, componentWithName('Text')]),
   /**
    * Optional tertiary text. Will be displayed on the right side of the panel header.
    */
-  tertiaryText: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  tertiaryText: or([PropTypes.string, componentWithName('Text')]),
   /**
    * Whether or not to disable the panel from being opened or closed.
    */
