@@ -1,29 +1,29 @@
 @import '~@tds/core-colours/colours'; // be sure to add core-colours as a dependency first
 
 .priceValueSign {
-  display: flex;
+  line-height: 1;
 }
 
 .priceValueSignsmall {
   composes: h2 from '../Heading/Heading.modules.scss';
+  line-height: 1.15;
 }
 
 .priceValueSignmedium,
 .priceValueSignlarge {
   composes: h1 from '../Heading/Heading.modules.scss';
+  line-height: 1;
+}
+
+.priceValueSignlarge {
+  composes: heading from '../DisplayHeading/DisplayHeading.modules.scss';
+  composes: priceValueSign;
 }
 
 .priceWrapper {
-  display: flex;
   align-items: flex-end;
 }
 
-.rateTextWrapper {
-  span {
-    vertical-align: 0.2rem;
-  }
-}
-
 .dollarSignH1Style {
-  font-size: 1.8rem;
+  composes: h1 from '../Heading/Heading.modules.scss';
 }
