@@ -18,6 +18,7 @@
   composes: medium from '../Text/Text.modules.scss';
   display: inline-block;
   text-decoration: none;
+  max-width: 100%;
 
   @include helvetica-neue-roman-55;
 
