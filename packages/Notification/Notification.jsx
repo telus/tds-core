@@ -70,31 +70,41 @@ class Notification extends React.Component {
       >
         <FlexGrid>
           <FlexGrid.Row>
-            <FlexGrid.Col xs={dismissible ? 11 : undefined}>
-              <Box inline between={3}>
-                {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
-                <div
-                  className={joinClassNames(
-                    isImportant(variant) ? styles.withIcon : styles.withoutIcon
+            <FlexGrid.Col>
+              <FlexGrid gutter={false}>
+                <FlexGrid.Row>
+                  <FlexGrid.Col xs={dismissible ? 11 : undefined}>
+                    <Box inline between={3}>
+                      {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
+                      <div
+                        className={joinClassNames(
+                          isImportant(variant) ? styles.withIcon : styles.withoutIcon
+                        )}
+                      >
+                        <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
+                      </div>
+                    </Box>
+                  </FlexGrid.Col>
+                  {dismissible && (
+                    <FlexGrid.Col>
+                      <Box dangerouslyAddClassName={styles.dismissContainer}>
+                        <div className={styles.dismiss}>
+                          <StandaloneIcon
+                            symbol="times"
+                            size={16}
+                            a11yText={dismissibleA11yLabel}
+                            variant={variant === 'instructional' ? 'secondary' : undefined}
+                            onClick={() => this.setState(() => ({ dismissed: true }))}
+                          />
+                        </div>
+                      </Box>
+                    </FlexGrid.Col>
                   )}
-                >
-                  <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
-                </div>
-              </Box>
+                </FlexGrid.Row>
+              </FlexGrid>
             </FlexGrid.Col>
           </FlexGrid.Row>
         </FlexGrid>
-        {dismissible && (
-          <div className={styles.dismiss}>
-            <StandaloneIcon
-              symbol="times"
-              size={16}
-              a11yText={dismissibleA11yLabel}
-              variant={variant === 'instructional' ? 'secondary' : undefined}
-              onClick={() => this.setState(() => ({ dismissed: true }))}
-            />
-          </div>
-        )}
       </Box>
     )
   }
