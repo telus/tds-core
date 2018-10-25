@@ -8,26 +8,28 @@ about: Suggest an idea for tds-core
 
   When opening issues, be sure NOT to include any private or personal
   information such as secrets, passwords, or any source code that involves
-  data retrieval. 
+  data retrieval.
+
+  Also, do not include links to sites on staging.
 -->
 
 ## Description
 
-* Description of the problem
+- Description of the problem
 
 ## Recommendation
 
-* Description of the proposed solution
+- Description of the proposed solution
 
 ## Designs
 
-* Screenshots
-* Sketch file
+- Screenshots
+- Sketch file
 
 ## Meta
 
-* TDS version: vX.Y.Z
-* Willing to develop solution: Yes/No
-* Has workaround: Yes/No
-* High impact: Yes/No
-* Designer/Developer Pair: Your name, your design/dev pair's name 
+- TDS version: vX.Y.Z
+- Willing to develop solution: Yes/No
+- Has workaround: Yes/No
+- High impact: Yes/No
+- Designer/Developer Pair: Your name, your design/dev pair's name

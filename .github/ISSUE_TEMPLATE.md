@@ -3,7 +3,9 @@
 
   When opening issues, be sure NOT to include any private or personal
   information such as secrets, passwords, or any source code that involves
-  data retrieval. 
+  data retrieval.
+
+  Also, do not include links to sites on staging.
 -->
 
 <!--
@@ -15,28 +17,28 @@
 
 ## Description
 
-* Description of the defect
+- Description of the defect
 
 ## Reproduction Steps
 
-* Click this thing
-* Now click this
-* Observe this happens
+- Click this thing
+- Now click this
+- Observe this happens
 
 ## Reproduction Percentage (if applicable)
 
-* 0/10 times
+- 0/10 times
 
 ## Meta
 
-* TDS version: vX.Y.Z
-* Willing to develop solution: Yes/No
-* Has workaround: Yes/No
-* High impact: Yes/No
+- TDS version: vX.Y.Z
+- Willing to develop solution: Yes/No
+- Has workaround: Yes/No
+- High impact: Yes/No
 
 ## Screenshots
 
-* Include any relevant screenshots
+- Include any relevant screenshots
 
 <!--
   Template for logging FEATURE REQUESTS
@@ -47,20 +49,20 @@
 
 ## Description
 
-* Description of the problem
+- Description of the problem
 
 ## Recommendation
 
-* Description of the proposed solution
+- Description of the proposed solution
 
 ## Designs
 
-* Screenshots
-* Sketch file
+- Screenshots
+- Sketch file
 
 ## Meta
 
-* TDS version: vX.Y.Z
-* Willing to develop solution: Yes/No
-* Has workaround: Yes/No
-* High impact: Yes/No
+- TDS version: vX.Y.Z
+- Willing to develop solution: Yes/No
+- Has workaround: Yes/No
+- High impact: Yes/No
