@@ -20,6 +20,23 @@ import joinClassNames from '../../../shared/utils/joinClassNames'
 import styles from './PanelWrapper.modules.scss'
 import displayStyles from '../../../shared/styles/Display.modules.scss'
 
+const parseHeader = text => {
+  const t = text
+    .replace('&trade;', '\u2122')
+    .replace('&reg;', '\u00AE')
+    .split('^^')
+    .map((line, index) => {
+      if (line === '') {
+        return ''
+      }
+      if (index % 2 === 0) {
+        return line
+      }
+      return <Text.Sup key={line}>{line}</Text.Sup>
+    })
+  return t
+}
+
 class PanelWrapper extends React.Component {
   constructor(props) {
     super(props)
@@ -86,7 +103,7 @@ class PanelWrapper extends React.Component {
       <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
         <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlign}>
           <div className={styles.fullWidth}>
-            <Text size="large">{header}</Text>
+            <Text size="large">{parseHeader(header)}</Text>
           </div>
           {subtext && (
             <div className={styles.subtextContainer}>
