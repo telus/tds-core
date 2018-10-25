@@ -18,13 +18,6 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     return <Text size={size === 'small' ? 'medium' : 'large'}>&#36;</Text>
   }
 
-  const RateText = () => {
-    if (size === 'small') {
-      return <Text size="medium">{rateText}</Text>
-    }
-    return <DisplayHeading>{price}</DisplayHeading>
-  }
-
   const PriceValueSign = () => {
     return (
       <Box between={size === 'large' ? 2 : 1} inline className={styles.priceValueSign}>
@@ -33,17 +26,6 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
         {signDirection === 'right' ? <DollarSign /> : undefined}
       </Box>
     )
-  }
-
-  const Hairline = () => {
-    if (rateText && bottomText && size === 'medium') {
-      return (
-        <div className={styles.hairlineWrapper}>
-          <HairlineDivider />
-        </div>
-      )
-    }
-    return ''
   }
 
   return (
