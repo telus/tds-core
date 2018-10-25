@@ -104,6 +104,26 @@ describe('ExpandCollapse', () => {
       expect(findPanelHeader('panel-1')).toContainReact(<Text size="large">Panel title</Text>)
     })
 
+    it('can be a string with superscript', () => {
+      const { findPanelHeader } = doMount(
+        <ExpandCollapse>{aPanel({ id: 'panel-1', header: 'TELUS^^TM^^' })}</ExpandCollapse>
+      )
+
+      expect(findPanelHeader('panel-1')).toContainReact(<Text.Sup>TM</Text.Sup>)
+    })
+
+    it('can be a string with trademark, and registered HTML entities', () => {
+      const { findPanelHeader } = doMount(
+        <ExpandCollapse>
+          {aPanel({ id: 'panel-1', header: 'TELUS&trade; Optik TV&reg;' })}
+        </ExpandCollapse>
+      )
+
+      expect(findPanelHeader('panel-1')).toContainReact(
+        <Text size="large">TELUS&trade; Optik TV&reg;</Text>
+      )
+    })
+
     it('can have additional subtext', () => {
       const { findPanelHeader } = doMount(
         <ExpandCollapse>
