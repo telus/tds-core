@@ -12,12 +12,8 @@ const defaultProps = {
 }
 
 describe('PriceLockup', () => {
-  const defaultProps = {
-    price: '25',
-  }
-  const doShallow = (overrides = {}) => shallow(<PriceLockup {...defaultProps} {...overrides} />)
-  it('renders', () => {
-    const priceLockup = doShallow({ price: '25' })
+  const doShallow = (props = {}) => shallow(<PriceLockup {...defaultProps} {...props} />)
+  const doMount = (props = {}) => mount(<PriceLockup {...defaultProps} {...props} />)
 
   it('renders with default props', () => {
     const priceLockup = doShallow()

@@ -9,8 +9,7 @@
   line-height: 1.15;
 }
 
-.priceValueSignmedium,
-.priceValueSignlarge {
+.priceValueSignmedium {
   composes: h1 from '../Heading/Heading.modules.scss';
   line-height: 1;
 }
