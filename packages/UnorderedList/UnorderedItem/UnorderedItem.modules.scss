@@ -19,6 +19,8 @@
     content: '';
     background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==);
     color: $color-telus-purple;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   &.small {
     &::before {
@@ -30,16 +32,16 @@
 
   &.medium {
     &::before {
-      width: 0.31rem; // ~5px
-      height: 0.31rem; // ~5px
+      width: 0.32rem; // ~5px
+      height: 0.32rem; // ~5px
       top: 0.65rem;
     }
   }
 
   &.large {
     &::before {
-      width: 0.37rem; // ~6px
-      height: 0.37rem; // ~6px
+      width: 0.38rem; // ~6px
+      height: 0.38rem; // ~6px
       top: 0.87rem;
     }
   }
@@ -49,8 +51,9 @@
   composes: item;
 
   &::before {
-    font-size: 1.05rem;
     content: '\f101';
+    font-size: 100%;
+    width: 0.75rem;
     color: $color-primary;
   }
 }
@@ -59,8 +62,9 @@
   composes: item;
 
   &::before {
-    font-size: 1.05rem;
     content: '\f104';
+    font-size: 100%;
+    width: 0.75rem;
     color: $color-cardinal;
   }
 }
