@@ -5,7 +5,6 @@ import { childrenOfType } from 'airbnb-prop-types'
 import Box from '@tds/core-box'
 
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
 
 import UnorderedItem from './UnorderedItem/UnorderedItem'
 
@@ -18,12 +17,7 @@ const injectListStyle = (child, listStyle, size) => React.cloneElement(child, { 
  */
 const UnorderedList = ({ listStyle, size, children, ...rest }) => {
   return (
-    <Box
-      {...safeRest(rest)}
-      tag="ul"
-      between={2}
-      dangerouslyAddClassName={joinClassNames(styles.base, styles[size])}
-    >
+    <Box {...safeRest(rest)} tag="ul" between={2} dangerouslyAddClassName={styles.base}>
       {React.Children.map(children, child => injectListStyle(child, listStyle, size))}
     </Box>
   )
