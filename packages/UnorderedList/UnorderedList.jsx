@@ -30,6 +30,8 @@ UnorderedList.propTypes = {
   listStyle: PropTypes.oneOf(['circle', 'checkmark', 'x']),
   /**
    * The size of the list's text.
+   *
+   * @since 2.0.0
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   /**
