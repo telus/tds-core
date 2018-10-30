@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import Box from '@tds/core-box'
+import { warn } from '../../shared/utils/warn'
 import styles from './PriceLockup.modules.scss'
 
 /**
@@ -11,19 +12,45 @@ import styles from './PriceLockup.modules.scss'
  */
 
 const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText }) => {
-  const DollarSign = () => {
+  const renderDollarSign = () => {
     if (size === 'large') {
-      return <span className={styles.dollarSignH1Style}>&#36;</span>
+      return (
+        <span data-id="dollarSign" className={styles.dollarSignH1Style}>
+          &#36;
+        </span>
+      )
     }
-    return <Text size={size === 'small' ? 'medium' : 'large'}>&#36;</Text>
+    return <Text size={size}>&#36;</Text>
   }
 
-  const PriceValueSign = () => {
+  const renderPriceValueSign = () => {
     return (
       <Box between={size === 'large' ? 2 : 1} inline className={styles.priceValueSign}>
-        {signDirection === 'left' ? <DollarSign /> : undefined}
-        <span className={styles[`priceValueSign${size}`]}>{price}</span>
-        {signDirection === 'right' ? <DollarSign /> : undefined}
+        {signDirection === 'left' ? renderDollarSign() : undefined}
+        <span data-id="priceValue" className={styles[`priceValueSign${size}`]}>
+          {price}
+        </span>
+        {signDirection === 'right' ? renderDollarSign() : undefined}
+      </Box>
+    )
+  }
+
+  const renderBottomText = () => {
+    if (size !== 'large' && bottomText) {
+      return <Text size={size}>{bottomText}</Text>
+    }
+    if (size === 'large' && bottomText) {
+      warn('PriceLockup', "The props bottomText and size='large' cannot be used together")
+      return ''
+    }
+    return ''
+  }
+
+  const renderHairLineBottomText = () => {
+    return (
+      <Box between={2} data-id="price-hairline">
+        {size !== 'large' && bottomText && rateText && <HairlineDivider />}
+        {renderBottomText()}
       </Box>
     )
   }
@@ -32,11 +59,10 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     <Box between={3}>
       {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
       <Box between={size === 'small' ? 1 : 2} inline dangerouslyAddClassName={styles.priceWrapper}>
-        <PriceValueSign />
+        {renderPriceValueSign()}
         {rateText && <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>}
       </Box>
-      {rateText && bottomText && size === 'medium' ? <HairlineDivider /> : ''}
-      {size === 'medium' && bottomText ? <Text size={size}>{bottomText}</Text> : ''}
+      {renderHairLineBottomText()}
     </Box>
   )
 }
@@ -45,7 +71,7 @@ PriceLockup.propTypes = {
   /**
    * Font Size of Labels, Price, and Signs
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['small', 'medium', 'large']).isRequired,
   /**
    * Position of Dollar Sign relative to Price Value
    */
@@ -69,7 +95,6 @@ PriceLockup.propTypes = {
 }
 
 PriceLockup.defaultProps = {
-  size: undefined,
   signDirection: 'left',
   topText: undefined,
   bottomText: undefined,

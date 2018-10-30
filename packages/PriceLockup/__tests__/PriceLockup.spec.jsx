@@ -2,13 +2,14 @@ import React from 'react'
 import { shallow, mount } from 'enzyme'
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
+import Box from '@tds/core-box'
 import PriceLockup from '../PriceLockup'
 
 const defaultProps = {
   signDirection: 'left',
   price: '25',
+  size: 'small',
   rateText: '/month',
-  bottomText: 'bottom text',
 }
 
 describe('PriceLockup', () => {
@@ -30,100 +31,92 @@ describe('PriceLockup', () => {
   })
 
   describe('size prop is small', () => {
-    const priceLockup = doShallow({ size: 'small' })
     it('will make price h2 sized', () => {
-      expect(priceLockup.html()).toContain('priceValueSignsmall')
+      const priceLockup = doShallow({ size: 'small' })
+      expect(priceLockup.find('[data-id="priceValue"]')).toHaveClassName('priceValueSignsmall')
     })
     it('will make rate text medium sized', () => {
-      priceLockup.setProps({ rateText: '/month' })
+      const priceLockup = doShallow({ size: 'small', rateText: '/month' })
       expect(priceLockup).toContainReact(<Text size="medium">/month</Text>)
     })
     it('will make top text small sized', () => {
-      priceLockup.setProps({ topText: 'top text' })
+      const priceLockup = doShallow({ size: 'small', topText: 'top text' })
       expect(priceLockup).toContainReact(<Text size="small">top text</Text>)
+    })
+    it('will make dollar sign small sized', () => {
+      const priceLockup = doShallow({ size: 'small', topText: 'top text' })
+      expect(priceLockup).toContainReact(<Text size="small">$</Text>)
     })
   })
 
   describe('size prop is medium', () => {
-    const priceLockup = doShallow({ size: 'medium' })
     it('will make price h2 sized', () => {
-      expect(priceLockup.html()).toContain('priceValueSignmedium')
+      const priceLockup = doShallow({ size: 'medium' })
+      expect(priceLockup.find('[data-id="priceValue"]')).toHaveClassName('priceValueSignmedium')
     })
     it('will make rate text medium sized', () => {
-      priceLockup.setProps({ rateText: '/month' })
+      const priceLockup = doShallow({ size: 'medium', rateText: '/month' })
       expect(priceLockup).toContainReact(<Text size="medium">/month</Text>)
     })
     it('will make top text small sized', () => {
-      priceLockup.setProps({ topText: 'top text' })
+      const priceLockup = doShallow({ size: 'medium', topText: 'top text' })
       expect(priceLockup).toContainReact(<Text size="small">top text</Text>)
     })
     it('will make bottom text medium sized', () => {
-      priceLockup.setProps({ bottomText: 'bottom text' })
+      const priceLockup = doShallow({ size: 'medium', bottomText: 'bottom text' })
       expect(priceLockup).toContainReact(<Text size="medium">bottom text</Text>)
+    })
+    it('will make dollar sign medium sized', () => {
+      const priceLockup = doShallow({ size: 'medium' })
+      expect(priceLockup).toContainReact(<Text size="medium">$</Text>)
     })
   })
 
   describe('size prop is large', () => {
-    const priceLockup = doShallow({ size: 'large' })
     it('will make DollarSign h1 sized', () => {
-      expect(priceLockup.html()).toContain('dollarSignH1Style')
+      const priceLockup = doShallow({ size: 'large' })
+      expect(priceLockup.find('[data-id="dollarSign"]')).toHaveClassName('dollarSignH1Style')
     })
+
     it('will make price h2 sized', () => {
-      expect(priceLockup.html()).toContain('priceValueSignlarge')
+      const priceLockup = doShallow({ size: 'large' })
+      expect(priceLockup.find('[data-id="priceValue"]')).toHaveClassName('priceValueSignlarge')
     })
     it('will make rate text large sized', () => {
-      priceLockup.setProps({ rateText: '/month' })
+      const priceLockup = doShallow({ size: 'large', rateText: '/month' })
       expect(priceLockup).toContainReact(<Text size="large">/month</Text>)
     })
     it('will make top text large sized', () => {
-      priceLockup.setProps({ topText: 'top text' })
+      const priceLockup = doShallow({ size: 'large', topText: 'top text' })
       expect(priceLockup).toContainReact(<Text size="large">top text</Text>)
     })
   })
 
-  describe('signDirection prop', () => {
-    const priceLockup = doMount()
-    it('is left, and dollar sign will be left of price', () => {
-      priceLockup.setProps({ signDirection: 'left' })
+  describe('Dollar Sign', () => {
+    it('appears on left side of price when specified', () => {
+      const priceLockup = doMount({ signDirection: 'left' })
       expect(priceLockup.text()).toEqual('$25/month')
     })
-    it('is right, and dollar sign will be right of price', () => {
-      priceLockup.setProps({ signDirection: 'right' })
+
+    it('appears on left side of price by default', () => {
+      const priceLockup = doMount({ signDirection: undefined })
+      expect(priceLockup.text()).toEqual('$25/month')
+    })
+    it('appears on the right side of the price when specified', () => {
+      const priceLockup = doMount({ signDirection: 'right' })
       expect(priceLockup.text()).toEqual('25$/month')
-    })
-    it('is undefined, and dollar sign will be left of price', () => {
-      priceLockup.setProps({ signDirection: undefined })
-      expect(priceLockup.text()).toEqual('$25/month')
-    })
-  })
-
-  describe('rateText prop', () => {
-    const priceLockup = doShallow({ rateText: 'rate text' })
-    it('when present and size prop is not large', () => {
-      expect(priceLockup).toContainReact(<Text size="medium">rate text</Text>)
-    })
-    it('when present and size prop is large', () => {
-      priceLockup.setProps({ size: 'large' })
-      expect(priceLockup).toContainReact(<Text size="large">rate text</Text>)
-    })
-  })
-
-  describe('DollarSign Component becomes medium sized when', () => {
-    const priceLockup = doMount()
-    it('size prop is small', () => {
-      priceLockup.setProps({ size: 'small' })
-      expect(priceLockup).toContainReact(<Text size="medium">$</Text>)
-    })
-    it('size prop is medium', () => {
-      priceLockup.setProps({ size: 'medium' })
-      expect(priceLockup).toContainReact(<Text size="large">$</Text>)
     })
   })
 
   describe('HairlineDivider present', () => {
-    const priceLockup = doShallow({ size: 'medium' })
+    const priceLockup = doShallow({ size: 'medium', bottomText: 'text' })
     it('when rateText, bottomText, and size prop is medium available', () => {
-      expect(priceLockup).toContainReact(<HairlineDivider />)
+      expect(priceLockup.find('[data-id="price-hairline"]')).toContainReact(
+        <Box between={2} data-id="price-hairline">
+          <HairlineDivider />
+          <Text size="medium">text</Text>
+        </Box>
+      )
     })
   })
 })
