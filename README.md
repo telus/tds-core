@@ -6,8 +6,8 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![Build Status](https://travis-ci.com/telus/tds-core.svg?branch=master)](https://travis-ci.com/telus/tds-core)
 
-* [Documentation](https://tds.telus.com)
-* [Component catalogue](https://tds.telus.com/components/index.html)
+- [Documentation](https://tds.telus.com)
+- [Component catalogue](https://tds.telus.com/components/index.html)
 
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences.
 It's a holistic platform that integrates documentation, guidelines and design management that serves as single source for
@@ -27,6 +27,7 @@ The following group are the active maintainers of this project, and have merge r
 | Marco Donnici       | Developer     | @marcod         | @marcod1419    |
 | Jordan Raffoul      | Developer     | @Jordan Raffoul | @jraff         |
 | Lucy List           | Design        | @lucylist       | @lucylist      |
+| Christina Lo        | Design        | @Christina L.   | @Christina-Lo  |
 
 ## Inactive members
 
