@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 
@@ -37,7 +37,7 @@ UnorderedList.propTypes = {
   /**
    * The list items. Must be at least one `UnorderedList.Item`.
    */
-  children: childrenOfType(UnorderedItem).isRequired,
+  children: componentWithName('UnorderedItem').isRequired,
 }
 
 UnorderedList.defaultProps = {
