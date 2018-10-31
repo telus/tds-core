@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 
@@ -44,7 +44,7 @@ OrderedList.propTypes = {
   /**
    * The list items. Must be at least one `OrderedList.Item`.
    */
-  children: childrenOfType(OrderedItem).isRequired,
+  children: componentWithName('OrderedItem').isRequired,
 }
 
 OrderedList.defaultProps = {
