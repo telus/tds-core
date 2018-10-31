@@ -29,13 +29,13 @@ describe('<OrderedList />', () => {
   it('OrderList renders an HTML ol tag', () => {
     const orderedList = doShallow()
 
-    expect(orderedList.dive()).toHaveTagName('ol')
+    expect(orderedList.dive()).toHaveDisplayName('ol')
   })
 
   it('OrderList.Item renders an HTML li tag', () => {
     const orderedListItem = shallow(<OrderedList.Item>a list item</OrderedList.Item>)
 
-    expect(orderedListItem).toHaveTagName('li')
+    expect(orderedListItem).toHaveDisplayName('li')
   })
 
   it('can have a list style', () => {
