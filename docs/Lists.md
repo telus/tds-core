@@ -2,12 +2,12 @@
 
 - Try to keep lists consistent: either all fragments or all sentences
 - Start each bullet with a capital letter
-- Do not end sentence with a period
-- Limit to one sentence each if possible. If you need to use two sentences, add a period after the first sentence (like this). Omit the period in last sentence, to match the other points
+- All bullet points should be simple, limited to one statement per bullet and use sentence case
+- Points should not include ending punctuation
 - We recommend applying the following spacing after an Unordered List or Ordered List
-  - For `small` lists: use a 12px bottom margin
-  - For `medium` lists: use a 16px bottom margin
-  - For `large` lists: use a 28px bottom margin
+  - For `small` lists: use a 16px (Box spacing `3`) bottom margin
+  - For `medium` lists: use a 16px (Box spacing `3`) bottom margin
+  - For `large` lists: use a 32px (Box spacing `4`) bottom margin
 
 ### Sizing lists
 
