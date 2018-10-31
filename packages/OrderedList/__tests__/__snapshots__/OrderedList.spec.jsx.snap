@@ -5,7 +5,7 @@ exports[`<OrderedList /> renders 1`] = `
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D decimal medium"
 >
   <li
-    class="base"
+    class="base item"
   >
     <span
       class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
@@ -14,7 +14,7 @@ exports[`<OrderedList /> renders 1`] = `
     </span>
   </li>
   <li
-    class="base"
+    class="base item"
   >
     <span
       class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
