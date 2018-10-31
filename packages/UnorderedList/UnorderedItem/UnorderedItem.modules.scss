@@ -3,6 +3,7 @@
 
 .item {
   position: relative;
+  line-height: 1;
 
   &::before {
     display: block;
@@ -47,13 +48,17 @@
   }
 }
 
+%iconSize {
+  font-size: 1rem;
+  width: 0.75rem;
+}
+
 .checkmark {
   composes: item;
 
   &::before {
     content: '\f101';
-    font-size: 100%;
-    width: 0.75rem;
+    @extend %iconSize;
     color: $color-primary;
   }
 }
@@ -63,8 +68,7 @@
 
   &::before {
     content: '\f104';
-    font-size: 100%;
-    width: 0.75rem;
+    @extend %iconSize;
     color: $color-cardinal;
   }
 }

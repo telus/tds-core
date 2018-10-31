@@ -7,9 +7,13 @@ import safeRest from '../../../shared/utils/safeRest'
 import joinClassNames from '../../../shared/utils/joinClassNames'
 
 import styles from './UnorderedItem.modules.scss'
+import listStyles from '../../../shared/styles/List.modules.scss'
 
 const UnorderedItem = ({ listStyle, size, children, ...rest }) => (
-  <li {...safeRest(rest)} className={joinClassNames(styles[listStyle], styles[size])}>
+  <li
+    {...safeRest(rest)}
+    className={joinClassNames(styles[listStyle], styles[size], listStyles.item)}
+  >
     <Text size={size}>{children}</Text>
   </li>
 )
