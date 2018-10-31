@@ -29,13 +29,13 @@ describe('<UnorderedList />', () => {
   it('renders an HTML ul tag', () => {
     const unorderedList = doShallow()
 
-    expect(unorderedList.dive()).toHaveTagName('ul')
+    expect(unorderedList.dive()).toHaveDisplayName('ul')
   })
 
   it('UnorderedList.Item renders an HTML li tag', () => {
     const unorderedListItem = shallow(<UnorderedList.Item>Some content</UnorderedList.Item>)
 
-    expect(unorderedListItem).toHaveTagName('li')
+    expect(unorderedListItem).toHaveDisplayName('li')
   })
 
   it('can have a list style', () => {
