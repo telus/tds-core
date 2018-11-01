@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.1.2...@tds/core-expand-collapse@1.2.0) (2018-11-01)
+
+
+### Features
+
+* **core-expand-collapse:** add template syntax to Panel header ([6de3aeb](https://github.com/telusdigital/tds/commit/6de3aeb))
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.1.1...@tds/core-expand-collapse@1.1.2) (2018-09-05)
 
