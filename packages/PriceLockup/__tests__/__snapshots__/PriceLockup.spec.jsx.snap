@@ -7,46 +7,52 @@ exports[`PriceLockup renders with default props 1`] = `
   tag="div"
 >
   <Box
-    between={1}
-    dangerouslyAddClassName="priceWrapper"
-    inline={true}
+    between={2}
+    inline={false}
     tag="div"
   >
     <Box
-      between={1}
-      className="priceValueSign"
+      between={2}
+      dangerouslyAddClassName="priceWrapper"
       inline={true}
       tag="div"
     >
+      <Box
+        between={1}
+        className="priceValueSign"
+        inline={true}
+        tag="div"
+      >
+        <Text
+          block={false}
+          bold={false}
+          invert={false}
+          size="small"
+        >
+          $
+        </Text>
+        <span
+          className="priceValueSignsmall"
+          data-id="priceValue"
+        >
+          25
+        </span>
+      </Box>
       <Text
         block={false}
         bold={false}
         invert={false}
-        size="small"
+        size="medium"
       >
-        $
+        /month
       </Text>
-      <span
-        className="priceValueSignsmall"
-        data-id="priceValue"
-      >
-        25
-      </span>
     </Box>
-    <Text
-      block={false}
-      bold={false}
-      invert={false}
-      size="medium"
-    >
-      /month
-    </Text>
+    <Box
+      between={2}
+      data-id="price-hairline"
+      inline={false}
+      tag="div"
+    />
   </Box>
-  <Box
-    between={2}
-    data-id="price-hairline"
-    inline={false}
-    tag="div"
-  />
 </Box>
 `;
