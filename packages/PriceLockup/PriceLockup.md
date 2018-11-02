@@ -10,6 +10,8 @@
 
 - size of component can be determined by 3 sizes called `small`, `medium`, `large`
 
+- only under `small` and `medium` sizing, `bottomText` and `hairlineDivider` are available
+
 ```jsx
 <PriceLockup
   size="medium"

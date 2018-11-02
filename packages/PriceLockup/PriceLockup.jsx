@@ -20,6 +20,9 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
         </span>
       )
     }
+    if (size === 'medium') {
+      return <Text size="large">&#36;</Text>
+    }
     return <Text size={size}>&#36;</Text>
   }
 
@@ -58,11 +61,13 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
   return (
     <Box between={3}>
       {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-      <Box between={size === 'small' ? 1 : 2} inline dangerouslyAddClassName={styles.priceWrapper}>
-        {renderPriceValueSign()}
-        {rateText && <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>}
+      <Box between={size === 'small' ? 2 : 3}>
+        <Box between={2} inline dangerouslyAddClassName={styles.priceWrapper}>
+          {renderPriceValueSign()}
+          {rateText && <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>}
+        </Box>
+        {renderHairLineBottomText()}
       </Box>
-      {renderHairLineBottomText()}
     </Box>
   )
 }

@@ -1,28 +1,70 @@
 @import '~@tds/core-colours/colours';
+@import '~@tds/core-responsive/responsive';
+@import '../../shared/scss/typography';
 
 .priceValueSign {
   line-height: 1;
 }
 
+.wordBreakSpacing {
+  composes: wordBreak from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
+}
+
 .priceValueSignsmall {
-  composes: h2 from '../Heading/Heading.modules.scss';
-  line-height: 1.15;
+  composes: wordBreakSpacing;
+  @include helvetica-neue-light-45;
+  font-size: 1.75rem;
+  letter-spacing: -0.8px;
+  .sup {
+    font-size: 1rem;
+    top: -0.7em;
+  }
+  line-height: 0.95;
 }
 
 .priceValueSignmedium {
-  composes: h1 from '../Heading/Heading.modules.scss';
-  line-height: 1;
+  composes: wordBreakSpacing;
+  @include helvetica-neue-light-45;
+  @include helvetica-neue-thin-35;
+  font-size: 2.75rem;
+  letter-spacing: 0;
+  .sup {
+    font-size: 1.25rem;
+    top: -1.3em;
+  }
+  line-height: 1.05;
+}
+
+.base {
+  composes: wordBreakSpacing;
+  @include helvetica-neue-thin-35;
 }
 
 .priceValueSignlarge {
-  composes: heading from '../DisplayHeading/DisplayHeading.modules.scss';
   composes: priceValueSign;
+  composes: base;
+  font-size: 4.5rem;
+  letter-spacing: 0.2px;
+  .sup {
+    font-size: 1.25rem;
+    top: -2.2em;
+  }
+  line-height: 0.95;
 }
 
 .priceWrapper {
   align-items: flex-end;
+  margin-bottom: 8px;
 }
 
 .dollarSignH1Style {
-  composes: h1 from '../Heading/Heading.modules.scss';
+  @include helvetica-neue-thin-35;
+  font-size: 2.75rem;
+  line-height: 1.18;
+  letter-spacing: 0;
+  .sup {
+    font-size: 1.25rem;
+    top: -1.3em;
+  }
 }
