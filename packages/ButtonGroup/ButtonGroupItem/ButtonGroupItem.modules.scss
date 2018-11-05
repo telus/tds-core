@@ -1,0 +1,38 @@
+@import '~@tds/core-colours/colours';
+@import '~@tds/core-responsive/responsive';
+
+.itemContainer {
+  margin: 0.5rem 0;
+}
+
+.itemButton {
+  composes: sizing from '../../../shared/components/BaseButton/BaseButton.modules.scss';
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+
+  background-color: $color-white;
+  box-shadow: 0px 0px 0px 1px $color-telus-purple;
+  color: $color-telus-purple;
+
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-telus-purple;
+    box-shadow: 0px 0px 0px 2px $color-telus-purple, 0px 0px 8px 1px $color-telus-purple;
+  }
+}
+
+.hiddenRadio:checked ~ .itemButton {
+  background-color: $color-telus-purple;
+  box-shadow: 0px 0px 0px 0px $color-telus-purple;
+  color: $color-white;
+}
+
+.hiddenRadio:focus ~ .itemButton {
+  box-shadow: 0px 0px 0px 2px $color-telus-purple, 0px 0px 8px 1px $color-telus-purple;
+}
+
+.hiddenRadio {
+  position: fixed;
+  opacity: 0;
+}
