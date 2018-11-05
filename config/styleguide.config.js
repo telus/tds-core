@@ -224,6 +224,8 @@ module.exports = {
               path.resolve('packages/Input/Input.jsx'),
               path.resolve('packages/Checkbox/Checkbox.jsx'),
               path.resolve('packages/Radio/Radio.jsx'),
+              path.resolve('packages/ButtonGroup/ButtonGroup.jsx'),
+              path.resolve('packages/ButtonGroup/ButtonGroupItem/ButtonGroupItem.jsx'),
               path.resolve('packages/Select/Select.jsx'),
               path.resolve('packages/TextArea/TextArea.jsx'),
               path.resolve('packages/InputFeedback/InputFeedback.jsx'),
