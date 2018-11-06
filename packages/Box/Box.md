@@ -20,9 +20,9 @@ The spacing system defines 8 levels of spacing. Levels `4` and above are respons
 
 ### Recommended usage
 
-* Use levels `1` - `3` to space inline content, such as [Typography](#typography), [Buttons](#button), or [Icons](#icons)
-* Use levels `4` - `8` to space block content, such as [Cards](#card) or [Dividers](#dividers)
-* Use levels `5`, `7`, and `8` to vertically stack full-width Blocks
+- Use levels `1`-`3` to space inline content, such as [Typography](#typography), [Buttons](#button), or [Icons](#icons)
+- Use levels `4`-`8` to space block content, such as [Cards](#card) or [Dividers](#dividers)
+- Use levels `5`, `7`, and `8` to vertically stack full-width Blocks
 
 These examples showcase all of the `Box` properties working together to control both inset (padding) and stacking (margin).
 Note the compositional nature of `Box`. Use multiple Boxes to achieve complex layouts.
