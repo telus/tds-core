@@ -28,6 +28,12 @@ The spacing system defines 8 levels of spacing. Levels `4` and above are respons
 - Use levels `4`-`8` to space block content, such as [Cards](#card) or [Dividers](#dividers)
 - Use levels `5`, `7`, and `8` to vertically stack full-width Blocks
 
+This annotated example highlights the different `Box` properties and sizes used to create the spacing in a `Card`.
+
+<div style="text-align: center;">
+  <img src="box_annotated.png" alt="box annotated example" />
+</div>
+
 These examples showcase all of the `Box` properties working together to control both inset (padding) and stacking (margin).
 Note the compositional nature of `Box`. Use multiple Boxes to achieve complex layouts.
 
