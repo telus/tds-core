@@ -6,6 +6,18 @@ For now, TDS is intended for use by TELUS employees and approved partners.
 
 ## Important links
 
+### New to TDS?
+
+If you're new to **utilizing** the Telus Design System, check out the [getting started guide](ref://getting-started/getting-started.html).
+
+### Contributing?
+
+If you are a **developer** who wants to contribute to TDS, please see the [developer contributor guide](ref://contributing/developer-guide.html).
+
+If you are a **designer** who wants to contribute to TDS, please see the [designer contributor guide](ref://contributing/designer-guide.html).
+
+### References
+
 To view the **technical documentation** for the components, see the [component catalogue](ref://components/index.html).
 
 To view **documentation from a previous version**, copy this URL into your browser's address bar, changing the version at the end to the desired version: [http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/).
