@@ -7,7 +7,7 @@ import { warn } from '../../shared/utils/warn'
 import styles from './PriceLockup.modules.scss'
 
 /**
- * A component presenting Telus product pricing information.
+ * A component presenting TELUS product pricing information.
  * @version ./package.json
  */
 
