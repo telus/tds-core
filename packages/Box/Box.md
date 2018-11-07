@@ -5,7 +5,11 @@
 
 ### Spacing levels
 
-The spacing system defines 8 levels of spacing. Levels `4` and above are responsive, as detailed in this table:
+The spacing system defines 8 levels of spacing. Levels `4` and above are responsive, as detailed below:
+
+<div style="text-align: center;">
+  <img src="box_spacing-levels.png" style="width: 100%;" alt="box spacing levels example"/>
+</div>
 
 | Level | Default value | Value in viewports greater or equal to `768px` |
 | ----- | ------------: | ---------------------------------------------: |
