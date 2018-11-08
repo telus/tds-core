@@ -1,0 +1,3 @@
+{
+  "extends": "@telus/eslint-config"
+}

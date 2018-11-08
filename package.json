@@ -1,7 +1,12 @@
 {
-  "name": "@telusdigital/tds",
   "version": "2.0.0",
-  "description": "TELUS Design System",
+  "name": "@telus/tds-core",
+  "description": "TELUS Design System core components",
+  "homepage": "https://github.com/telus/tds-core",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telus/tds-core.git"
+  },
   "license": "MIT",
   "private": true,
   "workspaces": [
@@ -34,6 +39,9 @@
     "lint:js": "eslint packages shared config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
+    "intl:deps": "npx updated",
+    "lint:md": "npx remark --quiet --frail .",
+    "intl:audit": "npm audit",
     "lint": "npm-run-all --parallel lint:*",
     "precommit": "lint-staged && yarn test && yarn contributors:update",
     "prepare": "yarn gitbook:install",
@@ -45,18 +53,16 @@
     "test:watch": "yarn test --watch",
     "test": "jest --config config/jest.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/telusdigital/tds-core.git"
-  },
-  "author": "TELUS digital",
+  "keywords": [
+    "design",
+    "telus"
+  ],
   "engines": {
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/telusdigital/tds-core/issues"
+    "url": "https://github.com/telus/tds-core/issues"
   },
-  "homepage": "http://tds.telus.com",
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.0",
@@ -133,6 +139,7 @@
     "yargs": "^12.0.1"
   },
   "dependencies": {
+    "@telus/remark-preset-lint-markdown": "^1.1.0",
     "prop-types": "^15.5.10"
   },
   "config": {

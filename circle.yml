@@ -1,0 +1,78 @@
+version: 2.1
+
+executors:
+  app:
+    working_directory: ~/src
+
+    docker:
+      - image: telus/build-essential
+
+commands:
+  persist:
+    steps:
+      - persist_to_workspace: { root: ~/src, paths: . }
+
+  attach:
+    steps:
+      - attach_workspace: { at: "." }
+
+  npmrc:
+    steps:
+      - run:
+          name: Setup .npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+
+  install:
+    steps:
+      - npmrc
+
+      - run:
+          name: Install dependencies
+          command: npm ci
+
+jobs:
+  build:
+    executor: app
+    steps:
+      - checkout
+      - install
+      - persist
+
+  lint:
+    executor: app
+    steps:
+      - attach
+      - run: npm run lint
+
+  unit:
+    executor: app
+    steps:
+      - attach
+      - run: npm run test
+
+  release:
+    executor: app
+    steps:
+      - attach
+      - npmrc
+      - run: npx semantic-release
+
+workflows:
+  version: 2
+  run:
+    jobs:
+      - build:
+          context: npm-library
+
+      - lint:
+          requires: [ build ]
+
+      - unit:
+          requires: [ build ]
+
+      - release:
+          context: npm-library
+          requires: [ build, lint, unit ]
+          filters:
+            branches:
+              only: master
