@@ -2,7 +2,6 @@ import React from 'react'
 import { shallow, mount } from 'enzyme'
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
-import Box from '@tds/core-box'
 import PriceLockup from '../PriceLockup'
 
 const defaultProps = {
@@ -111,12 +110,7 @@ describe('PriceLockup', () => {
   describe('HairlineDivider present', () => {
     const priceLockup = doShallow({ size: 'medium', bottomText: 'text' })
     it('when rateText, bottomText, and size prop is medium available', () => {
-      expect(priceLockup.find('[data-id="price-hairline"]')).toContainReact(
-        <Box between={2} data-id="price-hairline">
-          <HairlineDivider />
-          <Text size="medium">text</Text>
-        </Box>
-      )
+      expect(priceLockup.find(HairlineDivider)).toExist()
     })
   })
 })

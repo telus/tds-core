@@ -45,26 +45,28 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     }
     if (size === 'large' && bottomText) {
       warn('PriceLockup', "The props bottomText and size='large' cannot be used together")
-      return ''
+      return undefined
     }
-    return ''
+    return undefined
   }
 
-  const renderHairLineBottomText = () => {
-    return (
-      <Box between={2} data-id="price-hairline">
-        {size !== 'large' && bottomText && rateText && <HairlineDivider />}
-        {renderBottomText()}
-      </Box>
-    )
+  let wrapperSpacing
+  if (size === 'small') {
+    if (bottomText && rateText) {
+      wrapperSpacing = 2
+    } else {
+      wrapperSpacing = 1
+    }
+  } else if (size === 'medium') {
+    wrapperSpacing = 3
   }
 
   return (
-    <Box between={size === 'large' ? undefined : 1}>
-      {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-      <Box between={size === 'small' ? 1 : 3}>
+    <Box between={wrapperSpacing}>
+      <Box between={size !== 'large' ? 1 : undefined}>
+        {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
         <Box
-          between={2}
+          between={size === 'small' ? 1 : 2}
           inline
           dangerouslyAddClassName={joinClassNames(
             styles.priceWrapper,
@@ -74,8 +76,9 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
           {renderPriceValueSign()}
           {rateText && <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>}
         </Box>
-        {renderHairLineBottomText()}
       </Box>
+      {size !== 'large' && bottomText && rateText && <HairlineDivider />}
+      {renderBottomText()}
     </Box>
   )
 }
