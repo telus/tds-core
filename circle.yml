@@ -6,6 +6,11 @@ executors:
 
     docker:
       - image: circleci/node:8-browsers
+        environment:
+          NPM_CONFIG_PREFIX: /home/node/.npm-global
+          PATH: $PATH:$NPM_CONFIG_PREFIX/bin
+          MANPATH: $MANPATH:$NPM_CONFIG_PREFIX/share/man
+          NODE_PATH: $NPM_CONFIG_PREFIX/lib/node_modules
 
 commands:
   persist:
@@ -58,10 +63,6 @@ jobs:
     executor: app
     steps:
       - attach
-      - run:
-          name: Running X virtual framebuffer
-          command: Xvfb :99 -screen 0 1280x1024x24
-          background: true
       - run:
           name: Styleguidist Server
           command: yarn run dev:e2e
