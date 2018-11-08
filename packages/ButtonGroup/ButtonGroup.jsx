@@ -13,23 +13,31 @@ import styles from './ButtonGroup.modules.scss'
 /**
  * @version ./package.json
  */
-const ButtonGroup = ({ name, children, ...rest }) => {
+const ButtonGroup = ({ name, onChange, value, children, ...rest }) => {
   const getButtons = () => {
-    return React.Children.map(children, child => React.cloneElement(child, { name }))
+    return React.Children.map(children, child =>
+      React.cloneElement(child, { name, onChange, selectedValue: value })
+    )
   }
   return (
-    <Box dangerouslyAddClassName={styles.buttonGroup} between={3} inline {...safeRest(rest)}>
-      {getButtons()}
-    </Box>
+    <fieldset>
+      <Box between={3} inline dangerouslyAddClassName={styles.buttonGroup} {...safeRest(rest)}>
+        {getButtons()}
+      </Box>
+    </fieldset>
   )
 }
 
 ButtonGroup.propTypes = {
   name: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
+  value: PropTypes.string.isRequired,
   children: componentWithName('ButtonGroupItem').isRequired,
 }
 
-ButtonGroup.defaultProps = {}
+ButtonGroup.defaultProps = {
+  onChange: undefined,
+}
 
 ButtonGroup.Item = ButtonGroupItem
 

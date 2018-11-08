@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup renders 1`] = `
+<fieldset>
+  <Box
+    between={3}
+    dangerouslyAddClassName="buttonGroup"
+    inline={true}
+    tag="div"
+  />
+</fieldset>
+`;
