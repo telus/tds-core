@@ -29,6 +29,7 @@ commands:
       - run:
           name: Install dependencies
           command: yarn install
+      - run: apk add xvfb
 
 jobs:
   build:
@@ -55,6 +56,10 @@ jobs:
     executor: app
     steps:
       - attach
+      - run:
+          name: Running X virtual framebuffer
+          command: Xvfb :99 -screen 0 1280x1024x24
+          background: true
       - run:
           name: Styleguidist Server
           command: yarn run dev:e2e
