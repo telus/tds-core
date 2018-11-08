@@ -28,7 +28,7 @@ commands:
 
       - run:
           name: Install dependencies
-          command: npm ci
+          command: yarn install
 
 jobs:
   build:
