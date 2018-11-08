@@ -15,7 +15,7 @@ describe('Strong', () => {
   it('renders an HTML strong tag', () => {
     const strong = doShallow()
 
-    expect(strong).toHaveTagName('strong')
+    expect(strong).toHaveDisplayName('strong')
   })
 
   it('passes additional attributes to the strong element', () => {

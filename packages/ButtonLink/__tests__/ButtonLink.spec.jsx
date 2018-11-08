@@ -34,7 +34,7 @@ describe('ButtonLink', () => {
   it('is an anchor HTML element when using the href attribute', () => {
     const link = doMount({ href: 'http://telus.com' })
 
-    expect(link).toHaveTagName('a')
+    expect(link).toHaveDisplayName('a')
     expect(link).toHaveProp('href', 'http://telus.com')
   })
 
