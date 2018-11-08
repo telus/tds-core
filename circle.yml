@@ -55,7 +55,11 @@ jobs:
     executor: app
     steps:
       - attach
-      - run: yarn run dev:e2e & ; yarn run test:e2e -- --all
+      - run:
+          name: Styleguidist Server
+          command: yarn run dev:e2e
+          background: true
+      - run: yarn run test:e2e -- --all
 
   release:
     executor: app
