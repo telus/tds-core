@@ -17,7 +17,6 @@ const applyCustomScope = () => {
     'e2e',
     'github',
     'guide',
-    'openshift',
     'other',
     'scripts',
     'shared'

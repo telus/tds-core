@@ -6,13 +6,19 @@
 
 ### Usage criteria
 
-* Links inherit the font size of surrounding text.
-* Their colour is either shuttle grey or white.
+- Links inherit the font size of surrounding text.
+- Their colour is either shuttle grey or white.
 
 ### Inverted
 
 ```jsx { "props": { "className": "docs_purple-block" } }
-<Paragraph invert>Call Screen requires a subscription. <Link href="#" invert>Log in</Link> to your account and make sure you are subscribed.</Paragraph>
+<Paragraph invert>
+  Call Screen requires a subscription.{' '}
+  <Link href="#" invert>
+    Log in
+  </Link>{' '}
+  to your account and make sure you are subscribed.
+</Paragraph>
 ```
 
 ### Using with React Router Links
@@ -34,14 +40,11 @@ import { Link as ReactRouterLink } from 'react-router'
 
 import TdsLink from '@tds/core-link'
 
-// If you're importing from @telusdigital/tds, write this as:
-// import { Link as TdsLink } from '@telusdigital/tds';
+// If you're importing from @telus/tds, write this as:
+// import { Link as TdsLink } from '@telus/tds';
 
 const LinkWrapper = ({ children, ...rest }) => (
-  <TdsLink
-    {...rest}
-    reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}
-  >
+  <TdsLink {...rest} reactRouterLinkComponent={rest.to ? ReactRouterLink : undefined}>
     {children}
   </TdsLink>
 )

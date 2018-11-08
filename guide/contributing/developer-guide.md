@@ -4,7 +4,6 @@
 
 - [Git](https://git-scm.com/)
 - [Node.JS](https://nodejs.org) >= 8.0
-- [Yarn](https://yarnpkg.com) (We use yarn for dependency management instead of npm.)
 
 ## Set up your environment
 
@@ -17,7 +16,7 @@ After setting up TDS locally, the following steps will get you started:
 
 ```bash
 # Bootstrap your dev environment
-yarn bootstrap
+npm run bootstrap
 ```
 
 We use [Prettier](https://prettier.io/), an opinionated code formatter that integrates with your text editor. Configure [your
@@ -28,12 +27,12 @@ adjust your syntax in accordance with the TDS conventions.
 
 ```bash
 # Start the styleguidist dev server, check output for the location of the docs
-yarn dev
+npm run dev
 
 # Open a new terminal window
 
 # Start the test watcher, it will rerun tests based on the files you modify
-yarn test:watch
+npm run test:watch
 ```
 
 After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will
@@ -47,7 +46,7 @@ If you need to create a new component, run the scaffolding script to generate th
 documentation, and base unit tests for a new component.
 
 ```bash
-yarn scaffold MyComponent
+npm run scaffold MyComponent
 ```
 
 ## Running and updating tests
@@ -62,7 +61,7 @@ If a component's structure has significantly changed, it may require a snapshot 
 
 ```bash
 # Manually run unit tests on modified components
-yarn test
+npm run test
 
 # Options:
 # -a: Run tests on all components regardless of if they were recently modified.
@@ -76,14 +75,14 @@ Nightwatch e2e tests are run to ensure that no unexpected visual regressions wer
 Before tests can be run, the TDS docs must be running locally on your machine in e2e mode.
 
 ```bash
-yarn dev:e2e
+npm run dev:e2e
 ```
 
 Once the local server is up and running, you may now run e2e tests. These tests will fail if the component's appearance has diverged from its saved screenshot. Visual modifications to a component will almost always require screenshots to be updated.
 
 ```bash
 # Manually run visual regression tests on modified components
-yarn test:e2e
+npm run test:e2e
 
 # Options:
 # -a: Run tests on all components regardless of if they were recently modified.
@@ -108,12 +107,12 @@ be deliberate when choosing the type of commit.
 
 Given the commit format:
 
-```
-type(scope): subject
+```git
+    type(scope): subject
 
-body
+    body
 
-footer
+    footer
 ```
 
 Use the `type` field to inform lerna what Conventional Commit you intend to use:
@@ -156,21 +155,19 @@ The TDS codebase includes a script to run commitizen for a streamline commit-mak
 
 ```bash
 # Stage your files and make a commit using commitizen
-yarn cz
+npm run cz
 
 ## At the `type` and `scope` prompts, you can press TAB to view options
 ```
 
 ### Example commit messages
 
-```
-feat(core-flex-grid): remove center prop
+```git
+    feat(core-flex-grid): remove center prop
 
-BREAKING CHANGE: deprecated `center` prop is removed
-```
+    BREAKING CHANGE: deprecated `center` prop is removed
 
-```
-fix(core-button-link): adjust hover animation speed
+    fix(core-button-link): adjust hover animation speed
 ```
 
 ## Make a Pull Request
@@ -181,7 +178,7 @@ completion.
 Paste the full output of the pre-pr task into the body of your PR so that a maintainer/publisher can verify when publishing.
 
 ```bash
-yarn prepr
+npm run prepr
 ```
 
 The pre-pr task will show you the version change that will result from your changeset. If the output is unexpected, you may need

@@ -1,0 +1,87 @@
+version: 2.1
+
+executors:
+  builder:
+    docker:
+      - image: telus/build-essential
+
+  browsers:
+    docker:
+      - image: circleci/node:8-browsers
+
+commands:
+  persist:
+    steps:
+      - persist_to_workspace:
+          root: .
+          paths: .
+
+  attach:
+    steps:
+      - attach_workspace:
+          at: .
+
+  install:
+    steps:
+      - run:
+          name: Install dependencies
+          command: npm ci
+
+jobs:
+  build:
+    executor: builder
+    steps:
+      - checkout
+      - install
+      - run: npm run ci:build
+      - persist
+
+  lint:
+    executor: builder
+    steps:
+      - attach
+      - run: npm run lint
+
+  unit:
+    executor: builder
+    steps:
+      - attach
+      - run: npm run test
+
+  e2e:
+    executor: browsers
+    steps:
+      - attach
+      - run:
+          name: Styleguidist Server
+          command: npm run dev:e2e
+          background: true
+      - run: npm run test:e2e -- --all
+
+  release:
+    executor: builder
+    steps:
+      - attach
+      - run: npx semantic-release
+
+workflows:
+  version: 2
+  run:
+    jobs:
+      - build
+
+      - lint:
+          requires: [ build ]
+
+      - unit:
+          requires: [ build ]
+
+      - e2e:
+          requires: [ build ]
+
+      - release:
+          context: npm-library
+          requires: [ build, lint, unit, e2e ]
+          filters:
+            branches:
+              only: master

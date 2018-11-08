@@ -15,13 +15,13 @@
 
 #### Usage criteria
 
-* Be mindful of SEO and accessibility
-* Organize headers in a nested order: h1, then h2, then h3
-* Try **not** to skip levels where possible: h1, then h3
-* Use one h1 per page
-* The semantic HTML tag and visual appearance of the Heading component can be controlled using the `level` and `tag` props together
-* For Hero overlays, Headlines, or Promo blocks, use [`DisplayHeading`](#displayheading)
-* For subtext in the Hero overlays, or Headlines, use [`Text`](#text)
+- Be mindful of SEO and accessibility
+- Organize headers in a nested order: h1, then h2, then h3
+- Try **not** to skip levels where possible: h1, then h3
+- Use one h1 per page
+- The semantic HTML tag and visual appearance of the Heading component can be controlled using the `level` and `tag` props together
+- For Hero overlays, Headlines, or Promo blocks, use [`DisplayHeading`](#displayheading)
+- For subtext in the Hero overlays, or Headlines, use [`Text`](#text)
 
 #### Separating semantic tag from visual style
 
@@ -33,8 +33,8 @@ hierarchy.
 
 In the example below, the content would appear at the top of a page, as a Promo.
 
-* The first line of text (Consider this...) appears as a visual heading 4, but renders with an `<h1>` tag
-* The second line of text (Stream live...) appears as a visual heading 1, but renders with an `<h2>`
+- The first line of text (Consider this...) appears as a visual heading 4, but renders with an `<h1>` tag
+- The second line of text (Stream live...) appears as a visual heading 1, but renders with an `<h2>`
 
 When we provide different heading tags, the heading hierarchy is in order for assistive technology, but we are able
 to have a different visual hierarchy of text.
@@ -60,11 +60,9 @@ to have a different visual hierarchy of text.
         </Box>
 
         <Text>
-          Stream live TV or On Demand shows and movies on any screen with TELUS Pik TV<Text.Sup>
-            TM
-          </Text.Sup>. Get Pik TV from just $10 a month, and get your first month for $0<Text.Sup>
-            1
-          </Text.Sup> when you sign up.
+          Stream live TV or On Demand shows and movies on any screen with TELUS Pik TV
+          <Text.Sup>TM</Text.Sup>. Get Pik TV from just $10 a month, and get your first month for $0
+          <Text.Sup>1</Text.Sup> when you sign up.
         </Text>
 
         <div>

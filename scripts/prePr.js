@@ -3,7 +3,7 @@
 /* eslint-disable no-console */
 
 /*
-Usage: yarn prepr
+Usage: npm run prepr
 
 This script will give insight into the result of publishing given the current commit history. It is intended to be run
 before making a Pull Request to ensure its integrity.

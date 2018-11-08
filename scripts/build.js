@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
-Usage: yarn build [component name...] [options] [lerna options]
+Usage: npm run build [component name...] [options] [lerna options]
 
   By default, only updated packages will be built.
   All lerna options will be forwarded onto lerna commands.

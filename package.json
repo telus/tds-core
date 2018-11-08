@@ -1,7 +1,12 @@
 {
-  "name": "@telusdigital/tds",
   "version": "2.0.0",
-  "description": "TELUS Design System",
+  "name": "@telus/tds-core",
+  "description": "TELUS Design System core components",
+  "homepage": "https://github.com/telus/tds-core",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telus/tds-core.git"
+  },
   "license": "MIT",
   "private": true,
   "workspaces": [
@@ -11,19 +16,20 @@
     "shared/utils/*"
   ],
   "scripts": {
-    "bootstrap": "yarn install && yarn gitbook:install && lerna bootstrap && yarn build --all",
+    "bootstrap": "npm install && npm run gitbook:install && lerna bootstrap && npm run build --all",
     "build": "node scripts/build.js",
     "build-docs:gitbook": "gitbook build guide",
     "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
-    "ci:build": "yarn build --all",
-    "ci:build-docs:styleguide-staging": "STYLEGUIDIST_ENV=staging yarn run build-docs:styleguide",
-    "ci:build-docs:styleguide-production": "STYLEGUIDIST_ENV=production yarn run build-docs:styleguide",
+    "ci:build": "npm run build --all",
+    "ci:build-docs:styleguide-staging": "STYLEGUIDIST_ENV=staging npm run build-docs:styleguide",
+    "ci:build-docs:styleguide-production": "STYLEGUIDIST_ENV=production npm run build-docs:styleguide",
     "ci:build-docs": "npm-run-all --parallel ci:build-docs:styleguide-* build-docs:gitbook",
     "ci:test": "npm-run-all --parallel lint test",
     "cz": "git-cz",
     "cz:retry": "git-cz --retry",
     "deploy:docs": "node ./scripts/deploy-docs.js",
     "deploy:package": "scripts/publish.sh",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "contributors:update": "node scripts/update-contributors.js",
     "dev": "styleguidist server --config config/styleguide.config.js",
     "dev:e2e": "STYLEGUIDIST_ENV=e2e styleguidist server --config config/styleguide.config.js",
@@ -33,38 +39,39 @@
     "lint:js": "eslint packages shared config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
+    "lint:deps": "npx updated",
+    "lint:md": "echo $PATH && npx remark --quiet --frail .",
+    "lint:audit": "npm audit",
     "lint": "lerna clean --yes && npm-run-all --parallel lint:*",
-    "prepare": "yarn gitbook:install",
-    "prepr": "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
+    "precommit": "lint-staged && npm run test && npm run contributors:update",
+    "prepare": "npm run gitbook:install",
+    "prepr": "npm run test:e2e && node scripts/prePr.js --conventional-commits --yes",
+    "prepush": "npm run ci:build && npm-run-all --parallel test lint build-docs:*",
     "scaffold": "node scripts/scaffold.js",
     "test:e2e": "node scripts/e2e.js",
-    "test:u": "yarn test -u",
-    "test:watch": "yarn test --watch",
+    "test:u": "npm run test -u",
+    "test:watch": "npm run test --watch",
     "test": "jest --config config/jest.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/telusdigital/tds-core.git"
-  },
-  "author": "TELUS digital",
+  "keywords": [
+    "design",
+    "telus"
+  ],
   "engines": {
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/telusdigital/tds-core/issues"
+    "url": "https://github.com/telus/tds-core/issues"
   },
-  "homepage": "http://tds.telus.com",
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.0",
     "@commitlint/config-lerna-scopes": "^7.0.0",
     "@commitlint/prompt": "^7.0.0",
-    "@telusdigital/eslint-config": "^1.2.0",
     "all-contributors-cli": "^5.0.0",
     "autoprefixer": "^9.0.0",
     "aws-sdk": "^2.114.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^10.0.0",
     "babel-loader": "^7.1.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
@@ -80,13 +87,7 @@
     "echint": "^4.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^5.0.0",
-    "eslint-config-prettier": "^3.0.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jest": "^22.0.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.7.0",
     "file-loader": "^2.0.0",
     "gitbook-cli": "^2.3.2",
     "husky": "^1.0.0",
@@ -180,8 +181,8 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged && yarn test && yarn contributors:update",
-      "pre-push": "yarn ci:build && npm-run-all --parallel test lint build-docs:*"
+      "pre-commit": "lint-staged && npm run test && npm run contributors:update",
+      "pre-push": "npm run ci:build && npm-run-all --parallel test lint build-docs:*"
     }
   }
 }

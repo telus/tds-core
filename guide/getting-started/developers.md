@@ -4,15 +4,15 @@ As a developer, your primary interaction point with TDS is through React compone
 
 TDS components include:
 
-* Semantic and accessible markup
-* Cross-browser compatible styling
-* Responsive behaviour
-* Small, contained bits of UI logic
+- Semantic and accessible markup
+- Cross-browser compatible styling
+- Responsive behaviour
+- Small, contained bits of UI logic
 
 TDS components do not include:
 
-* Business logic, such as validations or API calls
-* External margins or global side effects
+- Business logic, such as validations or API calls
+- External margins or global side effects
 
 ## Installing
 
@@ -21,15 +21,11 @@ If you are using the [Isomorphic Starter Kit](https://github.com/telusdigital/te
 To install the latest version of a component:
 
 ```sh
-yarn add @tds/core-<component-name>
-
 # or with npm
-npm install @tds/core-<component-name> --save
+npm install @tds/core-<component-name>
 ```
 
 That's it! You don't need any other dependencies to use the TDS.
-
-Don't have yarn? Learn [how to install it](https://yarnpkg.com/en/docs/install).
 
 ## Usage
 
@@ -62,7 +58,7 @@ Before importing the css-reset stylesheet into the main entry point of your appl
 
 ```sh
 # install the core-css-reset package as a dependency in `ui/package.json`
-yarn add @tds/core-css-reset
+npm install @tds/core-css-reset
 ```
 
 ```js
@@ -113,7 +109,7 @@ A list of the available colours and their use cases can be found [in the Design 
 
 ```sh
 # install the @tds/core-colours package as a dependency in `ui/package.json`
-yarn add @tds/core-colours
+npm install @tds/core-colours
 ```
 
 ```css

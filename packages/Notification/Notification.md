@@ -1,3 +1,5 @@
+# Notification
+
 **Use the "Open isolated" button above to view this component in full-width mode.**
 
 The `Notification` spans the entire width of the screen, and aligns the message with the page content.

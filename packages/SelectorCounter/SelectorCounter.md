@@ -1,3 +1,5 @@
+# DEPRECATED
+
 **This package has been deprecated and is no longer supported.**
 
 The SelectorCounter component is no longer recommended due to it being inaccessible
@@ -59,7 +61,7 @@ The component exposes a `focus()` method that you can call to place the cursor i
 
 ### Contextual prefix and suffix
 
-The `contextPrefix` and `contextSuffix` props can be used to define text that helps the user understand changes in the field’s value. For example, this code produces a field whose value is announced as “You chose [number] smartphone plans” whenever the number changes.
+The `contextPrefix` and `contextSuffix` props can be used to define text that helps the user understand changes in the field’s value. For example, this code produces a field whose value is announced as “You chose <number> smartphone plans” whenever the number changes.
 
 The contextual prefix & suffix can be used together or separately. They’re also optional - if an accessible field can be built using the standard label/description/aria markup, then use those first.
 

@@ -6,7 +6,7 @@
 # Step 3. Copy styleguidist into build/${ENV}/components
 
 # 1
-yarn ci:build-docs
+npm run ci:build-docs
 
 mkdir -p build/staging
 mkdir -p build/production
