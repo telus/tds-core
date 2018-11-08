@@ -5,7 +5,7 @@ executors:
     working_directory: ~/src
 
     docker:
-      - image: telus/build-essential:node8
+      - image: circleci/node:8-browsers
 
 commands:
   persist:
@@ -26,6 +26,9 @@ commands:
     steps:
       - npmrc
 
+      - run:
+          name: Install build-essential
+          command: npx install-group peer --package @telus/build-essential --global
       - run:
           name: Install dependencies
           command: yarn install
