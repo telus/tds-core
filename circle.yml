@@ -71,7 +71,7 @@ workflows:
           requires: [ build ]
 
       - release:
-          context: npm-library
+          context: tds
           requires: [ build, lint, unit ]
           filters:
             branches:
