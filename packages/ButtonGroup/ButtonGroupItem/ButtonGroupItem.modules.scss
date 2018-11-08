@@ -1,5 +1,4 @@
 @import '~@tds/core-colours/colours';
-@import '~@tds/core-responsive/responsive';
 
 .itemContainer {
   margin: 0.5rem 0;
@@ -7,6 +6,7 @@
 
 .itemButton {
   composes: sizing from '../../../shared/components/BaseButton/BaseButton.modules.scss';
+
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 
   background-color: $color-white;
@@ -14,6 +14,8 @@
   color: $color-telus-purple;
 
   white-space: nowrap;
+
+  min-width: 136px;
 
   &:hover {
     background-color: $color-white;

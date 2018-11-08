@@ -5,5 +5,13 @@ module.exports = {
     'react/require-default-props': 'warn',
     'import/no-extraneous-dependencies': false, // disabling it because all dev dependencies are pulled into the root
     'prefer-destructuring': 0,
+    'jsx-a11y/label-has-for': [
+      'error',
+      {
+        required: {
+          some: ['nesting', 'id'],
+        },
+      },
+    ],
   },
 }
