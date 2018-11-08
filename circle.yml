@@ -29,7 +29,6 @@ commands:
       - run:
           name: Install dependencies
           command: yarn install
-      - run: apk add xvfb
 
 jobs:
   build:
