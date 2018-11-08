@@ -5,7 +5,7 @@ executors:
     working_directory: ~/src
 
     docker:
-      - image: telus/build-essential
+      - image: telus/build-essential:node8
 
 commands:
   persist:
