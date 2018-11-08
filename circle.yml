@@ -36,6 +36,7 @@ jobs:
     steps:
       - checkout
       - install
+      - run: npm run ci:build
       - persist
 
   lint:
@@ -49,6 +50,13 @@ jobs:
     steps:
       - attach
       - run: npm run test
+
+  e2e:
+    executor: app
+    steps:
+      - attach
+      - run: npm run dev:e2e &
+      - run: npm test:e2e -- --all
 
   release:
     executor: app
