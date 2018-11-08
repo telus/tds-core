@@ -55,8 +55,7 @@ jobs:
     executor: app
     steps:
       - attach
-      - run: yarn run dev:e2e &
-      - run: yarn run test:e2e -- --all
+      - run: yarn run dev:e2e & ; yarn run test:e2e -- --all
 
   release:
     executor: app
