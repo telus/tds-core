@@ -70,7 +70,7 @@ workflows:
   run:
     jobs:
       - build:
-          context: npm-library
+          context: tds
 
       - lint:
           requires: [ build ]
@@ -78,9 +78,12 @@ workflows:
       - unit:
           requires: [ build ]
 
+      - e2e:
+          requires: [ build ]
+
       - release:
           context: tds
-          requires: [ build, lint, unit ]
+          requires: [ build, lint, unit, e2e ]
           filters:
             branches:
               only: master
