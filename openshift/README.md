@@ -88,11 +88,13 @@ Add an `application/json` webhook and paste in your web hook URL e.g.:
 
 ## Configuration
 
-* [Reference Architecture OpenShift standards](https://github.com/telusdigital/reference-architecture/blob/master/delivery/openshift.md)
-* [Reference Architecture Kubernetes standards](https://github.com/telusdigital/reference-architecture/blob/master/delivery/kubernetes.md)
+- [Reference Architecture OpenShift standards](https://github.com/telusdigital/reference-architecture/blob/master/delivery/openshift.md)
 
-* [OpenShift documentation](https://docs.openshift.com/container-platform/3.4/dev_guide/index.html)
-* [Kubernetes documentation](https://kubernetes.io/docs/home/)
+- [Reference Architecture Kubernetes standards](https://github.com/telusdigital/reference-architecture/blob/master/delivery/kubernetes.md)
+
+- [OpenShift documentation](https://docs.openshift.com/container-platform/3.4/dev_guide/index.html)
+
+- [Kubernetes documentation](https://kubernetes.io/docs/home/)
 
 Our [openshift-template.yml](https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/openshift/openshift-template.yml) sets up the jenkins server, templates, builds and secrets necessary for exposing our application to consumers. In order to run this, you must first log in to OpenShift with `oc login` and create or select an existing OpenShift project namespace with `oc project`.
 
@@ -102,15 +104,13 @@ To test OpenShift locally, we recommend using [minishift](https://docs.openshift
 
 On Mac we can install minishift with brew:
 
-```
-$ brew update
-$ brew install docker-machine-driver-xhyve
-$ sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-$ sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-$ brew cask install minishift
-$ minishift config set memory 8192
-$ minishift start
-```
+    $ brew update
+    $ brew install docker-machine-driver-xhyve
+    $ sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+    $ sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+    $ brew cask install minishift
+    $ minishift config set memory 8192
+    $ minishift start
 
 On other platforms: [see instructions](https://docs.openshift.org/latest/minishift/getting-started/installing.html#installing-instructions)
 

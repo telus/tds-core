@@ -10,11 +10,11 @@ By default, Chevron Links will be displayed in the `primary` variant.
 
 ### Usage criteria
 
-* Chevron Links have a fixed font size of 1rem and it should not change
-* Due to the chevron's hover animation, provide ample whitespace so that it does not overlap with nearby elements
-* Do not place them within other paragraph text
-* They can appear below or next to [Button Links](#linkbutton) as a secondary call to action
-* We recommend a character range between 2-32 characters
+- Chevron Links have a fixed font size of 1rem and it should not change
+- Due to the chevron's hover animation, provide ample whitespace so that it does not overlap with nearby elements
+- Do not place them within other paragraph text
+- They can appear below or next to [Button Links](#linkbutton) as a secondary call to action
+- We recommend a character range between 2-32 characters
 
 Specify the variant to create a button for secondary actions.
 
@@ -30,7 +30,9 @@ Use the inverted Chevron Link on top of any solid dark colour such as TELUS purp
 
 ```jsx { "props": { "className": "docs_purple-block" } }
 <div>
-  <ChevronLink href="#" variant="inverted">Find out how</ChevronLink>
+  <ChevronLink href="#" variant="inverted">
+    Find out how
+  </ChevronLink>
 </div>
 ```
 

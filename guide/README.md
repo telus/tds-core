@@ -20,7 +20,7 @@ If you are a **designer** who wants to contribute to TDS, please see the [design
 
 To view the **technical documentation** for the components, see the [component catalogue](ref://components/index.html).
 
-To view **documentation from a previous version**, copy this URL into your browser's address bar, changing the version at the end to the desired version: [http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/).
+To view **documentation from a previous version**, copy this URL into your browser's address bar, changing the version at the end to the desired version: <http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/v0.34.0/>.
 
 If you're on version 0.y.z of `@telusdigital/tds`, please follow our migration guide for [upgrading to v1.y.z](https://github.com/telusdigital/tds-core/releases/tag/v1.0.0).
 

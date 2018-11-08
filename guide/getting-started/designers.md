@@ -20,21 +20,21 @@ There are a variety of plugins available for Sketch. Here is a short list of plu
 
 #### Required
 
-* [Craft Manager](https://www.invisionapp.com/craft): Suite of plugins by Invision to help streamline your workflow. (**Note:** This is required to use the DSM Component library)
+- [Craft Manager](https://www.invisionapp.com/craft): Suite of plugins by Invision to help streamline your workflow. (**Note:** This is required to use the DSM Component library)
 
-* [Launchpad by Anima](https://animaapp.github.io/): Customize designs with responsive settings (**Note**: Without this plugin, some of the responsive components will not work properly)
+- [Launchpad by Anima](https://animaapp.github.io/): Customize designs with responsive settings (**Note**: Without this plugin, some of the responsive components will not work properly)
 
-* [Paddy](https://github.com/DWilliames/paddy-sketch-plugin): Create components with fixed padding (**Note**: Used for automatic resizing of our button component)
+- [Paddy](https://github.com/DWilliames/paddy-sketch-plugin): Create components with fixed padding (**Note**: Used for automatic resizing of our button component)
 
 #### Recommended
 
-* [Sketch Toolbox](http://sketchtoolbox.com/): Manage and install your Sketch plugins
+- [Sketch Toolbox](http://sketchtoolbox.com/): Manage and install your Sketch plugins
 
-* [Shared Text Styles](http://www.textstyl.es/): Import/export text styles within your Sketch files
+- [Shared Text Styles](http://www.textstyl.es/): Import/export text styles within your Sketch files
 
-* [Nudge Push Shove](http://nudgepushshove.com/): Set up custom nudge settings
+- [Nudge Push Shove](http://nudgepushshove.com/): Set up custom nudge settings
 
-* [Dynamic Button](https://github.com/fuggfuggfugg/sketch-dynamic-button-3.5): Create components with fixed padding
+- [Dynamic Button](https://github.com/fuggfuggfugg/sketch-dynamic-button-3.5): Create components with fixed padding
 
 ## Setting up Invision
 
@@ -44,9 +44,9 @@ During your initial onboarding to the design team, you should have gotten an inv
 
 TDS has two projects set up on Invision:
 
-1. [TDS_blocks](https://telus.invisionapp.com/share/PCEVXUFT9) (not yet coded): Inspirational blocks that use TDS components/symbols that can be used in your Sketch file. These blocks live in the master Sketch file as designs and some of the blocks have been coded and can be found in SiteBuilder.
+1.  [TDS_blocks](https://telus.invisionapp.com/share/PCEVXUFT9) (not yet coded): Inspirational blocks that use TDS components/symbols that can be used in your Sketch file. These blocks live in the master Sketch file as designs and some of the blocks have been coded and can be found in SiteBuilder.
 
-2. [TDS_components](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097): Library of all the components that can be found in TDS.
+2.  [TDS_components](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097): Library of all the components that can be found in TDS.
 
 These are both working projects that continue to get updated, and improved on as we add components and blocks to the system.
 
@@ -58,9 +58,9 @@ There are two component libraries available in TDS to help you with your designs
 
 ### What you’ll need:
 
-1. **Invision DSM** (Design Systems Manager): You should have access to DSM if you have access to TELUS Invision Enterprise. If not, please contact your Invision administrator ([@BrianLam1](mailto:Brian.Lam1@telus.com)) or your design lead so they can add you to DSM and Invision Enterprise.
+1.  **Invision DSM** (Design Systems Manager): You should have access to DSM if you have access to TELUS Invision Enterprise. If not, please contact your Invision administrator ([@BrianLam1](mailto:Brian.Lam1@telus.com)) or your design lead so they can add you to DSM and Invision Enterprise.
 
-2. **Craft Manager** is a suite of Sketch tools by Invision that helps with your workflow. [Download and install the plugin](https://www.invisionapp.com/craft) before continuing to the next section.
+2.  **Craft Manager** is a suite of Sketch tools by Invision that helps with your workflow. [Download and install the plugin](https://www.invisionapp.com/craft) before continuing to the next section.
 
 ### Sync up to the DSM library
 

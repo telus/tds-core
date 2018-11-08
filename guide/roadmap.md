@@ -12,9 +12,9 @@ of components that are identifiable with the `core-` prefix, which represents ou
 
 Independently versioned components unlocks many optimizations for consumers, including:
 
-* Applications only need to depend on the core components that are actually being used, reducing bundle size
-* Component upgrades can be done more granularly
-* The overall versioning scheme is more predictable
+- Applications only need to depend on the core components that are actually being used, reducing bundle size
+- Component upgrades can be done more granularly
+- The overall versioning scheme is more predictable
 
 Upgrading from v1.0 to "v2" is straightforward and short. Follow [the upgrade instructions](https://github.com/telusdigital/tds-core/releases/v2.0.0) in
 Github and use the [tds-codemod](https://github.com/telusdigital/tds-codemod) automatic refactoring tool.
@@ -28,9 +28,9 @@ Instead, all design system components will be released independenly. View availa
 With a foundational set of components available in the system for immediate use, we are shifting our focus from delivery of
 _components_ to delivery of a _platform_ that enables others to contribute components into the system. The major initiatives are:
 
-* Creation of the tds-community platform, which enables others to publish components safely and smoothly
-* Kickoff the Digital Platform Ambassadors to provide community leadership
-* Establish self-governance strategies so that the system can scale organicly
+- Creation of the tds-community platform, which enables others to publish components safely and smoothly
+- Kickoff the Digital Platform Ambassadors to provide community leadership
+- Establish self-governance strategies so that the system can scale organicly
 
 We will continue to enhance and expand the core components in the design system in accordance with their needs.
 
@@ -77,10 +77,10 @@ Equally importantwas the creation of a library of Sketch assets to promote fast 
 
 More specifically, the TELUS Design System at v1.0 focuses on foundational components and Sketch symbols in the following categories:
 
-* **Typography**: font settings, body copy, and headings
-* **Layout**: responsiveness, spacing, and 2-dimensional alignment (grid)
-* **Content**: images, dividers, and iconography
-* **Forms**: button, text-based input, multiple choice input, checkboxes, and radios
-* **Feedback**: notification, busy indicator
+- **Typography**: font settings, body copy, and headings
+- **Layout**: responsiveness, spacing, and 2-dimensional alignment (grid)
+- **Content**: images, dividers, and iconography
+- **Forms**: button, text-based input, multiple choice input, checkboxes, and radios
+- **Feedback**: notification, busy indicator
 
 See the [v1.0.0 release](https://github.com/telusdigital/tds-core/releases/v1.0.0) in Github.

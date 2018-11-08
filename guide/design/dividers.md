@@ -25,5 +25,5 @@ time. However If you have any ideas, improvements or any questions regarding imp
 
 ## Roadmap
 
-* More guidance on when to use each divider
-* More standardization around how much spacing to use around the dividers
+- More guidance on when to use each divider
+- More standardization around how much spacing to use around the dividers
