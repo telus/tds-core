@@ -1,16 +1,19 @@
 ### Usage Criteria
 
-- Must provide pricing value under prop called `price`
+- Must provide pricing value using the `price` prop
 
-- Price rate of component can be provided under `rateText` prop (i.e. /month)
+- Price rate can be provided using the `rateText` prop (i.e. /month)
 
-- For French format, please supply the `signDirection` prop with `right`
+- When displaying prices in French, use `signDirection` to position the dollar sign to the right of the price
 
-- Top and bottom text are optional, and can be provided using the `topText` and `bottomText` prop respectively
+- Top and bottom text are optional and can be provided using the `topText` and `bottomText` props respectively
 
-- Size of component can be determined by 3 sizes called `small`, `medium`, `large`
+- `bottomText` is only available with `small` and `medium` sized `PriceLockup`
 
-- Only under `small` and `medium` sizing, `bottomText` and `hairlineDivider` are available
+- `PriceLockup` comes in three different sizes:
+  - Use `small` for pricing in non-product cards
+  - Use `medium` for pricing in product cards
+  - Use `large` for pricing in banners and promo cards
 
 ```jsx
 <PriceLockup
@@ -21,4 +24,10 @@
   price="25"
   signDirection="left"
 />
+```
+
+### French and `signDirection`
+
+```jsx
+<PriceLockup size="medium" topText="À partir de :" rateText="" price="25" signDirection="right" />
 ```
