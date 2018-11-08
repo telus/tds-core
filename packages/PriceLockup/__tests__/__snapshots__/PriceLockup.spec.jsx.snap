@@ -2,12 +2,12 @@
 
 exports[`PriceLockup renders with default props 1`] = `
 <Box
-  between={3}
+  between={1}
   inline={false}
   tag="div"
 >
   <Box
-    between={2}
+    between={1}
     inline={false}
     tag="div"
   >

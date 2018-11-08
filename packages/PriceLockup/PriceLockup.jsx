@@ -60,9 +60,9 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
   }
 
   return (
-    <Box between={3}>
+    <Box between={size === 'large' ? undefined : 1}>
       {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-      <Box between={size === 'small' ? 2 : 3}>
+      <Box between={size === 'small' ? 1 : 3}>
         <Box
           between={2}
           inline
