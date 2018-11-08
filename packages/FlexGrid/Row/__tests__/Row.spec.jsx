@@ -9,7 +9,7 @@ describe('Row', () => {
   const doMount = (props = {}) => {
     const wrapper = mount(
       <FlexGrid>
-        <Row {...props}>Some content</Row>)
+        <Row {...props}>Some content</Row>
       </FlexGrid>
     )
     return wrapper.find(ReactFlexboxGridRow)

@@ -27,6 +27,7 @@ export default function counterButton(props) {
 
   return (
     <button
+      type="button"
       aria-label={label}
       className="selector-counter__plain-button selector-counter__button"
       onClick={disabled ? noop : onClick}

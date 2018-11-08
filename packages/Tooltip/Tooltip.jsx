@@ -40,6 +40,7 @@ class Tooltip extends React.Component {
     super()
     this.refTooltip = null
   }
+
   state = {
     open: false,
     halfPageWidth: 0,

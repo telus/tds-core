@@ -13,7 +13,7 @@ describe('Col', () => {
   const doMount = (props = {}) => {
     const wrapper = mount(
       <FlexGrid>
-        <Col {...props}>Some content</Col>)
+        <Col {...props}>Some content</Col>
       </FlexGrid>
     )
 
