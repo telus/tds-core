@@ -44,23 +44,23 @@ During your initial onboarding to the design team, you should have gotten an inv
 
 TDS has two projects set up on Invision:
 
-1.  [TDS_blocks](https://telus.invisionapp.com/share/PCEVXUFT9) (not yet coded): Inspirational blocks that use TDS components/symbols that can be used in your Sketch file. These blocks live in the master Sketch file as designs and some of the blocks have been coded and can be found in SiteBuilder.
+1. [TDS_blocks](https://telus.invisionapp.com/share/PCEVXUFT9) (not yet coded): Inspirational blocks that use TDS components/symbols that can be used in your Sketch file. These blocks live in the master Sketch file as designs and some of the blocks have been coded and can be found in SiteBuilder.
 
-2.  [TDS_components](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097): Library of all the components that can be found in TDS.
+2. [TDS_components](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097): Library of all the components that can be found in TDS.
 
 These are both working projects that continue to get updated, and improved on as we add components and blocks to the system.
 
-# Assets
+## Assets
 
 ## TDS component library
 
 There are two component libraries available in TDS to help you with your designs, TDS components and TDS Blocks (as mentioned in the previous section). These libraries are part of DSM (Design Systems Manager) and is accessilble through Craft Manager. Follow the below instructions to get set up with the component libraries.
 
-### What you’ll need:
+### What you’ll need
 
-1.  **Invision DSM** (Design Systems Manager): You should have access to DSM if you have access to TELUS Invision Enterprise. If not, please contact your Invision administrator ([@BrianLam1](mailto:Brian.Lam1@telus.com)) or your design lead so they can add you to DSM and Invision Enterprise.
+1. **Invision DSM** (Design Systems Manager): You should have access to DSM if you have access to TELUS Invision Enterprise. If not, please contact your Invision administrator ([@BrianLam1](mailto:Brian.Lam1@telus.com)) or your design lead so they can add you to DSM and Invision Enterprise.
 
-2.  **Craft Manager** is a suite of Sketch tools by Invision that helps with your workflow. [Download and install the plugin](https://www.invisionapp.com/craft) before continuing to the next section.
+2. **Craft Manager** is a suite of Sketch tools by Invision that helps with your workflow. [Download and install the plugin](https://www.invisionapp.com/craft) before continuing to the next section.
 
 ### Sync up to the DSM library
 
@@ -165,7 +165,7 @@ The brand team is working towards creating a library of lifestyle photography. U
 
 Please follow the [TELUS Brand Photography Guidelines](https://drive.google.com/a/telus.com/file/d/0BzlWahrSc56DenY4YzBndm1mWkk/view?usp=sharing) for detailed information on usage and implementation of the images.
 
-# Releases
+## Releases
 
 The TELUS Design System team often makes design improvements to the TDS component library and Master Sketch file. We track all release updates in our version page in the Master Sketch file and on the [DSM release page](https://telus.invisionapp.com/dsm/telus/telus-design-system/releases) on Invision.
 
@@ -175,6 +175,6 @@ When TDS makes releases you will get notified the next time you are on Sketch an
 
 Releases updates to the system can be found on the [release notes on Github](https://github.com/telusdigital/tds-core/releases), so check back frequently for updates to the system.
 
-# Support
+## Support
 
 Please take the time to join our [#TDS-Guild Slack channel](https://telusdigital.slack.com/messages/C2WK9TP5F). It's the perfect place for general discussions, announcements, and design questions related to TDS. For further help please see our [Support Page](../contact.html)

@@ -5,7 +5,7 @@ A description of the structure of the codebase, conventions being followed, and 
 ## Contents
 
 - [Tools](#tools)
-- [Component structure and standards](#component-structure-and-standards)
+- [Component structure and standards](#component-s-and-s)
 - [Building components](#building-components)
 - [Writing test](#writing-tests)
 
@@ -31,11 +31,12 @@ We utilize the following tools for the development, release, and distribution pr
   based on the TELUS isomorphic starter kit pipeline, using Docker as the build artifact
 - [Lerna](https://lernajs.io/): A tool for managing JavaScript projects with multiple packages.
 
-## Component structure and standards {#component-structure-and-standards}
+## Component structure and standards {#component-s-and-s}
 
 All TDS components have a common directory structure and set of standards. Where you have a
 component named `ButtonLink`, the files are organized like this:
 
+```bash
     /packages/
     │
     └─── ButtonLink
@@ -53,6 +54,7 @@ component named `ButtonLink`, the files are organized like this:
             |
             └─── __snapshots__
                 |  ButtonLink.spec.jsx.snap
+```
 
 Here you may notice some of our standards:
 
@@ -115,7 +117,7 @@ their respective **ComponentName.modules.scss** file. The following patterns are
 
 [Here is an example of a scss file that uses the `composes` property from CSS modules](https://github.com/telusdigital/tds-core/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.modules.scss).
 
-**Rendered DOM**
+#### Rendered DOM
 
 From the `composes` example above:
 

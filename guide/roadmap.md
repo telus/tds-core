@@ -5,7 +5,9 @@ the other Digital Platform teams to provide a comprehensive platform for buildin
 
 The TELUS Design System will continue to release incrementally while we work towards wide-reaching Platform initiatives.
 
-## Current release: TELUS Design System "v2": independently versioned components (March 2018)
+## Current Release V2 (March 2018)
+
+TELUS Design System "v2": independently versioned components (March 2018)
 
 Version 1 paved the way for re-architecting the React components into separately versioned packages. We now have a growing library
 of components that are identifiable with the `core-` prefix, which represents our seal of quality.

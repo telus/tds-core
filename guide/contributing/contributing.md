@@ -4,6 +4,8 @@
 - [Developer guide](./developer-guide.md)
 - [Codebase overview](./codebase-overview.md)
 
+## Community
+
 **_In early 2018, the TDS Platform team will be rolling out more robust architecture, tooling, and processes to better scale community
 component development and contribution._**
 

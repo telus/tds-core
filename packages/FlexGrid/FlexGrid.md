@@ -1,8 +1,12 @@
+# FlexGrid
+
 **Use the "Open isolated" button above to view this component in full-width mode.**
 
 The `FlexGrid` system is a thin wrapper over [react-flexbox-grid](https://github.com/roylee0704/react-flexbox-grid),
 which implements [flexboxgrid.css](http://flexboxgrid.com/). It uses a series of rows and columns to layout and align
 content 2-dimensionally.
+
+## Example
 
 **If you are new to or unfamiliar with flexbox, read this [CSS Tricks flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 for background, terminology, guidelines, and code snippets.**

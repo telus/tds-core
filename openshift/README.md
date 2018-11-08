@@ -28,7 +28,7 @@ It will ask for your github credentials, create an access token, and use it to a
 
 > `vault read --format json secret/common/starter-kit`
 
-#### Openshift
+#### Openshift Login
 
 For the main cluster (for production apps), log in with:
 
@@ -104,13 +104,15 @@ To test OpenShift locally, we recommend using [minishift](https://docs.openshift
 
 On Mac we can install minishift with brew:
 
-    $ brew update
-    $ brew install docker-machine-driver-xhyve
-    $ sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-    $ sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-    $ brew cask install minishift
-    $ minishift config set memory 8192
-    $ minishift start
+```bash
+    brew update
+    brew install docker-machine-driver-xhyve
+    sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+    sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+    brew cask install minishift
+    minishift config set memory 8192
+    minishift start
+```
 
 On other platforms: [see instructions](https://docs.openshift.org/latest/minishift/getting-started/installing.html#installing-instructions)
 
