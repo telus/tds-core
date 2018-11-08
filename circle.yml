@@ -36,27 +36,27 @@ jobs:
     steps:
       - checkout
       - install
-      - run: npm run ci:build
+      - run: yarn run ci:build
       - persist
 
   lint:
     executor: app
     steps:
       - attach
-      - run: npm run lint
+      - run: yarn run lint
 
   unit:
     executor: app
     steps:
       - attach
-      - run: npm run test
+      - run: yarn run test
 
   e2e:
     executor: app
     steps:
       - attach
-      - run: npm run dev:e2e &
-      - run: npm test:e2e -- --all
+      - run: yarn run dev:e2e &
+      - run: yarn run test:e2e -- --all
 
   release:
     executor: app
