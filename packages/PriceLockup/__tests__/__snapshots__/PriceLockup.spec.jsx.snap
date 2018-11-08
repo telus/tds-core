@@ -13,7 +13,7 @@ exports[`PriceLockup renders with default props 1`] = `
   >
     <Box
       between={2}
-      dangerouslyAddClassName="priceWrapper"
+      dangerouslyAddClassName="priceWrapper small"
       inline={true}
       tag="div"
     >

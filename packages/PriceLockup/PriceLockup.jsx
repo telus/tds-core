@@ -4,6 +4,7 @@ import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import Box from '@tds/core-box'
 import { warn } from '../../shared/utils/warn'
+import joinClassNames from '../../shared/utils/joinClassNames'
 import styles from './PriceLockup.modules.scss'
 
 /**
@@ -62,7 +63,14 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     <Box between={3}>
       {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
       <Box between={size === 'small' ? 2 : 3}>
-        <Box between={2} inline dangerouslyAddClassName={styles.priceWrapper}>
+        <Box
+          between={2}
+          inline
+          dangerouslyAddClassName={joinClassNames(
+            styles.priceWrapper,
+            size === 'small' && styles.small
+          )}
+        >
           {renderPriceValueSign()}
           {rateText && <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>}
         </Box>

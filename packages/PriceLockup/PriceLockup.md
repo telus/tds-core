@@ -29,5 +29,5 @@
 ### French and `signDirection`
 
 ```jsx
-<PriceLockup size="medium" topText="À partir de :" rateText="" price="25" signDirection="right" />
+<PriceLockup size="medium" topText="À partir de :" price="25" signDirection="right" />
 ```
