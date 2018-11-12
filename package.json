@@ -40,7 +40,7 @@
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
     "intl:deps": "npx updated",
-    "lint:md": "npx remark --quiet --frail .",
+    "lint:md": "echo $PATH && npx remark --quiet --frail .",
     "intl:audit": "npm audit",
     "lint": "npm-run-all --parallel lint:*",
     "precommit": "lint-staged && yarn test && yarn contributors:update",
