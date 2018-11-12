@@ -63,6 +63,7 @@ jobs:
     steps:
       - attach
       - npmenv
+      - install
       - run: yarn run lint
 
   unit:
