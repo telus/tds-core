@@ -10,11 +10,7 @@ executors:
 commands:
   persist:
     steps:
-      - persist_to_workspace:
-          root: ~/src
-          paths:
-            - .
-            - ~/.npm-global
+      - persist_to_workspace: { root: ~/src, paths: . }
 
   attach:
     steps:
