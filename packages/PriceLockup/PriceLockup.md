@@ -14,22 +14,17 @@
 
 ```jsx
 <PriceLockup
-  size=“medium”
-  topText=“Starting at”
-  price=“25”
-  rateText=“/month”
-  bottomText=“$68 /month after 3 months”
-  signDirection=“left”
+  size="medium"
+  topText="Starting at"
+  price="25"
+  rateText="/month"
+  bottomText="$68 /month after 3 months"
+  signDirection="left"
 />
 ```
 
 ### French and `signDirection`
 
 ```jsx
-<PriceLockup 
-  size="medium" 
-  topText="À partir de :" 
-  price="25" 
-  signDirection="right"
-/>
+<PriceLockup size="medium" topText="À partir de :" price="25" signDirection="right" />
 ```
