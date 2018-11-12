@@ -27,7 +27,7 @@ commands:
       - run:
           name: Setup environment variables
           command: |
-            echo 'export NPM_CONFIG_PREFIX=/home/node/.npm-global' >> $BASH_ENV
+            echo 'export NPM_CONFIG_PREFIX=/home/circleci/.npm-global' >> $BASH_ENV
             echo 'export PATH=$PATH:$NPM_CONFIG_PREFIX/bin' >> $BASH_ENV
             echo 'export MANPATH=$MANPATH:$NPM_CONFIG_PREFIX/share/man' >> $BASH_ENV
             echo 'export NODE_PATH=$NPM_CONFIG_PREFIX/lib/node_modules' >> $BASH_ENV
