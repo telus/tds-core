@@ -27,7 +27,7 @@ exports[`PriceLockup renders with default props 1`] = `
           block={false}
           bold={false}
           invert={false}
-          size="small"
+          size="medium"
         >
           $
         </Text>

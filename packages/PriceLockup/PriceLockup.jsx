@@ -24,7 +24,7 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     if (size === 'medium') {
       return <Text size="large">&#36;</Text>
     }
-    return <Text size={size}>&#36;</Text>
+    return <Text size="medium">&#36;</Text>
   }
 
   const renderPriceValueSign = () => {
