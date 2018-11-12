@@ -16,6 +16,16 @@ commands:
     steps:
       - attach_workspace: { at: "." }
 
+  npmenv:
+    steps:
+      - run:
+          name: Setup NPM config environment variables
+          command: |
+            echo 'export NPM_CONFIG_PREFIX=/home/circleci/.npm-global' >> $BASH_ENV
+            echo 'export PATH=$PATH:$NPM_CONFIG_PREFIX/bin' >> $BASH_ENV
+            echo 'export MANPATH=$MANPATH:$NPM_CONFIG_PREFIX/share/man' >> $BASH_ENV
+            echo 'export NODE_PATH=$NPM_CONFIG_PREFIX/lib/node_modules' >> $BASH_ENV
+
   npmrc:
     steps:
       - run:
@@ -24,13 +34,7 @@ commands:
 
   install:
     steps:
-      - run:
-          name: Setup environment variables
-          command: |
-            echo 'export NPM_CONFIG_PREFIX=/home/circleci/.npm-global' >> $BASH_ENV
-            echo 'export PATH=$PATH:$NPM_CONFIG_PREFIX/bin' >> $BASH_ENV
-            echo 'export MANPATH=$MANPATH:$NPM_CONFIG_PREFIX/share/man' >> $BASH_ENV
-            echo 'export NODE_PATH=$NPM_CONFIG_PREFIX/lib/node_modules' >> $BASH_ENV
+      - npmenv
 
       - npmrc
 
@@ -54,18 +58,21 @@ jobs:
     executor: app
     steps:
       - attach
+      - npmenv
       - run: yarn run lint
 
   unit:
     executor: app
     steps:
       - attach
+      - npmenv
       - run: yarn run test
 
   e2e:
     executor: app
     steps:
       - attach
+      - npmenv
       - run:
           name: Styleguidist Server
           command: yarn run dev:e2e
@@ -76,6 +83,7 @@ jobs:
     executor: app
     steps:
       - attach
+      - npmenv
       - npmrc
       - run: npx semantic-release
 
