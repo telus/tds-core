@@ -44,7 +44,7 @@ describe('PriceLockup', () => {
     })
     it('will make dollar sign small sized', () => {
       const priceLockup = doShallow({ size: 'small', topText: 'top text' })
-      expect(priceLockup).toContainReact(<Text size="small">$</Text>)
+      expect(priceLockup).toContainReact(<Text size="medium">$</Text>)
     })
   })
 
