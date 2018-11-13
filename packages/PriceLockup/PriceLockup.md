@@ -5,7 +5,7 @@
   - Use `medium` for pricing in product compare cards
   - Use `large` for pricing in banners and promo cards
 - The size prop refers to the size of the PriceLockup rather than the viewport it is being used in
-- PriceLockup is responsive depending on the screensize beinv viewed at
+- PriceLockup is responsive depending on the screen size it is being viewed at
 - Must provide pricing value using the `price` prop
 - Price rate can be provided using the `rateText` prop (eg. /month)
 - Top and bottom text are optional and can be provided using the `topText` and `bottomText` props respectively
