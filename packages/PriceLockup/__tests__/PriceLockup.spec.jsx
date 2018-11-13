@@ -36,7 +36,7 @@ describe('PriceLockup', () => {
     })
     it('will make rate text medium sized', () => {
       const priceLockup = doShallow({ size: 'small', rateText: '/month' })
-      expect(priceLockup).toContainReact(<Text size="medium">/month</Text>)
+      expect(priceLockup.find('[data-id="rateText"]')).toHaveClassName('mediumText')
     })
     it('will make top text small sized', () => {
       const priceLockup = doShallow({ size: 'small', topText: 'top text' })
@@ -44,7 +44,7 @@ describe('PriceLockup', () => {
     })
     it('will make dollar sign small sized', () => {
       const priceLockup = doShallow({ size: 'small', topText: 'top text' })
-      expect(priceLockup).toContainReact(<Text size="medium">$</Text>)
+      expect(priceLockup.find('[data-id="dollarSign"]')).toHaveClassName('mediumText')
     })
   })
 
@@ -55,7 +55,7 @@ describe('PriceLockup', () => {
     })
     it('will make rate text medium sized', () => {
       const priceLockup = doShallow({ size: 'medium', rateText: '/month' })
-      expect(priceLockup).toContainReact(<Text size="medium">/month</Text>)
+      expect(priceLockup.find('[data-id="rateText"]')).toHaveClassName('mediumText')
     })
     it('will make top text small sized', () => {
       const priceLockup = doShallow({ size: 'medium', topText: 'top text' })
@@ -67,14 +67,14 @@ describe('PriceLockup', () => {
     })
     it('will make dollar sign large sized', () => {
       const priceLockup = doShallow({ size: 'medium' })
-      expect(priceLockup).toContainReact(<Text size="large">$</Text>)
+      expect(priceLockup.find('[data-id="dollarSign"]')).toHaveClassName('largeText')
     })
   })
 
   describe('size prop is large', () => {
     it('will make DollarSign h1 sized', () => {
       const priceLockup = doShallow({ size: 'large' })
-      expect(priceLockup.find('[data-id="dollarSign"]')).toHaveClassName('dollarSignH1Style')
+      expect(priceLockup.find('[data-id="dollarSign"]')).toHaveClassName('headingText')
     })
 
     it('will make price h2 sized', () => {
@@ -83,7 +83,7 @@ describe('PriceLockup', () => {
     })
     it('will make rate text large sized', () => {
       const priceLockup = doShallow({ size: 'large', rateText: '/month' })
-      expect(priceLockup).toContainReact(<Text size="large">/month</Text>)
+      expect(priceLockup.find('[data-id="rateText"]')).toHaveClassName('largeText')
     })
     it('will make top text large sized', () => {
       const priceLockup = doShallow({ size: 'large', topText: 'top text' })

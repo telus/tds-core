@@ -14,24 +14,27 @@ import styles from './PriceLockup.modules.scss'
 
 const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText }) => {
   const renderDollarSign = () => {
-    if (size === 'large') {
-      return (
-        <span data-id="dollarSign" className={styles.dollarSignH1Style}>
-          &#36;
-        </span>
-      )
-    }
-    if (size === 'medium') {
-      return <Text size="large">&#36;</Text>
-    }
-    return <Text size="medium">&#36;</Text>
+    const classes = joinClassNames(
+      styles.text,
+      size === 'small' && styles.mediumText,
+      size === 'medium' && styles.largeText,
+      size === 'large' && styles.headingText
+    )
+    return (
+      <span data-id="dollarSign" className={classes}>
+        &#36;
+      </span>
+    )
   }
 
   const renderPriceValueSign = () => {
     return (
-      <Box between={size === 'large' ? 2 : 1} inline className={styles.priceValueSign}>
+      <Box between={size === 'large' ? 2 : 1} inline>
         {signDirection === 'left' ? renderDollarSign() : undefined}
-        <span data-id="priceValue" className={styles[`priceValueSign${size}`]}>
+        <span
+          data-id="priceValue"
+          className={joinClassNames(styles.priceValueSign, styles[`priceValueSign${size}`])}
+        >
           {price}
         </span>
         {signDirection === 'right' ? renderDollarSign() : undefined}
@@ -74,7 +77,17 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
           )}
         >
           {renderPriceValueSign()}
-          {rateText && <Text size={size === 'large' ? 'large' : 'medium'}>{rateText}</Text>}
+          {rateText && (
+            <span
+              data-id="rateText"
+              className={joinClassNames(
+                styles.text,
+                size === 'large' ? styles.largeText : styles.mediumText
+              )}
+            >
+              {rateText}
+            </span>
+          )}
         </Box>
       </Box>
       {size !== 'large' && bottomText && rateText && <HairlineDivider />}
