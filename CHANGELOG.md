@@ -1,3 +1,9 @@
+#### 1.0.23 (2018-11-13)
+
+##### Bug Fixes
+
+* **core-chevron-link:**  ie11 overlfow issue ([a46c6f40](https://github.com/telusdigital/tds/commit/a46c6f40e57f1a8b9e5b7f03fc6c648c51258cd2))
+
 #### 1.0.22 (2018-09-28)
 
 ##### Bug Fixes
