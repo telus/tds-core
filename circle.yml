@@ -25,7 +25,7 @@ commands:
     steps:
       - run:
           name: Install dependencies
-          command: yarn install
+          command: npm ci
 
 jobs:
   build:
@@ -33,20 +33,20 @@ jobs:
     steps:
       - checkout
       - install
-      - run: yarn run ci:build
+      - run: npm run ci:build
       - persist
 
   lint:
     executor: builder
     steps:
       - attach
-      - run: yarn run lint
+      - run: npm run lint
 
   unit:
     executor: builder
     steps:
       - attach
-      - run: yarn run test
+      - run: npm run test
 
   e2e:
     executor: browsers
@@ -54,9 +54,9 @@ jobs:
       - attach
       - run:
           name: Styleguidist Server
-          command: yarn run dev:e2e
+          command: npm run dev:e2e
           background: true
-      - run: yarn run test:e2e -- --all
+      - run: npm run test:e2e -- --all
 
   release:
     executor: builder

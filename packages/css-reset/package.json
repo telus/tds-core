@@ -23,7 +23,7 @@
   "scripts": {
     "build:sass": "../../node_modules/.bin/node-sass index.scss dist/index.css --importer=../../node_modules/node-sass-tilde-importer",
     "build:postcss": "../../node_modules/.bin/postcss --use autoprefixer --replace dist/index.css",
-    "build": "yarn build:sass && yarn build:postcss"
+    "build": "npm run build:sass && npm run build:postcss"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0"

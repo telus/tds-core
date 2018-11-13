@@ -9,7 +9,7 @@ const healthCheck = done => {
   request(healthCheckUrl, (err, response, body) => {
     if (!body && counter < 20) {
       console.log(
-        `${counter}/20 waiting for the styleguide to start. \`yarn dev:e2e\` to start it now...`
+        `${counter}/20 waiting for the styleguide to start. \`npm run dev:e2e\` to start it now...`
       )
       counter += 1
 

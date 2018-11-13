@@ -3,7 +3,7 @@
 /* eslint-disable no-console */
 
 /*
-Usage: yarn lerna:publish [component name...] [options] [lerna options]
+Usage: npm run lerna:publish [component name...] [options] [lerna options]
 
   By default, only updated packages will be built.
   All lerna options will be forwarded onto lerna commands.
@@ -47,7 +47,7 @@ getPackageNames(packageNames => {
         )
       } else {
         console.log('Publishing aborted! Try again by specifying the packages you wish to publish.')
-        console.log('Ex: yarn lerna:publish @tds/core-component @tds/core-other-component')
+        console.log('Ex: npm run lerna:publish @tds/core-component @tds/core-other-component')
       }
 
       read.close()
