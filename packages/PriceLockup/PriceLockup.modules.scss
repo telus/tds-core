@@ -67,12 +67,15 @@
 
 .mediumText {
   composes: medium from '../Text/Text.modules.scss';
+  composes: text;
 }
 
 .largeText {
   composes: large from '../Text/Text.modules.scss';
+  composes: text;
 }
 
 .headingText {
   composes: h1 from '../Heading/Heading.modules.scss';
+  line-height: 1.3;
 }

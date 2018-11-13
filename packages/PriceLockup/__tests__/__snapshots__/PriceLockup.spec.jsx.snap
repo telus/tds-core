@@ -23,7 +23,7 @@ exports[`PriceLockup renders with default props 1`] = `
         tag="div"
       >
         <span
-          className="text mediumText"
+          className="mediumText"
           data-id="dollarSign"
         >
           $
@@ -36,7 +36,7 @@ exports[`PriceLockup renders with default props 1`] = `
         </span>
       </Box>
       <span
-        className="text mediumText"
+        className="mediumText"
         data-id="rateText"
       >
         /month
