@@ -14,14 +14,16 @@ import styles from './PriceLockup.modules.scss'
 
 const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText }) => {
   const renderDollarSign = () => {
-    const classes = joinClassNames(
-      styles.text,
-      size === 'small' && styles.mediumText,
-      size === 'medium' && styles.largeText,
-      size === 'large' && styles.headingText
-    )
+    let className
+    if (size === 'small') {
+      className = styles.mediumText
+    } else if (size === 'medium') {
+      className = styles.largeText
+    } else if (size === 'large') {
+      className = styles.headingText
+    }
     return (
-      <span data-id="dollarSign" className={classes}>
+      <span data-id="dollarSign" className={className}>
         &#36;
       </span>
     )
@@ -80,10 +82,7 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
           {rateText && (
             <span
               data-id="rateText"
-              className={joinClassNames(
-                styles.text,
-                size === 'large' ? styles.largeText : styles.mediumText
-              )}
+              className={size === 'large' ? styles.largeText : styles.mediumText}
             >
               {rateText}
             </span>
