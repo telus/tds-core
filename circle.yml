@@ -1,53 +1,35 @@
 version: 2.1
 
 executors:
-  app:
-    working_directory: ~/src
+  builder:
+    docker:
+      - image: telus/build-essential
 
+  browsers:
     docker:
       - image: circleci/node:8-browsers
 
 commands:
   persist:
     steps:
-      - persist_to_workspace: { root: ~/src, paths: . }
+      - persist_to_workspace:
+          root: .
+          paths: .
 
   attach:
     steps:
-      - attach_workspace: { at: "." }
-
-  npmenv:
-    steps:
-      - run:
-          name: Setup NPM config environment variables
-          command: |
-            echo 'export NPM_CONFIG_PREFIX=/home/circleci/.npm-global' >> $BASH_ENV
-            echo 'export PATH=$PATH:$NPM_CONFIG_PREFIX/bin' >> $BASH_ENV
-            echo 'export MANPATH=$MANPATH:$NPM_CONFIG_PREFIX/share/man' >> $BASH_ENV
-            echo 'export NODE_PATH=$NPM_CONFIG_PREFIX/lib/node_modules' >> $BASH_ENV
-
-  npmrc:
-    steps:
-      - run:
-          name: Setup .npmrc
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+      - attach_workspace:
+          at: .
 
   install:
     steps:
-      - npmenv
-
-      - npmrc
-
-      - run:
-          name: Install build-essential
-          command: npx install-group peer --package @telus/build-essential --global
       - run:
           name: Install dependencies
           command: yarn install
 
 jobs:
   build:
-    executor: app
+    executor: builder
     steps:
       - checkout
       - install
@@ -55,25 +37,21 @@ jobs:
       - persist
 
   lint:
-    executor: app
+    executor: builder
     steps:
       - attach
-      - npmenv
-      - install
       - run: yarn run lint
 
   unit:
-    executor: app
+    executor: builder
     steps:
       - attach
-      - npmenv
       - run: yarn run test
 
   e2e:
-    executor: app
+    executor: browsers
     steps:
       - attach
-      - npmenv
       - run:
           name: Styleguidist Server
           command: yarn run dev:e2e
@@ -81,19 +59,16 @@ jobs:
       - run: yarn run test:e2e -- --all
 
   release:
-    executor: app
+    executor: builder
     steps:
       - attach
-      - npmenv
-      - npmrc
       - run: npx semantic-release
 
 workflows:
   version: 2
   run:
     jobs:
-      - build:
-          context: tds
+      - build
 
       - lint:
           requires: [ build ]
