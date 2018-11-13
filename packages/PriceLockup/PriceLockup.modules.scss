@@ -6,51 +6,49 @@
   line-height: 1;
 }
 
-.wordBreakSpacing {
+.priceValueSignsmall {
   composes: wordBreak from '../../shared/styles/Typography/Typography.modules.scss';
   composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
-}
-
-.priceValueSignsmall {
-  composes: wordBreakSpacing;
   @include helvetica-neue-light-45;
-  font-size: 1.75rem;
-  letter-spacing: -0.8px;
-  .sup {
-    font-size: 1rem;
-    top: -0.7em;
+
+  font-size: 1.5rem;
+  letter-spacing: -0.7px;
+
+  @include mq($from: md) {
+    font-size: 1.75rem;
+    letter-spacing: -0.8px;
   }
-  line-height: 0.95;
 }
 
 .priceValueSignmedium {
-  composes: wordBreakSpacing;
-  @include helvetica-neue-light-45;
-  @include helvetica-neue-thin-35;
-  font-size: 2.75rem;
-  letter-spacing: 0;
-  .sup {
-    font-size: 1.25rem;
-    top: -1.3em;
-  }
-  line-height: 1.05;
-}
+  composes: wordBreak from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
 
-.base {
-  composes: wordBreakSpacing;
-  @include helvetica-neue-thin-35;
+  @include helvetica-neue-light-45;
+
+  font-size: 1.75rem;
+  letter-spacing: -1.6px;
+
+  @include mq($from: md) {
+    @include helvetica-neue-thin-35;
+
+    font-size: 2.75rem;
+    letter-spacing: 0;
+  }
 }
 
 .priceValueSignlarge {
-  composes: priceValueSign;
-  composes: base;
-  font-size: 4.5rem;
-  letter-spacing: 0.2px;
-  .sup {
-    font-size: 1.25rem;
-    top: -2.2em;
+  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
+  composes: wordBreak from '../../shared/styles/Typography/Typography.modules.scss';
+
+  @include helvetica-neue-thin-35;
+
+  font-size: 2.75rem;
+
+  @include mq($from: md) {
+    font-size: 4.5rem;
+    letter-spacing: 0.2px;
   }
-  line-height: 0.95;
 }
 
 .priceWrapper {
@@ -61,13 +59,21 @@
   }
 }
 
-.dollarSignH1Style {
-  @include helvetica-neue-thin-35;
-  font-size: 2.75rem;
-  line-height: 1.18;
-  letter-spacing: 0;
-  .sup {
-    font-size: 1.25rem;
-    top: -1.3em;
+.text {
+  line-height: 1.2;
+  @include mq($from: md) {
+    line-height: 1.6;
   }
+}
+
+.mediumText {
+  composes: medium from '../Text/Text.modules.scss';
+}
+
+.largeText {
+  composes: large from '../Text/Text.modules.scss';
+}
+
+.headingText {
+  composes: h1 from '../Heading/Heading.modules.scss';
 }
