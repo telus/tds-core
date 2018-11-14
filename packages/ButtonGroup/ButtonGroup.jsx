@@ -21,7 +21,7 @@ const ButtonGroup = ({ name, onChange, value, label, children, ...rest }) => {
     )
   }
   return (
-    <fieldset>
+    <fieldset {...safeRest(rest)}>
       {label ? (
         <legend>
           <Text bold size="medium">
@@ -29,7 +29,7 @@ const ButtonGroup = ({ name, onChange, value, label, children, ...rest }) => {
           </Text>
         </legend>
       ) : null}
-      <Box between={3} inline dangerouslyAddClassName={styles.buttonGroup} {...safeRest(rest)}>
+      <Box between={3} inline dangerouslyAddClassName={styles.buttonGroup}>
         {getButtons()}
       </Box>
     </fieldset>
@@ -37,14 +37,31 @@ const ButtonGroup = ({ name, onChange, value, label, children, ...rest }) => {
 }
 
 ButtonGroup.propTypes = {
-  name: PropTypes.string.isRequired,
+  /**
+   * The form name of the ButtonGroup.
+   */
+  name: PropTypes.string,
+  /**
+   * A callback function to handle changing which button is seleced.
+   */
   onChange: PropTypes.func,
-  value: PropTypes.string.isRequired,
+  /**
+   * The current selected value for the group.
+   */
+  value: PropTypes.string,
+  /**
+   * A label to be displayed above the ButtonGroup.
+   */
   label: PropTypes.string,
+  /**
+   * A group of ButtonGroup.Item components.
+   */
   children: componentWithName('ButtonGroupItem').isRequired,
 }
 
 ButtonGroup.defaultProps = {
+  name: undefined,
+  value: undefined,
   label: undefined,
   onChange: undefined,
 }

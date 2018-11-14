@@ -2,11 +2,49 @@
 
 exports[`ButtonGroup renders 1`] = `
 <fieldset>
+  <legend>
+    <Text
+      block={false}
+      bold={true}
+      invert={false}
+      size="medium"
+    >
+      Please select a storage size
+    </Text>
+  </legend>
   <Box
     between={3}
     dangerouslyAddClassName="buttonGroup"
     inline={true}
     tag="div"
-  />
+  >
+    <ButtonGroup.Item
+      key=".0"
+      name="storageSize"
+      onChange={[Function]}
+      selectedValue="64gb"
+      value="64gb"
+    >
+      64 GB
+    </ButtonGroup.Item>
+    <ButtonGroup.Item
+      key=".1"
+      name="storageSize"
+      onChange={[Function]}
+      selectedValue="64gb"
+      value="128gb"
+    >
+      128 GB
+    </ButtonGroup.Item>
+    <ButtonGroup.Item
+      key=".2"
+      name="storageSize"
+      onChange={[Function]}
+      selectedValue="64gb"
+      value="256gb"
+    >
+      256 GB
+    </ButtonGroup.Item>
+  </Box>
 </fieldset>
 `;
