@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ButtonGroup renders 1`] = `
-<fieldset>
+<fieldset
+  name="storageSize"
+>
   <legend>
     <Text
       block={false}
