@@ -18,9 +18,13 @@ const generateTest = (packageName, componentName) => ({
   },
 })
 
-const componentTests = process.env.PACKAGES.split(' ').reduce((tests, packageName) => {
-  const componentName = toComponentName(packageName)
-  return Object.assign(tests, generateTest(packageName, componentName))
-}, {})
+const ignoredPackages = ['@tds/core-selector-counter']
+
+const componentTests = process.env.PACKAGES.split(' ')
+  .filter(packageName => !ignoredPackages.includes(packageName))
+  .reduce((tests, packageName) => {
+    const componentName = toComponentName(packageName)
+    return Object.assign(tests, generateTest(packageName, componentName))
+  }, {})
 
 module.exports = componentTests

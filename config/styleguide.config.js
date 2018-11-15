@@ -215,7 +215,6 @@ module.exports = {
               path.resolve('packages/TextArea/TextArea.jsx'),
               path.resolve('packages/InputFeedback/InputFeedback.jsx'),
               path.resolve('packages/Tooltip/Tooltip.jsx'),
-              path.resolve('packages/SelectorCounter/SelectorCounter.jsx'),
             ]
           },
         },
