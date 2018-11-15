@@ -70,6 +70,7 @@ span.text {
 }
 
 .mediumText {
+<<<<<<< HEAD
   composes: medium from '../Text/Text.modules.scss';
   composes: text;
 }
@@ -77,6 +78,13 @@ span.text {
 .largeText {
   composes: large from '../Text/Text.modules.scss';
   composes: text;
+=======
+  composes: medium from '../../shared/styles/Typography/Typography.modules.scss';
+}
+
+.largeText {
+  composes: large from '../../shared/styles/Typography/Typography.modules.scss';
+>>>>>>> eae2fafe... fix(core-price-lockup): use shared typography stylesheet
 }
 
 .headingText {
