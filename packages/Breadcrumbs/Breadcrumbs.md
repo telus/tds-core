@@ -33,10 +33,12 @@ const routes = [
 #### React Router 3
 
 To use `Breadcrumbs` with `react-router`, add a `breadcrumbName` prop to each `<Route>` and enure they are properly
-nested, then pass the `routes` and `params` prop provided by `react-router` to `Breadcrumbs`. You must also pass a `reactRouterLinkComponent` prop as you would with [Link](#link)
+nested, then pass the `routes` and `params` prop provided by `<Route>` to `Breadcrumbs`. You must also pass a `reactRouterLinkComponent` prop as you would with [Link](#link)
 
 ```jsx static
 // routes.js
+import { Router, Route } from 'react-router'
+
 const App = () => (
   <Router>
     <Route breadcrumbName="Mobility" path="/mobility" component={Mobility}>
