@@ -9,6 +9,7 @@ import safeRest from '../../shared/utils/safeRest'
 
 import Item from './Item/Item'
 
+const omitProps = ({ current, path, breadcrumbName, reactRouterLinkComponent, ...props }) => props
 const getBreadcrumbName = (item, params) => {
   if (!item.breadcrumbName) {
     return null
@@ -45,6 +46,7 @@ const getItems = (items, params, concatenatePaths) => {
       breadcrumbName,
       href,
       current: isLast,
+      ...omitProps(safeRest(item)),
     }
   })
 }
@@ -76,10 +78,13 @@ const Breadcrumbs = ({
 }) => {
   let items
   if (children) {
-    items = React.Children.toArray(children).map(child => ({
-      path: child.props.href,
-      breadcrumbName: child.props.children,
-    }))
+    items = React.Children.toArray(children).map(
+      ({ props: { href, children: breadcrumbName, ...itemRest } }) => ({
+        path: href,
+        breadcrumbName,
+        ...itemRest,
+      })
+    )
   } else {
     items = routes
   }
@@ -89,8 +94,9 @@ const Breadcrumbs = ({
   return (
     <nav {...safeRest(rest)}>
       <ol>
-        {items.map(({ href, current, breadcrumbName }) => (
+        {items.map(({ href, current, breadcrumbName, ...itemRest }) => (
           <Breadcrumbs.Item
+            {...itemRest}
             key={href}
             href={current ? `${href}${mainId}` : href}
             reactRouterLinkComponent={reactRouterLinkComponent}
