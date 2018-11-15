@@ -31,6 +31,6 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "@tds/util-proptypes": "^1.0.0-dev"
+    "@tds/util-prop-types": "^1.0.0"
   }
 }
