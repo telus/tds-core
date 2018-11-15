@@ -9,8 +9,8 @@ import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/
 import styles from './Item.modules.scss'
 import linkStyles from '../../Link/Link.modules.scss'
 
-const Item = ({ href, reactRouterLinkComponent, children, current }) => {
-  const linkOptions = {}
+const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) => {
+  const linkOptions = { ...rest }
 
   if (reactRouterLinkComponent) {
     linkOptions.to = href
@@ -48,11 +48,6 @@ Item.propTypes = {
   href: PropTypes.string.isRequired,
   /**
    * @ignore
-   * The in-page link for the current page. The mainId property will be passed down from from the parent `<Breadcrumbs>`.
-   */
-  mainId: PropTypes.string,
-  /**
-   * @ignore
    *
    * React Router Link component. The reactRouterLinkComponent property will be passed down from from the parent `<Breadcrumbs>`.
    */
@@ -70,7 +65,6 @@ Item.propTypes = {
 Item.defaultProps = {
   reactRouterLinkComponent: undefined,
   current: false,
-  mainId: undefined,
 }
 
 export default Item
