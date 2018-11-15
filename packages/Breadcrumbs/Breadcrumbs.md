@@ -62,6 +62,8 @@ const Accessories = ({ routes, params }) => (
 `Breadcrumbs` usage with v4 differs greatly from v3. To use Breadcrumb with v4 you can define an object containing all of your possible crumbs. You can then use `location` passed from `react-router` to build a `Breadcrumbs.Item` array.
 
 ```jsx static
+import { Link } from 'react-router-dom'
+
 const breadcrumbNameMap = {
   '/mobility': 'Mobility',
   '/mobility/accessories': 'Accessories',
