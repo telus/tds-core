@@ -21,7 +21,7 @@
   composes: thin rounded from '../../styles/Borders.modules.scss';
 
   composes: font from '../../styles/Forms.modules.scss';
-  composes: medium mediumFont color from '../../../packages/Text/Text.modules.scss';
+  composes: medium mediumFont color from '../../../shared/styles/Typography/Typography.modules.scss';
 
   outline: 0;
 

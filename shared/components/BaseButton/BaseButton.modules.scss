@@ -13,7 +13,7 @@ $button-text-color: $color-white;
 
 .base {
   composes: none rounded from '../../styles/Borders.modules.scss';
-  composes: medium boldFont from '../../../packages/Text/Text.modules.scss';
+  composes: medium boldFont from '../../../shared/styles/Typography/Typography.modules.scss';
   composes: height font from '../../styles/Forms.modules.scss';
 
   margin: 0;
