@@ -61,6 +61,8 @@ const getStructuredData = (items, baseUrl) => {
 }
 
 /**
+ * Display a hierarchy of links, commonly used for navigation.
+ *
  * @version ./package.json
  */
 const Breadcrumbs = ({
