@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Helmet } from 'react-helmet'
 
-import { componentWithName } from '../../shared/utils/propTypes'
+import { componentWithName } from '@tds/util-prop-types'
 
 import safeRest from '../../shared/utils/safeRest'
 
