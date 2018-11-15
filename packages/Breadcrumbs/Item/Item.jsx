@@ -58,6 +58,8 @@ Item.propTypes = {
   children: PropTypes.node.isRequired,
   /**
    * @ignore
+   *
+   * Indicates whether or not the Item should be as current/activ
    */
   current: PropTypes.bool,
 }
