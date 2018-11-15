@@ -95,7 +95,7 @@ const Breadcrumbs = ({
     <nav {...safeRest(rest)}>
       <ol>
         {items.map(({ href, current, breadcrumbName, ...itemRest }) => (
-          <Breadcrumbs.Item
+          <Item
             {...itemRest}
             key={href}
             href={current ? `${href}${mainId}` : href}
@@ -103,7 +103,7 @@ const Breadcrumbs = ({
             current={current}
           >
             {breadcrumbName}
-          </Breadcrumbs.Item>
+          </Item>
         ))}
       </ol>
       <Helmet>
