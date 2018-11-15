@@ -15,7 +15,7 @@
 }
 
 .link {
-  composes: medium from '../Text/Text.modules.scss';
+  composes: medium from '../../shared/styles/Typography/Typography.modules.scss';
   display: inline-block;
   text-decoration: none;
   max-width: 100%;
