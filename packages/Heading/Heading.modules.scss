@@ -3,7 +3,7 @@
 @import '../../shared/scss/typography';
 
 .sup {
-  composes: baseSupSubScripts from '../Text/Text.modules.scss';
+  composes: baseSupSubScripts from '../../shared/styles/Typography/Typography.modules.scss';
 }
 
 .h1 {
