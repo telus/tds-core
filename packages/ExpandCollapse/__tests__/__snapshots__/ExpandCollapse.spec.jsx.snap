@@ -226,8 +226,8 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                           invert={false}
                           size="base"
                         >
-                          <div
-                            className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+                          <span
+                            className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__blockText___2DsZN"
                           >
                             <Panel
                               disabled={false}
@@ -239,7 +239,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                 Panel content
                               </div>
                             </Panel>
-                          </div>
+                          </span>
                         </Text>
                       </div>
                     </Box>
@@ -500,8 +500,8 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                           invert={false}
                           size="base"
                         >
-                          <div
-                            className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+                          <span
+                            className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__blockText___2DsZN"
                           >
                             <Panel
                               disabled={false}
@@ -513,7 +513,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                 Panel content
                               </div>
                             </Panel>
-                          </div>
+                          </span>
                         </Text>
                       </div>
                     </Box>
