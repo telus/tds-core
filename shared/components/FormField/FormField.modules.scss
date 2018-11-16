@@ -1,5 +1,5 @@
 @import '~@tds/core-colours/colours';
-@import '../../scss/typography';
+@import '~@tds/shared-typography/Typography.modules.scss';
 
 /* LABEL */
 
@@ -21,7 +21,7 @@
   composes: thin rounded from '../../styles/Borders.modules.scss';
 
   composes: font from '../../styles/Forms.modules.scss';
-  composes: medium mediumFont color from '../../../shared/styles/Typography/Typography.modules.scss';
+  composes: medium mediumFont color;
 
   outline: 0;
 
