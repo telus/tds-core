@@ -29,7 +29,9 @@ const updateValue = event => {
 const validate = event => {
   const value = event.target.value
 
-  if (value.length < 16) {
+  if(value.length === 0) {
+    setState({ status: null })
+  } else if (value.length < 16) {
     setState({ status: 'error' })
   } else {
     setState({ status: 'success' })
@@ -72,7 +74,7 @@ const passwordRequirements = feedback => {
   id="password-2"
   value={state.value}
   feedback={state.status}
-  onChange={updateValue}
+  onChange={(e) => { updateValue(e); validate(e); }}
   onBlur={validate}
   helper={passwordRequirements}
 />
