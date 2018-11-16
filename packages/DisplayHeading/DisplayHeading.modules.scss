@@ -1,14 +1,14 @@
 @import '~@tds/core-colours/colours';
 @import '~@tds/core-responsive/responsive';
-@import '../../shared/scss/typography';
+@import '~@tds/shared-typography/Typography.modules.scss';
 
 .sup {
-  composes: baseSupSubScripts from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: baseSupSubScripts;
 }
 
 .base {
   composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
-  composes: wordBreak from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: wordBreak;
 
   @include helvetica-neue-thin-35;
 }
