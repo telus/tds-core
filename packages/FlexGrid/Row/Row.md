@@ -1,33 +1,45 @@
 ### Alignment
 
-Use flexbox alignment properties to vertically and horizontally align columns.
+Use `FlexGrid` alignment properties to vertically and horizontally align columns.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <FlexGrid>
   <FlexGrid.Row horizontalAlign="start">
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}><Text>Left</Text></Box>
+      <Box vertical={2}>
+        <Text>Left</Text>
+      </Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}><Text>aligned</Text></Box>
+      <Box vertical={2}>
+        <Text>aligned</Text>
+      </Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 
   <FlexGrid.Row horizontalAlign="center">
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}><Text>Center</Text></Box>
+      <Box vertical={2}>
+        <Text>Center</Text>
+      </Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}><Text>aligned</Text></Box>
+      <Box vertical={2}>
+        <Text>aligned</Text>
+      </Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 
   <FlexGrid.Row horizontalAlign="end">
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}><Text>Right</Text></Box>
+      <Box vertical={2}>
+        <Text>Right</Text>
+      </Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}><Text>aligned</Text></Box>
+      <Box vertical={2}>
+        <Text>aligned</Text>
+      </Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
@@ -78,33 +90,82 @@ Use flexbox alignment properties to vertically and horizontally align columns.
 
 ### Distribution
 
-Use flexbox distribution properties to control the negative space around columns.
+Use `FlexGrid` distribution properties to control the negative space around columns.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <FlexGrid>
   <FlexGrid.Row distribute="around">
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}><Text>Around</Text></Box>
+      <Box vertical={2}>
+        <Text>Around</Text>
+      </Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}><Text>Around</Text></Box>
+      <Box vertical={2}>
+        <Text>Around</Text>
+      </Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}><Text>Around</Text></Box>
+      <Box vertical={2}>
+        <Text>Around</Text>
+      </Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 
   <FlexGrid.Row distribute="between">
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}><Text>Between</Text></Box>
+      <Box vertical={2}>
+        <Text>Between</Text>
+      </Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}><Text>Between</Text></Box>
+      <Box vertical={2}>
+        <Text>Between</Text>
+      </Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}><Text>Between</Text></Box>
+      <Box vertical={2}>
+        <Text>Between</Text>
+      </Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
+</FlexGrid>
+```
+
+### Spacing between rows
+
+Use the [Box](#box) component's `between` prop to add spacing between rows.
+
+_Note:_ When adding spacing between rows, please only use `between` spacing values _5_, _6_ or _7_.
+
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
+<FlexGrid>
+  <Box between={5}>
+    <FlexGrid.Row>
+      <FlexGrid.Col xs={6}>
+        <Box vertical={2}>
+          <Text>Top</Text>
+        </Box>
+      </FlexGrid.Col>
+      <FlexGrid.Col xs={6}>
+        <Box vertical={2}>
+          <Text>Row</Text>
+        </Box>
+      </FlexGrid.Col>
+    </FlexGrid.Row>
+    <FlexGrid.Row>
+      <FlexGrid.Col xs={6}>
+        <Box vertical={2}>
+          <Text>Bottom</Text>
+        </Box>
+      </FlexGrid.Col>
+      <FlexGrid.Col xs={6}>
+        <Box vertical={2}>
+          <Text>Row</Text>
+        </Box>
+      </FlexGrid.Col>
+    </FlexGrid.Row>
+  </Box>
 </FlexGrid>
 ```
 
@@ -118,13 +179,19 @@ In the following example, the items are set to reverse until the `md` breakpoint
 <FlexGrid>
   <FlexGrid.Row xsReverse={true} mdReverse={false} xlReverse={true}>
     <FlexGrid.Col>
-      <Box vertical={2}><Text>1</Text></Box>
+      <Box vertical={2}>
+        <Text>1</Text>
+      </Box>
     </FlexGrid.Col>
     <FlexGrid.Col>
-      <Box vertical={2}><Text>2</Text></Box>
+      <Box vertical={2}>
+        <Text>2</Text>
+      </Box>
     </FlexGrid.Col>
     <FlexGrid.Col>
-      <Box vertical={2}><Text>3</Text></Box>
+      <Box vertical={2}>
+        <Text>3</Text>
+      </Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
