@@ -32,6 +32,7 @@
   "devDependencies": {
     "@tds/core-display-heading": "^1.0.5",
     "@tds/core-heading": "^1.1.4",
-    "@tds/core-text": "^1.0.3"
+    "@tds/core-text": "^1.0.3",
+    "@tds/shared-typography": "^1.0.2"
   }
 }
