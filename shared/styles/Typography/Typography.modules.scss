@@ -1,5 +1,25 @@
 @import '~@tds/core-colours/colours';
-@import '../../scss/typography';
+
+$font-telus: 'TELUS-Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-icons: 'TELUS Core Icons';
+
+$font-size-base: 100%;
+
+@mixin helvetica-neue-thin-35 {
+  font-weight: 300;
+}
+
+@mixin helvetica-neue-light-45 {
+  font-weight: 400;
+}
+
+@mixin helvetica-neue-roman-55 {
+  font-weight: 500;
+}
+
+@mixin helvetica-neue-medium-65 {
+  font-weight: 700;
+}
 
 .wordBreak {
   word-wrap: break-word;
