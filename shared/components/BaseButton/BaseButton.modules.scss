@@ -1,5 +1,6 @@
 @import '~@tds/core-colours/colours';
 @import '~@tds/core-responsive/responsive';
+@import '~@tds/shared-typography/Typography.modules.scss';
 
 $primary-bg-color: $color-primary;
 $secondary-bg-color: $color-secondary;
@@ -13,7 +14,7 @@ $button-text-color: $color-white;
 
 .base {
   composes: none rounded from '../../styles/Borders.modules.scss';
-  composes: medium boldFont from '../../../shared/styles/Typography/Typography.modules.scss';
+  composes: medium boldFont;
   composes: height font from '../../styles/Forms.modules.scss';
 
   margin: 0;
