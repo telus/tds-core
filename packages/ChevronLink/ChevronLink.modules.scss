@@ -1,5 +1,5 @@
 @import '~@tds/core-colours/colours';
-@import '../../shared/scss/typography';
+@import '~@tds/shared-typography/Typography.modules.scss';
 
 .chevron {
   display: inline-block;
@@ -15,7 +15,7 @@
 }
 
 .link {
-  composes: medium from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: medium;
   display: inline-block;
   text-decoration: none;
   max-width: 100%;
