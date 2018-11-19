@@ -2,6 +2,8 @@
 
 Radio buttons are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list. Radio groups allow users to easily compare and see options.
 
+For information on how to use disabled Radio buttons, please refer to the [disabled form component](#form-disabled-state) guidelines.
+
 <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" target="_blank">Reference</a>
 
 ### Usage criteria
