@@ -205,6 +205,7 @@ module.exports = {
         },
         {
           name: 'Forms',
+          content: path.resolve('docs/Forms.md'),
           components() {
             return [
               path.resolve('packages/Button/Button.jsx'),
