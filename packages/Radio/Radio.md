@@ -6,9 +6,9 @@ Radio buttons are used when there is a list of two or more options that are mutu
 
 ### Usage criteria
 
-* Use when there can only be exactly one choice from mulitple options
-* Use there are 2-6 options to choose from
-* Use [`Select`](#select) (dropdown) when there are over 6 options
+- Use when there can only be exactly one choice from mulitple options
+- Use there are 2-6 options to choose from
+- Use [`Select`](#select) (dropdown) when there are over 6 options
 
 ```jsx
 initialState = {
@@ -22,7 +22,7 @@ const setChoice = event => {
 <Box tag="fieldset" between={2}>
   <legend>
     <Text bold size="medium">
-      How would you like to recieve your monthly bill?
+      How would you like to receive your monthly bill?
     </Text>
   </legend>
   <Radio
