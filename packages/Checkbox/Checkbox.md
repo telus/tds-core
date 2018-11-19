@@ -4,6 +4,8 @@ Checkboxes are used when there are lists of options and the user may select any 
 
 A stand-alone checkbox is used for a single option that the user can turn on or off.
 
+For information on how to use disabled Checkboxes, please refer to the [disabled form component](#form-disabled-state) guidelines.
+
 <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" target="_blank">Reference</a>
 
 ```jsx
