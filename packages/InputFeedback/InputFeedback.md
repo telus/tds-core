@@ -61,7 +61,6 @@ const passwordRequirements = feedback => {
 
         <UnorderedList listStyle={listStyle}>
           <UnorderedList.Item>16 characters or longer</UnorderedList.Item>
-          <UnorderedList.Item>Not repeated from previous password</UnorderedList.Item>
         </UnorderedList>
       </Box>
     </InputFeedback>
