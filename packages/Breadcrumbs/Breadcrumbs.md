@@ -38,6 +38,8 @@ nested, then pass the `routes` and `params` prop provided by `<Route>` to `Bread
 ```jsx static
 // routes.js
 import { Router, Route } from 'react-router'
+import Mobility from './Mobility'
+import Accessories from './Accessories'
 
 const App = () => (
   <Router>
@@ -49,7 +51,7 @@ const App = () => (
 ```
 
 ```jsx static
-// accessories.jsx
+// Accessories.jsx
 import { ReactRouterLink } from 'react-router'
 
 const Accessories = ({ routes, params }) => (
