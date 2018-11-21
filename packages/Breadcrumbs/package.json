@@ -22,14 +22,14 @@
   "homepage": "http://tds.telus.com",
   "peerDependencies": {
     "react": ">=15",
-    "react-dom": ">=15"
+    "react-dom": ">=15",
+    "react-helmet": ">=5"
   },
   "dependencies": {
     "@tds/core-link": "^1.0.3",
     "@tds/shared-colored-text-provider": "^1.0.0-dev",
     "airbnb-prop-types": "2.8.1",
-    "prop-types": "^15.5.10",
-    "react-helmet": "^5.2.0"
+    "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@tds/util-prop-types": "^1.0.0"

@@ -110,6 +110,7 @@
     "prettier": "^1.14.3",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
+    "react-helmet": "^5.2.0",
     "react-styleguidist": "^7.0.3",
     "react-test-renderer": "^16.0.0",
     "request": "^2.87.0",
