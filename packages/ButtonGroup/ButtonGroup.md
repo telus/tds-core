@@ -8,9 +8,12 @@ The `label` prop on the parent `ButtonGroup` component will add a label to the w
 
 ### Usage criteria
 
-- ???
-- ???
-- ???
+- Teams can set a selection to be selected on default
+- Use button group when one selection needs to be made from multiple options
+- Use when there can only be exactly one choice from mulitple options
+- Use there are 2-6 options to choose from
+- Use when options are similar in format or category and short (eg. 1GB, 3GB, 5GB)
+- Use radio when options are more than than 10-12 characters in length
 
 ```
 initialState = {
