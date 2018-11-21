@@ -23,13 +23,10 @@ const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
     block ? styles.blockText : null
   )
 
-  return React.createElement(
-    'span',
-    {
-      ...safeRest(rest),
-      className: classes,
-    },
-    children
+  return (
+    <span {...safeRest(rest)} className={classes}>
+      {children}
+    </span>
   )
 }
 

@@ -6,7 +6,7 @@
 
 ### Usage criteria
 
-- Only used to modify text in `Paragraph`.
+- Should only be used to modify text in `Paragraph`.
 - Never used standalone outside of a `Paragraph`.
 
 ### Alternate text styles
