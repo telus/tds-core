@@ -52,7 +52,8 @@ const App = () => (
 
 ```jsx static
 // Accessories.jsx
-import { ReactRouterLink } from 'react-router'
+import { Link as ReactRouterLink } from 'react-router'
+import Breadcrumbs from '@tds/core-breadcrumbs'
 
 const Accessories = ({ routes, params }) => (
   <Breadcrumbs routes={routes} params={params} reactRouterLinkComponent={ReactRouterLink} />
