@@ -12,12 +12,19 @@ describe('Text', () => {
     expect(text).toMatchSnapshot()
   })
 
-  it('renders an HTML span or div tag', () => {
+  it('renders a span with display: block if specified', () => {
     let text = doShallow()
+<<<<<<< HEAD
     expect(text).toHaveDisplayName('span')
 
     text = doShallow({ block: true })
     expect(text).toHaveDisplayName('div')
+=======
+    expect(text).not.toHaveClassName('blockText')
+
+    text = doShallow({ block: true })
+    expect(text).toHaveClassName('blockText')
+>>>>>>> 59624eaa... fix(core-text): modify block prop behaviour
   })
 
   it('can be bold', () => {

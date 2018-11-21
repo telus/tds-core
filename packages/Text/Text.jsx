@@ -19,11 +19,12 @@ const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
   const classes = joinClassNames(
     styles[size],
     bold ? styles.boldFont : styles[`${size}Font`],
-    context.inheritColor ? styles.inheritColor : textColor
+    context.inheritColor ? styles.inheritColor : textColor,
+    block ? styles.blockText : null
   )
 
   return React.createElement(
-    block ? 'div' : 'span',
+    'span',
     {
       ...safeRest(rest),
       className: classes,
