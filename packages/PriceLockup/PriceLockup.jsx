@@ -23,7 +23,7 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
       className = styles.headingText
     }
     return (
-      <span data-id="dollarSign" className={className}>
+      <span data-testid="dollarSign" className={className}>
         &#36;
       </span>
     )
@@ -34,7 +34,7 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
       <Box between={size === 'large' ? 2 : 1} inline>
         {signDirection === 'left' ? renderDollarSign() : undefined}
         <span
-          data-id="priceValue"
+          data-testid="priceValue"
           className={joinClassNames(styles.priceValueSign, styles[`priceValueSign${size}`])}
         >
           {price}
@@ -81,7 +81,7 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
           {renderPriceValueSign()}
           {rateText && (
             <span
-              data-id="rateText"
+              data-testid="rateText"
               className={size === 'large' ? styles.largeText : styles.mediumText}
             >
               {rateText}

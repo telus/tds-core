@@ -32,11 +32,11 @@ describe('PriceLockup', () => {
   describe('size prop is small', () => {
     it('will make price h2 sized', () => {
       const priceLockup = doShallow({ size: 'small' })
-      expect(priceLockup.find('[data-id="priceValue"]')).toHaveClassName('priceValueSignsmall')
+      expect(priceLockup.find('[data-testid="priceValue"]')).toHaveClassName('priceValueSignsmall')
     })
     it('will make rate text medium sized', () => {
       const priceLockup = doShallow({ size: 'small', rateText: '/month' })
-      expect(priceLockup.find('[data-id="rateText"]')).toHaveClassName('mediumText')
+      expect(priceLockup.find('[data-testid="rateText"]')).toHaveClassName('mediumText')
     })
     it('will make top text small sized', () => {
       const priceLockup = doShallow({ size: 'small', topText: 'top text' })
@@ -44,18 +44,18 @@ describe('PriceLockup', () => {
     })
     it('will make dollar sign small sized', () => {
       const priceLockup = doShallow({ size: 'small', topText: 'top text' })
-      expect(priceLockup.find('[data-id="dollarSign"]')).toHaveClassName('mediumText')
+      expect(priceLockup.find('[data-testid="dollarSign"]')).toHaveClassName('mediumText')
     })
   })
 
   describe('size prop is medium', () => {
     it('will make price h2 sized', () => {
       const priceLockup = doShallow({ size: 'medium' })
-      expect(priceLockup.find('[data-id="priceValue"]')).toHaveClassName('priceValueSignmedium')
+      expect(priceLockup.find('[data-testid="priceValue"]')).toHaveClassName('priceValueSignmedium')
     })
     it('will make rate text medium sized', () => {
       const priceLockup = doShallow({ size: 'medium', rateText: '/month' })
-      expect(priceLockup.find('[data-id="rateText"]')).toHaveClassName('mediumText')
+      expect(priceLockup.find('[data-testid="rateText"]')).toHaveClassName('mediumText')
     })
     it('will make top text small sized', () => {
       const priceLockup = doShallow({ size: 'medium', topText: 'top text' })
@@ -67,23 +67,23 @@ describe('PriceLockup', () => {
     })
     it('will make dollar sign large sized', () => {
       const priceLockup = doShallow({ size: 'medium' })
-      expect(priceLockup.find('[data-id="dollarSign"]')).toHaveClassName('largeText')
+      expect(priceLockup.find('[data-testid="dollarSign"]')).toHaveClassName('largeText')
     })
   })
 
   describe('size prop is large', () => {
     it('will make DollarSign h1 sized', () => {
       const priceLockup = doShallow({ size: 'large' })
-      expect(priceLockup.find('[data-id="dollarSign"]')).toHaveClassName('headingText')
+      expect(priceLockup.find('[data-testid="dollarSign"]')).toHaveClassName('headingText')
     })
 
     it('will make price h2 sized', () => {
       const priceLockup = doShallow({ size: 'large' })
-      expect(priceLockup.find('[data-id="priceValue"]')).toHaveClassName('priceValueSignlarge')
+      expect(priceLockup.find('[data-testid="priceValue"]')).toHaveClassName('priceValueSignlarge')
     })
     it('will make rate text large sized', () => {
       const priceLockup = doShallow({ size: 'large', rateText: '/month' })
-      expect(priceLockup.find('[data-id="rateText"]')).toHaveClassName('largeText')
+      expect(priceLockup.find('[data-testid="rateText"]')).toHaveClassName('largeText')
     })
     it('will make top text large sized', () => {
       const priceLockup = doShallow({ size: 'large', topText: 'top text' })

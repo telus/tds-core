@@ -24,20 +24,20 @@ exports[`PriceLockup renders with default props 1`] = `
       >
         <span
           className="mediumText"
-          data-id="dollarSign"
+          data-testid="dollarSign"
         >
           $
         </span>
         <span
           className="priceValueSign priceValueSignsmall"
-          data-id="priceValue"
+          data-testid="priceValue"
         >
           25
         </span>
       </Box>
       <span
         className="mediumText"
-        data-id="rateText"
+        data-testid="rateText"
       >
         /month
       </span>
