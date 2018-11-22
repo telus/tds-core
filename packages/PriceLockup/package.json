@@ -25,6 +25,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
+    "@tds/core-box": "^1.0.1",
     "@tds/core-hairline-divider": "^1.0.0",
     "prop-types": "^15.5.10"
   },
