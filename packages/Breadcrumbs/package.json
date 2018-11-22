@@ -28,10 +28,8 @@
   "dependencies": {
     "@tds/core-link": "^1.0.3",
     "@tds/shared-colored-text-provider": "^1.0.0-dev",
+    "@tds/util-prop-types": "^1.0.0",
     "airbnb-prop-types": "2.8.1",
     "prop-types": "^15.5.10"
-  },
-  "devDependencies": {
-    "@tds/util-prop-types": "^1.0.0"
   }
 }
