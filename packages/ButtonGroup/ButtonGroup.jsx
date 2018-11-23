@@ -8,29 +8,42 @@ import { componentWithName } from '@tds/util-prop-types'
 import ButtonGroupItem from './ButtonGroupItem/ButtonGroupItem'
 
 import safeRest from '../../shared/utils/safeRest'
+import { warn } from '../../shared/utils/warn'
 
 import styles from './ButtonGroup.modules.scss'
 
 /**
  * @version ./package.json
  */
-const ButtonGroup = ({ name, onChange, value, label, children, ...rest }) => {
+const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, ...rest }) => {
   const getButtons = () => {
     return React.Children.map(children, child =>
-      React.cloneElement(child, { name, onChange, selectedValue: value })
+      React.cloneElement(child, { name, onChange, onFocus, onBlur, selectedValue: value })
+    )
+  }
+
+  const passedButtons = getButtons()
+  const buttonValues = []
+  Object.keys(passedButtons).forEach(key => {
+    buttonValues.push(passedButtons[key].props.value)
+  })
+
+  if (!buttonValues.includes(value)) {
+    warn(
+      'ButtonGroup',
+      `Selected value "${value}" of ButtonGroup named "${name}" does not match the value of any button in the group. A button must be selected by default. Available button values are: ${buttonValues}`
     )
   }
   return (
     <fieldset name={name} {...safeRest(rest)}>
-      {label ? (
-        <legend>
-          <Text bold size="medium">
-            {label}
-          </Text>
-        </legend>
-      ) : null}
+      <legend>
+        <Text bold size="medium">
+          {label}
+        </Text>
+      </legend>
+
       <Box between={3} inline dangerouslyAddClassName={styles.buttonGroup}>
-        {getButtons()}
+        {passedButtons}
       </Box>
     </fieldset>
   )
@@ -40,19 +53,33 @@ ButtonGroup.propTypes = {
   /**
    * The form name of the ButtonGroup.
    */
-  name: PropTypes.string,
-  /**
-   * A callback function to handle changing which button is seleced.
-   */
-  onChange: PropTypes.func,
+  name: PropTypes.string.isRequired,
   /**
    * The current selected value for the group.
    */
-  value: PropTypes.string,
+  value: PropTypes.string.isRequired,
   /**
    * A label to be displayed above the ButtonGroup.
    */
-  label: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  /**
+   * A callback function to handle changing which button is seleced. Passed into all buttons.
+   *
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
+   */
+  onChange: PropTypes.func.isRequired,
+  /**
+   * A callback function to be invoked when a button receives focus. Passed into all buttons.
+   *
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
+   */
+  onFocus: PropTypes.func,
+  /**
+   * A callback function to be invoked when a button loses focus. Passed into all buttons.
+   *
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
+   */
+  onBlur: PropTypes.func,
   /**
    * A group of ButtonGroup.Item components.
    */
@@ -60,10 +87,8 @@ ButtonGroup.propTypes = {
 }
 
 ButtonGroup.defaultProps = {
-  name: undefined,
-  value: undefined,
-  label: undefined,
-  onChange: undefined,
+  onFocus: undefined,
+  onBlur: undefined,
 }
 
 ButtonGroup.Item = ButtonGroupItem
