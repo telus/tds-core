@@ -54,7 +54,7 @@ describe('ButtonGroup', () => {
   })
 
   it('passes additional attributes to the element', () => {
-    const buttonGroup = doShallow({ defaultProps, id: 'the-id', 'data-some-attr': 'some value' })
+    const buttonGroup = doShallow({ ...defaultProps, id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(buttonGroup).toHaveProp('id', 'the-id')
     expect(buttonGroup).toHaveProp('data-some-attr', 'some value')
@@ -78,7 +78,7 @@ describe('ButtonGroup', () => {
 
   it('does not allow custom CSS', () => {
     const buttonGroup = doShallow({
-      defaultProps,
+      ...defaultProps,
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })

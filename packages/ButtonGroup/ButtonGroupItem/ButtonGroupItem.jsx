@@ -5,7 +5,16 @@ import safeRest from '../../../shared/utils/safeRest'
 
 import styles from './ButtonGroupItem.modules.scss'
 
-const ButtonGroupItem = ({ name, value, selectedValue, onChange, children, ...rest }) => (
+const ButtonGroupItem = ({
+  name,
+  value,
+  selectedValue,
+  onChange,
+  onFocus,
+  onBlur,
+  children,
+  ...rest
+}) => (
   <div className={styles.itemContainer} {...safeRest(rest)}>
     <input
       id={value}
@@ -14,6 +23,8 @@ const ButtonGroupItem = ({ name, value, selectedValue, onChange, children, ...re
       type="radio"
       checked={selectedValue === value}
       onChange={onChange}
+      onFocus={onFocus}
+      onBlur={onBlur}
       className={styles.hiddenRadio}
       {...safeRest(rest)}
     />
@@ -47,15 +58,30 @@ ButtonGroupItem.propTypes = {
    */
   onChange: PropTypes.func,
   /**
+   *@ignore
+   *
+   * A callback that triggers when a button is given focus. (Passed in from parent)
+   */
+  onFocus: PropTypes.func,
+  /**
+   *@ignore
+   *
+   * A callback that triggers when a button loses focus. (Passed in from parent)
+   */
+  onBlur: PropTypes.func,
+  /**
    * The button's label. (A11yContent supported)
    */
-  children: PropTypes.node.isRequired,
+
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 }
 
 ButtonGroupItem.defaultProps = {
   selectedValue: undefined,
   name: undefined,
   onChange: undefined,
+  onFocus: undefined,
+  onBlur: undefined,
 }
 
 ButtonGroupItem.displayName = 'ButtonGroup.Item'
