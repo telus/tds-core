@@ -50,6 +50,7 @@ $button-text-color: $color-white;
 .primary {
   background-color: $primary-bg-color;
   color: $button-text-color;
+  display: inline-block;
 
   &:hover {
     @include border;
