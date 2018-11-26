@@ -15,7 +15,7 @@ describe('HairlineDivider', () => {
   it('is an HTMl hr element', () => {
     const hairlineDivider = doShallow()
 
-    expect(hairlineDivider).toHaveTagName('hr')
+    expect(hairlineDivider).toHaveDisplayName('hr')
   })
 
   it('can be horizontal or vertical', () => {
