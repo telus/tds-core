@@ -23,7 +23,7 @@ describe('Link', () => {
   it('is an anchor HTML element when using the href attribute', () => {
     const link = doShallow({ href: 'http://telus.com' })
 
-    expect(link).toHaveTagName('a')
+    expect(link).toHaveDisplayName('a')
     expect(link).toHaveProp('href', 'http://telus.com')
   })
 
