@@ -67,31 +67,33 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
   }
 
   return (
-    <Box between={wrapperSpacing}>
-      <Box between={size !== 'large' ? 1 : undefined}>
-        {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-        <Box
-          between={size === 'small' ? 1 : 2}
-          inline
-          dangerouslyAddClassName={joinClassNames(
-            styles.priceWrapper,
-            size === 'small' && styles.small
-          )}
-        >
-          {renderPriceValueSign()}
-          {rateText && (
-            <span
-              data-testid="rateText"
-              className={size === 'large' ? styles.largeText : styles.mediumText}
-            >
-              {rateText}
-            </span>
-          )}
+    <div className={styles.wrapperAlignment}>
+      <Box between={wrapperSpacing}>
+        <Box between={size !== 'large' ? 1 : undefined}>
+          {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
+          <Box
+            between={size === 'small' ? 1 : 2}
+            inline
+            dangerouslyAddClassName={joinClassNames(
+              styles.priceWrapper,
+              size === 'small' && styles.small
+            )}
+          >
+            {renderPriceValueSign()}
+            {rateText && (
+              <span
+                data-testid="rateText"
+                className={size === 'large' ? styles.largeText : styles.mediumText}
+              >
+                {rateText}
+              </span>
+            )}
+          </Box>
         </Box>
+        {size !== 'large' && bottomText && rateText && <HairlineDivider />}
+        {renderBottomText()}
       </Box>
-      {size !== 'large' && bottomText && rateText && <HairlineDivider />}
-      {renderBottomText()}
-    </Box>
+    </div>
   )
 }
 

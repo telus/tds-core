@@ -1,6 +1,11 @@
 @import '~@tds/core-responsive/responsive';
 @import '../../shared/scss/typography';
 
+.wrapperAlignment {
+  text-align: left;
+  display: inline-block;
+}
+
 .priceValueSign {
   line-height: 1;
 }
