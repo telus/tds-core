@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@1.0.0...@tds/core-price-lockup@1.0.1) (2018-11-26)
+
+
+### Bug Fixes
+
+* **core-price-lockup:** large lockup $ position ([605b600](https://github.com/telusdigital/tds-core/commit/605b600))
+* **core-price-lockup:** reduce build size ([78d35c5](https://github.com/telusdigital/tds-core/commit/78d35c5))
+
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2018-11-13)
 
