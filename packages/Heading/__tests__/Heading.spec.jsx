@@ -32,20 +32,20 @@ describe('Heading', () => {
   it('renders a heading in the specified level', () => {
     const heading = doMount({ level: 'h3' })
 
-    expect(heading).toHaveTagName('h3')
+    expect(heading).toHaveDisplayName('h3')
   })
 
   it('renders a heading in the specified level and specified tag, when level and tag are different', () => {
     const heading = doMount({ level: 'h4', tag: 'h3' })
 
     expect(heading).toHaveClassName('h4')
-    expect(heading).toHaveTagName('h3')
+    expect(heading).toHaveDisplayName('h3')
   })
 
   it('renders a heading in the same tag as level if tag is not specified', () => {
     const heading = doMount({ level: 'h4' })
 
-    expect(heading).toHaveTagName('h4')
+    expect(heading).toHaveDisplayName('h4')
   })
 
   describe('colour', () => {
