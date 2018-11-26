@@ -72,7 +72,7 @@ describe('StandaloneIcon', () => {
     it('renders an HTML button tag', () => {
       const { interactiveIcon } = doShallow({ onClick: jest.fn() })
 
-      expect(interactiveIcon.dive()).toHaveTagName('button')
+      expect(interactiveIcon.dive()).toHaveDisplayName('button')
     })
 
     it('triggers the click handler', () => {
