@@ -15,7 +15,7 @@ describe('DimpleDivider', () => {
   it('is an HTML <hr> element', () => {
     const dimpleDivider = doShallow()
 
-    expect(dimpleDivider).toHaveTagName('hr')
+    expect(dimpleDivider).toHaveDisplayName('hr')
   })
 
   it('passes additional attributes to the element', () => {
