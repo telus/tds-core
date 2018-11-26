@@ -17,7 +17,7 @@ describe('Icon', () => {
   it('renders an HTML i tag', () => {
     const icon = doShallow()
 
-    expect(icon).toHaveTagName('i')
+    expect(icon).toHaveDisplayName('i')
   })
 
   it('needs a symbol', () => {
