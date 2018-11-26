@@ -15,7 +15,7 @@ describe('Paragraph', () => {
   it('renders an HTML p tag', () => {
     const paragraph = doShallow()
 
-    expect(paragraph).toHaveTagName('p')
+    expect(paragraph).toHaveDisplayName('p')
   })
 
   it('can be bold', () => {
