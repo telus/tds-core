@@ -15,7 +15,7 @@ describe('DisplayHeadingSup', () => {
   it('renders an HTML sub tag', () => {
     const displayHeadingSup = doShallow()
 
-    expect(displayHeadingSup).toHaveTagName('sup')
+    expect(displayHeadingSup).toHaveDisplayName('sup')
   })
 
   it('passes additional attributes to the sup element', () => {

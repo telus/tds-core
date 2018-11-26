@@ -19,7 +19,7 @@ describe('DisplayHeading', () => {
   it('renders an h1', () => {
     const displayHeading = doShallow()
 
-    expect(displayHeading).toHaveTagName('h1')
+    expect(displayHeading).toHaveDisplayName('h1')
   })
 
   it('can be inverted', () => {
