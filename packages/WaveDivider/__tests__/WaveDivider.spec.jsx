@@ -15,7 +15,7 @@ describe('WaveDivider', () => {
   it('is an svg', () => {
     const waveDivider = doShallow()
 
-    expect(waveDivider).toHaveTagName('svg')
+    expect(waveDivider).toHaveDisplayName('svg')
   })
 
   it('passes additional attributes to the element', () => {
