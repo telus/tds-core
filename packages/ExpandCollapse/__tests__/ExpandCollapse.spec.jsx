@@ -285,7 +285,7 @@ describe('ExpandCollapse', () => {
       const { expandCollapse } = doMount(
         <ExpandCollapse tag="h3">{aPanel({ id: 'panel-1' })}</ExpandCollapse>
       )
-      expect(expandCollapse.find(`[data-testid="headerWrapper"]`).children()).toHaveTagName(
+      expect(expandCollapse.find(`[data-testid="headerWrapper"]`).children()).toHaveDisplayName(
         'Clickable'
       )
     })
