@@ -14,10 +14,10 @@ describe('Text', () => {
 
   it('renders an HTML span or div tag', () => {
     let text = doShallow()
-    expect(text).toHaveTagName('span')
+    expect(text).toHaveDisplayName('span')
 
     text = doShallow({ block: true })
-    expect(text).toHaveTagName('div')
+    expect(text).toHaveDisplayName('div')
   })
 
   it('can be bold', () => {

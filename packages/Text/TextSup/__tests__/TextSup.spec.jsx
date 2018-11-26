@@ -15,7 +15,7 @@ describe('TextSup', () => {
   it('renders an HTML sub tag', () => {
     const textSup = doShallow()
 
-    expect(textSup).toHaveTagName('sup')
+    expect(textSup).toHaveDisplayName('sup')
   })
 
   it('passes additional attributes to the sub element', () => {
