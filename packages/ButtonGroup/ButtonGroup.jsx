@@ -13,6 +13,7 @@ import { warn } from '../../shared/utils/warn'
 import styles from './ButtonGroup.modules.scss'
 
 /**
+ * An input component utilizing buttons that act as radios.
  * @version ./package.json
  */
 const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, ...rest }) => {
