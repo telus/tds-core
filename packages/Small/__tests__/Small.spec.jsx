@@ -15,7 +15,7 @@ describe('Small', () => {
   it('renders an HTML small tag', () => {
     const small = doShallow()
 
-    expect(small).toHaveTagName('small')
+    expect(small).toHaveDisplayName('small')
   })
 
   it('passes additional attributes to the small element', () => {
