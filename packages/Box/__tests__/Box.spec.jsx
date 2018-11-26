@@ -22,7 +22,7 @@ describe('Box', () => {
   it('can render as a specified HTML element', () => {
     const box = doShallow({ tag: 'ul' })
 
-    expect(box).toHaveTagName('ul')
+    expect(box).toHaveDisplayName('ul')
   })
 
   it('can apply bottom margin', () => {
