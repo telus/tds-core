@@ -1,5 +1,5 @@
 ```js static
-import { * as TDSPropTypes } from '@tds/util-prop-types'
+import * as TDSPropTypes from '@tds/util-prop-types'
 ```
 
 ```jsx noeditor
