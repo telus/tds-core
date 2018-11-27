@@ -8,7 +8,7 @@ import styles from './ButtonGroupItem.modules.scss'
 const ButtonGroupItem = ({
   name,
   value,
-  selectedValue,
+  checked,
   onChange,
   onFocus,
   onBlur,
@@ -21,7 +21,7 @@ const ButtonGroupItem = ({
       name={name}
       value={value}
       type="radio"
-      checked={selectedValue === value}
+      checked={checked}
       onChange={onChange}
       onFocus={onFocus}
       onBlur={onBlur}
@@ -50,7 +50,7 @@ ButtonGroupItem.propTypes = {
    *
    * The current selected value of the full ButtonGroup. (Passed in from parent)
    */
-  selectedValue: PropTypes.string,
+  checked: PropTypes.bool,
   /**
    *@ignore
    *
@@ -77,7 +77,7 @@ ButtonGroupItem.propTypes = {
 }
 
 ButtonGroupItem.defaultProps = {
-  selectedValue: undefined,
+  checked: undefined,
   name: undefined,
   onChange: undefined,
   onFocus: undefined,

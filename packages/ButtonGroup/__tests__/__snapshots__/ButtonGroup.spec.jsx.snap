@@ -21,28 +21,28 @@ exports[`ButtonGroup renders 1`] = `
     tag="div"
   >
     <ButtonGroup.Item
+      checked={true}
       key=".0"
       name="storageSize"
       onChange={[Function]}
-      selectedValue="64gb"
       value="64gb"
     >
       64 GB
     </ButtonGroup.Item>
     <ButtonGroup.Item
+      checked={false}
       key=".1"
       name="storageSize"
       onChange={[Function]}
-      selectedValue="64gb"
       value="128gb"
     >
       128 GB
     </ButtonGroup.Item>
     <ButtonGroup.Item
+      checked={false}
       key=".2"
       name="storageSize"
       onChange={[Function]}
-      selectedValue="64gb"
       value="256gb"
     >
       256 GB
