@@ -19,7 +19,13 @@ import styles from './ButtonGroup.modules.scss'
 const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, ...rest }) => {
   const getButtons = () => {
     return React.Children.map(children, child =>
-      React.cloneElement(child, { name, onChange, onFocus, onBlur, selectedValue: value })
+      React.cloneElement(child, {
+        name,
+        onChange,
+        onFocus,
+        onBlur,
+        checked: value === child.props.value,
+      })
     )
   }
 
