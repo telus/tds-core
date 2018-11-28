@@ -136,8 +136,8 @@ Breadcrumbs.propTypes = {
    */
   routes: PropTypes.arrayOf(
     PropTypes.shape({
-      path: PropTypes.string.isRequired,
-      breadcrumbName: PropTypes.string.isRequired,
+      path: PropTypes.string,
+      breadcrumbName: PropTypes.string,
     })
   ),
   /**
