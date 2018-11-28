@@ -9,7 +9,16 @@ import safeRest from '../../shared/utils/safeRest'
 
 import Item from './Item/Item'
 
-const omitProps = ({ current, path, breadcrumbName, reactRouterLinkComponent, ...props }) => props
+const omitProps = ({
+  current,
+  path,
+  breadcrumbName,
+  reactRouterLinkComponent,
+  indexRoute,
+  childRoutes,
+  component,
+  ...props
+}) => props
 const getBreadcrumbName = (item, params) => {
   if (!item.breadcrumbName) {
     return null
