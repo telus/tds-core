@@ -21,6 +21,24 @@ $font-size-base: 100%;
   font-weight: 700;
 }
 
+@mixin size-small {
+  font-size: 0.875rem;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+}
+
+@mixin size-medium {
+  font-size: 1rem;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+@mixin size-large {
+  font-size: 1.25rem;
+  letter-spacing: -1px;
+  line-height: 1.6;
+}
+
 .wordBreak {
   word-wrap: break-word;
 }
