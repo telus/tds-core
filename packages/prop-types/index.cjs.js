@@ -1,5 +1,3 @@
-const { componentWithName } = require('./dist/index.cjs')
+const propTypes = require('./dist/index.cjs')
 
-module.exports = {
-  componentWithName,
-}
+module.exports = propTypes

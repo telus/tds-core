@@ -13,6 +13,8 @@ const PackageVersion = require('../../docs/components/custom/PackageVersion/Pack
 Limits the prop to only allow components with a specific name.
 
 ```jsx noeditor static
+import { componentWithName } from '@tds/util-prop-types'
+
 const PlanChooser = () => <fieldset>{children}</fieldset>
 
 const App = () => (
@@ -23,6 +25,65 @@ const App = () => (
 )
 
 PlanChooser.propTypes = {
-  children: TDSPropTypes.componentWithName('Radio').isRequired,
+  children: componentWithName('Radio').isRequired,
 }
+```
+
+### <a name="responsiveProps"></a>`responsiveProps(propType)`
+
+#### Using a component with `responsiveProps`
+
+Responsive props all follow the same pattern.
+
+- When passed a **single** value, the value will be used for all breakpoints
+- When passed an **object**, each value will be applied to its corresponding breakpoint (xs, sm, md, lg, xl)
+  - When using an object, the value is applied to its breakpoint and all breakpoints above until overwritten
+
+The below example shows two ways you can build a `repsonsiveProps` object to create a `FlexGrid.Col` that is `'center'` on `xs` and `sm`, and `'left'` on `md`, `lg`, `xl`.
+
+```js noeditor static
+<FlexGrid.Col
+  align={{
+    xs: 'center',
+    sm: 'center',
+    md: 'left',
+    lg: 'left',
+    xl: 'left'
+  }}
+/>
+
+// or
+
+<FlexGrid.Col align={{ xs: 'center', md: 'left' }} />
+```
+
+#### Creating a component with `responsiveProps`
+
+To create `responsiveProps` pass the `PropType` or multiple prop types in the form of `PropTypes.oneOfType()` to `responsiveProps()` like so.
+
+```jsx noeditor static
+import { responsiveProps } from '@tds/util-prop-types'
+
+const MyComponent = ({ align }) => (
+  // ...
+)
+
+MyComponent.propTypes = {
+  align: responsiveProps(PropTypes.string)
+};
+```
+
+will create the following PropType structure
+
+```jsx noeditor static
+PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.shape({
+    xs: PropTypes.string,
+    sm: PropTypes.string,
+    md: PropTypes.string,
+    lg: PropTypes.string,
+    xl: PropTypes.string,
+  }),
+])
 ```

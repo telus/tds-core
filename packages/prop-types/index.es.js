@@ -1,5 +1,3 @@
-import { componentWithName } from './dist/index.es'
+import * as propTypes from './dist/index.es'
 
-export default {
-  componentWithName,
-}
+export default propTypes
