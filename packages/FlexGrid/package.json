@@ -25,6 +25,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
+    "@tds/util-prop-types": "^1.0.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
