@@ -1,7 +1,10 @@
 import React from 'react'
 import { render, shallow, mount } from 'enzyme'
 
+import Link from '@tds/core-link'
 import Breadcrumbs from '../Breadcrumbs'
+
+const ReactRouterLinkComponent = () => <a href="http://tds.telus.com">TDS</a>
 
 describe('Breadcrumbs', () => {
   const defaultProps = {
@@ -126,5 +129,33 @@ describe('Breadcrumbs', () => {
 
       expect(breadcrumbs.find('a').last()).toHaveProp('aria-current', 'page')
     })
+  })
+})
+
+describe('Breadcrumbs.Item', () => {
+  const defaultProps = {
+    href: '/',
+    children: 'Link',
+    current: false,
+  }
+
+  const doMount = (props = {}) => mount(<Breadcrumbs.Item {...defaultProps} {...props} />)
+
+  it('renders a TDS Link if Item is not current', () => {
+    const breadcrumbsItem = doMount()
+    expect(breadcrumbsItem.find(Link)).toExist()
+  })
+
+  it('renders an anchor tag when reactRouterLinkComponent is not provided and is current', () => {
+    const breadcrumbsItem = doMount({ current: true })
+    expect(breadcrumbsItem.find('a')).toExist()
+  })
+
+  it('renders a TDS Link when reactRouterLinkComponent is provided and is current', () => {
+    const breadcrumbsItem = doMount({
+      current: true,
+      reactRouterLinkComponent: ReactRouterLinkComponent,
+    })
+    expect(breadcrumbsItem.find(Link)).toExist()
   })
 })

@@ -23,7 +23,7 @@ const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) =>
     return (
       <ColoredTextProvider tag="li" colorClassName={current ? styles.lastItem : styles.linkItem}>
         {React.createElement(
-          reactRouterLinkComponent || 'a',
+          reactRouterLinkComponent ? Link : 'a',
           {
             ...linkOptions,
             className: joinClassNames(linkStyles.base, linkStyles.inheritColor, styles.lastLink),
