@@ -110,4 +110,24 @@ describe('Col', () => {
     expect(col.hasClass('lgVisible')).toEqual(true)
     expect(col.hasClass('xlHidden')).toEqual(true)
   })
+
+  it('can align column content horizontally using a string', () => {
+    const col = doMount({
+      horizontalAlign: 'right',
+    })
+
+    expect(col.hasClass('xsHorizontalAlign-right')).toEqual(true)
+  })
+
+  it('can align column content horizontally using a responsive prop object', () => {
+    const col = doMount({
+      horizontalAlign: {
+        xs: 'center',
+        md: 'left',
+      },
+    })
+
+    expect(col.hasClass('xsHorizontalAlign-center')).toEqual(true)
+    expect(col.hasClass('mdHorizontalAlign-left')).toEqual(true)
+  })
 })

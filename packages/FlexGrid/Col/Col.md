@@ -91,3 +91,24 @@ In the following example, the second column is set to hidden for `xs`, `sm`, and
   </FlexGrid.Row>
 </FlexGrid>
 ```
+
+### Aligning Column Content
+
+Use the `horizontalAlign` prop to align the content of a column.
+
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col horizontalAlign={{ xs: 'center', md: 'left' }}>
+      <Box vertical={2}>
+        <Text>Left on desktop, center on mobile</Text>
+      </Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col horizontalAlign="right">
+      <Box vertical={2}>
+        <Text>Always right</Text>
+      </Box>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```

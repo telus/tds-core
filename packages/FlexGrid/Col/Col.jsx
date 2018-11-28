@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Subscriber } from 'react-broadcast'
 
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
+import { responsiveProps } from '@tds/util-prop-types'
 
 import joinClassNames from '../../../shared/utils/joinClassNames'
 import safeRest from '../../../shared/utils/safeRest'
@@ -11,7 +12,26 @@ import calculateLevel from '../calculateLevel'
 
 import styles from './Col.modules.scss'
 
-const Col = ({ span, offset, children, ...rest }) => {
+const createResponsivePropsClassNames = (responsivePropsObject, cb) =>
+  Object.keys(responsivePropsObject).map(breakpoint =>
+    cb(breakpoint, responsivePropsObject[breakpoint])
+  )
+
+function getHorizontalAlignClasses(horizontalAlign) {
+  if (!horizontalAlign) {
+    return undefined
+  } else if (typeof horizontalAlign === 'object') {
+    return joinClassNames(
+      ...createResponsivePropsClassNames(
+        horizontalAlign,
+        (breakpoint, value) => styles[`${breakpoint}HorizontalAlign-${value}`]
+      )
+    )
+  }
+  return styles[`xsHorizontalAlign-${horizontalAlign}`]
+}
+
+const Col = ({ span, offset, horizontalAlign, children, ...rest }) => {
   if (offset) {
     deprecate(
       'core-flex-grid',
@@ -45,7 +65,8 @@ const Col = ({ span, offset, children, ...rest }) => {
             hiddenLevel[2] === 0 ? styles.mdHidden : styles.mdVisible,
             hiddenLevel[3] === 0 ? styles.lgHidden : styles.lgVisible,
             hiddenLevel[4] === 0 ? styles.xlHidden : styles.xlVisible,
-            gutter ? styles.padding : styles.gutterless
+            gutter ? styles.padding : styles.gutterless,
+            getHorizontalAlignClasses(horizontalAlign)
           )}
         >
           {children}
@@ -157,12 +178,22 @@ Col.propTypes = {
    * Use the xsOffset prop instead for identical functionality.
    */
   offset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+  /**
+   * @since 2.2.0
+   *
+   * Align content horizontally within the column.
+   *
+   * Accepts a `PropType.string` following the [responsive prop](#responsiveProps) structure.
+   */
+
+  horizontalAlign: responsiveProps(PropTypes.string),
 }
 /* eslint-enable */
 
 Col.defaultProps = {
   span: undefined,
   offset: undefined,
+  horizontalAlign: undefined,
 }
 
 export default Col

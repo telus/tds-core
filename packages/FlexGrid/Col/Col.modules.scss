@@ -68,3 +68,23 @@ div.gutterless {
     display: block;
   }
 }
+
+@mixin horizontalAlignClasses ($breakpoint, $align) {
+  .#{$breakpoint}HorizontalAlign-#{$align} {
+    @include mq($from: $breakpoint) {
+      text-align: $align;
+    }
+  }
+}
+
+$ALIGNMENT: (left, center, right);
+@each $align in $ALIGNMENT {
+  .xsHorizontalAlign-#{$align} {
+    text-align: $align
+  }
+}
+@each $align in $ALIGNMENT {
+  @each $breakpoint in map-keys($mq-breakpoints) {
+    @include horizontalAlignClasses($breakpoint, $align);
+  }
+}
