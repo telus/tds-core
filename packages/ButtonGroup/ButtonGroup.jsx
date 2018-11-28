@@ -17,25 +17,22 @@ import styles from './ButtonGroup.modules.scss'
  * @version ./package.json
  */
 const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, ...rest }) => {
-  const getButtons = () => {
-    return React.Children.map(children, child =>
-      React.cloneElement(child, {
-        name,
-        onChange,
-        onFocus,
-        onBlur,
-        checked: value === child.props.value,
-      })
-    )
-  }
+  const passedButtons = React.Children.map(children, child =>
+    React.cloneElement(child, {
+      name,
+      onChange,
+      onFocus,
+      onBlur,
+      checked: value === child.props.value,
+    })
+  )
 
-  const passedButtons = getButtons()
   const buttonValues = []
   Object.keys(passedButtons).forEach(key => {
     buttonValues.push(passedButtons[key].props.value)
   })
 
-  if (!buttonValues.includes(value)) {
+  if (buttonValues.indexOf(value) === -1) {
     warn(
       'ButtonGroup',
       `Selected value "${value}" of ButtonGroup named "${name}" does not match the value of any button in the group. A button must be selected by default. Available button values are: ${buttonValues}`
