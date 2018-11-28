@@ -1,7 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { or } from 'airbnb-prop-types'
+import { componentWithName } from '@tds/util-prop-types'
+
 import safeRest from '../../../shared/utils/safeRest'
+import generateId from '../../../shared/utils/generateId/generateId'
 
 import styles from './ButtonGroupItem.modules.scss'
 
@@ -14,25 +18,28 @@ const ButtonGroupItem = ({
   onBlur,
   children,
   ...rest
-}) => (
-  <div className={styles.itemContainer} {...safeRest(rest)}>
-    <input
-      id={value}
-      name={name}
-      value={value}
-      type="radio"
-      checked={checked}
-      onChange={onChange}
-      onFocus={onFocus}
-      onBlur={onBlur}
-      className={styles.hiddenRadio}
-      {...safeRest(rest)}
-    />
-    <label htmlFor={value} className={styles.itemButton}>
-      {children}
-    </label>
-  </div>
-)
+}) => {
+  const itemId = generateId(name).postfix(value)
+  return (
+    <div className={styles.itemContainer} {...safeRest(rest)}>
+      <input
+        {...safeRest(rest)}
+        id={itemId}
+        name={name}
+        value={value}
+        type="radio"
+        checked={checked}
+        onChange={onChange}
+        onFocus={onFocus}
+        onBlur={onBlur}
+        className={styles.hiddenRadio}
+      />
+      <label htmlFor={itemId} className={styles.itemButton}>
+        {children}
+      </label>
+    </div>
+  )
+}
 
 ButtonGroupItem.propTypes = {
   /**
@@ -73,7 +80,7 @@ ButtonGroupItem.propTypes = {
    * The button's label. (A11yContent supported)
    */
 
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
 }
 
 ButtonGroupItem.defaultProps = {

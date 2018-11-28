@@ -16,7 +16,7 @@ describe('ButtonGroup', () => {
   }
   const doShallow = (props = {}) =>
     shallow(
-      <ButtonGroup {...props}>
+      <ButtonGroup {...defaultProps} {...props}>
         <ButtonGroup.Item value="64gb">64 GB</ButtonGroup.Item>
         <ButtonGroup.Item value="128gb">128 GB</ButtonGroup.Item>
         <ButtonGroup.Item value="256gb">256 GB</ButtonGroup.Item>
@@ -25,7 +25,7 @@ describe('ButtonGroup', () => {
 
   const doMount = (props = {}) =>
     mount(
-      <ButtonGroup {...props}>
+      <ButtonGroup {...defaultProps} {...props}>
         <ButtonGroup.Item value="64gb">64 GB</ButtonGroup.Item>
         <ButtonGroup.Item value="128gb">128 GB</ButtonGroup.Item>
         <ButtonGroup.Item value="256gb">256 GB</ButtonGroup.Item>
@@ -39,11 +39,11 @@ describe('ButtonGroup', () => {
   })
 
   it('selects the correct button', () => {
-    const buttonGroup = doMount(defaultProps)
+    const buttonGroup = doMount({ value: '128gb' })
     expect(
       buttonGroup
         .children()
-        .find('input')
+        .find('input[value="128gb"]')
         .get(0).props.checked
     ).toEqual(true)
   })
@@ -54,7 +54,7 @@ describe('ButtonGroup', () => {
   })
 
   it('passes additional attributes to the element', () => {
-    const buttonGroup = doShallow({ ...defaultProps, id: 'the-id', 'data-some-attr': 'some value' })
+    const buttonGroup = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
     expect(buttonGroup).toHaveProp('id', 'the-id')
     expect(buttonGroup).toHaveProp('data-some-attr', 'some value')
@@ -62,7 +62,7 @@ describe('ButtonGroup', () => {
 
   describe('Accepts A11yContent', () => {
     it('connects to ButtonGroup.Item', () => {
-      const buttonGroup = mount(
+      const buttonGroup = shallow(
         <ButtonGroup {...defaultProps}>
           <ButtonGroup.Item value="64gb">64 GB</ButtonGroup.Item>
           <ButtonGroup.Item value="512gb">
@@ -78,7 +78,6 @@ describe('ButtonGroup', () => {
 
   it('does not allow custom CSS', () => {
     const buttonGroup = doShallow({
-      ...defaultProps,
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })
