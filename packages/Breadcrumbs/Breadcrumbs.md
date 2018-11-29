@@ -78,7 +78,7 @@ const BreadcrumbNavigation = ({ location }) => {
   const crumbs = location.pathname.split('/').filter(i => i)
   const extraBreadcrumbItems = crumbs.map((i, index) => {
     const url = `/${crumbs.slice(0, index + 1).join('/')}`
-    return <Item>{breadcrumbNameMap[url]}</Item>
+    return <Item href={url}>{breadcrumbNameMap[url]}</Item>
   })
 
   const breadcrumbItems = [
