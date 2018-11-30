@@ -21,9 +21,8 @@ const ButtonGroupItem = ({
 }) => {
   const itemId = generateId(name).postfix(value)
   return (
-    <div className={styles.itemContainer} {...safeRest(rest)}>
+    <div {...safeRest(rest)} className={styles.itemContainer}>
       <input
-        {...safeRest(rest)}
         id={itemId}
         name={name}
         value={value}

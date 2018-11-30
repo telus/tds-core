@@ -2,10 +2,6 @@
 
 Button Groups are sets of radio inputs styled to look like buttons.
 
-`ButtonGroup` is a stateless component; a button within `ButtonGroup` appears selected when the parent `ButtonGroup` component's `value` prop matches a `ButtonGroup.Item`'s `value` prop. This can be managed by a callback function passed into the `onChange` prop. Additionally, `onFocus` and `onBlur` callback functions are available. All callbacks are assigned to the `ButtonGroup` parent and then passed to all children.
-
-The `label` prop on the parent `ButtonGroup` component will add a label to the whole group. This value will be read by assistive technology when the group is focused.
-
 ### Usage criteria
 
 - A single Button Group Item within ButtonGroup must be selected by default
@@ -14,6 +10,10 @@ The `label` prop on the parent `ButtonGroup` component will add a label to the w
 - Use when there are 2-6 options to choose from
 - Use when options are similar in format or category, and also short (eg. 1GB, 3GB, 5GB)
 - Use [Radio](#radio) when options are more than than 10-12 characters in length
+
+`ButtonGroup` is a stateless component; a button within `ButtonGroup` appears selected when the parent `ButtonGroup` component's `value` prop matches a `ButtonGroup.Item`'s `value` prop. This can be managed by a callback function passed into the `onChange` prop. Additionally, `onFocus` and `onBlur` callback functions are available. All callbacks are assigned to the `ButtonGroup` parent and then passed to all children.
+
+The `label` prop on the parent `ButtonGroup` component will add a label to the whole group. This value will be read by assistive technology when the group is focused.
 
 ```
 initialState = {

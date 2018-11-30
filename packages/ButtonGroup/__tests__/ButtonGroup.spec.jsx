@@ -33,7 +33,7 @@ describe('ButtonGroup', () => {
     )
 
   it('renders', () => {
-    const buttonGroup = doShallow(defaultProps)
+    const buttonGroup = doShallow()
 
     expect(buttonGroup).toMatchSnapshot()
   })
@@ -49,7 +49,7 @@ describe('ButtonGroup', () => {
   })
 
   it('renders a group label', () => {
-    const buttonGroup = doShallow(defaultProps)
+    const buttonGroup = doShallow()
     expect(buttonGroup.find('legend')).toExist()
   })
 

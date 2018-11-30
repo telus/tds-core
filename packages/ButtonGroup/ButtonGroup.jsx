@@ -39,7 +39,7 @@ const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, 
     )
   }
   return (
-    <fieldset name={name} {...safeRest(rest)}>
+    <fieldset {...safeRest(rest)} name={name}>
       <legend>
         <Text bold size="medium">
           {label}
