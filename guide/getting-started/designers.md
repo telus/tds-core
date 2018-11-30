@@ -22,7 +22,7 @@ There are a variety of plugins available for Sketch. Here is a short list of plu
 
 - [Craft Manager](https://www.invisionapp.com/craft): Suite of plugins by Invision to help streamline your workflow. (**Note:** This is required to use the DSM Component library)
 
-- [Paddy](https://github.com/DWilliames/paddy-sketch-plugin): Create components with fixed padding (**Note**: Used for automatic resizing of our button component)
+- [Paddy](https://github.com/DWilliames/paddy-sketch-plugin): Create components with fixed padding
 
 #### Recommended
 
@@ -110,7 +110,7 @@ There are two component libraries available in TDS to help you with your designs
   </tr>
   <tr>
     <td><img src="craftmanager7.png" /></td>
-    <td>Both the TDS component and TDS block libraries (and any other libraries you belong to) should now appear in the DSM window.</td>
+    <td>The TDS Core, TDS Community, and Global Elements libraries (and any other libraries you belong to) should now appear in the DSM window.</td>
   </tr>
     <tr>
     <td><img src="craftmanager8.png" /></td>
