@@ -17,10 +17,8 @@ const createResponsivePropsClassNames = (responsivePropsObject, cb) =>
     cb(breakpoint, responsivePropsObject[breakpoint])
   )
 
-function getHorizontalAlignClasses(horizontalAlign) {
-  if (!horizontalAlign) {
-    return undefined
-  } else if (typeof horizontalAlign === 'object') {
+const getHorizontalAlignClasses = horizontalAlign => {
+  if (typeof horizontalAlign === 'object') {
     return joinClassNames(
       ...createResponsivePropsClassNames(
         horizontalAlign,
@@ -28,7 +26,7 @@ function getHorizontalAlignClasses(horizontalAlign) {
       )
     )
   }
-  return styles[`xsHorizontalAlign-${horizontalAlign}`]
+  return horizontalAlign && styles[`xsHorizontalAlign-${horizontalAlign}`]
 }
 
 const Col = ({ span, offset, horizontalAlign, children, ...rest }) => {
