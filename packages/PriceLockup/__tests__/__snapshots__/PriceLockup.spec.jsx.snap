@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PriceLockup renders with default props 1`] = `
-<div
-  className="wrapperAlignment"
+<Box
+  between={1}
+  dangerouslyAddClassName="wrapperAlignment"
+  inline={false}
+  tag="div"
 >
   <Box
     between={1}
@@ -11,41 +14,35 @@ exports[`PriceLockup renders with default props 1`] = `
   >
     <Box
       between={1}
-      inline={false}
+      dangerouslyAddClassName="priceWrapper small"
+      inline={true}
       tag="div"
     >
       <Box
         between={1}
-        dangerouslyAddClassName="priceWrapper small"
         inline={true}
         tag="div"
       >
-        <Box
-          between={1}
-          inline={true}
-          tag="div"
-        >
-          <span
-            className="mediumText"
-            data-testid="dollarSign"
-          >
-            $
-          </span>
-          <span
-            className="priceValueSign priceValueSignsmall"
-            data-testid="priceValue"
-          >
-            25
-          </span>
-        </Box>
         <span
           className="mediumText"
-          data-testid="rateText"
+          data-testid="dollarSign"
         >
-          /month
+          $
+        </span>
+        <span
+          className="priceValueSign priceValueSignsmall"
+          data-testid="priceValue"
+        >
+          25
         </span>
       </Box>
+      <span
+        className="mediumText"
+        data-testid="rateText"
+      >
+        /month
+      </span>
     </Box>
   </Box>
-</div>
+</Box>
 `;
