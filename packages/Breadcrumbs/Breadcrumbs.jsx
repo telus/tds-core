@@ -78,7 +78,6 @@ const getStructuredData = (items, baseUrl) => {
  */
 const Breadcrumbs = ({
   routes,
-  mainId,
   reactRouterLinkComponent,
   params = {},
   baseUrl,
@@ -95,7 +94,7 @@ const Breadcrumbs = ({
       })
     )
   } else {
-    items = routes
+    items = routes.filter(route => route.path && route.breadcrumbName)
   }
   items = getItems(items, params, !children)
   const structuredData = getStructuredData(items, baseUrl)
@@ -107,7 +106,7 @@ const Breadcrumbs = ({
           <Item
             {...itemRest}
             key={href}
-            href={current ? `${href}${mainId}` : href}
+            href={href}
             reactRouterLinkComponent={reactRouterLinkComponent}
             current={current}
           >
@@ -145,12 +144,6 @@ Breadcrumbs.propTypes = {
    */
   baseUrl: PropTypes.string,
   /**
-   * The in-page link to the current page. This will be the href of the last
-   * item in the `<Breadcrumbs>`. The mainId property will be passed down from
-   * the parent `<Breadcrumbs>`.
-   */
-  mainId: PropTypes.string,
-  /**
    * React Router Link component.
    */
   reactRouterLinkComponent: PropTypes.func,
@@ -167,7 +160,6 @@ Breadcrumbs.propTypes = {
 Breadcrumbs.defaultProps = {
   routes: undefined,
   baseUrl: undefined,
-  mainId: '#main',
   reactRouterLinkComponent: undefined,
   params: {},
   children: undefined,
