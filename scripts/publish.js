@@ -53,4 +53,4 @@ getPackageNames(packageNames => {
       read.close()
     }
   )
-})
+}, true)
