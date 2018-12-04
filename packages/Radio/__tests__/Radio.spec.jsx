@@ -21,6 +21,7 @@ describe('Radio', () => {
     return {
       radio,
       label: radio.find('label'),
+      description: () => radio.find('[data-testid="description"]'),
       findRadioElement,
       findFakeRadio: () => radio.find('[data-testid="fake-input"]'),
       findFakeInnerRadio: () => radio.find('[data-testid="fake-inner-radio"]'),
@@ -48,6 +49,12 @@ describe('Radio', () => {
     const { label } = doMount({ label: 'Some label' })
 
     expect(label).toContainReact(<Text size="medium">Some label</Text>)
+  })
+
+  it('will display a description if defined', () => {
+    const { description } = doMount({ description: 'This is a description.' })
+
+    expect(description()).toContainReact(<Text size="small">This is a description.</Text>)
   })
 
   it('must have a name and a value', () => {
