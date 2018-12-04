@@ -1,7 +1,6 @@
 ### Usage criteria
 
 - Breadcrumb links must link out to live pages on T.com
-- Character limit is restrictive to for links 1 to 4, of up to xx
 - Use plain language to describe the page title
 - The recommendation is up to 5 links in the breadcrumb path
 - All links in the breadcrumb are clickable
