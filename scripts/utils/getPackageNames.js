@@ -3,8 +3,8 @@
 const { exec } = require('child_process')
 const { userPackageNames, tdsOptions, lernaOptions } = require('./parseArgs')
 
-const getPackageNames = callback => {
-  if (userPackageNames.length > 0) {
+const getPackageNames = (callback, forceUpdatedPackages) => {
+  if (!forceUpdatedPackages && userPackageNames.length > 0) {
     callback(userPackageNames)
     return
   }
