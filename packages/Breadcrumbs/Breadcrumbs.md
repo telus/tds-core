@@ -1,3 +1,14 @@
+### Usage criteria
+
+- Breadcrumb links must link out to live pages on T.com
+- Character limit is restrictive to for links 1 to 4, of up to xx
+- Use plain language to describe the page title
+- The recommendation is up to 5 links in the breadcrumb path
+- All links in the breadcrumb are clickable
+- The breadcrumb appears on the 3rd tier of the navigation
+- In desktop we recommend the breadcrumb list to 1 line. If the breadcrumb needs to wrap, we recommend a maximum of 2 lines
+- In mobile, there is a maximum of 3 layers to the breadcrumb
+
 ### Using `children`
 
 ```jsx
