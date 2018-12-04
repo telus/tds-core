@@ -9,7 +9,7 @@ import styles from './Radio.modules.scss'
  * @version ./package.json
  */
 const Radio = props => (
-  <Choice {...props} type="radio" inputTypeStyles={styles}>
+  <Choice {...props} type="radio" inputTypeStyles={styles} description={props.description}>
     {(checked, disabled) => {
       return (
         checked && (
@@ -37,9 +37,13 @@ Radio.propTypes = {
    */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool]).isRequired,
   /**
-   * The checked state
+   * The checked state.
    */
   checked: PropTypes.bool,
+  /**
+   * Description text below the radio.
+   */
+  description: PropTypes.string,
   /**
    * A feedback state.
    */
@@ -66,6 +70,7 @@ Radio.propTypes = {
 
 Radio.defaultProps = {
   checked: false,
+  description: undefined,
   feedback: undefined,
   onChange: undefined,
   onFocus: undefined,

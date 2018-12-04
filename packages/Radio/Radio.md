@@ -31,6 +31,7 @@ const setChoice = event => {
     label="e.Bill"
     name="monthly-bill"
     value="e.bill"
+    description="View your bill offline."
     checked={state.choice === 'e.bill'}
     onChange={setChoice}
   />
@@ -38,6 +39,7 @@ const setChoice = event => {
     label="Paper bill"
     name="monthly-bill"
     value="paper bill"
+    description="Receive your bill in the mail on a monthly basis."
     checked={state.choice === 'paper bill'}
     onChange={setChoice}
   />
