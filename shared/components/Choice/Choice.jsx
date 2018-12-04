@@ -125,6 +125,7 @@ class Choice extends React.Component {
       label,
       name,
       value,
+      description,
       feedback,
       error,
       type,
@@ -167,6 +168,11 @@ class Choice extends React.Component {
 
             {renderLabel(label, feedback, this.state.checked, rest.disabled)}
           </Box>
+          {description && (
+            <div className={styles.descriptionText} data-testid="description">
+              <Text size="small">{description}</Text>
+            </div>
+          )}
         </label>
       </Box>
     )
@@ -177,6 +183,7 @@ Choice.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  description: PropTypes.string,
   checked: PropTypes.bool.isRequired,
   feedback: PropTypes.oneOf(['error']),
   error: PropTypes.string,
@@ -189,6 +196,7 @@ Choice.propTypes = {
 }
 
 Choice.defaultProps = {
+  description: undefined,
   feedback: undefined,
   error: undefined,
   onChange: undefined,
