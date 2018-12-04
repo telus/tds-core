@@ -26,13 +26,11 @@ exports[`Breadcrumbs with children renders 1`] = `
     <li
       class="lastItem"
     >
-      <a
-        aria-current="page"
-        class="base inheritColor lastLink"
-        href="/mobility/accessories#main"
+      <span
+        class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__inheritColor___3YAyL"
       >
         Accessories
-      </a>
+      </span>
     </li>
   </ol>
 </nav>
@@ -64,13 +62,11 @@ exports[`Breadcrumbs with routes renders 1`] = `
     <li
       class="lastItem"
     >
-      <a
-        aria-current="page"
-        class="base inheritColor lastLink"
-        href="/mobility/accessories#main"
+      <span
+        class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__inheritColor___3YAyL"
       >
         Accessories
-      </a>
+      </span>
     </li>
   </ol>
 </nav>

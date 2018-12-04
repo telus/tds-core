@@ -2,6 +2,8 @@ import React from 'react'
 import { render, shallow, mount } from 'enzyme'
 
 import Link from '@tds/core-link'
+import Text from '@tds/core-text'
+
 import Breadcrumbs from '../Breadcrumbs'
 
 const ReactRouterLinkComponent = () => <a href="http://tds.telus.com">TDS</a>
@@ -38,14 +40,6 @@ describe('Breadcrumbs', () => {
     expect(breadcrumbs).not.toHaveProp('style')
   })
 
-  it('uses mainId as the href for the last link', () => {
-    const breadcrumbs = doMount({
-      mainId: '#content',
-    })
-
-    expect(breadcrumbs.find('a').last()).toHaveProp('href', '/mobility/accessories#content')
-  })
-
   describe('with routes', () => {
     it('renders', () => {
       const breadcrumbs = doRender()
@@ -73,12 +67,6 @@ describe('Breadcrumbs', () => {
 
       expect(breadcrumbs.find('a').at(0)).toHaveProp('href', '/one')
       expect(breadcrumbs.find('a').at(1)).toHaveProp('href', '/one/two')
-    })
-
-    it('should have the aria-current="page" property on the last link', () => {
-      const breadcrumbs = doMount()
-
-      expect(breadcrumbs.find('a').last()).toHaveProp('aria-current', 'page')
     })
   })
 
@@ -123,12 +111,6 @@ describe('Breadcrumbs', () => {
       expect(breadcrumbs.find('a').at(0)).toHaveProp('href', '/one')
       expect(breadcrumbs.find('a').at(1)).toHaveProp('href', '/one/two')
     })
-
-    it('should have the aria-current="page" property on the last link', () => {
-      const breadcrumbs = doMount(defaultPropsWithChildren)
-
-      expect(breadcrumbs.find('a').last()).toHaveProp('aria-current', 'page')
-    })
   })
 })
 
@@ -146,16 +128,16 @@ describe('Breadcrumbs.Item', () => {
     expect(breadcrumbsItem.find(Link)).toExist()
   })
 
-  it('renders an anchor tag when reactRouterLinkComponent is not provided and is current', () => {
+  it('renders an Text component for the last item', () => {
     const breadcrumbsItem = doMount({ current: true })
-    expect(breadcrumbsItem.find('a')).toExist()
+    expect(breadcrumbsItem.find(Text)).toExist()
   })
 
-  it('renders a TDS Link when reactRouterLinkComponent is provided and is current', () => {
+  it('renders a Text when reactRouterLinkComponent is provided and is current', () => {
     const breadcrumbsItem = doMount({
       current: true,
       reactRouterLinkComponent: ReactRouterLinkComponent,
     })
-    expect(breadcrumbsItem.find(Link)).toExist()
+    expect(breadcrumbsItem.find(Text)).toExist()
   })
 })

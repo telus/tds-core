@@ -36,14 +36,3 @@
     margin: 0;
   }
 }
-
-.lastLink {
-  &:link,
-  &:visited {
-    text-decoration: none;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}

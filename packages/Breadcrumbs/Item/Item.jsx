@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Link from '@tds/core-link'
+import Text from '@tds/core-text'
 
 import joinClassNames from '../../../shared/utils/joinClassNames'
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
@@ -11,32 +12,19 @@ import linkStyles from '../../Link/Link.modules.scss'
 
 const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) => {
   const linkOptions = { ...rest }
-
   if (reactRouterLinkComponent) {
     linkOptions.to = href
     linkOptions.reactRouterLinkComponent = reactRouterLinkComponent
   } else {
     linkOptions.href = href
   }
-  if (current) {
-    linkOptions['aria-current'] = 'page'
-    return (
-      <ColoredTextProvider tag="li" colorClassName={current ? styles.lastItem : styles.linkItem}>
-        {React.createElement(
-          reactRouterLinkComponent ? Link : 'a',
-          {
-            ...linkOptions,
-            className: joinClassNames(linkStyles.base, linkStyles.inheritColor, styles.lastLink),
-          },
-          children
-        )}
-      </ColoredTextProvider>
-    )
-  }
-
   return (
     <ColoredTextProvider tag="li" colorClassName={current ? styles.lastItem : styles.linkItem}>
-      <Link {...linkOptions}>{children}</Link>
+      {current ? (
+        <Text className={joinClassNames(linkStyles.base, linkStyles.inheritColor)}>{children}</Text>
+      ) : (
+        <Link {...linkOptions}>{children}</Link>
+      )}
     </ColoredTextProvider>
   )
 }
