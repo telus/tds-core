@@ -10,7 +10,7 @@ You will need Sketch set up on your computer before starting any project. Please
 
 **For TELUS designers**:
 
-You should have been given a Sketch license during your onboarding. If not, you can [download a trial version](https://www.sketchapp.com/) of the latest Sketch app and then contact [@BrianLam1](mailto:Brian.Lam1@telus.com) from the Design Strategy team for a license.
+You should have been given a Sketch license during your onboarding. If not, you can [download a trial version](https://www.sketchapp.com/) of the latest Sketch app and then ask in the #i-need-access-to channel on Slack for a license.
 
 For vendors or designers outside of TELUS Digital, you can purchase and [download Sketch](https://www.sketchapp.com/pricing/) for $99/year.
 
@@ -20,27 +20,25 @@ There are a variety of plugins available for Sketch. Here is a short list of plu
 
 #### Required
 
-* [Craft Manager](https://www.invisionapp.com/craft): Suite of plugins by Invision to help streamline your workflow. (**Note:** This is required to use the DSM Component library)
+- [Craft Manager](https://www.invisionapp.com/craft): Suite of plugins by Invision to help streamline your workflow. (**Note:** This is required to use the DSM Component library)
 
-* [Launchpad by Anima](https://animaapp.github.io/): Customize designs with responsive settings (**Note**: Without this plugin, some of the responsive components will not work properly)
-
-* [Paddy](https://github.com/DWilliames/paddy-sketch-plugin): Create components with fixed padding (**Note**: Used for automatic resizing of our button component)
+- [Paddy](https://github.com/DWilliames/paddy-sketch-plugin): Create components with fixed padding
 
 #### Recommended
 
-* [Sketch Toolbox](http://sketchtoolbox.com/): Manage and install your Sketch plugins
+- [Sketch Toolbox](http://sketchtoolbox.com/): Manage and install your Sketch plugins
 
-* [Shared Text Styles](http://www.textstyl.es/): Import/export text styles within your Sketch files
+- [Shared Text Styles](http://www.textstyl.es/): Import/export text styles within your Sketch files
 
-* [Nudge Push Shove](http://nudgepushshove.com/): Set up custom nudge settings
+- [Nudge Push Shove](http://nudgepushshove.com/): Set up custom nudge settings
 
-* [Dynamic Button](https://github.com/fuggfuggfugg/sketch-dynamic-button-3.5): Create components with fixed padding
+- [Dynamic Button](https://github.com/fuggfuggfugg/sketch-dynamic-button-3.5): Create components with fixed padding
 
 ## Setting up Invision
 
 From design to prototyping, the TELUS Design team uses Invision suite of apps to help with our design workflow and to assist with collaboration. You can use InVision to share your prototypes and Craft Sync to sync up your designs.
 
-During your initial onboarding to the design team, you should have gotten an invitation sent to your TELUS email to set up a [TELUS Invision Enterprise](https://projects.invisionapp.com/d/login) account. If you haven’t please contact your design lead, or your InVision administrator ([@brianlam1](mailto:brian.lam1@telus.com)) to add you to the project.
+During your initial onboarding to the design team, you should have gotten an invitation sent to your TELUS email to set up a [TELUS Invision Enterprise](https://projects.invisionapp.com/d/login) account. If you haven’t please contact your design lead, or inquire in #i-need-access-to on Slack to get added to the project.
 
 TDS has two projects set up on Invision:
 
@@ -58,7 +56,7 @@ There are two component libraries available in TDS to help you with your designs
 
 ### What you’ll need:
 
-1. **Invision DSM** (Design Systems Manager): You should have access to DSM if you have access to TELUS Invision Enterprise. If not, please contact your Invision administrator ([@BrianLam1](mailto:Brian.Lam1@telus.com)) or your design lead so they can add you to DSM and Invision Enterprise.
+1. **Invision DSM** (Design Systems Manager): You should have access to DSM if you have access to TELUS Invision Enterprise. If not, please inquire in the #i-need-access-to Slack channel, or ask your design lead so they can add you to DSM and Invision Enterprise.
 
 2. **Craft Manager** is a suite of Sketch tools by Invision that helps with your workflow. [Download and install the plugin](https://www.invisionapp.com/craft) before continuing to the next section.
 
@@ -71,31 +69,12 @@ There are two component libraries available in TDS to help you with your designs
       <ol>
         <li>Once you’ve gotten access to Invision DSM and have installed the Craft Manager, you should see the Craft logo at the top of your taskbar on your computer. (Make sure you’re on the latest version of Craft Manager)</li>
         <li>Once selected, you should see a dropdown window with a list of all your Craft Sketch tools.</li>
+        <li>Install the Craft Tools for Sketch 3+</li>
       </ol>
-      <br>
-      <strong>Note</strong>: We have a sneak preview of DSM as it’s in beta and not public, so the following steps must be done before using the tool.
     </td>
   </tr>
   <tr>
     <td><img src="craftmanager2.png" /></td>
-    <td>
-      <ol>
-        <li>While the dropdown window is open, hold down: ⌘ + Shift + b</li>
-        <li>You will get the Craft Beta screen. Enter the code: dsm-preview and hit the Activate code button</li>
-        <li>Follow the instructions and fill in your information and hit the Activate code button again.</li>
-      </ol>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="craftmanager3.png" /></td>
-    <td>Once you’re back in Craft Manager go to the bottom of the window and select ‘Design System Manager in the Environment bar.</td>
-  </tr>
-  <tr>
-    <td><img src="craftmanager4.png" /></td>
-    <td>Install the Craft Tools for Sketch 3+</td>
-  </tr>
-  <tr>
-    <td><img src="craftmanager5.png" /></td>
     <td>
       <ol>
         <li>Once installed, you should see all the other Sketch tools along with Design System Manager</li>
@@ -104,34 +83,40 @@ There are two component libraries available in TDS to help you with your designs
     </td>
   </tr>
   <tr>
-    <td><img src="craftmanager6.png" /></td>
+    <td><img src="craftmanager3.png" /></td>
     <td>
       <ol>
-        <li>Select the DSM icon at the bottom of your Craft Manager icon tool kit</li>
+        <li>Select the DSM icon in the middle of your Craft Manager icon tool kit</li>
+      </ol>
+  </tr>
+  <tr>
+    <td><img src="craftmanager4.png" /></td>
+    <td>
+      <ol>
         <li>You will see a window asking you to log into your InVision account</li>
-        <li>Select ‘Enterprise sign in’ and sign into your Invision account</li>
+        <li>Select ‘Sign in with your domain’ and sign into your Invision account</li>
       </ol>
 
 <br><strong>Note</strong>: It’s important that you sign in using the ‘Enterprise sign in’ link. Otherwise you will be creating your own library on your personal account.</td>
 
   </tr>
   <tr>
-    <td><img src="craftmanager7.png" /></td>
+    <td><img src="craftmanager5.png" /></td>
     <td>Enter "telus.invisionapp.com" as the enterprise domain and hit ‘Continue’</td>
   </tr>
   <tr>
-    <td><img src="craftmanager8.png" /></td>
+    <td><img src="craftmanager6.png" /></td>
     <td>Sign into your InVision account.</td>
   </tr>
   <tr>
-    <td><img src="craftmanager9.png" /></td>
-    <td>Both the TDS component and TDS block libraries (and any other libraries you belong to) should now appear in the DSM window.</td>
+    <td><img src="craftmanager7.png" /></td>
+    <td>The TDS Core, TDS Community, and Global Elements libraries (and any other libraries you belong to) should now appear in the DSM window.</td>
   </tr>
     <tr>
-    <td><img src="craftmanager10.png" /></td>
-    <td>To switch between versions, go to the TELUS Design System dropdown on the top left of the DSM window and select TELUS Design System>Switch Version. 
+    <td><img src="craftmanager8.png" /></td>
+    <td>To switch between versions, go to the TELUS Design System dropdown on the top left of the DSM window and select TELUS Design System>Switch Version.
       <br>
-      <strong>Note:</strong> Please fix to the latest version of DSM (eg. v1.0.0) and not on the 'shared draft'.</td>
+      <strong>Note:</strong> Please make sure you are the latest version of DSM.</td>
   </tr>
 </table>
 
@@ -171,7 +156,7 @@ The TELUS Design System team often makes design improvements to the TDS componen
 
 When TDS makes releases you will get notified the next time you are on Sketch and signed into DSM.
 
-<img alt="" src="craftmanager11.png" style="max-width: 500px; width: 100%;" />
+<img alt="" src="craftmanager9.png" style="max-width: 500px; width: 100%;" />
 
 Releases updates to the system can be found on the [release notes on Github](https://github.com/telusdigital/tds-core/releases), so check back frequently for updates to the system.
 
