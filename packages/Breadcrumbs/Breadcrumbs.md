@@ -3,7 +3,7 @@
 - Breadcrumb links must link to internal pages at telus.com
 - Use plain language to describe the page title
 - We recommend the `Breadcrumbs` depth contain fewer than five links
-- All links in the Breadcrumb are clickable. The last `Breadcrumb.Item` is not a link
+- All links in the `Breadcrumbs` are clickable. The last `Breadcrumb.Item` is not a link
 - The `Breadcrumbs` appear as the 3rd tier of the navigation
 - On desktop viewports, the `Breadcrumbs` should be displayed inline, without wrapping. If the `Breadcrumbs` need to wrap we recommend a maximum of 2 lines
 - On mobile viewports, the `Breadcrumbs` can wrap a maximum of three lines
