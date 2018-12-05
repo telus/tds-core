@@ -121,20 +121,20 @@ describe('Breadcrumbs.Item', () => {
     current: false,
   }
 
-  const doMount = (props = {}) => mount(<Breadcrumbs.Item {...defaultProps} {...props} />)
+  const doShallow = (props = {}) => shallow(<Breadcrumbs.Item {...defaultProps} {...props} />)
 
   it('renders a TDS Link if Item is not current', () => {
-    const breadcrumbsItem = doMount()
+    const breadcrumbsItem = doShallow()
     expect(breadcrumbsItem.find(Link)).toExist()
   })
 
   it('renders an Text component for the last item', () => {
-    const breadcrumbsItem = doMount({ current: true })
+    const breadcrumbsItem = doShallow({ current: true })
     expect(breadcrumbsItem.find(Text)).toExist()
   })
 
   it('renders a Text when reactRouterLinkComponent is provided and is current', () => {
-    const breadcrumbsItem = doMount({
+    const breadcrumbsItem = doShallow({
       current: true,
       reactRouterLinkComponent: ReactRouterLinkComponent,
     })
