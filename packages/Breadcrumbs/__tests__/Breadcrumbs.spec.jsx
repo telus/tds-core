@@ -128,7 +128,7 @@ describe('Breadcrumbs.Item', () => {
     expect(breadcrumbsItem.find(Link)).toExist()
   })
 
-  it('renders an Text component for the last item', () => {
+  it('renders a Text component for the last item', () => {
     const breadcrumbsItem = doShallow({ current: true })
     expect(breadcrumbsItem.find(Text)).toExist()
   })
