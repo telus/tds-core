@@ -1,12 +1,12 @@
 ### Usage criteria
 
-- Breadcrumb links must link out to live pages on T.com
+- Breadcrumb links must link to internal pages at telus.com
 - Use plain language to describe the page title
-- The recommendation is up to 5 links in the breadcrumb path
-- All links in the breadcrumb are clickable
-- The breadcrumb appears on the 3rd tier of the navigation
-- In desktop we recommend the breadcrumb list to 1 line. If the breadcrumb needs to wrap, we recommend a maximum of 2 lines
-- In mobile, there is a maximum of 3 layers to the breadcrumb
+- We recommend the `Breadcrumbs` depth contain fewer than five links
+- All links in the Breadcrumb are clickable. The last `Breadcrumb.Item` is not a link
+- The `Breadcrumbs` appear as the 3rd tier of the navigation
+- On desktop viewports, the `Breadcrumbs` should be displayed inline, without wrapping. If the `Breadcrumbs` need to wrap we recommend a maximum of 2 lines
+- On mobile viewports, the `Breadcrumbs` can wrap a maximum of three lines
 
 ### Using `children`
 
