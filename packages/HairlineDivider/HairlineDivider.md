@@ -6,8 +6,9 @@
 ```
 
 ```jsx
-<Box inline between={4} dangerouslyAddClassName="docs_divider-height">
+<Box inline between={4}>
   <HairlineDivider vertical />
   <HairlineDivider vertical gradient />
+  <Box vertical={7} />
 </Box>
 ```
