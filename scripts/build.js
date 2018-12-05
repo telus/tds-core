@@ -20,6 +20,8 @@ const arrayToGlob = require('./utils/arrayToGlob')
 getPackageNames(packageNames => {
   const scopeGlob = arrayToGlob(packageNames)
 
+  spawnSync('npx', ['lerna', 'clean', '--yes'], { stdio: 'inherit' })
+
   spawnSync(
     'npx',
     [
