@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@1.0.2...@tds/core-paragraph@1.0.3) (2018-12-06)
+
+
+### Bug Fixes
+
+* **core-paragraph:** prevent overflow on ie11 ([5ce482e](https://github.com/telusdigital/tds/commit/5ce482e))
+
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@1.0.1...@tds/core-paragraph@1.0.2) (2018-07-10)
 

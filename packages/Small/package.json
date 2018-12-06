@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-small",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Small print, such as copyright and legal text",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -29,6 +29,6 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "@tds/shared-typography": "^1.0.2"
+    "@tds/shared-typography": "^1.0.3"
   }
 }

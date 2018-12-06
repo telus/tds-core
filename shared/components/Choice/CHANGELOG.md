@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.0.6...@tds/shared-choice@1.0.7) (2018-12-06)
+
+
+### Bug Fixes
+
+* **shared-choice:** use [@tds](https://github.com/tds)/shared-colored-text-provider ([6692780](https://github.com/telus/tds-core/commit/6692780))
+
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.0.5...@tds/shared-choice@1.0.6) (2018-07-23)
 

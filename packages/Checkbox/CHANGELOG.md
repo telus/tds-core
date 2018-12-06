@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.0...@tds/core-checkbox@1.1.1) (2018-12-06)
+
+
+
+
+**Note:** Version bump only for package @tds/core-checkbox
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.0.5...@tds/core-checkbox@1.1.0) (2018-07-23)
 
