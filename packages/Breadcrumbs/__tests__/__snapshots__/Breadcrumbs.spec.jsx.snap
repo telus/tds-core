@@ -2,26 +2,44 @@
 
 exports[`Breadcrumbs with children renders 1`] = `
 <nav>
-  <ol>
+  <ol
+    class="list"
+  >
     <li
       class="linkItem"
     >
-      <a
-        class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
-        href="/"
-      >
-        Home
-      </a>
+      <span>
+        <a
+          class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+          href="/"
+        >
+          Home
+        </a>
+        <span
+          aria-hidden="true"
+          class="slash"
+        >
+          /
+        </span>
+      </span>
     </li>
     <li
       class="linkItem"
     >
-      <a
-        class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
-        href="/mobility"
-      >
-        Mobility
-      </a>
+      <span>
+        <a
+          class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+          href="/mobility"
+        >
+          Mobility
+        </a>
+        <span
+          aria-hidden="true"
+          class="slash"
+        >
+          /
+        </span>
+      </span>
     </li>
     <li
       class="lastItem"
@@ -38,26 +56,44 @@ exports[`Breadcrumbs with children renders 1`] = `
 
 exports[`Breadcrumbs with routes renders 1`] = `
 <nav>
-  <ol>
+  <ol
+    class="list"
+  >
     <li
       class="linkItem"
     >
-      <a
-        class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
-        href="/"
-      >
-        Home
-      </a>
+      <span>
+        <a
+          class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+          href="/"
+        >
+          Home
+        </a>
+        <span
+          aria-hidden="true"
+          class="slash"
+        >
+          /
+        </span>
+      </span>
     </li>
     <li
       class="linkItem"
     >
-      <a
-        class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
-        href="/mobility"
-      >
-        Mobility
-      </a>
+      <span>
+        <a
+          class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+          href="/mobility"
+        >
+          Mobility
+        </a>
+        <span
+          aria-hidden="true"
+          class="slash"
+        >
+          /
+        </span>
+      </span>
     </li>
     <li
       class="lastItem"

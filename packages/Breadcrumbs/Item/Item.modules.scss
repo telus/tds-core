@@ -6,15 +6,6 @@
   display: inline;
   @include size-small;
 
-  &:after {
-    content: '';
-    display: inline-block;
-    height: 0.8em;
-    transform: rotate(15deg);
-    border-right: 1px solid currentColor;
-    margin: 0 0.5rem;
-  }
-
   @include mq($from: md) {
     @include size-medium;
   }
@@ -23,6 +14,11 @@
 .linkItem {
   composes: item;
   color: $color-shuttle-grey;
+}
+
+.slash {
+  composes: item;
+  margin: 0 0.5rem;
 }
 
 .lastItem {

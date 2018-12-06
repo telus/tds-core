@@ -23,7 +23,12 @@ const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) =>
       {current ? (
         <Text className={joinClassNames(linkStyles.base, linkStyles.inheritColor)}>{children}</Text>
       ) : (
-        <Link {...linkOptions}>{children}</Link>
+        <span>
+          <Link {...linkOptions}>{children}</Link>
+          <span className={styles.slash} aria-hidden="true">
+            /
+          </span>
+        </span>
       )}
     </ColoredTextProvider>
   )
