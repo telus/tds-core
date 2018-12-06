@@ -4,8 +4,8 @@ Button Groups are sets of radio inputs styled to look like buttons.
 
 ### Usage criteria
 
-- A single Button Group Item within ButtonGroup must be selected by default
-- Use button group when one selection needs to be made from multiple options
+- A single `ButtonGroup.Item` within `ButtonGroup` must be selected by default
+- Use `ButtonGroup` when one selection needs to be made from multiple options
 - Use when there can only be exactly one choice from multiple options
 - Use when there are 2-6 options to choose from
 - Use when options are similar in format or category, and also short (eg. 1GB, 3GB, 5GB)
