@@ -52,9 +52,9 @@ describe('Radio', () => {
   })
 
   it('will display a description if defined', () => {
-    const { description } = doMount({ description: 'This is a description.' })
+    const { label } = doMount({ description: 'This is a description.' })
 
-    expect(description()).toContainReact(<Text size="small">This is a description.</Text>)
+    expect(label).toContainReact(<Text size="small">This is a description.</Text>)
   })
 
   it('must have a name and a value', () => {

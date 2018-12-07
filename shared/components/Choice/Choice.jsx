@@ -49,8 +49,16 @@ const renderColoredLabel = (color, content) => (
   </ColoredTextProvider>
 )
 
-const renderLabel = (label, feedback, checked, disabled) => {
-  const content = <Text size="medium">{label}</Text>
+const renderLabel = (label, description, feedback, checked, disabled) => {
+  let content = <Text size="medium">{label}</Text>
+  if (description) {
+    content = (
+      <Box between={2}>
+        {content}
+        <Text size="small">{description}</Text>
+      </Box>
+    )
+  }
 
   if (feedback === 'error' && !checked) {
     return renderColoredLabel(messagingStyles.errorText, content)
@@ -165,14 +173,8 @@ class Choice extends React.Component {
 
               {children(this.state.checked, rest.disabled)}
             </span>
-
-            {renderLabel(label, feedback, this.state.checked, rest.disabled)}
+            {renderLabel(label, description, feedback, this.state.checked, rest.disabled)}
           </Box>
-          {description && (
-            <div className={styles.descriptionText} data-testid="description">
-              <Text size="small">{description}</Text>
-            </div>
-          )}
         </label>
       </Box>
     )
