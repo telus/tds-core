@@ -30,10 +30,10 @@
     "@tds/core-flex-grid": "^2.2.1",
     "@tds/core-paragraph": "^1.0.3",
     "@tds/core-standalone-icon": "^1.0.0",
-    "@tds/shared-animation": "^1.0.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.0"
+    "@tds/core-colours": "^1.0.0",
+    "@tds/shared-animation": "^1.0.2"
   }
 }
