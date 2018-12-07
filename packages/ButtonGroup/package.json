@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-button-group",
-  "version": "1.0.0-preview",
+  "version": "1.0.0",
   "description": "An input component utilizing buttons that act as radios.",
   "main": "index.cjs.js",
   "module": "index.es.js",
