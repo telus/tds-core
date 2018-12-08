@@ -4,7 +4,7 @@
   "plugins": ["otherlink", "collapsible-menu", "insert-logo-link", "-sharing"],
   "pluginsConfig": {
     "insert-logo-link": {
-      "src": "https://cdn.rawgit.com/telusdigital/tds-core/de9e745a/guide/Logo.svg",
+      "src": "https://cdn.jsdelivr.net/gh/telusdigital/tds-core@de9e745a/guide/Logo.svg",
       "url": "/"
     }
   }
