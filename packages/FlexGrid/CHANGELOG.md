@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.2.1...@tds/core-flex-grid@2.3.0) (2018-12-10)
+
+
+### Features
+
+* **core-flex-grid:** add horizontalAlign prop to Col ([694ad0a](https://github.com/telusdigital/tds/commit/694ad0a))
+
+
+
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.2.0...@tds/core-flex-grid@2.2.1) (2018-12-06)
 
