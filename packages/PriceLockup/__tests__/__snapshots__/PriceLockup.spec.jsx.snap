@@ -3,6 +3,7 @@
 exports[`PriceLockup renders with default props 1`] = `
 <Box
   between={1}
+  dangerouslyAddClassName="wrapperAlignment"
   inline={false}
   tag="div"
 >

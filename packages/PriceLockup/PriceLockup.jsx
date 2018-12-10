@@ -67,7 +67,7 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
   }
 
   return (
-    <Box between={wrapperSpacing}>
+    <Box between={wrapperSpacing} dangerouslyAddClassName={styles.wrapperAlignment}>
       <Box between={size !== 'large' ? 1 : undefined}>
         {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
         <Box
