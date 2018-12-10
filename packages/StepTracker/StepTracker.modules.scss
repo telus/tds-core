@@ -1,10 +1,29 @@
 @import '~@tds/core-colours/colours';
 @import '~@tds/core-responsive/responsive';
 
+@mixin step-tracker-padding {
+  padding: 1rem 0;
+}
+
+.stepContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.greyBg {
+  background-color: $color-athens-grey;
+  @include step-tracker-padding;
+}
+
+.whiteBg {
+  background-color: $color-white;
+  @include step-tracker-padding;
+}
+
 .step {
-  width: 100%;
   position: relative;
   text-align: center;
+  width: 100%;
 
   &::before,
   &::after {
@@ -66,8 +85,4 @@
 .mobileLabel {
   width: 100%;
   text-align: center;
-
-  @include mq($from: md) {
-    display: none;
-  }
 }

@@ -2,93 +2,114 @@
 
 exports[`<StepTracker /> renders 1`] = `
 <div
+  class="greyBg"
   data-testid="stepTrackerContainer"
 >
   <div
-    class="row"
+    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
   >
     <div
-      aria-current="false"
-      aria-label="Login"
-      class="step"
-      data-isactive="true"
-      data-testid="singleStepContainer-0"
+      class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
     >
-      <span
-        class="iconActive"
-      >
-        <i
-          aria-hidden="true"
-          class="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-        />
-      </span>
       <div
-        class="row justifyContentCenter label"
+        class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
       >
-        <span
-          class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+        <div
+          class="stepContainer"
         >
-          1. Login
-        </span>
+          <div
+            aria-current="false"
+            aria-label="Login"
+            class="step"
+            data-isactive="true"
+            data-testid="singleStepContainer-0"
+          >
+            <span
+              class="iconActive"
+            >
+              <i
+                aria-hidden="true"
+                class="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
+              />
+            </span>
+            <div
+              class="label"
+            >
+              <span
+                class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+              >
+                1. Login
+              </span>
+            </div>
+          </div>
+          <div
+            aria-current="true"
+            aria-label="Purchase"
+            class="step"
+            data-isactive="true"
+            data-testid="singleStepContainer-1"
+          >
+            <span
+              class="iconActive"
+            >
+              <br />
+            </span>
+            <div
+              class="label"
+            >
+              <span
+                class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+              >
+                2. Purchase
+              </span>
+            </div>
+          </div>
+          <div
+            aria-current="false"
+            aria-label="Checkout"
+            class="step"
+            data-isactive="false"
+            data-testid="singleStepContainer-2"
+          >
+            <span
+              class="icon"
+            >
+              <br />
+            </span>
+            <div
+              class="label"
+            >
+              <span
+                class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+              >
+                3. Checkout
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div
-      aria-current="true"
-      aria-label="Purchase"
-      class="step"
-      data-isactive="true"
-      data-testid="singleStepContainer-1"
+      class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
     >
-      <span
-        class="iconActive"
-      >
-        <br />
-      </span>
       <div
-        class="row justifyContentCenter label"
+        class="TDS_flexboxgrid2__col-xs-12___3Q9tF col-md-0 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdHidden___3fURS TDS_Col-modules__lgHidden___38qZL TDS_Col-modules__xlHidden___d5mDh TDS_Col-modules__padding___2tLQS"
       >
-        <span
-          class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+        <div
+          class="mobileLabel"
         >
-          2. Purchase
-        </span>
+          <span
+            class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+            data-testid="mobileStepLabel"
+          >
+            <span>
+              Step 2 of 3:
+            </span>
+             Purchase
+          </span>
+        </div>
       </div>
     </div>
-    <div
-      aria-current="false"
-      aria-label="Checkout"
-      class="step"
-      data-isactive="false"
-      data-testid="singleStepContainer-2"
-    >
-      <span
-        class="icon"
-      >
-        <br />
-      </span>
-      <div
-        class="row justifyContentCenter label"
-      >
-        <span
-          class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
-        >
-          3. Checkout
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    class="mobileLabel"
-  >
-    <span
-      class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
-      data-testid="mobileStepLabel"
-    >
-      <span>
-        Step 2 of 3:
-      </span>
-       Purchase
-    </span>
   </div>
 </div>
 `;
