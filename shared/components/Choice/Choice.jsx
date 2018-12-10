@@ -50,15 +50,12 @@ const renderColoredLabel = (color, content) => (
 )
 
 const renderLabel = (label, description, feedback, checked, disabled) => {
-  let content = <Text size="medium">{label}</Text>
-  if (description) {
-    content = (
-      <Box between={2}>
-        {content}
-        <Text size="small">{description}</Text>
-      </Box>
-    )
-  }
+  const content = (
+    <Box between={2}>
+      <Text size="medium">{label}</Text>
+      {description && <Text size="small">{description}</Text>}
+    </Box>
+  )
 
   if (feedback === 'error' && !checked) {
     return renderColoredLabel(messagingStyles.errorText, content)
