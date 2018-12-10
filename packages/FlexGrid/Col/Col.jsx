@@ -177,13 +177,12 @@ Col.propTypes = {
    */
   offset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   /**
-   * @since 2.2.0
+   * @since 2.3.0
    *
    * Align content horizontally within the column.
    *
    * Accepts a `PropType.string` following the [responsive prop](#responsiveProps) structure.
    */
-
   horizontalAlign: responsiveProps(PropTypes.string),
 }
 /* eslint-enable */
