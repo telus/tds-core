@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@1.0.2...@tds/core-price-lockup@1.0.3) (2018-12-11)
+
+
+### Bug Fixes
+
+* **core-price-lockup:** fixing horizontal alignment issue ([#836](https://github.com/telusdigital/tds-core/issues/836)) ([5a64f4e](https://github.com/telusdigital/tds-core/commit/5a64f4e))
+
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@1.0.1...@tds/core-price-lockup@1.0.2) (2018-12-06)
 
