@@ -47,7 +47,7 @@ const setChoice = event => {
 
 ### Radio descriptions
 
-In special circumstances, it may be impossible for the radio label to be descriptive enough for the user to make an informed choice. In these cases, use the `description` prop. This prop adds a string of text under a particular radio input that further describes its choice.
+In special circumstances, it may be impossible for the radio label to be descriptive enough for the user to make an informed choice. In these cases, use the `description` prop. This prop can be used to add descriptive text under a radio input.
 
 ```jsx
 initialState = {
