@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Text from '@tds/core-text'
-import Flexbox from '../../shared/components/Flexbox/Flexbox'
+import FlexGrid from '@tds/core-flex-grid'
 
 import safeRest from '../../shared/utils/safeRest'
 
@@ -30,30 +30,44 @@ const getStepLabel = (current, steps) => {
  * @version ./package.json
  */
 
-const StepTracker = ({ current, steps, mobileStepLabelTemplate, ...rest }) => {
+const StepTracker = ({ current, steps, mobileStepLabelTemplate, backgroundColour, ...rest }) => {
   const stepText = parseStepText(current, steps, mobileStepLabelTemplate)
   const stepLabel = getStepLabel(current, steps)
   return (
-    <div {...safeRest(rest)} data-testid="stepTrackerContainer">
-      <Flexbox direction="row">
-        {steps.map((label, index) => {
-          return (
-            <Step
-              status={current}
-              label={label}
-              stepNumber={index + 1}
-              stepIndex={index}
-              key={label}
-              data-testid={`step-${index}`}
-            />
-          )
-        })}
-      </Flexbox>
-      <div className={styles.mobileLabel}>
-        <Text data-testid="mobileStepLabel">
-          {stepText} {stepLabel}
-        </Text>
-      </div>
+    <div
+      {...safeRest(rest)}
+      data-testid="stepTrackerContainer"
+      className={backgroundColour === 'grey' ? styles.greyBg : styles.whiteBg}
+    >
+      <FlexGrid>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12}>
+            <div className={styles.stepContainer}>
+              {steps.map((label, index) => {
+                return (
+                  <Step
+                    status={current}
+                    label={label}
+                    stepNumber={index + 1}
+                    stepIndex={index}
+                    key={label}
+                    data-testid={`step-${index}`}
+                  />
+                )
+              })}
+            </div>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+        <FlexGrid.Row>
+          <FlexGrid.Col xs={12} md={0}>
+            <div className={styles.mobileLabel}>
+              <Text data-testid="mobileStepLabel">
+                {stepText} {stepLabel}
+              </Text>
+            </div>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
     </div>
   )
 }
@@ -72,10 +86,15 @@ StepTracker.propTypes = {
    * Use %current to place the current step and use %total to place the total amount of steps.
    */
   mobileStepLabelTemplate: PropTypes.string,
+  /**
+   * The background colour of the StepTracker.
+   */
+  backgroundColour: PropTypes.oneOf(['grey', 'white']),
 }
 
 StepTracker.defaultProps = {
   mobileStepLabelTemplate: 'Step %{current} of %{total}:',
+  backgroundColour: 'grey',
 }
 
 export default StepTracker

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 import Icon from '@tds/core-decorative-icon'
 import Text from '@tds/core-text'
-import Flexbox from '../../../shared/components/Flexbox/Flexbox'
 
 import styles from '../StepTracker.modules.scss'
 
@@ -26,11 +25,11 @@ const Step = ({ label, status, stepNumber, stepIndex }) => {
       <span className={isStepActive() ? styles.iconActive : styles.icon}>
         {status > stepIndex ? <Icon symbol="checkmark" size={16} variant="inverted" /> : <br />}
       </span>
-      <Flexbox direction="row" justifyContent="center" dangerouslyAddClassName={styles.label}>
+      <div className={styles.label}>
         <Text bold={status === stepIndex}>
           {stepNumber}. {label}
         </Text>
-      </Flexbox>
+      </div>
     </div>
   )
 }
