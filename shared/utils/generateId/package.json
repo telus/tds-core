@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "main": "",
-  "module": ""
+  "module": "",
+  "dependencies": {
+    "array-find-es6": "^2.0.3"
+  }
 }
