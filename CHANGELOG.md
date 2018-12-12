@@ -1,3 +1,11 @@
+#### 0.34.24 (2018-12-12)
+
+##### Bug Fixes
+
+* **core-hairline-divider:**
+  *  remove height: 100% ([7be98ed6](https://github.com/telusdigital/tds/commit/7be98ed6977c692c27d2b61b06fa6478dbb0282e))
+  *  fix vertical divider in heightless parent ([87703711](https://github.com/telusdigital/tds/commit/87703711f654688f8e7f644c81113f6792a4457f))
+
 #### 0.34.23 (2018-11-13)
 
 ##### Bug Fixes
