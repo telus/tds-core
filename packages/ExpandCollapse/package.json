@@ -37,7 +37,6 @@
     "@tds/core-responsive": "^1.1.0",
     "@tds/shared-animation": "^1.0.2",
     "airbnb-prop-types": "^2.8.1",
-    "core-js": "^2.5.3",
     "react-transition-group": "^2.2.1"
   }
 }
