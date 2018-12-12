@@ -13,23 +13,6 @@ import Bubble from './Bubble'
 import iconWrapperStyles from '../../shared/styles/IconWrapper.modules.scss'
 import styles from './Tooltip.modules.scss'
 
-const getTriggerA11yText = connectedFieldLabel => {
-  if (!connectedFieldLabel) {
-    return 'Reveal additional information.'
-  }
-
-  return `Reveal additional information about ${connectedFieldLabel}.`
-}
-
-const getIds = connectedFieldLabel => {
-  const id = generateId(connectedFieldLabel, 'unknown-field')
-
-  return {
-    bubbleId: id.postfix('tooltip'),
-    triggerId: id.postfix('trigger'),
-  }
-}
-
 /**
  * Provide an explanation or instructions for a form field that most users do not need.
  *
@@ -48,6 +31,7 @@ class Tooltip extends React.Component {
 
   componentDidMount() {
     this.updatePageWidth()
+    this.uniqueId = btoa(Math.random())
   }
 
   componentDidUpdate() {
@@ -68,6 +52,23 @@ class Tooltip extends React.Component {
     window.removeEventListener('resize', this.updatePageWidth)
   }
 
+  getTriggerA11yText = connectedFieldLabel => {
+    if (!connectedFieldLabel) {
+      return 'Reveal additional information.'
+    }
+
+    return `Reveal additional information about ${connectedFieldLabel}.`
+  }
+
+  getIds = connectedFieldLabel => {
+    const id = generateId(connectedFieldLabel, `standalone-tooltip ${this.uniqueId}`)
+
+    return {
+      bubbleId: id.postfix('tooltip'),
+      triggerId: id.postfix('trigger'),
+    }
+  }
+
   setTooltipRef = element => {
     this.refTooltip = element
   }
@@ -75,11 +76,10 @@ class Tooltip extends React.Component {
   toggleBubbleOnOutsideEvent = event => {
     const { connectedFieldLabel } = this.props
 
-    const { bubbleId, triggerId } = getIds(connectedFieldLabel)
+    const { bubbleId, triggerId } = this.getIds(connectedFieldLabel)
 
     const inBubble = closest(event.target, `#${bubbleId}`)
     const inTrigger = closest(event.target, `#${triggerId}`)
-
     if (!inBubble && !inTrigger) {
       this.toggleBubble()
     }
@@ -104,7 +104,7 @@ class Tooltip extends React.Component {
   render() {
     const { direction, connectedFieldLabel, children, ...rest } = this.props
 
-    const { bubbleId, triggerId } = getIds(connectedFieldLabel)
+    const { bubbleId, triggerId } = this.getIds(connectedFieldLabel)
 
     const classes = joinClassNames(iconWrapperStyles.fixLineHeight, styles.tooltip)
 
@@ -133,7 +133,7 @@ class Tooltip extends React.Component {
           </Bubble>
           <StandaloneIcon
             symbol="questionMarkCircle"
-            a11yText={getTriggerA11yText(connectedFieldLabel)}
+            a11yText={this.getTriggerA11yText(connectedFieldLabel)}
             onClick={this.toggleBubble}
             id={triggerId}
             aria-controls={bubbleId}

@@ -1,10 +1,14 @@
 import React from 'react'
-import { render, mount } from 'enzyme'
+import { mount } from 'enzyme'
 
 import StandaloneIcon from '@tds/core-standalone-icon'
 import Text from '@tds/core-text'
 
 import Tooltip from '../Tooltip'
+
+const mockMath = Object.create(global.Math)
+mockMath.random = () => 0.5
+global.Math = mockMath
 
 describe('Tooltip', () => {
   const defaultChildren = 'Tooltip text'
@@ -23,7 +27,7 @@ describe('Tooltip', () => {
   }
 
   it('renders', () => {
-    const tooltip = render(<Tooltip>Tooltip text</Tooltip>)
+    const { tooltip } = doMount()
 
     expect(tooltip).toMatchSnapshot()
   })
