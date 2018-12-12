@@ -51,7 +51,7 @@ const renderColoredLabel = (color, content) => (
 
 const renderLabel = (label, description, feedback, checked, disabled) => {
   const content = (
-    <Box between={2}>
+    <Box between={2} dangerouslyAddClassName={styles.flexOne}>
       <Text size="medium">{label}</Text>
       {description && <Text size="small">{description}</Text>}
     </Box>
