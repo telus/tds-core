@@ -1,3 +1,13 @@
+#### 1.0.24 (2018-12-12)
+
+##### Documentation Changes
+
+* **core-hairline-divider:**  remove unused css ([cff8e332](https://github.com/telusdigital/tds/commit/cff8e332b676b466895cbe0f89f505b51768966d))
+
+##### Bug Fixes
+
+* **core-hairline-divider:**  fix vertical divider in heightless parent ([c7255e1a](https://github.com/telusdigital/tds/commit/c7255e1a98b51ce012dfdbda17e9e93d7886c545))
+
 #### 1.0.23 (2018-11-13)
 
 ##### Bug Fixes
