@@ -1,46 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip renders 1`] = `
-<div
-  class="fixLineHeight tooltip"
+<Tooltip
+  direction="auto"
 >
   <div
-    class="tooltipContainer"
-    data-testid="tooltipContainer"
+    className="fixLineHeight tooltip"
   >
     <div
-      aria-hidden="true"
-      aria-live="assertive"
-      class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T right hide"
-      data-testid="bubble"
-      id="unknown-field_tooltip"
-      role="tooltip"
+      className="tooltipContainer"
+      data-testid="tooltipContainer"
     >
-      <div
-        class="innerBubble"
-        style="width:calc(-16px - 1rem - 0.5rem)"
+      <Bubble
+        direction="right"
+        id="standalone-tooltip-mc41_tooltip"
+        open={false}
+        width={
+          Object {
+            "width": "calc(1008px - 1rem - 0.5rem)",
+          }
+        }
       >
-        <span
-          class="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
+        <Box
+          aria-hidden="true"
+          aria-live="assertive"
+          dangerouslyAddClassName="right hide"
+          data-testid="bubble"
+          horizontal={3}
+          id="standalone-tooltip-mc41_tooltip"
+          inline={false}
+          role="tooltip"
+          tag="div"
+          vertical={2}
         >
-          Tooltip text
-        </span>
-      </div>
+          <div
+            aria-hidden="true"
+            aria-live="assertive"
+            className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T right hide"
+            data-testid="bubble"
+            id="standalone-tooltip-mc41_tooltip"
+            role="tooltip"
+          >
+            <div
+              className="innerBubble"
+              style={
+                Object {
+                  "width": "calc(1008px - 1rem - 0.5rem)",
+                }
+              }
+            >
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="small"
+              >
+                <span
+                  className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
+                >
+                  Tooltip text
+                </span>
+              </Text>
+            </div>
+          </div>
+        </Box>
+      </Bubble>
+      <StandaloneIcon
+        a11yText="Reveal additional information."
+        aria-controls="standalone-tooltip-mc41_tooltip"
+        aria-expanded="false"
+        aria-haspopup="true"
+        id="standalone-tooltip-mc41_trigger"
+        onClick={[Function]}
+        size={24}
+        symbol="questionMarkCircle"
+      >
+        <Clickable
+          aria-controls="standalone-tooltip-mc41_tooltip"
+          aria-expanded="false"
+          aria-haspopup="true"
+          dangerouslyAddStyle={
+            Object {
+              "margin": "-4px",
+              "padding": "4px",
+            }
+          }
+          id="standalone-tooltip-mc41_trigger"
+          onClick={[Function]}
+          type="button"
+        >
+          <button
+            aria-controls="standalone-tooltip-mc41_tooltip"
+            aria-expanded="false"
+            aria-haspopup="true"
+            className="TDS_Clickable-modules__clickable___Wf5Qr TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ TDS_Forms-modules__font___g7OGX TDS_Text-modules__color___2f6lE"
+            id="standalone-tooltip-mc41_trigger"
+            onClick={[Function]}
+            style={
+              Object {
+                "margin": "-4px",
+                "padding": "4px",
+              }
+            }
+            type="button"
+          >
+            <Icon
+              aria-label="Reveal additional information."
+              size={24}
+              symbol="questionMarkCircle"
+            >
+              <i
+                aria-label="Reveal additional information."
+                className="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
+              />
+            </Icon>
+          </button>
+        </Clickable>
+      </StandaloneIcon>
     </div>
-    <button
-      aria-controls="unknown-field_tooltip"
-      aria-expanded="false"
-      aria-haspopup="true"
-      class="TDS_Clickable-modules__clickable___Wf5Qr TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ TDS_Forms-modules__font___g7OGX TDS_Text-modules__color___2f6lE"
-      id="unknown-field_trigger"
-      style="padding:4px;margin:-4px"
-      type="button"
-    >
-      <i
-        aria-label="Reveal additional information."
-        class="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
-      />
-    </button>
   </div>
-</div>
+</Tooltip>
 `;
