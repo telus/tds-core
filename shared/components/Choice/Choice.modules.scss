@@ -8,6 +8,10 @@
   align-items: flex-start;
 }
 
+.flexOne {
+  flex: 1;
+}
+
 .fakeInput {
   composes: thin from '../../styles/Borders.modules.scss';
 
