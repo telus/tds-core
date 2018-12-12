@@ -1,4 +1,4 @@
-import find from 'core-js/fn/array/find'
+import find from 'array-find-es6'
 
 const sanitize = text =>
   text
