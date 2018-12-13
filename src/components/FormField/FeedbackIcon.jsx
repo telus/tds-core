@@ -6,27 +6,32 @@ import StandaloneIcon from '../Icons/StandaloneIcon/StandaloneIcon'
 
 import iconWrapperStyles from '../Icons/IconWrapper.modules.scss'
 
+const renderIcon = feedback => {
+  if (feedback === 'success') {
+    return (
+      <StandaloneIcon
+        symbol="checkmark"
+        variant="primary"
+        size={16}
+        a11yText="The value of this input field is valid."
+      />
+    )
+  } else if (feedback === 'error') {
+    return (
+      <StandaloneIcon
+        symbol="exclamationPointCircle"
+        variant="error"
+        size={16}
+        a11yText="The value of this input field is invalid."
+      />
+    )
+  }
+  return null
+}
+
 const FeedbackIcon = ({ showIcon, feedback }) => (
   <Fade timeout={100} in={showIcon} mountOnEnter={true} unmountOnExit={true}>
-    {() => (
-      <div className={iconWrapperStyles.fixLineHeight}>
-        {feedback === 'success' ? (
-          <StandaloneIcon
-            symbol="checkmark"
-            variant="primary"
-            size={16}
-            a11yText="The value of this input field is valid."
-          />
-        ) : (
-          <StandaloneIcon
-            symbol="exclamationPointCircle"
-            variant="error"
-            size={16}
-            a11yText="The value of this input field is invalid."
-          />
-        )}
-      </div>
-    )}
+    {() => <div className={iconWrapperStyles.fixLineHeight}>{renderIcon(feedback)}</div>}
   </Fade>
 )
 FeedbackIcon.propTypes = {
