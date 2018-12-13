@@ -62,7 +62,7 @@
   }
 }
 
-.text {
+span.text {
   line-height: 1.2;
   @include mq($from: md) {
     line-height: 1.6;
