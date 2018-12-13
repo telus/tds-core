@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.0.7...@tds/shared-choice@1.1.0) (2018-12-13)
+
+
+### Features
+
+* **shared-choice:** add description functionality ([e465e0b](https://github.com/telus/tds-core/commit/e465e0b))
+
+
+
+
 <a name="1.0.7"></a>
 ## [1.0.7](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.0.6...@tds/shared-choice@1.0.7) (2018-12-06)
 

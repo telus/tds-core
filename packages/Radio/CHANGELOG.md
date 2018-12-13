@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.1.1...@tds/core-radio@1.2.0) (2018-12-13)
+
+
+### Features
+
+* **core-radio:** add description text functionality ([dc418c6](https://github.com/telusdigital/tds/commit/dc418c6))
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.1.0...@tds/core-radio@1.1.1) (2018-12-06)
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@2.0.3...@tds/core-step-tracker@3.0.0) (2018-12-13)
+
+
+### Features
+
+* **core-step-tracker:** add bg colour options ([#858](https://github.com/telusdigital/tds/issues/858)) ([08bf3ee](https://github.com/telusdigital/tds/commit/08bf3ee))
+
+
+### BREAKING CHANGES
+
+* **core-step-tracker:** make step tracker full width
+
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@2.0.2...@tds/core-step-tracker@2.0.3) (2018-12-06)
 
