@@ -91,7 +91,7 @@ class Notification extends React.Component {
                         <div className={styles.dismiss}>
                           <StandaloneIcon
                             symbol="times"
-                            size={16}
+                            size={24}
                             a11yText={dismissibleA11yLabel}
                             variant={variant === 'instructional' ? 'secondary' : undefined}
                             onClick={() => this.setState(() => ({ dismissed: true }))}
