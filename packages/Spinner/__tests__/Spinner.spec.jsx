@@ -50,6 +50,14 @@ describe('Spinner', () => {
     expect(spinner).toMatchSnapshot()
   })
 
+  it('renders inline', () => {
+    const { spinner } = doMount(
+      { spinning: true, inline: true },
+      <span>Overlay me with the spinner</span>
+    )
+    expect(spinner.childAt(0)).toHaveClassName('inline')
+  })
+
   it('is only visible while spinning', () => {
     let spinner = doShallow({ spinning: false })
     expect(spinner).toBeEmptyRender()
