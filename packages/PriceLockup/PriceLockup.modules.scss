@@ -10,7 +10,7 @@
 }
 
 .priceValueSignsmall {
-  composes: wordBreak from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: wordBreak;
   composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
   @include helvetica-neue-light-45;
 
@@ -24,7 +24,7 @@
 }
 
 .priceValueSignmedium {
-  composes: wordBreak from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: wordBreak;
   composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
 
   @include helvetica-neue-light-45;
@@ -42,7 +42,7 @@
 
 .priceValueSignlarge {
   composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
-  composes: wordBreak from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: wordBreak;
 
   @include helvetica-neue-thin-35;
 
@@ -70,11 +70,11 @@ span.text {
 }
 
 .mediumText {
-  composes: medium from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: medium;
 }
 
 .largeText {
-  composes: large from '../../shared/styles/Typography/Typography.modules.scss';
+  composes: large;
 }
 
 .headingText {
