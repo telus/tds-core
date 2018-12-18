@@ -19,7 +19,10 @@ const Spinner = ({ spinning, tip, a11yLabel, inline, children, ...rest }) => {
 
   if (children) {
     return (
-      <div className={joinClassNames(positionStyles.relative, inline && styles.inline)}>
+      <div
+        className={joinClassNames(positionStyles.relative, inline && styles.inline)}
+        data-testid="container"
+      >
         {<SpinnerSvg {...rest} tip={tip} a11yLabel={a11yLabel} overlay={true} />}
 
         <div className={styles.overlay} data-testid="overlay" />

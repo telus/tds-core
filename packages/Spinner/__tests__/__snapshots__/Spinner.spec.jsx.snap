@@ -37,6 +37,7 @@ exports[`Spinner renders 1`] = `
 exports[`Spinner renders with children 1`] = `
 <div
   class="relative"
+  data-testid="container"
 >
   <div
     class="container centered"
