@@ -8,7 +8,7 @@
 
 - All body text should be contained in a `Paragraph`, regardless of length.
 - If the `Paragraph` is on a dark background, the `invert` prop must be used to maintain sufficient colour contrast.
-- If other modifications must be made to the text inside a paragraph such as size or font weight, use the `Text` component.
+- If other modifications must be made to the text inside a `Paragraph` such as size or font weight, use the `Text`, `Small`, and `Strong` components.
 
 ### Modifying text appearance
 
