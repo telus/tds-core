@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/telus/tds-core/compare/@tds/shared-typography@1.0.3...@tds/shared-typography@1.1.0) (2018-12-19)
+
+
+### Features
+
+* **shared-typography:** add block class ([4d676cd](https://github.com/telus/tds-core/commit/4d676cd))
+
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/telus/tds-core/compare/@tds/shared-typography@1.0.2...@tds/shared-typography@1.0.3) (2018-12-06)
 

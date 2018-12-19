@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-breadcrumbs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@tds/core-link": "^1.0.3",
-    "@tds/core-text": "^1.0.3",
+    "@tds/core-text": "^1.0.4",
     "@tds/util-prop-types": "^1.1.0",
     "prop-types": "^15.5.10"
   },

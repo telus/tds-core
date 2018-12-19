@@ -1,12 +1,12 @@
 {
   "name": "@tds/shared-base-button",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "main": "",
   "module": "",
   "devDependencies": {
     "@tds/core-responsive": "^1.1.0",
-    "@tds/shared-typography": "^1.0.2",
+    "@tds/shared-typography": "^1.1.0",
     "airbnb-prop-types": "2.8.1"
   }
 }

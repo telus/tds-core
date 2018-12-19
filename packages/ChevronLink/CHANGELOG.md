@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.1...@tds/core-chevron-link@1.1.2) (2018-12-19)
+
+
+### Bug Fixes
+
+* **core-chevron-link:** use shared typography stylesheet ([1a71b0e](https://github.com/telusdigital/tds/commit/1a71b0e))
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.0...@tds/core-chevron-link@1.1.1) (2018-11-13)
 

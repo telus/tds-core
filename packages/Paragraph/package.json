@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-paragraph",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Block text",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -29,6 +29,6 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "@tds/shared-typography": "^1.0.3"
+    "@tds/shared-typography": "^1.1.0"
   }
 }
