@@ -1,3 +1,9 @@
+#### 1.0.25 (2018-12-19)
+
+##### Bug Fixes
+
+* **shared-form-field:**  conditionally render icons ([aa84a8b2](https://github.com/telusdigital/tds/commit/aa84a8b214ebb96b15494ef70f609d733ce1acfc))
+
 #### 1.0.24 (2018-12-12)
 
 ##### Documentation Changes
