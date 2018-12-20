@@ -1,5 +1,6 @@
 const { rootSelector } = require('../config')
 const { toComponentName } = require('../utils')
+const { ignoredPackages } = require('../../config/constants')
 
 const generateTest = (packageName, componentName) => ({
   [packageName]: browser => {
@@ -17,8 +18,6 @@ const generateTest = (packageName, componentName) => ({
       .end()
   },
 })
-
-const ignoredPackages = ['@tds/core-selector-counter']
 
 const componentTests = process.env.PACKAGES.split(' ')
   .filter(packageName => !ignoredPackages.includes(packageName))

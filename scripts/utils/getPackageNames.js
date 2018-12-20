@@ -2,6 +2,7 @@
 
 const { exec } = require('child_process')
 const { userPackageNames, tdsOptions, lernaOptions } = require('./parseArgs')
+const { ignoredPackages } = require('../../config/constants')
 
 const getPackageNames = (callback, forceUpdatedPackages) => {
   if (!forceUpdatedPackages && userPackageNames.length > 0) {
@@ -19,7 +20,7 @@ const getPackageNames = (callback, forceUpdatedPackages) => {
       const updatedPackages = JSON.parse(stdout)
       const packageNames = updatedPackages.map(packageObject => packageObject.name)
 
-      callback(packageNames)
+      callback(packageNames.filter(el => !ignoredPackages.includes(el)))
     }
   })
 }
