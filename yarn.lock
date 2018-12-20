@@ -348,9 +348,9 @@
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
 
 "@types/node@*":
-  version "9.6.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.6.tgz#439b91f9caf3983cad2eef1e11f6bedcbf9431d2"
-  integrity sha512-SJe0g5cZeGNDP5sD8mIX3scb+eq8LQQZ60FXiKZHipYSeEFZ5EKml+NNMiO76F74TY4PoMWlNxF/YRY40FOvZQ==
+  version "10.12.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
+  integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
 
 "@types/node@^6.0.46":
   version "6.0.88"
@@ -12956,9 +12956,9 @@ rollup-pluginutils@^2.0.1:
     micromatch "^2.3.11"
 
 rollup@^0.68.0:
-  version "0.68.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.68.0.tgz#e4fbde2e6278354962be530b498fc485298c0fc3"
-  integrity sha512-UbmntCf8QBlOqJnwsNWQCI0oonHOgs9y1OLoO8BHf2r8gCyRLp3JzLHXARJpsNDAS08Qm3LDjzyWma5sqnCxDQ==
+  version "0.68.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.68.1.tgz#40d03872d3b05848fb023b12ebf7c6d69cab84c5"
+  integrity sha512-8DNKos2p/B7gDoxI42kyIHHX8d+Zt+bwhjUgXnTqnSP+CSPkRNNIQyHIcTqeGdYWR70qG6c1DaRcrjWAiG6Akg==
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "*"

@@ -12,7 +12,7 @@ const applyCustomScope = () => {
   const customScope = packages.rules[`scope-enum`]()[2]
   customScope.push(
     'config',
-    'dependencies',
+    'deps',
     'docs',
     'e2e',
     'github',
