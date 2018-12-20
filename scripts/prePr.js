@@ -14,7 +14,7 @@ const argv = require('yargs').argv
 const chalk = require('chalk')
 const emoji = require('node-emoji')
 
-const { PublishCommand } = require('lerna')
+const { PublishCommand } = require('@lerna/publish')
 
 /*
   Adapted from:
