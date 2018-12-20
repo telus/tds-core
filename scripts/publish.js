@@ -46,8 +46,7 @@ getPackageNames(packageNames => {
           }
         )
       } else {
-        console.log('Publishing aborted! Try again by specifying the packages you wish to publish.')
-        console.log('Ex: yarn lerna:publish @tds/core-component @tds/core-other-component')
+        console.log('Publishing aborted!')
       }
 
       read.close()
