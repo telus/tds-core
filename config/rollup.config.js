@@ -51,8 +51,9 @@ export default opts => {
           },
         }),
       babel({
-        plugins: ['external-helpers'],
+        runtimeHelpers: true,
         exclude: '../../node_modules/**',
+        configFile: '../../babel.config.js',
       }),
     ],
   }
