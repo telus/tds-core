@@ -97,7 +97,7 @@
     "lerna": "^2.9.0",
     "lint-staged": "^8.0.0",
     "minimist": "^1.2.0",
-    "nightwatch": "^0.9.19",
+    "nightwatch": "^1.0.0",
     "nightwatch-accessibility": "^1.6.0",
     "node-emoji": "^1.8.1",
     "node-resemble-js": "^0.2.0",
