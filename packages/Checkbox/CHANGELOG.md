@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.2...@tds/core-checkbox@1.1.3) (2018-12-19)
+
+
+### Bug Fixes
+
+* **core-checkbox:** remove core-js dependency ([442358d](https://github.com/telusdigital/tds/commit/442358d))
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.1...@tds/core-checkbox@1.1.2) (2018-12-13)
 

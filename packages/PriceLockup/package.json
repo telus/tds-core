@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-price-lockup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -30,8 +30,9 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-display-heading": "^1.0.5",
-    "@tds/core-heading": "^1.1.4",
-    "@tds/core-text": "^1.0.3"
+    "@tds/core-display-heading": "^1.0.6",
+    "@tds/core-heading": "^1.1.5",
+    "@tds/core-text": "^1.0.4",
+    "@tds/shared-typography": "^1.1.0"
   }
 }

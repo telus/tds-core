@@ -27,6 +27,7 @@ describe('Spinner', () => {
 
     return {
       spinner,
+      container: spinner.find('[data-testid="container"]'),
       overlay: spinner.find('[data-testid="overlay"]'),
       spinnerContainer: spinner.find('[data-testid="spinner"]'),
       spinnerSvg,
@@ -48,6 +49,14 @@ describe('Spinner', () => {
     )
 
     expect(spinner).toMatchSnapshot()
+  })
+
+  it('renders inline', () => {
+    const { container } = doMount(
+      { spinning: true, inline: true },
+      <span>Overlay me with the spinner</span>
+    )
+    expect(container).toHaveClassName('inline')
   })
 
   it('is only visible while spinning', () => {

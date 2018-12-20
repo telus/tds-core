@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.4"></a>
+## [2.0.4](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.3...@tds/core-tooltip@2.0.4) (2018-12-19)
+
+
+### Bug Fixes
+
+* **core-tooltip:** prevent multiple tooltips from being open on one page ([8bc243d](https://github.com/telusdigital/tds/commit/8bc243d))
+
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.2...@tds/core-tooltip@2.0.3) (2018-12-06)
 

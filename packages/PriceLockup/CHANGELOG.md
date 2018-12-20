@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@1.0.3...@tds/core-price-lockup@1.0.4) (2018-12-19)
+
+
+### Bug Fixes
+
+* **core-price-lockup:** prevent improper line height ([ae5117d](https://github.com/telusdigital/tds-core/commit/ae5117d))
+* **core-price-lockup:** use shared typography stylesheet ([8b092df](https://github.com/telusdigital/tds-core/commit/8b092df))
+
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@1.0.2...@tds/core-price-lockup@1.0.3) (2018-12-11)
 

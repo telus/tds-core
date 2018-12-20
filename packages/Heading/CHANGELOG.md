@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.5"></a>
+## [1.1.5](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.1.4...@tds/core-heading@1.1.5) (2018-12-19)
+
+
+### Bug Fixes
+
+* **core-heading:** use shared typography stylesheet ([922397a](https://github.com/telusdigital/tds/commit/922397a))
+
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.1.3...@tds/core-heading@1.1.4) (2018-12-06)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.12"></a>
+## [1.0.12](https://github.com/telusdigital/tds/compare/@tds/core-input@1.0.11...@tds/core-input@1.0.12) (2018-12-19)
+
+
+### Bug Fixes
+
+* **core-input:** remove core-js dependency ([8a9434a](https://github.com/telusdigital/tds/commit/8a9434a))
+
+
+
+
 <a name="1.0.11"></a>
 ## [1.0.11](https://github.com/telusdigital/tds/compare/@tds/core-input@1.0.10...@tds/core-input@1.0.11) (2018-12-06)
 

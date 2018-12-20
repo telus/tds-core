@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.9"></a>
+## [1.0.9](https://github.com/telus/tds-core/compare/@tds/shared-form-field@1.0.8...@tds/shared-form-field@1.0.9) (2018-12-19)
+
+
+### Bug Fixes
+
+* **shared:** use shared typography stylesheet ([f4b5709](https://github.com/telus/tds-core/commit/f4b5709))
+* **shared-form-field:** conditionally render icons ([72abb16](https://github.com/telus/tds-core/commit/72abb16))
+
+
+
+
 <a name="1.0.8"></a>
 ## [1.0.8](https://github.com/telus/tds-core/compare/@tds/shared-form-field@1.0.7...@tds/shared-form-field@1.0.8) (2018-12-06)
 

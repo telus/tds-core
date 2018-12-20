@@ -4,7 +4,7 @@
 
   composes: font from '../../styles/Forms.modules.scss';
   // Reset the text color because Safari tries to set its own color for buttons
-  composes: color from '../../../packages/Text/Text.modules.scss';
+  composes: color from '../../../shared/styles/Typography/Typography.modules.scss';
 
   appearance: none;
   background: none;

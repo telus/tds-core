@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.0...@tds/core-radio@1.2.1) (2018-12-19)
+
+
+
+
+**Note:** Version bump only for package @tds/core-radio
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.1.1...@tds/core-radio@1.2.0) (2018-12-13)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.2"></a>
+## [1.2.2](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.1...@tds/shared-base-button@1.2.2) (2018-12-19)
+
+
+### Bug Fixes
+
+* **shared:** use shared typography stylesheet ([f4b5709](https://github.com/telus/tds-core/commit/f4b5709))
+
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.0...@tds/shared-base-button@1.2.1) (2018-07-23)
 

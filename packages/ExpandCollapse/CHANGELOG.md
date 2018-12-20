@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.2.2...@tds/core-expand-collapse@1.2.3) (2018-12-19)
+
+
+### Bug Fixes
+
+* **core-expand-collapse:** remove core-js dependency ([017546b](https://github.com/telusdigital/tds/commit/017546b))
+
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.2.1...@tds/core-expand-collapse@1.2.2) (2018-12-11)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/telusdigital/tds/compare/@tds/core-text@1.0.3...@tds/core-text@1.0.4) (2018-12-19)
+
+
+### Bug Fixes
+
+* **core-text:** modify block prop behaviour ([c2f37a6](https://github.com/telusdigital/tds/commit/c2f37a6))
+
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/telusdigital/tds/compare/@tds/core-text@1.0.2...@tds/core-text@1.0.3) (2018-12-06)
 

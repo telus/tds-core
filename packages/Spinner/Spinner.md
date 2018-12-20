@@ -22,10 +22,7 @@ Avoid overlaying the entire window with the `Spinner`.
 Wrap the `Spinner` around the content to overlay it.
 
 ```jsx
-<Spinner spinning>
-  <section>
-    <Heading level="h3">Current Bill</Heading>
-    <Paragraph>View your latest bill here.</Paragraph>
-  </section>
+<Spinner spinning inline>
+  <Button>Login</Button>
 </Spinner>
 ```

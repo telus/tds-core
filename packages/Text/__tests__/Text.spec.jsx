@@ -12,12 +12,12 @@ describe('Text', () => {
     expect(text).toMatchSnapshot()
   })
 
-  it('renders an HTML span or div tag', () => {
+  it('renders a span with display: block if specified', () => {
     let text = doShallow()
-    expect(text).toHaveDisplayName('span')
+    expect(text).not.toHaveClassName('blockText')
 
     text = doShallow({ block: true })
-    expect(text).toHaveDisplayName('div')
+    expect(text).toHaveClassName('blockText')
   })
 
   it('can be bold', () => {
