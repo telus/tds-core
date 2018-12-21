@@ -3,8 +3,8 @@ const { toComponentName } = require('../utils')
 
 const generateTest = (packageName, componentName) => ({
   [packageName]: browser => {
-    const browserName = browser.globals.test_settings.desiredCapabilities.browserName || ''
-    const browserVersion = browser.globals.test_settings.desiredCapabilities.version || 'headless'
+    const browserName = browser.options.desiredCapabilities.browserName || ''
+    const browserVersion = browser.options.desiredCapabilities.version || 'headless'
 
     const url = `${browser.launch_url}/#!/${componentName}`
 

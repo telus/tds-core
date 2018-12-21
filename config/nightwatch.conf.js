@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+// Need to debug this? Set 'silent' to false under test_settings.default.
 const path = require('path')
 const config = require('../e2e/config')
 
@@ -23,15 +24,16 @@ module.exports = {
   output_folder: REPORT_PATH,
   custom_commands_path: CUSTOM_COMMANDS,
   custom_assertions_path: CUSTOM_ASSERTIONS,
-  selenium: {
-    start_process: false,
-  },
   test_workers: false,
+  webdriver: {
+    start_process: true,
+    server_path: 'node_modules/.bin/chromedriver',
+    port: 9515,
+  },
   test_settings: {
     default: {
+      silent: true,
       launch_url: config.launchUrl,
-      selenium_port: 9515,
-      selenium_host: '127.0.0.1',
       default_path_prefix: '',
       desiredCapabilities: {
         browserName: 'chrome',
