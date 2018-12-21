@@ -1,3 +1,7 @@
+/*
+ * TODO: remove babel-core, babel-preset-env, babel-preset-react,
+ * babel-preset-stage-2,and babelrc once jest no longer requires babel 6.
+ */
 const path = require('path')
 
 module.exports = {
