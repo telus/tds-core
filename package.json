@@ -76,7 +76,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "case": "^1.5.5",
     "chalk": "^2.4.1",
-    "chromedriver": "^2.35.0",
+    "chromedriver": "^2.45.0",
     "commitizen": "^3.0.0",
     "css-loader": "^2.0.0",
     "css-mediaquery": "^0.1.2",

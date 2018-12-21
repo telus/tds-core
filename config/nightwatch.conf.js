@@ -2,6 +2,7 @@
 // Need to debug this? Set 'silent' to false under test_settings.default.
 const path = require('path')
 const config = require('../e2e/config')
+const chromedriver = require('chromedriver')
 
 const GLOBALS_PATH = path.resolve('e2e/globals.js')
 const REPORT_PATH = path.resolve('e2e/output/reports/')
@@ -27,7 +28,7 @@ module.exports = {
   test_workers: false,
   webdriver: {
     start_process: true,
-    server_path: 'node_modules/.bin/chromedriver',
+    server_path: chromedriver.path,
     port: 9515,
   },
   test_settings: {
