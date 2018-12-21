@@ -51,6 +51,8 @@ Spinner.propTypes = {
   /**
    * Render the spinner as inline-block, useful when rendering the spinner on top of
    * components like button
+   *
+   * @since 2.1.0
    */
   inline: PropTypes.bool,
   /**
