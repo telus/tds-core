@@ -35,7 +35,7 @@
     "lint:ec": "echint",
     "lint": "lerna clean --yes && npm-run-all --parallel lint:*",
     "prepare": "yarn gitbook:install",
-    "prepr": "yarn test:e2e && node scripts/prePr.js --conventional-commits --yes",
+    "prepr": "yarn test:e2e && scripts/prePr.sh",
     "scaffold": "node scripts/scaffold.js",
     "test:e2e": "node scripts/e2e.js",
     "test:u": "yarn test -u",

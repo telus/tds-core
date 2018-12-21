@@ -428,6 +428,15 @@
       "contributions": [
         "tds"
       ]
+    },
+    {
+      "login": "jsdelivrbot",
+      "name": "jsDelivr Bot",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7389911?v=4",
+      "profile": "http://www.jsdelivr.com/",
+      "contributions": [
+        "tds"
+      ]
     }
   ]
 }
