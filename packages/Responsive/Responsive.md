@@ -1,8 +1,7 @@
 The `Responsive` component is a thin wrapper over the [**react-media**](https://github.com/ReactTraining/react-media) community
 component, which "listens for matches to a CSS media query and renders its child component based on whether the query matches or not."
 
-This package also contains Sass media query methods (documented below). In most cases **we recommend using the Sass methods
-over the Responsive React component** since they do not adversely affect server-side rendering. While not recommended for general use, the Responsive component is useful if you want to do something programmatically. For example, changing a prop or swapping a component on resize.
+This package also contains Sass media query methods (documented below). In most cases **we recommend using the Sass methods over the Responsive React component** since they do not adversely affect server-side rendering. While not recommended for general use, the Responsive component is useful if you want to do something programmatically. For example, changing a prop or swapping a component on resize.
 
 ### Breakpoints
 
@@ -77,8 +76,8 @@ initialState = {
 
 Moving the responsive behaviour into JavaScript enables testing of the results of media queries, which is impossible with CSS-based media queries. It is straightforwards to mock or stub the result of a media query for testing environments. Here are some examples of how we incorporated unit tests for responsive behaviour in some of the TDS components:
 
-* [Button component tests](https://github.com/telusdigital/tds-core/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/packages/Button/__tests__/Button.spec.jsx#L52-L68) and its corresponding [JSX](https://github.com/telusdigital/tds-core/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/shared/components/BaseButton/BaseButton.jsx#L17-L34) using the matches boolean flag
-* [Tooltip component tests](https://github.com/telusdigital/tds-core/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/packages/Tooltip/__tests__/Tooltip.spec.jsx#L56-L102) and its corresponding [JSX](https://github.com/telusdigital/tds-core/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/packages/Tooltip/Tooltip.jsx#L81-L108) rendering a particular bubble only when the media query matches
+- [Button component tests](https://github.com/telusdigital/tds-core/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/packages/Button/__tests__/Button.spec.jsx#L52-L68) and its corresponding [JSX](https://github.com/telusdigital/tds-core/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/shared/components/BaseButton/BaseButton.jsx#L17-L34) using the matches boolean flag
+- [Tooltip component tests](https://github.com/telusdigital/tds-core/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/packages/Tooltip/__tests__/Tooltip.spec.jsx#L56-L102) and its corresponding [JSX](https://github.com/telusdigital/tds-core/blob/b2108d1074383ba887c5b87a2c3055799937fcd3/packages/Tooltip/Tooltip.jsx#L81-L108) rendering a particular bubble only when the media query matches
 
 To implement responsive behaviour in your component, this package provides Sass-based media queries using [**sass-mq**](https://github.com/sass-mq/sass-mq), and a standardized set of breakpoints.
 
