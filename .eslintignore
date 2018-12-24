@@ -1,3 +1,4 @@
 scripts/scaffolding
 dist
 docs/components/overrides
+packages/SelectorCounter
