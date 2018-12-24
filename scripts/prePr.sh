@@ -15,4 +15,4 @@ if { $PROMPT != "" } {
   send "n\r"
 }
 
-puts "\nIf this is not what you expected, ensure that your commit messages follow the Conventional Commits specification 'https://conventionalcommits.org' and try again.`"
+puts "\nIf this is not what you expected, ensure that your commit messages follow the Conventional Commits specification 'https://conventionalcommits.org' and try again."
