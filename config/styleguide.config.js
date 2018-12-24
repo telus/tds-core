@@ -116,8 +116,8 @@ module.exports = {
     return `import ${name} from '@tds/core-${kebabizeName}'`
   },
 
-  showUsage: false,
-  showCode: false,
+  usageMode: 'collapse',
+  exampleMode: 'collapse',
 
   sections: [
     {
