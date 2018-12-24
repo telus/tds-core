@@ -419,24 +419,6 @@
       "contributions": [
         "tds"
       ]
-    },
-    {
-      "login": "renovate[bot]",
-      "name": "renovate[bot]",
-      "avatar_url": "https://avatars1.githubusercontent.com/in/2740?v=4",
-      "profile": "https://github.com/apps/renovate",
-      "contributions": [
-        "tds"
-      ]
-    },
-    {
-      "login": "jsdelivrbot",
-      "name": "jsDelivr Bot",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/7389911?v=4",
-      "profile": "http://www.jsdelivr.com/",
-      "contributions": [
-        "tds"
-      ]
     }
   ]
 }
