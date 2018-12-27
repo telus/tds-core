@@ -7,7 +7,7 @@
 # before making a Pull Request to ensure its integrity.
 
 log_user 0
-spawn npx lerna version --conventional-commits
+spawn npx lerna version --conventional-commits --amend
 log_user 1
 
 set PROMPT [ expect "Are you sure you want to create these versions?"]
