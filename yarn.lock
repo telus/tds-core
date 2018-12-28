@@ -1734,7 +1734,7 @@ agentkeepalive@^3.4.1:
   dependencies:
     humanize-ms "^1.2.1"
 
-airbnb-prop-types@2.8.1, airbnb-prop-types@^2.8.1:
+airbnb-prop-types@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/airbnb-prop-types/-/airbnb-prop-types-2.8.1.tgz#b9e31f08a7ed77b213fefc33b53a8c6e1dd8b885"
   integrity sha512-z7pAKmUyAsp/2SqLCTf9hzFc2JLspijB9t+I9D/i0NnYkkjUoV16+W00U6r7+HBM6Q3VqXSjYuUsLX1L71aciw==
