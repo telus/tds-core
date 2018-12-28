@@ -15,7 +15,9 @@ Limits the prop to only allow components with a specific name.
 ```jsx noeditor static
 import { componentWithName } from '@tds/util-prop-types'
 
-const PlanChooser = () => <fieldset>{children}</fieldset>
+const PlanChooser = () => {
+  return <fieldset>{children}</fieldset>
+}
 
 const App = () => (
   <PlanChooser>
