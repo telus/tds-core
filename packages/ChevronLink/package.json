@@ -27,11 +27,11 @@
   "dependencies": {
     "@tds/core-box": "^1.0.1",
     "@tds/core-decorative-icon": "^1.0.0",
+    "@tds/util-prop-types": "^1.1.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "@tds/shared-typography": "^1.1.0",
-    "airbnb-prop-types": "2.8.1"
+    "@tds/shared-typography": "^1.1.0"
   }
 }
