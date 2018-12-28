@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { componentWithName } from 'airbnb-prop-types'
+import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
