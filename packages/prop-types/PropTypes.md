@@ -29,6 +29,28 @@ PlanChooser.propTypes = {
 }
 ```
 
+### `or(array)`
+
+Limits the prop to only allow PropTypes that match those specified.
+
+```jsx noeditor static
+import { or } from '@tds/util-prop-types'
+
+const Button = () => {
+  return <button>{children}</button>
+}
+
+Button.propTypes = {
+  children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
+}
+
+const App = () => (
+  <Button>
+    Purchase <A11yContent>Pixel 3</A11yContent>
+  </Button>
+)
+```
+
 ### <a name="responsiveProps"></a>`responsiveProps(propType)`
 
 #### Using a component with `responsiveProps`
