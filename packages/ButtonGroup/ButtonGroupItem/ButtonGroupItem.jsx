@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { or } from 'airbnb-prop-types'
-import { componentWithName } from '@tds/util-prop-types'
+import { componentWithName, or } from '@tds/util-prop-types'
 
 import safeRest from '../../../shared/utils/safeRest'
 import generateId from '../../../shared/utils/generateId/generateId'
