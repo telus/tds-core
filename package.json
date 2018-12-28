@@ -33,13 +33,14 @@
     "lint:js": "eslint packages shared config docs scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
-    "lint": "lerna clean --yes && npm-run-all --parallel lint:*",
+    "lint": "npm-run-all --parallel lint:*",
     "prepare": "yarn gitbook:install",
     "prepr": "yarn test:e2e && scripts/prePr.sh",
     "scaffold": "node scripts/scaffold.js",
     "test:e2e": "node scripts/e2e.js",
     "test:u": "yarn test -u",
     "test:watch": "yarn test --watch",
+    "test:quick": "jest -o --config config/jest.config.js",
     "test": "jest --config config/jest.config.js"
   },
   "repository": {
@@ -185,7 +186,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged && yarn test && yarn contributors:update",
+      "pre-commit": "lint-staged && yarn test:quick && yarn contributors:update",
       "pre-push": "yarn ci:build && npm-run-all --parallel test lint build-docs:*"
     }
   }
