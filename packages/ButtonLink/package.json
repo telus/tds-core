@@ -25,12 +25,12 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "@tds/util-prop-types": "^1.1.0"
   },
   "devDependencies": {
     "@tds/core-a11y-content": "^1.0.0",
     "@tds/core-colours": "^1.0.0",
-    "@tds/shared-base-button": "^1.2.2",
-    "airbnb-prop-types": "2.8.1"
+    "@tds/shared-base-button": "^1.2.2"
   }
 }
