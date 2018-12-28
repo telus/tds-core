@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { componentWithName, or } from 'airbnb-prop-types'
+import { componentWithName, or } from '@tds/util-prop-types'
 
 import safeRest from '../../utils/safeRest'
 import joinClassNames from '../../utils/joinClassNames'
