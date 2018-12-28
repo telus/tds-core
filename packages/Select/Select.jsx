@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { componentWithName } from 'airbnb-prop-types'
+import { componentWithName } from '@tds/util-prop-types'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
 import Box from '@tds/core-box'
