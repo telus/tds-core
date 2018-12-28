@@ -15,4 +15,4 @@ if { $PROMPT != "" } {
   send "n\r"
 }
 
-puts "\nIf this is not what you expected, ensure that your commit messages follow the Conventional Commits specification 'https://conventionalcommits.org' and try again."
+puts "\nIf this is not what you expected, ensure that your commit messages follow the TDS commit types guide on this page: https://tds.telus.com/contributing/developer-guide.html and try again."
