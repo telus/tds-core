@@ -4,9 +4,11 @@
   "private": true,
   "main": "",
   "module": "",
+  "dependencies": {
+    "@tds/util-prop-types": "^1.1.0"
+  },
   "devDependencies": {
     "@tds/core-responsive": "^1.1.0",
-    "@tds/shared-typography": "^1.1.0",
-    "airbnb-prop-types": "2.8.1"
+    "@tds/shared-typography": "^1.1.0"
   }
 }
