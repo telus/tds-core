@@ -185,7 +185,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS && node ./scripts/commit-scope-lint.js -m $HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged && yarn test:quick && yarn contributors:update",
       "pre-push": "yarn ci:build && npm-run-all --parallel test lint build-docs:*"
     }
