@@ -2,14 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Media from 'react-media'
 
-import { warn } from '../../shared/utils/warn'
+import { breakpoints } from './breakpoints'
 
-const breakpoints = {
-  sm: 576,
-  md: 768,
-  lg: 992,
-  xl: 1200,
-}
+import { warn } from '../../shared/utils/warn'
 
 /**
  * Respond to device features, most commonly the browser viewport size.
