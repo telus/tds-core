@@ -14,25 +14,25 @@ import styles from './Box.modules.scss'
 const spacingBase = 1 // 16px
 
 const mobileSize = {
-  1: spacingBase * 0.25 + 'rem',
-  2: spacingBase * 0.5 + 'rem',
-  3: spacingBase + 'rem',
-  4: spacingBase * 1.5 + 'rem',
-  5: spacingBase * 2 + 'rem',
-  6: spacingBase * 2.5 + 'rem',
-  7: spacingBase * 3 + 'rem',
-  8: spacingBase * 4 + 'rem',
+  1: `${spacingBase * 0.25}rem`,
+  2: `${spacingBase * 0.5}rem`,
+  3: `${spacingBase}rem`,
+  4: `${spacingBase * 1.5}rem`,
+  5: `${spacingBase * 2}rem`,
+  6: `${spacingBase * 2.5}rem`,
+  7: `${spacingBase * 3}rem`,
+  8: `${spacingBase * 4}rem`,
 }
 
 const desktopSize = {
-  1: spacingBase * 0.25 + 'rem',
-  2: spacingBase * 0.5 + 'rem',
-  3: spacingBase + 'rem',
-  4: spacingBase * 2 + 'rem',
-  5: spacingBase * 3 + 'rem',
-  6: spacingBase * 4 + 'rem',
-  7: spacingBase * 4.5 + 'rem',
-  8: spacingBase * 6 + 'rem',
+  1: `${spacingBase * 0.25}rem`,
+  2: `${spacingBase * 0.5}rem`,
+  3: `${spacingBase}rem`,
+  4: `${spacingBase * 2}rem`,
+  5: `${spacingBase * 3}rem`,
+  6: `${spacingBase * 4}rem`,
+  7: `${spacingBase * 4.5}rem`,
+  8: `${spacingBase * 6}rem`,
 }
 
 /**
