@@ -78,7 +78,11 @@ const Box = ({
     },
   }
 
-  const box = jsx(tag, { ...safeRest(rest), css: style }, children)
+  const box = jsx(
+    tag,
+    { ...safeRest(rest), css: style, className: dangerouslyAddClassName },
+    children
+  )
 
   return box
 }
