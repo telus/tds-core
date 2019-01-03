@@ -1,12 +1,8 @@
 {
-  "presets": [
-    ["env", {"modules": false}],
-    "stage-2",
-    "react"
-  ],
+  "presets": [["@emotion/babel-preset-css-prop", "env", { "modules": false }], "stage-2", "react"],
   "env": {
     "test": {
-      "presets": ["env", "stage-2", "react"]
+      "presets": ["@emotion/babel-preset-css-prop", "env", "stage-2", "react"]
     }
   }
 }
