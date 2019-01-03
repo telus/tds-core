@@ -11,10 +11,10 @@ in and allows them to connect with our brand.
 
 The TELUS brand uses four types of photography:
 
-* Nature
-* Critter
-* Lifestyle
-* Device
+- Nature
+- Critter
+- Lifestyle
+- Device
 
 Brand approved imagery can be found by accessing [BrandHub](http://brand.telus.com).
 
@@ -31,5 +31,5 @@ unless explicit approval has been granted. If you have any questions regarding i
 
 ## Roadmap
 
-* Addition of decorative image component (leaf and floral assets, leaf composition etc)
-* Define approval process for lifestyle assets
+- Addition of decorative image component (leaf and floral assets, leaf composition etc)
+- Define approval process for lifestyle assets

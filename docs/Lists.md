@@ -13,11 +13,11 @@
 
 Lists can be sized using the `size` prop.
 
-```
-<OrderedList size="large">
-  <OrderedList.Item>Select the edition with the features that meet your needs</OrderedList.Item>
-  <OrderedList.Item>Purchase a plan for the primary user</OrderedList.Item>
-  <OrderedList.Item>Next, add users as needed</OrderedList.Item>
-  <OrderedList.Item>Purchase additional services such as IP phones, wireless backup and installation services</OrderedList.Item>
-</OrderedList>
+```html
+    <OrderedList size="large">
+      <OrderedList.Item>Select the edition with the features that meet your needs</OrderedList.Item>
+      <OrderedList.Item>Purchase a plan for the primary user</OrderedList.Item>
+      <OrderedList.Item>Next, add users as needed</OrderedList.Item>
+      <OrderedList.Item>Purchase additional services such as IP phones, wireless backup and installation services</OrderedList.Item>
+    </OrderedList>
 ```

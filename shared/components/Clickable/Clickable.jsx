@@ -10,11 +10,12 @@ import styles from './Clickable.modules.scss'
  * An invisible button.
  */
 const Clickable = ({ dangerouslyAddClassName, dangerouslyAddStyle, children, type, ...rest }) => (
+  // eslint-disable-next-line react/button-has-type
   <button
+    type={type}
     {...safeRest(rest)}
     className={joinClassNames(styles.clickable, dangerouslyAddClassName)}
     style={dangerouslyAddStyle}
-    type={type}
   >
     {children}
   </button>

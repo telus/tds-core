@@ -4,5 +4,5 @@ TDS includes resources for designers and developers that are needed to build con
 
 These guides assume that you are building user experiences on the Digital Platform, using the [Reference Architecture](https://github.com/telusdigital/reference-architecture), which specifies a collections of standards, tooling and processes (specifically Sketch, JavaScript, and React).
 
-* [Designers](designers.md)
-* [Developers](developers.md)
+- [Designers](designers.md)
+- [Developers](developers.md)

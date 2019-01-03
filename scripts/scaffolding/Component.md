@@ -1,3 +1,3 @@
-```
-<$COMPONENT$ />
+```React
+    <$COMPONENT$ />
 ```

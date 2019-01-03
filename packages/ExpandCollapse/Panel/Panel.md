@@ -1,14 +1,14 @@
 #### Superscript and HTML entities
 
-`header` accepts a templating syntax to allow for superscripts and &trade; and &reg; HTML entities.
+`header` accepts a templating syntax to allow for superscripts and ™ and ® HTML entities.
 
 - To use superscripts, wrap the content to be superscripted with double caret (`^^`), it will be replaced with `<Text.Sup>`.
 - To use one of the supported HTML entities, use the Entity Name anywhere in the string and it will be replaced with the corresponding HTML entity.
 
-| Entity Name | Sign    | Description                 |
-| ----------- | ------- | --------------------------- |
-| `&trade;`   | &trade; | Trademark symbol            |
-| `&reg;`     | &reg;   | Registered Trademark symbol |
+| Entity Name | Sign | Description                 |
+| ----------- | ---- | --------------------------- |
+| `&trade;`   | ™    | Trademark symbol            |
+| `&reg;`     | ®    | Registered Trademark symbol |
 
 Example:
 

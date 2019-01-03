@@ -55,6 +55,6 @@ have any questions regarding implementation please [get in touch with us](../con
 
 ## Roadmap
 
-* v1.0: Drop base font size from 20px to 16px
-* Adopt a more complete modular scale to work responsively with various view ports and within the typestack
-* Provide more guidance on use of colour with type
+- v1.0: Drop base font size from 20px to 16px
+- Adopt a more complete modular scale to work responsively with various view ports and within the typestack
+- Provide more guidance on use of colour with type

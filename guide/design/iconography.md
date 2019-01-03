@@ -13,12 +13,12 @@ of the edges should be at the standard measurement of 16px, 24px, or 48px.
 
 ### Dos
 
-* Make all icons interactive, except stop and warning icons
-* Ensure all icons are accompanied by supportive text, with the exception of utility icons
+- Make all icons interactive, except stop and warning icons
+- Ensure all icons are accompanied by supportive text, with the exception of utility icons
 
 ### Don’ts
 
-* Assume people understand what an icon should convey.
+- Assume people understand what an icon should convey.
 
 See the [Icon components](ref://../components/index.html#icons) for implementation details.
 
@@ -30,6 +30,6 @@ accepted into the system must provide ‘sufficient additional value’.
 
 ## Roadmap
 
-* Integrate a small subset of Picons into the component library
-* Deprecate and retire the icon font in favor of SVG-based icons
-* Provide more guidance on use of colour with iconography
+- Integrate a small subset of Picons into the component library
+- Deprecate and retire the icon font in favor of SVG-based icons
+- Provide more guidance on use of colour with iconography
