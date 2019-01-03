@@ -1,0 +1,35 @@
+repository:
+  name: tds-core
+  description: TELUS Design System core components
+  topics: design,telus
+  homepage: https://telus.com/digital
+  private: false
+  has_issues: true
+  has_wiki: false
+  has_downloads: false
+  has_projects: false
+  default_branch: master
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: true
+
+teams:
+  - name: tds-core
+    permission: admin
+  - name: digital
+    permission: write
+
+branches:
+  - name: master
+    protection:
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        dismiss_stale_reviews: false
+        require_code_owner_reviews: false
+
+      enforce_admins: false
+
+      restrictions:
+        users: []
+        teams:
+          - tds-core

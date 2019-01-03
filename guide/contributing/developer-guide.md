@@ -108,12 +108,12 @@ be deliberate when choosing the type of commit.
 
 Given the commit format:
 
-```
-type(scope): subject
+```git
+    type(scope): subject
 
-body
+    body
 
-footer
+    footer
 ```
 
 Use the `type` field to inform lerna what Conventional Commit you intend to use:
@@ -163,14 +163,12 @@ yarn cz
 
 ### Example commit messages
 
-```
-feat(core-flex-grid): remove center prop
+```git
+    feat(core-flex-grid): remove center prop
 
-BREAKING CHANGE: deprecated `center` prop is removed
-```
+    BREAKING CHANGE: deprecated `center` prop is removed
 
-```
-fix(core-button-link): adjust hover animation speed
+    fix(core-button-link): adjust hover animation speed
 ```
 
 ## Make a Pull Request

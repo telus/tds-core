@@ -9,7 +9,8 @@ import styles from './Link.modules.scss'
 const getClassName = (invert, context) => {
   if (context.inheritColor) {
     return styles.inheritColor
-  } else if (invert) {
+  }
+  if (invert) {
     return styles.inverted
   }
 

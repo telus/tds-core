@@ -14,20 +14,20 @@ As of March 2018, TDS switched to "split components" and each TDS component is a
 
 Due to the subjectivity of versioning front-end components, this is the guide we use:
 
-* **Breaking changes** are removals of features such as props, changes that affect the [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model), or dramatic changes in branding or appearance
-* **Minor changes** are new features, animations, props, or visual options
-* **Patches** are defect fixes that do not remove features, alter pixel dimensions related to the box model, nor add new features. If an intended feature was not working in a previous release, changing that feature to match the original design counts as a patch even if it affects the box model
+- **Breaking changes** are removals of features such as props, changes that affect the [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model), or dramatic changes in branding or appearance
+- **Minor changes** are new features, animations, props, or visual options
+- **Patches** are defect fixes that do not remove features, alter pixel dimensions related to the box model, nor add new features. If an intended feature was not working in a previous release, changing that feature to match the original design counts as a patch even if it affects the box model
 
 Learn more by reading the [TELUS Design Platform roadmap](roadmap.md).
 
 ## What browsers does TDS support?
 
-* Chrome
-* Firefox
-* Safari: 10
-* MS Edge
-* Internet Explorer: 11
-* Opera
+- Chrome
+- Firefox
+- Safari: 10
+- MS Edge
+- Internet Explorer: 11
+- Opera
 
 ## Do I need any polyfills?
 

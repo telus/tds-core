@@ -1,0 +1,100 @@
+version: 2.1
+
+executors:
+  app:
+    working_directory: ~/src
+
+    docker:
+      - image: circleci/node:8-browsers
+        environment:
+          NPM_CONFIG_PREFIX: /home/node/.npm-global
+          PATH: $PATH:$NPM_CONFIG_PREFIX/bin
+          MANPATH: $MANPATH:$NPM_CONFIG_PREFIX/share/man
+          NODE_PATH: $NPM_CONFIG_PREFIX/lib/node_modules
+
+commands:
+  persist:
+    steps:
+      - persist_to_workspace: { root: ~/src, paths: . }
+
+  attach:
+    steps:
+      - attach_workspace: { at: "." }
+
+  npmrc:
+    steps:
+      - run:
+          name: Setup .npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+
+  install:
+    steps:
+      - npmrc
+
+      - run:
+          name: Install build-essential
+          command: npx install-group peer --package @telus/build-essential --global
+      - run:
+          name: Install dependencies
+          command: yarn install
+
+jobs:
+  build:
+    executor: app
+    steps:
+      - checkout
+      - install
+      - run: yarn run ci:build
+      - persist
+
+  lint:
+    executor: app
+    steps:
+      - attach
+      - run: yarn run lint
+
+  unit:
+    executor: app
+    steps:
+      - attach
+      - run: yarn run test
+
+  e2e:
+    executor: app
+    steps:
+      - attach
+      - run:
+          name: Styleguidist Server
+          command: yarn run dev:e2e
+          background: true
+      - run: yarn run test:e2e -- --all
+
+  release:
+    executor: app
+    steps:
+      - attach
+      - npmrc
+      - run: npx semantic-release
+
+workflows:
+  version: 2
+  run:
+    jobs:
+      - build:
+          context: tds
+
+      - lint:
+          requires: [ build ]
+
+      - unit:
+          requires: [ build ]
+
+      - e2e:
+          requires: [ build ]
+
+      - release:
+          context: tds
+          requires: [ build, lint, unit, e2e ]
+          filters:
+            branches:
+              only: master

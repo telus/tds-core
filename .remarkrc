@@ -1,0 +1,6 @@
+{
+  "plugins": [
+    "@telus/remark-preset-lint-markdown",
+    ["lint-no-file-name-mixed-case", false]
+  ]
+}

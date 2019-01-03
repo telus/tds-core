@@ -1,7 +1,12 @@
 {
-  "name": "@telusdigital/tds",
   "version": "2.0.0",
-  "description": "TELUS Design System",
+  "name": "@telus/tds-core",
+  "description": "TELUS Design System core components",
+  "homepage": "https://github.com/telus/tds-core",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telus/tds-core.git"
+  },
   "license": "MIT",
   "private": true,
   "workspaces": [
@@ -34,6 +39,10 @@
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
     "lint": "npm-run-all --parallel lint:*",
+    "intl:deps": "npx updated",
+    "lint:md": "npx remark --quiet --frail .",
+    "intl:audit": "npm audit",
+    "precommit": "lint-staged && yarn test && yarn contributors:update",
     "prepare": "yarn gitbook:install",
     "prepr": "yarn test:e2e && scripts/prePr.sh",
     "scaffold": "node scripts/scaffold.js",
@@ -43,18 +52,16 @@
     "test:quick": "jest -o --config config/jest.config.js",
     "test": "jest --config config/jest.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/telusdigital/tds-core.git"
-  },
-  "author": "TELUS digital",
+  "keywords": [
+    "design",
+    "telus"
+  ],
   "engines": {
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/telusdigital/tds-core/issues"
+    "url": "https://github.com/telus/tds-core/issues"
   },
-  "homepage": "http://tds.telus.com",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
@@ -66,6 +73,8 @@
     "@commitlint/prompt": "^7.2.1",
     "@lerna/publish": "^3.7.1",
     "@telusdigital/eslint-config": "^1.2.0",
+    "@telus/eslint-config": "^1.3.5",
+    "@telus/remark-preset-lint-markdown": "^1.1.0",
     "all-contributors-cli": "^5.0.0",
     "autoprefixer": "^9.0.0",
     "aws-sdk": "^2.114.0",
@@ -87,13 +96,14 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^5.0.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.0.0",
-    "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jest": "^22.0.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.7.0",
     "file-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "gitbook-cli": "^2.3.2",
     "husky": "^1.0.0",
     "identity-obj-proxy": "^3.0.0",

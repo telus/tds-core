@@ -13,7 +13,7 @@
   - [Codebase overview](contributing/codebase-overview.md)
 - [Roadmap](roadmap.md)
 
-## Design &amp; foundational principles
+## Design & foundational principles
 
 - [Design Principles](design/principles.md)
 - [Accessibility](accessibility/accessibility.md)
@@ -31,7 +31,7 @@
 - [Motion](design/motion.md)
 - [Depth](design/depth.md)
 
-## Support &amp; links
+## Support & links
 
 - [Contact us](contact.md)
 - [FAQs](faq.md)
