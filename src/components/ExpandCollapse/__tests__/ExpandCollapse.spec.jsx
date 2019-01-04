@@ -201,8 +201,8 @@ describe('ExpandCollapse', () => {
       clickPanel('panel-1')
       expect(onPanelToggle).toHaveBeenCalledWith(true)
 
-      expandCollapse.setProps({ open: [] })
-      expect(onPanelToggle).toHaveBeenCalledWith(false)
+      expandCollapse.setProps({ open: ['panel-1'] })
+      expect(onPanelToggle).toHaveBeenCalledWith(true)
     })
 
     it('triggers a callback when any panel is opened or closed', () => {
