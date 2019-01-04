@@ -9,7 +9,8 @@ const componentWithName = passedName => {
       return props[propName]
         .map((_, index) => checkProp(props[propName], index, componentName))
         .find(Boolean)
-    } else if (
+    }
+    if (
       (props[propName] && typeof props[propName] !== 'object') ||
       (props[propName] && props[propName].type.name !== passedName)
     ) {
