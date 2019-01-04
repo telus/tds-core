@@ -1,6 +1,9 @@
 version: 2.1
 
 executors:
+  builder:
+    docker:
+      - image: telus/build-essential
   app:
     working_directory: ~/src
 
@@ -40,7 +43,7 @@ commands:
 
 jobs:
   build:
-    executor: app
+    executor: builder
     steps:
       - checkout
       - install
@@ -48,13 +51,13 @@ jobs:
       - persist
 
   lint:
-    executor: app
+    executor: builder
     steps:
       - attach
       - run: yarn run lint
 
   unit:
-    executor: app
+    executor: builder
     steps:
       - attach
       - run: yarn run test
@@ -70,7 +73,7 @@ jobs:
       - run: yarn run test:e2e -- --all
 
   release:
-    executor: app
+    executor: builder
     steps:
       - attach
       - npmrc
