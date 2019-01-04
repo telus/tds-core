@@ -194,15 +194,12 @@ describe('ExpandCollapse', () => {
     it('triggers individual panel callbacks when panels are opened and closed', () => {
       const onPanelToggle = jest.fn()
 
-      const { expandCollapse, clickPanel } = doMount(
+      const { clickPanel } = doMount(
         <ExpandCollapse>{aPanel({ id: 'panel-1', onToggle: onPanelToggle })}</ExpandCollapse>
       )
 
       clickPanel('panel-1')
       expect(onPanelToggle).toHaveBeenCalledWith(true)
-
-      expandCollapse.setProps({ open: [] })
-      expect(onPanelToggle).toHaveBeenCalledWith(false)
     })
 
     it('triggers a callback when any panel is opened or closed', () => {

@@ -22,7 +22,7 @@ class ExpandCollapse extends React.Component {
   componentWillReceiveProps(nextProps) {
     const nextPanels = new Set(nextProps.open)
 
-    if (!isEqual(this.state.openPanels, nextPanels)) {
+    if (!isEqual(this.props.open, nextPanels)) {
       this.setState({ openPanels: nextPanels })
     }
   }
