@@ -15,13 +15,23 @@ about: Create a report to help us improve
 
 ## Description
 
-- Description of the defect
+<!--
+  Please explain the problem you are trying to solve, not the solution you expect to see.
+-->
+
+- Description of the defect, observations
+- The result you were expecting
 
 ## Reproduction Steps
 
-- Click this thing
-- Now click this
-- Observe this happens
+<!--
+  This section is very important. Please provide steps on how to reproduce your issue.
+  Including code snippets or a link to documentation are also very helpful.
+-->
+
+1. View the `x` component
+2. Click on the `y` link
+3. Observe `z`
 
 ## Reproduction Percentage (if applicable)
 
@@ -29,11 +39,20 @@ about: Create a report to help us improve
 
 ## Meta
 
-- TDS version: vX.Y.Z
+<!--
+  Please note, priority of issues are determined
+-->
+
+- TDS component version: <!-- Example: @tds/core-expand-collapse@1.1.0 -->
 - Willing to develop solution: Yes/No
-- Has workaround: Yes/No
-- High impact: Yes/No
+- Has workaround: Yes/No <!-- please provide a description of your workaround if you have one -->
+- High impact: Yes/No <!-- Answer 'yes' if this is blocking you from releasing code -->
 
 ## Screenshots
+
+<!--
+  If applicable, please provide designs or screenshots of the intended end result, or issue.
+  Providing screenshots will increase our response time.
+-->
 
 - Include any relevant screenshots

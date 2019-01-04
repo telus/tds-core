@@ -15,6 +15,10 @@ about: Suggest an idea for tds-core
 
 ## Description
 
+<!--
+  Please explain the problem you are trying to solve, not the solution you expect to see.
+-->
+
 - Description of the problem
 
 ## Recommendation
@@ -23,13 +27,19 @@ about: Suggest an idea for tds-core
 
 ## Designs
 
+<!--
+  Designs are crucial for the development of new visual features.
+  Please provide them in order to speed up development.
+-->
+
 - Screenshots
 - Sketch file
+- Link to Invision
 
 ## Meta
 
-- TDS version: vX.Y.Z
+- TDS component: <!-- Example: @tds/core-expand-collapse -->
 - Willing to develop solution: Yes/No
-- Has workaround: Yes/No
-- High impact: Yes/No
+- Has workaround: Yes/No <!-- please provide a description of your workaround if you have one -->
+- High impact: Yes/No <!-- Answer 'yes' if this is blocking you from releasing code -->
 - Designer/Developer Pair: Your name, your design/dev pair's name
