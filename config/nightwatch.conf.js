@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 // Need to debug this? Set 'silent' to false under test_settings.default.
 const path = require('path')
-const config = require('../e2e/config')
 const chromedriver = require('chromedriver')
+const config = require('../e2e/config')
 
 const GLOBALS_PATH = path.resolve('e2e/globals.js')
 const REPORT_PATH = path.resolve('e2e/output/reports/')

@@ -16,7 +16,8 @@ const renderIcon = feedback => {
         a11yText="The value of this input field is valid."
       />
     )
-  } else if (feedback === 'error') {
+  }
+  if (feedback === 'error') {
     return (
       <StandaloneIcon
         symbol="exclamationPointCircle"

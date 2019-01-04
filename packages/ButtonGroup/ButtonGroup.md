@@ -15,7 +15,7 @@ Button Groups are sets of radio inputs styled to look like buttons.
 
 The `label` prop on the parent `ButtonGroup` component will add a label to the whole group. This value will be read by assistive technology when the group is focused.
 
-```
+```js
 initialState = {
   choice: '64gb',
 }
@@ -36,7 +36,7 @@ const onChange = (event) => {
 
 Use the `A11yContent` component to create invisible text that is read out loud by screen readers. It is accepted as a child of `ButtonGroup.Item`.
 
-```
+```js
 initialState = {
   choice: 'buy',
 }
