@@ -42,6 +42,7 @@
     "lint:deps": "npx updated",
     "lint:md": "echo $PATH && npx remark --quiet --frail .",
     "lint:audit": "npm audit",
+    "lint:version": "npm -v && node -v",
     "lint": "lerna clean --yes && npm-run-all -p -c -l lint:*",
     "precommit": "lint-staged && npm run test && npm run contributors:update",
     "prepare": "npm run gitbook:install",
