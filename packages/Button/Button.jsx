@@ -6,6 +6,7 @@ import { componentWithName, or } from '@tds/util-prop-types'
 import { warn } from '../../shared/utils/warn'
 import safeRest from '../../shared/utils/safeRest'
 import media from '../../shared/utils/media/media'
+import colors from '../../shared/utils/colors'
 
 const preventDisabling = ({ disabled, ...props }) => {
   if (disabled) {
@@ -15,7 +16,7 @@ const preventDisabling = ({ disabled, ...props }) => {
   return props
 }
 
-const BaseButton = styled.button`
+const StyledButton = styled.button`
   border-width: 0;
   border-radius: 4px;
 
@@ -49,19 +50,19 @@ const BaseButton = styled.button`
   `}
 `
 
-const ButtonPrimary = styled(BaseButton)`
-  background-color: #248700;
-  color: #FFFFFF;
+const StyledButtonPrimary = styled(StyledButton)`
+  background-color: ${colors.tokens.primary};
+  color: ${colors.white};
 `
 
-const ButtonSecondary = styled(BaseButton)`
-  background-color: #4b286d;
-  color: #FFFFFF;
+const StyledButtonSecondary = styled(StyledButton)`
+  background-color: ${colors.tokens.secondary};
+  color: ${colors.white};
 `
 
-const ButtonInverted = styled(BaseButton)`
-  background-color: #FFFFFF;
-  color: #2a2c2e;
+const StyledButtonInverted = styled(StyledButton)`
+  background-color: ${colors.white};
+  color: ${colors.typography.text};
 `
 
 /**
@@ -72,11 +73,11 @@ const Button = ({ variant, dangerouslyAddClassName, ...rest }) => {
 
   let ButtonComponent
   if (variant === 'secondary') {
-    ButtonComponent = ButtonSecondary
+    ButtonComponent = StyledButtonSecondary
   } else if (variant === 'inverted') {
-    ButtonComponent = ButtonInverted
+    ButtonComponent = StyledButtonInverted
   } else {
-    ButtonComponent = ButtonPrimary
+    ButtonComponent = StyledButtonPrimary
   }
   return <ButtonComponent {...safeRest(restNoDisabled)} className={dangerouslyAddClassName} />
 }
@@ -95,6 +96,7 @@ Button.propTypes = {
    */
   children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
 }
+
 Button.defaultProps = {
   type: 'button',
   variant: 'primary',
