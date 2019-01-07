@@ -48,6 +48,16 @@ const StyledButton = styled.button`
     width: auto;
     min-width: 180px;
   `}
+
+  background-color: ${colors.tokens.primary};
+  color: ${colors.white};
+
+  &:hover {
+    box-shadow: 0 0 0 1px;
+
+    background-color: ${colors.white};
+    color: ${colors.tokens.primary};
+  }
 `
 
 const StyledButtonPrimary = styled(StyledButton)`
