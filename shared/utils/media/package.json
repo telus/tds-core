@@ -1,0 +1,10 @@
+{
+  "name": "@tds/util-media",
+  "version": "1.0.0-dev",
+  "private": true,
+  "main": "",
+  "module": "",
+  "dependencies": {
+    "styled-media-query": "^2.1.1"
+  }
+}
