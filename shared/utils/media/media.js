@@ -31,6 +31,27 @@ export const spacing = {
   },
 }
 
+/*
+ * Creates styled-components string interpolations with breakpoints for box
+ * levels using the provided css
+ *
+ * ex:
+ * boxSpacing(5, (spacing) => `
+ *  padding-left: ${spacing};
+ *  padding-right: ${spacing};
+ * `)
+ *
+ * will produce:
+ * .CLASSNAME {
+ *    padding-left: 2rem;
+ *    padding-right: 2rem;
+ * }
+ * @media (min-width:576px) {
+ * .CLASSNAME {
+ *    padding-left: 3rem;
+ *    padding-right: 3rem;
+ * }
+*/
 export const boxSpacing = (level, f) => {
   const mobileStyle = css(...f(spacing.mobile[level]))
   if (spacing.mobile[level] === spacing.desktop[level]) {
