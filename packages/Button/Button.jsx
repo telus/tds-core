@@ -1,12 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { componentWithName, or } from '@tds/util-prop-types'
 
 import { warn } from '../../shared/utils/warn'
 import safeRest from '../../shared/utils/safeRest'
-import media from '../../shared/utils/media/media'
-import colors from '../../shared/utils/colors'
+
+import BaseButton from '../../shared/components/BaseButton/BaseButton'
 
 const preventDisabling = ({ disabled, ...props }) => {
   if (disabled) {
@@ -16,70 +15,17 @@ const preventDisabling = ({ disabled, ...props }) => {
   return props
 }
 
-const StyledButton = styled.button`
-  border-width: 0;
-  border-radius: 4px;
-
-  height: 3.25rem;
-  margin: 0;
-  padding: 0 2rem;
-
-  cursor: pointer;
-
-  background: none;
-  transition: background 0.2s;
-
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-
-  word-wrap: break-word;
-
-  font-size: 1rem;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 700;
-
-
-  ${media.greaterThan('sm')`
-    display: inline-flex;
-
-    width: auto;
-    min-width: 180px;
-  `}
-`
-
-const StyledButtonPrimary = styled(StyledButton)`
-  background-color: ${colors.tokens.primary};
-  color: ${colors.white};
-`
-
-const StyledButtonSecondary = styled(StyledButton)`
-  background-color: ${colors.tokens.secondary};
-  color: ${colors.white};
-`
-
-const StyledButtonInverted = styled(StyledButton)`
-  background-color: ${colors.white};
-  color: ${colors.typography.text};
-`
-
 /**
  * @version ./package.json
  */
-const Button = ({ variant, dangerouslyAddClassName, ...rest }) => {
+const Button = ({ type, variant, children, ...rest }) => {
   const restNoDisabled = preventDisabling(rest)
 
-  let ButtonComponent
-  if (variant === 'secondary') {
-    ButtonComponent = StyledButtonSecondary
-  } else if (variant === 'inverted') {
-    ButtonComponent = StyledButtonInverted
-  } else {
-    ButtonComponent = StyledButtonPrimary
-  }
-  return <ButtonComponent {...safeRest(restNoDisabled)} className={dangerouslyAddClassName} />
+  return (
+    <BaseButton {...safeRest(restNoDisabled)} element="button" variant={variant} type={type}>
+      {children}
+    </BaseButton>
+  )
 }
 
 Button.propTypes = {
@@ -96,11 +42,9 @@ Button.propTypes = {
    */
   children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
 }
-
 Button.defaultProps = {
   type: 'button',
   variant: 'primary',
 }
 
-/** @component */
 export default Button
