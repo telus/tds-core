@@ -1,11 +1,25 @@
+import styled from 'styled-components'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import joinClassNames from '../../shared/utils/joinClassNames'
 import SpinnerSvg from './SpinnerSvg/SpinnerSvg'
 
-import positionStyles from '../../shared/styles/Position.modules.scss'
-import styles from './Spinner.modules.scss'
+const StyledSpinnerContainer = styled.div`
+  position: relative;
+  ${props => props.inline && `display: inline-block;`}
+`
+
+const StyledSpinnerOverlay = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1400;
+`
+
+const StyledSpinnerOpaque = styled.div`
+  opacity: 0.1;
+`
 
 /**
  * A waiting indicator.
@@ -19,20 +33,17 @@ const Spinner = ({ spinning, tip, a11yLabel, inline, children, ...rest }) => {
 
   if (children) {
     return (
-      <div
-        className={joinClassNames(positionStyles.relative, inline && styles.inline)}
-        data-testid="container"
-      >
+      <StyledSpinnerContainer data-testid="container" inline={inline}>
         {<SpinnerSvg {...rest} tip={tip} a11yLabel={a11yLabel} overlay={true} />}
 
-        <div className={styles.overlay} data-testid="overlay" />
+        <StyledSpinnerOverlay data-testid="overlay" />
 
-        <div className={styles.opaque}>{children}</div>
-      </div>
+        <StyledSpinnerOpaque>{children}</StyledSpinnerOpaque>
+      </StyledSpinnerContainer>
     )
   }
 
-  return <SpinnerSvg {...rest} tip={tip} a11yLabel={a11yLabel} />
+  return <SpinnerSvg {...rest} tip={tip} a11yLabel={a11yLabel} overlay={false} />
 }
 
 Spinner.propTypes = {
