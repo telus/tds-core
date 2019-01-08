@@ -1,40 +1,60 @@
 import React from 'react'
+import styled from 'styled-components'
+
 import PropTypes from 'prop-types'
 import { componentWithName } from '@tds/util-prop-types'
 
 import InputFeedback from '@tds/core-input-feedback'
 
-import joinClassNames from '../../shared/utils/joinClassNames'
-
 import FormField from '../../shared/components/FormField/FormField'
 import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
-import addRightPadding from '../../shared/components/FormField/addRightPadding'
-
-import positionStyles from '../../shared/styles/Position.modules.scss'
-import styles from './Input.modules.scss'
 
 /**
  * @version ./package.json
  */
-const Input = props => (
-  <FormField {...props}>
-    {({ className, ...inputProps }, showFeedbackIcon, feedback) => (
-      <div className={positionStyles.relative}>
-        <input
-          {...inputProps}
-          className={joinClassNames(className, styles.hideNumberSpinner, styles.input)}
-          style={addRightPadding(showFeedbackIcon ? 1 : 0)}
-        />
+const Input = props => {
+  const StyledInputContainer = styled.div`
+    position: relative;
+  `
+  const betweenSpacing = 1 // rem
+  const iconWidth = 16 // px
 
-        {!inputProps.disabled && (
-          <div className={styles.iconsPosition}>
-            <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
-          </div>
-        )}
-      </div>
-    )}
-  </FormField>
-)
+  const StyledInput = styled.input`
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    min-height: 3.25rem;
+    max-height: 3.25rem;
+    padding-right: ${props =>
+      `calc(${iconWidth * props.showIcon}px + ${betweenSpacing *
+        (props.showIcon + 1)}rem)`} !important;
+  `
+
+  const StyledIcon = styled.div`
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+  `
+
+  return (
+    <FormField {...props}>
+      {({ className, ...inputProps }, showFeedbackIcon, feedback) => (
+        <StyledInputContainer>
+          <StyledInput {...inputProps} showIcon={showFeedbackIcon ? 1 : 0} className={className} />
+
+          {!inputProps.disabled && (
+            <StyledIcon>
+              <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
+            </StyledIcon>
+          )}
+        </StyledInputContainer>
+      )}
+    </FormField>
+  )
+}
 
 Input.propTypes = {
   /**
