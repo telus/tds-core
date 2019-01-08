@@ -6,10 +6,7 @@ import PropTypes from 'prop-types'
 import { breakpoints } from '@tds/core-responsive/breakpoints.js'
 
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
 import capitalize from '../../shared/utils/capitalize'
-
-import styles from './Box.modules.scss'
 
 const spacingBase = 1 // 16px
 

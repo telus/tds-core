@@ -1,9 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Box renders 1`] = `
-<div
-  className="betweenBottomMargin-3 stack"
+<ForwardRef(render)
+  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Box"
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+  css={
+    Object {
+      "> *:not(:last-child)": Object {
+        "marginBottom": "1rem",
+        "marginRight": "0rem",
+      },
+      "@media only screen and (min-width: 768px)": Object {
+        "> *:not(:last-child)": Object {
+          "marginBottom": "1rem",
+          "marginRight": "0rem",
+        },
+        "marginBottom": "0rem",
+        "paddingBottom": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+      },
+      "display": "flex",
+      "flexDirection": "column",
+      "marginBottom": "0rem",
+      "paddingBottom": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+    }
+  }
 >
   Some content
-</div>
+</ForwardRef(render)>
 `;
