@@ -17,7 +17,6 @@ const { spawnSync } = require('child_process')
 const readline = require('readline')
 
 const getPackageNames = require('./utils/getPackageNames')
-const arrayToGlob = require('./utils/arrayToGlob')
 const { lernaOptions } = require('./utils/parseArgs')
 
 const read = readline.createInterface({
@@ -32,19 +31,9 @@ getPackageNames(packageNames => {
     'Are these the exact packages you wish to publish? (You will be prompted after this for versioning confirmation) (y/n) ',
     answer => {
       if (answer === 'Y' || answer === 'y') {
-        spawnSync(
-          'npx',
-          [
-            'lerna',
-            'publish',
-            '--conventional-commits',
-            '--scope',
-            arrayToGlob(packageNames),
-          ].concat(lernaOptions),
-          {
-            stdio: 'inherit',
-          }
-        )
+        spawnSync('npx', ['lerna', 'publish', '--conventional-commits'].concat(lernaOptions), {
+          stdio: 'inherit',
+        })
       } else {
         console.log('Publishing aborted!')
       }
