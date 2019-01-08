@@ -1,21 +1,34 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
 import PropTypes from 'prop-types'
 
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
+import { typography } from '../../shared/styles/Typography/typography'
+import { breakpoints } from '@tds/core-responsive/breakpoints'
+import { colours } from '@tds/core-colours/colours'
 
 import HeadingSup from './HeadingSup/HeadingSup'
 
-import styles from './Heading.modules.scss'
 
 const getClassNames = (invert, level) => {
+  const style = {
+    default: {
+      color: colours.colorText
+    },
+    secondary: {
+      color: colours.colorSecondary
+    },
+    inverted: {
+      color: colours.colorWhite
+    },
+  }
   if (invert) {
-    return styles.inverted
+    return style.inverted
   }
   if (level === 'h1' || level === 'h2') {
-    return styles.secondary
+    return style.secondary
   }
-  return styles.default
+  return style.default
 }
 
 /**
@@ -24,11 +37,84 @@ const getClassNames = (invert, level) => {
  * @version ./package.json
  */
 const Heading = ({ level, tag = level, invert, children, ...rest }) => {
-  return React.createElement(
+  const smallHeading = {
+    ...typography.wordBreak,
+    padding: 0,
+    margin: 0,
+    ...typography.helveticaNeueMedium65,
+    letterSpacing: '-0.6px'
+  }
+
+  const style = {
+    h1: {
+      ...typography.wordBreak,
+      padding: 0,
+      margin: 0,
+      ...typography.helveticaNeueLight45,
+      fontSize: '1.75rem',
+      lineHeight: '1.29', // 36px
+      letterSpacing: '-1.6px',
+      '.sup': {
+        fontSize: '1.25rem',
+        top: '-1em'
+      },
+      [`@media only screen and (min-width: ${breakpoints.md}px)`]: {
+        ...typography.helveticaNeueThin35,
+        fontSize: '2.75rem',
+        lineHeight: '1.18', // 52px
+        letterSpacing: 0,
+        '.sup': {
+          fontSize: '1.25rem',
+          top: '-1.3em',
+        }
+      }
+    },
+    h2: {
+      ...typography.wordBreak,
+      padding: 0,
+      margin: 0,
+      ...typography.helveticaNeueLight45,
+      fontSize: '1.5rem',
+      lineHeight: 1.33, // 30px
+      letterSpacing: '-0.7px',
+      '.sup': {
+        fontSize: '1rem',
+        top: '-0.7em',
+      },
+      [`@media only screen and (min-width: ${breakpoints.md}px)`]: {
+        fontSize: '1.75rem',
+        lineHeight: '1.29', // 36px
+        letterSpacing: '-0.8px',
+        '.sup': {
+          fontSize: '1rem',
+          top: '-0.7em',
+        }
+      }
+    },
+    h3: {
+      ...smallHeading,
+      fontSize: '1.25rem',
+      lineHeight: 1.4,
+      '.sup': {
+        fontSize: '0.875rem',
+        top: '-0.5rem'
+      }
+    },
+    h4: {
+      ...smallHeading,
+      fontSize: '1rem',
+      lineHeight: 1.25,
+      '.sup': {
+        fontSize: '0.875rem',
+        top: '-0.5em'
+      }
+    }
+  }
+  return jsx(
     tag,
     {
       ...safeRest(rest),
-      className: joinClassNames(styles[level], getClassNames(invert, level)),
+      css: [style[level], getClassNames(invert, level)]
     },
     children
   )
@@ -59,4 +145,5 @@ Heading.defaultProps = {
 
 Heading.Sup = HeadingSup
 
+/** @component */
 export default Heading
