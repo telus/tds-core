@@ -22,7 +22,8 @@ const applyCustomScope = () => {
         'openshift',
         'other',
         'scripts',
-        'shared'
+        'shared',
+        'packages'
       )
       return config
     })

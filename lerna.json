@@ -4,7 +4,8 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "ignoreChanges": ["**/*.md", "**/*.spec.jsx", "**/*.snap", "@tds/core-selector-counter"]
+      "ignoreChanges": ["**/*.md", "**/*.spec.jsx", "**/*.snap", "@tds/core-selector-counter"],
+      "message": "chore(packages): publish"
     }
   }
 }
