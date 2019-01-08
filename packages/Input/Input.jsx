@@ -1,40 +1,60 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
 import PropTypes from 'prop-types'
 import { componentWithName } from '@tds/util-prop-types'
 
 import InputFeedback from '@tds/core-input-feedback'
 
-import joinClassNames from '../../shared/utils/joinClassNames'
-
 import FormField from '../../shared/components/FormField/FormField'
 import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
 import addRightPadding from '../../shared/components/FormField/addRightPadding'
 
-import positionStyles from '../../shared/styles/Position.modules.scss'
-import styles from './Input.modules.scss'
+import { position } from '../../shared/styles/Position.js'
 
 /**
  * @version ./package.json
  */
-const Input = props => (
-  <FormField {...props}>
-    {({ className, ...inputProps }, showFeedbackIcon, feedback) => (
-      <div className={positionStyles.relative}>
-        <input
-          {...inputProps}
-          className={joinClassNames(className, styles.hideNumberSpinner, styles.input)}
-          style={addRightPadding(showFeedbackIcon ? 1 : 0)}
-        />
+const Input = props => {
+  const style = {
+    container: {
+      ...position.relative
+    },
+    iconsPosition: {
+      ...position.absolute,
+      ...position.centerVertically,
+      right: '1rem'
+    },
+    input: {
+      '&::-webkit-inner-spin-button, &::-webkit-outer-spin-button': {
+        '-webkit-appearance': 'none',
+        margin: 0
+      },
+      minHeight: '3.25rem',
+      maxHeight: '3.25rem'
+    }
+  }
 
-        {!inputProps.disabled && (
-          <div className={styles.iconsPosition}>
-            <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
-          </div>
-        )}
-      </div>
-    )}
-  </FormField>
-)
+  return (
+    <FormField {...props}>
+      {({ className, ...inputProps }, showFeedbackIcon, feedback) => (
+        <div css={style.container}>
+          <input
+            {...inputProps}
+            css={style.input}
+            className={className}
+            style={addRightPadding(showFeedbackIcon ? 1 : 0)}
+          />
+
+          {!inputProps.disabled && (
+            <div css={style.iconsPosition}>
+              <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
+            </div>
+          )}
+        </div>
+      )}
+    </FormField>
+  )
+}
 
 Input.propTypes = {
   /**
@@ -114,4 +134,5 @@ Input.defaultProps = {
 // TODO: This will no longer be necessary once InputFeedback is exported on its own. Removing this will be a breaking change.
 Input.Helper = InputFeedback
 
+/** @component */
 export default Input
