@@ -1,0 +1,14 @@
+export const position = {
+  relative: {
+    position: 'relative',
+  },
+
+  absolute: {
+    position: 'absolute',
+  },
+
+  centerVertically: {
+    top: '50%',
+    transform: ' translateY(-50%)',
+  },
+}
