@@ -12,8 +12,6 @@ import { typography } from '../../styles/Typography/typography'
 
 import safeRest from '../../utils/safeRest'
 
-import styles from './BaseButton.modules.scss'
-
 /**
  * A common base for Button and ButtonLink.
  */
