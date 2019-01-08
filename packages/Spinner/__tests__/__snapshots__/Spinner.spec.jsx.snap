@@ -2,12 +2,12 @@
 
 exports[`Spinner renders 1`] = `
 <div
-  class="container"
+  class="css-gerq0w"
   data-testid="spinner"
 >
   <svg
     aria-labelledby="spinner-title-1"
-    class="svg"
+    class="css-1p3riid"
     data-testid="svg"
     height="100"
     role="img"
@@ -20,7 +20,7 @@ exports[`Spinner renders 1`] = `
       A spinner is active. Please wait while the page completes a task.
     </title>
     <circle
-      class="circle"
+      class="css-g20xlb"
       cx="50"
       cy="50"
       fill="none"
@@ -36,16 +36,16 @@ exports[`Spinner renders 1`] = `
 
 exports[`Spinner renders with children 1`] = `
 <div
-  class="relative"
+  class="css-11inowr-Spinner"
   data-testid="container"
 >
   <div
-    class="container centered"
+    class="css-1sr7212"
     data-testid="spinner"
   >
     <svg
       aria-labelledby="spinner-title-2"
-      class="svg"
+      class="css-1p3riid"
       data-testid="svg"
       height="100"
       role="img"
@@ -58,7 +58,7 @@ exports[`Spinner renders with children 1`] = `
         A spinner is active. Please wait while the page completes a task.
       </title>
       <circle
-        class="circle"
+        class="css-g20xlb"
         cx="50"
         cy="50"
         fill="none"
@@ -71,11 +71,11 @@ exports[`Spinner renders with children 1`] = `
     </svg>
   </div>
   <div
-    class="overlay"
+    class="css-1ii5rw4-Spinner"
     data-testid="overlay"
   />
   <div
-    class="opaque"
+    class="css-1j45yx8-Spinner"
   >
     <span>
       Overlay me with the spinner

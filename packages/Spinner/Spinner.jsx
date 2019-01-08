@@ -1,11 +1,14 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
 import React from 'react'
 import PropTypes from 'prop-types'
 
 import joinClassNames from '../../shared/utils/joinClassNames'
+import { position } from '../../shared/styles/Position.js'
+
 import SpinnerSvg from './SpinnerSvg/SpinnerSvg'
 
 import positionStyles from '../../shared/styles/Position.modules.scss'
-import styles from './Spinner.modules.scss'
 
 /**
  * A waiting indicator.
@@ -13,21 +16,34 @@ import styles from './Spinner.modules.scss'
  * @version ./package.json
  */
 const Spinner = ({ spinning, tip, a11yLabel, inline, children, ...rest }) => {
+  const style = {
+    container: {
+      ...position.relative,
+      display: inline ? 'inline-block' : 'block',
+    },
+    overlay: {
+      position: 'absolute',
+      width: '100%',
+      height: '100%',
+      zIndex: 1400,
+    },
+    opaque: {
+      opacity: 0.1,
+    },
+  }
+
   if (!spinning) {
     return children || null
   }
 
   if (children) {
     return (
-      <div
-        className={joinClassNames(positionStyles.relative, inline && styles.inline)}
-        data-testid="container"
-      >
+      <div css={style.container} data-testid="container">
         {<SpinnerSvg {...rest} tip={tip} a11yLabel={a11yLabel} overlay={true} />}
 
-        <div className={styles.overlay} data-testid="overlay" />
+        <div css={style.overlay} data-testid="overlay" />
 
-        <div className={styles.opaque}>{children}</div>
+        <div css={style.opaque}>{children}</div>
       </div>
     )
   }
@@ -70,4 +86,5 @@ Spinner.defaultProps = {
   children: undefined,
 }
 
+/** @component */
 export default Spinner
