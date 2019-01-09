@@ -1,22 +1,102 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
+import { typography } from '../../shared/styles/Typography/typography'
+import { breakpoints } from '@tds/core-responsive/breakpoints.js'
+import colors from '../../shared/utils/colors'
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
 
 import HeadingSup from './HeadingSup/HeadingSup'
 
-import styles from './Heading.modules.scss'
+const h1Styles = {
+  ...typography.wordBreak,
+  padding: 0,
+  margin: 0,
 
-const getClassNames = (invert, level) => {
-  if (invert) {
-    return styles.inverted
-  }
-  if (level === 'h1' || level === 'h2') {
-    return styles.secondary
-  }
-  return styles.default
+  ...typography.helveticaNeueLight45,
+  color: colors.tokens.secondary,
+
+  fontSize: '1.75rem',
+  lineHeight: 1.29,
+  letterSpacing: -1.6,
+  sup: {
+    fontSize: '1.25rem',
+    top: '-1em',
+  },
+
+  [`@media (min-width: ${breakpoints.md}px)`]: {
+    ...typography.helveticaNeueThin35,
+    fontSize: '2.75rem',
+    lineHeight: 1.18,
+    letterSpacing: 0,
+    sup: {
+      fontSize: '1.25rem',
+      top: '-1.3em',
+    },
+  },
 }
+
+const h2Styles = {
+  ...typography.wordBreak,
+  padding: 0,
+  margin: 0,
+
+  ...typography.helveticaNeueLight45,
+  color: colors.tokens.secondary,
+
+  fontSize: '1.5rem',
+  lineHeight: 1.33,
+  letterSpacing: -0.7,
+  sup: {
+    fontSize: '1rem',
+    top: '-0.8em',
+  },
+
+  [`@media (min-width: ${breakpoints.md}px)`]: {
+    ...typography.helveticaNeueThin35,
+    fontSize: '1.75rem',
+    lineHeight: 1.29,
+    letterSpacing: -0.8,
+    sup: {
+      fontSize: '1rem',
+      top: '-0.7em',
+    },
+  },
+}
+
+const smallHeading = {
+  ...typography.wordBreak,
+  ...typography.helveticaNeueMedium65,
+  padding: 0,
+  margin: 0,
+  letterSpacing: -0.6,
+  color: colors.typography.text,
+  sup: {
+    fontSize: '0.875rem',
+    top: '-0.5em',
+  },
+}
+
+const h3Styles = {
+  ...smallHeading,
+  fontSize: '1.25rem',
+  lineHeight: 1.4,
+}
+
+const h4Styles = {
+  ...smallHeading,
+  fontSize: '1rem',
+  lineHeight: 1.25,
+}
+
+const StyledHeadingTag = styled.span(props => ({
+  ...(props.level === 'h1' && h1Styles),
+  ...(props.level === 'h2' && h2Styles),
+  ...(props.level === 'h3' && h3Styles),
+  ...(props.level === 'h4' && h4Styles),
+  ...(props.invert && { color: colors.white }),
+}))
 
 /**
  * Page headings. Renders an HTML `<h1-h4>` element.
@@ -24,13 +104,10 @@ const getClassNames = (invert, level) => {
  * @version ./package.json
  */
 const Heading = ({ level, tag = level, invert, children, ...rest }) => {
-  return React.createElement(
-    tag,
-    {
-      ...safeRest(rest),
-      className: joinClassNames(styles[level], getClassNames(invert, level)),
-    },
-    children
+  return (
+    <StyledHeadingTag {...safeRest(rest)} as={tag} level={level} invert={invert}>
+      {children}
+    </StyledHeadingTag>
   )
 }
 

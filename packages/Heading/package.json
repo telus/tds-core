@@ -25,7 +25,8 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "styled-components": "^4.1.3"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
