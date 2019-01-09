@@ -49,7 +49,7 @@ ButtonLink.propTypes = {
    */
   href: PropTypes.string,
   /**
-   * The label. It can include the `A11yContent` component.
+   * The label. It can include the `A11yContent` component or strings.
    */
   children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
 }
