@@ -75,7 +75,7 @@ ButtonGroupItem.propTypes = {
    */
   onBlur: PropTypes.func,
   /**
-   * The button's label. (A11yContent supported)
+   * The button's label. It can include the `A11yContent` component or strings.
    */
 
   children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
