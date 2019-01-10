@@ -10,8 +10,6 @@ import joinClassNames from '../../../shared/utils/joinClassNames'
 import safeRest from '../../../shared/utils/safeRest'
 import uniqueId from './uniqueId'
 
-import styles from './SpinnerSvg.modules.scss'
-
 class SpinnerSvg extends React.Component {
   componentWillMount() {
     this.setState({

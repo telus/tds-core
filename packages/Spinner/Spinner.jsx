@@ -8,8 +8,6 @@ import { position } from '../../shared/styles/Position.js'
 
 import SpinnerSvg from './SpinnerSvg/SpinnerSvg'
 
-import positionStyles from '../../shared/styles/Position.modules.scss'
-
 /**
  * A waiting indicator.
  *

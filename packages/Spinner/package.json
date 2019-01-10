@@ -25,6 +25,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.6",
     "@tds/core-text": "^1.0.4",
     "prop-types": "^15.5.10"
   },
