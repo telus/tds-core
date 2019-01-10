@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { componentWithName, or } from '@tds/util-prop-types'
 
+import media from '@tds/core-responsive/responsive'
+
 import { warn } from '../../../shared/utils/warn'
 import safeRest from '../../../shared/utils/safeRest'
-import media from '../../../shared/utils/media/media'
 import colors from '../../../shared/utils/colors'
 
 const preventDisabling = ({ disabled, ...props }) => {
@@ -42,7 +43,7 @@ const StyledButton = styled.button`
   font-weight: 700;
 
 
-  ${media.greaterThan('sm')`
+  ${media.from('sm')`
     display: inline-flex;
 
     width: auto;
