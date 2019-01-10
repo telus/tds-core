@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import { boxSpacing } from '../../shared/utils/media/media'
+import { boxSpacing } from '@tds/core-responsive/responsive'
 import safeRest from '../../shared/utils/safeRest'
 
 const flexDirectionStyles = ({ inline }) => {
