@@ -1,11 +1,11 @@
 {
   "name": "@tds/shared-base-button",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "main": "",
   "module": "",
   "dependencies": {
-    "@tds/util-prop-types": "^1.1.0"
+    "@tds/util-prop-types": "^1.2.0"
   },
   "devDependencies": {
     "@tds/core-responsive": "^1.1.0",

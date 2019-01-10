@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-form-field",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "private": true,
   "main": "",
   "module": "",
@@ -9,7 +9,7 @@
     "@tds/core-input-feedback": "^1.0.2",
     "@tds/core-paragraph": "^1.0.4",
     "@tds/core-text": "^1.0.4",
-    "@tds/util-prop-types": "^1.1.0"
+    "@tds/util-prop-types": "^1.2.0"
   },
   "devDependencies": {
     "@tds/shared-typography": "^1.1.0",
