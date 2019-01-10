@@ -9,6 +9,10 @@
   },
   "devDependencies": {
     "@tds/core-responsive": "^1.1.0",
-    "@tds/shared-typography": "^1.1.0"
+    "@tds/shared-typography": "^1.1.0",
+    "airbnb-prop-types": "2.8.1"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.6"
   }
 }
