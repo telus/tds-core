@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import { typography } from '../../shared/styles/Typography/typography'
-import { breakpoints } from '@tds/core-responsive/breakpoints.js'
+import { breakpoints } from '@tds/core-responsive/responsive'
 import colors from '../../shared/utils/colors'
 import safeRest from '../../shared/utils/safeRest'
 
