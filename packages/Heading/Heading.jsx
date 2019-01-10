@@ -54,7 +54,7 @@ const Heading = ({ level, tag = level, invert, children, ...rest }) => {
       fontSize: '1.75rem',
       lineHeight: '1.29', // 36px
       letterSpacing: '-1.6px',
-      '.sup': {
+      sup: {
         fontSize: '1.25rem',
         top: '-1em'
       },
@@ -63,7 +63,7 @@ const Heading = ({ level, tag = level, invert, children, ...rest }) => {
         fontSize: '2.75rem',
         lineHeight: '1.18', // 52px
         letterSpacing: 0,
-        '.sup': {
+        sup: {
           fontSize: '1.25rem',
           top: '-1.3em',
         }
@@ -77,7 +77,7 @@ const Heading = ({ level, tag = level, invert, children, ...rest }) => {
       fontSize: '1.5rem',
       lineHeight: 1.33, // 30px
       letterSpacing: '-0.7px',
-      '.sup': {
+      sup: {
         fontSize: '1rem',
         top: '-0.7em',
       },
@@ -85,7 +85,7 @@ const Heading = ({ level, tag = level, invert, children, ...rest }) => {
         fontSize: '1.75rem',
         lineHeight: '1.29', // 36px
         letterSpacing: '-0.8px',
-        '.sup': {
+        sup: {
           fontSize: '1rem',
           top: '-0.7em',
         }
@@ -95,7 +95,7 @@ const Heading = ({ level, tag = level, invert, children, ...rest }) => {
       ...smallHeading,
       fontSize: '1.25rem',
       lineHeight: 1.4,
-      '.sup': {
+      sup: {
         fontSize: '0.875rem',
         top: '-0.5rem'
       }
@@ -104,7 +104,7 @@ const Heading = ({ level, tag = level, invert, children, ...rest }) => {
       ...smallHeading,
       fontSize: '1rem',
       lineHeight: 1.25,
-      '.sup': {
+      sup: {
         fontSize: '0.875rem',
         top: '-0.5em'
       }

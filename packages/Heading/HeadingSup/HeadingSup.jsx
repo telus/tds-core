@@ -1,8 +1,9 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
 import React from 'react'
 import PropTypes from 'prop-types'
 import safeRest from '../../../shared/utils/safeRest'
-
-import styles from '../Heading.modules.scss'
+import { typography } from '../../../shared/styles/Typography/typography'
 
 /**
  * Superscript text for `Heading` an as HTML `<sup>` element.
@@ -10,7 +11,7 @@ import styles from '../Heading.modules.scss'
  * _This component can only be accessed as a name-spaced component: `Heading.Sup`._
  */
 const HeadingSup = ({ children, ...rest }) => (
-  <sup {...safeRest(rest)} className={styles.sup}>
+  <sup css={{...typography.baseSupSubScripts}} {...safeRest(rest)}>
     {children}
   </sup>
 )
@@ -24,4 +25,5 @@ HeadingSup.propTypes = {
 
 HeadingSup.displayName = 'Heading.Sup'
 
+/** @component */
 export default HeadingSup
