@@ -25,7 +25,7 @@ const h1Styles = {
     top: '-1em',
   },
 
-  [`@media (min-width: ${breakpoints.md}px)`]: {
+  [`@media (min-width: ${breakpoints.md})`]: {
     ...typography.helveticaNeueThin35,
     fontSize: '2.75rem',
     lineHeight: 1.18,
@@ -53,8 +53,7 @@ const h2Styles = {
     top: '-0.8em',
   },
 
-  [`@media (min-width: ${breakpoints.md}px)`]: {
-    ...typography.helveticaNeueThin35,
+  [`@media (min-width: ${breakpoints.md})`]: {
     fontSize: '1.75rem',
     lineHeight: 1.29,
     letterSpacing: -0.8,
