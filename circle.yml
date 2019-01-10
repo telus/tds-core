@@ -2,8 +2,6 @@ version: 2.1
 
 executors:
   builder-node8:
-    working_directory: ~/src
-
     docker:
       - image: node:8-alpine
   builder:
