@@ -16311,11 +16311,6 @@ styled-components@^4.1.3:
     stylis-rule-sheet "^0.0.10"
     supports-color "^5.5.0"
 
-styled-media-query@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/styled-media-query/-/styled-media-query-2.1.1.tgz#8b69b752e7da1f8619e5408fd2f9dd988aa00bf0"
-  integrity sha512-MywstcxLb/bPz2G3Tu9MxXVmJeeLbsVKlodL9xYglwIHwf0wEMnPjVWOBEzNCXAWDLcgTyI3YBAs2qW9rDjnTA==
-
 stylelint-config-prettier@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-prettier/-/stylelint-config-prettier-4.0.0.tgz#8c712977be13bd25191ab8b986b5c07a3342a5dc"
