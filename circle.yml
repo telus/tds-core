@@ -1,6 +1,11 @@
 version: 2.1
 
 executors:
+  builder-node8:
+    working_directory: ~/src
+
+    docker:
+      - image: node:8-alpine
   builder:
     docker:
       - image: telus/build-essential
@@ -8,7 +13,7 @@ executors:
     working_directory: ~/src
 
     docker:
-      - image: node:8-alpine
+      - image: circleci/node:8-browsers
         environment:
           NPM_CONFIG_PREFIX: /home/node/.npm-global
           PATH: $PATH:$NPM_CONFIG_PREFIX/bin
@@ -43,7 +48,7 @@ commands:
 
 jobs:
   build:
-    executor: app
+    executor: builder-node8
     steps:
       - checkout
       - install
