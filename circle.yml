@@ -8,7 +8,7 @@ executors:
     working_directory: ~/src
 
     docker:
-      - image: circleci/node:8-browsers
+      - image: node:8-alpine
         environment:
           NPM_CONFIG_PREFIX: /home/node/.npm-global
           PATH: $PATH:$NPM_CONFIG_PREFIX/bin
@@ -43,7 +43,7 @@ commands:
 
 jobs:
   build:
-    executor: builder
+    executor: app
     steps:
       - checkout
       - install
