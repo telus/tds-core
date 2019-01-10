@@ -4,4 +4,5 @@ import { dependencies } from './package.json'
 export default configure({
   input: './Button.jsx',
   dependencies,
+  css: false
 })
