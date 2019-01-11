@@ -1,6 +1,6 @@
 {
   "title": "TELUS Design System",
-  "plugins": ["otherlink", "collapsible-menu", "insert-logo-link", "hilight"],
+  "plugins": ["otherlink", "collapsible-menu", "insert-logo-link", "highlight"],
   "pluginsConfig": {
     "insert-logo-link": {
       "src": "/Logo.svg",
