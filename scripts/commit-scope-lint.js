@@ -21,7 +21,7 @@ const gitDiff = spawnSync('git', ['diff', '--name-only', '--staged', 'HEAD'], {
 
 console.log('\nValidating commit scope...')
 
-gitDiff.forEach(element => {
+gitDiff.map(element => element.replace('-', '')).forEach(element => {
   if (
     (rootScopes.indexOf(commitScope) === -1 &&
       element.search(new RegExp(`^(.*(/+)|(/?))${commitScope}/`, 'i')) === -1) ||
