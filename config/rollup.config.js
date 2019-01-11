@@ -23,8 +23,8 @@ export default opts => {
   return {
     input: options.input,
     output: [
-      { format: 'cjs', file: './dist/index.cjs.js', sourcemap: true },
-      { format: 'es', file: './dist/index.es.js', sourcemap: true },
+      { format: 'cjs', file: './dist/index.cjs.js', sourcemap: false },
+      { format: 'es', file: './dist/index.es.js', sourcemap: false },
     ],
 
     external: ['react', 'react-dom', 'prop-types', 'react-helmet'].concat(tdsExternals),
@@ -42,7 +42,7 @@ export default opts => {
       options.css &&
         postcss({
           extract: './dist/index.css',
-          sourceMap: true,
+          sourceMap: false,
           plugins: [autoprefixer()],
           modules: {
             Loader: CssModulesSassLoader,
