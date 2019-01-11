@@ -1,3 +1,13 @@
+#### 1.0.26 (2019-01-11)
+
+##### Bug Fixes
+
+* **core-expand-collapse:**  fixing expand collapse defect with Checkbox ([b2e2f17c](https://github.com/telusdigital/tds/commit/b2e2f17c2eb881e6291a6eeccde06574146c38b4))
+
+##### Tests
+
+* **core-expand-collapse:**  adjust panel toggle test ([11b748de](https://github.com/telusdigital/tds/commit/11b748dee84ad544283cbc96e6fc8cae6509ebcb))
+
 #### 1.0.25 (2018-12-19)
 
 ##### Bug Fixes
