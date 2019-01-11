@@ -10,7 +10,7 @@ const rootScopes = ['deps', 'other'] // Scopes where modified files are typicall
 const commitMessage = fs.readFileSync(process.argv[3], 'utf8')
 const commitScope = commitMessage
   .substr(commitMessage.indexOf('('), commitMessage.indexOf(':') - commitMessage.indexOf('('))
-  .replace(/(core)|(community)|(-)|(\()|(\))/g, '')
+  .replace(/(core)|(community)|(shared)|(util)|(-)|(\()|(\))/g, '')
 
 const gitDiff = spawnSync('git', ['diff', '--name-only', '--staged', 'HEAD'], {
   stdio: 'pipe',
