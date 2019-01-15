@@ -26,7 +26,6 @@ The following group are the active maintainers of this project, and have merge r
 | Enrico Sacchetti    | Developer     | @enrico         | @theetrain     |
 | Marco Donnici       | Developer     | @marcod         | @marcod1419    |
 | Jordan Raffoul      | Developer     | @Jordan Raffoul | @jraff         |
-| Lucy List           | Design        | @lucylist       | @lucylist      |
 | Christina Lo        | Design        | @Christina L.   | @Christina-Lo  |
 
 ## Inactive members
@@ -35,7 +34,6 @@ The following group are the active maintainers of this project, and have merge r
 | --------------- | ------------ | ---------------- |
 | Laura Cabrera   | Developer    | @lzcabrera       |
 | Alexandra Fedyk | Scrum Master | @alexandramfedyk |
-| Donna Vitan     | Design       | @donnavitan      |
 
 ## Contributors
 
