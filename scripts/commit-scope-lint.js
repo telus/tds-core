@@ -6,11 +6,18 @@ const { spawnSync } = require('child_process')
 const fs = require('fs')
 
 const rootScopes = ['deps', 'other'] // Scopes where modified files are typically in the repo's root.
+const dotScopes = { github: '.github' } // Scopes that map to dotfolders
 
-const commitMessage = fs.readFileSync(process.argv[3], 'utf8')
-const commitScope = commitMessage
-  .substr(commitMessage.indexOf('('), commitMessage.indexOf(':') - commitMessage.indexOf('('))
-  .replace(/(core)|(community)|(shared)|(util)|(-)|(\()|(\))/g, '')
+const getCommitScope = () => {
+  const commitMessage = fs.readFileSync(process.argv[3], 'utf8')
+  const scope = commitMessage
+    .substr(commitMessage.indexOf('('), commitMessage.indexOf(':') - commitMessage.indexOf('('))
+    .replace(/(core)|(community)|(shared)|(util)|(-)|(\()|(\))/g, '')
+
+  return dotScopes[scope] || scope
+}
+
+const commitScope = getCommitScope()
 
 const gitDiff = spawnSync('git', ['diff', '--name-only', '--staged', 'HEAD'], {
   stdio: 'pipe',
