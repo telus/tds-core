@@ -171,7 +171,7 @@ def notifyBuild(Map attrs) {
       color: attrs.color,
       message: "${env.JOB_NAME} [${attrs.buildVersion}]\n${attrs.message}",
       teamDomain: 'telusdigital',
-      channel: 'tds-updates',
+      channel: 'tds-bots',
       token: env.SLACK_TOKEN
     )
   }
