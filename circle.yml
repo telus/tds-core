@@ -7,6 +7,9 @@ executors:
   builder:
     docker:
       - image: telus/build-essential
+  browsers:
+    docker:
+      - image: circleci/node:8-browsers
   app:
     working_directory: ~/src
 
@@ -66,7 +69,7 @@ jobs:
       - run: yarn run test
 
   e2e:
-    executor: app
+    executor: browsers
     steps:
       - attach
       - run:
