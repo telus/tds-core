@@ -43,13 +43,13 @@ jobs:
     executor: builder
     steps:
       - attach
-      - run: npm run lint
+      - run: yarn lint
 
   unit:
     executor: builder
     steps:
       - attach
-      - run: npm run test
+      - run: yarn test
 
   e2e:
     executor: browsers
@@ -57,9 +57,9 @@ jobs:
       - attach
       - run:
           name: Styleguidist Server
-          command: npm run dev:e2e
+          command: yarn dev:e2e
           background: true
-      - run: npm run test:e2e -- --all
+      - run: yarn test:e2e -- --all
 
   release:
     executor: builder
