@@ -36,7 +36,7 @@ jobs:
     steps:
       - checkout
       - install
-      - run: yarn bootstrap
+      - run: npm run ci:build
       - persist
 
   lint:
@@ -58,8 +58,7 @@ jobs:
       - run:
           name: Styleguidist Server
           command: yarn dev:e2e
-          background: true
-      - run: yarn test:e2e -- --all
+      - run: yarn test:e2e
 
   release:
     executor: builder
