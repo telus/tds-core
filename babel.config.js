@@ -9,6 +9,10 @@ module.exports = function(api) {
         presets: ['@babel/preset-env', '@babel/preset-react'],
         plugins: ['@babel/plugin-proposal-class-properties'],
       },
+      'dev:e2e': {
+        presets: ['@babel/preset-env', '@babel/preset-react'],
+        plugins: ['@babel/plugin-proposal-class-properties'],
+      },
     },
   }
 }
