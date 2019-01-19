@@ -25,6 +25,9 @@ commands:
     steps:
       - run:
           name: Install dependencies
+          command: npm install
+      - run:
+          name: Install dependencies
           command: npm ci
 
 jobs:
