@@ -42,7 +42,7 @@ commands:
 
       - run:
           name: Install build-essential
-          command: npx install-group peer --package @telus/build-essential --global
+          command: sudo npx install-group peer --package @telus/build-essential --global
       - run:
           name: Install dependencies
           command: yarn install
