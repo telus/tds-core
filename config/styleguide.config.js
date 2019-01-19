@@ -388,6 +388,14 @@ module.exports = {
           },
         },
         {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader',
+          options: {
+            babelrc: false,
+          },
+        },
+        {
           test: /(\.modules\.scss|flexboxgrid)/,
           use: [
             'style-loader',

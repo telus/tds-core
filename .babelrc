@@ -9,7 +9,15 @@
       "presets": ["env", "stage-2", "react"]
     },
     "e2e": {
-      "presets": ["env", "stage-2", "react"]
+      "presets": [
+        ["env",
+          {
+            "targets": {
+              "esmodules": true
+            }
+          }
+        ],
+        "stage-2", "react"]
     }
   }
 }
