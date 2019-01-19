@@ -7,6 +7,9 @@
   "env": {
     "test": {
       "presets": ["env", "stage-2", "react"]
+    },
+    "e2e": {
+      "presets": [["env", {"modules": false}], "stage-2", "react"]
     }
   }
 }
