@@ -36,7 +36,7 @@ jobs:
     steps:
       - checkout
       - install
-      - run: npm run ci:build
+      - run: yarn bootstrap
       - persist
 
   lint:
