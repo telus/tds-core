@@ -24,7 +24,7 @@ commands:
   install:
     steps:
       - run:
-          name: Install dependencies
+          name: Run npm install
           command: npm install
       - run:
           name: Install dependencies
