@@ -6,11 +6,11 @@ module.exports = function(api) {
     plugins: ['@babel/plugin-proposal-class-properties'],
     env: {
       test: {
-        presets: ['@babel/preset-env', { modules: false }, '@babel/preset-react'],
+        presets: ['env', '@babel/preset-env', '@babel/preset-react'],
         plugins: ['@babel/plugin-proposal-class-properties'],
       },
-      'dev:e2e': {
-        presets: ['@babel/preset-env', { modules: false }, '@babel/preset-react'],
+      e2e: {
+        presets: ['env', '@babel/preset-env', '@babel/preset-react'],
         plugins: ['@babel/plugin-proposal-class-properties'],
       },
     },
