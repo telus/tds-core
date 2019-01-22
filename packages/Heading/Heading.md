@@ -23,11 +23,11 @@
 * For Hero overlays, Headlines, or Promo blocks, use [`DisplayHeading`](#displayheading)
 * For subtext in the Hero overlays, or Headlines, use [`Text`](#text)
 
-#### Separating semantic tag from visual style
+#### Separating HTML tag from visual style
 
 The `Heading` component allows developers, designers, and content editors to represent headings with a certain style
-while rendering a tag of their choice. It's important to maintain a correct order of semantic headings and not skip
-levels; for example, have an h2 element directly follow an h1, or an h3 directly follow and h2. This allows users of
+while rendering a HTML tag of their choice. It's important to maintain a correct order of heading level and not skip
+levels; for example, have an `<h2>` HTML element directly follows an `<h1>`, or an `<h3>` directly follows and `<h2>`. This allows users of
 assistive technology to navigate through content predictably since headings represent information
 hierarchy.
 
