@@ -83,8 +83,8 @@ $ALIGNMENT: (left, center, right);
     text-align: $align
   }
 }
-@each $align in $ALIGNMENT {
-  @each $breakpoint in map-keys($mq-breakpoints) {
+@each $breakpoint in map-keys($mq-breakpoints) {
+  @each $align in $ALIGNMENT {
     @include horizontalAlignClasses($breakpoint, $align);
   }
 }
