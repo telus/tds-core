@@ -121,26 +121,9 @@ finally {
 
 def build(Map attrs) {
   node {
-    boolean imageTagExists = sh(
-      returnStatus: true,
-      script: "oc get istag ${attrs.name}:${attrs.buildVersion}"
-    ) == 0
-
-    if (!imageTagExists) {
-      openshiftBuild(
-        buildConfig: attrs.name,
-        commitID: attrs.gitCommitId,
-        waitTime: '3600000'
-      )
-
-      openshiftTag(
-        sourceStream: attrs.name,
-        destinationStream: attrs.name,
-        sourceTag: 'latest',
-        destinationTag: attrs.buildVersion,
-        namespace: env.PROJECT_NAME
-      )
-    }
+    unstash 'scripts'
+    ansiColor('xterm') {
+      sh("./openshift/run-build.sh ${attrs.name} ${attrs.buildVersion} ${attrs.gitCommitId}")
   }
 }
 
