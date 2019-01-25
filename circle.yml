@@ -24,8 +24,8 @@ commands:
   install:
     steps:
       - run:
-          name: Run npm install
-          command: npm install
+          name: Run npm ci
+          command: npm ci
       - run:
           name: Install dependencies
           command: npm ci
@@ -43,13 +43,13 @@ jobs:
     executor: builder
     steps:
       - attach
-      - run: yarn lint
+      - run: npm run lint
 
   unit:
     executor: builder
     steps:
       - attach
-      - run: yarn test
+      - run: npm run test
 
   e2e:
     executor: browsers
@@ -57,8 +57,8 @@ jobs:
       - attach
       - run:
           name: Styleguidist Server
-          command: yarn dev:e2e
-      - run: yarn test:e2e
+          command: npm run dev:e2e
+      - run: npm run test:e2e
 
   release:
     executor: builder
@@ -73,17 +73,17 @@ workflows:
       - build
 
       - lint:
-          requires: [ build ]
+          requires: [build]
 
       - unit:
-          requires: [ build ]
+          requires: [build]
 
       - e2e:
-          requires: [ build ]
+          requires: [build]
 
       - release:
           context: npm-library
-          requires: [ build, lint, unit, e2e ]
+          requires: [build, lint, unit, e2e]
           filters:
             branches:
               only: master
