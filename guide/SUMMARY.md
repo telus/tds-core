@@ -35,7 +35,8 @@
 
 - [Contact us](contact.md)
 - [FAQs](faq.md)
-- [Report an issue](https://github.com/telusdigital/tds-core/issues/new?template=defect_template.md)
-- [Suggest a feature](https://github.com/telusdigital/tds-core/issues/new?template=feature_template.md)
-- [TDS on GitHub](https://github.com/telusdigital/tds-core)
+- [Report an issue](https://github.com/telus/tds-core/issues/new?template=defect_template.md)
+- [Suggest a feature](https://github.com/telus/tds-core/issues/new?template=feature_template.md)
+- [tds-core on GitHub](https://github.com/telus/tds-core)
+- [tds-community on GitHub](https://github.com/telus/tds-community)
 - [npm packages](https://www.npmjs.com/org/tds)
