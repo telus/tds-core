@@ -11,6 +11,7 @@
     "@tds/core-text": "^1.0.4"
   },
   "devDependencies": {
+    "@tds/core-colours": "^1.0.0",
     "@tds/shared-colored-text-provider": "^1.0.0",
     "@tds/util-generate-id": "^1.0.1"
   }
