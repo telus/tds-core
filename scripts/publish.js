@@ -3,7 +3,7 @@
 /* eslint-disable no-console */
 
 /*
-Usage: yarn lerna:publish [component name...] [options] [lerna options]
+Usage: npm run lerna:publish [component name...] [options] [lerna options]
 
   By default, only updated packages will be built.
   All lerna options will be forwarded onto lerna commands.

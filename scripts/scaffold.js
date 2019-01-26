@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Usage: yarn scaffold <componentName>
+// Usage: npm run scaffold <componentName>
 
 /* eslint-disable no-console */
 
