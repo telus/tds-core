@@ -9,20 +9,14 @@
   },
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "shared/components/*",
-    "shared/styles/*",
-    "shared/utils/*"
-  ],
   "scripts": {
-    "bootstrap": "yarn install && yarn gitbook:install && lerna bootstrap && yarn build --all",
+    "bootstrap": "npm install && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build --all",
     "build": "node scripts/build.js",
     "build-docs:gitbook": "gitbook build guide",
     "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
-    "ci:build": "yarn build --all",
-    "ci:build-docs:styleguide-staging": "STYLEGUIDIST_ENV=staging yarn run build-docs:styleguide",
-    "ci:build-docs:styleguide-production": "STYLEGUIDIST_ENV=production yarn run build-docs:styleguide",
+    "ci:build": "npm run build --all",
+    "ci:build-docs:styleguide-staging": "STYLEGUIDIST_ENV=staging npm run build-docs:styleguide",
+    "ci:build-docs:styleguide-production": "STYLEGUIDIST_ENV=production npm run build-docs:styleguide",
     "ci:build-docs": "npm-run-all --parallel ci:build-docs:styleguide-* build-docs:gitbook",
     "ci:test": "npm-run-all --parallel lint test",
     "cz": "git-cz",
@@ -39,16 +33,16 @@
     "lint:scss": "stylelint '{packages,shared}/**/*.scss' --config config/stylelint.config.js",
     "lint:ec": "echint",
     "lint": "npm-run-all --parallel lint:*",
-    "intl:deps": "npx updated",
-    "lint:md": "yarn remark --quiet --frail .",
-    "intl:audit": "npm audit",
-    "precommit": "lint-staged && yarn test && yarn contributors:update",
-    "prepare": "yarn gitbook:install",
-    "prepr": "yarn test:e2e && scripts/prePr.sh",
+    "intl:deps": "npm run updated",
+    "lint:md": "npm run remark --quiet --frail .",
+    "intl:audit": "npm run audit",
+    "precommit": "lint-staged && npm run test && npm run contributors:update",
+    "prepare": "npm run gitbook:install",
+    "prepr": "npm run test:e2e && scripts/prePr.sh",
     "scaffold": "node scripts/scaffold.js",
     "test:e2e": "node scripts/e2e.js",
-    "test:u": "yarn test -u",
-    "test:watch": "yarn test --watch",
+    "test:u": "npm run test -u",
+    "test:watch": "npm run test --watch",
     "test:quick": "jest -o --config config/jest.config.js",
     "test": "jest --config config/jest.config.js"
   },
@@ -137,7 +131,7 @@
     "request": "^2.87.0",
     "rollup": "^1.0.0",
     "rollup-plugin-babel": "^4.1.0",
-    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^1.6.1",
     "s3-website": "^3.1.2",
@@ -203,8 +197,8 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS && node ./scripts/commit-scope-lint.js -m $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged && yarn test:quick && yarn contributors:update",
-      "pre-push": "yarn ci:build && npm-run-all --parallel test lint build-docs:*"
+      "pre-commit": "lint-staged && npm run test:quick && npm run contributors:update",
+      "pre-push": "npm run ci:build && npm-run-all --parallel test lint build-docs:*"
     }
   }
 }
