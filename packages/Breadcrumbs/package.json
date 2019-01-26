@@ -26,12 +26,15 @@
     "react-helmet": ">=5"
   },
   "dependencies": {
+    "@tds/core-colours": "^1.0.0",
     "@tds/core-link": "^1.0.3",
     "@tds/core-text": "^1.0.4",
     "@tds/util-prop-types": "^1.2.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/shared-colored-text-provider": "^1.0.0"
+    "@tds/core-colours": "^1.0.0",
+    "@tds/shared-colored-text-provider": "^1.0.0",
+    "@tds/core-responsive": "^1.1.0"
   }
 }
