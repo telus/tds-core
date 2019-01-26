@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
-Usage: yarn test:e2e [component name...] [options] [lerna options]
+Usage: npm run test:e2e [component name...] [options] [lerna options]
 
   By default, only updated packages will be tested.
   All lerna options will be forwarded onto lerna commands.

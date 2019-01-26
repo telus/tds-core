@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
-Usage: yarn build [component name...] [options] [lerna options]
+Usage: npm run build [component name...] [options] [lerna options]
 
   By default, only updated packages will be built.
   All lerna options will be forwarded onto lerna commands.
@@ -19,8 +19,6 @@ const arrayToGlob = require('./utils/arrayToGlob')
 
 getPackageNames(packageNames => {
   const scopeGlob = arrayToGlob(packageNames)
-
-  spawnSync('npx', ['lerna', 'clean', '--yes'], { stdio: 'inherit' })
 
   spawnSync(
     'npx',
