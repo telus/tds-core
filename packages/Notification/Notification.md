@@ -1,5 +1,3 @@
-# Notification
-
 **Use the "Open isolated" button above to view this component in full-width mode.**
 
 The `Notification` spans the entire width of the screen, and aligns the message with the page content.
@@ -50,7 +48,8 @@ Use the `error` variant to provide feedback of a failed transaction. **The messa
 ```jsx { "props": { "className": "docs_full-width-playground" } }
 <Notification variant="error">
   Looks like our registration system is temporarily down. You’ll need to come back another time to
-  register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>.
+  register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>
+  .
 </Notification>
 ```
 
