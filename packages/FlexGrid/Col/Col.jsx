@@ -79,7 +79,7 @@ const Col = ({ span, offset, horizontalAlign, children, ...rest }) => {
  * We're disabling default props since passing undefined props to
  * the react-flexbox-grid component sets up blank classes that may cause
  * styling issues.
-*/
+ */
 Col.propTypes = {
   /**
    * Specify number of columns within the 'xs' breakpoint range. `0` hides the column.
