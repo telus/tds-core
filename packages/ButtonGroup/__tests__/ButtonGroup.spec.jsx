@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import A11yContent from '@tds/core-a11y-content'
+import A11yContent from '../../A11yContent'
 
 import ButtonGroup from '../ButtonGroup'
 
