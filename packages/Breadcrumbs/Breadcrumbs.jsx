@@ -49,17 +49,19 @@ const getPath = (path, params, concatenatePaths, paths) => {
 
 const getItems = (items, params, concatenatePaths) => {
   const paths = []
-  return items.filter(item => item.path).map((item, i, filteredItems) => {
-    const isLast = i === filteredItems.length - 1
-    const breadcrumbName = getBreadcrumbName(item, params)
-    const href = getPath(item.path, params, concatenatePaths, paths)
-    return {
-      breadcrumbName,
-      href,
-      current: isLast,
-      ...omitProps(safeRest(item)),
-    }
-  })
+  return items
+    .filter(item => item.path)
+    .map((item, i, filteredItems) => {
+      const isLast = i === filteredItems.length - 1
+      const breadcrumbName = getBreadcrumbName(item, params)
+      const href = getPath(item.path, params, concatenatePaths, paths)
+      return {
+        breadcrumbName,
+        href,
+        current: isLast,
+        ...omitProps(safeRest(item)),
+      }
+    })
 }
 
 const getStructuredData = (items, baseUrl) => {
