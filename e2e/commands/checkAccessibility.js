@@ -5,6 +5,8 @@ exports.command = function checkAccessibility() {
     verbose: false,
     rules: {
       'color-contrast': { enabled: true },
+      'skip-link': { enabled: false },
+      'heading-order': { enabled: false },
     },
   })
 }
