@@ -9,6 +9,15 @@ executors:
     docker:
       - image: circleci/node:8-browsers
 
+dependencies:
+  pre:
+    - google-chrome --version
+    - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub 54 | sudo apt-key add -
+    - sudo sh -c ‘echo “deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ 27 stable main” >> /etc/apt/sources.list.d/google.list’
+    - sudo apt-get update
+    - sudo apt-get --only-upgrade install google-chrome-stable
+    - google-chrome --version
+
 commands:
   persist:
     steps:
@@ -24,9 +33,6 @@ commands:
   install:
     steps:
       - run:
-          name: Run npm ci
-          command: npm ci
-      - run:
           name: Install dependencies
           command: npm ci
 
@@ -35,8 +41,9 @@ jobs:
     executor: builder
     steps:
       - checkout
-      - install
-      - run: npm run ci:build
+      - run:
+          name: Bootstrap
+          command: npm run bootstrap:ci
       - persist
 
   lint:
@@ -56,9 +63,15 @@ jobs:
     steps:
       - attach
       - run:
+          name: Prepare node-sass
+          command: npm rebuild node-sass
+      - run:
           name: Styleguidist Server
           command: npm run dev:e2e
-      - run: npm run test:e2e
+          background: true
+      - run: npm run test:e2e -- -a
+      - store_artifacts:
+          path: /home/circleci/project/e2e/
 
   release:
     executor: builder
