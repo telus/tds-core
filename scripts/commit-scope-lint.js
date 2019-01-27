@@ -28,22 +28,24 @@ const gitDiff = spawnSync('git', ['diff', '--name-only', '--staged', 'HEAD'], {
 
 console.log('\nValidating commit scope...')
 
-gitDiff.map(element => element.replace('-', '')).forEach(element => {
-  if (
-    (rootScopes.indexOf(commitScope) === -1 &&
-      element.search(new RegExp(`^(.*(/+)|(/?))${commitScope}/`, 'i')) === -1) ||
-    (rootScopes.indexOf(commitScope) !== -1 && element.search(/(\\)|(\/)/g) !== -1)
-  ) {
-    console.error(
-      '\n',
-      '\x1b[41m\x1b[37m',
-      'COMMIT SCOPE ERROR:',
-      '\x1b[0m',
-      `Files outside the scope '${commitScope}' have been added to this commit. Please create seperate commits for files out of scope.`
-    )
-    process.exit(1)
-  }
-})
+gitDiff
+  .map(element => element.replace('-', ''))
+  .forEach(element => {
+    if (
+      (rootScopes.indexOf(commitScope) === -1 &&
+        element.search(new RegExp(`^(.*(/+)|(/?))${commitScope}/`, 'i')) === -1) ||
+      (rootScopes.indexOf(commitScope) !== -1 && element.search(/(\\)|(\/)/g) !== -1)
+    ) {
+      console.error(
+        '\n',
+        '\x1b[41m\x1b[37m',
+        'COMMIT SCOPE ERROR:',
+        '\x1b[0m',
+        `Files outside the scope '${commitScope}' have been added to this commit. Please create seperate commits for files out of scope.`
+      )
+      process.exit(1)
+    }
+  })
 
 console.log(
   '\n',
