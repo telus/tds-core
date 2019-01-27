@@ -2,3 +2,5 @@ scripts/scaffolding
 dist
 docs/components/overrides
 packages/SelectorCounter
+packages/**/node_modules
+shared/**/node_modules
