@@ -6,7 +6,7 @@ import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
 import DecorativeIcon from '@tds/core-decorative-icon'
-import Tooltip from '@tds/core-tooltip'
+import Tooltip from '../../Tooltip'
 
 import Fade from '../../../shared/components/Animation/Fade'
 import Select from '../Select'
