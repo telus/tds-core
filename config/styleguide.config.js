@@ -23,13 +23,15 @@ const toggleByEnv = (component, toggledOffValue, toggledOnValue) => {
 const compact = array => array.filter(element => element !== undefined)
 /* eslint-enable no-unused-vars */
 
-const fontLinks = fonts.filter(fontUrl => path.extname(fontUrl) === '.woff2').map(fontUrl => ({
-  href: fontUrl,
-  rel: 'preload',
-  as: 'font',
-  type: 'font/woff2',
-  crossorigin: true,
-}))
+const fontLinks = fonts
+  .filter(fontUrl => path.extname(fontUrl) === '.woff2')
+  .map(fontUrl => ({
+    href: fontUrl,
+    rel: 'preload',
+    as: 'font',
+    type: 'font/woff2',
+    crossorigin: true,
+  }))
 
 const devTemplate = {
   lang: 'en',
