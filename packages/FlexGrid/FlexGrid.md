@@ -1,5 +1,3 @@
-# FlexGrid
-
 **Use the "Open isolated" button above to view this component in full-width mode.**
 
 The `FlexGrid` system is a thin wrapper over [react-flexbox-grid](https://github.com/roylee0704/react-flexbox-grid),
