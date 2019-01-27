@@ -5,7 +5,7 @@ import StandaloneIcon from '@tds/core-standalone-icon'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
-import Tooltip from '@tds/core-tooltip'
+import Tooltip from '../../Tooltip'
 
 import Fade from '../../../shared/components/Animation/Fade'
 import Input from '../Input'
