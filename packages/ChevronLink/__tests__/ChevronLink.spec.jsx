@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow, render } from 'enzyme'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
-import A11yContent from '@tds/core-a11y-content'
+import A11yContent from '../../A11yContent'
 
 import { warn } from '../../../shared/utils/warn'
 
