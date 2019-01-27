@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, mount, shallow } from 'enzyme'
 
-import A11yContent from '@tds/core-a11y-content'
+import A11yContent from '../../A11yContent'
 
 import { warn } from '../../../shared/utils/warn'
 
