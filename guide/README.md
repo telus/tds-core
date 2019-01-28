@@ -4,6 +4,10 @@ The TELUS Design System (TDS) is a set of living guidelines that communicates ou
 
 For now, TDS is intended for use by TELUS employees and approved partners.
 
+## Announcements
+
+To view recent and past announcements, see our [Announcements](announcements.html) page.
+
 ## Important links
 
 ### New to TDS?

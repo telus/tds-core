@@ -4,6 +4,24 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
+## January 2019
+
+### Features 🎁
+
+**TDS Util Prop Types 1.2.0** has a new `or` propType for combining multiple Prop Types
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Futil-prop-types%401.2.0)
+- [Documentation](https://tds.telus.com/components/index.html#proptypes)
+
+### Fixes 🔧
+
+**ExpandCollapse 1.2.4** does not reset state when a child element calls `this.setState()`
+
+Thanks for the ongoing effort Ally Hui and Nicholas Mak! The conversation is continuing in [#892](https://github.com/telus/tds-core/issues/892).
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-expand-collapse%401.2.4)
+- [Documentation](https://tds.telus.com/components/index.html#expandcollapse)
+
 ## December 2018
 
 ### New Core Components ✨
