@@ -59,7 +59,7 @@ jobs:
       - run: npm run test
 
   e2e:
-    executor: browsers
+    executor: builder
     steps:
       - attach
       - run:
@@ -69,7 +69,7 @@ jobs:
           name: Styleguidist Server
           command: npm run dev:e2e
           background: true
-      - run: npm run test:e2e -- -a
+      - run: npm run test:e2e-direct -- -a
       - store_artifacts:
           path: /home/circleci/project/e2e/
 
