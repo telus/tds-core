@@ -22,19 +22,21 @@ RUN set -ex && \
   adduser node root && \
   chmod g+w /
 
+RUN apk add --update --no-cache chromium chromium-chromedriver
+
 # Install git, which is necessary for the install process.
 RUN apk add --no-cache git
 
 # Copy only the files necessary to install dependencies into the working directory.
 # Docker builds the image in layers and caches them. Because the app files change more often than the dependencies, we
 #  copy the app files only after we install the dependencies.
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json lerna.json ./
 
 RUN npm ci
 
 # Copy all source and test files into the working directory.
 # We use a .dockerignore file to prevent unnecessary or large files from being inadvertently copied.
-# COPY . /
+COPY . /
 
 # Build the app.
 RUN npx lerna bootstrap --hoist && \
