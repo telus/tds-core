@@ -12,5 +12,4 @@ build/
 guide/_book/
 styleguide/
 
-# Ignore all of e2e for now until we use it in the pipeline
-e2e/
+node_modules/
