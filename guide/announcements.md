@@ -10,7 +10,7 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 **Button Group**
 
-Feel like things are a bit empty when you have only a couple of radio buttons on your form? Want a bit of pizzaz in your user’s choices! Say no more! Today we’re introducing **Button Group**, a core component that displays radio inputs as big pretty buttons! Forms have never been so exciting. [Feel the excitement over at our docs!](https://tds.telus.com/components/index.html#buttongroup)
+Feel like things are a bit empty when you have only a couple of radio buttons on your form? Want a bit of pizzazz in your user’s choices! Say no more! Today we’re introducing **Button Group**, a core component that displays radio inputs as big pretty buttons! Forms have never been so exciting. [Feel the excitement over at our docs!](https://tds.telus.com/components/index.html#buttongroup)
 
 **Breadcrumbs**
 
