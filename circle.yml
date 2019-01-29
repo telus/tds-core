@@ -59,7 +59,7 @@ jobs:
       - run: npm run test
 
   e2e:
-    executor: builder
+    executor: browsers
     steps:
       - attach
       - run:
