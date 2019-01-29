@@ -67,7 +67,7 @@ jobs:
           command: npm rebuild node-sass
       - run:
           name: Styleguidist Server
-          command: npm run dev:e2e
+          command: npm run dev:e2e-direct
           background: true
       - run: npm run test:e2e-direct -- -a
       - store_artifacts:

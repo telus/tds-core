@@ -11,5 +11,3 @@
 build/
 guide/_book/
 styleguide/
-
-node_modules/
