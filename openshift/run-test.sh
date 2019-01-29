@@ -1,6 +1,6 @@
 #!/bin/sh
 
-## Runs `yarn run ci:test` against a container on OpenShift. Used by the Test stage of the Jenkinsfile.
+## Runs `npm run ci:test` against a container on OpenShift. Used by the Test stage of the Jenkinsfile.
 ## Usage: ./run-test.sh tds latest
 
 NAME=${1}
@@ -18,7 +18,7 @@ oc run ${NAME}-${VERSION} \
       "containers":[{
         "name": "'${NAME}'-'${VERSION}'",
         "image": "'${IMAGESTREAM}':'${VERSION}'",
-        "command":["yarn", "run", "ci:test"]
+        "command":["npm", "run", "ci:test"]
       }]
     }
   }'

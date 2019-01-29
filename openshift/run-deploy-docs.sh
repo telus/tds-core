@@ -1,6 +1,6 @@
 #!/bin/sh
 
-## Runs `yarn deploy:docs` against a container on OpenShift. Used by the Deploy stage of the Jenkinsfile.
+## Runs `npm run deploy:docs` against a container on OpenShift. Used by the Deploy stage of the Jenkinsfile.
 ## Usage: ./run-deploy-docs.sh tds latest staging
 
 NAME=${1}
@@ -36,7 +36,7 @@ oc run ${NAME}-${VERSION} \
             }
           }
         }],
-        "command":["yarn", "deploy:docs", "--", "'${ENV}'"]
+        "command":["npm", "run", "deploy:docs", "--", "'${ENV}'"]
       }]
     }
   }'
