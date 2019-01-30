@@ -9,14 +9,9 @@ executors:
     docker:
       - image: circleci/node:8-browsers
 
-dependencies:
-  pre:
-    - google-chrome --version
-    - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub 54 | sudo apt-key add -
-    - sudo sh -c ‘echo “deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ 27 stable main” >> /etc/apt/sources.list.d/google.list’
-    - sudo apt-get update
-    - sudo apt-get --only-upgrade install google-chrome-stable
-    - google-chrome --version
+  prepr:
+    docker:
+      - image: circleci/node:8
 
 commands:
   persist:
@@ -70,16 +65,16 @@ jobs:
           command: npm run dev:e2e-direct
           background: true
       - run: npm run test:e2e-direct -- -a
-      - run:
-          name: TDS Bot Analysis
-          when: on_success
-          command: if [ "$CIRCLE_PULL_REQUEST" != "false" ]; then scripts/prePr.sh ; node ./scripts/circleci/github-pr.js ; fi
 
-  release:
-    executor: builder
+  prepr:
+    executor: prepr
     steps:
       - attach
-      - run: npx semantic-release
+      - run: sudo apt-get update -y
+      - run: sudo apt-get install -y expect
+      - run:
+          name: TDS Bot Analysis
+          command: if [ "$CIRCLE_PULL_REQUEST" != "" ]; then scripts/prePr.sh ; node ./scripts/circleci/github-pr.js ; fi
 
 workflows:
   version: 2
@@ -96,9 +91,5 @@ workflows:
       - e2e:
           requires: [build]
 
-      - release:
-          context: npm-library
+      - prepr:
           requires: [build, lint, unit, e2e]
-          filters:
-            branches:
-              only: master
