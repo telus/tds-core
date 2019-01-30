@@ -70,8 +70,10 @@ jobs:
           command: npm run dev:e2e-direct
           background: true
       - run: npm run test:e2e-direct -- -a
-      - store_artifacts:
-          path: /home/circleci/project/e2e/
+      - run:
+          name: TDS Bot Analysis
+          when: on_success
+          command: if [ "$CIRCLE_PULL_REQUEST" != "false" ]; then scripts/prePr.sh ; node ./scripts/circleci/github-pr.js ; fi
 
   release:
     executor: builder
