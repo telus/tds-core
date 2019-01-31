@@ -23,9 +23,6 @@ RUN set -ex && \
 # Set the container's user to the newly created one.
 USER node
 
-# Prepare node-sass for the environment
-RUN npm rebuild node-sass
-
 # The entrypoint configures the container to be run as an executable.
 # Arguments supplied on the command line will be forwarded onto the entrypoint.
 ENTRYPOINT ["npm", "run"]
