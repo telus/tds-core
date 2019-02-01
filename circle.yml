@@ -76,6 +76,63 @@ jobs:
           name: TDS Bot Analysis
           command: if [ "$CIRCLE_PULL_REQUEST" != "" ]; then scripts/prePr.sh ; node ./scripts/circleci/github-pr.js ; fi
 
+  release:
+    executor: builder
+    steps:
+      - attach
+      - add_ssh_keys:
+          fingerprints:
+            - '83:1e:d9:b9:70:8d:4f:97:80:ca:81:79:f6:f4:ef:da'
+      - run:
+          name: Add Github Key
+          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - run:
+          name: Configure Git Config & Branch
+          command: |
+            git status
+            git config --global user.email "tds.github.bot@gmail.com"
+            git config --global user.name "TDSBot"
+            git fetch origin --tags
+      - run:
+          name: Setup .npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+      - run:
+          name: Lerna Publish
+          command: npm run lerna:cipublish
+
+  screenshots:
+    executor: browsers
+    steps:
+      - attach
+      - add_ssh_keys:
+          fingerprints:
+            - '83:1e:d9:b9:70:8d:4f:97:80:ca:81:79:f6:f4:ef:da'
+      - run:
+          name: Add Github Key
+          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - run:
+          name: Configure Git Config & Branch
+          command: |
+            git status
+            git config --global user.email "tds.github.bot@gmail.com"
+            git config --global user.name "TDSBot"
+      - run:
+          name: Prepare node-sass
+          command: npm rebuild node-sass
+      - run:
+          name: Styleguidist Server
+          command: npm run dev:e2e-direct
+          background: true
+      - run:
+          name: Update Screenshots
+          command: npm run test:e2e-direct -- -a -u
+      - run:
+          name: Commit updated e2e screenshots
+          command: |
+            git add e2e
+            git commit -m "test(e2e): update screenshots with version bump"
+            git push
+
 workflows:
   version: 2
   run:
@@ -93,3 +150,17 @@ workflows:
 
       - prepr:
           requires: [build, lint, unit, e2e]
+
+      - approve-release:
+          type: approval
+          requires: [build, lint, unit, e2e]
+          filters:
+            branches:
+              only: master
+
+      - release:
+          context: npm-library
+          requires: [approve-release]
+
+      - screenshots:
+          requires: [release]
