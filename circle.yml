@@ -77,7 +77,41 @@ jobs:
     executor: builder
     steps:
       - attach
-      - run: npx semantic-release
+      - add_ssh_keys:
+          fingerprints:
+            - 'f3:ce:ee:32:02:68:35:11:a2:b7:ba:30:83:8f:b1:7f'
+      - run:
+          name: Add Github Key
+          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - run: git status
+      - run: git config --global user.email "tds.github.bot@gmail.com"
+      - run: git config --global user.name "TDSBot"
+      - run: git checkout master
+      - run: git pull --rebase
+      - run: touch test.txt
+      - run: git add .
+      - run: "git commit -m 'chore(other): this is anotherg test'"
+      - run: git push -u origin HEAD
+
+  screenshots:
+    executor: browsers
+    steps:
+      - attach
+      - run:
+          name: Prepare node-sass
+          command: npm rebuild node-sass
+      - run:
+          name: Styleguidist Server
+          command: npm run dev:e2e-direct
+          background: true
+      - run:
+          name: Update Screenshots
+          command: npm run test:e2e-direct -- -a -u
+      - run:
+          name: Commit updated e2e screenshots
+          command: |
+            git add e2e
+            git commit -m "test(e2e): update screenshots with version bump"
 
 workflows:
   version: 2
@@ -96,7 +130,7 @@ workflows:
 
       - release:
           context: npm-library
-          requires: [build, lint, unit, e2e]
-          filters:
-            branches:
-              only: master
+          requires: [build]
+
+      - screenshots:
+          requires: [release]
