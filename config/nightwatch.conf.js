@@ -30,6 +30,7 @@ module.exports = {
     start_process: true,
     server_path: chromedriver.path,
     port: 9515,
+    log_path: false,
   },
   test_settings: {
     default: {
