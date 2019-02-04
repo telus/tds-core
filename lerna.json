@@ -3,7 +3,7 @@
   "command": {
     "publish": {
       "ignoreChanges": ["**/*.md", "**/*.spec.jsx", "**/*.snap", "@tds/core-selector-counter"],
-      "message": "chore(other): publish"
+      "message": "chore(publish): update packages"
     }
   },
   "packages": ["packages/*", "shared/**"]

@@ -23,7 +23,8 @@ const applyCustomScope = () => {
         'other',
         'scripts',
         'shared',
-        'packages'
+        'packages',
+        'publish'
       )
       return config
     })
