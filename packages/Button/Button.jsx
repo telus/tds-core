@@ -30,7 +30,7 @@ const Button = ({ type, variant, children, ...rest }) => {
 
 Button.propTypes = {
   /**
-   * The HTML button type.
+   * The HTML button type. Test
    */
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
   /**
