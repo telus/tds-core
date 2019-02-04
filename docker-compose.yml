@@ -42,5 +42,6 @@ services:
       - './config/.:/tds-core/config/'
       - './packages/.:/tds-core/packages/'
       - './shared/.:/tds-core/shared/'
+      - './.git/.:/tds-core/.git/'
       - '${PWD}/lerna.json:/tds-core/lerna.json'
       - '${PWD}/babel.config.js:/tds-core/babel.config.js'
