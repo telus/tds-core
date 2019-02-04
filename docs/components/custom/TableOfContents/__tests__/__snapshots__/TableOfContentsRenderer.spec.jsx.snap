@@ -8,6 +8,7 @@ exports[`TableOfContentsRenderer renders 1`] = `
   tag="div"
 >
   <Input
+    hintPosition="inline"
     label="Filter by name"
     onChange={[Function]}
     type="text"
