@@ -2,7 +2,7 @@ const parseArgs = require('minimist')
 
 const TDS_OPTIONS = ['-a', '--all', '-u', '--update-screenshots']
 
-const originalArgs = process.argv.slice(2)
+const originalArgs = process.argv.slice(2).filter(arg => arg !== '')
 
 const parsedArgs = parseArgs(originalArgs, { alias: { a: 'all', u: 'update-screenshots' } })
 const lernaOptions = originalArgs
