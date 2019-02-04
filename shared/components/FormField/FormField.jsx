@@ -34,8 +34,12 @@ const getClassName = (feedback, focus, disabled) => {
 const showFeedbackIcon = (feedback, focus) =>
   (feedback === 'success' || feedback === 'error') && !focus
 
-const renderLabel = (label, hint, fieldId) => {
-  return (
+const renderLabel = (label, hint, fieldId, tooltip) => (
+  <Flexbox
+    direction="row"
+    justifyContent="spaceBetween"
+    dangerouslyAddClassName={positionStyles.relative}
+  >
     <label htmlFor={fieldId.identity()}>
       <Box inline tag="span" between={2} dangerouslyAddClassName={styles.alignCenter}>
         <Text size="medium" bold>
@@ -44,12 +48,24 @@ const renderLabel = (label, hint, fieldId) => {
         {hint && <Text size="small">{hint}</Text>}
       </Box>
     </label>
-  )
-}
+
+    {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
+  </Flexbox>
+)
+
 const renderError = (error, errorId) => (
   <InputFeedback id={errorId} feedback="error">
     <Paragraph size="small">{error}</Paragraph>
   </InputFeedback>
+)
+
+const renderHintBelowLabel = (labelWrapper, hintId, hint) => (
+  <div>
+    {labelWrapper}
+    <Paragraph id={hintId} size="small">
+      {hint}
+    </Paragraph>
+  </div>
 )
 
 const renderHelper = (helper, helperId, feedback, value) => {
@@ -133,25 +149,29 @@ class FormField extends React.Component {
   }
 
   render() {
-    const { label, hint, feedback, error, helper, tooltip, children, ...rest } = this.props
+    const {
+      label,
+      hint,
+      hintPosition,
+      feedback,
+      error,
+      helper,
+      tooltip,
+      children,
+      ...rest
+    } = this.props
 
     const fieldId = generateId(rest.id, rest.name, label)
+    const hintId = hint && hintPosition === 'below' && fieldId.postfix('hint')
     const helperId = helper && fieldId.postfix('helper')
     const errorId = error && fieldId.postfix('error-message')
 
     const showIcon = showFeedbackIcon(feedback, this.state.focus)
+    const labelWrapper = renderLabel(label, !hintId && hint, fieldId, tooltip)
 
     return (
       <Box between={2}>
-        <Flexbox
-          direction="row"
-          justifyContent="spaceBetween"
-          dangerouslyAddClassName={positionStyles.relative}
-        >
-          {renderLabel(label, hint, fieldId)}
-
-          {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
-        </Flexbox>
+        {hintId ? renderHintBelowLabel(labelWrapper, hintId, hint) : labelWrapper}
 
         {helper && renderHelper(helper, helperId, feedback, this.state.value)}
 
@@ -167,7 +187,7 @@ class FormField extends React.Component {
             onFocus: this.onFocus,
             onBlur: this.onBlur,
             'aria-invalid': feedback === 'error',
-            'aria-describedby': errorId || helperId || undefined,
+            'aria-describedby': errorId || hintId || helperId || undefined,
           },
           showIcon,
           feedback
@@ -180,6 +200,7 @@ class FormField extends React.Component {
 FormField.propTypes = {
   label: PropTypes.string.isRequired,
   hint: PropTypes.string,
+  hintPosition: PropTypes.oneOf(['inline', 'below']),
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   feedback: PropTypes.oneOf(['success', 'error']),
@@ -194,6 +215,7 @@ FormField.propTypes = {
 
 FormField.defaultProps = {
   hint: undefined,
+  hintPosition: 'inline',
   value: undefined,
   defaultValue: undefined,
   feedback: undefined,
