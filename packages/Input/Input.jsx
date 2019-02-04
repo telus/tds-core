@@ -50,6 +50,10 @@ Input.propTypes = {
    */
   hint: PropTypes.string,
   /**
+   * Position of the `hint` relative to `label`.
+   */
+  hintPosition: PropTypes.oneOf(['inline', 'below']),
+  /**
    * The value.
    */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -69,6 +73,9 @@ Input.propTypes = {
    * invoked with arguments below.
    *
    * **Deprecation:** As of v1.0.0, passing `Input.Helper` will no longer work.
+   *
+   * **Deprecation:** This is not a recommended pattern and will be removed in a future release.
+   *                  Use `hint` with `hintPosition` value of `below`.
    *
    * @param {String} feedback The input's current feedback state.
    * @param {String} value The input's current value.
@@ -101,6 +108,7 @@ Input.propTypes = {
 Input.defaultProps = {
   type: 'text',
   hint: undefined,
+  hintPosition: 'inline',
   value: undefined,
   feedback: undefined,
   error: undefined,
