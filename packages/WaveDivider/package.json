@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-wave-divider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Separate page content blocks",
   "main": "index.cjs.js",
   "module": "index.es.js",

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.11](https://github.com/telus/tds-core/compare/@tds/shared-form-field@1.0.10...@tds/shared-form-field@1.0.11) (2019-02-04)
+
+### Bug Fixes
+
+- **shared-form-field:** add missing deps ([56224c4](https://github.com/telus/tds-core/commit/56224c4))
+
 ## [1.0.10](https://github.com/telus/tds-core/compare/@tds/shared-form-field@1.0.9...@tds/shared-form-field@1.0.10) (2019-01-10)
 
 ### Bug Fixes

@@ -3,43 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-<a name="2.0.4"></a>
-## [2.0.4](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.3...@tds/core-tooltip@2.0.4) (2018-12-19)
+## [2.0.5](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.4...@tds/core-tooltip@2.0.5) (2019-02-04)
 
+**Note:** Version bump only for package @tds/core-tooltip
+
+<a name="2.0.4"></a>
+
+## [2.0.4](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.3...@tds/core-tooltip@2.0.4) (2018-12-19)
 
 ### Bug Fixes
 
-* **core-tooltip:** prevent multiple tooltips from being open on one page ([8bc243d](https://github.com/telusdigital/tds/commit/8bc243d))
-
-
-
+- **core-tooltip:** prevent multiple tooltips from being open on one page ([8bc243d](https://github.com/telusdigital/tds/commit/8bc243d))
 
 <a name="2.0.3"></a>
+
 ## [2.0.3](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.2...@tds/core-tooltip@2.0.3) (2018-12-06)
-
-
-
 
 **Note:** Version bump only for package @tds/core-tooltip
 
 <a name="2.0.2"></a>
+
 ## [2.0.2](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.1...@tds/core-tooltip@2.0.2) (2018-07-23)
-
-
-
 
 **Note:** Version bump only for package @tds/core-tooltip
 
 <a name="2.0.1"></a>
-## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.0...@tds/core-tooltip@2.0.1) (2018-07-13)
 
+## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.0...@tds/core-tooltip@2.0.1) (2018-07-13)
 
 ### Bug Fixes
 
-* **core-tooltip:** add fix for line-height inherited from core-text ([262ab8b](https://github.com/telusdigital/tds/commit/262ab8b))
-
-
-
+- **core-tooltip:** add fix for line-height inherited from core-text ([262ab8b](https://github.com/telusdigital/tds/commit/262ab8b))
 
 <a name="2.0.0"></a>
 
@@ -47,11 +41,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **core-tooltip:** change direction prop default to auto ([9835ce0](https://github.com/telusdigital/tds/commit/9835ce0))
+- **core-tooltip:** change direction prop default to auto ([9835ce0](https://github.com/telusdigital/tds/commit/9835ce0))
 
 ### BREAKING CHANGES
 
-* **core-tooltip:** direction prop is set to auto by default instead of right
+- **core-tooltip:** direction prop is set to auto by default instead of right
 
 <a name="1.1.1"></a>
 
@@ -59,7 +53,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **core-tooltip:** revert default value for the direction prop ([432da53](https://github.com/telusdigital/tds/commit/432da53))
+- **core-tooltip:** revert default value for the direction prop ([432da53](https://github.com/telusdigital/tds/commit/432da53))
 
 <a name="1.1.0"></a>
 
@@ -67,14 +61,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **core-tooltip:** adjust bubble size when facing right ([c8cba07](https://github.com/telusdigital/tds/commit/c8cba07))
-* **core-tooltip:** remove width prop from bubble, use SASS mq ([a7f2119](https://github.com/telusdigital/tds/commit/a7f2119))
+- **core-tooltip:** adjust bubble size when facing right ([c8cba07](https://github.com/telusdigital/tds/commit/c8cba07))
+- **core-tooltip:** remove width prop from bubble, use SASS mq ([a7f2119](https://github.com/telusdigital/tds/commit/a7f2119))
 
 ### Features
 
-* **core-tooltip:** add ability to be standalone, automate bubble side ([#666](https://github.com/telusdigital/tds/issues/666)) ([2bfa0bb](https://github.com/telusdigital/tds/commit/2bfa0bb))
-* **core-tooltip:** add auto as a direction wip ([3288333](https://github.com/telusdigital/tds/commit/3288333))
-* **core-tooltip:** add bubble styles ([9921e87](https://github.com/telusdigital/tds/commit/9921e87))
+- **core-tooltip:** add ability to be standalone, automate bubble side ([#666](https://github.com/telusdigital/tds/issues/666)) ([2bfa0bb](https://github.com/telusdigital/tds/commit/2bfa0bb))
+- **core-tooltip:** add auto as a direction wip ([3288333](https://github.com/telusdigital/tds/commit/3288333))
+- **core-tooltip:** add bubble styles ([9921e87](https://github.com/telusdigital/tds/commit/9921e87))
 
 <a name="1.0.4"></a>
 
@@ -82,7 +76,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **core-tooltip:** enhance ability for screen readers to see text ([e1d5c7f](https://github.com/telusdigital/tds/commit/e1d5c7f))
+- **core-tooltip:** enhance ability for screen readers to see text ([e1d5c7f](https://github.com/telusdigital/tds/commit/e1d5c7f))
 
 <a name="1.0.3"></a>
 
@@ -96,7 +90,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **core-tooltip:** remove unused responsive import ([0af92d5](https://github.com/telusdigital/tds/commit/0af92d5))
+- **core-tooltip:** remove unused responsive import ([0af92d5](https://github.com/telusdigital/tds/commit/0af92d5))
 
 <a name="1.0.1"></a>
 
@@ -104,4 +98,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **misc:** remove styleguidist errors for markdownheading ([dac25cc](https://github.com/telusdigital/tds/commit/dac25cc))
+- **misc:** remove styleguidist errors for markdownheading ([dac25cc](https://github.com/telusdigital/tds/commit/dac25cc))

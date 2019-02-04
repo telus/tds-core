@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

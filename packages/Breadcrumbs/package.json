@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-breadcrumbs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,15 +26,15 @@
     "react-helmet": ">=5"
   },
   "dependencies": {
-    "@tds/core-colours": "^1.0.0",
-    "@tds/core-link": "^1.0.3",
-    "@tds/core-text": "^1.0.4",
-    "@tds/util-prop-types": "^1.2.0",
+    "@tds/core-colours": "^1.0.1",
+    "@tds/core-link": "^1.0.4",
+    "@tds/core-text": "^1.0.5",
+    "@tds/util-prop-types": "^1.2.1",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.0.0",
-    "@tds/shared-colored-text-provider": "^1.0.0",
-    "@tds/core-responsive": "^1.1.0"
+    "@tds/core-responsive": "^1.1.1",
+    "@tds/shared-colored-text-provider": "^1.0.1"
   }
 }

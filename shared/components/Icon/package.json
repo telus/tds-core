@@ -1,10 +1,10 @@
 {
   "name": "@tds/shared-icon",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "private": true,
   "main": "",
   "module": "",
   "dependencies": {
-    "@tds/core-colours": "^1.0.0"
+    "@tds/core-colours": "^1.0.1"
   }
 }
