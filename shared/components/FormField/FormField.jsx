@@ -52,6 +52,8 @@ const renderError = (error, errorId) => (
   </InputFeedback>
 )
 
+const renderHint = (hint, hintId) => <Paragraph id={hintId}>{hint}</Paragraph>
+
 const renderHelper = (helper, helperId, feedback, value) => {
   if (typeof helper === 'function') {
     return (
@@ -133,9 +135,20 @@ class FormField extends React.Component {
   }
 
   render() {
-    const { label, hint, feedback, error, helper, tooltip, children, ...rest } = this.props
+    const {
+      label,
+      hint,
+      hintPosition,
+      feedback,
+      error,
+      helper,
+      tooltip,
+      children,
+      ...rest
+    } = this.props
 
     const fieldId = generateId(rest.id, rest.name, label)
+    const hintId = hint && hintPosition === 'below' && fieldId.postfix('hint')
     const helperId = helper && fieldId.postfix('helper')
     const errorId = error && fieldId.postfix('error-message')
 
@@ -148,10 +161,12 @@ class FormField extends React.Component {
           justifyContent="spaceBetween"
           dangerouslyAddClassName={positionStyles.relative}
         >
-          {renderLabel(label, hint, fieldId)}
+          {renderLabel(label, !hintId && hint, fieldId)}
 
           {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
         </Flexbox>
+
+        {hint && hintId && renderHint(hint, hintId)}
 
         {helper && renderHelper(helper, helperId, feedback, this.state.value)}
 
@@ -167,7 +182,7 @@ class FormField extends React.Component {
             onFocus: this.onFocus,
             onBlur: this.onBlur,
             'aria-invalid': feedback === 'error',
-            'aria-describedby': errorId || helperId || undefined,
+            'aria-describedby': errorId || hintId || helperId || undefined,
           },
           showIcon,
           feedback
@@ -180,6 +195,7 @@ class FormField extends React.Component {
 FormField.propTypes = {
   label: PropTypes.string.isRequired,
   hint: PropTypes.string,
+  hintPosition: PropTypes.oneOf(['inline', 'below']),
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   feedback: PropTypes.oneOf(['success', 'error']),
@@ -194,6 +210,7 @@ FormField.propTypes = {
 
 FormField.defaultProps = {
   hint: undefined,
+  hintPosition: 'inline',
   value: undefined,
   defaultValue: undefined,
   feedback: undefined,

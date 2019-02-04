@@ -1,1 +1,1 @@
-// FormField is used by Textarea and all functionality is tested through it.
+// FormField is used by Input, Textarea and Select, and all functionality is tested through them.
