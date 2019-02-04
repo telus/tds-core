@@ -7,7 +7,7 @@ let counter = 0
 const healthCheck = done => {
   request(healthCheckUrl, (err, response, body) => {
     if (!body && counter < 20) {
-      console.log(`${counter}/20 waiting for the styleguide to start.`)
+      console.log(`${counter}/20 waiting for the styleguide to start. Please wait...`)
       counter += 1
 
       setTimeout(healthCheck, 3000, done)
