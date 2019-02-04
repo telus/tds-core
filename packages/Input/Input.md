@@ -14,11 +14,16 @@ For information on how to use disabled Inputs, please refer to the [disabled for
 ```jsx
 <Box between={2}>
   <Input label="First name" value="Harry" />
-
   <Input type="tel" label="Mobile phone" pattern="[0-9]{10}" maxLength="10" />
   <Input type="password" label="Tax ID" value="123456789" autoComplete="on" />
 </Box>
 ```
+
+### Usage criteria
+
+- Use `hintPosition` to re-position the `hint` below the `label` if the inline `hint` wraps
+  - The `hint` should **not** be longer than 85 characters
+  - The `hint` should **not** wrap more than 3 lines on all viewport sizes
 
 ### Getting feedback for entered values
 
@@ -89,15 +94,14 @@ that the field is optional. It is a more usable and accessible option than the H
 <Input label="Transit number" hint="5 digits" type="number" />
 ```
 
-Use a `helper` message to show additional context that will guide the user while completing the form field.
+Use the `hintPosition` in conjunction with `hint` to display a larger hint text below the label.
 
 ```jsx
-const creditCards = (
-  <Text>
-    We accept the following credit cards: <Text bold>Visa, Mastercard, Discover</Text>.
-  </Text>
-)
-;<Input label="Credit Card Number" helper={creditCards} />
+<Input
+  label="Quick view"
+  hintPosition="below"
+  hint="Enter the account number in the box below to go to the overview page for that account."
+/>
 ```
 
 ### Default values
