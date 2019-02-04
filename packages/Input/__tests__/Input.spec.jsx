@@ -69,6 +69,22 @@ describe('Input', () => {
 
       expect(label).toContainReact(<Text size="small">The short hint</Text>)
     })
+
+    it('can have a long hint', () => {
+      const { input, findInputElement } = doMount({
+        id: 'the-id',
+        hint: 'The long hint over here',
+        hintPosition: 'below',
+      })
+
+      expect(input).toContainReact(
+        <Paragraph id="the-id_hint" size="small">
+          The long hint over here
+        </Paragraph>
+      )
+
+      expect(findInputElement()).toHaveProp('aria-describedby', 'the-id_hint')
+    })
   })
 
   describe('connecting the label to the input', () => {
