@@ -24,6 +24,9 @@ For information on how to use disabled Inputs, please refer to the [disabled for
 - Use `hintPosition` to re-position the `hint` below the `label` if the inline `hint` wraps
   - The `hint` should **not** be longer than 85 characters
   - The `hint` should **not** wrap more than 3 lines on all viewport sizes
+- Keep `error` text as brief as possible, should be limited to text and links
+  - We recommend `React.Fragment` when supplying custom content to the `error` prop
+  - Note that the `div` tag is not valid in a `p` tag
 
 ### Getting feedback for entered values
 
@@ -37,7 +40,12 @@ was correct, or highlight errors that must be corrected.
     label="Email"
     value="guest@telus.com"
     feedback="error"
-    error="That email is already associated with another account. Choose another one."
+    error={
+      <React.Fragment>
+        That email is already associated with another account.
+        <Link href="#">Choose another one.</Link>
+      </React.Fragment>
+    }
   />
 </Box>
 ```

@@ -64,7 +64,7 @@ Input.propTypes = {
   /**
    * An error message. Either an error or a helper should be used, not both.
    */
-  error: PropTypes.string,
+  error: PropTypes.node,
   /**
    * A detailed explanation of the input expected by a form field. Can be text,
    * other components, or HTML elements.
