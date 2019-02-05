@@ -204,7 +204,7 @@ FormField.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   feedback: PropTypes.oneOf(['success', 'error']),
-  error: PropTypes.string,
+  error: PropTypes.node,
   helper: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   tooltip: componentWithName('Tooltip'),
   onChange: PropTypes.func,
