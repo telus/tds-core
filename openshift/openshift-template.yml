@@ -77,7 +77,7 @@ items:
       strategy:
         type: Docker
         dockerStrategy:
-          dockerfilePath: Dockerfile
+          dockerfilePath: openshift/Dockerfile
           forcePull: true
       output:
         to:

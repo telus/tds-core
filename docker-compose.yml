@@ -12,6 +12,13 @@
 version: '3'
 services:
   lib:
+    container_name: tds
+    build:
+      context: .
+      dockerfile: openshift/Dockerfile
+    ports:
+      - '6060:6060'
+  ciboot:
     container_name: tds-core
     build: .
     ports:
@@ -35,7 +42,7 @@ services:
     ports:
       - 6060:6060
     depends_on:
-      - lib
+      - ciboot
     volumes:
       - './e2e/.:/tds-core/e2e/'
       - './scripts/.:/tds-core/scripts/'
