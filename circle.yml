@@ -85,7 +85,10 @@ jobs:
             - '83:1e:d9:b9:70:8d:4f:97:80:ca:81:79:f6:f4:ef:da'
       - run:
           name: Add Github Key
-          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          command: |
+            mkdir ~/.ssh
+            touch ~/.ssh/known_hosts
+            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Configure Git Config & Branch
           command: |
@@ -98,7 +101,8 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
       - run:
           name: Lerna Publish
-          command: npm run lerna:cipublish
+          command: npm whoami
+      - run: ls packages/Box/dist
 
   screenshots:
     executor: browsers
@@ -109,7 +113,10 @@ jobs:
             - '83:1e:d9:b9:70:8d:4f:97:80:ca:81:79:f6:f4:ef:da'
       - run:
           name: Add Github Key
-          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          command: |
+            mkdir ~/.ssh
+            touch ~/.ssh/known_hosts
+            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Configure Git Config & Branch
           command: |
@@ -131,7 +138,7 @@ jobs:
           command: |
             git add e2e
             git commit -m "test(e2e): update screenshots with version bump"
-            git push
+            git status
 
 workflows:
   version: 2
@@ -153,10 +160,7 @@ workflows:
 
       - approve-release:
           type: approval
-          requires: [build, lint, unit, e2e]
-          filters:
-            branches:
-              only: master
+          requires: [build]
 
       - release:
           context: npm-library
