@@ -28,8 +28,16 @@
   width: calc(100% - 2.5rem);
 }
 
+.withDismissIcon {
+  padding-right: 2rem;
+}
+
+.dismissContainer {
+  position: relative;
+}
+
 .dismiss {
   position: absolute;
-  top: 0.8rem;
-  right: 1rem;
+  top: -0.2rem;
+  right: 0rem;
 }
