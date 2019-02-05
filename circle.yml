@@ -85,7 +85,10 @@ jobs:
             - '83:1e:d9:b9:70:8d:4f:97:80:ca:81:79:f6:f4:ef:da'
       - run:
           name: Add Github Key
-          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          command: |
+            mkdir ~/.ssh
+            touch ~/.ssh/known_hosts
+            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Configure Git Config & Branch
           command: |
@@ -109,7 +112,10 @@ jobs:
             - '83:1e:d9:b9:70:8d:4f:97:80:ca:81:79:f6:f4:ef:da'
       - run:
           name: Add Github Key
-          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          command: |
+            mkdir ~/.ssh
+            touch ~/.ssh/known_hosts
+            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Configure Git Config & Branch
           command: |
