@@ -116,6 +116,7 @@ jobs:
             git status
             git config --global user.email "tds.github.bot@gmail.com"
             git config --global user.name "TDSBot"
+            git pull
       - run:
           name: Prepare node-sass
           command: npm rebuild node-sass
@@ -163,4 +164,4 @@ workflows:
           requires: [approve-release]
 
       - screenshots:
-          requires: [release]
+          requires: [build]
