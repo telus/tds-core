@@ -85,8 +85,7 @@ jobs:
             - '16:04:2d:ed:15:8d:0b:56:ea:ee:82:6e:01:a4:5b:09'
       - run:
           name: Add Github Key
-          command: |
-            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Configure Git Config & Branch
           command: |
@@ -110,8 +109,7 @@ jobs:
             - '16:04:2d:ed:15:8d:0b:56:ea:ee:82:6e:01:a4:5b:09'
       - run:
           name: Add Github Key
-          command: |
-            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Configure Git Config & Branch
           command: |
