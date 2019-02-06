@@ -25,5 +25,5 @@ See <!-- put issue number here, or delete this section -->
 
 - [ ] New code is unit tested
 - Commits follow our [Developer Guide](https://tds.telus.com/contributing/developer-guide.html#make-a-commit)
-- [ ] For code changes, run `yarn prepr` locally
+- [ ] For code changes, run `npm run prepr` locally
   - make sure visual and accessibility tests pass
