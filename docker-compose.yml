@@ -5,7 +5,7 @@
 # `docker-compose build` --> Build the image. Do this first.
 # `docker images` --> View the image you just built
 
-# `docker-compose run lib <command>` --> <command> and any arguments will be forwarded onto the Dockerfile entrypoint, "yarn".
+# `docker-compose run lib <command>` --> <command> and any arguments will be forwarded onto the Dockerfile entrypoint, "npm run".
 # `docker-compose run lib test` --> Run tests.
 # `docker-compose run --service-ports -d lib test:e2e -- -a` --> Start the styleguidist dev server.
 
