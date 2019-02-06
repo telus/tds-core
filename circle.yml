@@ -67,14 +67,27 @@ jobs:
       - run: npm run test:e2e-direct -- -a
 
   prepr:
-    executor: prepr
+    executor: builder
     steps:
       - attach
-      - run: sudo apt-get update -y
-      - run: sudo apt-get install -y expect
+      - add_ssh_keys:
+          fingerprints:
+            - '16:04:2d:ed:15:8d:0b:56:ea:ee:82:6e:01:a4:5b:09'
       - run:
-          name: TDS Bot Analysis
-          command: if [ "$CIRCLE_PULL_REQUEST" != "" ]; then scripts/prePr.sh ; node ./scripts/circleci/github-pr.js ; fi
+          name: Add Github Key
+          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - run:
+          name: Configure Git Config & Branch
+          command: |
+            git status
+            git config --global user.email "tds.github.bot@gmail.com"
+            git config --global user.name "TDSBot"
+            git fetch origin --tags
+      - run: echo wowowowowowowowowowowowowowowowwowowowowowowowowowowowowowowowowowow >> packages/Box/Box.md
+      - run: |
+          git add .
+          git commit -m "chore(core-box): test e2e"
+          git push --set-upstream origin test-screenshots
 
   release:
     executor: builder
@@ -114,8 +127,12 @@ jobs:
           name: Configure Git Config & Branch
           command: |
             git status
+            git branch -vv
+            git fetch --all
+            git branch -vv
             git config --global user.email "tds.github.bot@gmail.com"
             git config --global user.name "TDSBot"
+            git pull origin test-screenshots
       - run:
           name: Prepare node-sass
           command: npm rebuild node-sass
@@ -131,7 +148,7 @@ jobs:
           command: |
             git add e2e
             git commit -m "test(e2e): update screenshots with version bump"
-            git push
+            git push --set-upstream origin test-screenshots
 
 workflows:
   version: 2
@@ -146,10 +163,10 @@ workflows:
           requires: [build]
 
       - e2e:
-          requires: [build]
+          requires: [screenshots]
 
       - prepr:
-          requires: [build, lint, unit, e2e]
+          requires: [build]
 
       - approve-release:
           type: approval
@@ -163,4 +180,4 @@ workflows:
           requires: [approve-release]
 
       - screenshots:
-          requires: [release]
+          requires: [prepr]
