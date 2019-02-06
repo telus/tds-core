@@ -25,8 +25,7 @@ We utilize the following tools for the development, release, and distribution pr
 - Linters and Prettier: standardize code style and format
 - [CSS Modules](https://github.com/css-modules/css-modules): facilitates the buildup of scoped
   CSS while maintaining the familiar interface of SCSS
-- [Yarn](https://yarnpkg.com/en/): we chose Yarn as our node package
-  manager for its speed and deep dependency version locking
+- [NPM](https://www.npmjs.com/): we use NPM as our node package manager
 - [Openshift](https://www.openshift.com/) and [Docker](https://www.docker.com/): the CI pipeline is largely
   based on the TELUS isomorphic starter kit pipeline, using Docker as the build artifact
 - [Lerna](https://lernajs.io/): A tool for managing JavaScript projects with multiple packages.
@@ -76,7 +75,7 @@ the more subjective rules we uphold.
 When starting fresh, you can use the scaffolding script to generate a component directory structure:
 
 ```sh
-yarn scaffold [ComponentName]
+npm run scaffold [ComponentName]
 ```
 
 This will output a set of files in the aforementioned structure.
