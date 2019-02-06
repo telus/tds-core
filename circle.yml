@@ -86,8 +86,6 @@ jobs:
       - run:
           name: Add Github Key
           command: |
-            mkdir ~/.ssh
-            touch ~/.ssh/known_hosts
             ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Configure Git Config & Branch
@@ -113,8 +111,6 @@ jobs:
       - run:
           name: Add Github Key
           command: |
-            mkdir ~/.ssh
-            touch ~/.ssh/known_hosts
             ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Configure Git Config & Branch
