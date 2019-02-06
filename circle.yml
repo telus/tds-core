@@ -82,7 +82,7 @@ jobs:
       - attach
       - add_ssh_keys:
           fingerprints:
-            - '83:1e:d9:b9:70:8d:4f:97:80:ca:81:79:f6:f4:ef:da'
+            - '16:04:2d:ed:15:8d:0b:56:ea:ee:82:6e:01:a4:5b:09'
       - run:
           name: Add Github Key
           command: |
@@ -109,7 +109,7 @@ jobs:
       - attach
       - add_ssh_keys:
           fingerprints:
-            - '83:1e:d9:b9:70:8d:4f:97:80:ca:81:79:f6:f4:ef:da'
+            - '16:04:2d:ed:15:8d:0b:56:ea:ee:82:6e:01:a4:5b:09'
       - run:
           name: Add Github Key
           command: |
