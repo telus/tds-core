@@ -164,4 +164,4 @@ workflows:
           requires: [approve-release]
 
       - screenshots:
-          requires: [build]
+          requires: [release]
