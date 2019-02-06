@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-display-heading",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Large page titles",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,8 +28,8 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.0",
-    "@tds/core-responsive": "^1.1.0",
-    "@tds/shared-typography": "^1.1.0"
+    "@tds/core-colours": "^1.0.1",
+    "@tds/core-responsive": "^1.1.1",
+    "@tds/shared-typography": "^1.1.1"
   }
 }

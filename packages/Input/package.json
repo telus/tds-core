@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-input",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -24,18 +24,18 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.0.1",
-    "@tds/core-input-feedback": "^1.0.2",
-    "@tds/core-paragraph": "^1.0.4",
-    "@tds/core-standalone-icon": "^1.0.0",
-    "@tds/core-text": "^1.0.4",
-    "@tds/util-prop-types": "^1.2.0",
+    "@tds/core-box": "^1.0.2",
+    "@tds/core-input-feedback": "^1.0.3",
+    "@tds/core-paragraph": "^1.0.5",
+    "@tds/core-standalone-icon": "^1.0.1",
+    "@tds/core-text": "^1.0.5",
+    "@tds/util-prop-types": "^1.2.1",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.0",
-    "@tds/shared-animation": "^1.0.2",
-    "@tds/shared-form-field": "^1.0.10",
+    "@tds/core-colours": "^1.0.1",
+    "@tds/shared-animation": "^1.0.3",
+    "@tds/shared-form-field": "^1.0.11",
     "react-transition-group": "^2.2.1"
   }
 }

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/telusdigital/tds/compare/@tds/core-strong@1.0.4...@tds/core-strong@1.0.5) (2019-02-06)
+
+**Note:** Version bump only for package @tds/core-strong
+
+
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/telusdigital/tds/compare/@tds/core-strong@1.0.3...@tds/core-strong@1.0.4) (2018-12-19)
 

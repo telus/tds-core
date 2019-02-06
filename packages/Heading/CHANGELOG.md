@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.6](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.1.5...@tds/core-heading@1.1.6) (2019-02-06)
+
+**Note:** Version bump only for package @tds/core-heading
+
+
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.1.4...@tds/core-heading@1.1.5) (2018-12-19)
 
