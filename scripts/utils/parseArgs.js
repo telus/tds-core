@@ -2,9 +2,9 @@ const parseArgs = require('minimist')
 
 const TDS_OPTIONS = ['-a', '--all', '-u', '--update-screenshots']
 
-let originalArgs = process.argv.slice(2).filter(arg => arg !== '')
+let originalArgs = process.argv.slice(2)
 
-if (originalArgs[0]) {
+if (originalArgs.length === 1) {
   originalArgs = originalArgs[0].split(' ')
 }
 
