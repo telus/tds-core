@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.5](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.4...@tds/core-flex-grid@2.3.5) (2019-02-07)
+
+
+### Bug Fixes
+
+* **core-flex-grid:** adjust css output to be mobile-first ([431cb43](https://github.com/telusdigital/tds/commit/431cb43)), closes [#899](https://github.com/telusdigital/tds/issues/899)
+
+
+
+
+
 ## [2.3.4](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.3...@tds/core-flex-grid@2.3.4) (2019-02-06)
 
 **Note:** Version bump only for package @tds/core-flex-grid
