@@ -10,7 +10,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "bootstrap": "npm install && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose build",
+    "bootstrap": "npm install && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose build ciboot && docker-compose build e2e",
     "bootstrap:ci": "npm ci && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all",
     "build": "node scripts/build.js",
     "build-docs:gitbook": "gitbook build guide",
