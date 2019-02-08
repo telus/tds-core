@@ -40,5 +40,3 @@ oc run ${NAME}-${VERSION} \
       }]
     }
   }'
-
-# oc rollout status dc/telus-isomorphic-starter-kit-${ENVIRONMENT} --watch
