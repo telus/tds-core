@@ -124,6 +124,7 @@ def build(Map attrs) {
     unstash 'scripts'
     ansiColor('xterm') {
       sh("./openshift/run-build.sh ${attrs.name} ${attrs.buildVersion} ${attrs.gitCommitId}")
+    }
   }
 }
 
