@@ -1,10 +1,10 @@
 ![TELUS Design System](https://cdn.rawgit.com/telusdigital/tds-core/1627991c/guide/Logo.svg)
 
-# [TELUS Design System](https://tds.telus.com) [![license](https://img.shields.io/github/license/telusdigital/tds.svg)](https://github.com/telusdigital/tds-core/blob/master/LICENSE.md)
+# [TELUS Design System](https://tds.telus.com) ![license](https://img.shields.io/github/license/telus/tds-core.svg?style=flat-square)
 
 [![Build Status][circle-image]][circle-url]
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
 > TELUS Design System core components
 
