@@ -181,7 +181,7 @@ class Choice extends React.Component {
 Choice.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   name: PropTypes.string.isRequired,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool]).isRequired,
   description: PropTypes.string,
   checked: PropTypes.bool.isRequired,
   feedback: PropTypes.oneOf(['error']),
