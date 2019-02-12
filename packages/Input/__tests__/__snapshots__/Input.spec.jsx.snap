@@ -29,7 +29,6 @@ exports[`Input renders 1`] = `
       class="default hideNumberSpinner input"
       id="the-input"
       type="text"
-      value=""
     />
     <div
       class="iconsPosition"
@@ -68,7 +67,6 @@ exports[`Input renders with a feedback state and icon 1`] = `
       id="the-input"
       style="padding-right:calc(16px + 2rem)"
       type="text"
-      value=""
     />
     <div
       class="iconsPosition"

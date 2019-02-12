@@ -70,7 +70,7 @@ const validate = event => {
   }
 }
 
-<Input
+;<Input
   label="Name"
   value={state.value}
   feedback={state.status}
@@ -98,4 +98,23 @@ const creditCards = (
   </Text>
 )
 ;<Input label="Credit Card Number" helper={creditCards} />
+```
+
+### Default values ([React uncontrolled components](https://reactjs.org/docs/uncontrolled-components.html))
+
+Use a `defaultValue` to prefill the input with human readable data. To handle any input changes use `onChange` prop.
+
+_NOTE:_ Only one of `defaultValue` or `value` can be set.
+
+```jsx
+initialState = {
+  value: 'Not set yet',
+}
+const onChange = evt => {
+  setState({ value: evt.target.value })
+}
+;<Box between={2}>
+  <Text>Value: {state.value}</Text>
+  <Input label="First name" type="text" defaultValue="Harry" onChange={onChange} />
+</Box>
 ```
