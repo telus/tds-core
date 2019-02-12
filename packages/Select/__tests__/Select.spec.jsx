@@ -117,7 +117,7 @@ describe('Select', () => {
   describe('editability', () => {
     it('supports string values or number values', () => {
       let findSelectElement = doMount().findSelectElement
-      expect(findSelectElement()).toHaveValue('')
+      expect(findSelectElement()).toHaveValue(undefined)
 
       findSelectElement = doMount({ value: 'some value' }).findSelectElement
       expect(findSelectElement()).toHaveValue('some value')
