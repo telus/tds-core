@@ -115,6 +115,6 @@ const onChange = evt => {
 }
 ;<Box between={2}>
   <Text>Value: {state.value}</Text>
-  <Input label="First name" type="text" defaultValue="Harry" onChange={onChange} />
+  <Input label="Last name" type="text" defaultValue="Potter" onChange={onChange} />
 </Box>
 ```
