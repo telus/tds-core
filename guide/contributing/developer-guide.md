@@ -4,6 +4,7 @@
 
 - [Git](https://git-scm.com/)
 - [Node.JS](https://nodejs.org) >= 8.0
+- [Docker and Docker Compose](https://www.docker.com/get-started)
 
 ## Set up your environment
 
@@ -12,7 +13,7 @@ If you are not part of the TELUS digital organization, you may fork the reposito
 
 GitHub has primers on [how to fork a repository](https://help.github.com/articles/fork-a-repo/) and [how to clone a repository](https://help.github.com/articles/cloning-a-repository/).
 
-Before getting started, you should also install [Docker](https://github.com/telus/reference-architecture/blob/master/delivery/docker.md). This enables our e2e tests, and all tests passing is essential to for a successful TDS contribution. If Docker is not installed, the following step will not complete successfully.
+Before getting started, you should also install [Docker](https://github.com/telus/reference-architecture/blob/master/delivery/docker.md). This facilitates our e2e tests to ensure they are tested in a reproducible environment, and having all tests pass is essential to a successful TDS contribution. If Docker is not installed, the following steps will not complete successfully.
 
 After setting up TDS locally, the following steps will get you started:
 
