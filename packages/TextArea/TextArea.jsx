@@ -93,7 +93,7 @@ TextArea.propTypes = {
 
 TextArea.defaultProps = {
   hint: undefined,
-  value: '',
+  value: undefined,
   feedback: undefined,
   error: undefined,
   helper: undefined,

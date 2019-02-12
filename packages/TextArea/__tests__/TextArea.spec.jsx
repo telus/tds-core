@@ -100,7 +100,7 @@ describe('TextArea', () => {
   describe('editability', () => {
     it('supports string values or number values', () => {
       let findTextAreaElement = doMount().findTextAreaElement
-      expect(findTextAreaElement()).toHaveValue('')
+      expect(findTextAreaElement()).toHaveValue(undefined)
 
       findTextAreaElement = doMount({ value: 'some value' }).findTextAreaElement
       expect(findTextAreaElement()).toHaveValue('some value')
