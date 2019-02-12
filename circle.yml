@@ -25,6 +25,11 @@ commands:
       - attach_workspace:
           at: .
 
+  expect:
+    steps:
+      - run: sudo apt-get update -y
+      - run: sudo apt-get install -y expect
+
   install:
     steps:
       - run:
@@ -66,15 +71,23 @@ jobs:
           background: true
       - run: npm run test:e2e-direct -- -a
 
-  prepr:
+  prepr-log:
     executor: prepr
     steps:
       - attach
-      - run: sudo apt-get update -y
-      - run: sudo apt-get install -y expect
+      - expect
       - run:
-          name: TDS Bot Analysis
-          command: if [ "$CIRCLE_PULL_REQUEST" != "" ]; then scripts/prePr.sh ; node ./scripts/circleci/github-pr.js ; fi
+          name: Package version bumps
+          command: scripts/prePr.sh
+
+  prepr-bot:
+    executor: prepr
+    steps:
+      - attach
+      - expect
+      - run:
+          name: TDS Bot output
+          command: if [ "$CI_PULL_REQUEST" != "" ]; then node ./scripts/circleci/github-pr.js; fi
 
   release:
     executor: builder
@@ -149,12 +162,21 @@ workflows:
       - e2e:
           requires: [build]
 
-      - prepr:
+      - prepr-bot:
           requires: [build, lint, unit, e2e]
+          filters:
+            branches:
+              ignore: master
+
+      - prepr-log:
+          requires: [build, lint, unit, e2e]
+          filters:
+            branches:
+              only: master
 
       - approve-release:
           type: approval
-          requires: [build, lint, unit, e2e]
+          requires: [build, lint, unit, e2e, prepr-log]
           filters:
             branches:
               only: master
