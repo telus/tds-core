@@ -78,6 +78,8 @@ class FormField extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    if (this.props.defaultValue) return
+
     if (this.state.value !== nextProps.value) {
       this.setState({
         value: nextProps.value,
@@ -86,7 +88,15 @@ class FormField extends React.Component {
   }
 
   onChange = event => {
-    const { onChange } = this.props
+    const { onChange, defaultValue } = this.props
+
+    // don't setState for uncontrolled components (defaultValue set)
+    if (defaultValue) {
+      if (onChange) {
+        onChange(event)
+      }
+      return
+    }
 
     event.persist()
 
@@ -152,7 +162,7 @@ class FormField extends React.Component {
             ...safeRest(rest),
             id: fieldId.identity(),
             className: getClassName(feedback, this.state.focus, rest.disabled),
-            value: this.state.value,
+            value: this.state.value || undefined,
             onChange: this.onChange,
             onFocus: this.onFocus,
             onBlur: this.onBlur,
@@ -170,7 +180,8 @@ class FormField extends React.Component {
 FormField.propTypes = {
   label: PropTypes.string.isRequired,
   hint: PropTypes.string,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   feedback: PropTypes.oneOf(['success', 'error']),
   error: PropTypes.string,
   helper: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
@@ -183,6 +194,8 @@ FormField.propTypes = {
 
 FormField.defaultProps = {
   hint: undefined,
+  value: undefined,
+  defaultValue: undefined,
   feedback: undefined,
   error: undefined,
   helper: undefined,
