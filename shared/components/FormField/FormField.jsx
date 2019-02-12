@@ -162,7 +162,7 @@ class FormField extends React.Component {
             ...safeRest(rest),
             id: fieldId.identity(),
             className: getClassName(feedback, this.state.focus, rest.disabled),
-            value: this.state.value || undefined,
+            value: this.state.value,
             onChange: this.onChange,
             onFocus: this.onFocus,
             onBlur: this.onBlur,
