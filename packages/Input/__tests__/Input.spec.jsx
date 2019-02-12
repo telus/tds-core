@@ -107,7 +107,7 @@ describe('Input', () => {
   describe('editability', () => {
     it('supports string values or number values', () => {
       let findInputElement = doMount().findInputElement
-      expect(findInputElement()).toHaveValue('')
+      expect(findInputElement()).toHaveValue(undefined)
 
       findInputElement = doMount({ value: 'some value' }).findInputElement
       expect(findInputElement()).toHaveValue('some value')
@@ -143,6 +143,17 @@ describe('Input', () => {
       input.setProps({ value: 'new value' })
 
       expect(findInputElement()).toHaveValue('new value')
+    })
+  })
+
+  describe('default values', () => {
+    it('can be mounted with default value', () => {
+      const { findInputElement, changeValueTo } = doMount({ defaultValue: 'initial value' })
+      expect(findInputElement()).toHaveValue(undefined)
+
+      changeValueTo('new value')
+
+      expect(findInputElement()).toHaveValue(undefined)
     })
   })
 

@@ -101,7 +101,7 @@ Input.propTypes = {
 Input.defaultProps = {
   type: 'text',
   hint: undefined,
-  value: '',
+  value: undefined,
   feedback: undefined,
   error: undefined,
   helper: undefined,
