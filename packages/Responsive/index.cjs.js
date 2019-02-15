@@ -1,3 +1,5 @@
+const media = require('./dist/index.cjs').media
 const Responsive = require('./dist/index.cjs')
 
-module.exports = Responsive
+exports.default = Responsive
+exports.media = media

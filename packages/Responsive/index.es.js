@@ -1,3 +1,4 @@
-import Responsive from './dist/index.es'
+import Responsive, { media } from './dist/index.es'
 
+export { media }
 export default Responsive
