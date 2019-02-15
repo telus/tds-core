@@ -144,7 +144,7 @@ jobs:
           name: Commit updated e2e screenshots
           command: |
             if [[ $(git diff --name-only) ]]
-              git add e2e
+              then git add e2e
               git commit -m "test(e2e): update screenshots with version bump"
               git push
             else
