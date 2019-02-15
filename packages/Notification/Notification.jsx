@@ -153,10 +153,14 @@ Notification.propTypes = {
   variant: PropTypes.oneOf(['instructional', 'branded', 'success', 'error']),
   /**
    * Whether or not to allow the Notificiation to be dismissed.
+   *
+   * @since 1.2.0
    */
   dismissible: PropTypes.bool,
   /**
    * A label for assistive technology
+   *
+   * @since 1.2.0
    */
   dismissibleA11yLabel: PropTypes.string,
   /**
