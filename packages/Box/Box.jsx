@@ -5,6 +5,24 @@ import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
 import safeRest from '../../shared/utils/safeRest'
 
+const isObject = item => {
+  return item && typeof item === 'object' && !Array.isArray(item) && item !== null
+}
+
+const mergeDeep = (target, source) => {
+  if (isObject(target) && isObject(source)) {
+    Object.keys(source).forEach(key => {
+      if (isObject(source[key])) {
+        if (!target[key]) Object.assign(target, { [key]: {} })
+        mergeDeep(target[key], source[key])
+      } else {
+        Object.assign(target, { [key]: source[key] })
+      }
+    })
+  }
+  return target
+}
+
 const spacing = {
   mobile: {
     1: '0.25rem',
@@ -35,7 +53,7 @@ const boxSpacing = (level, f) => {
   }
   const desktopStyle = media.from('md')(f(spacing.desktop[level]))
 
-  return Object.assign({}, mobileStyle, desktopStyle)
+  return mergeDeep(mobileStyle, desktopStyle)
 }
 
 const flexDirectionStyles = ({ inline }) => ({ flexDirection: inline ? 'row' : 'column' })
@@ -84,7 +102,7 @@ const insetStyles = ({ inset }) => {
   const vertical = verticalStyles({ vertical: inset })
   const horizontal = horizontalStyles({ horizontal: inset })
 
-  return Object.assign({}, vertical, horizontal)
+  return mergeDeep(vertical, horizontal)
 }
 
 const belowStyles = ({ below }) => {
@@ -97,11 +115,6 @@ const belowStyles = ({ below }) => {
   }))
 }
 
-/**
- * Apply spacing within or around components.
- *
- * @version ./package.json
- */
 const StyledBox = styled.div(props => ({
   display: props.between ? 'flex' : 'block',
   ...flexDirectionStyles(props),
@@ -112,6 +125,11 @@ const StyledBox = styled.div(props => ({
   ...belowStyles(props),
 }))
 
+/**
+ * Apply spacing within or around components.
+ *
+ * @version ./package.json
+ */
 const Box = ({ dangerouslyAddClassName, tag, ...rest }) => (
   <StyledBox {...safeRest(rest)} as={tag} className={dangerouslyAddClassName} />
 )
