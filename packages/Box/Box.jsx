@@ -4,24 +4,7 @@ import styled from 'styled-components'
 
 import { media } from '@tds/core-responsive'
 import safeRest from '../../shared/utils/safeRest'
-
-const isObject = item => {
-  return item && typeof item === 'object' && !Array.isArray(item) && item !== null
-}
-
-const mergeDeep = (target, source) => {
-  if (isObject(target) && isObject(source)) {
-    Object.keys(source).forEach(key => {
-      if (isObject(source[key])) {
-        if (!target[key]) Object.assign(target, { [key]: {} })
-        mergeDeep(target[key], source[key])
-      } else {
-        Object.assign(target, { [key]: source[key] })
-      }
-    })
-  }
-  return target
-}
+import deepMerge from '../../shared/utils/deepMerge'
 
 const spacing = {
   mobile: {
@@ -53,7 +36,7 @@ const boxSpacing = (level, f) => {
   }
   const desktopStyle = media.from('md')(f(spacing.desktop[level]))
 
-  return mergeDeep(mobileStyle, desktopStyle)
+  return deepMerge(mobileStyle, desktopStyle)
 }
 
 const flexDirectionStyles = ({ inline }) => ({ flexDirection: inline ? 'row' : 'column' })
@@ -102,7 +85,7 @@ const insetStyles = ({ inset }) => {
   const vertical = verticalStyles({ vertical: inset })
   const horizontal = horizontalStyles({ horizontal: inset })
 
-  return mergeDeep(vertical, horizontal)
+  return deepMerge(vertical, horizontal)
 }
 
 const belowStyles = ({ below }) => {
