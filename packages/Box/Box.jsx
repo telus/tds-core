@@ -98,15 +98,17 @@ const belowStyles = ({ below }) => {
   }))
 }
 
-const StyledBox = styled.div(props => ({
-  display: props.between ? 'flex' : 'block',
-  ...flexDirectionStyles(props),
-  ...betweenStyles(props),
-  ...horizontalStyles(props),
-  ...verticalStyles(props),
-  ...insetStyles(props),
-  ...belowStyles(props),
-}))
+const StyledBox = styled.div(props =>
+  deepMerge(
+    { display: props.between ? 'flex' : 'block' },
+    flexDirectionStyles(props),
+    betweenStyles(props),
+    horizontalStyles(props),
+    verticalStyles(props),
+    insetStyles(props),
+    belowStyles(props)
+  )
+)
 
 /**
  * Apply spacing within or around components.
