@@ -1,6 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ExpandCollapse renders a closed panel 1`] = `
+.c0 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c2 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 <ExpandCollapse
   open={Array []}
   topDivider={true}
@@ -58,115 +101,185 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                   tag="div"
                   vertical={3}
                 >
-                  <div
-                    className="TDS_Box-modules__verticalPadding-3___Fsv37"
+                  <Box__StyledBox
+                    as="div"
+                    inline={false}
+                    vertical={3}
                   >
-                    <Box
-                      between={3}
-                      inline={true}
-                      tag="div"
+                    <StyledComponent
+                      as="div"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Box__StyledBox-jip4n1-0",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Box__StyledBox",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Box__StyledBox-jip4n1-0",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      inline={false}
+                      vertical={3}
                     >
                       <div
-                        className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+                        className="c0"
                       >
-                        <div>
-                          <Translate
-                            direction="y"
-                            distance="0.25rem"
-                            in={false}
-                            timeout={300}
-                          >
-                            <Transition
-                              appear={false}
-                              enter={true}
-                              exit={true}
-                              in={false}
-                              mountOnEnter={false}
-                              onEnter={[Function]}
-                              onEntered={[Function]}
-                              onEntering={[Function]}
-                              onExit={[Function]}
-                              onExited={[Function]}
-                              onExiting={[Function]}
-                              timeout={300}
-                              unmountOnExit={false}
-                            >
-                              <div
-                                style={
-                                  Object {
-                                    "transition": "transform 300ms",
-                                  }
-                                }
-                              >
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="large"
-                                >
-                                  <span
-                                    className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
-                                  >
-                                    <DecorativeIcon
-                                      size={16}
-                                      symbol="caretDown"
-                                      variant="primary"
-                                    >
-                                      <Icon
-                                        aria-hidden="true"
-                                        size={16}
-                                        symbol="caretDown"
-                                        variant="primary"
-                                      >
-                                        <i
-                                          aria-hidden="true"
-                                          className="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
-                                        />
-                                      </Icon>
-                                    </DecorativeIcon>
-                                  </span>
-                                </Text>
-                              </div>
-                            </Transition>
-                          </Translate>
-                        </div>
-                        <Flexbox
-                          dangerouslyAddClassName="headerAlign"
-                          direction="row"
+                        <Box
+                          between={3}
+                          inline={true}
+                          tag="div"
                         >
-                          <div
-                            className="row headerAlign"
+                          <Box__StyledBox
+                            as="div"
+                            between={3}
+                            inline={true}
                           >
-                            <Flexbox
-                              dangerouslyAddClassName="headerAlign"
-                              direction="column"
+                            <StyledComponent
+                              as="div"
+                              between={3}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Box__StyledBox-jip4n1-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Box__StyledBox",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Box__StyledBox-jip4n1-0",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              inline={true}
                             >
                               <div
-                                className="column headerAlign"
+                                className="c1"
                               >
-                                <div
-                                  className="fullWidth"
-                                >
-                                  <Text
-                                    block={false}
-                                    bold={false}
-                                    invert={false}
-                                    size="large"
+                                <div>
+                                  <Translate
+                                    direction="y"
+                                    distance="0.25rem"
+                                    in={false}
+                                    timeout={300}
                                   >
-                                    <span
-                                      className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                    <Transition
+                                      appear={false}
+                                      enter={true}
+                                      exit={true}
+                                      in={false}
+                                      mountOnEnter={false}
+                                      onEnter={[Function]}
+                                      onEntered={[Function]}
+                                      onEntering={[Function]}
+                                      onExit={[Function]}
+                                      onExited={[Function]}
+                                      onExiting={[Function]}
+                                      timeout={300}
+                                      unmountOnExit={false}
                                     >
-                                      Panel title
-                                    </span>
-                                  </Text>
+                                      <div
+                                        style={
+                                          Object {
+                                            "transition": "transform 300ms",
+                                          }
+                                        }
+                                      >
+                                        <Text
+                                          block={false}
+                                          bold={false}
+                                          invert={false}
+                                          size="large"
+                                        >
+                                          <span
+                                            className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                          >
+                                            <DecorativeIcon
+                                              size={16}
+                                              symbol="caretDown"
+                                              variant="primary"
+                                            >
+                                              <Icon
+                                                aria-hidden="true"
+                                                size={16}
+                                                symbol="caretDown"
+                                                variant="primary"
+                                              >
+                                                <i
+                                                  aria-hidden="true"
+                                                  className="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
+                                                />
+                                              </Icon>
+                                            </DecorativeIcon>
+                                          </span>
+                                        </Text>
+                                      </div>
+                                    </Transition>
+                                  </Translate>
                                 </div>
+                                <Flexbox
+                                  dangerouslyAddClassName="headerAlign"
+                                  direction="row"
+                                >
+                                  <div
+                                    className="row headerAlign"
+                                  >
+                                    <Flexbox
+                                      dangerouslyAddClassName="headerAlign"
+                                      direction="column"
+                                    >
+                                      <div
+                                        className="column headerAlign"
+                                      >
+                                        <div
+                                          className="fullWidth"
+                                        >
+                                          <Text
+                                            block={false}
+                                            bold={false}
+                                            invert={false}
+                                            size="large"
+                                          >
+                                            <span
+                                              className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                            >
+                                              Panel title
+                                            </span>
+                                          </Text>
+                                        </div>
+                                      </div>
+                                    </Flexbox>
+                                  </div>
+                                </Flexbox>
                               </div>
-                            </Flexbox>
-                          </div>
-                        </Flexbox>
+                            </StyledComponent>
+                          </Box__StyledBox>
+                        </Box>
                       </div>
-                    </Box>
-                  </div>
+                    </StyledComponent>
+                  </Box__StyledBox>
                 </Box>
               </button>
             </Clickable>
@@ -217,31 +330,66 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                       inset={4}
                       tag="div"
                     >
-                      <div
-                        className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-4___QMNNa"
+                      <Box__StyledBox
+                        as="div"
+                        inline={false}
+                        inset={4}
                       >
-                        <Text
-                          block={true}
-                          bold={false}
-                          invert={false}
-                          size="base"
+                        <StyledComponent
+                          as="div"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Box__StyledBox-jip4n1-0",
+                                "isStatic": false,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Box__StyledBox",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Box__StyledBox-jip4n1-0",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          inline={false}
+                          inset={4}
                         >
-                          <span
-                            className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__blockText___2DsZN"
+                          <div
+                            className="c2"
                           >
-                            <Panel
-                              disabled={false}
-                              header="Panel title"
-                              id="panel-1"
-                              key=".0"
+                            <Text
+                              block={true}
+                              bold={false}
+                              invert={false}
+                              size="base"
                             >
-                              <div>
-                                Panel content
-                              </div>
-                            </Panel>
-                          </span>
-                        </Text>
-                      </div>
+                              <span
+                                className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__blockText___2DsZN"
+                              >
+                                <Panel
+                                  disabled={false}
+                                  header="Panel title"
+                                  id="panel-1"
+                                  key=".0"
+                                >
+                                  <div>
+                                    Panel content
+                                  </div>
+                                </Panel>
+                              </span>
+                            </Text>
+                          </div>
+                        </StyledComponent>
+                      </Box__StyledBox>
                     </Box>
                   </div>
                 </div>
@@ -264,6 +412,49 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
 `;
 
 exports[`ExpandCollapse renders an open panel 1`] = `
+.c0 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c2 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 <ExpandCollapse
   open={
     Array [
@@ -333,115 +524,185 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                   tag="div"
                   vertical={3}
                 >
-                  <div
-                    className="TDS_Box-modules__verticalPadding-3___Fsv37"
+                  <Box__StyledBox
+                    as="div"
+                    inline={false}
+                    vertical={3}
                   >
-                    <Box
-                      between={3}
-                      inline={true}
-                      tag="div"
+                    <StyledComponent
+                      as="div"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Box__StyledBox-jip4n1-0",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Box__StyledBox",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Box__StyledBox-jip4n1-0",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      inline={false}
+                      vertical={3}
                     >
                       <div
-                        className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+                        className="c0"
                       >
-                        <div>
-                          <Translate
-                            direction="y"
-                            distance="-0.25rem"
-                            in={false}
-                            timeout={300}
-                          >
-                            <Transition
-                              appear={false}
-                              enter={true}
-                              exit={true}
-                              in={false}
-                              mountOnEnter={false}
-                              onEnter={[Function]}
-                              onEntered={[Function]}
-                              onEntering={[Function]}
-                              onExit={[Function]}
-                              onExited={[Function]}
-                              onExiting={[Function]}
-                              timeout={300}
-                              unmountOnExit={false}
-                            >
-                              <div
-                                style={
-                                  Object {
-                                    "transition": "transform 300ms",
-                                  }
-                                }
-                              >
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="large"
-                                >
-                                  <span
-                                    className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
-                                  >
-                                    <DecorativeIcon
-                                      size={16}
-                                      symbol="caretUp"
-                                      variant="primary"
-                                    >
-                                      <Icon
-                                        aria-hidden="true"
-                                        size={16}
-                                        symbol="caretUp"
-                                        variant="primary"
-                                      >
-                                        <i
-                                          aria-hidden="true"
-                                          className="TDS_Icon-modules__iconCaretUp___3PL_K TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
-                                        />
-                                      </Icon>
-                                    </DecorativeIcon>
-                                  </span>
-                                </Text>
-                              </div>
-                            </Transition>
-                          </Translate>
-                        </div>
-                        <Flexbox
-                          dangerouslyAddClassName="headerAlign"
-                          direction="row"
+                        <Box
+                          between={3}
+                          inline={true}
+                          tag="div"
                         >
-                          <div
-                            className="row headerAlign"
+                          <Box__StyledBox
+                            as="div"
+                            between={3}
+                            inline={true}
                           >
-                            <Flexbox
-                              dangerouslyAddClassName="headerAlign"
-                              direction="column"
+                            <StyledComponent
+                              as="div"
+                              between={3}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Box__StyledBox-jip4n1-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Box__StyledBox",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Box__StyledBox-jip4n1-0",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              inline={true}
                             >
                               <div
-                                className="column headerAlign"
+                                className="c1"
                               >
-                                <div
-                                  className="fullWidth"
-                                >
-                                  <Text
-                                    block={false}
-                                    bold={false}
-                                    invert={false}
-                                    size="large"
+                                <div>
+                                  <Translate
+                                    direction="y"
+                                    distance="-0.25rem"
+                                    in={false}
+                                    timeout={300}
                                   >
-                                    <span
-                                      className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                    <Transition
+                                      appear={false}
+                                      enter={true}
+                                      exit={true}
+                                      in={false}
+                                      mountOnEnter={false}
+                                      onEnter={[Function]}
+                                      onEntered={[Function]}
+                                      onEntering={[Function]}
+                                      onExit={[Function]}
+                                      onExited={[Function]}
+                                      onExiting={[Function]}
+                                      timeout={300}
+                                      unmountOnExit={false}
                                     >
-                                      Panel title
-                                    </span>
-                                  </Text>
+                                      <div
+                                        style={
+                                          Object {
+                                            "transition": "transform 300ms",
+                                          }
+                                        }
+                                      >
+                                        <Text
+                                          block={false}
+                                          bold={false}
+                                          invert={false}
+                                          size="large"
+                                        >
+                                          <span
+                                            className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                          >
+                                            <DecorativeIcon
+                                              size={16}
+                                              symbol="caretUp"
+                                              variant="primary"
+                                            >
+                                              <Icon
+                                                aria-hidden="true"
+                                                size={16}
+                                                symbol="caretUp"
+                                                variant="primary"
+                                              >
+                                                <i
+                                                  aria-hidden="true"
+                                                  className="TDS_Icon-modules__iconCaretUp___3PL_K TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
+                                                />
+                                              </Icon>
+                                            </DecorativeIcon>
+                                          </span>
+                                        </Text>
+                                      </div>
+                                    </Transition>
+                                  </Translate>
                                 </div>
+                                <Flexbox
+                                  dangerouslyAddClassName="headerAlign"
+                                  direction="row"
+                                >
+                                  <div
+                                    className="row headerAlign"
+                                  >
+                                    <Flexbox
+                                      dangerouslyAddClassName="headerAlign"
+                                      direction="column"
+                                    >
+                                      <div
+                                        className="column headerAlign"
+                                      >
+                                        <div
+                                          className="fullWidth"
+                                        >
+                                          <Text
+                                            block={false}
+                                            bold={false}
+                                            invert={false}
+                                            size="large"
+                                          >
+                                            <span
+                                              className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                            >
+                                              Panel title
+                                            </span>
+                                          </Text>
+                                        </div>
+                                      </div>
+                                    </Flexbox>
+                                  </div>
+                                </Flexbox>
                               </div>
-                            </Flexbox>
-                          </div>
-                        </Flexbox>
+                            </StyledComponent>
+                          </Box__StyledBox>
+                        </Box>
                       </div>
-                    </Box>
-                  </div>
+                    </StyledComponent>
+                  </Box__StyledBox>
                 </Box>
               </button>
             </Clickable>
@@ -491,31 +752,66 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                       inset={4}
                       tag="div"
                     >
-                      <div
-                        className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-4___QMNNa"
+                      <Box__StyledBox
+                        as="div"
+                        inline={false}
+                        inset={4}
                       >
-                        <Text
-                          block={true}
-                          bold={false}
-                          invert={false}
-                          size="base"
+                        <StyledComponent
+                          as="div"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Box__StyledBox-jip4n1-0",
+                                "isStatic": false,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Box__StyledBox",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Box__StyledBox-jip4n1-0",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          inline={false}
+                          inset={4}
                         >
-                          <span
-                            className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__blockText___2DsZN"
+                          <div
+                            className="c2"
                           >
-                            <Panel
-                              disabled={false}
-                              header="Panel title"
-                              id="panel-1"
-                              key=".0"
+                            <Text
+                              block={true}
+                              bold={false}
+                              invert={false}
+                              size="base"
                             >
-                              <div>
-                                Panel content
-                              </div>
-                            </Panel>
-                          </span>
-                        </Text>
-                      </div>
+                              <span
+                                className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__blockText___2DsZN"
+                              >
+                                <Panel
+                                  disabled={false}
+                                  header="Panel title"
+                                  id="panel-1"
+                                  key=".0"
+                                >
+                                  <div>
+                                    Panel content
+                                  </div>
+                                </Panel>
+                              </span>
+                            </Text>
+                          </div>
+                        </StyledComponent>
+                      </Box__StyledBox>
                     </Box>
                   </div>
                 </div>
