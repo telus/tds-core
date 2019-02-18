@@ -1,10 +1,21 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import Box from '../Box'
 
 describe('Box', () => {
   const defaultProps = { between: 3 }
+  const doMount = (props = {}) => {
+    const box = mount(
+      <Box {...defaultProps} {...props}>
+        Some content
+      </Box>
+    )
+    return {
+      box,
+      styledComponent: box.find('StyledComponent'),
+    }
+  }
   const doShallow = (props = {}) => {
     return shallow(
       <Box {...defaultProps} {...props}>
@@ -14,61 +25,73 @@ describe('Box', () => {
   }
 
   it('renders', () => {
-    const box = doShallow()
+    const box = doMount()
 
     expect(box).toMatchSnapshot()
   })
 
   it('can render as a specified HTML element', () => {
     const box = doShallow({ tag: 'ul' })
-
-    expect(box).toHaveDisplayName('ul')
+    expect(box.props().as).toBe('ul')
   })
 
   it('can apply bottom margin', () => {
-    const box = doShallow({ below: 2 })
-
-    expect(box).toHaveClassName('bottomMargin-2')
+    const { styledComponent } = doMount({ below: 2 })
+    expect(styledComponent).toHaveStyleRule('margin-bottom', '0.5rem')
   })
 
   describe('insets', () => {
     it('can be equal on all sides', () => {
-      const box = doShallow({ inset: 3 })
+      const { styledComponent } = doMount({ inset: 3 })
 
-      expect(box).toHaveClassName('verticalPadding-3 horizontalPadding-3')
+      expect(styledComponent).toHaveStyleRule('padding-top', '1rem')
+      expect(styledComponent).toHaveStyleRule('padding-bottom', '1rem')
+      expect(styledComponent).toHaveStyleRule('padding-left', '1rem')
+      expect(styledComponent).toHaveStyleRule('padding-right', '1rem')
     })
 
     it('can be either vertical or horizonal', () => {
-      let box = doShallow({ vertical: 1 })
-      expect(box).toHaveClassName('verticalPadding-1')
+      let { styledComponent } = doMount({ vertical: 1 })
+      expect(styledComponent).toHaveStyleRule('padding-top', '0.25rem')
+      expect(styledComponent).toHaveStyleRule('padding-bottom', '0.25rem')
 
-      box = doShallow({ horizontal: 1 })
-      expect(box).toHaveClassName('horizontalPadding-1')
+      styledComponent = doMount({ horizontal: 1 }).styledComponent
+      expect(styledComponent).toHaveStyleRule('padding-left', '0.25rem')
+      expect(styledComponent).toHaveStyleRule('padding-right', '0.25rem')
 
-      box = doShallow({ vertical: 2, horizontal: 3 })
-      expect(box).toHaveClassName('verticalPadding-2 horizontalPadding-3')
+      styledComponent = doMount({ vertical: 2, horizontal: 3 }).styledComponent
+      expect(styledComponent).toHaveStyleRule('padding-top', '0.5rem')
+      expect(styledComponent).toHaveStyleRule('padding-bottom', '0.5rem')
+      expect(styledComponent).toHaveStyleRule('padding-left', '1rem')
+      expect(styledComponent).toHaveStyleRule('padding-right', '1rem')
     })
   })
 
   describe('between', () => {
     it('arranges the children horizontally or vertically be either inline or block', () => {
-      let box = doShallow()
-      expect(box).toHaveClassName('stack')
+      let { styledComponent } = doMount()
+      expect(styledComponent).toHaveStyleRule('display', 'flex')
+      expect(styledComponent).toHaveStyleRule('flex-direction', 'column')
 
-      box = doShallow({ inline: true })
-      expect(box).toHaveClassName('inline')
+      styledComponent = doMount({ inline: true }).styledComponent
+      expect(styledComponent).toHaveStyleRule('display', 'flex')
+      expect(styledComponent).toHaveStyleRule('flex-direction', 'row')
     })
 
     it('separates children by equal margins in a stack', () => {
-      const box = doShallow({ between: 2 })
+      const { styledComponent } = doMount({ between: 2 })
 
-      expect(box).toHaveClassName('betweenBottomMargin-2')
+      expect(styledComponent).toHaveStyleRule('margin-bottom', '0.5rem', {
+        modifier: '> *:not(:last-child)',
+      })
     })
 
     it('separates children by equal margins inline', () => {
-      const box = doShallow({ between: 2, inline: true })
+      const { styledComponent } = doMount({ between: 2, inline: true })
 
-      expect(box).toHaveClassName('betweenRightMargin-2')
+      expect(styledComponent).toHaveStyleRule('margin-right', '0.5rem', {
+        modifier: '> *:not(:last-child)',
+      })
     })
   })
 

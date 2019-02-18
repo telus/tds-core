@@ -1,29 +1,100 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
+import { media } from '@tds/core-responsive'
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
-import capitalize from '../../shared/utils/capitalize'
 
-import styles from './Box.modules.scss'
-
-const getClassName = (spacing, location, scale) => {
-  if (!scale) {
-    return undefined
-  }
-  return styles[`${location}${capitalize(spacing)}-${scale}`]
+const spacing = {
+  mobile: {
+    1: '0.25rem',
+    2: '0.5rem',
+    3: '1rem',
+    4: '1.5rem',
+    5: '2rem',
+    6: '2.5rem',
+    7: '3rem',
+    8: '4rem',
+  },
+  desktop: {
+    1: '0.25rem',
+    2: '0.5rem',
+    3: '1rem',
+    4: '2rem',
+    5: '3rem',
+    6: '4rem',
+    7: '4.5rem',
+    8: '6rem',
+  },
 }
 
-const getBetweenClasses = (scale, inline) => {
-  if (!scale) {
+const boxSpacing = (level, f) => {
+  const mobileStyle = f(spacing.mobile[level])
+  if (spacing.mobile[level] === spacing.desktop[level]) {
+    return mobileStyle
+  }
+  const desktopStyle = media.from('md')(f(spacing.desktop[level]))
+
+  return Object.assign({}, mobileStyle, desktopStyle)
+}
+
+const flexDirectionStyles = ({ inline }) => ({ flexDirection: inline ? 'row' : 'column' })
+const betweenStyles = ({ between, inline }) => {
+  if (between == null) {
     return undefined
   }
 
-  const direction = inline ? 'Right' : 'Bottom'
-  return joinClassNames(
-    styles[`between${direction}Margin-${scale}`],
-    inline ? styles.inline : styles.stack
-  )
+  if (between === 'space-between') {
+    return { justifyContent: 'space-between' }
+  }
+
+  const marginDirection = inline ? 'marginRight' : 'marginBottom'
+
+  return boxSpacing(between, s => ({
+    '> *:not(:last-child)': {
+      [marginDirection]: s,
+    },
+  }))
+}
+
+const horizontalStyles = ({ horizontal }) => {
+  if (horizontal == null) {
+    return undefined
+  }
+  return boxSpacing(horizontal, s => ({
+    paddingLeft: s,
+    paddingRight: s,
+  }))
+}
+
+const verticalStyles = ({ vertical }) => {
+  if (vertical == null) {
+    return undefined
+  }
+  return boxSpacing(vertical, s => ({
+    paddingTop: s,
+    paddingBottom: s,
+  }))
+}
+
+const insetStyles = ({ inset }) => {
+  if (inset == null) {
+    return undefined
+  }
+  const vertical = verticalStyles({ vertical: inset })
+  const horizontal = horizontalStyles({ horizontal: inset })
+
+  return Object.assign({}, vertical, horizontal)
+}
+
+const belowStyles = ({ below }) => {
+  if (below == null) {
+    return undefined
+  }
+
+  return boxSpacing(below, s => ({
+    marginBottom: s,
+  }))
 }
 
 /**
@@ -31,31 +102,19 @@ const getBetweenClasses = (scale, inline) => {
  *
  * @version ./package.json
  */
-const Box = ({
-  tag,
-  vertical,
-  horizontal,
-  inset,
-  below,
-  between,
-  inline,
-  dangerouslyAddClassName,
-  children,
-  ...rest
-}) => {
-  const xSize = inset || horizontal
-  const ySize = inset || vertical
+const StyledBox = styled.div(props => ({
+  display: props.between ? 'flex' : 'block',
+  ...flexDirectionStyles(props),
+  ...betweenStyles(props),
+  ...horizontalStyles(props),
+  ...verticalStyles(props),
+  ...insetStyles(props),
+  ...belowStyles(props),
+}))
 
-  const classes = joinClassNames(
-    getClassName('padding', 'horizontal', xSize),
-    getClassName('padding', 'vertical', ySize),
-    getClassName('margin', 'bottom', below),
-    getBetweenClasses(between, inline),
-    dangerouslyAddClassName
-  )
-
-  return React.createElement(tag, { ...safeRest(rest), className: classes }, children)
-}
+const Box = ({ dangerouslyAddClassName, tag, ...rest }) => (
+  <StyledBox {...safeRest(rest)} as={tag} className={dangerouslyAddClassName} />
+)
 
 Box.propTypes = {
   /**
