@@ -100,11 +100,11 @@ const creditCards = (
 ;<Input label="Credit Card Number" helper={creditCards} />
 ```
 
-### Default values ([React uncontrolled components](https://reactjs.org/docs/uncontrolled-components.html))
+### Default values
 
 Use a `defaultValue` to prefill the input with human readable data. To handle any input changes use `onChange` prop.
 
-_NOTE:_ Only one of `defaultValue` or `value` can be set.
+_NOTE:_ Only one of `defaultValue` or `value` can be set. To learn more, see <a href="https://reactjs.org/docs/uncontrolled-components.html" target="_blank">React uncontrolled components</a>.
 
 ```jsx
 initialState = {
