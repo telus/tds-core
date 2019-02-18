@@ -29,7 +29,7 @@ describe('<OrderedList />', () => {
   it('OrderList renders an HTML ol tag', () => {
     const orderedList = doShallow()
 
-    expect(orderedList.dive()).toHaveDisplayName('ol')
+    expect(orderedList.props().tag).toBe('ol')
   })
 
   it('OrderList.Item renders an HTML li tag', () => {
