@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip renders 1`] = `
+.c0 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 <Tooltip
   direction="auto"
 >
@@ -33,36 +44,85 @@ exports[`Tooltip renders 1`] = `
           tag="div"
           vertical={2}
         >
-          <div
+          <Box__StyledBox
             aria-hidden="true"
             aria-live="assertive"
-            className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T right hide"
+            as="div"
+            className="right hide"
             data-testid="bubble"
+            horizontal={3}
             id="standalone-tooltip-mc41_tooltip"
+            inline={false}
             role="tooltip"
+            vertical={2}
           >
-            <div
-              className="innerBubble"
-              style={
+            <StyledComponent
+              aria-hidden="true"
+              aria-live="assertive"
+              as="div"
+              className="right hide"
+              data-testid="bubble"
+              forwardedComponent={
                 Object {
-                  "width": "calc(1008px - 1rem - 0.5rem)",
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Box__StyledBox-jip4n1-0",
+                    "isStatic": false,
+                    "lastClassName": "c0",
+                    "rules": Array [
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Box__StyledBox",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Box__StyledBox-jip4n1-0",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
                 }
               }
+              forwardedRef={null}
+              horizontal={3}
+              id="standalone-tooltip-mc41_tooltip"
+              inline={false}
+              role="tooltip"
+              vertical={2}
             >
-              <Text
-                block={false}
-                bold={false}
-                invert={false}
-                size="small"
+              <div
+                aria-hidden="true"
+                aria-live="assertive"
+                className="right hide c0"
+                data-testid="bubble"
+                id="standalone-tooltip-mc41_tooltip"
+                role="tooltip"
               >
-                <span
-                  className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
+                <div
+                  className="innerBubble"
+                  style={
+                    Object {
+                      "width": "calc(1008px - 1rem - 0.5rem)",
+                    }
+                  }
                 >
-                  Tooltip text
-                </span>
-              </Text>
-            </div>
-          </div>
+                  <Text
+                    block={false}
+                    bold={false}
+                    invert={false}
+                    size="small"
+                  >
+                    <span
+                      className="TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__smallFont___XkTI5 TDS_Typography-modules__color___1Jt_W"
+                    >
+                      Tooltip text
+                    </span>
+                  </Text>
+                </div>
+              </div>
+            </StyledComponent>
+          </Box__StyledBox>
         </Box>
       </Bubble>
       <StandaloneIcon
