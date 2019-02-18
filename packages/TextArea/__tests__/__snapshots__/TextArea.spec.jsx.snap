@@ -1,8 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextArea renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
 <div
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+  class="c0"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -11,7 +39,7 @@ exports[`TextArea renders 1`] = `
       for="the-textarea"
     >
       <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz alignCenter"
+        class="alignCenter c1"
       >
         <span
           class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
@@ -37,8 +65,36 @@ exports[`TextArea renders 1`] = `
 `;
 
 exports[`TextArea renders with a feedback state and icon 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
 <div
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+  class="c0"
 >
   <div
     class="row justifyContentSpaceBetween relative"
@@ -47,7 +103,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
       for="the-textarea"
     >
       <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz alignCenter"
+        class="alignCenter c1"
       >
         <span
           class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
