@@ -1,0 +1,6 @@
+{
+  "name": "@tds/util-deep-merge",
+  "version": "1.0.0-dev",
+  "private": true,
+  "main": "deepMerge.js"
+}
