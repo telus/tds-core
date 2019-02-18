@@ -1,19 +1,23 @@
-const isObject = item => {
-  return item && typeof item === 'object' && !Array.isArray(item) && item !== null
-}
+/* eslint-disable no-param-reassign */
+const deepMerge = (...objects) => {
+  const isObject = obj => obj && typeof obj === 'object'
 
-const deepMerge = (target, source) => {
-  if (isObject(target) && isObject(source)) {
-    Object.keys(source).forEach(key => {
-      if (isObject(source[key])) {
-        if (!target[key]) Object.assign(target, { [key]: {} })
-        deepMerge(target[key], source[key])
+  return objects.reduce((prev, obj) => {
+    Object.keys(obj).forEach(key => {
+      const pVal = prev[key]
+      const oVal = obj[key]
+
+      if (Array.isArray(pVal) && Array.isArray(oVal)) {
+        prev[key] = pVal.concat(...oVal)
+      } else if (isObject(pVal) && isObject(oVal)) {
+        prev[key] = deepMerge(pVal, oVal)
       } else {
-        Object.assign(target, { [key]: source[key] })
+        prev[key] = oVal
       }
     })
-  }
-  return target
+
+    return prev
+  }, {})
 }
 
 export default deepMerge
