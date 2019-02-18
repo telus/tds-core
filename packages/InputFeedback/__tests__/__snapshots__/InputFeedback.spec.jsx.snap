@@ -1,8 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputFeedback renders 1`] = `
+.c0 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 <div
-  class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 default"
+  class="default c0"
 >
   Some inputFeedback text.
 </div>
