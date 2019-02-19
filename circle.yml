@@ -5,9 +5,9 @@ executors:
     docker:
       - image: telus/build-essential
 
-  browsers:
+  e2e_image:
     docker:
-      - image: circleci/node:8-browsers
+      - image: node:8
 
   prepr:
     docker:
@@ -36,6 +36,23 @@ commands:
           name: Install dependencies
           command: npm ci
 
+  install_e2e:
+    steps:
+      - run: apt-get update
+      - run: apt-get install -y wget --no-install-recommends
+      - run: wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+      - run: sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+      - run: apt-get update
+      - run: apt-get install -y google-chrome-unstable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst ttf-freefont --no-install-recommends
+      - run: rm -rf /var/lib/apt/lists/*
+      - run: apt-get purge --auto-remove -y curl
+      - run: rm -rf /src/*.deb
+
+  install_git:
+    steps:
+      - run: apt-get update
+      - run: apt-get install git
+
 jobs:
   build:
     executor: builder
@@ -59,9 +76,12 @@ jobs:
       - run: npm run test
 
   e2e:
-    executor: browsers
+    executor: e2e_image
     steps:
       - attach
+      - install_e2e
+      - install_git
+      - install
       - run:
           name: Prepare node-sass
           command: npm rebuild node-sass
@@ -114,7 +134,7 @@ jobs:
           command: npm run lerna:cipublish
 
   screenshots:
-    executor: browsers
+    executor: e2e_image
     steps:
       - attach
       - add_ssh_keys:
