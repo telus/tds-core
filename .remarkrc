@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "@telus/remark-preset-lint-markdown",
+    "@telus/remark-config",
     ["lint-no-file-name-mixed-case", false],
     ["lint-maximum-heading-length", false],
     ["lint-no-emphasis-as-heading", false]
