@@ -3,13 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-input@1.0.14...@tds/core-input@2.0.0) (2019-02-20)
+
+### Features
+
+- **core-input:** change value defaultProp to undefined ([c58d5a3](https://github.com/telusdigital/tds/commit/c58d5a3))
+
+### BREAKING CHANGES
+
+- **core-input:** input props.value no longer set as empty string by default
+
 ## [1.0.14](https://github.com/telusdigital/tds/compare/@tds/core-input@1.0.13...@tds/core-input@1.0.14) (2019-02-06)
 
 **Note:** Version bump only for package @tds/core-input
-
-
-
-
 
 ## [1.0.13](https://github.com/telusdigital/tds/compare/@tds/core-input@1.0.12...@tds/core-input@1.0.13) (2019-01-10)
 

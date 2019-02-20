@@ -3,13 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-text-area@1.0.13...@tds/core-text-area@2.0.0) (2019-02-20)
+
+### Bug Fixes
+
+- **core-text-area:** change defaultProps.value to undefined ([f8c71e3](https://github.com/telusdigital/tds/commit/f8c71e3))
+
+### BREAKING CHANGES
+
+- **core-text-area:** change default value for `value` prop
+
 ## [1.0.13](https://github.com/telusdigital/tds/compare/@tds/core-text-area@1.0.12...@tds/core-text-area@1.0.13) (2019-02-06)
 
 **Note:** Version bump only for package @tds/core-text-area
-
-
-
-
 
 ## [1.0.12](https://github.com/telusdigital/tds/compare/@tds/core-text-area@1.0.11...@tds/core-text-area@1.0.12) (2019-01-10)
 
