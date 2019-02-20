@@ -3,16 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.0.11](https://github.com/telus/tds-core/compare/@tds/shared-form-field@1.0.10...@tds/shared-form-field@1.0.11) (2019-02-06)
-
+# [2.0.0](https://github.com/telus/tds-core/compare/@tds/shared-form-field@1.0.11...@tds/shared-form-field@2.0.0) (2019-02-20)
 
 ### Bug Fixes
 
-* **shared-form-field:** add missing deps ([56224c4](https://github.com/telus/tds-core/commit/56224c4))
+- **shared-form-field:** set value directly from child ([f80b12f](https://github.com/telus/tds-core/commit/f80b12f))
 
+### Features
 
+- **shared-form-field:** change value, defaultValue prop ([9fa2dc3](https://github.com/telus/tds-core/commit/9fa2dc3))
 
+### BREAKING CHANGES
 
+- **shared-form-field:** If defaultValue is set, component will no longer propogate value changes to
+  children. If child component is mounted with defaultValue set, it will be treated as a React
+  uncontrolled component.
+
+## [1.0.11](https://github.com/telus/tds-core/compare/@tds/shared-form-field@1.0.10...@tds/shared-form-field@1.0.11) (2019-02-06)
+
+### Bug Fixes
+
+- **shared-form-field:** add missing deps ([56224c4](https://github.com/telus/tds-core/commit/56224c4))
 
 ## [1.0.10](https://github.com/telus/tds-core/compare/@tds/shared-form-field@1.0.9...@tds/shared-form-field@1.0.10) (2019-01-10)
 
