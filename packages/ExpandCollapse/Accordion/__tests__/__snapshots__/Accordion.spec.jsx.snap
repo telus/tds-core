@@ -458,7 +458,7 @@ exports[`Accordion renders an open accordion 1`] = `
                   style={
                     Object {
                       "height": "auto",
-                      "overflow": "hidden",
+                      "overflow": "visible",
                       "transition": "height 500ms",
                     }
                   }

@@ -19,7 +19,7 @@ const transitionStyles = height => {
 
   return {
     entering: styles,
-    entered: { height: 'auto' },
+    entered: { height: 'auto', overflow: 'visible' },
     exiting: styles,
     exited: hiddenContent,
   }
@@ -30,7 +30,7 @@ const Reveal = ({ height, children, ...rest }) => (
     {status => (
       <div
         style={{
-          ...defaultStyle(rest.duration, rest.timeout),
+          ...defaultStyle(rest.duration, rest.timeout, rest.in),
           ...transitionStyles(height)[status],
         }}
         aria-hidden={status === 'exited'}
