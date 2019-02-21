@@ -30,3 +30,19 @@ import { fonts } from '@tds/core-css-reset'
 
 // convert fonts array to <link rel="preload"> tags in the page <head>
 ```
+
+### Mixins
+
+#### Flex Main for Viewport
+
+This Sass mixin corrects a TELUS page that has content too short to fill the browser's height, the footer appears directly below the content, leaving white space between the footer and the bottom of the viewport.
+
+```css static
+@import '~@tds/core-css-reset/mixins';
+
+@include flex-main;
+```
+
+| Before                                                                                                           | After                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| <img src="css-reset_footer-before.png" alt="footer at the end of content with white space below" width="100%" /> | <img src="css-reset_footer-after.png" alt="footer fixed to the bottom of page with white space above" width="100%" /> |
