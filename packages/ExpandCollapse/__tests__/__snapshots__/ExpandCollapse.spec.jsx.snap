@@ -473,7 +473,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                   style={
                     Object {
                       "height": "auto",
-                      "overflow": "hidden",
+                      "overflow": "visible",
                       "transition": "height 500ms",
                     }
                   }
