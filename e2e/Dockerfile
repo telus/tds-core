@@ -17,24 +17,30 @@ WORKDIR /tds-core
 # Add a user so that we don't run as root:
 #  https://github.com/telusdigital/reference-architecture/blob/3ff683dd68b247ac9a3febda828105fe52cd9390/delivery/docker.md#root-vs-user-mode
 RUN set -ex && \
-    adduser node root && \
-    chmod g+w /
+  adduser node root && \
+  chmod g+w /
+
+RUN apt-get update
 
 # Install Google Chrome, which is necessary for the e2e tests.
-RUN apt-get update && apt-get install -y wget --no-install-recommends \
-    && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
-    && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
-    && apt-get update \
-    && apt-get install -y google-chrome-unstable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst ttf-freefont \
-      --no-install-recommends \
-    && rm -rf /var/lib/apt/lists/* \
-    && apt-get purge --auto-remove -y curl \
-    && rm -rf /src/*.deb
+RUN curl --silent --show-error --location --fail --retry 3 --output /tmp/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+  && (dpkg -i /tmp/google-chrome-stable_current_amd64.deb || apt-get -fy install)  \
+  && rm -rf /tmp/google-chrome-stable_current_amd64.deb \
+  && sed -i 's|HERE/chrome"|HERE/chrome" --disable-setuid-sandbox --no-sandbox|g' \
+  "/opt/google/chrome/google-chrome" \
+  && google-chrome --version
+
+RUN export CHROMEDRIVER_RELEASE=$(curl --location --fail --retry 3 http://chromedriver.storage.googleapis.com/LATEST_RELEASE) \
+  && curl --silent --show-error --location --fail --retry 3 --output /tmp/chromedriver_linux64.zip "http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_RELEASE/chromedriver_linux64.zip" \
+  && cd /tmp \
+  && unzip chromedriver_linux64.zip \
+  && rm -rf chromedriver_linux64.zip \
+  && mv chromedriver /usr/local/bin/chromedriver \
+  && chmod +x /usr/local/bin/chromedriver \
+  && chromedriver --version
 
 # Install git, which is necessary for the install process.
-RUN apt-get update && \
-  apt-get install git
-
+RUN apt-get install git
 
 # Copy only the files necessary to install dependencies into the working directory.
 # Docker builds the image in layers and caches them. Because the app files change more often than the dependencies, we
