@@ -1,18 +1,18 @@
 The `Responsive` component is a thin wrapper over the [**react-media**](https://github.com/ReactTraining/react-media) community
 component, which "listens for matches to a CSS media query and renders its child component based on whether the query matches or not."
 
-This package also contains Sass media query methods (documented below). In most cases **we recommend using the Sass methods over the Responsive React component** since they do not adversely affect server-side rendering. While not recommended for general use, the Responsive component is useful if you want to do something programmatically. For example, changing a prop or swapping a component on resize.
+The package also contains a `media` utility (documented below). In most cases **we recommend using the media utility over the Responsive React component** since they do not adversely affect server-side rendering. While not recommended for general use, the Responsive component is useful if you want to do something programmatically. For example, changing a prop or swapping a component on resize.
 
 ### Breakpoints
 
-The included Sass-based media queries and the `Responsive` component both use the same breakpoint keys. The following chart details these breakpoint keys, and what values they represent.
+The included `media` utility and the `Responsive` component both use the same breakpoint keys. The following chart details these breakpoint keys, and what values they represent.
 
-| Breakpoint key | `min-width` / `$from` Value | `max-width` / `$until` Value |
-| :------------- | :-------------------------- | :--------------------------- |
-| `sm`           | 576px                       | 575px                        |
-| `md`           | 768px                       | 767px                        |
-| `lg`           | 992px                       | 991px                        |
-| `xl`           | 1200px                      | 1199px                       |
+| Breakpoint key | `min-width` Value | `max-width` Value |
+| :------------- | :---------------- | :---------------- |
+| `sm`           | 576px             | 575px             |
+| `md`           | 768px             | 767px             |
+| `lg`           | 992px             | 991px             |
+| `xl`           | 1200px            | 1199px            |
 
 ### Responsive component usage
 
@@ -83,7 +83,54 @@ To implement responsive behaviour in your component, this package provides Sass-
 
 The `Responsive` React component is a thin wrapper over the [**react-media**](https://github.com/ReactTraining/react-media) community component, which "listens for matches to a CSS media query and renders its child component based on whether the query matches or not." While it is available, this component is not recommended for most use-cases.
 
+### `media` utility usage
+
+To generate media queries for your `styled-components`, first import the named `media` export from `@tds/core-colours` in your .`jsx` file.
+
+```js static
+import { media } from '@tds/core-responsive'
+```
+
+After importing, the `media` object, it can be used to add media-queries to your component.
+
+```jsx static
+const SomeComponent = styled.div({
+  color: 'red',
+  ...media.from('md').css({
+    color: 'blue',
+  }),
+  ...media.from('lg').css({
+    color: 'green',
+  }),
+})
+```
+
+`media` functions can be chained to create more complex media-queries
+
+```jsx static
+const SomeOtherComponent = styled.div({
+  color: 'red',
+  ...media
+    .from('md')
+    .until('lg')
+    .and('(orientation: landscape)')
+    .css({
+      color: 'blue',
+    }),
+})
+```
+
+#### `media` parameters
+
+| Method    | Values                             | Effect                                                                                                                                  |
+| --------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `from()`  | `sm`, `md`, `lg`, `xl`             | The CSS rules contained within will start at the defined point.                                                                         |
+| `until()` | `sm`, `md`, `lg`, `xl`             | The CSS rules contained within will end at the defined point.                                                                           |
+| `and()`   | Standard CSS Media Query Arguments | Allows for custom arguments like orientation or DPI specifications using the standard CSS syntax. These are encased in quotation marks. |
+
 ### Sass media query method usage
+
+**Deprecated, please use `media` utility variables instead.**
 
 To make use of Sass media queries through the Responsive component, first declare the following import at the top of your `.scss` file.
 
@@ -110,6 +157,17 @@ Once this is done, you may leverage [**sass-mq**](https://github.com/sass-mq/sas
   }
 }
 ```
+
+#### Sass Breakpoints
+
+The Sass media queries share the same breakpoints as the `media` utility.
+
+| Breakpoint key | `$from` Value | `$until` Value |
+| :------------- | :------------ | :------------- |
+| `sm`           | 576px         | 575px          |
+| `md`           | 768px         | 767px          |
+| `lg`           | 992px         | 991px          |
+| `xl`           | 1200px        | 1199px         |
 
 #### MQ Parameters
 

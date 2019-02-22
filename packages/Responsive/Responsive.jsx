@@ -4,12 +4,7 @@ import Media from 'react-media'
 
 import { warn } from '../../shared/utils/warn'
 
-const breakpoints = {
-  sm: 576,
-  md: 768,
-  lg: 992,
-  xl: 1200,
-}
+import { breakpoints } from './media'
 
 /**
  * Respond to device features, most commonly the browser viewport size.
