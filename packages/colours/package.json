@@ -2,7 +2,8 @@
   "name": "@tds/core-colours",
   "version": "1.0.1",
   "description": "The TDS colour palatte",
-  "main": "",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
   "license": "MIT",
   "repository": {
     "type": "git",
