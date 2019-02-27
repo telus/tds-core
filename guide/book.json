@@ -1,8 +1,12 @@
 {
   "title": "TELUS Design System",
   "gitbook": "3.2.2",
-  "plugins": ["otherlink", "collapsible-menu", "insert-logo-link", "-sharing"],
+  "plugins": ["otherlink", "collapsible-menu", "insert-logo-link", "-sharing", "edit-link"],
   "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/telus/tds-core/tree/master/guide",
+      "label": "Edit this page"
+    },
     "insert-logo-link": {
       "src": "https://raw.githubusercontent.com/telus/tds-core/a267790f1d57a602ec74b63ecba60248f783279a/guide/Logo.svg?sanitize=true",
       "url": "/"
