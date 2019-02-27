@@ -1,12 +1,25 @@
 # Contributing to TDS - developer guide
 
-## Prerequisites
+## Contents
+
+- [Set up your environment](#set-up-your-environment)
+- [Write some code](#write-some-code)
+- [Using lerna](#using-lerna)
+  - [Helpful lerna commands](#helpful-lerna-commands)
+- [Writing unit tests with Jest](#writing-unit-tests-with-jest)
+- [Running end-to-end (e2e) tests with Nightwatch](#running-end-to-end-e2e-tests-with-nightwatch)
+- [Make a commit](#make-a-commit)
+- [Make a pull request](#make-a-pull-request)
+
+## Set up your environment
+
+### Prerequisites
 
 - [Git](https://git-scm.com/)
 - [Node.JS](https://nodejs.org) >= 8.0
 - [Docker and Docker Compose](https://www.docker.com/get-started)
 
-## Set up your environment
+### Setup
 
 To get started, clone [the repository](https://github.com/telusdigital/tds-core) and create your branch from master.
 If you are not part of the TELUS digital organization, you may fork the repository instead.
@@ -26,7 +39,9 @@ We use [Prettier](https://prettier.io/), an opinionated code formatter that inte
 IDE or text editor](https://prettier.io/docs/en/editors.html) to format your code automatically on save, and Prettier will
 adjust your syntax in accordance with the TDS conventions.
 
-## Set up your dev environment
+### Set up your dev environment
+
+When developing components, we recommend using our documentation as a testing sandbox.
 
 ```bash
 # Start the styleguidist dev server, check output for the location of the docs
@@ -45,18 +60,75 @@ automatically refresh when there are changes to any of the source files.
 
 Read the [codebase overview](./codebase-overview.md) to understand the structure of the codebase and the conventions being followed.
 
-If you need to create a new component, run the scaffolding script to generate the basic folder structure, React component,
+If you need to **create a new component**, run the scaffolding script to generate the basic folder structure, React component,
 documentation, and base unit tests for a new component.
 
 ```bash
 npm run scaffold MyComponent
 ```
 
+## Using lerna
+
+TDS uses [lerna](https://github.com/lerna/lerna/) to build and publish component packages, and manage dependencies throughout the project. It's important to have
+an understanding of lerna's essential features in order to write code for components for tds-core or tds-community.
+
+### How lerna works within TDS
+
+When you clone tds-core or tds-community and run `npm run bootstrap`, it runs an important command: `npx lerna bootstrap --hoist` that scans all the packages in the repository
+and sets up symbolic links to them within `node_modules`, treating the repository as a local registry for all linked packages. `npm run bootstrap` includes a build step for
+Rollup to build all packages into their respective `dist` directories. Building is important in order for tests to pass, for example, `core-expand-collapse` has `core-text` as
+a dependency; `core-text` must be built locally in order for `core-expand-collapse` to consume it.
+
+### Helpful lerna commands
+
+#### Adding dependencies to component packages
+
+- Use lerna to add dependencies by specifying a scope for the target component package
+- Using the command regularly will add packages as `dependencies`
+- Using the command with `--dev` will add packages as `devDependencies`
+  - **Note:** if adding a private module in this mono-repo, add it as a devDependency, otherwise consumers of the component won't be able to download unpublished dependencies
+
+```sh
+npx lerna add package-to-add --scope @tds/core-component-name [--dev]
+```
+
+#### Seeing which packages will get published
+
+Component packages are versioned automatically based on [conventional commits](https://conventionalcommits.org/). To ensure appropriate versions are applied,
+follow our guide on how to [make a commit](#make-a-commit).
+
+- To preview which components will get published: `npx lerna updated`
+- To preview what the next version bump for changed components will be: `npm run prepr`
+  - **Note:** this command will be run automatically in pull requests, and TDS Bot will add a comment to the pull request showing what version bumps will occur on publish
+
+#### Publishing components
+
+Components are published via our continuous integration pipeline. Do not try publishing components yourself. TDS Core components are the responsibility
+of the TDS Core team, and TDS Community components are the responsibility of the [Digital Platform Ambassadors][dpa].
+
+```sh
+npx lerna publish --conventional-commits
+```
+
+#### Troubleshooting build issues
+
+If you see several errors related to components not building, it could be that lerna had set up `node_modules` directories within each package during `npm install`.
+Try clearing those directories and build again.
+
+```sh
+npx lerna clean --yes
+npm run build
+```
+
+If this does not resolve your issue, there could be an issue with duplicate dependencies throughout the repository with mismatched versions.
+To solve this, we use [lerna-update-wizard](https://www.npmjs.com/package/lerna-update-wizard) using the command `npx lernaupdate --dedupe` to assure duplicate
+packages are on the same
+
 ## Running and updating tests
 
 All TDS components use a combination of [Jest](https://jestjs.io/) tests and [Nightwatch](http://nightwatchjs.org/) visual regression tests. As part of our Git hooks, these tests are run automatically on commit and on push. However, there are cases where you may want to run these tests manually, or require the ability to update test snapshots that are no longer up to date with the component you're working on.
 
-### Jest (unit tests)
+## Writing unit tests with Jest
 
 Jest unit tests are integrated into all TDS React components. These are run to ensure that a component's functionality has not been compromised by a change. These unit tests will check the component's different states by providing different sets of prop values, and compare them to a set of pre-defined criteria. It is important to create new unit tests whenever a feature is added or significantly modified to ensure the stability of the component.
 
@@ -71,7 +143,7 @@ npm run test -- [opts]
 # -u: Update test snapshots. (Useful if the component's structure has changed)
 ```
 
-### Nightwatch (e2e)
+## Running end-to-end (e2e) tests with Nightwatch
 
 Nightwatch e2e tests are run to ensure that no unexpected visual regressions were made to a component. These tests are run automatically on all components with no test writing required on the developer's part.
 
@@ -167,8 +239,10 @@ npm run cz
 
 ## Make a Pull Request
 
-Before making your Pull Request, we have a pre-pr tasks as a final verification step. You may make your PR only after its successful
-completion.
+Before making your Pull Request, please be sure the following items were addressed:
+
+- New component code has corresponding unit tests
+- Any changes to component functionality has corresponding documentation
 
 Paste the full output of the pre-pr task into the body of your PR so that a maintainer/publisher can verify when publishing.
 
@@ -180,3 +254,4 @@ The pre-pr task will show you the version change that will result from your chan
 to adjust your commit messages before making your PR. See the [Conventional Commits spec FAQ](https://conventionalcommits.org/#faq) for more info on correcting mistakes.
 
 [contribution-model]: https://github.com/telusdigital/reference-architecture/blob/f9d0670a8303351ed80589ea09fddb4f7757d19a/process/contribution-model.md
+[dpa]: https://github.com/telus/tds-community/blob/d0ab9c5c1661bcff4fbf123fdddff4413f51c336/guide/DigitalPlatformAmbassadors.md
