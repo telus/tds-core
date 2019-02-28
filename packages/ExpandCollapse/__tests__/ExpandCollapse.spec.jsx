@@ -4,9 +4,7 @@ import { shallow, mount } from 'enzyme'
 import Text from '@tds/core-text'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import HairlineDivider from '@tds/core-hairline-divider'
-
-import Reveal from '../../../shared/components/Animation/Reveal'
-import Translate from '../../../shared/components/Animation/Translate'
+import { Reveal, Translate } from '@tds/shared-animation'
 
 import ExpandCollapse from '../ExpandCollapse'
 

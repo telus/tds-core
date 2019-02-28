@@ -7,10 +7,9 @@ import DecorativeIcon from '@tds/core-decorative-icon'
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import DimpleDivider from '@tds/core-dimple-divider'
+import { Reveal, Translate } from '@tds/shared-animation'
 
 import Clickable from '../../../shared/components/Clickable/Clickable'
-import Reveal from '../../../shared/components/Animation/Reveal'
-import Translate from '../../../shared/components/Animation/Translate'
 import Flexbox from '../../../shared/components/Flexbox/Flexbox'
 
 import Panel from '../Panel/Panel'
