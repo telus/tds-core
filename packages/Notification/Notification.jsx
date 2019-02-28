@@ -6,11 +6,10 @@ import DecorativeIcon from '@tds/core-decorative-icon'
 import StandaloneIcon from '@tds/core-standalone-icon'
 import Paragraph from '@tds/core-paragraph'
 import Box from '@tds/core-box'
+import { Reveal, Fade } from '@tds/shared-animation'
 
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
-import Fade from '../../shared/components/Animation/Fade'
-import Reveal from '../../shared/components/Animation/Reveal'
 import { warn } from '../../shared/utils/warn'
 
 import styles from './Notification.modules.scss'
