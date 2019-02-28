@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import StandaloneIcon from '@tds/core-standalone-icon'
-import Fade from '../Animation/Fade'
+import { Fade } from '@tds/shared-animation'
 
 import iconWrapperStyles from '../../styles/IconWrapper.modules.scss'
 

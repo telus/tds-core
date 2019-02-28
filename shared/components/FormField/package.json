@@ -11,6 +11,7 @@
     "@tds/core-paragraph": "^1.0.6",
     "@tds/core-standalone-icon": "^1.0.2",
     "@tds/core-text": "^1.0.6",
+    "@tds/shared-animation": "^1.0.3",
     "@tds/util-prop-types": "^1.2.1"
   },
   "devDependencies": {
