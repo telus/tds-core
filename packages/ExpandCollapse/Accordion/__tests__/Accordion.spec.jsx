@@ -1,7 +1,8 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import Reveal from '../../../../shared/components/Animation/Reveal'
+import { Reveal } from '@tds/shared-animation'
+
 import Accordion from '../Accordion'
 
 describe('Accordion', () => {
