@@ -27,8 +27,7 @@ getPackageNames(packageNames => {
       'exec',
       '--scope',
       scopeGlob,
-      '--ignore',
-      '@tds/shared-*',
+      '--no-private',
       '--',
       '$LERNA_ROOT_PATH/scripts/build.sh',
     ],
@@ -36,7 +35,7 @@ getPackageNames(packageNames => {
       stdio: 'inherit',
     }
   )
-  spawnSync('npx', ['lerna', 'run', '--scope', scopeGlob, '--ignore', '@tds/shared-*', 'build'], {
+  spawnSync('npx', ['lerna', 'run', '--scope', scopeGlob, '--no-private', 'build'], {
     stdio: 'inherit',
   })
 })
