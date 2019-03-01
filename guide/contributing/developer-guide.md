@@ -79,6 +79,10 @@ and sets up symbolic links to them within `node_modules`, treating the repositor
 Rollup to build all packages into their respective `dist` directories. Building is important in order for tests to pass, for example, `core-expand-collapse` has `core-text` as
 a dependency; `core-text` must be built locally in order for `core-expand-collapse` to consume it.
 
+It is normal to have multiple packages in tds-core reuse dependencies, such as `@tds/core-text` being a dependency of
+`@tds/core-expand-collapse` and `@tds/core-radio`. On publish, lerna assures all dependents of `@tds/core-text` are using
+its latest version since it is part of the same [monorepo](https://en.wikipedia.org/wiki/Monorepo).
+
 ### Helpful lerna commands
 
 #### Adding dependencies to component packages
@@ -86,7 +90,7 @@ a dependency; `core-text` must be built locally in order for `core-expand-collap
 - Use lerna to add dependencies by specifying a scope for the target component package
 - Using the command regularly will add packages as `dependencies`
 - Using the command with `--dev` will add packages as `devDependencies`
-  - **Note:** if adding a private module in this mono-repo, add it as a devDependency, otherwise consumers of the component won't be able to download unpublished dependencies
+  - **Note:** if adding a private module in this monorepo, add it as a devDependency, otherwise consumers of the component won't be able to download unpublished dependencies
 
 ```sh
 npx lerna add package-to-add --scope @tds/core-component-name [--dev]
@@ -121,8 +125,8 @@ npm run build
 ```
 
 If this does not resolve your issue, there could be an issue with duplicate dependencies throughout the repository with mismatched versions.
-To solve this, we use [lerna-update-wizard](https://www.npmjs.com/package/lerna-update-wizard) using the command `npx lernaupdate --dedupe` to assure duplicate
-packages are on the same
+To solve this, we use [lerna-update-wizard](https://www.npmjs.com/package/lerna-update-wizard) using the command `npx lernaupdate --dedupe` to
+assure duplicate packages are on the same version.
 
 ## Running and updating tests
 
