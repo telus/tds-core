@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@1.1.2...@tds/core-css-reset@1.2.0) (2019-03-04)
+
+
+### Features
+
+* **core-css-reset:** mixin to keep the footer at bottom of viewport ([abdf118](https://github.com/telusdigital/tds/commit/abdf118))
+
+
+
+
+
 ## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@1.1.1...@tds/core-css-reset@1.1.2) (2019-02-06)
 
 
