@@ -4,6 +4,42 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
+## February 2019
+
+### Features 🎁
+
+**Core-Input 2.0.0** now supports uncontrolled components by setting `value` to undefined by default
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%402.0.0)
+- [Documentation](https://tds.telus.com/components/index.html#input)
+
+**Core-Select 2.0.0** now supports uncontrolled components by setting `value` to undefined by default
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-select%402.0.0)
+- [Documentation](https://tds.telus.com/components/index.html#select)
+
+**Core-TextArea 2.0.0** now supports uncontrolled components by setting `value` to undefined by default
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-text-area%402.0.0)
+- [Documentation](https://tds.telus.com/components/index.html#textarea)
+
+### Fixes 🔧
+
+**FlexGrid 2.3.5** fixes a CSS specificity issue around `horizonalAlign` in `FlexGrid.Col`
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-flex-grid%402.3.5)
+- [Documentation](https://tds.telus.com/components/index.html#col)
+
+**Core-Radio 1.2.3** no longer shows propType errors when you pass in a boolean `value`
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-radio%401.2.3)
+- [Documentation](https://tds.telus.com/components/index.html#radio)
+
+**Core-Notification 1.2.10** now supports dismissible notifications
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%401.2.10)
+- [Documentation](https://tds.telus.com/components/index.html#notification)
+
 ## January 2019
 
 ### Features 🎁
