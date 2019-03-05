@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.4...@tds/shared-base-button@1.2.5) (2019-03-05)
+
+**Note:** Version bump only for package @tds/shared-base-button
+
+
+
+
+
 ## [1.2.4](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.3...@tds/shared-base-button@1.2.4) (2019-02-06)
 
 

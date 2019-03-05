@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-card",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A content container",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -29,6 +29,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.1"
+    "@tds/core-colours": "^1.1.0"
   }
 }

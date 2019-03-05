@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-unordered-list",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -25,11 +25,11 @@
   },
   "dependencies": {
     "@tds/core-box": "^1.0.2",
-    "@tds/core-text": "^1.0.5",
+    "@tds/core-text": "^1.0.6",
     "@tds/util-prop-types": "^1.2.1",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.1"
+    "@tds/core-colours": "^1.1.0"
   }
 }

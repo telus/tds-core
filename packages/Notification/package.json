@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-notification",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "A banner that highlights important messages",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,14 +26,14 @@
   },
   "dependencies": {
     "@tds/core-box": "^1.0.2",
-    "@tds/core-decorative-icon": "^1.0.1",
+    "@tds/core-decorative-icon": "^1.0.2",
     "@tds/core-flex-grid": "^2.3.5",
-    "@tds/core-paragraph": "^1.0.5",
-    "@tds/core-standalone-icon": "^1.0.1",
+    "@tds/core-paragraph": "^1.0.6",
+    "@tds/core-standalone-icon": "^1.0.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.0.1",
+    "@tds/core-colours": "^1.1.0",
     "@tds/shared-animation": "^1.0.3"
   }
 }
