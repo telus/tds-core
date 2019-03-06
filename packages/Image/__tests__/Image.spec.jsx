@@ -1,5 +1,6 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
+
 import { warn } from '../../../shared/utils/warn'
 
 import Image from '../Image'
@@ -15,24 +16,25 @@ describe('Image', () => {
   }
 
   const doShallow = (newProps = {}) => shallow(<Image {...defaultProps} {...newProps} />)
+  const doRender = (newProps = {}) => render(<Image {...defaultProps} {...newProps} />)
 
   it('renders', () => {
-    const image = doShallow({})
+    const image = doRender({})
 
     expect(image).toMatchSnapshot()
   })
 
   it('rounds 4 corners', () => {
-    const image = doShallow({ rounded: 'corners' })
+    const image = doRender({ rounded: 'corners' })
 
-    expect(image).toHaveClassName('rounded')
+    expect(image).toMatchSnapshot()
   })
 
   describe('circular masking', () => {
     it('applies 50% border radius', () => {
-      const image = doShallow({ rounded: 'circle' })
+      const image = doRender({ rounded: 'circle' })
 
-      expect(image).toHaveClassName('circular')
+      expect(image).toMatchSnapshot()
     })
 
     it('shows a warning when the image is not a square', () => {

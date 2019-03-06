@@ -1,11 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image renders 1`] = `
+exports[`Image circular masking applies 50% border radius 1`] = `
+.c0 {
+  height: auto;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
 <img
   alt=""
-  className="fluid"
-  height={200}
+  class="c0"
+  height="200"
   src="test-image.jpg"
-  width={200}
+  width="200"
+/>
+`;
+
+exports[`Image renders 1`] = `
+.c0 {
+  height: auto;
+  max-width: 100%;
+}
+
+<img
+  alt=""
+  class="c0"
+  height="200"
+  src="test-image.jpg"
+  width="200"
+/>
+`;
+
+exports[`Image rounds 4 corners 1`] = `
+.c0 {
+  height: auto;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+<img
+  alt=""
+  class="c0"
+  height="200"
+  src="test-image.jpg"
+  width="200"
 />
 `;
