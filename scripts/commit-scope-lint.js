@@ -8,6 +8,7 @@ const fs = require('fs')
 const rootScopes = ['deps', 'other'] // Scopes where modified files are typically in the repo's root.
 const dotScopes = { github: '.github' } // Scopes that map to dotfolders
 const bypassScopes = ['publish'] // Scopes that bypass the check and allow any file to be modified in a commit.
+const excludedFiles = ['.all-contributorsrc', 'README.md'] // Files that can be modified with any scope.
 
 const getCommitScope = () => {
   const commitMessage = fs.readFileSync(process.argv[3], 'utf8')
@@ -34,9 +35,10 @@ if (bypassScopes.indexOf(commitScope) === -1) {
     .map(element => element.replace('-', ''))
     .forEach(element => {
       if (
-        (rootScopes.indexOf(commitScope) === -1 &&
+        ((rootScopes.indexOf(commitScope) === -1 &&
           element.search(new RegExp(`^(.*(/+)|(/?))${commitScope}/`, 'i')) === -1) ||
-        (rootScopes.indexOf(commitScope) !== -1 && element.search(/(\\)|(\/)/g) !== -1)
+          (rootScopes.indexOf(commitScope) !== -1 && element.search(/(\\)|(\/)/g) !== -1)) &&
+        excludedFiles.indexOf(element) === -1
       ) {
         console.error(
           '\n',
