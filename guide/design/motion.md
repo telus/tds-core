@@ -1,4 +1,4 @@
-# Motion principles <sup>beta</sup>
+# Motion principles (beta)
 
 ## Purposeful
 
