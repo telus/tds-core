@@ -1,25 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import joinClasses from '../../shared/utils/joinClassNames'
+import { borders } from '@tds/shared-styles'
 import { warn } from '../../shared/utils/warn'
 import safeRest from '../../shared/utils/safeRest'
 
-import styles from './Image.modules.scss'
-import borderStyles from '../../shared/styles/Borders.modules.scss'
+const StyledImage = styled.img({
+  height: 'auto',
+  maxWidth: '100%',
+})
+const StyledRoundedImage = styled(StyledImage)(borders.rounded)
+const StyledCircularImage = styled(StyledImage)(borders.circular)
 
 /**
  * @version ./package.json
  */
 const Image = ({ src, width, height, alt, rounded, ...rest }) => {
   const isCircle = rounded === 'circle'
+  const isCorners = rounded === 'corners'
   const isSquare = width === height
-
-  const classes = joinClasses(
-    styles.fluid,
-    rounded === 'corners' && borderStyles.rounded,
-    isCircle && borderStyles.circular
-  )
 
   if (isCircle && !isSquare) {
     warn(
@@ -28,16 +28,16 @@ const Image = ({ src, width, height, alt, rounded, ...rest }) => {
     )
   }
 
-  return (
-    <img
-      {...safeRest(rest)}
-      src={src}
-      width={width}
-      height={height}
-      alt={alt}
-      className={classes}
-    />
-  )
+  let ImageComponent
+  if (isCircle) {
+    ImageComponent = StyledCircularImage
+  } else if (isCorners) {
+    ImageComponent = StyledRoundedImage
+  } else {
+    ImageComponent = StyledImage
+  }
+
+  return <ImageComponent {...safeRest(rest)} src={src} width={width} height={height} alt={alt} />
 }
 
 Image.propTypes = {
