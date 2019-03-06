@@ -1,0 +1,26 @@
+{
+  "name": "@tds/shared-styles",
+  "version": "1.0.0-dev",
+  "description": "",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telusdigital/tds.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telusdigital/tds/issues"
+  },
+  "homepage": "http://tds.telus.com",
+  "dependencies": {
+    "@tds/core-colours": "^1.1.0"
+  }
+}
