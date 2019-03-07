@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-input@2.0.1...@tds/core-input@2.1.0) (2019-03-07)
+
+
+### Features
+
+* **core-input:** add hint position for input, deprecate helper ([4c81aa7](https://github.com/telusdigital/tds/commit/4c81aa7))
+* **core-input:** update input error notification to accept node ([ddd1c54](https://github.com/telusdigital/tds/commit/ddd1c54))
+
+
+
+
+
 ## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-input@2.0.0...@tds/core-input@2.0.1) (2019-03-05)
 
 **Note:** Version bump only for package @tds/core-input
