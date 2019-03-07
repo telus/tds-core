@@ -19,16 +19,13 @@ For information on how to use disabled Inputs, please refer to the [disabled for
 </Box>
 ```
 
-### Usage criteria
-
-- Use `hintPosition` to re-position the `hint` below the `label` if the inline `hint` wraps
-  - The `hint` should **not** be longer than 85 characters
-  - The `hint` should **not** wrap more than 3 lines on all viewport sizes
-- Keep `error` text as brief as possible, should be limited to text and links
-  - We recommend `React.Fragment` when supplying custom content to the `error` prop
-  - Note that the `div` tag is not valid in a `p` tag
-
 ### Getting feedback for entered values
+
+#### Usage criteria for feedback
+
+- Keep `error` text as brief as possible, **should be limited to text and links**
+  - Developers can use `React.Fragment` or `<span>` when supplying custom content to the `error` prop
+  - Note that the `div` tag is not valid in a `p` tag
 
 Use the `feedback` attribute to give the user feedback regarding their input. You can affirm that the user's input
 was correct, or highlight errors that must be corrected.
@@ -93,7 +90,15 @@ const validate = event => {
 />
 ```
 
-### Supplying extra information
+### Supplying a hint
+
+#### Usage criteria for hint
+
+- `hint` can now be used beside the label (inline) or below
+  - Label and inline hint text should not exceed 40 characters total, otherwise, use hint text below the label
+- The `hint` should **not** be longer than 85 characters
+- The `hint` should **not** wrap more than 3 lines on all viewport sizes
+- Developers can use `hintPosition` to re-position the `hint` below the `label` if the text supplied to the inline `hint` wraps
 
 Use a `hint` to succinctly clarify attributes of the expected input data, such as the expected format, or an indicator
 that the field is optional. It is a more usable and accessible option than the HTML `placeholder` attribute.
@@ -102,7 +107,7 @@ that the field is optional. It is a more usable and accessible option than the H
 <Input label="Transit number" hint="5 digits" type="number" />
 ```
 
-Use the `hintPosition` in conjunction with `hint` to display a larger hint text below the label.
+Use the `hintPosition` in conjunction with `hint` to display a larger hint below the label.
 
 ```jsx
 <Input

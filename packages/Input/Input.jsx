@@ -62,7 +62,7 @@ Input.propTypes = {
    */
   feedback: PropTypes.oneOf(['success', 'error']),
   /**
-   * An error message. Either an error or a helper should be used, not both.
+   * An error message. Should be limited to text and links. See usage criteria for more details.
    */
   error: PropTypes.node,
   /**
@@ -71,8 +71,6 @@ Input.propTypes = {
    *
    * If a function is provided, it must return an `InputFeedback`. The function will be
    * invoked with arguments below.
-   *
-   * **Deprecation:** As of v1.0.0, passing `Input.Helper` will no longer work.
    *
    * **Deprecation:** This is not a recommended pattern and will be removed in a future release.
    *                  Use `hint` with `hintPosition` value of `below`.
