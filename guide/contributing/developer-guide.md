@@ -32,7 +32,12 @@ After setting up TDS locally, the following steps will get you started:
 
 ```bash
 # Bootstrap your dev environment
+# This will install node and Gitbook dependencies, set up symlinks for lerna, build components for tests, and build docker containers
 npm run bootstrap
+
+# If pulling in changes on an outdated repository, or after rebasing, we recommend bootstrapping again
+# This will install node dependencies, set up symlinks for lerna, and build components for tests
+npm run bootstrap:quick
 ```
 
 We use [Prettier](https://prettier.io/), an opinionated code formatter that integrates with your text editor. Configure [your
