@@ -85,7 +85,7 @@ The `Responsive` React component is a thin wrapper over the [**react-media**](ht
 
 ### `media` utility usage
 
-To generate media queries for your `styled-components`, first import the named `media` export from `@tds/core-colours` in your .`jsx` file.
+To generate media queries for your `styled-components`, first import the named `media` export from `@tds/core-responsive` in your .`jsx` file.
 
 ```js static
 import { media } from '@tds/core-responsive'
