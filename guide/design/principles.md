@@ -8,7 +8,7 @@ must meet these principles. They are used to assess whether an experience is goo
 - Promote the brand aesthetic
 - Reduce complexity by constraining choices
 - Ensure customers can complete task on first attempt
-- Leverage usability heuristics
+- Leverage [usability heuristics](heuristics.md)
 
 ## Respect our customers
 

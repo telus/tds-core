@@ -30,6 +30,7 @@
 - [Dividers](design/dividers.md)
 - [Motion](design/motion.md)
 - [Depth](design/depth.md)
+- [Usability Heuristics](design/heuristics.md)
 
 ## Support & links
 
