@@ -12,12 +12,6 @@ describe('WaveDivider', () => {
     expect(waveDivider).toMatchSnapshot()
   })
 
-  it('is an svg', () => {
-    const waveDivider = doShallow()
-
-    expect(waveDivider).toHaveDisplayName('svg')
-  })
-
   it('passes additional attributes to the element', () => {
     const waveDivider = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
 
