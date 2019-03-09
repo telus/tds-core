@@ -1,8 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`WaveDivider renders 1`] = `
+.c0 {
+  max-width: 100%;
+}
+
+.c1 {
+  fill: none;
+}
+
+.c2 {
+  opacity: 0.3;
+}
+
+.c4 {
+  opacity: 0.2;
+}
+
+.c10 {
+  fill: url(#TDS_WaveDivider_gradient-7);
+}
+
+.c11 {
+  fill: url(#TDS_WaveDivider_gradient-8);
+}
+
+.c12 {
+  fill: url(#TDS_WaveDivider_gradient-9);
+}
+
+.c13 {
+  fill: url(#TDS_WaveDivider_gradient-10);
+}
+
+.c14 {
+  fill: url(#TDS_WaveDivider_gradient-11);
+}
+
+.c3 {
+  fill: url(#TDS_WaveDivider_gradient-1);
+  opacity: 1;
+  isolation: unset;
+}
+
+.c5 {
+  fill: url(#TDS_WaveDivider_gradient-2);
+  opacity: 0.5;
+  isolation: isolate;
+}
+
+.c6 {
+  fill: url(#TDS_WaveDivider_gradient-3);
+  opacity: 1;
+  isolation: unset;
+}
+
+.c7 {
+  fill: url(#TDS_WaveDivider_gradient-4);
+  opacity: 0.5;
+  isolation: isolate;
+}
+
+.c8 {
+  fill: url(#TDS_WaveDivider_gradient-5);
+  opacity: 1;
+  isolation: unset;
+}
+
+.c9 {
+  fill: url(#TDS_WaveDivider_gradient-6);
+  opacity: 0.5;
+  isolation: isolate;
+}
+
 <svg
-  class="wave"
+  class="c0"
   height="226"
   viewBox="0 0 1202 226"
   width="1202"
@@ -134,18 +206,18 @@ exports[`WaveDivider renders 1`] = `
   <g>
     <g>
       <path
-        class="noFill"
+        class="c1"
         d="M293.89 144.8c24.26 1.32 47.12 2.06 67.8 2.06 193 0 395.64-56 590.52-67C886.68 66.05 821.57 56.1 769.84 56.1 614.41 56.1 452.32 117.3 293.89 144.8Z"
       />
       <g
-        class="opacity3"
+        class="c2"
       >
         <path
-          class="gradient1"
+          class="c3"
           d="M1200 146c-57.54-18-153.12-46.11-247.79-66.1-194.87 11.06-397.57 67-590.52 67-20.69 0-43.55-.74-67.8-2.06-46 8-91.66 13.16-136.77 13.16-42.2 0-100.58-6.26-157.12-14.1V224H1200Z"
         />
         <g
-          class="opacity2"
+          class="c4"
         >
           <path
             d="M1200 146c-57.54-18-153.12-46.11-247.79-66.1-194.87 11.06-397.57 67-590.52 67-20.69 0-43.55-.74-67.8-2.06-46 8-91.66 13.16-136.77 13.16-42.2 0-100.58-6.26-157.12-14.1V224H1200Z"
@@ -153,18 +225,18 @@ exports[`WaveDivider renders 1`] = `
         </g>
       </g>
       <path
-        class="gradient2"
+        class="c5"
         d="M769.84 56.1c51.74 0 116.84 10 182.38 23.79C973.58 78.68 994.85 78 1016 78c49.13 0 118.77 11.47 184 25.06V0H0V114.49c90.58 12.22 202.25 25.38 293.89 30.31C452.32 117.3 614.41 56.1 769.84 56.1Z"
       />
       <g
-        class="opacity3"
+        class="c2"
       >
         <path
-          class="gradient3"
+          class="c6"
           d="M293.89 144.8C202.25 139.8 90.58 126.67 0 114.45V143.9C56.54 151.74 114.92 158 157.12 158 202.23 158 247.91 152.8 293.89 144.8Z"
         />
         <g
-          class="opacity2"
+          class="c4"
         >
           <path
             d="M293.89 144.8C202.25 139.8 90.58 126.67 0 114.45V143.9C56.54 151.74 114.92 158 157.12 158 202.23 158 247.91 152.8 293.89 144.8Z"
@@ -172,18 +244,18 @@ exports[`WaveDivider renders 1`] = `
         </g>
       </g>
       <path
-        class="gradient4"
+        class="c7"
         d="M293.89 144.8C202.25 139.8 90.58 126.67 0 114.45V143.9C56.54 151.74 114.92 158 157.12 158 202.23 158 247.91 152.8 293.89 144.8Z"
       />
       <g
-        class="opacity3"
+        class="c2"
       >
         <path
-          class="gradient5"
+          class="c8"
           d="M952.21 79.89c94.67 20 190.24 48.11 247.79 66.1V103.05C1134.77 89.47 1065.13 78 1016 78 994.85 78 973.58 78.68 952.21 79.89Z"
         />
         <g
-          class="opacity2"
+          class="c4"
         >
           <path
             d="M952.21 79.89c94.67 20 190.24 48.11 247.79 66.1V103.05C1134.77 89.47 1065.13 78 1016 78 994.85 78 973.58 78.68 952.21 79.89Z"
@@ -191,22 +263,22 @@ exports[`WaveDivider renders 1`] = `
         </g>
       </g>
       <path
-        class="gradient6"
+        class="c9"
         d="M952.21 79.89c94.67 20 190.24 48.11 247.79 66.1V103.05C1134.77 89.47 1065.13 78 1016 78 994.85 78 973.58 78.68 952.21 79.89Z"
       />
       <rect
-        class="gradient7"
+        class="c10"
         height="226"
         width="180"
       />
       <rect
-        class="gradient8"
+        class="c11"
         height="226"
         width="180"
         x="1020"
       />
       <rect
-        class="gradient9"
+        class="c12"
         height="72"
         width="1202"
         y="154"
@@ -215,13 +287,13 @@ exports[`WaveDivider renders 1`] = `
   </g>
   <g>
     <rect
-      class="gradient10"
+      class="c13"
       height="67.5"
       width="1201.56"
       y="158.3"
     />
     <rect
-      class="gradient11"
+      class="c14"
       height="67.5"
       transform="translate(1202.45 67.7) rotate(179.98)"
       width="1201.56"
