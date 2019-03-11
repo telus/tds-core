@@ -36,7 +36,7 @@ exports[`<StepTracker /> renders 1`] = `
               class="label"
             >
               <span
-                class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+                class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
               >
                 1. Login
               </span>
@@ -58,7 +58,7 @@ exports[`<StepTracker /> renders 1`] = `
               class="label"
             >
               <span
-                class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
               >
                 2. Purchase
               </span>
@@ -80,7 +80,7 @@ exports[`<StepTracker /> renders 1`] = `
               class="label"
             >
               <span
-                class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+                class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
               >
                 3. Checkout
               </span>
@@ -99,7 +99,7 @@ exports[`<StepTracker /> renders 1`] = `
           class="mobileLabel"
         >
           <span
-            class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W"
+            class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
             data-testid="mobileStepLabel"
           >
             <span>
