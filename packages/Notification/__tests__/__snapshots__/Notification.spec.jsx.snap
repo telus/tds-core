@@ -29,7 +29,7 @@ exports[`<Notification /> renders 1`] = `
                   class="withoutIcon"
                 >
                   <p
-                    class="TDS_Typography-modules__wordBreak___3dmWU TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Paragraph-modules__leftAlign___KgwhE"
+                    class="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Paragraph-modules__leftAlign___KgwhE"
                   >
                     Some content
                   </p>
