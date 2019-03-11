@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import styles from '@tds/shared-typography/Typography.modules.scss'
+
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
 
 import TextSup from './TextSup/TextSup'
-
-import styles from '../../shared/styles/Typography/Typography.modules.scss'
 
 /**
  * Inline text usually as an HTML `<span>` element.
