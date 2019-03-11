@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../shared/utils/safeRest'
+import styles from '@tds/shared-typography/Typography.modules.scss'
 
-import styles from '../../shared/styles/Typography/Typography.modules.scss'
+import safeRest from '../../shared/utils/safeRest'
 
 /**
  * Small print, such as copyright and legal text.
