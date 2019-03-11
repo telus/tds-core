@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.8](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.2.7...@tds/core-expand-collapse@1.2.8) (2019-03-11)
+
+
+### Bug Fixes
+
+* **shared-animation:** set overflow to visible when expanded ([457140c](https://github.com/telusdigital/tds/commit/457140c))
+
+
+
+
+
 ## [1.2.7](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.2.6...@tds/core-expand-collapse@1.2.7) (2019-03-11)
 
 **Note:** Version bump only for package @tds/core-expand-collapse

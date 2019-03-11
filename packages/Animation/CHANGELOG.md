@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.1.0...@tds/shared-animation@1.1.1) (2019-03-11)
+
+
+### Bug Fixes
+
+* **shared-animation:** set overflow to visible when expanded ([457140c](https://github.com/telusdigital/tds/commit/457140c))
+
+
+
+
+
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.0.3...@tds/shared-animation@1.1.0) (2019-03-11)
 
 
