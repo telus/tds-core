@@ -8,7 +8,7 @@ exports[`<OrderedList /> renders 1`] = `
     class="base item"
   >
     <span
-      class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
     >
       Lorem ipsum
     </span>
@@ -17,7 +17,7 @@ exports[`<OrderedList /> renders 1`] = `
     class="base item"
   >
     <span
-      class="TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__mediumFont___2ULml TDS_Typography-modules__color___1Jt_W"
+      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
     >
       Dolor sit amet
     </span>

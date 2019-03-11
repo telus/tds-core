@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
+import typographyStyle from '@tds/shared-typography/Typography.modules.scss'
 
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
@@ -10,7 +11,6 @@ import joinClassNames from '../../shared/utils/joinClassNames'
 import OrderedItem from './OrderedItem/OrderedItem'
 
 import styles from './OrderedList.modules.scss'
-import typographyStyle from '../../shared/styles/Typography/Typography.modules.scss'
 
 const injectListStyle = (child, size) => React.cloneElement(child, { size })
 
