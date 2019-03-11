@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.0.3...@tds/shared-animation@1.1.0) (2019-03-11)
+
+
+### Features
+
+* **shared-animation:** move animation to public component ([514ec08](https://github.com/telusdigital/tds/commit/514ec08))
+
+
+
+
+
 ## [1.0.3](https://github.com/telus/tds-core/compare/@tds/shared-animation@1.0.2...@tds/shared-animation@1.0.3) (2019-02-06)
 
 **Note:** Version bump only for package @tds/shared-animation

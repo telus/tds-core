@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-price-lockup",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -25,14 +25,14 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.0.2",
+    "@tds/core-box": "^1.0.3",
     "@tds/core-hairline-divider": "^1.0.3",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-display-heading": "^1.0.8",
-    "@tds/core-heading": "^1.1.7",
-    "@tds/core-responsive": "^1.1.1",
+    "@tds/core-display-heading": "^1.0.9",
+    "@tds/core-heading": "^1.1.8",
+    "@tds/core-responsive": "^1.2.0",
     "@tds/core-text": "^1.0.6",
     "@tds/shared-typography": "^1.1.2"
   }

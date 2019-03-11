@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-base-button",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "private": true,
   "main": "",
   "module": "",
@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.1.0",
-    "@tds/core-responsive": "^1.1.1",
+    "@tds/core-responsive": "^1.2.0",
     "@tds/shared-typography": "^1.1.2"
   }
 }

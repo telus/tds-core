@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-select",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -24,9 +24,9 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.0.2",
+    "@tds/core-box": "^1.0.3",
     "@tds/core-decorative-icon": "^1.0.2",
-    "@tds/core-input-feedback": "^1.0.4",
+    "@tds/core-input-feedback": "^1.0.5",
     "@tds/core-paragraph": "^1.0.6",
     "@tds/core-standalone-icon": "^1.0.2",
     "@tds/core-text": "^1.0.6",
@@ -35,8 +35,8 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.1.0",
-    "@tds/shared-animation": "^1.0.3",
-    "@tds/shared-form-field": "^2.1.0",
+    "@tds/shared-animation": "^1.1.0",
+    "@tds/shared-form-field": "^2.1.1",
     "react-transition-group": "^2.2.1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-button-link",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A link that is styled as a button",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -31,6 +31,6 @@
   "devDependencies": {
     "@tds/core-a11y-content": "^1.0.1",
     "@tds/core-colours": "^1.1.0",
-    "@tds/shared-base-button": "^1.2.5"
+    "@tds/shared-base-button": "^1.2.6"
   }
 }
