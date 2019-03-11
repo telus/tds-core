@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import typographyStyles from '@tds/shared-typography/Typography.modules.scss'
+
 import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
 
-import typographyStyles from '../../shared/styles/Typography/Typography.modules.scss'
 import spacingStyles from '../../shared/styles/Spacing.modules.scss'
 import styles from './Paragraph.modules.scss'
 
