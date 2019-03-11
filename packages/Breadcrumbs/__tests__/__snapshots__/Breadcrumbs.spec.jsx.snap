@@ -45,7 +45,7 @@ exports[`Breadcrumbs with children renders 1`] = `
       class="lastItem"
     >
       <span
-        class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__inheritColor___3YAyL"
+        class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
         Accessories
       </span>
@@ -99,7 +99,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
       class="lastItem"
     >
       <span
-        class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__inheritColor___3YAyL"
+        class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
         Accessories
       </span>
