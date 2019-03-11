@@ -105,7 +105,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                   size="large"
                                 >
                                   <span
-                                    className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                    className="TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                                   >
                                     <DecorativeIcon
                                       size={16}
@@ -154,7 +154,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                      className="TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                                     >
                                       Panel title
                                     </span>
@@ -227,7 +227,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                           size="base"
                         >
                           <span
-                            className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__blockText___2DsZN"
+                            className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__blockText___2Gy51"
                           >
                             <Panel
                               disabled={false}
@@ -380,7 +380,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                   size="large"
                                 >
                                   <span
-                                    className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                    className="TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                                   >
                                     <DecorativeIcon
                                       size={16}
@@ -429,7 +429,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="TDS_Typography-modules__large___3Z5sJ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__largeFont___3fZLf TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__color___1Jt_W"
+                                      className="TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                                     >
                                       Panel title
                                     </span>
@@ -501,7 +501,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                           size="base"
                         >
                           <span
-                            className="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__color___1Jt_W TDS_Typography-modules__blockText___2DsZN"
+                            className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__blockText___2Gy51"
                           >
                             <Panel
                               disabled={false}
