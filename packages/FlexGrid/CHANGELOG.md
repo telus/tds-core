@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.7](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.6...@tds/core-flex-grid@2.3.7) (2019-03-13)
+
+
+### Bug Fixes
+
+* **core-flex-grid:** downgrade react-broadcast ([70864e4](https://github.com/telusdigital/tds/commit/70864e4))
+
+
+
+
+
 ## [2.3.6](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.5...@tds/core-flex-grid@2.3.6) (2019-03-11)
 
 **Note:** Version bump only for package @tds/core-flex-grid
