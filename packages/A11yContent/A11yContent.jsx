@@ -1,14 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import styles from './A11yContent.modules.scss'
+const StyledA11yContent = styled.span({
+  position: 'absolute',
+  height: '1px',
+  width: '1px',
+  overflow: 'hidden',
+  clip: 'rect(1px, 1px, 1px, 1px)',
+})
 
 /**
  * @version ./package.json
  */
 
 const A11yContent = ({ children }) => {
-  return <span className={styles.a11yContent}>{children}</span>
+  return <StyledA11yContent>{children}</StyledA11yContent>
 }
 
 A11yContent.propTypes = {
