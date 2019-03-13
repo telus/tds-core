@@ -71,3 +71,89 @@ Note the compositional nature of `Box`. Use multiple Boxes to achieve complex la
   <Link href="#">Sale</Link>
 </Box>
 ```
+
+### Using space-between
+
+This prop implements `justify-content: space-between;` in CSS. With `space-between`, the space is dynamically determined based on the size of the box, and the elements inside are distributed evenly from the start to the end.
+
+#### Without space-between
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col>
+      <Box dangerouslyAddClassName="docs_full-height-box">
+        <Heading level="h2">This is a heading</Heading>
+        <Paragraph>This is a paragraph.</Paragraph>
+        <ChevronLink href="#">This is a link</ChevronLink>
+      </Box>
+    </FlexGrid.Col>
+
+    <FlexGrid.Col>
+      <Box dangerouslyAddClassName="docs_full-height-box">
+        <Heading level="h2">This is a heading</Heading>
+        <Paragraph>This is a paragraph.</Paragraph>
+        <ChevronLink href="#">This is a link</ChevronLink>
+      </Box>
+    </FlexGrid.Col>
+
+    <FlexGrid.Col>
+      <Box between={3} dangerouslyAddClassName="docs_full-height-box">
+        <Heading level="h2">This is a much longer heading</Heading>
+        <Paragraph>This is a much longer paragraph.</Paragraph>
+        <ChevronLink href="#">This is a link</ChevronLink>
+      </Box>
+    </FlexGrid.Col>
+
+    <FlexGrid.Col>
+      <Box dangerouslyAddClassName="docs_full-height-box">
+        <Heading level="h2">This is a heading</Heading>
+        <Paragraph>This is a paragraph.</Paragraph>
+        <ChevronLink href="#">This is a link</ChevronLink>
+      </Box>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```
+
+#### With space-between
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col>
+      <Box between="space-between" dangerouslyAddClassName="docs_full-height-box">
+        <Heading level="h2">This is a heading</Heading>
+        <Paragraph>This is a paragraph.</Paragraph>
+        <ChevronLink href="#">This is a link</ChevronLink>
+      </Box>
+    </FlexGrid.Col>
+
+    <FlexGrid.Col>
+      <Box between="space-between" dangerouslyAddClassName="docs_full-height-box">
+        <Heading level="h2">This is a heading</Heading>
+        <Paragraph>This is a paragraph.</Paragraph>
+        <ChevronLink href="#">This is a link</ChevronLink>
+      </Box>
+    </FlexGrid.Col>
+
+    <FlexGrid.Col>
+      <Box between={3} dangerouslyAddClassName="docs_full-height-box">
+        <Heading level="h2">This is a much longer heading</Heading>
+        <Paragraph>This is a much longer paragraph.</Paragraph>
+        <ChevronLink href="#">This is a link</ChevronLink>
+      </Box>
+    </FlexGrid.Col>
+
+    <FlexGrid.Col>
+      <Box between="space-between" dangerouslyAddClassName="docs_full-height-box">
+        <Heading level="h2">This is a heading</Heading>
+        <Paragraph>This is a paragraph.</Paragraph>
+        <ChevronLink href="#">This is a link</ChevronLink>
+      </Box>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```
+
+Use `space-between` to space elements inside of `Box` evenly, dynamically fitted to the `Box`'s size.
