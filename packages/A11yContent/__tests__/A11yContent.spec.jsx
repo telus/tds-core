@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 
 import A11yContent from '../A11yContent'
 
@@ -14,7 +14,7 @@ describe('A11yContent', () => {
   }
 
   it('renders', () => {
-    const a11yContent = doShallow()
+    const a11yContent = render(<A11yContent>Some text</A11yContent>)
 
     expect(a11yContent).toMatchSnapshot()
   })
