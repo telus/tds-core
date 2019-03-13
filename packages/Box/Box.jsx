@@ -21,7 +21,7 @@ const getBetweenClasses = (scale, inline) => {
 
   const direction = inline ? 'Right' : 'Bottom'
   return joinClassNames(
-    styles[`between${direction}Margin-${scale}`],
+    scale === 'space-between' ? styles.spaceBetween : styles[`between${direction}Margin-${scale}`],
     inline ? styles.inline : styles.stack
   )
 }
@@ -90,7 +90,7 @@ Box.propTypes = {
    * By default, `between` will arrange the Box's children as a flex column. Combine with `inline` to arrange them
    * as a flex row.
    */
-  between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 'space-between']),
   /**
    * Arrange children in a row. Combine with `between` to apply margins in between the row's elements.
    */
