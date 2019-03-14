@@ -27,7 +27,7 @@ SVGIcon.propTypes = {
 }
 
 SVGIcon.defaultProps = {
-  variant: 'secondary',
+  variant: 'primary',
   size: 24,
 }
 
