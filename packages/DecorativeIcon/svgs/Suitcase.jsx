@@ -1,7 +1,7 @@
 import React from 'react'
 import SVGIcon from '../SVGIcon'
 
-const Accessible = props => (
+const Suitcase = props => (
   <SVGIcon {...props}>
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20">
       <defs>
@@ -15,4 +15,4 @@ const Accessible = props => (
   </SVGIcon>
 )
 
-export default Accessible
+export default Suitcase
