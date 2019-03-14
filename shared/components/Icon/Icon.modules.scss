@@ -28,6 +28,29 @@
   font-size: 3rem;
 }
 
+.svgSize16 > svg {
+  width: 16px;
+  height: 16px;
+}
+.svgSize24 > svg {
+  width: 24px;
+  height: 24px;
+}
+.svgSize48 > svg {
+  width: 48px;
+  height: 48px;
+}
+
+.svgVariantPrimary > svg {
+  fill: $color-telus-purple;
+}
+.svgVariantSecondary > svg {
+  fill: $color-shark;
+}
+.svgVariantInverted > svg {
+  fill: $color-white;
+}
+
 .icon {
   font-family: 'TELUS Core Icons'; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
 
