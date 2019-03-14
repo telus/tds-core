@@ -14,6 +14,4 @@ const Accessible = props => (
     </svg>
   </SVGIcon>
 )
-// const Accessible = props => <SVGIcon {...props} svg="../dist/accessible.svg" />
-
 export default Accessible
