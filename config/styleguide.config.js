@@ -294,6 +294,7 @@ module.exports = {
   require: [
     path.resolve('packages/css-reset/index.scss'),
     path.resolve('docs/scss/styleguide.scss'),
+    path.resolve('config/globalComponents.js'),
   ].concat(styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []),
   styleguideComponents: {
     Editor: path.resolve('docs/components/overrides/Editor/Editor'),
