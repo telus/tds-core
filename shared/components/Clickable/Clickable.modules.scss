@@ -1,12 +1,10 @@
-@import '~@tds/shared-typography/Typography.modules.scss';
-
 .clickable {
   composes: noSpacing from '../../styles/Spacing.modules.scss';
   composes: none from '../../styles/Borders.modules.scss';
 
   composes: font from '../../styles/Forms.modules.scss';
   // Reset the text color because Safari tries to set its own color for buttons
-  composes: color;
+  composes: color from '../../../packages/typography/Typography.modules.scss';
 
   appearance: none;
   background: none;
