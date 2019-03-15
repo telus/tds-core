@@ -83,33 +83,27 @@ This prop implements `justify-content: space-between;` in CSS. With `space-betwe
   <FlexGrid.Row>
     <FlexGrid.Col>
       <Box dangerouslyAddClassName="docs_full-height-box">
-        <Heading level="h2">This is a heading</Heading>
-        <Paragraph>This is a paragraph.</Paragraph>
-        <ChevronLink href="#">This is a link</ChevronLink>
-      </Box>
-    </FlexGrid.Col>
-
-    <FlexGrid.Col>
-      <Box dangerouslyAddClassName="docs_full-height-box">
-        <Heading level="h2">This is a heading</Heading>
-        <Paragraph>This is a paragraph.</Paragraph>
-        <ChevronLink href="#">This is a link</ChevronLink>
+        <Paragraph>This is the first line</Paragraph>
+        <Paragraph>This is the second line</Paragraph>
+        <Paragraph>This is the third line</Paragraph>
       </Box>
     </FlexGrid.Col>
 
     <FlexGrid.Col>
       <Box between={3} dangerouslyAddClassName="docs_full-height-box">
-        <Heading level="h2">This is a much longer heading</Heading>
-        <Paragraph>This is a much longer paragraph.</Paragraph>
-        <ChevronLink href="#">This is a link</ChevronLink>
+        <Paragraph>
+          This first line is much larger than the others to demonstrate the effects of space-between
+        </Paragraph>
+        <Paragraph>This is the second line</Paragraph>
+        <Paragraph>This is the third line</Paragraph>
       </Box>
     </FlexGrid.Col>
 
     <FlexGrid.Col>
       <Box dangerouslyAddClassName="docs_full-height-box">
-        <Heading level="h2">This is a heading</Heading>
-        <Paragraph>This is a paragraph.</Paragraph>
-        <ChevronLink href="#">This is a link</ChevronLink>
+        <Paragraph>This is the first line</Paragraph>
+        <Paragraph>This is the second line</Paragraph>
+        <Paragraph>This is the third line</Paragraph>
       </Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
@@ -123,33 +117,27 @@ This prop implements `justify-content: space-between;` in CSS. With `space-betwe
   <FlexGrid.Row>
     <FlexGrid.Col>
       <Box between="space-between" dangerouslyAddClassName="docs_full-height-box">
-        <Heading level="h2">This is a heading</Heading>
-        <Paragraph>This is a paragraph.</Paragraph>
-        <ChevronLink href="#">This is a link</ChevronLink>
-      </Box>
-    </FlexGrid.Col>
-
-    <FlexGrid.Col>
-      <Box between="space-between" dangerouslyAddClassName="docs_full-height-box">
-        <Heading level="h2">This is a heading</Heading>
-        <Paragraph>This is a paragraph.</Paragraph>
-        <ChevronLink href="#">This is a link</ChevronLink>
+        <Paragraph>This is the first line</Paragraph>
+        <Paragraph>This is the second line</Paragraph>
+        <Paragraph>This is the third line</Paragraph>
       </Box>
     </FlexGrid.Col>
 
     <FlexGrid.Col>
       <Box between={3} dangerouslyAddClassName="docs_full-height-box">
-        <Heading level="h2">This is a much longer heading</Heading>
-        <Paragraph>This is a much longer paragraph.</Paragraph>
-        <ChevronLink href="#">This is a link</ChevronLink>
+        <Paragraph>
+          This first line is much larger than the others to demonstrate the effects of space-between
+        </Paragraph>
+        <Paragraph>This is the second line.</Paragraph>
+        <Paragraph>This is the third line</Paragraph>
       </Box>
     </FlexGrid.Col>
 
     <FlexGrid.Col>
       <Box between="space-between" dangerouslyAddClassName="docs_full-height-box">
-        <Heading level="h2">This is a heading</Heading>
-        <Paragraph>This is a paragraph.</Paragraph>
-        <ChevronLink href="#">This is a link</ChevronLink>
+        <Paragraph>This is the first line</Paragraph>
+        <Paragraph>This is the second line</Paragraph>
+        <Paragraph>This is the third line</Paragraph>
       </Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
