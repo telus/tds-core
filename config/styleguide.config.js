@@ -115,6 +115,10 @@ module.exports = {
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
 
+    if (name === 'SVGIcon') {
+      return `import { Accessible, Speed, Success } from '@tds/core-decorative-icon'`
+    }
+
     return `import ${name} from '@tds/core-${kebabizeName}'`
   },
 
@@ -213,6 +217,7 @@ module.exports = {
           components() {
             return [
               path.resolve('packages/DecorativeIcon/DecorativeIcon.jsx'),
+              path.resolve('packages/DecorativeIcon/SVGIcon.jsx'),
               path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
             ]
           },
