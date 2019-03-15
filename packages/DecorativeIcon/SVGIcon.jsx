@@ -6,7 +6,11 @@ import joinClassNames from '../../shared/utils/joinClassNames'
 
 import styles from '../../shared/components/Icon/Icon.modules.scss'
 import capitalize from '../../shared/utils/capitalize'
-
+/**
+ * SVG Icons are a type of DecorativeIcon that use SVGs instead of fonts to render the icons.
+ *
+ * @version ./package.json
+ */
 const SVGIcon = ({ children, variant, size, ...rest }) => {
   const classes = joinClassNames(
     variant && styles[`svgVariant${capitalize(variant)}`],
@@ -21,8 +25,17 @@ const SVGIcon = ({ children, variant, size, ...rest }) => {
 }
 
 SVGIcon.propTypes = {
+  /**
+   * @ignore
+   */
   children: PropTypes.node.isRequired,
+  /**
+   * The appearance of the Icon.
+   */
   variant: PropTypes.oneOf(['default', 'alternative', 'inverted']),
+  /**
+   * The icon size in pixels.
+   */
   size: PropTypes.oneOf([16, 24, 48]),
 }
 
