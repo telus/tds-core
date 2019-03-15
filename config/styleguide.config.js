@@ -116,7 +116,7 @@ module.exports = {
     }
 
     if (name === 'SVGIcon') {
-      return `import { Accessible, Speed, Success } from '@tds/core-decorative-icon'`
+      return `import { Accessible, Speed, Success, [..IconName] } from '@tds/core-decorative-icon'`
     }
 
     return `import ${name} from '@tds/core-${kebabizeName}'`
