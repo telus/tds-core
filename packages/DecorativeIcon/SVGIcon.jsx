@@ -22,12 +22,12 @@ const SVGIcon = ({ children, variant, size, ...rest }) => {
 
 SVGIcon.propTypes = {
   children: PropTypes.node.isRequired,
-  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
+  variant: PropTypes.oneOf(['default', 'alternative', 'inverted']),
   size: PropTypes.oneOf([16, 24, 48]),
 }
 
 SVGIcon.defaultProps = {
-  variant: 'primary',
+  variant: 'default',
   size: 24,
 }
 
