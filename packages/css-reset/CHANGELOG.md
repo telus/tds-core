@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@1.2.1...@tds/core-css-reset@1.2.2) (2019-03-18)
+
+
+### Bug Fixes
+
+* **core-css-reset:** make default letter spacing -0.8px ([612bc57](https://github.com/telusdigital/tds/commit/612bc57))
+
+
+
+
+
 ## [1.2.1](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@1.2.0...@tds/core-css-reset@1.2.1) (2019-03-05)
 
 **Note:** Version bump only for package @tds/core-css-reset
