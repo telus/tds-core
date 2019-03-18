@@ -1089,7 +1089,11 @@ Check out the table below a full list of SVG Icons and their usage guidelines.
       <Text>map </Text>
     </FlexGrid.Col>
     <FlexGrid.Col>
-      <MapIcon />
+      {/**
+       * This is a workaround for reserved names
+       * that cannot be overridden in globalComponents.js
+       */
+      typeof MapIcon === 'undefined' ? <Map /> : <MapIcon />}
     </FlexGrid.Col>
     <FlexGrid.Col>
       <Text>map, travel, gps</Text>
@@ -1166,7 +1170,7 @@ Check out the table below a full list of SVG Icons and their usage guidelines.
       <Text>clipboard </Text>
     </FlexGrid.Col>
     <FlexGrid.Col>
-      <ClipboardIcon />
+      {typeof ClipboardIcon === 'undefined' ? <Clipboard /> : <ClipboardIcon />}
     </FlexGrid.Col>
     <FlexGrid.Col>
       <Text>For information or forms</Text>
@@ -1597,7 +1601,7 @@ Check out the table below a full list of SVG Icons and their usage guidelines.
       <Text>document </Text>
     </FlexGrid.Col>
     <FlexGrid.Col>
-      <DocumentIcon />
+      {typeof DocumentIcon === 'undefined' ? <Document /> : <DocumentIcon />}
     </FlexGrid.Col>
     <FlexGrid.Col>
       <Text>Single document</Text>

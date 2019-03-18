@@ -70,6 +70,12 @@ describe('Box', () => {
 
       expect(box).toHaveClassName('betweenRightMargin-2')
     })
+
+    it('applies space-between', () => {
+      const box = doShallow({ between: 'space-between' })
+
+      expect(box).toHaveClassName('spaceBetween')
+    })
   })
 
   it('passes additional attributes to the wrapping element', () => {
