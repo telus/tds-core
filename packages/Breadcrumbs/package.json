@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-breadcrumbs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,9 +26,9 @@
     "react-helmet": ">=5"
   },
   "dependencies": {
-    "@tds/core-colours": "^1.1.0",
-    "@tds/core-link": "^1.0.5",
-    "@tds/core-text": "^1.0.6",
+    "@tds/core-colours": "^1.1.1",
+    "@tds/core-link": "^1.0.6",
+    "@tds/core-text": "^1.0.7",
     "@tds/util-prop-types": "^1.2.1",
     "prop-types": "^15.5.10"
   },

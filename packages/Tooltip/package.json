@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-tooltip",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "Provide an explanation or instructions for a form field that most users do not need",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,12 +27,12 @@
   "dependencies": {
     "@tds/core-box": "^1.1.0",
     "@tds/core-responsive": "^1.2.0",
-    "@tds/core-standalone-icon": "^1.0.2",
-    "@tds/core-text": "^1.0.6",
+    "@tds/core-standalone-icon": "^1.0.3",
+    "@tds/core-text": "^1.0.7",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.1.0",
+    "@tds/core-colours": "^1.1.1",
     "@tds/core-responsive": "^1.1.0",
     "@tds/util-generate-id": "^1.0.2"
   }

@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-spinner",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "A waiting indicator",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -25,11 +25,11 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-text": "^1.0.6",
+    "@tds/core-text": "^1.0.7",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.1.0",
+    "@tds/core-colours": "^1.1.1",
     "classnames": "^2.2.5"
   }
 }

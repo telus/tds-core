@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-input-feedback",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A feedback box commonly used with form fields",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -29,6 +29,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.1.0"
+    "@tds/core-colours": "^1.1.1"
   }
 }

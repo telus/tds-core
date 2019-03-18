@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-colours",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The TDS colour palatte",
   "main": "index.cjs.js",
   "module": "index.es.js",
