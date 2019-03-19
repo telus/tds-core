@@ -17,13 +17,23 @@ describe('SVGIcon', () => {
     expect(icon).toMatchSnapshot()
   })
 
+  it('has variant set to `default`', () => {
+    const icon = doShallow()
+    expect(icon).toHaveClassName('svgVariantDefault')
+  })
+
+  it('has size set to 24', () => {
+    const icon = doShallow()
+    expect(icon).toHaveClassName('svgSize24')
+  })
+
   it('is hidden from screen readers', () => {
     const icon = doShallow()
     expect(icon).toHaveProp('aria-hidden', 'true')
   })
 })
 
-describe('BatteryCharging', () => {
+describe('SVGIcon consumer', () => {
   const defaultProps = {
     variant: 'default',
   }
