@@ -85,7 +85,7 @@
     "case": "^1.5.5",
     "chalk": "^2.4.1",
     "chromedriver": "^2.46.0",
-    "commitizen": "^3.0.0",
+    "commitizen": "^3.0.7",
     "core-js": "^2.5.3",
     "css-loader": "^2.0.0",
     "css-mediaquery": "^0.1.2",
