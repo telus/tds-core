@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BatteryCharging renders 1`] = `
+exports[`SVGIcon consumer renders 1`] = `
 <i
   aria-hidden="true"
   class="svgVariantDefault svgSize24"
