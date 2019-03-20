@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import safeRest from '../../shared/utils/safeRest'
-
-import styles from './$COMPONENT$.modules.scss'
 
 /**
  * @version ./package.json
