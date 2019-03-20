@@ -1,21 +1,22 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 
 import Strong from '../Strong'
 
 describe('Strong', () => {
   const doShallow = props => shallow(<Strong {...props}>Some content</Strong>)
+  const doRender = props => render(<Strong {...props}>Some content</Strong>)
 
   it('renders', () => {
-    const strong = doShallow()
+    const strong = doRender()
 
     expect(strong).toMatchSnapshot()
   })
 
   it('renders an HTML strong tag', () => {
-    const strong = doShallow()
+    const strong = doRender()
 
-    expect(strong).toHaveDisplayName('strong')
+    expect(strong.is('strong')).toEqual(true)
   })
 
   it('passes additional attributes to the strong element', () => {

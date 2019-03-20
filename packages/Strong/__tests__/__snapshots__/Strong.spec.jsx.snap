@@ -1,8 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Strong renders 1`] = `
+.c0 {
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
 <strong
-  className="boldFont"
+  class="c0"
 >
   Some content
 </strong>
