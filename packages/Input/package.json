@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-input",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -25,17 +25,17 @@
   },
   "dependencies": {
     "@tds/core-box": "^1.1.0",
-    "@tds/core-input-feedback": "^1.0.7",
-    "@tds/core-paragraph": "^1.0.7",
+    "@tds/core-input-feedback": "^1.0.8",
+    "@tds/core-paragraph": "^1.0.8",
     "@tds/core-standalone-icon": "^1.0.3",
-    "@tds/core-text": "^1.0.7",
+    "@tds/core-text": "^1.0.8",
     "@tds/util-prop-types": "^1.2.1",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.1.1",
     "@tds/shared-animation": "^1.1.1",
-    "@tds/shared-form-field": "^2.1.4",
+    "@tds/shared-form-field": "^2.1.5",
     "react-transition-group": "^2.2.1"
   }
 }
