@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/telusdigital/tds-core/compare/@tds/shared-typography@1.2.0...@tds/shared-typography@1.2.1) (2019-03-20)
+
+
+### Bug Fixes
+
+* **shared-typography:** use module.exports instead of exports ([c43d3d3](https://github.com/telusdigital/tds-core/commit/c43d3d3))
+
+
+
+
+
 # [1.2.0](https://github.com/telusdigital/tds-core/compare/@tds/shared-typography@1.1.3...@tds/shared-typography@1.2.0) (2019-03-20)
 
 
