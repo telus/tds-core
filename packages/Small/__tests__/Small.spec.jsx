@@ -1,21 +1,22 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 
 import Small from '../Small'
 
 describe('Small', () => {
   const doShallow = props => shallow(<Small {...props}>Some content</Small>)
+  const doRender = props => render(<Small {...props}>Some content</Small>)
 
   it('renders', () => {
-    const small = doShallow()
+    const small = doRender()
 
     expect(small).toMatchSnapshot()
   })
 
   it('renders an HTML small tag', () => {
-    const small = doShallow()
+    const small = doRender()
 
-    expect(small).toHaveDisplayName('small')
+    expect(small.is('small')).toEqual(true)
   })
 
   it('passes additional attributes to the small element', () => {
