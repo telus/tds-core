@@ -1,20 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import styles from '@tds/shared-typography/Typography.modules.scss'
+import { small, smallFont } from '@tds/shared-typography'
 
 import safeRest from '../../shared/utils/safeRest'
+
+const StyledSmall = styled.small(small, smallFont)
 
 /**
  * Small print, such as copyright and legal text.
  *
  * @version ./package.json
  */
-const Small = ({ children, ...rest }) => (
-  <small {...safeRest(rest)} className={`${styles.small} ${styles.smallFont}`}>
-    {children}
-  </small>
-)
+const Small = ({ children, ...rest }) => <StyledSmall {...safeRest(rest)}>{children}</StyledSmall>
 
 Small.propTypes = {
   /**

@@ -1,8 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Small renders 1`] = `
+.c0 {
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
 <small
-  className="small smallFont"
+  class="c0"
 >
   Some content
 </small>
