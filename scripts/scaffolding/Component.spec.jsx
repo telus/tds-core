@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, render } from 'enzyme'
 
 import $COMPONENT$ from '../$COMPONENT$'
 
@@ -7,7 +7,7 @@ describe('$COMPONENT$', () => {
   const doShallow = (props = {}) => shallow(<$COMPONENT$ {...props} />)
 
   it('renders', () => {
-    const $COMPONENT_CAMEL$ = doShallow()
+    const $COMPONENT_CAMEL$ = render(<$COMPONENT$ />)
 
     expect($COMPONENT_CAMEL$).toMatchSnapshot()
   })
