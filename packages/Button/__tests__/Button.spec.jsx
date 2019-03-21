@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, mount, shallow } from 'enzyme'
+import { render, shallow } from 'enzyme'
 
 import A11yContent from '../../A11yContent'
 
@@ -10,11 +10,6 @@ import Button from '../Button'
 jest.mock('../../../shared/utils/warn')
 
 describe('Button', () => {
-  const doMount = (overrides = {}) => {
-    const button = mount(<Button {...overrides}>Submit</Button>)
-
-    return button.find('button')
-  }
   const doShallow = (overrides = {}) => {
     const button = shallow(<Button {...overrides}>Submit</Button>)
 
@@ -40,11 +35,9 @@ describe('Button', () => {
   })
 
   it('can be presented as one of the allowed variants', () => {
-    let button = doMount()
-    expect(button).toHaveClassName('primary')
+    const button = render(<Button variant="secondary">Submit</Button>)
 
-    button = doMount({ variant: 'secondary' })
-    expect(button).toHaveClassName('secondary')
+    expect(button).toMatchSnapshot()
   })
 
   it('can not be disabled', () => {
