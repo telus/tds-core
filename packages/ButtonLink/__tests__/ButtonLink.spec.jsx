@@ -60,11 +60,9 @@ describe('ButtonLink', () => {
   })
 
   it('can be presented as one of the allowed variants', () => {
-    let link = doMount()
-    expect(link).toHaveClassName('primary')
+    const link = render(<ButtonLink variant="secondary">Go home</ButtonLink>)
 
-    link = doMount({ variant: 'secondary' })
-    expect(link).toHaveClassName('secondary')
+    expect(link).toMatchSnapshot()
   })
 
   it('passes additional attributes to link element', () => {
