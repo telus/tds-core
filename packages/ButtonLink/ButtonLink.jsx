@@ -1,13 +1,50 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
 import { componentWithName, or } from '@tds/util-prop-types'
+import { StyledButton } from '@tds/core-button'
+import { links } from '@tds/shared-styles'
+import {
+  colorWhite as buttonTextColor,
+  colorPrimary as primaryBgColor,
+  colorSecondary as secondaryBgColor,
+  colorText,
+} from '@tds/core-colours'
 
 import { warn } from '../../shared/utils/warn'
 import safeRest from '../../shared/utils/safeRest'
 
-import BaseButton from '../../shared/components/BaseButton/BaseButton'
+const StyledButtonLink = styled(StyledButton)(
+  links.focusOutline,
+  {
+    textDecoration: 'none',
+  },
+  ({ variant }) => {
+    let color
+    let hoverColor
 
-import styles from './ButtonLink.modules.scss'
+    if (variant === 'primary') {
+      color = buttonTextColor
+      hoverColor = primaryBgColor
+    } else if (variant === 'secondary') {
+      color = buttonTextColor
+      hoverColor = secondaryBgColor
+    } else {
+      color = colorText
+      hoverColor = buttonTextColor
+    }
+
+    return {
+      '&:link,&:visited': {
+        color,
+      },
+      '&:hover': {
+        color: hoverColor,
+      },
+    }
+  }
+)
 
 /**
  * A link that is styled as a button.
@@ -20,14 +57,9 @@ const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) =>
   }
 
   return (
-    <BaseButton
-      {...safeRest(rest)}
-      element={reactRouterLinkComponent || 'a'}
-      variant={variant}
-      dangerouslyAddClassName={styles[variant]}
-    >
+    <StyledButtonLink {...safeRest(rest)} as={reactRouterLinkComponent || 'a'} variant={variant}>
       {children}
-    </BaseButton>
+    </StyledButtonLink>
   )
 }
 
