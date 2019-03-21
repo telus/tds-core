@@ -21,6 +21,7 @@
   },
   "homepage": "http://tds.telus.com",
   "dependencies": {
-    "@tds/core-colours": "^1.1.0"
+    "@tds/core-colours": "^1.1.0",
+    "@tds/shared-typography": "^1.2.1"
   }
 }

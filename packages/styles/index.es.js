@@ -1,3 +1,3 @@
-import { borders, iconWrapper, links, messaging, position, spacing } from './dist/index.es'
+import { borders, iconWrapper, links, messaging, position, spacing, forms } from './dist/index.es'
 
-export { borders, iconWrapper, links, messaging, position, spacing }
+export { borders, iconWrapper, links, messaging, position, spacing, forms }
