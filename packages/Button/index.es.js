@@ -1,4 +1,2 @@
-import './dist/index.css'
-import Button from './dist/index.es'
-
-export default Button
+export * from './dist/index.es'
+export { default } from './dist/index.es'
