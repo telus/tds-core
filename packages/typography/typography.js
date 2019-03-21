@@ -1,5 +1,7 @@
 import { colorText, colorWhite } from '@tds/core-colours'
 
+export const fontTelus = '"TELUS-Web", "Helvetica Neue", Helvetica, Arial, sans-serif'
+
 export const helveticaNeueThin35 = {
   fontWeight: 300,
 }
