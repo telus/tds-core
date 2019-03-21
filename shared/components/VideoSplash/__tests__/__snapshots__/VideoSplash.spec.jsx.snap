@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoSplash renders 1`] = `
+<VideoSplash__SplashBackground
+  aria-label="Play video. Video length is 1 minute and 1 second long"
+  poster=""
+  role="button"
+  tabIndex="0"
+>
+  <VideoSplash__BigPlayButton
+    id="bigButton"
+  >
+    <VideoSplash__PlayIconContainer>
+      <Play />
+    </VideoSplash__PlayIconContainer>
+    <Box
+      inline={false}
+      tag="div"
+      vertical={1}
+    >
+      <Paragraph
+        align="center"
+        bold={true}
+        invert={true}
+        size="medium"
+      >
+        Watch the video
+      </Paragraph>
+    </Box>
+    <Box
+      inline={false}
+      tag="div"
+      vertical={1}
+    >
+      <Box
+        between={2}
+        inline={true}
+        tag="div"
+      >
+        <VideoSplash__IconAdjust>
+          <Time
+            size={16}
+            variant="inverted"
+          />
+        </VideoSplash__IconAdjust>
+        <Paragraph
+          align="left"
+          bold={false}
+          data-testid="timestamp"
+          invert={true}
+          size="medium"
+        >
+          1:01
+        </Paragraph>
+      </Box>
+    </Box>
+  </VideoSplash__BigPlayButton>
+</VideoSplash__SplashBackground>
+`;
