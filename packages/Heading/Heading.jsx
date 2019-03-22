@@ -42,7 +42,7 @@ Heading.propTypes = {
   /**
    * The semantic level of the heading. Renders the specified HTML element, otherwise it matches `level`.
    */
-  tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'span']),
+  tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'div', 'span']),
   /**
    * Invert the text color to appear light on dark backgrounds.
    */
