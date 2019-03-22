@@ -42,6 +42,13 @@ describe('Heading', () => {
     expect(heading).toHaveDisplayName('h3')
   })
 
+  it('renders as a span', () => {
+    const heading = doMount({ level: 'h4', tag: 'span' })
+
+    expect(heading).toHaveClassName('h4')
+    expect(heading).toHaveDisplayName('span')
+  })
+
   it('renders a heading in the same tag as level if tag is not specified', () => {
     const heading = doMount({ level: 'h4' })
 
