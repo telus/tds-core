@@ -26,6 +26,18 @@ const StyledYoutubePlayer = styled(YouTube)({
   right: 0,
 })
 
+const aspectRatios = {
+  '16:9': { paddingTop: '56.25%' },
+  '4:3': { paddingTop: '75%' },
+  '1:1': { paddingTop: '100%' },
+}
+
+const AspectLimiter = styled.div(props => ({
+  ...aspectRatios[props.aspectRatio],
+  position: 'relative',
+  backgroundImage: `url(${props.aspectRatio})`,
+}))
+
 const YoutubeVideo = ({
   videoId,
   aspectRatio,
@@ -36,14 +48,6 @@ const YoutubeVideo = ({
   ...rest
 }) => {
   const [started, setStarted] = useState(false)
-
-  const aspectRatios = {
-    '16:9': { paddingTop: '56.25%' },
-    '4:3': { paddingTop: '75%' },
-    '1:1': { paddingTop: '100%' },
-  }
-
-  const AspectLimiter = styled.div({ ...aspectRatios[aspectRatio], position: 'relative' })
 
   const initializeYoutubePlayer = event => {
     if (beginMuted) {
@@ -58,7 +62,7 @@ const YoutubeVideo = ({
       {...safeRest(rest)}
       id="videoPlayerContainer"
     >
-      <AspectLimiter data-testid="aspectLimiter">
+      <AspectLimiter aspectRatio={aspectRatio} data-testid="aspectLimiter">
         {started ? (
           <StyledYoutubePlayer
             videoId={videoId}

@@ -1,17 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`YoutubeVideo renders 1`] = `
-.c0 {
-  width: 100%;
-  min-width: 288px;
-  outline: none;
-}
-
-.c1 {
-  padding-top: 56.25%;
-  position: relative;
-}
-
 .c2 {
   background-image: url(https://img.youtube.com/vi/ppF-fn37SDs/maxresdefault.jpg);
   background-size: cover;
@@ -57,8 +46,8 @@ exports[`YoutubeVideo renders 1`] = `
 }
 
 .c3 {
-  width: 150px;
-  height: 150px;
+  width: 144px;
+  height: 144px;
   border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -82,6 +71,26 @@ exports[`YoutubeVideo renders 1`] = `
 }
 
 .c5 {
+  display: none;
+}
+
+.c6 {
+  display: block;
+}
+
+.c0 {
+  width: 100%;
+  min-width: 288px;
+  outline: none;
+}
+
+.c1 {
+  padding-top: 56.25%;
+  position: relative;
+  background-image: url(16:9);
+}
+
+.c7 {
   padding-top: 2px;
 }
 
@@ -89,6 +98,18 @@ exports[`YoutubeVideo renders 1`] = `
   .c3 {
     width: 200px;
     height: 200px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    display: none;
   }
 }
 
@@ -136,9 +157,11 @@ exports[`YoutubeVideo renders 1`] = `
         id="videoPlayerContainer"
       >
         <YoutubeVideo__AspectLimiter
+          aspectRatio="16:9"
           data-testid="aspectLimiter"
         >
           <StyledComponent
+            aspectRatio="16:9"
             data-testid="aspectLimiter"
             forwardedComponent={
               Object {
@@ -146,10 +169,10 @@ exports[`YoutubeVideo renders 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "YoutubeVideo__AspectLimiter-sc-2hs0xc-1",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "padding-top: 56.25%; position: relative;",
+                    [Function],
                   ],
                 },
                 "displayName": "YoutubeVideo__AspectLimiter",
@@ -187,7 +210,7 @@ exports[`YoutubeVideo renders 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "VideoSplash__SplashBackground-eou7dk-0",
+                          "componentId": "VideoSplash__SplashBackground-axtint-0",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
@@ -197,7 +220,7 @@ exports[`YoutubeVideo renders 1`] = `
                         "displayName": "VideoSplash__SplashBackground",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "VideoSplash__SplashBackground-eou7dk-0",
+                        "styledComponentId": "VideoSplash__SplashBackground-axtint-0",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -227,11 +250,11 @@ exports[`YoutubeVideo renders 1`] = `
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "VideoSplash__BigPlayButton-eou7dk-1",
+                                "componentId": "VideoSplash__BigPlayButton-axtint-1",
                                 "isStatic": true,
                                 "lastClassName": "c3",
                                 "rules": Array [
-                                  "width: 150px; height: 150px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; @media (min-width: 768px) {
+                                  "width: 144px; height: 144px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; @media (min-width: 768px) {
   width: 200px; height: 200px;
 }",
                                 ],
@@ -239,7 +262,7 @@ exports[`YoutubeVideo renders 1`] = `
                               "displayName": "VideoSplash__BigPlayButton",
                               "foldedComponentIds": Array [],
                               "render": [Function],
-                              "styledComponentId": "VideoSplash__BigPlayButton-eou7dk-1",
+                              "styledComponentId": "VideoSplash__BigPlayButton-axtint-1",
                               "target": "div",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -260,7 +283,7 @@ exports[`YoutubeVideo renders 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "VideoSplash__PlayIconContainer-eou7dk-2",
+                                      "componentId": "VideoSplash__PlayIconContainer-axtint-2",
                                       "isStatic": true,
                                       "lastClassName": "c4",
                                       "rules": Array [
@@ -272,7 +295,7 @@ exports[`YoutubeVideo renders 1`] = `
                                     "displayName": "VideoSplash__PlayIconContainer",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "VideoSplash__PlayIconContainer-eou7dk-2",
+                                    "styledComponentId": "VideoSplash__PlayIconContainer-axtint-2",
                                     "target": "span",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -317,28 +340,108 @@ exports[`YoutubeVideo renders 1`] = `
                                 </span>
                               </StyledComponent>
                             </VideoSplash__PlayIconContainer>
-                            <Box
-                              inline={false}
-                              tag="div"
-                              vertical={1}
-                            >
-                              <div
-                                className="TDS_Box-modules__verticalPadding-1___3lZ5x"
+                            <VideoSplash__BigWatchTextContainer>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "VideoSplash__BigWatchTextContainer-axtint-3",
+                                      "isStatic": true,
+                                      "lastClassName": "c5",
+                                      "rules": Array [
+                                        "display: none; @media (min-width: 768px) {
+  display: block;
+}",
+                                      ],
+                                    },
+                                    "displayName": "VideoSplash__BigWatchTextContainer",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "VideoSplash__BigWatchTextContainer-axtint-3",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
                               >
-                                <Paragraph
-                                  align="center"
-                                  bold={true}
-                                  invert={true}
-                                  size="medium"
+                                <span
+                                  className="c5"
                                 >
-                                  <p
-                                    className="TDS_Typography-modules__wordBreak___3dmWU TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2axxL TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Paragraph-modules__centerAlign___19QxM"
+                                  <Box
+                                    inline={false}
+                                    tag="div"
+                                    vertical={1}
                                   >
-                                    Watch the video
-                                  </p>
-                                </Paragraph>
-                              </div>
-                            </Box>
+                                    <div
+                                      className="TDS_Box-modules__verticalPadding-1___3lZ5x"
+                                    >
+                                      <Paragraph
+                                        align="center"
+                                        bold={true}
+                                        invert={true}
+                                        size="medium"
+                                      >
+                                        <p
+                                          className="TDS_Typography-modules__wordBreak___3dmWU TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2axxL TDS_Typography-modules__medium___1DC1g TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Paragraph-modules__centerAlign___19QxM"
+                                        >
+                                          Watch the video
+                                        </p>
+                                      </Paragraph>
+                                    </div>
+                                  </Box>
+                                </span>
+                              </StyledComponent>
+                            </VideoSplash__BigWatchTextContainer>
+                            <VideoSplash__LittleWatchTextContainer>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "VideoSplash__LittleWatchTextContainer-axtint-4",
+                                      "isStatic": true,
+                                      "lastClassName": "c6",
+                                      "rules": Array [
+                                        "display: block; @media (min-width: 768px) {
+  display: none;
+}",
+                                      ],
+                                    },
+                                    "displayName": "VideoSplash__LittleWatchTextContainer",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "VideoSplash__LittleWatchTextContainer-axtint-4",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <span
+                                  className="c6"
+                                >
+                                  <Paragraph
+                                    align="center"
+                                    bold={true}
+                                    invert={true}
+                                    size="small"
+                                  >
+                                    <p
+                                      className="TDS_Typography-modules__wordBreak___3dmWU TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2axxL TDS_Typography-modules__small___3H68Z TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__boldFont___2MqlI TDS_Typography-modules__wordBreak___3dmWU TDS_Paragraph-modules__centerAlign___19QxM"
+                                    >
+                                      Watch the video
+                                    </p>
+                                  </Paragraph>
+                                </span>
+                              </StyledComponent>
+                            </VideoSplash__LittleWatchTextContainer>
                             <Box
                               inline={false}
                               tag="div"
@@ -362,9 +465,9 @@ exports[`YoutubeVideo renders 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "VideoSplash__IconAdjust-eou7dk-3",
+                                              "componentId": "VideoSplash__IconAdjust-axtint-5",
                                               "isStatic": true,
-                                              "lastClassName": "c5",
+                                              "lastClassName": "c7",
                                               "rules": Array [
                                                 "padding-top: 2px;",
                                               ],
@@ -372,7 +475,7 @@ exports[`YoutubeVideo renders 1`] = `
                                             "displayName": "VideoSplash__IconAdjust",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "VideoSplash__IconAdjust-eou7dk-3",
+                                            "styledComponentId": "VideoSplash__IconAdjust-axtint-5",
                                             "target": "span",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -382,7 +485,7 @@ exports[`YoutubeVideo renders 1`] = `
                                         forwardedRef={null}
                                       >
                                         <span
-                                          className="c5"
+                                          className="c7"
                                         >
                                           <Time
                                             size={16}
