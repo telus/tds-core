@@ -13,20 +13,32 @@ exports[`VideoSplash renders 1`] = `
     <VideoSplash__PlayIconContainer>
       <Play />
     </VideoSplash__PlayIconContainer>
-    <Box
-      inline={false}
-      tag="div"
-      vertical={1}
-    >
+    <VideoSplash__BigWatchTextContainer>
+      <Box
+        inline={false}
+        tag="div"
+        vertical={1}
+      >
+        <Paragraph
+          align="center"
+          bold={true}
+          invert={true}
+          size="medium"
+        >
+          Watch the video
+        </Paragraph>
+      </Box>
+    </VideoSplash__BigWatchTextContainer>
+    <VideoSplash__LittleWatchTextContainer>
       <Paragraph
         align="center"
         bold={true}
         invert={true}
-        size="medium"
+        size="small"
       >
         Watch the video
       </Paragraph>
-    </Box>
+    </VideoSplash__LittleWatchTextContainer>
     <Box
       inline={false}
       tag="div"

@@ -25,53 +25,64 @@ const getTimestamp = videoLength => {
     timestamp: `${minutes}:${seconds < 10 ? 0 : ''}${seconds}`,
   }
 }
-const VideoSplash = ({ poster, videoLength, ...rest }) => {
-  const SplashBackground = styled.div(props => ({
-    backgroundImage: `url(${props.poster})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    position: 'absolute',
-    top: 0,
-    width: '100%',
-    height: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    cursor: 'pointer',
+
+const SplashBackground = styled.div(props => ({
+  backgroundImage: `url(${props.poster})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  position: 'absolute',
+  top: 0,
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  cursor: 'pointer',
+  '#bigButton': {
+    backgroundColor: 'rgba(42,44,46,0.9)',
+    transition: 'background-color 0.2s',
+  },
+  fill: 'rgba(255,255,255,0)',
+  transition: 'background-color 0.2s fill 0.2s',
+  ':hover': {
     '#bigButton': {
-      backgroundColor: 'rgba(42,44,46,0.9)',
+      backgroundColor: 'rgba(42,44,46,1)',
       transition: 'background-color 0.2s',
     },
-    fill: 'rgba(255,255,255,0)',
-    transition: 'background-color 0.2s fill 0.2s',
-    ':hover': {
-      '#bigButton': {
-        backgroundColor: 'rgba(42,44,46,1)',
-        transition: 'background-color 0.2s',
-      },
-      fill: 'rgba(255,255,255,1)',
-      transition: 'fill 0.2s',
-    },
-  }))
+    fill: 'rgba(255,255,255,1)',
+    transition: 'fill 0.2s',
+  },
+}))
 
-  const BigPlayButton = styled.div({
-    width: 150,
-    height: 150,
-    borderRadius: '50%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
-    ...media.from('md').css({
-      width: 200,
-      height: 200,
-    }),
-  })
+const BigPlayButton = styled.div({
+  width: 144,
+  height: 144,
+  borderRadius: '50%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  flexDirection: 'column',
+  ...media.from('md').css({
+    width: 200,
+    height: 200,
+  }),
+})
 
-  const PlayIconContainer = styled.span({
-    'svg>path': { fill: 'inherit' },
-  })
+const PlayIconContainer = styled.span({
+  'svg>path': { fill: 'inherit' },
+})
 
+const BigWatchTextContainer = styled.span({
+  display: 'none',
+  ...media.from('md').css({ display: 'block' }),
+})
+
+const LittleWatchTextContainer = styled.span({
+  display: 'block',
+  ...media.from('md').css({ display: 'none' }),
+})
+
+const VideoSplash = ({ poster, videoLength, ...rest }) => {
   const IconAdjust = styled.span({ paddingTop: 2 })
 
   const timestamp = getTimestamp(videoLength)
@@ -91,11 +102,21 @@ const VideoSplash = ({ poster, videoLength, ...rest }) => {
         <PlayIconContainer>
           <Play />
         </PlayIconContainer>
-        <Box vertical={1}>
-          <Paragraph size="medium" align="center" bold invert>
+
+        <BigWatchTextContainer>
+          <Box vertical={1}>
+            <Paragraph size="medium" align="center" bold invert>
+              Watch the video
+            </Paragraph>
+          </Box>
+        </BigWatchTextContainer>
+
+        <LittleWatchTextContainer>
+          <Paragraph size="small" align="center" bold invert>
             Watch the video
           </Paragraph>
-        </Box>
+        </LittleWatchTextContainer>
+
         <Box vertical={1}>
           <Box between={2} inline>
             <IconAdjust>
