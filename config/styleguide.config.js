@@ -120,7 +120,7 @@ module.exports = {
       return `import { Accessible, Speed, Success, [..IconName] } from '@tds/core-decorative-icon'`
     }
 
-    if (name === 'BenefitWithHeading') {
+    if (name === 'BenefitWithHeading' || name === 'BenefitNoHeading') {
       kebabizeName = 'benefit'
       return `import { ${name} } from '@tds/core-${kebabizeName}`
     }
@@ -254,6 +254,7 @@ module.exports = {
               path.resolve('packages/UnorderedList/UnorderedList.jsx'),
               path.resolve('packages/OrderedList/OrderedList.jsx'),
               path.resolve('packages/Benefit/BenefitWithHeading/BenefitWithHeading.jsx'),
+              path.resolve('packages/Benefit/BenefitNoHeading/BenefitNoHeading.jsx'),
             ]
           },
         },
