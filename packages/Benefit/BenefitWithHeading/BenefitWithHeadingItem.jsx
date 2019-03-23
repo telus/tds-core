@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import styled from 'styled-components'
 import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
@@ -13,10 +12,12 @@ import safeRest from '../../../shared/utils/safeRest'
  * @version ../package.json
  */
 const BenefitItem = ({ Icon, heading, children, ...rest }) => (
-  <Box {...safeRest(rest)} between={3} tag="li">
-    <Icon size="24" variant="default" />
+  <Box {...safeRest(rest)} between={3} inline tag="li">
+    <Box vertical={1}>
+      <Icon size={24} variant="default" />
+    </Box>
     <div>
-      <Heading level="h4" tag="span">
+      <Heading level="h4" tag="div">
         {heading}
       </Heading>
       <Text size="small">{children}</Text>

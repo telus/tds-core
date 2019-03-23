@@ -1,5 +1,4 @@
 import React from 'react'
-// import styled from 'styled-components'
 import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
@@ -9,10 +8,10 @@ import safeRest from '../../../shared/utils/safeRest'
 import Item from './BenefitWithHeadingItem'
 
 const cloneChild = (Icon, child) => {
-  if (Icon) {
-    return React.cloneElement(child, { Icon })
+  if (child.props.Icon) {
+    return React.cloneElement(child)
   }
-  return React.cloneElement(child)
+  return React.cloneElement(child, { Icon })
 }
 
 /**
