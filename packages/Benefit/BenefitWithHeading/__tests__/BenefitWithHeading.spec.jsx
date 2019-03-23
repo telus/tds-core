@@ -1,7 +1,8 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, render, mount } from 'enzyme'
 
 import { Success, SecurityHouse } from '@tds/core-decorative-icon'
+import Heading from '@tds/core-heading'
 
 import BenefitWithHeading from '../BenefitWithHeading'
 
@@ -48,6 +49,20 @@ describe('BenefitWithHeading', () => {
     const benefit = doShallow()
 
     expect(benefit.dive()).toHaveDisplayName('ul')
+  })
+
+  it('has a heading level 4', () => {
+    const benefit = mount(
+      <BenefitWithHeading.Item heading="Some heading" Icon={Success}>
+        some content
+      </BenefitWithHeading.Item>
+    )
+
+    expect(benefit).toContainReact(
+      <Heading level="h4" tag="div">
+        Some heading
+      </Heading>
+    )
   })
 
   describe('BenefitWithHeading.Item', () => {
