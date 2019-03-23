@@ -4,24 +4,16 @@ import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
-import Heading from '@tds/core-heading'
 
 import safeRest from '../../../shared/utils/safeRest'
 
 /**
  * @version ../package.json
  */
-const BenefitItem = ({ Icon, heading, children, ...rest }) => (
+const BenefitItem = ({ Icon, children, ...rest }) => (
   <Box {...safeRest(rest)} between={3} inline tag="li">
-    <Box vertical={1}>
-      <Icon size={24} variant="default" />
-    </Box>
-    <div>
-      <Heading level="h4" tag="div">
-        {heading}
-      </Heading>
-      <Text size="small">{children}</Text>
-    </div>
+    <Icon size={24} variant="default" />
+    <Text size="small">{children}</Text>
   </Box>
 )
 
@@ -31,15 +23,11 @@ BenefitItem.propTypes = {
    */
   Icon: componentWithName('DecorativeIcon').isRequired,
   /**
-   * Heading text.
-   */
-  heading: PropTypes.string.isRequired,
-  /**
    * An item in the Benefit list
    */
   children: PropTypes.node.isRequired,
 }
 
-BenefitItem.displayName = 'BenefitWithHeading.Item'
+BenefitItem.displayName = 'BenefitNoHeading.Item'
 
 export default BenefitItem

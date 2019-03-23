@@ -1,1 +1,2 @@
-export { default as BenefitWithHeading } from './BenefitWithHeading/BenefitWithHeading' // eslint-disable-line import/prefer-default-export
+export { default as BenefitWithHeading } from './BenefitWithHeading/BenefitWithHeading'
+export { default as BenefitNoHeading } from './BenefitNoHeading/BenefitNoHeading'
