@@ -1,6 +1,6 @@
 const { rootSelector } = require('../config')
 const { toComponentName } = require('../utils')
-const { ignoredPackages } = require('../../config/constants')
+const { ignoredPackagesE2E } = require('../../config/constants')
 
 const generateTest = (packageName, componentName) => ({
   [packageName]: browser => {
@@ -20,7 +20,7 @@ const generateTest = (packageName, componentName) => ({
 })
 
 const componentTests = process.env.PACKAGES.split(' ')
-  .filter(packageName => !ignoredPackages.includes(packageName))
+  .filter(packageName => !ignoredPackagesE2E.includes(packageName))
   .reduce((tests, packageName) => {
     const componentName = toComponentName(packageName)
     return Object.assign(tests, generateTest(packageName, componentName))
