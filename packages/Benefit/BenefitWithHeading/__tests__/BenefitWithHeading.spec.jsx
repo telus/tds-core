@@ -7,7 +7,7 @@ import Heading from '@tds/core-heading'
 import BenefitWithHeading from '../BenefitWithHeading'
 
 describe('BenefitWithHeading', () => {
-  const doShallow = (props = { Icon: Success }) =>
+  const doShallow = (props = { icon: Success }) =>
     shallow(
       <BenefitWithHeading {...props}>
         <BenefitWithHeading.Item heading="Some heading">Some content</BenefitWithHeading.Item>
@@ -19,7 +19,7 @@ describe('BenefitWithHeading', () => {
 
   it('renders with one icon set in the parent', () => {
     const benefit = render(
-      <BenefitWithHeading Icon={Success}>
+      <BenefitWithHeading icon={Success}>
         <BenefitWithHeading.Item heading="Some heading">Some content</BenefitWithHeading.Item>
         <BenefitWithHeading.Item heading="Some other heading">
           Some other content
@@ -33,10 +33,10 @@ describe('BenefitWithHeading', () => {
   it('renders with icons set in each item', () => {
     const benefit = render(
       <BenefitWithHeading>
-        <BenefitWithHeading.Item heading="Some heading" Icon={Success}>
+        <BenefitWithHeading.Item heading="Some heading" icon={Success}>
           Some content
         </BenefitWithHeading.Item>
-        <BenefitWithHeading.Item heading="Some other heading" Icon={SecurityHouse}>
+        <BenefitWithHeading.Item heading="Some other heading" icon={SecurityHouse}>
           Some other content
         </BenefitWithHeading.Item>
       </BenefitWithHeading>
@@ -53,7 +53,7 @@ describe('BenefitWithHeading', () => {
 
   it('has a heading level 4', () => {
     const benefit = mount(
-      <BenefitWithHeading.Item heading="Some heading" Icon={Success}>
+      <BenefitWithHeading.Item heading="Some heading" icon={Success}>
         some content
       </BenefitWithHeading.Item>
     )
@@ -68,7 +68,7 @@ describe('BenefitWithHeading', () => {
   describe('BenefitWithHeading.Item', () => {
     it('renders an HTML li tag', () => {
       const benefitItem = shallow(
-        <BenefitWithHeading.Item heading="Some heading" Icon={Success}>
+        <BenefitWithHeading.Item heading="Some heading" icon={Success}>
           some content
         </BenefitWithHeading.Item>
       )
@@ -76,20 +76,20 @@ describe('BenefitWithHeading', () => {
       expect(benefitItem.dive()).toHaveDisplayName('li')
     })
 
-    it('receives Icons from the parent', () => {
+    it('receives icons from the parent', () => {
       const benefitItem = shallow(
-        <BenefitWithHeading Icon={Success}>
+        <BenefitWithHeading icon={Success}>
           <BenefitWithHeading.Item heading="Some heading">Some content</BenefitWithHeading.Item>
         </BenefitWithHeading>
       )
 
-      expect(benefitItem.find(BenefitWithHeading.Item).at(0)).toHaveProp('Icon', Success)
+      expect(benefitItem.find(BenefitWithHeading.Item).at(0)).toHaveProp('icon', Success)
     })
 
-    it('can override Icons received from parent', () => {
+    it('can override icons received from parent', () => {
       const benefitItem = shallow(
-        <BenefitWithHeading Icon={Success}>
-          <BenefitWithHeading.Item Icon={SecurityHouse} heading="Some heading">
+        <BenefitWithHeading icon={Success}>
+          <BenefitWithHeading.Item icon={SecurityHouse} heading="Some heading">
             Some content
           </BenefitWithHeading.Item>
           <BenefitWithHeading.Item heading="Some other heading">
@@ -98,8 +98,8 @@ describe('BenefitWithHeading', () => {
         </BenefitWithHeading>
       )
 
-      expect(benefitItem.find(BenefitWithHeading.Item).at(0)).toHaveProp('Icon', SecurityHouse)
-      expect(benefitItem.find(BenefitWithHeading.Item).at(1)).toHaveProp('Icon', Success)
+      expect(benefitItem.find(BenefitWithHeading.Item).at(0)).toHaveProp('icon', SecurityHouse)
+      expect(benefitItem.find(BenefitWithHeading.Item).at(1)).toHaveProp('icon', Success)
     })
   })
 

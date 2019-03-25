@@ -6,7 +6,7 @@ import { Success, SecurityHouse } from '@tds/core-decorative-icon'
 import BenefitNoHeading from '../BenefitNoHeading'
 
 describe('BenefitNoHeading', () => {
-  const doShallow = (props = { Icon: Success }) =>
+  const doShallow = (props = { icon: Success }) =>
     shallow(
       <BenefitNoHeading {...props}>
         <BenefitNoHeading.Item>Some content</BenefitNoHeading.Item>
@@ -16,7 +16,7 @@ describe('BenefitNoHeading', () => {
 
   it('renders with one icon set in the parent', () => {
     const benefit = render(
-      <BenefitNoHeading Icon={Success}>
+      <BenefitNoHeading icon={Success}>
         <BenefitNoHeading.Item>Some content</BenefitNoHeading.Item>
         <BenefitNoHeading.Item>Some other content</BenefitNoHeading.Item>
       </BenefitNoHeading>
@@ -28,8 +28,8 @@ describe('BenefitNoHeading', () => {
   it('renders with icons set in each item', () => {
     const benefit = render(
       <BenefitNoHeading>
-        <BenefitNoHeading.Item Icon={Success}>Some content</BenefitNoHeading.Item>
-        <BenefitNoHeading.Item Icon={SecurityHouse}>Some other content</BenefitNoHeading.Item>
+        <BenefitNoHeading.Item icon={Success}>Some content</BenefitNoHeading.Item>
+        <BenefitNoHeading.Item icon={SecurityHouse}>Some other content</BenefitNoHeading.Item>
       </BenefitNoHeading>
     )
 
@@ -45,32 +45,32 @@ describe('BenefitNoHeading', () => {
   describe('BenefitNoHeading.Item', () => {
     it('renders an HTML li tag', () => {
       const benefitItem = shallow(
-        <BenefitNoHeading.Item Icon={Success}>some content</BenefitNoHeading.Item>
+        <BenefitNoHeading.Item icon={Success}>some content</BenefitNoHeading.Item>
       )
 
       expect(benefitItem.dive()).toHaveDisplayName('li')
     })
 
-    it('receives Icons from the parent', () => {
+    it('receives icons from the parent', () => {
       const benefitItem = shallow(
-        <BenefitNoHeading Icon={Success}>
+        <BenefitNoHeading icon={Success}>
           <BenefitNoHeading.Item>Some content</BenefitNoHeading.Item>
         </BenefitNoHeading>
       )
 
-      expect(benefitItem.find(BenefitNoHeading.Item).at(0)).toHaveProp('Icon', Success)
+      expect(benefitItem.find(BenefitNoHeading.Item).at(0)).toHaveProp('icon', Success)
     })
 
-    it('can override Icons received from parent', () => {
+    it('can override icons received from parent', () => {
       const benefitItem = shallow(
-        <BenefitNoHeading Icon={Success}>
-          <BenefitNoHeading.Item Icon={SecurityHouse}>Some content</BenefitNoHeading.Item>
+        <BenefitNoHeading icon={Success}>
+          <BenefitNoHeading.Item icon={SecurityHouse}>Some content</BenefitNoHeading.Item>
           <BenefitNoHeading.Item>Some other content</BenefitNoHeading.Item>
         </BenefitNoHeading>
       )
 
-      expect(benefitItem.find(BenefitNoHeading.Item).at(0)).toHaveProp('Icon', SecurityHouse)
-      expect(benefitItem.find(BenefitNoHeading.Item).at(1)).toHaveProp('Icon', Success)
+      expect(benefitItem.find(BenefitNoHeading.Item).at(0)).toHaveProp('icon', SecurityHouse)
+      expect(benefitItem.find(BenefitNoHeading.Item).at(1)).toHaveProp('icon', Success)
     })
   })
 
