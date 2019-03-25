@@ -7,28 +7,28 @@ import safeRest from '../../../shared/utils/safeRest'
 
 import Item from './BenefitWithHeadingItem'
 
-const cloneChild = (Icon, child) => {
-  if (child.props.Icon) {
+const cloneChild = (icon, child) => {
+  if (child.props.icon) {
     return React.cloneElement(child)
   }
-  return React.cloneElement(child, { Icon })
+  return React.cloneElement(child, { icon })
 }
 
 /**
  * @version ../package.json
  */
-const BenefitWithHeading = ({ Icon, children, ...rest }) => (
+const BenefitWithHeading = ({ icon, children, ...rest }) => (
   <Box {...safeRest(rest)} tag="ul" between={3}>
-    {React.Children.map(children, child => cloneChild(Icon, child))}
+    {React.Children.map(children, child => cloneChild(icon, child))}
   </Box>
 )
 
 BenefitWithHeading.propTypes = {
   /**
    * A `DecorativeIcon`. If set here, it applies to all nested Benefit Items
-   * except for Items that receive an `Icon` prop.
+   * except for Items that receive an `icon` prop.
    */
-  Icon: componentWithName('DecorativeIcon'),
+  icon: componentWithName('DecorativeIcon'),
   /**
    * An Item in the Benefit list
    */
@@ -36,7 +36,7 @@ BenefitWithHeading.propTypes = {
 }
 
 BenefitWithHeading.defaultProps = {
-  Icon: undefined,
+  icon: undefined,
 }
 
 BenefitWithHeading.Item = Item

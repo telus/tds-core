@@ -11,7 +11,7 @@ import safeRest from '../../../shared/utils/safeRest'
 /**
  * @version ../package.json
  */
-const BenefitItem = ({ Icon, heading, children, ...rest }) => (
+const BenefitItem = ({ icon: Icon, heading, children, ...rest }) => (
   <Box {...safeRest(rest)} between={3} inline tag="li">
     <Box vertical={1}>
       <Icon size={24} variant="default" />
@@ -27,9 +27,9 @@ const BenefitItem = ({ Icon, heading, children, ...rest }) => (
 
 BenefitItem.propTypes = {
   /**
-   * A DecorativeIcon. This will override any Icon prop set in the parent.
+   * A DecorativeIcon. This will override any `icon` prop set in the parent.
    */
-  Icon: componentWithName('DecorativeIcon').isRequired,
+  icon: componentWithName('DecorativeIcon').isRequired,
   /**
    * Heading text.
    */

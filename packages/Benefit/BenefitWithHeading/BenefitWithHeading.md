@@ -5,16 +5,16 @@ A list of items containing an icon and text typically used to promote ideas.
 ```jsx
 <Card>
   <BenefitWithHeading>
-    <BenefitWithHeading.Item Icon={Internet} heading="Benefit list">
+    <BenefitWithHeading.Item icon={Internet} heading="Benefit list">
       With heading and icons
     </BenefitWithHeading.Item>
-    <BenefitWithHeading.Item Icon={FavouriteNetwork} heading="Use within a card">
+    <BenefitWithHeading.Item icon={FavouriteNetwork} heading="Use within a card">
       Has 236 max width
     </BenefitWithHeading.Item>
-    <BenefitWithHeading.Item Icon={Files} heading="Heading">
+    <BenefitWithHeading.Item icon={Files} heading="Heading">
       Text has limit of 35 characters
     </BenefitWithHeading.Item>
-    <BenefitWithHeading.Item Icon={DataLimit} heading="Benefit icon">
+    <BenefitWithHeading.Item icon={DataLimit} heading="Benefit icon">
       Must use purple colour
     </BenefitWithHeading.Item>
   </BenefitWithHeading>
@@ -25,7 +25,7 @@ A list of items containing an icon and text typically used to promote ideas.
 
 ```jsx
 <Card>
-  <BenefitWithHeading Icon={Success}>
+  <BenefitWithHeading icon={Success}>
     <BenefitWithHeading.Item heading="Benefit list">With heading and icons</BenefitWithHeading.Item>
     <BenefitWithHeading.Item heading="Use within a card">Has 236 max width</BenefitWithHeading.Item>
     <BenefitWithHeading.Item heading="Heading">
