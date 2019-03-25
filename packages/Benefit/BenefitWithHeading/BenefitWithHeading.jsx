@@ -9,7 +9,7 @@ import Item from './BenefitWithHeadingItem'
 
 const cloneChild = (icon, child) => {
   if (child.props.icon) {
-    return React.cloneElement(child)
+    return child
   }
   return React.cloneElement(child, { icon })
 }
