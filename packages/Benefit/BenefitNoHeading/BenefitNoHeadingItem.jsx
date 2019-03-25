@@ -21,7 +21,7 @@ const BenefitItem = ({ icon: Icon, children, ...rest }) => {
 
   return (
     <Box {...safeRest(rest)} between={3} inline tag="li">
-      <Icon size={24} variant="default" />
+      {Icon && <Icon size={24} variant="default" />}
       <Text size="small">{children}</Text>
     </Box>
   )
