@@ -1,3 +1,9 @@
+#### 1.0.27 (2019-03-25)
+
+##### Bug Fixes
+
+* **core-css-reset:**  make default letter spacing -0.8px ([cd9f737e](https://github.com/telusdigital/tds/commit/cd9f737e18ad372cdb8ac6def245682919b09833))
+
 #### 1.0.26 (2019-01-11)
 
 ##### Bug Fixes
