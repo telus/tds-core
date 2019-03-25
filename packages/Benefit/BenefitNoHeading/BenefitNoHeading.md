@@ -1,5 +1,11 @@
 A list of items containing an icon and text typically used to promote ideas.
 
+#### Usage criteria
+
+- Benefit should contain 4 or fewer items in a list
+- Benefit without a heading must be used outside Cards
+- Code: the `icon` prop must either be set in `<BenefitNoHeading />` or `<BenefitNoHeading.Item />`. If `icon` is set in both components, the one set in `<BenefitNoHeading.Item />` has priority.
+
 #### Example with one icon set
 
 ```jsx
@@ -11,7 +17,7 @@ A list of items containing an icon and text typically used to promote ideas.
 </BenefitNoHeading>
 ```
 
-#### Example individual icons
+#### Example with individual icons
 
 ```jsx
 <BenefitNoHeading>

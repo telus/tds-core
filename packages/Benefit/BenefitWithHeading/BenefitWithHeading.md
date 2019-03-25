@@ -1,5 +1,11 @@
 A list of items containing an icon and text typically used to promote ideas.
 
+#### Usage criteria
+
+- Benefit should contain 4 or fewer items in a list
+- Benefit with a heading must be used within Cards
+- Code: the `icon` prop must either be set in `<BenefitWithHeading />` or `<BenefitWithHeading.Item />`. If `icon` is set in both components, the one set in `<BenefitWithHeading.Item />` has priority.
+
 #### Examples with individual icons
 
 ```jsx
