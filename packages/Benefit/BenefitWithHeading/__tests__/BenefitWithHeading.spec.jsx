@@ -6,6 +6,10 @@ import Heading from '@tds/core-heading'
 
 import BenefitWithHeading from '../BenefitWithHeading'
 
+import { warn } from '../../../../shared/utils/warn'
+
+jest.mock('../../../../shared/utils/warn')
+
 describe('BenefitWithHeading', () => {
   const doShallow = (props = { icon: Success }) =>
     shallow(
@@ -100,6 +104,16 @@ describe('BenefitWithHeading', () => {
 
       expect(benefitItem.find(BenefitWithHeading.Item).at(0)).toHaveProp('icon', SecurityHouse)
       expect(benefitItem.find(BenefitWithHeading.Item).at(1)).toHaveProp('icon', Success)
+    })
+
+    it('throws a warning when an icon is not set', () => {
+      const benefitItem = shallow(
+        <BenefitWithHeading.Item heading="some heading">some content</BenefitWithHeading.Item>
+      )
+
+      expect(benefitItem).not.toHaveProp('icon')
+      expect(warn).toHaveBeenCalled()
+      jest.clearAllMocks()
     })
   })
 
