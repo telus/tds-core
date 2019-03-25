@@ -87,6 +87,7 @@ module.exports = {
     // key is a path to match, value is the name to show in the styleguide for the import statement
     const namespacedComponents = {
       'Benefit/BenefitWithHeading': 'BenefitWithHeading',
+      'Benefit/BenefitNoHeading': 'BenefitNoHeading',
       FlexGrid: 'FlexGrid',
       'ExpandCollapse/Panel': 'ExpandCollapse',
       DisplayHeading: 'DisplayHeading',
@@ -254,7 +255,9 @@ module.exports = {
               path.resolve('packages/UnorderedList/UnorderedList.jsx'),
               path.resolve('packages/OrderedList/OrderedList.jsx'),
               path.resolve('packages/Benefit/BenefitWithHeading/BenefitWithHeading.jsx'),
+              path.resolve('packages/Benefit/BenefitWithHeading/BenefitWithHeadingItem.jsx'),
               path.resolve('packages/Benefit/BenefitNoHeading/BenefitNoHeading.jsx'),
+              path.resolve('packages/Benefit/BenefitNoHeading/BenefitNoHeadingItem.jsx'),
             ]
           },
         },
