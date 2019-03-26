@@ -28,7 +28,7 @@ BenefitNoHeading.propTypes = {
    * A `DecorativeIcon`. If set here, it applies to all nested Benefit Items
    * except for Items that receive an `icon` prop.
    */
-  icon: componentWithName('DecorativeIcon'),
+  icon: componentWithName('DecorativeIcon', true),
   /**
    * An Item in the Benefit list
    */

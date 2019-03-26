@@ -41,7 +41,7 @@ BenefitItem.propTypes = {
   /**
    * A DecorativeIcon. This will override any `icon` prop set in the parent.
    */
-  icon: componentWithName('DecorativeIcon'),
+  icon: componentWithName('DecorativeIcon', true),
   /**
    * Heading text.
    */
