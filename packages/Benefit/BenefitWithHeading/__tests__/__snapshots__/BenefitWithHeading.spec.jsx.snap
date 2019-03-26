@@ -12,7 +12,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
+        class="TDS_Icon-modules__svgBase___1EsV6 TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
       >
         <svg
           height="22"
@@ -54,7 +54,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
+        class="TDS_Icon-modules__svgBase___1EsV6 TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
       >
         <svg
           height="24"
@@ -103,7 +103,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
+        class="TDS_Icon-modules__svgBase___1EsV6 TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
       >
         <svg
           height="22"
@@ -145,7 +145,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
+        class="TDS_Icon-modules__svgBase___1EsV6 TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
       >
         <svg
           height="22"
