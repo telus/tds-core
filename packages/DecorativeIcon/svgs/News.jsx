@@ -15,4 +15,6 @@ const News = props => (
   </SVGIcon>
 )
 
+News.displayName = 'DecorativeIcon'
+
 export default News

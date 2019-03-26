@@ -21,4 +21,6 @@ const FavouriteNetwork = props => (
   </SVGIcon>
 )
 
+FavouriteNetwork.displayName = 'DecorativeIcon'
+
 export default FavouriteNetwork

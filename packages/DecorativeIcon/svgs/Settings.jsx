@@ -15,4 +15,6 @@ const Settings = props => (
   </SVGIcon>
 )
 
+Settings.displayName = 'DecorativeIcon'
+
 export default Settings

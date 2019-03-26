@@ -15,4 +15,6 @@ const SecuritySettings = props => (
   </SVGIcon>
 )
 
+SecuritySettings.displayName = 'DecorativeIcon'
+
 export default SecuritySettings

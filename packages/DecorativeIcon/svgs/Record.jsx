@@ -15,4 +15,6 @@ const Record = props => (
   </SVGIcon>
 )
 
+Record.displayName = 'DecorativeIcon'
+
 export default Record

@@ -21,4 +21,6 @@ const Attention = props => (
   </SVGIcon>
 )
 
+Attention.displayName = 'DecorativeIcon'
+
 export default Attention

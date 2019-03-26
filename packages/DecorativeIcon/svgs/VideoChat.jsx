@@ -15,4 +15,6 @@ const VideoChat = props => (
   </SVGIcon>
 )
 
+VideoChat.displayName = 'DecorativeIcon'
+
 export default VideoChat

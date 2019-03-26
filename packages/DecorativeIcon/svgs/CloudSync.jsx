@@ -21,4 +21,6 @@ const CloudSync = props => (
   </SVGIcon>
 )
 
+CloudSync.displayName = 'DecorativeIcon'
+
 export default CloudSync

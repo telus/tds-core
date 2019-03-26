@@ -15,4 +15,6 @@ const WifiBoost = props => (
   </SVGIcon>
 )
 
+WifiBoost.displayName = 'DecorativeIcon'
+
 export default WifiBoost

@@ -15,4 +15,6 @@ const Radar = props => (
   </SVGIcon>
 )
 
+Radar.displayName = 'DecorativeIcon'
+
 export default Radar

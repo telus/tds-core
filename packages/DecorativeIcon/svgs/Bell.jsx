@@ -21,4 +21,6 @@ const Bell = props => (
   </SVGIcon>
 )
 
+Bell.displayName = 'DecorativeIcon'
+
 export default Bell

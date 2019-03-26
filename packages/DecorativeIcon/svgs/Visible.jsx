@@ -15,4 +15,6 @@ const Visible = props => (
   </SVGIcon>
 )
 
+Visible.displayName = 'DecorativeIcon'
+
 export default Visible

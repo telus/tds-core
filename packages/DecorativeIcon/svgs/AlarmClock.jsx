@@ -21,4 +21,6 @@ const AlarmClock = props => (
   </SVGIcon>
 )
 
+AlarmClock.displayName = 'DecorativeIcon'
+
 export default AlarmClock

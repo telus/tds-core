@@ -15,4 +15,6 @@ const Target = props => (
   </SVGIcon>
 )
 
+Target.displayName = 'DecorativeIcon'
+
 export default Target

@@ -21,4 +21,6 @@ const Briefcase = props => (
   </SVGIcon>
 )
 
+Briefcase.displayName = 'DecorativeIcon'
+
 export default Briefcase

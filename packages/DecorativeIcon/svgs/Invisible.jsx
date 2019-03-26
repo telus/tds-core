@@ -21,4 +21,6 @@ const Invisible = props => (
   </SVGIcon>
 )
 
+Invisible.displayName = 'DecorativeIcon'
+
 export default Invisible

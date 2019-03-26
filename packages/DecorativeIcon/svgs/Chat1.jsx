@@ -21,4 +21,6 @@ const Chat1 = props => (
   </SVGIcon>
 )
 
+Chat1.displayName = 'DecorativeIcon'
+
 export default Chat1

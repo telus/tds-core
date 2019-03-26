@@ -21,4 +21,6 @@ const Award = props => (
   </SVGIcon>
 )
 
+Award.displayName = 'DecorativeIcon'
+
 export default Award

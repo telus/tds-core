@@ -21,4 +21,6 @@ const Lightbulb = props => (
   </SVGIcon>
 )
 
+Lightbulb.displayName = 'DecorativeIcon'
+
 export default Lightbulb

@@ -15,4 +15,6 @@ const Speaker = props => (
   </SVGIcon>
 )
 
+Speaker.displayName = 'DecorativeIcon'
+
 export default Speaker

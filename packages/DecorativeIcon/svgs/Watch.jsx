@@ -15,4 +15,6 @@ const Watch = props => (
   </SVGIcon>
 )
 
+Watch.displayName = 'DecorativeIcon'
+
 export default Watch

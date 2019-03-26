@@ -21,4 +21,6 @@ const IdTag = props => (
   </SVGIcon>
 )
 
+IdTag.displayName = 'DecorativeIcon'
+
 export default IdTag

@@ -15,4 +15,6 @@ const Upload = props => (
   </SVGIcon>
 )
 
+Upload.displayName = 'DecorativeIcon'
+
 export default Upload

@@ -15,4 +15,6 @@ const Shop = props => (
   </SVGIcon>
 )
 
+Shop.displayName = 'DecorativeIcon'
+
 export default Shop

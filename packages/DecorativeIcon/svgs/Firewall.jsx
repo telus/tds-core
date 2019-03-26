@@ -21,4 +21,6 @@ const Firewall = props => (
   </SVGIcon>
 )
 
+Firewall.displayName = 'DecorativeIcon'
+
 export default Firewall

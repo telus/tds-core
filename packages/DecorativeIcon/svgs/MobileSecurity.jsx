@@ -33,4 +33,6 @@ const MobileSecurity = props => (
   </SVGIcon>
 )
 
+MobileSecurity.displayName = 'DecorativeIcon'
+
 export default MobileSecurity

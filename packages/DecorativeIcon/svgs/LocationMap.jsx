@@ -21,4 +21,6 @@ const LocationMap = props => (
   </SVGIcon>
 )
 
+LocationMap.displayName = 'DecorativeIcon'
+
 export default LocationMap

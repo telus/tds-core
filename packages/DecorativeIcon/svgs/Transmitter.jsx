@@ -15,4 +15,6 @@ const Transmitter = props => (
   </SVGIcon>
 )
 
+Transmitter.displayName = 'DecorativeIcon'
+
 export default Transmitter

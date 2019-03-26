@@ -15,4 +15,6 @@ const PhoneBusiness = props => (
   </SVGIcon>
 )
 
+PhoneBusiness.displayName = 'DecorativeIcon'
+
 export default PhoneBusiness

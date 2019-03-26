@@ -15,4 +15,6 @@ const UsbCable = props => (
   </SVGIcon>
 )
 
+UsbCable.displayName = 'DecorativeIcon'
+
 export default UsbCable

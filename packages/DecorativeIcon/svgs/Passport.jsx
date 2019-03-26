@@ -15,4 +15,6 @@ const Passport = props => (
   </SVGIcon>
 )
 
+Passport.displayName = 'DecorativeIcon'
+
 export default Passport

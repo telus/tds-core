@@ -33,4 +33,6 @@ const Check = props => (
   </SVGIcon>
 )
 
+Check.displayName = 'DecorativeIcon'
+
 export default Check

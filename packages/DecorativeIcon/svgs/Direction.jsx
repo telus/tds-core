@@ -21,4 +21,6 @@ const Direction = props => (
   </SVGIcon>
 )
 
+Direction.displayName = 'DecorativeIcon'
+
 export default Direction

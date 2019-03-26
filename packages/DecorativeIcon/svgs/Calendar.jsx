@@ -21,4 +21,6 @@ const Calendar = props => (
   </SVGIcon>
 )
 
+Calendar.displayName = 'DecorativeIcon'
+
 export default Calendar

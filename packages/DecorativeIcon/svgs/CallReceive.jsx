@@ -21,4 +21,6 @@ const CallReceive = props => (
   </SVGIcon>
 )
 
+CallReceive.displayName = 'DecorativeIcon'
+
 export default CallReceive

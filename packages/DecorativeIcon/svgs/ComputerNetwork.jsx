@@ -21,4 +21,6 @@ const ComputerNetwork = props => (
   </SVGIcon>
 )
 
+ComputerNetwork.displayName = 'DecorativeIcon'
+
 export default ComputerNetwork

@@ -21,4 +21,6 @@ const Cronometer = props => (
   </SVGIcon>
 )
 
+Cronometer.displayName = 'DecorativeIcon'
+
 export default Cronometer

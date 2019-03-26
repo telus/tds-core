@@ -21,4 +21,6 @@ const Messaging = props => (
   </SVGIcon>
 )
 
+Messaging.displayName = 'DecorativeIcon'
+
 export default Messaging

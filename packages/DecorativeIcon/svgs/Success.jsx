@@ -15,4 +15,6 @@ const Success = props => (
   </SVGIcon>
 )
 
+Success.displayName = 'DecorativeIcon'
+
 export default Success

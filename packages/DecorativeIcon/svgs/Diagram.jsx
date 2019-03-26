@@ -21,4 +21,6 @@ const Diagram = props => (
   </SVGIcon>
 )
 
+Diagram.displayName = 'DecorativeIcon'
+
 export default Diagram

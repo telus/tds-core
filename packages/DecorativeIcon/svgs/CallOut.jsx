@@ -21,4 +21,6 @@ const CallOut = props => (
   </SVGIcon>
 )
 
+CallOut.displayName = 'DecorativeIcon'
+
 export default CallOut

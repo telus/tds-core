@@ -15,4 +15,6 @@ const ThumbsUp = props => (
   </SVGIcon>
 )
 
+ThumbsUp.displayName = 'DecorativeIcon'
+
 export default ThumbsUp

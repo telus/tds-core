@@ -15,4 +15,6 @@ const PiggyBank = props => (
   </SVGIcon>
 )
 
+PiggyBank.displayName = 'DecorativeIcon'
+
 export default PiggyBank

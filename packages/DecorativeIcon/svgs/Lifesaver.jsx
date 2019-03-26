@@ -21,4 +21,6 @@ const Lifesaver = props => (
   </SVGIcon>
 )
 
+Lifesaver.displayName = 'DecorativeIcon'
+
 export default Lifesaver

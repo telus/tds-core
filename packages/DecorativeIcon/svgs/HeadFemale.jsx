@@ -21,4 +21,6 @@ const HeadFemale = props => (
   </SVGIcon>
 )
 
+HeadFemale.displayName = 'DecorativeIcon'
+
 export default HeadFemale

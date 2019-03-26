@@ -15,4 +15,6 @@ const Tablet = props => (
   </SVGIcon>
 )
 
+Tablet.displayName = 'DecorativeIcon'
+
 export default Tablet

@@ -15,4 +15,6 @@ const Users = props => (
   </SVGIcon>
 )
 
+Users.displayName = 'DecorativeIcon'
+
 export default Users

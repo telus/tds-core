@@ -15,4 +15,6 @@ const SimCard = props => (
   </SVGIcon>
 )
 
+SimCard.displayName = 'DecorativeIcon'
+
 export default SimCard

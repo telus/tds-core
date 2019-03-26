@@ -21,4 +21,6 @@ const CallTalking = props => (
   </SVGIcon>
 )
 
+CallTalking.displayName = 'DecorativeIcon'
+
 export default CallTalking

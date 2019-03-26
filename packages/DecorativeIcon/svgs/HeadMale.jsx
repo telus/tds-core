@@ -21,4 +21,6 @@ const HeadMale = props => (
   </SVGIcon>
 )
 
+HeadMale.displayName = 'DecorativeIcon'
+
 export default HeadMale

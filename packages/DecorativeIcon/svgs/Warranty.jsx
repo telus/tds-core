@@ -15,4 +15,6 @@ const Warranty = props => (
   </SVGIcon>
 )
 
+Warranty.displayName = 'DecorativeIcon'
+
 export default Warranty

@@ -14,4 +14,6 @@ const Accessible = props => (
     </svg>
   </SVGIcon>
 )
+Accessible.displayName = 'DecorativeIcon'
+
 export default Accessible

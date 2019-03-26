@@ -21,4 +21,6 @@ const Infinite = props => (
   </SVGIcon>
 )
 
+Infinite.displayName = 'DecorativeIcon'
+
 export default Infinite

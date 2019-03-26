@@ -21,4 +21,6 @@ const Email = props => (
   </SVGIcon>
 )
 
+Email.displayName = 'DecorativeIcon'
+
 export default Email

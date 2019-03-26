@@ -15,4 +15,6 @@ const Tasks = props => (
   </SVGIcon>
 )
 
+Tasks.displayName = 'DecorativeIcon'
+
 export default Tasks

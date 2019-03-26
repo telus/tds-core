@@ -21,4 +21,6 @@ const DataLimit = props => (
   </SVGIcon>
 )
 
+DataLimit.displayName = 'DecorativeIcon'
+
 export default DataLimit

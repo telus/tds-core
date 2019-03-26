@@ -21,4 +21,6 @@ const Delivery = props => (
   </SVGIcon>
 )
 
+Delivery.displayName = 'DecorativeIcon'
+
 export default Delivery
