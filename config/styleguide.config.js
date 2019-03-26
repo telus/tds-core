@@ -255,9 +255,7 @@ module.exports = {
               path.resolve('packages/UnorderedList/UnorderedList.jsx'),
               path.resolve('packages/OrderedList/OrderedList.jsx'),
               path.resolve('packages/Benefit/BenefitWithHeading/BenefitWithHeading.jsx'),
-              path.resolve('packages/Benefit/BenefitWithHeading/BenefitWithHeadingItem.jsx'),
               path.resolve('packages/Benefit/BenefitNoHeading/BenefitNoHeading.jsx'),
-              path.resolve('packages/Benefit/BenefitNoHeading/BenefitNoHeadingItem.jsx'),
             ]
           },
         },
