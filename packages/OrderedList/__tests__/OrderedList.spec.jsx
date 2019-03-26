@@ -8,6 +8,7 @@ describe('<OrderedList />', () => {
     render(
       <OrderedList {...overrides}>
         <OrderedList.Item>Lorem ipsum</OrderedList.Item>
+        {false && <OrderedList.Item>Lorem ipsum</OrderedList.Item>}
         <OrderedList.Item>Dolor sit amet</OrderedList.Item>
       </OrderedList>
     )
@@ -16,6 +17,7 @@ describe('<OrderedList />', () => {
     shallow(
       <OrderedList {...overrides}>
         <OrderedList.Item>Lorem ipsum</OrderedList.Item>
+        {false && <OrderedList.Item>Lorem ipsum</OrderedList.Item>}
         <OrderedList.Item>Dolor sit amet</OrderedList.Item>
       </OrderedList>
     )
