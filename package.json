@@ -110,7 +110,7 @@
     "jest": "^24.0.0",
     "jest-environment-enzyme": "^7.0.0",
     "jest-enzyme": "^7.0.0",
-    "jest-styled-components": "^6.3.1",
+    "jest-styled-components": "^7.0.0-2",
     "lerna": "^3.13.0",
     "lint-staged": "^8.0.0",
     "minimist": "^1.2.0",
