@@ -18,7 +18,7 @@ const injectListStyle = (child, size) => React.cloneElement(child, { size })
  * @version ./package.json
  */
 const OrderedList = ({ listStyle, size, children, ...rest }) => {
-  const filteredChildren = children.filter(child => child)
+  const filteredChildren = React.Children.toArray(children).filter(child => child)
   return (
     <Box
       {...safeRest(rest)}
