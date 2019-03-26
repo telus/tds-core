@@ -31,5 +31,7 @@ exports[`SVGIcon renders 1`] = `
   aria-hidden="true"
   class="svgVariantDefault svgSize24"
   symbol="artificialIntelligence"
-/>
+>
+  Some content
+</i>
 `;
