@@ -8,7 +8,7 @@ const PackageVersion = require('../../docs/components/custom/PackageVersion/Pack
 ;<PackageVersion version={version} />
 ```
 
-### `componentWithName(string)`
+### `componentWithName(componentName: String, checkDisplayName: Boolean)`
 
 Limits the prop to only allow components with a specific name.
 
@@ -31,7 +31,33 @@ PlanChooser.propTypes = {
 }
 ```
 
-### `or(array)`
+It can optionally check for `displayName`.
+
+```jsx noeditor static
+import { componentWithName } from '@tds/util-prop-types'
+
+const PlanChooser = () => {
+  return <div>{children}</div>
+}
+
+const Paragraph = () => {
+  return <p>{children}</p>
+}
+Paragraph.displayName = 'MyParagraph'
+
+const App = () => (
+  <PlanChooser>
+    <Paragraph>Super Plan</Paragraph>
+    <Paragraph>Smaller Plan</Paragraph>
+  </PlanChooser>
+)
+
+PlanChooser.propTypes = {
+  children: componentWithName('MyParagraph', true),
+}
+```
+
+### `or(validators: Array)`
 
 Limits the prop to only allow PropTypes that match those specified.
 

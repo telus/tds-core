@@ -1,8 +1,12 @@
-const componentWithName = passedName => {
+const componentWithName = (passedName, checkDisplayName) => {
   if (typeof passedName !== 'string') {
     throw new Error('passedName must be a string')
   }
   const checkProp = (props, propName, componentName) => {
+    if (typeof props[propName] === 'undefined') {
+      return undefined
+    }
+
     if (Array.isArray(props[propName])) {
       // Iterates through every child and try to find the first element that does not match the passed name
       // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
@@ -10,9 +14,20 @@ const componentWithName = passedName => {
         .map((_, index) => checkProp(props[propName], index, componentName))
         .find(Boolean)
     }
+
+    const testNameInObject = () =>
+      typeof props[propName] === 'object' &&
+      ((!checkDisplayName && props[propName].type.name !== passedName) ||
+        (checkDisplayName && props[propName].type.displayName !== passedName))
+    const testNameInFunction = () =>
+      typeof props[propName] === 'function' &&
+      ((!checkDisplayName && props[propName].name !== passedName) ||
+        (checkDisplayName && props[propName].displayName !== passedName))
+
     if (
-      (props[propName] && typeof props[propName] !== 'object') ||
-      (props[propName] && props[propName].type.name !== passedName)
+      (typeof props[propName] !== 'object' && typeof props[propName] !== 'function') ||
+      testNameInObject() ||
+      testNameInFunction()
     ) {
       return new Error(
         `${componentName}: Component passed to \`${propName}\` prop should be ${passedName}`
