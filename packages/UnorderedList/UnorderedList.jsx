@@ -16,9 +16,10 @@ const injectListStyle = (child, listStyle, size) => React.cloneElement(child, { 
  * @version ./package.json
  */
 const UnorderedList = ({ listStyle, size, children, ...rest }) => {
+  const filteredChildren = children.filter(child => child)
   return (
     <Box {...safeRest(rest)} tag="ul" between={2} dangerouslyAddClassName={styles.base}>
-      {React.Children.map(children, child => injectListStyle(child, listStyle, size))}
+      {React.Children.map(filteredChildren, child => injectListStyle(child, listStyle, size))}
     </Box>
   )
 }
