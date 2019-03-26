@@ -13,6 +13,7 @@ import capitalize from '../../shared/utils/capitalize'
  */
 const SVGIcon = ({ children, variant, size, ...rest }) => {
   const classes = joinClassNames(
+    styles.svgBase,
     variant && styles[`svgVariant${capitalize(variant)}`],
     size && styles[`svgSize${size}`]
   )
