@@ -18,8 +18,14 @@
 ```jsx
 <UnorderedList listStyle="checkmark">
   <UnorderedList.Item>30-day satisfaction guaranteed with no-hassle returns</UnorderedList.Item>
-  <UnorderedList.Item>Free shipping anywhere in Canada with any phone purchase</UnorderedList.Item>
+  {false && <UnorderedList.Item>$10 off for limited time only</UnorderedList.Item>}
+  {true && (
+    <UnorderedList.Item>
+      Free shipping anywhere in Canada with any phone purchase
+    </UnorderedList.Item>
+  )}
   <UnorderedList.Item>1-year limited manufacturer’s warranty</UnorderedList.Item>
+  {false && <UnorderedList.Item>$40 off for a limited time only</UnorderedList.Item>}
 </UnorderedList>
 ```
 
