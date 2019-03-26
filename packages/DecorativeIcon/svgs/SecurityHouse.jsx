@@ -15,4 +15,6 @@ const SecurityHouse = props => (
   </SVGIcon>
 )
 
+SecurityHouse.displayName = 'DecorativeIcon'
+
 export default SecurityHouse

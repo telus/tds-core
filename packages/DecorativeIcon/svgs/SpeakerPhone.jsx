@@ -20,4 +20,6 @@ const SpeakerPhone = props => (
   </SVGIcon>
 )
 
+SpeakerPhone.displayName = 'DecorativeIcon'
+
 export default SpeakerPhone

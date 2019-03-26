@@ -21,4 +21,6 @@ const Music = props => (
   </SVGIcon>
 )
 
+Music.displayName = 'DecorativeIcon'
+
 export default Music

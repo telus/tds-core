@@ -15,4 +15,6 @@ const VideoGames = props => (
   </SVGIcon>
 )
 
+VideoGames.displayName = 'DecorativeIcon'
+
 export default VideoGames

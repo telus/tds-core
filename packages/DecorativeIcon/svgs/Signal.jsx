@@ -15,4 +15,6 @@ const Signal = props => (
   </SVGIcon>
 )
 
+Signal.displayName = 'DecorativeIcon'
+
 export default Signal

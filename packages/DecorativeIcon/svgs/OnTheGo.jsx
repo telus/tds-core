@@ -15,4 +15,6 @@ const OnTheGo = props => (
   </SVGIcon>
 )
 
+OnTheGo.displayName = 'DecorativeIcon'
+
 export default OnTheGo

@@ -15,4 +15,6 @@ const Phone = props => (
   </SVGIcon>
 )
 
+Phone.displayName = 'DecorativeIcon'
+
 export default Phone

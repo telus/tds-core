@@ -21,4 +21,6 @@ const Camera = props => (
   </SVGIcon>
 )
 
+Camera.displayName = 'DecorativeIcon'
+
 export default Camera

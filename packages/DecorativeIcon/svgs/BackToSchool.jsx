@@ -21,4 +21,6 @@ const BackToSchool = props => (
   </SVGIcon>
 )
 
+BackToSchool.displayName = 'DecorativeIcon'
+
 export default BackToSchool

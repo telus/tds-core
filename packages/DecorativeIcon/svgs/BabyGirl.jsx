@@ -21,4 +21,6 @@ const BabyGirl = props => (
   </SVGIcon>
 )
 
+BabyGirl.displayName = 'DecorativeIcon'
+
 export default BabyGirl

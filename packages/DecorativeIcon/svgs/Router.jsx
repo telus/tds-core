@@ -15,4 +15,6 @@ const Router = props => (
   </SVGIcon>
 )
 
+Router.displayName = 'DecorativeIcon'
+
 export default Router

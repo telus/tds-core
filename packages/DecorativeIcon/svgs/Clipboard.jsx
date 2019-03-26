@@ -21,4 +21,6 @@ const Clipboard = props => (
   </SVGIcon>
 )
 
+Clipboard.displayName = 'DecorativeIcon'
+
 export default Clipboard

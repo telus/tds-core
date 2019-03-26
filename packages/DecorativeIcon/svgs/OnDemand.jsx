@@ -15,4 +15,6 @@ const OnDemand = props => (
   </SVGIcon>
 )
 
+OnDemand.displayName = 'DecorativeIcon'
+
 export default OnDemand

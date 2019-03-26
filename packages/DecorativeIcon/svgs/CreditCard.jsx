@@ -21,4 +21,6 @@ const CreditCard = props => (
   </SVGIcon>
 )
 
+CreditCard.displayName = 'DecorativeIcon'
+
 export default CreditCard

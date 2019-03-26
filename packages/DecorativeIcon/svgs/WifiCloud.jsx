@@ -15,4 +15,6 @@ const WifiCloud = props => (
   </SVGIcon>
 )
 
+WifiCloud.displayName = 'DecorativeIcon'
+
 export default WifiCloud

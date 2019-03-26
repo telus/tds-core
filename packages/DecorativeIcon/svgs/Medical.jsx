@@ -21,4 +21,6 @@ const Medical = props => (
   </SVGIcon>
 )
 
+Medical.displayName = 'DecorativeIcon'
+
 export default Medical

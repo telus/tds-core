@@ -21,4 +21,6 @@ const LocationRegular = props => (
   </SVGIcon>
 )
 
+LocationRegular.displayName = 'DecorativeIcon'
+
 export default LocationRegular

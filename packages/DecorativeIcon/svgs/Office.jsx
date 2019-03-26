@@ -15,4 +15,6 @@ const Office = props => (
   </SVGIcon>
 )
 
+Office.displayName = 'DecorativeIcon'
+
 export default Office

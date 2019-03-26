@@ -21,4 +21,6 @@ const LoginForm = props => (
   </SVGIcon>
 )
 
+LoginForm.displayName = 'DecorativeIcon'
+
 export default LoginForm

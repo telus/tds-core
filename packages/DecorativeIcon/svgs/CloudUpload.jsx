@@ -21,4 +21,6 @@ const CloudUpload = props => (
   </SVGIcon>
 )
 
+CloudUpload.displayName = 'DecorativeIcon'
+
 export default CloudUpload

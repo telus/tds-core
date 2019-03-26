@@ -21,4 +21,6 @@ const Mobility = props => (
   </SVGIcon>
 )
 
+Mobility.displayName = 'DecorativeIcon'
+
 export default Mobility

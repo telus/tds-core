@@ -21,4 +21,6 @@ const Headset = props => (
   </SVGIcon>
 )
 
+Headset.displayName = 'DecorativeIcon'
+
 export default Headset

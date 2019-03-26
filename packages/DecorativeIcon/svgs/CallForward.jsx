@@ -21,4 +21,6 @@ const CallForward = props => (
   </SVGIcon>
 )
 
+CallForward.displayName = 'DecorativeIcon'
+
 export default CallForward

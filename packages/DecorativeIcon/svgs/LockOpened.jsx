@@ -21,4 +21,6 @@ const LockOpened = props => (
   </SVGIcon>
 )
 
+LockOpened.displayName = 'DecorativeIcon'
+
 export default LockOpened

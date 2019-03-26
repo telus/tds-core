@@ -21,4 +21,6 @@ const Heart = props => (
   </SVGIcon>
 )
 
+Heart.displayName = 'DecorativeIcon'
+
 export default Heart

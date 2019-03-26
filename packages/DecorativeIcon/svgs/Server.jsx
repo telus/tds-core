@@ -15,4 +15,6 @@ const Server = props => (
   </SVGIcon>
 )
 
+Server.displayName = 'DecorativeIcon'
+
 export default Server

@@ -15,4 +15,6 @@ const Play = props => (
   </SVGIcon>
 )
 
+Play.displayName = 'DecorativeIcon'
+
 export default Play

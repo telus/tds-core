@@ -15,4 +15,6 @@ const Speed = props => (
   </SVGIcon>
 )
 
+Speed.displayName = 'DecorativeIcon'
+
 export default Speed

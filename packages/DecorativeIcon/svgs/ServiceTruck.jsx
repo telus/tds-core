@@ -15,4 +15,6 @@ const ServiceTruck = props => (
   </SVGIcon>
 )
 
+ServiceTruck.displayName = 'DecorativeIcon'
+
 export default ServiceTruck

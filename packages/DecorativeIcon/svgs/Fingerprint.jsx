@@ -21,4 +21,6 @@ const Fingerprint = props => (
   </SVGIcon>
 )
 
+Fingerprint.displayName = 'DecorativeIcon'
+
 export default Fingerprint

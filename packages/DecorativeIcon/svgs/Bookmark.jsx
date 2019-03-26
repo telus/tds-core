@@ -21,4 +21,6 @@ const Bookmark = props => (
   </SVGIcon>
 )
 
+Bookmark.displayName = 'DecorativeIcon'
+
 export default Bookmark

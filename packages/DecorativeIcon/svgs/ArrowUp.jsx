@@ -20,4 +20,6 @@ const ArrowUp = props => (
     </svg>
   </SVGIcon>
 )
+ArrowUp.displayName = 'DecorativeIcon'
+
 export default ArrowUp

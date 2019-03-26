@@ -21,4 +21,6 @@ const Files = props => (
   </SVGIcon>
 )
 
+Files.displayName = 'DecorativeIcon'
+
 export default Files

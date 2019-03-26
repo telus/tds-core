@@ -15,4 +15,6 @@ const SharedAccount = props => (
   </SVGIcon>
 )
 
+SharedAccount.displayName = 'DecorativeIcon'
+
 export default SharedAccount

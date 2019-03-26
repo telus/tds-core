@@ -15,4 +15,6 @@ const Tv = props => (
   </SVGIcon>
 )
 
+Tv.displayName = 'DecorativeIcon'
+
 export default Tv

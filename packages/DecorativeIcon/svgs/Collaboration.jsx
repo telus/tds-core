@@ -21,4 +21,6 @@ const Collaboration = props => (
   </SVGIcon>
 )
 
+Collaboration.displayName = 'DecorativeIcon'
+
 export default Collaboration

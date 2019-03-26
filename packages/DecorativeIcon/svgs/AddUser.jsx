@@ -20,4 +20,6 @@ const AddUser = props => (
     </svg>
   </SVGIcon>
 )
+AddUser.displayName = 'DecorativeIcon'
+
 export default AddUser

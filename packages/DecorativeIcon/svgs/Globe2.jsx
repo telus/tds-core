@@ -21,4 +21,6 @@ const Globe2 = props => (
   </SVGIcon>
 )
 
+Globe2.displayName = 'DecorativeIcon'
+
 export default Globe2

@@ -15,4 +15,6 @@ const Receipt = props => (
   </SVGIcon>
 )
 
+Receipt.displayName = 'DecorativeIcon'
+
 export default Receipt

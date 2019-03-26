@@ -21,4 +21,6 @@ const HeadBoth = props => (
   </SVGIcon>
 )
 
+HeadBoth.displayName = 'DecorativeIcon'
+
 export default HeadBoth

@@ -20,4 +20,6 @@ const RemoteControl = props => (
   </SVGIcon>
 )
 
+RemoteControl.displayName = 'DecorativeIcon'
+
 export default RemoteControl

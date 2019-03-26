@@ -20,4 +20,6 @@ const SecurityMobile = props => (
   </SVGIcon>
 )
 
+SecurityMobile.displayName = 'DecorativeIcon'
+
 export default SecurityMobile

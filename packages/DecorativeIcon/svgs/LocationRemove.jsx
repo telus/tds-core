@@ -21,4 +21,6 @@ const LocationRemove = props => (
   </SVGIcon>
 )
 
+LocationRemove.displayName = 'DecorativeIcon'
+
 export default LocationRemove

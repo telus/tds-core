@@ -15,4 +15,6 @@ const Suitcase = props => (
   </SVGIcon>
 )
 
+Suitcase.displayName = 'DecorativeIcon'
+
 export default Suitcase

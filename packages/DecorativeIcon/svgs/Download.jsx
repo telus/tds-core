@@ -21,4 +21,6 @@ const Download = props => (
   </SVGIcon>
 )
 
+Download.displayName = 'DecorativeIcon'
+
 export default Download

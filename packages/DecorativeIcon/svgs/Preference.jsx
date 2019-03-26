@@ -15,4 +15,6 @@ const Preference = props => (
   </SVGIcon>
 )
 
+Preference.displayName = 'DecorativeIcon'
+
 export default Preference

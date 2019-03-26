@@ -15,4 +15,6 @@ const Photo = props => (
   </SVGIcon>
 )
 
+Photo.displayName = 'DecorativeIcon'
+
 export default Photo

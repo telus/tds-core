@@ -15,4 +15,6 @@ const SignPost = props => (
   </SVGIcon>
 )
 
+SignPost.displayName = 'DecorativeIcon'
+
 export default SignPost

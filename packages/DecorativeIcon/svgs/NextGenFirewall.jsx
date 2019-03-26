@@ -15,4 +15,6 @@ const NextGenFirewall = props => (
   </SVGIcon>
 )
 
+NextGenFirewall.displayName = 'DecorativeIcon'
+
 export default NextGenFirewall

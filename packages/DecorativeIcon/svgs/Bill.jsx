@@ -21,4 +21,6 @@ const Bill = props => (
   </SVGIcon>
 )
 
+Bill.displayName = 'DecorativeIcon'
+
 export default Bill

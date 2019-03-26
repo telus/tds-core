@@ -21,4 +21,6 @@ const ArtificialIntelligence = props => (
   </SVGIcon>
 )
 
+ArtificialIntelligence.displayName = 'DecorativeIcon'
+
 export default ArtificialIntelligence

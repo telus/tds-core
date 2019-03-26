@@ -21,4 +21,6 @@ const Layers = props => (
   </SVGIcon>
 )
 
+Layers.displayName = 'DecorativeIcon'
+
 export default Layers

@@ -21,4 +21,6 @@ const Laptop = props => (
   </SVGIcon>
 )
 
+Laptop.displayName = 'DecorativeIcon'
+
 export default Laptop

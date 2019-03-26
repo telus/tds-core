@@ -21,4 +21,6 @@ const Key = props => (
   </SVGIcon>
 )
 
+Key.displayName = 'DecorativeIcon'
+
 export default Key

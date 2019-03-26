@@ -21,4 +21,6 @@ const Contract = props => (
   </SVGIcon>
 )
 
+Contract.displayName = 'DecorativeIcon'
+
 export default Contract

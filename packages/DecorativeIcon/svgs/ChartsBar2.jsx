@@ -21,4 +21,6 @@ const ChartsBar2 = props => (
   </SVGIcon>
 )
 
+ChartsBar2.displayName = 'DecorativeIcon'
+
 export default ChartsBar2

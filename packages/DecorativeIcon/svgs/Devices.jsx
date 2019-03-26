@@ -21,4 +21,6 @@ const Devices = props => (
   </SVGIcon>
 )
 
+Devices.displayName = 'DecorativeIcon'
+
 export default Devices

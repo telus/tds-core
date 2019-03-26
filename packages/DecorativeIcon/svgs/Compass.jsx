@@ -21,4 +21,6 @@ const Compass = props => (
   </SVGIcon>
 )
 
+Compass.displayName = 'DecorativeIcon'
+
 export default Compass

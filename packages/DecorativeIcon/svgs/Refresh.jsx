@@ -15,4 +15,6 @@ const Refresh = props => (
   </SVGIcon>
 )
 
+Refresh.displayName = 'DecorativeIcon'
+
 export default Refresh

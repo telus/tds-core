@@ -30,4 +30,6 @@ const Clock = props => (
   </SVGIcon>
 )
 
+Clock.displayName = 'DecorativeIcon'
+
 export default Clock

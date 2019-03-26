@@ -21,4 +21,6 @@ const Deals = props => (
   </SVGIcon>
 )
 
+Deals.displayName = 'DecorativeIcon'
+
 export default Deals

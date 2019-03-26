@@ -15,4 +15,6 @@ const PrivateCloud = props => (
   </SVGIcon>
 )
 
+PrivateCloud.displayName = 'DecorativeIcon'
+
 export default PrivateCloud

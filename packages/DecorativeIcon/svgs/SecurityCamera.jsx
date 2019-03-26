@@ -15,4 +15,6 @@ const SecurityCamera = props => (
   </SVGIcon>
 )
 
+SecurityCamera.displayName = 'DecorativeIcon'
+
 export default SecurityCamera

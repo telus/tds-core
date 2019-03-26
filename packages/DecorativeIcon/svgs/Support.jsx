@@ -15,4 +15,6 @@ const Support = props => (
   </SVGIcon>
 )
 
+Support.displayName = 'DecorativeIcon'
+
 export default Support

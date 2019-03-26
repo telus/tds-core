@@ -21,4 +21,6 @@ const BatteryCharging = props => (
   </SVGIcon>
 )
 
+BatteryCharging.displayName = 'DecorativeIcon'
+
 export default BatteryCharging

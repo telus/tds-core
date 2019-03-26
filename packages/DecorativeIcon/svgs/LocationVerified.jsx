@@ -21,4 +21,6 @@ const LocationVerified = props => (
   </SVGIcon>
 )
 
+LocationVerified.displayName = 'DecorativeIcon'
+
 export default LocationVerified

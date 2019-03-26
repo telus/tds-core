@@ -21,4 +21,6 @@ const Flag = props => (
   </SVGIcon>
 )
 
+Flag.displayName = 'DecorativeIcon'
+
 export default Flag

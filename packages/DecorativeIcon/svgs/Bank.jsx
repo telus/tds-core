@@ -21,4 +21,6 @@ const Bank = props => (
   </SVGIcon>
 )
 
+Bank.displayName = 'DecorativeIcon'
+
 export default Bank

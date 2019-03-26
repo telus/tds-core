@@ -21,4 +21,6 @@ const Internet = props => (
   </SVGIcon>
 )
 
+Internet.displayName = 'DecorativeIcon'
+
 export default Internet
