@@ -28,6 +28,9 @@
   font-size: 3rem;
 }
 
+.svgBase {
+  display: inline-flex;
+}
 .svgSize16 > svg {
   width: 16px;
   height: 16px;
