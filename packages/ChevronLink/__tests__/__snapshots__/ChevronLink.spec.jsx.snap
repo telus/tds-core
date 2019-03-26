@@ -1,8 +1,274 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ChevronLink renders 1`] = `
+exports[`ChevronLink can have specific variants 1`] = `
+.c1 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.c1:link,
+.c1:visited {
+  color: #248700;
+}
+
+.c2 {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 300ms;
+  -webkit-transition: transform 300ms;
+  transition: transform 300ms;
+}
+
+.c0:hover .c2 {
+  -webkit-transform: translateX(0.25rem);
+  -ms-transform: translateX(0.25rem);
+  transform: translateX(0.25rem);
+}
+
 <a
-  class="primary"
+  class="c0 c1"
+  direction="right"
+  href="https://telus.com"
+>
+  <span
+    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+  >
+    <span>
+      Go home
+    </span>
+    <span
+      class="c2"
+      direction="right"
+    >
+      <i
+        aria-hidden="true"
+        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+      />
+    </span>
+  </span>
+</a>
+`;
+
+exports[`ChevronLink can have specific variants 2`] = `
+.c1 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.c1:link,
+.c1:visited {
+  color: #4b286d;
+}
+
+.c2 {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 300ms;
+  -webkit-transition: transform 300ms;
+  transition: transform 300ms;
+}
+
+.c0:hover .c2 {
+  -webkit-transform: translateX(0.25rem);
+  -ms-transform: translateX(0.25rem);
+  transform: translateX(0.25rem);
+}
+
+<a
+  class="c0 c1"
+  direction="right"
+  href="https://telus.com"
+>
+  <span
+    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+  >
+    <span>
+      Go home
+    </span>
+    <span
+      class="c2"
+      direction="right"
+    >
+      <i
+        aria-hidden="true"
+        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+      />
+    </span>
+  </span>
+</a>
+`;
+
+exports[`ChevronLink can have specific variants 3`] = `
+.c1 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.c1:link,
+.c1:visited {
+  color: #248700;
+}
+
+.c2 {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 300ms;
+  -webkit-transition: transform 300ms;
+  transition: transform 300ms;
+}
+
+.c0:hover .c2 {
+  -webkit-transform: translateX(0.25rem);
+  -ms-transform: translateX(0.25rem);
+  transform: translateX(0.25rem);
+}
+
+<a
+  class="c0 c1"
+  direction="right"
+  href="https://telus.com"
+>
+  <span
+    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+  >
+    <span>
+      Go home
+    </span>
+    <span
+      class="c2"
+      direction="right"
+    >
+      <i
+        aria-hidden="true"
+        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+      />
+    </span>
+  </span>
+</a>
+`;
+
+exports[`ChevronLink can have specific variants 4`] = `
+.c1 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.c1:link,
+.c1:visited {
+  color: #fff;
+}
+
+.c2 {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 300ms;
+  -webkit-transition: transform 300ms;
+  transition: transform 300ms;
+}
+
+.c0:hover .c2 {
+  -webkit-transform: translateX(0.25rem);
+  -ms-transform: translateX(0.25rem);
+  transform: translateX(0.25rem);
+}
+
+<a
+  class="c0 c1"
+  direction="right"
+  href="https://telus.com"
+>
+  <span
+    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+  >
+    <span>
+      Go home
+    </span>
+    <span
+      class="c2"
+      direction="right"
+    >
+      <i
+        aria-hidden="true"
+        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+      />
+    </span>
+  </span>
+</a>
+`;
+
+exports[`ChevronLink renders 1`] = `
+.c1 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.c1:link,
+.c1:visited {
+  color: #248700;
+}
+
+.c2 {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 300ms;
+  -webkit-transition: transform 300ms;
+  transition: transform 300ms;
+}
+
+.c0:hover .c2 {
+  -webkit-transform: translateX(0.25rem);
+  -ms-transform: translateX(0.25rem);
+  transform: translateX(0.25rem);
+}
+
+<a
+  class="c0 c1"
+  direction="right"
   href="test.com"
 >
   <span
@@ -12,7 +278,8 @@ exports[`ChevronLink renders 1`] = `
       Go home
     </span>
     <span
-      class="rightChevron"
+      class="c2"
+      direction="right"
     >
       <i
         aria-hidden="true"

@@ -12,13 +12,14 @@ jest.mock('../../../shared/utils/warn')
 
 describe('ChevronLink', () => {
   const doShallow = (overrides = {}) => shallow(<ChevronLink {...overrides}>Go home</ChevronLink>)
+  const doRender = (overrides = {}) => render(<ChevronLink {...overrides}>Go home</ChevronLink>)
 
   afterEach(() => {
     jest.clearAllMocks()
   })
 
   it('renders', () => {
-    const link = render(<ChevronLink href="test.com">Go home</ChevronLink>)
+    const link = doRender({ href: 'test.com' })
 
     expect(link).toMatchSnapshot()
   })
@@ -26,7 +27,7 @@ describe('ChevronLink', () => {
   it('is an anchor HTML element when using the href attribute', () => {
     const link = doShallow({ href: 'http://telus.com' })
 
-    expect(link).toHaveDisplayName('a')
+    expect(link).toHaveProp('as', 'a')
     expect(link).toHaveProp('href', 'http://telus.com')
   })
 
@@ -34,7 +35,7 @@ describe('ChevronLink', () => {
     const MyLink = () => <span />
     const link = doShallow({ reactRouterLinkComponent: MyLink })
 
-    expect(link).toMatchSelector('MyLink')
+    expect(link).toHaveProp('as', MyLink)
   })
 
   it('must use `reactRouterLinkComponent` and `to` props together', () => {
@@ -60,17 +61,17 @@ describe('ChevronLink', () => {
   })
 
   it('can have specific variants', () => {
-    let link = doShallow({ href: 'https://telus.com' })
-    expect(link).toHaveClassName('primary')
+    let link = doRender({ href: 'https://telus.com' })
+    expect(link).toMatchSnapshot()
 
-    link = doShallow({ href: 'https://telus.com', variant: 'secondary' })
-    expect(link).toHaveClassName('secondary')
+    link = doRender({ href: 'https://telus.com', variant: 'secondary' })
+    expect(link).toMatchSnapshot()
 
-    link = doShallow({ href: 'https://telus.com', variant: 'primary' })
-    expect(link).toHaveClassName('primary')
+    link = doRender({ href: 'https://telus.com', variant: 'primary' })
+    expect(link).toMatchSnapshot()
 
-    link = doShallow({ href: 'https://telus.com', variant: 'inverted' })
-    expect(link).toHaveClassName('inverted')
+    link = doRender({ href: 'https://telus.com', variant: 'inverted' })
+    expect(link).toMatchSnapshot()
   })
 
   it('passes additional attributes to the link element', () => {
