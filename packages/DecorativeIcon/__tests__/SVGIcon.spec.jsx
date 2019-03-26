@@ -9,10 +9,18 @@ describe('SVGIcon', () => {
     size: 24,
   }
   const doShallow = (props = { symbol: 'artificialIntelligence' }) =>
-    shallow(<SVGIcon {...defaultProps} {...props} />)
+    shallow(
+      <SVGIcon {...defaultProps} {...props}>
+        Some content
+      </SVGIcon>
+    )
 
   it('renders', () => {
-    const icon = render(<SVGIcon variant="default" symbol="artificialIntelligence" />)
+    const icon = render(
+      <SVGIcon variant="default" symbol="artificialIntelligence">
+        Some content
+      </SVGIcon>
+    )
 
     expect(icon).toMatchSnapshot()
   })
