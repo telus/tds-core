@@ -1,30 +1,52 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
 import { componentWithName, or } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 import DecorativeIcon from '@tds/core-decorative-icon'
+import { medium, helveticaNeueRoman55 } from '@tds/shared-typography'
+import { colorPrimary, colorSecondary, colorWhite } from '@tds/core-colours'
 
 import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
-import styles from './ChevronLink.modules.scss'
-
-const getClassName = variant => {
-  switch (variant) {
-    case 'secondary':
-      return styles.secondary
-    case 'inverted':
-      return styles.inverted
-    default:
-      return styles.primary
-  }
+const base = {
+  display: 'inline-block',
+  textDecoration: 'none',
+  maxWidth: '100%',
 }
 
-const getIcon = (symbol, classes) => (
-  <span className={classes}>
+const StyledChevronLink = styled.a(medium, helveticaNeueRoman55, base, ({ variant }) => {
+  let color
+  if (variant === 'secondary') {
+    color = colorSecondary
+  } else if (variant === 'inverted') {
+    color = colorWhite
+  } else {
+    color = colorPrimary
+  }
+
+  return {
+    '&:link,&:visited': {
+      color,
+    },
+  }
+})
+
+const StyledChevron = styled.span(({ direction }) => ({
+  display: 'inline-block',
+  transition: 'transform 300ms',
+  [`${StyledChevronLink}:hover &`]: {
+    transform: `translateX(${direction === 'right' ? '0.25rem' : '-0.25rem'})`,
+  },
+}))
+
+const getIcon = (symbol, direction) => (
+  <StyledChevron direction={direction}>
     <DecorativeIcon symbol={symbol} size={16} />
-  </span>
+  </StyledChevron>
 )
 
 /**
@@ -39,19 +61,21 @@ const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, .
 
   const innerLink = (
     <Box tag="span" inline between={2}>
-      {direction === 'left' ? getIcon('leftChevron', styles.leftChevron) : undefined}
+      {direction === 'left' ? getIcon('leftChevron', direction) : undefined}
       <span>{children}</span>
-      {direction === 'right' ? getIcon('chevron', styles.rightChevron) : undefined}
+      {direction === 'right' ? getIcon('chevron', direction) : undefined}
     </Box>
   )
 
-  return React.createElement(
-    reactRouterLinkComponent || 'a',
-    {
-      ...safeRest(rest),
-      className: getClassName(variant),
-    },
-    innerLink
+  return (
+    <StyledChevronLink
+      {...safeRest(rest)}
+      as={reactRouterLinkComponent || 'a'}
+      variant={variant}
+      direction={direction}
+    >
+      {innerLink}
+    </StyledChevronLink>
   )
 }
 
