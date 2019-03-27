@@ -29,6 +29,7 @@ The following group are the active maintainers of this project, and have merge r
 | Marco Donnici       | Developer     | @marcod         | @marcod1419    |
 | Jordan Raffoul      | Developer     | @Jordan Raffoul | @jraff         |
 | Christina Lo        | Design        | @Christina L.   | @Christina-Lo  |
+| Donna Vitan         | Design        | @donnavitan     | @donnavitan    |
 
 ## Inactive members
 
