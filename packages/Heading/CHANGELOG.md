@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.1.11...@tds/core-heading@1.2.0) (2019-03-28)
+
+
+### Features
+
+* **core-heading:** add div option to tag prop ([3090634](https://github.com/telusdigital/tds/commit/3090634))
+* **core-heading:** add span option to tag prop ([22bd433](https://github.com/telusdigital/tds/commit/22bd433))
+
+
+
+
+
 ## [1.1.11](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.1.10...@tds/core-heading@1.1.11) (2019-03-20)
 
 **Note:** Version bump only for package @tds/core-heading

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/telusdigital/tds/compare/@tds/util-prop-types@1.2.1...@tds/util-prop-types@1.3.0) (2019-03-28)
+
+
+### Features
+
+* **util-prop-types:** allow componentWithName to check for displayName ([93ed3e6](https://github.com/telusdigital/tds/commit/93ed3e6))
+
+
+
+
+
 ## [1.2.1](https://github.com/telusdigital/tds/compare/@tds/util-prop-types@1.2.0...@tds/util-prop-types@1.2.1) (2019-02-06)
 
 **Note:** Version bump only for package @tds/util-prop-types
