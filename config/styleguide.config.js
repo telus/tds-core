@@ -123,7 +123,7 @@ module.exports = {
 
     if (name === 'BenefitWithHeading' || name === 'BenefitNoHeading') {
       kebabizeName = 'benefit'
-      return `import { ${name} } from '@tds/core-${kebabizeName}`
+      return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
 
     return `import ${name} from '@tds/core-${kebabizeName}'`
