@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-button-link@2.0.0...@tds/core-button-link@2.0.1) (2019-03-28)
+
+
+### Bug Fixes
+
+* **core-button-link:** remove @tds/shared-base-button from deps ([08c17a1](https://github.com/telusdigital/tds/commit/08c17a1))
+
+
+
+
+
 # [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-button-link@1.1.10...@tds/core-button-link@2.0.0) (2019-03-28)
 
 
