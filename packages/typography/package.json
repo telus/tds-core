@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-typography",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

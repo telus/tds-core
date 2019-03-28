@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-price-lockup",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,13 +27,13 @@
   "dependencies": {
     "@tds/core-box": "^1.1.0",
     "@tds/core-hairline-divider": "^1.0.4",
-    "@tds/shared-typography": "^1.2.1",
+    "@tds/shared-typography": "^1.2.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-display-heading": "^1.0.12",
-    "@tds/core-heading": "^1.2.0",
+    "@tds/core-display-heading": "^1.0.13",
+    "@tds/core-heading": "^1.2.1",
     "@tds/core-responsive": "^1.2.0",
-    "@tds/core-text": "^1.0.9"
+    "@tds/core-text": "^1.0.10"
   }
 }

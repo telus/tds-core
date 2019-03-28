@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-text",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Inline text",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -25,7 +25,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/shared-typography": "^1.2.1",
+    "@tds/shared-typography": "^1.2.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {

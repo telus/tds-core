@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-button@1.1.10...@tds/core-button@2.0.0) (2019-03-28)
+
+
+### Features
+
+* **core-button:** upgrade to styled-components ([0ff9dba](https://github.com/telusdigital/tds/commit/0ff9dba))
+
+
+### BREAKING CHANGES
+
+* **core-button:** upgrade to styled-components
+
+
+
+
+
 ## [1.1.10](https://github.com/telusdigital/tds/compare/@tds/core-button@1.1.9...@tds/core-button@1.1.10) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-button

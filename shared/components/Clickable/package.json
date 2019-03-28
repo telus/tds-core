@@ -1,10 +1,10 @@
 {
   "name": "@tds/shared-clickable",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "main": "",
   "module": "",
   "devDependencies": {
-    "@tds/shared-typography": "^1.2.1"
+    "@tds/shared-typography": "^1.2.2"
   }
 }
