@@ -1,7 +1,7 @@
 import React from 'react'
 import SVGIcon from '../SVGIcon'
 
-const Camera = props => (
+const Channels = props => (
   <SVGIcon {...props}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +21,6 @@ const Camera = props => (
   </SVGIcon>
 )
 
-Camera.displayName = 'DecorativeIcon'
+Channels.displayName = 'DecorativeIcon'
 
-export default Camera
+export default Channels
