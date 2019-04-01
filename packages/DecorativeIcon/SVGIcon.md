@@ -711,8 +711,8 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'Target market, precision, focus, business targets',
       },
       {
-        name: 'Heart',
-        Component: Heart,
+        name: 'Heartbeat',
+        Component: Heartbeat,
         usageCriteria: 'Health related',
       },
       {
