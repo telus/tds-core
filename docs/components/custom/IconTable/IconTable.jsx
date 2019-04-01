@@ -21,15 +21,25 @@ const IconTable = ({ icons, heading }) => (
         </tr>
       </thead>
       <tbody>
-        {icons.map(icon => (
-          <tr key={icon.name}>
-            <td>{icon.name}</td>
-            <td>
-              <icon.Component />
-            </td>
-            <td>{icon.usageCriteria}</td>
-          </tr>
-        ))}
+        {icons
+          .sort((a, b) => {
+            if (a.name > b.name) {
+              return 1
+            }
+            if (a.name < b.name) {
+              return -1
+            }
+            return 0
+          })
+          .map(icon => (
+            <tr key={icon.name}>
+              <td>{icon.name}</td>
+              <td>
+                <icon.Component />
+              </td>
+              <td>{icon.usageCriteria}</td>
+            </tr>
+          ))}
       </tbody>
     </table>
   </Box>

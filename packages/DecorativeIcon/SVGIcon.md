@@ -34,1831 +34,788 @@ The variants `default`, `alternative` and `inverted` can be used based on the de
 Check out the table below a full list of SVG Icons and their usage guidelines.
 
 ```jsx noeditor
-<FlexGrid>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Box vertical={3}>
-        <Heading level="h3">Products and Services</Heading>
-      </Box>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text bold>Symbol </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Icon </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Usage Criteria </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>mobility </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Mobility />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For mobility/cellphone </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>internet </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Internet />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For internet, wifi, wifi connectivity </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>tv </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Tv />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For television </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>phone </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Phone />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For phone </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>deals </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Deals />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Used when there are discounts/deals/promotion </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
+const IconTable = require('../../docs/components/custom/IconTable/IconTable').default
+;<Box between={3}>
+  <IconTable
+    heading="Products and Services"
+    icons={[
+      {
+        name: 'mobility',
+        Component: Mobility,
+        usageCriteria: 'For mobility/cellphone',
+      },
+      {
+        name: 'internet',
+        Component: Internet,
+        usageCriteria: 'For internet, wifi, wifi connectivity',
+      },
+      {
+        name: 'tv',
+        Component: Tv,
+        usageCriteria: 'For television',
+      },
+      {
+        name: 'phone',
+        Component: Phone,
+        usageCriteria: 'For phone',
+      },
+      {
+        name: 'deals',
+        Component: Deals,
+        usageCriteria: 'Used when there are discounts/deals/promotion',
+      },
+    ]}
+  />
 
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Box vertical={3}>
-        <Heading level="h3">Internet</Heading>
-      </Box>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text bold>Symbol </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Icon </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Usage Criteria </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>speed </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Speed />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Speed of service </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>dataLimit </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <DataLimit />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Data limitations </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>wifiBoost </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <WifiBoost />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Wifi boost</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
+  <IconTable
+    heading="Internet"
+    icons={[
+      {
+        name: 'speed',
+        Component: Speed,
+        usageCriteria: 'Speed of service',
+      },
+      {
+        name: 'dataLimit',
+        Component: DataLimit,
+        usageCriteria: 'Data limitations',
+      },
+      {
+        name: 'wifiBoost',
+        Component: WifiBoost,
+        usageCriteria: 'Wifi Boost',
+      },
+    ]}
+  />
 
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Box vertical={3}>
-        <Heading level="h3">Optik TV / Pik TV</Heading>
-      </Box>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text bold>Symbol </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Icon </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Usage Criteria </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>onDemand </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <OnDemand />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>TV on demand </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>onTheGo </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <OnTheGo />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>TV on the go </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>channels </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Channels />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Channels</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>favouriteNetwork </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <FavouriteNetwork />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Favourite network</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>remoteControl </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <RemoteControl />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Controlled by remote control</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
+  <IconTable
+    heading="Optik TV / Pik TV"
+    icons={[
+      {
+        name: 'onDemand',
+        Component: OnDemand,
+        usageCriteria: 'TV on demand',
+      },
+      {
+        name: 'onTheGo',
+        Component: OnTheGo,
+        usageCriteria: 'TV on the go',
+      },
+      {
+        name: 'channels',
+        Component: Channels,
+        usageCriteria: 'Channels',
+      },
+      {
+        name: 'favouriteNetwork',
+        Component: FavouriteNetwork,
+        usageCriteria: 'Favourite network',
+      },
+      {
+        name: 'remoteControl',
+        Component: RemoteControl,
+        usageCriteria: 'Controlled by remote control',
+      },
+    ]}
+  />
 
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Box vertical={3}>
-        <Heading level="h3">Home Security</Heading>
-      </Box>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text bold>Symbol </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Icon </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Usage Criteria </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>securityCamera </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <SecurityCamera />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Security cameras</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>securityMobile </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <SecurityMobile />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Mobile security</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>securitySettings </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <SecuritySettings />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Security settings</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>securityHouse </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <SecurityHouse />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Secure house</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
+  <IconTable
+    heading="Home Security"
+    icons={[
+      {
+        name: 'securityCamera',
+        Component: SecurityCamera,
+        usageCriteria: 'Security cameras',
+      },
+      {
+        name: 'securityMobile',
+        Component: SecurityMobile,
+        usageCriteria: 'Mobile security',
+      },
+      {
+        name: 'securitySettings',
+        Component: SecuritySettings,
+        usageCriteria: 'Security settings',
+      },
+      {
+        name: 'securityHouse',
+        Component: SecurityHouse,
+        usageCriteria: 'Secure house',
+      },
+    ]}
+  />
 
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Box vertical={3}>
-        <Heading level="h3">Mobility / Home Phone</Heading>
-      </Box>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text bold>Symbol </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Icon </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Usage Criteria </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>simCard </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <SimCard />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>SIM Card</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>callForward </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <CallForward />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Unlimited call forward</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>callTalking </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <CallTalking />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Phone in use</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>call </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Call />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Phone not in use</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>callReceive </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <CallReceive />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Call receive</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>callOut </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <CallOut />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Outwards call</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>messaging </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Messaging />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Messaging</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>videoChat </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <VideoChat />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Video Chat</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>phoneReception </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <PhoneReception />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Phone reception</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>signal </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Signal />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Signal</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
+  <IconTable
+    heading="Mobility / Home Phone"
+    icons={[
+      {
+        name: 'simCard',
+        Component: SimCard,
+        usageCriteria: 'SIM Card',
+      },
+      {
+        name: 'callForward',
+        Component: CallForward,
+        usageCriteria: 'Unlimited call forward',
+      },
+      {
+        name: 'callTalking',
+        Component: CallTalking,
+        usageCriteria: 'Phone in use',
+      },
+      {
+        name: 'call',
+        Component: Call,
+        usageCriteria: 'Phone not in use',
+      },
+      {
+        name: 'callReceive',
+        Component: CallReceive,
+        usageCriteria: 'Call receive',
+      },
+      {
+        name: 'callOut',
+        Component: CallOut,
+        usageCriteria: 'Outwards call',
+      },
+      {
+        name: 'messaging',
+        Component: Messaging,
+        usageCriteria: 'Messaging',
+      },
+      {
+        name: 'videoChat',
+        Component: VideoChat,
+        usageCriteria: 'Video Chat',
+      },
+      {
+        name: 'phoneReception',
+        Component: PhoneReception,
+        usageCriteria: 'Phone reception',
+      },
+      {
+        name: 'signal',
+        Component: Signal,
+        usageCriteria: 'Signal',
+      },
+    ]}
+  />
 
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Box vertical={3}>
-        <Heading level="h3">Business</Heading>
-      </Box>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text bold>Symbol </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Icon </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Usage Criteria </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>uploadToCloud </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <UploadToCloud />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Upload to cloud</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>cloudSync </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <CloudSync />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Sync to cloud</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>computerNetwork </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ComputerNetwork />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Computer network</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>privateCloud </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <PrivateCloud />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Cloud is private</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>wifiCloud </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <WifiCloud />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Wifi-cloud</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>phoneBusiness </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <PhoneBusiness />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Business connect, default business wireline </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>nextGenFirewall </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <NextGenFirewall />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Used in conjunction with Next Generation firewall service</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>artificialIntelligence </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ArtificialIntelligence />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Artificial Intelligence</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
+  <IconTable
+    heading="Business"
+    icons={[
+      {
+        name: 'uploadToCloud',
+        Component: UploadToCloud,
+        usageCriteria: 'Upload to cloud',
+      },
+      {
+        name: 'cloudSync',
+        Component: CloudSync,
+        usageCriteria: 'Sync to cloud',
+      },
+      {
+        name: 'computerNetwork',
+        Component: ComputerNetwork,
+        usageCriteria: 'Computer network',
+      },
+      {
+        name: 'privateCloud',
+        Component: PrivateCloud,
+        usageCriteria: 'Cloud is private',
+      },
+      {
+        name: 'wifiCloud',
+        Component: WifiCloud,
+        usageCriteria: 'Wifi-cloud',
+      },
+      {
+        name: 'phoneBusiness',
+        Component: PhoneBusiness,
+        usageCriteria: 'Business connect, default business wireline',
+      },
+      {
+        name: 'nextGenFirewall',
+        Component: NextGenFirewall,
+        usageCriteria: 'Used in conjunction with Next Generation firewall service',
+      },
+      {
+        name: 'artificialIntelligence',
+        Component: ArtificialIntelligence,
+        usageCriteria: 'Artificial Intelligence',
+      },
+    ]}
+  />
 
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Box vertical={3}>
-        <Heading level="h3">Health</Heading>
-      </Box>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text bold>Symbol </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Icon </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Usage Criteria </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>baby </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Baby />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>baby, children, male or female</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>babyBoy </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <BabyBoy />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>baby, children, male</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>babyGirl </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <BabyGirl />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>baby, children, female</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>medical </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Medical />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>health, medical</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
+  <IconTable
+    heading="Health"
+    icons={[
+      {
+        name: 'baby',
+        Component: Baby,
+        usageCriteria: 'baby, children, male or female',
+      },
+      {
+        name: 'babyBoy',
+        Component: BabyBoy,
+        usageCriteria: 'baby, children, male',
+      },
+      {
+        name: 'babyGirl',
+        Component: BabyGirl,
+        usageCriteria: 'baby, children, female',
+      },
+      {
+        name: 'medical',
+        Component: Medical,
+        usageCriteria: 'health, medical',
+      },
+    ]}
+  />
 
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Box vertical={3}>
-        <Heading level="h3">General Icons</Heading>
-      </Box>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text bold>Symbol </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Icon </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text bold>Usage Criteria </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>home </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Home />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For the home produdcts/services or a service that can be done at home </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>locationRegular </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <LocationRegular />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Used as an indication for location or address </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>locationAdd </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <LocationAdd />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>When an address is needed or if a user has the option to add a location </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>locationVerified </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <LocationVerified />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>When a validated address has been added</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>locationRemove </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <LocationRemove />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>When there is an option to remove location </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>locationHome </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <LocationHome />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Used to indicate that the location is the home address </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>support </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Support />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Customer support, FAQs</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>warranty </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Warranty />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For when warranty or repair is available/required</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>calendar </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Calendar />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>
-        For indicating a date, if something is time sensitive, or if a service requires scheduling{' '}
-      </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>award </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Award />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>"Best in class" or have won an award </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>delivery </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Delivery />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Delivery is available or required – not to be confused with service truck </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>success </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Success />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>
-        For validating that the information added has been processed and is successful, ready for
-        cart review in check out{' '}
-      </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>piggyBank </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <PiggyBank />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For saving, reduction, money credit back, online bill credit </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>settings </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Settings />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For settings, troubleshooting, technical support </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>speakerPhone </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <SpeakerPhone />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Announcements</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>bell </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Bell />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Alarm, time sensitive, used as notifications (like Facebook)</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>bill </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Bill />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Paper bill and e-bill, summary of your bill </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>arrowUp </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ArrowUp />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Upwards direction, price increase</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>arrowDown </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ArrowDown />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Downwards direction, price descrease</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>creditCard </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <CreditCard />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Credit card (not debit)</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>bank </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Bank />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Direct debit (not credit) </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>heart </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Heart />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Used to favourite items (will need toggle versions in future) </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>lightbulb </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Lightbulb />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Tips, smart lightbulbs </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>globe1 </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Globe1 />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>TELUS international, map and locations (America's specific) </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>globe2 </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Globe2 />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>TELUS international, can be used to indicate network </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>lockClosed </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <LockClosed />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Set and locked, cannot be altered or changed </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>lockOpened </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <LockOpened />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Can be altered or changed </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>user </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <User />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>
-        Information of the user including but not limited to first and last name, address, email{' '}
-      </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>chat1 </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Chat1 />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Contact support through chat/messages on TELUS.com </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>chat2 </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Chat2 />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Alternative to chat1, contact support through chat/messages on TELUS.com </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>cloudDownload </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <CloudDownload />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Download through cloud</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>cloudUpload </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <CloudUpload />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Upload through cloud</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>diagram </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Diagram />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Diagram, mapping </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>direction </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Direction />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>direction, traffic</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>download </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Download />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>download through cloud</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>upload </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Upload />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Upload</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>headFemale </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <HeadFemale />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>user, profile, female user </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>firewall </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Firewall />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>firewall, verified security</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>idTag </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <IdTag />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>ID, verification of person </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>infinite </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Infinite />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>infinite </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>headMale </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <HeadMale />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>user, profile, group </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>headBoth </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <HeadBoth />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>user, profile, male user </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>map </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      {/**
-       * This is a workaround for reserved names
-       * that cannot be overridden in globalComponents.js
-       */
-      typeof MapIcon === 'undefined' ? <Map /> : <MapIcon />}
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>map, travel, gps</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>play </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Play />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>play, video alternative </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>preference </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Preference />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>preference, settings alternative </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>radar </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Radar />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Radar, travel (land and sea search) </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>receipt </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Receipt />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>receipt, e-billing </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>server </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Server />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>server </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>shop </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Shop />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>shop, store </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>clipboard </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      {typeof ClipboardIcon === 'undefined' ? <Clipboard /> : <ClipboardIcon />}
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For information or forms</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>tasks </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Tasks />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>tasks, checklist, alternative to clipboard</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>transmitter </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Transmitter />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>electricity, transmitter tower </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>loginForm </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <LoginForm />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Login form </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>chatSupport </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ChatSupport />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Can reach a person on the support team to help with any issues</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>backToSchool </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <BackToSchool />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Back to school deals or promotions, recommended</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>gift </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Gift />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Gift promotion that comes with the product or service</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>users </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Users />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Available for more than one user </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>devices </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Devices />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>compatible/for smart devices </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>lifesaver </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Lifesaver />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For crucial information or that you will get help in the section </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>thumbsUp </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ThumbsUp />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Indicates that something is liked or recommended</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>tablet </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Tablet />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Compatible/for tablets</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>laptop </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Laptop />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For laptops/computers/desktop </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>router </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Router />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Requires a router or a router is available </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>watch </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Watch />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Smart watches, fitness watches </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>phone </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Phone />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Phone </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>videoGames </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <VideoGames />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>For video games including virtual reality, connected games, etc </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>camera </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Camera />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Indicates that a photo is required or suggested; used in My TELUS profile </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>news </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <News />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>
-        Announcements or news related to events, press releases, changes that may or may not affect
-        the user
-      </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>flag </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Flag />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>
-        3rd option, not alert, not a favourite but want to mark (may need on and off toggle)
-      </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>email </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Email />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>
-        Indicates that an email can be sent to share information with yourself or others; an email
-        is required.
-      </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>photo </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Photo />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Photo/image</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>chartsBar1 </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ChartsBar1 />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Reports, data usage, dashboards</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>chartsBar2 </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ChartsBar2 />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Reports, data usage, dashboards</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>chartsLine </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ChartsLine />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Reports, data usage, dashboards</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>collaboration </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Collaboration />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Collaboration, IoT</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>locationMap </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <LocationMap />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>
-        Another way to indicate location of something; can use location map or location icon. Cannot
-        be used ON a map
-      </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>signPost </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <SignPost />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Drive+, car related, GPS</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>compass </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Compass />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Indicates directions, Drive+, car related, GPS, travel</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>key </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Key />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Password, key</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>information </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Information />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Indicates extra information</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>attention </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Attention />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Used when alerting user of changes or simply to alert them</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>bookmark </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Bookmark />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>
-        Used to bookmark a page or callout a product or service as being popular or recommended
-      </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>serviceTruck </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <ServiceTruck />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Set up is required or available to set the product/service up</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>time </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Time />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Time; for scheduling</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>fingerprint </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Fingerprint />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Unique/personalized service, security</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>music </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Music />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Music, Stingray music channels (Optik TV)</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>files </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Files />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>More than one document</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>document </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      {typeof DocumentIcon === 'undefined' ? <Document /> : <DocumentIcon />}
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Single document</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>layers </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Layers />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Plans, channels, theme packs</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>target </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Target />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Target market, precision, focus, business targets</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>heart </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Heart />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Health related </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>usbCable </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <UsbCable />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Device can be connected with a USB or requires a USB cable to work</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>headset </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Headset />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Headsets; requires or recommends headsets</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>speaker </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Speaker />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Speakers; can be interchanged with headset </Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>refresh </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Refresh />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Page/section refresh</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>record </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Record />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Voicemail</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>visible </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Visible />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Visible informaton</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>invisible </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Invisible />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Invisible information</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>sharedAccount </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <SharedAccount />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Account is shared</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>addUser </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <AddUser />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>User can be added</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>batteryCharging </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <BatteryCharging />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Battery charging</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>contract </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Contract />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Contract</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>briefcase </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Briefcase />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Business</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>alarmClock </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <AlarmClock />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Time sensitive</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>suitcase </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Suitcase />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Travel</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>cronometer </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Cronometer />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Used when comparing speeds</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>photos </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Photos />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Images, photos, albums</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>office </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Office />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>office, address</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>passport </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Passport />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>travel, document verification</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>networking </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Networking />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Networking</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-  <FlexGrid.Row>
-    <FlexGrid.Col>
-      <Text>accessible </Text>
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Accessible />
-    </FlexGrid.Col>
-    <FlexGrid.Col>
-      <Text>Accessible</Text>
-    </FlexGrid.Col>
-  </FlexGrid.Row>
-</FlexGrid>
+  <IconTable
+    heading="General"
+    icons={[
+      {
+        name: 'home',
+        Component: Home,
+        usageCriteria: 'For the home produdcts/services or a service that can be done at home',
+      },
+      {
+        name: 'locationRegular',
+        Component: LocationRegular,
+        usageCriteria: 'Used as an indication for location or address',
+      },
+      {
+        name: 'locationAdd',
+        Component: LocationAdd,
+        usageCriteria: 'When an address is needed or if a user has the option to add a location',
+      },
+      {
+        name: 'locationVerified',
+        Component: LocationVerified,
+        usageCriteria: 'When a validated address has been added',
+      },
+      {
+        name: 'locationRemove',
+        Component: LocationRemove,
+        usageCriteria: 'When there is an option to remove location',
+      },
+      {
+        name: 'locationHome',
+        Component: LocationHome,
+        usageCriteria: 'Used to indicate that the location is the home address',
+      },
+      {
+        name: 'support',
+        Component: Support,
+        usageCriteria: 'Customer support, FAQs',
+      },
+      {
+        name: 'warranty',
+        Component: Warranty,
+        usageCriteria: 'For when warranty or repair is available/required',
+      },
+      {
+        name: 'calendar',
+        Component: Calendar,
+        usageCriteria:
+          "For indicating a date, if something is time sensitive, or if a service requires scheduling{' '}",
+      },
+      {
+        name: 'award',
+        Component: Award,
+        usageCriteria: '"Best in class" or have won an award',
+      },
+      {
+        name: 'delivery',
+        Component: Delivery,
+        usageCriteria: 'Delivery is available or required – not to be confused with service truck',
+      },
+      {
+        name: 'success',
+        Component: Success,
+        usageCriteria:
+          "For validating that the information added has been processed and is successful, ready for        cart review in check out{' '}",
+      },
+      {
+        name: 'piggyBank',
+        Component: PiggyBank,
+        usageCriteria: 'For saving, reduction, money credit back, online bill credit',
+      },
+      {
+        name: 'settings',
+        Component: Settings,
+        usageCriteria: 'For settings, troubleshooting, technical support',
+      },
+      {
+        name: 'speakerPhone',
+        Component: SpeakerPhone,
+        usageCriteria: 'Announcements',
+      },
+      {
+        name: 'bell',
+        Component: Bell,
+        usageCriteria: 'Alarm, time sensitive, used as notifications (like Facebook)',
+      },
+      {
+        name: 'bill',
+        Component: Bill,
+        usageCriteria: 'Paper bill and e-bill, summary of your bill',
+      },
+      {
+        name: 'arrowUp',
+        Component: ArrowUp,
+        usageCriteria: 'Upwards direction, price increase',
+      },
+      {
+        name: 'arrowDown',
+        Component: ArrowDown,
+        usageCriteria: 'Downwards direction, price descrease',
+      },
+      {
+        name: 'creditCard',
+        Component: CreditCard,
+        usageCriteria: 'Credit card (not debit)',
+      },
+      {
+        name: 'bank',
+        Component: Bank,
+        usageCriteria: 'Direct debit (not credit)',
+      },
+      {
+        name: 'heart',
+        Component: Heart,
+        usageCriteria: 'Used to favourite items (will need toggle versions in future)',
+      },
+      {
+        name: 'lightbulb',
+        Component: Lightbulb,
+        usageCriteria: 'Tips, smart lightbulbs',
+      },
+      {
+        name: 'globe1',
+        Component: Globe1,
+        usageCriteria: "TELUS international, map and locations (America's specific)",
+      },
+      {
+        name: 'globe2',
+        Component: Globe2,
+        usageCriteria: 'TELUS international, can be used to indicate network',
+      },
+      {
+        name: 'lockClosed',
+        Component: LockClosed,
+        usageCriteria: 'Set and locked, cannot be altered or changed',
+      },
+      {
+        name: 'lockOpened',
+        Component: LockOpened,
+        usageCriteria: 'Can be altered or changed',
+      },
+      {
+        name: 'user',
+        Component: User,
+        usageCriteria:
+          "Information of the user including but not limited to first and last name, address, email{' '}",
+      },
+      {
+        name: 'chat1',
+        Component: Chat1,
+        usageCriteria: 'Contact support through chat/messages on TELUS.com',
+      },
+      {
+        name: 'chat2',
+        Component: Chat2,
+        usageCriteria: 'Alternative to chat1, contact support through chat/messages on TELUS.com',
+      },
+      {
+        name: 'cloudDownload',
+        Component: CloudDownload,
+        usageCriteria: 'Download through cloud',
+      },
+      {
+        name: 'cloudUpload',
+        Component: CloudUpload,
+        usageCriteria: 'Upload through cloud',
+      },
+      {
+        name: 'diagram',
+        Component: Diagram,
+        usageCriteria: 'Diagram, mapping',
+      },
+      {
+        name: 'direction',
+        Component: Direction,
+        usageCriteria: 'direction, traffic',
+      },
+      {
+        name: 'download',
+        Component: Download,
+        usageCriteria: 'download through cloud',
+      },
+      { name: 'upload', Component: Upload, usageCriteria: 'Upload' },
+      {
+        name: 'headFemale',
+        Component: HeadFemale,
+        usageCriteria: 'user, profile, female user',
+      },
+      {
+        name: 'firewall',
+        Component: Firewall,
+        usageCriteria: 'firewall, verified security',
+      },
+      {
+        name: 'idTag',
+        Component: IdTag,
+        usageCriteria: 'ID, verification of person',
+      },
+      {
+        name: 'infinite',
+        Component: Infinite,
+        usageCriteria: 'infinite',
+      },
+      {
+        name: 'headMale',
+        Component: HeadMale,
+        usageCriteria: 'user, profile, group',
+      },
+      {
+        name: 'headBoth',
+        Component: HeadBoth,
+        usageCriteria: 'user, profile, male user',
+      },
+      {
+        name: 'map',
+        Component: typeof MapIcon === 'undefined' ? Map : MapIcon, // This is a workaround for reserved names that cannot be overridden in globalComponents.js
+        usageCriteria: 'map, travel, gps',
+      },
+      {
+        name: 'play',
+        Component: Play,
+        usageCriteria: 'play, video alternative',
+      },
+      {
+        name: 'preference',
+        Component: Preference,
+        usageCriteria: 'preference, settings alternative',
+      },
+      {
+        name: 'radar',
+        Component: Radar,
+        usageCriteria: 'Radar, travel (land and sea search)',
+      },
+      { name: 'receipt', Component: Receipt, usageCriteria: 'receipt, e-billing' },
+      { name: 'server', Component: Server, usageCriteria: 'server' },
+      { name: 'shop', Component: Shop, usageCriteria: 'shop, store' },
+      {
+        name: 'clipboard',
+        Component: typeof ClipboardIcon === 'undefined' ? Clipboard : ClipboardIcon,
+        usageCriteria: 'For information or forms',
+      },
+      {
+        name: 'tasks',
+        Component: Tasks,
+        usageCriteria: 'tasks, checklist, alternative to clipboard',
+      },
+      {
+        name: 'transmitter',
+        Component: Transmitter,
+        usageCriteria: 'electricity, transmitter tower',
+      },
+      {
+        name: 'loginForm',
+        Component: LoginForm,
+        usageCriteria: 'Login form',
+      },
+      {
+        name: 'chatSupport',
+        Component: ChatSupport,
+        usageCriteria: 'Can reach a person on the support team to help with any issues',
+      },
+      {
+        name: 'backToSchool',
+        Component: BackToSchool,
+        usageCriteria: 'Back to school deals or promotions, recommended',
+      },
+      {
+        name: 'gift',
+        Component: Gift,
+        usageCriteria: 'Gift promotion that comes with the product or service',
+      },
+      {
+        name: 'users',
+        Component: Users,
+        usageCriteria: 'Available for more than one user',
+      },
+      {
+        name: 'devices',
+        Component: Devices,
+        usageCriteria: 'compatible/for smart devices',
+      },
+      {
+        name: 'lifesaver',
+        Component: Lifesaver,
+        usageCriteria: 'For crucial information or that you will get help in the section',
+      },
+      {
+        name: 'thumbsUp',
+        Component: ThumbsUp,
+        usageCriteria: 'Indicates that something is liked or recommended',
+      },
+      {
+        name: 'tablet',
+        Component: Tablet,
+        usageCriteria: 'Compatible/for tablets',
+      },
+      {
+        name: 'laptop',
+        Component: Laptop,
+        usageCriteria: 'For laptops/computers/desktop',
+      },
+      {
+        name: 'router',
+        Component: Router,
+        usageCriteria: 'Requires a router or a router is available',
+      },
+      {
+        name: 'watch',
+        Component: Watch,
+        usageCriteria: 'Smart watches, fitness watches',
+      },
+      { name: 'phone', Component: Phone, usageCriteria: 'Phone' },
+      {
+        name: 'videoGames',
+        Component: VideoGames,
+        usageCriteria: 'For video games including virtual reality, connected games, etc',
+      },
+      {
+        name: 'camera',
+        Component: Camera,
+        usageCriteria: 'Indicates that a photo is required or suggested; used in My TELUS profile',
+      },
+      {
+        name: 'news',
+        Component: News,
+        usageCriteria:
+          'Announcements or news related to events, press releases, changes that may or may not affect        the user',
+      },
+      {
+        name: 'flag',
+        Component: Flag,
+        usageCriteria:
+          '3rd option, not alert, not a favourite but want to mark (may need on and off toggle)',
+      },
+      {
+        name: 'email',
+        Component: Email,
+        usageCriteria:
+          'Indicates that an email can be sent to share information with yourself or others; an email        is required.',
+      },
+      {
+        name: 'photo',
+        Component: Photo,
+        usageCriteria: 'Photo/image',
+      },
+      {
+        name: 'chartsBar1',
+        Component: ChartsBar1,
+        usageCriteria: 'Reports, data usage, dashboards',
+      },
+      {
+        name: 'chartsBar2',
+        Component: ChartsBar2,
+        usageCriteria: 'Reports, data usage, dashboards',
+      },
+      {
+        name: 'chartsLine',
+        Component: ChartsLine,
+        usageCriteria: 'Reports, data usage, dashboards',
+      },
+      {
+        name: 'collaboration',
+        Component: Collaboration,
+        usageCriteria: 'Collaboration, IoT',
+      },
+      {
+        name: 'locationMap',
+        Component: LocationMap,
+        usageCriteria:
+          'Another way to indicate location of something; can use location map or location icon. Cannot        be used ON a map',
+      },
+      {
+        name: 'signPost',
+        Component: SignPost,
+        usageCriteria: 'Drive+, car related, GPS',
+      },
+      {
+        name: 'compass',
+        Component: Compass,
+        usageCriteria: 'Indicates directions, Drive+, car related, GPS, travel',
+      },
+      { name: 'key', Component: Key, usageCriteria: 'Password, key' },
+      {
+        name: 'information',
+        Component: Information,
+        usageCriteria: 'Indicates extra information',
+      },
+      {
+        name: 'attention',
+        Component: Attention,
+        usageCriteria: 'Used when alerting user of changes or simply to alert them',
+      },
+      {
+        name: 'bookmark',
+        Component: Bookmark,
+        usageCriteria:
+          'Used to bookmark a page or callout a product or service as being popular or recommended',
+      },
+      {
+        name: 'serviceTruck',
+        Component: ServiceTruck,
+        usageCriteria: 'Set up is required or available to set the product/service up',
+      },
+      {
+        name: 'time',
+        Component: Time,
+        usageCriteria: 'Time; for scheduling',
+      },
+      {
+        name: 'fingerprint',
+        Component: Fingerprint,
+        usageCriteria: 'Unique/personalized service, security',
+      },
+      {
+        name: 'music',
+        Component: Music,
+        usageCriteria: 'Music, Stingray music channels (Optik TV)',
+      },
+      {
+        name: 'files',
+        Component: Files,
+        usageCriteria: 'More than one document',
+      },
+      {
+        name: 'document',
+        Component: typeof DocumentIcon === 'undefined' ? Document : DocumentIcon,
+        usageCriteria: 'Single document',
+      },
+      {
+        name: 'layers',
+        Component: Layers,
+        usageCriteria: 'Plans, channels, theme packs',
+      },
+      {
+        name: 'target',
+        Component: Target,
+        usageCriteria: 'Target market, precision, focus, business targets',
+      },
+      {
+        name: 'heart',
+        Component: Heart,
+        usageCriteria: 'Health related',
+      },
+      {
+        name: 'usbCable',
+        Component: UsbCable,
+        usageCriteria: 'Device can be connected with a USB or requires a USB cable to work',
+      },
+      {
+        name: 'headset',
+        Component: Headset,
+        usageCriteria: 'Headsets; requires or recommends headsets',
+      },
+      {
+        name: 'speaker',
+        Component: Speaker,
+        usageCriteria: 'Speakers; can be interchanged with headset',
+      },
+      {
+        name: 'refresh',
+        Component: Refresh,
+        usageCriteria: 'Page/section refresh',
+      },
+      {
+        name: 'record',
+        Component: Record,
+        usageCriteria: 'Voicemail',
+      },
+      {
+        name: 'visible',
+        Component: Visible,
+        usageCriteria: 'Visible informaton',
+      },
+      {
+        name: 'invisible',
+        Component: Invisible,
+        usageCriteria: 'Invisible information',
+      },
+      {
+        name: 'sharedAccount',
+        Component: SharedAccount,
+        usageCriteria: 'Account is shared',
+      },
+      {
+        name: 'addUser',
+        Component: AddUser,
+        usageCriteria: 'User can be added',
+      },
+      {
+        name: 'batteryCharging',
+        Component: BatteryCharging,
+        usageCriteria: 'Battery charging',
+      },
+      {
+        name: 'contract',
+        Component: Contract,
+        usageCriteria: 'Contract',
+      },
+      {
+        name: 'briefcase',
+        Component: Briefcase,
+        usageCriteria: 'Business',
+      },
+      {
+        name: 'alarmClock',
+        Component: AlarmClock,
+        usageCriteria: 'Time sensitive',
+      },
+      {
+        name: 'suitcase',
+        Component: Suitcase,
+        usageCriteria: 'Travel',
+      },
+      {
+        name: 'cronometer',
+        Component: Cronometer,
+        usageCriteria: 'Used when comparing speeds',
+      },
+      {
+        name: 'photos',
+        Component: Photos,
+        usageCriteria: 'Images, photos, albums',
+      },
+      {
+        name: 'office',
+        Component: Office,
+        usageCriteria: 'office, address',
+      },
+      {
+        name: 'passport',
+        Component: Passport,
+        usageCriteria: 'travel, document verification',
+      },
+      {
+        name: 'networking',
+        Component: Networking,
+        usageCriteria: 'Networking',
+      },
+      {
+        name: 'accessible',
+        Component: Accessible,
+        usageCriteria: 'Accessible',
+      },
+    ]}
+  />
+</Box>
 ```
