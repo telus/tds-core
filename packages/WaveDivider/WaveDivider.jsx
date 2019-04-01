@@ -21,8 +21,8 @@ const StyledRect = styled.rect(props => ({
 
 const StyledPath = styled.path(props => ({
   fill: `url(#TDS_WaveDivider_gradient-${props.gradient})`,
-  opacity: ['2', '4', '6'].includes(props.gradient) ? 0.5 : 1,
-  isolation: ['2', '4', '6'].includes(props.gradient) ? 'isolate' : 'unset',
+  opacity: ['2', '4', '6'].indexOf(props.gradient) > -1 ? 0.5 : 1,
+  isolation: ['2', '4', '6'].indexOf(props.gradient) > -1 ? 'isolate' : 'unset',
 }))
 
 /**
