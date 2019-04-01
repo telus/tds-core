@@ -831,6 +831,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Accessible,
         usageCriteria: 'Accessible',
       },
+      {
+        name: 'Check',
+        Component: Check,
+        usageCriteria: 'Default icon for benefit list for business',
+      },
     ]}
   />
 </Box>
