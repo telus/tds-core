@@ -420,6 +420,7 @@ input[type=range].c21::-ms-tooltip {
   outline: none;
   width: 100%;
   height: 100%;
+  font-size: 0;
 }
 
 .c11 {
@@ -1004,6 +1005,7 @@ input[type=range].c21::-ms-tooltip {
   outline: none;
   width: 100%;
   height: 100%;
+  font-size: 0;
 }
 
 .c11 {
@@ -1837,7 +1839,7 @@ input[type=range].c21::-ms-tooltip {
                   "isStatic": true,
                   "lastClassName": "c10",
                   "rules": Array [
-                    "outline: none; width: 100%; height: 100%;",
+                    "outline: none; width: 100%; height: 100%; font-size: 0;",
                   ],
                 },
                 "displayName": "Video__VideoElementContainer",

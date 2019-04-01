@@ -192,7 +192,7 @@ ControlBar.propTypes = {
   videoPlayer: PropTypes.object.isRequired,
   videoPlayerContainer: PropTypes.object.isRequired,
   sources: PropTypes.array.isRequired,
-  tracks: PropTypes.array.isRequired,
+  tracks: PropTypes.array,
   videoPlaying: PropTypes.bool.isRequired,
   videoBufferEnd: PropTypes.number.isRequired,
   isHidden: PropTypes.bool,
@@ -223,6 +223,7 @@ ControlBar.propTypes = {
 }
 
 ControlBar.defaultProps = {
+  tracks: undefined,
   isHidden: false,
 }
 

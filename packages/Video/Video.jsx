@@ -28,6 +28,7 @@ const VideoElementContainer = styled.div({
   outline: 'none',
   width: '100%',
   height: '100%',
+  fontSize: 0,
 })
 
 const VideoPlayer = styled.video({
@@ -74,7 +75,6 @@ class Video extends React.Component {
       mouseTimeout: 3000, // defined in ms
       keyboardSeekIncrement: 5, // defined in s
       keyboardVolumeIncrement: 0.1, // from 0 to 1
-      isMobile: navigator.userAgent.indexOf('Mobi') >= 0,
     }
 
     this.state = {
@@ -91,14 +91,13 @@ class Video extends React.Component {
       videoIsFullscreen: false,
       mouseInactive: false,
       videoEnded: false,
-      videoQuality: this.playerOptions.isMobile
-        ? this.props.defaultMobileQuality
-        : this.props.defaultDesktopQuality,
+      videoQuality: this.props.defaultDesktopQuality,
       videoQualityChanged: false,
       selectedTextTrack: -1,
       mouseOnControlBar: false,
       qualityMenuOpen: false,
       captionsMenuOpen: false,
+      isMobile: false,
     }
   }
 
@@ -109,7 +108,6 @@ class Video extends React.Component {
 
     // Prepares video and caption files
     this.refreshMedia()
-    this.setTextTracks(-1)
 
     // ******** Begin Video Event Handlers *********
 
@@ -200,7 +198,17 @@ class Video extends React.Component {
     })
   }
 
-  refreshMedia = () => {
+  refreshMedia = async () => {
+    // Handle mobile check
+    const isMobile = navigator && navigator.userAgent.indexOf('Mobi') >= 0
+    if (this.state.videoUnplayed && isMobile) {
+      await this.setState({
+        isMobile,
+        videoQuality: isMobile ? this.props.defaultMobileQuality : this.props.defaultDesktopQuality,
+      })
+    }
+
+    // Load media
     this.setState({
       sources: this.generateSources(),
       tracks: this.props.tracks && this.generateTracks(),
@@ -212,6 +220,9 @@ class Video extends React.Component {
   // ******** Begin Event Listener Functions ********
 
   qualitySwitchSeek = () => {
+    // The following setState gets the video length on the splash screen in iOS
+    this.setState({ videoLength: this.refVideoPlayer.current.duration })
+
     if (this.state.videoCurrentTime > -1) {
       this.setSeek(this.state.videoCurrentTime)
     }
@@ -347,6 +358,12 @@ class Video extends React.Component {
     this.setPlaying(!this.state.videoIsPlaying)
   }
 
+  beginVideo = () => {
+    this.setTextTracks(-1)
+    this.setPlaying(true)
+    this.refVideoPlayerContainer.current.focus()
+  }
+
   setPlaying = isPlaying => {
     if (isPlaying) {
       this.refVideoPlayer.current.play()
@@ -422,7 +439,6 @@ class Video extends React.Component {
 
   setVideoQuality = async quality => {
     const currentTime = this.state.videoCurrentTime
-    const wasPlaying = this.state.videoIsPlaying
     await this.setPlaying(false)
     await this.setState({
       videoLength: 0,
@@ -434,7 +450,6 @@ class Video extends React.Component {
     await this.refVideoPlayer.current.load()
     this.resetInactivityTimer()
     this.setSeek(currentTime)
-    this.setPlaying(wasPlaying)
   }
 
   setQualityMenuOpen = isOpen => {
@@ -602,10 +617,7 @@ class Video extends React.Component {
                 poster={this.props.posterSrc}
                 videoLength={this.state.videoLength}
                 label={videoText[this.props.copy].watch}
-                onClick={() => {
-                  this.setPlaying(true)
-                  this.refVideoPlayerContainer.current.focus()
-                }}
+                onClick={this.beginVideo}
               />
             </VideoSplashContainer>
           )}
@@ -626,7 +638,7 @@ class Video extends React.Component {
             {!this.state.videoUnplayed &&
               !this.state.videoIsBuffering &&
               !this.state.videoEnded &&
-              !this.playerOptions.isMobile && (
+              !this.state.isMobile && (
                 <MiddleControlButton
                   isPlaying={this.state.videoIsPlaying}
                   isHidden={this.state.mouseInactive}
@@ -636,7 +648,7 @@ class Video extends React.Component {
             {/* ========================================== */}
 
             {/* ======== Spinner Display ======= */}
-            {this.state.videoIsBuffering && !this.playerOptions.isMobile && <Spinner spinning />}
+            {this.state.videoIsBuffering && !this.state.isMobile && <Spinner spinning />}
             {/* ================================ */}
           </VideoOverlayElementContainer>
         </VideoOverlayContainer>
@@ -648,7 +660,7 @@ class Video extends React.Component {
         >
           <VideoPlayer
             ref={this.refVideoPlayer}
-            controls={this.playerOptions.isMobile}
+            controls={this.state.isMobile}
             videoIsFullscreen={this.state.videoIsFullscreen}
             playsinline
           >
@@ -677,7 +689,7 @@ class Video extends React.Component {
           isHidden={
             (this.state.mouseInactive || this.state.videoUnplayed) && !this.state.videoEnded
           }
-          isMobile={this.playerOptions.isMobile}
+          isMobile={this.state.isMobile}
           tracksAvailable={this.props.tracks !== undefined}
           togglePlayPause={this.togglePlayPause}
           setSeek={this.setSeek}
@@ -734,7 +746,7 @@ Video.propTypes = {
   /**
    * A path of the image that will be displayed on the video's splash screen. If this is undefined, it will pull an image from the loaded video file.
    */
-  posterSrc: PropTypes.string,
+  posterSrc: PropTypes.string.isRequired,
   /**
    * An array of objects that defines each caption file. See the "Basic Usage" section for more information.
    */
@@ -772,7 +784,6 @@ Video.propTypes = {
 }
 
 Video.defaultProps = {
-  posterSrc: undefined,
   tracks: undefined,
   defaultVolume: 100,
   beginMuted: false,
