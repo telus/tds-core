@@ -61,3 +61,14 @@
 .docs_full-height-box {
   height: 100%;
 }
+
+.docs_svgicon-table {
+  width: 100%;
+  & thead th {
+    text-align: left;
+    font-weight: 700;
+  }
+  tr:nth-child(even) {
+    background-color: $color-athens-grey;
+  }
+}
