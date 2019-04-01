@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoSplash renders 1`] = `
+<VideoSplash__SplashBackground
+  poster=""
+>
+  <BigVideoButton
+    icon={<Play />}
+    label="Watch the video"
+    videoLength={61}
+  />
+</VideoSplash__SplashBackground>
+`;
