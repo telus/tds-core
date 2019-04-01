@@ -74,6 +74,12 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: PhoneHome,
         usageCriteria: 'For home phone',
       },
+      {
+        name: 'PikTV',
+        Component: PikTV,
+        usageCriteria:
+          'Specifically used when representing Pik TV, any other representation will use TV icon',
+      },
     ]}
   />
 
