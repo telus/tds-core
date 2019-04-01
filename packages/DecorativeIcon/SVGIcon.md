@@ -69,6 +69,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: HomeSecurity,
         usageCriteria: 'For home security',
       },
+      {
+        name: 'PhoneHome',
+        Component: PhoneHome,
+        usageCriteria: 'For home phone',
+      },
     ]}
   />
 
