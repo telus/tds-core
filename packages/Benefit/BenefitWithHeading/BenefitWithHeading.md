@@ -4,6 +4,7 @@ A list of items containing an icon and text typically used to promote ideas.
 
 - Benefit should contain 4 or fewer items in a list
 - Benefit with a heading must be used within Cards
+- Must use `Check` icon when using benefits list for Business
 - Code: the `icon` prop must either be set in `<BenefitWithHeading />` or `<BenefitWithHeading.Item />`. If `icon` is set in both components, the one set in `<BenefitWithHeading.Item />` has priority.
 - Code: every `<BenefitWithHeading.Item />` must have a heading supplied to the `heading` prop
 
