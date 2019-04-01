@@ -64,6 +64,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Deals,
         usageCriteria: 'Used when there are discounts/deals/promotion',
       },
+      {
+        name: 'HomeSecurity',
+        Component: HomeSecurity,
+        usageCriteria: 'For home security',
+      },
     ]}
   />
 
