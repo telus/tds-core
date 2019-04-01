@@ -35,7 +35,7 @@ Check out the table below a full list of SVG Icons and their usage guidelines.
 
 ```jsx noeditor
 const IconTable = require('../../docs/components/custom/IconTable/IconTable').default
-;<Box between={3}>
+;<Box between={4}>
   <IconTable
     heading="Products and Services"
     icons={[
