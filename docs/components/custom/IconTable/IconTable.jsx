@@ -9,9 +9,8 @@ const IconTable = ({ icons, heading }) => (
     <Heading level="h3">{heading}</Heading>
     <table className="docs_svgicon-table">
       <colgroup>
-        <col width="33%" />
-        <col width="33%" />
-        <col width="33%" />
+        <col width="20%" />
+        <col width="15%" />
       </colgroup>
       <thead>
         <tr>
