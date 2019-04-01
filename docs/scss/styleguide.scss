@@ -71,4 +71,8 @@
   tr:nth-child(even) {
     background-color: $color-athens-grey;
   }
+  td {
+    vertical-align: middle;
+    padding: 0.25rem 0;
+  }
 }
