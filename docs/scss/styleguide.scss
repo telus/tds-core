@@ -73,6 +73,9 @@
   }
   td {
     vertical-align: middle;
-    padding: 0.25rem 0;
+    padding: 0.5rem 0;
+  }
+  td:first-child {
+    padding-left: 0.5rem;
   }
 }
