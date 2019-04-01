@@ -1,0 +1,3151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video renders 1`] = `
+.c4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 8;
+  cursor: pointer;
+  pointer-events: auto;
+  fill: rgba(255,255,255,0);
+  -webkit-transition: background-color 0.2s fill 0.2s;
+  transition: background-color 0.2s fill 0.2s;
+}
+
+.c4 #bigButton {
+  background-color: rgba(42,44,46,0.9);
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c4:hover {
+  fill: rgba(255,255,255,1);
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c4:hover #bigButton {
+  background-color: rgba(42,44,46,1);
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c5 {
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  vertical-align: middle;
+  outline: none;
+}
+
+.c6 svg>path {
+  fill: inherit;
+}
+
+.c7 {
+  display: none;
+}
+
+.c8 {
+  display: block;
+}
+
+.c3 {
+  background-image: url(TestPoster.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17 {
+  width: 100%;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+input[type=range].c17 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range].c17:focus {
+  outline: none;
+}
+
+input[type=range].c17::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+input[type=range].c17::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -3px;
+  border: none;
+}
+
+input[type=range].c17::-ms-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  border: none;
+}
+
+input[type=range].c17::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c17::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c17::-ms-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c17::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  border-radius: 1.3px;
+  background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
+}
+
+input[type=range].c17::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  border-radius: 1.3px;
+  background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
+}
+
+input[type=range].c17::-ms-track {
+  width: 100%;
+  height: 2px;
+  margin: 6px 0;
+  cursor: pointer;
+  border-radius: 1.3px;
+  border: none;
+  background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
+}
+
+input[type=range].c17::-ms-fill-lower {
+  background: transparent;
+}
+
+input[type=range].c17::-ms-tooltip {
+  display: none;
+}
+
+input[type=range].c17::-ms-tooltip {
+  display: none;
+}
+
+.c16 {
+  color: #6c0;
+  margin: 0 0.5rem;
+}
+
+.c18 {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.c20 {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  max-width: 120px;
+  margin: 0 1rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c21 {
+  width: 100%;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+input[type=range].c21 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range].c21:focus {
+  outline: none;
+}
+
+input[type=range].c21::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+input[type=range].c21::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -3px;
+  border: none;
+}
+
+input[type=range].c21::-ms-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  border: none;
+}
+
+input[type=range].c21::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c21::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c21::-ms-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c21::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  border-radius: 1.3px;
+  background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
+}
+
+input[type=range].c21::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  border-radius: 1.3px;
+  background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
+}
+
+input[type=range].c21::-ms-track {
+  width: 100%;
+  height: 2px;
+  margin: 6px 0;
+  cursor: pointer;
+  border-radius: 1.3px;
+  border: none;
+  background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
+}
+
+input[type=range].c21::-ms-fill-lower {
+  background: transparent;
+}
+
+input[type=range].c21::-ms-tooltip {
+  display: none;
+}
+
+input[type=range].c21::-ms-tooltip {
+  display: none;
+}
+
+.c12 {
+  width: 100%;
+  position: relative;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+
+.c13 {
+  position: absolute;
+  width: 100%;
+  height: 56px;
+  padding: 1rem 3rem;
+  bottom: 0;
+  background-color: rgba(42,44,46,0.85);
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 9;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 {
+  width: 100%;
+  outline: none;
+  position: relative;
+}
+
+.c10 {
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+.c11 {
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.c9 {
+  position: absolute;
+  z-index: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    display: none;
+  }
+}
+
+<Video
+  beginMuted={false}
+  copy="en"
+  defaultDesktopQuality={1}
+  defaultMobileQuality={2}
+  defaultVolume={100}
+  posterSrc="TestPoster.jpg"
+  sources={
+    Array [
+      Object {
+        "mediaType": "video/mp4",
+        "qualityName": "1080p",
+        "qualityRank": 1,
+        "source": "video.mp4",
+      },
+      Object {
+        "mediaType": "video/mp4",
+        "qualityName": "480p",
+        "qualityRank": 2,
+        "source": "videolow.mp4",
+      },
+    ]
+  }
+  tracks={
+    Array [
+      Object {
+        "kind": "captions",
+        "label": "English",
+        "language": "en",
+        "source": "testEng.vtt",
+      },
+    ]
+  }
+>
+  <Video__VideoPlayerContainer
+    aria-label="Video selected. Press Q to listen to controls."
+    beginMuted={false}
+    copy="en"
+    data-testid="videoPlayer"
+    defaultDesktopQuality={1}
+    defaultMobileQuality={2}
+    defaultVolume={100}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseMove={[Function]}
+    posterSrc="TestPoster.jpg"
+    sources={
+      Array [
+        Object {
+          "mediaType": "video/mp4",
+          "qualityName": "1080p",
+          "qualityRank": 1,
+          "source": "video.mp4",
+        },
+        Object {
+          "mediaType": "video/mp4",
+          "qualityName": "480p",
+          "qualityRank": 2,
+          "source": "videolow.mp4",
+        },
+      ]
+    }
+    tabIndex="0"
+    tracks={
+      Array [
+        Object {
+          "kind": "captions",
+          "label": "English",
+          "language": "en",
+          "source": "testEng.vtt",
+        },
+      ]
+    }
+  >
+    <StyledComponent
+      aria-label="Video selected. Press Q to listen to controls."
+      beginMuted={false}
+      copy="en"
+      data-testid="videoPlayer"
+      defaultDesktopQuality={1}
+      defaultMobileQuality={2}
+      defaultVolume={100}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Video__VideoPlayerContainer-sc-10rnfmo-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "width: 100%; outline: none; position: relative;",
+            ],
+          },
+          "displayName": "Video__VideoPlayerContainer",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Video__VideoPlayerContainer-sc-10rnfmo-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 8;
+  cursor: pointer;
+  pointer-events: auto;
+  fill: rgba(255,255,255,0);
+  -webkit-transition: background-color 0.2s fill 0.2s;
+  transition: background-color 0.2s fill 0.2s;
+}
+
+.c4 #bigButton {
+  background-color: rgba(42,44,46,0.9);
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c4:hover {
+  fill: rgba(255,255,255,1);
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c4:hover #bigButton {
+  background-color: rgba(42,44,46,1);
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c5 {
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  vertical-align: middle;
+  outline: none;
+}
+
+.c6 svg>path {
+  fill: inherit;
+}
+
+.c7 {
+  display: none;
+}
+
+.c8 {
+  display: block;
+}
+
+.c3 {
+  background-image: url(TestPoster.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17 {
+  width: 100%;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+input[type=range].c17 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range].c17:focus {
+  outline: none;
+}
+
+input[type=range].c17::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+input[type=range].c17::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -3px;
+  border: none;
+}
+
+input[type=range].c17::-ms-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  border: none;
+}
+
+input[type=range].c17::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c17::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c17::-ms-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c17::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  border-radius: 1.3px;
+  background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
+}
+
+input[type=range].c17::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  border-radius: 1.3px;
+  background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
+}
+
+input[type=range].c17::-ms-track {
+  width: 100%;
+  height: 2px;
+  margin: 6px 0;
+  cursor: pointer;
+  border-radius: 1.3px;
+  border: none;
+  background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
+}
+
+input[type=range].c17::-ms-fill-lower {
+  background: transparent;
+}
+
+input[type=range].c17::-ms-tooltip {
+  display: none;
+}
+
+input[type=range].c17::-ms-tooltip {
+  display: none;
+}
+
+.c16 {
+  color: #6c0;
+  margin: 0 0.5rem;
+}
+
+.c18 {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.c20 {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  max-width: 120px;
+  margin: 0 1rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c21 {
+  width: 100%;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+input[type=range].c21 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range].c21:focus {
+  outline: none;
+}
+
+input[type=range].c21::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+input[type=range].c21::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -3px;
+  border: none;
+}
+
+input[type=range].c21::-ms-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  border: none;
+}
+
+input[type=range].c21::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c21::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c21::-ms-thumb:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+input[type=range].c21::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  border-radius: 1.3px;
+  background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
+}
+
+input[type=range].c21::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  border-radius: 1.3px;
+  background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
+}
+
+input[type=range].c21::-ms-track {
+  width: 100%;
+  height: 2px;
+  margin: 6px 0;
+  cursor: pointer;
+  border-radius: 1.3px;
+  border: none;
+  background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
+}
+
+input[type=range].c21::-ms-fill-lower {
+  background: transparent;
+}
+
+input[type=range].c21::-ms-tooltip {
+  display: none;
+}
+
+input[type=range].c21::-ms-tooltip {
+  display: none;
+}
+
+.c12 {
+  width: 100%;
+  position: relative;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+
+.c13 {
+  position: absolute;
+  width: 100%;
+  height: 56px;
+  padding: 1rem 3rem;
+  bottom: 0;
+  background-color: rgba(42,44,46,0.85);
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 9;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 {
+  width: 100%;
+  outline: none;
+  position: relative;
+}
+
+.c10 {
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+.c11 {
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.c9 {
+  position: absolute;
+  z-index: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    display: none;
+  }
+}
+
+<div
+            aria-label="Video selected. Press Q to listen to controls."
+            class="c0"
+            data-testid="videoPlayer"
+            tabindex="0"
+          >
+            <div
+              class="c1"
+            >
+              <div
+                class="c2"
+              >
+                <div
+                  class="c3"
+                  poster="TestPoster.jpg"
+                >
+                  <div
+                    class="c4"
+                  >
+                    <button
+                      aria-label="Play video. Video length is 0 minutes and 0 seconds long"
+                      class="c5"
+                      id="bigButton"
+                    >
+                      <span
+                        class="c6"
+                      >
+                        <svg
+                          enable-background="new 0 0 21 24"
+                          height="24px"
+                          id="Layer_1"
+                          version="1.1"
+                          viewBox="0 0 21 24"
+                          width="21px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            id="Page-1"
+                          >
+                            <g
+                              id="Video---Play-inactive"
+                              transform="translate(-445.000000, -222.000000)"
+                            >
+                              <path
+                                d="M446.9,223c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1-0.2,0.2-0.2,0.3v21.2c0,0.1,0.1,0.3,0.2,0.3 c0.1,0.1,0.3,0.1,0.4,0l17.7-10.6c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3l-17.7-10.6C447,223,446.9,223,446.9,223 M446.9,246c-0.2,0-0.5-0.1-0.7-0.2c-0.4-0.2-0.7-0.7-0.7-1.2v-21.2c0-0.5,0.3-1,0.7-1.2c0.4-0.2,1-0.2,1.4,0l17.7,10.6 c0.4,0.2,0.7,0.7,0.7,1.2c0,0.5-0.3,0.9-0.7,1.2l-17.7,10.6C447.4,245.9,447.1,246,446.9,246"
+                                fill="#FFFFFF"
+                                id="play"
+                              />
+                            </g>
+                          </g>
+                          <path
+                            d="M1.7,0.7c-0.1,0-0.1,0-0.2,0.1C1.4,0.8,1.3,1,1.3,1.1v21.7c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0.1,0.4,0 L20,12.3c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3L1.9,0.8C1.8,0.7,1.8,0.7,1.7,0.7"
+                            fill="none"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        class="c7"
+                      >
+                        <div
+                          class="TDS_Box-modules__verticalPadding-1___3lZ5x"
+                        >
+                          <p
+                            class="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM"
+                          >
+                            Watch the video
+                          </p>
+                        </div>
+                      </span>
+                      <span
+                        class="c8"
+                      >
+                        <p
+                          class="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM"
+                        >
+                          Watch the video
+                        </p>
+                      </span>
+                      0
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c9"
+              />
+            </div>
+            <div
+              class="c10"
+            >
+              <video
+                class="c11"
+              >
+                <source
+                  src="video.mp4"
+                  type="video/mp4"
+                />
+                <track
+                  kind="captions"
+                  label="English"
+                  src="testEng.vtt"
+                  srclang="en"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div
+              class="c12"
+            >
+              <div
+                class="c13"
+              >
+                <div
+                  class="c14"
+                >
+                  <div
+                    class="c15"
+                  >
+                    <p
+                      class="c16"
+                    >
+                      -1:59:59
+                    </p>
+                    <input
+                      class="c17"
+                      id="videoProgressBar"
+                      max="0"
+                      step="any"
+                      tabindex="-1"
+                      type="range"
+                      value="-1"
+                    />
+                    <p
+                      class="c18"
+                    >
+                      0:00:01
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="c19"
+                >
+                  <button
+                    aria-label="Mute"
+                    class="c20"
+                  >
+                    <svg
+                      height="17px"
+                      version="1.1"
+                      viewBox="0 0 18 17"
+                      width="18px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        fill="none"
+                        fill-rule="evenodd"
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                      >
+                        <g
+                          fill="#FFFFFF"
+                          id="Video---player-UI"
+                          transform="translate(-680.000000, -460.000000)"
+                        >
+                          <g
+                            id="Group-7"
+                            transform="translate(680.840000, 459.700000)"
+                          >
+                            <g
+                              id="Group-2"
+                              transform="translate(0.600000, 0.600000)"
+                            >
+                              <path
+                                d="M9.249,0.0416575641 C9.032,-0.0483424359 8.792,0.00965756413 8.606,0.194657564 L4.154,4.64665756 C4.138,4.66065756 4.091,4.67965756 4.078,4.68265756 L0.72,4.68265756 C0.323,4.68265756 1.33226763e-14,5.00465756 1.33226763e-14,5.40165756 L1.33226763e-14,9.71965756 C1.33226763e-14,10.1156576 0.323,10.4386576 0.72,10.4386576 L4.069,10.4376576 C4.091,10.4406576 4.138,10.4606576 4.148,10.4686576 L8.606,14.9266576 C8.734,15.0546576 8.888,15.1206576 9.042,15.1206576 C9.111,15.1206576 9.182,15.1066576 9.249,15.0796576 C9.466,14.9896576 9.595,14.7786576 9.595,14.5166576 L9.595,0.603657564 C9.595,0.341657564 9.466,0.131657564 9.249,0.0416575641"
+                                id="Fill-1"
+                              />
+                              <path
+                                d="M12.3945,4.91175756 C13.2095,5.72675756 13.6595,6.81175756 13.6595,7.96575756 C13.6595,9.11875756 13.2095,10.2027576 12.3945,11.0177576 C12.3005,11.1117576 12.1775,11.1587576 12.0545,11.1587576 C11.9325,11.1587576 11.8095,11.1117576 11.7155,11.0177576 C11.5285,10.8307576 11.5285,10.5267576 11.7155,10.3397576 C12.3505,9.70575756 12.6995,8.86175756 12.6995,7.96575756 C12.6995,7.06775756 12.3505,6.22475756 11.7155,5.59075756 C11.5285,5.40275756 11.5285,5.09875756 11.7155,4.91175756 C11.9035,4.72475756 12.2075,4.72475756 12.3945,4.91175756"
+                                id="Fill-3"
+                              />
+                              <path
+                                d="M14.4375,2.86925756 C15.7955,4.22825756 16.5445,6.03625756 16.5445,7.95725756 C16.5445,9.87925756 15.7955,11.6872576 14.4375,13.0452576 C14.3435,13.1392576 14.2205,13.1862576 14.0975,13.1862576 C13.9755,13.1862576 13.8525,13.1392576 13.7585,13.0452576 C13.5715,12.8592576 13.5715,12.5552576 13.7585,12.3682576 C14.9365,11.1902576 15.5855,9.62325756 15.5855,7.95725756 C15.5855,6.29125756 14.9365,4.72525756 13.7585,3.54725756 C13.5715,3.36025756 13.5715,3.05625756 13.7585,2.86925756 C13.9465,2.68225756 14.2505,2.68225756 14.4375,2.86925756"
+                                id="Fill-5"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                  <input
+                    class="c21"
+                    id="volumeSlider"
+                    max="1"
+                    min="0"
+                    step="any"
+                    tabindex="-1"
+                    type="range"
+                    value="1"
+                  />
+                </div>
+                <div
+                  class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+                >
+                  <button
+                    aria-label="Select captions"
+                    class="c20"
+                  >
+                    <svg
+                      height="12px"
+                      version="1.1"
+                      viewBox="0 0 21 12"
+                      width="21px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        fill="none"
+                        fill-rule="evenodd"
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                      >
+                        <g
+                          fill="#FFFFFF"
+                          fill-rule="nonzero"
+                          id="Video---player-UI"
+                          transform="translate(-779.000000, -481.000000)"
+                        >
+                          <path
+                            d="M786.63,485.364 C786.592666,485.111999 786.508667,484.881001 786.378,484.671 C786.247333,484.460999 786.084001,484.276667 785.888,484.118 C785.691999,483.959333 785.470335,483.835667 785.223,483.747 C784.975665,483.658333 784.716668,483.614 784.446,483.614 C783.951331,483.614 783.531335,483.709666 783.186,483.901 C782.840665,484.092334 782.560668,484.348998 782.346,484.671 C782.131332,484.993002 781.975,485.359331 781.877,485.77 C781.779,486.180669 781.73,486.605331 781.73,487.044 C781.73,487.464002 781.779,487.872331 781.877,488.269 C781.975,488.665669 782.131332,489.022665 782.346,489.34 C782.560668,489.657335 782.840665,489.911666 783.186,490.103 C783.531335,490.294334 783.951331,490.39 784.446,490.39 C785.118003,490.39 785.642998,490.184669 786.021,489.774 C786.399002,489.363331 786.63,488.822003 786.714,488.15 L788.842,488.15 C788.786,488.775336 788.641334,489.339997 788.408,489.844 C788.174665,490.348003 787.866669,490.777332 787.484,491.132 C787.101331,491.486668 786.653336,491.757332 786.14,491.944 C785.626664,492.130668 785.062003,492.224 784.446,492.224 C783.680663,492.224 782.992336,492.091001 782.381,491.825 C781.769664,491.558999 781.254002,491.192669 780.834,490.726 C780.413998,490.259331 780.092001,489.711003 779.868,489.081 C779.643999,488.450997 779.532,487.772004 779.532,487.044 C779.532,486.29733 779.643999,485.604337 779.868,484.965 C780.092001,484.325663 780.413998,483.768002 780.834,483.292 C781.254002,482.815998 781.769664,482.442668 782.381,482.172 C782.992336,481.901332 783.680663,481.766 784.446,481.766 C784.996669,481.766 785.516998,481.845333 786.007,482.004 C786.497002,482.162667 786.935665,482.393665 787.323,482.697 C787.710335,483.000335 788.029999,483.375998 788.282,483.824 C788.534001,484.272002 788.692666,484.78533 788.758,485.364 L786.63,485.364 Z M797.004,485.364 C796.966666,485.111999 796.882667,484.881001 796.752,484.671 C796.621333,484.460999 796.458001,484.276667 796.262,484.118 C796.065999,483.959333 795.844335,483.835667 795.597,483.747 C795.349665,483.658333 795.090668,483.614 794.82,483.614 C794.325331,483.614 793.905335,483.709666 793.56,483.901 C793.214665,484.092334 792.934668,484.348998 792.72,484.671 C792.505332,484.993002 792.349,485.359331 792.251,485.77 C792.153,486.180669 792.104,486.605331 792.104,487.044 C792.104,487.464002 792.153,487.872331 792.251,488.269 C792.349,488.665669 792.505332,489.022665 792.72,489.34 C792.934668,489.657335 793.214665,489.911666 793.56,490.103 C793.905335,490.294334 794.325331,490.39 794.82,490.39 C795.492003,490.39 796.016998,490.184669 796.395,489.774 C796.773002,489.363331 797.004,488.822003 797.088,488.15 L799.216,488.15 C799.16,488.775336 799.015334,489.339997 798.782,489.844 C798.548665,490.348003 798.240669,490.777332 797.858,491.132 C797.475331,491.486668 797.027336,491.757332 796.514,491.944 C796.000664,492.130668 795.436003,492.224 794.82,492.224 C794.054663,492.224 793.366336,492.091001 792.755,491.825 C792.143664,491.558999 791.628002,491.192669 791.208,490.726 C790.787998,490.259331 790.466001,489.711003 790.242,489.081 C790.017999,488.450997 789.906,487.772004 789.906,487.044 C789.906,486.29733 790.017999,485.604337 790.242,484.965 C790.466001,484.325663 790.787998,483.768002 791.208,483.292 C791.628002,482.815998 792.143664,482.442668 792.755,482.172 C793.366336,481.901332 794.054663,481.766 794.82,481.766 C795.370669,481.766 795.890998,481.845333 796.381,482.004 C796.871002,482.162667 797.309665,482.393665 797.697,482.697 C798.084335,483.000335 798.403999,483.375998 798.656,483.824 C798.908001,484.272002 799.066666,484.78533 799.132,485.364 L797.004,485.364 Z"
+                            id="CC"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                  <button
+                    aria-label="Change video quality"
+                    class="c20"
+                  >
+                    <svg
+                      height="14px"
+                      version="1.1"
+                      viewBox="0 0 14 14"
+                      width="14px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        fill="none"
+                        fill-rule="evenodd"
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                      >
+                        <g
+                          fill="#FFFFFF"
+                          fill-rule="nonzero"
+                          id="Video---player-UI"
+                          transform="translate(-818.000000, -480.000000)"
+                        >
+                          <g
+                            id="volume"
+                            transform="translate(679.000150, 479.000000)"
+                          >
+                            <path
+                              d="M147.378134,15 L144.622637,15 C144.299765,15 144.026611,14.769 143.987675,14.46275 L143.750463,12.85275 C143.426392,12.7104167 143.112505,12.5330833 142.814193,12.3236667 L141.254941,12.93325 C140.945846,13.0423333 140.609196,12.921 140.46004,12.655 L139.085885,10.33975 C138.929541,10.0603333 138.996631,9.72491667 139.241631,9.53591667 L140.564269,8.5285 C140.544502,8.33133333 140.534318,8.16041667 140.534318,8 C140.534318,7.83958333 140.544502,7.66866667 140.565467,7.4715 L139.244027,6.46583333 C138.992438,6.27216667 138.925947,5.92566667 139.088281,5.6585 L140.464233,3.33975 C140.613988,3.07258333 140.954232,2.95241667 141.253144,3.06616667 L142.816589,3.6775 C143.128679,3.4605 143.437175,3.28608333 143.751062,3.14783333 L143.988873,1.53141667 C144.02721,1.231 144.300364,1 144.623236,1 L147.378733,1 C147.701606,1 147.974759,1.231 148.013696,1.53725 L148.250908,3.14783333 C148.574979,3.28958333 148.888267,3.46691667 149.186579,3.67691667 L150.745831,3.06733333 C151.053129,2.95708333 151.390378,3.079 151.540732,3.34558333 L152.914887,5.66083333 C153.07183,5.94025 153.004141,6.27566667 152.758542,6.46466667 L151.435903,7.4715 C151.452676,7.62666667 151.467053,7.80808333 151.467053,8 C151.467053,8.19191667 151.453275,8.37333333 151.435903,8.5285 L152.757344,9.53475 C153.004141,9.7255 153.071231,10.0609167 152.918481,10.3339167 L151.537138,12.6608333 C151.387383,12.928 151.045941,13.047 150.748227,12.9344167 L149.184782,12.3230833 C148.872692,12.5400833 148.564196,12.7145 148.250309,12.85275 L148.012498,14.4685833 C147.97416,14.769 147.701007,15 147.378134,15 Z M145.99985,10.8 C147.54377,10.8 148.79985,9.54392 148.79985,8 C148.79985,6.45608 147.54377,5.2 145.99985,5.2 C144.45593,5.2 143.19985,6.45608 143.19985,8 C143.19985,9.54392 144.45593,10.8 145.99985,10.8 Z"
+                              id="Combined-Shape"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                  <button
+                    aria-label="Toggle fullscreen"
+                    class="c20"
+                  >
+                    <svg
+                      height="14px"
+                      version="1.1"
+                      viewBox="0 0 14 14"
+                      width="14px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        fill="none"
+                        fill-rule="evenodd"
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                      >
+                        <g
+                          fill="#FFFFFF"
+                          id="Video---player-UI"
+                          transform="translate(-851.000000, -480.000000)"
+                        >
+                          <g
+                            id="volume"
+                            transform="translate(679.000150, 479.000000)"
+                          >
+                            <path
+                              d="M180.31875,7.5086 L178.84975,6.0276 C178.75875,5.9356 178.75875,5.7866 178.84975,5.6966 L181.29875,3.2266 C181.38975,3.1346 181.38975,2.9866 181.29875,2.8946 L179.88175,1.4666 C179.73675,1.3206 179.83875,1.0696 180.04375,1.0666 L185.06875,0.9996 C185.19975,0.9986 185.30575,1.1056 185.30375,1.2376 L185.23875,6.3046 C185.23575,6.5116 184.98675,6.6126 184.84075,6.4666 L183.42475,5.0386 C183.33475,4.9466 183.18675,4.9466 183.09575,5.0386 L180.64675,7.5086 C180.55575,7.5996 180.40975,7.5996 180.31875,7.5086 Z M176.98575,7.7352 L178.45475,9.2162 C178.54575,9.3082 178.54575,9.4572 178.45475,9.5472 L176.00575,12.0172 C175.91475,12.1092 175.91475,12.2572 176.00575,12.3492 L177.42175,13.7772 C177.56675,13.9232 177.46575,14.1742 177.25975,14.1772 L172.23575,14.2442 C172.10475,14.2462 171.99875,14.1382 171.99975,14.0062 L172.06575,8.9402 C172.06875,8.7322 172.31675,8.6312 172.46275,8.7772 L173.87975,10.2062 C173.96975,10.2972 174.11675,10.2972 174.20775,10.2062 L176.65675,7.7352 C176.74775,7.6442 176.89475,7.6442 176.98575,7.7352 Z"
+                              id="expand"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <span
+              aria-label="Press the space bar or K to toggle play and pause. Use the left and right arrow keys or the comma and period keys to scrub through the video. Use the up and down arrow keys, the dash and equal keys, or the add and subtract number pad keys to increase and decrease volume. Press M to toggle mute. Press F to toggle fullscreen. Press escape to exit instructions and return to video."
+              tabindex="-1"
+            />
+          </div>,
+        }
+      }
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseMove={[Function]}
+      posterSrc="TestPoster.jpg"
+      sources={
+        Array [
+          Object {
+            "mediaType": "video/mp4",
+            "qualityName": "1080p",
+            "qualityRank": 1,
+            "source": "video.mp4",
+          },
+          Object {
+            "mediaType": "video/mp4",
+            "qualityName": "480p",
+            "qualityRank": 2,
+            "source": "videolow.mp4",
+          },
+        ]
+      }
+      tabIndex="0"
+      tracks={
+        Array [
+          Object {
+            "kind": "captions",
+            "label": "English",
+            "language": "en",
+            "source": "testEng.vtt",
+          },
+        ]
+      }
+    >
+      <div
+        aria-label="Video selected. Press Q to listen to controls."
+        className="c0"
+        data-testid="videoPlayer"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseMove={[Function]}
+        tabIndex="0"
+      >
+        <Video__VideoOverlayContainer
+          mouseInactive={false}
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Video__VideoOverlayContainer-sc-10rnfmo-3",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    [Function],
+                  ],
+                },
+                "displayName": "Video__VideoOverlayContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Video__VideoOverlayContainer-sc-10rnfmo-3",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            mouseInactive={false}
+            onClick={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+            >
+              <Video__VideoSplashContainer>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Video__VideoSplashContainer-sc-10rnfmo-4",
+                        "isStatic": true,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "position: absolute; width: 100%; height: 100%; z-index: 5;",
+                        ],
+                      },
+                      "displayName": "Video__VideoSplashContainer",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Video__VideoSplashContainer-sc-10rnfmo-4",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c2"
+                  >
+                    <VideoSplash
+                      label="Watch the video"
+                      onClick={[Function]}
+                      poster="TestPoster.jpg"
+                      videoLength={0}
+                    >
+                      <VideoSplash__SplashBackground
+                        onClick={[Function]}
+                        poster="TestPoster.jpg"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "VideoSplash__SplashBackground-axtint-0",
+                                "isStatic": false,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "VideoSplash__SplashBackground",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "VideoSplash__SplashBackground-axtint-0",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          poster="TestPoster.jpg"
+                        >
+                          <div
+                            className="c3"
+                            onClick={[Function]}
+                            poster="TestPoster.jpg"
+                          >
+                            <BigVideoButton
+                              icon={<Play />}
+                              label="Watch the video"
+                              videoLength={0}
+                            >
+                              <BigVideoButton__BigPlayButtonContainer>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "BigVideoButton__BigPlayButtonContainer-hhla36-0",
+                                        "isStatic": true,
+                                        "lastClassName": "c4",
+                                        "rules": Array [
+                                          "position: absolute; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 8; cursor: pointer; pointer-events: auto; #bigButton {
+  background-color: rgba(42,44,46,0.9); transition: background-color 0.2s;
+} fill: rgba(255,255,255,0); transition: background-color 0.2s fill 0.2s; :hover {
+  #bigButton {
+  background-color: rgba(42,44,46,1); transition: background-color 0.2s;
+} fill: rgba(255,255,255,1); transition: fill 0.2s;
+}",
+                                        ],
+                                      },
+                                      "displayName": "BigVideoButton__BigPlayButtonContainer",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "BigVideoButton__BigPlayButtonContainer-hhla36-0",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <div
+                                    className="c4"
+                                  >
+                                    <BigVideoButton__BigPlayButton
+                                      aria-label="Play video. Video length is 0 minutes and 0 seconds long"
+                                      id="bigButton"
+                                    >
+                                      <StyledComponent
+                                        aria-label="Play video. Video length is 0 minutes and 0 seconds long"
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "BigVideoButton__BigPlayButton-hhla36-1",
+                                              "isStatic": true,
+                                              "lastClassName": "c5",
+                                              "rules": Array [
+                                                "width: 144px; height: 144px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; vertical-align: middle; outline: none; @media (min-width: 768px) {
+  width: 200px; height: 200px;
+}",
+                                              ],
+                                            },
+                                            "displayName": "BigVideoButton__BigPlayButton",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "BigVideoButton__BigPlayButton-hhla36-1",
+                                            "target": "button",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        id="bigButton"
+                                      >
+                                        <button
+                                          aria-label="Play video. Video length is 0 minutes and 0 seconds long"
+                                          className="c5"
+                                          id="bigButton"
+                                        >
+                                          <BigVideoButton__IconContainer>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "BigVideoButton__IconContainer-hhla36-2",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c6",
+                                                    "rules": Array [
+                                                      "svg>path {
+  fill: inherit;
+}",
+                                                    ],
+                                                  },
+                                                  "displayName": "BigVideoButton__IconContainer",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "BigVideoButton__IconContainer-hhla36-2",
+                                                  "target": "span",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                            >
+                                              <span
+                                                className="c6"
+                                              >
+                                                <Play>
+                                                  <svg
+                                                    enableBackground="new 0 0 21 24"
+                                                    height="24px"
+                                                    id="Layer_1"
+                                                    version="1.1"
+                                                    viewBox="0 0 21 24"
+                                                    width="21px"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                  >
+                                                    <g
+                                                      id="Page-1"
+                                                    >
+                                                      <g
+                                                        id="Video---Play-inactive"
+                                                        transform="translate(-445.000000, -222.000000)"
+                                                      >
+                                                        <path
+                                                          d="M446.9,223c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1-0.2,0.2-0.2,0.3v21.2c0,0.1,0.1,0.3,0.2,0.3 c0.1,0.1,0.3,0.1,0.4,0l17.7-10.6c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3l-17.7-10.6C447,223,446.9,223,446.9,223 M446.9,246c-0.2,0-0.5-0.1-0.7-0.2c-0.4-0.2-0.7-0.7-0.7-1.2v-21.2c0-0.5,0.3-1,0.7-1.2c0.4-0.2,1-0.2,1.4,0l17.7,10.6 c0.4,0.2,0.7,0.7,0.7,1.2c0,0.5-0.3,0.9-0.7,1.2l-17.7,10.6C447.4,245.9,447.1,246,446.9,246"
+                                                          fill="#FFFFFF"
+                                                          id="play"
+                                                        />
+                                                      </g>
+                                                    </g>
+                                                    <path
+                                                      d="M1.7,0.7c-0.1,0-0.1,0-0.2,0.1C1.4,0.8,1.3,1,1.3,1.1v21.7c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0.1,0.4,0 L20,12.3c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3L1.9,0.8C1.8,0.7,1.8,0.7,1.7,0.7"
+                                                      fill="none"
+                                                    />
+                                                  </svg>
+                                                </Play>
+                                              </span>
+                                            </StyledComponent>
+                                          </BigVideoButton__IconContainer>
+                                          <BigVideoButton__BigWatchTextContainer>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "BigVideoButton__BigWatchTextContainer-hhla36-3",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c7",
+                                                    "rules": Array [
+                                                      "display: none; @media (min-width: 768px) {
+  display: block;
+}",
+                                                    ],
+                                                  },
+                                                  "displayName": "BigVideoButton__BigWatchTextContainer",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "BigVideoButton__BigWatchTextContainer-hhla36-3",
+                                                  "target": "span",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                            >
+                                              <span
+                                                className="c7"
+                                              >
+                                                <Box
+                                                  inline={false}
+                                                  tag="div"
+                                                  vertical={1}
+                                                >
+                                                  <div
+                                                    className="TDS_Box-modules__verticalPadding-1___3lZ5x"
+                                                  >
+                                                    <Paragraph
+                                                      align="center"
+                                                      bold={true}
+                                                      invert={true}
+                                                      size="medium"
+                                                    >
+                                                      <p
+                                                        className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM"
+                                                      >
+                                                        Watch the video
+                                                      </p>
+                                                    </Paragraph>
+                                                  </div>
+                                                </Box>
+                                              </span>
+                                            </StyledComponent>
+                                          </BigVideoButton__BigWatchTextContainer>
+                                          <BigVideoButton__LittleWatchTextContainer>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "BigVideoButton__LittleWatchTextContainer-hhla36-4",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c8",
+                                                    "rules": Array [
+                                                      "display: block; @media (min-width: 768px) {
+  display: none;
+}",
+                                                    ],
+                                                  },
+                                                  "displayName": "BigVideoButton__LittleWatchTextContainer",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "BigVideoButton__LittleWatchTextContainer-hhla36-4",
+                                                  "target": "span",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                            >
+                                              <span
+                                                className="c8"
+                                              >
+                                                <Paragraph
+                                                  align="center"
+                                                  bold={true}
+                                                  invert={true}
+                                                  size="small"
+                                                >
+                                                  <p
+                                                    className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM"
+                                                  >
+                                                    Watch the video
+                                                  </p>
+                                                </Paragraph>
+                                              </span>
+                                            </StyledComponent>
+                                          </BigVideoButton__LittleWatchTextContainer>
+                                          0
+                                        </button>
+                                      </StyledComponent>
+                                    </BigVideoButton__BigPlayButton>
+                                  </div>
+                                </StyledComponent>
+                              </BigVideoButton__BigPlayButtonContainer>
+                            </BigVideoButton>
+                          </div>
+                        </StyledComponent>
+                      </VideoSplash__SplashBackground>
+                    </VideoSplash>
+                  </div>
+                </StyledComponent>
+              </Video__VideoSplashContainer>
+              <Video__VideoOverlayElementContainer>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Video__VideoOverlayElementContainer-sc-10rnfmo-5",
+                        "isStatic": true,
+                        "lastClassName": "c9",
+                        "rules": Array [
+                          "position: absolute; z-index: 4; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;",
+                        ],
+                      },
+                      "displayName": "Video__VideoOverlayElementContainer",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Video__VideoOverlayElementContainer-sc-10rnfmo-5",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c9"
+                  />
+                </StyledComponent>
+              </Video__VideoOverlayElementContainer>
+            </div>
+          </StyledComponent>
+        </Video__VideoOverlayContainer>
+        <Video__VideoElementContainer
+          mouseInactive={false}
+          videoIsFullscreen={false}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Video__VideoElementContainer-sc-10rnfmo-1",
+                  "isStatic": true,
+                  "lastClassName": "c10",
+                  "rules": Array [
+                    "outline: none; width: 100%; height: 100%;",
+                  ],
+                },
+                "displayName": "Video__VideoElementContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Video__VideoElementContainer-sc-10rnfmo-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            mouseInactive={false}
+            videoIsFullscreen={false}
+          >
+            <div
+              className="c10"
+            >
+              <Video__VideoPlayer
+                controls={false}
+                playsinline={true}
+                videoIsFullscreen={false}
+              >
+                <StyledComponent
+                  controls={false}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Video__VideoPlayer-sc-10rnfmo-2",
+                        "isStatic": true,
+                        "lastClassName": "c11",
+                        "rules": Array [
+                          "width: 100%; height: 100%;",
+                        ],
+                      },
+                      "displayName": "Video__VideoPlayer",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Video__VideoPlayer-sc-10rnfmo-2",
+                      "target": "video",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={
+                    Object {
+                      "current": <video
+                        class="c11"
+                      >
+                        <source
+                          src="video.mp4"
+                          type="video/mp4"
+                        />
+                        <track
+                          kind="captions"
+                          label="English"
+                          src="testEng.vtt"
+                          srclang="en"
+                        />
+                        Your browser does not support the video tag.
+                      </video>,
+                    }
+                  }
+                  playsinline={true}
+                  videoIsFullscreen={false}
+                >
+                  <video
+                    className="c11"
+                    controls={false}
+                  >
+                    <source
+                      key="video.mp4"
+                      src="video.mp4"
+                      type="video/mp4"
+                    />
+                    <track
+                      key="testEng.vtt"
+                      kind="captions"
+                      label="English"
+                      src="testEng.vtt"
+                      srcLang="en"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </StyledComponent>
+              </Video__VideoPlayer>
+            </div>
+          </StyledComponent>
+        </Video__VideoElementContainer>
+        <ControlBar
+          captionsMenuOpen={false}
+          clearInactivityTimer={[Function]}
+          copy="en"
+          isHidden={true}
+          isMobile={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          qualityMenuOpen={false}
+          resetInactivityTimer={[Function]}
+          selectedTextTrack={-1}
+          setCaptionsMenuOpen={[Function]}
+          setQualityMenuOpen={[Function]}
+          setSeek={[Function]}
+          setTextTracks={[Function]}
+          setVideoQuality={[Function]}
+          setVolume={[Function]}
+          sources={
+            Array [
+              Object {
+                "mediaType": "video/mp4",
+                "qualityName": "1080p",
+                "qualityRank": 1,
+                "source": "video.mp4",
+              },
+              Object {
+                "mediaType": "video/mp4",
+                "qualityName": "480p",
+                "qualityRank": 2,
+                "source": "videolow.mp4",
+              },
+            ]
+          }
+          toggleFullscreen={[Function]}
+          toggleMute={[Function]}
+          togglePlayPause={[Function]}
+          tracks={
+            Array [
+              Object {
+                "kind": "captions",
+                "label": "English",
+                "language": "en",
+                "source": "testEng.vtt",
+              },
+            ]
+          }
+          tracksAvailable={true}
+          videoBufferEnd={0}
+          videoCurrentTime={-1}
+          videoCurrentVolume={1}
+          videoDefaultVolume={1}
+          videoIsFullscreen={false}
+          videoIsMuted={false}
+          videoLength={0}
+          videoPlayer={
+            Object {
+              "current": <video
+                class="c11"
+              >
+                <source
+                  src="video.mp4"
+                  type="video/mp4"
+                />
+                <track
+                  kind="captions"
+                  label="English"
+                  src="testEng.vtt"
+                  srclang="en"
+                />
+                Your browser does not support the video tag.
+              </video>,
+            }
+          }
+          videoPlayerContainer={
+            Object {
+              "current": <div
+                aria-label="Video selected. Press Q to listen to controls."
+                class="c0"
+                data-testid="videoPlayer"
+                tabindex="0"
+              >
+                <div
+                  class="c1"
+                >
+                  <div
+                    class="c2"
+                  >
+                    <div
+                      class="c3"
+                      poster="TestPoster.jpg"
+                    >
+                      <div
+                        class="c4"
+                      >
+                        <button
+                          aria-label="Play video. Video length is 0 minutes and 0 seconds long"
+                          class="c5"
+                          id="bigButton"
+                        >
+                          <span
+                            class="c6"
+                          >
+                            <svg
+                              enable-background="new 0 0 21 24"
+                              height="24px"
+                              id="Layer_1"
+                              version="1.1"
+                              viewBox="0 0 21 24"
+                              width="21px"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                id="Page-1"
+                              >
+                                <g
+                                  id="Video---Play-inactive"
+                                  transform="translate(-445.000000, -222.000000)"
+                                >
+                                  <path
+                                    d="M446.9,223c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1-0.2,0.2-0.2,0.3v21.2c0,0.1,0.1,0.3,0.2,0.3 c0.1,0.1,0.3,0.1,0.4,0l17.7-10.6c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3l-17.7-10.6C447,223,446.9,223,446.9,223 M446.9,246c-0.2,0-0.5-0.1-0.7-0.2c-0.4-0.2-0.7-0.7-0.7-1.2v-21.2c0-0.5,0.3-1,0.7-1.2c0.4-0.2,1-0.2,1.4,0l17.7,10.6 c0.4,0.2,0.7,0.7,0.7,1.2c0,0.5-0.3,0.9-0.7,1.2l-17.7,10.6C447.4,245.9,447.1,246,446.9,246"
+                                    fill="#FFFFFF"
+                                    id="play"
+                                  />
+                                </g>
+                              </g>
+                              <path
+                                d="M1.7,0.7c-0.1,0-0.1,0-0.2,0.1C1.4,0.8,1.3,1,1.3,1.1v21.7c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0.1,0.4,0 L20,12.3c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3L1.9,0.8C1.8,0.7,1.8,0.7,1.7,0.7"
+                                fill="none"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            class="c7"
+                          >
+                            <div
+                              class="TDS_Box-modules__verticalPadding-1___3lZ5x"
+                            >
+                              <p
+                                class="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM"
+                              >
+                                Watch the video
+                              </p>
+                            </div>
+                          </span>
+                          <span
+                            class="c8"
+                          >
+                            <p
+                              class="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM"
+                            >
+                              Watch the video
+                            </p>
+                          </span>
+                          0
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="c9"
+                  />
+                </div>
+                <div
+                  class="c10"
+                >
+                  <video
+                    class="c11"
+                  >
+                    <source
+                      src="video.mp4"
+                      type="video/mp4"
+                    />
+                    <track
+                      kind="captions"
+                      label="English"
+                      src="testEng.vtt"
+                      srclang="en"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div
+                  class="c12"
+                >
+                  <div
+                    class="c13"
+                  >
+                    <div
+                      class="c14"
+                    >
+                      <div
+                        class="c15"
+                      >
+                        <p
+                          class="c16"
+                        >
+                          -1:59:59
+                        </p>
+                        <input
+                          class="c17"
+                          id="videoProgressBar"
+                          max="0"
+                          step="any"
+                          tabindex="-1"
+                          type="range"
+                          value="-1"
+                        />
+                        <p
+                          class="c18"
+                        >
+                          0:00:01
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="c19"
+                    >
+                      <button
+                        aria-label="Mute"
+                        class="c20"
+                      >
+                        <svg
+                          height="17px"
+                          version="1.1"
+                          viewBox="0 0 18 17"
+                          width="18px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            fill="none"
+                            fill-rule="evenodd"
+                            id="Page-1"
+                            stroke="none"
+                            stroke-width="1"
+                          >
+                            <g
+                              fill="#FFFFFF"
+                              id="Video---player-UI"
+                              transform="translate(-680.000000, -460.000000)"
+                            >
+                              <g
+                                id="Group-7"
+                                transform="translate(680.840000, 459.700000)"
+                              >
+                                <g
+                                  id="Group-2"
+                                  transform="translate(0.600000, 0.600000)"
+                                >
+                                  <path
+                                    d="M9.249,0.0416575641 C9.032,-0.0483424359 8.792,0.00965756413 8.606,0.194657564 L4.154,4.64665756 C4.138,4.66065756 4.091,4.67965756 4.078,4.68265756 L0.72,4.68265756 C0.323,4.68265756 1.33226763e-14,5.00465756 1.33226763e-14,5.40165756 L1.33226763e-14,9.71965756 C1.33226763e-14,10.1156576 0.323,10.4386576 0.72,10.4386576 L4.069,10.4376576 C4.091,10.4406576 4.138,10.4606576 4.148,10.4686576 L8.606,14.9266576 C8.734,15.0546576 8.888,15.1206576 9.042,15.1206576 C9.111,15.1206576 9.182,15.1066576 9.249,15.0796576 C9.466,14.9896576 9.595,14.7786576 9.595,14.5166576 L9.595,0.603657564 C9.595,0.341657564 9.466,0.131657564 9.249,0.0416575641"
+                                    id="Fill-1"
+                                  />
+                                  <path
+                                    d="M12.3945,4.91175756 C13.2095,5.72675756 13.6595,6.81175756 13.6595,7.96575756 C13.6595,9.11875756 13.2095,10.2027576 12.3945,11.0177576 C12.3005,11.1117576 12.1775,11.1587576 12.0545,11.1587576 C11.9325,11.1587576 11.8095,11.1117576 11.7155,11.0177576 C11.5285,10.8307576 11.5285,10.5267576 11.7155,10.3397576 C12.3505,9.70575756 12.6995,8.86175756 12.6995,7.96575756 C12.6995,7.06775756 12.3505,6.22475756 11.7155,5.59075756 C11.5285,5.40275756 11.5285,5.09875756 11.7155,4.91175756 C11.9035,4.72475756 12.2075,4.72475756 12.3945,4.91175756"
+                                    id="Fill-3"
+                                  />
+                                  <path
+                                    d="M14.4375,2.86925756 C15.7955,4.22825756 16.5445,6.03625756 16.5445,7.95725756 C16.5445,9.87925756 15.7955,11.6872576 14.4375,13.0452576 C14.3435,13.1392576 14.2205,13.1862576 14.0975,13.1862576 C13.9755,13.1862576 13.8525,13.1392576 13.7585,13.0452576 C13.5715,12.8592576 13.5715,12.5552576 13.7585,12.3682576 C14.9365,11.1902576 15.5855,9.62325756 15.5855,7.95725756 C15.5855,6.29125756 14.9365,4.72525756 13.7585,3.54725756 C13.5715,3.36025756 13.5715,3.05625756 13.7585,2.86925756 C13.9465,2.68225756 14.2505,2.68225756 14.4375,2.86925756"
+                                    id="Fill-5"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                      <input
+                        class="c21"
+                        id="volumeSlider"
+                        max="1"
+                        min="0"
+                        step="any"
+                        tabindex="-1"
+                        type="range"
+                        value="1"
+                      />
+                    </div>
+                    <div
+                      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+                    >
+                      <button
+                        aria-label="Select captions"
+                        class="c20"
+                      >
+                        <svg
+                          height="12px"
+                          version="1.1"
+                          viewBox="0 0 21 12"
+                          width="21px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            fill="none"
+                            fill-rule="evenodd"
+                            id="Page-1"
+                            stroke="none"
+                            stroke-width="1"
+                          >
+                            <g
+                              fill="#FFFFFF"
+                              fill-rule="nonzero"
+                              id="Video---player-UI"
+                              transform="translate(-779.000000, -481.000000)"
+                            >
+                              <path
+                                d="M786.63,485.364 C786.592666,485.111999 786.508667,484.881001 786.378,484.671 C786.247333,484.460999 786.084001,484.276667 785.888,484.118 C785.691999,483.959333 785.470335,483.835667 785.223,483.747 C784.975665,483.658333 784.716668,483.614 784.446,483.614 C783.951331,483.614 783.531335,483.709666 783.186,483.901 C782.840665,484.092334 782.560668,484.348998 782.346,484.671 C782.131332,484.993002 781.975,485.359331 781.877,485.77 C781.779,486.180669 781.73,486.605331 781.73,487.044 C781.73,487.464002 781.779,487.872331 781.877,488.269 C781.975,488.665669 782.131332,489.022665 782.346,489.34 C782.560668,489.657335 782.840665,489.911666 783.186,490.103 C783.531335,490.294334 783.951331,490.39 784.446,490.39 C785.118003,490.39 785.642998,490.184669 786.021,489.774 C786.399002,489.363331 786.63,488.822003 786.714,488.15 L788.842,488.15 C788.786,488.775336 788.641334,489.339997 788.408,489.844 C788.174665,490.348003 787.866669,490.777332 787.484,491.132 C787.101331,491.486668 786.653336,491.757332 786.14,491.944 C785.626664,492.130668 785.062003,492.224 784.446,492.224 C783.680663,492.224 782.992336,492.091001 782.381,491.825 C781.769664,491.558999 781.254002,491.192669 780.834,490.726 C780.413998,490.259331 780.092001,489.711003 779.868,489.081 C779.643999,488.450997 779.532,487.772004 779.532,487.044 C779.532,486.29733 779.643999,485.604337 779.868,484.965 C780.092001,484.325663 780.413998,483.768002 780.834,483.292 C781.254002,482.815998 781.769664,482.442668 782.381,482.172 C782.992336,481.901332 783.680663,481.766 784.446,481.766 C784.996669,481.766 785.516998,481.845333 786.007,482.004 C786.497002,482.162667 786.935665,482.393665 787.323,482.697 C787.710335,483.000335 788.029999,483.375998 788.282,483.824 C788.534001,484.272002 788.692666,484.78533 788.758,485.364 L786.63,485.364 Z M797.004,485.364 C796.966666,485.111999 796.882667,484.881001 796.752,484.671 C796.621333,484.460999 796.458001,484.276667 796.262,484.118 C796.065999,483.959333 795.844335,483.835667 795.597,483.747 C795.349665,483.658333 795.090668,483.614 794.82,483.614 C794.325331,483.614 793.905335,483.709666 793.56,483.901 C793.214665,484.092334 792.934668,484.348998 792.72,484.671 C792.505332,484.993002 792.349,485.359331 792.251,485.77 C792.153,486.180669 792.104,486.605331 792.104,487.044 C792.104,487.464002 792.153,487.872331 792.251,488.269 C792.349,488.665669 792.505332,489.022665 792.72,489.34 C792.934668,489.657335 793.214665,489.911666 793.56,490.103 C793.905335,490.294334 794.325331,490.39 794.82,490.39 C795.492003,490.39 796.016998,490.184669 796.395,489.774 C796.773002,489.363331 797.004,488.822003 797.088,488.15 L799.216,488.15 C799.16,488.775336 799.015334,489.339997 798.782,489.844 C798.548665,490.348003 798.240669,490.777332 797.858,491.132 C797.475331,491.486668 797.027336,491.757332 796.514,491.944 C796.000664,492.130668 795.436003,492.224 794.82,492.224 C794.054663,492.224 793.366336,492.091001 792.755,491.825 C792.143664,491.558999 791.628002,491.192669 791.208,490.726 C790.787998,490.259331 790.466001,489.711003 790.242,489.081 C790.017999,488.450997 789.906,487.772004 789.906,487.044 C789.906,486.29733 790.017999,485.604337 790.242,484.965 C790.466001,484.325663 790.787998,483.768002 791.208,483.292 C791.628002,482.815998 792.143664,482.442668 792.755,482.172 C793.366336,481.901332 794.054663,481.766 794.82,481.766 C795.370669,481.766 795.890998,481.845333 796.381,482.004 C796.871002,482.162667 797.309665,482.393665 797.697,482.697 C798.084335,483.000335 798.403999,483.375998 798.656,483.824 C798.908001,484.272002 799.066666,484.78533 799.132,485.364 L797.004,485.364 Z"
+                                id="CC"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                      <button
+                        aria-label="Change video quality"
+                        class="c20"
+                      >
+                        <svg
+                          height="14px"
+                          version="1.1"
+                          viewBox="0 0 14 14"
+                          width="14px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            fill="none"
+                            fill-rule="evenodd"
+                            id="Page-1"
+                            stroke="none"
+                            stroke-width="1"
+                          >
+                            <g
+                              fill="#FFFFFF"
+                              fill-rule="nonzero"
+                              id="Video---player-UI"
+                              transform="translate(-818.000000, -480.000000)"
+                            >
+                              <g
+                                id="volume"
+                                transform="translate(679.000150, 479.000000)"
+                              >
+                                <path
+                                  d="M147.378134,15 L144.622637,15 C144.299765,15 144.026611,14.769 143.987675,14.46275 L143.750463,12.85275 C143.426392,12.7104167 143.112505,12.5330833 142.814193,12.3236667 L141.254941,12.93325 C140.945846,13.0423333 140.609196,12.921 140.46004,12.655 L139.085885,10.33975 C138.929541,10.0603333 138.996631,9.72491667 139.241631,9.53591667 L140.564269,8.5285 C140.544502,8.33133333 140.534318,8.16041667 140.534318,8 C140.534318,7.83958333 140.544502,7.66866667 140.565467,7.4715 L139.244027,6.46583333 C138.992438,6.27216667 138.925947,5.92566667 139.088281,5.6585 L140.464233,3.33975 C140.613988,3.07258333 140.954232,2.95241667 141.253144,3.06616667 L142.816589,3.6775 C143.128679,3.4605 143.437175,3.28608333 143.751062,3.14783333 L143.988873,1.53141667 C144.02721,1.231 144.300364,1 144.623236,1 L147.378733,1 C147.701606,1 147.974759,1.231 148.013696,1.53725 L148.250908,3.14783333 C148.574979,3.28958333 148.888267,3.46691667 149.186579,3.67691667 L150.745831,3.06733333 C151.053129,2.95708333 151.390378,3.079 151.540732,3.34558333 L152.914887,5.66083333 C153.07183,5.94025 153.004141,6.27566667 152.758542,6.46466667 L151.435903,7.4715 C151.452676,7.62666667 151.467053,7.80808333 151.467053,8 C151.467053,8.19191667 151.453275,8.37333333 151.435903,8.5285 L152.757344,9.53475 C153.004141,9.7255 153.071231,10.0609167 152.918481,10.3339167 L151.537138,12.6608333 C151.387383,12.928 151.045941,13.047 150.748227,12.9344167 L149.184782,12.3230833 C148.872692,12.5400833 148.564196,12.7145 148.250309,12.85275 L148.012498,14.4685833 C147.97416,14.769 147.701007,15 147.378134,15 Z M145.99985,10.8 C147.54377,10.8 148.79985,9.54392 148.79985,8 C148.79985,6.45608 147.54377,5.2 145.99985,5.2 C144.45593,5.2 143.19985,6.45608 143.19985,8 C143.19985,9.54392 144.45593,10.8 145.99985,10.8 Z"
+                                  id="Combined-Shape"
+                                />
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                      <button
+                        aria-label="Toggle fullscreen"
+                        class="c20"
+                      >
+                        <svg
+                          height="14px"
+                          version="1.1"
+                          viewBox="0 0 14 14"
+                          width="14px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            fill="none"
+                            fill-rule="evenodd"
+                            id="Page-1"
+                            stroke="none"
+                            stroke-width="1"
+                          >
+                            <g
+                              fill="#FFFFFF"
+                              id="Video---player-UI"
+                              transform="translate(-851.000000, -480.000000)"
+                            >
+                              <g
+                                id="volume"
+                                transform="translate(679.000150, 479.000000)"
+                              >
+                                <path
+                                  d="M180.31875,7.5086 L178.84975,6.0276 C178.75875,5.9356 178.75875,5.7866 178.84975,5.6966 L181.29875,3.2266 C181.38975,3.1346 181.38975,2.9866 181.29875,2.8946 L179.88175,1.4666 C179.73675,1.3206 179.83875,1.0696 180.04375,1.0666 L185.06875,0.9996 C185.19975,0.9986 185.30575,1.1056 185.30375,1.2376 L185.23875,6.3046 C185.23575,6.5116 184.98675,6.6126 184.84075,6.4666 L183.42475,5.0386 C183.33475,4.9466 183.18675,4.9466 183.09575,5.0386 L180.64675,7.5086 C180.55575,7.5996 180.40975,7.5996 180.31875,7.5086 Z M176.98575,7.7352 L178.45475,9.2162 C178.54575,9.3082 178.54575,9.4572 178.45475,9.5472 L176.00575,12.0172 C175.91475,12.1092 175.91475,12.2572 176.00575,12.3492 L177.42175,13.7772 C177.56675,13.9232 177.46575,14.1742 177.25975,14.1772 L172.23575,14.2442 C172.10475,14.2462 171.99875,14.1382 171.99975,14.0062 L172.06575,8.9402 C172.06875,8.7322 172.31675,8.6312 172.46275,8.7772 L173.87975,10.2062 C173.96975,10.2972 174.11675,10.2972 174.20775,10.2062 L176.65675,7.7352 C176.74775,7.6442 176.89475,7.6442 176.98575,7.7352 Z"
+                                  id="expand"
+                                />
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span
+                  aria-label="Press the space bar or K to toggle play and pause. Use the left and right arrow keys or the comma and period keys to scrub through the video. Use the up and down arrow keys, the dash and equal keys, or the add and subtract number pad keys to increase and decrease volume. Press M to toggle mute. Press F to toggle fullscreen. Press escape to exit instructions and return to video."
+                  tabindex="-1"
+                />
+              </div>,
+            }
+          }
+          videoPlaying={false}
+          videoQuality={1}
+        >
+          <ControlBar__ControlBarContainer
+            isHidden={true}
+            isMobile={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "ControlBar__ControlBarContainer-sc-1wksqan-0",
+                    "isStatic": false,
+                    "lastClassName": "c12",
+                    "rules": Array [
+                      [Function],
+                    ],
+                  },
+                  "displayName": "ControlBar__ControlBarContainer",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "ControlBar__ControlBarContainer-sc-1wksqan-0",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isHidden={true}
+              isMobile={false}
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <div
+                className="c12"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+              >
+                <ControlBar__StyledControlBar>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "ControlBar__StyledControlBar-sc-1wksqan-1",
+                          "isStatic": true,
+                          "lastClassName": "c13",
+                          "rules": Array [
+                            "position: absolute; width: 100%; height: 56px; padding: 1rem 3rem; bottom: 0; background-color: rgba(42, 44, 46, 0.85); margin: auto; display: flex; justify-content: space-between; z-index: 9;",
+                          ],
+                        },
+                        "displayName": "ControlBar__StyledControlBar",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "ControlBar__StyledControlBar-sc-1wksqan-1",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="c13"
+                    >
+                      <ControlBar__VideoProgressBarContainer>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "ControlBar__VideoProgressBarContainer-sc-1wksqan-2",
+                                "isStatic": true,
+                                "lastClassName": "c14",
+                                "rules": Array [
+                                  "display: flex; flex-grow: 1;",
+                                ],
+                              },
+                              "displayName": "ControlBar__VideoProgressBarContainer",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "ControlBar__VideoProgressBarContainer-sc-1wksqan-2",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c14"
+                          >
+                            <VideoProgressBar
+                              resetInactivityTimer={[Function]}
+                              setSeek={[Function]}
+                              videoBufferEnd={0}
+                              videoCurrentTime={-1}
+                              videoLength={0}
+                              videoPlayer={
+                                Object {
+                                  "current": <video
+                                    class="c11"
+                                  >
+                                    <source
+                                      src="video.mp4"
+                                      type="video/mp4"
+                                    />
+                                    <track
+                                      kind="captions"
+                                      label="English"
+                                      src="testEng.vtt"
+                                      srclang="en"
+                                    />
+                                    Your browser does not support the video tag.
+                                  </video>,
+                                }
+                              }
+                            >
+                              <VideoProgressBar__ProgressBarContainer>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "VideoProgressBar__ProgressBarContainer-sc-1lt9si3-0",
+                                        "isStatic": true,
+                                        "lastClassName": "c15",
+                                        "rules": Array [
+                                          "display: flex; width: 100%; align-items: center;",
+                                        ],
+                                      },
+                                      "displayName": "VideoProgressBar__ProgressBarContainer",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "VideoProgressBar__ProgressBarContainer-sc-1lt9si3-0",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <div
+                                    className="c15"
+                                  >
+                                    <VideoProgressBar__StyledTimestamp>
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "VideoProgressBar__StyledTimestamp-sc-1lt9si3-1",
+                                              "isStatic": false,
+                                              "lastClassName": "c18",
+                                              "rules": Array [
+                                                [Function],
+                                              ],
+                                            },
+                                            "displayName": "VideoProgressBar__StyledTimestamp",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "VideoProgressBar__StyledTimestamp-sc-1lt9si3-1",
+                                            "target": "p",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                      >
+                                        <p
+                                          className="c16"
+                                        >
+                                          -1:59:59
+                                        </p>
+                                      </StyledComponent>
+                                    </VideoProgressBar__StyledTimestamp>
+                                    <styled.input
+                                      id="videoProgressBar"
+                                      max={0}
+                                      onChange={[Function]}
+                                      onFocus={[Function]}
+                                      step="any"
+                                      tabIndex="-1"
+                                      type="range"
+                                      videoBufferDisplay={NaN}
+                                      videoCurrentTime={-1}
+                                    >
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [
+                                              [Function],
+                                            ],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "sc-bdVaJa",
+                                              "isStatic": false,
+                                              "lastClassName": "c17",
+                                              "rules": Array [
+                                                [Function],
+                                              ],
+                                            },
+                                            "displayName": "styled.input",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "sc-bdVaJa",
+                                            "target": "input",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        id="videoProgressBar"
+                                        max={0}
+                                        onChange={[Function]}
+                                        onFocus={[Function]}
+                                        step="any"
+                                        tabIndex="-1"
+                                        type="range"
+                                        videoBufferDisplay={NaN}
+                                        videoCurrentTime={-1}
+                                      >
+                                        <input
+                                          className="c17"
+                                          id="videoProgressBar"
+                                          max={0}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          step="any"
+                                          tabIndex="-1"
+                                          type="range"
+                                          value={-1}
+                                        />
+                                      </StyledComponent>
+                                    </styled.input>
+                                    <VideoProgressBar__StyledTimestamp
+                                      isRemaining={true}
+                                    >
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "VideoProgressBar__StyledTimestamp-sc-1lt9si3-1",
+                                              "isStatic": false,
+                                              "lastClassName": "c18",
+                                              "rules": Array [
+                                                [Function],
+                                              ],
+                                            },
+                                            "displayName": "VideoProgressBar__StyledTimestamp",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "VideoProgressBar__StyledTimestamp-sc-1lt9si3-1",
+                                            "target": "p",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        isRemaining={true}
+                                      >
+                                        <p
+                                          className="c18"
+                                        >
+                                          0:00:01
+                                        </p>
+                                      </StyledComponent>
+                                    </VideoProgressBar__StyledTimestamp>
+                                  </div>
+                                </StyledComponent>
+                              </VideoProgressBar__ProgressBarContainer>
+                            </VideoProgressBar>
+                          </div>
+                        </StyledComponent>
+                      </ControlBar__VideoProgressBarContainer>
+                      <VolumeSlider
+                        copy="en"
+                        resetInactivityTimer={[Function]}
+                        setVolume={[Function]}
+                        toggleMute={[Function]}
+                        videoCurrentVolume={1}
+                        videoDefaultVolume={1}
+                        videoIsMuted={false}
+                        videoPlayer={
+                          Object {
+                            "current": <video
+                              class="c11"
+                            >
+                              <source
+                                src="video.mp4"
+                                type="video/mp4"
+                              />
+                              <track
+                                kind="captions"
+                                label="English"
+                                src="testEng.vtt"
+                                srclang="en"
+                              />
+                              Your browser does not support the video tag.
+                            </video>,
+                          }
+                        }
+                      >
+                        <VolumeSlider__VolumeSliderContainer>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "VolumeSlider__VolumeSliderContainer-hlqwx2-0",
+                                  "isStatic": true,
+                                  "lastClassName": "c19",
+                                  "rules": Array [
+                                    "display: flex; width: 10%; max-width: 120px; margin: 0 1rem; align-items: center;",
+                                  ],
+                                },
+                                "displayName": "VolumeSlider__VolumeSliderContainer",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "VolumeSlider__VolumeSliderContainer-hlqwx2-0",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                          >
+                            <div
+                              className="c19"
+                            >
+                              <VideoButton
+                                icon={<Unmuted />}
+                                label="Mute"
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                              >
+                                <VideoButton__StyledButton
+                                  aria-label="Mute"
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onKeyDown={[Function]}
+                                >
+                                  <StyledComponent
+                                    aria-label="Mute"
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
+                                          "isStatic": true,
+                                          "lastClassName": "c20",
+                                          "rules": Array [
+                                            "background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; display: inline-flex; align-items: center;",
+                                          ],
+                                        },
+                                        "displayName": "VideoButton__StyledButton",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
+                                        "target": "button",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    onClick={[Function]}
+                                    onFocus={[Function]}
+                                    onKeyDown={[Function]}
+                                  >
+                                    <button
+                                      aria-label="Mute"
+                                      className="c20"
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onKeyDown={[Function]}
+                                    >
+                                      <Unmuted>
+                                        <svg
+                                          height="17px"
+                                          version="1.1"
+                                          viewBox="0 0 18 17"
+                                          width="18px"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <g
+                                            fill="none"
+                                            fillRule="evenodd"
+                                            id="Page-1"
+                                            stroke="none"
+                                            strokeWidth="1"
+                                          >
+                                            <g
+                                              fill="#FFFFFF"
+                                              id="Video---player-UI"
+                                              transform="translate(-680.000000, -460.000000)"
+                                            >
+                                              <g
+                                                id="Group-7"
+                                                transform="translate(680.840000, 459.700000)"
+                                              >
+                                                <g
+                                                  id="Group-2"
+                                                  transform="translate(0.600000, 0.600000)"
+                                                >
+                                                  <path
+                                                    d="M9.249,0.0416575641 C9.032,-0.0483424359 8.792,0.00965756413 8.606,0.194657564 L4.154,4.64665756 C4.138,4.66065756 4.091,4.67965756 4.078,4.68265756 L0.72,4.68265756 C0.323,4.68265756 1.33226763e-14,5.00465756 1.33226763e-14,5.40165756 L1.33226763e-14,9.71965756 C1.33226763e-14,10.1156576 0.323,10.4386576 0.72,10.4386576 L4.069,10.4376576 C4.091,10.4406576 4.138,10.4606576 4.148,10.4686576 L8.606,14.9266576 C8.734,15.0546576 8.888,15.1206576 9.042,15.1206576 C9.111,15.1206576 9.182,15.1066576 9.249,15.0796576 C9.466,14.9896576 9.595,14.7786576 9.595,14.5166576 L9.595,0.603657564 C9.595,0.341657564 9.466,0.131657564 9.249,0.0416575641"
+                                                    id="Fill-1"
+                                                  />
+                                                  <path
+                                                    d="M12.3945,4.91175756 C13.2095,5.72675756 13.6595,6.81175756 13.6595,7.96575756 C13.6595,9.11875756 13.2095,10.2027576 12.3945,11.0177576 C12.3005,11.1117576 12.1775,11.1587576 12.0545,11.1587576 C11.9325,11.1587576 11.8095,11.1117576 11.7155,11.0177576 C11.5285,10.8307576 11.5285,10.5267576 11.7155,10.3397576 C12.3505,9.70575756 12.6995,8.86175756 12.6995,7.96575756 C12.6995,7.06775756 12.3505,6.22475756 11.7155,5.59075756 C11.5285,5.40275756 11.5285,5.09875756 11.7155,4.91175756 C11.9035,4.72475756 12.2075,4.72475756 12.3945,4.91175756"
+                                                    id="Fill-3"
+                                                  />
+                                                  <path
+                                                    d="M14.4375,2.86925756 C15.7955,4.22825756 16.5445,6.03625756 16.5445,7.95725756 C16.5445,9.87925756 15.7955,11.6872576 14.4375,13.0452576 C14.3435,13.1392576 14.2205,13.1862576 14.0975,13.1862576 C13.9755,13.1862576 13.8525,13.1392576 13.7585,13.0452576 C13.5715,12.8592576 13.5715,12.5552576 13.7585,12.3682576 C14.9365,11.1902576 15.5855,9.62325756 15.5855,7.95725756 C15.5855,6.29125756 14.9365,4.72525756 13.7585,3.54725756 C13.5715,3.36025756 13.5715,3.05625756 13.7585,2.86925756 C13.9465,2.68225756 14.2505,2.68225756 14.4375,2.86925756"
+                                                    id="Fill-5"
+                                                  />
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </svg>
+                                      </Unmuted>
+                                    </button>
+                                  </StyledComponent>
+                                </VideoButton__StyledButton>
+                              </VideoButton>
+                              <VolumeSlider__StyledVolumeSlider
+                                id="volumeSlider"
+                                max="1"
+                                min="0"
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                step="any"
+                                tabIndex="-1"
+                                type="range"
+                                value={1}
+                                videoCurrentVolume={1}
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "VolumeSlider__StyledVolumeSlider-hlqwx2-1",
+                                        "isStatic": false,
+                                        "lastClassName": "c21",
+                                        "rules": Array [
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "VolumeSlider__StyledVolumeSlider",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "VolumeSlider__StyledVolumeSlider-hlqwx2-1",
+                                      "target": "input",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={
+                                    Object {
+                                      "current": <input
+                                        class="c21"
+                                        id="volumeSlider"
+                                        max="1"
+                                        min="0"
+                                        step="any"
+                                        tabindex="-1"
+                                        type="range"
+                                        value="1"
+                                      />,
+                                    }
+                                  }
+                                  id="volumeSlider"
+                                  max="1"
+                                  min="0"
+                                  onChange={[Function]}
+                                  onFocus={[Function]}
+                                  step="any"
+                                  tabIndex="-1"
+                                  type="range"
+                                  value={1}
+                                  videoCurrentVolume={1}
+                                >
+                                  <input
+                                    className="c21"
+                                    id="volumeSlider"
+                                    max="1"
+                                    min="0"
+                                    onChange={[Function]}
+                                    onFocus={[Function]}
+                                    step="any"
+                                    tabIndex="-1"
+                                    type="range"
+                                    value={1}
+                                  />
+                                </StyledComponent>
+                              </VolumeSlider__StyledVolumeSlider>
+                            </div>
+                          </StyledComponent>
+                        </VolumeSlider__VolumeSliderContainer>
+                      </VolumeSlider>
+                      <Box
+                        between={3}
+                        inline={true}
+                        tag="div"
+                      >
+                        <div
+                          className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+                        >
+                          <VideoButton
+                            icon={<ClosedCaptions />}
+                            label="Select captions"
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                          >
+                            <VideoButton__StyledButton
+                              aria-label="Select captions"
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                            >
+                              <StyledComponent
+                                aria-label="Select captions"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
+                                      "isStatic": true,
+                                      "lastClassName": "c20",
+                                      "rules": Array [
+                                        "background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; display: inline-flex; align-items: center;",
+                                      ],
+                                    },
+                                    "displayName": "VideoButton__StyledButton",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                              >
+                                <button
+                                  aria-label="Select captions"
+                                  className="c20"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onKeyDown={[Function]}
+                                >
+                                  <ClosedCaptions>
+                                    <svg
+                                      height="12px"
+                                      version="1.1"
+                                      viewBox="0 0 21 12"
+                                      width="21px"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <g
+                                        fill="none"
+                                        fillRule="evenodd"
+                                        id="Page-1"
+                                        stroke="none"
+                                        strokeWidth="1"
+                                      >
+                                        <g
+                                          fill="#FFFFFF"
+                                          fillRule="nonzero"
+                                          id="Video---player-UI"
+                                          transform="translate(-779.000000, -481.000000)"
+                                        >
+                                          <path
+                                            d="M786.63,485.364 C786.592666,485.111999 786.508667,484.881001 786.378,484.671 C786.247333,484.460999 786.084001,484.276667 785.888,484.118 C785.691999,483.959333 785.470335,483.835667 785.223,483.747 C784.975665,483.658333 784.716668,483.614 784.446,483.614 C783.951331,483.614 783.531335,483.709666 783.186,483.901 C782.840665,484.092334 782.560668,484.348998 782.346,484.671 C782.131332,484.993002 781.975,485.359331 781.877,485.77 C781.779,486.180669 781.73,486.605331 781.73,487.044 C781.73,487.464002 781.779,487.872331 781.877,488.269 C781.975,488.665669 782.131332,489.022665 782.346,489.34 C782.560668,489.657335 782.840665,489.911666 783.186,490.103 C783.531335,490.294334 783.951331,490.39 784.446,490.39 C785.118003,490.39 785.642998,490.184669 786.021,489.774 C786.399002,489.363331 786.63,488.822003 786.714,488.15 L788.842,488.15 C788.786,488.775336 788.641334,489.339997 788.408,489.844 C788.174665,490.348003 787.866669,490.777332 787.484,491.132 C787.101331,491.486668 786.653336,491.757332 786.14,491.944 C785.626664,492.130668 785.062003,492.224 784.446,492.224 C783.680663,492.224 782.992336,492.091001 782.381,491.825 C781.769664,491.558999 781.254002,491.192669 780.834,490.726 C780.413998,490.259331 780.092001,489.711003 779.868,489.081 C779.643999,488.450997 779.532,487.772004 779.532,487.044 C779.532,486.29733 779.643999,485.604337 779.868,484.965 C780.092001,484.325663 780.413998,483.768002 780.834,483.292 C781.254002,482.815998 781.769664,482.442668 782.381,482.172 C782.992336,481.901332 783.680663,481.766 784.446,481.766 C784.996669,481.766 785.516998,481.845333 786.007,482.004 C786.497002,482.162667 786.935665,482.393665 787.323,482.697 C787.710335,483.000335 788.029999,483.375998 788.282,483.824 C788.534001,484.272002 788.692666,484.78533 788.758,485.364 L786.63,485.364 Z M797.004,485.364 C796.966666,485.111999 796.882667,484.881001 796.752,484.671 C796.621333,484.460999 796.458001,484.276667 796.262,484.118 C796.065999,483.959333 795.844335,483.835667 795.597,483.747 C795.349665,483.658333 795.090668,483.614 794.82,483.614 C794.325331,483.614 793.905335,483.709666 793.56,483.901 C793.214665,484.092334 792.934668,484.348998 792.72,484.671 C792.505332,484.993002 792.349,485.359331 792.251,485.77 C792.153,486.180669 792.104,486.605331 792.104,487.044 C792.104,487.464002 792.153,487.872331 792.251,488.269 C792.349,488.665669 792.505332,489.022665 792.72,489.34 C792.934668,489.657335 793.214665,489.911666 793.56,490.103 C793.905335,490.294334 794.325331,490.39 794.82,490.39 C795.492003,490.39 796.016998,490.184669 796.395,489.774 C796.773002,489.363331 797.004,488.822003 797.088,488.15 L799.216,488.15 C799.16,488.775336 799.015334,489.339997 798.782,489.844 C798.548665,490.348003 798.240669,490.777332 797.858,491.132 C797.475331,491.486668 797.027336,491.757332 796.514,491.944 C796.000664,492.130668 795.436003,492.224 794.82,492.224 C794.054663,492.224 793.366336,492.091001 792.755,491.825 C792.143664,491.558999 791.628002,491.192669 791.208,490.726 C790.787998,490.259331 790.466001,489.711003 790.242,489.081 C790.017999,488.450997 789.906,487.772004 789.906,487.044 C789.906,486.29733 790.017999,485.604337 790.242,484.965 C790.466001,484.325663 790.787998,483.768002 791.208,483.292 C791.628002,482.815998 792.143664,482.442668 792.755,482.172 C793.366336,481.901332 794.054663,481.766 794.82,481.766 C795.370669,481.766 795.890998,481.845333 796.381,482.004 C796.871002,482.162667 797.309665,482.393665 797.697,482.697 C798.084335,483.000335 798.403999,483.375998 798.656,483.824 C798.908001,484.272002 799.066666,484.78533 799.132,485.364 L797.004,485.364 Z"
+                                            id="CC"
+                                          />
+                                        </g>
+                                      </g>
+                                    </svg>
+                                  </ClosedCaptions>
+                                </button>
+                              </StyledComponent>
+                            </VideoButton__StyledButton>
+                          </VideoButton>
+                          <VideoButton
+                            icon={<FsExpand />}
+                            label="Change video quality"
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                          >
+                            <VideoButton__StyledButton
+                              aria-label="Change video quality"
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                            >
+                              <StyledComponent
+                                aria-label="Change video quality"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
+                                      "isStatic": true,
+                                      "lastClassName": "c20",
+                                      "rules": Array [
+                                        "background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; display: inline-flex; align-items: center;",
+                                      ],
+                                    },
+                                    "displayName": "VideoButton__StyledButton",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                              >
+                                <button
+                                  aria-label="Change video quality"
+                                  className="c20"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onKeyDown={[Function]}
+                                >
+                                  <FsExpand>
+                                    <svg
+                                      height="14px"
+                                      version="1.1"
+                                      viewBox="0 0 14 14"
+                                      width="14px"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <g
+                                        fill="none"
+                                        fillRule="evenodd"
+                                        id="Page-1"
+                                        stroke="none"
+                                        strokeWidth="1"
+                                      >
+                                        <g
+                                          fill="#FFFFFF"
+                                          fillRule="nonzero"
+                                          id="Video---player-UI"
+                                          transform="translate(-818.000000, -480.000000)"
+                                        >
+                                          <g
+                                            id="volume"
+                                            transform="translate(679.000150, 479.000000)"
+                                          >
+                                            <path
+                                              d="M147.378134,15 L144.622637,15 C144.299765,15 144.026611,14.769 143.987675,14.46275 L143.750463,12.85275 C143.426392,12.7104167 143.112505,12.5330833 142.814193,12.3236667 L141.254941,12.93325 C140.945846,13.0423333 140.609196,12.921 140.46004,12.655 L139.085885,10.33975 C138.929541,10.0603333 138.996631,9.72491667 139.241631,9.53591667 L140.564269,8.5285 C140.544502,8.33133333 140.534318,8.16041667 140.534318,8 C140.534318,7.83958333 140.544502,7.66866667 140.565467,7.4715 L139.244027,6.46583333 C138.992438,6.27216667 138.925947,5.92566667 139.088281,5.6585 L140.464233,3.33975 C140.613988,3.07258333 140.954232,2.95241667 141.253144,3.06616667 L142.816589,3.6775 C143.128679,3.4605 143.437175,3.28608333 143.751062,3.14783333 L143.988873,1.53141667 C144.02721,1.231 144.300364,1 144.623236,1 L147.378733,1 C147.701606,1 147.974759,1.231 148.013696,1.53725 L148.250908,3.14783333 C148.574979,3.28958333 148.888267,3.46691667 149.186579,3.67691667 L150.745831,3.06733333 C151.053129,2.95708333 151.390378,3.079 151.540732,3.34558333 L152.914887,5.66083333 C153.07183,5.94025 153.004141,6.27566667 152.758542,6.46466667 L151.435903,7.4715 C151.452676,7.62666667 151.467053,7.80808333 151.467053,8 C151.467053,8.19191667 151.453275,8.37333333 151.435903,8.5285 L152.757344,9.53475 C153.004141,9.7255 153.071231,10.0609167 152.918481,10.3339167 L151.537138,12.6608333 C151.387383,12.928 151.045941,13.047 150.748227,12.9344167 L149.184782,12.3230833 C148.872692,12.5400833 148.564196,12.7145 148.250309,12.85275 L148.012498,14.4685833 C147.97416,14.769 147.701007,15 147.378134,15 Z M145.99985,10.8 C147.54377,10.8 148.79985,9.54392 148.79985,8 C148.79985,6.45608 147.54377,5.2 145.99985,5.2 C144.45593,5.2 143.19985,6.45608 143.19985,8 C143.19985,9.54392 144.45593,10.8 145.99985,10.8 Z"
+                                              id="Combined-Shape"
+                                            />
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </svg>
+                                  </FsExpand>
+                                </button>
+                              </StyledComponent>
+                            </VideoButton__StyledButton>
+                          </VideoButton>
+                          <VideoButton
+                            icon={<FsExpand />}
+                            label="Toggle fullscreen"
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                          >
+                            <VideoButton__StyledButton
+                              aria-label="Toggle fullscreen"
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                            >
+                              <StyledComponent
+                                aria-label="Toggle fullscreen"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
+                                      "isStatic": true,
+                                      "lastClassName": "c20",
+                                      "rules": Array [
+                                        "background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; display: inline-flex; align-items: center;",
+                                      ],
+                                    },
+                                    "displayName": "VideoButton__StyledButton",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                              >
+                                <button
+                                  aria-label="Toggle fullscreen"
+                                  className="c20"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onKeyDown={[Function]}
+                                >
+                                  <FsExpand>
+                                    <svg
+                                      height="14px"
+                                      version="1.1"
+                                      viewBox="0 0 14 14"
+                                      width="14px"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <g
+                                        fill="none"
+                                        fillRule="evenodd"
+                                        id="Page-1"
+                                        stroke="none"
+                                        strokeWidth="1"
+                                      >
+                                        <g
+                                          fill="#FFFFFF"
+                                          id="Video---player-UI"
+                                          transform="translate(-851.000000, -480.000000)"
+                                        >
+                                          <g
+                                            id="volume"
+                                            transform="translate(679.000150, 479.000000)"
+                                          >
+                                            <path
+                                              d="M180.31875,7.5086 L178.84975,6.0276 C178.75875,5.9356 178.75875,5.7866 178.84975,5.6966 L181.29875,3.2266 C181.38975,3.1346 181.38975,2.9866 181.29875,2.8946 L179.88175,1.4666 C179.73675,1.3206 179.83875,1.0696 180.04375,1.0666 L185.06875,0.9996 C185.19975,0.9986 185.30575,1.1056 185.30375,1.2376 L185.23875,6.3046 C185.23575,6.5116 184.98675,6.6126 184.84075,6.4666 L183.42475,5.0386 C183.33475,4.9466 183.18675,4.9466 183.09575,5.0386 L180.64675,7.5086 C180.55575,7.5996 180.40975,7.5996 180.31875,7.5086 Z M176.98575,7.7352 L178.45475,9.2162 C178.54575,9.3082 178.54575,9.4572 178.45475,9.5472 L176.00575,12.0172 C175.91475,12.1092 175.91475,12.2572 176.00575,12.3492 L177.42175,13.7772 C177.56675,13.9232 177.46575,14.1742 177.25975,14.1772 L172.23575,14.2442 C172.10475,14.2462 171.99875,14.1382 171.99975,14.0062 L172.06575,8.9402 C172.06875,8.7322 172.31675,8.6312 172.46275,8.7772 L173.87975,10.2062 C173.96975,10.2972 174.11675,10.2972 174.20775,10.2062 L176.65675,7.7352 C176.74775,7.6442 176.89475,7.6442 176.98575,7.7352 Z"
+                                              id="expand"
+                                            />
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </svg>
+                                  </FsExpand>
+                                </button>
+                              </StyledComponent>
+                            </VideoButton__StyledButton>
+                          </VideoButton>
+                        </div>
+                      </Box>
+                    </div>
+                  </StyledComponent>
+                </ControlBar__StyledControlBar>
+              </div>
+            </StyledComponent>
+          </ControlBar__ControlBarContainer>
+        </ControlBar>
+        <span
+          aria-label="Press the space bar or K to toggle play and pause. Use the left and right arrow keys or the comma and period keys to scrub through the video. Use the up and down arrow keys, the dash and equal keys, or the add and subtract number pad keys to increase and decrease volume. Press M to toggle mute. Press F to toggle fullscreen. Press escape to exit instructions and return to video."
+          tabIndex="-1"
+        />
+      </div>
+    </StyledComponent>
+  </Video__VideoPlayerContainer>
+</Video>
+`;
