@@ -36,7 +36,6 @@
   "devDependencies": {
     "@tds/core-colours": "^1.1.1",
     "@tds/shared-animation": "^1.1.1",
-    "@tds/shared-form-field": "^2.1.8",
-    "react-transition-group": "^2.2.1"
+    "@tds/shared-form-field": "^2.1.8"
   }
 }
