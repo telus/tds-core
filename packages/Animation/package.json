@@ -25,7 +25,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.5.10",
     "react-transition-group": "^2.2.1"
   }
 }
