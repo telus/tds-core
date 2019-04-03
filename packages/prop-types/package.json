@@ -21,6 +21,6 @@
   },
   "homepage": "http://tds.telus.com",
   "dependencies": {
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.5.10"
   }
 }
