@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.9](https://github.com/telusdigital/tds/compare/@tds/core-input@2.1.8...@tds/core-input@2.1.9) (2019-04-03)
+
+
+### Bug Fixes
+
+* **core-input:** remove react-transition-group from devDependencies ([a467247](https://github.com/telusdigital/tds/commit/a467247))
+
+
+
+
+
 ## [2.1.8](https://github.com/telusdigital/tds/compare/@tds/core-input@2.1.7...@tds/core-input@2.1.8) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-input
