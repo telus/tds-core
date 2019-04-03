@@ -137,7 +137,7 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-postcss": "^1.0.1",
+    "rollup-plugin-postcss": "^2.0.0",
     "s3-website": "^3.1.2",
     "sass-loader": "^7.0.0",
     "semantic-release": "^15.13.2",
