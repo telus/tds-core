@@ -4,11 +4,7 @@ import { shallow, render } from 'enzyme'
 import DisplayHeading from '../DisplayHeading'
 
 describe('DisplayHeading', () => {
-  const doShallow = (props = {}) => {
-    const heading = shallow(<DisplayHeading {...props}>Great Deals</DisplayHeading>)
-
-    return heading.find('h1')
-  }
+  const doShallow = (props = {}) => shallow(<DisplayHeading {...props}>Great Deals</DisplayHeading>)
 
   it('renders', () => {
     const heading = render(<DisplayHeading>The heading</DisplayHeading>)
@@ -16,18 +12,10 @@ describe('DisplayHeading', () => {
     expect(heading).toMatchSnapshot()
   })
 
-  it('renders an h1', () => {
-    const displayHeading = doShallow()
-
-    expect(displayHeading).toHaveDisplayName('h1')
-  })
-
   it('can be inverted', () => {
-    let displayHeading = doShallow({ invert: true })
-    expect(displayHeading).toHaveClassName('inverted')
+    const heading = render(<DisplayHeading invert>The heading</DisplayHeading>)
 
-    displayHeading = doShallow()
-    expect(displayHeading).toHaveClassName('default')
+    expect(heading).toMatchSnapshot()
   })
 
   it('passes additional attributes to h1 element', () => {

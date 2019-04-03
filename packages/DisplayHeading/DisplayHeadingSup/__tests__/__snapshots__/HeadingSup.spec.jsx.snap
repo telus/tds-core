@@ -1,8 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DisplayHeadingSup renders 1`] = `
+.c0 {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 1.25rem;
+  top: -1.2em;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    top: -2.2em;
+  }
+}
+
 <sup
-  className="sup"
+  class="c0"
 >
   Some content
 </sup>

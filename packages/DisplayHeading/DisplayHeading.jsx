@@ -1,15 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+import { spacing } from '@tds/shared-styles'
+import { helveticaNeueThin35, wordBreak } from '@tds/shared-typography'
+import { colorWhite, colorSecondary } from '@tds/core-colours'
+import { media } from '@tds/core-responsive'
 
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
 
 import DisplayHeadingSup from './DisplayHeadingSup/DisplayHeadingSup'
 
-import styles from './DisplayHeading.modules.scss'
-
-const getClassName = invert =>
-  joinClassNames(styles.heading, invert ? styles.inverted : styles.default)
+const StyledDisplayHeading = styled.h1(
+  spacing.noSpacing,
+  wordBreak,
+  helveticaNeueThin35,
+  ({ invert }) => ({
+    color: invert ? colorWhite : colorSecondary,
+    fontSize: '2.75rem',
+    lineHeight: 1.14,
+    ...media.from('md').css({
+      fontSize: '4.5rem',
+      lineHeight: '1.11',
+      letterSpacing: '0.2px',
+    }),
+  })
+)
 
 /**
  * Large page titles. Renders an HTML `<h1>` element.
@@ -17,9 +33,9 @@ const getClassName = invert =>
  * @version ./package.json
  */
 const DisplayHeading = ({ invert, children, ...rest }) => (
-  <h1 {...safeRest(rest)} className={getClassName(invert)}>
+  <StyledDisplayHeading {...safeRest(rest)} invert={invert}>
     {children}
-  </h1>
+  </StyledDisplayHeading>
 )
 
 DisplayHeading.propTypes = {

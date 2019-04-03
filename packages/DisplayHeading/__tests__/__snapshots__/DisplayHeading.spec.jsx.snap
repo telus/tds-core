@@ -1,8 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DisplayHeading renders 1`] = `
+exports[`DisplayHeading can be inverted 1`] = `
+.c0 {
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-weight: 300;
+  color: #fff;
+  font-size: 2.75rem;
+  line-height: 1.14;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 4.5rem;
+    line-height: 1.11;
+    -webkit-letter-spacing: 0.2px;
+    -moz-letter-spacing: 0.2px;
+    -ms-letter-spacing: 0.2px;
+    letter-spacing: 0.2px;
+  }
+}
+
 <h1
-  class="heading default"
+  class="c0"
+>
+  The heading
+</h1>
+`;
+
+exports[`DisplayHeading renders 1`] = `
+.c0 {
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-weight: 300;
+  color: #4b286d;
+  font-size: 2.75rem;
+  line-height: 1.14;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 4.5rem;
+    line-height: 1.11;
+    -webkit-letter-spacing: 0.2px;
+    -moz-letter-spacing: 0.2px;
+    -ms-letter-spacing: 0.2px;
+    letter-spacing: 0.2px;
+  }
+}
+
+<h1
+  class="c0"
 >
   The heading
 </h1>
