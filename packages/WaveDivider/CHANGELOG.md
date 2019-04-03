@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/telusdigital/tds/compare/@tds/core-wave-divider@2.0.1...@tds/core-wave-divider@2.0.2) (2019-04-03)
+
+
+### Bug Fixes
+
+* **core-wave-divider:** fix for ie11 compatibility issues ([1913d61](https://github.com/telusdigital/tds/commit/1913d61))
+
+
+
+
+
 ## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-wave-divider@2.0.0...@tds/core-wave-divider@2.0.1) (2019-03-19)
 
 
