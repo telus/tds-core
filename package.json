@@ -75,7 +75,7 @@
     "@telus/eslint-config": "^1.3.7",
     "@telus/remark-config": "^1.2.0",
     "@telus/semantic-release-config": "^1.3.2",
-    "all-contributors-cli": "^5.0.0",
+    "all-contributors-cli": "^6.0.0",
     "autoprefixer": "^9.0.0",
     "aws-sdk": "^2.114.0",
     "babel-eslint": "^10.0.1",
