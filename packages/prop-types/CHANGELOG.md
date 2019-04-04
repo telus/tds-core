@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/telusdigital/tds/compare/@tds/util-prop-types@1.3.0...@tds/util-prop-types@1.3.1) (2019-04-04)
+
+
+### Bug Fixes
+
+* **util-prop-types:** align prop-types version with rest of repo ([6db7feb](https://github.com/telusdigital/tds/commit/6db7feb))
+
+
+
+
+
 # [1.3.0](https://github.com/telusdigital/tds/compare/@tds/util-prop-types@1.2.1...@tds/util-prop-types@1.3.0) (2019-03-28)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.1.1...@tds/shared-animation@1.1.2) (2019-04-04)
+
+
+### Bug Fixes
+
+* **shared-animation:** align prop-types version with rest of repo ([d0f0317](https://github.com/telusdigital/tds/commit/d0f0317))
+
+
+
+
+
 ## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.1.0...@tds/shared-animation@1.1.1) (2019-03-11)
 
 
