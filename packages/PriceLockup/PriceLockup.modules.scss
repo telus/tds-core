@@ -5,79 +5,10 @@
   text-align: left;
 }
 
-.priceValueSign {
-  line-height: 1;
-}
-
-.priceValueSignsmall {
-  composes: wordBreak;
-  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
-  @include helvetica-neue-light-45;
-
-  font-size: 1.5rem;
-  letter-spacing: -0.7px;
-
-  @include mq($from: md) {
-    font-size: 1.75rem;
-    letter-spacing: -0.8px;
-  }
-}
-
-.priceValueSignmedium {
-  composes: wordBreak;
-  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
-
-  @include helvetica-neue-light-45;
-
-  font-size: 1.75rem;
-  letter-spacing: -1.6px;
-
-  @include mq($from: md) {
-    @include helvetica-neue-thin-35;
-
-    font-size: 2.75rem;
-    letter-spacing: 0;
-  }
-}
-
-.priceValueSignlarge {
-  composes: noSpacing from '../../shared/styles/Spacing.modules.scss';
-  composes: wordBreak;
-
-  @include helvetica-neue-thin-35;
-
-  font-size: 2.75rem;
-
-  @include mq($from: md) {
-    font-size: 4.5rem;
-    letter-spacing: 0.2px;
-  }
-}
-
 .priceWrapper {
   align-items: flex-end;
 
   &.small > span {
     line-height: 1;
   }
-}
-
-span.text {
-  line-height: 1.2;
-  @include mq($from: md) {
-    line-height: 1.6;
-  }
-}
-
-.mediumText {
-  composes: medium;
-}
-
-.largeText {
-  composes: large;
-}
-
-.headingText {
-  composes: h1 from '../Heading/Heading.modules.scss';
-  line-height: 1.3;
 }

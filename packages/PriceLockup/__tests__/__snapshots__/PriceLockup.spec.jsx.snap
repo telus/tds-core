@@ -1,48 +1,376 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PriceLockup renders with default props 1`] = `
-<Box
-  between={1}
-  className="wrapperAlignment"
-  inline={false}
-  tag="div"
+.c2 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+.c1 {
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 400;
+  -webkit-letter-spacing: -0.7px;
+  -moz-letter-spacing: -0.7px;
+  -ms-letter-spacing: -0.7px;
+  letter-spacing: -0.7px;
+}
+
+.c0 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1.75rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+  }
+}
+
+<div
+  class="TDS_Box-modules__betweenBottomMargin-1___43ZDj TDS_Box-modules__stack___33m4D wrapperAlignment"
 >
-  <Box
-    between={1}
-    inline={false}
-    tag="div"
+  <div
+    class="TDS_Box-modules__betweenBottomMargin-1___43ZDj TDS_Box-modules__stack___33m4D"
   >
-    <Box
-      between={1}
-      className="priceWrapper small"
-      inline={true}
-      tag="div"
+    <div
+      class="TDS_Box-modules__betweenRightMargin-1___XT_b2 TDS_Box-modules__inline___jTHcz priceWrapper small"
     >
-      <Box
-        between={1}
-        inline={true}
-        tag="div"
+      <div
+        class="TDS_Box-modules__betweenRightMargin-1___XT_b2 TDS_Box-modules__inline___jTHcz"
       >
         <span
-          className="mediumText"
+          class="c0"
           data-testid="dollarSign"
         >
           $
         </span>
         <span
-          className="priceValueSign priceValueSignsmall"
+          class="c1"
           data-testid="priceValue"
         >
           25
         </span>
-      </Box>
+      </div>
       <span
-        className="mediumText"
+        class="c2"
         data-testid="rateText"
       >
         /month
       </span>
-    </Box>
-  </Box>
-</Box>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PriceLockup size prop is large renders 1`] = `
+.c2 {
+  word-wrap: break-word;
+  font-size: 1.25rem;
+  -webkit-letter-spacing: -1px;
+  -moz-letter-spacing: -1px;
+  -ms-letter-spacing: -1px;
+  letter-spacing: -1px;
+  line-height: 1.6;
+}
+
+.c1 {
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+.c0 {
+  word-wrap: break-word;
+  color: #4b286d;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.29;
+  -webkit-letter-spacing: -1.6px;
+  -moz-letter-spacing: -1.6px;
+  -ms-letter-spacing: -1.6px;
+  letter-spacing: -1.6px;
+  line-height: 1.3;
+}
+
+.c0 .c3 {
+  font-size: 1.25rem;
+  top: -1em;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 4.5rem;
+    -webkit-letter-spacing: 0.2px;
+    -moz-letter-spacing: 0.2px;
+    -ms-letter-spacing: 0.2px;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-weight: 300;
+    font-size: 2.75rem;
+    line-height: 1.18;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .c3 {
+    font-size: 1.25rem;
+    top: -1.3em;
+  }
+}
+
+<div
+  class="wrapperAlignment"
+>
+  <div
+    class=""
+  >
+    <span
+      class="TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+    >
+      top text
+    </span>
+    <div
+      class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz priceWrapper"
+    >
+      <div
+        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+      >
+        <span
+          class="c0"
+          data-testid="dollarSign"
+        >
+          $
+        </span>
+        <span
+          class="c1"
+          data-testid="priceValue"
+        >
+          25
+        </span>
+      </div>
+      <span
+        class="c2"
+        data-testid="rateText"
+      >
+        /month
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PriceLockup size prop is medium renders 1`] = `
+.c2 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+.c1 {
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 1.75rem;
+  -webkit-letter-spacing: -1.6px;
+  -moz-letter-spacing: -1.6px;
+  -ms-letter-spacing: -1.6px;
+  letter-spacing: -1.6px;
+  font-weight: 400;
+}
+
+.c0 {
+  word-wrap: break-word;
+  font-size: 1.25rem;
+  -webkit-letter-spacing: -1px;
+  -moz-letter-spacing: -1px;
+  -ms-letter-spacing: -1px;
+  letter-spacing: -1px;
+  line-height: 1.6;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-weight: 300;
+    font-size: 2.75rem;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+<div
+  class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D wrapperAlignment"
+>
+  <div
+    class="TDS_Box-modules__betweenBottomMargin-1___43ZDj TDS_Box-modules__stack___33m4D"
+  >
+    <span
+      class="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+    >
+      top text
+    </span>
+    <div
+      class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz priceWrapper"
+    >
+      <div
+        class="TDS_Box-modules__betweenRightMargin-1___XT_b2 TDS_Box-modules__inline___jTHcz"
+      >
+        <span
+          class="c0"
+          data-testid="dollarSign"
+        >
+          $
+        </span>
+        <span
+          class="c1"
+          data-testid="priceValue"
+        >
+          25
+        </span>
+      </div>
+      <span
+        class="c2"
+        data-testid="rateText"
+      >
+        /month
+      </span>
+    </div>
+  </div>
+  <hr
+    class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+  />
+  <span
+    class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+  >
+    bottom text
+  </span>
+</div>
+`;
+
+exports[`PriceLockup size prop is small renders 1`] = `
+.c2 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+.c1 {
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 400;
+  -webkit-letter-spacing: -0.7px;
+  -moz-letter-spacing: -0.7px;
+  -ms-letter-spacing: -0.7px;
+  letter-spacing: -0.7px;
+}
+
+.c0 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1.75rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+  }
+}
+
+<div
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D wrapperAlignment"
+>
+  <div
+    class="TDS_Box-modules__betweenBottomMargin-1___43ZDj TDS_Box-modules__stack___33m4D"
+  >
+    <span
+      class="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+    >
+      top text
+    </span>
+    <div
+      class="TDS_Box-modules__betweenRightMargin-1___XT_b2 TDS_Box-modules__inline___jTHcz priceWrapper small"
+    >
+      <div
+        class="TDS_Box-modules__betweenRightMargin-1___XT_b2 TDS_Box-modules__inline___jTHcz"
+      >
+        <span
+          class="c0"
+          data-testid="dollarSign"
+        >
+          $
+        </span>
+        <span
+          class="c1"
+          data-testid="priceValue"
+        >
+          25
+        </span>
+      </div>
+      <span
+        class="c2"
+        data-testid="rateText"
+      >
+        /month
+      </span>
+    </div>
+  </div>
+  <hr
+    class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+  />
+  <span
+    class="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+  >
+    bottom text
+  </span>
+</div>
 `;
