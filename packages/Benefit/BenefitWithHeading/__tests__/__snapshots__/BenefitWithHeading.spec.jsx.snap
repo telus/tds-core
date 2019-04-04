@@ -1,6 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BenefitWithHeading renders with icons set in each item 1`] = `
+.c0 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c0 .c1 {
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
 <ul
   class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
 >
@@ -35,7 +52,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     </div>
     <div>
       <div
-        class="TDS_Heading-modules__h4___2qPXM TDS_Heading-modules__smallHeading___17qD7 TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__default___1xJOW"
+        class="c0"
       >
         Some heading
       </div>
@@ -77,7 +94,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     </div>
     <div>
       <div
-        class="TDS_Heading-modules__h4___2qPXM TDS_Heading-modules__smallHeading___17qD7 TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__default___1xJOW"
+        class="c0"
       >
         Some other heading
       </div>
@@ -92,6 +109,23 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
 `;
 
 exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
+.c0 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c0 .c1 {
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
 <ul
   class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
 >
@@ -126,7 +160,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     </div>
     <div>
       <div
-        class="TDS_Heading-modules__h4___2qPXM TDS_Heading-modules__smallHeading___17qD7 TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__default___1xJOW"
+        class="c0"
       >
         Some heading
       </div>
@@ -168,7 +202,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     </div>
     <div>
       <div
-        class="TDS_Heading-modules__h4___2qPXM TDS_Heading-modules__smallHeading___17qD7 TDS_Heading-modules__wordBreak___UVmND TDS_Spacing-modules__noSpacing___XPYDG TDS_Heading-modules__default___1xJOW"
+        class="c0"
       >
         Some other heading
       </div>
