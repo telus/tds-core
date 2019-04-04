@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount, render } from 'enzyme'
 
 import HeadingSup from '../HeadingSup'
 
@@ -7,15 +7,15 @@ describe('HeadingSup', () => {
   const doShallow = props => shallow(<HeadingSup {...props}>Some content</HeadingSup>)
 
   it('renders', () => {
-    const headingSup = doShallow()
+    const headingSup = render(<HeadingSup>Some content</HeadingSup>)
 
     expect(headingSup).toMatchSnapshot()
   })
 
-  it('renders an HTML sub tag', () => {
-    const headingSup = doShallow()
+  it('renders an HTML sup tag', () => {
+    const headingSup = mount(<HeadingSup>The content</HeadingSup>)
 
-    expect(headingSup).toHaveDisplayName('sup')
+    expect(headingSup).toContainMatchingElement('sup')
   })
 
   it('passes additional attributes to the sup element', () => {
