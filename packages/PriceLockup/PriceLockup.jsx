@@ -1,11 +1,71 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import Box from '@tds/core-box'
+import { media } from '@tds/core-responsive'
+import {
+  medium,
+  large,
+  wordBreak,
+  helveticaNeueLight45,
+  helveticaNeueThin35,
+} from '@tds/shared-typography'
+import { spacing } from '@tds/shared-styles'
+import { StyledHeading } from '@tds/core-heading'
+
 import { warn } from '../../shared/utils/warn'
 import joinClassNames from '../../shared/utils/joinClassNames'
 import styles from './PriceLockup.modules.scss'
+
+const priceValue = {
+  small: {
+    fontSize: '1.5rem',
+    ...helveticaNeueLight45,
+    letterSpacing: '-0.7px',
+    ...media.from('md').css({
+      fontSize: '1.75rem',
+      letterSpacing: '-0.8px',
+    }),
+  },
+  medium: {
+    fontSize: '1.75rem',
+    letterSpacing: '-1.6px',
+    ...helveticaNeueLight45,
+    ...media.from('md').css({
+      ...helveticaNeueThin35,
+      fontSize: '2.75rem',
+      letterSpacing: 0,
+    }),
+  },
+  large: {
+    fontSize: '2.75rem',
+    ...helveticaNeueThin35,
+    ...media.from('md').css({
+      fontSize: '4.5rem',
+      letterSpacing: '0.2px',
+    }),
+  },
+}
+
+const StyledRateText = styled.span(({ size }) => (size === 'large' ? large : medium))
+const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size }) => {
+  return {
+    lineHeight: 1,
+    ...priceValue[size],
+  }
+})
+const StyledDollarSign = styled.span(({ size }) => {
+  if (size === 'small') {
+    return medium
+  }
+  return large
+})
+const StyledLargeDollarSign = styled(StyledHeading)({
+  lineHeight: '1.3',
+})
 
 /**
  * A component presenting TELUS product pricing information.
@@ -14,18 +74,17 @@ import styles from './PriceLockup.modules.scss'
 
 const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText }) => {
   const renderDollarSign = () => {
-    let className
-    if (size === 'small') {
-      className = styles.mediumText
-    } else if (size === 'medium') {
-      className = styles.largeText
-    } else if (size === 'large') {
-      className = styles.headingText
+    if (size === 'large') {
+      return (
+        <StyledLargeDollarSign data-testid="dollarSign" as="span" level="h1">
+          &#36;
+        </StyledLargeDollarSign>
+      )
     }
     return (
-      <span data-testid="dollarSign" className={className}>
+      <StyledDollarSign data-testid="dollarSign" size={size}>
         &#36;
-      </span>
+      </StyledDollarSign>
     )
   }
 
@@ -33,12 +92,9 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     return (
       <Box between={size === 'large' ? 2 : 1} inline>
         {signDirection === 'left' ? renderDollarSign() : undefined}
-        <span
-          data-testid="priceValue"
-          className={joinClassNames(styles.priceValueSign, styles[`priceValueSign${size}`])}
-        >
+        <StyledPriceValue data-testid="priceValue" size={size}>
           {price}
-        </span>
+        </StyledPriceValue>
         {signDirection === 'right' ? renderDollarSign() : undefined}
       </Box>
     )
@@ -77,12 +133,9 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
         >
           {renderPriceValueSign()}
           {rateText && (
-            <span
-              data-testid="rateText"
-              className={size === 'large' ? styles.largeText : styles.mediumText}
-            >
+            <StyledRateText data-testid="rateText" size={size}>
               {rateText}
-            </span>
+            </StyledRateText>
           )}
         </Box>
       </Box>
