@@ -1,8 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading renders 1`] = `
+.c0 {
+  word-wrap: break-word;
+  color: #4b286d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  -webkit-letter-spacing: -0.7px;
+  -moz-letter-spacing: -0.7px;
+  -ms-letter-spacing: -0.7px;
+  letter-spacing: -0.7px;
+}
+
+.c0 .c1 {
+  font-size: 1rem;
+  top: -0.8em;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 1.75rem;
+    line-height: 1.29;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .c1 {
+    font-size: 1rem;
+    top: -0.7em;
+  }
+}
+
 <h2
-  class="h2 secondary"
+  class="c0"
 >
   The heading
 </h2>

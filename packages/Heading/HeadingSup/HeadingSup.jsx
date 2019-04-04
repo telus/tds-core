@@ -1,8 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
+import styled from 'styled-components'
+
+import { baseSupSubScripts } from '@tds/shared-typography'
 import safeRest from '../../../shared/utils/safeRest'
 
-import styles from '../Heading.modules.scss'
+export const StyledHeadingSup = styled.sup(baseSupSubScripts)
 
 /**
  * Superscript text for `Heading` an as HTML `<sup>` element.
@@ -10,9 +14,7 @@ import styles from '../Heading.modules.scss'
  * _This component can only be accessed as a name-spaced component: `Heading.Sup`._
  */
 const HeadingSup = ({ children, ...rest }) => (
-  <sup {...safeRest(rest)} className={styles.sup}>
-    {children}
-  </sup>
+  <StyledHeadingSup {...safeRest(rest)}>{children}</StyledHeadingSup>
 )
 
 HeadingSup.propTypes = {

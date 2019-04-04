@@ -37,22 +37,16 @@ describe('Heading', () => {
 
   it('renders a heading in the specified level and specified tag, when level and tag are different', () => {
     const heading = doMount({ level: 'h4', tag: 'h3' })
-
-    expect(heading).toHaveClassName('h4')
     expect(heading).toHaveDisplayName('h3')
   })
 
   it('renders as a span', () => {
     const heading = doMount({ level: 'h4', tag: 'span' })
-
-    expect(heading).toHaveClassName('h4')
     expect(heading).toHaveDisplayName('span')
   })
 
   it('renders as a div', () => {
     const heading = doMount({ level: 'h4', tag: 'div' })
-
-    expect(heading).toHaveClassName('h4')
     expect(heading).toHaveDisplayName('div')
   })
 
@@ -66,23 +60,23 @@ describe('Heading', () => {
     it('can be inverted', () => {
       const heading = doMount({ invert: true })
 
-      expect(heading).toHaveClassName('inverted')
+      expect(heading).toHaveStyleRule('color', '#fff')
     })
 
     it('is secondary for h1 and h2', () => {
       let heading = doMount({ level: 'h1' })
-      expect(heading).toHaveClassName('secondary')
+      expect(heading).toHaveStyleRule('color', '#4b286d')
 
       heading = doMount({ level: 'h2' })
-      expect(heading).toHaveClassName('secondary')
+      expect(heading).toHaveStyleRule('color', '#4b286d')
     })
 
     it('is default for h3 and h4', () => {
       let heading = doMount({ level: 'h3' })
-      expect(heading).toHaveClassName('default')
+      expect(heading).toHaveStyleRule('color', '#2a2c2e')
 
       heading = doMount({ level: 'h4' })
-      expect(heading).toHaveClassName('default')
+      expect(heading).toHaveStyleRule('color', '#2a2c2e')
     })
   })
 
