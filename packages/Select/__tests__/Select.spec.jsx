@@ -60,7 +60,7 @@ describe('Select', () => {
   it('positions the down caret so that the text does not overlap it', () => {
     const { findSelectElement } = doMount()
 
-    expect(findSelectElement()).toHaveStyle('paddingRight', 'calc(16px + 2rem)')
+    expect(findSelectElement()).toHaveClassName('withoutFeedbackIcon')
   })
 
   describe('label', () => {
@@ -151,44 +151,10 @@ describe('Select', () => {
     })
   })
 
-  describe('focusing', () => {
-    it('can be focused', () => {
-      const { findSelectElement, focus, blur } = doMount()
-      expect(findSelectElement()).toHaveClassName('default')
-
-      focus()
-      expect(findSelectElement()).toHaveClassName('focus')
-
-      blur()
-      expect(findSelectElement()).not.toHaveClassName('focus')
-    })
-
-    it('will notify when focus is gained', () => {
-      const onFocusMock = jest.fn()
-      const event = { target: { value: 'the value' } }
-
-      const { focus } = doMount({ onFocus: onFocusMock })
-      focus(event)
-
-      expect(onFocusMock).toHaveBeenCalledWith(expect.objectContaining(event))
-    })
-
-    it('will notify when focus is lost', () => {
-      const onBlurMock = jest.fn()
-      const event = { target: { value: 'the value' } }
-
-      const { blur } = doMount({ onBlur: onBlurMock })
-      blur(event)
-
-      expect(onBlurMock).toHaveBeenCalledWith(expect.objectContaining(event))
-    })
-  })
-
   describe('feedback states', () => {
-    it('can have a success feedback state', () => {
-      const { findSelectElement, findFeedbackIconFade } = doMount({ feedback: 'success' })
+    it('renders a checkmark icon on success feedback state', () => {
+      const { findFeedbackIconFade } = doMount({ feedback: 'success' })
 
-      expect(findSelectElement()).toHaveClassName('success')
       expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
           symbol="checkmark"
@@ -199,11 +165,10 @@ describe('Select', () => {
       )
     })
 
-    it('can have an error feedback state', () => {
-      const { select, findSelectElement, findFeedbackIconFade } = doMount({ feedback: 'error' })
+    it('renders an error icon on error feedback state', () => {
+      const { select, findFeedbackIconFade } = doMount({ feedback: 'error' })
 
       expect(select.find(DecorativeIcon)).toHaveProp('variant', 'error')
-      expect(findSelectElement()).toHaveClassName('error')
       expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
           symbol="exclamationPointCircle"
@@ -212,16 +177,6 @@ describe('Select', () => {
           a11yText="The value of this input field is invalid."
         />
       )
-    })
-
-    it('hides the feedback state while focused', () => {
-      const { findSelectElement, focus, blur } = doMount({ feedback: 'success' })
-
-      focus()
-      expect(findSelectElement()).not.toHaveClassName('success')
-
-      blur()
-      expect(findSelectElement()).toHaveClassName('success')
     })
 
     it('fades the feedback icon in on focus lost and out on focus gained', () => {
@@ -236,7 +191,7 @@ describe('Select', () => {
     it('ensures that the contents do not overlap the icons', () => {
       const { findSelectElement } = doMount({ feedback: 'success' })
 
-      expect(findSelectElement()).toHaveStyle('paddingRight', 'calc(32px + 3rem)')
+      expect(findSelectElement()).toHaveClassName('withFeedbackIcon')
     })
   })
 

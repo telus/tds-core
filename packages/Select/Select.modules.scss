@@ -6,7 +6,7 @@
   background-color: $color-white;
 }
 
-.select {
+.base {
   composes: height from '../../shared/styles/Forms.modules.scss';
 
   // Hide the arrows
@@ -20,7 +20,17 @@
 
 .iconsPosition {
   composes: absolute centerVertically from '../../shared/styles/Position.modules.scss';
-  composes: iconRight from '../../shared/components/FormField/FormField.modules.scss';
+  composes: iconRight from '../FormField/FormField.modules.scss';
 
   pointer-events: none;
+}
+
+.withFeedbackIcon {
+  composes: base;
+  padding: 0.5rem 4rem 0.5rem 1rem; // See: addRightPadding.js
+}
+
+.withoutFeedbackIcon {
+  composes: base;
+  padding: 0.5rem 3rem 0.5rem 1rem; // See: addRightPadding.js
 }

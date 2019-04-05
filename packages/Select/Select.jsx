@@ -5,11 +5,9 @@ import { componentWithName } from '@tds/util-prop-types'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import Box from '@tds/core-box'
 
-import joinClassNames from '../../shared/utils/joinClassNames'
+import FormField, { FeedbackIcon } from '@tds/shared-form-field'
 
-import FormField from '../../shared/components/FormField/FormField'
-import FeedbackIcon from '../../shared/components/FormField/FeedbackIcon'
-import addRightPadding from '../../shared/components/FormField/addRightPadding'
+import joinClassNames from '../../shared/utils/joinClassNames'
 
 import styles from './Select.modules.scss'
 import iconWrapperStyles from '../../shared/styles/IconWrapper.modules.scss'
@@ -30,8 +28,10 @@ const Select = ({ options, placeholder, ...props }) => {
         <div className={styles.wrapper}>
           <select
             {...selectProps}
-            className={joinClassNames(className, styles.select)}
-            style={addRightPadding(showFeedbackIcon ? 2 : 1)}
+            className={joinClassNames(
+              className,
+              showFeedbackIcon ? styles.withFeedbackIcon : styles.withoutFeedbackIcon
+            )}
           >
             {placeholder && (
               <option value="" disabled>
