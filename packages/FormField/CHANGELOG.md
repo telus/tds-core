@@ -7,93 +7,48 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @tds/shared-form-field
 
-
-
-
-
 ## [2.1.8](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.7...@tds/shared-form-field@2.1.8) (2019-03-28)
 
 **Note:** Version bump only for package @tds/shared-form-field
-
-
-
-
 
 ## [2.1.7](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.6...@tds/shared-form-field@2.1.7) (2019-03-28)
 
 **Note:** Version bump only for package @tds/shared-form-field
 
-
-
-
-
 ## [2.1.6](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.5...@tds/shared-form-field@2.1.6) (2019-03-20)
 
 **Note:** Version bump only for package @tds/shared-form-field
-
-
-
-
 
 ## [2.1.5](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.4...@tds/shared-form-field@2.1.5) (2019-03-20)
 
 **Note:** Version bump only for package @tds/shared-form-field
 
-
-
-
-
 ## [2.1.4](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.3...@tds/shared-form-field@2.1.4) (2019-03-18)
 
 **Note:** Version bump only for package @tds/shared-form-field
-
-
-
-
 
 ## [2.1.3](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.2...@tds/shared-form-field@2.1.3) (2019-03-18)
 
 **Note:** Version bump only for package @tds/shared-form-field
 
-
-
-
-
 ## [2.1.2](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.1...@tds/shared-form-field@2.1.2) (2019-03-11)
 
 **Note:** Version bump only for package @tds/shared-form-field
-
-
-
-
 
 ## [2.1.1](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.0...@tds/shared-form-field@2.1.1) (2019-03-11)
 
 **Note:** Version bump only for package @tds/shared-form-field
 
-
-
-
-
 # [2.1.0](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.0.1...@tds/shared-form-field@2.1.0) (2019-03-07)
-
 
 ### Features
 
-* **shared-form-field:** add hint position for input ([cf9d87c](https://github.com/telus/tds-core/commit/cf9d87c))
-* **shared-form-field:** update input error notification to accept node ([d41284c](https://github.com/telus/tds-core/commit/d41284c))
-
-
-
-
+- **shared-form-field:** add hint position for input ([cf9d87c](https://github.com/telus/tds-core/commit/cf9d87c))
+- **shared-form-field:** update input error notification to accept node ([d41284c](https://github.com/telus/tds-core/commit/d41284c))
 
 ## [2.0.1](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.0.0...@tds/shared-form-field@2.0.1) (2019-03-05)
 
 **Note:** Version bump only for package @tds/shared-form-field
-
-
-
-
 
 # [2.0.0](https://github.com/telus/tds-core/compare/@tds/shared-form-field@1.0.11...@tds/shared-form-field@2.0.0) (2019-02-20)
 

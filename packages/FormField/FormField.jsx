@@ -7,13 +7,10 @@ import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
 
-import safeRest from '../../utils/safeRest'
-import generateId from '../../utils/generateId/generateId'
-
-import Flexbox from '../Flexbox/Flexbox'
+import safeRest from '../../shared/utils/safeRest'
+import generateId from '../../shared/utils/generateId/generateId'
 
 import styles from './FormField.modules.scss'
-import positionStyles from '../../styles/Position.modules.scss'
 
 const getClassName = (feedback, focus, disabled) => {
   if (disabled) {
@@ -35,11 +32,7 @@ const showFeedbackIcon = (feedback, focus) =>
   (feedback === 'success' || feedback === 'error') && !focus
 
 const renderLabel = (label, hint, fieldId, tooltip) => (
-  <Flexbox
-    direction="row"
-    justifyContent="spaceBetween"
-    dangerouslyAddClassName={positionStyles.relative}
-  >
+  <Box inline between="space-between">
     <label htmlFor={fieldId.identity()}>
       <Box inline tag="span" between={2} dangerouslyAddClassName={styles.alignCenter}>
         <Text size="medium" bold>
@@ -50,7 +43,7 @@ const renderLabel = (label, hint, fieldId, tooltip) => (
     </label>
 
     {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
-  </Flexbox>
+  </Box>
 )
 
 const renderError = (error, errorId) => (
