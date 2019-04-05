@@ -1,13 +1,4 @@
 @import '~@tds/core-colours/colours';
-@import '~@tds/shared-typography/Typography.modules.scss';
-
-/* LABEL */
-
-.alignCenter {
-  align-items: center;
-}
-
-/* END LABEL */
 
 /* FIELD */
 
@@ -15,13 +6,10 @@
   width: 100%;
 
   margin: 0;
-  // This vertical padding fixes an IE11 bug that was causing the input value to jump slightly and get cut off.
-  composes: verticalPadding-2 horizontalPadding-3 from '../../../packages/Box/Box.modules.scss';
+  composes: thin rounded from '../../shared/styles/Borders.modules.scss';
 
-  composes: thin rounded from '../../styles/Borders.modules.scss';
-
-  composes: font from '../../styles/Forms.modules.scss';
-  composes: medium mediumFont color;
+  composes: font from '../../shared/styles/Forms.modules.scss';
+  composes: medium mediumFont color from '../typography/Typography.modules.scss';
 
   outline: 0;
 
@@ -84,3 +72,7 @@
 }
 
 /* END ICON */
+
+.alignCenter {
+  align-items: center;
+}

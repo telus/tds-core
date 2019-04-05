@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import StandaloneIcon from '@tds/core-standalone-icon'
 import { Fade } from '@tds/shared-animation'
 
-import iconWrapperStyles from '../../styles/IconWrapper.modules.scss'
+import iconWrapperStyles from '../../shared/styles/IconWrapper.modules.scss'
 
 const renderIcon = feedback => {
   if (feedback === 'success') {
