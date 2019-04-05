@@ -173,44 +173,10 @@ describe('Input', () => {
     })
   })
 
-  describe('focusing', () => {
-    it('can be focused', () => {
-      const { findInputElement, focus, blur } = doMount()
-      expect(findInputElement()).toHaveClassName('default')
-
-      focus()
-      expect(findInputElement()).toHaveClassName('focus')
-
-      blur()
-      expect(findInputElement()).not.toHaveClassName('focus')
-    })
-
-    it('will notify when focus is gained', () => {
-      const onFocusMock = jest.fn()
-      const event = { target: { value: 'the value' } }
-
-      const { focus } = doMount({ onFocus: onFocusMock })
-      focus(event)
-
-      expect(onFocusMock).toHaveBeenCalledWith(expect.objectContaining(event))
-    })
-
-    it('will notify when focus is lost', () => {
-      const onBlurMock = jest.fn()
-      const event = { target: { value: 'the value' } }
-
-      const { blur } = doMount({ onBlur: onBlurMock })
-      blur(event)
-
-      expect(onBlurMock).toHaveBeenCalledWith(expect.objectContaining(event))
-    })
-  })
-
   describe('feedback states', () => {
-    it('can have a success feedback state', () => {
-      const { findInputElement, findFeedbackIconFade } = doMount({ feedback: 'success' })
+    it('renders a checkmark icon on success feedback state', () => {
+      const { findFeedbackIconFade } = doMount({ feedback: 'success' })
 
-      expect(findInputElement()).toHaveClassName('success')
       expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
           symbol="checkmark"
@@ -221,10 +187,9 @@ describe('Input', () => {
       )
     })
 
-    it('can have an error feedback state', () => {
-      const { findInputElement, findFeedbackIconFade } = doMount({ feedback: 'error' })
+    it('renders an error icon on error feedback state', () => {
+      const { findFeedbackIconFade } = doMount({ feedback: 'error' })
 
-      expect(findInputElement()).toHaveClassName('error')
       expect(findFeedbackIconFade()).toContainReact(
         <StandaloneIcon
           symbol="exclamationPointCircle"
@@ -233,16 +198,6 @@ describe('Input', () => {
           a11yText="The value of this input field is invalid."
         />
       )
-    })
-
-    it('hides the feedback state while focused', () => {
-      const { findInputElement, focus, blur } = doMount({ feedback: 'success' })
-
-      focus()
-      expect(findInputElement()).not.toHaveClassName('success')
-
-      blur()
-      expect(findInputElement()).toHaveClassName('success')
     })
 
     it('fades the feedback icon in on focus lost and out on focus gained', () => {
@@ -257,7 +212,7 @@ describe('Input', () => {
     it('ensures that the contents do not overlap the icons', () => {
       const { findInputElement } = doMount({ feedback: 'success' })
 
-      expect(findInputElement()).toHaveStyle('paddingRight', 'calc(16px + 2rem)')
+      expect(findInputElement()).toHaveClassName('withFeedbackIcon')
     })
   })
 
