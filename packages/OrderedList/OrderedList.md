@@ -5,12 +5,6 @@
     TELUS Business customer activations. Not available for Consumer accounts. Ask a TELUS
     representative for other eligibility requirements
   </OrderedList.Item>
-  {false && (
-    <OrderedList.Item>
-      500 nationwide minutes share with other TELUS shareable mobility plans on the same account
-      *for limited time only*
-    </OrderedList.Item>
-  )}
   <OrderedList.Item>
     350 nationwide minutes share with other TELUS shareable mobility plans on the same account
   </OrderedList.Item>
