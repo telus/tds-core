@@ -5,13 +5,13 @@ exports[`TextArea renders 1`] = `
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
   <div
-    class="row justifyContentSpaceBetween relative"
+    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
   >
     <label
       for="the-textarea"
     >
       <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz alignCenter"
+        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz TDS_FormField-modules__alignCenter___3y2Mj"
       >
         <span
           class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
@@ -26,7 +26,7 @@ exports[`TextArea renders 1`] = `
   >
     <textarea
       aria-invalid="false"
-      class="default preventWidthResizing"
+      class="TDS_FormField-modules__default___3LtXb TDS_FormField-modules__formField___29WmQ TDS_Borders-modules__thin___1JHOl TDS_Borders-modules__rounded___3df1Q TDS_Forms-modules__font___g7OGX TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8 TDS_FormField-modules__defaultBgColor___NByyE TDS_FormField-modules__defaultBoxShadow___21E8t withoutFeedbackIcon"
       id="the-textarea"
     />
     <div
@@ -41,13 +41,13 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
   <div
-    class="row justifyContentSpaceBetween relative"
+    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
   >
     <label
       for="the-textarea"
     >
       <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz alignCenter"
+        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz TDS_FormField-modules__alignCenter___3y2Mj"
       >
         <span
           class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
@@ -62,9 +62,8 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   >
     <textarea
       aria-invalid="true"
-      class="error preventWidthResizing"
+      class="TDS_FormField-modules__error___2pMXQ TDS_FormField-modules__formField___29WmQ TDS_Borders-modules__thin___1JHOl TDS_Borders-modules__rounded___3df1Q TDS_Forms-modules__font___g7OGX TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8 TDS_FormField-modules__defaultBgColor___NByyE TDS_FormField-modules__defaultBoxShadow___21E8t withFeedbackIcon"
       id="the-textarea"
-      style="padding-right:calc(16px + 2rem)"
     />
     <div
       class="feedbackIconPosition"
@@ -73,7 +72,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="fixLineHeight"
+          class="TDS_IconWrapper-modules__fixLineHeight___3tqIl"
         >
           <i
             aria-label="The value of this input field is invalid."

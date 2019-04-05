@@ -11,7 +11,17 @@
 
 .feedbackIconPosition {
   composes: absolute from '../../shared/styles/Position.modules.scss';
-  composes: iconRight from '../../shared/components/FormField/FormField.modules.scss';
+  composes: iconRight from '../FormField/FormField.modules.scss';
 
   top: 0.5rem;
+}
+
+.withFeedbackIcon {
+  composes: preventWidthResizing;
+  padding: 0.5rem 3rem 0.5rem 1rem; // See: addRightPadding.js
+}
+
+.withoutFeedbackIcon {
+  composes: preventWidthResizing;
+  padding: 0.5rem 1rem;
 }
