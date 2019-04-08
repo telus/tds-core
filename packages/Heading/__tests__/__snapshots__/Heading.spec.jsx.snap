@@ -38,6 +38,7 @@ exports[`Heading renders 1`] = `
 
 <h2
   class="c0"
+  data-testid="heading"
 >
   The heading
 </h2>

@@ -83,7 +83,7 @@ export const StyledHeading = styled.h1(wordBreak, ({ level, invert }) => {
  */
 const Heading = ({ level, tag = level, invert, children, ...rest }) => {
   return (
-    <StyledHeading {...safeRest(rest)} as={tag} level={level} invert={invert}>
+    <StyledHeading {...safeRest(rest)} as={tag} level={level} invert={invert} data-testid="heading">
       {children}
     </StyledHeading>
   )
