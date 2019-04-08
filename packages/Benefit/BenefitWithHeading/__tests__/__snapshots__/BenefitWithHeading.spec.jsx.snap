@@ -53,6 +53,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     <div>
       <div
         class="c0"
+        data-testid="heading"
       >
         Some heading
       </div>
@@ -95,6 +96,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     <div>
       <div
         class="c0"
+        data-testid="heading"
       >
         Some other heading
       </div>
@@ -161,6 +163,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     <div>
       <div
         class="c0"
+        data-testid="heading"
       >
         Some heading
       </div>
@@ -203,6 +206,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     <div>
       <div
         class="c0"
+        data-testid="heading"
       >
         Some other heading
       </div>
