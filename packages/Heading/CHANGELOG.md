@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.2.1...@tds/core-heading@2.0.0) (2019-04-08)
+
+
+### Features
+
+* **core-heading:** upgrade to styled-components ([e95dd35](https://github.com/telusdigital/tds/commit/e95dd35))
+
+
+### BREAKING CHANGES
+
+* **core-heading:** upgrade to styled-components
+
+
+
+
+
 ## [1.2.1](https://github.com/telusdigital/tds/compare/@tds/core-heading@1.2.0...@tds/core-heading@1.2.1) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-heading

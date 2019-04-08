@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.15](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@1.0.14...@tds/core-price-lockup@1.0.15) (2019-04-08)
+
+**Note:** Version bump only for package @tds/core-price-lockup
+
+
+
+
+
 ## [1.0.14](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@1.0.13...@tds/core-price-lockup@1.0.14) (2019-04-08)
 
 **Note:** Version bump only for package @tds/core-price-lockup
