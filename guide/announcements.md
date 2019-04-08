@@ -4,6 +4,105 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
+## March 2019
+
+### New core components ✨
+
+**Benefit**
+Want a clear, concise and design-approved way to tell your users how great something is? Benefit is for you! Take a look over at the [Benefit docs (Heading)](https://tds.telus.com/components/index.html#!/BenefitWithHeading) and [Benefit docs (No Heading)](https://tds.telus.com/components/index.html#!/BenefitNoHeading)
+
+**Video** and **WebVideo**
+TDS now offers a consistent video experience! Have a video hosted on TELUS servers? Use the Video component to take advantage of a full video player experience! Want to use a YouTube video? We have a component for that too! WebVideo will insert YouTube videos into your page along with using a TELUS branded splash screen. Take a look at the [Video docs](https://tds.telus.com/components/index.html#!/Video) and [WebVideo docs](https://tds.telus.com/components/index.html#!/WebVideo)
+
+### Features 🎁
+
+**DecorativeIcon 1.1.0**
+
+DecorativeIcon has gotten a new update that has over 150+ icons!
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%401.1.0)
+- [Documentation](https://tds.telus.com/components/index.html#!/SVGIcon)
+
+**CSSReset 1.2.0**
+
+New optional Sass mixin to help with page height. Shoutouts to Sean McCullough for the contribution!
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-css-reset%401.2.0)
+- [Documentation](https://tds.telus.com/components/index.html#!/CssReset)
+
+**Input 2.1.0**
+
+New `hintPosition` prop, now the Input can have a hint displayed below its label. Shoutouts to Ally Hui for the contribution!
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%402.1.0)
+- [Documentation](https://tds.telus.com/components/index.html#!/Input)
+
+### Fixes 🔧
+
+**FlexGrid 2.3.7**
+
+Remove Broadcast and Subscriber deprecation warnings.
+
+-[Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-flex-grid%402.3.7)
+
+**Colours 1.1.1**
+
+Properly export colours from commonjs. Thanks to Heather Vandervecht for bringing this issue to our attention.
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-colours%401.1.1)
+
+### Process upgrades 📈
+
+**Animation** is now a published component. While not intended for use outside of TDS components, this will have the effect of decreasing TDS component build sizes. Thanks to Andrew Lam for the contribution!
+
+### Styled Components upgrades 💅
+
+TDS is currently engaging in an initiative to upgrade all of our components to use the Styled Components CSS-in-JS framework. Check out the [Tech Forum issue](https://github.com/telus/technology-forum/issues/274) for more details!
+
+**A11yContent 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-a11y-content%402.0.0)
+
+**Button 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-button%402.0.0)
+
+**ButtonLink 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-button-link%402.0.0)
+
+**Colours 1.1.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-colours%401.1.0)
+
+**Image 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-image%402.0.0)
+
+**Strong 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-strong%402.0.0)
+
+**Small 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-small%402.0.0)
+
+**WaveDivider 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-wave-divider%402.0.0)
+
+### TDS sunset 🌅
+
+TDS is planning on sunsetting old versions of the design system. The dates are as follows:
+
+| TDS Version | Sunset Date       |
+| ----------- | ----------------- |
+| TDS v0.xx   | July 1 2019       |
+| TDS v1.xx   | September 1, 2019 |
+| TDS v2.xx   | February 1, 2020  |
+
+TDS V3 is TDS utilizing Styled Components. Please have your projects using the relevant versions upgraded by these dates! For more information, check out the [Tech Forum issue](https://github.com/telus/technology-forum/issues/285).
+
 ## February 2019
 
 ### Features 🎁
@@ -60,7 +159,7 @@ Thanks for the ongoing effort Ally Hui and Nicholas Mak! The conversation is con
 
 ## December 2018
 
-### New Core Components ✨
+### New core components ✨
 
 **Button Group**
 
