@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@1.0.13...@tds/core-display-heading@2.0.0) (2019-04-08)
+
+
+### Features
+
+* **core-display-heading:** upgrade to styled-components ([c574aa6](https://github.com/telusdigital/tds/commit/c574aa6))
+
+
+### BREAKING CHANGES
+
+* **core-display-heading:** upgrade to styled-components
+
+
+
+
+
 ## [1.0.13](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@1.0.12...@tds/core-display-heading@1.0.13) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-display-heading

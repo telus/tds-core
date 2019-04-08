@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.15](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@2.0.14...@tds/core-unordered-list@2.0.15) (2019-04-08)
+
+
+### Bug Fixes
+
+* **core-unordered-list:** allowed conditional render of children ([50ac94b](https://github.com/telusdigital/tds/commit/50ac94b))
+* **core-unordered-list:** converted children to array before filtering ([b6e9fb4](https://github.com/telusdigital/tds/commit/b6e9fb4))
+
+
+
+
+
 ## [2.0.14](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@2.0.13...@tds/core-unordered-list@2.0.14) (2019-04-04)
 
 **Note:** Version bump only for package @tds/core-unordered-list

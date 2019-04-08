@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telus/tds/compare/@tds/shared-form-field@2.1.9...@tds/shared-form-field@2.2.0) (2019-04-08)
+
+
+### Features
+
+* **shared-form-field:** make package public ([3e6155e](https://github.com/telus/tds/commit/3e6155e))
+
+
+
+
+
 ## [2.1.9](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.8...@tds/shared-form-field@2.1.9) (2019-04-04)
 
 **Note:** Version bump only for package @tds/shared-form-field

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.14...@tds/core-chevron-link@2.0.0) (2019-04-08)
+
+
+### Features
+
+* **core-chevron-link:** upgrade to styled-components ([54750bf](https://github.com/telusdigital/tds/commit/54750bf))
+
+
+### BREAKING CHANGES
+
+* **core-chevron-link:** upgrade to styled-components
+
+
+
+
+
 ## [1.1.14](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.13...@tds/core-chevron-link@1.1.14) (2019-04-04)
 
 **Note:** Version bump only for package @tds/core-chevron-link

@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-unordered-list",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

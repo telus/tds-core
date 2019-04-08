@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.15](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.14...@tds/core-ordered-list@2.0.15) (2019-04-08)
+
+
+### Bug Fixes
+
+* **core-ordered-list:** allowed conditional children rendering ([ab2ec94](https://github.com/telusdigital/tds/commit/ab2ec94))
+* **core-ordered-list:** converted children to array before filtering ([2bca8a0](https://github.com/telusdigital/tds/commit/2bca8a0))
+
+
+
+
+
 ## [2.0.14](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.13...@tds/core-ordered-list@2.0.14) (2019-04-04)
 
 **Note:** Version bump only for package @tds/core-ordered-list
