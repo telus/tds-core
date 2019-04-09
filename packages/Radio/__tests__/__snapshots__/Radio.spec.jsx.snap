@@ -5,6 +5,7 @@ exports[`Radio allows numbers as value 1`] = `
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
   <label
+    class="label"
     for="the-group_1"
   >
     <span
@@ -42,6 +43,7 @@ exports[`Radio renders 1`] = `
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
   <label
+    class="label"
     for="the-group_the-value"
   >
     <span
