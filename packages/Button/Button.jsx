@@ -1,94 +1,55 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
-import { componentWithName, or } from '@tds/util-prop-types'
-import { borders, forms } from '@tds/shared-styles'
-import { medium, boldFont } from '@tds/shared-typography'
-import { colorPrimary, colorSecondary, colorWhite, colorText } from '@tds/core-colours'
-import { media } from '@tds/core-responsive'
+import { colorPrimary, colorSecondary, colorWhite } from '@tds/core-colours'
 
-import { warn } from '../../shared/utils/warn'
 import safeRest from '../../shared/utils/safeRest'
 
-const preventDisabling = ({ disabled, ...props }) => {
-  if (disabled) {
-    warn('Button', 'Buttons are not able to be disabled.')
-  }
-
-  return props
-}
-
-const baseButton = {
-  margin: 0,
-  padding: '0 2rem',
-  cursor: 'pointer',
-  background: 'none',
-  transition: 'background 0.2s',
-  display: 'flex',
-  width: '100%',
-  alignItems: 'center',
-  justifyContent: 'center',
-
-  ...media.from('md').css({
-    display: 'inline-flex',
-    width: 'auto',
-    minWidth: '180px',
-  }),
-}
-
-export const StyledButton = styled.button(
-  borders.none,
-  borders.rounded,
-  medium,
-  boldFont,
-  forms.height,
-  forms.font,
-  baseButton,
-  ({ variant }) => {
-    let backgroundColor
-    let color
-    const hover = {
-      boxShadow: '0 0 0 1px',
-    }
-
-    if (variant === 'primary') {
-      backgroundColor = colorPrimary
+const telusTheme = {
+  generate: (props) => {
+    let color, backgroundColor
+    if (props.variant === 'secondary') {
       color = colorWhite
-      hover.backgroundColor = colorWhite
-      hover.color = colorPrimary
-    } else if (variant === 'secondary') {
       backgroundColor = colorSecondary
-      color = colorWhite
-      hover.backgroundColor = colorWhite
-      hover.color = colorSecondary
-    } else {
+    } else if (props.variant === 'inverted') {
+      color = colorSecondary
       backgroundColor = colorWhite
-      color = colorText
-      hover.backgroundColor = 'transparent'
-      hover.color = colorWhite
+    } else {
+      color = colorWhite
+      backgroundColor = colorPrimary
     }
 
     return {
-      backgroundColor,
+      borderRadius: '4px',
+      padding: '0px 2rem',
+      display: 'inline-block',
+      width: 'auto',
+      minWidth: '180px',
+      height: '3.25rem',
+      fontWeight: 700,
       color,
-      '&:hover': hover,
+      backgroundColor
     }
   }
+}
+
+const StyledButton = styled.button((props) => props.theme.generate(props))
+
+const BaseButton = ({ children, ...rest }) => (
+  <StyledButton {...safeRest(rest)}>
+    {children}
+  </StyledButton>
 )
 
 /**
  * @version ./package.json
  */
-const Button = ({ type, variant, children, ...rest }) => {
-  const restNoDisabled = preventDisabling(rest)
-
-  return (
-    <StyledButton {...safeRest(restNoDisabled)} variant={variant} type={type}>
-      {children}
-    </StyledButton>
-  )
-}
+const Button = (props) => (
+  <ThemeProvider theme={telusTheme}>
+    <BaseButton {...props} />
+  </ThemeProvider>
+)
 
 Button.propTypes = {
   /**
@@ -99,14 +60,12 @@ Button.propTypes = {
    * The style.
    */
   variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
-  /**
-   * The label. It can include the `A11yContent` component or strings.
-   */
-  children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
 }
+
 Button.defaultProps = {
   type: 'button',
   variant: 'primary',
 }
 
 export default Button
+export { BaseButton, StyledButton }

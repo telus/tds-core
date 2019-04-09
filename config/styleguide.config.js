@@ -235,6 +235,7 @@ module.exports = {
           components() {
             return [
               path.resolve('packages/Button/Button.jsx'),
+              path.resolve('packages/KDSButton/KDSButton.jsx'),
               path.resolve('packages/Input/Input.jsx'),
               path.resolve('packages/Checkbox/Checkbox.jsx'),
               path.resolve('packages/Radio/Radio.jsx'),
