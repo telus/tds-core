@@ -12,6 +12,10 @@
   flex: 1;
 }
 
+.label {
+  cursor: pointer;
+}
+
 .fakeInput {
   composes: thin from '../../styles/Borders.modules.scss';
 
