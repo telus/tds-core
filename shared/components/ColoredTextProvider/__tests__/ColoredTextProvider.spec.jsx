@@ -1,3 +1,4 @@
+/* eslint no-console: "error" */
 import React from 'react'
 import { mount } from 'enzyme'
 
@@ -23,8 +24,7 @@ describe('ColoredTextProvider', () => {
         <Link href="http://fake.com">a hyperlink</Link>
       </ColoredTextProvider>
     )
-
-    expect(coloredText.find('a')).toHaveClassName('inheritColor')
+    expect(coloredText.find('a')).toMatchSnapshot()
   })
 
   it('allows Text to inherit its color', () => {

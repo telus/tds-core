@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColoredTextProvider allows Link to inherit its color 1`] = `
+.c0:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c0:link,
+.c0:visited {
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:link,
+.c0:visited {
+  color: inherit;
+}
+
+<a
+  className="c0"
+  data-testid="link"
+  href="http://fake.com"
+  to={null}
+>
+  a hyperlink
+</a>
+`;
