@@ -7,8 +7,9 @@ import { colorPrimary, colorSecondary, colorWhite } from '@tds/core-colours'
 import safeRest from '../../shared/utils/safeRest'
 
 const telusTheme = {
-  generate: (props) => {
-    let color, backgroundColor
+  generate: props => {
+    let color
+    let backgroundColor
     if (props.variant === 'secondary') {
       color = colorWhite
       backgroundColor = colorSecondary
@@ -29,23 +30,21 @@ const telusTheme = {
       height: '3.25rem',
       fontWeight: 700,
       color,
-      backgroundColor
+      backgroundColor,
     }
-  }
+  },
 }
 
-const StyledButton = styled.button((props) => props.theme.generate(props))
+const StyledButton = styled.button(props => props.theme.generate(props))
 
 const BaseButton = ({ children, ...rest }) => (
-  <StyledButton {...safeRest(rest)}>
-    {children}
-  </StyledButton>
+  <StyledButton {...safeRest(rest)}>{children}</StyledButton>
 )
 
 /**
  * @version ./package.json
  */
-const Button = (props) => (
+const Button = props => (
   <ThemeProvider theme={telusTheme}>
     <BaseButton {...props} />
   </ThemeProvider>

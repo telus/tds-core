@@ -1,63 +1,136 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import { componentWithName } from '@tds/util-prop-types'
 
-import Box from '@tds/core-box'
-import Text from '@tds/core-text'
+import TDSBox from '@tds/core-box'
+import TDSText from '@tds/core-text'
 import { medium, mediumFont, color } from '@tds/shared-typography'
 import { borders, forms } from '@tds/shared-styles'
 import { colorShuttleGrey } from '@tds/core-colours'
 
-const StyledInput = styled.input(borders.thin, borders.rounded, forms.font, medium, mediumFont, color, {
-  width: '100%',
-  margin: 0,
-  minHeight: '3.25rem',
-  maxHeight: '3.25rem',
-  outline: 0,
-  textOverflow: 'ellipsis',
-  '&::placeholder': {
-    font: 'inherit',
-    letterSpacing: 'inherit',
-    lineHeight: 'inherit',
-    color: colorShuttleGrey
-  }
-}, ({ showFeedbackIcon }) => ({
-  padding: showFeedbackIcon ? '0.5rem 3rem 0.5rem 1rem' : '0.5rem 1rem'
-}))
+const telusTheme = {
+  label: {},
+  hint: {},
+}
 
-const StyledLabel = styled.label({})
-const StyledHint = styled.span({})
-
-/*
- * <Box inline tag="span" between={2}> needs to align-items: 'center'
- */
-
-const renderLabel = (label, hint, hintPosition, id) => (
-  <React.Fragment>
-    <Box inline between="space-between">
-      <label htmlFor={id}>
-        <Box inline tag="span" between={2}>
-          <Text size="medium" bold>
-            {label}
-          </Text>
-          {hint && hintPosition === 'inline' && <Text size="small">{hint}</Text>}
-        </Box>
-      </label>
-    </Box>
-    {hint && hintPosition === 'below' && (
-      <Paragraph id={id + '_hint'} size="small">
-        {hint}
-      </Paragraph>
-    )}
-  </React.Fragment>
+const StyledInput = styled.input(
+  borders.thin,
+  borders.rounded,
+  forms.font,
+  medium,
+  mediumFont,
+  color,
+  {
+    width: '100%',
+    margin: 0,
+    minHeight: '3.25rem',
+    maxHeight: '3.25rem',
+    outline: 0,
+    textOverflow: 'ellipsis',
+    '&::placeholder': {
+      font: 'inherit',
+      letterSpacing: 'inherit',
+      lineHeight: 'inherit',
+      color: colorShuttleGrey,
+    },
+  },
+  ({ showFeedbackIcon }) => ({
+    padding: showFeedbackIcon ? '0.5rem 3rem 0.5rem 1rem' : '0.5rem 1rem',
+  })
 )
 
-const Input = ({ label, hint, id, hintPosition, ...props}) => (
-  <Box between={2}>
-    {renderLabel(label, hint, hintPosition, id)}
-    <StyledInput {...props} id={id} />
-  </Box>
+const TDSparts = {
+  Box: TDSBox,
+  Label: {
+    component: TDSText,
+    props: {
+      size: 'medium',
+      bold: true,
+    },
+  },
+}
+
+const WhiteInput = ({ label, hint, id, hintPosition, parts, ...props }) => {
+  const { Label, Box } = parts
+  return (
+    <>
+      <Box inline between="space-between">
+        <label htmlFor={id}>
+          <Box inline tag="span" between={2}>
+            <Label.component {...Label.props}>{label}</Label.component>
+            {hint && hintPosition === 'inline' && <StyledHint size="small">{hint}</StyledHint>}
+          </Box>
+        </label>
+      </Box>
+      {hint && hintPosition === 'below' && (
+        <StyledHint id={`${id}_hint`} size="small">
+          {hint}
+        </StyledHint>
+      )}
+      <StyledInput />
+    </>
+  )
+}
+
+const Input = ({ label, hint, id, hintPosition, ...props }) => (
+  <ThemeProvider theme={telusTheme}>
+    <WhiteInput
+      {...props}
+      label={label}
+      hint={hint}
+      id={id}
+      hintPosition={hintPosition}
+      parts={TDSparts}
+    />
+  </ThemeProvider>
+)
+
+const StyledLabel = styled(TDSText)(props => props.theme.label)
+const StyledHint = styled(TDSText)(props => props.theme.hint)
+
+const InputAtom = props => <StyledInput {...props} />
+const LabelAtom = ({ id, hint, hintPosition, children, textComponent, parts, ...props }) => {
+  const { Label, Box } = parts
+  return (
+    <React.Fragment>
+      <Box inline between="space-between">
+        <label htmlFor={id}>
+          <Box inline tag="span" between={2}>
+            <Label.component {...Label.props}>{label}</Label.component>
+            {hint && hintPosition === 'inline' && <StyledHint size="small">{hint}</StyledHint>}
+          </Box>
+        </label>
+      </Box>
+      {hint && hintPosition === 'below' && (
+        <StyledHint id={`${id}_hint`} size="small">
+          {hint}
+        </StyledHint>
+      )}
+    </React.Fragment>
+  )
+}
+
+const ThemeableComponent = ({ children }) => children
+
+ThemeableComponent.Input = InputAtom
+ThemeableComponent.Label = LabelAtom
+
+const FakeInput = ({ label, hint, id, hintPosition, ...props }) => (
+  <ThemeProvider theme={telusTheme}>
+    <ThemeableComponent>
+      <ThemeableComponent.Label
+        id={id}
+        hint={hint}
+        hintPosition={hintPosition}
+        textComponent={Text}
+        parts={TDSparts}
+      >
+        {label}
+      </ThemeableComponent.Label>
+      <ThemeableComponent.Input id={id} />
+    </ThemeableComponent>
+  </ThemeProvider>
 )
 
 Input.propTypes = {
@@ -142,3 +215,4 @@ Input.defaultProps = {
 }
 
 export default Input
+export { WhiteInput, ThemeableComponent }

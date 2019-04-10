@@ -237,6 +237,7 @@ module.exports = {
               path.resolve('packages/Button/Button.jsx'),
               path.resolve('packages/KDSButton/KDSButton.jsx'),
               path.resolve('packages/Input/Input.jsx'),
+              path.resolve('packages/Input/KoodoInput.jsx'),
               path.resolve('packages/Checkbox/Checkbox.jsx'),
               path.resolve('packages/Radio/Radio.jsx'),
               path.resolve('packages/ButtonGroup/ButtonGroup.jsx'),

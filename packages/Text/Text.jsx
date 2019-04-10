@@ -13,21 +13,18 @@ import TextSup from './TextSup/TextSup'
  *
  * @version ./package.json
  */
-const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
+const Text = ({ block, bold, size, invert, children, className, ...rest }, context) => {
   const textColor = invert ? styles.invertedColor : styles.color
 
   const classes = joinClassNames(
     styles[size],
     bold ? styles.boldFont : styles[`${size}Font`],
     context.inheritColor ? styles.inheritColor : textColor,
-    block ? styles.blockText : null
+    block ? styles.blockText : null,
+    className
   )
 
-  return (
-    <span {...safeRest(rest)} className={classes}>
-      {children}
-    </span>
-  )
+  return <span className={classes}>{children}</span>
 }
 
 Text.propTypes = {

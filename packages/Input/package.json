@@ -27,6 +27,7 @@
     "@tds/core-box": "^1.1.0",
     "@tds/core-colours": "^1.1.1",
     "@tds/core-input-feedback": "^1.0.8",
+    "@tds/core-paragraph": "^1.0.10",
     "@tds/core-text": "^1.0.10",
     "@tds/shared-form-field": "^2.2.0",
     "@tds/shared-styles": "^1.0.1",
@@ -35,7 +36,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-paragraph": "^1.0.10",
     "@tds/core-standalone-icon": "^1.0.3",
     "@tds/shared-animation": "^1.1.2",
     "react-transition-group": "^2.2.1"
