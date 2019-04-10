@@ -1,11 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link renders 1`] = `
-<a
-  className="base"
+exports[`Link can be displayed with the default styles 1`] = `
+<Link__StyledLink
+  as="a"
+  context={
+    Object {
+      "inheritColor": undefined,
+    }
+  }
+  data-testid="link"
   href={null}
+  invert={false}
   to={null}
 >
   Go home
-</a>
+</Link__StyledLink>
+`;
+
+exports[`Link can be inverted 1`] = `
+<Link__StyledLink
+  as="a"
+  context={
+    Object {
+      "inheritColor": undefined,
+    }
+  }
+  data-testid="link"
+  href={null}
+  invert={true}
+  to={null}
+>
+  Go home
+</Link__StyledLink>
+`;
+
+exports[`Link renders 1`] = `
+<Link__StyledLink
+  as="a"
+  context={
+    Object {
+      "inheritColor": undefined,
+    }
+  }
+  data-testid="link"
+  href={null}
+  invert={false}
+  to={null}
+>
+  Go home
+</Link__StyledLink>
 `;
