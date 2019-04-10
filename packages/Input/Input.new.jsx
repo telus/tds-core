@@ -29,35 +29,34 @@ const StyledInput = styled.input(borders.thin, borders.rounded, forms.font, medi
 const StyledLabel = styled.label({})
 const StyledHint = styled.span({})
 
-/*
- * <Box inline tag="span" between={2}> needs to align-items: 'center'
- */
-
-const renderLabel = (label, hint, hintPosition, id) => (
-  <React.Fragment>
-    <Box inline between="space-between">
-      <label htmlFor={id}>
-        <Box inline tag="span" between={2}>
-          <Text size="medium" bold>
-            {label}
-          </Text>
-          {hint && hintPosition === 'inline' && <Text size="small">{hint}</Text>}
-        </Box>
-      </label>
-    </Box>
-    {hint && hintPosition === 'below' && (
-      <Paragraph id={id + '_hint'} size="small">
-        {hint}
-      </Paragraph>
-    )}
-  </React.Fragment>
+const LabelAtom = (props) => (
+  <Text {...props} size="medium" bold />
 )
 
-const Input = ({ label, hint, id, hintPosition, ...props}) => (
-  <Box between={2}>
-    {renderLabel(label, hint, hintPosition, id)}
-    <StyledInput {...props} id={id} />
-  </Box>
+const InputAtom = (props) => (
+  <StyledInput {...props} />
+)
+
+const HintAtom = (props) => (
+  <StyledHint {...props} />
+)
+
+const Component = ({ children, ...props }) => children(props)
+
+Component.Input = InputAtom
+Component.Label = LabelAtom
+
+const Input = (props) => (
+  <Component {...props}>
+    {({ label, ...props}) => (
+      <div css={{ position: 'relative' }}>
+        <Box between={2}>
+          <Component.Label>{label}</Component.Label>
+          <Component.Input {...props} />
+        </Box>
+      </div>
+    )}
+  </Component>
 )
 
 Input.propTypes = {
@@ -142,3 +141,4 @@ Input.defaultProps = {
 }
 
 export default Input
+export { Component }

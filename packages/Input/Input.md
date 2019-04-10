@@ -13,9 +13,9 @@ For information on how to use disabled Inputs, please refer to the [disabled for
 
 ```jsx
 <Box between={2}>
-  <Input label="First name" value="Harry" />
-  <Input type="tel" label="Mobile phone" pattern="[0-9]{10}" maxLength="10" />
-  <Input type="password" label="Tax ID" value="123456789" autoComplete="on" />
+  <Input label="First name" id="firstName" name="firstName" value="Harry" />
+  <Input type="tel" hint="Phone" label="Mobile phone" pattern="[0-9]{10}" maxLength="10" />
+  <Input type="password" hint="Foo" hintPosition="below" label="Tax ID" value="123456789" autoComplete="on" />
 </Box>
 ```
 

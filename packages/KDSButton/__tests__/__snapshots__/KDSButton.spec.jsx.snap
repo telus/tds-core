@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KDSButton renders 1`] = `
+.c0 {
+  background-color: white;
+  color: black;
+  font-weight: 900;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.c0:hover {
+  background-color: black;
+  color: white;
+}
+
+<button
+  class="c0"
+  type="button"
+/>
+`;

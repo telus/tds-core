@@ -1,63 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import { componentWithName } from '@tds/util-prop-types'
 
-import Box from '@tds/core-box'
-import Text from '@tds/core-text'
-import { medium, mediumFont, color } from '@tds/shared-typography'
-import { borders, forms } from '@tds/shared-styles'
-import { colorShuttleGrey } from '@tds/core-colours'
+import InputFeedback from '@tds/core-input-feedback'
 
-const StyledInput = styled.input(borders.thin, borders.rounded, forms.font, medium, mediumFont, color, {
-  width: '100%',
-  margin: 0,
-  minHeight: '3.25rem',
-  maxHeight: '3.25rem',
-  outline: 0,
-  textOverflow: 'ellipsis',
-  '&::placeholder': {
-    font: 'inherit',
-    letterSpacing: 'inherit',
-    lineHeight: 'inherit',
-    color: colorShuttleGrey
-  }
-}, ({ showFeedbackIcon }) => ({
-  padding: showFeedbackIcon ? '0.5rem 3rem 0.5rem 1rem' : '0.5rem 1rem'
-}))
+import FormField, { FeedbackIcon } from '@tds/shared-form-field'
+import joinClassNames from '../../shared/utils/joinClassNames'
 
-const StyledLabel = styled.label({})
-const StyledHint = styled.span({})
+import positionStyles from '../../shared/styles/Position.modules.scss'
+import styles from './Input.modules.scss'
 
-/*
- * <Box inline tag="span" between={2}> needs to align-items: 'center'
+/**
+ * @version ./package.json
  */
-
-const renderLabel = (label, hint, hintPosition, id) => (
-  <React.Fragment>
-    <Box inline between="space-between">
-      <label htmlFor={id}>
-        <Box inline tag="span" between={2}>
-          <Text size="medium" bold>
-            {label}
-          </Text>
-          {hint && hintPosition === 'inline' && <Text size="small">{hint}</Text>}
-        </Box>
-      </label>
-    </Box>
-    {hint && hintPosition === 'below' && (
-      <Paragraph id={id + '_hint'} size="small">
-        {hint}
-      </Paragraph>
+const Input = props => (
+  <FormField {...props}>
+    {({ className, ...inputProps }, showFeedbackIcon, feedback) => (
+      <div className={positionStyles.relative}>
+        <input
+          {...inputProps}
+          className={joinClassNames(
+            className,
+            showFeedbackIcon ? styles.withFeedbackIcon : styles.withoutFeedbackIcon
+          )}
+        />
+        {!inputProps.disabled && (
+          <div className={styles.iconsPosition}>
+            <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
+          </div>
+        )}
+      </div>
     )}
-  </React.Fragment>
-)
-
-const Input = ({ label, hint, id, hintPosition, ...props}) => (
-  <Box between={2}>
-    {renderLabel(label, hint, hintPosition, id)}
-    <StyledInput {...props} id={id} />
-  </Box>
+  </FormField>
 )
 
 Input.propTypes = {
@@ -140,5 +114,8 @@ Input.defaultProps = {
   onFocus: undefined,
   onBlur: undefined,
 }
+
+// TODO: This will no longer be necessary once InputFeedback is exported on its own. Removing this will be a breaking change.
+Input.Helper = InputFeedback
 
 export default Input
