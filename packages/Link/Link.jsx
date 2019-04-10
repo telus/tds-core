@@ -1,21 +1,42 @@
+/* eslint-disable no-dupe-keys */
+
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import { colorShark, colorWhite } from '@tds/core-colours'
+import styled from 'styled-components'
 import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
-import styles from './Link.modules.scss'
-
-const getClassName = (invert, context) => {
+const base = {
+  '&:focus': {
+    outline: 'dotted 1px Highlight',
+    outline: 'auto 5px -webkit-focus-ring-color',
+  },
+  '&:link,&:visited': {
+    color: colorShark,
+    textDecoration: 'underline',
+  },
+  '&:hover': {
+    textDecoration: 'underline',
+  },
+}
+const StyledLink = styled.a(base, ({ invert, context }) => {
   if (context.inheritColor) {
-    return styles.inheritColor
+    return {
+      '&:link,&:visited': {
+        color: 'inherit',
+      },
+    }
   }
   if (invert) {
-    return styles.inverted
+    return {
+      '&:link,&:visited': {
+        color: colorWhite,
+      },
+    }
   }
-
-  return styles.base
-}
+  return {}
+})
 
 /**
  * @version ./package.json
@@ -25,13 +46,16 @@ const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) 
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
 
-  return React.createElement(
-    reactRouterLinkComponent || 'a',
-    {
-      ...safeRest(rest),
-      className: getClassName(invert, context),
-    },
-    children
+  return (
+    <StyledLink
+      {...safeRest(rest)}
+      as={reactRouterLinkComponent || 'a'}
+      invert={invert}
+      context={context}
+      data-testid="link"
+    >
+      {children}
+    </StyledLink>
   )
 }
 Link.propTypes = {

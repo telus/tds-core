@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 
 import { warn } from '../../../shared/utils/warn'
 
@@ -9,7 +9,13 @@ jest.mock('../../../shared/utils/warn')
 
 describe('Link', () => {
   const doShallow = (overrides = {}) => shallow(<Link {...overrides}>Go home</Link>)
-
+  const doMount = (overrides = {}) => {
+    const link = mount(<Link {...overrides}>Some content</Link>)
+    return {
+      link: link.find(overrides.reactRouterLinkComponent || 'a'),
+      styledComponent: link.find('Link__StyledLink[data-testid="link"]'),
+    }
+  }
   afterEach(() => {
     jest.clearAllMocks()
   })
@@ -21,7 +27,7 @@ describe('Link', () => {
   })
 
   it('is an anchor HTML element when using the href attribute', () => {
-    const link = doShallow({ href: 'http://telus.com' })
+    const { link } = doMount({ href: 'http://telus.com' })
 
     expect(link).toHaveDisplayName('a')
     expect(link).toHaveProp('href', 'http://telus.com')
@@ -29,14 +35,14 @@ describe('Link', () => {
 
   it('renders a react router link element when passed as a prop', () => {
     const MyLink = () => <span />
-    const link = doShallow({ reactRouterLinkComponent: MyLink })
+    const { link } = doMount({ reactRouterLinkComponent: MyLink })
 
     expect(link).toMatchSelector('MyLink')
   })
 
   it('must use `reactRouterLinkComponent` and `to` props together', () => {
     const MyLink = () => <span />
-    let link = doShallow({ reactRouterLinkComponent: MyLink })
+    let link = doMount({ reactRouterLinkComponent: MyLink })
 
     expect(warn).toHaveBeenCalled()
 
@@ -50,14 +56,12 @@ describe('Link', () => {
 
   it('can be displayed with the default styles', () => {
     const link = doShallow()
-
-    expect(link).toHaveClassName('base')
+    expect(link).toMatchSnapshot()
   })
 
   it('can be inverted', () => {
     const link = doShallow({ invert: true })
-
-    expect(link).toHaveClassName('inverted')
+    expect(link).toMatchSnapshot()
   })
 
   it('passes additional attributes to the link element', () => {
