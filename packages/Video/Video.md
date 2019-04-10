@@ -48,7 +48,7 @@ Tracks are supplied to the player through the `tracks` prop, which accepts an ar
     {
       label: 'French',
       kind: 'captions',
-      language: 'en',
+      language: 'fr',
       source: 'french-captions.vtt',
     },
   ]}
@@ -63,7 +63,7 @@ Depending on the contents of your video, you may want to set a default volume, d
 ```jsx
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col xs={10}>
+    <FlexGrid.Col xs={12}>
       <Video
         sources={[
           {
@@ -93,7 +93,7 @@ Depending on the contents of your video, you may want to set a default volume, d
           {
             label: 'French',
             kind: 'captions',
-            language: 'en',
+            language: 'fr',
             source: 'french-captions.vtt',
           },
         ]}
