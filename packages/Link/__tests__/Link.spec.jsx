@@ -13,7 +13,6 @@ describe('Link', () => {
     const link = mount(<Link {...overrides}>Some content</Link>)
     return {
       link: link.find(overrides.reactRouterLinkComponent || 'a'),
-      styledComponent: link.find('Link__StyledLink[data-testid="link"]'),
     }
   }
   afterEach(() => {
@@ -55,12 +54,12 @@ describe('Link', () => {
   })
 
   it('can be displayed with the default styles', () => {
-    const link = doShallow()
+    const link = doMount()
     expect(link).toMatchSnapshot()
   })
 
   it('can be inverted', () => {
-    const link = doShallow({ invert: true })
+    const link = doMount({ invert: true })
     expect(link).toMatchSnapshot()
   })
 

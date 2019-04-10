@@ -52,7 +52,6 @@ const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) 
       as={reactRouterLinkComponent || 'a'}
       invert={invert}
       context={context}
-      data-testid="link"
     >
       {children}
     </StyledLink>
