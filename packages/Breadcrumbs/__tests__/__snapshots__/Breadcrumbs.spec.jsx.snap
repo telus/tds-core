@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumbs with children renders 1`] = `
+.c0:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c0:link,
+.c0:visited {
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:link,
+.c0:visited {
+  color: inherit;
+}
+
 <nav>
   <ol
     class="list"
@@ -10,7 +31,8 @@ exports[`Breadcrumbs with children renders 1`] = `
     >
       <span>
         <a
-          class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+          class="c0"
+          data-testid="link"
           href="/"
         >
           Home
@@ -28,7 +50,8 @@ exports[`Breadcrumbs with children renders 1`] = `
     >
       <span>
         <a
-          class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+          class="c0"
+          data-testid="link"
           href="/mobility"
         >
           Mobility
@@ -55,6 +78,27 @@ exports[`Breadcrumbs with children renders 1`] = `
 `;
 
 exports[`Breadcrumbs with routes renders 1`] = `
+.c0:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c0:link,
+.c0:visited {
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:link,
+.c0:visited {
+  color: inherit;
+}
+
 <nav>
   <ol
     class="list"
@@ -64,7 +108,8 @@ exports[`Breadcrumbs with routes renders 1`] = `
     >
       <span>
         <a
-          class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+          class="c0"
+          data-testid="link"
           href="/"
         >
           Home
@@ -82,7 +127,8 @@ exports[`Breadcrumbs with routes renders 1`] = `
     >
       <span>
         <a
-          class="TDS_Link-modules__inheritColor___2UdoO TDS_Link-modules__underlineOnHover___1vNar"
+          class="c0"
+          data-testid="link"
           href="/mobility"
         >
           Mobility

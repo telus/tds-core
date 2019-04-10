@@ -1,0 +1,40 @@
+@import '~@tds/core-colours/colours';
+
+.underlineOnHover {
+  &:link,
+  &:visited {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.base {
+  composes: underlineOnHover;
+  composes: focusOutline from '../../shared/styles/Links.modules.scss';
+
+  &:link,
+  &:visited {
+    color: $color-shark;
+  }
+}
+
+.inverted {
+  composes: underlineOnHover;
+
+  &:link,
+  &:visited {
+    color: $color-white;
+  }
+}
+
+.inheritColor {
+  composes: underlineOnHover;
+
+  &:link,
+  &:visited {
+    color: inherit;
+  }
+}
