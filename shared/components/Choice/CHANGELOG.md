@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.11](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.10...@tds/shared-choice@1.1.11) (2019-04-11)
+
+
+### Bug Fixes
+
+* **shared-choice:** add hover effect to label ([e7fffb2](https://github.com/telus/tds-core/commit/e7fffb2))
+
+
+
+
+
 ## [1.1.10](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.9...@tds/shared-choice@1.1.10) (2019-03-28)
 
 **Note:** Version bump only for package @tds/shared-choice
