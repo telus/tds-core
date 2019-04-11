@@ -82,7 +82,7 @@ This prop implements `justify-content: space-between;` in CSS. With `space-betwe
 <FlexGrid>
   <FlexGrid.Row>
     <FlexGrid.Col>
-      <Box dangerouslyAddClassName="docs_full-height-box">
+      <Box className="docs_full-height-box">
         <Paragraph>This is the first line</Paragraph>
         <Paragraph>This is the second line</Paragraph>
         <Paragraph>This is the third line</Paragraph>
@@ -90,7 +90,7 @@ This prop implements `justify-content: space-between;` in CSS. With `space-betwe
     </FlexGrid.Col>
 
     <FlexGrid.Col>
-      <Box between={3} dangerouslyAddClassName="docs_full-height-box">
+      <Box between={3} className="docs_full-height-box">
         <Paragraph>
           This first line is much larger than the others to demonstrate the effects of space-between
         </Paragraph>
@@ -100,7 +100,7 @@ This prop implements `justify-content: space-between;` in CSS. With `space-betwe
     </FlexGrid.Col>
 
     <FlexGrid.Col>
-      <Box dangerouslyAddClassName="docs_full-height-box">
+      <Box className="docs_full-height-box">
         <Paragraph>This is the first line</Paragraph>
         <Paragraph>This is the second line</Paragraph>
         <Paragraph>This is the third line</Paragraph>
@@ -116,7 +116,7 @@ This prop implements `justify-content: space-between;` in CSS. With `space-betwe
 <FlexGrid>
   <FlexGrid.Row>
     <FlexGrid.Col>
-      <Box between="space-between" dangerouslyAddClassName="docs_full-height-box">
+      <Box between="space-between" className="docs_full-height-box">
         <Paragraph>This is the first line</Paragraph>
         <Paragraph>This is the second line</Paragraph>
         <Paragraph>This is the third line</Paragraph>
@@ -124,7 +124,7 @@ This prop implements `justify-content: space-between;` in CSS. With `space-betwe
     </FlexGrid.Col>
 
     <FlexGrid.Col>
-      <Box between={3} dangerouslyAddClassName="docs_full-height-box">
+      <Box between={3} className="docs_full-height-box">
         <Paragraph>
           This first line is much larger than the others to demonstrate the effects of space-between
         </Paragraph>
@@ -134,7 +134,7 @@ This prop implements `justify-content: space-between;` in CSS. With `space-betwe
     </FlexGrid.Col>
 
     <FlexGrid.Col>
-      <Box between="space-between" dangerouslyAddClassName="docs_full-height-box">
+      <Box between="space-between" className="docs_full-height-box">
         <Paragraph>This is the first line</Paragraph>
         <Paragraph>This is the second line</Paragraph>
         <Paragraph>This is the third line</Paragraph>
