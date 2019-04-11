@@ -24,7 +24,7 @@ const OrderedList = ({ listStyle, size, children, ...rest }) => {
       {...safeRest(rest)}
       tag="ol"
       between={2}
-      dangerouslyAddClassName={joinClassNames(styles[listStyle], typographyStyle[size])}
+      className={joinClassNames(styles[listStyle], typographyStyle[size])}
     >
       {React.Children.map(filteredChildren, child => injectListStyle(child, size))}
     </Box>
