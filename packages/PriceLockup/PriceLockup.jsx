@@ -67,16 +67,13 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
   }
 
   return (
-    <Box between={wrapperSpacing} dangerouslyAddClassName={styles.wrapperAlignment}>
+    <Box between={wrapperSpacing} className={styles.wrapperAlignment}>
       <Box between={size !== 'large' ? 1 : undefined}>
         {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
         <Box
           between={size === 'small' ? 1 : 2}
           inline
-          dangerouslyAddClassName={joinClassNames(
-            styles.priceWrapper,
-            size === 'small' && styles.small
-          )}
+          className={joinClassNames(styles.priceWrapper, size === 'small' && styles.small)}
         >
           {renderPriceValueSign()}
           {rateText && (

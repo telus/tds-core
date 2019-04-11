@@ -3,7 +3,7 @@
 exports[`PriceLockup renders with default props 1`] = `
 <Box
   between={1}
-  dangerouslyAddClassName="wrapperAlignment"
+  className="wrapperAlignment"
   inline={false}
   tag="div"
 >
@@ -14,7 +14,7 @@ exports[`PriceLockup renders with default props 1`] = `
   >
     <Box
       between={1}
-      dangerouslyAddClassName="priceWrapper small"
+      className="priceWrapper small"
       inline={true}
       tag="div"
     >
