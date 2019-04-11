@@ -10,11 +10,9 @@ The TELUS Design System (TDS) and Architecture Support Team (AST) aligned on a c
 
 More information can be found here:
 
-
-
-*   [Reference Architecture CSS standard](https://github.com/telus/reference-architecture/blob/bb7059d135574c380d2865aa1bbdd633c2345461/development/css.md)
-*   [Adopting Styled Components V4](https://github.com/telus/technology-forum/issues/274)
-*   [TDS Sunset Strategy ](https://github.com/telus/technology-forum/issues/285)
+- [Reference Architecture CSS standard](https://github.com/telus/reference-architecture/blob/bb7059d135574c380d2865aa1bbdd633c2345461/development/css.md)
+- [Adopting Styled Components V4](https://github.com/telus/technology-forum/issues/274)
+- [TDS Sunset Strategy](https://github.com/telus/technology-forum/issues/285)
 
 ## Current Release V2 (March 2018)
 
@@ -32,7 +30,6 @@ Upgrading from v1.0 to "v2" is straightforward and short. Follow [the upgrade in
 Github and use the [tds-codemod](https://github.com/telusdigital/tds-codemod) automatic refactoring tool.
 
 **Note: As of "v2", there will be no more feature releases to the [@telusdigital/tds](https://www.npmjs.com/package/@telusdigital/tds) package. Instead, all design system components will be released independenly. View available TELUS Design System component packages [in the TDS npm organization](https://www.npmjs.com/org/tds).**
-
 
 ## Want to get involved?
 
