@@ -65,7 +65,7 @@ class Notification extends React.Component {
       <Box
         {...safeRest(rest)}
         vertical={3}
-        dangerouslyAddClassName={joinClassNames(styles.base, styles[variant])}
+        className={joinClassNames(styles.base, styles[variant])}
       >
         <FlexGrid>
           <FlexGrid.Row>
@@ -86,7 +86,7 @@ class Notification extends React.Component {
                   </FlexGrid.Col>
                   {dismissible && (
                     <FlexGrid.Col>
-                      <Box dangerouslyAddClassName={styles.dismissContainer}>
+                      <Box className={styles.dismissContainer}>
                         <div className={styles.dismiss}>
                           <StandaloneIcon
                             symbol="times"
