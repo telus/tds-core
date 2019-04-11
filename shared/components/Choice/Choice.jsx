@@ -51,7 +51,7 @@ const renderColoredLabel = (color, content) => (
 
 const renderLabel = (label, description, feedback, checked, disabled) => {
   const content = (
-    <Box between={2} dangerouslyAddClassName={styles.flexOne}>
+    <Box between={2} className={styles.flexOne}>
       <Text size="medium">{label}</Text>
       {description && <Text size="small">{description}</Text>}
     </Box>
@@ -151,7 +151,7 @@ class Choice extends React.Component {
       <Box between={2}>
         {feedback === 'error' && error && renderError(error, errorId)}
         <label htmlFor={choiceId} className={styles.label}>
-          <Box tag="span" inline between={3} dangerouslyAddClassName={styles.alignFlexStart}>
+          <Box tag="span" inline between={3} className={styles.alignFlexStart}>
             <span className={fakeInputClassNames} data-testid="fake-input">
               <input
                 {...safeRest(rest)}
