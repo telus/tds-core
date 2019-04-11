@@ -12,7 +12,7 @@ import styles from './Card.modules.scss'
  * @version ./package.json
  */
 const Card = ({ variant, children, ...rest }) => (
-  <Box {...safeRest(rest)} horizontal={4} vertical={5} dangerouslyAddClassName={styles[variant]}>
+  <Box {...safeRest(rest)} horizontal={4} vertical={5} className={styles[variant]}>
     {children}
   </Box>
 )
