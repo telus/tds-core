@@ -34,7 +34,7 @@ const showFeedbackIcon = (feedback, focus) =>
 const renderLabel = (label, hint, fieldId, tooltip) => (
   <Box inline between="space-between">
     <label htmlFor={fieldId.identity()}>
-      <Box inline tag="span" between={2} dangerouslyAddClassName={styles.alignCenter}>
+      <Box inline tag="span" between={2} className={styles.alignCenter}>
         <Text size="medium" bold>
           {label}
         </Text>
