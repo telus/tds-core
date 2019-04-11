@@ -24,7 +24,7 @@ exports[`Tooltip renders 1`] = `
         <Box
           aria-hidden="true"
           aria-live="assertive"
-          dangerouslyAddClassName="right hide"
+          className="right hide"
           data-testid="bubble"
           horizontal={3}
           id="standalone-tooltip-mc41_tooltip"

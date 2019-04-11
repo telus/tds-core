@@ -16,7 +16,7 @@ const Bubble = ({ id, direction, open, width, children }) => {
     <Box
       vertical={2}
       horizontal={3}
-      dangerouslyAddClassName={classes}
+      className={classes}
       id={id}
       role="tooltip"
       aria-live="assertive"
