@@ -46,7 +46,7 @@ const Select = ({ options, placeholder, ...props }) => {
           </select>
 
           {!selectProps.disabled && (
-            <Box inline between={3} dangerouslyAddClassName={styles.iconsPosition}>
+            <Box inline between={3} className={styles.iconsPosition}>
               <FeedbackIcon showIcon={showFeedbackIcon} feedback={feedback} />
 
               <div className={iconWrapperStyles.fixLineHeight}>
