@@ -16,7 +16,7 @@ const InputFeedback = ({ feedback, children, ...rest }) => (
   <Box
     {...safeRest(rest)}
     inset={3}
-    dangerouslyAddClassName={feedback ? styles[feedback] : styles.default}
+    className={feedback ? styles[feedback] : styles.default}
     role={feedback === 'error' ? 'alert' : null}
   >
     {children}
