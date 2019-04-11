@@ -1,18 +1,139 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<OrderedList /> renders 1`] = `
+exports[`<OrderedList /> can have a list style 1`] = `
+.c1 {
+  margin-left: -1rem;
+  padding-left: 1rem;
+}
+
+.c1:last-child {
+  margin-bottom: 0;
+}
+
+.c0 {
+  padding-left: 3rem;
+  list-style-type: decimal;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
 <ol
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D decimal medium"
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
 >
   <li
-    class="base medium item"
+    class="c1"
   >
-    Lorem ipsum
+    <span
+      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    >
+      Lorem ipsum
+    </span>
   </li>
   <li
-    class="base medium item"
+    class="c1"
   >
-    Dolor sit amet
+    <span
+      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    >
+      Dolor sit amet
+    </span>
+  </li>
+</ol>
+`;
+
+exports[`<OrderedList /> can have a list style 2`] = `
+.c1 {
+  margin-left: -1rem;
+  padding-left: 1rem;
+}
+
+.c1:last-child {
+  margin-bottom: 0;
+}
+
+.c0 {
+  padding-left: 3rem;
+  list-style-type: upper-alpha;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+<ol
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+>
+  <li
+    class="c1"
+  >
+    <span
+      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    >
+      Lorem ipsum
+    </span>
+  </li>
+  <li
+    class="c1"
+  >
+    <span
+      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    >
+      Dolor sit amet
+    </span>
+  </li>
+</ol>
+`;
+
+exports[`<OrderedList /> renders 1`] = `
+.c1 {
+  margin-left: -1rem;
+  padding-left: 1rem;
+}
+
+.c1:last-child {
+  margin-bottom: 0;
+}
+
+.c0 {
+  padding-left: 3rem;
+  list-style-type: decimal;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+<ol
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+>
+  <li
+    class="c1"
+  >
+    <span
+      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    >
+      Lorem ipsum
+    </span>
+  </li>
+  <li
+    class="c1"
+  >
+    <span
+      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    >
+      Dolor sit amet
+    </span>
   </li>
 </ol>
 `;
