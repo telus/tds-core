@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, render, mount } from 'enzyme'
 
 import OrderedList from '../OrderedList'
 
@@ -22,6 +22,15 @@ describe('<OrderedList />', () => {
       </OrderedList>
     )
 
+  const doMount = (overrides = {}) =>
+    mount(
+      <OrderedList {...overrides}>
+        <OrderedList.Item>Lorem ipsum</OrderedList.Item>
+        {false && <OrderedList.Item>Lorem ipsum</OrderedList.Item>}
+        <OrderedList.Item>Dolor sit amet</OrderedList.Item>
+      </OrderedList>
+    )
+
   it('renders', () => {
     const orderedList = doRender()
 
@@ -29,23 +38,23 @@ describe('<OrderedList />', () => {
   })
 
   it('OrderList renders an HTML ol tag', () => {
-    const orderedList = doShallow()
+    const orderedList = doMount()
 
-    expect(orderedList.dive()).toHaveDisplayName('ol')
+    expect(orderedList).toContainExactlyOneMatchingElement('ol')
   })
 
   it('OrderList.Item renders an HTML li tag', () => {
-    const orderedListItem = shallow(<OrderedList.Item>a list item</OrderedList.Item>)
+    const orderedListItem = mount(<OrderedList.Item>a list item</OrderedList.Item>)
 
-    expect(orderedListItem).toHaveDisplayName('li')
+    expect(orderedListItem).toContainExactlyOneMatchingElement('li')
   })
 
   it('can have a list style', () => {
-    let orderedList = doShallow({ listStyle: undefined })
-    expect(orderedList.dive()).toHaveClassName('decimal')
+    let orderedList = doRender({ listStyle: undefined })
+    expect(orderedList).toMatchSnapshot()
 
-    orderedList = doShallow({ listStyle: 'upperAlpha' })
-    expect(orderedList.dive()).toHaveClassName('upperAlpha')
+    orderedList = doRender({ listStyle: 'upperAlpha' })
+    expect(orderedList).toMatchSnapshot()
   })
 
   it('passes additional attributes to ol element', () => {

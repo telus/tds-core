@@ -1,35 +1,40 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
 import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
-import typographyStyle from '@tds/shared-typography/Typography.modules.scss'
+import * as typography from '@tds/shared-typography'
 
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
 
-import OrderedItem from './OrderedItem/OrderedItem'
+import OrderedItem, { StyledOrderedItem } from './OrderedItem/OrderedItem'
 
-import styles from './OrderedList.modules.scss'
+const listStyleType = {
+  upperAlpha: 'upper-alpha',
+  lowerAlpha: 'lower-alpha',
+  decimal: 'decimal',
+}
 
-const injectListStyle = (child, size) => React.cloneElement(child, { size })
+export const StyledOrderedList = styled(({ size, listStyle, ...rest }) => <Box {...rest} />)(
+  ({ size, listStyle }) => ({
+    paddingLeft: '3rem',
+    listStyleType: listStyleType[listStyle],
+    ...typography[size],
+  })
+)
 
 /**
  * @version ./package.json
  */
-const OrderedList = ({ listStyle, size, children, ...rest }) => {
-  const filteredChildren = React.Children.toArray(children).filter(child => child)
-  return (
-    <Box
-      {...safeRest(rest)}
-      tag="ol"
-      between={2}
-      className={joinClassNames(styles[listStyle], typographyStyle[size])}
-    >
-      {React.Children.map(filteredChildren, child => injectListStyle(child, size))}
-    </Box>
-  )
-}
+const OrderedList = ({ listStyle, size, children, ...rest }) => (
+  <StyledOrderedList {...safeRest(rest)} tag="ol" between={2} listStyle={listStyle} size={size}>
+    {React.Children.toArray(children)
+      .filter(child => child)
+      .map(child => React.cloneElement(child, { size }))}
+  </StyledOrderedList>
+)
 
 OrderedList.propTypes = {
   /**
@@ -56,3 +61,5 @@ OrderedList.defaultProps = {
 OrderedList.Item = OrderedItem
 
 export default OrderedList
+
+export { StyledOrderedItem }

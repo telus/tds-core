@@ -1,4 +1,2 @@
-import './dist/index.css'
-import OrderedList from './dist/index.es'
-
-export default OrderedList
+export { default } from './dist/index.es'
+export * from './dist/index.es'

@@ -1,16 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+import Text from '@tds/core-text'
 
 import safeRest from '../../../shared/utils/safeRest'
-import joinClassNames from '../../../shared/utils/joinClassNames'
 
-import styles from './OrderedItem.modules.scss'
-import listStyles from '../../../shared/styles/List.modules.scss'
+export const StyledOrderedItem = styled.li({
+  marginLeft: '-1rem',
+  paddingLeft: '1rem',
+  '&:last-child': {
+    marginBottom: 0,
+  },
+})
 
 const OrderedItem = ({ children, size, ...rest }) => (
-  <li {...safeRest(rest)} className={joinClassNames(styles.base, styles[size], listStyles.item)}>
-    {children}
-  </li>
+  <StyledOrderedItem {...safeRest(rest)}>
+    <Text size={size}>{children}</Text>
+  </StyledOrderedItem>
 )
 
 OrderedItem.propTypes = {
