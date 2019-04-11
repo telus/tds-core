@@ -1,23 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import StandaloneIcon from '@tds/core-standalone-icon'
 
+import { iconWrapper } from '@tds/shared-styles'
+
 import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId/generateId'
-import joinClassNames from '../../shared/utils/joinClassNames'
 import closest from './element-closest'
 
 import Bubble from './Bubble'
 
-import iconWrapperStyles from '../../shared/styles/IconWrapper.modules.scss'
-import styles from './Tooltip.modules.scss'
+const StyledTooltip = styled.div({
+  ...iconWrapper.fixLineHeight,
+  position: 'relative',
+  width: '1rem',
+  height: '1.3rem',
+})
+
+const TooltipContainer = styled.div({
+  position: 'absolute',
+})
 
 /**
  * Provide an explanation or instructions for a form field that most users do not need.
  *
  * @version ./package.json
  */
+
 class Tooltip extends React.Component {
   constructor() {
     super()
@@ -107,8 +118,6 @@ class Tooltip extends React.Component {
 
     const { bubbleId, triggerId } = this.getIds(connectedFieldLabel)
 
-    const classes = joinClassNames(iconWrapperStyles.fixLineHeight, styles.tooltip)
-
     let trueDirection = null
 
     if (direction === 'auto') {
@@ -127,8 +136,8 @@ class Tooltip extends React.Component {
     }
 
     return (
-      <div {...safeRest(rest)} className={classes} ref={this.setTooltipRef}>
-        <div className={styles.tooltipContainer} data-testid="tooltipContainer">
+      <StyledTooltip {...safeRest(rest)} ref={this.setTooltipRef}>
+        <TooltipContainer data-testid="tooltipContainer">
           <Bubble id={bubbleId} direction={trueDirection} open={this.state.open} width={width}>
             {children}
           </Bubble>
@@ -141,8 +150,8 @@ class Tooltip extends React.Component {
             aria-haspopup="true"
             aria-expanded={this.state.open ? 'true' : 'false'}
           />
-        </div>
-      </div>
+        </TooltipContainer>
+      </StyledTooltip>
     )
   }
 }
