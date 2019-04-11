@@ -46,7 +46,7 @@ const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, 
         </Text>
       </legend>
 
-      <Box between={3} inline dangerouslyAddClassName={styles.buttonGroup}>
+      <Box between={3} inline className={styles.buttonGroup}>
         {passedButtons}
       </Box>
     </fieldset>
