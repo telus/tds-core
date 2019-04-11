@@ -86,15 +86,9 @@ describe('Box', () => {
   })
 
   it('will add additional arbitrary class names', () => {
-    const box = doShallow({ dangerouslyAddClassName: 'a-class' })
+    const box = doShallow({ dangerouslyAddClassName: 'a-class', className: 'b-class' })
 
     expect(box).toHaveClassName('a-class')
-  })
-
-  it('does not allow custom CSS', () => {
-    const box = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
-
-    expect(box).not.toHaveProp('className', 'my-custom-class')
-    expect(box).not.toHaveProp('style')
+    expect(box).toHaveClassName('b-class')
   })
 })

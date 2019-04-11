@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import safeRest from '../../shared/utils/safeRest'
 import joinClassNames from '../../shared/utils/joinClassNames'
 import capitalize from '../../shared/utils/capitalize'
+import { deprecate } from '../../shared/utils/warn'
 
 import styles from './Box.modules.scss'
 
@@ -39,10 +39,18 @@ const Box = ({
   below,
   between,
   inline,
+  className,
   dangerouslyAddClassName,
   children,
   ...rest
 }) => {
+  if (dangerouslyAddClassName) {
+    deprecate(
+      'core-box',
+      'The `dangerouslyAddClassName` prop is deprecated. Please make use of the className and style props only when necessary.'
+    )
+  }
+
   const xSize = inset || horizontal
   const ySize = inset || vertical
 
@@ -51,10 +59,11 @@ const Box = ({
     getClassName('padding', 'vertical', ySize),
     getClassName('margin', 'bottom', below),
     getBetweenClasses(between, inline),
-    dangerouslyAddClassName
+    dangerouslyAddClassName,
+    className
   )
 
-  return React.createElement(tag, { ...safeRest(rest), className: classes }, children)
+  return React.createElement(tag, { ...rest, className: classes }, children)
 }
 
 Box.propTypes = {
@@ -96,12 +105,18 @@ Box.propTypes = {
    */
   inline: PropTypes.bool,
   /**
+   * @deprecated It is now possible to use `className` for custom class insertion. This prop will be removed in Box 2.0.0.
+   *
    * Append custom classes to `className`. Use sparingly, and do not attempt to override Box style properties as that
    * may cause unexpected behaviour.
    *
    * You would typically use this feature to apply flex alignment properties in combination with `between`.
    */
   dangerouslyAddClassName: PropTypes.string,
+  /**
+   * @ignore
+   */
+  className: PropTypes.string,
   /**
    * The content. Can be text, any HTML element, or any component.
    */
@@ -117,6 +132,7 @@ Box.defaultProps = {
   below: undefined,
   between: undefined,
   dangerouslyAddClassName: undefined,
+  className: undefined,
 }
 
 export default Box
