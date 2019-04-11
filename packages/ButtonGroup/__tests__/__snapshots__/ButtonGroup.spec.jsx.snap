@@ -16,7 +16,7 @@ exports[`ButtonGroup renders 1`] = `
   </legend>
   <Box
     between={3}
-    dangerouslyAddClassName="buttonGroup"
+    className="buttonGroup"
     inline={true}
     tag="div"
   >
