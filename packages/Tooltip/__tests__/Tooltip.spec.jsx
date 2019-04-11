@@ -1,5 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import 'jest-styled-components'
 
 import StandaloneIcon from '@tds/core-standalone-icon'
 import Text from '@tds/core-text'
@@ -64,13 +65,13 @@ describe('Tooltip', () => {
 
     it('shows and hides the bubble', () => {
       const { findBubble, toggleBubble } = doMount()
-      expect(findBubble()).toHaveClassName('hide')
+      expect(findBubble()).toMatchSnapshot()
 
       toggleBubble()
-      expect(findBubble()).not.toHaveClassName('hide')
+      expect(findBubble()).toMatchSnapshot()
 
       toggleBubble()
-      expect(findBubble()).toHaveClassName('hide')
+      expect(findBubble()).toMatchSnapshot()
     })
 
     it('hides the bubble when clicking outside of it', () => {
@@ -82,13 +83,12 @@ describe('Tooltip', () => {
 
       toggleBubble()
       root.dispatchEvent(new Event('click', { bubbles: true }))
-
-      expect(getBubbleClassNames(tooltip)).toContain('hide')
+      expect(tooltip).toMatchSnapshot()
 
       // And it removes the event listener so on subsequent clicks it remains hidden
       root.dispatchEvent(new Event('click'), { bubbles: true })
 
-      expect(getBubbleClassNames(tooltip)).toContain('hide')
+      expect(tooltip).toMatchSnapshot()
     })
 
     it('will not hide the bubble when clicking inside the bubble', () => {
