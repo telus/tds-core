@@ -1,12 +1,12 @@
 {
   "name": "@tds/shared-choice",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "private": true,
   "main": "",
   "module": "",
   "dependencies": {
-    "@tds/core-box": "^1.1.0",
-    "@tds/core-input-feedback": "^1.0.8",
+    "@tds/core-box": "^1.2.0",
+    "@tds/core-input-feedback": "^1.0.9",
     "@tds/core-paragraph": "^1.0.10",
     "@tds/core-text": "^1.0.10"
   },

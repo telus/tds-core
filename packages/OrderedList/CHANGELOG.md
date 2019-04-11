@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.16](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.15...@tds/core-ordered-list@2.0.16) (2019-04-11)
+
+
+### Bug Fixes
+
+* **core-ordered-list:** use className prop for Box ([d998464](https://github.com/telusdigital/tds/commit/d998464))
+
+
+
+
+
 ## [2.0.15](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.14...@tds/core-ordered-list@2.0.15) (2019-04-08)
 
 

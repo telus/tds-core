@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.12](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.11...@tds/shared-choice@1.1.12) (2019-04-11)
+
+
+### Bug Fixes
+
+* **shared-choice:** use className prop for Box ([57f0130](https://github.com/telus/tds-core/commit/57f0130))
+
+
+
+
+
 ## [1.1.11](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.10...@tds/shared-choice@1.1.11) (2019-04-11)
 
 

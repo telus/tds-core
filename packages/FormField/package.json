@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-form-field",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -21,8 +21,8 @@
   },
   "homepage": "http://tds.telus.com",
   "dependencies": {
-    "@tds/core-box": "^1.1.0",
-    "@tds/core-input-feedback": "^1.0.8",
+    "@tds/core-box": "^1.2.0",
+    "@tds/core-input-feedback": "^1.0.9",
     "@tds/core-paragraph": "^1.0.10",
     "@tds/core-standalone-icon": "^1.0.3",
     "@tds/core-text": "^1.0.10",

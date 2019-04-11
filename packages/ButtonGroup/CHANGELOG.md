@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.14](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@1.0.13...@tds/core-button-group@1.0.14) (2019-04-11)
+
+
+### Bug Fixes
+
+* **core-button-group:** use className prop for Box ([69282f4](https://github.com/telusdigital/tds-core/commit/69282f4))
+
+
+
+
+
 ## [1.0.13](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@1.0.12...@tds/core-button-group@1.0.13) (2019-04-04)
 
 **Note:** Version bump only for package @tds/core-button-group

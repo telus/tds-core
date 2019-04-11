@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/telus/tds/compare/@tds/shared-form-field@2.2.0...@tds/shared-form-field@2.2.1) (2019-04-11)
+
+
+### Bug Fixes
+
+* **shared-form-field:** use className prop for Box ([11eff50](https://github.com/telus/tds/commit/11eff50))
+
+
+
+
+
 # [2.2.0](https://github.com/telus/tds/compare/@tds/shared-form-field@2.1.9...@tds/shared-form-field@2.2.0) (2019-04-08)
 
 

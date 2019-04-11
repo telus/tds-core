@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telusdigital/tds/compare/@tds/core-box@1.1.0...@tds/core-box@1.2.0) (2019-04-11)
+
+
+### Features
+
+* **core-box:** allow custom styles through className & style prop ([a722896](https://github.com/telusdigital/tds/commit/a722896))
+
+
+
+
+
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-box@1.0.3...@tds/core-box@1.1.0) (2019-03-18)
 
 

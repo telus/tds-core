@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.13](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.12...@tds/core-tooltip@2.0.13) (2019-04-11)
+
+
+### Bug Fixes
+
+* **core-tooltip:** use className prop for Box ([cc7315a](https://github.com/telusdigital/tds/commit/cc7315a))
+
+
+
+
+
 ## [2.0.12](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.11...@tds/core-tooltip@2.0.12) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-tooltip

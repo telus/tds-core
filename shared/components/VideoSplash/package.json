@@ -1,11 +1,11 @@
 {
   "name": "@tds/shared-video-splash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "main": "",
   "module": "",
   "dependencies": {
-    "@tds/core-box": "^1.1.0",
+    "@tds/core-box": "^1.2.0",
     "@tds/core-decorative-icon": "^1.1.1",
     "@tds/core-paragraph": "^1.0.6",
     "@tds/core-responsive": "^1.2.0",
