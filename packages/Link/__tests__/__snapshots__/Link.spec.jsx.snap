@@ -20,92 +20,11 @@ Object {
 
 <a
     className="c0"
-    data-testid="link"
     href={null}
     to={null}
   >
     Some content
   </a>,
-  "styledComponent": .c0:focus {
-  outline: auto 5px -webkit-focus-ring-color;
-}
-
-.c0:link,
-.c0:visited {
-  color: #2a2c2e;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<Link__StyledLink
-    as="a"
-    context={
-      Object {
-        "inheritColor": undefined,
-      }
-    }
-    data-testid="link"
-    href={null}
-    invert={false}
-    to={null}
-  >
-    <StyledComponent
-      as="a"
-      context={
-        Object {
-          "inheritColor": undefined,
-        }
-      }
-      data-testid="link"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Link__StyledLink-sc-1bokult-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "&:focus {
-  outline: auto 5px -webkit-focus-ring-color;
-} &:link,&:visited {
-  color: #2a2c2e; text-decoration: underline;
-} &:hover {
-  text-decoration: underline;
-}",
-              [Function],
-            ],
-          },
-          "displayName": "Link__StyledLink",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Link__StyledLink-sc-1bokult-0",
-          "target": "a",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      href={null}
-      invert={false}
-      to={null}
-    >
-      <a
-        className="c0"
-        data-testid="link"
-        href={null}
-        to={null}
-      >
-        Some content
-      </a>
-    </StyledComponent>
-  </Link__StyledLink>,
 }
 `;
 
@@ -134,97 +53,11 @@ Object {
 
 <a
     className="c0"
-    data-testid="link"
     href={null}
     to={null}
   >
     Some content
   </a>,
-  "styledComponent": .c0:focus {
-  outline: auto 5px -webkit-focus-ring-color;
-}
-
-.c0:link,
-.c0:visited {
-  color: #2a2c2e;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0:link,
-.c0:visited {
-  color: #fff;
-}
-
-<Link__StyledLink
-    as="a"
-    context={
-      Object {
-        "inheritColor": undefined,
-      }
-    }
-    data-testid="link"
-    href={null}
-    invert={true}
-    to={null}
-  >
-    <StyledComponent
-      as="a"
-      context={
-        Object {
-          "inheritColor": undefined,
-        }
-      }
-      data-testid="link"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Link__StyledLink-sc-1bokult-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "&:focus {
-  outline: auto 5px -webkit-focus-ring-color;
-} &:link,&:visited {
-  color: #2a2c2e; text-decoration: underline;
-} &:hover {
-  text-decoration: underline;
-}",
-              [Function],
-            ],
-          },
-          "displayName": "Link__StyledLink",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Link__StyledLink-sc-1bokult-0",
-          "target": "a",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      href={null}
-      invert={true}
-      to={null}
-    >
-      <a
-        className="c0"
-        data-testid="link"
-        href={null}
-        to={null}
-      >
-        Some content
-      </a>
-    </StyledComponent>
-  </Link__StyledLink>,
 }
 `;
 
@@ -236,7 +69,6 @@ exports[`Link renders 1`] = `
       "inheritColor": undefined,
     }
   }
-  data-testid="link"
   href={null}
   invert={false}
   to={null}
