@@ -32,7 +32,6 @@ exports[`Breadcrumbs with children renders 1`] = `
       <span>
         <a
           class="c0"
-          data-testid="link"
           href="/"
         >
           Home
@@ -51,7 +50,6 @@ exports[`Breadcrumbs with children renders 1`] = `
       <span>
         <a
           class="c0"
-          data-testid="link"
           href="/mobility"
         >
           Mobility
@@ -109,7 +107,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
       <span>
         <a
           class="c0"
-          data-testid="link"
           href="/"
         >
           Home
@@ -128,7 +125,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
       <span>
         <a
           class="c0"
-          data-testid="link"
           href="/mobility"
         >
           Mobility
