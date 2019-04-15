@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import { Helmet } from 'react-helmet'
 
@@ -9,7 +10,7 @@ import safeRest from '../../shared/utils/safeRest'
 
 import Item from './Item/Item'
 
-import styles from './Breadcrumbs.modules.scss'
+const StyledList = styled.ol({ display: 'flex', flexWrap: 'wrap' })
 
 const omitProps = ({
   current,
@@ -80,6 +81,7 @@ const getStructuredData = (items, baseUrl) => {
  *
  * @version ./package.json
  */
+
 const Breadcrumbs = ({
   routes,
   reactRouterLinkComponent,
@@ -105,7 +107,7 @@ const Breadcrumbs = ({
 
   return (
     <nav {...safeRest(rest)}>
-      <ol className={styles.list}>
+      <StyledList>
         {items.map(({ href, current, breadcrumbName, ...itemRest }) => (
           <Item
             {...itemRest}
@@ -117,7 +119,7 @@ const Breadcrumbs = ({
             {breadcrumbName}
           </Item>
         ))}
-      </ol>
+      </StyledList>
       <Helmet>
         <script type="application/ld+json">
           {`

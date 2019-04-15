@@ -1,70 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumbs with children renders 1`] = `
-.c0:focus {
+.c1:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
-.c0:link,
-.c0:visited {
+.c1:link,
+.c1:visited {
   color: #2a2c2e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c0:hover {
+.c1:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0:link,
-.c0:visited {
+.c1:link,
+.c1:visited {
   color: inherit;
+}
+
+.c2 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  margin: 0 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
 }
 
 <nav>
   <ol
-    class="list"
+    class="c0"
   >
-    <li
-      class="linkItem"
-    >
+    <li>
       <span>
         <a
-          class="c0"
+          class="c1"
           href="/"
         >
           Home
         </a>
         <span
           aria-hidden="true"
-          class="slash"
+          class="c2"
         >
           /
         </span>
       </span>
     </li>
-    <li
-      class="linkItem"
-    >
+    <li>
       <span>
         <a
-          class="c0"
+          class="c1"
           href="/mobility"
         >
           Mobility
         </a>
         <span
           aria-hidden="true"
-          class="slash"
+          class="c2"
         >
           /
         </span>
       </span>
     </li>
-    <li
-      class="lastItem"
-    >
+    <li>
       <span
         class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
@@ -76,70 +102,96 @@ exports[`Breadcrumbs with children renders 1`] = `
 `;
 
 exports[`Breadcrumbs with routes renders 1`] = `
-.c0:focus {
+.c1:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
-.c0:link,
-.c0:visited {
+.c1:link,
+.c1:visited {
   color: #2a2c2e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c0:hover {
+.c1:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0:link,
-.c0:visited {
+.c1:link,
+.c1:visited {
   color: inherit;
+}
+
+.c2 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  margin: 0 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
 }
 
 <nav>
   <ol
-    class="list"
+    class="c0"
   >
-    <li
-      class="linkItem"
-    >
+    <li>
       <span>
         <a
-          class="c0"
+          class="c1"
           href="/"
         >
           Home
         </a>
         <span
           aria-hidden="true"
-          class="slash"
+          class="c2"
         >
           /
         </span>
       </span>
     </li>
-    <li
-      class="linkItem"
-    >
+    <li>
       <span>
         <a
-          class="c0"
+          class="c1"
           href="/mobility"
         >
           Mobility
         </a>
         <span
           aria-hidden="true"
-          class="slash"
+          class="c2"
         >
           /
         </span>
       </span>
     </li>
-    <li
-      class="lastItem"
-    >
+    <li>
       <span
         class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
