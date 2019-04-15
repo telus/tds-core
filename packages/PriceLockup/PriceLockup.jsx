@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import Box from '@tds/core-box'
+import { colorText } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import {
   medium,
@@ -17,8 +18,6 @@ import { spacing } from '@tds/shared-styles'
 import { StyledHeading } from '@tds/core-heading'
 
 import { warn } from '../../shared/utils/warn'
-import joinClassNames from '../../shared/utils/joinClassNames'
-import styles from './PriceLockup.modules.scss'
 
 const priceValue = {
   small: {
@@ -59,12 +58,21 @@ const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size }) =>
 })
 const StyledDollarSign = styled.span(({ size }) => {
   if (size === 'small') {
-    return medium
+    return { medium, lineHeight: 1.5 }
   }
   return large
 })
 const StyledLargeDollarSign = styled(StyledHeading)({
   lineHeight: '1.3',
+  color: colorText,
+})
+
+const StyledWrapperAlignment = styled(Box)({
+  textAlign: 'left',
+})
+
+const StyledPriceWrapper = styled(Box)({
+  alignItems: 'flex-end',
 })
 
 /**
@@ -123,25 +131,21 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
   }
 
   return (
-    <Box between={wrapperSpacing} className={styles.wrapperAlignment}>
+    <StyledWrapperAlignment between={wrapperSpacing}>
       <Box between={size !== 'large' ? 1 : undefined}>
         {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-        <Box
-          between={size === 'small' ? 1 : 2}
-          inline
-          className={joinClassNames(styles.priceWrapper, size === 'small' && styles.small)}
-        >
+        <StyledPriceWrapper between={size === 'small' ? 1 : 2} isSmall={size === 'small'} inline>
           {renderPriceValueSign()}
           {rateText && (
             <StyledRateText data-testid="rateText" size={size}>
               {rateText}
             </StyledRateText>
           )}
-        </Box>
+        </StyledPriceWrapper>
       </Box>
       {size !== 'large' && bottomText && rateText && <HairlineDivider />}
       {renderBottomText()}
-    </Box>
+    </StyledWrapperAlignment>
   )
 }
 
