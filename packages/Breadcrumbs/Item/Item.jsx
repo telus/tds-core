@@ -1,14 +1,42 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
+import { colorTelusPurple, colorShuttleGrey } from '@tds/core-colours'
 import Link from '@tds/core-link'
+import { media } from '@tds/core-responsive'
 import Text from '@tds/core-text'
+import { sizeSmall, sizeMedium } from '@tds/shared-typography'
 
-import joinClassNames from '../../../shared/utils/joinClassNames'
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
-import styles from './Item.modules.scss'
-import linkStyles from '../../Link/Link.modules.scss'
+const item = {
+  display: 'inline',
+  ...sizeSmall,
+
+  ...media.from('md').css({
+    ...sizeMedium,
+  }),
+}
+
+const StyledItemContainer = styled(ColoredTextProvider)(({ isCurrent }) => ({
+  ...item,
+  color: isCurrent ? colorTelusPurple : colorShuttleGrey,
+  ...(isCurrent && {
+    fontWeight: 700,
+
+    '&:after': {
+      content: `''`,
+      borderRight: 0,
+      margin: 0,
+    },
+  }),
+}))
+
+const StyledSlash = styled.span({
+  ...item,
+  margin: '0 0.5rem',
+})
 
 const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) => {
   const linkOptions = { ...rest }
@@ -19,18 +47,16 @@ const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) =>
     linkOptions.href = href
   }
   return (
-    <ColoredTextProvider tag="li" colorClassName={current ? styles.lastItem : styles.linkItem}>
+    <StyledItemContainer tag="li" isCurrent={current}>
       {current ? (
-        <Text className={joinClassNames(linkStyles.base, linkStyles.inheritColor)}>{children}</Text>
+        <Text>{children}</Text>
       ) : (
         <span>
           <Link {...linkOptions}>{children}</Link>
-          <span className={styles.slash} aria-hidden="true">
-            /
-          </span>
+          <StyledSlash aria-hidden="true">/</StyledSlash>
         </span>
       )}
-    </ColoredTextProvider>
+    </StyledItemContainer>
   )
 }
 
