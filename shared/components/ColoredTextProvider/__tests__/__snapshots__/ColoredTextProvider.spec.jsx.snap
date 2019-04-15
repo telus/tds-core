@@ -24,7 +24,6 @@ exports[`ColoredTextProvider allows Link to inherit its color 1`] = `
 
 <a
   className="c0"
-  data-testid="link"
   href="http://fake.com"
   to={null}
 >
