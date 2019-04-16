@@ -9,19 +9,22 @@ class ColoredTextProvider extends React.Component {
   }
 
   render() {
-    const { colorClassName, tag, children } = this.props
+    const { colorClassName, className, tag, children } = this.props
 
-    return React.createElement(tag, { className: colorClassName }, children)
+    return React.createElement(tag, { className: colorClassName || className }, children)
   }
 }
 
 ColoredTextProvider.propTypes = {
-  colorClassName: PropTypes.string.isRequired,
+  colorClassName: PropTypes.string,
+  className: PropTypes.string,
   tag: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 
 ColoredTextProvider.defaultProps = {
+  colorClassName: undefined,
+  className: undefined,
   tag: 'div',
 }
 
