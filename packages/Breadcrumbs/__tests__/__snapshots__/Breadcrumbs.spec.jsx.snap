@@ -13,8 +13,8 @@ exports[`Breadcrumbs with children renders 1`] = `
 }
 
 .c0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:link,
@@ -88,8 +88,8 @@ exports[`Breadcrumbs with routes renders 1`] = `
 }
 
 .c0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:link,
