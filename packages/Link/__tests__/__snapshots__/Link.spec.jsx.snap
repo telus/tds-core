@@ -14,8 +14,8 @@ Object {
 }
 
 .c0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 <a
@@ -42,8 +42,8 @@ Object {
 }
 
 .c0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:link,
