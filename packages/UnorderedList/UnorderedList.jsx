@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
@@ -8,7 +9,9 @@ import safeRest from '../../shared/utils/safeRest'
 
 import UnorderedItem from './UnorderedItem/UnorderedItem'
 
-import styles from '../../shared/styles/List.modules.scss'
+const StyledListContainer = styled(Box)({
+  paddingLeft: '3rem',
+})
 
 const injectListStyle = (child, listStyle, size) => React.cloneElement(child, { listStyle, size })
 
@@ -18,9 +21,9 @@ const injectListStyle = (child, listStyle, size) => React.cloneElement(child, { 
 const UnorderedList = ({ listStyle, size, children, ...rest }) => {
   const filteredChildren = React.Children.toArray(children).filter(child => child)
   return (
-    <Box {...safeRest(rest)} tag="ul" between={2} className={styles.base}>
+    <StyledListContainer {...safeRest(rest)} tag="ul" between={2}>
       {React.Children.map(filteredChildren, child => injectListStyle(child, listStyle, size))}
-    </Box>
+    </StyledListContainer>
   )
 }
 
