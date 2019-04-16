@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.16](https://github.com/telus/tds/compare/@tds/core-select@2.0.15...@tds/core-select@2.0.16) (2019-04-16)
+
+**Note:** Version bump only for package @tds/core-select
+
+
+
+
+
 ## [2.0.15](https://github.com/telus/tds/compare/@tds/core-select@2.0.14...@tds/core-select@2.0.15) (2019-04-11)
 
 

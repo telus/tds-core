@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-video",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,7 +28,7 @@
   "dependencies": {
     "@tds/core-box": "^1.2.0",
     "@tds/core-colours": "^1.1.1",
-    "@tds/core-decorative-icon": "^1.1.0",
+    "@tds/core-decorative-icon": "^1.2.0",
     "@tds/core-flex-grid": "^2.3.9",
     "@tds/core-paragraph": "^1.0.9",
     "@tds/core-responsive": "^1.2.0",
@@ -37,6 +37,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/shared-video-splash": "^1.0.1"
+    "@tds/shared-video-splash": "^1.0.2"
   }
 }

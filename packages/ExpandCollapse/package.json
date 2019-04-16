@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-expand-collapse",
-  "version": "1.2.18",
+  "version": "1.2.19",
   "description": "A connected series of expandable content areas",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@tds/core-box": "^1.2.0",
-    "@tds/core-decorative-icon": "^1.1.2",
+    "@tds/core-decorative-icon": "^1.2.0",
     "@tds/core-dimple-divider": "^1.0.1",
     "@tds/core-hairline-divider": "^1.0.4",
     "@tds/core-text": "^1.0.10",

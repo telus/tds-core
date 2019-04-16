@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-radio",
-  "version": "1.2.14",
+  "version": "1.2.15",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@tds/core-box": "^1.2.0",
-    "@tds/core-decorative-icon": "^1.1.2",
+    "@tds/core-decorative-icon": "^1.2.0",
     "@tds/core-input-feedback": "^1.0.9",
     "@tds/core-paragraph": "^1.0.10",
     "@tds/core-text": "^1.0.10",
