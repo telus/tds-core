@@ -1,19 +1,76 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+import { colorTelusPurple, colorPrimary, colorCardinal } from '@tds/core-colours'
+import Text from '@tds/core-text'
 
 import safeRest from '../../../shared/utils/safeRest'
-import joinClassNames from '../../../shared/utils/joinClassNames'
 
-import styles from './UnorderedItem.modules.scss'
-import listStyles from '../../../shared/styles/List.modules.scss'
+const StyledUnorderedItem = styled.li(({ listStyle, size }) => ({
+  position: 'relative',
+  lineHeight: 1,
 
-const UnorderedItem = ({ listStyle, itemStyle, size, children, ...rest }) => (
-  <li
-    {...safeRest(rest)}
-    className={joinClassNames(styles[itemStyle || listStyle], styles[size], listStyles.item)}
-  >
-    {children}
-  </li>
+  '&::before': {
+    display: 'block',
+    position: 'absolute',
+    left: '-2rem',
+    fontFamily: 'TELUS Core Icons',
+    ...(size === 'small' && { lineHeight: '1.25rem' }),
+    ...(size === 'medium' && { lineHeight: '1.6rem' }),
+    ...(size === 'large' && { lineHeight: '2.1rem' }),
+
+    ...(listStyle === 'circle' && {
+      content: `''`,
+      backgroundImage:
+        'url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==)',
+      color: colorTelusPurple,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100% 100%',
+
+      ...(size === 'small' && {
+        width: '0.25rem',
+        height: '0.25rem',
+        top: '0.5rem',
+      }),
+
+      ...(size === 'medium' && {
+        width: '0.32rem',
+        height: '0.32rem',
+        top: '0.65rem',
+      }),
+
+      ...(size === 'large' && {
+        width: '0.38rem',
+        height: '0.38rem',
+        top: '0.87rem',
+      }),
+    }),
+
+    ...(listStyle === 'checkmark' && {
+      content: `'\f101'`,
+      fontSize: '1rem',
+      width: '0.75rem',
+      color: colorPrimary,
+    }),
+
+    ...(listStyle === 'x' && {
+      content: `'\f104'`,
+      fontSize: '1rem',
+      width: '0.75rem',
+      color: colorCardinal,
+
+      ...(size === 'small' && {
+        lineHeight: '1.32rem',
+      }),
+    }),
+  },
+}))
+
+const UnorderedItem = ({ listStyle, size, children, ...rest }) => (
+  <StyledUnorderedItem {...safeRest(rest)} listStyle={listStyle} size={size}>
+    <Text size={size}>{children}</Text>
+  </StyledUnorderedItem>
 )
 
 UnorderedItem.propTypes = {

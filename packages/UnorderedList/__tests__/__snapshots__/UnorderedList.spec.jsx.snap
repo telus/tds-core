@@ -1,16 +1,415 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<UnorderedList /> can have a list style 1`] = `
+.c1 {
+  position: relative;
+  line-height: 1;
+}
+
+.c1::before {
+  display: block;
+  position: absolute;
+  left: -2rem;
+  font-family: TELUS Core Icons;
+  line-height: 1.6rem;
+  content: '';
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==);
+  color: #4b286d;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 0.32rem;
+  height: 0.32rem;
+  top: 0.65rem;
+}
+
+.c0 {
+  padding-left: 3rem;
+}
+
+<UnorderedList
+  listStyle="circle"
+  size="medium"
+>
+  <Styled(Box)
+    between={2}
+    tag="ul"
+  >
+    <StyledComponent
+      between={2}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "padding-left: 3rem;",
+            ],
+          },
+          "displayName": "Styled(Box)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      tag="ul"
+    >
+      <Box
+        between={2}
+        className="c0"
+        inline={false}
+        tag="ul"
+      >
+        <ul
+          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+        >
+          <UnorderedList.Item
+            key=".$.0"
+            listStyle="circle"
+            size="medium"
+          >
+            <UnorderedItem__StyledUnorderedItem
+              listStyle="circle"
+              size="medium"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "UnorderedItem__StyledUnorderedItem",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                listStyle="circle"
+                size="medium"
+              >
+                <li
+                  className="c1"
+                  size="medium"
+                >
+                  <Text
+                    block={false}
+                    bold={false}
+                    invert={false}
+                    size="medium"
+                  >
+                    <span
+                      className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+                    >
+                      Lorem ipsum
+                    </span>
+                  </Text>
+                </li>
+              </StyledComponent>
+            </UnorderedItem__StyledUnorderedItem>
+          </UnorderedList.Item>
+          <UnorderedList.Item
+            key=".$.2"
+            listStyle="circle"
+            size="medium"
+          >
+            <UnorderedItem__StyledUnorderedItem
+              listStyle="circle"
+              size="medium"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "UnorderedItem__StyledUnorderedItem",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                listStyle="circle"
+                size="medium"
+              >
+                <li
+                  className="c1"
+                  size="medium"
+                >
+                  <Text
+                    block={false}
+                    bold={false}
+                    invert={false}
+                    size="medium"
+                  >
+                    <span
+                      className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+                    >
+                      Dolor sit amet
+                    </span>
+                  </Text>
+                </li>
+              </StyledComponent>
+            </UnorderedItem__StyledUnorderedItem>
+          </UnorderedList.Item>
+        </ul>
+      </Box>
+    </StyledComponent>
+  </Styled(Box)>
+</UnorderedList>
+`;
+
+exports[`<UnorderedList /> can have a list style 2`] = `
+.c1 {
+  position: relative;
+  line-height: 1;
+}
+
+.c1::before {
+  display: block;
+  position: absolute;
+  left: -2rem;
+  font-family: TELUS Core Icons;
+  line-height: 1.6rem;
+  content: '\\f104';
+  font-size: 1rem;
+  width: 0.75rem;
+  color: #c12335;
+}
+
+.c0 {
+  padding-left: 3rem;
+}
+
+<UnorderedList
+  listStyle="x"
+  size="medium"
+>
+  <Styled(Box)
+    between={2}
+    tag="ul"
+  >
+    <StyledComponent
+      between={2}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "padding-left: 3rem;",
+            ],
+          },
+          "displayName": "Styled(Box)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      tag="ul"
+    >
+      <Box
+        between={2}
+        className="c0"
+        inline={false}
+        tag="ul"
+      >
+        <ul
+          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+        >
+          <UnorderedList.Item
+            key=".$.0"
+            listStyle="x"
+            size="medium"
+          >
+            <UnorderedItem__StyledUnorderedItem
+              listStyle="x"
+              size="medium"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "UnorderedItem__StyledUnorderedItem",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                listStyle="x"
+                size="medium"
+              >
+                <li
+                  className="c1"
+                  size="medium"
+                >
+                  <Text
+                    block={false}
+                    bold={false}
+                    invert={false}
+                    size="medium"
+                  >
+                    <span
+                      className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+                    >
+                      Lorem ipsum
+                    </span>
+                  </Text>
+                </li>
+              </StyledComponent>
+            </UnorderedItem__StyledUnorderedItem>
+          </UnorderedList.Item>
+          <UnorderedList.Item
+            key=".$.2"
+            listStyle="x"
+            size="medium"
+          >
+            <UnorderedItem__StyledUnorderedItem
+              listStyle="x"
+              size="medium"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "UnorderedItem__StyledUnorderedItem",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                listStyle="x"
+                size="medium"
+              >
+                <li
+                  className="c1"
+                  size="medium"
+                >
+                  <Text
+                    block={false}
+                    bold={false}
+                    invert={false}
+                    size="medium"
+                  >
+                    <span
+                      className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+                    >
+                      Dolor sit amet
+                    </span>
+                  </Text>
+                </li>
+              </StyledComponent>
+            </UnorderedItem__StyledUnorderedItem>
+          </UnorderedList.Item>
+        </ul>
+      </Box>
+    </StyledComponent>
+  </Styled(Box)>
+</UnorderedList>
+`;
+
 exports[`<UnorderedList /> renders 1`] = `
+.c1 {
+  position: relative;
+  line-height: 1;
+}
+
+.c1::before {
+  display: block;
+  position: absolute;
+  left: -2rem;
+  font-family: TELUS Core Icons;
+  line-height: 1.6rem;
+  content: '';
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==);
+  color: #4b286d;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 0.32rem;
+  height: 0.32rem;
+  top: 0.65rem;
+}
+
+.c0 {
+  padding-left: 3rem;
+}
+
 <ul
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D base"
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
 >
   <li
-    class="circle medium item"
+    class="c1"
   >
     Lorem ipsum
   </li>
   <li
-    class="circle medium item"
+    class="c1"
   >
     Dolor sit amet
   </li>
