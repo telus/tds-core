@@ -17,7 +17,7 @@ const base = {
     textDecoration: 'underline',
   },
   '&:hover': {
-    textDecoration: 'underline',
+    textDecoration: 'none',
   },
 }
 const StyledLink = styled.a(base, ({ invert, context }) => {
