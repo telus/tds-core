@@ -1,17 +1,15 @@
-/* eslint-disable no-dupe-keys */
-
 import React from 'react'
 import PropTypes from 'prop-types'
-import { colorShark, colorWhite } from '@tds/core-colours'
 import styled from 'styled-components'
+
+import { colorShark, colorWhite } from '@tds/core-colours'
+import { links } from '@tds/shared-styles'
+
 import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
 const base = {
-  '&:focus': {
-    outline: 'dotted 1px Highlight',
-    outline: 'auto 5px -webkit-focus-ring-color',
-  },
+  ...links.focusOutline,
   '&:link,&:visited': {
     color: colorShark,
     textDecoration: 'underline',
