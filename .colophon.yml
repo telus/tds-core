@@ -9,44 +9,44 @@ about:
 contacts:
   - type: Product Owner
     name: Varun Jain
-    slack: @varunjain
-    github: @varunj90
+    slack: varunjain
+    github: varunj90
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
 
   - type: Lead Developer
     name: Anirudh Swaminathan
-    slack: @ani
-    github: @simpleimpulse
+    slack: ani
+    github: simpleimpulse
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
 
   - type: Developer
     name: Enrico Sacchetti
-    slack: @enrico
-    github: @theetrain
+    slack: enrico
+    github: theetrain
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
 
   - type: Developer
     name: Marco Donnici
-    slack: @marcod
-    github: @marcod1419
+    slack: marcod
+    github: marcod1419
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
 
   - type: Developer
     name: Jordan Raffoul
-    slack: @Jordan Raffoul
-    github: @jraff
+    slack: Jordan Raffoul
+    github: jraff
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
 
   - type: Designer
     name: Christina Lo
-    slack: @Christina L.
-    github: @Christina-Lo
+    slack: Christina L.
+    github: Christina-Lo
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
 
   - type: Designer
     name: Donna Vitan
-    slack: @donnavitan
-    github: @donnavitan
+    slack: donnavitan
+    github: donnavitan
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
 
   - type: Development Team
