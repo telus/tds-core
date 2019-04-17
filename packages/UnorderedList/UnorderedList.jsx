@@ -4,13 +4,14 @@ import styled from 'styled-components'
 import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
+import { list } from '@tds/shared-styles'
 
 import safeRest from '../../shared/utils/safeRest'
 
 import UnorderedItem from './UnorderedItem/UnorderedItem'
 
 const StyledListContainer = styled(Box)({
-  paddingLeft: '3rem',
+  ...list.nestedListSpacing,
 })
 
 const injectListStyle = (child, listStyle, size) => React.cloneElement(child, { listStyle, size })
