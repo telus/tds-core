@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-link@1.0.6...@tds/core-link@2.0.0) (2019-04-17)
+
+
+### Features
+
+* **core-link:** upgrade to styled components ([587e220](https://github.com/telusdigital/tds/commit/587e220))
+
+
+### BREAKING CHANGES
+
+* **core-link:** add React 16.8 and styled-components 4.1.3 to peerDependencies
+
+
+
+
+
 ## [1.0.6](https://github.com/telusdigital/tds/compare/@tds/core-link@1.0.5...@tds/core-link@1.0.6) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-link
