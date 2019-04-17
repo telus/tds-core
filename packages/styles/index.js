@@ -5,5 +5,6 @@ import * as messaging from './messaging'
 import * as position from './position'
 import * as spacing from './spacing'
 import * as forms from './forms'
+import * as list from './list'
 
-export { borders, iconWrapper, links, messaging, position, spacing, forms }
+export { borders, iconWrapper, links, messaging, position, spacing, forms, list }
