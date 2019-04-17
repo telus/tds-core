@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<UnorderedList /> can have a list style 1`] = `
-.c1 {
+.c2 {
   position: relative;
   line-height: 1;
 }
 
-.c1::before {
+.c2::before {
   display: block;
   position: absolute;
   left: -2rem;
@@ -22,8 +22,17 @@ exports[`<UnorderedList /> can have a list style 1`] = `
   top: 0.65rem;
 }
 
-.c0 {
+.c1 {
   padding-left: 3rem;
+}
+
+.c1 .c0 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.c1 :last-child .c0 {
+  margin-bottom: 0;
 }
 
 <UnorderedList
@@ -41,17 +50,23 @@ exports[`<UnorderedList /> can have a list style 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
-              "padding-left: 3rem;",
+              "& {
+  padding-left: 3rem;
+} & & {
+  margin-top: 1rem; margin-bottom: 0.5rem;
+} & :last-child & {
+  margin-bottom: 0;
+}",
             ],
           },
           "displayName": "Styled(Box)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "c0",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -63,12 +78,12 @@ exports[`<UnorderedList /> can have a list style 1`] = `
     >
       <Box
         between={2}
-        className="c0"
+        className="c0 c1"
         inline={false}
         tag="ul"
       >
         <ul
-          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
         >
           <UnorderedList.Item
             key=".$.0"
@@ -87,7 +102,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
                       "isStatic": false,
-                      "lastClassName": "c1",
+                      "lastClassName": "c2",
                       "rules": Array [
                         [Function],
                       ],
@@ -107,7 +122,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                 size="medium"
               >
                 <li
-                  className="c1"
+                  className="c2"
                   size="medium"
                 >
                   <Text
@@ -143,7 +158,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
                       "isStatic": false,
-                      "lastClassName": "c1",
+                      "lastClassName": "c2",
                       "rules": Array [
                         [Function],
                       ],
@@ -163,7 +178,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                 size="medium"
               >
                 <li
-                  className="c1"
+                  className="c2"
                   size="medium"
                 >
                   <Text
@@ -190,12 +205,12 @@ exports[`<UnorderedList /> can have a list style 1`] = `
 `;
 
 exports[`<UnorderedList /> can have a list style 2`] = `
-.c1 {
+.c2 {
   position: relative;
   line-height: 1;
 }
 
-.c1::before {
+.c2::before {
   display: block;
   position: absolute;
   left: -2rem;
@@ -207,8 +222,17 @@ exports[`<UnorderedList /> can have a list style 2`] = `
   color: #c12335;
 }
 
-.c0 {
+.c1 {
   padding-left: 3rem;
+}
+
+.c1 .c0 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.c1 :last-child .c0 {
+  margin-bottom: 0;
 }
 
 <UnorderedList
@@ -226,17 +250,23 @@ exports[`<UnorderedList /> can have a list style 2`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
-              "padding-left: 3rem;",
+              "& {
+  padding-left: 3rem;
+} & & {
+  margin-top: 1rem; margin-bottom: 0.5rem;
+} & :last-child & {
+  margin-bottom: 0;
+}",
             ],
           },
           "displayName": "Styled(Box)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "c0",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -248,12 +278,12 @@ exports[`<UnorderedList /> can have a list style 2`] = `
     >
       <Box
         between={2}
-        className="c0"
+        className="c0 c1"
         inline={false}
         tag="ul"
       >
         <ul
-          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
         >
           <UnorderedList.Item
             key=".$.0"
@@ -272,7 +302,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
                       "isStatic": false,
-                      "lastClassName": "c1",
+                      "lastClassName": "c2",
                       "rules": Array [
                         [Function],
                       ],
@@ -292,7 +322,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                 size="medium"
               >
                 <li
-                  className="c1"
+                  className="c2"
                   size="medium"
                 >
                   <Text
@@ -328,7 +358,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
                       "isStatic": false,
-                      "lastClassName": "c1",
+                      "lastClassName": "c2",
                       "rules": Array [
                         [Function],
                       ],
@@ -348,7 +378,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                 size="medium"
               >
                 <li
-                  className="c1"
+                  className="c2"
                   size="medium"
                 >
                   <Text
@@ -375,12 +405,12 @@ exports[`<UnorderedList /> can have a list style 2`] = `
 `;
 
 exports[`<UnorderedList /> renders 1`] = `
-.c1 {
+.c2 {
   position: relative;
   line-height: 1;
 }
 
-.c1::before {
+.c2::before {
   display: block;
   position: absolute;
   left: -2rem;
@@ -396,20 +426,29 @@ exports[`<UnorderedList /> renders 1`] = `
   top: 0.65rem;
 }
 
-.c0 {
+.c1 {
   padding-left: 3rem;
 }
 
+.c1 .c0 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.c1 :last-child .c0 {
+  margin-bottom: 0;
+}
+
 <ul
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
 >
   <li
-    class="c1"
+    class="c2"
   >
     Lorem ipsum
   </li>
   <li
-    class="c1"
+    class="c2"
   >
     Dolor sit amet
   </li>
