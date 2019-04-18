@@ -1,28 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumbs with children renders 1`] = `
-.c1:focus {
+.c2:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
-.c1:link,
-.c1:visited {
+.c2:link,
+.c2:visited {
   color: #2a2c2e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1:hover {
+.c2:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1:link,
-.c1:visited {
+.c2:link,
+.c2:visited {
   color: inherit;
 }
 
-.c2 {
+.c1 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #54595f;
+}
+
+.c4 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #4b286d;
+  font-weight: 700;
+}
+
+.c4:after {
+  content: '';
+  border-right: 0;
+  margin: 0;
+}
+
+.c3 {
   display: inline;
   font-size: 0.875rem;
   -webkit-letter-spacing: -0.6px;
@@ -44,7 +73,29 @@ exports[`Breadcrumbs with children renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
     font-size: 1rem;
     -webkit-letter-spacing: -0.8px;
     -moz-letter-spacing: -0.8px;
@@ -58,39 +109,45 @@ exports[`Breadcrumbs with children renders 1`] = `
   <ol
     class="c0"
   >
-    <li>
+    <li
+      class="c1"
+    >
       <span>
         <a
-          class="c1"
+          class="c2"
           href="/"
         >
           Home
         </a>
         <span
           aria-hidden="true"
-          class="c2"
+          class="c3"
         >
           /
         </span>
       </span>
     </li>
-    <li>
+    <li
+      class="c1"
+    >
       <span>
         <a
-          class="c1"
+          class="c2"
           href="/mobility"
         >
           Mobility
         </a>
         <span
           aria-hidden="true"
-          class="c2"
+          class="c3"
         >
           /
         </span>
       </span>
     </li>
-    <li>
+    <li
+      class="c4"
+    >
       <span
         class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
@@ -102,28 +159,57 @@ exports[`Breadcrumbs with children renders 1`] = `
 `;
 
 exports[`Breadcrumbs with routes renders 1`] = `
-.c1:focus {
+.c2:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
-.c1:link,
-.c1:visited {
+.c2:link,
+.c2:visited {
   color: #2a2c2e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1:hover {
+.c2:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1:link,
-.c1:visited {
+.c2:link,
+.c2:visited {
   color: inherit;
 }
 
-.c2 {
+.c1 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #54595f;
+}
+
+.c4 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #4b286d;
+  font-weight: 700;
+}
+
+.c4:after {
+  content: '';
+  border-right: 0;
+  margin: 0;
+}
+
+.c3 {
   display: inline;
   font-size: 0.875rem;
   -webkit-letter-spacing: -0.6px;
@@ -145,7 +231,29 @@ exports[`Breadcrumbs with routes renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
     font-size: 1rem;
     -webkit-letter-spacing: -0.8px;
     -moz-letter-spacing: -0.8px;
@@ -159,39 +267,45 @@ exports[`Breadcrumbs with routes renders 1`] = `
   <ol
     class="c0"
   >
-    <li>
+    <li
+      class="c1"
+    >
       <span>
         <a
-          class="c1"
+          class="c2"
           href="/"
         >
           Home
         </a>
         <span
           aria-hidden="true"
-          class="c2"
+          class="c3"
         >
           /
         </span>
       </span>
     </li>
-    <li>
+    <li
+      class="c1"
+    >
       <span>
         <a
-          class="c1"
+          class="c2"
           href="/mobility"
         >
           Mobility
         </a>
         <span
           aria-hidden="true"
-          class="c2"
+          class="c3"
         >
           /
         </span>
       </span>
     </li>
-    <li>
+    <li
+      class="c4"
+    >
       <span
         class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
