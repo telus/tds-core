@@ -15,7 +15,6 @@ import {
   helveticaNeueThin35,
 } from '@tds/shared-typography'
 import { spacing } from '@tds/shared-styles'
-import { StyledHeading } from '@tds/core-heading'
 
 import { warn } from '../../shared/utils/warn'
 
@@ -49,22 +48,37 @@ const priceValue = {
   },
 }
 
-const StyledRateText = styled.span(({ size }) => (size === 'large' ? large : medium))
+const StyledRateText = styled.span(({ size }) => ({
+  ...(size === 'large' && { ...large }),
+  ...(size !== 'large' && { ...medium }),
+  ...(size === 'small' && { lineHeight: 1 }),
+}))
+
 const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size }) => {
   return {
     lineHeight: 1,
     ...priceValue[size],
   }
 })
+
 const StyledDollarSign = styled.span(({ size }) => {
   if (size === 'small') {
     return { medium, lineHeight: 1.5 }
   }
   return large
 })
-const StyledLargeDollarSign = styled(StyledHeading)({
-  lineHeight: '1.3',
+
+const StyledLargeDollarSign = styled.span({
   color: colorText,
+  ...helveticaNeueLight45,
+  fontSize: '1.75rem',
+  lineHeight: '1.3',
+  letterSpacing: '-1.6px',
+  ...media.from('md').css({
+    ...helveticaNeueThin35,
+    fontSize: '2.75rem',
+    letterSpacing: '0',
+  }),
 })
 
 const StyledWrapperAlignment = styled(Box)({
@@ -134,7 +148,7 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     <StyledWrapperAlignment between={wrapperSpacing}>
       <Box between={size !== 'large' ? 1 : undefined}>
         {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-        <StyledPriceWrapper between={size === 'small' ? 1 : 2} isSmall={size === 'small'} inline>
+        <StyledPriceWrapper between={size === 'small' ? 1 : 2} inline>
           {renderPriceValueSign()}
           {rateText && (
             <StyledRateText data-testid="rateText" size={size}>

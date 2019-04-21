@@ -29,7 +29,6 @@
     "@tds/core-box": "^1.2.0",
     "@tds/core-colours": "^1.1.1",
     "@tds/core-hairline-divider": "^1.0.4",
-    "@tds/core-heading": "^2.0.0",
     "@tds/core-responsive": "^1.2.0",
     "@tds/core-text": "^1.0.10",
     "@tds/shared-styles": "^1.0.1",
