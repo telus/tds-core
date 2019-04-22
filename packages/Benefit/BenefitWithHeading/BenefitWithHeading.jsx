@@ -30,7 +30,7 @@ BenefitWithHeading.propTypes = {
    */
   icon: componentWithName('DecorativeIcon', true),
   /**
-   * An Item in the Benefit list
+   * An Item in the Benefit list.
    */
   children: componentWithName('BenefitItem').isRequired,
 }
