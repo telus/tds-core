@@ -58,7 +58,7 @@ Image.propTypes = {
    */
   height: PropTypes.number.isRequired,
   /**
-   * Apply rounding.
+   * Make image render as a circle or with rounded corners.
    */
   rounded: PropTypes.oneOf(['circle', 'corners']),
 }

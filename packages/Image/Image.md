@@ -1,6 +1,6 @@
 ### Usage criteria
 
-- We recommend not to `resize/crop` images in the browser.
+- We recommend not to resize or crop images in the browser.
 - The width and height should be the same ratio as the natural width and height of the image.
 - Image optimization should be done BEFORE rendering.
 - You can use the `contentful API` to request an image of a certain size.
