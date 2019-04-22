@@ -98,6 +98,8 @@ Box.propTypes = {
    *
    * By default, `between` will arrange the Box's children as a flex column. Combine with `inline` to arrange them
    * as a flex row.
+   *
+   * Use `space-between` to set an equal amount of space between all items, within the bounds of the parent.
    */
   between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 'space-between']),
   /**
