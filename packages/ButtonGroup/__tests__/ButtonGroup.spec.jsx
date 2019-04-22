@@ -33,7 +33,7 @@ describe('ButtonGroup', () => {
     )
 
   it('renders', () => {
-    const buttonGroup = doShallow()
+    const buttonGroup = doMount()
 
     expect(buttonGroup).toMatchSnapshot()
   })

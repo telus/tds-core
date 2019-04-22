@@ -1,52 +1,584 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ButtonGroup renders 1`] = `
-<fieldset
+.c1 {
+  margin: 0.5rem 0;
+}
+
+.c2 {
+  position: fixed;
+  opacity: 0;
+}
+
+.c2:focus ~ label {
+  box-shadow: 0px 0px 0px 2px #4b286d,0px 0px 8px 1px #4b286d;
+}
+
+.c2:checked ~ label {
+  background-color: #4b286d;
+  box-shadow: 0px 0px 0px 0px #4b286d;
+  color: #fff;
+}
+
+.c3 {
+  border-width: 0;
+  border-radius: 4px;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+  height: 3.25rem;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0 2rem;
+  cursor: pointer;
+  background: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: background 0.2s,color 0.2s,box-shadow 0.2s;
+  transition: background 0.2s,color 0.2s,box-shadow 0.2s;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 1px #4b286d;
+  color: #4b286d;
+  white-space: nowrap;
+  min-width: 136px;
+}
+
+.c3:hover {
+  background-color: #fff;
+  color: #4b286d;
+  box-shadow: 0px 0px 0px 2px #4b286d,0px 0px 8px 1px #4b286d;
+}
+
+.c0 {
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  max-width: 784px;
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: auto;
+    min-width: 136px;
+  }
+}
+
+<ButtonGroup
+  label="Please select a storage size"
   name="storageSize"
+  onChange={[Function]}
+  value="64gb"
 >
-  <legend>
-    <Text
-      block={false}
-      bold={true}
-      invert={false}
-      size="medium"
-    >
-      Please select a storage size
-    </Text>
-  </legend>
-  <Box
-    between={3}
-    className="buttonGroup"
-    inline={true}
-    tag="div"
+  <fieldset
+    name="storageSize"
   >
-    <ButtonGroup.Item
-      checked={true}
-      key=".0"
-      name="storageSize"
-      onChange={[Function]}
-      value="64gb"
+    <legend>
+      <Text
+        block={false}
+        bold={true}
+        invert={false}
+        size="medium"
+      >
+        <span
+          className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+        >
+          Please select a storage size
+        </span>
+      </Text>
+    </legend>
+    <Styled(Box)
+      between={3}
+      inline={true}
     >
-      64 GB
-    </ButtonGroup.Item>
-    <ButtonGroup.Item
-      checked={false}
-      key=".1"
-      name="storageSize"
-      onChange={[Function]}
-      value="128gb"
-    >
-      128 GB
-    </ButtonGroup.Item>
-    <ButtonGroup.Item
-      checked={false}
-      key=".2"
-      name="storageSize"
-      onChange={[Function]}
-      value="256gb"
-    >
-      256 GB
-    </ButtonGroup.Item>
-  </Box>
-</fieldset>
+      <StyledComponent
+        between={3}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "flex-flow: row wrap; max-width: 784px;",
+              ],
+            },
+            "displayName": "Styled(Box)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        inline={true}
+      >
+        <Box
+          between={3}
+          className="c0"
+          inline={true}
+          tag="div"
+        >
+          <div
+            className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c0"
+          >
+            <ButtonGroup.Item
+              checked={true}
+              key=".0"
+              name="storageSize"
+              onChange={[Function]}
+              value="64gb"
+            >
+              <ButtonGroupItem__StyledButtonGroupItem>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "ButtonGroupItem__StyledButtonGroupItem-drabnz-0",
+                        "isStatic": true,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "margin: 0.5rem 0;",
+                        ],
+                      },
+                      "displayName": "ButtonGroupItem__StyledButtonGroupItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "ButtonGroupItem__StyledButtonGroupItem-drabnz-0",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <ButtonGroupItem__StyledInput
+                      checked={true}
+                      id="storagesize_64gb"
+                      name="storageSize"
+                      onChange={[Function]}
+                      type="radio"
+                      value="64gb"
+                    >
+                      <StyledComponent
+                        checked={true}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "ButtonGroupItem__StyledInput-drabnz-1",
+                              "isStatic": true,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "position: fixed; opacity: 0; &:focus ~ label {
+  box-shadow: 0px 0px 0px 2px #4b286d, 0px 0px 8px 1px #4b286d;
+} &:checked ~ label {
+  background-color: #4b286d; box-shadow: 0px 0px 0px 0px #4b286d; color: #fff;
+}",
+                              ],
+                            },
+                            "displayName": "ButtonGroupItem__StyledInput",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "ButtonGroupItem__StyledInput-drabnz-1",
+                            "target": "input",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        id="storagesize_64gb"
+                        name="storageSize"
+                        onChange={[Function]}
+                        type="radio"
+                        value="64gb"
+                      >
+                        <input
+                          checked={true}
+                          className="c2"
+                          id="storagesize_64gb"
+                          name="storageSize"
+                          onChange={[Function]}
+                          type="radio"
+                          value="64gb"
+                        />
+                      </StyledComponent>
+                    </ButtonGroupItem__StyledInput>
+                    <ButtonGroupItem__StyledLabel
+                      htmlFor="storagesize_64gb"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "ButtonGroupItem__StyledLabel-drabnz-2",
+                              "isStatic": true,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "border-width: 0;",
+                                "border-radius: 4px;",
+                                "word-wrap: break-word; font-size: 1rem; letter-spacing: -0.8px; line-height: 1.5;",
+                                "word-wrap: break-word; font-weight: 700;",
+                                "height: 3.25rem;",
+                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                "margin: 0; padding: 0 2rem; cursor: pointer; background: none; transition: background 0.2s; display: flex; width: 100%; align-items: center; justify-content: center; @media (min-width: 768px) {
+  display: inline-flex; width: auto; min-width: 136px;
+}",
+                                "transition: background 0.2s, color 0.2s, box-shadow 0.2s; background-color: #fff; box-shadow: 0px 0px 0px 1px #4b286d; color: #4b286d; white-space: nowrap; min-width: 136px; &:hover {
+  background-color: #fff; color: #4b286d; box-shadow: 0px 0px 0px 2px #4b286d, 0px 0px 8px 1px #4b286d;
+}",
+                              ],
+                            },
+                            "displayName": "ButtonGroupItem__StyledLabel",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "ButtonGroupItem__StyledLabel-drabnz-2",
+                            "target": "label",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        htmlFor="storagesize_64gb"
+                      >
+                        <label
+                          className="c3"
+                          htmlFor="storagesize_64gb"
+                        >
+                          64 GB
+                        </label>
+                      </StyledComponent>
+                    </ButtonGroupItem__StyledLabel>
+                  </div>
+                </StyledComponent>
+              </ButtonGroupItem__StyledButtonGroupItem>
+            </ButtonGroup.Item>
+            <ButtonGroup.Item
+              checked={false}
+              key=".1"
+              name="storageSize"
+              onChange={[Function]}
+              value="128gb"
+            >
+              <ButtonGroupItem__StyledButtonGroupItem>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "ButtonGroupItem__StyledButtonGroupItem-drabnz-0",
+                        "isStatic": true,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "margin: 0.5rem 0;",
+                        ],
+                      },
+                      "displayName": "ButtonGroupItem__StyledButtonGroupItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "ButtonGroupItem__StyledButtonGroupItem-drabnz-0",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <ButtonGroupItem__StyledInput
+                      checked={false}
+                      id="storagesize_128gb"
+                      name="storageSize"
+                      onChange={[Function]}
+                      type="radio"
+                      value="128gb"
+                    >
+                      <StyledComponent
+                        checked={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "ButtonGroupItem__StyledInput-drabnz-1",
+                              "isStatic": true,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "position: fixed; opacity: 0; &:focus ~ label {
+  box-shadow: 0px 0px 0px 2px #4b286d, 0px 0px 8px 1px #4b286d;
+} &:checked ~ label {
+  background-color: #4b286d; box-shadow: 0px 0px 0px 0px #4b286d; color: #fff;
+}",
+                              ],
+                            },
+                            "displayName": "ButtonGroupItem__StyledInput",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "ButtonGroupItem__StyledInput-drabnz-1",
+                            "target": "input",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        id="storagesize_128gb"
+                        name="storageSize"
+                        onChange={[Function]}
+                        type="radio"
+                        value="128gb"
+                      >
+                        <input
+                          checked={false}
+                          className="c2"
+                          id="storagesize_128gb"
+                          name="storageSize"
+                          onChange={[Function]}
+                          type="radio"
+                          value="128gb"
+                        />
+                      </StyledComponent>
+                    </ButtonGroupItem__StyledInput>
+                    <ButtonGroupItem__StyledLabel
+                      htmlFor="storagesize_128gb"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "ButtonGroupItem__StyledLabel-drabnz-2",
+                              "isStatic": true,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "border-width: 0;",
+                                "border-radius: 4px;",
+                                "word-wrap: break-word; font-size: 1rem; letter-spacing: -0.8px; line-height: 1.5;",
+                                "word-wrap: break-word; font-weight: 700;",
+                                "height: 3.25rem;",
+                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                "margin: 0; padding: 0 2rem; cursor: pointer; background: none; transition: background 0.2s; display: flex; width: 100%; align-items: center; justify-content: center; @media (min-width: 768px) {
+  display: inline-flex; width: auto; min-width: 136px;
+}",
+                                "transition: background 0.2s, color 0.2s, box-shadow 0.2s; background-color: #fff; box-shadow: 0px 0px 0px 1px #4b286d; color: #4b286d; white-space: nowrap; min-width: 136px; &:hover {
+  background-color: #fff; color: #4b286d; box-shadow: 0px 0px 0px 2px #4b286d, 0px 0px 8px 1px #4b286d;
+}",
+                              ],
+                            },
+                            "displayName": "ButtonGroupItem__StyledLabel",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "ButtonGroupItem__StyledLabel-drabnz-2",
+                            "target": "label",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        htmlFor="storagesize_128gb"
+                      >
+                        <label
+                          className="c3"
+                          htmlFor="storagesize_128gb"
+                        >
+                          128 GB
+                        </label>
+                      </StyledComponent>
+                    </ButtonGroupItem__StyledLabel>
+                  </div>
+                </StyledComponent>
+              </ButtonGroupItem__StyledButtonGroupItem>
+            </ButtonGroup.Item>
+            <ButtonGroup.Item
+              checked={false}
+              key=".2"
+              name="storageSize"
+              onChange={[Function]}
+              value="256gb"
+            >
+              <ButtonGroupItem__StyledButtonGroupItem>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "ButtonGroupItem__StyledButtonGroupItem-drabnz-0",
+                        "isStatic": true,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "margin: 0.5rem 0;",
+                        ],
+                      },
+                      "displayName": "ButtonGroupItem__StyledButtonGroupItem",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "ButtonGroupItem__StyledButtonGroupItem-drabnz-0",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <ButtonGroupItem__StyledInput
+                      checked={false}
+                      id="storagesize_256gb"
+                      name="storageSize"
+                      onChange={[Function]}
+                      type="radio"
+                      value="256gb"
+                    >
+                      <StyledComponent
+                        checked={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "ButtonGroupItem__StyledInput-drabnz-1",
+                              "isStatic": true,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "position: fixed; opacity: 0; &:focus ~ label {
+  box-shadow: 0px 0px 0px 2px #4b286d, 0px 0px 8px 1px #4b286d;
+} &:checked ~ label {
+  background-color: #4b286d; box-shadow: 0px 0px 0px 0px #4b286d; color: #fff;
+}",
+                              ],
+                            },
+                            "displayName": "ButtonGroupItem__StyledInput",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "ButtonGroupItem__StyledInput-drabnz-1",
+                            "target": "input",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        id="storagesize_256gb"
+                        name="storageSize"
+                        onChange={[Function]}
+                        type="radio"
+                        value="256gb"
+                      >
+                        <input
+                          checked={false}
+                          className="c2"
+                          id="storagesize_256gb"
+                          name="storageSize"
+                          onChange={[Function]}
+                          type="radio"
+                          value="256gb"
+                        />
+                      </StyledComponent>
+                    </ButtonGroupItem__StyledInput>
+                    <ButtonGroupItem__StyledLabel
+                      htmlFor="storagesize_256gb"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "ButtonGroupItem__StyledLabel-drabnz-2",
+                              "isStatic": true,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "border-width: 0;",
+                                "border-radius: 4px;",
+                                "word-wrap: break-word; font-size: 1rem; letter-spacing: -0.8px; line-height: 1.5;",
+                                "word-wrap: break-word; font-weight: 700;",
+                                "height: 3.25rem;",
+                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                "margin: 0; padding: 0 2rem; cursor: pointer; background: none; transition: background 0.2s; display: flex; width: 100%; align-items: center; justify-content: center; @media (min-width: 768px) {
+  display: inline-flex; width: auto; min-width: 136px;
+}",
+                                "transition: background 0.2s, color 0.2s, box-shadow 0.2s; background-color: #fff; box-shadow: 0px 0px 0px 1px #4b286d; color: #4b286d; white-space: nowrap; min-width: 136px; &:hover {
+  background-color: #fff; color: #4b286d; box-shadow: 0px 0px 0px 2px #4b286d, 0px 0px 8px 1px #4b286d;
+}",
+                              ],
+                            },
+                            "displayName": "ButtonGroupItem__StyledLabel",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "ButtonGroupItem__StyledLabel-drabnz-2",
+                            "target": "label",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        htmlFor="storagesize_256gb"
+                      >
+                        <label
+                          className="c3"
+                          htmlFor="storagesize_256gb"
+                        >
+                          256 GB
+                        </label>
+                      </StyledComponent>
+                    </ButtonGroupItem__StyledLabel>
+                  </div>
+                </StyledComponent>
+              </ButtonGroupItem__StyledButtonGroupItem>
+            </ButtonGroup.Item>
+          </div>
+        </Box>
+      </StyledComponent>
+    </Styled(Box)>
+  </fieldset>
+</ButtonGroup>
 `;

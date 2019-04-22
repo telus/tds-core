@@ -3,10 +3,69 @@ import PropTypes from 'prop-types'
 
 import { componentWithName, or } from '@tds/util-prop-types'
 
-import safeRest from '../../../shared/utils/safeRest'
-import generateId from '../../../shared/utils/generateId/generateId'
+import styled from 'styled-components'
 
-import styles from './ButtonGroupItem.modules.scss'
+import { borders, forms } from '@tds/shared-styles'
+import { medium, boldFont } from '@tds/shared-typography'
+import { media } from '@tds/core-responsive'
+import { colorTelusPurple, colorWhite } from '@tds/core-colours'
+import generateId from '../../../shared/utils/generateId/generateId'
+import safeRest from '../../../shared/utils/safeRest'
+
+const baseButton = {
+  margin: 0,
+  padding: '0 2rem',
+  cursor: 'pointer',
+  background: 'none',
+  transition: 'background 0.2s',
+  display: 'flex',
+  width: '100%',
+  alignItems: 'center',
+  justifyContent: 'center',
+  ...media.from('md').css({
+    display: 'inline-flex',
+    width: 'auto',
+    minWidth: '136px',
+  }),
+}
+
+const StyledButtonGroupItem = styled.div({
+  margin: '0.5rem 0',
+})
+const StyledInput = styled.input({
+  position: 'fixed',
+  opacity: '0',
+  '&:focus ~ label': {
+    boxShadow: `0px 0px 0px 2px ${colorTelusPurple}, 0px 0px 8px 1px ${colorTelusPurple}`,
+  },
+  '&:checked ~ label': {
+    backgroundColor: colorTelusPurple,
+    boxShadow: `0px 0px 0px 0px ${colorTelusPurple}`,
+    color: colorWhite,
+  },
+})
+const StyledLabel = styled.label(
+  borders.none,
+  borders.rounded,
+  medium,
+  boldFont,
+  forms.height,
+  forms.font,
+  baseButton,
+  {
+    transition: 'background 0.2s, color 0.2s, box-shadow 0.2s',
+    backgroundColor: colorWhite,
+    boxShadow: `0px 0px 0px 1px ${colorTelusPurple}`,
+    color: colorTelusPurple,
+    whiteSpace: 'nowrap',
+    minWidth: '136px',
+    '&:hover': {
+      backgroundColor: colorWhite,
+      color: colorTelusPurple,
+      boxShadow: `0px 0px 0px 2px ${colorTelusPurple}, 0px 0px 8px 1px ${colorTelusPurple}`,
+    },
+  }
+)
 
 const ButtonGroupItem = ({
   name,
@@ -20,8 +79,8 @@ const ButtonGroupItem = ({
 }) => {
   const itemId = generateId(name).postfix(value)
   return (
-    <div {...safeRest(rest)} className={styles.itemContainer}>
-      <input
+    <StyledButtonGroupItem {...safeRest(rest)}>
+      <StyledInput
         id={itemId}
         name={name}
         value={value}
@@ -30,12 +89,9 @@ const ButtonGroupItem = ({
         onChange={onChange}
         onFocus={onFocus}
         onBlur={onBlur}
-        className={styles.hiddenRadio}
       />
-      <label htmlFor={itemId} className={styles.itemButton}>
-        {children}
-      </label>
-    </div>
+      <StyledLabel htmlFor={itemId}>{children}</StyledLabel>
+    </StyledButtonGroupItem>
   )
 }
 

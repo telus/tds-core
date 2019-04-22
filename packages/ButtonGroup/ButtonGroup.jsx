@@ -5,12 +5,11 @@ import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import { componentWithName } from '@tds/util-prop-types'
 
+import styled from 'styled-components'
 import ButtonGroupItem from './ButtonGroupItem/ButtonGroupItem'
 
 import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
-
-import styles from './ButtonGroup.modules.scss'
 
 /**
  * An input component utilizing buttons that act as radios.
@@ -38,6 +37,11 @@ const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, 
       `Selected value "${value}" of ButtonGroup named "${name}" does not match the value of any button in the group. A button must be selected by default. Available button values are: ${buttonValues}`
     )
   }
+  const StyledButtonGroup = styled(Box)({
+    flexFlow: 'row wrap',
+    maxWidth: '784px',
+  })
+
   return (
     <fieldset {...safeRest(rest)} name={name}>
       <legend>
@@ -46,9 +50,9 @@ const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, 
         </Text>
       </legend>
 
-      <Box between={3} inline className={styles.buttonGroup}>
+      <StyledButtonGroup between={3} inline>
         {passedButtons}
-      </Box>
+      </StyledButtonGroup>
     </fieldset>
   )
 }
