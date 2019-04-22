@@ -48,11 +48,15 @@ const priceValue = {
   },
 }
 
-const StyledRateText = styled.span(({ size }) => ({
-  ...(size === 'large' && { ...large }),
-  ...(size !== 'large' && { ...medium }),
-  ...(size === 'small' && { lineHeight: 1 }),
-}))
+const StyledRateText = styled.span(({ size }) => {
+  if (size === 'large') {
+    return large
+  }
+  if (size === 'medium') {
+    return medium
+  }
+  return { ...medium, lineHeight: 1 }
+})
 
 const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size }) => {
   return {
