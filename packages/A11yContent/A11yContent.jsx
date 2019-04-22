@@ -19,6 +19,9 @@ const A11yContent = ({ children }) => {
 }
 
 A11yContent.propTypes = {
+  /**
+   * Accessible content.
+   */
   children: PropTypes.string.isRequired,
 }
 A11yContent.defaultProps = {}
