@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-checkbox",
-  "version": "1.1.17",
+  "version": "1.1.18",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -24,15 +24,15 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.2.0",
+    "@tds/core-box": "^1.2.1",
     "@tds/core-decorative-icon": "^1.2.0",
-    "@tds/core-input-feedback": "^1.0.9",
+    "@tds/core-input-feedback": "^1.0.10",
     "@tds/core-paragraph": "^1.0.10",
     "@tds/core-text": "^1.0.10",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.1.1",
-    "@tds/shared-choice": "^1.1.12"
+    "@tds/shared-choice": "^1.1.13"
   }
 }

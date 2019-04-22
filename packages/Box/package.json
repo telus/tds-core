@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-box",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Apply spacing within or around components",
   "main": "index.cjs.js",
   "module": "index.es.js",

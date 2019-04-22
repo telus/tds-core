@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.13...@tds/core-tooltip@3.0.0) (2019-04-22)
+
+
+### Features
+
+* **core-tooltip:** convert to styled components ([4fbedd3](https://github.com/telusdigital/tds/commit/4fbedd3))
+
+
+### BREAKING CHANGES
+
+* **core-tooltip:** now uses styled components
+
+
+
+
+
 ## [2.0.13](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@2.0.12...@tds/core-tooltip@2.0.13) (2019-04-11)
 
 
