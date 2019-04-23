@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-radio",
-  "version": "1.2.16",
+  "version": "1.2.17",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -24,15 +24,15 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.2.1",
+    "@tds/core-box": "^1.2.2",
     "@tds/core-decorative-icon": "^1.2.0",
-    "@tds/core-input-feedback": "^1.0.10",
+    "@tds/core-input-feedback": "^1.0.11",
     "@tds/core-paragraph": "^1.0.10",
     "@tds/core-text": "^1.0.10",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "@tds/core-colours": "^1.1.1",
-    "@tds/shared-choice": "^1.1.13"
+    "@tds/shared-choice": "^1.1.14"
   }
 }
