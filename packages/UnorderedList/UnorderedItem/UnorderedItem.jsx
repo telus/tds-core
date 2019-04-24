@@ -3,13 +3,18 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { colorTelusPurple, colorPrimary, colorCardinal } from '@tds/core-colours'
-import Text from '@tds/core-text'
+
+import { small, medium, large, smallFont, mediumFont, largeFont } from '@tds/shared-typography'
 
 import safeRest from '../../../shared/utils/safeRest'
 
 const StyledUnorderedItem = styled.li(({ listStyle, size }) => ({
   position: 'relative',
   lineHeight: 1,
+
+  ...(size === 'small' && { ...small, ...smallFont }),
+  ...(size === 'medium' && { ...medium, ...mediumFont }),
+  ...(size === 'large' && { ...large, ...largeFont }),
 
   '&::before': {
     display: 'block',
@@ -69,7 +74,7 @@ const StyledUnorderedItem = styled.li(({ listStyle, size }) => ({
 
 const UnorderedItem = ({ listStyle, size, children, ...rest }) => (
   <StyledUnorderedItem {...safeRest(rest)} listStyle={listStyle} size={size}>
-    <Text size={size}>{children}</Text>
+    {children}
   </StyledUnorderedItem>
 )
 
