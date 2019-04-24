@@ -46,7 +46,7 @@ exports[`MarkdownHeading can render an unordered list 1`] = `
     size="medium"
   >
     <UnorderedList
-      listStyle="circle"
+      listStyle=""
       size="medium"
     >
       <UnorderedList.Item

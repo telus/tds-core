@@ -10,7 +10,19 @@ import UnorderedItem from './UnorderedItem/UnorderedItem'
 
 import styles from '../../shared/styles/List.modules.scss'
 
-const injectListStyle = (child, listStyle, size) => React.cloneElement(child, { listStyle, size })
+const LIST_STYLE_CIRLCLE = 'circle'
+const LIST_STYLE_CHECKMARK = 'checkmark'
+const LIST_STYLE_X = 'x'
+
+const injectListStyle = (child, listStyle, size) => {
+  const propsForChild = {
+    size,
+  }
+  if (listStyle !== '') {
+    propsForChild.listStyle = listStyle
+  }
+  return React.cloneElement(child, propsForChild)
+}
 
 /**
  * @version ./package.json
@@ -28,7 +40,7 @@ UnorderedList.propTypes = {
   /**
    * The bullet style.
    */
-  listStyle: PropTypes.oneOf(['circle', 'checkmark', 'x']),
+  listStyle: PropTypes.oneOf([LIST_STYLE_CIRLCLE, LIST_STYLE_CHECKMARK, LIST_STYLE_X]),
   /**
    * The size of the list's text.
    *
@@ -42,7 +54,7 @@ UnorderedList.propTypes = {
 }
 
 UnorderedList.defaultProps = {
-  listStyle: 'circle',
+  listStyle: '',
   size: 'medium',
 }
 

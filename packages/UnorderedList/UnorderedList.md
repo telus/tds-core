@@ -31,3 +31,14 @@
   <UnorderedList.Item>A mix of numbers, lowercase and uppercase letters</UnorderedList.Item>
 </UnorderedList>
 ```
+
+### Mixed List
+
+```jsx
+<UnorderedList>
+  <UnorderedList.Item listStyle="x">8 characters or longer, no spaces</UnorderedList.Item>
+  <UnorderedList.Item listStyle="checkmark">
+    A mix of numbers, lowercase and uppercase letters
+  </UnorderedList.Item>
+</UnorderedList>
+```
