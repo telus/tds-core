@@ -83,4 +83,26 @@ describe('<UnorderedList />', () => {
     expect(unorderedList).not.toHaveProp('className', 'my-custom-class')
     expect(unorderedList).not.toHaveProp('style')
   })
+
+  it('renders a mixed list of items', () => {
+    const unorderedList = shallow(
+      <UnorderedList>
+        <UnorderedList.Item listStyle="checkmark">Lorem ipsum</UnorderedList.Item>
+        <UnorderedList.Item listStyle="x">Dolor sit amet</UnorderedList.Item>
+      </UnorderedList>
+    )
+
+    expect(
+      unorderedList
+        .find(UnorderedList.Item)
+        .at(0)
+        .dive()
+    ).toHaveClassName('checkmark')
+    expect(
+      unorderedList
+        .find(UnorderedList.Item)
+        .at(1)
+        .dive()
+    ).toHaveClassName('x')
+  })
 })
