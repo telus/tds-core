@@ -3,7 +3,14 @@
 exports[`<UnorderedList /> can have a list style 1`] = `
 .c2 {
   position: relative;
-  line-height: 1;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  font-weight: 400;
 }
 
 .c2::before {
@@ -125,18 +132,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                   className="c2"
                   size="medium"
                 >
-                  <Text
-                    block={false}
-                    bold={false}
-                    invert={false}
-                    size="medium"
-                  >
-                    <span
-                      className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-                    >
-                      Lorem ipsum
-                    </span>
-                  </Text>
+                  Lorem ipsum
                 </li>
               </StyledComponent>
             </UnorderedItem__StyledUnorderedItem>
@@ -181,18 +177,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                   className="c2"
                   size="medium"
                 >
-                  <Text
-                    block={false}
-                    bold={false}
-                    invert={false}
-                    size="medium"
-                  >
-                    <span
-                      className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-                    >
-                      Dolor sit amet
-                    </span>
-                  </Text>
+                  Dolor sit amet
                 </li>
               </StyledComponent>
             </UnorderedItem__StyledUnorderedItem>
@@ -207,7 +192,14 @@ exports[`<UnorderedList /> can have a list style 1`] = `
 exports[`<UnorderedList /> can have a list style 2`] = `
 .c2 {
   position: relative;
-  line-height: 1;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  font-weight: 400;
 }
 
 .c2::before {
@@ -325,18 +317,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                   className="c2"
                   size="medium"
                 >
-                  <Text
-                    block={false}
-                    bold={false}
-                    invert={false}
-                    size="medium"
-                  >
-                    <span
-                      className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-                    >
-                      Lorem ipsum
-                    </span>
-                  </Text>
+                  Lorem ipsum
                 </li>
               </StyledComponent>
             </UnorderedItem__StyledUnorderedItem>
@@ -381,18 +362,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                   className="c2"
                   size="medium"
                 >
-                  <Text
-                    block={false}
-                    bold={false}
-                    invert={false}
-                    size="medium"
-                  >
-                    <span
-                      className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-                    >
-                      Dolor sit amet
-                    </span>
-                  </Text>
+                  Dolor sit amet
                 </li>
               </StyledComponent>
             </UnorderedItem__StyledUnorderedItem>
@@ -407,7 +377,14 @@ exports[`<UnorderedList /> can have a list style 2`] = `
 exports[`<UnorderedList /> renders 1`] = `
 .c2 {
   position: relative;
-  line-height: 1;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  font-weight: 400;
 }
 
 .c2::before {
