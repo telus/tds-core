@@ -37,7 +37,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
           <div>
             <Clickable
               aria-expanded={false}
-              dangerouslyAddClassName="header"
+              className="header"
               disabled={false}
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -312,7 +312,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
           <div>
             <Clickable
               aria-expanded={true}
-              dangerouslyAddClassName="header"
+              className="header"
               disabled={false}
               onClick={[Function]}
               onMouseEnter={[Function]}
