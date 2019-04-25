@@ -34,7 +34,7 @@ exports[`Accordion renders a closed accordion 1`] = `
           <div>
             <Clickable
               aria-expanded={false}
-              dangerouslyAddClassName="header"
+              className="header"
               disabled={false}
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -297,7 +297,7 @@ exports[`Accordion renders an open accordion 1`] = `
           <div>
             <Clickable
               aria-expanded={true}
-              dangerouslyAddClassName="header"
+              className="header"
               disabled={false}
               onClick={[Function]}
               onMouseEnter={[Function]}

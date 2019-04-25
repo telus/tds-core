@@ -143,7 +143,7 @@ class PanelWrapper extends React.Component {
         onClick={onClick}
         onMouseEnter={this.mouseEnter}
         onMouseLeave={this.mouseLeave}
-        dangerouslyAddClassName={joinClassNames(styles.header, panelDisabled && styles.disabled)}
+        className={joinClassNames(styles.header, panelDisabled && styles.disabled)}
         disabled={panelDisabled}
         aria-expanded={this.state.open}
       >
