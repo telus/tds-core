@@ -17,11 +17,12 @@ const transitionStyles = (direction, distance) => {
   }
 }
 
-const Translate = ({ direction, distance, children, ...rest }) => (
+const Translate = ({ style, direction, distance, children, ...rest }) => (
   <Transition {...rest}>
     {status => (
       <div
         style={{
+          ...style,
           ...defaultStyle(rest.timeout),
           ...transitionStyles(direction, distance)[status],
         }}
@@ -31,11 +32,17 @@ const Translate = ({ direction, distance, children, ...rest }) => (
     )}
   </Transition>
 )
+
 Translate.propTypes = {
   timeout: PropTypes.number.isRequired,
   direction: PropTypes.oneOf(['x', 'y']).isRequired,
   distance: PropTypes.string.isRequired,
+  style: PropTypes.object,
   children: PropTypes.func.isRequired,
+}
+
+Translate.defaultProps = {
+  style: undefined,
 }
 
 export default Translate
