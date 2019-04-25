@@ -36,7 +36,7 @@ const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, ...rest }) =
       <Clickable
         {...safeRest(rest)}
         onClick={onClick}
-        dangerouslyAddStyle={needsExpandedTouchArea ? touchAreaStyles(size) : undefined}
+        style={needsExpandedTouchArea ? touchAreaStyles(size) : undefined}
       >
         <Icon {...iconProps} />
       </Clickable>
