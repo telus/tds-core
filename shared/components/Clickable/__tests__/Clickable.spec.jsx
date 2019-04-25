@@ -13,13 +13,13 @@ describe('Clickable', () => {
   })
 
   it('will add additional arbitrary class names', () => {
-    const clickable = doShallow({ dangerouslyAddClassName: 'a-class' })
+    const clickable = doShallow({ className: 'a-class' })
 
     expect(clickable).toHaveClassName('a-class')
   })
 
   it('will add additional arbitrary styles', () => {
-    const clickable = doShallow({ dangerouslyAddStyle: { color: 'green' } })
+    const clickable = doShallow({ style: { color: 'green' } })
 
     expect(clickable).toHaveStyle('color', 'green')
   })
@@ -29,15 +29,5 @@ describe('Clickable', () => {
 
     expect(clickable).toHaveProp('id', 'the-id')
     expect(clickable).toHaveProp('data-some-attr', 'some value')
-  })
-
-  it('does not allow custom CSS', () => {
-    const clickable = doShallow({
-      className: 'my-custom-class',
-      style: { color: 'hotpink' },
-    })
-
-    expect(clickable).not.toHaveProp('className', 'my-custom-class')
-    expect(clickable).not.toHaveProp('style', { color: 'hotpink' })
   })
 })
