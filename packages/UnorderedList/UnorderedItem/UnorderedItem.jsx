@@ -9,23 +9,37 @@ import joinClassNames from '../../../shared/utils/joinClassNames'
 import styles from './UnorderedItem.modules.scss'
 import listStyles from '../../../shared/styles/List.modules.scss'
 
-const UnorderedItem = ({ listStyle, size, children, ...rest }) => (
+const UnorderedItem = ({ listStyle, itemStyle, size, children, ...rest }) => (
   <li
     {...safeRest(rest)}
-    className={joinClassNames(styles[listStyle], styles[size], listStyles.item)}
+    className={joinClassNames(styles[itemStyle || listStyle], styles[size], listStyles.item)}
   >
     <Text size={size}>{children}</Text>
   </li>
 )
 
 UnorderedItem.propTypes = {
-  listStyle: PropTypes.oneOf(['circle', 'checkmark', 'x']),
+  /**
+   * The list's global bullet style. Can be overriden by listStyle.
+   * @ignore
+   */
+  listStyle: PropTypes.oneOf(['', 'circle', 'checkmark', 'x']),
+  /**
+   * The bullet style of a single item.
+   * @since 2.1.0
+   */
+  itemStyle: PropTypes.oneOf(['circle', 'checkmark', 'x']),
+  /**
+   * The size of the list items, passed from the parent.
+   * @ignore
+   */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   children: PropTypes.node.isRequired,
 }
 
 UnorderedItem.defaultProps = {
   listStyle: 'circle',
+  itemStyle: undefined,
   size: 'medium',
 }
 

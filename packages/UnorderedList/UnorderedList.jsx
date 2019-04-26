@@ -10,16 +10,10 @@ import UnorderedItem from './UnorderedItem/UnorderedItem'
 
 import styles from '../../shared/styles/List.modules.scss'
 
-const LIST_STYLE_CIRLCLE = 'circle'
-const LIST_STYLE_CHECKMARK = 'checkmark'
-const LIST_STYLE_X = 'x'
-
 const injectListStyle = (child, listStyle, size) => {
   const propsForChild = {
     size,
-  }
-  if (listStyle !== '') {
-    propsForChild.listStyle = listStyle
+    listStyle,
   }
   return React.cloneElement(child, propsForChild)
 }
@@ -40,7 +34,7 @@ UnorderedList.propTypes = {
   /**
    * The bullet style.
    */
-  listStyle: PropTypes.oneOf([LIST_STYLE_CIRLCLE, LIST_STYLE_CHECKMARK, LIST_STYLE_X]),
+  listStyle: PropTypes.oneOf(['circle', 'checkmark', 'x']),
   /**
    * The size of the list's text.
    *
@@ -54,7 +48,7 @@ UnorderedList.propTypes = {
 }
 
 UnorderedList.defaultProps = {
-  listStyle: '',
+  listStyle: 'circle',
   size: 'medium',
 }
 
