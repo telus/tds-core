@@ -1,9 +1,8 @@
 @import '~@tds/core-colours/colours';
-@import '../../../shared/scss/typography';
+@import '~@tds/shared-typography/Typography.modules.scss';
 
 .item {
   position: relative;
-  line-height: 1;
 
   &::before {
     display: block;
@@ -80,18 +79,24 @@
 }
 
 .small {
+  composes: small;
+  composes: smallFont;
   &::before {
     line-height: 1.25rem;
   }
 }
 
 .medium {
+  composes: medium;
+  composes: mediumFont;
   &::before {
     line-height: 1.6rem;
   }
 }
 
 .large {
+  composes: large;
+  composes: largeFont;
   &::before {
     line-height: 2.1rem;
   }

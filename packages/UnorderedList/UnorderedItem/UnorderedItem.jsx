@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Text from '@tds/core-text'
-
 import safeRest from '../../../shared/utils/safeRest'
 import joinClassNames from '../../../shared/utils/joinClassNames'
 
@@ -14,7 +12,7 @@ const UnorderedItem = ({ listStyle, itemStyle, size, children, ...rest }) => (
     {...safeRest(rest)}
     className={joinClassNames(styles[itemStyle || listStyle], styles[size], listStyles.item)}
   >
-    <Text size={size}>{children}</Text>
+    {children}
   </li>
 )
 
