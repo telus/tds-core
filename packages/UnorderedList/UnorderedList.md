@@ -34,11 +34,15 @@
 
 ### Mixed List
 
+If you do not want each list item to have the same icon, you may give each item its own icon via the `itemStyle` prop. This will override a `listStyle` set by the parent.
+
 ```jsx
-<UnorderedList>
-  <UnorderedList.Item listStyle="x">8 characters or longer, no spaces</UnorderedList.Item>
-  <UnorderedList.Item listStyle="checkmark">
-    A mix of numbers, lowercase and uppercase letters
+<UnorderedList listStyle="circle">
+  <UnorderedList.Item itemStyle="checkmark">
+    An item that has a checkmark in front of it
   </UnorderedList.Item>
+  <UnorderedList.Item>An item using the global listStyle</UnorderedList.Item>
+  <UnorderedList.Item>Another item using the global listStyle</UnorderedList.Item>
+  <UnorderedList.Item itemStyle="x">An item that has an X in front of it</UnorderedList.Item>
 </UnorderedList>
 ```

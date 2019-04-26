@@ -7,20 +7,12 @@ exports[`<UnorderedList /> renders 1`] = `
   <li
     class="circle medium item"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-    >
-      Lorem ipsum
-    </span>
+    Lorem ipsum
   </li>
   <li
     class="circle medium item"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-    >
-      Dolor sit amet
-    </span>
+    Dolor sit amet
   </li>
 </ul>
 `;
