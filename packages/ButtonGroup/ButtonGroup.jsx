@@ -11,6 +11,11 @@ import ButtonGroupItem from './ButtonGroupItem/ButtonGroupItem'
 import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
+const StyledButtonGroup = styled(Box)({
+  flexFlow: 'row wrap',
+  maxWidth: '784px',
+})
+
 /**
  * An input component utilizing buttons that act as radios.
  * @version ./package.json
@@ -37,10 +42,6 @@ const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, 
       `Selected value "${value}" of ButtonGroup named "${name}" does not match the value of any button in the group. A button must be selected by default. Available button values are: ${buttonValues}`
     )
   }
-  const StyledButtonGroup = styled(Box)({
-    flexFlow: 'row wrap',
-    maxWidth: '784px',
-  })
 
   return (
     <fieldset {...safeRest(rest)} name={name}>
