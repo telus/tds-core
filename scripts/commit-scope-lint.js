@@ -32,13 +32,14 @@ if (bypassScopes.indexOf(commitScope) === -1) {
   console.log('\nValidating commit scope...')
 
   gitDiff
-    .map(element => element.replace('-', ''))
-    .forEach(element => {
+    .map(diffFileName => diffFileName.replace('-', ''))
+    .forEach(diffFileName => {
       if (
+        diffFileName !== '' &&
         ((rootScopes.indexOf(commitScope) === -1 &&
-          element.search(new RegExp(`^(.*(/+)|(/?))${commitScope}/`, 'i')) === -1) ||
-          (rootScopes.indexOf(commitScope) !== -1 && element.search(/(\\)|(\/)/g) !== -1)) &&
-        excludedFiles.indexOf(element) === -1
+          diffFileName.search(new RegExp(`^(.*(/+)|(/?))${commitScope}/`, 'i')) === -1) ||
+          (rootScopes.indexOf(commitScope) !== -1 && diffFileName.search(/(\\)|(\/)/g) !== -1)) &&
+        excludedFiles.indexOf(diffFileName) === -1
       ) {
         console.error(
           '\n',
