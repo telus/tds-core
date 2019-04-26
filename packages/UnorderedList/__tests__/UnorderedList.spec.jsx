@@ -87,8 +87,8 @@ describe('<UnorderedList />', () => {
   it('renders a mixed list of items', () => {
     const unorderedList = shallow(
       <UnorderedList>
-        <UnorderedList.Item listStyle="checkmark">Lorem ipsum</UnorderedList.Item>
-        <UnorderedList.Item listStyle="x">Dolor sit amet</UnorderedList.Item>
+        <UnorderedList.Item itemStyle="checkmark">Lorem ipsum</UnorderedList.Item>
+        <UnorderedList.Item itemStyle="x">Dolor sit amet</UnorderedList.Item>
       </UnorderedList>
     )
 
