@@ -21,7 +21,7 @@ const touchAreaStyles = iconSize => {
  *
  * @version ./package.json
  */
-const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, ...rest }) => {
+const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, innerRef, ...rest }) => {
   const iconProps = {
     symbol,
     variant,
@@ -35,6 +35,7 @@ const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, ...rest }) =
     return (
       <Clickable
         {...safeRest(rest)}
+        innerRef={innerRef}
         onClick={onClick}
         style={needsExpandedTouchArea ? touchAreaStyles(size) : undefined}
       >
@@ -82,12 +83,15 @@ StandaloneIcon.propTypes = {
    * A description of the icon for screen readers.
    */
   a11yText: PropTypes.string.isRequired,
+  /* @ignore */
+  innerRef: PropTypes.object,
 }
 
 StandaloneIcon.defaultProps = {
   variant: undefined,
   size: 24,
   onClick: undefined,
+  innerRef: undefined,
 }
 
 export default StandaloneIcon
