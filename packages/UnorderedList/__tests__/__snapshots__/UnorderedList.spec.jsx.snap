@@ -98,7 +98,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
             size="medium"
           >
             <UnorderedItem__StyledUnorderedItem
-              listStyle="circle"
+              iconStyle="circle"
               size="medium"
             >
               <StyledComponent
@@ -125,7 +125,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                   }
                 }
                 forwardedRef={null}
-                listStyle="circle"
+                iconStyle="circle"
                 size="medium"
               >
                 <li
@@ -143,7 +143,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
             size="medium"
           >
             <UnorderedItem__StyledUnorderedItem
-              listStyle="circle"
+              iconStyle="circle"
               size="medium"
             >
               <StyledComponent
@@ -170,7 +170,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                   }
                 }
                 forwardedRef={null}
-                listStyle="circle"
+                iconStyle="circle"
                 size="medium"
               >
                 <li
@@ -283,7 +283,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
             size="medium"
           >
             <UnorderedItem__StyledUnorderedItem
-              listStyle="x"
+              iconStyle="x"
               size="medium"
             >
               <StyledComponent
@@ -310,7 +310,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                   }
                 }
                 forwardedRef={null}
-                listStyle="x"
+                iconStyle="x"
                 size="medium"
               >
                 <li
@@ -328,7 +328,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
             size="medium"
           >
             <UnorderedItem__StyledUnorderedItem
-              listStyle="x"
+              iconStyle="x"
               size="medium"
             >
               <StyledComponent
@@ -355,7 +355,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                   }
                 }
                 forwardedRef={null}
-                listStyle="x"
+                iconStyle="x"
                 size="medium"
               >
                 <li
@@ -430,4 +430,28 @@ exports[`<UnorderedList /> renders 1`] = `
     Dolor sit amet
   </li>
 </ul>
+`;
+
+exports[`<UnorderedList /> renders a mixed list of items 1`] = `
+<Styled(Box)
+  between={2}
+  tag="ul"
+>
+  <UnorderedList.Item
+    itemStyle="checkmark"
+    key=".$.0"
+    listStyle="circle"
+    size="medium"
+  >
+    Lorem ipsum
+  </UnorderedList.Item>
+  <UnorderedList.Item
+    itemStyle="x"
+    key=".$.1"
+    listStyle="circle"
+    size="medium"
+  >
+    Dolor sit amet
+  </UnorderedList.Item>
+</Styled(Box)>
 `;

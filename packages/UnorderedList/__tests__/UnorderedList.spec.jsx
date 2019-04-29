@@ -79,17 +79,6 @@ describe('<UnorderedList />', () => {
       </UnorderedList>
     )
 
-    expect(
-      unorderedList
-        .find(UnorderedList.Item)
-        .at(0)
-        .dive()
-    ).toHaveClassName('checkmark')
-    expect(
-      unorderedList
-        .find(UnorderedList.Item)
-        .at(1)
-        .dive()
-    ).toHaveClassName('x')
+    expect(unorderedList).toMatchSnapshot()
   })
 })

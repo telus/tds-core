@@ -36,15 +36,13 @@
 
 If you do not want each list item to have the same icon, you may give each item its own icon via the `itemStyle` prop. This will override a `listStyle` set by the parent.
 
-- Only used mixed icons for password criteria. Typically within an [InputFeedback](#inputfeedback) component
-
 ```jsx
 <UnorderedList listStyle="circle">
   <UnorderedList.Item itemStyle="checkmark">
     An item that has a checkmark in front of it
   </UnorderedList.Item>
-  <UnorderedList.Item>An item using the listStyle</UnorderedList.Item>
-  <UnorderedList.Item>Another item using the listStyle</UnorderedList.Item>
+  <UnorderedList.Item>An item using the global listStyle</UnorderedList.Item>
+  <UnorderedList.Item>Another item using the global listStyle</UnorderedList.Item>
   <UnorderedList.Item itemStyle="x">An item that has an X in front of it</UnorderedList.Item>
 </UnorderedList>
 ```
