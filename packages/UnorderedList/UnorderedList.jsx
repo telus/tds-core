@@ -10,13 +10,7 @@ import UnorderedItem from './UnorderedItem/UnorderedItem'
 
 import styles from '../../shared/styles/List.modules.scss'
 
-const injectListStyle = (child, listStyle, size) => {
-  const propsForChild = {
-    size,
-    listStyle,
-  }
-  return React.cloneElement(child, propsForChild)
-}
+const injectListStyle = (child, listStyle, size) => React.cloneElement(child, { listStyle, size })
 
 /**
  * @version ./package.json

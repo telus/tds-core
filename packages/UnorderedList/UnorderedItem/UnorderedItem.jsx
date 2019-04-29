@@ -21,7 +21,7 @@ UnorderedItem.propTypes = {
    * The list's global bullet style. Can be overriden by listStyle.
    * @ignore
    */
-  listStyle: PropTypes.oneOf(['', 'circle', 'checkmark', 'x']),
+  listStyle: PropTypes.oneOf(['circle', 'checkmark', 'x']),
   /**
    * The bullet style of a single item.
    * @since 2.1.0
