@@ -8,7 +8,7 @@ import { small, medium, large, smallFont, mediumFont, largeFont } from '@tds/sha
 
 import safeRest from '../../../shared/utils/safeRest'
 
-const StyledUnorderedItem = styled.li(({ listStyle, size }) => ({
+const StyledUnorderedItem = styled.li(({ iconStyle, size }) => ({
   position: 'relative',
   lineHeight: 1,
 
@@ -25,7 +25,7 @@ const StyledUnorderedItem = styled.li(({ listStyle, size }) => ({
     ...(size === 'medium' && { lineHeight: '1.6rem' }),
     ...(size === 'large' && { lineHeight: '2.1rem' }),
 
-    ...(listStyle === 'circle' && {
+    ...(iconStyle === 'circle' && {
       content: `''`,
       backgroundImage:
         'url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==)',
@@ -52,14 +52,14 @@ const StyledUnorderedItem = styled.li(({ listStyle, size }) => ({
       }),
     }),
 
-    ...(listStyle === 'checkmark' && {
+    ...(iconStyle === 'checkmark' && {
       content: `'\f101'`,
       fontSize: '1rem',
       width: '0.75rem',
       color: colorPrimary,
     }),
 
-    ...(listStyle === 'x' && {
+    ...(iconStyle === 'x' && {
       content: `'\f104'`,
       fontSize: '1rem',
       width: '0.75rem',
@@ -72,8 +72,8 @@ const StyledUnorderedItem = styled.li(({ listStyle, size }) => ({
   },
 }))
 
-const UnorderedItem = ({ listStyle, size, children, ...rest }) => (
-  <StyledUnorderedItem {...safeRest(rest)} listStyle={listStyle} size={size}>
+const UnorderedItem = ({ listStyle, itemStyle, size, children, ...rest }) => (
+  <StyledUnorderedItem {...safeRest(rest)} iconStyle={itemStyle || listStyle} size={size}>
     {children}
   </StyledUnorderedItem>
 )
