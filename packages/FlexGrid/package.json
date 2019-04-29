@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@tds/core-responsive": "^1.2.0",
-    "react-broadcast": "^0.6.2",
+    "react-broadcast": "^0.7.0",
     "react-flexbox-grid": "^2.0.0"
   }
 }
