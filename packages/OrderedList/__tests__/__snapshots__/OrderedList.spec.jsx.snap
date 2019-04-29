@@ -5,22 +5,14 @@ exports[`<OrderedList /> renders 1`] = `
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D decimal medium"
 >
   <li
-    class="base item"
+    class="base medium item"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-    >
-      Lorem ipsum
-    </span>
+    Lorem ipsum
   </li>
   <li
-    class="base item"
+    class="base medium item"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-    >
-      Dolor sit amet
-    </span>
+    Dolor sit amet
   </li>
 </ol>
 `;

@@ -1,4 +1,30 @@
+@import '~@tds/shared-typography/Typography.modules.scss';
+
 .base {
   margin-left: -1rem;
   padding-left: 1rem;
+}
+
+.small {
+  composes: small;
+  composes: smallFont;
+  &::before {
+    line-height: 1.25rem;
+  }
+}
+
+.medium {
+  composes: medium;
+  composes: mediumFont;
+  &::before {
+    line-height: 1.6rem;
+  }
+}
+
+.large {
+  composes: large;
+  composes: largeFont;
+  &::before {
+    line-height: 2.1rem;
+  }
 }
