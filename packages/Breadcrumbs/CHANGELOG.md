@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@1.0.13...@tds/core-breadcrumbs@2.0.0) (2019-04-29)
+
+
+### Features
+
+* **core-breadcrumbs:** upgrade to use styled components ([50870bb](https://github.com/telusdigital/tds-core/commit/50870bb))
+
+
+### BREAKING CHANGES
+
+* **core-breadcrumbs:** styled components now required as a peer dependency
+
+
+
+
+
 ## [1.0.13](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@1.0.12...@tds/core-breadcrumbs@1.0.13) (2019-04-17)
 
 **Note:** Version bump only for package @tds/core-breadcrumbs

@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-choice",
-  "version": "1.1.14",
+  "version": "1.1.15",
   "private": true,
   "main": "",
   "module": "",
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.1.1",
-    "@tds/shared-colored-text-provider": "^1.0.1",
+    "@tds/shared-colored-text-provider": "^1.1.0",
     "@tds/util-generate-id": "^1.0.3"
   }
 }

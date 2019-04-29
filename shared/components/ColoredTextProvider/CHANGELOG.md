@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-core/compare/@tds/shared-colored-text-provider@1.0.1...@tds/shared-colored-text-provider@1.1.0) (2019-04-29)
+
+
+### Features
+
+* **shared-colored-text-provider:** enable className prop ([62bba23](https://github.com/telus/tds-core/commit/62bba23))
+
+
+
+
+
 ## [1.0.1](https://github.com/telus/tds-core/compare/@tds/shared-colored-text-provider@1.0.0...@tds/shared-colored-text-provider@1.0.1) (2019-02-06)
 
 **Note:** Version bump only for package @tds/shared-colored-text-provider
