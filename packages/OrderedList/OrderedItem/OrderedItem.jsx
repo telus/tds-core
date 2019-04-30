@@ -2,21 +2,27 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Text from '@tds/core-text'
+import { small, medium, large, smallFont, mediumFont, largeFont } from '@tds/shared-typography'
 
 import safeRest from '../../../shared/utils/safeRest'
 
-export const StyledOrderedItem = styled.li({
+export const StyledOrderedItem = styled.li(({ size }) => ({
   marginLeft: '-1rem',
   paddingLeft: '1rem',
-  '&:last-child': {
-    marginBottom: 0,
-  },
-})
+  ...(size === 'small' && { ...small, letterSpacing: 'inherit' }),
+  ...(size === 'medium' && { ...medium, ...mediumFont }),
+  ...(size === 'large' && { ...large, ...largeFont, letterSpacing: 'inherit' }),
+}))
+
+export const StyledOrderedItemText = styled.div(({ size }) => ({
+  ...(size === 'small' && { ...small, ...smallFont }),
+  ...(size === 'medium' && { ...medium, ...mediumFont }),
+  ...(size === 'large' && { ...large, ...largeFont }),
+}))
 
 const OrderedItem = ({ children, size, ...rest }) => (
-  <StyledOrderedItem {...safeRest(rest)}>
-    <Text size={size}>{children}</Text>
+  <StyledOrderedItem size={size} {...safeRest(rest)}>
+    <StyledOrderedItemText size={size}>{children}</StyledOrderedItemText>
   </StyledOrderedItem>
 )
 
