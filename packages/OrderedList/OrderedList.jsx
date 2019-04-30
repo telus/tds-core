@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
-import * as typography from '@tds/shared-typography'
+import { list } from '@tds/shared-styles'
 
 import safeRest from '../../shared/utils/safeRest'
 
@@ -18,10 +18,10 @@ const listStyleType = {
 }
 
 export const StyledOrderedList = styled(({ size, listStyle, ...rest }) => <Box {...rest} />)(
-  ({ size, listStyle }) => ({
+  ({ listStyle }) => ({
     paddingLeft: '3rem',
     listStyleType: listStyleType[listStyle],
-    ...typography[size],
+    ...list.nestedListSpacing,
   })
 )
 
@@ -29,7 +29,7 @@ export const StyledOrderedList = styled(({ size, listStyle, ...rest }) => <Box {
  * @version ./package.json
  */
 const OrderedList = ({ listStyle, size, children, ...rest }) => (
-  <StyledOrderedList {...safeRest(rest)} tag="ol" between={2} listStyle={listStyle} size={size}>
+  <StyledOrderedList {...safeRest(rest)} tag="ol" between={2} listStyle={listStyle}>
     {React.Children.toArray(children)
       .filter(child => child)
       .map(child => React.cloneElement(child, { size }))}

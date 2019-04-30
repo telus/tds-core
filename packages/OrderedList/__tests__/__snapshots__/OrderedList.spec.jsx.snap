@@ -1,18 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<OrderedList /> can have a list style 1`] = `
-.c1 {
+.c2 {
   margin-left: -1rem;
   padding-left: 1rem;
-}
-
-.c1:last-child {
-  margin-bottom: 0;
-}
-
-.c0 {
-  padding-left: 3rem;
-  list-style-type: decimal;
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -20,45 +11,66 @@ exports[`<OrderedList /> can have a list style 1`] = `
   -ms-letter-spacing: -0.8px;
   letter-spacing: -0.8px;
   line-height: 1.5;
+  font-weight: 400;
+}
+
+.c3 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.c1 {
+  padding-left: 3rem;
+  list-style-type: decimal;
+}
+
+.c1 {
+  padding-left: 3rem;
+}
+
+.c1 .c0 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.c1 :last-child .c0 {
+  margin-bottom: 0;
 }
 
 <ol
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
 >
   <li
-    class="c1"
+    class="c2"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    <div
+      class="c3"
     >
       Lorem ipsum
-    </span>
+    </div>
   </li>
   <li
-    class="c1"
+    class="c2"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    <div
+      class="c3"
     >
       Dolor sit amet
-    </span>
+    </div>
   </li>
 </ol>
 `;
 
 exports[`<OrderedList /> can have a list style 2`] = `
-.c1 {
+.c2 {
   margin-left: -1rem;
   padding-left: 1rem;
-}
-
-.c1:last-child {
-  margin-bottom: 0;
-}
-
-.c0 {
-  padding-left: 3rem;
-  list-style-type: upper-alpha;
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -66,45 +78,75 @@ exports[`<OrderedList /> can have a list style 2`] = `
   -ms-letter-spacing: -0.8px;
   letter-spacing: -0.8px;
   line-height: 1.5;
+  font-weight: 400;
+}
+
+.c3 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.c4 .c0 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.c4 :last-child .c0 {
+  margin-bottom: 0;
+}
+
+.c1 {
+  padding-left: 3rem;
+  list-style-type: upper-alpha;
+}
+
+.c1 {
+  padding-left: 3rem;
+}
+
+.c1 .c0 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.c1 :last-child .c0 {
+  margin-bottom: 0;
 }
 
 <ol
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
 >
   <li
-    class="c1"
+    class="c2"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    <div
+      class="c3"
     >
       Lorem ipsum
-    </span>
+    </div>
   </li>
   <li
-    class="c1"
+    class="c2"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    <div
+      class="c3"
     >
       Dolor sit amet
-    </span>
+    </div>
   </li>
 </ol>
 `;
 
 exports[`<OrderedList /> renders 1`] = `
-.c1 {
+.c2 {
   margin-left: -1rem;
   padding-left: 1rem;
-}
-
-.c1:last-child {
-  margin-bottom: 0;
-}
-
-.c0 {
-  padding-left: 3rem;
-  list-style-type: decimal;
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -112,28 +154,58 @@ exports[`<OrderedList /> renders 1`] = `
   -ms-letter-spacing: -0.8px;
   letter-spacing: -0.8px;
   line-height: 1.5;
+  font-weight: 400;
+}
+
+.c3 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.c1 {
+  padding-left: 3rem;
+  list-style-type: decimal;
+}
+
+.c1 {
+  padding-left: 3rem;
+}
+
+.c1 .c0 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.c1 :last-child .c0 {
+  margin-bottom: 0;
 }
 
 <ol
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0"
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
 >
   <li
-    class="c1"
+    class="c2"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    <div
+      class="c3"
     >
       Lorem ipsum
-    </span>
+    </div>
   </li>
   <li
-    class="c1"
+    class="c2"
   >
-    <span
-      class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    <div
+      class="c3"
     >
       Dolor sit amet
-    </span>
+    </div>
   </li>
 </ol>
 `;

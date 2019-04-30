@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "@tds/core-box": "^1.2.2",
-    "@tds/core-text": "^1.0.10",
     "@tds/shared-styles": "^1.0.1",
     "@tds/shared-typography": "^1.2.2",
     "@tds/util-prop-types": "^1.3.1",
