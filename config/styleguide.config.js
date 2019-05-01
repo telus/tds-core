@@ -126,6 +126,11 @@ module.exports = {
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
 
+    if (name === 'Sticky' || name === 'Footnote') {
+      kebabizeName = 'terms-and-conditions'
+      return `import { ${name} } from '@tds/core-${kebabizeName}'`
+    }
+
     return `import ${name} from '@tds/core-${kebabizeName}'`
   },
 
