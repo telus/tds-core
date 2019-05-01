@@ -7,15 +7,17 @@ import Box from '@tds/core-box'
 import { boldFont, sizeSmall, smallFont } from '@tds/shared-typography'
 import { media } from '@tds/core-responsive'
 
-const StyledListItem = styled.li(() => ({
-  '& > span': { ...smallFont },
+export const StyledListItem = styled.li({
+  '& > span': {
+    ...smallFont,
+  },
   paddingLeft: '1rem',
   ...media.from('md').css({
     paddingLeft: '2rem',
   }),
-}))
+})
 
-const StyledList = styled(Box)({
+export const StyledList = styled(Box)({
   listStyle: 'decimal',
   ...boldFont,
   ...sizeSmall,
@@ -24,27 +26,41 @@ const StyledList = styled(Box)({
   }),
 })
 
-const Item = ({ size, children, ...rest }) => (
-  <StyledListItem {...rest} size={size}>
-    {typeof children === 'string' ? <span>{children}</span> : children}
-  </StyledListItem>
-)
-Item.propTypes = {
-  size: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
+export const withStyledComponent = StyledComponent => Component => props => {
+  const WithStyledComponent = <Component {...props} styledComponent={StyledComponent} />
+  return WithStyledComponent
 }
 
-const List = ({ size, children, ...rest }) => (
-  <StyledList {...rest} size={size} tag="ol" between={3}>
+const Item = ({ children, styledComponent: Component, ...rest }) => (
+  <Component {...rest}>
+    {typeof children === 'string' ? <span>{children}</span> : children}
+  </Component>
+)
+
+Item.propTypes = {
+  children: PropTypes.node.isRequired,
+  styledComponent: PropTypes.object,
+}
+
+Item.defaultProps = {
+  styledComponent: StyledListItem,
+}
+
+const List = ({ children, styledComponent: Component, ...rest }) => (
+  <Component {...rest} tag="ol" between={3}>
     {React.Children.toArray(children)
       .filter(child => child)
-      .map(child => React.cloneElement(child, { size }))}
-  </StyledList>
+      .map(child => React.cloneElement(child))}
+  </Component>
 )
 
 List.propTypes = {
-  size: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  styledComponent: PropTypes.object,
+}
+
+List.defaultProps = {
+  styledComponent: StyledList,
 }
 
 List.Item = Item

@@ -37,7 +37,9 @@
     "@tds/core-text": "^1.0.10",
     "@tds/shared-animation": "^1.1.2",
     "@tds/shared-typography": "^1.2.2",
-    "prop-types": "^15.5.10"
+    "@tds/shared-with-focus-trap": "^1.0.0-dev",
+    "prop-types": "^15.5.10",
+    "react-transition-group": "^4.0.0"
   },
   "devDependencies": {
     "@tds/shared-clickable": "^1.0.2"
