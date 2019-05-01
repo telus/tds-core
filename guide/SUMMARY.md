@@ -11,6 +11,7 @@
   - [Designer guide](contributing/designer-guide.md)
   - [Developer guide](contributing/developer-guide.md)
   - [Codebase overview](contributing/codebase-overview.md)
+- [Upgrading to TDS V3](v3-upgrade.md)
 - [Roadmap](roadmap.md)
 
 ## Design & foundational principles
