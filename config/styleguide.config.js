@@ -271,6 +271,17 @@ module.exports = {
         },
         {
           name: 'Content',
+          sections: [
+            {
+              name: 'Terms and Conditions',
+              components() {
+                return [
+                  path.resolve('packages/TermsAndConditions/TermsAndConditions.jsx'),
+                  path.resolve('packages/TermsAndConditions/Sticky/Sticky.jsx'),
+                ]
+              },
+            },
+          ],
           components() {
             return [
               path.resolve('packages/Card/Card.jsx'),
