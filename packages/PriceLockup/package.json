@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-price-lockup",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -31,7 +31,7 @@
     "@tds/core-hairline-divider": "^1.0.6",
     "@tds/core-responsive": "^1.2.0",
     "@tds/core-text": "^1.0.11",
-    "@tds/shared-styles": "^1.0.2",
+    "@tds/shared-styles": "^1.1.0",
     "@tds/shared-typography": "^1.2.3",
     "prop-types": "^15.5.10"
   }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.0.2...@tds/shared-styles@1.1.0) (2019-05-01)
+
+
+### Features
+
+* **shared-styles:** add shared nested list style ([847b3c9](https://github.com/telusdigital/tds/commit/847b3c9))
+
+
+
+
+
 ## [1.0.2](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.0.1...@tds/shared-styles@1.0.2) (2019-05-01)
 
 **Note:** Version bump only for package @tds/shared-styles
