@@ -43,6 +43,7 @@
     "precommit": "lint-staged && npm run test && npm run contributors:update",
     "prepare": "npm run gitbook:install",
     "prepr": "npm run test:e2e && scripts/prePr.sh",
+    "prepr:quick": "scripts/prePr.sh",
     "scaffold": "node scripts/scaffold.js",
     "test:e2e": "scripts/docker-e2e.sh",
     "test:e2e-direct": "node scripts/e2e.js",
