@@ -72,20 +72,16 @@ const StyledSticky = styled.div(
 const StyledStickyHeader = styled.div({
   position: 'relative',
   width: '100%',
-  ...media.from('md').css({
-    position: 'relative',
-  }),
 })
 
 const StyledStickyBody = styled.div({
   overflow: 'auto',
-  // marginTop: '57px',
   position: 'relative',
   maxHeight: 'calc(100vh - 57px)',
   backgroundColor: colorAthensGrey,
+  height: 'auto',
   ...media.from('md').css({
     maxHeight: 'calc(50vh - 57px)',
-    height: 'auto',
   }),
 })
 
@@ -95,23 +91,21 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
   const closeRef = useRef(null)
   const stickyRef = useRef(null)
 
-  const closeSticky = () => {
+  const closeSticky = e => {
     returnRef.current.focus()
-    onClose()
+    onClose(e)
   }
   // listen for ESCAPE, close button clicks, and clicks outside of the Sticky. Returns focus to returnRef and call onCloseClick
   const handleClose = e => {
     if (e.type === 'keydown') {
       const key = e.key || e.keyCode
       if (key === 'Escape' || key === 27) {
-        closeSticky()
+        closeSticky(e)
       }
     } else if (e.type === 'click') {
-      closeSticky()
+      closeSticky(e)
     } else if (e.type === 'mousedown' && stickyRef && !stickyRef.current.contains(e.target)) {
-      e.preventDefault() // TODO: not sure if this is needed.
-      e.stopPropagation()
-      closeSticky()
+      closeSticky(e)
     }
   }
 
@@ -137,7 +131,7 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
   }, [isOpen])
 
   return (
-    <Transition in={isOpen}>
+    <Transition in={isOpen} timeout={500}>
       {state => (
         <StyledSticky ref={stickyRef} state={state}>
           <FocusTrap>
@@ -162,10 +156,10 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
                   </FlexGrid.Row>
                 </FlexGrid>
               </Box>
-              <HairlineDivider />
+              <Responsive maxWidth="md" render={() => <HairlineDivider />} />
             </StyledStickyHeader>
             <StyledStickyBody>
-              <Box vertical={3}>
+              <Box vertical={4}>
                 <FlexGrid>
                   <FlexGrid.Row>
                     <FlexGrid.Col xs={12} md={11}>
