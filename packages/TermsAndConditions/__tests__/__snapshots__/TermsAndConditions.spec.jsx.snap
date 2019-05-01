@@ -776,6 +776,30 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                         <List
                                           below={4}
                                           size="small"
+                                          styledComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-bdVaJa",
+                                                "isStatic": true,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; @media (min-width: 768px) {
+  margin-left: -2rem;
+}",
+                                                ],
+                                              },
+                                              "displayName": "Styled(Box)",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-bdVaJa",
+                                              "target": [Function],
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
                                         >
                                           <Styled(Box)
                                             below={4}
@@ -828,11 +852,34 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                 >
                                                   <Item
                                                     key=".$One"
-                                                    size="small"
+                                                    styledComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "List__StyledListItem-ju21tg-0",
+                                                          "isStatic": true,
+                                                          "lastClassName": "c6",
+                                                          "rules": Array [
+                                                            "& > span {
+  font-weight: 500;
+} padding-left: 1rem; @media (min-width: 768px) {
+  padding-left: 2rem;
+}",
+                                                          ],
+                                                        },
+                                                        "displayName": "List__StyledListItem",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "List__StyledListItem-ju21tg-0",
+                                                        "target": "li",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
                                                   >
-                                                    <List__StyledListItem
-                                                      size="small"
-                                                    >
+                                                    <List__StyledListItem>
                                                       <StyledComponent
                                                         forwardedComponent={
                                                           Object {
@@ -840,10 +887,14 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "attrs": Array [],
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
-                                                              "isStatic": false,
+                                                              "isStatic": true,
                                                               "lastClassName": "c6",
                                                               "rules": Array [
-                                                                [Function],
+                                                                "& > span {
+  font-weight: 500;
+} padding-left: 1rem; @media (min-width: 768px) {
+  padding-left: 2rem;
+}",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -857,11 +908,9 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           }
                                                         }
                                                         forwardedRef={null}
-                                                        size="small"
                                                       >
                                                         <li
                                                           className="c6"
-                                                          size="small"
                                                         >
                                                           <span>
                                                             One
@@ -872,11 +921,34 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   </Item>
                                                   <Item
                                                     key=".$Two"
-                                                    size="small"
+                                                    styledComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "List__StyledListItem-ju21tg-0",
+                                                          "isStatic": true,
+                                                          "lastClassName": "c6",
+                                                          "rules": Array [
+                                                            "& > span {
+  font-weight: 500;
+} padding-left: 1rem; @media (min-width: 768px) {
+  padding-left: 2rem;
+}",
+                                                          ],
+                                                        },
+                                                        "displayName": "List__StyledListItem",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "List__StyledListItem-ju21tg-0",
+                                                        "target": "li",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
                                                   >
-                                                    <List__StyledListItem
-                                                      size="small"
-                                                    >
+                                                    <List__StyledListItem>
                                                       <StyledComponent
                                                         forwardedComponent={
                                                           Object {
@@ -884,10 +956,14 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "attrs": Array [],
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
-                                                              "isStatic": false,
+                                                              "isStatic": true,
                                                               "lastClassName": "c6",
                                                               "rules": Array [
-                                                                [Function],
+                                                                "& > span {
+  font-weight: 500;
+} padding-left: 1rem; @media (min-width: 768px) {
+  padding-left: 2rem;
+}",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -901,11 +977,9 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           }
                                                         }
                                                         forwardedRef={null}
-                                                        size="small"
                                                       >
                                                         <li
                                                           className="c6"
-                                                          size="small"
                                                         >
                                                           <span>
                                                             Two
@@ -916,11 +990,34 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   </Item>
                                                   <Item
                                                     key=".$Three"
-                                                    size="small"
+                                                    styledComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "List__StyledListItem-ju21tg-0",
+                                                          "isStatic": true,
+                                                          "lastClassName": "c6",
+                                                          "rules": Array [
+                                                            "& > span {
+  font-weight: 500;
+} padding-left: 1rem; @media (min-width: 768px) {
+  padding-left: 2rem;
+}",
+                                                          ],
+                                                        },
+                                                        "displayName": "List__StyledListItem",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "List__StyledListItem-ju21tg-0",
+                                                        "target": "li",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
                                                   >
-                                                    <List__StyledListItem
-                                                      size="small"
-                                                    >
+                                                    <List__StyledListItem>
                                                       <StyledComponent
                                                         forwardedComponent={
                                                           Object {
@@ -928,10 +1025,14 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "attrs": Array [],
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
-                                                              "isStatic": false,
+                                                              "isStatic": true,
                                                               "lastClassName": "c6",
                                                               "rules": Array [
-                                                                [Function],
+                                                                "& > span {
+  font-weight: 500;
+} padding-left: 1rem; @media (min-width: 768px) {
+  padding-left: 2rem;
+}",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -945,11 +1046,9 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           }
                                                         }
                                                         forwardedRef={null}
-                                                        size="small"
                                                       >
                                                         <li
                                                           className="c6"
-                                                          size="small"
                                                         >
                                                           <span>
                                                             Three
