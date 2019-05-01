@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-hairline-divider",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Separate content within modules",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,6 +28,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.1.1"
+    "@tds/core-colours": "^1.1.2"
   }
 }

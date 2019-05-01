@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-standalone-icon",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An icon that has meaning within the context of the page",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,6 +28,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.1.1"
+    "@tds/core-colours": "^1.1.2"
   }
 }

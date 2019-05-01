@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-dimple-divider",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Separate modules",
   "main": "index.cjs.js",
   "module": "index.es.js",

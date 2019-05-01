@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-expand-collapse",
-  "version": "1.2.21",
+  "version": "1.2.22",
   "description": "A connected series of expandable content areas",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -25,16 +25,16 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.2.2",
-    "@tds/core-decorative-icon": "^1.2.0",
-    "@tds/core-dimple-divider": "^1.0.2",
-    "@tds/core-hairline-divider": "^1.0.5",
-    "@tds/core-text": "^1.0.10",
+    "@tds/core-box": "^1.2.3",
+    "@tds/core-decorative-icon": "^1.2.1",
+    "@tds/core-dimple-divider": "^1.0.3",
+    "@tds/core-hairline-divider": "^1.0.6",
+    "@tds/core-text": "^1.0.11",
     "@tds/shared-animation": "^1.1.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.1.1",
+    "@tds/core-colours": "^1.1.2",
     "@tds/core-responsive": "^1.2.0",
     "airbnb-prop-types": "^2.8.1",
     "core-js": "^2.5.3"

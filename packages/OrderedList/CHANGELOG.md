@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.19](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.18...@tds/core-ordered-list@2.0.19) (2019-05-01)
+
+**Note:** Version bump only for package @tds/core-ordered-list
+
+
+
+
+
 ## [2.0.18](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.17...@tds/core-ordered-list@2.0.18) (2019-04-23)
 
 **Note:** Version bump only for package @tds/core-ordered-list

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@1.2.3...@tds/core-css-reset@1.2.4) (2019-05-01)
+
+**Note:** Version bump only for package @tds/core-css-reset
+
+
+
+
+
 ## [1.2.3](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@1.2.2...@tds/core-css-reset@1.2.3) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-css-reset

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.11](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.10...@tds/core-flex-grid@2.3.11) (2019-05-01)
+
+**Note:** Version bump only for package @tds/core-flex-grid
+
+
+
+
+
 ## [2.3.10](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.9...@tds/core-flex-grid@2.3.10) (2019-04-22)
 
 **Note:** Version bump only for package @tds/core-flex-grid

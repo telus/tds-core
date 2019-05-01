@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@2.0.18...@tds/core-unordered-list@2.1.0) (2019-05-01)
+
+
+### Bug Fixes
+
+* **core-unordered-list:** use typography styles directly ([11cf21d](https://github.com/telusdigital/tds/commit/11cf21d))
+
+
+### Features
+
+* **core-unordered-list:** add itemstyle prop ([b734e0b](https://github.com/telusdigital/tds/commit/b734e0b))
+* **core-unordered-list:** added support for mixed lists ([c0f6eb8](https://github.com/telusdigital/tds/commit/c0f6eb8))
+
+
+
+
+
 ## [2.0.18](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@2.0.17...@tds/core-unordered-list@2.0.18) (2019-04-23)
 
 **Note:** Version bump only for package @tds/core-unordered-list

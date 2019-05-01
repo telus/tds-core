@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-card",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A content container",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -25,10 +25,10 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.2.2",
+    "@tds/core-box": "^1.2.3",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.1.1"
+    "@tds/core-colours": "^1.1.2"
   }
 }
