@@ -277,6 +277,7 @@ module.exports = {
               components() {
                 return [
                   path.resolve('packages/TermsAndConditions/TermsAndConditions.jsx'),
+                  path.resolve('packages/TermsAndConditions/Footnote/Footnote.jsx'),
                   path.resolve('packages/TermsAndConditions/Sticky/Sticky.jsx'),
                 ]
               },
