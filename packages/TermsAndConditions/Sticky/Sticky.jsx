@@ -46,7 +46,7 @@ const StyledSticky = styled.div(
     backgroundColor: colorAthensGrey,
     display: 'inline-block',
     boxShadow: '0 0 16px 0 rgba(213, 213, 213, 0.5)',
-    transition: 'transform 1000ms',
+    transition: 'transform 500ms',
     transform: 'translateY(100%)',
     zIndex: 1000,
     ...media.from('md').css({
