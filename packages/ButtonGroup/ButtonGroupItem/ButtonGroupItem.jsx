@@ -35,13 +35,13 @@ const StyledButtonGroupItem = styled.div({
 const StyledInput = styled.input({
   position: 'fixed',
   opacity: '0',
-  '&:focus ~ label': {
-    boxShadow: `0px 0px 0px 2px ${colorTelusPurple}, 0px 0px 8px 1px ${colorTelusPurple}`,
-  },
   '&:checked ~ label': {
     backgroundColor: colorTelusPurple,
     boxShadow: `0px 0px 0px 0px ${colorTelusPurple}`,
     color: colorWhite,
+  },
+  '&:focus ~ label': {
+    boxShadow: `0px 0px 0px 2px ${colorTelusPurple}, 0px 0px 8px 1px ${colorTelusPurple}`,
   },
 })
 const StyledLabel = styled.label(
