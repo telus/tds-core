@@ -48,6 +48,7 @@ const StyledSticky = styled.div(
     boxShadow: '0 0 16px 0 rgba(213, 213, 213, 0.5)',
     transition: 'transform 500ms',
     transform: 'translateY(100%)',
+    overflow: 'hidden',
     zIndex: 1000,
     ...media.from('md').css({
       position: 'fixed',
@@ -75,6 +76,7 @@ const StyledStickyHeader = styled.div({
 })
 
 const StyledStickyBody = styled.div({
+  // marginTop: '74px',
   overflow: 'auto',
   position: 'relative',
   maxHeight: 'calc(100vh - 57px)',
@@ -85,11 +87,21 @@ const StyledStickyBody = styled.div({
   }),
 })
 
+const StyledListContainer = styled.div({
+  paddingTop: '1.5rem',
+  paddingBottom: '3rem',
+  ...media.from('md').css({
+    paddingTop: '0rem',
+    paddingBottom: '4rem',
+  }),
+})
+
 const FocusTrap = withFocusTrap('div')
 
 const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
   const closeRef = useRef(null)
   const stickyRef = useRef(null)
+  const headerRef = useRef(null)
 
   const closeSticky = e => {
     returnRef.current.focus()
@@ -116,6 +128,10 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
     }
   }, [isOpen])
 
+  // useEffect(() => {
+  //   stickyRef.current.scrollTo(0, 0)
+  // }, [isOpen])
+
   // add listeners for mouse clicks outside of Sticky and for ESCAPE key presses
   useEffect(() => {
     if (isOpen) {
@@ -135,9 +151,9 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
       {state => (
         <StyledSticky ref={stickyRef} state={state}>
           <FocusTrap>
-            <StyledStickyHeader>
+            <StyledStickyHeader ref={headerRef}>
               <Responsive minWidth="md" render={() => <HairlineDivider />} />
-              <Box vertical={3}>
+              <Box vertical={4}>
                 <FlexGrid>
                   <FlexGrid.Row>
                     <FlexGrid.Col xs={12}>
@@ -159,7 +175,7 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
               <Responsive maxWidth="md" render={() => <HairlineDivider />} />
             </StyledStickyHeader>
             <StyledStickyBody>
-              <Box vertical={4}>
+              <StyledListContainer>
                 <FlexGrid>
                   <FlexGrid.Row>
                     <FlexGrid.Col xs={12} md={11}>
@@ -171,7 +187,7 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
                     </FlexGrid.Col>
                   </FlexGrid.Row>
                 </FlexGrid>
-              </Box>
+              </StyledListContainer>
             </StyledStickyBody>
           </FocusTrap>
         </StyledSticky>
