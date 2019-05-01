@@ -315,14 +315,14 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                   aria-controls="standalone-tooltip-mc41_tooltip"
                   aria-expanded="true"
                   aria-haspopup="true"
-                  dangerouslyAddStyle={
+                  id="standalone-tooltip-mc41_trigger"
+                  onClick={[Function]}
+                  style={
                     Object {
                       "margin": "-4px",
                       "padding": "4px",
                     }
                   }
-                  id="standalone-tooltip-mc41_trigger"
-                  onClick={[Function]}
                   type="button"
                 >
                   <button
@@ -677,14 +677,14 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                   aria-controls="standalone-tooltip-mc41_tooltip"
                   aria-expanded="true"
                   aria-haspopup="true"
-                  dangerouslyAddStyle={
+                  id="standalone-tooltip-mc41_trigger"
+                  onClick={[Function]}
+                  style={
                     Object {
                       "margin": "-4px",
                       "padding": "4px",
                     }
                   }
-                  id="standalone-tooltip-mc41_trigger"
-                  onClick={[Function]}
                   type="button"
                 >
                   <button
@@ -1387,14 +1387,14 @@ exports[`Tooltip renders 1`] = `
                   aria-controls="standalone-tooltip-mc41_tooltip"
                   aria-expanded="false"
                   aria-haspopup="true"
-                  dangerouslyAddStyle={
+                  id="standalone-tooltip-mc41_trigger"
+                  onClick={[Function]}
+                  style={
                     Object {
                       "margin": "-4px",
                       "padding": "4px",
                     }
                   }
-                  id="standalone-tooltip-mc41_trigger"
-                  onClick={[Function]}
                   type="button"
                 >
                   <button
