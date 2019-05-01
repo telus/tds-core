@@ -5,7 +5,7 @@ import { media } from '@tds/core-responsive'
 
 import List, { withStyledComponent, StyledList, StyledListItem } from '../List/List'
 
-const StyledStickyListItem = styled(StyledListItem)({
+const StyledFootnoteListItem = styled(StyledListItem)({
   '& > span': {
     ...mediumFont,
   },
@@ -13,7 +13,7 @@ const StyledStickyListItem = styled(StyledListItem)({
     paddingLeft: '2rem',
   }),
 })
-const StyledStickyList = styled(StyledList)({
+const StyledFootnoteList = styled(StyledList)({
   ...sizeMedium,
   marginLeft: '1rem',
   ...media.from('md').css({
@@ -21,9 +21,9 @@ const StyledStickyList = styled(StyledList)({
   }),
 })
 
-const StickyList = withStyledComponent(StyledStickyList)(List)
-const StickyListItem = withStyledComponent(StyledStickyListItem)(List.Item)
+const FootnoteList = withStyledComponent(StyledFootnoteList)(List)
+const FootnoteListItem = withStyledComponent(StyledFootnoteListItem)(List.Item)
 
-StickyList.Item = StickyListItem
+FootnoteList.Item = FootnoteListItem
 
-export default StickyList
+export default FootnoteList
