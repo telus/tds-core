@@ -1,0 +1,1084 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TermsAndConditions renders 1`] = `
+.c4 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c4 .c7 {
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
+.c6 {
+  padding-left: 1rem;
+}
+
+.c6 > span {
+  font-weight: 500;
+}
+
+.c5 {
+  list-style: decimal;
+  word-wrap: break-word;
+  font-weight: 700;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  -webkit-transition: -webkit-transform 300ms;
+  -webkit-transition: transform 300ms;
+  transition: transform 300ms;
+  -webkit-transform: translate(6px,9px);
+  -ms-transform: translate(6px,9px);
+  transform: translate(6px,9px);
+}
+
+.c0:hover .c3 {
+  -webkit-transform: translate(6px,11px);
+  -ms-transform: translate(6px,11px);
+  transform: translate(6px,11px);
+}
+
+@media (min-width:768px) {
+  .c6 {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    margin-left: -2rem;
+  }
+}
+
+<div>
+  <hr
+    class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+  />
+  <div
+    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+  >
+    <div
+      class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+    >
+      <div
+        class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+      >
+        <button
+          class="clickable c0 c1"
+          type="button"
+        >
+          <div
+            class="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
+          >
+            <svg
+              height="24px"
+              version="1.1"
+              viewBox="0 0 24 24"
+              width="24px"
+              xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <path
+                  d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
+                  id="path-1"
+                />
+              </defs>
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="none"
+                stroke-width="1"
+              >
+                <g>
+                  <path
+                    d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
+                    fill="#4b286d"
+                  />
+                  <g
+                    class="c3"
+                  >
+                    <mask
+                      fill="white"
+                      id="mask-2"
+                    >
+                      <use
+                        href="#path-1"
+                      />
+                    </mask>
+                    <g
+                      fill="#4b286d"
+                      fill-rule="evenodd"
+                      mask="url(#mask-2)"
+                    >
+                      <rect
+                        height="8"
+                        width="12"
+                        x="0"
+                        y="0"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <span
+              class="c4"
+              data-testid="heading"
+            >
+              View terms and conditions
+            </span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    style="transition:height 150ms, opacity 150ms ease-in-out;opacity:0;height:0;overflow:hidden"
+  >
+    <div>
+      <div
+        class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+      >
+        <div
+          class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+        >
+          <div
+            class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+          >
+            <hr
+              class="TDS_DimpleDivider-modules__dimple___1OWjL TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="transform:translateY(1rem);transition:transform 150ms"
+      >
+        <div
+          class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+        >
+          <div
+            class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+          >
+            <div
+              class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+            >
+              <ol
+                class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c5"
+              >
+                <li
+                  class="c6"
+                >
+                  <span>
+                    One
+                  </span>
+                </li>
+                <li
+                  class="c6"
+                >
+                  <span>
+                    Two
+                  </span>
+                </li>
+                <li
+                  class="c6"
+                >
+                  <span>
+                    Three
+                  </span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr
+    class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+  />
+</div>
+`;
+
+exports[`TermsAndConditions renders expanded 1`] = `
+.c4 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c4 .c7 {
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
+.c6 {
+  padding-left: 1rem;
+}
+
+.c6 > span {
+  font-weight: 500;
+}
+
+.c5 {
+  list-style: decimal;
+  word-wrap: break-word;
+  font-weight: 700;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  -webkit-transition: -webkit-transform 300ms;
+  -webkit-transition: transform 300ms;
+  transition: transform 300ms;
+  -webkit-transform: translate(6px,9px);
+  -ms-transform: translate(6px,9px);
+  transform: translate(6px,9px);
+}
+
+.c0:hover .c3 {
+  -webkit-transform: translate(6px,11px);
+  -ms-transform: translate(6px,11px);
+  transform: translate(6px,11px);
+}
+
+@media (min-width:768px) {
+  .c6 {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    margin-left: -2rem;
+  }
+}
+
+<TermsAndConditions
+  content={
+    Array [
+      "One",
+      "Two",
+      "Three",
+    ]
+  }
+  copy="en"
+>
+  <div>
+    <HairlineDivider
+      gradient={false}
+      vertical={false}
+    >
+      <hr
+        className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+      />
+    </HairlineDivider>
+    <FlexGrid
+      gutter={false}
+      limitWidth={false}
+    >
+      <Broadcast
+        channel="flex-grid"
+        compareValues={[Function]}
+        value={false}
+      >
+        <Grid
+          className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+          fluid={true}
+        >
+          <div
+            className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+          >
+            <Row>
+              <Row
+                className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+              >
+                <div
+                  className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                >
+                  <Col>
+                    <Subscriber
+                      channel="flex-grid"
+                      quiet={false}
+                    >
+                      <Col
+                        className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                        xs={true}
+                      >
+                        <div
+                          className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                        >
+                          <Styled(Clickable)
+                            onClick={[Function]}
+                          >
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "c0",
+                                    "isStatic": true,
+                                    "lastClassName": "c1",
+                                    "rules": Array [
+                                      "width: 100%; display: flex; justify-content: center; background-color: #fff;",
+                                    ],
+                                  },
+                                  "displayName": "Styled(Clickable)",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "c0",
+                                  "target": [Function],
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onClick={[Function]}
+                            >
+                              <Clickable
+                                className="c0 c1"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <button
+                                  className="clickable c0 c1"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  <Styled(Box)
+                                    between={3}
+                                    inline={true}
+                                    vertical={3}
+                                  >
+                                    <StyledComponent
+                                      between={3}
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-htpNat",
+                                            "isStatic": true,
+                                            "lastClassName": "c2",
+                                            "rules": Array [
+                                              "align-items: center;",
+                                            ],
+                                          },
+                                          "displayName": "Styled(Box)",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-htpNat",
+                                          "target": [Function],
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      inline={true}
+                                      vertical={3}
+                                    >
+                                      <Box
+                                        between={3}
+                                        className="c2"
+                                        inline={true}
+                                        tag="div"
+                                        vertical={3}
+                                      >
+                                        <div
+                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
+                                        >
+                                          <Chevron
+                                            isOpen={true}
+                                          >
+                                            <svg
+                                              height="24px"
+                                              version="1.1"
+                                              viewBox="0 0 24 24"
+                                              width="24px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              xmlnsXlink="http://www.w3.org/1999/xlink"
+                                            >
+                                              <defs>
+                                                <path
+                                                  d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
+                                                  id="path-1"
+                                                />
+                                              </defs>
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                                stroke="none"
+                                                strokeWidth="1"
+                                                transform="rotate(180, 12, 12)"
+                                              >
+                                                <g>
+                                                  <path
+                                                    d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
+                                                    fill="#4b286d"
+                                                  />
+                                                  <TermsAndConditions__StyledChevron>
+                                                    <StyledComponent
+                                                      forwardedComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": ComponentStyle {
+                                                            "componentId": "TermsAndConditions__StyledChevron-sc-1aoonet-0",
+                                                            "isStatic": true,
+                                                            "lastClassName": "c3",
+                                                            "rules": Array [
+                                                              "transition: transform 300ms; transform: translate(6px, 9px); .c0:hover & {
+  transform: translate(6px, 11px);
+}",
+                                                            ],
+                                                          },
+                                                          "displayName": "TermsAndConditions__StyledChevron",
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "styledComponentId": "TermsAndConditions__StyledChevron-sc-1aoonet-0",
+                                                          "target": "g",
+                                                          "toString": [Function],
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                      forwardedRef={null}
+                                                    >
+                                                      <g
+                                                        className="c3"
+                                                      >
+                                                        <mask
+                                                          fill="white"
+                                                          id="mask-2"
+                                                        >
+                                                          <use
+                                                            xlinkHref="#path-1"
+                                                          />
+                                                        </mask>
+                                                        <g
+                                                          fill="#4b286d"
+                                                          fillRule="evenodd"
+                                                          mask="url(#mask-2)"
+                                                        >
+                                                          <rect
+                                                            height="8"
+                                                            width="12"
+                                                            x="0"
+                                                            y="0"
+                                                          />
+                                                        </g>
+                                                      </g>
+                                                    </StyledComponent>
+                                                  </TermsAndConditions__StyledChevron>
+                                                </g>
+                                              </g>
+                                            </svg>
+                                          </Chevron>
+                                          <Heading
+                                            invert={false}
+                                            level="h4"
+                                            tag="span"
+                                          >
+                                            <Heading__StyledHeading
+                                              as="span"
+                                              data-testid="heading"
+                                              invert={false}
+                                              level="h4"
+                                            >
+                                              <StyledComponent
+                                                as="span"
+                                                data-testid="heading"
+                                                forwardedComponent={
+                                                  Object {
+                                                    "$$typeof": Symbol(react.forward_ref),
+                                                    "attrs": Array [],
+                                                    "componentStyle": ComponentStyle {
+                                                      "componentId": "Heading__StyledHeading-mpz92r-0",
+                                                      "isStatic": false,
+                                                      "lastClassName": "c4",
+                                                      "rules": Array [
+                                                        "word-wrap: break-word;",
+                                                        [Function],
+                                                      ],
+                                                    },
+                                                    "displayName": "Heading__StyledHeading",
+                                                    "foldedComponentIds": Array [],
+                                                    "render": [Function],
+                                                    "styledComponentId": "Heading__StyledHeading-mpz92r-0",
+                                                    "target": "h1",
+                                                    "toString": [Function],
+                                                    "warnTooManyClasses": [Function],
+                                                    "withComponent": [Function],
+                                                  }
+                                                }
+                                                forwardedRef={null}
+                                                invert={false}
+                                                level="h4"
+                                              >
+                                                <span
+                                                  className="c4"
+                                                  data-testid="heading"
+                                                >
+                                                  Hide terms and conditions
+                                                </span>
+                                              </StyledComponent>
+                                            </Heading__StyledHeading>
+                                          </Heading>
+                                        </div>
+                                      </Box>
+                                    </StyledComponent>
+                                  </Styled(Box)>
+                                </button>
+                              </Clickable>
+                            </StyledComponent>
+                          </Styled(Clickable)>
+                        </div>
+                      </Col>
+                    </Subscriber>
+                  </Col>
+                </div>
+              </Row>
+            </Row>
+          </div>
+        </Grid>
+      </Broadcast>
+    </FlexGrid>
+    <FadeAndReveal
+      delay={0}
+      duration={150}
+      height={0}
+      in={true}
+      timeout={150}
+    >
+      <Transition
+        appear={false}
+        duration={150}
+        enter={true}
+        exit={true}
+        in={true}
+        mountOnEnter={false}
+        onEnter={[Function]}
+        onEntered={[Function]}
+        onEntering={[Function]}
+        onExit={[Function]}
+        onExited={[Function]}
+        onExiting={[Function]}
+        timeout={150}
+        unmountOnExit={false}
+      >
+        <div
+          style={
+            Object {
+              "height": 0,
+              "opacity": 1,
+              "overflow": "hidden",
+              "transition": "height 150ms, opacity 150ms ease-in-out",
+            }
+          }
+        >
+          <div>
+            <FlexGrid
+              gutter={false}
+              limitWidth={false}
+            >
+              <Broadcast
+                channel="flex-grid"
+                compareValues={[Function]}
+                value={false}
+              >
+                <Grid
+                  className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+                  fluid={true}
+                >
+                  <div
+                    className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                  >
+                    <Row>
+                      <Row
+                        className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                      >
+                        <div
+                          className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                        >
+                          <Col>
+                            <Subscriber
+                              channel="flex-grid"
+                              quiet={false}
+                            >
+                              <Col
+                                className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                                xs={true}
+                              >
+                                <div
+                                  className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                                >
+                                  <DimpleDivider>
+                                    <hr
+                                      className="TDS_DimpleDivider-modules__dimple___1OWjL TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+                                    />
+                                  </DimpleDivider>
+                                </div>
+                              </Col>
+                            </Subscriber>
+                          </Col>
+                        </div>
+                      </Row>
+                    </Row>
+                  </div>
+                </Grid>
+              </Broadcast>
+            </FlexGrid>
+            <Translate
+              direction="y"
+              distance="0rem"
+              in={true}
+              style={
+                Object {
+                  "transform": "translateY(1rem)",
+                }
+              }
+              timeout={150}
+            >
+              <Transition
+                appear={false}
+                enter={true}
+                exit={true}
+                in={true}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={150}
+                unmountOnExit={false}
+              >
+                <div
+                  style={
+                    Object {
+                      "transform": "translateY(0rem)",
+                      "transition": "transform 150ms",
+                    }
+                  }
+                >
+                  <FlexGrid
+                    gutter={true}
+                    limitWidth={true}
+                  >
+                    <Broadcast
+                      channel="flex-grid"
+                      compareValues={[Function]}
+                      value={true}
+                    >
+                      <Grid
+                        className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+                        fluid={true}
+                      >
+                        <div
+                          className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                        >
+                          <Row>
+                            <Row
+                              className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                            >
+                              <div
+                                className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                              >
+                                <Col
+                                  md={10}
+                                  mdOffset={1}
+                                  xs={12}
+                                >
+                                  <Subscriber
+                                    channel="flex-grid"
+                                    quiet={false}
+                                  >
+                                    <Col
+                                      className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                      md={10}
+                                      mdOffset={1}
+                                      xs={12}
+                                    >
+                                      <div
+                                        className="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                      >
+                                        <List
+                                          below={4}
+                                          size="small"
+                                          styledComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-bdVaJa",
+                                                "isStatic": true,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; @media (min-width: 768px) {
+  margin-left: -2rem;
+}",
+                                                ],
+                                              },
+                                              "displayName": "Styled(Box)",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-bdVaJa",
+                                              "target": [Function],
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                        >
+                                          <Styled(Box)
+                                            below={4}
+                                            between={3}
+                                            size="small"
+                                            tag="ol"
+                                          >
+                                            <StyledComponent
+                                              below={4}
+                                              between={3}
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "sc-bdVaJa",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c5",
+                                                    "rules": Array [
+                                                      "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; @media (min-width: 768px) {
+  margin-left: -2rem;
+}",
+                                                    ],
+                                                  },
+                                                  "displayName": "Styled(Box)",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "sc-bdVaJa",
+                                                  "target": [Function],
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                              size="small"
+                                              tag="ol"
+                                            >
+                                              <Box
+                                                below={4}
+                                                between={3}
+                                                className="c5"
+                                                inline={false}
+                                                size="small"
+                                                tag="ol"
+                                              >
+                                                <ol
+                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c5"
+                                                  size="small"
+                                                >
+                                                  <Item
+                                                    key=".$One"
+                                                    size="small"
+                                                    styledComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "List__StyledListItem-ju21tg-0",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c6",
+                                                          "rules": Array [
+                                                            [Function],
+                                                          ],
+                                                        },
+                                                        "displayName": "List__StyledListItem",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "List__StyledListItem-ju21tg-0",
+                                                        "target": "li",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                  >
+                                                    <List__StyledListItem
+                                                      size="small"
+                                                    >
+                                                      <StyledComponent
+                                                        forwardedComponent={
+                                                          Object {
+                                                            "$$typeof": Symbol(react.forward_ref),
+                                                            "attrs": Array [],
+                                                            "componentStyle": ComponentStyle {
+                                                              "componentId": "List__StyledListItem-ju21tg-0",
+                                                              "isStatic": false,
+                                                              "lastClassName": "c6",
+                                                              "rules": Array [
+                                                                [Function],
+                                                              ],
+                                                            },
+                                                            "displayName": "List__StyledListItem",
+                                                            "foldedComponentIds": Array [],
+                                                            "render": [Function],
+                                                            "styledComponentId": "List__StyledListItem-ju21tg-0",
+                                                            "target": "li",
+                                                            "toString": [Function],
+                                                            "warnTooManyClasses": [Function],
+                                                            "withComponent": [Function],
+                                                          }
+                                                        }
+                                                        forwardedRef={null}
+                                                        size="small"
+                                                      >
+                                                        <li
+                                                          className="c6"
+                                                          size="small"
+                                                        >
+                                                          <span>
+                                                            One
+                                                          </span>
+                                                        </li>
+                                                      </StyledComponent>
+                                                    </List__StyledListItem>
+                                                  </Item>
+                                                  <Item
+                                                    key=".$Two"
+                                                    size="small"
+                                                    styledComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "List__StyledListItem-ju21tg-0",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c6",
+                                                          "rules": Array [
+                                                            [Function],
+                                                          ],
+                                                        },
+                                                        "displayName": "List__StyledListItem",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "List__StyledListItem-ju21tg-0",
+                                                        "target": "li",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                  >
+                                                    <List__StyledListItem
+                                                      size="small"
+                                                    >
+                                                      <StyledComponent
+                                                        forwardedComponent={
+                                                          Object {
+                                                            "$$typeof": Symbol(react.forward_ref),
+                                                            "attrs": Array [],
+                                                            "componentStyle": ComponentStyle {
+                                                              "componentId": "List__StyledListItem-ju21tg-0",
+                                                              "isStatic": false,
+                                                              "lastClassName": "c6",
+                                                              "rules": Array [
+                                                                [Function],
+                                                              ],
+                                                            },
+                                                            "displayName": "List__StyledListItem",
+                                                            "foldedComponentIds": Array [],
+                                                            "render": [Function],
+                                                            "styledComponentId": "List__StyledListItem-ju21tg-0",
+                                                            "target": "li",
+                                                            "toString": [Function],
+                                                            "warnTooManyClasses": [Function],
+                                                            "withComponent": [Function],
+                                                          }
+                                                        }
+                                                        forwardedRef={null}
+                                                        size="small"
+                                                      >
+                                                        <li
+                                                          className="c6"
+                                                          size="small"
+                                                        >
+                                                          <span>
+                                                            Two
+                                                          </span>
+                                                        </li>
+                                                      </StyledComponent>
+                                                    </List__StyledListItem>
+                                                  </Item>
+                                                  <Item
+                                                    key=".$Three"
+                                                    size="small"
+                                                    styledComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "List__StyledListItem-ju21tg-0",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c6",
+                                                          "rules": Array [
+                                                            [Function],
+                                                          ],
+                                                        },
+                                                        "displayName": "List__StyledListItem",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "List__StyledListItem-ju21tg-0",
+                                                        "target": "li",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                  >
+                                                    <List__StyledListItem
+                                                      size="small"
+                                                    >
+                                                      <StyledComponent
+                                                        forwardedComponent={
+                                                          Object {
+                                                            "$$typeof": Symbol(react.forward_ref),
+                                                            "attrs": Array [],
+                                                            "componentStyle": ComponentStyle {
+                                                              "componentId": "List__StyledListItem-ju21tg-0",
+                                                              "isStatic": false,
+                                                              "lastClassName": "c6",
+                                                              "rules": Array [
+                                                                [Function],
+                                                              ],
+                                                            },
+                                                            "displayName": "List__StyledListItem",
+                                                            "foldedComponentIds": Array [],
+                                                            "render": [Function],
+                                                            "styledComponentId": "List__StyledListItem-ju21tg-0",
+                                                            "target": "li",
+                                                            "toString": [Function],
+                                                            "warnTooManyClasses": [Function],
+                                                            "withComponent": [Function],
+                                                          }
+                                                        }
+                                                        forwardedRef={null}
+                                                        size="small"
+                                                      >
+                                                        <li
+                                                          className="c6"
+                                                          size="small"
+                                                        >
+                                                          <span>
+                                                            Three
+                                                          </span>
+                                                        </li>
+                                                      </StyledComponent>
+                                                    </List__StyledListItem>
+                                                  </Item>
+                                                </ol>
+                                              </Box>
+                                            </StyledComponent>
+                                          </Styled(Box)>
+                                        </List>
+                                      </div>
+                                    </Col>
+                                  </Subscriber>
+                                </Col>
+                              </div>
+                            </Row>
+                          </Row>
+                        </div>
+                      </Grid>
+                    </Broadcast>
+                  </FlexGrid>
+                </div>
+              </Transition>
+            </Translate>
+          </div>
+        </div>
+      </Transition>
+    </FadeAndReveal>
+    <HairlineDivider
+      gradient={false}
+      vertical={false}
+    >
+      <hr
+        className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+      />
+    </HairlineDivider>
+  </div>
+</TermsAndConditions>
+`;
