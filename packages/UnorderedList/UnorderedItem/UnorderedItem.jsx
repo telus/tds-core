@@ -11,7 +11,6 @@ import safeRest from '../../../shared/utils/safeRest'
 const StyledUnorderedItem = styled.li(({ iconStyle, size }) => ({
   position: 'relative',
   lineHeight: 1,
-
   ...(size === 'small' && { ...small, ...smallFont }),
   ...(size === 'medium' && { ...medium, ...mediumFont }),
   ...(size === 'large' && { ...large, ...largeFont }),
