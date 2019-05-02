@@ -1,4 +1,4 @@
 import './dist/index.css'
-import TermsAndConditions from './dist/index.es'
 
-export default TermsAndConditions
+export { default } from './dist/index.es'
+export * from './dist/index.es'

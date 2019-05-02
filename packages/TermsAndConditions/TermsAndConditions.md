@@ -1,5 +1,8 @@
+### Usage criteria
+
 ```jsx
 <TermsAndConditions
+  copy="en"
   content={[
     <Text>
       TELUS <Text bold>Wireless</Text> Home Phone is not compatible with data usage or text,

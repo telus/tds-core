@@ -1,37 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footnote renders closed 1`] = `
-.c5 {
-  padding-left: 1rem;
-}
-
-.c5 > span {
-  font-weight: 500;
-}
-
-.c5 > span {
-  font-weight: 400;
-}
-
-.c4 {
-  list-style: decimal;
-  word-wrap: break-word;
-  font-weight: 700;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  margin-left: 1rem;
-}
-
 .c0 {
   position: fixed;
   top: 0;
@@ -41,14 +10,14 @@ exports[`Footnote renders closed 1`] = `
   background-color: #f7f7f8;
   display: inline-block;
   box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
-  -webkit-transition: -webkit-transform 500ms;
-  -webkit-transition: transform 500ms;
-  transition: transform 500ms;
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
+  -webkit-transition: -webkit-transform 500ms ease-out;
+  -webkit-transition: transform 500ms ease-out;
+  transition: transform 500ms ease-out;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 99999;
 }
 
 .c1 {
@@ -60,37 +29,14 @@ exports[`Footnote renders closed 1`] = `
   overflow: auto;
   position: relative;
   max-height: calc(100vh - 57px);
+  -webkit-transition: height 400ms ease-out,opacity 300ms;
+  transition: height 400ms ease-out,opacity 300ms;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
   background-color: #f7f7f8;
   height: auto;
-}
-
-.c3 {
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
-}
-
-@media (min-width:768px) {
-  .c5 {
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    margin-left: -2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    margin-left: 1rem;
-  }
+  opacity: 1;
 }
 
 @media (min-width:768px) {
@@ -108,21 +54,23 @@ exports[`Footnote renders closed 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c3 {
-    padding-top: 0rem;
-    padding-bottom: 3rem;
-  }
-}
-
 <div>
+  Terms and conditions may apply
   <button
+    id="one"
     type="button"
   >
-    Button
+    1
+  </button>
+  <button
+    id="two"
+    type="button"
+  >
+    2
   </button>
   <div
     class="c0"
+    role="alert"
   >
     <div>
       <div
@@ -177,38 +125,7 @@ exports[`Footnote renders closed 1`] = `
         </div>
         <div
           class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
-            >
-              <div
-                class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
-              >
-                <div
-                  class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-11___2XskS TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
-                >
-                  <ol
-                    class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c4"
-                    start="3"
-                  >
-                    <li
-                      class="c5"
-                    >
-                      <span
-                        class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
-                      >
-                        Available for new activations and renewals on a 2-year term with any rate plan with a minimum monthly spend of $55/mo. TELUS reserves the right to modify prices and eligible rate plans with this offer at any time without advance notice.
-                      </span>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        />
       </div>
       <div
         tabindex="0"
@@ -219,37 +136,6 @@ exports[`Footnote renders closed 1`] = `
 `;
 
 exports[`Footnote renders opened 1`] = `
-.c5 {
-  padding-left: 1rem;
-}
-
-.c5 > span {
-  font-weight: 500;
-}
-
-.c5 > span {
-  font-weight: 400;
-}
-
-.c4 {
-  list-style: decimal;
-  word-wrap: break-word;
-  font-weight: 700;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  margin-left: 1rem;
-}
-
 .c0 {
   position: fixed;
   top: 0;
@@ -259,14 +145,14 @@ exports[`Footnote renders opened 1`] = `
   background-color: #f7f7f8;
   display: inline-block;
   box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
-  -webkit-transition: -webkit-transform 500ms;
-  -webkit-transition: transform 500ms;
-  transition: transform 500ms;
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
+  -webkit-transition: -webkit-transform 500ms ease-out;
+  -webkit-transition: transform 500ms ease-out;
+  transition: transform 500ms ease-out;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 99999;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
@@ -281,37 +167,14 @@ exports[`Footnote renders opened 1`] = `
   overflow: auto;
   position: relative;
   max-height: calc(100vh - 57px);
+  -webkit-transition: height 400ms ease-out,opacity 300ms;
+  transition: height 400ms ease-out,opacity 300ms;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
   background-color: #f7f7f8;
   height: auto;
-}
-
-.c3 {
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
-}
-
-@media (min-width:768px) {
-  .c5 {
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    margin-left: -2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    margin-left: 1rem;
-  }
+  opacity: 1;
 }
 
 @media (min-width:768px) {
@@ -329,21 +192,23 @@ exports[`Footnote renders opened 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c3 {
-    padding-top: 0rem;
-    padding-bottom: 3rem;
-  }
-}
-
 <div>
+  Terms and conditions may apply
   <button
+    id="one"
     type="button"
   >
-    Button
+    1
+  </button>
+  <button
+    id="two"
+    type="button"
+  >
+    2
   </button>
   <div
     class="c0"
+    role="alert"
   >
     <div>
       <div
@@ -398,38 +263,7 @@ exports[`Footnote renders opened 1`] = `
         </div>
         <div
           class="c2"
-        >
-          <div
-            class="c3"
-          >
-            <div
-              class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
-            >
-              <div
-                class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
-              >
-                <div
-                  class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-11___2XskS TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
-                >
-                  <ol
-                    class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c4"
-                    start="3"
-                  >
-                    <li
-                      class="c5"
-                    >
-                      <span
-                        class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
-                      >
-                        Available for new activations and renewals on a 2-year term with any rate plan with a minimum monthly spend of $55/mo. TELUS reserves the right to modify prices and eligible rate plans with this offer at any time without advance notice.
-                      </span>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        />
       </div>
       <div
         tabindex="0"

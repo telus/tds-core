@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TermsAndConditions renders 1`] = `
-.c4 {
+.c5 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -13,20 +13,20 @@ exports[`TermsAndConditions renders 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c7 {
+.c5 .c8 {
   font-size: 0.875rem;
   top: -0.5em;
 }
 
-.c6 {
+.c7 {
   padding-left: 1rem;
 }
 
-.c6 > span {
+.c7 > span {
   font-weight: 500;
 }
 
-.c5 {
+.c6 {
   list-style: decimal;
   word-wrap: break-word;
   font-weight: 700;
@@ -59,28 +59,37 @@ exports[`TermsAndConditions renders 1`] = `
 }
 
 .c3 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.c4 {
+  position: absolute;
+  top: 0;
+  left: 0;
   -webkit-transition: -webkit-transform 300ms;
   -webkit-transition: transform 300ms;
   transition: transform 300ms;
-  -webkit-transform: translate(6px,9px);
-  -ms-transform: translate(6px,9px);
-  transform: translate(6px,9px);
+  -webkit-transform: translate(6px,-1px);
+  -ms-transform: translate(6px,-1px);
+  transform: translate(6px,-1px);
 }
 
-.c0:hover .c3 {
-  -webkit-transform: translate(6px,11px);
-  -ms-transform: translate(6px,11px);
-  transform: translate(6px,11px);
+.c0:hover .c4 {
+  -webkit-transform: translate(6px,2px);
+  -ms-transform: translate(6px,2px);
+  transform: translate(6px,2px);
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     padding-left: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     margin-left: -2rem;
   }
 }
@@ -105,60 +114,42 @@ exports[`TermsAndConditions renders 1`] = `
           <div
             class="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
           >
-            <svg
-              height="24px"
-              version="1.1"
-              viewBox="0 0 24 24"
-              width="24px"
-              xlink="http://www.w3.org/1999/xlink"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <path
-                  d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
-                  id="path-1"
-                />
-              </defs>
-              <g
-                fill="none"
-                fill-rule="evenodd"
-                stroke="none"
-                stroke-width="1"
-              >
-                <g>
-                  <path
-                    d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
-                    fill="#4b286d"
-                  />
-                  <g
-                    class="c3"
-                  >
-                    <mask
-                      fill="white"
-                      id="mask-2"
-                    >
-                      <use
-                        href="#path-1"
-                      />
-                    </mask>
-                    <g
-                      fill="#4b286d"
-                      fill-rule="evenodd"
-                      mask="url(#mask-2)"
-                    >
-                      <rect
-                        height="8"
-                        width="12"
-                        x="0"
-                        y="0"
-                      />
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
             <span
-              class="c4"
+              class="c3"
+            >
+              <svg
+                height="24px"
+                version="1.1"
+                viewBox="0 0 24 24"
+                width="24px"
+                xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
+                  fill="#4b286d"
+                />
+              </svg>
+              <span
+                class="c4"
+              >
+                <svg
+                  height="8px"
+                  version="1.1"
+                  viewBox="0 0 12 8"
+                  width="12px"
+                  xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
+                    id="path-1"
+                  />
+                </svg>
+              </span>
+            </span>
+            <span
+              class="c5"
               data-testid="heading"
             >
               View terms and conditions
@@ -200,24 +191,24 @@ exports[`TermsAndConditions renders 1`] = `
               class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
             >
               <ol
-                class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c5"
+                class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
               >
                 <li
-                  class="c6"
+                  class="c7"
                 >
                   <span>
                     One
                   </span>
                 </li>
                 <li
-                  class="c6"
+                  class="c7"
                 >
                   <span>
                     Two
                   </span>
                 </li>
                 <li
-                  class="c6"
+                  class="c7"
                 >
                   <span>
                     Three
@@ -237,7 +228,7 @@ exports[`TermsAndConditions renders 1`] = `
 `;
 
 exports[`TermsAndConditions renders expanded 1`] = `
-.c4 {
+.c5 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -249,20 +240,20 @@ exports[`TermsAndConditions renders expanded 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c7 {
+.c5 .c9 {
   font-size: 0.875rem;
   top: -0.5em;
 }
 
-.c6 {
+.c7 {
   padding-left: 1rem;
 }
 
-.c6 > span {
+.c7 > span {
   font-weight: 500;
 }
 
-.c5 {
+.c6 {
   list-style: decimal;
   word-wrap: break-word;
   font-weight: 700;
@@ -295,28 +286,43 @@ exports[`TermsAndConditions renders expanded 1`] = `
 }
 
 .c3 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.c0:hover .c8 {
+  -webkit-transform: translate(6px,2px);
+  -ms-transform: translate(6px,2px);
+  transform: translate(6px,2px);
+}
+
+.c4 {
+  position: absolute;
+  top: 0;
+  left: 0;
   -webkit-transition: -webkit-transform 300ms;
   -webkit-transition: transform 300ms;
   transition: transform 300ms;
-  -webkit-transform: translate(6px,9px);
-  -ms-transform: translate(6px,9px);
-  transform: translate(6px,9px);
+  -webkit-transform: translate(6px,-2px);
+  -ms-transform: translate(6px,-2px);
+  transform: translate(6px,-2px);
 }
 
-.c0:hover .c3 {
-  -webkit-transform: translate(6px,11px);
-  -ms-transform: translate(6px,11px);
-  transform: translate(6px,11px);
+.c0:hover .c4 {
+  -webkit-transform: translate(6px,-5px);
+  -ms-transform: translate(6px,-5px);
+  transform: translate(6px,-5px);
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     padding-left: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     margin-left: -2rem;
   }
 }
@@ -457,93 +463,106 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                         <div
                                           className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
                                         >
-                                          <Chevron
-                                            isOpen={true}
-                                          >
-                                            <svg
-                                              height="24px"
-                                              version="1.1"
-                                              viewBox="0 0 24 24"
-                                              width="24px"
-                                              xmlns="http://www.w3.org/2000/svg"
-                                              xmlnsXlink="http://www.w3.org/1999/xlink"
+                                          <TermsAndConditions__StyledChevronContainer>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "TermsAndConditions__StyledChevronContainer-sc-1aoonet-0",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c3",
+                                                    "rules": Array [
+                                                      "position: relative; width: 24px; height: 24px;",
+                                                    ],
+                                                  },
+                                                  "displayName": "TermsAndConditions__StyledChevronContainer",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "TermsAndConditions__StyledChevronContainer-sc-1aoonet-0",
+                                                  "target": "span",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
                                             >
-                                              <defs>
-                                                <path
-                                                  d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
-                                                  id="path-1"
-                                                />
-                                              </defs>
-                                              <g
-                                                fill="none"
-                                                fillRule="evenodd"
-                                                stroke="none"
-                                                strokeWidth="1"
-                                                transform="rotate(180, 12, 12)"
+                                              <span
+                                                className="c3"
                                               >
-                                                <g>
-                                                  <path
-                                                    d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
-                                                    fill="#4b286d"
-                                                  />
-                                                  <TermsAndConditions__StyledChevron>
+                                                <Circle>
+                                                  <svg
+                                                    height="24px"
+                                                    version="1.1"
+                                                    viewBox="0 0 24 24"
+                                                    width="24px"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                                                  >
+                                                    <path
+                                                      d="M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0 M12,1 C18.065,1 23,5.935 23,12 C23,18.065 18.065,23 12,23 C5.935,23 1,18.065 1,12 C1,5.935 5.935,1 12,1"
+                                                      fill="#4b286d"
+                                                    />
+                                                  </svg>
+                                                </Circle>
+                                                <Chevron
+                                                  isOpen={true}
+                                                >
+                                                  <TermsAndConditions__StyledChevron
+                                                    isOpen={true}
+                                                  >
                                                     <StyledComponent
                                                       forwardedComponent={
                                                         Object {
                                                           "$$typeof": Symbol(react.forward_ref),
                                                           "attrs": Array [],
                                                           "componentStyle": ComponentStyle {
-                                                            "componentId": "TermsAndConditions__StyledChevron-sc-1aoonet-0",
-                                                            "isStatic": true,
-                                                            "lastClassName": "c3",
+                                                            "componentId": "TermsAndConditions__StyledChevron-sc-1aoonet-1",
+                                                            "isStatic": false,
+                                                            "lastClassName": "c4",
                                                             "rules": Array [
-                                                              "transition: transform 300ms; transform: translate(6px, 9px); .c0:hover & {
-  transform: translate(6px, 11px);
-}",
+                                                              [Function],
                                                             ],
                                                           },
                                                           "displayName": "TermsAndConditions__StyledChevron",
                                                           "foldedComponentIds": Array [],
                                                           "render": [Function],
-                                                          "styledComponentId": "TermsAndConditions__StyledChevron-sc-1aoonet-0",
-                                                          "target": "g",
+                                                          "styledComponentId": "TermsAndConditions__StyledChevron-sc-1aoonet-1",
+                                                          "target": "span",
                                                           "toString": [Function],
                                                           "warnTooManyClasses": [Function],
                                                           "withComponent": [Function],
                                                         }
                                                       }
                                                       forwardedRef={null}
+                                                      isOpen={true}
                                                     >
-                                                      <g
-                                                        className="c3"
+                                                      <span
+                                                        className="c4"
                                                       >
-                                                        <mask
-                                                          fill="white"
-                                                          id="mask-2"
+                                                        <svg
+                                                          height="8px"
+                                                          version="1.1"
+                                                          viewBox="0 0 12 8"
+                                                          width="12px"
+                                                          xmlns="http://www.w3.org/2000/svg"
+                                                          xmlnsXlink="http://www.w3.org/1999/xlink"
                                                         >
-                                                          <use
-                                                            xlinkHref="#path-1"
+                                                          <path
+                                                            d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
+                                                            id="path-1"
+                                                            transform="rotate(180, 6, 4)"
                                                           />
-                                                        </mask>
-                                                        <g
-                                                          fill="#4b286d"
-                                                          fillRule="evenodd"
-                                                          mask="url(#mask-2)"
-                                                        >
-                                                          <rect
-                                                            height="8"
-                                                            width="12"
-                                                            x="0"
-                                                            y="0"
-                                                          />
-                                                        </g>
-                                                      </g>
+                                                        </svg>
+                                                      </span>
                                                     </StyledComponent>
                                                   </TermsAndConditions__StyledChevron>
-                                                </g>
-                                              </g>
-                                            </svg>
-                                          </Chevron>
+                                                </Chevron>
+                                              </span>
+                                            </StyledComponent>
+                                          </TermsAndConditions__StyledChevronContainer>
                                           <Heading
                                             invert={false}
                                             level="h4"
@@ -565,7 +584,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "Heading__StyledHeading-mpz92r-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c4",
+                                                      "lastClassName": "c5",
                                                       "rules": Array [
                                                         "word-wrap: break-word;",
                                                         [Function],
@@ -586,7 +605,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                 level="h4"
                                               >
                                                 <span
-                                                  className="c4"
+                                                  className="c5"
                                                   data-testid="heading"
                                                 >
                                                   Hide terms and conditions
@@ -783,7 +802,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "sc-bdVaJa",
                                                 "isStatic": true,
-                                                "lastClassName": "c5",
+                                                "lastClassName": "c6",
                                                 "rules": Array [
                                                   "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; @media (min-width: 768px) {
   margin-left: -2rem;
@@ -817,7 +836,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "sc-bdVaJa",
                                                     "isStatic": true,
-                                                    "lastClassName": "c5",
+                                                    "lastClassName": "c6",
                                                     "rules": Array [
                                                       "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; @media (min-width: 768px) {
   margin-left: -2rem;
@@ -841,13 +860,13 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               <Box
                                                 below={4}
                                                 between={3}
-                                                className="c5"
+                                                className="c6"
                                                 inline={false}
                                                 size="small"
                                                 tag="ol"
                                               >
                                                 <ol
-                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c5"
+                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
                                                   size="small"
                                                 >
                                                   <Item
@@ -859,7 +878,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c6",
+                                                          "lastClassName": "c7",
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
@@ -888,7 +907,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c6",
+                                                              "lastClassName": "c7",
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
@@ -910,7 +929,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c6"
+                                                          className="c7"
                                                         >
                                                           <span>
                                                             One
@@ -928,7 +947,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c6",
+                                                          "lastClassName": "c7",
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
@@ -957,7 +976,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c6",
+                                                              "lastClassName": "c7",
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
@@ -979,7 +998,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c6"
+                                                          className="c7"
                                                         >
                                                           <span>
                                                             Two
@@ -997,7 +1016,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c6",
+                                                          "lastClassName": "c7",
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
@@ -1026,7 +1045,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c6",
+                                                              "lastClassName": "c7",
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
@@ -1048,7 +1067,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c6"
+                                                          className="c7"
                                                         >
                                                           <span>
                                                             Three
