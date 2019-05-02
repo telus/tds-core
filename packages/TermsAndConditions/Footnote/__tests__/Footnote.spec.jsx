@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { mount, render } from 'enzyme'
 
-import Sticky from '../Sticky'
+import Footnote from '../Footnote'
 
 const defaultProps = {
   number: 3,
@@ -17,24 +17,24 @@ const Wrapper = props => {
       <button type="button" ref={returnRef}>
         Button
       </button>
-      <Sticky {...props} returnRef={returnRef} />
+      <Footnote {...props} returnRef={returnRef} />
     </div>
   )
 }
 
-describe('Sticky', () => {
+describe('Footnote', () => {
   const doRenderWrapper = (props = {}) => render(<Wrapper {...defaultProps} {...props} />)
   const doMountWrapper = (props = {}, options = {}) =>
     mount(<Wrapper {...defaultProps} {...props} />, options)
 
   it('renders closed', () => {
-    const sticky = doRenderWrapper()
-    expect(sticky).toMatchSnapshot()
+    const footnote = doRenderWrapper()
+    expect(footnote).toMatchSnapshot()
   })
 
   it('renders opened', () => {
-    const sticky = doRenderWrapper({ isOpen: true })
-    expect(sticky).toMatchSnapshot()
+    const footnote = doRenderWrapper({ isOpen: true })
+    expect(footnote).toMatchSnapshot()
   })
 
   describe('onClose', () => {
@@ -50,7 +50,7 @@ describe('Sticky', () => {
       expect(onClose).toHaveBeenCalled()
     })
 
-    it('calls onClose when clicking outside the Sticky', () => {
+    it('calls onClose when clicking outside the Footnote', () => {
       const events = {}
       window.addEventListener = jest.fn((event, cb) => {
         events[event] = cb
@@ -70,10 +70,10 @@ describe('Sticky', () => {
       })
 
       const onClose = jest.fn()
-      const sticky = doMountWrapper({ isOpen: true, onClose })
+      const footnote = doMountWrapper({ isOpen: true, onClose })
 
-      sticky
-        .find('Sticky')
+      footnote
+        .find('Footnote')
         .find('button')
         .simulate('click')
 
@@ -87,15 +87,15 @@ describe('Sticky', () => {
       })
 
       const onClose = jest.fn()
-      const sticky = doMountWrapper({ isOpen: true, onClose })
+      const footnote = doMountWrapper({ isOpen: true, onClose })
 
-      sticky
-        .find('Sticky')
+      footnote
+        .find('Footnote')
         .find('button')
         .simulate('click')
 
       expect(
-        sticky
+        footnote
           .find('button')
           .at(0)
           .getDOMNode()

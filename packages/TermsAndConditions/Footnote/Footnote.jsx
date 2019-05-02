@@ -11,7 +11,7 @@ import { colorAthensGrey } from '@tds/core-colours'
 import Responsive, { media } from '@tds/core-responsive'
 import withFocusTrap from '@tds/shared-with-focus-trap'
 import { Transition } from 'react-transition-group'
-import List from './StickyList'
+import List from './FootnoteList'
 
 const copyShape = PropTypes.shape({
   heading: PropTypes.string.isRequired,
@@ -36,7 +36,7 @@ const getCopy = copy => {
   return copy
 }
 
-const StyledSticky = styled.div(
+const StyledFootnote = styled.div(
   {
     position: 'fixed',
     top: 0,
@@ -67,12 +67,12 @@ const StyledSticky = styled.div(
   }
 )
 
-const StyledStickyHeader = styled.div({
+const StyledFootnoteHeader = styled.div({
   position: 'relative',
   width: '100%',
 })
 
-const StyledStickyBody = styled.div({
+const StyledFootnoteBody = styled.div({
   overflow: 'auto',
   position: 'relative',
   maxHeight: 'calc(100vh - 57px)',
@@ -94,26 +94,26 @@ const StyledListContainer = styled.div({
 
 const FocusTrap = withFocusTrap('div')
 
-const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
+const Footnote = ({ copy, number, content, returnRef, onClose, isOpen }) => {
   const closeRef = useRef(null)
-  const stickyRef = useRef(null)
+  const footnoteRef = useRef(null)
   const headerRef = useRef(null)
 
-  const closeSticky = e => {
+  const closeFootnote = e => {
     returnRef.current.focus()
     onClose(e)
   }
-  // listen for ESCAPE, close button clicks, and clicks outside of the Sticky. Returns focus to returnRef and call onCloseClick
+  // listen for ESCAPE, close button clicks, and clicks outside of the Footnote. Returns focus to returnRef and call onCloseClick
   const handleClose = e => {
     if (e.type === 'keydown') {
       const key = e.key || e.keyCode
       if (key === 'Escape' || key === 27) {
-        closeSticky(e)
+        closeFootnote(e)
       }
     } else if (e.type === 'click') {
-      closeSticky(e)
-    } else if (e.type === 'mousedown' && stickyRef && !stickyRef.current.contains(e.target)) {
-      closeSticky(e)
+      closeFootnote(e)
+    } else if (e.type === 'mousedown' && footnoteRef && !footnoteRef.current.contains(e.target)) {
+      closeFootnote(e)
     }
   }
 
@@ -124,7 +124,7 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
     }
   }, [isOpen])
 
-  // add listeners for mouse clicks outside of Sticky and for ESCAPE key presses
+  // add listeners for mouse clicks outside of Footnote and for ESCAPE key presses
   useEffect(() => {
     if (isOpen) {
       window.addEventListener('mousedown', handleClose)
@@ -141,9 +141,9 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
   return (
     <Transition in={isOpen} timeout={500}>
       {state => (
-        <StyledSticky ref={stickyRef} state={state}>
+        <StyledFootnote ref={footnoteRef} state={state}>
           <FocusTrap>
-            <StyledStickyHeader ref={headerRef}>
+            <StyledFootnoteHeader ref={headerRef}>
               <Responsive minWidth="md" render={() => <HairlineDivider />} />
               <Box vertical={4}>
                 <FlexGrid>
@@ -165,8 +165,8 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
                 </FlexGrid>
               </Box>
               <Responsive maxWidth="md" render={() => <HairlineDivider />} />
-            </StyledStickyHeader>
-            <StyledStickyBody>
+            </StyledFootnoteHeader>
+            <StyledFootnoteBody>
               <StyledListContainer>
                 <FlexGrid>
                   <FlexGrid.Row>
@@ -180,15 +180,15 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
                   </FlexGrid.Row>
                 </FlexGrid>
               </StyledListContainer>
-            </StyledStickyBody>
+            </StyledFootnoteBody>
           </FocusTrap>
-        </StyledSticky>
+        </StyledFootnote>
       )}
     </Transition>
   )
 }
 
-Sticky.propTypes = {
+Footnote.propTypes = {
   returnRef: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
@@ -200,9 +200,9 @@ Sticky.propTypes = {
   isOpen: PropTypes.bool,
 }
 
-Sticky.defaultProps = {
+Footnote.defaultProps = {
   copy: 'en',
   isOpen: false,
 }
 
-export default Sticky
+export default Footnote

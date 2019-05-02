@@ -1,7 +1,7 @@
 ### Usage criteria
 
 ```jsx
-class StickyExample extends React.Component {
+class FootnoteExample extends React.Component {
   constructor(props) {
     super(props)
     this.footnoteRef1 = React.createRef()
@@ -10,7 +10,7 @@ class StickyExample extends React.Component {
     this.state = {
       number: null,
       content: null,
-      showSticky: false,
+      showFootnote: false,
       returnRef: null,
     }
   }
@@ -18,14 +18,14 @@ class StickyExample extends React.Component {
   handleClose(e) {
     if (e.target.tagName !== 'BUTTON') {
       console.log('hiding')
-      this.setState({ showSticky: false })
+      this.setState({ showFootnote: false })
     } else {
       console.log('switching content')
     }
   }
 
-  handleFootnoteClick(number, content, returnRef) {
-    this.setState({ number, content, showSticky: true, returnRef })
+  handleFootnoteLinkClick(number, content, returnRef) {
+    this.setState({ number, content, showFootnote: true, returnRef })
   }
 
   render() {
@@ -38,7 +38,7 @@ class StickyExample extends React.Component {
         <button
           id="switchContent"
           onClick={() => {
-            this.handleFootnoteClick(number, content, this.footnoteRef2)
+            this.handleFootnoteLinkClick(number, content, this.footnoteRef2)
           }}
         >
           Switch content
@@ -47,29 +47,29 @@ class StickyExample extends React.Component {
           number={3}
           ref={this.footnoteRef1}
           onClick={() => {
-            this.handleFootnoteClick(3, 'small content', this.footnoteRef1)
+            this.handleFootnoteLinkClick(3, 'small content', this.footnoteRef1)
           }}
         />
         <FootnoteLink
           number={number}
           ref={this.footnoteRef2}
           onClick={() => {
-            this.handleFootnoteClick(number, content, this.footnoteRef2)
+            this.handleFootnoteLinkClick(number, content, this.footnoteRef2)
           }}
         />
 
-        <Sticky
+        <Footnote
           returnRef={this.state.returnRef}
           number={this.state.number}
           content={this.state.content}
           onClose={e => {
             this.handleClose(e)
           }}
-          isOpen={this.state.showSticky}
+          isOpen={this.state.showFootnote}
         />
       </div>
     )
   }
 }
-;<StickyExample />
+;<FootnoteExample />
 ```

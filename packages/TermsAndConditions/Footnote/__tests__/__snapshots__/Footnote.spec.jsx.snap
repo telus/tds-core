@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sticky renders closed 1`] = `
-.c4 {
+exports[`Footnote renders closed 1`] = `
+.c5 {
   padding-left: 1rem;
 }
 
-.c4 > span {
+.c5 > span {
   font-weight: 500;
 }
 
-.c4 > span {
+.c5 > span {
   font-weight: 400;
 }
 
-.c3 {
+.c4 {
   list-style: decimal;
   word-wrap: break-word;
   font-weight: 700;
@@ -33,7 +33,7 @@ exports[`Sticky renders closed 1`] = `
 }
 
 .c0 {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -47,6 +47,7 @@ exports[`Sticky renders closed 1`] = `
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
+  overflow: hidden;
   z-index: 1000;
 }
 
@@ -63,37 +64,39 @@ exports[`Sticky renders closed 1`] = `
   height: auto;
 }
 
+.c3 {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
     padding-left: 2rem;
   }
 }
 
 @media (min-width:768px) {
   .c4 {
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
     margin-left: -2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     margin-left: 1rem;
   }
 }
 
 @media (min-width:768px) {
   .c0 {
-    position: fixed;
     top: auto;
     bottom: 0;
-    left: 0;
-    overflow: hidden;
     height: auto;
     max-height: 50vh;
   }
@@ -102,6 +105,13 @@ exports[`Sticky renders closed 1`] = `
 @media (min-width:768px) {
   .c2 {
     max-height: calc(50vh - 57px);
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -126,7 +136,7 @@ exports[`Sticky renders closed 1`] = `
             class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
           />
           <div
-            class="TDS_Box-modules__verticalPadding-3___Fsv37"
+            class="TDS_Box-modules__verticalPadding-4___QMNNa"
           >
             <div
               class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -169,7 +179,7 @@ exports[`Sticky renders closed 1`] = `
           class="c2"
         >
           <div
-            class="TDS_Box-modules__verticalPadding-4___QMNNa"
+            class="c3"
           >
             <div
               class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -181,11 +191,11 @@ exports[`Sticky renders closed 1`] = `
                   class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-11___2XskS TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                 >
                   <ol
-                    class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c3"
+                    class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c4"
                     start="3"
                   >
                     <li
-                      class="c4"
+                      class="c5"
                     >
                       <span
                         class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
@@ -208,20 +218,20 @@ exports[`Sticky renders closed 1`] = `
 </div>
 `;
 
-exports[`Sticky renders opened 1`] = `
-.c4 {
+exports[`Footnote renders opened 1`] = `
+.c5 {
   padding-left: 1rem;
 }
 
-.c4 > span {
+.c5 > span {
   font-weight: 500;
 }
 
-.c4 > span {
+.c5 > span {
   font-weight: 400;
 }
 
-.c3 {
+.c4 {
   list-style: decimal;
   word-wrap: break-word;
   font-weight: 700;
@@ -241,7 +251,7 @@ exports[`Sticky renders opened 1`] = `
 }
 
 .c0 {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -255,6 +265,7 @@ exports[`Sticky renders opened 1`] = `
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
+  overflow: hidden;
   z-index: 1000;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -274,37 +285,39 @@ exports[`Sticky renders opened 1`] = `
   height: auto;
 }
 
+.c3 {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
     padding-left: 2rem;
   }
 }
 
 @media (min-width:768px) {
   .c4 {
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
     margin-left: -2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     margin-left: 1rem;
   }
 }
 
 @media (min-width:768px) {
   .c0 {
-    position: fixed;
     top: auto;
     bottom: 0;
-    left: 0;
-    overflow: hidden;
     height: auto;
     max-height: 50vh;
   }
@@ -313,6 +326,13 @@ exports[`Sticky renders opened 1`] = `
 @media (min-width:768px) {
   .c2 {
     max-height: calc(50vh - 57px);
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -337,7 +357,7 @@ exports[`Sticky renders opened 1`] = `
             class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
           />
           <div
-            class="TDS_Box-modules__verticalPadding-3___Fsv37"
+            class="TDS_Box-modules__verticalPadding-4___QMNNa"
           >
             <div
               class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -380,7 +400,7 @@ exports[`Sticky renders opened 1`] = `
           class="c2"
         >
           <div
-            class="TDS_Box-modules__verticalPadding-4___QMNNa"
+            class="c3"
           >
             <div
               class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -392,11 +412,11 @@ exports[`Sticky renders opened 1`] = `
                   class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-11___2XskS TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                 >
                   <ol
-                    class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c3"
+                    class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c4"
                     start="3"
                   >
                     <li
-                      class="c4"
+                      class="c5"
                     >
                       <span
                         class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
