@@ -189,14 +189,34 @@ const Footnote = ({ copy, number, content, returnRef, onClose, isOpen }) => {
 }
 
 Footnote.propTypes = {
+  /**
+   * A react ref to the FootnoteLink that triggered the Footnote
+   */
   returnRef: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   ]).isRequired,
+  /**
+   * The copy
+   */
   copy: PropTypes.oneOfType([PropTypes.oneOf(['en', 'fr']), copyShape]).isRequired,
+  /**
+   * The number
+   */
   number: PropTypes.number.isRequired,
+  /**
+   * The content
+   */
   content: PropTypes.string.isRequired,
+  /**
+   * A callback function to handle the closing of the footnote.
+   *
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
+   */
   onClose: PropTypes.func.isRequired,
+  /**
+   * A boolean flag used to hide/show the Footnote
+   */
   isOpen: PropTypes.bool,
 }
 

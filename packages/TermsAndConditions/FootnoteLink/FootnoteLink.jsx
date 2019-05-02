@@ -32,7 +32,15 @@ const FootnoteLink = React.forwardRef(({ number, onClick }, ref) => {
 FootnoteLink.displayName = 'FootnoteLink'
 
 FootnoteLink.propTypes = {
+  /**
+   * The number
+   */
   number: PropTypes.number.isRequired,
+  /**
+   * A callback function to handle the click of a FootnoteLink
+   *
+   * @param {SyntheticEvent} event The React `SyntheticEvent`
+   */
   onClick: PropTypes.func.isRequired,
 }
 
