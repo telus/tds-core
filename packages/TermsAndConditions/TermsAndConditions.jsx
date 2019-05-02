@@ -187,6 +187,9 @@ const TermsAndConditions = ({ copy, content, ...rest }) => {
 }
 
 TermsAndConditions.propTypes = {
+  /**
+   * The copy
+   */
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(['en', 'fr']),
     PropTypes.shape({
@@ -194,6 +197,9 @@ TermsAndConditions.propTypes = {
       headingOpened: PropTypes.string,
     }),
   ]).isRequired,
+  /**
+   * An array of nodes to be displayed in a list of TermsAndConditions
+   */
   content: PropTypes.arrayOf(PropTypes.node).isRequired,
 }
 
