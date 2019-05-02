@@ -38,7 +38,7 @@ const getCopy = copy => {
 
 const StyledSticky = styled.div(
   {
-    position: 'absolute',
+    position: 'fixed',
     top: 0,
     left: 0,
     height: '100vh',
@@ -51,11 +51,8 @@ const StyledSticky = styled.div(
     overflow: 'hidden',
     zIndex: 1000,
     ...media.from('md').css({
-      position: 'fixed',
       top: 'auto',
       bottom: 0,
-      left: 0,
-      overflow: 'hidden',
       height: 'auto',
       maxHeight: '50vh',
     }),
@@ -76,7 +73,6 @@ const StyledStickyHeader = styled.div({
 })
 
 const StyledStickyBody = styled.div({
-  // marginTop: '74px',
   overflow: 'auto',
   position: 'relative',
   maxHeight: 'calc(100vh - 57px)',
@@ -92,7 +88,7 @@ const StyledListContainer = styled.div({
   paddingBottom: '3rem',
   ...media.from('md').css({
     paddingTop: '0rem',
-    paddingBottom: '4rem',
+    paddingBottom: '3rem',
   }),
 })
 
@@ -127,10 +123,6 @@ const Sticky = ({ copy, number, content, returnRef, onClose, isOpen }) => {
       closeRef.current.focus()
     }
   }, [isOpen])
-
-  // useEffect(() => {
-  //   stickyRef.current.scrollTo(0, 0)
-  // }, [isOpen])
 
   // add listeners for mouse clicks outside of Sticky and for ESCAPE key presses
   useEffect(() => {
