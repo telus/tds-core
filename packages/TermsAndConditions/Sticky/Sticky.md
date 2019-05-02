@@ -43,14 +43,14 @@ class StickyExample extends React.Component {
         >
           Switch content
         </button>
-        <Footnote
+        <FootnoteLink
           number={3}
           ref={this.footnoteRef1}
           onClick={() => {
             this.handleFootnoteClick(3, 'small content', this.footnoteRef1)
           }}
         />
-        <Footnote
+        <FootnoteLink
           number={number}
           ref={this.footnoteRef2}
           onClick={() => {
