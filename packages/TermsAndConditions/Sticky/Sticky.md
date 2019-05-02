@@ -15,8 +15,13 @@ class StickyExample extends React.Component {
     }
   }
 
-  handleClose() {
-    this.setState({ showSticky: false })
+  handleClose(e) {
+    if (e.target.tagName !== 'BUTTON') {
+      console.log('hiding')
+      this.setState({ showSticky: false })
+    } else {
+      console.log('switching content')
+    }
   }
 
   handleFootnoteClick(number, content, returnRef) {
@@ -30,6 +35,14 @@ class StickyExample extends React.Component {
 
     return (
       <div>
+        <button
+          id="switchContent"
+          onClick={() => {
+            this.handleFootnoteClick(number, content, this.footnoteRef2)
+          }}
+        >
+          Switch content
+        </button>
         <Footnote
           number={3}
           ref={this.footnoteRef1}
@@ -49,8 +62,8 @@ class StickyExample extends React.Component {
           returnRef={this.state.returnRef}
           number={this.state.number}
           content={this.state.content}
-          onClose={() => {
-            this.handleClose()
+          onClose={e => {
+            this.handleClose(e)
           }}
           isOpen={this.state.showSticky}
         />
