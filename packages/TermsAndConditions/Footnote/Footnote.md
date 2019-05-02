@@ -4,8 +4,6 @@
 class FootnoteExample extends React.Component {
   constructor(props) {
     super(props)
-    this.footnoteRef1 = React.createRef()
-    this.footnoteRef2 = React.createRef()
 
     this.state = {
       number: null,
