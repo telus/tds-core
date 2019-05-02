@@ -5,18 +5,19 @@ import TermsAndConditions from '../TermsAndConditions'
 
 describe('TermsAndConditions', () => {
   const defaultProps = {
+    copy: 'en',
     content: ['One', 'Two', 'Three'],
   }
 
   const doShallow = (props = {}) => shallow(<TermsAndConditions {...defaultProps} {...props} />)
 
   it('renders', () => {
-    const termsAndConditions = render(<TermsAndConditions content={['One', 'Two', 'Three']} />)
+    const termsAndConditions = render(<TermsAndConditions {...defaultProps} />)
     expect(termsAndConditions).toMatchSnapshot()
   })
 
   it('renders expanded', () => {
-    const termsAndConditions = mount(<TermsAndConditions content={['One', 'Two', 'Three']} />)
+    const termsAndConditions = mount(<TermsAndConditions {...defaultProps} />)
     termsAndConditions.find('button').simulate('click')
 
     expect(termsAndConditions).toMatchSnapshot()
