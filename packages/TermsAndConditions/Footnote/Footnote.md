@@ -51,16 +51,18 @@ class FootnoteExample extends React.Component {
             this.handleFootnoteLinkClick(number, content, this.footnoteRef2)
           }}
         />
-        <Footnote
-          copy="en"
-          returnRef={this.state.returnRef}
-          number={this.state.number}
-          content={this.state.content}
-          onClose={e => {
-            this.handleClose(e)
-          }}
-          isOpen={this.state.showFootnote}
-        />
+        {this.state.returnRef && this.state.number && this.state.content && (
+          <Footnote
+            copy="en"
+            returnRef={this.state.returnRef}
+            number={this.state.number}
+            content={this.state.content}
+            onClose={e => {
+              this.handleClose(e)
+            }}
+            isOpen={this.state.showFootnote}
+          />
+        )}
       </div>
     )
   }
