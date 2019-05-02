@@ -193,12 +193,8 @@ TermsAndConditions.propTypes = {
       headingClosed: PropTypes.string,
       headingOpened: PropTypes.string,
     }),
-  ]),
+  ]).isRequired,
   content: PropTypes.arrayOf(PropTypes.node).isRequired,
-}
-
-TermsAndConditions.defaultProps = {
-  copy: 'en',
 }
 
 export default TermsAndConditions

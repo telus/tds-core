@@ -59,6 +59,7 @@ class FootnoteExample extends React.Component {
         />
 
         <Footnote
+          copy="en"
           returnRef={this.state.returnRef}
           number={this.state.number}
           content={this.state.content}

@@ -193,7 +193,7 @@ Footnote.propTypes = {
     PropTypes.func,
     PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   ]).isRequired,
-  copy: PropTypes.oneOfType([PropTypes.oneOf(['en', 'fr']), copyShape]),
+  copy: PropTypes.oneOfType([PropTypes.oneOf(['en', 'fr']), copyShape]).isRequired,
   number: PropTypes.number.isRequired,
   content: PropTypes.string.isRequired,
   onClose: PropTypes.func.isRequired,
@@ -201,7 +201,6 @@ Footnote.propTypes = {
 }
 
 Footnote.defaultProps = {
-  copy: 'en',
   isOpen: false,
 }
 
