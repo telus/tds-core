@@ -126,7 +126,7 @@ module.exports = {
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
 
-    if (name === 'Sticky' || name === 'Footnote') {
+    if (name === 'Footnote' || name === 'FootnoteLink') {
       kebabizeName = 'terms-and-conditions'
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
@@ -283,7 +283,7 @@ module.exports = {
                 return [
                   path.resolve('packages/TermsAndConditions/TermsAndConditions.jsx'),
                   path.resolve('packages/TermsAndConditions/Footnote/Footnote.jsx'),
-                  path.resolve('packages/TermsAndConditions/Sticky/Sticky.jsx'),
+                  path.resolve('packages/TermsAndConditions/FootnoteLink/FootnoteLink.jsx'),
                 ]
               },
             },
