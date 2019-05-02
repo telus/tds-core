@@ -1,20 +1,31 @@
 import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { sizeSmall, helveticaNeueThin35 } from '@tds/shared-typography'
 
-const StyledFootnoteLink = styled.button({})
+const StyledFootnoteSup = styled.sup({
+  ...sizeSmall,
+  ...helveticaNeueThin35,
+  top: '-0.5rem',
+  position: 'relative',
+})
+
+const StyledFootnoteLink = styled.button({
+  backgroundColor: 'transparent',
+  border: 0,
+  textDecoration: 'underline',
+  paddingLeft: '0 0 0 0.5rem',
+})
 
 const FootnoteLink = React.forwardRef(({ number, onClick }, ref) => {
   const footnoteLinkRef = ref || useRef(null)
 
   return (
-    <>
-      <sup>
-        <StyledFootnoteLink ref={footnoteLinkRef} onClick={onClick}>
-          {number}
-        </StyledFootnoteLink>
-      </sup>
-    </>
+    <StyledFootnoteSup>
+      <StyledFootnoteLink ref={footnoteLinkRef} onClick={onClick} data-tds-id="footnote-link">
+        {number}
+      </StyledFootnoteLink>
+    </StyledFootnoteSup>
   )
 })
 
