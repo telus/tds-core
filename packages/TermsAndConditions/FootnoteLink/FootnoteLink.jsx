@@ -1,41 +1,68 @@
 import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { sizeSmall, helveticaNeueThin35 } from '@tds/shared-typography'
+import { helveticaNeueThin35 } from '@tds/shared-typography'
 
 const StyledFootnoteSup = styled.sup({
-  ...sizeSmall,
   ...helveticaNeueThin35,
   top: '-0.5rem',
   position: 'relative',
+  fontSize: '0.75rem',
+  letterSpacing: '0.46',
 })
 
 const StyledFootnoteLink = styled.button({
   backgroundColor: 'transparent',
   border: 0,
   textDecoration: 'underline',
-  paddingLeft: '0 0 0 0.5rem',
+  padding: '0',
+  margin: '0 0 0 0.5rem',
 })
 
-const FootnoteLink = React.forwardRef(({ number, onClick }, ref) => {
-  const footnoteLinkRef = ref || useRef(null)
+const FootnoteLink = ({ number, onClick }) => {
+  let numbers = []
+  const refs = []
+
+  if (!Array.isArray(number)) {
+    numbers[0] = number
+  } else {
+    numbers = number
+  }
+
+  numbers.forEach(() => {
+    refs.push(useRef(null))
+  })
+
+  const handleClick = index => {
+    onClick(numbers[index], refs[index])
+  }
 
   return (
-    <StyledFootnoteSup>
-      <StyledFootnoteLink ref={footnoteLinkRef} onClick={onClick} data-tds-id="footnote-link">
-        {number}
-      </StyledFootnoteLink>
-    </StyledFootnoteSup>
+    <>
+      {numbers.map((n, i) => (
+        <StyledFootnoteSup key={n}>
+          <StyledFootnoteLink
+            key={numbers[i]}
+            ref={refs[i]}
+            onClick={() => handleClick(i)}
+            data-tds-id="footnote-link"
+          >
+            {numbers[i]}
+          </StyledFootnoteLink>
+          {i !== numbers.length - 1 ? ',' : ''}
+        </StyledFootnoteSup>
+      ))}
+    </>
   )
-})
+}
 
 FootnoteLink.displayName = 'FootnoteLink'
 
 FootnoteLink.propTypes = {
   /**
-   * The number
+   * The number or numbers, if passed an array, a superscript will be created for each number.
    */
-  number: PropTypes.number.isRequired,
+  number: PropTypes.oneOfType([PropTypes.number, PropTypes.arrayOf(PropTypes.number)]).isRequired,
   /**
    * A callback function to handle the click of a FootnoteLink
    *
