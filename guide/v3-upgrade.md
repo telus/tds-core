@@ -1,16 +1,16 @@
 # Upgrading to TDS V3
 
-As of **July 1st, 2019** TDS will move feature support from V2: Split Components to V3: Styled Components of the design system. This is being done primarily to facilitate the use of styled-components V4. For a detailed view of our sunsetting schedule, please read our [roadmap page](roadmap.md). Additionally, more information on this subject can be found on the the [Reference Architecture CSS Document](https://github.com/telus/reference-architecture/blob/bb7059d135574c380d2865aa1bbdd633c2345461/development/css.md).
+As of **July 1st, 2019** TDS will move feature support from V2: Split Components to V3: Styled Components of the design system. This is being done primarily to facilitate the use of styled-components V4. For a detailed view of our sunsetting schedule, please read our [roadmap page](roadmap.md). Additionally, more information on this subject can be found on the [Reference Architecture CSS Document](https://github.com/telus/reference-architecture/blob/bb7059d135574c380d2865aa1bbdd633c2345461/development/css.md).
 
 We would also like to note that the following document also applies to Community. Community is now accepting components developed with styled-components, and it is recommended that all new components use it.
 
 ## Requirements
 
-To upgrade to TDS V3, your repo will need **styled-components 4.1** and **React 16.8** installed. These packages are peer dependencies of all TDS V3 components, and lower versions will cause incompatibilities.
+To upgrade to TDS V3, your project will need **styled-components 4.1+** and **React 16.8+** installed. These packages are peer dependencies of all TDS V3 components, and lower versions will cause incompatibilities.
 
 ### Upgrading from styled-components V3 to V4
 
-The styled-components team has provided a codemod to make the upgrade process from V3 to V4 as fast as possible. It can be accessed [here](https://github.com/styled-components/styled-components-codemods). If you would like more information on the changes and improvements made from V3 to V4, check out the [styled-components V4 announcement](https://medium.com/styled-components/announcing-styled-components-v4-better-faster-stronger-3fe1aba1a112).
+The styled-components team has provided a codemod to make the upgrade process from V3 to V4 as fast as possible. It can be accessed on the [styled-components-codemods project on GitHub](https://github.com/styled-components/styled-components-codemods). If you would like more information on the changes and improvements made from V3 to V4, check out the [styled-components V4 announcement](https://medium.com/styled-components/announcing-styled-components-v4-better-faster-stronger-3fe1aba1a112).
 
 ### Upgrading from React 15 to React 16
 
@@ -22,7 +22,7 @@ If your app does not currently display any warnings from React, the upgrade to R
 
 ## Developing in Styled components
 
-If you are unfamiliar with styled-components, we recommend you read the [official documentation](https://www.styled-components.com/docs) on the subject. Additionally, some decisions have been made about using styled-components at TELUS to encourage consistency and ease of use between codebases.
+If you are unfamiliar with styled-components, we recommend you read the [official documentation](https://www.styled-components.com/docs) on the subject. Additionally, some decisions have been made about using styled-components at TELUS to encourage consistency and ease of use between projects.
 
 ### Object notation
 
@@ -56,3 +56,10 @@ const StyledDiv.styled.div((props)=>({
 ### Sanitizing inputs
 
 If it is necessary for your application to insert user input into styles, the input **must** be sanitized. Inserting user input into CSS rules without sanitizing is a security risk. For more information on security, see [styled-components advanced usage](https://www.styled-components.com/docs/advanced#security).
+
+## References
+
+- [CSS | TELUS Reference Architecture](https://github.com/telus/reference-architecture/blob/bb7059d135574c380d2865aa1bbdd633c2345461/development/css.md)
+- [styled-components](https://www.styled-components.com/)
+- [styled-components codemods](https://github.com/styled-components/styled-components-codemods)
+- [React codemods](https://github.com/reactjs/react-codemod)
