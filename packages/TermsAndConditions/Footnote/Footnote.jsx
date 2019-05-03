@@ -80,13 +80,16 @@ const StyledFootnoteBody = styled.div(
     position: 'relative',
     maxHeight: 'calc(100vh - 57px)',
     backgroundColor: colorAthensGrey,
-    transition: `height 600ms ease, opacity 400ms ease 200ms`,
     ...media.from('md').css({
       maxHeight: 'calc(50vh - 57px)',
     }),
   },
   ({ isContentChanging, bodyHeight }) => {
+    // fade in slower than fade out
     return {
+      transition: `height 600ms ease, opacity ${isContentChanging ? 200 : 500}ms ease ${
+        isContentChanging ? 100 : 200
+      }ms`,
       height: bodyHeight,
       opacity: isContentChanging ? 0 : 1,
     }
