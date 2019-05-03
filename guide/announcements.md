@@ -4,7 +4,6 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
-
 ## April 2019
 
 ### New community component ✨
@@ -12,8 +11,7 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 **Pagination**
 
 Pagination helps in content heavy pages to divide content and present in a limited and digestible manner.
-[Pagination docs](https://tds.telus.com/community/index.html#pagination) 
-
+[Pagination docs](https://tds.telus.com/community/index.html#pagination)
 
 ### Features 🎁
 
@@ -24,22 +22,21 @@ More SVG Icons are now available in code. New Check, Heartbeat, HomeSecurity, Ph
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%401.2.1)
 - [Documentation](https://tds.telus.com/components/index.html#!/SVGIcon)
 
-
 **UnorderedList and OrderedList were patched to support conditionally rendered children**
-- Unordered List 2.0.15 [Release notes] (https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-unordered-list%402.0.15)
-- Ordered List 2.0.15 [Release notes] (https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-ordered-list%402.0.15)
+
+- Unordered List 2.0.15 [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-unordered-list%402.0.15)
+- Ordered List 2.0.15 [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-ordered-list%402.0.15)
 
 **Hover states added to Radio and Checkbox**
-- Radio 1.2.15 [Release notes] (https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%401.1.15)
-- Checkbox 1.1.15 [Release notes] (https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%401.1.15)
 
+- Radio 1.2.15 [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%401.1.15)
+- Checkbox 1.1.15 [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%401.1.15)
 
 ### Fixes 🔧
 
 **Unordered list 2.1.0**
 
-This release features mixed icon styles (SASS)
--[Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-unordered-list%402.1.0)
+This release features mixed icon styles (SASS) -[Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-unordered-list%402.1.0)
 
 **Smaller package sizes for form elements**
 
@@ -48,7 +45,6 @@ The following package sizes were vastly decreased in
 @tds/core-select@2.0.14
 @tds/core-input@2.1.11
 @tds/core-text-area@2.0.12
-
 
 ### Styled Components upgrades 💅
 
@@ -72,30 +68,26 @@ TDS is currently engaging in an initiative to upgrade all of our components to u
 
 **Display Heading 2.0.0**
 
-- [Release notes]()
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-display-heading%402.0.0)
 
 **Heading 2.0.0**
 
-- [Release notes]()
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-heading%402.0.0)
 
 **ChevronLink 2.0.0**
 
-- [Release notes]()
-
-
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-chevron-link%402.0.0)
 
 ### Documentation updates
 
 - New documentation added for Benefit component, for Business uses: https://tds.telus.com/components/index.html#benefitwithheading
 
-
 ### What's coming up in May ✨
+
 - Terms and Conditions core component
 - More core components converted to Styled Components
 - Motion documentation
 - Workshop: How to build a community component (both design and code)
-
-
 
 ## March 2019
 
@@ -307,8 +299,7 @@ Thanks for being part of the conversation Ally Hui and Jeffrey Chang!
 
 **Pagination**
 Pagination helps in content heavy pages to divide content and present in a limited and digestible manner.
-[Pagination docs](https://tds.telus.com/community/index.html#pagination) 
-
+[Pagination docs](https://tds.telus.com/community/index.html#pagination)
 
 ### Features 🎁
 
@@ -326,15 +317,11 @@ DecorativeIcon has gotten a new update that has over 150+ icons!
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%401.1.0)
 - [Documentation](https://tds.telus.com/components/index.html#!/SVGIcon)
 
-
 ### Fixes 🔧
 
 **Unordered list 2.1.0**
 
-This release features mixed icon styles (SASS)
--[Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-unordered-list%402.1.0)
-
-
+This release features mixed icon styles (SASS) -[Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-unordered-list%402.1.0)
 
 ### Styled Components upgrades 💅
 
@@ -351,8 +338,6 @@ TDS is currently engaging in an initiative to upgrade all of our components to u
 **Unordered list 3.0.0**
 
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-unordered-list%403.0.0)
-
-
 
 ## March 2019
 
