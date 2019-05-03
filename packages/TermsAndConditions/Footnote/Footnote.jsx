@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -28,6 +28,8 @@ const copyDict = {
     close: 'closeFR',
   },
 }
+
+const contentChangeSpeed = 600
 
 const getCopy = copy => {
   if (typeof copy === 'string') {
@@ -72,16 +74,24 @@ const StyledFootnoteHeader = styled.div({
   width: '100%',
 })
 
-const StyledFootnoteBody = styled.div({
-  overflow: 'auto',
-  position: 'relative',
-  maxHeight: 'calc(100vh - 57px)',
-  backgroundColor: colorAthensGrey,
-  height: 'auto',
-  ...media.from('md').css({
-    maxHeight: 'calc(50vh - 57px)',
-  }),
-})
+const StyledFootnoteBody = styled.div(
+  {
+    overflow: 'auto',
+    position: 'relative',
+    maxHeight: 'calc(100vh - 57px)',
+    backgroundColor: colorAthensGrey,
+    transition: `height 600ms ease, opacity 400ms ease 200ms`,
+    ...media.from('md').css({
+      maxHeight: 'calc(50vh - 57px)',
+    }),
+  },
+  ({ isContentChanging, bodyHeight }) => {
+    return {
+      height: bodyHeight,
+      opacity: isContentChanging ? 0 : 1,
+    }
+  }
+)
 
 const StyledListContainer = styled.div({
   paddingTop: '1.5rem',
@@ -94,15 +104,31 @@ const StyledListContainer = styled.div({
 
 const FocusTrap = withFocusTrap('div')
 
-const Footnote = ({ copy, number, content, returnRef, onClose, isOpen }) => {
+const usePrevious = value => {
+  const ref = useRef()
+  useEffect(() => {
+    ref.current = value
+  })
+  return ref.current
+}
+
+const Footnote = props => {
+  const { copy, number, content, returnRef, onClose, isOpen } = props
   const closeRef = useRef(null)
   const footnoteRef = useRef(null)
   const headerRef = useRef(null)
+  const listRef = useRef(null)
+  const [isContentChanging, setIsContentChanging] = useState(false)
+  const [data, setData] = useState({})
+  const [bodyHeight, setBodyHeight] = useState('auto')
+
+  const prevProps = usePrevious(props)
 
   const closeFootnote = e => {
     returnRef.current.focus()
     onClose(e)
   }
+
   // listen for ESCAPE, close button clicks, and clicks outside of the Footnote. Returns focus to returnRef and call onCloseClick
   const handleClose = e => {
     if (e.type === 'keydown') {
@@ -116,6 +142,28 @@ const Footnote = ({ copy, number, content, returnRef, onClose, isOpen }) => {
       closeFootnote(e)
     }
   }
+
+  // detect a change in Footnote content/number (clicking a FootnoteLink while a Footnote is already open)
+  useEffect(() => {
+    if (
+      prevProps &&
+      (number !== prevProps.number || content !== prevProps.content) &&
+      isOpen === prevProps.isOpen
+    ) {
+      setIsContentChanging(true)
+      setData({ content: prevProps.content, number: prevProps.number })
+      if (listRef.current.offsetHeight !== 0) {
+        setBodyHeight(listRef.current.offsetHeight)
+      }
+      setTimeout(() => {
+        setData({ content, number })
+        setBodyHeight(listRef.current.offsetHeight)
+        setIsContentChanging(false)
+      }, contentChangeSpeed)
+    } else {
+      setData({ content, number })
+    }
+  }, [number, content])
 
   // focus the close button on mount
   useEffect(() => {
@@ -166,14 +214,23 @@ const Footnote = ({ copy, number, content, returnRef, onClose, isOpen }) => {
               </Box>
               <Responsive maxWidth="md" render={() => <HairlineDivider />} />
             </StyledFootnoteHeader>
-            <StyledFootnoteBody>
-              <StyledListContainer>
+            <StyledFootnoteBody
+              isContentChanging={isContentChanging}
+              bodyHeight={bodyHeight}
+              contentChangeSpeed={contentChangeSpeed}
+              onTransitionEnd={e => {
+                if (e.propertyName === 'height') {
+                  setBodyHeight('auto')
+                }
+              }}
+            >
+              <StyledListContainer ref={listRef}>
                 <FlexGrid>
                   <FlexGrid.Row>
                     <FlexGrid.Col xs={12} md={11}>
-                      <List start={number}>
+                      <List start={data.number}>
                         <List.Item>
-                          <Text>{content}</Text>
+                          <Text>{data.content}</Text>
                         </List.Item>
                       </List>
                     </FlexGrid.Col>
