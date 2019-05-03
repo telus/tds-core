@@ -29,8 +29,6 @@ const copyDict = {
   },
 }
 
-const contentChangeSpeed = 600
-
 const getCopy = copy => {
   if (typeof copy === 'string') {
     return copyDict[copy]
@@ -84,10 +82,10 @@ const StyledFootnoteBody = styled.div(
       maxHeight: 'calc(50vh - 57px)',
     }),
   },
-  ({ isContentChanging, bodyHeight }) => {
+  ({ isContentChanging, bodyHeight, speed }) => {
     // fade in slower than fade out
     return {
-      transition: `height 600ms ease, opacity ${isContentChanging ? 200 : 500}ms ease ${
+      transition: `height ${speed}ms ease, opacity ${isContentChanging ? 200 : 500}ms ease ${
         isContentChanging ? 100 : 200
       }ms`,
       height: bodyHeight,
@@ -115,6 +113,20 @@ const usePrevious = value => {
   return ref.current
 }
 
+const UPPER_SPEED_LIMIT = 500
+const LOWER_SPEED_LIMIT = 600
+
+const calculateSpeed = height => {
+  const h = height * 0.5
+  if (h < UPPER_SPEED_LIMIT) {
+    return UPPER_SPEED_LIMIT
+  }
+  if (h > LOWER_SPEED_LIMIT) {
+    return LOWER_SPEED_LIMIT
+  }
+  return h
+}
+
 const Footnote = props => {
   const { copy, number, content, returnRef, onClose, isOpen } = props
   const closeRef = useRef(null)
@@ -124,6 +136,7 @@ const Footnote = props => {
   const [isContentChanging, setIsContentChanging] = useState(false)
   const [data, setData] = useState({})
   const [bodyHeight, setBodyHeight] = useState('auto')
+  const speed = calculateSpeed(bodyHeight)
 
   const prevProps = usePrevious(props)
 
@@ -162,7 +175,7 @@ const Footnote = props => {
         setData({ content, number })
         setBodyHeight(listRef.current.offsetHeight)
         setIsContentChanging(false)
-      }, contentChangeSpeed)
+      }, 600)
     } else {
       setData({ content, number })
     }
@@ -220,7 +233,7 @@ const Footnote = props => {
             <StyledFootnoteBody
               isContentChanging={isContentChanging}
               bodyHeight={bodyHeight}
-              contentChangeSpeed={contentChangeSpeed}
+              speed={speed}
               onTransitionEnd={e => {
                 if (e.propertyName === 'height') {
                   setBodyHeight('auto')
