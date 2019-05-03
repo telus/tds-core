@@ -61,7 +61,10 @@ exports[`Footnote renders closed 1`] = `
   position: relative;
   max-height: calc(100vh - 57px);
   background-color: #f7f7f8;
+  -webkit-transition: height 600ms ease,opacity 500ms ease 200ms;
+  transition: height 600ms ease,opacity 500ms ease 200ms;
   height: auto;
+  opacity: 1;
 }
 
 .c3 {
@@ -192,16 +195,13 @@ exports[`Footnote renders closed 1`] = `
                 >
                   <ol
                     class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c4"
-                    start="3"
                   >
                     <li
                       class="c5"
                     >
                       <span
                         class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
-                      >
-                        Available for new activations and renewals on a 2-year term with any rate plan with a minimum monthly spend of $55/mo. TELUS reserves the right to modify prices and eligible rate plans with this offer at any time without advance notice.
-                      </span>
+                      />
                     </li>
                   </ol>
                 </div>
@@ -282,7 +282,10 @@ exports[`Footnote renders opened 1`] = `
   position: relative;
   max-height: calc(100vh - 57px);
   background-color: #f7f7f8;
+  -webkit-transition: height 600ms ease,opacity 500ms ease 200ms;
+  transition: height 600ms ease,opacity 500ms ease 200ms;
   height: auto;
+  opacity: 1;
 }
 
 .c3 {
@@ -413,16 +416,13 @@ exports[`Footnote renders opened 1`] = `
                 >
                   <ol
                     class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c4"
-                    start="3"
                   >
                     <li
                       class="c5"
                     >
                       <span
                         class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
-                      >
-                        Available for new activations and renewals on a 2-year term with any rate plan with a minimum monthly spend of $55/mo. TELUS reserves the right to modify prices and eligible rate plans with this offer at any time without advance notice.
-                      </span>
+                      />
                     </li>
                   </ol>
                 </div>
