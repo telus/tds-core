@@ -32,7 +32,7 @@ If you're already on V1.y.z of `@telusdigital/tds`, please follow our migration 
 
 #### TDS V0.y.z to V1.0.0 migration
 
-If you're on V0.y.z of `@telusdigital/tds`, please follow our migration guide for [upgrading to v1.y.z](https://github.com/telusdigital/tds-core/releases/tag/v1.0.0).
+If you're on V0.y.z of `@telusdigital/tds`, please follow our migration guide for [upgrading to V1.y.z](https://github.com/telusdigital/tds-core/releases/tag/v1.0.0).
 
 ### References
 

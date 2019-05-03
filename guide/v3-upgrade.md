@@ -6,7 +6,7 @@ We would also like to note that the following document also applies to Community
 
 ## Requirements
 
-To upgrade to TDS V3, your project will need **styled-components 4.1+** and **React 16.8+** installed. These packages are peer dependencies of all TDS V3 components, and lower versions will cause incompatibilities.
+To upgrade to TDS V3, your project will need **styled-components 4.1.x** and **React 16.8.x** installed. These packages are peer dependencies of all TDS V3 components, and lower versions will cause incompatibilities.
 
 ### Upgrading from styled-components V3 to V4
 
