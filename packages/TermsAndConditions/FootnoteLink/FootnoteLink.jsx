@@ -15,8 +15,7 @@ const StyledFootnoteLink = styled.button({
   backgroundColor: 'transparent',
   border: 0,
   textDecoration: 'underline',
-  padding: '0',
-  margin: '0 0 0 0.5rem',
+  padding: '0 0.25rem',
 })
 
 const FootnoteLink = ({ number, onClick }) => {
@@ -48,8 +47,8 @@ const FootnoteLink = ({ number, onClick }) => {
             data-tds-id="footnote-link"
           >
             {numbers[i]}
+            {i !== numbers.length - 1 ? ',' : ''}
           </StyledFootnoteLink>
-          {i !== numbers.length - 1 ? ',' : ''}
         </StyledFootnoteSup>
       ))}
     </>
