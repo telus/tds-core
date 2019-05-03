@@ -56,7 +56,7 @@ jobs:
     executor: builder
     steps:
       - attach
-      - run: npm run test
+      - run: npm run test:lowmemory
 
   e2e:
     executor: browsers

@@ -50,7 +50,8 @@
     "test:u": "npm run test -- -u",
     "test:watch": "npm run test -- --watch",
     "test:quick": "jest -o --config config/jest.config.js",
-    "test": "jest --config config/jest.config.js"
+    "test:lowmemory": "jest --config config/jest.config.js --runInBand",
+    "test": "jest --config config/jest.config.js --runInBand"
   },
   "keywords": [
     "design",
