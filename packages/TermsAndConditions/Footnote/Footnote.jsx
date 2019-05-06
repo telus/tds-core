@@ -72,6 +72,8 @@ const StyledFootnoteHeader = styled.div({
   width: '100%',
 })
 
+const getSpeed = (height, velocity) => height / velocity
+
 const ENTER_EXIT_SPEED = 500
 const CONTENT_CHANGE_SPEED = 500
 
@@ -86,13 +88,24 @@ const StyledFootnoteBody = styled.div(
     }),
   },
   ({ isContentChanging, bodyHeight, contentChangeSpeed }) => {
-    // fade in slower than fade out - 200 out / 500 in
+    const heightSpeed = contentChangeSpeed
+    // fade in slower than fade out
+    // const opacitySpeed = isContentChanging ? contentChangeSpeed / 3 : contentChangeSpeed / 2
+    // const opacityDelay = contentChangeSpeed / 2
+    // const transformSpeed = contentChangeSpeed / 2
+    // const transformDelay = 0 // contentChangeSpeed / 4
+
+    const transitions = [
+      `height ${heightSpeed}ms ease-in`,
+      // `opacity ${opacitySpeed}ms ease ${opacityDelay}ms`,
+      // !isContentChanging && `transform ${transformSpeed}ms ease-in ${transformDelay}ms`,
+    ]
+
     return {
-      transition: `height ${contentChangeSpeed}ms ease-in, opacity ${
-        isContentChanging ? contentChangeSpeed / 3 : contentChangeSpeed / 2
-      }ms ease-in ${contentChangeSpeed / 2}ms`,
+      transition: transitions.join(', '),
       height: bodyHeight,
       opacity: isContentChanging ? 0 : 1,
+      // transform: isContentChanging ? 'translateY(30px)' : 'translateY(0)',
     }
   }
 )
@@ -162,12 +175,12 @@ const Footnote = props => {
         // Assign height to body, allowing it to transition
         setBodyHeight(listRef.current.offsetHeight)
       }
-      // Wait 600ms
-      setTimeout(() => {
-        setData({ content, number }) // replace old content with new content
+      // Wait
+      setTimeout(async () => {
+        await setData({ content, number }) // replace old content with new content
         setBodyHeight(listRef.current.offsetHeight) // Start height animation
         setIsContentChanging(false) // fade in new content
-      }, CONTENT_CHANGE_SPEED)
+      }, 10)
     } else {
       // not chainging content, just set data
       setData({ content, number })
@@ -227,11 +240,11 @@ const Footnote = props => {
               isContentChanging={isContentChanging}
               bodyHeight={bodyHeight}
               contentChangeSpeed={CONTENT_CHANGE_SPEED}
-              onTransitionEnd={e => {
-                if (e.propertyName === 'height') {
-                  setBodyHeight('auto')
-                }
-              }}
+              // onTransitionEnd={e => {
+              //   if (e.propertyName === 'height') {
+              //     setBodyHeight('auto')
+              //   }
+              // }}
             >
               <StyledListContainer ref={listRef}>
                 <FlexGrid>
