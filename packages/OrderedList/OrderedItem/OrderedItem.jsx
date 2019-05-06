@@ -14,7 +14,7 @@ export const StyledOrderedItem = styled.li(({ size }) => ({
   ...(size === 'large' && { ...large, ...largeFont, letterSpacing: 'inherit' }),
 }))
 
-export const StyledOrderedItemText = styled.div(({ size }) => ({
+export const StyledOrderedItemText = styled.span(({ size }) => ({
   ...(size === 'small' && { ...small, ...smallFont }),
   ...(size === 'medium' && { ...medium, ...mediumFont }),
   ...(size === 'large' && { ...large, ...largeFont }),
