@@ -82,12 +82,12 @@ const StyledFootnoteBody = styled.div(
       maxHeight: 'calc(50vh - 57px)',
     }),
   },
-  ({ isContentChanging, bodyHeight, speed }) => {
+  ({ isContentChanging, bodyHeight, contentChangeSpeed }) => {
     // fade in slower than fade out
     return {
-      transition: `height ${speed}ms ease, opacity ${isContentChanging ? 200 : 500}ms ease ${
-        isContentChanging ? 100 : 200
-      }ms`,
+      transition: `height ${contentChangeSpeed}ms ease, opacity ${
+        isContentChanging ? 200 : 500
+      }ms ease ${isContentChanging ? 100 : 200}ms`,
       height: bodyHeight,
       opacity: isContentChanging ? 0 : 1,
     }
@@ -166,9 +166,13 @@ const Footnote = props => {
       (number !== prevProps.number || content !== prevProps.content) &&
       isOpen === prevProps.isOpen
     ) {
-      setIsContentChanging(true)
-      setData({ content: prevProps.content, number: prevProps.number })
+      // Transition from old content to new content START
+      setIsContentChanging(true) // fade out old content
+      setData({ content: prevProps.content, number: prevProps.number }) // TODO: this may not be needed
+      // TODO: Is there a better way to detect listRef with no content?
+      // try checking if content is empty
       if (listRef.current.offsetHeight !== 0) {
+        // Assign height to body, allowing it to transition
         setBodyHeight(listRef.current.offsetHeight)
       }
       setTimeout(() => {
@@ -233,7 +237,7 @@ const Footnote = props => {
             <StyledFootnoteBody
               isContentChanging={isContentChanging}
               bodyHeight={bodyHeight}
-              speed={speed}
+              contentChangeSpeed={speed}
               onTransitionEnd={e => {
                 if (e.propertyName === 'height') {
                   setBodyHeight('auto')
