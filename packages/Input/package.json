@@ -35,6 +35,6 @@
     "@tds/core-standalone-icon": "^1.0.5",
     "@tds/core-text": "^1.0.11",
     "@tds/shared-animation": "^1.1.2",
-    "react-transition-group": "^2.2.1"
+    "react-transition-group": "^4.0.0"
   }
 }
