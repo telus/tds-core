@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 
-export const nestedListSpacing = {
+export const base = {
   '&': {
     paddingLeft: '3rem',
   },
@@ -9,6 +9,10 @@ export const nestedListSpacing = {
     marginTop: '1rem',
     marginBottom: '0.5rem',
   },
+}
+
+export const nestedListSpacing = {
+  ...base,
 
   '& :last-child &': {
     marginBottom: 0,
