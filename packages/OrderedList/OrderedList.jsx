@@ -21,7 +21,7 @@ export const StyledOrderedList = styled(({ size, listStyle, ...rest }) => <Box {
   ({ listStyle }) => ({
     paddingLeft: '3rem',
     listStyleType: listStyleType[listStyle],
-    ...list.nestedListSpacing,
+    ...list.base,
   })
 )
 

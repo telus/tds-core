@@ -39,30 +39,26 @@ exports[`<OrderedList /> can have a list style 1`] = `
   margin-bottom: 0.5rem;
 }
 
-.c1 :last-child .c0 {
-  margin-bottom: 0;
-}
-
 <ol
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
 >
   <li
     class="c2"
   >
-    <div
+    <span
       class="c3"
     >
       Lorem ipsum
-    </div>
+    </span>
   </li>
   <li
     class="c2"
   >
-    <div
+    <span
       class="c3"
     >
       Dolor sit amet
-    </div>
+    </span>
   </li>
 </ol>
 `;
@@ -97,10 +93,6 @@ exports[`<OrderedList /> can have a list style 2`] = `
   margin-bottom: 0.5rem;
 }
 
-.c4 :last-child .c0 {
-  margin-bottom: 0;
-}
-
 .c1 {
   padding-left: 3rem;
   list-style-type: upper-alpha;
@@ -115,30 +107,26 @@ exports[`<OrderedList /> can have a list style 2`] = `
   margin-bottom: 0.5rem;
 }
 
-.c1 :last-child .c0 {
-  margin-bottom: 0;
-}
-
 <ol
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
 >
   <li
     class="c2"
   >
-    <div
+    <span
       class="c3"
     >
       Lorem ipsum
-    </div>
+    </span>
   </li>
   <li
     class="c2"
   >
-    <div
+    <span
       class="c3"
     >
       Dolor sit amet
-    </div>
+    </span>
   </li>
 </ol>
 `;
@@ -182,30 +170,26 @@ exports[`<OrderedList /> renders 1`] = `
   margin-bottom: 0.5rem;
 }
 
-.c1 :last-child .c0 {
-  margin-bottom: 0;
-}
-
 <ol
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
 >
   <li
     class="c2"
   >
-    <div
+    <span
       class="c3"
     >
       Lorem ipsum
-    </div>
+    </span>
   </li>
   <li
     class="c2"
   >
-    <div
+    <span
       class="c3"
     >
       Dolor sit amet
-    </div>
+    </span>
   </li>
 </ol>
 `;
