@@ -39,6 +39,7 @@ export default opts => {
     plugins: [
       nodeResolve({
         extensions: ['.js', '.jsx'],
+        browser: true,
       }),
       commonjs({
         include: '../../node_modules/**',
