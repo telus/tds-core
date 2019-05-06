@@ -37,6 +37,6 @@
     "@tds/core-colours": "^1.1.2",
     "@tds/core-responsive": "^1.2.0",
     "airbnb-prop-types": "^2.8.1",
-    "core-js": "^2.5.3"
+    "core-js": "^3.0.0"
   }
 }
