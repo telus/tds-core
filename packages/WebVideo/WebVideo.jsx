@@ -57,6 +57,7 @@ const WebVideo = ({
     event.target.setVolume(defaultVolume)
     event.target.playVideo() // This plays the video after passing the splash screen on mobile.
   }
+
   return (
     <StyledPlayerContainer
       data-testid="youtubePlayer"
