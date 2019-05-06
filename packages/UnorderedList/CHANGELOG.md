@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@3.0.0...@tds/core-unordered-list@3.0.1) (2019-05-06)
+
+
+### Bug Fixes
+
+* **core-unordered-list:** fix ie 11 object spread issue ([db7f4c0](https://github.com/telusdigital/tds/commit/db7f4c0))
+
+
+
+
+
 # [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@2.1.0...@tds/core-unordered-list@3.0.0) (2019-05-01)
 
 

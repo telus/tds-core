@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/telus/tds-core/compare/@tds/core-web-video@1.0.5...@tds/core-web-video@1.0.6) (2019-05-06)
+
+
+### Bug Fixes
+
+* **core-web-video:** address rollup build issue ([292ab96](https://github.com/telus/tds-core/commit/292ab96))
+
+
+
+
+
 ## [1.0.5](https://github.com/telus/tds-core/compare/@tds/core-web-video@1.0.4...@tds/core-web-video@1.0.5) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-web-video

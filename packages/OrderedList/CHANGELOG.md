@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.20](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.19...@tds/core-ordered-list@2.0.20) (2019-05-06)
+
+
+### Bug Fixes
+
+* **core-ordered-list:** use typography styles directly ([1a42884](https://github.com/telusdigital/tds/commit/1a42884))
+
+
+
+
+
 ## [2.0.19](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.18...@tds/core-ordered-list@2.0.19) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-ordered-list

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@1.0.17...@tds/core-button-group@2.0.0) (2019-05-06)
+
+
+### Features
+
+* **core-button-group:** upgrade to styled components ([5f358fd](https://github.com/telusdigital/tds-core/commit/5f358fd))
+
+
+### BREAKING CHANGES
+
+* **core-button-group:** styled components 4.1.3 and react 16.8.2 are peer dependencies
+
+
+
+
+
 ## [1.0.17](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@1.0.16...@tds/core-button-group@1.0.17) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-button-group
