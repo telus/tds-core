@@ -8,6 +8,19 @@ We would also like to note that the following document also applies to Community
 
 To upgrade to TDS V3, your project will need **styled-components 4.1.x** and **React 16.8.x** installed. These packages are peer dependencies of all TDS V3 components, and lower versions will cause incompatibilities.
 
+If your project utilizes Global Elements, please note that V2 of the Global Elements endpoint is now available. This version runs off of styled-components 4.1.x and is recommended for use with TDS V3 for best page performance.
+
+### Upgrading from CSS Modules to styled-components
+
+When switching your project over from CSS Modules to styled-components, some cleanup can be performed to reduce bloat and increase the ease of use of styled-components. TDS recommends assessing your project for configurations or packages that enable the use of SCSS, and removing them if they are no longer required. This includes, but is not limited to:
+
+- Removing scss-specific items from build and test suite configurations
+- Removing scss-specific packages, such as node-sass
+- Install [babel-plugin-styled-components](https://www.npmjs.com/package/babel-plugin-styled-components) and add it to your Babel config to enable the use of styled-components
+- Install [jest-styled-components](https://github.com/styled-components/jest-styled-components) for extended functionality when using styled-components with Jest tests
+
+More cleanup/additions may be required. Please review your configurations and dependencies carefully to be sure that all your needs are met.
+
 ### Upgrading from styled-components V3 to V4
 
 The styled-components team has provided a codemod to make the upgrade process from V3 to V4 as fast as possible. It can be accessed on the [styled-components-codemods project on GitHub](https://github.com/styled-components/styled-components-codemods). If you would like more information on the changes and improvements made from V3 to V4, check out the [styled-components V4 announcement](https://medium.com/styled-components/announcing-styled-components-v4-better-faster-stronger-3fe1aba1a112).
