@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -77,32 +77,17 @@ const StyledFootnoteBody = styled.div(
     overflow: 'auto',
     position: 'relative',
     maxHeight: 'calc(100vh - 57px)',
+    transition: 'height 500ms ease-out, opacity 300ms',
+    transform: 'translateZ(0)',
     backgroundColor: colorAthensGrey,
     ...media.from('md').css({
       maxHeight: 'calc(50vh - 57px)',
     }),
   },
-  ({ isContentChanging, bodyHeight, contentChangeSpeed }) => {
-    const heightSpeed = contentChangeSpeed
-    // fade in slower than fade out
-    // const opacitySpeed = isContentChanging ? contentChangeSpeed / 3 : contentChangeSpeed / 2
-    // const opacityDelay = contentChangeSpeed / 2
-    // const transformSpeed = contentChangeSpeed / 2
-    // const transformDelay = 0 // contentChangeSpeed / 4
-
-    const transitions = [
-      `height ${heightSpeed}ms ease-in`,
-      // `opacity ${opacitySpeed}ms ease ${opacityDelay}ms`,
-      // !isContentChanging && `transform ${transformSpeed}ms ease-in ${transformDelay}ms`,
-    ]
-
-    return {
-      transition: transitions.join(', '),
-      height: bodyHeight,
-      opacity: isContentChanging ? 0 : 1,
-      // transform: isContentChanging ? 'translateY(30px)' : 'translateY(0)',
-    }
-  }
+  ({ bodyHeight, isTextVisible }) => ({
+    height: bodyHeight,
+    opacity: isTextVisible ? 1 : 0,
+  })
 )
 
 const StyledListContainer = styled.div({
@@ -116,12 +101,25 @@ const StyledListContainer = styled.div({
 
 const FocusTrap = withFocusTrap('div')
 
+const usePrevious = value => {
+  const ref = useRef()
+  useEffect(() => {
+    ref.current = value
+  })
+  return ref.current
+}
+
 const Footnote = props => {
   const { copy, number, content, returnRef, onClose, isOpen } = props
   const closeRef = useRef(null)
   const footnoteRef = useRef(null)
   const headerRef = useRef(null)
   const listRef = useRef(null)
+  const [data, setData] = useState({ content: null, number: null })
+  const [bodyHeight, setBodyHeight] = useState('auto')
+  const [isTextVisible, setIsTextVisible] = useState(true)
+
+  const prevProps = usePrevious(props)
 
   const closeFootnote = e => {
     returnRef.current.focus()
@@ -141,6 +139,25 @@ const Footnote = props => {
       closeFootnote(e)
     }
   }
+
+  const changeHeight = () => {
+    const oldHeight = listRef.current.offsetHeight
+    setBodyHeight(oldHeight)
+    setIsTextVisible(false)
+  }
+
+  const handleTransitionEnd = async e => {
+    if (e.propertyName === 'opacity' && !isTextVisible) {
+      await setData({ content, number })
+      const halfPageHeight = window.innerHeight * 0.5 - 57
+      const newHeight = listRef.current.offsetHeight
+      await setBodyHeight(newHeight > halfPageHeight ? halfPageHeight : newHeight)
+    } else if (e.propertyName === 'height' && !isTextVisible) {
+      console.log('height transition end')
+      setIsTextVisible(true)
+    }
+  }
+
   // focus the close button on mount
   useEffect(() => {
     if (isOpen && closeRef && closeRef.current !== null) {
@@ -161,6 +178,18 @@ const Footnote = props => {
       }
     }
   }, [isOpen])
+
+  useEffect(() => {
+    if (
+      prevProps &&
+      (number !== prevProps.number || content !== prevProps.content) &&
+      isOpen === prevProps.isOpen
+    ) {
+      changeHeight()
+    } else {
+      setData({ content, number })
+    }
+  }, [content, number])
 
   return (
     <Transition in={isOpen} timeout={500}>
@@ -190,14 +219,18 @@ const Footnote = props => {
               </Box>
               <Responsive maxWidth="md" render={() => <HairlineDivider />} />
             </StyledFootnoteHeader>
-            <StyledFootnoteBody>
+            <StyledFootnoteBody
+              bodyHeight={bodyHeight}
+              isTextVisible={isTextVisible}
+              onTransitionEnd={handleTransitionEnd}
+            >
               <StyledListContainer ref={listRef}>
                 <FlexGrid>
                   <FlexGrid.Row>
                     <FlexGrid.Col xs={12} md={11}>
-                      <List start={number}>
+                      <List start={data.number}>
                         <List.Item>
-                          <Text>{content}</Text>
+                          <Text>{data.content}</Text>
                         </List.Item>
                       </List>
                     </FlexGrid.Col>
