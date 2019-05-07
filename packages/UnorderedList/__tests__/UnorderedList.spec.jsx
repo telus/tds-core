@@ -8,7 +8,7 @@ describe('<UnorderedList />', () => {
     render(
       <UnorderedList {...overrides}>
         <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>
-        {false && <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>}
+        {undefined && <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>}
         <UnorderedList.Item>Dolor sit amet</UnorderedList.Item>
       </UnorderedList>
     )
@@ -17,7 +17,7 @@ describe('<UnorderedList />', () => {
     shallow(
       <UnorderedList {...overrides}>
         <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>
-        {false && <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>}
+        {undefined && <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>}
         <UnorderedList.Item>Dolor sit amet</UnorderedList.Item>
       </UnorderedList>
     )
@@ -26,7 +26,7 @@ describe('<UnorderedList />', () => {
     mount(
       <UnorderedList {...overrides}>
         <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>
-        {false && <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>}
+        {undefined && <UnorderedList.Item>Lorem ipsum</UnorderedList.Item>}
         <UnorderedList.Item>Dolor sit amet</UnorderedList.Item>
       </UnorderedList>
     )
