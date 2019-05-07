@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -72,11 +72,6 @@ const StyledFootnoteHeader = styled.div({
   width: '100%',
 })
 
-const getSpeed = (height, velocity) => height / velocity
-
-const ENTER_EXIT_SPEED = 500
-const CONTENT_CHANGE_SPEED = 500
-
 const StyledFootnoteBody = styled.div(
   {
     overflow: 'auto',
@@ -121,25 +116,12 @@ const StyledListContainer = styled.div({
 
 const FocusTrap = withFocusTrap('div')
 
-const usePrevious = value => {
-  const ref = useRef()
-  useEffect(() => {
-    ref.current = value
-  })
-  return ref.current
-}
-
 const Footnote = props => {
   const { copy, number, content, returnRef, onClose, isOpen } = props
   const closeRef = useRef(null)
   const footnoteRef = useRef(null)
   const headerRef = useRef(null)
   const listRef = useRef(null)
-  const [isContentChanging, setIsContentChanging] = useState(false)
-  const [data, setData] = useState({})
-  const [bodyHeight, setBodyHeight] = useState('auto')
-
-  const prevProps = usePrevious(props)
 
   const closeFootnote = e => {
     returnRef.current.focus()
@@ -159,34 +141,6 @@ const Footnote = props => {
       closeFootnote(e)
     }
   }
-
-  // detect a change in Footnote content/number (clicking a FootnoteLink while a Footnote is already open)
-  useEffect(() => {
-    if (
-      prevProps &&
-      (number !== prevProps.number || content !== prevProps.content) &&
-      isOpen === prevProps.isOpen
-    ) {
-      // Transition from old content to new content START
-      setIsContentChanging(true) // fade out old content
-      // TODO: Is there a better way to detect listRef with no content?
-      // try checking if content is empty
-      if (listRef.current.offsetHeight !== 0) {
-        // Assign height to body, allowing it to transition
-        setBodyHeight(listRef.current.offsetHeight)
-      }
-      // Wait
-      setTimeout(async () => {
-        await setData({ content, number }) // replace old content with new content
-        setBodyHeight(listRef.current.offsetHeight) // Start height animation
-        setIsContentChanging(false) // fade in new content
-      }, 10)
-    } else {
-      // not chainging content, just set data
-      setData({ content, number })
-    }
-  }, [number, content])
-
   // focus the close button on mount
   useEffect(() => {
     if (isOpen && closeRef && closeRef.current !== null) {
@@ -209,7 +163,7 @@ const Footnote = props => {
   }, [isOpen])
 
   return (
-    <Transition in={isOpen} timeout={ENTER_EXIT_SPEED}>
+    <Transition in={isOpen} timeout={500}>
       {state => (
         <StyledFootnote ref={footnoteRef} state={state}>
           <FocusTrap>
@@ -236,23 +190,14 @@ const Footnote = props => {
               </Box>
               <Responsive maxWidth="md" render={() => <HairlineDivider />} />
             </StyledFootnoteHeader>
-            <StyledFootnoteBody
-              isContentChanging={isContentChanging}
-              bodyHeight={bodyHeight}
-              contentChangeSpeed={CONTENT_CHANGE_SPEED}
-              // onTransitionEnd={e => {
-              //   if (e.propertyName === 'height') {
-              //     setBodyHeight('auto')
-              //   }
-              // }}
-            >
+            <StyledFootnoteBody>
               <StyledListContainer ref={listRef}>
                 <FlexGrid>
                   <FlexGrid.Row>
                     <FlexGrid.Col xs={12} md={11}>
-                      <List start={data.number}>
+                      <List start={number}>
                         <List.Item>
-                          <Text>{data.content}</Text>
+                          <Text>{content}</Text>
                         </List.Item>
                       </List>
                     </FlexGrid.Col>
