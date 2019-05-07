@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.1.0...@tds/shared-styles@1.2.0) (2019-05-07)
+
+
+### Features
+
+* **shared-styles:** add base list style export ([0f5e06c](https://github.com/telusdigital/tds/commit/0f5e06c))
+
+
+
+
+
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.0.2...@tds/shared-styles@1.1.0) (2019-05-01)
 
 

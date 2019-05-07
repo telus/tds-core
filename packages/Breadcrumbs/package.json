@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-breadcrumbs",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@tds/core-colours": "^1.1.2",
-    "@tds/core-link": "^2.0.2",
+    "@tds/core-link": "^2.0.3",
     "@tds/core-responsive": "^1.2.0",
     "@tds/core-text": "^1.0.11",
     "@tds/shared-typography": "^1.2.3",

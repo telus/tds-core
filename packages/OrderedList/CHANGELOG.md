@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.20...@tds/core-ordered-list@3.0.0) (2019-05-07)
+
+
+### Features
+
+* **core-ordered-list:** upgrade to styled-components ([fe0323c](https://github.com/telusdigital/tds/commit/fe0323c))
+
+
+### BREAKING CHANGES
+
+* **core-ordered-list:** upgrade to styled-components
+
+
+
+
+
 ## [2.0.20](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@2.0.19...@tds/core-ordered-list@2.0.20) (2019-05-06)
 
 

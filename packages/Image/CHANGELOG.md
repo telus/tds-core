@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.6](https://github.com/telusdigital/tds/compare/@tds/core-image@2.0.5...@tds/core-image@2.0.6) (2019-05-07)
+
+**Note:** Version bump only for package @tds/core-image
+
+
+
+
+
 ## [2.0.5](https://github.com/telusdigital/tds/compare/@tds/core-image@2.0.4...@tds/core-image@2.0.5) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-image
