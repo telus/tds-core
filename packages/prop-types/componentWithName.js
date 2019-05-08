@@ -3,7 +3,7 @@ const componentWithName = (passedName, checkDisplayName) => {
     throw new Error('passedName must be a string')
   }
   const checkProp = (props, propName, componentName) => {
-    if (typeof props[propName] === 'undefined') {
+    if (typeof props[propName] === 'undefined' || props[propName] === null) {
       return undefined
     }
 
@@ -25,7 +25,9 @@ const componentWithName = (passedName, checkDisplayName) => {
         (checkDisplayName && props[propName].displayName !== passedName))
 
     if (
-      (typeof props[propName] !== 'object' && typeof props[propName] !== 'function') ||
+      (props[propName] &&
+        typeof props[propName] !== 'object' &&
+        typeof props[propName] !== 'function') ||
       testNameInObject() ||
       testNameInFunction()
     ) {
