@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 import DecorativeIcon from '@tds/core-decorative-icon'
@@ -11,8 +11,6 @@ import { Reveal, Translate } from '@tds/shared-animation'
 
 import Clickable from '../../../shared/components/Clickable/Clickable'
 import Flexbox from '../../../shared/components/Flexbox/Flexbox'
-
-import Panel from '../Panel/Panel'
 
 import joinClassNames from '../../../shared/utils/joinClassNames'
 
@@ -208,7 +206,7 @@ PanelWrapper.propTypes = {
   open: PropTypes.bool,
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
   onClick: PropTypes.func.isRequired,
-  children: childrenOfType(Panel).isRequired,
+  children: componentWithName('Panel').isRequired,
 }
 
 PanelWrapper.defaultProps = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
+import { componentWithName } from '@tds/util-prop-types'
 
 import Panels from '../Panels'
 import Panel from '../Panel/Panel'
@@ -73,7 +73,7 @@ Accordion.propTypes = {
   /**
    * The expandable panels. Must be at least one `Accordion.Panel`.
    */
-  children: childrenOfType(Panel).isRequired,
+  children: componentWithName('Panel').isRequired,
 }
 
 Accordion.defaultProps = {

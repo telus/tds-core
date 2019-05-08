@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { childrenOfType } from 'airbnb-prop-types'
-
-import arrayFrom from 'core-js/fn/array/from'
+import { componentWithName } from '@tds/util-prop-types'
 
 import { isEqual } from '../../shared/utils/sets'
 
@@ -44,7 +42,7 @@ class ExpandCollapse extends React.Component {
       },
       () => {
         if (onToggle) {
-          onToggle(arrayFrom(this.state.openPanels))
+          onToggle(Array.from(this.state.openPanels))
         }
       }
     )
@@ -87,7 +85,7 @@ ExpandCollapse.propTypes = {
   /**
    * The expandable panels. Must be at least one `ExpandCollapse.Panel`.
    */
-  children: childrenOfType(Panel).isRequired,
+  children: componentWithName('Panel').isRequired,
 }
 
 ExpandCollapse.defaultProps = {
