@@ -20,8 +20,8 @@ const copyDict = {
     close: 'close',
   },
   fr: {
-    heading: 'Terms and conditionsFR',
-    close: 'closeFR',
+    heading: 'Modalités et conditions',
+    close: 'fermer',
   },
 }
 
