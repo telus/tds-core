@@ -1,5 +1,7 @@
 ### Usage criteria
 
+- Appears before global element footer, with the exception of the CTA call back cards
+
 ```jsx
 <TermsAndConditions
   copy="en"

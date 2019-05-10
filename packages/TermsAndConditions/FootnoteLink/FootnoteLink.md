@@ -30,6 +30,7 @@
         bottomText={
           <span>
             $68 /month after 3 months
+            <br />
             <FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />
           </span>
         }
@@ -46,6 +47,7 @@
         bottomText={
           <span>
             $68 /month after 3 months
+            <br />
             <FootnoteLink
               number={[1, 2, 3, 7, 8, 10, 19]}
               onClick={(number, ref) => {}}

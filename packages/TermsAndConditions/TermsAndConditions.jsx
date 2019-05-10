@@ -21,8 +21,8 @@ const defaultCopy = {
     headingOpened: 'Hide terms and conditions',
   },
   fr: {
-    headingClosed: 'View terms and conditionsFR',
-    headingOpened: 'Hide terms and conditionsFR',
+    headingClosed: 'Voir les modalités et conditions',
+    headingOpened: 'Masquer les modalités et conditions',
   },
 }
 

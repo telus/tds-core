@@ -8,10 +8,10 @@ import A11yContent from '@tds/core-a11y-content'
 
 const copyDict = {
   en: {
-    a11yLabel: 'Terms and conditions',
+    a11yLabel: 'Read legal footnote',
   },
   fr: {
-    a11yLabel: 'Terms and conditionsFR',
+    a11yLabel: 'Lire la note de bas de page légale',
   },
 }
 
