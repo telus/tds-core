@@ -36,6 +36,7 @@ exports[`TermsAndConditions renders 1`] = `
   -ms-letter-spacing: -0.6px;
   letter-spacing: -0.6px;
   line-height: 1.42857;
+  padding-left: 2rem;
 }
 
 .c1 {
@@ -83,14 +84,8 @@ exports[`TermsAndConditions renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c7 {
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width:768px) {
   .c6 {
-    margin-left: -2rem;
+    padding-left: 1rem;
   }
 }
 
@@ -182,13 +177,13 @@ exports[`TermsAndConditions renders 1`] = `
         style="transform:translateY(1rem);transition:transform 150ms"
       >
         <div
-          class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+          class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
         >
           <div
             class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
           >
             <div
-              class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+              class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
             >
               <ol
                 class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
@@ -263,6 +258,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
   -ms-letter-spacing: -0.6px;
   letter-spacing: -0.6px;
   line-height: 1.42857;
+  padding-left: 2rem;
 }
 
 .c1 {
@@ -316,14 +312,8 @@ exports[`TermsAndConditions renders expanded 1`] = `
 }
 
 @media (min-width:768px) {
-  .c7 {
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width:768px) {
   .c6 {
-    margin-left: -2rem;
+    padding-left: 1rem;
   }
 }
 
@@ -752,20 +742,20 @@ exports[`TermsAndConditions renders expanded 1`] = `
                   }
                 >
                   <FlexGrid
-                    gutter={true}
-                    limitWidth={true}
+                    gutter={false}
+                    limitWidth={false}
                   >
                     <Broadcast
                       channel="flex-grid"
                       compareValues={[Function]}
-                      value={true}
+                      value={false}
                     >
                       <Grid
-                        className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+                        className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
                         fluid={true}
                       >
                         <div
-                          className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                          className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
                         >
                           <Row>
                             <Row
@@ -784,13 +774,13 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                     quiet={false}
                                   >
                                     <Col
-                                      className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                      className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
                                       md={10}
                                       mdOffset={1}
                                       xs={12}
                                     >
                                       <div
-                                        className="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                        className="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
                                       >
                                         <List
                                           below={4}
@@ -804,8 +794,8 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                 "isStatic": true,
                                                 "lastClassName": "c6",
                                                 "rules": Array [
-                                                  "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; @media (min-width: 768px) {
-  margin-left: -2rem;
+                                                  "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
+  padding-left: 1rem;
 }",
                                                 ],
                                               },
@@ -838,8 +828,8 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                     "isStatic": true,
                                                     "lastClassName": "c6",
                                                     "rules": Array [
-                                                      "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; @media (min-width: 768px) {
-  margin-left: -2rem;
+                                                      "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
+  padding-left: 1rem;
 }",
                                                     ],
                                                   },
@@ -882,9 +872,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
-} padding-left: 1rem; @media (min-width: 768px) {
-  padding-left: 2rem;
-}",
+} padding-left: 1rem;",
                                                           ],
                                                         },
                                                         "displayName": "List__StyledListItem",
@@ -911,9 +899,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
-} padding-left: 1rem; @media (min-width: 768px) {
-  padding-left: 2rem;
-}",
+} padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -951,9 +937,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
-} padding-left: 1rem; @media (min-width: 768px) {
-  padding-left: 2rem;
-}",
+} padding-left: 1rem;",
                                                           ],
                                                         },
                                                         "displayName": "List__StyledListItem",
@@ -980,9 +964,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
-} padding-left: 1rem; @media (min-width: 768px) {
-  padding-left: 2rem;
-}",
+} padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -1020,9 +1002,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
-} padding-left: 1rem; @media (min-width: 768px) {
-  padding-left: 2rem;
-}",
+} padding-left: 1rem;",
                                                           ],
                                                         },
                                                         "displayName": "List__StyledListItem",
@@ -1049,9 +1029,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
-} padding-left: 1rem; @media (min-width: 768px) {
-  padding-left: 2rem;
-}",
+} padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",

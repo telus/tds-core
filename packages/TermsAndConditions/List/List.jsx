@@ -12,17 +12,15 @@ export const StyledListItem = styled.li({
     ...smallFont,
   },
   paddingLeft: '1rem',
-  ...media.from('md').css({
-    paddingLeft: '2rem',
-  }),
 })
 
 export const StyledList = styled(Box)({
   listStyle: 'decimal',
   ...boldFont,
   ...sizeSmall,
+  paddingLeft: '2rem',
   ...media.from('md').css({
-    marginLeft: '-2rem',
+    paddingLeft: '1rem',
   }),
 })
 
