@@ -6,7 +6,13 @@ A stand-alone checkbox is used for a single option that the user can turn on or 
 
 For information on how to use disabled Checkboxes, please refer to the [disabled form component](#form-disabled-state) guidelines.
 
-<a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" target="_blank">Reference</a>
+[Reference](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
+
+### Uncontrolled Checkbox
+
+By default, `Checkbox` will act just as an HTML `input` with the type of `checkbox` will act. It will be uncontrolled by the app itself, and its value can be accessed by referencing the element.
+
+_Note:_ If no `id` is provided, a default `id` will be generated in the format of: "`name`\_`value`"
 
 ```jsx
 <Box tag="fieldset" between={2}>
@@ -22,6 +28,46 @@ For information on how to use disabled Checkboxes, please refer to the [disabled
 </Box>
 ```
 
+### Controlled Checkbox
+
+If it is required that the `Checkbox` be controlled by application state or other external methods, that can be done as well. A `checked` prop must be passed to each `Checkbox` that needs to be controlled. Additionally, if the user is meant to select the `Checkbox` by hand, an `onChange` must be provided. If the `Checkbox` should not be changed by user input, a `readOnly` prop must be provided.
+
+```jsx
+initialState = {
+  consumerSelected: false,
+  businessSelected: false,
+}
+
+const handleCheck = event => {
+  if (event.target.value === 'consumer') {
+    setState({ consumerSelected: event.target.checked })
+  } else if (event.target.value === 'business') {
+    setState({ businessSelected: event.target.checked })
+  }
+}
+;<Box tag="fieldset" between={2}>
+  <legend>
+    <Text bold size="medium">
+      Filter products:
+    </Text>
+  </legend>
+  <Checkbox
+    checked={state.consumerSelected}
+    onChange={handleCheck}
+    name="products"
+    value="consumer"
+    label="Consumer"
+  />
+  <Checkbox
+    checked={state.businessSelected}
+    onChange={handleCheck}
+    name="products"
+    value="business"
+    label="Business"
+  />
+</Box>
+```
+
 ### Getting feedback for an unchecked checkbox
 
 Use the feedback and error props to give the user feedback regarding a missed checkbox by highlighting the label, checkbox element and adding an error message stating how to proceed.
@@ -30,26 +76,24 @@ Use the feedback and error props to give the user feedback regarding a missed ch
 const message = 'Please agree to the terms and conditions'
 
 initialState = {
-  checked: false,
   feedback: 'error',
   message: message,
 }
 
 const handleCheck = event => {
   if (event.target.checked) {
-    setState({ checked: true, feedback: undefined, message: undefined })
+    setState({ feedback: undefined, message: undefined })
   } else {
-    setState({ checked: false, feedback: 'error', message: message })
+    setState({ feedback: 'error', message: message })
   }
 }
 
-<Checkbox
+;<Checkbox
   name="terms"
   value="agree"
   label="I agree to the terms and conditions"
   feedback={state.feedback}
   error={state.message}
   onChange={handleCheck}
-  checked={state.checked}
 />
 ```
