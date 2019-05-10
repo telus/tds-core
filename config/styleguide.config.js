@@ -276,18 +276,6 @@ module.exports = {
         },
         {
           name: 'Content',
-          sections: [
-            {
-              name: 'Terms and Conditions',
-              components() {
-                return [
-                  path.resolve('packages/TermsAndConditions/TermsAndConditions.jsx'),
-                  path.resolve('packages/TermsAndConditions/Footnote/Footnote.jsx'),
-                  path.resolve('packages/TermsAndConditions/FootnoteLink/FootnoteLink.jsx'),
-                ]
-              },
-            },
-          ],
           components() {
             return [
               path.resolve('packages/Card/Card.jsx'),
@@ -305,6 +293,16 @@ module.exports = {
               path.resolve('packages/Notification/Notification.jsx'),
               path.resolve('packages/Spinner/Spinner.jsx'),
               path.resolve('packages/StepTracker/StepTracker.jsx'),
+            ]
+          },
+        },
+        {
+          name: 'Terms and Conditions',
+          components() {
+            return [
+              path.resolve('packages/TermsAndConditions/TermsAndConditions.jsx'),
+              path.resolve('packages/TermsAndConditions/Footnote/Footnote.jsx'),
+              path.resolve('packages/TermsAndConditions/FootnoteLink/FootnoteLink.jsx'),
             ]
           },
         },
