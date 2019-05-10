@@ -1,9 +1,6 @@
 import React from 'react'
-import { mount, render } from 'enzyme'
+import { shallow, mount, render } from 'enzyme'
 
-import Text from '@tds/core-text'
-import Paragraph from '@tds/core-paragraph'
-import DecorativeIcon from '@tds/core-decorative-icon'
 import InputFeedback from '@tds/core-input-feedback'
 import Checkbox from '../Checkbox'
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
@@ -14,14 +11,27 @@ describe('Checkbox', () => {
     name: 'the-group-name',
     value: 'the-value',
   }
-  const doMount = (overrides = {}) => {
-    const checkbox = mount(<Checkbox {...defaultProps} {...overrides} />)
 
-    const findCheckboxElement = () => checkbox.find('input')
+  const doShallow = (overrides = {}) => {
+    const checkbox = shallow(<Checkbox {...defaultProps} {...overrides} />)
+
+    const findLabelElement = () => checkbox.find('[data-testid="checkbox-label"]')
 
     return {
       checkbox,
-      label: checkbox.find('label'),
+      label: checkbox.find('[data-testid="checkbox-label"]').find('div'),
+      findLabelElement,
+      clickLabel: () => findLabelElement().simulate('click'),
+    }
+  }
+  const doMount = (overrides = {}) => {
+    const checkbox = mount(<Checkbox {...defaultProps} {...overrides} />)
+
+    const findCheckboxElement = () => checkbox.find('[data-testid="hidden-input"]').find('input')
+
+    return {
+      checkbox,
+      label: checkbox.find('[data-testid="checkbox-label"]').find('div'),
       findCheckboxElement,
       findFakeCheckbox: () => checkbox.find('[data-testid="fake-input"]'),
       findColoredLabel: () => checkbox.find(ColoredTextProvider),
@@ -48,7 +58,7 @@ describe('Checkbox', () => {
   it('must have a label', () => {
     const { label } = doMount({ label: 'Some label' })
 
-    expect(label).toContainReact(<Text size="medium">Some label</Text>)
+    expect(label).toMatchSnapshot()
   })
 
   it('must have a name and a value', () => {
@@ -61,75 +71,50 @@ describe('Checkbox', () => {
   it('has a fake checkbox', () => {
     const { findFakeCheckbox } = doMount()
 
-    expect(findFakeCheckbox()).toHaveClassName('fakeCheckbox')
+    expect(findFakeCheckbox()).toMatchSnapshot()
   })
 
   describe('connecting the label to the checkbox', () => {
     it('connects the label to the checkbox', () => {
-      const { label, findCheckboxElement } = doMount()
+      const { findCheckboxElement } = doMount()
+      const { findLabelElement } = doShallow()
 
-      expect(label.prop('htmlFor')).toEqual(findCheckboxElement().prop('id'))
+      expect(findLabelElement().prop('htmlFor')).toEqual(findCheckboxElement().prop('id'))
     })
 
     it('uses the id when provided', () => {
-      const { label, findCheckboxElement } = doMount({
+      const { findCheckboxElement } = doMount({
+        id: 'the-id',
+        name: 'the-checkbox-group',
+        value: 'the-value',
+      })
+      const { findLabelElement } = doShallow({
         id: 'the-id',
         name: 'the-checkbox-group',
         value: 'the-value',
       })
 
-      expect(label).toHaveProp('htmlFor', 'the-id')
+      expect(findLabelElement()).toHaveProp('htmlFor', 'the-id')
       expect(findCheckboxElement()).toHaveProp('id', 'the-id')
     })
 
     it('uses the name and the value when no id is provided', () => {
-      const { label, findCheckboxElement } = doMount({
+      const { findCheckboxElement } = doMount({
         name: 'the-checkbox-group',
         value: 'the-value',
       })
 
-      expect(label).toHaveProp('htmlFor', 'the-checkbox-group_the-value')
+      const { findLabelElement } = doShallow({
+        name: 'the-checkbox-group',
+        value: 'the-value',
+      })
+
+      expect(findLabelElement()).toHaveProp('htmlFor', 'the-checkbox-group_the-value')
       expect(findCheckboxElement()).toHaveProp('id', 'the-checkbox-group_the-value')
     })
   })
 
   describe('interactivity', () => {
-    it('can be unchecked', () => {
-      const { findCheckboxElement, findFakeCheckbox } = doMount({ checked: false })
-
-      expect(findCheckboxElement()).toHaveProp('checked', false)
-      expect(findFakeCheckbox()).toHaveClassName('unchecked')
-      expect(findFakeCheckbox().find(DecorativeIcon)).not.toExist()
-    })
-
-    it('can be checked', () => {
-      const { findCheckboxElement, findFakeCheckbox } = doMount({ checked: true })
-
-      expect(findCheckboxElement()).toHaveProp('checked', true)
-      expect(findFakeCheckbox()).toHaveClassName('checked')
-      expect(findFakeCheckbox()).toContainReact(
-        <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
-      )
-    })
-
-    it('checks and unchecks when clicking', () => {
-      const { findCheckboxElement, findFakeCheckbox, check, uncheck } = doMount()
-
-      check()
-
-      expect(findCheckboxElement()).toHaveProp('checked', true)
-      expect(findFakeCheckbox()).toHaveClassName('checked')
-      expect(findFakeCheckbox()).toContainReact(
-        <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
-      )
-
-      uncheck()
-
-      expect(findCheckboxElement()).toHaveProp('checked', false)
-      expect(findFakeCheckbox()).toHaveClassName('unchecked')
-      expect(findFakeCheckbox().find(DecorativeIcon)).not.toExist()
-    })
-
     it('notifies when it is checked or unchecked', () => {
       const onChangeMock = jest.fn()
       const { check, uncheck } = doMount({ onChange: onChangeMock })
@@ -146,7 +131,7 @@ describe('Checkbox', () => {
     })
 
     it('can receive a new value from a parent component', () => {
-      const { checkbox, findCheckboxElement } = doMount({ checked: false })
+      const { checkbox, findCheckboxElement } = doMount({ checked: false, readOnly: true })
 
       checkbox.setProps({ checked: true })
 
@@ -159,11 +144,10 @@ describe('Checkbox', () => {
       const { findFakeCheckbox, focus, blur } = doMount()
 
       focus()
-      expect(findFakeCheckbox()).toHaveClassName('focused unchecked')
+      expect(findFakeCheckbox()).toMatchSnapshot()
 
       blur()
-      expect(findFakeCheckbox()).not.toHaveClassName('focused')
-      expect(findFakeCheckbox()).toHaveClassName('unchecked')
+      expect(findFakeCheckbox()).toMatchSnapshot()
     })
 
     it('will notify when focus is gained', () => {
@@ -194,9 +178,8 @@ describe('Checkbox', () => {
         feedback: 'error',
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText ieFullWidth')
-      expect(findFakeCheckbox()).toHaveClassName('error')
-      expect(findFakeCheckbox()).not.toHaveClassName('unchecked')
+      expect(findColoredLabel()).toMatchSnapshot()
+      expect(findFakeCheckbox()).toMatchSnapshot()
     })
 
     it('can have an error message', () => {
@@ -206,28 +189,20 @@ describe('Checkbox', () => {
         error: 'Error message',
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText ieFullWidth')
-      expect(findFakeCheckbox()).toHaveClassName('error')
-      expect(findFakeCheckbox()).not.toHaveClassName('unchecked')
-      expect(findErrorMessage()).toContainReact(
-        <InputFeedback id="the-group-namethe-value_error-message" feedback="error">
-          <Paragraph size="small">Error message</Paragraph>
-        </InputFeedback>
-      )
+      expect(findColoredLabel()).toMatchSnapshot()
+      expect(findFakeCheckbox()).toMatchSnapshot()
+      expect(findErrorMessage()).toMatchSnapshot()
     })
 
     it('does not appear as an error when it is checked', () => {
-      const { findFakeCheckbox, findColoredLabel, check } = doMount({
+      const { findFakeCheckbox, check } = doMount({
         label: 'Some error',
         feedback: 'error',
-        checked: false,
       })
 
       check()
 
-      expect(findColoredLabel()).not.toExist()
-      expect(findFakeCheckbox()).toHaveClassName('checked')
-      expect(findFakeCheckbox()).not.toHaveClassName('error')
+      expect(findFakeCheckbox()).toMatchSnapshot()
     })
   })
 
@@ -238,9 +213,9 @@ describe('Checkbox', () => {
         disabled: true,
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText ieFullWidth')
+      expect(findColoredLabel()).toMatchSnapshot()
       expect(findCheckboxElement()).toHaveProp('disabled', true)
-      expect(findFakeCheckbox()).toHaveClassName('disabled')
+      expect(findFakeCheckbox()).toMatchSnapshot()
     })
 
     it('can be disabled and checked', () => {
@@ -248,11 +223,12 @@ describe('Checkbox', () => {
         label: 'A label',
         disabled: true,
         checked: true,
+        readOnly: true,
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText ieFullWidth')
+      expect(findColoredLabel()).toMatchSnapshot()
       expect(findCheckboxElement()).toHaveProp('disabled', true)
-      expect(findFakeCheckbox()).toHaveClassName('disabledChecked')
+      expect(findFakeCheckbox()).toMatchSnapshot()
     })
   })
 
@@ -275,6 +251,7 @@ describe('Checkbox', () => {
       const { findCheckboxElement } = doMount({
         id: 'some-field-id',
         error: 'An error message',
+        feedback: 'error',
       })
 
       expect(findCheckboxElement()).toHaveProp('aria-describedby', 'some-field-id_error-message')
