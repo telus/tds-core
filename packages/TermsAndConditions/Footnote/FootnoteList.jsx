@@ -17,7 +17,7 @@ const StyledFootnoteList = styled(StyledList)({
   ...sizeMedium,
   marginLeft: '1rem',
   ...media.from('md').css({
-    marginLeft: '1rem',
+    marginLeft: 0,
   }),
 })
 

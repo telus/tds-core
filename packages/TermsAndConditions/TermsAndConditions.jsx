@@ -172,7 +172,7 @@ const TermsAndConditions = ({ copy, content, ...rest }) => {
               style={{ transform: 'translateY(1rem)' }}
             >
               {() => (
-                <FlexGrid>
+                <FlexGrid gutter={false} limitWidth={false}>
                   <FlexGrid.Row>
                     <FlexGrid.Col xs={12} mdOffset={1} md={10}>
                       <List size="small" below={4}>
