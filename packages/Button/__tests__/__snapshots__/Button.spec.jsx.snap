@@ -44,6 +44,10 @@ exports[`Button can be presented as one of the allowed variants 1`] = `
   color: #4b286d;
 }
 
+.c1 {
+  width: 100%;
+}
+
 @media (min-width:768px) {
   .c0 {
     display: -webkit-inline-box;
@@ -60,7 +64,7 @@ exports[`Button can be presented as one of the allowed variants 1`] = `
   type="button"
 >
   <span
-    style="width:100%"
+    class="c1"
   >
     Submit
   </span>
@@ -111,6 +115,10 @@ exports[`Button renders 1`] = `
   color: #248700;
 }
 
+.c1 {
+  width: 100%;
+}
+
 @media (min-width:768px) {
   .c0 {
     display: -webkit-inline-box;
@@ -127,7 +135,7 @@ exports[`Button renders 1`] = `
   type="button"
 >
   <span
-    style="width:100%"
+    class="c1"
   >
     Submit
   </span>
