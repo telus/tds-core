@@ -77,11 +77,9 @@ export const StyledButton = styled.button(
   }
 )
 
-const crossBrowserTextAlignmentFix = {
+export const ButtonTextWrapper = styled.span({
   width: '100%',
-}
-
-export const ButtonTextWrapper = styled.span(crossBrowserTextAlignmentFix)
+})
 
 /**
  * @version ./package.json
