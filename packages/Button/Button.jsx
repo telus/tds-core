@@ -77,6 +77,10 @@ export const StyledButton = styled.button(
   }
 )
 
+const crossBrowserTextAlignmentFix = {
+  width: '100%',
+}
+
 /**
  * @version ./package.json
  */
@@ -85,7 +89,7 @@ const Button = ({ type, variant, children, ...rest }) => {
 
   return (
     <StyledButton {...safeRest(restNoDisabled)} variant={variant} type={type}>
-      {children}
+      <span style={crossBrowserTextAlignmentFix}>{children}</span>
     </StyledButton>
   )
 }

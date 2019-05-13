@@ -59,7 +59,11 @@ exports[`Button can be presented as one of the allowed variants 1`] = `
   class="c0"
   type="button"
 >
-  Submit
+  <span
+    style="width:100%"
+  >
+    Submit
+  </span>
 </button>
 `;
 
@@ -122,6 +126,10 @@ exports[`Button renders 1`] = `
   class="c0"
   type="button"
 >
-  Submit
+  <span
+    style="width:100%"
+  >
+    Submit
+  </span>
 </button>
 `;
