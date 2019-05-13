@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/telusdigital/tds/compare/@tds/util-prop-types@1.3.1...@tds/util-prop-types@1.3.2) (2019-05-13)
+
+
+### Bug Fixes
+
+* **util-prop-types:** prevent prop type error on conditional render ([75016cc](https://github.com/telusdigital/tds/commit/75016cc))
+
+
+
+
+
 ## [1.3.1](https://github.com/telusdigital/tds/compare/@tds/util-prop-types@1.3.0...@tds/util-prop-types@1.3.1) (2019-04-04)
 
 

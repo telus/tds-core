@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-notification",
-  "version": "1.2.27",
+  "version": "1.2.28",
   "description": "A banner that highlights important messages",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,7 +27,7 @@
   "dependencies": {
     "@tds/core-box": "^1.2.3",
     "@tds/core-decorative-icon": "^1.2.1",
-    "@tds/core-flex-grid": "^2.3.11",
+    "@tds/core-flex-grid": "^2.3.12",
     "@tds/core-paragraph": "^1.0.11",
     "@tds/core-standalone-icon": "^1.0.5",
     "@tds/shared-animation": "^1.1.2",

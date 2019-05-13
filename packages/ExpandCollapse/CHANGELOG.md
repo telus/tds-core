@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.23](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.2.22...@tds/core-expand-collapse@1.2.23) (2019-05-13)
+
+
+### Bug Fixes
+
+* **core-expand-collapse:** reduce dist size ([e9492dd](https://github.com/telusdigital/tds/commit/e9492dd))
+
+
+
+
+
 ## [1.2.22](https://github.com/telusdigital/tds/compare/@tds/core-expand-collapse@1.2.21...@tds/core-expand-collapse@1.2.22) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-expand-collapse
