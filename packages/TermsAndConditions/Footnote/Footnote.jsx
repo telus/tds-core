@@ -270,7 +270,7 @@ Footnote.propTypes = {
     PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   ]),
   /**
-   * The terms and conditions UI's language as an ISO language code. Use `en`, `fr` for default copy. If copy needs to be overridden, provide an object with `heading` and `close` properties.
+   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively, or provide your own as a JSON object with the keys `heading` and `close`.
    */
   copy: PropTypes.oneOfType([PropTypes.oneOf(['en', 'fr']), copyShape]).isRequired,
   /**

@@ -74,7 +74,7 @@ const copyShape = PropTypes.shape({
 
 FootnoteLink.propTypes = {
   /**
-   * The terms and conditions UI's language as an ISO language code. Use `en`, `fr` for default copy. If copy needs to be overridden, provide an object with `heading` and `close` properties.
+   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively, or provide your own as a JSON object with the key `a11yLabel`.
    */
   copy: PropTypes.oneOfType([PropTypes.oneOf(['en', 'fr']), copyShape]).isRequired,
   /**
