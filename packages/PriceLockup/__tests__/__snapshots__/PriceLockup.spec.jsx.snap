@@ -165,7 +165,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
     class=""
   >
     <span
-      class="TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
     >
       top text
     </span>
@@ -262,7 +262,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
     class="TDS_Box-modules__betweenBottomMargin-1___43ZDj TDS_Box-modules__stack___33m4D"
   >
     <span
-      class="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
     >
       top text
     </span>
@@ -297,7 +297,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
     class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
   />
   <span
-    class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
   >
     bottom text
   </span>
@@ -370,7 +370,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
     class="TDS_Box-modules__betweenBottomMargin-1___43ZDj TDS_Box-modules__stack___33m4D"
   >
     <span
-      class="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
     >
       top text
     </span>
@@ -405,7 +405,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
     class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
   />
   <span
-    class="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
   >
     bottom text
   </span>
