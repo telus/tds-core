@@ -16,7 +16,7 @@ const BaseButton = ({ element, variant, dangerouslyAddClassName, children, ...re
       ...safeRest(rest),
       className: joinClassNames(styles.sizing, styles[variant], dangerouslyAddClassName),
     },
-    children
+    <span className={styles.labelAlign}>{children}</span>
   )
 }
 
