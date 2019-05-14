@@ -1,3 +1,14 @@
+#### 1.0.28 (2019-05-14)
+
+##### Bug Fixes
+
+* **shared-base-button:**  fix label alignment on iOS 10 ([6599b651](https://github.com/telusdigital/tds/commit/6599b65126ea042efc17a827d1b126ab3741a146))
+
+##### Tests
+
+* **core-button-link:**  update snapshot ([fec4a9a6](https://github.com/telusdigital/tds/commit/fec4a9a6722d118d91558e96520cabd31fa80421))
+* **core-button:**  update snapshot ([4ac7f215](https://github.com/telusdigital/tds/commit/4ac7f2159797bf892b4748347719419c223a7fbf))
+
 #### 1.0.27 (2019-03-25)
 
 ##### Bug Fixes
