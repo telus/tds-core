@@ -5,6 +5,10 @@ exports[`Button renders 1`] = `
   class="sizing primary"
   type="button"
 >
-  Submit
+  <span
+    class="labelAlign"
+  >
+    Submit
+  </span>
 </button>
 `;
