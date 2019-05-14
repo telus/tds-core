@@ -4,6 +4,10 @@ exports[`ButtonLink renders 1`] = `
 <a
   class="sizing primary primary"
 >
-  Go home
+  <span
+    class="labelAlign"
+  >
+    Go home
+  </span>
 </a>
 `;
