@@ -76,3 +76,24 @@ to have a different visual hierarchy of text.
   </FlexGrid.Row>
 </FlexGrid>
 ```
+
+### Superscript
+
+Use a standard HTML `<sup>` element.
+
+```jsx
+<Box between={3}>
+  <Heading level="h1">
+    TELUS Pik TV<sup>&trade;</sup>
+  </Heading>
+  <Heading level="h2">
+    TELUS Pik TV<sup>&trade;</sup>
+  </Heading>
+  <Heading level="h3">
+    TELUS Pik TV<sup>&trade;</sup>
+  </Heading>
+  <Heading level="h4">
+    TELUS Pik TV<sup>&trade;</sup>
+  </Heading>
+</Box>
+```
