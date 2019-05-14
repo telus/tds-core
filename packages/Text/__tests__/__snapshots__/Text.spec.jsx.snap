@@ -2,7 +2,7 @@
 
 exports[`Text renders 1`] = `
 <span
-  className="base baseFont color"
+  className="default base baseFont color"
 >
   Some content
 </span>

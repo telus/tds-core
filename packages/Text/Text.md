@@ -17,9 +17,22 @@ By default, the `Text` component will inherit font properties from `Paragraph`. 
 <Paragraph>
   <Text bold>
     Get Optik TV
-    <Text.Sup>®</Text.Sup> and Internet for $85 per month for 12 months.
+    <sup>®</sup> and Internet for $85 per month for 12 months.
   </Text>
   <br />
   <Text size="small">Sign up for 2 years and save BIG on your first 12 months.</Text>
+</Paragraph>
+```
+
+### Superscript
+
+Use a standard HTML `<sup>` element.
+
+```jsx
+<Paragraph>
+  <Text>
+    Enjoy buffer-free streaming any time of day
+    <sup>2</sup>.
+  </Text>
 </Paragraph>
 ```
