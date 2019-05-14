@@ -1,7 +1,9 @@
 ### Usage criteria
 
 - If only one annotation is required, when possible place elaborative copy in-page with the language or element in question
-- For `PriceLockup` all the numbers should appear together at the end
+- For `PriceLockup` all the numbers should appear together below the `bottomText`
+- Must be wrapped by a `Text`, `Heading`, or `DisplayHeading` component
+  - When using `FootnoteLink` in a `PriceLockup`, `PriceLockup` will automatically wrap all `bottomText` in a `Text` component
 
 ```jsx
 <Card>
@@ -10,8 +12,10 @@
   <Paragraph>$30 per month</Paragraph>
 
   <Paragraph>
-    Includes unlimited nationwide calling and 5 voice features.{' '}
-    <FootnoteLink number={3} onClick={(number, ref) => {}} copy="en" />
+    <Text>
+      Includes unlimited nationwide calling and 5 voice features.
+      <FootnoteLink number={3} onClick={(number, ref) => {}} copy="en" />
+    </Text>
   </Paragraph>
 </Card>
 ```
