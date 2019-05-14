@@ -290,7 +290,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                   size="small"
                                 >
                                   <span
-                                    className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                                    className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
                                   >
                                     Tooltip text
                                   </span>
@@ -655,7 +655,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                   size="small"
                                 >
                                   <span
-                                    className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                                    className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
                                   >
                                     Tooltip text
                                   </span>
@@ -835,7 +835,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
           size="small"
         >
           <span
-            className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
           >
             Tooltip text
           </span>
@@ -950,7 +950,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
           size="small"
         >
           <span
-            className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
           >
             Tooltip text
           </span>
@@ -1066,7 +1066,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
           size="small"
         >
           <span
-            className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
           >
             Tooltip text
           </span>
@@ -1368,7 +1368,7 @@ exports[`Tooltip renders 1`] = `
                                   size="small"
                                 >
                                   <span
-                                    className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                                    className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
                                   >
                                     Tooltip text
                                   </span>
