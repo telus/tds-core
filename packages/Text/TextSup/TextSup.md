@@ -1,4 +1,4 @@
-Only use `Text.Sup` as a child of `Paragraph` or `Text`. Use [`Heading.Sup`](#headingsup) for superscript within headings.
+**Deprecated, please use a `<sup>` element documented in `Text` instead.**
 
 ```jsx
 <Paragraph>
