@@ -99,7 +99,7 @@ exports[`Footnote renders closed 1`] = `
                     class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
                   >
                     <span
-                      class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+                      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                     >
                       Terms and conditions
                     </span>
@@ -237,7 +237,7 @@ exports[`Footnote renders opened 1`] = `
                     class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
                   >
                     <span
-                      class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+                      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                     >
                       Terms and conditions
                     </span>
