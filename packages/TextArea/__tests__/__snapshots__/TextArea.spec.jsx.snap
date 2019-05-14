@@ -14,7 +14,7 @@ exports[`TextArea renders 1`] = `
         class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz TDS_FormField-modules__alignCenter___3y2Mj"
       >
         <span
-          class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
         >
           The textarea
         </span>
@@ -50,7 +50,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
         class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz TDS_FormField-modules__alignCenter___3y2Mj"
       >
         <span
-          class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
         >
           The textarea
         </span>
