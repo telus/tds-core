@@ -1,3 +1,5 @@
+**Deprecated, please use a `<sup>` element documented in `Heading` instead.**
+
 ```jsx
 <Box between={3}>
   <Heading level="h1">
