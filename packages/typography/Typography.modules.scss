@@ -56,6 +56,15 @@ $font-size-base: 100%;
   font-size: 0.875rem;
 }
 
+.default sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+
+  top: -0.5em;
+  font-size: 0.875rem;
+}
+
 .base {
   composes: wordBreak;
 
