@@ -15,7 +15,7 @@ const StyledDisplayHeadingSup = styled.sup(baseSupSubScripts, {
 })
 
 /**
- * Superscript text for `DisplayHeading` an as HTML `<sup>` element.
+ * @deprecated Superscript text for `DisplayHeading` an as HTML `<sup>` element.
  *
  * _This component can only be accessed as a name-spaced component: `DisplayHeading.Sup`._
  */

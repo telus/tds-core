@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { spacing } from '@tds/shared-styles'
-import { helveticaNeueThin35, wordBreak } from '@tds/shared-typography'
+import { helveticaNeueThin35, wordBreak, baseSupSubScripts } from '@tds/shared-typography'
 import { colorWhite, colorSecondary } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 
@@ -24,7 +24,17 @@ const StyledDisplayHeading = styled.h1(
       lineHeight: '1.11',
       letterSpacing: '0.2px',
     }),
-  })
+  }),
+  {
+    sup: {
+      ...baseSupSubScripts,
+      fontSize: '1.25rem',
+      top: '-1.2em',
+      ...media.from('md').css({
+        top: '-2.2em',
+      }),
+    },
+  }
 )
 
 /**

@@ -11,6 +11,14 @@ exports[`DisplayHeading can be inverted 1`] = `
   line-height: 1.14;
 }
 
+.c0 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 1.25rem;
+  top: -1.2em;
+}
+
 @media (min-width:768px) {
   .c0 {
     font-size: 4.5rem;
@@ -19,6 +27,12 @@ exports[`DisplayHeading can be inverted 1`] = `
     -moz-letter-spacing: 0.2px;
     -ms-letter-spacing: 0.2px;
     letter-spacing: 0.2px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 sup {
+    top: -2.2em;
   }
 }
 
@@ -40,6 +54,14 @@ exports[`DisplayHeading renders 1`] = `
   line-height: 1.14;
 }
 
+.c0 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 1.25rem;
+  top: -1.2em;
+}
+
 @media (min-width:768px) {
   .c0 {
     font-size: 4.5rem;
@@ -48,6 +70,12 @@ exports[`DisplayHeading renders 1`] = `
     -moz-letter-spacing: 0.2px;
     -ms-letter-spacing: 0.2px;
     letter-spacing: 0.2px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 sup {
+    top: -2.2em;
   }
 }
 
