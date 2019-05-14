@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { helveticaNeueThin35 } from '@tds/shared-typography'
 import { colorText } from '@tds/core-colours'
 import A11yContent from '@tds/core-a11y-content'
 
@@ -21,14 +20,6 @@ const getCopy = copy => {
   }
   return copy
 }
-
-const StyledFootnoteSup = styled.sup({
-  ...helveticaNeueThin35,
-  top: '-0.5rem',
-  position: 'relative',
-  fontSize: '0.75rem',
-  letterSpacing: '0.46',
-})
 
 const StyledFootnoteLink = styled.button({
   backgroundColor: 'transparent',
@@ -59,7 +50,7 @@ const FootnoteLink = ({ number, onClick, copy }) => {
   return (
     <>
       {numbers.map((n, i) => (
-        <StyledFootnoteSup key={n}>
+        <sup key={n}>
           <StyledFootnoteLink
             key={numbers[i]}
             ref={refs[i]}
@@ -69,7 +60,7 @@ const FootnoteLink = ({ number, onClick, copy }) => {
             <A11yContent>{getCopy(copy).a11yLabel}</A11yContent>
             {`${numbers[i]}${i !== numbers.length - 1 ? ',' : ''}`}
           </StyledFootnoteLink>
-        </StyledFootnoteSup>
+        </sup>
       ))}
     </>
   )
