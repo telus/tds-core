@@ -65,22 +65,22 @@ const StyledLabel = styled.label(({ isError }) => ({
       borderColor: colorCardinal,
     },
   }),
-  'input:focus ~ & > div > span': {
+  [`${HiddenInput}:focus ~ & > div > span`]: {
     boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
     borderColor: isError ? colorCardinal : colorWhite,
   },
-  'input:checked ~ & > div > span': {
+  [`${HiddenInput}:checked ~ & > div > span`]: {
     backgroundColor: colorAccessibleGreen,
     borderColor: colorAccessibleGreen,
     '& > i': {
       display: 'block',
     },
   },
-  'input:disabled ~ & > div > span': {
+  [`${HiddenInput}:disabled ~ & > div > span`]: {
     backgroundColor: colorGainsboro,
     borderColor: colorGainsboro,
   },
-  'input:disabled ~ & > div > div': {
+  [`${HiddenInput}:disabled ~ & > div > div`]: {
     color: colorGainsboro,
   },
 }))
@@ -102,7 +102,7 @@ const getErrorId = (name, value, id) => {
  * @version ./package.json
  */
 const Checkbox = ({ id, name, value, label, feedback, error, ...rest }) => (
-  <Box {...safeRest(rest)} between={2}>
+  <Box between={2}>
     {feedback === 'error' && renderError(error, getErrorId(name, value, id))}
     <HiddenInput
       type="checkbox"
@@ -112,7 +112,6 @@ const Checkbox = ({ id, name, value, label, feedback, error, ...rest }) => (
       aria-invalid={feedback === 'error'}
       aria-describedby={feedback === 'error' ? getErrorId(name, value, id) : undefined}
       data-testid="hidden-input"
-      checked={undefined}
       {...safeRest(rest)}
     />
     <StyledLabel
