@@ -111,7 +111,7 @@ exports[`Radio allows numbers as value 1`] = `
       >
         <div>
           <span
-            class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+            class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
           >
             A label
           </span>
@@ -134,7 +134,7 @@ exports[`Radio disabled can be disabled 1`] = `
       size="base"
     >
       <span
-        className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
         A label
       </span>
@@ -616,7 +616,7 @@ exports[`Radio disabled can be disabled and checked 1`] = `
       size="base"
     >
       <span
-        className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
         A label
       </span>
@@ -1100,7 +1100,7 @@ exports[`Radio error can have an error feedback state 1`] = `
       size="base"
     >
       <span
-        className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
         Some error
       </span>
@@ -1582,7 +1582,7 @@ exports[`Radio error does not appear as an error when it is checked 1`] = `
       size="base"
     >
       <span
-        className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
         Some error
       </span>
@@ -3440,7 +3440,7 @@ exports[`Radio must have a label 1`] = `
                 size="base"
               >
                 <span
-                  className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+                  className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
                 >
                   Some label
                 </span>
@@ -3565,7 +3565,7 @@ exports[`Radio renders 1`] = `
       >
         <div>
           <span
-            class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+            class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
           >
             A label
           </span>
