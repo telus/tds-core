@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://github.com/telusdigital/tds/compare/@tds/core-button@2.0.6...@tds/core-button@2.0.7) (2019-05-14)
+
+
+### Bug Fixes
+
+* **core-button:** adding a span inside basic button to center text ([9c85a38](https://github.com/telusdigital/tds/commit/9c85a38))
+* **core-button:** convert span into styled component ([3f7e377](https://github.com/telusdigital/tds/commit/3f7e377))
+* **core-button:** moved styles inside span component ([0ffc41e](https://github.com/telusdigital/tds/commit/0ffc41e))
+
+
+
+
+
 ## [2.0.6](https://github.com/telusdigital/tds/compare/@tds/core-button@2.0.5...@tds/core-button@2.0.6) (2019-05-13)
 
 **Note:** Version bump only for package @tds/core-button
