@@ -34,7 +34,7 @@ If it is required that the `Checkbox` be controlled by application state or othe
 
 ```jsx
 initialState = {
-  consumerSelected: false,
+  consumerSelected: true,
   businessSelected: false,
 }
 
