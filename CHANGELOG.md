@@ -1,3 +1,13 @@
+#### 0.34.27 (2019-05-14)
+
+##### Chores
+
+* **core-link:**  update button-link snapshot ([e1018ce5](https://github.com/telusdigital/tds/commit/e1018ce5a7e015ce496f52de6926ec94b2d6c1d5))
+
+##### Bug Fixes
+
+* **core-button:**  fix text alignment issue on iOS 10 ([1ab12143](https://github.com/telusdigital/tds/commit/1ab1214326bf63f8e3d96c59773c57fdc5a935f3))
+
 #### 0.34.26 (2019-01-11)
 
 ##### Bug Fixes
