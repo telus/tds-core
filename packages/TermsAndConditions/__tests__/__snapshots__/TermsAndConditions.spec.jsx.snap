@@ -13,7 +13,11 @@ exports[`TermsAndConditions renders 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c5 .c8 {
+.c5 .c8,
+.c5 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
 }
@@ -235,7 +239,11 @@ exports[`TermsAndConditions renders expanded 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c5 .c9 {
+.c5 .c9,
+.c5 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
 }

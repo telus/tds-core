@@ -38,7 +38,7 @@ class FootnoteExample extends React.Component {
     ]
 
     return (
-      <div>
+      <Text>
         Terms and conditions may apply
         <FootnoteLink
           copy="en"
@@ -57,7 +57,7 @@ class FootnoteExample extends React.Component {
           }}
           isOpen={this.state.showFootnote}
         />
-      </div>
+      </Text>
     )
   }
 }
