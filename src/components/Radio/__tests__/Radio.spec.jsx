@@ -170,7 +170,7 @@ describe('Radio', () => {
         feedback: 'error',
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText')
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText ieFullWidth')
       expect(findFakeRadio()).toHaveClassName('error')
       expect(findFakeRadio()).not.toHaveClassName('unchecked')
     })
@@ -197,7 +197,7 @@ describe('Radio', () => {
         disabled: true,
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText ieFullWidth')
       expect(findRadioElement()).toHaveProp('disabled', true)
       expect(findFakeRadio()).toHaveClassName('disabled')
     })
@@ -209,7 +209,7 @@ describe('Radio', () => {
         checked: true,
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText ieFullWidth')
       expect(findRadioElement()).toHaveProp('disabled', true)
       expect(findFakeRadio()).toHaveClassName('disabledChecked')
       expect(findFakeInnerRadio()).toHaveClassName('innerDisabledChecked')
