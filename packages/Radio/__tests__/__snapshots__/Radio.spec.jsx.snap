@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio allows numbers as value 1`] = `
-.c2 {
+.c3 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -31,17 +31,17 @@ exports[`Radio allows numbers as value 1`] = `
   background-color: #fff;
 }
 
-.c2 > i {
+.c3 > i {
   display: none;
 }
 
-.c0 {
+.c1 {
   position: fixed;
   opacity: 0;
   pointer-events: none;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -49,28 +49,28 @@ exports[`Radio allows numbers as value 1`] = `
   cursor: pointer;
 }
 
-input:focus ~ .c1 > div > span {
+.c0:focus ~ .c2 > div > span {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-input:checked ~ .c1 > div > span {
+.c0:checked ~ .c2 > div > span {
   border-color: #54595f;
 }
 
-input:checked ~ .c1 > div > span > span {
+.c0:checked ~ .c2 > div > span > span {
   display: block;
 }
 
-input:disabled ~ .c1 > div > span {
+.c0:disabled ~ .c2 > div > span {
   border-color: #d8d8d8;
 }
 
-input:disabled ~ .c1 > div > div {
+.c0:disabled ~ .c2 > div > div {
   color: #d8d8d8;
 }
 
-.c3 {
+.c4 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -83,7 +83,7 @@ input:disabled ~ .c1 > div > div {
 >
   <input
     aria-invalid="false"
-    class="c0"
+    class="c0 c1"
     data-testid="hidden-input"
     id="the-group_1"
     name="the-group"
@@ -91,7 +91,7 @@ input:disabled ~ .c1 > div > div {
     value="1"
   />
   <label
-    class="c1"
+    class="c2"
     data-testid="checkbox-label"
     for="the-group_1"
   >
@@ -99,11 +99,11 @@ input:disabled ~ .c1 > div > div {
       class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
     >
       <span
-        class="c2"
+        class="c3"
         data-testid="fake-input"
       >
         <span
-          class="c3"
+          class="c4"
         />
       </span>
       <div
@@ -2358,24 +2358,24 @@ exports[`Radio must have a label 1`] = `
   cursor: pointer;
 }
 
-input:focus ~ .c0 > div > span {
+.c3:focus ~ .c0 > div > span {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-input:checked ~ .c0 > div > span {
+.c3:checked ~ .c0 > div > span {
   border-color: #54595f;
 }
 
-input:checked ~ .c0 > div > span > span {
+.c3:checked ~ .c0 > div > span > span {
   display: block;
 }
 
-input:disabled ~ .c0 > div > span {
+.c3:disabled ~ .c0 > div > span {
   border-color: #d8d8d8;
 }
 
-input:disabled ~ .c0 > div > div {
+.c3:disabled ~ .c0 > div > div {
   color: #d8d8d8;
 }
 
@@ -2503,7 +2503,7 @@ input:disabled ~ .c0 > div > div {
 `;
 
 exports[`Radio renders 1`] = `
-.c2 {
+.c3 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2533,17 +2533,17 @@ exports[`Radio renders 1`] = `
   background-color: #fff;
 }
 
-.c2 > i {
+.c3 > i {
   display: none;
 }
 
-.c0 {
+.c1 {
   position: fixed;
   opacity: 0;
   pointer-events: none;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2551,28 +2551,28 @@ exports[`Radio renders 1`] = `
   cursor: pointer;
 }
 
-input:focus ~ .c1 > div > span {
+.c0:focus ~ .c2 > div > span {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-input:checked ~ .c1 > div > span {
+.c0:checked ~ .c2 > div > span {
   border-color: #54595f;
 }
 
-input:checked ~ .c1 > div > span > span {
+.c0:checked ~ .c2 > div > span > span {
   display: block;
 }
 
-input:disabled ~ .c1 > div > span {
+.c0:disabled ~ .c2 > div > span {
   border-color: #d8d8d8;
 }
 
-input:disabled ~ .c1 > div > div {
+.c0:disabled ~ .c2 > div > div {
   color: #d8d8d8;
 }
 
-.c3 {
+.c4 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -2585,7 +2585,7 @@ input:disabled ~ .c1 > div > div {
 >
   <input
     aria-invalid="false"
-    class="c0"
+    class="c0 c1"
     data-testid="hidden-input"
     id="the-group_the-value"
     name="the-group"
@@ -2593,7 +2593,7 @@ input:disabled ~ .c1 > div > div {
     value="the-value"
   />
   <label
-    class="c1"
+    class="c2"
     data-testid="checkbox-label"
     for="the-group_the-value"
   >
@@ -2601,11 +2601,11 @@ input:disabled ~ .c1 > div > div {
       class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
     >
       <span
-        class="c2"
+        class="c3"
         data-testid="fake-input"
       >
         <span
-          class="c3"
+          class="c4"
         />
       </span>
       <div

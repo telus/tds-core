@@ -26,10 +26,10 @@ _Note:_ If no `id` is provided, a default `id` will be generated in the format o
       Show me deals for:
     </Text>
   </legend>
-  <Radio name="services" value="mobility" label="Mobility" />
-  <Radio name="services" value="internet" label="Internet" />
-  <Radio name="services" value="tv" label="TV" />
-  <Radio name="services" value="home-phone" label="Home Phone" />
+  <Radio name="deals" value="mobility" label="Mobility" />
+  <Radio name="deals" value="internet" label="Internet" />
+  <Radio name="deals" value="tv" label="TV" />
+  <Radio name="deals" value="home-phone" label="Home Phone" />
 </Box>
 ```
 
