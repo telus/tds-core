@@ -1,77 +1,2625 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio allows numbers as value 1`] = `
+.c2 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c2 > i {
+  display: none;
+}
+
+.c0 {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+input:focus ~ .c1 > div > span {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+input:checked ~ .c1 > div > span {
+  border-color: #54595f;
+}
+
+input:checked ~ .c1 > div > span > span {
+  display: block;
+}
+
+input:disabled ~ .c1 > div > span {
+  border-color: #d8d8d8;
+}
+
+input:disabled ~ .c1 > div > div {
+  color: #d8d8d8;
+}
+
+.c3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
 <div
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
+  <input
+    aria-invalid="false"
+    class="c0"
+    data-testid="hidden-input"
+    id="the-group_1"
+    name="the-group"
+    type="radio"
+    value="1"
+  />
   <label
-    class="label"
+    class="c1"
+    data-testid="checkbox-label"
     for="the-group_1"
   >
-    <span
-      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz alignFlexStart"
+    <div
+      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
     >
       <span
-        class="fakeRadio unchecked"
+        class="c2"
         data-testid="fake-input"
       >
-        <input
-          aria-invalid="false"
-          class="hiddenInput"
-          id="the-group_1"
-          name="the-group"
-          type="radio"
-          value="1"
+        <span
+          class="c3"
         />
       </span>
       <div
-        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D flexOne"
+        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
       >
-        <span
-          class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-        >
-          A label
-        </span>
+        <div>
+          <span
+            class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+          >
+            A label
+          </span>
+        </div>
       </div>
-    </span>
+    </div>
   </label>
 </div>
 `;
 
+exports[`Radio disabled can be disabled 1`] = `
+<ColoredTextProvider
+  tag="div"
+>
+  <div>
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <span
+        className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      >
+        A label
+      </span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Radio disabled can be disabled 2`] = `
+Array [
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<Radio__FakeRadio
+    data-testid="fake-input"
+  >
+    <StyledComponent
+      data-testid="fake-input"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+            ],
+          },
+          "displayName": "Radio__FakeRadio",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <span
+        className="c0"
+        data-testid="fake-input"
+      >
+        <Radio__InnerChecked>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                  ],
+                },
+                "displayName": "Radio__InnerChecked",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            />
+          </StyledComponent>
+        </Radio__InnerChecked>
+      </span>
+    </StyledComponent>
+  </Radio__FakeRadio>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<StyledComponent
+    data-testid="fake-input"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+          ],
+        },
+        "displayName": "Radio__FakeRadio",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <span
+      className="c0"
+      data-testid="fake-input"
+    >
+      <Radio__InnerChecked>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                ],
+              },
+              "displayName": "Radio__InnerChecked",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <span
+            className="c1"
+          />
+        </StyledComponent>
+      </Radio__InnerChecked>
+    </span>
+  </StyledComponent>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<span
+    className="c0"
+    data-testid="fake-input"
+  >
+    <Radio__InnerChecked>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+              ],
+            },
+            "displayName": "Radio__InnerChecked",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <span
+          className="c1"
+        />
+      </StyledComponent>
+    </Radio__InnerChecked>
+  </span>,
+]
+`;
+
+exports[`Radio disabled can be disabled and checked 1`] = `
+<ColoredTextProvider
+  tag="div"
+>
+  <div>
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <span
+        className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      >
+        A label
+      </span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Radio disabled can be disabled and checked 2`] = `
+Array [
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<Radio__FakeRadio
+    data-testid="fake-input"
+  >
+    <StyledComponent
+      data-testid="fake-input"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+            ],
+          },
+          "displayName": "Radio__FakeRadio",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <span
+        className="c0"
+        data-testid="fake-input"
+      >
+        <Radio__InnerChecked>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                  ],
+                },
+                "displayName": "Radio__InnerChecked",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            />
+          </StyledComponent>
+        </Radio__InnerChecked>
+      </span>
+    </StyledComponent>
+  </Radio__FakeRadio>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<StyledComponent
+    data-testid="fake-input"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+          ],
+        },
+        "displayName": "Radio__FakeRadio",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <span
+      className="c0"
+      data-testid="fake-input"
+    >
+      <Radio__InnerChecked>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                ],
+              },
+              "displayName": "Radio__InnerChecked",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <span
+            className="c1"
+          />
+        </StyledComponent>
+      </Radio__InnerChecked>
+    </span>
+  </StyledComponent>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<span
+    className="c0"
+    data-testid="fake-input"
+  >
+    <Radio__InnerChecked>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+              ],
+            },
+            "displayName": "Radio__InnerChecked",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <span
+          className="c1"
+        />
+      </StyledComponent>
+    </Radio__InnerChecked>
+  </span>,
+]
+`;
+
+exports[`Radio disabled can be disabled and checked 3`] = `null`;
+
+exports[`Radio error can have an error feedback state 1`] = `
+<ColoredTextProvider
+  tag="div"
+>
+  <div>
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <span
+        className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      >
+        Some error
+      </span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Radio error can have an error feedback state 2`] = `
+Array [
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<Radio__FakeRadio
+    data-testid="fake-input"
+  >
+    <StyledComponent
+      data-testid="fake-input"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+            ],
+          },
+          "displayName": "Radio__FakeRadio",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <span
+        className="c0"
+        data-testid="fake-input"
+      >
+        <Radio__InnerChecked>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                  ],
+                },
+                "displayName": "Radio__InnerChecked",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            />
+          </StyledComponent>
+        </Radio__InnerChecked>
+      </span>
+    </StyledComponent>
+  </Radio__FakeRadio>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<StyledComponent
+    data-testid="fake-input"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+          ],
+        },
+        "displayName": "Radio__FakeRadio",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <span
+      className="c0"
+      data-testid="fake-input"
+    >
+      <Radio__InnerChecked>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                ],
+              },
+              "displayName": "Radio__InnerChecked",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <span
+            className="c1"
+          />
+        </StyledComponent>
+      </Radio__InnerChecked>
+    </span>
+  </StyledComponent>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<span
+    className="c0"
+    data-testid="fake-input"
+  >
+    <Radio__InnerChecked>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+              ],
+            },
+            "displayName": "Radio__InnerChecked",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <span
+          className="c1"
+        />
+      </StyledComponent>
+    </Radio__InnerChecked>
+  </span>,
+]
+`;
+
+exports[`Radio error does not appear as an error when it is checked 1`] = `
+<ColoredTextProvider
+  tag="div"
+>
+  <div>
+    <Text
+      block={false}
+      bold={false}
+      invert={false}
+      size="base"
+    >
+      <span
+        className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      >
+        Some error
+      </span>
+    </Text>
+  </div>
+</ColoredTextProvider>
+`;
+
+exports[`Radio error does not appear as an error when it is checked 2`] = `
+Array [
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<Radio__FakeRadio
+    data-testid="fake-input"
+  >
+    <StyledComponent
+      data-testid="fake-input"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+            ],
+          },
+          "displayName": "Radio__FakeRadio",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <span
+        className="c0"
+        data-testid="fake-input"
+      >
+        <Radio__InnerChecked>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                  ],
+                },
+                "displayName": "Radio__InnerChecked",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            />
+          </StyledComponent>
+        </Radio__InnerChecked>
+      </span>
+    </StyledComponent>
+  </Radio__FakeRadio>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<StyledComponent
+    data-testid="fake-input"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+          ],
+        },
+        "displayName": "Radio__FakeRadio",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <span
+      className="c0"
+      data-testid="fake-input"
+    >
+      <Radio__InnerChecked>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                ],
+              },
+              "displayName": "Radio__InnerChecked",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <span
+            className="c1"
+          />
+        </StyledComponent>
+      </Radio__InnerChecked>
+    </span>
+  </StyledComponent>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<span
+    className="c0"
+    data-testid="fake-input"
+  >
+    <Radio__InnerChecked>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+              ],
+            },
+            "displayName": "Radio__InnerChecked",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <span
+          className="c1"
+        />
+      </StyledComponent>
+    </Radio__InnerChecked>
+  </span>,
+]
+`;
+
+exports[`Radio focusing can be focused and unfocused 1`] = `
+Array [
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<Radio__FakeRadio
+    data-testid="fake-input"
+  >
+    <StyledComponent
+      data-testid="fake-input"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+            ],
+          },
+          "displayName": "Radio__FakeRadio",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <span
+        className="c0"
+        data-testid="fake-input"
+      >
+        <Radio__InnerChecked>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                  ],
+                },
+                "displayName": "Radio__InnerChecked",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            />
+          </StyledComponent>
+        </Radio__InnerChecked>
+      </span>
+    </StyledComponent>
+  </Radio__FakeRadio>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<StyledComponent
+    data-testid="fake-input"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+          ],
+        },
+        "displayName": "Radio__FakeRadio",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <span
+      className="c0"
+      data-testid="fake-input"
+    >
+      <Radio__InnerChecked>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                ],
+              },
+              "displayName": "Radio__InnerChecked",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <span
+            className="c1"
+          />
+        </StyledComponent>
+      </Radio__InnerChecked>
+    </span>
+  </StyledComponent>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<span
+    className="c0"
+    data-testid="fake-input"
+  >
+    <Radio__InnerChecked>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+              ],
+            },
+            "displayName": "Radio__InnerChecked",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <span
+          className="c1"
+        />
+      </StyledComponent>
+    </Radio__InnerChecked>
+  </span>,
+]
+`;
+
+exports[`Radio focusing can be focused and unfocused 2`] = `
+Array [
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<Radio__FakeRadio
+    data-testid="fake-input"
+  >
+    <StyledComponent
+      data-testid="fake-input"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+            ],
+          },
+          "displayName": "Radio__FakeRadio",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <span
+        className="c0"
+        data-testid="fake-input"
+      >
+        <Radio__InnerChecked>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                  ],
+                },
+                "displayName": "Radio__InnerChecked",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            />
+          </StyledComponent>
+        </Radio__InnerChecked>
+      </span>
+    </StyledComponent>
+  </Radio__FakeRadio>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<StyledComponent
+    data-testid="fake-input"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+          ],
+        },
+        "displayName": "Radio__FakeRadio",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <span
+      className="c0"
+      data-testid="fake-input"
+    >
+      <Radio__InnerChecked>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                ],
+              },
+              "displayName": "Radio__InnerChecked",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <span
+            className="c1"
+          />
+        </StyledComponent>
+      </Radio__InnerChecked>
+    </span>
+  </StyledComponent>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<span
+    className="c0"
+    data-testid="fake-input"
+  >
+    <Radio__InnerChecked>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+              ],
+            },
+            "displayName": "Radio__InnerChecked",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <span
+          className="c1"
+        />
+      </StyledComponent>
+    </Radio__InnerChecked>
+  </span>,
+]
+`;
+
+exports[`Radio has a fake radio 1`] = `
+Array [
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<Radio__FakeRadio
+    data-testid="fake-input"
+  >
+    <StyledComponent
+      data-testid="fake-input"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+            ],
+          },
+          "displayName": "Radio__FakeRadio",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <span
+        className="c0"
+        data-testid="fake-input"
+      >
+        <Radio__InnerChecked>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                  ],
+                },
+                "displayName": "Radio__InnerChecked",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            />
+          </StyledComponent>
+        </Radio__InnerChecked>
+      </span>
+    </StyledComponent>
+  </Radio__FakeRadio>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<StyledComponent
+    data-testid="fake-input"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+          ],
+        },
+        "displayName": "Radio__FakeRadio",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <span
+      className="c0"
+      data-testid="fake-input"
+    >
+      <Radio__InnerChecked>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                ],
+              },
+              "displayName": "Radio__InnerChecked",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <span
+            className="c1"
+          />
+        </StyledComponent>
+      </Radio__InnerChecked>
+    </span>
+  </StyledComponent>,
+  .c0 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c0 > i {
+  display: none;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<span
+    className="c0"
+    data-testid="fake-input"
+  >
+    <Radio__InnerChecked>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+              ],
+            },
+            "displayName": "Radio__InnerChecked",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <span
+          className="c1"
+        />
+      </StyledComponent>
+    </Radio__InnerChecked>
+  </span>,
+]
+`;
+
+exports[`Radio must have a label 1`] = `
+.c1 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c1 > i {
+  display: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+input:focus ~ .c0 > div > span {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+input:checked ~ .c0 > div > span {
+  border-color: #54595f;
+}
+
+input:checked ~ .c0 > div > span > span {
+  display: block;
+}
+
+input:disabled ~ .c0 > div > span {
+  border-color: #d8d8d8;
+}
+
+input:disabled ~ .c0 > div > div {
+  color: #d8d8d8;
+}
+
+.c2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+<label
+  className="c0"
+  data-testid="checkbox-label"
+  htmlFor="radiogroup_the-value"
+>
+  <Box
+    between={3}
+    inline={true}
+    tag="div"
+  >
+    <div
+      className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+    >
+      <Radio__FakeRadio
+        data-testid="fake-input"
+      >
+        <StyledComponent
+          data-testid="fake-input"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-radius: 50%; border-width: 1px; border-style: solid; border-color: #54595f; background-color: #fff; & > i {
+  display: none;
+}",
+                ],
+              },
+              "displayName": "Radio__FakeRadio",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Radio__FakeRadio-sc-1ifvbpn-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <span
+            className="c1"
+            data-testid="fake-input"
+          >
+            <Radio__InnerChecked>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                      "isStatic": true,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "width: 12px; height: 12px; border-radius: 50%; background-color: #248700; display: none;",
+                      ],
+                    },
+                    "displayName": "Radio__InnerChecked",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <span
+                  className="c2"
+                />
+              </StyledComponent>
+            </Radio__InnerChecked>
+          </span>
+        </StyledComponent>
+      </Radio__FakeRadio>
+      <Box
+        between={2}
+        inline={false}
+        tag="div"
+      >
+        <div
+          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+        >
+          <ColoredTextProvider
+            tag="div"
+          >
+            <div>
+              <Text
+                block={false}
+                bold={false}
+                invert={false}
+                size="base"
+              >
+                <span
+                  className="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+                >
+                  Some label
+                </span>
+              </Text>
+            </div>
+          </ColoredTextProvider>
+        </div>
+      </Box>
+    </div>
+  </Box>
+</label>
+`;
+
 exports[`Radio renders 1`] = `
+.c2 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c2 > i {
+  display: none;
+}
+
+.c0 {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+input:focus ~ .c1 > div > span {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+input:checked ~ .c1 > div > span {
+  border-color: #54595f;
+}
+
+input:checked ~ .c1 > div > span > span {
+  display: block;
+}
+
+input:disabled ~ .c1 > div > span {
+  border-color: #d8d8d8;
+}
+
+input:disabled ~ .c1 > div > div {
+  color: #d8d8d8;
+}
+
+.c3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
 <div
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
+  <input
+    aria-invalid="false"
+    class="c0"
+    data-testid="hidden-input"
+    id="the-group_the-value"
+    name="the-group"
+    type="radio"
+    value="the-value"
+  />
   <label
-    class="label"
+    class="c1"
+    data-testid="checkbox-label"
     for="the-group_the-value"
   >
-    <span
-      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz alignFlexStart"
+    <div
+      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
     >
       <span
-        class="fakeRadio unchecked"
+        class="c2"
         data-testid="fake-input"
       >
-        <input
-          aria-invalid="false"
-          class="hiddenInput"
-          id="the-group_the-value"
-          name="the-group"
-          type="radio"
-          value="the-value"
+        <span
+          class="c3"
         />
       </span>
       <div
-        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D flexOne"
+        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
       >
-        <span
-          class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
-        >
-          A label
-        </span>
+        <div>
+          <span
+            class="TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+          >
+            A label
+          </span>
+        </div>
       </div>
-    </span>
+    </div>
   </label>
 </div>
 `;
