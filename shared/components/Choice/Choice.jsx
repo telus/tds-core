@@ -42,7 +42,7 @@ const getClassNames = (inputTypeStyles, checked, focus, feedback, disabled) => {
 }
 
 const renderColoredLabel = (color, content) => (
-  <ColoredTextProvider colorClassName={color}>
+  <ColoredTextProvider colorClassName={joinClassNames(color, styles.ieFullWidth)}>
     <Flexbox direction="row" dangerouslyAddClassName={styles.alignFlexStart}>
       {content}
     </Flexbox>
