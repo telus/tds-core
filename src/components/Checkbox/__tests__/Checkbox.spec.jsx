@@ -188,7 +188,7 @@ describe('Checkbox', () => {
         feedback: 'error',
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText')
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText ieFullWidth')
       expect(findFakeCheckbox()).toHaveClassName('error')
       expect(findFakeCheckbox()).not.toHaveClassName('unchecked')
     })
@@ -200,7 +200,7 @@ describe('Checkbox', () => {
         error: 'Error message',
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText')
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'errorText ieFullWidth')
       expect(findFakeCheckbox()).toHaveClassName('error')
       expect(findFakeCheckbox()).not.toHaveClassName('unchecked')
       expect(findErrorMessage()).toContainReact(
@@ -232,7 +232,7 @@ describe('Checkbox', () => {
         disabled: true,
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText ieFullWidth')
       expect(findCheckboxElement()).toHaveProp('disabled', true)
       expect(findFakeCheckbox()).toHaveClassName('disabled')
     })
@@ -244,7 +244,7 @@ describe('Checkbox', () => {
         checked: true,
       })
 
-      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText')
+      expect(findColoredLabel()).toHaveProp('colorClassName', 'disabledText ieFullWidth')
       expect(findCheckboxElement()).toHaveProp('disabled', true)
       expect(findFakeCheckbox()).toHaveClassName('disabledChecked')
     })
