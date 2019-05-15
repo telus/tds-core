@@ -57,27 +57,27 @@ const StyledLabel = styled.label(({ isError }) => ({
   cursor: 'pointer',
   ...(isError && {
     color: colorCardinal,
-    'input:checked ~ &': {
+    [`${HiddenInput}:checked ~ &`]: {
       color: 'initial',
     },
     'div > span': {
       borderColor: colorCardinal,
     },
   }),
-  'input:focus ~ & > div > span': {
+  [`${HiddenInput}:focus ~ & > div > span`]: {
     boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
     borderColor: isError ? colorCardinal : colorWhite,
   },
-  'input:checked ~ & > div > span': {
+  [`${HiddenInput}:checked ~ & > div > span`]: {
     '& > span': {
       display: 'block',
     },
     borderColor: colorShuttleGrey,
   },
-  'input:disabled ~ & > div > span': {
+  [`${HiddenInput}:disabled ~ & > div > span`]: {
     borderColor: colorGainsboro,
   },
-  'input:disabled ~ & > div > div': {
+  [`${HiddenInput}:disabled ~ & > div > div`]: {
     color: colorGainsboro,
   },
 }))
