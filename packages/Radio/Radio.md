@@ -11,7 +11,31 @@ Radio buttons are used when there is a list of two or more options that are mutu
 
 For information on how to use disabled Radio buttons, please refer to the [disabled form component](#form-disabled-state) guidelines.
 
-<a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" target="_blank">Reference</a>
+[Reference](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
+
+### Uncontrolled Radio
+
+By default, `Radio` will act just as an HTML `input` with the type of `checkbox` will act. It will be uncontrolled by the app itself, and its value can be accessed by referencing the element.
+
+_Note:_ If no `id` is provided, a default `id` will be generated in the format of: "`name`\_`value`"
+
+```jsx
+<Box tag="fieldset" between={2}>
+  <legend>
+    <Text bold size="medium">
+      Show me deals for:
+    </Text>
+  </legend>
+  <Radio name="services" value="mobility" label="Mobility" />
+  <Radio name="services" value="internet" label="Internet" />
+  <Radio name="services" value="tv" label="TV" />
+  <Radio name="services" value="home-phone" label="Home Phone" />
+</Box>
+```
+
+### Controlled Radio
+
+If it is required that the `Radio` be controlled by application state or other external methods, that can be done as well. A `checked` prop must be passed to each `Radio` that needs to be controlled. Additionally, if the user is meant to select the `Radio` by hand, an `onChange` must be provided. If the `Radio` should not be changed by user input, a `readOnly` prop must be provided.
 
 ```jsx
 initialState = {
@@ -22,7 +46,7 @@ const setChoice = event => {
   setState({ choice: event.target.value })
 }
 
-<Box tag="fieldset" between={2}>
+;<Box tag="fieldset" between={2}>
   <legend>
     <Text bold size="medium">
       How would you like to receive your monthly bill?
@@ -58,7 +82,7 @@ const setChoice = event => {
   setState({ choice: event.target.value })
 }
 
-<Box tag="fieldset" between={2}>
+;<Box tag="fieldset" between={2}>
   <legend>
     <Text bold size="medium">
       What will this account be used for?
