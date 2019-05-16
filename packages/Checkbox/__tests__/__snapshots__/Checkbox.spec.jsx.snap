@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox allows numbers as value 1`] = `
-.c3 {
+.c4 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -31,7 +31,7 @@ exports[`Checkbox allows numbers as value 1`] = `
   background-color: #fff;
 }
 
-.c3 > i {
+.c4 > i {
   display: none;
 }
 
@@ -49,21 +49,21 @@ exports[`Checkbox allows numbers as value 1`] = `
   cursor: pointer;
 }
 
-.c0:focus ~ .c2 > div > span {
+.c0:focus ~ .c2 > div > .c3 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c0:checked ~ .c2 > div > span {
+.c0:checked ~ .c2 > div > .c3 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c0:checked ~ .c2 > div > span > i {
+.c0:checked ~ .c2 > div > .c3 > i {
   display: block;
 }
 
-.c0:disabled ~ .c2 > div > span {
+.c0:disabled ~ .c2 > div > .c3 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -93,7 +93,7 @@ exports[`Checkbox allows numbers as value 1`] = `
       class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
     >
       <span
-        class="c3"
+        class="c3 c4"
         data-testid="fake-input"
       >
         <i
@@ -142,7 +142,7 @@ exports[`Checkbox disabled can be disabled 1`] = `
 
 exports[`Checkbox disabled can be disabled 2`] = `
 Array [
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -172,8 +172,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <Checkbox__FakeCheckbox
@@ -186,9 +228,9 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
               "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -198,7 +240,7 @@ Array [
           "displayName": "Checkbox__FakeCheckbox",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "styledComponentId": "c0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -208,7 +250,7 @@ Array [
       forwardedRef={null}
     >
       <span
-        className="c0"
+        className="c0 c1"
         data-testid="fake-input"
       >
         <DecorativeIcon
@@ -231,7 +273,7 @@ Array [
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -261,8 +303,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <StyledComponent
@@ -272,9 +356,9 @@ Array [
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "componentId": "c0",
           "isStatic": true,
-          "lastClassName": "c0",
+          "lastClassName": "c1",
           "rules": Array [
             "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -284,7 +368,7 @@ Array [
         "displayName": "Checkbox__FakeCheckbox",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+        "styledComponentId": "c0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -294,7 +378,7 @@ Array [
     forwardedRef={null}
   >
     <span
-      className="c0"
+      className="c0 c1"
       data-testid="fake-input"
     >
       <DecorativeIcon
@@ -316,7 +400,7 @@ Array [
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -346,12 +430,54 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
 }
 
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
 <span
-    className="c0"
+    className="c0 c1"
     data-testid="fake-input"
   >
     <DecorativeIcon
@@ -402,7 +528,7 @@ exports[`Checkbox disabled can be disabled and checked 1`] = `
 
 exports[`Checkbox disabled can be disabled and checked 2`] = `
 Array [
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -432,8 +558,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <Checkbox__FakeCheckbox
@@ -446,9 +614,9 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
               "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -458,7 +626,7 @@ Array [
           "displayName": "Checkbox__FakeCheckbox",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "styledComponentId": "c0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -468,7 +636,7 @@ Array [
       forwardedRef={null}
     >
       <span
-        className="c0"
+        className="c0 c1"
         data-testid="fake-input"
       >
         <DecorativeIcon
@@ -491,7 +659,7 @@ Array [
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -521,8 +689,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <StyledComponent
@@ -532,9 +742,9 @@ Array [
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "componentId": "c0",
           "isStatic": true,
-          "lastClassName": "c0",
+          "lastClassName": "c1",
           "rules": Array [
             "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -544,7 +754,7 @@ Array [
         "displayName": "Checkbox__FakeCheckbox",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+        "styledComponentId": "c0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -554,7 +764,7 @@ Array [
     forwardedRef={null}
   >
     <span
-      className="c0"
+      className="c0 c1"
       data-testid="fake-input"
     >
       <DecorativeIcon
@@ -576,7 +786,7 @@ Array [
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -606,12 +816,54 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
 }
 
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
 <span
-    className="c0"
+    className="c0 c1"
     data-testid="fake-input"
   >
     <DecorativeIcon
@@ -666,7 +918,7 @@ exports[`Checkbox error can have an error feedback state 1`] = `
 
 exports[`Checkbox error can have an error feedback state 2`] = `
 Array [
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -696,8 +948,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <Checkbox__FakeCheckbox
@@ -710,9 +1004,9 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
               "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -722,7 +1016,7 @@ Array [
           "displayName": "Checkbox__FakeCheckbox",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "styledComponentId": "c0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -732,7 +1026,7 @@ Array [
       forwardedRef={null}
     >
       <span
-        className="c0"
+        className="c0 c1"
         data-testid="fake-input"
       >
         <DecorativeIcon
@@ -755,7 +1049,7 @@ Array [
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -785,8 +1079,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <StyledComponent
@@ -796,9 +1132,9 @@ Array [
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "componentId": "c0",
           "isStatic": true,
-          "lastClassName": "c0",
+          "lastClassName": "c1",
           "rules": Array [
             "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -808,7 +1144,7 @@ Array [
         "displayName": "Checkbox__FakeCheckbox",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+        "styledComponentId": "c0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -818,7 +1154,7 @@ Array [
     forwardedRef={null}
   >
     <span
-      className="c0"
+      className="c0 c1"
       data-testid="fake-input"
     >
       <DecorativeIcon
@@ -840,7 +1176,7 @@ Array [
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -870,12 +1206,54 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
 }
 
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
 <span
-    className="c0"
+    className="c0 c1"
     data-testid="fake-input"
   >
     <DecorativeIcon
@@ -930,7 +1308,7 @@ exports[`Checkbox error can have an error message 1`] = `
 
 exports[`Checkbox error can have an error message 2`] = `
 Array [
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -960,8 +1338,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <Checkbox__FakeCheckbox
@@ -974,9 +1394,9 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
               "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -986,7 +1406,7 @@ Array [
           "displayName": "Checkbox__FakeCheckbox",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "styledComponentId": "c0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -996,7 +1416,7 @@ Array [
       forwardedRef={null}
     >
       <span
-        className="c0"
+        className="c0 c1"
         data-testid="fake-input"
       >
         <DecorativeIcon
@@ -1019,7 +1439,7 @@ Array [
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1049,8 +1469,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <StyledComponent
@@ -1060,9 +1522,9 @@ Array [
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "componentId": "c0",
           "isStatic": true,
-          "lastClassName": "c0",
+          "lastClassName": "c1",
           "rules": Array [
             "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -1072,7 +1534,7 @@ Array [
         "displayName": "Checkbox__FakeCheckbox",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+        "styledComponentId": "c0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1082,7 +1544,7 @@ Array [
     forwardedRef={null}
   >
     <span
-      className="c0"
+      className="c0 c1"
       data-testid="fake-input"
     >
       <DecorativeIcon
@@ -1104,7 +1566,7 @@ Array [
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1134,12 +1596,54 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
 }
 
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
 <span
-    className="c0"
+    className="c0 c1"
     data-testid="fake-input"
   >
     <DecorativeIcon
@@ -1200,7 +1704,7 @@ exports[`Checkbox error can have an error message 3`] = `
 
 exports[`Checkbox error does not appear as an error when it is checked 1`] = `
 Array [
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1230,8 +1734,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <Checkbox__FakeCheckbox
@@ -1244,9 +1790,9 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
               "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -1256,7 +1802,7 @@ Array [
           "displayName": "Checkbox__FakeCheckbox",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "styledComponentId": "c0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1266,7 +1812,7 @@ Array [
       forwardedRef={null}
     >
       <span
-        className="c0"
+        className="c0 c1"
         data-testid="fake-input"
       >
         <DecorativeIcon
@@ -1289,7 +1835,7 @@ Array [
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1319,8 +1865,50 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <StyledComponent
@@ -1330,9 +1918,9 @@ Array [
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "componentId": "c0",
           "isStatic": true,
-          "lastClassName": "c0",
+          "lastClassName": "c1",
           "rules": Array [
             "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -1342,7 +1930,7 @@ Array [
         "displayName": "Checkbox__FakeCheckbox",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+        "styledComponentId": "c0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1352,7 +1940,7 @@ Array [
     forwardedRef={null}
   >
     <span
-      className="c0"
+      className="c0 c1"
       data-testid="fake-input"
     >
       <DecorativeIcon
@@ -1374,7 +1962,7 @@ Array [
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1404,12 +1992,54 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
 }
 
+.c4:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c4:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.c3 div > .c0 {
+  border-color: #c12335;
+}
+
+.c4:focus ~ .c3 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #c12335;
+}
+
+.c4:checked ~ .c3 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c4:checked ~ .c3 > div > .c0 > i {
+  display: block;
+}
+
+.c4:disabled ~ .c3 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
 <span
-    className="c0"
+    className="c0 c1"
     data-testid="fake-input"
   >
     <DecorativeIcon
@@ -1435,7 +2065,7 @@ Array [
 
 exports[`Checkbox focusing can be focused and unfocused 1`] = `
 Array [
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1465,8 +2095,27 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <Checkbox__FakeCheckbox
@@ -1479,9 +2128,9 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
               "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -1491,7 +2140,7 @@ Array [
           "displayName": "Checkbox__FakeCheckbox",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "styledComponentId": "c0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1501,7 +2150,7 @@ Array [
       forwardedRef={null}
     >
       <span
-        className="c0"
+        className="c0 c1"
         data-testid="fake-input"
       >
         <DecorativeIcon
@@ -1524,7 +2173,7 @@ Array [
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1554,8 +2203,27 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <StyledComponent
@@ -1565,9 +2233,9 @@ Array [
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "componentId": "c0",
           "isStatic": true,
-          "lastClassName": "c0",
+          "lastClassName": "c1",
           "rules": Array [
             "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -1577,7 +2245,7 @@ Array [
         "displayName": "Checkbox__FakeCheckbox",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+        "styledComponentId": "c0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1587,7 +2255,7 @@ Array [
     forwardedRef={null}
   >
     <span
-      className="c0"
+      className="c0 c1"
       data-testid="fake-input"
     >
       <DecorativeIcon
@@ -1609,7 +2277,7 @@ Array [
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1639,12 +2307,31 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
 }
 
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
 <span
-    className="c0"
+    className="c0 c1"
     data-testid="fake-input"
   >
     <DecorativeIcon
@@ -1670,7 +2357,7 @@ Array [
 
 exports[`Checkbox focusing can be focused and unfocused 2`] = `
 Array [
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1700,8 +2387,27 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <Checkbox__FakeCheckbox
@@ -1714,9 +2420,9 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
               "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -1726,7 +2432,7 @@ Array [
           "displayName": "Checkbox__FakeCheckbox",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "styledComponentId": "c0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1736,7 +2442,7 @@ Array [
       forwardedRef={null}
     >
       <span
-        className="c0"
+        className="c0 c1"
         data-testid="fake-input"
       >
         <DecorativeIcon
@@ -1759,7 +2465,7 @@ Array [
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1789,8 +2495,27 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <StyledComponent
@@ -1800,9 +2525,9 @@ Array [
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "componentId": "c0",
           "isStatic": true,
-          "lastClassName": "c0",
+          "lastClassName": "c1",
           "rules": Array [
             "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -1812,7 +2537,7 @@ Array [
         "displayName": "Checkbox__FakeCheckbox",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+        "styledComponentId": "c0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1822,7 +2547,7 @@ Array [
     forwardedRef={null}
   >
     <span
-      className="c0"
+      className="c0 c1"
       data-testid="fake-input"
     >
       <DecorativeIcon
@@ -1844,7 +2569,7 @@ Array [
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1874,12 +2599,31 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
 }
 
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
 <span
-    className="c0"
+    className="c0 c1"
     data-testid="fake-input"
   >
     <DecorativeIcon
@@ -1905,7 +2649,7 @@ Array [
 
 exports[`Checkbox has a fake checkbox 1`] = `
 Array [
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1935,8 +2679,27 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <Checkbox__FakeCheckbox
@@ -1949,9 +2712,9 @@ Array [
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+            "componentId": "c0",
             "isStatic": true,
-            "lastClassName": "c0",
+            "lastClassName": "c1",
             "rules": Array [
               "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -1961,7 +2724,7 @@ Array [
           "displayName": "Checkbox__FakeCheckbox",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "styledComponentId": "c0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1971,7 +2734,7 @@ Array [
       forwardedRef={null}
     >
       <span
-        className="c0"
+        className="c0 c1"
         data-testid="fake-input"
       >
         <DecorativeIcon
@@ -1994,7 +2757,7 @@ Array [
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2024,8 +2787,27 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <StyledComponent
@@ -2035,9 +2817,9 @@ Array [
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+          "componentId": "c0",
           "isStatic": true,
-          "lastClassName": "c0",
+          "lastClassName": "c1",
           "rules": Array [
             "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -2047,7 +2829,7 @@ Array [
         "displayName": "Checkbox__FakeCheckbox",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+        "styledComponentId": "c0",
         "target": "span",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -2057,7 +2839,7 @@ Array [
     forwardedRef={null}
   >
     <span
-      className="c0"
+      className="c0 c1"
       data-testid="fake-input"
     >
       <DecorativeIcon
@@ -2079,7 +2861,7 @@ Array [
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2109,12 +2891,31 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
 }
 
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
 <span
-    className="c0"
+    className="c0 c1"
     data-testid="fake-input"
   >
     <DecorativeIcon
@@ -2140,7 +2941,7 @@ Array [
 
 exports[`Checkbox must have a label 1`] = `
 Array [
-  .c0 {
+  .c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2170,8 +2971,27 @@ Array [
   background-color: #fff;
 }
 
-.c0 > i {
+.c1 > i {
   display: none;
+}
+
+.c3:focus ~ .c2 > div > .c0 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c3:checked ~ .c2 > div > .c0 {
+  background-color: #248700;
+  border-color: #248700;
+}
+
+.c3:checked ~ .c2 > div > .c0 > i {
+  display: block;
+}
+
+.c3:disabled ~ .c2 > div > .c0 {
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
 }
 
 <div
@@ -2187,9 +3007,9 @@ Array [
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "Checkbox__FakeCheckbox-jt362p-0",
+              "componentId": "c0",
               "isStatic": true,
-              "lastClassName": "c0",
+              "lastClassName": "c1",
               "rules": Array [
                 "height: 20px; width: 20px; min-height: 20px; min-width: 20px; outline: 0; line-height: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 0.125rem; transition: border-color 0.1s linear, background-color 0.1s linear; border-width: 1px; border-style: solid; border-radius: 4px; border-color: #54595f; background-color: #fff; & > i {
   display: none;
@@ -2199,7 +3019,7 @@ Array [
             "displayName": "Checkbox__FakeCheckbox",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "Checkbox__FakeCheckbox-jt362p-0",
+            "styledComponentId": "c0",
             "target": "span",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -2209,7 +3029,7 @@ Array [
         forwardedRef={null}
       >
         <span
-          className="c0"
+          className="c0 c1"
           data-testid="fake-input"
         >
           <DecorativeIcon
@@ -2306,7 +3126,7 @@ Array [
 `;
 
 exports[`Checkbox renders 1`] = `
-.c3 {
+.c4 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2336,7 +3156,7 @@ exports[`Checkbox renders 1`] = `
   background-color: #fff;
 }
 
-.c3 > i {
+.c4 > i {
   display: none;
 }
 
@@ -2354,21 +3174,21 @@ exports[`Checkbox renders 1`] = `
   cursor: pointer;
 }
 
-.c0:focus ~ .c2 > div > span {
+.c0:focus ~ .c2 > div > .c3 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c0:checked ~ .c2 > div > span {
+.c0:checked ~ .c2 > div > .c3 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c0:checked ~ .c2 > div > span > i {
+.c0:checked ~ .c2 > div > .c3 > i {
   display: block;
 }
 
-.c0:disabled ~ .c2 > div > span {
+.c0:disabled ~ .c2 > div > .c3 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -2398,7 +3218,7 @@ exports[`Checkbox renders 1`] = `
       class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
     >
       <span
-        class="c3"
+        class="c3 c4"
         data-testid="fake-input"
       >
         <i

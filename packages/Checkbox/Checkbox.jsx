@@ -61,22 +61,22 @@ const StyledLabel = styled.label(({ isError }) => ({
   display: 'flex',
   cursor: 'pointer',
   ...(isError && {
-    'div > span': {
+    [`div > ${FakeCheckbox}`]: {
       borderColor: colorCardinal,
     },
   }),
-  [`${HiddenInput}:focus ~ & > div > span`]: {
+  [`${HiddenInput}:focus ~ & > div > ${FakeCheckbox}`]: {
     boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
     borderColor: isError ? colorCardinal : colorWhite,
   },
-  [`${HiddenInput}:checked ~ & > div > span`]: {
+  [`${HiddenInput}:checked ~ & > div > ${FakeCheckbox}`]: {
     backgroundColor: colorAccessibleGreen,
     borderColor: colorAccessibleGreen,
     '& > i': {
       display: 'block',
     },
   },
-  [`${HiddenInput}:disabled ~ & > div > span`]: {
+  [`${HiddenInput}:disabled ~ & > div > ${FakeCheckbox}`]: {
     backgroundColor: colorGainsboro,
     borderColor: colorGainsboro,
   },
@@ -101,7 +101,7 @@ const getErrorId = (name, value, id) => {
 /**
  * @version ./package.json
  */
-const Checkbox = ({ id, name, value, label, feedback, error, ...rest }) => (
+const Checkbox = React.forwardRef(({ id, name, value, label, feedback, error, ...rest }, ref) => (
   <Box between={2}>
     {feedback === 'error' && renderError(error, getErrorId(name, value, id))}
     <HiddenInput
@@ -112,6 +112,7 @@ const Checkbox = ({ id, name, value, label, feedback, error, ...rest }) => (
       aria-invalid={feedback === 'error'}
       aria-describedby={feedback === 'error' ? getErrorId(name, value, id) : undefined}
       data-testid="hidden-input"
+      ref={ref}
       {...safeRest(rest)}
     />
     <StyledLabel
@@ -129,7 +130,7 @@ const Checkbox = ({ id, name, value, label, feedback, error, ...rest }) => (
       </Box>
     </StyledLabel>
   </Box>
-)
+))
 
 Checkbox.propTypes = {
   /**
@@ -163,5 +164,7 @@ Checkbox.defaultProps = {
   feedback: undefined,
   error: undefined,
 }
+
+Checkbox.displayName = 'Checkbox'
 
 export default Checkbox
