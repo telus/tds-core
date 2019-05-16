@@ -60,21 +60,21 @@ const StyledLabel = styled.label(({ isError }) => ({
     [`${HiddenInput}:checked ~ &`]: {
       color: 'initial',
     },
-    'div > span': {
+    [`div > ${FakeRadio}`]: {
       borderColor: colorCardinal,
     },
   }),
-  [`${HiddenInput}:focus ~ & > div > span`]: {
+  [`${HiddenInput}:focus ~ & > div > ${FakeRadio}`]: {
     boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
     borderColor: isError ? colorCardinal : colorWhite,
   },
-  [`${HiddenInput}:checked ~ & > div > span`]: {
+  [`${HiddenInput}:checked ~ & > div > ${FakeRadio}`]: {
     '& > span': {
       display: 'block',
     },
     borderColor: colorShuttleGrey,
   },
-  [`${HiddenInput}:disabled ~ & > div > span`]: {
+  [`${HiddenInput}:disabled ~ & > div > ${FakeRadio}`]: {
     borderColor: colorGainsboro,
   },
   [`${HiddenInput}:disabled ~ & > div > div`]: {
@@ -106,37 +106,41 @@ const getErrorId = (name, value, id) => {
 /**
  * @version ./package.json
  */
-const Radio = ({ id, name, value, label, feedback, error, description, ...rest }) => (
-  <Box between={2}>
-    {feedback === 'error' && renderError(error, getErrorId(name, value, id))}
-    <HiddenInput
-      type="radio"
-      id={id || getGeneratedId(name, value)}
-      name={name}
-      value={value}
-      aria-invalid={feedback === 'error'}
-      aria-describedby={feedback === 'error' ? getErrorId(name, value, id) : undefined}
-      data-testid="hidden-input"
-      {...safeRest(rest)}
-    />
-    <StyledLabel
-      isError={feedback === 'error'}
-      htmlFor={id || getGeneratedId(name, value)}
-      data-testid="checkbox-label"
-    >
-      <Box between={3} inline>
-        <FakeRadio data-testid="fake-input">
-          <InnerChecked />
-        </FakeRadio>
-        <Box between={2}>
-          <ColoredTextProvider>
-            <Text>{label}</Text>
-          </ColoredTextProvider>
-          {description && <Text size="small">{description}</Text>}
+
+const Radio = React.forwardRef(
+  ({ id, name, value, label, feedback, error, description, ...rest }, ref) => (
+    <Box between={2}>
+      {feedback === 'error' && renderError(error, getErrorId(name, value, id))}
+      <HiddenInput
+        type="radio"
+        id={id || getGeneratedId(name, value)}
+        name={name}
+        value={value}
+        aria-invalid={feedback === 'error'}
+        aria-describedby={feedback === 'error' ? getErrorId(name, value, id) : undefined}
+        data-testid="hidden-input"
+        ref={ref}
+        {...safeRest(rest)}
+      />
+      <StyledLabel
+        isError={feedback === 'error'}
+        htmlFor={id || getGeneratedId(name, value)}
+        data-testid="checkbox-label"
+      >
+        <Box between={3} inline>
+          <FakeRadio data-testid="fake-input">
+            <InnerChecked />
+          </FakeRadio>
+          <Box between={2}>
+            <ColoredTextProvider>
+              <Text>{label}</Text>
+            </ColoredTextProvider>
+            {description && <Text size="small">{description}</Text>}
+          </Box>
         </Box>
-      </Box>
-    </StyledLabel>
-  </Box>
+      </StyledLabel>
+    </Box>
+  )
 )
 
 Radio.propTypes = {
@@ -176,5 +180,7 @@ Radio.defaultProps = {
   feedback: undefined,
   error: undefined,
 }
+
+Radio.displayName = 'Radio'
 
 export default Radio
