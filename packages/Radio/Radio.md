@@ -15,7 +15,7 @@ For information on how to use disabled Radio buttons, please refer to the [disab
 
 ### Uncontrolled Radio
 
-By default, `Radio` will act just as an HTML `input` with the type of `checkbox` will act. It will be uncontrolled by the app itself, and its value can be accessed by referencing the element.
+By default, `Radio` will act just as an HTML `input` with the type of `radio` will act. It will be uncontrolled by the app itself, and its value can be accessed by referencing the element.
 
 _Note:_ If no `id` is provided, a default `id` will be generated in the format of: "`name`\_`value`"
 
