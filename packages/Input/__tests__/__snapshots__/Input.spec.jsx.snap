@@ -1,74 +1,885 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input renders 1`] = `
+exports[`Input feedback states ensures that the contents do not overlap the icons 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  min-height: 3.25rem;
+  max-height: 3.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.c2::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: :none;
+  margin: 0;
+}
+
+.c2:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+.c2:not(:focus) {
+  border-color: #248700;
+}
+
+.c3 {
+  right: 1rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
-  <div
-    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
-  >
-    <label
-      for="the-input"
+  <div>
+    <div
+      class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
     >
-      <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz TDS_FormField-modules__alignCenter___3y2Mj"
+      <label
+        for="the-input"
       >
         <span
-          class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
         >
-          The input
+          <span
+            class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          >
+            The input
+          </span>
         </span>
-      </span>
-    </label>
+      </label>
+    </div>
   </div>
   <div
-    class="relative"
+    class="c1"
   >
     <input
       aria-invalid="false"
-      class="TDS_FormField-modules__default___3LtXb TDS_FormField-modules__formField___29WmQ TDS_Borders-modules__thin___1JHOl TDS_Borders-modules__rounded___3df1Q TDS_Forms-modules__font___g7OGX TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8 TDS_FormField-modules__defaultBgColor___NByyE TDS_FormField-modules__defaultBoxShadow___21E8t withoutFeedbackIcon"
+      class="c2"
       id="the-input"
       type="text"
     />
     <div
-      class="iconsPosition"
+      class="c3"
+    >
+      <div
+        style="transition:opacity 100ms ease-in-out;opacity:1"
+      >
+        <div
+          class="TDS_IconWrapper-modules__fixLineHeight___3tqIl"
+        >
+          <i
+            aria-label="The value of this input field is valid."
+            class="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input label can have a short hint 1`] = `
+Object {
+  "blur": [Function],
+  "changeValueTo": [Function],
+  "findFeedbackIconFade": [Function],
+  "findHelper": [Function],
+  "findInputElement": [Function],
+  "focus": [Function],
+  "input": .c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  min-height: 3.25rem;
+  max-height: 3.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.c2::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: :none;
+  margin: 0;
+}
+
+.c2:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+.c3 {
+  right: 1rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c1 {
+  position: relative;
+}
+
+<Input
+    hint="The short hint"
+    hintPosition="inline"
+    label="The input"
+    type="text"
+  >
+    <Box
+      between={2}
+      inline={false}
+      tag="div"
+    >
+      <div
+        className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+      >
+        <div>
+          <Box
+            between="space-between"
+            inline={true}
+            tag="div"
+          >
+            <div
+              className="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
+            >
+              <label
+                htmlFor="the-input"
+              >
+                <Styled(Box)
+                  between={2}
+                  inline={true}
+                  tag="span"
+                >
+                  <StyledComponent
+                    between={2}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": true,
+                          "lastClassName": "c0",
+                          "rules": Array [
+                            "align-items: center;",
+                          ],
+                        },
+                        "displayName": "Styled(Box)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    inline={true}
+                    tag="span"
+                  >
+                    <Box
+                      between={2}
+                      className="c0"
+                      inline={true}
+                      tag="span"
+                    >
+                      <span
+                        className="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
+                      >
+                        <Text
+                          block={false}
+                          bold={true}
+                          invert={false}
+                          size="medium"
+                        >
+                          <span
+                            className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+                          >
+                            The input
+                          </span>
+                        </Text>
+                        <Text
+                          block={false}
+                          bold={false}
+                          id={false}
+                          invert={false}
+                          size="small"
+                        >
+                          <span
+                            className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                            id={false}
+                          >
+                            The short hint
+                          </span>
+                        </Text>
+                      </span>
+                    </Box>
+                  </StyledComponent>
+                </Styled(Box)>
+              </label>
+            </div>
+          </Box>
+        </div>
+        <styled.div
+          _css={
+            Object {
+              "position": "relative",
+            }
+          }
+        >
+          <StyledComponent
+            _css={
+              Object {
+                "position": "relative",
+              }
+            }
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    [Function],
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              <Input__StyledInput
+                aria-invalid={false}
+                id="the-input"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                type="text"
+              >
+                <StyledComponent
+                  aria-invalid={false}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Input__StyledInput-sc-8rmijy-0",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "width: 100%; margin: 0; outline: 0; text-overflow: ellipsis; border-color: #54595f; &::placeholder {
+  font: inherit; letter-spacing: inherit; line-height: inherit; color: #54595f;
+}",
+                          "border-width: 1px; border-style: solid;",
+                          "border-radius: 4px;",
+                          "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                          "word-wrap: break-word; font-size: 1rem; letter-spacing: -0.8px; line-height: 1.5;",
+                          "font-weight: 400;",
+                          "color: #2a2c2e;",
+                          [Function],
+                          "&:focus {
+  border-color: transparent; box-shadow: 0 0 4px 1px #54595f; background-color: #fff;
+}",
+                          [Function],
+                          [Function],
+                        ],
+                      },
+                      "displayName": "Input__StyledInput",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Input__StyledInput-sc-8rmijy-0",
+                      "target": "input",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  id="the-input"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                >
+                  <input
+                    aria-invalid={false}
+                    className="c2"
+                    id="the-input"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    type="text"
+                  />
+                </StyledComponent>
+              </Input__StyledInput>
+              <Input__StyledFeedbackIcon>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Input__StyledFeedbackIcon-sc-8rmijy-1",
+                        "isStatic": true,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          "right: 1rem;",
+                          "position: absolute;",
+                          "top: 50%; transform: translateY(-50%);",
+                        ],
+                      },
+                      "displayName": "Input__StyledFeedbackIcon",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Input__StyledFeedbackIcon-sc-8rmijy-1",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c3"
+                  >
+                    <FeedbackIcon
+                      showIcon={false}
+                    >
+                      <Fade
+                        in={false}
+                        mountOnEnter={true}
+                        timeout={100}
+                        unmountOnExit={true}
+                      >
+                        <Transition
+                          appear={false}
+                          enter={true}
+                          exit={true}
+                          in={false}
+                          mountOnEnter={true}
+                          onEnter={[Function]}
+                          onEntered={[Function]}
+                          onEntering={[Function]}
+                          onExit={[Function]}
+                          onExited={[Function]}
+                          onExiting={[Function]}
+                          timeout={100}
+                          unmountOnExit={true}
+                        />
+                      </Fade>
+                    </FeedbackIcon>
+                  </div>
+                </StyledComponent>
+              </Input__StyledFeedbackIcon>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </Box>
+  </Input>,
+  "label": .c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<label
+    htmlFor="the-input"
+  >
+    <Styled(Box)
+      between={2}
+      inline={true}
+      tag="span"
+    >
+      <StyledComponent
+        between={2}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "align-items: center;",
+              ],
+            },
+            "displayName": "Styled(Box)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        inline={true}
+        tag="span"
+      >
+        <Box
+          between={2}
+          className="c0"
+          inline={true}
+          tag="span"
+        >
+          <span
+            className="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
+          >
+            <Text
+              block={false}
+              bold={true}
+              invert={false}
+              size="medium"
+            >
+              <span
+                className="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+              >
+                The input
+              </span>
+            </Text>
+            <Text
+              block={false}
+              bold={false}
+              id={false}
+              invert={false}
+              size="small"
+            >
+              <span
+                className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                id={false}
+              >
+                The short hint
+              </span>
+            </Text>
+          </span>
+        </Box>
+      </StyledComponent>
+    </Styled(Box)>
+  </label>,
+}
+`;
+
+exports[`Input renders 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  min-height: 3.25rem;
+  max-height: 3.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.c2::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: :none;
+  margin: 0;
+}
+
+.c2:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+.c3 {
+  right: 1rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+>
+  <div>
+    <div
+      class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
+    >
+      <label
+        for="the-input"
+      >
+        <span
+          class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
+        >
+          <span
+            class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          >
+            The input
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+  <div
+    class="c1"
+  >
+    <input
+      aria-invalid="false"
+      class="c2"
+      id="the-input"
+      type="text"
+    />
+    <div
+      class="c3"
     />
   </div>
 </div>
 `;
 
 exports[`Input renders with a feedback state and icon 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  min-height: 3.25rem;
+  max-height: 3.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.c2::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: :none;
+  margin: 0;
+}
+
+.c2:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+.c2:not(:focus) {
+  border-color: #c12335;
+}
+
+.c3 {
+  right: 1rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
-  <div
-    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
-  >
-    <label
-      for="the-input"
+  <div>
+    <div
+      class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
     >
-      <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz TDS_FormField-modules__alignCenter___3y2Mj"
+      <label
+        for="the-input"
       >
         <span
-          class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
         >
-          The input
+          <span
+            class="TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          >
+            The input
+          </span>
         </span>
-      </span>
-    </label>
+      </label>
+    </div>
   </div>
   <div
-    class="relative"
+    class="c1"
   >
     <input
       aria-invalid="true"
-      class="TDS_FormField-modules__error___2pMXQ TDS_FormField-modules__formField___29WmQ TDS_Borders-modules__thin___1JHOl TDS_Borders-modules__rounded___3df1Q TDS_Forms-modules__font___g7OGX TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8 TDS_FormField-modules__defaultBgColor___NByyE TDS_FormField-modules__defaultBoxShadow___21E8t withFeedbackIcon"
+      class="c2"
       id="the-input"
       type="text"
     />
     <div
-      class="iconsPosition"
+      class="c3"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
