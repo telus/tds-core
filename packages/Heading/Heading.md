@@ -77,9 +77,9 @@ to have a different visual hierarchy of text.
 </FlexGrid>
 ```
 
-### Superscript
+### Using superscript copy within Heading
 
-Use a standard HTML `<sup>` element.
+The `<Heading.Sup>` component is deprecated. Use a standard HTML `<sup>` element instead.
 
 ```jsx
 <Box between={3}>

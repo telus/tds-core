@@ -1,4 +1,4 @@
-**Deprecated, please use a `<sup>` element documented in `Heading` instead.**
+**Deprecated, please use a `<sup>` element documented in [Heading](#heading) instead.**
 
 ```jsx
 <Box between={3}>
