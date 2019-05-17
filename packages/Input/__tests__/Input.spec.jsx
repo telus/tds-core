@@ -65,9 +65,9 @@ describe('Input', () => {
     })
 
     it('can have a short hint', () => {
-      const { label } = doMount({ hint: 'The short hint' })
+      const input = doMount({ hint: 'The short hint' })
 
-      expect(label).toContainReact(<Text size="small">The short hint</Text>)
+      expect(input).toMatchSnapshot()
     })
 
     it('can have a long hint', () => {
@@ -133,9 +133,9 @@ describe('Input', () => {
     })
 
     it('has a value that can be changed', () => {
-      const { findInputElement, changeValueTo } = doMount({ value: 'initial value' })
+      const { findInputElement, input } = doMount({ value: 'initial value' })
 
-      changeValueTo('new value')
+      input.setProps({ value: 'new value' })
 
       expect(findInputElement()).toHaveValue('new value')
     })
@@ -143,13 +143,12 @@ describe('Input', () => {
     it('will notify when its value changes', () => {
       const onChangeMock = jest.fn()
 
-      const { findInputElement, changeValueTo } = doMount({ onChange: onChangeMock })
+      const { changeValueTo } = doMount({ onChange: onChangeMock })
       changeValueTo('new value')
 
       expect(onChangeMock).toHaveBeenCalledWith(
         expect.objectContaining({ target: { value: 'new value' } })
       )
-      expect(findInputElement()).toHaveValue('new value')
     })
 
     it('can receive a new value from a parent component', () => {
@@ -204,15 +203,14 @@ describe('Input', () => {
       const { findFeedbackIconFade, focus } = doMount({ feedback: 'success' })
 
       expect(findFeedbackIconFade()).toHaveProp('in', true)
-
       focus()
       expect(findFeedbackIconFade()).toHaveProp('in', false)
     })
 
     it('ensures that the contents do not overlap the icons', () => {
-      const { findInputElement } = doMount({ feedback: 'success' })
+      const input = doRender({ feedback: 'success' })
 
-      expect(findInputElement()).toHaveClassName('withFeedbackIcon')
+      expect(input).toMatchSnapshot()
     })
   })
 
