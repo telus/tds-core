@@ -65,7 +65,7 @@ describe('Footnote', () => {
       const onClose = jest.fn()
       doMountWrapper({ isOpen: true, onClose })
 
-      events.mousedown({ type: 'mousedown', x: 0, y: 0 })
+      events.click({ type: 'click', x: 0, y: 0 })
       expect(onClose).toHaveBeenCalled()
     })
 

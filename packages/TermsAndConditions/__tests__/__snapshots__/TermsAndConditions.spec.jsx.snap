@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TermsAndConditions renders 1`] = `
-.c5 {
+.c4 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -13,8 +13,8 @@ exports[`TermsAndConditions renders 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c5 .c8,
-.c5 sup {
+.c4 .c7,
+.c4 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -22,15 +22,46 @@ exports[`TermsAndConditions renders 1`] = `
   top: -0.5em;
 }
 
-.c7 {
-  padding-left: 1rem;
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
 }
 
-.c7 > span {
-  font-weight: 500;
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 300ms;
+  -webkit-transition: transform 300ms;
+  transition: transform 300ms;
+  -webkit-transform: translate(6px,-1px);
+  -ms-transform: translate(6px,-1px);
+  transform: translate(6px,-1px);
+}
+
+undefined:hover .c3 {
+  -webkit-transform: translate(6px,2px);
+  -ms-transform: translate(6px,2px);
+  transform: translate(6px,2px);
 }
 
 .c6 {
+  padding-left: 1rem;
+}
+
+.c6 > span {
+  font-weight: 500;
+}
+
+.c5 {
   list-style: decimal;
   word-wrap: break-word;
   font-weight: 700;
@@ -44,51 +75,20 @@ exports[`TermsAndConditions renders 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #fff;
-}
-
-.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c2 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
-.c4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: -webkit-transform 300ms;
-  -webkit-transition: transform 300ms;
-  transition: transform 300ms;
-  -webkit-transform: translate(6px,-1px);
-  -ms-transform: translate(6px,-1px);
-  transform: translate(6px,-1px);
-}
-
-.c0:hover .c4 {
-  -webkit-transform: translate(6px,2px);
-  -ms-transform: translate(6px,2px);
-  transform: translate(6px,2px);
-}
-
 @media (min-width:768px) {
-  .c6 {
+  .c5 {
     padding-left: 1rem;
   }
 }
@@ -107,14 +107,14 @@ exports[`TermsAndConditions renders 1`] = `
         class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
       >
         <button
-          class="clickable c0 c1"
+          class="clickable c0"
           type="button"
         >
           <div
-            class="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
+            class="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c1"
           >
             <span
-              class="c3"
+              class="c2"
             >
               <svg
                 height="24px"
@@ -130,7 +130,7 @@ exports[`TermsAndConditions renders 1`] = `
                 />
               </svg>
               <span
-                class="c4"
+                class="c3"
               >
                 <svg
                   height="8px"
@@ -148,7 +148,7 @@ exports[`TermsAndConditions renders 1`] = `
               </span>
             </span>
             <span
-              class="c5"
+              class="c4"
               data-testid="heading"
             >
               View terms and conditions
@@ -190,24 +190,24 @@ exports[`TermsAndConditions renders 1`] = `
               class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
             >
               <ol
-                class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
+                class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c5"
               >
                 <li
-                  class="c7"
+                  class="c6"
                 >
                   <span>
                     One
                   </span>
                 </li>
                 <li
-                  class="c7"
+                  class="c6"
                 >
                   <span>
                     Two
                   </span>
                 </li>
                 <li
-                  class="c7"
+                  class="c6"
                 >
                   <span>
                     Three
@@ -227,7 +227,7 @@ exports[`TermsAndConditions renders 1`] = `
 `;
 
 exports[`TermsAndConditions renders expanded 1`] = `
-.c5 {
+.c4 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -239,8 +239,8 @@ exports[`TermsAndConditions renders expanded 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c5 .c9,
-.c5 sup {
+.c4 .c7,
+.c4 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -248,15 +248,46 @@ exports[`TermsAndConditions renders expanded 1`] = `
   top: -0.5em;
 }
 
-.c7 {
-  padding-left: 1rem;
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
 }
 
-.c7 > span {
-  font-weight: 500;
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 300ms;
+  -webkit-transition: transform 300ms;
+  transition: transform 300ms;
+  -webkit-transform: translate(6px,-2px);
+  -ms-transform: translate(6px,-2px);
+  transform: translate(6px,-2px);
+}
+
+undefined:hover .c3 {
+  -webkit-transform: translate(6px,-5px);
+  -ms-transform: translate(6px,-5px);
+  transform: translate(6px,-5px);
 }
 
 .c6 {
+  padding-left: 1rem;
+}
+
+.c6 > span {
+  font-weight: 500;
+}
+
+.c5 {
   list-style: decimal;
   word-wrap: break-word;
   font-weight: 700;
@@ -270,57 +301,20 @@ exports[`TermsAndConditions renders expanded 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #fff;
-}
-
-.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c2 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
-.c0:hover .c8 {
-  -webkit-transform: translate(6px,2px);
-  -ms-transform: translate(6px,2px);
-  transform: translate(6px,2px);
-}
-
-.c4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: -webkit-transform 300ms;
-  -webkit-transition: transform 300ms;
-  transition: transform 300ms;
-  -webkit-transform: translate(6px,-2px);
-  -ms-transform: translate(6px,-2px);
-  transform: translate(6px,-2px);
-}
-
-.c0:hover .c4 {
-  -webkit-transform: translate(6px,-5px);
-  -ms-transform: translate(6px,-5px);
-  transform: translate(6px,-5px);
-}
-
 @media (min-width:768px) {
-  .c6 {
+  .c5 {
     padding-left: 1rem;
   }
 }
@@ -388,9 +382,9 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "c0",
+                                    "componentId": "sc-bdVaJa",
                                     "isStatic": true,
-                                    "lastClassName": "c1",
+                                    "lastClassName": "c0",
                                     "rules": Array [
                                       "width: 100%; display: flex; justify-content: center; background-color: #fff;",
                                     ],
@@ -398,7 +392,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                   "displayName": "Styled(Clickable)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "c0",
+                                  "styledComponentId": "sc-bdVaJa",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -409,12 +403,12 @@ exports[`TermsAndConditions renders expanded 1`] = `
                               onClick={[Function]}
                             >
                               <Clickable
-                                className="c0 c1"
+                                className="c0"
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <button
-                                  className="clickable c0 c1"
+                                  className="clickable c0"
                                   onClick={[Function]}
                                   type="button"
                                 >
@@ -432,7 +426,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-htpNat",
                                             "isStatic": true,
-                                            "lastClassName": "c2",
+                                            "lastClassName": "c1",
                                             "rules": Array [
                                               "align-items: center;",
                                             ],
@@ -453,13 +447,13 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                     >
                                       <Box
                                         between={3}
-                                        className="c2"
+                                        className="c1"
                                         inline={true}
                                         tag="div"
                                         vertical={3}
                                       >
                                         <div
-                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
+                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c1"
                                         >
                                           <TermsAndConditions__StyledChevronContainer>
                                             <StyledComponent
@@ -470,7 +464,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "TermsAndConditions__StyledChevronContainer-sc-1aoonet-0",
                                                     "isStatic": true,
-                                                    "lastClassName": "c3",
+                                                    "lastClassName": "c2",
                                                     "rules": Array [
                                                       "position: relative; width: 24px; height: 24px;",
                                                     ],
@@ -488,7 +482,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               forwardedRef={null}
                                             >
                                               <span
-                                                className="c3"
+                                                className="c2"
                                               >
                                                 <Circle>
                                                   <svg
@@ -508,7 +502,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                 <Chevron
                                                   isOpen={true}
                                                 >
-                                                  <TermsAndConditions__StyledChevron
+                                                  <Chevron__StyledChevron
                                                     isOpen={true}
                                                   >
                                                     <StyledComponent
@@ -517,17 +511,17 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           "$$typeof": Symbol(react.forward_ref),
                                                           "attrs": Array [],
                                                           "componentStyle": ComponentStyle {
-                                                            "componentId": "TermsAndConditions__StyledChevron-sc-1aoonet-1",
+                                                            "componentId": "Chevron__StyledChevron-sc-17gl4qs-0",
                                                             "isStatic": false,
-                                                            "lastClassName": "c4",
+                                                            "lastClassName": "c3",
                                                             "rules": Array [
                                                               [Function],
                                                             ],
                                                           },
-                                                          "displayName": "TermsAndConditions__StyledChevron",
+                                                          "displayName": "Chevron__StyledChevron",
                                                           "foldedComponentIds": Array [],
                                                           "render": [Function],
-                                                          "styledComponentId": "TermsAndConditions__StyledChevron-sc-1aoonet-1",
+                                                          "styledComponentId": "Chevron__StyledChevron-sc-17gl4qs-0",
                                                           "target": "span",
                                                           "toString": [Function],
                                                           "warnTooManyClasses": [Function],
@@ -538,7 +532,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                       isOpen={true}
                                                     >
                                                       <span
-                                                        className="c4"
+                                                        className="c3"
                                                       >
                                                         <svg
                                                           height="8px"
@@ -556,7 +550,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         </svg>
                                                       </span>
                                                     </StyledComponent>
-                                                  </TermsAndConditions__StyledChevron>
+                                                  </Chevron__StyledChevron>
                                                 </Chevron>
                                               </span>
                                             </StyledComponent>
@@ -582,7 +576,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "Heading__StyledHeading-mpz92r-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c5",
+                                                      "lastClassName": "c4",
                                                       "rules": Array [
                                                         "word-wrap: break-word;",
                                                         [Function],
@@ -603,7 +597,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                 level="h4"
                                               >
                                                 <span
-                                                  className="c5"
+                                                  className="c4"
                                                   data-testid="heading"
                                                 >
                                                   Hide terms and conditions
@@ -798,9 +792,9 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               "$$typeof": Symbol(react.forward_ref),
                                               "attrs": Array [],
                                               "componentStyle": ComponentStyle {
-                                                "componentId": "sc-bdVaJa",
+                                                "componentId": "sc-bwzfXH",
                                                 "isStatic": true,
-                                                "lastClassName": "c6",
+                                                "lastClassName": "c5",
                                                 "rules": Array [
                                                   "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
   padding-left: 1rem;
@@ -810,7 +804,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               "displayName": "Styled(Box)",
                                               "foldedComponentIds": Array [],
                                               "render": [Function],
-                                              "styledComponentId": "sc-bdVaJa",
+                                              "styledComponentId": "sc-bwzfXH",
                                               "target": [Function],
                                               "toString": [Function],
                                               "warnTooManyClasses": [Function],
@@ -832,9 +826,9 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   "$$typeof": Symbol(react.forward_ref),
                                                   "attrs": Array [],
                                                   "componentStyle": ComponentStyle {
-                                                    "componentId": "sc-bdVaJa",
+                                                    "componentId": "sc-bwzfXH",
                                                     "isStatic": true,
-                                                    "lastClassName": "c6",
+                                                    "lastClassName": "c5",
                                                     "rules": Array [
                                                       "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
   padding-left: 1rem;
@@ -844,7 +838,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   "displayName": "Styled(Box)",
                                                   "foldedComponentIds": Array [],
                                                   "render": [Function],
-                                                  "styledComponentId": "sc-bdVaJa",
+                                                  "styledComponentId": "sc-bwzfXH",
                                                   "target": [Function],
                                                   "toString": [Function],
                                                   "warnTooManyClasses": [Function],
@@ -858,13 +852,13 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               <Box
                                                 below={4}
                                                 between={3}
-                                                className="c6"
+                                                className="c5"
                                                 inline={false}
                                                 size="small"
                                                 tag="ol"
                                               >
                                                 <ol
-                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
+                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c5"
                                                   size="small"
                                                 >
                                                   <Item
@@ -876,7 +870,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c7",
+                                                          "lastClassName": "c6",
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
@@ -903,7 +897,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c6",
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
@@ -923,7 +917,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c7"
+                                                          className="c6"
                                                         >
                                                           <span>
                                                             One
@@ -941,7 +935,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c7",
+                                                          "lastClassName": "c6",
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
@@ -968,7 +962,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c6",
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
@@ -988,7 +982,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c7"
+                                                          className="c6"
                                                         >
                                                           <span>
                                                             Two
@@ -1006,7 +1000,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c7",
+                                                          "lastClassName": "c6",
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
@@ -1033,7 +1027,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c6",
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
@@ -1053,7 +1047,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c7"
+                                                          className="c6"
                                                         >
                                                           <span>
                                                             Three

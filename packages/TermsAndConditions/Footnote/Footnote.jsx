@@ -133,9 +133,7 @@ const Footnote = props => {
       if (key === 'Escape' || key === 27) {
         closeFootnote(e)
       }
-    } else if (e.type === 'click') {
-      closeFootnote(e)
-    } else if (e.type === 'mousedown' && footnoteRef && !footnoteRef.current.contains(e.target)) {
+    } else if (e.type === 'click' && footnoteRef && !footnoteRef.current.contains(e.target)) {
       closeFootnote(e)
     }
   }
@@ -170,12 +168,12 @@ const Footnote = props => {
   // add listeners for mouse clicks outside of Footnote and for ESCAPE key presses
   useEffect(() => {
     if (isOpen) {
-      window.addEventListener('mousedown', handleClose)
+      window.addEventListener('click', handleClose)
       window.addEventListener('keydown', handleClose)
     }
     return () => {
       if (isOpen) {
-        window.removeEventListener('mousedown', handleClose)
+        window.removeEventListener('click', handleClose)
         window.removeEventListener('keydown', handleClose)
       }
     }
@@ -219,7 +217,7 @@ const Footnote = props => {
                       id="close"
                       symbol="times"
                       variant="secondary"
-                      onClick={handleClose}
+                      onClick={closeFootnote}
                       a11yText={getCopy(copy).close}
                       innerRef={closeRef}
                     />
