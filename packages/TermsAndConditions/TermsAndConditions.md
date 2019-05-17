@@ -1,6 +1,6 @@
 ### Usage criteria
 
-- Appears before global element footer, with the exception of the CTA call back cards
+- Appears directly before the page footer, with the exception of call-to-action callback cards
 
 ```jsx
 <TermsAndConditions

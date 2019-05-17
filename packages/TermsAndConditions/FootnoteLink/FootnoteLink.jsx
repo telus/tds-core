@@ -74,11 +74,13 @@ const copyShape = PropTypes.shape({
 
 FootnoteLink.propTypes = {
   /**
-   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively, or provide your own as a JSON object with the key `a11yLabel`.
+   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively.
+   *
+   * To provide your own, pass a JSON object with the key `a11yLabel`.
    */
   copy: PropTypes.oneOfType([PropTypes.oneOf(['en', 'fr']), copyShape]).isRequired,
   /**
-   * The number or numbers, if passed an array, a superscript will be created for each number.
+   * The **footnote** number, **or multiple numbers if passed as an array. If using an array, a comma-separated group of numbers will be rendered as superscript.**
    */
   number: PropTypes.oneOfType([PropTypes.number, PropTypes.arrayOf(PropTypes.number)]).isRequired,
   /**

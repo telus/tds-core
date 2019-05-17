@@ -1,6 +1,6 @@
 ### Usage criteria
 
-- In an instance when there is another sticky item on the page (i.e the cart summary unexpanded/collapsed), the `Footnote` will be layered on top of that
+- In an instance when there is another sticky item on the page (i.e the cart summary unexpanded/collapsed), the `Footnote` must be layered on top of that
 - Can be dismissed by clicking the close button, clicking anywhere outside of the Footnote, or by pressing `ESCAPE`
 - Only one `Footnote` component should ever exist on a page at a time
 

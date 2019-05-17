@@ -136,7 +136,9 @@ const TermsAndConditions = ({ copy, content, ...rest }) => {
 
 TermsAndConditions.propTypes = {
   /**
-   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively, or provide your own as a JSON object with the keys `headingClosed` and `headingOpened`.
+   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively.
+   *
+   * To provide your own, pass a JSON object with the keys `headingClosed` and `headingOpened`.
    */
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(['en', 'fr']),
