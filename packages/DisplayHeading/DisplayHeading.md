@@ -4,9 +4,9 @@ Use as an overlay on Hero, Promo or Headline blocks.
 <DisplayHeading>Smartphones</DisplayHeading>
 ```
 
-### Superscript
+### Using superscript copy within Display Heading
 
-Use a standard HTML `<sup>` element.
+The `<DisplayHeading.Sup>` component is deprecated. Use a standard HTML `<sup>` element instead.
 
 ```jsx
 <DisplayHeading>

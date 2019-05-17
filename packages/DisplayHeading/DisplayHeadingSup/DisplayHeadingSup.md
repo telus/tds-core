@@ -1,4 +1,4 @@
-**Deprecated, please use a `<sup>` element documented in `DisplayHeading` instead.**
+**Deprecated, please use a `<sup>` element documented in [DisplayHeading](#displayheading) instead.**
 
 ```jsx
 <DisplayHeading>
