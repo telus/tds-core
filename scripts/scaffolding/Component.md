@@ -1,3 +1,3 @@
-```React
-    <$COMPONENT$ />
+```jsx
+<$COMPONENT$ />
 ```
