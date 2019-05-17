@@ -395,6 +395,7 @@ module.exports = {
   webpackConfig: {
     devServer: {
       disableHostCheck: true,
+      clientLogLevel: 'debug',
     },
     module: {
       rules: [
