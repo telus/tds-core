@@ -1,4 +1,4 @@
-**Deprecated, please use a `<sup>` element documented in `Text` instead.**
+**Deprecated, please use a `<sup>` element documented in [Text](#text) instead.**
 
 ```jsx
 <Paragraph>

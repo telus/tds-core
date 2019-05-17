@@ -24,9 +24,9 @@ By default, the `Text` component will inherit font properties from `Paragraph`. 
 </Paragraph>
 ```
 
-### Superscript
+### Using superscript copy within Text
 
-Use a standard HTML `<sup>` element.
+The `<Text.Sup>` component is deprecated. Use a standard HTML `<sup>` element instead.
 
 ```jsx
 <Paragraph>
