@@ -1,7 +1,7 @@
 ### Usage criteria
 
-- If only one annotation is required, when possible place elaborative copy in-page with the language or element in question
-- For `PriceLockup` all the numbers should appear together below the `bottomText`
+- If there is only one annotation needed on a page, try including it within the copy on the page and avoid using `FootnoteLink`
+- For [PriceLockup](#pricelockup) all the numbers should appear together below the `bottomText`
 - Must be wrapped by a `Text`, `Heading`, or `DisplayHeading` component
   - When using `FootnoteLink` in a `PriceLockup`, `PriceLockup` will automatically wrap all `bottomText` in a `Text` component
 

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TermsAndConditions renders 1`] = `
-.c4 {
+.c5 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -13,8 +13,8 @@ exports[`TermsAndConditions renders 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c7,
-.c4 sup {
+.c5 .c8,
+.c5 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -22,7 +22,7 @@ exports[`TermsAndConditions renders 1`] = `
   top: -0.5em;
 }
 
-.c0 {
+.c1 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -35,7 +35,7 @@ exports[`TermsAndConditions renders 1`] = `
   background-color: #fff;
 }
 
-.c3 {
+.c4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -47,21 +47,21 @@ exports[`TermsAndConditions renders 1`] = `
   transform: translate(6px,-1px);
 }
 
-undefined:hover .c3 {
+.c0:hover .c4 {
   -webkit-transform: translate(6px,2px);
   -ms-transform: translate(6px,2px);
   transform: translate(6px,2px);
 }
 
-.c6 {
+.c7 {
   padding-left: 1rem;
 }
 
-.c6 > span {
+.c7 > span {
   font-weight: 500;
 }
 
-.c5 {
+.c6 {
   list-style: decimal;
   word-wrap: break-word;
   font-weight: 700;
@@ -74,21 +74,21 @@ undefined:hover .c3 {
   padding-left: 2rem;
 }
 
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c2 {
+.c3 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     padding-left: 1rem;
   }
 }
@@ -107,14 +107,14 @@ undefined:hover .c3 {
         class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
       >
         <button
-          class="clickable c0"
+          class="clickable c0 c1"
           type="button"
         >
           <div
-            class="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c1"
+            class="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
           >
             <span
-              class="c2"
+              class="c3"
             >
               <svg
                 height="24px"
@@ -130,7 +130,7 @@ undefined:hover .c3 {
                 />
               </svg>
               <span
-                class="c3"
+                class="c4"
               >
                 <svg
                   height="8px"
@@ -142,13 +142,12 @@ undefined:hover .c3 {
                 >
                   <path
                     d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
-                    id="path-1"
                   />
                 </svg>
               </span>
             </span>
             <span
-              class="c4"
+              class="c5"
               data-testid="heading"
             >
               View terms and conditions
@@ -190,24 +189,24 @@ undefined:hover .c3 {
               class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
             >
               <ol
-                class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c5"
+                class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
               >
                 <li
-                  class="c6"
+                  class="c7"
                 >
                   <span>
                     One
                   </span>
                 </li>
                 <li
-                  class="c6"
+                  class="c7"
                 >
                   <span>
                     Two
                   </span>
                 </li>
                 <li
-                  class="c6"
+                  class="c7"
                 >
                   <span>
                     Three
@@ -227,7 +226,7 @@ undefined:hover .c3 {
 `;
 
 exports[`TermsAndConditions renders expanded 1`] = `
-.c4 {
+.c5 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -239,8 +238,8 @@ exports[`TermsAndConditions renders expanded 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c7,
-.c4 sup {
+.c5 .c9,
+.c5 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -248,7 +247,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
   top: -0.5em;
 }
 
-.c0 {
+.c1 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -261,7 +260,13 @@ exports[`TermsAndConditions renders expanded 1`] = `
   background-color: #fff;
 }
 
-.c3 {
+.c0:hover .c8 {
+  -webkit-transform: translate(6px,2px);
+  -ms-transform: translate(6px,2px);
+  transform: translate(6px,2px);
+}
+
+.c4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -273,21 +278,21 @@ exports[`TermsAndConditions renders expanded 1`] = `
   transform: translate(6px,-2px);
 }
 
-undefined:hover .c3 {
+.c0:hover .c4 {
   -webkit-transform: translate(6px,-5px);
   -ms-transform: translate(6px,-5px);
   transform: translate(6px,-5px);
 }
 
-.c6 {
+.c7 {
   padding-left: 1rem;
 }
 
-.c6 > span {
+.c7 > span {
   font-weight: 500;
 }
 
-.c5 {
+.c6 {
   list-style: decimal;
   word-wrap: break-word;
   font-weight: 700;
@@ -300,21 +305,21 @@ undefined:hover .c3 {
   padding-left: 2rem;
 }
 
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c2 {
+.c3 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     padding-left: 1rem;
   }
 }
@@ -382,9 +387,9 @@ undefined:hover .c3 {
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
+                                    "componentId": "c0",
                                     "isStatic": true,
-                                    "lastClassName": "c0",
+                                    "lastClassName": "c1",
                                     "rules": Array [
                                       "width: 100%; display: flex; justify-content: center; background-color: #fff;",
                                     ],
@@ -392,7 +397,7 @@ undefined:hover .c3 {
                                   "displayName": "Styled(Clickable)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
+                                  "styledComponentId": "c0",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -403,12 +408,12 @@ undefined:hover .c3 {
                               onClick={[Function]}
                             >
                               <Clickable
-                                className="c0"
+                                className="c0 c1"
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <button
-                                  className="clickable c0"
+                                  className="clickable c0 c1"
                                   onClick={[Function]}
                                   type="button"
                                 >
@@ -426,7 +431,7 @@ undefined:hover .c3 {
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-htpNat",
                                             "isStatic": true,
-                                            "lastClassName": "c1",
+                                            "lastClassName": "c2",
                                             "rules": Array [
                                               "align-items: center;",
                                             ],
@@ -447,13 +452,13 @@ undefined:hover .c3 {
                                     >
                                       <Box
                                         between={3}
-                                        className="c1"
+                                        className="c2"
                                         inline={true}
                                         tag="div"
                                         vertical={3}
                                       >
                                         <div
-                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c1"
+                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
                                         >
                                           <TermsAndConditions__StyledChevronContainer>
                                             <StyledComponent
@@ -464,7 +469,7 @@ undefined:hover .c3 {
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "TermsAndConditions__StyledChevronContainer-sc-1aoonet-0",
                                                     "isStatic": true,
-                                                    "lastClassName": "c2",
+                                                    "lastClassName": "c3",
                                                     "rules": Array [
                                                       "position: relative; width: 24px; height: 24px;",
                                                     ],
@@ -482,7 +487,7 @@ undefined:hover .c3 {
                                               forwardedRef={null}
                                             >
                                               <span
-                                                className="c2"
+                                                className="c3"
                                               >
                                                 <Circle>
                                                   <svg
@@ -513,7 +518,7 @@ undefined:hover .c3 {
                                                           "componentStyle": ComponentStyle {
                                                             "componentId": "Chevron__StyledChevron-sc-17gl4qs-0",
                                                             "isStatic": false,
-                                                            "lastClassName": "c3",
+                                                            "lastClassName": "c4",
                                                             "rules": Array [
                                                               [Function],
                                                             ],
@@ -532,7 +537,7 @@ undefined:hover .c3 {
                                                       isOpen={true}
                                                     >
                                                       <span
-                                                        className="c3"
+                                                        className="c4"
                                                       >
                                                         <svg
                                                           height="8px"
@@ -544,7 +549,6 @@ undefined:hover .c3 {
                                                         >
                                                           <path
                                                             d="M11.7940812,0.183230226 C11.4424627,-0.117489399 11.0896181,0.0450442657 10.8868854,0.245275736 L5.99681615,4.74055299 L1.11722187,0.245275732 C0.93839231,0.0814520871 0.490533284,-0.180032793 0.165240429,0.183230232 C-0.160052425,0.546493257 0.0652096387,0.91610528 0.243271687,1.07992892 L5.6348225,6.87660266 C5.81365205,7.04113245 6.10607292,7.04113245 6.28490248,6.87660266 C6.28490248,6.87589653 11.7940809,1.07992896 11.7940809,1.07992896 C11.9792355,0.935042671 12.1456996,0.483949851 11.7940812,0.183230226 Z"
-                                                            id="path-1"
                                                             transform="rotate(180, 6, 4)"
                                                           />
                                                         </svg>
@@ -576,7 +580,7 @@ undefined:hover .c3 {
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "Heading__StyledHeading-mpz92r-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c4",
+                                                      "lastClassName": "c5",
                                                       "rules": Array [
                                                         "word-wrap: break-word;",
                                                         [Function],
@@ -597,7 +601,7 @@ undefined:hover .c3 {
                                                 level="h4"
                                               >
                                                 <span
-                                                  className="c4"
+                                                  className="c5"
                                                   data-testid="heading"
                                                 >
                                                   Hide terms and conditions
@@ -794,7 +798,7 @@ undefined:hover .c3 {
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "sc-bwzfXH",
                                                 "isStatic": true,
-                                                "lastClassName": "c5",
+                                                "lastClassName": "c6",
                                                 "rules": Array [
                                                   "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
   padding-left: 1rem;
@@ -828,7 +832,7 @@ undefined:hover .c3 {
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "sc-bwzfXH",
                                                     "isStatic": true,
-                                                    "lastClassName": "c5",
+                                                    "lastClassName": "c6",
                                                     "rules": Array [
                                                       "list-style: decimal; word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
   padding-left: 1rem;
@@ -852,13 +856,13 @@ undefined:hover .c3 {
                                               <Box
                                                 below={4}
                                                 between={3}
-                                                className="c5"
+                                                className="c6"
                                                 inline={false}
                                                 size="small"
                                                 tag="ol"
                                               >
                                                 <ol
-                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c5"
+                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
                                                   size="small"
                                                 >
                                                   <Item
@@ -870,7 +874,7 @@ undefined:hover .c3 {
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c6",
+                                                          "lastClassName": "c7",
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
@@ -897,7 +901,7 @@ undefined:hover .c3 {
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c6",
+                                                              "lastClassName": "c7",
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
@@ -917,7 +921,7 @@ undefined:hover .c3 {
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c6"
+                                                          className="c7"
                                                         >
                                                           <span>
                                                             One
@@ -935,7 +939,7 @@ undefined:hover .c3 {
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c6",
+                                                          "lastClassName": "c7",
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
@@ -962,7 +966,7 @@ undefined:hover .c3 {
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c6",
+                                                              "lastClassName": "c7",
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
@@ -982,7 +986,7 @@ undefined:hover .c3 {
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c6"
+                                                          className="c7"
                                                         >
                                                           <span>
                                                             Two
@@ -1000,7 +1004,7 @@ undefined:hover .c3 {
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c6",
+                                                          "lastClassName": "c7",
                                                           "rules": Array [
                                                             "& > span {
   font-weight: 500;
@@ -1027,7 +1031,7 @@ undefined:hover .c3 {
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c6",
+                                                              "lastClassName": "c7",
                                                               "rules": Array [
                                                                 "& > span {
   font-weight: 500;
@@ -1047,7 +1051,7 @@ undefined:hover .c3 {
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c6"
+                                                          className="c7"
                                                         >
                                                           <span>
                                                             Three

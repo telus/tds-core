@@ -261,18 +261,20 @@ const copyShape = PropTypes.shape({
 
 Footnote.propTypes = {
   /**
-   * A React ref to the `FootnoteLink` the initiated the `Footnote`. Focus will be returned to this ref `onClose`.
+   * A React ref to the `FootnoteLink` **that** initiated the `Footnote`. Focus will be returned to this ref **when the Footnote closes**.
    */
   returnRef: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   ]),
   /**
-   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively, or provide your own as a JSON object with the keys `heading` and `close`.
+   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively.
+   *
+   * To provide your own, pass a JSON object with the keys `heading` and `close`.
    */
   copy: PropTypes.oneOfType([PropTypes.oneOf(['en', 'fr']), copyShape]).isRequired,
   /**
-   * The number, must match the number if the `FootnoteLink` that inititated the `Footnote`
+   * The number, must match the number of the `FootnoteLink` that inititated the `Footnote`
    */
   number: PropTypes.number,
   /**
@@ -286,7 +288,7 @@ Footnote.propTypes = {
    */
   onClose: PropTypes.func.isRequired,
   /**
-   * A boolean flag used to hide/show the `Footnote`
+   * A boolean flag used hide or show the `Footnote`. Set to `true` to open the `Footnote`.
    */
   isOpen: PropTypes.bool,
 }
