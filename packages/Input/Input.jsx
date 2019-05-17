@@ -115,7 +115,4 @@ Input.defaultProps = {
   onBlur: undefined,
 }
 
-// TODO: This will no longer be necessary once InputFeedback is exported on its own. Removing this will be a breaking change.
-Input.Helper = InputFeedback
-
 export default Input
