@@ -13,9 +13,9 @@ For information on how to use disabled Inputs, please refer to the [disabled for
 
 ```jsx
 <Box between={2}>
-  <Input label="First name" value="Harry" />
+  <Input label="First name" defaultValue="Harry" />
   <Input type="tel" label="Mobile phone" pattern="[0-9]{10}" maxLength="10" />
-  <Input type="password" label="Tax ID" value="123456789" autoComplete="on" />
+  <Input type="password" label="Tax ID" defaultValue="123456789" autoComplete="on" />
 </Box>
 ```
 
@@ -32,10 +32,10 @@ was correct, or highlight errors that must be corrected.
 
 ```jsx
 <Box between={2}>
-  <Input label="Username" value="guest12345" feedback="success" />
+  <Input label="Username" defaultValue="guest12345" feedback="success" />
   <Input
     label="Email"
-    value="guest@telus.com"
+    defaultValue="guest@telus.com"
     feedback="error"
     error={
       <React.Fragment>

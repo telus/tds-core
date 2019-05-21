@@ -9,7 +9,6 @@ import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import { borders, position, forms } from '@tds/shared-styles'
-import { FeedbackIcon } from '@tds/shared-form-field'
 import {
   colorShuttleGrey,
   colorWhite,
@@ -18,6 +17,7 @@ import {
   colorAthensGrey,
 } from '@tds/core-colours'
 import { medium, mediumFont, color } from '@tds/shared-typography'
+import FeedbackIcon from './FeedbackIcon'
 
 import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId/generateId'

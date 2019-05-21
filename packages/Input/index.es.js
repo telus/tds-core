@@ -1,3 +1,2 @@
-import Input from './dist/index.es'
-
-export default Input
+export { default } from './dist/index.es'
+export * from './dist/index.es'
