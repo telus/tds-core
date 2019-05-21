@@ -1,0 +1,23 @@
+{
+  "name": "@tds/util-helpers",
+  "version": "1.0.0-dev",
+  "description": "TDS helpers",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telus/tds-core.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telus/tds-core/issues"
+  },
+  "homepage": "http://tds.telus.com"
+}
