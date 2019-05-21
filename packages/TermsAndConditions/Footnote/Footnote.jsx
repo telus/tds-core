@@ -12,20 +12,11 @@ import { colorAthensGrey } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import { withFocusTrap } from '@tds/shared-hocs'
 import { getCopy } from '@tds/util-helpers'
+
 import List from './FootnoteList'
+import copyDictionary from './footnoteText'
 
 import { warn } from '../../../shared/utils/warn'
-
-const copyDictionary = {
-  en: {
-    heading: 'Terms and conditions',
-    close: 'close',
-  },
-  fr: {
-    heading: 'Modalités et conditions',
-    close: 'fermer',
-  },
-}
 
 const StyledFootnote = styled.div(
   {
@@ -48,6 +39,9 @@ const StyledFootnote = styled.div(
       maxHeight: '50vh',
     }),
   },
+  ({ isVisible }) => ({
+    visibility: isVisible ? 'visible' : 'hidden',
+  }),
   ({ isOpen }) => {
     if (isOpen) {
       return {
@@ -71,14 +65,16 @@ const StyledFootnoteBody = styled.div(
   {
     overflow: 'auto',
     position: 'relative',
-    maxHeight: 'calc(100vh - 57px)',
     transition: 'height 400ms ease-out, opacity 300ms',
     transform: 'translateZ(0)',
     backgroundColor: colorAthensGrey,
-    ...media.from('md').css({
-      maxHeight: 'calc(50vh - 57px)',
-    }),
   },
+  ({ headerHeight }) => ({
+    maxHeight: `calc(100vh - ${headerHeight}px)`,
+    ...media.from('md').css({
+      maxHeight: `calc(50vh - ${headerHeight}px)`,
+    }),
+  }),
   ({ bodyHeight, isTextVisible }) => ({
     height: bodyHeight,
     opacity: isTextVisible ? 1 : 0,
@@ -111,7 +107,9 @@ const Footnote = props => {
   const headerRef = useRef(null)
   const listRef = useRef(null)
   const [data, setData] = useState({ content: null, number: null })
+  const [headerHeight, setHeaderHeight] = useState('auto')
   const [bodyHeight, setBodyHeight] = useState('auto')
+  const [isVisible, setIsVisible] = useState(false)
   const [isTextVisible, setIsTextVisible] = useState(true)
 
   if ((content || number) && returnRef === null) {
@@ -132,7 +130,10 @@ const Footnote = props => {
       if (key === 'Escape' || key === 27) {
         closeFootnote(e)
       }
-    } else if (e.type === 'click' && footnoteRef && !footnoteRef.current.contains(e.target)) {
+    } else if (
+      (e.type === 'click' && (footnoteRef && !footnoteRef.current.contains(e.target))) ||
+      (e.target && e.target.getAttribute('data-tds-id') !== 'footnote-link')
+    ) {
       closeFootnote(e)
     }
   }
@@ -143,11 +144,17 @@ const Footnote = props => {
     setIsTextVisible(false)
   }
 
+  const handleStyledFootnoteTransitionEnd = async e => {
+    if (e.propertyName === 'transform' && !isOpen) {
+      setIsVisible(false)
+    }
+  }
+
   const handleTransitionEnd = async e => {
     e.persist()
     if (e.propertyName === 'opacity' && !isTextVisible) {
       await setData({ content, number })
-      const halfPageHeight = window.innerHeight * 0.5 - 57
+      const halfPageHeight = window.innerHeight * 0.5 - headerHeight
       const newHeight = listRef.current.offsetHeight
       await setBodyHeight(newHeight > halfPageHeight ? halfPageHeight : newHeight)
     }
@@ -157,15 +164,20 @@ const Footnote = props => {
     }
   }
 
+  useEffect(() => {
+    setHeaderHeight(headerRef.current.offsetHeight)
+  }, [])
+
   // focus the close button on mount
   useEffect(() => {
     if (isOpen && closeRef && closeRef.current !== null) {
       closeRef.current.focus()
     }
-  }, [isOpen])
+  }, [isOpen, returnRef])
 
   // add listeners for mouse clicks outside of Footnote and for ESCAPE key presses
   useEffect(() => {
+    setIsVisible(true)
     if (isOpen) {
       window.addEventListener('click', handleClose)
       window.addEventListener('keydown', handleClose)
@@ -202,7 +214,13 @@ const Footnote = props => {
   }, [isOpen])
 
   return (
-    <StyledFootnote ref={footnoteRef} isOpen={isOpen} role="alert">
+    <StyledFootnote
+      ref={footnoteRef}
+      isOpen={isOpen}
+      isVisible={isVisible}
+      role="alert"
+      onTransitionEnd={handleStyledFootnoteTransitionEnd}
+    >
       <FocusTrap>
         <StyledFootnoteHeader ref={headerRef}>
           <div css={{ display: 'none', ...media.from('md').css({ display: 'block' }) }}>
@@ -235,6 +253,7 @@ const Footnote = props => {
         </StyledFootnoteHeader>
         <StyledFootnoteBody
           bodyHeight={bodyHeight}
+          headerHeight={headerHeight}
           isTextVisible={isTextVisible}
           onTransitionEnd={handleTransitionEnd}
         >
@@ -243,7 +262,7 @@ const Footnote = props => {
               <FlexGrid>
                 <FlexGrid.Row>
                   <FlexGrid.Col xs={12} md={11}>
-                    <List start={data.number}>
+                    <List start={data.number} type="indexed">
                       <List.Item>
                         <Text>{data.content}</Text>
                       </List.Item>

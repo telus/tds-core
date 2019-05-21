@@ -18,16 +18,7 @@ import Circle from './svg/Circle'
 
 import List from './List/List'
 
-const copyDictionary = {
-  en: {
-    headingClosed: 'View terms and conditions',
-    headingOpened: 'Hide terms and conditions',
-  },
-  fr: {
-    headingClosed: 'Voir les modalités et conditions',
-    headingOpened: 'Masquer les modalités et conditions',
-  },
-}
+import copyDictionary from './termsAndConditionsText'
 
 const StyledExpandCollapseHeading = styled(Box)({
   alignItems: 'center',
@@ -55,11 +46,14 @@ const calculateSpeed = height => {
 /**
  * @version ./package.json
  */
-const TermsAndConditions = ({ copy, content, ...rest }) => {
+const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }) => {
   const contentWrapper = useRef(null)
   const [isOpen, setOpen] = useState(false)
   const [contentWrapperHeight, setContentWrapperHeight] = useState(0)
   const speed = calculateSpeed(contentWrapperHeight)
+
+  const hasIndexedContent = indexedContent.length > 0
+  const hasNonIndexedContent = nonIndexedContent.length > 0
 
   useEffect(() => {
     if (contentWrapper.current.offsetHeight !== contentWrapperHeight) {
@@ -81,10 +75,10 @@ const TermsAndConditions = ({ copy, content, ...rest }) => {
                   <Circle />
                   <Chevron isOpen={isOpen} />
                 </StyledChevronContainer>
-                <Heading level="h4" tag="span">
+                <Heading level="h4" tag="h2">
                   {!isOpen
-                    ? getCopy(copyDictionary, copy).headingClosed
-                    : getCopy(copyDictionary, copy).headingOpened}
+                    ? getCopy(copyDictionary, copy).headingView
+                    : getCopy(copyDictionary, copy).headingHide}
                 </Heading>
               </StyledExpandCollapseHeading>
             </StyledClickable>
@@ -114,17 +108,43 @@ const TermsAndConditions = ({ copy, content, ...rest }) => {
               style={{ transform: 'translateY(1rem)' }}
             >
               {() => (
-                <FlexGrid gutter={false} limitWidth={false}>
-                  <FlexGrid.Row>
-                    <FlexGrid.Col xs={12} mdOffset={1} md={10}>
-                      <List size="small" below={4}>
-                        {content.map(c => (
-                          <List.Item key={c}>{c}</List.Item>
-                        ))}
-                      </List>
-                    </FlexGrid.Col>
-                  </FlexGrid.Row>
-                </FlexGrid>
+                <>
+                  {hasIndexedContent > 0 && (
+                    <FlexGrid gutter={false} limitWidth={false}>
+                      <FlexGrid.Row>
+                        <FlexGrid.Col xs={12} mdOffset={1} md={10}>
+                          <List size="small" below={4} type="indexed">
+                            {indexedContent.map(c => (
+                              <List.Item key={c}>{c}</List.Item>
+                            ))}
+                          </List>
+                        </FlexGrid.Col>
+                      </FlexGrid.Row>
+                    </FlexGrid>
+                  )}
+                  {hasNonIndexedContent && (
+                    <FlexGrid gutter={false} limitWidth={false}>
+                      <FlexGrid.Row>
+                        <FlexGrid.Col xs={12} mdOffset={1} md={10}>
+                          <Box between={3}>
+                            {hasIndexedContent && (
+                              <div css={{ paddingLeft: '2rem' }}>
+                                <Heading level="h4" tag="span">
+                                  {getCopy(copyDictionary, copy).nonIndexedTitle}
+                                </Heading>
+                              </div>
+                            )}
+                            <List size="small" below={4} type="nonIndexed">
+                              {nonIndexedContent.map(c => (
+                                <List.Item key={c}>{c}</List.Item>
+                              ))}
+                            </List>
+                          </Box>
+                        </FlexGrid.Col>
+                      </FlexGrid.Row>
+                    </FlexGrid>
+                  )}
+                </>
               )}
             </Translate>
           </div>
@@ -139,19 +159,33 @@ TermsAndConditions.propTypes = {
   /**
    * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively.
    *
-   * To provide your own, pass a JSON object with the keys `headingClosed` and `headingOpened`.
+   * To provide your own, pass a JSON object with the keys `headingView`, `headingHide`, and `nonIndexedTitle`.
    */
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(['en', 'fr']),
     PropTypes.shape({
-      headingClosed: PropTypes.string,
-      headingOpened: PropTypes.string,
+      headingView: PropTypes.string,
+      headingHide: PropTypes.string,
+      nonIndexedTitle: PropTypes.string,
     }),
   ]).isRequired,
   /**
-   * An array of nodes, strings, or a combination to be displayed in an ordered list
+   * An array of nodes, strings, or a combination to be displayed in an ordered list.
+   *
+   * Each item in the array must have a corresponding superscript in the page.
    */
-  content: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.node, PropTypes.string])).isRequired,
+  indexedContent: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.node, PropTypes.string])),
+  /**
+   * An array of nodes, strings, or a combination to be displayed in an unordered list.
+   *
+   * nonIndexedContent do not have a corresponding superscript and instead apply to the page as a whole.
+   */
+  nonIndexedContent: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.node, PropTypes.string])),
+}
+
+TermsAndConditions.defaultProps = {
+  indexedContent: [],
+  nonIndexedContent: [],
 }
 
 export default TermsAndConditions

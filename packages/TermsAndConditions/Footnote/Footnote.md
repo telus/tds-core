@@ -18,13 +18,7 @@ class FootnoteExample extends React.Component {
   }
 
   handleClose(e) {
-    if (
-      (e.type === 'click' || e.type === 'mousedown') &&
-      e.target.getAttribute('data-tds-id') === 'footnote-link'
-    ) {
-    } else {
-      this.setState({ showFootnote: false })
-    }
+    this.setState({ showFootnote: false })
   }
 
   handleFootnoteLinkClick(number, content, returnRef) {

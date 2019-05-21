@@ -6,14 +6,7 @@ import { colorText } from '@tds/core-colours'
 import A11yContent from '@tds/core-a11y-content'
 import { getCopy } from '@tds/util-helpers'
 
-const copyDictionary = {
-  en: {
-    a11yLabel: 'Read legal footnote',
-  },
-  fr: {
-    a11yLabel: 'Lire la note de bas de page légale',
-  },
-}
+import copyDictionary from './footnoteLinkText'
 
 const StyledFootnoteLink = styled.button({
   backgroundColor: 'transparent',
