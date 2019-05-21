@@ -10,12 +10,13 @@ import StandaloneIcon from '@tds/core-standalone-icon'
 import HairlineDivider from '@tds/core-hairline-divider'
 import { colorAthensGrey } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
-import withFocusTrap from '@tds/shared-with-focus-trap'
+import { withFocusTrap } from '@tds/shared-hocs'
+import { getCopy } from '@tds/util-helpers'
 import List from './FootnoteList'
 
 import { warn } from '../../../shared/utils/warn'
 
-const copyDict = {
+const copyDictionary = {
   en: {
     heading: 'Terms and conditions',
     close: 'close',
@@ -24,13 +25,6 @@ const copyDict = {
     heading: 'Modalités et conditions',
     close: 'fermer',
   },
-}
-
-const getCopy = copy => {
-  if (typeof copy === 'string') {
-    return copyDict[copy]
-  }
-  return copy
 }
 
 const StyledFootnote = styled.div(
@@ -220,14 +214,14 @@ const Footnote = props => {
                 <FlexGrid.Col xs={12}>
                   <StyledHeader between="space-between" inline>
                     <Heading level="h4" tag="h2">
-                      {getCopy(copy).heading}
+                      {getCopy(copyDictionary, copy).heading}
                     </Heading>
                     <StandaloneIcon
                       id="close"
                       symbol="times"
                       variant="secondary"
                       onClick={closeFootnote}
-                      a11yText={getCopy(copy).close}
+                      a11yText={getCopy(copyDictionary, copy).close}
                       innerRef={closeRef}
                     />
                   </StyledHeader>

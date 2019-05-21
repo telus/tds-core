@@ -37,8 +37,9 @@
     "@tds/core-standalone-icon": "^1.0.3",
     "@tds/core-text": "^1.0.10",
     "@tds/shared-animation": "^1.1.2",
+    "@tds/shared-hocs": "^1.0.0-dev",
     "@tds/shared-typography": "^1.2.2",
-    "@tds/shared-with-focus-trap": "^1.0.0-dev",
+    "@tds/util-helpers": "^1.0.0-dev",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {

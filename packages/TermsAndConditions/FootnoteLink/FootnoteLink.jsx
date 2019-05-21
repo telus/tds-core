@@ -4,21 +4,15 @@ import styled from 'styled-components'
 
 import { colorText } from '@tds/core-colours'
 import A11yContent from '@tds/core-a11y-content'
+import { getCopy } from '@tds/util-helpers'
 
-const copyDict = {
+const copyDictionary = {
   en: {
     a11yLabel: 'Read legal footnote',
   },
   fr: {
     a11yLabel: 'Lire la note de bas de page légale',
   },
-}
-
-const getCopy = copy => {
-  if (typeof copy === 'string') {
-    return copyDict[copy]
-  }
-  return copy
 }
 
 const StyledFootnoteLink = styled.button({
@@ -57,7 +51,7 @@ const FootnoteLink = ({ number, onClick, copy }) => {
             onClick={() => handleClick(i)}
             data-tds-id="footnote-link"
           >
-            <A11yContent>{getCopy(copy).a11yLabel}</A11yContent>
+            <A11yContent>{getCopy(copyDictionary, copy).a11yLabel}</A11yContent>
             {`${numbers[i]}${i !== numbers.length - 1 ? ',' : ''}`}
           </StyledFootnoteLink>
         </sup>

@@ -8,6 +8,7 @@ import FlexGrid from '@tds/core-flex-grid'
 import Heading from '@tds/core-heading'
 import Box from '@tds/core-box'
 import { FadeAndReveal, Translate } from '@tds/shared-animation'
+import { getCopy } from '@tds/util-helpers'
 
 import safeRest from '../../shared/utils/safeRest'
 
@@ -17,7 +18,7 @@ import Circle from './svg/Circle'
 
 import List from './List/List'
 
-const defaultCopy = {
+const copyDictionary = {
   en: {
     headingClosed: 'View terms and conditions',
     headingOpened: 'Hide terms and conditions',
@@ -27,8 +28,6 @@ const defaultCopy = {
     headingOpened: 'Masquer les modalités et conditions',
   },
 }
-
-const getCopy = copy => (typeof copy === 'string' ? defaultCopy[copy] : copy)
 
 const StyledExpandCollapseHeading = styled(Box)({
   alignItems: 'center',
@@ -83,7 +82,9 @@ const TermsAndConditions = ({ copy, content, ...rest }) => {
                   <Chevron isOpen={isOpen} />
                 </StyledChevronContainer>
                 <Heading level="h4" tag="span">
-                  {!isOpen ? getCopy(copy).headingClosed : getCopy(copy).headingOpened}
+                  {!isOpen
+                    ? getCopy(copyDictionary, copy).headingClosed
+                    : getCopy(copyDictionary, copy).headingOpened}
                 </Heading>
               </StyledExpandCollapseHeading>
             </StyledClickable>
