@@ -4,11 +4,12 @@ import styled from 'styled-components'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
+import Heading from '@tds/core-heading'
 import FlexGrid from '@tds/core-flex-grid'
 import StandaloneIcon from '@tds/core-standalone-icon'
 import HairlineDivider from '@tds/core-hairline-divider'
 import { colorAthensGrey } from '@tds/core-colours'
-import Responsive, { media } from '@tds/core-responsive'
+import { media } from '@tds/core-responsive'
 import withFocusTrap from '@tds/shared-with-focus-trap'
 import List from './FootnoteList'
 
@@ -66,6 +67,10 @@ const StyledFootnote = styled.div(
 const StyledFootnoteHeader = styled.div({
   position: 'relative',
   width: '100%',
+})
+
+const StyledHeader = styled(Box)({
+  alignItems: 'center',
 })
 
 const StyledFootnoteBody = styled.div(
@@ -206,13 +211,17 @@ const Footnote = props => {
     <StyledFootnote ref={footnoteRef} isOpen={isOpen} role="alert">
       <FocusTrap>
         <StyledFootnoteHeader ref={headerRef}>
-          <Responsive minWidth="md" render={() => <HairlineDivider />} />
+          <div css={{ display: 'none', ...media.from('md').css({ display: 'block' }) }}>
+            <HairlineDivider />
+          </div>
           <Box vertical={4}>
             <FlexGrid>
               <FlexGrid.Row>
                 <FlexGrid.Col xs={12}>
-                  <Box between="space-between" inline>
-                    <Text bold>{getCopy(copy).heading}</Text>
+                  <StyledHeader between="space-between" inline>
+                    <Heading level="h4" tag="h2">
+                      {getCopy(copy).heading}
+                    </Heading>
                     <StandaloneIcon
                       id="close"
                       symbol="times"
@@ -221,12 +230,14 @@ const Footnote = props => {
                       a11yText={getCopy(copy).close}
                       innerRef={closeRef}
                     />
-                  </Box>
+                  </StyledHeader>
                 </FlexGrid.Col>
               </FlexGrid.Row>
             </FlexGrid>
           </Box>
-          <Responsive maxWidth="md" render={() => <HairlineDivider />} />
+          <div css={{ display: 'none', ...media.until('md').css({ display: 'block' }) }}>
+            <HairlineDivider />
+          </div>
         </StyledFootnoteHeader>
         <StyledFootnoteBody
           bodyHeight={bodyHeight}

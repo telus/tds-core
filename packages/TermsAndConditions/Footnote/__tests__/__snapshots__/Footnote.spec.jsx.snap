@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footnote renders closed 1`] = `
+.c4 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c4 .c7,
+.c4 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
 .c0 {
   position: fixed;
   top: 0;
@@ -25,7 +46,14 @@ exports[`Footnote renders closed 1`] = `
   width: 100%;
 }
 
-.c2 {
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
   overflow: auto;
   position: relative;
   max-height: calc(100vh - 57px);
@@ -39,6 +67,14 @@ exports[`Footnote renders closed 1`] = `
   opacity: 1;
 }
 
+.c2 {
+  display: none;
+}
+
+.c5 {
+  display: none;
+}
+
 @media (min-width:768px) {
   .c0 {
     top: auto;
@@ -49,8 +85,20 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c6 {
     max-height: calc(50vh - 57px);
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+  .c5 {
+    display: block;
   }
 }
 
@@ -80,9 +128,13 @@ exports[`Footnote renders closed 1`] = `
         <div
           class="c1"
         >
-          <hr
-            class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-          />
+          <div
+            class="c2"
+          >
+            <hr
+              class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+            />
+          </div>
           <div
             class="TDS_Box-modules__verticalPadding-4___QMNNa"
           >
@@ -96,13 +148,14 @@ exports[`Footnote renders closed 1`] = `
                   class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                 >
                   <div
-                    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
+                    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c3"
                   >
-                    <span
-                      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+                    <h2
+                      class="c4"
+                      data-testid="heading"
                     >
                       Terms and conditions
-                    </span>
+                    </h2>
                     <button
                       class="TDS_Clickable-modules__clickable___Wf5Qr TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ TDS_Forms-modules__font___g7OGX TDS_Typography-modules__color___2CNH8"
                       id="close"
@@ -119,12 +172,16 @@ exports[`Footnote renders closed 1`] = `
               </div>
             </div>
           </div>
-          <hr
-            class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-          />
+          <div
+            class="c5"
+          >
+            <hr
+              class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+            />
+          </div>
         </div>
         <div
-          class="c2"
+          class="c6"
         />
       </div>
       <div
@@ -136,6 +193,27 @@ exports[`Footnote renders closed 1`] = `
 `;
 
 exports[`Footnote renders opened 1`] = `
+.c4 {
+  word-wrap: break-word;
+  color: #2a2c2e;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c4 .c7,
+.c4 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 0.875rem;
+  top: -0.5em;
+}
+
 .c0 {
   position: fixed;
   top: 0;
@@ -163,7 +241,14 @@ exports[`Footnote renders opened 1`] = `
   width: 100%;
 }
 
-.c2 {
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
   overflow: auto;
   position: relative;
   max-height: calc(100vh - 57px);
@@ -177,6 +262,14 @@ exports[`Footnote renders opened 1`] = `
   opacity: 1;
 }
 
+.c2 {
+  display: none;
+}
+
+.c5 {
+  display: none;
+}
+
 @media (min-width:768px) {
   .c0 {
     top: auto;
@@ -187,8 +280,20 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c6 {
     max-height: calc(50vh - 57px);
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+  .c5 {
+    display: block;
   }
 }
 
@@ -218,9 +323,13 @@ exports[`Footnote renders opened 1`] = `
         <div
           class="c1"
         >
-          <hr
-            class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-          />
+          <div
+            class="c2"
+          >
+            <hr
+              class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+            />
+          </div>
           <div
             class="TDS_Box-modules__verticalPadding-4___QMNNa"
           >
@@ -234,13 +343,14 @@ exports[`Footnote renders opened 1`] = `
                   class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                 >
                   <div
-                    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
+                    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c3"
                   >
-                    <span
-                      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+                    <h2
+                      class="c4"
+                      data-testid="heading"
                     >
                       Terms and conditions
-                    </span>
+                    </h2>
                     <button
                       class="TDS_Clickable-modules__clickable___Wf5Qr TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ TDS_Forms-modules__font___g7OGX TDS_Typography-modules__color___2CNH8"
                       id="close"
@@ -257,12 +367,16 @@ exports[`Footnote renders opened 1`] = `
               </div>
             </div>
           </div>
-          <hr
-            class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-          />
+          <div
+            class="c5"
+          >
+            <hr
+              class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+            />
+          </div>
         </div>
         <div
-          class="c2"
+          class="c6"
         />
       </div>
       <div
