@@ -1,7 +1,7 @@
 {
-  "name": "@tds/shared-with-focus-trap",
+  "name": "@tds/shared-hocs",
   "version": "1.0.0-dev",
-  "description": "Trap focus around a react component",
+  "description": "TDS higher order components",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
