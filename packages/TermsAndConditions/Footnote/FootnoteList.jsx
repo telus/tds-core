@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 import { sizeMedium, mediumFont } from '@tds/shared-typography'
 import { media } from '@tds/core-responsive'
+import { withStyledComponent } from '@tds/shared-hocs'
 
-import List, { withStyledComponent, StyledList, StyledListItem } from '../List/List'
+import List, { StyledList, StyledListItem } from '../List/List'
 
 const StyledFootnoteListItem = styled(StyledListItem)({
   '& > span': {

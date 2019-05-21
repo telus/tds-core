@@ -24,11 +24,6 @@ export const StyledList = styled(Box)({
   }),
 })
 
-export const withStyledComponent = StyledComponent => Component => props => {
-  const WithStyledComponent = <Component {...props} styledComponent={StyledComponent} />
-  return WithStyledComponent
-}
-
 const Item = ({ children, styledComponent: Component, ...rest }) => (
   <Component {...rest}>
     {typeof children === 'string' ? <span>{children}</span> : children}
