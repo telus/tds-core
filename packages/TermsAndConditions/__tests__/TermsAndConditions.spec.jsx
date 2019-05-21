@@ -6,7 +6,7 @@ import TermsAndConditions from '../TermsAndConditions'
 describe('TermsAndConditions', () => {
   const defaultProps = {
     copy: 'en',
-    content: ['One', 'Two', 'Three'],
+    indexedContent: ['One', 'Two', 'Three'],
   }
 
   const doShallow = (props = {}) => shallow(<TermsAndConditions {...defaultProps} {...props} />)
@@ -18,6 +18,28 @@ describe('TermsAndConditions', () => {
 
   it('renders expanded', () => {
     const termsAndConditions = mount(<TermsAndConditions {...defaultProps} />)
+    termsAndConditions.find('button').simulate('click')
+
+    expect(termsAndConditions).toMatchSnapshot()
+  })
+
+  it('renders expanded with indexedContent and nonIndexedContent', () => {
+    const termsAndConditions = mount(
+      <TermsAndConditions {...defaultProps} nonIndexedContent={['Four', 'Five']} />
+    )
+    termsAndConditions.find('button').simulate('click')
+
+    expect(termsAndConditions).toMatchSnapshot()
+  })
+
+  it('renders expanded with just nonIndexedContent', () => {
+    const termsAndConditions = mount(
+      <TermsAndConditions
+        {...defaultProps}
+        nonIndexedContent={['Four', 'Five']}
+        indexedContent={[]}
+      />
+    )
     termsAndConditions.find('button').simulate('click')
 
     expect(termsAndConditions).toMatchSnapshot()

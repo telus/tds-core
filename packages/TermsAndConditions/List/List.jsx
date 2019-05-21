@@ -14,15 +14,19 @@ export const StyledListItem = styled.li({
   paddingLeft: '1rem',
 })
 
-export const StyledList = styled(Box)({
-  listStyle: 'decimal',
-  ...boldFont,
-  ...sizeSmall,
-  paddingLeft: '2rem',
-  ...media.from('md').css({
-    paddingLeft: '1rem',
-  }),
-})
+export const StyledList = styled(Box)(
+  {
+    ...boldFont,
+    ...sizeSmall,
+    paddingLeft: '2rem',
+    ...media.from('md').css({
+      paddingLeft: '1rem',
+    }),
+  },
+  ({ type }) => ({
+    listStyle: type === 'indexed' ? 'decimal' : 'none',
+  })
+)
 
 const Item = ({ children, styledComponent: Component, ...rest }) => (
   <Component {...rest}>
@@ -39,15 +43,18 @@ Item.defaultProps = {
   styledComponent: StyledListItem,
 }
 
-const List = ({ children, styledComponent: Component, ...rest }) => (
-  <Component {...rest} tag="ol" between={3}>
-    {React.Children.toArray(children)
-      .filter(child => child)
-      .map(child => React.cloneElement(child))}
-  </Component>
-)
+const List = ({ children, styledComponent: Component, type, ...rest }) => {
+  return (
+    <Component {...rest} tag={type === 'indexed' ? 'ol' : 'ul'} between={3} type={type}>
+      {React.Children.toArray(children)
+        .filter(child => child)
+        .map(child => React.cloneElement(child))}
+    </Component>
+  )
+}
 
 List.propTypes = {
+  type: PropTypes.oneOf(['indexed', 'nonIndexed']).isRequired,
   children: PropTypes.node.isRequired,
   styledComponent: PropTypes.object,
 }

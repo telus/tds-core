@@ -39,6 +39,7 @@ exports[`Footnote renders closed 1`] = `
   transition: transform 500ms ease-out;
   overflow: hidden;
   z-index: 99999;
+  visibility: hidden;
 }
 
 .c1 {
@@ -56,13 +57,13 @@ exports[`Footnote renders closed 1`] = `
 .c6 {
   overflow: auto;
   position: relative;
-  max-height: calc(100vh - 57px);
   -webkit-transition: height 400ms ease-out,opacity 300ms;
   transition: height 400ms ease-out,opacity 300ms;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
   background-color: #f7f7f8;
+  max-height: calc(100vh - autopx);
   height: auto;
   opacity: 1;
 }
@@ -86,7 +87,7 @@ exports[`Footnote renders closed 1`] = `
 
 @media (min-width:768px) {
   .c6 {
-    max-height: calc(50vh - 57px);
+    max-height: calc(50vh - autopx);
   }
 }
 
@@ -231,6 +232,7 @@ exports[`Footnote renders opened 1`] = `
   transition: transform 500ms ease-out;
   overflow: hidden;
   z-index: 99999;
+  visibility: hidden;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
@@ -251,13 +253,13 @@ exports[`Footnote renders opened 1`] = `
 .c6 {
   overflow: auto;
   position: relative;
-  max-height: calc(100vh - 57px);
   -webkit-transition: height 400ms ease-out,opacity 300ms;
   transition: height 400ms ease-out,opacity 300ms;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
   background-color: #f7f7f8;
+  max-height: calc(100vh - autopx);
   height: auto;
   opacity: 1;
 }
@@ -281,7 +283,7 @@ exports[`Footnote renders opened 1`] = `
 
 @media (min-width:768px) {
   .c6 {
-    max-height: calc(50vh - 57px);
+    max-height: calc(50vh - autopx);
   }
 }
 
