@@ -105,7 +105,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
               in={isOpen}
               direction="y"
               distance={isOpen ? '0rem' : '1rem'}
-              style={{ transform: 'translateY(1rem)' }}
+              initialStyle={{ transform: 'translateY(1rem)' }}
             >
               {() => (
                 <>
