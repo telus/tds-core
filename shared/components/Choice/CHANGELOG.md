@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.17](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.16...@tds/shared-choice@1.1.17) (2019-05-22)
+
+
+### Bug Fixes
+
+* **shared-choice:** show full label width when error is active on ie 11 ([61498e1](https://github.com/telus/tds-core/commit/61498e1))
+
+
+
+
+
 ## [1.1.16](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.15...@tds/shared-choice@1.1.16) (2019-05-01)
 
 **Note:** Version bump only for package @tds/shared-choice

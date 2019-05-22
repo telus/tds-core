@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-radio",
-  "version": "1.2.19",
+  "version": "1.2.20",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^1.1.2",
-    "@tds/shared-choice": "^1.1.16"
+    "@tds/shared-choice": "^1.1.17"
   }
 }
