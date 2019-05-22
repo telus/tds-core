@@ -719,7 +719,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
               direction="y"
               distance="0rem"
               in={true}
-              style={
+              initialStyle={
                 Object {
                   "transform": "translateY(1rem)",
                 }
@@ -1625,7 +1625,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
               direction="y"
               distance="0rem"
               in={true}
-              style={
+              initialStyle={
                 Object {
                   "transform": "translateY(1rem)",
                 }
@@ -2876,7 +2876,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
               direction="y"
               distance="0rem"
               in={true}
-              style={
+              initialStyle={
                 Object {
                   "transform": "translateY(1rem)",
                 }
