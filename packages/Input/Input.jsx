@@ -152,7 +152,7 @@ const Input = React.forwardRef(
     const fieldId = generateId(id, rest.name, label)
     const errorId = error && fieldId.postfix('error-message')
     const helperId = helper && fieldId.postfix('helper')
-    const hintId = hint && hintPosition === 'below' && fieldId.postfix('hint')
+    const hintId = (hint && hintPosition === 'below' && fieldId.postfix('hint')) || undefined
 
     const handleFocus = e => {
       setIsFocused(true)
