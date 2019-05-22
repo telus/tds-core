@@ -3,6 +3,9 @@
 .reset {
   composes: noSpacing from '../../src/components/Spacing.modules.scss';
   composes: none from '../../src/components/Borders.modules.scss';
+
+  // Prevent subpixel rendering problems in Chrome
+  transform: rotate(-0.00001deg);
 }
 
 .horizontal {
