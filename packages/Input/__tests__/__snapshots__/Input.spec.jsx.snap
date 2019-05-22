@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input feedback states ensures that the contents do not overlap the icons 1`] = `
+.c4 {
+  line-height: 1;
+}
+
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -139,7 +143,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="TDS_IconWrapper-modules__fixLineHeight___3tqIl"
+          class="c4"
         >
           <i
             aria-label="The value of this input field is valid."
@@ -259,6 +263,7 @@ Object {
 <Input
     hint="The short hint"
     hintPosition="inline"
+    id="the-id"
     label="The input"
     type="text"
   >
@@ -280,7 +285,7 @@ Object {
               className="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
             >
               <label
-                htmlFor="the-input"
+                htmlFor="the-id"
               >
                 <Styled(Box)
                   between={2}
@@ -339,13 +344,11 @@ Object {
                         <Text
                           block={false}
                           bold={false}
-                          id={false}
                           invert={false}
                           size="small"
                         >
                           <span
                             className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
-                            id={false}
                           >
                             The short hint
                           </span>
@@ -400,7 +403,7 @@ Object {
             >
               <Input__StyledInput
                 aria-invalid={false}
-                id="the-input"
+                id="the-id"
                 onBlur={[Function]}
                 onFocus={[Function]}
                 type="text"
@@ -444,7 +447,7 @@ Object {
                     }
                   }
                   forwardedRef={null}
-                  id="the-input"
+                  id="the-id"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   type="text"
@@ -452,7 +455,7 @@ Object {
                   <input
                     aria-invalid={false}
                     className="c2"
-                    id="the-input"
+                    id="the-id"
                     onBlur={[Function]}
                     onFocus={[Function]}
                     type="text"
@@ -533,7 +536,7 @@ Object {
 }
 
 <label
-    htmlFor="the-input"
+    htmlFor="the-id"
   >
     <Styled(Box)
       between={2}
@@ -592,13 +595,11 @@ Object {
             <Text
               block={false}
               bold={false}
-              id={false}
               invert={false}
               size="small"
             >
               <span
                 className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
-                id={false}
               >
                 The short hint
               </span>
@@ -747,6 +748,10 @@ exports[`Input renders 1`] = `
 `;
 
 exports[`Input renders with a feedback state and icon 1`] = `
+.c4 {
+  line-height: 1;
+}
+
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -885,7 +890,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="TDS_IconWrapper-modules__fixLineHeight___3tqIl"
+          class="c4"
         >
           <i
             aria-label="The value of this input field is invalid."

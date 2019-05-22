@@ -65,7 +65,7 @@ describe('Input', () => {
     })
 
     it('can have a short hint', () => {
-      const input = doMount({ hint: 'The short hint' })
+      const input = doMount({ id: 'the-id', hint: 'The short hint' })
 
       expect(input).toMatchSnapshot()
     })
@@ -125,15 +125,15 @@ describe('Input', () => {
       let findInputElement = doMount().findInputElement
       expect(findInputElement()).toHaveValue(undefined)
 
-      findInputElement = doMount({ value: 'some value' }).findInputElement
+      findInputElement = doMount({ value: 'some value', readOnly: true }).findInputElement
       expect(findInputElement()).toHaveValue('some value')
 
-      findInputElement = doMount({ value: 55 }).findInputElement
+      findInputElement = doMount({ value: 55, readOnly: true }).findInputElement
       expect(findInputElement()).toHaveValue(55)
     })
 
     it('has a value that can be changed', () => {
-      const { findInputElement, input } = doMount({ value: 'initial value' })
+      const { findInputElement, input } = doMount({ value: 'initial value', readOnly: true })
 
       input.setProps({ value: 'new value' })
 
@@ -152,7 +152,7 @@ describe('Input', () => {
     })
 
     it('can receive a new value from a parent component', () => {
-      const { input, findInputElement } = doMount({ value: 'initial value' })
+      const { input, findInputElement } = doMount({ value: 'initial value', readOnly: true })
       expect(findInputElement()).toHaveValue('initial value')
 
       input.setProps({ value: 'new value' })
@@ -272,6 +272,7 @@ describe('Input', () => {
         id: 'some-id',
         value: 'current value',
         feedback: 'error',
+        readOnly: true,
         helper,
       })
 
