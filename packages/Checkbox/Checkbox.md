@@ -12,6 +12,10 @@ For information on how to use disabled Checkboxes, please refer to the [disabled
 
 By default, `Checkbox` will act just as an HTML `input` with the type of `checkbox` will act. It will be uncontrolled by the app itself, and its value can be accessed by referencing the element.
 
+#### Default Values
+
+Due to the nature of uncontrolled components, you cannot set an initial `value` property on the component. If you need to set a default value for your uncontrolled `Checkbox`, you can use the `defaultChecked` property as described [here](https://reactjs.org/docs/uncontrolled-components.html#default-values).
+
 _Note:_ If no `id` is provided, a default `id` will be generated in the format of: "`name`\_`value`"
 
 ```jsx
@@ -24,7 +28,7 @@ _Note:_ If no `id` is provided, a default `id` will be generated in the format o
   <Checkbox name="services" value="mobility" label="Mobility" />
   <Checkbox name="services" value="internet" label="Internet" />
   <Checkbox name="services" value="tv" label="TV" />
-  <Checkbox name="services" value="home-phone" label="Home Phone" />
+  <Checkbox name="services" value="home-phone" label="Home Phone" defaultChecked />
 </Box>
 ```
 
