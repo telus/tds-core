@@ -8,33 +8,9 @@ For information on how to use disabled Checkboxes, please refer to the [disabled
 
 [Reference](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
 
-### Uncontrolled Checkbox
-
-By default, `Checkbox` will act just as an HTML `input` with the type of `checkbox` will act. It will be uncontrolled by the app itself, and its value can be accessed by referencing the element.
-
-#### Default Values
-
-Due to the nature of uncontrolled components, you cannot set an initial `value` property on the component. If you need to set a default value for your uncontrolled `Checkbox`, you can use the `defaultChecked` property as described [here](https://reactjs.org/docs/uncontrolled-components.html#default-values).
-
-_Note:_ If no `id` is provided, a default `id` will be generated in the format of: "`name`\_`value`"
-
-```jsx
-<Box tag="fieldset" between={2}>
-  <legend>
-    <Text bold size="medium">
-      Show me deals for:
-    </Text>
-  </legend>
-  <Checkbox name="services" value="mobility" label="Mobility" />
-  <Checkbox name="services" value="internet" label="Internet" />
-  <Checkbox name="services" value="tv" label="TV" />
-  <Checkbox name="services" value="home-phone" label="Home Phone" defaultChecked />
-</Box>
-```
-
 ### Controlled Checkbox
 
-If it is required that the `Checkbox` be controlled by application state or other external methods, that can be done as well. A `checked` prop must be passed to each `Checkbox` that needs to be controlled. Additionally, if the user is meant to select the `Checkbox` by hand, an `onChange` must be provided. If the `Checkbox` should not be changed by user input, a `readOnly` prop must be provided.
+If it is required that the state of the `Checkbox` be controlled by the application or other external methods, a `checked` prop must be passed to each `Checkbox` that needs to be controlled. Additionally, if the user is meant to select a `Checkbox`, an `onChange` must be provided. If the `Checkbox` should not be changed by user input, a `readOnly` prop must be provided.
 
 ```jsx
 initialState = {
@@ -69,6 +45,30 @@ const handleCheck = event => {
     value="business"
     label="Business"
   />
+</Box>
+```
+
+### Uncontrolled Checkbox
+
+If it is not neccessary to control `Checkbox` state. You can create a `Checkbox` without a `value` prop, in this case the `Checkbox` will act as an HTML `input` with the type of `checkbox`. Its value can be accessed by referencing the element via a `ref`.
+
+#### Default values
+
+Due to the nature of uncontrolled components, you cannot set an initial `value` property on the component. If you need to set a default value for your uncontrolled `Checkbox`, you can use the `defaultChecked` property as described [in the react documentation](https://reactjs.org/docs/uncontrolled-components.html#default-values).
+
+_Note:_ If no `id` is provided, a default `id` will be generated in the format of: "`name`\_`value`"
+
+```jsx
+<Box tag="fieldset" between={2}>
+  <legend>
+    <Text bold size="medium">
+      Show me deals for:
+    </Text>
+  </legend>
+  <Checkbox name="services" value="mobility" label="Mobility" />
+  <Checkbox name="services" value="internet" label="Internet" />
+  <Checkbox name="services" value="tv" label="TV" />
+  <Checkbox name="services" value="home-phone" label="Home Phone" defaultChecked />
 </Box>
 ```
 
