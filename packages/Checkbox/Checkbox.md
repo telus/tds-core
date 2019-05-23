@@ -50,11 +50,11 @@ const handleCheck = event => {
 
 ### Uncontrolled Checkbox
 
-If it is not neccessary to control `Checkbox` state. You can create a `Checkbox` without a `value` prop, in this case the `Checkbox` will act as an HTML `input` with the type of `checkbox`. Its value can be accessed by referencing the element via a `ref`.
+If it is not neccessary to control `Checkbox` state. You can create a `Checkbox` without a `checked` prop, in this case the `Checkbox` will act as an HTML `input` with the type of `checkbox`. Its value can be accessed by referencing the element via a `ref`.
 
 #### Default values
 
-Due to the nature of uncontrolled components, you cannot set an initial `value` property on the component. If you need to set a default value for your uncontrolled `Checkbox`, you can use the `defaultChecked` property as described [in the react documentation](https://reactjs.org/docs/uncontrolled-components.html#default-values).
+Due to the nature of uncontrolled components, you cannot set an initial `checked` property on the component. If you need to set a default state for your uncontrolled `Checkbox`, you can use the `defaultChecked` property as described [in the react documentation](https://reactjs.org/docs/uncontrolled-components.html#default-values).
 
 _Note:_ If no `id` is provided, a default `id` will be generated in the format of: "`name`\_`value`"
 
