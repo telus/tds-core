@@ -1,3 +1,15 @@
+#### 0.34.28 (2019-05-23)
+
+##### Bug Fixes
+
+* **core-hairline-divider:**  prevent from becoming invisible on zoom out ([75b409f1](https://github.com/telusdigital/tds/commit/75b409f160cf6cec294509fdaa519b2a524216af))
+* **shared-choice:**  show full label width when error is active on ie 11 ([3b68319f](https://github.com/telusdigital/tds/commit/3b68319f994243815ac3f922089ab6f256fe59c6))
+
+##### Tests
+
+* **core-radio:**  update test for full width style ([ad22f879](https://github.com/telusdigital/tds/commit/ad22f879369ac5ab12f9ab1fd04b298559d46f0d))
+* **core-checkbox:**  update test for full width style ([209aa3f8](https://github.com/telusdigital/tds/commit/209aa3f820e66fb19c290ea01517854d4ba5e699))
+
 #### 0.34.27 (2019-05-14)
 
 ##### Chores
