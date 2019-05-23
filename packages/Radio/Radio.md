@@ -13,29 +13,9 @@ For information on how to use disabled Radio buttons, please refer to the [disab
 
 [Reference](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
 
-### Uncontrolled Radio
-
-By default, `Radio` will act just as an HTML `input` with the type of `radio` will act. It will be uncontrolled by the app itself, and its value can be accessed by referencing the element.
-
-_Note:_ If no `id` is provided, a default `id` will be generated in the format of: "`name`\_`value`"
-
-```jsx
-<Box tag="fieldset" between={2}>
-  <legend>
-    <Text bold size="medium">
-      Show me deals for:
-    </Text>
-  </legend>
-  <Radio name="deals" value="mobility" label="Mobility" />
-  <Radio name="deals" value="internet" label="Internet" />
-  <Radio name="deals" value="tv" label="TV" />
-  <Radio name="deals" value="home-phone" label="Home Phone" />
-</Box>
-```
-
 ### Controlled Radio
 
-If it is required that the `Radio` be controlled by application state or other external methods, that can be done as well. A `checked` prop must be passed to each `Radio` that needs to be controlled. Additionally, if the user is meant to select the `Radio` by hand, an `onChange` must be provided. If the `Radio` should not be changed by user input, a `readOnly` prop must be provided.
+If it is required that the state of the `Radio` be controlled by the application or other external methods, a `checked` prop must be passed to each `Radio` that needs to be controlled. Additionally, if the user is meant to select a `Radio`, an `onChange` must be provided. If the `Radio` should not be changed by user input, a `readOnly` prop must be provided.
 
 ```jsx
 initialState = {
@@ -66,6 +46,28 @@ const setChoice = event => {
     checked={state.choice === 'paper bill'}
     onChange={setChoice}
   />
+</Box>
+```
+
+### Uncontrolled Radio
+
+If it is not neccessary to control `Radio` state. You can create a `Radio` without a `checked` prop, in this case the `Radio` will act as an HTML `input` with the type of `radio`. Its value can be accessed by referencing the element via a `ref`.
+
+#### Default values
+
+Due to the nature of uncontrolled components, you cannot set an initial `checked` property on the component. If you need to set a default state for your uncontrolled `Radio`, you can use the `defaultChecked` property as described [in the react documentation](https://reactjs.org/docs/uncontrolled-components.html#default-values).
+
+```jsx
+<Box tag="fieldset" between={2}>
+  <legend>
+    <Text bold size="medium">
+      Show me deals for:
+    </Text>
+  </legend>
+  <Radio name="deals" value="mobility" label="Mobility" />
+  <Radio name="deals" value="internet" label="Internet" />
+  <Radio name="deals" value="tv" label="TV" />
+  <Radio name="deals" value="home-phone" label="Home Phone" />
 </Box>
 ```
 
