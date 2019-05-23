@@ -19,6 +19,7 @@ class FootnoteExample extends React.Component {
 
   handleClose(e) {
     this.setState({ showFootnote: false })
+    this.state.returnRef.current.focus()
   }
 
   handleFootnoteLinkClick(number, content, returnRef) {
@@ -43,7 +44,6 @@ class FootnoteExample extends React.Component {
         />
         <Footnote
           copy="en"
-          returnRef={this.state.returnRef}
           number={this.state.number}
           content={this.state.content}
           onClose={e => {

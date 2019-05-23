@@ -118,7 +118,6 @@ exports[`TermsAndConditions renders 1`] = `
             >
               <svg
                 height="24px"
-                version="1.1"
                 viewBox="0 0 24 24"
                 width="24px"
                 xlink="http://www.w3.org/1999/xlink"
@@ -134,7 +133,6 @@ exports[`TermsAndConditions renders 1`] = `
               >
                 <svg
                   height="8px"
-                  version="1.1"
                   viewBox="0 0 12 8"
                   width="12px"
                   xlink="http://www.w3.org/1999/xlink"
@@ -494,7 +492,6 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                 <Circle>
                                                   <svg
                                                     height="24px"
-                                                    version="1.1"
                                                     viewBox="0 0 24 24"
                                                     width="24px"
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -543,7 +540,6 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                       >
                                                         <svg
                                                           height="8px"
-                                                          version="1.1"
                                                           viewBox="0 0 12 8"
                                                           width="12px"
                                                           xmlns="http://www.w3.org/2000/svg"
@@ -1400,7 +1396,6 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                 <Circle>
                                                   <svg
                                                     height="24px"
-                                                    version="1.1"
                                                     viewBox="0 0 24 24"
                                                     width="24px"
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -1449,7 +1444,6 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       >
                                                         <svg
                                                           height="8px"
-                                                          version="1.1"
                                                           viewBox="0 0 12 8"
                                                           width="12px"
                                                           xmlns="http://www.w3.org/2000/svg"
@@ -2651,7 +2645,6 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                 <Circle>
                                                   <svg
                                                     height="24px"
-                                                    version="1.1"
                                                     viewBox="0 0 24 24"
                                                     width="24px"
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -2700,7 +2693,6 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                       >
                                                         <svg
                                                           height="8px"
-                                                          version="1.1"
                                                           viewBox="0 0 12 8"
                                                           width="12px"
                                                           xmlns="http://www.w3.org/2000/svg"

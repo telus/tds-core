@@ -16,8 +16,6 @@ import { getCopy } from '@tds/util-helpers'
 import List from './FootnoteList'
 import copyDictionary from './footnoteText'
 
-import { warn } from '../../../shared/utils/warn'
-
 const StyledFootnote = styled.div(
   {
     position: 'fixed',
@@ -101,7 +99,7 @@ const usePrevious = value => {
 }
 
 const Footnote = props => {
-  const { copy, number, content, returnRef, onClose, isOpen } = props
+  const { copy, number, content, onClose, isOpen } = props
   const closeRef = useRef(null)
   const footnoteRef = useRef(null)
   const headerRef = useRef(null)
@@ -112,18 +110,13 @@ const Footnote = props => {
   const [isVisible, setIsVisible] = useState(false)
   const [isTextVisible, setIsTextVisible] = useState(true)
 
-  if ((content || number) && returnRef === null) {
-    warn('Footnote', 'A returnRef must be provided')
-  }
-
   const prevProps = usePrevious(props)
 
   const closeFootnote = e => {
-    returnRef.current.focus()
     onClose(e)
   }
 
-  // listen for ESCAPE, close button clicks, and clicks outside of the Footnote. Returns focus to returnRef and call onCloseClick
+  // listen for ESCAPE, close button clicks, and clicks outside of the Footnote. Call onClose.
   const handleClose = e => {
     if (e.type === 'keydown') {
       const key = e.keyCode || e.key
@@ -131,8 +124,11 @@ const Footnote = props => {
         closeFootnote(e)
       }
     } else if (
-      (e.type === 'click' && (footnoteRef && !footnoteRef.current.contains(e.target))) ||
-      (e.target && e.target.getAttribute('data-tds-id') !== 'footnote-link')
+      e.type === 'click' &&
+      (footnoteRef &&
+        e.target &&
+        !footnoteRef.current.contains(e.target) &&
+        e.target.getAttribute('data-tds-id') !== 'footnote-link')
     ) {
       closeFootnote(e)
     }
@@ -167,13 +163,6 @@ const Footnote = props => {
   useEffect(() => {
     setHeaderHeight(headerRef.current.offsetHeight)
   }, [])
-
-  // focus the close button on mount
-  useEffect(() => {
-    if (isOpen && closeRef && closeRef.current !== null) {
-      closeRef.current.focus()
-    }
-  }, [isOpen, returnRef])
 
   // add listeners for mouse clicks outside of Footnote and for ESCAPE key presses
   useEffect(() => {
@@ -212,6 +201,13 @@ const Footnote = props => {
       setIsTextVisible(true)
     }
   }, [isOpen])
+
+  // focus on the close button on open/content change
+  useEffect(() => {
+    if (isVisible && closeRef && closeRef.current !== null) {
+      closeRef.current.focus()
+    }
+  }, [isVisible, content])
 
   return (
     <StyledFootnote
@@ -285,24 +281,17 @@ const copyShape = PropTypes.shape({
 
 Footnote.propTypes = {
   /**
-   * A React ref to the `FootnoteLink` **that** initiated the `Footnote`. Focus will be returned to this ref **when the Footnote closes**.
-   */
-  returnRef: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
-  ]),
-  /**
    * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively.
    *
    * To provide your own, pass a JSON object with the keys `heading` and `close`.
    */
   copy: PropTypes.oneOfType([PropTypes.oneOf(['en', 'fr']), copyShape]).isRequired,
   /**
-   * The number, must match the number of the `FootnoteLink` that inititated the `Footnote`
+   * The number, must match the number of the `FootnoteLink` that initiated the `Footnote`.
    */
   number: PropTypes.number,
   /**
-   * The content
+   * The content.
    */
   content: PropTypes.string,
   /**
@@ -321,7 +310,6 @@ Footnote.defaultProps = {
   isOpen: false,
   number: undefined,
   content: undefined,
-  returnRef: undefined,
 }
 
 export default Footnote

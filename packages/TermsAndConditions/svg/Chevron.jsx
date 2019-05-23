@@ -11,7 +11,7 @@ const StyledChevron = styled.span(({ isOpen }) => ({
   transition: 'transform 300ms',
   transform: `translate(6px, ${isOpen ? '-2px' : '-1px'})`,
   [`${StyledClickable}:hover &`]: {
-    transform: !isOpen ? 'translate(6px, 2px)' : 'translate(6px, -5px)',
+    transform: `translate(6px, ${!isOpen ? '2px' : '-5px'})`,
   },
 }))
 
@@ -21,7 +21,6 @@ const Chevron = ({ isOpen }) => (
       width="12px"
       height="8px"
       viewBox="0 0 12 8"
-      version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >

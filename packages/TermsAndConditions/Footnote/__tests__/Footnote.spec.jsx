@@ -16,14 +16,14 @@ const Wrapper = props => {
   const refTwo = useRef(null)
   return (
     <div>
-      Terms and conditions may apply
+      <span id="title">Terms and conditions may apply</span>
       <button id="one" type="button" ref={refOne}>
         1
       </button>
       <button id="two" type="button" ref={refTwo}>
         2
       </button>
-      <Footnote {...props} returnRef={refOne} />
+      <Footnote {...props} />
     </div>
   )
 }
@@ -63,9 +63,8 @@ describe('Footnote', () => {
       })
 
       const onClose = jest.fn()
-      doMountWrapper({ isOpen: true, onClose })
-
-      events.click({ type: 'click', x: 0, y: 0 })
+      const footnote = doMountWrapper({ isOpen: true, onClose })
+      events.click({ type: 'click', target: footnote.find('span#title').getDOMNode() })
       expect(onClose).toHaveBeenCalled()
     })
 
@@ -84,17 +83,6 @@ describe('Footnote', () => {
         .simulate('click')
 
       expect(onClose).toHaveBeenCalled()
-    })
-
-    it('focuses on the returnRef when closed', () => {
-      const footnote = doMountWrapper({ isOpen: true })
-
-      footnote
-        .find('Footnote')
-        .find('button')
-        .simulate('click')
-
-      expect(footnote.find('button#one').getDOMNode()).toEqual(document.activeElement)
     })
   })
 })

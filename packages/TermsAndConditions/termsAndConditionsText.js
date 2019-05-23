@@ -7,7 +7,7 @@ const copyDictionary = {
   fr: {
     headingView: 'Voir les modalités et conditions',
     headingHide: 'Masquer les modalités et conditions',
-    nonIndexedTitle: 'Ce qui suit s’applique aux modalités et conditions ci-dessus.',
+    nonIndexedTitle: 'Ce qui suit s’applique aux modalités et conditions ci-dessus',
   },
 }
 

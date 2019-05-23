@@ -104,7 +104,11 @@ exports[`Footnote renders closed 1`] = `
 }
 
 <div>
-  Terms and conditions may apply
+  <span
+    id="title"
+  >
+    Terms and conditions may apply
+  </span>
   <button
     id="one"
     type="button"
@@ -300,7 +304,11 @@ exports[`Footnote renders opened 1`] = `
 }
 
 <div>
-  Terms and conditions may apply
+  <span
+    id="title"
+  >
+    Terms and conditions may apply
+  </span>
   <button
     id="one"
     type="button"

@@ -67,11 +67,12 @@ FootnoteLink.propTypes = {
    */
   copy: PropTypes.oneOfType([PropTypes.oneOf(['en', 'fr']), copyShape]).isRequired,
   /**
-   * The **footnote** number, **or multiple numbers if passed as an array. If using an array, a comma-separated group of numbers will be rendered as superscript.**
+   * The footnote number, or multiple numbers if passed as an array.
+   * If using an array, a comma-separated group of numbers will be rendered as superscript.
    */
   number: PropTypes.oneOfType([PropTypes.number, PropTypes.arrayOf(PropTypes.number)]).isRequired,
   /**
-   * A callback function to handle the click of a FootnoteLink
+   * A callback function to handle the click of a FootnoteLink.
    *
    * @param {SyntheticEvent} event The React `SyntheticEvent`
    */
