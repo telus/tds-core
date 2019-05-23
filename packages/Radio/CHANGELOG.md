@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.20...@tds/core-radio@2.0.0) (2019-05-23)
+
+
+### Features
+
+* **core-radio:** upgrade to styled-components ([2e677b0](https://github.com/telusdigital/tds/commit/2e677b0))
+
+
+### BREAKING CHANGES
+
+* **core-radio:** styled-components now a peer dependency
+
+
+
+
+
 ## [1.2.20](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.19...@tds/core-radio@1.2.20) (2019-05-22)
 
 **Note:** Version bump only for package @tds/core-radio
