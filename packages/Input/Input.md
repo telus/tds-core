@@ -13,10 +13,38 @@ For information on how to use disabled Inputs, please refer to the [disabled for
 
 ```jsx
 <Box between={2}>
-  <Input label="First name" defaultValue="Harry" />
+  <Input label="Name" defaultValue="Harry" />
   <Input type="tel" label="Mobile phone" pattern="[0-9]{10}" maxLength="10" />
   <Input type="password" label="Tax ID" defaultValue="123456789" autoComplete="on" />
 </Box>
+```
+
+### Controlled Input
+
+If it is required that the state of the `Input` be controlled by the application or other external methods, `value` and `onChange` props must be passed to the `Input`. If the `Input` should not be changed by user input, a `readOnly` prop must be provided.
+
+```jsx
+initialState = {
+  value: 'Harry',
+}
+const onChange = evt => {
+  setState({ value: evt.target.value })
+}
+;<Box between={2}>
+  <Input label="First name" type="text" value={state.value} onChange={onChange} />
+</Box>
+```
+
+### Uncontrolled Input
+
+If it is not neccessary to control `Input` state. You can create an `Input` without a `value` prop, in this case the `Input` will act as an HTML `input` with the type specified by the `type` prop. Its value can be accessed by referencing the element via a `ref`.
+
+#### Default values
+
+Due to the nature of uncontrolled components, you cannot set an initial `value` property on the component. If you need to set a default state for your uncontrolled `Input`, you can use the `defaultValue` property as described [in the react documentation](https://reactjs.org/docs/uncontrolled-components.html#default-values).
+
+```jsx
+<Input label="Last name" type="text" defaultValue="Potter" />
 ```
 
 ### Getting feedback for entered values
@@ -82,6 +110,7 @@ const validate = event => {
 
 ;<Input
   label="Name"
+  id="name-validation"
   value={state.value}
   feedback={state.status}
   error={state.errorMessage}
@@ -115,23 +144,4 @@ Use the `hintPosition` in conjunction with `hint` to display a larger hint below
   hintPosition="below"
   hint="Enter the account number in the box below to go to the overview page for that account."
 />
-```
-
-### Default values
-
-Use a `defaultValue` to prefill the input with human readable data. To handle any input changes use `onChange` prop.
-
-_NOTE:_ Only one of `defaultValue` or `value` can be set. To learn more, see <a href="https://reactjs.org/docs/uncontrolled-components.html" target="_blank">React uncontrolled components</a>.
-
-```jsx
-initialState = {
-  value: 'Not set yet',
-}
-const onChange = evt => {
-  setState({ value: evt.target.value })
-}
-;<Box between={2}>
-  <Text>Value: {state.value}</Text>
-  <Input label="Last name" type="text" defaultValue="Potter" onChange={onChange} />
-</Box>
 ```
