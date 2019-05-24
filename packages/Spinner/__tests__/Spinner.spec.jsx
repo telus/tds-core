@@ -7,6 +7,7 @@ import Spinner from '../Spinner'
 
 describe('Spinner', () => {
   const defaultProps = {
+    label: 'Loading content',
     spinning: true,
   }
   const doShallow = (overrides = {}, children) =>
@@ -36,19 +37,43 @@ describe('Spinner', () => {
   }
 
   it('renders', () => {
-    const spinner = render(<Spinner spinning />)
+    const spinner = render(<Spinner label="Loading content" spinning />)
 
     expect(spinner).toMatchSnapshot()
   })
 
   it('renders with children', () => {
     const spinner = render(
-      <Spinner spinning>
+      <Spinner label="Loading content" spinning>
         <span>Overlay me with the spinner</span>
       </Spinner>
     )
 
     expect(spinner).toMatchSnapshot()
+  })
+
+  it('renders a small spinner', () => {
+    const { container } = doMount(
+      { size: 'small', inline: true },
+      <span>Overlay me with the spinner</span>
+    )
+    expect(container).toMatchSnapshot()
+  })
+
+  it('renders a small secondary spinner', () => {
+    const { container } = doMount(
+      { size: 'small', variant: 'secondary', inline: true },
+      <span>Overlay me with the spinner</span>
+    )
+    expect(container).toMatchSnapshot()
+  })
+
+  it('does not render a large secondary spinner', () => {
+    const { container } = doMount(
+      { size: 'large', variant: 'secondary', inline: true },
+      <span>Overlay me with the spinner</span>
+    )
+    expect(container).toMatchSnapshot()
   })
 
   it('renders inline', () => {
@@ -68,9 +93,15 @@ describe('Spinner', () => {
   })
 
   it('can have a tip', () => {
-    const { spinner } = doMount({ tip: 'A tip' })
+    const { spinner } = doMount({ label: undefined, tip: 'A tip' })
 
     expect(spinner).toContainReact(<Text size="small">A tip</Text>)
+  })
+
+  it('can have a label', () => {
+    const { spinner } = doMount({ label: 'A label' })
+
+    expect(spinner).toContainReact(<Text size="small">A label</Text>)
   })
 
   describe('overlaying content', () => {
@@ -93,7 +124,7 @@ describe('Spinner', () => {
 
   describe('accessibility', () => {
     it('gives the svg a default a11y label', () => {
-      const { spinnerSvg, a11yLabel } = doMount()
+      const { spinnerSvg, a11yLabel } = doMount({ label: undefined })
 
       expect(a11yLabel).toHaveText(
         'A spinner is active. Please wait while the page completes a task.'
@@ -101,8 +132,14 @@ describe('Spinner', () => {
       expect(spinnerSvg).toHaveProp('aria-labelledby', a11yLabel.props().id)
     })
 
-    it('allows a custom a11y label', () => {
-      const { a11yLabel } = doMount({ a11yLabel: 'Something is busy' })
+    it('allows a custom a11y label (a11yLabel)', () => {
+      const { a11yLabel } = doMount({ label: undefined, a11yLabel: 'Something is busy' })
+
+      expect(a11yLabel).toHaveText('Something is busy')
+    })
+
+    it('allows a custom a11y label (label)', () => {
+      const { a11yLabel } = doMount({ label: 'Something is busy' })
 
       expect(a11yLabel).toHaveText('Something is busy')
     })

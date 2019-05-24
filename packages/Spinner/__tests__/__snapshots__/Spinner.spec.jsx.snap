@@ -1,5 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Spinner does not render a large secondary spinner 1`] = `
+<div
+  aria-live="assertive"
+  className="relative inline"
+  data-testid="container"
+>
+  <SpinnerSvg
+    a11yLabel="Loading content"
+    overlay={true}
+    size="large"
+    tip="Loading content"
+    variant="secondary"
+  >
+    <div
+      className="container centered"
+      data-testid="spinner"
+    >
+      <svg
+        aria-labelledby="spinner-title-5"
+        aria-live="assertive"
+        className="svg"
+        data-testid="svg"
+        height="100"
+        role="alert"
+        viewBox="0 0 100 100"
+        width="100"
+      >
+        <title
+          id="spinner-title-5"
+        >
+          Loading content
+        </title>
+        <circle
+          className="circle-primary"
+          cx="50"
+          cy="50"
+          fill="none"
+          r="20"
+          strokeDasharray="89, 200"
+          strokeDashoffset="0"
+          strokeLinecap="round"
+          strokeWidth="4"
+        />
+      </svg>
+      <div
+        className="tip"
+      >
+        <Text
+          block={false}
+          bold={false}
+          invert={false}
+          size="small"
+        >
+          <span
+            className="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+          >
+            Loading content
+          </span>
+        </Text>
+      </div>
+    </div>
+  </SpinnerSvg>
+  <div
+    className="overlay"
+    data-testid="overlay"
+  />
+  <div
+    aira-hidden="true"
+    className="opaque"
+    onFocus={[Function]}
+  >
+    <span>
+      Overlay me with the spinner
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Spinner renders 1`] = `
 <div
   class="container"
@@ -7,20 +85,21 @@ exports[`Spinner renders 1`] = `
 >
   <svg
     aria-labelledby="spinner-title-1"
+    aria-live="assertive"
     class="svg"
     data-testid="svg"
     height="100"
-    role="img"
+    role="alert"
     viewBox="0 0 100 100"
     width="100"
   >
     <title
       id="spinner-title-1"
     >
-      A spinner is active. Please wait while the page completes a task.
+      Loading content
     </title>
     <circle
-      class="circle"
+      class="circle-primary"
       cx="50"
       cy="50"
       fill="none"
@@ -31,11 +110,143 @@ exports[`Spinner renders 1`] = `
       stroke-width="4"
     />
   </svg>
+  <div
+    class="tip"
+  >
+    <span
+      class="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+    >
+      Loading content
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Spinner renders a small secondary spinner 1`] = `
+<div
+  aria-live="assertive"
+  className="relative inline"
+  data-testid="container"
+>
+  <SpinnerSvg
+    a11yLabel="Loading content"
+    overlay={true}
+    size="small"
+    variant="secondary"
+  >
+    <div
+      className="container centered"
+      data-testid="spinner"
+    >
+      <svg
+        aria-labelledby="spinner-title-4"
+        aria-live="assertive"
+        className="svg"
+        data-testid="svg"
+        height="50"
+        role="alert"
+        viewBox="0 0 100 100"
+        width="50"
+      >
+        <title
+          id="spinner-title-4"
+        >
+          Loading content
+        </title>
+        <circle
+          className="circle-secondary"
+          cx="50"
+          cy="50"
+          fill="none"
+          r="20"
+          strokeDasharray="89, 200"
+          strokeDashoffset="0"
+          strokeLinecap="round"
+          strokeWidth="4"
+        />
+      </svg>
+    </div>
+  </SpinnerSvg>
+  <div
+    className="overlay"
+    data-testid="overlay"
+  />
+  <div
+    aira-hidden="true"
+    className="opaque"
+    onFocus={[Function]}
+  >
+    <span>
+      Overlay me with the spinner
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Spinner renders a small spinner 1`] = `
+<div
+  aria-live="assertive"
+  className="relative inline"
+  data-testid="container"
+>
+  <SpinnerSvg
+    a11yLabel="Loading content"
+    overlay={true}
+    size="small"
+    variant="primary"
+  >
+    <div
+      className="container centered"
+      data-testid="spinner"
+    >
+      <svg
+        aria-labelledby="spinner-title-3"
+        aria-live="assertive"
+        className="svg"
+        data-testid="svg"
+        height="50"
+        role="alert"
+        viewBox="0 0 100 100"
+        width="50"
+      >
+        <title
+          id="spinner-title-3"
+        >
+          Loading content
+        </title>
+        <circle
+          className="circle-primary"
+          cx="50"
+          cy="50"
+          fill="none"
+          r="20"
+          strokeDasharray="89, 200"
+          strokeDashoffset="0"
+          strokeLinecap="round"
+          strokeWidth="4"
+        />
+      </svg>
+    </div>
+  </SpinnerSvg>
+  <div
+    className="overlay"
+    data-testid="overlay"
+  />
+  <div
+    aira-hidden="true"
+    className="opaque"
+    onFocus={[Function]}
+  >
+    <span>
+      Overlay me with the spinner
+    </span>
+  </div>
 </div>
 `;
 
 exports[`Spinner renders with children 1`] = `
 <div
+  aria-live="assertive"
   class="relative"
   data-testid="container"
 >
@@ -45,20 +256,21 @@ exports[`Spinner renders with children 1`] = `
   >
     <svg
       aria-labelledby="spinner-title-2"
+      aria-live="assertive"
       class="svg"
       data-testid="svg"
       height="100"
-      role="img"
+      role="alert"
       viewBox="0 0 100 100"
       width="100"
     >
       <title
         id="spinner-title-2"
       >
-        A spinner is active. Please wait while the page completes a task.
+        Loading content
       </title>
       <circle
-        class="circle"
+        class="circle-primary"
         cx="50"
         cy="50"
         fill="none"
@@ -69,12 +281,22 @@ exports[`Spinner renders with children 1`] = `
         stroke-width="4"
       />
     </svg>
+    <div
+      class="tip"
+    >
+      <span
+        class="TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      >
+        Loading content
+      </span>
+    </div>
   </div>
   <div
     class="overlay"
     data-testid="overlay"
   />
   <div
+    aira-hidden="true"
     class="opaque"
   >
     <span>
