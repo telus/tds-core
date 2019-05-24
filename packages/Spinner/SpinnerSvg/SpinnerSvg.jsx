@@ -17,8 +17,7 @@ class SpinnerSvg extends React.Component {
   }
 
   render() {
-    const { tip, overlay, a11yLabel, ...rest } = this.props
-
+    const { tip, overlay, a11yLabel, size, variant, ...rest } = this.props
     return (
       <div
         className={joinClassNames(styles.container, overlay && styles.centered)}
@@ -28,15 +27,16 @@ class SpinnerSvg extends React.Component {
           {...safeRest(rest)}
           className={styles.svg}
           viewBox="0 0 100 100"
-          width="100"
-          height="100"
-          role="img"
+          width={size === 'large' ? '100' : '50'}
+          height={size === 'large' ? '100' : '50'}
+          role="alert"
           aria-labelledby={this.state.titleId}
+          aria-live="assertive"
           data-testid="svg"
         >
           <title id={this.state.titleId}>{a11yLabel}</title>
           <circle
-            className={styles.circle}
+            className={styles[`circle-${size === 'small' ? variant : 'primary'}`]}
             strokeWidth="4"
             fill="none"
             strokeLinecap="round"
@@ -57,9 +57,11 @@ class SpinnerSvg extends React.Component {
   }
 }
 SpinnerSvg.propTypes = {
-  tip: PropTypes.string,
+  tip: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   overlay: PropTypes.bool,
-  a11yLabel: PropTypes.string.isRequired,
+  a11yLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  size: PropTypes.oneOf(['large', 'small']).isRequired,
+  variant: PropTypes.oneOf(['primary', 'secondary']).isRequired,
 }
 SpinnerSvg.defaultProps = {
   tip: undefined,
