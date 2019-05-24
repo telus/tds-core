@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import safeRest from '../../shared/utils/safeRest'
+
 const StyledA11yContent = styled.span({
   position: 'absolute',
   height: '1px',
@@ -14,8 +16,8 @@ const StyledA11yContent = styled.span({
  * @version ./package.json
  */
 
-const A11yContent = ({ children }) => {
-  return <StyledA11yContent>{children}</StyledA11yContent>
+const A11yContent = ({ children, ...rest }) => {
+  return <StyledA11yContent {...safeRest(rest)}>{children}</StyledA11yContent>
 }
 
 A11yContent.propTypes = {
