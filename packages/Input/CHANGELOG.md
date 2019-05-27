@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telus/tds/compare/@tds/core-input@2.1.16...@tds/core-input@3.0.0) (2019-05-27)
+
+
+### Features
+
+* **core-input:** remove Input.Helper ([d9dae17](https://github.com/telus/tds/commit/d9dae17))
+* **core-input:** upgrade to styled-components ([f5b14ea](https://github.com/telus/tds/commit/f5b14ea))
+
+
+### BREAKING CHANGES
+
+* **core-input:** upgrade to styled-components
+* **core-input:** remove Input.Helper
+
+
+
+
+
 ## [2.1.16](https://github.com/telus/tds/compare/@tds/core-input@2.1.15...@tds/core-input@2.1.16) (2019-05-13)
 
 **Note:** Version bump only for package @tds/core-input
