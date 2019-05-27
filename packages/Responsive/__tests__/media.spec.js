@@ -27,7 +27,7 @@ describe('media', () => {
         color: 'red',
       })
 
-      expect(style).toEqual({ [`@media (max-width: ${breakpoints.md}px)`]: { color: 'red' } })
+      expect(style).toEqual({ [`@media (max-width: ${breakpoints.md - 1}px)`]: { color: 'red' } })
     })
 
     it('accepts an object', () => {
