@@ -23,7 +23,7 @@ export default {
     const { minWidth, maxWidth, and } = this.query
 
     const min = minWidth ? `(min-width: ${breakpoints[minWidth]}px)` : null
-    const max = maxWidth ? `(max-width: ${breakpoints[maxWidth]}px)` : null
+    const max = maxWidth ? `(max-width: ${breakpoints[maxWidth] - 1}px)` : null
 
     const mediaQuery = `@media ${[min, max, and].filter(a => a).join(' and ')}`
     this.query = {}
