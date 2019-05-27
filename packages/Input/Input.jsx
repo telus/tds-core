@@ -48,7 +48,7 @@ const StyledInput = styled.input(
   color,
   ({ withFeedbackIcon }) => ({
     '&::-webkit-inner-spin-button, &::-webkit-outer-spin-button': {
-      '-webkit-appearance:': 'none',
+      appearance: 'none',
       margin: 0,
     },
     minHeight: '3.25rem',
