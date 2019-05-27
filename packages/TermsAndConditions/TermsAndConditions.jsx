@@ -33,7 +33,7 @@ const StyledChevronContainer = styled.span({
 const UPPER_SPEED_LIMIT = 150
 const LOWER_SPEED_LIMIT = 600
 
-const calculateSpeed = height => {
+const calculateSpeed = (height, isExpanding) => {
   const h = height * 0.5
   if (h < UPPER_SPEED_LIMIT) {
     return UPPER_SPEED_LIMIT
@@ -41,7 +41,7 @@ const calculateSpeed = height => {
   if (h > LOWER_SPEED_LIMIT) {
     return LOWER_SPEED_LIMIT
   }
-  return h
+  return isExpanding ? h + h * 0.2 : h
 }
 /**
  * @version ./package.json
@@ -50,7 +50,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
   const contentWrapper = useRef(null)
   const [isOpen, setOpen] = useState(false)
   const [contentWrapperHeight, setContentWrapperHeight] = useState(0)
-  const speed = calculateSpeed(contentWrapperHeight)
+  const speed = calculateSpeed(contentWrapperHeight, isOpen)
 
   const hasIndexedContent = indexedContent.length > 0
   const hasNonIndexedContent = nonIndexedContent.length > 0
@@ -110,7 +110,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
               {() => (
                 <>
                   {hasIndexedContent > 0 && (
-                    <FlexGrid gutter={false} limitWidth={false}>
+                    <FlexGrid>
                       <FlexGrid.Row>
                         <FlexGrid.Col xs={12} mdOffset={1} md={10}>
                           <List size="small" below={4} type="indexed">
@@ -123,7 +123,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
                     </FlexGrid>
                   )}
                   {hasNonIndexedContent && (
-                    <FlexGrid gutter={false} limitWidth={false}>
+                    <FlexGrid>
                       <FlexGrid.Row>
                         <FlexGrid.Col xs={12} mdOffset={1} md={10}>
                           <Box between={3}>
