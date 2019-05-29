@@ -14,7 +14,10 @@ import Select from '../Select'
 describe('Select', () => {
   const defaultProps = {
     label: 'The select',
-    options: [{ text: 'text one', value: 'value-1' }, { text: 'text two', value: 'value-2' }],
+    options: [
+      { text: 'text one', value: 'value-1', readOnly: true },
+      { text: 'text two', value: 'value-2', readOnly: true },
+    ],
   }
 
   const doRender = (overrides = {}) => render(<Select {...defaultProps} {...overrides} />)
@@ -30,7 +33,6 @@ describe('Select', () => {
       findSelectElement,
       findFeedbackIconFade: () => select.find(Fade),
       findHelper: () => select.find(InputFeedback),
-      changeValueTo: value => findSelectElement().simulate('change', { target: { value } }),
       focus: (focusEvent = {}) => findSelectElement().simulate('focus', focusEvent),
       blur: (blurEvent = {}) => findSelectElement().simulate('blur', blurEvent),
     }
@@ -50,34 +52,32 @@ describe('Select', () => {
 
   it('needs a set of options', () => {
     const { findSelectElement } = doMount({
-      options: [{ text: 'some text', value: 'value-1' }, { text: 'other text', value: 'value-2' }],
+      options: [
+        { text: 'some text', value: 'value-1', readOnly: true },
+        { text: 'other text', value: 'value-2', readOnly: true },
+      ],
     })
 
-    expect(findSelectElement()).toContainReact(<option value="value-1">some text</option>)
-    expect(findSelectElement()).toContainReact(<option value="value-2">other text</option>)
+    expect(findSelectElement).toMatchSnapshot()
   })
 
   it('positions the down caret so that the text does not overlap it', () => {
     const { findSelectElement } = doMount()
 
-    expect(findSelectElement()).toHaveClassName('withoutFeedbackIcon')
+    expect(findSelectElement).toMatchSnapshot()
   })
 
   describe('label', () => {
     it('must have a label', () => {
       const { label } = doMount({ label: 'The label' })
 
-      expect(label).toContainReact(
-        <Text size="medium" bold>
-          The label
-        </Text>
-      )
+      expect(label).toMatchSnapshot()
     })
 
     it('can have a short hint', () => {
       const { label } = doMount({ hint: 'The short hint' })
 
-      expect(label).toContainReact(<Text size="small">The short hint</Text>)
+      expect(label).toMatchSnapshot()
     })
   })
 
@@ -119,31 +119,12 @@ describe('Select', () => {
       let findSelectElement = doMount().findSelectElement
       expect(findSelectElement()).toHaveValue(undefined)
 
-      findSelectElement = doMount({ value: 'some value' }).findSelectElement
+      findSelectElement = doMount({ value: 'some value', readOnly: true }).findSelectElement
       expect(findSelectElement()).toHaveValue('some value')
     })
 
-    it('has a value that can be changed', () => {
-      const { changeValueTo, findSelectElement } = doMount({ value: 'initial value' })
-      changeValueTo('new value')
-
-      expect(findSelectElement()).toHaveValue('new value')
-    })
-
-    it('will notify when its value changes', () => {
-      const onChangeMock = jest.fn()
-
-      const { changeValueTo, findSelectElement } = doMount({ onChange: onChangeMock })
-      changeValueTo('new value')
-
-      expect(onChangeMock).toHaveBeenCalledWith(
-        expect.objectContaining({ target: { value: 'new value' } })
-      )
-      expect(findSelectElement()).toHaveValue('new value')
-    })
-
     it('can receive a new value from a parent component', () => {
-      const { select, findSelectElement } = doMount({ value: 'initial value' })
+      const { select, findSelectElement } = doMount({ value: 'initial value', readOnly: true })
 
       select.setProps({ value: 'new value' })
 
@@ -191,14 +172,14 @@ describe('Select', () => {
     it('ensures that the contents do not overlap the icons', () => {
       const { findSelectElement } = doMount({ feedback: 'success' })
 
-      expect(findSelectElement()).toHaveClassName('withFeedbackIcon')
+      expect(findSelectElement).toMatchSnapshot()
     })
   })
 
   describe('disabling', () => {
     it('deactivates the select', () => {
       let findSelectElement = doMount().findSelectElement
-      expect(findSelectElement()).not.toHaveClassName('disabled')
+      expect(findSelectElement).toMatchSnapshot()
       expect(findSelectElement()).not.toBeDisabled()
 
       findSelectElement = doMount({ disabled: true }).findSelectElement
@@ -209,7 +190,7 @@ describe('Select', () => {
     it('removes the positioning of the select so that the disabled treatment is displayed', () => {
       const { findSelectElement } = doMount({ disabled: true })
 
-      expect(findSelectElement()).not.toHaveClassName('positionSelectOnTop')
+      expect(findSelectElement).toMatchSnapshot()
     })
 
     it('hides any icons', () => {
@@ -231,13 +212,13 @@ describe('Select', () => {
   })
 
   it('can have an error message', () => {
-    const { select } = doMount({ id: 'some-id', error: 'Oh no a terrible error!' })
+    const { select } = doMount({
+      id: 'some-id',
+      error: 'Oh no a terrible error!',
+      feedback: 'error',
+    })
 
-    expect(select).toContainReact(
-      <InputFeedback id="some-id_error-message" feedback="error">
-        <Paragraph size="small">Oh no a terrible error!</Paragraph>
-      </InputFeedback>
-    )
+    expect(select).toMatchSnapshot()
   })
 
   describe('helpers', () => {
@@ -271,6 +252,7 @@ describe('Select', () => {
         value: 'current value',
         feedback: 'error',
         helper,
+        readOnly: true,
       })
 
       expect(helper).toHaveBeenCalledWith('error', 'current value')
@@ -303,6 +285,7 @@ describe('Select', () => {
       const { findSelectElement, findHelper } = doMount({
         id: 'some-field-id',
         error: 'An error message',
+        feedback: 'error',
       })
 
       expect(findSelectElement()).toHaveProp('aria-describedby', 'some-field-id_error-message')
@@ -311,8 +294,10 @@ describe('Select', () => {
 
     it('connects a simple helper to the select field for screen readers', () => {
       const helper = <Paragraph>Some helper text.</Paragraph>
-      const { findSelectElement, findHelper } = doMount({ id: 'some-field-id', helper })
-
+      const { findSelectElement, findHelper } = doMount({
+        id: 'some-field-id',
+        helper,
+      })
       expect(findSelectElement()).toHaveProp('aria-describedby', 'some-field-id_helper')
       expect(findHelper()).toHaveProp('id', 'some-field-id_helper')
     })
@@ -341,6 +326,7 @@ describe('Select', () => {
             {
               text: 'hi',
               value: 'hi',
+              readOnly: true,
             },
           ]}
           tooltip={<Tooltip>The tooltip</Tooltip>}
