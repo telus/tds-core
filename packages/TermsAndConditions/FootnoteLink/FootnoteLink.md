@@ -25,7 +25,7 @@
 ```jsx
 <FlexGrid gutter={false}>
   <FlexGrid.Row>
-    <FlexGrid.Col xs={3}>
+    <FlexGrid.Col xs={5} md={3}>
       <PriceLockup
         size="medium"
         topText="Starting at"
@@ -42,7 +42,7 @@
       />
     </FlexGrid.Col>
 
-    <FlexGrid.Col xs={3} xsOffset={1}>
+    <FlexGrid.Col xs={5} md={3} xsOffset={2}>
       <PriceLockup
         size="medium"
         topText="Starting at"
