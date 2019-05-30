@@ -9,13 +9,13 @@ import videoText from '../../../videoText'
 import Unmuted from '../../svg/Unmuted'
 import Muted from '../../svg/Muted'
 
-const VolumeSliderContainer = styled.div({
+const VolumeSliderContainer = styled.div(props => ({
   display: 'flex',
-  width: '10%',
+  width: props.videoPlayerWidth > props.compactModeThreshold ? '12%' : '20%',
   maxWidth: 120,
   margin: '0 1rem',
   alignItems: 'center',
-})
+}))
 
 const StyledVolumeSlider = styled.input(props => ({
   width: '100%',
@@ -128,7 +128,10 @@ class VolumeSlider extends React.PureComponent {
 
   render() {
     return (
-      <VolumeSliderContainer>
+      <VolumeSliderContainer
+        compactModeThreshold={this.props.compactModeThreshold}
+        videoPlayerWidth={this.props.videoPlayerWidth}
+      >
         <VideoButton
           icon={this.props.videoIsMuted ? <Muted /> : <Unmuted />}
           label={
@@ -165,6 +168,8 @@ VolumeSlider.propTypes = {
   toggleMute: PropTypes.func.isRequired,
   resetInactivityTimer: PropTypes.func.isRequired,
   copy: PropTypes.oneOf(['en', 'fr']).isRequired,
+  compactModeThreshold: PropTypes.number.isRequired,
+  videoPlayerWidth: PropTypes.number.isRequired,
 }
 
 VolumeSlider.defaultProps = {}

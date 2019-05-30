@@ -4,9 +4,6 @@ import styled from 'styled-components'
 
 import { colorShark } from '@tds/core-colours'
 
-import Pause from './svg/Pause'
-import Play from './svg/Play'
-
 const StyledMiddleControlButton = styled.div(props => ({
   width: 64,
   height: 64,
@@ -23,30 +20,33 @@ const StyledMiddleControlButton = styled.div(props => ({
   cursor: 'pointer',
   alignItems: 'center',
   svg: {
-    marginLeft: props.isPlaying ? 0 : 2,
+    marginLeft: props.iconLeftOffsetPx,
   },
 }))
 
-const MiddleControlButton = ({ isPlaying, isHidden, onClick, onFocus }) => {
+const MiddleControlButton = ({ icon, iconLeftOffsetPx, isHidden, onClick, onFocus }) => {
   return (
     <StyledMiddleControlButton
-      isPlaying={isPlaying}
+      iconLeftOffsetPx={iconLeftOffsetPx}
       isHidden={isHidden}
       onClick={onClick}
       onFocus={onFocus}
     >
-      {isPlaying ? <Pause /> : <Play />}
+      {icon}
     </StyledMiddleControlButton>
   )
 }
 MiddleControlButton.propTypes = {
-  isPlaying: PropTypes.bool.isRequired,
-  isHidden: PropTypes.bool.isRequired,
+  icon: PropTypes.node.isRequired,
+  iconLeftOffsetPx: PropTypes.number,
+  isHidden: PropTypes.bool,
   onClick: PropTypes.func,
   onFocus: PropTypes.func,
 }
 
 MiddleControlButton.defaultProps = {
+  iconLeftOffsetPx: undefined,
+  isHidden: false,
   onClick: undefined,
   onFocus: undefined,
 }

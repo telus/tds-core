@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 import { colorTelusGreen } from '@tds/core-colours'
 
+const videoProgressBar = React.createRef()
+
 const ProgressBarContainer = styled.div({
   display: 'flex',
   width: '100%',
@@ -116,24 +118,22 @@ const VideoProgressBar = ({
   resetInactivityTimer,
 }) => {
   const handleVideoSkip = () => {
-    setSeek(document.getElementById('videoProgressBar').value)
+    setSeek(videoProgressBar.current.value)
   }
 
   const videoBufferDisplay = (videoBufferEnd / videoLength) * 100
 
   const getCurrentTimestamp = () => {
-    const hours = Math.floor(videoCurrentTime / 3600)
-    const minutes = Math.floor((videoCurrentTime - 3600 * hours) / 60)
-    const seconds = Math.floor(videoCurrentTime - (3600 * hours + 60 * minutes))
+    const minutes = Math.floor(videoCurrentTime / 60)
+    const seconds = Math.floor(videoCurrentTime - 60 * minutes)
 
-    return `${hours}:${minutes < 10 ? 0 : ''}${minutes}:${seconds < 10 ? 0 : ''}${seconds}`
+    return `${minutes}:${seconds < 10 ? 0 : ''}${seconds}`
   }
   const getRemainingTimestamp = () => {
-    const hours = Math.floor((videoLength - videoCurrentTime) / 3600)
-    const minutes = Math.floor((videoLength - videoCurrentTime - 3600 * hours) / 60)
-    const seconds = Math.floor(videoLength - videoCurrentTime - (3600 * hours + 60 * minutes))
+    const minutes = Math.floor((videoLength - videoCurrentTime) / 60)
+    const seconds = Math.floor(videoLength - videoCurrentTime - 60 * minutes)
 
-    return `${hours}:${minutes < 10 ? 0 : ''}${minutes}:${seconds < 10 ? 0 : ''}${seconds}`
+    return `${minutes}:${seconds < 10 ? 0 : ''}${seconds}`
   }
 
   return (
@@ -147,7 +147,7 @@ const VideoProgressBar = ({
         onChange={handleVideoSkip}
         onFocus={resetInactivityTimer}
         videoBufferDisplay={videoBufferDisplay}
-        id="videoProgressBar"
+        ref={videoProgressBar}
         tabIndex="-1"
       />
       <StyledTimestamp isRemaining>{getRemainingTimestamp('remaining')}</StyledTimestamp>

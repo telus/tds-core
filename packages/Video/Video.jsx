@@ -7,13 +7,14 @@ import fscreen from 'fscreen'
 import Spinner from '@tds/core-spinner'
 
 import VideoSplash from '../../shared/components/VideoSplash/VideoSplash'
-import BigVideoButton from '../../shared/components/VideoSplash/BigVideoButton/BigVideoButton'
 
 import MiddleControlButton from './MiddleControlButton/MiddleControlButton'
 import ControlBar from './ControlBar/ControlBar'
 
 import videoText from './videoText'
 
+import Pause from './svg/Pause'
+import Play from './svg/Play'
 import Replay from './svg/Replay'
 
 import safeRest from '../../shared/utils/safeRest'
@@ -75,6 +76,7 @@ class Video extends React.Component {
       mouseTimeout: 3000, // defined in ms
       keyboardSeekIncrement: 5, // defined in s
       keyboardVolumeIncrement: 0.1, // from 0 to 1
+      compactModeThreshold: 450, // in px
     }
 
     this.state = {
@@ -98,6 +100,7 @@ class Video extends React.Component {
       qualityMenuOpen: false,
       captionsMenuOpen: false,
       isMobile: false,
+      videoPlayerWidth: 0,
     }
   }
 
@@ -105,6 +108,7 @@ class Video extends React.Component {
     // Initializes Settings
     this.refVideoPlayer.current.volume = this.props.defaultVolume / 100
     this.refVideoPlayer.current.muted = this.props.beginMuted
+    this.getPlayerWidth()
 
     // Prepares video and caption files
     this.refreshMedia()
@@ -118,6 +122,9 @@ class Video extends React.Component {
 
     // Reports the video's duration when the video player is ready to play
     this.refVideoPlayer.current.oncanplay = this.initializeVideoDuration
+
+    // Reports the video's width on resize
+    window.onresize = this.getPlayerWidth
 
     // **** End Initialization Events ****
 
@@ -168,6 +175,7 @@ class Video extends React.Component {
 
   componentWillUnmount() {
     this.clearInactivityTimer()
+    window.onresize = undefined
   }
 
   // ******** Begin Initialization Functions *********
@@ -326,6 +334,12 @@ class Video extends React.Component {
     this.setState({
       videoCurrentVolume: this.refVideoPlayer.current.volume,
       videoIsMuted: this.refVideoPlayer.current.muted,
+    })
+  }
+
+  getPlayerWidth = () => {
+    this.setState({
+      videoPlayerWidth: this.refVideoPlayerContainer.current.offsetWidth,
     })
   }
 
@@ -622,25 +636,20 @@ class Video extends React.Component {
             </VideoSplashContainer>
           )}
           {/* =================================== */}
-
-          {/* ======== Replay Button ======== */}
-          {this.state.videoEnded && (
-            <BigVideoButton
-              icon={<Replay />}
-              label={videoText[this.props.copy].replay}
-              onClick={this.replayVideo}
-            />
-          )}
-          {/* ================================ */}
-
           <VideoOverlayElementContainer>
+            {/* ======== Replay Button ======== */}
+            {this.state.videoEnded && (
+              <MiddleControlButton icon={<Replay />} onClick={this.replayVideo} />
+            )}
+            {/* ================================ */}
             {/* ======== Middle Play/Pause Button ======= */}
             {!this.state.videoUnplayed &&
               !this.state.videoIsBuffering &&
               !this.state.videoEnded &&
               !this.state.isMobile && (
                 <MiddleControlButton
-                  isPlaying={this.state.videoIsPlaying}
+                  icon={this.state.videoIsPlaying ? <Pause /> : <Play />}
+                  iconLeftOffsetPx={this.state.videoIsPlaying ? 0 : 2}
                   isHidden={this.state.mouseInactive}
                   onClick={this.togglePlayPause}
                 />
@@ -707,6 +716,8 @@ class Video extends React.Component {
           setCaptionsMenuOpen={this.setCaptionsMenuOpen}
           clearInactivityTimer={this.clearInactivityTimer}
           copy={this.props.copy}
+          compactModeThreshold={this.playerOptions.compactModeThreshold}
+          videoPlayerWidth={this.state.videoPlayerWidth}
           onMouseOver={() => this.setMouseOnControlBar(true)}
           onMouseOut={() => this.setMouseOnControlBar(false)}
           onFocus={() => {}}

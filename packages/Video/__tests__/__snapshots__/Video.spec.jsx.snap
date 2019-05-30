@@ -251,7 +251,7 @@ input[type=range].c17::-ms-tooltip {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 10%;
+  width: 20%;
   max-width: 120px;
   margin: 0 1rem;
   -webkit-align-items: center;
@@ -384,7 +384,10 @@ input[type=range].c21::-ms-tooltip {
   position: absolute;
   width: 100%;
   height: 56px;
-  padding: 1rem 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: calc(1rem + 8px);
   bottom: 0;
   background-color: rgba(42,44,46,0.85);
   margin: auto;
@@ -836,7 +839,7 @@ input[type=range].c17::-ms-tooltip {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 10%;
+  width: 20%;
   max-width: 120px;
   margin: 0 1rem;
   -webkit-align-items: center;
@@ -969,7 +972,10 @@ input[type=range].c21::-ms-tooltip {
   position: absolute;
   width: 100%;
   height: 56px;
-  padding: 1rem 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: calc(1rem + 8px);
   bottom: 0;
   background-color: rgba(42,44,46,0.85);
   margin: auto;
@@ -1186,11 +1192,10 @@ input[type=range].c21::-ms-tooltip {
                     <p
                       class="c16"
                     >
-                      -1:59:59
+                      -1:59
                     </p>
                     <input
                       class="c17"
-                      id="videoProgressBar"
                       max="0"
                       step="any"
                       tabindex="-1"
@@ -1200,7 +1205,7 @@ input[type=range].c21::-ms-tooltip {
                     <p
                       class="c18"
                     >
-                      0:00:01
+                      0:01
                     </p>
                   </div>
                 </div>
@@ -1936,6 +1941,7 @@ input[type=range].c21::-ms-tooltip {
         <ControlBar
           captionsMenuOpen={false}
           clearInactivityTimer={[Function]}
+          compactModeThreshold={450}
           copy="en"
           isHidden={true}
           isMobile={false}
@@ -2131,11 +2137,10 @@ input[type=range].c21::-ms-tooltip {
                         <p
                           class="c16"
                         >
-                          -1:59:59
+                          -1:59
                         </p>
                         <input
                           class="c17"
-                          id="videoProgressBar"
                           max="0"
                           step="any"
                           tabindex="-1"
@@ -2145,7 +2150,7 @@ input[type=range].c21::-ms-tooltip {
                         <p
                           class="c18"
                         >
-                          0:00:01
+                          0:01
                         </p>
                       </div>
                     </div>
@@ -2330,6 +2335,7 @@ input[type=range].c21::-ms-tooltip {
               </div>,
             }
           }
+          videoPlayerWidth={0}
           videoPlaying={false}
           videoQuality={1}
         >
@@ -2379,18 +2385,22 @@ input[type=range].c21::-ms-tooltip {
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
               >
-                <ControlBar__StyledControlBar>
+                <ControlBar__StyledControlBar
+                  compactModeThreshold={450}
+                  videoPlayerWidth={0}
+                >
                   <StyledComponent
+                    compactModeThreshold={450}
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
                           "componentId": "ControlBar__StyledControlBar-sc-1wksqan-1",
-                          "isStatic": true,
+                          "isStatic": false,
                           "lastClassName": "c13",
                           "rules": Array [
-                            "position: absolute; width: 100%; height: 56px; padding: 1rem 3rem; bottom: 0; background-color: rgba(42, 44, 46, 0.85); margin: auto; display: flex; justify-content: space-between; z-index: 9;",
+                            [Function],
                           ],
                         },
                         "displayName": "ControlBar__StyledControlBar",
@@ -2404,6 +2414,7 @@ input[type=range].c21::-ms-tooltip {
                       }
                     }
                     forwardedRef={null}
+                    videoPlayerWidth={0}
                   >
                     <div
                       className="c13"
@@ -2521,12 +2532,11 @@ input[type=range].c21::-ms-tooltip {
                                         <p
                                           className="c16"
                                         >
-                                          -1:59:59
+                                          -1:59
                                         </p>
                                       </StyledComponent>
                                     </VideoProgressBar__StyledTimestamp>
                                     <styled.input
-                                      id="videoProgressBar"
                                       max={0}
                                       onChange={[Function]}
                                       onFocus={[Function]}
@@ -2561,8 +2571,18 @@ input[type=range].c21::-ms-tooltip {
                                             "withComponent": [Function],
                                           }
                                         }
-                                        forwardedRef={null}
-                                        id="videoProgressBar"
+                                        forwardedRef={
+                                          Object {
+                                            "current": <input
+                                              class="c17"
+                                              max="0"
+                                              step="any"
+                                              tabindex="-1"
+                                              type="range"
+                                              value="-1"
+                                            />,
+                                          }
+                                        }
                                         max={0}
                                         onChange={[Function]}
                                         onFocus={[Function]}
@@ -2574,7 +2594,6 @@ input[type=range].c21::-ms-tooltip {
                                       >
                                         <input
                                           className="c17"
-                                          id="videoProgressBar"
                                           max={0}
                                           onChange={[Function]}
                                           onFocus={[Function]}
@@ -2617,7 +2636,7 @@ input[type=range].c21::-ms-tooltip {
                                         <p
                                           className="c18"
                                         >
-                                          0:00:01
+                                          0:01
                                         </p>
                                       </StyledComponent>
                                     </VideoProgressBar__StyledTimestamp>
@@ -2629,6 +2648,7 @@ input[type=range].c21::-ms-tooltip {
                         </StyledComponent>
                       </ControlBar__VideoProgressBarContainer>
                       <VolumeSlider
+                        compactModeThreshold={450}
                         copy="en"
                         resetInactivityTimer={[Function]}
                         setVolume={[Function]}
@@ -2655,19 +2675,24 @@ input[type=range].c21::-ms-tooltip {
                             </video>,
                           }
                         }
+                        videoPlayerWidth={0}
                       >
-                        <VolumeSlider__VolumeSliderContainer>
+                        <VolumeSlider__VolumeSliderContainer
+                          compactModeThreshold={450}
+                          videoPlayerWidth={0}
+                        >
                           <StyledComponent
+                            compactModeThreshold={450}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "VolumeSlider__VolumeSliderContainer-hlqwx2-0",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c19",
                                   "rules": Array [
-                                    "display: flex; width: 10%; max-width: 120px; margin: 0 1rem; align-items: center;",
+                                    [Function],
                                   ],
                                 },
                                 "displayName": "VolumeSlider__VolumeSliderContainer",
@@ -2681,6 +2706,7 @@ input[type=range].c21::-ms-tooltip {
                               }
                             }
                             forwardedRef={null}
+                            videoPlayerWidth={0}
                           >
                             <div
                               className="c19"
