@@ -42,7 +42,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   position: absolute;
 }
 
-@media (max-width:576px) {
+@media (max-width:575px) {
   .c2 {
     max-width: 80vw;
   }
@@ -179,7 +179,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "bwaAyc",
+                          "lastClassName": "iXNTBS",
                           "rules": Array [
                             "border-radius: 4px;",
                             [Function],
@@ -407,7 +407,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   position: absolute;
 }
 
-@media (max-width:576px) {
+@media (max-width:575px) {
   .c2 {
     max-width: 80vw;
   }
@@ -544,7 +544,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "bwaAyc",
+                          "lastClassName": "iXNTBS",
                           "rules": Array [
                             "border-radius: 4px;",
                             [Function],
@@ -762,7 +762,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
   max-width: 100%;
 }
 
-@media (max-width:576px) {
+@media (max-width:575px) {
   .c0 {
     max-width: 80vw;
   }
@@ -877,7 +877,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
   max-width: 100%;
 }
 
-@media (max-width:576px) {
+@media (max-width:575px) {
   .c0 {
     max-width: 80vw;
   }
@@ -993,7 +993,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
   max-width: 100%;
 }
 
-@media (max-width:576px) {
+@media (max-width:575px) {
   .c0 {
     max-width: 80vw;
   }
@@ -1120,7 +1120,7 @@ exports[`Tooltip renders 1`] = `
   position: absolute;
 }
 
-@media (max-width:576px) {
+@media (max-width:575px) {
   .c2 {
     max-width: 80vw;
   }
