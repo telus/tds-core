@@ -1,20 +1,26 @@
 import React, { useRef, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import Heading from '@tds/core-heading'
 import FlexGrid from '@tds/core-flex-grid'
-import StandaloneIcon from '@tds/core-standalone-icon'
 import HairlineDivider from '@tds/core-hairline-divider'
 import { colorAthensGrey } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import { withFocusTrap } from '@tds/shared-hocs'
 import { getCopy } from '@tds/util-helpers'
 
+import Clickable from '../../../shared/components/Clickable/Clickable'
+import safeRest from '../../../shared/utils/safeRest'
 import List from './FootnoteList'
+import CloseIcon from './svg/Close'
 import copyDictionary from './footnoteText'
+
+const GlobalBodyScrollLock = createGlobalStyle({
+  'html, body': media.until('md').css({ overflow: 'hidden' }),
+})
 
 const StyledFootnote = styled.div(
   {
@@ -24,11 +30,10 @@ const StyledFootnote = styled.div(
     height: '100vh',
     width: '100vw',
     backgroundColor: colorAthensGrey,
-    display: 'inline-block',
+    display: 'block',
     boxShadow: '0 0 16px 0 rgba(213, 213, 213, 0.5)',
     transform: 'translateY(100%)',
     transition: 'transform 500ms ease-out',
-    overflow: 'hidden',
     zIndex: 99999,
     ...media.from('md').css({
       top: 'auto',
@@ -62,7 +67,7 @@ const StyledHeader = styled(Box)({
 const StyledFootnoteBody = styled.div(
   {
     overflow: 'auto',
-    position: 'relative',
+    '-webkit-overflow-scrolling': 'touch',
     transition: 'height 400ms ease-out, opacity 300ms',
     transform: 'translateZ(0)',
     backgroundColor: colorAthensGrey,
@@ -81,11 +86,16 @@ const StyledFootnoteBody = styled.div(
 
 const StyledListContainer = styled.div({
   paddingTop: '1.5rem',
-  paddingBottom: '3rem',
+  paddingBottom: '2rem',
   ...media.from('md').css({
     paddingTop: '0rem',
     paddingBottom: '3rem',
   }),
+})
+
+const StyledClickable = styled(Clickable)({
+  display: 'flex',
+  justifyContent: 'center',
 })
 
 const FocusTrap = withFocusTrap('div')
@@ -99,10 +109,11 @@ const usePrevious = value => {
 }
 
 const Footnote = props => {
-  const { copy, number, content, onClose, isOpen } = props
+  const { copy, number, content, onClose, isOpen, ...rest } = props
   const closeRef = useRef(null)
   const footnoteRef = useRef(null)
   const headerRef = useRef(null)
+  const bodyRef = useRef(null)
   const listRef = useRef(null)
   const [data, setData] = useState({ content: null, number: null })
   const [headerHeight, setHeaderHeight] = useState('auto')
@@ -129,6 +140,14 @@ const Footnote = props => {
         e.target &&
         !footnoteRef.current.contains(e.target) &&
         e.target.getAttribute('data-tds-id') !== 'footnote-link')
+    ) {
+      closeFootnote(e)
+    } else if (
+      e.type === 'touchstart' &&
+      (footnoteRef &&
+        e.touches[0].target &&
+        !footnoteRef.current.contains(e.touches[0].target) &&
+        e.touches[0].target.getAttribute('data-tds-id') !== 'footnote-link')
     ) {
       closeFootnote(e)
     }
@@ -164,17 +183,27 @@ const Footnote = props => {
     setHeaderHeight(headerRef.current.offsetHeight)
   }, [])
 
+  const preventDefault = e => {
+    if (!bodyRef.current.contains(e.touches[0].target)) {
+      e.preventDefault()
+    }
+  }
+
   // add listeners for mouse clicks outside of Footnote and for ESCAPE key presses
   useEffect(() => {
-    setIsVisible(true)
     if (isOpen) {
+      setIsVisible(true)
       window.addEventListener('click', handleClose)
       window.addEventListener('keydown', handleClose)
+      window.addEventListener('touchstart', handleClose)
+      window.addEventListener('touchmove', preventDefault, { passive: false })
     }
     return () => {
       if (isOpen) {
         window.removeEventListener('click', handleClose)
         window.removeEventListener('keydown', handleClose)
+        window.addEventListener('touchstart', handleClose)
+        window.removeEventListener('touchmove', preventDefault)
       }
     }
   }, [isOpen])
@@ -210,67 +239,71 @@ const Footnote = props => {
   }, [isVisible, content])
 
   return (
-    <StyledFootnote
-      ref={footnoteRef}
-      isOpen={isOpen}
-      isVisible={isVisible}
-      role="alert"
-      onTransitionEnd={handleStyledFootnoteTransitionEnd}
-    >
-      <FocusTrap>
-        <StyledFootnoteHeader ref={headerRef}>
-          <div css={{ display: 'none', ...media.from('md').css({ display: 'block' }) }}>
-            <HairlineDivider />
-          </div>
-          <Box vertical={4}>
-            <FlexGrid>
-              <FlexGrid.Row>
-                <FlexGrid.Col xs={12}>
-                  <StyledHeader between="space-between" inline>
-                    <Heading level="h4" tag="h2">
-                      {getCopy(copyDictionary, copy).heading}
-                    </Heading>
-                    <StandaloneIcon
-                      id="close"
-                      symbol="times"
-                      variant="secondary"
-                      onClick={closeFootnote}
-                      a11yText={getCopy(copyDictionary, copy).close}
-                      innerRef={closeRef}
-                    />
-                  </StyledHeader>
-                </FlexGrid.Col>
-              </FlexGrid.Row>
-            </FlexGrid>
-          </Box>
-          <div css={{ display: 'none', ...media.until('md').css({ display: 'block' }) }}>
-            <HairlineDivider />
-          </div>
-        </StyledFootnoteHeader>
-        <StyledFootnoteBody
-          bodyHeight={bodyHeight}
-          headerHeight={headerHeight}
-          isTextVisible={isTextVisible}
-          onTransitionEnd={handleTransitionEnd}
-        >
-          {data.number && data.content && (
-            <StyledListContainer ref={listRef}>
+    <div {...safeRest(rest)}>
+      {isOpen && <GlobalBodyScrollLock />}
+      <StyledFootnote
+        ref={footnoteRef}
+        isOpen={isOpen}
+        isVisible={isVisible}
+        role="dialog"
+        aria-modal="true"
+        onTransitionEnd={handleStyledFootnoteTransitionEnd}
+      >
+        <FocusTrap>
+          <StyledFootnoteHeader ref={headerRef}>
+            <div css={{ display: 'none', ...media.from('md').css({ display: 'block' }) }}>
+              <HairlineDivider />
+            </div>
+            <Box vertical={4}>
               <FlexGrid>
                 <FlexGrid.Row>
-                  <FlexGrid.Col xs={12} md={11}>
-                    <List start={data.number} type="indexed">
-                      <List.Item>
-                        <Text>{data.content}</Text>
-                      </List.Item>
-                    </List>
+                  <FlexGrid.Col xs={12}>
+                    <StyledHeader between="space-between" inline>
+                      <Heading level="h4" tag="h2">
+                        {getCopy(copyDictionary, copy).heading}
+                      </Heading>
+                      <StyledClickable
+                        innerRef={closeRef}
+                        onClick={closeFootnote}
+                        aria-label={getCopy(copyDictionary, copy).close}
+                      >
+                        <CloseIcon />
+                      </StyledClickable>
+                    </StyledHeader>
                   </FlexGrid.Col>
                 </FlexGrid.Row>
               </FlexGrid>
-            </StyledListContainer>
-          )}
-        </StyledFootnoteBody>
-      </FocusTrap>
-    </StyledFootnote>
+            </Box>
+            <div css={{ display: 'none', ...media.until('md').css({ display: 'block' }) }}>
+              <HairlineDivider />
+            </div>
+          </StyledFootnoteHeader>
+          <StyledFootnoteBody
+            ref={bodyRef}
+            bodyHeight={bodyHeight}
+            headerHeight={headerHeight}
+            isTextVisible={isTextVisible}
+            onTransitionEnd={handleTransitionEnd}
+          >
+            {data.number && data.content && (
+              <StyledListContainer ref={listRef}>
+                <FlexGrid>
+                  <FlexGrid.Row>
+                    <FlexGrid.Col xs={12} md={11}>
+                      <List start={data.number} type="indexed">
+                        <List.Item>
+                          <Text>{data.content}</Text>
+                        </List.Item>
+                      </List>
+                    </FlexGrid.Col>
+                  </FlexGrid.Row>
+                </FlexGrid>
+              </StyledListContainer>
+            )}
+          </StyledFootnoteBody>
+        </FocusTrap>
+      </StyledFootnote>
+    </div>
   )
 }
 

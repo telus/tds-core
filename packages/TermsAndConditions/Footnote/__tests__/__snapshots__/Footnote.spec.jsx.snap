@@ -13,13 +13,17 @@ exports[`Footnote renders closed 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c7,
+.c4 .c9,
 .c4 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+.c6 {
+  background: #f7f7f8;
 }
 
 .c0 {
@@ -29,7 +33,7 @@ exports[`Footnote renders closed 1`] = `
   height: 100vh;
   width: 100vw;
   background-color: #f7f7f8;
-  display: inline-block;
+  display: block;
   box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
@@ -37,7 +41,6 @@ exports[`Footnote renders closed 1`] = `
   -webkit-transition: -webkit-transform 500ms ease-out;
   -webkit-transition: transform 500ms ease-out;
   transition: transform 500ms ease-out;
-  overflow: hidden;
   z-index: 99999;
   visibility: hidden;
 }
@@ -54,9 +57,9 @@ exports[`Footnote renders closed 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c8 {
   overflow: auto;
-  position: relative;
+  -webkit-overflow-scrolling: touch;
   -webkit-transition: height 400ms ease-out,opacity 300ms;
   transition: height 400ms ease-out,opacity 300ms;
   -webkit-transform: translateZ(0);
@@ -68,11 +71,22 @@ exports[`Footnote renders closed 1`] = `
   opacity: 1;
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c2 {
   display: none;
 }
 
-.c5 {
+.c7 {
   display: none;
 }
 
@@ -86,7 +100,7 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c8 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -97,8 +111,8 @@ exports[`Footnote renders closed 1`] = `
   }
 }
 
-@media (max-width:768px) {
-  .c5 {
+@media (max-width:767px) {
+  .c7 {
     display: block;
   }
 }
@@ -121,77 +135,99 @@ exports[`Footnote renders closed 1`] = `
   >
     2
   </button>
-  <div
-    class="c0"
-    role="alert"
-  >
-    <div>
-      <div
-        tabindex="0"
-      />
+  <div>
+    <div
+      aria-modal="true"
+      class="c0"
+      role="dialog"
+    >
       <div>
         <div
-          class="c1"
-        >
+          tabindex="0"
+        />
+        <div>
           <div
-            class="c2"
-          >
-            <hr
-              class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-            />
-          </div>
-          <div
-            class="TDS_Box-modules__verticalPadding-4___QMNNa"
+            class="c1"
           >
             <div
-              class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+              class="c2"
+            >
+              <hr
+                class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+              />
+            </div>
+            <div
+              class="TDS_Box-modules__verticalPadding-4___QMNNa"
             >
               <div
-                class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
               >
                 <div
-                  class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                  class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
                 >
                   <div
-                    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c3"
+                    class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                   >
-                    <h2
-                      class="c4"
-                      data-testid="heading"
+                    <div
+                      class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c3"
                     >
-                      Terms and conditions
-                    </h2>
-                    <button
-                      class="TDS_Clickable-modules__clickable___Wf5Qr TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ TDS_Forms-modules__font___g7OGX TDS_Typography-modules__color___2CNH8"
-                      id="close"
-                      style="padding:4px;margin:-4px"
-                      type="button"
-                    >
-                      <i
+                      <h2
+                        class="c4"
+                        data-testid="heading"
+                      >
+                        Terms and conditions
+                      </h2>
+                      <button
                         aria-label="close"
-                        class="TDS_Icon-modules__iconTimes___-9Po2 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__secondary___3Gtcp TDS_Icon-modules__size24___37pQ7"
-                      />
-                    </button>
+                        class="clickable c5"
+                        type="button"
+                      >
+                        <svg
+                          class="c6"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          width="24px"
+                          xlink="http://www.w3.org/1999/xlink"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            fill="none"
+                            fill-rule="evenodd"
+                            stroke="none"
+                            stroke-width="1"
+                          >
+                            <g
+                              fill="#4B286D"
+                              fill-rule="nonzero"
+                            >
+                              <path
+                                d="M11.99975,12.70675 L7.85325,16.85325 C7.75625,16.95025 7.62825,16.99925 7.50025,16.99925 C7.37225,16.99925 7.24425,16.95025 7.14625,16.85325 C6.95125,16.65825 6.95125,16.34125 7.14625,16.14625 L11.29275,11.99975 L7.14625,7.85325 C6.95125,7.65825 6.95125,7.34125 7.14625,7.14625 C7.34125,6.95125 7.65825,6.95125 7.85325,7.14625 L11.99975,11.29275 L16.14625,7.14625 C16.34125,6.95125 16.65825,6.95125 16.85325,7.14625 C17.04825,7.34125 17.04825,7.65825 16.85325,7.85325 L12.70675,11.99975 L16.85325,16.14625 C17.04825,16.34125 17.04825,16.65825 16.85325,16.85325 C16.75625,16.95025 16.62825,16.99925 16.50025,16.99925 C16.37225,16.99925 16.24425,16.95025 16.14625,16.85325 L11.99975,12.70675 Z M12,24 C5.38330435,24 0,18.6166957 0,12 C0,5.38330435 5.38330435,0 12,0 C18.6166957,0 24,5.38330435 24,12 C24,18.6166957 18.6166957,24 12,24 Z M12,1.04347826 C5.95826087,1.04347826 1.04347826,5.95826087 1.04347826,12 C1.04347826,18.0417391 5.95826087,22.9565217 12,22.9565217 C18.0417391,22.9565217 22.9565217,18.0417391 22.9565217,12 C22.9565217,5.95826087 18.0417391,1.04347826 12,1.04347826 Z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div
+              class="c7"
+            >
+              <hr
+                class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+              />
+            </div>
           </div>
           <div
-            class="c5"
-          >
-            <hr
-              class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-            />
-          </div>
+            class="c8"
+          />
         </div>
         <div
-          class="c6"
+          tabindex="0"
         />
       </div>
-      <div
-        tabindex="0"
-      />
     </div>
   </div>
 </div>
@@ -210,13 +246,17 @@ exports[`Footnote renders opened 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c7,
+.c4 .c9,
 .c4 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+.c6 {
+  background: #f7f7f8;
 }
 
 .c0 {
@@ -226,7 +266,7 @@ exports[`Footnote renders opened 1`] = `
   height: 100vh;
   width: 100vw;
   background-color: #f7f7f8;
-  display: inline-block;
+  display: block;
   box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
@@ -234,7 +274,6 @@ exports[`Footnote renders opened 1`] = `
   -webkit-transition: -webkit-transform 500ms ease-out;
   -webkit-transition: transform 500ms ease-out;
   transition: transform 500ms ease-out;
-  overflow: hidden;
   z-index: 99999;
   visibility: hidden;
   -webkit-transform: translateY(0);
@@ -254,9 +293,9 @@ exports[`Footnote renders opened 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c8 {
   overflow: auto;
-  position: relative;
+  -webkit-overflow-scrolling: touch;
   -webkit-transition: height 400ms ease-out,opacity 300ms;
   transition: height 400ms ease-out,opacity 300ms;
   -webkit-transform: translateZ(0);
@@ -268,11 +307,22 @@ exports[`Footnote renders opened 1`] = `
   opacity: 1;
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c2 {
   display: none;
 }
 
-.c5 {
+.c7 {
   display: none;
 }
 
@@ -286,7 +336,7 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c8 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -297,8 +347,8 @@ exports[`Footnote renders opened 1`] = `
   }
 }
 
-@media (max-width:768px) {
-  .c5 {
+@media (max-width:767px) {
+  .c7 {
     display: block;
   }
 }
@@ -321,77 +371,99 @@ exports[`Footnote renders opened 1`] = `
   >
     2
   </button>
-  <div
-    class="c0"
-    role="alert"
-  >
-    <div>
-      <div
-        tabindex="0"
-      />
+  <div>
+    <div
+      aria-modal="true"
+      class="c0"
+      role="dialog"
+    >
       <div>
         <div
-          class="c1"
-        >
+          tabindex="0"
+        />
+        <div>
           <div
-            class="c2"
-          >
-            <hr
-              class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-            />
-          </div>
-          <div
-            class="TDS_Box-modules__verticalPadding-4___QMNNa"
+            class="c1"
           >
             <div
-              class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+              class="c2"
+            >
+              <hr
+                class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+              />
+            </div>
+            <div
+              class="TDS_Box-modules__verticalPadding-4___QMNNa"
             >
               <div
-                class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
               >
                 <div
-                  class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                  class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
                 >
                   <div
-                    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c3"
+                    class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                   >
-                    <h2
-                      class="c4"
-                      data-testid="heading"
+                    <div
+                      class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c3"
                     >
-                      Terms and conditions
-                    </h2>
-                    <button
-                      class="TDS_Clickable-modules__clickable___Wf5Qr TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ TDS_Forms-modules__font___g7OGX TDS_Typography-modules__color___2CNH8"
-                      id="close"
-                      style="padding:4px;margin:-4px"
-                      type="button"
-                    >
-                      <i
+                      <h2
+                        class="c4"
+                        data-testid="heading"
+                      >
+                        Terms and conditions
+                      </h2>
+                      <button
                         aria-label="close"
-                        class="TDS_Icon-modules__iconTimes___-9Po2 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__secondary___3Gtcp TDS_Icon-modules__size24___37pQ7"
-                      />
-                    </button>
+                        class="clickable c5"
+                        type="button"
+                      >
+                        <svg
+                          class="c6"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          width="24px"
+                          xlink="http://www.w3.org/1999/xlink"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g
+                            fill="none"
+                            fill-rule="evenodd"
+                            stroke="none"
+                            stroke-width="1"
+                          >
+                            <g
+                              fill="#4B286D"
+                              fill-rule="nonzero"
+                            >
+                              <path
+                                d="M11.99975,12.70675 L7.85325,16.85325 C7.75625,16.95025 7.62825,16.99925 7.50025,16.99925 C7.37225,16.99925 7.24425,16.95025 7.14625,16.85325 C6.95125,16.65825 6.95125,16.34125 7.14625,16.14625 L11.29275,11.99975 L7.14625,7.85325 C6.95125,7.65825 6.95125,7.34125 7.14625,7.14625 C7.34125,6.95125 7.65825,6.95125 7.85325,7.14625 L11.99975,11.29275 L16.14625,7.14625 C16.34125,6.95125 16.65825,6.95125 16.85325,7.14625 C17.04825,7.34125 17.04825,7.65825 16.85325,7.85325 L12.70675,11.99975 L16.85325,16.14625 C17.04825,16.34125 17.04825,16.65825 16.85325,16.85325 C16.75625,16.95025 16.62825,16.99925 16.50025,16.99925 C16.37225,16.99925 16.24425,16.95025 16.14625,16.85325 L11.99975,12.70675 Z M12,24 C5.38330435,24 0,18.6166957 0,12 C0,5.38330435 5.38330435,0 12,0 C18.6166957,0 24,5.38330435 24,12 C24,18.6166957 18.6166957,24 12,24 Z M12,1.04347826 C5.95826087,1.04347826 1.04347826,5.95826087 1.04347826,12 C1.04347826,18.0417391 5.95826087,22.9565217 12,22.9565217 C18.0417391,22.9565217 22.9565217,18.0417391 22.9565217,12 C22.9565217,5.95826087 18.0417391,1.04347826 12,1.04347826 Z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div
+              class="c7"
+            >
+              <hr
+                class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+              />
+            </div>
           </div>
           <div
-            class="c5"
-          >
-            <hr
-              class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-            />
-          </div>
+            class="c8"
+          />
         </div>
         <div
-          class="c6"
+          tabindex="0"
         />
       </div>
-      <div
-        tabindex="0"
-      />
     </div>
   </div>
 </div>
