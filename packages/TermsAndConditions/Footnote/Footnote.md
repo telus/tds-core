@@ -2,7 +2,13 @@
 
 - In an instance when there is another sticky item on the page (i.e the cart summary unexpanded/collapsed), the `Footnote` must be layered on top of that
 - Can be dismissed by clicking the close button, clicking anywhere outside of the Footnote, or by pressing `ESCAPE`
+
+### Accessibility requirements
+
 - Only one `Footnote` component should ever exist on a page at a time
+- The `Footnote` component must be the last child in the `body` or `main`
+  - When the `Footnote` is opened, the `inert` prop must be set on all children of `body` excluding the `Footnote`
+- When the `Footnote` is closed, focus must be returned to the initiating element. See example below
 
 ```jsx
 class FootnoteExample extends React.Component {

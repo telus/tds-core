@@ -391,7 +391,10 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                     "isStatic": true,
                                     "lastClassName": "c1",
                                     "rules": Array [
-                                      "width: 100%; display: flex; justify-content: center; background-color: #fff;",
+                                      "width: 100%;",
+                                      "display: flex;",
+                                      "justify-content: center;",
+                                      "background-color: #fff;",
                                     ],
                                   },
                                   "displayName": "Styled(Clickable)",
@@ -471,7 +474,9 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                     "isStatic": true,
                                                     "lastClassName": "c3",
                                                     "rules": Array [
-                                                      "position: relative; width: 24px; height: 24px;",
+                                                      "position: relative;",
+                                                      "width: 24px;",
+                                                      "height: 24px;",
                                                     ],
                                                   },
                                                   "displayName": "TermsAndConditions__StyledChevronContainer",
@@ -798,9 +803,15 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                 "isStatic": false,
                                                 "lastClassName": "c6",
                                                 "rules": Array [
-                                                  "word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
-  padding-left: 1rem;
-}",
+                                                  "word-wrap: break-word;",
+                                                  "font-weight: 700;",
+                                                  "font-size: 0.875rem;",
+                                                  "letter-spacing: -0.6px;",
+                                                  "line-height: 1.42857;",
+                                                  "padding-left: 2rem;",
+                                                  "@media (min-width: 768px) {",
+                                                  "padding-left: 1rem;",
+                                                  "}",
                                                   [Function],
                                                 ],
                                               },
@@ -835,9 +846,15 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                     "isStatic": false,
                                                     "lastClassName": "c6",
                                                     "rules": Array [
-                                                      "word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
-  padding-left: 1rem;
-}",
+                                                      "word-wrap: break-word;",
+                                                      "font-weight: 700;",
+                                                      "font-size: 0.875rem;",
+                                                      "letter-spacing: -0.6px;",
+                                                      "line-height: 1.42857;",
+                                                      "padding-left: 2rem;",
+                                                      "@media (min-width: 768px) {",
+                                                      "padding-left: 1rem;",
+                                                      "}",
                                                       [Function],
                                                     ],
                                                   },
@@ -881,9 +898,10 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           "isStatic": true,
                                                           "lastClassName": "c7",
                                                           "rules": Array [
-                                                            "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                            "& > span {",
+                                                            "font-weight: 500;",
+                                                            "}",
+                                                            "padding-left: 1rem;",
                                                           ],
                                                         },
                                                         "displayName": "List__StyledListItem",
@@ -908,9 +926,10 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -946,9 +965,10 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           "isStatic": true,
                                                           "lastClassName": "c7",
                                                           "rules": Array [
-                                                            "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                            "& > span {",
+                                                            "font-weight: 500;",
+                                                            "}",
+                                                            "padding-left: 1rem;",
                                                           ],
                                                         },
                                                         "displayName": "List__StyledListItem",
@@ -973,9 +993,10 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -1011,9 +1032,10 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           "isStatic": true,
                                                           "lastClassName": "c7",
                                                           "rules": Array [
-                                                            "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                            "& > span {",
+                                                            "font-weight: 500;",
+                                                            "}",
+                                                            "padding-left: 1rem;",
                                                           ],
                                                         },
                                                         "displayName": "List__StyledListItem",
@@ -1038,9 +1060,10 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -1295,7 +1318,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                     "isStatic": true,
                                     "lastClassName": "c1",
                                     "rules": Array [
-                                      "width: 100%; display: flex; justify-content: center; background-color: #fff;",
+                                      "width: 100%;",
+                                      "display: flex;",
+                                      "justify-content: center;",
+                                      "background-color: #fff;",
                                     ],
                                   },
                                   "displayName": "Styled(Clickable)",
@@ -1375,7 +1401,9 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                     "isStatic": true,
                                                     "lastClassName": "c3",
                                                     "rules": Array [
-                                                      "position: relative; width: 24px; height: 24px;",
+                                                      "position: relative;",
+                                                      "width: 24px;",
+                                                      "height: 24px;",
                                                     ],
                                                   },
                                                   "displayName": "TermsAndConditions__StyledChevronContainer",
@@ -1702,9 +1730,15 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                 "isStatic": false,
                                                 "lastClassName": "c9",
                                                 "rules": Array [
-                                                  "word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
-  padding-left: 1rem;
-}",
+                                                  "word-wrap: break-word;",
+                                                  "font-weight: 700;",
+                                                  "font-size: 0.875rem;",
+                                                  "letter-spacing: -0.6px;",
+                                                  "line-height: 1.42857;",
+                                                  "padding-left: 2rem;",
+                                                  "@media (min-width: 768px) {",
+                                                  "padding-left: 1rem;",
+                                                  "}",
                                                   [Function],
                                                 ],
                                               },
@@ -1739,9 +1773,15 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                     "isStatic": false,
                                                     "lastClassName": "c9",
                                                     "rules": Array [
-                                                      "word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
-  padding-left: 1rem;
-}",
+                                                      "word-wrap: break-word;",
+                                                      "font-weight: 700;",
+                                                      "font-size: 0.875rem;",
+                                                      "letter-spacing: -0.6px;",
+                                                      "line-height: 1.42857;",
+                                                      "padding-left: 2rem;",
+                                                      "@media (min-width: 768px) {",
+                                                      "padding-left: 1rem;",
+                                                      "}",
                                                       [Function],
                                                     ],
                                                   },
@@ -1785,9 +1825,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                           "isStatic": true,
                                                           "lastClassName": "c7",
                                                           "rules": Array [
-                                                            "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                            "& > span {",
+                                                            "font-weight: 500;",
+                                                            "}",
+                                                            "padding-left: 1rem;",
                                                           ],
                                                         },
                                                         "displayName": "List__StyledListItem",
@@ -1812,9 +1853,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -1850,9 +1892,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                           "isStatic": true,
                                                           "lastClassName": "c7",
                                                           "rules": Array [
-                                                            "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                            "& > span {",
+                                                            "font-weight: 500;",
+                                                            "}",
+                                                            "padding-left: 1rem;",
                                                           ],
                                                         },
                                                         "displayName": "List__StyledListItem",
@@ -1877,9 +1920,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -1915,9 +1959,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                           "isStatic": true,
                                                           "lastClassName": "c7",
                                                           "rules": Array [
-                                                            "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                            "& > span {",
+                                                            "font-weight: 500;",
+                                                            "}",
+                                                            "padding-left: 1rem;",
                                                           ],
                                                         },
                                                         "displayName": "List__StyledListItem",
@@ -1942,9 +1987,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -2139,9 +2185,15 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                     "isStatic": false,
                                                     "lastClassName": "c9",
                                                     "rules": Array [
-                                                      "word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
-  padding-left: 1rem;
-}",
+                                                      "word-wrap: break-word;",
+                                                      "font-weight: 700;",
+                                                      "font-size: 0.875rem;",
+                                                      "letter-spacing: -0.6px;",
+                                                      "line-height: 1.42857;",
+                                                      "padding-left: 2rem;",
+                                                      "@media (min-width: 768px) {",
+                                                      "padding-left: 1rem;",
+                                                      "}",
                                                       [Function],
                                                     ],
                                                   },
@@ -2176,9 +2228,15 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                         "isStatic": false,
                                                         "lastClassName": "c9",
                                                         "rules": Array [
-                                                          "word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
-  padding-left: 1rem;
-}",
+                                                          "word-wrap: break-word;",
+                                                          "font-weight: 700;",
+                                                          "font-size: 0.875rem;",
+                                                          "letter-spacing: -0.6px;",
+                                                          "line-height: 1.42857;",
+                                                          "padding-left: 2rem;",
+                                                          "@media (min-width: 768px) {",
+                                                          "padding-left: 1rem;",
+                                                          "}",
                                                           [Function],
                                                         ],
                                                       },
@@ -2222,9 +2280,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -2249,9 +2308,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                   "isStatic": true,
                                                                   "lastClassName": "c7",
                                                                   "rules": Array [
-                                                                    "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                    "& > span {",
+                                                                    "font-weight: 500;",
+                                                                    "}",
+                                                                    "padding-left: 1rem;",
                                                                   ],
                                                                 },
                                                                 "displayName": "List__StyledListItem",
@@ -2287,9 +2347,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -2314,9 +2375,10 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                   "isStatic": true,
                                                                   "lastClassName": "c7",
                                                                   "rules": Array [
-                                                                    "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                    "& > span {",
+                                                                    "font-weight: 500;",
+                                                                    "}",
+                                                                    "padding-left: 1rem;",
                                                                   ],
                                                                 },
                                                                 "displayName": "List__StyledListItem",
@@ -2544,7 +2606,10 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                     "isStatic": true,
                                     "lastClassName": "c1",
                                     "rules": Array [
-                                      "width: 100%; display: flex; justify-content: center; background-color: #fff;",
+                                      "width: 100%;",
+                                      "display: flex;",
+                                      "justify-content: center;",
+                                      "background-color: #fff;",
                                     ],
                                   },
                                   "displayName": "Styled(Clickable)",
@@ -2624,7 +2689,9 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                     "isStatic": true,
                                                     "lastClassName": "c3",
                                                     "rules": Array [
-                                                      "position: relative; width: 24px; height: 24px;",
+                                                      "position: relative;",
+                                                      "width: 24px;",
+                                                      "height: 24px;",
                                                     ],
                                                   },
                                                   "displayName": "TermsAndConditions__StyledChevronContainer",
@@ -2959,9 +3026,15 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                     "isStatic": false,
                                                     "lastClassName": "c6",
                                                     "rules": Array [
-                                                      "word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
-  padding-left: 1rem;
-}",
+                                                      "word-wrap: break-word;",
+                                                      "font-weight: 700;",
+                                                      "font-size: 0.875rem;",
+                                                      "letter-spacing: -0.6px;",
+                                                      "line-height: 1.42857;",
+                                                      "padding-left: 2rem;",
+                                                      "@media (min-width: 768px) {",
+                                                      "padding-left: 1rem;",
+                                                      "}",
                                                       [Function],
                                                     ],
                                                   },
@@ -2996,9 +3069,15 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                         "isStatic": false,
                                                         "lastClassName": "c6",
                                                         "rules": Array [
-                                                          "word-wrap: break-word; font-weight: 700; font-size: 0.875rem; letter-spacing: -0.6px; line-height: 1.42857; padding-left: 2rem; @media (min-width: 768px) {
-  padding-left: 1rem;
-}",
+                                                          "word-wrap: break-word;",
+                                                          "font-weight: 700;",
+                                                          "font-size: 0.875rem;",
+                                                          "letter-spacing: -0.6px;",
+                                                          "line-height: 1.42857;",
+                                                          "padding-left: 2rem;",
+                                                          "@media (min-width: 768px) {",
+                                                          "padding-left: 1rem;",
+                                                          "}",
                                                           [Function],
                                                         ],
                                                       },
@@ -3042,9 +3121,10 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -3069,9 +3149,10 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                                   "isStatic": true,
                                                                   "lastClassName": "c7",
                                                                   "rules": Array [
-                                                                    "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                    "& > span {",
+                                                                    "font-weight: 500;",
+                                                                    "}",
+                                                                    "padding-left: 1rem;",
                                                                   ],
                                                                 },
                                                                 "displayName": "List__StyledListItem",
@@ -3107,9 +3188,10 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                               "isStatic": true,
                                                               "lastClassName": "c7",
                                                               "rules": Array [
-                                                                "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                "& > span {",
+                                                                "font-weight: 500;",
+                                                                "}",
+                                                                "padding-left: 1rem;",
                                                               ],
                                                             },
                                                             "displayName": "List__StyledListItem",
@@ -3134,9 +3216,10 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                                   "isStatic": true,
                                                                   "lastClassName": "c7",
                                                                   "rules": Array [
-                                                                    "& > span {
-  font-weight: 500;
-} padding-left: 1rem;",
+                                                                    "& > span {",
+                                                                    "font-weight: 500;",
+                                                                    "}",
+                                                                    "padding-left: 1rem;",
                                                                   ],
                                                                 },
                                                                 "displayName": "List__StyledListItem",
