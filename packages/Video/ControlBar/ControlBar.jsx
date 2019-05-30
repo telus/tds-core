@@ -24,18 +24,21 @@ const ControlBarContainer = styled.div(props => ({
   display: props.isMobile ? 'none' : undefined,
 }))
 
-const StyledControlBar = styled.div({
+const StyledControlBar = styled.div(props => ({
   position: 'absolute',
   width: '100%',
   height: 56,
-  padding: '1rem 3rem',
+  paddingTop: '1rem',
+  paddingBottom: '1rem',
+  paddingLeft: `${props.videoPlayerWidth > props.compactModeThreshold ? 3 : 1}rem`,
+  paddingRight: `calc(${props.videoPlayerWidth > props.compactModeThreshold ? 3 : 1}rem + 8px)`, // +8px to even out with left side
   bottom: 0,
   backgroundColor: 'rgba(42, 44, 46, 0.85)',
   margin: 'auto',
   display: 'flex',
   justifyContent: 'space-between',
   zIndex: 9,
-})
+}))
 
 const VideoProgressBarContainer = styled.div({
   display: 'flex',
@@ -82,6 +85,8 @@ const ControlBar = ({
   setQualityMenuOpen,
   clearInactivityTimer,
   copy,
+  compactModeThreshold,
+  videoPlayerWidth,
   ...rest
 }) => {
   const parseVideoQuality = () => {
@@ -103,7 +108,10 @@ const ControlBar = ({
 
   return (
     <ControlBarContainer isHidden={isHidden} isMobile={isMobile} {...rest}>
-      <StyledControlBar>
+      <StyledControlBar
+        compactModeThreshold={compactModeThreshold}
+        videoPlayerWidth={videoPlayerWidth}
+      >
         <VideoProgressBarContainer>
           <VideoProgressBar
             videoPlayer={videoPlayer}
@@ -124,6 +132,8 @@ const ControlBar = ({
           toggleMute={toggleMute}
           resetInactivityTimer={resetInactivityTimer}
           copy={copy}
+          compactModeThreshold={compactModeThreshold}
+          videoPlayerWidth={videoPlayerWidth}
         />
 
         <Box between={3} inline>
@@ -220,6 +230,8 @@ ControlBar.propTypes = {
   setQualityMenuOpen: PropTypes.func.isRequired,
   clearInactivityTimer: PropTypes.func.isRequired,
   copy: PropTypes.oneOf(['en', 'fr']).isRequired,
+  compactModeThreshold: PropTypes.number.isRequired,
+  videoPlayerWidth: PropTypes.number.isRequired,
 }
 
 ControlBar.defaultProps = {
