@@ -35,7 +35,7 @@ describe('media', () => {
         color: 'red',
       }))
 
-      expect(style).toEqual({ [`@media (max-width: ${breakpoints.md}px)`]: { color: 'red' } })
+      expect(style).toEqual({ [`@media (max-width: ${breakpoints.md - 1}px)`]: { color: 'red' } })
     })
   })
 
@@ -67,9 +67,8 @@ describe('media', () => {
       })
 
     expect(style).toEqual({
-      [`@media (min-width: ${breakpoints.md}px) and (max-width: ${
-        breakpoints.lg
-      }px) and (orientation: landscape)`]: { color: 'red' },
+      [`@media (min-width: ${breakpoints.md}px) and (max-width: ${breakpoints.lg -
+        1}px) and (orientation: landscape)`]: { color: 'red' },
     })
   })
 })
