@@ -76,7 +76,7 @@ class Video extends React.Component {
       mouseTimeout: 3000, // defined in ms
       keyboardSeekIncrement: 5, // defined in s
       keyboardVolumeIncrement: 0.1, // from 0 to 1
-      compactModeThreshold: 450, // in px
+      compactModeThreshold: 700, // in px
     }
 
     this.state = {
