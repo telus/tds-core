@@ -671,6 +671,7 @@ class Video extends React.Component {
             ref={this.refVideoPlayer}
             controls={this.state.isMobile}
             videoIsFullscreen={this.state.videoIsFullscreen}
+            crossOrigin={this.props.crossOrigin}
             playsinline
           >
             {this.state.sources}
@@ -792,6 +793,11 @@ Video.propTypes = {
    * The video player UI's language as an ISO language code. It currently supports English and French.
    */
   copy: PropTypes.oneOf(['en', 'fr']).isRequired,
+  /**
+   * Sets the `video` tag's `crossorigin` mode. Please note that content loaded without CORS approval may be insecure.
+   * @since 1.1.0
+   */
+  crossOrigin: PropTypes.oneOf(['anonymous', 'use-credentials']),
 }
 
 Video.defaultProps = {
@@ -800,6 +806,7 @@ Video.defaultProps = {
   beginMuted: false,
   defaultMobileQuality: 1,
   defaultDesktopQuality: 1,
+  crossOrigin: undefined,
 }
 
 export default Video
