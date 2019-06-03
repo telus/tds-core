@@ -61,13 +61,16 @@ exports[`<UnorderedList /> can have a list style 1`] = `
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "& {
-  padding-left: 3rem;
-} & & {
-  margin-top: 1rem; margin-bottom: 0.5rem;
-} & :last-child & {
-  margin-bottom: 0;
-}",
+              "& {",
+              "padding-left: 3rem;",
+              "}",
+              "& & {",
+              "margin-top: 1rem;",
+              "margin-bottom: 0.5rem;",
+              "}",
+              "& :last-child & {",
+              "margin-bottom: 0;",
+              "}",
             ],
           },
           "displayName": "Styled(Box)",
@@ -246,13 +249,16 @@ exports[`<UnorderedList /> can have a list style 2`] = `
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "& {
-  padding-left: 3rem;
-} & & {
-  margin-top: 1rem; margin-bottom: 0.5rem;
-} & :last-child & {
-  margin-bottom: 0;
-}",
+              "& {",
+              "padding-left: 3rem;",
+              "}",
+              "& & {",
+              "margin-top: 1rem;",
+              "margin-bottom: 0.5rem;",
+              "}",
+              "& :last-child & {",
+              "margin-bottom: 0;",
+              "}",
             ],
           },
           "displayName": "Styled(Box)",
