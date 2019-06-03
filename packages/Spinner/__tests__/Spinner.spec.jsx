@@ -120,6 +120,12 @@ describe('Spinner', () => {
 
       expect(spinner).toMatchElement(<span>Overlay me with the spinner</span>)
     })
+
+    it('can be fullscreen', () => {
+      const spinner = doShallow({ fullScreen: true, label: 'Loading page', spinning: true })
+
+      expect(spinner).toHaveClassName('fullscreenOverlay')
+    })
   })
 
   describe('accessibility', () => {

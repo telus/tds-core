@@ -33,7 +33,7 @@ exports[`Spinner does not render a large secondary spinner 1`] = `
           Loading content
         </title>
         <circle
-          className="circle-primary"
+          className="primaryCircle"
           cx="50"
           cy="50"
           fill="none"
@@ -99,7 +99,7 @@ exports[`Spinner renders 1`] = `
       Loading content
     </title>
     <circle
-      class="circle-primary"
+      class="primaryCircle"
       cx="50"
       cy="50"
       fill="none"
@@ -154,7 +154,7 @@ exports[`Spinner renders a small secondary spinner 1`] = `
           Loading content
         </title>
         <circle
-          className="circle-secondary"
+          className="secondaryCircle"
           cx="50"
           cy="50"
           fill="none"
@@ -215,7 +215,7 @@ exports[`Spinner renders a small spinner 1`] = `
           Loading content
         </title>
         <circle
-          className="circle-primary"
+          className="primaryCircle"
           cx="50"
           cy="50"
           fill="none"
@@ -270,7 +270,7 @@ exports[`Spinner renders with children 1`] = `
         Loading content
       </title>
       <circle
-        class="circle-primary"
+        class="primaryCircle"
         cx="50"
         cy="50"
         fill="none"

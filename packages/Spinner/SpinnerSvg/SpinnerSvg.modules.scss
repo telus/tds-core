@@ -44,13 +44,13 @@ $zindex-popover: 1600;
   animation: spinner-rotate 1.8s linear infinite;
 }
 
-.circle-primary {
+.primaryCircle {
   stroke: $color-accessible-green;
 
   animation: spinner-dash 1.7s ease-in-out infinite 0s;
 }
 
-.circle-secondary {
+.secondaryCircle {
   stroke: $color-secondary;
 
   animation: spinner-dash 1.7s ease-in-out infinite 0s;
