@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-core/compare/@tds/core-video@1.0.8...@tds/core-video@1.1.0) (2019-06-03)
+
+
+### Bug Fixes
+
+* **core-video:** ui sizing changes ([74108c2](https://github.com/telus/tds-core/commit/74108c2))
+
+
+### Features
+
+* **core-video:** add crossOrigin prop ([d04ce55](https://github.com/telus/tds-core/commit/d04ce55))
+
+
+
+
+
 ## [1.0.8](https://github.com/telus/tds-core/compare/@tds/core-video@1.0.7...@tds/core-video@1.0.8) (2019-05-13)
 
 **Note:** Version bump only for package @tds/core-video
