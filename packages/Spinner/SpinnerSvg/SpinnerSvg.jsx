@@ -36,7 +36,7 @@ class SpinnerSvg extends React.Component {
         >
           <title id={this.state.titleId}>{a11yLabel}</title>
           <circle
-            className={styles[`circle-${size === 'small' ? variant : 'primary'}`]}
+            className={styles[`${size === 'small' ? variant : 'primary'}Circle`]}
             strokeWidth="4"
             fill="none"
             strokeLinecap="round"

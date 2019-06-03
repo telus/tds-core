@@ -6,14 +6,15 @@
 - Actions that take longer than 10 seconds ideally provide feedback with relative progress, such as a progress bar
 - Recommend not to use for full page loading
 - Label should be short and concise. Spinner label should accurately explain the state of the requested action along with relevant items being loaded, “Loading page content”, “Logging in”, “Processing payment”
-- Should use for asynchronous requests that take between 1 to 4 seconds to load
-- Use the small spinner when applied on a button or other small interactive elements such as Toggles or links
+- Use the small spinner when applied on a button or other small interactive elements such as toggles or links
+  - When overlaying buttons, the spinner’s colour should match the button’s colour (green spinner for green buttons, and purple spinner for purple buttons)
 - Use the large spinner when affecting an entire web page or content block, whose content has not finished loading, such as paginated content
-- When overlaying buttons, the spinner’s colour should match the button’s colour (green spinner for green buttons, and purple spinner for purple buttons)
+- Both the small and large spinner have an overlay background to visually indicate content behind it is inaccessible
+  Use the standalone spinner (small/large) as an interstitial placeholder for loading content
 
 ### Minimal usage
 
-- To make the `Spinner` visible, set the `spinning` prop to true
+- To make the `Spinner` visible, set the `spinning` prop to `true`
 - Provide a `label` to give more context about what is happening
   - The `label` prop is a `string` or `node` that acts as both a line of text under the `Spinner` as well as text that is communicated to assistive technology
   - Use `A11yContent` to provide information to assistive technology that should not appear in the `Spinner`'s visible label. This content must be wrapped with a `React.Fragment` or `span` if `A11yContent` is being used. In the next major update, the `label` prop will be required in code
@@ -195,11 +196,9 @@ const loadContent = () => {
   <Card>
     <Spinner label="Finding products" spinning={state.contentLoading}>
       <Box between={3} vertical={2}>
-        {state.loadedContent === '' && (
-          <div>
-            <Button onClick={loadContent}>Check Availability</Button>
-          </div>
-        )}
+        <div>
+          <Button onClick={loadContent}>Check Availability</Button>
+        </div>
         <div aria-live="assertive">
           <A11yContent>{state.loadedMessage}</A11yContent>
           {state.loadedContent}
@@ -212,9 +211,45 @@ const loadContent = () => {
 
 ### Displaying a full screen spinner
 
-When using a `Spinner` to cover the entire viewport, please take the following measures:
+To block the entire screen while waiting, do not wrap any children and use the `fullScreen` prop. This will disable scrolling and prevent any interactions with the page while it is active. It is recommended to avoid this pattern where possible, as this takes control completely away from the user.
 
-- Place the `Spinner` somewhere in your application, without wrapping any content
-- Provide Focus to the `Spinner` once it appears
-- Lock scrolling on the `<body>`
-- When content has loaded, unlock scrolling from the Body and hide the `Spinner`
+```jsx
+initialState = {
+  contentLoading: false,
+  loadedMessage: '',
+  loadedContent: <Paragraph>Page 1</Paragraph>,
+}
+
+const loadContent = () => {
+  setState({ contentLoading: true })
+
+  setTimeout(
+    () =>
+      setState({
+        contentLoading: false,
+        loadedMessage: 'Page 2 Loaded',
+        loadedContent: <Paragraph>Page 2</Paragraph>,
+      }),
+    2000
+  )
+}
+
+;<Box between={2}>
+  <Card>
+    <Spinner
+      fullScreen={state.contentLoading}
+      label="Loading page"
+      spinning={state.contentLoading}
+    />
+    <Box between={3} vertical={2}>
+      <div>
+        <Button onClick={loadContent}>Load Page 2</Button>
+      </div>
+      <div aria-live="assertive">
+        <A11yContent>{state.loadedMessage}</A11yContent>
+        {state.loadedContent}
+      </div>
+    </Box>
+  </Card>
+</Box>
+```

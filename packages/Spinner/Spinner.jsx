@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import joinClassNames from '../../shared/utils/joinClassNames'
 import { deprecate, warn } from '../../shared/utils/warn'
+import safeRest from '../../shared/utils/safeRest'
 import SpinnerSvg from './SpinnerSvg/SpinnerSvg'
 
 import positionStyles from '../../shared/styles/Position.modules.scss'
@@ -13,6 +14,16 @@ import styles from './Spinner.modules.scss'
  *
  * @version ./package.json
  */
+
+const spinner = React.createRef()
+const spinnerOverlay = React.createRef()
+
+const preventScroll = e => {
+  if (spinnerOverlay.current.contains(e.targetTouches[0].target)) {
+    e.preventDefault()
+  }
+}
+
 const Spinner = ({
   spinning,
   label,
@@ -22,6 +33,7 @@ const Spinner = ({
   inline,
   size,
   variant,
+  fullScreen,
   children,
   ...rest
 }) => {
@@ -35,28 +47,60 @@ const Spinner = ({
   if (size === 'large' && variant === 'secondary') {
     warn(
       'core-spinner',
-      'The Spinner may not be using the `secondary` variant while `size` is set to `large`.'
+      'The Spinner should not use the `secondary` variant while `size` is set to `large`.'
     )
+  }
+  if (fullScreen && spinning) {
+    document.body.addEventListener('touchmove', preventScroll, { passive: false })
+    document.body.addEventListener('touchstart', preventScroll, { passive: false })
+
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.removeEventListener('touchmove', preventScroll)
+    document.body.removeEventListener('touchstart', preventScroll)
+    document.body.style.overflow = 'auto'
   }
   if (!spinning) {
     return children || null
   }
 
+  const spinnerSvg = props => (
+    <SpinnerSvg
+      {...props}
+      tip={dangerouslyHideVisibleLabel || size === 'small' ? undefined : label || tip}
+      a11yLabel={label || a11yLabel}
+      size={size}
+      variant={variant}
+      {...safeRest(rest)}
+    />
+  )
+
+  if (fullScreen) {
+    return (
+      <div className={styles.fullscreenOverlay} ref={spinnerOverlay} data-testid="overlay">
+        <div
+          className={joinClassNames(
+            positionStyles.relative,
+            inline && styles.inline,
+            fullScreen && positionStyles.centerVertically
+          )}
+          data-testid="container"
+          aria-live="assertive"
+        >
+          {spinnerSvg({ overlay: true })}
+        </div>
+      </div>
+    )
+  }
   if (children) {
     return (
       <div
         className={joinClassNames(positionStyles.relative, inline && styles.inline)}
         data-testid="container"
         aria-live="assertive"
+        ref={spinner}
       >
-        <SpinnerSvg
-          {...rest}
-          tip={dangerouslyHideVisibleLabel || size === 'small' ? undefined : label || tip}
-          a11yLabel={label || a11yLabel}
-          overlay={true}
-          size={size}
-          variant={variant}
-        />
+        {spinnerSvg({ overlay: true })}
 
         <div className={styles.overlay} data-testid="overlay" />
 
@@ -73,15 +117,7 @@ const Spinner = ({
     )
   }
 
-  return (
-    <SpinnerSvg
-      {...rest}
-      tip={dangerouslyHideVisibleLabel || size === 'small' ? undefined : label || tip}
-      a11yLabel={label || a11yLabel}
-      size={size}
-      variant={variant}
-    />
-  )
+  return spinnerSvg()
 }
 
 Spinner.propTypes = {
@@ -90,7 +126,8 @@ Spinner.propTypes = {
    */
   spinning: PropTypes.bool,
   /**
-   * Communicates a message to assistive technology while visible. This same message will appear underneath the spinner when its `size` is `large`. This prop will be required in the next major version. *Must be wrapped with a `span`*. In the future, it will be possible to use `React.Fragment`.
+   * Communicates a message to assistive technology while visible. This same message will appear underneath the spinner when its `size` is `large`.
+   * This prop will be required in the next major version. *Must be wrapped with a `span`*. In the future, it will be possible to use `React.Fragment`.
    */
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /**
@@ -100,17 +137,17 @@ Spinner.propTypes = {
   dangerouslyHideVisibleLabel: PropTypes.bool,
   /**
    * A additional displayed message.
-   * @deprecated This prop and `tip` have been combined into the `label` prop. The `label` prop will show the spinner tip when deemed appropriate.
+   * @deprecated This prop and `a11yLabel` have been combined into the `label` prop.
    */
   tip: PropTypes.string,
   /**
    * A label for assistive technology.
-   * @deprecated This prop and `tip` have been combined into the `label` prop. The `label` prop will show the spinner tip when deemed appropriate.
+   * @deprecated This prop and `tip` have been combined into the `label` prop.
    */
   a11yLabel: PropTypes.string,
   /**
-   * Render the spinner as inline-block, useful when rendering the spinner on top of
-   * components like button
+   * Render the Spinner as inline-block. This can be used when wrapping
+   * interactive elements such as buttons.
    *
    * @since 2.1.0
    */
@@ -122,11 +159,17 @@ Spinner.propTypes = {
    */
   size: PropTypes.oneOf(['large', 'small']),
   /**
-   * The spinner's colour. The `secondary` spinner is only available when `size` is set to `small`.
+   * The spinner's colour. The `secondary` variant is only available when `size` is set to `small`.
    *
    * @since 2.2.0
    */
   variant: PropTypes.oneOf(['primary', 'secondary']),
+  /**
+   * Enables body locking
+   *
+   * @since 2.2.0
+   */
+  fullScreen: PropTypes.bool,
   /**
    * Content to be overlaid while the spinner is active. Can be text, any HTML element,
    * or any component.
@@ -143,6 +186,7 @@ Spinner.defaultProps = {
   inline: false,
   size: 'large',
   variant: 'primary',
+  fullScreen: false,
   children: undefined,
 }
 

@@ -8,6 +8,17 @@ $zindex-modal-backdrop: 1400;
   z-index: $zindex-modal-backdrop;
 }
 
+.fullscreenOverlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  z-index: $zindex-modal-backdrop;
+  background-color: rgba(255, 255, 255, 0.96);
+}
+
 .opaque {
   opacity: 0.06;
 }
