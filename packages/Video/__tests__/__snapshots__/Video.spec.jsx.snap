@@ -574,7 +574,9 @@ input[type=range].c21::-ms-tooltip {
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
-              "width: 100%; outline: none; position: relative;",
+              "width: 100%;",
+              "outline: none;",
+              "position: relative;",
             ],
           },
           "displayName": "Video__VideoPlayerContainer",
@@ -1477,7 +1479,10 @@ input[type=range].c21::-ms-tooltip {
                         "isStatic": true,
                         "lastClassName": "c2",
                         "rules": Array [
-                          "position: absolute; width: 100%; height: 100%; z-index: 5;",
+                          "position: absolute;",
+                          "width: 100%;",
+                          "height: 100%;",
+                          "z-index: 5;",
                         ],
                       },
                       "displayName": "Video__VideoSplashContainer",
@@ -1553,13 +1558,29 @@ input[type=range].c21::-ms-tooltip {
                                         "isStatic": true,
                                         "lastClassName": "c4",
                                         "rules": Array [
-                                          "position: absolute; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 8; cursor: pointer; pointer-events: auto; #bigButton {
-  background-color: rgba(42,44,46,0.9); transition: background-color 0.2s;
-} fill: rgba(255,255,255,0); transition: background-color 0.2s fill 0.2s; :hover {
-  #bigButton {
-  background-color: rgba(42,44,46,1); transition: background-color 0.2s;
-} fill: rgba(255,255,255,1); transition: fill 0.2s;
-}",
+                                          "position: absolute;",
+                                          "width: 100%;",
+                                          "height: 100%;",
+                                          "display: flex;",
+                                          "justify-content: center;",
+                                          "align-items: center;",
+                                          "z-index: 8;",
+                                          "cursor: pointer;",
+                                          "pointer-events: auto;",
+                                          "#bigButton {",
+                                          "background-color: rgba(42,44,46,0.9);",
+                                          "transition: background-color 0.2s;",
+                                          "}",
+                                          "fill: rgba(255,255,255,0);",
+                                          "transition: background-color 0.2s fill 0.2s;",
+                                          ":hover {",
+                                          "#bigButton {",
+                                          "background-color: rgba(42,44,46,1);",
+                                          "transition: background-color 0.2s;",
+                                          "}",
+                                          "fill: rgba(255,255,255,1);",
+                                          "transition: fill 0.2s;",
+                                          "}",
                                         ],
                                       },
                                       "displayName": "BigVideoButton__BigPlayButtonContainer",
@@ -1592,9 +1613,25 @@ input[type=range].c21::-ms-tooltip {
                                               "isStatic": true,
                                               "lastClassName": "c5",
                                               "rules": Array [
-                                                "width: 144px; height: 144px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; vertical-align: middle; outline: none; @media (min-width: 768px) {
-  width: 200px; height: 200px;
-}",
+                                                "width: 144px;",
+                                                "height: 144px;",
+                                                "border-radius: 50%;",
+                                                "display: flex;",
+                                                "align-items: center;",
+                                                "justify-content: center;",
+                                                "flex-direction: column;",
+                                                "background: none;",
+                                                "color: inherit;",
+                                                "border: none;",
+                                                "padding: 0;",
+                                                "font: inherit;",
+                                                "cursor: pointer;",
+                                                "vertical-align: middle;",
+                                                "outline: none;",
+                                                "@media (min-width: 768px) {",
+                                                "width: 200px;",
+                                                "height: 200px;",
+                                                "}",
                                               ],
                                             },
                                             "displayName": "BigVideoButton__BigPlayButton",
@@ -1626,9 +1663,9 @@ input[type=range].c21::-ms-tooltip {
                                                     "isStatic": true,
                                                     "lastClassName": "c6",
                                                     "rules": Array [
-                                                      "svg>path {
-  fill: inherit;
-}",
+                                                      "svg>path {",
+                                                      "fill: inherit;",
+                                                      "}",
                                                     ],
                                                   },
                                                   "displayName": "BigVideoButton__IconContainer",
@@ -1690,9 +1727,10 @@ input[type=range].c21::-ms-tooltip {
                                                     "isStatic": true,
                                                     "lastClassName": "c7",
                                                     "rules": Array [
-                                                      "display: none; @media (min-width: 768px) {
-  display: block;
-}",
+                                                      "display: none;",
+                                                      "@media (min-width: 768px) {",
+                                                      "display: block;",
+                                                      "}",
                                                     ],
                                                   },
                                                   "displayName": "BigVideoButton__BigWatchTextContainer",
@@ -1746,9 +1784,10 @@ input[type=range].c21::-ms-tooltip {
                                                     "isStatic": true,
                                                     "lastClassName": "c8",
                                                     "rules": Array [
-                                                      "display: block; @media (min-width: 768px) {
-  display: none;
-}",
+                                                      "display: block;",
+                                                      "@media (min-width: 768px) {",
+                                                      "display: none;",
+                                                      "}",
                                                     ],
                                                   },
                                                   "displayName": "BigVideoButton__LittleWatchTextContainer",
@@ -1807,7 +1846,13 @@ input[type=range].c21::-ms-tooltip {
                         "isStatic": true,
                         "lastClassName": "c9",
                         "rules": Array [
-                          "position: absolute; z-index: 4; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;",
+                          "position: absolute;",
+                          "z-index: 4;",
+                          "display: flex;",
+                          "justify-content: center;",
+                          "align-items: center;",
+                          "width: 100%;",
+                          "height: 100%;",
                         ],
                       },
                       "displayName": "Video__VideoOverlayElementContainer",
@@ -1844,7 +1889,10 @@ input[type=range].c21::-ms-tooltip {
                   "isStatic": true,
                   "lastClassName": "c10",
                   "rules": Array [
-                    "outline: none; width: 100%; height: 100%; font-size: 0;",
+                    "outline: none;",
+                    "width: 100%;",
+                    "height: 100%;",
+                    "font-size: 0;",
                   ],
                 },
                 "displayName": "Video__VideoElementContainer",
@@ -1880,7 +1928,8 @@ input[type=range].c21::-ms-tooltip {
                         "isStatic": true,
                         "lastClassName": "c11",
                         "rules": Array [
-                          "width: 100%; height: 100%;",
+                          "width: 100%;",
+                          "height: 100%;",
                         ],
                       },
                       "displayName": "Video__VideoPlayer",
@@ -1941,7 +1990,7 @@ input[type=range].c21::-ms-tooltip {
         <ControlBar
           captionsMenuOpen={false}
           clearInactivityTimer={[Function]}
-          compactModeThreshold={450}
+          compactModeThreshold={700}
           copy="en"
           isHidden={true}
           isMobile={false}
@@ -2386,11 +2435,11 @@ input[type=range].c21::-ms-tooltip {
                 onMouseOver={[Function]}
               >
                 <ControlBar__StyledControlBar
-                  compactModeThreshold={450}
+                  compactModeThreshold={700}
                   videoPlayerWidth={0}
                 >
                   <StyledComponent
-                    compactModeThreshold={450}
+                    compactModeThreshold={700}
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
@@ -2430,7 +2479,8 @@ input[type=range].c21::-ms-tooltip {
                                 "isStatic": true,
                                 "lastClassName": "c14",
                                 "rules": Array [
-                                  "display: flex; flex-grow: 1;",
+                                  "display: flex;",
+                                  "flex-grow: 1;",
                                 ],
                               },
                               "displayName": "ControlBar__VideoProgressBarContainer",
@@ -2485,7 +2535,9 @@ input[type=range].c21::-ms-tooltip {
                                         "isStatic": true,
                                         "lastClassName": "c15",
                                         "rules": Array [
-                                          "display: flex; width: 100%; align-items: center;",
+                                          "display: flex;",
+                                          "width: 100%;",
+                                          "align-items: center;",
                                         ],
                                       },
                                       "displayName": "VideoProgressBar__ProgressBarContainer",
@@ -2648,7 +2700,7 @@ input[type=range].c21::-ms-tooltip {
                         </StyledComponent>
                       </ControlBar__VideoProgressBarContainer>
                       <VolumeSlider
-                        compactModeThreshold={450}
+                        compactModeThreshold={700}
                         copy="en"
                         resetInactivityTimer={[Function]}
                         setVolume={[Function]}
@@ -2678,11 +2730,11 @@ input[type=range].c21::-ms-tooltip {
                         videoPlayerWidth={0}
                       >
                         <VolumeSlider__VolumeSliderContainer
-                          compactModeThreshold={450}
+                          compactModeThreshold={700}
                           videoPlayerWidth={0}
                         >
                           <StyledComponent
-                            compactModeThreshold={450}
+                            compactModeThreshold={700}
                             forwardedComponent={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
@@ -2734,7 +2786,14 @@ input[type=range].c21::-ms-tooltip {
                                           "isStatic": true,
                                           "lastClassName": "c20",
                                           "rules": Array [
-                                            "background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; display: inline-flex; align-items: center;",
+                                            "background: none;",
+                                            "color: inherit;",
+                                            "border: none;",
+                                            "padding: 0;",
+                                            "font: inherit;",
+                                            "cursor: pointer;",
+                                            "display: inline-flex;",
+                                            "align-items: center;",
                                           ],
                                         },
                                         "displayName": "VideoButton__StyledButton",
@@ -2920,7 +2979,14 @@ input[type=range].c21::-ms-tooltip {
                                       "isStatic": true,
                                       "lastClassName": "c20",
                                       "rules": Array [
-                                        "background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; display: inline-flex; align-items: center;",
+                                        "background: none;",
+                                        "color: inherit;",
+                                        "border: none;",
+                                        "padding: 0;",
+                                        "font: inherit;",
+                                        "cursor: pointer;",
+                                        "display: inline-flex;",
+                                        "align-items: center;",
                                       ],
                                     },
                                     "displayName": "VideoButton__StyledButton",
@@ -3005,7 +3071,14 @@ input[type=range].c21::-ms-tooltip {
                                       "isStatic": true,
                                       "lastClassName": "c20",
                                       "rules": Array [
-                                        "background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; display: inline-flex; align-items: center;",
+                                        "background: none;",
+                                        "color: inherit;",
+                                        "border: none;",
+                                        "padding: 0;",
+                                        "font: inherit;",
+                                        "cursor: pointer;",
+                                        "display: inline-flex;",
+                                        "align-items: center;",
                                       ],
                                     },
                                     "displayName": "VideoButton__StyledButton",
@@ -3095,7 +3168,14 @@ input[type=range].c21::-ms-tooltip {
                                       "isStatic": true,
                                       "lastClassName": "c20",
                                       "rules": Array [
-                                        "background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; display: inline-flex; align-items: center;",
+                                        "background: none;",
+                                        "color: inherit;",
+                                        "border: none;",
+                                        "padding: 0;",
+                                        "font: inherit;",
+                                        "cursor: pointer;",
+                                        "display: inline-flex;",
+                                        "align-items: center;",
                                       ],
                                     },
                                     "displayName": "VideoButton__StyledButton",
