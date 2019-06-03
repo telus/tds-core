@@ -74,7 +74,10 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
-              "line-height: 1; position: relative; width: 1rem; height: 1.3rem;",
+              "line-height: 1;",
+              "position: relative;",
+              "width: 1rem;",
+              "height: 1.3rem;",
             ],
           },
           "displayName": "Tooltip__StyledTooltip",
@@ -176,7 +179,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "ismmYB",
+                          "lastClassName": "bwaAyc",
                           "rules": Array [
                             "border-radius: 4px;",
                             [Function],
@@ -436,7 +439,10 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
-              "line-height: 1; position: relative; width: 1rem; height: 1.3rem;",
+              "line-height: 1;",
+              "position: relative;",
+              "width: 1rem;",
+              "height: 1.3rem;",
             ],
           },
           "displayName": "Tooltip__StyledTooltip",
@@ -538,7 +544,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "ismmYB",
+                          "lastClassName": "bwaAyc",
                           "rules": Array [
                             "border-radius: 4px;",
                             [Function],
@@ -1146,7 +1152,10 @@ exports[`Tooltip renders 1`] = `
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
-              "line-height: 1; position: relative; width: 1rem; height: 1.3rem;",
+              "line-height: 1;",
+              "position: relative;",
+              "width: 1rem;",
+              "height: 1.3rem;",
             ],
           },
           "displayName": "Tooltip__StyledTooltip",
