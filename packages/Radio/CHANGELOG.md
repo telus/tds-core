@@ -3,157 +3,87 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.20...@tds/core-radio@2.0.0) (2019-05-23)
+## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-radio@2.0.0...@tds/core-radio@2.0.1) (2019-06-04)
 
+**Note:** Version bump only for package @tds/core-radio
+
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.20...@tds/core-radio@2.0.0) (2019-05-23)
 
 ### Features
 
-* **core-radio:** upgrade to styled-components ([2e677b0](https://github.com/telusdigital/tds/commit/2e677b0))
-
+- **core-radio:** upgrade to styled-components ([2e677b0](https://github.com/telusdigital/tds/commit/2e677b0))
 
 ### BREAKING CHANGES
 
-* **core-radio:** styled-components now a peer dependency
-
-
-
-
+- **core-radio:** styled-components now a peer dependency
 
 ## [1.2.20](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.19...@tds/core-radio@1.2.20) (2019-05-22)
 
 **Note:** Version bump only for package @tds/core-radio
 
-
-
-
-
 ## [1.2.19](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.18...@tds/core-radio@1.2.19) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-radio
-
-
-
-
 
 ## [1.2.18](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.17...@tds/core-radio@1.2.18) (2019-04-29)
 
 **Note:** Version bump only for package @tds/core-radio
 
-
-
-
-
 ## [1.2.17](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.16...@tds/core-radio@1.2.17) (2019-04-23)
 
 **Note:** Version bump only for package @tds/core-radio
-
-
-
-
 
 ## [1.2.16](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.15...@tds/core-radio@1.2.16) (2019-04-22)
 
 **Note:** Version bump only for package @tds/core-radio
 
-
-
-
-
 ## [1.2.15](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.14...@tds/core-radio@1.2.15) (2019-04-16)
 
 **Note:** Version bump only for package @tds/core-radio
-
-
-
-
 
 ## [1.2.14](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.13...@tds/core-radio@1.2.14) (2019-04-11)
 
 **Note:** Version bump only for package @tds/core-radio
 
-
-
-
-
 ## [1.2.13](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.12...@tds/core-radio@1.2.13) (2019-04-11)
 
 **Note:** Version bump only for package @tds/core-radio
-
-
-
-
 
 ## [1.2.12](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.11...@tds/core-radio@1.2.12) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-radio
 
-
-
-
-
 ## [1.2.11](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.10...@tds/core-radio@1.2.11) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-radio
-
-
-
-
 
 ## [1.2.10](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.9...@tds/core-radio@1.2.10) (2019-03-20)
 
 **Note:** Version bump only for package @tds/core-radio
 
-
-
-
-
 ## [1.2.9](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.8...@tds/core-radio@1.2.9) (2019-03-20)
 
 **Note:** Version bump only for package @tds/core-radio
-
-
-
-
 
 ## [1.2.8](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.7...@tds/core-radio@1.2.8) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-radio
 
-
-
-
-
 ## [1.2.7](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.6...@tds/core-radio@1.2.7) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-radio
-
-
-
-
 
 ## [1.2.6](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.5...@tds/core-radio@1.2.6) (2019-03-15)
 
 **Note:** Version bump only for package @tds/core-radio
 
-
-
-
-
 ## [1.2.5](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.4...@tds/core-radio@1.2.5) (2019-03-11)
 
 **Note:** Version bump only for package @tds/core-radio
 
-
-
-
-
 ## [1.2.4](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.3...@tds/core-radio@1.2.4) (2019-03-05)
 
 **Note:** Version bump only for package @tds/core-radio
-
-
-
-
 
 ## [1.2.3](https://github.com/telusdigital/tds/compare/@tds/core-radio@1.2.2...@tds/core-radio@1.2.3) (2019-02-20)
 

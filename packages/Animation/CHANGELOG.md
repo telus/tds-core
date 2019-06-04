@@ -3,38 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.1.1...@tds/shared-animation@1.1.2) (2019-04-04)
-
-
-### Bug Fixes
-
-* **shared-animation:** align prop-types version with rest of repo ([d0f0317](https://github.com/telusdigital/tds/commit/d0f0317))
-
-
-
-
-
-## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.1.0...@tds/shared-animation@1.1.1) (2019-03-11)
-
-
-### Bug Fixes
-
-* **shared-animation:** set overflow to visible when expanded ([457140c](https://github.com/telusdigital/tds/commit/457140c))
-
-
-
-
-
-# [1.1.0](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.0.3...@tds/shared-animation@1.1.0) (2019-03-11)
-
+# [1.2.0](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.1.2...@tds/shared-animation@1.2.0) (2019-06-04)
 
 ### Features
 
-* **shared-animation:** move animation to public component ([514ec08](https://github.com/telusdigital/tds/commit/514ec08))
+- **shared-animation:** add FadeReveal component ([e046a37](https://github.com/telusdigital/tds/commit/e046a37))
+- **shared-animation:** forward the style prop to the rendered component ([98d12db](https://github.com/telusdigital/tds/commit/98d12db))
 
+## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.1.1...@tds/shared-animation@1.1.2) (2019-04-04)
 
+### Bug Fixes
 
+- **shared-animation:** align prop-types version with rest of repo ([d0f0317](https://github.com/telusdigital/tds/commit/d0f0317))
 
+## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.1.0...@tds/shared-animation@1.1.1) (2019-03-11)
+
+### Bug Fixes
+
+- **shared-animation:** set overflow to visible when expanded ([457140c](https://github.com/telusdigital/tds/commit/457140c))
+
+# [1.1.0](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.0.3...@tds/shared-animation@1.1.0) (2019-03-11)
+
+### Features
+
+- **shared-animation:** move animation to public component ([514ec08](https://github.com/telusdigital/tds/commit/514ec08))
 
 ## [1.0.3](https://github.com/telus/tds-core/compare/@tds/shared-animation@1.0.2...@tds/shared-animation@1.0.3) (2019-02-06)
 

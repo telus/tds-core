@@ -3,179 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.2.28](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.27...@tds/core-notification@1.2.28) (2019-05-13)
+## [1.2.29](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.28...@tds/core-notification@1.2.29) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-notification
 
+## [1.2.28](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.27...@tds/core-notification@1.2.28) (2019-05-13)
 
-
-
+**Note:** Version bump only for package @tds/core-notification
 
 ## [1.2.27](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.26...@tds/core-notification@1.2.27) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.26](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.25...@tds/core-notification@1.2.26) (2019-04-23)
 
 **Note:** Version bump only for package @tds/core-notification
-
-
-
-
 
 ## [1.2.25](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.24...@tds/core-notification@1.2.25) (2019-04-22)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.24](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.23...@tds/core-notification@1.2.24) (2019-04-16)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.23](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.22...@tds/core-notification@1.2.23) (2019-04-11)
-
 
 ### Bug Fixes
 
-* **core-notification:** use className prop for Box ([99073a3](https://github.com/telusdigital/tds/commit/99073a3))
-
-
-
-
+- **core-notification:** use className prop for Box ([99073a3](https://github.com/telusdigital/tds/commit/99073a3))
 
 ## [1.2.22](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.21...@tds/core-notification@1.2.22) (2019-04-04)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.21](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.20...@tds/core-notification@1.2.21) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-notification
-
-
-
-
 
 ## [1.2.20](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.19...@tds/core-notification@1.2.20) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.19](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.18...@tds/core-notification@1.2.19) (2019-03-20)
 
 **Note:** Version bump only for package @tds/core-notification
-
-
-
-
 
 ## [1.2.18](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.17...@tds/core-notification@1.2.18) (2019-03-20)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.17](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.16...@tds/core-notification@1.2.17) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-notification
-
-
-
-
 
 ## [1.2.16](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.15...@tds/core-notification@1.2.16) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.15](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.14...@tds/core-notification@1.2.15) (2019-03-15)
 
 **Note:** Version bump only for package @tds/core-notification
-
-
-
-
 
 ## [1.2.14](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.13...@tds/core-notification@1.2.14) (2019-03-13)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.13](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.12...@tds/core-notification@1.2.13) (2019-03-11)
 
 **Note:** Version bump only for package @tds/core-notification
-
-
-
-
 
 ## [1.2.12](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.11...@tds/core-notification@1.2.12) (2019-03-11)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.11](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.10...@tds/core-notification@1.2.11) (2019-03-05)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.10](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.9...@tds/core-notification@1.2.10) (2019-02-15)
-
 
 ### Bug Fixes
 
-* **core-notification:** makes notification dismissible ([053d782](https://github.com/telusdigital/tds/commit/053d782))
-
-
-
-
+- **core-notification:** makes notification dismissible ([053d782](https://github.com/telusdigital/tds/commit/053d782))
 
 ## [1.2.9](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.8...@tds/core-notification@1.2.9) (2019-02-07)
 
 **Note:** Version bump only for package @tds/core-notification
 
-
-
-
-
 ## [1.2.8](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.7...@tds/core-notification@1.2.8) (2019-02-06)
 
 **Note:** Version bump only for package @tds/core-notification
-
-
-
-
 
 ## [1.2.7](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.6...@tds/core-notification@1.2.7) (2019-01-10)
 

@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-box",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Apply spacing within or around components",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,6 +28,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-responsive": "^1.2.0"
+    "@tds/core-responsive": "^1.2.1"
   }
 }

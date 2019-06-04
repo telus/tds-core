@@ -3,83 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [2.3.12](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.11...@tds/core-flex-grid@2.3.12) (2019-05-13)
+## [2.3.13](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.12...@tds/core-flex-grid@2.3.13) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-flex-grid
 
+## [2.3.12](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.11...@tds/core-flex-grid@2.3.12) (2019-05-13)
 
-
-
+**Note:** Version bump only for package @tds/core-flex-grid
 
 ## [2.3.11](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.10...@tds/core-flex-grid@2.3.11) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-flex-grid
 
-
-
-
-
 ## [2.3.10](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.9...@tds/core-flex-grid@2.3.10) (2019-04-22)
 
 **Note:** Version bump only for package @tds/core-flex-grid
-
-
-
-
 
 ## [2.3.9](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.8...@tds/core-flex-grid@2.3.9) (2019-04-04)
 
 **Note:** Version bump only for package @tds/core-flex-grid
 
-
-
-
-
 ## [2.3.8](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.7...@tds/core-flex-grid@2.3.8) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-flex-grid
 
-
-
-
-
 ## [2.3.7](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.6...@tds/core-flex-grid@2.3.7) (2019-03-13)
-
 
 ### Bug Fixes
 
-* **core-flex-grid:** downgrade react-broadcast ([70864e4](https://github.com/telusdigital/tds/commit/70864e4))
-
-
-
-
+- **core-flex-grid:** downgrade react-broadcast ([70864e4](https://github.com/telusdigital/tds/commit/70864e4))
 
 ## [2.3.6](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.5...@tds/core-flex-grid@2.3.6) (2019-03-11)
 
 **Note:** Version bump only for package @tds/core-flex-grid
 
-
-
-
-
 ## [2.3.5](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.4...@tds/core-flex-grid@2.3.5) (2019-02-07)
-
 
 ### Bug Fixes
 
-* **core-flex-grid:** adjust css output to be mobile-first ([431cb43](https://github.com/telusdigital/tds/commit/431cb43)), closes [#899](https://github.com/telusdigital/tds/issues/899)
-
-
-
-
+- **core-flex-grid:** adjust css output to be mobile-first ([431cb43](https://github.com/telusdigital/tds/commit/431cb43)), closes [#899](https://github.com/telusdigital/tds/issues/899)
 
 ## [2.3.4](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.3...@tds/core-flex-grid@2.3.4) (2019-02-06)
 
 **Note:** Version bump only for package @tds/core-flex-grid
-
-
-
-
 
 ## [2.3.3](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.2...@tds/core-flex-grid@2.3.3) (2019-01-10)
 

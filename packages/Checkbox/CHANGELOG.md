@@ -3,157 +3,87 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.22...@tds/core-checkbox@2.0.0) (2019-05-23)
+## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.0...@tds/core-checkbox@2.0.1) (2019-06-04)
 
+**Note:** Version bump only for package @tds/core-checkbox
+
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.22...@tds/core-checkbox@2.0.0) (2019-05-23)
 
 ### Features
 
-* **core-checkbox:** convert to styled-component ([86946ac](https://github.com/telusdigital/tds/commit/86946ac))
-
+- **core-checkbox:** convert to styled-component ([86946ac](https://github.com/telusdigital/tds/commit/86946ac))
 
 ### BREAKING CHANGES
 
-* **core-checkbox:** styled-component peer dep required
-
-
-
-
+- **core-checkbox:** styled-component peer dep required
 
 ## [1.1.22](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.21...@tds/core-checkbox@1.1.22) (2019-05-22)
 
 **Note:** Version bump only for package @tds/core-checkbox
 
-
-
-
-
 ## [1.1.21](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.20...@tds/core-checkbox@1.1.21) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-checkbox
-
-
-
-
 
 ## [1.1.20](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.19...@tds/core-checkbox@1.1.20) (2019-04-29)
 
 **Note:** Version bump only for package @tds/core-checkbox
 
-
-
-
-
 ## [1.1.19](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.18...@tds/core-checkbox@1.1.19) (2019-04-23)
 
 **Note:** Version bump only for package @tds/core-checkbox
-
-
-
-
 
 ## [1.1.18](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.17...@tds/core-checkbox@1.1.18) (2019-04-22)
 
 **Note:** Version bump only for package @tds/core-checkbox
 
-
-
-
-
 ## [1.1.17](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.16...@tds/core-checkbox@1.1.17) (2019-04-16)
 
 **Note:** Version bump only for package @tds/core-checkbox
-
-
-
-
 
 ## [1.1.16](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.15...@tds/core-checkbox@1.1.16) (2019-04-11)
 
 **Note:** Version bump only for package @tds/core-checkbox
 
-
-
-
-
 ## [1.1.15](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.14...@tds/core-checkbox@1.1.15) (2019-04-11)
 
 **Note:** Version bump only for package @tds/core-checkbox
-
-
-
-
 
 ## [1.1.14](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.13...@tds/core-checkbox@1.1.14) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-checkbox
 
-
-
-
-
 ## [1.1.13](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.12...@tds/core-checkbox@1.1.13) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-checkbox
-
-
-
-
 
 ## [1.1.12](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.11...@tds/core-checkbox@1.1.12) (2019-03-20)
 
 **Note:** Version bump only for package @tds/core-checkbox
 
-
-
-
-
 ## [1.1.11](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.10...@tds/core-checkbox@1.1.11) (2019-03-20)
 
 **Note:** Version bump only for package @tds/core-checkbox
-
-
-
-
 
 ## [1.1.10](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.9...@tds/core-checkbox@1.1.10) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-checkbox
 
-
-
-
-
 ## [1.1.9](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.8...@tds/core-checkbox@1.1.9) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-checkbox
-
-
-
-
 
 ## [1.1.8](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.7...@tds/core-checkbox@1.1.8) (2019-03-15)
 
 **Note:** Version bump only for package @tds/core-checkbox
 
-
-
-
-
 ## [1.1.7](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.6...@tds/core-checkbox@1.1.7) (2019-03-11)
 
 **Note:** Version bump only for package @tds/core-checkbox
 
-
-
-
-
 ## [1.1.6](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.5...@tds/core-checkbox@1.1.6) (2019-03-05)
 
 **Note:** Version bump only for package @tds/core-checkbox
-
-
-
-
 
 ## [1.1.5](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@1.1.4...@tds/core-checkbox@1.1.5) (2019-02-20)
 

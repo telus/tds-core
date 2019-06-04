@@ -3,59 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [2.2.5](https://github.com/telus/tds/compare/@tds/shared-form-field@2.2.4...@tds/shared-form-field@2.2.5) (2019-05-13)
+## [2.2.6](https://github.com/telus/tds/compare/@tds/shared-form-field@2.2.5...@tds/shared-form-field@2.2.6) (2019-06-04)
 
 **Note:** Version bump only for package @tds/shared-form-field
 
+## [2.2.5](https://github.com/telus/tds/compare/@tds/shared-form-field@2.2.4...@tds/shared-form-field@2.2.5) (2019-05-13)
 
-
-
+**Note:** Version bump only for package @tds/shared-form-field
 
 ## [2.2.4](https://github.com/telus/tds/compare/@tds/shared-form-field@2.2.3...@tds/shared-form-field@2.2.4) (2019-05-01)
 
 **Note:** Version bump only for package @tds/shared-form-field
 
-
-
-
-
 ## [2.2.3](https://github.com/telus/tds/compare/@tds/shared-form-field@2.2.2...@tds/shared-form-field@2.2.3) (2019-04-23)
 
 **Note:** Version bump only for package @tds/shared-form-field
-
-
-
-
 
 ## [2.2.2](https://github.com/telus/tds/compare/@tds/shared-form-field@2.2.1...@tds/shared-form-field@2.2.2) (2019-04-22)
 
 **Note:** Version bump only for package @tds/shared-form-field
 
-
-
-
-
 ## [2.2.1](https://github.com/telus/tds/compare/@tds/shared-form-field@2.2.0...@tds/shared-form-field@2.2.1) (2019-04-11)
-
 
 ### Bug Fixes
 
-* **shared-form-field:** use className prop for Box ([11eff50](https://github.com/telus/tds/commit/11eff50))
-
-
-
-
+- **shared-form-field:** use className prop for Box ([11eff50](https://github.com/telus/tds/commit/11eff50))
 
 # [2.2.0](https://github.com/telus/tds/compare/@tds/shared-form-field@2.1.9...@tds/shared-form-field@2.2.0) (2019-04-08)
 
-
 ### Features
 
-* **shared-form-field:** make package public ([3e6155e](https://github.com/telus/tds/commit/3e6155e))
-
-
-
-
+- **shared-form-field:** make package public ([3e6155e](https://github.com/telus/tds/commit/3e6155e))
 
 ## [2.1.9](https://github.com/telus/tds-core/compare/@tds/shared-form-field@2.1.8...@tds/shared-form-field@2.1.9) (2019-04-04)
 

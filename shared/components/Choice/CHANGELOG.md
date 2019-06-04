@@ -3,126 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.1.17](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.16...@tds/shared-choice@1.1.17) (2019-05-22)
+## [1.1.18](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.17...@tds/shared-choice@1.1.18) (2019-06-04)
 
+**Note:** Version bump only for package @tds/shared-choice
+
+## [1.1.17](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.16...@tds/shared-choice@1.1.17) (2019-05-22)
 
 ### Bug Fixes
 
-* **shared-choice:** show full label width when error is active on ie 11 ([61498e1](https://github.com/telus/tds-core/commit/61498e1))
-
-
-
-
+- **shared-choice:** show full label width when error is active on ie 11 ([61498e1](https://github.com/telus/tds-core/commit/61498e1))
 
 ## [1.1.16](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.15...@tds/shared-choice@1.1.16) (2019-05-01)
 
 **Note:** Version bump only for package @tds/shared-choice
 
-
-
-
-
 ## [1.1.15](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.14...@tds/shared-choice@1.1.15) (2019-04-29)
 
 **Note:** Version bump only for package @tds/shared-choice
-
-
-
-
 
 ## [1.1.14](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.13...@tds/shared-choice@1.1.14) (2019-04-23)
 
 **Note:** Version bump only for package @tds/shared-choice
 
-
-
-
-
 ## [1.1.13](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.12...@tds/shared-choice@1.1.13) (2019-04-22)
 
 **Note:** Version bump only for package @tds/shared-choice
 
-
-
-
-
 ## [1.1.12](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.11...@tds/shared-choice@1.1.12) (2019-04-11)
-
 
 ### Bug Fixes
 
-* **shared-choice:** use className prop for Box ([57f0130](https://github.com/telus/tds-core/commit/57f0130))
-
-
-
-
+- **shared-choice:** use className prop for Box ([57f0130](https://github.com/telus/tds-core/commit/57f0130))
 
 ## [1.1.11](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.10...@tds/shared-choice@1.1.11) (2019-04-11)
 
-
 ### Bug Fixes
 
-* **shared-choice:** add hover effect to label ([e7fffb2](https://github.com/telus/tds-core/commit/e7fffb2))
-
-
-
-
+- **shared-choice:** add hover effect to label ([e7fffb2](https://github.com/telus/tds-core/commit/e7fffb2))
 
 ## [1.1.10](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.9...@tds/shared-choice@1.1.10) (2019-03-28)
 
 **Note:** Version bump only for package @tds/shared-choice
 
-
-
-
-
 ## [1.1.9](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.8...@tds/shared-choice@1.1.9) (2019-03-20)
 
 **Note:** Version bump only for package @tds/shared-choice
-
-
-
-
 
 ## [1.1.8](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.7...@tds/shared-choice@1.1.8) (2019-03-20)
 
 **Note:** Version bump only for package @tds/shared-choice
 
-
-
-
-
 ## [1.1.7](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.6...@tds/shared-choice@1.1.7) (2019-03-18)
 
 **Note:** Version bump only for package @tds/shared-choice
-
-
-
-
 
 ## [1.1.6](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.5...@tds/shared-choice@1.1.6) (2019-03-18)
 
 **Note:** Version bump only for package @tds/shared-choice
 
-
-
-
-
 ## [1.1.5](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.4...@tds/shared-choice@1.1.5) (2019-03-11)
 
 **Note:** Version bump only for package @tds/shared-choice
 
-
-
-
-
 ## [1.1.4](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.3...@tds/shared-choice@1.1.4) (2019-03-05)
 
 **Note:** Version bump only for package @tds/shared-choice
-
-
-
-
 
 ## [1.1.3](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.2...@tds/shared-choice@1.1.3) (2019-02-20)
 

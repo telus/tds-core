@@ -3,157 +3,87 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [2.0.6](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.5...@tds/core-chevron-link@2.0.6) (2019-05-13)
+## [2.0.7](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.6...@tds/core-chevron-link@2.0.7) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
+## [2.0.6](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.5...@tds/core-chevron-link@2.0.6) (2019-05-13)
 
-
-
+**Note:** Version bump only for package @tds/core-chevron-link
 
 ## [2.0.5](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.4...@tds/core-chevron-link@2.0.5) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
-
-
-
-
 ## [2.0.4](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.3...@tds/core-chevron-link@2.0.4) (2019-04-23)
 
 **Note:** Version bump only for package @tds/core-chevron-link
-
-
-
-
 
 ## [2.0.3](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.2...@tds/core-chevron-link@2.0.3) (2019-04-22)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
-
-
-
-
 ## [2.0.2](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.1...@tds/core-chevron-link@2.0.2) (2019-04-16)
 
 **Note:** Version bump only for package @tds/core-chevron-link
-
-
-
-
 
 ## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.0...@tds/core-chevron-link@2.0.1) (2019-04-11)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
-
-
-
-
 # [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.14...@tds/core-chevron-link@2.0.0) (2019-04-08)
-
 
 ### Features
 
-* **core-chevron-link:** upgrade to styled-components ([54750bf](https://github.com/telusdigital/tds/commit/54750bf))
-
+- **core-chevron-link:** upgrade to styled-components ([54750bf](https://github.com/telusdigital/tds/commit/54750bf))
 
 ### BREAKING CHANGES
 
-* **core-chevron-link:** upgrade to styled-components
-
-
-
-
+- **core-chevron-link:** upgrade to styled-components
 
 ## [1.1.14](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.13...@tds/core-chevron-link@1.1.14) (2019-04-04)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
-
-
-
-
 ## [1.1.13](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.12...@tds/core-chevron-link@1.1.13) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-chevron-link
-
-
-
-
 
 ## [1.1.12](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.11...@tds/core-chevron-link@1.1.12) (2019-03-28)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
-
-
-
-
 ## [1.1.11](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.10...@tds/core-chevron-link@1.1.11) (2019-03-20)
 
 **Note:** Version bump only for package @tds/core-chevron-link
-
-
-
-
 
 ## [1.1.10](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.9...@tds/core-chevron-link@1.1.10) (2019-03-20)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
-
-
-
-
 ## [1.1.9](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.8...@tds/core-chevron-link@1.1.9) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-chevron-link
-
-
-
-
 
 ## [1.1.8](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.7...@tds/core-chevron-link@1.1.8) (2019-03-18)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
-
-
-
-
 ## [1.1.7](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.6...@tds/core-chevron-link@1.1.7) (2019-03-15)
 
 **Note:** Version bump only for package @tds/core-chevron-link
-
-
-
-
 
 ## [1.1.6](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.5...@tds/core-chevron-link@1.1.6) (2019-03-11)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
-
-
-
-
 ## [1.1.5](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.4...@tds/core-chevron-link@1.1.5) (2019-03-05)
 
 **Note:** Version bump only for package @tds/core-chevron-link
 
-
-
-
-
 ## [1.1.4](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.3...@tds/core-chevron-link@1.1.4) (2019-02-06)
 
 **Note:** Version bump only for package @tds/core-chevron-link
-
-
-
-
 
 ## [1.1.3](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@1.1.2...@tds/core-chevron-link@1.1.3) (2019-01-10)
 

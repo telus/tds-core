@@ -3,96 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.2.14](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.13...@tds/shared-base-button@1.2.14) (2019-05-13)
+## [1.2.15](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.14...@tds/shared-base-button@1.2.15) (2019-06-04)
 
 **Note:** Version bump only for package @tds/shared-base-button
 
+## [1.2.14](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.13...@tds/shared-base-button@1.2.14) (2019-05-13)
 
-
-
+**Note:** Version bump only for package @tds/shared-base-button
 
 ## [1.2.13](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.12...@tds/shared-base-button@1.2.13) (2019-05-01)
 
 **Note:** Version bump only for package @tds/shared-base-button
 
-
-
-
-
 ## [1.2.12](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.11...@tds/shared-base-button@1.2.12) (2019-04-04)
 
 **Note:** Version bump only for package @tds/shared-base-button
-
-
-
-
 
 ## [1.2.11](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.10...@tds/shared-base-button@1.2.11) (2019-03-28)
 
 **Note:** Version bump only for package @tds/shared-base-button
 
-
-
-
-
 ## [1.2.10](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.9...@tds/shared-base-button@1.2.10) (2019-03-28)
 
 **Note:** Version bump only for package @tds/shared-base-button
-
-
-
-
 
 ## [1.2.9](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.8...@tds/shared-base-button@1.2.9) (2019-03-20)
 
 **Note:** Version bump only for package @tds/shared-base-button
 
-
-
-
-
 ## [1.2.8](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.7...@tds/shared-base-button@1.2.8) (2019-03-20)
 
 **Note:** Version bump only for package @tds/shared-base-button
-
-
-
-
 
 ## [1.2.7](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.6...@tds/shared-base-button@1.2.7) (2019-03-18)
 
 **Note:** Version bump only for package @tds/shared-base-button
 
-
-
-
-
 ## [1.2.6](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.5...@tds/shared-base-button@1.2.6) (2019-03-11)
 
 **Note:** Version bump only for package @tds/shared-base-button
-
-
-
-
 
 ## [1.2.5](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.4...@tds/shared-base-button@1.2.5) (2019-03-05)
 
 **Note:** Version bump only for package @tds/shared-base-button
 
-
-
-
-
 ## [1.2.4](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.3...@tds/shared-base-button@1.2.4) (2019-02-06)
-
 
 ### Bug Fixes
 
-* **shared-base-button:** add missing deps ([c3526b6](https://github.com/telus/tds-core/commit/c3526b6))
-
-
-
-
+- **shared-base-button:** add missing deps ([c3526b6](https://github.com/telus/tds-core/commit/c3526b6))
 
 ## [1.2.3](https://github.com/telus/tds-core/compare/@tds/shared-base-button@1.2.2...@tds/shared-base-button@1.2.3) (2019-01-10)
 
