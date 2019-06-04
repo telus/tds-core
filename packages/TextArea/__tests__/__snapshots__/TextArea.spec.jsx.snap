@@ -1,6 +1,379 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TextArea disabling can be disabled 1`] = `
+.c0 {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 208px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  -moz-appearance: textfield;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+
+.c0::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c0::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c0:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c0::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.c0:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+<textarea
+  aria-invalid={false}
+  className="c0"
+  id="the-textarea"
+  onBlur={[Function]}
+  onFocus={[Function]}
+/>
+`;
+
+exports[`TextArea feedback states ensures that the contents do not overlap the icon 1`] = `
+.c0 {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 208px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  -moz-appearance: textfield;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+
+.c0::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c0::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c0:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c0::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c0::-webkit-inner-spin-button,
+.c0::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.c0:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+.c0:not(:focus) {
+  border-color: #248700;
+}
+
+<textarea
+  aria-invalid={false}
+  className="c0"
+  id="the-textarea"
+  onBlur={[Function]}
+  onFocus={[Function]}
+/>
+`;
+
+exports[`TextArea label can have a short hint 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<label
+  htmlFor="the-textarea"
+>
+  <Styled(Box)
+    between={2}
+    inline={true}
+    tag="span"
+  >
+    <StyledComponent
+      between={2}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bxivhb",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "align-items: center;",
+            ],
+          },
+          "displayName": "Styled(Box)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bxivhb",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={true}
+      tag="span"
+    >
+      <Box
+        between={2}
+        className="c0"
+        inline={true}
+        tag="span"
+      >
+        <span
+          className="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
+        >
+          <Text
+            block={false}
+            bold={true}
+            invert={false}
+            size="medium"
+          >
+            <span
+              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+            >
+              The textarea
+            </span>
+          </Text>
+          <Text
+            block={false}
+            bold={false}
+            id="the-textarea_hint"
+            invert={false}
+            size="small"
+          >
+            <span
+              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+              id="the-textarea_hint"
+            >
+              The short hint
+            </span>
+          </Text>
+        </span>
+      </Box>
+    </StyledComponent>
+  </Styled(Box)>
+</label>
+`;
+
 exports[`TextArea renders 1`] = `
+.c1 {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 208px;
+  position: relative;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 208px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  -moz-appearance: textfield;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+
+.c2::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.c2:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+.c3 {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
 <div
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
@@ -11,7 +384,7 @@ exports[`TextArea renders 1`] = `
       for="the-textarea"
     >
       <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz TDS_FormField-modules__alignCenter___3y2Mj"
+        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
       >
         <span
           class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
@@ -22,21 +395,130 @@ exports[`TextArea renders 1`] = `
     </label>
   </div>
   <div
-    class="relative preventWidthResizing"
+    class="c1"
   >
     <textarea
       aria-invalid="false"
-      class="TDS_FormField-modules__default___3LtXb TDS_FormField-modules__formField___29WmQ TDS_Borders-modules__thin___1JHOl TDS_Borders-modules__rounded___3df1Q TDS_Forms-modules__font___g7OGX TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8 TDS_FormField-modules__defaultBgColor___NByyE TDS_FormField-modules__defaultBoxShadow___21E8t withoutFeedbackIcon"
+      class="c2"
       id="the-textarea"
     />
     <div
-      class="feedbackIconPosition"
+      class="c3"
     />
   </div>
 </div>
 `;
 
 exports[`TextArea renders with a feedback state and icon 1`] = `
+.c4 {
+  line-height: 1;
+}
+
+.c1 {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 208px;
+  position: relative;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 208px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  -moz-appearance: textfield;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+
+.c2::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.c2:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+.c2:not(:focus) {
+  border-color: #c12335;
+}
+
+.c3 {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
 <div
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
@@ -47,7 +529,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
       for="the-textarea"
     >
       <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz TDS_FormField-modules__alignCenter___3y2Mj"
+        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
       >
         <span
           class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
@@ -58,21 +540,21 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
     </label>
   </div>
   <div
-    class="relative preventWidthResizing"
+    class="c1"
   >
     <textarea
       aria-invalid="true"
-      class="TDS_FormField-modules__error___2pMXQ TDS_FormField-modules__formField___29WmQ TDS_Borders-modules__thin___1JHOl TDS_Borders-modules__rounded___3df1Q TDS_Forms-modules__font___g7OGX TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8 TDS_FormField-modules__defaultBgColor___NByyE TDS_FormField-modules__defaultBoxShadow___21E8t withFeedbackIcon"
+      class="c2"
       id="the-textarea"
     />
     <div
-      class="feedbackIconPosition"
+      class="c3"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="TDS_IconWrapper-modules__fixLineHeight___3tqIl"
+          class="c4"
         >
           <i
             aria-label="The value of this input field is invalid."

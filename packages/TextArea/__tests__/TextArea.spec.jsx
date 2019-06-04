@@ -60,7 +60,7 @@ describe('TextArea', () => {
     it('can have a short hint', () => {
       const { label } = doMount({ hint: 'The short hint' })
 
-      expect(label).toContainReact(<Text size="small">The short hint</Text>)
+      expect(label).toMatchSnapshot()
     })
   })
 
@@ -102,13 +102,14 @@ describe('TextArea', () => {
       let findTextAreaElement = doMount().findTextAreaElement
       expect(findTextAreaElement()).toHaveValue(undefined)
 
-      findTextAreaElement = doMount({ value: 'some value' }).findTextAreaElement
+      findTextAreaElement = doMount({ value: 'some value', readOnly: true }).findTextAreaElement
       expect(findTextAreaElement()).toHaveValue('some value')
     })
 
     it('has a value that can be changed', () => {
-      const { changeValueTo, findTextAreaElement } = doMount({ value: 'initial value' })
-      changeValueTo('new value')
+      const { findTextAreaElement, textarea } = doMount({ value: 'initial value', readOnly: true })
+
+      textarea.setProps({ value: 'new value', readOnly: true })
 
       expect(findTextAreaElement()).toHaveValue('new value')
     })
@@ -116,17 +117,16 @@ describe('TextArea', () => {
     it('will notify when its value changes', () => {
       const onChangeMock = jest.fn()
 
-      const { changeValueTo, findTextAreaElement } = doMount({ onChange: onChangeMock })
+      const { changeValueTo } = doMount({ onChange: onChangeMock })
       changeValueTo('new value')
 
       expect(onChangeMock).toHaveBeenCalledWith(
         expect.objectContaining({ target: { value: 'new value' } })
       )
-      expect(findTextAreaElement()).toHaveValue('new value')
     })
 
     it('can receive a new value from a parent component', () => {
-      const { textarea, findTextAreaElement } = doMount({ value: 'initial value' })
+      const { textarea, findTextAreaElement } = doMount({ value: 'initial value', readOnly: true })
 
       textarea.setProps({ value: 'new value' })
 
@@ -173,15 +173,14 @@ describe('TextArea', () => {
     it('ensures that the contents do not overlap the icon', () => {
       const { findTextAreaElement } = doMount({ feedback: 'success' })
 
-      expect(findTextAreaElement()).toHaveClassName('withFeedbackIcon')
+      expect(findTextAreaElement()).toMatchSnapshot()
     })
   })
 
   describe('disabling', () => {
     it('can be disabled', () => {
       let findTextAreaElement = doMount().findTextAreaElement
-      expect(findTextAreaElement()).not.toHaveClassName('disabled')
-      expect(findTextAreaElement()).not.toBeDisabled()
+      expect(findTextAreaElement()).toMatchSnapshot()
 
       findTextAreaElement = doMount({ disabled: true }).findTextAreaElement
       expect(findTextAreaElement()).toHaveProp('disabled')
@@ -196,7 +195,11 @@ describe('TextArea', () => {
   })
 
   it('can have an error message', () => {
-    const { textarea } = doMount({ id: 'some-id', error: 'Oh no a terrible error!' })
+    const { textarea } = doMount({
+      id: 'some-id',
+      error: 'Oh no a terrible error!',
+      feedback: 'error',
+    })
 
     expect(textarea).toContainReact(
       <InputFeedback id="some-id_error-message" feedback="error">
@@ -236,6 +239,7 @@ describe('TextArea', () => {
         value: 'current value',
         feedback: 'error',
         helper,
+        readOnly: true,
       })
 
       expect(helper).toHaveBeenCalledWith('error', 'current value')
@@ -268,6 +272,7 @@ describe('TextArea', () => {
       const { findTextAreaElement, findHelper } = doMount({
         id: 'some-field-id',
         error: 'An error message',
+        feedback: 'error',
       })
 
       expect(findTextAreaElement()).toHaveProp('aria-describedby', 'some-field-id_error-message')
