@@ -61,7 +61,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
         return contentWrapper.current.offsetHeight
       })
     }
-  })
+  }, [contentWrapperHeight])
 
   return (
     <div {...safeRest(rest)}>

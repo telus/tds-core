@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState, useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styled, { createGlobalStyle } from 'styled-components'
 
@@ -123,35 +123,41 @@ const Footnote = props => {
 
   const prevProps = usePrevious(props)
 
-  const closeFootnote = e => {
-    onClose(e)
-  }
+  const closeFootnote = useCallback(
+    e => {
+      onClose(e)
+    },
+    [onClose]
+  )
 
   // listen for ESCAPE, close button clicks, and clicks outside of the Footnote. Call onClose.
-  const handleClose = e => {
-    if (e.type === 'keydown') {
-      const key = e.keyCode || e.key
-      if (key === 'Escape' || key === 27) {
+  const handleClose = useCallback(
+    e => {
+      if (e.type === 'keydown') {
+        const key = e.keyCode || e.key
+        if (key === 'Escape' || key === 27) {
+          closeFootnote(e)
+        }
+      } else if (
+        e.type === 'click' &&
+        (footnoteRef &&
+          e.target &&
+          !footnoteRef.current.contains(e.target) &&
+          e.target.getAttribute('data-tds-id') !== 'footnote-link')
+      ) {
+        closeFootnote(e)
+      } else if (
+        e.type === 'touchstart' &&
+        (footnoteRef &&
+          e.touches[0].target &&
+          !footnoteRef.current.contains(e.touches[0].target) &&
+          e.touches[0].target.getAttribute('data-tds-id') !== 'footnote-link')
+      ) {
         closeFootnote(e)
       }
-    } else if (
-      e.type === 'click' &&
-      (footnoteRef &&
-        e.target &&
-        !footnoteRef.current.contains(e.target) &&
-        e.target.getAttribute('data-tds-id') !== 'footnote-link')
-    ) {
-      closeFootnote(e)
-    } else if (
-      e.type === 'touchstart' &&
-      (footnoteRef &&
-        e.touches[0].target &&
-        !footnoteRef.current.contains(e.touches[0].target) &&
-        e.touches[0].target.getAttribute('data-tds-id') !== 'footnote-link')
-    ) {
-      closeFootnote(e)
-    }
-  }
+    },
+    [closeFootnote]
+  )
 
   const changeHeight = () => {
     const oldHeight = listRef.current.offsetHeight
@@ -206,7 +212,7 @@ const Footnote = props => {
         window.removeEventListener('touchmove', preventDefault)
       }
     }
-  }, [isOpen])
+  }, [handleClose, isOpen])
 
   useEffect(() => {
     if (
@@ -222,7 +228,7 @@ const Footnote = props => {
     } else {
       setData({ content, number })
     }
-  }, [content, number])
+  }, [content, isOpen, isTextVisible, number, prevProps])
 
   useEffect(() => {
     if (!isOpen) {
