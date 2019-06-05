@@ -5,11 +5,11 @@
 - A Spinner is most appropriate for providing feedback for actions that last between 2 and 10 seconds
 - Actions that take longer than 10 seconds ideally provide feedback with relative progress, such as a progress bar
 - Recommend not to use for full page loading
-- Label should be short and concise. Spinner label should accurately explain the state of the requested action along with relevant items being loaded, “Loading page content”, “Logging in”, “Processing payment”
+- Label should be short and concise. Spinner label should accurately explain the state of the requested action along with relevant items being loaded, "Loading page content", "Logging in", "Processing payment"
 - Use the small spinner when applied on a button or other small interactive elements such as toggles or links
-  - When overlaying buttons, the spinner’s colour should match the button’s colour (green spinner for green buttons, and purple spinner for purple buttons)
+  - When overlaying buttons, the spinner’s colour should match the button's colour (green spinner for green buttons, and purple spinner for purple buttons)
 - Use the large spinner when affecting an entire web page or content block, whose content has not finished loading, such as paginated content
-- Both the small and large spinner have an overlay background to visually indicate content behind it is inaccessible
+- Both the small and large spinner have an overlay background to visually indicate content behind it is inaccessible.
   Use the standalone spinner (small/large) as an interstitial placeholder for loading content
 
 ### Minimal usage
