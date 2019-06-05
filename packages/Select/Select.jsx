@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import Box from '@tds/core-box'
 import DecorativeIcon from '@tds/core-decorative-icon'
-import { FeedbackIcon } from '@tds/shared-form-field'
+import { FeedbackIcon } from '@tds/core-input'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import { componentWithName } from '@tds/util-prop-types'

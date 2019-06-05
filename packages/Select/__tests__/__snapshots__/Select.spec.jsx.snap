@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select can have an error message 1`] = `
+.c5 {
+  line-height: 1;
+}
+
 .c2 {
   background-color: #fff;
   position: relative;
@@ -109,7 +113,7 @@ exports[`Select can have an error message 1`] = `
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   line-height: 1;
 }
 
@@ -176,7 +180,7 @@ exports[`Select can have an error message 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-htpNat",
+                      "componentId": "sc-ifAKCX",
                       "isStatic": true,
                       "lastClassName": "c0",
                       "rules": Array [
@@ -186,7 +190,7 @@ exports[`Select can have an error message 1`] = `
                     "displayName": "Styled(Box)",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-htpNat",
+                    "styledComponentId": "sc-ifAKCX",
                     "target": [Function],
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -277,7 +281,7 @@ exports[`Select can have an error message 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bxivhb",
+                "componentId": "sc-EHOje",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -287,7 +291,7 @@ exports[`Select can have an error message 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bxivhb",
+              "styledComponentId": "sc-EHOje",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -440,7 +444,7 @@ exports[`Select can have an error message 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
+                            "componentId": "sc-bxivhb",
                             "isStatic": true,
                             "lastClassName": "c4",
                             "rules": Array [
@@ -454,7 +458,7 @@ exports[`Select can have an error message 1`] = `
                           "displayName": "Styled(Box)",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
+                          "styledComponentId": "sc-bxivhb",
                           "target": [Function],
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -506,28 +510,56 @@ exports[`Select can have an error message 1`] = `
                                     }
                                   }
                                 >
-                                  <div
-                                    className="TDS_IconWrapper-modules__fixLineHeight___3tqIl"
-                                  >
-                                    <StandaloneIcon
-                                      a11yText="The value of this input field is invalid."
-                                      size={16}
-                                      symbol="exclamationPointCircle"
-                                      variant="error"
+                                  <FeedbackIcon__StyledIcon>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "FeedbackIcon__StyledIcon-yxz8rh-0",
+                                            "isStatic": true,
+                                            "lastClassName": "c5",
+                                            "rules": Array [
+                                              "line-height: 1;",
+                                            ],
+                                          },
+                                          "displayName": "FeedbackIcon__StyledIcon",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "FeedbackIcon__StyledIcon-yxz8rh-0",
+                                          "target": "div",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
                                     >
-                                      <Icon
-                                        aria-label="The value of this input field is invalid."
-                                        size={16}
-                                        symbol="exclamationPointCircle"
-                                        variant="error"
+                                      <div
+                                        className="c5"
                                       >
-                                        <i
-                                          aria-label="The value of this input field is invalid."
-                                          className="TDS_Icon-modules__iconExclamationPointCircle___1HgRN TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
-                                        />
-                                      </Icon>
-                                    </StandaloneIcon>
-                                  </div>
+                                        <StandaloneIcon
+                                          a11yText="The value of this input field is invalid."
+                                          size={16}
+                                          symbol="exclamationPointCircle"
+                                          variant="error"
+                                        >
+                                          <Icon
+                                            aria-label="The value of this input field is invalid."
+                                            size={16}
+                                            symbol="exclamationPointCircle"
+                                            variant="error"
+                                          >
+                                            <i
+                                              aria-label="The value of this input field is invalid."
+                                              className="TDS_Icon-modules__iconExclamationPointCircle___1HgRN TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
+                                            />
+                                          </Icon>
+                                        </StandaloneIcon>
+                                      </div>
+                                    </StyledComponent>
+                                  </FeedbackIcon__StyledIcon>
                                 </div>
                               </Transition>
                             </Fade>
@@ -541,7 +573,7 @@ exports[`Select can have an error message 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "Select__IconLineFix-sc-1kajzpi-2",
                                     "isStatic": true,
-                                    "lastClassName": "c5",
+                                    "lastClassName": "c6",
                                     "rules": Array [
                                       "line-height: 1;",
                                     ],
@@ -559,7 +591,7 @@ exports[`Select can have an error message 1`] = `
                               forwardedRef={null}
                             >
                               <div
-                                className="c5"
+                                className="c6"
                               >
                                 <DecorativeIcon
                                   size={16}
@@ -625,7 +657,7 @@ exports[`Select label can have a short hint 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "sc-ifAKCX",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -635,7 +667,7 @@ exports[`Select label can have a short hint 1`] = `
           "displayName": "Styled(Box)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "sc-ifAKCX",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -713,7 +745,7 @@ exports[`Select label must have a label 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "sc-ifAKCX",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -723,7 +755,7 @@ exports[`Select label must have a label 1`] = `
           "displayName": "Styled(Box)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "sc-ifAKCX",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -949,6 +981,10 @@ exports[`Select renders 1`] = `
 `;
 
 exports[`Select renders with a feedback state and icon 1`] = `
+.c5 {
+  line-height: 1;
+}
+
 .c2 {
   background-color: #fff;
   position: relative;
@@ -1057,7 +1093,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   line-height: 1;
 }
 
@@ -1122,7 +1158,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
           style="transition:opacity 100ms ease-in-out;opacity:1"
         >
           <div
-            class="TDS_IconWrapper-modules__fixLineHeight___3tqIl"
+            class="c5"
           >
             <i
               aria-label="The value of this input field is invalid."
@@ -1131,7 +1167,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
           </div>
         </div>
         <div
-          class="c5"
+          class="c6"
         >
           <i
             aria-hidden="true"
