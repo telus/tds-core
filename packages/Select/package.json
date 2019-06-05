@@ -30,7 +30,6 @@
     "@tds/core-colours": "^1.1.2",
     "@tds/core-input": "^3.0.0",
     "@tds/core-input-feedback": "^1.0.12",
-    "@tds/shared-form-field": "^2.2.5",
     "@tds/core-paragraph": "^1.0.11",
     "@tds/shared-styles": "^1.2.0",
     "@tds/core-text": "^1.0.11",
