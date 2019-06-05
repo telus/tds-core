@@ -15,15 +15,6 @@ import styles from './Spinner.modules.scss'
  * @version ./package.json
  */
 
-const spinner = React.createRef()
-const spinnerOverlay = React.createRef()
-
-const preventScroll = e => {
-  if (spinnerOverlay.current.contains(e.targetTouches[0].target)) {
-    e.preventDefault()
-  }
-}
-
 const Spinner = ({
   spinning,
   label,
@@ -37,6 +28,14 @@ const Spinner = ({
   children,
   ...rest
 }) => {
+  let spinnerOverlayRef = null
+
+  const preventScroll = e => {
+    if (spinnerOverlayRef.current.contains(e.targetTouches[0].target)) {
+      e.preventDefault()
+    }
+  }
+
   if (tip) {
     deprecate('core-spinner', 'The `tip` prop is deprecated. Please use the `label` prop.')
   }
@@ -77,7 +76,13 @@ const Spinner = ({
 
   if (fullScreen) {
     return (
-      <div className={styles.fullscreenOverlay} ref={spinnerOverlay} data-testid="overlay">
+      <div
+        className={styles.fullscreenOverlay}
+        ref={el => {
+          spinnerOverlayRef = el
+        }}
+        data-testid="overlay"
+      >
         <div
           className={joinClassNames(
             positionStyles.relative,
@@ -98,7 +103,6 @@ const Spinner = ({
         className={joinClassNames(positionStyles.relative, inline && styles.inline)}
         data-testid="container"
         aria-live="assertive"
-        ref={spinner}
       >
         {spinnerSvg({ overlay: true })}
 
