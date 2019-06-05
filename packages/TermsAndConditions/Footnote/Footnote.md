@@ -29,7 +29,12 @@ class FootnoteExample extends React.Component {
   }
 
   handleFootnoteLinkClick(number, content, returnRef) {
-    this.setState({ number, content, showFootnote: true, returnRef })
+    this.setState({
+      number,
+      content,
+      showFootnote: true,
+      returnRef: Object.assign({}, returnRef),
+    })
   }
 
   render() {
