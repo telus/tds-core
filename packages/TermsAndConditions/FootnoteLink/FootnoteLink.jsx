@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -18,17 +18,13 @@ const StyledFootnoteLink = styled.button({
 
 const FootnoteLink = ({ number, onClick, copy }) => {
   let numbers = []
-  const refs = []
 
   if (!Array.isArray(number)) {
     numbers[0] = number
   } else {
     numbers = number
   }
-
-  numbers.forEach(() => {
-    refs.push(useRef(null))
-  })
+  const refs = numbers.map(() => React.createRef())
 
   const handleClick = index => {
     onClick(numbers[index], refs[index])
