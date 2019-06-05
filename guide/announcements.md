@@ -4,6 +4,78 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
+## May 2019
+
+### New community component ✨
+
+**PreviewCard**
+
+The PreviewCard component creates the appearance of a page snippet, and can be used in a list format.
+[PreviewCard docs](https://tds.telus.com/community/index.html#previewcard)
+
+### Community component updates
+
+**Testimonial 2.0.0**
+
+Testimonial component for displaying testimonial in a standalone, pre-styled component.
+[Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-testimonial%402.0.0)
+
+### Features 🎁
+
+**Video 1.1.0**
+
+Video has been released with better support for smaller player sizes and a new crossOrigin prop. 
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-video%401.1.0)
+
+### Fixes 🔧
+
+**HairlineDivider 1.0.7**
+
+Hairline divider no longer disappears when you zoom out in Chrome [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-hairline-divider%401.0.7)
+
+**Checkbox 1.1.22**
+
+Labels now render correctly when in the error state in IE11 [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%401.1.22)
+
+**Radio 1.1.20**
+
+Labels now render correctly when in the error state in IE11 [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-radio%401.2.20)
+
+**ExpandCollapse 1.2.23**
+
+Expand collapse now has a reduced size [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-expand-collapse%401.2.23)
+
+**ButtonLink 2.0.9**
+
+Label text is now centered in Mobile Safari on iOS 10 [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-button-link%402.0.9)
+
+**Button 2.0.7**
+
+Label text is now centered in Mobile Safari on iOS 10 [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-button%402.0.7)
+
+### Styled Components upgrades 💅
+
+**Input 3.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%403.0.0)
+
+**Checkbox 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%402.0.0)
+
+**Radio 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-radio%402.0.0)
+
+**OrderedList 3.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-ordered-list%403.0.0)
+
+**ButtonGroup 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-button-group%402.0.0)
+
+
 ## April 2019
 
 ### New community component ✨
