@@ -15,113 +15,124 @@ import styles from './Spinner.modules.scss'
  * @version ./package.json
  */
 
-const Spinner = ({
-  spinning,
-  label,
-  dangerouslyHideVisibleLabel,
-  tip,
-  a11yLabel,
-  inline,
-  size,
-  variant,
-  fullScreen,
-  children,
-  ...rest
-}) => {
-  let spinnerOverlayRef = null
+class Spinner extends React.PureComponent {
+  constructor() {
+    super()
+    this.spinnerOverlayRef = null
+  }
 
-  const preventScroll = e => {
-    if (spinnerOverlayRef.current.contains(e.targetTouches[0].target)) {
+  componentDidUpdate() {
+    if (this.props.fullScreen && this.props.spinning) {
+      document.body.addEventListener('touchmove', this.preventScroll, { passive: false })
+      document.body.addEventListener('touchstart', this.preventScroll, { passive: false })
+
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.removeEventListener('touchmove', this.preventScroll)
+      document.body.removeEventListener('touchstart', this.preventScroll)
+      document.body.style.overflow = 'auto'
+    }
+  }
+
+  preventScroll = e => {
+    if (this.spinnerOverlayRef.current.contains(e.targetTouches[0].target)) {
       e.preventDefault()
     }
   }
 
-  if (tip) {
-    deprecate('core-spinner', 'The `tip` prop is deprecated. Please use the `label` prop.')
-  }
-  if (a11yLabel && label === undefined) {
-    deprecate('core-spinner', 'The `a11yLabel` prop is deprecated. Please use the `label` prop.')
-  }
+  render() {
+    const {
+      spinning,
+      label,
+      dangerouslyHideVisibleLabel,
+      tip,
+      a11yLabel,
+      inline,
+      size,
+      variant,
+      fullScreen,
+      children,
+      ...rest
+    } = this.props
 
-  if (size === 'large' && variant === 'secondary') {
-    warn(
-      'core-spinner',
-      'The Spinner should not use the `secondary` variant while `size` is set to `large`.'
+    if (tip) {
+      deprecate('core-spinner', 'The `tip` prop is deprecated. Please use the `label` prop.')
+    }
+    if (a11yLabel && label === undefined) {
+      deprecate('core-spinner', 'The `a11yLabel` prop is deprecated. Please use the `label` prop.')
+    }
+
+    if (size === 'large' && variant === 'secondary') {
+      warn(
+        'core-spinner',
+        'The Spinner should not use the `secondary` variant while `size` is set to `large`.'
+      )
+    }
+
+    if (!spinning) {
+      return children || null
+    }
+
+    const spinnerSvg = props => (
+      <SpinnerSvg
+        {...props}
+        tip={dangerouslyHideVisibleLabel || size === 'small' ? undefined : label || tip}
+        a11yLabel={label || a11yLabel}
+        size={size}
+        variant={variant}
+        {...safeRest(rest)}
+      />
     )
-  }
-  if (fullScreen && spinning) {
-    document.body.addEventListener('touchmove', preventScroll, { passive: false })
-    document.body.addEventListener('touchstart', preventScroll, { passive: false })
 
-    document.body.style.overflow = 'hidden'
-  } else {
-    document.body.removeEventListener('touchmove', preventScroll)
-    document.body.removeEventListener('touchstart', preventScroll)
-    document.body.style.overflow = 'auto'
-  }
-  if (!spinning) {
-    return children || null
-  }
-
-  const spinnerSvg = props => (
-    <SpinnerSvg
-      {...props}
-      tip={dangerouslyHideVisibleLabel || size === 'small' ? undefined : label || tip}
-      a11yLabel={label || a11yLabel}
-      size={size}
-      variant={variant}
-      {...safeRest(rest)}
-    />
-  )
-
-  if (fullScreen) {
-    return (
-      <div
-        className={styles.fullscreenOverlay}
-        ref={el => {
-          spinnerOverlayRef = el
-        }}
-        data-testid="overlay"
-      >
+    if (fullScreen) {
+      return (
         <div
-          className={joinClassNames(
-            positionStyles.relative,
-            inline && styles.inline,
-            fullScreen && positionStyles.centerVertically
-          )}
+          className={styles.fullscreenOverlay}
+          ref={el => {
+            this.spinnerOverlayRef = el
+          }}
+          data-testid="overlay"
+        >
+          <div
+            className={joinClassNames(
+              positionStyles.relative,
+              inline && styles.inline,
+              fullScreen && positionStyles.centerVertically
+            )}
+            data-testid="container"
+            aria-live="assertive"
+          >
+            {spinnerSvg({ overlay: true })}
+          </div>
+        </div>
+      )
+    }
+    if (children) {
+      return (
+        <div
+          className={joinClassNames(positionStyles.relative, inline && styles.inline)}
           data-testid="container"
           aria-live="assertive"
         >
           {spinnerSvg({ overlay: true })}
+
+          <div className={styles.overlay} data-testid="overlay" />
+
+          <div
+            onFocus={e => {
+              e.target.blur()
+            }}
+            aira-hidden="true"
+            className={styles.opaque}
+          >
+            {children}
+          </div>
         </div>
-      </div>
-    )
+      )
+    }
+
+    return spinnerSvg()
   }
-  if (children) {
-    return (
-      <div
-        className={joinClassNames(positionStyles.relative, inline && styles.inline)}
-        data-testid="container"
-        aria-live="assertive"
-      >
-        {spinnerSvg({ overlay: true })}
-
-        <div className={styles.overlay} data-testid="overlay" />
-
-        <div
-          onFocus={e => {
-            e.target.blur()
-          }}
-          aira-hidden="true"
-          className={styles.opaque}
-        >
-          {children}
-        </div>
-      </div>
-    )
-  }
-
-  return spinnerSvg()
 }
 
 Spinner.propTypes = {
