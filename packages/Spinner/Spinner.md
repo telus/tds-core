@@ -27,6 +27,8 @@
 
 #### `label` with `A11yContent`
 
+When using `<A11yContent />` inside the `label` prop, wrap your content with a `<span/>` or React Fragment.
+
 ```jsx
 <Spinner
   spinning

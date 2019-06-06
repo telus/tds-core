@@ -131,7 +131,12 @@ Spinner.propTypes = {
   spinning: PropTypes.bool,
   /**
    * Communicates a message to assistive technology while visible. This same message will appear underneath the spinner when its `size` is `large`.
-   * This prop will be required in the next major version. *Must be wrapped with a `span`*. In the future, it will be possible to use `React.Fragment`.
+   *
+   * When used with `A11yContent`, labe text should be wrapped by a `<span>` or `<React.Fragment>`.
+   *
+   * **Note**: This prop will be required in the next major version.
+   *
+   * @since 2.2.0
    */
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /**
