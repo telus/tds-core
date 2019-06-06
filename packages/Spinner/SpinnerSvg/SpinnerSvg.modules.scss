@@ -40,8 +40,16 @@ $zindex-popover: 1600;
   z-index: $zindex-popover;
 }
 
-.svg {
+.smallSvg {
   animation: spinner-rotate 1.8s linear infinite;
+  height: 3.125rem;
+  width: 3.125rem;
+}
+
+.largeSvg {
+  animation: spinner-rotate 1.8s linear infinite;
+  height: 6.25rem;
+  width: 6.25rem;
 }
 
 .primaryCircle {

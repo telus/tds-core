@@ -25,7 +25,7 @@ class SpinnerSvg extends React.Component {
       >
         <svg
           {...safeRest(rest)}
-          className={styles.svg}
+          className={styles[`${size}Svg`]}
           viewBox="0 0 100 100"
           width={size === 'large' ? '100' : '50'}
           height={size === 'large' ? '100' : '50'}
