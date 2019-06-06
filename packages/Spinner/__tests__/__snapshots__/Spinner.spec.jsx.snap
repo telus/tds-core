@@ -20,7 +20,7 @@ exports[`Spinner does not render a large secondary spinner 1`] = `
       <svg
         aria-labelledby="spinner-title-5"
         aria-live="assertive"
-        className="svg"
+        className="largeSvg"
         data-testid="svg"
         height="100"
         role="alert"
@@ -86,7 +86,7 @@ exports[`Spinner renders 1`] = `
   <svg
     aria-labelledby="spinner-title-1"
     aria-live="assertive"
-    class="svg"
+    class="largeSvg"
     data-testid="svg"
     height="100"
     role="alert"
@@ -141,7 +141,7 @@ exports[`Spinner renders a small secondary spinner 1`] = `
       <svg
         aria-labelledby="spinner-title-4"
         aria-live="assertive"
-        className="svg"
+        className="smallSvg"
         data-testid="svg"
         height="50"
         role="alert"
@@ -202,7 +202,7 @@ exports[`Spinner renders a small spinner 1`] = `
       <svg
         aria-labelledby="spinner-title-3"
         aria-live="assertive"
-        className="svg"
+        className="smallSvg"
         data-testid="svg"
         height="50"
         role="alert"
@@ -257,7 +257,7 @@ exports[`Spinner renders with children 1`] = `
     <svg
       aria-labelledby="spinner-title-2"
       aria-live="assertive"
-      class="svg"
+      class="largeSvg"
       data-testid="svg"
       height="100"
       role="alert"
