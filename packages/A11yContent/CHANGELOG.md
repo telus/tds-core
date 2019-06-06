@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-a11y-content@2.0.3...@tds/core-a11y-content@2.1.0) (2019-06-06)
+
+
+### Bug Fixes
+
+* **core-a11y-content:** change peerDependency ([bf38195](https://github.com/telusdigital/tds/commit/bf38195))
+
+
+### Features
+
+* **core-a11y-content:** enable rest props ([eae8b41](https://github.com/telusdigital/tds/commit/eae8b41))
+
+
+
+
+
 ## [2.0.3](https://github.com/telusdigital/tds/compare/@tds/core-a11y-content@2.0.2...@tds/core-a11y-content@2.0.3) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-a11y-content
