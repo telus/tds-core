@@ -148,7 +148,7 @@ const loadContent = () => {
         <Heading level="h2">Availability Check</Heading>
         <Paragraph>Ready to order? Click here to check if the product is available.</Paragraph>
       </Box>
-      ​<div>
+      <div>
         <Spinner label="Loading address" size="small" spinning={state.contentLoading} inline>
           <Button onClick={loadContent}>Check Availability</Button>
         </Spinner>
