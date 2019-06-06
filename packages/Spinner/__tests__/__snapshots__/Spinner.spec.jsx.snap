@@ -67,7 +67,7 @@ exports[`Spinner does not render a large secondary spinner 1`] = `
     data-testid="overlay"
   />
   <div
-    aira-hidden="true"
+    aria-hidden="true"
     className="opaque"
     onFocus={[Function]}
   >
@@ -172,7 +172,7 @@ exports[`Spinner renders a small secondary spinner 1`] = `
     data-testid="overlay"
   />
   <div
-    aira-hidden="true"
+    aria-hidden="true"
     className="opaque"
     onFocus={[Function]}
   >
@@ -233,7 +233,7 @@ exports[`Spinner renders a small spinner 1`] = `
     data-testid="overlay"
   />
   <div
-    aira-hidden="true"
+    aria-hidden="true"
     className="opaque"
     onFocus={[Function]}
   >
@@ -296,7 +296,7 @@ exports[`Spinner renders with children 1`] = `
     data-testid="overlay"
   />
   <div
-    aira-hidden="true"
+    aria-hidden="true"
     class="opaque"
   >
     <span>

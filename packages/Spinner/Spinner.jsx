@@ -122,7 +122,7 @@ class Spinner extends React.PureComponent {
             onFocus={e => {
               e.target.blur()
             }}
-            aira-hidden="true"
+            aria-hidden="true"
             className={styles.opaque}
           >
             {children}
