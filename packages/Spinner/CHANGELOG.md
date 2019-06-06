@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/telusdigital/tds/compare/@tds/core-spinner@2.2.0...@tds/core-spinner@2.2.1) (2019-06-06)
+
+
+### Bug Fixes
+
+* **core-spinner:** have spinner scale with document font size ([917e972](https://github.com/telusdigital/tds/commit/917e972))
+
+
+
+
+
 # [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-spinner@2.1.9...@tds/core-spinner@2.2.0) (2019-06-06)
 
 
