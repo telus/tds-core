@@ -101,7 +101,7 @@ const loadContent = () => {
           <Heading level="h2">Availability Check</Heading>
           <Paragraph>Ready to order? Click here to check if the product is available.</Paragraph>
         </Box>
-        ​<div>
+        <div>
           <Button onClick={loadContent}>Check Availability</Button>
         </div>
       </Box>
