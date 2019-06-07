@@ -52,6 +52,12 @@ class Notification extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    if (this.props.dismissible && this.props.onDismiss) {
+      this.props.onDismiss()
+    }
+  }
+
   adjustContentHeight = () => {
     if (this.contentWrapper.offsetHeight !== this.state.contentWrapperHeight) {
       this.setState({ contentWrapperHeight: this.contentWrapper.offsetHeight })
@@ -59,7 +65,14 @@ class Notification extends React.Component {
   }
 
   renderNotification() {
-    const { variant, dismissible, dismissibleA11yLabel, children, ...rest } = this.props
+    const {
+      variant,
+      dismissible,
+      dismissibleA11yLabel,
+      children,
+      onCloseClick,
+      ...rest
+    } = this.props
 
     return (
       <Box
@@ -93,7 +106,12 @@ class Notification extends React.Component {
                             size={24}
                             a11yText={dismissibleA11yLabel}
                             variant={variant === 'instructional' ? 'secondary' : undefined}
-                            onClick={() => this.setState(() => ({ dismissed: true }))}
+                            onClick={() => {
+                              this.setState(() => ({ dismissed: true }))
+                              if (onCloseClick) {
+                                onCloseClick()
+                              }
+                            }}
                           />
                         </div>
                       </Box>
@@ -109,13 +127,25 @@ class Notification extends React.Component {
   }
 
   render() {
-    if (
-      (this.props.dismissible || this.props.dismissibleA11yLabel) &&
-      !(this.props.dismissible && this.props.dismissibleA11yLabel)
-    ) {
+    const { dismissible, dismissibleA11yLabel, onCloseClick, onDismiss } = this.props
+    const dismissibleHasA11yLabel = dismissible && dismissibleA11yLabel
+
+    if ((dismissible || dismissibleA11yLabel) && !dismissibleHasA11yLabel) {
       warn(
         'Notification',
         'The props `dismissible` and `dismissibleA11yLabel` must be used together.'
+      )
+    }
+    if (onCloseClick && !dismissibleHasA11yLabel) {
+      warn(
+        'Notification',
+        'The props `onCloseClick` must be used together with `dismissible` and `dismissibleA11yLabel`.'
+      )
+    }
+    if (onDismiss && !dismissibleHasA11yLabel) {
+      warn(
+        'Notification',
+        'The props `onDismiss` must be used together with `dismissible` and `dismissibleA11yLabel`.'
       )
     }
     if (this.props.dismissible) {
@@ -163,6 +193,20 @@ Notification.propTypes = {
    */
   dismissibleA11yLabel: PropTypes.string,
   /**
+   * A callback function to be run on click of the dismissible icon.
+   * Requires `dismissible={true}`
+   *
+   * @since 1.3.0
+   */
+  onCloseClick: PropTypes.func,
+  /**
+   * A callback function to be run on when the Notification has been fully dismissed and unmounted
+   * Requires `dismissible={true}`
+   *
+   * @since 1.3.0
+   */
+  onDismiss: PropTypes.func,
+  /**
    * The message. Can be raw text or text components.
    */
   children: PropTypes.node.isRequired,
@@ -172,6 +216,8 @@ Notification.defaultProps = {
   variant: 'instructional',
   dismissible: false,
   dismissibleA11yLabel: undefined,
+  onCloseClick: undefined,
+  onDismiss: undefined,
 }
 
 export default Notification
