@@ -63,3 +63,36 @@ Use the `dismissible` prop to allow users to dismiss the `Notification` at any t
   confirmation email sent after your purchase.
 </Notification>
 ```
+
+### Using Callbacks
+
+#### onCloseClick
+
+Use the `onCloseClick` prop to execute a function when a user dismisses the `Notification`. The `onCloseClick` prop must be used together with the `dismissible` and `dismissibleA11yLabel` props.
+
+```jsx { "props": { "className": "docs_full-width-playground" } }
+<Notification
+  variant="error"
+  dismissible
+  dismissibleA11yLabel="Close"
+  onCloseClick={() => alert('I was dismissed')}
+>
+  Looks like our registration system is temporarily down. You’ll need to come back another time to
+  register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>
+</Notification>
+```
+
+#### onDismiss
+
+Use the `onDismiss` prop to execute a function during the `componentWillUnmount` lifecycle method when a user dismisses the `Notification`. The `onDismiss` prop must be used together with the `dismissible` and `dismissibleA11yLabel` props.
+
+```jsx { "props": { "className": "docs_full-width-playground" } }
+<Notification
+  variant="success"
+  dismissible
+  dismissibleA11yLabel="Close"
+  onDismiss={() => console.log('I was dismissed')}
+>
+  Your registration is complete.
+</Notification>
+```
