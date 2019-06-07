@@ -134,4 +134,53 @@ describe('<Notification />', () => {
       expect(icon.props().variant).toBeUndefined()
     })
   })
+  describe('onClickClose', () => {
+    it('calls the provided callback when dismissible', () => {
+      const onCloseClick = jest.fn()
+      const notification = doMount({
+        variant: 'error',
+        dismissible: true,
+        dismissibleA11yLabel: 'Close',
+        onCloseClick,
+      })
+      notification.find(StandaloneIcon).simulate('click')
+      expect(onCloseClick).toHaveBeenCalled()
+    })
+    it('does not call the provided callback when the dismissible prop is false', () => {
+      const onCloseClick = jest.fn()
+      const notification = doMount({
+        variant: 'error',
+        dismissible: false,
+        dismissibleA11yLabel: 'Close',
+        onCloseClick,
+      })
+      expect(notification.find(StandaloneIcon)).not.toExist()
+    })
+  })
+  describe('onDismiss', () => {
+    it('calls the provided callback when dismissible', () => {
+      const onDismiss = jest.fn()
+      const notification = doMount({
+        variant: 'error',
+        dismissible: true,
+        dismissibleA11yLabel: 'Close',
+        onDismiss,
+      })
+      notification.find(StandaloneIcon).simulate('click')
+      notification.unmount()
+      expect(onDismiss).toHaveBeenCalled()
+    })
+    it('does not call the provided callback when the dismissible prop is false', () => {
+      const onDismiss = jest.fn()
+      const notification = doMount({
+        variant: 'error',
+        dismissible: false,
+        dismissibleA11yLabel: 'Close',
+        onDismiss,
+      })
+      notification.unmount()
+      expect(notification.find(StandaloneIcon)).not.toExist()
+      expect(onDismiss).not.toHaveBeenCalled()
+    })
+  })
 })
