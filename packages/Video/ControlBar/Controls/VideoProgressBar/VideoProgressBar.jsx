@@ -11,9 +11,9 @@ const ProgressBarContainer = styled.div({
   width: '100%',
   alignItems: 'center',
 })
-const StyledProgressBar = styled.input.attrs(props => ({
-  value: props.videoCurrentTime,
-}))(props => ({
+const StyledProgressBar = styled.input.attrs(({ videoCurrentTime }) => ({
+  value: videoCurrentTime,
+}))(({ videoBufferDisplay }) => ({
   width: '100%',
   cursor: 'pointer',
   padding: '5px 0',
@@ -74,8 +74,8 @@ const StyledProgressBar = styled.input.attrs(props => ({
     height: 2,
     cursor: 'pointer',
     borderRadius: 1.3,
-    background: `linear-gradient(to right, ${colorTelusGreen} 0%,${colorTelusGreen} ${props.videoBufferDisplay -
-      0.01}% ,rgba(255,255,255,0.5) ${props.videoBufferDisplay}%)`,
+    background: `linear-gradient(to right, ${colorTelusGreen} 0%,${colorTelusGreen} ${videoBufferDisplay -
+      0.01}% ,rgba(255,255,255,0.5) ${videoBufferDisplay}%)`,
   },
 
   'input[type=range]&::-moz-range-track': {
@@ -83,8 +83,8 @@ const StyledProgressBar = styled.input.attrs(props => ({
     height: 2,
     cursor: 'pointer',
     borderRadius: 1.3,
-    background: `linear-gradient(to right, ${colorTelusGreen} 0%,${colorTelusGreen} ${props.videoBufferDisplay -
-      0.01}% ,rgba(255,255,255,0.5) ${props.videoBufferDisplay}%)`,
+    background: `linear-gradient(to right, ${colorTelusGreen} 0%,${colorTelusGreen} ${videoBufferDisplay -
+      0.01}% ,rgba(255,255,255,0.5) ${videoBufferDisplay}%)`,
   },
 
   'input[type=range]&::-ms-track': {
@@ -94,8 +94,8 @@ const StyledProgressBar = styled.input.attrs(props => ({
     cursor: 'pointer',
     borderRadius: 1.3,
     border: 'none',
-    background: `linear-gradient(to right, ${colorTelusGreen} 0%,${colorTelusGreen} ${props.videoBufferDisplay -
-      0.01}% ,rgba(255,255,255,0.5) ${props.videoBufferDisplay}%)`,
+    background: `linear-gradient(to right, ${colorTelusGreen} 0%,${colorTelusGreen} ${videoBufferDisplay -
+      0.01}% ,rgba(255,255,255,0.5) ${videoBufferDisplay}%)`,
   },
   'input[type=range]&::-ms-fill-lower': {
     background: 'transparent',
@@ -105,8 +105,8 @@ const StyledProgressBar = styled.input.attrs(props => ({
   },
 }))
 
-const StyledTimestamp = styled.p(props => ({
-  color: props.isRemaining ? 'white' : colorTelusGreen,
+const StyledTimestamp = styled.p(({ isRemaining }) => ({
+  color: isRemaining ? 'white' : colorTelusGreen,
   margin: '0 0.5rem',
 }))
 
