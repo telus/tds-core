@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import fscreen from 'fscreen'
 
+import { colorGainsboro } from '@tds/core-colours'
 import Spinner from '@tds/core-spinner'
 
 import VideoSplash from '../../shared/components/VideoSplash/VideoSplash'
@@ -18,12 +19,14 @@ import Play from './svg/Play'
 import Replay from './svg/Replay'
 
 import safeRest from '../../shared/utils/safeRest'
+import { warn } from '../../shared/utils/warn'
 
-const VideoPlayerContainer = styled.div({
+const VideoPlayerContainer = styled.div(({ videoBorder }) => ({
   width: '100%',
   outline: 'none',
   position: 'relative',
-})
+  border: videoBorder ? `1px solid ${colorGainsboro}` : undefined,
+}))
 
 const VideoElementContainer = styled.div({
   outline: 'none',
@@ -37,11 +40,11 @@ const VideoPlayer = styled.video({
   height: '100%',
 })
 
-const VideoOverlayContainer = styled.div(props => ({
+const VideoOverlayContainer = styled.div(({ mouseInactive }) => ({
   width: '100%',
   height: '100%',
   position: 'absolute',
-  cursor: props.mouseInactive ? 'none' : 'pointer',
+  cursor: mouseInactive ? 'none' : 'pointer',
 }))
 
 const VideoSplashContainer = styled.div({
@@ -73,7 +76,7 @@ class Video extends React.Component {
     this.refKeyboardInstructions = React.createRef()
 
     this.playerOptions = {
-      mouseTimeout: 3000, // defined in ms
+      mouseTimeout: props.simpleMode ? 750 : 1500, // defined in ms
       keyboardSeekIncrement: 5, // defined in s
       keyboardVolumeIncrement: 0.1, // from 0 to 1
       compactModeThreshold: 700, // in px
@@ -105,6 +108,9 @@ class Video extends React.Component {
   }
 
   componentDidMount() {
+    // Checks for applicable warnings on mount
+    this.showWarnings()
+
     // Initializes Settings
     this.refVideoPlayer.current.volume = this.props.defaultVolume / 100
     this.refVideoPlayer.current.muted = this.props.beginMuted
@@ -171,6 +177,13 @@ class Video extends React.Component {
       return true
     }
     return false
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props !== prevProps) {
+      // Checks for applicable warnings on update
+      this.showWarnings()
+    }
   }
 
   componentWillUnmount() {
@@ -346,6 +359,12 @@ class Video extends React.Component {
   // ******** End Event Listener Functions ********
 
   // ******** Begin Helper Functions *********
+
+  showWarnings = () => {
+    if (this.props.videoBorder && !this.props.simpleMode) {
+      warn('Video', 'The `videoBorder` prop should not be used with `simpleMode` disabled.')
+    }
+  }
 
   resetInactivityTimer = () => {
     this.clearInactivityTimer()
@@ -610,6 +629,7 @@ class Video extends React.Component {
       <VideoPlayerContainer
         {...safeRest(rest)}
         ref={this.refVideoPlayerContainer}
+        videoBorder={this.props.videoBorder}
         onMouseMove={this.resetInactivityTimer}
         onClick={this.resetInactivityTimer}
         onKeyDown={this.handleKeyboard}
@@ -631,6 +651,10 @@ class Video extends React.Component {
                 poster={this.props.posterSrc}
                 videoLength={this.state.videoLength}
                 label={videoText[this.props.copy].watch}
+                customButton={
+                  this.props.simpleMode ? <MiddleControlButton icon={<Play />} /> : undefined
+                }
+                iconLeftOffsetPx={2}
                 onClick={this.beginVideo}
               />
             </VideoSplashContainer>
@@ -697,7 +721,8 @@ class Video extends React.Component {
           videoIsMuted={this.state.videoIsMuted}
           setVolume={this.setVolume}
           isHidden={
-            (this.state.mouseInactive || this.state.videoUnplayed) && !this.state.videoEnded
+            this.props.simpleMode ||
+            ((this.state.mouseInactive || this.state.videoUnplayed) && !this.state.videoEnded)
           }
           isMobile={this.state.isMobile}
           tracksAvailable={this.props.tracks !== undefined}
@@ -770,6 +795,7 @@ Video.propTypes = {
       label: PropTypes.string.isRequired,
       /** The track's file type, typically one of "subtitles", "captions", or "descriptions". See [MDN's documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track#Attributes) for more information on these types */
       kind: PropTypes.string.isRequired.isRequired,
+      /** The language of the track file represented as a ISO 639-1 language code */
       language: PropTypes.string.isRequired,
     })
   ),
@@ -798,6 +824,17 @@ Video.propTypes = {
    * @since 1.1.0
    */
   crossOrigin: PropTypes.oneOf(['anonymous', 'use-credentials']),
+  /**
+   * Disables the control bar during playback and reduces the amount of time until the UI hides itself.
+   * For special approved internal uses only.
+   * @since 1.2.0
+   */
+  simpleMode: PropTypes.bool,
+  /**
+   * Renders a gainsboro coloured border around the video. Used to seperate the video from the rest of the page if the video's background is the same colour as the container's. Only to be used with `simpleMode` enabled.
+   * @since 1.2.0
+   */
+  videoBorder: PropTypes.bool,
 }
 
 Video.defaultProps = {
@@ -807,6 +844,8 @@ Video.defaultProps = {
   defaultMobileQuality: 1,
   defaultDesktopQuality: 1,
   crossOrigin: undefined,
+  simpleMode: false,
+  videoBorder: false,
 }
 
 export default Video

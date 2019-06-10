@@ -4,12 +4,12 @@ import styled from 'styled-components'
 
 import { colorShark } from '@tds/core-colours'
 
-const StyledMiddleControlButton = styled.div(props => ({
+const StyledMiddleControlButton = styled.div(({ isHidden, iconLeftOffsetPx }) => ({
   width: 64,
   height: 64,
   borderRadius: '50%',
   transition: 'opacity 0.4s',
-  opacity: props.isHidden ? 0 : 1,
+  opacity: isHidden ? 0 : 1,
   background: colorShark,
   display: 'flex',
   justifyContent: 'center',
@@ -20,7 +20,7 @@ const StyledMiddleControlButton = styled.div(props => ({
   cursor: 'pointer',
   alignItems: 'center',
   svg: {
-    marginLeft: props.iconLeftOffsetPx,
+    marginLeft: iconLeftOffsetPx,
   },
 }))
 

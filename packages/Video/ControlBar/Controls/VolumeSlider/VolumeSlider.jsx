@@ -9,15 +9,15 @@ import videoText from '../../../videoText'
 import Unmuted from '../../svg/Unmuted'
 import Muted from '../../svg/Muted'
 
-const VolumeSliderContainer = styled.div(props => ({
+const VolumeSliderContainer = styled.div(({ videoPlayerWidth, compactModeThreshold }) => ({
   display: 'flex',
-  width: props.videoPlayerWidth > props.compactModeThreshold ? '12%' : '20%',
+  width: videoPlayerWidth > compactModeThreshold ? '12%' : '20%',
   maxWidth: 120,
   margin: '0 1rem',
   alignItems: 'center',
 }))
 
-const StyledVolumeSlider = styled.input(props => ({
+const StyledVolumeSlider = styled.input(({ videoCurrentVolume }) => ({
   width: '100%',
   cursor: 'pointer',
   padding: '5px 0',
@@ -79,18 +79,18 @@ const StyledVolumeSlider = styled.input(props => ({
     height: 2,
     cursor: 'pointer',
     borderRadius: 1.3,
-    background: `linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1)${props.videoCurrentVolume *
+    background: `linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1)${videoCurrentVolume *
       100 -
-      0.01}% ,rgba(255,255,255,0.5) ${props.videoCurrentVolume * 100}%)`,
+      0.01}% ,rgba(255,255,255,0.5) ${videoCurrentVolume * 100}%)`,
   },
   'input[type=range]&::-moz-range-track': {
     width: '100%',
     height: 2,
     cursor: 'pointer',
     borderRadius: 1.3,
-    background: `linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1)${props.videoCurrentVolume *
+    background: `linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1)${videoCurrentVolume *
       100 -
-      0.01}% ,rgba(255,255,255,0.5) ${props.videoCurrentVolume * 100}%)`,
+      0.01}% ,rgba(255,255,255,0.5) ${videoCurrentVolume * 100}%)`,
   },
   'input[type=range]&::-ms-track': {
     width: '100%',
@@ -99,9 +99,9 @@ const StyledVolumeSlider = styled.input(props => ({
     cursor: 'pointer',
     borderRadius: 1.3,
     border: 'none',
-    background: `linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1)${props.videoCurrentVolume *
+    background: `linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1)${videoCurrentVolume *
       100 -
-      0.01}% ,rgba(255,255,255,0.5) ${props.videoCurrentVolume * 100}%)`,
+      0.01}% ,rgba(255,255,255,0.5) ${videoCurrentVolume * 100}%)`,
   },
   'input[type=range]&::-ms-fill-lower': {
     background: 'transparent',

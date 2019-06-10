@@ -23,7 +23,7 @@ const MenuDivider = styled.div({
   backgroundColor: colorShuttleGrey,
 })
 
-const MenuButton = styled.button(props => ({
+const MenuButton = styled.button(({ selectedItem, itemValue }) => ({
   background: 'none',
   color: 'inherit',
   border: 'none',
@@ -36,20 +36,20 @@ const MenuButton = styled.button(props => ({
   justifyContent: 'space-between',
   verticalAlign: 'middle',
   rect: {
-    fill: props.selectedItem === props.itemValue ? '#ffffff' : 'transparent',
+    fill: selectedItem === itemValue ? '#ffffff' : 'transparent',
   },
 
   ':hover': {
     '#checkmark': {
       rect: {
-        fill: props.selectedItem === props.itemValue ? '#ffffff' : colorShuttleGrey,
+        fill: selectedItem === itemValue ? '#ffffff' : colorShuttleGrey,
       },
     },
   },
   ':focus': {
     '#checkmark': {
       rect: {
-        fill: props.selectedItem === props.itemValue ? '#ffffff' : colorShuttleGrey,
+        fill: selectedItem === itemValue ? '#ffffff' : colorShuttleGrey,
       },
     },
   },

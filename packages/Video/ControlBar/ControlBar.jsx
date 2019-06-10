@@ -16,22 +16,22 @@ import Gear from './svg/Gear'
 import FsExpand from './svg/FsExpand'
 import FsMinimize from './svg/FsMinimize'
 
-const ControlBarContainer = styled.div(props => ({
+const ControlBarContainer = styled.div(({ isHidden, isMobile }) => ({
   width: '100%',
   position: 'relative',
   transition: 'opacity 0.4s',
-  opacity: props.isHidden ? 0 : 1,
-  display: props.isMobile ? 'none' : undefined,
+  opacity: isHidden ? 0 : 1,
+  display: isMobile ? 'none' : undefined,
 }))
 
-const StyledControlBar = styled.div(props => ({
+const StyledControlBar = styled.div(({ videoPlayerWidth, compactModeThreshold }) => ({
   position: 'absolute',
   width: '100%',
   height: 56,
   paddingTop: '1rem',
   paddingBottom: '1rem',
-  paddingLeft: `${props.videoPlayerWidth > props.compactModeThreshold ? 3 : 1}rem`,
-  paddingRight: `calc(${props.videoPlayerWidth > props.compactModeThreshold ? 3 : 1}rem + 8px)`, // +8px to even out with left side
+  paddingLeft: `${videoPlayerWidth > compactModeThreshold ? 3 : 1}rem`,
+  paddingRight: `calc(${videoPlayerWidth > compactModeThreshold ? 3 : 1}rem + 8px)`, // +8px to even out with left side
   bottom: 0,
   backgroundColor: 'rgba(42, 44, 46, 0.85)',
   margin: 'auto',
@@ -45,11 +45,11 @@ const VideoProgressBarContainer = styled.div({
   flexGrow: 1,
 })
 
-const MenuContainer = styled.div(props => ({
+const MenuContainer = styled.div(({ isOpen }) => ({
   position: 'absolute',
   bottom: 64,
   right: '2rem',
-  display: props.isOpen ? 'block' : 'none',
+  display: isOpen ? 'block' : 'none',
   marginLeft: '1rem',
 }))
 

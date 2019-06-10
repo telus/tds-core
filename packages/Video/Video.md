@@ -56,14 +56,14 @@ Tracks are supplied to the player through the `tracks` prop, which accepts an ar
 />
 ```
 
-### Setting default volume and mute state
+### Resizing the player
 
-Depending on the contents of your video, you may want to set a default volume, default mute state, or both. This can be useful if you have a video that is too loud, or with sounds that happen immediately at the start (for example, loud music on the first frame of the video). Setting these props on your video can create a more comfortable experience to users who may be startled or distracted by loud and/or sudden noises.
+The video player will size itself to match the width and height of its parent. In this example, it is being sized using `FlexGrid` when the viewport is larger than the `md` breakpoint.
 
 ```jsx
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col xs={12}>
+    <FlexGrid.Col xs={12} md={8}>
       <Video
         sources={[
           {
@@ -97,11 +97,69 @@ Depending on the contents of your video, you may want to set a default volume, d
             source: 'french-captions.vtt',
           },
         ]}
-        defaultVolume={70}
-        beginMuted={true}
         copy="en"
       />
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
 ```
+
+### Setting default volume and mute state
+
+Depending on the contents of your video, you may want to set a default volume, default mute state, or both. This can be useful if you have a video that is too loud, or with sounds that happen immediately at the start (for example, loud music on the first frame of the video). Setting these props on your video can create a more comfortable experience to users who may be startled or distracted by loud and/or sudden noises.
+
+```jsx
+<Video
+  sources={[
+    {
+      source: 'sample-video-1080.mp4',
+      mediaType: 'video/mp4',
+      qualityName: '1080p',
+      qualityRank: 1,
+    },
+    {
+      source: 'sample-video-480.mp4',
+      mediaType: 'video/mp4',
+      qualityName: '480p',
+      qualityRank: 2,
+    },
+  ]}
+  defaultDesktopQuality={1}
+  defaultMobileQuality={1}
+  posterSrc="test-poster.jpg"
+  tracks={[
+    {
+      label: 'English',
+      kind: 'captions',
+      language: 'en',
+      source: 'english-captions.vtt',
+      isDefault: true,
+    },
+    {
+      label: 'French',
+      kind: 'captions',
+      language: 'fr',
+      source: 'french-captions.vtt',
+    },
+  ]}
+  defaultVolume={70}
+  beginMuted={true}
+  copy="en"
+/>
+```
+
+### `simpleMode` usage
+
+For very specific internal use cases, `simpleMode` can be turned on to achieve the following effects:
+
+- The initial play button is smaller
+- The control bar is always hidden
+- The time until the user is considered "idle" is cut in half, so the cursor and play/pause button will disappear more quickly
+
+- `simpleMode` can only be used on internal facing pages, it can not be used on marketing pages
+- If the video starts with a brand moment then the "poster" needs to be from the Brand Moment
+- `simpleMode` must be used with content that gives the video further context
+- The `videoBorder` prop must be set to `true`, creating a 1px gainsboro border, when the video background is white
+  - The border should be used for videos that start with a Brand Moment (all white w/ text and flower/critter) and then go to live-action
+
+Unless otherwise specified, it is advised that this mode not be used, especially on consumer-facing sites.
