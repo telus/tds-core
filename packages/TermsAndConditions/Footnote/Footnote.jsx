@@ -239,7 +239,7 @@ const Footnote = props => {
 
   // focus on the close button on open/content change
   useEffect(() => {
-    if (isVisible && closeRef && closeRef.current !== null) {
+    if (content !== null && isVisible && closeRef && closeRef.current !== null) {
       closeRef.current.focus()
     }
   }, [isVisible, content])
