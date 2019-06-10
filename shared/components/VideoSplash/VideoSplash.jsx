@@ -18,15 +18,18 @@ const SplashBackground = styled.div(props => ({
   backgroundPosition: 'center',
   position: 'absolute',
   top: 0,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
   width: '100%',
   height: '100%',
   cursor: 'pointer',
 }))
 
-const VideoSplash = ({ poster, videoLength, label, ...rest }) => {
+const VideoSplash = ({ poster, videoLength, label, customButton, ...rest }) => {
   return (
     <SplashBackground {...safeRest(rest)} poster={poster}>
-      <BigVideoButton icon={<Play />} label={label} videoLength={videoLength} />
+      {customButton || <BigVideoButton icon={<Play />} label={label} videoLength={videoLength} />}
     </SplashBackground>
   )
 }
@@ -35,10 +38,12 @@ VideoSplash.propTypes = {
   poster: PropTypes.string,
   videoLength: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
+  customButton: PropTypes.node,
 }
 
 VideoSplash.defaultProps = {
   poster: undefined,
+  customButton: undefined,
 }
 
 export default VideoSplash
