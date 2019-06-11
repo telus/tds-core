@@ -19,7 +19,6 @@ import Play from './svg/Play'
 import Replay from './svg/Replay'
 
 import safeRest from '../../shared/utils/safeRest'
-import { warn } from '../../shared/utils/warn'
 
 const VideoPlayerContainer = styled.div(({ videoBorder }) => ({
   width: '100%',
@@ -108,9 +107,6 @@ class Video extends React.Component {
   }
 
   componentDidMount() {
-    // Checks for applicable warnings on mount
-    this.showWarnings()
-
     // Initializes Settings
     this.refVideoPlayer.current.volume = this.props.defaultVolume / 100
     this.refVideoPlayer.current.muted = this.props.beginMuted
@@ -177,13 +173,6 @@ class Video extends React.Component {
       return true
     }
     return false
-  }
-
-  componentDidUpdate(prevProps) {
-    if (this.props !== prevProps) {
-      // Checks for applicable warnings on update
-      this.showWarnings()
-    }
   }
 
   componentWillUnmount() {
@@ -359,13 +348,6 @@ class Video extends React.Component {
   // ******** End Event Listener Functions ********
 
   // ******** Begin Helper Functions *********
-
-  showWarnings = () => {
-    if (this.props.videoBorder && !this.props.simpleMode) {
-      warn('Video', 'The `videoBorder` prop should not be used with `simpleMode` disabled.')
-    }
-  }
-
   resetInactivityTimer = () => {
     this.clearInactivityTimer()
     if (!this.state.videoQualityChanged && this.state.videoIsPlaying) {
