@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -51,17 +51,24 @@ const StyledButtonLink = styled(StyledButton)(
  *
  * @version ./package.json
  */
-const ButtonLink = ({ reactRouterLinkComponent, variant, children, ...rest }) => {
+const ButtonLink = forwardRef(({ reactRouterLinkComponent, variant, children, ...rest }, ref) => {
   if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
     warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
 
   return (
-    <StyledButtonLink {...safeRest(rest)} as={reactRouterLinkComponent || 'a'} variant={variant}>
+    <StyledButtonLink
+      {...safeRest(rest)}
+      as={reactRouterLinkComponent || 'a'}
+      variant={variant}
+      ref={ref}
+    >
       {children}
     </StyledButtonLink>
   )
-}
+})
+
+ButtonLink.displayName = 'ButtonLink'
 
 ButtonLink.propTypes = {
   /**
