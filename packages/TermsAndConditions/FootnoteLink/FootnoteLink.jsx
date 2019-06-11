@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorText } from '@tds/core-colours'
 import A11yContent from '@tds/core-a11y-content'
 import { getCopy } from '@tds/util-helpers'
 
@@ -13,7 +12,7 @@ const StyledFootnoteLink = styled.button({
   border: 0,
   textDecoration: 'underline',
   padding: '0 0.25rem',
-  color: colorText,
+  color: 'inherit',
 })
 
 const FootnoteLink = ({ number, onClick, copy }) => {
