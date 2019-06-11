@@ -6,6 +6,8 @@
   - Code: Make use of the `isFallback` key in the `sources` prop to define a fallback video when the primary video supplied does not fully support our target browsers
 - Use Video with [FlexGrid](#flexgrid) to control the dimensions of Video within page content
 - Recommended video dimensions are at least 288w x 162h
+- If the video starts with a Brand Moment then the "poster" needs to be from the Brand Moment (ex. white background with text and flower or critter) and then go to live-action
+- When the video background is white, the `videoBorder` prop must be set to `true`, creating a 1px gainsboro border
 
 While we recognize the demand for options that autoplay or loop videos automatically on completion, we have decided to omit these for accessibility reasons. Videos with these options available can be distracting or even distressing to those who struggle with sensory overload. We believe that omitting these features will encourage the most inclusive experience possible for our customers.
 
@@ -150,16 +152,13 @@ Depending on the contents of your video, you may want to set a default volume, d
 
 ### `simpleMode` usage
 
+- Must only be used on internal facing pages, it **must not** be used on marketing pages
+- Must be used with content that gives the video further context in order for it to meet accessibility standards
+
 For very specific internal use cases, `simpleMode` can be turned on to achieve the following effects:
 
 - The initial play button is smaller
+- The audio is muted
+- Thera are no captions
 - The control bar is always hidden
 - The time until the user is considered "idle" is cut in half, so the cursor and play/pause button will disappear more quickly
-
-- `simpleMode` can only be used on internal facing pages, it can not be used on marketing pages
-- If the video starts with a brand moment then the "poster" needs to be from the Brand Moment
-- `simpleMode` must be used with content that gives the video further context
-- The `videoBorder` prop must be set to `true`, creating a 1px gainsboro border, when the video background is white
-  - The border should be used for videos that start with a Brand Moment (all white w/ text and flower/critter) and then go to live-action
-
-Unless otherwise specified, it is advised that this mode not be used, especially on consumer-facing sites.
