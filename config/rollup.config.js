@@ -6,6 +6,8 @@ import babel from 'rollup-plugin-babel'
 import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
 
+import cleaner from './rollup/rollup-plugin-cleaner'
+
 import CssModulesSassLoader from './CssModulesSassLoader'
 
 export default opts => {
@@ -37,6 +39,9 @@ export default opts => {
     ].concat(tdsExternals),
 
     plugins: [
+      cleaner({
+        targets: ['./dist/'],
+      }),
       nodeResolve({
         extensions: ['.js', '.jsx'],
         browser: true,
