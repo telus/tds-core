@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -84,15 +84,17 @@ export const ButtonTextWrapper = styled.span({
 /**
  * @version ./package.json
  */
-const Button = ({ type, variant, children, ...rest }) => {
+const Button = forwardRef(({ type, variant, children, ...rest }, ref) => {
   const restNoDisabled = preventDisabling(rest)
 
   return (
-    <StyledButton {...safeRest(restNoDisabled)} variant={variant} type={type}>
+    <StyledButton {...safeRest(restNoDisabled)} variant={variant} type={type} ref={ref}>
       <ButtonTextWrapper>{children}</ButtonTextWrapper>
     </StyledButton>
   )
-}
+})
+
+Button.displayName = 'Button'
 
 Button.propTypes = {
   /**
