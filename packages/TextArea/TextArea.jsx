@@ -204,7 +204,7 @@ TextArea.displayName = 'TextArea'
 
 TextArea.propTypes = {
   /**
-   * The id. If no `id` is provided, a default `id` will be generated in the format of: "`name`\_`value`".
+   * The id. If no `id` is provided, a default `id` will be generated using the `label`. "This is a label" will become "this-is-a-label". A passed in `id` will appear as entered with no additional formatting.
    */
   id: PropTypes.string,
   /**
