@@ -39,6 +39,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "react-transition-group": "^2.2.1"
+    "@tds/util-generate-id": "^1.0.4"
   }
 }
