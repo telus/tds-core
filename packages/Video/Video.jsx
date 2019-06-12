@@ -109,7 +109,7 @@ class Video extends React.Component {
   componentDidMount() {
     // Initializes Settings
     this.refVideoPlayer.current.volume = this.props.defaultVolume / 100
-    this.refVideoPlayer.current.muted = this.props.beginMuted
+    this.refVideoPlayer.current.muted = this.props.beginMuted || this.props.simpleMode
     this.getPlayerWidth()
 
     // Prepares video and caption files
@@ -480,125 +480,128 @@ class Video extends React.Component {
 
     // *** Begin Seek & Play Control ****
     if (key === ' ' || key === 32 || key === 'k' || key === 75) {
+      event.preventDefault()
       this.resetInactivityTimer()
-
       this.togglePlayPause()
     }
 
-    if (key === 'ArrowRight' || key === 39 || key === '.' || key === 190) {
-      this.resetInactivityTimer()
+    // Disables all keys except for play/pause when in simpleMode
+    if (!this.props.simpleMode) {
+      if (key === 'ArrowRight' || key === 39 || key === '.' || key === 190) {
+        this.resetInactivityTimer()
 
-      this.incrementSeek(this.playerOptions.keyboardSeekIncrement)
-    }
-
-    if (key === 'ArrowLeft' || key === 37 || key === ',' || key === 188) {
-      this.resetInactivityTimer()
-
-      this.incrementSeek(-this.playerOptions.keyboardSeekIncrement)
-    }
-
-    if (key === '0' || key === 48 || key === 'numpad 0' || key === 96) {
-      this.setSeek(0)
-    }
-
-    if (key === '1' || key === 49 || key === 'numpad 1' || key === 97) {
-      this.setSeek(this.state.videoLength * 0.1)
-    }
-
-    if (key === '2' || key === 50 || key === 'numpad 2' || key === 98) {
-      this.setSeek(this.state.videoLength * 0.2)
-    }
-
-    if (key === '3' || key === 51 || key === 'numpad 3' || key === 99) {
-      this.setSeek(this.state.videoLength * 0.3)
-    }
-
-    if (key === '4' || key === 52 || key === 'numpad 4' || key === 100) {
-      this.setSeek(this.state.videoLength * 0.4)
-    }
-
-    if (key === '5' || key === 53 || key === 'numpad 5' || key === 101) {
-      this.setSeek(this.state.videoLength * 0.5)
-    }
-
-    if (key === '6' || key === 54 || key === 'numpad 6' || key === 102) {
-      this.setSeek(this.state.videoLength * 0.6)
-    }
-
-    if (key === '7' || key === 55 || key === 'numpad 7' || key === 103) {
-      this.setSeek(this.state.videoLength * 0.7)
-    }
-
-    if (key === '8' || key === 56 || key === 'numpad 8' || key === 104) {
-      this.setSeek(this.state.videoLength * 0.8)
-    }
-
-    if (key === '9' || key === 57 || key === 'numpad 9' || key === 105) {
-      this.setSeek(this.state.videoLength * 0.9)
-    }
-
-    // **** End Seek & Play Control ****
-
-    // **** Begin Volume Control ****
-
-    if (
-      key === 'ArrowUp' ||
-      key === 38 ||
-      key === '=' ||
-      key === 187 ||
-      key === 'add' ||
-      key === 107
-    ) {
-      this.resetInactivityTimer()
-
-      if (this.state.videoCurrentVolume + this.playerOptions.keyboardVolumeIncrement < 1) {
-        this.incrementVolume(this.playerOptions.keyboardVolumeIncrement)
-      } else {
-        this.setVolume(1)
+        this.incrementSeek(this.playerOptions.keyboardSeekIncrement)
       }
-    }
 
-    if (
-      key === 'ArrowDown' ||
-      key === 40 ||
-      key === '-' ||
-      key === 189 ||
-      key === 'subtract' ||
-      key === 109
-    ) {
-      this.resetInactivityTimer()
+      if (key === 'ArrowLeft' || key === 37 || key === ',' || key === 188) {
+        this.resetInactivityTimer()
 
-      if (this.state.videoCurrentVolume - this.playerOptions.keyboardVolumeIncrement > 0) {
-        this.incrementVolume(-this.playerOptions.keyboardVolumeIncrement)
-      } else {
-        this.setVolume(0)
+        this.incrementSeek(-this.playerOptions.keyboardSeekIncrement)
       }
-    }
 
-    if (key === 'm' || key === 77) {
-      this.resetInactivityTimer()
+      if (key === '0' || key === 48 || key === 'numpad 0' || key === 96) {
+        this.setSeek(0)
+      }
 
-      this.toggleMute()
-    }
+      if (key === '1' || key === 49 || key === 'numpad 1' || key === 97) {
+        this.setSeek(this.state.videoLength * 0.1)
+      }
 
-    // **** End Volume Control ****
+      if (key === '2' || key === 50 || key === 'numpad 2' || key === 98) {
+        this.setSeek(this.state.videoLength * 0.2)
+      }
 
-    // **** Begin Accessibility Controls ****
+      if (key === '3' || key === 51 || key === 'numpad 3' || key === 99) {
+        this.setSeek(this.state.videoLength * 0.3)
+      }
 
-    if (key === 'f' || key === 70) {
-      this.resetInactivityTimer()
+      if (key === '4' || key === 52 || key === 'numpad 4' || key === 100) {
+        this.setSeek(this.state.videoLength * 0.4)
+      }
 
-      this.toggleFullscreen()
-    }
+      if (key === '5' || key === 53 || key === 'numpad 5' || key === 101) {
+        this.setSeek(this.state.videoLength * 0.5)
+      }
 
-    if (key === 'Escape' || key === 27) {
-      // Resets focus back to container if user is focused on ControlBar button
-      this.refVideoPlayerContainer.current.focus()
-      this.closeSubMenus()
-    }
+      if (key === '6' || key === 54 || key === 'numpad 6' || key === 102) {
+        this.setSeek(this.state.videoLength * 0.6)
+      }
 
-    if (key === 'q' || key === 81) {
-      this.refKeyboardInstructions.current.focus()
+      if (key === '7' || key === 55 || key === 'numpad 7' || key === 103) {
+        this.setSeek(this.state.videoLength * 0.7)
+      }
+
+      if (key === '8' || key === 56 || key === 'numpad 8' || key === 104) {
+        this.setSeek(this.state.videoLength * 0.8)
+      }
+
+      if (key === '9' || key === 57 || key === 'numpad 9' || key === 105) {
+        this.setSeek(this.state.videoLength * 0.9)
+      }
+
+      // **** End Seek & Play Control ****
+
+      // **** Begin Volume Control ****
+
+      if (
+        key === 'ArrowUp' ||
+        key === 38 ||
+        key === '=' ||
+        key === 187 ||
+        key === 'add' ||
+        key === 107
+      ) {
+        this.resetInactivityTimer()
+
+        if (this.state.videoCurrentVolume + this.playerOptions.keyboardVolumeIncrement < 1) {
+          this.incrementVolume(this.playerOptions.keyboardVolumeIncrement)
+        } else {
+          this.setVolume(1)
+        }
+      }
+
+      if (
+        key === 'ArrowDown' ||
+        key === 40 ||
+        key === '-' ||
+        key === 189 ||
+        key === 'subtract' ||
+        key === 109
+      ) {
+        this.resetInactivityTimer()
+
+        if (this.state.videoCurrentVolume - this.playerOptions.keyboardVolumeIncrement > 0) {
+          this.incrementVolume(-this.playerOptions.keyboardVolumeIncrement)
+        } else {
+          this.setVolume(0)
+        }
+      }
+
+      if (key === 'm' || key === 77) {
+        this.resetInactivityTimer()
+
+        this.toggleMute()
+      }
+
+      // **** End Volume Control ****
+
+      // **** Begin Accessibility Controls ****
+
+      if (key === 'f' || key === 70) {
+        this.resetInactivityTimer()
+
+        this.toggleFullscreen()
+      }
+
+      if (key === 'Escape' || key === 27) {
+        // Resets focus back to container if user is focused on ControlBar button
+        this.refVideoPlayerContainer.current.focus()
+        this.closeSubMenus()
+      }
+
+      if (key === 'q' || key === 81) {
+        this.refKeyboardInstructions.current.focus()
+      }
     }
 
     // **** End Accessibility Controls ****
@@ -616,7 +619,11 @@ class Video extends React.Component {
         onClick={this.resetInactivityTimer}
         onKeyDown={this.handleKeyboard}
         tabIndex="0"
-        aria-label={videoText[this.props.copy].videoSelected}
+        aria-label={
+          this.props.simpleMode
+            ? videoText[this.props.copy].videoSelectedSimple
+            : videoText[this.props.copy].videoSelected
+        }
         data-testid="videoPlayer"
       >
         <VideoOverlayContainer
@@ -813,7 +820,7 @@ Video.propTypes = {
    */
   simpleMode: PropTypes.bool,
   /**
-   * Renders a gainsboro coloured border around the video. Used to seperate the video from the rest of the page if the video's background is the same colour as the container's. Only to be used with `simpleMode` enabled.
+   * Renders a gainsboro coloured border around the video. Used to seperate the video from the rest of the page if the video's background is the same colour as the container's.
    * @since 1.2.0
    */
   videoBorder: PropTypes.bool,
