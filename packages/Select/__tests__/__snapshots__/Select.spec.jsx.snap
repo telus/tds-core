@@ -38,7 +38,7 @@ exports[`Select can have an error message 1`] = `
   -moz-appearance: textfield;
   min-height: 3.25rem;
   max-height: 3.25rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
 .c3::-ms-expand {
@@ -834,7 +834,7 @@ exports[`Select renders 1`] = `
   -moz-appearance: textfield;
   min-height: 3.25rem;
   max-height: 3.25rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
 .c3::-ms-expand {
@@ -1018,7 +1018,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   -moz-appearance: textfield;
   min-height: 3.25rem;
   max-height: 3.25rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
 .c3::-ms-expand {
