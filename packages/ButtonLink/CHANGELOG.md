@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-button-link@2.0.11...@tds/core-button-link@2.1.0) (2019-06-13)
+
+
+### Features
+
+* **core-button-link:** add forwardRef ([6c5383d](https://github.com/telusdigital/tds/commit/6c5383d))
+
+
+
+
+
 ## [2.0.11](https://github.com/telusdigital/tds/compare/@tds/core-button-link@2.0.10...@tds/core-button-link@2.0.11) (2019-06-06)
 
 **Note:** Version bump only for package @tds/core-button-link
