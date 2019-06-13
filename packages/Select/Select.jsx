@@ -67,7 +67,7 @@ const StyledSelect = styled.select(
     '-moz-appearance': 'textfield',
     minHeight: '3.25rem',
     maxHeight: '3.25rem',
-    padding: withFeedbackIcon ? '0.5rem 3rem 0.5rem 1rem' : '0.5rem 1rem',
+    padding: withFeedbackIcon ? '0.5rem 4rem 0.5rem 1rem' : '0.5rem 3rem 0.5rem 1rem',
   }),
   {
     '&:focus': {
