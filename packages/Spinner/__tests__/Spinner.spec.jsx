@@ -81,7 +81,7 @@ describe('Spinner', () => {
       { spinning: true, inline: true },
       <span>Overlay me with the spinner</span>
     )
-    expect(container).toHaveClassName('inline')
+    expect(container).toMatchSnapshot()
   })
 
   it('is only visible while spinning', () => {
@@ -90,12 +90,6 @@ describe('Spinner', () => {
 
     spinner = doShallow({ spinning: true })
     expect(spinner).not.toBeEmptyRender()
-  })
-
-  it('can have a tip', () => {
-    const { spinner } = doMount({ label: undefined, tip: 'A tip' })
-
-    expect(spinner).toContainReact(<Text size="small">A tip</Text>)
   })
 
   it('can have a label', () => {
@@ -112,7 +106,7 @@ describe('Spinner', () => {
       )
 
       expect(overlay).toExist()
-      expect(spinnerContainer).toHaveClassName('centered')
+      expect(spinnerContainer).toMatchSnapshot()
     })
 
     it('only shows the children while not spinning', () => {
@@ -124,27 +118,12 @@ describe('Spinner', () => {
     it('can be fullscreen', () => {
       const spinner = doShallow({ fullScreen: true, label: 'Loading page', spinning: true })
 
-      expect(spinner).toHaveClassName('fullscreenOverlay')
+      expect(spinner).toMatchSnapshot()
     })
   })
 
   describe('accessibility', () => {
-    it('gives the svg a default a11y label', () => {
-      const { spinnerSvg, a11yLabel } = doMount({ label: undefined })
-
-      expect(a11yLabel).toHaveText(
-        'A spinner is active. Please wait while the page completes a task.'
-      )
-      expect(spinnerSvg).toHaveProp('aria-labelledby', a11yLabel.props().id)
-    })
-
-    it('allows a custom a11y label (a11yLabel)', () => {
-      const { a11yLabel } = doMount({ label: undefined, a11yLabel: 'Something is busy' })
-
-      expect(a11yLabel).toHaveText('Something is busy')
-    })
-
-    it('allows a custom a11y label (label)', () => {
+    it('allows a custom a11y label (label prop)', () => {
       const { a11yLabel } = doMount({ label: 'Something is busy' })
 
       expect(a11yLabel).toHaveText('Something is busy')
@@ -154,7 +133,7 @@ describe('Spinner', () => {
   it('passes additional attributes to svg element', () => {
     const { spinnerSvg } = doMount({ id: 'the-spinner', 'data-some-attr': 'some value' })
 
-    expect(spinnerSvg).toHaveProp({ id: 'the-spinner', 'data-some-attr': 'some value' })
+    expect(spinnerSvg).toMatchSnapshot()
   })
 
   it('does not allow custom CSS', () => {

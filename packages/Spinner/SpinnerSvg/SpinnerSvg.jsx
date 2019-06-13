@@ -1,61 +1,103 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled, { keyframes } from 'styled-components'
 
+import { colorAccessibleGreen, colorSecondary } from '@tds/core-colours'
 import Text from '@tds/core-text'
 
-import joinClassNames from '../../../shared/utils/joinClassNames'
 import safeRest from '../../../shared/utils/safeRest'
 import uniqueId from './uniqueId'
 
-import styles from './SpinnerSvg.modules.scss'
+const zindexPopover = 1600
 
-class SpinnerSvg extends React.Component {
-  componentWillMount() {
-    this.setState({
-      titleId: uniqueId('spinner-title-'),
-    })
+const spinnerRotate = keyframes`
+  100% {
+    transform: rotate(360deg);
   }
+`
 
-  render() {
-    const { tip, overlay, a11yLabel, size, variant, ...rest } = this.props
-    return (
-      <div
-        className={joinClassNames(styles.container, overlay && styles.centered)}
-        data-testid="spinner"
+const spinnerDash = keyframes`
+  0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35;
+    }
+
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124;
+    }
+`
+const SvgContainer = styled.div(({ overlay }) => ({
+  display: 'inline-flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  ...(overlay && {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    zIndex: zindexPopover,
+  }),
+}))
+
+const StyledSvg = styled.svg`
+  animation: ${spinnerRotate} 1.8s linear infinite;
+  ${({ size }) => size === 'small' && 'height: 3.125rem; width: 3.125rem;'}
+  ${({ size }) => size === 'large' && 'height: 6.25rem; width: 6.25rem;'}
+`
+
+const SvgCircle = styled.circle`
+  animation: ${spinnerDash} 1.7s ease-in-out infinite 0s;
+  ${({ variant }) => variant === 'primary' && `stroke: ${colorAccessibleGreen}`}
+  ${({ variant }) => variant === 'secondary' && `stroke: ${colorSecondary}`}
+`
+
+const TipContainer = styled.div({
+  marginTop: '-1.5rem',
+})
+
+const SpinnerSvg = ({ tip, overlay, a11yLabel, size, variant, ...rest }) => {
+  const titleId = uniqueId('spinner-title-')
+
+  return (
+    <SvgContainer overlay={overlay} data-testid="spinner">
+      <StyledSvg
+        {...safeRest(rest)}
+        viewBox="0 0 100 100"
+        width={size === 'large' ? '100' : '50'}
+        height={size === 'large' ? '100' : '50'}
+        role="alert"
+        aria-labelledby={titleId}
+        aria-live="assertive"
+        data-testid="svg"
       >
-        <svg
-          {...safeRest(rest)}
-          className={styles[`${size}Svg`]}
-          viewBox="0 0 100 100"
-          width={size === 'large' ? '100' : '50'}
-          height={size === 'large' ? '100' : '50'}
-          role="alert"
-          aria-labelledby={this.state.titleId}
-          aria-live="assertive"
-          data-testid="svg"
-        >
-          <title id={this.state.titleId}>{a11yLabel}</title>
-          <circle
-            className={styles[`${size === 'small' ? variant : 'primary'}Circle`]}
-            strokeWidth="4"
-            fill="none"
-            strokeLinecap="round"
-            strokeDasharray="89, 200"
-            strokeDashoffset="0"
-            cx="50"
-            cy="50"
-            r="20"
-          />
-        </svg>
-        {tip && (
-          <div className={styles.tip}>
-            <Text size="small">{tip}</Text>
-          </div>
-        )}
-      </div>
-    )
-  }
+        <title id={titleId}>{a11yLabel}</title>
+        <SvgCircle
+          variant={size === 'small' ? variant : 'primary'}
+          strokeWidth="4"
+          fill="none"
+          strokeLinecap="round"
+          strokeDasharray="89, 200"
+          strokeDashoffset="0"
+          cx="50"
+          cy="50"
+          r="20"
+        />
+      </StyledSvg>
+      {tip && (
+        <TipContainer>
+          <Text size="small">{tip}</Text>
+        </TipContainer>
+      )}
+    </SvgContainer>
+  )
 }
+
 SpinnerSvg.propTypes = {
   tip: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   overlay: PropTypes.bool,
