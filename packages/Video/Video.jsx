@@ -694,50 +694,51 @@ class Video extends React.Component {
         </VideoElementContainer>
         {/* ============================== */}
 
-        <ControlBar
-          videoPlayer={this.refVideoPlayer}
-          videoPlayerContainer={this.refVideoPlayerContainer}
-          sources={this.props.sources}
-          tracks={this.props.tracks}
-          videoLength={this.state.videoLength}
-          videoBufferEnd={this.state.videoBufferEnd}
-          videoCurrentTime={this.state.videoCurrentTime}
-          videoPlaying={
-            this.refVideoPlayer.current !== null ? !this.refVideoPlayer.current.paused : false
-          }
-          videoDefaultVolume={this.props.defaultVolume / 100}
-          videoCurrentVolume={this.state.videoCurrentVolume}
-          videoIsMuted={this.state.videoIsMuted}
-          setVolume={this.setVolume}
-          isHidden={
-            this.props.simpleMode ||
-            ((this.state.mouseInactive || this.state.videoUnplayed) && !this.state.videoEnded)
-          }
-          isMobile={this.state.isMobile}
-          tracksAvailable={this.props.tracks !== undefined}
-          togglePlayPause={this.togglePlayPause}
-          setSeek={this.setSeek}
-          toggleMute={this.toggleMute}
-          toggleFullscreen={this.toggleFullscreen}
-          videoIsFullscreen={this.state.videoIsFullscreen}
-          setTextTracks={this.setTextTracks}
-          selectedTextTrack={this.state.selectedTextTrack}
-          resetInactivityTimer={this.resetInactivityTimer}
-          videoQuality={this.state.videoQuality}
-          setVideoQuality={this.setVideoQuality}
-          qualityMenuOpen={this.state.qualityMenuOpen}
-          setQualityMenuOpen={this.setQualityMenuOpen}
-          captionsMenuOpen={this.state.captionsMenuOpen}
-          setCaptionsMenuOpen={this.setCaptionsMenuOpen}
-          clearInactivityTimer={this.clearInactivityTimer}
-          copy={this.props.copy}
-          compactModeThreshold={this.playerOptions.compactModeThreshold}
-          videoPlayerWidth={this.state.videoPlayerWidth}
-          onMouseOver={() => this.setMouseOnControlBar(true)}
-          onMouseOut={() => this.setMouseOnControlBar(false)}
-          onFocus={() => {}}
-          onBlur={() => {}}
-        />
+        {!this.props.simpleMode && (
+          <ControlBar
+            videoPlayer={this.refVideoPlayer}
+            videoPlayerContainer={this.refVideoPlayerContainer}
+            sources={this.props.sources}
+            tracks={this.props.tracks}
+            videoLength={this.state.videoLength}
+            videoBufferEnd={this.state.videoBufferEnd}
+            videoCurrentTime={this.state.videoCurrentTime}
+            videoPlaying={
+              this.refVideoPlayer.current !== null ? !this.refVideoPlayer.current.paused : false
+            }
+            videoDefaultVolume={this.props.defaultVolume / 100}
+            videoCurrentVolume={this.state.videoCurrentVolume}
+            videoIsMuted={this.state.videoIsMuted}
+            setVolume={this.setVolume}
+            isHidden={
+              (this.state.mouseInactive || this.state.videoUnplayed) && !this.state.videoEnded
+            }
+            isMobile={this.state.isMobile}
+            tracksAvailable={this.props.tracks !== undefined}
+            togglePlayPause={this.togglePlayPause}
+            setSeek={this.setSeek}
+            toggleMute={this.toggleMute}
+            toggleFullscreen={this.toggleFullscreen}
+            videoIsFullscreen={this.state.videoIsFullscreen}
+            setTextTracks={this.setTextTracks}
+            selectedTextTrack={this.state.selectedTextTrack}
+            resetInactivityTimer={this.resetInactivityTimer}
+            videoQuality={this.state.videoQuality}
+            setVideoQuality={this.setVideoQuality}
+            qualityMenuOpen={this.state.qualityMenuOpen}
+            setQualityMenuOpen={this.setQualityMenuOpen}
+            captionsMenuOpen={this.state.captionsMenuOpen}
+            setCaptionsMenuOpen={this.setCaptionsMenuOpen}
+            clearInactivityTimer={this.clearInactivityTimer}
+            copy={this.props.copy}
+            compactModeThreshold={this.playerOptions.compactModeThreshold}
+            videoPlayerWidth={this.state.videoPlayerWidth}
+            onMouseOver={() => this.setMouseOnControlBar(true)}
+            onMouseOut={() => this.setMouseOnControlBar(false)}
+            onFocus={() => {}}
+            onBlur={() => {}}
+          />
+        )}
 
         {/* ======== Screen Reader Keyboard Instructions ======= */}
         <span
