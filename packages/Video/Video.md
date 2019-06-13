@@ -153,7 +153,7 @@ Depending on the contents of your video, you may want to set a default volume, d
 ### `simpleMode` usage
 
 - Must only be used on internal facing pages, it **must not** be used on marketing pages
-- Must be used with content that gives the video further context in order for it to meet accessibility standards
+- Must be used with supporting content that gives the video further context in order for it to meet accessibility standards
 
 For very specific internal use cases, `simpleMode` can be turned on to achieve the following effects:
 
