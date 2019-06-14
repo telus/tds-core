@@ -1,8 +1,289 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Card /> can be presented as one of the allowed variants 1`] = `
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
+  background-color: #fff;
+}
+
+<Card
+  variant="white"
+>
+  <Styled(Component)
+    horizontal={4}
+    variant="white"
+    vertical={5}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      horizontal={4}
+      variant="white"
+      vertical={5}
+    >
+      <Component
+        className="c0"
+        horizontal={4}
+        variant="white"
+        vertical={5}
+      >
+        <Box
+          className="c0"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          vertical={5}
+        >
+          <div
+            className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
+          >
+            Some content
+          </div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> can be presented as one of the allowed variants 2`] = `
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
+  background-color: #fff;
+}
+
+<Card
+  variant="white"
+>
+  <Styled(Component)
+    horizontal={4}
+    variant="white"
+    vertical={5}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      horizontal={4}
+      variant="white"
+      vertical={5}
+    >
+      <Component
+        className="c0"
+        horizontal={4}
+        variant="white"
+        vertical={5}
+      >
+        <Box
+          className="c0"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          vertical={5}
+        >
+          <div
+            className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
+          >
+            Some content
+          </div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> can be presented as one of the allowed variants 3`] = `
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  background-color: #f2eff4;
+}
+
+<Card
+  variant="lavender"
+>
+  <Styled(Component)
+    horizontal={4}
+    variant="lavender"
+    vertical={5}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      horizontal={4}
+      variant="lavender"
+      vertical={5}
+    >
+      <Component
+        className="c0"
+        horizontal={4}
+        variant="lavender"
+        vertical={5}
+      >
+        <Box
+          className="c0"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          vertical={5}
+        >
+          <div
+            className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
+          >
+            Some content
+          </div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> can be presented as one of the allowed variants 4`] = `
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  background-color: #f7f7f8;
+}
+
+<Card
+  variant="grey"
+>
+  <Styled(Component)
+    horizontal={4}
+    variant="grey"
+    vertical={5}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      horizontal={4}
+      variant="grey"
+      vertical={5}
+    >
+      <Component
+        className="c0"
+        horizontal={4}
+        variant="grey"
+        vertical={5}
+      >
+        <Box
+          className="c0"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          vertical={5}
+        >
+          <div
+            className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
+          >
+            Some content
+          </div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Card>
+`;
+
 exports[`<Card /> renders 1`] = `
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
+  background-color: #fff;
+}
+
 <div
-  class="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg white"
+  class="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
 >
   Children
 </div>
