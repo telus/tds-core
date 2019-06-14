@@ -1,10 +1,11 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, mount, render } from 'enzyme'
 
 import Card from '../Card'
 
 describe('<Card />', () => {
   const doShallow = (props = {}) => shallow(<Card {...props}>Some content</Card>)
+  const doMount = (props = {}) => mount(<Card {...props}>Some content</Card>)
 
   it('renders', () => {
     const card = render(<Card>Children</Card>)
@@ -13,17 +14,17 @@ describe('<Card />', () => {
   })
 
   it('can be presented as one of the allowed variants', () => {
-    let card = doShallow()
-    expect(card.dive()).toHaveClassName('white')
+    let card = doMount()
+    expect(card).toMatchSnapshot()
 
-    card = doShallow({ variant: 'white' })
-    expect(card.dive()).toHaveClassName('white')
+    card = doMount({ variant: 'white' })
+    expect(card).toMatchSnapshot()
 
-    card = doShallow({ variant: 'lavender' })
-    expect(card.dive()).toHaveClassName('lavender')
+    card = doMount({ variant: 'lavender' })
+    expect(card).toMatchSnapshot()
 
-    card = doShallow({ variant: 'grey' })
-    expect(card.dive()).toHaveClassName('grey')
+    card = doMount({ variant: 'grey' })
+    expect(card).toMatchSnapshot()
   })
 
   it('passes additional attributes to the input element', () => {

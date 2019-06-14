@@ -1,20 +1,35 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import Box from '@tds/core-box'
+import { colorWhite, colorWhiteLilac, colorAthensGrey } from '@tds/core-colours'
+import { borders } from '@tds/shared-styles'
 import safeRest from '../../shared/utils/safeRest'
 
-import styles from './Card.modules.scss'
-
+const StyledCard = styled(({ variant, ...rest }) => <Box {...rest} />)(({ variant }) => ({
+  ...borders.none,
+  ...borders.rounded,
+  ...(variant === 'white' && {
+    boxShadow: '0 0 16px 0 rgba(213, 213, 213, 0.5)',
+    backgroundColor: colorWhite,
+  }),
+  ...(variant === 'lavender' && {
+    backgroundColor: colorWhiteLilac,
+  }),
+  ...(variant === 'grey' && {
+    backgroundColor: colorAthensGrey,
+  }),
+}))
 /**
  * A content container.
  *
  * @version ./package.json
  */
 const Card = ({ variant, children, ...rest }) => (
-  <Box {...safeRest(rest)} horizontal={4} vertical={5} className={styles[variant]}>
+  <StyledCard {...safeRest(rest)} horizontal={4} vertical={5} variant={variant}>
     {children}
-  </Box>
+  </StyledCard>
 )
 
 Card.propTypes = {
