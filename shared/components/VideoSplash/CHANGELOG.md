@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.0.6...@tds/shared-video-splash@1.1.0) (2019-06-17)
+
+
+### Features
+
+* **shared-video-splash:** add support for custom start button ([096367d](https://github.com/telus/tds-core/commit/096367d))
+
+
+
+
+
 ## [1.0.6](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.0.5...@tds/shared-video-splash@1.0.6) (2019-06-04)
 
 **Note:** Version bump only for package @tds/shared-video-splash

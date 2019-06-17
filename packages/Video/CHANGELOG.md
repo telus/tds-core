@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telus/tds-core/compare/@tds/core-video@1.1.3...@tds/core-video@1.2.0) (2019-06-17)
+
+
+### Bug Fixes
+
+* **core-video:** prevent page down when space is pressed ([efc9d89](https://github.com/telus/tds-core/commit/efc9d89))
+
+
+### Features
+
+* **core-video:** add simpleMode and videoBorder options ([ea1b03c](https://github.com/telus/tds-core/commit/ea1b03c))
+
+
+
+
+
 ## [1.1.3](https://github.com/telus/tds-core/compare/@tds/core-video@1.1.2...@tds/core-video@1.1.3) (2019-06-06)
 
 **Note:** Version bump only for package @tds/core-video
