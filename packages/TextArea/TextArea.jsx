@@ -43,6 +43,7 @@ const StyledTextArea = styled.textarea(
     outline: 0,
     textOverflow: 'ellipsis',
     borderColor: colorShuttleGrey,
+    '-ms-overflow-style': '-ms-autohiding-scrollbar',
     '&::placeholder': {
       font: 'inherit',
       letterSpacing: 'inherit',
@@ -101,6 +102,7 @@ const StyledTextArea = styled.textarea(
 const StyledFeedbackIcon = styled.div(position.absolute, {
   right: '1rem',
   top: '0.5rem',
+  overflow: 'visible', // Prevents icon cut-off on Mobile Safari
 })
 
 const showFeedbackIcon = feedback => feedback === 'error' || feedback === 'success'

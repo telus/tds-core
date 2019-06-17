@@ -11,6 +11,7 @@ exports[`TextArea disabling can be disabled 1`] = `
   outline: 0;
   text-overflow: ellipsis;
   border-color: #54595f;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
@@ -102,6 +103,7 @@ exports[`TextArea feedback states ensures that the contents do not overlap the i
   outline: 0;
   text-overflow: ellipsis;
   border-color: #54595f;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
@@ -297,6 +299,7 @@ exports[`TextArea renders 1`] = `
   outline: 0;
   text-overflow: ellipsis;
   border-color: #54595f;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
@@ -372,6 +375,7 @@ exports[`TextArea renders 1`] = `
   position: absolute;
   right: 1rem;
   top: 0.5rem;
+  overflow: visible;
 }
 
 <div
@@ -438,6 +442,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   outline: 0;
   text-overflow: ellipsis;
   border-color: #54595f;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
@@ -517,6 +522,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   position: absolute;
   right: 1rem;
   top: 0.5rem;
+  overflow: visible;
 }
 
 <div
