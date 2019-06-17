@@ -1,6 +1,7 @@
 ## TELUS Design System
 
 - [Home](README.md)
+- [Standards](standards.md)
 - [Announcements](announcements.md)
 - [Getting Started](getting-started/getting-started.md)
   - [Designers](getting-started/designers.md)
