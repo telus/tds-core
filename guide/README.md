@@ -2,7 +2,7 @@
 
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences. It's a holistic platform that integrates code, documentation, guidelines, and design management. Serving as a single source for our digital design guidelines, code patterns, and UI elements.
 
-For now, TDS is intended for use by TELUS employees and approved partners.
+TDS is intended for use by TELUS employees and approved partners.
 
 ## Announcements
 
@@ -12,13 +12,13 @@ To view recent and past announcements, see our [Announcements](announcements.htm
 
 ### Getting started guides
 
-If you're new to **utilizing** the Telus Design System, check out the [getting started guide](ref://getting-started/getting-started.html).
+If you're new to **utilizing** the Telus Design System, check out the [getting started guide](getting-started/getting-started.html).
 
 ### Contribution guides
 
-If you are a **developer** who wants to contribute to TDS, please see the [developer contributor guide](ref://contributing/developer-guide.html).
+If you are a **developer** who wants to contribute to TDS, please see the [developer contributor guide](contributing/developer-guide.html).
 
-If you are a **designer** who wants to contribute to TDS, please see the [designer contributor guide](ref://contributing/designer-guide.html).
+If you are a **designer** who wants to contribute to TDS, please see the [designer contributor guide](contributing/designer-guide.html).
 
 ### Migration guides
 
