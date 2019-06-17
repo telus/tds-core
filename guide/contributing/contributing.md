@@ -25,20 +25,25 @@ be too discouraged from opening an issue anyway. The Digital Platform Ambassador
 
 A TDS component:
 
-1.  **Must** have an identified use case in at least 2 unique applications
-    - Community components have the most impact when shared across multiple situations in many experiences
-    - Core components have the most impact when shared across the majority of TELUS experiences
-2.  **Must** be brand aligned and assessed by Design Direction (if applicable)
-    - New user experience patterns must involve Design Direction to preserve a high-quality and consistent end customer experience.
-3.  **Must** not include business logic or proprietary information
-    - The presence of these things limits the breadth of reuse for a component
-    - Design system components are focused on reusable user experience patterns; they should act as a view that can accept predictable data types
-    - Keep business logic, API calls, content, or other application-specific behaviour in the application.
-4.  **Must** be sufficiently different than other available shared components
-    - Community components reduce duplication by promoting flexibility and reuse of existing code
-    - Before creating a new component, consider whether an existing pattern and component is sufficient. If not, consider extending or adding features to an existing component before creating a new one
-5.  **Should** be sufficiently granular to promote reuse - Design system components should encapsulate a single pattern or user experience "element." Seek to find the most granular, standalone, reusable pattern
-    <!-- TODO: remove duplicate information on tds-community -->
+<!-- prettier-ignore-start -->
+
+1. **Must** have an identified use case in at least 2 unique applications
+  - Community components have the most impact when shared across multiple situations in many experiences
+  - Core components have the most impact when shared across the majority of TELUS experiences
+2. **Must** be brand aligned and assessed by Design Direction (if applicable)
+  - New user experience patterns must involve Design Direction to preserve a high-quality and consistent end customer experience.
+3. **Must** not include business logic or proprietary information
+  - The presence of these things limits the breadth of reuse for a component
+  - Design system components are focused on reusable user experience patterns; they should act as a view that can accept predictable data types
+  - Keep business logic, API calls, content, or other application-specific behaviour in the application.
+4. **Must** be sufficiently different than other available shared components
+  - Community components reduce duplication by promoting flexibility and reuse of existing code
+  - Before creating a new component, consider whether an existing pattern and component is sufficient. If not, consider extending or adding features to an existing component before creating a new one
+5. **Should** be sufficiently granular to promote reuse - Design system components should encapsulate a single pattern or user experience "element." Seek to find the most granular, standalone, reusable pattern
+
+<!-- prettier-ignore-end -->
+
+<!-- TODO: remove duplicate information on tds-community -->
 
 ## How to contribute {#how-to}
 

@@ -30,23 +30,23 @@ Core and Community differ in the following ways:
 
 All TELUS Design System components follow these core principles.
 
-1.  Composable
+1. Composable
 
 - Components are most effective when they can be combined to form more complex patterns.
 
-2.  Accessible
+2. Accessible
 
 - Follow accessible standards defined in the [TELUS Reference Architecture](https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/development/accessibility.md)
 
-3.  Responsive
+3. Responsive
 
 - Mobile-first. Works on any viewport size.
 
-4.  Quality
+4. Quality
 
 - Thorough testing is a first class concern.
 
-5.  Cross-browser
+5. Cross-browser
 
 - See browser support in [the FAQ](faq.md#what-browsers-does-tds-support)
 
