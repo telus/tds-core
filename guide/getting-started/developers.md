@@ -11,7 +11,7 @@ TDS components include:
 
 TDS components do not include:
 
-- Business logic, such as validations or API calls
+- Business logic, such as application-specific validations or API calls
 - External margins or global side effects
 
 ## Installing

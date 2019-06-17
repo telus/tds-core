@@ -2,51 +2,81 @@
 
 ## Contents
 
-- [Set up your environment](#set-up-your-environment)
+- [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Set up your dev environment](#set-up-your-dev-environment)
 - [Write some code](#write-some-code)
 - [Using lerna](#using-lerna)
+  - [How lerna works within TDS](#how-lerna-works-within-TDS)
   - [Helpful lerna commands](#helpful-lerna-commands)
-- [Writing unit tests with Jest](#writing-unit-tests-with-jest)
-- [Running end-to-end (e2e) tests with Nightwatch](#running-end-to-end-e2e-tests-with-nightwatch)
+- [Building with quality](#building-with-quality)
+  - [Accessibility](#accessibility)
+  - [Unit tests](#unit-tests)
+  - [Running end-to-end (e2e) tests with Nightwatch](#running-end-to-end-e2e-tests-with-Nightwatch)
 - [Make a commit](#make-a-commit)
-- [Make a pull request](#make-a-pull-request)
+  - [Versioning via commits](#versioning-via-commits)
+  - [Commit format](#commit-format)
+  - [Commit types](#commit-types)
+  - [Use commitizen](#use-commitizen)
+  - [Example commit messages](#example-commit-messages)
+- [Make a Pull Request](#make-a-Pull-Request)
+- [References](#references)
 
-## Set up your environment
+## Setup
 
 ### Prerequisites
 
 - [Git](https://git-scm.com/)
-- [Node.JS](https://nodejs.org) >= 8.0
+- [Node.JS](https://nodejs.org) v8
 - [Docker and Docker Compose](https://www.docker.com/get-started)
 
-### Setup
-
-To get started, clone [the repository](https://github.com/telusdigital/tds-core) and create your branch from master.
-If you are not part of the TELUS digital organization, you may fork the repository instead.
+To get started, clone [the TDS repository](https://github.com/telusdigital/tds-core) and create your branch from master.
+TELUS Digital developers and partners can push branches to the repository directly. If you do not have write access, you may create a fork instead.
 
 GitHub has primers on [how to fork a repository](https://help.github.com/articles/fork-a-repo/) and [how to clone a repository](https://help.github.com/articles/cloning-a-repository/).
 
 Before getting started, you should also install [Docker](https://github.com/telus/reference-architecture/blob/master/delivery/docker.md). This facilitates our e2e tests to ensure they are tested in a reproducible environment, and having all tests pass is essential to a successful TDS contribution. If Docker is not installed, the following steps will not complete successfully.
 
+#### Codebase
+
 After setting up TDS locally, the following steps will get you started:
 
 ```bash
 # Bootstrap your dev environment
-# This will install node and Gitbook dependencies, set up symlinks for lerna, build components for tests, and build docker containers
+# This will install node and Gitbook dependencies,
+# set up symlinks for lerna, build components for tests,
+# and build docker containers
 npm run bootstrap
 
-# If pulling in changes on an outdated repository, or after rebasing, we recommend bootstrapping again
-# This will install node dependencies, set up symlinks for lerna, and build components for tests
+# If pulling in changes on an outdated repository, or after rebasing,
+# we recommend bootstrapping again. This will install node dependencies,
+# set up symlinks for lerna, and build components for tests
 npm run bootstrap:quick
 ```
+
+For more information on lerna, see [using lerna](#using-lerna).
+
+#### Text editor
 
 We use [Prettier](https://prettier.io/), an opinionated code formatter that integrates with your text editor. Configure [your
 IDE or text editor](https://prettier.io/docs/en/editors.html) to format your code automatically on save, and Prettier will
 adjust your syntax in accordance with the TDS conventions.
 
+For Visual Studio Code users, we recommend saving the following config in **.vscode/settings.json**
+
+```json
+{
+  "eslint.enable": true,
+  "eslint.options": {
+    "configFile": "config/eslint.config.js"
+  },
+  "editor.formatOnSave": true
+}
+```
+
 ### Set up your dev environment
 
-When developing components, we recommend using our documentation as a testing sandbox.
+When developing components, we recommend using our documentation (React Styleguidist) as a testing sandbox.
 
 ```bash
 # Start the styleguidist dev server, check output for the location of the docs
@@ -58,8 +88,12 @@ npm run dev
 npm run test:watch
 ```
 
-After this, you can open up a browser to view the documentation site (usually <http://localhost:6060>). The browser will
-automatically refresh when there are changes to any of the source files.
+After this, you can open up a browser to view the documentation site:
+
+- TDS Core: <http://localhost:6060>
+- TDS Community <http://localhost:6061>
+
+The browser will automatically refresh when there are changes to any of the source files.
 
 ## Write some code
 
@@ -133,11 +167,31 @@ If this does not resolve your issue, there could be an issue with duplicate depe
 To solve this, we use [lerna-update-wizard](https://www.npmjs.com/package/lerna-update-wizard) using the command `npx lernaupdate --dedupe` to
 assure duplicate packages are on the same version.
 
-## Running and updating tests
+## Building with quality
+
+Here is a TDS Component quality checklist:
+
+- Is the component accessible, or makes direct suggestions to building accessible experiences?
+- Is the component's functionality and rendering tested? Are there unit tests and end-to-end tests?
+- Does it work properly in mobile browsers, on mobile devices?
+- Is the component documented?
+- Are acceptance criteria and de
+
+The following sections go into greater detail on how to fulfill the component quality checklist.
+
+### Accessibility
+
+Accessibility mindfulness is essential when building design system components.
+
+<!-- TODO: complete section -->
+
+### Unit tests
 
 All TDS components use a combination of [Jest](https://jestjs.io/) tests and [Nightwatch](http://nightwatchjs.org/) visual regression tests. As part of our Git hooks, these tests are run automatically on commit and on push. However, there are cases where you may want to run these tests manually, or require the ability to update test snapshots that are no longer up to date with the component you're working on.
 
-## Writing unit tests with Jest
+TDS follows the [Reference Architecture standard on writing unit tests](ra-unit).
+
+#### Writing unit tests with Jest
 
 Jest unit tests are integrated into all TDS React components. These are run to ensure that a component's functionality has not been compromised by a change. These unit tests will check the component's different states by providing different sets of prop values, and compare them to a set of pre-defined criteria. It is important to create new unit tests whenever a feature is added or significantly modified to ensure the stability of the component.
 
@@ -152,7 +206,7 @@ npm run test -- [opts]
 # -u: Update test snapshots. (Useful if the component's structure has changed)
 ```
 
-## Running end-to-end (e2e) tests with Nightwatch
+### Running end-to-end (e2e) tests with Nightwatch
 
 Nightwatch e2e tests are run to ensure that no unexpected visual regressions were made to a component. These tests are run automatically on all components with no test writing required on the developer's part.
 
@@ -168,7 +222,7 @@ npm run test:e2e -- [opts]
 ## Make a commit
 
 To view a guide on how TDS components are versioned, see our [FAQ](../faq.md#how-is-tds-versioned).
-To view TELUS standards for commit format, see our [contribution model][contribution-model] on the Reference Architecture.
+To view TELUS standards for commit format, see our [contribution model][ra-contribute] on the Reference Architecture.
 
 We use [commitizen](https://github.com/commitizen/cz-cli) and [commitlint](https://github.com/marionebl/commitlint) to
 ensure conventional commit messages, which supports our publishing workflow and versioning scheme.
@@ -176,24 +230,38 @@ ensure conventional commit messages, which supports our publishing workflow and 
 [husky](https://github.com/typicode/husky) is used to run precommit tasks on staged files, which includes code formatting, linting, and tests.
 You will not be able to make a commit until the precommit tasks pass. We also have a prepush hook to run a full build before pushing your code.
 
-Automated component versioning is facilitated by the [Conventional Commits specification](https://conventionalcommits.org/), so you must
-be deliberate when choosing the type of commit.
+### Versioning via commits
+
+Automated component versioning is facilitated by the [Conventional Commits specification](https://conventionalcommits.org/),
+**it is important to be deliberate when choosing the type of commit** as commits will determine version bumps and
+changelogs.
+
+The commit type determines what version a component will bump towards, and will be included in changelogs. Use the `feat`
+and `fix` types sparingly as these two types will appear in changelogs. For most other commits such as fixups or configurations,
+use the `chore` type.
+
+For example, the [changelog for core-button](https://github.com/telus/tds-core/blob/3aa8d4e8ed4bfa480cb9cc205fa6d5b5b733b861/packages/Button/CHANGELOG.md) has an entry under version 2.1.0 that reads:
+
+> Features  
+> core-button: add forwardRef (fd8f181)
+
+This was parsed from a [commit](https://github.com/telus/tds-core/commit/fd8f181) using the `feat` type.
 
 ### Commit format
 
 Given the commit format:
 
-```git
-    type(scope): subject
+```sh
+type(scope): subject
 
-    body
+body
 
-    footer
+footer
 ```
 
 Use the `type` field to inform lerna what Conventional Commit you intend to use:
 
-- For breaking changes, use the **feat** commit type with body text that begins with the phrase "BREAKING CHANGE:"
+- For breaking changes, use the **feat** commit type with body text that begins with the phrase `BREAKING CHANGE:` (see [commit example](https://github.com/telus/tds-core/commit/0ff9dba))
 - For minor changes, use the **feat** commit type
 - For patches, use the **fix** commit type
 
@@ -214,7 +282,7 @@ the phrase 'BREAKING CHANGE:'.
 
 The `footer` field can be used to reference a commit hash or issue number on GitHub.
 
-#### Commit types
+### Commit types
 
 | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -239,11 +307,11 @@ npm run cz
 ### Example commit messages
 
 ```git
-    feat(core-flex-grid): remove center prop
+feat(core-flex-grid): remove center prop
 
-    BREAKING CHANGE: deprecated `center` prop is removed
+BREAKING CHANGE: deprecated `center` prop is removed
 
-    fix(core-button-link): adjust hover animation speed
+fix(core-button-link): adjust hover animation speed
 ```
 
 ## Make a Pull Request
@@ -262,5 +330,13 @@ npm run prepr
 The pre-pr task will show you the version change that will result from your changeset. If the output is unexpected, you may need
 to adjust your commit messages before making your PR. See the [Conventional Commits spec FAQ](https://conventionalcommits.org/#faq) for more info on correcting mistakes.
 
-[contribution-model]: https://github.com/telusdigital/reference-architecture/blob/f9d0670a8303351ed80589ea09fddb4f7757d19a/process/contribution-model.md
-[dpa]: https://github.com/telus/tds-community/blob/d0ab9c5c1661bcff4fbf123fdddff4413f51c336/guide/DigitalPlatformAmbassadors.md
+## References
+
+- [React Styleguidist](https://react-styleguidist.js.org/)
+- [lerna](https://github.com/lerna/lerna/issues)
+- [Conventional Commits](https://www.conventionalcommits.org/)
+- [Commitizen](https://github.com/commitizen/cz-cli)
+
+[dpa]: https://github.com/telus/tds-community/blob/02341a13529f1ef162e19485488cf6ab3d1ebd45/guide/DigitalPlatformAmbassadors.md
+[ra-contribute]: https://github.com/telusdigital/reference-architecture/blob/f9d0670a8303351ed80589ea09fddb4f7757d19a/process/contribution-model.md
+[ra-unit]: https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/testing/functional/unit.md

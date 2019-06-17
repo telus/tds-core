@@ -24,7 +24,7 @@ Learn more by reading the [TELUS Design Platform roadmap](roadmap.md).
 
 - Chrome
 - Firefox
-- Safari: 10
+- Safari: 10 and higher
 - MS Edge
 - Internet Explorer: 11
 - Opera
@@ -47,7 +47,7 @@ Treat TDS as you would any other third party dependency. Focus on testing the UI
 
 All TDS components accept most standard HTML attributes, which are helpful with testing. We recommend giving TDS components either `id` or `data-testid` attributes when you need to find or interact with them in tests.
 
-## What if I'm not using the RA?
+## What if I'm not using the Reference Architecture (RA)?
 
 Technically, TDS is a library of React components that are bundled as transpiled ES6 modules that can be used outside of the RA. However, it is **strongly** encouraged to use it together with the RA (TELUS digital Platform) to easily implement all of the standards that TELUS web properties need to follow and are enforced by [DRB](https://drb.telus.com).
 

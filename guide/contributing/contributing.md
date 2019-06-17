@@ -1,31 +1,51 @@
 # Contributing to TDS
 
+Role-specific guides and resources:
+
 - [Designer guide](./designer-guide.md)
 - [Developer guide](./developer-guide.md)
 - [Codebase overview](./codebase-overview.md)
 
-## Community
+## Introduction
 
-**_In early 2019, the TDS Platform team will be rolling out more robust architecture, tooling, and processes to better scale community component development and contribution._**
+There are many ways you can contribute to the design system, including submission of bug fixes, documentation improvements,
+and participation in discussions.
 
-While we are not looking for direct contributions of _new_ components to the main TDS codebase quite yet, there are many
-other ways you can contribute, including submission of bug fixes, documentation improvements, and participation in discussions.
+We welcome contributions to the currently available components. Check the [component documentation](ref://../components/index.html)
+to see what is on the roadmap for each one. If you would like to contribute to any of the available TDS components,
+see [how to contribute](#how-to).
 
-That being said, we welcome contributions of _enhancements_ to the currently available components in accordance with
-the component roadmaps. Check the [component documentation](ref://../components/index.html) to see what is on the roadmap
-for each one. If you'd like to contribute to any of the available TDS components, [follow the steps below](#1-submit-an-issue).
+## Component criteria
 
-Expect architectural changes and governance processes to be established soon that will drive a more mature contribution
-process. Thank you for your patience.
+Before designing or contributing new components, confirm the following criteria in order to qualify
+a viable community component. If the suggestion you would like to raise does not perfectly match the criteria below, don't
+be too discouraged from opening an issue anyway. The Digital Platform Ambassadors and TDS Core team will discuss opportunities with your proposal.
 
-Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md) or by [reaching out to us](../contact.md).
+<!-- TODO: add document for digital platform ambassadors -->
+
+A TDS component:
+
+1.  **Must** have an identified use case in at least 2 unique applications
+    - Community components have the most impact when shared across multiple situations in many experiences
+    - Core components have the most impact when shared across the majority of TELUS experiences
+2.  **Must** be brand aligned and assessed by Design Direction (if applicable)
+    - New user experience patterns must involve Design Direction to preserve a high-quality and consistent end customer experience.
+3.  **Must** not include business logic or proprietary information
+    - The presence of these things limits the breadth of reuse for a component
+    - Design system components are focused on reusable user experience patterns; they should act as a view that can accept predictable data types
+    - Keep business logic, API calls, content, or other application-specific behaviour in the application.
+4.  **Must** be sufficiently different than other available shared components
+    - Community components reduce duplication by promoting flexibility and reuse of existing code
+    - Before creating a new component, consider whether an existing pattern and component is sufficient. If not, consider extending or adding features to an existing component before creating a new one
+5.  **Should** be sufficiently granular to promote reuse - Design system components should encapsulate a single pattern or user experience "element." Seek to find the most granular, standalone, reusable pattern
+    <!-- TODO: remove duplicate information on tds-community -->
 
 ## How to contribute {#how-to}
 
 ### 1. Submit an issue {#1-submit-issue}
 
 We use [Github Issues](https://github.com/telusdigital/tds-core/issues) to track all of our bugs and open discussions so that
-they are visible to the community.
+they are visible to the all consumers of the design system.
 
 However, if you would like to make a small adjustment to documentation, you may jump straight to [opening a pull request](#3-make-a-pull-request).
 If you found a bug or would like to begin a conversation, follow these steps:
