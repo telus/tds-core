@@ -771,7 +771,7 @@ Video.propTypes = {
     })
   ).isRequired,
   /**
-   * A path of the image that will be displayed on the video's splash screen. If this is undefined, it will pull an image from the loaded video file.
+   * A path of the image that will be displayed on the video's splash screen.
    */
   posterSrc: PropTypes.string.isRequired,
   /**
