@@ -192,7 +192,7 @@ Accessibility mindfulness is essential when building design system components. A
 - Using `aria-` attributes only when absolutely necessary
 - Providing visible labels and visual focus states for interactive elements
 - Adapting spacing or font appearance to browser font configurations
-- Animations or reduced or omitted when environments are configured for reduced motion
+- Animations or reduced or omitted when environments are configured for [reduced motion][css-tricks-reduced-motion]
 - Visually hidden elements are also unreadable by assistive technology
 - Keyboard navigation is possible and meaningful
 - Voiceover tools can announce content or actions appropriately
@@ -321,13 +321,23 @@ npm install ~/path/to/tds/packages/ComponentName/tds-tarball.tgz
 
 Learn more about [npm pack on npm](https://docs.npmjs.com/cli/pack).
 
+#### Testing in browsers
+
 Once your project is set up, be sure to test in all [supported browsers][faq-browsers] including:
 
 - Safari and Chrome on iOS
 - Chrome on Android
 - Internet Explorer 11
 
-Always test mobile devices first.
+Always test mobile devices first. While testing, perform the following checks at least:
+
+- Tests in [aXe][axe] or [Wave][wave] pass
+- Component renders fully in viewports from 320px width or greater
+- Component renders legibly when browser font size is adjusted from 16px to 32px
+- Interactive elements are keyboard navigable
+- Assistive technology can parse copy in a reasonable order
+- Animations are slowed or removed when [reduced motion][css-tricks-reduced-motion] is enabled
+- Focusable items are followed when using a screen magnifier
 
 ## Make a commit
 
@@ -448,9 +458,13 @@ to adjust your commit messages before making your PR. See the [Conventional Comm
 - [lerna](https://github.com/lerna/lerna/issues)
 - [Conventional Commits](https://www.conventionalcommits.org/)
 - [Commitizen](https://github.com/commitizen/cz-cli)
+- [CSS-Tricks.com: An introduction to the reduced motion media query][css-tricks-reduced-motion]
 
 [dpa]: https://github.com/telus/tds-community/blob/02341a13529f1ef162e19485488cf6ab3d1ebd45/guide/DigitalPlatformAmbassadors.md
 [ra-contribute]: https://github.com/telusdigital/reference-architecture/blob/f9d0670a8303351ed80589ea09fddb4f7757d19a/process/contribution-model.md
 [ra-unit]: https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/testing/functional/unit.md
 [ra-accessibility]: https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/development/accessibility.md
 [faq-browsers]: ../faq.md#what-browsers-does-tds-support
+[css-tricks-reduced-motion]: https://css-tricks.com/introduction-reduced-motion-media-query/
+[axe]: https://www.deque.com/axe/
+[wave]: https://wave.webaim.org/
