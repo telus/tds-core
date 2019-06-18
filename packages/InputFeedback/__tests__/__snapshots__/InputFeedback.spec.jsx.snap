@@ -1,8 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputFeedback renders 1`] = `
+exports[`InputFeedback can have a feedback state 1`] = `
+.c0 {
+  border-radius: 4px;
+  background-color: #f7f7f8;
+}
+
 <div
-  class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 default"
+  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c0"
+  role={null}
+>
+  Some feedback text.
+</div>
+`;
+
+exports[`InputFeedback can have a feedback state 2`] = `
+.c0 {
+  border-radius: 4px;
+  background-color: #f4f9f2;
+}
+
+<div
+  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c0"
+  role={null}
+>
+  Some feedback text.
+</div>
+`;
+
+exports[`InputFeedback renders 1`] = `
+.c0 {
+  border-radius: 4px;
+  background-color: #f7f7f8;
+}
+
+<div
+  class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c0"
 >
   Some inputFeedback text.
 </div>
