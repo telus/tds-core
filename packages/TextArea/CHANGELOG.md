@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telus/tds/compare/@tds/core-text-area@2.0.18...@tds/core-text-area@3.0.0) (2019-06-18)
+
+
+### Features
+
+* **core-text-area:** upgrade to styled-components ([10f10aa](https://github.com/telus/tds/commit/10f10aa))
+
+
+### BREAKING CHANGES
+
+* **core-text-area:** styled-components is now a peer dep
+
+
+
+
+
 ## [2.0.18](https://github.com/telus/tds/compare/@tds/core-text-area@2.0.17...@tds/core-text-area@2.0.18) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-text-area

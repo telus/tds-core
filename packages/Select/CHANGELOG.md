@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telus/tds/compare/@tds/core-select@2.0.21...@tds/core-select@3.0.0) (2019-06-18)
+
+
+### Features
+
+* **core-select:** convert to styled-components ([45e277b](https://github.com/telus/tds/commit/45e277b))
+
+
+### BREAKING CHANGES
+
+* **core-select:** styled-components is now a peer dep
+- value will now override defaultValue
+- error messages can only appear when feedback is set to 'error'
+
+
+
+
+
 ## [2.0.21](https://github.com/telus/tds/compare/@tds/core-select@2.0.20...@tds/core-select@2.0.21) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-select

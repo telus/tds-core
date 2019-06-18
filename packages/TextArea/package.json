@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-text-area",
-  "version": "2.0.18",
+  "version": "3.0.0",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
