@@ -1,11 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import Box from '@tds/core-box'
 
+import { borders, messaging } from '@tds/shared-styles'
 import safeRest from '../../shared/utils/safeRest'
 
-import styles from './InputFeedback.modules.scss'
+const StyledFeedback = styled(({ feedback, ...rest }) => <Box {...rest} />)(({ feedback }) => ({
+  ...borders.rounded,
+  ...(feedback === 'success' && messaging.success),
+  ...(feedback === 'error' && messaging.error),
+  ...(feedback === undefined && messaging.standard),
+}))
 
 /**
  * A feedback box commonly used with form fields.
@@ -13,14 +20,14 @@ import styles from './InputFeedback.modules.scss'
  * @version ./package.json
  */
 const InputFeedback = ({ feedback, children, ...rest }) => (
-  <Box
+  <StyledFeedback
     {...safeRest(rest)}
     inset={3}
-    className={feedback ? styles[feedback] : styles.default}
     role={feedback === 'error' ? 'alert' : null}
+    feedback={feedback}
   >
     {children}
-  </Box>
+  </StyledFeedback>
 )
 
 InputFeedback.propTypes = {

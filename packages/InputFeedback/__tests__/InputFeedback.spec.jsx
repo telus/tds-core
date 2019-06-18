@@ -22,10 +22,10 @@ describe('InputFeedback', () => {
 
   it('can have a feedback state', () => {
     let inputFeedback = doMount()
-    expect(inputFeedback).toHaveClassName('default')
+    expect(inputFeedback).toMatchSnapshot()
 
     inputFeedback = doMount({ feedback: 'success' })
-    expect(inputFeedback).toHaveClassName('success')
+    expect(inputFeedback).toMatchSnapshot()
   })
 
   it('passes additional attributes to the element', () => {
