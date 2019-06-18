@@ -9,10 +9,12 @@
 - [Using lerna](#using-lerna)
   - [How lerna works within TDS](#how-lerna-works-within-TDS)
   - [Helpful lerna commands](#helpful-lerna-commands)
-- [Building with quality](#building-with-quality)
+- [Quality checklist](#quality-checklist)
   - [Accessibility](#accessibility)
   - [Unit tests](#unit-tests)
-  - [Running end-to-end (e2e) tests with Nightwatch](#running-end-to-end-e2e-tests-with-Nightwatch)
+  - [e2e tests](#e2e-tests)
+  - [npm package](#npm-package)
+  - [Manual tests](#manual-tests)
 - [Make a commit](#make-a-commit)
   - [Versioning via commits](#versioning-via-commits)
   - [Commit format](#commit-format)
@@ -167,23 +169,47 @@ If this does not resolve your issue, there could be an issue with duplicate depe
 To solve this, we use [lerna-update-wizard](https://www.npmjs.com/package/lerna-update-wizard) using the command `npx lernaupdate --dedupe` to
 assure duplicate packages are on the same version.
 
-## Building with quality
+## Quality checklist
 
-Here is a TDS Component quality checklist:
+Be sure to fulfill all items in this quality checklist for TDS components:
 
-- Is the component accessible, or makes direct suggestions to building accessible experiences?
-- Is the component's functionality and rendering tested? Are there unit tests and end-to-end tests?
-- Does it work properly in mobile browsers, on mobile devices?
-- Is the component documented?
-- Are acceptance criteria and de
+- [Accessibility](#accessibility): is the component accessible, or makes direct suggestions to building accessible experiences?
+- [Unit tests](#unit-tests): is the component's functionality and rendering tested?
+- [e2e tests](#e2e-tests): is there an accurate baseline image?
+- Documentation: is the component documented with examples? Are there usage criteria for designers, and accessibility considerations clearly written?
+- [npm package](#npm-package): is the package manifest appropriately set up? Does it build? Is the distributable build lean?
+- [Manual tests](#manual-tests): has the component been tested in [supported browsers][faq-browsers]?
+  - **Mobile first**: does it work properly in mobile browsers, on mobile devices? Is the component responsive?
+- User story: are acceptance criteria fulfilled, and coded component matches designs?
 
 The following sections go into greater detail on how to fulfill the component quality checklist.
 
 ### Accessibility
 
-Accessibility mindfulness is essential when building design system components.
+Accessibility mindfulness is essential when building design system components. After making considerations such as:
 
-<!-- TODO: complete section -->
+- Choosing which [semantic HTML elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML) to use
+- Using `aria-` attributes only when absolutely necessary
+- Providing visible labels and visual focus states for interactive elements
+- Adapting spacing or font appearance to browser font configurations
+- Animations or reduced or omitted when environments are configured for reduced motion
+- Visually hidden elements are also unreadable by assistive technology
+- Keyboard navigation is possible and meaningful
+- Voiceover tools can announce content or actions appropriately
+
+There are many considerations and experiences outside the component's control, and they are within the scope of the consuming application.
+For this reason, it is important to provide accessibility guides since consuming the component alone does not guarantee the
+consuming application is accessible. Consider the following when writing helpful documentation:
+
+- Content supplied to the component in various languages, particularly English and French, should be within a recommended character length
+- If handling asynchronous content, assure loaded content is within close proximity to the initiating action area
+- Props that modify the component in ways that directly affect assistive technology, such as heading levels, labels, or
+  disabling of elements should be explicitly documented
+
+Read more about accessibility at TELUS at:
+
+- [TDS Foundational Principles: Accessibility](../accessibility/accessibility.md)
+- [Reference Architecture: Accessibility][ra-accessibility]
 
 ### Unit tests
 
@@ -206,7 +232,7 @@ npm run test -- [opts]
 # -u: Update test snapshots. (Useful if the component's structure has changed)
 ```
 
-### Running end-to-end (e2e) tests with Nightwatch
+### e2e tests
 
 Nightwatch e2e tests are run to ensure that no unexpected visual regressions were made to a component. These tests are run automatically on all components with no test writing required on the developer's part.
 
@@ -218,6 +244,90 @@ npm run test:e2e -- [opts]
 # -a: Run tests on all components regardless of if they were recently modified.
 # -u: Update test screenshots. (Useful if the component was purposefully changed visually)
 ```
+
+**Note**: after running the above command, a docker container will be running the component catalogue (built with React Styleguidist).
+To stop the container, gather the container's `id` by running `docker ps`, and then stop the container using `docker stop [id]`.
+
+### npm package
+
+Being a component library shipped to npm, proper configuration to the file **package.json** is critical to its successful consumption. Please ensure the following:
+
+- An appropriate `name` is configured. Core components begin with `@tds/core-` and community components begin with `@tds/community-`
+- `peerDependencies` includes key value pairs for the following dependencies (if using styled components)
+  ```json
+  "peerDependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "styled-components": "^4.1.3"
+  }
+  ```
+- `dependencies` only contains what is required for the package to run, and they should be publicly available on npm.
+  Private or erroneous dependencies should be omitted
+- `devDependencies` only contains what is required for testing or building into the final distributable
+
+#### Inspecting builds
+
+Every components' distributable code is ignored by git in every packages' respective **dist** directory. They must be built by Rollup
+before they can be inspected. Once built, view the code within either **index.es.js** (ECMAScript) or **index.cjs.js** (CommonJS) and
+assure none of the package's dependencies were unintentionally included. If they were, there may be an issue with how **package.json**
+or **rollup.config.js** is configured.
+
+<!-- TODO: add summary of how we name things -->
+
+### Manual tests
+
+To ensure all consumers of TDS will be able to consume and build their applications with a component, it must be compatible with a
+TELUS starter kit application. To test a yet-released component in your own application, we recommend the following techniques:
+
+#### Option 1: npm link
+
+`npm link` allows you to rapidly test a package via symlinks. To test with npm link, run these commands:
+
+```sh
+# TDS root directory
+npm run build -- @tds/your-component-name
+cd packages/ComponentName
+npm link
+```
+
+Once you have a package linked, it needs to be linked within your project. You will also need to manually add the component's
+package name to your project's **package.json**. Run these commands to add symlinks within your project's **node_modules** directory:
+
+```sh
+# Your project
+cd ~/path/to/your/project
+npm link @tds/component-name
+```
+
+Learn more about [npm link on npm](https://docs.npmjs.com/cli/link).
+
+#### Option 2: npm pack
+
+`npm pack` builds a tarball that can be installed in project via `npm install`; it also represents the final package that gets shipped to the npm registry. To set up a package tarball, run these commands:
+
+```sh
+# TDS root directory
+npm run build -- @tds/your-component-name
+cd packages/ComponentName
+npm pack
+```
+
+Once your tarball is built, install it directly within your project's **node_modules** directory:
+
+```sh
+# Your project
+npm install ~/path/to/tds/packages/ComponentName/tds-tarball.tgz
+```
+
+Learn more about [npm pack on npm](https://docs.npmjs.com/cli/pack).
+
+Once your project is set up, be sure to test in all [supported browsers][faq-browsers] including:
+
+- Safari and Chrome on iOS
+- Chrome on Android
+- Internet Explorer 11
+
+Always test mobile devices first.
 
 ## Make a commit
 
@@ -332,6 +442,8 @@ to adjust your commit messages before making your PR. See the [Conventional Comm
 
 ## References
 
+- [TDS Foundational Principles: Accessibility](../accessibility/accessibility.md)
+- [Reference Architecture: Accessibility][ra-accessibility]
 - [React Styleguidist](https://react-styleguidist.js.org/)
 - [lerna](https://github.com/lerna/lerna/issues)
 - [Conventional Commits](https://www.conventionalcommits.org/)
@@ -340,3 +452,5 @@ to adjust your commit messages before making your PR. See the [Conventional Comm
 [dpa]: https://github.com/telus/tds-community/blob/02341a13529f1ef162e19485488cf6ab3d1ebd45/guide/DigitalPlatformAmbassadors.md
 [ra-contribute]: https://github.com/telusdigital/reference-architecture/blob/f9d0670a8303351ed80589ea09fddb4f7757d19a/process/contribution-model.md
 [ra-unit]: https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/testing/functional/unit.md
+[ra-accessibility]: https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/development/accessibility.md
+[faq-browsers]: ../faq.md#what-browsers-does-tds-support
