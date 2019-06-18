@@ -14,41 +14,36 @@ Learn more by reading the [TELUS Design Platform roadmap](../roadmap.md) or by [
 
 TDS Core and TDS Community are very similar. They have:
 
-- Tooling: Sketch users consume InVision DSM components, React users consume npm packages
-- Quality: both Core and Community embody the same quality standards
+- **Tooling**: Sketch users consume InVision DSM components, React users consume npm packages
+- **Quality**: both Core and Community embody the same quality standards
 
 Core and Community differ in the following ways:
 
-- Governance: Core's roadmap and maintenance is determined by a single product team, whereas Community utilizes a federated governance model;
+- **Governance**: Core's roadmap and maintenance is determined by a single product team, whereas Community utilizes a federated governance model;
   with a group of representatives from every major team at TELUS appraising and triaging contributions made to Community components
-- Reusability: Core components typically wrap simple patterns that are highly reusable across most teams, whereas Community components
+- **Reusability**: Core components typically wrap simple patterns that are highly reusable across most teams, whereas Community components
   represent solved designs that are coded and sharable among outcome teams without reliance on the Core design system team
-- Ownership: Core components are built and maintained by the TELUS Design System team. Community components are built and maintained by all consumers, and and owned by the Digital Platform Ambassadors
+- **Ownership**: Core components are built and maintained by the TELUS Design System team. Community components are built and maintained by all consumers, and and owned by the Digital Platform Ambassadors
   <!-- TODO: add link to digital platform ambassadors -->
 
 ## Component principles
 
 All TELUS Design System components follow these core principles.
 
+<!-- prettier-ignore-start -->
+
 1. Composable
-
-- Components are most effective when they can be combined to form more complex patterns.
-
+  - Components are most effective when they can be combined to form more complex patterns.
 2. Accessible
-
-- Follow accessible standards defined in the [TELUS Reference Architecture](https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/development/accessibility.md)
-
+  - Follow accessible standards defined in the [TELUS Reference Architecture](https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/development/accessibility.md)
 3. Responsive
-
-- Mobile-first. Works on any viewport size.
-
+  - Mobile-first. Works on any viewport size.
 4. Quality
-
-- Thorough testing is a first class concern.
-
+  - Thorough testing is a first class concern.
 5. Cross-browser
+  - See browser support in [the FAQ](faq.md#what-browsers-does-tds-support)
 
-- See browser support in [the FAQ](faq.md#what-browsers-does-tds-support)
+<!-- prettier-ignore-end -->
 
 ## References
 
