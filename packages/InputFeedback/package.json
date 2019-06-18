@@ -29,8 +29,5 @@
     "@tds/core-box": "^1.2.4",
     "@tds/shared-styles": "^1.2.1",
     "prop-types": "^15.5.10"
-  },
-  "devDependencies": {
-    "@tds/core-colours": "^1.1.2"
   }
 }
