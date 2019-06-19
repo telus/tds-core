@@ -13,7 +13,6 @@ coverage
 # IDE project files
 .idea
 *.iws
-.vscode
 
 # TDS build artifacts
 dist/
