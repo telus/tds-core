@@ -72,7 +72,34 @@ import '@tds/core-css-reset/dist/index.css'
 render(<App />, document.getElementById('root'))
 ```
 
-### 3. Use TDS Components
+### 3. Include the required polyfills
+
+In order to support Internet Explorer 11, the following polyfills should be included in your application.
+
+- `es6`
+- `Array.prototype.includes`
+- `Set`
+
+```html
+<html>
+  <head>
+    ...
+    <link
+      rel="preload"
+      as="script"
+      href="https://polyfill.io/v3/polyfill.min.js?features=es6%2CArray.prototype.includes%2CSet"
+    />
+    ...
+  </head>
+  <body>
+    ...
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6%2CArray.prototype.includes%2CSet"></script>
+    ...
+  </body>
+</html>
+```
+
+### 4. Use TDS Components
 
 TDS components are made to be composed. Each one accomplishes a specific purpose. Combine them to create more complex components for your application.
 
@@ -100,7 +127,7 @@ const BannerText = ({ onDownloadClick }) => (
 export default BannerText
 ```
 
-### 4. Use TDS colours
+### 5. Use TDS colours
 
 Colour is the one exception, as the colour palette is available as Sass variables. While the TDS components already have colour baked in, you may use the TDS colour variables to add style to your own components such as setting background colours or border colours.
 
