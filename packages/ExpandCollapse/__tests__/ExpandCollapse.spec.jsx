@@ -107,7 +107,7 @@ describe('ExpandCollapse', () => {
         <ExpandCollapse>{aPanel({ id: 'panel-1', header: 'TELUS^^TM^^' })}</ExpandCollapse>
       )
 
-      expect(findPanelHeader('panel-1')).toContainReact(<Text.Sup>TM</Text.Sup>)
+      expect(findPanelHeader('panel-1')).toContainReact(<sup>TM</sup>)
     })
 
     it('can be a string with trademark, and registered HTML entities', () => {
@@ -252,7 +252,7 @@ describe('ExpandCollapse', () => {
       )
 
       const panelHeader = findPanelHeader('panel-1')
-      expect(panelHeader).toHaveClassName('disabled')
+      expect(panelHeader).toMatchSnapshot()
       expect(panelHeader).toBeDisabled()
     })
 
@@ -283,9 +283,7 @@ describe('ExpandCollapse', () => {
       const { expandCollapse } = doMount(
         <ExpandCollapse tag="h3">{aPanel({ id: 'panel-1' })}</ExpandCollapse>
       )
-      expect(expandCollapse.find(`[data-testid="headerWrapper"]`).children()).toHaveDisplayName(
-        'Clickable'
-      )
+      expect(expandCollapse.find(`[data-testid="headerWrapper"]`).children()).toMatchSnapshot()
     })
   })
 
