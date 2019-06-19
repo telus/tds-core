@@ -15,23 +15,23 @@ describe('HairlineDivider', () => {
   it('is an HTMl hr element', () => {
     const hairlineDivider = doShallow()
 
-    expect(hairlineDivider).toHaveDisplayName('hr')
+    expect(hairlineDivider.render()[0].name).toEqual('hr')
   })
 
   it('can be horizontal or vertical', () => {
     let hairlineDivider = doShallow()
-    expect(hairlineDivider).toHaveClassName('horizontalThin')
+    expect(hairlineDivider.prop('vertical')).toEqual(false)
 
     hairlineDivider = doShallow({ vertical: true })
-    expect(hairlineDivider).toHaveClassName('verticalThin')
+    expect(hairlineDivider.prop('vertical')).toEqual(true)
   })
 
   it('can have a gradient', () => {
     let hairlineDivider = doShallow()
-    expect(hairlineDivider).toHaveClassName('horizontalThin')
+    expect(hairlineDivider.prop('gradient')).toEqual(false)
 
     hairlineDivider = doShallow({ gradient: true })
-    expect(hairlineDivider).toHaveClassName('horizontalGradient')
+    expect(hairlineDivider.prop('gradient')).toEqual(true)
   })
 
   it('passes additional attributes to the element', () => {

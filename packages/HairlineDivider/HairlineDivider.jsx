@@ -1,25 +1,56 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+import { borders, spacing } from '@tds/shared-styles'
+import { colorGainsboro } from '@tds/core-colours'
 
 import safeRest from '../../shared/utils/safeRest'
 
-import styles from './HairlineDivider.modules.scss'
-
-const getClassName = (vertical, gradient) => {
-  let hrClass
-
-  if (vertical && gradient) {
-    hrClass = 'verticalGradient'
-  } else if (vertical && !gradient) {
-    hrClass = 'verticalThin'
-  } else if (!vertical && gradient) {
-    hrClass = 'horizontalGradient'
-  } else {
-    hrClass = 'horizontalThin'
-  }
-
-  return hrClass
+const horizontalStyle = {
+  width: '100%',
+  height: '1px',
 }
+
+const verticalStyle = {
+  display: 'inline-block',
+  width: '1px',
+}
+
+const StyledHairlineDivider = styled.hr(spacing.noSpacing, borders.none, props => {
+  if (props.vertical && props.gradient) {
+    return {
+      ...verticalStyle,
+      'background-image': `
+        linear-gradient(0deg, rgba(216, 216, 216, 0) 0%,
+        ${colorGainsboro} 12%,
+        ${colorGainsboro} 88%,
+        rgba(216, 216, 216, 0) 100%)
+      `,
+    }
+  }
+  if (props.vertical && !props.gradient) {
+    return {
+      ...verticalStyle,
+      'background-color': colorGainsboro,
+    }
+  }
+  if (!props.vertical && props.gradient) {
+    return {
+      ...horizontalStyle,
+      'background-image': `
+        linear-gradient(90deg, rgba(216, 216, 216, 0) 0%,
+        ${colorGainsboro} 7%,
+        ${colorGainsboro} 93%,
+        rgba(216, 216, 216, 0) 100%)
+      `,
+    }
+  }
+  return {
+    ...horizontalStyle,
+    'background-color': colorGainsboro,
+  }
+})
 
 /**
  * Separate content within modules.
@@ -27,7 +58,7 @@ const getClassName = (vertical, gradient) => {
  * @version ./package.json
  */
 const HairlineDivider = ({ vertical, gradient, ...rest }) => (
-  <hr {...safeRest(rest)} className={styles[getClassName(vertical, gradient)]} />
+  <StyledHairlineDivider {...safeRest(rest)} vertical={vertical} gradient={gradient} />
 )
 
 HairlineDivider.propTypes = {
