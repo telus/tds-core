@@ -1,21 +1,18 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
+import { colorAthensGrey } from '@tds/core-colours'
 import DecorativeIcon from '@tds/core-decorative-icon'
+import { media } from '@tds/core-responsive'
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import DimpleDivider from '@tds/core-dimple-divider'
 import { Reveal, Translate } from '@tds/shared-animation'
-
-import Clickable from '../../../shared/components/Clickable/Clickable'
-import Flexbox from '../../../shared/components/Flexbox/Flexbox'
-
-import joinClassNames from '../../../shared/utils/joinClassNames'
-
-import styles from './PanelWrapper.modules.scss'
-import displayStyles from '../../../shared/styles/Display.modules.scss'
+import { spacing, borders, forms } from '@tds/shared-styles'
+import { color } from '@tds/shared-typography'
 
 const parseHeader = text => {
   const t = text
@@ -29,10 +26,61 @@ const parseHeader = text => {
       if (index % 2 === 0) {
         return line
       }
-      return <Text.Sup key={line}>{line}</Text.Sup>
+      return <sup key={line}>{line}</sup>
     })
   return t
 }
+
+const HeaderButtonClickable = styled.button(
+  spacing.noSpacing,
+  borders.none,
+  forms.font,
+  color,
+  ({ panelDisabled }) => ({
+    appearance: 'none',
+    background: panelDisabled ? colorAthensGrey : 'none',
+    boxShadow: 'none',
+    cursor: panelDisabled ? 'default' : 'pointer',
+    width: '100%',
+    textAlign: 'left',
+  })
+)
+
+const CaretContainer = styled.div(({ isDisabled }) => ({
+  ...(isDisabled && { visibility: 'hidden' }),
+}))
+
+const HeaderContainer = styled.div(({ direction }) => ({
+  display: 'flex',
+  flexDirection: direction,
+  flex: '1 1 auto',
+  width: '100%',
+  alignItems: 'flex-start',
+}))
+
+const HeaderTitleContainer = styled.div({ width: '100%' })
+
+const HeaderSubtextContainer = styled.div({ lineHeight: '1px' })
+
+const TertiaryTextAlignmentContainer = styled.div({
+  ...media.until('md').css({
+    alignSelf: 'flex-end',
+  }),
+})
+
+const ShowFromMd = styled.div({
+  display: 'none',
+  ...media.from('md').css({
+    display: 'inline-block',
+  }),
+})
+
+const ShowUntilMd = styled.div({
+  display: 'inline-block',
+  ...media.from('md').css({
+    display: 'none',
+  }),
+})
 
 class PanelWrapper extends React.Component {
   constructor(props) {
@@ -83,7 +131,7 @@ class PanelWrapper extends React.Component {
 
   renderCaret = (disabled, hover, open) => {
     return (
-      <div className={disabled ? displayStyles.invisible : undefined}>
+      <CaretContainer isDisabled={disabled}>
         <Translate timeout={300} in={hover} direction="y" distance={open ? '-0.25rem' : '0.25rem'}>
           {() => (
             <Text size="large">
@@ -91,39 +139,39 @@ class PanelWrapper extends React.Component {
             </Text>
           )}
         </Translate>
-      </div>
+      </CaretContainer>
     )
   }
 
   renderHeader = (header, subtext, tertiaryText) => {
     return (
-      <Flexbox direction="row" dangerouslyAddClassName={styles.headerAlign}>
-        <Flexbox direction="column" dangerouslyAddClassName={styles.headerAlign}>
-          <div className={styles.fullWidth}>
+      <HeaderContainer direction="row">
+        <HeaderContainer direction="column">
+          <HeaderTitleContainer>
             <Text size="large">{parseHeader(header)}</Text>
-          </div>
+          </HeaderTitleContainer>
           {subtext && (
-            <div className={styles.subtextContainer}>
+            <HeaderSubtextContainer>
               <Text size="small">{subtext}</Text>
-            </div>
+            </HeaderSubtextContainer>
           )}
-        </Flexbox>
+        </HeaderContainer>
 
         {tertiaryText && (
-          <span className={styles.alignSelfFlexEnd}>
-            <span className={styles.showFromMd}>
+          <TertiaryTextAlignmentContainer>
+            <ShowFromMd>
               <Text data-testid="tertiarytext" size="large">
                 {tertiaryText}
               </Text>
-            </span>
-            <span className={styles.showUntilMd}>
+            </ShowFromMd>
+            <ShowUntilMd>
               <Text data-testid="tertiarytext" size="medium">
                 {tertiaryText}
               </Text>
-            </span>
-          </span>
+            </ShowUntilMd>
+          </TertiaryTextAlignmentContainer>
         )}
-      </Flexbox>
+      </HeaderContainer>
     )
   }
 
@@ -139,11 +187,11 @@ class PanelWrapper extends React.Component {
     } = this.props
 
     const headerButton = (
-      <Clickable
+      <HeaderButtonClickable
+        panelDisabled={panelDisabled}
         onClick={onClick}
         onMouseEnter={this.mouseEnter}
         onMouseLeave={this.mouseLeave}
-        className={joinClassNames(styles.header, panelDisabled && styles.disabled)}
         disabled={panelDisabled}
         aria-expanded={this.state.open}
       >
@@ -153,7 +201,7 @@ class PanelWrapper extends React.Component {
             {this.renderHeader(panelHeader, panelSubtext, panelTertiaryText)}
           </Box>
         </Box>
-      </Clickable>
+      </HeaderButtonClickable>
     )
 
     return (

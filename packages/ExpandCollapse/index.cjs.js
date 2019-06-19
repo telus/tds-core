@@ -1,4 +1,3 @@
-require('./dist/index.css')
 const ExpandCollapse = require('./dist/index.cjs').ExpandCollapse
 const Accordion = require('./dist/index.cjs').Accordion
 

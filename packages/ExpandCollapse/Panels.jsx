@@ -1,5 +1,9 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
+
+import { colorWhite } from '@tds/core-colours'
+
 import { componentWithName } from '@tds/util-prop-types'
 
 import HairlineDivider from '@tds/core-hairline-divider'
@@ -8,10 +12,10 @@ import safeRest from '../../shared/utils/safeRest'
 
 import PanelWrapper from './PanelWrapper/PanelWrapper'
 
-import styles from './ExpandCollapse.modules.scss'
+const PanelBase = styled.div({ backgroundColor: colorWhite })
 
 const Panels = ({ topDivider, isPanelOpen, togglePanel, tag, children, ...rest }) => (
-  <div {...safeRest(rest)} className={styles.base}>
+  <PanelBase {...safeRest(rest)}>
     {topDivider && <HairlineDivider />}
 
     {React.Children.toArray(children)
@@ -36,7 +40,7 @@ const Panels = ({ topDivider, isPanelOpen, togglePanel, tag, children, ...rest }
           </PanelWrapper>
         )
       })}
-  </div>
+  </PanelBase>
 )
 
 Panels.propTypes = {
