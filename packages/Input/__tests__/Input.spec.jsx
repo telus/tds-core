@@ -122,22 +122,17 @@ describe('Input', () => {
 
   describe('editability', () => {
     it('supports string values or number values', () => {
-      let findInputElement = doMount().findInputElement
-      expect(findInputElement()).toHaveValue(undefined)
+      const onChangeMock = jest.fn()
 
-      findInputElement = doMount({ value: 'some value', readOnly: true }).findInputElement
+      let findInputElement = doMount({ value: 'some value', readOnly: true }).findInputElement
       expect(findInputElement()).toHaveValue('some value')
+
+      findInputElement = doMount({ value: 'another value', onChange: onChangeMock })
+        .findInputElement
+      expect(findInputElement()).toHaveValue('another value')
 
       findInputElement = doMount({ value: 55, readOnly: true }).findInputElement
       expect(findInputElement()).toHaveValue(55)
-    })
-
-    it('has a value that can be changed', () => {
-      const { findInputElement, input } = doMount({ value: 'initial value', readOnly: true })
-
-      input.setProps({ value: 'new value' })
-
-      expect(findInputElement()).toHaveValue('new value')
     })
 
     it('will notify when its value changes', () => {
@@ -163,12 +158,9 @@ describe('Input', () => {
 
   describe('default values', () => {
     it('can be mounted with default value', () => {
-      const { findInputElement, changeValueTo } = doMount({ defaultValue: 'initial value' })
-      expect(findInputElement()).toHaveValue(undefined)
-
-      changeValueTo('new value')
-
-      expect(findInputElement()).toHaveValue(undefined)
+      const { findInputElement } = doMount({ defaultValue: 'initial value' })
+      const input = findInputElement().getDOMNode()
+      expect(input.value).toEqual('initial value')
     })
   })
 
