@@ -180,7 +180,7 @@ const Input = React.forwardRef(
             type={type}
             ref={ref}
             id={fieldId.identity()}
-            value={value}
+            {...(value ? { value } : {})}
             feedback={feedback}
             aria-invalid={feedback === 'error'}
             aria-describedby={errorId || hintId || helperId || undefined}
