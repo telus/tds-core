@@ -64,17 +64,8 @@ We use [Prettier](https://prettier.io/), an opinionated code formatter that inte
 IDE or text editor](https://prettier.io/docs/en/editors.html) to format your code automatically on save, and Prettier will
 adjust your syntax in accordance with the TDS conventions.
 
-For Visual Studio Code users, we recommend saving the following config in **.vscode/settings.json**
-
-```json
-{
-  "eslint.enable": true,
-  "eslint.options": {
-    "configFile": "config/eslint.config.js"
-  },
-  "editor.formatOnSave": true
-}
-```
+For Visual Studio Code users, we have a config file **.vscode/settings.json** checked in. It connects the Prettier extension
+to our ESLint config file to automatically format files when saved.
 
 ### Set up your dev environment
 
@@ -93,7 +84,7 @@ npm run test:watch
 After this, you can open up a browser to view the documentation site:
 
 - TDS Core: <http://localhost:6060>
-- TDS Community <http://localhost:6061>
+- TDS Community: <http://localhost:6061>
 
 The browser will automatically refresh when there are changes to any of the source files.
 
@@ -186,23 +177,25 @@ The following sections go into greater detail on how to fulfill the component qu
 
 ### Accessibility
 
-Accessibility mindfulness is essential when building design system components. After making considerations such as:
+Accessibility mindfulness is essential when building design system components. There are several experiences developers must
+take into account when developing components, such as:
 
 - Choosing which [semantic HTML elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML) to use
 - Using `aria-` attributes only when absolutely necessary
 - Providing visible labels and visual focus states for interactive elements
 - Adapting spacing or font appearance to browser font configurations
 - Animations or reduced or omitted when environments are configured for [reduced motion][css-tricks-reduced-motion]
-- Visually hidden elements are also unreadable by assistive technology
-- Keyboard navigation is possible and meaningful
-- Voiceover tools can announce content or actions appropriately
+- Whether assistive technology should be able to read intentionally hidden content
+- Keyboard navigation is possible, passing through elements in a consistent order (typically from left to right, top to bottom)
+- Voiceover tools can announce content or actions appropriately, such as when an action toggles an adjacent element opened or closed, signalled by `aria-expanded`
+- Desirable areas of interactive elements can be focused using a screen magnifier; the focus area should not be a small corner of an element that isn't a clear label or actionable affordance
 
 There are many considerations and experiences outside the component's control, and they are within the scope of the consuming application.
 For this reason, it is important to provide accessibility guides since consuming the component alone does not guarantee the
 consuming application is accessible. Consider the following when writing helpful documentation:
 
 - Content supplied to the component in various languages, particularly English and French, should be within a recommended character length
-- If handling asynchronous content, assure loaded content is within close proximity to the initiating action area
+- If handling asynchronous content, ensure loaded content is within close proximity to the initiating action area
 - Props that modify the component in ways that directly affect assistive technology, such as heading levels, labels, or
   disabling of elements should be explicitly documented
 
@@ -337,7 +330,6 @@ Always test mobile devices first. While testing, perform the following checks at
 - Interactive elements are keyboard navigable
 - Assistive technology can parse copy in a reasonable order
 - Animations are slowed or removed when [reduced motion][css-tricks-reduced-motion] is enabled
-- Focusable items are followed when using a screen magnifier
 
 ## Make a commit
 

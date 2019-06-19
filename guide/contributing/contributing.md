@@ -50,7 +50,7 @@ A TDS component:
 ### 1. Submit an issue {#1-submit-issue}
 
 We use [Github Issues](https://github.com/telusdigital/tds-core/issues) to track all of our bugs and open discussions so that
-they are visible to the all consumers of the design system.
+they are visible to all consumers of the design system.
 
 However, if you would like to make a small adjustment to documentation, you may jump straight to [opening a pull request](#3-make-a-pull-request).
 If you found a bug or would like to begin a conversation, follow these steps:
