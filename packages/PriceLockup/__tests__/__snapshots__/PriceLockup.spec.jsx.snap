@@ -200,6 +200,15 @@ exports[`PriceLockup size prop is large renders 1`] = `
 `;
 
 exports[`PriceLockup size prop is medium renders 1`] = `
+.c5 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
 .c4 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -294,7 +303,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
     </div>
   </div>
   <hr
-    class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+    class="c5"
   />
   <span
     class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
@@ -305,6 +314,15 @@ exports[`PriceLockup size prop is medium renders 1`] = `
 `;
 
 exports[`PriceLockup size prop is small renders 1`] = `
+.c5 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
 .c4 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -402,7 +420,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
     </div>
   </div>
   <hr
-    class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+    class="c5"
   />
   <span
     class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
