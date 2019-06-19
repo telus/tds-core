@@ -305,7 +305,7 @@ Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-htpNat",
+                          "componentId": "sc-bwzfXH",
                           "isStatic": true,
                           "lastClassName": "c0",
                           "rules": Array [
@@ -315,7 +315,7 @@ Object {
                         "displayName": "Styled(Box)",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-htpNat",
+                        "styledComponentId": "sc-bwzfXH",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -385,7 +385,7 @@ Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bxivhb",
+                  "componentId": "sc-htpNat",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -395,7 +395,7 @@ Object {
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-bxivhb",
+                "styledComponentId": "sc-htpNat",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -571,7 +571,7 @@ Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-htpNat",
+              "componentId": "sc-bwzfXH",
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
@@ -581,7 +581,7 @@ Object {
             "displayName": "Styled(Box)",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-htpNat",
+            "styledComponentId": "sc-bwzfXH",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],
