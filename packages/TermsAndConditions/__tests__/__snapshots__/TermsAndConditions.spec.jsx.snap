@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TermsAndConditions renders 1`] = `
-.c5 {
+.c0 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c6 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -13,8 +22,8 @@ exports[`TermsAndConditions renders 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c5 .c8,
-.c5 sup {
+.c6 .c9,
+.c6 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -22,7 +31,7 @@ exports[`TermsAndConditions renders 1`] = `
   top: -0.5em;
 }
 
-.c1 {
+.c2 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -35,7 +44,7 @@ exports[`TermsAndConditions renders 1`] = `
   background-color: #fff;
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 0;
   left: 0;
@@ -47,21 +56,21 @@ exports[`TermsAndConditions renders 1`] = `
   transform: translate(6px,-1px);
 }
 
-.c0:hover .c4 {
+.c1:hover .c5 {
   -webkit-transform: translate(6px,2px);
   -ms-transform: translate(6px,2px);
   transform: translate(6px,2px);
 }
 
-.c7 {
+.c8 {
   padding-left: 1rem;
 }
 
-.c7 > span {
+.c8 > span {
   font-weight: 500;
 }
 
-.c6 {
+.c7 {
   word-wrap: break-word;
   font-weight: 700;
   font-size: 0.875rem;
@@ -74,28 +83,28 @@ exports[`TermsAndConditions renders 1`] = `
   list-style: decimal;
 }
 
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c4 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     padding-left: 1rem;
   }
 }
 
 <div>
   <hr
-    class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+    class="c0"
   />
   <div
     class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -107,14 +116,14 @@ exports[`TermsAndConditions renders 1`] = `
         class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
       >
         <button
-          class="clickable c0 c1"
+          class="clickable c1 c2"
           type="button"
         >
           <div
-            class="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
+            class="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c3"
           >
             <span
-              class="c3"
+              class="c4"
             >
               <svg
                 height="24px"
@@ -129,7 +138,7 @@ exports[`TermsAndConditions renders 1`] = `
                 />
               </svg>
               <span
-                class="c4"
+                class="c5"
               >
                 <svg
                   height="8px"
@@ -145,7 +154,7 @@ exports[`TermsAndConditions renders 1`] = `
               </span>
             </span>
             <h2
-              class="c5"
+              class="c6"
               data-testid="heading"
             >
               View terms and conditions
@@ -187,25 +196,25 @@ exports[`TermsAndConditions renders 1`] = `
               class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_flexboxgrid2__col-md-offset-1___1P1Ln TDS_flexboxgrid2__col-md-10___7fKo2 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
             >
               <ol
-                class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
+                class="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c7"
                 type="indexed"
               >
                 <li
-                  class="c7"
+                  class="c8"
                 >
                   <span>
                     One
                   </span>
                 </li>
                 <li
-                  class="c7"
+                  class="c8"
                 >
                   <span>
                     Two
                   </span>
                 </li>
                 <li
-                  class="c7"
+                  class="c8"
                 >
                   <span>
                     Three
@@ -219,13 +228,22 @@ exports[`TermsAndConditions renders 1`] = `
     </div>
   </div>
   <hr
-    class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+    class="c0"
   />
 </div>
 `;
 
 exports[`TermsAndConditions renders expanded 1`] = `
-.c5 {
+.c0 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c6 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -237,8 +255,8 @@ exports[`TermsAndConditions renders expanded 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c5 .c9,
-.c5 sup {
+.c6 .c10,
+.c6 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -246,7 +264,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
   top: -0.5em;
 }
 
-.c1 {
+.c2 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -259,13 +277,13 @@ exports[`TermsAndConditions renders expanded 1`] = `
   background-color: #fff;
 }
 
-.c0:hover .c8 {
+.c1:hover .c9 {
   -webkit-transform: translate(6px,2px);
   -ms-transform: translate(6px,2px);
   transform: translate(6px,2px);
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 0;
   left: 0;
@@ -277,21 +295,21 @@ exports[`TermsAndConditions renders expanded 1`] = `
   transform: translate(6px,-2px);
 }
 
-.c0:hover .c4 {
+.c1:hover .c5 {
   -webkit-transform: translate(6px,-5px);
   -ms-transform: translate(6px,-5px);
   transform: translate(6px,-5px);
 }
 
-.c7 {
+.c8 {
   padding-left: 1rem;
 }
 
-.c7 > span {
+.c8 > span {
   font-weight: 500;
 }
 
-.c6 {
+.c7 {
   word-wrap: break-word;
   font-weight: 700;
   font-size: 0.875rem;
@@ -304,21 +322,21 @@ exports[`TermsAndConditions renders expanded 1`] = `
   list-style: decimal;
 }
 
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c4 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     padding-left: 1rem;
   }
 }
@@ -339,9 +357,45 @@ exports[`TermsAndConditions renders expanded 1`] = `
       gradient={false}
       vertical={false}
     >
-      <hr
-        className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-      />
+      <HairlineDivider__StyledHairlineDivider
+        gradient={false}
+        vertical={false}
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "padding: 0;",
+                  "margin: 0;",
+                  "border-width: 0;",
+                  [Function],
+                ],
+              },
+              "displayName": "HairlineDivider__StyledHairlineDivider",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+              "target": "hr",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          gradient={false}
+          vertical={false}
+        >
+          <hr
+            className="c0"
+          />
+        </StyledComponent>
+      </HairlineDivider__StyledHairlineDivider>
     </HairlineDivider>
     <FlexGrid
       gutter={false}
@@ -387,9 +441,9 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "c0",
+                                    "componentId": "c1",
                                     "isStatic": true,
-                                    "lastClassName": "c1",
+                                    "lastClassName": "c2",
                                     "rules": Array [
                                       "width: 100%;",
                                       "display: flex;",
@@ -400,7 +454,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                   "displayName": "Styled(Clickable)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "c0",
+                                  "styledComponentId": "c1",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -411,12 +465,12 @@ exports[`TermsAndConditions renders expanded 1`] = `
                               onClick={[Function]}
                             >
                               <Clickable
-                                className="c0 c1"
+                                className="c1 c2"
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <button
-                                  className="clickable c0 c1"
+                                  className="clickable c1 c2"
                                   onClick={[Function]}
                                   type="button"
                                 >
@@ -434,7 +488,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-htpNat",
                                             "isStatic": true,
-                                            "lastClassName": "c2",
+                                            "lastClassName": "c3",
                                             "rules": Array [
                                               "align-items: center;",
                                             ],
@@ -455,13 +509,13 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                     >
                                       <Box
                                         between={3}
-                                        className="c2"
+                                        className="c3"
                                         inline={true}
                                         tag="div"
                                         vertical={3}
                                       >
                                         <div
-                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
+                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c3"
                                         >
                                           <TermsAndConditions__StyledChevronContainer>
                                             <StyledComponent
@@ -472,7 +526,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "TermsAndConditions__StyledChevronContainer-sc-1aoonet-0",
                                                     "isStatic": true,
-                                                    "lastClassName": "c3",
+                                                    "lastClassName": "c4",
                                                     "rules": Array [
                                                       "position: relative;",
                                                       "width: 24px;",
@@ -492,7 +546,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               forwardedRef={null}
                                             >
                                               <span
-                                                className="c3"
+                                                className="c4"
                                               >
                                                 <Circle>
                                                   <svg
@@ -522,7 +576,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                           "componentStyle": ComponentStyle {
                                                             "componentId": "Chevron__StyledChevron-sc-17gl4qs-0",
                                                             "isStatic": false,
-                                                            "lastClassName": "c4",
+                                                            "lastClassName": "c5",
                                                             "rules": Array [
                                                               [Function],
                                                             ],
@@ -541,7 +595,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                       isOpen={true}
                                                     >
                                                       <span
-                                                        className="c4"
+                                                        className="c5"
                                                       >
                                                         <svg
                                                           height="8px"
@@ -583,7 +637,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "Heading__StyledHeading-mpz92r-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c5",
+                                                      "lastClassName": "c6",
                                                       "rules": Array [
                                                         "word-wrap: break-word;",
                                                         [Function],
@@ -604,7 +658,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                 level="h4"
                                               >
                                                 <h2
-                                                  className="c5"
+                                                  className="c6"
                                                   data-testid="heading"
                                                 >
                                                   Hide terms and conditions
@@ -801,7 +855,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "sc-bwzfXH",
                                                 "isStatic": false,
-                                                "lastClassName": "c6",
+                                                "lastClassName": "c7",
                                                 "rules": Array [
                                                   "word-wrap: break-word;",
                                                   "font-weight: 700;",
@@ -844,7 +898,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "sc-bwzfXH",
                                                     "isStatic": false,
-                                                    "lastClassName": "c6",
+                                                    "lastClassName": "c7",
                                                     "rules": Array [
                                                       "word-wrap: break-word;",
                                                       "font-weight: 700;",
@@ -876,14 +930,14 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               <Box
                                                 below={4}
                                                 between={3}
-                                                className="c6"
+                                                className="c7"
                                                 inline={false}
                                                 size="small"
                                                 tag="ol"
                                                 type="indexed"
                                               >
                                                 <ol
-                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
+                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c7"
                                                   size="small"
                                                   type="indexed"
                                                 >
@@ -896,7 +950,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c7",
+                                                          "lastClassName": "c8",
                                                           "rules": Array [
                                                             "& > span {",
                                                             "font-weight: 500;",
@@ -924,7 +978,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -945,7 +999,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c7"
+                                                          className="c8"
                                                         >
                                                           <span>
                                                             One
@@ -963,7 +1017,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c7",
+                                                          "lastClassName": "c8",
                                                           "rules": Array [
                                                             "& > span {",
                                                             "font-weight: 500;",
@@ -991,7 +1045,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -1012,7 +1066,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c7"
+                                                          className="c8"
                                                         >
                                                           <span>
                                                             Two
@@ -1030,7 +1084,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c7",
+                                                          "lastClassName": "c8",
                                                           "rules": Array [
                                                             "& > span {",
                                                             "font-weight: 500;",
@@ -1058,7 +1112,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -1079,7 +1133,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c7"
+                                                          className="c8"
                                                         >
                                                           <span>
                                                             Three
@@ -1115,16 +1169,61 @@ exports[`TermsAndConditions renders expanded 1`] = `
       gradient={false}
       vertical={false}
     >
-      <hr
-        className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-      />
+      <HairlineDivider__StyledHairlineDivider
+        gradient={false}
+        vertical={false}
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "padding: 0;",
+                  "margin: 0;",
+                  "border-width: 0;",
+                  [Function],
+                ],
+              },
+              "displayName": "HairlineDivider__StyledHairlineDivider",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+              "target": "hr",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          gradient={false}
+          vertical={false}
+        >
+          <hr
+            className="c0"
+          />
+        </StyledComponent>
+      </HairlineDivider__StyledHairlineDivider>
     </HairlineDivider>
   </div>
 </TermsAndConditions>
 `;
 
 exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedContent 1`] = `
-.c5 {
+.c0 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c6 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -1136,8 +1235,8 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
   letter-spacing: -0.6px;
 }
 
-.c5 .c11,
-.c5 sup {
+.c6 .c12,
+.c6 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -1145,7 +1244,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
   top: -0.5em;
 }
 
-.c1 {
+.c2 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1158,13 +1257,13 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
   background-color: #fff;
 }
 
-.c0:hover .c10 {
+.c1:hover .c11 {
   -webkit-transform: translate(6px,2px);
   -ms-transform: translate(6px,2px);
   transform: translate(6px,2px);
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1176,21 +1275,21 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
   transform: translate(6px,-2px);
 }
 
-.c0:hover .c4 {
+.c1:hover .c5 {
   -webkit-transform: translate(6px,-5px);
   -ms-transform: translate(6px,-5px);
   transform: translate(6px,-5px);
 }
 
-.c7 {
+.c8 {
   padding-left: 1rem;
 }
 
-.c7 > span {
+.c8 > span {
   font-weight: 500;
 }
 
-.c6 {
+.c7 {
   word-wrap: break-word;
   font-weight: 700;
   font-size: 0.875rem;
@@ -1203,7 +1302,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
   list-style: decimal;
 }
 
-.c9 {
+.c10 {
   word-wrap: break-word;
   font-weight: 700;
   font-size: 0.875rem;
@@ -1216,31 +1315,31 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
   list-style: none;
 }
 
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c4 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
-.c8 {
+.c9 {
   padding-left: 2rem;
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     padding-left: 1rem;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c10 {
     padding-left: 1rem;
   }
 }
@@ -1266,9 +1365,45 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
       gradient={false}
       vertical={false}
     >
-      <hr
-        className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-      />
+      <HairlineDivider__StyledHairlineDivider
+        gradient={false}
+        vertical={false}
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "padding: 0;",
+                  "margin: 0;",
+                  "border-width: 0;",
+                  [Function],
+                ],
+              },
+              "displayName": "HairlineDivider__StyledHairlineDivider",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+              "target": "hr",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          gradient={false}
+          vertical={false}
+        >
+          <hr
+            className="c0"
+          />
+        </StyledComponent>
+      </HairlineDivider__StyledHairlineDivider>
     </HairlineDivider>
     <FlexGrid
       gutter={false}
@@ -1314,9 +1449,9 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "c0",
+                                    "componentId": "c1",
                                     "isStatic": true,
-                                    "lastClassName": "c1",
+                                    "lastClassName": "c2",
                                     "rules": Array [
                                       "width: 100%;",
                                       "display: flex;",
@@ -1327,7 +1462,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                   "displayName": "Styled(Clickable)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "c0",
+                                  "styledComponentId": "c1",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -1338,12 +1473,12 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                               onClick={[Function]}
                             >
                               <Clickable
-                                className="c0 c1"
+                                className="c1 c2"
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <button
-                                  className="clickable c0 c1"
+                                  className="clickable c1 c2"
                                   onClick={[Function]}
                                   type="button"
                                 >
@@ -1361,7 +1496,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-htpNat",
                                             "isStatic": true,
-                                            "lastClassName": "c2",
+                                            "lastClassName": "c3",
                                             "rules": Array [
                                               "align-items: center;",
                                             ],
@@ -1382,13 +1517,13 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                     >
                                       <Box
                                         between={3}
-                                        className="c2"
+                                        className="c3"
                                         inline={true}
                                         tag="div"
                                         vertical={3}
                                       >
                                         <div
-                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
+                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c3"
                                         >
                                           <TermsAndConditions__StyledChevronContainer>
                                             <StyledComponent
@@ -1399,7 +1534,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "TermsAndConditions__StyledChevronContainer-sc-1aoonet-0",
                                                     "isStatic": true,
-                                                    "lastClassName": "c3",
+                                                    "lastClassName": "c4",
                                                     "rules": Array [
                                                       "position: relative;",
                                                       "width: 24px;",
@@ -1419,7 +1554,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                               forwardedRef={null}
                                             >
                                               <span
-                                                className="c3"
+                                                className="c4"
                                               >
                                                 <Circle>
                                                   <svg
@@ -1449,7 +1584,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                           "componentStyle": ComponentStyle {
                                                             "componentId": "Chevron__StyledChevron-sc-17gl4qs-0",
                                                             "isStatic": false,
-                                                            "lastClassName": "c4",
+                                                            "lastClassName": "c5",
                                                             "rules": Array [
                                                               [Function],
                                                             ],
@@ -1468,7 +1603,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       isOpen={true}
                                                     >
                                                       <span
-                                                        className="c4"
+                                                        className="c5"
                                                       >
                                                         <svg
                                                           height="8px"
@@ -1510,7 +1645,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "Heading__StyledHeading-mpz92r-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c5",
+                                                      "lastClassName": "c6",
                                                       "rules": Array [
                                                         "word-wrap: break-word;",
                                                         [Function],
@@ -1531,7 +1666,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                 level="h4"
                                               >
                                                 <h2
-                                                  className="c5"
+                                                  className="c6"
                                                   data-testid="heading"
                                                 >
                                                   Hide terms and conditions
@@ -1728,7 +1863,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "sc-bwzfXH",
                                                 "isStatic": false,
-                                                "lastClassName": "c9",
+                                                "lastClassName": "c10",
                                                 "rules": Array [
                                                   "word-wrap: break-word;",
                                                   "font-weight: 700;",
@@ -1771,7 +1906,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "sc-bwzfXH",
                                                     "isStatic": false,
-                                                    "lastClassName": "c9",
+                                                    "lastClassName": "c10",
                                                     "rules": Array [
                                                       "word-wrap: break-word;",
                                                       "font-weight: 700;",
@@ -1803,14 +1938,14 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                               <Box
                                                 below={4}
                                                 between={3}
-                                                className="c6"
+                                                className="c7"
                                                 inline={false}
                                                 size="small"
                                                 tag="ol"
                                                 type="indexed"
                                               >
                                                 <ol
-                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
+                                                  className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c7"
                                                   size="small"
                                                   type="indexed"
                                                 >
@@ -1823,7 +1958,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c7",
+                                                          "lastClassName": "c8",
                                                           "rules": Array [
                                                             "& > span {",
                                                             "font-weight: 500;",
@@ -1851,7 +1986,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -1872,7 +2007,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c7"
+                                                          className="c8"
                                                         >
                                                           <span>
                                                             One
@@ -1890,7 +2025,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c7",
+                                                          "lastClassName": "c8",
                                                           "rules": Array [
                                                             "& > span {",
                                                             "font-weight: 500;",
@@ -1918,7 +2053,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -1939,7 +2074,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c7"
+                                                          className="c8"
                                                         >
                                                           <span>
                                                             Two
@@ -1957,7 +2092,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "List__StyledListItem-ju21tg-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c7",
+                                                          "lastClassName": "c8",
                                                           "rules": Array [
                                                             "& > span {",
                                                             "font-weight: 500;",
@@ -1985,7 +2120,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -2006,7 +2141,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                         forwardedRef={null}
                                                       >
                                                         <li
-                                                          className="c7"
+                                                          className="c8"
                                                         >
                                                           <span>
                                                             Three
@@ -2100,7 +2235,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "sc-bxivhb",
                                                       "isStatic": false,
-                                                      "lastClassName": "c8",
+                                                      "lastClassName": "c9",
                                                       "rules": Array [
                                                         [Function],
                                                       ],
@@ -2118,7 +2253,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                 forwardedRef={null}
                                               >
                                                 <div
-                                                  className="c8"
+                                                  className="c9"
                                                 >
                                                   <Heading
                                                     invert={false}
@@ -2141,7 +2276,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "Heading__StyledHeading-mpz92r-0",
                                                               "isStatic": false,
-                                                              "lastClassName": "c5",
+                                                              "lastClassName": "c6",
                                                               "rules": Array [
                                                                 "word-wrap: break-word;",
                                                                 [Function],
@@ -2162,7 +2297,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                         level="h4"
                                                       >
                                                         <span
-                                                          className="c5"
+                                                          className="c6"
                                                           data-testid="heading"
                                                         >
                                                           The following applies to all terms and conditions above
@@ -2183,7 +2318,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "sc-bwzfXH",
                                                     "isStatic": false,
-                                                    "lastClassName": "c9",
+                                                    "lastClassName": "c10",
                                                     "rules": Array [
                                                       "word-wrap: break-word;",
                                                       "font-weight: 700;",
@@ -2226,7 +2361,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "sc-bwzfXH",
                                                         "isStatic": false,
-                                                        "lastClassName": "c9",
+                                                        "lastClassName": "c10",
                                                         "rules": Array [
                                                           "word-wrap: break-word;",
                                                           "font-weight: 700;",
@@ -2258,14 +2393,14 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                   <Box
                                                     below={4}
                                                     between={3}
-                                                    className="c9"
+                                                    className="c10"
                                                     inline={false}
                                                     size="small"
                                                     tag="ul"
                                                     type="nonIndexed"
                                                   >
                                                     <ul
-                                                      className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c9"
+                                                      className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c10"
                                                       size="small"
                                                       type="nonIndexed"
                                                     >
@@ -2278,7 +2413,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -2306,7 +2441,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "List__StyledListItem-ju21tg-0",
                                                                   "isStatic": true,
-                                                                  "lastClassName": "c7",
+                                                                  "lastClassName": "c8",
                                                                   "rules": Array [
                                                                     "& > span {",
                                                                     "font-weight: 500;",
@@ -2327,7 +2462,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                             forwardedRef={null}
                                                           >
                                                             <li
-                                                              className="c7"
+                                                              className="c8"
                                                             >
                                                               <span>
                                                                 Four
@@ -2345,7 +2480,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -2373,7 +2508,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "List__StyledListItem-ju21tg-0",
                                                                   "isStatic": true,
-                                                                  "lastClassName": "c7",
+                                                                  "lastClassName": "c8",
                                                                   "rules": Array [
                                                                     "& > span {",
                                                                     "font-weight: 500;",
@@ -2394,7 +2529,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                             forwardedRef={null}
                                                           >
                                                             <li
-                                                              className="c7"
+                                                              className="c8"
                                                             >
                                                               <span>
                                                                 Five
@@ -2432,16 +2567,61 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
       gradient={false}
       vertical={false}
     >
-      <hr
-        className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-      />
+      <HairlineDivider__StyledHairlineDivider
+        gradient={false}
+        vertical={false}
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "padding: 0;",
+                  "margin: 0;",
+                  "border-width: 0;",
+                  [Function],
+                ],
+              },
+              "displayName": "HairlineDivider__StyledHairlineDivider",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+              "target": "hr",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          gradient={false}
+          vertical={false}
+        >
+          <hr
+            className="c0"
+          />
+        </StyledComponent>
+      </HairlineDivider__StyledHairlineDivider>
     </HairlineDivider>
   </div>
 </TermsAndConditions>
 `;
 
 exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
-.c5 {
+.c0 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c6 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -2453,8 +2633,8 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c5 .c9,
-.c5 sup {
+.c6 .c10,
+.c6 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -2462,7 +2642,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
   top: -0.5em;
 }
 
-.c1 {
+.c2 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2475,13 +2655,13 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
   background-color: #fff;
 }
 
-.c0:hover .c8 {
+.c1:hover .c9 {
   -webkit-transform: translate(6px,2px);
   -ms-transform: translate(6px,2px);
   transform: translate(6px,2px);
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2493,21 +2673,21 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
   transform: translate(6px,-2px);
 }
 
-.c0:hover .c4 {
+.c1:hover .c5 {
   -webkit-transform: translate(6px,-5px);
   -ms-transform: translate(6px,-5px);
   transform: translate(6px,-5px);
 }
 
-.c7 {
+.c8 {
   padding-left: 1rem;
 }
 
-.c7 > span {
+.c8 > span {
   font-weight: 500;
 }
 
-.c6 {
+.c7 {
   word-wrap: break-word;
   font-weight: 700;
   font-size: 0.875rem;
@@ -2520,21 +2700,21 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
   list-style: none;
 }
 
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c4 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     padding-left: 1rem;
   }
 }
@@ -2554,9 +2734,45 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
       gradient={false}
       vertical={false}
     >
-      <hr
-        className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-      />
+      <HairlineDivider__StyledHairlineDivider
+        gradient={false}
+        vertical={false}
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "padding: 0;",
+                  "margin: 0;",
+                  "border-width: 0;",
+                  [Function],
+                ],
+              },
+              "displayName": "HairlineDivider__StyledHairlineDivider",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+              "target": "hr",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          gradient={false}
+          vertical={false}
+        >
+          <hr
+            className="c0"
+          />
+        </StyledComponent>
+      </HairlineDivider__StyledHairlineDivider>
     </HairlineDivider>
     <FlexGrid
       gutter={false}
@@ -2602,9 +2818,9 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "c0",
+                                    "componentId": "c1",
                                     "isStatic": true,
-                                    "lastClassName": "c1",
+                                    "lastClassName": "c2",
                                     "rules": Array [
                                       "width: 100%;",
                                       "display: flex;",
@@ -2615,7 +2831,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                   "displayName": "Styled(Clickable)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "c0",
+                                  "styledComponentId": "c1",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -2626,12 +2842,12 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                               onClick={[Function]}
                             >
                               <Clickable
-                                className="c0 c1"
+                                className="c1 c2"
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <button
-                                  className="clickable c0 c1"
+                                  className="clickable c1 c2"
                                   onClick={[Function]}
                                   type="button"
                                 >
@@ -2649,7 +2865,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "sc-htpNat",
                                             "isStatic": true,
-                                            "lastClassName": "c2",
+                                            "lastClassName": "c3",
                                             "rules": Array [
                                               "align-items: center;",
                                             ],
@@ -2670,13 +2886,13 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                     >
                                       <Box
                                         between={3}
-                                        className="c2"
+                                        className="c3"
                                         inline={true}
                                         tag="div"
                                         vertical={3}
                                       >
                                         <div
-                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c2"
+                                          className="TDS_Box-modules__verticalPadding-3___Fsv37 TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c3"
                                         >
                                           <TermsAndConditions__StyledChevronContainer>
                                             <StyledComponent
@@ -2687,7 +2903,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "TermsAndConditions__StyledChevronContainer-sc-1aoonet-0",
                                                     "isStatic": true,
-                                                    "lastClassName": "c3",
+                                                    "lastClassName": "c4",
                                                     "rules": Array [
                                                       "position: relative;",
                                                       "width: 24px;",
@@ -2707,7 +2923,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                               forwardedRef={null}
                                             >
                                               <span
-                                                className="c3"
+                                                className="c4"
                                               >
                                                 <Circle>
                                                   <svg
@@ -2737,7 +2953,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                           "componentStyle": ComponentStyle {
                                                             "componentId": "Chevron__StyledChevron-sc-17gl4qs-0",
                                                             "isStatic": false,
-                                                            "lastClassName": "c4",
+                                                            "lastClassName": "c5",
                                                             "rules": Array [
                                                               [Function],
                                                             ],
@@ -2756,7 +2972,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                       isOpen={true}
                                                     >
                                                       <span
-                                                        className="c4"
+                                                        className="c5"
                                                       >
                                                         <svg
                                                           height="8px"
@@ -2798,7 +3014,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "Heading__StyledHeading-mpz92r-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c5",
+                                                      "lastClassName": "c6",
                                                       "rules": Array [
                                                         "word-wrap: break-word;",
                                                         [Function],
@@ -2819,7 +3035,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                 level="h4"
                                               >
                                                 <h2
-                                                  className="c5"
+                                                  className="c6"
                                                   data-testid="heading"
                                                 >
                                                   Hide terms and conditions
@@ -3024,7 +3240,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "sc-bwzfXH",
                                                     "isStatic": false,
-                                                    "lastClassName": "c6",
+                                                    "lastClassName": "c7",
                                                     "rules": Array [
                                                       "word-wrap: break-word;",
                                                       "font-weight: 700;",
@@ -3067,7 +3283,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "sc-bwzfXH",
                                                         "isStatic": false,
-                                                        "lastClassName": "c6",
+                                                        "lastClassName": "c7",
                                                         "rules": Array [
                                                           "word-wrap: break-word;",
                                                           "font-weight: 700;",
@@ -3099,14 +3315,14 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                   <Box
                                                     below={4}
                                                     between={3}
-                                                    className="c6"
+                                                    className="c7"
                                                     inline={false}
                                                     size="small"
                                                     tag="ul"
                                                     type="nonIndexed"
                                                   >
                                                     <ul
-                                                      className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c6"
+                                                      className="TDS_Box-modules__bottomMargin-4___lamOh TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D c7"
                                                       size="small"
                                                       type="nonIndexed"
                                                     >
@@ -3119,7 +3335,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -3147,7 +3363,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "List__StyledListItem-ju21tg-0",
                                                                   "isStatic": true,
-                                                                  "lastClassName": "c7",
+                                                                  "lastClassName": "c8",
                                                                   "rules": Array [
                                                                     "& > span {",
                                                                     "font-weight: 500;",
@@ -3168,7 +3384,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                             forwardedRef={null}
                                                           >
                                                             <li
-                                                              className="c7"
+                                                              className="c8"
                                                             >
                                                               <span>
                                                                 Four
@@ -3186,7 +3402,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "List__StyledListItem-ju21tg-0",
                                                               "isStatic": true,
-                                                              "lastClassName": "c7",
+                                                              "lastClassName": "c8",
                                                               "rules": Array [
                                                                 "& > span {",
                                                                 "font-weight: 500;",
@@ -3214,7 +3430,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "List__StyledListItem-ju21tg-0",
                                                                   "isStatic": true,
-                                                                  "lastClassName": "c7",
+                                                                  "lastClassName": "c8",
                                                                   "rules": Array [
                                                                     "& > span {",
                                                                     "font-weight: 500;",
@@ -3235,7 +3451,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                             forwardedRef={null}
                                                           >
                                                             <li
-                                                              className="c7"
+                                                              className="c8"
                                                             >
                                                               <span>
                                                                 Five
@@ -3273,9 +3489,45 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
       gradient={false}
       vertical={false}
     >
-      <hr
-        className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-      />
+      <HairlineDivider__StyledHairlineDivider
+        gradient={false}
+        vertical={false}
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "padding: 0;",
+                  "margin: 0;",
+                  "border-width: 0;",
+                  [Function],
+                ],
+              },
+              "displayName": "HairlineDivider__StyledHairlineDivider",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+              "target": "hr",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          gradient={false}
+          vertical={false}
+        >
+          <hr
+            className="c0"
+          />
+        </StyledComponent>
+      </HairlineDivider__StyledHairlineDivider>
     </HairlineDivider>
   </div>
 </TermsAndConditions>

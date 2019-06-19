@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footnote renders closed 1`] = `
-.c4 {
+.c5 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -13,8 +13,8 @@ exports[`Footnote renders closed 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c9,
-.c4 sup {
+.c5 .c10,
+.c5 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -22,7 +22,16 @@ exports[`Footnote renders closed 1`] = `
   top: -0.5em;
 }
 
-.c6 {
+.c3 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c7 {
   background: #f7f7f8;
 }
 
@@ -50,14 +59,14 @@ exports[`Footnote renders closed 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c8 {
+.c9 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition: height 400ms ease-out,opacity 300ms;
@@ -71,7 +80,7 @@ exports[`Footnote renders closed 1`] = `
   opacity: 1;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -86,7 +95,7 @@ exports[`Footnote renders closed 1`] = `
   display: none;
 }
 
-.c7 {
+.c8 {
   display: none;
 }
 
@@ -100,7 +109,7 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c9 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -112,7 +121,7 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c8 {
     display: block;
   }
 }
@@ -153,7 +162,7 @@ exports[`Footnote renders closed 1`] = `
               class="c2"
             >
               <hr
-                class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+                class="c3"
               />
             </div>
             <div
@@ -169,21 +178,21 @@ exports[`Footnote renders closed 1`] = `
                     class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                   >
                     <div
-                      class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c3"
+                      class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c4"
                     >
                       <h2
-                        class="c4"
+                        class="c5"
                         data-testid="heading"
                       >
                         Terms and conditions
                       </h2>
                       <button
                         aria-label="close"
-                        class="clickable c5"
+                        class="clickable c6"
                         type="button"
                       >
                         <svg
-                          class="c6"
+                          class="c7"
                           height="24px"
                           viewBox="0 0 24 24"
                           width="24px"
@@ -213,15 +222,15 @@ exports[`Footnote renders closed 1`] = `
               </div>
             </div>
             <div
-              class="c7"
+              class="c8"
             >
               <hr
-                class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+                class="c3"
               />
             </div>
           </div>
           <div
-            class="c8"
+            class="c9"
           />
         </div>
         <div
@@ -234,7 +243,7 @@ exports[`Footnote renders closed 1`] = `
 `;
 
 exports[`Footnote renders opened 1`] = `
-.c4 {
+.c5 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -246,8 +255,8 @@ exports[`Footnote renders opened 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c9,
-.c4 sup {
+.c5 .c10,
+.c5 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -255,7 +264,16 @@ exports[`Footnote renders opened 1`] = `
   top: -0.5em;
 }
 
-.c6 {
+.c3 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c7 {
   background: #f7f7f8;
 }
 
@@ -286,14 +304,14 @@ exports[`Footnote renders opened 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c8 {
+.c9 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition: height 400ms ease-out,opacity 300ms;
@@ -307,7 +325,7 @@ exports[`Footnote renders opened 1`] = `
   opacity: 1;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -322,7 +340,7 @@ exports[`Footnote renders opened 1`] = `
   display: none;
 }
 
-.c7 {
+.c8 {
   display: none;
 }
 
@@ -336,7 +354,7 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c9 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -348,7 +366,7 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c8 {
     display: block;
   }
 }
@@ -389,7 +407,7 @@ exports[`Footnote renders opened 1`] = `
               class="c2"
             >
               <hr
-                class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+                class="c3"
               />
             </div>
             <div
@@ -405,21 +423,21 @@ exports[`Footnote renders opened 1`] = `
                     class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                   >
                     <div
-                      class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c3"
+                      class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c4"
                     >
                       <h2
-                        class="c4"
+                        class="c5"
                         data-testid="heading"
                       >
                         Terms and conditions
                       </h2>
                       <button
                         aria-label="close"
-                        class="clickable c5"
+                        class="clickable c6"
                         type="button"
                       >
                         <svg
-                          class="c6"
+                          class="c7"
                           height="24px"
                           viewBox="0 0 24 24"
                           width="24px"
@@ -449,15 +467,15 @@ exports[`Footnote renders opened 1`] = `
               </div>
             </div>
             <div
-              class="c7"
+              class="c8"
             >
               <hr
-                class="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
+                class="c3"
               />
             </div>
           </div>
           <div
-            class="c8"
+            class="c9"
           />
         </div>
         <div
