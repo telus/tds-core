@@ -211,7 +211,7 @@ exports[`TextArea label can have a short hint 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-ifAKCX",
+            "componentId": "sc-bxivhb",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -221,7 +221,7 @@ exports[`TextArea label can have a short hint 1`] = `
           "displayName": "Styled(Box)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-ifAKCX",
+          "styledComponentId": "sc-bxivhb",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],

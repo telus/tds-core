@@ -1804,87 +1804,37 @@ Array [
 `;
 
 exports[`Checkbox error can have an error message 3`] = `
-.c0 {
-  border-radius: 4px;
-  background-color: #fff6f8;
-}
-
 <InputFeedback
   feedback="error"
   id="the-group-namethe-value_error-message"
 >
-  <Styled(Component)
-    feedback="error"
+  <Box
+    className="TDS_InputFeedback-modules__error___MtS9E TDS_InputFeedback-modules__base___1O6Oo TDS_Borders-modules__rounded___3df1Q TDS_Messaging-modules__error___3NArF"
     id="the-group-namethe-value_error-message"
+    inline={false}
     inset={3}
     role="alert"
+    tag="div"
   >
-    <StyledComponent
-      feedback="error"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              [Function],
-            ],
-          },
-          "displayName": "Styled(Component)",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": [Function],
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 TDS_InputFeedback-modules__error___MtS9E TDS_InputFeedback-modules__base___1O6Oo TDS_Borders-modules__rounded___3df1Q TDS_Messaging-modules__error___3NArF"
       id="the-group-namethe-value_error-message"
-      inset={3}
       role="alert"
     >
-      <Component
-        className="c0"
-        feedback="error"
-        id="the-group-namethe-value_error-message"
-        inset={3}
-        role="alert"
+      <Paragraph
+        align="left"
+        bold={false}
+        invert={false}
+        size="small"
       >
-        <Box
-          className="c0"
-          id="the-group-namethe-value_error-message"
-          inline={false}
-          inset={3}
-          role="alert"
-          tag="div"
+        <p
+          className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Paragraph-modules__leftAlign___KgwhE"
         >
-          <div
-            className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c0"
-            id="the-group-namethe-value_error-message"
-            role="alert"
-          >
-            <Paragraph
-              align="left"
-              bold={false}
-              invert={false}
-              size="small"
-            >
-              <p
-                className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Paragraph-modules__leftAlign___KgwhE"
-              >
-                Error message
-              </p>
-            </Paragraph>
-          </div>
-        </Box>
-      </Component>
-    </StyledComponent>
-  </Styled(Component)>
+          Error message
+        </p>
+      </Paragraph>
+    </div>
+  </Box>
 </InputFeedback>
 `;
 
@@ -3400,9 +3350,9 @@ Array [
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bwzfXH",
+              "componentId": "sc-bdVaJa",
               "isStatic": false,
-              "lastClassName": "uTxCW",
+              "lastClassName": "bDWFJH",
               "rules": Array [
                 [Function],
               ],
@@ -3410,7 +3360,7 @@ Array [
             "displayName": "Styled(ColoredTextProvider)",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bwzfXH",
+            "styledComponentId": "sc-bdVaJa",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],

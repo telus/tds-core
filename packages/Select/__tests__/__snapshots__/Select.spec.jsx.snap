@@ -1,21 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select can have an error message 1`] = `
-.c1 {
-  border-radius: 4px;
-  background-color: #fff6f8;
-}
-
-.c6 {
+.c5 {
   line-height: 1;
 }
 
-.c3 {
+.c2 {
   background-color: #fff;
   position: relative;
 }
 
-.c4 {
+.c3 {
   height: 3.25rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -46,11 +41,11 @@ exports[`Select can have an error message 1`] = `
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
-.c4::-ms-expand {
+.c3::-ms-expand {
   display: none;
 }
 
-.c4::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -60,7 +55,7 @@ exports[`Select can have an error message 1`] = `
   color: #54595f;
 }
 
-.c4::-moz-placeholder {
+.c3::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -70,7 +65,7 @@ exports[`Select can have an error message 1`] = `
   color: #54595f;
 }
 
-.c4:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -80,7 +75,7 @@ exports[`Select can have an error message 1`] = `
   color: #54595f;
 }
 
-.c4::placeholder {
+.c3::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -90,25 +85,25 @@ exports[`Select can have an error message 1`] = `
   color: #54595f;
 }
 
-.c4::-webkit-inner-spin-button,
-.c4::-webkit-outer-spin-button {
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c4:focus {
+.c3:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c4:not(:focus) {
+.c3:not(:focus) {
   border-color: #c12335;
 }
 
-.c5 {
+.c4 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -118,7 +113,7 @@ exports[`Select can have an error message 1`] = `
   pointer-events: none;
 }
 
-.c7 {
+.c6 {
   line-height: 1;
 }
 
@@ -129,7 +124,7 @@ exports[`Select can have an error message 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   position: relative;
 }
 
@@ -185,7 +180,7 @@ exports[`Select can have an error message 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-ifAKCX",
                       "isStatic": true,
                       "lastClassName": "c0",
                       "rules": Array [
@@ -195,7 +190,7 @@ exports[`Select can have an error message 1`] = `
                     "displayName": "Styled(Box)",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-ifAKCX",
                     "target": [Function],
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -240,78 +235,33 @@ exports[`Select can have an error message 1`] = `
         feedback="error"
         id="some-id_error-message"
       >
-        <Styled(Component)
-          feedback="error"
+        <Box
+          className="TDS_InputFeedback-modules__error___MtS9E TDS_InputFeedback-modules__base___1O6Oo TDS_Borders-modules__rounded___3df1Q TDS_Messaging-modules__error___3NArF"
           id="some-id_error-message"
+          inline={false}
           inset={3}
           role="alert"
+          tag="div"
         >
-          <StyledComponent
-            feedback="error"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    [Function],
-                  ],
-                },
-                "displayName": "Styled(Component)",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
+          <div
+            className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 TDS_InputFeedback-modules__error___MtS9E TDS_InputFeedback-modules__base___1O6Oo TDS_Borders-modules__rounded___3df1Q TDS_Messaging-modules__error___3NArF"
             id="some-id_error-message"
-            inset={3}
             role="alert"
           >
-            <Component
-              className="c1"
-              feedback="error"
-              id="some-id_error-message"
-              inset={3}
-              role="alert"
+            <Paragraph
+              align="left"
+              bold={false}
+              invert={false}
+              size="small"
             >
-              <Box
-                className="c1"
-                id="some-id_error-message"
-                inline={false}
-                inset={3}
-                role="alert"
-                tag="div"
+              <p
+                className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Paragraph-modules__leftAlign___KgwhE"
               >
-                <div
-                  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c1"
-                  id="some-id_error-message"
-                  role="alert"
-                >
-                  <Paragraph
-                    align="left"
-                    bold={false}
-                    invert={false}
-                    size="small"
-                  >
-                    <p
-                      className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Paragraph-modules__leftAlign___KgwhE"
-                    >
-                      Oh no a terrible error!
-                    </p>
-                  </Paragraph>
-                </div>
-              </Box>
-            </Component>
-          </StyledComponent>
-        </Styled(Component)>
+                Oh no a terrible error!
+              </p>
+            </Paragraph>
+          </div>
+        </Box>
       </InputFeedback>
       <styled.div
         _css={
@@ -331,9 +281,9 @@ exports[`Select can have an error message 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bZQynM",
+                "componentId": "sc-EHOje",
                 "isStatic": false,
-                "lastClassName": "c2",
+                "lastClassName": "c1",
                 "rules": Array [
                   [Function],
                 ],
@@ -341,7 +291,7 @@ exports[`Select can have an error message 1`] = `
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bZQynM",
+              "styledComponentId": "sc-EHOje",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -351,7 +301,7 @@ exports[`Select can have an error message 1`] = `
           forwardedRef={null}
         >
           <div
-            className="c2"
+            className="c1"
           >
             <Select__SelectWrapper>
               <StyledComponent
@@ -362,7 +312,7 @@ exports[`Select can have an error message 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "Select__SelectWrapper-sc-1kajzpi-0",
                       "isStatic": true,
-                      "lastClassName": "c3",
+                      "lastClassName": "c2",
                       "rules": Array [
                         "background-color: #fff;",
                         "position: relative;",
@@ -381,7 +331,7 @@ exports[`Select can have an error message 1`] = `
                 forwardedRef={null}
               >
                 <div
-                  className="c3"
+                  className="c2"
                 >
                   <Select__StyledSelect
                     aria-describedby="some-id_error-message"
@@ -404,7 +354,7 @@ exports[`Select can have an error message 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "Select__StyledSelect-sc-1kajzpi-1",
                             "isStatic": false,
-                            "lastClassName": "c4",
+                            "lastClassName": "c3",
                             "rules": Array [
                               "height: 3.25rem;",
                               "appearance: none;",
@@ -462,7 +412,7 @@ exports[`Select can have an error message 1`] = `
                       <select
                         aria-describedby="some-id_error-message"
                         aria-invalid={true}
-                        className="c4"
+                        className="c3"
                         defaultValue=""
                         id="some-id"
                         onBlur={[Function]}
@@ -494,9 +444,9 @@ exports[`Select can have an error message 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
+                            "componentId": "sc-bxivhb",
                             "isStatic": true,
-                            "lastClassName": "c5",
+                            "lastClassName": "c4",
                             "rules": Array [
                               "position: absolute;",
                               "top: 50%;",
@@ -508,7 +458,7 @@ exports[`Select can have an error message 1`] = `
                           "displayName": "Styled(Box)",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
+                          "styledComponentId": "sc-bxivhb",
                           "target": [Function],
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -520,12 +470,12 @@ exports[`Select can have an error message 1`] = `
                     >
                       <Box
                         between={3}
-                        className="c5"
+                        className="c4"
                         inline={true}
                         tag="div"
                       >
                         <div
-                          className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c5"
+                          className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c4"
                         >
                           <FeedbackIcon
                             feedback="error"
@@ -569,7 +519,7 @@ exports[`Select can have an error message 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "FeedbackIcon__StyledIcon-yxz8rh-0",
                                             "isStatic": true,
-                                            "lastClassName": "c6",
+                                            "lastClassName": "c5",
                                             "rules": Array [
                                               "line-height: 1;",
                                             ],
@@ -587,7 +537,7 @@ exports[`Select can have an error message 1`] = `
                                       forwardedRef={null}
                                     >
                                       <div
-                                        className="c6"
+                                        className="c5"
                                       >
                                         <StandaloneIcon
                                           a11yText="The value of this input field is invalid."
@@ -623,7 +573,7 @@ exports[`Select can have an error message 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "Select__IconLineFix-sc-1kajzpi-2",
                                     "isStatic": true,
-                                    "lastClassName": "c7",
+                                    "lastClassName": "c6",
                                     "rules": Array [
                                       "line-height: 1;",
                                     ],
@@ -641,7 +591,7 @@ exports[`Select can have an error message 1`] = `
                               forwardedRef={null}
                             >
                               <div
-                                className="c7"
+                                className="c6"
                               >
                                 <DecorativeIcon
                                   size={16}
@@ -707,7 +657,7 @@ exports[`Select label can have a short hint 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-EHOje",
+            "componentId": "sc-ifAKCX",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -717,7 +667,7 @@ exports[`Select label can have a short hint 1`] = `
           "displayName": "Styled(Box)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-EHOje",
+          "styledComponentId": "sc-ifAKCX",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -795,7 +745,7 @@ exports[`Select label must have a label 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-EHOje",
+            "componentId": "sc-ifAKCX",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -805,7 +755,7 @@ exports[`Select label must have a label 1`] = `
           "displayName": "Styled(Box)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-EHOje",
+          "styledComponentId": "sc-ifAKCX",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
