@@ -39,7 +39,7 @@ const devTemplate = {
   head: {
     scripts: [
       {
-        src: '//cdn.polyfill.io/v2/polyfill.min.js?features=Set',
+        src: '//polyfill.io/v3/polyfill.min.js?features=Set%2CArray.prototype.%40%40iterator',
       },
     ],
     links: fontLinks,
@@ -51,7 +51,7 @@ const productionTemplate = {
   head: {
     scripts: [
       {
-        src: '//cdn.polyfill.io/v2/polyfill.min.js?features=Set',
+        src: '//polyfill.io/v3/polyfill.min.js?features=Set%2CArray.prototype.%40%40iterator',
       },
       {
         src:
@@ -323,6 +323,7 @@ module.exports = {
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
   require: [
+    // '@babel/polyfill',
     path.resolve('packages/css-reset/index.scss'),
     path.resolve('docs/scss/styleguide.scss'),
     path.resolve('config/globalComponents.js'),
