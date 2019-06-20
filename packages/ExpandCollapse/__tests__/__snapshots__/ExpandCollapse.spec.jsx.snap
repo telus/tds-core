@@ -82,6 +82,10 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
             "border-width: 0;",
             "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
             "color: #2a2c2e;",
+            "appearance: none;",
+            "background: none;",
+            "box-shadow: none;",
+            "cursor: pointer;",
             [Function],
           ],
         },
@@ -354,11 +358,13 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #f7f7f8;
+  background: none;
   box-shadow: none;
-  cursor: default;
+  cursor: pointer;
   width: 100%;
   text-align: left;
+  background: #f7f7f8;
+  cursor: default;
 }
 
 .c1 {
@@ -795,6 +801,10 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                             "border-width: 0;",
                             "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
                             "color: #2a2c2e;",
+                            "appearance: none;",
+                            "background: none;",
+                            "box-shadow: none;",
+                            "cursor: pointer;",
                             [Function],
                           ],
                         },
@@ -1319,6 +1329,10 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                             "border-width: 0;",
                             "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
                             "color: #2a2c2e;",
+                            "appearance: none;",
+                            "background: none;",
+                            "box-shadow: none;",
+                            "cursor: pointer;",
                             [Function],
                           ],
                         },
