@@ -7,21 +7,24 @@
   - [Set up your dev environment](#set-up-your-dev-environment)
 - [Write some code](#write-some-code)
 - [Using lerna](#using-lerna)
-  - [How lerna works within TDS](#how-lerna-works-within-TDS)
+  - [How lerna works within TDS](#how-lerna-works-within-tds)
   - [Helpful lerna commands](#helpful-lerna-commands)
-- [Quality checklist](#quality-checklist)
-  - [Accessibility](#accessibility)
-  - [Unit tests](#unit-tests)
-  - [e2e tests](#e2e-tests)
-  - [npm package](#npm-package)
-  - [Manual tests](#manual-tests)
 - [Make a commit](#make-a-commit)
   - [Versioning via commits](#versioning-via-commits)
   - [Commit format](#commit-format)
   - [Commit types](#commit-types)
   - [Use commitizen](#use-commitizen)
   - [Example commit messages](#example-commit-messages)
-- [Make a Pull Request](#make-a-Pull-Request)
+- [Quality checklist](#quality-checklist)
+  - [Accessibility](#accessibility)
+  - [Unit tests](#unit-tests)
+  - [e2e tests](#e2e-tests)
+  - [npm package](#npm-package)
+  - [Manual tests](#manual-tests)
+- [Make a pull request](#make-a-pull-request)
+- [Releasing and deploying](#releasing-and-deploying)
+  - [Deploying coded components to npm](#deploying-coded-components-to-npm)
+  - [Deploying documentation to the TDS website](#deploying-documentation-to-the-tds-website)
 - [References](#references)
 
 ## Setup
@@ -69,7 +72,7 @@ to our ESLint config file to automatically format files when saved.
 
 ### Set up your dev environment
 
-When developing components, we recommend using our documentation (React Styleguidist) as a testing sandbox.
+When developing components, we recommend using our documentation (built with [React Styleguidist][react-styleguidist]) as a testing sandbox.
 
 ```bash
 # Start the styleguidist dev server, check output for the location of the docs
@@ -130,7 +133,7 @@ npx lerna add package-to-add --scope @tds/core-component-name [--dev]
 
 #### Seeing which packages will get published
 
-Component packages are versioned automatically based on [conventional commits](https://conventionalcommits.org/). To ensure appropriate versions are applied,
+Component packages are versioned automatically based on [conventional commits][conventional-commits]. To ensure appropriate versions are applied,
 follow our guide on how to [make a commit](#make-a-commit).
 
 - To preview which components will get published: `npx lerna updated`
@@ -140,7 +143,7 @@ follow our guide on how to [make a commit](#make-a-commit).
 #### Publishing components
 
 Components are published via our continuous integration pipeline. Do not try publishing components yourself. TDS Core components are the responsibility
-of the TDS Core team, and TDS Community components are the responsibility of the [Digital Platform Ambassadors][dpa].
+of the TDS Core team, and TDS Community components are the responsibility of the [Digital Platform Ambassadors][tds-community-dpa].
 
 ```sh
 npx lerna publish --conventional-commits
@@ -159,6 +162,101 @@ npm run build
 If this does not resolve your issue, there could be an issue with duplicate dependencies throughout the repository with mismatched versions.
 To solve this, we use [lerna-update-wizard](https://www.npmjs.com/package/lerna-update-wizard) using the command `npx lernaupdate --dedupe` to
 assure duplicate packages are on the same version.
+
+## Make a commit
+
+To view a guide on how TDS components are versioned, see our [FAQ](../faq.md#how-is-tds-versioned).
+To view TELUS standards for commit format, see our [contribution model][ra-contribute] on the Reference Architecture.
+
+We use [commitizen](https://github.com/commitizen/cz-cli) and [commitlint](https://github.com/marionebl/commitlint) to
+ensure conventional commit messages, which supports our publishing workflow and versioning scheme.
+
+[husky](https://github.com/typicode/husky) is used to run precommit tasks on staged files, which includes code formatting, linting, and tests.
+You will not be able to make a commit until the precommit tasks pass. We also have a prepush hook to run a full build before pushing your code.
+
+### Versioning via commits
+
+Automated component versioning is facilitated by the [Conventional Commits specification][conventional-commits],
+**it is important to be deliberate when choosing the type of commit** as commits will determine version bumps and
+changelogs.
+
+The commit type determines what version a component will bump towards, and will be included in changelogs. Use the `feat`
+and `fix` types sparingly as these two types will appear in changelogs. For most other commits such as fixups or configurations,
+use the `chore` type.
+
+For example, the [changelog for core-button](https://github.com/telus/tds-core/blob/3aa8d4e8ed4bfa480cb9cc205fa6d5b5b733b861/packages/Button/CHANGELOG.md) has an entry under version 2.1.0 that reads:
+
+> Features  
+> core-button: add forwardRef (fd8f181)
+
+This was parsed from a [commit](https://github.com/telus/tds-core/commit/fd8f181) using the `feat` type.
+
+### Commit format
+
+Given the commit format:
+
+```sh
+type(scope): subject
+
+body
+
+footer
+```
+
+Use the `type` field to inform lerna what Conventional Commit you intend to use:
+
+- For breaking changes, use the **feat** commit type with body text that begins with the phrase `BREAKING CHANGE:` (see [commit example](https://github.com/telus/tds-core/commit/0ff9dba))
+- For minor changes, use the **feat** commit type
+- For patches, use the **fix** commit type
+
+Follow these guidelines to determine the type of your commit:
+
+- **Breaking changes** are removals of features such as props, changes that affect the [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model), or dramatic changes in branding or appearance
+- **Minor changes** are new features, animations, props, or visual options
+- **Patches** are defect fixes that do not remove features, alter pixel dimensions related to the box model, nor add new features. If an intended feature was not working in a previous release, changing that feature to match the original design counts as a patch even if it affects the box model
+
+Use the `scope` field when referring to an area in the codebase, such as a package name (e.g. `core-button-link`) or
+a directory (e.g. `e2e`).
+
+Use the `subject` field to write a succinct description of the change. The first word is often a verb using present
+imperative tense such as 'change' or 'remove'.
+
+The `body` field can include more detailed notes regarding the change. If there is a breaking change, it must begin with
+the phrase 'BREAKING CHANGE:'.
+
+The `footer` field can be used to reference a commit hash or issue number on GitHub.
+
+### Commit types
+
+| Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| feat     | Indicates a **minor, public-facing change**. A change is considered minor if it adds new functionality in a backwards-compatible manner. It must also be perceivable by consumers of TDS Core, and not just a change that only impacts developers of TDS Core. Additionally, it may be used if functionality is being **deprecated**. If a commit of this type contains a public-facing **breaking change**, add the text `BREAKING CHANGE:` to your commit’s body, followed by a description of what the breaking change is. |
+| fix      | Indicates a patch level, **public-facing** change. Generally, this is used for backwards-compatible bug fixes. There should be no consumer-facing API changes at all in patches. It must also be perceivable by consumers of TDS, and not just a change that only impacts developers of TDS Core.                                                                                                                                                                                                                             |
+| test     | Used for commits that only modify/add **unit tests** or anything test related, such as **snapshots**, **screenshots**, or **test scripts**.                                                                                                                                                                                                                                                                                                                                                                                   |
+| refactor | Used if code has been refactored **without any modifications to functionality or behaviour**. If your refactor also fixes a bug, please use the `fix` type. A common scenario for using this type would be “preventative maintenance” to code. This is also useful when iterating on changes due to PR reviews or other factors. Only one commit may be labeled as a `fix` or `feat` for any one change, so commits following that to iterate on the same feature will either be a `chore` or `refactor`.                     |
+| docs     | Indicates a modification to **documentation**. Changes to the .md files of components, or changes to the documentation site use this type.                                                                                                                                                                                                                                                                                                                                                                                    |
+| chore    | A type for **miscellaneous** changes. Anything not covered here is considered a chore. Additionally, this is useful when iterating on changes due to PR reviews or other factors. Only one commit may be labeled as a `fix` or `feat` for any one change, so commits following that to iterate on the same feature will either be a `chore` or `refactor`.                                                                                                                                                                    |
+
+### Use commitizen
+
+The TDS codebase includes a script to run commitizen for a streamline commit-making experience:
+
+```bash
+# Stage your files and make a commit using commitizen
+npm run cz
+
+## At the `type` and `scope` prompts, you can press TAB to view options
+```
+
+### Example commit messages
+
+```git
+feat(core-flex-grid): remove center prop
+
+BREAKING CHANGE: deprecated `center` prop is removed
+
+fix(core-button-link): adjust hover animation speed
+```
 
 ## Quality checklist
 
@@ -184,7 +282,7 @@ take into account when developing components, such as:
 - Using `aria-` attributes only when absolutely necessary
 - Providing visible labels and visual focus states for interactive elements
 - Adapting spacing or font appearance to browser font configurations
-- Animations or reduced or omitted when environments are configured for [reduced motion][css-tricks-reduced-motion]
+- Animations are reduced or omitted when environments are configured for [reduced motion][css-tricks-reduced-motion]
 - Whether assistive technology should be able to read intentionally hidden content
 - Keyboard navigation is possible, passing through elements in a consistent order (typically from left to right, top to bottom)
 - Voiceover tools can announce content or actions appropriately, such as when an action toggles an adjacent element opened or closed, signalled by `aria-expanded`
@@ -201,20 +299,30 @@ consuming application is accessible. Consider the following when writing helpful
 
 Read more about accessibility at TELUS at:
 
-- [TDS Foundational Principles: Accessibility](../accessibility/accessibility.md)
+- [TDS Foundational Principles: Accessibility][accessibility]
 - [Reference Architecture: Accessibility][ra-accessibility]
 
 ### Unit tests
 
-All TDS components use a combination of [Jest](https://jestjs.io/) tests and [Nightwatch](http://nightwatchjs.org/) visual regression tests. As part of our Git hooks, these tests are run automatically on commit and on push. However, there are cases where you may want to run these tests manually, or require the ability to update test snapshots that are no longer up to date with the component you're working on.
+All TDS components use a combination of [Jest](https://jestjs.io/) tests and [Nightwatch](http://nightwatchjs.org/)
+visual regression tests. As part of our Git hooks, these tests are run automatically on commit and on push. However,
+there are cases where you may want to run these tests manually, or require the ability to update test snapshots that
+are no longer up to date with the component you're working on.
 
 TDS follows the [Reference Architecture standard on writing unit tests](ra-unit).
 
 #### Writing unit tests with Jest
 
-Jest unit tests are integrated into all TDS React components. These are run to ensure that a component's functionality has not been compromised by a change. These unit tests will check the component's different states by providing different sets of prop values, and compare them to a set of pre-defined criteria. It is important to create new unit tests whenever a feature is added or significantly modified to ensure the stability of the component.
+Jest unit tests are integrated into all TDS React components. These are run to ensure that a component's functionality
+has not been compromised by a change. These unit tests will check the component's different states by providing
+different sets of prop values, and compare them to a set of pre-defined criteria. It is important to create new unit
+tests whenever a feature is added or significantly modified to ensure the stability of the component.
 
-If a component's structure has significantly changed, it may require a snapshot update with the update command listed below. However, it is important to use discretion here, as a failing snapshot may be the symptom of a larger problem with the component. (Such as unexpected extra/missing classes or unintended shuffling of the component's DOM structure) _Always review the log of a snapshot failure before running the update command._ When in doubt, reach out to our support avenues.
+If a component's structure has significantly changed, it may require a snapshot update with the update command listed
+below. However, it is important to use discretion here, as a failing snapshot may be the symptom of a larger problem
+with the component. (Such as unexpected extra/missing classes or unintended shuffling of the component's DOM structure)
+_Always review the log of a snapshot failure before running the update command._ When in doubt, [reach out to
+us][contact].
 
 ```bash
 # Manually run unit tests on modified components
@@ -227,7 +335,8 @@ npm run test -- [opts]
 
 ### e2e tests
 
-Nightwatch e2e tests are run to ensure that no unexpected visual regressions were made to a component. These tests are run automatically on all components with no test writing required on the developer's part.
+Nightwatch e2e tests are run to ensure that no unexpected visual regressions were made to a component. These tests
+are run automatically on all components with no test writing required on the developer's part.
 
 ```bash
 # Manually run visual regression tests on modified components
@@ -331,132 +440,98 @@ Always test mobile devices first. While testing, perform the following checks at
 - Assistive technology can parse copy in a reasonable order
 - Animations are slowed or removed when [reduced motion][css-tricks-reduced-motion] is enabled
 
-## Make a commit
-
-To view a guide on how TDS components are versioned, see our [FAQ](../faq.md#how-is-tds-versioned).
-To view TELUS standards for commit format, see our [contribution model][ra-contribute] on the Reference Architecture.
-
-We use [commitizen](https://github.com/commitizen/cz-cli) and [commitlint](https://github.com/marionebl/commitlint) to
-ensure conventional commit messages, which supports our publishing workflow and versioning scheme.
-
-[husky](https://github.com/typicode/husky) is used to run precommit tasks on staged files, which includes code formatting, linting, and tests.
-You will not be able to make a commit until the precommit tasks pass. We also have a prepush hook to run a full build before pushing your code.
-
-### Versioning via commits
-
-Automated component versioning is facilitated by the [Conventional Commits specification](https://conventionalcommits.org/),
-**it is important to be deliberate when choosing the type of commit** as commits will determine version bumps and
-changelogs.
-
-The commit type determines what version a component will bump towards, and will be included in changelogs. Use the `feat`
-and `fix` types sparingly as these two types will appear in changelogs. For most other commits such as fixups or configurations,
-use the `chore` type.
-
-For example, the [changelog for core-button](https://github.com/telus/tds-core/blob/3aa8d4e8ed4bfa480cb9cc205fa6d5b5b733b861/packages/Button/CHANGELOG.md) has an entry under version 2.1.0 that reads:
-
-> Features  
-> core-button: add forwardRef (fd8f181)
-
-This was parsed from a [commit](https://github.com/telus/tds-core/commit/fd8f181) using the `feat` type.
-
-### Commit format
-
-Given the commit format:
-
-```sh
-type(scope): subject
-
-body
-
-footer
-```
-
-Use the `type` field to inform lerna what Conventional Commit you intend to use:
-
-- For breaking changes, use the **feat** commit type with body text that begins with the phrase `BREAKING CHANGE:` (see [commit example](https://github.com/telus/tds-core/commit/0ff9dba))
-- For minor changes, use the **feat** commit type
-- For patches, use the **fix** commit type
-
-Follow these guidelines to determine the type of your commit:
-
-- **Breaking changes** are removals of features such as props, changes that affect the [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model), or dramatic changes in branding or appearance
-- **Minor changes** are new features, animations, props, or visual options
-- **Patches** are defect fixes that do not remove features, alter pixel dimensions related to the box model, nor add new features. If an intended feature was not working in a previous release, changing that feature to match the original design counts as a patch even if it affects the box model
-
-Use the `scope` field when referring to an area in the codebase, such as a package name (e.g. `core-button-link`) or
-a directory (e.g. `e2e`).
-
-Use the `subject` field to write a succinct description of the change. The first word is often a verb using present
-imperative tense such as 'change' or 'remove'.
-
-The `body` field can include more detailed notes regarding the change. If there is a breaking change, it must begin with
-the phrase 'BREAKING CHANGE:'.
-
-The `footer` field can be used to reference a commit hash or issue number on GitHub.
-
-### Commit types
-
-| Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| feat     | Indicates a **minor, public-facing change**. A change is considered minor if it adds new functionality in a backwards-compatible manner. It must also be perceivable by consumers of TDS Core, and not just a change that only impacts developers of TDS Core. Additionally, it may be used if functionality is being **deprecated**. If a commit of this type contains a public-facing **breaking change**, add the text `BREAKING CHANGE:` to your commit’s body, followed by a description of what the breaking change is. |
-| fix      | Indicates a patch level, **public-facing** change. Generally, this is used for backwards-compatible bug fixes. There should be no consumer-facing API changes at all in patches. It must also be perceivable by consumers of TDS, and not just a change that only impacts developers of TDS Core.                                                                                                                                                                                                                             |
-| test     | Used for commits that only modify/add **unit tests** or anything test related, such as **snapshots**, **screenshots**, or **test scripts**.                                                                                                                                                                                                                                                                                                                                                                                   |
-| refactor | Used if code has been refactored **without any modifications to functionality or behaviour**. If your refactor also fixes a bug, please use the `fix` type. A common scenario for using this type would be “preventative maintenance” to code. This is also useful when iterating on changes due to PR reviews or other factors. Only one commit may be labeled as a `fix` or `feat` for any one change, so commits following that to iterate on the same feature will either be a `chore` or `refactor`.                     |
-| docs     | Indicates a modification to **documentation**. Changes to the .md files of components, or changes to the documentation site use this type.                                                                                                                                                                                                                                                                                                                                                                                    |
-| chore    | A type for **miscellaneous** changes. Anything not covered here is considered a chore. Additionally, this is useful when iterating on changes due to PR reviews or other factors. Only one commit may be labeled as a `fix` or `feat` for any one change, so commits following that to iterate on the same feature will either be a `chore` or `refactor`.                                                                                                                                                                    |
-
-### Use commitizen
-
-The TDS codebase includes a script to run commitizen for a streamline commit-making experience:
-
-```bash
-# Stage your files and make a commit using commitizen
-npm run cz
-
-## At the `type` and `scope` prompts, you can press TAB to view options
-```
-
-### Example commit messages
-
-```git
-feat(core-flex-grid): remove center prop
-
-BREAKING CHANGE: deprecated `center` prop is removed
-
-fix(core-button-link): adjust hover animation speed
-```
-
-## Make a Pull Request
+## Make a pull request
 
 Before making your Pull Request, please be sure the following items were addressed:
 
 - New component code has corresponding unit tests
 - Any changes to component functionality has corresponding documentation
 
-Paste the full output of the pre-pr task into the body of your PR so that a maintainer/publisher can verify when publishing.
+You can also check to make sure appropriate version bumps will be assigned to components affected by your work.
 
 ```bash
-npm run prepr
+npm run prepr:quick
 ```
 
-The pre-pr task will show you the version change that will result from your changeset. If the output is unexpected, you may need
-to adjust your commit messages before making your PR. See the [Conventional Commits spec FAQ](https://conventionalcommits.org/#faq) for more info on correcting mistakes.
+The "pre-pull request" task will show you the version change that will result from your changeset. If the output is unexpected, you may need
+to adjust your commit messages before making your PR. See the [Conventional Commits spec FAQ][conventional-commits-faq] for more info on correcting mistakes.
+
+## Releasing and deploying
+
+TDS component releases and deployments are handled by lerna and CircleCI. The TDS Core team governs the deploy process for TDS Core,
+and the Digital Platform Ambassadors perform deployments for TDS Community.
+
+Before deploying, ensure the following actions were taken:
+
+- Components were fully tested, following our [quality checklist](#Quality-checklist)
+- Pull requests that need to be deployed have been rebased and merged to master
+- Related design assets are deployed to InVision DSM
+- For TDS Community, all outputs have been fulfilled in the [backlog practice][tds-community-backlog-practice]
+
+<!-- TODO: Link to design deployment docs -->
+
+### Deploying coded components to npm
+
+When releasing via CircleCI, lerna parses conventional commits to determine version bumps, creates tags and changelogs,
+and deploys affected components to npm.
+
+When deploying [TDS Core on CircleCI](https://circleci.com/gh/telus/workflows/tds-core/tree/master):
+
+1. Check the `prepr-log` job to ensure package bumps are desirable
+2. Approve the `approve-release` job to deploy affected components to npm
+
+The same steps can be used for [TDS Community on CircleCI](https://circleci.com/gh/telus/workflows/tds-community/tree/master).
+
+### Deploying documentation to the TDS website
+
+Documentation deployment for TDS Core and Community is orchestrated by an OpenShift pipeline. Before deploying documentation, ensure
+all CircleCI jobs on the `master` branch have fully run. This is necessary to build the documentation with the
+latest component versions.
+
+To deploy documentation:
+
+1. Go to the [Design Outcomes project on OpenShift][tds-openshift]
+2. After all jobs in CircleCI have completed, and components were deployed to npm, start a pipeline in OpenShift
+3. Verify all changes are satisfactory on staging
+4. Manually trigger the job to deploy to production
+
+If you are a Digital Platform Ambassador and do not have access, please [contact us][contact].
 
 ## References
 
-- [TDS Foundational Principles: Accessibility](../accessibility/accessibility.md)
-- [Reference Architecture: Accessibility][ra-accessibility]
-- [React Styleguidist](https://react-styleguidist.js.org/)
+### Related pages
+
+- [TDS Foundational Principles: Accessibility][accessibility]
+- [Contact TDS][contact]
+
+### TELUS Reference Architecture articles
+
+- [Contributing][ra-contribute]
+- [Unit tests][ra-unit]
+- [Accessibility][ra-accessibility]
+- [OpenShift][ra-openshift]
+
+### Related articles and tools
+
+- [React Styleguidist][react-styleguidist]
 - [lerna](https://github.com/lerna/lerna/issues)
-- [Conventional Commits](https://www.conventionalcommits.org/)
+- [Conventional Commits][conventional-commits]
 - [Commitizen](https://github.com/commitizen/cz-cli)
 - [CSS-Tricks.com: An introduction to the reduced motion media query][css-tricks-reduced-motion]
 
-[dpa]: https://github.com/telus/tds-community/blob/02341a13529f1ef162e19485488cf6ab3d1ebd45/guide/DigitalPlatformAmbassadors.md
 [ra-contribute]: https://github.com/telusdigital/reference-architecture/blob/f9d0670a8303351ed80589ea09fddb4f7757d19a/process/contribution-model.md
 [ra-unit]: https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/testing/functional/unit.md
 [ra-accessibility]: https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/development/accessibility.md
+[ra-openshift]: https://github.com/telus/reference-architecture/blob/61520d0e05da6fe8d78247fef3ecc6d266b7b186/delivery/openshift.md
+[tds-community-dpa]: https://github.com/telus/tds-community/blob/02341a13529f1ef162e19485488cf6ab3d1ebd45/guide/DigitalPlatformAmbassadors.md
+[tds-community-backlog-practice]: https://github.com/telus/tds-community/blob/02341a13529f1ef162e19485488cf6ab3d1ebd45/guide/CommunityBacklog.md
+[tds-openshift]: https://console.telusdigital.openshift.com/console/project/o-design-outcomes/browse/pipelines
+[accessibility]: ../accessibility/accessibility.md
 [faq-browsers]: ../faq.md#what-browsers-does-tds-support
+[contact]: ../contact.md
+[react-styleguidist]: https://react-styleguidist.js.org
+[conventional-commits]: https://www.conventionalcommits.org/en/v1.0.0-beta.4/
+[conventional-commits-faq]: https://www.conventionalcommits.org/en/v1.0.0-beta.4/#faq
 [css-tricks-reduced-motion]: https://css-tricks.com/introduction-reduced-motion-media-query/
 [axe]: https://www.deque.com/axe/
 [wave]: https://wave.webaim.org/
