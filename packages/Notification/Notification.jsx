@@ -53,8 +53,8 @@ class Notification extends React.Component {
   }
 
   componentWillUnmount() {
-    if (this.props.dismissible && this.props.onDismiss) {
-      this.props.onDismiss()
+    if (this.props.dismissible && this.props.onUnmount) {
+      this.props.onUnmount()
     }
   }
 
@@ -65,14 +65,7 @@ class Notification extends React.Component {
   }
 
   renderNotification() {
-    const {
-      variant,
-      dismissible,
-      dismissibleA11yLabel,
-      children,
-      onCloseClick,
-      ...rest
-    } = this.props
+    const { variant, dismissible, dismissibleA11yLabel, children, onDismiss, ...rest } = this.props
 
     return (
       <Box
@@ -108,8 +101,8 @@ class Notification extends React.Component {
                             variant={variant === 'instructional' ? 'secondary' : undefined}
                             onClick={() => {
                               this.setState(() => ({ dismissed: true }))
-                              if (onCloseClick) {
-                                onCloseClick()
+                              if (onDismiss) {
+                                onDismiss()
                               }
                             }}
                           />
@@ -127,7 +120,7 @@ class Notification extends React.Component {
   }
 
   render() {
-    const { dismissible, dismissibleA11yLabel, onCloseClick, onDismiss } = this.props
+    const { dismissible, dismissibleA11yLabel, onUnmount, onDismiss } = this.props
     const dismissibleHasA11yLabel = dismissible && dismissibleA11yLabel
 
     if ((dismissible || dismissibleA11yLabel) && !dismissibleHasA11yLabel) {
@@ -136,10 +129,10 @@ class Notification extends React.Component {
         'The props `dismissible` and `dismissibleA11yLabel` must be used together.'
       )
     }
-    if (onCloseClick && !dismissibleHasA11yLabel) {
+    if (onUnmount && !dismissibleHasA11yLabel) {
       warn(
         'Notification',
-        'The props `onCloseClick` must be used together with `dismissible` and `dismissibleA11yLabel`.'
+        'The props `onUnmount` must be used together with `dismissible` and `dismissibleA11yLabel`.'
       )
     }
     if (onDismiss && !dismissibleHasA11yLabel) {
@@ -198,7 +191,7 @@ Notification.propTypes = {
    *
    * @since 1.3.0
    */
-  onCloseClick: PropTypes.func,
+  onUnmount: PropTypes.func,
   /**
    * A callback function to be run on when the Notification has been fully dismissed and unmounted
    * Requires `dismissible={true}`
@@ -216,7 +209,7 @@ Notification.defaultProps = {
   variant: 'instructional',
   dismissible: false,
   dismissibleA11yLabel: undefined,
-  onCloseClick: undefined,
+  onUnmount: undefined,
   onDismiss: undefined,
 }
 
