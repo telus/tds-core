@@ -11,8 +11,7 @@ import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import DimpleDivider from '@tds/core-dimple-divider'
 import { Reveal, Translate } from '@tds/shared-animation'
-import { spacing, borders, forms } from '@tds/shared-styles'
-import { color } from '@tds/shared-typography'
+import { buttons } from '@tds/shared-styles'
 
 const parseHeader = text => {
   const t = text
@@ -31,20 +30,11 @@ const parseHeader = text => {
   return t
 }
 
-const HeaderButtonClickable = styled.button(
-  spacing.noSpacing,
-  borders.none,
-  forms.font,
-  color,
-  ({ panelDisabled }) => ({
-    appearance: 'none',
-    background: panelDisabled ? colorAthensGrey : 'none',
-    boxShadow: 'none',
-    cursor: panelDisabled ? 'default' : 'pointer',
-    width: '100%',
-    textAlign: 'left',
-  })
-)
+const HeaderButtonClickable = styled.button(buttons.noStyle, ({ panelDisabled }) => ({
+  width: '100%',
+  textAlign: 'left',
+  ...(panelDisabled && { background: colorAthensGrey, cursor: 'default' }),
+}))
 
 const CaretContainer = styled.div(({ isDisabled }) => ({
   ...(isDisabled && { visibility: 'hidden' }),
