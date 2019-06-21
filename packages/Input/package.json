@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-input",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

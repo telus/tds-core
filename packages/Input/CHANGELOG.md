@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/telus/tds/compare/@tds/core-input@3.0.2...@tds/core-input@3.0.3) (2019-06-21)
+
+
+### Bug Fixes
+
+* **core-input:** remove value from props when input is uncontrolled ([e8db76b](https://github.com/telus/tds/commit/e8db76b))
+
+
+
+
+
 ## [3.0.2](https://github.com/telus/tds/compare/@tds/core-input@3.0.1...@tds/core-input@3.0.2) (2019-06-18)
 
 **Note:** Version bump only for package @tds/core-input
