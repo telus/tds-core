@@ -2,6 +2,7 @@
 
 Role-specific guides and resources:
 
+- [Contributing standards](./contributing-standards.md)
 - [Designer guide](./designer-guide.md)
 - [Developer guide](./developer-guide.md)
 - [Codebase overview](./codebase-overview.md)

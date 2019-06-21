@@ -1,7 +1,6 @@
 ## TELUS Design System
 
 - [Home](README.md)
-- [Standards](standards.md)
 - [Announcements](announcements.md)
 - [Getting Started](getting-started/getting-started.md)
   - [Designers](getting-started/designers.md)
@@ -9,6 +8,7 @@
 - [Core Components](ref://components/index.html)
 - [Community Components](ref://community/index.html)
 - [Contributing](contributing/contributing.md)
+  - [Contributing standards](contributing/contributing-standards.md)
   - [Designer guide](contributing/designer-guide.md)
   - [Developer guide](contributing/developer-guide.md)
   - [Codebase overview](contributing/codebase-overview.md)
