@@ -59,7 +59,15 @@ npm run bootstrap
 npm run bootstrap:quick
 ```
 
-For more information on lerna, see [using lerna](#using-lerna).
+**Note**: these commands also run `npm install`, which may create changes in **package-lock.json**. Please commit any changes
+to the lockfile using the `deps` scope. For instance:
+
+```text
+chore(deps): update lockfile
+```
+
+For more information on commits and commit scopes, see [make a commit](#make-a-commit).  
+For information on using lerna while developing for TDS, see [using lerna](#using-lerna).
 
 #### Text editor
 
@@ -215,8 +223,8 @@ Follow these guidelines to determine the type of your commit:
 - **Minor changes** are new features, animations, props, or visual options
 - **Patches** are defect fixes that do not remove features, alter pixel dimensions related to the box model, nor add new features. If an intended feature was not working in a previous release, changing that feature to match the original design counts as a patch even if it affects the box model
 
-Use the `scope` field when referring to an area in the codebase, such as a package name (e.g. `core-button-link`) or
-a directory (e.g. `e2e`).
+Use the `scope` field when referring to an area in the codebase, such as a package name (e.g. `core-button-link`), or
+a directory (e.g. `e2e`), or somewhere in the project root (e.g. `deps` for changes to **package.json** or **package-lock.json**).
 
 Use the `subject` field to write a succinct description of the change. The first word is often a verb using present
 imperative tense such as 'change' or 'remove'.
