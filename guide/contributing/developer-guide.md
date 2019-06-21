@@ -19,6 +19,7 @@
   - [Accessibility](#accessibility)
   - [Unit tests](#unit-tests)
   - [e2e tests](#e2e-tests)
+  - [Documentation](#documentation)
   - [npm package](#npm-package)
   - [Manual tests](#manual-tests)
 - [Make a pull request](#make-a-pull-request)
@@ -273,7 +274,7 @@ Be sure to fulfill all items in this quality checklist for TDS components:
 - [Accessibility](#accessibility): is the component accessible, or makes direct suggestions to building accessible experiences?
 - [Unit tests](#unit-tests): is the component's functionality and rendering tested?
 - [e2e tests](#e2e-tests): is there an accurate baseline image?
-- Documentation: is the component documented with examples? Are there usage criteria for designers, and accessibility considerations clearly written?
+- [Documentation](#documentation): is the component documented with examples? Are there usage criteria for designers, and accessibility considerations clearly written?
 - [npm package](#npm-package): is the package manifest appropriately set up? Does it build? Is the distributable build lean?
 - [Manual tests](#manual-tests): has the component been tested in [supported browsers][faq-browsers]?
   - **Mobile first**: does it work properly in mobile browsers, on mobile devices? Is the component responsive?
@@ -357,6 +358,34 @@ npm run test:e2e -- [opts]
 
 **Note**: after running the above command, a docker container will be running the component catalogue (built with React Styleguidist).
 To stop the container, gather the container's `id` by running `docker ps`, and then stop the container using `docker stop [id]`.
+
+### Documentation
+
+TDS uses [React Styleguidist][react-styleguidist] to generate documentation. In general, components
+should have a combination of the following:
+
+- A **ComponentName.md** to complement its **ComponentName.jsx**
+- Use of doclet tags to document the component's version and props. Visit the React Styleguidist page on [documenting components][react-styleguidist-jsdoc] to learn more
+
+  - Use the `@version` doclet tag to extract the component's version from **package.json**. For example:
+
+  ```jsx
+  /**
+   * Pilter example
+   * @version ./package.json
+   */
+
+  const SamplePilter = ({ children, a11yText, ...rest }) => (
+  ```
+
+  - Add comments above prop names to provide a brief explanation. For example:
+
+  ```jsx
+  /**
+   * Label to be read by screen readers
+   */
+  a11yText: PropTypes.string,
+  ```
 
 ### npm package
 
@@ -538,6 +567,7 @@ If you are a Digital Platform Ambassador and do not have access, please [contact
 [faq-browsers]: ../faq.md#what-browsers-does-tds-support
 [contact]: ../contact.md
 [react-styleguidist]: https://react-styleguidist.js.org
+[react-styleguidist-jsdoc]: https://react-styleguidist.js.org/docs/documenting.html#code-comments-and-proptypes
 [conventional-commits]: https://www.conventionalcommits.org/en/v1.0.0-beta.4/
 [conventional-commits-faq]: https://www.conventionalcommits.org/en/v1.0.0-beta.4/#faq
 [css-tricks-reduced-motion]: https://css-tricks.com/introduction-reduced-motion-media-query/
