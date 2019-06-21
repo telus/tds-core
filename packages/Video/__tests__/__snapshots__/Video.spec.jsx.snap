@@ -90,18 +90,6 @@ exports[`Video renders 1`] = `
   background-position: center;
   position: absolute;
   top: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -694,18 +682,6 @@ input[type=range].c21::-ms-tooltip {
   background-position: center;
   position: absolute;
   top: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -1113,7 +1089,6 @@ input[type=range].c21::-ms-tooltip {
               >
                 <div
                   class="c3"
-                  poster="TestPoster.jpg"
                 >
                   <div
                     class="c4"
@@ -1538,7 +1513,7 @@ input[type=range].c21::-ms-tooltip {
                       <VideoSplash__SplashBackground
                         iconLeftOffsetPx={2}
                         onClick={[Function]}
-                        poster="TestPoster.jpg"
+                        videoPoster="TestPoster.jpg"
                       >
                         <StyledComponent
                           forwardedComponent={
@@ -1566,12 +1541,11 @@ input[type=range].c21::-ms-tooltip {
                           forwardedRef={null}
                           iconLeftOffsetPx={2}
                           onClick={[Function]}
-                          poster="TestPoster.jpg"
+                          videoPoster="TestPoster.jpg"
                         >
                           <div
                             className="c3"
                             onClick={[Function]}
-                            poster="TestPoster.jpg"
                           >
                             <BigVideoButton
                               icon={<Play />}
@@ -2110,7 +2084,6 @@ input[type=range].c21::-ms-tooltip {
                   >
                     <div
                       class="c3"
-                      poster="TestPoster.jpg"
                     >
                       <div
                         class="c4"
