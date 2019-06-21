@@ -2,7 +2,7 @@
 
 exports[`VideoSplash renders 1`] = `
 <VideoSplash__SplashBackground
-  poster=""
+  videoPoster=""
 >
   <BigVideoButton
     icon={<Play />}
