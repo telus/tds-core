@@ -90,18 +90,6 @@ exports[`WebVideo renders 1`] = `
   background-position: center;
   position: absolute;
   top: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -231,7 +219,7 @@ exports[`WebVideo renders 1`] = `
               >
                 <VideoSplash__SplashBackground
                   onClick={[Function]}
-                  poster="https://img.youtube.com/vi/ppF-fn37SDs/maxresdefault.jpg"
+                  videoPoster="https://img.youtube.com/vi/ppF-fn37SDs/maxresdefault.jpg"
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -258,12 +246,11 @@ exports[`WebVideo renders 1`] = `
                     }
                     forwardedRef={null}
                     onClick={[Function]}
-                    poster="https://img.youtube.com/vi/ppF-fn37SDs/maxresdefault.jpg"
+                    videoPoster="https://img.youtube.com/vi/ppF-fn37SDs/maxresdefault.jpg"
                   >
                     <div
                       className="c2"
                       onClick={[Function]}
-                      poster="https://img.youtube.com/vi/ppF-fn37SDs/maxresdefault.jpg"
                     >
                       <BigVideoButton
                         icon={<Play />}
