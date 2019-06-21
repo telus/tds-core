@@ -12,23 +12,21 @@ import safeRest from '../../utils/safeRest'
  * @version ./package.json
  */
 
-const SplashBackground = styled.div(props => ({
-  backgroundImage: `url(${props.poster})`,
+const SplashBackground = styled.div(({ videoPoster, isCustomButton }) => ({
+  backgroundImage: `url(${videoPoster})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   position: 'absolute',
   top: 0,
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
   width: '100%',
-  height: '100%',
+  height: '100%', // Fixes vertical alignment on IE 11
   cursor: 'pointer',
+  ...(isCustomButton && { display: 'flex', alignItems: 'center', justifyContent: 'center' }),
 }))
 
 const VideoSplash = ({ poster, videoLength, label, customButton, ...rest }) => {
   return (
-    <SplashBackground {...safeRest(rest)} poster={poster}>
+    <SplashBackground {...safeRest(rest)} videoPoster={poster} isCustomButton={customButton}>
       {customButton || <BigVideoButton icon={<Play />} label={label} videoLength={videoLength} />}
     </SplashBackground>
   )
