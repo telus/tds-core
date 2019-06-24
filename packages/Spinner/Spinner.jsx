@@ -143,7 +143,7 @@ Spinner.propTypes = {
   /**
    * Communicates a message to assistive technology while visible. This same message will appear underneath the spinner when its `size` is `large`.
    *
-   * When used with `A11yContent`, labe text should be wrapped by a `<span>` or `<React.Fragment>`.
+   * When used with `A11yContent`, label text should be wrapped by a `<span>` or `<React.Fragment>`.
    *
    * **Note**: This prop will be required in the next major version.
    *
