@@ -180,6 +180,7 @@
       ],
       "*.scss": "stylelint --config config/stylelint.config.js",
       "*.md": [
+        "remark --quiet --frail .",
         "prettier --write",
         "git add"
       ]
