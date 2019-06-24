@@ -26,7 +26,7 @@ const SplashBackground = styled.div(({ videoPoster, isCustomButton }) => ({
 
 const VideoSplash = ({ poster, videoLength, label, customButton, ...rest }) => {
   return (
-    <SplashBackground {...safeRest(rest)} videoPoster={poster} isCustomButton={customButton}>
+    <SplashBackground {...safeRest(rest)} videoPoster={poster} isCustomButton={!!customButton}>
       {customButton || <BigVideoButton icon={<Play />} label={label} videoLength={videoLength} />}
     </SplashBackground>
   )
