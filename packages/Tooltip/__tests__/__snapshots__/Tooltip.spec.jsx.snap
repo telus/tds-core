@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] = `
+.c4 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
 .c2 {
   border-radius: 4px;
   position: absolute;
@@ -351,7 +360,47 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                       <i
                         aria-label="Reveal additional information."
                         className="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
-                      />
+                      >
+                        <A11yContent>
+                          <A11yContent__StyledA11yContent>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c4",
+                                    "rules": Array [
+                                      "position: absolute;",
+                                      "height: 1px;",
+                                      "width: 1px;",
+                                      "overflow: hidden;",
+                                      "clip: rect(1px, 1px, 1px, 1px);",
+                                    ],
+                                  },
+                                  "displayName": "A11yContent__StyledA11yContent",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                  "target": "span",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <span
+                                className="c4"
+                              >
+                                Reveal additional information.
+                              </span>
+                            </StyledComponent>
+                          </A11yContent__StyledA11yContent>
+                        </A11yContent>
+                      </i>
                     </Icon>
                   </button>
                 </Clickable>
@@ -366,6 +415,15 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
 `;
 
 exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] = `
+.c4 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
 .c2 {
   border-radius: 4px;
   position: absolute;
@@ -716,7 +774,47 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                       <i
                         aria-label="Reveal additional information."
                         className="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
-                      />
+                      >
+                        <A11yContent>
+                          <A11yContent__StyledA11yContent>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c4",
+                                    "rules": Array [
+                                      "position: absolute;",
+                                      "height: 1px;",
+                                      "width: 1px;",
+                                      "overflow: hidden;",
+                                      "clip: rect(1px, 1px, 1px, 1px);",
+                                    ],
+                                  },
+                                  "displayName": "A11yContent__StyledA11yContent",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                  "target": "span",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <span
+                                className="c4"
+                              >
+                                Reveal additional information.
+                              </span>
+                            </StyledComponent>
+                          </A11yContent__StyledA11yContent>
+                        </A11yContent>
+                      </i>
                     </Icon>
                   </button>
                 </Clickable>
@@ -1078,6 +1176,15 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
 `;
 
 exports[`Tooltip renders 1`] = `
+.c4 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
 .c2 {
   border-radius: 4px;
   display: none;
@@ -1429,7 +1536,47 @@ exports[`Tooltip renders 1`] = `
                       <i
                         aria-label="Reveal additional information."
                         className="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
-                      />
+                      >
+                        <A11yContent>
+                          <A11yContent__StyledA11yContent>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c4",
+                                    "rules": Array [
+                                      "position: absolute;",
+                                      "height: 1px;",
+                                      "width: 1px;",
+                                      "overflow: hidden;",
+                                      "clip: rect(1px, 1px, 1px, 1px);",
+                                    ],
+                                  },
+                                  "displayName": "A11yContent__StyledA11yContent",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                  "target": "span",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <span
+                                className="c4"
+                              >
+                                Reveal additional information.
+                              </span>
+                            </StyledComponent>
+                          </A11yContent__StyledA11yContent>
+                        </A11yContent>
+                      </i>
                     </Icon>
                   </button>
                 </Clickable>
