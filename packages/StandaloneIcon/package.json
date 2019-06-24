@@ -25,6 +25,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
+    "@tds/core-a11y-content": "^2.1.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
