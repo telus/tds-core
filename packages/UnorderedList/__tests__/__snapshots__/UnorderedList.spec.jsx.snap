@@ -30,7 +30,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
 }
 
 .c1 {
-  padding-left: 3rem;
+  padding-left: 2.0625rem;
 }
 
 .c1 .c0 {
@@ -62,7 +62,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
             "lastClassName": "c1",
             "rules": Array [
               "& {",
-              "padding-left: 3rem;",
+              "padding-left: 2.0625rem;",
               "}",
               "& & {",
               "margin-top: 1rem;",
@@ -218,7 +218,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
 }
 
 .c1 {
-  padding-left: 3rem;
+  padding-left: 2.0625rem;
 }
 
 .c1 .c0 {
@@ -250,7 +250,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
             "lastClassName": "c1",
             "rules": Array [
               "& {",
-              "padding-left: 3rem;",
+              "padding-left: 2.0625rem;",
               "}",
               "& & {",
               "margin-top: 1rem;",
@@ -410,7 +410,7 @@ exports[`<UnorderedList /> renders 1`] = `
 }
 
 .c1 {
-  padding-left: 3rem;
+  padding-left: 2.0625rem;
 }
 
 .c1 .c0 {
