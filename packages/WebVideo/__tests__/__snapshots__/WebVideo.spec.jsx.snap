@@ -218,6 +218,7 @@ exports[`WebVideo renders 1`] = `
                 videoLength={30}
               >
                 <VideoSplash__SplashBackground
+                  isCustomButton={false}
                   onClick={[Function]}
                   videoPoster="https://img.youtube.com/vi/ppF-fn37SDs/maxresdefault.jpg"
                 >
@@ -245,6 +246,7 @@ exports[`WebVideo renders 1`] = `
                       }
                     }
                     forwardedRef={null}
+                    isCustomButton={false}
                     onClick={[Function]}
                     videoPoster="https://img.youtube.com/vi/ppF-fn37SDs/maxresdefault.jpg"
                   >
