@@ -5,11 +5,15 @@ A description of the structure of the codebase, conventions being followed, and 
 ## Contents
 
 - [Tools](#tools)
-- [Component structure and standards](#component-s-and-s)
+- [Component structure and standards](#component-structure-and-standards)
 - [Building components](#building-components)
-- [Writing test](#writing-tests)
+  - [Creating new components from scratch](#creating-new-components-from-scratch)
+  - [React & JSX practices](#react--jsx-practices)
+  - [Code style and conventions](#code-style-and-conventions)
+  - [Styling components](#styling-components)
+- [Writing tests](#writing-tests)
 
-## Tools {#tools}
+## Tools
 
 The TDS codebase maintains a set of organizational and syntactical standards.
 We utilize the following tools for the development, release, and distribution processes:
@@ -30,7 +34,7 @@ We utilize the following tools for the development, release, and distribution pr
   based on the TELUS isomorphic starter kit pipeline, using Docker as the build artifact
 - [Lerna](https://lernajs.io/): A tool for managing JavaScript projects with multiple packages.
 
-## Component structure and standards {#component-s-and-s}
+## Component structure and standards
 
 All TDS components have a common directory structure and set of standards. Where you have a
 component named `ButtonLink`, the files are organized like this:
@@ -63,7 +67,7 @@ Here you may notice some of our standards:
 - To include custom documentation with a component, use `<ComponentName>.md`
 - To include documentation for the npm registry page, use `README.md`
 
-## Building components {#building-components}
+## Building components
 
 Building React components for TDS involves a set of coding standards in order to maintain consistent syntax
 and form across the codebase. Though the majority of syntax is automatically formatted with our linter rules and
@@ -80,28 +84,68 @@ npm run scaffold [ComponentName]
 
 This will output a set of files in the aforementioned structure.
 
-### React & JSX patterns
+### React & JSX practices
 
-Though the following patterns are not strictly enforced, they are strongly encouraged:
+Though the following practices are not strictly enforced, they are strongly encouraged:
+
+### Code style and conventions
+
+Here are some dos and don'ts to consider when writing code.
 
 #### General
 
-- Prefer functional stateless components. Only create a class when you either need state or need lifecycle methods
+- When creating components, consider this order of preference:
+  - Functional components, optionally with hooks and effects
+  - Pure components
+  - Class components
 - Accessibility and responsiveness is a must for every component
 - Provide a flexible and predictable interface via props
+- Prefer containment over specialization. See [React docs on composition vs inheritance][react-composition]
 - Components should only be aware of themselves or their direct children
+- Reuse component logic and shared assets as much as possible
+  - Give particular consideration to [@tds/core-colours][tds-colours], [@tds/shared-styles][tds-styles], [@tds/shared-typography][tds-type], and other core components
 
-#### Props
+#### React
 
-- De-structure props in the function signature to make it easy to see all of the used props.
+- **DO** make components self-contained. A component should not know anything about other components, except for its direct children
+- **DO** provide a clear, prop-based API to the component. Avoid allowing consumers to customize styles by passing in `className` or `style` as this is not a clear API. Use a prop with known values instead
+- **DO** use React component state for ephemeral UI state within components, while avoiding redux or other application state containers
+- **DO** use dependencies when needed, such as lodash functions or other open source React components
+- **DO** use tds-core components and other tds-community components judiciously
+- **DO** make components compatible with React 15 or greater
+- **DO** use [ponyfills](https://github.com/sindresorhus/ponyfill) when using native JavaScript APIs with low browser support. The alternative is to require that any consumer of your component include a global polyfill in their app, making your component less self-contained, thought this may be preferable in some cases
+- **DO** forward `rest` props onto the primary HTML element of the component so that consumers can still attach global HTML attributes such as `id`.
+- **DON'T** hardcode content without giving consumers the ability to override it with other copy or languages
+
+#### React props
+
+- De-structure props in the function signature to make it easy to see all of the used props
 - Always accept "rest" props (except for className and style) to allow for common global HTML attributes such as `id`.
   Spread these onto the main HTML element of the component before other props. This is to prevent accidental or
   purposeful overriding. `className` and `style` are also not available as a prop interface in most components because
   TDS strictly enforces the TELUS brand through styles, and as such there should be no potential inaccurate brand
-  representations.
-- If a parent component does not use props and only passes them down to its children, pass components as props.
+  representations
+- If a parent component does not use props and only passes them down to its children, pass components as props
 
-[Here is an example of a React component that follows the above patterns](https://github.com/telusdigital/tds-core/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.jsx).
+#### Styling (CSS Modules, Sass)
+
+- **DO** scope component class names
+- **DON'T** specify external margins. Components must be able to fit into various layouts
+- **DON'T** use HTML elements or IDs as CSS selectors. Only use class names
+- **DON'T** hardcode pixel values unless an absolute pixel value is required. Use tds-core components or relative values such as rem instead.
+
+#### Utility modules
+
+A utility module is a shared package that can provide common functionality to multiple components. Utility modules are
+not published to NPM, but are versioned in order for lerna to know it should upgrade components consuming one that has
+been modified. For an example of a utility module, look at [util-generate-id][tds-util-example] on tds-core.
+
+- **DO** add utility modules to the `/shared` directory with its own `package.json` file
+- **DO** configure `private: true` within a utility module's `package.json`
+- **DO** add utility modules as a **devDependency** to components that consume one
+- **DON'T** create utility modules that cannot be reused in any other component
+
+[Here is an example of a React component that follows the above patterns](https://github.com/telus/tds-core/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.jsx).
 
 ### Styling components
 
@@ -114,7 +158,7 @@ their respective **ComponentName.modules.scss** file. The following patterns are
 - Use flexbox, but be aware of cross-browser limitations
 - Components should make effective use of 'layout' components such as Box or Responsive, rather than styles
 
-[Here is an example of a scss file that uses the `composes` property from CSS modules](https://github.com/telusdigital/tds-core/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.modules.scss).
+[Here is an example of a scss file that uses the `composes` property from CSS modules](https://github.com/telus/tds-core/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.modules.scss).
 
 #### Rendered DOM
 
@@ -126,7 +170,7 @@ and 'base' classes since 'primary' composes' base -->
 <a class="primary base" href="#">Find out how</a>
 ```
 
-## Writing tests {#writing-tests}
+## Writing tests
 
 Tests utilize Jest and Enzyme matchers. Tests are treated as a first-class citizen. Tests
 should clearly outline the features and expected output for a component. For some inspiration, have a look at how
@@ -153,3 +197,8 @@ Always prefer "shallow" rendering, then "render", then "mount". Only "mount" if 
 
 Use a snapshot test for components that do not have any logic and to increase confidence in the structure of the
 component. Snapshot tests do not replace unit tests.
+
+[react-composition]: https://reactjs.org/docs/composition-vs-inheritance.html
+[tds-colours]: https://tds.telus.com/components/index.html#colours
+[tds-styles]: https://www.npmjs.com/package/@tds/shared-styles
+[tds-type]: https://www.npmjs.com/package/@tds/shared-typography
