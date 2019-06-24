@@ -26,12 +26,11 @@ exports[`<OrderedList /> can have a list style 1`] = `
 }
 
 .c1 {
-  padding-left: 3rem;
   list-style-type: decimal;
 }
 
 .c1 {
-  padding-left: 3rem;
+  padding-left: 2.0625rem;
 }
 
 .c1 .c0 {
@@ -94,12 +93,11 @@ exports[`<OrderedList /> can have a list style 2`] = `
 }
 
 .c1 {
-  padding-left: 3rem;
   list-style-type: upper-alpha;
 }
 
 .c1 {
-  padding-left: 3rem;
+  padding-left: 2.0625rem;
 }
 
 .c1 .c0 {
@@ -157,12 +155,11 @@ exports[`<OrderedList /> renders 1`] = `
 }
 
 .c1 {
-  padding-left: 3rem;
   list-style-type: decimal;
 }
 
 .c1 {
-  padding-left: 3rem;
+  padding-left: 2.0625rem;
 }
 
 .c1 .c0 {
