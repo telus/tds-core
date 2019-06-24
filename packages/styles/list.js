@@ -2,7 +2,7 @@
 
 export const base = {
   '&': {
-    paddingLeft: '3rem',
+    paddingLeft: '2.0625rem',
   },
 
   '& &': {
