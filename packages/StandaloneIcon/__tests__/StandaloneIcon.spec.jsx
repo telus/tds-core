@@ -1,6 +1,8 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
 
+import A11yContent from '@tds/core-a11y-content'
+
 import StandaloneIcon from '../StandaloneIcon'
 
 describe('StandaloneIcon', () => {
@@ -73,6 +75,15 @@ describe('StandaloneIcon', () => {
       const { interactiveIcon } = doShallow({ onClick: jest.fn() })
 
       expect(interactiveIcon.dive()).toHaveDisplayName('button')
+    })
+
+    it('passes a11yText to the button as A11yContent', () => {
+      const { interactiveIcon } = doShallow({ onClick: jest.fn() })
+
+      expect(interactiveIcon.find('Icon')).toHaveProp(
+        'children',
+        <A11yContent>Some text for the screen readers.</A11yContent>
+      )
     })
 
     it('triggers the click handler', () => {

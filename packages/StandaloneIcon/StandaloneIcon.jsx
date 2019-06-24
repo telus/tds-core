@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import A11yContent from '@tds/core-a11y-content'
+
 import safeRest from '../../shared/utils/safeRest'
 
 import Icon from '../../shared/components/Icon/Icon'
@@ -39,7 +41,9 @@ const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, innerRef, ..
         onClick={onClick}
         style={needsExpandedTouchArea ? touchAreaStyles(size) : undefined}
       >
-        <Icon {...iconProps} />
+        <Icon {...iconProps}>
+          <A11yContent>{a11yText}</A11yContent>
+        </Icon>
       </Clickable>
     )
   }
