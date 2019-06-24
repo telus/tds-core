@@ -2,6 +2,12 @@
 
 The TELUS Design System maintains a set of standards and practices for core components and community components.
 
+- [What is Core and Community?](#what-is-core-and-community)
+  - [Core versus Community](#core-versus-community)
+- [Community component criteria](#community-component-criteria)
+- [Component principles](#component-principles)
+- [References](#references)
+
 ## What is Core and Community?
 
 **TDS Core** provides a library of highly-reusable components and foundational principles that can be composed and combined to help solve
@@ -26,11 +32,51 @@ Core and Community differ in the following ways:
 - **Ownership**: Core components are built and maintained by the TELUS Design System team. Community components are built and maintained by all consumers, and and owned by the Digital Platform Ambassadors
   <!-- TODO: add link to digital platform ambassadors -->
 
+## Community component criteria
+
+Before designing or contributing new components, confirm the following criteria in order to qualify
+a viable community component. If knowing that a component can qualify for TDS Community is uncertain, we still welcome
+[opening a new issue][tds-community-new-issue] to gather more details and find opportunities.
+
+A community component:
+
+<!-- prettier-ignore-start -->
+
+1. **Must** have an identified use case in at least 2 unique experiences
+  - Community components have the most impact when shared across multiple situations in many experiences
+  - Core components have the most impact when they can be used across most experiences and can be composed to solve complex designs
+2. **Must** be brand aligned and assessed by Design Direction (if applicable)
+  - New user experience patterns must involve Design Direction to preserve a high-quality and consistent end customer experience
+3. **Must** not include business logic or proprietary information  
+  - The presence of these things limits the breadth of reuse for a component
+  - Design system components are focused on reusable user experience patterns. Keep business logic, API calls, content, or other application-specific behaviour in the application
+    <details>
+      <summary>See more details regarding business logic</summary>
+      Examples of business logic:
+      <ul>
+        <li>Controlling, fetching, and displaying proprietary TELUS data</li>
+        <li>Controlling, fetching, and displaying information from an external API (such as YouTube or Google Maps) in a manner that could limit the component scope, or reusability of the API. Even if the external API has evaluated use cases, use discretion as it could increase the maintenance scope of the component</li>
+        <li>Interacting with other components on a page that are not self-contained</li>
+      </ul>
+
+      Examples of not business logic:
+      <ul>
+        <li>Rendering different views based on designs</li>
+        <li>Controlling global aspects of the DOM (window, document). Not recommended, but acceptable</li>
+        <li>Having internal component state (i.e. React class components)</li>
+      </ul>
+    </details>
+4. **Must** be sufficiently different than other available shared components
+  - Community components reduce duplication by promoting flexibility and reuse of existing code
+  - Before creating a new component, consider whether an existing pattern and component is sufficient. If not, consider extending or adding features to an existing component before creating a new one
+5. **Should** be sufficiently granular to promote reuse
+  - Design system components should encapsulate a single pattern or user experience "element." Seek to find the most granular, standalone, reusable pattern
+
+Note, this criteria should be interpreted as described in [RFC2119](https://tools.ietf.org/html/rfc2119).
+
 ## Component principles
 
 All TELUS Design System components follow these core principles.
-
-<!-- prettier-ignore-start -->
 
 1. Composable
   - Components are most effective when they can be combined to form more complex patterns.
