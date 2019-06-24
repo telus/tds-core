@@ -1512,6 +1512,7 @@ input[type=range].c21::-ms-tooltip {
                     >
                       <VideoSplash__SplashBackground
                         iconLeftOffsetPx={2}
+                        isCustomButton={false}
                         onClick={[Function]}
                         videoPoster="TestPoster.jpg"
                       >
@@ -1540,6 +1541,7 @@ input[type=range].c21::-ms-tooltip {
                           }
                           forwardedRef={null}
                           iconLeftOffsetPx={2}
+                          isCustomButton={false}
                           onClick={[Function]}
                           videoPoster="TestPoster.jpg"
                         >
