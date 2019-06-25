@@ -5,6 +5,9 @@ exports[`Accordion renders a closed accordion 1`] = `
   padding: 0;
   margin: 0;
   border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
   width: 100%;
   height: 1px;
   background-color: #d8d8d8;
@@ -628,6 +631,9 @@ exports[`Accordion renders an open accordion 1`] = `
   padding: 0;
   margin: 0;
   border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
   width: 100%;
   height: 1px;
   background-color: #d8d8d8;
