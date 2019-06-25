@@ -5,6 +5,9 @@ exports[`TermsAndConditions renders 1`] = `
   padding: 0;
   margin: 0;
   border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
   width: 100%;
   height: 1px;
   background-color: #d8d8d8;
@@ -246,6 +249,9 @@ exports[`TermsAndConditions renders expanded 1`] = `
   padding: 0;
   margin: 0;
   border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
   width: 100%;
   height: 1px;
   background-color: #d8d8d8;
@@ -1266,6 +1272,9 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
   padding: 0;
   margin: 0;
   border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
   width: 100%;
   height: 1px;
   background-color: #d8d8d8;
@@ -2704,6 +2713,9 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
   padding: 0;
   margin: 0;
   border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
   width: 100%;
   height: 1px;
   background-color: #d8d8d8;
