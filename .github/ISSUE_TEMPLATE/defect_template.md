@@ -33,9 +33,19 @@ about: Create a report to help us improve
 2. Click on the `y` link
 3. Observe `z`
 
-## Reproduction Percentage (if applicable)
+## Workaround details
 
-- 0/10 times
+<!--
+  Optionally provide guidance on any available workaround.
+-->
+
+## Recommendation
+
+<!--
+  Optionally include any recommendation you may have to remedy the issue
+-->
+
+- Your recommendation here
 
 ## Meta
 
@@ -45,7 +55,6 @@ about: Create a report to help us improve
 
 - TDS component version: <!-- Example: @tds/core-expand-collapse@1.1.0 -->
 - Willing to develop solution: Yes/No
-- Has workaround: Yes/No <!-- please provide a description of your workaround if you have one -->
 - High impact: Yes/No <!-- Answer 'yes' if this is blocking you from releasing code -->
 
 ## Screenshots
