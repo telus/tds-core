@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telusdigital/tds.git"
+    "url": "git+https://github.com/telus/tds-core.git"
   },
   "publishConfig": {
     "access": "public"
@@ -17,7 +17,7 @@
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/telusdigital/tds/issues"
+    "url": "https://github.com/telus/tds-core/issues"
   },
   "homepage": "http://tds.telus.com",
   "peerDependencies": {
