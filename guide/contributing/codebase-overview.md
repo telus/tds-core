@@ -110,7 +110,7 @@ Here are some dos and don'ts to consider when writing code.
 - **DO** make components self-contained. A component should not know anything about other components, except for its direct children
 - **DO** provide a clear, prop-based API to the component. Avoid allowing consumers to customize styles by passing in `className` or `style` as this is not a clear API. Use a prop with known values instead
 - **DO** use React component state for ephemeral UI state within components, while avoiding redux or other application state containers
-- **DO** use dependencies when needed, such as lodash functions or other open source React components
+- **DO** use dependencies when needed, such as open source React components so long as they do not bloat the component final component build
 - **DO** use tds-core components and other tds-community components judiciously
 - **DO** make components compatible with React 15 or greater
 - **DO** use [ponyfills](https://github.com/sindresorhus/ponyfill) when using native JavaScript APIs with low browser support. The alternative is to require that any consumer of your component include a global polyfill in their app, making your component less self-contained, thought this may be preferable in some cases
