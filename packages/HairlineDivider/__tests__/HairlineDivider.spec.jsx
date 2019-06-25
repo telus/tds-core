@@ -1,13 +1,19 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, render, mount } from 'enzyme'
 
 import HairlineDivider from '../HairlineDivider'
 
 describe('HairlineDivider', () => {
   const doShallow = (props = {}) => shallow(<HairlineDivider {...props} />)
 
-  it('renders', () => {
+  it('renders horizontally', () => {
     const hairlineDivider = render(<HairlineDivider />)
+
+    expect(hairlineDivider).toMatchSnapshot()
+  })
+
+  it('renders vertically', () => {
+    const hairlineDivider = render(<HairlineDivider vertical />)
 
     expect(hairlineDivider).toMatchSnapshot()
   })
@@ -32,6 +38,12 @@ describe('HairlineDivider', () => {
 
     hairlineDivider = doShallow({ gradient: true })
     expect(hairlineDivider.prop('gradient')).toEqual(true)
+  })
+
+  it('renders when zoomed out on Chrome', () => {
+    const hairlineDivider = mount(<HairlineDivider />)
+
+    expect(hairlineDivider).toHaveStyleRule('transform', 'rotate(-0.00001deg)')
   })
 
   it('passes additional attributes to the element', () => {

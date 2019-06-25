@@ -7,12 +7,16 @@ import { colorGainsboro } from '@tds/core-colours'
 
 import safeRest from '../../shared/utils/safeRest'
 
+const baseStyle = { transform: 'rotate(-0.00001deg)' }
+
 const horizontalStyle = {
+  ...baseStyle,
   width: '100%',
   height: '1px',
 }
 
 const verticalStyle = {
+  ...baseStyle,
   display: 'inline-block',
   width: '1px',
 }

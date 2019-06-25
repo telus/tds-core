@@ -1,12 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HairlineDivider renders 1`] = `
+exports[`HairlineDivider renders horizontally 1`] = `
 .c0 {
   padding: 0;
   margin: 0;
   border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
   width: 100%;
   height: 1px;
+  background-color: #d8d8d8;
+}
+
+<hr
+  class="c0"
+/>
+`;
+
+exports[`HairlineDivider renders vertically 1`] = `
+.c0 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  display: inline-block;
+  width: 1px;
   background-color: #d8d8d8;
 }
 
