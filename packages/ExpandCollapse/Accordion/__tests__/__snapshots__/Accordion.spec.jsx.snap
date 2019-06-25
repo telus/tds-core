@@ -5,6 +5,15 @@ exports[`Accordion renders a closed accordion 1`] = `
   padding: 0;
   margin: 0;
   border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c2 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #2a2c2e;
   -webkit-appearance: none;
@@ -17,7 +26,7 @@ exports[`Accordion renders a closed accordion 1`] = `
   text-align: left;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -35,7 +44,7 @@ exports[`Accordion renders a closed accordion 1`] = `
   align-items: flex-start;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -53,7 +62,7 @@ exports[`Accordion renders a closed accordion 1`] = `
   align-items: flex-start;
 }
 
-.c4 {
+.c5 {
   width: 100%;
 }
 
@@ -102,9 +111,45 @@ exports[`Accordion renders a closed accordion 1`] = `
             gradient={false}
             vertical={false}
           >
-            <hr
-              className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-            />
+            <HairlineDivider__StyledHairlineDivider
+              gradient={false}
+              vertical={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "padding: 0;",
+                        "margin: 0;",
+                        "border-width: 0;",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "HairlineDivider__StyledHairlineDivider",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                    "target": "hr",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                gradient={false}
+                vertical={false}
+              >
+                <hr
+                  className="c1"
+                />
+              </StyledComponent>
+            </HairlineDivider__StyledHairlineDivider>
           </HairlineDivider>
           <PanelWrapper
             key="panel-1"
@@ -136,7 +181,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "PanelWrapper__HeaderButtonClickable-doiyjm-0",
                           "isStatic": false,
-                          "lastClassName": "c1",
+                          "lastClassName": "c2",
                           "rules": Array [
                             "padding: 0;",
                             "margin: 0;",
@@ -168,7 +213,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                   >
                     <button
                       aria-expanded={false}
-                      className="c1"
+                      className="c2"
                       disabled={false}
                       onClick={[Function]}
                       onMouseEnter={[Function]}
@@ -296,7 +341,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "PanelWrapper__HeaderContainer-doiyjm-2",
                                         "isStatic": false,
-                                        "lastClassName": "c3",
+                                        "lastClassName": "c4",
                                         "rules": Array [
                                           [Function],
                                         ],
@@ -314,7 +359,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                   forwardedRef={null}
                                 >
                                   <div
-                                    className="c2"
+                                    className="c3"
                                     direction="row"
                                   >
                                     <PanelWrapper__HeaderContainer
@@ -329,7 +374,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "PanelWrapper__HeaderContainer-doiyjm-2",
                                               "isStatic": false,
-                                              "lastClassName": "c3",
+                                              "lastClassName": "c4",
                                               "rules": Array [
                                                 [Function],
                                               ],
@@ -347,7 +392,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                         forwardedRef={null}
                                       >
                                         <div
-                                          className="c3"
+                                          className="c4"
                                           direction="column"
                                         >
                                           <PanelWrapper__HeaderTitleContainer>
@@ -359,7 +404,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "PanelWrapper__HeaderTitleContainer-doiyjm-3",
                                                     "isStatic": true,
-                                                    "lastClassName": "c4",
+                                                    "lastClassName": "c5",
                                                     "rules": Array [
                                                       "width: 100%;",
                                                     ],
@@ -377,7 +422,7 @@ exports[`Accordion renders a closed accordion 1`] = `
                                               forwardedRef={null}
                                             >
                                               <div
-                                                className="c4"
+                                                className="c5"
                                               >
                                                 <Text
                                                   block={false}
@@ -488,9 +533,45 @@ exports[`Accordion renders a closed accordion 1`] = `
                   gradient={false}
                   vertical={false}
                 >
-                  <hr
-                    className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-                  />
+                  <HairlineDivider__StyledHairlineDivider
+                    gradient={false}
+                    vertical={false}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                            "isStatic": false,
+                            "lastClassName": "c1",
+                            "rules": Array [
+                              "padding: 0;",
+                              "margin: 0;",
+                              "border-width: 0;",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "HairlineDivider__StyledHairlineDivider",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                          "target": "hr",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      gradient={false}
+                      vertical={false}
+                    >
+                      <hr
+                        className="c1"
+                      />
+                    </StyledComponent>
+                  </HairlineDivider__StyledHairlineDivider>
                 </HairlineDivider>
               </div>
             </div>
@@ -507,6 +588,15 @@ exports[`Accordion renders an open accordion 1`] = `
   padding: 0;
   margin: 0;
   border-width: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c2 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #2a2c2e;
   -webkit-appearance: none;
@@ -519,7 +609,7 @@ exports[`Accordion renders an open accordion 1`] = `
   text-align: left;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -537,7 +627,7 @@ exports[`Accordion renders an open accordion 1`] = `
   align-items: flex-start;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -555,7 +645,7 @@ exports[`Accordion renders an open accordion 1`] = `
   align-items: flex-start;
 }
 
-.c4 {
+.c5 {
   width: 100%;
 }
 
@@ -610,9 +700,45 @@ exports[`Accordion renders an open accordion 1`] = `
             gradient={false}
             vertical={false}
           >
-            <hr
-              className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-            />
+            <HairlineDivider__StyledHairlineDivider
+              gradient={false}
+              vertical={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "padding: 0;",
+                        "margin: 0;",
+                        "border-width: 0;",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "HairlineDivider__StyledHairlineDivider",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                    "target": "hr",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                gradient={false}
+                vertical={false}
+              >
+                <hr
+                  className="c1"
+                />
+              </StyledComponent>
+            </HairlineDivider__StyledHairlineDivider>
           </HairlineDivider>
           <PanelWrapper
             key="panel-1"
@@ -644,7 +770,7 @@ exports[`Accordion renders an open accordion 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "PanelWrapper__HeaderButtonClickable-doiyjm-0",
                           "isStatic": false,
-                          "lastClassName": "c1",
+                          "lastClassName": "c2",
                           "rules": Array [
                             "padding: 0;",
                             "margin: 0;",
@@ -676,7 +802,7 @@ exports[`Accordion renders an open accordion 1`] = `
                   >
                     <button
                       aria-expanded={true}
-                      className="c1"
+                      className="c2"
                       disabled={false}
                       onClick={[Function]}
                       onMouseEnter={[Function]}
@@ -804,7 +930,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "PanelWrapper__HeaderContainer-doiyjm-2",
                                         "isStatic": false,
-                                        "lastClassName": "c3",
+                                        "lastClassName": "c4",
                                         "rules": Array [
                                           [Function],
                                         ],
@@ -822,7 +948,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                   forwardedRef={null}
                                 >
                                   <div
-                                    className="c2"
+                                    className="c3"
                                     direction="row"
                                   >
                                     <PanelWrapper__HeaderContainer
@@ -837,7 +963,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "PanelWrapper__HeaderContainer-doiyjm-2",
                                               "isStatic": false,
-                                              "lastClassName": "c3",
+                                              "lastClassName": "c4",
                                               "rules": Array [
                                                 [Function],
                                               ],
@@ -855,7 +981,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                         forwardedRef={null}
                                       >
                                         <div
-                                          className="c3"
+                                          className="c4"
                                           direction="column"
                                         >
                                           <PanelWrapper__HeaderTitleContainer>
@@ -867,7 +993,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "PanelWrapper__HeaderTitleContainer-doiyjm-3",
                                                     "isStatic": true,
-                                                    "lastClassName": "c4",
+                                                    "lastClassName": "c5",
                                                     "rules": Array [
                                                       "width: 100%;",
                                                     ],
@@ -885,7 +1011,7 @@ exports[`Accordion renders an open accordion 1`] = `
                                               forwardedRef={null}
                                             >
                                               <div
-                                                className="c4"
+                                                className="c5"
                                               >
                                                 <Text
                                                   block={false}
@@ -995,9 +1121,45 @@ exports[`Accordion renders an open accordion 1`] = `
                   gradient={false}
                   vertical={false}
                 >
-                  <hr
-                    className="TDS_HairlineDivider-modules__horizontalThin___jAiIF TDS_HairlineDivider-modules__horizontal___14xom TDS_HairlineDivider-modules__reset___e92-M TDS_Spacing-modules__noSpacing___XPYDG TDS_Borders-modules__none___1fCjZ"
-                  />
+                  <HairlineDivider__StyledHairlineDivider
+                    gradient={false}
+                    vertical={false}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                            "isStatic": false,
+                            "lastClassName": "c1",
+                            "rules": Array [
+                              "padding: 0;",
+                              "margin: 0;",
+                              "border-width: 0;",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "HairlineDivider__StyledHairlineDivider",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                          "target": "hr",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      gradient={false}
+                      vertical={false}
+                    >
+                      <hr
+                        className="c1"
+                      />
+                    </StyledComponent>
+                  </HairlineDivider__StyledHairlineDivider>
                 </HairlineDivider>
               </div>
             </div>
