@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.30](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.29...@tds/core-notification@1.2.30) (2019-06-26)
+
+**Note:** Version bump only for package @tds/core-notification
+
+
+
+
+
 ## [1.2.29](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.28...@tds/core-notification@1.2.29) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-notification

@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-terms-and-conditions",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -34,7 +34,7 @@
     "@tds/core-hairline-divider": "^2.0.0",
     "@tds/core-heading": "^2.1.0",
     "@tds/core-responsive": "^1.2.1",
-    "@tds/core-standalone-icon": "^1.1.0",
+    "@tds/core-standalone-icon": "^1.1.1",
     "@tds/core-text": "^1.1.0",
     "@tds/shared-animation": "^1.2.0",
     "@tds/shared-hocs": "^1.0.0",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@1.1.0...@tds/core-standalone-icon@1.1.1) (2019-06-26)
+
+
+### Bug Fixes
+
+* **core-standalone-icon:** render a11yText in A11yContent ([1d0241e](https://github.com/telusdigital/tds/commit/1d0241e)), closes [#985](https://github.com/telusdigital/tds/issues/985)
+
+
+
+
+
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@1.0.5...@tds/core-standalone-icon@1.1.0) (2019-06-04)
 
 ### Features
