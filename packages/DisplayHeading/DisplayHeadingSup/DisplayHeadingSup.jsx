@@ -4,7 +4,9 @@ import styled from 'styled-components'
 
 import { baseSupSubScripts } from '@tds/shared-typography'
 import { media } from '@tds/core-responsive'
+
 import safeRest from '../../../shared/utils/safeRest'
+import { deprecate } from '../../../shared/utils/warn'
 
 const StyledDisplayHeadingSup = styled.sup(baseSupSubScripts, {
   fontSize: '1.25rem',
@@ -19,9 +21,13 @@ const StyledDisplayHeadingSup = styled.sup(baseSupSubScripts, {
  *
  * _This component can only be accessed as a name-spaced component: `DisplayHeading.Sup`._
  */
-const DisplayHeadingSup = ({ children, ...rest }) => (
-  <StyledDisplayHeadingSup {...safeRest(rest)}>{children}</StyledDisplayHeadingSup>
-)
+const DisplayHeadingSup = ({ children, ...rest }) => {
+  deprecate(
+    '@tds/core-display-heading',
+    'The DisplayHeading.Sup component is deprecated. Please use a standard HTML sup element instead.'
+  )
+  return <StyledDisplayHeadingSup {...safeRest(rest)}>{children}</StyledDisplayHeadingSup>
+}
 
 DisplayHeadingSup.propTypes = {
   /**
