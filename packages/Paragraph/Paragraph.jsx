@@ -23,7 +23,8 @@ const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) =>
     context.inheritColor ? typographyStyles.inheritColor : paragraphColor,
     typographyStyles[size],
     bold ? typographyStyles.boldFont : typographyStyles[`${size}Font`],
-    styles[`${align}Align`]
+    styles[`${align}Align`],
+    typographyStyles.default
   )
 
   return (

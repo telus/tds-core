@@ -2,7 +2,7 @@
 
 exports[`Paragraph renders 1`] = `
 <p
-  className="wordBreak noSpacing color medium mediumFont leftAlign"
+  className="wordBreak noSpacing color medium mediumFont leftAlign default"
 >
   Some content
 </p>
