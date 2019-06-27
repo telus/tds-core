@@ -475,7 +475,7 @@ exports[`WebVideo renders 1`] = `
                                                 size="medium"
                                               >
                                                 <p
-                                                  className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM"
+                                                  className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM TDS_Typography-modules__default___KlcpP"
                                                 >
                                                   Watch the video
                                                 </p>
@@ -524,7 +524,7 @@ exports[`WebVideo renders 1`] = `
                                             size="small"
                                           >
                                             <p
-                                              className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM"
+                                              className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM TDS_Typography-modules__default___KlcpP"
                                             >
                                               Watch the video
                                             </p>
@@ -620,7 +620,7 @@ exports[`WebVideo renders 1`] = `
                                               size="medium"
                                             >
                                               <p
-                                                className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Paragraph-modules__leftAlign___KgwhE"
+                                                className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Paragraph-modules__leftAlign___KgwhE TDS_Typography-modules__default___KlcpP"
                                                 data-testid="timestamp"
                                               >
                                                 0:30
