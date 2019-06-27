@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { small, smallFont } from '@tds/shared-typography'
+import { small, smallFont, sup } from '@tds/shared-typography'
 
 import safeRest from '../../shared/utils/safeRest'
 
-const StyledSmall = styled.small(small, smallFont)
+const StyledSmall = styled.small(small, smallFont, { sup })
 
 /**
  * Small print, such as copyright and legal text.
