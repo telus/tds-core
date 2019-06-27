@@ -12,6 +12,14 @@ exports[`Small renders 1`] = `
   font-weight: 500;
 }
 
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <small
   class="c0"
 >
