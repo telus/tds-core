@@ -302,7 +302,7 @@ exports[`Select can have an error message 1`] = `
                     size="small"
                   >
                     <p
-                      className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Paragraph-modules__leftAlign___KgwhE"
+                      className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Paragraph-modules__leftAlign___KgwhE TDS_Typography-modules__default___KlcpP"
                     >
                       Oh no a terrible error!
                     </p>
