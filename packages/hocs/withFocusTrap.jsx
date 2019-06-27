@@ -38,7 +38,7 @@ const withFocusTrap = Component => {
     ariaLabel: PropTypes.string,
   }
 
-  WithFocusTrap.defaultProp = {
+  WithFocusTrap.defaultProps = {
     ariaLabel: 'modal dialog',
   }
 
