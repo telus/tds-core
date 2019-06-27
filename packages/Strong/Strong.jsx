@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { boldFont } from '@tds/shared-typography'
+import { boldFont, sup } from '@tds/shared-typography'
 
 import safeRest from '../../shared/utils/safeRest'
 
-const StyledStrong = styled.strong(boldFont)
+const StyledStrong = styled.strong(boldFont, { sup })
 
 /**
  * Give portions of a sentence added importance.
