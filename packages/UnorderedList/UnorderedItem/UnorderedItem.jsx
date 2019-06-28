@@ -20,9 +20,9 @@ const StyledUnorderedItem = styled.li(({ iconStyle, size }) => ({
     position: 'absolute',
     left: '-2rem',
     fontFamily: 'TELUS Core Icons',
-    ...(size === 'small' && { lineHeight: '1.25rem' }),
-    ...(size === 'medium' && { lineHeight: '1.6rem' }),
-    ...(size === 'large' && { lineHeight: '2.1rem' }),
+    ...(size === 'small' && { lineHeight: 1.25 }),
+    ...(size === 'medium' && { lineHeight: 1.6 }),
+    ...(size === 'large' && { lineHeight: 2.1 }),
 
     ...(iconStyle === 'circle' && {
       content: `''`,
@@ -65,7 +65,7 @@ const StyledUnorderedItem = styled.li(({ iconStyle, size }) => ({
       color: colorCardinal,
 
       ...(size === 'small' && {
-        lineHeight: '1.32rem',
+        lineHeight: 1.32,
       }),
     }),
   },

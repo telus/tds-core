@@ -18,7 +18,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
   position: absolute;
   left: -2rem;
   font-family: TELUS Core Icons;
-  line-height: 1.6rem;
+  line-height: 1.6;
   content: '';
   background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==);
   color: #4b286d;
@@ -210,7 +210,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
   position: absolute;
   left: -2rem;
   font-family: TELUS Core Icons;
-  line-height: 1.6rem;
+  line-height: 1.6;
   content: '\\f104';
   font-size: 1rem;
   width: 0.75rem;
@@ -398,7 +398,7 @@ exports[`<UnorderedList /> renders 1`] = `
   position: absolute;
   left: -2rem;
   font-family: TELUS Core Icons;
-  line-height: 1.6rem;
+  line-height: 1.6;
   content: '';
   background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==);
   color: #4b286d;
