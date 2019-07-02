@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@1.0.12...@tds/core-paragraph@1.1.0) (2019-07-02)
+
+
+### Features
+
+* **core-paragraph:** add sup tag support ([85cf7d9](https://github.com/telusdigital/tds/commit/85cf7d9)), closes [#1059](https://github.com/telusdigital/tds/issues/1059)
+
+
+
+
+
 ## [1.0.12](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@1.0.11...@tds/core-paragraph@1.0.12) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-paragraph

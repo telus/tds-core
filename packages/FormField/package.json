@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-form-field",
-  "version": "2.2.9",
+  "version": "2.2.10",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@tds/core-box": "^1.2.4",
     "@tds/core-input-feedback": "^2.0.1",
-    "@tds/core-paragraph": "^1.0.12",
+    "@tds/core-paragraph": "^1.1.0",
     "@tds/core-standalone-icon": "^1.1.1",
     "@tds/core-text": "^1.1.0",
     "@tds/shared-animation": "^1.2.0",

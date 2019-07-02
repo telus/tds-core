@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@2.1.1...@tds/core-display-heading@2.2.0) (2019-07-02)
+
+
+### Features
+
+* **core-display-heading:** deprecate DisplayHeading.Sup ([0161a90](https://github.com/telusdigital/tds/commit/0161a90))
+
+
+
+
+
 ## [2.1.1](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@2.1.0...@tds/core-display-heading@2.1.1) (2019-06-25)
 
 **Note:** Version bump only for package @tds/core-display-heading

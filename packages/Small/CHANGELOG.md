@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-small@2.0.2...@tds/core-small@2.1.0) (2019-07-02)
+
+
+### Features
+
+* **core-small:** add sup tag support ([461762b](https://github.com/telusdigital/tds/commit/461762b)), closes [#1059](https://github.com/telusdigital/tds/issues/1059)
+
+
+
+
+
 ## [2.0.2](https://github.com/telusdigital/tds/compare/@tds/core-small@2.0.1...@tds/core-small@2.0.2) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-small

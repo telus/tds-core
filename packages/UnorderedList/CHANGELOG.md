@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.6](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@3.0.5...@tds/core-unordered-list@3.0.6) (2019-07-02)
+
+
+### Bug Fixes
+
+* **core-unordered-list:** fix line height values on icons for win 7 ([d8eb30f](https://github.com/telusdigital/tds/commit/d8eb30f))
+
+
+
+
+
 ## [3.0.5](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@3.0.4...@tds/core-unordered-list@3.0.5) (2019-06-25)
 
 **Note:** Version bump only for package @tds/core-unordered-list

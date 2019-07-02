@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-small",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Small print, such as copyright and legal text",
   "main": "index.cjs.js",
   "module": "index.es.js",
