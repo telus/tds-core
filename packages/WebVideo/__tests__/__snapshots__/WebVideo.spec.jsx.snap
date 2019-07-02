@@ -1,6 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`WebVideo renders 1`] = `
+.c7 {
+  color: #fff;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+  text-align: center;
+}
+
+.c9 {
+  color: #fff;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  word-wrap: break-word;
+  font-weight: 700;
+  text-align: center;
+}
+
+.c11 {
+  color: #fff;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+}
+
 .c3 {
   position: absolute;
   width: 100%;
@@ -80,7 +130,7 @@ exports[`WebVideo renders 1`] = `
   display: none;
 }
 
-.c7 {
+.c8 {
   display: block;
 }
 
@@ -107,7 +157,7 @@ exports[`WebVideo renders 1`] = `
   background-image: url(16:9);
 }
 
-.c8 {
+.c10 {
   padding-top: 2px;
 }
 
@@ -125,7 +175,7 @@ exports[`WebVideo renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     display: none;
   }
 }
@@ -474,11 +524,56 @@ exports[`WebVideo renders 1`] = `
                                                 invert={true}
                                                 size="medium"
                                               >
-                                                <p
-                                                  className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM TDS_Typography-modules__default___KlcpP"
+                                                <Paragraph__StyledParagraph
+                                                  align="center"
+                                                  bold={true}
+                                                  invert={true}
+                                                  size="medium"
                                                 >
-                                                  Watch the video
-                                                </p>
+                                                  <StyledComponent
+                                                    align="center"
+                                                    bold={true}
+                                                    forwardedComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c11",
+                                                          "rules": Array [
+                                                            [Function],
+                                                            "word-wrap: break-word;",
+                                                            "padding: 0;",
+                                                            "margin: 0;",
+                                                            [Function],
+                                                            [Function],
+                                                            [Function],
+                                                            [Function],
+                                                          ],
+                                                        },
+                                                        "displayName": "Paragraph__StyledParagraph",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                        "target": "p",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                    forwardedRef={null}
+                                                    invert={true}
+                                                    size="medium"
+                                                  >
+                                                    <p
+                                                      className="c7"
+                                                      size="medium"
+                                                    >
+                                                      Watch the video
+                                                    </p>
+                                                  </StyledComponent>
+                                                </Paragraph__StyledParagraph>
                                               </Paragraph>
                                             </div>
                                           </Box>
@@ -494,7 +589,7 @@ exports[`WebVideo renders 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "BigVideoButton__LittleWatchTextContainer-hhla36-4",
                                               "isStatic": true,
-                                              "lastClassName": "c7",
+                                              "lastClassName": "c8",
                                               "rules": Array [
                                                 "display: block;",
                                                 "@media (min-width: 768px) {",
@@ -515,7 +610,7 @@ exports[`WebVideo renders 1`] = `
                                         forwardedRef={null}
                                       >
                                         <span
-                                          className="c7"
+                                          className="c8"
                                         >
                                           <Paragraph
                                             align="center"
@@ -523,11 +618,56 @@ exports[`WebVideo renders 1`] = `
                                             invert={true}
                                             size="small"
                                           >
-                                            <p
-                                              className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Paragraph-modules__centerAlign___19QxM TDS_Typography-modules__default___KlcpP"
+                                            <Paragraph__StyledParagraph
+                                              align="center"
+                                              bold={true}
+                                              invert={true}
+                                              size="small"
                                             >
-                                              Watch the video
-                                            </p>
+                                              <StyledComponent
+                                                align="center"
+                                                bold={true}
+                                                forwardedComponent={
+                                                  Object {
+                                                    "$$typeof": Symbol(react.forward_ref),
+                                                    "attrs": Array [],
+                                                    "componentStyle": ComponentStyle {
+                                                      "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                      "isStatic": false,
+                                                      "lastClassName": "c11",
+                                                      "rules": Array [
+                                                        [Function],
+                                                        "word-wrap: break-word;",
+                                                        "padding: 0;",
+                                                        "margin: 0;",
+                                                        [Function],
+                                                        [Function],
+                                                        [Function],
+                                                        [Function],
+                                                      ],
+                                                    },
+                                                    "displayName": "Paragraph__StyledParagraph",
+                                                    "foldedComponentIds": Array [],
+                                                    "render": [Function],
+                                                    "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                    "target": "p",
+                                                    "toString": [Function],
+                                                    "warnTooManyClasses": [Function],
+                                                    "withComponent": [Function],
+                                                  }
+                                                }
+                                                forwardedRef={null}
+                                                invert={true}
+                                                size="small"
+                                              >
+                                                <p
+                                                  className="c9"
+                                                  size="small"
+                                                >
+                                                  Watch the video
+                                                </p>
+                                              </StyledComponent>
+                                            </Paragraph__StyledParagraph>
                                           </Paragraph>
                                         </span>
                                       </StyledComponent>
@@ -557,7 +697,7 @@ exports[`WebVideo renders 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "BigVideoButton__IconAdjust-hhla36-5",
                                                       "isStatic": true,
-                                                      "lastClassName": "c8",
+                                                      "lastClassName": "c10",
                                                       "rules": Array [
                                                         "padding-top: 2px;",
                                                       ],
@@ -575,7 +715,7 @@ exports[`WebVideo renders 1`] = `
                                                 forwardedRef={null}
                                               >
                                                 <span
-                                                  className="c8"
+                                                  className="c10"
                                                 >
                                                   <DecorativeIcon
                                                     size={16}
@@ -619,12 +759,59 @@ exports[`WebVideo renders 1`] = `
                                               invert={true}
                                               size="medium"
                                             >
-                                              <p
-                                                className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__invertedColor___2tTa_ TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Paragraph-modules__leftAlign___KgwhE TDS_Typography-modules__default___KlcpP"
+                                              <Paragraph__StyledParagraph
+                                                align="left"
+                                                bold={false}
                                                 data-testid="timestamp"
+                                                invert={true}
+                                                size="medium"
                                               >
-                                                0:30
-                                              </p>
+                                                <StyledComponent
+                                                  align="left"
+                                                  bold={false}
+                                                  data-testid="timestamp"
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c11",
+                                                        "rules": Array [
+                                                          [Function],
+                                                          "word-wrap: break-word;",
+                                                          "padding: 0;",
+                                                          "margin: 0;",
+                                                          [Function],
+                                                          [Function],
+                                                          [Function],
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "Paragraph__StyledParagraph",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                      "target": "p",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                  invert={true}
+                                                  size="medium"
+                                                >
+                                                  <p
+                                                    className="c11"
+                                                    data-testid="timestamp"
+                                                    size="medium"
+                                                  >
+                                                    0:30
+                                                  </p>
+                                                </StyledComponent>
+                                              </Paragraph__StyledParagraph>
                                             </Paragraph>
                                           </div>
                                         </Box>
