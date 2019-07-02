@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.1.0...@tds/shared-video-splash@1.1.1) (2019-07-02)
+
+
+### Bug Fixes
+
+* **shared-video-splash:** correct big play button alignment on IE 11 ([7a13ab6](https://github.com/telus/tds-core/commit/7a13ab6))
+
+
+
+
+
 # [1.1.0](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.0.6...@tds/shared-video-splash@1.1.0) (2019-06-17)
 
 

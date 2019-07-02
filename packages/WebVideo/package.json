@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-web-video",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -34,6 +34,6 @@
     "react-youtube": "^7.9.0"
   },
   "devDependencies": {
-    "@tds/shared-video-splash": "^1.1.0"
+    "@tds/shared-video-splash": "^1.1.1"
   }
 }
