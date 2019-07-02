@@ -1809,6 +1809,30 @@ exports[`Checkbox error can have an error message 3`] = `
   background-color: #fff6f8;
 }
 
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <InputFeedback
   feedback="error"
   id="the-group-namethe-value_error-message"
@@ -1874,11 +1898,63 @@ exports[`Checkbox error can have an error message 3`] = `
               invert={false}
               size="small"
             >
-              <p
-                className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Paragraph-modules__leftAlign___KgwhE TDS_Typography-modules__default___KlcpP"
+              <Paragraph__StyledParagraph
+                align="left"
+                bold={false}
+                invert={false}
+                size="small"
               >
-                Error message
-              </p>
+                <StyledComponent
+                  align="left"
+                  bold={false}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          [Function],
+                          "word-wrap: break-word;",
+                          "padding: 0;",
+                          "margin: 0;",
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
+                          "sup {",
+                          "top: -0.5em;",
+                          "font-size: 0.875rem;",
+                          "position: relative;",
+                          "vertical-align: baseline;",
+                          "padding-left: 0.1em;",
+                          "}",
+                        ],
+                      },
+                      "displayName": "Paragraph__StyledParagraph",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                      "target": "p",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  invert={false}
+                  size="small"
+                >
+                  <p
+                    className="c1"
+                    size="small"
+                  >
+                    Error message
+                  </p>
+                </StyledComponent>
+              </Paragraph__StyledParagraph>
             </Paragraph>
           </div>
         </Box>
