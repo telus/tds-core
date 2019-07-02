@@ -1,38 +1,43 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import typographyStyles from '@tds/shared-typography/Typography.modules.scss'
+import * as typography from '@tds/shared-typography'
+import { spacing } from '@tds/shared-styles'
 
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
 
-import spacingStyles from '../../shared/styles/Spacing.modules.scss'
-import styles from './Paragraph.modules.scss'
+const paragraphColor = ({ invert }) => (invert ? typography.invertedColor : typography.color)
+const paragraphInheritColor = ({ inheritColor }) =>
+  inheritColor ? { color: 'inherit' } : undefined
+
+const paragraphSize = ({ size }) => typography[size]
+const paragraphBold = ({ bold, size }) => (bold ? typography.boldFont : typography[`${size}Font`])
+const paragraphAlign = ({ align }) => ({
+  textAlign: align,
+})
+
+export const StyledParagraph = styled.p(
+  paragraphColor,
+  typography.wordBreak,
+  spacing.noSpacing,
+  paragraphInheritColor,
+  paragraphSize,
+  paragraphBold,
+  paragraphAlign,
+  { sup: typography.sup }
+)
 
 /**
  * Block text as an HTML `<p>` element.
  *
  * @version ./package.json
  */
-const Paragraph = ({ bold, size, align, invert, children, ...rest }, context) => {
-  const paragraphColor = invert ? typographyStyles.invertedColor : typographyStyles.color
-
-  const classes = joinClassNames(
-    typographyStyles.wordBreak,
-    spacingStyles.noSpacing,
-    context.inheritColor ? typographyStyles.inheritColor : paragraphColor,
-    typographyStyles[size],
-    bold ? typographyStyles.boldFont : typographyStyles[`${size}Font`],
-    styles[`${align}Align`],
-    typographyStyles.default
-  )
-
-  return (
-    <p {...safeRest(rest)} className={classes}>
-      {children}
-    </p>
-  )
-}
+const Paragraph = ({ children, ...rest }, context) => (
+  <StyledParagraph {...safeRest(rest)} inheritColor={context.inheritColor}>
+    {children}
+  </StyledParagraph>
+)
 
 Paragraph.propTypes = {
   /**
