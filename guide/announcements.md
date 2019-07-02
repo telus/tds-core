@@ -4,6 +4,84 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
+## June 2019
+
+### Community component updates
+
+**SideNavigation 2.0.0**
+
+SideNavigation component is now converted to styled components.
+[Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-side-navigation%402.0.0)
+
+### Features 🎁
+
+**StandaloneIcon 1.1.1**
+
+StandaloneIcon renders `a11yText` in A11yContent
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-standalone-icon%401.1.1)
+
+**Button 2.1.0**
+
+Button now supports forwarding refs
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-button%402.1.0)
+
+**ButtonLink 2.1.0**
+
+ButtonLink now supports forwarding refs
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-button-link%402.1.0)
+- [Docs](https://tds.telus.com/components/index.html#spinner)
+
+**Spinner 2.2.0**
+
+Spinner has been released with new visual styles, and comprehensive accessibility documentation
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-spinner%402.2.0)
+
+**A11yContent 2.1.0**
+
+A11yContent now supports `rest` props
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-a11y-content%402.1.0)
+
+**Video 1.2.0**
+
+Video component has `simpleMode`
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-video%401.2.0)
+
+### Styled Components upgrades 💅
+
+**ExpandCollapse 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-expand-collapse%402.0.0)
+
+**HairlineDivider 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-hairline-divider%402.0.0)
+
+**DimpleDivider 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-dimple-divider%402.0.0)
+
+**Card 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-card%402.0.0)
+
+**TextArea 3.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-text-area%403.0.0)
+
+**Select 3.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-select%403.0.0)
+
+**InputFeedback 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input-feedback%402.0.0)
+
 ## May 2019
 
 ### New community component ✨
@@ -24,7 +102,8 @@ Testimonial component for displaying testimonial in a standalone, pre-styled com
 
 **Video 1.1.0**
 
-Video has been released with better support for smaller player sizes and a new crossOrigin prop. 
+Video has been released with better support for smaller player sizes and a new crossOrigin prop.
+
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-video%401.1.0)
 
 ### Fixes 🔧
@@ -74,7 +153,6 @@ Label text is now centered in Mobile Safari on iOS 10 [Release notes](https://gi
 **ButtonGroup 2.0.0**
 
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-button-group%402.0.0)
-
 
 ## April 2019
 
