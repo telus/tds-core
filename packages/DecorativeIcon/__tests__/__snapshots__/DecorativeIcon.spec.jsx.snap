@@ -1,8 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DecorativeIcon renders 1`] = `
+.c0 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.c0::before {
+  content: '\\f111';
+}
+
 <i
   aria-hidden="true"
-  class="iconSpyglass size24"
+  class="c0"
 />
 `;
