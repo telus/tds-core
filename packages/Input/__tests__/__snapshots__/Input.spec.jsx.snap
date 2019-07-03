@@ -149,7 +149,6 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
           class="c4"
         >
           <i
-            aria-label="The value of this input field is valid."
             class="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
           />
         </div>
@@ -920,7 +919,6 @@ exports[`Input renders with a feedback state and icon 1`] = `
           class="c4"
         >
           <i
-            aria-label="The value of this input field is invalid."
             class="TDS_Icon-modules__iconExclamationPointCircle___1HgRN TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
           />
         </div>
