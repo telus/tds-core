@@ -1,6 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox allows numbers as value 1`] = `
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c4 {
   height: 20px;
   width: 20px;
@@ -105,7 +121,7 @@ exports[`Checkbox allows numbers as value 1`] = `
         class=""
       >
         <span
-          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+          class="c5"
         >
           A label
         </span>
@@ -116,6 +132,22 @@ exports[`Checkbox allows numbers as value 1`] = `
 `;
 
 exports[`Checkbox disabled can be disabled 1`] = `
+.c0 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <ColoredTextProvider
   className=""
   isError={false}
@@ -130,11 +162,62 @@ exports[`Checkbox disabled can be disabled 1`] = `
       invert={false}
       size="base"
     >
-      <span
-        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      <Text__StyledText
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
       >
-        A label
-      </span>
+        <StyledComponent
+          block={false}
+          bold={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "sup {",
+                  "top: -0.5em;",
+                  "font-size: 0.875rem;",
+                  "position: relative;",
+                  "vertical-align: baseline;",
+                  "padding-left: 0.1em;",
+                  "}",
+                ],
+              },
+              "displayName": "Text__StyledText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          inheritColor={true}
+          invert={false}
+          size="base"
+        >
+          <span
+            className="c0"
+            size="base"
+          >
+            A label
+          </span>
+        </StyledComponent>
+      </Text__StyledText>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -536,6 +619,22 @@ Array [
 `;
 
 exports[`Checkbox disabled can be disabled and checked 1`] = `
+.c0 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <ColoredTextProvider
   className=""
   isError={false}
@@ -550,11 +649,62 @@ exports[`Checkbox disabled can be disabled and checked 1`] = `
       invert={false}
       size="base"
     >
-      <span
-        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      <Text__StyledText
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
       >
-        A label
-      </span>
+        <StyledComponent
+          block={false}
+          bold={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "sup {",
+                  "top: -0.5em;",
+                  "font-size: 0.875rem;",
+                  "position: relative;",
+                  "vertical-align: baseline;",
+                  "padding-left: 0.1em;",
+                  "}",
+                ],
+              },
+              "displayName": "Text__StyledText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          inheritColor={true}
+          invert={false}
+          size="base"
+        >
+          <span
+            className="c0"
+            size="base"
+          >
+            A label
+          </span>
+        </StyledComponent>
+      </Text__StyledText>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -956,6 +1106,22 @@ Array [
 `;
 
 exports[`Checkbox error can have an error feedback state 1`] = `
+.c1 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c0 {
   color: #c12335;
 }
@@ -974,11 +1140,62 @@ exports[`Checkbox error can have an error feedback state 1`] = `
       invert={false}
       size="base"
     >
-      <span
-        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      <Text__StyledText
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
       >
-        Some error
-      </span>
+        <StyledComponent
+          block={false}
+          bold={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "sup {",
+                  "top: -0.5em;",
+                  "font-size: 0.875rem;",
+                  "position: relative;",
+                  "vertical-align: baseline;",
+                  "padding-left: 0.1em;",
+                  "}",
+                ],
+              },
+              "displayName": "Text__StyledText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          inheritColor={true}
+          invert={false}
+          size="base"
+        >
+          <span
+            className="c1"
+            size="base"
+          >
+            Some error
+          </span>
+        </StyledComponent>
+      </Text__StyledText>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -1380,6 +1597,22 @@ Array [
 `;
 
 exports[`Checkbox error can have an error message 1`] = `
+.c1 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c0 {
   color: #c12335;
 }
@@ -1398,11 +1631,62 @@ exports[`Checkbox error can have an error message 1`] = `
       invert={false}
       size="base"
     >
-      <span
-        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      <Text__StyledText
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
       >
-        Some error
-      </span>
+        <StyledComponent
+          block={false}
+          bold={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "sup {",
+                  "top: -0.5em;",
+                  "font-size: 0.875rem;",
+                  "position: relative;",
+                  "vertical-align: baseline;",
+                  "padding-left: 0.1em;",
+                  "}",
+                ],
+              },
+              "displayName": "Text__StyledText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          inheritColor={true}
+          invert={false}
+          size="base"
+        >
+          <span
+            className="c1"
+            size="base"
+          >
+            Some error
+          </span>
+        </StyledComponent>
+      </Text__StyledText>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -3263,7 +3547,23 @@ Array [
 
 exports[`Checkbox must have a label 1`] = `
 Array [
-  .c1 {
+  .c2 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c2 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -3297,21 +3597,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -3434,18 +3734,85 @@ Array [
               invert={false}
               size="base"
             >
-              <span
-                className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+              <Text__StyledText
+                block={false}
+                bold={false}
+                inheritColor={true}
+                invert={false}
+                size="base"
               >
-                Some label
-              </span>
+                <StyledComponent
+                  block={false}
+                  bold={false}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Text__StyledText-sc-1m0rr67-0",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
+                          "sup {",
+                          "top: -0.5em;",
+                          "font-size: 0.875rem;",
+                          "position: relative;",
+                          "vertical-align: baseline;",
+                          "padding-left: 0.1em;",
+                          "}",
+                        ],
+                      },
+                      "displayName": "Text__StyledText",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  inheritColor={true}
+                  invert={false}
+                  size="base"
+                >
+                  <span
+                    className="c2"
+                    size="base"
+                  >
+                    Some label
+                  </span>
+                </StyledComponent>
+              </Text__StyledText>
             </Text>
           </div>
         </ColoredTextProvider>
       </StyledComponent>
     </Styled(ColoredTextProvider)>
   </div>,
-  <div
+  .c0 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+<div
     className=""
   >
     <Text
@@ -3454,17 +3821,84 @@ Array [
       invert={false}
       size="base"
     >
-      <span
-        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      <Text__StyledText
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
       >
-        Some label
-      </span>
+        <StyledComponent
+          block={false}
+          bold={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "sup {",
+                  "top: -0.5em;",
+                  "font-size: 0.875rem;",
+                  "position: relative;",
+                  "vertical-align: baseline;",
+                  "padding-left: 0.1em;",
+                  "}",
+                ],
+              },
+              "displayName": "Text__StyledText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          inheritColor={true}
+          invert={false}
+          size="base"
+        >
+          <span
+            className="c0"
+            size="base"
+          >
+            Some label
+          </span>
+        </StyledComponent>
+      </Text__StyledText>
     </Text>
   </div>,
 ]
 `;
 
 exports[`Checkbox renders 1`] = `
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c4 {
   height: 20px;
   width: 20px;
@@ -3569,7 +4003,7 @@ exports[`Checkbox renders 1`] = `
         class=""
       >
         <span
-          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+          class="c5"
         >
           A label
         </span>
