@@ -563,7 +563,6 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
           class="c4"
         >
           <i
-            aria-label="The value of this input field is invalid."
             class="TDS_Icon-modules__iconExclamationPointCircle___1HgRN TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
           />
         </div>
