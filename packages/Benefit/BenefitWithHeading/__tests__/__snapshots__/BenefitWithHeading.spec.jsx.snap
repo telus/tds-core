@@ -2,6 +2,22 @@
 
 exports[`BenefitWithHeading renders with icons set in each item 1`] = `
 .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > svg {
+  fill: #4b286d;
+}
+
+.c0 > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.c1 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -13,33 +29,13 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c0 .c2,
-.c0 sup {
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-  font-size: 0.875rem;
-  top: -0.5em;
-}
-
-.c1 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-}
-
+.c1 .c2,
 .c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+  font-size: 0.875rem;
+  top: -0.5em;
 }
 
 <ul
@@ -53,7 +49,8 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__svgBase___1EsV6 TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
+        class="c0"
+        size="24"
       >
         <svg
           height="22"
@@ -76,13 +73,13 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     </div>
     <div>
       <div
-        class="c0"
+        class="c1"
         data-testid="heading"
       >
         Some heading
       </div>
       <span
-        class="c1"
+        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
       >
         Some content
       </span>
@@ -96,7 +93,8 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__svgBase___1EsV6 TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
+        class="c0"
+        size="24"
       >
         <svg
           height="24"
@@ -119,13 +117,13 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     </div>
     <div>
       <div
-        class="c0"
+        class="c1"
         data-testid="heading"
       >
         Some other heading
       </div>
       <span
-        class="c1"
+        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
       >
         Some other content
       </span>
@@ -136,6 +134,22 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
 
 exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
 .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > svg {
+  fill: #4b286d;
+}
+
+.c0 > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.c1 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -147,33 +161,13 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c0 .c2,
-.c0 sup {
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-  font-size: 0.875rem;
-  top: -0.5em;
-}
-
-.c1 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-}
-
+.c1 .c2,
 .c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+  font-size: 0.875rem;
+  top: -0.5em;
 }
 
 <ul
@@ -187,7 +181,8 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__svgBase___1EsV6 TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
+        class="c0"
+        size="24"
       >
         <svg
           height="22"
@@ -210,13 +205,13 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     </div>
     <div>
       <div
-        class="c0"
+        class="c1"
         data-testid="heading"
       >
         Some heading
       </div>
       <span
-        class="c1"
+        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
       >
         Some content
       </span>
@@ -230,7 +225,8 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__svgBase___1EsV6 TDS_Icon-modules__svgVariantDefault___NCTsd TDS_Icon-modules__svgSize24___2mx3w"
+        class="c0"
+        size="24"
       >
         <svg
           height="22"
@@ -253,13 +249,13 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     </div>
     <div>
       <div
-        class="c0"
+        class="c1"
         data-testid="heading"
       >
         Some other heading
       </div>
       <span
-        class="c1"
+        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
       >
         Some other content
       </span>
