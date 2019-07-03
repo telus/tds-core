@@ -32,13 +32,6 @@ describe('StandaloneIcon', () => {
       expect(icon).toHaveProp('id', 'the-icon')
     })
 
-    it('is accessible for screen readers', () => {
-      const icon = doShallow({ a11yText: 'Some screen reader text' })
-
-      expect(icon).not.toHaveProp('aria-hidden')
-      expect(icon).toHaveProp('aria-label', 'Some screen reader text')
-    })
-
     it('does not allow custom CSS', () => {
       const icon = doShallow({
         className: 'my-custom-class',
