@@ -2,34 +2,25 @@
 
 exports[`<StepTracker /> renders 1`] = `
 .c0 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.c0 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c1 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: inherit;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
+.c0::before {
+  content: '\\f101';
 }
 
 <div
@@ -60,14 +51,14 @@ exports[`<StepTracker /> renders 1`] = `
             >
               <i
                 aria-hidden="true"
-                class="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
+                class="c0"
               />
             </span>
             <div
               class="label"
             >
               <span
-                class="c0"
+                class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
               >
                 1. Login
               </span>
@@ -89,7 +80,7 @@ exports[`<StepTracker /> renders 1`] = `
               class="label"
             >
               <span
-                class="c1"
+                class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
               >
                 2. Purchase
               </span>
@@ -111,7 +102,7 @@ exports[`<StepTracker /> renders 1`] = `
               class="label"
             >
               <span
-                class="c0"
+                class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
               >
                 3. Checkout
               </span>
@@ -130,7 +121,7 @@ exports[`<StepTracker /> renders 1`] = `
           class="mobileLabel"
         >
           <span
-            class="c0"
+            class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
             data-testid="mobileStepLabel"
           >
             <span>
