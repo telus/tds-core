@@ -596,13 +596,11 @@ exports[`Select can have an error message 1`] = `
                                           variant="error"
                                         >
                                           <Icon
-                                            aria-label="The value of this input field is invalid."
                                             size={16}
                                             symbol="exclamationPointCircle"
                                             variant="error"
                                           >
                                             <i
-                                              aria-label="The value of this input field is invalid."
                                               className="TDS_Icon-modules__iconExclamationPointCircle___1HgRN TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
                                             />
                                           </Icon>
@@ -1211,7 +1209,6 @@ exports[`Select renders with a feedback state and icon 1`] = `
             class="c5"
           >
             <i
-              aria-label="The value of this input field is invalid."
               class="TDS_Icon-modules__iconExclamationPointCircle___1HgRN TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
             />
           </div>
