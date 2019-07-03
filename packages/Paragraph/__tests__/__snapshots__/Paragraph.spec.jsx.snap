@@ -17,6 +17,14 @@ exports[`Paragraph renders 1`] = `
   text-align: left;
 }
 
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <p
   class="c0"
 >
