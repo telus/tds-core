@@ -22,6 +22,22 @@ exports[`Breadcrumbs with children renders 1`] = `
   color: inherit;
 }
 
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c1 {
   display: inline;
   font-size: 0.875rem;
@@ -149,7 +165,7 @@ exports[`Breadcrumbs with children renders 1`] = `
       class="c4"
     >
       <span
-        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+        class="c5"
       >
         Accessories
       </span>
@@ -180,6 +196,22 @@ exports[`Breadcrumbs with routes renders 1`] = `
   color: inherit;
 }
 
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c1 {
   display: inline;
   font-size: 0.875rem;
@@ -307,7 +339,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
       class="c4"
     >
       <span
-        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+        class="c5"
       >
         Accessories
       </span>
