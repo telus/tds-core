@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ChevronLink can have specific variants 1`] = `
+.c3 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.c3::before {
+  content: '\\f107';
+}
+
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -51,7 +72,7 @@ exports[`ChevronLink can have specific variants 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+        class="c3"
       />
     </span>
   </span>
@@ -59,6 +80,27 @@ exports[`ChevronLink can have specific variants 1`] = `
 `;
 
 exports[`ChevronLink can have specific variants 2`] = `
+.c3 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.c3::before {
+  content: '\\f107';
+}
+
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -109,7 +151,7 @@ exports[`ChevronLink can have specific variants 2`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+        class="c3"
       />
     </span>
   </span>
@@ -117,6 +159,27 @@ exports[`ChevronLink can have specific variants 2`] = `
 `;
 
 exports[`ChevronLink can have specific variants 3`] = `
+.c3 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.c3::before {
+  content: '\\f107';
+}
+
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -167,7 +230,7 @@ exports[`ChevronLink can have specific variants 3`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+        class="c3"
       />
     </span>
   </span>
@@ -175,6 +238,27 @@ exports[`ChevronLink can have specific variants 3`] = `
 `;
 
 exports[`ChevronLink can have specific variants 4`] = `
+.c3 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.c3::before {
+  content: '\\f107';
+}
+
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -225,7 +309,7 @@ exports[`ChevronLink can have specific variants 4`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+        class="c3"
       />
     </span>
   </span>
@@ -233,6 +317,27 @@ exports[`ChevronLink can have specific variants 4`] = `
 `;
 
 exports[`ChevronLink renders 1`] = `
+.c3 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.c3::before {
+  content: '\\f107';
+}
+
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -283,7 +388,7 @@ exports[`ChevronLink renders 1`] = `
     >
       <i
         aria-hidden="true"
-        class="TDS_Icon-modules__iconChevron___u32Fg TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size16___1pm12"
+        class="c3"
       />
     </span>
   </span>
