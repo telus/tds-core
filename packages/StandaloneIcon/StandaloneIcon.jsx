@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import A11yContent from '@tds/core-a11y-content'
+import { buttons } from '@tds/shared-styles'
 
 import safeRest from '../../shared/utils/safeRest'
 
 import Icon from '../../shared/components/Icon/Icon'
-import Clickable from '../../shared/components/Clickable/Clickable'
 
 const mobileDeviceTapArea = 32 // https://www.w3.org/TR/mobile-accessibility-mapping/#touch-target-size-and-spacing
 const touchAreaStyles = iconSize => {
@@ -17,6 +18,8 @@ const touchAreaStyles = iconSize => {
     margin: `-${length}px`,
   }
 }
+
+const StandaloneIconClickable = styled.button(buttons.noStyle)
 
 /**
  * An icon that has meaning within the context of the page, which should be communicated to screen readers.
@@ -34,16 +37,16 @@ const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, innerRef, ..
     const needsExpandedTouchArea = size < mobileDeviceTapArea
 
     return (
-      <Clickable
+      <StandaloneIconClickable
         {...safeRest(rest)}
-        innerRef={innerRef}
+        ref={innerRef}
         onClick={onClick}
         style={needsExpandedTouchArea ? touchAreaStyles(size) : undefined}
       >
         <Icon {...iconProps}>
           <A11yContent>{a11yText}</A11yContent>
         </Icon>
-      </Clickable>
+      </StandaloneIconClickable>
     )
   }
 
