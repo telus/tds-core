@@ -16,7 +16,6 @@ exports[`StandaloneIcon Interactive icon renders 1`] = `
   type="button"
 >
   <i
-    aria-label="Some text for the screen readers."
     class="iconSpyglass size24"
   >
     <span
@@ -30,7 +29,6 @@ exports[`StandaloneIcon Interactive icon renders 1`] = `
 
 exports[`StandaloneIcon Plain StandaloneIcon renders 1`] = `
 <i
-  aria-label="Some text for the screen readers."
   class="iconSpyglass size24"
 />
 `;

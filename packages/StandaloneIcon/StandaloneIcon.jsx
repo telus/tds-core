@@ -28,7 +28,6 @@ const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, innerRef, ..
     symbol,
     variant,
     size,
-    'aria-label': a11yText,
   }
 
   if (onClick) {
