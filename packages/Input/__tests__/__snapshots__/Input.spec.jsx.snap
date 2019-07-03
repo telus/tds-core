@@ -1,28 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input feedback states ensures that the contents do not overlap the icons 1`] = `
-.c1 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 .c5 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #248700;
+  font-size: 1rem;
+}
+
+.c5::before {
+  content: '\\f101';
+}
+
+.c4 {
   line-height: 1;
 }
 
@@ -33,7 +34,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   align-items: center;
 }
 
-.c3 {
+.c2 {
   width: 100%;
   margin: 0;
   outline: 0;
@@ -58,7 +59,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   padding: 0.5rem 1rem;
 }
 
-.c3::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -68,7 +69,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   color: #54595f;
 }
 
-.c3::-moz-placeholder {
+.c2::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -78,7 +79,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   color: #54595f;
 }
 
-.c3:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -88,7 +89,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   color: #54595f;
 }
 
-.c3::placeholder {
+.c2::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -98,25 +99,25 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   color: #54595f;
 }
 
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c3:focus {
+.c2:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c3:not(:focus) {
+.c2:not(:focus) {
   border-color: #248700;
 }
 
-.c4 {
+.c3 {
   right: 1rem;
   position: absolute;
   top: 50%;
@@ -125,7 +126,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   transform: translateY(-50%);
 }
 
-.c2 {
+.c1 {
   position: relative;
 }
 
@@ -143,7 +144,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
           class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
         >
           <span
-            class="c1"
+            class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
           >
             The input
           </span>
@@ -152,25 +153,26 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
     </div>
   </div>
   <div
-    class="c2"
+    class="c1"
   >
     <input
       aria-invalid="false"
-      class="c3"
+      class="c2"
       id="the-input"
       type="text"
     />
     <div
-      class="c4"
+      class="c3"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="c5"
+          class="c4"
         >
           <i
-            class="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
+            aria-label="The value of this input field is valid."
+            class="c5"
           />
         </div>
       </div>
@@ -187,55 +189,14 @@ Object {
   "findHelper": [Function],
   "findInputElement": [Function],
   "focus": [Function],
-  "input": .c1 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c2 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-}
-
-.c2 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c0 {
+  "input": .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   margin: 0;
   outline: 0;
@@ -260,7 +221,7 @@ Object {
   padding: 0.5rem 1rem;
 }
 
-.c4::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -270,7 +231,7 @@ Object {
   color: #54595f;
 }
 
-.c4::-moz-placeholder {
+.c2::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -280,7 +241,7 @@ Object {
   color: #54595f;
 }
 
-.c4:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -290,7 +251,7 @@ Object {
   color: #54595f;
 }
 
-.c4::placeholder {
+.c2::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -300,21 +261,21 @@ Object {
   color: #54595f;
 }
 
-.c4::-webkit-inner-spin-button,
-.c4::-webkit-outer-spin-button {
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c4:focus {
+.c2:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c5 {
+.c3 {
   right: 1rem;
   position: absolute;
   top: 50%;
@@ -323,7 +284,7 @@ Object {
   transform: translateY(-50%);
 }
 
-.c3 {
+.c1 {
   position: relative;
 }
 
@@ -402,60 +363,11 @@ Object {
                           invert={false}
                           size="medium"
                         >
-                          <Text__StyledText
-                            block={false}
-                            bold={true}
-                            invert={false}
-                            size="medium"
+                          <span
+                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                           >
-                            <StyledComponent
-                              block={false}
-                              bold={true}
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                    "isStatic": false,
-                                    "lastClassName": "c2",
-                                    "rules": Array [
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      "sup {",
-                                      "top: -0.5em;",
-                                      "font-size: 0.875rem;",
-                                      "position: relative;",
-                                      "vertical-align: baseline;",
-                                      "padding-left: 0.1em;",
-                                      "}",
-                                    ],
-                                  },
-                                  "displayName": "Text__StyledText",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                  "target": "span",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              invert={false}
-                              size="medium"
-                            >
-                              <span
-                                className="c1"
-                                size="medium"
-                              >
-                                The input
-                              </span>
-                            </StyledComponent>
-                          </Text__StyledText>
+                            The input
+                          </span>
                         </Text>
                         <Text
                           block={false}
@@ -463,60 +375,11 @@ Object {
                           invert={false}
                           size="small"
                         >
-                          <Text__StyledText
-                            block={false}
-                            bold={false}
-                            invert={false}
-                            size="small"
+                          <span
+                            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
                           >
-                            <StyledComponent
-                              block={false}
-                              bold={false}
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                    "isStatic": false,
-                                    "lastClassName": "c2",
-                                    "rules": Array [
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      "sup {",
-                                      "top: -0.5em;",
-                                      "font-size: 0.875rem;",
-                                      "position: relative;",
-                                      "vertical-align: baseline;",
-                                      "padding-left: 0.1em;",
-                                      "}",
-                                    ],
-                                  },
-                                  "displayName": "Text__StyledText",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                  "target": "span",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              invert={false}
-                              size="small"
-                            >
-                              <span
-                                className="c2"
-                                size="small"
-                              >
-                                The short hint
-                              </span>
-                            </StyledComponent>
-                          </Text__StyledText>
+                            The short hint
+                          </span>
                         </Text>
                       </span>
                     </Box>
@@ -546,7 +409,7 @@ Object {
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bxivhb",
                   "isStatic": false,
-                  "lastClassName": "c3",
+                  "lastClassName": "c1",
                   "rules": Array [
                     [Function],
                   ],
@@ -564,7 +427,7 @@ Object {
             forwardedRef={null}
           >
             <div
-              className="c3"
+              className="c1"
             >
               <Input__StyledInput
                 aria-invalid={false}
@@ -582,7 +445,7 @@ Object {
                       "componentStyle": ComponentStyle {
                         "componentId": "Input__StyledInput-sc-8rmijy-0",
                         "isStatic": false,
-                        "lastClassName": "c4",
+                        "lastClassName": "c2",
                         "rules": Array [
                           "width: 100%;",
                           "margin: 0;",
@@ -633,7 +496,7 @@ Object {
                 >
                   <input
                     aria-invalid={false}
-                    className="c4"
+                    className="c2"
                     id="the-id"
                     onBlur={[Function]}
                     onFocus={[Function]}
@@ -650,7 +513,7 @@ Object {
                       "componentStyle": ComponentStyle {
                         "componentId": "Input__StyledFeedbackIcon-sc-8rmijy-1",
                         "isStatic": true,
-                        "lastClassName": "c5",
+                        "lastClassName": "c3",
                         "rules": Array [
                           "right: 1rem;",
                           "position: absolute;",
@@ -671,7 +534,7 @@ Object {
                   forwardedRef={null}
                 >
                   <div
-                    className="c5"
+                    className="c3"
                   >
                     <FeedbackIcon
                       showIcon={false}
@@ -708,48 +571,7 @@ Object {
       </div>
     </Box>
   </Input>,
-  "label": .c1 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c2 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-}
-
-.c2 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c0 {
+  "label": .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -807,60 +629,11 @@ Object {
               invert={false}
               size="medium"
             >
-              <Text__StyledText
-                block={false}
-                bold={true}
-                invert={false}
-                size="medium"
+              <span
+                className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
               >
-                <StyledComponent
-                  block={false}
-                  bold={true}
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "Text__StyledText-sc-1m0rr67-0",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          "sup {",
-                          "top: -0.5em;",
-                          "font-size: 0.875rem;",
-                          "position: relative;",
-                          "vertical-align: baseline;",
-                          "padding-left: 0.1em;",
-                          "}",
-                        ],
-                      },
-                      "displayName": "Text__StyledText",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  invert={false}
-                  size="medium"
-                >
-                  <span
-                    className="c1"
-                    size="medium"
-                  >
-                    The input
-                  </span>
-                </StyledComponent>
-              </Text__StyledText>
+                The input
+              </span>
             </Text>
             <Text
               block={false}
@@ -868,60 +641,11 @@ Object {
               invert={false}
               size="small"
             >
-              <Text__StyledText
-                block={false}
-                bold={false}
-                invert={false}
-                size="small"
+              <span
+                className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
               >
-                <StyledComponent
-                  block={false}
-                  bold={false}
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "Text__StyledText-sc-1m0rr67-0",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          "sup {",
-                          "top: -0.5em;",
-                          "font-size: 0.875rem;",
-                          "position: relative;",
-                          "vertical-align: baseline;",
-                          "padding-left: 0.1em;",
-                          "}",
-                        ],
-                      },
-                      "displayName": "Text__StyledText",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  invert={false}
-                  size="small"
-                >
-                  <span
-                    className="c2"
-                    size="small"
-                  >
-                    The short hint
-                  </span>
-                </StyledComponent>
-              </Text__StyledText>
+                The short hint
+              </span>
             </Text>
           </span>
         </Box>
@@ -932,27 +656,6 @@ Object {
 `;
 
 exports[`Input renders 1`] = `
-.c1 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -960,7 +663,7 @@ exports[`Input renders 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c2 {
   width: 100%;
   margin: 0;
   outline: 0;
@@ -985,7 +688,7 @@ exports[`Input renders 1`] = `
   padding: 0.5rem 1rem;
 }
 
-.c3::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -995,7 +698,7 @@ exports[`Input renders 1`] = `
   color: #54595f;
 }
 
-.c3::-moz-placeholder {
+.c2::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1005,7 +708,7 @@ exports[`Input renders 1`] = `
   color: #54595f;
 }
 
-.c3:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1015,7 +718,7 @@ exports[`Input renders 1`] = `
   color: #54595f;
 }
 
-.c3::placeholder {
+.c2::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1025,21 +728,21 @@ exports[`Input renders 1`] = `
   color: #54595f;
 }
 
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c3:focus {
+.c2:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c4 {
+.c3 {
   right: 1rem;
   position: absolute;
   top: 50%;
@@ -1048,7 +751,7 @@ exports[`Input renders 1`] = `
   transform: translateY(-50%);
 }
 
-.c2 {
+.c1 {
   position: relative;
 }
 
@@ -1066,7 +769,7 @@ exports[`Input renders 1`] = `
           class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
         >
           <span
-            class="c1"
+            class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
           >
             The input
           </span>
@@ -1075,44 +778,45 @@ exports[`Input renders 1`] = `
     </div>
   </div>
   <div
-    class="c2"
+    class="c1"
   >
     <input
       aria-invalid="false"
-      class="c3"
+      class="c2"
       id="the-input"
       type="text"
     />
     <div
-      class="c4"
+      class="c3"
     />
   </div>
 </div>
 `;
 
 exports[`Input renders with a feedback state and icon 1`] = `
-.c1 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 .c5 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #c12335;
+  font-size: 1rem;
+}
+
+.c5::before {
+  content: '\\f103';
+}
+
+.c4 {
   line-height: 1;
 }
 
@@ -1123,7 +827,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c2 {
   width: 100%;
   margin: 0;
   outline: 0;
@@ -1148,7 +852,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   padding: 0.5rem 1rem;
 }
 
-.c3::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1158,7 +862,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c3::-moz-placeholder {
+.c2::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1168,7 +872,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c3:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1178,7 +882,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c3::placeholder {
+.c2::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1188,25 +892,25 @@ exports[`Input renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c3:focus {
+.c2:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c3:not(:focus) {
+.c2:not(:focus) {
   border-color: #c12335;
 }
 
-.c4 {
+.c3 {
   right: 1rem;
   position: absolute;
   top: 50%;
@@ -1215,7 +919,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   transform: translateY(-50%);
 }
 
-.c2 {
+.c1 {
   position: relative;
 }
 
@@ -1233,7 +937,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
           class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
         >
           <span
-            class="c1"
+            class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
           >
             The input
           </span>
@@ -1242,25 +946,26 @@ exports[`Input renders with a feedback state and icon 1`] = `
     </div>
   </div>
   <div
-    class="c2"
+    class="c1"
   >
     <input
       aria-invalid="true"
-      class="c3"
+      class="c2"
       id="the-input"
       type="text"
     />
     <div
-      class="c4"
+      class="c3"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="c5"
+          class="c4"
         >
           <i
-            class="TDS_Icon-modules__iconExclamationPointCircle___1HgRN TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
+            aria-label="The value of this input field is invalid."
+            class="c5"
           />
         </div>
       </div>
