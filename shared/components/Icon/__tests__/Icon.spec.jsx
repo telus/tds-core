@@ -1,41 +1,32 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Icon from '../Icon'
+import { colorIconSecondary } from '@tds/core-colours'
+
+import Icon, { StyledIcon } from '../Icon'
 
 describe('Icon', () => {
   const defaultProps = {
     symbol: 'spyglass',
   }
   const doShallow = (props = {}) => shallow(<Icon {...defaultProps} {...props} />)
+  const doShallowStyled = (props = {}) => shallow(<StyledIcon {...defaultProps} {...props} />)
 
   it('renders', () => {
-    const icon = doShallow()
+    const icon = doShallow({ symbol: 'spyglass' })
     expect(icon).toMatchSnapshot()
   })
 
-  it('renders an HTML i tag', () => {
-    const icon = doShallow()
-
-    expect(icon).toHaveDisplayName('i')
-  })
-
-  it('needs a symbol', () => {
-    const icon = doShallow({ symbol: 'spyglass' })
-
-    expect(icon).toHaveClassName('iconSpyglass')
-  })
-
   it('supports variants', () => {
-    const icon = doShallow({ variant: 'secondary' })
+    const icon = doShallowStyled({ variant: 'secondary' })
 
-    expect(icon).toHaveClassName('secondary')
+    expect(icon).toHaveStyleRule('color', colorIconSecondary)
   })
 
   it('can be sized', () => {
-    const icon = doShallow({ size: 16 })
+    const icon = doShallowStyled({ iSize: 16 })
 
-    expect(icon).toHaveClassName('size16')
+    expect(icon).toHaveStyleRule('font-size', '1rem')
   })
 
   it('passes additional attributes to the i element', () => {
