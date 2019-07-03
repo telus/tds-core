@@ -1,6 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BenefitNoHeading renders with icons set in each item 1`] = `
+.c0 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <ul
   class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
 >
@@ -30,7 +50,7 @@ exports[`BenefitNoHeading renders with icons set in each item 1`] = `
       </svg>
     </i>
     <span
-      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      class="c0"
     >
       Some content
     </span>
@@ -61,7 +81,7 @@ exports[`BenefitNoHeading renders with icons set in each item 1`] = `
       </svg>
     </i>
     <span
-      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      class="c0"
     >
       Some other content
     </span>
@@ -70,6 +90,26 @@ exports[`BenefitNoHeading renders with icons set in each item 1`] = `
 `;
 
 exports[`BenefitNoHeading renders with one icon set in the parent 1`] = `
+.c0 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <ul
   class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
 >
@@ -99,7 +139,7 @@ exports[`BenefitNoHeading renders with one icon set in the parent 1`] = `
       </svg>
     </i>
     <span
-      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      class="c0"
     >
       Some content
     </span>
@@ -130,7 +170,7 @@ exports[`BenefitNoHeading renders with one icon set in the parent 1`] = `
       </svg>
     </i>
     <span
-      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      class="c0"
     >
       Some other content
     </span>
