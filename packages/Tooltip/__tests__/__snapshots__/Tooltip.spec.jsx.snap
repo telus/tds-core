@@ -353,12 +353,10 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                     type="button"
                   >
                     <Icon
-                      aria-label="Reveal additional information."
                       size={24}
                       symbol="questionMarkCircle"
                     >
                       <i
-                        aria-label="Reveal additional information."
                         className="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
                       >
                         <A11yContent>
@@ -767,12 +765,10 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                     type="button"
                   >
                     <Icon
-                      aria-label="Reveal additional information."
                       size={24}
                       symbol="questionMarkCircle"
                     >
                       <i
-                        aria-label="Reveal additional information."
                         className="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
                       >
                         <A11yContent>
@@ -1529,12 +1525,10 @@ exports[`Tooltip renders 1`] = `
                     type="button"
                   >
                     <Icon
-                      aria-label="Reveal additional information."
                       size={24}
                       symbol="questionMarkCircle"
                     >
                       <i
-                        aria-label="Reveal additional information."
                         className="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
                       >
                         <A11yContent>
