@@ -2,19 +2,25 @@
 
 exports[`Checkbox allows numbers as value 1`] = `
 .c5 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.c5 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
+.c5::before {
+  content: '\\f101';
 }
 
 .c4 {
@@ -114,14 +120,14 @@ exports[`Checkbox allows numbers as value 1`] = `
       >
         <i
           aria-hidden="true"
-          class="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
+          class="c5"
         />
       </span>
       <div
         class=""
       >
         <span
-          class="c5"
+          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
         >
           A label
         </span>
@@ -132,22 +138,6 @@ exports[`Checkbox allows numbers as value 1`] = `
 `;
 
 exports[`Checkbox disabled can be disabled 1`] = `
-.c0 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.c0 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 <ColoredTextProvider
   className=""
   isError={false}
@@ -162,62 +152,11 @@ exports[`Checkbox disabled can be disabled 1`] = `
       invert={false}
       size="base"
     >
-      <Text__StyledText
-        block={false}
-        bold={false}
-        inheritColor={true}
-        invert={false}
-        size="base"
+      <span
+        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
-        <StyledComponent
-          block={false}
-          bold={false}
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "Text__StyledText-sc-1m0rr67-0",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  "sup {",
-                  "top: -0.5em;",
-                  "font-size: 0.875rem;",
-                  "position: relative;",
-                  "vertical-align: baseline;",
-                  "padding-left: 0.1em;",
-                  "}",
-                ],
-              },
-              "displayName": "Text__StyledText",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-              "target": "span",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-          inheritColor={true}
-          invert={false}
-          size="base"
-        >
-          <span
-            className="c0"
-            size="base"
-          >
-            A label
-          </span>
-        </StyledComponent>
-      </Text__StyledText>
+        A label
+      </span>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -225,7 +164,29 @@ exports[`Checkbox disabled can be disabled 1`] = `
 
 exports[`Checkbox disabled can be disabled 2`] = `
 Array [
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -259,44 +220,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -364,16 +325,77 @@ Array [
             symbol="checkmark"
             variant="inverted"
           >
-            <i
+            <Icon__StyledIcon
               aria-hidden="true"
-              className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-            />
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <StyledComponent
+                aria-hidden="true"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Icon__StyledIcon",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "target": "i",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iSize={16}
+                symbol="checkmark"
+                variant="inverted"
+              >
+                <i
+                  aria-hidden="true"
+                  className="c2"
+                />
+              </StyledComponent>
+            </Icon__StyledIcon>
           </Icon>
         </DecorativeIcon>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -407,44 +429,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -509,15 +531,76 @@ Array [
           symbol="checkmark"
           variant="inverted"
         >
-          <i
+          <Icon__StyledIcon
             aria-hidden="true"
-            className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-          />
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <StyledComponent
+              aria-hidden="true"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Icon__StyledIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "target": "i",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <i
+                aria-hidden="true"
+                className="c2"
+              />
+            </StyledComponent>
+          </Icon__StyledIcon>
         </Icon>
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -551,44 +634,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -608,10 +691,49 @@ Array [
         symbol="checkmark"
         variant="inverted"
       >
-        <i
+        <Icon__StyledIcon
           aria-hidden="true"
-          className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-        />
+          iSize={16}
+          symbol="checkmark"
+          variant="inverted"
+        >
+          <StyledComponent
+            aria-hidden="true"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "Icon__StyledIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                "target": "i",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <i
+              aria-hidden="true"
+              className="c2"
+            />
+          </StyledComponent>
+        </Icon__StyledIcon>
       </Icon>
     </DecorativeIcon>
   </span>,
@@ -619,22 +741,6 @@ Array [
 `;
 
 exports[`Checkbox disabled can be disabled and checked 1`] = `
-.c0 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.c0 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 <ColoredTextProvider
   className=""
   isError={false}
@@ -649,62 +755,11 @@ exports[`Checkbox disabled can be disabled and checked 1`] = `
       invert={false}
       size="base"
     >
-      <Text__StyledText
-        block={false}
-        bold={false}
-        inheritColor={true}
-        invert={false}
-        size="base"
+      <span
+        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
-        <StyledComponent
-          block={false}
-          bold={false}
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "Text__StyledText-sc-1m0rr67-0",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  "sup {",
-                  "top: -0.5em;",
-                  "font-size: 0.875rem;",
-                  "position: relative;",
-                  "vertical-align: baseline;",
-                  "padding-left: 0.1em;",
-                  "}",
-                ],
-              },
-              "displayName": "Text__StyledText",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-              "target": "span",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-          inheritColor={true}
-          invert={false}
-          size="base"
-        >
-          <span
-            className="c0"
-            size="base"
-          >
-            A label
-          </span>
-        </StyledComponent>
-      </Text__StyledText>
+        A label
+      </span>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -712,7 +767,29 @@ exports[`Checkbox disabled can be disabled and checked 1`] = `
 
 exports[`Checkbox disabled can be disabled and checked 2`] = `
 Array [
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -746,44 +823,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -851,16 +928,77 @@ Array [
             symbol="checkmark"
             variant="inverted"
           >
-            <i
+            <Icon__StyledIcon
               aria-hidden="true"
-              className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-            />
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <StyledComponent
+                aria-hidden="true"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Icon__StyledIcon",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "target": "i",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iSize={16}
+                symbol="checkmark"
+                variant="inverted"
+              >
+                <i
+                  aria-hidden="true"
+                  className="c2"
+                />
+              </StyledComponent>
+            </Icon__StyledIcon>
           </Icon>
         </DecorativeIcon>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -894,44 +1032,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -996,15 +1134,76 @@ Array [
           symbol="checkmark"
           variant="inverted"
         >
-          <i
+          <Icon__StyledIcon
             aria-hidden="true"
-            className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-          />
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <StyledComponent
+              aria-hidden="true"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Icon__StyledIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "target": "i",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <i
+                aria-hidden="true"
+                className="c2"
+              />
+            </StyledComponent>
+          </Icon__StyledIcon>
         </Icon>
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1038,44 +1237,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -1095,10 +1294,49 @@ Array [
         symbol="checkmark"
         variant="inverted"
       >
-        <i
+        <Icon__StyledIcon
           aria-hidden="true"
-          className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-        />
+          iSize={16}
+          symbol="checkmark"
+          variant="inverted"
+        >
+          <StyledComponent
+            aria-hidden="true"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "Icon__StyledIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                "target": "i",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <i
+              aria-hidden="true"
+              className="c2"
+            />
+          </StyledComponent>
+        </Icon__StyledIcon>
       </Icon>
     </DecorativeIcon>
   </span>,
@@ -1106,22 +1344,6 @@ Array [
 `;
 
 exports[`Checkbox error can have an error feedback state 1`] = `
-.c1 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 .c0 {
   color: #c12335;
 }
@@ -1140,62 +1362,11 @@ exports[`Checkbox error can have an error feedback state 1`] = `
       invert={false}
       size="base"
     >
-      <Text__StyledText
-        block={false}
-        bold={false}
-        inheritColor={true}
-        invert={false}
-        size="base"
+      <span
+        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
-        <StyledComponent
-          block={false}
-          bold={false}
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "Text__StyledText-sc-1m0rr67-0",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  "sup {",
-                  "top: -0.5em;",
-                  "font-size: 0.875rem;",
-                  "position: relative;",
-                  "vertical-align: baseline;",
-                  "padding-left: 0.1em;",
-                  "}",
-                ],
-              },
-              "displayName": "Text__StyledText",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-              "target": "span",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-          inheritColor={true}
-          invert={false}
-          size="base"
-        >
-          <span
-            className="c1"
-            size="base"
-          >
-            Some error
-          </span>
-        </StyledComponent>
-      </Text__StyledText>
+        Some error
+      </span>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -1203,7 +1374,29 @@ exports[`Checkbox error can have an error feedback state 1`] = `
 
 exports[`Checkbox error can have an error feedback state 2`] = `
 Array [
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1237,44 +1430,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -1342,16 +1535,77 @@ Array [
             symbol="checkmark"
             variant="inverted"
           >
-            <i
+            <Icon__StyledIcon
               aria-hidden="true"
-              className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-            />
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <StyledComponent
+                aria-hidden="true"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Icon__StyledIcon",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "target": "i",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iSize={16}
+                symbol="checkmark"
+                variant="inverted"
+              >
+                <i
+                  aria-hidden="true"
+                  className="c2"
+                />
+              </StyledComponent>
+            </Icon__StyledIcon>
           </Icon>
         </DecorativeIcon>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1385,44 +1639,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -1487,15 +1741,76 @@ Array [
           symbol="checkmark"
           variant="inverted"
         >
-          <i
+          <Icon__StyledIcon
             aria-hidden="true"
-            className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-          />
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <StyledComponent
+              aria-hidden="true"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Icon__StyledIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "target": "i",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <i
+                aria-hidden="true"
+                className="c2"
+              />
+            </StyledComponent>
+          </Icon__StyledIcon>
         </Icon>
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1529,44 +1844,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -1586,10 +1901,49 @@ Array [
         symbol="checkmark"
         variant="inverted"
       >
-        <i
+        <Icon__StyledIcon
           aria-hidden="true"
-          className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-        />
+          iSize={16}
+          symbol="checkmark"
+          variant="inverted"
+        >
+          <StyledComponent
+            aria-hidden="true"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "Icon__StyledIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                "target": "i",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <i
+              aria-hidden="true"
+              className="c2"
+            />
+          </StyledComponent>
+        </Icon__StyledIcon>
       </Icon>
     </DecorativeIcon>
   </span>,
@@ -1597,22 +1951,6 @@ Array [
 `;
 
 exports[`Checkbox error can have an error message 1`] = `
-.c1 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 .c0 {
   color: #c12335;
 }
@@ -1631,62 +1969,11 @@ exports[`Checkbox error can have an error message 1`] = `
       invert={false}
       size="base"
     >
-      <Text__StyledText
-        block={false}
-        bold={false}
-        inheritColor={true}
-        invert={false}
-        size="base"
+      <span
+        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
-        <StyledComponent
-          block={false}
-          bold={false}
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "Text__StyledText-sc-1m0rr67-0",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  "sup {",
-                  "top: -0.5em;",
-                  "font-size: 0.875rem;",
-                  "position: relative;",
-                  "vertical-align: baseline;",
-                  "padding-left: 0.1em;",
-                  "}",
-                ],
-              },
-              "displayName": "Text__StyledText",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-              "target": "span",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-          inheritColor={true}
-          invert={false}
-          size="base"
-        >
-          <span
-            className="c1"
-            size="base"
-          >
-            Some error
-          </span>
-        </StyledComponent>
-      </Text__StyledText>
+        Some error
+      </span>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -1694,7 +1981,29 @@ exports[`Checkbox error can have an error message 1`] = `
 
 exports[`Checkbox error can have an error message 2`] = `
 Array [
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1728,44 +2037,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -1833,16 +2142,77 @@ Array [
             symbol="checkmark"
             variant="inverted"
           >
-            <i
+            <Icon__StyledIcon
               aria-hidden="true"
-              className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-            />
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <StyledComponent
+                aria-hidden="true"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Icon__StyledIcon",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "target": "i",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iSize={16}
+                symbol="checkmark"
+                variant="inverted"
+              >
+                <i
+                  aria-hidden="true"
+                  className="c2"
+                />
+              </StyledComponent>
+            </Icon__StyledIcon>
           </Icon>
         </DecorativeIcon>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -1876,44 +2246,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -1978,15 +2348,76 @@ Array [
           symbol="checkmark"
           variant="inverted"
         >
-          <i
+          <Icon__StyledIcon
             aria-hidden="true"
-            className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-          />
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <StyledComponent
+              aria-hidden="true"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Icon__StyledIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "target": "i",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <i
+                aria-hidden="true"
+                className="c2"
+              />
+            </StyledComponent>
+          </Icon__StyledIcon>
         </Icon>
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2020,44 +2451,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -2077,10 +2508,49 @@ Array [
         symbol="checkmark"
         variant="inverted"
       >
-        <i
+        <Icon__StyledIcon
           aria-hidden="true"
-          className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-        />
+          iSize={16}
+          symbol="checkmark"
+          variant="inverted"
+        >
+          <StyledComponent
+            aria-hidden="true"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "Icon__StyledIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                "target": "i",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <i
+              aria-hidden="true"
+              className="c2"
+            />
+          </StyledComponent>
+        </Icon__StyledIcon>
       </Icon>
     </DecorativeIcon>
   </span>,
@@ -2091,30 +2561,6 @@ exports[`Checkbox error can have an error message 3`] = `
 .c0 {
   border-radius: 4px;
   background-color: #fff6f8;
-}
-
-.c1 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  padding: 0;
-  margin: 0;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-  text-align: left;
-}
-
-.c1 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
 }
 
 <InputFeedback
@@ -2182,63 +2628,11 @@ exports[`Checkbox error can have an error message 3`] = `
               invert={false}
               size="small"
             >
-              <Paragraph__StyledParagraph
-                align="left"
-                bold={false}
-                invert={false}
-                size="small"
+              <p
+                className="TDS_Typography-modules__wordBreak___3OZx_ TDS_Spacing-modules__noSpacing___XPYDG TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Paragraph-modules__leftAlign___KgwhE TDS_Typography-modules__default___KlcpP"
               >
-                <StyledComponent
-                  align="left"
-                  bold={false}
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "Paragraph__StyledParagraph-efl81j-0",
-                        "isStatic": false,
-                        "lastClassName": "c1",
-                        "rules": Array [
-                          [Function],
-                          "word-wrap: break-word;",
-                          "padding: 0;",
-                          "margin: 0;",
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          "sup {",
-                          "top: -0.5em;",
-                          "font-size: 0.875rem;",
-                          "position: relative;",
-                          "vertical-align: baseline;",
-                          "padding-left: 0.1em;",
-                          "}",
-                        ],
-                      },
-                      "displayName": "Paragraph__StyledParagraph",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
-                      "target": "p",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  invert={false}
-                  size="small"
-                >
-                  <p
-                    className="c1"
-                    size="small"
-                  >
-                    Error message
-                  </p>
-                </StyledComponent>
-              </Paragraph__StyledParagraph>
+                Error message
+              </p>
             </Paragraph>
           </div>
         </Box>
@@ -2250,7 +2644,29 @@ exports[`Checkbox error can have an error message 3`] = `
 
 exports[`Checkbox error does not appear as an error when it is checked 1`] = `
 Array [
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2284,44 +2700,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -2389,16 +2805,77 @@ Array [
             symbol="checkmark"
             variant="inverted"
           >
-            <i
+            <Icon__StyledIcon
               aria-hidden="true"
-              className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-            />
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <StyledComponent
+                aria-hidden="true"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Icon__StyledIcon",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "target": "i",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iSize={16}
+                symbol="checkmark"
+                variant="inverted"
+              >
+                <i
+                  aria-hidden="true"
+                  className="c2"
+                />
+              </StyledComponent>
+            </Icon__StyledIcon>
           </Icon>
         </DecorativeIcon>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2432,44 +2909,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -2534,15 +3011,76 @@ Array [
           symbol="checkmark"
           variant="inverted"
         >
-          <i
+          <Icon__StyledIcon
             aria-hidden="true"
-            className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-          />
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <StyledComponent
+              aria-hidden="true"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Icon__StyledIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "target": "i",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <i
+                aria-hidden="true"
+                className="c2"
+              />
+            </StyledComponent>
+          </Icon__StyledIcon>
         </Icon>
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2576,44 +3114,44 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c2 > div > .c0 {
+.c5:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c2 > div > .c0 {
+.c5:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c2 > div > .c0 > i {
+.c5:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c2 > div > .c0 {
+.c5:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c3 div > .c0 {
+.c4 div > .c0 {
   border-color: #c12335;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -2633,10 +3171,49 @@ Array [
         symbol="checkmark"
         variant="inverted"
       >
-        <i
+        <Icon__StyledIcon
           aria-hidden="true"
-          className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-        />
+          iSize={16}
+          symbol="checkmark"
+          variant="inverted"
+        >
+          <StyledComponent
+            aria-hidden="true"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "Icon__StyledIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                "target": "i",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <i
+              aria-hidden="true"
+              className="c2"
+            />
+          </StyledComponent>
+        </Icon__StyledIcon>
       </Icon>
     </DecorativeIcon>
   </span>,
@@ -2645,7 +3222,29 @@ Array [
 
 exports[`Checkbox focusing can be focused and unfocused 1`] = `
 Array [
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2679,21 +3278,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -2761,16 +3360,77 @@ Array [
             symbol="checkmark"
             variant="inverted"
           >
-            <i
+            <Icon__StyledIcon
               aria-hidden="true"
-              className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-            />
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <StyledComponent
+                aria-hidden="true"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Icon__StyledIcon",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "target": "i",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iSize={16}
+                symbol="checkmark"
+                variant="inverted"
+              >
+                <i
+                  aria-hidden="true"
+                  className="c2"
+                />
+              </StyledComponent>
+            </Icon__StyledIcon>
           </Icon>
         </DecorativeIcon>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2804,21 +3464,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -2883,15 +3543,76 @@ Array [
           symbol="checkmark"
           variant="inverted"
         >
-          <i
+          <Icon__StyledIcon
             aria-hidden="true"
-            className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-          />
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <StyledComponent
+              aria-hidden="true"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Icon__StyledIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "target": "i",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <i
+                aria-hidden="true"
+                className="c2"
+              />
+            </StyledComponent>
+          </Icon__StyledIcon>
         </Icon>
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -2925,21 +3646,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -2959,10 +3680,49 @@ Array [
         symbol="checkmark"
         variant="inverted"
       >
-        <i
+        <Icon__StyledIcon
           aria-hidden="true"
-          className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-        />
+          iSize={16}
+          symbol="checkmark"
+          variant="inverted"
+        >
+          <StyledComponent
+            aria-hidden="true"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "Icon__StyledIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                "target": "i",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <i
+              aria-hidden="true"
+              className="c2"
+            />
+          </StyledComponent>
+        </Icon__StyledIcon>
       </Icon>
     </DecorativeIcon>
   </span>,
@@ -2971,7 +3731,29 @@ Array [
 
 exports[`Checkbox focusing can be focused and unfocused 2`] = `
 Array [
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -3005,21 +3787,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -3087,16 +3869,77 @@ Array [
             symbol="checkmark"
             variant="inverted"
           >
-            <i
+            <Icon__StyledIcon
               aria-hidden="true"
-              className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-            />
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <StyledComponent
+                aria-hidden="true"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Icon__StyledIcon",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "target": "i",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iSize={16}
+                symbol="checkmark"
+                variant="inverted"
+              >
+                <i
+                  aria-hidden="true"
+                  className="c2"
+                />
+              </StyledComponent>
+            </Icon__StyledIcon>
           </Icon>
         </DecorativeIcon>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -3130,21 +3973,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -3209,15 +4052,76 @@ Array [
           symbol="checkmark"
           variant="inverted"
         >
-          <i
+          <Icon__StyledIcon
             aria-hidden="true"
-            className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-          />
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <StyledComponent
+              aria-hidden="true"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Icon__StyledIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "target": "i",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <i
+                aria-hidden="true"
+                className="c2"
+              />
+            </StyledComponent>
+          </Icon__StyledIcon>
         </Icon>
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -3251,21 +4155,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -3285,10 +4189,49 @@ Array [
         symbol="checkmark"
         variant="inverted"
       >
-        <i
+        <Icon__StyledIcon
           aria-hidden="true"
-          className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-        />
+          iSize={16}
+          symbol="checkmark"
+          variant="inverted"
+        >
+          <StyledComponent
+            aria-hidden="true"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "Icon__StyledIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                "target": "i",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <i
+              aria-hidden="true"
+              className="c2"
+            />
+          </StyledComponent>
+        </Icon__StyledIcon>
       </Icon>
     </DecorativeIcon>
   </span>,
@@ -3297,7 +4240,29 @@ Array [
 
 exports[`Checkbox has a fake checkbox 1`] = `
 Array [
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -3331,21 +4296,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -3413,16 +4378,77 @@ Array [
             symbol="checkmark"
             variant="inverted"
           >
-            <i
+            <Icon__StyledIcon
               aria-hidden="true"
-              className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-            />
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <StyledComponent
+                aria-hidden="true"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Icon__StyledIcon",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "target": "i",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                iSize={16}
+                symbol="checkmark"
+                variant="inverted"
+              >
+                <i
+                  aria-hidden="true"
+                  className="c2"
+                />
+              </StyledComponent>
+            </Icon__StyledIcon>
           </Icon>
         </DecorativeIcon>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -3456,21 +4482,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -3535,15 +4561,76 @@ Array [
           symbol="checkmark"
           variant="inverted"
         >
-          <i
+          <Icon__StyledIcon
             aria-hidden="true"
-            className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-          />
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <StyledComponent
+              aria-hidden="true"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Icon__StyledIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "target": "i",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              iSize={16}
+              symbol="checkmark"
+              variant="inverted"
+            >
+              <i
+                aria-hidden="true"
+                className="c2"
+              />
+            </StyledComponent>
+          </Icon__StyledIcon>
         </Icon>
       </DecorativeIcon>
     </span>
   </StyledComponent>,
-  .c1 {
+  .c2 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.c2::before {
+  content: '\\f101';
+}
+
+.c1 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -3577,21 +4664,21 @@ Array [
   display: none;
 }
 
-.c3:focus ~ .c2 > div > .c0 {
+.c4:focus ~ .c3 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c3:checked ~ .c2 > div > .c0 {
+.c4:checked ~ .c3 > div > .c0 {
   background-color: #248700;
   border-color: #248700;
 }
 
-.c3:checked ~ .c2 > div > .c0 > i {
+.c4:checked ~ .c3 > div > .c0 > i {
   display: block;
 }
 
-.c3:disabled ~ .c2 > div > .c0 {
+.c4:disabled ~ .c3 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
@@ -3611,10 +4698,49 @@ Array [
         symbol="checkmark"
         variant="inverted"
       >
-        <i
+        <Icon__StyledIcon
           aria-hidden="true"
-          className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-        />
+          iSize={16}
+          symbol="checkmark"
+          variant="inverted"
+        >
+          <StyledComponent
+            aria-hidden="true"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "Icon__StyledIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                "target": "i",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iSize={16}
+            symbol="checkmark"
+            variant="inverted"
+          >
+            <i
+              aria-hidden="true"
+              className="c2"
+            />
+          </StyledComponent>
+        </Icon__StyledIcon>
       </Icon>
     </DecorativeIcon>
   </span>,
@@ -3624,19 +4750,25 @@ Array [
 exports[`Checkbox must have a label 1`] = `
 Array [
   .c2 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.c2 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
+.c2::before {
+  content: '\\f101';
 }
 
 .c1 {
@@ -3758,10 +4890,49 @@ Array [
               symbol="checkmark"
               variant="inverted"
             >
-              <i
+              <Icon__StyledIcon
                 aria-hidden="true"
-                className="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
-              />
+                iSize={16}
+                symbol="checkmark"
+                variant="inverted"
+              >
+                <StyledComponent
+                  aria-hidden="true"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          [Function],
+                          [Function],
+                          [Function],
+                        ],
+                      },
+                      "displayName": "Icon__StyledIcon",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                      "target": "i",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  iSize={16}
+                  symbol="checkmark"
+                  variant="inverted"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="c2"
+                  />
+                </StyledComponent>
+              </Icon__StyledIcon>
             </Icon>
           </DecorativeIcon>
         </span>
@@ -3810,85 +4981,18 @@ Array [
               invert={false}
               size="base"
             >
-              <Text__StyledText
-                block={false}
-                bold={false}
-                inheritColor={true}
-                invert={false}
-                size="base"
+              <span
+                className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
               >
-                <StyledComponent
-                  block={false}
-                  bold={false}
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "Text__StyledText-sc-1m0rr67-0",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          "sup {",
-                          "top: -0.5em;",
-                          "font-size: 0.875rem;",
-                          "position: relative;",
-                          "vertical-align: baseline;",
-                          "padding-left: 0.1em;",
-                          "}",
-                        ],
-                      },
-                      "displayName": "Text__StyledText",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  inheritColor={true}
-                  invert={false}
-                  size="base"
-                >
-                  <span
-                    className="c2"
-                    size="base"
-                  >
-                    Some label
-                  </span>
-                </StyledComponent>
-              </Text__StyledText>
+                Some label
+              </span>
             </Text>
           </div>
         </ColoredTextProvider>
       </StyledComponent>
     </Styled(ColoredTextProvider)>
   </div>,
-  .c0 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.c0 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-<div
+  <div
     className=""
   >
     <Text
@@ -3897,62 +5001,11 @@ Array [
       invert={false}
       size="base"
     >
-      <Text__StyledText
-        block={false}
-        bold={false}
-        inheritColor={true}
-        invert={false}
-        size="base"
+      <span
+        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
       >
-        <StyledComponent
-          block={false}
-          bold={false}
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "Text__StyledText-sc-1m0rr67-0",
-                "isStatic": false,
-                "lastClassName": "c0",
-                "rules": Array [
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  [Function],
-                  "sup {",
-                  "top: -0.5em;",
-                  "font-size: 0.875rem;",
-                  "position: relative;",
-                  "vertical-align: baseline;",
-                  "padding-left: 0.1em;",
-                  "}",
-                ],
-              },
-              "displayName": "Text__StyledText",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-              "target": "span",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-          inheritColor={true}
-          invert={false}
-          size="base"
-        >
-          <span
-            className="c0"
-            size="base"
-          >
-            Some label
-          </span>
-        </StyledComponent>
-      </Text__StyledText>
+        Some label
+      </span>
     </Text>
   </div>,
 ]
@@ -3960,19 +5013,25 @@ Array [
 
 exports[`Checkbox renders 1`] = `
 .c5 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.c5 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
+.c5::before {
+  content: '\\f101';
 }
 
 .c4 {
@@ -4072,14 +5131,14 @@ exports[`Checkbox renders 1`] = `
       >
         <i
           aria-hidden="true"
-          class="TDS_Icon-modules__iconCheckmark___3cAol TDS_Icon-modules__icon___13xYd TDS_Icon-modules__inverted___2mdlT TDS_Icon-modules__size16___1pm12"
+          class="c5"
         />
       </span>
       <div
         class=""
       >
         <span
-          class="c5"
+          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
         >
           A label
         </span>
