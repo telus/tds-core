@@ -64,12 +64,6 @@ describe('StandaloneIcon', () => {
       expect(interactiveIcon).toMatchSnapshot()
     })
 
-    it('renders an HTML button tag', () => {
-      const { interactiveIcon } = doShallow({ onClick: jest.fn() })
-
-      expect(interactiveIcon.dive()).toHaveDisplayName('button')
-    })
-
     it('passes a11yText to the button as A11yContent', () => {
       const { interactiveIcon } = doShallow({ onClick: jest.fn() })
 
