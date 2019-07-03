@@ -1,9 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SVGIcon consumer renders 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > svg {
+  fill: #4b286d;
+}
+
+.c0 > svg {
+  width: 24px;
+  height: 24px;
+}
+
 <i
   aria-hidden="true"
-  class="svgBase svgVariantDefault svgSize24"
+  class="c0"
+  size="24"
 >
   <svg
     height="21"
@@ -26,11 +43,53 @@ exports[`SVGIcon consumer renders 1`] = `
 </i>
 `;
 
-exports[`SVGIcon renders 1`] = `
+exports[`SVGIcon has size set to 24 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > svg {
+  fill: #4b286d;
+}
+
+.c0 > svg {
+  width: 24px;
+  height: 24px;
+}
+
 <i
   aria-hidden="true"
-  class="svgBase svgVariantDefault svgSize24"
-  symbol="artificialIntelligence"
+  class="c0"
+  size="24"
+>
+  Some content
+</i>
+`;
+
+exports[`SVGIcon renders 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c0 > svg {
+  fill: #4b286d;
+}
+
+.c0 > svg {
+  width: 24px;
+  height: 24px;
+}
+
+<i
+  aria-hidden="true"
+  class="c0"
+  size="24"
 >
   Some content
 </i>

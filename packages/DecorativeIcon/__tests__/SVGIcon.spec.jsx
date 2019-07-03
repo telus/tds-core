@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
+
 import SVGIcon from '../SVGIcon'
 import { BatteryCharging } from '../svgs'
 
@@ -15,24 +16,21 @@ describe('SVGIcon', () => {
       </SVGIcon>
     )
 
-  it('renders', () => {
-    const icon = render(
-      <SVGIcon variant="default" symbol="artificialIntelligence">
+  const doRender = (props = { symbol: 'artificialIntelligence' }) =>
+    render(
+      <SVGIcon {...defaultProps} {...props}>
         Some content
       </SVGIcon>
     )
 
+  it('renders', () => {
+    const icon = doRender()
     expect(icon).toMatchSnapshot()
   })
 
-  it('has variant set to `default`', () => {
-    const icon = doShallow()
-    expect(icon).toHaveClassName('svgVariantDefault')
-  })
-
   it('has size set to 24', () => {
-    const icon = doShallow()
-    expect(icon).toHaveClassName('svgSize24')
+    const icon = doRender({ size: 24 })
+    expect(icon).toMatchSnapshot()
   })
 
   it('is hidden from screen readers', () => {
