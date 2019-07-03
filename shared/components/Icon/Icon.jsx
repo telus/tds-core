@@ -1,21 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+import { colorIconPrimary, colorIconSecondary, colorCardinal, colorWhite } from '@tds/core-colours'
+
+import icons from './icons'
 
 import safeRest from '../../utils/safeRest'
-import joinClassNames from '../../utils/joinClassNames'
-import capitalize from '../../utils/capitalize'
 
-import styles from './Icon.modules.scss'
-
-const Icon = ({ symbol, variant, size, ...rest }) => {
-  const classes = joinClassNames(
-    styles[`icon${capitalize(symbol)}`],
-    variant && styles[variant],
-    size && styles[`size${size}`]
-  )
-
-  return <i {...safeRest(rest)} className={classes} />
+const getColour = variant => {
+  switch (variant) {
+    case 'primary':
+      return colorIconPrimary
+    case 'secondary':
+      return colorIconSecondary
+    case 'inverted':
+      return colorWhite
+    case 'error':
+      return colorCardinal
+    default:
+      return undefined
+  }
 }
+const iconSymbol = ({ symbol }) => ({ ...icons.default, ...icons[symbol] })
+const iconVariant = ({ variant }) => ({ color: getColour(variant) })
+const iconSize = ({ iSize }) => ({ fontSize: `${iSize / 16}rem` })
+
+export const StyledIcon = styled.i(iconSymbol, iconVariant, iconSize)
+
+const Icon = ({ symbol, variant, size, ...rest }) => (
+  <StyledIcon {...safeRest(rest)} symbol={symbol} variant={variant} iSize={size} />
+)
 
 Icon.propTypes = {
   symbol: PropTypes.oneOf([
