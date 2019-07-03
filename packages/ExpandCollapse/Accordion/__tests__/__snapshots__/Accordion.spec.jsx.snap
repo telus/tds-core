@@ -14,40 +14,25 @@ exports[`Accordion renders a closed accordion 1`] = `
 }
 
 .c3 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
-  line-height: 1.6;
-  word-wrap: break-word;
-  font-weight: 400;
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #248700;
+  font-size: 1rem;
 }
 
-.c3 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c8 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
-  display: block;
-}
-
-.c8 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
+.c3::before {
+  content: '\\f105';
 }
 
 .c7 {
@@ -349,76 +334,66 @@ exports[`Accordion renders a closed accordion 1`] = `
                                             invert={false}
                                             size="large"
                                           >
-                                            <Text__StyledText
-                                              block={false}
-                                              bold={false}
-                                              invert={false}
-                                              size="large"
+                                            <span
+                                              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                                             >
-                                              <StyledComponent
-                                                block={false}
-                                                bold={false}
-                                                forwardedComponent={
-                                                  Object {
-                                                    "$$typeof": Symbol(react.forward_ref),
-                                                    "attrs": Array [],
-                                                    "componentStyle": ComponentStyle {
-                                                      "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                      "isStatic": false,
-                                                      "lastClassName": "c8",
-                                                      "rules": Array [
-                                                        [Function],
-                                                        [Function],
-                                                        [Function],
-                                                        [Function],
-                                                        [Function],
-                                                        "sup {",
-                                                        "top: -0.5em;",
-                                                        "font-size: 0.875rem;",
-                                                        "position: relative;",
-                                                        "vertical-align: baseline;",
-                                                        "padding-left: 0.1em;",
-                                                        "}",
-                                                      ],
-                                                    },
-                                                    "displayName": "Text__StyledText",
-                                                    "foldedComponentIds": Array [],
-                                                    "render": [Function],
-                                                    "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                    "target": "span",
-                                                    "toString": [Function],
-                                                    "warnTooManyClasses": [Function],
-                                                    "withComponent": [Function],
-                                                  }
-                                                }
-                                                forwardedRef={null}
-                                                invert={false}
-                                                size="large"
+                                              <DecorativeIcon
+                                                size={16}
+                                                symbol="caretDown"
+                                                variant="primary"
                                               >
-                                                <span
-                                                  className="c3"
-                                                  size="large"
+                                                <Icon
+                                                  aria-hidden="true"
+                                                  size={16}
+                                                  symbol="caretDown"
+                                                  variant="primary"
                                                 >
-                                                  <DecorativeIcon
-                                                    size={16}
+                                                  <Icon__StyledIcon
+                                                    aria-hidden="true"
+                                                    iSize={16}
                                                     symbol="caretDown"
                                                     variant="primary"
                                                   >
-                                                    <Icon
+                                                    <StyledComponent
                                                       aria-hidden="true"
-                                                      size={16}
+                                                      forwardedComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": ComponentStyle {
+                                                            "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                            "isStatic": false,
+                                                            "lastClassName": "c3",
+                                                            "rules": Array [
+                                                              [Function],
+                                                              [Function],
+                                                              [Function],
+                                                            ],
+                                                          },
+                                                          "displayName": "Icon__StyledIcon",
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                          "target": "i",
+                                                          "toString": [Function],
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                      forwardedRef={null}
+                                                      iSize={16}
                                                       symbol="caretDown"
                                                       variant="primary"
                                                     >
                                                       <i
                                                         aria-hidden="true"
-                                                        className="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
+                                                        className="c3"
                                                       />
-                                                    </Icon>
-                                                  </DecorativeIcon>
-                                                </span>
-                                              </StyledComponent>
-                                            </Text__StyledText>
+                                                    </StyledComponent>
+                                                  </Icon__StyledIcon>
+                                                </Icon>
+                                              </DecorativeIcon>
+                                            </span>
                                           </Text>
                                         </div>
                                       </Transition>
@@ -527,60 +502,11 @@ exports[`Accordion renders a closed accordion 1`] = `
                                                   invert={false}
                                                   size="large"
                                                 >
-                                                  <Text__StyledText
-                                                    block={false}
-                                                    bold={false}
-                                                    invert={false}
-                                                    size="large"
+                                                  <span
+                                                    className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                                                   >
-                                                    <StyledComponent
-                                                      block={false}
-                                                      bold={false}
-                                                      forwardedComponent={
-                                                        Object {
-                                                          "$$typeof": Symbol(react.forward_ref),
-                                                          "attrs": Array [],
-                                                          "componentStyle": ComponentStyle {
-                                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                            "isStatic": false,
-                                                            "lastClassName": "c8",
-                                                            "rules": Array [
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              "sup {",
-                                                              "top: -0.5em;",
-                                                              "font-size: 0.875rem;",
-                                                              "position: relative;",
-                                                              "vertical-align: baseline;",
-                                                              "padding-left: 0.1em;",
-                                                              "}",
-                                                            ],
-                                                          },
-                                                          "displayName": "Text__StyledText",
-                                                          "foldedComponentIds": Array [],
-                                                          "render": [Function],
-                                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                          "target": "span",
-                                                          "toString": [Function],
-                                                          "warnTooManyClasses": [Function],
-                                                          "withComponent": [Function],
-                                                        }
-                                                      }
-                                                      forwardedRef={null}
-                                                      invert={false}
-                                                      size="large"
-                                                    >
-                                                      <span
-                                                        className="c3"
-                                                        size="large"
-                                                      >
-                                                        Panel title
-                                                      </span>
-                                                    </StyledComponent>
-                                                  </Text__StyledText>
+                                                    Panel title
+                                                  </span>
                                                 </Text>
                                               </div>
                                             </StyledComponent>
@@ -686,69 +612,20 @@ exports[`Accordion renders a closed accordion 1`] = `
                               invert={false}
                               size="base"
                             >
-                              <Text__StyledText
-                                block={true}
-                                bold={false}
-                                invert={false}
-                                size="base"
+                              <span
+                                className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__blockText___2Gy51"
                               >
-                                <StyledComponent
-                                  block={true}
-                                  bold={false}
-                                  forwardedComponent={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "attrs": Array [],
-                                      "componentStyle": ComponentStyle {
-                                        "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                        "isStatic": false,
-                                        "lastClassName": "c8",
-                                        "rules": Array [
-                                          [Function],
-                                          [Function],
-                                          [Function],
-                                          [Function],
-                                          [Function],
-                                          "sup {",
-                                          "top: -0.5em;",
-                                          "font-size: 0.875rem;",
-                                          "position: relative;",
-                                          "vertical-align: baseline;",
-                                          "padding-left: 0.1em;",
-                                          "}",
-                                        ],
-                                      },
-                                      "displayName": "Text__StyledText",
-                                      "foldedComponentIds": Array [],
-                                      "render": [Function],
-                                      "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                      "target": "span",
-                                      "toString": [Function],
-                                      "warnTooManyClasses": [Function],
-                                      "withComponent": [Function],
-                                    }
-                                  }
-                                  forwardedRef={null}
-                                  invert={false}
-                                  size="base"
+                                <Panel
+                                  disabled={false}
+                                  header="Panel title"
+                                  id="panel-1"
+                                  key=".0"
                                 >
-                                  <span
-                                    className="c8"
-                                    size="base"
-                                  >
-                                    <Panel
-                                      disabled={false}
-                                      header="Panel title"
-                                      id="panel-1"
-                                      key=".0"
-                                    >
-                                      <div>
-                                        Panel content
-                                      </div>
-                                    </Panel>
-                                  </span>
-                                </StyledComponent>
-                              </Text__StyledText>
+                                  <div>
+                                    Panel content
+                                  </div>
+                                </Panel>
+                              </span>
                             </Text>
                           </div>
                         </Box>
@@ -824,40 +701,25 @@ exports[`Accordion renders an open accordion 1`] = `
 }
 
 .c3 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
-  line-height: 1.6;
-  word-wrap: break-word;
-  font-weight: 400;
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #248700;
+  font-size: 1rem;
 }
 
-.c3 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c8 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
-  display: block;
-}
-
-.c8 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
+.c3::before {
+  content: '\\f106';
 }
 
 .c7 {
@@ -1165,76 +1027,66 @@ exports[`Accordion renders an open accordion 1`] = `
                                             invert={false}
                                             size="large"
                                           >
-                                            <Text__StyledText
-                                              block={false}
-                                              bold={false}
-                                              invert={false}
-                                              size="large"
+                                            <span
+                                              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                                             >
-                                              <StyledComponent
-                                                block={false}
-                                                bold={false}
-                                                forwardedComponent={
-                                                  Object {
-                                                    "$$typeof": Symbol(react.forward_ref),
-                                                    "attrs": Array [],
-                                                    "componentStyle": ComponentStyle {
-                                                      "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                      "isStatic": false,
-                                                      "lastClassName": "c8",
-                                                      "rules": Array [
-                                                        [Function],
-                                                        [Function],
-                                                        [Function],
-                                                        [Function],
-                                                        [Function],
-                                                        "sup {",
-                                                        "top: -0.5em;",
-                                                        "font-size: 0.875rem;",
-                                                        "position: relative;",
-                                                        "vertical-align: baseline;",
-                                                        "padding-left: 0.1em;",
-                                                        "}",
-                                                      ],
-                                                    },
-                                                    "displayName": "Text__StyledText",
-                                                    "foldedComponentIds": Array [],
-                                                    "render": [Function],
-                                                    "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                    "target": "span",
-                                                    "toString": [Function],
-                                                    "warnTooManyClasses": [Function],
-                                                    "withComponent": [Function],
-                                                  }
-                                                }
-                                                forwardedRef={null}
-                                                invert={false}
-                                                size="large"
+                                              <DecorativeIcon
+                                                size={16}
+                                                symbol="caretUp"
+                                                variant="primary"
                                               >
-                                                <span
-                                                  className="c3"
-                                                  size="large"
+                                                <Icon
+                                                  aria-hidden="true"
+                                                  size={16}
+                                                  symbol="caretUp"
+                                                  variant="primary"
                                                 >
-                                                  <DecorativeIcon
-                                                    size={16}
+                                                  <Icon__StyledIcon
+                                                    aria-hidden="true"
+                                                    iSize={16}
                                                     symbol="caretUp"
                                                     variant="primary"
                                                   >
-                                                    <Icon
+                                                    <StyledComponent
                                                       aria-hidden="true"
-                                                      size={16}
+                                                      forwardedComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": ComponentStyle {
+                                                            "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                            "isStatic": false,
+                                                            "lastClassName": "c3",
+                                                            "rules": Array [
+                                                              [Function],
+                                                              [Function],
+                                                              [Function],
+                                                            ],
+                                                          },
+                                                          "displayName": "Icon__StyledIcon",
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                          "target": "i",
+                                                          "toString": [Function],
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
+                                                        }
+                                                      }
+                                                      forwardedRef={null}
+                                                      iSize={16}
                                                       symbol="caretUp"
                                                       variant="primary"
                                                     >
                                                       <i
                                                         aria-hidden="true"
-                                                        className="TDS_Icon-modules__iconCaretUp___3PL_K TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
+                                                        className="c3"
                                                       />
-                                                    </Icon>
-                                                  </DecorativeIcon>
-                                                </span>
-                                              </StyledComponent>
-                                            </Text__StyledText>
+                                                    </StyledComponent>
+                                                  </Icon__StyledIcon>
+                                                </Icon>
+                                              </DecorativeIcon>
+                                            </span>
                                           </Text>
                                         </div>
                                       </Transition>
@@ -1343,60 +1195,11 @@ exports[`Accordion renders an open accordion 1`] = `
                                                   invert={false}
                                                   size="large"
                                                 >
-                                                  <Text__StyledText
-                                                    block={false}
-                                                    bold={false}
-                                                    invert={false}
-                                                    size="large"
+                                                  <span
+                                                    className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
                                                   >
-                                                    <StyledComponent
-                                                      block={false}
-                                                      bold={false}
-                                                      forwardedComponent={
-                                                        Object {
-                                                          "$$typeof": Symbol(react.forward_ref),
-                                                          "attrs": Array [],
-                                                          "componentStyle": ComponentStyle {
-                                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                            "isStatic": false,
-                                                            "lastClassName": "c8",
-                                                            "rules": Array [
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              "sup {",
-                                                              "top: -0.5em;",
-                                                              "font-size: 0.875rem;",
-                                                              "position: relative;",
-                                                              "vertical-align: baseline;",
-                                                              "padding-left: 0.1em;",
-                                                              "}",
-                                                            ],
-                                                          },
-                                                          "displayName": "Text__StyledText",
-                                                          "foldedComponentIds": Array [],
-                                                          "render": [Function],
-                                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                          "target": "span",
-                                                          "toString": [Function],
-                                                          "warnTooManyClasses": [Function],
-                                                          "withComponent": [Function],
-                                                        }
-                                                      }
-                                                      forwardedRef={null}
-                                                      invert={false}
-                                                      size="large"
-                                                    >
-                                                      <span
-                                                        className="c3"
-                                                        size="large"
-                                                      >
-                                                        Panel title
-                                                      </span>
-                                                    </StyledComponent>
-                                                  </Text__StyledText>
+                                                    Panel title
+                                                  </span>
                                                 </Text>
                                               </div>
                                             </StyledComponent>
@@ -1501,69 +1304,20 @@ exports[`Accordion renders an open accordion 1`] = `
                               invert={false}
                               size="base"
                             >
-                              <Text__StyledText
-                                block={true}
-                                bold={false}
-                                invert={false}
-                                size="base"
+                              <span
+                                className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8 TDS_Typography-modules__blockText___2Gy51"
                               >
-                                <StyledComponent
-                                  block={true}
-                                  bold={false}
-                                  forwardedComponent={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "attrs": Array [],
-                                      "componentStyle": ComponentStyle {
-                                        "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                        "isStatic": false,
-                                        "lastClassName": "c8",
-                                        "rules": Array [
-                                          [Function],
-                                          [Function],
-                                          [Function],
-                                          [Function],
-                                          [Function],
-                                          "sup {",
-                                          "top: -0.5em;",
-                                          "font-size: 0.875rem;",
-                                          "position: relative;",
-                                          "vertical-align: baseline;",
-                                          "padding-left: 0.1em;",
-                                          "}",
-                                        ],
-                                      },
-                                      "displayName": "Text__StyledText",
-                                      "foldedComponentIds": Array [],
-                                      "render": [Function],
-                                      "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                      "target": "span",
-                                      "toString": [Function],
-                                      "warnTooManyClasses": [Function],
-                                      "withComponent": [Function],
-                                    }
-                                  }
-                                  forwardedRef={null}
-                                  invert={false}
-                                  size="base"
+                                <Panel
+                                  disabled={false}
+                                  header="Panel title"
+                                  id="panel-1"
+                                  key=".0"
                                 >
-                                  <span
-                                    className="c8"
-                                    size="base"
-                                  >
-                                    <Panel
-                                      disabled={false}
-                                      header="Panel title"
-                                      id="panel-1"
-                                      key=".0"
-                                    >
-                                      <div>
-                                        Panel content
-                                      </div>
-                                    </Panel>
-                                  </span>
-                                </StyledComponent>
-                              </Text__StyledText>
+                                  <div>
+                                    Panel content
+                                  </div>
+                                </Panel>
+                              </span>
                             </Text>
                           </div>
                         </Box>
