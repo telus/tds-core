@@ -1,8 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text renders 1`] = `
+.c0 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <span
-  className="default base baseFont color"
+  class="c0"
 >
   Some content
 </span>

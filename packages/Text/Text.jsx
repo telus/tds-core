@@ -1,35 +1,33 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import styles from '@tds/shared-typography/Typography.modules.scss'
+import * as typography from '@tds/shared-typography'
 
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
 
 import TextSup from './TextSup/TextSup'
+
+const textColor = ({ invert }) => (invert ? typography.invertedColor : typography.color)
+const textInheritColor = ({ inheritColor }) => (inheritColor ? { color: 'inherit' } : undefined)
+const textSize = ({ size }) => typography[size]
+const textBold = ({ bold, size }) => (bold ? typography.boldFont : typography[`${size}Font`])
+const textBlock = ({ block }) => (block ? typography.blockText : undefined)
+
+export const StyledText = styled.span(textColor, textInheritColor, textSize, textBold, textBlock, {
+  sup: typography.sup,
+})
 
 /**
  * Inline text usually as an HTML `<span>` element.
  *
  * @version ./package.json
  */
-const Text = ({ block, bold, size, invert, children, ...rest }, context) => {
-  const textColor = invert ? styles.invertedColor : styles.color
-
-  const classes = joinClassNames(
-    styles.default,
-    styles[size],
-    bold ? styles.boldFont : styles[`${size}Font`],
-    context.inheritColor ? styles.inheritColor : textColor,
-    block ? styles.blockText : null
-  )
-
-  return (
-    <span {...safeRest(rest)} className={classes}>
-      {children}
-    </span>
-  )
-}
+const Text = ({ children, ...rest }, context) => (
+  <StyledText {...safeRest(rest)} inheritColor={context.inheritColor}>
+    {children}
+  </StyledText>
+)
 
 Text.propTypes = {
   /**
