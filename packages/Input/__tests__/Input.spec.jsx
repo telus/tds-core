@@ -281,9 +281,15 @@ describe('Input', () => {
 
   describe('tooltip prop', () => {
     it('connects to Input', () => {
-      const input = mount(<Input label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />)
+      const input = mount(
+        <Input label="Some field" tooltip={<Tooltip copy="en">The tooltip</Tooltip>} />
+      )
 
-      expect(input).toContainReact(<Tooltip connectedFieldLabel="Some field">The tooltip</Tooltip>)
+      expect(input).toContainReact(
+        <Tooltip copy="en" connectedFieldLabel="Some field">
+          The tooltip
+        </Tooltip>
+      )
     })
   })
 
