@@ -1,6 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Spinner does not render a large secondary spinner 1`] = `
+.c0 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <div
   aria-live="assertive"
   className="relative inline"
@@ -53,11 +73,60 @@ exports[`Spinner does not render a large secondary spinner 1`] = `
           invert={false}
           size="small"
         >
-          <span
-            className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+          <Text__StyledText
+            block={false}
+            bold={false}
+            invert={false}
+            size="small"
           >
-            Loading content
-          </span>
+            <StyledComponent
+              block={false}
+              bold={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Text__StyledText-sc-1m0rr67-0",
+                    "isStatic": false,
+                    "lastClassName": "c0",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      "sup {",
+                      "top: -0.5em;",
+                      "font-size: 0.875rem;",
+                      "position: relative;",
+                      "vertical-align: baseline;",
+                      "padding-left: 0.1em;",
+                      "}",
+                    ],
+                  },
+                  "displayName": "Text__StyledText",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              invert={false}
+              size="small"
+            >
+              <span
+                className="c0"
+                size="small"
+              >
+                Loading content
+              </span>
+            </StyledComponent>
+          </Text__StyledText>
         </Text>
       </div>
     </div>
@@ -79,6 +148,26 @@ exports[`Spinner does not render a large secondary spinner 1`] = `
 `;
 
 exports[`Spinner renders 1`] = `
+.c0 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <div
   class="container"
   data-testid="spinner"
@@ -114,7 +203,7 @@ exports[`Spinner renders 1`] = `
     class="tip"
   >
     <span
-      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      class="c0"
     >
       Loading content
     </span>
@@ -245,6 +334,26 @@ exports[`Spinner renders a small spinner 1`] = `
 `;
 
 exports[`Spinner renders with children 1`] = `
+.c0 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <div
   aria-live="assertive"
   class="relative"
@@ -285,7 +394,7 @@ exports[`Spinner renders with children 1`] = `
       class="tip"
     >
       <span
-        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+        class="c0"
       >
         Loading content
       </span>
