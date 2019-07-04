@@ -123,7 +123,7 @@ const frameworkSelect = React.createRef()
 
 ### Using Tooltip
 
-When more in-depth explanation is needed to fill out a `Select` properly, a [`Tooltip`](#!/Tooltip) may be provided to the `tooltip` prop.
+When a more in-depth explanation is needed to fill out a `Select` properly, a [`Tooltip`](#!/Tooltip) may be provided to the `tooltip` prop.
 
 ```jsx
 <Select
@@ -135,6 +135,6 @@ When more in-depth explanation is needed to fill out a `Select` properly, a [`To
     { text: 'Red', value: 'ON' },
     { text: 'Purple', value: 'QC' },
   ]}
-  tooltip={<Tooltip>Used to decide which theme to apply.</Tooltip>}
+  tooltip={<Tooltip copy="en">Used to decide which theme to apply.</Tooltip>}
 />
 ```

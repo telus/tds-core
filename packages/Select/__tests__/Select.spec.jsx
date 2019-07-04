@@ -329,11 +329,15 @@ describe('Select', () => {
               readOnly: true,
             },
           ]}
-          tooltip={<Tooltip>The tooltip</Tooltip>}
+          tooltip={<Tooltip copy="en">The tooltip</Tooltip>}
         />
       )
 
-      expect(select).toContainReact(<Tooltip connectedFieldLabel="Some field">The tooltip</Tooltip>)
+      expect(select).toContainReact(
+        <Tooltip copy="en" connectedFieldLabel="Some field">
+          The tooltip
+        </Tooltip>
+      )
     })
   })
 
