@@ -174,7 +174,7 @@ Tooltip.propTypes = {
   /**
    * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively.
    *
-   * To provide your own, pass a JSON object with the key, `a11yText`.
+   * To provide your own, pass a JSON object with the keys, `a11yTextStandalone` and `a11yTextLinked`.
    */
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(['en', 'fr']),

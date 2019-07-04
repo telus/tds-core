@@ -33,9 +33,9 @@ You can also place Tooltips anywhere you like as a standalone element.
 
 ### Accessible copy
 
-To indicate to assistive devices the purpose of the `Tooltip`, invisible copy is placed within the component. Passing `"en"` or `"fn"` to the `copy` prop will use the component's English and French text respectively. If the provided text is not sufficient, an object containing custom text may be provided. The key-value pairs used are `a11yStandalone` for a `Tooltip` without an attached `Input`, and `a11yTextLinked` for a `Tooltip` with an attached `Input`.
+To indicate to assistive devices the purpose of the `Tooltip`, invisible copy is placed within the component. Passing `"en"` or `"fn"` to the `copy` prop will use the component's English and French text respectively. If the provided text is not sufficient, an object containing custom text may be provided. The key-value pairs used are `a11yStandalone` for a `Tooltip` without an attached input, and `a11yTextLinked` for a `Tooltip` with an attached input.
 
-When providing custom text to `a11yTextLinked`, it is required that it contain the `%{label}` token. This token will substitute in the attached `Input`'s label, and is necessary for those with assistive devices to identify which `Input` the `Tooltip` belongs to.
+When providing custom text to `a11yTextLinked`, it is required that it contain the `%{label}` token. This token will substitute in the attached input's label, and is necessary for those with assistive devices to identify which input the `Tooltip` belongs to.
 
 _To see the effects of this, use a screen reader or view the `<span>` rendered within the component that contains the accessible text._
 
