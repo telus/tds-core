@@ -305,11 +305,13 @@ describe('TextArea', () => {
   describe('tooltip prop', () => {
     it('connects to TextArea', () => {
       const textarea = mount(
-        <TextArea label="Some field" tooltip={<Tooltip>The tooltip</Tooltip>} />
+        <TextArea label="Some field" tooltip={<Tooltip copy="en">The tooltip</Tooltip>} />
       )
 
       expect(textarea).toContainReact(
-        <Tooltip connectedFieldLabel="Some field">The tooltip</Tooltip>
+        <Tooltip copy="en" connectedFieldLabel="Some field">
+          The tooltip
+        </Tooltip>
       )
     })
   })
