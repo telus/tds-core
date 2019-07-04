@@ -70,6 +70,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
 }
 
 <Tooltip
+  copy="en"
   direction="auto"
 >
   <Tooltip__StyledTooltip>
@@ -484,6 +485,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
 }
 
 <Tooltip
+  copy="en"
   direction="auto"
 >
   <Tooltip__StyledTooltip>
@@ -1246,6 +1248,7 @@ exports[`Tooltip renders 1`] = `
 }
 
 <Tooltip
+  copy="en"
   direction="auto"
 >
   <Tooltip__StyledTooltip>
