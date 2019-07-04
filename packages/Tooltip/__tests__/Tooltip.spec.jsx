@@ -15,7 +15,12 @@ describe('Tooltip', () => {
   const defaultChildren = 'Tooltip text'
 
   const doMount = (overrides = {}, children = defaultChildren, options = {}) => {
-    const tooltip = mount(<Tooltip {...overrides}>{children}</Tooltip>, options)
+    const tooltip = mount(
+      <Tooltip copy="en" {...overrides}>
+        {children}
+      </Tooltip>,
+      options
+    )
 
     const findTrigger = () => tooltip.find(StandaloneIcon)
 

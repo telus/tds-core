@@ -5,12 +5,14 @@ import styled from 'styled-components'
 import StandaloneIcon from '@tds/core-standalone-icon'
 
 import { iconWrapper } from '@tds/shared-styles'
+import { getCopy } from '@tds/util-helpers'
 
 import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId/generateId'
 import closest from './element-closest'
 
 import Bubble from './Bubble'
+import copyDictionary from './tooltipText'
 
 const StyledTooltip = styled.div({
   ...iconWrapper.fixLineHeight,
@@ -64,12 +66,12 @@ class Tooltip extends React.Component {
     window.removeEventListener('resize', this.updatePageWidth)
   }
 
-  getTriggerA11yText = connectedFieldLabel => {
+  getTriggerA11yText = (connectedFieldLabel, copy) => {
     if (!connectedFieldLabel) {
-      return 'Reveal additional information.'
+      return getCopy(copyDictionary, copy).a11yTextStandalone
     }
 
-    return `Reveal additional information about ${connectedFieldLabel}.`
+    return getCopy(copyDictionary, copy).a11yTextLinked.replace('%{label}', connectedFieldLabel)
   }
 
   getIds = connectedFieldLabel => {
@@ -114,7 +116,7 @@ class Tooltip extends React.Component {
   }
 
   render() {
-    const { direction, connectedFieldLabel, children, ...rest } = this.props
+    const { direction, connectedFieldLabel, copy, children, ...rest } = this.props
 
     const { bubbleId, triggerId } = this.getIds(connectedFieldLabel)
 
@@ -143,7 +145,7 @@ class Tooltip extends React.Component {
           </Bubble>
           <StandaloneIcon
             symbol="questionMarkCircle"
-            a11yText={this.getTriggerA11yText(connectedFieldLabel)}
+            a11yText={this.getTriggerA11yText(this.props.connectedFieldLabel, this.props.copy)}
             onClick={this.toggleBubble}
             id={triggerId}
             aria-controls={bubbleId}
@@ -169,6 +171,18 @@ Tooltip.propTypes = {
    * @ignore
    */
   connectedFieldLabel: PropTypes.string,
+  /**
+   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively.
+   *
+   * To provide your own, pass a JSON object with the key, `a11yText`.
+   */
+  copy: PropTypes.oneOfType([
+    PropTypes.oneOf(['en', 'fr']),
+    PropTypes.shape({
+      a11yTextStandalone: PropTypes.string,
+      a11yTextLinked: PropTypes.string,
+    }),
+  ]).isRequired,
   /**
    * The message. Can be raw text or text components.
    */
