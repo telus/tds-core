@@ -4,7 +4,7 @@ import { mount } from 'enzyme'
 
 import Paragraph from '../../../../packages/Paragraph/Paragraph'
 import Link from '../../../../packages/Link/Link'
-import Text from '../../../../packages/Text/Text'
+import Text, { StyledText } from '../../../../packages/Text/Text'
 import ColoredTextProvider from '../ColoredTextProvider'
 
 describe('ColoredTextProvider', () => {
@@ -34,6 +34,6 @@ describe('ColoredTextProvider', () => {
       </ColoredTextProvider>
     )
 
-    expect(coloredText.find('span')).toHaveClassName('inheritColor')
+    expect(coloredText.find(StyledText)).toHaveProp('inheritColor', true)
   })
 })
