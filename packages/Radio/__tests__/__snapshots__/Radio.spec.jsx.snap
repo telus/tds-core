@@ -1,6 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio allows numbers as value 1`] = `
+.c6 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c6 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c4 {
   height: 20px;
   width: 20px;
@@ -111,7 +127,7 @@ exports[`Radio allows numbers as value 1`] = `
       >
         <div>
           <span
-            class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+            class="c6"
           >
             A label
           </span>
@@ -123,6 +139,22 @@ exports[`Radio allows numbers as value 1`] = `
 `;
 
 exports[`Radio disabled can be disabled 1`] = `
+.c0 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <ColoredTextProvider
   tag="div"
 >
@@ -133,11 +165,62 @@ exports[`Radio disabled can be disabled 1`] = `
       invert={false}
       size="base"
     >
-      <span
-        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      <Text__StyledText
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
       >
-        A label
-      </span>
+        <StyledComponent
+          block={false}
+          bold={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "sup {",
+                  "top: -0.5em;",
+                  "font-size: 0.875rem;",
+                  "position: relative;",
+                  "vertical-align: baseline;",
+                  "padding-left: 0.1em;",
+                  "}",
+                ],
+              },
+              "displayName": "Text__StyledText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          inheritColor={true}
+          invert={false}
+          size="base"
+        >
+          <span
+            className="c0"
+            size="base"
+          >
+            A label
+          </span>
+        </StyledComponent>
+      </Text__StyledText>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -605,6 +688,22 @@ Array [
 `;
 
 exports[`Radio disabled can be disabled and checked 1`] = `
+.c0 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <ColoredTextProvider
   tag="div"
 >
@@ -615,11 +714,62 @@ exports[`Radio disabled can be disabled and checked 1`] = `
       invert={false}
       size="base"
     >
-      <span
-        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      <Text__StyledText
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
       >
-        A label
-      </span>
+        <StyledComponent
+          block={false}
+          bold={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "sup {",
+                  "top: -0.5em;",
+                  "font-size: 0.875rem;",
+                  "position: relative;",
+                  "vertical-align: baseline;",
+                  "padding-left: 0.1em;",
+                  "}",
+                ],
+              },
+              "displayName": "Text__StyledText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          inheritColor={true}
+          invert={false}
+          size="base"
+        >
+          <span
+            className="c0"
+            size="base"
+          >
+            A label
+          </span>
+        </StyledComponent>
+      </Text__StyledText>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -1089,6 +1239,22 @@ Array [
 exports[`Radio disabled can be disabled and checked 3`] = `null`;
 
 exports[`Radio error can have an error feedback state 1`] = `
+.c0 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <ColoredTextProvider
   tag="div"
 >
@@ -1099,11 +1265,62 @@ exports[`Radio error can have an error feedback state 1`] = `
       invert={false}
       size="base"
     >
-      <span
-        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      <Text__StyledText
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
       >
-        Some error
-      </span>
+        <StyledComponent
+          block={false}
+          bold={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "sup {",
+                  "top: -0.5em;",
+                  "font-size: 0.875rem;",
+                  "position: relative;",
+                  "vertical-align: baseline;",
+                  "padding-left: 0.1em;",
+                  "}",
+                ],
+              },
+              "displayName": "Text__StyledText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          inheritColor={true}
+          invert={false}
+          size="base"
+        >
+          <span
+            className="c0"
+            size="base"
+          >
+            Some error
+          </span>
+        </StyledComponent>
+      </Text__StyledText>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -1571,6 +1788,22 @@ Array [
 `;
 
 exports[`Radio error does not appear as an error when it is checked 1`] = `
+.c0 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <ColoredTextProvider
   tag="div"
 >
@@ -1581,11 +1814,62 @@ exports[`Radio error does not appear as an error when it is checked 1`] = `
       invert={false}
       size="base"
     >
-      <span
-        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+      <Text__StyledText
+        block={false}
+        bold={false}
+        inheritColor={true}
+        invert={false}
+        size="base"
       >
-        Some error
-      </span>
+        <StyledComponent
+          block={false}
+          bold={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "sup {",
+                  "top: -0.5em;",
+                  "font-size: 0.875rem;",
+                  "position: relative;",
+                  "vertical-align: baseline;",
+                  "padding-left: 0.1em;",
+                  "}",
+                ],
+              },
+              "displayName": "Text__StyledText",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          inheritColor={true}
+          invert={false}
+          size="base"
+        >
+          <span
+            className="c0"
+            size="base"
+          >
+            Some error
+          </span>
+        </StyledComponent>
+      </Text__StyledText>
     </Text>
   </div>
 </ColoredTextProvider>
@@ -3247,6 +3531,22 @@ Array [
 `;
 
 exports[`Radio must have a label 1`] = `
+.c4 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c4 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c2 {
   height: 20px;
   width: 20px;
@@ -3289,24 +3589,24 @@ exports[`Radio must have a label 1`] = `
   cursor: pointer;
 }
 
-.c4:focus ~ .c0 > div > .c1 {
+.c5:focus ~ .c0 > div > .c1 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c0 > div > .c1 {
+.c5:checked ~ .c0 > div > .c1 {
   border-color: #54595f;
 }
 
-.c4:checked ~ .c0 > div > .c1 > span {
+.c5:checked ~ .c0 > div > .c1 > span {
   display: block;
 }
 
-.c4:disabled ~ .c0 > div > .c1 {
+.c5:disabled ~ .c0 > div > .c1 {
   border-color: #d8d8d8;
 }
 
-.c4:disabled ~ .c0 > div > div {
+.c5:disabled ~ .c0 > div > div {
   color: #d8d8d8;
 }
 
@@ -3439,11 +3739,62 @@ exports[`Radio must have a label 1`] = `
                 invert={false}
                 size="base"
               >
-                <span
-                  className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+                <Text__StyledText
+                  block={false}
+                  bold={false}
+                  inheritColor={true}
+                  invert={false}
+                  size="base"
                 >
-                  Some label
-                </span>
+                  <StyledComponent
+                    block={false}
+                    bold={false}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "Text__StyledText-sc-1m0rr67-0",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            "sup {",
+                            "top: -0.5em;",
+                            "font-size: 0.875rem;",
+                            "position: relative;",
+                            "vertical-align: baseline;",
+                            "padding-left: 0.1em;",
+                            "}",
+                          ],
+                        },
+                        "displayName": "Text__StyledText",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    inheritColor={true}
+                    invert={false}
+                    size="base"
+                  >
+                    <span
+                      className="c4"
+                      size="base"
+                    >
+                      Some label
+                    </span>
+                  </StyledComponent>
+                </Text__StyledText>
               </Text>
             </div>
           </ColoredTextProvider>
@@ -3455,6 +3806,22 @@ exports[`Radio must have a label 1`] = `
 `;
 
 exports[`Radio renders 1`] = `
+.c6 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c6 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c4 {
   height: 20px;
   width: 20px;
@@ -3565,7 +3932,7 @@ exports[`Radio renders 1`] = `
       >
         <div>
           <span
-            class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__inheritColor___SREX0"
+            class="c6"
           >
             A label
           </span>
