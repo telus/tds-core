@@ -26,6 +26,27 @@ exports[`Select can have an error message 1`] = `
 }
 
 .c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c2 {
   border-radius: 4px;
   background-color: #fff6f8;
 }
@@ -246,12 +267,63 @@ exports[`Select can have an error message 1`] = `
                       invert={false}
                       size="medium"
                     >
-                      <span
-                        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+                      <Text__StyledText
+                        block={false}
+                        bold={true}
                         data-testid="selectLabel"
+                        invert={false}
+                        size="medium"
                       >
-                        The select
-                      </span>
+                        <StyledComponent
+                          block={false}
+                          bold={true}
+                          data-testid="selectLabel"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                "isStatic": false,
+                                "lastClassName": "c1",
+                                "rules": Array [
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  "sup {",
+                                  "top: -0.5em;",
+                                  "font-size: 0.875rem;",
+                                  "position: relative;",
+                                  "vertical-align: baseline;",
+                                  "padding-left: 0.1em;",
+                                  "}",
+                                ],
+                              },
+                              "displayName": "Text__StyledText",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          invert={false}
+                          size="medium"
+                        >
+                          <span
+                            className="c1"
+                            data-testid="selectLabel"
+                            size="medium"
+                          >
+                            The select
+                          </span>
+                        </StyledComponent>
+                      </Text__StyledText>
                     </Text>
                   </span>
                 </Box>
@@ -279,7 +351,7 @@ exports[`Select can have an error message 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "c1",
+                  "lastClassName": "c2",
                   "rules": Array [
                     [Function],
                   ],
@@ -300,14 +372,14 @@ exports[`Select can have an error message 1`] = `
             role="alert"
           >
             <Component
-              className="c1"
+              className="c2"
               feedback="error"
               id="some-id_error-message"
               inset={3}
               role="alert"
             >
               <Box
-                className="c1"
+                className="c2"
                 id="some-id_error-message"
                 inline={false}
                 inset={3}
@@ -315,7 +387,7 @@ exports[`Select can have an error message 1`] = `
                 tag="div"
               >
                 <div
-                  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c1"
+                  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c2"
                   id="some-id_error-message"
                   role="alert"
                 >
@@ -759,6 +831,47 @@ exports[`Select disabling removes the positioning of the select so that the disa
 exports[`Select feedback states ensures that the contents do not overlap the icons 1`] = `[Function]`;
 
 exports[`Select label can have a short hint 1`] = `
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c2 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c2 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -818,12 +931,63 @@ exports[`Select label can have a short hint 1`] = `
             invert={false}
             size="medium"
           >
-            <span
-              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+            <Text__StyledText
+              block={false}
+              bold={true}
               data-testid="selectLabel"
+              invert={false}
+              size="medium"
             >
-              The select
-            </span>
+              <StyledComponent
+                block={false}
+                bold={true}
+                data-testid="selectLabel"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Text__StyledText-sc-1m0rr67-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        "sup {",
+                        "top: -0.5em;",
+                        "font-size: 0.875rem;",
+                        "position: relative;",
+                        "vertical-align: baseline;",
+                        "padding-left: 0.1em;",
+                        "}",
+                      ],
+                    },
+                    "displayName": "Text__StyledText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                invert={false}
+                size="medium"
+              >
+                <span
+                  className="c1"
+                  data-testid="selectLabel"
+                  size="medium"
+                >
+                  The select
+                </span>
+              </StyledComponent>
+            </Text__StyledText>
           </Text>
           <Text
             block={false}
@@ -832,12 +996,63 @@ exports[`Select label can have a short hint 1`] = `
             invert={false}
             size="small"
           >
-            <span
-              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+            <Text__StyledText
+              block={false}
+              bold={false}
               id="the-select_hint"
+              invert={false}
+              size="small"
             >
-              The short hint
-            </span>
+              <StyledComponent
+                block={false}
+                bold={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Text__StyledText-sc-1m0rr67-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        "sup {",
+                        "top: -0.5em;",
+                        "font-size: 0.875rem;",
+                        "position: relative;",
+                        "vertical-align: baseline;",
+                        "padding-left: 0.1em;",
+                        "}",
+                      ],
+                    },
+                    "displayName": "Text__StyledText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                id="the-select_hint"
+                invert={false}
+                size="small"
+              >
+                <span
+                  className="c2"
+                  id="the-select_hint"
+                  size="small"
+                >
+                  The short hint
+                </span>
+              </StyledComponent>
+            </Text__StyledText>
           </Text>
         </span>
       </Box>
@@ -847,6 +1062,27 @@ exports[`Select label can have a short hint 1`] = `
 `;
 
 exports[`Select label must have a label 1`] = `
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -906,12 +1142,63 @@ exports[`Select label must have a label 1`] = `
             invert={false}
             size="medium"
           >
-            <span
-              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+            <Text__StyledText
+              block={false}
+              bold={true}
               data-testid="selectLabel"
+              invert={false}
+              size="medium"
             >
-              The label
-            </span>
+              <StyledComponent
+                block={false}
+                bold={true}
+                data-testid="selectLabel"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Text__StyledText-sc-1m0rr67-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        "sup {",
+                        "top: -0.5em;",
+                        "font-size: 0.875rem;",
+                        "position: relative;",
+                        "vertical-align: baseline;",
+                        "padding-left: 0.1em;",
+                        "}",
+                      ],
+                    },
+                    "displayName": "Text__StyledText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                invert={false}
+                size="medium"
+              >
+                <span
+                  className="c1"
+                  data-testid="selectLabel"
+                  size="medium"
+                >
+                  The label
+                </span>
+              </StyledComponent>
+            </Text__StyledText>
           </Text>
         </span>
       </Box>
@@ -925,196 +1212,33 @@ exports[`Select needs a set of options 1`] = `[Function]`;
 exports[`Select positions the down caret so that the text does not overlap it 1`] = `[Function]`;
 
 exports[`Select renders 1`] = `
-.c2 {
-  background-color: #fff;
-  position: relative;
-}
-
-.c3 {
-  height: 3.25rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  margin: 0;
-  outline: 0;
-  text-overflow: ellipsis;
-  border-color: #54595f;
-  background-color: #fff;
-  padding: 0.5rem 3rem 0.5rem 1rem;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 4px;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #2a2c2e;
-  -moz-appearance: textfield;
-  min-height: 3.25rem;
-  max-height: 3.25rem;
-  padding: 0.5rem 3rem 0.5rem 1rem;
-}
-
-.c3::-ms-expand {
-  display: none;
-}
-
-.c3::-webkit-input-placeholder {
-  font: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  color: #54595f;
-}
-
-.c3::-moz-placeholder {
-  font: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  color: #54595f;
-}
-
-.c3:-ms-input-placeholder {
-  font: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  color: #54595f;
-}
-
-.c3::placeholder {
-  font: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  color: #54595f;
-}
-
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
-.c3:focus {
-  border-color: transparent;
-  box-shadow: 0 0 4px 1px #54595f;
-  background-color: #fff;
-}
-
-.c4 {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 1rem;
-  pointer-events: none;
-}
-
-.c5 {
-  line-height: 1;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
   position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
-<div
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
->
-  <div
-    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
-  >
-    <label
-      for="the-select"
-    >
-      <span
-        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
-      >
-        <span
-          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
-          data-testid="selectLabel"
-        >
-          The select
-        </span>
-      </span>
-    </label>
-  </div>
-  <div
-    class="c1"
-  >
-    <div
-      class="c2"
-    >
-      <select
-        aria-invalid="false"
-        class="c3"
-        id="the-select"
-      >
-        <option
-          value="value-1"
-        >
-          text one
-        </option>
-        <option
-          value="value-2"
-        >
-          text two
-        </option>
-      </select>
-      <div
-        class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c4"
-      >
-        <div
-          class="c5"
-        >
-          <i
-            aria-hidden="true"
-            class="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Select renders with a feedback state and icon 1`] = `
-.c5 {
-  line-height: 1;
-}
-
-.c2 {
+.c3 {
   background-color: #fff;
   position: relative;
 }
 
-.c3 {
+.c4 {
   height: 3.25rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1145,11 +1269,11 @@ exports[`Select renders with a feedback state and icon 1`] = `
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
-.c3::-ms-expand {
+.c4::-ms-expand {
   display: none;
 }
 
-.c3::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1159,7 +1283,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c3::-moz-placeholder {
+.c4::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1169,7 +1293,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c3:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1179,7 +1303,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c3::placeholder {
+.c4::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1189,25 +1313,21 @@ exports[`Select renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
+.c4::-webkit-inner-spin-button,
+.c4::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c3:focus {
+.c4:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c3:not(:focus) {
-  border-color: #c12335;
-}
-
-.c4 {
+.c5 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1228,7 +1348,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   align-items: center;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 
@@ -1245,7 +1365,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
         class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
       >
         <span
-          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          class="c1"
           data-testid="selectLabel"
         >
           The select
@@ -1254,14 +1374,14 @@ exports[`Select renders with a feedback state and icon 1`] = `
     </label>
   </div>
   <div
-    class="c1"
+    class="c2"
   >
     <div
-      class="c2"
+      class="c3"
     >
       <select
-        aria-invalid="true"
-        class="c3"
+        aria-invalid="false"
+        class="c4"
         id="the-select"
       >
         <option
@@ -1276,13 +1396,222 @@ exports[`Select renders with a feedback state and icon 1`] = `
         </option>
       </select>
       <div
-        class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c4"
+        class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c5"
+      >
+        <div
+          class="c6"
+        >
+          <i
+            aria-hidden="true"
+            class="TDS_Icon-modules__iconCaretDown___3by8b TDS_Icon-modules__icon___13xYd TDS_Icon-modules__primary___2UY-N TDS_Icon-modules__size16___1pm12"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Select renders with a feedback state and icon 1`] = `
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c6 {
+  line-height: 1;
+}
+
+.c3 {
+  background-color: #fff;
+  position: relative;
+}
+
+.c4 {
+  height: 3.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  background-color: #fff;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  -moz-appearance: textfield;
+  min-height: 3.25rem;
+  max-height: 3.25rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+
+.c4::-ms-expand {
+  display: none;
+}
+
+.c4::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c4::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c4:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c4::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c4::-webkit-inner-spin-button,
+.c4::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.c4:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+.c4:not(:focus) {
+  border-color: #c12335;
+}
+
+.c5 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 1rem;
+  pointer-events: none;
+}
+
+.c7 {
+  line-height: 1;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  position: relative;
+}
+
+<div
+  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+>
+  <div
+    class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz"
+  >
+    <label
+      for="the-select"
+    >
+      <span
+        class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
+      >
+        <span
+          class="c1"
+          data-testid="selectLabel"
+        >
+          The select
+        </span>
+      </span>
+    </label>
+  </div>
+  <div
+    class="c2"
+  >
+    <div
+      class="c3"
+    >
+      <select
+        aria-invalid="true"
+        class="c4"
+        id="the-select"
+      >
+        <option
+          value="value-1"
+        >
+          text one
+        </option>
+        <option
+          value="value-2"
+        >
+          text two
+        </option>
+      </select>
+      <div
+        class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz c5"
       >
         <div
           style="transition:opacity 100ms ease-in-out;opacity:1"
         >
           <div
-            class="c5"
+            class="c6"
           >
             <i
               class="TDS_Icon-modules__iconExclamationPointCircle___1HgRN TDS_Icon-modules__icon___13xYd TDS_Icon-modules__error___yuB9x TDS_Icon-modules__size16___1pm12"
@@ -1290,7 +1619,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
           </div>
         </div>
         <div
-          class="c6"
+          class="c7"
         >
           <i
             aria-hidden="true"
