@@ -1,6 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<StepTracker /> renders 1`] = `
+.c0 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c0 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: inherit;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 <div
   class="greyBg"
   data-testid="stepTrackerContainer"
@@ -36,7 +67,7 @@ exports[`<StepTracker /> renders 1`] = `
               class="label"
             >
               <span
-                class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
+                class="c0"
               >
                 1. Login
               </span>
@@ -58,7 +89,7 @@ exports[`<StepTracker /> renders 1`] = `
               class="label"
             >
               <span
-                class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+                class="c1"
               >
                 2. Purchase
               </span>
@@ -80,7 +111,7 @@ exports[`<StepTracker /> renders 1`] = `
               class="label"
             >
               <span
-                class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
+                class="c0"
               >
                 3. Checkout
               </span>
@@ -99,7 +130,7 @@ exports[`<StepTracker /> renders 1`] = `
           class="mobileLabel"
         >
           <span
-            class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__base___2nkPE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__baseFont___2Cfk4 TDS_Typography-modules__color___2CNH8"
+            class="c0"
             data-testid="mobileStepLabel"
           >
             <span>
