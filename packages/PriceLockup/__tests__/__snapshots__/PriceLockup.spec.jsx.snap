@@ -96,7 +96,28 @@ exports[`PriceLockup renders with default props 1`] = `
 `;
 
 exports[`PriceLockup size prop is large renders 1`] = `
-.c4 {
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1.25rem;
+  -webkit-letter-spacing: -1px;
+  -moz-letter-spacing: -1px;
+  -ms-letter-spacing: -1px;
+  letter-spacing: -1px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c5 {
   word-wrap: break-word;
   font-size: 1.25rem;
   -webkit-letter-spacing: -1px;
@@ -106,7 +127,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   line-height: 1.6;
 }
 
-.c3 {
+.c4 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -115,7 +136,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   font-weight: 300;
 }
 
-.c2 {
+.c3 {
   color: #2a2c2e;
   font-weight: 400;
   font-size: 1.75rem;
@@ -130,7 +151,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   text-align: left;
 }
 
-.c1 {
+.c2 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -138,7 +159,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     font-size: 4.5rem;
     -webkit-letter-spacing: 0.2px;
     -moz-letter-spacing: 0.2px;
@@ -148,7 +169,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c3 {
     font-weight: 300;
     font-size: 2.75rem;
     -webkit-letter-spacing: 0;
@@ -165,31 +186,31 @@ exports[`PriceLockup size prop is large renders 1`] = `
     class=""
   >
     <span
-      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__large___24W-w TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__largeFont___3k7bm TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+      class="c1"
     >
       top text
     </span>
     <div
-      class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c1"
+      class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c2"
     >
       <div
         class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
       >
         <span
-          class="c2"
+          class="c3"
           data-testid="dollarSign"
         >
           $
         </span>
         <span
-          class="c3"
+          class="c4"
           data-testid="priceValue"
         >
           25
         </span>
       </div>
       <span
-        class="c4"
+        class="c5"
         data-testid="rateText"
       >
         /month
@@ -200,7 +221,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
 `;
 
 exports[`PriceLockup size prop is medium renders 1`] = `
-.c5 {
+.c6 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -212,7 +233,47 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c4 {
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c7 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.c7 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c5 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -222,7 +283,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   line-height: 1.5;
 }
 
-.c3 {
+.c4 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -235,7 +296,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   font-weight: 400;
 }
 
-.c2 {
+.c3 {
   word-wrap: break-word;
   font-size: 1.25rem;
   -webkit-letter-spacing: -1px;
@@ -249,7 +310,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   text-align: left;
 }
 
-.c1 {
+.c2 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -257,7 +318,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     font-weight: 300;
     font-size: 2.75rem;
     -webkit-letter-spacing: 0;
@@ -274,31 +335,31 @@ exports[`PriceLockup size prop is medium renders 1`] = `
     class="TDS_Box-modules__betweenBottomMargin-1___43ZDj TDS_Box-modules__stack___33m4D"
   >
     <span
-      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      class="c1"
     >
       top text
     </span>
     <div
-      class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c1"
+      class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c2"
     >
       <div
         class="TDS_Box-modules__betweenRightMargin-1___XT_b2 TDS_Box-modules__inline___jTHcz"
       >
         <span
-          class="c2"
+          class="c3"
           data-testid="dollarSign"
         >
           $
         </span>
         <span
-          class="c3"
+          class="c4"
           data-testid="priceValue"
         >
           25
         </span>
       </div>
       <span
-        class="c4"
+        class="c5"
         data-testid="rateText"
       >
         /month
@@ -306,10 +367,10 @@ exports[`PriceLockup size prop is medium renders 1`] = `
     </div>
   </div>
   <hr
-    class="c5"
+    class="c6"
   />
   <span
-    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__mediumFont___XMrRj TDS_Typography-modules__color___2CNH8"
+    class="c7"
   >
     bottom text
   </span>
@@ -317,7 +378,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
 `;
 
 exports[`PriceLockup size prop is small renders 1`] = `
-.c5 {
+.c6 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -329,7 +390,27 @@ exports[`PriceLockup size prop is small renders 1`] = `
   background-color: #d8d8d8;
 }
 
-.c4 {
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c5 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -339,7 +420,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
   line-height: 1;
 }
 
-.c3 {
+.c4 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -352,11 +433,11 @@ exports[`PriceLockup size prop is small renders 1`] = `
   letter-spacing: -0.7px;
 }
 
-.c2 {
+.c3 {
   line-height: 1.5;
 }
 
-.c2 medium {
+.c3 medium {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -370,7 +451,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
   text-align: left;
 }
 
-.c1 {
+.c2 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -378,7 +459,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     font-size: 1.75rem;
     -webkit-letter-spacing: -0.8px;
     -moz-letter-spacing: -0.8px;
@@ -394,31 +475,31 @@ exports[`PriceLockup size prop is small renders 1`] = `
     class="TDS_Box-modules__betweenBottomMargin-1___43ZDj TDS_Box-modules__stack___33m4D"
   >
     <span
-      class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+      class="c1"
     >
       top text
     </span>
     <div
-      class="TDS_Box-modules__betweenRightMargin-1___XT_b2 TDS_Box-modules__inline___jTHcz c1"
+      class="TDS_Box-modules__betweenRightMargin-1___XT_b2 TDS_Box-modules__inline___jTHcz c2"
     >
       <div
         class="TDS_Box-modules__betweenRightMargin-1___XT_b2 TDS_Box-modules__inline___jTHcz"
       >
         <span
-          class="c2"
+          class="c3"
           data-testid="dollarSign"
         >
           $
         </span>
         <span
-          class="c3"
+          class="c4"
           data-testid="priceValue"
         >
           25
         </span>
       </div>
       <span
-        class="c4"
+        class="c5"
         data-testid="rateText"
       >
         /month
@@ -426,10 +507,10 @@ exports[`PriceLockup size prop is small renders 1`] = `
     </div>
   </div>
   <hr
-    class="c5"
+    class="c6"
   />
   <span
-    class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+    class="c1"
   >
     bottom text
   </span>
