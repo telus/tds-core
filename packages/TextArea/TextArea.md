@@ -75,3 +75,20 @@ that the field is optional. It is a more usable and accessible option than the H
 ```jsx
 <TextArea label="Special requests" hint="Please include order number" />
 ```
+
+### Using Tooltip
+
+When a more in-depth explanation is needed to fill out a `TextArea` properly, a [`Tooltip`](#!/Tooltip) may be provided to the `tooltip` prop.
+
+```jsx
+<TextArea
+  label="Describe your inquiry"
+  hint="Please include customer ID"
+  tooltip={
+    <Tooltip copy="en">
+      Inquiries will be addressed by our staff ASAP. We will reach out if the query cannot be
+      fulfilled. Please check your confirmation email for your customer ID.
+    </Tooltip>
+  }
+/>
+```
