@@ -67,6 +67,9 @@ class Tooltip extends React.Component {
   }
 
   getTriggerA11yText = (connectedFieldLabel, copy) => {
+    if (copy.a11yText) {
+      return getCopy(copyDictionary, copy).a11yText.replace('%{label}', connectedFieldLabel)
+    }
     if (!connectedFieldLabel) {
       return getCopy(copyDictionary, copy).a11yTextStandalone
     }
@@ -174,13 +177,12 @@ Tooltip.propTypes = {
   /**
    * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively.
    *
-   * To provide your own, pass a JSON object with the keys, `a11yTextStandalone` and `a11yTextLinked`.
+   * To provide your own, pass a JSON object with the key, `a11yText`
    */
   copy: PropTypes.oneOfType([
     PropTypes.oneOf(['en', 'fr']),
     PropTypes.shape({
-      a11yTextStandalone: PropTypes.string,
-      a11yTextLinked: PropTypes.string,
+      a11yText: PropTypes.string,
     }),
   ]).isRequired,
   /**
