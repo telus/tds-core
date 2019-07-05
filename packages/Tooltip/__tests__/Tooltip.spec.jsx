@@ -135,6 +135,12 @@ describe('Tooltip', () => {
       expect(findTrigger()).toHaveProp('aria-expanded', 'true')
       expect(findBubble()).toHaveProp('aria-hidden', 'false')
     })
+
+    it('accepts custom copy', () => {
+      const { tooltip } = doMount({ copy: { a11yText: 'This is custom copy.' } })
+
+      expect(tooltip).toMatchSnapshot()
+    })
   })
 
   it('passes additional attributes to the wrapper element', () => {
