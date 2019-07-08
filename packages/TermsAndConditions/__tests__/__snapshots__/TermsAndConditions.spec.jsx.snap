@@ -56,6 +56,7 @@ exports[`TermsAndConditions renders 1`] = `
 }
 
 .c5 {
+  line-height: 24px;
   position: absolute;
   top: 0;
   left: 0;
@@ -213,23 +214,17 @@ exports[`TermsAndConditions renders 1`] = `
                 <li
                   class="c9"
                 >
-                  <span>
-                    One
-                  </span>
+                  One
                 </li>
                 <li
                   class="c9"
                 >
-                  <span>
-                    Two
-                  </span>
+                  Two
                 </li>
                 <li
                   class="c9"
                 >
-                  <span>
-                    Three
-                  </span>
+                  Three
                 </li>
               </ol>
             </div>
@@ -306,6 +301,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
 }
 
 .c5 {
+  line-height: 24px;
   position: absolute;
   top: 0;
   left: 0;
@@ -996,6 +992,11 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   type="indexed"
                                                 >
                                                   <Item
+                                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                        "__html": "One",
+                                                      }
+                                                    }
                                                     key=".$One"
                                                     styledComponent={
                                                       Object {
@@ -1023,8 +1024,19 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                       }
                                                     }
                                                   >
-                                                    <List__StyledListItem>
+                                                    <List__StyledListItem
+                                                      dangerouslySetInnerHTML={
+                                                        Object {
+                                                          "__html": "One",
+                                                        }
+                                                      }
+                                                    >
                                                       <StyledComponent
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "One",
+                                                          }
+                                                        }
                                                         forwardedComponent={
                                                           Object {
                                                             "$$typeof": Symbol(react.forward_ref),
@@ -1054,15 +1066,21 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                       >
                                                         <li
                                                           className="c9"
-                                                        >
-                                                          <span>
-                                                            One
-                                                          </span>
-                                                        </li>
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "One",
+                                                            }
+                                                          }
+                                                        />
                                                       </StyledComponent>
                                                     </List__StyledListItem>
                                                   </Item>
                                                   <Item
+                                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                        "__html": "Two",
+                                                      }
+                                                    }
                                                     key=".$Two"
                                                     styledComponent={
                                                       Object {
@@ -1090,8 +1108,19 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                       }
                                                     }
                                                   >
-                                                    <List__StyledListItem>
+                                                    <List__StyledListItem
+                                                      dangerouslySetInnerHTML={
+                                                        Object {
+                                                          "__html": "Two",
+                                                        }
+                                                      }
+                                                    >
                                                       <StyledComponent
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "Two",
+                                                          }
+                                                        }
                                                         forwardedComponent={
                                                           Object {
                                                             "$$typeof": Symbol(react.forward_ref),
@@ -1121,15 +1150,21 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                       >
                                                         <li
                                                           className="c9"
-                                                        >
-                                                          <span>
-                                                            Two
-                                                          </span>
-                                                        </li>
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "Two",
+                                                            }
+                                                          }
+                                                        />
                                                       </StyledComponent>
                                                     </List__StyledListItem>
                                                   </Item>
                                                   <Item
+                                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                        "__html": "Three",
+                                                      }
+                                                    }
                                                     key=".$Three"
                                                     styledComponent={
                                                       Object {
@@ -1157,8 +1192,19 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                       }
                                                     }
                                                   >
-                                                    <List__StyledListItem>
+                                                    <List__StyledListItem
+                                                      dangerouslySetInnerHTML={
+                                                        Object {
+                                                          "__html": "Three",
+                                                        }
+                                                      }
+                                                    >
                                                       <StyledComponent
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "Three",
+                                                          }
+                                                        }
                                                         forwardedComponent={
                                                           Object {
                                                             "$$typeof": Symbol(react.forward_ref),
@@ -1188,11 +1234,12 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                       >
                                                         <li
                                                           className="c9"
-                                                        >
-                                                          <span>
-                                                            Three
-                                                          </span>
-                                                        </li>
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "Three",
+                                                            }
+                                                          }
+                                                        />
                                                       </StyledComponent>
                                                     </List__StyledListItem>
                                                   </Item>
@@ -1329,6 +1376,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
 }
 
 .c5 {
+  line-height: 24px;
   position: absolute;
   top: 0;
   left: 0;
@@ -2047,6 +2095,11 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                   type="indexed"
                                                 >
                                                   <Item
+                                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                        "__html": "One",
+                                                      }
+                                                    }
                                                     key=".$One"
                                                     styledComponent={
                                                       Object {
@@ -2074,8 +2127,19 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       }
                                                     }
                                                   >
-                                                    <List__StyledListItem>
+                                                    <List__StyledListItem
+                                                      dangerouslySetInnerHTML={
+                                                        Object {
+                                                          "__html": "One",
+                                                        }
+                                                      }
+                                                    >
                                                       <StyledComponent
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "One",
+                                                          }
+                                                        }
                                                         forwardedComponent={
                                                           Object {
                                                             "$$typeof": Symbol(react.forward_ref),
@@ -2105,15 +2169,21 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       >
                                                         <li
                                                           className="c9"
-                                                        >
-                                                          <span>
-                                                            One
-                                                          </span>
-                                                        </li>
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "One",
+                                                            }
+                                                          }
+                                                        />
                                                       </StyledComponent>
                                                     </List__StyledListItem>
                                                   </Item>
                                                   <Item
+                                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                        "__html": "Two",
+                                                      }
+                                                    }
                                                     key=".$Two"
                                                     styledComponent={
                                                       Object {
@@ -2141,8 +2211,19 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       }
                                                     }
                                                   >
-                                                    <List__StyledListItem>
+                                                    <List__StyledListItem
+                                                      dangerouslySetInnerHTML={
+                                                        Object {
+                                                          "__html": "Two",
+                                                        }
+                                                      }
+                                                    >
                                                       <StyledComponent
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "Two",
+                                                          }
+                                                        }
                                                         forwardedComponent={
                                                           Object {
                                                             "$$typeof": Symbol(react.forward_ref),
@@ -2172,15 +2253,21 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       >
                                                         <li
                                                           className="c9"
-                                                        >
-                                                          <span>
-                                                            Two
-                                                          </span>
-                                                        </li>
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "Two",
+                                                            }
+                                                          }
+                                                        />
                                                       </StyledComponent>
                                                     </List__StyledListItem>
                                                   </Item>
                                                   <Item
+                                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                        "__html": "Three",
+                                                      }
+                                                    }
                                                     key=".$Three"
                                                     styledComponent={
                                                       Object {
@@ -2208,8 +2295,19 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       }
                                                     }
                                                   >
-                                                    <List__StyledListItem>
+                                                    <List__StyledListItem
+                                                      dangerouslySetInnerHTML={
+                                                        Object {
+                                                          "__html": "Three",
+                                                        }
+                                                      }
+                                                    >
                                                       <StyledComponent
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "Three",
+                                                          }
+                                                        }
                                                         forwardedComponent={
                                                           Object {
                                                             "$$typeof": Symbol(react.forward_ref),
@@ -2239,11 +2337,12 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       >
                                                         <li
                                                           className="c9"
-                                                        >
-                                                          <span>
-                                                            Three
-                                                          </span>
-                                                        </li>
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "Three",
+                                                            }
+                                                          }
+                                                        />
                                                       </StyledComponent>
                                                     </List__StyledListItem>
                                                   </Item>
@@ -2502,6 +2601,11 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                       type="nonIndexed"
                                                     >
                                                       <Item
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "Four",
+                                                          }
+                                                        }
                                                         key=".$Four"
                                                         styledComponent={
                                                           Object {
@@ -2529,8 +2633,19 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                           }
                                                         }
                                                       >
-                                                        <List__StyledListItem>
+                                                        <List__StyledListItem
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "Four",
+                                                            }
+                                                          }
+                                                        >
                                                           <StyledComponent
+                                                            dangerouslySetInnerHTML={
+                                                              Object {
+                                                                "__html": "Four",
+                                                              }
+                                                            }
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
@@ -2560,15 +2675,21 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                           >
                                                             <li
                                                               className="c9"
-                                                            >
-                                                              <span>
-                                                                Four
-                                                              </span>
-                                                            </li>
+                                                              dangerouslySetInnerHTML={
+                                                                Object {
+                                                                  "__html": "Four",
+                                                                }
+                                                              }
+                                                            />
                                                           </StyledComponent>
                                                         </List__StyledListItem>
                                                       </Item>
                                                       <Item
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "Five",
+                                                          }
+                                                        }
                                                         key=".$Five"
                                                         styledComponent={
                                                           Object {
@@ -2596,8 +2717,19 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                           }
                                                         }
                                                       >
-                                                        <List__StyledListItem>
+                                                        <List__StyledListItem
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "Five",
+                                                            }
+                                                          }
+                                                        >
                                                           <StyledComponent
+                                                            dangerouslySetInnerHTML={
+                                                              Object {
+                                                                "__html": "Five",
+                                                              }
+                                                            }
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
@@ -2627,11 +2759,12 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                           >
                                                             <li
                                                               className="c9"
-                                                            >
-                                                              <span>
-                                                                Five
-                                                              </span>
-                                                            </li>
+                                                              dangerouslySetInnerHTML={
+                                                                Object {
+                                                                  "__html": "Five",
+                                                                }
+                                                              }
+                                                            />
                                                           </StyledComponent>
                                                         </List__StyledListItem>
                                                       </Item>
@@ -2770,6 +2903,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
 }
 
 .c5 {
+  line-height: 24px;
   position: absolute;
   top: 0;
   left: 0;
@@ -3467,6 +3601,11 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                       type="nonIndexed"
                                                     >
                                                       <Item
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "Four",
+                                                          }
+                                                        }
                                                         key=".$Four"
                                                         styledComponent={
                                                           Object {
@@ -3494,8 +3633,19 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                           }
                                                         }
                                                       >
-                                                        <List__StyledListItem>
+                                                        <List__StyledListItem
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "Four",
+                                                            }
+                                                          }
+                                                        >
                                                           <StyledComponent
+                                                            dangerouslySetInnerHTML={
+                                                              Object {
+                                                                "__html": "Four",
+                                                              }
+                                                            }
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
@@ -3525,15 +3675,21 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                           >
                                                             <li
                                                               className="c9"
-                                                            >
-                                                              <span>
-                                                                Four
-                                                              </span>
-                                                            </li>
+                                                              dangerouslySetInnerHTML={
+                                                                Object {
+                                                                  "__html": "Four",
+                                                                }
+                                                              }
+                                                            />
                                                           </StyledComponent>
                                                         </List__StyledListItem>
                                                       </Item>
                                                       <Item
+                                                        dangerouslySetInnerHTML={
+                                                          Object {
+                                                            "__html": "Five",
+                                                          }
+                                                        }
                                                         key=".$Five"
                                                         styledComponent={
                                                           Object {
@@ -3561,8 +3717,19 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                           }
                                                         }
                                                       >
-                                                        <List__StyledListItem>
+                                                        <List__StyledListItem
+                                                          dangerouslySetInnerHTML={
+                                                            Object {
+                                                              "__html": "Five",
+                                                            }
+                                                          }
+                                                        >
                                                           <StyledComponent
+                                                            dangerouslySetInnerHTML={
+                                                              Object {
+                                                                "__html": "Five",
+                                                              }
+                                                            }
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
@@ -3592,11 +3759,12 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                           >
                                                             <li
                                                               className="c9"
-                                                            >
-                                                              <span>
-                                                                Five
-                                                              </span>
-                                                            </li>
+                                                              dangerouslySetInnerHTML={
+                                                                Object {
+                                                                  "__html": "Five",
+                                                                }
+                                                              }
+                                                            />
                                                           </StyledComponent>
                                                         </List__StyledListItem>
                                                       </Item>
