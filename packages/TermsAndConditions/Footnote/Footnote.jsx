@@ -115,6 +115,7 @@ const Footnote = props => {
   const headerRef = useRef(null)
   const bodyRef = useRef(null)
   const listRef = useRef(null)
+  const headingRef = useRef(null)
   const [data, setData] = useState({ content: null, number: null })
   const [headerHeight, setHeaderHeight] = useState('auto')
   const [bodyHeight, setBodyHeight] = useState('auto')
@@ -240,7 +241,7 @@ const Footnote = props => {
   // focus on the close button on open/content change
   useEffect(() => {
     if (content !== null && isVisible && closeRef && closeRef.current !== null) {
-      closeRef.current.focus()
+      headingRef.current.focus()
     }
   }, [isVisible, content])
 
@@ -265,7 +266,7 @@ const Footnote = props => {
                 <FlexGrid.Row>
                   <FlexGrid.Col xs={12}>
                     <StyledHeader between="space-between" inline>
-                      <Heading level="h4" tag="h2">
+                      <Heading level="h4" tag="h2" tabIndex={0} ref={headingRef}>
                         {getCopy(copyDictionary, copy).heading}
                       </Heading>
                       <StyledClickable
