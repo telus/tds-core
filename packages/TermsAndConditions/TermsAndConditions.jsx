@@ -115,7 +115,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
                         <FlexGrid.Col xs={12} mdOffset={1} md={10}>
                           <List size="small" below={4} type="indexed">
                             {indexedContent.map(c => (
-                              <List.Item key={c}>{c}</List.Item>
+                              <List.Item key={c} dangerouslySetInnerHTML={{ __html: c }} />
                             ))}
                           </List>
                         </FlexGrid.Col>
@@ -136,7 +136,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
                             )}
                             <List size="small" below={4} type="nonIndexed">
                               {nonIndexedContent.map(c => (
-                                <List.Item key={c}>{c}</List.Item>
+                                <List.Item key={c} dangerouslySetInnerHTML={{ __html: c }} />
                               ))}
                             </List>
                           </Box>

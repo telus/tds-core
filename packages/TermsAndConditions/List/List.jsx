@@ -28,14 +28,9 @@ export const StyledList = styled(Box)(
   })
 )
 
-const Item = ({ children, styledComponent: Component, ...rest }) => (
-  <Component {...rest}>
-    {typeof children === 'string' ? <span>{children}</span> : children}
-  </Component>
-)
+const Item = ({ styledComponent: Component, ...rest }) => <Component {...rest} />
 
 Item.propTypes = {
-  children: PropTypes.node.isRequired,
   styledComponent: PropTypes.object,
 }
 
