@@ -186,6 +186,7 @@ exports[`Footnote renders closed 1`] = `
                       <h2
                         class="c5"
                         data-testid="heading"
+                        tabindex="0"
                       >
                         Terms and conditions
                       </h2>
@@ -434,6 +435,7 @@ exports[`Footnote renders opened 1`] = `
                       <h2
                         class="c5"
                         data-testid="heading"
+                        tabindex="0"
                       >
                         Terms and conditions
                       </h2>
