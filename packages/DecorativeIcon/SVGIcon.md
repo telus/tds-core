@@ -123,7 +123,7 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'Channels',
       },
       {
-        name: 'CavouriteNetwork',
+        name: 'FavouriteNetwork',
         Component: FavouriteNetwork,
         usageCriteria: 'Favourite network',
       },
@@ -835,6 +835,16 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         name: 'Check',
         Component: Check,
         usageCriteria: 'Default icon for benefit list for business',
+      },
+      {
+        name: 'Movie',
+        Component: Movie,
+        usageCriteria: 'Movie, film, video',
+      },
+      {
+        name: 'Soccer',
+        Component: Soccer,
+        usageCriteria: 'Soccer, sports',
       },
     ]}
   />
