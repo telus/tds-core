@@ -158,30 +158,4 @@ describe('<Notification />', () => {
       expect(notification.find(StandaloneIcon)).not.toExist()
     })
   })
-  describe('onUnmount', () => {
-    it('calls the provided callback when dismissible', () => {
-      const onUnmount = jest.fn()
-      const notification = doMount({
-        variant: 'error',
-        dismissible: true,
-        dismissibleA11yLabel: 'Close',
-        onUnmount,
-      })
-      notification.find(StandaloneIcon).simulate('click')
-      notification.unmount()
-      expect(onUnmount).toHaveBeenCalled()
-    })
-    it('does not call the provided callback when the dismissible prop is false', () => {
-      const onUnmount = jest.fn()
-      const notification = doMount({
-        variant: 'error',
-        dismissible: false,
-        dismissibleA11yLabel: 'Close',
-        onUnmount,
-      })
-      notification.unmount()
-      expect(notification.find(StandaloneIcon)).not.toExist()
-      expect(onUnmount).not.toHaveBeenCalled()
-    })
-  })
 })

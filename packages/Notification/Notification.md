@@ -48,7 +48,8 @@ Use the `error` variant to provide feedback of a failed transaction. **The messa
 ```jsx { "props": { "className": "docs_full-width-playground" } }
 <Notification variant="error">
   Looks like our registration system is temporarily down. You’ll need to come back another time to
-  register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>.
+  register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>
+  .
 </Notification>
 ```
 
@@ -82,16 +83,16 @@ Use the `onDismiss` prop to execute a function when a user dismisses the `Notifi
 </Notification>
 ```
 
-#### onUnmount
+#### onExit
 
-Use the `onUnmount` prop to execute a function during the `componentWillUnmount` lifecycle method when a user dismisses the `Notification`. The `onUnmount` prop must be used together with the `dismissible` and `dismissibleA11yLabel` props.
+Use the `onExit` prop to execute a function at the end of the `Notification` dismiss animation. The `onExit` prop must be used together with the `dismissible` and `dismissibleA11yLabel` props.
 
 ```jsx { "props": { "className": "docs_full-width-playground" } }
 <Notification
   variant="success"
   dismissible
   dismissibleA11yLabel="Close"
-  onUnmount={() => console.log('I was dismissed')}
+  onExit={() => console.log('I have exited')}
 >
   Your registration is complete.
 </Notification>
