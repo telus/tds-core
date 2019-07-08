@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
@@ -89,13 +89,22 @@ export const StyledHeading = styled.h1(wordBreak, ({ level, invert }) => {
  *
  * @version ./package.json
  */
-const Heading = ({ level, tag = level, invert, children, ...rest }) => {
+const Heading = forwardRef(({ level, tag = level, invert, children, ...rest }, ref) => {
   return (
-    <StyledHeading {...safeRest(rest)} as={tag} level={level} invert={invert} data-testid="heading">
+    <StyledHeading
+      {...safeRest(rest)}
+      ref={ref}
+      as={tag}
+      level={level}
+      invert={invert}
+      data-testid="heading"
+    >
       {children}
     </StyledHeading>
   )
-}
+})
+
+Heading.displayName = 'Heading'
 
 Heading.propTypes = {
   /**
