@@ -52,12 +52,6 @@ class Notification extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-    if (this.props.dismissible && this.props.onUnmount) {
-      this.props.onUnmount()
-    }
-  }
-
   adjustContentHeight = () => {
     if (this.contentWrapper.offsetHeight !== this.state.contentWrapperHeight) {
       this.setState({ contentWrapperHeight: this.contentWrapper.offsetHeight })
@@ -65,7 +59,15 @@ class Notification extends React.Component {
   }
 
   renderNotification() {
-    const { variant, dismissible, dismissibleA11yLabel, children, onDismiss, ...rest } = this.props
+    const {
+      variant,
+      dismissible,
+      dismissibleA11yLabel,
+      children,
+      onExit,
+      onDismiss,
+      ...rest
+    } = this.props
 
     return (
       <Box
@@ -120,7 +122,7 @@ class Notification extends React.Component {
   }
 
   render() {
-    const { dismissible, dismissibleA11yLabel, onUnmount, onDismiss } = this.props
+    const { dismissible, dismissibleA11yLabel, onExit, onDismiss } = this.props
     const dismissibleHasA11yLabel = dismissible && dismissibleA11yLabel
 
     if ((dismissible || dismissibleA11yLabel) && !dismissibleHasA11yLabel) {
@@ -129,10 +131,10 @@ class Notification extends React.Component {
         'The props `dismissible` and `dismissibleA11yLabel` must be used together.'
       )
     }
-    if (onUnmount && !dismissibleHasA11yLabel) {
+    if (onExit && !dismissibleHasA11yLabel) {
       warn(
         'Notification',
-        'The props `onUnmount` must be used together with `dismissible` and `dismissibleA11yLabel`.'
+        'The props `onExit` must be used together with `dismissible` and `dismissibleA11yLabel`.'
       )
     }
     if (onDismiss && !dismissibleHasA11yLabel) {
@@ -149,7 +151,12 @@ class Notification extends React.Component {
           height={this.state.contentWrapperHeight || 0}
         >
           {() => (
-            <Fade unmountOnExit timeout={500} in={!this.state.dismissed}>
+            <Fade
+              unmountOnExit
+              timeout={500}
+              in={!this.state.dismissed}
+              onExited={this.props.onExit}
+            >
               {() => (
                 <div
                   ref={c => {
@@ -191,7 +198,7 @@ Notification.propTypes = {
    *
    * @since 1.3.0
    */
-  onUnmount: PropTypes.func,
+  onExit: PropTypes.func,
   /**
    * A callback function to be run on when the Notification has been fully dismissed and unmounted
    * Requires `dismissible={true}`
@@ -209,7 +216,7 @@ Notification.defaultProps = {
   variant: 'instructional',
   dismissible: false,
   dismissibleA11yLabel: undefined,
-  onUnmount: undefined,
+  onExit: undefined,
   onDismiss: undefined,
 }
 
