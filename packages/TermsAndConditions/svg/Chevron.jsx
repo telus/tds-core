@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import StyledClickable from '../StyledClickable'
 
 const StyledChevron = styled.span(({ isOpen }) => ({
+  lineHeight: '24px',
   position: 'absolute',
   top: 0,
   left: 0,
