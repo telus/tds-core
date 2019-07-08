@@ -10,9 +10,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "bootstrap": "npm install && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose build ciboot && docker-compose build e2e",
+    "bootstrap": "npm ci && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose build ciboot && docker-compose build e2e",
     "bootstrap:ci": "npm ci && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all",
-    "bootstrap:quick": "npm install && npx lerna bootstrap --hoist && npm run build -- --all",
+    "bootstrap:quick": "npm ci && npx lerna bootstrap --hoist && npm run build -- --all",
+    "bootstrap:slow": "npm install && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose build ciboot && docker-compose build e2e",
     "build": "node scripts/build.js",
     "build-docs:gitbook": "gitbook build guide",
     "build-docs:styleguide": "styleguidist build --config config/styleguide.config.js",
