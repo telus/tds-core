@@ -80,7 +80,7 @@ class Notification extends React.Component {
                           isImportant(variant) ? styles.withIcon : styles.withoutIcon
                         )}
                       >
-                        <Paragraph bold={isImportant(variant)}>{children}</Paragraph>
+                        <Paragraph>{children}</Paragraph>
                       </div>
                     </Box>
                   </FlexGrid.Col>

@@ -35,7 +35,7 @@ Use the `branded` variant for feedback or chat related messages.
 
 #### Success
 
-Use the `success` variant to provide feedback of a successful transaction. **The message will include an icon and will appear bold to indicate its importance.**
+Use the `success` variant to provide feedback of a successful transaction. **The message will include an icon to indicate meaning and importance.**
 
 ```jsx { "props": { "className": "docs_full-width-playground" } }
 <Notification variant="success">Your password has been successfully changed.</Notification>
@@ -43,13 +43,12 @@ Use the `success` variant to provide feedback of a successful transaction. **The
 
 #### Error
 
-Use the `error` variant to provide feedback of a failed transaction. **The message will include an icon and will appear bold to indicate its importance.**
+Use the `error` variant to provide feedback of a failed transaction. **The message will include an icon to indicate meaning and importance.**
 
 ```jsx { "props": { "className": "docs_full-width-playground" } }
 <Notification variant="error">
   Looks like our registration system is temporarily down. You’ll need to come back another time to
-  register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>
-  .
+  register for My Account. In the meantime, return to <Link href="http://telus.com">TELUS.com</Link>.
 </Notification>
 ```
 
