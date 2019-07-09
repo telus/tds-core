@@ -90,6 +90,10 @@ const InnerChecked = styled.span({
   display: 'none',
 })
 
+const LabelAndDescriptionBox = styled(Box)({
+  width: '100%',
+})
+
 const renderError = (error, errorId) => (
   <InputFeedback id={errorId} feedback="error">
     <Paragraph size="small">{error || ''}</Paragraph>
@@ -131,12 +135,12 @@ const Radio = React.forwardRef(
           <FakeRadio data-testid="fake-input">
             <InnerChecked />
           </FakeRadio>
-          <Box between={2}>
+          <LabelAndDescriptionBox between={2}>
             <ColoredTextProvider>
               <Text>{label}</Text>
             </ColoredTextProvider>
             {description && <Text size="small">{description}</Text>}
-          </Box>
+          </LabelAndDescriptionBox>
         </Box>
       </StyledLabel>
     </Box>
