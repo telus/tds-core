@@ -1,13 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputFeedback can have a feedback state 1`] = `
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .c0 {
   border-radius: 4px;
   background-color: #f7f7f8;
 }
 
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 <div
-  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c0"
+  className="c0 sc-bwzfXH c0 c1"
   role={null}
 >
   Some feedback text.
@@ -15,13 +35,33 @@ exports[`InputFeedback can have a feedback state 1`] = `
 `;
 
 exports[`InputFeedback can have a feedback state 2`] = `
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .c0 {
   border-radius: 4px;
   background-color: #f4f9f2;
 }
 
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 <div
-  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c0"
+  className="c0 sc-bwzfXH c0 c1"
   role={null}
 >
   Some feedback text.
@@ -29,13 +69,33 @@ exports[`InputFeedback can have a feedback state 2`] = `
 `;
 
 exports[`InputFeedback renders 1`] = `
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .c0 {
   border-radius: 4px;
   background-color: #f7f7f8;
 }
 
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 <div
-  class="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-3___Fsv37 c0"
+  class="c0 sc-bwzfXH c0 c1"
 >
   Some inputFeedback text.
 </div>
