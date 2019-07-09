@@ -38,9 +38,9 @@ const betweenStyles = (between, inline, size) => {
 
   return boxSpacing(
     between,
-    () => ({
+    space => ({
       '> *:not(:last-child)': {
-        ...(inline ? { marginRight: spacing } : { marginBottom: spacing }),
+        ...(inline ? { marginRight: space } : { marginBottom: space }),
       },
     }),
     size
@@ -50,9 +50,9 @@ const betweenStyles = (between, inline, size) => {
 const horizontalStyles = (horizontal, size) => {
   return boxSpacing(
     horizontal,
-    () => ({
-      paddingLeft: spacing,
-      paddingRight: spacing,
+    space => ({
+      paddingLeft: space,
+      paddingRight: space,
     }),
     size
   )
@@ -61,9 +61,9 @@ const horizontalStyles = (horizontal, size) => {
 const verticalStyles = (vertical, size) => {
   return boxSpacing(
     vertical,
-    () => ({
-      paddingTop: spacing,
-      paddingBottom: spacing,
+    space => ({
+      paddingTop: space,
+      paddingBottom: space,
     }),
     size
   )
@@ -76,8 +76,8 @@ const insetStyles = (inset, size) => {
 const belowStyles = (below, size) => {
   return boxSpacing(
     below,
-    () => ({
-      marginBottom: spacing,
+    space => ({
+      marginBottom: space,
     }),
     size
   )
