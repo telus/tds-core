@@ -110,7 +110,6 @@ const usePrevious = value => {
 
 const Footnote = props => {
   const { copy, number, content, onClose, isOpen, ...rest } = props
-  const closeRef = useRef(null)
   const footnoteRef = useRef(null)
   const headerRef = useRef(null)
   const bodyRef = useRef(null)
@@ -240,7 +239,7 @@ const Footnote = props => {
 
   // focus on the close button on open/content change
   useEffect(() => {
-    if (content !== null && isVisible && closeRef && closeRef.current !== null) {
+    if (content !== null && isVisible && headingRef && headingRef.current !== null) {
       headingRef.current.focus()
     }
   }, [isVisible, content])
@@ -270,7 +269,6 @@ const Footnote = props => {
                         {getCopy(copyDictionary, copy).heading}
                       </Heading>
                       <StyledClickable
-                        innerRef={closeRef}
                         onClick={closeFootnote}
                         aria-label={getCopy(copyDictionary, copy).close}
                       >
