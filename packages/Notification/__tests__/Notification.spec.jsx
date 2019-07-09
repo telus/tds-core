@@ -3,7 +3,6 @@ import { shallow, render, mount } from 'enzyme'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
 import StandaloneIcon from '@tds/core-standalone-icon'
-import Paragraph from '@tds/core-paragraph'
 
 import Notification from '../Notification'
 
@@ -44,12 +43,6 @@ describe('<Notification />', () => {
   })
 
   describe('successful variant', () => {
-    it('bolds the content', () => {
-      const notification = doShallow({ variant: 'success' }, 'A success message')
-
-      expect(notification).toContainReact(<Paragraph bold>A success message</Paragraph>)
-    })
-
     it('adds a checkmark icon', () => {
       const notification = doShallow({ variant: 'success' })
 
@@ -58,12 +51,6 @@ describe('<Notification />', () => {
   })
 
   describe('error variant', () => {
-    it('bolds the content', () => {
-      const notification = doShallow({ variant: 'error' }, 'An error message')
-
-      expect(notification).toContainReact(<Paragraph bold>An error message</Paragraph>)
-    })
-
     it('adds an exclamation point icon', () => {
       const notification = doShallow({ variant: 'error' })
 
