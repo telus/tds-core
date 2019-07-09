@@ -2,6 +2,20 @@
 
 exports[`<OrderedList /> can have a list style 1`] = `
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c3 {
   margin-left: -1rem;
   padding-left: 1rem;
   word-wrap: break-word;
@@ -14,7 +28,7 @@ exports[`<OrderedList /> can have a list style 1`] = `
   font-weight: 400;
 }
 
-.c3 {
+.c4 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -39,23 +53,29 @@ exports[`<OrderedList /> can have a list style 1`] = `
   margin-bottom: 0.5rem;
 }
 
+@media (min-width:768px) {
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
 <ol
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
+  class="c0 c1 c0 c1 c2"
 >
   <li
-    class="c2"
+    class="c3"
   >
     <span
-      class="c3"
+      class="c4"
     >
       Lorem ipsum
     </span>
   </li>
   <li
-    class="c2"
+    class="c3"
   >
     <span
-      class="c3"
+      class="c4"
     >
       Dolor sit amet
     </span>
@@ -65,6 +85,20 @@ exports[`<OrderedList /> can have a list style 1`] = `
 
 exports[`<OrderedList /> can have a list style 2`] = `
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c3 {
   margin-left: -1rem;
   padding-left: 1rem;
   word-wrap: break-word;
@@ -77,7 +111,7 @@ exports[`<OrderedList /> can have a list style 2`] = `
   font-weight: 400;
 }
 
-.c3 {
+.c4 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -88,7 +122,7 @@ exports[`<OrderedList /> can have a list style 2`] = `
   font-weight: 400;
 }
 
-.c4 .c0 {
+.c5 .c0 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -107,23 +141,29 @@ exports[`<OrderedList /> can have a list style 2`] = `
   margin-bottom: 0.5rem;
 }
 
+@media (min-width:768px) {
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
 <ol
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
+  class="c0 c1 c0 c1 c2"
 >
   <li
-    class="c2"
+    class="c3"
   >
     <span
-      class="c3"
+      class="c4"
     >
       Lorem ipsum
     </span>
   </li>
   <li
-    class="c2"
+    class="c3"
   >
     <span
-      class="c3"
+      class="c4"
     >
       Dolor sit amet
     </span>
@@ -133,6 +173,20 @@ exports[`<OrderedList /> can have a list style 2`] = `
 
 exports[`<OrderedList /> renders 1`] = `
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c3 {
   margin-left: -1rem;
   padding-left: 1rem;
   word-wrap: break-word;
@@ -145,7 +199,7 @@ exports[`<OrderedList /> renders 1`] = `
   font-weight: 400;
 }
 
-.c3 {
+.c4 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -170,23 +224,29 @@ exports[`<OrderedList /> renders 1`] = `
   margin-bottom: 0.5rem;
 }
 
+@media (min-width:768px) {
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
 <ol
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
+  class="c0 c1 c0 c1 c2"
 >
   <li
-    class="c2"
+    class="c3"
   >
     <span
-      class="c3"
+      class="c4"
     >
       Lorem ipsum
     </span>
   </li>
   <li
-    class="c2"
+    class="c3"
   >
     <span
-      class="c3"
+      class="c4"
     >
       Dolor sit amet
     </span>
