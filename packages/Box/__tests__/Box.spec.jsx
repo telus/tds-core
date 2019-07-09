@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import Box from '../Box'
 
@@ -7,6 +7,13 @@ describe('Box', () => {
   const defaultProps = { between: 3 }
   const doShallow = (props = {}) => {
     return shallow(
+      <Box {...defaultProps} {...props}>
+        Some content
+      </Box>
+    )
+  }
+  const doMount = (props = {}) => {
+    return mount(
       <Box {...defaultProps} {...props}>
         Some content
       </Box>
@@ -22,59 +29,59 @@ describe('Box', () => {
   it('can render as a specified HTML element', () => {
     const box = doShallow({ tag: 'ul' })
 
-    expect(box).toHaveDisplayName('ul')
+    expect(box.props().tag).toEqual('ul')
   })
 
   it('can apply bottom margin', () => {
-    const box = doShallow({ below: 2 })
+    const box = doMount({ below: 2 })
 
-    expect(box).toHaveClassName('bottomMargin-2')
+    expect(box).toMatchSnapshot()
   })
 
   describe('insets', () => {
     it('can be equal on all sides', () => {
-      const box = doShallow({ inset: 3 })
+      const box = doMount({ inset: 3 })
 
-      expect(box).toHaveClassName('verticalPadding-3 horizontalPadding-3')
+      expect(box).toMatchSnapshot()
     })
 
     it('can be either vertical or horizonal', () => {
-      let box = doShallow({ vertical: 1 })
-      expect(box).toHaveClassName('verticalPadding-1')
+      let box = doMount({ vertical: 1 })
+      expect(box).toMatchSnapshot()
 
-      box = doShallow({ horizontal: 1 })
-      expect(box).toHaveClassName('horizontalPadding-1')
+      box = doMount({ horizontal: 1 })
+      expect(box).toMatchSnapshot()
 
-      box = doShallow({ vertical: 2, horizontal: 3 })
-      expect(box).toHaveClassName('verticalPadding-2 horizontalPadding-3')
+      box = doMount({ vertical: 2, horizontal: 3 })
+      expect(box).toMatchSnapshot()
     })
   })
 
   describe('between', () => {
     it('arranges the children horizontally or vertically be either inline or block', () => {
-      let box = doShallow()
-      expect(box).toHaveClassName('stack')
+      let box = doMount()
+      expect(box).toMatchSnapshot()
 
-      box = doShallow({ inline: true })
-      expect(box).toHaveClassName('inline')
+      box = doMount({ inline: true })
+      expect(box).toMatchSnapshot()
     })
 
     it('separates children by equal margins in a stack', () => {
-      const box = doShallow({ between: 2 })
+      const box = doMount({ between: 2 })
 
-      expect(box).toHaveClassName('betweenBottomMargin-2')
+      expect(box).toMatchSnapshot()
     })
 
     it('separates children by equal margins inline', () => {
-      const box = doShallow({ between: 2, inline: true })
+      const box = doMount({ between: 2, inline: true })
 
-      expect(box).toHaveClassName('betweenRightMargin-2')
+      expect(box).toMatchSnapshot()
     })
 
     it('applies space-between', () => {
-      const box = doShallow({ between: 'space-between' })
+      const box = doMount({ between: 'space-between' })
 
-      expect(box).toHaveClassName('spaceBetween')
+      expect(box).toMatchSnapshot()
     })
   })
 
@@ -86,9 +93,8 @@ describe('Box', () => {
   })
 
   it('will add additional arbitrary class names', () => {
-    const box = doShallow({ dangerouslyAddClassName: 'a-class', className: 'b-class' })
+    const box = doShallow({ className: 'a-class' })
 
     expect(box).toHaveClassName('a-class')
-    expect(box).toHaveClassName('b-class')
   })
 })

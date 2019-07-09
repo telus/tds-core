@@ -1,70 +1,113 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import joinClassNames from '../../shared/utils/joinClassNames'
-import capitalize from '../../shared/utils/capitalize'
-import { deprecate } from '../../shared/utils/warn'
+import { media } from '@tds/core-responsive'
 
-import styles from './Box.modules.scss'
-
-const getClassName = (spacing, location, scale) => {
-  if (!scale) {
-    return undefined
-  }
-  return styles[`${location}${capitalize(spacing)}-${scale}`]
+const spacing = {
+  mobile: {
+    1: '0.25rem',
+    2: '0.5rem',
+    3: '1rem',
+    4: '1.5rem',
+    5: '2rem',
+    6: '2.5rem',
+    7: '3rem',
+    8: '4rem',
+  },
+  desktop: {
+    1: '0.25rem',
+    2: '0.5rem',
+    3: '1rem',
+    4: '2rem',
+    5: '3rem',
+    6: '4rem',
+    7: '4.5rem',
+    8: '6rem',
+  },
 }
 
-const getBetweenClasses = (scale, inline) => {
-  if (!scale) {
-    return undefined
+const boxSpacing = (level, f, size) => {
+  return f(spacing[size][level])
+}
+
+const betweenStyles = (between, inline, size) => {
+  if (between === 'space-between') {
+    return { justifyContent: 'space-between' }
   }
 
-  const direction = inline ? 'Right' : 'Bottom'
-  return joinClassNames(
-    scale === 'space-between' ? styles.spaceBetween : styles[`between${direction}Margin-${scale}`],
-    inline ? styles.inline : styles.stack
+  return boxSpacing(
+    between,
+    () => ({
+      '> *:not(:last-child)': {
+        ...(inline ? { marginRight: spacing } : { marginBottom: spacing }),
+      },
+    }),
+    size
   )
 }
+
+const horizontalStyles = (horizontal, size) => {
+  return boxSpacing(
+    horizontal,
+    () => ({
+      paddingLeft: spacing,
+      paddingRight: spacing,
+    }),
+    size
+  )
+}
+
+const verticalStyles = (vertical, size) => {
+  return boxSpacing(
+    vertical,
+    () => ({
+      paddingTop: spacing,
+      paddingBottom: spacing,
+    }),
+    size
+  )
+}
+
+const insetStyles = (inset, size) => {
+  return { ...verticalStyles(inset, size), ...horizontalStyles(inset, size) }
+}
+
+const belowStyles = (below, size) => {
+  return boxSpacing(
+    below,
+    () => ({
+      marginBottom: spacing,
+    }),
+    size
+  )
+}
+
+const StyledBox = styled.div.attrs(({ className, tag }) => {
+  return { className, as: tag }
+})(({ inline, between, horizontal, vertical, inset, below }) => ({
+  display: between ? 'flex' : 'block',
+  flexDirection: inline ? 'row' : 'column',
+  ...betweenStyles(between, inline, 'mobile'),
+  ...(horizontal && horizontalStyles(horizontal, 'mobile')),
+  ...(vertical && verticalStyles(vertical, 'mobile')),
+  ...(inset && insetStyles(inset, 'mobile')),
+  ...(below && belowStyles(below, 'mobile')),
+  ...media.from('md').css({
+    ...betweenStyles(between, inline, 'desktop'),
+    ...(horizontal && horizontalStyles(horizontal, 'desktop')),
+    ...(vertical && verticalStyles(vertical, 'desktop')),
+    ...(inset && insetStyles(inset, 'desktop')),
+    ...(below && belowStyles(below, 'desktop')),
+  }),
+}))
 
 /**
  * Apply spacing within or around components.
  *
  * @version ./package.json
  */
-const Box = ({
-  tag,
-  vertical,
-  horizontal,
-  inset,
-  below,
-  between,
-  inline,
-  className,
-  dangerouslyAddClassName,
-  children,
-  ...rest
-}) => {
-  if (dangerouslyAddClassName) {
-    deprecate(
-      'core-box',
-      'The `dangerouslyAddClassName` prop is deprecated. Please make use of the className and style props only when necessary.'
-    )
-  }
-
-  const xSize = inset || horizontal
-  const ySize = inset || vertical
-
-  const classes = joinClassNames(
-    getClassName('padding', 'horizontal', xSize),
-    getClassName('padding', 'vertical', ySize),
-    getClassName('margin', 'bottom', below),
-    getBetweenClasses(between, inline),
-    dangerouslyAddClassName,
-    className
-  )
-
-  return React.createElement(tag, { ...rest, className: classes }, children)
-}
+const Box = props => <StyledBox {...props} />
 
 Box.propTypes = {
   /**
@@ -98,23 +141,12 @@ Box.propTypes = {
    *
    * By default, `between` will arrange the Box's children as a flex column. Combine with `inline` to arrange them
    * as a flex row.
-   *
-   * Use `space-between` to set an equal amount of space between all items, within the bounds of the parent.
    */
   between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 'space-between']),
   /**
    * Arrange children in a row. Combine with `between` to apply margins in between the row's elements.
    */
   inline: PropTypes.bool,
-  /**
-   * @deprecated It is now possible to use `className` for custom class insertion. This prop will be removed in Box 2.0.0.
-   *
-   * Append custom classes to `className`. Use sparingly, and do not attempt to override Box style properties as that
-   * may cause unexpected behaviour.
-   *
-   * You would typically use this feature to apply flex alignment properties in combination with `between`.
-   */
-  dangerouslyAddClassName: PropTypes.string,
   /**
    * @ignore
    */
@@ -133,8 +165,8 @@ Box.defaultProps = {
   inset: undefined,
   below: undefined,
   between: undefined,
-  dangerouslyAddClassName: undefined,
   className: undefined,
 }
 
+/** @component */
 export default Box
