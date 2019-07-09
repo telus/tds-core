@@ -2,6 +2,20 @@
 
 exports[`<UnorderedList /> can have a list style 1`] = `
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c3 {
   position: relative;
   line-height: 1.5;
   word-wrap: break-word;
@@ -13,7 +27,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
   font-weight: 400;
 }
 
-.c2::before {
+.c3::before {
   display: block;
   position: absolute;
   left: -2rem;
@@ -40,6 +54,12 @@ exports[`<UnorderedList /> can have a list style 1`] = `
 
 .c1 :last-child .c0 {
   margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 <UnorderedList
@@ -92,100 +112,139 @@ exports[`<UnorderedList /> can have a list style 1`] = `
         inline={false}
         tag="ul"
       >
-        <ul
-          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
+        <styled.div
+          between={2}
+          className="c0 c1"
+          inline={false}
+          tag="ul"
         >
-          <UnorderedList.Item
-            key=".$.0"
-            listStyle="circle"
-            size="medium"
+          <StyledComponent
+            between={2}
+            className="c0 c1"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            inline={false}
+            tag="ul"
           >
-            <UnorderedItem__StyledUnorderedItem
-              iconStyle="circle"
-              size="medium"
+            <ul
+              className="c0 c1 c0 c1 c2"
             >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                      ],
-                    },
-                    "displayName": "UnorderedItem__StyledUnorderedItem",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
-                    "target": "li",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                iconStyle="circle"
+              <UnorderedList.Item
+                key=".$.0"
+                listStyle="circle"
                 size="medium"
               >
-                <li
-                  className="c2"
+                <UnorderedItem__StyledUnorderedItem
+                  iconStyle="circle"
                   size="medium"
                 >
-                  Lorem ipsum
-                </li>
-              </StyledComponent>
-            </UnorderedItem__StyledUnorderedItem>
-          </UnorderedList.Item>
-          <UnorderedList.Item
-            key=".$.2"
-            listStyle="circle"
-            size="medium"
-          >
-            <UnorderedItem__StyledUnorderedItem
-              iconStyle="circle"
-              size="medium"
-            >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                      ],
-                    },
-                    "displayName": "UnorderedItem__StyledUnorderedItem",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
-                    "target": "li",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                iconStyle="circle"
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "UnorderedItem__StyledUnorderedItem",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    iconStyle="circle"
+                    size="medium"
+                  >
+                    <li
+                      className="c3"
+                      size="medium"
+                    >
+                      Lorem ipsum
+                    </li>
+                  </StyledComponent>
+                </UnorderedItem__StyledUnorderedItem>
+              </UnorderedList.Item>
+              <UnorderedList.Item
+                key=".$.2"
+                listStyle="circle"
                 size="medium"
               >
-                <li
-                  className="c2"
+                <UnorderedItem__StyledUnorderedItem
+                  iconStyle="circle"
                   size="medium"
                 >
-                  Dolor sit amet
-                </li>
-              </StyledComponent>
-            </UnorderedItem__StyledUnorderedItem>
-          </UnorderedList.Item>
-        </ul>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "UnorderedItem__StyledUnorderedItem",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    iconStyle="circle"
+                    size="medium"
+                  >
+                    <li
+                      className="c3"
+                      size="medium"
+                    >
+                      Dolor sit amet
+                    </li>
+                  </StyledComponent>
+                </UnorderedItem__StyledUnorderedItem>
+              </UnorderedList.Item>
+            </ul>
+          </StyledComponent>
+        </styled.div>
       </Box>
     </StyledComponent>
   </Styled(Box)>
@@ -194,6 +253,20 @@ exports[`<UnorderedList /> can have a list style 1`] = `
 
 exports[`<UnorderedList /> can have a list style 2`] = `
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c3 {
   position: relative;
   line-height: 1.5;
   word-wrap: break-word;
@@ -205,7 +278,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
   font-weight: 400;
 }
 
-.c2::before {
+.c3::before {
   display: block;
   position: absolute;
   left: -2rem;
@@ -228,6 +301,12 @@ exports[`<UnorderedList /> can have a list style 2`] = `
 
 .c1 :last-child .c0 {
   margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 <UnorderedList
@@ -280,100 +359,139 @@ exports[`<UnorderedList /> can have a list style 2`] = `
         inline={false}
         tag="ul"
       >
-        <ul
-          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
+        <styled.div
+          between={2}
+          className="c0 c1"
+          inline={false}
+          tag="ul"
         >
-          <UnorderedList.Item
-            key=".$.0"
-            listStyle="x"
-            size="medium"
+          <StyledComponent
+            between={2}
+            className="c0 c1"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    [Function],
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            inline={false}
+            tag="ul"
           >
-            <UnorderedItem__StyledUnorderedItem
-              iconStyle="x"
-              size="medium"
+            <ul
+              className="c0 c1 c0 c1 c2"
             >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                      ],
-                    },
-                    "displayName": "UnorderedItem__StyledUnorderedItem",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
-                    "target": "li",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                iconStyle="x"
+              <UnorderedList.Item
+                key=".$.0"
+                listStyle="x"
                 size="medium"
               >
-                <li
-                  className="c2"
+                <UnorderedItem__StyledUnorderedItem
+                  iconStyle="x"
                   size="medium"
                 >
-                  Lorem ipsum
-                </li>
-              </StyledComponent>
-            </UnorderedItem__StyledUnorderedItem>
-          </UnorderedList.Item>
-          <UnorderedList.Item
-            key=".$.2"
-            listStyle="x"
-            size="medium"
-          >
-            <UnorderedItem__StyledUnorderedItem
-              iconStyle="x"
-              size="medium"
-            >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                      ],
-                    },
-                    "displayName": "UnorderedItem__StyledUnorderedItem",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
-                    "target": "li",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                iconStyle="x"
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "UnorderedItem__StyledUnorderedItem",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    iconStyle="x"
+                    size="medium"
+                  >
+                    <li
+                      className="c3"
+                      size="medium"
+                    >
+                      Lorem ipsum
+                    </li>
+                  </StyledComponent>
+                </UnorderedItem__StyledUnorderedItem>
+              </UnorderedList.Item>
+              <UnorderedList.Item
+                key=".$.2"
+                listStyle="x"
                 size="medium"
               >
-                <li
-                  className="c2"
+                <UnorderedItem__StyledUnorderedItem
+                  iconStyle="x"
                   size="medium"
                 >
-                  Dolor sit amet
-                </li>
-              </StyledComponent>
-            </UnorderedItem__StyledUnorderedItem>
-          </UnorderedList.Item>
-        </ul>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "UnorderedItem__StyledUnorderedItem",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "UnorderedItem__StyledUnorderedItem-sc-1sy38gy-0",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    iconStyle="x"
+                    size="medium"
+                  >
+                    <li
+                      className="c3"
+                      size="medium"
+                    >
+                      Dolor sit amet
+                    </li>
+                  </StyledComponent>
+                </UnorderedItem__StyledUnorderedItem>
+              </UnorderedList.Item>
+            </ul>
+          </StyledComponent>
+        </styled.div>
       </Box>
     </StyledComponent>
   </Styled(Box)>
@@ -382,6 +500,20 @@ exports[`<UnorderedList /> can have a list style 2`] = `
 
 exports[`<UnorderedList /> renders 1`] = `
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c3 {
   position: relative;
   line-height: 1.5;
   word-wrap: break-word;
@@ -393,7 +525,7 @@ exports[`<UnorderedList /> renders 1`] = `
   font-weight: 400;
 }
 
-.c2::before {
+.c3::before {
   display: block;
   position: absolute;
   left: -2rem;
@@ -422,16 +554,22 @@ exports[`<UnorderedList /> renders 1`] = `
   margin-bottom: 0;
 }
 
+@media (min-width:768px) {
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
 <ul
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c0 c1"
+  class="c0 c1 c0 c1 c2"
 >
   <li
-    class="c2"
+    class="c3"
   >
     Lorem ipsum
   </li>
   <li
-    class="c2"
+    class="c3"
   >
     Dolor sit amet
   </li>
