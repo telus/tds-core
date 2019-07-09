@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio allows numbers as value 1`] = `
-.c6 {
+.c7 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -9,7 +9,7 @@ exports[`Radio allows numbers as value 1`] = `
   font-weight: inherit;
 }
 
-.c6 sup {
+.c7 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -94,6 +94,10 @@ exports[`Radio allows numbers as value 1`] = `
   display: none;
 }
 
+.c6 {
+  width: 100%;
+}
+
 <div
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
@@ -123,11 +127,11 @@ exports[`Radio allows numbers as value 1`] = `
         />
       </span>
       <div
-        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c6"
       >
         <div>
           <span
-            class="c6"
+            class="c7"
           >
             A label
           </span>
@@ -3531,7 +3535,7 @@ Array [
 `;
 
 exports[`Radio must have a label 1`] = `
-.c4 {
+.c5 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -3539,7 +3543,7 @@ exports[`Radio must have a label 1`] = `
   font-weight: inherit;
 }
 
-.c4 sup {
+.c5 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -3589,24 +3593,24 @@ exports[`Radio must have a label 1`] = `
   cursor: pointer;
 }
 
-.c5:focus ~ .c0 > div > .c1 {
+.c6:focus ~ .c0 > div > .c1 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c0 > div > .c1 {
+.c6:checked ~ .c0 > div > .c1 {
   border-color: #54595f;
 }
 
-.c5:checked ~ .c0 > div > .c1 > span {
+.c6:checked ~ .c0 > div > .c1 > span {
   display: block;
 }
 
-.c5:disabled ~ .c0 > div > .c1 {
+.c6:disabled ~ .c0 > div > .c1 {
   border-color: #d8d8d8;
 }
 
-.c5:disabled ~ .c0 > div > div {
+.c6:disabled ~ .c0 > div > div {
   color: #d8d8d8;
 }
 
@@ -3616,6 +3620,10 @@ exports[`Radio must have a label 1`] = `
   border-radius: 50%;
   background-color: #248700;
   display: none;
+}
+
+.c4 {
+  width: 100%;
 }
 
 <label
@@ -3721,92 +3729,124 @@ exports[`Radio must have a label 1`] = `
           </span>
         </StyledComponent>
       </Radio__FakeRadio>
-      <Box
+      <Styled(Box)
         between={2}
-        inline={false}
-        tag="div"
       >
-        <div
-          className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+        <StyledComponent
+          between={2}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": true,
+                "lastClassName": "c4",
+                "rules": Array [
+                  "width: 100%;",
+                ],
+              },
+              "displayName": "Styled(Box)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
         >
-          <ColoredTextProvider
+          <Box
+            between={2}
+            className="c4"
+            inline={false}
             tag="div"
           >
-            <div>
-              <Text
-                block={false}
-                bold={false}
-                invert={false}
-                size="base"
+            <div
+              className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c4"
+            >
+              <ColoredTextProvider
+                tag="div"
               >
-                <Text__StyledText
-                  block={false}
-                  bold={false}
-                  inheritColor={true}
-                  invert={false}
-                  size="base"
-                >
-                  <StyledComponent
+                <div>
+                  <Text
                     block={false}
                     bold={false}
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Text__StyledText-sc-1m0rr67-0",
-                          "isStatic": false,
-                          "lastClassName": "c4",
-                          "rules": Array [
-                            [Function],
-                            [Function],
-                            [Function],
-                            [Function],
-                            [Function],
-                            "sup {",
-                            "top: -0.5em;",
-                            "font-size: 0.875rem;",
-                            "position: relative;",
-                            "vertical-align: baseline;",
-                            "padding-left: 0.1em;",
-                            "}",
-                          ],
-                        },
-                        "displayName": "Text__StyledText",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                        "target": "span",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    inheritColor={true}
                     invert={false}
                     size="base"
                   >
-                    <span
-                      className="c4"
+                    <Text__StyledText
+                      block={false}
+                      bold={false}
+                      inheritColor={true}
+                      invert={false}
                       size="base"
                     >
-                      Some label
-                    </span>
-                  </StyledComponent>
-                </Text__StyledText>
-              </Text>
+                      <StyledComponent
+                        block={false}
+                        bold={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Text__StyledText-sc-1m0rr67-0",
+                              "isStatic": false,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                                "sup {",
+                                "top: -0.5em;",
+                                "font-size: 0.875rem;",
+                                "position: relative;",
+                                "vertical-align: baseline;",
+                                "padding-left: 0.1em;",
+                                "}",
+                              ],
+                            },
+                            "displayName": "Text__StyledText",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        inheritColor={true}
+                        invert={false}
+                        size="base"
+                      >
+                        <span
+                          className="c5"
+                          size="base"
+                        >
+                          Some label
+                        </span>
+                      </StyledComponent>
+                    </Text__StyledText>
+                  </Text>
+                </div>
+              </ColoredTextProvider>
             </div>
-          </ColoredTextProvider>
-        </div>
-      </Box>
+          </Box>
+        </StyledComponent>
+      </Styled(Box)>
     </div>
   </Box>
 </label>
 `;
 
 exports[`Radio renders 1`] = `
-.c6 {
+.c7 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -3814,7 +3854,7 @@ exports[`Radio renders 1`] = `
   font-weight: inherit;
 }
 
-.c6 sup {
+.c7 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -3899,6 +3939,10 @@ exports[`Radio renders 1`] = `
   display: none;
 }
 
+.c6 {
+  width: 100%;
+}
+
 <div
   class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
 >
@@ -3928,11 +3972,11 @@ exports[`Radio renders 1`] = `
         />
       </span>
       <div
-        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c6"
       >
         <div>
           <span
-            class="c6"
+            class="c7"
           >
             A label
           </span>
