@@ -265,7 +265,7 @@ const Footnote = props => {
                 <FlexGrid.Row>
                   <FlexGrid.Col xs={12}>
                     <StyledHeader between="space-between" inline>
-                      <Heading level="h4" tag="h2" tabIndex={0} ref={headingRef}>
+                      <Heading level="h4" tag="h2" tabIndex={-1} ref={headingRef}>
                         {getCopy(copyDictionary, copy).heading}
                       </Heading>
                       <StyledClickable
