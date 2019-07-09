@@ -1,11 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Card /> can be presented as one of the allowed variants 1`] = `
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .c0 {
   border-width: 0;
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
   background-color: #fff;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 <Card
@@ -22,7 +42,7 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-bwzfXH",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -32,7 +52,7 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
           "displayName": "Styled(Component)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-bwzfXH",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -57,11 +77,52 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
           tag="div"
           vertical={5}
         >
-          <div
-            className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
+          <styled.div
+            className="c0"
+            horizontal={4}
+            inline={false}
+            tag="div"
+            vertical={5}
           >
-            Some content
-          </div>
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              horizontal={4}
+              inline={false}
+              tag="div"
+              vertical={5}
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                Some content
+              </div>
+            </StyledComponent>
+          </styled.div>
         </Box>
       </Component>
     </StyledComponent>
@@ -70,11 +131,31 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 `;
 
 exports[`<Card /> can be presented as one of the allowed variants 2`] = `
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .c0 {
   border-width: 0;
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
   background-color: #fff;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 <Card
@@ -91,7 +172,7 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-bwzfXH",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -101,7 +182,7 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
           "displayName": "Styled(Component)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-bwzfXH",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -126,11 +207,52 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
           tag="div"
           vertical={5}
         >
-          <div
-            className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
+          <styled.div
+            className="c0"
+            horizontal={4}
+            inline={false}
+            tag="div"
+            vertical={5}
           >
-            Some content
-          </div>
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              horizontal={4}
+              inline={false}
+              tag="div"
+              vertical={5}
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                Some content
+              </div>
+            </StyledComponent>
+          </styled.div>
         </Box>
       </Component>
     </StyledComponent>
@@ -139,10 +261,30 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 `;
 
 exports[`<Card /> can be presented as one of the allowed variants 3`] = `
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .c0 {
   border-width: 0;
   border-radius: 4px;
   background-color: #f2eff4;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 <Card
@@ -159,7 +301,7 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-bwzfXH",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -169,7 +311,7 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
           "displayName": "Styled(Component)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-bwzfXH",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -194,11 +336,52 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
           tag="div"
           vertical={5}
         >
-          <div
-            className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
+          <styled.div
+            className="c0"
+            horizontal={4}
+            inline={false}
+            tag="div"
+            vertical={5}
           >
-            Some content
-          </div>
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              horizontal={4}
+              inline={false}
+              tag="div"
+              vertical={5}
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                Some content
+              </div>
+            </StyledComponent>
+          </styled.div>
         </Box>
       </Component>
     </StyledComponent>
@@ -207,10 +390,30 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
 `;
 
 exports[`<Card /> can be presented as one of the allowed variants 4`] = `
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .c0 {
   border-width: 0;
   border-radius: 4px;
   background-color: #f7f7f8;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 <Card
@@ -227,7 +430,7 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-bwzfXH",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -237,7 +440,7 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
           "displayName": "Styled(Component)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-bwzfXH",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -262,11 +465,52 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
           tag="div"
           vertical={5}
         >
-          <div
-            className="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
+          <styled.div
+            className="c0"
+            horizontal={4}
+            inline={false}
+            tag="div"
+            vertical={5}
           >
-            Some content
-          </div>
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              horizontal={4}
+              inline={false}
+              tag="div"
+              vertical={5}
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                Some content
+              </div>
+            </StyledComponent>
+          </styled.div>
         </Box>
       </Component>
     </StyledComponent>
@@ -275,6 +519,17 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
 `;
 
 exports[`<Card /> renders 1`] = `
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -282,8 +537,17 @@ exports[`<Card /> renders 1`] = `
   background-color: #fff;
 }
 
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
 <div
-  class="TDS_Box-modules__horizontalPadding-4___3W1-P TDS_Box-modules__verticalPadding-5___m0Okg c0"
+  class="c0 sc-bwzfXH c0 c1"
 >
   Children
 </div>
