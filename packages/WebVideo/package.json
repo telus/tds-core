@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-web-video",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,12 +28,12 @@
   "dependencies": {
     "@tds/core-box": "^1.2.4",
     "@tds/core-decorative-icon": "^1.2.1",
-    "@tds/core-paragraph": "^1.1.0",
+    "@tds/core-paragraph": "^2.0.0",
     "@tds/core-responsive": "^1.2.1",
     "prop-types": "^15.5.10",
     "react-youtube": "^7.9.0"
   },
   "devDependencies": {
-    "@tds/shared-video-splash": "^1.1.2"
+    "@tds/shared-video-splash": "^1.1.3"
   }
 }

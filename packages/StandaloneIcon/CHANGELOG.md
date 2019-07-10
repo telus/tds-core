@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@1.1.1...@tds/core-standalone-icon@1.1.2) (2019-07-10)
+
+
+### Bug Fixes
+
+* **core-standalone-icon:** remove aria-label attribute ([db871b7](https://github.com/telusdigital/tds/commit/db871b7))
+
+
+
+
+
 ## [1.1.1](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@1.1.0...@tds/core-standalone-icon@1.1.1) (2019-06-26)
 
 

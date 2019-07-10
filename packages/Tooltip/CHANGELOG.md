@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@3.0.7...@tds/core-tooltip@4.0.0) (2019-07-10)
+
+
+### Features
+
+* **core-tooltip:** add copy prop and documentation ([c7bad06](https://github.com/telusdigital/tds/commit/c7bad06))
+
+
+### BREAKING CHANGES
+
+* **core-tooltip:** new copy prop is required
+
+
+
+
+
 ## [3.0.7](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@3.0.6...@tds/core-tooltip@3.0.7) (2019-06-26)
 
 **Note:** Version bump only for package @tds/core-tooltip

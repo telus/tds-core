@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@1.1.0...@tds/core-paragraph@2.0.0) (2019-07-10)
+
+
+### Features
+
+* **core-paragraph:** upgrade to styled-components ([89bbba7](https://github.com/telusdigital/tds/commit/89bbba7))
+
+
+### BREAKING CHANGES
+
+* **core-paragraph:** upgrade to styled-components
+
+
+
+
+
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@1.0.12...@tds/core-paragraph@1.1.0) (2019-07-02)
 
 

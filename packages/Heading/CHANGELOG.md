@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-heading@2.1.0...@tds/core-heading@2.2.0) (2019-07-10)
+
+
+### Features
+
+* **core-heading:** add forwardRefs ([b32bd41](https://github.com/telusdigital/tds/commit/b32bd41))
+
+
+
+
+
 # [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-heading@2.0.1...@tds/core-heading@2.1.0) (2019-06-04)
 
 ### Features

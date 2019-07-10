@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-text@1.1.0...@tds/core-text@2.0.0) (2019-07-10)
+
+
+### Features
+
+* **core-text:** upgrade to styled-components ([e9cc4dd](https://github.com/telusdigital/tds/commit/e9cc4dd))
+
+
+### BREAKING CHANGES
+
+* **core-text:** upgrade to styled-components
+
+
+
+
+
 # [1.1.0](https://github.com/telusdigital/tds/compare/@tds/core-text@1.0.11...@tds/core-text@1.1.0) (2019-06-04)
 
 ### Features
