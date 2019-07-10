@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@1.2.1...@tds/core-decorative-icon@1.3.0) (2019-07-10)
+
+
+### Features
+
+* **core-decorative-icon:** add Movie and Soccer icons ([2260e5a](https://github.com/telusdigital/tds/commit/2260e5a))
+
+
+
+
+
 ## [1.2.1](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@1.2.0...@tds/core-decorative-icon@1.2.1) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-decorative-icon
