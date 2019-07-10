@@ -29,13 +29,33 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c1 .c2,
+.c1 .c3,
 .c1 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+.c2 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c2 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
 <ul
@@ -79,7 +99,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
         Some heading
       </div>
       <span
-        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+        class="c2"
       >
         Some content
       </span>
@@ -123,7 +143,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
         Some other heading
       </div>
       <span
-        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+        class="c2"
       >
         Some other content
       </span>
@@ -161,13 +181,33 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c1 .c2,
+.c1 .c3,
 .c1 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+.c2 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c2 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
 <ul
@@ -211,7 +251,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
         Some heading
       </div>
       <span
-        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+        class="c2"
       >
         Some content
       </span>
@@ -255,7 +295,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
         Some other heading
       </div>
       <span
-        class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+        class="c2"
       >
         Some other content
       </span>
