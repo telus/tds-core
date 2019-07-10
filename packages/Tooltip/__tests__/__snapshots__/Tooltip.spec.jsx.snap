@@ -1,13 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip accessibility accepts custom copy 1`] = `
-.c4 {
+.c5 {
   position: absolute;
   height: 1px;
   width: 1px;
   overflow: hidden;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c4 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
 .c2 {
@@ -304,11 +324,60 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                   invert={false}
                                   size="small"
                                 >
-                                  <span
-                                    className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                                  <Text__StyledText
+                                    block={false}
+                                    bold={false}
+                                    invert={false}
+                                    size="small"
                                   >
-                                    Tooltip text
-                                  </span>
+                                    <StyledComponent
+                                      block={false}
+                                      bold={false}
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                            "isStatic": false,
+                                            "lastClassName": "c4",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              "sup {",
+                                              "top: -0.5em;",
+                                              "font-size: 0.875rem;",
+                                              "position: relative;",
+                                              "vertical-align: baseline;",
+                                              "padding-left: 0.1em;",
+                                              "}",
+                                            ],
+                                          },
+                                          "displayName": "Text__StyledText",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      invert={false}
+                                      size="small"
+                                    >
+                                      <span
+                                        className="c4"
+                                        size="small"
+                                      >
+                                        Tooltip text
+                                      </span>
+                                    </StyledComponent>
+                                  </Text__StyledText>
                                 </Text>
                               </div>
                             </StyledComponent>
@@ -359,12 +428,10 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                     type="button"
                   >
                     <Icon
-                      aria-label="This is custom copy."
                       size={24}
                       symbol="questionMarkCircle"
                     >
                       <i
-                        aria-label="This is custom copy."
                         className="TDS_Icon-modules__iconQuestionMarkCircle___2km-5 TDS_Icon-modules__icon___13xYd TDS_Icon-modules__size24___37pQ7"
                       >
                         <A11yContent>
@@ -377,7 +444,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
                                     "isStatic": true,
-                                    "lastClassName": "c4",
+                                    "lastClassName": "c5",
                                     "rules": Array [
                                       "position: absolute;",
                                       "height: 1px;",
@@ -399,7 +466,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                               forwardedRef={null}
                             >
                               <span
-                                className="c4"
+                                className="c5"
                               >
                                 This is custom copy.
                               </span>
