@@ -43,6 +43,12 @@ describe('<Notification />', () => {
   })
 
   describe('successful variant', () => {
+    it('default text style is not bold', () => {
+      const notification = doShallow({ variant: 'success' }, 'A success message')
+
+      expect(notification.find('Paragraph').prop('bold')).toBeFalsy()
+    })
+
     it('adds a checkmark icon', () => {
       const notification = doShallow({ variant: 'success' })
 
@@ -51,6 +57,12 @@ describe('<Notification />', () => {
   })
 
   describe('error variant', () => {
+    it('default text style is not bold', () => {
+      const notification = doShallow({ variant: 'error' }, 'An error message')
+
+      expect(notification.find('Paragraph').prop('bold')).toBeFalsy()
+    })
+
     it('adds an exclamation point icon', () => {
       const notification = doShallow({ variant: 'error' })
 
