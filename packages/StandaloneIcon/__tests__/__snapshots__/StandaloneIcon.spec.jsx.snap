@@ -50,7 +50,6 @@ exports[`StandaloneIcon Interactive icon renders 1`] = `
   style="padding:4px;margin:-4px"
 >
   <i
-    aria-label="Some text for the screen readers."
     class="c1"
   >
     <span
@@ -85,7 +84,6 @@ exports[`StandaloneIcon Plain StandaloneIcon renders 1`] = `
 }
 
 <i
-  aria-label="Some text for the screen readers."
   class="c0"
 />
 `;
