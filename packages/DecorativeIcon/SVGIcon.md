@@ -643,6 +643,7 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: ChartsBar2,
         usageCriteria: 'Reports, data usage, dashboards',
       },
+
       {
         name: 'ChartsLine',
         Component: ChartsLine,
@@ -669,7 +670,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Compass,
         usageCriteria: 'Indicates directions, Drive+, car related, GPS, travel',
       },
-      { name: 'Key', Component: Key, usageCriteria: 'Password, key' },
+      {
+        name: 'Key',
+        Component: typeof KeyIcon === 'undefined' ? Key : KeyIcon,
+        usageCriteria: 'Password, key',
+      },
       {
         name: 'Information',
         Component: Information,
