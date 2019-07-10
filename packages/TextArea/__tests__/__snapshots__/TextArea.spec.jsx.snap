@@ -189,6 +189,47 @@ exports[`TextArea feedback states ensures that the contents do not overlap the i
 `;
 
 exports[`TextArea label can have a short hint 1`] = `
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c2 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c2 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -247,11 +288,60 @@ exports[`TextArea label can have a short hint 1`] = `
             invert={false}
             size="medium"
           >
-            <span
-              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+            <Text__StyledText
+              block={false}
+              bold={true}
+              invert={false}
+              size="medium"
             >
-              The textarea
-            </span>
+              <StyledComponent
+                block={false}
+                bold={true}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Text__StyledText-sc-1m0rr67-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        "sup {",
+                        "top: -0.5em;",
+                        "font-size: 0.875rem;",
+                        "position: relative;",
+                        "vertical-align: baseline;",
+                        "padding-left: 0.1em;",
+                        "}",
+                      ],
+                    },
+                    "displayName": "Text__StyledText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                invert={false}
+                size="medium"
+              >
+                <span
+                  className="c1"
+                  size="medium"
+                >
+                  The textarea
+                </span>
+              </StyledComponent>
+            </Text__StyledText>
           </Text>
           <Text
             block={false}
@@ -260,12 +350,63 @@ exports[`TextArea label can have a short hint 1`] = `
             invert={false}
             size="small"
           >
-            <span
-              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+            <Text__StyledText
+              block={false}
+              bold={false}
               id="the-textarea_hint"
+              invert={false}
+              size="small"
             >
-              The short hint
-            </span>
+              <StyledComponent
+                block={false}
+                bold={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Text__StyledText-sc-1m0rr67-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        "sup {",
+                        "top: -0.5em;",
+                        "font-size: 0.875rem;",
+                        "position: relative;",
+                        "vertical-align: baseline;",
+                        "padding-left: 0.1em;",
+                        "}",
+                      ],
+                    },
+                    "displayName": "Text__StyledText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                id="the-textarea_hint"
+                invert={false}
+                size="small"
+              >
+                <span
+                  className="c2"
+                  id="the-textarea_hint"
+                  size="small"
+                >
+                  The short hint
+                </span>
+              </StyledComponent>
+            </Text__StyledText>
           </Text>
         </span>
       </Box>
@@ -276,6 +417,27 @@ exports[`TextArea label can have a short hint 1`] = `
 
 exports[`TextArea renders 1`] = `
 .c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c2 {
   max-width: 100%;
   min-width: 100%;
   min-height: 208px;
@@ -289,7 +451,7 @@ exports[`TextArea renders 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   max-width: 100%;
   min-width: 100%;
   min-height: 208px;
@@ -317,7 +479,7 @@ exports[`TextArea renders 1`] = `
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -327,7 +489,7 @@ exports[`TextArea renders 1`] = `
   color: #54595f;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -337,7 +499,7 @@ exports[`TextArea renders 1`] = `
   color: #54595f;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -347,7 +509,7 @@ exports[`TextArea renders 1`] = `
   color: #54595f;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -357,21 +519,21 @@ exports[`TextArea renders 1`] = `
   color: #54595f;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c2:focus {
+.c3:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c3 {
+.c4 {
   position: absolute;
   right: 1rem;
   top: 0.5rem;
@@ -391,7 +553,7 @@ exports[`TextArea renders 1`] = `
         class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
       >
         <span
-          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          class="c1"
         >
           The textarea
         </span>
@@ -399,22 +561,22 @@ exports[`TextArea renders 1`] = `
     </label>
   </div>
   <div
-    class="c1"
+    class="c2"
   >
     <textarea
       aria-invalid="false"
-      class="c2"
+      class="c3"
       id="the-textarea"
     />
     <div
-      class="c3"
+      class="c4"
     />
   </div>
 </div>
 `;
 
 exports[`TextArea renders with a feedback state and icon 1`] = `
-.c5 {
+.c6 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -432,15 +594,36 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   font-size: 1rem;
 }
 
-.c5::before {
+.c6::before {
   content: '\\f103';
 }
 
-.c4 {
+.c1 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c1 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c5 {
   line-height: 1;
 }
 
-.c1 {
+.c2 {
   max-width: 100%;
   min-width: 100%;
   min-height: 208px;
@@ -454,7 +637,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   max-width: 100%;
   min-width: 100%;
   min-height: 208px;
@@ -482,7 +665,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -492,7 +675,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -502,7 +685,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -512,7 +695,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -522,25 +705,25 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c2:focus {
+.c3:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c2:not(:focus) {
+.c3:not(:focus) {
   border-color: #c12335;
 }
 
-.c3 {
+.c4 {
   position: absolute;
   right: 1rem;
   top: 0.5rem;
@@ -560,7 +743,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
         class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz c0"
       >
         <span
-          class="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__medium___1rxfE TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__boldFont___2YS3O TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__color___2CNH8"
+          class="c1"
         >
           The textarea
         </span>
@@ -568,25 +751,24 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
     </label>
   </div>
   <div
-    class="c1"
+    class="c2"
   >
     <textarea
       aria-invalid="true"
-      class="c2"
+      class="c3"
       id="the-textarea"
     />
     <div
-      class="c3"
+      class="c4"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="c4"
+          class="c5"
         >
           <i
-            aria-label="The value of this input field is invalid."
-            class="c5"
+            class="c6"
           />
         </div>
       </div>
