@@ -1,18 +1,44 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
+import { colorWhiteLilac } from '@tds/core-colours'
 import FlexGrid from '@tds/core-flex-grid'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import StandaloneIcon from '@tds/core-standalone-icon'
 import Paragraph from '@tds/core-paragraph'
 import Box from '@tds/core-box'
 import { Reveal, Fade } from '@tds/shared-animation'
+import { messaging } from '@tds/shared-styles'
 
 import safeRest from '../../shared/utils/safeRest'
-import joinClassNames from '../../shared/utils/joinClassNames'
 import { warn } from '../../shared/utils/warn'
 
-import styles from './Notification.modules.scss'
+const NotificationContainer = styled(({ variant, ...rest }) => <Box {...rest} />)(
+  ({ variant }) => ({
+    position: 'relative',
+    ...{
+      instructional: messaging.default,
+      success: messaging.success,
+      error: messaging.error,
+      branded: { backgroundColor: colorWhiteLilac },
+    }[variant],
+  })
+)
+
+const MessageContainer = styled.div(({ hasIcon }) => ({
+  width: hasIcon ? 'calc(100% - 2.5rem)' : '100%',
+}))
+
+const DismissContainer = styled.div({
+  position: 'relative',
+})
+
+const DismissButtonWrapper = styled.div({
+  position: 'absolute',
+  top: '-0.2rem',
+  right: 0,
+})
 
 const iconByVariant = {
   success: {
@@ -70,11 +96,7 @@ class Notification extends React.Component {
     } = this.props
 
     return (
-      <Box
-        {...safeRest(rest)}
-        vertical={3}
-        className={joinClassNames(styles.base, styles[variant])}
-      >
+      <NotificationContainer {...safeRest(rest)} vertical={3} variant={variant}>
         <FlexGrid>
           <FlexGrid.Row>
             <FlexGrid.Col>
@@ -83,19 +105,15 @@ class Notification extends React.Component {
                   <FlexGrid.Col xs={dismissible ? 11 : undefined}>
                     <Box inline between={3}>
                       {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
-                      <div
-                        className={joinClassNames(
-                          isImportant(variant) ? styles.withIcon : styles.withoutIcon
-                        )}
-                      >
+                      <MessageContainer hasIcon={isImportant(variant)}>
                         <Paragraph>{children}</Paragraph>
-                      </div>
+                      </MessageContainer>
                     </Box>
                   </FlexGrid.Col>
                   {dismissible && (
                     <FlexGrid.Col>
-                      <Box className={styles.dismissContainer}>
-                        <div className={styles.dismiss}>
+                      <DismissContainer>
+                        <DismissButtonWrapper>
                           <StandaloneIcon
                             symbol="times"
                             size={24}
@@ -108,8 +126,8 @@ class Notification extends React.Component {
                               }
                             }}
                           />
-                        </div>
-                      </Box>
+                        </DismissButtonWrapper>
+                      </DismissContainer>
                     </FlexGrid.Col>
                   )}
                 </FlexGrid.Row>
@@ -117,7 +135,7 @@ class Notification extends React.Component {
             </FlexGrid.Col>
           </FlexGrid.Row>
         </FlexGrid>
-      </Box>
+      </NotificationContainer>
     )
   }
 
