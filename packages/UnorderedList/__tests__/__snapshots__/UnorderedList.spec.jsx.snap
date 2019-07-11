@@ -56,12 +56,6 @@ exports[`<UnorderedList /> can have a list style 1`] = `
   margin-bottom: 0;
 }
 
-@media (min-width:768px) {
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-}
-
 <UnorderedList
   listStyle="circle"
   size="medium"
@@ -132,6 +126,11 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                   "isStatic": false,
                   "lastClassName": "c2",
                   "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
                     [Function],
                   ],
                 },
@@ -303,12 +302,6 @@ exports[`<UnorderedList /> can have a list style 2`] = `
   margin-bottom: 0;
 }
 
-@media (min-width:768px) {
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-}
-
 <UnorderedList
   listStyle="x"
   size="medium"
@@ -379,6 +372,11 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                   "isStatic": false,
                   "lastClassName": "c2",
                   "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
                     [Function],
                   ],
                 },
@@ -552,12 +550,6 @@ exports[`<UnorderedList /> renders 1`] = `
 
 .c1 :last-child .c0 {
   margin-bottom: 0;
-}
-
-@media (min-width:768px) {
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
 }
 
 <ul
