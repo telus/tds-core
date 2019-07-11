@@ -53,12 +53,6 @@ exports[`<OrderedList /> can have a list style 1`] = `
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:768px) {
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-}
-
 <ol
   class="c0 c1 c0 c1 c2"
 >
@@ -141,12 +135,6 @@ exports[`<OrderedList /> can have a list style 2`] = `
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:768px) {
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-}
-
 <ol
   class="c0 c1 c0 c1 c2"
 >
@@ -222,12 +210,6 @@ exports[`<OrderedList /> renders 1`] = `
 .c1 .c0 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-}
-
-@media (min-width:768px) {
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
 }
 
 <ol
