@@ -208,7 +208,7 @@ const Footnote = props => {
       if (isOpen) {
         window.removeEventListener('click', handleClose)
         window.removeEventListener('keydown', handleClose)
-        window.addEventListener('touchstart', handleClose)
+        window.removeEventListener('touchstart', handleClose)
         window.removeEventListener('touchmove', preventDefault)
       }
     }
