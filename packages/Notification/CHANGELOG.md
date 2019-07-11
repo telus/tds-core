@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.34](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.33...@tds/core-notification@1.2.34) (2019-07-11)
+
+
+### Bug Fixes
+
+* **core-notification:** remove bold from success and error state ([97d0085](https://github.com/telusdigital/tds/commit/97d0085))
+
+
+
+
+
 ## [1.2.33](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.32...@tds/core-notification@1.2.33) (2019-07-10)
 
 **Note:** Version bump only for package @tds/core-notification
