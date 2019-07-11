@@ -2,6 +2,10 @@
 
 exports[`Box between applies space-between 1`] = `
 .c0 {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9,19 +13,6 @@ exports[`Box between applies space-between 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
 }
 
 <Box
@@ -47,6 +38,11 @@ exports[`Box between applies space-between 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
               [Function],
             ],
           },
@@ -89,12 +85,6 @@ exports[`Box between arranges the children horizontally or vertically be either 
   margin-bottom: 1rem;
 }
 
-@media (min-width:768px) {
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-}
-
 <Box
   between={3}
   inline={false}
@@ -118,6 +108,11 @@ exports[`Box between arranges the children horizontally or vertically be either 
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
               [Function],
             ],
           },
@@ -160,12 +155,6 @@ exports[`Box between arranges the children horizontally or vertically be either 
   margin-right: 1rem;
 }
 
-@media (min-width:768px) {
-  .c0 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
 <Box
   between={3}
   inline={true}
@@ -189,6 +178,11 @@ exports[`Box between arranges the children horizontally or vertically be either 
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
               [Function],
             ],
           },
@@ -231,12 +225,6 @@ exports[`Box between separates children by equal margins in a stack 1`] = `
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:768px) {
-  .c0 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-}
-
 <Box
   between={2}
   inline={false}
@@ -260,6 +248,11 @@ exports[`Box between separates children by equal margins in a stack 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
               [Function],
             ],
           },
@@ -302,12 +295,6 @@ exports[`Box between separates children by equal margins inline 1`] = `
   margin-right: 0.5rem;
 }
 
-@media (min-width:768px) {
-  .c0 > *:not(:last-child) {
-    margin-right: 0.5rem;
-  }
-}
-
 <Box
   between={2}
   inline={true}
@@ -331,6 +318,11 @@ exports[`Box between separates children by equal margins inline 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
               [Function],
             ],
           },
@@ -360,6 +352,7 @@ exports[`Box between separates children by equal margins inline 1`] = `
 
 exports[`Box can apply bottom margin 1`] = `
 .c0 {
+  margin-bottom: 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -367,21 +360,10 @@ exports[`Box can apply bottom margin 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 0.5rem;
 }
 
 .c0 > *:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    margin-bottom: 0.5rem;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
 }
 
 <Box
@@ -411,6 +393,11 @@ exports[`Box can apply bottom margin 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
             ],
           },
           "displayName": "styled.div",
@@ -439,6 +426,8 @@ exports[`Box can apply bottom margin 1`] = `
 
 exports[`Box insets can be either vertical or horizonal 1`] = `
 .c0 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -446,23 +435,10 @@ exports[`Box insets can be either vertical or horizonal 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .c0 > *:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
 }
 
 <Box
@@ -490,6 +466,11 @@ exports[`Box insets can be either vertical or horizonal 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
               [Function],
             ],
           },
@@ -520,6 +501,8 @@ exports[`Box insets can be either vertical or horizonal 1`] = `
 
 exports[`Box insets can be either vertical or horizonal 2`] = `
 .c0 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -527,23 +510,10 @@ exports[`Box insets can be either vertical or horizonal 2`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .c0 > *:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
 }
 
 <Box
@@ -571,6 +541,11 @@ exports[`Box insets can be either vertical or horizonal 2`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
               [Function],
             ],
           },
@@ -601,6 +576,10 @@ exports[`Box insets can be either vertical or horizonal 2`] = `
 
 exports[`Box insets can be either vertical or horizonal 3`] = `
 .c0 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -608,27 +587,10 @@ exports[`Box insets can be either vertical or horizonal 3`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .c0 > *:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
 }
 
 <Box
@@ -658,6 +620,11 @@ exports[`Box insets can be either vertical or horizonal 3`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
               [Function],
             ],
           },
@@ -689,6 +656,10 @@ exports[`Box insets can be either vertical or horizonal 3`] = `
 
 exports[`Box insets can be equal on all sides 1`] = `
 .c0 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -696,27 +667,10 @@ exports[`Box insets can be equal on all sides 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .c0 > *:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
 }
 
 <Box
@@ -744,6 +698,11 @@ exports[`Box insets can be equal on all sides 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
               [Function],
             ],
           },
