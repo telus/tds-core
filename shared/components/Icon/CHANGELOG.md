@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telus/tds-core/compare/@tds/shared-icon@1.1.3...@tds/shared-icon@2.0.0) (2019-07-11)
+
+
+### Features
+
+* **shared-icon:** upgrade to styled-components ([24ba744](https://github.com/telus/tds-core/commit/24ba744))
+
+
+### BREAKING CHANGES
+
+* **shared-icon:** upgrade to styled-components
+
+
+
+
+
 ## [1.1.3](https://github.com/telus/tds-core/compare/@tds/shared-icon@1.1.2...@tds/shared-icon@1.1.3) (2019-05-01)
 
 **Note:** Version bump only for package @tds/shared-icon

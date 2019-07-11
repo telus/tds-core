@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@1.3.0...@tds/core-decorative-icon@2.0.0) (2019-07-11)
+
+
+### Bug Fixes
+
+* **core-decorative-icon:** allow variant for SVG icons ([8fc7b85](https://github.com/telusdigital/tds/commit/8fc7b85))
+
+
+### Features
+
+* **core-decorative-icon:** upgrade to styled-components ([431c328](https://github.com/telusdigital/tds/commit/431c328))
+
+
+### BREAKING CHANGES
+
+* **core-decorative-icon:** upgrade to styled-components
+
+
+
+
+
 # [1.3.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@1.2.1...@tds/core-decorative-icon@1.3.0) (2019-07-10)
 
 
