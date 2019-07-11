@@ -27,80 +27,92 @@ const spacing = {
   },
 }
 
-const boxSpacing = (level, f, size) => {
-  return f(spacing[size][level])
+const boxSpacing = (level, f) => {
+  const mobileStyle = f(spacing.mobile[level])
+  if (spacing.mobile[level] === spacing.desktop[level]) {
+    return mobileStyle
+  }
+
+  const desktopStyle = media.from('md').css(f(spacing.desktop[level]))
+
+  return { ...mobileStyle, ...desktopStyle }
 }
 
-const betweenStyles = (between, inline, size) => {
+const betweenStyles = ({ between, inline }) => {
+  if (between === undefined) {
+    return undefined
+  }
+
   if (between === 'space-between') {
     return { justifyContent: 'space-between' }
   }
 
-  return boxSpacing(
-    between,
-    space => ({
-      '> *:not(:last-child)': {
-        ...(inline ? { marginRight: space } : { marginBottom: space }),
-      },
-    }),
-    size
-  )
+  return boxSpacing(between, space => ({
+    '> *:not(:last-child)': {
+      ...(inline ? { marginRight: space } : { marginBottom: space }),
+    },
+  }))
 }
 
-const horizontalStyles = (horizontal, size) => {
-  return boxSpacing(
-    horizontal,
-    space => ({
-      paddingLeft: space,
-      paddingRight: space,
-    }),
-    size
-  )
+const horizontalStyles = ({ horizontal }) => {
+  if (horizontal === undefined) {
+    return undefined
+  }
+  return boxSpacing(horizontal, space => ({
+    paddingLeft: space,
+    paddingRight: space,
+  }))
 }
 
-const verticalStyles = (vertical, size) => {
-  return boxSpacing(
-    vertical,
-    space => ({
-      paddingTop: space,
-      paddingBottom: space,
-    }),
-    size
-  )
+const verticalStyles = ({ vertical }) => {
+  if (vertical === undefined) {
+    return undefined
+  }
+
+  return boxSpacing(vertical, space => ({
+    paddingTop: space,
+    paddingBottom: space,
+  }))
 }
 
-const insetStyles = (inset, size) => {
-  return { ...verticalStyles(inset, size), ...horizontalStyles(inset, size) }
+const insetStyles = ({ inset }) => {
+  if (inset === undefined) {
+    return undefined
+  }
+
+  return boxSpacing(inset, space => ({
+    paddingTop: space,
+    paddingBottom: space,
+    paddingLeft: space,
+    paddingRight: space,
+  }))
 }
 
-const belowStyles = (below, size) => {
-  return boxSpacing(
-    below,
-    space => ({
-      marginBottom: space,
-    }),
-    size
-  )
+const belowStyles = ({ below }) => {
+  if (below === undefined) {
+    return undefined
+  }
+
+  return boxSpacing(below, space => ({
+    marginBottom: space,
+  }))
 }
 
 const StyledBox = styled.div.attrs(({ className, tag }) => {
   return { className, as: tag }
-})(({ inline, between, horizontal, vertical, inset, below }) => ({
-  display: between ? 'flex' : 'block',
-  flexDirection: inline ? 'row' : 'column',
-  ...betweenStyles(between, inline, 'mobile'),
-  ...(horizontal && horizontalStyles(horizontal, 'mobile')),
-  ...(vertical && verticalStyles(vertical, 'mobile')),
-  ...(inset && insetStyles(inset, 'mobile')),
-  ...(below && belowStyles(below, 'mobile')),
-  ...media.from('md').css({
-    ...betweenStyles(between, inline, 'desktop'),
-    ...(horizontal && horizontalStyles(horizontal, 'desktop')),
-    ...(vertical && verticalStyles(vertical, 'desktop')),
-    ...(inset && insetStyles(inset, 'desktop')),
-    ...(below && belowStyles(below, 'desktop')),
-  }),
-}))
+})(
+  betweenStyles,
+  horizontalStyles,
+  verticalStyles,
+  insetStyles,
+  belowStyles,
+  ({ between, inline }) => {
+    return {
+      display: between ? 'flex' : 'block',
+      flexDirection: inline ? 'row' : 'column',
+    }
+  }
+)
 
 /**
  * Apply spacing within or around components.
@@ -141,6 +153,8 @@ Box.propTypes = {
    *
    * By default, `between` will arrange the Box's children as a flex column. Combine with `inline` to arrange them
    * as a flex row.
+   *
+   * Use `space-between` to set an equal amount of space between all items, within the bounds of the parent.
    */
   between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 'space-between']),
   /**
