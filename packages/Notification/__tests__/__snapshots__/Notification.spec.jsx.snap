@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Notification /> renders 1`] = `
-.c2 {
+exports[`<Notification /> can have a variant 1`] = `
+.c4 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -17,7 +17,7 @@ exports[`<Notification /> renders 1`] = `
   text-align: left;
 }
 
-.c2 sup {
+.c4 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -25,7 +25,7 @@ exports[`<Notification /> renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c0 {
+.c1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: block;
@@ -34,7 +34,7 @@ exports[`<Notification /> renders 1`] = `
   flex-direction: column;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -44,12 +44,899 @@ exports[`<Notification /> renders 1`] = `
   flex-direction: row;
 }
 
-.c1 > *:not(:last-child) {
+.c2 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
+.c0 {
+  position: relative;
+}
+
+.c3 {
+  width: 100%;
+}
+
+<Notification
+  dismissible={false}
+  variant="instructional"
+>
+  <Styled(Component)
+    variant="instructional"
+    vertical={3}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      variant="instructional"
+      vertical={3}
+    >
+      <Component
+        className="c0"
+        variant="instructional"
+        vertical={3}
+      >
+        <Box
+          className="c0"
+          inline={false}
+          tag="div"
+          vertical={3}
+        >
+          <styled.div
+            className="c0"
+            inline={false}
+            tag="div"
+            vertical={3}
+          >
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={false}
+              tag="div"
+              vertical={3}
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                <FlexGrid
+                  gutter={true}
+                  limitWidth={true}
+                >
+                  <Broadcast
+                    channel="flex-grid"
+                    compareValues={[Function]}
+                    value={true}
+                  >
+                    <Grid
+                      className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+                      fluid={true}
+                    >
+                      <div
+                        className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                      >
+                        <Row>
+                          <Row
+                            className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                          >
+                            <div
+                              className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                            >
+                              <Col>
+                                <Subscriber
+                                  channel="flex-grid"
+                                  quiet={false}
+                                >
+                                  <Col
+                                    className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                    xs={true}
+                                  >
+                                    <div
+                                      className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                    >
+                                      <FlexGrid
+                                        gutter={false}
+                                        limitWidth={true}
+                                      >
+                                        <Broadcast
+                                          channel="flex-grid"
+                                          compareValues={[Function]}
+                                          value={false}
+                                        >
+                                          <Grid
+                                            className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+                                            fluid={true}
+                                          >
+                                            <div
+                                              className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                                            >
+                                              <Row>
+                                                <Row
+                                                  className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                                                >
+                                                  <div
+                                                    className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                                                  >
+                                                    <Col>
+                                                      <Subscriber
+                                                        channel="flex-grid"
+                                                        quiet={false}
+                                                      >
+                                                        <Col
+                                                          className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                                                          xs={true}
+                                                        >
+                                                          <div
+                                                            className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                                                          >
+                                                            <Box
+                                                              between={3}
+                                                              inline={true}
+                                                              tag="div"
+                                                            >
+                                                              <styled.div
+                                                                between={3}
+                                                                inline={true}
+                                                                tag="div"
+                                                              >
+                                                                <StyledComponent
+                                                                  between={3}
+                                                                  forwardedComponent={
+                                                                    Object {
+                                                                      "$$typeof": Symbol(react.forward_ref),
+                                                                      "attrs": Array [
+                                                                        [Function],
+                                                                      ],
+                                                                      "componentStyle": ComponentStyle {
+                                                                        "componentId": "sc-bdVaJa",
+                                                                        "isStatic": false,
+                                                                        "lastClassName": "c2",
+                                                                        "rules": Array [
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                        ],
+                                                                      },
+                                                                      "displayName": "styled.div",
+                                                                      "foldedComponentIds": Array [],
+                                                                      "render": [Function],
+                                                                      "styledComponentId": "sc-bdVaJa",
+                                                                      "target": "div",
+                                                                      "toString": [Function],
+                                                                      "warnTooManyClasses": [Function],
+                                                                      "withComponent": [Function],
+                                                                    }
+                                                                  }
+                                                                  forwardedRef={null}
+                                                                  inline={true}
+                                                                  tag="div"
+                                                                >
+                                                                  <div
+                                                                    className="c2"
+                                                                  >
+                                                                    <Notification__MessageContainer
+                                                                      hasIcon={false}
+                                                                    >
+                                                                      <StyledComponent
+                                                                        forwardedComponent={
+                                                                          Object {
+                                                                            "$$typeof": Symbol(react.forward_ref),
+                                                                            "attrs": Array [],
+                                                                            "componentStyle": ComponentStyle {
+                                                                              "componentId": "Notification__MessageContainer-sc-2ooxvf-0",
+                                                                              "isStatic": false,
+                                                                              "lastClassName": "c3",
+                                                                              "rules": Array [
+                                                                                [Function],
+                                                                              ],
+                                                                            },
+                                                                            "displayName": "Notification__MessageContainer",
+                                                                            "foldedComponentIds": Array [],
+                                                                            "render": [Function],
+                                                                            "styledComponentId": "Notification__MessageContainer-sc-2ooxvf-0",
+                                                                            "target": "div",
+                                                                            "toString": [Function],
+                                                                            "warnTooManyClasses": [Function],
+                                                                            "withComponent": [Function],
+                                                                          }
+                                                                        }
+                                                                        forwardedRef={null}
+                                                                        hasIcon={false}
+                                                                      >
+                                                                        <div
+                                                                          className="c3"
+                                                                        >
+                                                                          <Paragraph
+                                                                            align="left"
+                                                                            bold={false}
+                                                                            invert={false}
+                                                                            size="medium"
+                                                                          >
+                                                                            <Paragraph__StyledParagraph
+                                                                              align="left"
+                                                                              bold={false}
+                                                                              invert={false}
+                                                                              size="medium"
+                                                                            >
+                                                                              <StyledComponent
+                                                                                align="left"
+                                                                                bold={false}
+                                                                                forwardedComponent={
+                                                                                  Object {
+                                                                                    "$$typeof": Symbol(react.forward_ref),
+                                                                                    "attrs": Array [],
+                                                                                    "componentStyle": ComponentStyle {
+                                                                                      "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                      "isStatic": false,
+                                                                                      "lastClassName": "c4",
+                                                                                      "rules": Array [
+                                                                                        [Function],
+                                                                                        "word-wrap: break-word;",
+                                                                                        "padding: 0;",
+                                                                                        "margin: 0;",
+                                                                                        [Function],
+                                                                                        [Function],
+                                                                                        [Function],
+                                                                                        [Function],
+                                                                                        "sup {",
+                                                                                        "top: -0.5em;",
+                                                                                        "font-size: 0.875rem;",
+                                                                                        "position: relative;",
+                                                                                        "vertical-align: baseline;",
+                                                                                        "padding-left: 0.1em;",
+                                                                                        "}",
+                                                                                      ],
+                                                                                    },
+                                                                                    "displayName": "Paragraph__StyledParagraph",
+                                                                                    "foldedComponentIds": Array [],
+                                                                                    "render": [Function],
+                                                                                    "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                    "target": "p",
+                                                                                    "toString": [Function],
+                                                                                    "warnTooManyClasses": [Function],
+                                                                                    "withComponent": [Function],
+                                                                                  }
+                                                                                }
+                                                                                forwardedRef={null}
+                                                                                invert={false}
+                                                                                size="medium"
+                                                                              >
+                                                                                <p
+                                                                                  className="c4"
+                                                                                  size="medium"
+                                                                                >
+                                                                                  Some content
+                                                                                </p>
+                                                                              </StyledComponent>
+                                                                            </Paragraph__StyledParagraph>
+                                                                          </Paragraph>
+                                                                        </div>
+                                                                      </StyledComponent>
+                                                                    </Notification__MessageContainer>
+                                                                  </div>
+                                                                </StyledComponent>
+                                                              </styled.div>
+                                                            </Box>
+                                                          </div>
+                                                        </Col>
+                                                      </Subscriber>
+                                                    </Col>
+                                                  </div>
+                                                </Row>
+                                              </Row>
+                                            </div>
+                                          </Grid>
+                                        </Broadcast>
+                                      </FlexGrid>
+                                    </div>
+                                  </Col>
+                                </Subscriber>
+                              </Col>
+                            </div>
+                          </Row>
+                        </Row>
+                      </div>
+                    </Grid>
+                  </Broadcast>
+                </FlexGrid>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Notification>
+`;
+
+exports[`<Notification /> can have a variant 2`] = `
+.c3 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #248700;
+  font-size: 1.5rem;
+}
+
+.c3::before {
+  content: '\\f101';
+}
+
+.c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c0 {
+  position: relative;
+  background-color: #f4f9f2;
+}
+
+.c4 {
+  width: calc(100% - 2.5rem);
+}
+
+<Notification
+  dismissible={false}
+  variant="success"
+>
+  <Styled(Component)
+    variant="success"
+    vertical={3}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      variant="success"
+      vertical={3}
+    >
+      <Component
+        className="c0"
+        variant="success"
+        vertical={3}
+      >
+        <Box
+          className="c0"
+          inline={false}
+          tag="div"
+          vertical={3}
+        >
+          <styled.div
+            className="c0"
+            inline={false}
+            tag="div"
+            vertical={3}
+          >
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={false}
+              tag="div"
+              vertical={3}
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                <FlexGrid
+                  gutter={true}
+                  limitWidth={true}
+                >
+                  <Broadcast
+                    channel="flex-grid"
+                    compareValues={[Function]}
+                    value={true}
+                  >
+                    <Grid
+                      className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+                      fluid={true}
+                    >
+                      <div
+                        className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                      >
+                        <Row>
+                          <Row
+                            className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                          >
+                            <div
+                              className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                            >
+                              <Col>
+                                <Subscriber
+                                  channel="flex-grid"
+                                  quiet={false}
+                                >
+                                  <Col
+                                    className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                    xs={true}
+                                  >
+                                    <div
+                                      className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                    >
+                                      <FlexGrid
+                                        gutter={false}
+                                        limitWidth={true}
+                                      >
+                                        <Broadcast
+                                          channel="flex-grid"
+                                          compareValues={[Function]}
+                                          value={false}
+                                        >
+                                          <Grid
+                                            className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+                                            fluid={true}
+                                          >
+                                            <div
+                                              className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                                            >
+                                              <Row>
+                                                <Row
+                                                  className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                                                >
+                                                  <div
+                                                    className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                                                  >
+                                                    <Col>
+                                                      <Subscriber
+                                                        channel="flex-grid"
+                                                        quiet={false}
+                                                      >
+                                                        <Col
+                                                          className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                                                          xs={true}
+                                                        >
+                                                          <div
+                                                            className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                                                          >
+                                                            <Box
+                                                              between={3}
+                                                              inline={true}
+                                                              tag="div"
+                                                            >
+                                                              <styled.div
+                                                                between={3}
+                                                                inline={true}
+                                                                tag="div"
+                                                              >
+                                                                <StyledComponent
+                                                                  between={3}
+                                                                  forwardedComponent={
+                                                                    Object {
+                                                                      "$$typeof": Symbol(react.forward_ref),
+                                                                      "attrs": Array [
+                                                                        [Function],
+                                                                      ],
+                                                                      "componentStyle": ComponentStyle {
+                                                                        "componentId": "sc-bdVaJa",
+                                                                        "isStatic": false,
+                                                                        "lastClassName": "c2",
+                                                                        "rules": Array [
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                        ],
+                                                                      },
+                                                                      "displayName": "styled.div",
+                                                                      "foldedComponentIds": Array [],
+                                                                      "render": [Function],
+                                                                      "styledComponentId": "sc-bdVaJa",
+                                                                      "target": "div",
+                                                                      "toString": [Function],
+                                                                      "warnTooManyClasses": [Function],
+                                                                      "withComponent": [Function],
+                                                                    }
+                                                                  }
+                                                                  forwardedRef={null}
+                                                                  inline={true}
+                                                                  tag="div"
+                                                                >
+                                                                  <div
+                                                                    className="c2"
+                                                                  >
+                                                                    <DecorativeIcon
+                                                                      size={24}
+                                                                      symbol="checkmark"
+                                                                      variant="primary"
+                                                                    >
+                                                                      <Icon
+                                                                        aria-hidden="true"
+                                                                        size={24}
+                                                                        symbol="checkmark"
+                                                                        variant="primary"
+                                                                      >
+                                                                        <Icon__StyledIcon
+                                                                          aria-hidden="true"
+                                                                          iSize={24}
+                                                                          symbol="checkmark"
+                                                                          variant="primary"
+                                                                        >
+                                                                          <StyledComponent
+                                                                            aria-hidden="true"
+                                                                            forwardedComponent={
+                                                                              Object {
+                                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                                "attrs": Array [],
+                                                                                "componentStyle": ComponentStyle {
+                                                                                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                                                  "isStatic": false,
+                                                                                  "lastClassName": "c3",
+                                                                                  "rules": Array [
+                                                                                    [Function],
+                                                                                    [Function],
+                                                                                    [Function],
+                                                                                  ],
+                                                                                },
+                                                                                "displayName": "Icon__StyledIcon",
+                                                                                "foldedComponentIds": Array [],
+                                                                                "render": [Function],
+                                                                                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                                                "target": "i",
+                                                                                "toString": [Function],
+                                                                                "warnTooManyClasses": [Function],
+                                                                                "withComponent": [Function],
+                                                                              }
+                                                                            }
+                                                                            forwardedRef={null}
+                                                                            iSize={24}
+                                                                            symbol="checkmark"
+                                                                            variant="primary"
+                                                                          >
+                                                                            <i
+                                                                              aria-hidden="true"
+                                                                              className="c3"
+                                                                            />
+                                                                          </StyledComponent>
+                                                                        </Icon__StyledIcon>
+                                                                      </Icon>
+                                                                    </DecorativeIcon>
+                                                                    <Notification__MessageContainer
+                                                                      hasIcon={true}
+                                                                    >
+                                                                      <StyledComponent
+                                                                        forwardedComponent={
+                                                                          Object {
+                                                                            "$$typeof": Symbol(react.forward_ref),
+                                                                            "attrs": Array [],
+                                                                            "componentStyle": ComponentStyle {
+                                                                              "componentId": "Notification__MessageContainer-sc-2ooxvf-0",
+                                                                              "isStatic": false,
+                                                                              "lastClassName": "c4",
+                                                                              "rules": Array [
+                                                                                [Function],
+                                                                              ],
+                                                                            },
+                                                                            "displayName": "Notification__MessageContainer",
+                                                                            "foldedComponentIds": Array [],
+                                                                            "render": [Function],
+                                                                            "styledComponentId": "Notification__MessageContainer-sc-2ooxvf-0",
+                                                                            "target": "div",
+                                                                            "toString": [Function],
+                                                                            "warnTooManyClasses": [Function],
+                                                                            "withComponent": [Function],
+                                                                          }
+                                                                        }
+                                                                        forwardedRef={null}
+                                                                        hasIcon={true}
+                                                                      >
+                                                                        <div
+                                                                          className="c4"
+                                                                        >
+                                                                          <Paragraph
+                                                                            align="left"
+                                                                            bold={false}
+                                                                            invert={false}
+                                                                            size="medium"
+                                                                          >
+                                                                            <Paragraph__StyledParagraph
+                                                                              align="left"
+                                                                              bold={false}
+                                                                              invert={false}
+                                                                              size="medium"
+                                                                            >
+                                                                              <StyledComponent
+                                                                                align="left"
+                                                                                bold={false}
+                                                                                forwardedComponent={
+                                                                                  Object {
+                                                                                    "$$typeof": Symbol(react.forward_ref),
+                                                                                    "attrs": Array [],
+                                                                                    "componentStyle": ComponentStyle {
+                                                                                      "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                      "isStatic": false,
+                                                                                      "lastClassName": "c5",
+                                                                                      "rules": Array [
+                                                                                        [Function],
+                                                                                        "word-wrap: break-word;",
+                                                                                        "padding: 0;",
+                                                                                        "margin: 0;",
+                                                                                        [Function],
+                                                                                        [Function],
+                                                                                        [Function],
+                                                                                        [Function],
+                                                                                        "sup {",
+                                                                                        "top: -0.5em;",
+                                                                                        "font-size: 0.875rem;",
+                                                                                        "position: relative;",
+                                                                                        "vertical-align: baseline;",
+                                                                                        "padding-left: 0.1em;",
+                                                                                        "}",
+                                                                                      ],
+                                                                                    },
+                                                                                    "displayName": "Paragraph__StyledParagraph",
+                                                                                    "foldedComponentIds": Array [],
+                                                                                    "render": [Function],
+                                                                                    "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                    "target": "p",
+                                                                                    "toString": [Function],
+                                                                                    "warnTooManyClasses": [Function],
+                                                                                    "withComponent": [Function],
+                                                                                  }
+                                                                                }
+                                                                                forwardedRef={null}
+                                                                                invert={false}
+                                                                                size="medium"
+                                                                              >
+                                                                                <p
+                                                                                  className="c5"
+                                                                                  size="medium"
+                                                                                >
+                                                                                  Some content
+                                                                                </p>
+                                                                              </StyledComponent>
+                                                                            </Paragraph__StyledParagraph>
+                                                                          </Paragraph>
+                                                                        </div>
+                                                                      </StyledComponent>
+                                                                    </Notification__MessageContainer>
+                                                                  </div>
+                                                                </StyledComponent>
+                                                              </styled.div>
+                                                            </Box>
+                                                          </div>
+                                                        </Col>
+                                                      </Subscriber>
+                                                    </Col>
+                                                  </div>
+                                                </Row>
+                                              </Row>
+                                            </div>
+                                          </Grid>
+                                        </Broadcast>
+                                      </FlexGrid>
+                                    </div>
+                                  </Col>
+                                </Subscriber>
+                              </Col>
+                            </div>
+                          </Row>
+                        </Row>
+                      </div>
+                    </Grid>
+                  </Broadcast>
+                </FlexGrid>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Notification>
+`;
+
+exports[`<Notification /> renders 1`] = `
+.c4 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+}
+
+.c4 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c3 {
+  width: 100%;
+}
+
 <div
-  class="base instructional base instructional c0"
+  class="c0 sc-bwzfXH c0 c1"
 >
   <div
     class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -70,13 +957,13 @@ exports[`<Notification /> renders 1`] = `
               class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
             >
               <div
-                class="c1"
+                class="c2"
               >
                 <div
-                  class="withoutIcon"
+                  class="c3"
                 >
                   <p
-                    class="c2"
+                    class="c4"
                   >
                     Some content
                   </p>
