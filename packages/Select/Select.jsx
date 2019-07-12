@@ -284,9 +284,8 @@ Select.propTypes = {
    */
   placeholder: PropTypes.string,
   /**
-   * The value. Set this prop to change selected option.
-   *
-   * Only one of defaultValue or value should be set / mutated.
+   * Use `value` for controlled select. For uncontrolled select, use React's built-in `defaultValue` prop.
+   * See examples below for more details.
    */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
