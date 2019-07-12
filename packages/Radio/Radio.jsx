@@ -161,6 +161,11 @@ Radio.propTypes = {
    */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool]).isRequired,
   /**
+   * Use `checked` for controlled radio. For uncontrolled radio, use React's built-in `defaultChecked` prop.
+   * See examples below for more details.
+   */
+  checked: PropTypes.bool,
+  /**
    * The id. Must be unique within the group. If no id is provided, one will be generated in the following format: `name_value`
    */
   id: PropTypes.string,
@@ -183,6 +188,7 @@ Radio.defaultProps = {
   description: undefined,
   feedback: undefined,
   error: undefined,
+  checked: undefined,
 }
 
 Radio.displayName = 'Radio'
