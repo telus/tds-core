@@ -218,7 +218,8 @@ TextArea.propTypes = {
    */
   hint: PropTypes.string,
   /**
-   * The value.
+   * Use `value` for controlled textarea. For uncontrolled textarea, use React's built-in `defaultValue` prop.
+   * See examples below for more details.
    */
   value: PropTypes.string,
   /**
