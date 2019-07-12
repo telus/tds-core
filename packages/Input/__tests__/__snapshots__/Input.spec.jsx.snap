@@ -593,6 +593,7 @@ Object {
                 id="the-id"
                 onBlur={[Function]}
                 onFocus={[Function]}
+                onKeyDown={[Function]}
                 type="text"
               >
                 <StyledComponent
@@ -651,6 +652,7 @@ Object {
                   id="the-id"
                   onBlur={[Function]}
                   onFocus={[Function]}
+                  onKeyDown={[Function]}
                   type="text"
                 >
                   <input
@@ -659,6 +661,7 @@ Object {
                     id="the-id"
                     onBlur={[Function]}
                     onFocus={[Function]}
+                    onKeyDown={[Function]}
                     type="text"
                   />
                 </StyledComponent>
