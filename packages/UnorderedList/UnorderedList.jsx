@@ -12,6 +12,9 @@ import UnorderedItem from './UnorderedItem/UnorderedItem'
 
 const StyledListContainer = styled(Box)({
   ...list.nestedListSpacing,
+  '&': {
+    paddingLeft: 'calc(2rem + 1px)',
+  },
 })
 
 const injectListStyle = (child, listStyle, size) => React.cloneElement(child, { listStyle, size })
