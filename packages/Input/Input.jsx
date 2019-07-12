@@ -169,6 +169,20 @@ const Input = React.forwardRef(
       }
     }
 
+    const handleKeyDown = e => {
+      /**
+       * this is a workaround for a bug in chrome that moves
+       * the cursor into a wrong position if prepended with a space
+       */
+      if (type === 'email' && e.key === ' ') {
+        e.preventDefault()
+      }
+
+      if (rest.onKeyDown) {
+        rest.onKeyDown()
+      }
+    }
+
     return (
       <Box between={2}>
         {renderLabel(fieldId.identity(), label, hint, hintPosition, hintId, tooltip)}
@@ -180,12 +194,13 @@ const Input = React.forwardRef(
             type={type}
             ref={ref}
             id={fieldId.identity()}
-            {...(value ? { value } : {})}
+            value={value}
             feedback={feedback}
             aria-invalid={feedback === 'error'}
             aria-describedby={errorId || hintId || helperId || undefined}
             onFocus={handleFocus}
             onBlur={handleBlur}
+            onKeyDown={handleKeyDown}
           />
           {!rest.disabled && (
             <StyledFeedbackIcon>
@@ -225,7 +240,8 @@ Input.propTypes = {
    */
   hintPosition: PropTypes.oneOf(['inline', 'below']),
   /**
-   * The value.
+   * Use `value` for controlled inputs. For uncontrolled inputs, use React's built-in `defaultValue` prop.
+   * See examples below for more details.
    */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
