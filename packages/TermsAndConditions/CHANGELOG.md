@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.7](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.0-alpha.6...@tds/core-terms-and-conditions@1.0.0-alpha.7) (2019-07-12)
+
+
+### Bug Fixes
+
+* **core-terms-and-conditions:** remove touchstart event on unmount ([65018de](https://github.com/telus/tds-core/commit/65018de))
+
+
+
+
+
 # [1.0.0-alpha.6](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.0-alpha.5...@tds/core-terms-and-conditions@1.0.0-alpha.6) (2019-07-11)
 
 **Note:** Version bump only for package @tds/core-terms-and-conditions
