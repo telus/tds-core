@@ -146,7 +146,7 @@ Checkbox.propTypes = {
    */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool]).isRequired,
   /**
-   * Use `checked` for controlled checkbox. For uncontrolled checkbox, use React's built-in `defaultChecked` prop.
+   * Use `checked` for controlled Checkbox. For uncontrolled Checkbox, use React's built-in `defaultChecked` prop.
    * See examples below for more details.
    */
   checked: PropTypes.bool,
