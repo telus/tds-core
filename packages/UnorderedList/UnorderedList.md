@@ -1,5 +1,7 @@
 ### Minimal usage
 
+_Note: An `UnorderedList` should not be used adjacent to an `OrderedList`._
+
 ```jsx
 <UnorderedList>
   <UnorderedList.Item>Save any important voicemail messages.</UnorderedList.Item>
