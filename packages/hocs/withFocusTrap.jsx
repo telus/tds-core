@@ -13,7 +13,8 @@ const withFocusTrap = Component => {
 
     useEffect(() => {
       // setting the focus to the first focusable element
-      getFocusable(componentRef.current).focus()
+      const focusableElements = getFocusable(componentRef.current)[0]
+      if (focusableElements) focusableElements.focus()
     })
 
     // To force VoiceOver to treat the dialog as a modal we need to set the aria-label attribute.
