@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.7](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@3.0.6...@tds/core-unordered-list@3.0.7) (2019-07-15)
+
+
+### Bug Fixes
+
+* **core-unordered-list:** leave only 1px leftpadding from bullet ([db4c904](https://github.com/telusdigital/tds/commit/db4c904))
+
+
+
+
+
 ## [3.0.6](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@3.0.5...@tds/core-unordered-list@3.0.6) (2019-07-02)
 
 
