@@ -14,7 +14,7 @@ import { messaging } from '@tds/shared-styles'
 import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
-const NotificationContainer = styled(({ variant, ...rest }) => <Box {...rest} />)(
+const StyledNotificationContainer = styled(({ variant, ...rest }) => <Box {...rest} />)(
   ({ variant }) => ({
     position: 'relative',
     ...{
@@ -26,15 +26,15 @@ const NotificationContainer = styled(({ variant, ...rest }) => <Box {...rest} />
   })
 )
 
-const MessageContainer = styled.div(({ hasIcon }) => ({
+const StyledMessageContainer = styled.div(({ hasIcon }) => ({
   width: hasIcon ? 'calc(100% - 2.5rem)' : '100%',
 }))
 
-const DismissContainer = styled.div({
+const StyledDismissContainer = styled.div({
   position: 'relative',
 })
 
-const DismissButtonWrapper = styled.div({
+const StyledDismissButtonWrapper = styled.div({
   position: 'absolute',
   top: '-0.2rem',
   right: 0,
@@ -96,7 +96,7 @@ class Notification extends React.Component {
     } = this.props
 
     return (
-      <NotificationContainer {...safeRest(rest)} vertical={3} variant={variant}>
+      <StyledNotificationContainer {...safeRest(rest)} vertical={3} variant={variant}>
         <FlexGrid>
           <FlexGrid.Row>
             <FlexGrid.Col>
@@ -105,15 +105,15 @@ class Notification extends React.Component {
                   <FlexGrid.Col xs={dismissible ? 11 : undefined}>
                     <Box inline between={3}>
                       {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
-                      <MessageContainer hasIcon={isImportant(variant)}>
+                      <StyledMessageContainer hasIcon={isImportant(variant)}>
                         <Paragraph>{children}</Paragraph>
-                      </MessageContainer>
+                      </StyledMessageContainer>
                     </Box>
                   </FlexGrid.Col>
                   {dismissible && (
                     <FlexGrid.Col>
-                      <DismissContainer>
-                        <DismissButtonWrapper>
+                      <StyledDismissContainer>
+                        <StyledDismissButtonWrapper>
                           <StandaloneIcon
                             symbol="times"
                             size={24}
@@ -126,8 +126,8 @@ class Notification extends React.Component {
                               }
                             }}
                           />
-                        </DismissButtonWrapper>
-                      </DismissContainer>
+                        </StyledDismissButtonWrapper>
+                      </StyledDismissContainer>
                     </FlexGrid.Col>
                   )}
                 </FlexGrid.Row>
@@ -135,7 +135,7 @@ class Notification extends React.Component {
             </FlexGrid.Col>
           </FlexGrid.Row>
         </FlexGrid>
-      </NotificationContainer>
+      </StyledNotificationContainer>
     )
   }
 

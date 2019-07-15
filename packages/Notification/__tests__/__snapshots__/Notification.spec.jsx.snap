@@ -265,7 +265,7 @@ exports[`<Notification /> can have a variant 1`] = `
                                                                   <div
                                                                     className="c2"
                                                                   >
-                                                                    <Notification__MessageContainer
+                                                                    <Notification__StyledMessageContainer
                                                                       hasIcon={false}
                                                                     >
                                                                       <StyledComponent
@@ -274,17 +274,17 @@ exports[`<Notification /> can have a variant 1`] = `
                                                                             "$$typeof": Symbol(react.forward_ref),
                                                                             "attrs": Array [],
                                                                             "componentStyle": ComponentStyle {
-                                                                              "componentId": "Notification__MessageContainer-sc-2ooxvf-0",
+                                                                              "componentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
                                                                               "isStatic": false,
                                                                               "lastClassName": "c3",
                                                                               "rules": Array [
                                                                                 [Function],
                                                                               ],
                                                                             },
-                                                                            "displayName": "Notification__MessageContainer",
+                                                                            "displayName": "Notification__StyledMessageContainer",
                                                                             "foldedComponentIds": Array [],
                                                                             "render": [Function],
-                                                                            "styledComponentId": "Notification__MessageContainer-sc-2ooxvf-0",
+                                                                            "styledComponentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
                                                                             "target": "div",
                                                                             "toString": [Function],
                                                                             "warnTooManyClasses": [Function],
@@ -363,7 +363,7 @@ exports[`<Notification /> can have a variant 1`] = `
                                                                           </Paragraph>
                                                                         </div>
                                                                       </StyledComponent>
-                                                                    </Notification__MessageContainer>
+                                                                    </Notification__StyledMessageContainer>
                                                                   </div>
                                                                 </StyledComponent>
                                                               </styled.div>
@@ -744,7 +744,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                                                         </Icon__StyledIcon>
                                                                       </Icon>
                                                                     </DecorativeIcon>
-                                                                    <Notification__MessageContainer
+                                                                    <Notification__StyledMessageContainer
                                                                       hasIcon={true}
                                                                     >
                                                                       <StyledComponent
@@ -753,17 +753,17 @@ exports[`<Notification /> can have a variant 2`] = `
                                                                             "$$typeof": Symbol(react.forward_ref),
                                                                             "attrs": Array [],
                                                                             "componentStyle": ComponentStyle {
-                                                                              "componentId": "Notification__MessageContainer-sc-2ooxvf-0",
+                                                                              "componentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
                                                                               "isStatic": false,
                                                                               "lastClassName": "c4",
                                                                               "rules": Array [
                                                                                 [Function],
                                                                               ],
                                                                             },
-                                                                            "displayName": "Notification__MessageContainer",
+                                                                            "displayName": "Notification__StyledMessageContainer",
                                                                             "foldedComponentIds": Array [],
                                                                             "render": [Function],
-                                                                            "styledComponentId": "Notification__MessageContainer-sc-2ooxvf-0",
+                                                                            "styledComponentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
                                                                             "target": "div",
                                                                             "toString": [Function],
                                                                             "warnTooManyClasses": [Function],
@@ -842,7 +842,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                                                           </Paragraph>
                                                                         </div>
                                                                       </StyledComponent>
-                                                                    </Notification__MessageContainer>
+                                                                    </Notification__StyledMessageContainer>
                                                                   </div>
                                                                 </StyledComponent>
                                                               </styled.div>
