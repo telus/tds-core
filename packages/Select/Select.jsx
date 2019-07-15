@@ -284,7 +284,7 @@ Select.propTypes = {
    */
   placeholder: PropTypes.string,
   /**
-   * Use `value` for controlled select. For uncontrolled select, use React's built-in `defaultValue` prop.
+   * Use `value` for controlled Select. For uncontrolled Select, use React's built-in `defaultValue` prop.
    * See examples below for more details.
    */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
