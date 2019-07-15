@@ -6,6 +6,9 @@ import StandaloneIcon from '@tds/core-standalone-icon'
 import Paragraph from '@tds/core-paragraph'
 
 import Notification from '../Notification'
+import { warn } from '../../../shared/utils/warn'
+
+jest.mock('../../../shared/utils/warn')
 
 describe('<Notification />', () => {
   const defaultChildren = 'Some content'
@@ -147,15 +150,15 @@ describe('<Notification />', () => {
       notification.find(StandaloneIcon).simulate('click')
       expect(onDismiss).toHaveBeenCalled()
     })
-    it('does not call the provided callback when the dismissible prop is false', () => {
+    it('warns when the dismissible prop is false', () => {
       const onDismiss = jest.fn()
-      const notification = doMount({
+      doShallow({
         variant: 'error',
         dismissible: false,
         dismissibleA11yLabel: 'Close',
         onDismiss,
       })
-      expect(notification.find(StandaloneIcon)).not.toExist()
+      expect(warn).toHaveBeenCalled()
     })
   })
 })

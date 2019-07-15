@@ -134,13 +134,13 @@ class Notification extends React.Component {
     if (onExit && !dismissibleHasA11yLabel) {
       warn(
         'Notification',
-        'The props `onExit` must be used together with `dismissible` and `dismissibleA11yLabel`.'
+        'The prop `onExit` must be used together with `dismissible` and `dismissibleA11yLabel`.'
       )
     }
     if (onDismiss && !dismissibleHasA11yLabel) {
       warn(
         'Notification',
-        'The props `onDismiss` must be used together with `dismissible` and `dismissibleA11yLabel`.'
+        'The prop `onDismiss` must be used together with `dismissible` and `dismissibleA11yLabel`.'
       )
     }
     if (this.props.dismissible) {
@@ -198,14 +198,14 @@ Notification.propTypes = {
    *
    * @since 1.3.0
    */
-  onExit: PropTypes.func,
+  onDismiss: PropTypes.func,
   /**
-   * A callback function to be run on when the Notification has been fully dismissed and unmounted
+   * A callback function to be run when the Notification has fully played its exit animation
    * Requires `dismissible={true}`
    *
    * @since 1.3.0
    */
-  onDismiss: PropTypes.func,
+  onExit: PropTypes.func,
   /**
    * The message. Can be raw text or text components.
    */
@@ -216,8 +216,8 @@ Notification.defaultProps = {
   variant: 'instructional',
   dismissible: false,
   dismissibleA11yLabel: undefined,
-  onExit: undefined,
   onDismiss: undefined,
+  onExit: undefined,
 }
 
 export default Notification
