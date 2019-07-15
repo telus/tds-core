@@ -1,3 +1,5 @@
+_Note: An `OrderedList` should not be used adjacent to an `UnorderedList`._
+
 ```jsx
 <OrderedList>
   <OrderedList.Item>
