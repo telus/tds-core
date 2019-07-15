@@ -341,6 +341,36 @@ describe('Input', () => {
     })
   })
 
+  describe('email type', () => {
+    /**
+     * This test is used to prevent regressions for a chrome bug that moves the cursor into a wrong
+     * position if prepended with a space and the input type is email. It works by preventing any
+     * keyDown events where the key is ' '.
+     */
+    it('prevents spaces', () => {
+      const onKeyDownMock = jest.fn()
+      const preventDefaultMock = jest.fn()
+
+      const { findInputElement } = doMount({
+        label: 'Email',
+        type: 'email',
+        onKeyDown: onKeyDownMock,
+      })
+      const inputEl = findInputElement()
+      expect(inputEl).toHaveProp('type', 'email')
+
+      inputEl.simulate('keyDown', { key: ' ', preventDefault: preventDefaultMock })
+      expect(preventDefaultMock).toHaveBeenCalled()
+      expect(onKeyDownMock).toHaveBeenCalled()
+      preventDefaultMock.mockClear()
+      onKeyDownMock.mockClear()
+
+      inputEl.simulate('keyDown', { key: 'j', preventDefault: preventDefaultMock })
+      expect(preventDefaultMock).not.toHaveBeenCalled()
+      expect(onKeyDownMock).toHaveBeenCalled()
+    })
+  })
+
   it('passes additional attributes to the input element', () => {
     const { findInputElement } = doMount({ name: 'a name', id: 'the-id' })
 
