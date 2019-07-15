@@ -240,7 +240,7 @@ Input.propTypes = {
    */
   hintPosition: PropTypes.oneOf(['inline', 'below']),
   /**
-   * Use `value` for controlled inputs. For uncontrolled inputs, use React's built-in `defaultValue` prop.
+   * Use `value` for controlled Inputs. For uncontrolled Inputs, use React's built-in `defaultValue` prop.
    * See examples below for more details.
    */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -262,8 +262,8 @@ Input.propTypes = {
    * **Deprecation:** This is not a recommended pattern and will be removed in a future release.
    *                  Use `hint` with `hintPosition` value of `below`.
    *
-   * @param {String} feedback The input's current feedback state.
-   * @param {String} value The input's current value.
+   * @param {String} feedback The Input's current feedback state.
+   * @param {String} value The Input's current value.
    */
   helper: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   /**
