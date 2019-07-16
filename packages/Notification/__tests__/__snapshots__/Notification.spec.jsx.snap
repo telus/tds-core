@@ -50,6 +50,7 @@ exports[`<Notification /> can have a variant 1`] = `
 
 .c0 {
   position: relative;
+  background-color: #f7f7f8;
 }
 
 .c3 {
@@ -929,6 +930,7 @@ exports[`<Notification /> renders 1`] = `
 
 .c0 {
   position: relative;
+  background-color: #f7f7f8;
 }
 
 .c3 {

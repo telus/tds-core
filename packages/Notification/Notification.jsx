@@ -18,7 +18,7 @@ const StyledNotificationContainer = styled(({ variant, ...rest }) => <Box {...re
   ({ variant }) => ({
     position: 'relative',
     ...{
-      instructional: messaging.default,
+      instructional: messaging.standard,
       success: messaging.success,
       error: messaging.error,
       branded: { backgroundColor: colorWhiteLilac },
