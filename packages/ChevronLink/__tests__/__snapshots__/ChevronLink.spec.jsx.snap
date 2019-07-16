@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ChevronLink can have specific variants 1`] = `
-.c3 {
+.c4 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -18,8 +18,22 @@ exports[`ChevronLink can have specific variants 1`] = `
   font-size: 1rem;
 }
 
-.c3::before {
+.c4::before {
   content: '\\f107';
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .c1 {
@@ -42,14 +56,14 @@ exports[`ChevronLink can have specific variants 1`] = `
   color: #248700;
 }
 
-.c2 {
+.c3 {
   display: inline-block;
   -webkit-transition: -webkit-transform 300ms;
   -webkit-transition: transform 300ms;
   transition: transform 300ms;
 }
 
-.c0:hover .c2 {
+.c0:hover .c3 {
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
@@ -61,18 +75,18 @@ exports[`ChevronLink can have specific variants 1`] = `
   href="https://telus.com"
 >
   <span
-    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+    class="c2"
   >
     <span>
       Go home
     </span>
     <span
-      class="c2"
+      class="c3"
       direction="right"
     >
       <i
         aria-hidden="true"
-        class="c3"
+        class="c4"
       />
     </span>
   </span>
@@ -80,7 +94,7 @@ exports[`ChevronLink can have specific variants 1`] = `
 `;
 
 exports[`ChevronLink can have specific variants 2`] = `
-.c3 {
+.c4 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -97,8 +111,22 @@ exports[`ChevronLink can have specific variants 2`] = `
   font-size: 1rem;
 }
 
-.c3::before {
+.c4::before {
   content: '\\f107';
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .c1 {
@@ -121,14 +149,14 @@ exports[`ChevronLink can have specific variants 2`] = `
   color: #4b286d;
 }
 
-.c2 {
+.c3 {
   display: inline-block;
   -webkit-transition: -webkit-transform 300ms;
   -webkit-transition: transform 300ms;
   transition: transform 300ms;
 }
 
-.c0:hover .c2 {
+.c0:hover .c3 {
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
@@ -140,18 +168,18 @@ exports[`ChevronLink can have specific variants 2`] = `
   href="https://telus.com"
 >
   <span
-    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+    class="c2"
   >
     <span>
       Go home
     </span>
     <span
-      class="c2"
+      class="c3"
       direction="right"
     >
       <i
         aria-hidden="true"
-        class="c3"
+        class="c4"
       />
     </span>
   </span>
@@ -159,7 +187,7 @@ exports[`ChevronLink can have specific variants 2`] = `
 `;
 
 exports[`ChevronLink can have specific variants 3`] = `
-.c3 {
+.c4 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -176,8 +204,22 @@ exports[`ChevronLink can have specific variants 3`] = `
   font-size: 1rem;
 }
 
-.c3::before {
+.c4::before {
   content: '\\f107';
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .c1 {
@@ -200,14 +242,14 @@ exports[`ChevronLink can have specific variants 3`] = `
   color: #248700;
 }
 
-.c2 {
+.c3 {
   display: inline-block;
   -webkit-transition: -webkit-transform 300ms;
   -webkit-transition: transform 300ms;
   transition: transform 300ms;
 }
 
-.c0:hover .c2 {
+.c0:hover .c3 {
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
@@ -219,18 +261,18 @@ exports[`ChevronLink can have specific variants 3`] = `
   href="https://telus.com"
 >
   <span
-    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+    class="c2"
   >
     <span>
       Go home
     </span>
     <span
-      class="c2"
+      class="c3"
       direction="right"
     >
       <i
         aria-hidden="true"
-        class="c3"
+        class="c4"
       />
     </span>
   </span>
@@ -238,7 +280,7 @@ exports[`ChevronLink can have specific variants 3`] = `
 `;
 
 exports[`ChevronLink can have specific variants 4`] = `
-.c3 {
+.c4 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -255,8 +297,22 @@ exports[`ChevronLink can have specific variants 4`] = `
   font-size: 1rem;
 }
 
-.c3::before {
+.c4::before {
   content: '\\f107';
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .c1 {
@@ -279,14 +335,14 @@ exports[`ChevronLink can have specific variants 4`] = `
   color: #fff;
 }
 
-.c2 {
+.c3 {
   display: inline-block;
   -webkit-transition: -webkit-transform 300ms;
   -webkit-transition: transform 300ms;
   transition: transform 300ms;
 }
 
-.c0:hover .c2 {
+.c0:hover .c3 {
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
@@ -298,18 +354,18 @@ exports[`ChevronLink can have specific variants 4`] = `
   href="https://telus.com"
 >
   <span
-    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+    class="c2"
   >
     <span>
       Go home
     </span>
     <span
-      class="c2"
+      class="c3"
       direction="right"
     >
       <i
         aria-hidden="true"
-        class="c3"
+        class="c4"
       />
     </span>
   </span>
@@ -317,7 +373,7 @@ exports[`ChevronLink can have specific variants 4`] = `
 `;
 
 exports[`ChevronLink renders 1`] = `
-.c3 {
+.c4 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -334,8 +390,22 @@ exports[`ChevronLink renders 1`] = `
   font-size: 1rem;
 }
 
-.c3::before {
+.c4::before {
   content: '\\f107';
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .c1 {
@@ -358,14 +428,14 @@ exports[`ChevronLink renders 1`] = `
   color: #248700;
 }
 
-.c2 {
+.c3 {
   display: inline-block;
   -webkit-transition: -webkit-transform 300ms;
   -webkit-transition: transform 300ms;
   transition: transform 300ms;
 }
 
-.c0:hover .c2 {
+.c0:hover .c3 {
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
@@ -377,18 +447,18 @@ exports[`ChevronLink renders 1`] = `
   href="test.com"
 >
   <span
-    class="TDS_Box-modules__betweenRightMargin-2___20pzC TDS_Box-modules__inline___jTHcz"
+    class="c2"
   >
     <span>
       Go home
     </span>
     <span
-      class="c2"
+      class="c3"
       direction="right"
     >
       <i
         aria-hidden="true"
-        class="c3"
+        class="c4"
       />
     </span>
   </span>
