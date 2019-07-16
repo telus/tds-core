@@ -34,7 +34,7 @@ const renderIcon = icon => <DecorativeIcon symbol={icon.symbol} variant={icon.co
  *
  * @version ./package.json
  */
-class Notification extends React.Component {
+class Notification extends React.PureComponent {
   state = {
     dismissed: false,
     contentWrapperHeight: undefined,

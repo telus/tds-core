@@ -4,6 +4,7 @@ import { shallow, render, mount } from 'enzyme'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import StandaloneIcon from '@tds/core-standalone-icon'
 import Paragraph from '@tds/core-paragraph'
+// import { Fade } from '@tds/shared-animation'
 
 import Notification from '../Notification'
 import { warn } from '../../../shared/utils/warn'
@@ -159,6 +160,32 @@ describe('<Notification />', () => {
         onDismiss,
       })
       expect(warn).toHaveBeenCalled()
+    })
+  })
+  describe.skip('onExit', () => {
+    it('calls the provided callback when dismissible', () => {
+      /* eslint-disable */
+      jest.mock('@tds/shared-animation', () => ({
+        Fade: props => {
+
+          props.onExited()
+
+          return (<div {...props}>props.children</div>)
+        }
+      }))
+      /* eslint-enable */
+
+      const onExit = jest.fn()
+      const notification = doMount({
+        variant: 'error',
+        dismissible: true,
+        dismissibleA11yLabel: 'Close',
+        onExit,
+      })
+      notification.find(StandaloneIcon).simulate('click')
+
+      // console.log(notification.debug())
+      expect(onExit).toHaveBeenCalled()
     })
   })
 })
