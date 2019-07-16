@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Notification /> renders 1`] = `
-.c0 {
+.c2 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -17,7 +17,7 @@ exports[`<Notification /> renders 1`] = `
   text-align: left;
 }
 
-.c0 sup {
+.c2 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -25,8 +25,31 @@ exports[`<Notification /> renders 1`] = `
   padding-left: 0.1em;
 }
 
+.c0 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
 <div
-  class="TDS_Box-modules__verticalPadding-3___Fsv37 base instructional"
+  class="base instructional base instructional c0"
 >
   <div
     class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -47,13 +70,13 @@ exports[`<Notification /> renders 1`] = `
               class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
             >
               <div
-                class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+                class="c1"
               >
                 <div
                   class="withoutIcon"
                 >
                   <p
-                    class="c0"
+                    class="c2"
                   >
                     Some content
                   </p>
