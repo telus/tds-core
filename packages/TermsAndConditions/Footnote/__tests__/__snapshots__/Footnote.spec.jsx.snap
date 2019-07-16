@@ -189,6 +189,7 @@ exports[`Footnote renders closed 1`] = `
         role="dialog"
       >
         <div
+          class="FocusTrap__placeholder"
           tabindex="0"
         />
         <div>
@@ -272,6 +273,7 @@ exports[`Footnote renders closed 1`] = `
           />
         </div>
         <div
+          class="FocusTrap__placeholder"
           tabindex="0"
         />
       </div>
@@ -472,6 +474,7 @@ exports[`Footnote renders opened 1`] = `
         role="dialog"
       >
         <div
+          class="FocusTrap__placeholder"
           tabindex="0"
         />
         <div>
@@ -555,6 +558,7 @@ exports[`Footnote renders opened 1`] = `
           />
         </div>
         <div
+          class="FocusTrap__placeholder"
           tabindex="0"
         />
       </div>
