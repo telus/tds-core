@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<StepTracker /> renders 1`] = `
-.c0 {
+.c4 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -19,18 +19,34 @@ exports[`<StepTracker /> renders 1`] = `
   font-size: 1rem;
 }
 
-.c0::before {
+.c4::before {
   content: '\\f101';
 }
 
-.c1 {
+.c6 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: inherit;
   font-weight: inherit;
 }
 
-.c1 sup {
+.c6 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c7 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: inherit;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c7 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -39,23 +55,91 @@ exports[`<StepTracker /> renders 1`] = `
 }
 
 .c2 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: inherit;
-  word-wrap: break-word;
-  font-weight: 700;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
-.c2 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
+.c2:before,
+.c2:after {
+  position: absolute;
+  top: 17px;
+  width: calc(50% - 1.07rem);
+  content: '';
+  border-bottom: 0.1rem solid #54595f;
+}
+
+.c2:before {
+  left: 0;
+}
+
+.c2:after {
+  right: 0;
+}
+
+.c2:first-child:before {
+  content: none;
+}
+
+.c2:last-child:after {
+  content: none;
+}
+
+.c3 {
+  display: inline-block;
+  border: 0.1rem solid #248700;
+  border-radius: 50%;
+  line-height: 1.7rem;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 1rem;
+  background-color: #248700;
+  text-align: center;
+}
+
+.c8 {
+  display: inline-block;
+  border: 0.1rem solid #54595f;
+  border-radius: 50%;
+  line-height: 1.7rem;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 1rem;
+}
+
+.c5 {
+  display: none;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1rem 0;
+  background-color: #f7f7f8;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c9 {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: block;
+  }
 }
 
 <div
-  class="greyBg"
+  class="c0"
   data-testid="stepTrackerContainer"
 >
   <div
@@ -68,28 +152,28 @@ exports[`<StepTracker /> renders 1`] = `
         class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
       >
         <div
-          class="stepContainer"
+          class="c1"
         >
           <div
             aria-current="false"
             aria-label="Login"
-            class="step"
+            class="c2"
             data-isactive="true"
             data-testid="singleStepContainer-0"
           >
             <span
-              class="iconActive"
+              class="c3"
             >
               <i
                 aria-hidden="true"
-                class="c0"
+                class="c4"
               />
             </span>
             <div
-              class="label"
+              class="c5"
             >
               <span
-                class="c1"
+                class="c6"
               >
                 1. Login
               </span>
@@ -98,20 +182,20 @@ exports[`<StepTracker /> renders 1`] = `
           <div
             aria-current="true"
             aria-label="Purchase"
-            class="step"
+            class="c2"
             data-isactive="true"
             data-testid="singleStepContainer-1"
           >
             <span
-              class="iconActive"
+              class="c3"
             >
               <br />
             </span>
             <div
-              class="label"
+              class="c5"
             >
               <span
-                class="c2"
+                class="c7"
               >
                 2. Purchase
               </span>
@@ -120,20 +204,20 @@ exports[`<StepTracker /> renders 1`] = `
           <div
             aria-current="false"
             aria-label="Checkout"
-            class="step"
+            class="c2"
             data-isactive="false"
             data-testid="singleStepContainer-2"
           >
             <span
-              class="icon"
+              class="c8"
             >
               <br />
             </span>
             <div
-              class="label"
+              class="c5"
             >
               <span
-                class="c1"
+                class="c6"
               >
                 3. Checkout
               </span>
@@ -149,10 +233,10 @@ exports[`<StepTracker /> renders 1`] = `
         class="TDS_flexboxgrid2__col-xs-12___3Q9tF col-md-0 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdHidden___3fURS TDS_Col-modules__lgHidden___38qZL TDS_Col-modules__xlHidden___d5mDh TDS_Col-modules__padding___2tLQS"
       >
         <div
-          class="mobileLabel"
+          class="c9"
         >
           <span
-            class="c1"
+            class="c6"
             data-testid="mobileStepLabel"
           >
             <span>

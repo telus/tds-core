@@ -1,14 +1,33 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
+import { colorAthensGrey, colorWhite } from '@tds/core-colours'
 import Text from '@tds/core-text'
 import FlexGrid from '@tds/core-flex-grid'
+import { getCopy } from '@tds/util-helpers'
 
 import safeRest from '../../shared/utils/safeRest'
+import { deprecate } from '../../shared/utils/warn'
+
+import copyDictionary from './stepTrackerText'
 
 import Step from './Step/Step'
 
-import styles from './StepTracker.modules.scss'
+const StyledStepBg = styled.div(({ backgroundColour }) => ({
+  padding: '1rem 0',
+  backgroundColor: backgroundColour === 'grey' ? colorAthensGrey : colorWhite,
+}))
+
+const StyledStepContainer = styled.div({
+  display: 'flex',
+  flexDirection: 'row',
+})
+
+const StyledMobileLabel = styled.div({
+  width: '100%',
+  textAlign: 'center',
+})
 
 const parseStepText = (current, steps, mobileStepLabelTemplate) => {
   return (
@@ -30,19 +49,37 @@ const getStepLabel = (current, steps) => {
  * @version ./package.json
  */
 
-const StepTracker = ({ current, steps, mobileStepLabelTemplate, backgroundColour, ...rest }) => {
-  const stepText = parseStepText(current, steps, mobileStepLabelTemplate)
+const StepTracker = ({
+  current,
+  steps,
+  copy,
+  mobileStepLabelTemplate,
+  backgroundColour,
+  ...rest
+}) => {
+  if (mobileStepLabelTemplate && copy === undefined) {
+    deprecate(
+      'core-step-tracker',
+      'The `mobileStepLabelTemplate` prop, along with its default copy, is deprecated. Please use the `copy` prop. The `copy` prop will be required in the next major release.'
+    )
+  }
+
+  const stepText = parseStepText(
+    current,
+    steps,
+    getCopy(copyDictionary, copy).mobileStepLabel || mobileStepLabelTemplate
+  )
   const stepLabel = getStepLabel(current, steps)
   return (
-    <div
+    <StyledStepBg
       {...safeRest(rest)}
       data-testid="stepTrackerContainer"
-      className={backgroundColour === 'grey' ? styles.greyBg : styles.whiteBg}
+      backgroundColour={backgroundColour}
     >
       <FlexGrid>
         <FlexGrid.Row>
           <FlexGrid.Col xs={12}>
-            <div className={styles.stepContainer}>
+            <StyledStepContainer>
               {steps.map((label, index) => {
                 return (
                   <Step
@@ -55,20 +92,20 @@ const StepTracker = ({ current, steps, mobileStepLabelTemplate, backgroundColour
                   />
                 )
               })}
-            </div>
+            </StyledStepContainer>
           </FlexGrid.Col>
         </FlexGrid.Row>
         <FlexGrid.Row>
           <FlexGrid.Col xs={12} md={0}>
-            <div className={styles.mobileLabel}>
+            <StyledMobileLabel>
               <Text data-testid="mobileStepLabel">
                 {stepText} {stepLabel}
               </Text>
-            </div>
+            </StyledMobileLabel>
           </FlexGrid.Col>
         </FlexGrid.Row>
       </FlexGrid>
-    </div>
+    </StyledStepBg>
   )
 }
 
@@ -82,6 +119,25 @@ StepTracker.propTypes = {
    */
   steps: PropTypes.array.isRequired,
   /**
+   * @since 4.0.0
+   *
+   * Setting for text to display current step progress on mobile devices.
+   * Use the `copy` prop to either select provided English or French copy by passing 'en' or 'fr' respectively.
+   *
+   * To provide your own, pass a JSON object with the key `mobileStepLabel`.
+   * Use %current to place the current step and use %total to place the total amount of steps.
+   *
+   * This prop will be *required* when `mobileStepLabelTemplate` is removed.
+   */
+  copy: PropTypes.oneOfType([
+    PropTypes.oneOf(['en', 'fr']),
+    PropTypes.shape({
+      mobileStepLabel: PropTypes.string,
+    }),
+  ]),
+  /**
+   * @deprecated The same functionality with built-in defaults can be used via the `copy` prop.
+   *
    * String for text to display current step progress on mobile devices.
    * Use %current to place the current step and use %total to place the total amount of steps.
    */
@@ -93,6 +149,7 @@ StepTracker.propTypes = {
 }
 
 StepTracker.defaultProps = {
+  copy: undefined,
   mobileStepLabelTemplate: 'Step %{current} of %{total}:',
   backgroundColour: 'grey',
 }

@@ -17,6 +17,7 @@ initialState = {
 }
 ;<div>
   <StepTracker
+    copy="en"
     current={state.current}
     steps={['Plans & Addons', 'Account Creation', 'Phone Information', 'Payment Setup', 'Submit']}
   />
