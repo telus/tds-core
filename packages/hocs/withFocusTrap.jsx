@@ -21,7 +21,7 @@ const withFocusTrap = Component => {
         const focusableElements = componentRef.current && getFocusable(componentRef.current)[0]
         if (focusableElements) focusableElements.focus()
       }
-    }, [])
+    }, [autofocus])
 
     const handleFocus = isEnd => () => {
       const focusableElements = getFocusable(componentRef.current)
