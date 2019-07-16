@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BenefitWithHeading renders with icons set in each item 1`] = `
-.c0 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c0 > svg {
+.c3 > svg {
   fill: #4b286d;
 }
 
-.c0 > svg {
+.c3 > svg {
   width: 24px;
   height: 24px;
 }
 
-.c1 {
+.c4 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -29,8 +29,8 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c1 .c3,
-.c1 sup {
+.c4 .c6,
+.c4 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -38,7 +38,44 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
   top: -0.5em;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .c2 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
@@ -50,7 +87,7 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
   font-weight: 500;
 }
 
-.c2 sup {
+.c5 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -59,17 +96,17 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
 }
 
 <ul
-  class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+  class="c0"
 >
   <li
-    class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+    class="c1"
   >
     <div
-      class="TDS_Box-modules__verticalPadding-1___3lZ5x"
+      class="c2"
     >
       <i
         aria-hidden="true"
-        class="c0"
+        class="c3"
         size="24"
       >
         <svg
@@ -93,27 +130,27 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     </div>
     <div>
       <div
-        class="c1"
+        class="c4"
         data-testid="heading"
       >
         Some heading
       </div>
       <span
-        class="c2"
+        class="c5"
       >
         Some content
       </span>
     </div>
   </li>
   <li
-    class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+    class="c1"
   >
     <div
-      class="TDS_Box-modules__verticalPadding-1___3lZ5x"
+      class="c2"
     >
       <i
         aria-hidden="true"
-        class="c0"
+        class="c3"
         size="24"
       >
         <svg
@@ -137,13 +174,13 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
     </div>
     <div>
       <div
-        class="c1"
+        class="c4"
         data-testid="heading"
       >
         Some other heading
       </div>
       <span
-        class="c2"
+        class="c5"
       >
         Some other content
       </span>
@@ -153,23 +190,23 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
 `;
 
 exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
-.c0 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c0 > svg {
+.c3 > svg {
   fill: #4b286d;
 }
 
-.c0 > svg {
+.c3 > svg {
   width: 24px;
   height: 24px;
 }
 
-.c1 {
+.c4 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -181,8 +218,8 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c1 .c3,
-.c1 sup {
+.c4 .c6,
+.c4 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -190,7 +227,44 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
   top: -0.5em;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .c2 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
@@ -202,7 +276,7 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
   font-weight: 500;
 }
 
-.c2 sup {
+.c5 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -211,17 +285,17 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
 }
 
 <ul
-  class="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+  class="c0"
 >
   <li
-    class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+    class="c1"
   >
     <div
-      class="TDS_Box-modules__verticalPadding-1___3lZ5x"
+      class="c2"
     >
       <i
         aria-hidden="true"
-        class="c0"
+        class="c3"
         size="24"
       >
         <svg
@@ -245,27 +319,27 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     </div>
     <div>
       <div
-        class="c1"
+        class="c4"
         data-testid="heading"
       >
         Some heading
       </div>
       <span
-        class="c2"
+        class="c5"
       >
         Some content
       </span>
     </div>
   </li>
   <li
-    class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+    class="c1"
   >
     <div
-      class="TDS_Box-modules__verticalPadding-1___3lZ5x"
+      class="c2"
     >
       <i
         aria-hidden="true"
-        class="c0"
+        class="c3"
         size="24"
       >
         <svg
@@ -289,13 +363,13 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
     </div>
     <div>
       <div
-        class="c1"
+        class="c4"
         data-testid="heading"
       >
         Some other heading
       </div>
       <span
-        class="c2"
+        class="c5"
       >
         Some other content
       </span>

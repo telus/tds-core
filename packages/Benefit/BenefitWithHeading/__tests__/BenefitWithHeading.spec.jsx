@@ -52,7 +52,7 @@ describe('BenefitWithHeading', () => {
   it('renders an HTML ul tag', () => {
     const benefit = doShallow()
 
-    expect(benefit.dive()).toHaveDisplayName('ul')
+    expect(benefit.dive().props().tag).toEqual('ul')
   })
 
   it('has a heading level 4', () => {
@@ -77,7 +77,7 @@ describe('BenefitWithHeading', () => {
         </BenefitWithHeading.Item>
       )
 
-      expect(benefitItem.dive()).toHaveDisplayName('li')
+      expect(benefitItem.dive().props().tag).toEqual('li')
     })
 
     it('receives icons from the parent', () => {
