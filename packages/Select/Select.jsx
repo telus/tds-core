@@ -131,18 +131,21 @@ const renderError = (error, errorId) => (
   </InputFeedback>
 )
 
-const renderLabel = (id, label, hint, hintId, tooltip) => (
-  <Box inline between="space-between">
-    <label htmlFor={id || generateId(label).identity()}>
-      <StyledLabelContainer inline tag="span" between={2}>
-        <Text size="medium" bold data-testid="selectLabel">
-          {label}
-        </Text>
-        {hint && renderHint(hint, Text, hintId)}
-      </StyledLabelContainer>
-    </label>
-    {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
-  </Box>
+const renderLabel = (id, label, hint, hintPosition, hintId, tooltip) => (
+  <div>
+    <Box inline between="space-between">
+      <label htmlFor={id || generateId(label).identity()}>
+        <StyledLabelContainer inline tag="span" between={2}>
+          <Text size="medium" bold data-testid="selectLabel">
+            {label}
+          </Text>
+          {hint && hintPosition === 'inline' && renderHint(hint, Text, hintId)}
+        </StyledLabelContainer>
+      </label>
+      {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
+    </Box>
+    {hint && hintPosition === 'below' && renderHint(hint, Text, hintId)}
+  </div>
 )
 
 const renderHelper = (helper, helperId, feedback, value) => {
@@ -172,6 +175,7 @@ const Select = React.forwardRef(
       placeholder,
       label,
       hint,
+      hintPosition,
       value,
       defaultValue,
       feedback,
@@ -204,7 +208,7 @@ const Select = React.forwardRef(
 
     return (
       <Box between={2}>
-        {renderLabel(fieldId.identity(), label, hint, hintId, tooltip)}
+        {renderLabel(fieldId.identity(), label, hint, hintPosition, hintId, tooltip)}
         {helper && renderHelper(helper, helperId, feedback, value)}
         {error && feedback === 'error' && renderError(error, errorId)}
         <div css={{ position: 'relative' }}>
@@ -280,6 +284,10 @@ Select.propTypes = {
    */
   hint: PropTypes.string,
   /**
+   * Position of the `hint` relative to `label`.
+   */
+  hintPosition: PropTypes.oneOf(['inline', 'below']),
+  /**
    * Show a un-selectable initial option.
    */
   placeholder: PropTypes.string,
@@ -322,6 +330,7 @@ Select.propTypes = {
 Select.defaultProps = {
   id: undefined,
   hint: undefined,
+  hintPosition: 'inline',
   placeholder: undefined,
   value: undefined,
   defaultValue: '',

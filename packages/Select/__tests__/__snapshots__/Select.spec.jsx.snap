@@ -293,6 +293,7 @@ exports[`Select can have an error message 1`] = `
   defaultValue=""
   error="Oh no a terrible error!"
   feedback="error"
+  hintPosition="inline"
   id="some-id"
   label="The select"
   options={
@@ -358,217 +359,219 @@ exports[`Select can have an error message 1`] = `
         <div
           className="c0"
         >
-          <Box
-            between="space-between"
-            inline={true}
-            tag="div"
-          >
-            <styled.div
+          <div>
+            <Box
               between="space-between"
               inline={true}
               tag="div"
             >
-              <StyledComponent
+              <styled.div
                 between="space-between"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [
-                      [Function],
-                    ],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
-                      "isStatic": false,
-                      "lastClassName": "c12",
-                      "rules": Array [
-                        [Function],
-                        [Function],
-                        [Function],
-                        [Function],
-                        [Function],
-                        [Function],
-                      ],
-                    },
-                    "displayName": "styled.div",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
-                    "target": "div",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
                 inline={true}
                 tag="div"
               >
-                <div
-                  className="c1"
+                <StyledComponent
+                  between="space-between"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [
+                        [Function],
+                      ],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bdVaJa",
+                        "isStatic": false,
+                        "lastClassName": "c12",
+                        "rules": Array [
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bdVaJa",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  inline={true}
+                  tag="div"
                 >
-                  <label
-                    htmlFor="some-id"
+                  <div
+                    className="c1"
                   >
-                    <Styled(Box)
-                      between={2}
-                      inline={true}
-                      tag="span"
+                    <label
+                      htmlFor="some-id"
                     >
-                      <StyledComponent
+                      <Styled(Box)
                         between={2}
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-bZQynM",
-                              "isStatic": true,
-                              "lastClassName": "c2",
-                              "rules": Array [
-                                "align-items: center;",
-                              ],
-                            },
-                            "displayName": "Styled(Box)",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-bZQynM",
-                            "target": [Function],
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
                         inline={true}
                         tag="span"
                       >
-                        <Box
+                        <StyledComponent
                           between={2}
-                          className="c2"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bZQynM",
+                                "isStatic": true,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  "align-items: center;",
+                                ],
+                              },
+                              "displayName": "Styled(Box)",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bZQynM",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
                           inline={true}
                           tag="span"
                         >
-                          <styled.div
+                          <Box
                             between={2}
                             className="c2"
                             inline={true}
                             tag="span"
                           >
-                            <StyledComponent
+                            <styled.div
                               between={2}
                               className="c2"
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [
-                                    [Function],
-                                  ],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
-                                    "isStatic": false,
-                                    "lastClassName": "c12",
-                                    "rules": Array [
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                    ],
-                                  },
-                                  "displayName": "styled.div",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
                               inline={true}
                               tag="span"
                             >
-                              <span
-                                className="c2 sc-bZQynM c2 c3"
+                              <StyledComponent
+                                between={2}
+                                className="c2"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [
+                                      [Function],
+                                    ],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bdVaJa",
+                                      "isStatic": false,
+                                      "lastClassName": "c12",
+                                      "rules": Array [
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                      ],
+                                    },
+                                    "displayName": "styled.div",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bdVaJa",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                inline={true}
+                                tag="span"
                               >
-                                <Text
-                                  block={false}
-                                  bold={true}
-                                  data-testid="selectLabel"
-                                  invert={false}
-                                  size="medium"
+                                <span
+                                  className="c2 sc-bZQynM c2 c3"
                                 >
-                                  <Text__StyledText
+                                  <Text
                                     block={false}
                                     bold={true}
                                     data-testid="selectLabel"
                                     invert={false}
                                     size="medium"
                                   >
-                                    <StyledComponent
+                                    <Text__StyledText
                                       block={false}
                                       bold={true}
                                       data-testid="selectLabel"
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c4",
-                                            "rules": Array [
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              "sup {",
-                                              "top: -0.5em;",
-                                              "font-size: 0.875rem;",
-                                              "position: relative;",
-                                              "vertical-align: baseline;",
-                                              "padding-left: 0.1em;",
-                                              "}",
-                                            ],
-                                          },
-                                          "displayName": "Text__StyledText",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                          "target": "span",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
                                       invert={false}
                                       size="medium"
                                     >
-                                      <span
-                                        className="c4"
+                                      <StyledComponent
+                                        block={false}
+                                        bold={true}
                                         data-testid="selectLabel"
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                              "isStatic": false,
+                                              "lastClassName": "c4",
+                                              "rules": Array [
+                                                [Function],
+                                                [Function],
+                                                [Function],
+                                                [Function],
+                                                [Function],
+                                                "sup {",
+                                                "top: -0.5em;",
+                                                "font-size: 0.875rem;",
+                                                "position: relative;",
+                                                "vertical-align: baseline;",
+                                                "padding-left: 0.1em;",
+                                                "}",
+                                              ],
+                                            },
+                                            "displayName": "Text__StyledText",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                            "target": "span",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        invert={false}
                                         size="medium"
                                       >
-                                        The select
-                                      </span>
-                                    </StyledComponent>
-                                  </Text__StyledText>
-                                </Text>
-                              </span>
-                            </StyledComponent>
-                          </styled.div>
-                        </Box>
-                      </StyledComponent>
-                    </Styled(Box)>
-                  </label>
-                </div>
-              </StyledComponent>
-            </styled.div>
-          </Box>
+                                        <span
+                                          className="c4"
+                                          data-testid="selectLabel"
+                                          size="medium"
+                                        >
+                                          The select
+                                        </span>
+                                      </StyledComponent>
+                                    </Text__StyledText>
+                                  </Text>
+                                </span>
+                              </StyledComponent>
+                            </styled.div>
+                          </Box>
+                        </StyledComponent>
+                      </Styled(Box)>
+                    </label>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </Box>
+          </div>
           <InputFeedback
             feedback="error"
             id="some-id_error-message"
@@ -1236,6 +1239,210 @@ exports[`Select disabling deactivates the select 1`] = `[Function]`;
 exports[`Select disabling removes the positioning of the select so that the disabled treatment is displayed 1`] = `[Function]`;
 
 exports[`Select feedback states ensures that the contents do not overlap the icons 1`] = `[Function]`;
+
+exports[`Select label can have a hint below 1`] = `
+.c2 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c2 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<label
+  htmlFor="the-select"
+>
+  <Styled(Box)
+    between={2}
+    inline={true}
+    tag="span"
+  >
+    <StyledComponent
+      between={2}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "align-items: center;",
+            ],
+          },
+          "displayName": "Styled(Box)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={true}
+      tag="span"
+    >
+      <Box
+        between={2}
+        className="c0"
+        inline={true}
+        tag="span"
+      >
+        <styled.div
+          between={2}
+          className="c0"
+          inline={true}
+          tag="span"
+        >
+          <StyledComponent
+            between={2}
+            className="c0"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  [Function],
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "ivczOm",
+                  "rules": Array [
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                    [Function],
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            inline={true}
+            tag="span"
+          >
+            <span
+              className="c0 sc-bZQynM c0 c1"
+            >
+              <Text
+                block={false}
+                bold={true}
+                data-testid="selectLabel"
+                invert={false}
+                size="medium"
+              >
+                <Text__StyledText
+                  block={false}
+                  bold={true}
+                  data-testid="selectLabel"
+                  invert={false}
+                  size="medium"
+                >
+                  <StyledComponent
+                    block={false}
+                    bold={true}
+                    data-testid="selectLabel"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "Text__StyledText-sc-1m0rr67-0",
+                          "isStatic": false,
+                          "lastClassName": "jntIDl",
+                          "rules": Array [
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            "sup {",
+                            "top: -0.5em;",
+                            "font-size: 0.875rem;",
+                            "position: relative;",
+                            "vertical-align: baseline;",
+                            "padding-left: 0.1em;",
+                            "}",
+                          ],
+                        },
+                        "displayName": "Text__StyledText",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    invert={false}
+                    size="medium"
+                  >
+                    <span
+                      className="c2"
+                      data-testid="selectLabel"
+                      size="medium"
+                    >
+                      The select
+                    </span>
+                  </StyledComponent>
+                </Text__StyledText>
+              </Text>
+            </span>
+          </StyledComponent>
+        </styled.div>
+      </Box>
+    </StyledComponent>
+  </Styled(Box)>
+</label>
+`;
 
 exports[`Select label can have a short hint 1`] = `
 .c2 {
@@ -1956,23 +2163,25 @@ exports[`Select renders 1`] = `
 <div
   class="c0"
 >
-  <div
-    class="c1"
-  >
-    <label
-      for="the-select"
+  <div>
+    <div
+      class="c1"
     >
-      <span
-        class="c2 sc-bZQynM c2 c3"
+      <label
+        for="the-select"
       >
         <span
-          class="c4"
-          data-testid="selectLabel"
+          class="c2 sc-bZQynM c2 c3"
         >
-          The select
+          <span
+            class="c4"
+            data-testid="selectLabel"
+          >
+            The select
+          </span>
         </span>
-      </span>
-    </label>
+      </label>
+    </div>
   </div>
   <div
     class="c5"
@@ -2265,23 +2474,25 @@ exports[`Select renders with a feedback state and icon 1`] = `
 <div
   class="c0"
 >
-  <div
-    class="c1"
-  >
-    <label
-      for="the-select"
+  <div>
+    <div
+      class="c1"
     >
-      <span
-        class="c2 sc-bZQynM c2 c3"
+      <label
+        for="the-select"
       >
         <span
-          class="c4"
-          data-testid="selectLabel"
+          class="c2 sc-bZQynM c2 c3"
         >
-          The select
+          <span
+            class="c4"
+            data-testid="selectLabel"
+          >
+            The select
+          </span>
         </span>
-      </span>
-    </label>
+      </label>
+    </div>
   </div>
   <div
     class="c5"
