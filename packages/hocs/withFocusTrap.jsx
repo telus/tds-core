@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 // Returns an array of focusable elements in the order they are found in c
 const selector =
-  'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"]):not(.FocusTrap__placeholder), audio[controls], video[controls], [contenteditable]:not([contenteditable=false])'
+  'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"]), audio[controls], video[controls], [contenteditable]:not([contenteditable=false])'
 const getFocusable = c => c.querySelectorAll(selector)
 
 const withFocusTrap = Component => {
@@ -29,10 +29,12 @@ const withFocusTrap = Component => {
     }
 
     return (
-      <div role="dialog" aria-modal="true" aria-label={a11yText} ref={componentRef}>
-        <div onFocus={handleFocus(false)} tabIndex={0} className="FocusTrap__placeholder" />
-        <Component {...rest} />
-        <div onFocus={handleFocus(true)} tabIndex={0} className="FocusTrap__placeholder" />
+      <div role="dialog" aria-modal="true" aria-label={a11yText}>
+        <div onFocus={handleFocus(false)} tabIndex={0} />
+        <div ref={componentRef}>
+          <Component {...rest} />
+        </div>
+        <div onFocus={handleFocus(true)} tabIndex={0} />
       </div>
     )
   }
