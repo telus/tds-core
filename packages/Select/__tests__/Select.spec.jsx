@@ -79,6 +79,12 @@ describe('Select', () => {
 
       expect(label).toMatchSnapshot()
     })
+
+    it('can have a hint below', () => {
+      const { label } = doMount({ hint: 'The short hint', hintPosition: 'below' })
+
+      expect(label).toMatchSnapshot()
+    })
   })
 
   describe('connecting the label to the select', () => {
