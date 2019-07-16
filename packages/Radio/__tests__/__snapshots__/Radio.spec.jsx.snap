@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio allows numbers as value 1`] = `
-.c7 {
+.c9 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -9,7 +9,7 @@ exports[`Radio allows numbers as value 1`] = `
   font-weight: inherit;
 }
 
-.c7 sup {
+.c9 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -17,7 +17,35 @@ exports[`Radio allows numbers as value 1`] = `
   padding-left: 0.1em;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c6 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -47,17 +75,17 @@ exports[`Radio allows numbers as value 1`] = `
   background-color: #fff;
 }
 
-.c4 > i {
+.c6 > i {
   display: none;
 }
 
-.c1 {
+.c2 {
   position: fixed;
   opacity: 0;
   pointer-events: none;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -65,28 +93,28 @@ exports[`Radio allows numbers as value 1`] = `
   cursor: pointer;
 }
 
-.c0:focus ~ .c2 > div > .c3 {
+.c1:focus ~ .c3 > div > .c5 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c0:checked ~ .c2 > div > .c3 {
+.c1:checked ~ .c3 > div > .c5 {
   border-color: #54595f;
 }
 
-.c0:checked ~ .c2 > div > .c3 > span {
+.c1:checked ~ .c3 > div > .c5 > span {
   display: block;
 }
 
-.c0:disabled ~ .c2 > div > .c3 {
+.c1:disabled ~ .c3 > div > .c5 {
   border-color: #d8d8d8;
 }
 
-.c0:disabled ~ .c2 > div > div {
+.c1:disabled ~ .c3 > div > div {
   color: #d8d8d8;
 }
 
-.c5 {
+.c7 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -94,16 +122,16 @@ exports[`Radio allows numbers as value 1`] = `
   display: none;
 }
 
-.c6 {
+.c8 {
   width: 100%;
 }
 
 <div
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+  class="c0"
 >
   <input
     aria-invalid="false"
-    class="c0 c1"
+    class="c1 c2"
     data-testid="hidden-input"
     id="the-group_1"
     name="the-group"
@@ -111,27 +139,27 @@ exports[`Radio allows numbers as value 1`] = `
     value="1"
   />
   <label
-    class="c2"
+    class="c3"
     data-testid="checkbox-label"
     for="the-group_1"
   >
     <div
-      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+      class="c4"
     >
       <span
-        class="c3 c4"
+        class="c5 c6"
         data-testid="fake-input"
       >
         <span
-          class="c5"
+          class="c7"
         />
       </span>
       <div
-        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c6"
+        class="c8 sc-htpNat c8 c0"
       >
         <div>
           <span
-            class="c7"
+            class="c9"
           >
             A label
           </span>
@@ -3535,317 +3563,6 @@ Array [
 `;
 
 exports[`Radio must have a label 1`] = `
-.c5 {
-  color: #2a2c2e;
-  color: inherit;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.c5 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c2 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
-  outline: 0;
-  line-height: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
-  margin-top: 0.125rem;
-  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
-  transition: border-color 0.1s linear,background-color 0.1s linear;
-  border-radius: 50%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #54595f;
-  background-color: #fff;
-}
-
-.c2 > i {
-  display: none;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-}
-
-.c6:focus ~ .c0 > div > .c1 {
-  box-shadow: 0 0 4px 1px #54595f;
-  border-color: #fff;
-}
-
-.c6:checked ~ .c0 > div > .c1 {
-  border-color: #54595f;
-}
-
-.c6:checked ~ .c0 > div > .c1 > span {
-  display: block;
-}
-
-.c6:disabled ~ .c0 > div > .c1 {
-  border-color: #d8d8d8;
-}
-
-.c6:disabled ~ .c0 > div > div {
-  color: #d8d8d8;
-}
-
-.c3 {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #248700;
-  display: none;
-}
-
-.c4 {
-  width: 100%;
-}
-
-<label
-  className="c0"
-  data-testid="checkbox-label"
-  htmlFor="radiogroup_the-value"
->
-  <Box
-    between={3}
-    inline={true}
-    tag="div"
-  >
-    <div
-      className="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
-    >
-      <Radio__FakeRadio
-        data-testid="fake-input"
-      >
-        <StyledComponent
-          data-testid="fake-input"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "c1",
-                "isStatic": true,
-                "lastClassName": "c2",
-                "rules": Array [
-                  "height: 20px;",
-                  "width: 20px;",
-                  "min-height: 20px;",
-                  "min-width: 20px;",
-                  "outline: 0;",
-                  "line-height: 0;",
-                  "display: flex;",
-                  "align-items: center;",
-                  "justify-content: center;",
-                  "cursor: pointer;",
-                  "margin-top: 0.125rem;",
-                  "transition: border-color 0.1s linear, background-color 0.1s linear;",
-                  "border-radius: 50%;",
-                  "border-width: 1px;",
-                  "border-style: solid;",
-                  "border-color: #54595f;",
-                  "background-color: #fff;",
-                  "& > i {",
-                  "display: none;",
-                  "}",
-                ],
-              },
-              "displayName": "Radio__FakeRadio",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "c1",
-              "target": "span",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-        >
-          <span
-            className="c1 c2"
-            data-testid="fake-input"
-          >
-            <Radio__InnerChecked>
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
-                      "isStatic": true,
-                      "lastClassName": "c3",
-                      "rules": Array [
-                        "width: 12px;",
-                        "height: 12px;",
-                        "border-radius: 50%;",
-                        "background-color: #248700;",
-                        "display: none;",
-                      ],
-                    },
-                    "displayName": "Radio__InnerChecked",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
-                    "target": "span",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <span
-                  className="c3"
-                />
-              </StyledComponent>
-            </Radio__InnerChecked>
-          </span>
-        </StyledComponent>
-      </Radio__FakeRadio>
-      <Styled(Box)
-        between={2}
-      >
-        <StyledComponent
-          between={2}
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": true,
-                "lastClassName": "c4",
-                "rules": Array [
-                  "width: 100%;",
-                ],
-              },
-              "displayName": "Styled(Box)",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": [Function],
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-        >
-          <Box
-            between={2}
-            className="c4"
-            inline={false}
-            tag="div"
-          >
-            <div
-              className="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c4"
-            >
-              <ColoredTextProvider
-                tag="div"
-              >
-                <div>
-                  <Text
-                    block={false}
-                    bold={false}
-                    invert={false}
-                    size="base"
-                  >
-                    <Text__StyledText
-                      block={false}
-                      bold={false}
-                      inheritColor={true}
-                      invert={false}
-                      size="base"
-                    >
-                      <StyledComponent
-                        block={false}
-                        bold={false}
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "Text__StyledText-sc-1m0rr67-0",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                                [Function],
-                                [Function],
-                                [Function],
-                                [Function],
-                                "sup {",
-                                "top: -0.5em;",
-                                "font-size: 0.875rem;",
-                                "position: relative;",
-                                "vertical-align: baseline;",
-                                "padding-left: 0.1em;",
-                                "}",
-                              ],
-                            },
-                            "displayName": "Text__StyledText",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                            "target": "span",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                        inheritColor={true}
-                        invert={false}
-                        size="base"
-                      >
-                        <span
-                          className="c5"
-                          size="base"
-                        >
-                          Some label
-                        </span>
-                      </StyledComponent>
-                    </Text__StyledText>
-                  </Text>
-                </div>
-              </ColoredTextProvider>
-            </div>
-          </Box>
-        </StyledComponent>
-      </Styled(Box)>
-    </div>
-  </Box>
-</label>
-`;
-
-exports[`Radio renders 1`] = `
 .c7 {
   color: #2a2c2e;
   color: inherit;
@@ -3862,7 +3579,35 @@ exports[`Radio renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c4 {
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c3 {
   height: 20px;
   width: 20px;
   min-height: 20px;
@@ -3892,17 +3637,11 @@ exports[`Radio renders 1`] = `
   background-color: #fff;
 }
 
-.c4 > i {
+.c3 > i {
   display: none;
 }
 
-.c1 {
-  position: fixed;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.c2 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3910,28 +3649,28 @@ exports[`Radio renders 1`] = `
   cursor: pointer;
 }
 
-.c0:focus ~ .c2 > div > .c3 {
+.c8:focus ~ .c0 > div > .c2 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c0:checked ~ .c2 > div > .c3 {
+.c8:checked ~ .c0 > div > .c2 {
   border-color: #54595f;
 }
 
-.c0:checked ~ .c2 > div > .c3 > span {
+.c8:checked ~ .c0 > div > .c2 > span {
   display: block;
 }
 
-.c0:disabled ~ .c2 > div > .c3 {
+.c8:disabled ~ .c0 > div > .c2 {
   border-color: #d8d8d8;
 }
 
-.c0:disabled ~ .c2 > div > div {
+.c8:disabled ~ .c0 > div > div {
   color: #d8d8d8;
 }
 
-.c5 {
+.c4 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -3939,16 +3678,447 @@ exports[`Radio renders 1`] = `
   display: none;
 }
 
+.c5 {
+  width: 100%;
+}
+
+<label
+  className="c0"
+  data-testid="checkbox-label"
+  htmlFor="radiogroup_the-value"
+>
+  <Box
+    between={3}
+    inline={true}
+    tag="div"
+  >
+    <styled.div
+      between={3}
+      inline={true}
+      tag="div"
+    >
+      <StyledComponent
+        between={3}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [
+              [Function],
+            ],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c6",
+              "rules": Array [
+                [Function],
+                [Function],
+                [Function],
+                [Function],
+                [Function],
+                [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        inline={true}
+        tag="div"
+      >
+        <div
+          className="c1"
+        >
+          <Radio__FakeRadio
+            data-testid="fake-input"
+          >
+            <StyledComponent
+              data-testid="fake-input"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "c2",
+                    "isStatic": true,
+                    "lastClassName": "c3",
+                    "rules": Array [
+                      "height: 20px;",
+                      "width: 20px;",
+                      "min-height: 20px;",
+                      "min-width: 20px;",
+                      "outline: 0;",
+                      "line-height: 0;",
+                      "display: flex;",
+                      "align-items: center;",
+                      "justify-content: center;",
+                      "cursor: pointer;",
+                      "margin-top: 0.125rem;",
+                      "transition: border-color 0.1s linear, background-color 0.1s linear;",
+                      "border-radius: 50%;",
+                      "border-width: 1px;",
+                      "border-style: solid;",
+                      "border-color: #54595f;",
+                      "background-color: #fff;",
+                      "& > i {",
+                      "display: none;",
+                      "}",
+                    ],
+                  },
+                  "displayName": "Radio__FakeRadio",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "c2",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="c2 c3"
+                data-testid="fake-input"
+              >
+                <Radio__InnerChecked>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                          "isStatic": true,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "width: 12px;",
+                            "height: 12px;",
+                            "border-radius: 50%;",
+                            "background-color: #248700;",
+                            "display: none;",
+                          ],
+                        },
+                        "displayName": "Radio__InnerChecked",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "Radio__InnerChecked-sc-1ifvbpn-3",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <span
+                      className="c4"
+                    />
+                  </StyledComponent>
+                </Radio__InnerChecked>
+              </span>
+            </StyledComponent>
+          </Radio__FakeRadio>
+          <Styled(Box)
+            between={2}
+          >
+            <StyledComponent
+              between={2}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": true,
+                    "lastClassName": "c5",
+                    "rules": Array [
+                      "width: 100%;",
+                    ],
+                  },
+                  "displayName": "Styled(Box)",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <Box
+                between={2}
+                className="c5"
+                inline={false}
+                tag="div"
+              >
+                <styled.div
+                  between={2}
+                  className="c5"
+                  inline={false}
+                  tag="div"
+                >
+                  <StyledComponent
+                    between={2}
+                    className="c5"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [
+                          [Function],
+                        ],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": false,
+                          "lastClassName": "c6",
+                          "rules": Array [
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    inline={false}
+                    tag="div"
+                  >
+                    <div
+                      className="c5 sc-htpNat c5 c6"
+                    >
+                      <ColoredTextProvider
+                        tag="div"
+                      >
+                        <div>
+                          <Text
+                            block={false}
+                            bold={false}
+                            invert={false}
+                            size="base"
+                          >
+                            <Text__StyledText
+                              block={false}
+                              bold={false}
+                              inheritColor={true}
+                              invert={false}
+                              size="base"
+                            >
+                              <StyledComponent
+                                block={false}
+                                bold={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                      "isStatic": false,
+                                      "lastClassName": "c7",
+                                      "rules": Array [
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                        "sup {",
+                                        "top: -0.5em;",
+                                        "font-size: 0.875rem;",
+                                        "position: relative;",
+                                        "vertical-align: baseline;",
+                                        "padding-left: 0.1em;",
+                                        "}",
+                                      ],
+                                    },
+                                    "displayName": "Text__StyledText",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                inheritColor={true}
+                                invert={false}
+                                size="base"
+                              >
+                                <span
+                                  className="c7"
+                                  size="base"
+                                >
+                                  Some label
+                                </span>
+                              </StyledComponent>
+                            </Text__StyledText>
+                          </Text>
+                        </div>
+                      </ColoredTextProvider>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Box>
+            </StyledComponent>
+          </Styled(Box)>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Box>
+</label>
+`;
+
+exports[`Radio renders 1`] = `
+.c9 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c9 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .c6 {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  line-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 0.125rem;
+  -webkit-transition: border-color 0.1s linear,background-color 0.1s linear;
+  transition: border-color 0.1s linear,background-color 0.1s linear;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #54595f;
+  background-color: #fff;
+}
+
+.c6 > i {
+  display: none;
+}
+
+.c2 {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.c1:focus ~ .c3 > div > .c5 {
+  box-shadow: 0 0 4px 1px #54595f;
+  border-color: #fff;
+}
+
+.c1:checked ~ .c3 > div > .c5 {
+  border-color: #54595f;
+}
+
+.c1:checked ~ .c3 > div > .c5 > span {
+  display: block;
+}
+
+.c1:disabled ~ .c3 > div > .c5 {
+  border-color: #d8d8d8;
+}
+
+.c1:disabled ~ .c3 > div > div {
+  color: #d8d8d8;
+}
+
+.c7 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #248700;
+  display: none;
+}
+
+.c8 {
   width: 100%;
 }
 
 <div
-  class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D"
+  class="c0"
 >
   <input
     aria-invalid="false"
-    class="c0 c1"
+    class="c1 c2"
     data-testid="hidden-input"
     id="the-group_the-value"
     name="the-group"
@@ -3956,27 +4126,27 @@ exports[`Radio renders 1`] = `
     value="the-value"
   />
   <label
-    class="c2"
+    class="c3"
     data-testid="checkbox-label"
     for="the-group_the-value"
   >
     <div
-      class="TDS_Box-modules__betweenRightMargin-3___1dOvx TDS_Box-modules__inline___jTHcz"
+      class="c4"
     >
       <span
-        class="c3 c4"
+        class="c5 c6"
         data-testid="fake-input"
       >
         <span
-          class="c5"
+          class="c7"
         />
       </span>
       <div
-        class="TDS_Box-modules__betweenBottomMargin-2___31zX_ TDS_Box-modules__stack___33m4D c6"
+        class="c8 sc-htpNat c8 c0"
       >
         <div>
           <span
-            class="c7"
+            class="c9"
           >
             A label
           </span>
