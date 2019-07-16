@@ -1,30 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footnote renders closed 1`] = `
-.c4 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c7 {
+.c5 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -36,8 +13,8 @@ exports[`Footnote renders closed 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c7 .c12,
-.c7 sup {
+.c5 .c10,
+.c5 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -57,7 +34,7 @@ exports[`Footnote renders closed 1`] = `
   background-color: #d8d8d8;
 }
 
-.c9 {
+.c7 {
   background: #f7f7f8;
 }
 
@@ -85,14 +62,14 @@ exports[`Footnote renders closed 1`] = `
   width: 100%;
 }
 
-.c5 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c11 {
+.c9 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition: height 400ms ease-out,opacity 300ms;
@@ -106,7 +83,7 @@ exports[`Footnote renders closed 1`] = `
   opacity: 1;
 }
 
-.c8 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -121,15 +98,8 @@ exports[`Footnote renders closed 1`] = `
   display: none;
 }
 
-.c10 {
+.c8 {
   display: none;
-}
-
-@media (min-width:768px) {
-  .c4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
 }
 
 @media (min-width:768px) {
@@ -142,7 +112,7 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c9 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -154,7 +124,7 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (max-width:767px) {
-  .c10 {
+  .c8 {
     display: block;
   }
 }
@@ -189,91 +159,91 @@ exports[`Footnote renders closed 1`] = `
         role="dialog"
       >
         <div
-          class="FocusTrap__placeholder"
           tabindex="0"
         />
         <div>
-          <div
-            class="c1"
-          >
+          <div>
             <div
-              class="c2"
-            >
-              <hr
-                class="c3"
-              />
-            </div>
-            <div
-              class="c4"
+              class="c1"
             >
               <div
-                class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                class="c2"
+              >
+                <hr
+                  class="c3"
+                />
+              </div>
+              <div
+                class="TDS_Box-modules__verticalPadding-4___QMNNa"
               >
                 <div
-                  class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                  class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
                 >
                   <div
-                    class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                    class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
                   >
                     <div
-                      class="c5 sc-EHOje c5 c6"
+                      class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                     >
-                      <h2
-                        class="c7"
-                        data-testid="heading"
-                        tabindex="-1"
+                      <div
+                        class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c4"
                       >
-                        Terms and conditions
-                      </h2>
-                      <button
-                        aria-label="close"
-                        class="clickable c8"
-                        type="button"
-                      >
-                        <svg
-                          class="c9"
-                          height="24px"
-                          viewBox="0 0 24 24"
-                          width="24px"
-                          xlink="http://www.w3.org/1999/xlink"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <h2
+                          class="c5"
+                          data-testid="heading"
+                          tabindex="-1"
                         >
-                          <g
-                            fill="none"
-                            fill-rule="evenodd"
-                            stroke="none"
-                            stroke-width="1"
+                          Terms and conditions
+                        </h2>
+                        <button
+                          aria-label="close"
+                          class="clickable c6"
+                          type="button"
+                        >
+                          <svg
+                            class="c7"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            width="24px"
+                            xlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
                             <g
-                              fill="#4B286D"
-                              fill-rule="nonzero"
+                              fill="none"
+                              fill-rule="evenodd"
+                              stroke="none"
+                              stroke-width="1"
                             >
-                              <path
-                                d="M11.99975,12.70675 L7.85325,16.85325 C7.75625,16.95025 7.62825,16.99925 7.50025,16.99925 C7.37225,16.99925 7.24425,16.95025 7.14625,16.85325 C6.95125,16.65825 6.95125,16.34125 7.14625,16.14625 L11.29275,11.99975 L7.14625,7.85325 C6.95125,7.65825 6.95125,7.34125 7.14625,7.14625 C7.34125,6.95125 7.65825,6.95125 7.85325,7.14625 L11.99975,11.29275 L16.14625,7.14625 C16.34125,6.95125 16.65825,6.95125 16.85325,7.14625 C17.04825,7.34125 17.04825,7.65825 16.85325,7.85325 L12.70675,11.99975 L16.85325,16.14625 C17.04825,16.34125 17.04825,16.65825 16.85325,16.85325 C16.75625,16.95025 16.62825,16.99925 16.50025,16.99925 C16.37225,16.99925 16.24425,16.95025 16.14625,16.85325 L11.99975,12.70675 Z M12,24 C5.38330435,24 0,18.6166957 0,12 C0,5.38330435 5.38330435,0 12,0 C18.6166957,0 24,5.38330435 24,12 C24,18.6166957 18.6166957,24 12,24 Z M12,1.04347826 C5.95826087,1.04347826 1.04347826,5.95826087 1.04347826,12 C1.04347826,18.0417391 5.95826087,22.9565217 12,22.9565217 C18.0417391,22.9565217 22.9565217,18.0417391 22.9565217,12 C22.9565217,5.95826087 18.0417391,1.04347826 12,1.04347826 Z"
-                              />
+                              <g
+                                fill="#4B286D"
+                                fill-rule="nonzero"
+                              >
+                                <path
+                                  d="M11.99975,12.70675 L7.85325,16.85325 C7.75625,16.95025 7.62825,16.99925 7.50025,16.99925 C7.37225,16.99925 7.24425,16.95025 7.14625,16.85325 C6.95125,16.65825 6.95125,16.34125 7.14625,16.14625 L11.29275,11.99975 L7.14625,7.85325 C6.95125,7.65825 6.95125,7.34125 7.14625,7.14625 C7.34125,6.95125 7.65825,6.95125 7.85325,7.14625 L11.99975,11.29275 L16.14625,7.14625 C16.34125,6.95125 16.65825,6.95125 16.85325,7.14625 C17.04825,7.34125 17.04825,7.65825 16.85325,7.85325 L12.70675,11.99975 L16.85325,16.14625 C17.04825,16.34125 17.04825,16.65825 16.85325,16.85325 C16.75625,16.95025 16.62825,16.99925 16.50025,16.99925 C16.37225,16.99925 16.24425,16.95025 16.14625,16.85325 L11.99975,12.70675 Z M12,24 C5.38330435,24 0,18.6166957 0,12 C0,5.38330435 5.38330435,0 12,0 C18.6166957,0 24,5.38330435 24,12 C24,18.6166957 18.6166957,24 12,24 Z M12,1.04347826 C5.95826087,1.04347826 1.04347826,5.95826087 1.04347826,12 C1.04347826,18.0417391 5.95826087,22.9565217 12,22.9565217 C18.0417391,22.9565217 22.9565217,18.0417391 22.9565217,12 C22.9565217,5.95826087 18.0417391,1.04347826 12,1.04347826 Z"
+                                />
+                              </g>
                             </g>
-                          </g>
-                        </svg>
-                      </button>
+                          </svg>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div
+                class="c8"
+              >
+                <hr
+                  class="c3"
+                />
+              </div>
             </div>
             <div
-              class="c10"
-            >
-              <hr
-                class="c3"
-              />
-            </div>
+              class="c9"
+            />
           </div>
-          <div
-            class="c11"
-          />
         </div>
         <div
-          class="FocusTrap__placeholder"
           tabindex="0"
         />
       </div>
@@ -283,30 +253,7 @@ exports[`Footnote renders closed 1`] = `
 `;
 
 exports[`Footnote renders opened 1`] = `
-.c4 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c7 {
+.c5 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -318,8 +265,8 @@ exports[`Footnote renders opened 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c7 .c12,
-.c7 sup {
+.c5 .c10,
+.c5 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -339,7 +286,7 @@ exports[`Footnote renders opened 1`] = `
   background-color: #d8d8d8;
 }
 
-.c9 {
+.c7 {
   background: #f7f7f8;
 }
 
@@ -370,14 +317,14 @@ exports[`Footnote renders opened 1`] = `
   width: 100%;
 }
 
-.c5 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c11 {
+.c9 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition: height 400ms ease-out,opacity 300ms;
@@ -391,7 +338,7 @@ exports[`Footnote renders opened 1`] = `
   opacity: 1;
 }
 
-.c8 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -406,15 +353,8 @@ exports[`Footnote renders opened 1`] = `
   display: none;
 }
 
-.c10 {
+.c8 {
   display: none;
-}
-
-@media (min-width:768px) {
-  .c4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
 }
 
 @media (min-width:768px) {
@@ -427,7 +367,7 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c9 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -439,7 +379,7 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (max-width:767px) {
-  .c10 {
+  .c8 {
     display: block;
   }
 }
@@ -474,91 +414,91 @@ exports[`Footnote renders opened 1`] = `
         role="dialog"
       >
         <div
-          class="FocusTrap__placeholder"
           tabindex="0"
         />
         <div>
-          <div
-            class="c1"
-          >
+          <div>
             <div
-              class="c2"
-            >
-              <hr
-                class="c3"
-              />
-            </div>
-            <div
-              class="c4"
+              class="c1"
             >
               <div
-                class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                class="c2"
+              >
+                <hr
+                  class="c3"
+                />
+              </div>
+              <div
+                class="TDS_Box-modules__verticalPadding-4___QMNNa"
               >
                 <div
-                  class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                  class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
                 >
                   <div
-                    class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                    class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
                   >
                     <div
-                      class="c5 sc-EHOje c5 c6"
+                      class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                     >
-                      <h2
-                        class="c7"
-                        data-testid="heading"
-                        tabindex="-1"
+                      <div
+                        class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c4"
                       >
-                        Terms and conditions
-                      </h2>
-                      <button
-                        aria-label="close"
-                        class="clickable c8"
-                        type="button"
-                      >
-                        <svg
-                          class="c9"
-                          height="24px"
-                          viewBox="0 0 24 24"
-                          width="24px"
-                          xlink="http://www.w3.org/1999/xlink"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <h2
+                          class="c5"
+                          data-testid="heading"
+                          tabindex="-1"
                         >
-                          <g
-                            fill="none"
-                            fill-rule="evenodd"
-                            stroke="none"
-                            stroke-width="1"
+                          Terms and conditions
+                        </h2>
+                        <button
+                          aria-label="close"
+                          class="clickable c6"
+                          type="button"
+                        >
+                          <svg
+                            class="c7"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            width="24px"
+                            xlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
                             <g
-                              fill="#4B286D"
-                              fill-rule="nonzero"
+                              fill="none"
+                              fill-rule="evenodd"
+                              stroke="none"
+                              stroke-width="1"
                             >
-                              <path
-                                d="M11.99975,12.70675 L7.85325,16.85325 C7.75625,16.95025 7.62825,16.99925 7.50025,16.99925 C7.37225,16.99925 7.24425,16.95025 7.14625,16.85325 C6.95125,16.65825 6.95125,16.34125 7.14625,16.14625 L11.29275,11.99975 L7.14625,7.85325 C6.95125,7.65825 6.95125,7.34125 7.14625,7.14625 C7.34125,6.95125 7.65825,6.95125 7.85325,7.14625 L11.99975,11.29275 L16.14625,7.14625 C16.34125,6.95125 16.65825,6.95125 16.85325,7.14625 C17.04825,7.34125 17.04825,7.65825 16.85325,7.85325 L12.70675,11.99975 L16.85325,16.14625 C17.04825,16.34125 17.04825,16.65825 16.85325,16.85325 C16.75625,16.95025 16.62825,16.99925 16.50025,16.99925 C16.37225,16.99925 16.24425,16.95025 16.14625,16.85325 L11.99975,12.70675 Z M12,24 C5.38330435,24 0,18.6166957 0,12 C0,5.38330435 5.38330435,0 12,0 C18.6166957,0 24,5.38330435 24,12 C24,18.6166957 18.6166957,24 12,24 Z M12,1.04347826 C5.95826087,1.04347826 1.04347826,5.95826087 1.04347826,12 C1.04347826,18.0417391 5.95826087,22.9565217 12,22.9565217 C18.0417391,22.9565217 22.9565217,18.0417391 22.9565217,12 C22.9565217,5.95826087 18.0417391,1.04347826 12,1.04347826 Z"
-                              />
+                              <g
+                                fill="#4B286D"
+                                fill-rule="nonzero"
+                              >
+                                <path
+                                  d="M11.99975,12.70675 L7.85325,16.85325 C7.75625,16.95025 7.62825,16.99925 7.50025,16.99925 C7.37225,16.99925 7.24425,16.95025 7.14625,16.85325 C6.95125,16.65825 6.95125,16.34125 7.14625,16.14625 L11.29275,11.99975 L7.14625,7.85325 C6.95125,7.65825 6.95125,7.34125 7.14625,7.14625 C7.34125,6.95125 7.65825,6.95125 7.85325,7.14625 L11.99975,11.29275 L16.14625,7.14625 C16.34125,6.95125 16.65825,6.95125 16.85325,7.14625 C17.04825,7.34125 17.04825,7.65825 16.85325,7.85325 L12.70675,11.99975 L16.85325,16.14625 C17.04825,16.34125 17.04825,16.65825 16.85325,16.85325 C16.75625,16.95025 16.62825,16.99925 16.50025,16.99925 C16.37225,16.99925 16.24425,16.95025 16.14625,16.85325 L11.99975,12.70675 Z M12,24 C5.38330435,24 0,18.6166957 0,12 C0,5.38330435 5.38330435,0 12,0 C18.6166957,0 24,5.38330435 24,12 C24,18.6166957 18.6166957,24 12,24 Z M12,1.04347826 C5.95826087,1.04347826 1.04347826,5.95826087 1.04347826,12 C1.04347826,18.0417391 5.95826087,22.9565217 12,22.9565217 C18.0417391,22.9565217 22.9565217,18.0417391 22.9565217,12 C22.9565217,5.95826087 18.0417391,1.04347826 12,1.04347826 Z"
+                                />
+                              </g>
                             </g>
-                          </g>
-                        </svg>
-                      </button>
+                          </svg>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div
+                class="c8"
+              >
+                <hr
+                  class="c3"
+                />
+              </div>
             </div>
             <div
-              class="c10"
-            >
-              <hr
-                class="c3"
-              />
-            </div>
+              class="c9"
+            />
           </div>
-          <div
-            class="c11"
-          />
         </div>
         <div
-          class="FocusTrap__placeholder"
           tabindex="0"
         />
       </div>
