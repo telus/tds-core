@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip accessibility accepts custom copy 1`] = `
-.c7 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -10,7 +10,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c6 {
+.c7 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -27,11 +27,11 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
   font-size: 1.5rem;
 }
 
-.c6::before {
+.c7::before {
   content: '\\f102';
 }
 
-.c5 {
+.c6 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -45,7 +45,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
   cursor: pointer;
 }
 
-.c4 {
+.c5 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
@@ -57,12 +57,23 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
   font-weight: 500;
 }
 
-.c4 sup {
+.c5 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c2 {
@@ -91,7 +102,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
   left: 12px;
 }
 
-.c3 {
+.c4 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
 }
@@ -247,7 +258,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                           [Function],
                         ],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bdVaJa",
+                          "componentId": "sc-bwzfXH",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
@@ -258,7 +269,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                         "displayName": "Styled(Component)",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bdVaJa",
+                        "styledComponentId": "sc-bwzfXH",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -305,119 +316,175 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                         tag="div"
                         vertical={2}
                       >
-                        <div
+                        <styled.div
                           aria-hidden="true"
                           aria-live="assertive"
-                          className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c2"
+                          className="c2"
                           data-testid="bubble"
+                          horizontal={3}
                           id="standalone-tooltip-mc41_tooltip"
+                          inline={false}
                           role="tooltip"
+                          tag="div"
+                          vertical={2}
                         >
-                          <Bubble__InnerBubbleStyle
-                            bubbleWidth={
+                          <StyledComponent
+                            aria-hidden="true"
+                            aria-live="assertive"
+                            className="c2"
+                            data-testid="bubble"
+                            forwardedComponent={
                               Object {
-                                "width": "calc(1008px - 1rem - 0.5rem)",
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
                               }
                             }
+                            forwardedRef={null}
+                            horizontal={3}
+                            id="standalone-tooltip-mc41_tooltip"
+                            inline={false}
+                            role="tooltip"
+                            tag="div"
+                            vertical={2}
                           >
-                            <StyledComponent
-                              bubbleWidth={
-                                Object {
-                                  "width": "calc(1008px - 1rem - 0.5rem)",
-                                }
-                              }
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
-                                    "isStatic": false,
-                                    "lastClassName": "c3",
-                                    "rules": Array [
-                                      [Function],
-                                    ],
-                                  },
-                                  "displayName": "Bubble__InnerBubbleStyle",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
+                            <div
+                              aria-hidden="true"
+                              aria-live="assertive"
+                              className="c2 sc-bwzfXH c2 c3"
+                              data-testid="bubble"
+                              id="standalone-tooltip-mc41_tooltip"
+                              role="tooltip"
                             >
-                              <div
-                                className="c3"
+                              <Bubble__InnerBubbleStyle
+                                bubbleWidth={
+                                  Object {
+                                    "width": "calc(1008px - 1rem - 0.5rem)",
+                                  }
+                                }
                               >
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="small"
+                                <StyledComponent
+                                  bubbleWidth={
+                                    Object {
+                                      "width": "calc(1008px - 1rem - 0.5rem)",
+                                    }
+                                  }
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
+                                        "isStatic": false,
+                                        "lastClassName": "c4",
+                                        "rules": Array [
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "Bubble__InnerBubbleStyle",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
                                 >
-                                  <Text__StyledText
-                                    block={false}
-                                    bold={false}
-                                    invert={false}
-                                    size="small"
+                                  <div
+                                    className="c4"
                                   >
-                                    <StyledComponent
+                                    <Text
                                       block={false}
                                       bold={false}
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c4",
-                                            "rules": Array [
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              "sup {",
-                                              "top: -0.5em;",
-                                              "font-size: 0.875rem;",
-                                              "position: relative;",
-                                              "vertical-align: baseline;",
-                                              "padding-left: 0.1em;",
-                                              "}",
-                                            ],
-                                          },
-                                          "displayName": "Text__StyledText",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                          "target": "span",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
                                       invert={false}
                                       size="small"
                                     >
-                                      <span
-                                        className="c4"
+                                      <Text__StyledText
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
                                         size="small"
                                       >
-                                        Tooltip text
-                                      </span>
-                                    </StyledComponent>
-                                  </Text__StyledText>
-                                </Text>
-                              </div>
-                            </StyledComponent>
-                          </Bubble__InnerBubbleStyle>
-                        </div>
+                                        <StyledComponent
+                                          block={false}
+                                          bold={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                "isStatic": false,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  "sup {",
+                                                  "top: -0.5em;",
+                                                  "font-size: 0.875rem;",
+                                                  "position: relative;",
+                                                  "vertical-align: baseline;",
+                                                  "padding-left: 0.1em;",
+                                                  "}",
+                                                ],
+                                              },
+                                              "displayName": "Text__StyledText",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                              "target": "span",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          invert={false}
+                                          size="small"
+                                        >
+                                          <span
+                                            className="c5"
+                                            size="small"
+                                          >
+                                            Tooltip text
+                                          </span>
+                                        </StyledComponent>
+                                      </Text__StyledText>
+                                    </Text>
+                                  </div>
+                                </StyledComponent>
+                              </Bubble__InnerBubbleStyle>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
                       </Box>
                     </Component>
                   </StyledComponent>
@@ -457,7 +524,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
                           "isStatic": true,
-                          "lastClassName": "c5",
+                          "lastClassName": "c6",
                           "rules": Array [
                             "padding: 0;",
                             "margin: 0;",
@@ -494,7 +561,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                       aria-controls="standalone-tooltip-mc41_tooltip"
                       aria-expanded="false"
                       aria-haspopup="true"
-                      className="c5"
+                      className="c6"
                       id="standalone-tooltip-mc41_trigger"
                       onClick={[Function]}
                       style={
@@ -520,7 +587,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
                                   "isStatic": false,
-                                  "lastClassName": "c6",
+                                  "lastClassName": "c7",
                                   "rules": Array [
                                     [Function],
                                     [Function],
@@ -542,7 +609,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                             symbol="questionMarkCircle"
                           >
                             <i
-                              className="c6"
+                              className="c7"
                             >
                               <A11yContent>
                                 <A11yContent__StyledA11yContent>
@@ -554,7 +621,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
                                           "isStatic": true,
-                                          "lastClassName": "c7",
+                                          "lastClassName": "c8",
                                           "rules": Array [
                                             "position: absolute;",
                                             "height: 1px;",
@@ -576,7 +643,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                     forwardedRef={null}
                                   >
                                     <span
-                                      className="c7"
+                                      className="c8"
                                     >
                                       This is custom copy.
                                     </span>
@@ -601,7 +668,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
 `;
 
 exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] = `
-.c7 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -610,7 +677,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   clip: rect(1px,1px,1px,1px);
 }
 
-.c6 {
+.c7 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -627,11 +694,11 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   font-size: 1.5rem;
 }
 
-.c6::before {
+.c7::before {
   content: '\\f102';
 }
 
-.c5 {
+.c6 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -645,7 +712,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   cursor: pointer;
 }
 
-.c4 {
+.c5 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
@@ -657,12 +724,23 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   font-weight: 500;
 }
 
-.c4 sup {
+.c5 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c2 {
@@ -690,7 +768,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   left: 12px;
 }
 
-.c3 {
+.c4 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
 }
@@ -842,9 +920,9 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                           [Function],
                         ],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bdVaJa",
+                          "componentId": "sc-bwzfXH",
                           "isStatic": false,
-                          "lastClassName": "iXNTBS",
+                          "lastClassName": "eqAxCt",
                           "rules": Array [
                             "border-radius: 4px;",
                             [Function],
@@ -853,7 +931,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         "displayName": "Styled(Component)",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bdVaJa",
+                        "styledComponentId": "sc-bwzfXH",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -900,119 +978,175 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         tag="div"
                         vertical={2}
                       >
-                        <div
+                        <styled.div
                           aria-hidden="false"
                           aria-live="assertive"
-                          className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c2"
+                          className="c2"
                           data-testid="bubble"
+                          horizontal={3}
                           id="standalone-tooltip-mc41_tooltip"
+                          inline={false}
                           role="tooltip"
+                          tag="div"
+                          vertical={2}
                         >
-                          <Bubble__InnerBubbleStyle
-                            bubbleWidth={
+                          <StyledComponent
+                            aria-hidden="false"
+                            aria-live="assertive"
+                            className="c2"
+                            data-testid="bubble"
+                            forwardedComponent={
                               Object {
-                                "width": "calc(1008px - 1rem - 0.5rem)",
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
                               }
                             }
+                            forwardedRef={null}
+                            horizontal={3}
+                            id="standalone-tooltip-mc41_tooltip"
+                            inline={false}
+                            role="tooltip"
+                            tag="div"
+                            vertical={2}
                           >
-                            <StyledComponent
-                              bubbleWidth={
-                                Object {
-                                  "width": "calc(1008px - 1rem - 0.5rem)",
-                                }
-                              }
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
-                                    "isStatic": false,
-                                    "lastClassName": "c3",
-                                    "rules": Array [
-                                      [Function],
-                                    ],
-                                  },
-                                  "displayName": "Bubble__InnerBubbleStyle",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
+                            <div
+                              aria-hidden="false"
+                              aria-live="assertive"
+                              className="c2 sc-bwzfXH c2 c3"
+                              data-testid="bubble"
+                              id="standalone-tooltip-mc41_tooltip"
+                              role="tooltip"
                             >
-                              <div
-                                className="c3"
+                              <Bubble__InnerBubbleStyle
+                                bubbleWidth={
+                                  Object {
+                                    "width": "calc(1008px - 1rem - 0.5rem)",
+                                  }
+                                }
                               >
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="small"
+                                <StyledComponent
+                                  bubbleWidth={
+                                    Object {
+                                      "width": "calc(1008px - 1rem - 0.5rem)",
+                                    }
+                                  }
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
+                                        "isStatic": false,
+                                        "lastClassName": "c4",
+                                        "rules": Array [
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "Bubble__InnerBubbleStyle",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
                                 >
-                                  <Text__StyledText
-                                    block={false}
-                                    bold={false}
-                                    invert={false}
-                                    size="small"
+                                  <div
+                                    className="c4"
                                   >
-                                    <StyledComponent
+                                    <Text
                                       block={false}
                                       bold={false}
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c4",
-                                            "rules": Array [
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              "sup {",
-                                              "top: -0.5em;",
-                                              "font-size: 0.875rem;",
-                                              "position: relative;",
-                                              "vertical-align: baseline;",
-                                              "padding-left: 0.1em;",
-                                              "}",
-                                            ],
-                                          },
-                                          "displayName": "Text__StyledText",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                          "target": "span",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
                                       invert={false}
                                       size="small"
                                     >
-                                      <span
-                                        className="c4"
+                                      <Text__StyledText
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
                                         size="small"
                                       >
-                                        Tooltip text
-                                      </span>
-                                    </StyledComponent>
-                                  </Text__StyledText>
-                                </Text>
-                              </div>
-                            </StyledComponent>
-                          </Bubble__InnerBubbleStyle>
-                        </div>
+                                        <StyledComponent
+                                          block={false}
+                                          bold={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                "isStatic": false,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  "sup {",
+                                                  "top: -0.5em;",
+                                                  "font-size: 0.875rem;",
+                                                  "position: relative;",
+                                                  "vertical-align: baseline;",
+                                                  "padding-left: 0.1em;",
+                                                  "}",
+                                                ],
+                                              },
+                                              "displayName": "Text__StyledText",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                              "target": "span",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          invert={false}
+                                          size="small"
+                                        >
+                                          <span
+                                            className="c5"
+                                            size="small"
+                                          >
+                                            Tooltip text
+                                          </span>
+                                        </StyledComponent>
+                                      </Text__StyledText>
+                                    </Text>
+                                  </div>
+                                </StyledComponent>
+                              </Bubble__InnerBubbleStyle>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
                       </Box>
                     </Component>
                   </StyledComponent>
@@ -1052,7 +1186,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         "componentStyle": ComponentStyle {
                           "componentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
                           "isStatic": true,
-                          "lastClassName": "c5",
+                          "lastClassName": "c6",
                           "rules": Array [
                             "padding: 0;",
                             "margin: 0;",
@@ -1089,7 +1223,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                       aria-controls="standalone-tooltip-mc41_tooltip"
                       aria-expanded="true"
                       aria-haspopup="true"
-                      className="c5"
+                      className="c6"
                       id="standalone-tooltip-mc41_trigger"
                       onClick={[Function]}
                       style={
@@ -1115,7 +1249,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                 "componentStyle": ComponentStyle {
                                   "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
                                   "isStatic": false,
-                                  "lastClassName": "c6",
+                                  "lastClassName": "c7",
                                   "rules": Array [
                                     [Function],
                                     [Function],
@@ -1137,7 +1271,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                             symbol="questionMarkCircle"
                           >
                             <i
-                              className="c6"
+                              className="c7"
                             >
                               <A11yContent>
                                 <A11yContent__StyledA11yContent>
@@ -1149,7 +1283,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                         "componentStyle": ComponentStyle {
                                           "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
                                           "isStatic": true,
-                                          "lastClassName": "c7",
+                                          "lastClassName": "c8",
                                           "rules": Array [
                                             "position: absolute;",
                                             "height: 1px;",
@@ -1171,7 +1305,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                     forwardedRef={null}
                                   >
                                     <span
-                                      className="c7"
+                                      className="c8"
                                     >
                                       Reveal additional information.
                                     </span>
@@ -1196,7 +1330,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
 `;
 
 exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] = `
-.c7 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1205,7 +1339,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   clip: rect(1px,1px,1px,1px);
 }
 
-.c6 {
+.c7 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -1222,11 +1356,11 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   font-size: 1.5rem;
 }
 
-.c6::before {
+.c7::before {
   content: '\\f102';
 }
 
-.c5 {
+.c6 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -1240,7 +1374,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   cursor: pointer;
 }
 
-.c4 {
+.c5 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
@@ -1252,12 +1386,23 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   font-weight: 500;
 }
 
-.c4 sup {
+.c5 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c2 {
@@ -1285,7 +1430,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   left: 12px;
 }
 
-.c3 {
+.c4 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
 }
@@ -1437,9 +1582,9 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                           [Function],
                         ],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bdVaJa",
+                          "componentId": "sc-bwzfXH",
                           "isStatic": false,
-                          "lastClassName": "iXNTBS",
+                          "lastClassName": "eqAxCt",
                           "rules": Array [
                             "border-radius: 4px;",
                             [Function],
@@ -1448,7 +1593,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         "displayName": "Styled(Component)",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bdVaJa",
+                        "styledComponentId": "sc-bwzfXH",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -1495,119 +1640,175 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         tag="div"
                         vertical={2}
                       >
-                        <div
+                        <styled.div
                           aria-hidden="false"
                           aria-live="assertive"
-                          className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c2"
+                          className="c2"
                           data-testid="bubble"
+                          horizontal={3}
                           id="standalone-tooltip-mc41_tooltip"
+                          inline={false}
                           role="tooltip"
+                          tag="div"
+                          vertical={2}
                         >
-                          <Bubble__InnerBubbleStyle
-                            bubbleWidth={
+                          <StyledComponent
+                            aria-hidden="false"
+                            aria-live="assertive"
+                            className="c2"
+                            data-testid="bubble"
+                            forwardedComponent={
                               Object {
-                                "width": "calc(1008px - 1rem - 0.5rem)",
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
                               }
                             }
+                            forwardedRef={null}
+                            horizontal={3}
+                            id="standalone-tooltip-mc41_tooltip"
+                            inline={false}
+                            role="tooltip"
+                            tag="div"
+                            vertical={2}
                           >
-                            <StyledComponent
-                              bubbleWidth={
-                                Object {
-                                  "width": "calc(1008px - 1rem - 0.5rem)",
-                                }
-                              }
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
-                                    "isStatic": false,
-                                    "lastClassName": "c3",
-                                    "rules": Array [
-                                      [Function],
-                                    ],
-                                  },
-                                  "displayName": "Bubble__InnerBubbleStyle",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
+                            <div
+                              aria-hidden="false"
+                              aria-live="assertive"
+                              className="c2 sc-bwzfXH c2 c3"
+                              data-testid="bubble"
+                              id="standalone-tooltip-mc41_tooltip"
+                              role="tooltip"
                             >
-                              <div
-                                className="c3"
+                              <Bubble__InnerBubbleStyle
+                                bubbleWidth={
+                                  Object {
+                                    "width": "calc(1008px - 1rem - 0.5rem)",
+                                  }
+                                }
                               >
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="small"
+                                <StyledComponent
+                                  bubbleWidth={
+                                    Object {
+                                      "width": "calc(1008px - 1rem - 0.5rem)",
+                                    }
+                                  }
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
+                                        "isStatic": false,
+                                        "lastClassName": "c4",
+                                        "rules": Array [
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "Bubble__InnerBubbleStyle",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
                                 >
-                                  <Text__StyledText
-                                    block={false}
-                                    bold={false}
-                                    invert={false}
-                                    size="small"
+                                  <div
+                                    className="c4"
                                   >
-                                    <StyledComponent
+                                    <Text
                                       block={false}
                                       bold={false}
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c4",
-                                            "rules": Array [
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              "sup {",
-                                              "top: -0.5em;",
-                                              "font-size: 0.875rem;",
-                                              "position: relative;",
-                                              "vertical-align: baseline;",
-                                              "padding-left: 0.1em;",
-                                              "}",
-                                            ],
-                                          },
-                                          "displayName": "Text__StyledText",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                          "target": "span",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
                                       invert={false}
                                       size="small"
                                     >
-                                      <span
-                                        className="c4"
+                                      <Text__StyledText
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
                                         size="small"
                                       >
-                                        Tooltip text
-                                      </span>
-                                    </StyledComponent>
-                                  </Text__StyledText>
-                                </Text>
-                              </div>
-                            </StyledComponent>
-                          </Bubble__InnerBubbleStyle>
-                        </div>
+                                        <StyledComponent
+                                          block={false}
+                                          bold={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                "isStatic": false,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  "sup {",
+                                                  "top: -0.5em;",
+                                                  "font-size: 0.875rem;",
+                                                  "position: relative;",
+                                                  "vertical-align: baseline;",
+                                                  "padding-left: 0.1em;",
+                                                  "}",
+                                                ],
+                                              },
+                                              "displayName": "Text__StyledText",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                              "target": "span",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          invert={false}
+                                          size="small"
+                                        >
+                                          <span
+                                            className="c5"
+                                            size="small"
+                                          >
+                                            Tooltip text
+                                          </span>
+                                        </StyledComponent>
+                                      </Text__StyledText>
+                                    </Text>
+                                  </div>
+                                </StyledComponent>
+                              </Bubble__InnerBubbleStyle>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
                       </Box>
                     </Component>
                   </StyledComponent>
@@ -1647,7 +1848,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         "componentStyle": ComponentStyle {
                           "componentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
                           "isStatic": true,
-                          "lastClassName": "c5",
+                          "lastClassName": "c6",
                           "rules": Array [
                             "padding: 0;",
                             "margin: 0;",
@@ -1684,7 +1885,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                       aria-controls="standalone-tooltip-mc41_tooltip"
                       aria-expanded="true"
                       aria-haspopup="true"
-                      className="c5"
+                      className="c6"
                       id="standalone-tooltip-mc41_trigger"
                       onClick={[Function]}
                       style={
@@ -1710,7 +1911,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                 "componentStyle": ComponentStyle {
                                   "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
                                   "isStatic": false,
-                                  "lastClassName": "c6",
+                                  "lastClassName": "c7",
                                   "rules": Array [
                                     [Function],
                                     [Function],
@@ -1732,7 +1933,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                             symbol="questionMarkCircle"
                           >
                             <i
-                              className="c6"
+                              className="c7"
                             >
                               <A11yContent>
                                 <A11yContent__StyledA11yContent>
@@ -1744,7 +1945,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                         "componentStyle": ComponentStyle {
                                           "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
                                           "isStatic": true,
-                                          "lastClassName": "c7",
+                                          "lastClassName": "c8",
                                           "rules": Array [
                                             "position: absolute;",
                                             "height: 1px;",
@@ -1766,7 +1967,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                     forwardedRef={null}
                                   >
                                     <span
-                                      className="c7"
+                                      className="c8"
                                     >
                                       Reveal additional information.
                                     </span>
@@ -1791,7 +1992,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
 `;
 
 exports[`Tooltip interactivity shows and hides the bubble 1`] = `
-.c2 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
@@ -1803,12 +2004,23 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
   font-weight: 500;
 }
 
-.c2 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c0 {
@@ -1837,7 +2049,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
   left: 12px;
 }
 
-.c1 {
+.c2 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
 }
@@ -1863,7 +2075,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
 <div
   aria-hidden="true"
   aria-live="assertive"
-  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c0"
+  className="c0 sc-bwzfXH c0 c1"
   data-testid="bubble"
   id="standalone-tooltip-mc41_tooltip"
   role="tooltip"
@@ -1888,7 +2100,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
             "isStatic": false,
-            "lastClassName": "c1",
+            "lastClassName": "c2",
             "rules": Array [
               [Function],
             ],
@@ -1906,7 +2118,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
       forwardedRef={null}
     >
       <div
-        className="c1"
+        className="c2"
       >
         <Text
           block={false}
@@ -1930,7 +2142,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c3",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -1961,7 +2173,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
               size="small"
             >
               <span
-                className="c2"
+                className="c3"
                 size="small"
               >
                 Tooltip text
@@ -1976,7 +2188,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
 `;
 
 exports[`Tooltip interactivity shows and hides the bubble 2`] = `
-.c2 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
@@ -1988,12 +2200,23 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
   font-weight: 500;
 }
 
-.c2 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c0 {
@@ -2021,7 +2244,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
   left: 12px;
 }
 
-.c1 {
+.c2 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
 }
@@ -2047,7 +2270,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
 <div
   aria-hidden="false"
   aria-live="assertive"
-  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c0"
+  className="c0 sc-bwzfXH c0 c1"
   data-testid="bubble"
   id="standalone-tooltip-mc41_tooltip"
   role="tooltip"
@@ -2072,7 +2295,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
             "isStatic": false,
-            "lastClassName": "c1",
+            "lastClassName": "c2",
             "rules": Array [
               [Function],
             ],
@@ -2090,7 +2313,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
       forwardedRef={null}
     >
       <div
-        className="c1"
+        className="c2"
       >
         <Text
           block={false}
@@ -2114,7 +2337,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c3",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -2145,7 +2368,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
               size="small"
             >
               <span
-                className="c2"
+                className="c3"
                 size="small"
               >
                 Tooltip text
@@ -2160,7 +2383,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
 `;
 
 exports[`Tooltip interactivity shows and hides the bubble 3`] = `
-.c2 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
@@ -2172,12 +2395,23 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
   font-weight: 500;
 }
 
-.c2 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c0 {
@@ -2206,7 +2440,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
   left: 12px;
 }
 
-.c1 {
+.c2 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
 }
@@ -2232,7 +2466,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
 <div
   aria-hidden="true"
   aria-live="assertive"
-  className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c0"
+  className="c0 sc-bwzfXH c0 c1"
   data-testid="bubble"
   id="standalone-tooltip-mc41_tooltip"
   role="tooltip"
@@ -2257,7 +2491,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
           "componentStyle": ComponentStyle {
             "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
             "isStatic": false,
-            "lastClassName": "c1",
+            "lastClassName": "c2",
             "rules": Array [
               [Function],
             ],
@@ -2275,7 +2509,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
       forwardedRef={null}
     >
       <div
-        className="c1"
+        className="c2"
       >
         <Text
           block={false}
@@ -2299,7 +2533,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c3",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -2330,7 +2564,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
               size="small"
             >
               <span
-                className="c2"
+                className="c3"
                 size="small"
               >
                 Tooltip text
@@ -2345,7 +2579,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
 `;
 
 exports[`Tooltip renders 1`] = `
-.c7 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2354,7 +2588,7 @@ exports[`Tooltip renders 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c6 {
+.c7 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -2371,11 +2605,11 @@ exports[`Tooltip renders 1`] = `
   font-size: 1.5rem;
 }
 
-.c6::before {
+.c7::before {
   content: '\\f102';
 }
 
-.c5 {
+.c6 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -2389,7 +2623,7 @@ exports[`Tooltip renders 1`] = `
   cursor: pointer;
 }
 
-.c4 {
+.c5 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
@@ -2401,12 +2635,23 @@ exports[`Tooltip renders 1`] = `
   font-weight: 500;
 }
 
-.c4 sup {
+.c5 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c2 {
@@ -2435,7 +2680,7 @@ exports[`Tooltip renders 1`] = `
   left: 12px;
 }
 
-.c3 {
+.c4 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
 }
@@ -2587,7 +2832,7 @@ exports[`Tooltip renders 1`] = `
                           [Function],
                         ],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bdVaJa",
+                          "componentId": "sc-bwzfXH",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
@@ -2598,7 +2843,7 @@ exports[`Tooltip renders 1`] = `
                         "displayName": "Styled(Component)",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bdVaJa",
+                        "styledComponentId": "sc-bwzfXH",
                         "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -2645,119 +2890,175 @@ exports[`Tooltip renders 1`] = `
                         tag="div"
                         vertical={2}
                       >
-                        <div
+                        <styled.div
                           aria-hidden="true"
                           aria-live="assertive"
-                          className="TDS_Box-modules__horizontalPadding-3___2uoUp TDS_Box-modules__verticalPadding-2___1Uh2T c2"
+                          className="c2"
                           data-testid="bubble"
+                          horizontal={3}
                           id="standalone-tooltip-mc41_tooltip"
+                          inline={false}
                           role="tooltip"
+                          tag="div"
+                          vertical={2}
                         >
-                          <Bubble__InnerBubbleStyle
-                            bubbleWidth={
+                          <StyledComponent
+                            aria-hidden="true"
+                            aria-live="assertive"
+                            className="c2"
+                            data-testid="bubble"
+                            forwardedComponent={
                               Object {
-                                "width": "calc(1008px - 1rem - 0.5rem)",
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [
+                                  [Function],
+                                ],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": false,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
                               }
                             }
+                            forwardedRef={null}
+                            horizontal={3}
+                            id="standalone-tooltip-mc41_tooltip"
+                            inline={false}
+                            role="tooltip"
+                            tag="div"
+                            vertical={2}
                           >
-                            <StyledComponent
-                              bubbleWidth={
-                                Object {
-                                  "width": "calc(1008px - 1rem - 0.5rem)",
-                                }
-                              }
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
-                                    "isStatic": false,
-                                    "lastClassName": "c3",
-                                    "rules": Array [
-                                      [Function],
-                                    ],
-                                  },
-                                  "displayName": "Bubble__InnerBubbleStyle",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
+                            <div
+                              aria-hidden="true"
+                              aria-live="assertive"
+                              className="c2 sc-bwzfXH c2 c3"
+                              data-testid="bubble"
+                              id="standalone-tooltip-mc41_tooltip"
+                              role="tooltip"
                             >
-                              <div
-                                className="c3"
+                              <Bubble__InnerBubbleStyle
+                                bubbleWidth={
+                                  Object {
+                                    "width": "calc(1008px - 1rem - 0.5rem)",
+                                  }
+                                }
                               >
-                                <Text
-                                  block={false}
-                                  bold={false}
-                                  invert={false}
-                                  size="small"
+                                <StyledComponent
+                                  bubbleWidth={
+                                    Object {
+                                      "width": "calc(1008px - 1rem - 0.5rem)",
+                                    }
+                                  }
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
+                                        "isStatic": false,
+                                        "lastClassName": "c4",
+                                        "rules": Array [
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "Bubble__InnerBubbleStyle",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "Bubble__InnerBubbleStyle-sc-15jatun-0",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
                                 >
-                                  <Text__StyledText
-                                    block={false}
-                                    bold={false}
-                                    invert={false}
-                                    size="small"
+                                  <div
+                                    className="c4"
                                   >
-                                    <StyledComponent
+                                    <Text
                                       block={false}
                                       bold={false}
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c4",
-                                            "rules": Array [
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              "sup {",
-                                              "top: -0.5em;",
-                                              "font-size: 0.875rem;",
-                                              "position: relative;",
-                                              "vertical-align: baseline;",
-                                              "padding-left: 0.1em;",
-                                              "}",
-                                            ],
-                                          },
-                                          "displayName": "Text__StyledText",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                          "target": "span",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
                                       invert={false}
                                       size="small"
                                     >
-                                      <span
-                                        className="c4"
+                                      <Text__StyledText
+                                        block={false}
+                                        bold={false}
+                                        invert={false}
                                         size="small"
                                       >
-                                        Tooltip text
-                                      </span>
-                                    </StyledComponent>
-                                  </Text__StyledText>
-                                </Text>
-                              </div>
-                            </StyledComponent>
-                          </Bubble__InnerBubbleStyle>
-                        </div>
+                                        <StyledComponent
+                                          block={false}
+                                          bold={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                "isStatic": false,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  "sup {",
+                                                  "top: -0.5em;",
+                                                  "font-size: 0.875rem;",
+                                                  "position: relative;",
+                                                  "vertical-align: baseline;",
+                                                  "padding-left: 0.1em;",
+                                                  "}",
+                                                ],
+                                              },
+                                              "displayName": "Text__StyledText",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                              "target": "span",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          invert={false}
+                                          size="small"
+                                        >
+                                          <span
+                                            className="c5"
+                                            size="small"
+                                          >
+                                            Tooltip text
+                                          </span>
+                                        </StyledComponent>
+                                      </Text__StyledText>
+                                    </Text>
+                                  </div>
+                                </StyledComponent>
+                              </Bubble__InnerBubbleStyle>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
                       </Box>
                     </Component>
                   </StyledComponent>
@@ -2797,7 +3098,7 @@ exports[`Tooltip renders 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
                           "isStatic": true,
-                          "lastClassName": "c5",
+                          "lastClassName": "c6",
                           "rules": Array [
                             "padding: 0;",
                             "margin: 0;",
@@ -2834,7 +3135,7 @@ exports[`Tooltip renders 1`] = `
                       aria-controls="standalone-tooltip-mc41_tooltip"
                       aria-expanded="false"
                       aria-haspopup="true"
-                      className="c5"
+                      className="c6"
                       id="standalone-tooltip-mc41_trigger"
                       onClick={[Function]}
                       style={
@@ -2860,7 +3161,7 @@ exports[`Tooltip renders 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
                                   "isStatic": false,
-                                  "lastClassName": "c6",
+                                  "lastClassName": "c7",
                                   "rules": Array [
                                     [Function],
                                     [Function],
@@ -2882,7 +3183,7 @@ exports[`Tooltip renders 1`] = `
                             symbol="questionMarkCircle"
                           >
                             <i
-                              className="c6"
+                              className="c7"
                             >
                               <A11yContent>
                                 <A11yContent__StyledA11yContent>
@@ -2894,7 +3195,7 @@ exports[`Tooltip renders 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
                                           "isStatic": true,
-                                          "lastClassName": "c7",
+                                          "lastClassName": "c8",
                                           "rules": Array [
                                             "position: absolute;",
                                             "height: 1px;",
@@ -2916,7 +3217,7 @@ exports[`Tooltip renders 1`] = `
                                     forwardedRef={null}
                                   >
                                     <span
-                                      className="c7"
+                                      className="c8"
                                     >
                                       Reveal additional information.
                                     </span>
