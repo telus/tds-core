@@ -1,4 +1,4 @@
-import Responsive, { media } from './dist/index.es'
+import Responsive, { media, breakpoints } from './dist/index.es'
 
-export { media }
+export { media, breakpoints }
 export default Responsive

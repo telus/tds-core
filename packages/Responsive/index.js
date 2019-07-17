@@ -1,5 +1,5 @@
 import Responsive from './Responsive'
-import media from './media'
+import media, { breakpoints } from './media'
 
-export { media }
+export { media, breakpoints }
 export default Responsive
