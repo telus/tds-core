@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.0.2...@tds/core-tooltip@4.0.3) (2019-07-17)
+
+
+### Bug Fixes
+
+* **core-tooltip:** add button type for tooltip button ([584639d](https://github.com/telusdigital/tds/commit/584639d)), closes [#1187](https://github.com/telusdigital/tds/issues/1187)
+
+
+
+
+
 ## [4.0.2](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.0.1...@tds/core-tooltip@4.0.2) (2019-07-17)
 
 **Note:** Version bump only for package @tds/core-tooltip

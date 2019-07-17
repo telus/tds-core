@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-tooltip",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Provide an explanation or instructions for a form field that most users do not need",
   "main": "index.cjs.js",
   "module": "index.es.js",
