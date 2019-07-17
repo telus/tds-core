@@ -46,7 +46,7 @@ describe('FlexGrid', () => {
   it('is fluid by default', () => {
     const { flexGrid } = doMount()
 
-    expect(flexGrid).toHaveProp('fluid', true)
+    expect(flexGrid.first()).toHaveProp('fluid', true)
   })
 
   it('should render all children related to Grid with no gutter', () => {
@@ -55,10 +55,9 @@ describe('FlexGrid', () => {
     const col1 = findColumn(1)
     const col2 = findColumn(2)
     const row = findRow(1)
-
-    expect(col1).toHaveClassName('gutterless')
-    expect(col2).toHaveClassName('gutterless')
-    expect(row).toHaveClassName('flexRow')
+    expect(col1).toMatchSnapshot()
+    expect(col2).toMatchSnapshot()
+    expect(row).toMatchSnapshot()
   })
 
   it('passes additional attributes to the element', () => {
@@ -75,7 +74,7 @@ describe('FlexGrid', () => {
     mockMatchMedia(360)
     const { flexGrid } = doMount()
 
-    expect(flexGrid).toHaveClassName('limitWidth')
+    expect(flexGrid).toMatchSnapshot()
   })
 
   it('supports responsive reversal', () => {
@@ -87,11 +86,7 @@ describe('FlexGrid', () => {
       xlReverse: true,
     })
 
-    expect(flexGrid.hasClass('xsReverse')).toEqual(true)
-    expect(flexGrid.hasClass('smReverse')).toEqual(true)
-    expect(flexGrid.hasClass('mdReverse')).toEqual(true)
-    expect(flexGrid.hasClass('lgReverseCancel')).toEqual(true)
-    expect(flexGrid.hasClass('xlReverse')).toEqual(true)
+    expect(flexGrid).toMatchSnapshot()
   })
 
   it('does not allow custom CSS', () => {
@@ -109,6 +104,6 @@ describe('FlexGrid', () => {
       limitWidth: false,
     })
 
-    expect(flexGrid).not.toHaveClassName('limitWidth')
+    expect(flexGrid).toMatchSnapshot()
   })
 })

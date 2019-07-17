@@ -1,13 +1,38 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+import { media } from '@tds/core-responsive'
 
 import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 import calculateLevel from '../calculateLevel'
 
-import styles from './Row.modules.scss'
-
 import safeRest from '../../../shared/utils/safeRest'
-import joinClassNames from '../../../shared/utils/joinClassNames'
+
+const StyledRow = styled(({ reverseLevel, ...rest }) => <ReactFlexboxGridRow {...rest} />)(
+  ({ reverseLevel }) => ({
+    width: '100%',
+    'div&': {
+      margin: '0 auto',
+      flexShrink: 0,
+      ...media.until('sm').css({
+        flexDirection: reverseLevel[0] ? 'row-reverse' : 'row',
+      }),
+      ...media.from('sm').css({
+        flexDirection: reverseLevel[1] ? 'row-reverse' : 'row',
+      }),
+      ...media.from('md').css({
+        flexDirection: reverseLevel[2] ? 'row-reverse' : 'row',
+      }),
+      ...media.from('lg').css({
+        flexDirection: reverseLevel[3] ? 'row-reverse' : 'row',
+      }),
+      ...media.from('xl').css({
+        flexDirection: reverseLevel[4] ? 'row-reverse' : 'row',
+      }),
+    },
+  })
+)
 
 const Row = ({
   horizontalAlign,
@@ -42,21 +67,14 @@ const Row = ({
   const reverseLevel = calculateLevel(xsReverse, smReverse, mdReverse, lgReverse, xlReverse)
 
   return (
-    <ReactFlexboxGridRow
+    <StyledRow
       {...safeRest(rest)}
       {...getAlignment()}
       {...getDistribution()}
-      className={joinClassNames(
-        styles.flexRow,
-        reverseLevel[0] ? styles.xsReverse : styles.xsReverseCancel,
-        reverseLevel[1] ? styles.smReverse : styles.smReverseCancel,
-        reverseLevel[2] ? styles.mdReverse : styles.mdReverseCancel,
-        reverseLevel[3] ? styles.lgReverse : styles.lgReverseCancel,
-        reverseLevel[4] ? styles.xlReverse : styles.xlReverseCancel
-      )}
+      reverseLevel={reverseLevel}
     >
       {children}
-    </ReactFlexboxGridRow>
+    </StyledRow>
   )
 }
 
