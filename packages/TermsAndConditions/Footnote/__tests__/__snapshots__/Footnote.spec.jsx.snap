@@ -1,7 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footnote renders closed 1`] = `
-.c5 {
+.c4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c7 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -13,8 +36,8 @@ exports[`Footnote renders closed 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c5 .c10,
-.c5 sup {
+.c7 .c12,
+.c7 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -34,7 +57,7 @@ exports[`Footnote renders closed 1`] = `
   background-color: #d8d8d8;
 }
 
-.c7 {
+.c9 {
   background: #f7f7f8;
 }
 
@@ -62,14 +85,14 @@ exports[`Footnote renders closed 1`] = `
   width: 100%;
 }
 
-.c4 {
+.c5 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c9 {
+.c11 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition: height 400ms ease-out,opacity 300ms;
@@ -83,7 +106,7 @@ exports[`Footnote renders closed 1`] = `
   opacity: 1;
 }
 
-.c6 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -98,8 +121,15 @@ exports[`Footnote renders closed 1`] = `
   display: none;
 }
 
-.c8 {
+.c10 {
   display: none;
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (min-width:768px) {
@@ -112,7 +142,7 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c11 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -124,7 +154,7 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (max-width:767px) {
-  .c8 {
+  .c10 {
     display: block;
   }
 }
@@ -149,9 +179,7 @@ exports[`Footnote renders closed 1`] = `
   </button>
   <div>
     <div
-      aria-modal="true"
       class="c0"
-      role="dialog"
     >
       <div
         aria-label="modal dialog"
@@ -174,7 +202,7 @@ exports[`Footnote renders closed 1`] = `
                 />
               </div>
               <div
-                class="TDS_Box-modules__verticalPadding-4___QMNNa"
+                class="c4"
               >
                 <div
                   class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -186,10 +214,10 @@ exports[`Footnote renders closed 1`] = `
                       class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                     >
                       <div
-                        class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c4"
+                        class="c5 sc-EHOje c5 c6"
                       >
                         <h2
-                          class="c5"
+                          class="c7"
                           data-testid="heading"
                           tabindex="-1"
                         >
@@ -197,11 +225,11 @@ exports[`Footnote renders closed 1`] = `
                         </h2>
                         <button
                           aria-label="close"
-                          class="clickable c6"
+                          class="clickable c8"
                           type="button"
                         >
                           <svg
-                            class="c7"
+                            class="c9"
                             height="24px"
                             viewBox="0 0 24 24"
                             width="24px"
@@ -231,7 +259,7 @@ exports[`Footnote renders closed 1`] = `
                 </div>
               </div>
               <div
-                class="c8"
+                class="c10"
               >
                 <hr
                   class="c3"
@@ -239,7 +267,7 @@ exports[`Footnote renders closed 1`] = `
               </div>
             </div>
             <div
-              class="c9"
+              class="c11"
             />
           </div>
         </div>
@@ -253,7 +281,30 @@ exports[`Footnote renders closed 1`] = `
 `;
 
 exports[`Footnote renders opened 1`] = `
-.c5 {
+.c4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c7 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -265,8 +316,8 @@ exports[`Footnote renders opened 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c5 .c10,
-.c5 sup {
+.c7 .c12,
+.c7 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
@@ -286,7 +337,7 @@ exports[`Footnote renders opened 1`] = `
   background-color: #d8d8d8;
 }
 
-.c7 {
+.c9 {
   background: #f7f7f8;
 }
 
@@ -317,14 +368,14 @@ exports[`Footnote renders opened 1`] = `
   width: 100%;
 }
 
-.c4 {
+.c5 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c9 {
+.c11 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition: height 400ms ease-out,opacity 300ms;
@@ -338,7 +389,7 @@ exports[`Footnote renders opened 1`] = `
   opacity: 1;
 }
 
-.c6 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -353,8 +404,15 @@ exports[`Footnote renders opened 1`] = `
   display: none;
 }
 
-.c8 {
+.c10 {
   display: none;
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (min-width:768px) {
@@ -367,7 +425,7 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c11 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -379,7 +437,7 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (max-width:767px) {
-  .c8 {
+  .c10 {
     display: block;
   }
 }
@@ -404,9 +462,7 @@ exports[`Footnote renders opened 1`] = `
   </button>
   <div>
     <div
-      aria-modal="true"
       class="c0"
-      role="dialog"
     >
       <div
         aria-label="modal dialog"
@@ -429,7 +485,7 @@ exports[`Footnote renders opened 1`] = `
                 />
               </div>
               <div
-                class="TDS_Box-modules__verticalPadding-4___QMNNa"
+                class="c4"
               >
                 <div
                   class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
@@ -441,10 +497,10 @@ exports[`Footnote renders opened 1`] = `
                       class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
                     >
                       <div
-                        class="TDS_Box-modules__spaceBetween___k4Ski TDS_Box-modules__inline___jTHcz c4"
+                        class="c5 sc-EHOje c5 c6"
                       >
                         <h2
-                          class="c5"
+                          class="c7"
                           data-testid="heading"
                           tabindex="-1"
                         >
@@ -452,11 +508,11 @@ exports[`Footnote renders opened 1`] = `
                         </h2>
                         <button
                           aria-label="close"
-                          class="clickable c6"
+                          class="clickable c8"
                           type="button"
                         >
                           <svg
-                            class="c7"
+                            class="c9"
                             height="24px"
                             viewBox="0 0 24 24"
                             width="24px"
@@ -486,7 +542,7 @@ exports[`Footnote renders opened 1`] = `
                 </div>
               </div>
               <div
-                class="c8"
+                class="c10"
               >
                 <hr
                   class="c3"
@@ -494,7 +550,7 @@ exports[`Footnote renders opened 1`] = `
               </div>
             </div>
             <div
-              class="c9"
+              class="c11"
             />
           </div>
         </div>

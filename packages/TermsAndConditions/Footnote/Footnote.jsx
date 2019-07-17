@@ -251,11 +251,9 @@ const Footnote = props => {
         ref={footnoteRef}
         isOpen={isOpen}
         isVisible={isVisible}
-        role="dialog"
-        aria-modal="true"
         onTransitionEnd={handleStyledFootnoteTransitionEnd}
       >
-        <FocusTrap>
+        <FocusTrap autofocus={false}>
           <StyledFootnoteHeader ref={headerRef}>
             <div css={{ display: 'none', ...media.from('md').css({ display: 'block' }) }}>
               <HairlineDivider />
