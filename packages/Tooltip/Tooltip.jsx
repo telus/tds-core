@@ -147,6 +147,7 @@ class Tooltip extends React.Component {
             {children}
           </Bubble>
           <StandaloneIcon
+            type="button"
             symbol="questionMarkCircle"
             a11yText={this.getTriggerA11yText(this.props.connectedFieldLabel, this.props.copy)}
             onClick={this.toggleBubble}

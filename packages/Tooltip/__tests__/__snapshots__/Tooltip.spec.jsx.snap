@@ -499,6 +499,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                 onClick={[Function]}
                 size={24}
                 symbol="questionMarkCircle"
+                type="button"
               >
                 <StandaloneIcon__StandaloneIconClickable
                   aria-controls="standalone-tooltip-mc41_tooltip"
@@ -512,6 +513,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                       "padding": "4px",
                     }
                   }
+                  type="button"
                 >
                   <StyledComponent
                     aria-controls="standalone-tooltip-mc41_tooltip"
@@ -556,6 +558,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                         "padding": "4px",
                       }
                     }
+                    type="button"
                   >
                     <button
                       aria-controls="standalone-tooltip-mc41_tooltip"
@@ -570,6 +573,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                           "padding": "4px",
                         }
                       }
+                      type="button"
                     >
                       <Icon
                         size={24}
@@ -1161,6 +1165,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                 onClick={[Function]}
                 size={24}
                 symbol="questionMarkCircle"
+                type="button"
               >
                 <StandaloneIcon__StandaloneIconClickable
                   aria-controls="standalone-tooltip-mc41_tooltip"
@@ -1174,6 +1179,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                       "padding": "4px",
                     }
                   }
+                  type="button"
                 >
                   <StyledComponent
                     aria-controls="standalone-tooltip-mc41_tooltip"
@@ -1218,6 +1224,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         "padding": "4px",
                       }
                     }
+                    type="button"
                   >
                     <button
                       aria-controls="standalone-tooltip-mc41_tooltip"
@@ -1232,6 +1239,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                           "padding": "4px",
                         }
                       }
+                      type="button"
                     >
                       <Icon
                         size={24}
@@ -1823,6 +1831,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                 onClick={[Function]}
                 size={24}
                 symbol="questionMarkCircle"
+                type="button"
               >
                 <StandaloneIcon__StandaloneIconClickable
                   aria-controls="standalone-tooltip-mc41_tooltip"
@@ -1836,6 +1845,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                       "padding": "4px",
                     }
                   }
+                  type="button"
                 >
                   <StyledComponent
                     aria-controls="standalone-tooltip-mc41_tooltip"
@@ -1880,6 +1890,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         "padding": "4px",
                       }
                     }
+                    type="button"
                   >
                     <button
                       aria-controls="standalone-tooltip-mc41_tooltip"
@@ -1894,6 +1905,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                           "padding": "4px",
                         }
                       }
+                      type="button"
                     >
                       <Icon
                         size={24}
@@ -3073,6 +3085,7 @@ exports[`Tooltip renders 1`] = `
                 onClick={[Function]}
                 size={24}
                 symbol="questionMarkCircle"
+                type="button"
               >
                 <StandaloneIcon__StandaloneIconClickable
                   aria-controls="standalone-tooltip-mc41_tooltip"
@@ -3086,6 +3099,7 @@ exports[`Tooltip renders 1`] = `
                       "padding": "4px",
                     }
                   }
+                  type="button"
                 >
                   <StyledComponent
                     aria-controls="standalone-tooltip-mc41_tooltip"
@@ -3130,6 +3144,7 @@ exports[`Tooltip renders 1`] = `
                         "padding": "4px",
                       }
                     }
+                    type="button"
                   >
                     <button
                       aria-controls="standalone-tooltip-mc41_tooltip"
@@ -3144,6 +3159,7 @@ exports[`Tooltip renders 1`] = `
                           "padding": "4px",
                         }
                       }
+                      type="button"
                     >
                       <Icon
                         size={24}
