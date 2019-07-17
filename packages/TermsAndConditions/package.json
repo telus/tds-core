@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-terms-and-conditions",
-  "version": "1.0.0-alpha.7",
+  "version": "1.0.0-alpha.8",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@tds/core-a11y-content": "^2.1.0",
-    "@tds/core-box": "^1.2.4",
+    "@tds/core-box": "^2.0.0",
     "@tds/core-colours": "^1.1.1",
     "@tds/core-dimple-divider": "^2.0.0",
     "@tds/core-flex-grid": "^2.3.13",

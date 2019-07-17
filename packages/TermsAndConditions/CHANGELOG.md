@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.8](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.0-alpha.7...@tds/core-terms-and-conditions@1.0.0-alpha.8) (2019-07-17)
+
+**Note:** Version bump only for package @tds/core-terms-and-conditions
+
+
+
+
+
 # [1.0.0-alpha.7](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.0-alpha.6...@tds/core-terms-and-conditions@1.0.0-alpha.7) (2019-07-12)
 
 

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-box@1.2.4...@tds/core-box@2.0.0) (2019-07-17)
+
+
+### Features
+
+* **core-box:** upgrade to styled-components ([836e868](https://github.com/telusdigital/tds/commit/836e868))
+
+
+### BREAKING CHANGES
+
+* **core-box:** styled-components now a peer dependency
+* **core-box:** remove dangerouslyAddClassname prop
+
+
+
+
+
 ## [1.2.4](https://github.com/telusdigital/tds/compare/@tds/core-box@1.2.3...@tds/core-box@1.2.4) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-box

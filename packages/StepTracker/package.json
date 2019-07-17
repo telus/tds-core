@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-step-tracker",
-  "version": "3.0.25",
+  "version": "3.0.26",
   "description": "Show the current position in a sequence of steps",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -25,7 +25,7 @@
     "react-dom": ">=15"
   },
   "dependencies": {
-    "@tds/core-box": "^1.2.4",
+    "@tds/core-box": "^2.0.0",
     "@tds/core-decorative-icon": "^2.0.0",
     "@tds/core-flex-grid": "^2.3.13",
     "@tds/core-text": "^2.0.0",
