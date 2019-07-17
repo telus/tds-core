@@ -1,22 +1,1978 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FlexGrid renders 1`] = `
-<div
-  class="flexGrid limitWidth xsReverseCancel smReverseCancel mdReverseCancel lgReverseCancel xlReverseCancel container-fluid"
+exports[`FlexGrid allows the limitWidth prop to be unset 1`] = `
+div.c2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c1 {
+  width: 100%;
+}
+
+div.c1 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div.c0 {
+  padding: 0;
+}
+
+@media (max-width:575px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width:575px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+<Grid
+  className="c0"
+  fluid={true}
 >
   <div
-    class="flexRow xsReverseCancel smReverseCancel mdReverseCancel lgReverseCancel xlReverseCancel row"
+    className="c0 container-fluid"
+  >
+    <Row
+      id="row-1"
+    >
+      <Styled(Component)
+        id="row-1"
+        reverseLevel={
+          Array [
+            false,
+            false,
+            false,
+            false,
+            false,
+          ]
+        }
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  [Function],
+                ],
+              },
+              "displayName": "Styled(Component)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="row-1"
+          reverseLevel={
+            Array [
+              false,
+              false,
+              false,
+              false,
+              false,
+            ]
+          }
+        >
+          <Component
+            className="c1"
+            id="row-1"
+            reverseLevel={
+              Array [
+                false,
+                false,
+                false,
+                false,
+                false,
+              ]
+            }
+          >
+            <Row
+              className="c1"
+              id="row-1"
+            >
+              <div
+                className="c1 row"
+                id="row-1"
+              >
+                <Col
+                  id="col-1"
+                >
+                  <Styled(Component)
+                    gutter={true}
+                    hiddenLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                    horizontalAlignLevel={
+                      Array [
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                      ]
+                    }
+                    id="col-1"
+                    xs={true}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      gutter={true}
+                      hiddenLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
+                      horizontalAlignLevel={
+                        Array [
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                        ]
+                      }
+                      id="col-1"
+                      xs={true}
+                    >
+                      <Component
+                        className="c2"
+                        gutter={true}
+                        hiddenLevel={
+                          Array [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                          ]
+                        }
+                        horizontalAlignLevel={
+                          Array [
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                          ]
+                        }
+                        id="col-1"
+                        xs={true}
+                      >
+                        <Col
+                          className="c2"
+                          id="col-1"
+                          xs={true}
+                        >
+                          <div
+                            className="col-xs c2"
+                            id="col-1"
+                          >
+                            1st column content
+                          </div>
+                        </Col>
+                      </Component>
+                    </StyledComponent>
+                  </Styled(Component)>
+                </Col>
+                <Col
+                  id="col-2"
+                >
+                  <Styled(Component)
+                    gutter={true}
+                    hiddenLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                    horizontalAlignLevel={
+                      Array [
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                      ]
+                    }
+                    id="col-2"
+                    xs={true}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      gutter={true}
+                      hiddenLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
+                      horizontalAlignLevel={
+                        Array [
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                        ]
+                      }
+                      id="col-2"
+                      xs={true}
+                    >
+                      <Component
+                        className="c2"
+                        gutter={true}
+                        hiddenLevel={
+                          Array [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                          ]
+                        }
+                        horizontalAlignLevel={
+                          Array [
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                          ]
+                        }
+                        id="col-2"
+                        xs={true}
+                      >
+                        <Col
+                          className="c2"
+                          id="col-2"
+                          xs={true}
+                        >
+                          <div
+                            className="col-xs c2"
+                            id="col-2"
+                          >
+                            2nd column content
+                          </div>
+                        </Col>
+                      </Component>
+                    </StyledComponent>
+                  </Styled(Component)>
+                </Col>
+              </div>
+            </Row>
+          </Component>
+        </StyledComponent>
+      </Styled(Component)>
+    </Row>
+  </div>
+</Grid>
+`;
+
+exports[`FlexGrid can have limited width at various viewport sizes 1`] = `
+div.c2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c1 {
+  width: 100%;
+}
+
+div.c1 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div.c0 {
+  padding: 0;
+}
+
+@media (max-width:575px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width:575px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    max-width: 576px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    max-width: 768px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    max-width: 992px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    max-width: 1200px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+<Grid
+  className="c0"
+  fluid={true}
+>
+  <div
+    className="c0 container-fluid"
+  >
+    <Row
+      id="row-1"
+    >
+      <Styled(Component)
+        id="row-1"
+        reverseLevel={
+          Array [
+            false,
+            false,
+            false,
+            false,
+            false,
+          ]
+        }
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  [Function],
+                ],
+              },
+              "displayName": "Styled(Component)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="row-1"
+          reverseLevel={
+            Array [
+              false,
+              false,
+              false,
+              false,
+              false,
+            ]
+          }
+        >
+          <Component
+            className="c1"
+            id="row-1"
+            reverseLevel={
+              Array [
+                false,
+                false,
+                false,
+                false,
+                false,
+              ]
+            }
+          >
+            <Row
+              className="c1"
+              id="row-1"
+            >
+              <div
+                className="c1 row"
+                id="row-1"
+              >
+                <Col
+                  id="col-1"
+                >
+                  <Styled(Component)
+                    gutter={true}
+                    hiddenLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                    horizontalAlignLevel={
+                      Array [
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                      ]
+                    }
+                    id="col-1"
+                    xs={true}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      gutter={true}
+                      hiddenLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
+                      horizontalAlignLevel={
+                        Array [
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                        ]
+                      }
+                      id="col-1"
+                      xs={true}
+                    >
+                      <Component
+                        className="c2"
+                        gutter={true}
+                        hiddenLevel={
+                          Array [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                          ]
+                        }
+                        horizontalAlignLevel={
+                          Array [
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                          ]
+                        }
+                        id="col-1"
+                        xs={true}
+                      >
+                        <Col
+                          className="c2"
+                          id="col-1"
+                          xs={true}
+                        >
+                          <div
+                            className="col-xs c2"
+                            id="col-1"
+                          >
+                            1st column content
+                          </div>
+                        </Col>
+                      </Component>
+                    </StyledComponent>
+                  </Styled(Component)>
+                </Col>
+                <Col
+                  id="col-2"
+                >
+                  <Styled(Component)
+                    gutter={true}
+                    hiddenLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                    horizontalAlignLevel={
+                      Array [
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                      ]
+                    }
+                    id="col-2"
+                    xs={true}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      gutter={true}
+                      hiddenLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
+                      horizontalAlignLevel={
+                        Array [
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                        ]
+                      }
+                      id="col-2"
+                      xs={true}
+                    >
+                      <Component
+                        className="c2"
+                        gutter={true}
+                        hiddenLevel={
+                          Array [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                          ]
+                        }
+                        horizontalAlignLevel={
+                          Array [
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                          ]
+                        }
+                        id="col-2"
+                        xs={true}
+                      >
+                        <Col
+                          className="c2"
+                          id="col-2"
+                          xs={true}
+                        >
+                          <div
+                            className="col-xs c2"
+                            id="col-2"
+                          >
+                            2nd column content
+                          </div>
+                        </Col>
+                      </Component>
+                    </StyledComponent>
+                  </Styled(Component)>
+                </Col>
+              </div>
+            </Row>
+          </Component>
+        </StyledComponent>
+      </Styled(Component)>
+    </Row>
+  </div>
+</Grid>
+`;
+
+exports[`FlexGrid renders 1`] = `
+div.c2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c1 {
+  width: 100%;
+}
+
+div.c1 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div.c0 {
+  padding: 0;
+}
+
+@media (max-width:575px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width:575px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    max-width: 576px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    max-width: 768px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    max-width: 992px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    max-width: 1200px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+<div
+  class="c0 container-fluid"
+>
+  <div
+    class="c1 row"
   >
     <div
-      class="col-xs xsVisible smVisible mdVisible lgVisible xlVisible padding"
+      class="col-xs c2"
     >
       1st column content
     </div>
     <div
-      class="col-xs xsVisible smVisible mdVisible lgVisible xlVisible padding"
+      class="col-xs c2"
     >
       2nd column content
     </div>
   </div>
 </div>
+`;
+
+exports[`FlexGrid should render all children related to Grid with no gutter 1`] = `
+div.c0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width:575px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+<div
+  className="col-xs c0"
+  id="col-1"
+>
+  1st column content
+</div>
+`;
+
+exports[`FlexGrid should render all children related to Grid with no gutter 2`] = `
+div.c0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width:575px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+<div
+  className="col-xs c0"
+  id="col-2"
+>
+  2nd column content
+</div>
+`;
+
+exports[`FlexGrid should render all children related to Grid with no gutter 3`] = `
+div.c1 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c0 {
+  width: 100%;
+}
+
+div.c0 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media (max-width:575px) {
+  .c1 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:576px) {
+  .c1 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:1200px) {
+  .c1 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width:575px) {
+  div.c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+<div
+  className="c0 row"
+  id="row-1"
+>
+  <Col
+    id="col-1"
+  >
+    <Styled(Component)
+      gutter={false}
+      hiddenLevel={
+        Array [
+          false,
+          false,
+          false,
+          false,
+          false,
+        ]
+      }
+      horizontalAlignLevel={
+        Array [
+          "left",
+          "left",
+          "left",
+          "left",
+          "left",
+        ]
+      }
+      id="col-1"
+      xs={true}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c1",
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Styled(Component)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        gutter={false}
+        hiddenLevel={
+          Array [
+            false,
+            false,
+            false,
+            false,
+            false,
+          ]
+        }
+        horizontalAlignLevel={
+          Array [
+            "left",
+            "left",
+            "left",
+            "left",
+            "left",
+          ]
+        }
+        id="col-1"
+        xs={true}
+      >
+        <Component
+          className="c1"
+          gutter={false}
+          hiddenLevel={
+            Array [
+              false,
+              false,
+              false,
+              false,
+              false,
+            ]
+          }
+          horizontalAlignLevel={
+            Array [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+            ]
+          }
+          id="col-1"
+          xs={true}
+        >
+          <Col
+            className="c1"
+            id="col-1"
+            xs={true}
+          >
+            <div
+              className="col-xs c1"
+              id="col-1"
+            >
+              1st column content
+            </div>
+          </Col>
+        </Component>
+      </StyledComponent>
+    </Styled(Component)>
+  </Col>
+  <Col
+    id="col-2"
+  >
+    <Styled(Component)
+      gutter={false}
+      hiddenLevel={
+        Array [
+          false,
+          false,
+          false,
+          false,
+          false,
+        ]
+      }
+      horizontalAlignLevel={
+        Array [
+          "left",
+          "left",
+          "left",
+          "left",
+          "left",
+        ]
+      }
+      id="col-2"
+      xs={true}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c1",
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Styled(Component)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        gutter={false}
+        hiddenLevel={
+          Array [
+            false,
+            false,
+            false,
+            false,
+            false,
+          ]
+        }
+        horizontalAlignLevel={
+          Array [
+            "left",
+            "left",
+            "left",
+            "left",
+            "left",
+          ]
+        }
+        id="col-2"
+        xs={true}
+      >
+        <Component
+          className="c1"
+          gutter={false}
+          hiddenLevel={
+            Array [
+              false,
+              false,
+              false,
+              false,
+              false,
+            ]
+          }
+          horizontalAlignLevel={
+            Array [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+            ]
+          }
+          id="col-2"
+          xs={true}
+        >
+          <Col
+            className="c1"
+            id="col-2"
+            xs={true}
+          >
+            <div
+              className="col-xs c1"
+              id="col-2"
+            >
+              2nd column content
+            </div>
+          </Col>
+        </Component>
+      </StyledComponent>
+    </Styled(Component)>
+  </Col>
+</div>
+`;
+
+exports[`FlexGrid supports responsive reversal 1`] = `
+div.c2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c1 {
+  width: 100%;
+}
+
+div.c1 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div.c0 {
+  padding: 0;
+}
+
+@media (max-width:575px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width:575px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c0 {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    max-width: 576px;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    max-width: 768px;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    max-width: 992px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    max-width: 1200px;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+<Grid
+  className="c0"
+  fluid={true}
+>
+  <div
+    className="c0 container-fluid"
+  >
+    <Row
+      id="row-1"
+    >
+      <Styled(Component)
+        id="row-1"
+        reverseLevel={
+          Array [
+            false,
+            false,
+            false,
+            false,
+            false,
+          ]
+        }
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  [Function],
+                ],
+              },
+              "displayName": "Styled(Component)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="row-1"
+          reverseLevel={
+            Array [
+              false,
+              false,
+              false,
+              false,
+              false,
+            ]
+          }
+        >
+          <Component
+            className="c1"
+            id="row-1"
+            reverseLevel={
+              Array [
+                false,
+                false,
+                false,
+                false,
+                false,
+              ]
+            }
+          >
+            <Row
+              className="c1"
+              id="row-1"
+            >
+              <div
+                className="c1 row"
+                id="row-1"
+              >
+                <Col
+                  id="col-1"
+                >
+                  <Styled(Component)
+                    gutter={true}
+                    hiddenLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                    horizontalAlignLevel={
+                      Array [
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                      ]
+                    }
+                    id="col-1"
+                    xs={true}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      gutter={true}
+                      hiddenLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
+                      horizontalAlignLevel={
+                        Array [
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                        ]
+                      }
+                      id="col-1"
+                      xs={true}
+                    >
+                      <Component
+                        className="c2"
+                        gutter={true}
+                        hiddenLevel={
+                          Array [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                          ]
+                        }
+                        horizontalAlignLevel={
+                          Array [
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                          ]
+                        }
+                        id="col-1"
+                        xs={true}
+                      >
+                        <Col
+                          className="c2"
+                          id="col-1"
+                          xs={true}
+                        >
+                          <div
+                            className="col-xs c2"
+                            id="col-1"
+                          >
+                            1st column content
+                          </div>
+                        </Col>
+                      </Component>
+                    </StyledComponent>
+                  </Styled(Component)>
+                </Col>
+                <Col
+                  id="col-2"
+                >
+                  <Styled(Component)
+                    gutter={true}
+                    hiddenLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
+                    horizontalAlignLevel={
+                      Array [
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                        "left",
+                      ]
+                    }
+                    id="col-2"
+                    xs={true}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      gutter={true}
+                      hiddenLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
+                      horizontalAlignLevel={
+                        Array [
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                          "left",
+                        ]
+                      }
+                      id="col-2"
+                      xs={true}
+                    >
+                      <Component
+                        className="c2"
+                        gutter={true}
+                        hiddenLevel={
+                          Array [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                          ]
+                        }
+                        horizontalAlignLevel={
+                          Array [
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                            "left",
+                          ]
+                        }
+                        id="col-2"
+                        xs={true}
+                      >
+                        <Col
+                          className="c2"
+                          id="col-2"
+                          xs={true}
+                        >
+                          <div
+                            className="col-xs c2"
+                            id="col-2"
+                          >
+                            2nd column content
+                          </div>
+                        </Col>
+                      </Component>
+                    </StyledComponent>
+                  </Styled(Component)>
+                </Col>
+              </div>
+            </Row>
+          </Component>
+        </StyledComponent>
+      </Styled(Component)>
+    </Row>
+  </div>
+</Grid>
 `;

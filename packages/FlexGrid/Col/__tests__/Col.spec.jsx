@@ -104,11 +104,7 @@ describe('Col', () => {
       xl: 0,
     })
 
-    expect(col.hasClass('xsHidden')).toEqual(true)
-    expect(col.hasClass('smVisible')).toEqual(true)
-    expect(col.hasClass('mdHidden')).toEqual(true)
-    expect(col.hasClass('lgVisible')).toEqual(true)
-    expect(col.hasClass('xlHidden')).toEqual(true)
+    expect(col).toMatchSnapshot()
   })
 
   it('can align column content horizontally using a string', () => {
@@ -116,7 +112,7 @@ describe('Col', () => {
       horizontalAlign: 'right',
     })
 
-    expect(col.hasClass('xsHorizontalAlign-right')).toEqual(true)
+    expect(col).toMatchSnapshot()
   })
 
   it('can align column content horizontally using a responsive prop object', () => {
@@ -127,7 +123,6 @@ describe('Col', () => {
       },
     })
 
-    expect(col.hasClass('xsHorizontalAlign-center')).toEqual(true)
-    expect(col.hasClass('mdHorizontalAlign-left')).toEqual(true)
+    expect(col).toMatchSnapshot()
   })
 })
