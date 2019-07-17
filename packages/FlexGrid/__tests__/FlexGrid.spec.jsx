@@ -19,7 +19,7 @@ describe('FlexGrid', () => {
 
     return {
       flexGrid: flexGrid.find(Grid),
-      findColumn: index => flexGrid.find(`div#col-${index}`),
+      findStyledColumn: index => flexGrid.find(`StyledComponent#col-${index}`),
       findRow: index => flexGrid.find(`div#row-${index}`),
     }
   }
@@ -46,19 +46,19 @@ describe('FlexGrid', () => {
   it('is fluid by default', () => {
     const { flexGrid } = doMount()
 
-    expect(flexGrid).toHaveProp('fluid', true)
+    expect(flexGrid.first()).toHaveProp('fluid', true)
   })
 
   it('should render all children related to Grid with no gutter', () => {
-    const { findColumn, findRow } = doMount({ gutter: false })
+    const { findStyledColumn, findRow } = doMount({ gutter: false })
 
-    const col1 = findColumn(1)
-    const col2 = findColumn(2)
+    const styledCol1 = findStyledColumn(1)
+    const styledCol2 = findStyledColumn(2)
     const row = findRow(1)
 
-    expect(col1).toHaveClassName('gutterless')
-    expect(col2).toHaveClassName('gutterless')
-    expect(row).toHaveClassName('flexRow')
+    expect(styledCol1.prop('gutter')).toEqual(false)
+    expect(styledCol2.prop('gutter')).toEqual(false)
+    expect(row).toHaveClassName('row')
   })
 
   it('passes additional attributes to the element', () => {
@@ -75,7 +75,7 @@ describe('FlexGrid', () => {
     mockMatchMedia(360)
     const { flexGrid } = doMount()
 
-    expect(flexGrid).toHaveClassName('limitWidth')
+    expect(flexGrid).toMatchSnapshot()
   })
 
   it('supports responsive reversal', () => {
@@ -87,11 +87,7 @@ describe('FlexGrid', () => {
       xlReverse: true,
     })
 
-    expect(flexGrid.hasClass('xsReverse')).toEqual(true)
-    expect(flexGrid.hasClass('smReverse')).toEqual(true)
-    expect(flexGrid.hasClass('mdReverse')).toEqual(true)
-    expect(flexGrid.hasClass('lgReverseCancel')).toEqual(true)
-    expect(flexGrid.hasClass('xlReverse')).toEqual(true)
+    expect(flexGrid).toMatchSnapshot()
   })
 
   it('does not allow custom CSS', () => {
@@ -109,6 +105,6 @@ describe('FlexGrid', () => {
       limitWidth: false,
     })
 
-    expect(flexGrid).not.toHaveClassName('limitWidth')
+    expect(flexGrid).toMatchSnapshot()
   })
 })

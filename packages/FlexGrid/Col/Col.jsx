@@ -1,33 +1,44 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Subscriber } from 'react-broadcast'
+import styled from 'styled-components'
 
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 import { responsiveProps } from '@tds/util-prop-types'
+import { media } from '@tds/core-responsive'
 
-import joinClassNames from '../../../shared/utils/joinClassNames'
+import GutterContext from '../gutterContext'
 import safeRest from '../../../shared/utils/safeRest'
 import { deprecate } from '../../../shared/utils/warn'
 import calculateLevel from '../calculateLevel'
 
-import styles from './Col.modules.scss'
-
-const createResponsivePropsClassNames = (responsivePropsObject, cb) =>
-  Object.keys(responsivePropsObject).map(breakpoint =>
-    cb(breakpoint, responsivePropsObject[breakpoint])
-  )
-
-const getHorizontalAlignClasses = horizontalAlign => {
-  if (typeof horizontalAlign === 'object') {
-    return joinClassNames(
-      ...createResponsivePropsClassNames(
-        horizontalAlign,
-        (breakpoint, value) => styles[`${breakpoint}HorizontalAlign-${value}`]
-      )
-    )
-  }
-  return horizontalAlign && styles[`xsHorizontalAlign-${horizontalAlign}`]
-}
+const StyledCol = styled(({ hiddenLevel, gutter, horizontalAlignLevel, ...rest }) => (
+  <ReactFlexboxGridCol {...rest} />
+))(({ hiddenLevel, gutter, horizontalAlignLevel }) => ({
+  'div&': {
+    paddingLeft: gutter ? '1rem' : 0,
+    paddingRight: gutter ? '1rem' : 0,
+  },
+  ...media.until('sm').css({
+    display: hiddenLevel[0] === 0 ? 'none' : 'block',
+    textAlign: horizontalAlignLevel[0],
+  }),
+  ...media.from('sm').css({
+    display: hiddenLevel[1] === 0 ? 'none' : 'block',
+    textAlign: horizontalAlignLevel[1],
+  }),
+  ...media.from('md').css({
+    display: hiddenLevel[2] === 0 ? 'none' : 'block',
+    textAlign: horizontalAlignLevel[2],
+  }),
+  ...media.from('lg').css({
+    display: hiddenLevel[3] === 0 ? 'none' : 'block',
+    textAlign: horizontalAlignLevel[3],
+  }),
+  ...media.from('xl').css({
+    display: hiddenLevel[4] === 0 ? 'none' : 'block',
+    textAlign: horizontalAlignLevel[4],
+  }),
+}))
 
 const Col = ({ span, offset, horizontalAlign, children, ...rest }) => {
   if (offset) {
@@ -51,26 +62,36 @@ const Col = ({ span, offset, horizontalAlign, children, ...rest }) => {
 
   const hiddenLevel = calculateLevel(rest.xs, rest.sm, rest.md, rest.lg, rest.xl)
 
+  const horizontalAlignLevel = () => {
+    if (typeof horizontalAlign === 'object') {
+      return calculateLevel(
+        horizontalAlign.xs,
+        horizontalAlign.sm,
+        horizontalAlign.md,
+        horizontalAlign.lg,
+        horizontalAlign.xl
+      )
+    }
+    if (typeof horizontalAlign === 'string') {
+      return [horizontalAlign, horizontalAlign, horizontalAlign, horizontalAlign, horizontalAlign]
+    }
+    return ['inherit', 'inherit', 'inherit', 'inherit', 'inherit']
+  }
+
   return (
-    <Subscriber channel="flex-grid">
+    <GutterContext.Consumer>
       {gutter => (
-        <ReactFlexboxGridCol
+        <StyledCol
           {...safeRest(props)}
           xs={rest.xs || span || true}
-          className={joinClassNames(
-            hiddenLevel[0] === 0 ? styles.xsHidden : styles.xsVisible,
-            hiddenLevel[1] === 0 ? styles.smHidden : styles.smVisible,
-            hiddenLevel[2] === 0 ? styles.mdHidden : styles.mdVisible,
-            hiddenLevel[3] === 0 ? styles.lgHidden : styles.lgVisible,
-            hiddenLevel[4] === 0 ? styles.xlHidden : styles.xlVisible,
-            gutter ? styles.padding : styles.gutterless,
-            getHorizontalAlignClasses(horizontalAlign)
-          )}
+          hiddenLevel={hiddenLevel}
+          gutter={gutter}
+          horizontalAlignLevel={horizontalAlignLevel()}
         >
           {children}
-        </ReactFlexboxGridCol>
+        </StyledCol>
       )}
-    </Subscriber>
+    </GutterContext.Consumer>
   )
 }
 

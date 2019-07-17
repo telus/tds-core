@@ -1,15 +1,161 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Col can hide columns 1`] = `
+exports[`Col can align column content horizontally using a responsive prop object 1`] = `
+div.c0 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width:575px) {
+  .c0 {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    display: block;
+    text-align: left;
+  }
+}
+
 <Col
-  className="xsHidden smHidden mdVisible lgVisible xlHidden padding"
+  className="c0"
+  xs={true}
+>
+  <div
+    className="col-xs c0"
+  >
+    Some content
+  </div>
+</Col>
+`;
+
+exports[`Col can align column content horizontally using a string 1`] = `
+div.c0 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width:575px) {
+  .c0 {
+    display: block;
+    text-align: right;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    display: block;
+    text-align: right;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: block;
+    text-align: right;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    display: block;
+    text-align: right;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    display: block;
+    text-align: right;
+  }
+}
+
+<Col
+  className="c0"
+  xs={true}
+>
+  <div
+    className="col-xs c0"
+  >
+    Some content
+  </div>
+</Col>
+`;
+
+exports[`Col can hide columns 1`] = `
+div.c0 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width:575px) {
+  .c0 {
+    display: none;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    display: none;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    display: none;
+    text-align: inherit;
+  }
+}
+
+<Col
+  className="c0"
   md={1}
   sm={0}
   xl={0}
   xs={true}
 >
   <div
-    className="col-xs col-sm-0 col-md-1 col-xl-0 xsHidden smHidden mdVisible lgVisible xlHidden padding"
+    className="col-xs col-sm-0 col-md-1 col-xl-0 c0"
   >
     Some content
   </div>
@@ -17,12 +163,109 @@ exports[`Col can hide columns 1`] = `
 `;
 
 exports[`Col renders 1`] = `
+div.c0 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width:575px) {
+  .c0 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
 <Col
-  className="xsVisible smVisible mdVisible lgVisible xlVisible padding"
+  className="c0"
   xs={true}
 >
   <div
-    className="col-xs xsVisible smVisible mdVisible lgVisible xlVisible padding"
+    className="col-xs c0"
+  >
+    Some content
+  </div>
+</Col>
+`;
+
+exports[`Col supports responsive hidden columns 1`] = `
+div.c0 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width:575px) {
+  .c0 {
+    display: none;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: none;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    display: none;
+    text-align: inherit;
+  }
+}
+
+<Col
+  className="c0"
+  lg={1}
+  md={0}
+  sm={1}
+  xl={0}
+  xs={true}
+>
+  <div
+    className="col-xs col-sm-1 col-md-0 col-lg-1 col-xl-0 c0"
   >
     Some content
   </div>
