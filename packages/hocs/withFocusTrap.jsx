@@ -38,6 +38,7 @@ const withFocusTrap = Component => {
       </div>
     )
   }
+
   WithFocusTrap.propTypes = {
     a11yText: PropTypes.string,
     autofocus: PropTypes.bool,
