@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.3.0...@tds/core-notification@2.0.0) (2019-07-18)
+
+
+### Features
+
+* **core-notification:** upgrade to styled-components ([c5c0152](https://github.com/telusdigital/tds/commit/c5c0152))
+
+
+### BREAKING CHANGES
+
+* **core-notification:** styled-components is now a peer dependency
+
+
+
+
+
 # [1.3.0](https://github.com/telusdigital/tds/compare/@tds/core-notification@1.2.36...@tds/core-notification@1.3.0) (2019-07-17)
 
 
