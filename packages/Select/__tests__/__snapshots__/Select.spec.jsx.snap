@@ -1395,7 +1395,7 @@ exports[`Select label can have a hint below 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "Text__StyledText-sc-1m0rr67-0",
                           "isStatic": false,
-                          "lastClassName": "jntIDl",
+                          "lastClassName": "c2",
                           "rules": Array [
                             [Function],
                             [Function],
