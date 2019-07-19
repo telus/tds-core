@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telus/tds/compare/@tds/core-select@3.0.10...@tds/core-select@3.1.0) (2019-07-19)
+
+
+### Features
+
+* **core-select:** add hintPosition below ([96ceffe](https://github.com/telus/tds/commit/96ceffe))
+
+
+
+
+
 ## [3.0.10](https://github.com/telus/tds/compare/@tds/core-select@3.0.9...@tds/core-select@3.0.10) (2019-07-17)
 
 **Note:** Version bump only for package @tds/core-select
