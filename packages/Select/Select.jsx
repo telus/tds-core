@@ -144,7 +144,7 @@ const renderLabel = (id, label, hint, hintPosition, hintId, tooltip) => (
       </label>
       {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
     </Box>
-    {hint && hintPosition === 'below' && renderHint(hint, Text, hintId)}
+    {hint && hintPosition === 'below' && renderHint(hint, Paragraph, hintId)}
   </div>
 )
 
