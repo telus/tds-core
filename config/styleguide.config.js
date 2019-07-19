@@ -190,13 +190,10 @@ module.exports = {
           components() {
             return [
               path.resolve('packages/DisplayHeading/DisplayHeading.jsx'),
-              path.resolve('packages/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'),
               path.resolve('packages/Heading/Heading.jsx'),
-              path.resolve('packages/Heading/HeadingSup/HeadingSup.jsx'),
               path.resolve('packages/Paragraph/Paragraph.jsx'),
               path.resolve('packages/PriceLockup/PriceLockup.jsx'),
               path.resolve('packages/Text/Text.jsx'),
-              path.resolve('packages/Text/TextSup/TextSup.jsx'),
               path.resolve('packages/Strong/Strong.jsx'),
               path.resolve('packages/Small/Small.jsx'),
             ]
@@ -329,13 +326,13 @@ module.exports = {
     path.resolve('config/globalComponents.js'),
   ].concat(styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []),
   styleguideComponents: {
-    Editor: path.resolve('docs/components/overrides/Editor/Editor'),
+    // Editor: path.resolve('docs/components/overrides/Editor/Editor'),
     Logo: path.resolve('docs/components/custom/Logo/Logo'),
     'Markdown/List': path.resolve('docs/components/custom/MarkdownList/MarkdownList'),
     'Markdown/MarkdownHeading': path.resolve(
       'docs/components/custom/MarkdownHeading/MarkdownHeading'
     ),
-    'Markdown/Markdown': path.resolve('docs/components/overrides/Markdown/Markdown'),
+    // 'Markdown/Markdown': path.resolve('docs/components/overrides/Markdown/Markdown'),
     PathlineRenderer: path.resolve('docs/components/overrides/Pathline/PathlineRenderer'),
     SectionHeadingRenderer: path.resolve(
       'docs/components/custom/SectionHeading/SectionHeadingRenderer'
@@ -359,6 +356,11 @@ module.exports = {
     sidebarWidth: 240,
   },
   styles: {
+    Pre: {
+      pre: {
+        border: '1px solid #e8e8e8',
+      },
+    },
     // Fixing mobile overflow of code examples
     Markdown: {
       pre: {
@@ -469,5 +471,58 @@ module.exports = {
         },
       ],
     },
+  },
+  context: {
+    A11yContent: path.resolve('packages/A11yContent'),
+    Animation: path.resolve('packages/Animation'),
+    Benefit: path.resolve('packages/Benefit'),
+    Box: path.resolve('packages/Box'),
+    Breadcrumbs: path.resolve('packages/Breadcrumbs'),
+    Button: path.resolve('packages/Button'),
+    ButtonGroup: path.resolve('packages/ButtonGroup'),
+    ButtonLink: path.resolve('packages/ButtonLink'),
+    Card: path.resolve('packages/Card'),
+    Checkbox: path.resolve('packages/Checkbox'),
+    ChevronLink: path.resolve('packages/ChevronLink'),
+    colours: path.resolve('packages/colours'),
+    cssReset: path.resolve('packages/css-reset'),
+    DecorativeIcon: path.resolve('packages/DecorativeIcon'),
+    DimpleDivider: path.resolve('packages/DimpleDivider'),
+    DisplayHeading: path.resolve('packages/DisplayHeading'),
+    ExpandCollapse: path.resolve('packages/ExpandCollapse'),
+    FlexGrid: path.resolve('packages/FlexGrid'),
+    FormField: path.resolve('packages/FormField'),
+    HairlineDivider: path.resolve('packages/HairlineDivider'),
+    Heading: path.resolve('packages/Heading'),
+    helpers: path.resolve('packages/helpers'),
+    hocs: path.resolve('packages/hocs'),
+    Image: path.resolve('packages/Image'),
+    Input: path.resolve('packages/Input'),
+    InputFeedback: path.resolve('packages/InputFeedback'),
+    Link: path.resolve('packages/Link'),
+    Notification: path.resolve('packages/Notification'),
+    OrderedList: path.resolve('packages/OrderedList'),
+    Paragraph: path.resolve('packages/Paragraph'),
+    PriceLockup: path.resolve('packages/PriceLockup'),
+    propTypes: path.resolve('packages/prop-types'),
+    Radio: path.resolve('packages/Radio'),
+    Responsive: path.resolve('packages/Responsive'),
+    Select: path.resolve('packages/Select'),
+    Small: path.resolve('packages/Small'),
+    Spinner: path.resolve('packages/Spinner'),
+    StandaloneIcon: path.resolve('packages/StandaloneIcon'),
+    StepTracker: path.resolve('packages/StepTracker'),
+    Strong: path.resolve('packages/Strong'),
+    styles: path.resolve('packages/styles'),
+    TermsAndConditions: path.resolve('packages/TermsAndConditions'),
+    FootnoteLink: path.resolve('packages/TermsAndConditions'),
+    Text: path.resolve('packages/Text'),
+    TextArea: path.resolve('packages/TextArea'),
+    Tooltip: path.resolve('packages/Tooltip'),
+    typography: path.resolve('packages/typography'),
+    UnorderedList: path.resolve('packages/UnorderedList'),
+    Video: path.resolve('packages/Video'),
+    WaveDivider: path.resolve('packages/WaveDivider'),
+    WebVideo: path.resolve('packages/WebVideo'),
   },
 }
