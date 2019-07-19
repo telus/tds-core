@@ -285,6 +285,8 @@ Select.propTypes = {
   hint: PropTypes.string,
   /**
    * Position of the `hint` relative to `label`.
+   *
+   * @since 3.1.0
    */
   hintPosition: PropTypes.oneOf(['inline', 'below']),
   /**
