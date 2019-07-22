@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@3.0.26...@tds/core-step-tracker@4.0.0) (2019-07-22)
+
+
+### Features
+
+* **core-step-tracker:** upgrade to styled-components, add copy prop ([c882e8c](https://github.com/telusdigital/tds/commit/c882e8c))
+
+
+### BREAKING CHANGES
+
+* **core-step-tracker:** styled-components is now a peer dependency
+
+
+
+
+
 ## [3.0.26](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@3.0.25...@tds/core-step-tracker@3.0.26) (2019-07-17)
 
 **Note:** Version bump only for package @tds/core-step-tracker
