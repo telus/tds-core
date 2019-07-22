@@ -68,7 +68,7 @@ const StyledFootnoteBody = styled.div(
   {
     overflow: 'auto',
     '-webkit-overflow-scrolling': 'touch',
-    transition: 'height 400ms ease-out, opacity 300ms',
+    transition: 'height 300ms ease-out, opacity 200ms ease-out',
     transform: 'translateZ(0)',
     backgroundColor: colorAthensGrey,
   },
@@ -105,7 +105,10 @@ const usePrevious = value => {
   useEffect(() => {
     ref.current = value
   })
-  return ref.current
+  if (ref.current) {
+    return ref.current
+  }
+  return {}
 }
 
 const Footnote = props => {
@@ -159,25 +162,29 @@ const Footnote = props => {
     [closeFootnote]
   )
 
-  const changeHeight = () => {
+  const saveCurrentHeight = () => {
     const oldHeight = listRef.current.offsetHeight
     setBodyHeight(oldHeight)
-    setIsTextVisible(false)
   }
 
-  const handleStyledFootnoteTransitionEnd = async e => {
+  const handleStyledFootnoteTransitionEnd = e => {
     if (e.propertyName === 'transform' && !isOpen) {
       setIsVisible(false)
     }
   }
 
-  const handleTransitionEnd = async e => {
+  const handleTransitionEnd = e => {
     e.persist()
     if (e.propertyName === 'opacity' && !isTextVisible) {
-      await setData({ content, number })
-      const halfPageHeight = window.innerHeight * 0.5 - headerHeight
-      const newHeight = listRef.current.offsetHeight
-      await setBodyHeight(newHeight > halfPageHeight ? halfPageHeight : newHeight)
+      setData({ content, number })
+      if (bodyHeight !== listRef.current.offsetHeight) {
+        // set new height
+        setBodyHeight(listRef.current.offsetHeight)
+      } else {
+        setIsTextVisible(true)
+      }
+    } else {
+      setBodyHeight(listRef.current.offsetHeight)
     }
 
     if (e.propertyName === 'height' && !isTextVisible) {
@@ -185,6 +192,21 @@ const Footnote = props => {
     }
   }
 
+  const resetFootnote = () => {
+    // reset footnote state if closed
+    if (!isOpen) {
+      setBodyHeight('auto')
+      setIsTextVisible(true)
+    }
+  }
+
+  const focusHeading = () => {
+    if (content !== null && isVisible && headingRef && headingRef.current !== null) {
+      headingRef.current.focus()
+    }
+  }
+
+  // set height of header on mount
   useEffect(() => {
     setHeaderHeight(headerRef.current.offsetHeight)
   }, [])
@@ -214,35 +236,24 @@ const Footnote = props => {
     }
   }, [handleClose, isOpen])
 
+  // set data if opening a new footnote
   useEffect(() => {
-    if (
-      prevProps &&
-      (number !== prevProps.number || content !== prevProps.content) &&
-      isOpen === prevProps.isOpen
-    ) {
-      if (!isTextVisible) {
-        setIsTextVisible(true)
-        setData({ content, number })
-      }
-      changeHeight()
-    } else {
+    if (isOpen && !prevProps.isOpen) {
       setData({ content, number })
     }
-  }, [content, isOpen, isTextVisible, number, prevProps])
+  }, [isOpen, prevProps.isOpen, content, number])
 
   useEffect(() => {
-    if (!isOpen) {
-      setBodyHeight('auto')
-      setIsTextVisible(true)
+    if (isOpen && prevProps.isOpen && number !== prevProps.number) {
+      saveCurrentHeight()
+      setIsTextVisible(false)
     }
-  }, [isOpen])
+  }, [number, isOpen, prevProps.isOpen, prevProps.number])
+  // reset footnote on close
+  useEffect(resetFootnote, [isOpen])
 
   // focus on the close button on open/content change
-  useEffect(() => {
-    if (content !== null && isVisible && headingRef && headingRef.current !== null) {
-      headingRef.current.focus()
-    }
-  }, [isVisible, content])
+  useEffect(focusHeading, [isVisible, content])
 
   return (
     <div {...safeRest(rest)}>
