@@ -127,8 +127,8 @@ const Footnote = props => {
   const prevProps = usePrevious(props)
 
   const closeFootnote = useCallback(
-    e => {
-      onClose(e)
+    (e, options) => {
+      onClose(e, options)
     },
     [onClose]
   )
@@ -139,7 +139,7 @@ const Footnote = props => {
       if (e.type === 'keydown') {
         const key = e.keyCode || e.key
         if (key === 'Escape' || key === 27) {
-          closeFootnote(e)
+          closeFootnote(e, { returnFocus: true })
         }
       } else if (
         e.type === 'click' &&
@@ -148,7 +148,7 @@ const Footnote = props => {
           !footnoteRef.current.contains(e.target) &&
           e.target.getAttribute('data-tds-id') !== 'footnote-link')
       ) {
-        closeFootnote(e)
+        closeFootnote(e, { returnFocus: false })
       } else if (
         e.type === 'touchstart' &&
         (footnoteRef &&
@@ -156,7 +156,7 @@ const Footnote = props => {
           !footnoteRef.current.contains(e.touches[0].target) &&
           e.touches[0].target.getAttribute('data-tds-id') !== 'footnote-link')
       ) {
-        closeFootnote(e)
+        closeFootnote(e, { returnFocus: false })
       }
     },
     [closeFootnote]
@@ -280,7 +280,9 @@ const Footnote = props => {
                         {getCopy(copyDictionary, copy).heading}
                       </Heading>
                       <StyledClickable
-                        onClick={closeFootnote}
+                        onClick={e => {
+                          closeFootnote(e, { returnFocus: true })
+                        }}
                         aria-label={getCopy(copyDictionary, copy).close}
                       >
                         <CloseIcon />
@@ -347,6 +349,8 @@ Footnote.propTypes = {
    * A callback function to handle the closing of the footnote.
    *
    * @param {SyntheticEvent} event The React `SyntheticEvent`
+   * @param {Object} options Custom options
+   * @param {boolean} options.returnFocus Should the Footnote return focus on close
    */
   onClose: PropTypes.func.isRequired,
   /**
