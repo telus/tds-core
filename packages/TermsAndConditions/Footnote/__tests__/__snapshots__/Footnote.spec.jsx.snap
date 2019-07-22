@@ -95,8 +95,8 @@ exports[`Footnote renders closed 1`] = `
 .c11 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: height 400ms ease-out,opacity 300ms;
-  transition: height 400ms ease-out,opacity 300ms;
+  -webkit-transition: height 300ms ease-out,opacity 200ms ease-out;
+  transition: height 300ms ease-out,opacity 200ms ease-out;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -374,8 +374,8 @@ exports[`Footnote renders opened 1`] = `
 .c11 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: height 400ms ease-out,opacity 300ms;
-  transition: height 400ms ease-out,opacity 300ms;
+  -webkit-transition: height 300ms ease-out,opacity 200ms ease-out;
+  transition: height 300ms ease-out,opacity 200ms ease-out;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
