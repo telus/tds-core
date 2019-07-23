@@ -37,11 +37,11 @@
 }
 
 .docs_flex-grid-coloring {
-  *[class*='TDS_Row-modules__'] {
+  *[class*='TDS_flexboxgrid2__row___'] {
     border: 1px dashed $color-shark;
   }
 
-  *[class*='TDS_Col-modules__'] {
+  *[class*='TDS_flexboxgrid2__col-'] {
     background-color: $color-panache;
     border: 1px solid $color-shark;
   }
