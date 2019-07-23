@@ -230,6 +230,7 @@ exports[`Footnote renders closed 1`] = `
                         >
                           <svg
                             class="c9"
+                            focusable="false"
                             height="24px"
                             viewBox="0 0 24 24"
                             width="24px"
@@ -513,6 +514,7 @@ exports[`Footnote renders opened 1`] = `
                         >
                           <svg
                             class="c9"
+                            focusable="false"
                             height="24px"
                             viewBox="0 0 24 24"
                             width="24px"

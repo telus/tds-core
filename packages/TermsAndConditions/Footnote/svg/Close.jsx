@@ -9,6 +9,7 @@ const Close = () => (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     css={{ background: colorAthensGrey }}
+    focusable="false"
   >
     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g fill="#4B286D" fillRule="nonzero">
