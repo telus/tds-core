@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.0-alpha.8...@tds/core-terms-and-conditions@1.0.0) (2019-07-23)
+
+
+### Bug Fixes
+
+* **core-terms-and-conditions:** add returnFocus flag to onClose callback ([977ddfc](https://github.com/telus/tds-core/commit/977ddfc))
+* **core-terms-and-conditions:** text is visible with sameheight footnote ([f82c2cf](https://github.com/telus/tds-core/commit/f82c2cf))
+
+
+
+
+
 # [1.0.0-alpha.8](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.0-alpha.7...@tds/core-terms-and-conditions@1.0.0-alpha.8) (2019-07-17)
 
 **Note:** Version bump only for package @tds/core-terms-and-conditions
