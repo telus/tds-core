@@ -19,7 +19,7 @@ describe('FlexGrid', () => {
 
     return {
       flexGrid: flexGrid.find(Grid),
-      findColumn: index => flexGrid.find(`div#col-${index}`),
+      findStyledColumn: index => flexGrid.find(`StyledComponent#col-${index}`),
       findRow: index => flexGrid.find(`div#row-${index}`),
     }
   }
@@ -50,14 +50,15 @@ describe('FlexGrid', () => {
   })
 
   it('should render all children related to Grid with no gutter', () => {
-    const { findColumn, findRow } = doMount({ gutter: false })
+    const { findStyledColumn, findRow } = doMount({ gutter: false })
 
-    const col1 = findColumn(1)
-    const col2 = findColumn(2)
+    const styledCol1 = findStyledColumn(1)
+    const styledCol2 = findStyledColumn(2)
     const row = findRow(1)
-    expect(col1).toMatchSnapshot()
-    expect(col2).toMatchSnapshot()
-    expect(row).toMatchSnapshot()
+
+    expect(styledCol1.prop('gutter')).toEqual(false)
+    expect(styledCol2.prop('gutter')).toEqual(false)
+    expect(row).toHaveClassName('row')
   })
 
   it('passes additional attributes to the element', () => {
