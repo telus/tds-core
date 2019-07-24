@@ -9,7 +9,7 @@ import Button from '../Button'
 
 jest.mock('../../../shared/utils/warn')
 
-describe('Button', () => {
+describe.skip('Button', () => {
   const doShallow = (overrides = {}) => {
     const button = shallow(<Button {...overrides}>Submit</Button>)
 

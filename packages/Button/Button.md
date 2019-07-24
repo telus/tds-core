@@ -2,6 +2,23 @@
 
 Provide a function as the `onClick` prop to perform an action when clicked. **Avoid using a button if navigation is the primary action, as a [Link](#link) is more appropriate.**
 
+### Theme test
+
+```jsx
+const ThemeProvider = require('styled-components').ThemeProvider
+const themes = require('../Themes/themes').default
+
+;<Box inline between={3}>
+  <ThemeProvider theme={themes.marketing}>
+    <Button>Marketing button</Button>
+  </ThemeProvider>
+
+  <ThemeProvider theme={themes.application}>
+    <Button>Application button</Button>
+  </ThemeProvider>
+</Box>
+```
+
 ### Usage criteria
 
 - Use buttons to move through a transaction

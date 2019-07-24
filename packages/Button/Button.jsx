@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import { componentWithName, or } from '@tds/util-prop-types'
 import { borders, forms } from '@tds/shared-styles'
 import { medium, boldFont } from '@tds/shared-typography'
-import { colorPrimary, colorSecondary, colorWhite, colorText } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 
 import { warn } from '../../shared/utils/warn'
@@ -21,7 +20,6 @@ const preventDisabling = ({ disabled, ...props }) => {
 
 const baseButton = {
   margin: 0,
-  padding: '0 2rem',
   cursor: 'pointer',
   background: 'none',
   transition: 'background 0.2s',
@@ -33,7 +31,6 @@ const baseButton = {
   ...media.from('md').css({
     display: 'inline-flex',
     width: 'auto',
-    minWidth: '180px',
   }),
 }
 
@@ -42,10 +39,9 @@ export const StyledButton = styled.button(
   borders.rounded,
   medium,
   boldFont,
-  forms.height,
   forms.font,
   baseButton,
-  ({ variant }) => {
+  ({ variant, theme }) => {
     let backgroundColor
     let color
     const hover = {
@@ -53,23 +49,25 @@ export const StyledButton = styled.button(
     }
 
     if (variant === 'primary') {
-      backgroundColor = colorPrimary
-      color = colorWhite
-      hover.backgroundColor = colorWhite
-      hover.color = colorPrimary
+      backgroundColor = theme.colors.colorPrimary
+      color = theme.colors.colorWhite
+      hover.backgroundColor = theme.colors.colorWhite
+      hover.color = theme.colors.colorPrimary
     } else if (variant === 'secondary') {
-      backgroundColor = colorSecondary
-      color = colorWhite
-      hover.backgroundColor = colorWhite
-      hover.color = colorSecondary
+      backgroundColor = theme.colors.colorSecondary
+      color = theme.colors.colorWhite
+      hover.backgroundColor = theme.colors.colorWhite
+      hover.color = theme.colors.colorSecondary
     } else {
-      backgroundColor = colorWhite
-      color = colorText
+      backgroundColor = theme.colors.colorWhite
+      color = theme.colors.colorText
       hover.backgroundColor = 'transparent'
-      hover.color = colorWhite
+      hover.color = theme.colors.colorWhite
     }
 
     return {
+      ...theme.sizing.buttons,
+      padding: theme.spacing.padding2,
       backgroundColor,
       color,
       '&:hover': hover,
