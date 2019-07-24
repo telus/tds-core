@@ -30,7 +30,7 @@ const SelectWrapper = styled.div({
 
 const StyledSelect = styled.select(
   {
-    ...forms.height,
+    ...forms.inputHeight,
     appearance: 'none',
 
     '&::-ms-expand': {

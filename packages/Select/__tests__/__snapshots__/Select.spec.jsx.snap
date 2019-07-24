@@ -172,7 +172,7 @@ exports[`Select can have an error message 1`] = `
 }
 
 .c10 {
-  height: 3.25rem;
+  height: 3rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -842,7 +842,7 @@ exports[`Select can have an error message 1`] = `
                                 "isStatic": false,
                                 "lastClassName": "c10",
                                 "rules": Array [
-                                  "height: 3.25rem;",
+                                  "height: 3rem;",
                                   "appearance: none;",
                                   "&::-ms-expand {",
                                   "display: none;",
@@ -2047,7 +2047,7 @@ exports[`Select renders 1`] = `
 }
 
 .c7 {
-  height: 3.25rem;
+  height: 3rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2354,7 +2354,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
 }
 
 .c7 {
-  height: 3.25rem;
+  height: 3rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
