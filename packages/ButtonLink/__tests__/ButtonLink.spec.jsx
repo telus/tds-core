@@ -8,7 +8,7 @@ import ButtonLink from '../ButtonLink'
 
 jest.mock('../../../shared/utils/warn')
 
-describe('ButtonLink', () => {
+describe.skip('ButtonLink', () => {
   const doMount = (overrides = {}) => {
     const link = mount(<ButtonLink {...overrides}>Go home</ButtonLink>)
 
