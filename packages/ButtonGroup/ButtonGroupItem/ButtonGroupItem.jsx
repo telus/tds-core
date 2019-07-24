@@ -49,7 +49,7 @@ const StyledLabel = styled.label(
   borders.rounded,
   medium,
   boldFont,
-  forms.height,
+  forms.buttonHeight,
   forms.font,
   baseButton,
   {
