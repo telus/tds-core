@@ -28,7 +28,7 @@
   "dependencies": {
     "@tds/core-a11y-content": "^2.1.0",
     "@tds/core-box": "^2.0.0",
-    "@tds/core-colours": "^1.1.1",
+    "@tds/core-colours": "^1.1.2",
     "@tds/core-dimple-divider": "^2.0.0",
     "@tds/core-flex-grid": "^2.3.13",
     "@tds/core-hairline-divider": "^2.0.0",
