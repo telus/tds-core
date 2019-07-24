@@ -1,5 +1,3 @@
-### This component is currently in alpha and should not be used until version 1 has been released
-
 ### Usage criteria
 
 - Appears directly before the page footer, with the exception of call-to-action callback cards
