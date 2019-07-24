@@ -42,7 +42,7 @@ export const StyledButton = styled.button(
   borders.rounded,
   medium,
   boldFont,
-  forms.height,
+  forms.buttonHeight,
   forms.font,
   baseButton,
   ({ variant }) => {
