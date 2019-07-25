@@ -6,40 +6,28 @@ Use flexbox alignment properties to vertically and horizontally align columns.
 <FlexGrid>
   <FlexGrid.Row horizontalAlign="start">
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}>
-        <Text>Left</Text>
-      </Box>
+      <Box vertical={2}><Text>Left</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}>
-        <Text>aligned</Text>
-      </Box>
+      <Box vertical={2}><Text>aligned</Text></Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 
   <FlexGrid.Row horizontalAlign="center">
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}>
-        <Text>Center</Text>
-      </Box>
+      <Box vertical={2}><Text>Center</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}>
-        <Text>aligned</Text>
-      </Box>
+      <Box vertical={2}><Text>aligned</Text></Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 
   <FlexGrid.Row horizontalAlign="end">
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}>
-        <Text>Right</Text>
-      </Box>
+      <Box vertical={2}><Text>Right</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={4} md={2}>
-      <Box vertical={2}>
-        <Text>aligned</Text>
-      </Box>
+      <Box vertical={2}><Text>aligned</Text></Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
@@ -96,37 +84,25 @@ Use flexbox distribution properties to control the negative space around columns
 <FlexGrid>
   <FlexGrid.Row distribute="around">
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}>
-        <Text>Around</Text>
-      </Box>
+      <Box vertical={2}><Text>Around</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}>
-        <Text>Around</Text>
-      </Box>
+      <Box vertical={2}><Text>Around</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}>
-        <Text>Around</Text>
-      </Box>
+      <Box vertical={2}><Text>Around</Text></Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 
   <FlexGrid.Row distribute="between">
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}>
-        <Text>Between</Text>
-      </Box>
+      <Box vertical={2}><Text>Between</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}>
-        <Text>Between</Text>
-      </Box>
+      <Box vertical={2}><Text>Between</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col xs={3}>
-      <Box vertical={2}>
-        <Text>Between</Text>
-      </Box>
+      <Box vertical={2}><Text>Between</Text></Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
@@ -142,19 +118,13 @@ In the following example, the items are set to reverse until the `md` breakpoint
 <FlexGrid>
   <FlexGrid.Row xsReverse={true} mdReverse={false} xlReverse={true}>
     <FlexGrid.Col>
-      <Box vertical={2}>
-        <Text>1</Text>
-      </Box>
+      <Box vertical={2}><Text>1</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col>
-      <Box vertical={2}>
-        <Text>2</Text>
-      </Box>
+      <Box vertical={2}><Text>2</Text></Box>
     </FlexGrid.Col>
     <FlexGrid.Col>
-      <Box vertical={2}>
-        <Text>3</Text>
-      </Box>
+      <Box vertical={2}><Text>3</Text></Box>
     </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>

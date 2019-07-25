@@ -1,45 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-
-import { media, breakpoints } from '@tds/core-responsive'
-
+import { Broadcast } from 'react-broadcast'
 import { Grid } from 'react-flexbox-grid'
 
 import Col from './Col/Col'
 import Row from './Row/Row'
 import calculateLevel from './calculateLevel'
-import GutterContext from './gutterContext'
 
 import safeRest from '../../shared/utils/safeRest'
+import joinClassNames from '../../shared/utils/joinClassNames'
 
-const StyledGrid = styled(({ reverseLevel, limitWidth, ...rest }) => <Grid {...rest} />)(
-  ({ reverseLevel, limitWidth }) => ({
-    display: 'flex',
-    flexWrap: 'wrap',
-    margin: '0 auto',
-    'div&': { padding: 0 },
-    ...media.until('sm').css({
-      flexDirection: reverseLevel[0] ? 'column-reverse' : 'column',
-    }),
-    ...media.from('sm').css({
-      ...(limitWidth && { maxWidth: breakpoints.sm }),
-      flexDirection: reverseLevel[1] ? 'column-reverse' : 'column',
-    }),
-    ...media.from('md').css({
-      ...(limitWidth && { maxWidth: breakpoints.md }),
-      flexDirection: reverseLevel[2] ? 'column-reverse' : 'column',
-    }),
-    ...media.from('lg').css({
-      ...(limitWidth && { maxWidth: breakpoints.lg }),
-      flexDirection: reverseLevel[3] ? 'column-reverse' : 'column',
-    }),
-    ...media.from('xl').css({
-      ...(limitWidth && { maxWidth: breakpoints.xl }),
-      flexDirection: reverseLevel[4] ? 'column-reverse' : 'column',
-    }),
-  })
-)
+import styles from './FlexGrid.modules.scss'
 
 /**
  * A mobile-first flexbox grid.
@@ -59,12 +30,25 @@ const FlexGrid = ({
   ...rest
 }) => {
   const reverseLevel = calculateLevel(xsReverse, smReverse, mdReverse, lgReverse, xlReverse)
+
   return (
-    <GutterContext.Provider value={gutter}>
-      <StyledGrid {...safeRest(rest)} fluid reverseLevel={reverseLevel} limitWidth={limitWidth}>
+    <Broadcast channel="flex-grid" value={gutter}>
+      <Grid
+        {...safeRest(rest)}
+        fluid
+        className={joinClassNames(
+          styles.flexGrid,
+          limitWidth && styles.limitWidth,
+          reverseLevel[0] ? styles.xsReverse : styles.xsReverseCancel,
+          reverseLevel[1] ? styles.smReverse : styles.smReverseCancel,
+          reverseLevel[2] ? styles.mdReverse : styles.mdReverseCancel,
+          reverseLevel[3] ? styles.lgReverse : styles.lgReverseCancel,
+          reverseLevel[4] ? styles.xlReverse : styles.xlReverseCancel
+        )}
+      >
         {children}
-      </StyledGrid>
-    </GutterContext.Provider>
+      </Grid>
+    </Broadcast>
   )
 }
 

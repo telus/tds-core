@@ -81,7 +81,11 @@ describe('Row', () => {
       xlReverse: true,
     })
 
-    expect(row).toMatchSnapshot()
+    expect(row.hasClass('xsReverse')).toEqual(true)
+    expect(row.hasClass('smReverse')).toEqual(true)
+    expect(row.hasClass('mdReverse')).toEqual(true)
+    expect(row.hasClass('lgReverseCancel')).toEqual(true)
+    expect(row.hasClass('xlReverse')).toEqual(true)
   })
 
   it('does not allow custom CSS', () => {
