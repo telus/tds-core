@@ -35,35 +35,35 @@ div.c0 {
 @media (max-width:575px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -241,11 +241,11 @@ div.c0 {
                     }
                     horizontalAlignLevel={
                       Array [
-                        "left",
-                        "left",
-                        "left",
-                        "left",
-                        "left",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
                       ]
                     }
                     id="col-1"
@@ -287,11 +287,11 @@ div.c0 {
                       }
                       horizontalAlignLevel={
                         Array [
-                          "left",
-                          "left",
-                          "left",
-                          "left",
-                          "left",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
                         ]
                       }
                       id="col-1"
@@ -311,11 +311,11 @@ div.c0 {
                         }
                         horizontalAlignLevel={
                           Array [
-                            "left",
-                            "left",
-                            "left",
-                            "left",
-                            "left",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
                           ]
                         }
                         id="col-1"
@@ -353,11 +353,11 @@ div.c0 {
                     }
                     horizontalAlignLevel={
                       Array [
-                        "left",
-                        "left",
-                        "left",
-                        "left",
-                        "left",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
                       ]
                     }
                     id="col-2"
@@ -399,11 +399,11 @@ div.c0 {
                       }
                       horizontalAlignLevel={
                         Array [
-                          "left",
-                          "left",
-                          "left",
-                          "left",
-                          "left",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
                         ]
                       }
                       id="col-2"
@@ -423,11 +423,11 @@ div.c0 {
                         }
                         horizontalAlignLevel={
                           Array [
-                            "left",
-                            "left",
-                            "left",
-                            "left",
-                            "left",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
                           ]
                         }
                         id="col-2"
@@ -494,35 +494,35 @@ div.c0 {
 @media (max-width:575px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -704,11 +704,11 @@ div.c0 {
                     }
                     horizontalAlignLevel={
                       Array [
-                        "left",
-                        "left",
-                        "left",
-                        "left",
-                        "left",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
                       ]
                     }
                     id="col-1"
@@ -750,11 +750,11 @@ div.c0 {
                       }
                       horizontalAlignLevel={
                         Array [
-                          "left",
-                          "left",
-                          "left",
-                          "left",
-                          "left",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
                         ]
                       }
                       id="col-1"
@@ -774,11 +774,11 @@ div.c0 {
                         }
                         horizontalAlignLevel={
                           Array [
-                            "left",
-                            "left",
-                            "left",
-                            "left",
-                            "left",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
                           ]
                         }
                         id="col-1"
@@ -816,11 +816,11 @@ div.c0 {
                     }
                     horizontalAlignLevel={
                       Array [
-                        "left",
-                        "left",
-                        "left",
-                        "left",
-                        "left",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
                       ]
                     }
                     id="col-2"
@@ -862,11 +862,11 @@ div.c0 {
                       }
                       horizontalAlignLevel={
                         Array [
-                          "left",
-                          "left",
-                          "left",
-                          "left",
-                          "left",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
                         ]
                       }
                       id="col-2"
@@ -886,11 +886,11 @@ div.c0 {
                         }
                         horizontalAlignLevel={
                           Array [
-                            "left",
-                            "left",
-                            "left",
-                            "left",
-                            "left",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
                           ]
                         }
                         id="col-2"
@@ -957,35 +957,35 @@ div.c0 {
 @media (max-width:575px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -1128,35 +1128,35 @@ div.c0 {
 @media (max-width:575px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c2 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -1338,11 +1338,11 @@ div.c0 {
                     }
                     horizontalAlignLevel={
                       Array [
-                        "left",
-                        "left",
-                        "left",
-                        "left",
-                        "left",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
                       ]
                     }
                     id="col-1"
@@ -1384,11 +1384,11 @@ div.c0 {
                       }
                       horizontalAlignLevel={
                         Array [
-                          "left",
-                          "left",
-                          "left",
-                          "left",
-                          "left",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
                         ]
                       }
                       id="col-1"
@@ -1408,11 +1408,11 @@ div.c0 {
                         }
                         horizontalAlignLevel={
                           Array [
-                            "left",
-                            "left",
-                            "left",
-                            "left",
-                            "left",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
                           ]
                         }
                         id="col-1"
@@ -1450,11 +1450,11 @@ div.c0 {
                     }
                     horizontalAlignLevel={
                       Array [
-                        "left",
-                        "left",
-                        "left",
-                        "left",
-                        "left",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
+                        "inherit",
                       ]
                     }
                     id="col-2"
@@ -1496,11 +1496,11 @@ div.c0 {
                       }
                       horizontalAlignLevel={
                         Array [
-                          "left",
-                          "left",
-                          "left",
-                          "left",
-                          "left",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
+                          "inherit",
                         ]
                       }
                       id="col-2"
@@ -1520,11 +1520,11 @@ div.c0 {
                         }
                         horizontalAlignLevel={
                           Array [
-                            "left",
-                            "left",
-                            "left",
-                            "left",
-                            "left",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
                           ]
                         }
                         id="col-2"
