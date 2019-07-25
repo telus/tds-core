@@ -8,13 +8,25 @@ Provide a function as the `onClick` prop to perform an action when clicked. **Av
 const ThemeProvider = require('styled-components').ThemeProvider
 const themes = require('../Themes/themes').default
 
-;<Box inline between={3}>
+;<Box between={4}>
+  <Heading level="h3">Marketing theme</Heading>
   <ThemeProvider theme={themes.marketing}>
-    <Button>Marketing button</Button>
+    <Box between={2}>
+      <Input label="Find your name" />
+      <div>
+        <Button>Marketing button</Button>
+      </div>
+    </Box>
   </ThemeProvider>
 
+  <Heading level="h3">Application theme</Heading>
   <ThemeProvider theme={themes.application}>
-    <Button>Application button</Button>
+    <Box between={2}>
+      <Input label="Find your name" />
+      <div>
+        <Button>Application button</Button>
+      </div>
+    </Box>
   </ThemeProvider>
 </Box>
 ```

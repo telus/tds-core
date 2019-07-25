@@ -67,7 +67,7 @@ export const StyledButton = styled.button(
 
     return {
       ...theme.sizing.buttons,
-      padding: theme.spacing.padding2,
+      ...theme.spacing.buttons,
       backgroundColor,
       color,
       '&:hover': hover,
