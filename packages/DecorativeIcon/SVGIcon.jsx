@@ -49,7 +49,7 @@ SVGIcon.propTypes = {
   /**
    * The icon size in pixels.
    */
-  size: PropTypes.oneOf([16, 24, 48]),
+  size: PropTypes.oneOf([16, 20, 24, 32, 48]),
 }
 
 SVGIcon.defaultProps = {
