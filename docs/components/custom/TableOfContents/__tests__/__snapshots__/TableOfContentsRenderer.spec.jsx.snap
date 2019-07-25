@@ -7,7 +7,7 @@ exports[`TableOfContentsRenderer renders 1`] = `
   inset={2}
   tag="div"
 >
-  <Input
+  <WithTheme(Input)
     hintPosition="inline"
     label="Filter by name"
     onChange={[Function]}
