@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/telusdigital/tds/compare/@tds/core-responsive@1.2.1...@tds/core-responsive@1.3.0) (2019-07-25)
+
+
+### Features
+
+* **core-responsive:** make breakpoints object available outside ([b39df56](https://github.com/telusdigital/tds/commit/b39df56))
+
+
+
+
+
 ## [1.2.1](https://github.com/telusdigital/tds/compare/@tds/core-responsive@1.2.0...@tds/core-responsive@1.2.1) (2019-06-04)
 
 ### Bug Fixes

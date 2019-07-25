@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.13...@tds/core-flex-grid@2.4.0) (2019-07-25)
+
+
+### Features
+
+* **core-flex-grid:** upgrade to styled-components ([734f951](https://github.com/telusdigital/tds/commit/734f951))
+
+
+
+
+
 ## [2.3.13](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.3.12...@tds/core-flex-grid@2.3.13) (2019-06-04)
 
 **Note:** Version bump only for package @tds/core-flex-grid
