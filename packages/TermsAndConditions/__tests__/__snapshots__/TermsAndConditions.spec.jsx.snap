@@ -193,70 +193,70 @@ div.c12 {
 @media (max-width:575px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (max-width:575px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -720,70 +720,70 @@ div.c12 {
 @media (max-width:575px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (max-width:575px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -1131,11 +1131,11 @@ div.c12 {
                                 }
                                 horizontalAlignLevel={
                                   Array [
-                                    "left",
-                                    "left",
-                                    "left",
-                                    "left",
-                                    "left",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
                                   ]
                                 }
                                 xs={true}
@@ -1176,11 +1176,11 @@ div.c12 {
                                   }
                                   horizontalAlignLevel={
                                     Array [
-                                      "left",
-                                      "left",
-                                      "left",
-                                      "left",
-                                      "left",
+                                      "inherit",
+                                      "inherit",
+                                      "inherit",
+                                      "inherit",
+                                      "inherit",
                                     ]
                                   }
                                   xs={true}
@@ -1199,11 +1199,11 @@ div.c12 {
                                     }
                                     horizontalAlignLevel={
                                       Array [
-                                        "left",
-                                        "left",
-                                        "left",
-                                        "left",
-                                        "left",
+                                        "inherit",
+                                        "inherit",
+                                        "inherit",
+                                        "inherit",
+                                        "inherit",
                                       ]
                                     }
                                     xs={true}
@@ -1707,11 +1707,11 @@ div.c12 {
                                         }
                                         horizontalAlignLevel={
                                           Array [
-                                            "left",
-                                            "left",
-                                            "left",
-                                            "left",
-                                            "left",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
                                           ]
                                         }
                                         xs={true}
@@ -1752,11 +1752,11 @@ div.c12 {
                                           }
                                           horizontalAlignLevel={
                                             Array [
-                                              "left",
-                                              "left",
-                                              "left",
-                                              "left",
-                                              "left",
+                                              "inherit",
+                                              "inherit",
+                                              "inherit",
+                                              "inherit",
+                                              "inherit",
                                             ]
                                           }
                                           xs={true}
@@ -1775,11 +1775,11 @@ div.c12 {
                                             }
                                             horizontalAlignLevel={
                                               Array [
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
                                               ]
                                             }
                                             xs={true}
@@ -2036,11 +2036,11 @@ div.c12 {
                                               }
                                               horizontalAlignLevel={
                                                 Array [
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
                                                 ]
                                               }
                                               md={10}
@@ -2083,11 +2083,11 @@ div.c12 {
                                                 }
                                                 horizontalAlignLevel={
                                                   Array [
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
                                                   ]
                                                 }
                                                 md={10}
@@ -2108,11 +2108,11 @@ div.c12 {
                                                   }
                                                   horizontalAlignLevel={
                                                     Array [
-                                                      "left",
-                                                      "left",
-                                                      "left",
-                                                      "left",
-                                                      "left",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
                                                     ]
                                                   }
                                                   md={10}
@@ -2834,70 +2834,70 @@ div.c12 {
 @media (max-width:575px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (max-width:575px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -3256,11 +3256,11 @@ div.c12 {
                                 }
                                 horizontalAlignLevel={
                                   Array [
-                                    "left",
-                                    "left",
-                                    "left",
-                                    "left",
-                                    "left",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
                                   ]
                                 }
                                 xs={true}
@@ -3301,11 +3301,11 @@ div.c12 {
                                   }
                                   horizontalAlignLevel={
                                     Array [
-                                      "left",
-                                      "left",
-                                      "left",
-                                      "left",
-                                      "left",
+                                      "inherit",
+                                      "inherit",
+                                      "inherit",
+                                      "inherit",
+                                      "inherit",
                                     ]
                                   }
                                   xs={true}
@@ -3324,11 +3324,11 @@ div.c12 {
                                     }
                                     horizontalAlignLevel={
                                       Array [
-                                        "left",
-                                        "left",
-                                        "left",
-                                        "left",
-                                        "left",
+                                        "inherit",
+                                        "inherit",
+                                        "inherit",
+                                        "inherit",
+                                        "inherit",
                                       ]
                                     }
                                     xs={true}
@@ -3832,11 +3832,11 @@ div.c12 {
                                         }
                                         horizontalAlignLevel={
                                           Array [
-                                            "left",
-                                            "left",
-                                            "left",
-                                            "left",
-                                            "left",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
                                           ]
                                         }
                                         xs={true}
@@ -3877,11 +3877,11 @@ div.c12 {
                                           }
                                           horizontalAlignLevel={
                                             Array [
-                                              "left",
-                                              "left",
-                                              "left",
-                                              "left",
-                                              "left",
+                                              "inherit",
+                                              "inherit",
+                                              "inherit",
+                                              "inherit",
+                                              "inherit",
                                             ]
                                           }
                                           xs={true}
@@ -3900,11 +3900,11 @@ div.c12 {
                                             }
                                             horizontalAlignLevel={
                                               Array [
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
                                               ]
                                             }
                                             xs={true}
@@ -4161,11 +4161,11 @@ div.c12 {
                                               }
                                               horizontalAlignLevel={
                                                 Array [
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
                                                 ]
                                               }
                                               md={10}
@@ -4208,11 +4208,11 @@ div.c12 {
                                                 }
                                                 horizontalAlignLevel={
                                                   Array [
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
                                                   ]
                                                 }
                                                 md={10}
@@ -4233,11 +4233,11 @@ div.c12 {
                                                   }
                                                   horizontalAlignLevel={
                                                     Array [
-                                                      "left",
-                                                      "left",
-                                                      "left",
-                                                      "left",
-                                                      "left",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
                                                     ]
                                                   }
                                                   md={10}
@@ -4830,11 +4830,11 @@ div.c12 {
                                               }
                                               horizontalAlignLevel={
                                                 Array [
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
                                                 ]
                                               }
                                               md={10}
@@ -4877,11 +4877,11 @@ div.c12 {
                                                 }
                                                 horizontalAlignLevel={
                                                   Array [
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
                                                   ]
                                                 }
                                                 md={10}
@@ -4902,11 +4902,11 @@ div.c12 {
                                                   }
                                                   horizontalAlignLevel={
                                                     Array [
-                                                      "left",
-                                                      "left",
-                                                      "left",
-                                                      "left",
-                                                      "left",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
                                                     ]
                                                   }
                                                   md={10}
@@ -5672,70 +5672,70 @@ div.c12 {
 @media (max-width:575px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c3 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (max-width:575px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c13 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -6082,11 +6082,11 @@ div.c12 {
                                 }
                                 horizontalAlignLevel={
                                   Array [
-                                    "left",
-                                    "left",
-                                    "left",
-                                    "left",
-                                    "left",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
+                                    "inherit",
                                   ]
                                 }
                                 xs={true}
@@ -6127,11 +6127,11 @@ div.c12 {
                                   }
                                   horizontalAlignLevel={
                                     Array [
-                                      "left",
-                                      "left",
-                                      "left",
-                                      "left",
-                                      "left",
+                                      "inherit",
+                                      "inherit",
+                                      "inherit",
+                                      "inherit",
+                                      "inherit",
                                     ]
                                   }
                                   xs={true}
@@ -6150,11 +6150,11 @@ div.c12 {
                                     }
                                     horizontalAlignLevel={
                                       Array [
-                                        "left",
-                                        "left",
-                                        "left",
-                                        "left",
-                                        "left",
+                                        "inherit",
+                                        "inherit",
+                                        "inherit",
+                                        "inherit",
+                                        "inherit",
                                       ]
                                     }
                                     xs={true}
@@ -6658,11 +6658,11 @@ div.c12 {
                                         }
                                         horizontalAlignLevel={
                                           Array [
-                                            "left",
-                                            "left",
-                                            "left",
-                                            "left",
-                                            "left",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
+                                            "inherit",
                                           ]
                                         }
                                         xs={true}
@@ -6703,11 +6703,11 @@ div.c12 {
                                           }
                                           horizontalAlignLevel={
                                             Array [
-                                              "left",
-                                              "left",
-                                              "left",
-                                              "left",
-                                              "left",
+                                              "inherit",
+                                              "inherit",
+                                              "inherit",
+                                              "inherit",
+                                              "inherit",
                                             ]
                                           }
                                           xs={true}
@@ -6726,11 +6726,11 @@ div.c12 {
                                             }
                                             horizontalAlignLevel={
                                               Array [
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
                                               ]
                                             }
                                             xs={true}
@@ -6987,11 +6987,11 @@ div.c12 {
                                               }
                                               horizontalAlignLevel={
                                                 Array [
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
                                                 ]
                                               }
                                               md={10}
@@ -7034,11 +7034,11 @@ div.c12 {
                                                 }
                                                 horizontalAlignLevel={
                                                   Array [
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
                                                   ]
                                                 }
                                                 md={10}
@@ -7059,11 +7059,11 @@ div.c12 {
                                                   }
                                                   horizontalAlignLevel={
                                                     Array [
-                                                      "left",
-                                                      "left",
-                                                      "left",
-                                                      "left",
-                                                      "left",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
+                                                      "inherit",
                                                     ]
                                                   }
                                                   md={10}
