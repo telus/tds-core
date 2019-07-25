@@ -231,6 +231,7 @@ module.exports = {
               path.resolve('packages/DecorativeIcon/DecorativeIcon.jsx'),
               path.resolve('packages/DecorativeIcon/SVGIcon.jsx'),
               path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
+              path.resolve('packages/FeedbackIcon/FeedbackIcon.jsx'),
             ]
           },
         },
