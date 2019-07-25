@@ -96,70 +96,70 @@ div.c2 {
 @media (max-width:575px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (max-width:575px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -490,11 +490,11 @@ div.c2 {
                                             }
                                             horizontalAlignLevel={
                                               Array [
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
                                               ]
                                             }
                                             xs={true}
@@ -535,11 +535,11 @@ div.c2 {
                                               }
                                               horizontalAlignLevel={
                                                 Array [
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
                                                 ]
                                               }
                                               xs={true}
@@ -558,11 +558,11 @@ div.c2 {
                                                 }
                                                 horizontalAlignLevel={
                                                   Array [
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
                                                   ]
                                                 }
                                                 xs={true}
@@ -726,11 +726,11 @@ div.c2 {
                                                                                 }
                                                                                 horizontalAlignLevel={
                                                                                   Array [
-                                                                                    "left",
-                                                                                    "left",
-                                                                                    "left",
-                                                                                    "left",
-                                                                                    "left",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
                                                                                   ]
                                                                                 }
                                                                                 xs={true}
@@ -771,11 +771,11 @@ div.c2 {
                                                                                   }
                                                                                   horizontalAlignLevel={
                                                                                     Array [
-                                                                                      "left",
-                                                                                      "left",
-                                                                                      "left",
-                                                                                      "left",
-                                                                                      "left",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
                                                                                     ]
                                                                                   }
                                                                                   xs={true}
@@ -794,11 +794,11 @@ div.c2 {
                                                                                     }
                                                                                     horizontalAlignLevel={
                                                                                       Array [
-                                                                                        "left",
-                                                                                        "left",
-                                                                                        "left",
-                                                                                        "left",
-                                                                                        "left",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
                                                                                       ]
                                                                                     }
                                                                                     xs={true}
@@ -1125,70 +1125,70 @@ div.c2 {
 @media (max-width:575px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (max-width:575px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -1519,11 +1519,11 @@ div.c2 {
                                             }
                                             horizontalAlignLevel={
                                               Array [
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
-                                                "left",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
                                               ]
                                             }
                                             xs={true}
@@ -1564,11 +1564,11 @@ div.c2 {
                                               }
                                               horizontalAlignLevel={
                                                 Array [
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
-                                                  "left",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
                                                 ]
                                               }
                                               xs={true}
@@ -1587,11 +1587,11 @@ div.c2 {
                                                 }
                                                 horizontalAlignLevel={
                                                   Array [
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
-                                                    "left",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
                                                   ]
                                                 }
                                                 xs={true}
@@ -1755,11 +1755,11 @@ div.c2 {
                                                                                 }
                                                                                 horizontalAlignLevel={
                                                                                   Array [
-                                                                                    "left",
-                                                                                    "left",
-                                                                                    "left",
-                                                                                    "left",
-                                                                                    "left",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
                                                                                   ]
                                                                                 }
                                                                                 xs={true}
@@ -1800,11 +1800,11 @@ div.c2 {
                                                                                   }
                                                                                   horizontalAlignLevel={
                                                                                     Array [
-                                                                                      "left",
-                                                                                      "left",
-                                                                                      "left",
-                                                                                      "left",
-                                                                                      "left",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
                                                                                     ]
                                                                                   }
                                                                                   xs={true}
@@ -1823,11 +1823,11 @@ div.c2 {
                                                                                     }
                                                                                     horizontalAlignLevel={
                                                                                       Array [
-                                                                                        "left",
-                                                                                        "left",
-                                                                                        "left",
-                                                                                        "left",
-                                                                                        "left",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
                                                                                       ]
                                                                                     }
                                                                                     xs={true}
@@ -2188,70 +2188,70 @@ div.c2 {
 @media (max-width:575px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c4 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (max-width:575px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c5 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
