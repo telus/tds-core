@@ -80,7 +80,7 @@ StandaloneIcon.propTypes = {
   /**
    * The icon size in pixels.
    */
-  size: PropTypes.oneOf([16, 24, 48]),
+  size: PropTypes.oneOf([16, 20, 24, 32, 48]),
   /**
    * Pass a handler to the icon to make it interactive. Wraps the icon with a `<button>`.
    */
