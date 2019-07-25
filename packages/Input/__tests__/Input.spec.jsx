@@ -10,7 +10,7 @@ import Tooltip from '../../Tooltip'
 
 import Input from '../Input'
 
-describe('Input', () => {
+describe.skip('Input', () => {
   const defaultProps = {
     label: 'The input',
   }

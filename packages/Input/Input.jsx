@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 
 import { componentWithName } from '@tds/util-prop-types'
 
@@ -46,15 +46,15 @@ const StyledInput = styled.input(
   medium,
   mediumFont,
   color,
-  ({ withFeedbackIcon }) => ({
+  ({ withFeedbackIcon, theme }) => ({
     '&::-webkit-inner-spin-button, &::-webkit-outer-spin-button': {
       appearance: 'none',
       margin: 0,
     },
     '-moz-appearance': 'textfield',
-    minHeight: '3.25rem',
-    maxHeight: '3.25rem',
-    padding: withFeedbackIcon ? '0.5rem 3rem 0.5rem 1rem' : '0.5rem 1rem',
+    padding: withFeedbackIcon
+      ? theme.sizing.forms.Box1.paddingWithFeedbackIcon
+      : theme.sizing.forms.Box1.paddingWithoutFeedbackIcon,
   }),
   {
     '&:focus': {
@@ -109,12 +109,13 @@ const renderError = (error, errorId) => (
     <Paragraph size="small">{error}</Paragraph>
   </InputFeedback>
 )
-const renderLabel = (id, label, hint, hintPosition, hintId, tooltip) => (
+const renderLabel = (id, label, hint, hintPosition, hintId, tooltip, theme) => (
   <div>
     <Box inline between="space-between">
       <label htmlFor={id || generateId(label).identity()}>
         <StyledLabelContainer inline tag="span" between={2}>
-          <Text size="medium" bold>
+          <Text size={theme.sizing.forms.labelTextSize} bold>
+            {/* The Text component can derrive size from the theme on its own */}
             {label}
           </Text>
           {hint && hintPosition === 'inline' && renderHint(hint, Text, hintId)}
@@ -125,6 +126,7 @@ const renderLabel = (id, label, hint, hintPosition, hintId, tooltip) => (
     {hint && hintPosition === 'below' && renderHint(hint, Paragraph, hintId)}
   </div>
 )
+
 const renderHelper = (helper, helperId, feedback, value) => {
   if (typeof helper === 'function') {
     return (
@@ -184,8 +186,8 @@ const Input = React.forwardRef(
     }
 
     return (
-      <Box between={2}>
-        {renderLabel(fieldId.identity(), label, hint, hintPosition, hintId, tooltip)}
+      <Box between={rest.theme.spacing.Box['2']}>
+        {renderLabel(fieldId.identity(), label, hint, hintPosition, hintId, tooltip, rest.theme)}
         {helper && renderHelper(helper, helperId, feedback, value)}
         {error && renderError(error, errorId)}
         <div css={{ position: 'relative' }}>
@@ -284,4 +286,4 @@ Input.defaultProps = {
   helper: undefined,
 }
 
-export default Input
+export default withTheme(Input)
