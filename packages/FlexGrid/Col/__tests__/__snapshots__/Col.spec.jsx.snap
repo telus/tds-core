@@ -115,35 +115,35 @@ div.c0 {
 @media (max-width:575px) {
   .c0 {
     display: none;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c0 {
     display: none;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c0 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c0 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c0 {
     display: none;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -171,35 +171,35 @@ div.c0 {
 @media (max-width:575px) {
   .c0 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c0 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c0 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c0 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c0 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
@@ -224,35 +224,35 @@ div.c0 {
 @media (max-width:575px) {
   .c0 {
     display: none;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:576px) {
   .c0 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:768px) {
   .c0 {
     display: none;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:992px) {
   .c0 {
     display: block;
-    text-align: left;
+    text-align: inherit;
   }
 }
 
 @media (min-width:1200px) {
   .c0 {
     display: none;
-    text-align: left;
+    text-align: inherit;
   }
 }
 

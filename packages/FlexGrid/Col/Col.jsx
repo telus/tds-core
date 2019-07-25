@@ -75,7 +75,7 @@ const Col = ({ span, offset, horizontalAlign, children, ...rest }) => {
     if (typeof horizontalAlign === 'string') {
       return [horizontalAlign, horizontalAlign, horizontalAlign, horizontalAlign, horizontalAlign]
     }
-    return ['left', 'left', 'left', 'left', 'left']
+    return ['inherit', 'inherit', 'inherit', 'inherit', 'inherit']
   }
 
   return (
