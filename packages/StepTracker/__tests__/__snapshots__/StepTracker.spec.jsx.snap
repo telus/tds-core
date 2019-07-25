@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<StepTracker /> renders 1`] = `
-.c7 {
+.c4 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -19,18 +19,18 @@ exports[`<StepTracker /> renders 1`] = `
   font-size: 1rem;
 }
 
-.c7::before {
+.c4::before {
   content: '\\f101';
 }
 
-.c9 {
+.c6 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: inherit;
   font-weight: inherit;
 }
 
-.c9 sup {
+.c6 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -38,7 +38,7 @@ exports[`<StepTracker /> renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c10 {
+.c7 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: inherit;
@@ -46,7 +46,7 @@ exports[`<StepTracker /> renders 1`] = `
   font-weight: 700;
 }
 
-.c10 sup {
+.c7 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -54,50 +54,14 @@ exports[`<StepTracker /> renders 1`] = `
   padding-left: 0.1em;
 }
 
-div.c3 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-div.c12 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .c2 {
-  width: 100%;
-}
-
-div.c2 {
-  margin: 0 auto;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-div.c1 {
-  padding: 0;
-}
-
-.c5 {
   position: relative;
   text-align: center;
   width: 100%;
 }
 
-.c5:before,
-.c5:after {
+.c2:before,
+.c2:after {
   position: absolute;
   top: 17px;
   width: calc(50% - 1.07rem);
@@ -105,23 +69,23 @@ div.c1 {
   border-bottom: 0.1rem solid #54595f;
 }
 
-.c5:before {
+.c2:before {
   left: 0;
 }
 
-.c5:after {
+.c2:after {
   right: 0;
 }
 
-.c5:first-child:before {
+.c2:first-child:before {
   content: none;
 }
 
-.c5:last-child:after {
+.c2:last-child:after {
   content: none;
 }
 
-.c6 {
+.c3 {
   display: inline-block;
   border: 0.1rem solid #248700;
   border-radius: 50%;
@@ -133,7 +97,7 @@ div.c1 {
   text-align: center;
 }
 
-.c11 {
+.c8 {
   display: inline-block;
   border: 0.1rem solid #54595f;
   border-radius: 50%;
@@ -143,7 +107,7 @@ div.c1 {
   margin-bottom: 1rem;
 }
 
-.c8 {
+.c5 {
   display: none;
   text-align: center;
 }
@@ -153,7 +117,7 @@ div.c1 {
   background-color: #f7f7f8;
 }
 
-.c4 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -163,167 +127,13 @@ div.c1 {
   flex-direction: row;
 }
 
-.c13 {
+.c9 {
   width: 100%;
   text-align: center;
 }
 
-@media (max-width:575px) {
-  .c3 {
-    display: block;
-    text-align: inherit;
-  }
-}
-
-@media (min-width:576px) {
-  .c3 {
-    display: block;
-    text-align: inherit;
-  }
-}
-
 @media (min-width:768px) {
-  .c3 {
-    display: block;
-    text-align: inherit;
-  }
-}
-
-@media (min-width:992px) {
-  .c3 {
-    display: block;
-    text-align: inherit;
-  }
-}
-
-@media (min-width:1200px) {
-  .c3 {
-    display: block;
-    text-align: inherit;
-  }
-}
-
-@media (max-width:575px) {
-  .c12 {
-    display: block;
-    text-align: inherit;
-  }
-}
-
-@media (min-width:576px) {
-  .c12 {
-    display: block;
-    text-align: inherit;
-  }
-}
-
-@media (min-width:768px) {
-  .c12 {
-    display: none;
-    text-align: inherit;
-  }
-}
-
-@media (min-width:992px) {
-  .c12 {
-    display: none;
-    text-align: inherit;
-  }
-}
-
-@media (min-width:1200px) {
-  .c12 {
-    display: none;
-    text-align: inherit;
-  }
-}
-
-@media (max-width:575px) {
-  div.c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:576px) {
-  div.c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:768px) {
-  div.c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:992px) {
-  div.c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:1200px) {
-  div.c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (max-width:575px) {
-  .c1 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:576px) {
-  .c1 {
-    max-width: 576px;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    max-width: 768px;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:992px) {
-  .c1 {
-    max-width: 992px;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:1200px) {
-  .c1 {
-    max-width: 1200px;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c8 {
+  .c5 {
     display: block;
   }
 }
@@ -333,37 +143,37 @@ div.c1 {
   data-testid="stepTrackerContainer"
 >
   <div
-    class="c1 TDS_flexboxgrid2__container-fluid___3c7kO"
+    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
   >
     <div
-      class="c2 TDS_flexboxgrid2__row___3YyB2"
+      class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
     >
       <div
-        class="TDS_flexboxgrid2__col-xs-12___3Q9tF c3"
+        class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
       >
         <div
-          class="c4"
+          class="c1"
         >
           <div
             aria-current="false"
             aria-label="Login"
-            class="c5"
+            class="c2"
             data-isactive="true"
             data-testid="singleStepContainer-0"
           >
             <span
-              class="c6"
+              class="c3"
             >
               <i
                 aria-hidden="true"
-                class="c7"
+                class="c4"
               />
             </span>
             <div
-              class="c8"
+              class="c5"
             >
               <span
-                class="c9"
+                class="c6"
               >
                 1. Login
               </span>
@@ -372,20 +182,20 @@ div.c1 {
           <div
             aria-current="true"
             aria-label="Purchase"
-            class="c5"
+            class="c2"
             data-isactive="true"
             data-testid="singleStepContainer-1"
           >
             <span
-              class="c6"
+              class="c3"
             >
               <br />
             </span>
             <div
-              class="c8"
+              class="c5"
             >
               <span
-                class="c10"
+                class="c7"
               >
                 2. Purchase
               </span>
@@ -394,20 +204,20 @@ div.c1 {
           <div
             aria-current="false"
             aria-label="Checkout"
-            class="c5"
+            class="c2"
             data-isactive="false"
             data-testid="singleStepContainer-2"
           >
             <span
-              class="c11"
+              class="c8"
             >
               <br />
             </span>
             <div
-              class="c8"
+              class="c5"
             >
               <span
-                class="c9"
+                class="c6"
               >
                 3. Checkout
               </span>
@@ -417,16 +227,16 @@ div.c1 {
       </div>
     </div>
     <div
-      class="c2 TDS_flexboxgrid2__row___3YyB2"
+      class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
     >
       <div
-        class="TDS_flexboxgrid2__col-xs-12___3Q9tF col-md-0 c12"
+        class="TDS_flexboxgrid2__col-xs-12___3Q9tF col-md-0 TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdHidden___3fURS TDS_Col-modules__lgHidden___38qZL TDS_Col-modules__xlHidden___d5mDh TDS_Col-modules__padding___2tLQS"
       >
         <div
-          class="c13"
+          class="c9"
         >
           <span
-            class="c9"
+            class="c6"
             data-testid="mobileStepLabel"
           >
             <span>
