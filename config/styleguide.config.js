@@ -323,8 +323,6 @@ module.exports = {
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
   require: [
-    // '@babel/polyfill',
-    path.resolve('packages/css-reset/index.scss'),
     path.resolve('docs/scss/styleguide.scss'),
     path.resolve('config/globalComponents.js'),
   ].concat(styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []),
