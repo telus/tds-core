@@ -1,7 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Notification /> can have a variant 1`] = `
-.c4 {
+div.c4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+div.c5 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c3 {
+  width: 100%;
+}
+
+div.c3 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div.c2 {
+  padding: 0;
+}
+
+.c8 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -17,7 +53,7 @@ exports[`<Notification /> can have a variant 1`] = `
   text-align: left;
 }
 
-.c4 sup {
+.c8 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -34,7 +70,7 @@ exports[`<Notification /> can have a variant 1`] = `
   flex-direction: column;
 }
 
-.c2 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -44,7 +80,7 @@ exports[`<Notification /> can have a variant 1`] = `
   flex-direction: row;
 }
 
-.c2 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
@@ -53,8 +89,162 @@ exports[`<Notification /> can have a variant 1`] = `
   background-color: #f7f7f8;
 }
 
-.c3 {
+.c7 {
   width: 100%;
+}
+
+@media (max-width:575px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c2 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    max-width: 576px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    max-width: 768px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    max-width: 992px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    max-width: 1200px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 <Notification
@@ -71,7 +261,7 @@ exports[`<Notification /> can have a variant 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-ifAKCX",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -81,7 +271,7 @@ exports[`<Notification /> can have a variant 1`] = `
           "displayName": "Styled(Component)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-ifAKCX",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -118,9 +308,9 @@ exports[`<Notification /> can have a variant 1`] = `
                     [Function],
                   ],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bdVaJa",
+                    "componentId": "sc-bxivhb",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c6",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -133,7 +323,7 @@ exports[`<Notification /> can have a variant 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bdVaJa",
+                  "styledComponentId": "sc-bxivhb",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -146,250 +336,666 @@ exports[`<Notification /> can have a variant 1`] = `
               vertical={3}
             >
               <div
-                className="c0 sc-bwzfXH c0 c1"
+                className="c0 sc-ifAKCX c0 c1"
               >
                 <FlexGrid
                   gutter={true}
                   limitWidth={true}
                 >
-                  <Broadcast
-                    channel="flex-grid"
-                    compareValues={[Function]}
-                    value={true}
+                  <Styled(Component)
+                    fluid={true}
+                    limitWidth={true}
+                    reverseLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
                   >
-                    <Grid
-                      className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+                    <StyledComponent
                       fluid={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-htpNat",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-htpNat",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      limitWidth={true}
+                      reverseLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
                     >
-                      <div
-                        className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                      <Component
+                        className="c2"
+                        fluid={true}
+                        limitWidth={true}
+                        reverseLevel={
+                          Array [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                          ]
+                        }
                       >
-                        <Row>
-                          <Row
-                            className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                        <Grid
+                          className="c2"
+                          fluid={true}
+                        >
+                          <div
+                            className="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
                           >
-                            <div
-                              className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
-                            >
-                              <Col>
-                                <Subscriber
-                                  channel="flex-grid"
-                                  quiet={false}
+                            <Row>
+                              <Styled(Component)
+                                reverseLevel={
+                                  Array [
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                  ]
+                                }
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bwzfXH",
+                                        "isStatic": false,
+                                        "lastClassName": "c3",
+                                        "rules": Array [
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "Styled(Component)",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bwzfXH",
+                                      "target": [Function],
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  reverseLevel={
+                                    Array [
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                    ]
+                                  }
                                 >
-                                  <Col
-                                    className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
-                                    xs={true}
+                                  <Component
+                                    className="c3"
+                                    reverseLevel={
+                                      Array [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                      ]
+                                    }
                                   >
-                                    <div
-                                      className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                    <Row
+                                      className="c3"
                                     >
-                                      <FlexGrid
-                                        gutter={false}
-                                        limitWidth={true}
+                                      <div
+                                        className="c3 TDS_flexboxgrid2__row___3YyB2"
                                       >
-                                        <Broadcast
-                                          channel="flex-grid"
-                                          compareValues={[Function]}
-                                          value={false}
-                                        >
-                                          <Grid
-                                            className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
-                                            fluid={true}
+                                        <Col>
+                                          <Styled(Component)
+                                            gutter={true}
+                                            hiddenLevel={
+                                              Array [
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                              ]
+                                            }
+                                            horizontalAlignLevel={
+                                              Array [
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                              ]
+                                            }
+                                            xs={true}
                                           >
-                                            <div
-                                              className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "sc-bdVaJa",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c5",
+                                                    "rules": Array [
+                                                      [Function],
+                                                    ],
+                                                  },
+                                                  "displayName": "Styled(Component)",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "sc-bdVaJa",
+                                                  "target": [Function],
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                              gutter={true}
+                                              hiddenLevel={
+                                                Array [
+                                                  false,
+                                                  false,
+                                                  false,
+                                                  false,
+                                                  false,
+                                                ]
+                                              }
+                                              horizontalAlignLevel={
+                                                Array [
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                ]
+                                              }
+                                              xs={true}
                                             >
-                                              <Row>
-                                                <Row
-                                                  className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                                              <Component
+                                                className="c4"
+                                                gutter={true}
+                                                hiddenLevel={
+                                                  Array [
+                                                    false,
+                                                    false,
+                                                    false,
+                                                    false,
+                                                    false,
+                                                  ]
+                                                }
+                                                horizontalAlignLevel={
+                                                  Array [
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                  ]
+                                                }
+                                                xs={true}
+                                              >
+                                                <Col
+                                                  className="c4"
+                                                  xs={true}
                                                 >
                                                   <div
-                                                    className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                                                    className="TDS_flexboxgrid2__col-xs___2KrHO c4"
                                                   >
-                                                    <Col>
-                                                      <Subscriber
-                                                        channel="flex-grid"
-                                                        quiet={false}
+                                                    <FlexGrid
+                                                      gutter={false}
+                                                      limitWidth={true}
+                                                    >
+                                                      <Styled(Component)
+                                                        fluid={true}
+                                                        limitWidth={true}
+                                                        reverseLevel={
+                                                          Array [
+                                                            false,
+                                                            false,
+                                                            false,
+                                                            false,
+                                                            false,
+                                                          ]
+                                                        }
                                                       >
-                                                        <Col
-                                                          className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
-                                                          xs={true}
+                                                        <StyledComponent
+                                                          fluid={true}
+                                                          forwardedComponent={
+                                                            Object {
+                                                              "$$typeof": Symbol(react.forward_ref),
+                                                              "attrs": Array [],
+                                                              "componentStyle": ComponentStyle {
+                                                                "componentId": "sc-htpNat",
+                                                                "isStatic": false,
+                                                                "lastClassName": "c2",
+                                                                "rules": Array [
+                                                                  [Function],
+                                                                ],
+                                                              },
+                                                              "displayName": "Styled(Component)",
+                                                              "foldedComponentIds": Array [],
+                                                              "render": [Function],
+                                                              "styledComponentId": "sc-htpNat",
+                                                              "target": [Function],
+                                                              "toString": [Function],
+                                                              "warnTooManyClasses": [Function],
+                                                              "withComponent": [Function],
+                                                            }
+                                                          }
+                                                          forwardedRef={null}
+                                                          limitWidth={true}
+                                                          reverseLevel={
+                                                            Array [
+                                                              false,
+                                                              false,
+                                                              false,
+                                                              false,
+                                                              false,
+                                                            ]
+                                                          }
                                                         >
-                                                          <div
-                                                            className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                                                          <Component
+                                                            className="c2"
+                                                            fluid={true}
+                                                            limitWidth={true}
+                                                            reverseLevel={
+                                                              Array [
+                                                                false,
+                                                                false,
+                                                                false,
+                                                                false,
+                                                                false,
+                                                              ]
+                                                            }
                                                           >
-                                                            <Box
-                                                              between={3}
-                                                              inline={true}
-                                                              tag="div"
+                                                            <Grid
+                                                              className="c2"
+                                                              fluid={true}
                                                             >
-                                                              <styled.div
-                                                                between={3}
-                                                                inline={true}
-                                                                tag="div"
+                                                              <div
+                                                                className="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
                                                               >
-                                                                <StyledComponent
-                                                                  between={3}
-                                                                  forwardedComponent={
-                                                                    Object {
-                                                                      "$$typeof": Symbol(react.forward_ref),
-                                                                      "attrs": Array [
-                                                                        [Function],
-                                                                      ],
-                                                                      "componentStyle": ComponentStyle {
-                                                                        "componentId": "sc-bdVaJa",
-                                                                        "isStatic": false,
-                                                                        "lastClassName": "c2",
-                                                                        "rules": Array [
-                                                                          [Function],
-                                                                          [Function],
-                                                                          [Function],
-                                                                          [Function],
-                                                                          [Function],
-                                                                          [Function],
-                                                                        ],
-                                                                      },
-                                                                      "displayName": "styled.div",
-                                                                      "foldedComponentIds": Array [],
-                                                                      "render": [Function],
-                                                                      "styledComponentId": "sc-bdVaJa",
-                                                                      "target": "div",
-                                                                      "toString": [Function],
-                                                                      "warnTooManyClasses": [Function],
-                                                                      "withComponent": [Function],
+                                                                <Row>
+                                                                  <Styled(Component)
+                                                                    reverseLevel={
+                                                                      Array [
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                      ]
                                                                     }
-                                                                  }
-                                                                  forwardedRef={null}
-                                                                  inline={true}
-                                                                  tag="div"
-                                                                >
-                                                                  <div
-                                                                    className="c2"
                                                                   >
-                                                                    <Notification__StyledMessageContainer
-                                                                      hasIcon={false}
-                                                                    >
-                                                                      <StyledComponent
-                                                                        forwardedComponent={
-                                                                          Object {
-                                                                            "$$typeof": Symbol(react.forward_ref),
-                                                                            "attrs": Array [],
-                                                                            "componentStyle": ComponentStyle {
-                                                                              "componentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
-                                                                              "isStatic": false,
-                                                                              "lastClassName": "c3",
-                                                                              "rules": Array [
-                                                                                [Function],
-                                                                              ],
-                                                                            },
-                                                                            "displayName": "Notification__StyledMessageContainer",
-                                                                            "foldedComponentIds": Array [],
-                                                                            "render": [Function],
-                                                                            "styledComponentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
-                                                                            "target": "div",
-                                                                            "toString": [Function],
-                                                                            "warnTooManyClasses": [Function],
-                                                                            "withComponent": [Function],
-                                                                          }
+                                                                    <StyledComponent
+                                                                      forwardedComponent={
+                                                                        Object {
+                                                                          "$$typeof": Symbol(react.forward_ref),
+                                                                          "attrs": Array [],
+                                                                          "componentStyle": ComponentStyle {
+                                                                            "componentId": "sc-bwzfXH",
+                                                                            "isStatic": false,
+                                                                            "lastClassName": "c3",
+                                                                            "rules": Array [
+                                                                              [Function],
+                                                                            ],
+                                                                          },
+                                                                          "displayName": "Styled(Component)",
+                                                                          "foldedComponentIds": Array [],
+                                                                          "render": [Function],
+                                                                          "styledComponentId": "sc-bwzfXH",
+                                                                          "target": [Function],
+                                                                          "toString": [Function],
+                                                                          "warnTooManyClasses": [Function],
+                                                                          "withComponent": [Function],
                                                                         }
-                                                                        forwardedRef={null}
-                                                                        hasIcon={false}
+                                                                      }
+                                                                      forwardedRef={null}
+                                                                      reverseLevel={
+                                                                        Array [
+                                                                          false,
+                                                                          false,
+                                                                          false,
+                                                                          false,
+                                                                          false,
+                                                                        ]
+                                                                      }
+                                                                    >
+                                                                      <Component
+                                                                        className="c3"
+                                                                        reverseLevel={
+                                                                          Array [
+                                                                            false,
+                                                                            false,
+                                                                            false,
+                                                                            false,
+                                                                            false,
+                                                                          ]
+                                                                        }
                                                                       >
-                                                                        <div
+                                                                        <Row
                                                                           className="c3"
                                                                         >
-                                                                          <Paragraph
-                                                                            align="left"
-                                                                            bold={false}
-                                                                            invert={false}
-                                                                            size="medium"
+                                                                          <div
+                                                                            className="c3 TDS_flexboxgrid2__row___3YyB2"
                                                                           >
-                                                                            <Paragraph__StyledParagraph
-                                                                              align="left"
-                                                                              bold={false}
-                                                                              invert={false}
-                                                                              size="medium"
-                                                                            >
-                                                                              <StyledComponent
-                                                                                align="left"
-                                                                                bold={false}
-                                                                                forwardedComponent={
-                                                                                  Object {
-                                                                                    "$$typeof": Symbol(react.forward_ref),
-                                                                                    "attrs": Array [],
-                                                                                    "componentStyle": ComponentStyle {
-                                                                                      "componentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                                      "isStatic": false,
-                                                                                      "lastClassName": "c4",
-                                                                                      "rules": Array [
-                                                                                        [Function],
-                                                                                        "word-wrap: break-word;",
-                                                                                        "padding: 0;",
-                                                                                        "margin: 0;",
-                                                                                        [Function],
-                                                                                        [Function],
-                                                                                        [Function],
-                                                                                        [Function],
-                                                                                        "sup {",
-                                                                                        "top: -0.5em;",
-                                                                                        "font-size: 0.875rem;",
-                                                                                        "position: relative;",
-                                                                                        "vertical-align: baseline;",
-                                                                                        "padding-left: 0.1em;",
-                                                                                        "}",
-                                                                                      ],
-                                                                                    },
-                                                                                    "displayName": "Paragraph__StyledParagraph",
-                                                                                    "foldedComponentIds": Array [],
-                                                                                    "render": [Function],
-                                                                                    "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                                    "target": "p",
-                                                                                    "toString": [Function],
-                                                                                    "warnTooManyClasses": [Function],
-                                                                                    "withComponent": [Function],
-                                                                                  }
+                                                                            <Col>
+                                                                              <Styled(Component)
+                                                                                gutter={false}
+                                                                                hiddenLevel={
+                                                                                  Array [
+                                                                                    false,
+                                                                                    false,
+                                                                                    false,
+                                                                                    false,
+                                                                                    false,
+                                                                                  ]
                                                                                 }
-                                                                                forwardedRef={null}
-                                                                                invert={false}
-                                                                                size="medium"
+                                                                                horizontalAlignLevel={
+                                                                                  Array [
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                  ]
+                                                                                }
+                                                                                xs={true}
                                                                               >
-                                                                                <p
-                                                                                  className="c4"
-                                                                                  size="medium"
+                                                                                <StyledComponent
+                                                                                  forwardedComponent={
+                                                                                    Object {
+                                                                                      "$$typeof": Symbol(react.forward_ref),
+                                                                                      "attrs": Array [],
+                                                                                      "componentStyle": ComponentStyle {
+                                                                                        "componentId": "sc-bdVaJa",
+                                                                                        "isStatic": false,
+                                                                                        "lastClassName": "c5",
+                                                                                        "rules": Array [
+                                                                                          [Function],
+                                                                                        ],
+                                                                                      },
+                                                                                      "displayName": "Styled(Component)",
+                                                                                      "foldedComponentIds": Array [],
+                                                                                      "render": [Function],
+                                                                                      "styledComponentId": "sc-bdVaJa",
+                                                                                      "target": [Function],
+                                                                                      "toString": [Function],
+                                                                                      "warnTooManyClasses": [Function],
+                                                                                      "withComponent": [Function],
+                                                                                    }
+                                                                                  }
+                                                                                  forwardedRef={null}
+                                                                                  gutter={false}
+                                                                                  hiddenLevel={
+                                                                                    Array [
+                                                                                      false,
+                                                                                      false,
+                                                                                      false,
+                                                                                      false,
+                                                                                      false,
+                                                                                    ]
+                                                                                  }
+                                                                                  horizontalAlignLevel={
+                                                                                    Array [
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                    ]
+                                                                                  }
+                                                                                  xs={true}
                                                                                 >
-                                                                                  Some content
-                                                                                </p>
-                                                                              </StyledComponent>
-                                                                            </Paragraph__StyledParagraph>
-                                                                          </Paragraph>
-                                                                        </div>
-                                                                      </StyledComponent>
-                                                                    </Notification__StyledMessageContainer>
-                                                                  </div>
-                                                                </StyledComponent>
-                                                              </styled.div>
-                                                            </Box>
-                                                          </div>
-                                                        </Col>
-                                                      </Subscriber>
-                                                    </Col>
+                                                                                  <Component
+                                                                                    className="c5"
+                                                                                    gutter={false}
+                                                                                    hiddenLevel={
+                                                                                      Array [
+                                                                                        false,
+                                                                                        false,
+                                                                                        false,
+                                                                                        false,
+                                                                                        false,
+                                                                                      ]
+                                                                                    }
+                                                                                    horizontalAlignLevel={
+                                                                                      Array [
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                      ]
+                                                                                    }
+                                                                                    xs={true}
+                                                                                  >
+                                                                                    <Col
+                                                                                      className="c5"
+                                                                                      xs={true}
+                                                                                    >
+                                                                                      <div
+                                                                                        className="TDS_flexboxgrid2__col-xs___2KrHO c5"
+                                                                                      >
+                                                                                        <Box
+                                                                                          between={3}
+                                                                                          inline={true}
+                                                                                          tag="div"
+                                                                                        >
+                                                                                          <styled.div
+                                                                                            between={3}
+                                                                                            inline={true}
+                                                                                            tag="div"
+                                                                                          >
+                                                                                            <StyledComponent
+                                                                                              between={3}
+                                                                                              forwardedComponent={
+                                                                                                Object {
+                                                                                                  "$$typeof": Symbol(react.forward_ref),
+                                                                                                  "attrs": Array [
+                                                                                                    [Function],
+                                                                                                  ],
+                                                                                                  "componentStyle": ComponentStyle {
+                                                                                                    "componentId": "sc-bxivhb",
+                                                                                                    "isStatic": false,
+                                                                                                    "lastClassName": "c6",
+                                                                                                    "rules": Array [
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                    ],
+                                                                                                  },
+                                                                                                  "displayName": "styled.div",
+                                                                                                  "foldedComponentIds": Array [],
+                                                                                                  "render": [Function],
+                                                                                                  "styledComponentId": "sc-bxivhb",
+                                                                                                  "target": "div",
+                                                                                                  "toString": [Function],
+                                                                                                  "warnTooManyClasses": [Function],
+                                                                                                  "withComponent": [Function],
+                                                                                                }
+                                                                                              }
+                                                                                              forwardedRef={null}
+                                                                                              inline={true}
+                                                                                              tag="div"
+                                                                                            >
+                                                                                              <div
+                                                                                                className="c6"
+                                                                                              >
+                                                                                                <Notification__StyledMessageContainer
+                                                                                                  hasIcon={false}
+                                                                                                >
+                                                                                                  <StyledComponent
+                                                                                                    forwardedComponent={
+                                                                                                      Object {
+                                                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                                                        "attrs": Array [],
+                                                                                                        "componentStyle": ComponentStyle {
+                                                                                                          "componentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
+                                                                                                          "isStatic": false,
+                                                                                                          "lastClassName": "c7",
+                                                                                                          "rules": Array [
+                                                                                                            [Function],
+                                                                                                          ],
+                                                                                                        },
+                                                                                                        "displayName": "Notification__StyledMessageContainer",
+                                                                                                        "foldedComponentIds": Array [],
+                                                                                                        "render": [Function],
+                                                                                                        "styledComponentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
+                                                                                                        "target": "div",
+                                                                                                        "toString": [Function],
+                                                                                                        "warnTooManyClasses": [Function],
+                                                                                                        "withComponent": [Function],
+                                                                                                      }
+                                                                                                    }
+                                                                                                    forwardedRef={null}
+                                                                                                    hasIcon={false}
+                                                                                                  >
+                                                                                                    <div
+                                                                                                      className="c7"
+                                                                                                    >
+                                                                                                      <Paragraph
+                                                                                                        align="left"
+                                                                                                        bold={false}
+                                                                                                        invert={false}
+                                                                                                        size="medium"
+                                                                                                      >
+                                                                                                        <Paragraph__StyledParagraph
+                                                                                                          align="left"
+                                                                                                          bold={false}
+                                                                                                          invert={false}
+                                                                                                          size="medium"
+                                                                                                        >
+                                                                                                          <StyledComponent
+                                                                                                            align="left"
+                                                                                                            bold={false}
+                                                                                                            forwardedComponent={
+                                                                                                              Object {
+                                                                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                                                                "attrs": Array [],
+                                                                                                                "componentStyle": ComponentStyle {
+                                                                                                                  "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                                                  "isStatic": false,
+                                                                                                                  "lastClassName": "c8",
+                                                                                                                  "rules": Array [
+                                                                                                                    [Function],
+                                                                                                                    "word-wrap: break-word;",
+                                                                                                                    "padding: 0;",
+                                                                                                                    "margin: 0;",
+                                                                                                                    [Function],
+                                                                                                                    [Function],
+                                                                                                                    [Function],
+                                                                                                                    [Function],
+                                                                                                                    "sup {",
+                                                                                                                    "top: -0.5em;",
+                                                                                                                    "font-size: 0.875rem;",
+                                                                                                                    "position: relative;",
+                                                                                                                    "vertical-align: baseline;",
+                                                                                                                    "padding-left: 0.1em;",
+                                                                                                                    "}",
+                                                                                                                  ],
+                                                                                                                },
+                                                                                                                "displayName": "Paragraph__StyledParagraph",
+                                                                                                                "foldedComponentIds": Array [],
+                                                                                                                "render": [Function],
+                                                                                                                "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                                                "target": "p",
+                                                                                                                "toString": [Function],
+                                                                                                                "warnTooManyClasses": [Function],
+                                                                                                                "withComponent": [Function],
+                                                                                                              }
+                                                                                                            }
+                                                                                                            forwardedRef={null}
+                                                                                                            invert={false}
+                                                                                                            size="medium"
+                                                                                                          >
+                                                                                                            <p
+                                                                                                              className="c8"
+                                                                                                              size="medium"
+                                                                                                            >
+                                                                                                              Some content
+                                                                                                            </p>
+                                                                                                          </StyledComponent>
+                                                                                                        </Paragraph__StyledParagraph>
+                                                                                                      </Paragraph>
+                                                                                                    </div>
+                                                                                                  </StyledComponent>
+                                                                                                </Notification__StyledMessageContainer>
+                                                                                              </div>
+                                                                                            </StyledComponent>
+                                                                                          </styled.div>
+                                                                                        </Box>
+                                                                                      </div>
+                                                                                    </Col>
+                                                                                  </Component>
+                                                                                </StyledComponent>
+                                                                              </Styled(Component)>
+                                                                            </Col>
+                                                                          </div>
+                                                                        </Row>
+                                                                      </Component>
+                                                                    </StyledComponent>
+                                                                  </Styled(Component)>
+                                                                </Row>
+                                                              </div>
+                                                            </Grid>
+                                                          </Component>
+                                                        </StyledComponent>
+                                                      </Styled(Component)>
+                                                    </FlexGrid>
                                                   </div>
-                                                </Row>
-                                              </Row>
-                                            </div>
-                                          </Grid>
-                                        </Broadcast>
-                                      </FlexGrid>
-                                    </div>
-                                  </Col>
-                                </Subscriber>
-                              </Col>
-                            </div>
-                          </Row>
-                        </Row>
-                      </div>
-                    </Grid>
-                  </Broadcast>
+                                                </Col>
+                                              </Component>
+                                            </StyledComponent>
+                                          </Styled(Component)>
+                                        </Col>
+                                      </div>
+                                    </Row>
+                                  </Component>
+                                </StyledComponent>
+                              </Styled(Component)>
+                            </Row>
+                          </div>
+                        </Grid>
+                      </Component>
+                    </StyledComponent>
+                  </Styled(Component)>
                 </FlexGrid>
               </div>
             </StyledComponent>
@@ -402,7 +1008,7 @@ exports[`<Notification /> can have a variant 1`] = `
 `;
 
 exports[`<Notification /> can have a variant 2`] = `
-.c3 {
+.c7 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -420,11 +1026,47 @@ exports[`<Notification /> can have a variant 2`] = `
   font-size: 1.5rem;
 }
 
-.c3::before {
+.c7::before {
   content: '\\f101';
 }
 
-.c5 {
+div.c4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+div.c5 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c3 {
+  width: 100%;
+}
+
+div.c3 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div.c2 {
+  padding: 0;
+}
+
+.c9 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -440,7 +1082,7 @@ exports[`<Notification /> can have a variant 2`] = `
   text-align: left;
 }
 
-.c5 sup {
+.c9 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -457,7 +1099,7 @@ exports[`<Notification /> can have a variant 2`] = `
   flex-direction: column;
 }
 
-.c2 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -467,7 +1109,7 @@ exports[`<Notification /> can have a variant 2`] = `
   flex-direction: row;
 }
 
-.c2 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
@@ -476,8 +1118,162 @@ exports[`<Notification /> can have a variant 2`] = `
   background-color: #f4f9f2;
 }
 
-.c4 {
+.c8 {
   width: calc(100% - 2.5rem);
+}
+
+@media (max-width:575px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c2 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    max-width: 576px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    max-width: 768px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    max-width: 992px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    max-width: 1200px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 <Notification
@@ -494,7 +1290,7 @@ exports[`<Notification /> can have a variant 2`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-ifAKCX",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -504,7 +1300,7 @@ exports[`<Notification /> can have a variant 2`] = `
           "displayName": "Styled(Component)",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-ifAKCX",
           "target": [Function],
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -541,9 +1337,9 @@ exports[`<Notification /> can have a variant 2`] = `
                     [Function],
                   ],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bdVaJa",
+                    "componentId": "sc-bxivhb",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c6",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -556,7 +1352,7 @@ exports[`<Notification /> can have a variant 2`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bdVaJa",
+                  "styledComponentId": "sc-bxivhb",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -569,306 +1365,722 @@ exports[`<Notification /> can have a variant 2`] = `
               vertical={3}
             >
               <div
-                className="c0 sc-bwzfXH c0 c1"
+                className="c0 sc-ifAKCX c0 c1"
               >
                 <FlexGrid
                   gutter={true}
                   limitWidth={true}
                 >
-                  <Broadcast
-                    channel="flex-grid"
-                    compareValues={[Function]}
-                    value={true}
+                  <Styled(Component)
+                    fluid={true}
+                    limitWidth={true}
+                    reverseLevel={
+                      Array [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                      ]
+                    }
                   >
-                    <Grid
-                      className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
+                    <StyledComponent
                       fluid={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-htpNat",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "Styled(Component)",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-htpNat",
+                          "target": [Function],
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      limitWidth={true}
+                      reverseLevel={
+                        Array [
+                          false,
+                          false,
+                          false,
+                          false,
+                          false,
+                        ]
+                      }
                     >
-                      <div
-                        className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                      <Component
+                        className="c2"
+                        fluid={true}
+                        limitWidth={true}
+                        reverseLevel={
+                          Array [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                          ]
+                        }
                       >
-                        <Row>
-                          <Row
-                            className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                        <Grid
+                          className="c2"
+                          fluid={true}
+                        >
+                          <div
+                            className="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
                           >
-                            <div
-                              className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
-                            >
-                              <Col>
-                                <Subscriber
-                                  channel="flex-grid"
-                                  quiet={false}
+                            <Row>
+                              <Styled(Component)
+                                reverseLevel={
+                                  Array [
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                  ]
+                                }
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bwzfXH",
+                                        "isStatic": false,
+                                        "lastClassName": "c3",
+                                        "rules": Array [
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "Styled(Component)",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bwzfXH",
+                                      "target": [Function],
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  reverseLevel={
+                                    Array [
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                      false,
+                                    ]
+                                  }
                                 >
-                                  <Col
-                                    className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
-                                    xs={true}
+                                  <Component
+                                    className="c3"
+                                    reverseLevel={
+                                      Array [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                      ]
+                                    }
                                   >
-                                    <div
-                                      className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                                    <Row
+                                      className="c3"
                                     >
-                                      <FlexGrid
-                                        gutter={false}
-                                        limitWidth={true}
+                                      <div
+                                        className="c3 TDS_flexboxgrid2__row___3YyB2"
                                       >
-                                        <Broadcast
-                                          channel="flex-grid"
-                                          compareValues={[Function]}
-                                          value={false}
-                                        >
-                                          <Grid
-                                            className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi"
-                                            fluid={true}
+                                        <Col>
+                                          <Styled(Component)
+                                            gutter={true}
+                                            hiddenLevel={
+                                              Array [
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                              ]
+                                            }
+                                            horizontalAlignLevel={
+                                              Array [
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                                "inherit",
+                                              ]
+                                            }
+                                            xs={true}
                                           >
-                                            <div
-                                              className="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "sc-bdVaJa",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c5",
+                                                    "rules": Array [
+                                                      [Function],
+                                                    ],
+                                                  },
+                                                  "displayName": "Styled(Component)",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "sc-bdVaJa",
+                                                  "target": [Function],
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                              gutter={true}
+                                              hiddenLevel={
+                                                Array [
+                                                  false,
+                                                  false,
+                                                  false,
+                                                  false,
+                                                  false,
+                                                ]
+                                              }
+                                              horizontalAlignLevel={
+                                                Array [
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                  "inherit",
+                                                ]
+                                              }
+                                              xs={true}
                                             >
-                                              <Row>
-                                                <Row
-                                                  className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr"
+                                              <Component
+                                                className="c4"
+                                                gutter={true}
+                                                hiddenLevel={
+                                                  Array [
+                                                    false,
+                                                    false,
+                                                    false,
+                                                    false,
+                                                    false,
+                                                  ]
+                                                }
+                                                horizontalAlignLevel={
+                                                  Array [
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                    "inherit",
+                                                  ]
+                                                }
+                                                xs={true}
+                                              >
+                                                <Col
+                                                  className="c4"
+                                                  xs={true}
                                                 >
                                                   <div
-                                                    className="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                                                    className="TDS_flexboxgrid2__col-xs___2KrHO c4"
                                                   >
-                                                    <Col>
-                                                      <Subscriber
-                                                        channel="flex-grid"
-                                                        quiet={false}
+                                                    <FlexGrid
+                                                      gutter={false}
+                                                      limitWidth={true}
+                                                    >
+                                                      <Styled(Component)
+                                                        fluid={true}
+                                                        limitWidth={true}
+                                                        reverseLevel={
+                                                          Array [
+                                                            false,
+                                                            false,
+                                                            false,
+                                                            false,
+                                                            false,
+                                                          ]
+                                                        }
                                                       >
-                                                        <Col
-                                                          className="TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
-                                                          xs={true}
+                                                        <StyledComponent
+                                                          fluid={true}
+                                                          forwardedComponent={
+                                                            Object {
+                                                              "$$typeof": Symbol(react.forward_ref),
+                                                              "attrs": Array [],
+                                                              "componentStyle": ComponentStyle {
+                                                                "componentId": "sc-htpNat",
+                                                                "isStatic": false,
+                                                                "lastClassName": "c2",
+                                                                "rules": Array [
+                                                                  [Function],
+                                                                ],
+                                                              },
+                                                              "displayName": "Styled(Component)",
+                                                              "foldedComponentIds": Array [],
+                                                              "render": [Function],
+                                                              "styledComponentId": "sc-htpNat",
+                                                              "target": [Function],
+                                                              "toString": [Function],
+                                                              "warnTooManyClasses": [Function],
+                                                              "withComponent": [Function],
+                                                            }
+                                                          }
+                                                          forwardedRef={null}
+                                                          limitWidth={true}
+                                                          reverseLevel={
+                                                            Array [
+                                                              false,
+                                                              false,
+                                                              false,
+                                                              false,
+                                                              false,
+                                                            ]
+                                                          }
                                                         >
-                                                          <div
-                                                            className="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+                                                          <Component
+                                                            className="c2"
+                                                            fluid={true}
+                                                            limitWidth={true}
+                                                            reverseLevel={
+                                                              Array [
+                                                                false,
+                                                                false,
+                                                                false,
+                                                                false,
+                                                                false,
+                                                              ]
+                                                            }
                                                           >
-                                                            <Box
-                                                              between={3}
-                                                              inline={true}
-                                                              tag="div"
+                                                            <Grid
+                                                              className="c2"
+                                                              fluid={true}
                                                             >
-                                                              <styled.div
-                                                                between={3}
-                                                                inline={true}
-                                                                tag="div"
+                                                              <div
+                                                                className="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
                                                               >
-                                                                <StyledComponent
-                                                                  between={3}
-                                                                  forwardedComponent={
-                                                                    Object {
-                                                                      "$$typeof": Symbol(react.forward_ref),
-                                                                      "attrs": Array [
-                                                                        [Function],
-                                                                      ],
-                                                                      "componentStyle": ComponentStyle {
-                                                                        "componentId": "sc-bdVaJa",
-                                                                        "isStatic": false,
-                                                                        "lastClassName": "c2",
-                                                                        "rules": Array [
-                                                                          [Function],
-                                                                          [Function],
-                                                                          [Function],
-                                                                          [Function],
-                                                                          [Function],
-                                                                          [Function],
-                                                                        ],
-                                                                      },
-                                                                      "displayName": "styled.div",
-                                                                      "foldedComponentIds": Array [],
-                                                                      "render": [Function],
-                                                                      "styledComponentId": "sc-bdVaJa",
-                                                                      "target": "div",
-                                                                      "toString": [Function],
-                                                                      "warnTooManyClasses": [Function],
-                                                                      "withComponent": [Function],
+                                                                <Row>
+                                                                  <Styled(Component)
+                                                                    reverseLevel={
+                                                                      Array [
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                        false,
+                                                                      ]
                                                                     }
-                                                                  }
-                                                                  forwardedRef={null}
-                                                                  inline={true}
-                                                                  tag="div"
-                                                                >
-                                                                  <div
-                                                                    className="c2"
                                                                   >
-                                                                    <DecorativeIcon
-                                                                      size={24}
-                                                                      symbol="checkmark"
-                                                                      variant="primary"
-                                                                    >
-                                                                      <Icon
-                                                                        aria-hidden="true"
-                                                                        size={24}
-                                                                        symbol="checkmark"
-                                                                        variant="primary"
-                                                                      >
-                                                                        <Icon__StyledIcon
-                                                                          aria-hidden="true"
-                                                                          iSize={24}
-                                                                          symbol="checkmark"
-                                                                          variant="primary"
-                                                                        >
-                                                                          <StyledComponent
-                                                                            aria-hidden="true"
-                                                                            forwardedComponent={
-                                                                              Object {
-                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                "attrs": Array [],
-                                                                                "componentStyle": ComponentStyle {
-                                                                                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                                  "isStatic": false,
-                                                                                  "lastClassName": "c3",
-                                                                                  "rules": Array [
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                    [Function],
-                                                                                  ],
-                                                                                },
-                                                                                "displayName": "Icon__StyledIcon",
-                                                                                "foldedComponentIds": Array [],
-                                                                                "render": [Function],
-                                                                                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                                "target": "i",
-                                                                                "toString": [Function],
-                                                                                "warnTooManyClasses": [Function],
-                                                                                "withComponent": [Function],
-                                                                              }
-                                                                            }
-                                                                            forwardedRef={null}
-                                                                            iSize={24}
-                                                                            symbol="checkmark"
-                                                                            variant="primary"
-                                                                          >
-                                                                            <i
-                                                                              aria-hidden="true"
-                                                                              className="c3"
-                                                                            />
-                                                                          </StyledComponent>
-                                                                        </Icon__StyledIcon>
-                                                                      </Icon>
-                                                                    </DecorativeIcon>
-                                                                    <Notification__StyledMessageContainer
-                                                                      hasIcon={true}
-                                                                    >
-                                                                      <StyledComponent
-                                                                        forwardedComponent={
-                                                                          Object {
-                                                                            "$$typeof": Symbol(react.forward_ref),
-                                                                            "attrs": Array [],
-                                                                            "componentStyle": ComponentStyle {
-                                                                              "componentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
-                                                                              "isStatic": false,
-                                                                              "lastClassName": "c4",
-                                                                              "rules": Array [
-                                                                                [Function],
-                                                                              ],
-                                                                            },
-                                                                            "displayName": "Notification__StyledMessageContainer",
-                                                                            "foldedComponentIds": Array [],
-                                                                            "render": [Function],
-                                                                            "styledComponentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
-                                                                            "target": "div",
-                                                                            "toString": [Function],
-                                                                            "warnTooManyClasses": [Function],
-                                                                            "withComponent": [Function],
-                                                                          }
+                                                                    <StyledComponent
+                                                                      forwardedComponent={
+                                                                        Object {
+                                                                          "$$typeof": Symbol(react.forward_ref),
+                                                                          "attrs": Array [],
+                                                                          "componentStyle": ComponentStyle {
+                                                                            "componentId": "sc-bwzfXH",
+                                                                            "isStatic": false,
+                                                                            "lastClassName": "c3",
+                                                                            "rules": Array [
+                                                                              [Function],
+                                                                            ],
+                                                                          },
+                                                                          "displayName": "Styled(Component)",
+                                                                          "foldedComponentIds": Array [],
+                                                                          "render": [Function],
+                                                                          "styledComponentId": "sc-bwzfXH",
+                                                                          "target": [Function],
+                                                                          "toString": [Function],
+                                                                          "warnTooManyClasses": [Function],
+                                                                          "withComponent": [Function],
                                                                         }
-                                                                        forwardedRef={null}
-                                                                        hasIcon={true}
+                                                                      }
+                                                                      forwardedRef={null}
+                                                                      reverseLevel={
+                                                                        Array [
+                                                                          false,
+                                                                          false,
+                                                                          false,
+                                                                          false,
+                                                                          false,
+                                                                        ]
+                                                                      }
+                                                                    >
+                                                                      <Component
+                                                                        className="c3"
+                                                                        reverseLevel={
+                                                                          Array [
+                                                                            false,
+                                                                            false,
+                                                                            false,
+                                                                            false,
+                                                                            false,
+                                                                          ]
+                                                                        }
                                                                       >
-                                                                        <div
-                                                                          className="c4"
+                                                                        <Row
+                                                                          className="c3"
                                                                         >
-                                                                          <Paragraph
-                                                                            align="left"
-                                                                            bold={false}
-                                                                            invert={false}
-                                                                            size="medium"
+                                                                          <div
+                                                                            className="c3 TDS_flexboxgrid2__row___3YyB2"
                                                                           >
-                                                                            <Paragraph__StyledParagraph
-                                                                              align="left"
-                                                                              bold={false}
-                                                                              invert={false}
-                                                                              size="medium"
-                                                                            >
-                                                                              <StyledComponent
-                                                                                align="left"
-                                                                                bold={false}
-                                                                                forwardedComponent={
-                                                                                  Object {
-                                                                                    "$$typeof": Symbol(react.forward_ref),
-                                                                                    "attrs": Array [],
-                                                                                    "componentStyle": ComponentStyle {
-                                                                                      "componentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                                      "isStatic": false,
-                                                                                      "lastClassName": "c5",
-                                                                                      "rules": Array [
-                                                                                        [Function],
-                                                                                        "word-wrap: break-word;",
-                                                                                        "padding: 0;",
-                                                                                        "margin: 0;",
-                                                                                        [Function],
-                                                                                        [Function],
-                                                                                        [Function],
-                                                                                        [Function],
-                                                                                        "sup {",
-                                                                                        "top: -0.5em;",
-                                                                                        "font-size: 0.875rem;",
-                                                                                        "position: relative;",
-                                                                                        "vertical-align: baseline;",
-                                                                                        "padding-left: 0.1em;",
-                                                                                        "}",
-                                                                                      ],
-                                                                                    },
-                                                                                    "displayName": "Paragraph__StyledParagraph",
-                                                                                    "foldedComponentIds": Array [],
-                                                                                    "render": [Function],
-                                                                                    "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                                    "target": "p",
-                                                                                    "toString": [Function],
-                                                                                    "warnTooManyClasses": [Function],
-                                                                                    "withComponent": [Function],
-                                                                                  }
+                                                                            <Col>
+                                                                              <Styled(Component)
+                                                                                gutter={false}
+                                                                                hiddenLevel={
+                                                                                  Array [
+                                                                                    false,
+                                                                                    false,
+                                                                                    false,
+                                                                                    false,
+                                                                                    false,
+                                                                                  ]
                                                                                 }
-                                                                                forwardedRef={null}
-                                                                                invert={false}
-                                                                                size="medium"
+                                                                                horizontalAlignLevel={
+                                                                                  Array [
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                    "inherit",
+                                                                                  ]
+                                                                                }
+                                                                                xs={true}
                                                                               >
-                                                                                <p
-                                                                                  className="c5"
-                                                                                  size="medium"
+                                                                                <StyledComponent
+                                                                                  forwardedComponent={
+                                                                                    Object {
+                                                                                      "$$typeof": Symbol(react.forward_ref),
+                                                                                      "attrs": Array [],
+                                                                                      "componentStyle": ComponentStyle {
+                                                                                        "componentId": "sc-bdVaJa",
+                                                                                        "isStatic": false,
+                                                                                        "lastClassName": "c5",
+                                                                                        "rules": Array [
+                                                                                          [Function],
+                                                                                        ],
+                                                                                      },
+                                                                                      "displayName": "Styled(Component)",
+                                                                                      "foldedComponentIds": Array [],
+                                                                                      "render": [Function],
+                                                                                      "styledComponentId": "sc-bdVaJa",
+                                                                                      "target": [Function],
+                                                                                      "toString": [Function],
+                                                                                      "warnTooManyClasses": [Function],
+                                                                                      "withComponent": [Function],
+                                                                                    }
+                                                                                  }
+                                                                                  forwardedRef={null}
+                                                                                  gutter={false}
+                                                                                  hiddenLevel={
+                                                                                    Array [
+                                                                                      false,
+                                                                                      false,
+                                                                                      false,
+                                                                                      false,
+                                                                                      false,
+                                                                                    ]
+                                                                                  }
+                                                                                  horizontalAlignLevel={
+                                                                                    Array [
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                      "inherit",
+                                                                                    ]
+                                                                                  }
+                                                                                  xs={true}
                                                                                 >
-                                                                                  Some content
-                                                                                </p>
-                                                                              </StyledComponent>
-                                                                            </Paragraph__StyledParagraph>
-                                                                          </Paragraph>
-                                                                        </div>
-                                                                      </StyledComponent>
-                                                                    </Notification__StyledMessageContainer>
-                                                                  </div>
-                                                                </StyledComponent>
-                                                              </styled.div>
-                                                            </Box>
-                                                          </div>
-                                                        </Col>
-                                                      </Subscriber>
-                                                    </Col>
+                                                                                  <Component
+                                                                                    className="c5"
+                                                                                    gutter={false}
+                                                                                    hiddenLevel={
+                                                                                      Array [
+                                                                                        false,
+                                                                                        false,
+                                                                                        false,
+                                                                                        false,
+                                                                                        false,
+                                                                                      ]
+                                                                                    }
+                                                                                    horizontalAlignLevel={
+                                                                                      Array [
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                        "inherit",
+                                                                                      ]
+                                                                                    }
+                                                                                    xs={true}
+                                                                                  >
+                                                                                    <Col
+                                                                                      className="c5"
+                                                                                      xs={true}
+                                                                                    >
+                                                                                      <div
+                                                                                        className="TDS_flexboxgrid2__col-xs___2KrHO c5"
+                                                                                      >
+                                                                                        <Box
+                                                                                          between={3}
+                                                                                          inline={true}
+                                                                                          tag="div"
+                                                                                        >
+                                                                                          <styled.div
+                                                                                            between={3}
+                                                                                            inline={true}
+                                                                                            tag="div"
+                                                                                          >
+                                                                                            <StyledComponent
+                                                                                              between={3}
+                                                                                              forwardedComponent={
+                                                                                                Object {
+                                                                                                  "$$typeof": Symbol(react.forward_ref),
+                                                                                                  "attrs": Array [
+                                                                                                    [Function],
+                                                                                                  ],
+                                                                                                  "componentStyle": ComponentStyle {
+                                                                                                    "componentId": "sc-bxivhb",
+                                                                                                    "isStatic": false,
+                                                                                                    "lastClassName": "c6",
+                                                                                                    "rules": Array [
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                      [Function],
+                                                                                                    ],
+                                                                                                  },
+                                                                                                  "displayName": "styled.div",
+                                                                                                  "foldedComponentIds": Array [],
+                                                                                                  "render": [Function],
+                                                                                                  "styledComponentId": "sc-bxivhb",
+                                                                                                  "target": "div",
+                                                                                                  "toString": [Function],
+                                                                                                  "warnTooManyClasses": [Function],
+                                                                                                  "withComponent": [Function],
+                                                                                                }
+                                                                                              }
+                                                                                              forwardedRef={null}
+                                                                                              inline={true}
+                                                                                              tag="div"
+                                                                                            >
+                                                                                              <div
+                                                                                                className="c6"
+                                                                                              >
+                                                                                                <DecorativeIcon
+                                                                                                  size={24}
+                                                                                                  symbol="checkmark"
+                                                                                                  variant="primary"
+                                                                                                >
+                                                                                                  <Icon
+                                                                                                    aria-hidden="true"
+                                                                                                    size={24}
+                                                                                                    symbol="checkmark"
+                                                                                                    variant="primary"
+                                                                                                  >
+                                                                                                    <Icon__StyledIcon
+                                                                                                      aria-hidden="true"
+                                                                                                      iSize={24}
+                                                                                                      symbol="checkmark"
+                                                                                                      variant="primary"
+                                                                                                    >
+                                                                                                      <StyledComponent
+                                                                                                        aria-hidden="true"
+                                                                                                        forwardedComponent={
+                                                                                                          Object {
+                                                                                                            "$$typeof": Symbol(react.forward_ref),
+                                                                                                            "attrs": Array [],
+                                                                                                            "componentStyle": ComponentStyle {
+                                                                                                              "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                                                                              "isStatic": false,
+                                                                                                              "lastClassName": "c7",
+                                                                                                              "rules": Array [
+                                                                                                                [Function],
+                                                                                                                [Function],
+                                                                                                                [Function],
+                                                                                                              ],
+                                                                                                            },
+                                                                                                            "displayName": "Icon__StyledIcon",
+                                                                                                            "foldedComponentIds": Array [],
+                                                                                                            "render": [Function],
+                                                                                                            "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
+                                                                                                            "target": "i",
+                                                                                                            "toString": [Function],
+                                                                                                            "warnTooManyClasses": [Function],
+                                                                                                            "withComponent": [Function],
+                                                                                                          }
+                                                                                                        }
+                                                                                                        forwardedRef={null}
+                                                                                                        iSize={24}
+                                                                                                        symbol="checkmark"
+                                                                                                        variant="primary"
+                                                                                                      >
+                                                                                                        <i
+                                                                                                          aria-hidden="true"
+                                                                                                          className="c7"
+                                                                                                        />
+                                                                                                      </StyledComponent>
+                                                                                                    </Icon__StyledIcon>
+                                                                                                  </Icon>
+                                                                                                </DecorativeIcon>
+                                                                                                <Notification__StyledMessageContainer
+                                                                                                  hasIcon={true}
+                                                                                                >
+                                                                                                  <StyledComponent
+                                                                                                    forwardedComponent={
+                                                                                                      Object {
+                                                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                                                        "attrs": Array [],
+                                                                                                        "componentStyle": ComponentStyle {
+                                                                                                          "componentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
+                                                                                                          "isStatic": false,
+                                                                                                          "lastClassName": "c8",
+                                                                                                          "rules": Array [
+                                                                                                            [Function],
+                                                                                                          ],
+                                                                                                        },
+                                                                                                        "displayName": "Notification__StyledMessageContainer",
+                                                                                                        "foldedComponentIds": Array [],
+                                                                                                        "render": [Function],
+                                                                                                        "styledComponentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
+                                                                                                        "target": "div",
+                                                                                                        "toString": [Function],
+                                                                                                        "warnTooManyClasses": [Function],
+                                                                                                        "withComponent": [Function],
+                                                                                                      }
+                                                                                                    }
+                                                                                                    forwardedRef={null}
+                                                                                                    hasIcon={true}
+                                                                                                  >
+                                                                                                    <div
+                                                                                                      className="c8"
+                                                                                                    >
+                                                                                                      <Paragraph
+                                                                                                        align="left"
+                                                                                                        bold={false}
+                                                                                                        invert={false}
+                                                                                                        size="medium"
+                                                                                                      >
+                                                                                                        <Paragraph__StyledParagraph
+                                                                                                          align="left"
+                                                                                                          bold={false}
+                                                                                                          invert={false}
+                                                                                                          size="medium"
+                                                                                                        >
+                                                                                                          <StyledComponent
+                                                                                                            align="left"
+                                                                                                            bold={false}
+                                                                                                            forwardedComponent={
+                                                                                                              Object {
+                                                                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                                                                "attrs": Array [],
+                                                                                                                "componentStyle": ComponentStyle {
+                                                                                                                  "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                                                  "isStatic": false,
+                                                                                                                  "lastClassName": "c9",
+                                                                                                                  "rules": Array [
+                                                                                                                    [Function],
+                                                                                                                    "word-wrap: break-word;",
+                                                                                                                    "padding: 0;",
+                                                                                                                    "margin: 0;",
+                                                                                                                    [Function],
+                                                                                                                    [Function],
+                                                                                                                    [Function],
+                                                                                                                    [Function],
+                                                                                                                    "sup {",
+                                                                                                                    "top: -0.5em;",
+                                                                                                                    "font-size: 0.875rem;",
+                                                                                                                    "position: relative;",
+                                                                                                                    "vertical-align: baseline;",
+                                                                                                                    "padding-left: 0.1em;",
+                                                                                                                    "}",
+                                                                                                                  ],
+                                                                                                                },
+                                                                                                                "displayName": "Paragraph__StyledParagraph",
+                                                                                                                "foldedComponentIds": Array [],
+                                                                                                                "render": [Function],
+                                                                                                                "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                                                "target": "p",
+                                                                                                                "toString": [Function],
+                                                                                                                "warnTooManyClasses": [Function],
+                                                                                                                "withComponent": [Function],
+                                                                                                              }
+                                                                                                            }
+                                                                                                            forwardedRef={null}
+                                                                                                            invert={false}
+                                                                                                            size="medium"
+                                                                                                          >
+                                                                                                            <p
+                                                                                                              className="c9"
+                                                                                                              size="medium"
+                                                                                                            >
+                                                                                                              Some content
+                                                                                                            </p>
+                                                                                                          </StyledComponent>
+                                                                                                        </Paragraph__StyledParagraph>
+                                                                                                      </Paragraph>
+                                                                                                    </div>
+                                                                                                  </StyledComponent>
+                                                                                                </Notification__StyledMessageContainer>
+                                                                                              </div>
+                                                                                            </StyledComponent>
+                                                                                          </styled.div>
+                                                                                        </Box>
+                                                                                      </div>
+                                                                                    </Col>
+                                                                                  </Component>
+                                                                                </StyledComponent>
+                                                                              </Styled(Component)>
+                                                                            </Col>
+                                                                          </div>
+                                                                        </Row>
+                                                                      </Component>
+                                                                    </StyledComponent>
+                                                                  </Styled(Component)>
+                                                                </Row>
+                                                              </div>
+                                                            </Grid>
+                                                          </Component>
+                                                        </StyledComponent>
+                                                      </Styled(Component)>
+                                                    </FlexGrid>
                                                   </div>
-                                                </Row>
-                                              </Row>
-                                            </div>
-                                          </Grid>
-                                        </Broadcast>
-                                      </FlexGrid>
-                                    </div>
-                                  </Col>
-                                </Subscriber>
-                              </Col>
-                            </div>
-                          </Row>
-                        </Row>
-                      </div>
-                    </Grid>
-                  </Broadcast>
+                                                </Col>
+                                              </Component>
+                                            </StyledComponent>
+                                          </Styled(Component)>
+                                        </Col>
+                                      </div>
+                                    </Row>
+                                  </Component>
+                                </StyledComponent>
+                              </Styled(Component)>
+                            </Row>
+                          </div>
+                        </Grid>
+                      </Component>
+                    </StyledComponent>
+                  </Styled(Component)>
                 </FlexGrid>
               </div>
             </StyledComponent>
@@ -881,7 +2093,43 @@ exports[`<Notification /> can have a variant 2`] = `
 `;
 
 exports[`<Notification /> renders 1`] = `
-.c4 {
+div.c4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+div.c5 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c3 {
+  width: 100%;
+}
+
+div.c3 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div.c2 {
+  padding: 0;
+}
+
+.c8 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -897,7 +2145,7 @@ exports[`<Notification /> renders 1`] = `
   text-align: left;
 }
 
-.c4 sup {
+.c8 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -914,7 +2162,7 @@ exports[`<Notification /> renders 1`] = `
   flex-direction: column;
 }
 
-.c2 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -924,7 +2172,7 @@ exports[`<Notification /> renders 1`] = `
   flex-direction: row;
 }
 
-.c2 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
@@ -933,39 +2181,193 @@ exports[`<Notification /> renders 1`] = `
   background-color: #f7f7f8;
 }
 
-.c3 {
+.c7 {
   width: 100%;
 }
 
+@media (max-width:575px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c4 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c5 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c2 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    max-width: 576px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    max-width: 768px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    max-width: 992px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    max-width: 1200px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
 <div
-  class="c0 sc-bwzfXH c0 c1"
+  class="c0 sc-ifAKCX c0 c1"
 >
   <div
-    class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+    class="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
   >
     <div
-      class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+      class="c3 TDS_flexboxgrid2__row___3YyB2"
     >
       <div
-        class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+        class="TDS_flexboxgrid2__col-xs___2KrHO c4"
       >
         <div
-          class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+          class="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
         >
           <div
-            class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+            class="c3 TDS_flexboxgrid2__row___3YyB2"
           >
             <div
-              class="TDS_flexboxgrid2__col-xs___2KrHO TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__gutterless___11Fxy"
+              class="TDS_flexboxgrid2__col-xs___2KrHO c5"
             >
               <div
-                class="c2"
+                class="c6"
               >
                 <div
-                  class="c3"
+                  class="c7"
                 >
                   <p
-                    class="c4"
+                    class="c8"
                   >
                     Some content
                   </p>
