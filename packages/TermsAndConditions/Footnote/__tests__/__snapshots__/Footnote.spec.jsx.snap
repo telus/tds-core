@@ -10,7 +10,7 @@ exports[`Footnote renders closed 1`] = `
   flex-direction: column;
 }
 
-.c6 {
+.c9 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -24,7 +24,7 @@ exports[`Footnote renders closed 1`] = `
   flex-direction: row;
 }
 
-.c7 {
+.c10 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -36,13 +36,44 @@ exports[`Footnote renders closed 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c7 .c12,
-.c7 sup {
+.c10 .c15,
+.c10 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+div.c7 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c6 {
+  width: 100%;
+}
+
+div.c6 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div.c5 {
+  padding: 0;
 }
 
 .c3 {
@@ -57,7 +88,7 @@ exports[`Footnote renders closed 1`] = `
   background-color: #d8d8d8;
 }
 
-.c9 {
+.c12 {
   background: #f7f7f8;
 }
 
@@ -85,14 +116,14 @@ exports[`Footnote renders closed 1`] = `
   width: 100%;
 }
 
-.c5 {
+.c8 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c11 {
+.c14 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition: height 300ms ease-out,opacity 200ms ease-out;
@@ -106,7 +137,7 @@ exports[`Footnote renders closed 1`] = `
   opacity: 1;
 }
 
-.c8 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -121,7 +152,7 @@ exports[`Footnote renders closed 1`] = `
   display: none;
 }
 
-.c10 {
+.c13 {
   display: none;
 }
 
@@ -129,6 +160,125 @@ exports[`Footnote renders closed 1`] = `
   .c4 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+@media (max-width:575px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c5 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:576px) {
+  .c5 {
+    max-width: 576px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    max-width: 768px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:992px) {
+  .c5 {
+    max-width: 992px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c5 {
+    max-width: 1200px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -142,7 +292,7 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c14 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -154,7 +304,7 @@ exports[`Footnote renders closed 1`] = `
 }
 
 @media (max-width:767px) {
-  .c10 {
+  .c13 {
     display: block;
   }
 }
@@ -205,19 +355,19 @@ exports[`Footnote renders closed 1`] = `
                 class="c4"
               >
                 <div
-                  class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                  class="c5 TDS_flexboxgrid2__container-fluid___3c7kO"
                 >
                   <div
-                    class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                    class="c6 TDS_flexboxgrid2__row___3YyB2"
                   >
                     <div
-                      class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                      class="TDS_flexboxgrid2__col-xs-12___3Q9tF c7"
                     >
                       <div
-                        class="c5 sc-EHOje c5 c6"
+                        class="c8 sc-htoDjs c8 c9"
                       >
                         <h2
-                          class="c7"
+                          class="c10"
                           data-testid="heading"
                           tabindex="-1"
                         >
@@ -225,11 +375,11 @@ exports[`Footnote renders closed 1`] = `
                         </h2>
                         <button
                           aria-label="close"
-                          class="clickable c8"
+                          class="clickable c11"
                           type="button"
                         >
                           <svg
-                            class="c9"
+                            class="c12"
                             focusable="false"
                             height="24px"
                             viewBox="0 0 24 24"
@@ -260,7 +410,7 @@ exports[`Footnote renders closed 1`] = `
                 </div>
               </div>
               <div
-                class="c10"
+                class="c13"
               >
                 <hr
                   class="c3"
@@ -268,7 +418,7 @@ exports[`Footnote renders closed 1`] = `
               </div>
             </div>
             <div
-              class="c11"
+              class="c14"
             />
           </div>
         </div>
@@ -291,7 +441,7 @@ exports[`Footnote renders opened 1`] = `
   flex-direction: column;
 }
 
-.c6 {
+.c9 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -305,7 +455,7 @@ exports[`Footnote renders opened 1`] = `
   flex-direction: row;
 }
 
-.c7 {
+.c10 {
   word-wrap: break-word;
   color: #2a2c2e;
   font-weight: 700;
@@ -317,13 +467,44 @@ exports[`Footnote renders opened 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c7 .c12,
-.c7 sup {
+.c10 .c15,
+.c10 sup {
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+div.c7 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c6 {
+  width: 100%;
+}
+
+div.c6 {
+  margin: 0 auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+div.c5 {
+  padding: 0;
 }
 
 .c3 {
@@ -338,7 +519,7 @@ exports[`Footnote renders opened 1`] = `
   background-color: #d8d8d8;
 }
 
-.c9 {
+.c12 {
   background: #f7f7f8;
 }
 
@@ -369,14 +550,14 @@ exports[`Footnote renders opened 1`] = `
   width: 100%;
 }
 
-.c5 {
+.c8 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c11 {
+.c14 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition: height 300ms ease-out,opacity 200ms ease-out;
@@ -390,7 +571,7 @@ exports[`Footnote renders opened 1`] = `
   opacity: 1;
 }
 
-.c8 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -405,7 +586,7 @@ exports[`Footnote renders opened 1`] = `
   display: none;
 }
 
-.c10 {
+.c13 {
   display: none;
 }
 
@@ -413,6 +594,125 @@ exports[`Footnote renders opened 1`] = `
   .c4 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+@media (max-width:575px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:576px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:992px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:1200px) {
+  .c7 {
+    display: block;
+    text-align: inherit;
+  }
+}
+
+@media (max-width:575px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:576px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:992px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1200px) {
+  div.c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width:575px) {
+  .c5 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:576px) {
+  .c5 {
+    max-width: 576px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    max-width: 768px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:992px) {
+  .c5 {
+    max-width: 992px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1200px) {
+  .c5 {
+    max-width: 1200px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -426,7 +726,7 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c14 {
     max-height: calc(50vh - autopx);
   }
 }
@@ -438,7 +738,7 @@ exports[`Footnote renders opened 1`] = `
 }
 
 @media (max-width:767px) {
-  .c10 {
+  .c13 {
     display: block;
   }
 }
@@ -489,19 +789,19 @@ exports[`Footnote renders opened 1`] = `
                 class="c4"
               >
                 <div
-                  class="TDS_FlexGrid-modules__flexGrid___QxDgy TDS_FlexGrid-modules__limitWidth___2SDcu TDS_FlexGrid-modules__xsReverseCancel___20p12 TDS_FlexGrid-modules__smReverseCancel___-_YfQ TDS_FlexGrid-modules__mdReverseCancel___3cUDQ TDS_FlexGrid-modules__lgReverseCancel___1lfjg TDS_FlexGrid-modules__xlReverseCancel___OIqvi TDS_flexboxgrid2__container-fluid___3c7kO"
+                  class="c5 TDS_flexboxgrid2__container-fluid___3c7kO"
                 >
                   <div
-                    class="TDS_Row-modules__flexRow___3CHOR TDS_Row-modules__xsReverseCancel___3qDNC TDS_Row-modules__smReverseCancel___VUTb9 TDS_Row-modules__mdReverseCancel___1MWfN TDS_Row-modules__lgReverseCancel___1Ngyt TDS_Row-modules__xlReverseCancel___16npr TDS_flexboxgrid2__row___3YyB2"
+                    class="c6 TDS_flexboxgrid2__row___3YyB2"
                   >
                     <div
-                      class="TDS_flexboxgrid2__col-xs-12___3Q9tF TDS_Col-modules__xsVisible___yQn24 TDS_Col-modules__smVisible___3-waa TDS_Col-modules__mdVisible___wUg94 TDS_Col-modules__lgVisible___7FbXv TDS_Col-modules__xlVisible___1AW2r TDS_Col-modules__padding___2tLQS"
+                      class="TDS_flexboxgrid2__col-xs-12___3Q9tF c7"
                     >
                       <div
-                        class="c5 sc-EHOje c5 c6"
+                        class="c8 sc-htoDjs c8 c9"
                       >
                         <h2
-                          class="c7"
+                          class="c10"
                           data-testid="heading"
                           tabindex="-1"
                         >
@@ -509,11 +809,11 @@ exports[`Footnote renders opened 1`] = `
                         </h2>
                         <button
                           aria-label="close"
-                          class="clickable c8"
+                          class="clickable c11"
                           type="button"
                         >
                           <svg
-                            class="c9"
+                            class="c12"
                             focusable="false"
                             height="24px"
                             viewBox="0 0 24 24"
@@ -544,7 +844,7 @@ exports[`Footnote renders opened 1`] = `
                 </div>
               </div>
               <div
-                class="c10"
+                class="c13"
               >
                 <hr
                   class="c3"
@@ -552,7 +852,7 @@ exports[`Footnote renders opened 1`] = `
               </div>
             </div>
             <div
-              class="c11"
+              class="c14"
             />
           </div>
         </div>
