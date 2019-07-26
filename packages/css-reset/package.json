@@ -20,12 +20,11 @@
     "url": "https://github.com/telusdigital/tds/issues"
   },
   "homepage": "http://tds.telus.com",
-  "scripts": {
-    "build:sass": "../../node_modules/.bin/node-sass index.scss dist/index.css --importer=../../node_modules/node-sass-tilde-importer",
-    "build:postcss": "../../node_modules/.bin/postcss --use autoprefixer --replace dist/index.css",
-    "build": "npm run build:sass && npm run build:postcss"
+  "peerDependencies": {
+    "styled-components": "^4.1.3"
   },
-  "devDependencies": {
-    "@tds/core-colours": "^1.1.2"
+  "dependencies": {
+    "@tds/core-colours": "^1.1.2",
+    "@tds/shared-typography": "^1.3.0"
   }
 }
