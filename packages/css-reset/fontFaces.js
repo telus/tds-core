@@ -1,3 +1,4 @@
+const fontFaces = `
 /*
  Helvetica Neue Thin 35
 */
@@ -87,3 +88,5 @@
     url("https://cdn.telus.digital/thorium/core/v0.4.0/core-icons.eot?#iefix")
       format("eot");
 }
+`
+export default fontFaces
