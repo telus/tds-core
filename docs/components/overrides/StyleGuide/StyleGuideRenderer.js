@@ -6,6 +6,7 @@ import Logo from 'rsg-components/Logo'
 import Markdown from 'rsg-components/Markdown'
 
 import FlexGrid from '../../../../packages/FlexGrid/FlexGrid'
+import CSSReset from '../../../../packages/css-reset'
 
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
   root: {
@@ -77,20 +78,23 @@ export function StyleGuideRenderer({ classes, title, homepageUrl, children, toc,
   )
 
   return (
-    <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
-      <a id="styleguidist-top">&nbsp;</a>
+    <React.Fragment>
+      <CSSReset />
+      <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
+        <a id="styleguidist-top">&nbsp;</a>
 
-      {hasSidebar ? main : <TdsGrid>{main}</TdsGrid>}
+        {hasSidebar ? main : <TdsGrid>{main}</TdsGrid>}
 
-      {hasSidebar && (
-        <div className={classes.sidebar}>
-          <div className={classes.logo}>
-            <Logo>{title}</Logo>
+        {hasSidebar && (
+          <div className={classes.sidebar}>
+            <div className={classes.logo}>
+              <Logo>{title}</Logo>
+            </div>
+            {toc}
           </div>
-          {toc}
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </React.Fragment>
   )
 }
 
