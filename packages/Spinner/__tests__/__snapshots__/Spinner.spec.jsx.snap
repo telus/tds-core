@@ -2,7 +2,27 @@
 
 exports[`Spinner does not render a large secondary spinner 1`] = `
 Array [
-  .c1 {
+  .c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -43,14 +63,14 @@ Array [
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1400;
 }
 
-.c6 {
+.c7 {
   opacity: 0.06;
 }
 
@@ -316,11 +336,60 @@ Array [
                         invert={false}
                         size="small"
                       >
-                        <span
-                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                        <Text__StyledText
+                          block={false}
+                          bold={false}
+                          invert={false}
+                          size="small"
                         >
-                          Loading content
-                        </span>
+                          <StyledComponent
+                            block={false}
+                            bold={false}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                  "isStatic": false,
+                                  "lastClassName": "c5",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    "sup {",
+                                    "top: -0.5em;",
+                                    "font-size: 0.875rem;",
+                                    "position: relative;",
+                                    "vertical-align: baseline;",
+                                    "padding-left: 0.1em;",
+                                    "}",
+                                  ],
+                                },
+                                "displayName": "Text__StyledText",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                "target": "span",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            invert={false}
+                            size="small"
+                          >
+                            <span
+                              className="c5"
+                              size="small"
+                            >
+                              Loading content
+                            </span>
+                          </StyledComponent>
+                        </Text__StyledText>
                       </Text>
                     </div>
                   </StyledComponent>
@@ -341,7 +410,7 @@ Array [
                 "componentStyle": ComponentStyle {
                   "componentId": "Spinner__ContentOverlay-sc-12sh5b7-1",
                   "isStatic": true,
-                  "lastClassName": "c5",
+                  "lastClassName": "c6",
                   "rules": Array [
                     "position: absolute;",
                     "width: 100%;",
@@ -362,7 +431,7 @@ Array [
             forwardedRef={null}
           >
             <div
-              className="c5"
+              className="c6"
               data-testid="overlay"
             />
           </StyledComponent>
@@ -380,7 +449,7 @@ Array [
                 "componentStyle": ComponentStyle {
                   "componentId": "Spinner__OpaqueContainer-sc-12sh5b7-3",
                   "isStatic": true,
-                  "lastClassName": "c6",
+                  "lastClassName": "c7",
                   "rules": Array [
                     "opacity: 0.06;",
                   ],
@@ -400,7 +469,7 @@ Array [
           >
             <div
               aria-hidden="true"
-              className="c6"
+              className="c7"
               onFocus={[Function]}
             >
               <span>
@@ -412,7 +481,27 @@ Array [
       </div>
     </StyledComponent>
   </Spinner__SpinnerContainer>,
-  .c1 {
+  .c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -453,14 +542,14 @@ Array [
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1400;
 }
 
-.c6 {
+.c7 {
   opacity: 0.06;
 }
 
@@ -720,11 +809,60 @@ Array [
                       invert={false}
                       size="small"
                     >
-                      <span
-                        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                      <Text__StyledText
+                        block={false}
+                        bold={false}
+                        invert={false}
+                        size="small"
                       >
-                        Loading content
-                      </span>
+                        <StyledComponent
+                          block={false}
+                          bold={false}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  "sup {",
+                                  "top: -0.5em;",
+                                  "font-size: 0.875rem;",
+                                  "position: relative;",
+                                  "vertical-align: baseline;",
+                                  "padding-left: 0.1em;",
+                                  "}",
+                                ],
+                              },
+                              "displayName": "Text__StyledText",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          invert={false}
+                          size="small"
+                        >
+                          <span
+                            className="c5"
+                            size="small"
+                          >
+                            Loading content
+                          </span>
+                        </StyledComponent>
+                      </Text__StyledText>
                     </Text>
                   </div>
                 </StyledComponent>
@@ -745,7 +883,7 @@ Array [
               "componentStyle": ComponentStyle {
                 "componentId": "Spinner__ContentOverlay-sc-12sh5b7-1",
                 "isStatic": true,
-                "lastClassName": "c5",
+                "lastClassName": "c6",
                 "rules": Array [
                   "position: absolute;",
                   "width: 100%;",
@@ -766,7 +904,7 @@ Array [
           forwardedRef={null}
         >
           <div
-            className="c5"
+            className="c6"
             data-testid="overlay"
           />
         </StyledComponent>
@@ -784,7 +922,7 @@ Array [
               "componentStyle": ComponentStyle {
                 "componentId": "Spinner__OpaqueContainer-sc-12sh5b7-3",
                 "isStatic": true,
-                "lastClassName": "c6",
+                "lastClassName": "c7",
                 "rules": Array [
                   "opacity: 0.06;",
                 ],
@@ -804,7 +942,7 @@ Array [
         >
           <div
             aria-hidden="true"
-            className="c6"
+            className="c7"
             onFocus={[Function]}
           >
             <span>
@@ -815,7 +953,27 @@ Array [
       </Spinner__OpaqueContainer>
     </div>
   </StyledComponent>,
-  .c1 {
+  .c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -856,14 +1014,14 @@ Array [
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1400;
 }
 
-.c6 {
+.c7 {
   opacity: 0.06;
 }
 
@@ -1094,11 +1252,60 @@ Array [
                     invert={false}
                     size="small"
                   >
-                    <span
-                      className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                    <Text__StyledText
+                      block={false}
+                      bold={false}
+                      invert={false}
+                      size="small"
                     >
-                      Loading content
-                    </span>
+                      <StyledComponent
+                        block={false}
+                        bold={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Text__StyledText-sc-1m0rr67-0",
+                              "isStatic": false,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                                "sup {",
+                                "top: -0.5em;",
+                                "font-size: 0.875rem;",
+                                "position: relative;",
+                                "vertical-align: baseline;",
+                                "padding-left: 0.1em;",
+                                "}",
+                              ],
+                            },
+                            "displayName": "Text__StyledText",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        invert={false}
+                        size="small"
+                      >
+                        <span
+                          className="c5"
+                          size="small"
+                        >
+                          Loading content
+                        </span>
+                      </StyledComponent>
+                    </Text__StyledText>
                   </Text>
                 </div>
               </StyledComponent>
@@ -1119,7 +1326,7 @@ Array [
             "componentStyle": ComponentStyle {
               "componentId": "Spinner__ContentOverlay-sc-12sh5b7-1",
               "isStatic": true,
-              "lastClassName": "c5",
+              "lastClassName": "c6",
               "rules": Array [
                 "position: absolute;",
                 "width: 100%;",
@@ -1140,7 +1347,7 @@ Array [
         forwardedRef={null}
       >
         <div
-          className="c5"
+          className="c6"
           data-testid="overlay"
         />
       </StyledComponent>
@@ -1158,7 +1365,7 @@ Array [
             "componentStyle": ComponentStyle {
               "componentId": "Spinner__OpaqueContainer-sc-12sh5b7-3",
               "isStatic": true,
-              "lastClassName": "c6",
+              "lastClassName": "c7",
               "rules": Array [
                 "opacity: 0.06;",
               ],
@@ -1178,7 +1385,7 @@ Array [
       >
         <div
           aria-hidden="true"
-          className="c6"
+          className="c7"
           onFocus={[Function]}
         >
           <span>
@@ -1214,7 +1421,27 @@ exports[`Spinner overlaying content can be fullscreen 1`] = `
 
 exports[`Spinner overlaying content places the spinner on top of the content while spinning 1`] = `
 Array [
-  .c0 {
+  .c4 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c4 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1465,11 +1692,60 @@ Array [
                 invert={false}
                 size="small"
               >
-                <span
-                  className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                <Text__StyledText
+                  block={false}
+                  bold={false}
+                  invert={false}
+                  size="small"
                 >
-                  Loading content
-                </span>
+                  <StyledComponent
+                    block={false}
+                    bold={false}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "Text__StyledText-sc-1m0rr67-0",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            "sup {",
+                            "top: -0.5em;",
+                            "font-size: 0.875rem;",
+                            "position: relative;",
+                            "vertical-align: baseline;",
+                            "padding-left: 0.1em;",
+                            "}",
+                          ],
+                        },
+                        "displayName": "Text__StyledText",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    invert={false}
+                    size="small"
+                  >
+                    <span
+                      className="c4"
+                      size="small"
+                    >
+                      Loading content
+                    </span>
+                  </StyledComponent>
+                </Text__StyledText>
               </Text>
             </div>
           </StyledComponent>
@@ -1477,7 +1753,27 @@ Array [
       </div>
     </StyledComponent>
   </SpinnerSvg__SvgContainer>,
-  .c0 {
+  .c4 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c4 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1724,18 +2020,87 @@ Array [
               invert={false}
               size="small"
             >
-              <span
-                className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+              <Text__StyledText
+                block={false}
+                bold={false}
+                invert={false}
+                size="small"
               >
-                Loading content
-              </span>
+                <StyledComponent
+                  block={false}
+                  bold={false}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Text__StyledText-sc-1m0rr67-0",
+                        "isStatic": false,
+                        "lastClassName": "c4",
+                        "rules": Array [
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
+                          [Function],
+                          "sup {",
+                          "top: -0.5em;",
+                          "font-size: 0.875rem;",
+                          "position: relative;",
+                          "vertical-align: baseline;",
+                          "padding-left: 0.1em;",
+                          "}",
+                        ],
+                      },
+                      "displayName": "Text__StyledText",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  invert={false}
+                  size="small"
+                >
+                  <span
+                    className="c4"
+                    size="small"
+                  >
+                    Loading content
+                  </span>
+                </StyledComponent>
+              </Text__StyledText>
             </Text>
           </div>
         </StyledComponent>
       </SpinnerSvg__TipContainer>
     </div>
   </StyledComponent>,
-  .c0 {
+  .c4 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c4 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1955,11 +2320,60 @@ Array [
             invert={false}
             size="small"
           >
-            <span
-              className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+            <Text__StyledText
+              block={false}
+              bold={false}
+              invert={false}
+              size="small"
             >
-              Loading content
-            </span>
+              <StyledComponent
+                block={false}
+                bold={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Text__StyledText-sc-1m0rr67-0",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        "sup {",
+                        "top: -0.5em;",
+                        "font-size: 0.875rem;",
+                        "position: relative;",
+                        "vertical-align: baseline;",
+                        "padding-left: 0.1em;",
+                        "}",
+                      ],
+                    },
+                    "displayName": "Text__StyledText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                invert={false}
+                size="small"
+              >
+                <span
+                  className="c4"
+                  size="small"
+                >
+                  Loading content
+                </span>
+              </StyledComponent>
+            </Text__StyledText>
           </Text>
         </div>
       </StyledComponent>
@@ -2387,6 +2801,26 @@ Array [
 `;
 
 exports[`Spinner renders 1`] = `
+.c4 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c4 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2451,7 +2885,7 @@ exports[`Spinner renders 1`] = `
     class="c3"
   >
     <span
-      class="c0"
+      class="c4"
     >
       Loading content
     </span>
@@ -4549,7 +4983,27 @@ Array [
 
 exports[`Spinner renders inline 1`] = `
 Array [
-  .c1 {
+  .c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4590,14 +5044,14 @@ Array [
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1400;
 }
 
-.c6 {
+.c7 {
   opacity: 0.06;
 }
 
@@ -4863,11 +5317,60 @@ Array [
                         invert={false}
                         size="small"
                       >
-                        <span
-                          className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                        <Text__StyledText
+                          block={false}
+                          bold={false}
+                          invert={false}
+                          size="small"
                         >
-                          Loading content
-                        </span>
+                          <StyledComponent
+                            block={false}
+                            bold={false}
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                  "isStatic": false,
+                                  "lastClassName": "c5",
+                                  "rules": Array [
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    "sup {",
+                                    "top: -0.5em;",
+                                    "font-size: 0.875rem;",
+                                    "position: relative;",
+                                    "vertical-align: baseline;",
+                                    "padding-left: 0.1em;",
+                                    "}",
+                                  ],
+                                },
+                                "displayName": "Text__StyledText",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                "target": "span",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            invert={false}
+                            size="small"
+                          >
+                            <span
+                              className="c5"
+                              size="small"
+                            >
+                              Loading content
+                            </span>
+                          </StyledComponent>
+                        </Text__StyledText>
                       </Text>
                     </div>
                   </StyledComponent>
@@ -4888,7 +5391,7 @@ Array [
                 "componentStyle": ComponentStyle {
                   "componentId": "Spinner__ContentOverlay-sc-12sh5b7-1",
                   "isStatic": true,
-                  "lastClassName": "c5",
+                  "lastClassName": "c6",
                   "rules": Array [
                     "position: absolute;",
                     "width: 100%;",
@@ -4909,7 +5412,7 @@ Array [
             forwardedRef={null}
           >
             <div
-              className="c5"
+              className="c6"
               data-testid="overlay"
             />
           </StyledComponent>
@@ -4927,7 +5430,7 @@ Array [
                 "componentStyle": ComponentStyle {
                   "componentId": "Spinner__OpaqueContainer-sc-12sh5b7-3",
                   "isStatic": true,
-                  "lastClassName": "c6",
+                  "lastClassName": "c7",
                   "rules": Array [
                     "opacity: 0.06;",
                   ],
@@ -4947,7 +5450,7 @@ Array [
           >
             <div
               aria-hidden="true"
-              className="c6"
+              className="c7"
               onFocus={[Function]}
             >
               <span>
@@ -4959,7 +5462,27 @@ Array [
       </div>
     </StyledComponent>
   </Spinner__SpinnerContainer>,
-  .c1 {
+  .c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5000,14 +5523,14 @@ Array [
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1400;
 }
 
-.c6 {
+.c7 {
   opacity: 0.06;
 }
 
@@ -5267,11 +5790,60 @@ Array [
                       invert={false}
                       size="small"
                     >
-                      <span
-                        className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                      <Text__StyledText
+                        block={false}
+                        bold={false}
+                        invert={false}
+                        size="small"
                       >
-                        Loading content
-                      </span>
+                        <StyledComponent
+                          block={false}
+                          bold={false}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  "sup {",
+                                  "top: -0.5em;",
+                                  "font-size: 0.875rem;",
+                                  "position: relative;",
+                                  "vertical-align: baseline;",
+                                  "padding-left: 0.1em;",
+                                  "}",
+                                ],
+                              },
+                              "displayName": "Text__StyledText",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          invert={false}
+                          size="small"
+                        >
+                          <span
+                            className="c5"
+                            size="small"
+                          >
+                            Loading content
+                          </span>
+                        </StyledComponent>
+                      </Text__StyledText>
                     </Text>
                   </div>
                 </StyledComponent>
@@ -5292,7 +5864,7 @@ Array [
               "componentStyle": ComponentStyle {
                 "componentId": "Spinner__ContentOverlay-sc-12sh5b7-1",
                 "isStatic": true,
-                "lastClassName": "c5",
+                "lastClassName": "c6",
                 "rules": Array [
                   "position: absolute;",
                   "width: 100%;",
@@ -5313,7 +5885,7 @@ Array [
           forwardedRef={null}
         >
           <div
-            className="c5"
+            className="c6"
             data-testid="overlay"
           />
         </StyledComponent>
@@ -5331,7 +5903,7 @@ Array [
               "componentStyle": ComponentStyle {
                 "componentId": "Spinner__OpaqueContainer-sc-12sh5b7-3",
                 "isStatic": true,
-                "lastClassName": "c6",
+                "lastClassName": "c7",
                 "rules": Array [
                   "opacity: 0.06;",
                 ],
@@ -5351,7 +5923,7 @@ Array [
         >
           <div
             aria-hidden="true"
-            className="c6"
+            className="c7"
             onFocus={[Function]}
           >
             <span>
@@ -5362,7 +5934,27 @@ Array [
       </Spinner__OpaqueContainer>
     </div>
   </StyledComponent>,
-  .c1 {
+  .c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5403,14 +5995,14 @@ Array [
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1400;
 }
 
-.c6 {
+.c7 {
   opacity: 0.06;
 }
 
@@ -5641,11 +6233,60 @@ Array [
                     invert={false}
                     size="small"
                   >
-                    <span
-                      className="TDS_Typography-modules__default___KlcpP TDS_Typography-modules__small___mt5lS TDS_Typography-modules__wordBreak___3OZx_ TDS_Typography-modules__smallFont___3S6nz TDS_Typography-modules__color___2CNH8"
+                    <Text__StyledText
+                      block={false}
+                      bold={false}
+                      invert={false}
+                      size="small"
                     >
-                      Loading content
-                    </span>
+                      <StyledComponent
+                        block={false}
+                        bold={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Text__StyledText-sc-1m0rr67-0",
+                              "isStatic": false,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                                "sup {",
+                                "top: -0.5em;",
+                                "font-size: 0.875rem;",
+                                "position: relative;",
+                                "vertical-align: baseline;",
+                                "padding-left: 0.1em;",
+                                "}",
+                              ],
+                            },
+                            "displayName": "Text__StyledText",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        invert={false}
+                        size="small"
+                      >
+                        <span
+                          className="c5"
+                          size="small"
+                        >
+                          Loading content
+                        </span>
+                      </StyledComponent>
+                    </Text__StyledText>
                   </Text>
                 </div>
               </StyledComponent>
@@ -5666,7 +6307,7 @@ Array [
             "componentStyle": ComponentStyle {
               "componentId": "Spinner__ContentOverlay-sc-12sh5b7-1",
               "isStatic": true,
-              "lastClassName": "c5",
+              "lastClassName": "c6",
               "rules": Array [
                 "position: absolute;",
                 "width: 100%;",
@@ -5687,7 +6328,7 @@ Array [
         forwardedRef={null}
       >
         <div
-          className="c5"
+          className="c6"
           data-testid="overlay"
         />
       </StyledComponent>
@@ -5705,7 +6346,7 @@ Array [
             "componentStyle": ComponentStyle {
               "componentId": "Spinner__OpaqueContainer-sc-12sh5b7-3",
               "isStatic": true,
-              "lastClassName": "c6",
+              "lastClassName": "c7",
               "rules": Array [
                 "opacity: 0.06;",
               ],
@@ -5725,7 +6366,7 @@ Array [
       >
         <div
           aria-hidden="true"
-          className="c6"
+          className="c7"
           onFocus={[Function]}
         >
           <span>
@@ -5739,6 +6380,26 @@ Array [
 `;
 
 exports[`Spinner renders with children 1`] = `
+.c5 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5779,14 +6440,14 @@ exports[`Spinner renders with children 1`] = `
   position: relative;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1400;
 }
 
-.c6 {
+.c7 {
   opacity: 0.06;
 }
 
@@ -5830,19 +6491,19 @@ exports[`Spinner renders with children 1`] = `
       class="c4"
     >
       <span
-        class="c0"
+        class="c5"
       >
         Loading content
       </span>
     </div>
   </div>
   <div
-    class="c5"
+    class="c6"
     data-testid="overlay"
   />
   <div
     aria-hidden="true"
-    class="c6"
+    class="c7"
   >
     <span>
       Overlay me with the spinner
