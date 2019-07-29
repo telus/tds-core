@@ -20,6 +20,7 @@ import Circle from './svg/Circle'
 import List from './List/List'
 
 import copyDictionary from './termsAndConditionsText'
+import renderContent from './renderContent'
 
 const StyledClickableHeading = styled(StyledClickable)({
   width: '100%',
@@ -122,7 +123,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
                         <FlexGrid.Col xs={12} mdOffset={1} md={10}>
                           <List size="small" below={4} type="indexed">
                             {indexedContent.map(c => (
-                              <List.Item key={c} dangerouslySetInnerHTML={{ __html: c }} />
+                              <List.Item key={c}>{renderContent(c)}</List.Item>
                             ))}
                           </List>
                         </FlexGrid.Col>
@@ -143,7 +144,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
                             )}
                             <List size="small" below={4} type="nonIndexed">
                               {nonIndexedContent.map(c => (
-                                <List.Item key={c} dangerouslySetInnerHTML={{ __html: c }} />
+                                <List.Item key={c}>{renderContent(c)}</List.Item>
                               ))}
                             </List>
                           </Box>

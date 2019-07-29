@@ -18,6 +18,7 @@ import StyledClickable from '../StyledClickable'
 import List from './FootnoteList'
 import CloseIcon from './svg/Close'
 import copyDictionary from './footnoteText'
+import renderContent from '../renderContent'
 
 const GlobalBodyScrollLock = createGlobalStyle({
   'html, body': media.until('md').css({ overflow: 'hidden' }),
@@ -304,7 +305,7 @@ const Footnote = props => {
                     <FlexGrid.Col xs={12} md={11}>
                       <List start={data.number} type="indexed">
                         <List.Item>
-                          <Text>{data.content}</Text>
+                          <Text>{renderContent(data.content)}</Text>
                         </List.Item>
                       </List>
                     </FlexGrid.Col>

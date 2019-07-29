@@ -41,7 +41,7 @@ class FootnoteExample extends React.Component {
 
   render() {
     const content = [
-      'Taxes and pay-per-use charges (including long distance, roaming and additional airtime or data) are extra. The cost of voice service used while roaming outside Canada will vary by zone. Currently, voice roaming in the US is charged at $1.50/minute. Visit telus.com/mobilityppu for details. Plus applicable provincial or municipal government 911 fees in Nova Scotia (43¢), PEI (70¢), New Brunswick (53¢), Saskatchewan (94¢), Quebec (46¢), Alberta (44¢), and Newfoundland and Labrador (75¢). Additional data usage will be charged to the subscriber using the data at $10/100 MB. The cost of data used while roaming outside Canada will vary by zone. Visit telus.com/mobilityppu for details. Data usage during a single billing cycle may be capped at 10 GB. Additional usage may be authorized by calling TELUS to remove the data block. Tethering included. Access to BlackBerry Enterprise Service is not included.',
+      'Taxes and pay-per-use charges (including long distance, roaming and additional airtime or data) are extra. The cost of service used while roaming outside Canada will vary by zone. Currently, voice roaming in the US is charged at $1.50/minute. Visit <a href="https://telus.com/mobilityppu">telus.com/mobilityppu</a> for details.',
       'Taxes and pay-per-use charges (including roaming and additional data) are extra. For any subscriber(s) with a Your Choice Canada-US plan, roaming pay-per-use.',
     ]
 
