@@ -1,12 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 import { colorAccessibleGreen, colorSecondary } from '@tds/core-colours'
 import Text from '@tds/core-text'
 
 import safeRest from '../../../shared/utils/safeRest'
 import uniqueId from './uniqueId'
+
+// TODO: use ES6 module import after rollup fixes this issue: https://github.com/rollup/rollup/issues/3011
+const keyframes = require('styled-components').keyframes
 
 const zindexPopover = 1600
 
