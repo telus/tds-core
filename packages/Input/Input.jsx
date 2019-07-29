@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import styled, { withTheme } from 'styled-components'
+import styled from 'styled-components'
 
 import { componentWithName } from '@tds/util-prop-types'
 
@@ -21,6 +21,9 @@ import FeedbackIcon from './FeedbackIcon'
 
 import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId/generateId'
+
+// Workaround for rollup
+const withTheme = require('styled-components').withTheme
 
 const StyledLabelContainer = styled(Box)({
   alignItems: 'center',

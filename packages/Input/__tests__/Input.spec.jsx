@@ -1,4 +1,5 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
 import { render, mount } from 'enzyme'
 
 import StandaloneIcon from '@tds/core-standalone-icon'
@@ -6,15 +7,21 @@ import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
 import { Fade } from '@tds/shared-animation'
-import Tooltip from '../../Tooltip'
 
+import Tooltip from '../../Tooltip'
 import Input from '../Input'
+import { marketing } from '../../Themes'
 
 describe.skip('Input', () => {
   const defaultProps = {
     label: 'The input',
   }
-  const doRender = (overrides = {}) => render(<Input {...defaultProps} {...overrides} />)
+  const doRender = (overrides = {}) =>
+    render(
+      <ThemeProvider theme={marketing}>
+        <Input {...defaultProps} {...overrides} />
+      </ThemeProvider>
+    )
 
   const doMount = (overrides = {}) => {
     const input = mount(<Input {...defaultProps} {...overrides} />)
@@ -33,7 +40,7 @@ describe.skip('Input', () => {
     }
   }
 
-  it('renders', () => {
+  it.only('renders', () => {
     const input = doRender()
 
     expect(input).toMatchSnapshot()

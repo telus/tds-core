@@ -1317,9 +1317,7 @@ exports[`Input renders 1`] = `
   font-weight: 400;
   color: #2a2c2e;
   -moz-appearance: textfield;
-  min-height: 3.25rem;
-  max-height: 3.25rem;
-  padding: 0.5rem 1rem;
+  padding: 0.875rem 1rem;
 }
 
 .c6::-webkit-input-placeholder {
