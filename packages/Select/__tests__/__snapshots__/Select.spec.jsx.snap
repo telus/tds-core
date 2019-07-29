@@ -197,8 +197,8 @@ exports[`Select can have an error message 1`] = `
   font-weight: 400;
   color: #2a2c2e;
   -moz-appearance: textfield;
-  min-height: 3.25rem;
-  max-height: 3.25rem;
+  min-height: 3rem;
+  max-height: 3rem;
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
@@ -2072,8 +2072,8 @@ exports[`Select renders 1`] = `
   font-weight: 400;
   color: #2a2c2e;
   -moz-appearance: textfield;
-  min-height: 3.25rem;
-  max-height: 3.25rem;
+  min-height: 3rem;
+  max-height: 3rem;
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
@@ -2379,8 +2379,8 @@ exports[`Select renders with a feedback state and icon 1`] = `
   font-weight: 400;
   color: #2a2c2e;
   -moz-appearance: textfield;
-  min-height: 3.25rem;
-  max-height: 3.25rem;
+  min-height: 3rem;
+  max-height: 3rem;
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
