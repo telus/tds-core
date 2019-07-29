@@ -1,6 +1,6 @@
 import * as colors from '@tds/core-colours'
 
-export default {
+const theme = {
   colors,
   spacing: {
     buttons: {
@@ -25,3 +25,10 @@ export default {
     },
   },
 }
+
+// theme.colors.colorPrimary = '#000'
+const application = Object.assign({}, theme, {
+  colors: { colorPrimary: '#000', colorWhite: '#fff' },
+})
+
+export default application
