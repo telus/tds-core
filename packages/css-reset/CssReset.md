@@ -16,7 +16,7 @@ const PackageVersion = require('../../docs/components/custom/PackageVersion/Pack
 
 ### CSS reset
 
-This package includes a [global](https://www.styled-components.com/docs/api#createglobalstyle) styled component that adds small amount of page-level styles to establish a common baseline:
+This package includes a [global styled component](https://www.styled-components.com/docs/api#createglobalstyle) that adds page-level styles to establish a common baseline:
 
 - A CSS reset to standardize default styling of HTML5 elements across browsers, using the popular Eric Meyer Reset
 - `@font-face` declarations to load the TELUS web fonts
@@ -37,9 +37,9 @@ import { fonts } from '@tds/core-css-reset'
 
 ### Global styled components
 
-#### Flex Main for Viewport
+#### Flexible `<main />` tag
 
-This global styled component corrects a TELUS page that has content too short to fill the browser's height, the footer appears directly below the content, leaving white space between the footer and the bottom of the viewport.
+When a TELUS page has content too short to fill the browser's height, empty space appears between the footer and the bottom of the viewport. The `<GlobalFlexMain />` styled component helps by creating enough minimum height for the `<main />` element to fill the entire viewport height along with the global header and footer.
 
 ```jsx static
 import { GlobalFlexMain } from '@tds/core-css-reset'
