@@ -138,7 +138,6 @@ class Spinner extends React.PureComponent {
             onFocus={e => {
               e.target.blur()
             }}
-            aria-hidden="true"
           >
             {children}
           </OpaqueContainer>

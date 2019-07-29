@@ -437,11 +437,9 @@ Array [
           </StyledComponent>
         </Spinner__ContentOverlay>
         <Spinner__OpaqueContainer
-          aria-hidden="true"
           onFocus={[Function]}
         >
           <StyledComponent
-            aria-hidden="true"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -468,7 +466,6 @@ Array [
             onFocus={[Function]}
           >
             <div
-              aria-hidden="true"
               className="c7"
               onFocus={[Function]}
             >
@@ -910,11 +907,9 @@ Array [
         </StyledComponent>
       </Spinner__ContentOverlay>
       <Spinner__OpaqueContainer
-        aria-hidden="true"
         onFocus={[Function]}
       >
         <StyledComponent
-          aria-hidden="true"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -941,7 +936,6 @@ Array [
           onFocus={[Function]}
         >
           <div
-            aria-hidden="true"
             className="c7"
             onFocus={[Function]}
           >
@@ -1353,11 +1347,9 @@ Array [
       </StyledComponent>
     </Spinner__ContentOverlay>
     <Spinner__OpaqueContainer
-      aria-hidden="true"
       onFocus={[Function]}
     >
       <StyledComponent
-        aria-hidden="true"
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -1384,7 +1376,6 @@ Array [
         onFocus={[Function]}
       >
         <div
-          aria-hidden="true"
           className="c7"
           onFocus={[Function]}
         >
@@ -3212,11 +3203,9 @@ Array [
           </StyledComponent>
         </Spinner__ContentOverlay>
         <Spinner__OpaqueContainer
-          aria-hidden="true"
           onFocus={[Function]}
         >
           <StyledComponent
-            aria-hidden="true"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -3243,7 +3232,6 @@ Array [
             onFocus={[Function]}
           >
             <div
-              aria-hidden="true"
               className="c5"
               onFocus={[Function]}
             >
@@ -3567,11 +3555,9 @@ Array [
         </StyledComponent>
       </Spinner__ContentOverlay>
       <Spinner__OpaqueContainer
-        aria-hidden="true"
         onFocus={[Function]}
       >
         <StyledComponent
-          aria-hidden="true"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -3598,7 +3584,6 @@ Array [
           onFocus={[Function]}
         >
           <div
-            aria-hidden="true"
             className="c5"
             onFocus={[Function]}
           >
@@ -3892,11 +3877,9 @@ Array [
       </StyledComponent>
     </Spinner__ContentOverlay>
     <Spinner__OpaqueContainer
-      aria-hidden="true"
       onFocus={[Function]}
     >
       <StyledComponent
-        aria-hidden="true"
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -3923,7 +3906,6 @@ Array [
         onFocus={[Function]}
       >
         <div
-          aria-hidden="true"
           className="c5"
           onFocus={[Function]}
         >
@@ -4256,11 +4238,9 @@ Array [
           </StyledComponent>
         </Spinner__ContentOverlay>
         <Spinner__OpaqueContainer
-          aria-hidden="true"
           onFocus={[Function]}
         >
           <StyledComponent
-            aria-hidden="true"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -4287,7 +4267,6 @@ Array [
             onFocus={[Function]}
           >
             <div
-              aria-hidden="true"
               className="c5"
               onFocus={[Function]}
             >
@@ -4611,11 +4590,9 @@ Array [
         </StyledComponent>
       </Spinner__ContentOverlay>
       <Spinner__OpaqueContainer
-        aria-hidden="true"
         onFocus={[Function]}
       >
         <StyledComponent
-          aria-hidden="true"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -4642,7 +4619,6 @@ Array [
           onFocus={[Function]}
         >
           <div
-            aria-hidden="true"
             className="c5"
             onFocus={[Function]}
           >
@@ -4936,11 +4912,9 @@ Array [
       </StyledComponent>
     </Spinner__ContentOverlay>
     <Spinner__OpaqueContainer
-      aria-hidden="true"
       onFocus={[Function]}
     >
       <StyledComponent
-        aria-hidden="true"
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -4967,7 +4941,6 @@ Array [
         onFocus={[Function]}
       >
         <div
-          aria-hidden="true"
           className="c5"
           onFocus={[Function]}
         >
@@ -5418,11 +5391,9 @@ Array [
           </StyledComponent>
         </Spinner__ContentOverlay>
         <Spinner__OpaqueContainer
-          aria-hidden="true"
           onFocus={[Function]}
         >
           <StyledComponent
-            aria-hidden="true"
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -5449,7 +5420,6 @@ Array [
             onFocus={[Function]}
           >
             <div
-              aria-hidden="true"
               className="c7"
               onFocus={[Function]}
             >
@@ -5891,11 +5861,9 @@ Array [
         </StyledComponent>
       </Spinner__ContentOverlay>
       <Spinner__OpaqueContainer
-        aria-hidden="true"
         onFocus={[Function]}
       >
         <StyledComponent
-          aria-hidden="true"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -5922,7 +5890,6 @@ Array [
           onFocus={[Function]}
         >
           <div
-            aria-hidden="true"
             className="c7"
             onFocus={[Function]}
           >
@@ -6334,11 +6301,9 @@ Array [
       </StyledComponent>
     </Spinner__ContentOverlay>
     <Spinner__OpaqueContainer
-      aria-hidden="true"
       onFocus={[Function]}
     >
       <StyledComponent
-        aria-hidden="true"
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -6365,7 +6330,6 @@ Array [
         onFocus={[Function]}
       >
         <div
-          aria-hidden="true"
           className="c7"
           onFocus={[Function]}
         >
@@ -6502,7 +6466,6 @@ exports[`Spinner renders with children 1`] = `
     data-testid="overlay"
   />
   <div
-    aria-hidden="true"
     class="c7"
   >
     <span>
