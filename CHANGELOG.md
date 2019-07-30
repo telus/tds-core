@@ -1,3 +1,9 @@
+#### 1.0.30 (2019-07-30)
+
+##### Bug Fixes
+
+* **src:**  update input and select height ([2a93de08](https://github.com/telusdigital/tds/commit/2a93de084099cf42bc161376af08e319a522c71b))
+
 #### 1.0.29 (2019-05-23)
 
 ##### Bug Fixes
