@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { position } from '@tds/shared-styles'
 
-import { warn } from '../../shared/utils/warn'
+import { deprecate, warn } from '../../shared/utils/warn'
 import safeRest from '../../shared/utils/safeRest'
 import SpinnerSvg from './SpinnerSvg/SpinnerSvg'
 
@@ -73,6 +73,8 @@ class Spinner extends React.PureComponent {
       spinning,
       label,
       dangerouslyHideVisibleLabel,
+      tip,
+      a11yLabel,
       inline,
       size,
       variant,
@@ -80,6 +82,13 @@ class Spinner extends React.PureComponent {
       children,
       ...rest
     } = this.props
+
+    if (tip) {
+      deprecate('core-spinner', 'The `tip` prop is deprecated. Please use the `label` prop.')
+    }
+    if (a11yLabel && label === undefined) {
+      deprecate('core-spinner', 'The `a11yLabel` prop is deprecated. Please use the `label` prop.')
+    }
 
     if (size === 'large' && variant === 'secondary') {
       warn(
@@ -95,8 +104,8 @@ class Spinner extends React.PureComponent {
     const spinnerSvg = props => (
       <SpinnerSvg
         {...props}
-        tip={dangerouslyHideVisibleLabel || size === 'small' ? undefined : label}
-        a11yLabel={label}
+        tip={dangerouslyHideVisibleLabel || size === 'small' ? undefined : label || tip}
+        a11yLabel={label || a11yLabel}
         size={size}
         variant={variant}
         {...safeRest(rest)}
@@ -157,16 +166,26 @@ Spinner.propTypes = {
   /**
    * Communicates a message to assistive technology while visible. This same message will appear underneath the spinner when its `size` is `large`.
    *
-   * When used with `A11yContent`, labe text should be wrapped by a `<span>` or `<React.Fragment>`.
+   * When used with `A11yContent`, label text should be wrapped by a `<span>` or `<React.Fragment>`.
    *
    * @since 2.2.0
    */
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   /**
    * Hides the visible label under the spinner when the spinner's `size` is set to `large`. For special circumstances only.
    * @ignore
    */
   dangerouslyHideVisibleLabel: PropTypes.bool,
+  /**
+   * A additional displayed message.
+   * @deprecated This prop and `a11yLabel` have been combined into the `label` prop.
+   */
+  tip: PropTypes.string,
+  /**
+   * A label for assistive technology.
+   * @deprecated This prop and `tip` have been combined into the `label` prop.
+   */
+  a11yLabel: PropTypes.string,
   /**
    * Render the Spinner as inline-block. This can be used when wrapping
    * interactive elements such as buttons.
@@ -201,7 +220,10 @@ Spinner.propTypes = {
 
 Spinner.defaultProps = {
   spinning: false,
+  label: undefined,
   dangerouslyHideVisibleLabel: false,
+  tip: undefined,
+  a11yLabel: 'A spinner is active. Please wait while the page completes a task.',
   inline: false,
   size: 'large',
   variant: 'primary',

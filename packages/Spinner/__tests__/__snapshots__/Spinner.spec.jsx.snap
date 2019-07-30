@@ -1504,7 +1504,7 @@ Array [
         data-testid="spinner"
       >
         <SpinnerSvg__StyledSvg
-          aria-labelledby="spinner-title-8"
+          aria-labelledby="spinner-title-9"
           aria-live="assertive"
           data-testid="svg"
           height="100"
@@ -1513,7 +1513,7 @@ Array [
           width="100"
         >
           <StyledComponent
-            aria-labelledby="spinner-title-8"
+            aria-labelledby="spinner-title-9"
             aria-live="assertive"
             data-testid="svg"
             forwardedComponent={
@@ -1559,7 +1559,7 @@ Array [
             width="100"
           >
             <svg
-              aria-labelledby="spinner-title-8"
+              aria-labelledby="spinner-title-9"
               aria-live="assertive"
               className="c1"
               data-testid="svg"
@@ -1569,7 +1569,7 @@ Array [
               width="100"
             >
               <title
-                id="spinner-title-8"
+                id="spinner-title-9"
               >
                 Loading content
               </title>
@@ -1832,7 +1832,7 @@ Array [
       data-testid="spinner"
     >
       <SpinnerSvg__StyledSvg
-        aria-labelledby="spinner-title-8"
+        aria-labelledby="spinner-title-9"
         aria-live="assertive"
         data-testid="svg"
         height="100"
@@ -1841,7 +1841,7 @@ Array [
         width="100"
       >
         <StyledComponent
-          aria-labelledby="spinner-title-8"
+          aria-labelledby="spinner-title-9"
           aria-live="assertive"
           data-testid="svg"
           forwardedComponent={
@@ -1887,7 +1887,7 @@ Array [
           width="100"
         >
           <svg
-            aria-labelledby="spinner-title-8"
+            aria-labelledby="spinner-title-9"
             aria-live="assertive"
             className="c1"
             data-testid="svg"
@@ -1897,7 +1897,7 @@ Array [
             width="100"
           >
             <title
-              id="spinner-title-8"
+              id="spinner-title-9"
             >
               Loading content
             </title>
@@ -2132,7 +2132,7 @@ Array [
     data-testid="spinner"
   >
     <SpinnerSvg__StyledSvg
-      aria-labelledby="spinner-title-8"
+      aria-labelledby="spinner-title-9"
       aria-live="assertive"
       data-testid="svg"
       height="100"
@@ -2141,7 +2141,7 @@ Array [
       width="100"
     >
       <StyledComponent
-        aria-labelledby="spinner-title-8"
+        aria-labelledby="spinner-title-9"
         aria-live="assertive"
         data-testid="svg"
         forwardedComponent={
@@ -2187,7 +2187,7 @@ Array [
         width="100"
       >
         <svg
-          aria-labelledby="spinner-title-8"
+          aria-labelledby="spinner-title-9"
           aria-live="assertive"
           className="c1"
           data-testid="svg"
@@ -2197,7 +2197,7 @@ Array [
           width="100"
         >
           <title
-            id="spinner-title-8"
+            id="spinner-title-9"
           >
             Loading content
           </title>
@@ -2387,7 +2387,7 @@ Array [
 }
 
 <SpinnerSvg__StyledSvg
-    aria-labelledby="spinner-title-10"
+    aria-labelledby="spinner-title-11"
     aria-live="assertive"
     data-some-attr="some value"
     data-testid="svg"
@@ -2398,7 +2398,7 @@ Array [
     width="100"
   >
     <StyledComponent
-      aria-labelledby="spinner-title-10"
+      aria-labelledby="spinner-title-11"
       aria-live="assertive"
       data-some-attr="some value"
       data-testid="svg"
@@ -2446,7 +2446,7 @@ Array [
       width="100"
     >
       <svg
-        aria-labelledby="spinner-title-10"
+        aria-labelledby="spinner-title-11"
         aria-live="assertive"
         className="c0"
         data-some-attr="some value"
@@ -2458,7 +2458,7 @@ Array [
         width="100"
       >
         <title
-          id="spinner-title-10"
+          id="spinner-title-11"
         >
           Loading content
         </title>
@@ -2549,7 +2549,7 @@ Array [
 }
 
 <StyledComponent
-    aria-labelledby="spinner-title-10"
+    aria-labelledby="spinner-title-11"
     aria-live="assertive"
     data-some-attr="some value"
     data-testid="svg"
@@ -2597,7 +2597,7 @@ Array [
     width="100"
   >
     <svg
-      aria-labelledby="spinner-title-10"
+      aria-labelledby="spinner-title-11"
       aria-live="assertive"
       className="c0"
       data-some-attr="some value"
@@ -2609,7 +2609,7 @@ Array [
       width="100"
     >
       <title
-        id="spinner-title-10"
+        id="spinner-title-11"
       >
         Loading content
       </title>
@@ -2699,7 +2699,7 @@ Array [
 }
 
 <svg
-    aria-labelledby="spinner-title-10"
+    aria-labelledby="spinner-title-11"
     aria-live="assertive"
     className="c0"
     data-some-attr="some value"
@@ -2711,7 +2711,7 @@ Array [
     width="100"
   >
     <title
-      id="spinner-title-10"
+      id="spinner-title-11"
     >
       Loading content
     </title>
