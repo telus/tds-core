@@ -92,6 +92,12 @@ describe('Spinner', () => {
     expect(spinner).not.toBeEmptyRender()
   })
 
+  it('can have a tip', () => {
+    const { spinner } = doMount({ label: undefined, tip: 'A tip' })
+
+    expect(spinner).toContainReact(<Text size="small">A tip</Text>)
+  })
+
   it('can have a label', () => {
     const { spinner } = doMount({ label: 'A label' })
 
