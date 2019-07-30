@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@1.2.4...@tds/core-css-reset@2.0.0) (2019-07-30)
+
+
+### Features
+
+* **core-css-reset:** upgrade to styled-components ([ae3a9a8](https://github.com/telusdigital/tds/commit/ae3a9a8))
+
+
+### BREAKING CHANGES
+
+* **core-css-reset:** upgrade to styled-components
+* **core-css-reset:** remove all Sass styles and mixins
+
+
+
+
+
 ## [1.2.4](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@1.2.3...@tds/core-css-reset@1.2.4) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-css-reset
