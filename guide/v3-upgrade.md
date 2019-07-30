@@ -1,6 +1,6 @@
 # Upgrading to TDS V3
 
-As of **July 1st, 2019** TDS will move feature support from V2: Split Components to V3: Styled Components of the design system. This is being done primarily to facilitate the use of styled-components V4. For a detailed view of our sunsetting schedule, please read our [roadmap page](roadmap.md). Additionally, more information on this subject can be found on the [Reference Architecture CSS Document](https://github.com/telus/reference-architecture/blob/bb7059d135574c380d2865aa1bbdd633c2345461/development/css.md).
+TDS has now moved feature support from V2: Split Components to V3: Styled Components of the design system. This was done primarily to facilitate the use of styled-components V4. For a detailed view of our sunsetting schedule, please read our [roadmap page](roadmap.md). Additionally, more information on this subject can be found on the [Reference Architecture CSS Document](https://github.com/telus/reference-architecture/blob/bb7059d135574c380d2865aa1bbdd633c2345461/development/css.md).
 
 We would also like to note that the following document also applies to Community. Community is now accepting components developed with styled-components, and it is recommended that all new components use it.
 
@@ -14,12 +14,15 @@ If your project utilizes Global Elements, please note that V2 of the Global Elem
 
 When switching your project over from CSS Modules to styled-components, some cleanup can be performed to reduce bloat and increase the ease of use of styled-components. TDS recommends assessing your project for configurations or packages that enable the use of SCSS, and removing them if they are no longer required. This includes, but is not limited to:
 
-- Removing scss-specific items from build and test suite configurations
-- Removing scss-specific packages, such as node-sass
+- Removing scss or css-specific items from build and test suite configurations
 - Install [babel-plugin-styled-components](https://www.npmjs.com/package/babel-plugin-styled-components) and add it to your Babel config to enable the use of styled-components
 - Install [jest-styled-components](https://github.com/styled-components/jest-styled-components) for extended functionality when using styled-components with Jest tests
 
 More cleanup/additions may be required. Please review your configurations and dependencies carefully to be sure that all your needs are met.
+
+#### Server-side rendering
+
+If your application does not use Isomorphic Starter Kit and you also want Server Side Rendering, see the [SSR with Styled Components docs](https://www.styled-components.com/docs/advanced#server-side-rendering) for more information on setting up this functionality.
 
 ### Upgrading from styled-components V3 to V4
 
@@ -44,26 +47,27 @@ To make linting, using variables, and creating shared style files easier, we hav
 Here is an example of a styled component using string literals:
 
 ```js
-const StyledDiv.styled.div`
+const StyledDiv = styled.div`
   width: 500px;
   height: 500px;
-  background-color: ${props => props.isPink ? 'hotpink' : 'green'};
+  background-color: ${props => (props.isPink ? 'hotpink' : 'green')};
   &:hover {
     background-color: purple;
-  }`
+  }
+`
 ```
 
 Here is the previous example using object notation:
 
 ```js
-const StyledDiv.styled.div((props)=>({
+const StyledDiv = styled.div(props => ({
   width: '500px',
   height: '500px',
   backgroundColor: props.isPink ? 'hotpink' : 'green',
   '&:hover': {
-    backgroundColor: 'purple'
-  }
-}));
+    backgroundColor: 'purple',
+  },
+}))
 ```
 
 ### Sanitizing inputs

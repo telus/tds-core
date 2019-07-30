@@ -16,7 +16,7 @@ TDS components do not include:
 
 ## Installing
 
-If you are using the [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), TDS is already installed and configured. You can jump straight to [using the components](#3-use-tds-components).
+If you are using the latest version of [Isomorphic Starter Kit](https://github.com/telusdigital/telus-isomorphic-starter-kit), TDS is already installed and configured. You can jump straight to [using the components](#3-use-tds-components).
 
 To install the latest version of a component:
 
@@ -29,6 +29,8 @@ That's it! You don't need any other dependencies to use the TDS.
 ## Usage
 
 ### 1. Configure webpack to load CSS
+
+_Note: While still required for a small percentage of TDS components, this step will no longer be necessary in the future._
 
 Add an entry to the `module.rules` array to load CSS. You may also provide other configuration such as the [ExtractTextPlugin](https://github.com/webpack-contrib/extract-text-webpack-plugin) to extract all styles into a separate stylesheet file.
 
@@ -67,9 +69,15 @@ import { render } from 'react-dom'
 
 import App from './App'
 
-import '@tds/core-css-reset/dist/index.css'
+import CSSReset from '@tds/core-css-reset'
 
-render(<App />, document.getElementById('root'))
+render(
+  <>
+    <CSSReset />
+    <App />
+  </>,
+  document.getElementById('root')
+)
 ```
 
 ### 3. Include the required polyfills
@@ -129,20 +137,21 @@ export default BannerText
 
 ### 5. Use TDS colours
 
-Colour is the one exception, as the colour palette is available as Sass variables. While the TDS components already have colour baked in, you may use the TDS colour variables to add style to your own components such as setting background colours or border colours.
+While the TDS components already have colour baked in, you may use the TDS colour variables to add style to your own components such as setting background colours or border colours. These are delivered via named exports from `@tds/core-colours`.
 
 A list of the available colours and their use cases can be found [in the Design section](../design/colour.md).
 
 ```sh
-# install the @tds/core-colours package as a dependency in `ui/package.json`
+# install the @tds/core-colours package as a dependency in `app/package.json`
 npm install @tds/core-colours --save
 ```
 
-```css
-/* BannerText.scss */
-@import '~@tds/core-colours/colours';
+```jsx
+/* CustomButton.jsx */
+import { colorTelusGreen, colorTelusPurple } from '@tds/core-colours'
 
-.banner {
-  background-color: $color-purple;
-}
+const StyledButton = styled.button({
+  backgroundColor: colorTelusPurple,
+  color: colorTelusGreen,
+})
 ```

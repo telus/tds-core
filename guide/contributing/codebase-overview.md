@@ -21,18 +21,18 @@ We utilize the following tools for the development, release, and distribution pr
 - [Styleguidist](https://react-styleguidist.js.org/): isolated React component development environment with a
   living style guide
 - [Rollup](https://rollupjs.org/): Rollup is a JavaScript module bundler, similar to webpack, built with ES2015 modules
-  in mind and optimized for libraries.
+  in mind and optimized for libraries
 - [ES2015+](https://github.com/lukehoban/es6features): We write all JavaScript as ES2015 modules, generally following
   the comprehensive AirBnb style guides for JavaScript and React, and then transpile it for the browser with Babel
 - [Jest](https://facebook.github.io/jest/) and [Enzyme](https://github.com/blainekasten/enzyme-matchers):
   we use jest as our test runner and enzyme to test our React components
+- [Nightwatch](https://nightwatchjs.org/): We use Nightwatch to perform automated visual regression testing on our components
 - Linters and Prettier: standardize code style and format
-- [CSS Modules](https://github.com/css-modules/css-modules): facilitates the buildup of scoped
-  CSS while maintaining the familiar interface of SCSS
+- [styled-components](https://www.styled-components.com/): facilitates the use of CSS-In-JS
 - [NPM](https://www.npmjs.com/): we use NPM as our node package manager
 - [Openshift](https://www.openshift.com/) and [Docker](https://www.docker.com/): the CI pipeline is largely
   based on the TELUS isomorphic starter kit pipeline, using Docker as the build artifact
-- [Lerna](https://lernajs.io/): A tool for managing JavaScript projects with multiple packages.
+- [Lerna](https://lernajs.io/): A tool for managing JavaScript projects with multiple packages
 
 ## Component structure and standards
 
@@ -45,7 +45,6 @@ component named `ButtonLink`, the files are organized like this:
     └─── ButtonLink
         │  ButtonLink.md
         │  ButtonLink.jsx
-        │  ButtonLink.modules.scss
         |  index.cjs.js
         │  index.es.js
         |  package.json
@@ -63,7 +62,6 @@ Here you may notice some of our standards:
 
 - Use PascalCase for all file names
 - Every component must include a set of unit tests and snapshot
-- If a component requires custom styling, use CSS Modules and suffix your scss file with `.modules.scss`
 - To include custom documentation with a component, use `<ComponentName>.md`
 - To include documentation for the npm registry page, use `README.md`
 
@@ -90,7 +88,7 @@ Though the following practices are not strictly enforced, they are strongly enco
 
 ### Code style and conventions
 
-Here are some dos and don'ts to consider when writing code.
+Here are some guidelines to consider when writing code.
 
 #### General
 
@@ -127,12 +125,14 @@ Here are some dos and don'ts to consider when writing code.
   representations
 - If a parent component does not use props and only passes them down to its children, pass components as props
 
-#### Styling (CSS Modules, Sass)
+#### Styling (styled-components)
 
-- **DO** scope component class names
+- **DO** use object notation with styled-components
+- **DO** name your styled component starting with the word "Styled" (e.g. `StyledDiv`)
 - **DON'T** specify external margins. Components must be able to fit into various layouts
-- **DON'T** use HTML elements or IDs as CSS selectors. Only use class names
-- **DON'T** hardcode pixel values unless an absolute pixel value is required. Use tds-core components or relative values such as rem instead.
+- **DON'T** use HTML elements or IDs as CSS selectors
+- **DON'T** hardcode pixel values unless an absolute pixel value is required. Use tds-core components or relative values such as rem instead
+- **DON'T** style components directly using the `style` prop
 
 #### Utility modules
 
@@ -145,29 +145,26 @@ been modified. For an example of a utility module, look at [util-generate-id][td
 - **DO** add utility modules as a **devDependency** to components that consume one
 - **DON'T** create utility modules that cannot be reused in any other component
 
-[Here is an example of a React component that follows the above patterns](https://github.com/telus/tds-core/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.jsx).
+[Here is an example of a React component that follows the above patterns](https://github.com/telus/tds-core/blob/6c5383d95e7b92d2c313b8f2f6ccd276b5a38976/packages/ButtonLink/ButtonLink.jsx).
 
 ### Styling components
 
-TDS components use CSS Modules with Sass. You can learn about its usage and design from the
-[CSS Modules GitHub repository](https://github.com/css-modules/css-modules). TDS components derive CSS modules from
-their respective **ComponentName.modules.scss** file. The following patterns are strongly encouraged:
+TDS components use styled-components. You can learn about its usage and design from the
+[styled-components documentation site](https://www.styled-components.com/). When it comes to styled-components, the following patterns are strongly encouraged:
 
-- Use the `composes` property rather than SCSS `@extend` or comma-separated classes. Mixins are acceptable
-- Use camelCase class names
-- Use flexbox, but be aware of cross-browser limitations
-- Components should make effective use of 'layout' components such as Box or Responsive, rather than styles
+- Use object notation whenever possible
+- Use PascalCase component names
+- Deconstruct the props object when using them in a Styled Component
+  - `const StyledDiv = styled.div(({propA, propB}) => ({color: propA, height: propB}))`
+- Components should make effective use of 'layout' components such as Box or FlexGrid, rather than styles
 
-[Here is an example of a scss file that uses the `composes` property from CSS modules](https://github.com/telus/tds-core/blob/309271bff529a690532b781e4b3dd26939642f37/src/components/Link/ButtonLink/ButtonLink.modules.scss).
+See the [CSS Reference Architecture documentation](https://github.com/telus/reference-architecture/blob/master/development/css.md#how) for the most up-to-date organization-wide information.
 
 #### Rendered DOM
 
-From the `composes` example above:
-
 ```html
-<!-- the 'class' attribute contains the 'primary'
-and 'base' classes since 'primary' composes' base -->
-<a class="primary base" href="#">Find out how</a>
+<!-- the 'class' attribute contains a hash generated by styled-components. This prevents class collision. -->
+<a class="sc_hash" href="#">Find out how</a>
 ```
 
 ## Writing tests
@@ -193,7 +190,7 @@ expect(myComponent.props().someBoolean).toBeTruthy()
 // => Expected false to be truthy.
 ```
 
-Always prefer "shallow" rendering, then "render", then "mount". Only "mount" if you are testing the lifecycle methods.
+Always prefer "shallow" rendering, then "render", then "mount". Only "mount" if you are testing the lifecycle methods. Using "render" is required for snapshot testing styled components because it prints all auto-generated CSS classes.
 
 Use a snapshot test for components that do not have any logic and to increase confidence in the structure of the
 component. Snapshot tests do not replace unit tests.
