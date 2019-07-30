@@ -14,7 +14,7 @@ $button-text-color: $color-white;
 .base {
   composes: none rounded from '../../../src/components/Borders.modules.scss';
   composes: medium boldFont from '../../../src/components/Typography/Text/Text.modules.scss';
-  composes: height font from '../../../src/components/Forms.modules.scss';
+  composes: buttonHeight font from '../../../src/components/Forms.modules.scss';
 
   margin: 0;
   padding: 0 2rem;

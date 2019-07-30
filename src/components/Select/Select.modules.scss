@@ -7,7 +7,7 @@
 }
 
 .select {
-  composes: height from '../Forms.modules.scss';
+  composes: inputHeight from '../Forms.modules.scss';
 
   // Hide the arrows
   appearance: none;

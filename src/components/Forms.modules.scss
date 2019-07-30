@@ -5,8 +5,12 @@
 // Browsers treat line height of input fields oddly, which makes it an unreliable method for aligning the height
 //  of various elements.
 // --> http://joshnh.com/weblog/line-height-doesnt-work-as-expected-on-inputs/
-.height {
+.buttonHeight {
   height: 3.25rem; // 52px
+}
+
+.inputHeight {
+  height: 3rem; // 48px
 }
 
 // Ensure inputs and other form elements do not use the browser font.
