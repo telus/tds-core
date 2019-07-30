@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@2.0.0...@tds/core-standalone-icon@2.0.1) (2019-07-30)
+
+**Note:** Version bump only for package @tds/core-standalone-icon
+
+
+
+
+
 # [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@1.1.2...@tds/core-standalone-icon@2.0.0) (2019-07-11)
 
 

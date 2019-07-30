@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.12](https://github.com/telus/tds/compare/@tds/core-input@3.0.11...@tds/core-input@3.0.12) (2019-07-30)
+
+
+### Bug Fixes
+
+* **core-input:** change height to 48px ([74c89e6](https://github.com/telus/tds/commit/74c89e6))
+
+
+
+
+
 ## [3.0.11](https://github.com/telus/tds/compare/@tds/core-input@3.0.10...@tds/core-input@3.0.11) (2019-07-25)
 
 **Note:** Version bump only for package @tds/core-input

@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-spinner",
-  "version": "2.2.2",
+  "version": "3.0.0",
   "description": "A waiting indicator",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,7 +28,7 @@
   "dependencies": {
     "@tds/core-colours": "^1.1.2",
     "@tds/core-text": "^2.0.0",
-    "@tds/shared-styles": "^1.2.1",
+    "@tds/shared-styles": "^1.4.0",
     "prop-types": "^15.5.10"
   }
 }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.3.0...@tds/shared-styles@1.4.0) (2019-07-30)
+
+
+### Features
+
+* **shared-styles:** export seperate button and input heights ([258f3b8](https://github.com/telusdigital/tds/commit/258f3b8))
+
+
+
+
+
 # [1.3.0](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.2.1...@tds/shared-styles@1.3.0) (2019-06-25)
 
 

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-spinner@2.2.2...@tds/core-spinner@3.0.0) (2019-07-30)
+
+
+### Bug Fixes
+
+* **core-spinner:** temporary fix for rollup resolving named export ([10cd5d7](https://github.com/telusdigital/tds/commit/10cd5d7))
+
+
+### Features
+
+* **core-spinner:** upgrade to styled components ([ad171fa](https://github.com/telusdigital/tds/commit/ad171fa))
+
+
+### BREAKING CHANGES
+
+* **core-spinner:** styled-components now a peer dependency
+
+
+
+
+
 ## [2.2.2](https://github.com/telusdigital/tds/compare/@tds/core-spinner@2.2.1...@tds/core-spinner@2.2.2) (2019-07-10)
 
 **Note:** Version bump only for package @tds/core-spinner
