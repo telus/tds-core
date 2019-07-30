@@ -1023,7 +1023,7 @@ exports[`<Notification /> can have a variant 2`] = `
   line-height: 1;
   vertical-align: middle;
   color: #248700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .c7::before {
@@ -1888,19 +1888,19 @@ div.c2 {
                                                                                                 className="c6"
                                                                                               >
                                                                                                 <DecorativeIcon
-                                                                                                  size={24}
+                                                                                                  size={20}
                                                                                                   symbol="checkmark"
                                                                                                   variant="primary"
                                                                                                 >
                                                                                                   <Icon
                                                                                                     aria-hidden="true"
-                                                                                                    size={24}
+                                                                                                    size={20}
                                                                                                     symbol="checkmark"
                                                                                                     variant="primary"
                                                                                                   >
                                                                                                     <Icon__StyledIcon
                                                                                                       aria-hidden="true"
-                                                                                                      iSize={24}
+                                                                                                      iSize={20}
                                                                                                       symbol="checkmark"
                                                                                                       variant="primary"
                                                                                                     >
@@ -1931,7 +1931,7 @@ div.c2 {
                                                                                                           }
                                                                                                         }
                                                                                                         forwardedRef={null}
-                                                                                                        iSize={24}
+                                                                                                        iSize={20}
                                                                                                         symbol="checkmark"
                                                                                                         variant="primary"
                                                                                                       >

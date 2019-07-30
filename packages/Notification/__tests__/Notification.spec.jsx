@@ -55,7 +55,9 @@ describe('<Notification />', () => {
     it('adds a checkmark icon', () => {
       const notification = doShallow({ variant: 'success' })
 
-      expect(notification).toContainReact(<DecorativeIcon symbol="checkmark" variant="primary" />)
+      expect(notification).toContainReact(
+        <DecorativeIcon symbol="checkmark" variant="primary" size={20} />
+      )
     })
   })
 
@@ -70,7 +72,7 @@ describe('<Notification />', () => {
       const notification = doShallow({ variant: 'error' })
 
       expect(notification).toContainReact(
-        <DecorativeIcon symbol="exclamationPointCircle" variant="error" />
+        <DecorativeIcon symbol="exclamationPointCircle" variant="error" size={20} />
       )
     })
   })

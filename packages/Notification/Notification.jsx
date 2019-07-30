@@ -53,7 +53,7 @@ const iconByVariant = {
 
 const isImportant = variant => variant === 'success' || variant === 'error'
 
-const renderIcon = icon => <DecorativeIcon symbol={icon.symbol} variant={icon.color} />
+const renderIcon = icon => <DecorativeIcon symbol={icon.symbol} variant={icon.color} size={20} />
 
 /**
  * A banner that highlights important messages.
