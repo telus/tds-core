@@ -1,21 +1,22 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import TextSup from '../TextSup'
 
 describe('TextSup', () => {
   const doShallow = props => shallow(<TextSup {...props}>Some content</TextSup>)
+  const doMount = props => mount(<TextSup {...props}>Some content</TextSup>)
 
   it('renders', () => {
-    const textSup = doShallow()
+    const textSup = doMount()
 
     expect(textSup).toMatchSnapshot()
   })
 
   it('renders an HTML sub tag', () => {
-    const textSup = doShallow()
+    const textSup = doMount()
 
-    expect(textSup).toHaveDisplayName('sup')
+    expect(textSup.find('StyledComponent').childAt(0)).toHaveDisplayName('sup')
   })
 
   it('passes additional attributes to the sub element', () => {
