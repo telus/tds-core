@@ -1,3 +1,13 @@
+### Usage criteria
+
+The `ExpandCollapse` and `Accordion` component allows nesting of content inside a collapsed container. Clicking on the header will reveal the hidden content by expanding the container. Since this interaction hides the content through motion, you need to consider what type of content is placed inside. Below are examples of what to do and what not to do:
+
+_Ideal_: Static content such as text, links, and images
+
+_Not ideal_: Complex interactions such as tabs, carousels or nested accordions. The extra layers make it confusing and difficult for customers to orient themselves. The customer needs to be able to navigate to other parts of the page after the content is expanded.
+
+### Minimal usage
+
 ```jsx
 <ExpandCollapse tag="h2">
   <ExpandCollapse.Panel id="features" header="Features">
