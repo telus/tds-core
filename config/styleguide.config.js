@@ -322,10 +322,9 @@ module.exports = {
   template: styleguidistEnv === 'production' ? productionTemplate : devTemplate,
   assetsDir: path.resolve('docs/assets/'),
   styleguideDir: path.resolve(`styleguide/${styleguidistEnv}`),
-  require: [
-    path.resolve('docs/scss/styleguide.scss'),
-    path.resolve('config/globalComponents.js'),
-  ].concat(styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []),
+  require: [path.resolve('config/globalComponents.js')].concat(
+    styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []
+  ),
   styleguideComponents: {
     Editor: path.resolve('docs/components/overrides/Editor/Editor'),
     Logo: path.resolve('docs/components/custom/Logo/Logo'),
