@@ -1,10 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styles from '@tds/shared-typography/Typography.modules.scss'
+import styled from 'styled-components'
+
+import { sup } from '@tds/shared-typography'
 
 import { deprecate } from '../../../shared/utils/warn'
 import safeRest from '../../../shared/utils/safeRest'
+
+const StyledTextSup = styled.sup(sup)
 
 /**
  * @deprecated Superscript text an as HTML `<sup>` element.
@@ -16,11 +20,7 @@ const TextSup = ({ children, ...rest }) => {
     '@tds/core-text',
     'The Text.Sup component is deprecated. Please use a standard HTML sup element instead.'
   )
-  return (
-    <sup {...safeRest(rest)} className={styles.sup}>
-      {children}
-    </sup>
-  )
+  return <StyledTextSup {...safeRest(rest)}>{children}</StyledTextSup>
 }
 
 TextSup.propTypes = {

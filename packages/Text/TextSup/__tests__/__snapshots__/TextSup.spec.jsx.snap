@@ -1,9 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextSup renders 1`] = `
-<sup
-  className="sup"
->
-  Some content
-</sup>
+.c0 {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+<Text.Sup>
+  <TextSup__StyledTextSup>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "TextSup__StyledTextSup-sc-1jkhnsx-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "top: -0.5em;",
+              "font-size: 0.875rem;",
+              "position: relative;",
+              "vertical-align: baseline;",
+              "padding-left: 0.1em;",
+            ],
+          },
+          "displayName": "TextSup__StyledTextSup",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "TextSup__StyledTextSup-sc-1jkhnsx-0",
+          "target": "sup",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <sup
+        className="c0"
+      >
+        Some content
+      </sup>
+    </StyledComponent>
+  </TextSup__StyledTextSup>
+</Text.Sup>
 `;
