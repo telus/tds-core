@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telus/tds-core/compare/@tds/shared-icon@2.0.0...@tds/shared-icon@2.1.0) (2019-07-31)
+
+
+### Features
+
+* **shared-icon:** update shared icon with new sizes, remove scss file ([736908b](https://github.com/telus/tds-core/commit/736908b))
+
+
+
+
+
 # [2.0.0](https://github.com/telus/tds-core/compare/@tds/shared-icon@1.1.3...@tds/shared-icon@2.0.0) (2019-07-11)
 
 

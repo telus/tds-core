@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.5](https://github.com/telusdigital/tds/compare/@tds/core-notification@2.0.4...@tds/core-notification@2.0.5) (2019-07-31)
+
+
+### Bug Fixes
+
+* **core-notification:** use 20px icon size ([4a4ea8f](https://github.com/telusdigital/tds/commit/4a4ea8f))
+
+
+
+
+
 ## [2.0.4](https://github.com/telusdigital/tds/compare/@tds/core-notification@2.0.3...@tds/core-notification@2.0.4) (2019-07-30)
 
 **Note:** Version bump only for package @tds/core-notification

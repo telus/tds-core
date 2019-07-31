@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@2.0.1...@tds/core-standalone-icon@2.1.0) (2019-07-31)
+
+
+### Features
+
+* **core-standalone-icon:** add 20px and 32px sizes ([8fb1f71](https://github.com/telusdigital/tds/commit/8fb1f71))
+
+
+
+
+
 ## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@2.0.0...@tds/core-standalone-icon@2.0.1) (2019-07-30)
 
 **Note:** Version bump only for package @tds/core-standalone-icon
