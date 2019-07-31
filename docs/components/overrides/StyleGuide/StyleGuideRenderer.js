@@ -7,6 +7,7 @@ import Markdown from 'rsg-components/Markdown'
 
 import FlexGrid from '../../../../packages/FlexGrid/FlexGrid'
 import CSSReset from '../../../../packages/css-reset'
+import GlobalStyleGuide from './GlobalStyleGuide'
 
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
   root: {
@@ -80,6 +81,7 @@ export function StyleGuideRenderer({ classes, title, homepageUrl, children, toc,
   return (
     <React.Fragment>
       <CSSReset />
+      <GlobalStyleGuide />
       <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
         <a id="styleguidist-top">&nbsp;</a>
 
