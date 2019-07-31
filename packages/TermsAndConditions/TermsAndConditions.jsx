@@ -9,16 +9,24 @@ import Heading from '@tds/core-heading'
 import Box from '@tds/core-box'
 import { FadeAndReveal, Translate } from '@tds/shared-animation'
 import { getCopy } from '@tds/util-helpers'
+import { colorWhite } from '@tds/core-colours'
+import { buttons } from '@tds/shared-styles'
 
 import safeRest from '../../shared/utils/safeRest'
 
-import StyledClickable from './StyledClickable'
 import Chevron from './svg/Chevron'
 import Circle from './svg/Circle'
 
 import List from './List/List'
 
 import copyDictionary from './termsAndConditionsText'
+
+const StyledClickableHeading = styled.button(buttons.noStyle, {
+  width: '100%',
+  display: 'flex',
+  justifyContent: 'center',
+  backgroundColor: colorWhite,
+})
 
 const StyledExpandCollapseHeading = styled(Box)({
   alignItems: 'center',
@@ -69,7 +77,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
       <FlexGrid gutter={false} limitWidth={false}>
         <FlexGrid.Row>
           <FlexGrid.Col>
-            <StyledClickable onClick={() => setOpen(!isOpen)}>
+            <StyledClickableHeading onClick={() => setOpen(!isOpen)}>
               <StyledExpandCollapseHeading inline vertical={3} between={3}>
                 <StyledChevronContainer>
                   <Circle />
@@ -81,7 +89,7 @@ const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }
                     : getCopy(copyDictionary, copy).headingHide}
                 </Heading>
               </StyledExpandCollapseHeading>
-            </StyledClickable>
+            </StyledClickableHeading>
           </FlexGrid.Col>
         </FlexGrid.Row>
       </FlexGrid>

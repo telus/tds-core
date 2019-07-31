@@ -38,11 +38,9 @@
     "@tds/core-text": "^2.0.0",
     "@tds/shared-animation": "^1.2.0",
     "@tds/shared-hocs": "^1.1.0",
+    "@tds/shared-styles": "^1.4.0",
     "@tds/shared-typography": "^1.3.0",
     "@tds/util-helpers": "^1.0.0",
     "prop-types": "^15.5.10"
-  },
-  "devDependencies": {
-    "@tds/shared-clickable": "^2.0.0"
   }
 }
