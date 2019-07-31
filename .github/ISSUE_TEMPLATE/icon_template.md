@@ -27,7 +27,7 @@ about: Request a new icon
 
 ## Actions
 
-1. Did you check to see if there are decorative icons that can be used in TDS instead? Yes/No
+1. Did you check to see if there are icons available in TDS that can be used instead? Yes/No
 2. Is your proposed icon from the TELUS Brand-approved set from one of the appointed designers*? Yes/No
 3. Has your Design Lead or Art Director approved the proposed icon? Yes/No
 
