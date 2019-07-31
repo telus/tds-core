@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 import { colorWhite } from '@tds/core-colours'
-import Clickable from '../../shared/components/Clickable/Clickable'
+import { buttons } from '@tds/shared-styles'
 
-const StyledClickable = styled(Clickable)({
+const StyledClickable = styled.button(buttons.noStyle, {
   width: '100%',
   display: 'flex',
   justifyContent: 'center',

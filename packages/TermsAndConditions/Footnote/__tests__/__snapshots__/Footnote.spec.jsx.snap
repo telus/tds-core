@@ -138,6 +138,17 @@ div.c5 {
 }
 
 .c11 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -375,8 +386,7 @@ div.c5 {
                         </h2>
                         <button
                           aria-label="close"
-                          class="clickable c11"
-                          type="button"
+                          class="c11"
                         >
                           <svg
                             class="c12"
@@ -572,6 +582,17 @@ div.c5 {
 }
 
 .c11 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -809,8 +830,7 @@ div.c5 {
                         </h2>
                         <button
                           aria-label="close"
-                          class="clickable c11"
-                          type="button"
+                          class="c11"
                         >
                           <svg
                             class="c12"
