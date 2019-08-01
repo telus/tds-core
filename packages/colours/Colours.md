@@ -163,28 +163,3 @@ For more information on the usage of each colour please refer to the [colour pri
   </FlexGrid.Row>
 </FlexGrid>
 ```
-
-### SASS
-
-**Deprecated, please use JS variables instead.**
-
-```scss static
-@import '~@tds/core-colours/colours';
-```
-
-See the table below for the full list of JS variables and their corresponding SASS variables.
-
-| JS                     | SASS                      |
-| ---------------------- | ------------------------- |
-| `colorAccessibleGreen` | `$color-accessible-green` |
-| `colorTelusGreen`      | `$color-telus-green`      |
-| `colorTelusPurple`     | `$color-telus-purple`     |
-| `colorShark`           | `$color-shark`            |
-| `colorShuttleGrey`     | `$color-shuttle-grey`     |
-| `colorWhite`           | `$color-white`            |
-| `colorCardinal`        | `$color-cardinal`         |
-| `colorLavenderBlush`   | `$color-labendar-blush`   |
-| `colorWhiteLilac`      | `$color-white-lilac`      |
-| `colorGainsboro`       | `$color-gainsboro`        |
-| `colorAthensGrey`      | `$color-athens-grey`      |
-| `colorPanache`         | `$color-panache`          |
