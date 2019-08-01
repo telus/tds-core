@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-colours@1.1.2...@tds/core-colours@2.0.0) (2019-08-01)
+
+
+### Features
+
+* **core-colours:** delete _colours.scss ([36dba4a](https://github.com/telusdigital/tds/commit/36dba4a))
+
+
+### BREAKING CHANGES
+
+* **core-colours:** remove SASS colours
+
+
+
+
+
 ## [1.1.2](https://github.com/telusdigital/tds/compare/@tds/core-colours@1.1.1...@tds/core-colours@1.1.2) (2019-05-01)
 
 **Note:** Version bump only for package @tds/core-colours

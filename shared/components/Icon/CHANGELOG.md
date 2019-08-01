@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/telus/tds-core/compare/@tds/shared-icon@2.1.0...@tds/shared-icon@2.1.1) (2019-08-01)
+
+**Note:** Version bump only for package @tds/shared-icon
+
+
+
+
+
 # [2.1.0](https://github.com/telus/tds-core/compare/@tds/shared-icon@2.0.0...@tds/shared-icon@2.1.0) (2019-07-31)
 
 

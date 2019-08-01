@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-typography",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -21,6 +21,6 @@
   },
   "homepage": "http://tds.telus.com",
   "devDependencies": {
-    "@tds/core-colours": "^1.1.2"
+    "@tds/core-colours": "^2.0.0"
   }
 }

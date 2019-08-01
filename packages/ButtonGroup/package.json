@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-button-group",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "An input component utilizing buttons that act as radios.",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -28,15 +28,15 @@
   "dependencies": {
     "@tds/core-box": "^2.0.1",
     "@tds/core-responsive": "^1.3.0",
-    "@tds/core-text": "^2.0.0",
-    "@tds/shared-styles": "^1.4.0",
-    "@tds/shared-typography": "^1.3.0",
+    "@tds/core-text": "^2.0.1",
+    "@tds/shared-styles": "^1.4.1",
+    "@tds/shared-typography": "^1.3.1",
     "@tds/util-prop-types": "^1.3.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^1.1.2",
-    "@tds/shared-base-button": "^1.2.16",
+    "@tds/core-colours": "^2.0.0",
+    "@tds/shared-base-button": "^1.2.17",
     "@tds/util-generate-id": "^1.0.4"
   }
 }
