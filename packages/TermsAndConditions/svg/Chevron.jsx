@@ -2,7 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import StyledClickable from '../StyledClickable'
+import { colorWhite } from '@tds/core-colours'
+import { buttons } from '@tds/shared-styles'
+
+const StyledClickable = styled.button(buttons.noStyle, {
+  width: '100%',
+  display: 'flex',
+  justifyContent: 'center',
+  backgroundColor: colorWhite,
+})
 
 const StyledChevron = styled.span(({ isOpen }) => ({
   lineHeight: '24px',
