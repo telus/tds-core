@@ -88,6 +88,24 @@ div.c5 {
   background-color: #d8d8d8;
 }
 
+.c11 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c12 {
   background: #f7f7f8;
 }
@@ -135,28 +153,6 @@ div.c5 {
   max-height: calc(100vh - autopx);
   height: auto;
   opacity: 1;
-}
-
-.c11 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #2a2c2e;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .c2 {
@@ -529,6 +525,24 @@ div.c5 {
   background-color: #d8d8d8;
 }
 
+.c11 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c12 {
   background: #f7f7f8;
 }
@@ -579,28 +593,6 @@ div.c5 {
   max-height: calc(100vh - autopx);
   height: auto;
   opacity: 1;
-}
-
-.c11 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #2a2c2e;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .c2 {
