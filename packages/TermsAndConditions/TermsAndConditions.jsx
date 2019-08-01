@@ -10,10 +10,10 @@ import Box from '@tds/core-box'
 import { FadeAndReveal, Translate } from '@tds/shared-animation'
 import { getCopy } from '@tds/util-helpers'
 import { colorWhite } from '@tds/core-colours'
-import { buttons } from '@tds/shared-styles'
 
 import safeRest from '../../shared/utils/safeRest'
 
+import StyledClickable from './StyledClickable'
 import Chevron from './svg/Chevron'
 import Circle from './svg/Circle'
 
@@ -21,9 +21,8 @@ import List from './List/List'
 
 import copyDictionary from './termsAndConditionsText'
 
-const StyledClickableHeading = styled.button(buttons.noStyle, {
+const StyledClickableHeading = styled(StyledClickable)({
   width: '100%',
-  display: 'flex',
   justifyContent: 'center',
   backgroundColor: colorWhite,
 })

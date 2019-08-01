@@ -11,9 +11,10 @@ import { colorAthensGrey } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import { withFocusTrap } from '@tds/shared-hocs'
 import { getCopy } from '@tds/util-helpers'
-import { buttons } from '@tds/shared-styles'
 
 import safeRest from '../../../shared/utils/safeRest'
+
+import StyledClickable from '../StyledClickable'
 import List from './FootnoteList'
 import CloseIcon from './svg/Close'
 import copyDictionary from './footnoteText'
@@ -91,11 +92,6 @@ const StyledListContainer = styled.div({
     paddingTop: '0rem',
     paddingBottom: '3rem',
   }),
-})
-
-const StyledClickable = styled.button(buttons.noStyle, {
-  display: 'flex',
-  justifyContent: 'center',
 })
 
 const FocusTrap = withFocusTrap('div')
