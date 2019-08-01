@@ -4,19 +4,19 @@ We plan the TELUS Design System (TDS) roadmap based on the priorities of TELUS a
 
 You can view our full roadmap in our [Google Slides deck](https://docs.google.com/presentation/d/1Tw062DhhKKLnasgEzkoA-UHnj3qp7iRATNmiwLG7kzA/edit?usp=sharing).
 
-## Coming up: Release V3 (July 2019)
+## Current: TDS V3 (August 2019)
 
-The TELUS Design System (TDS) and Architecture Support Team (AST) aligned on a common CSS-in-JS standard at TELUS in February 2019, thereby moving ahead with Styled Components V4 as the selected framework.
+The TELUS Design System (TDS) and Architecture Support (AST) teams aligned on a common CSS-in-JS standard at TELUS in February 2019, thereby moving ahead with Styled Components V4 as the selected framework.
 
 More information can be found here:
 
 - [Reference Architecture CSS standard](https://github.com/telus/reference-architecture/blob/bb7059d135574c380d2865aa1bbdd633c2345461/development/css.md)
-- [Adopting Styled Components V4](https://github.com/telus/technology-forum/issues/274)
+- [Guide: Upgrading to TDS v3](https://tds.telus.com/v3-upgrade.html)
 - [TDS Sunset Strategy](https://github.com/telus/technology-forum/issues/285)
 
-## Current Release V2 (March 2018)
+## TDS V2 (March 2018)
 
-TELUS Design System "v2": independently versioned components (March 2018)
+TELUS Design System "V2": independently versioned components (March 2018)
 
 Version 1 paved the way for re-architecting the React components into separately versioned packages.
 
