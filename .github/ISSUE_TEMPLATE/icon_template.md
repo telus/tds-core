@@ -1,5 +1,5 @@
 ---
-name: "Icon request :gem:"
+name: Icon request 💎
 about: Request a new icon
 ---
 
