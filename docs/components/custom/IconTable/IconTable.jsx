@@ -17,6 +17,8 @@ const IconTable = ({ icons, heading, noSort }) => {
       return 0
     })
   }
+  const hasAccessibleText = icons.find(icon => icon.accessibleText)
+
   return (
     <Box between={3}>
       <Heading level="h3">{heading}</Heading>
@@ -30,6 +32,7 @@ const IconTable = ({ icons, heading, noSort }) => {
             <th>Symbol</th>
             <th>Icon</th>
             <th>Usage Criteria</th>
+            {hasAccessibleText && <th>Accessible Text?</th>}
           </tr>
         </thead>
         <tbody>
@@ -39,7 +42,8 @@ const IconTable = ({ icons, heading, noSort }) => {
               <td>
                 <icon.Component {...icon.props} />
               </td>
-              <td>{icon.usageCriteria}</td>
+              <td dangerouslySetInnerHTML={{ __html: icon.usageCriteria }} />
+              {hasAccessibleText && <td>{icon.accessibleText}</td>}
             </tr>
           ))}
         </tbody>
