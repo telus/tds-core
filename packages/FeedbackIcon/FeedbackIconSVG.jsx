@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import safeRest from '../../shared/utils/safeRest'
+
 const FeedbackIconSVG = ({ a11yText, children, ...rest }) => (
-  <svg {...rest} role="img" aria-hidden={a11yText ? undefined : 'true'}>
+  <svg {...safeRest(rest)} role="img" aria-hidden={a11yText ? undefined : 'true'}>
     <React.Fragment>
       {a11yText && <title>{a11yText}</title>}
       {children}
