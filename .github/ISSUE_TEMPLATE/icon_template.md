@@ -1,5 +1,5 @@
 ---
-name: Icon request
+name: Icon request :gem:
 about: Request a new icon
 ---
 
