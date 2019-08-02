@@ -1,25 +1,17 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow } from 'enzyme'
 
 import FeedbackIcon from '../FeedbackIcon'
 
 describe('FeedbackIcon', () => {
   const doShallow = (props = {}) => shallow(<FeedbackIcon {...props} />)
 
-  it('renders', () => {
-    const feedbackIcon = render(<FeedbackIcon />)
-
-    expect(feedbackIcon).toMatchSnapshot()
-  })
-
-  it('does other things', () => {
-    const feedbackIcon = doShallow()
-
-    expect(feedbackIcon).toExist()
-  })
-
   it('passes additional attributes to the element', () => {
-    const feedbackIcon = doShallow({ id: 'the-id', 'data-some-attr': 'some value' })
+    const feedbackIcon = doShallow({
+      children: <path />,
+      id: 'the-id',
+      'data-some-attr': 'some value',
+    })
 
     expect(feedbackIcon).toHaveProp('id', 'the-id')
     expect(feedbackIcon).toHaveProp('data-some-attr', 'some value')
@@ -27,6 +19,7 @@ describe('FeedbackIcon', () => {
 
   it('does not allow custom CSS', () => {
     const feedbackIcon = doShallow({
+      children: <path />,
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })
