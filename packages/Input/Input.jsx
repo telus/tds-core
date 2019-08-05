@@ -179,7 +179,7 @@ const Input = React.forwardRef(
       }
 
       if (rest.onKeyDown) {
-        rest.onKeyDown()
+        rest.onKeyDown(e)
       }
     }
 
