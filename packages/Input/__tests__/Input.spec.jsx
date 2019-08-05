@@ -348,7 +348,7 @@ describe('Input', () => {
      * keyDown events where the key is ' '.
      */
     it('prevents spaces', () => {
-      const onKeyDownMock = jest.fn()
+      const onKeyDownMock = jest.fn(e => e.target.value)
       const preventDefaultMock = jest.fn()
 
       const { findInputElement } = doMount({
@@ -361,13 +361,13 @@ describe('Input', () => {
 
       inputEl.simulate('keyDown', { key: ' ', preventDefault: preventDefaultMock })
       expect(preventDefaultMock).toHaveBeenCalled()
-      expect(onKeyDownMock).toHaveBeenCalled()
+      expect(onKeyDownMock).toHaveReturned()
       preventDefaultMock.mockClear()
       onKeyDownMock.mockClear()
 
       inputEl.simulate('keyDown', { key: 'j', preventDefault: preventDefaultMock })
       expect(preventDefaultMock).not.toHaveBeenCalled()
-      expect(onKeyDownMock).toHaveBeenCalled()
+      expect(onKeyDownMock).toHaveReturned()
     })
   })
 
