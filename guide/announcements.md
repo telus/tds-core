@@ -8,12 +8,14 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 ### New TDS Core Component ✨
 
-**TermsAndConditions v1 and Redux-Contentful v6**
+**TermsAndConditions v1**
 
-TermsAndConditions component
-Replace all those ExpandCollapses with a component custom-made for the distribution of legal copy! A more subtle look and feel combined with options for numbered and non-numbered legal terms will make your page look nicer while also making the dev experience smoother.
+TermsAndConditions component  
+Replace all those ExpandCollapses with a component purpose-built for the distribution of legal copy! A more subtle look
+and feel combined with options for numbered and non-numbered legal terms will make your page look nicer while also making
+the developer experience smoother.
 
-Footnote and FootnoteLink
+Footnote and FootnoteLink  
 Show legal copy to your users quickly and in an accessible manner! Footnote combined with FootnoteLink will open a modal on the bottom of the screen that shows the relevant legal copy to the link selected.
 
 [Terms and Conditions docs](https://tds.telus.com/components/index.html#terms-and-conditions)
@@ -22,17 +24,11 @@ Show legal copy to your users quickly and in an accessible manner! Footnote comb
 
 **Skeleton Provider**
 
-Skeleton provider is used as a container for other components, it enhances a sub-set of TDS core components by adding skeleton property. The skeleton property will transform the child component into a skeleton. The skeleton property can be set to an object with options to customize how the skeleton will appear.
+Skeleton provider is used as a container for other components, it enhances a subset of TDS core components by adding skeleton property. The skeleton property will transform the child component into a skeleton. The skeleton property can be set to an object with options to customize how the skeleton will appear.
 
 [SkeletonProvider docs](https://tds.telus.com/community/index.html#skeletonprovider)
 
 ### Features 🎁
-
-**TermsAndConditions 1.0.8**
-
-Terms and conditions component renders anchor tags as TDS Link
-
-- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.0.8)
 
 **StandaloneIcon 2.1.0**
 
@@ -61,21 +57,30 @@ Select component now has a new prop: hintPosition
 Notification component has new props to add onDismiss and onExit callbacks
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%401.3.0)
 
-### Fixes 
+### Fixes
+
+**TermsAndConditions 1.0.8**
+
+Terms and conditions component renders anchor tags as TDS Links
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.0.8)
 
 **UnorderedList 3.0.7**
 
 UnorderedList released with icon padding adjustments
+
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-unordered-list%403.0.7)
 
 **Input 3.0.9**
 
 Input uncontrolled to controlled warning fix
+
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%403.0.9)
 
 **Tooltip 4.0.3**
 
-Added type=”button” to the StandaloneIcon in Tooltip 
+Added `type="button"` to the StandaloneIcon in Tooltip
+
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-tooltip%404.0.3)
 
 **StandaloneIcon 1.1.2**
