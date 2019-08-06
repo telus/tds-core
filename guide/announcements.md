@@ -4,6 +4,142 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
+## July 2019
+
+### New TDS Core Component ✨
+
+**TermsAndConditions v1 and Redux-Contentful v6**
+
+TermsAndConditions component
+Replace all those ExpandCollapses with a component custom-made for the distribution of legal copy! A more subtle look and feel combined with options for numbered and non-numbered legal terms will make your page look nicer while also making the dev experience smoother.
+
+Footnote and FootnoteLink
+Show legal copy to your users quickly and in an accessible manner! Footnote combined with FootnoteLink will open a modal on the bottom of the screen that shows the relevant legal copy to the link selected.
+
+[Terms and Conditions docs](https://tds.telus.com/components/index.html#terms-and-conditions)
+
+### New TDS Community Component ✨
+
+**Skeleton Provider**
+
+Skeleton provider is used as a container for other components, it enhances a sub-set of TDS core components by adding skeleton property. The skeleton property will transform the child component into a skeleton. The skeleton property can be set to an object with options to customize how the skeleton will appear.
+
+[SkeletonProvider docs](https://tds.telus.com/community/index.html#skeletonprovider)
+
+### Features 🎁
+
+**TermsAndConditions 1.0.8**
+
+Terms and conditions component renders anchor tags as TDS Link
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.0.8)
+
+**StandaloneIcon 2.1.0**
+
+Additional icon sizes are available (20px, 32px) in StandaloneIcon
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-standalone-icon%402.1.0)
+
+**DecorativeIcon 2.1.0**
+
+Additional icon sizes are available (20px, 32px) in DecorativeIcon
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.1.0)
+
+**Shared-hocs 1.1.0**
+
+An improvement to the focus trap HOC, which will affect the accessibility of modal components, including Terms and Conditions:
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fshared-hocs%401.1.0)
+
+**Select 3.1.0**
+
+Select component now has a new prop: hintPosition
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-select%403.1.0)
+
+**Notification 1.3.0**
+
+Notification component has new props to add onDismiss and onExit callbacks
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%401.3.0)
+
+### Fixes 
+
+**UnorderedList 3.0.7**
+
+UnorderedList released with icon padding adjustments
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-unordered-list%403.0.7)
+
+**Input 3.0.9**
+
+Input uncontrolled to controlled warning fix
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%403.0.9)
+
+**Tooltip 4.0.3**
+
+Added type=”button” to the StandaloneIcon in Tooltip 
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-tooltip%404.0.3)
+
+**StandaloneIcon 1.1.2**
+
+Standalone icon accessibility fix
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-standalone-icon%401.1.2)
+
+### Documentation 🎁
+
+Check out the updated documentation for [Expand Collapse](https://tds.telus.com/components/index.html#expandcollapse)
+
+### Styled Components upgrades 💅
+
+With all 40 components refactored, TDS V3 “with styled components” has been officially released!
+See our release notes for full details: https://github.com/telus/tds-core/releases/tag/v3.0.0
+
+**Spinner 3.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-spinner%403.0.0)
+
+**Css-reset 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-css-reset%402.0.0)
+
+**FlexGrid 3.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-flex-grid%403.0.0)
+
+**Core-colours 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-colours%402.0.0)
+
+**StepTracker 4.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-step-tracker%404.0.0)
+
+**Notification 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%402.0.0)
+
+**Box 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-box%402.0.0)
+
+**Text 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-text%402.0.0)
+
+**Paragraph 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-paragraph%402.0.0)
+
+**StandloneIcon 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-standalone-icon%402.0.0)
+
+**DecorativeIcon 2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.0.0)
+
+**Tooltip 4.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-tooltip%404.0.0)
+
 ## June 2019
 
 ### Community component updates
