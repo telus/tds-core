@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.15](https://github.com/telus/tds/compare/@tds/core-input@3.0.14...@tds/core-input@3.0.15) (2019-08-06)
+
+
+### Bug Fixes
+
+* **core-input:** add event propagation to onKeyDown to Input ([62303c0](https://github.com/telus/tds/commit/62303c0))
+
+
+
+
+
 ## [3.0.14](https://github.com/telus/tds/compare/@tds/core-input@3.0.13...@tds/core-input@3.0.14) (2019-08-01)
 
 **Note:** Version bump only for package @tds/core-input

@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-text-area",
-  "version": "3.0.13",
+  "version": "3.0.14",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -27,7 +27,7 @@
   "dependencies": {
     "@tds/core-box": "^2.0.1",
     "@tds/core-colours": "^2.0.0",
-    "@tds/core-input": "^3.0.14",
+    "@tds/core-input": "^3.0.15",
     "@tds/core-input-feedback": "^2.0.5",
     "@tds/core-paragraph": "^2.0.2",
     "@tds/core-standalone-icon": "^2.1.1",
