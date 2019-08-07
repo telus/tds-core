@@ -11,7 +11,7 @@ const StyledCard = styled(({ variant, ...rest }) => <Box {...rest} />)(({ varian
   ...borders.none,
   ...borders.rounded,
   ...(variant === 'white' && {
-    boxShadow: '0 0 16px 0 rgba(213, 213, 213, 0.5)',
+    boxShadow: '0 0 16px 0 rgba(0, 0, 0, 0.1)',
     backgroundColor: colorWhite,
   }),
   ...(variant === 'lavender' && {
