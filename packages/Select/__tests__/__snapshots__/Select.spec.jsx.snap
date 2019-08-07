@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select can have an error message 1`] = `
-.c14 {
+.c13 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -19,11 +19,11 @@ exports[`Select can have an error message 1`] = `
   font-size: 1rem;
 }
 
-.c14::before {
+.c13::before {
   content: '\\f103';
 }
 
-.c16 {
+.c15 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -41,11 +41,11 @@ exports[`Select can have an error message 1`] = `
   font-size: 1rem;
 }
 
-.c16::before {
+.c15::before {
   content: '\\f105';
 }
 
-.c4 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
@@ -58,7 +58,7 @@ exports[`Select can have an error message 1`] = `
   font-weight: 700;
 }
 
-.c4 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -66,7 +66,7 @@ exports[`Select can have an error message 1`] = `
   padding-left: 0.1em;
 }
 
-.c7 {
+.c6 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -82,7 +82,7 @@ exports[`Select can have an error message 1`] = `
   text-align: left;
 }
 
-.c7 sup {
+.c6 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -105,10 +105,6 @@ exports[`Select can have an error message 1`] = `
 }
 
 .c1 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -118,21 +114,11 @@ exports[`Select can have an error message 1`] = `
   flex-direction: row;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
+.c1 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c12 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -142,11 +128,11 @@ exports[`Select can have an error message 1`] = `
   flex-direction: row;
 }
 
-.c12 > *:not(:last-child) {
+.c11 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.c6 {
+.c5 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -157,21 +143,21 @@ exports[`Select can have an error message 1`] = `
   flex-direction: column;
 }
 
-.c5 {
+.c4 {
   border-radius: 4px;
   background-color: #fff6f8;
 }
 
-.c13 {
+.c12 {
   line-height: 1;
 }
 
-.c9 {
+.c8 {
   background-color: #fff;
   position: relative;
 }
 
-.c10 {
+.c9 {
   height: 3rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -202,11 +188,11 @@ exports[`Select can have an error message 1`] = `
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
-.c10::-ms-expand {
+.c9::-ms-expand {
   display: none;
 }
 
-.c10::-webkit-input-placeholder {
+.c9::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -216,7 +202,7 @@ exports[`Select can have an error message 1`] = `
   color: #54595f;
 }
 
-.c10::-moz-placeholder {
+.c9::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -226,7 +212,7 @@ exports[`Select can have an error message 1`] = `
   color: #54595f;
 }
 
-.c10:-ms-input-placeholder {
+.c9:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -236,7 +222,7 @@ exports[`Select can have an error message 1`] = `
   color: #54595f;
 }
 
-.c10::placeholder {
+.c9::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -246,25 +232,25 @@ exports[`Select can have an error message 1`] = `
   color: #54595f;
 }
 
-.c10::-webkit-inner-spin-button,
-.c10::-webkit-outer-spin-button {
+.c9::-webkit-inner-spin-button,
+.c9::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c10:focus {
+.c9:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c10:not(:focus) {
+.c9:not(:focus) {
   border-color: #c12335;
 }
 
-.c11 {
+.c10 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -274,7 +260,7 @@ exports[`Select can have an error message 1`] = `
   pointer-events: none;
 }
 
-.c15 {
+.c14 {
   line-height: 1;
 }
 
@@ -285,7 +271,7 @@ exports[`Select can have an error message 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c7 {
   position: relative;
 }
 
@@ -332,7 +318,7 @@ exports[`Select can have an error message 1`] = `
             "componentStyle": ComponentStyle {
               "componentId": "sc-bdVaJa",
               "isStatic": false,
-              "lastClassName": "c12",
+              "lastClassName": "c11",
               "rules": Array [
                 [Function],
                 [Function],
@@ -361,17 +347,17 @@ exports[`Select can have an error message 1`] = `
         >
           <div>
             <Box
-              between="space-between"
+              between={2}
               inline={true}
               tag="div"
             >
               <styled.div
-                between="space-between"
+                between={2}
                 inline={true}
                 tag="div"
               >
                 <StyledComponent
-                  between="space-between"
+                  between={2}
                   forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
@@ -381,7 +367,7 @@ exports[`Select can have an error message 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bdVaJa",
                         "isStatic": false,
-                        "lastClassName": "c12",
+                        "lastClassName": "c11",
                         "rules": Array [
                           [Function],
                           [Function],
@@ -468,7 +454,7 @@ exports[`Select can have an error message 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "sc-bdVaJa",
                                       "isStatic": false,
-                                      "lastClassName": "c12",
+                                      "lastClassName": "c11",
                                       "rules": Array [
                                         [Function],
                                         [Function],
@@ -493,7 +479,7 @@ exports[`Select can have an error message 1`] = `
                                 tag="span"
                               >
                                 <span
-                                  className="c2 sc-bZQynM c2 c3"
+                                  className="c2 sc-bZQynM c2 c1"
                                 >
                                   <Text
                                     block={false}
@@ -520,7 +506,7 @@ exports[`Select can have an error message 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "Text__StyledText-sc-1m0rr67-0",
                                               "isStatic": false,
-                                              "lastClassName": "c4",
+                                              "lastClassName": "c3",
                                               "rules": Array [
                                                 [Function],
                                                 [Function],
@@ -551,7 +537,7 @@ exports[`Select can have an error message 1`] = `
                                         size="medium"
                                       >
                                         <span
-                                          className="c4"
+                                          className="c3"
                                           data-testid="selectLabel"
                                           size="medium"
                                         >
@@ -591,7 +577,7 @@ exports[`Select can have an error message 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-bwzfXH",
                       "isStatic": false,
-                      "lastClassName": "c5",
+                      "lastClassName": "c4",
                       "rules": Array [
                         [Function],
                       ],
@@ -612,14 +598,14 @@ exports[`Select can have an error message 1`] = `
                 role="alert"
               >
                 <Component
-                  className="c5"
+                  className="c4"
                   feedback="error"
                   id="some-id_error-message"
                   inset={3}
                   role="alert"
                 >
                   <Box
-                    className="c5"
+                    className="c4"
                     id="some-id_error-message"
                     inline={false}
                     inset={3}
@@ -627,7 +613,7 @@ exports[`Select can have an error message 1`] = `
                     tag="div"
                   >
                     <styled.div
-                      className="c5"
+                      className="c4"
                       id="some-id_error-message"
                       inline={false}
                       inset={3}
@@ -635,7 +621,7 @@ exports[`Select can have an error message 1`] = `
                       tag="div"
                     >
                       <StyledComponent
-                        className="c5"
+                        className="c4"
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
@@ -645,7 +631,7 @@ exports[`Select can have an error message 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-bdVaJa",
                               "isStatic": false,
-                              "lastClassName": "c12",
+                              "lastClassName": "c11",
                               "rules": Array [
                                 [Function],
                                 [Function],
@@ -673,7 +659,7 @@ exports[`Select can have an error message 1`] = `
                         tag="div"
                       >
                         <div
-                          className="c5 sc-bwzfXH c5 c6"
+                          className="c4 sc-bwzfXH c4 c5"
                           id="some-id_error-message"
                           role="alert"
                         >
@@ -699,7 +685,7 @@ exports[`Select can have an error message 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "Paragraph__StyledParagraph-efl81j-0",
                                       "isStatic": false,
-                                      "lastClassName": "c7",
+                                      "lastClassName": "c6",
                                       "rules": Array [
                                         [Function],
                                         "word-wrap: break-word;",
@@ -733,7 +719,7 @@ exports[`Select can have an error message 1`] = `
                                 size="small"
                               >
                                 <p
-                                  className="c7"
+                                  className="c6"
                                   size="small"
                                 >
                                   Oh no a terrible error!
@@ -769,7 +755,7 @@ exports[`Select can have an error message 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-gzVnrw",
                     "isStatic": false,
-                    "lastClassName": "c8",
+                    "lastClassName": "c7",
                     "rules": Array [
                       [Function],
                     ],
@@ -787,7 +773,7 @@ exports[`Select can have an error message 1`] = `
               forwardedRef={null}
             >
               <div
-                className="c8"
+                className="c7"
               >
                 <Select__SelectWrapper>
                   <StyledComponent
@@ -798,7 +784,7 @@ exports[`Select can have an error message 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "Select__SelectWrapper-sc-1kajzpi-0",
                           "isStatic": true,
-                          "lastClassName": "c9",
+                          "lastClassName": "c8",
                           "rules": Array [
                             "background-color: #fff;",
                             "position: relative;",
@@ -817,7 +803,7 @@ exports[`Select can have an error message 1`] = `
                     forwardedRef={null}
                   >
                     <div
-                      className="c9"
+                      className="c8"
                     >
                       <Select__StyledSelect
                         aria-describedby="some-id_error-message"
@@ -840,7 +826,7 @@ exports[`Select can have an error message 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "Select__StyledSelect-sc-1kajzpi-1",
                                 "isStatic": false,
-                                "lastClassName": "c10",
+                                "lastClassName": "c9",
                                 "rules": Array [
                                   "height: 3rem;",
                                   "appearance: none;",
@@ -898,7 +884,7 @@ exports[`Select can have an error message 1`] = `
                           <select
                             aria-describedby="some-id_error-message"
                             aria-invalid={true}
-                            className="c10"
+                            className="c9"
                             defaultValue=""
                             id="some-id"
                             onBlur={[Function]}
@@ -932,7 +918,7 @@ exports[`Select can have an error message 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "sc-EHOje",
                                 "isStatic": true,
-                                "lastClassName": "c11",
+                                "lastClassName": "c10",
                                 "rules": Array [
                                   "position: absolute;",
                                   "top: 50%;",
@@ -956,19 +942,19 @@ exports[`Select can have an error message 1`] = `
                         >
                           <Box
                             between={3}
-                            className="c11"
+                            className="c10"
                             inline={true}
                             tag="div"
                           >
                             <styled.div
                               between={3}
-                              className="c11"
+                              className="c10"
                               inline={true}
                               tag="div"
                             >
                               <StyledComponent
                                 between={3}
-                                className="c11"
+                                className="c10"
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
@@ -978,7 +964,7 @@ exports[`Select can have an error message 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "sc-bdVaJa",
                                       "isStatic": false,
-                                      "lastClassName": "c12",
+                                      "lastClassName": "c11",
                                       "rules": Array [
                                         [Function],
                                         [Function],
@@ -1003,7 +989,7 @@ exports[`Select can have an error message 1`] = `
                                 tag="div"
                               >
                                 <div
-                                  className="c11 sc-EHOje c11 c12"
+                                  className="c10 sc-EHOje c10 c11"
                                 >
                                   <FeedbackIcon
                                     feedback="error"
@@ -1047,7 +1033,7 @@ exports[`Select can have an error message 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "FeedbackIcon__StyledIcon-yxz8rh-0",
                                                     "isStatic": true,
-                                                    "lastClassName": "c13",
+                                                    "lastClassName": "c12",
                                                     "rules": Array [
                                                       "line-height: 1;",
                                                     ],
@@ -1065,7 +1051,7 @@ exports[`Select can have an error message 1`] = `
                                               forwardedRef={null}
                                             >
                                               <div
-                                                className="c13"
+                                                className="c12"
                                               >
                                                 <StandaloneIcon
                                                   a11yText="The value of this input field is invalid."
@@ -1091,7 +1077,7 @@ exports[`Select can have an error message 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
                                                               "isStatic": false,
-                                                              "lastClassName": "c14",
+                                                              "lastClassName": "c13",
                                                               "rules": Array [
                                                                 [Function],
                                                                 [Function],
@@ -1114,7 +1100,7 @@ exports[`Select can have an error message 1`] = `
                                                         variant="error"
                                                       >
                                                         <i
-                                                          className="c14"
+                                                          className="c13"
                                                         />
                                                       </StyledComponent>
                                                     </Icon__StyledIcon>
@@ -1136,7 +1122,7 @@ exports[`Select can have an error message 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "Select__IconLineFix-sc-1kajzpi-2",
                                             "isStatic": true,
-                                            "lastClassName": "c15",
+                                            "lastClassName": "c14",
                                             "rules": Array [
                                               "line-height: 1;",
                                             ],
@@ -1154,7 +1140,7 @@ exports[`Select can have an error message 1`] = `
                                       forwardedRef={null}
                                     >
                                       <div
-                                        className="c15"
+                                        className="c14"
                                       >
                                         <DecorativeIcon
                                           size={16}
@@ -1182,7 +1168,7 @@ exports[`Select can have an error message 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c16",
+                                                      "lastClassName": "c15",
                                                       "rules": Array [
                                                         [Function],
                                                         [Function],
@@ -1206,7 +1192,7 @@ exports[`Select can have an error message 1`] = `
                                               >
                                                 <i
                                                   aria-hidden="true"
-                                                  className="c16"
+                                                  className="c15"
                                                 />
                                               </StyledComponent>
                                             </Icon__StyledIcon>
@@ -1942,7 +1928,7 @@ exports[`Select needs a set of options 1`] = `[Function]`;
 exports[`Select positions the down caret so that the text does not overlap it 1`] = `[Function]`;
 
 exports[`Select renders 1`] = `
-.c11 {
+.c10 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -1960,11 +1946,11 @@ exports[`Select renders 1`] = `
   font-size: 1rem;
 }
 
-.c11::before {
+.c10::before {
   content: '\\f105';
 }
 
-.c4 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
@@ -1977,7 +1963,7 @@ exports[`Select renders 1`] = `
   font-weight: 700;
 }
 
-.c4 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -2000,10 +1986,6 @@ exports[`Select renders 1`] = `
 }
 
 .c1 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2013,21 +1995,11 @@ exports[`Select renders 1`] = `
   flex-direction: row;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
+.c1 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2037,16 +2009,16 @@ exports[`Select renders 1`] = `
   flex-direction: row;
 }
 
-.c9 > *:not(:last-child) {
+.c8 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.c6 {
+.c5 {
   background-color: #fff;
   position: relative;
 }
 
-.c7 {
+.c6 {
   height: 3rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2077,11 +2049,11 @@ exports[`Select renders 1`] = `
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
-.c7::-ms-expand {
+.c6::-ms-expand {
   display: none;
 }
 
-.c7::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -2091,7 +2063,7 @@ exports[`Select renders 1`] = `
   color: #54595f;
 }
 
-.c7::-moz-placeholder {
+.c6::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -2101,7 +2073,7 @@ exports[`Select renders 1`] = `
   color: #54595f;
 }
 
-.c7:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -2111,7 +2083,7 @@ exports[`Select renders 1`] = `
   color: #54595f;
 }
 
-.c7::placeholder {
+.c6::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -2121,21 +2093,21 @@ exports[`Select renders 1`] = `
   color: #54595f;
 }
 
-.c7::-webkit-inner-spin-button,
-.c7::-webkit-outer-spin-button {
+.c6::-webkit-inner-spin-button,
+.c6::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c8 {
+.c7 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -2145,7 +2117,7 @@ exports[`Select renders 1`] = `
   pointer-events: none;
 }
 
-.c10 {
+.c9 {
   line-height: 1;
 }
 
@@ -2156,7 +2128,7 @@ exports[`Select renders 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   position: relative;
 }
 
@@ -2171,10 +2143,10 @@ exports[`Select renders 1`] = `
         for="the-select"
       >
         <span
-          class="c2 sc-bZQynM c2 c3"
+          class="c2 sc-bZQynM c2 c1"
         >
           <span
-            class="c4"
+            class="c3"
             data-testid="selectLabel"
           >
             The select
@@ -2184,14 +2156,14 @@ exports[`Select renders 1`] = `
     </div>
   </div>
   <div
-    class="c5"
+    class="c4"
   >
     <div
-      class="c6"
+      class="c5"
     >
       <select
         aria-invalid="false"
-        class="c7"
+        class="c6"
         id="the-select"
       >
         <option
@@ -2206,14 +2178,14 @@ exports[`Select renders 1`] = `
         </option>
       </select>
       <div
-        class="c8 sc-EHOje c8 c9"
+        class="c7 sc-EHOje c7 c8"
       >
         <div
-          class="c10"
+          class="c9"
         >
           <i
             aria-hidden="true"
-            class="c11"
+            class="c10"
           />
         </div>
       </div>
@@ -2223,7 +2195,7 @@ exports[`Select renders 1`] = `
 `;
 
 exports[`Select renders with a feedback state and icon 1`] = `
-.c11 {
+.c10 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -2241,11 +2213,11 @@ exports[`Select renders with a feedback state and icon 1`] = `
   font-size: 1rem;
 }
 
-.c11::before {
+.c10::before {
   content: '\\f103';
 }
 
-.c13 {
+.c12 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -2263,11 +2235,11 @@ exports[`Select renders with a feedback state and icon 1`] = `
   font-size: 1rem;
 }
 
-.c13::before {
+.c12::before {
   content: '\\f105';
 }
 
-.c4 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
@@ -2280,7 +2252,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   font-weight: 700;
 }
 
-.c4 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -2303,10 +2275,6 @@ exports[`Select renders with a feedback state and icon 1`] = `
 }
 
 .c1 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2316,21 +2284,11 @@ exports[`Select renders with a feedback state and icon 1`] = `
   flex-direction: row;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
+.c1 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2340,20 +2298,20 @@ exports[`Select renders with a feedback state and icon 1`] = `
   flex-direction: row;
 }
 
-.c9 > *:not(:last-child) {
+.c8 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.c10 {
+.c9 {
   line-height: 1;
 }
 
-.c6 {
+.c5 {
   background-color: #fff;
   position: relative;
 }
 
-.c7 {
+.c6 {
   height: 3rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2384,11 +2342,11 @@ exports[`Select renders with a feedback state and icon 1`] = `
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
-.c7::-ms-expand {
+.c6::-ms-expand {
   display: none;
 }
 
-.c7::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -2398,7 +2356,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c7::-moz-placeholder {
+.c6::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -2408,7 +2366,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c7:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -2418,7 +2376,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c7::placeholder {
+.c6::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -2428,25 +2386,25 @@ exports[`Select renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c7::-webkit-inner-spin-button,
-.c7::-webkit-outer-spin-button {
+.c6::-webkit-inner-spin-button,
+.c6::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c7:not(:focus) {
+.c6:not(:focus) {
   border-color: #c12335;
 }
 
-.c8 {
+.c7 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -2456,7 +2414,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   pointer-events: none;
 }
 
-.c12 {
+.c11 {
   line-height: 1;
 }
 
@@ -2467,7 +2425,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   position: relative;
 }
 
@@ -2482,10 +2440,10 @@ exports[`Select renders with a feedback state and icon 1`] = `
         for="the-select"
       >
         <span
-          class="c2 sc-bZQynM c2 c3"
+          class="c2 sc-bZQynM c2 c1"
         >
           <span
-            class="c4"
+            class="c3"
             data-testid="selectLabel"
           >
             The select
@@ -2495,14 +2453,14 @@ exports[`Select renders with a feedback state and icon 1`] = `
     </div>
   </div>
   <div
-    class="c5"
+    class="c4"
   >
     <div
-      class="c6"
+      class="c5"
     >
       <select
         aria-invalid="true"
-        class="c7"
+        class="c6"
         id="the-select"
       >
         <option
@@ -2517,25 +2475,25 @@ exports[`Select renders with a feedback state and icon 1`] = `
         </option>
       </select>
       <div
-        class="c8 sc-EHOje c8 c9"
+        class="c7 sc-EHOje c7 c8"
       >
         <div
           style="transition:opacity 100ms ease-in-out;opacity:1"
         >
           <div
-            class="c10"
+            class="c9"
           >
             <i
-              class="c11"
+              class="c10"
             />
           </div>
         </div>
         <div
-          class="c12"
+          class="c11"
         >
           <i
             aria-hidden="true"
-            class="c13"
+            class="c12"
           />
         </div>
       </div>

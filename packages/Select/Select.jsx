@@ -133,7 +133,7 @@ const renderError = (error, errorId) => (
 
 const renderLabel = (id, label, hint, hintPosition, hintId, tooltip) => (
   <div>
-    <Box inline between="space-between">
+    <Box inline between={2}>
       <label htmlFor={id || generateId(label).identity()}>
         <StyledLabelContainer inline tag="span" between={2}>
           <Text size="medium" bold data-testid="selectLabel">
