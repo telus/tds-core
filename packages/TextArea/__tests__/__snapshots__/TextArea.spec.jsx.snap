@@ -474,7 +474,7 @@ exports[`TextArea label can have a short hint 1`] = `
 `;
 
 exports[`TextArea renders 1`] = `
-.c4 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
@@ -487,7 +487,7 @@ exports[`TextArea renders 1`] = `
   font-weight: 700;
 }
 
-.c4 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -510,10 +510,6 @@ exports[`TextArea renders 1`] = `
 }
 
 .c1 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -523,21 +519,11 @@ exports[`TextArea renders 1`] = `
   flex-direction: row;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
+.c1 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c5 {
+.c4 {
   max-width: 100%;
   min-width: 100%;
   min-height: 208px;
@@ -551,7 +537,7 @@ exports[`TextArea renders 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   max-width: 100%;
   min-width: 100%;
   min-height: 208px;
@@ -579,7 +565,7 @@ exports[`TextArea renders 1`] = `
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
-.c6::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -589,7 +575,7 @@ exports[`TextArea renders 1`] = `
   color: #54595f;
 }
 
-.c6::-moz-placeholder {
+.c5::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -599,7 +585,7 @@ exports[`TextArea renders 1`] = `
   color: #54595f;
 }
 
-.c6:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -609,7 +595,7 @@ exports[`TextArea renders 1`] = `
   color: #54595f;
 }
 
-.c6::placeholder {
+.c5::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -619,21 +605,21 @@ exports[`TextArea renders 1`] = `
   color: #54595f;
 }
 
-.c6::-webkit-inner-spin-button,
-.c6::-webkit-outer-spin-button {
+.c5::-webkit-inner-spin-button,
+.c5::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c6:focus {
+.c5:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c7 {
+.c6 {
   position: absolute;
   right: 1rem;
   top: 0.5rem;
@@ -650,10 +636,10 @@ exports[`TextArea renders 1`] = `
       for="the-textarea"
     >
       <span
-        class="c2 sc-EHOje c2 c3"
+        class="c2 sc-EHOje c2 c1"
       >
         <span
-          class="c4"
+          class="c3"
         >
           The textarea
         </span>
@@ -661,22 +647,22 @@ exports[`TextArea renders 1`] = `
     </label>
   </div>
   <div
-    class="c5"
+    class="c4"
   >
     <textarea
       aria-invalid="false"
-      class="c6"
+      class="c5"
       id="the-textarea"
     />
     <div
-      class="c7"
+      class="c6"
     />
   </div>
 </div>
 `;
 
 exports[`TextArea renders with a feedback state and icon 1`] = `
-.c9 {
+.c8 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -694,11 +680,11 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   font-size: 1rem;
 }
 
-.c9::before {
+.c8::before {
   content: '\\f103';
 }
 
-.c4 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
@@ -711,7 +697,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   font-weight: 700;
 }
 
-.c4 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -734,10 +720,6 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
 }
 
 .c1 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -747,25 +729,15 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   flex-direction: row;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
+.c1 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c8 {
+.c7 {
   line-height: 1;
 }
 
-.c5 {
+.c4 {
   max-width: 100%;
   min-width: 100%;
   min-height: 208px;
@@ -779,7 +751,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   max-width: 100%;
   min-width: 100%;
   min-height: 208px;
@@ -807,7 +779,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 
-.c6::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -817,7 +789,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c6::-moz-placeholder {
+.c5::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -827,7 +799,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c6:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -837,7 +809,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c6::placeholder {
+.c5::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -847,25 +819,25 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c6::-webkit-inner-spin-button,
-.c6::-webkit-outer-spin-button {
+.c5::-webkit-inner-spin-button,
+.c5::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c6:focus {
+.c5:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c6:not(:focus) {
+.c5:not(:focus) {
   border-color: #c12335;
 }
 
-.c7 {
+.c6 {
   position: absolute;
   right: 1rem;
   top: 0.5rem;
@@ -882,10 +854,10 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
       for="the-textarea"
     >
       <span
-        class="c2 sc-EHOje c2 c3"
+        class="c2 sc-EHOje c2 c1"
       >
         <span
-          class="c4"
+          class="c3"
         >
           The textarea
         </span>
@@ -893,24 +865,24 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
     </label>
   </div>
   <div
-    class="c5"
+    class="c4"
   >
     <textarea
       aria-invalid="true"
-      class="c6"
+      class="c5"
       id="the-textarea"
     />
     <div
-      class="c7"
+      class="c6"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="c8"
+          class="c7"
         >
           <i
-            class="c9"
+            class="c8"
           />
         </div>
       </div>

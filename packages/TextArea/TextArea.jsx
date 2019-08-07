@@ -117,7 +117,7 @@ const renderError = (error, errorId) => (
   </InputFeedback>
 )
 const renderLabel = (id, label, hint, hintId, tooltip) => (
-  <Box inline between="space-between">
+  <Box inline between={2}>
     <label htmlFor={id || generateId(label).identity()}>
       <StyledLabelContainer inline tag="span" between={2}>
         <Text size="medium" bold>
