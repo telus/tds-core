@@ -9,7 +9,6 @@ import styled from 'styled-components'
 import ButtonGroupItem from './ButtonGroupItem/ButtonGroupItem'
 
 import safeRest from '../../shared/utils/safeRest'
-import { warn } from '../../shared/utils/warn'
 
 const StyledButtonGroup = styled(Box)({
   flexFlow: 'row wrap',
@@ -36,13 +35,6 @@ const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, 
     buttonValues.push(passedButtons[key].props.value)
   })
 
-  if (buttonValues.indexOf(value) === -1) {
-    warn(
-      'ButtonGroup',
-      `Selected value "${value}" of ButtonGroup named "${name}" does not match the value of any button in the group. A button must be selected by default. Available button values are: ${buttonValues}`
-    )
-  }
-
   return (
     <fieldset {...safeRest(rest)} name={name}>
       <legend>
@@ -66,7 +58,7 @@ ButtonGroup.propTypes = {
   /**
    * The current selected value for the group.
    */
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   /**
    * A label to be displayed above the ButtonGroup.
    */
@@ -98,6 +90,7 @@ ButtonGroup.propTypes = {
 ButtonGroup.defaultProps = {
   onFocus: undefined,
   onBlur: undefined,
+  value: undefined,
 }
 
 ButtonGroup.Item = ButtonGroupItem
