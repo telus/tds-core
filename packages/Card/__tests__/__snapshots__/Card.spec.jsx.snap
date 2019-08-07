@@ -15,7 +15,7 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
 }
 
@@ -155,7 +155,7 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
 }
 
@@ -573,7 +573,7 @@ exports[`<Card /> renders 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
 }
 
