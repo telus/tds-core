@@ -33,7 +33,7 @@ const StyledFootnote = styled.div(
     width: '100vw',
     backgroundColor: colorAthensGrey,
     display: 'block',
-    boxShadow: '0 0 16px 0 rgba(213, 213, 213, 0.5)',
+    boxShadow: '0 0 16px 0 rgba(0, 0, 0, 0.1)',
     transform: 'translateY(100%)',
     transition: 'transform 500ms ease-out',
     zIndex: 99999,

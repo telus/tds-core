@@ -118,7 +118,7 @@ div.c5 {
   width: 100vw;
   background-color: #f7f7f8;
   display: block;
-  box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
@@ -555,7 +555,7 @@ div.c5 {
   width: 100vw;
   background-color: #f7f7f8;
   display: block;
-  box-shadow: 0 0 16px 0 rgba(213,213,213,0.5);
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
