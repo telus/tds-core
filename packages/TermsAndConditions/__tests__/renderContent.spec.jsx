@@ -15,6 +15,7 @@ describe('renderContent', () => {
     const result = renderContent(content)
     expect(result).toMatchObject([
       'To help us improve this website, we would love to hear your feedback. ',
+      undefined,
       <Link key="2" href="/feedback">
         Tell us what you think
       </Link>,
@@ -26,5 +27,24 @@ describe('renderContent', () => {
     const content = '<strong>Save $600 when you bundle Optik TV and Internet</strong>'
     const result = renderContent(content)
     expect(result).toEqual(['<strong>Save $600 when you bundle Optik TV and Internet</strong>'])
+  })
+
+  it('should replace multiple anchor tags with Links', () => {
+    const content =
+      'To help us improve this website, we would love to hear your feedback. <a href="/feedback">Tell us what you think</a> <a href="telus.com">telus.com</a>.'
+    const result = renderContent(content)
+    expect(result).toMatchObject([
+      'To help us improve this website, we would love to hear your feedback. ',
+      undefined,
+      <Link key="2" href="/feedback">
+        Tell us what you think
+      </Link>,
+      ' ',
+      undefined,
+      <Link key="5" href="telus.com">
+        telus.com
+      </Link>,
+      '.',
+    ])
   })
 })
