@@ -4,7 +4,6 @@ Button Groups are sets of radio inputs styled to look like buttons.
 
 ### Usage criteria
 
-- A single `ButtonGroup.Item` within `ButtonGroup` must be selected by default
 - Use `ButtonGroup` when one selection needs to be made from multiple options
 - Use when there can only be exactly one choice from multiple options
 - Use when there are 2-6 options to choose from
@@ -20,12 +19,16 @@ initialState = {
   choice: '64gb',
 }
 
-
-const onChange = (event) => {
-  setState({choice: event.target.value})
+const onChange = event => {
+  setState({ choice: event.target.value })
 }
 
-<ButtonGroup name="storageSize" onChange={onChange} value={state.choice} label="Please select a storage size">
+;<ButtonGroup
+  name="storageSize"
+  onChange={onChange}
+  value={state.choice}
+  label="Please select a storage size"
+>
   <ButtonGroup.Item value="64gb">64 GB</ButtonGroup.Item>
   <ButtonGroup.Item value="128gb">128 GB</ButtonGroup.Item>
   <ButtonGroup.Item value="256gb">256 GB</ButtonGroup.Item>
@@ -38,17 +41,27 @@ Use the `A11yContent` component to create invisible text that is read out loud b
 
 ```js
 initialState = {
-  choice: 'buy',
+  choice: undefined,
 }
 
-
-const onChange = (event) => {
-  setState({choice: event.target.value})
+const onChange = event => {
+  setState({ choice: event.target.value })
 }
 
-<ButtonGroup name="purposeOfVisit" onChange={onChange} value={state.choice} label="What was the purpose of your visit?">
-  <ButtonGroup.Item value="buy">Buy<A11yContent> mobile phones</A11yContent></ButtonGroup.Item>
-  <ButtonGroup.Item value="inquiry">Inquiry <A11yContent> about mobile phones</A11yContent></ButtonGroup.Item>
-  <ButtonGroup.Item value="tradeIn">Trade-In <A11yContent> mobile phones</A11yContent></ButtonGroup.Item>
+;<ButtonGroup
+  name="purposeOfVisit"
+  onChange={onChange}
+  value={state.choice}
+  label="What was the purpose of your visit?"
+>
+  <ButtonGroup.Item value="buy">
+    Buy<A11yContent> mobile phones</A11yContent>
+  </ButtonGroup.Item>
+  <ButtonGroup.Item value="inquiry">
+    Inquiry <A11yContent> about mobile phones</A11yContent>
+  </ButtonGroup.Item>
+  <ButtonGroup.Item value="tradeIn">
+    Trade-In <A11yContent> mobile phones</A11yContent>
+  </ButtonGroup.Item>
 </ButtonGroup>
 ```
