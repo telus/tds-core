@@ -95,3 +95,5 @@ All TELUS Design System components follow these core principles.
 
 - [TDS Core on GitHub](https://github.com/telus/tds-core)
 - [TDS Community on GitHub](https://github.com/telus/tds-community)
+
+[tds-community-new-issue]: https://github.com/telus/tds-community/issues/new/choose
