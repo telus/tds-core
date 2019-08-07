@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input feedback states ensures that the contents do not overlap the icons 1`] = `
-.c9 {
+.c8 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -19,11 +19,11 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   font-size: 1rem;
 }
 
-.c9::before {
+.c8::before {
   content: '\\f101';
 }
 
-.c4 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
@@ -34,6 +34,240 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
+}
+
+.c3 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.c7 {
+  line-height: 1;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  text-overflow: ellipsis;
+  border-color: #54595f;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2c2e;
+  -moz-appearance: textfield;
+  min-height: 3rem;
+  max-height: 3rem;
+  padding: 0.5rem 1rem;
+}
+
+.c5::-webkit-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c5::-moz-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c5:-ms-input-placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c5::placeholder {
+  font: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: #54595f;
+}
+
+.c5::-webkit-inner-spin-button,
+.c5::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.c5:focus {
+  border-color: transparent;
+  box-shadow: 0 0 4px 1px #54595f;
+  background-color: #fff;
+}
+
+.c5:not(:focus) {
+  border-color: #248700;
+}
+
+.c6 {
+  right: 1rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c4 {
+  position: relative;
+}
+
+<div
+  class="c0"
+>
+  <div>
+    <div
+      class="c1"
+    >
+      <label
+        for="the-input"
+      >
+        <span
+          class="c2 sc-bxivhb c2 c1"
+        >
+          <span
+            class="c3"
+          >
+            The input
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+  <div
+    class="c4"
+  >
+    <input
+      aria-invalid="false"
+      class="c5"
+      id="the-input"
+      type="text"
+    />
+    <div
+      class="c6"
+    >
+      <div
+        style="transition:opacity 100ms ease-in-out;opacity:1"
+      >
+        <div
+          class="c7"
+        >
+          <i
+            class="c8"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input label can have a short hint 1`] = `
+Object {
+  "blur": [Function],
+  "changeValueTo": [Function],
+  "findFeedbackIconFade": [Function],
+  "findHelper": [Function],
+  "findInputElement": [Function],
+  "focus": [Function],
+  "input": .c3 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.c3 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c4 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
 }
 
 .c4 sup {
@@ -59,10 +293,6 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
 }
 
 .c1 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -72,22 +302,8 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   flex-direction: row;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
+.c1 > *:not(:last-child) {
   margin-right: 0.5rem;
-}
-
-.c8 {
-  line-height: 1;
 }
 
 .c2 {
@@ -176,10 +392,6 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   background-color: #fff;
 }
 
-.c6:not(:focus) {
-  border-color: #248700;
-}
-
 .c7 {
   right: 1rem;
   position: absolute;
@@ -190,246 +402,6 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
 }
 
 .c5 {
-  position: relative;
-}
-
-<div
-  class="c0"
->
-  <div>
-    <div
-      class="c1"
-    >
-      <label
-        for="the-input"
-      >
-        <span
-          class="c2 sc-bxivhb c2 c3"
-        >
-          <span
-            class="c4"
-          >
-            The input
-          </span>
-        </span>
-      </label>
-    </div>
-  </div>
-  <div
-    class="c5"
-  >
-    <input
-      aria-invalid="false"
-      class="c6"
-      id="the-input"
-      type="text"
-    />
-    <div
-      class="c7"
-    >
-      <div
-        style="transition:opacity 100ms ease-in-out;opacity:1"
-      >
-        <div
-          class="c8"
-        >
-          <i
-            class="c9"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Input label can have a short hint 1`] = `
-Object {
-  "blur": [Function],
-  "changeValueTo": [Function],
-  "findFeedbackIconFade": [Function],
-  "findHelper": [Function],
-  "findInputElement": [Function],
-  "focus": [Function],
-  "input": .c4 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: 700;
-}
-
-.c4 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c5 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-}
-
-.c5 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.c1 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  width: 100%;
-  margin: 0;
-  outline: 0;
-  text-overflow: ellipsis;
-  border-color: #54595f;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 4px;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #2a2c2e;
-  -moz-appearance: textfield;
-  min-height: 3rem;
-  max-height: 3rem;
-  padding: 0.5rem 1rem;
-}
-
-.c7::-webkit-input-placeholder {
-  font: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  color: #54595f;
-}
-
-.c7::-moz-placeholder {
-  font: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  color: #54595f;
-}
-
-.c7:-ms-input-placeholder {
-  font: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  color: #54595f;
-}
-
-.c7::placeholder {
-  font: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  color: #54595f;
-}
-
-.c7::-webkit-inner-spin-button,
-.c7::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
-.c7:focus {
-  border-color: transparent;
-  box-shadow: 0 0 4px 1px #54595f;
-  background-color: #fff;
-}
-
-.c8 {
-  right: 1rem;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.c6 {
   position: relative;
 }
 
@@ -461,7 +433,7 @@ Object {
               "componentStyle": ComponentStyle {
                 "componentId": "sc-bdVaJa",
                 "isStatic": false,
-                "lastClassName": "c3",
+                "lastClassName": "c1",
                 "rules": Array [
                   [Function],
                   [Function],
@@ -490,17 +462,17 @@ Object {
           >
             <div>
               <Box
-                between="space-between"
+                between={2}
                 inline={true}
                 tag="div"
               >
                 <styled.div
-                  between="space-between"
+                  between={2}
                   inline={true}
                   tag="div"
                 >
                   <StyledComponent
-                    between="space-between"
+                    between={2}
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
@@ -510,7 +482,7 @@ Object {
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "c3",
+                          "lastClassName": "c1",
                           "rules": Array [
                             [Function],
                             [Function],
@@ -597,7 +569,7 @@ Object {
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-bdVaJa",
                                         "isStatic": false,
-                                        "lastClassName": "c3",
+                                        "lastClassName": "c1",
                                         "rules": Array [
                                           [Function],
                                           [Function],
@@ -622,7 +594,7 @@ Object {
                                   tag="span"
                                 >
                                   <span
-                                    className="c2 sc-bxivhb c2 c3"
+                                    className="c2 sc-bxivhb c2 c1"
                                   >
                                     <Text
                                       block={false}
@@ -646,7 +618,7 @@ Object {
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                 "isStatic": false,
-                                                "lastClassName": "c5",
+                                                "lastClassName": "c4",
                                                 "rules": Array [
                                                   [Function],
                                                   [Function],
@@ -677,7 +649,7 @@ Object {
                                           size="medium"
                                         >
                                           <span
-                                            className="c4"
+                                            className="c3"
                                             size="medium"
                                           >
                                             The input
@@ -707,7 +679,7 @@ Object {
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                 "isStatic": false,
-                                                "lastClassName": "c5",
+                                                "lastClassName": "c4",
                                                 "rules": Array [
                                                   [Function],
                                                   [Function],
@@ -738,7 +710,7 @@ Object {
                                           size="small"
                                         >
                                           <span
-                                            className="c5"
+                                            className="c4"
                                             size="small"
                                           >
                                             The short hint
@@ -778,7 +750,7 @@ Object {
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-ifAKCX",
                       "isStatic": false,
-                      "lastClassName": "c6",
+                      "lastClassName": "c5",
                       "rules": Array [
                         [Function],
                       ],
@@ -796,7 +768,7 @@ Object {
                 forwardedRef={null}
               >
                 <div
-                  className="c6"
+                  className="c5"
                 >
                   <Input__StyledInput
                     aria-invalid={false}
@@ -815,7 +787,7 @@ Object {
                           "componentStyle": ComponentStyle {
                             "componentId": "Input__StyledInput-sc-8rmijy-0",
                             "isStatic": false,
-                            "lastClassName": "c7",
+                            "lastClassName": "c6",
                             "rules": Array [
                               "width: 100%;",
                               "margin: 0;",
@@ -867,7 +839,7 @@ Object {
                     >
                       <input
                         aria-invalid={false}
-                        className="c7"
+                        className="c6"
                         id="the-id"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -885,7 +857,7 @@ Object {
                           "componentStyle": ComponentStyle {
                             "componentId": "Input__StyledFeedbackIcon-sc-8rmijy-1",
                             "isStatic": true,
-                            "lastClassName": "c8",
+                            "lastClassName": "c7",
                             "rules": Array [
                               "right: 1rem;",
                               "position: absolute;",
@@ -906,7 +878,7 @@ Object {
                       forwardedRef={null}
                     >
                       <div
-                        className="c8"
+                        className="c7"
                       >
                         <FeedbackIcon
                           showIcon={false}
@@ -1227,7 +1199,7 @@ Object {
 `;
 
 exports[`Input renders 1`] = `
-.c4 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
@@ -1240,7 +1212,7 @@ exports[`Input renders 1`] = `
   font-weight: 700;
 }
 
-.c4 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -1263,10 +1235,6 @@ exports[`Input renders 1`] = `
 }
 
 .c1 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1276,17 +1244,7 @@ exports[`Input renders 1`] = `
   flex-direction: row;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
+.c1 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
@@ -1297,7 +1255,7 @@ exports[`Input renders 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   margin: 0;
   outline: 0;
@@ -1322,7 +1280,7 @@ exports[`Input renders 1`] = `
   padding: 0.5rem 1rem;
 }
 
-.c6::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1332,7 +1290,7 @@ exports[`Input renders 1`] = `
   color: #54595f;
 }
 
-.c6::-moz-placeholder {
+.c5::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1342,7 +1300,7 @@ exports[`Input renders 1`] = `
   color: #54595f;
 }
 
-.c6:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1352,7 +1310,7 @@ exports[`Input renders 1`] = `
   color: #54595f;
 }
 
-.c6::placeholder {
+.c5::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1362,21 +1320,21 @@ exports[`Input renders 1`] = `
   color: #54595f;
 }
 
-.c6::-webkit-inner-spin-button,
-.c6::-webkit-outer-spin-button {
+.c5::-webkit-inner-spin-button,
+.c5::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c6:focus {
+.c5:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c7 {
+.c6 {
   right: 1rem;
   position: absolute;
   top: 50%;
@@ -1385,7 +1343,7 @@ exports[`Input renders 1`] = `
   transform: translateY(-50%);
 }
 
-.c5 {
+.c4 {
   position: relative;
 }
 
@@ -1400,10 +1358,10 @@ exports[`Input renders 1`] = `
         for="the-input"
       >
         <span
-          class="c2 sc-bxivhb c2 c3"
+          class="c2 sc-bxivhb c2 c1"
         >
           <span
-            class="c4"
+            class="c3"
           >
             The input
           </span>
@@ -1412,23 +1370,23 @@ exports[`Input renders 1`] = `
     </div>
   </div>
   <div
-    class="c5"
+    class="c4"
   >
     <input
       aria-invalid="false"
-      class="c6"
+      class="c5"
       id="the-input"
       type="text"
     />
     <div
-      class="c7"
+      class="c6"
     />
   </div>
 </div>
 `;
 
 exports[`Input renders with a feedback state and icon 1`] = `
-.c9 {
+.c8 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -1446,11 +1404,11 @@ exports[`Input renders with a feedback state and icon 1`] = `
   font-size: 1rem;
 }
 
-.c9::before {
+.c8::before {
   content: '\\f103';
 }
 
-.c4 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
@@ -1463,7 +1421,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   font-weight: 700;
 }
 
-.c4 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -1486,10 +1444,6 @@ exports[`Input renders with a feedback state and icon 1`] = `
 }
 
 .c1 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1499,21 +1453,11 @@ exports[`Input renders with a feedback state and icon 1`] = `
   flex-direction: row;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
+.c1 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c8 {
+.c7 {
   line-height: 1;
 }
 
@@ -1524,7 +1468,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   margin: 0;
   outline: 0;
@@ -1549,7 +1493,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   padding: 0.5rem 1rem;
 }
 
-.c6::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1559,7 +1503,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c6::-moz-placeholder {
+.c5::-moz-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1569,7 +1513,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c6:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1579,7 +1523,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c6::placeholder {
+.c5::placeholder {
   font: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1589,25 +1533,25 @@ exports[`Input renders with a feedback state and icon 1`] = `
   color: #54595f;
 }
 
-.c6::-webkit-inner-spin-button,
-.c6::-webkit-outer-spin-button {
+.c5::-webkit-inner-spin-button,
+.c5::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-.c6:focus {
+.c5:focus {
   border-color: transparent;
   box-shadow: 0 0 4px 1px #54595f;
   background-color: #fff;
 }
 
-.c6:not(:focus) {
+.c5:not(:focus) {
   border-color: #c12335;
 }
 
-.c7 {
+.c6 {
   right: 1rem;
   position: absolute;
   top: 50%;
@@ -1616,7 +1560,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
   transform: translateY(-50%);
 }
 
-.c5 {
+.c4 {
   position: relative;
 }
 
@@ -1631,10 +1575,10 @@ exports[`Input renders with a feedback state and icon 1`] = `
         for="the-input"
       >
         <span
-          class="c2 sc-bxivhb c2 c3"
+          class="c2 sc-bxivhb c2 c1"
         >
           <span
-            class="c4"
+            class="c3"
           >
             The input
           </span>
@@ -1643,25 +1587,25 @@ exports[`Input renders with a feedback state and icon 1`] = `
     </div>
   </div>
   <div
-    class="c5"
+    class="c4"
   >
     <input
       aria-invalid="true"
-      class="c6"
+      class="c5"
       id="the-input"
       type="text"
     />
     <div
-      class="c7"
+      class="c6"
     >
       <div
         style="transition:opacity 100ms ease-in-out;opacity:1"
       >
         <div
-          class="c8"
+          class="c7"
         >
           <i
-            class="c9"
+            class="c8"
           />
         </div>
       </div>
