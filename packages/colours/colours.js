@@ -6,6 +6,7 @@ export const colorPanache = '#f4f9f2'
 export const colorShuttleGrey = '#54595f'
 export const colorShark = '#2a2c2e'
 export const colorAthensGrey = '#f7f7f8'
+export const colorGreyRaven = '#71757b'
 
 export const colorTelusPurple = '#4b286d'
 
