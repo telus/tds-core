@@ -14,6 +14,10 @@ Button Groups are sets of radio inputs styled to look like buttons.
 
 The `label` prop on the parent `ButtonGroup` component will add a label to the whole group. This value will be read by assistive technology when the group is focused.
 
+### Controlled ButtonGroup
+
+If it is required that the state of the `ButtonGroup` be controlled by the application or other external methods, `value` and `onChange` props must be passed to the `ButtonGroup`. If the `ButtonGroup` should not be changed by user input, a `readOnly` prop must be provided.
+
 ```js
 initialState = {
   choice: '64gb',
@@ -35,13 +39,30 @@ const onChange = event => {
 </ButtonGroup>
 ```
 
+### Uncontrolled ButtonGroup
+
+If it is not neccessary to control `ButtonGroup` state. You can create a `ButtonGroup` without a `value` prop, in this case the `ButtonGroup` will act as a collection HTML `input` with the type of `radio`. Its value can be accessed by referencing the element via a `ref`.
+
+#### Default values
+
+Due to the nature of uncontrolled components, you cannot set an initial `checked` property on the component. If you need to set a default state for your uncontrolled `ButtonGroup`, you can use the `defaultChecked` property on the default `ButtonGroup.Item` as described [in the react documentation](https://reactjs.org/docs/uncontrolled-components.html#default-values).
+
+```js
+<ButtonGroup name="tv" label="Choose your TV">
+  <ButtonGroup.Item defaultChecked value="Optik TV">
+    Optik TV
+  </ButtonGroup.Item>
+  <ButtonGroup.Item value="Pik TV">Pik TV</ButtonGroup.Item>
+</ButtonGroup>
+```
+
 ### Using A11yContent
 
 Use the `A11yContent` component to create invisible text that is read out loud by screen readers. It is accepted as a child of `ButtonGroup.Item`.
 
 ```js
 initialState = {
-  choice: undefined,
+  choice: null,
 }
 
 const onChange = event => {
