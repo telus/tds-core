@@ -53,7 +53,7 @@ exports[`ChevronLink can have specific variants 1`] = `
 
 .c1:link,
 .c1:visited {
-  color: #248700;
+  color: #2B8000;
 }
 
 .c3 {
@@ -239,7 +239,7 @@ exports[`ChevronLink can have specific variants 3`] = `
 
 .c1:link,
 .c1:visited {
-  color: #248700;
+  color: #2B8000;
 }
 
 .c3 {
@@ -425,7 +425,7 @@ exports[`ChevronLink renders 1`] = `
 
 .c1:link,
 .c1:visited {
-  color: #248700;
+  color: #2B8000;
 }
 
 .c3 {

@@ -51,7 +51,7 @@ Array [
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c4 {
@@ -527,7 +527,7 @@ Array [
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c4 {
@@ -996,7 +996,7 @@ Array [
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c4 {
@@ -1461,7 +1461,7 @@ Array [
 .c2 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c3 {
@@ -1793,7 +1793,7 @@ Array [
 .c2 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c3 {
@@ -2120,7 +2120,7 @@ Array [
 .c2 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c3 {
@@ -2383,7 +2383,7 @@ Array [
 .c1 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 <SpinnerSvg__StyledSvg
@@ -2545,7 +2545,7 @@ Array [
 .c1 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 <StyledComponent
@@ -2695,7 +2695,7 @@ Array [
 .c1 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 <svg
@@ -2834,7 +2834,7 @@ exports[`Spinner renders 1`] = `
 .c2 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c3 {
@@ -3950,7 +3950,7 @@ Array [
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c0 {
@@ -4308,7 +4308,7 @@ Array [
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c0 {
@@ -4659,7 +4659,7 @@ Array [
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c0 {
@@ -5005,7 +5005,7 @@ Array [
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c4 {
@@ -5481,7 +5481,7 @@ Array [
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c4 {
@@ -5950,7 +5950,7 @@ Array [
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c4 {
@@ -6393,7 +6393,7 @@ exports[`Spinner renders with children 1`] = `
 .c3 {
   -webkit-animation: drFgOE 1.7s ease-in-out infinite 0s;
   animation: drFgOE 1.7s ease-in-out infinite 0s;
-  stroke: #248700;
+  stroke: #2B8000;
 }
 
 .c4 {

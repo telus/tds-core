@@ -176,7 +176,7 @@ exports[`TextArea feedback states ensures that the contents do not overlap the i
 }
 
 .c0:not(:focus) {
-  border-color: #248700;
+  border-color: #2B8000;
 }
 
 <textarea

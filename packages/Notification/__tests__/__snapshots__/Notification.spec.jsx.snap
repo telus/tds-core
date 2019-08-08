@@ -1022,7 +1022,7 @@ exports[`<Notification /> can have a variant 2`] = `
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   vertical-align: middle;
-  color: #248700;
+  color: #2B8000;
   font-size: 1.25rem;
 }
 

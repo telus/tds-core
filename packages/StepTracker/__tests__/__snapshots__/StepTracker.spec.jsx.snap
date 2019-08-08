@@ -123,13 +123,13 @@ div.c1 {
 
 .c6 {
   display: inline-block;
-  border: 0.1rem solid #248700;
+  border: 0.1rem solid #2B8000;
   border-radius: 50%;
   line-height: 1.7rem;
   width: 35px;
   height: 35px;
   margin-bottom: 1rem;
-  background-color: #248700;
+  background-color: #2B8000;
   text-align: center;
 }
 

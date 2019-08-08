@@ -61,7 +61,7 @@ exports[`Accordion renders a closed accordion 1`] = `
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   vertical-align: middle;
-  color: #248700;
+  color: #2B8000;
   font-size: 1rem;
 }
 
@@ -1101,7 +1101,7 @@ exports[`Accordion renders an open accordion 1`] = `
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   vertical-align: middle;
-  color: #248700;
+  color: #2B8000;
   font-size: 1rem;
 }
 
