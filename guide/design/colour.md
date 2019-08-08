@@ -18,9 +18,9 @@ For Buttons, Links, Headings and Body copy only use the following colours:
 
 <div class="color__swatch">
   <div class="color">
-    <div class="color__preview" style="background-color: #248700;"></div>
+    <div class="color__preview" style="background-color: #2B8000;"></div>
     <p><strong>Accessible Green</strong></p>
-<pre><code>Hex: #248700
+<pre><code>Hex: #2B8000
 JS: colorAccessibleGreen</code></pre>
     <p>Usage: Primary button backgrounds/outline, text links</p>
   </div>
