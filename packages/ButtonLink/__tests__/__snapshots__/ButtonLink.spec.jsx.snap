@@ -111,7 +111,7 @@ exports[`ButtonLink renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #248700;
+  background-color: #2B8000;
   color: #fff;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -120,7 +120,7 @@ exports[`ButtonLink renders 1`] = `
 .c0:hover {
   box-shadow: 0 0 0 1px;
   background-color: #fff;
-  color: #248700;
+  color: #2B8000;
 }
 
 .c0:focus {
@@ -133,7 +133,7 @@ exports[`ButtonLink renders 1`] = `
 }
 
 .c0:hover {
-  color: #248700;
+  color: #2B8000;
 }
 
 @media (min-width:768px) {

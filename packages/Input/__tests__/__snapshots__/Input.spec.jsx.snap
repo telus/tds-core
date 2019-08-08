@@ -15,7 +15,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   vertical-align: middle;
-  color: #248700;
+  color: #2B8000;
   font-size: 1rem;
 }
 
@@ -163,7 +163,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
 }
 
 .c5:not(:focus) {
-  border-color: #248700;
+  border-color: #2B8000;
 }
 
 .c6 {

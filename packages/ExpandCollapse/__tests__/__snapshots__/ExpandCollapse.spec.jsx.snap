@@ -36,7 +36,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   vertical-align: middle;
-  color: #248700;
+  color: #2B8000;
   font-size: 1rem;
 }
 
@@ -671,7 +671,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   vertical-align: middle;
-  color: #248700;
+  color: #2B8000;
   font-size: 1rem;
 }
 
@@ -1278,7 +1278,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   vertical-align: middle;
-  color: #248700;
+  color: #2B8000;
   font-size: 1rem;
 }
 
@@ -2324,7 +2324,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   vertical-align: middle;
-  color: #248700;
+  color: #2B8000;
   font-size: 1rem;
 }
 

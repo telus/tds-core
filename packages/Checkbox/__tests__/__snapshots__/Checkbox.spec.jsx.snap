@@ -121,8 +121,8 @@ exports[`Checkbox allows numbers as value 1`] = `
 }
 
 .c1:checked ~ .c3 > div > .c5 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c1:checked ~ .c3 > div > .c5 > i {
@@ -337,8 +337,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -360,8 +360,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -546,8 +546,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -569,8 +569,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -751,8 +751,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -774,8 +774,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -1007,8 +1007,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -1030,8 +1030,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -1216,8 +1216,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -1239,8 +1239,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -1421,8 +1421,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -1444,8 +1444,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -1681,8 +1681,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -1704,8 +1704,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -1890,8 +1890,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -1913,8 +1913,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -2095,8 +2095,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -2118,8 +2118,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -2355,8 +2355,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -2378,8 +2378,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -2564,8 +2564,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -2587,8 +2587,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -2769,8 +2769,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -2792,8 +2792,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -3153,8 +3153,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -3176,8 +3176,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -3362,8 +3362,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -3385,8 +3385,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -3567,8 +3567,8 @@ Array [
 }
 
 .c5:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c3 > div > .c0 > i {
@@ -3590,8 +3590,8 @@ Array [
 }
 
 .c5:checked ~ .c4 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c5:checked ~ .c4 > div > .c0 > i {
@@ -3731,8 +3731,8 @@ Array [
 }
 
 .c4:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c4:checked ~ .c3 > div > .c0 > i {
@@ -3917,8 +3917,8 @@ Array [
 }
 
 .c4:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c4:checked ~ .c3 > div > .c0 > i {
@@ -4099,8 +4099,8 @@ Array [
 }
 
 .c4:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c4:checked ~ .c3 > div > .c0 > i {
@@ -4240,8 +4240,8 @@ Array [
 }
 
 .c4:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c4:checked ~ .c3 > div > .c0 > i {
@@ -4426,8 +4426,8 @@ Array [
 }
 
 .c4:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c4:checked ~ .c3 > div > .c0 > i {
@@ -4608,8 +4608,8 @@ Array [
 }
 
 .c4:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c4:checked ~ .c3 > div > .c0 > i {
@@ -4749,8 +4749,8 @@ Array [
 }
 
 .c4:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c4:checked ~ .c3 > div > .c0 > i {
@@ -4935,8 +4935,8 @@ Array [
 }
 
 .c4:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c4:checked ~ .c3 > div > .c0 > i {
@@ -5117,8 +5117,8 @@ Array [
 }
 
 .c4:checked ~ .c3 > div > .c0 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c4:checked ~ .c3 > div > .c0 > i {
@@ -5288,8 +5288,8 @@ Array [
 }
 
 .c6:checked ~ .c5 > div > .c1 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c6:checked ~ .c5 > div > .c1 > i {
@@ -5727,8 +5727,8 @@ exports[`Checkbox renders 1`] = `
 }
 
 .c1:checked ~ .c3 > div > .c5 {
-  background-color: #248700;
-  border-color: #248700;
+  background-color: #2B8000;
+  border-color: #2B8000;
 }
 
 .c1:checked ~ .c3 > div > .c5 > i {

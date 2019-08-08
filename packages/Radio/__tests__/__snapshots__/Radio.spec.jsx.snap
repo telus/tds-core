@@ -118,7 +118,7 @@ exports[`Radio allows numbers as value 1`] = `
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -336,7 +336,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -406,7 +406,7 @@ Array [
                     "width: 12px;",
                     "height: 12px;",
                     "border-radius: 50%;",
-                    "background-color: #248700;",
+                    "background-color: #2B8000;",
                     "display: none;",
                   ],
                 },
@@ -506,7 +506,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -573,7 +573,7 @@ Array [
                   "width: 12px;",
                   "height: 12px;",
                   "border-radius: 50%;",
-                  "background-color: #248700;",
+                  "background-color: #2B8000;",
                   "display: none;",
                 ],
               },
@@ -672,7 +672,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -694,7 +694,7 @@ Array [
                 "width: 12px;",
                 "height: 12px;",
                 "border-radius: 50%;",
-                "background-color: #248700;",
+                "background-color: #2B8000;",
                 "display: none;",
               ],
             },
@@ -885,7 +885,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -955,7 +955,7 @@ Array [
                     "width: 12px;",
                     "height: 12px;",
                     "border-radius: 50%;",
-                    "background-color: #248700;",
+                    "background-color: #2B8000;",
                     "display: none;",
                   ],
                 },
@@ -1055,7 +1055,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -1122,7 +1122,7 @@ Array [
                   "width: 12px;",
                   "height: 12px;",
                   "border-radius: 50%;",
-                  "background-color: #248700;",
+                  "background-color: #2B8000;",
                   "display: none;",
                 ],
               },
@@ -1221,7 +1221,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -1243,7 +1243,7 @@ Array [
                 "width: 12px;",
                 "height: 12px;",
                 "border-radius: 50%;",
-                "background-color: #248700;",
+                "background-color: #2B8000;",
                 "display: none;",
               ],
             },
@@ -1436,7 +1436,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -1506,7 +1506,7 @@ Array [
                     "width: 12px;",
                     "height: 12px;",
                     "border-radius: 50%;",
-                    "background-color: #248700;",
+                    "background-color: #2B8000;",
                     "display: none;",
                   ],
                 },
@@ -1606,7 +1606,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -1673,7 +1673,7 @@ Array [
                   "width: 12px;",
                   "height: 12px;",
                   "border-radius: 50%;",
-                  "background-color: #248700;",
+                  "background-color: #2B8000;",
                   "display: none;",
                 ],
               },
@@ -1772,7 +1772,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -1794,7 +1794,7 @@ Array [
                 "width: 12px;",
                 "height: 12px;",
                 "border-radius: 50%;",
-                "background-color: #248700;",
+                "background-color: #2B8000;",
                 "display: none;",
               ],
             },
@@ -1985,7 +1985,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -2055,7 +2055,7 @@ Array [
                     "width: 12px;",
                     "height: 12px;",
                     "border-radius: 50%;",
-                    "background-color: #248700;",
+                    "background-color: #2B8000;",
                     "display: none;",
                   ],
                 },
@@ -2155,7 +2155,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -2222,7 +2222,7 @@ Array [
                   "width: 12px;",
                   "height: 12px;",
                   "border-radius: 50%;",
-                  "background-color: #248700;",
+                  "background-color: #2B8000;",
                   "display: none;",
                 ],
               },
@@ -2321,7 +2321,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -2343,7 +2343,7 @@ Array [
                 "width: 12px;",
                 "height: 12px;",
                 "border-radius: 50%;",
-                "background-color: #248700;",
+                "background-color: #2B8000;",
                 "display: none;",
               ],
             },
@@ -2425,7 +2425,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -2495,7 +2495,7 @@ Array [
                     "width: 12px;",
                     "height: 12px;",
                     "border-radius: 50%;",
-                    "background-color: #248700;",
+                    "background-color: #2B8000;",
                     "display: none;",
                   ],
                 },
@@ -2574,7 +2574,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -2641,7 +2641,7 @@ Array [
                   "width: 12px;",
                   "height: 12px;",
                   "border-radius: 50%;",
-                  "background-color: #248700;",
+                  "background-color: #2B8000;",
                   "display: none;",
                 ],
               },
@@ -2719,7 +2719,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -2741,7 +2741,7 @@ Array [
                 "width: 12px;",
                 "height: 12px;",
                 "border-radius: 50%;",
-                "background-color: #248700;",
+                "background-color: #2B8000;",
                 "display: none;",
               ],
             },
@@ -2823,7 +2823,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -2893,7 +2893,7 @@ Array [
                     "width: 12px;",
                     "height: 12px;",
                     "border-radius: 50%;",
-                    "background-color: #248700;",
+                    "background-color: #2B8000;",
                     "display: none;",
                   ],
                 },
@@ -2972,7 +2972,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -3039,7 +3039,7 @@ Array [
                   "width: 12px;",
                   "height: 12px;",
                   "border-radius: 50%;",
-                  "background-color: #248700;",
+                  "background-color: #2B8000;",
                   "display: none;",
                 ],
               },
@@ -3117,7 +3117,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -3139,7 +3139,7 @@ Array [
                 "width: 12px;",
                 "height: 12px;",
                 "border-radius: 50%;",
-                "background-color: #248700;",
+                "background-color: #2B8000;",
                 "display: none;",
               ],
             },
@@ -3221,7 +3221,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -3291,7 +3291,7 @@ Array [
                     "width: 12px;",
                     "height: 12px;",
                     "border-radius: 50%;",
-                    "background-color: #248700;",
+                    "background-color: #2B8000;",
                     "display: none;",
                   ],
                 },
@@ -3370,7 +3370,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -3437,7 +3437,7 @@ Array [
                   "width: 12px;",
                   "height: 12px;",
                   "border-radius: 50%;",
-                  "background-color: #248700;",
+                  "background-color: #2B8000;",
                   "display: none;",
                 ],
               },
@@ -3515,7 +3515,7 @@ Array [
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -3537,7 +3537,7 @@ Array [
                 "width: 12px;",
                 "height: 12px;",
                 "border-radius: 50%;",
-                "background-color: #248700;",
+                "background-color: #2B8000;",
                 "display: none;",
               ],
             },
@@ -3674,7 +3674,7 @@ exports[`Radio must have a label 1`] = `
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
@@ -3801,7 +3801,7 @@ exports[`Radio must have a label 1`] = `
                             "width: 12px;",
                             "height: 12px;",
                             "border-radius: 50%;",
-                            "background-color: #248700;",
+                            "background-color: #2B8000;",
                             "display: none;",
                           ],
                         },
@@ -4105,7 +4105,7 @@ exports[`Radio renders 1`] = `
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #248700;
+  background-color: #2B8000;
   display: none;
 }
 
