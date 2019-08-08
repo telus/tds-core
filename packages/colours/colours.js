@@ -15,6 +15,10 @@ export const colorLavenderBlush = '#fff6f8'
 export const colorWhite = '#fff'
 export const colorGainsboro = '#d8d8d8'
 
+export const colorLightRaja = '#FFF9EE'
+export const colorRaja = '#FACA69'
+export const colorDarkRaja = '#8C5415'
+
 // typography
 export const colorLink = colorShuttleGrey
 export const colorText = colorShark
