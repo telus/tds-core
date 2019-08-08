@@ -160,6 +160,42 @@ For more information on the usage of each colour please refer to the [colour pri
         </Box>
       </Box>
     </FlexGrid.Col>
+    <FlexGrid.Col xs={4}>
+      <Box vertical={3}>
+        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(255,249,238)' }} />
+        <Box between={3}>
+          <Paragraph>
+            <Strong>Light Raja</Strong>
+          </Paragraph>
+          <Paragraph>colorLightRaja</Paragraph>
+          <Paragraph>Hex: #FFF9EE</Paragraph>
+        </Box>
+      </Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={4}>
+      <Box vertical={3}>
+        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(250,202,105)' }} />
+        <Box between={3}>
+          <Paragraph>
+            <Strong>Raja</Strong>
+          </Paragraph>
+          <Paragraph>colorRaja</Paragraph>
+          <Paragraph>Hex: #FACA69</Paragraph>
+        </Box>
+      </Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={4}>
+      <Box vertical={3}>
+        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(140,84,21)' }} />
+        <Box between={3}>
+          <Paragraph>
+            <Strong>Dark Raja</Strong>
+          </Paragraph>
+          <Paragraph>colorDarkRaja</Paragraph>
+          <Paragraph>Hex: #8C5415</Paragraph>
+        </Box>
+      </Box>
+    </FlexGrid.Col>
   </FlexGrid.Row>
 </FlexGrid>
 ```
