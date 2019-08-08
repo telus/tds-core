@@ -19,36 +19,40 @@ const StyledButtonGroup = styled(Box)({
  * An input component utilizing buttons that act as radios.
  * @version ./package.json
  */
-const ButtonGroup = ({ name, onChange, onFocus, onBlur, value, label, children, ...rest }) => {
-  const passedButtons = React.Children.map(children, child =>
-    React.cloneElement(child, {
-      name,
-      onChange,
-      onFocus,
-      onBlur,
-      checked: value === child.props.value,
+const ButtonGroup = React.forwardRef(
+  ({ name, onChange, onFocus, onBlur, value, label, children, readOnly, ...rest }, ref) => {
+    const passedButtons = React.Children.map(children, child =>
+      React.cloneElement(child, {
+        name,
+        onChange,
+        onFocus,
+        onBlur,
+        checked: typeof value !== 'undefined' ? value === child.props.value : undefined,
+        readOnly,
+      })
+    )
+
+    const buttonValues = []
+    Object.keys(passedButtons).forEach(key => {
+      buttonValues.push(passedButtons[key].props.value)
     })
-  )
 
-  const buttonValues = []
-  Object.keys(passedButtons).forEach(key => {
-    buttonValues.push(passedButtons[key].props.value)
-  })
+    return (
+      <fieldset {...safeRest(rest)} name={name} ref={ref}>
+        <legend>
+          <Text bold size="medium">
+            {label}
+          </Text>
+        </legend>
 
-  return (
-    <fieldset {...safeRest(rest)} name={name}>
-      <legend>
-        <Text bold size="medium">
-          {label}
-        </Text>
-      </legend>
-
-      <StyledButtonGroup between={3} inline>
-        {passedButtons}
-      </StyledButtonGroup>
-    </fieldset>
-  )
-}
+        <StyledButtonGroup between={3} inline>
+          {passedButtons}
+        </StyledButtonGroup>
+      </fieldset>
+    )
+  }
+)
+ButtonGroup.displayName = 'ButtonGroup'
 
 ButtonGroup.propTypes = {
   /**
@@ -68,7 +72,7 @@ ButtonGroup.propTypes = {
    *
    * @param {SyntheticEvent} event The React `SyntheticEvent`
    */
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
   /**
    * A callback function to be invoked when a button receives focus. Passed into all buttons.
    *
@@ -82,15 +86,23 @@ ButtonGroup.propTypes = {
    */
   onBlur: PropTypes.func,
   /**
+   * @ignore
+   *
+   * A callback function to be invoked when a button loses focus. Passed into all buttons.
+   */
+  readOnly: PropTypes.bool,
+  /**
    * A group of ButtonGroup.Item components.
    */
-  children: componentWithName('ButtonGroupItem').isRequired,
+  children: componentWithName('ButtonGroup.Item', true).isRequired,
 }
 
 ButtonGroup.defaultProps = {
   onFocus: undefined,
   onBlur: undefined,
+  onChange: undefined,
   value: undefined,
+  readOnly: undefined,
 }
 
 ButtonGroup.Item = ButtonGroupItem

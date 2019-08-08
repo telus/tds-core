@@ -67,33 +67,43 @@ const StyledLabel = styled.label(
   }
 )
 
-const ButtonGroupItem = ({
-  name,
-  value,
-  checked,
-  onChange,
-  onFocus,
-  onBlur,
-  children,
-  ...rest
-}) => {
-  const itemId = generateId(name).postfix(value)
-  return (
-    <StyledButtonGroupItem {...safeRest(rest)}>
-      <StyledInput
-        id={itemId}
-        name={name}
-        value={value}
-        type="radio"
-        checked={checked}
-        onChange={onChange}
-        onFocus={onFocus}
-        onBlur={onBlur}
-      />
-      <StyledLabel htmlFor={itemId}>{children}</StyledLabel>
-    </StyledButtonGroupItem>
-  )
-}
+const ButtonGroupItem = React.forwardRef(
+  (
+    {
+      name,
+      value,
+      checked,
+      onChange,
+      onFocus,
+      onBlur,
+      children,
+      defaultChecked,
+      readOnly,
+      ...rest
+    },
+    ref
+  ) => {
+    const itemId = generateId(name).postfix(value)
+    return (
+      <StyledButtonGroupItem {...safeRest(rest)}>
+        <StyledInput
+          id={itemId}
+          name={name}
+          value={value}
+          type="radio"
+          checked={checked}
+          onChange={onChange}
+          onFocus={onFocus}
+          onBlur={onBlur}
+          defaultChecked={defaultChecked}
+          readOnly={readOnly}
+          ref={ref}
+        />
+        <StyledLabel htmlFor={itemId}>{children}</StyledLabel>
+      </StyledButtonGroupItem>
+    )
+  }
+)
 
 ButtonGroupItem.propTypes = {
   /**
@@ -131,6 +141,20 @@ ButtonGroupItem.propTypes = {
    */
   onBlur: PropTypes.func,
   /**
+   *@ignore
+   *
+   * React defaultChecked
+   * https://reactjs.org/docs/uncontrolled-components.html#default-values
+   */
+  defaultChecked: PropTypes.bool,
+  /**
+   *@ignore
+   *
+   * HTML readOnly
+   * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#readonly
+   */
+  readOnly: PropTypes.bool,
+  /**
    * The button's label. It can include the `A11yContent` component or strings.
    */
 
@@ -143,6 +167,8 @@ ButtonGroupItem.defaultProps = {
   onChange: undefined,
   onFocus: undefined,
   onBlur: undefined,
+  defaultChecked: undefined,
+  readOnly: undefined,
 }
 
 ButtonGroupItem.displayName = 'ButtonGroup.Item'
