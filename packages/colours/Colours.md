@@ -78,6 +78,42 @@ For more information on the usage of each colour please refer to the [colour pri
     </FlexGrid.Col>
     <FlexGrid.Col xs={4}>
       <Box vertical={3}>
+        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(113,117,123)' }} />
+        <Box between={3}>
+          <Paragraph>
+            <Strong>Raven Grey</Strong>
+          </Paragraph>
+          <Paragraph>colorRavenGrey</Paragraph>
+          <Paragraph>Hex: #71757B</Paragraph>
+        </Box>
+      </Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={4}>
+      <Box vertical={3}>
+        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(216,216,216)' }} />
+        <Box between={3}>
+          <Paragraph>
+            <Strong>Gainsboro</Strong>
+          </Paragraph>
+          <Paragraph>colorGainsboro</Paragraph>
+          <Paragraph>Hex: #D8D8D8</Paragraph>
+        </Box>
+      </Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={4}>
+      <Box vertical={3}>
+        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(247,247,248)' }} />
+        <Box between={3}>
+          <Paragraph>
+            <Strong>Athens Grey</Strong>
+          </Paragraph>
+          <Paragraph>colorAthensGrey</Paragraph>
+          <Paragraph>Hex: #F7F7F8</Paragraph>
+        </Box>
+      </Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={4}>
+      <Box vertical={3}>
         <span className="docs_color-preview" style={{ backgroundColor: 'rgb(255, 255, 255)' }} />
         <Box between={3}>
           <Paragraph>
@@ -121,30 +157,6 @@ For more information on the usage of each colour please refer to the [colour pri
           </Paragraph>
           <Paragraph>colorWhiteLilac</Paragraph>
           <Paragraph>Hex: #F2EFF4</Paragraph>
-        </Box>
-      </Box>
-    </FlexGrid.Col>
-    <FlexGrid.Col xs={4}>
-      <Box vertical={3}>
-        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(216,216,216)' }} />
-        <Box between={3}>
-          <Paragraph>
-            <Strong>Gainsboro</Strong>
-          </Paragraph>
-          <Paragraph>colorGainsboro</Paragraph>
-          <Paragraph>Hex: #D8D8D8</Paragraph>
-        </Box>
-      </Box>
-    </FlexGrid.Col>
-    <FlexGrid.Col xs={4}>
-      <Box vertical={3}>
-        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(247,247,248)' }} />
-        <Box between={3}>
-          <Paragraph>
-            <Strong>Athens Grey</Strong>
-          </Paragraph>
-          <Paragraph>colorAthensGrey</Paragraph>
-          <Paragraph>Hex: #F7F7F8</Paragraph>
         </Box>
       </Box>
     </FlexGrid.Col>
