@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.6](https://github.com/telus/tds/compare/@tds/core-select@3.1.5...@tds/core-select@3.1.6) (2019-08-08)
+
+
+### Bug Fixes
+
+* **core-select:** position tooltip next to label ([ed2ff3a](https://github.com/telus/tds/commit/ed2ff3a)), closes [#1069](https://github.com/telus/tds/issues/1069)
+
+
+
+
+
 ## [3.1.5](https://github.com/telus/tds/compare/@tds/core-select@3.1.4...@tds/core-select@3.1.5) (2019-08-06)
 
 **Note:** Version bump only for package @tds/core-select

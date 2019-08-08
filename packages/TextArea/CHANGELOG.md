@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.15](https://github.com/telus/tds/compare/@tds/core-text-area@3.0.14...@tds/core-text-area@3.0.15) (2019-08-08)
+
+
+### Bug Fixes
+
+* **core-text-area:** position tooltip next to label ([f7472d4](https://github.com/telus/tds/commit/f7472d4)), closes [#1069](https://github.com/telus/tds/issues/1069)
+
+
+
+
+
 ## [3.0.14](https://github.com/telus/tds/compare/@tds/core-text-area@3.0.13...@tds/core-text-area@3.0.14) (2019-08-06)
 
 **Note:** Version bump only for package @tds/core-text-area

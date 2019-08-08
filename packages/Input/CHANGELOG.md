@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.16](https://github.com/telus/tds/compare/@tds/core-input@3.0.15...@tds/core-input@3.0.16) (2019-08-08)
+
+
+### Bug Fixes
+
+* **core-input:** position tooltip next to label ([fa9054e](https://github.com/telus/tds/commit/fa9054e)), closes [#1069](https://github.com/telus/tds/issues/1069)
+
+
+
+
+
 ## [3.0.15](https://github.com/telus/tds/compare/@tds/core-input@3.0.14...@tds/core-input@3.0.15) (2019-08-06)
 
 
