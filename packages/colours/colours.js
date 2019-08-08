@@ -1,5 +1,5 @@
 // colours
-export const colorAccessibleGreen = '#248700'
+export const colorAccessibleGreen = '#2B8000'
 export const colorTelusGreen = '#6c0'
 export const colorPanache = '#f4f9f2'
 

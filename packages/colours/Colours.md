@@ -18,13 +18,13 @@ For more information on the usage of each colour please refer to the [colour pri
   <FlexGrid.Row>
     <FlexGrid.Col xs={4}>
       <Box vertical={3}>
-        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(36,135,0)' }} />
+        <span className="docs_color-preview" style={{ backgroundColor: 'rgb(43,128,0)' }} />
         <Box between={3}>
           <Paragraph>
             <Strong>Accessible Green</Strong>
           </Paragraph>
           <Paragraph>colorAccessibleGreen</Paragraph>
-          <Paragraph>Hex: #248700</Paragraph>
+          <Paragraph>Hex: #2B8000</Paragraph>
         </Box>
       </Box>
     </FlexGrid.Col>
