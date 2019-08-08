@@ -46,7 +46,7 @@ JS: colorTelusPurple</code></pre>
     <p><strong>Shark</strong></p>
 <pre><code>Hex: #2A2C2E
 JS: colorShark</code></pre>
-    <p>Usage: Sub headings (H3, H4), body text, and focus form objects borders</p>
+    <p>Usage: Sub headings (H3, H4), body text</p>
   </div>
 
   <div class="color">
@@ -102,6 +102,14 @@ JS: colorWhiteLilac</code></pre>
 <pre><code>Hex: #D8D8D8
 JS: colorGainsboro</code></pre>
     <p>Usage: Horizontal, vertical and wave dividers</p>
+  </div>
+
+  <div class="color">
+    <div class="color__preview" style="background-color: #71757B;"></div>
+    <p><strong>Raven Grey</strong></p>
+<pre><code>Hex: #71757B
+JS: colorRavenGrey</code></pre>
+    <p>Usage: Form input border</p>
   </div>
 
   <div class="color">
