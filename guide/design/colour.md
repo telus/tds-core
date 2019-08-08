@@ -119,6 +119,30 @@ JS: colorAthensGrey</code></pre>
 JS: colorPanache</code></pre>
     <p>Usage: Success messaging background</p>
   </div>
+
+  <div class="color">
+    <div class="color__preview" style="background-color: #FFF9EE;"></div>
+    <p><strong>Light Raja</strong></p>
+<pre><code>Hex: #FFF9EE
+JS: colorLightRaja</code></pre>
+    <p>Usage: Warning notificaiton background</p>
+  </div>
+
+  <div class="color">
+    <div class="color__preview" style="background-color: #FACA69;"></div>
+    <p><strong>Raja</strong></p>
+<pre><code>Hex: #FACA69
+JS: colorRaja</code></pre>
+    <p>Usage: Warning notification border</p>
+  </div>
+
+  <div class="color">
+    <div class="color__preview" style="background-color: #8C5415;"></div>
+    <p><strong>Dark Raja</strong></p>
+<pre><code>Hex: #8C5415
+JS: colorDarkRaja</code></pre>
+    <p>Usage: Warning notification alert icon</p>
+  </div>
 </div>
 
 ## Governance
