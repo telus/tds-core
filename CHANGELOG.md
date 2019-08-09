@@ -1,3 +1,10 @@
+#### 1.0.31 (2019-08-09)
+
+##### Bug Fixes
+
+* **scss:**  change accessible green to new colour ([a29fecf9](https://github.com/telusdigital/tds/commit/a29fecf916086c7bfb9dc1223a225a12693ea372))
+* **core-card:**  use black box shadow ([33f22579](https://github.com/telusdigital/tds/commit/33f2257975476c998401f1ed716475495d93a794))
+
 #### 1.0.30 (2019-07-30)
 
 ##### Bug Fixes
