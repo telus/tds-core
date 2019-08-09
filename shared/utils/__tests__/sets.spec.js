@@ -1,5 +1,3 @@
-import Set from 'core-js/es6/set'
-
 import { isEqual } from '../sets'
 
 describe('sets', () => {
