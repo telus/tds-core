@@ -29,14 +29,9 @@ export default opts => {
       { format: 'es', file: './dist/index.es.js', sourcemap: false },
     ],
 
-    external: [
-      'react',
-      'react-dom',
-      'prop-types',
-      'react-helmet',
-      'styled-components',
-      'core-js',
-    ].concat(tdsExternals),
+    external: ['react', 'react-dom', 'prop-types', 'react-helmet', 'styled-components'].concat(
+      tdsExternals
+    ),
 
     plugins: [
       cleaner({
