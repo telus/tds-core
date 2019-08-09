@@ -12,9 +12,13 @@ const excludedFiles = ['.all-contributorsrc', 'README.md'] // Files that can be 
 
 const getCommitScope = () => {
   const commitMessage = fs.readFileSync(process.argv[3], 'utf8')
-  const scope = commitMessage
-    .substr(commitMessage.indexOf('('), commitMessage.indexOf(':') - commitMessage.indexOf('('))
-    .replace(/(core)|(community)|(shared)|(util)|(-)|(\()|(\))/g, '')
+  let scope = commitMessage.substr(
+    commitMessage.indexOf('('),
+    commitMessage.indexOf(':') - commitMessage.indexOf('(')
+  )
+  if (scope !== 'shared') {
+    scope = scope.replace(/(core)|(community)|(shared)|(util)|(-)|(\()|(\))/g, '')
+  }
 
   return dotScopes[scope] || scope
 }
