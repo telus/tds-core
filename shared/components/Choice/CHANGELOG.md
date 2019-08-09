@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.27](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.26...@tds/shared-choice@1.1.27) (2019-08-09)
+
+**Note:** Version bump only for package @tds/shared-choice
+
+
+
+
+
 ## [1.1.26](https://github.com/telus/tds-core/compare/@tds/shared-choice@1.1.25...@tds/shared-choice@1.1.26) (2019-08-01)
 
 **Note:** Version bump only for package @tds/shared-choice

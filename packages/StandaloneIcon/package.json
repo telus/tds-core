@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-standalone-icon",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "An icon that has meaning within the context of the page",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,10 +27,10 @@
   },
   "dependencies": {
     "@tds/core-a11y-content": "^2.1.0",
-    "@tds/shared-styles": "^1.4.1",
+    "@tds/shared-styles": "^1.4.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-colours": "^2.0.0"
+    "@tds/core-colours": "^2.1.0"
   }
 }

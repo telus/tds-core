@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.10](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.9...@tds/core-terms-and-conditions@1.0.10) (2019-08-09)
+
+
+### Bug Fixes
+
+* **core-terms-and-conditions:** change box-shadow to black in Footnote ([ca95200](https://github.com/telus/tds-core/commit/ca95200))
+
+
+
+
+
 ## [1.0.9](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.8...@tds/core-terms-and-conditions@1.0.9) (2019-08-08)
 
 

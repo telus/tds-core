@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.6](https://github.com/telusdigital/tds/compare/@tds/core-card@2.0.5...@tds/core-card@2.0.6) (2019-08-09)
+
+
+### Bug Fixes
+
+* **core-card:** change box-shadow to black ([2eb6ed1](https://github.com/telusdigital/tds/commit/2eb6ed1))
+
+
+
+
+
 ## [2.0.5](https://github.com/telusdigital/tds/compare/@tds/core-card@2.0.4...@tds/core-card@2.0.5) (2019-08-01)
 
 **Note:** Version bump only for package @tds/core-card

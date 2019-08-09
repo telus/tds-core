@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-icon",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "private": true,
   "main": "",
   "module": "",
@@ -10,6 +10,6 @@
     "styled-components": "^4.1.3"
   },
   "dependencies": {
-    "@tds/core-colours": "^2.0.0"
+    "@tds/core-colours": "^2.1.0"
   }
 }

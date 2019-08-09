@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-card",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "A content container",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,8 +27,8 @@
   },
   "dependencies": {
     "@tds/core-box": "^2.0.1",
-    "@tds/core-colours": "^2.0.0",
-    "@tds/shared-styles": "^1.4.1",
+    "@tds/core-colours": "^2.1.0",
+    "@tds/shared-styles": "^1.4.2",
     "prop-types": "^15.5.10"
   }
 }

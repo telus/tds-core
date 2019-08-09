@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-colours@2.0.0...@tds/core-colours@2.1.0) (2019-08-09)
+
+
+### Bug Fixes
+
+* **core-colours:** update colorAccessibleGreen ([cdccb45](https://github.com/telusdigital/tds/commit/cdccb45))
+
+
+### Features
+
+* **core-colours:** add raja ([b66742b](https://github.com/telusdigital/tds/commit/b66742b))
+* **core-colours:** add ravenGrey ([38a044f](https://github.com/telusdigital/tds/commit/38a044f))
+
+
+
+
+
 # [2.0.0](https://github.com/telusdigital/tds/compare/@tds/core-colours@1.1.2...@tds/core-colours@2.0.0) (2019-08-01)
 
 
