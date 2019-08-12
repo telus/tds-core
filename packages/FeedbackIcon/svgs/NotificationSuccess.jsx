@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { getCopy } from '@tds/util-helpers'
-import { colorAthensGrey, colorWhite } from '@tds/core-colours'
 
 import FeedbackIcon from '../FeedbackIcon'
 import FeedbackIconSVG from '../FeedbackIconSVG'
+import uniqueId from '../uniqueId'
 
 const copyDictionary = {
   en: {
@@ -16,29 +16,27 @@ const copyDictionary = {
   },
 }
 
-const NotificationSuccess = ({ copy, ...rest }) => (
-  <FeedbackIcon {...rest}>
-    <FeedbackIconSVG
-      a11yText={getCopy(copyDictionary, copy).a11yText}
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-    >
-      <g fill="none" fillRule="evenodd">
-        <path
-          fill="#2B8000"
-          d="M0,10 C0,15.52 4.48,20 10,20 C15.52,20 20,15.52 20,10 C20,4.48 15.52,0 10,0 C4.48,0 0,4.48 0,10 Z"
-        />
-        <path
-          fill={colorAthensGrey}
-          stroke={colorWhite}
-          d="M7.55593031,13.7615835 L15.4118686,5.90564525 C15.5082845,5.80922936 15.6646055,5.80922936 15.7610214,5.90564525 C15.8574373,6.00206114 15.8574373,6.15838217 15.7610214,6.25479806 L7.73050671,14.2853128 C7.63409083,14.3817287 7.47776979,14.3817287 7.3813539,14.2853128 L4.23897858,11.1429374 C4.14256269,11.0465216 4.14256269,10.8902005 4.23897858,10.7937846 C4.33539447,10.6973687 4.49171551,10.6973687 4.5881314,10.7937846 L7.55593031,13.7615835 Z"
-        />
-      </g>
-    </FeedbackIconSVG>
-  </FeedbackIcon>
-)
+const NotificationSuccess = ({ copy, ...rest }) => {
+  const notificationSuccessA = uniqueId('notificationsuccess-a')
+  return (
+    <FeedbackIcon {...rest}>
+      <FeedbackIconSVG
+        a11yText={getCopy(copyDictionary, copy).a11yText}
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+      >
+        <defs>
+          <path
+            id={notificationSuccessA}
+            d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm8.127 4.673a.633.633 0 0 0 .092-.105l7.734-8.572a.693.693 0 0 0-.009-.925.595.595 0 0 0-.882-.001l-7.514 8.055-2.612-2.8a.596.596 0 0 0-.88 0 .706.706 0 0 0-.014.928l3.038 3.51a.623.623 0 0 0 .486.219.587.587 0 0 0 .46-.2l.087-.097.014-.012z"
+          />
+        </defs>
+        <use fill="#2B8000" fillRule="evenodd" xlinkHref={`#${notificationSuccessA}`} />
+      </FeedbackIconSVG>
+    </FeedbackIcon>
+  )
+}
 NotificationSuccess.displayName = 'NotificationSuccess'
 
 NotificationSuccess.propTypes = {
