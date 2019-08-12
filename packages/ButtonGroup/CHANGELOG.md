@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@2.0.10...@tds/core-button-group@2.1.0) (2019-08-12)
+
+
+### Features
+
+* **core-button-group:** allow ButtonGroup to be uncontrolled ([63e26c2](https://github.com/telusdigital/tds-core/commit/63e26c2))
+* **core-button-group:** allow unselected by default ([ddb99b8](https://github.com/telusdigital/tds-core/commit/ddb99b8))
+
+
+
+
+
 ## [2.0.10](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@2.0.9...@tds/core-button-group@2.0.10) (2019-08-09)
 
 **Note:** Version bump only for package @tds/core-button-group
