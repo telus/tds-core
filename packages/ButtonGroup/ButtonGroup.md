@@ -16,11 +16,15 @@ The `label` prop on the parent `ButtonGroup` component will add a label to the w
 
 ### Controlled ButtonGroup
 
-If it is required that the state of the `ButtonGroup` be controlled by the application or other external methods, `value` and `onChange` props must be passed to the `ButtonGroup`. If the `ButtonGroup` should not be changed by user input, a `readOnly` prop must be provided.
+If it is required that the state of the `ButtonGroup` be controlled by the application or other external methods, `value` and `onChange` props must be passed to the `ButtonGroup`.
+
+If the `ButtonGroup` should not be changed by user input, a `readOnly` prop must be provided.
+
+If none of the `ButtonGroup.Item` should be pre-selected then the `ButtonGroup` value must be `null`.
 
 ```js
 initialState = {
-  choice: '64gb',
+  choice: null,
 }
 
 const onChange = event => {
@@ -62,7 +66,7 @@ Use the `A11yContent` component to create invisible text that is read out loud b
 
 ```js
 initialState = {
-  choice: null,
+  choice: 'buy',
 }
 
 const onChange = event => {
