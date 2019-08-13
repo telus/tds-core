@@ -36,7 +36,11 @@ const FootnoteLink = ({ number, onClick, copy }) => {
           <StyledFootnoteLink
             key={numbers[i]}
             ref={refs[i]}
-            onClick={() => handleClick(i)}
+            onClick={e => {
+              e.preventDefault()
+              e.stopPropagation()
+              handleClick(i)
+            }}
             data-tds-id="footnote-link"
           >
             <A11yContent>{getCopy(copyDictionary, copy).a11yLabel}</A11yContent>
