@@ -211,7 +211,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
             >
               <Bubble
                 direction="right"
-                id="standalone-tooltip-mc41_tooltip"
+                id="standalone-tooltip-tooltip9_tooltip"
                 open={false}
                 width={
                   Object {
@@ -233,7 +233,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                   }
                   direction="right"
                   horizontal={3}
-                  id="standalone-tooltip-mc41_tooltip"
+                  id="standalone-tooltip-tooltip9_tooltip"
                   open={false}
                   role="tooltip"
                   vertical={2}
@@ -278,7 +278,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                     }
                     forwardedRef={null}
                     horizontal={3}
-                    id="standalone-tooltip-mc41_tooltip"
+                    id="standalone-tooltip-tooltip9_tooltip"
                     open={false}
                     role="tooltip"
                     vertical={2}
@@ -299,7 +299,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                       data-testid="bubble"
                       direction="right"
                       horizontal={3}
-                      id="standalone-tooltip-mc41_tooltip"
+                      id="standalone-tooltip-tooltip9_tooltip"
                       open={false}
                       role="tooltip"
                       vertical={2}
@@ -310,7 +310,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                         className="c2"
                         data-testid="bubble"
                         horizontal={3}
-                        id="standalone-tooltip-mc41_tooltip"
+                        id="standalone-tooltip-tooltip9_tooltip"
                         inline={false}
                         role="tooltip"
                         tag="div"
@@ -322,7 +322,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                           className="c2"
                           data-testid="bubble"
                           horizontal={3}
-                          id="standalone-tooltip-mc41_tooltip"
+                          id="standalone-tooltip-tooltip9_tooltip"
                           inline={false}
                           role="tooltip"
                           tag="div"
@@ -364,7 +364,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                             }
                             forwardedRef={null}
                             horizontal={3}
-                            id="standalone-tooltip-mc41_tooltip"
+                            id="standalone-tooltip-tooltip9_tooltip"
                             inline={false}
                             role="tooltip"
                             tag="div"
@@ -375,7 +375,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                               aria-live="assertive"
                               className="c2 sc-bwzfXH c2 c3"
                               data-testid="bubble"
-                              id="standalone-tooltip-mc41_tooltip"
+                              id="standalone-tooltip-tooltip9_tooltip"
                               role="tooltip"
                             >
                               <Bubble__InnerBubbleStyle
@@ -492,20 +492,20 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
               </Bubble>
               <StandaloneIcon
                 a11yText="This is custom copy."
-                aria-controls="standalone-tooltip-mc41_tooltip"
+                aria-controls="standalone-tooltip-tooltip9_tooltip"
                 aria-expanded="false"
                 aria-haspopup="true"
-                id="standalone-tooltip-mc41_trigger"
+                id="standalone-tooltip-tooltip9_trigger"
                 onClick={[Function]}
                 size={24}
                 symbol="questionMarkCircle"
                 type="button"
               >
                 <StandaloneIcon__StandaloneIconClickable
-                  aria-controls="standalone-tooltip-mc41_tooltip"
+                  aria-controls="standalone-tooltip-tooltip9_tooltip"
                   aria-expanded="false"
                   aria-haspopup="true"
-                  id="standalone-tooltip-mc41_trigger"
+                  id="standalone-tooltip-tooltip9_trigger"
                   onClick={[Function]}
                   style={
                     Object {
@@ -516,7 +516,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                   type="button"
                 >
                   <StyledComponent
-                    aria-controls="standalone-tooltip-mc41_tooltip"
+                    aria-controls="standalone-tooltip-tooltip9_tooltip"
                     aria-expanded="false"
                     aria-haspopup="true"
                     forwardedComponent={
@@ -550,7 +550,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                       }
                     }
                     forwardedRef={null}
-                    id="standalone-tooltip-mc41_trigger"
+                    id="standalone-tooltip-tooltip9_trigger"
                     onClick={[Function]}
                     style={
                       Object {
@@ -561,11 +561,11 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                     type="button"
                   >
                     <button
-                      aria-controls="standalone-tooltip-mc41_tooltip"
+                      aria-controls="standalone-tooltip-tooltip9_tooltip"
                       aria-expanded="false"
                       aria-haspopup="true"
                       className="c6"
-                      id="standalone-tooltip-mc41_trigger"
+                      id="standalone-tooltip-tooltip9_trigger"
                       onClick={[Function]}
                       style={
                         Object {
@@ -877,7 +877,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
             >
               <Bubble
                 direction="right"
-                id="standalone-tooltip-mc41_tooltip"
+                id="standalone-tooltip-tooltip5_tooltip"
                 open={true}
                 width={
                   Object {
@@ -899,7 +899,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                   }
                   direction="right"
                   horizontal={3}
-                  id="standalone-tooltip-mc41_tooltip"
+                  id="standalone-tooltip-tooltip5_tooltip"
                   open={true}
                   role="tooltip"
                   vertical={2}
@@ -944,7 +944,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                     }
                     forwardedRef={null}
                     horizontal={3}
-                    id="standalone-tooltip-mc41_tooltip"
+                    id="standalone-tooltip-tooltip5_tooltip"
                     open={true}
                     role="tooltip"
                     vertical={2}
@@ -965,7 +965,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                       data-testid="bubble"
                       direction="right"
                       horizontal={3}
-                      id="standalone-tooltip-mc41_tooltip"
+                      id="standalone-tooltip-tooltip5_tooltip"
                       open={true}
                       role="tooltip"
                       vertical={2}
@@ -976,7 +976,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         className="c2"
                         data-testid="bubble"
                         horizontal={3}
-                        id="standalone-tooltip-mc41_tooltip"
+                        id="standalone-tooltip-tooltip5_tooltip"
                         inline={false}
                         role="tooltip"
                         tag="div"
@@ -988,7 +988,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                           className="c2"
                           data-testid="bubble"
                           horizontal={3}
-                          id="standalone-tooltip-mc41_tooltip"
+                          id="standalone-tooltip-tooltip5_tooltip"
                           inline={false}
                           role="tooltip"
                           tag="div"
@@ -1030,7 +1030,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                             }
                             forwardedRef={null}
                             horizontal={3}
-                            id="standalone-tooltip-mc41_tooltip"
+                            id="standalone-tooltip-tooltip5_tooltip"
                             inline={false}
                             role="tooltip"
                             tag="div"
@@ -1041,7 +1041,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                               aria-live="assertive"
                               className="c2 sc-bwzfXH c2 c3"
                               data-testid="bubble"
-                              id="standalone-tooltip-mc41_tooltip"
+                              id="standalone-tooltip-tooltip5_tooltip"
                               role="tooltip"
                             >
                               <Bubble__InnerBubbleStyle
@@ -1158,20 +1158,20 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
               </Bubble>
               <StandaloneIcon
                 a11yText="Reveal additional information."
-                aria-controls="standalone-tooltip-mc41_tooltip"
+                aria-controls="standalone-tooltip-tooltip5_tooltip"
                 aria-expanded="true"
                 aria-haspopup="true"
-                id="standalone-tooltip-mc41_trigger"
+                id="standalone-tooltip-tooltip5_trigger"
                 onClick={[Function]}
                 size={24}
                 symbol="questionMarkCircle"
                 type="button"
               >
                 <StandaloneIcon__StandaloneIconClickable
-                  aria-controls="standalone-tooltip-mc41_tooltip"
+                  aria-controls="standalone-tooltip-tooltip5_tooltip"
                   aria-expanded="true"
                   aria-haspopup="true"
-                  id="standalone-tooltip-mc41_trigger"
+                  id="standalone-tooltip-tooltip5_trigger"
                   onClick={[Function]}
                   style={
                     Object {
@@ -1182,7 +1182,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                   type="button"
                 >
                   <StyledComponent
-                    aria-controls="standalone-tooltip-mc41_tooltip"
+                    aria-controls="standalone-tooltip-tooltip5_tooltip"
                     aria-expanded="true"
                     aria-haspopup="true"
                     forwardedComponent={
@@ -1216,7 +1216,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                       }
                     }
                     forwardedRef={null}
-                    id="standalone-tooltip-mc41_trigger"
+                    id="standalone-tooltip-tooltip5_trigger"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1227,11 +1227,11 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                     type="button"
                   >
                     <button
-                      aria-controls="standalone-tooltip-mc41_tooltip"
+                      aria-controls="standalone-tooltip-tooltip5_tooltip"
                       aria-expanded="true"
                       aria-haspopup="true"
                       className="c6"
-                      id="standalone-tooltip-mc41_trigger"
+                      id="standalone-tooltip-tooltip5_trigger"
                       onClick={[Function]}
                       style={
                         Object {
@@ -1543,7 +1543,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
             >
               <Bubble
                 direction="right"
-                id="standalone-tooltip-mc41_tooltip"
+                id="standalone-tooltip-tooltip5_tooltip"
                 open={true}
                 width={
                   Object {
@@ -1565,7 +1565,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                   }
                   direction="right"
                   horizontal={3}
-                  id="standalone-tooltip-mc41_tooltip"
+                  id="standalone-tooltip-tooltip5_tooltip"
                   open={true}
                   role="tooltip"
                   vertical={2}
@@ -1610,7 +1610,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                     }
                     forwardedRef={null}
                     horizontal={3}
-                    id="standalone-tooltip-mc41_tooltip"
+                    id="standalone-tooltip-tooltip5_tooltip"
                     open={true}
                     role="tooltip"
                     vertical={2}
@@ -1631,7 +1631,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                       data-testid="bubble"
                       direction="right"
                       horizontal={3}
-                      id="standalone-tooltip-mc41_tooltip"
+                      id="standalone-tooltip-tooltip5_tooltip"
                       open={true}
                       role="tooltip"
                       vertical={2}
@@ -1642,7 +1642,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         className="c2"
                         data-testid="bubble"
                         horizontal={3}
-                        id="standalone-tooltip-mc41_tooltip"
+                        id="standalone-tooltip-tooltip5_tooltip"
                         inline={false}
                         role="tooltip"
                         tag="div"
@@ -1654,7 +1654,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                           className="c2"
                           data-testid="bubble"
                           horizontal={3}
-                          id="standalone-tooltip-mc41_tooltip"
+                          id="standalone-tooltip-tooltip5_tooltip"
                           inline={false}
                           role="tooltip"
                           tag="div"
@@ -1696,7 +1696,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                             }
                             forwardedRef={null}
                             horizontal={3}
-                            id="standalone-tooltip-mc41_tooltip"
+                            id="standalone-tooltip-tooltip5_tooltip"
                             inline={false}
                             role="tooltip"
                             tag="div"
@@ -1707,7 +1707,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                               aria-live="assertive"
                               className="c2 sc-bwzfXH c2 c3"
                               data-testid="bubble"
-                              id="standalone-tooltip-mc41_tooltip"
+                              id="standalone-tooltip-tooltip5_tooltip"
                               role="tooltip"
                             >
                               <Bubble__InnerBubbleStyle
@@ -1824,20 +1824,20 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
               </Bubble>
               <StandaloneIcon
                 a11yText="Reveal additional information."
-                aria-controls="standalone-tooltip-mc41_tooltip"
+                aria-controls="standalone-tooltip-tooltip5_tooltip"
                 aria-expanded="true"
                 aria-haspopup="true"
-                id="standalone-tooltip-mc41_trigger"
+                id="standalone-tooltip-tooltip5_trigger"
                 onClick={[Function]}
                 size={24}
                 symbol="questionMarkCircle"
                 type="button"
               >
                 <StandaloneIcon__StandaloneIconClickable
-                  aria-controls="standalone-tooltip-mc41_tooltip"
+                  aria-controls="standalone-tooltip-tooltip5_tooltip"
                   aria-expanded="true"
                   aria-haspopup="true"
-                  id="standalone-tooltip-mc41_trigger"
+                  id="standalone-tooltip-tooltip5_trigger"
                   onClick={[Function]}
                   style={
                     Object {
@@ -1848,7 +1848,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                   type="button"
                 >
                   <StyledComponent
-                    aria-controls="standalone-tooltip-mc41_tooltip"
+                    aria-controls="standalone-tooltip-tooltip5_tooltip"
                     aria-expanded="true"
                     aria-haspopup="true"
                     forwardedComponent={
@@ -1882,7 +1882,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                       }
                     }
                     forwardedRef={null}
-                    id="standalone-tooltip-mc41_trigger"
+                    id="standalone-tooltip-tooltip5_trigger"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1893,11 +1893,11 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                     type="button"
                   >
                     <button
-                      aria-controls="standalone-tooltip-mc41_tooltip"
+                      aria-controls="standalone-tooltip-tooltip5_tooltip"
                       aria-expanded="true"
                       aria-haspopup="true"
                       className="c6"
-                      id="standalone-tooltip-mc41_trigger"
+                      id="standalone-tooltip-tooltip5_trigger"
                       onClick={[Function]}
                       style={
                         Object {
@@ -2089,7 +2089,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
   aria-live="assertive"
   className="c0 sc-bwzfXH c0 c1"
   data-testid="bubble"
-  id="standalone-tooltip-mc41_tooltip"
+  id="standalone-tooltip-tooltip4_tooltip"
   role="tooltip"
 >
   <Bubble__InnerBubbleStyle
@@ -2284,7 +2284,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
   aria-live="assertive"
   className="c0 sc-bwzfXH c0 c1"
   data-testid="bubble"
-  id="standalone-tooltip-mc41_tooltip"
+  id="standalone-tooltip-tooltip4_tooltip"
   role="tooltip"
 >
   <Bubble__InnerBubbleStyle
@@ -2480,7 +2480,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
   aria-live="assertive"
   className="c0 sc-bwzfXH c0 c1"
   data-testid="bubble"
-  id="standalone-tooltip-mc41_tooltip"
+  id="standalone-tooltip-tooltip4_tooltip"
   role="tooltip"
 >
   <Bubble__InnerBubbleStyle
@@ -2797,7 +2797,7 @@ exports[`Tooltip renders 1`] = `
             >
               <Bubble
                 direction="right"
-                id="standalone-tooltip-mc41_tooltip"
+                id="standalone-tooltip-tooltip1_tooltip"
                 open={false}
                 width={
                   Object {
@@ -2819,7 +2819,7 @@ exports[`Tooltip renders 1`] = `
                   }
                   direction="right"
                   horizontal={3}
-                  id="standalone-tooltip-mc41_tooltip"
+                  id="standalone-tooltip-tooltip1_tooltip"
                   open={false}
                   role="tooltip"
                   vertical={2}
@@ -2864,7 +2864,7 @@ exports[`Tooltip renders 1`] = `
                     }
                     forwardedRef={null}
                     horizontal={3}
-                    id="standalone-tooltip-mc41_tooltip"
+                    id="standalone-tooltip-tooltip1_tooltip"
                     open={false}
                     role="tooltip"
                     vertical={2}
@@ -2885,7 +2885,7 @@ exports[`Tooltip renders 1`] = `
                       data-testid="bubble"
                       direction="right"
                       horizontal={3}
-                      id="standalone-tooltip-mc41_tooltip"
+                      id="standalone-tooltip-tooltip1_tooltip"
                       open={false}
                       role="tooltip"
                       vertical={2}
@@ -2896,7 +2896,7 @@ exports[`Tooltip renders 1`] = `
                         className="c2"
                         data-testid="bubble"
                         horizontal={3}
-                        id="standalone-tooltip-mc41_tooltip"
+                        id="standalone-tooltip-tooltip1_tooltip"
                         inline={false}
                         role="tooltip"
                         tag="div"
@@ -2908,7 +2908,7 @@ exports[`Tooltip renders 1`] = `
                           className="c2"
                           data-testid="bubble"
                           horizontal={3}
-                          id="standalone-tooltip-mc41_tooltip"
+                          id="standalone-tooltip-tooltip1_tooltip"
                           inline={false}
                           role="tooltip"
                           tag="div"
@@ -2950,7 +2950,7 @@ exports[`Tooltip renders 1`] = `
                             }
                             forwardedRef={null}
                             horizontal={3}
-                            id="standalone-tooltip-mc41_tooltip"
+                            id="standalone-tooltip-tooltip1_tooltip"
                             inline={false}
                             role="tooltip"
                             tag="div"
@@ -2961,7 +2961,7 @@ exports[`Tooltip renders 1`] = `
                               aria-live="assertive"
                               className="c2 sc-bwzfXH c2 c3"
                               data-testid="bubble"
-                              id="standalone-tooltip-mc41_tooltip"
+                              id="standalone-tooltip-tooltip1_tooltip"
                               role="tooltip"
                             >
                               <Bubble__InnerBubbleStyle
@@ -3078,20 +3078,20 @@ exports[`Tooltip renders 1`] = `
               </Bubble>
               <StandaloneIcon
                 a11yText="Reveal additional information."
-                aria-controls="standalone-tooltip-mc41_tooltip"
+                aria-controls="standalone-tooltip-tooltip1_tooltip"
                 aria-expanded="false"
                 aria-haspopup="true"
-                id="standalone-tooltip-mc41_trigger"
+                id="standalone-tooltip-tooltip1_trigger"
                 onClick={[Function]}
                 size={24}
                 symbol="questionMarkCircle"
                 type="button"
               >
                 <StandaloneIcon__StandaloneIconClickable
-                  aria-controls="standalone-tooltip-mc41_tooltip"
+                  aria-controls="standalone-tooltip-tooltip1_tooltip"
                   aria-expanded="false"
                   aria-haspopup="true"
-                  id="standalone-tooltip-mc41_trigger"
+                  id="standalone-tooltip-tooltip1_trigger"
                   onClick={[Function]}
                   style={
                     Object {
@@ -3102,7 +3102,7 @@ exports[`Tooltip renders 1`] = `
                   type="button"
                 >
                   <StyledComponent
-                    aria-controls="standalone-tooltip-mc41_tooltip"
+                    aria-controls="standalone-tooltip-tooltip1_tooltip"
                     aria-expanded="false"
                     aria-haspopup="true"
                     forwardedComponent={
@@ -3136,7 +3136,7 @@ exports[`Tooltip renders 1`] = `
                       }
                     }
                     forwardedRef={null}
-                    id="standalone-tooltip-mc41_trigger"
+                    id="standalone-tooltip-tooltip1_trigger"
                     onClick={[Function]}
                     style={
                       Object {
@@ -3147,11 +3147,11 @@ exports[`Tooltip renders 1`] = `
                     type="button"
                   >
                     <button
-                      aria-controls="standalone-tooltip-mc41_tooltip"
+                      aria-controls="standalone-tooltip-tooltip1_tooltip"
                       aria-expanded="false"
                       aria-haspopup="true"
                       className="c6"
-                      id="standalone-tooltip-mc41_trigger"
+                      id="standalone-tooltip-tooltip1_trigger"
                       onClick={[Function]}
                       style={
                         Object {
