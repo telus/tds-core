@@ -15,7 +15,6 @@ const FeedbackIcon = props => {
 }
 
 FeedbackIcon.propTypes = {
-  a11yText: PropTypes.string,
   children: PropTypes.node.isRequired,
   /**
    * @ignore
@@ -24,7 +23,6 @@ FeedbackIcon.propTypes = {
 }
 
 FeedbackIcon.defaultProps = {
-  a11yText: undefined,
   onClick: undefined,
 }
 

@@ -2,11 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { getCopy } from '@tds/util-helpers'
-import { colorWhite, colorTelusPurple, colorShark } from '@tds/core-colours'
+import { colorShark } from '@tds/core-colours'
 
 import FeedbackIcon from '../FeedbackIcon'
 import FeedbackIconSVG from '../FeedbackIconSVG'
-import uniqueId from '../uniqueId'
 
 const copyDictionary = {
   en: {
@@ -18,32 +17,19 @@ const copyDictionary = {
 }
 
 const LocationAdd = ({ copy, ...rest }) => {
-  const locationAddA = uniqueId('locationadd-a')
-  const locationAddB = uniqueId('locationadd-b')
   return (
     <FeedbackIcon {...rest}>
       <FeedbackIconSVG
         a11yText={getCopy(copyDictionary, copy).a11yText}
-        xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
         viewBox="0 0 24 24"
       >
-        <defs>
-          <path
-            id={locationAddA}
-            d="M12.5,9 L12.5,10.5 C12.5,10.776 12.276,11 12,11 C11.724,11 11.5,10.776 11.5,10.5 L11.5,9 L10,9 C9.724,9 9.5,8.776 9.5,8.5 C9.5,8.224 9.724,8 10,8 L11.5,8 L11.5,6.5 C11.5,6.224 11.724,6 12,6 C12.276,6 12.5,6.224 12.5,6.5 L12.5,8 L14,8 C14.276,8 14.5,8.224 14.5,8.5 C14.5,8.776 14.276,9 14,9 L12.5,9 Z M12,24 C11.884,24 11.767,23.959 11.673,23.878 C11.339,23.59 3.5,16.718 3.5,8.5 C3.5,3.813 7.313,0 12,0 C16.687,0 20.5,3.813 20.5,8.5 C20.5,16.718 12.661,23.59 12.327,23.878 C12.233,23.959 12.116,24 12,24 Z M12,1 C7.864,1 4.5,4.364 4.5,8.5 C4.5,15.342 10.516,21.426 12,22.822 C13.483,21.425 19.5,15.334 19.5,8.5 C19.5,4.364 16.136,1 12,1 Z M12,14 C8.968,14 6.5,11.533 6.5,8.5 C6.5,5.467 8.968,3 12,3 C15.032,3 17.5,5.467 17.5,8.5 C17.5,11.533 15.032,14 12,14 Z M12,4 C9.519,4 7.5,6.019 7.5,8.5 C7.5,10.981 9.519,13 12,13 C14.481,13 16.5,10.981 16.5,8.5 C16.5,6.019 14.481,4 12,4 Z"
-          />
-        </defs>
-        <g fill="none" fillRule="evenodd">
-          <mask id={locationAddB} fill={colorWhite}>
-            <use xlinkHref={`#${locationAddA}`} />
-          </mask>
-          <use fill={colorTelusPurple} xlinkHref={`#${locationAddA}`} />
-          <g fill={colorShark} mask={`url(#${locationAddB})`}>
-            <rect width="24" height="24" />
-          </g>
-        </g>
+        <path
+          fill={colorShark}
+          fillRule="evenodd"
+          d="M13 9v1.5a.5.5 0 0 1-1 0V9h-1.5a.5.5 0 0 1 0-1H12V6.5a.5.5 0 0 1 1 0V8h1.5a.5.5 0 0 1 0 1H13zm-.5 15a.501.501 0 0 1-.327-.122C11.839 23.59 4 16.718 4 8.5 4 3.813 7.813 0 12.5 0 17.187 0 21 3.813 21 8.5c0 8.218-7.839 15.09-8.173 15.378A.501.501 0 0 1 12.5 24zm0-23C8.364 1 5 4.364 5 8.5c0 6.842 6.016 12.926 7.5 14.322C13.983 21.425 20 15.334 20 8.5 20 4.364 16.636 1 12.5 1zm0 13A5.506 5.506 0 0 1 7 8.5C7 5.467 9.468 3 12.5 3S18 5.467 18 8.5 15.532 14 12.5 14zm0-10A4.505 4.505 0 0 0 8 8.5c0 2.481 2.019 4.5 4.5 4.5S17 10.981 17 8.5 14.981 4 12.5 4z"
+        />
       </FeedbackIconSVG>
     </FeedbackIcon>
   )
