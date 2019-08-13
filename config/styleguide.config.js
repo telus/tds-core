@@ -121,6 +121,10 @@ module.exports = {
       return `import { Accessible, Speed, Success, [..IconName] } from '@tds/core-decorative-icon'`
     }
 
+    if (name === 'FeedbackIcon') {
+      return `import { Checkmark, Times, NotificationSuccess, [..IconName] } from '@tds/core-feedback-icon'`
+    }
+
     if (name === 'BenefitWithHeading' || name === 'BenefitNoHeading') {
       kebabizeName = 'benefit'
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
