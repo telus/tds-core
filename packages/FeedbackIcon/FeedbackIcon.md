@@ -16,7 +16,7 @@ To use the default accessible text, pass either `en` or `fr` to the `copy` prope
 
 #### Optional Accessibile Text
 
-Some FeedbackIcons do not require accessible text but can accept text optionally. To add optional accessibile text to an icon. Pass an `a11yText` property to the icon.
+Some FeedbackIcons do not require accessible text but can accept text optionally. To add optional accessibile text to an icon. Pass an `a11yText` property to the icon. At this time, only the `Checkbox` and `Times` FeedbackIcons accept `a11yText` while the rest have a `copy` prop.
 
 ```jsx
 <Checkmark a11yText="This is optional accessible text" />
