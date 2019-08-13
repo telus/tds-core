@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import StandaloneIcon from '@tds/core-standalone-icon'
 
 import { iconWrapper } from '@tds/shared-styles'
-import { getCopy } from '@tds/util-helpers'
+import { getCopy, uniqueId } from '@tds/util-helpers'
 
 import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId/generateId'
@@ -45,7 +45,7 @@ class Tooltip extends React.Component {
 
   componentDidMount() {
     this.updatePageWidth()
-    this.uniqueId = btoa(Math.random())
+    this.uniqueId = this.props.tooltipId ? this.props.tooltipId : uniqueId('tooltip')
   }
 
   componentDidUpdate() {
@@ -190,11 +190,18 @@ Tooltip.propTypes = {
    * The message. Can be raw text or text components.
    */
   children: PropTypes.node.isRequired,
+  /**
+   * The tooltip id. Must be unique within the page.
+   *
+   * If a tooltip id is not provided, a unique tooltip id will be generated.
+   */
+  tooltipId: PropTypes.string,
 }
 
 Tooltip.defaultProps = {
   direction: 'auto',
   connectedFieldLabel: undefined,
+  tooltipId: undefined,
 }
 
 export default Tooltip
