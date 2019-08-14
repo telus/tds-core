@@ -60,7 +60,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c6 {
@@ -72,6 +72,12 @@ Array [
 
 .c7 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <Spinner__SpinnerContainer
@@ -536,7 +542,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c6 {
@@ -548,6 +554,12 @@ Array [
 
 .c7 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <StyledComponent
@@ -1005,7 +1017,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c6 {
@@ -1017,6 +1029,12 @@ Array [
 
 .c7 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <div
@@ -2920,7 +2938,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c4 {
@@ -2932,6 +2950,12 @@ Array [
 
 .c5 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <Spinner__SpinnerContainer
@@ -3278,7 +3302,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c4 {
@@ -3290,6 +3314,12 @@ Array [
 
 .c5 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <StyledComponent
@@ -3629,7 +3659,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c4 {
@@ -3641,6 +3671,12 @@ Array [
 
 .c5 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <div
@@ -3955,7 +3991,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c4 {
@@ -3967,6 +4003,12 @@ Array [
 
 .c5 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <Spinner__SpinnerContainer
@@ -4313,7 +4355,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c4 {
@@ -4325,6 +4367,12 @@ Array [
 
 .c5 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <StyledComponent
@@ -4664,7 +4712,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c4 {
@@ -4676,6 +4724,12 @@ Array [
 
 .c5 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <div
@@ -5014,7 +5068,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c6 {
@@ -5026,6 +5080,12 @@ Array [
 
 .c7 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <Spinner__SpinnerContainer
@@ -5490,7 +5550,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c6 {
@@ -5502,6 +5562,12 @@ Array [
 
 .c7 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <StyledComponent
@@ -5959,7 +6025,7 @@ Array [
 
 .c0 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .c6 {
@@ -5971,6 +6037,12 @@ Array [
 
 .c7 {
   opacity: 0.06;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: inline-block;
+  }
 }
 
 <div
