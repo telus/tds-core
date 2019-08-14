@@ -23,11 +23,7 @@ exports[`SectionHeadingRenderer renders 1`] = `
             tag="div"
           >
             A Section
-            <div
-              className="toolbar"
-            >
-              <Toolbar />
-            </div>
+            <Toolbar />
           </Box>
         </Col>
       </Row>
