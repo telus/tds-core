@@ -16,7 +16,7 @@ const getCommitScope = () => {
     commitMessage.indexOf('('),
     commitMessage.indexOf(':') - commitMessage.indexOf('(')
   )
-  if (scope !== 'shared') {
+  if (scope !== '(shared)') {
     scope = scope.replace(/(core)|(community)|(shared)|(util)|(-)|(\()|(\))/g, '')
   }
 
