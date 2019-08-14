@@ -36,7 +36,6 @@
   },
   "devDependencies": {
     "@tds/core-colours": "^2.1.0",
-    "@tds/shared-base-button": "^1.2.18",
     "@tds/util-generate-id": "^1.0.4"
   }
 }
