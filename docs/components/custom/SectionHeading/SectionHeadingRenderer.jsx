@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Heading from '../../../../packages/Heading/Heading'
-import Flexbox from '../../../../shared/components/Flexbox/Flexbox'
+import FlexGrid from '../../../../packages/FlexGrid/FlexGrid'
 import Box from '../../../../packages/Box/Box'
 
 import styles from './SectionHeadingRenderer.modules.scss'
@@ -13,10 +13,16 @@ const SectionHeadingRenderer = ({ id, depth, toolbar, children }) => {
   return (
     <Box below={3}>
       <Heading level={`h${level}`} id={id}>
-        <Flexbox direction="row">
-          {children}
-          <div className={styles.toolbar}>{toolbar}</div>
-        </Flexbox>
+        <FlexGrid limitWidth={false} gutter={false}>
+          <FlexGrid.Row>
+            <FlexGrid.Col>
+              <Box inline between="space-between">
+                {children}
+                <div className={styles.toolbar}>{toolbar}</div>
+              </Box>
+            </FlexGrid.Col>
+          </FlexGrid.Row>
+        </FlexGrid>
       </Heading>
     </Box>
   )

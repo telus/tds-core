@@ -11,16 +11,27 @@ exports[`SectionHeadingRenderer renders 1`] = `
     invert={false}
     level="h2"
   >
-    <Flexbox
-      direction="row"
+    <FlexGrid
+      gutter={false}
+      limitWidth={false}
     >
-      A Section
-      <div
-        className="toolbar"
-      >
-        <Toolbar />
-      </div>
-    </Flexbox>
+      <Row>
+        <Col>
+          <Box
+            between="space-between"
+            inline={true}
+            tag="div"
+          >
+            A Section
+            <div
+              className="toolbar"
+            >
+              <Toolbar />
+            </div>
+          </Box>
+        </Col>
+      </Row>
+    </FlexGrid>
   </Heading>
 </Box>
 `;
