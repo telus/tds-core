@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { position } from '@tds/shared-styles'
+import { media } from '@tds/core-responsive'
 
 import { deprecate, warn } from '../../shared/utils/warn'
 import safeRest from '../../shared/utils/safeRest'
@@ -12,7 +13,12 @@ const zindexModalBackdrop = 1400
 
 const SpinnerContainer = styled.div(({ inline, fullScreen }) => ({
   ...position.relative,
-  ...(inline && { display: 'inline-block' }),
+  ...(inline && {
+    display: 'block',
+    ...media.from('md').css({
+      display: 'inline-block',
+    }),
+  }),
   ...(fullScreen && position.centerVertically),
 }))
 
