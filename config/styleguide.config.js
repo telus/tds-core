@@ -434,7 +434,7 @@ module.exports = {
           },
         },
         {
-          test: /(\.modules\.scss|flexboxgrid)/,
+          test: /flexboxgrid/,
           use: [
             'style-loader',
             {
@@ -454,11 +454,6 @@ module.exports = {
             },
             'sass-loader',
           ],
-        },
-        {
-          test: /\.scss$/,
-          exclude: /\.modules.scss$/,
-          use: ['style-loader', 'css-loader', 'sass-loader'],
         },
         {
           test: /\.css$/,
