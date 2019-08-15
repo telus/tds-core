@@ -8,8 +8,7 @@ module.exports = {
   rootDir: path.resolve('packages'),
   roots: ['<rootDir>', path.resolve('docs/components'), path.resolve('shared')],
   moduleNameMapper: {
-    '\\.modules.scss$': 'identity-obj-proxy',
-    '^.+\\.(css|scss)$': path.resolve('config/jest/__mocks__/styleMock.js'),
+    '^.+\\.css$': path.resolve('config/jest/__mocks__/styleMock.js'),
   },
   setupFiles: [
     path.resolve('config/jest/setupEnzyme.js'),
