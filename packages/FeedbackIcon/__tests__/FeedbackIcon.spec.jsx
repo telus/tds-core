@@ -3,27 +3,79 @@ import { render, shallow } from 'enzyme'
 
 import FeedbackIcon from '../FeedbackIcon'
 
+import { warn } from '../../../shared/utils/warn'
+
+jest.mock('../../../shared/utils/warn')
+
 describe('FeedbackIcon', () => {
-  const doShallow = (props = {}) => shallow(<FeedbackIcon {...props} />)
+  const defaultProps = { copy: { a11yText: 'Hello' } }
+
+  const doShallow = props => shallow(<FeedbackIcon {...defaultProps} {...props} />)
 
   it('renders', () => {
-    const feedbackIconSVG = render(
-      <FeedbackIcon>
+    const feedbackIcon = render(
+      <FeedbackIcon copy={{ a11yText: 'Hello' }}>
         <svg />
       </FeedbackIcon>
     )
 
-    expect(feedbackIconSVG).toMatchSnapshot()
+    expect(feedbackIcon).toMatchSnapshot()
   })
 
-  it('to render an i tag', () => {
+  it('to render an svg tag', () => {
     const feedbackIcon = doShallow({
-      children: <svg />,
+      children: <path />,
       id: 'the-id',
       'data-some-attr': 'some value',
     })
 
-    expect(feedbackIcon.type()).toEqual('i')
+    expect(feedbackIcon.type()).toEqual('svg')
+  })
+
+  it('has an img="role" attribute', () => {
+    const feedbackIcon = doShallow({
+      children: <path />,
+    })
+
+    expect(feedbackIcon.prop('role')).toEqual('img')
+  })
+
+  it('has an aria-hidden="true" attribute if optional a11yText is not passed', () => {
+    const feedbackIcon = doShallow({
+      children: <path />,
+      optionalText: true,
+      copy: { a11yText: '' },
+    })
+
+    expect(feedbackIcon.prop('aria-hidden')).toEqual(true)
+  })
+
+  it('does not have an aria-hidden attribute if a11yText is passed', () => {
+    const feedbackIcon = doShallow({
+      children: <path />,
+      copy: { a11yText: 'Some text' },
+    })
+
+    expect(feedbackIcon.prop('aria-hidden')).toBeUndefined()
+  })
+
+  it('contains a title tag with a11yText if a11yText is passed', () => {
+    const feedbackIcon = doShallow({
+      children: <path />,
+      copy: { a11yText: 'Add Location' },
+    })
+
+    expect(feedbackIcon.contains(<title>Add Location</title>)).toEqual(true)
+  })
+
+  it('warns when a11yText is not pass when required', () => {
+    doShallow({
+      children: <path />,
+      copy: { a11yText: '' },
+    })
+
+    expect(warn).toHaveBeenCalled()
+    jest.clearAllMocks()
   })
 
   it('passes additional attributes to the element', () => {

@@ -26,7 +26,6 @@
     "styled-components": "^4.1.3"
   },
   "dependencies": {
-    "@tds/core-a11y-content": "^2.1.0",
     "@tds/core-colours": "^2.0.0",
     "@tds/util-helpers": "^1.0.0",
     "prop-types": "^15.5.10"

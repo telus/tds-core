@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FeedbackIcon renders 1`] = `
-<i>
+<svg
+  role="img"
+>
+  <title>
+    Hello
+  </title>
   <svg />
-</i>
+</svg>
 `;
