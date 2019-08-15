@@ -6,23 +6,27 @@ Icons that provide feedback based on a user’s action. They are accessible and 
 
 When consuming `FeedbackIcon`, be sure to utilize accessible text where appropriate in order to inform customers of any major changes that should draw their attention.
 
-#### Required Accessibile Text
+#### Required Accessible Text
 
-To use the default accessible text, pass either `en` or `fr` to the `copy` property. To use custom accessibile text, pass an object with an `a11yText` property to the `copy` property of the icon.
+To use the default accessible text, pass either `'en'` or `'fr'` to the `copy` property. To use custom accessible text, pass an object with an `a11yText` property to the `copy` property of the icon.
+
+Inspect the icons below using developer tools to see `<title />` being applied to the SVGs' output.
 
 ```jsx
 <NotificationSuccess copy={{ a11yText: 'Success, you have added custom accessibile text' }} />
+<NotificationWarning copy="fr" />
 ```
 
-#### Optional Accessibile Text
+#### Optional Accessible Text
 
-Some FeedbackIcons do not require accessible text but can accept text optionally. To add optional accessibile text to an icon. Pass an `a11yText` property to the icon. At this time, only the `Checkbox` and `Times` FeedbackIcons accept `a11yText` while the rest have a `copy` prop.
+At this time, only the `Checkbox` and `Times` Feedback Icons can use the `copy` prop optionally.
 
 ```jsx
-<Checkmark a11yText="This is optional accessible text" />
+<Checkmark />
+<Times />
 ```
 
-Check out the table below a full list of Feedback Icons and their usage guidelines.
+Check out the table below for a complete list of Feedback Icons and their usage criteria.
 
 ```jsx noeditor
 const IconTable = require('../../docs/components/custom/IconTable/IconTable').default
@@ -34,21 +38,19 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       {
         name: 'Checkmark',
         Component: Checkmark,
-        usageCriteria:
-          'Used in unordered list to indicate success/approval, used in benefit list (business specific)',
+        usageCriteria: 'Used exclusively in the Unordered List.',
         accessibleText: 'Optional',
       },
       {
         name: 'Times',
         Component: Times,
-        usageCriteria:
-          'Red is exclusively used in unordered list to indicate requirements have not been met or something is not included, not used for close or remove, shuttle grey only used as close with hamburger menu',
+        usageCriteria: 'Used exclusively in the Unordered List.',
         accessibleText: 'Optional',
       },
       {
         name: 'NotificationSuccess',
         Component: NotificationSuccess,
-        usageCriteria: `Only used in notifications/feedback as success.`,
+        usageCriteria: 'Only used in notifications/feedback as success.',
         props: {
           copy: 'en',
         },
@@ -75,7 +77,8 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       {
         name: 'LocationSuccess',
         Component: LocationSuccess,
-        usageCriteria: `Used to show that address is successful, service is available based on location.`,
+        usageCriteria:
+          'Used to show that address is successful, service is available based on location.',
         props: {
           copy: 'en',
         },
