@@ -70,12 +70,9 @@ const GlobalStyleGuide = createGlobalStyle({
     'tr:nth-child(even)': {
       backgroundColor: colorAthensGrey,
     },
-    td: {
+    'td,th': {
       verticalAlign: 'middle',
-      padding: '0.5rem 0'
-    },
-    'td:first-child': {
-      paddingLeft: '0.5rem'
+      padding: '0.5rem 0.75rem'
     },
   }
 })

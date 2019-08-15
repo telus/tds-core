@@ -32,7 +32,7 @@ const IconTable = ({ icons, heading, noSort }) => {
             <th>Symbol</th>
             <th>Icon</th>
             <th>Usage Criteria</th>
-            {hasAccessibleText && <th>Accessible Text?</th>}
+            {hasAccessibleText && <th>Accessible Text</th>}
           </tr>
         </thead>
         <tbody>
