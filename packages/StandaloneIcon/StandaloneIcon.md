@@ -1,3 +1,5 @@
+**Deprecated, please use [InteractiveIcon](#interactiveicon) instead.**
+
 ### Making interactive icons
 
 Use the `onClick` prop to create an accessible interactive icon.

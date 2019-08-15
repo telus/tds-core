@@ -6,6 +6,7 @@ import A11yContent from '@tds/core-a11y-content'
 import { buttons } from '@tds/shared-styles'
 
 import safeRest from '../../shared/utils/safeRest'
+import { deprecate } from '../../shared/utils/warn'
 
 import Icon from '../../shared/components/Icon/Icon'
 
@@ -22,11 +23,15 @@ const touchAreaStyles = iconSize => {
 const StandaloneIconClickable = styled.button(buttons.noStyle)
 
 /**
- * An icon that has meaning within the context of the page, which should be communicated to screen readers.
+ * @deprecated An icon that has meaning within the context of the page, which should be communicated to screen readers.
  *
  * @version ./package.json
  */
 const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, innerRef, ...rest }) => {
+  deprecate(
+    '@tds/core-standalone-icon',
+    'The StandaloneIcon component is deprecated. Please use a InteractiveIcon instead.'
+  )
   const iconProps = {
     symbol,
     variant,
