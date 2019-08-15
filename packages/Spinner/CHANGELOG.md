@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/telusdigital/tds/compare/@tds/core-spinner@3.0.2...@tds/core-spinner@3.0.3) (2019-08-15)
+
+
+### Bug Fixes
+
+* **core-spinner:** use full width given a medium and lower view ([dbaa31e](https://github.com/telusdigital/tds/commit/dbaa31e))
+
+
+
+
+
 ## [3.0.2](https://github.com/telusdigital/tds/compare/@tds/core-spinner@3.0.1...@tds/core-spinner@3.0.2) (2019-08-09)
 
 **Note:** Version bump only for package @tds/core-spinner
