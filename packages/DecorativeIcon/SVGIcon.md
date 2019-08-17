@@ -599,7 +599,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Watch,
         usageCriteria: 'Smart watches, fitness watches',
       },
-      { name: 'Phone', Component: Phone, usageCriteria: 'Phone' },
+      {
+        name: 'Phone',
+        Component: Phone,
+        usageCriteria: 'Phone',
+      },
       {
         name: 'VideoGames',
         Component: VideoGames,
