@@ -81,6 +81,9 @@ export const StyledHeading = styled.h1(wordBreak, ({ level, invert }) => {
   return {
     color,
     ...HeadingLevels[`${level}`],
+    '& > span': {
+      letterSpacing: 'inherit',
+    },
   }
 })
 
