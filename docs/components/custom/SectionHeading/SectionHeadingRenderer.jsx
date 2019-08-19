@@ -2,22 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Heading from '../../../../packages/Heading/Heading'
-import Flexbox from '../../../../shared/components/Flexbox/Flexbox'
 import Box from '../../../../packages/Box/Box'
-
-import styles from './SectionHeadingRenderer.modules.scss'
 
 const SectionHeadingRenderer = ({ id, depth, toolbar, children }) => {
   const level = Math.min(depth, 4)
 
   return (
-    <Box below={3}>
+    <Box inline between="space-between" below={3} style={{ alignItems: 'center' }}>
       <Heading level={`h${level}`} id={id}>
-        <Flexbox direction="row">
-          {children}
-          <div className={styles.toolbar}>{toolbar}</div>
-        </Flexbox>
+        {children}
       </Heading>
+      <div>{toolbar}</div>
     </Box>
   )
 }

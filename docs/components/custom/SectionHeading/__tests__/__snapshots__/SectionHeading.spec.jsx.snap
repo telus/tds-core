@@ -3,7 +3,13 @@
 exports[`SectionHeadingRenderer renders 1`] = `
 <Box
   below={3}
-  inline={false}
+  between="space-between"
+  inline={true}
+  style={
+    Object {
+      "alignItems": "center",
+    }
+  }
   tag="div"
 >
   <Heading
@@ -11,16 +17,10 @@ exports[`SectionHeadingRenderer renders 1`] = `
     invert={false}
     level="h2"
   >
-    <Flexbox
-      direction="row"
-    >
-      A Section
-      <div
-        className="toolbar"
-      >
-        <Toolbar />
-      </div>
-    </Flexbox>
+    A Section
   </Heading>
+  <div>
+    <Toolbar />
+  </div>
 </Box>
 `;
