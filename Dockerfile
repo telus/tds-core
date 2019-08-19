@@ -5,7 +5,7 @@
 
 
 # Start from the official Node 8 alpine image. https://hub.docker.com/_/node/
-FROM node:8
+FROM node:8.16.1
 
 # Disable update check
 ENV NO_UPDATE_NOTIFIER=true
@@ -17,8 +17,8 @@ WORKDIR /tds-core
 # Add a user so that we don't run as root:
 #  https://github.com/telusdigital/reference-architecture/blob/3ff683dd68b247ac9a3febda828105fe52cd9390/delivery/docker.md#root-vs-user-mode
 RUN set -ex && \
-    adduser node root && \
-    chmod g+w /
+  adduser node root && \
+  chmod g+w /
 
 # Set the container's user to the newly created one.
 USER node

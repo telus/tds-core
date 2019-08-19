@@ -18,13 +18,13 @@ services:
       dockerfile: openshift/Dockerfile
     ports:
       - '6060:6060'
-  ciboot:
-    container_name: tds-core
-    build: .
-    ports:
-      - 6060:6060
-    volumes:
-      - './:/tds-core/'
+  # ciboot:
+  #   container_name: tds-core
+  #   build: .
+  #   ports:
+  #     - 6060:6060
+  #   volumes:
+  #     - './:/tds-core/'
   e2e:
     container_name: tds-core-e2e
     build:
@@ -38,15 +38,15 @@ services:
       - test:e2e-direct
       - --
       - $mode
-    network_mode: host
     ports:
       - 6060:6060
-    depends_on:
-      - ciboot
+    # depends_on:
+    #   - ciboot
     volumes:
       - './e2e/.:/tds-core/e2e/'
       - './scripts/.:/tds-core/scripts/'
       - './config/.:/tds-core/config/'
+      - './docs/.:/tds-core/docs/'
       - './packages/.:/tds-core/packages/'
       - './shared/.:/tds-core/shared/'
       - './.git/.:/tds-core/.git/'
