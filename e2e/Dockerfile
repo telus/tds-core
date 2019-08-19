@@ -5,7 +5,7 @@
 
 
 # Start from the official Node 8 alpine image. https://hub.docker.com/_/node/
-FROM node:8
+FROM node:8.16.1
 
 # Disable update check
 ENV NO_UPDATE_NOTIFIER=true
@@ -30,7 +30,7 @@ RUN curl --silent --show-error --location --fail --retry 3 --output /tmp/google-
   "/opt/google/chrome/google-chrome" \
   && google-chrome --version
 
-RUN export CHROMEDRIVER_RELEASE=$(curl --location --fail --retry 3 http://chromedriver.storage.googleapis.com/LATEST_RELEASE) \
+RUN export CHROMEDRIVER_RELEASE=$(curl --location --fail --retry 3 http://chromedriver.storage.googleapis.com/LATEST_RELEASE_76) \
   && curl --silent --show-error --location --fail --retry 3 --output /tmp/chromedriver_linux64.zip "http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_RELEASE/chromedriver_linux64.zip" \
   && cd /tmp \
   && unzip chromedriver_linux64.zip \
@@ -49,6 +49,8 @@ COPY package.json package-lock.json lerna.json ./
 
 # Install our dependendies
 RUN npm ci
+
+RUN npm rebuild node-sass
 
 # Remove the previously copied lerna.json.
 # This will be replaced by mounting the original under volumes. This allows for it to be properly accessed by our scripts.

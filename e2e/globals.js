@@ -1,30 +1,38 @@
 /* eslint-disable no-console */
-const request = require('request')
+process.env.STYLEGUIDIST_ENV = 'e2e'
 
-const { healthCheckUrl } = require('./config')
+const styleguidist = require('react-styleguidist')
 
-let counter = 0
-const healthCheck = done => {
-  request(healthCheckUrl, (err, response, body) => {
-    if (!body && counter < 20) {
-      console.log(`${counter}/20 waiting for the styleguide to start. Please wait...`)
-      counter += 1
+const styleguideConfig = require('../config/styleguide.config')
 
-      setTimeout(healthCheck, 3000, done)
-    } else {
-      done()
-    }
-  })
-}
+let server = null
 
 module.exports = {
   asyncHookTimeout: 120000,
   before: done => {
     console.log('Setting up e2e tests...')
-    healthCheck(done)
+
+    server = styleguidist(styleguideConfig).server((err, config) => {
+      if (err) {
+        console.log(err)
+      } else {
+        const url = `http://${config.serverHost}:${config.serverPort}`
+        console.log(`Listening at ${url}`)
+      }
+    })
+
+    server.compiler.hooks.afterCompile.tap('Compile complete', () => {
+      console.log('Server ready')
+      done()
+    })
   },
   after: done => {
     console.log('Closing down e2e tests...')
-    done()
+
+    // TODO: this is an undocumented command in Styleguidist
+    // and webpackdevserver, making it brittle
+    // Ref, styleguidist: https://github.com/styleguidist/react-styleguidist/blob/8678c56560b850cc4866a52a3c4d3a5adb82356e/src/scripts/create-server.js#L35
+    // Ref, webpackdevserver: https://stackoverflow.com/a/56169083
+    server.app.close(() => done())
   },
 }
