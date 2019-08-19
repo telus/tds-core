@@ -45,6 +45,13 @@ exports[`Footnote renders closed 1`] = `
   top: -0.5em;
 }
 
+.c10 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
 div.c7 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -480,6 +487,13 @@ exports[`Footnote renders opened 1`] = `
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+.c10 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
 }
 
 div.c7 {

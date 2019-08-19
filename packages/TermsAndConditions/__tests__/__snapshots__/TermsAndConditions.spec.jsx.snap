@@ -93,6 +93,13 @@ div.c12 {
   top: -0.5em;
 }
 
+.c10 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
 .c7 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -622,6 +629,13 @@ div.c12 {
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+.c10 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
 }
 
 .c7 {
@@ -2663,6 +2677,13 @@ div.c12 {
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+.c10 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
 }
 
 .c7 {
@@ -5438,6 +5459,13 @@ div.c12 {
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+.c10 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
 }
 
 .c7 {
