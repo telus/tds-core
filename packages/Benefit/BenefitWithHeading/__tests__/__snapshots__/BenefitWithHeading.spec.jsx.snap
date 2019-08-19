@@ -38,6 +38,13 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
   top: -0.5em;
 }
 
+.c4 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -225,6 +232,13 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
   padding-left: 0.1em;
   font-size: 0.875rem;
   top: -0.5em;
+}
+
+.c4 > span {
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
 }
 
 .c0 {
