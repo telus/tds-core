@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.0.8...@tds/core-tooltip@4.1.0) (2019-08-20)
+
+
+### Features
+
+* **core-tooltip:** generate unique id using @tds/util-helpers uniqueId ([bc8c87d](https://github.com/telusdigital/tds/commit/bc8c87d)), closes [#1223](https://github.com/telusdigital/tds/issues/1223)
+
+
+
+
+
 ## [4.0.8](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.0.7...@tds/core-tooltip@4.0.8) (2019-08-09)
 
 **Note:** Version bump only for package @tds/core-tooltip

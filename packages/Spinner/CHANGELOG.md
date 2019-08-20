@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.4](https://github.com/telusdigital/tds/compare/@tds/core-spinner@3.0.3...@tds/core-spinner@3.0.4) (2019-08-20)
+
+**Note:** Version bump only for package @tds/core-spinner
+
+
+
+
+
 ## [3.0.3](https://github.com/telusdigital/tds/compare/@tds/core-spinner@3.0.2...@tds/core-spinner@3.0.3) (2019-08-15)
 
 
