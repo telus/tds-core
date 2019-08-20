@@ -13,6 +13,10 @@ import GutterContext from './gutterContext'
 
 import safeRest from '../../shared/utils/safeRest'
 
+const rem = breakpoint => {
+  return `${breakpoints[breakpoint] / 16}rem`
+}
+
 const StyledGrid = styled(({ reverseLevel, limitWidth, ...rest }) => <Grid {...rest} />)(
   ({ reverseLevel, limitWidth }) => ({
     display: 'flex',
@@ -23,19 +27,19 @@ const StyledGrid = styled(({ reverseLevel, limitWidth, ...rest }) => <Grid {...r
       flexDirection: reverseLevel[0] ? 'column-reverse' : 'column',
     }),
     ...media.from('sm').css({
-      ...(limitWidth && { maxWidth: breakpoints.sm }),
+      ...(limitWidth && { maxWidth: rem('sm') }),
       flexDirection: reverseLevel[1] ? 'column-reverse' : 'column',
     }),
     ...media.from('md').css({
-      ...(limitWidth && { maxWidth: breakpoints.md }),
+      ...(limitWidth && { maxWidth: rem('md') }),
       flexDirection: reverseLevel[2] ? 'column-reverse' : 'column',
     }),
     ...media.from('lg').css({
-      ...(limitWidth && { maxWidth: breakpoints.lg }),
+      ...(limitWidth && { maxWidth: rem('lg') }),
       flexDirection: reverseLevel[3] ? 'column-reverse' : 'column',
     }),
     ...media.from('xl').css({
-      ...(limitWidth && { maxWidth: breakpoints.xl }),
+      ...(limitWidth && { maxWidth: rem('xl') }),
       flexDirection: reverseLevel[4] ? 'column-reverse' : 'column',
     }),
   })
