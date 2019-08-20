@@ -333,13 +333,13 @@ div.c1 {
   data-testid="stepTrackerContainer"
 >
   <div
-    class="c1 TDS_flexboxgrid2__container-fluid___3c7kO"
+    class="c1 container-fluid"
   >
     <div
-      class="c2 TDS_flexboxgrid2__row___3YyB2"
+      class="c2 row"
     >
       <div
-        class="TDS_flexboxgrid2__col-xs-12___3Q9tF c3"
+        class="col-xs-12 c3"
       >
         <div
           class="c4"
@@ -417,10 +417,10 @@ div.c1 {
       </div>
     </div>
     <div
-      class="c2 TDS_flexboxgrid2__row___3YyB2"
+      class="c2 row"
     >
       <div
-        class="TDS_flexboxgrid2__col-xs-12___3Q9tF col-md-0 c12"
+        class="col-xs-12 col-md-0 c12"
       >
         <div
           class="c13"
