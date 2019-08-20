@@ -66,13 +66,10 @@ jobs:
           name: Skip e2e
           command: echo Skipping e2e
       # - run:
-      #     name: Prepare node-sass
-      #     command: npm rebuild node-sass
-      # - run:
       #     name: Styleguidist Server
       #     command: npm run dev:e2e-direct
       #     background: true
-      # - run: npm run test:e2e-direct -- -a
+      # - run: npm run test:e2e-direct -- -ass from circle
 
   prepr-log:
     executor: prepr
@@ -150,9 +147,6 @@ jobs:
             git config --global user.email "tds.github.bot@gmail.com"
             git config --global user.name "TDSBot"
             git pull
-      - run:
-          name: Prepare node-sass
-          command: npm rebuild node-sass
       - run:
           name: Styleguidist Server
           command: npm run dev:e2e-direct
