@@ -362,13 +362,13 @@ div.c5 {
                 class="c4"
               >
                 <div
-                  class="c5 TDS_flexboxgrid2__container-fluid___3c7kO"
+                  class="c5 container-fluid"
                 >
                   <div
-                    class="c6 TDS_flexboxgrid2__row___3YyB2"
+                    class="c6 row"
                   >
                     <div
-                      class="TDS_flexboxgrid2__col-xs-12___3Q9tF c7"
+                      class="col-xs-12 c7"
                     >
                       <div
                         class="c8 sc-htoDjs c8 c9"
@@ -802,13 +802,13 @@ div.c5 {
                 class="c4"
               >
                 <div
-                  class="c5 TDS_flexboxgrid2__container-fluid___3c7kO"
+                  class="c5 container-fluid"
                 >
                   <div
-                    class="c6 TDS_flexboxgrid2__row___3YyB2"
+                    class="c6 row"
                   >
                     <div
-                      class="TDS_flexboxgrid2__col-xs-12___3Q9tF c7"
+                      class="col-xs-12 c7"
                     >
                       <div
                         class="c8 sc-htoDjs c8 c9"

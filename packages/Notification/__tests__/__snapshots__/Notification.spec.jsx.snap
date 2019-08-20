@@ -410,7 +410,7 @@ div.c2 {
                           fluid={true}
                         >
                           <div
-                            className="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
+                            className="c2 container-fluid"
                           >
                             <Row>
                               <Styled(Component)
@@ -474,7 +474,7 @@ div.c2 {
                                       className="c3"
                                     >
                                       <div
-                                        className="c3 TDS_flexboxgrid2__row___3YyB2"
+                                        className="c3 row"
                                       >
                                         <Col>
                                           <Styled(Component)
@@ -572,7 +572,7 @@ div.c2 {
                                                   xs={true}
                                                 >
                                                   <div
-                                                    className="TDS_flexboxgrid2__col-xs___2KrHO c4"
+                                                    className="col-xs c4"
                                                   >
                                                     <FlexGrid
                                                       gutter={false}
@@ -646,7 +646,7 @@ div.c2 {
                                                               fluid={true}
                                                             >
                                                               <div
-                                                                className="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
+                                                                className="c2 container-fluid"
                                                               >
                                                                 <Row>
                                                                   <Styled(Component)
@@ -710,7 +710,7 @@ div.c2 {
                                                                           className="c3"
                                                                         >
                                                                           <div
-                                                                            className="c3 TDS_flexboxgrid2__row___3YyB2"
+                                                                            className="c3 row"
                                                                           >
                                                                             <Col>
                                                                               <Styled(Component)
@@ -808,7 +808,7 @@ div.c2 {
                                                                                       xs={true}
                                                                                     >
                                                                                       <div
-                                                                                        className="TDS_flexboxgrid2__col-xs___2KrHO c5"
+                                                                                        className="col-xs c5"
                                                                                       >
                                                                                         <Box
                                                                                           between={3}
@@ -1439,7 +1439,7 @@ div.c2 {
                           fluid={true}
                         >
                           <div
-                            className="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
+                            className="c2 container-fluid"
                           >
                             <Row>
                               <Styled(Component)
@@ -1503,7 +1503,7 @@ div.c2 {
                                       className="c3"
                                     >
                                       <div
-                                        className="c3 TDS_flexboxgrid2__row___3YyB2"
+                                        className="c3 row"
                                       >
                                         <Col>
                                           <Styled(Component)
@@ -1601,7 +1601,7 @@ div.c2 {
                                                   xs={true}
                                                 >
                                                   <div
-                                                    className="TDS_flexboxgrid2__col-xs___2KrHO c4"
+                                                    className="col-xs c4"
                                                   >
                                                     <FlexGrid
                                                       gutter={false}
@@ -1675,7 +1675,7 @@ div.c2 {
                                                               fluid={true}
                                                             >
                                                               <div
-                                                                className="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
+                                                                className="c2 container-fluid"
                                                               >
                                                                 <Row>
                                                                   <Styled(Component)
@@ -1739,7 +1739,7 @@ div.c2 {
                                                                           className="c3"
                                                                         >
                                                                           <div
-                                                                            className="c3 TDS_flexboxgrid2__row___3YyB2"
+                                                                            className="c3 row"
                                                                           >
                                                                             <Col>
                                                                               <Styled(Component)
@@ -1837,7 +1837,7 @@ div.c2 {
                                                                                       xs={true}
                                                                                     >
                                                                                       <div
-                                                                                        className="TDS_flexboxgrid2__col-xs___2KrHO c5"
+                                                                                        className="col-xs c5"
                                                                                       >
                                                                                         <Box
                                                                                           between={3}
@@ -2343,22 +2343,22 @@ div.c2 {
   class="c0 sc-ifAKCX c0 c1"
 >
   <div
-    class="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
+    class="c2 container-fluid"
   >
     <div
-      class="c3 TDS_flexboxgrid2__row___3YyB2"
+      class="c3 row"
     >
       <div
-        class="TDS_flexboxgrid2__col-xs___2KrHO c4"
+        class="col-xs c4"
       >
         <div
-          class="c2 TDS_flexboxgrid2__container-fluid___3c7kO"
+          class="c2 container-fluid"
         >
           <div
-            class="c3 TDS_flexboxgrid2__row___3YyB2"
+            class="c3 row"
           >
             <div
-              class="TDS_flexboxgrid2__col-xs___2KrHO c5"
+              class="col-xs c5"
             >
               <div
                 class="c6"
