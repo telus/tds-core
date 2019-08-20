@@ -576,7 +576,7 @@ div.c0 {
 
 @media (min-width:576px) {
   .c0 {
-    max-width: 576px;
+    max-width: 36rem;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -585,7 +585,7 @@ div.c0 {
 
 @media (min-width:768px) {
   .c0 {
-    max-width: 768px;
+    max-width: 48rem;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -594,7 +594,7 @@ div.c0 {
 
 @media (min-width:992px) {
   .c0 {
-    max-width: 992px;
+    max-width: 62rem;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -603,7 +603,7 @@ div.c0 {
 
 @media (min-width:1200px) {
   .c0 {
-    max-width: 1200px;
+    max-width: 75rem;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1039,7 +1039,7 @@ div.c0 {
 
 @media (min-width:576px) {
   .c0 {
-    max-width: 576px;
+    max-width: 36rem;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1048,7 +1048,7 @@ div.c0 {
 
 @media (min-width:768px) {
   .c0 {
-    max-width: 768px;
+    max-width: 48rem;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1057,7 +1057,7 @@ div.c0 {
 
 @media (min-width:992px) {
   .c0 {
-    max-width: 992px;
+    max-width: 62rem;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1066,7 +1066,7 @@ div.c0 {
 
 @media (min-width:1200px) {
   .c0 {
-    max-width: 1200px;
+    max-width: 75rem;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1210,7 +1210,7 @@ div.c0 {
 
 @media (min-width:576px) {
   .c0 {
-    max-width: 576px;
+    max-width: 36rem;
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
@@ -1219,7 +1219,7 @@ div.c0 {
 
 @media (min-width:768px) {
   .c0 {
-    max-width: 768px;
+    max-width: 48rem;
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
@@ -1228,7 +1228,7 @@ div.c0 {
 
 @media (min-width:992px) {
   .c0 {
-    max-width: 992px;
+    max-width: 62rem;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1237,7 +1237,7 @@ div.c0 {
 
 @media (min-width:1200px) {
   .c0 {
-    max-width: 1200px;
+    max-width: 75rem;
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
