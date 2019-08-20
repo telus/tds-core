@@ -8,12 +8,10 @@ import autoprefixer from 'autoprefixer'
 
 import cleaner from './rollup/rollup-plugin-cleaner'
 
-import CssModulesSassLoader from './CssModulesSassLoader'
-
 export default opts => {
   const options = Object.assign(
     {
-      css: true,
+      css: false,
     },
     opts
   )
@@ -49,11 +47,6 @@ export default opts => {
           extract: './dist/index.css',
           sourceMap: false,
           plugins: [autoprefixer()],
-          modules: {
-            Loader: CssModulesSassLoader,
-            globalModulePaths: [/packages\/SelectorCounter/],
-            generateScopedName: 'TDS_[name]__[local]___[hash:base64:5]',
-          },
         }),
       babel({
         runtimeHelpers: true,
