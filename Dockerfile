@@ -20,10 +20,49 @@ RUN set -ex && \
   adduser node root && \
   chmod g+w /
 
+RUN apt-get update
+
+# Install Google Chrome, which is necessary for the e2e tests.
+RUN curl --silent --show-error --location --fail --retry 3 --output /tmp/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+  && (dpkg -i /tmp/google-chrome-stable_current_amd64.deb || apt-get -fy install)  \
+  && rm -rf /tmp/google-chrome-stable_current_amd64.deb \
+  && sed -i 's|HERE/chrome"|HERE/chrome" --disable-setuid-sandbox --no-sandbox|g' \
+  "/opt/google/chrome/google-chrome" \
+  && google-chrome --version
+
+RUN export CHROMEDRIVER_RELEASE=$(curl --location --fail --retry 3 http://chromedriver.storage.googleapis.com/LATEST_RELEASE_77) \
+  && curl --silent --show-error --location --fail --retry 3 --output /tmp/chromedriver_linux64.zip "http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_RELEASE/chromedriver_linux64.zip" \
+  && cd /tmp \
+  && unzip chromedriver_linux64.zip \
+  && rm -rf chromedriver_linux64.zip \
+  && mv chromedriver /usr/local/bin/chromedriver \
+  && chmod +x /usr/local/bin/chromedriver \
+  && chromedriver --version
+
+# Install git, which is necessary for the install process.
+RUN apt-get install git
+
+# Copy only the files necessary to install dependencies into the working directory.
+# Docker builds the image in layers and caches them. Because the app files change more often than the dependencies, we
+#  copy the app files only after we install the dependencies.
+
+# COPY package.json package-lock.json lerna.json ./
+# COPY ./config ./config
+# COPY ./scripts ./scripts
+# COPY ./packages ./packages
+# COPY ./shared ./shared
+COPY ./ ./
+
+# Install our dependendies
+RUN ls
+RUN npm run bootstrap:quick
+
+# Remove the previously copied lerna.json.
+# This will be replaced by mounting the original under volumes. This allows for it to be properly accessed by our scripts.
+# RUN rm lerna.json
+
 # Set the container's user to the newly created one.
-USER node
 
 # The entrypoint configures the container to be run as an executable.
 # Arguments supplied on the command line will be forwarded onto the entrypoint.
-ENTRYPOINT ["npm", "run"]
-CMD ["dev:e2e-direct"]
+# ENTRYPOINT ["npm", "run", "test:e2e-direct", "--"]

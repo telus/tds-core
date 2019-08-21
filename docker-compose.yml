@@ -32,23 +32,24 @@ services:
       dockerfile: e2e/Dockerfile
     environment:
       - mode=-a
-    entrypoint:
-      - npm
-      - run
-      - test:e2e-direct
-      - --
-      - $mode
+    # entrypoint:
+    # - node
+    # - npm
+    # - run
+    # - test:e2e-direct
+    # - --
+    # - $mode
     ports:
       - 6060:6060
     # depends_on:
     #   - ciboot
     volumes:
-      - './e2e/.:/tds-core/e2e/'
-      - './scripts/.:/tds-core/scripts/'
-      - './config/.:/tds-core/config/'
-      - './docs/.:/tds-core/docs/'
-      - './packages/.:/tds-core/packages/'
-      - './shared/.:/tds-core/shared/'
-      - './.git/.:/tds-core/.git/'
+      - '${PWD}/e2e/:/tds-core/e2e/'
+      - '${PWD}/scripts/:/tds-core/scripts/'
+      - '${PWD}/config/:/tds-core/config/'
+      - '${PWD}/docs/:/tds-core/docs/'
+      - '${PWD}/packages/:/tds-core/packages/'
+      - '${PWD}/shared/:/tds-core/shared/'
+      - '${PWD}/.git/:/tds-core/.git/'
       - '${PWD}/lerna.json:/tds-core/lerna.json'
       - '${PWD}/babel.config.js:/tds-core/babel.config.js'

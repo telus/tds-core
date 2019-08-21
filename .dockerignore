@@ -5,7 +5,10 @@
 *.log
 **/*.tgz
 
+node_modules/
 **/node_modules
+
+.npmrc
 
 **/dist
 build/
