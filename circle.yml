@@ -63,13 +63,10 @@ jobs:
     steps:
       - attach
       - run:
-          name: Skip e2e
-          command: echo Skipping e2e
-      # - run:
-      #     name: Styleguidist Server
-      #     command: npm run dev:e2e-direct
-      #     background: true
-      # - run: npm run test:e2e-direct -- -ass from circle
+          name: Styleguidist Server
+          command: npm run dev:e2e-direct
+          background: true
+      - run: npm run test:e2e-direct -- -a
 
   prepr-log:
     executor: prepr

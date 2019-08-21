@@ -527,16 +527,6 @@
       "contributions": [
         "tds"
       ]
-    },
-    {
-      "login": "Jeffrey-Chang",
-      "name": "Jeffrey Chang",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/30445300?v=4",
-      "profile": "https://github.com/Jeffrey-Chang",
-      "contributions": [
-        "tds"
-      ]
     }
-  ],
-  "commitConvention": "none"
+  ]
 }
