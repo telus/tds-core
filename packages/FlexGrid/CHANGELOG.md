@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@3.0.0...@tds/core-flex-grid@3.0.1) (2019-08-21)
+
+
+### Bug Fixes
+
+* **core-flex-grid:** convert px units to rem in flexgrid container ([0da7ffc](https://github.com/telusdigital/tds/commit/0da7ffc))
+
+
+
+
+
 # [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@2.4.1...@tds/core-flex-grid@3.0.0) (2019-07-26)
 
 

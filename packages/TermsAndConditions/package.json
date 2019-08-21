@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-terms-and-conditions",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -30,7 +30,7 @@
     "@tds/core-box": "^2.0.1",
     "@tds/core-colours": "^2.1.0",
     "@tds/core-dimple-divider": "^2.0.3",
-    "@tds/core-flex-grid": "^3.0.0",
+    "@tds/core-flex-grid": "^3.0.1",
     "@tds/core-hairline-divider": "^2.0.3",
     "@tds/core-heading": "^2.2.3",
     "@tds/core-link": "^2.0.8",

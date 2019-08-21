@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.8](https://github.com/telusdigital/tds/compare/@tds/core-notification@2.0.7...@tds/core-notification@2.0.8) (2019-08-21)
+
+
+### Bug Fixes
+
+* **core-notification:** update snapshots ([96edb01](https://github.com/telusdigital/tds/commit/96edb01))
+
+
+
+
+
 ## [2.0.7](https://github.com/telusdigital/tds/compare/@tds/core-notification@2.0.6...@tds/core-notification@2.0.7) (2019-08-09)
 
 **Note:** Version bump only for package @tds/core-notification
