@@ -30,7 +30,7 @@ const StyledFootnote = styled.div(
     position: 'fixed',
     top: 0,
     left: 0,
-    height: '100vh',
+    // height: '100vh',
     width: '100vw',
     backgroundColor: colorAthensGrey,
     display: 'block',
@@ -122,7 +122,8 @@ const Footnote = props => {
   const [isVisible, setIsVisible] = useState(false)
   const [isTextVisible, setIsTextVisible] = useState(true)
 
-  const [oldHeight, setOldHeight] = useState('auto')
+  const [oldHeight, setOldHeight] = useState(0)
+  const [heightAutoGate, setHeightAutoGate] = useState(false)
 
   const prevProps = usePrevious(props)
 
@@ -161,36 +162,6 @@ const Footnote = props => {
     },
     [closeFootnote]
   )
-
-  const saveCurrentHeight = () => {
-    const oldHeight = listRef.current.offsetHeight
-    setBodyHeight(oldHeight)
-  }
-
-  const handleStyledFootnoteTransitionEnd = e => {
-    if (e.propertyName === 'transform' && !isOpen) {
-      setIsVisible(false)
-    }
-  }
-
-  const handleTransitionEnd = e => {
-    e.persist()
-    if (e.propertyName === 'opacity' && !isTextVisible) {
-      setData({ content, number })
-      if (bodyHeight !== listRef.current.offsetHeight) {
-        // set new height
-        setBodyHeight(listRef.current.offsetHeight)
-      } else {
-        setIsTextVisible(true)
-      }
-    } else {
-      setBodyHeight(listRef.current.offsetHeight)
-    }
-
-    if (e.propertyName === 'height' && !isTextVisible) {
-      setIsTextVisible(true)
-    }
-  }
 
   const resetFootnote = () => {
     // reset footnote state if closed
@@ -236,19 +207,6 @@ const Footnote = props => {
     }
   }, [handleClose, isOpen])
 
-  // set data if opening a new footnote
-  useEffect(() => {
-    if (isOpen && !prevProps.isOpen) {
-      setData({ content, number })
-    }
-  }, [isOpen, prevProps.isOpen, content, number])
-
-  useEffect(() => {
-    if (isOpen && prevProps.isOpen && number !== prevProps.number) {
-      saveCurrentHeight()
-      setIsTextVisible(false)
-    }
-  }, [number, isOpen, prevProps.isOpen, prevProps.number])
   // reset footnote on close
   useEffect(resetFootnote, [isOpen])
 
@@ -257,6 +215,13 @@ const Footnote = props => {
 
   // NEW INITIAL OPEN & CLOSE
   useEffect(() => {
+    // set data if opening a new footnote
+
+    if (isOpen && !prevProps.isOpen) {
+      setData({ content, number })
+      setOldHeight(footnoteRef.current.offsetHeight)
+    }
+
     if (isOpen !== prevProps.isOpen && isOpen) {
       console.log('Opened')
       TweenLite.to(footnoteRef.current, 0.3, { y: '0%' })
@@ -273,35 +238,45 @@ const Footnote = props => {
       })
 
       timeline.add(() => {
-        setOldHeight(footnoteRef.current.offsetHeight)
-
-        // console.log(footnoteRef.current.offsetHeight, oldHeight, bodyHeight)
-        // TODO: Set copy here instead
         setData({ content, number })
 
-        TweenLite.set(footnoteRef.current, {
-          height: 'auto',
-        })
-        console.log(oldHeight)
-        TweenLite.from(footnoteRef.current, 1, {
+        if (heightAutoGate) {
+          TweenLite.set(footnoteRef.current, {
+            height: 'auto',
+            onComplete: () => {
+              setHeightAutoGate(false)
+            },
+          })
+          console.log('executed', heightAutoGate)
+        }
+
+        TweenLite.from(footnoteRef.current, 0.5, {
           height: oldHeight,
         })
       })
-
-      timeline.to(bodyRef.current, 0.5, { autoAlpha: 1, delay: 1 })
+      timeline.to(bodyRef.current, 0.5, { autoAlpha: 1, delay: 0.5 })
+      timeline.add(() => {
+        setOldHeight(footnoteRef.current.offsetHeight)
+        setHeightAutoGate(true)
+      })
       timeline.play()
     }
-  }, [isOpen, prevProps.isOpen, number, prevProps.number, copy, oldHeight, content, bodyHeight])
+  }, [
+    isOpen,
+    prevProps.isOpen,
+    number,
+    prevProps.number,
+    copy,
+    oldHeight,
+    content,
+    bodyHeight,
+    heightAutoGate,
+  ])
 
   return (
     <div {...safeRest(rest)}>
       {isOpen && <GlobalBodyScrollLock />}
-      <StyledFootnote
-        ref={footnoteRef}
-        isOpen={isOpen}
-        isVisible={isVisible}
-        // onTransitionEnd={handleStyledFootnoteTransitionEnd}
-      >
+      <StyledFootnote ref={footnoteRef} isOpen={isOpen} isVisible={isVisible}>
         <FocusTrap autofocus={false}>
           <StyledFootnoteHeader ref={headerRef}>
             <div css={{ display: 'none', ...media.from('md').css({ display: 'block' }) }}>
@@ -337,7 +312,6 @@ const Footnote = props => {
             bodyHeight={bodyHeight}
             headerHeight={headerHeight}
             isTextVisible={isTextVisible}
-            // onTransitionEnd={handleTransitionEnd}
           >
             {data.number && data.content && (
               <StyledListContainer ref={listRef}>
