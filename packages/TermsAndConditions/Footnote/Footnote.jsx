@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styled, { createGlobalStyle } from 'styled-components'
+import { TimelineLite, TweenLite } from 'gsap'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
@@ -35,7 +36,7 @@ const StyledFootnote = styled.div(
     display: 'block',
     boxShadow: '0 0 16px 0 rgba(0, 0, 0, 0.1)',
     transform: 'translateY(100%)',
-    transition: 'transform 500ms ease-out',
+    // transition: 'transform 500ms ease-out',
     zIndex: 99999,
     ...media.from('md').css({
       top: 'auto',
@@ -50,7 +51,7 @@ const StyledFootnote = styled.div(
   ({ isOpen }) => {
     if (isOpen) {
       return {
-        transform: 'translateY(0)',
+        // transform: 'translateY(0)',
       }
     }
     return {}
@@ -70,7 +71,7 @@ const StyledFootnoteBody = styled.div(
   {
     overflow: 'auto',
     '-webkit-overflow-scrolling': 'touch',
-    transition: 'height 300ms ease-out, opacity 200ms ease-out',
+    // transition: 'height 300ms ease-out, opacity 200ms ease-out',
     transform: 'translateZ(0)',
     backgroundColor: colorAthensGrey,
   },
@@ -81,8 +82,8 @@ const StyledFootnoteBody = styled.div(
     }),
   }),
   ({ bodyHeight, isTextVisible }) => ({
-    height: bodyHeight,
-    opacity: isTextVisible ? 1 : 0,
+    // height: bodyHeight,
+    // opacity: isTextVisible ? 1 : 0,
   })
 )
 
@@ -120,6 +121,8 @@ const Footnote = props => {
   const [bodyHeight, setBodyHeight] = useState('auto')
   const [isVisible, setIsVisible] = useState(false)
   const [isTextVisible, setIsTextVisible] = useState(true)
+
+  const [oldHeight, setOldHeight] = useState('auto')
 
   const prevProps = usePrevious(props)
 
@@ -252,6 +255,44 @@ const Footnote = props => {
   // focus on the close button on open/content change
   useEffect(focusHeading, [isVisible, content])
 
+  // NEW INITIAL OPEN & CLOSE
+  useEffect(() => {
+    if (isOpen !== prevProps.isOpen && isOpen) {
+      console.log('Opened')
+      TweenLite.to(footnoteRef.current, 0.3, { y: '0%' })
+    } else if (isOpen !== prevProps.isOpen && !isOpen) {
+      console.log('Closed')
+      TweenLite.to(footnoteRef.current, 0.3, { y: '100%' })
+    } else if (isOpen && number !== prevProps.number) {
+      console.log('Switch')
+
+      const timeline = new TimelineLite()
+
+      timeline.to(bodyRef.current, 0.2, {
+        autoAlpha: 0,
+      })
+
+      timeline.add(() => {
+        setOldHeight(footnoteRef.current.offsetHeight)
+
+        // console.log(footnoteRef.current.offsetHeight, oldHeight, bodyHeight)
+        // TODO: Set copy here instead
+        setData({ content, number })
+
+        TweenLite.set(footnoteRef.current, {
+          height: 'auto',
+        })
+        console.log(oldHeight)
+        TweenLite.from(footnoteRef.current, 1, {
+          height: oldHeight,
+        })
+      })
+
+      timeline.to(bodyRef.current, 0.5, { autoAlpha: 1, delay: 1 })
+      timeline.play()
+    }
+  }, [isOpen, prevProps.isOpen, number, prevProps.number, copy, oldHeight, content, bodyHeight])
+
   return (
     <div {...safeRest(rest)}>
       {isOpen && <GlobalBodyScrollLock />}
@@ -259,7 +300,7 @@ const Footnote = props => {
         ref={footnoteRef}
         isOpen={isOpen}
         isVisible={isVisible}
-        onTransitionEnd={handleStyledFootnoteTransitionEnd}
+        // onTransitionEnd={handleStyledFootnoteTransitionEnd}
       >
         <FocusTrap autofocus={false}>
           <StyledFootnoteHeader ref={headerRef}>
@@ -296,7 +337,7 @@ const Footnote = props => {
             bodyHeight={bodyHeight}
             headerHeight={headerHeight}
             isTextVisible={isTextVisible}
-            onTransitionEnd={handleTransitionEnd}
+            // onTransitionEnd={handleTransitionEnd}
           >
             {data.number && data.content && (
               <StyledListContainer ref={listRef}>
