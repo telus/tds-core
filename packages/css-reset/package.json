@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-css-reset",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "TDS root styles and fonts",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -25,6 +25,6 @@
   },
   "dependencies": {
     "@tds/core-colours": "^2.1.0",
-    "@tds/shared-typography": "^1.3.2"
+    "@tds/shared-typography": "^1.3.3"
   }
 }
