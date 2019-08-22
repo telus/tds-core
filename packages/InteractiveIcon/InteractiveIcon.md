@@ -12,46 +12,44 @@ Each `InteractiveIcon` must have a minimum click/tap area of **40px** to ensure 
 
 ```jsx noeditor
 const IconTable = require('../../docs/components/custom/IconTable/IconTable').default
-;<>
-  <IconTable
-    heading="Icons"
-    icons={[
-      {
-        name: 'Add',
-        Component: Add,
-        usageCriteria: 'Used to add items',
-        props: {
-          a11yText: 'Add',
-        },
+;<IconTable
+  heading="Icons"
+  icons={[
+    {
+      name: 'Add',
+      Component: Add,
+      usageCriteria: 'Used to add items',
+      props: {
+        a11yText: 'Add',
       },
-      {
-        name: 'Close',
-        Component: Close,
-        usageCriteria: 'Used to close',
-        props: {
-          a11yText: 'Close',
-        },
+    },
+    {
+      name: 'Close',
+      Component: Close,
+      usageCriteria: 'Used to close',
+      props: {
+        a11yText: 'Close',
       },
-      {
-        name: 'PlayVideo',
-        Component: PlayVideo,
-        usageCriteria:
-          'Used to indicate that a video is available, used with text link to bring to another page or window',
-        props: {
-          a11yText: 'Play',
-        },
+    },
+    {
+      name: 'PlayVideo',
+      Component: PlayVideo,
+      usageCriteria:
+        'Used to indicate that a video is available, used with text link to bring to another page or window',
+      props: {
+        a11yText: 'Play',
       },
-      {
-        name: 'Subtract',
-        Component: Subtract,
-        usageCriteria: 'Used to reduce items',
-        props: {
-          a11yText: 'Remove',
-        },
+    },
+    {
+      name: 'Subtract',
+      Component: Subtract,
+      usageCriteria: 'Used to reduce items',
+      props: {
+        a11yText: 'Remove',
       },
-    ]}
-  />
-</>
+    },
+  ]}
+/>
 ```
 
 ### Making InteractiveIcons interactive
