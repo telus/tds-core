@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.5](https://github.com/telusdigital/tds/compare/@tds/core-heading@2.2.4...@tds/core-heading@2.2.5) (2019-08-23)
+
+
+### Bug Fixes
+
+* **core-heading:** add letterSpacing inherit to Heading child ([3423303](https://github.com/telusdigital/tds/commit/3423303))
+
+
+
+
+
 ## [2.2.4](https://github.com/telusdigital/tds/compare/@tds/core-heading@2.2.3...@tds/core-heading@2.2.4) (2019-08-22)
 
 **Note:** Version bump only for package @tds/core-heading

@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-heading",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "Page headings",
   "main": "index.cjs.js",
   "module": "index.es.js",
