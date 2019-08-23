@@ -55,11 +55,6 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'For television',
       },
       {
-        name: 'Phone',
-        Component: Phone,
-        usageCriteria: 'For phone',
-      },
-      {
         name: 'Deals',
         Component: Deals,
         usageCriteria: 'Used when there are discounts/deals/promotion',
@@ -303,21 +298,6 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'Used as an indication for location or address',
       },
       {
-        name: 'LocationAdd',
-        Component: LocationAdd,
-        usageCriteria: 'When an address is needed or if a user has the option to add a location',
-      },
-      {
-        name: 'LocationVerified',
-        Component: LocationVerified,
-        usageCriteria: 'When a validated address has been added',
-      },
-      {
-        name: 'LocationRemove',
-        Component: LocationRemove,
-        usageCriteria: 'When there is an option to remove location',
-      },
-      {
         name: 'LocationHome',
         Component: LocationHome,
         usageCriteria: 'Used to indicate that the location is the home address',
@@ -368,11 +348,6 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         name: 'SpeakerPhone',
         Component: SpeakerPhone,
         usageCriteria: 'Announcements',
-      },
-      {
-        name: 'Bell',
-        Component: Bell,
-        usageCriteria: 'Alarm, time sensitive, used as notifications (like Facebook)',
       },
       {
         name: 'Bill',
@@ -464,11 +439,6 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         name: 'Direction',
         Component: Direction,
         usageCriteria: 'direction, traffic',
-      },
-      {
-        name: 'Download',
-        Component: Download,
-        usageCriteria: 'download through cloud',
       },
       { name: 'Upload', Component: Upload, usageCriteria: 'Upload' },
       {
