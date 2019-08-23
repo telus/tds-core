@@ -30,6 +30,7 @@ const StyledFootnote = styled.div(
     position: 'fixed',
     top: 0,
     left: 0,
+    height: '100vh',
     width: '100vw',
     backgroundColor: colorAthensGrey,
     display: 'block',
@@ -57,20 +58,12 @@ const StyledHeader = styled(Box)({
   alignItems: 'center',
 })
 
-const StyledFootnoteBody = styled.div(
-  {
-    overflow: 'auto',
-    '-webkit-overflow-scrolling': 'touch',
-    transform: 'translateZ(0)',
-    backgroundColor: colorAthensGrey,
-  },
-  ({ headerHeight }) => ({
-    maxHeight: `calc(100vh - ${headerHeight}px)`,
-    ...media.from('md').css({
-      maxHeight: `calc(50vh - ${headerHeight}px)`,
-    }),
-  })
-)
+const StyledFootnoteBody = styled.div({
+  overflow: 'auto',
+  '-webkit-overflow-scrolling': 'touch',
+  transform: 'translateZ(0)',
+  backgroundColor: colorAthensGrey,
+})
 
 const StyledListContainer = styled.div({
   paddingTop: '1.5rem',
@@ -102,7 +95,6 @@ const Footnote = props => {
   const listRef = useRef(null)
   const headingRef = useRef(null)
   const [data, setData] = useState({ content: null, number: null })
-  const [headerHeight, setHeaderHeight] = useState('auto')
   const [isVisible, setIsVisible] = useState(false)
 
   const [oldHeight, setOldHeight] = useState(0)
@@ -152,11 +144,6 @@ const Footnote = props => {
     }
   }
 
-  // set height of header on mount
-  useEffect(() => {
-    setHeaderHeight(headerRef.current.offsetHeight)
-  }, [])
-
   const preventDefault = e => {
     if (!bodyRef.current.contains(e.touches[0].target)) {
       e.preventDefault()
@@ -193,11 +180,16 @@ const Footnote = props => {
       setOldHeight(footnoteRef.current.offsetHeight)
     }
 
+    // Open Footnote
     if (isOpen !== prevProps.isOpen && isOpen) {
-      TweenLite.to(footnoteRef.current, 0.3, { y: '0%' })
-    } else if (isOpen !== prevProps.isOpen && !isOpen) {
-      TweenLite.to(footnoteRef.current, 0.3, { y: '100%' })
-    } else if (isOpen && number !== prevProps.number) {
+      TweenLite.to(footnoteRef.current, 0.5, { y: '0%' })
+    }
+    // Close Footnote
+    else if (isOpen !== prevProps.isOpen && !isOpen) {
+      TweenLite.to(footnoteRef.current, 0.5, { y: '100%' })
+    }
+    // Switch Footnote
+    else if (isOpen && number !== prevProps.number) {
       const footnoteTl = new TimelineLite()
 
       footnoteTl.to(bodyRef.current, 0.2, {
@@ -206,28 +198,28 @@ const Footnote = props => {
 
       footnoteTl.add(() => {
         setData({ content, number })
+        if (footnoteRef.current.offsetHeight !== '100vh') {
+          if (heightAutoGate) {
+            TweenLite.set(footnoteRef.current, {
+              height: 'auto',
+              onComplete: () => {
+                setHeightAutoGate(false)
+              },
+            })
+          }
 
-        if (heightAutoGate) {
-          TweenLite.set(footnoteRef.current, {
-            height: 'auto',
+          TweenLite.from(footnoteRef.current, 0.5, {
+            height: oldHeight,
             onComplete: () => {
-              setHeightAutoGate(false)
+              setHeightAutoGate(true)
+              setOldHeight(footnoteRef.current.offsetHeight)
             },
           })
         }
-
-        TweenLite.from(footnoteRef.current, 0.5, {
-          height: oldHeight,
-        })
       })
 
       footnoteTl.to(bodyRef.current, 0.5, { autoAlpha: 1, delay: 0.5 })
-
-      footnoteTl.add(() => {
-        setOldHeight(footnoteRef.current.offsetHeight)
-        setHeightAutoGate(true)
-      })
-
+      footnoteTl.add(() => {})
       footnoteTl.play()
     }
   }, [isOpen, prevProps.isOpen, number, prevProps.number, copy, oldHeight, content, heightAutoGate])
@@ -266,7 +258,7 @@ const Footnote = props => {
               <HairlineDivider />
             </div>
           </StyledFootnoteHeader>
-          <StyledFootnoteBody ref={bodyRef} headerHeight={headerHeight}>
+          <StyledFootnoteBody ref={bodyRef}>
             {data.number && data.content && (
               <StyledListContainer ref={listRef}>
                 <FlexGrid>
