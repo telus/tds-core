@@ -8,16 +8,15 @@ import { buttons } from '@tds/shared-styles'
 
 import safeRest from '../../shared/utils/safeRest'
 
-const StyledInteractiveIconButton = styled.button(buttons.noStyle, {
+const getOutline = ({ variant }) => variant !== 'inverted' && { outline: 'none' }
+
+const StyledInteractiveIconButton = styled.button(buttons.noStyle, getOutline, {
   width: '40px',
   height: '40px',
   display: 'inline-flex',
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-  '&:focus': {
-    outline: 'none',
-  },
   '&:hover svg': {
     transform: 'scale(1.1, 1.1)',
   },
@@ -82,7 +81,7 @@ const getTheme = variant => {
  */
 const InteractiveIcon = ({ a11yText, variant, onClick, children, tag, ...rest }) => (
   <ThemeProvider theme={getTheme(variant)}>
-    <StyledInteractiveIconButton {...safeRest(rest)} onClick={onClick} as={tag}>
+    <StyledInteractiveIconButton {...safeRest(rest)} variant={variant} onClick={onClick} as={tag}>
       <A11yContent>{a11yText}</A11yContent>
       <StyledInteractiveIconHover />
       {children}
