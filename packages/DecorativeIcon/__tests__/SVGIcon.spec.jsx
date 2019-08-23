@@ -4,6 +4,10 @@ import { shallow, render } from 'enzyme'
 import SVGIcon from '../SVGIcon'
 import { BatteryCharging } from '../svgs'
 
+import { warn } from '../../../shared/utils/warn'
+
+jest.mock('../../../shared/utils/warn')
+
 describe('SVGIcon', () => {
   const defaultProps = {
     variant: 'default',
@@ -36,6 +40,12 @@ describe('SVGIcon', () => {
   it('is hidden from screen readers', () => {
     const icon = doShallow()
     expect(icon).toHaveProp('aria-hidden', 'true')
+  })
+
+  it('warns when onClick is passed as a property', () => {
+    doShallow({ onClick: () => {} })
+    expect(warn).toHaveBeenCalled()
+    jest.clearAllMocks()
   })
 })
 

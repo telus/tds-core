@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { colorTelusPurple, colorShark, colorWhite } from '@tds/core-colours'
 
 import safeRest from '../../shared/utils/safeRest'
+import { warn } from '../../shared/utils/warn'
 
 const getColour = variant => {
   switch (variant) {
@@ -33,8 +34,11 @@ const StyledSVGIcon = styled.i(
  *
  * @version ./package.json
  */
-const SVGIcon = props => {
-  return <StyledSVGIcon {...safeRest(props)} aria-hidden="true" />
+const SVGIcon = ({ onClick, ...rest }) => {
+  if (onClick) {
+    warn('SVGIcon', 'SVG Icon is not interactive and does not accept events through props.')
+  }
+  return <StyledSVGIcon {...safeRest(rest)} aria-hidden="true" />
 }
 
 SVGIcon.propTypes = {
@@ -42,6 +46,10 @@ SVGIcon.propTypes = {
    * @ignore
    */
   children: PropTypes.node.isRequired,
+  /**
+   * @ignore
+   */
+  onClick: PropTypes.func,
   /**
    * The appearance of the Icon.
    */
@@ -55,6 +63,7 @@ SVGIcon.propTypes = {
 SVGIcon.defaultProps = {
   variant: 'default',
   size: 24,
+  onClick: undefined,
 }
 
 export default SVGIcon
