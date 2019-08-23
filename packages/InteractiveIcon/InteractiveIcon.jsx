@@ -18,6 +18,13 @@ const StyledInteractiveIconButton = styled.button(buttons.noStyle, {
   '&:focus': {
     outline: 'none',
   },
+  '&:hover svg': {
+    transform: 'scale(1.1, 1.1)',
+  },
+  '&:active svg': {
+    transform: 'scale(1, 1)',
+  },
+  '-webkit-tap-highlight-color': 'transparent',
 })
 
 export const StyledInteractiveIconSVG = styled.svg(({ theme }) => ({ fill: theme.iconColor }), {
@@ -27,12 +34,6 @@ export const StyledInteractiveIconSVG = styled.svg(({ theme }) => ({ fill: theme
   transition: 'transform 150ms ease-in-out',
   '@media (prefers-reduced-motion: reduce)': {
     transition: 'none',
-  },
-  '&:hover': {
-    transform: 'scale(1.1, 1.1)',
-  },
-  '&:active': {
-    transform: 'scale(1, 1)',
   },
 })
 

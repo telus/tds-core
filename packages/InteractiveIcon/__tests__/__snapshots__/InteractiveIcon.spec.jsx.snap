@@ -37,10 +37,23 @@ exports[`InteractiveIcon renders 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .c1:focus {
   outline: none;
+}
+
+.c1:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c1:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
 }
 
 .c3 {
