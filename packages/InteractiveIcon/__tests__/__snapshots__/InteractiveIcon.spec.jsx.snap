@@ -22,6 +22,7 @@ exports[`InteractiveIcon renders 1`] = `
   background: none;
   box-shadow: none;
   cursor: pointer;
+  outline: none;
   width: 40px;
   height: 40px;
   display: -webkit-inline-box;
@@ -38,10 +39,6 @@ exports[`InteractiveIcon renders 1`] = `
   align-items: center;
   position: relative;
   -webkit-tap-highlight-color: transparent;
-}
-
-.c1:focus {
-  outline: none;
 }
 
 .c1:hover svg {
