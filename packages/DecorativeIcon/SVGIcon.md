@@ -813,7 +813,7 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       {
         name: 'Check',
         Component: Check,
-        usageCriteria: 'Default icon for benefit list for business',
+        usageCriteria: 'Default icon used exclusively in benefit list for business',
       },
       {
         name: 'Movie',
