@@ -2,15 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Icon from '../../shared/components/Icon/Icon'
+import { deprecate } from '../../shared/utils/warn'
 
 /**
- * An icon used for visual aesthetics only.
+ * @deprecated An icon used for visual aesthetics only.
  *
  * @version ./package.json
  */
-const DecorativeIcon = ({ symbol, variant, size, ...rest }) => (
-  <Icon {...rest} symbol={symbol} variant={variant} size={size} aria-hidden="true" />
-)
+const DecorativeIcon = ({ symbol, variant, size, ...rest }) => {
+  deprecate(
+    '@tds/core-decorative-icon',
+    'The DecorativeIcon component is deprecated. Please use the SVG exports from @tds/core-decorative-icon, or other Icon components.'
+  )
+  return <Icon {...rest} symbol={symbol} variant={variant} size={size} aria-hidden="true" />
+}
 
 DecorativeIcon.propTypes = {
   /**
