@@ -1,7 +1,10 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styled, { createGlobalStyle } from 'styled-components'
-import { TimelineLite, TweenLite } from 'gsap'
+// import { TimelineLite, TweenLite } from 'gsap'
+import TweenLite from 'gsap/TweenLite'
+import TimelineLite from 'gsap/TimelineLite'
+import 'gsap/CSSPlugin'
 
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
@@ -72,6 +75,11 @@ const StyledListContainer = styled.div({
     paddingTop: '0rem',
     paddingBottom: '3rem',
   }),
+})
+
+const StyledDividerContainer = styled.div({
+  display: 'none',
+  ...media.until('md').css({ display: 'block' }),
 })
 
 const FocusTrap = withFocusTrap('div')
@@ -230,9 +238,9 @@ const Footnote = props => {
       <StyledFootnote ref={footnoteRef} isOpen={isOpen} isVisible={isVisible}>
         <FocusTrap autofocus={false}>
           <StyledFootnoteHeader ref={headerRef}>
-            <div css={{ display: 'none', ...media.from('md').css({ display: 'block' }) }}>
+            <StyledDividerContainer>
               <HairlineDivider />
-            </div>
+            </StyledDividerContainer>
             <Box vertical={4}>
               <FlexGrid>
                 <FlexGrid.Row>
@@ -254,9 +262,9 @@ const Footnote = props => {
                 </FlexGrid.Row>
               </FlexGrid>
             </Box>
-            <div css={{ display: 'none', ...media.until('md').css({ display: 'block' }) }}>
+            <StyledDividerContainer>
               <HairlineDivider />
-            </div>
+            </StyledDividerContainer>
           </StyledFootnoteHeader>
           <StyledFootnoteBody ref={bodyRef}>
             {data.number && data.content && (
