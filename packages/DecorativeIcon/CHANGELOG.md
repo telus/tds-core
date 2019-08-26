@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.1.3...@tds/core-decorative-icon@2.2.0) (2019-08-26)
+
+
+### Features
+
+* **core-decorative-icon:** add new icons ([3eb89a7](https://github.com/telusdigital/tds/commit/3eb89a7))
+* **core-decorative-icon:** deprecate DecorativeIcon component ([f9724d4](https://github.com/telusdigital/tds/commit/f9724d4))
+* **core-decorative-icon:** deprecate phone, bell, download, location ([aa79254](https://github.com/telusdigital/tds/commit/aa79254))
+* **core-decorative-icon:** warn users when passing events to SVG Icon ([a9be213](https://github.com/telusdigital/tds/commit/a9be213))
+
+
+
+
+
 ## [2.1.3](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.1.2...@tds/core-decorative-icon@2.1.3) (2019-08-23)
 
 

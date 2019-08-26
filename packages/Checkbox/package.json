@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-checkbox",
-  "version": "2.0.16",
+  "version": "2.0.17",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -27,7 +27,7 @@
   "dependencies": {
     "@tds/core-box": "^2.0.2",
     "@tds/core-colours": "^2.1.0",
-    "@tds/core-decorative-icon": "^2.1.3",
+    "@tds/core-decorative-icon": "^2.2.0",
     "@tds/core-input-feedback": "^2.0.7",
     "@tds/core-paragraph": "^2.0.4",
     "@tds/core-text": "^2.0.3",
