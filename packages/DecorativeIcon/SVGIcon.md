@@ -1,4 +1,4 @@
-### Naming Convention
+`### Naming Convention
 
 The convention for icon names is to capitalize the beginning of each word or abbreviation.
 For example the icon for Remote control is `RemoteControl`, the icon for USB cable is `UsbCable` and the icon for TV is `Tv`
@@ -95,6 +95,12 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         name: 'WifiBoost',
         Component: WifiBoost,
         usageCriteria: 'Wifi Boost',
+      },
+      {
+        name: 'SpeedReduced',
+        Component: SpeedReduced,
+        usageCriteria:
+          'Represents slower speed connections. Use "Speed" when not used in comparison',
       },
     ]}
   />
@@ -825,7 +831,29 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Soccer,
         usageCriteria: 'Soccer, sports',
       },
+      {
+        name: 'BatteryCar',
+        Component: BatteryCar,
+        usageCriteria: 'Car battery',
+      },
+      {
+        name: 'Car',
+        Component: Car,
+        usageCriteria: 'Vehicle',
+      },
+      {
+        name: 'Diamond',
+        Component: Diamond,
+        usageCriteria: 'Potentials (business, earnings, etc)',
+      },
+      {
+        name: 'TowTruck',
+        Component: TowTruck,
+        usageCriteria: 'Roadside assistance',
+      },
     ]}
   />
 </Box>
 ```
+
+`
