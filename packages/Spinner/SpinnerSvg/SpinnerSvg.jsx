@@ -64,7 +64,7 @@ const TipContainer = styled.div({
   marginTop: '-1.5rem',
 })
 
-const SpinnerSvg = ({ tip, overlay, a11yLabel, size, variant, ...rest }) => {
+const SpinnerSvg = ({ tip, overlay, a11yLabel, size, variant, labelRef, ...rest }) => {
   const titleId = uniqueId('spinner-title-')
 
   return (
@@ -93,7 +93,7 @@ const SpinnerSvg = ({ tip, overlay, a11yLabel, size, variant, ...rest }) => {
         />
       </StyledSvg>
       {tip && (
-        <TipContainer>
+        <TipContainer tabIndex="-1" ref={labelRef}>
           <Text size="small">{tip}</Text>
         </TipContainer>
       )}
@@ -107,10 +107,12 @@ SpinnerSvg.propTypes = {
   a11yLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   size: PropTypes.oneOf(['large', 'small']).isRequired,
   variant: PropTypes.oneOf(['primary', 'secondary']).isRequired,
+  labelRef: PropTypes.object,
 }
 SpinnerSvg.defaultProps = {
   tip: undefined,
   overlay: false,
+  labelRef: undefined,
 }
 
 export default SpinnerSvg

@@ -307,7 +307,9 @@ Array [
                     </svg>
                   </StyledComponent>
                 </SpinnerSvg__StyledSvg>
-                <SpinnerSvg__TipContainer>
+                <SpinnerSvg__TipContainer
+                  tabIndex="-1"
+                >
                   <StyledComponent
                     forwardedComponent={
                       Object {
@@ -332,9 +334,11 @@ Array [
                       }
                     }
                     forwardedRef={null}
+                    tabIndex="-1"
                   >
                     <div
                       className="c4"
+                      tabIndex="-1"
                     >
                       <Text
                         block={false}
@@ -443,7 +447,7 @@ Array [
           </StyledComponent>
         </Spinner__ContentOverlay>
         <Spinner__OpaqueContainer
-          onFocus={[Function]}
+          inert="true"
         >
           <StyledComponent
             forwardedComponent={
@@ -469,13 +473,15 @@ Array [
               }
             }
             forwardedRef={null}
-            onFocus={[Function]}
+            inert="true"
           >
             <div
               className="c7"
-              onFocus={[Function]}
             >
-              <span>
+              <span
+                key=".0"
+                tabIndex="-1"
+              >
                 Overlay me with the spinner
               </span>
             </div>
@@ -783,7 +789,9 @@ Array [
                   </svg>
                 </StyledComponent>
               </SpinnerSvg__StyledSvg>
-              <SpinnerSvg__TipContainer>
+              <SpinnerSvg__TipContainer
+                tabIndex="-1"
+              >
                 <StyledComponent
                   forwardedComponent={
                     Object {
@@ -808,9 +816,11 @@ Array [
                     }
                   }
                   forwardedRef={null}
+                  tabIndex="-1"
                 >
                   <div
                     className="c4"
+                    tabIndex="-1"
                   >
                     <Text
                       block={false}
@@ -919,7 +929,7 @@ Array [
         </StyledComponent>
       </Spinner__ContentOverlay>
       <Spinner__OpaqueContainer
-        onFocus={[Function]}
+        inert="true"
       >
         <StyledComponent
           forwardedComponent={
@@ -945,13 +955,15 @@ Array [
             }
           }
           forwardedRef={null}
-          onFocus={[Function]}
+          inert="true"
         >
           <div
             className="c7"
-            onFocus={[Function]}
           >
-            <span>
+            <span
+              key=".0"
+              tabIndex="-1"
+            >
               Overlay me with the spinner
             </span>
           </div>
@@ -1229,7 +1241,9 @@ Array [
                 </svg>
               </StyledComponent>
             </SpinnerSvg__StyledSvg>
-            <SpinnerSvg__TipContainer>
+            <SpinnerSvg__TipContainer
+              tabIndex="-1"
+            >
               <StyledComponent
                 forwardedComponent={
                   Object {
@@ -1254,9 +1268,11 @@ Array [
                   }
                 }
                 forwardedRef={null}
+                tabIndex="-1"
               >
                 <div
                   className="c4"
+                  tabIndex="-1"
                 >
                   <Text
                     block={false}
@@ -1365,7 +1381,7 @@ Array [
       </StyledComponent>
     </Spinner__ContentOverlay>
     <Spinner__OpaqueContainer
-      onFocus={[Function]}
+      inert="true"
     >
       <StyledComponent
         forwardedComponent={
@@ -1391,13 +1407,15 @@ Array [
           }
         }
         forwardedRef={null}
-        onFocus={[Function]}
+        inert="true"
       >
         <div
           className="c7"
-          onFocus={[Function]}
         >
-          <span>
+          <span
+            key=".0"
+            tabIndex="-1"
+          >
             Overlay me with the spinner
           </span>
         </div>
@@ -1666,7 +1684,9 @@ Array [
             </svg>
           </StyledComponent>
         </SpinnerSvg__StyledSvg>
-        <SpinnerSvg__TipContainer>
+        <SpinnerSvg__TipContainer
+          tabIndex="-1"
+        >
           <StyledComponent
             forwardedComponent={
               Object {
@@ -1691,9 +1711,11 @@ Array [
               }
             }
             forwardedRef={null}
+            tabIndex="-1"
           >
             <div
               className="c3"
+              tabIndex="-1"
             >
               <Text
                 block={false}
@@ -1994,7 +2016,9 @@ Array [
           </svg>
         </StyledComponent>
       </SpinnerSvg__StyledSvg>
-      <SpinnerSvg__TipContainer>
+      <SpinnerSvg__TipContainer
+        tabIndex="-1"
+      >
         <StyledComponent
           forwardedComponent={
             Object {
@@ -2019,9 +2043,11 @@ Array [
             }
           }
           forwardedRef={null}
+          tabIndex="-1"
         >
           <div
             className="c3"
+            tabIndex="-1"
           >
             <Text
               block={false}
@@ -2294,7 +2320,9 @@ Array [
         </svg>
       </StyledComponent>
     </SpinnerSvg__StyledSvg>
-    <SpinnerSvg__TipContainer>
+    <SpinnerSvg__TipContainer
+      tabIndex="-1"
+    >
       <StyledComponent
         forwardedComponent={
           Object {
@@ -2319,9 +2347,11 @@ Array [
           }
         }
         forwardedRef={null}
+        tabIndex="-1"
       >
         <div
           className="c3"
+          tabIndex="-1"
         >
           <Text
             block={false}
@@ -2892,6 +2922,7 @@ exports[`Spinner renders 1`] = `
   </svg>
   <div
     class="c3"
+    tabindex="-1"
   >
     <span
       class="c4"
@@ -3227,7 +3258,7 @@ Array [
           </StyledComponent>
         </Spinner__ContentOverlay>
         <Spinner__OpaqueContainer
-          onFocus={[Function]}
+          inert="true"
         >
           <StyledComponent
             forwardedComponent={
@@ -3253,13 +3284,15 @@ Array [
               }
             }
             forwardedRef={null}
-            onFocus={[Function]}
+            inert="true"
           >
             <div
               className="c5"
-              onFocus={[Function]}
             >
-              <span>
+              <span
+                key=".0"
+                tabIndex="-1"
+              >
                 Overlay me with the spinner
               </span>
             </div>
@@ -3585,7 +3618,7 @@ Array [
         </StyledComponent>
       </Spinner__ContentOverlay>
       <Spinner__OpaqueContainer
-        onFocus={[Function]}
+        inert="true"
       >
         <StyledComponent
           forwardedComponent={
@@ -3611,13 +3644,15 @@ Array [
             }
           }
           forwardedRef={null}
-          onFocus={[Function]}
+          inert="true"
         >
           <div
             className="c5"
-            onFocus={[Function]}
           >
-            <span>
+            <span
+              key=".0"
+              tabIndex="-1"
+            >
               Overlay me with the spinner
             </span>
           </div>
@@ -3913,7 +3948,7 @@ Array [
       </StyledComponent>
     </Spinner__ContentOverlay>
     <Spinner__OpaqueContainer
-      onFocus={[Function]}
+      inert="true"
     >
       <StyledComponent
         forwardedComponent={
@@ -3939,13 +3974,15 @@ Array [
           }
         }
         forwardedRef={null}
-        onFocus={[Function]}
+        inert="true"
       >
         <div
           className="c5"
-          onFocus={[Function]}
         >
-          <span>
+          <span
+            key=".0"
+            tabIndex="-1"
+          >
             Overlay me with the spinner
           </span>
         </div>
@@ -4280,7 +4317,7 @@ Array [
           </StyledComponent>
         </Spinner__ContentOverlay>
         <Spinner__OpaqueContainer
-          onFocus={[Function]}
+          inert="true"
         >
           <StyledComponent
             forwardedComponent={
@@ -4306,13 +4343,15 @@ Array [
               }
             }
             forwardedRef={null}
-            onFocus={[Function]}
+            inert="true"
           >
             <div
               className="c5"
-              onFocus={[Function]}
             >
-              <span>
+              <span
+                key=".0"
+                tabIndex="-1"
+              >
                 Overlay me with the spinner
               </span>
             </div>
@@ -4638,7 +4677,7 @@ Array [
         </StyledComponent>
       </Spinner__ContentOverlay>
       <Spinner__OpaqueContainer
-        onFocus={[Function]}
+        inert="true"
       >
         <StyledComponent
           forwardedComponent={
@@ -4664,13 +4703,15 @@ Array [
             }
           }
           forwardedRef={null}
-          onFocus={[Function]}
+          inert="true"
         >
           <div
             className="c5"
-            onFocus={[Function]}
           >
-            <span>
+            <span
+              key=".0"
+              tabIndex="-1"
+            >
               Overlay me with the spinner
             </span>
           </div>
@@ -4966,7 +5007,7 @@ Array [
       </StyledComponent>
     </Spinner__ContentOverlay>
     <Spinner__OpaqueContainer
-      onFocus={[Function]}
+      inert="true"
     >
       <StyledComponent
         forwardedComponent={
@@ -4992,13 +5033,15 @@ Array [
           }
         }
         forwardedRef={null}
-        onFocus={[Function]}
+        inert="true"
       >
         <div
           className="c5"
-          onFocus={[Function]}
         >
-          <span>
+          <span
+            key=".0"
+            tabIndex="-1"
+          >
             Overlay me with the spinner
           </span>
         </div>
@@ -5315,7 +5358,9 @@ Array [
                     </svg>
                   </StyledComponent>
                 </SpinnerSvg__StyledSvg>
-                <SpinnerSvg__TipContainer>
+                <SpinnerSvg__TipContainer
+                  tabIndex="-1"
+                >
                   <StyledComponent
                     forwardedComponent={
                       Object {
@@ -5340,9 +5385,11 @@ Array [
                       }
                     }
                     forwardedRef={null}
+                    tabIndex="-1"
                   >
                     <div
                       className="c4"
+                      tabIndex="-1"
                     >
                       <Text
                         block={false}
@@ -5451,7 +5498,7 @@ Array [
           </StyledComponent>
         </Spinner__ContentOverlay>
         <Spinner__OpaqueContainer
-          onFocus={[Function]}
+          inert="true"
         >
           <StyledComponent
             forwardedComponent={
@@ -5477,13 +5524,15 @@ Array [
               }
             }
             forwardedRef={null}
-            onFocus={[Function]}
+            inert="true"
           >
             <div
               className="c7"
-              onFocus={[Function]}
             >
-              <span>
+              <span
+                key=".0"
+                tabIndex="-1"
+              >
                 Overlay me with the spinner
               </span>
             </div>
@@ -5791,7 +5840,9 @@ Array [
                   </svg>
                 </StyledComponent>
               </SpinnerSvg__StyledSvg>
-              <SpinnerSvg__TipContainer>
+              <SpinnerSvg__TipContainer
+                tabIndex="-1"
+              >
                 <StyledComponent
                   forwardedComponent={
                     Object {
@@ -5816,9 +5867,11 @@ Array [
                     }
                   }
                   forwardedRef={null}
+                  tabIndex="-1"
                 >
                   <div
                     className="c4"
+                    tabIndex="-1"
                   >
                     <Text
                       block={false}
@@ -5927,7 +5980,7 @@ Array [
         </StyledComponent>
       </Spinner__ContentOverlay>
       <Spinner__OpaqueContainer
-        onFocus={[Function]}
+        inert="true"
       >
         <StyledComponent
           forwardedComponent={
@@ -5953,13 +6006,15 @@ Array [
             }
           }
           forwardedRef={null}
-          onFocus={[Function]}
+          inert="true"
         >
           <div
             className="c7"
-            onFocus={[Function]}
           >
-            <span>
+            <span
+              key=".0"
+              tabIndex="-1"
+            >
               Overlay me with the spinner
             </span>
           </div>
@@ -6237,7 +6292,9 @@ Array [
                 </svg>
               </StyledComponent>
             </SpinnerSvg__StyledSvg>
-            <SpinnerSvg__TipContainer>
+            <SpinnerSvg__TipContainer
+              tabIndex="-1"
+            >
               <StyledComponent
                 forwardedComponent={
                   Object {
@@ -6262,9 +6319,11 @@ Array [
                   }
                 }
                 forwardedRef={null}
+                tabIndex="-1"
               >
                 <div
                   className="c4"
+                  tabIndex="-1"
                 >
                   <Text
                     block={false}
@@ -6373,7 +6432,7 @@ Array [
       </StyledComponent>
     </Spinner__ContentOverlay>
     <Spinner__OpaqueContainer
-      onFocus={[Function]}
+      inert="true"
     >
       <StyledComponent
         forwardedComponent={
@@ -6399,13 +6458,15 @@ Array [
           }
         }
         forwardedRef={null}
-        onFocus={[Function]}
+        inert="true"
       >
         <div
           className="c7"
-          onFocus={[Function]}
         >
-          <span>
+          <span
+            key=".0"
+            tabIndex="-1"
+          >
             Overlay me with the spinner
           </span>
         </div>
@@ -6525,6 +6586,7 @@ exports[`Spinner renders with children 1`] = `
     </svg>
     <div
       class="c4"
+      tabindex="-1"
     >
       <span
         class="c5"
@@ -6540,7 +6602,9 @@ exports[`Spinner renders with children 1`] = `
   <div
     class="c7"
   >
-    <span>
+    <span
+      tabindex="-1"
+    >
       Overlay me with the spinner
     </span>
   </div>

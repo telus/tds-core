@@ -43,6 +43,21 @@ const OpaqueContainer = styled.div({
   opacity: 0.06,
 })
 
+const recursiveMap = (children, fn) =>
+  React.Children.map(children, child => {
+    if (!React.isValidElement(child)) {
+      return child
+    }
+    if (child.props.children) {
+      return fn(
+        React.cloneElement(child, {
+          children: recursiveMap(child.props.children, fn),
+        })
+      )
+    }
+    return fn(child)
+  })
+
 /**
  * A waiting indicator.
  *
@@ -85,6 +100,7 @@ class Spinner extends React.PureComponent {
       size,
       variant,
       fullScreen,
+      labelRef,
       children,
       ...rest
     } = this.props
@@ -106,17 +122,19 @@ class Spinner extends React.PureComponent {
     if (!spinning) {
       return children || null
     }
-
-    const spinnerSvg = props => (
-      <SpinnerSvg
-        {...props}
-        tip={dangerouslyHideVisibleLabel || size === 'small' ? undefined : label || tip}
-        a11yLabel={label || a11yLabel}
-        size={size}
-        variant={variant}
-        {...safeRest(rest)}
-      />
-    )
+    const spinnerSvg = props => {
+      return (
+        <SpinnerSvg
+          {...props}
+          {...safeRest(rest)}
+          tip={dangerouslyHideVisibleLabel || size === 'small' ? undefined : label || tip}
+          a11yLabel={label || a11yLabel}
+          size={size}
+          variant={variant}
+          labelRef={labelRef}
+        />
+      )
+    }
 
     if (fullScreen) {
       return (
@@ -149,12 +167,13 @@ class Spinner extends React.PureComponent {
 
           <ContentOverlay data-testid="overlay" />
 
-          <OpaqueContainer
-            onFocus={e => {
-              e.target.blur()
-            }}
-          >
-            {children}
+          <OpaqueContainer inert="true">
+            {recursiveMap(children, c => {
+              if (c) {
+                return React.cloneElement(c, { tabIndex: '-1' })
+              }
+              return undefined
+            })}
           </OpaqueContainer>
         </SpinnerContainer>
       )
@@ -222,6 +241,12 @@ Spinner.propTypes = {
    * or any component.
    */
   children: PropTypes.node,
+  /**
+   * A React ref to the label on the `Spinner`, can be used to set initial focus.
+   *
+   * @since 3.0.5
+   */
+  labelRef: PropTypes.object,
 }
 
 Spinner.defaultProps = {
@@ -235,6 +260,7 @@ Spinner.defaultProps = {
   variant: 'primary',
   fullScreen: false,
   children: undefined,
+  labelRef: undefined,
 }
 
 export default Spinner

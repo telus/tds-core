@@ -112,9 +112,15 @@ const loadContent = () => {
 
 ### Accessibility and focus
 
+- By default, focus will remain on the triggering element unless overridden
+
+  - If focus is overridden, you **must** return focus back to the triggering element when the spinner is no longer active.
+
+  See the **Overlaying a full layout** example below for how to properly manage `Spinner` focus
+
 #### Overlaying a button
 
-- When overlaying a single button, a container with `aira-live` set to `assertive` should be used _near the overlaid Button_
+- When overlaying a single button, a container with `aria-live` set to `assertive` should be used _near the overlaid Button_
 - When the process is complete, `A11yContent` can be used to trigger a message indicating that the task has been completed
 - The added content must be close to the spinner's location when it appears
   - For example, do not have a spinner from the main body modify content in the page's footer
@@ -166,49 +172,84 @@ const loadContent = () => {
 
 Overlaying a full layout is similar to overlaying a single Button. The same methods to achieve accessibility apply, including the important rule of having content that is the result of the spinner appear close to the spinner when complete. Visually, the spinner `size` must be set to `large` and the `variant` set to `primary`.
 
+To manage focus, we create a blank ref that is then passed to the `labelRef` property of `Spinner`. Spinner applies this ref to its label. We then use an effect that calls `focus()` on our `labelRef`. We do this in an effect to ensure that the DOM has finished updating after our content starts loading. Once the content has finished loading, we must return the focus to the `Button` that initiated the `Spinner`.
+
 ```jsx
-initialState = {
-  contentLoading: false,
-  loadedMessage: '',
-  loadedContent: '',
-}
+const Component = props => {
+  const labelRef = React.useRef()
+  const buttonRef = React.useRef()
+  const [contentLoading, setContentLoading] = React.useState(false)
+  const [loadedMessage, setLoadedMessage] = React.useState('')
+  const [loadedContent, setLoadedContent] = React.useState('')
 
-const loadContent = () => {
-  setState({ contentLoading: true })
+  React.useEffect(() => {
+    if (contentLoading) {
+      labelRef.current.focus()
+    }
+  }, [contentLoading])
 
-  setTimeout(
-    () =>
-      setState({
-        contentLoading: false,
-        loadedMessage: 'Products found',
-        loadedContent: (
-          <UnorderedList>
-            <UnorderedList.Item>iPhone XS</UnorderedList.Item>
-            <UnorderedList.Item>Galaxy S10</UnorderedList.Item>
-            <UnorderedList.Item>Pixel 3</UnorderedList.Item>
-          </UnorderedList>
-        ),
-      }),
-    2000
+  const loadContent = () => {
+    setContentLoading(true)
+
+    setTimeout(() => {
+      setContentLoading(false)
+      setLoadedMessage('Products found')
+      setLoadedContent(
+        <UnorderedList>
+          <UnorderedList.Item>iPhone XS</UnorderedList.Item>
+          <UnorderedList.Item>Galaxy S10</UnorderedList.Item>
+          <UnorderedList.Item>Pixel 3</UnorderedList.Item>
+        </UnorderedList>
+      )
+      buttonRef.current.focus()
+    }, 2000)
+  }
+
+  return (
+    <Box between={2}>
+      <Heading level="h2">Available products:</Heading>
+      <Card>
+        <Spinner label="Finding products" spinning={contentLoading} labelRef={labelRef}>
+          <Box between={3} vertical={2}>
+            <Heading level="h2">Available products:</Heading>
+            <Input label="Test" />
+            <Input label="Test1" />
+            <Input label="Test2" />
+            <Input label="Test3" />
+            <Input label="Test4" />
+            <Input label="Test5" />
+            <Input label="Test6" />
+            <Input label="Test7" />
+            <Input label="Test8" />
+            <Input label="Test9" />
+            <Input label="Test0" />
+            <Input label="Test11" />
+            <Input label="Test12" />
+            <Heading level="h2">Available products:</Heading>
+            <Input label="Test13" />
+            <Input label="Test14" />
+            <Input label="Test15" />
+            <Input label="Test16" />
+            <Input label="Test17" />
+            <Input label="Test18" />
+            <Input label="Test19" />
+            <Input label="Test20" />
+            <div>
+              <Button onClick={loadContent} ref={buttonRef}>
+                Check Availability
+              </Button>
+            </div>
+            <div aria-live="assertive">
+              <A11yContent>{loadedMessage}</A11yContent>
+              {loadedContent}
+            </div>
+          </Box>
+        </Spinner>
+      </Card>
+    </Box>
   )
 }
-
-;<Box between={2}>
-  <Heading level="h2">Available products:</Heading>
-  <Card>
-    <Spinner label="Finding products" spinning={state.contentLoading}>
-      <Box between={3} vertical={2}>
-        <div>
-          <Button onClick={loadContent}>Check Availability</Button>
-        </div>
-        <div aria-live="assertive">
-          <A11yContent>{state.loadedMessage}</A11yContent>
-          {state.loadedContent}
-        </div>
-      </Box>
-    </Spinner>
-  </Card>
-</Box>
+;<Component />
 ```
 
 ### Displaying a full screen spinner
