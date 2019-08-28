@@ -2,6 +2,9 @@ import React from 'react'
 import Link from '@tds/core-link'
 
 const renderContent = c => {
+  if (typeof c !== 'string') {
+    return c
+  }
   const tagRegex = /<\s*a([^>]*)>(.*?)<\s*\/\s*a>/g
   const attributeRegex = /(\w+)\s*=\s*((["'])(.*?)\3|(?=\s|\/>))/g
   // split into attributes, and anchor text
