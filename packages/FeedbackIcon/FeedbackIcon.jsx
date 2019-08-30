@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { getCopy } from '@tds/util-helpers'
+import { getCopy, safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
 /**
