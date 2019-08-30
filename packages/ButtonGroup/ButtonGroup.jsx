@@ -6,9 +6,8 @@ import Text from '@tds/core-text'
 import { componentWithName } from '@tds/util-prop-types'
 
 import styled from 'styled-components'
+import { safeRest } from '@tds/util-helpers'
 import ButtonGroupItem from './ButtonGroupItem/ButtonGroupItem'
-
-import safeRest from '../../shared/utils/safeRest'
 
 const StyledButtonGroup = styled(Box)({
   flexFlow: 'row wrap',
