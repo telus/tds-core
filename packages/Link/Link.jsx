@@ -4,8 +4,8 @@ import styled from 'styled-components'
 
 import { colorShark, colorWhite } from '@tds/core-colours'
 import { links } from '@tds/shared-styles'
+import { safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
 const base = {
