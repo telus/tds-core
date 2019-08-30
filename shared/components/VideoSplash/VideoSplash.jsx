@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import { safeRest } from '@tds/util-helpers'
+
 import BigVideoButton from './BigVideoButton/BigVideoButton'
 
 import Play from './svg/Play'
-
-import safeRest from '../../utils/safeRest'
 
 /**
  * @version ./package.json
