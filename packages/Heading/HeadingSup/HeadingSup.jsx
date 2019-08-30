@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { baseSupSubScripts } from '@tds/shared-typography'
+import { safeRest } from '@tds/util-helpers'
 
 import { deprecate } from '../../../shared/utils/warn'
-import safeRest from '../../../shared/utils/safeRest'
 
 export const StyledHeadingSup = styled.sup(baseSupSubScripts)
 
