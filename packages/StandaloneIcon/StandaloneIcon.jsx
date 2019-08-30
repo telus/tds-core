@@ -4,8 +4,8 @@ import styled from 'styled-components'
 
 import A11yContent from '@tds/core-a11y-content'
 import { buttons } from '@tds/shared-styles'
+import { safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
 import { deprecate } from '../../shared/utils/warn'
 
 import Icon from '../../shared/components/Icon/Icon'
