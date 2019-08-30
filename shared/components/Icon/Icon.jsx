@@ -3,10 +3,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { colorIconPrimary, colorIconSecondary, colorCardinal, colorWhite } from '@tds/core-colours'
+import { safeRest } from '@tds/util-helpers'
 
 import icons from './icons'
-
-import safeRest from '../../utils/safeRest'
 
 const getColour = variant => {
   switch (variant) {
