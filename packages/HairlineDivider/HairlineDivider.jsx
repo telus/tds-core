@@ -4,8 +4,7 @@ import styled from 'styled-components'
 
 import { borders, spacing } from '@tds/shared-styles'
 import { colorGainsboro } from '@tds/core-colours'
-
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 const baseStyle = { transform: 'rotate(-0.00001deg)' }
 
