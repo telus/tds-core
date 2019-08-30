@@ -17,9 +17,10 @@ import {
   colorAthensGrey,
 } from '@tds/core-colours'
 import { medium, mediumFont, color } from '@tds/shared-typography'
+import { safeRest } from '@tds/util-helpers'
+
 import FeedbackIcon from './FeedbackIcon'
 
-import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId/generateId'
 
 const StyledLabelContainer = styled(Box)({
