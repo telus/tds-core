@@ -36,6 +36,9 @@ const StyledFootnote = styled.div(
     boxShadow: '0 0 16px 0 rgba(0, 0, 0, 0.1)',
     transform: 'translateY(100%)',
     transition: 'transform 500ms ease-out',
+    '@media (prefers-reduced-motion: reduce)': {
+      transition: 'none',
+    },
     zIndex: 99999,
     ...media.from('md').css({
       top: 'auto',
@@ -72,6 +75,9 @@ const StyledFootnoteBody = styled.div(
     '-webkit-overflow-scrolling': 'touch',
     transition: 'height 300ms ease-out, opacity 200ms ease-out',
     transform: 'translateZ(0)',
+    '@media (prefers-reduced-motion: reduce)': {
+      transition: 'height 1ms ease-out, opacity 1ms ease-out',
+    },
     backgroundColor: colorAthensGrey,
   },
   ({ headerHeight }) => ({
