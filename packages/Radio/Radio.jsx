@@ -15,9 +15,9 @@ import Paragraph from '@tds/core-paragraph'
 import Text from '@tds/core-text'
 
 import { borders } from '@tds/shared-styles'
+import { safeRest } from '@tds/util-helpers'
 
 import generateId from '../../shared/utils/generateId/generateId'
-import safeRest from '../../shared/utils/safeRest'
 import ColoredTextProvider from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 const FakeRadio = styled.span({
