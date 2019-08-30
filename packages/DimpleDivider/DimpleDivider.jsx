@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { borders, spacing } from '@tds/shared-styles'
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 const StyledDimpleDivider = styled.hr(spacing.noSpacing, borders.none, {
   height: '32px',
