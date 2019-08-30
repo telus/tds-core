@@ -5,9 +5,8 @@ import styled from 'styled-components'
 import StandaloneIcon from '@tds/core-standalone-icon'
 
 import { iconWrapper } from '@tds/shared-styles'
-import { getCopy, uniqueId } from '@tds/util-helpers'
+import { getCopy, uniqueId, safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId/generateId'
 import closest from './element-closest'
 
