@@ -8,7 +8,7 @@ import { componentWithName } from '@tds/util-prop-types'
 
 import HairlineDivider from '@tds/core-hairline-divider'
 
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 import PanelWrapper from './PanelWrapper/PanelWrapper'
 
