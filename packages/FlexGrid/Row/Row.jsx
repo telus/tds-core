@@ -3,11 +3,10 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { media } from '@tds/core-responsive'
+import { safeRest } from '@tds/util-helpers'
 
 import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 import calculateLevel from '../calculateLevel'
-
-import safeRest from '../../../shared/utils/safeRest'
 
 const StyledRow = styled(({ reverseLevel, ...rest }) => <ReactFlexboxGridRow {...rest} />)(
   ({ reverseLevel }) => ({

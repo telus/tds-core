@@ -5,9 +5,9 @@ import styled from 'styled-components'
 import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 import { responsiveProps } from '@tds/util-prop-types'
 import { media } from '@tds/core-responsive'
+import { safeRest } from '@tds/util-helpers'
 
 import GutterContext from '../gutterContext'
-import safeRest from '../../../shared/utils/safeRest'
 import { deprecate } from '../../../shared/utils/warn'
 import calculateLevel from '../calculateLevel'
 
