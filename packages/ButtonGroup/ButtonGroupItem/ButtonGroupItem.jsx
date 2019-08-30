@@ -9,8 +9,9 @@ import { borders, forms } from '@tds/shared-styles'
 import { medium, boldFont } from '@tds/shared-typography'
 import { media } from '@tds/core-responsive'
 import { colorTelusPurple, colorWhite } from '@tds/core-colours'
+import { safeRest } from '@tds/util-helpers'
+
 import generateId from '../../../shared/utils/generateId/generateId'
-import safeRest from '../../../shared/utils/safeRest'
 
 const baseButton = {
   margin: 0,
