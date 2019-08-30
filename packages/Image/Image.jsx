@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { borders } from '@tds/shared-styles'
+import { safeRest } from '@tds/util-helpers'
+
 import { warn } from '../../shared/utils/warn'
-import safeRest from '../../shared/utils/safeRest'
 
 const StyledImage = styled.img({
   height: 'auto',
