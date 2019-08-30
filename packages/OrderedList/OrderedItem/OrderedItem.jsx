@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { small, medium, large, smallFont, mediumFont, largeFont } from '@tds/shared-typography'
-
-import safeRest from '../../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 export const StyledOrderedItem = styled.li(({ size }) => ({
   marginLeft: '-1rem',
