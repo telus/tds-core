@@ -10,8 +10,8 @@ import Paragraph from '@tds/core-paragraph'
 import Box from '@tds/core-box'
 import { Reveal, Fade } from '@tds/shared-animation'
 import { messaging } from '@tds/shared-styles'
+import { safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
 const StyledNotificationContainer = styled(({ variant, ...rest }) => <Box {...rest} />)(
