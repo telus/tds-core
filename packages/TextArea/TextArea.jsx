@@ -18,8 +18,8 @@ import {
 } from '@tds/core-colours'
 import { medium, mediumFont, color } from '@tds/shared-typography'
 import { FeedbackIcon } from '@tds/core-input'
+import { safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
 import generateId from '../../shared/utils/generateId/generateId'
 
 const widthLimit = {
