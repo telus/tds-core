@@ -6,7 +6,7 @@ import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 import Heading from '@tds/core-heading'
 
-import safeRest from '../../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 import { warn } from '../../../shared/utils/warn'
 
 /**

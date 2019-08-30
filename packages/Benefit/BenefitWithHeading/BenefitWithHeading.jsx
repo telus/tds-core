@@ -3,7 +3,7 @@ import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 
-import safeRest from '../../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 import Item from './BenefitWithHeadingItem'
 
