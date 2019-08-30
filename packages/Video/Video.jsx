@@ -6,6 +6,7 @@ import fscreen from 'fscreen'
 
 import { colorGainsboro } from '@tds/core-colours'
 import Spinner from '@tds/core-spinner'
+import { safeRest } from '@tds/util-helpers'
 
 import VideoSplash from '../../shared/components/VideoSplash/VideoSplash'
 
@@ -17,8 +18,6 @@ import videoText from './videoText'
 import Pause from './svg/Pause'
 import Play from './svg/Play'
 import Replay from './svg/Replay'
-
-import safeRest from '../../shared/utils/safeRest'
 
 const VideoPlayerContainer = styled.div(({ videoBorder }) => ({
   width: '100%',
