@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import * as typography from '@tds/shared-typography'
-
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 import TextSup from './TextSup/TextSup'
 
