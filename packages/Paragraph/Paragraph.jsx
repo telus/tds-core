@@ -4,8 +4,7 @@ import styled from 'styled-components'
 
 import * as typography from '@tds/shared-typography'
 import { spacing } from '@tds/shared-styles'
-
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 const paragraphColor = ({ invert }) => (invert ? typography.invertedColor : typography.color)
 const paragraphInheritColor = ({ inheritColor }) =>
