@@ -5,9 +5,8 @@ import styled from 'styled-components'
 import { colorAthensGrey, colorWhite } from '@tds/core-colours'
 import Text from '@tds/core-text'
 import FlexGrid from '@tds/core-flex-grid'
-import { getCopy } from '@tds/util-helpers'
+import { getCopy, safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
 import { deprecate } from '../../shared/utils/warn'
 
 import copyDictionary from './stepTrackerText'
