@@ -11,9 +11,9 @@ import {
   colorSecondary as secondaryBgColor,
   colorText,
 } from '@tds/core-colours'
+import { safeRest } from '@tds/util-helpers'
 
 import { warn } from '../../shared/utils/warn'
-import safeRest from '../../shared/utils/safeRest'
 
 const StyledButtonLink = styled(StyledButton)(
   links.focusOutline,
