@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Box from '@tds/core-box'
 import { colorWhite, colorWhiteLilac, colorAthensGrey } from '@tds/core-colours'
 import { borders } from '@tds/shared-styles'
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 const StyledCard = styled(({ variant, ...rest }) => <Box {...rest} />)(({ variant }) => ({
   ...borders.none,
