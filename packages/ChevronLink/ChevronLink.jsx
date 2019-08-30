@@ -8,8 +8,8 @@ import Box from '@tds/core-box'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import { medium, helveticaNeueRoman55 } from '@tds/shared-typography'
 import { colorPrimary, colorSecondary, colorWhite } from '@tds/core-colours'
+import { safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
 const base = {
