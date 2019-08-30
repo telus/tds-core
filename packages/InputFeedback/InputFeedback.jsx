@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Box from '@tds/core-box'
 
 import { borders, messaging } from '@tds/shared-styles'
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 const StyledFeedback = styled(({ feedback, ...rest }) => <Box {...rest} />)(({ feedback }) => ({
   ...borders.rounded,
