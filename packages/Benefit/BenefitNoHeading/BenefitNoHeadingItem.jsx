@@ -5,7 +5,7 @@ import { componentWithName } from '@tds/util-prop-types'
 import Box from '@tds/core-box'
 import Text from '@tds/core-text'
 
-import safeRest from '../../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 import { warn } from '../../../shared/utils/warn'
 
 /**
