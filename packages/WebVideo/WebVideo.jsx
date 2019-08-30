@@ -4,9 +4,9 @@ import styled from 'styled-components'
 
 import YouTube from 'react-youtube'
 
-import VideoSplash from '../../shared/components/VideoSplash/VideoSplash'
+import { safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
+import VideoSplash from '../../shared/components/VideoSplash/VideoSplash'
 
 const StyledPlayerContainer = styled.div({
   width: '100%',
