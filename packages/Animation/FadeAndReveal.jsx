@@ -1,7 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
+import styled from 'styled-components'
 
+const StyledContainer = styled.div({
+  '@media (prefers-reduced-motion: reduce)': {
+    transition: 'none !important',
+  },
+})
 const defaultStyle = (duration, timeout) => ({
   transition: `height ${duration || timeout}ms, opacity ${duration || timeout}ms ease-in-out`,
   opacity: 0,
@@ -23,14 +29,14 @@ const transitionStyles = height => (duration, timeout) => ({
 const FadeAndReveal = ({ delay, height, children, ...rest }) => (
   <Transition {...rest}>
     {state => (
-      <div
+      <StyledContainer
         style={{
           ...defaultStyle(rest.duration, rest.timeout),
           ...transitionStyles(height)(rest.duration, rest.timeout)[state],
         }}
       >
         {children()}
-      </div>
+      </StyledContainer>
     )}
   </Transition>
 )
