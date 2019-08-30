@@ -4,9 +4,9 @@ import styled from 'styled-components'
 
 import { position } from '@tds/shared-styles'
 import { media } from '@tds/core-responsive'
+import { safeRest } from '@tds/util-helpers'
 
 import { deprecate, warn } from '../../shared/utils/warn'
-import safeRest from '../../shared/utils/safeRest'
 import SpinnerSvg from './SpinnerSvg/SpinnerSvg'
 
 const zindexModalBackdrop = 1400
