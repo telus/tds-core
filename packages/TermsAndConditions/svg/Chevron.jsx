@@ -14,6 +14,9 @@ const StyledChevron = styled.span(({ isOpen }) => ({
   [`${StyledClickable}:hover &`]: {
     transform: `translate(6px, ${!isOpen ? '2px' : '-5px'})`,
   },
+  '@media (prefers-reduced-motion: reduce)': {
+    transition: 'none',
+  },
 }))
 
 const Chevron = ({ isOpen }) => (
