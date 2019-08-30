@@ -5,8 +5,7 @@ import styled from 'styled-components'
 import { colorTelusPurple, colorPrimary, colorCardinal } from '@tds/core-colours'
 
 import { small, medium, large, smallFont, mediumFont, largeFont } from '@tds/shared-typography'
-
-import safeRest from '../../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 const StyledUnorderedItem = styled.li(({ iconStyle, size }) => ({
   position: 'relative',
