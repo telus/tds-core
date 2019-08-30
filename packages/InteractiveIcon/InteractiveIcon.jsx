@@ -5,8 +5,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import A11yContent from '@tds/core-a11y-content'
 import { colorGainsboro, colorShark, colorTelusPurple, colorWhite } from '@tds/core-colours'
 import { buttons } from '@tds/shared-styles'
-
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 const getOutline = ({ variant }) => variant !== 'inverted' && { outline: 'none' }
 
