@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 
 import { componentWithName } from '@tds/util-prop-types'
 
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 import Item from './Item/Item'
 
