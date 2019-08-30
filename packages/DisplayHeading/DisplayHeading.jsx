@@ -7,7 +7,7 @@ import { helveticaNeueThin35, wordBreak, baseSupSubScripts } from '@tds/shared-t
 import { colorWhite, colorSecondary } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 import DisplayHeadingSup from './DisplayHeadingSup/DisplayHeadingSup'
 

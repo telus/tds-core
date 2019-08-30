@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { baseSupSubScripts } from '@tds/shared-typography'
 import { media } from '@tds/core-responsive'
 
-import safeRest from '../../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 import { deprecate } from '../../../shared/utils/warn'
 
 const StyledDisplayHeadingSup = styled.sup(baseSupSubScripts, {
