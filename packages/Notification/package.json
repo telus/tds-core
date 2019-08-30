@@ -34,6 +34,7 @@
     "@tds/core-standalone-icon": "^2.1.4",
     "@tds/shared-animation": "^2.0.0",
     "@tds/shared-styles": "^1.4.3",
+    "@tds/util-helpers": "^1.1.0",
     "prop-types": "^15.5.10"
   }
 }
