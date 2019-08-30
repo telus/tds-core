@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@tds/core-colours": "^2.1.0",
+    "@tds/util-helpers": "^1.1.0",
     "prop-types": "^15.5.10"
   }
 }

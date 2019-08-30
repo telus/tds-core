@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 import { colorTelusPurple, colorShark, colorWhite } from '@tds/core-colours'
+import { safeRest } from '@tds/util-helpers'
 
-import safeRest from '../../shared/utils/safeRest'
 import { warn } from '../../shared/utils/warn'
 
 const getColour = variant => {
