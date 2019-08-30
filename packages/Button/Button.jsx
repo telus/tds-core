@@ -8,8 +8,8 @@ import { medium, boldFont } from '@tds/shared-typography'
 import { colorPrimary, colorSecondary, colorWhite, colorText } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 
+import { safeRest } from '@tds/util-helpers'
 import { warn } from '../../shared/utils/warn'
-import safeRest from '../../shared/utils/safeRest'
 
 const preventDisabling = ({ disabled, ...props }) => {
   if (disabled) {
