@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { boldFont, sup } from '@tds/shared-typography'
-
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 const StyledStrong = styled.strong(boldFont, { sup })
 
