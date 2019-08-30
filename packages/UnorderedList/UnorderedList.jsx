@@ -5,8 +5,7 @@ import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 import { list } from '@tds/shared-styles'
-
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 import UnorderedItem from './UnorderedItem/UnorderedItem'
 
