@@ -11,8 +11,7 @@ import {
 } from '@tds/shared-typography'
 import { colorWhite, colorText, colorSecondary } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
-
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 import HeadingSup, { StyledHeadingSup } from './HeadingSup/HeadingSup'
 
