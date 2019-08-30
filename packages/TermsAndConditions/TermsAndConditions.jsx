@@ -8,10 +8,8 @@ import FlexGrid from '@tds/core-flex-grid'
 import Heading from '@tds/core-heading'
 import Box from '@tds/core-box'
 import { FadeAndReveal, Translate } from '@tds/shared-animation'
-import { getCopy } from '@tds/util-helpers'
+import { getCopy, safeRest } from '@tds/util-helpers'
 import { colorWhite } from '@tds/core-colours'
-
-import safeRest from '../../shared/utils/safeRest'
 
 import StyledClickable from './StyledClickable'
 import Chevron from './svg/Chevron'

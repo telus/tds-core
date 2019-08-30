@@ -10,9 +10,7 @@ import HairlineDivider from '@tds/core-hairline-divider'
 import { colorAthensGrey } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import { withFocusTrap } from '@tds/shared-hocs'
-import { getCopy } from '@tds/util-helpers'
-
-import safeRest from '../../../shared/utils/safeRest'
+import { getCopy, safeRest } from '@tds/util-helpers'
 
 import StyledClickable from '../StyledClickable'
 import List from './FootnoteList'
