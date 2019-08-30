@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import safeRest from '../../shared/utils/safeRest'
+import { safeRest } from '@tds/util-helpers'
 
 const StyledWaveDivider = styled.svg({
   maxWidth: '100%',
