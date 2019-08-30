@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { media, breakpoints } from '@tds/core-responsive'
+import { safeRest } from '@tds/util-helpers'
 
 import { Grid } from 'react-flexbox-grid'
 
@@ -10,8 +11,6 @@ import Col from './Col/Col'
 import Row from './Row/Row'
 import calculateLevel from './calculateLevel'
 import GutterContext from './gutterContext'
-
-import safeRest from '../../shared/utils/safeRest'
 
 const rem = breakpoint => {
   return `${breakpoints[breakpoint] / 16}rem`
