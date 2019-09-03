@@ -58,15 +58,15 @@ jobs:
       - attach
       - run: npm run test:lowmemory
 
-  e2e:
-    executor: browsers
-    steps:
-      - attach
-      - run:
-          name: Styleguidist Server
-          command: npm run dev:e2e-direct
-          background: true
-      - run: npm run test:e2e-direct -- -a
+  # e2e:
+  #   executor: browsers
+  #   steps:
+  #     - attach
+  #     - run:
+  #         name: Styleguidist Server
+  #         command: npm run dev:e2e-direct
+  #         background: true
+  #     - run: npm run test:e2e-direct -- -a
 
   prepr-log:
     executor: prepr
@@ -174,8 +174,8 @@ workflows:
       - unit:
           requires: [build]
 
-      - e2e:
-          requires: [build]
+      # - e2e:
+      #     requires: [build]
 
       - prepr-bot:
           requires: [build, lint, unit, e2e]
