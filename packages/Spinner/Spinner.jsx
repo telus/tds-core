@@ -170,7 +170,7 @@ class Spinner extends React.PureComponent {
           <OpaqueContainer inert="true">
             {recursiveMap(children, c => {
               if (c) {
-                return React.cloneElement(c, { tabIndex: '-1' })
+                return React.cloneElement(c, { tabIndex: '-1', 'aria-hidden': 'true' })
               }
               return undefined
             })}

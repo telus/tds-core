@@ -209,31 +209,8 @@ const Component = props => {
     <Box between={2}>
       <Heading level="h2">Available products:</Heading>
       <Card>
-        <Spinner label="Finding products" spinning={contentLoading} labelRef={labelRef}>
+        <Spinner label="Submitting Information" spinning={contentLoading} labelRef={labelRef}>
           <Box between={3} vertical={2}>
-            <Heading level="h2">Available products:</Heading>
-            <Input label="Test" />
-            <Input label="Test1" />
-            <Input label="Test2" />
-            <Input label="Test3" />
-            <Input label="Test4" />
-            <Input label="Test5" />
-            <Input label="Test6" />
-            <Input label="Test7" />
-            <Input label="Test8" />
-            <Input label="Test9" />
-            <Input label="Test0" />
-            <Input label="Test11" />
-            <Input label="Test12" />
-            <Heading level="h2">Available products:</Heading>
-            <Input label="Test13" />
-            <Input label="Test14" />
-            <Input label="Test15" />
-            <Input label="Test16" />
-            <Input label="Test17" />
-            <Input label="Test18" />
-            <Input label="Test19" />
-            <Input label="Test20" />
             <div>
               <Button onClick={loadContent} ref={buttonRef}>
                 Check Availability
