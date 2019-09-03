@@ -178,20 +178,20 @@ workflows:
       #     requires: [build]
 
       - prepr-bot:
-          requires: [build, lint, unit, e2e]
+          requires: [build, lint, unit]
           filters:
             branches:
               ignore: master
 
       - prepr-log:
-          requires: [build, lint, unit, e2e]
+          requires: [build, lint, unit]
           filters:
             branches:
               only: master
 
       - approve-release:
           type: approval
-          requires: [build, lint, unit, e2e, prepr-log]
+          requires: [build, lint, unit, prepr-log]
           filters:
             branches:
               only: master
