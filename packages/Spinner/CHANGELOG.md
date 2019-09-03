@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-spinner@3.0.5...@tds/core-spinner@3.1.0) (2019-09-03)
+
+
+### Features
+
+* **core-spinner:** add labelRef property, prevent focus on children ([5246064](https://github.com/telusdigital/tds/commit/5246064))
+
+
+
+
+
 ## [3.0.5](https://github.com/telusdigital/tds/compare/@tds/core-spinner@3.0.4...@tds/core-spinner@3.0.5) (2019-08-22)
 
 **Note:** Version bump only for package @tds/core-spinner

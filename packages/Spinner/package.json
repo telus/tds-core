@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-spinner",
-  "version": "3.0.5",
+  "version": "3.1.0",
   "description": "A waiting indicator",
   "main": "index.cjs.js",
   "module": "index.es.js",
