@@ -479,6 +479,7 @@ Array [
               className="c7"
             >
               <span
+                aria-hidden="true"
                 key=".0"
                 tabIndex="-1"
               >
@@ -961,6 +962,7 @@ Array [
             className="c7"
           >
             <span
+              aria-hidden="true"
               key=".0"
               tabIndex="-1"
             >
@@ -1413,6 +1415,7 @@ Array [
           className="c7"
         >
           <span
+            aria-hidden="true"
             key=".0"
             tabIndex="-1"
           >
@@ -3290,6 +3293,7 @@ Array [
               className="c5"
             >
               <span
+                aria-hidden="true"
                 key=".0"
                 tabIndex="-1"
               >
@@ -3650,6 +3654,7 @@ Array [
             className="c5"
           >
             <span
+              aria-hidden="true"
               key=".0"
               tabIndex="-1"
             >
@@ -3980,6 +3985,7 @@ Array [
           className="c5"
         >
           <span
+            aria-hidden="true"
             key=".0"
             tabIndex="-1"
           >
@@ -4349,6 +4355,7 @@ Array [
               className="c5"
             >
               <span
+                aria-hidden="true"
                 key=".0"
                 tabIndex="-1"
               >
@@ -4709,6 +4716,7 @@ Array [
             className="c5"
           >
             <span
+              aria-hidden="true"
               key=".0"
               tabIndex="-1"
             >
@@ -5039,6 +5047,7 @@ Array [
           className="c5"
         >
           <span
+            aria-hidden="true"
             key=".0"
             tabIndex="-1"
           >
@@ -5530,6 +5539,7 @@ Array [
               className="c7"
             >
               <span
+                aria-hidden="true"
                 key=".0"
                 tabIndex="-1"
               >
@@ -6012,6 +6022,7 @@ Array [
             className="c7"
           >
             <span
+              aria-hidden="true"
               key=".0"
               tabIndex="-1"
             >
@@ -6464,6 +6475,7 @@ Array [
           className="c7"
         >
           <span
+            aria-hidden="true"
             key=".0"
             tabIndex="-1"
           >
@@ -6603,6 +6615,7 @@ exports[`Spinner renders with children 1`] = `
     class="c7"
   >
     <span
+      aria-hidden="true"
       tabindex="-1"
     >
       Overlay me with the spinner
