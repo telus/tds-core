@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Translate renders when the transition is not triggered 1`] = `
+@media (prefers-reduced-motion:reduce) {
+  .c0 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
 <div
+  class="c0"
   style="transition:transform 500ms"
 >
   <div>
@@ -11,7 +19,15 @@ exports[`Translate renders when the transition is not triggered 1`] = `
 `;
 
 exports[`Translate renders when the transition is triggered 1`] = `
+@media (prefers-reduced-motion:reduce) {
+  .c0 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
 <div
+  class="c0"
   style="transition:transform 500ms;transform:translateX(1rem)"
 >
   <div>
