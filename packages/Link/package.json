@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-link",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@tds/shared-styles": "^1.4.3",
-    "@tds/util-helpers": "^1.1.0",
+    "@tds/util-helpers": "^1.2.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {

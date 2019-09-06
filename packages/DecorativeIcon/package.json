@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-decorative-icon",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "An icon used for visual aesthetics only",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@tds/core-colours": "^2.1.0",
-    "@tds/util-helpers": "^1.1.0",
+    "@tds/util-helpers": "^1.2.0",
     "prop-types": "^15.5.10"
   }
 }

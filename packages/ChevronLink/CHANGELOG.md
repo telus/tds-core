@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.18](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.17...@tds/core-chevron-link@2.0.18) (2019-09-06)
+
+**Note:** Version bump only for package @tds/core-chevron-link
+
+
+
+
+
 ## [2.0.17](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.0.16...@tds/core-chevron-link@2.0.17) (2019-08-26)
 
 **Note:** Version bump only for package @tds/core-chevron-link

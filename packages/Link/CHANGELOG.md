@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.10](https://github.com/telusdigital/tds/compare/@tds/core-link@2.0.9...@tds/core-link@2.0.10) (2019-09-06)
+
+**Note:** Version bump only for package @tds/core-link
+
+
+
+
+
 ## [2.0.9](https://github.com/telusdigital/tds/compare/@tds/core-link@2.0.8...@tds/core-link@2.0.9) (2019-08-22)
 
 **Note:** Version bump only for package @tds/core-link
