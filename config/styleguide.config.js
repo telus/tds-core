@@ -39,7 +39,8 @@ const devTemplate = {
   head: {
     scripts: [
       {
-        src: '//polyfill.io/v3/polyfill.min.js?features=Set%2CArray.prototype.%40%40iterator',
+        src:
+          '//polyfill.io/v3/polyfill.min.js?features=Set%2CArray.prototype.%40%40iterator%2CArray.prototype.find',
       },
     ],
     links: fontLinks,
@@ -51,7 +52,8 @@ const productionTemplate = {
   head: {
     scripts: [
       {
-        src: '//polyfill.io/v3/polyfill.min.js?features=Set%2CArray.prototype.%40%40iterator',
+        src:
+          '//polyfill.io/v3/polyfill.min.js?features=Set%2CArray.prototype.%40%40iterator%2CArray.prototype.find',
       },
       {
         src:
