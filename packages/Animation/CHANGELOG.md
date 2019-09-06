@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.2.0...@tds/shared-animation@2.0.0) (2019-09-06)
+
+
+### Features
+
+* **shared-animation:** add reduce-motion to FadeAndReveal ([d2b2953](https://github.com/telusdigital/tds/commit/d2b2953))
+* **shared-animation:** add reduced motion to translate ([d4dbe5a](https://github.com/telusdigital/tds/commit/d4dbe5a))
+
+
+### BREAKING CHANGES
+
+* **shared-animation:** add styled-components as a peerDependency
+
+
+
+
+
 # [1.2.0](https://github.com/telusdigital/tds/compare/@tds/shared-animation@1.1.2...@tds/shared-animation@1.2.0) (2019-06-04)
 
 ### Features

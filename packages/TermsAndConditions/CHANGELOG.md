@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.18](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.17...@tds/core-terms-and-conditions@1.0.18) (2019-09-06)
+
+
+### Bug Fixes
+
+* **core-terms-and-conditions:** use reduced motion in expand collapse ([4ef81c2](https://github.com/telus/tds-core/commit/4ef81c2))
+
+
+
+
+
 ## [1.0.17](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.16...@tds/core-terms-and-conditions@1.0.17) (2019-08-30)
 
 
