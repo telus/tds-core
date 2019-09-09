@@ -4,6 +4,7 @@ import {
   colorLavenderBlush,
   colorCardinal,
   colorGainsboro,
+  colorLightRaja,
 } from '@tds/core-colours'
 
 export const standard = {
@@ -16,6 +17,10 @@ export const success = {
 
 export const error = {
   backgroundColor: colorLavenderBlush,
+}
+
+export const warning = {
+  backgroundColor: colorLightRaja,
 }
 
 export const errorText = {
