@@ -248,6 +248,7 @@ div.c2 {
 }
 
 <Notification
+  copy="en"
   dismissible={false}
   variant="instructional"
 >
@@ -1008,28 +1009,6 @@ div.c2 {
 `;
 
 exports[`<Notification /> can have a variant 2`] = `
-.c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #2B8000;
-  font-size: 1.25rem;
-}
-
-.c7::before {
-  content: '\\f101';
-}
-
 div.c4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1111,6 +1090,15 @@ div.c2 {
 
 .c6 > *:not(:last-child) {
   margin-right: 1rem;
+}
+
+.c7 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c0 {
@@ -1277,6 +1265,7 @@ div.c2 {
 }
 
 <Notification
+  copy="en"
   dismissible={false}
   variant="success"
 >
@@ -1339,7 +1328,7 @@ div.c2 {
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bxivhb",
                     "isStatic": false,
-                    "lastClassName": "c6",
+                    "lastClassName": "c7",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -1860,7 +1849,7 @@ div.c2 {
                                                                                                   "componentStyle": ComponentStyle {
                                                                                                     "componentId": "sc-bxivhb",
                                                                                                     "isStatic": false,
-                                                                                                    "lastClassName": "c6",
+                                                                                                    "lastClassName": "c7",
                                                                                                     "rules": Array [
                                                                                                       [Function],
                                                                                                       [Function],
@@ -1887,62 +1876,95 @@ div.c2 {
                                                                                               <div
                                                                                                 className="c6"
                                                                                               >
-                                                                                                <DecorativeIcon
-                                                                                                  size={20}
-                                                                                                  symbol="checkmark"
-                                                                                                  variant="primary"
+                                                                                                <Box
+                                                                                                  inline={false}
+                                                                                                  tag="div"
+                                                                                                  vertical={1}
                                                                                                 >
-                                                                                                  <Icon
-                                                                                                    aria-hidden="true"
-                                                                                                    size={20}
-                                                                                                    symbol="checkmark"
-                                                                                                    variant="primary"
+                                                                                                  <styled.div
+                                                                                                    inline={false}
+                                                                                                    tag="div"
+                                                                                                    vertical={1}
                                                                                                   >
-                                                                                                    <Icon__StyledIcon
-                                                                                                      aria-hidden="true"
-                                                                                                      iSize={20}
-                                                                                                      symbol="checkmark"
-                                                                                                      variant="primary"
-                                                                                                    >
-                                                                                                      <StyledComponent
-                                                                                                        aria-hidden="true"
-                                                                                                        forwardedComponent={
-                                                                                                          Object {
-                                                                                                            "$$typeof": Symbol(react.forward_ref),
-                                                                                                            "attrs": Array [],
-                                                                                                            "componentStyle": ComponentStyle {
-                                                                                                              "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                                                              "isStatic": false,
-                                                                                                              "lastClassName": "c7",
-                                                                                                              "rules": Array [
-                                                                                                                [Function],
-                                                                                                                [Function],
-                                                                                                                [Function],
-                                                                                                              ],
-                                                                                                            },
-                                                                                                            "displayName": "Icon__StyledIcon",
-                                                                                                            "foldedComponentIds": Array [],
-                                                                                                            "render": [Function],
-                                                                                                            "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                                                            "target": "i",
-                                                                                                            "toString": [Function],
-                                                                                                            "warnTooManyClasses": [Function],
-                                                                                                            "withComponent": [Function],
-                                                                                                          }
+                                                                                                    <StyledComponent
+                                                                                                      forwardedComponent={
+                                                                                                        Object {
+                                                                                                          "$$typeof": Symbol(react.forward_ref),
+                                                                                                          "attrs": Array [
+                                                                                                            [Function],
+                                                                                                          ],
+                                                                                                          "componentStyle": ComponentStyle {
+                                                                                                            "componentId": "sc-bxivhb",
+                                                                                                            "isStatic": false,
+                                                                                                            "lastClassName": "c7",
+                                                                                                            "rules": Array [
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                            ],
+                                                                                                          },
+                                                                                                          "displayName": "styled.div",
+                                                                                                          "foldedComponentIds": Array [],
+                                                                                                          "render": [Function],
+                                                                                                          "styledComponentId": "sc-bxivhb",
+                                                                                                          "target": "div",
+                                                                                                          "toString": [Function],
+                                                                                                          "warnTooManyClasses": [Function],
+                                                                                                          "withComponent": [Function],
                                                                                                         }
-                                                                                                        forwardedRef={null}
-                                                                                                        iSize={20}
-                                                                                                        symbol="checkmark"
-                                                                                                        variant="primary"
+                                                                                                      }
+                                                                                                      forwardedRef={null}
+                                                                                                      inline={false}
+                                                                                                      tag="div"
+                                                                                                      vertical={1}
+                                                                                                    >
+                                                                                                      <div
+                                                                                                        className="c7"
                                                                                                       >
-                                                                                                        <i
-                                                                                                          aria-hidden="true"
-                                                                                                          className="c7"
-                                                                                                        />
-                                                                                                      </StyledComponent>
-                                                                                                    </Icon__StyledIcon>
-                                                                                                  </Icon>
-                                                                                                </DecorativeIcon>
+                                                                                                        <NotificationSuccess
+                                                                                                          copy="en"
+                                                                                                        >
+                                                                                                          <FeedbackIcon
+                                                                                                            copy="en"
+                                                                                                            copyDictionary={
+                                                                                                              Object {
+                                                                                                                "en": Object {
+                                                                                                                  "a11yText": "Success",
+                                                                                                                },
+                                                                                                                "fr": Object {
+                                                                                                                  "a11yText": "Réussite",
+                                                                                                                },
+                                                                                                              }
+                                                                                                            }
+                                                                                                            height="20"
+                                                                                                            optionalText={false}
+                                                                                                            viewBox="0 0 20 20"
+                                                                                                            width="20"
+                                                                                                          >
+                                                                                                            <svg
+                                                                                                              height="20"
+                                                                                                              role="img"
+                                                                                                              viewBox="0 0 20 20"
+                                                                                                              width="20"
+                                                                                                            >
+                                                                                                              <title>
+                                                                                                                Success
+                                                                                                              </title>
+                                                                                                              <path
+                                                                                                                d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm8.127 4.673a.633.633 0 0 0 .092-.105l7.734-8.572a.693.693 0 0 0-.009-.925.595.595 0 0 0-.882-.001l-7.514 8.055-2.612-2.8a.596.596 0 0 0-.88 0 .706.706 0 0 0-.014.928l3.038 3.51a.623.623 0 0 0 .486.219.587.587 0 0 0 .46-.2l.087-.097.014-.012z"
+                                                                                                                fill="#2B8000"
+                                                                                                                fillRule="evenodd"
+                                                                                                              />
+                                                                                                            </svg>
+                                                                                                          </FeedbackIcon>
+                                                                                                        </NotificationSuccess>
+                                                                                                      </div>
+                                                                                                    </StyledComponent>
+                                                                                                  </styled.div>
+                                                                                                </Box>
                                                                                                 <Notification__StyledMessageContainer
                                                                                                   hasIcon={true}
                                                                                                 >

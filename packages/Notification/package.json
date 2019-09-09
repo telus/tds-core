@@ -28,10 +28,10 @@
   "dependencies": {
     "@tds/core-box": "^2.0.2",
     "@tds/core-colours": "^2.1.0",
-    "@tds/core-decorative-icon": "^2.2.1",
+    "@tds/core-feedback-icon": "^1.0.1",
     "@tds/core-flex-grid": "^3.0.3",
+    "@tds/core-interactive-icon": "^1.0.1",
     "@tds/core-paragraph": "^2.0.5",
-    "@tds/core-standalone-icon": "^2.1.5",
     "@tds/shared-animation": "^2.0.0",
     "@tds/shared-styles": "^1.4.3",
     "@tds/util-helpers": "^1.2.0",

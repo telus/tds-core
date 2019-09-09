@@ -1,8 +1,12 @@
 import React from 'react'
 import { shallow, render, mount } from 'enzyme'
 
-import DecorativeIcon from '@tds/core-decorative-icon'
-import StandaloneIcon from '@tds/core-standalone-icon'
+import {
+  NotificationSuccess,
+  NotificationError,
+  NotificationWarning,
+} from '@tds/core-feedback-icon'
+import { Close } from '@tds/core-interactive-icon'
 
 import Notification from '../Notification'
 import { warn } from '../../../shared/utils/warn'
@@ -12,11 +16,23 @@ jest.mock('../../../shared/utils/warn')
 describe('<Notification />', () => {
   const defaultChildren = 'Some content'
   const doShallow = (props = {}, children = defaultChildren) =>
-    shallow(<Notification {...props}>{children}</Notification>)
+    shallow(
+      <Notification copy="en" {...props}>
+        {children}
+      </Notification>
+    )
   const doRender = (props = {}, children = defaultChildren) =>
-    render(<Notification {...props}>{children}</Notification>)
+    render(
+      <Notification copy="en" {...props}>
+        {children}
+      </Notification>
+    )
   const doMount = (props = {}, children = defaultChildren) =>
-    mount(<Notification {...props}>{children}</Notification>)
+    mount(
+      <Notification copy="en" {...props}>
+        {children}
+      </Notification>
+    )
 
   it('renders', () => {
     const notification = doRender()
@@ -34,15 +50,19 @@ describe('<Notification />', () => {
 
   it('does not have an icon by default', () => {
     let notification = doShallow()
-    expect(notification.find(DecorativeIcon)).not.toExist()
+    expect(notification.find(NotificationSuccess)).not.toExist()
+    expect(notification.find(NotificationError)).not.toExist()
+    expect(notification.find(NotificationWarning)).not.toExist()
 
     notification = doShallow({ variant: 'branded' })
-    expect(notification.find(DecorativeIcon)).not.toExist()
+    expect(notification.find(NotificationSuccess)).not.toExist()
+    expect(notification.find(NotificationError)).not.toExist()
+    expect(notification.find(NotificationWarning)).not.toExist()
   })
 
   it('does not have a dismiss icon by default', () => {
     const notification = doShallow()
-    expect(notification.find(StandaloneIcon)).not.toExist()
+    expect(notification.find(Close)).not.toExist()
   })
 
   describe('successful variant', () => {
@@ -52,12 +72,10 @@ describe('<Notification />', () => {
       expect(notification.find('Paragraph').prop('bold')).toBeFalsy()
     })
 
-    it('adds a checkmark icon', () => {
+    it('adds a success icon', () => {
       const notification = doShallow({ variant: 'success' })
 
-      expect(notification).toContainReact(
-        <DecorativeIcon symbol="checkmark" variant="primary" size={20} />
-      )
+      expect(notification).toContainReact(<NotificationSuccess copy="en" />)
     })
   })
 
@@ -68,12 +86,24 @@ describe('<Notification />', () => {
       expect(notification.find('Paragraph').prop('bold')).toBeFalsy()
     })
 
-    it('adds an exclamation point icon', () => {
+    it('adds an error icon', () => {
       const notification = doShallow({ variant: 'error' })
 
-      expect(notification).toContainReact(
-        <DecorativeIcon symbol="exclamationPointCircle" variant="error" size={20} />
-      )
+      expect(notification).toContainReact(<NotificationError copy="en" />)
+    })
+  })
+
+  describe('warning variant', () => {
+    it('default text style is not bold', () => {
+      const notification = doShallow({ variant: 'warning' }, 'An warning message')
+
+      expect(notification.find('Paragraph').prop('bold')).toBeFalsy()
+    })
+
+    it('adds a warning icon', () => {
+      const notification = doShallow({ variant: 'warning' })
+
+      expect(notification).toContainReact(<NotificationWarning copy="en" />)
     })
   })
 
@@ -93,52 +123,11 @@ describe('<Notification />', () => {
 
   describe('dismissible', () => {
     it('adds a dismiss button', () => {
-      const notification = doMount({ dismissible: true, dismissibleA11yLabel: 'Close' })
-      expect(notification.find(StandaloneIcon)).toExist()
-    })
-
-    it('is accessible', () => {
-      const notification = doMount({ dismissible: true, dismissibleA11yLabel: 'Close' })
-      const icon = notification.find(StandaloneIcon)
-      expect(icon.props().a11yText).toBe('Close')
-    })
-
-    it('should use a purple X on a default notification', () => {
-      const notification = doMount({ dismissible: true, dismissibleA11yLabel: 'Close' })
-      const icon = notification.find(StandaloneIcon)
-      expect(icon.props().variant).toBe('secondary')
-    })
-
-    it('should use a grey X on a branded notification', () => {
-      const notification = doMount({
-        variant: 'branded',
-        dismissible: true,
-        dismissibleA11yLabel: 'Close',
-      })
-      const icon = notification.find(StandaloneIcon)
-      expect(icon.props().variant).toBeUndefined()
-    })
-
-    it('should use a grey X on a success notification', () => {
-      const notification = doMount({
-        variant: 'success',
-        dismissible: true,
-        dismissibleA11yLabel: 'Close',
-      })
-      const icon = notification.find(StandaloneIcon)
-      expect(icon.props().variant).toBeUndefined()
-    })
-
-    it('should use a grey X on an error notification', () => {
-      const notification = doMount({
-        variant: 'error',
-        dismissible: true,
-        dismissibleA11yLabel: 'Close',
-      })
-      const icon = notification.find(StandaloneIcon)
-      expect(icon.props().variant).toBeUndefined()
+      const notification = doMount({ dismissible: true })
+      expect(notification.find(Close)).toExist()
     })
   })
+
   describe('onDismiss', () => {
     it('calls the provided callback when dismissible', () => {
       const onDismiss = jest.fn()
@@ -148,7 +137,7 @@ describe('<Notification />', () => {
         dismissibleA11yLabel: 'Close',
         onDismiss,
       })
-      notification.find(StandaloneIcon).simulate('click')
+      notification.find(Close).simulate('click')
       expect(onDismiss).toHaveBeenCalled()
     })
     it('warns when the dismissible prop is false', () => {
