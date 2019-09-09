@@ -4,13 +4,19 @@ import styled from 'styled-components'
 
 import { colorWhiteLilac } from '@tds/core-colours'
 import FlexGrid from '@tds/core-flex-grid'
-import DecorativeIcon from '@tds/core-decorative-icon'
-import StandaloneIcon from '@tds/core-standalone-icon'
+import {
+  NotificationSuccess,
+  NotificationError,
+  NotificationWarning,
+} from '@tds/core-feedback-icon'
+import { Close } from '@tds/core-interactive-icon'
 import Paragraph from '@tds/core-paragraph'
 import Box from '@tds/core-box'
 import { Reveal, Fade } from '@tds/shared-animation'
 import { messaging } from '@tds/shared-styles'
-import { safeRest } from '@tds/util-helpers'
+import { getCopy, safeRest } from '@tds/util-helpers'
+
+import copyDictionary from './notificationText'
 
 import { warn } from '../../shared/utils/warn'
 
@@ -21,6 +27,7 @@ const StyledNotificationContainer = styled(({ variant, ...rest }) => <Box {...re
       instructional: messaging.standard,
       success: messaging.success,
       error: messaging.error,
+      warning: messaging.warning,
       branded: { backgroundColor: colorWhiteLilac },
     }[variant],
   })
@@ -36,24 +43,27 @@ const StyledDismissContainer = styled.div({
 
 const StyledDismissButtonWrapper = styled.div({
   position: 'absolute',
-  top: '-0.2rem',
+  top: '-0.5rem',
   right: 0,
 })
 
-const iconByVariant = {
-  success: {
-    symbol: 'checkmark',
-    color: 'primary',
-  },
-  error: {
-    symbol: 'exclamationPointCircle',
-    color: 'error',
-  },
+const isImportant = variant => variant === 'success' || variant === 'error' || variant === 'warning'
+
+const renderIcon = (variant, copy) => {
+  const feedback = getCopy(copyDictionary, copy).feedback
+  const iconCopy = copy.feedback ? { a11yText: feedback } : feedback
+
+  if (variant === 'success') {
+    return <NotificationSuccess copy={iconCopy} />
+  }
+  if (variant === 'error') {
+    return <NotificationError copy={iconCopy} />
+  }
+  if (variant === 'warning') {
+    return <NotificationWarning copy={iconCopy} />
+  }
+  return undefined
 }
-
-const isImportant = variant => variant === 'success' || variant === 'error'
-
-const renderIcon = icon => <DecorativeIcon symbol={icon.symbol} variant={icon.color} size={20} />
 
 /**
  * A banner that highlights important messages.
@@ -85,15 +95,7 @@ class Notification extends React.Component {
   }
 
   renderNotification() {
-    const {
-      variant,
-      dismissible,
-      dismissibleA11yLabel,
-      children,
-      onExit,
-      onDismiss,
-      ...rest
-    } = this.props
+    const { variant, dismissible, children, onExit, onDismiss, copy, ...rest } = this.props
 
     return (
       <StyledNotificationContainer {...safeRest(rest)} vertical={3} variant={variant}>
@@ -104,7 +106,7 @@ class Notification extends React.Component {
                 <FlexGrid.Row>
                   <FlexGrid.Col xs={dismissible ? 11 : undefined}>
                     <Box inline between={3}>
-                      {isImportant(variant) ? renderIcon(iconByVariant[variant]) : undefined}
+                      {isImportant(variant) && <Box vertical={1}>{renderIcon(variant, copy)}</Box>}
                       <StyledMessageContainer hasIcon={isImportant(variant)}>
                         <Paragraph>{children}</Paragraph>
                       </StyledMessageContainer>
@@ -114,11 +116,8 @@ class Notification extends React.Component {
                     <FlexGrid.Col>
                       <StyledDismissContainer>
                         <StyledDismissButtonWrapper>
-                          <StandaloneIcon
-                            symbol="times"
-                            size={24}
-                            a11yText={dismissibleA11yLabel}
-                            variant={variant === 'instructional' ? 'secondary' : undefined}
+                          <Close
+                            a11yText={getCopy(copyDictionary, copy).close}
                             onClick={() => {
                               this.setState(() => ({ dismissed: true }))
                               if (onDismiss) {
@@ -140,26 +139,13 @@ class Notification extends React.Component {
   }
 
   render() {
-    const { dismissible, dismissibleA11yLabel, onExit, onDismiss } = this.props
-    const dismissibleHasA11yLabel = dismissible && dismissibleA11yLabel
+    const { dismissible, onExit, onDismiss } = this.props
 
-    if ((dismissible || dismissibleA11yLabel) && !dismissibleHasA11yLabel) {
-      warn(
-        'Notification',
-        'The props `dismissible` and `dismissibleA11yLabel` must be used together.'
-      )
+    if (onExit && !dismissible) {
+      warn('Notification', 'The prop `onExit` must be used together with `dismissible`.')
     }
-    if (onExit && !dismissibleHasA11yLabel) {
-      warn(
-        'Notification',
-        'The prop `onExit` must be used together with `dismissible` and `dismissibleA11yLabel`.'
-      )
-    }
-    if (onDismiss && !dismissibleHasA11yLabel) {
-      warn(
-        'Notification',
-        'The prop `onDismiss` must be used together with `dismissible` and `dismissibleA11yLabel`.'
-      )
+    if (onDismiss && !dismissible) {
+      warn('Notification', 'The prop `onDismiss` must be used together with `dismissible`.')
     }
     if (dismissible) {
       return (
@@ -192,19 +178,27 @@ Notification.propTypes = {
   /**
    * The appearance.
    */
-  variant: PropTypes.oneOf(['instructional', 'branded', 'success', 'error']),
+  variant: PropTypes.oneOf(['instructional', 'branded', 'success', 'error', 'warning']),
+  /**
+   * Use the copy prop to either select provided English or French copy
+   * by passing `'en'` or `'fr'` respectively.
+   *
+   * To provide your own, pass a JSON object with the keys
+   * `feedback` for the `FeedbackIcon` and `close` for the `InteractiveIcon` used as the close button.
+   */
+  copy: PropTypes.oneOfType([
+    PropTypes.oneOf(['en', 'fr']),
+    PropTypes.shape({
+      feedback: PropTypes.string.isRequired,
+      close: PropTypes.string.isRequired,
+    }),
+  ]).isRequired,
   /**
    * Whether or not to allow the Notificiation to be dismissed.
    *
    * @since 1.2.0
    */
   dismissible: PropTypes.bool,
-  /**
-   * A label for assistive technology
-   *
-   * @since 1.2.0
-   */
-  dismissibleA11yLabel: PropTypes.string,
   /**
    * A callback function to be run on click of the dismissible icon.
    * Requires `dismissible={true}`
@@ -228,7 +222,6 @@ Notification.propTypes = {
 Notification.defaultProps = {
   variant: 'instructional',
   dismissible: false,
-  dismissibleA11yLabel: undefined,
   onDismiss: undefined,
   onExit: undefined,
 }
