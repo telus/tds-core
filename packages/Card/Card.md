@@ -21,26 +21,30 @@ Cards will stretch to fill their container. Wrap the card in another element to 
 
 ### Coloured variants
 
-Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while the default white Card appears floating.
+Card also supports an 'alternative' or 'branded' `variant`. These appear flat, while the default Card appears floating.
 
 ```jsx
 <Box inline between={3}>
-  <Card variant="lavender">
+  <Card variant="branded">
     <Box between={3}>
       <Heading level="h4">Holiday deal</Heading>
 
       <Paragraph size="medium">
-        Get a new smartphone for $0<br />on a 2-year plan.
+        Get a new smartphone for $0
+        <br />
+        on a 2-year plan.
       </Paragraph>
     </Box>
   </Card>
 
-  <Card variant="grey">
+  <Card variant="alternative">
     <Box between={3}>
       <Heading level="h4">Holiday deal</Heading>
 
       <Paragraph size="medium">
-        Get a new smartphone for $0<br />on a 2-year plan.
+        Get a new smartphone for $0
+        <br />
+        on a 2-year plan.
       </Paragraph>
     </Box>
   </Card>
@@ -50,7 +54,9 @@ Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while th
       <Heading level="h4">Find the right gift</Heading>
 
       <Paragraph>
-        Find something they'll love from our<br />selection of great devices.
+        Find something they'll love from our
+        <br />
+        selection of great devices.
       </Paragraph>
 
       <div>
@@ -61,4 +67,48 @@ Card also supports a 'grey' or 'lavender' `variant`. These appear flat, while th
     </Box>
   </Card>
 </Box>
+```
+
+### Cards with borders
+
+- Teams can use the `defaultWithBorder` variant to add a border to the `Card` for comparison, horizontal plan, and My TELUS account overview cards.
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={12} md={4}>
+      <Card variant="defaultWithBorder">
+        <Box between={3}>
+          <Heading level="h3">Internet 15 - Special Offer</Heading>
+          <PriceLockup
+            size="medium"
+            price="55"
+            rateText="per month"
+            bottomText="for 24 months, then $75 per month"
+            signDirection="left"
+          />
+          <HairlineDivider />
+          <Text size="medium">Good for basic browsing, and posting to social media.</Text>
+          <BenefitWithHeading>
+            <BenefitWithHeading.Item icon={Speed} heading="15 mbps">
+              download speed
+            </BenefitWithHeading.Item>
+            <BenefitWithHeading.Item icon={Speed} heading="1 mbps">
+              upload speed
+            </BenefitWithHeading.Item>
+            <BenefitWithHeading.Item icon={DataLimit} heading="Unlimited">
+              Monthly data
+            </BenefitWithHeading.Item>
+          </BenefitWithHeading>
+          <Notification variant="branded">
+            <Text bold>Offer:</Text> Order Internet online on a 2 year term and get a $150 bill
+            credit.
+          </Notification>
+          <Button>Add to cart</Button>
+          <ChevronLink href="#">Learn more</ChevronLink>
+        </Box>
+      </Card>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
 ```
