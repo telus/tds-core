@@ -17,13 +17,16 @@ describe('<Card />', () => {
     let card = doMount()
     expect(card).toMatchSnapshot()
 
-    card = doMount({ variant: 'white' })
+    card = doMount({ variant: 'default' })
     expect(card).toMatchSnapshot()
 
-    card = doMount({ variant: 'lavender' })
+    card = doMount({ variant: 'branded' })
     expect(card).toMatchSnapshot()
 
-    card = doMount({ variant: 'grey' })
+    card = doMount({ variant: 'alternative' })
+    expect(card).toMatchSnapshot()
+
+    card = doMount({ variant: 'defaultWithBorder' })
     expect(card).toMatchSnapshot()
   })
 
