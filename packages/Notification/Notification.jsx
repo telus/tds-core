@@ -33,8 +33,11 @@ const StyledNotificationContainer = styled(({ variant, ...rest }) => <Box {...re
   })
 )
 
+const StyledIconContainer = styled(({ ...rest }) => <Box {...rest} />)({ lineHeight: 0 })
+
 const StyledMessageContainer = styled.div(({ hasIcon }) => ({
   width: hasIcon ? 'calc(100% - 2.5rem)' : '100%',
+  marginTop: '0.1rem',
 }))
 
 const StyledDismissContainer = styled.div({
@@ -51,7 +54,7 @@ const isImportant = variant => variant === 'success' || variant === 'error' || v
 
 const renderIcon = (variant, copy) => {
   const feedback = getCopy(copyDictionary, copy).feedback
-  const iconCopy = copy.feedback ? { a11yText: feedback } : feedback
+  const iconCopy = typeof copy === 'object' && copy.feedback ? { a11yText: feedback } : feedback
 
   if (variant === 'success') {
     return <NotificationSuccess copy={iconCopy} />
@@ -106,7 +109,11 @@ class Notification extends React.Component {
                 <FlexGrid.Row>
                   <FlexGrid.Col xs={dismissible ? 11 : undefined}>
                     <Box inline between={3}>
-                      {isImportant(variant) && <Box vertical={1}>{renderIcon(variant, copy)}</Box>}
+                      {isImportant(variant) && (
+                        <StyledIconContainer vertical={1}>
+                          {renderIcon(variant, copy)}
+                        </StyledIconContainer>
+                      )}
                       <StyledMessageContainer hasIcon={isImportant(variant)}>
                         <Paragraph>{children}</Paragraph>
                       </StyledMessageContainer>
