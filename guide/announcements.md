@@ -2,6 +2,20 @@
 
 Welcome to the TDS Announcement Board! Check back here regularly for the latest updates on TDS!
 
+- [August 2019](#august-2019)
+- [July 2019](#july-2019)
+- [June 2019](#june-2019)
+- [May 2019](#may-2019)
+- [April 2019](#april-2019)
+- [March 2019](#march-2019)
+- [February 2019](#february-2019)
+- [January 2019](#january-2019)
+- [December 2018](#december-2018)
+- [March 2019](#march-2019-1)
+- [February 2019](#february-2019-1)
+- [January 2019](#january-2019-1)
+- [December 2018](#december-2018-1)
+
 <hr/>
 
 ## August 2019
@@ -21,22 +35,6 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 - They are accessible and are read out by assistive technology
 - These icons are not meant to be resized or utilized in other colours
 - https://tds.telus.com/components/index.html#feedbackicon
-
-💎**Decorative icons**🚔
-
-- Newly added icons
-  - General
-    - TowTruck
-    - Car
-    - BatteryCar
-    - Diamond
-  - Internet
-    - SpeedReduced
-- Removed Phone; use Mobility icon instead
-- Removed Bell and Download; being built to be an Interactive Icon
-- Removed LocationAdd, LocationRemove, LocationVerified; this is now a Feedback Icon
-- https://tds.telus.com/components/index.html#decorativeicon
-- If none of the icons from the current set suits your design needs, submit an Icon request on our TDS-Core github https://github.com/telus/tds-core/issues/new?template=icon_template.md
 
 ### DSM Updates
 
@@ -98,7 +96,23 @@ Shadow
 - Colours (updated Accessible Green, added Raven Grey and Rajah Yellow colour set)
 - Shadow (updated shadow specifications on affected layer styles)
 
-### TDS Core Features 🎁
+### New TDS Core Features 🎁
+
+**DecorativeIcon@2.2.0**
+
+- Newly-added icons
+  - General
+    - TowTruck
+    - Car
+    - BatteryCar
+    - Diamond
+  - Internet
+    - SpeedReduced
+- Removed Phone; use Mobility icon instead
+- Removed Bell and Download; being built to be an Interactive Icon
+- Removed LocationAdd, LocationRemove, LocationVerified; this is now a Feedback Icon
+- https://tds.telus.com/components/index.html#decorativeicon
+- If none of the icons from the current set suits your design needs, submit an Icon request on our TDS-Core github https://github.com/telus/tds-core/issues/new?template=icon_template.md
 
 **Spinner@3.1.0**
 
@@ -125,11 +139,10 @@ Shadow
 
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.0.18)
 
-**TermsAndConditions@1.0.17 + redux-contentful 6.0.5**
+**TermsAndConditions@1.0.17**
 
 - Listed content no longer throws an error when mixing nodes and strings.
 - [Release notes T&C](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.0.17)
-- [Release notes redux-contenful](https://github.com/telus/redux-contentful/releases/tag/v6.0.5)
 
 **FlexGrid@3.0.1**
 
