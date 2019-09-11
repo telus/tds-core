@@ -4,18 +4,228 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
+## August 2019
+
+### New TDS Core Component ✨
+
+👉**Interactive icons** 👈
+
+- InteractiveIcon is an icon you interact with to trigger an action
+- The physical container is bound to 40px W by 40px H (interactive area)
+- The visual icon is bound to 24px W by 24px H, centered within the container
+- https://tds.telus.com/components/index.html#interactiveicon
+
+💡**Feedback icons**❗️
+
+- Feedback icons are icons that provide feedback based on a user’s action
+- They are accessible and are read out by assistive technology
+- These icons are not meant to be resized or utilized in other colours
+- https://tds.telus.com/components/index.html#feedbackicon
+
+💎**Decorative icons**🚔
+
+- Newly added icons
+  - General
+    - TowTruck
+    - Car
+    - BatteryCar
+    - Diamond
+  - Internet
+    - SpeedReduced
+- Removed Phone; use Mobility icon instead
+- Removed Bell and Download; being built to be an Interactive Icon
+- Removed LocationAdd, LocationRemove, LocationVerified; this is now a Feedback Icon
+- https://tds.telus.com/components/index.html#decorativeicon
+- If none of the icons from the current set suits your design needs, submit an Icon request on our TDS-Core github https://github.com/telus/tds-core/issues/new?template=icon_template.md
+
+### DSM Updates
+
+**v2.3.1**
+
+StepTracker
+
+- Fixed the ability to select the state of the step
+- Fixed the title from nudging between states (regular and bold text)
+- Enabled the ability to select number of steps instead of manually adjusting
+- Small and Large components are responsive width-wise
+- Small component adjusts height automatically according to the label
+- Large component must detach from symbol to adjust height automatically according to the label
+- https://tds.telus.com/components/index.html#steptracker
+
+Terms and Conditions
+
+- Fixed missing icons
+- https://tds.telus.com/components/index.html#terms-and-conditions
+
+**v2.3.0**
+
+- Icons are going to be built into their own component folder; Decorative Icons will be moved to the component folder along with Interactive and Feedback Icons in the near future
+
+**v2.2.3**
+Input and Select components
+
+- Recommended 16px (Box 3) spacing between form fields
+- Decreased the height from 52px to 48px to optimize vertical spacing
+- See “Forms” category for pre-built components
+- See “Forms (build your own)” category for individual form field symbols
+- https://tds.telus.com/components/index.html#forms
+
+Colours
+
+- Updated Accessible Green to allow text to be more accessible on other backgrounds
+- Addition of Raven Grey to provide a lighter yet accessible grey alternative
+- Addition of Rajah Yellow colour set; currently limited to a specific icon use and Notification component
+- https://tds.telus.com/components/index.html#colours
+
+UnorderedList and OrderedList
+
+- Updated UnorderedList to left align icons to the edge for visual harmony with content
+- Updated UnorderedList and OrderedList to correct missing linked symbols issue
+- https://tds.telus.com/components/index.html#lists
+
+Shadow
+
+- Updated the shadow specifications to use pure black instead of grey which removed the soft, white blur when placed on darker images or backgrounds
+- Updated affected layer styles which automatically updates affected components
+- Updated Footnote to include the shadow and border, to align with code
+
+📝 Other notes
+
+- This is a reminder that the Helper element is deprecated, please use Hint instead
+
+**v1.0.3**
+
+- Colours (updated Accessible Green, added Raven Grey and Rajah Yellow colour set)
+- Shadow (updated shadow specifications on affected layer styles)
+
+### TDS Core Features 🎁
+
+**Spinner@3.1.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-spinner%403.1.0)
+
+**Animation@2.0.0**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fshared-animation%402.0.0)
+
+**ButtonGroup@2.1.0**
+
+- allow ButtonGroup to be uncontrolled; allow unselected by default
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fshared-animation%402.0.0)
+- [Docs](Docs: https://tds.telus.com/components/index.html#!/ButtonGroup)
+
+**Colours@2.1.0**
+
+- added Rajah and Raven Grey colours:
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-colours%402.1.0)
+
+### TDS Core Fixes
+
+**TermsAndConditions@1.0.18**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.0.18)
+
+**TermsAndConditions@1.0.17 + redux-contentful 6.0.5**
+
+- Listed content no longer throws an error when mixing nodes and strings.
+- [Release notes T&C](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.0.17)
+- [Release notes redux-contenful](https://github.com/telus/redux-contentful/releases/tag/v6.0.5)
+
+**FlexGrid@3.0.1**
+
+- Convert pixel to rem units in FlexGrid container.
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-flex-grid%403.0.1)
+
+**Heading@2.2.5**
+
+- Add letterSpacing: inherit to Heading children.
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-heading%402.2.5)
+
+**DecorativeIcon@2.1.3**
+
+- Cleaned up and removed ids from SVG Decorative Icons
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.1.3)
+
+**Tooltip@4.1.0**
+
+- Generate unique id using @tds/util-helpers uniqueId
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-tooltip%404.1.0)
+
+**Spinner@3.0.3**
+
+- `inline` prop now responsively wraps the Button component
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-spinner%403.0.3)
+
+**Input@3.0.16**
+
+- position tooltip next to label
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%403.0.16)
+
+**Select@3.1.6**
+
+- position tooltip next to label
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-select%403.1.6)
+
+**TextArea@3.0.15**
+
+- position tooltip next to label
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-text-area%403.0.15)
+
+**TermsAndConditions@1.0.9**
+
+- renderContent handles multiple anchors
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.0.9)
+
+**Input@3.0.15**
+
+- add event propagation to onKeyDown to Input
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%403.0.15)
+
+**Input@3.0.12**
+
+- Input’s height has been changed to 48px
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%403.0.12)
+
+**Select@3.1.2**
+
+- Select’s height has been changed to 48px
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-select%403.1.2)
+
+**Colours@2.1.0**
+
+- updated AccessibleGreen to use a slightly darker tone, providing better colour contrast to text on light grey backgrounds
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-colours%402.1.0)
+
+**Card@2.0.6**
+
+- change box shadow to slightly opaque black
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-colours%402.1.0)
+
+### TDS Community Features
+
+**Testimonial@2.0.1**
+
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-card%402.0.6)
+
+### TDS Community Fixes
+
+**SideNavigation@2.0.2**
+
+- Fix button font override on site builder. The component now uses telus font from shared typography
+- [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-side-navigation%402.0.2)
+
 ## July 2019
 
 ### New TDS Core Component ✨
 
 **TermsAndConditions v1**
 
-TermsAndConditions component  
+TermsAndConditions component
 Replace all those ExpandCollapses with a component purpose-built for the distribution of legal copy! A more subtle look
 and feel combined with options for numbered and non-numbered legal terms will make your page look nicer while also making
 the developer experience smoother.
 
-Footnote and FootnoteLink  
+Footnote and FootnoteLink
 Show legal copy to your users quickly and in an accessible manner! Footnote combined with FootnoteLink will open a modal on the bottom of the screen that shows the relevant legal copy to the link selected.
 
 [Terms and Conditions docs](https://tds.telus.com/components/index.html#terms-and-conditions)
@@ -45,16 +255,19 @@ Additional icon sizes are available (20px, 32px) in DecorativeIcon
 **Shared-hocs 1.1.0**
 
 An improvement to the focus trap HOC, which will affect the accessibility of modal components, including Terms and Conditions:
+
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fshared-hocs%401.1.0)
 
 **Select 3.1.0**
 
 Select component now has a new prop: hintPosition
+
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-select%403.1.0)
 
 **Notification 1.3.0**
 
 Notification component has new props to add onDismiss and onExit callbacks
+
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%401.3.0)
 
 ### Fixes
@@ -86,6 +299,7 @@ Added `type="button"` to the StandaloneIcon in Tooltip
 **StandaloneIcon 1.1.2**
 
 Standalone icon accessibility fix
+
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-standalone-icon%401.1.2)
 
 ### Documentation 🎁
