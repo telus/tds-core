@@ -203,7 +203,8 @@ Col.propTypes = {
    *
    * Align content horizontally within the column.
    *
-   * One of: `left,right,center` as a [**responsive prop**](#responsiveProps)
+   *
+   * Accepts a `PropType.string` following the [responsive prop](#/Layout?id=responsive) structure.
    */
   horizontalAlign: responsiveProps(PropTypes.string),
 }
