@@ -8,7 +8,7 @@
   - For `small` lists: use a 16px (Box spacing `3`) bottom margin
   - For `medium` lists: use a 16px (Box spacing `3`) bottom margin
   - For `large` lists: use a 32px (Box spacing `4`) bottom margin
-- `UnorderedList` with mixed icons should only be used for password criteria. Typically, in an [InputFeedback](#inputfeedback) component
+- `UnorderedList` with mixed icons should only be used for password criteria. Typically, in an [InputFeedback](#/Forms?id=inputfeedback) component
 
 ### Sizing lists
 
