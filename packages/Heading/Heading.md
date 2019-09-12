@@ -20,8 +20,8 @@
 - Try **not** to skip levels where possible: h1, then h3
 - Use one h1 per page
 - The semantic HTML tag and visual appearance of the Heading component can be controlled using the `level` and `tag` props together
-- For Hero overlays, Headlines, or Promo blocks, use [`DisplayHeading`](/#/Typography?id=displayheading)
-- For subtext in the Hero overlays, or Headlines, use [`Text`](/#/Typography?id=text)
+- For Hero overlays, Headlines, or Promo blocks, use [`DisplayHeading`](#/Typography?id=displayheading)
+- For subtext in the Hero overlays, or Headlines, use [`Text`](#/Typography?id=text)
 
 #### Separating HTML tag from visual style
 
