@@ -6,7 +6,7 @@ columns will automatically span equal widths in their row. If the prop is set to
 The column span props correspond to their min-width breakpoints. For example, when `md` is defined as `6`, your column
 width will be `6` from the `md` breakpoint and greater, unless you specify a value for `lg` or `xl`.
 
-Refer to the table in the [**Responsive**](#responsive) section for the breakpoints.
+Refer to the table in the [**Responsive**](#/Layout?id=responsive) section for the breakpoints.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <FlexGrid>
