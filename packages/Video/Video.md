@@ -4,7 +4,7 @@
 
 - Be sure to supply videos that support [our target browsers](https://tds.telus.com/faq.html#what-browsers-does-tds-support)
   - Code: Make use of the `isFallback` key in the `sources` prop to define a fallback video when the primary video supplied does not fully support our target browsers
-- Use Video with [FlexGrid](#flexgrid) to control the dimensions of Video within page content
+- Use Video with [FlexGrid](#/Layout?id=flexgrid) to control the dimensions of Video within page content
 - Recommended video dimensions are at least 288w x 162h
 - If the video starts with a Brand Moment then the "poster" needs to be from the Brand Moment (ex. white background with text and flower or critter) and then go to live-action
 - When the video background is white, the `videoBorder` prop must be set to `true`, creating a 1px gainsboro border
