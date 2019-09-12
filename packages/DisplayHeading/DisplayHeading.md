@@ -16,7 +16,7 @@ The `<DisplayHeading.Sup>` component is deprecated. Use a standard HTML `<sup>` 
 
 ## DisplayHeading.Sup
 
-**Deprecated, please use a `<sup>` element documented in [DisplayHeading](#displayheading) instead.**
+**Deprecated, please use a `<sup>` element documented above instead.**
 
 ```jsx
 <DisplayHeading>
