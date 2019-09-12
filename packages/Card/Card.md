@@ -71,12 +71,12 @@ Card also supports an 'alternative' or 'branded' `variant`. These appear flat, w
 
 ### Cards with borders
 
-- Teams can use the `defaultWithBorder` variant to add a border to the `Card` for comparison, horizontal plan, and My TELUS account overview cards.
+Teams can use the `defaultWithBorder` variant to add a border to the `Card` for comparison, horizontal plan, and My TELUS account overview cards.
 
 ```jsx
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col xs={12} md={4}>
+    <FlexGrid.Col xs={12} md={5}>
       <Card variant="defaultWithBorder">
         <Box between={3}>
           <Heading level="h3">Internet 15 - Special Offer</Heading>
