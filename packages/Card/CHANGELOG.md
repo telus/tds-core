@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-card@2.0.8...@tds/core-card@2.1.0) (2019-09-12)
+
+
+### Features
+
+* **core-card:** add new variants, deprecate current variants ([afc1eab](https://github.com/telusdigital/tds/commit/afc1eab))
+
+
+
+
+
 ## [2.0.8](https://github.com/telusdigital/tds/compare/@tds/core-card@2.0.7...@tds/core-card@2.0.8) (2019-09-06)
 
 **Note:** Version bump only for package @tds/core-card
