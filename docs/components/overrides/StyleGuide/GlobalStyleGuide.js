@@ -36,14 +36,14 @@ const GlobalStyleGuide = createGlobalStyle({
   },
 
   '.docs_flex-grid-coloring': {
-    '*[class*=\'TDS_flexboxgrid2__row___\']': {
+    '*[class*=\'row\']': {
       border: `1px dashed ${colorShark}`
     },
 
-    '*[class*=\'TDS_flexboxgrid2__col-\']': {
+    '*[class*=\'col\']': {
       backgroundColor: colorPanache,
       border: `1px solid ${colorShark}`
-    }
+    },
   },
 
   // Full width container with limited with parent: https://css-tricks.com/full-width-containers-limited-width-parents/
