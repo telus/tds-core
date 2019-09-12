@@ -1,6 +1,6 @@
 ### Minimal usage
 
-Provide a function as the `onClick` prop to perform an action when clicked. **Avoid using a button if navigation is the primary action, as a [Link](#link) is more appropriate.**
+Provide a function as the `onClick` prop to perform an action when clicked. **Avoid using a button if navigation is the primary action, as a [Link](#/Links?id=link) is more appropriate.**
 
 ### Usage criteria
 
