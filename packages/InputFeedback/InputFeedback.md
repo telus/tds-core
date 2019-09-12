@@ -1,6 +1,6 @@
 ### Standalone usage
 
-While its primary use is to facilitate feedback states for other form components such as [Input](#input), you may use it standalone.
+While its primary use is to facilitate feedback states for other form components such as [Input](#/Forms?id=input), you may use it standalone.
 
 ```jsx
 <InputFeedback>
@@ -29,7 +29,7 @@ const updateValue = event => {
 const validate = event => {
   const value = event.target.value
 
-  if(value.length === 0) {
+  if (value.length === 0) {
     setState({ status: null })
   } else if (value.length < 16) {
     setState({ status: 'error' })
@@ -67,13 +67,16 @@ const passwordRequirements = feedback => {
   )
 }
 
-<Input
+;<Input
   label="Password"
   type="password"
   id="password-2"
   value={state.value}
   feedback={state.status}
-  onChange={(e) => { updateValue(e); validate(e); }}
+  onChange={e => {
+    updateValue(e)
+    validate(e)
+  }}
   onBlur={validate}
   helper={passwordRequirements}
 />
