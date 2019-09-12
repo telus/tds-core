@@ -157,18 +157,29 @@ module.exports = {
     return `import ${name} from '@tds/core-${kebabizeName}'`
   },
 
-  usageMode: 'collapse',
+  usageMode: 'expand',
   exampleMode: 'collapse',
+  pagePerSection: true,
 
   sections: [
     {
       name: 'TELUS Design System',
       content: path.resolve('docs/intro/welcome.md'),
     },
+
     {
-      name: 'Components',
+      name: 'CssReset',
+      content: path.resolve('packages/css-reset/CssReset.md'),
+    },
+    {
+      name: 'Colours',
+      content: path.resolve('packages/colours/Colours.md'),
+    },
+    {
+      name: 'Layout',
       sections: [
         {
+<<<<<<< HEAD
           name: 'CssReset',
           content: path.resolve('packages/css-reset/CssReset.md'),
         },
@@ -268,74 +279,150 @@ module.exports = {
           content: path.resolve('docs/Forms.md'),
           components() {
             return [
-              path.resolve('packages/Button/Button.jsx'),
-              path.resolve('packages/Input/Input.jsx'),
-              path.resolve('packages/Checkbox/Checkbox.jsx'),
-              path.resolve('packages/Radio/Radio.jsx'),
-              path.resolve('packages/ButtonGroup/ButtonGroup.jsx'),
-              path.resolve('packages/ButtonGroup/ButtonGroupItem/ButtonGroupItem.jsx'),
-              path.resolve('packages/Select/Select.jsx'),
-              path.resolve('packages/TextArea/TextArea.jsx'),
-              path.resolve('packages/InputFeedback/InputFeedback.jsx'),
-              path.resolve('packages/Tooltip/Tooltip.jsx'),
+              path.resolve('packages/FlexGrid/FlexGrid.jsx'),
+              path.resolve('packages/FlexGrid/Row/Row.jsx'),
+              path.resolve('packages/FlexGrid/Col/Col.jsx'),
             ]
           },
         },
         {
-          name: 'Lists',
-          content: path.resolve('docs/Lists.md'),
+          name: 'Dividers',
           components() {
             return [
-              path.resolve('packages/UnorderedList/UnorderedList.jsx'),
-              path.resolve('packages/OrderedList/OrderedList.jsx'),
-              path.resolve('packages/Benefit/BenefitWithHeading/BenefitWithHeading.jsx'),
-              path.resolve('packages/Benefit/BenefitNoHeading/BenefitNoHeading.jsx'),
-            ]
-          },
-        },
-        {
-          name: 'Expand collapse',
-          components() {
-            return [
-              path.resolve('packages/ExpandCollapse/ExpandCollapse.jsx'),
-              path.resolve('packages/ExpandCollapse/Accordion/Accordion.jsx'),
-              path.resolve('packages/ExpandCollapse/Panel/Panel.jsx'),
-            ]
-          },
-        },
-        {
-          name: 'Content',
-          components() {
-            return [
-              path.resolve('packages/Card/Card.jsx'),
-              path.resolve('packages/Image/Image.jsx'),
-              path.resolve('packages/Video/Video.jsx'),
-              path.resolve('packages/WebVideo/WebVideo.jsx'),
-              path.resolve('packages/A11yContent/A11yContent.jsx'),
-            ]
-          },
-        },
-        {
-          name: 'Feedback Indicators',
-          components() {
-            return [
-              path.resolve('packages/Notification/Notification.jsx'),
-              path.resolve('packages/Spinner/Spinner.jsx'),
-              path.resolve('packages/StepTracker/StepTracker.jsx'),
-            ]
-          },
-        },
-        {
-          name: 'Terms and Conditions',
-          components() {
-            return [
-              path.resolve('packages/TermsAndConditions/TermsAndConditions.jsx'),
-              path.resolve('packages/TermsAndConditions/Footnote/Footnote.jsx'),
-              path.resolve('packages/TermsAndConditions/FootnoteLink/FootnoteLink.jsx'),
+              path.resolve('packages/WaveDivider/WaveDivider.jsx'),
+              path.resolve('packages/DimpleDivider/DimpleDivider.jsx'),
+              path.resolve('packages/HairlineDivider/HairlineDivider.jsx'),
             ]
           },
         },
       ],
+      components() {
+        return [
+          path.resolve('packages/Responsive/Responsive.jsx'),
+          path.resolve('packages/Box/Box.jsx'),
+        ]
+      },
+    },
+    {
+      name: 'Typography',
+      content: path.resolve('docs/Typography.md'),
+      components() {
+        return [
+          path.resolve('packages/DisplayHeading/DisplayHeading.jsx'),
+          path.resolve('packages/Heading/Heading.jsx'),
+          path.resolve('packages/Paragraph/Paragraph.jsx'),
+          path.resolve('packages/PriceLockup/PriceLockup.jsx'),
+          path.resolve('packages/Text/Text.jsx'),
+          path.resolve('packages/Strong/Strong.jsx'),
+          path.resolve('packages/Small/Small.jsx'),
+        ]
+      },
+    },
+    {
+      name: 'Links',
+      sections: [
+        {
+          name: 'Breadcrumb',
+          components() {
+            return [
+              path.resolve('packages/Breadcrumbs/Breadcrumbs.jsx'),
+              path.resolve('packages/Breadcrumbs/Item/Item.jsx'),
+            ]
+          },
+        },
+      ],
+      components() {
+        return [
+          path.resolve('packages/Link/Link.jsx'),
+          path.resolve('packages/ChevronLink/ChevronLink.jsx'),
+          path.resolve('packages/ButtonLink/ButtonLink.jsx'),
+        ]
+      },
+    },
+    {
+      name: 'Icons',
+      content: path.resolve('docs/icons.md'),
+      components() {
+        return [
+          path.resolve('packages/DecorativeIcon/DecorativeIcon.jsx'),
+          path.resolve('packages/DecorativeIcon/SVGIcon.jsx'),
+          path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
+          path.resolve('packages/FeedbackIcon/FeedbackIcon.jsx'),
+          path.resolve('packages/InteractiveIcon/InteractiveIcon.jsx'),
+        ]
+      },
+    },
+    {
+      name: 'Forms',
+      content: path.resolve('docs/Forms.md'),
+      components() {
+        return [
+          path.resolve('packages/Button/Button.jsx'),
+          path.resolve('packages/Input/Input.jsx'),
+          path.resolve('packages/Checkbox/Checkbox.jsx'),
+          path.resolve('packages/Radio/Radio.jsx'),
+          path.resolve('packages/ButtonGroup/ButtonGroup.jsx'),
+          path.resolve('packages/ButtonGroup/ButtonGroupItem/ButtonGroupItem.jsx'),
+          path.resolve('packages/Select/Select.jsx'),
+          path.resolve('packages/TextArea/TextArea.jsx'),
+          path.resolve('packages/InputFeedback/InputFeedback.jsx'),
+          path.resolve('packages/Tooltip/Tooltip.jsx'),
+        ]
+      },
+    },
+    {
+      name: 'Lists',
+      content: path.resolve('docs/Lists.md'),
+      components() {
+        return [
+          path.resolve('packages/UnorderedList/UnorderedList.jsx'),
+          path.resolve('packages/OrderedList/OrderedList.jsx'),
+          path.resolve('packages/Benefit/BenefitWithHeading/BenefitWithHeading.jsx'),
+          path.resolve('packages/Benefit/BenefitNoHeading/BenefitNoHeading.jsx'),
+        ]
+      },
+    },
+    {
+      name: 'Expand collapse',
+      components() {
+        return [
+          path.resolve('packages/ExpandCollapse/ExpandCollapse.jsx'),
+          path.resolve('packages/ExpandCollapse/Accordion/Accordion.jsx'),
+          path.resolve('packages/ExpandCollapse/Panel/Panel.jsx'),
+        ]
+      },
+    },
+    {
+      name: 'Content',
+      components() {
+        return [
+          path.resolve('packages/Card/Card.jsx'),
+          path.resolve('packages/Image/Image.jsx'),
+          path.resolve('packages/Video/Video.jsx'),
+          path.resolve('packages/WebVideo/WebVideo.jsx'),
+          path.resolve('packages/A11yContent/A11yContent.jsx'),
+        ]
+      },
+    },
+    {
+      name: 'Feedback Indicators',
+      components() {
+        return [
+          path.resolve('packages/Notification/Notification.jsx'),
+          path.resolve('packages/Spinner/Spinner.jsx'),
+          path.resolve('packages/StepTracker/StepTracker.jsx'),
+        ]
+      },
+    },
+    {
+      name: 'Terms and Conditions',
+      components() {
+        return [
+          path.resolve('packages/TermsAndConditions/TermsAndConditions.jsx'),
+          path.resolve('packages/TermsAndConditions/Footnote/Footnote.jsx'),
+          path.resolve('packages/TermsAndConditions/FootnoteLink/FootnoteLink.jsx'),
+        ]
+      },
     },
     {
       name: 'Utilities',
@@ -355,13 +442,13 @@ module.exports = {
     styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []
   ),
   styleguideComponents: {
-    Editor: path.resolve('docs/components/overrides/Editor/Editor'),
+    // Editor: path.resolve('docs/components/overrides/Editor/Editor'),
     Logo: path.resolve('docs/components/custom/Logo/Logo'),
     'Markdown/List': path.resolve('docs/components/custom/MarkdownList/MarkdownList'),
     'Markdown/MarkdownHeading': path.resolve(
       'docs/components/custom/MarkdownHeading/MarkdownHeading'
     ),
-    'Markdown/Markdown': path.resolve('docs/components/overrides/Markdown/Markdown'),
+    // 'Markdown/Markdown': path.resolve('docs/components/overrides/Markdown/Markdown'),
     PathlineRenderer: path.resolve('docs/components/overrides/Pathline/PathlineRenderer'),
     SectionHeadingRenderer: path.resolve(
       'docs/components/custom/SectionHeading/SectionHeadingRenderer'
@@ -385,6 +472,18 @@ module.exports = {
     sidebarWidth: 240,
   },
   styles: {
+    Pre: {
+      pre: {
+        border: '1px solid #e8e8e8',
+        backgroundColor: 'reds',
+      },
+    },
+    Editor: {
+      root: {
+        letterSpacing: 'unset',
+        fontSize: '1rem',
+      },
+    },
     // Fixing mobile overflow of code examples
     Markdown: {
       pre: {
@@ -435,6 +534,14 @@ module.exports = {
     return updatedDocs
   },
   webpackConfig: {
+    // performance: { // Uncomment to debug performance in terminal
+    //   hints: 'warning',
+    // },
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+      },
+    },
     devServer: {
       disableHostCheck: true,
       clientLogLevel: 'debug',
@@ -445,17 +552,11 @@ module.exports = {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           loader: 'babel-loader',
-          options: {
-            babelrc: false, // TODO: remove once .babelrc is removed. See jest config.
-          },
         },
         {
           test: /\.js$/,
           exclude: /node_modules/,
           loader: 'babel-loader',
-          options: {
-            babelrc: false,
-          },
         },
         {
           test: /flexboxgrid/,
@@ -489,5 +590,53 @@ module.exports = {
         },
       ],
     },
+  },
+  context: {
+    A11yContent: path.resolve('packages/A11yContent'),
+    Animation: path.resolve('packages/Animation'),
+    Benefit: path.resolve('packages/Benefit'),
+    BenefitNoHeading: path.resolve('packages/Benefit/BenefitNoHeading/BenefitNoHeading.jsx'),
+    BenefitWithHeading: path.resolve('packages/Benefit/BenefitWithHeading/BenefitWithHeading.jsx'),
+    Box: path.resolve('packages/Box/'),
+    Breadcrumbs: path.resolve('packages/Breadcrumbs'),
+    Button: path.resolve('packages/Button'),
+    ButtonGroup: path.resolve('packages/ButtonGroup'),
+    ButtonLink: path.resolve('packages/ButtonLink'),
+    Card: path.resolve('packages/Card'),
+    Checkbox: path.resolve('packages/Checkbox'),
+    ChevronLink: path.resolve('packages/ChevronLink'),
+    DecorativeIcon: path.resolve('packages/DecorativeIcon'),
+    DimpleDivider: path.resolve('packages/DimpleDivider'),
+    DisplayHeading: path.resolve('packages/DisplayHeading'),
+    ExpandCollapse: path.resolve('packages/ExpandCollapse'),
+    FlexGrid: path.resolve('packages/FlexGrid'),
+    Footnote: path.resolve('packages/TermsAndConditions/Footnote/Footnote.jsx'),
+    FootnoteLink: path.resolve('packages/TermsAndConditions/FootnoteLink/FootnoteLink.jsx'),
+    HairlineDivider: path.resolve('packages/HairlineDivider'),
+    Heading: path.resolve('packages/Heading'),
+    Image: path.resolve('packages/Image'),
+    Input: path.resolve('packages/Input'),
+    InputFeedback: path.resolve('packages/InputFeedback'),
+    Link: path.resolve('packages/Link'),
+    Notification: path.resolve('packages/Notification'),
+    OrderedList: path.resolve('packages/OrderedList'),
+    Paragraph: path.resolve('packages/Paragraph'),
+    PriceLockup: path.resolve('packages/PriceLockup'),
+    Radio: path.resolve('packages/Radio'),
+    Responsive: path.resolve('packages/Responsive'),
+    Select: path.resolve('packages/Select'),
+    Small: path.resolve('packages/Small'),
+    Spinner: path.resolve('packages/Spinner'),
+    StandaloneIcon: path.resolve('packages/StandaloneIcon'),
+    StepTracker: path.resolve('packages/StepTracker'),
+    Strong: path.resolve('packages/Strong'),
+    TermsAndConditions: path.resolve('packages/TermsAndConditions'),
+    Text: path.resolve('packages/Text'),
+    TextArea: path.resolve('packages/TextArea'),
+    Tooltip: path.resolve('packages/Tooltip'),
+    UnorderedList: path.resolve('packages/UnorderedList'),
+    Video: path.resolve('packages/Video'),
+    WaveDivider: path.resolve('packages/WaveDivider'),
+    WebVideo: path.resolve('packages/WebVideo'),
   },
 }

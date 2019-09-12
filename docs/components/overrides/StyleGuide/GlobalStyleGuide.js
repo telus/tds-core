@@ -36,11 +36,11 @@ const GlobalStyleGuide = createGlobalStyle({
   },
 
   '.docs_flex-grid-coloring': {
-    '*[class*=\'TDS_flexboxgrid2__row___\']': {
-      border: `1px dashed ${colorGreyShark}`
+    '*[class*=\'row\']': {
+      border: `1px dashed ${colorShark}`
     },
 
-    '*[class*=\'TDS_flexboxgrid2__col-\']': {
+    '*[class*=\'col\']': {
       backgroundColor: colorPanache,
       border: `1px solid ${colorGreyShark}`
     }
