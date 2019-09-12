@@ -4,4 +4,4 @@ a time.
 Note that the `Accordion`'s `open` prop accepts only a single string, while the `ExpandCollapse`'s `open` prop accepts an
 array of strings.
 
-See [`ExpandCollapse`](#expandcollapse) above for examples.
+See [`ExpandCollapse`](#/Expand%20collapse?id=expandcollapse) above for examples.

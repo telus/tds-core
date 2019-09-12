@@ -36,4 +36,4 @@ Example:
 </ExpandCollapse>
 ```
 
-See [ExpandCollapse](#expandcollapse) above for usage of `Panel`.
+See [ExpandCollapse](#/Expand%20collapse?id=expandcollapse) above for usage of `Panel`.
