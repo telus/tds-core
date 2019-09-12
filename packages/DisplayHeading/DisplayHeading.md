@@ -14,7 +14,7 @@ Use as an overlay on Hero, Promo or Headline blocks.
 
 ## DisplayHeading.Sup
 
-**Deprecated, please use a `<sup>` element documented in [DisplayHeading](#displayheading) instead.**
+**Deprecated, please use a `<sup>` element documented above instead.**
 
 ```jsx
 <DisplayHeading>
