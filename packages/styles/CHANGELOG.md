@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.4.3...@tds/shared-styles@1.5.0) (2019-09-12)
+
+
+### Features
+
+* **shared-styles:** add warning messaging style ([7607f88](https://github.com/telusdigital/tds/commit/7607f88))
+
+
+
+
+
 ## [1.4.3](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.4.2...@tds/shared-styles@1.4.3) (2019-08-22)
 
 **Note:** Version bump only for package @tds/shared-styles

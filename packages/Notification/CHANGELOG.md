@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-notification@2.0.13...@tds/core-notification@3.0.0) (2019-09-12)
+
+
+### Features
+
+* **core-notification:** add warning variant, new icons & copy prop ([4032ef4](https://github.com/telusdigital/tds/commit/4032ef4))
+
+
+### BREAKING CHANGES
+
+* **core-notification:** copy prop now required for new icon accessible text
+
+
+
+
+
 ## [2.0.13](https://github.com/telusdigital/tds/compare/@tds/core-notification@2.0.12...@tds/core-notification@2.0.13) (2019-09-06)
 
 **Note:** Version bump only for package @tds/core-notification
