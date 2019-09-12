@@ -13,3 +13,13 @@ The `<DisplayHeading.Sup>` component is deprecated. Use a standard HTML `<sup>` 
   TELUS Optik TV<sup>®</sup>
 </DisplayHeading>
 ```
+
+## DisplayHeading.Sup
+
+**Deprecated, please use a `<sup>` element documented in [DisplayHeading](#displayheading) instead.**
+
+```jsx
+<DisplayHeading>
+  TELUS Optik TV<DisplayHeading.Sup>®</DisplayHeading.Sup>
+</DisplayHeading>
+```
