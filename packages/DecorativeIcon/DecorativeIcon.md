@@ -1,4 +1,4 @@
-**Deprecated, please use Icons from [SVGIcon](#svgicon) instead.**
+**Deprecated, please use Icons from [SVGIcon](#/Icons?id=svgicon) instead.**
 
 Decorative icons are icons used for visual aesthetics only and may never be used as Feedback or Interactive icons
 
