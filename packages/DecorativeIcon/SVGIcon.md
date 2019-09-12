@@ -1,4 +1,4 @@
-`### Naming Convention
+### Naming Convention
 
 The convention for icon names is to capitalize the beginning of each word or abbreviation.
 For example the icon for Remote control is `RemoteControl`, the icon for USB cable is `UsbCable` and the icon for TV is `Tv`
