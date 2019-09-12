@@ -11,7 +11,7 @@ content 2-dimensionally.
 - `FlexGrid` helps with building responsive interfaces and provide first-class support to customers using any screen size. Use the `FlexGrid`’s responsive props to help achieve responsive content
 - By default, `FlexGrid` implements `limitWidth` in order to keep all content aligned on the left and right sides of a page. It uses rem units to grow in width and respond to browser font size configurations
 
-Below is a quick example of how the components fit together. See the [FlexGrid.Row](#row) and [FlexGrid.Col](#col)
+Below is a quick example of how the components fit together. See the [FlexGrid.Row](#/Layout?id=row) and [FlexGrid.Col](#/Layout?id=col)
 components below for a more in-depth look.
 
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
