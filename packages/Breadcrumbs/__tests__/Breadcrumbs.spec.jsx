@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, shallow, mount } from 'enzyme'
+import { mount } from 'enzyme'
 
 import Link from '@tds/core-link'
 import Text from '@tds/core-text'
@@ -26,23 +26,21 @@ describe('Breadcrumbs', () => {
     ],
   }
 
-  const doRender = (props = {}) => render(<Breadcrumbs {...defaultProps} {...props} />)
-  const doShallow = (props = {}) => shallow(<Breadcrumbs {...defaultProps} {...props} />)
   const doMount = (props = {}) => mount(<Breadcrumbs {...defaultProps} {...props} />)
 
   it('does not allow custom CSS', () => {
-    const breadcrumbs = doShallow({
+    const breadcrumbs = doMount({
       className: 'my-custom-class',
       style: { color: 'hotpink' },
     })
 
-    expect(breadcrumbs).not.toHaveProp('className', 'my-custom-class')
-    expect(breadcrumbs).not.toHaveProp('style')
+    expect(breadcrumbs.find('nav')).not.toHaveProp('className', 'my-custom-class')
+    expect(breadcrumbs.find('nav')).not.toHaveProp('style')
   })
 
   describe('with routes', () => {
     it('renders', () => {
-      const breadcrumbs = doRender()
+      const breadcrumbs = doMount()
 
       expect(breadcrumbs).toMatchSnapshot()
     })
@@ -88,9 +86,29 @@ describe('Breadcrumbs', () => {
     }
 
     it('renders', () => {
-      const breadcrumbs = doRender(defaultPropsWithChildren)
+      const breadcrumbs = doMount(defaultPropsWithChildren)
 
       expect(breadcrumbs).toMatchSnapshot()
+    })
+
+    it('Item forwards refs', () => {
+      const ref = React.createRef()
+      const item = mount(
+        <>
+          <Breadcrumbs.Item ref={ref} href="/">
+            Home
+          </Breadcrumbs.Item>
+        </>
+      )
+
+      const target = item
+        .find('Link')
+        .at(0)
+        .find('StyledComponent')
+        .childAt(0)
+        .instance()
+
+      expect(target).toEqual(ref.current)
     })
 
     it('doest not concatenate paths', () => {
@@ -114,27 +132,27 @@ describe('Breadcrumbs', () => {
   })
 })
 
-describe('Breadcrumbs.Item', () => {
+describe('Item', () => {
   const defaultProps = {
     href: '/',
     children: 'Link',
     current: false,
   }
 
-  const doShallow = (props = {}) => shallow(<Breadcrumbs.Item {...defaultProps} {...props} />)
+  const doMount = (props = {}) => mount(<Breadcrumbs.Item {...defaultProps} {...props} />)
 
   it('renders a TDS Link if Item is not current', () => {
-    const breadcrumbsItem = doShallow()
+    const breadcrumbsItem = doMount()
     expect(breadcrumbsItem.find(Link)).toExist()
   })
 
   it('renders a Text component for the last item', () => {
-    const breadcrumbsItem = doShallow({ current: true })
+    const breadcrumbsItem = doMount({ current: true })
     expect(breadcrumbsItem.find(Text)).toExist()
   })
 
   it('renders a Text when reactRouterLinkComponent is provided and is current', () => {
-    const breadcrumbsItem = doShallow({
+    const breadcrumbsItem = doMount({
       current: true,
       reactRouterLinkComponent: ReactRouterLinkComponent,
     })

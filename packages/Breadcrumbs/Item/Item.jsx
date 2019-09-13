@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -38,7 +38,7 @@ const StyledSlash = styled.span({
   margin: '0 0.5rem',
 })
 
-const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) => {
+const Item = forwardRef(({ href, reactRouterLinkComponent, children, current, ...rest }, ref) => {
   const linkOptions = { ...rest }
   if (reactRouterLinkComponent) {
     linkOptions.to = href
@@ -52,13 +52,17 @@ const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) =>
         <Text>{children}</Text>
       ) : (
         <span>
-          <Link {...linkOptions}>{children}</Link>
+          <Link {...linkOptions} ref={ref}>
+            {children}
+          </Link>
           <StyledSlash aria-hidden="true">/</StyledSlash>
         </span>
       )}
     </StyledItemContainer>
   )
-}
+})
+
+Item.displayName = 'Item'
 
 Item.propTypes = {
   /**

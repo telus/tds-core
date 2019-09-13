@@ -160,7 +160,7 @@ Breadcrumbs.propTypes = {
   /**
    * A list of Items to be used as an alternative to the `routes` prop.
    */
-  children: componentWithName('Item'),
+  children: componentWithName('Item', true),
 }
 
 Breadcrumbs.defaultProps = {
