@@ -13,6 +13,7 @@ describe('Link', () => {
     const link = mount(<Link {...overrides}>Some content</Link>)
     return {
       link: link.find(overrides.reactRouterLinkComponent || 'a'),
+      wrapper: link,
     }
   }
   afterEach(() => {
@@ -45,8 +46,6 @@ describe('Link', () => {
 
     expect(warn).toHaveBeenCalled()
 
-    jest.clearAllMocks()
-
     link = doShallow({ to: '/about' })
 
     expect(link).toHaveProp('to')
@@ -71,9 +70,28 @@ describe('Link', () => {
   })
 
   it('does not allow custom CSS', () => {
-    const link = doShallow({ className: 'my-custom-class', style: { color: 'hotpink' } })
+    const link = doMount({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
-    expect(link).not.toHaveProp('className', 'my-custom-class')
-    expect(link).not.toHaveProp('style')
+    expect(link.link.hasClass('my-custom-class')).toEqual(false)
+    expect(link.link).not.toHaveProp('style')
+  })
+
+  it('forwards refs', () => {
+    const ref = React.createRef()
+
+    // Link component needs to be wrapped in order for the ref instance to work with Enzyme's mount
+    // https://github.com/airbnb/enzyme/issues/1852#issuecomment-433145879
+    const link = mount(
+      <>
+        <Link ref={ref}>Link</Link>
+      </>
+    )
+
+    const target = link
+      .find('StyledComponent')
+      .childAt(0)
+      .instance()
+
+    expect(target).toEqual(ref.current)
   })
 })
