@@ -166,4 +166,23 @@ describe('Tooltip', () => {
 
     expect(tooltip.find(StandaloneIcon)).toHaveProp('a11yText', 'Reveal additional information.')
   })
+
+  it('forwards refs', () => {
+    const ref = React.createRef()
+    const tooltip = mount(
+      <>
+        <Tooltip ref={ref} copy="en">
+          Tooltip text
+        </Tooltip>
+      </>
+    )
+
+    const target = tooltip
+      .find('StyledComponent')
+      .at(0)
+      .childAt(0)
+      .instance()
+
+    expect(target).toEqual(ref.current)
+  })
 })
