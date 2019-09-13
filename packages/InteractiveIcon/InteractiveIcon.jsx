@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled, { ThemeProvider } from 'styled-components'
 
@@ -78,15 +78,25 @@ const getTheme = variant => {
 /**
  * @version ./package.json
  */
-const InteractiveIcon = ({ a11yText, variant, onClick, children, tag, ...rest }) => (
-  <ThemeProvider theme={getTheme(variant)}>
-    <StyledInteractiveIconButton {...safeRest(rest)} variant={variant} onClick={onClick} as={tag}>
-      <A11yContent>{a11yText}</A11yContent>
-      <StyledInteractiveIconHover />
-      {children}
-    </StyledInteractiveIconButton>
-  </ThemeProvider>
+const InteractiveIcon = forwardRef(
+  ({ a11yText, variant, onClick, children, tag, ...rest }, ref) => (
+    <ThemeProvider theme={getTheme(variant)}>
+      <StyledInteractiveIconButton
+        {...safeRest(rest)}
+        variant={variant}
+        onClick={onClick}
+        as={tag}
+        ref={ref}
+      >
+        <A11yContent>{a11yText}</A11yContent>
+        <StyledInteractiveIconHover />
+        {children}
+      </StyledInteractiveIconButton>
+    </ThemeProvider>
+  )
 )
+
+InteractiveIcon.displayName = 'InteractiveIcon'
 
 InteractiveIcon.propTypes = {
   /**

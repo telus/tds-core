@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import InteractiveIcon from '../InteractiveIcon'
 
@@ -12,7 +12,7 @@ describe('InteractiveIcon', () => {
     )
 
   it('renders', () => {
-    const interactiveIcon = render(
+    const interactiveIcon = mount(
       <InteractiveIcon a11yText="This is an interactive icon">
         <svg />
       </InteractiveIcon>
@@ -44,5 +44,23 @@ describe('InteractiveIcon', () => {
 
     expect(interactiveIcon).not.toHaveProp('className', 'my-custom-class')
     expect(interactiveIcon).not.toHaveProp('style')
+  })
+
+  it('forwards refs', () => {
+    const ref = React.createRef()
+    const interactiveIcon = mount(
+      <>
+        <InteractiveIcon ref={ref} a11yText="This is an interactive icon">
+          <svg />
+        </InteractiveIcon>
+      </>
+    )
+    const target = interactiveIcon
+      .find('StyledComponent')
+      .at(0)
+      .childAt(0)
+      .instance()
+
+    expect(target).toEqual(ref.current)
   })
 })
