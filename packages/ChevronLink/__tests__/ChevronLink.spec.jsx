@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, render, mount } from 'enzyme'
 
 import DecorativeIcon from '@tds/core-decorative-icon'
 import A11yContent from '../../A11yContent'
@@ -99,5 +99,27 @@ describe('ChevronLink', () => {
 
     expect(link).not.toHaveProp('className', 'my-custom-class')
     expect(link).not.toHaveProp('style')
+  })
+
+  it('forwards refs', () => {
+    const ref = React.createRef()
+
+    // Link component needs to be wrapped in order for the ref instance to work with Enzyme's mount
+    // https://github.com/airbnb/enzyme/issues/1852#issuecomment-433145879
+    const link = mount(
+      <>
+        <ChevronLink ref={ref} href="https://telus.com">
+          Go home
+        </ChevronLink>
+      </>
+    )
+
+    const target = link
+      .find('StyledComponent')
+      .at(0)
+      .childAt(0)
+      .instance()
+
+    expect(target).toEqual(ref.current)
   })
 })

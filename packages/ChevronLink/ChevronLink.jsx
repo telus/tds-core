@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -54,30 +54,35 @@ const getIcon = (symbol, direction) => (
  *
  * @version ./package.json
  */
-const ChevronLink = ({ reactRouterLinkComponent, variant, direction, children, ...rest }) => {
-  if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
-    warn('Chevron Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
+const ChevronLink = forwardRef(
+  ({ reactRouterLinkComponent, variant, direction, children, ...rest }, ref) => {
+    if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
+      warn('Chevron Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
+    }
+
+    const innerLink = (
+      <Box tag="span" inline between={2}>
+        {direction === 'left' ? getIcon('leftChevron', direction) : undefined}
+        <span>{children}</span>
+        {direction === 'right' ? getIcon('chevron', direction) : undefined}
+      </Box>
+    )
+
+    return (
+      <StyledChevronLink
+        {...safeRest(rest)}
+        as={reactRouterLinkComponent || 'a'}
+        variant={variant}
+        direction={direction}
+        ref={ref}
+      >
+        {innerLink}
+      </StyledChevronLink>
+    )
   }
+)
 
-  const innerLink = (
-    <Box tag="span" inline between={2}>
-      {direction === 'left' ? getIcon('leftChevron', direction) : undefined}
-      <span>{children}</span>
-      {direction === 'right' ? getIcon('chevron', direction) : undefined}
-    </Box>
-  )
-
-  return (
-    <StyledChevronLink
-      {...safeRest(rest)}
-      as={reactRouterLinkComponent || 'a'}
-      variant={variant}
-      direction={direction}
-    >
-      {innerLink}
-    </StyledChevronLink>
-  )
-}
+ChevronLink.displayName = 'ChevronLink'
 
 ChevronLink.propTypes = {
   /**
