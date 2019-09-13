@@ -6,6 +6,7 @@ import StandaloneIcon from '@tds/core-standalone-icon'
 
 import { iconWrapper } from '@tds/shared-styles'
 import { getCopy, uniqueId, safeRest } from '@tds/util-helpers'
+import { withForwardedRef } from '@tds/shared-hocs'
 
 import generateId from '../../shared/utils/generateId/generateId'
 import closest from './element-closest'
@@ -118,7 +119,7 @@ class Tooltip extends React.Component {
   }
 
   render() {
-    const { direction, connectedFieldLabel, copy, children, ...rest } = this.props
+    const { direction, connectedFieldLabel, copy, children, forwardedRef, ...rest } = this.props
 
     const { bubbleId, triggerId } = this.getIds(connectedFieldLabel)
 
@@ -140,7 +141,7 @@ class Tooltip extends React.Component {
     }
 
     return (
-      <StyledTooltip {...safeRest(rest)} ref={this.setTooltipRef}>
+      <StyledTooltip {...safeRest(rest)} ref={forwardedRef || this.setTooltipRef}>
         <TooltipContainer data-testid="tooltipContainer">
           <Bubble id={bubbleId} direction={trueDirection} open={this.state.open} width={width}>
             {children}
@@ -195,12 +196,15 @@ Tooltip.propTypes = {
    * If a tooltip id is not provided, a unique tooltip id will be generated.
    */
   tooltipId: PropTypes.string,
+  /* @ignore */
+  forwardedRef: PropTypes.object,
 }
 
 Tooltip.defaultProps = {
   direction: 'auto',
   connectedFieldLabel: undefined,
   tooltipId: undefined,
+  forwardedRef: undefined,
 }
 
-export default Tooltip
+export default withForwardedRef(Tooltip)
