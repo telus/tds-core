@@ -6,6 +6,8 @@ import { colorShark, colorWhite } from '@tds/core-colours'
 import { links } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
 
+import { withForwardedRef } from '@tds/shared-hocs'
+
 import { warn } from '../../shared/utils/warn'
 
 const base = {
@@ -39,7 +41,7 @@ const StyledLink = styled.a(base, ({ invert, context }) => {
 /**
  * @version ./package.json
  */
-const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) => {
+const Link = ({ reactRouterLinkComponent, invert, children, forwardedRef, ...rest }, context) => {
   if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
@@ -50,6 +52,7 @@ const Link = ({ reactRouterLinkComponent, invert, children, ...rest }, context) 
       as={reactRouterLinkComponent || 'a'}
       invert={invert}
       context={context}
+      ref={forwardedRef}
     >
       {children}
     </StyledLink>
@@ -76,16 +79,19 @@ Link.propTypes = {
    * Link text.
    */
   children: PropTypes.node.isRequired,
+  /* @ignore */
+  forwardedRef: PropTypes.object,
 }
 Link.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
   href: null,
   invert: false,
+  forwardedRef: undefined,
 }
 
 Link.contextTypes = {
   inheritColor: PropTypes.bool,
 }
 
-export default Link
+export default withForwardedRef(Link)
