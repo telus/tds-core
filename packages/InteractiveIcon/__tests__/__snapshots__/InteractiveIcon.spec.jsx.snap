@@ -84,17 +84,164 @@ exports[`InteractiveIcon renders 1`] = `
   }
 }
 
-<button
-  class="c0 c1"
+<InteractiveIcon
+  a11yText="This is an interactive icon"
+  tag="button"
+  variant="default"
 >
-  <span
-    class="c2"
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor": "#d8d8d8",
+        "iconColor": "#2a2c2e",
+      }
+    }
   >
-    This is an interactive icon
-  </span>
-  <span
-    class="c3"
-  />
-  <svg />
-</button>
+    <InteractiveIcon__StyledInteractiveIconButton
+      as="button"
+      variant="default"
+    >
+      <StyledComponent
+        as="button"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "c0",
+              "isStatic": false,
+              "lastClassName": "c1",
+              "rules": Array [
+                "padding: 0;",
+                "margin: 0;",
+                "border-width: 0;",
+                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                "color: #2a2c2e;",
+                "appearance: none;",
+                "background: none;",
+                "box-shadow: none;",
+                "cursor: pointer;",
+                [Function],
+                "width: 40px;",
+                "height: 40px;",
+                "display: inline-flex;",
+                "justify-content: center;",
+                "align-items: center;",
+                "position: relative;",
+                "&:hover svg {",
+                "transform: scale(1.1, 1.1);",
+                "}",
+                "&:active svg {",
+                "transform: scale(1, 1);",
+                "}",
+                "-webkit-tap-highlight-color: transparent;",
+              ],
+            },
+            "displayName": "InteractiveIcon__StyledInteractiveIconButton",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "c0",
+            "target": "button",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        variant="default"
+      >
+        <button
+          className="c0 c1"
+        >
+          <A11yContent>
+            <A11yContent__StyledA11yContent>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                      "isStatic": true,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "position: absolute;",
+                        "height: 1px;",
+                        "width: 1px;",
+                        "overflow: hidden;",
+                        "clip: rect(1px, 1px, 1px, 1px);",
+                      ],
+                    },
+                    "displayName": "A11yContent__StyledA11yContent",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <span
+                  className="c2"
+                >
+                  This is an interactive icon
+                </span>
+              </StyledComponent>
+            </A11yContent__StyledA11yContent>
+          </A11yContent>
+          <InteractiveIcon__StyledInteractiveIconHover>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "InteractiveIcon__StyledInteractiveIconHover-sc-1pxz8wd-2",
+                    "isStatic": false,
+                    "lastClassName": "c3",
+                    "rules": Array [
+                      [Function],
+                      "position: absolute;",
+                      "top: 0;",
+                      "left: 0;",
+                      "width: 100%;",
+                      "height: 100%;",
+                      "z-index: 1;",
+                      "border-radius: 50%;",
+                      "transition: transform 200ms ease-in-out;",
+                      "@media (prefers-reduced-motion: reduce) {",
+                      "transition: none;",
+                      "}",
+                      "transform: scale(0,0);",
+                      ".c0:focus &, .c0:active & {",
+                      "transform: scale(1,1);",
+                      "}",
+                    ],
+                  },
+                  "displayName": "InteractiveIcon__StyledInteractiveIconHover",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "InteractiveIcon__StyledInteractiveIconHover-sc-1pxz8wd-2",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="c3"
+              />
+            </StyledComponent>
+          </InteractiveIcon__StyledInteractiveIconHover>
+          <svg />
+        </button>
+      </StyledComponent>
+    </InteractiveIcon__StyledInteractiveIconButton>
+  </ThemeProvider>
+</InteractiveIcon>
 `;
