@@ -61,4 +61,20 @@ describe('TermsAndConditions', () => {
     expect(termsAndConditions).not.toHaveProp('className', 'my-custom-class')
     expect(termsAndConditions).not.toHaveProp('style')
   })
+
+  it('forwards refs', () => {
+    const ref = React.createRef()
+    const termsAndConditions = mount(
+      <>
+        <TermsAndConditions ref={ref} {...defaultProps} />
+      </>
+    )
+
+    const target = termsAndConditions
+      .find('Styled(StyledClickable)')
+      .find('button')
+      .instance()
+
+    expect(target).toEqual(ref.current)
+  })
 })
