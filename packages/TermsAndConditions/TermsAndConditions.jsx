@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -52,114 +52,120 @@ const calculateSpeed = (height, isExpanding) => {
 /**
  * @version ./package.json
  */
-const TermsAndConditions = ({ copy, indexedContent, nonIndexedContent, ...rest }) => {
-  const contentWrapper = useRef(null)
-  const [isOpen, setOpen] = useState(false)
-  const [contentWrapperHeight, setContentWrapperHeight] = useState(0)
-  const speed = calculateSpeed(contentWrapperHeight, isOpen)
+const TermsAndConditions = forwardRef(
+  ({ copy, indexedContent, nonIndexedContent, ...rest }, ref) => {
+    const contentWrapper = useRef(null)
+    const [isOpen, setOpen] = useState(false)
+    const [contentWrapperHeight, setContentWrapperHeight] = useState(0)
+    const speed = calculateSpeed(contentWrapperHeight, isOpen)
 
-  const hasIndexedContent = indexedContent.length > 0
-  const hasNonIndexedContent = nonIndexedContent.length > 0
+    const hasIndexedContent = indexedContent.length > 0
+    const hasNonIndexedContent = nonIndexedContent.length > 0
 
-  useEffect(() => {
-    if (contentWrapper.current.offsetHeight !== contentWrapperHeight) {
-      setContentWrapperHeight(() => {
-        return contentWrapper.current.offsetHeight
-      })
-    }
-  }, [contentWrapperHeight])
+    useEffect(() => {
+      if (contentWrapper.current.offsetHeight !== contentWrapperHeight) {
+        setContentWrapperHeight(() => {
+          return contentWrapper.current.offsetHeight
+        })
+      }
+    }, [contentWrapperHeight])
 
-  return (
-    <div {...safeRest(rest)}>
-      <HairlineDivider />
-      <FlexGrid gutter={false} limitWidth={false}>
-        <FlexGrid.Row>
-          <FlexGrid.Col>
-            <StyledClickableHeading onClick={() => setOpen(!isOpen)}>
-              <StyledExpandCollapseHeading inline vertical={3} between={3}>
-                <StyledChevronContainer>
-                  <Circle />
-                  <Chevron isOpen={isOpen} />
-                </StyledChevronContainer>
-                <Heading level="h4" tag="h2">
-                  {!isOpen
-                    ? getCopy(copyDictionary, copy).headingView
-                    : getCopy(copyDictionary, copy).headingHide}
-                </Heading>
-              </StyledExpandCollapseHeading>
-            </StyledClickableHeading>
-          </FlexGrid.Col>
-        </FlexGrid.Row>
-      </FlexGrid>
-      <FadeAndReveal
-        timeout={isOpen ? speed : 0}
-        duration={speed}
-        in={isOpen}
-        height={contentWrapperHeight}
-      >
-        {() => (
-          <div ref={contentWrapper}>
-            <FlexGrid gutter={false} limitWidth={false}>
-              <FlexGrid.Row>
-                <FlexGrid.Col>
-                  <DimpleDivider />
-                </FlexGrid.Col>
-              </FlexGrid.Row>
-            </FlexGrid>
-            <Translate
-              timeout={speed}
-              in={isOpen}
-              direction="y"
-              distance={isOpen ? '0rem' : '1rem'}
-              initialStyle={{ transform: 'translateY(1rem)' }}
-            >
-              {() => (
-                <>
-                  {hasIndexedContent > 0 && (
-                    <FlexGrid>
-                      <FlexGrid.Row>
-                        <FlexGrid.Col xs={12} mdOffset={1} md={10}>
-                          <List size="small" below={4} type="indexed">
-                            {indexedContent.map(c => (
-                              <List.Item key={c}>{renderContent(c)}</List.Item>
-                            ))}
-                          </List>
-                        </FlexGrid.Col>
-                      </FlexGrid.Row>
-                    </FlexGrid>
-                  )}
-                  {hasNonIndexedContent && (
-                    <FlexGrid>
-                      <FlexGrid.Row>
-                        <FlexGrid.Col xs={12} mdOffset={1} md={10}>
-                          <Box between={3}>
-                            {hasIndexedContent && (
-                              <div css={{ paddingLeft: '2rem' }}>
-                                <Heading level="h4" tag="span">
-                                  {getCopy(copyDictionary, copy).nonIndexedTitle}
-                                </Heading>
-                              </div>
-                            )}
-                            <List size="small" below={4} type="nonIndexed">
-                              {nonIndexedContent.map(c => (
+    return (
+      <div {...safeRest(rest)}>
+        <HairlineDivider />
+        <FlexGrid gutter={false} limitWidth={false}>
+          <FlexGrid.Row>
+            <FlexGrid.Col>
+              <StyledClickableHeading ref={ref} onClick={() => setOpen(!isOpen)}>
+                <StyledExpandCollapseHeading inline vertical={3} between={3}>
+                  <StyledChevronContainer>
+                    <Circle />
+                    <Chevron isOpen={isOpen} />
+                  </StyledChevronContainer>
+                  <Heading level="h4" tag="h2">
+                    {!isOpen
+                      ? getCopy(copyDictionary, copy).headingView
+                      : getCopy(copyDictionary, copy).headingHide}
+                  </Heading>
+                </StyledExpandCollapseHeading>
+              </StyledClickableHeading>
+            </FlexGrid.Col>
+          </FlexGrid.Row>
+        </FlexGrid>
+        <FadeAndReveal
+          timeout={isOpen ? speed : 0}
+          duration={speed}
+          in={isOpen}
+          height={contentWrapperHeight}
+        >
+          {() => (
+            <div ref={contentWrapper}>
+              <FlexGrid gutter={false} limitWidth={false}>
+                <FlexGrid.Row>
+                  <FlexGrid.Col>
+                    <DimpleDivider />
+                  </FlexGrid.Col>
+                </FlexGrid.Row>
+              </FlexGrid>
+              <Translate
+                timeout={speed}
+                in={isOpen}
+                direction="y"
+                distance={isOpen ? '0rem' : '1rem'}
+                initialStyle={{ transform: 'translateY(1rem)' }}
+              >
+                {() => (
+                  <>
+                    {hasIndexedContent > 0 && (
+                      <FlexGrid>
+                        <FlexGrid.Row>
+                          <FlexGrid.Col xs={12} mdOffset={1} md={10}>
+                            <List size="small" below={4} type="indexed">
+                              {indexedContent.map(c => (
                                 <List.Item key={c}>{renderContent(c)}</List.Item>
                               ))}
                             </List>
-                          </Box>
-                        </FlexGrid.Col>
-                      </FlexGrid.Row>
-                    </FlexGrid>
-                  )}
-                </>
-              )}
-            </Translate>
-          </div>
-        )}
-      </FadeAndReveal>
-      <HairlineDivider />
-    </div>
-  )
-}
+                          </FlexGrid.Col>
+                        </FlexGrid.Row>
+                      </FlexGrid>
+                    )}
+                    {hasNonIndexedContent && (
+                      <FlexGrid>
+                        <FlexGrid.Row>
+                          <FlexGrid.Col xs={12} mdOffset={1} md={10}>
+                            <Box between={3}>
+                              {hasIndexedContent && (
+                                <div css={{ paddingLeft: '2rem' }}>
+                                  <Heading level="h4" tag="span">
+                                    {getCopy(copyDictionary, copy).nonIndexedTitle}
+                                  </Heading>
+                                </div>
+                              )}
+                              <List size="small" below={4} type="nonIndexed">
+                                {nonIndexedContent.map(c => (
+                                  <List.Item key={c}>{renderContent(c)}</List.Item>
+                                ))}
+                              </List>
+                            </Box>
+                          </FlexGrid.Col>
+                        </FlexGrid.Row>
+                      </FlexGrid>
+                    )}
+                  </>
+                )}
+              </Translate>
+            </div>
+          )}
+        </FadeAndReveal>
+        <HairlineDivider />
+      </div>
+    )
+  }
+)
+
+// StyledClickableHeading.displayName = 'StyledClickableHeading'
+
+TermsAndConditions.displayName = 'TermsAndConditions'
 
 TermsAndConditions.propTypes = {
   /**
