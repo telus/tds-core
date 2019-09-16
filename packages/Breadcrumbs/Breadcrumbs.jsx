@@ -93,9 +93,10 @@ const Breadcrumbs = ({
   let items
   if (children) {
     items = React.Children.toArray(children).map(
-      ({ props: { href, children: breadcrumbName, ...itemRest } }) => ({
+      ({ props: { href, children: breadcrumbName, ...itemRest }, ref }) => ({
         path: href,
         breadcrumbName,
+        ref,
         ...itemRest,
       })
     )
