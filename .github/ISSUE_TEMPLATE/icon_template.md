@@ -29,7 +29,8 @@ about: Request a new icon
 
 1. Did you check to see if there are icons available in TDS that can be used instead? Yes/No
 2. Is your proposed icon from the TELUS Brand-approved set from one of the appointed designers*? Yes/No
-3. Has your Design Lead or Art Director approved the proposed icon? Yes/No
+3. If your design lead has approved this change, please note their name: [design lead name]
+4. If the art director has approved this change, please have them **comment on this issue**.
 
 <!--
   * Appointed designers with access to TELUS branded icons include: Catherine Roberston (UPC), Cherry Hung (My TELUS),
