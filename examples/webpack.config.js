@@ -1,15 +1,21 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: './index.jsx',
+  entry: path.join(__dirname, 'index.jsx'),
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.join(__dirname, 'dist'),
   },
   devServer: {
-    contentBase: './dist',
+    host: '0.0.0.0',
+    port: 3000,
+    disableHostCheck: true,
+    historyApiFallback: true,
+    contentBase: [path.join(__dirname, 'dist')],
   },
+  plugins: [new HtmlWebpackPlugin({ template: path.join(__dirname, 'index.html') })],
   module: {
     rules: [
       {
