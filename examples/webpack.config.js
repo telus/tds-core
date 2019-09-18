@@ -1,5 +1,11 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniHtmlWebpackPlugin = require('mini-html-webpack-plugin')
+
+const {
+  generateAttributes,
+  generateCSSReferences,
+  generateJSReferences
+} = MiniHtmlWebpackPlugin
 
 module.exports = {
   mode: 'development',
@@ -15,7 +21,52 @@ module.exports = {
     historyApiFallback: true,
     contentBase: [path.join(__dirname, 'dist')],
   },
-  plugins: [new HtmlWebpackPlugin({ template: path.join(__dirname, 'index.html') })],
+  plugins: [
+    new MiniHtmlWebpackPlugin({
+      context: {
+        title: 'TDS Cartesian Components',
+        htmlAttributes: { lang: 'en' },
+        cssAttributes: { rel: 'preload' },
+        jsAttributes: { defer: 'defer' }
+      },
+      template: ({
+        css,
+        js,
+        publicPath,
+        title,
+        htmlAttributes,
+        cssAttributes,
+        jsAttributes
+      }) => {
+        const htmlAttrs = generateAttributes(htmlAttributes);
+
+        const cssTags = generateCSSReferences({
+          files: css,
+          attributes: cssAttributes,
+          publicPath
+        });
+
+        const jsTags = generateJSReferences({
+          files: js,
+          attributes: jsAttributes,
+          publicPath
+        });
+
+        return `<!DOCTYPE html>
+        <html${htmlAttrs}>
+          <head>
+            <meta charset="UTF-8">
+            <title>${title}</title>
+            ${cssTags}
+          </head>
+          <body>
+            <div id="app"></div>
+            ${jsTags}
+          </body>
+        </html>`;
+      }
+    })
+  ],
   module: {
     rules: [
       {
