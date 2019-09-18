@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.20...@tds/core-terms-and-conditions@1.1.0) (2019-09-18)
+
+
+### Features
+
+* **core-terms-and-conditions:** allow forwarding refs in t&c component ([1e1ac70](https://github.com/telus/tds-core/commit/1e1ac70))
+
+
+
+
+
 ## [1.0.20](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.0.19...@tds/core-terms-and-conditions@1.0.20) (2019-09-12)
 
 **Note:** Version bump only for package @tds/core-terms-and-conditions

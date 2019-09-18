@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.1.4...@tds/core-tooltip@4.2.0) (2019-09-18)
+
+
+### Features
+
+* **core-tooltip:** allow forwarding refs ([1fe1474](https://github.com/telusdigital/tds/commit/1fe1474))
+
+
+
+
+
 ## [4.1.4](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.1.3...@tds/core-tooltip@4.1.4) (2019-09-12)
 
 **Note:** Version bump only for package @tds/core-tooltip

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telus/tds-core/compare/@tds/shared-hocs@1.1.0...@tds/shared-hocs@1.2.0) (2019-09-18)
+
+
+### Features
+
+* **shared-hocs:** add withForwardedRef hoc ([03aa563](https://github.com/telus/tds-core/commit/03aa563))
+
+
+
+
+
 # [1.1.0](https://github.com/telus/tds-core/compare/@tds/shared-hocs@1.0.0...@tds/shared-hocs@1.1.0) (2019-07-24)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-link@2.0.11...@tds/core-link@2.1.0) (2019-09-18)
+
+
+### Features
+
+* **core-link:** allow forwarding refs ([d992dd8](https://github.com/telusdigital/tds/commit/d992dd8))
+
+
+
+
+
 ## [2.0.11](https://github.com/telusdigital/tds/compare/@tds/core-link@2.0.10...@tds/core-link@2.0.11) (2019-09-12)
 
 **Note:** Version bump only for package @tds/core-link
