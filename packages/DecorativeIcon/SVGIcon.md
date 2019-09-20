@@ -802,6 +802,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'office, address',
       },
       {
+        name: 'Offices',
+        Component: Offices,
+        usageCriteria: 'Multiple offices, medium - large businesses',
+      },
+      {
         name: 'Passport',
         Component: Passport,
         usageCriteria: 'travel, document verification',
