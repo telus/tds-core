@@ -31,7 +31,7 @@ const TooltipContainer = styled.div({
  * @version ./package.json
  */
 
-class Tooltip extends React.Component {
+class T extends React.Component {
   constructor() {
     super()
     this.refTooltip = null
@@ -162,7 +162,7 @@ class Tooltip extends React.Component {
   }
 }
 
-Tooltip.propTypes = {
+const propTypes = {
   /**
    * Open the bubble to the left or right of the trigger.
    */
@@ -200,11 +200,21 @@ Tooltip.propTypes = {
   forwardedRef: PropTypes.object,
 }
 
-Tooltip.defaultProps = {
+const defaultProps = {
   direction: 'auto',
   connectedFieldLabel: undefined,
   tooltipId: undefined,
   forwardedRef: undefined,
 }
 
-export default withForwardedRef(Tooltip)
+const RefForwardedTooltip = withForwardedRef(T)
+const Tooltip = React.forwardRef((props, ref) => <RefForwardedTooltip {...props} ref={ref} />)
+
+Tooltip.propTypes = propTypes
+Tooltip.defaultProps = defaultProps
+T.propTypes = propTypes
+T.defaultProps = defaultProps
+
+Tooltip.displayName = 'Tooltip'
+
+export default Tooltip
