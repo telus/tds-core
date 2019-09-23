@@ -5,6 +5,10 @@ import Text from '@tds/core-text'
 
 import Spinner from '../Spinner'
 
+import { warn, deprecate } from '../../../shared/utils/warn'
+
+jest.mock('../../../shared/utils/warn')
+
 describe('Spinner', () => {
   const defaultProps = {
     label: 'Loading content',
@@ -69,11 +73,12 @@ describe('Spinner', () => {
   })
 
   it('does not render a large secondary spinner', () => {
-    const { container } = doMount(
+    doMount(
       { size: 'large', variant: 'secondary', inline: true },
       <span>Overlay me with the spinner</span>
     )
-    expect(container).toMatchSnapshot()
+    expect(warn).toHaveBeenCalled()
+    jest.clearAllMocks()
   })
 
   it('renders inline', () => {
@@ -96,6 +101,7 @@ describe('Spinner', () => {
     const { spinner } = doMount({ label: undefined, tip: 'A tip' })
 
     expect(spinner).toContainReact(<Text size="small">A tip</Text>)
+    expect(deprecate).toHaveBeenCalled()
   })
 
   it('can have a label', () => {
