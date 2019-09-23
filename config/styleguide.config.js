@@ -451,12 +451,7 @@ module.exports = {
       rules: [
         {
           test: /\.jsx?$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader',
-        },
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
+          exclude: /node_modules\/(?!(buble|ansi-styles|strip-ansi|ansi-regex|react-dev-utils|chalk|regexpu-core|unicode-match-property-ecmascript|unicode-match-property-value-ecmascript|acorn-jsx)\/).*/,
           loader: 'babel-loader',
         },
         {
