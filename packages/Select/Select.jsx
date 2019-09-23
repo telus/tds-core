@@ -326,7 +326,7 @@ Select.propTypes = {
   /**
    * A `Tooltip`
    */
-  tooltip: componentWithName('Tooltip'),
+  tooltip: componentWithName('Tooltip', true),
 }
 
 Select.defaultProps = {
