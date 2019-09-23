@@ -270,7 +270,7 @@ Input.propTypes = {
   /**
    * A `Tooltip`
    */
-  tooltip: componentWithName('Tooltip'),
+  tooltip: componentWithName('Tooltip', true),
 }
 
 Input.defaultProps = {
