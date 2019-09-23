@@ -860,5 +860,3 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
   />
 </Box>
 ```
-
-`
