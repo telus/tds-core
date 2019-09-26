@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.15](https://github.com/telus/tds/compare/@tds/core-select@3.1.14...@tds/core-select@3.1.15) (2019-09-26)
+
+
+### Bug Fixes
+
+* **core-select:** check Tooltip displayName ([9befc8d](https://github.com/telus/tds/commit/9befc8d))
+
+
+
+
+
 ## [3.1.14](https://github.com/telus/tds/compare/@tds/core-select@3.1.13...@tds/core-select@3.1.14) (2019-09-23)
 
 **Note:** Version bump only for package @tds/core-select
