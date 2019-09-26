@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { ThemeProvider } from 'styled-components'
 
 import A11yContent from '@tds/core-a11y-content'
-import { colorGainsboro, colorShark, colorTelusPurple, colorWhite } from '@tds/core-colours'
+import { colorGreyGainsboro, colorGreyShark, colorTelusPurple, colorWhite } from '@tds/core-colours'
 import { buttons } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
 
@@ -70,8 +70,8 @@ const getTheme = variant => {
     }
   }
   return {
-    backgroundColor: colorGainsboro,
-    iconColor: colorShark,
+    backgroundColor: colorGreyGainsboro,
+    iconColor: colorGreyShark,
   }
 }
 
