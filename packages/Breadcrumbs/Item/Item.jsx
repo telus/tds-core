@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorTelusPurple, colorShuttleGrey } from '@tds/core-colours'
+import { colorTelusPurple, colorGreyShuttle } from '@tds/core-colours'
 import Link from '@tds/core-link'
 import { media } from '@tds/core-responsive'
 import Text from '@tds/core-text'
@@ -21,7 +21,7 @@ const item = {
 
 const StyledItemContainer = styled(ColoredTextProvider)(({ isCurrent }) => ({
   ...item,
-  color: isCurrent ? colorTelusPurple : colorShuttleGrey,
+  color: isCurrent ? colorTelusPurple : colorGreyShuttle,
   ...(isCurrent && {
     fontWeight: 700,
 
