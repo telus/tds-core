@@ -1,14 +1,14 @@
 import {
-  colorAthensGrey,
+  colorGreyAthens,
   colorPanache,
   colorLavenderBlush,
   colorCardinal,
-  colorGainsboro,
-  colorLightRaja,
+  colorGreyGainsboro,
+  colorRajahLight,
 } from '@tds/core-colours'
 
 export const standard = {
-  backgroundColor: colorAthensGrey,
+  backgroundColor: colorGreyAthens,
 }
 
 export const success = {
@@ -20,7 +20,7 @@ export const error = {
 }
 
 export const warning = {
-  backgroundColor: colorLightRaja,
+  backgroundColor: colorRajahLight,
 }
 
 export const errorText = {
@@ -28,5 +28,5 @@ export const errorText = {
 }
 
 export const disabledText = {
-  color: colorGainsboro,
+  color: colorGreyGainsboro,
 }
