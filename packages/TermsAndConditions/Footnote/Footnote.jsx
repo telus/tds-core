@@ -7,7 +7,7 @@ import Text from '@tds/core-text'
 import Heading from '@tds/core-heading'
 import FlexGrid from '@tds/core-flex-grid'
 import HairlineDivider from '@tds/core-hairline-divider'
-import { colorAthensGrey } from '@tds/core-colours'
+import { colorGreyAthens } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import { withFocusTrap } from '@tds/shared-hocs'
 import { getCopy, safeRest } from '@tds/util-helpers'
@@ -29,7 +29,7 @@ const StyledFootnote = styled.div(
     left: 0,
     height: '100vh',
     width: '100vw',
-    backgroundColor: colorAthensGrey,
+    backgroundColor: colorGreyAthens,
     display: 'block',
     boxShadow: '0 0 16px 0 rgba(0, 0, 0, 0.1)',
     transform: 'translateY(100%)',
@@ -76,7 +76,7 @@ const StyledFootnoteBody = styled.div(
     '@media (prefers-reduced-motion: reduce)': {
       transition: 'height 1ms ease-out, opacity 1ms ease-out',
     },
-    backgroundColor: colorAthensGrey,
+    backgroundColor: colorGreyAthens,
   },
   ({ headerHeight }) => ({
     maxHeight: `calc(100vh - ${headerHeight}px)`,

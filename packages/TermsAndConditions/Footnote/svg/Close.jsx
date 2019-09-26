@@ -1,5 +1,5 @@
 import React from 'react'
-import { colorAthensGrey } from '@tds/core-colours'
+import { colorGreyAthens } from '@tds/core-colours'
 
 const Close = () => (
   <svg
@@ -8,7 +8,7 @@ const Close = () => (
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    css={{ background: colorAthensGrey }}
+    css={{ background: colorGreyAthens }}
     focusable="false"
   >
     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
