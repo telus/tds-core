@@ -6,8 +6,8 @@ import Box from '@tds/core-box'
 import {
   colorCardinal,
   colorWhite,
-  colorShuttleGrey,
-  colorGainsboro,
+  colorGreyShuttle,
+  colorGreyGainsboro,
   colorAccessibleGreen,
 } from '@tds/core-colours'
 import InputFeedback from '@tds/core-input-feedback'
@@ -40,7 +40,7 @@ const FakeRadio = styled.span({
   borderRadius: '50%',
   ...borders.thin,
 
-  borderColor: colorShuttleGrey,
+  borderColor: colorGreyShuttle,
   backgroundColor: colorWhite,
   '& > i': {
     display: 'none',
@@ -65,20 +65,20 @@ const StyledLabel = styled.label(({ isError }) => ({
     },
   }),
   [`${HiddenInput}:focus ~ & > div > ${FakeRadio}`]: {
-    boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
+    boxShadow: `0 0 4px 1px ${colorGreyShuttle}`,
     borderColor: isError ? colorCardinal : colorWhite,
   },
   [`${HiddenInput}:checked ~ & > div > ${FakeRadio}`]: {
     '& > span': {
       display: 'block',
     },
-    borderColor: colorShuttleGrey,
+    borderColor: colorGreyShuttle,
   },
   [`${HiddenInput}:disabled ~ & > div > ${FakeRadio}`]: {
-    borderColor: colorGainsboro,
+    borderColor: colorGreyGainsboro,
   },
   [`${HiddenInput}:disabled ~ & > div > div`]: {
-    color: colorGainsboro,
+    color: colorGreyGainsboro,
   },
 }))
 
