@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { colorSecondary, colorShark, colorPanache, colorAthensGrey } from '../../../../packages/colours/colours';
+import { colorSecondary, colorGreyShark, colorPanache, colorGreyAthens } from '../../../../packages/colours/colours';
 import heroBackground from '../../../images/hero-background.jpg'
 
 const GlobalStyleGuide = createGlobalStyle({
@@ -21,7 +21,7 @@ const GlobalStyleGuide = createGlobalStyle({
   '.docs_selcounter-label': {
     display: 'inline-block',
     fontWeight: '700',
-    color: colorShark,
+    color: colorGreyShark,
     letterSpacing: '-0.6px',
     marginBottom: '3px'
   },
@@ -37,12 +37,12 @@ const GlobalStyleGuide = createGlobalStyle({
 
   '.docs_flex-grid-coloring': {
     '*[class*=\'TDS_flexboxgrid2__row___\']': {
-      border: `1px dashed ${colorShark}`
+      border: `1px dashed ${colorGreyShark}`
     },
 
     '*[class*=\'TDS_flexboxgrid2__col-\']': {
       backgroundColor: colorPanache,
-      border: `1px solid ${colorShark}`
+      border: `1px solid ${colorGreyShark}`
     }
   },
 
@@ -68,7 +68,7 @@ const GlobalStyleGuide = createGlobalStyle({
       fontWeight: '700',
     },
     'tr:nth-child(even)': {
-      backgroundColor: colorAthensGrey,
+      backgroundColor: colorGreyAthens,
     },
     'td,th': {
       verticalAlign: 'middle',
