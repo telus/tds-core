@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Box from '@tds/core-box'
-import { colorWhite, colorWhiteLilac, colorAthensGrey, colorGainsboro } from '@tds/core-colours'
+import { colorWhite, colorWhiteLilac, colorGreyAthens, colorGreyGainsboro } from '@tds/core-colours'
 import { borders } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
 
@@ -14,7 +14,7 @@ const getVariant = ({ variant }) => {
     return {
       boxShadow: '0 0 16px 0 rgba(0, 0, 0, 0.1)',
       backgroundColor: colorWhite,
-      border: variant === 'defaultWithBorder' ? `1px solid ${colorGainsboro}` : undefined,
+      border: variant === 'defaultWithBorder' ? `1px solid ${colorGreyGainsboro}` : undefined,
     }
   }
   if (variant === 'lavender' || variant === 'branded') {
@@ -22,7 +22,7 @@ const getVariant = ({ variant }) => {
       backgroundColor: colorWhiteLilac,
     }
   }
-  return { backgroundColor: colorAthensGrey }
+  return { backgroundColor: colorGreyAthens }
 }
 
 const deprecationWarning = deprecatedVariant => {
