@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Box from '@tds/core-box'
-import { colorShark, colorShuttleGrey } from '@tds/core-colours'
+import { colorGreyShark, colorGreyShuttle } from '@tds/core-colours'
 import Paragraph from '@tds/core-paragraph'
 
 import videoText from '../../../videoText'
@@ -13,14 +13,14 @@ import Checkmark from '../../svg/Checkmark'
 const MenuContainer = styled.div({
   width: 114,
   padding: '1rem',
-  backgroundColor: colorShark,
+  backgroundColor: colorGreyShark,
   borderRadius: 5,
 })
 
 const MenuDivider = styled.div({
   width: '100%',
   height: 1,
-  backgroundColor: colorShuttleGrey,
+  backgroundColor: colorGreyShuttle,
 })
 
 const MenuButton = styled.button(({ selectedItem, itemValue }) => ({
@@ -42,14 +42,14 @@ const MenuButton = styled.button(({ selectedItem, itemValue }) => ({
   ':hover': {
     '#checkmark': {
       rect: {
-        fill: selectedItem === itemValue ? '#ffffff' : colorShuttleGrey,
+        fill: selectedItem === itemValue ? '#ffffff' : colorGreyShuttle,
       },
     },
   },
   ':focus': {
     '#checkmark': {
       rect: {
-        fill: selectedItem === itemValue ? '#ffffff' : colorShuttleGrey,
+        fill: selectedItem === itemValue ? '#ffffff' : colorGreyShuttle,
       },
     },
   },

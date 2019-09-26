@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import fscreen from 'fscreen'
 
-import { colorGainsboro } from '@tds/core-colours'
+import { colorGreyGainsboro } from '@tds/core-colours'
 import Spinner from '@tds/core-spinner'
 import { safeRest } from '@tds/util-helpers'
 
@@ -23,7 +23,7 @@ const VideoPlayerContainer = styled.div(({ videoBorder }) => ({
   width: '100%',
   outline: 'none',
   position: 'relative',
-  border: videoBorder ? `1px solid ${colorGainsboro}` : undefined,
+  border: videoBorder ? `1px solid ${colorGreyGainsboro}` : undefined,
 }))
 
 const VideoElementContainer = styled.div({
