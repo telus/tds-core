@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
-import { colorTelusPurple, colorShark, colorWhite } from '@tds/core-colours'
+import { colorTelusPurple, colorGreyShark, colorWhite } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
 
 import { warn } from '../../shared/utils/warn'
@@ -10,7 +10,7 @@ import { warn } from '../../shared/utils/warn'
 const getColour = variant => {
   switch (variant) {
     case 'alternative':
-      return colorShark
+      return colorGreyShark
     case 'inverted':
       return colorWhite
     case 'default':
