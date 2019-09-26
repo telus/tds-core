@@ -6,8 +6,8 @@ import Box from '@tds/core-box'
 import {
   colorCardinal,
   colorWhite,
-  colorShuttleGrey,
-  colorGainsboro,
+  colorGreyShuttle,
+  colorGreyGainsboro,
   colorAccessibleGreen,
 } from '@tds/core-colours'
 import DecorativeIcon from '@tds/core-decorative-icon'
@@ -45,7 +45,7 @@ const FakeCheckbox = styled.span({
   ...borders.thin,
   ...borders.rounded,
 
-  borderColor: colorShuttleGrey,
+  borderColor: colorGreyShuttle,
   backgroundColor: colorWhite,
   '& > i': {
     display: 'none',
@@ -66,7 +66,7 @@ const StyledLabel = styled.label(({ isError }) => ({
     },
   }),
   [`${HiddenInput}:focus ~ & > div > ${FakeCheckbox}`]: {
-    boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
+    boxShadow: `0 0 4px 1px ${colorGreyShuttle}`,
     borderColor: isError ? colorCardinal : colorWhite,
   },
   [`${HiddenInput}:checked ~ & > div > ${FakeCheckbox}`]: {
@@ -77,11 +77,11 @@ const StyledLabel = styled.label(({ isError }) => ({
     },
   },
   [`${HiddenInput}:disabled ~ & > div > ${FakeCheckbox}`]: {
-    backgroundColor: colorGainsboro,
-    borderColor: colorGainsboro,
+    backgroundColor: colorGreyGainsboro,
+    borderColor: colorGreyGainsboro,
   },
   [`${HiddenInput}:disabled ~ & > div > div`]: {
-    color: colorGainsboro,
+    color: colorGreyGainsboro,
   },
 }))
 
