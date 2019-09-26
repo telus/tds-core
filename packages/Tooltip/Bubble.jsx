@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Box from '@tds/core-box'
-import { colorShark, colorWhite } from '@tds/core-colours'
+import { colorGreyShark, colorWhite } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import Text from '@tds/core-text'
 
@@ -26,7 +26,7 @@ const BubbleStyle = styled(({ bubbleDimensions, direction, open, ...rest }) => (
     position: 'absolute',
     bottom: `calc(100% + ${bubbleDimensions.bubbleTriangleHeight})`,
     backgroundColor: colorWhite,
-    boxShadow: `0 0 2px 0 ${colorShark}, 0 3px 2px 0 rgba(84, 89, 95, 0.25)`,
+    boxShadow: `0 0 2px 0 ${colorGreyShark}, 0 3px 2px 0 rgba(84, 89, 95, 0.25)`,
 
     ...{ right: direction === 'left' ? `-${bubbleDimensions.bubbleOffset}` : undefined },
 
