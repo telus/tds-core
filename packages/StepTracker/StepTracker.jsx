@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorAthensGrey, colorWhite } from '@tds/core-colours'
+import { colorGreyAthens, colorWhite } from '@tds/core-colours'
 import Text from '@tds/core-text'
 import FlexGrid from '@tds/core-flex-grid'
 import { getCopy, safeRest } from '@tds/util-helpers'
@@ -15,7 +15,7 @@ import Step from './Step/Step'
 
 const StyledStepBg = styled.div(({ backgroundColour }) => ({
   padding: '1rem 0',
-  backgroundColor: backgroundColour === 'grey' ? colorAthensGrey : colorWhite,
+  backgroundColor: backgroundColour === 'grey' ? colorGreyAthens : colorWhite,
 }))
 
 const StyledStepContainer = styled.div({
