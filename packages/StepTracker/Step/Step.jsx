@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorShuttleGrey, colorPrimary } from '@tds/core-colours'
+import { colorGreyShuttle, colorPrimary } from '@tds/core-colours'
 import Icon from '@tds/core-decorative-icon'
 import { media } from '@tds/core-responsive'
 import Text from '@tds/core-text'
@@ -17,7 +17,7 @@ const StyledStep = styled.div({
     top: '17px',
     width: 'calc(50% - 1.07rem)',
     content: `''`,
-    borderBottom: `0.1rem solid ${colorShuttleGrey}`,
+    borderBottom: `0.1rem solid ${colorGreyShuttle}`,
   },
 
   '&:before': {
@@ -43,7 +43,7 @@ const StyledStep = styled.div({
 
 const StyledIcon = styled.span(({ isStepActive }) => ({
   display: 'inline-block',
-  border: `0.1rem solid ${colorShuttleGrey}`,
+  border: `0.1rem solid ${colorGreyShuttle}`,
   borderRadius: '50%',
   lineHeight: '1.7rem',
   width: '35px',
