@@ -10,11 +10,11 @@ import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import { borders, position, forms } from '@tds/shared-styles'
 import {
-  colorShuttleGrey,
+  colorGreyShuttle,
   colorWhite,
   colorPrimary,
   colorCardinal,
-  colorAthensGrey,
+  colorGreyAthens,
 } from '@tds/core-colours'
 import { medium, mediumFont, color } from '@tds/shared-typography'
 import { safeRest } from '@tds/util-helpers'
@@ -33,12 +33,12 @@ const StyledInput = styled.input(
     margin: 0,
     outline: 0,
     textOverflow: 'ellipsis',
-    borderColor: colorShuttleGrey,
+    borderColor: colorGreyShuttle,
     '&::placeholder': {
       font: 'inherit',
       letterSpacing: 'inherit',
       lineHeight: 'inherit',
-      color: colorShuttleGrey,
+      color: colorGreyShuttle,
     },
   },
   borders.thin,
@@ -60,7 +60,7 @@ const StyledInput = styled.input(
   {
     '&:focus': {
       borderColor: 'transparent',
-      boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
+      boxShadow: `0 0 4px 1px ${colorGreyShuttle}`,
       backgroundColor: colorWhite,
     },
   },
@@ -80,7 +80,7 @@ const StyledInput = styled.input(
   ({ disabled }) => {
     if (disabled) {
       return {
-        backgroundColor: colorAthensGrey,
+        backgroundColor: colorGreyAthens,
         borderColor: 'transparent',
         '&:not(:focus)': {
           borderColor: 'transparent',
