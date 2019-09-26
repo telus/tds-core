@@ -27,7 +27,7 @@ const GlobalStyleGuide = createGlobalStyle({
   },
 
   '.docs_color-preview': {
-    borderRadius: '50%',
+    borderRadius: '20%',
     border: '1px solid #aaa',
     display: 'inline-block',
     height: '90px',
