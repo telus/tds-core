@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorShark, colorWhite } from '@tds/core-colours'
+import { colorGreyShark, colorWhite } from '@tds/core-colours'
 import { links } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
 
@@ -13,7 +13,7 @@ import { warn } from '../../shared/utils/warn'
 const base = {
   ...links.focusOutline,
   '&:link,&:visited': {
-    color: colorShark,
+    color: colorGreyShark,
     textDecoration: 'underline',
   },
   '&:hover': {
