@@ -12,11 +12,11 @@ import InputFeedback from '@tds/core-input-feedback'
 
 import { borders, position, forms } from '@tds/shared-styles'
 import {
-  colorShuttleGrey,
+  colorGreyShuttle,
   colorWhite,
   colorPrimary,
   colorCardinal,
-  colorAthensGrey,
+  colorGreyAthens,
 } from '@tds/core-colours'
 import { medium, mediumFont, color } from '@tds/shared-typography'
 import { safeRest } from '@tds/util-helpers'
@@ -40,14 +40,14 @@ const StyledSelect = styled.select(
     margin: 0,
     outline: 0,
     textOverflow: 'ellipsis',
-    borderColor: colorShuttleGrey,
+    borderColor: colorGreyShuttle,
     backgroundColor: colorWhite,
 
     '&::placeholder': {
       font: 'inherit',
       letterSpacing: 'inherit',
       lineHeight: 'inherit',
-      color: colorShuttleGrey,
+      color: colorGreyShuttle,
     },
   },
   ({ showFeedbackIcon }) => ({
@@ -72,7 +72,7 @@ const StyledSelect = styled.select(
   {
     '&:focus': {
       borderColor: 'transparent',
-      boxShadow: `0 0 4px 1px ${colorShuttleGrey}`,
+      boxShadow: `0 0 4px 1px ${colorGreyShuttle}`,
       backgroundColor: colorWhite,
     },
   },
@@ -92,7 +92,7 @@ const StyledSelect = styled.select(
   ({ disabled }) => {
     if (disabled) {
       return {
-        backgroundColor: colorAthensGrey,
+        backgroundColor: colorGreyAthens,
         borderColor: 'transparent',
         '&:not(:focus)': {
           borderColor: 'transparent',
