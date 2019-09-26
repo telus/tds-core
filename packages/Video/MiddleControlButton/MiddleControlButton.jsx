@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorShark } from '@tds/core-colours'
+import { colorGreyShark } from '@tds/core-colours'
 
 const StyledMiddleControlButton = styled.div(({ isHidden, iconLeftOffsetPx }) => ({
   width: 64,
@@ -10,7 +10,7 @@ const StyledMiddleControlButton = styled.div(({ isHidden, iconLeftOffsetPx }) =>
   borderRadius: '50%',
   transition: 'opacity 0.4s',
   opacity: isHidden ? 0 : 1,
-  background: colorShark,
+  background: colorGreyShark,
   display: 'flex',
   justifyContent: 'center',
   color: 'inherit',
