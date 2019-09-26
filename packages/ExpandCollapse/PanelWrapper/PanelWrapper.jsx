@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
-import { colorAthensGrey } from '@tds/core-colours'
+import { colorGreyAthens } from '@tds/core-colours'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import { media } from '@tds/core-responsive'
 import Text from '@tds/core-text'
@@ -33,7 +33,7 @@ const parseHeader = text => {
 const HeaderButtonClickable = styled.button(buttons.noStyle, ({ panelDisabled }) => ({
   width: '100%',
   textAlign: 'left',
-  ...(panelDisabled && { background: colorAthensGrey, cursor: 'default' }),
+  ...(panelDisabled && { background: colorGreyAthens, cursor: 'default' }),
 }))
 
 const CaretContainer = styled.div(({ isDisabled }) => ({
