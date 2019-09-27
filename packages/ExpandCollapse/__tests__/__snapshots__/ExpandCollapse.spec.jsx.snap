@@ -1346,7 +1346,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   padding-left: 0.1em;
 }
 
-.c13 {
+.c14 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: inherit;
@@ -1354,7 +1354,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   display: block;
 }
 
-.c13 sup {
+.c14 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -1419,7 +1419,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   margin-right: 1rem;
 }
 
-.c12 {
+.c13 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 1.5rem;
@@ -1430,7 +1430,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   flex-direction: column;
 }
 
-.c11 {
+.c12 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -1505,8 +1505,15 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   }
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c11 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -1689,7 +1696,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bdVaJa",
                                   "isStatic": false,
-                                  "lastClassName": "c12",
+                                  "lastClassName": "c13",
                                   "rules": Array [
                                     [Function],
                                     [Function],
@@ -1738,7 +1745,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-bdVaJa",
                                           "isStatic": false,
-                                          "lastClassName": "c12",
+                                          "lastClassName": "c13",
                                           "rules": Array [
                                             [Function],
                                             [Function],
@@ -1887,7 +1894,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c13",
+                                                                  "lastClassName": "c14",
                                                                   "rules": Array [
                                                                     [Function],
                                                                     [Function],
@@ -2106,7 +2113,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                                   "componentStyle": ComponentStyle {
                                                                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c13",
+                                                                    "lastClassName": "c14",
                                                                     "rules": Array [
                                                                       [Function],
                                                                       [Function],
@@ -2165,7 +2172,8 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                     </button>
                   </StyledComponent>
                 </PanelWrapper__HeaderButtonClickable>
-                <Reveal
+                <FadeAndReveal
+                  delay={0}
                   duration={500}
                   height={0}
                   in={false}
@@ -2187,184 +2195,230 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                     timeout={0}
                     unmountOnExit={false}
                   >
-                    <div
-                      aria-hidden={true}
-                      data-testid="childrenContainer"
+                    <FadeAndReveal__StyledContainer
                       style={
                         Object {
                           "height": 0,
+                          "opacity": 0,
                           "overflow": "hidden",
-                          "transition": "height 500ms",
-                          "visibility": "hidden",
+                          "transition": "height 500ms, opacity 500ms ease-in-out",
                         }
                       }
                     >
-                      <div
-                        data-testid="content"
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "FadeAndReveal__StyledContainer-sc-1drkfnv-0",
+                              "isStatic": true,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "@media (prefers-reduced-motion: reduce) {",
+                                "transition: none !important;",
+                                "}",
+                              ],
+                            },
+                            "displayName": "FadeAndReveal__StyledContainer",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "FadeAndReveal__StyledContainer-sc-1drkfnv-0",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        style={
+                          Object {
+                            "height": 0,
+                            "opacity": 0,
+                            "overflow": "hidden",
+                            "transition": "height 500ms, opacity 500ms ease-in-out",
+                          }
+                        }
                       >
-                        <DimpleDivider>
-                          <DimpleDivider__StyledDimpleDivider>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
-                                    "isStatic": true,
-                                    "lastClassName": "c11",
-                                    "rules": Array [
-                                      "padding: 0;",
-                                      "margin: 0;",
-                                      "border-width: 0;",
-                                      "height: 32px;",
-                                      "background-image: radial-gradient(ellipse at top, rgba(150, 150, 150, 0.1) 0%, rgba(0, 0, 0, 0) 70%);",
-                                    ],
-                                  },
-                                  "displayName": "DimpleDivider__StyledDimpleDivider",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
-                                  "target": "hr",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <hr
-                                className="c11"
-                              />
-                            </StyledComponent>
-                          </DimpleDivider__StyledDimpleDivider>
-                        </DimpleDivider>
-                        <Box
-                          inline={false}
-                          inset={4}
-                          tag="div"
+                        <div
+                          className="c11"
+                          style={
+                            Object {
+                              "height": 0,
+                              "opacity": 0,
+                              "overflow": "hidden",
+                              "transition": "height 500ms, opacity 500ms ease-in-out",
+                            }
+                          }
                         >
-                          <styled.div
-                            inline={false}
-                            inset={4}
-                            tag="div"
+                          <div
+                            data-testid="content"
                           >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [
-                                    [Function],
-                                  ],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
-                                    "isStatic": false,
-                                    "lastClassName": "c12",
-                                    "rules": Array [
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                    ],
-                                  },
-                                  "displayName": "styled.div",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
+                            <DimpleDivider>
+                              <DimpleDivider__StyledDimpleDivider>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
+                                        "isStatic": true,
+                                        "lastClassName": "c12",
+                                        "rules": Array [
+                                          "padding: 0;",
+                                          "margin: 0;",
+                                          "border-width: 0;",
+                                          "height: 32px;",
+                                          "background-image: radial-gradient(ellipse at top, rgba(150, 150, 150, 0.1) 0%, rgba(0, 0, 0, 0) 70%);",
+                                        ],
+                                      },
+                                      "displayName": "DimpleDivider__StyledDimpleDivider",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
+                                      "target": "hr",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <hr
+                                    className="c12"
+                                  />
+                                </StyledComponent>
+                              </DimpleDivider__StyledDimpleDivider>
+                            </DimpleDivider>
+                            <Box
                               inline={false}
                               inset={4}
                               tag="div"
                             >
-                              <div
-                                className="c12"
+                              <styled.div
+                                inline={false}
+                                inset={4}
+                                tag="div"
                               >
-                                <Text
-                                  block={true}
-                                  bold={false}
-                                  invert={false}
-                                  size="base"
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [
+                                        [Function],
+                                      ],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bdVaJa",
+                                        "isStatic": false,
+                                        "lastClassName": "c13",
+                                        "rules": Array [
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "styled.div",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bdVaJa",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  inline={false}
+                                  inset={4}
+                                  tag="div"
                                 >
-                                  <Text__StyledText
-                                    block={true}
-                                    bold={false}
-                                    invert={false}
-                                    size="base"
+                                  <div
+                                    className="c13"
                                   >
-                                    <StyledComponent
+                                    <Text
                                       block={true}
                                       bold={false}
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c13",
-                                            "rules": Array [
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              "sup {",
-                                              "top: -0.5em;",
-                                              "font-size: 0.875rem;",
-                                              "position: relative;",
-                                              "vertical-align: baseline;",
-                                              "padding-left: 0.1em;",
-                                              "}",
-                                            ],
-                                          },
-                                          "displayName": "Text__StyledText",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                          "target": "span",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
                                       invert={false}
                                       size="base"
                                     >
-                                      <span
-                                        className="c13"
+                                      <Text__StyledText
+                                        block={true}
+                                        bold={false}
+                                        invert={false}
                                         size="base"
                                       >
-                                        <Panel
-                                          disabled={false}
-                                          header="Panel title"
-                                          id="panel-1"
-                                          key=".0"
+                                        <StyledComponent
+                                          block={true}
+                                          bold={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                "isStatic": false,
+                                                "lastClassName": "c14",
+                                                "rules": Array [
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  "sup {",
+                                                  "top: -0.5em;",
+                                                  "font-size: 0.875rem;",
+                                                  "position: relative;",
+                                                  "vertical-align: baseline;",
+                                                  "padding-left: 0.1em;",
+                                                  "}",
+                                                ],
+                                              },
+                                              "displayName": "Text__StyledText",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                              "target": "span",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          invert={false}
+                                          size="base"
                                         >
-                                          <div>
-                                            Panel content
-                                          </div>
-                                        </Panel>
-                                      </span>
-                                    </StyledComponent>
-                                  </Text__StyledText>
-                                </Text>
-                              </div>
-                            </StyledComponent>
-                          </styled.div>
-                        </Box>
-                      </div>
-                    </div>
+                                          <span
+                                            className="c14"
+                                            size="base"
+                                          >
+                                            <Panel
+                                              disabled={false}
+                                              header="Panel title"
+                                              id="panel-1"
+                                              key=".0"
+                                            >
+                                              <div>
+                                                Panel content
+                                              </div>
+                                            </Panel>
+                                          </span>
+                                        </StyledComponent>
+                                      </Text__StyledText>
+                                    </Text>
+                                  </div>
+                                </StyledComponent>
+                              </styled.div>
+                            </Box>
+                          </div>
+                        </div>
+                      </StyledComponent>
+                    </FadeAndReveal__StyledContainer>
                   </Transition>
-                </Reveal>
+                </FadeAndReveal>
                 <HairlineDivider
                   gradient={false}
                   vertical={false}
@@ -2441,7 +2495,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   padding-left: 0.1em;
 }
 
-.c13 {
+.c14 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: inherit;
@@ -2449,7 +2503,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   display: block;
 }
 
-.c13 sup {
+.c14 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -2514,7 +2568,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   margin-right: 1rem;
 }
 
-.c12 {
+.c13 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 1.5rem;
@@ -2525,7 +2579,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   flex-direction: column;
 }
 
-.c11 {
+.c12 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -2600,8 +2654,15 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   }
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c11 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -2804,7 +2865,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bdVaJa",
                                   "isStatic": false,
-                                  "lastClassName": "c12",
+                                  "lastClassName": "c13",
                                   "rules": Array [
                                     [Function],
                                     [Function],
@@ -2853,7 +2914,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-bdVaJa",
                                           "isStatic": false,
-                                          "lastClassName": "c12",
+                                          "lastClassName": "c13",
                                           "rules": Array [
                                             [Function],
                                             [Function],
@@ -3002,7 +3063,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c13",
+                                                                  "lastClassName": "c14",
                                                                   "rules": Array [
                                                                     [Function],
                                                                     [Function],
@@ -3221,7 +3282,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                                   "componentStyle": ComponentStyle {
                                                                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c13",
+                                                                    "lastClassName": "c14",
                                                                     "rules": Array [
                                                                       [Function],
                                                                       [Function],
@@ -3280,7 +3341,8 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                     </button>
                   </StyledComponent>
                 </PanelWrapper__HeaderButtonClickable>
-                <Reveal
+                <FadeAndReveal
+                  delay={0}
                   duration={500}
                   height={0}
                   in={true}
@@ -3302,183 +3364,230 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                     timeout={500}
                     unmountOnExit={false}
                   >
-                    <div
-                      aria-hidden={false}
-                      data-testid="childrenContainer"
+                    <FadeAndReveal__StyledContainer
                       style={
                         Object {
                           "height": "auto",
-                          "overflow": "visible",
-                          "transition": "height 500ms",
+                          "opacity": 1,
+                          "overflow": "hidden",
+                          "transition": "height 500ms, opacity 500ms ease-in-out",
                         }
                       }
                     >
-                      <div
-                        data-testid="content"
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "FadeAndReveal__StyledContainer-sc-1drkfnv-0",
+                              "isStatic": true,
+                              "lastClassName": "c11",
+                              "rules": Array [
+                                "@media (prefers-reduced-motion: reduce) {",
+                                "transition: none !important;",
+                                "}",
+                              ],
+                            },
+                            "displayName": "FadeAndReveal__StyledContainer",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "FadeAndReveal__StyledContainer-sc-1drkfnv-0",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        style={
+                          Object {
+                            "height": "auto",
+                            "opacity": 1,
+                            "overflow": "hidden",
+                            "transition": "height 500ms, opacity 500ms ease-in-out",
+                          }
+                        }
                       >
-                        <DimpleDivider>
-                          <DimpleDivider__StyledDimpleDivider>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
-                                    "isStatic": true,
-                                    "lastClassName": "c11",
-                                    "rules": Array [
-                                      "padding: 0;",
-                                      "margin: 0;",
-                                      "border-width: 0;",
-                                      "height: 32px;",
-                                      "background-image: radial-gradient(ellipse at top, rgba(150, 150, 150, 0.1) 0%, rgba(0, 0, 0, 0) 70%);",
-                                    ],
-                                  },
-                                  "displayName": "DimpleDivider__StyledDimpleDivider",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
-                                  "target": "hr",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <hr
-                                className="c11"
-                              />
-                            </StyledComponent>
-                          </DimpleDivider__StyledDimpleDivider>
-                        </DimpleDivider>
-                        <Box
-                          inline={false}
-                          inset={4}
-                          tag="div"
+                        <div
+                          className="c11"
+                          style={
+                            Object {
+                              "height": "auto",
+                              "opacity": 1,
+                              "overflow": "hidden",
+                              "transition": "height 500ms, opacity 500ms ease-in-out",
+                            }
+                          }
                         >
-                          <styled.div
-                            inline={false}
-                            inset={4}
-                            tag="div"
+                          <div
+                            data-testid="content"
                           >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [
-                                    [Function],
-                                  ],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
-                                    "isStatic": false,
-                                    "lastClassName": "c12",
-                                    "rules": Array [
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                    ],
-                                  },
-                                  "displayName": "styled.div",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
+                            <DimpleDivider>
+                              <DimpleDivider__StyledDimpleDivider>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
+                                        "isStatic": true,
+                                        "lastClassName": "c12",
+                                        "rules": Array [
+                                          "padding: 0;",
+                                          "margin: 0;",
+                                          "border-width: 0;",
+                                          "height: 32px;",
+                                          "background-image: radial-gradient(ellipse at top, rgba(150, 150, 150, 0.1) 0%, rgba(0, 0, 0, 0) 70%);",
+                                        ],
+                                      },
+                                      "displayName": "DimpleDivider__StyledDimpleDivider",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
+                                      "target": "hr",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <hr
+                                    className="c12"
+                                  />
+                                </StyledComponent>
+                              </DimpleDivider__StyledDimpleDivider>
+                            </DimpleDivider>
+                            <Box
                               inline={false}
                               inset={4}
                               tag="div"
                             >
-                              <div
-                                className="c12"
+                              <styled.div
+                                inline={false}
+                                inset={4}
+                                tag="div"
                               >
-                                <Text
-                                  block={true}
-                                  bold={false}
-                                  invert={false}
-                                  size="base"
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [
+                                        [Function],
+                                      ],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bdVaJa",
+                                        "isStatic": false,
+                                        "lastClassName": "c13",
+                                        "rules": Array [
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "styled.div",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bdVaJa",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  inline={false}
+                                  inset={4}
+                                  tag="div"
                                 >
-                                  <Text__StyledText
-                                    block={true}
-                                    bold={false}
-                                    invert={false}
-                                    size="base"
+                                  <div
+                                    className="c13"
                                   >
-                                    <StyledComponent
+                                    <Text
                                       block={true}
                                       bold={false}
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c13",
-                                            "rules": Array [
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              [Function],
-                                              "sup {",
-                                              "top: -0.5em;",
-                                              "font-size: 0.875rem;",
-                                              "position: relative;",
-                                              "vertical-align: baseline;",
-                                              "padding-left: 0.1em;",
-                                              "}",
-                                            ],
-                                          },
-                                          "displayName": "Text__StyledText",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                          "target": "span",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
                                       invert={false}
                                       size="base"
                                     >
-                                      <span
-                                        className="c13"
+                                      <Text__StyledText
+                                        block={true}
+                                        bold={false}
+                                        invert={false}
                                         size="base"
                                       >
-                                        <Panel
-                                          disabled={false}
-                                          header="Panel title"
-                                          id="panel-1"
-                                          key=".0"
+                                        <StyledComponent
+                                          block={true}
+                                          bold={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                "isStatic": false,
+                                                "lastClassName": "c14",
+                                                "rules": Array [
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  [Function],
+                                                  "sup {",
+                                                  "top: -0.5em;",
+                                                  "font-size: 0.875rem;",
+                                                  "position: relative;",
+                                                  "vertical-align: baseline;",
+                                                  "padding-left: 0.1em;",
+                                                  "}",
+                                                ],
+                                              },
+                                              "displayName": "Text__StyledText",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                              "target": "span",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          invert={false}
+                                          size="base"
                                         >
-                                          <div>
-                                            Panel content
-                                          </div>
-                                        </Panel>
-                                      </span>
-                                    </StyledComponent>
-                                  </Text__StyledText>
-                                </Text>
-                              </div>
-                            </StyledComponent>
-                          </styled.div>
-                        </Box>
-                      </div>
-                    </div>
+                                          <span
+                                            className="c14"
+                                            size="base"
+                                          >
+                                            <Panel
+                                              disabled={false}
+                                              header="Panel title"
+                                              id="panel-1"
+                                              key=".0"
+                                            >
+                                              <div>
+                                                Panel content
+                                              </div>
+                                            </Panel>
+                                          </span>
+                                        </StyledComponent>
+                                      </Text__StyledText>
+                                    </Text>
+                                  </div>
+                                </StyledComponent>
+                              </styled.div>
+                            </Box>
+                          </div>
+                        </div>
+                      </StyledComponent>
+                    </FadeAndReveal__StyledContainer>
                   </Transition>
-                </Reveal>
+                </FadeAndReveal>
                 <HairlineDivider
                   gradient={false}
                   vertical={false}

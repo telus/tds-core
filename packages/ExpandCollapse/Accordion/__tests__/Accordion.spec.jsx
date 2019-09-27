@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import { Reveal } from '@tds/shared-animation'
+import { FadeAndReveal } from '@tds/shared-animation'
 
 import Accordion from '../Accordion'
 
@@ -31,8 +31,8 @@ describe('Accordion', () => {
     }
   }
 
-  const expectPanelToBeOpen = panel => expect(panel.find(Reveal)).toHaveProp('in', true)
-  const expectPanelToBeClosed = panel => expect(panel.find(Reveal)).toHaveProp('in', false)
+  const expectPanelToBeOpen = panel => expect(panel.find(FadeAndReveal)).toHaveProp('in', true)
+  const expectPanelToBeClosed = panel => expect(panel.find(FadeAndReveal)).toHaveProp('in', false)
 
   const defaultProps = {
     id: 'a-panel',
