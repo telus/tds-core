@@ -10,7 +10,7 @@ import { media } from '@tds/core-responsive'
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import DimpleDivider from '@tds/core-dimple-divider'
-import { Reveal, Translate } from '@tds/shared-animation'
+import { FadeAndReveal, Translate } from '@tds/shared-animation'
 import { buttons } from '@tds/shared-styles'
 
 const parseHeader = text => {
@@ -200,7 +200,7 @@ class PanelWrapper extends React.Component {
           ? React.createElement(tag, { 'data-testid': 'headerWrapper' }, headerButton)
           : headerButton}
 
-        <Reveal
+        <FadeAndReveal
           timeout={this.state.open ? 500 : 0}
           duration={500}
           in={this.state.open}
@@ -220,7 +220,7 @@ class PanelWrapper extends React.Component {
               </Box>
             </div>
           )}
-        </Reveal>
+        </FadeAndReveal>
 
         <HairlineDivider />
       </div>

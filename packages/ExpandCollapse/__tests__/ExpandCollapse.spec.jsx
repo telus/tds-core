@@ -4,7 +4,7 @@ import { shallow, mount } from 'enzyme'
 import Text from '@tds/core-text'
 import DecorativeIcon from '@tds/core-decorative-icon'
 import HairlineDivider from '@tds/core-hairline-divider'
-import { Reveal, Translate } from '@tds/shared-animation'
+import { FadeAndReveal, Translate } from '@tds/shared-animation'
 
 import ExpandCollapse from '../ExpandCollapse'
 
@@ -38,8 +38,8 @@ describe('ExpandCollapse', () => {
     }
   }
 
-  const expectPanelToBeOpen = panel => expect(panel.find(Reveal)).toHaveProp('in', true)
-  const expectPanelToBeClosed = panel => expect(panel.find(Reveal)).toHaveProp('in', false)
+  const expectPanelToBeOpen = panel => expect(panel.find(FadeAndReveal)).toHaveProp('in', true)
+  const expectPanelToBeClosed = panel => expect(panel.find(FadeAndReveal)).toHaveProp('in', false)
 
   const defaultProps = {
     id: 'a-panel',
