@@ -168,9 +168,17 @@ const Footnote = props => {
     setBodyHeight(oldHeight)
   }
 
+  const focusHeading = () => {
+    if (content !== null && isVisible && headingRef && headingRef.current !== null) {
+      headingRef.current.focus()
+    }
+  }
+
   const handleStyledFootnoteTransitionEnd = e => {
     if (e.propertyName === 'transform' && !isOpen) {
       setIsVisible(false)
+    } else {
+      focusHeading()
     }
   }
 
@@ -198,12 +206,6 @@ const Footnote = props => {
     if (!isOpen) {
       setBodyHeight('auto')
       setIsTextVisible(true)
-    }
-  }
-
-  const focusHeading = () => {
-    if (content !== null && isVisible && headingRef && headingRef.current !== null) {
-      headingRef.current.focus()
     }
   }
 
@@ -252,9 +254,6 @@ const Footnote = props => {
   }, [number, isOpen, prevProps.isOpen, prevProps.number])
   // reset footnote on close
   useEffect(resetFootnote, [isOpen])
-
-  // focus on the close button on open/content change
-  useEffect(focusHeading, [isVisible, content])
 
   return (
     <div {...safeRest(rest)}>
