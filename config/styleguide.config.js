@@ -141,6 +141,10 @@ module.exports = {
       return `import { Add, Subtract, PlayVideo, [..IconName] } from '@tds/core-interactive-icon'`
     }
 
+    if (name === 'LimitedInteractiveIcon') {
+      return `import { CaretUp, ChevronRight, [...IconName] } from '@tds/core-interactive-icon'`
+    }
+
     return `import ${name} from '@tds/core-${kebabizeName}'`
   },
 
@@ -243,6 +247,7 @@ module.exports = {
               path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
               path.resolve('packages/FeedbackIcon/FeedbackIcon.jsx'),
               path.resolve('packages/InteractiveIcon/InteractiveIcon.jsx'),
+              path.resolve('packages/InteractiveIcon/LimitedInteractiveIcon.jsx'),
             ]
           },
         },
