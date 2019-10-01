@@ -6,6 +6,7 @@ import FlexGrid from '../../../../packages/FlexGrid/FlexGrid'
 import Box from '../../../../packages/Box/Box'
 import Paragraph from '../../../../packages/Paragraph/Paragraph'
 import Strong from '../../../../packages/Strong/Strong'
+import Text from '../../../../packages/Text'
 import { colorGreyAthens } from '../../../../packages/colours/colours'
 
 const StyledPre = styled.pre({
@@ -28,7 +29,7 @@ const StyledCode = styled.code({
   background: '0 0',
 })
 
-const Colour = ({ backgroundColor, name, hex, js, usage, deprecations }) => {
+const Colour = ({ backgroundColor, name, hex, js, usage, notices }) => {
   return (
     <FlexGrid.Col xs={12} sm={6} md={4} lg={3}>
       <Box vertical={3}>
@@ -43,10 +44,12 @@ const Colour = ({ backgroundColor, name, hex, js, usage, deprecations }) => {
               JS: {js}
             </StyledCode>
           </StyledPre>
-          <Paragraph>Usage: {usage}</Paragraph>
-          {deprecations && (
+          <Paragraph>
+            <Text bold>Usage:</Text> {usage}
+          </Paragraph>
+          {notices && (
             <Paragraph>
-              <Strong>Deprecated:</Strong> {deprecations}
+              <Strong>Notice:</Strong> {notices}
             </Paragraph>
           )}
         </Box>
@@ -61,11 +64,11 @@ Colour.propTypes = {
   hex: PropTypes.string.isRequired,
   js: PropTypes.string.isRequired,
   usage: PropTypes.string.isRequired,
-  deprecations: PropTypes.string,
+  notices: PropTypes.string,
 }
 
 Colour.defaultProps = {
-  deprecations: undefined,
+  notices: undefined,
 }
 
 export default Colour
