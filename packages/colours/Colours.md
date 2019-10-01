@@ -65,7 +65,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
       hex="#2A2C2E"
       js="colorGreyShark"
       usage="Sub headings (H3, H4), body text"
-      deprecations="colorShark has been deprecated. Please use colorGreyShark"
+      notices="colorShark has been deprecated. Please use colorGreyShark"
     />
     <ColourPaletteColour
       name="Shuttle"
@@ -73,7 +73,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
       hex="#54595F"
       js="colorGreyShuttle"
       usage="Colour for default links"
-      deprecations="colorShuttleGrey has been deprecated. Please use colorGreyShuttle"
+      notices="colorShuttleGrey has been deprecated. Please use colorGreyShuttle"
     />
     <ColourPaletteColour
       name="Raven"
@@ -88,7 +88,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
       hex="#D8D8D8"
       js="colorGreyGainsboro"
       usage="Horizontal, vertical and wave dividers"
-      deprecations="colorGainsboro has been deprecated. Please use colorGreyGainsboro"
+      notices="colorGainsboro has been deprecated. Please use colorGreyGainsboro"
     />
     <ColourPaletteColour
       name="Athens"
@@ -96,7 +96,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
       hex="#F7F7F8"
       js="colorGreyAthens"
       usage="Helper/disabled state background"
-      deprecations="colorAthensGrey has been deprecated. Please use colorGreyAthens"
+      notices="colorAthensGrey has been deprecated. Please use colorGreyAthens"
     />
   </FlexGrid.Row>
 </FlexGrid>
@@ -143,7 +143,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
       hex="#8C5415"
       js="colorRajahDark"
       usage="Warning notification alert icon"
-      deprecations="colorDarkRaja has been deprecated. Please use colorRajahDark"
+      notices="colorDarkRaja has been deprecated. Please use colorRajahDark"
     />
     <ColourPaletteColour
       name="Rajah"
@@ -151,7 +151,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
       hex="#FACA69"
       js="colorRajah"
       usage="Warning notification border"
-      deprecations="colorRaja has been deprecated. Please use colorRajah"
+      notices="colorRaja has been deprecated. Please use colorRajah"
     />
     <ColourPaletteColour
       name="Light Rajah"
@@ -159,7 +159,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
       hex="#FFF9EE"
       js="colorRajahLight"
       usage=" Warning notification background"
-      deprecations="colorLightRaja has been deprecated. Please use colorRajahLight"
+      notices="colorLightRaja has been deprecated. Please use colorRajahLight"
     />
   </FlexGrid.Row>
 </FlexGrid>
