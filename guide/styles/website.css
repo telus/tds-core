@@ -82,21 +82,20 @@ strong {
 .color__swatch {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .color {
-  width: 250px;
+  width: 230px;
+  margin-right: 20px;
 }
 
 .color__preview {
-  display: inline-block;
-
-  width: 90px;
-  height: 90px;
-
-  border-radius: 50%;
+  border-radius: 20%;
   border: 1px solid #aaa;
+  display: inline-block;
+  height: 90px;
+  line-height: 90px;
+  width: 90px;
 }
 
 .book-summary ul.summary li.active > a {
