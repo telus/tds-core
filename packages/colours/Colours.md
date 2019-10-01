@@ -16,34 +16,35 @@ For more information on the usage of each colour please refer to the [colour pri
 ### Brand
 
 ```jsx noeditor
+const colours = require('./colours.js')
 const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/Colour').default
 
 ;<FlexGrid>
   <FlexGrid.Row>
     <ColourPaletteColour
-      name="Accessible Green"
-      backgroundColor="rgb(43,128,0)"
-      hex="#2B8000"
-      js="colorAccessibleGreen"
-      usage="Primary button backgrounds/outline, text links"
-    />
-    <ColourPaletteColour
-      name="TELUS Green"
-      backgroundColor="rgb(102, 204, 0)"
-      hex="#66CC00"
-      js="colorTelusGreen"
-      usage="Decorative elements (graphs/charts). Use only for decorative items (when it doesn't need to be colour accessible)"
-    />
-    <ColourPaletteColour
       name="TELUS Purple"
-      backgroundColor="rgb(75,40,109)"
+      backgroundColor={colours.colorTelusPurple}
       hex="#4B286D"
       js="colorTelusPurple"
       usage="Headings, secondary button background/outline, chevron links"
     />
     <ColourPaletteColour
+      name="TELUS Green"
+      backgroundColor={colours.colorTelusGreen}
+      hex="#66CC00"
+      js="colorTelusGreen"
+      usage="Decorative elements (graphs/charts). Use only for decorative items (when it doesn't need to be colour accessible)"
+    />
+    <ColourPaletteColour
+      name="Accessible Green"
+      backgroundColor={colours.colorAccessibleGreen}
+      hex="#2B8000"
+      js="colorAccessibleGreen"
+      usage="Primary button backgrounds/outline, text links"
+    />
+    <ColourPaletteColour
       name="White"
-      backgroundColor="rgb(255, 255, 255)"
+      backgroundColor={colours.colorWhite}
       hex="#FFFFFF"
       js="colorWhite"
       usage="Page background, inverted links/buttons"
@@ -55,13 +56,14 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
 ### Greyscale
 
 ```jsx noeditor
+const colours = require('./colours.js')
 const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/Colour').default
 
 ;<FlexGrid>
   <FlexGrid.Row>
     <ColourPaletteColour
       name="Shark"
-      backgroundColor="rgb(42, 44, 46)"
+      backgroundColor={colours.colorGreyShark}
       hex="#2A2C2E"
       js="colorGreyShark"
       usage="Sub headings (H3, H4), body text"
@@ -69,7 +71,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
     />
     <ColourPaletteColour
       name="Shuttle"
-      backgroundColor="rgb(84,89,95)"
+      backgroundColor={colours.colorGreyShuttle}
       hex="#54595F"
       js="colorGreyShuttle"
       usage="Colour for default links"
@@ -77,14 +79,14 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
     />
     <ColourPaletteColour
       name="Raven"
-      backgroundColor="rgb(113,117,123)"
+      backgroundColor={colours.colorGreyRaven}
       hex="#71757B"
       js="colorGreyRaven"
       usage="Form input border"
     />
     <ColourPaletteColour
       name="Gainsboro"
-      backgroundColor="rgb(216,216,216)"
+      backgroundColor={colours.colorGreyGainsboro}
       hex="#D8D8D8"
       js="colorGreyGainsboro"
       usage="Horizontal, vertical and wave dividers"
@@ -92,7 +94,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
     />
     <ColourPaletteColour
       name="Athens"
-      backgroundColor="rgb(247,247,248)"
+      backgroundColor={colours.colorGreyAthens}
       hex="#F7F7F8"
       js="colorGreyAthens"
       usage="Helper/disabled state background"
@@ -105,41 +107,42 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
 ### Notification
 
 ```jsx noeditor
+const colours = require('./colours.js')
 const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/Colour').default
 
 ;<FlexGrid>
   <FlexGrid.Row>
     <ColourPaletteColour
       name="Lavender Blush"
-      backgroundColor="rgb(244,249,242)"
+      backgroundColor={colours.colorLavenderBlush}
       hex="#FFF6F8"
       js="colorLavenderBlush"
       usage="Notification/error messaging background"
     />
     <ColourPaletteColour
       name="Panache"
-      backgroundColor="rgb(244,249,242)"
+      backgroundColor={colours.colorPanache}
       hex="#F4F9F2"
       js="colorPanache"
       usage="Success messaging background"
     />
     <ColourPaletteColour
       name="White Lilac"
-      backgroundColor="rgb(242,239,244)"
+      backgroundColor={colours.colorWhiteLilac}
       hex="#F2EFF4"
       js="colorWhiteLilac"
       usage="Branded messaging background"
     />
     <ColourPaletteColour
       name="Cardinal"
-      backgroundColor="rgb(193,35,53)"
+      backgroundColor={colours.colorCardinal}
       hex="#C12335"
       js="colorCardinal"
       usage="Error body text and icons"
     />
     <ColourPaletteColour
       name="Dark Rajah"
-      backgroundColor="rgb(140,84,21)"
+      backgroundColor={colours.colorRajahDark}
       hex="#8C5415"
       js="colorRajahDark"
       usage="Warning notification alert icon"
@@ -147,7 +150,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
     />
     <ColourPaletteColour
       name="Rajah"
-      backgroundColor="rgb(250,202,105)"
+      backgroundColor={colours.colorRajah}
       hex="#FACA69"
       js="colorRajah"
       usage="Warning notification border"
@@ -155,7 +158,7 @@ const ColourPaletteColour = require('../../docs/components/custom/ColourPalette/
     />
     <ColourPaletteColour
       name="Light Rajah"
-      backgroundColor="rgb(255,249,238)"
+      backgroundColor={colours.colorRajahLight}
       hex="#FFF9EE"
       js="colorRajahLight"
       usage=" Warning notification background"
