@@ -119,6 +119,8 @@ The following group are the active maintainers of this project, and have merge r
   <tr>
     <td align="center"><a href="https://github.com/cuginoAle"><img src="https://avatars3.githubusercontent.com/u/1298616?v=4" width="100px;" alt="Alessio Carnevale"/><br /><sub><b>Alessio Carnevale</b></sub></a><br /><a href="#tds-cuginoAle" title=""></a></td>
     <td align="center"><a href="https://github.com/Jeffrey-Chang"><img src="https://avatars3.githubusercontent.com/u/30445300?v=4" width="100px;" alt="Jeffrey Chang"/><br /><sub><b>Jeffrey Chang</b></sub></a><br /><a href="#tds-Jeffrey-Chang" title=""></a></td>
+    <td align="center"><a href="https://github.com/AriqAhmad"><img src="https://avatars0.githubusercontent.com/u/23136810?v=4" width="100px;" alt="Ariq Ahmad"/><br /><sub><b>Ariq Ahmad</b></sub></a><br /><a href="#tds-AriqAhmad" title=""></a></td>
+    <td align="center"><a href="http://donnavitan.com"><img src="https://avatars3.githubusercontent.com/u/21316148?v=4" width="100px;" alt="Donna Vitan"/><br /><sub><b>Donna Vitan</b></sub></a><br /><a href="#tds-donnavitan" title=""></a></td>
   </tr>
 </table>
 
