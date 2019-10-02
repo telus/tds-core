@@ -2,14 +2,14 @@ const { resolve } = require('path')
 
 const config = {
   outputPath: resolve(__dirname, 'output'),
-  rootSelector: '#rsg-root',
+  rootSelector: '#app',
   tolerance: 0, // percentage
 }
 
 const envConfig = {
   development: {
-    launchUrl: 'http://localhost:6060',
-    healthCheckUrl: 'http://localhost:6060',
+    launchUrl: 'http://localhost:3000',
+    healthCheckUrl: 'http://local.telus.com:3000',
   },
   staging: {
     launchUrl:

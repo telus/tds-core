@@ -1,4 +1,3 @@
-const { rootSelector } = require('../config')
 const { toComponentName } = require('../utils')
 const { ignoredPackagesE2E } = require('../../config/constants')
 
@@ -7,12 +6,10 @@ const generateTest = (packageName, componentName) => ({
     const browserName = browser.options.desiredCapabilities.browserName || ''
     const browserVersion = browser.options.desiredCapabilities.version || 'headless'
 
-    const url = `${browser.launch_url}/#!/${componentName}`
+    const url = `${browser.launch_url}/${componentName}`
 
     browser
       .url(url)
-      .waitForElementVisible(`#${componentName.toLowerCase()}`, 2000)
-      .moveToElement(rootSelector, 0, 0)
       .checkAccessibility()
       .compareScreenshot(componentName, browserName, browserVersion)
       .end()
