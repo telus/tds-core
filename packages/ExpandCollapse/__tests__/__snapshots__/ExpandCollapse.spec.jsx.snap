@@ -2196,6 +2196,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                     unmountOnExit={false}
                   >
                     <FadeAndReveal__StyledContainer
+                      aria-hidden={true}
                       style={
                         Object {
                           "height": 0,
@@ -2206,6 +2207,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                       }
                     >
                       <StyledComponent
+                        aria-hidden={true}
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
@@ -2241,6 +2243,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                         }
                       >
                         <div
+                          aria-hidden={true}
                           className="c11"
                           style={
                             Object {
@@ -3365,6 +3368,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                     unmountOnExit={false}
                   >
                     <FadeAndReveal__StyledContainer
+                      aria-hidden={false}
                       style={
                         Object {
                           "height": "auto",
@@ -3375,6 +3379,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                       }
                     >
                       <StyledComponent
+                        aria-hidden={false}
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
@@ -3410,6 +3415,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                         }
                       >
                         <div
+                          aria-hidden={false}
                           className="c11"
                           style={
                             Object {

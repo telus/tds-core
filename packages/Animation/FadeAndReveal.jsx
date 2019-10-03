@@ -34,6 +34,7 @@ const FadeAndReveal = ({ delay, height, children, ...rest }) => (
           ...defaultStyle(rest.duration, rest.timeout),
           ...transitionStyles(height)(rest.duration, rest.timeout)[state],
         }}
+        aria-hidden={state === 'exiting' || state === 'exited'}
       >
         {children()}
       </StyledContainer>
