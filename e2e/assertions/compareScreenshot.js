@@ -61,6 +61,7 @@ exports.assertion = function(componentName, fileName) {
     return this
   }
 
+  console.log(diffPath)
   this.value = function value(result) {
     result
       .getDiffImage()

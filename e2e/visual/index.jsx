@@ -12,7 +12,9 @@ import CartesianComponents from './components/**/*'
 
 const renderExample = options => (
   <Example name={options.name}>
-    <options.Component container={StyledContainer} />
+    <div id={options.name}>
+      <options.Component container={StyledContainer} />
+    </div>
   </Example>
 )
 

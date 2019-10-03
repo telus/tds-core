@@ -40,8 +40,8 @@ const takeScreenshot = (resultPath, browser, selector, callback) => {
   })
 }
 
-exports.command = function compareScreenshot(componentName, browserName, browserVersion) {
-  const fileName = `${browserName}_${browserVersion}.png`
+exports.command = function compareScreenshot(componentName, browserName, browserVersion, isMobile) {
+  const fileName = `${browserName}_${browserVersion}${isMobile ? '_mobile' : ''}.png`
   const folders = getVisualRegressionFolders(componentName)
   const resultScreenshotPath = resolve(folders.results, fileName)
 
