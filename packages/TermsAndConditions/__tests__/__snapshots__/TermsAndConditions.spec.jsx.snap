@@ -497,6 +497,7 @@ div.c14 {
     </div>
   </div>
   <div
+    aria-hidden="true"
     class="c11"
     style="transition:height 150ms, opacity 150ms ease-in-out;opacity:0;height:0;overflow:hidden"
   >
@@ -1628,6 +1629,7 @@ div.c14 {
         unmountOnExit={false}
       >
         <FadeAndReveal__StyledContainer
+          aria-hidden={false}
           style={
             Object {
               "height": 0,
@@ -1638,6 +1640,7 @@ div.c14 {
           }
         >
           <StyledComponent
+            aria-hidden={false}
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -1673,6 +1676,7 @@ div.c14 {
             }
           >
             <div
+              aria-hidden={false}
               className="c11"
               style={
                 Object {
@@ -3831,6 +3835,7 @@ div.c14 {
         unmountOnExit={false}
       >
         <FadeAndReveal__StyledContainer
+          aria-hidden={false}
           style={
             Object {
               "height": 0,
@@ -3841,6 +3846,7 @@ div.c14 {
           }
         >
           <StyledComponent
+            aria-hidden={false}
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -3876,6 +3882,7 @@ div.c14 {
             }
           >
             <div
+              aria-hidden={false}
               className="c11"
               style={
                 Object {
@@ -6697,6 +6704,7 @@ div.c14 {
         unmountOnExit={false}
       >
         <FadeAndReveal__StyledContainer
+          aria-hidden={false}
           style={
             Object {
               "height": 0,
@@ -6707,6 +6715,7 @@ div.c14 {
           }
         >
           <StyledComponent
+            aria-hidden={false}
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -6742,6 +6751,7 @@ div.c14 {
             }
           >
             <div
+              aria-hidden={false}
               className="c11"
               style={
                 Object {
