@@ -20,7 +20,8 @@ const App = () => {
   return (
     <>
       <CSSReset />
-      <Library renderSideNav={() => undefined}>
+      <Library>
+        <Example name="Health">Healthcheck</Example>
         {CartesianComponents.map(CartesianComponent => renderExample(CartesianComponent.default))}
       </Library>
     </>
