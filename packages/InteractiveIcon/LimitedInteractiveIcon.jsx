@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { ThemeProvider } from 'styled-components'
 
@@ -50,9 +50,9 @@ const getTheme = variant => {
 /**
  * @version ./package.json
  */
-const LimitedInteractiveIcon = forwardRef(({ variant, children }) => (
+const LimitedInteractiveIcon = ({ variant, children }) => (
   <ThemeProvider theme={getTheme(variant)}>{children}</ThemeProvider>
-))
+)
 
 LimitedInteractiveIcon.displayName = 'LimitedInteractiveIcon'
 
