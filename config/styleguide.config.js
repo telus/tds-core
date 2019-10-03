@@ -306,6 +306,7 @@ module.exports = {
               path.resolve('packages/Video/Video.jsx'),
               path.resolve('packages/WebVideo/WebVideo.jsx'),
               path.resolve('packages/A11yContent/A11yContent.jsx'),
+              path.resolve('packages/ContentSlider/ContentSlider.jsx'),
             ]
           },
         },
