@@ -50,13 +50,27 @@ module.exports = {
         visualTesting,
       },
     },
+    headlessMobile: {
+      desiredCapabilities: {
+        browserName: 'chrome',
+        isMobile: true,
+        chromeOptions: {
+          args: [
+            '--no-sandbox',
+            '--headless',
+            'window-size=320,3000',
+            'force-device-scale-factor=1',
+          ],
+        },
+      },
+    },
     headless: {
       desiredCapabilities: {
         chromeOptions: {
           args: [
             '--no-sandbox',
             '--headless',
-            'window-size=1280,3000',
+            'window-size=768,3000',
             'force-device-scale-factor=1',
           ],
         },
