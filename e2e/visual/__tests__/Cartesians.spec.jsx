@@ -3,8 +3,10 @@ const fs = require('fs')
 const { exec } = require('child_process')
 
 const ignoredPackages = [
+  'Animation',
   'Box',
   'FlexGrid',
+  'Responsive',
   'colours',
   'css-reset',
   'helpers',
@@ -27,7 +29,7 @@ describe('visual tests for all components', () => {
     })
   })
 
-  it('works', () => {
+  it('runs cartesian component tests for all components', () => {
     const missingCartesianComponents = []
     components.forEach(component => {
       const file = `./e2e/visual/components/Cartesian${component.name}.jsx`
