@@ -2,6 +2,7 @@
 
 Welcome to the TDS Announcement Board! Check back here regularly for the latest updates on TDS!
 
+- [September 2019](#september-2019)
 - [August 2019](#august-2019)
 - [July 2019](#july-2019)
 - [June 2019](#june-2019)
@@ -13,6 +14,49 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 - [December 2018](#december-2018)
 
 <hr/>
+
+## September 2019
+
+### DSM Updates
+
+**v2.3.4**
+
+Icons
+- Newly added to “General”
+- [Docs](https://tds.telus.com/components/index.html#decorativeicon) 
+
+**v2.3.3**
+
+Notifications (new addition and updates to existing)
+- Added 2 new components: Warning and Dismissible Warning
+- Warning and Dismissible Warning use the new Warning Feedback Icon, Close Interactive Icon, and Rajah Light (yellow) background
+- Updated existing Dismissible Error/Success with the Close Interactive Icon
+- [Docs](https://tds.telus.com/components/index.html#notification) 
+
+Card (new addition)
+- Teams can use the defaultWithBorder variant to add a border to the Card for comparison, horizontal plan, and My TELUS account overview cards
+- Added a new layer style; same as default card background but with a border
+- [Docs](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-card%402.1.0) 
+
+### New TDS Core Features 🎁
+
+**DecorativeIcon@2.3.0**
+- @tds/core-decorative-icon@2.3.0 now includes the `Offices` icon!
+- [Docs](https://tds.telus.com/components/index.html#svgicon)
+
+### New Community Features 🎁
+
+**SideNavigation v3.0.0**
+- Updated UI and removal of `active` prop from `SubMenu`, hence a breaking change 
+- [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-side-navigation%403.0.0)
+
+**Skeleton v3.0.0**
+- Skelton component is now converted to styled-components
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fshared-animation%402.0.0)
+
+**Testimonal v3.0.0**
+- Testimonal component is now converted to styled-components
+- [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-testimonial%403.0.0)
 
 ## August 2019
 
