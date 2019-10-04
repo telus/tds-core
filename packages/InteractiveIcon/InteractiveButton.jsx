@@ -78,27 +78,25 @@ const getTheme = variant => {
 /**
  * @version ./package.json
  */
-const InteractiveIcon = forwardRef(
-  ({ a11yText, variant, onClick, children, tag, ...rest }, ref) => (
-    <ThemeProvider theme={getTheme(variant)}>
-      <StyledInteractiveIconButton
-        {...safeRest(rest)}
-        variant={variant}
-        onClick={onClick}
-        as={tag}
-        ref={ref}
-      >
-        <A11yContent>{a11yText}</A11yContent>
-        <StyledInteractiveIconHover />
-        {children}
-      </StyledInteractiveIconButton>
-    </ThemeProvider>
-  )
-)
+const Button = forwardRef(({ a11yText, variant, onClick, children, tag, ...rest }, ref) => (
+  <ThemeProvider theme={getTheme(variant)}>
+    <StyledInteractiveIconButton
+      {...safeRest(rest)}
+      variant={variant}
+      onClick={onClick}
+      as={tag}
+      ref={ref}
+    >
+      <A11yContent>{a11yText}</A11yContent>
+      <StyledInteractiveIconHover />
+      {children}
+    </StyledInteractiveIconButton>
+  </ThemeProvider>
+))
 
-InteractiveIcon.displayName = 'InteractiveIcon'
+Button.displayName = 'Button'
 
-InteractiveIcon.propTypes = {
+Button.propTypes = {
   /**
    * A description of the icon for screen readers.
    */
@@ -121,10 +119,10 @@ InteractiveIcon.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-InteractiveIcon.defaultProps = {
+Button.defaultProps = {
   variant: 'default',
   onClick: undefined,
   tag: 'button',
 }
 
-export default InteractiveIcon
+export default Button

@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react'
 
-import InteractiveIcon, { StyledInteractiveIconSVG } from '../InteractiveIcon'
+import InteractiveIcon, { StyledInteractiveIconSVG } from '../InteractiveButton'
 
 const Close = forwardRef((props, ref) => (
   <InteractiveIcon {...props} ref={ref}>
