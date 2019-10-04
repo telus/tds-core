@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://github.com/telusdigital/tds/compare/@tds/core-dimple-divider@2.0.6...@tds/core-dimple-divider@2.0.7) (2019-10-04)
+
+**Note:** Version bump only for package @tds/core-dimple-divider
+
+
+
+
+
 ## [2.0.6](https://github.com/telusdigital/tds/compare/@tds/core-dimple-divider@2.0.5...@tds/core-dimple-divider@2.0.6) (2019-09-12)
 
 **Note:** Version bump only for package @tds/core-dimple-divider

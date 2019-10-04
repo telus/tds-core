@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.1.0...@tds/core-interactive-icon@1.2.0) (2019-10-04)
+
+
+### Features
+
+* **core-interactive-icon:** add caret and chevron icons ([eaa6bc2](https://github.com/telus/tds-core/commit/eaa6bc2))
+
+
+
+
+
 # [1.1.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.0.2...@tds/core-interactive-icon@1.1.0) (2019-09-18)
 
 

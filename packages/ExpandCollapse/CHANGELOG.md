@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.17](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.0.16...@tds/core-expand-collapse@2.0.17) (2019-10-04)
+
+
+### Bug Fixes
+
+* **core-expand-collapse:** replace Reveal with FadeAndReveal animation ([73db09a](https://github.com/telus/tds-core/commit/73db09a))
+* **shared-animation:** add aria-hidden to content when closed ([9343501](https://github.com/telus/tds-core/commit/9343501))
+
+
+
+
+
 ## [2.0.16](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.0.15...@tds/core-expand-collapse@2.0.16) (2019-09-23)
 
 **Note:** Version bump only for package @tds/core-expand-collapse
