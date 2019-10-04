@@ -84,7 +84,7 @@ exports[`InteractiveIcon renders 1`] = `
   }
 }
 
-<InteractiveIcon
+<Button
   a11yText="This is an interactive icon"
   tag="button"
   variant="default"
@@ -97,7 +97,7 @@ exports[`InteractiveIcon renders 1`] = `
       }
     }
   >
-    <InteractiveIcon__StyledInteractiveIconButton
+    <InteractiveButton__StyledInteractiveIconButton
       as="button"
       variant="default"
     >
@@ -137,7 +137,7 @@ exports[`InteractiveIcon renders 1`] = `
                 "-webkit-tap-highlight-color: transparent;",
               ],
             },
-            "displayName": "InteractiveIcon__StyledInteractiveIconButton",
+            "displayName": "InteractiveButton__StyledInteractiveIconButton",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "c0",
@@ -192,14 +192,14 @@ exports[`InteractiveIcon renders 1`] = `
               </StyledComponent>
             </A11yContent__StyledA11yContent>
           </A11yContent>
-          <InteractiveIcon__StyledInteractiveIconHover>
+          <InteractiveButton__StyledInteractiveIconHover>
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "InteractiveIcon__StyledInteractiveIconHover-sc-1pxz8wd-2",
+                    "componentId": "InteractiveButton__StyledInteractiveIconHover-kya8jb-2",
                     "isStatic": false,
                     "lastClassName": "c3",
                     "rules": Array [
@@ -221,10 +221,10 @@ exports[`InteractiveIcon renders 1`] = `
                       "}",
                     ],
                   },
-                  "displayName": "InteractiveIcon__StyledInteractiveIconHover",
+                  "displayName": "InteractiveButton__StyledInteractiveIconHover",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "InteractiveIcon__StyledInteractiveIconHover-sc-1pxz8wd-2",
+                  "styledComponentId": "InteractiveButton__StyledInteractiveIconHover-kya8jb-2",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -237,11 +237,11 @@ exports[`InteractiveIcon renders 1`] = `
                 className="c3"
               />
             </StyledComponent>
-          </InteractiveIcon__StyledInteractiveIconHover>
+          </InteractiveButton__StyledInteractiveIconHover>
           <svg />
         </button>
       </StyledComponent>
-    </InteractiveIcon__StyledInteractiveIconButton>
+    </InteractiveButton__StyledInteractiveIconButton>
   </ThemeProvider>
-</InteractiveIcon>
+</Button>
 `;

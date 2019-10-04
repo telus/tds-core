@@ -50,13 +50,13 @@ const getTheme = variant => {
 /**
  * @version ./package.json
  */
-const LimitedInteractiveIcon = ({ variant, children }) => (
+const Limited = ({ variant, children }) => (
   <ThemeProvider theme={getTheme(variant)}>{children}</ThemeProvider>
 )
 
-LimitedInteractiveIcon.displayName = 'LimitedInteractiveIcon'
+Limited.displayName = 'Limited'
 
-LimitedInteractiveIcon.propTypes = {
+Limited.propTypes = {
   /**
    * The style.
    */
@@ -67,8 +67,8 @@ LimitedInteractiveIcon.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-LimitedInteractiveIcon.defaultProps = {
+Limited.defaultProps = {
   variant: 'default',
 }
 
-export default LimitedInteractiveIcon
+export default Limited
