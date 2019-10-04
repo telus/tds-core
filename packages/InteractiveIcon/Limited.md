@@ -1,6 +1,8 @@
 ### Limited interactive icons
 
-These icons indicate interactivity but not themselves function as independent interactive components. They depend on other interactive components, such as ExpandCollapse and ChevronLink. They’re not to be used or displayed on their own.
+These icons indicate interactivity, but are not inherently interactive.
+They depend on other interactive components, such as ExpandCollapse and ChevronLink.
+They're not to be used or displayed on their own.
 
 - Must depend on other interactive components
 - Must appear with a visible label as part of the wrapper component
@@ -56,10 +58,10 @@ These interactive icons have a default colour of Accessible Green with the follo
 <Box between={2}>
   <Heading level="h4">Default: Accessible Green (#2B8000)</Heading>
   <ChevronRight />
-  <Heading level="h4">Alternative: TELUS purple (#4B286D)</Heading>
-  <ChevronRight variant="alternative" />
   <Heading level="h4">Basic: Shark Grey (#2A2C2E)</Heading>
   <ChevronRight variant="basic" />
+  <Heading level="h4">Alternative: TELUS purple (#4B286D)</Heading>
+  <ChevronRight variant="alternative" />
   <Heading level="h4">Inverted: White (#FFFFFF)</Heading>
   <div style={{ backgroundColor: '#4B286D', display: 'inline-block' }}>
     <ChevronRight variant="inverted" />
