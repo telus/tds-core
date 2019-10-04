@@ -137,11 +137,11 @@ module.exports = {
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
 
-    if (name === 'InteractiveIcon') {
+    if (name === 'InteractiveButton') {
       return `import { Add, Subtract, PlayVideo, [..IconName] } from '@tds/core-interactive-icon'`
     }
 
-    if (name === 'LimitedInteractiveIcon') {
+    if (name === 'Limited') {
       return `import { CaretUp, ChevronRight, [...IconName] } from '@tds/core-interactive-icon'`
     }
 
@@ -246,10 +246,16 @@ module.exports = {
               path.resolve('packages/DecorativeIcon/SVGIcon.jsx'),
               path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
               path.resolve('packages/FeedbackIcon/FeedbackIcon.jsx'),
-              path.resolve('packages/InteractiveIcon/InteractiveIcon.jsx'),
-              path.resolve('packages/InteractiveIcon/LimitedInteractiveIcon.jsx'),
             ]
           },
+          sections: [
+            {
+              name: 'Interactive Icons',
+              components() {
+                return [path.resolve('packages/InteractiveIcon/*.jsx')]
+              },
+            },
+          ],
         },
         {
           name: 'Forms',
