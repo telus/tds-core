@@ -2,19 +2,8 @@
 const fs = require('fs')
 const { exec } = require('child_process')
 
-const ignoredPackages = [
-  'Animation',
-  'Box',
-  'FlexGrid',
-  'Responsive',
-  'colours',
-  'css-reset',
-  'helpers',
-  'hocs',
-  'prop-types',
-  'styles',
-  'typography',
-]
+const { ignoredPackagesE2E } = require('../../../config/constants')
+
 let components = []
 describe('visual tests for all components', () => {
   beforeAll(done => {
@@ -24,7 +13,7 @@ describe('visual tests for all components', () => {
         .map(p => {
           return { name: p.location.split('/').slice(-1)[0], packageName: p.name }
         })
-        .filter(p => !ignoredPackages.includes(p.name))
+        .filter(p => !ignoredPackagesE2E.includes(p.packageName))
       done()
     })
   })
