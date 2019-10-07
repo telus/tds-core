@@ -10,7 +10,7 @@ const CartesianInput = props => (
   <Cartesian
     {...props}
     component={Input}
-    type={['text', 'number', 'password', 'email', 'search', 'tel', 'url']}
+    type={['text', 'number', 'password', 'email']}
     label="TDS Input"
     hint={[undefined, 'Hint text']}
     hintPosition={[undefined, 'inline', 'below']}
