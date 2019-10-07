@@ -40,7 +40,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions: {
-          args: ['--no-sandbox', 'window-size=1280,3000'],
+          args: ['--no-sandbox', '--headless', 'force-device-scale-factor=1'],
         },
         javascriptEnabled: true,
         acceptSslCerts: true,
@@ -52,27 +52,17 @@ module.exports = {
     },
     headlessMobile: {
       desiredCapabilities: {
-        browserName: 'chrome',
         isMobile: true,
         chromeOptions: {
-          args: [
-            '--no-sandbox',
-            '--headless',
-            'window-size=320,3000',
-            'force-device-scale-factor=1',
-          ],
+          args: ['window-size=320,3000'],
         },
       },
     },
     headless: {
       desiredCapabilities: {
+        isMobile: false,
         chromeOptions: {
-          args: [
-            '--no-sandbox',
-            '--headless',
-            'window-size=768,3000',
-            'force-device-scale-factor=1',
-          ],
+          args: ['window-size=768,3000'],
         },
       },
     },
