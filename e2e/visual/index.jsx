@@ -1,33 +1,49 @@
 /* eslint-disable */
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import { Library, Example } from '@compositor/kit'
-
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { createGlobalStyle } from 'styled-components'
 import StyledContainer from './shared/StyledContainer'
 
 import CSSReset from '../../packages/css-reset/index'
+import Heading from '../../packages/Heading'
 
 import CartesianComponents from './components/**/*'
 
-const renderExample = options => (
-  <Example name={options.name}>
+const DisableAnimation = createGlobalStyle({
+  '*': {
+    transition: 'none !important',
+  },
+  'svg, circle': {
+    'animation-play-state': 'paused !important',
+  },
+})
+
+const renderExample = options => () => (
+  <React.Fragment>
+    <StyledContainer>
+      <Heading level="h1">{options.name}</Heading>
+    </StyledContainer>
     <div id={options.name}>
       <options.Component container={StyledContainer} />
     </div>
-  </Example>
+  </React.Fragment>
 )
 
-const App = () => {
-  return (
-    <>
-      <CSSReset />
-      <Library>
-        <Example name="Health">Healthcheck</Example>
-        {CartesianComponents.map(CartesianComponent => renderExample(CartesianComponent.default))}
-      </Library>
-    </>
-  )
-}
+const App = () => (
+  <>
+    <CSSReset />
+    <DisableAnimation />
+    <Router>
+      {CartesianComponents.map(CartesianComponent => (
+        <Route
+          key={CartesianComponent.default.name}
+          path={`/${CartesianComponent.default.name}`}
+          component={renderExample(CartesianComponent.default)}
+        />
+      ))}
+    </Router>
+  </>
+)
 
 ReactDOM.render(<App />, document.getElementById('app'))
