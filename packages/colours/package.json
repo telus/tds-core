@@ -10,7 +10,7 @@
     "url": "git+https://github.com/telusdigital/tds.git"
   },
   "scripts": {
-    "postinstall": "node ./deprecate.js; exit 0;"
+    "postinstall": "node deprecate.js"
   },
   "publishConfig": {
     "access": "public"
