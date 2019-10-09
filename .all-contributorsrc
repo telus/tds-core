@@ -545,6 +545,15 @@
       "contributions": [
         "tds"
       ]
+    },
+    {
+      "login": "donnavitan",
+      "name": "Donna Vitan",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/21316148?v=4",
+      "profile": "http://donnavitan.com",
+      "contributions": [
+        "tds"
+      ]
     }
   ],
   "commitConvention": "none"

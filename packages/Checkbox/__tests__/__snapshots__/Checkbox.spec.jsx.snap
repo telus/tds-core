@@ -68,10 +68,10 @@ exports[`Checkbox allows numbers as value 1`] = `
 }
 
 .c6 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -298,10 +298,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -387,10 +387,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -507,10 +507,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -593,10 +593,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -712,10 +712,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -968,10 +968,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1057,10 +1057,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -1177,10 +1177,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1263,10 +1263,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -1382,10 +1382,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1642,10 +1642,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1731,10 +1731,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -1851,10 +1851,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1937,10 +1937,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -2056,10 +2056,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2316,10 +2316,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2405,10 +2405,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -2525,10 +2525,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2611,10 +2611,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -2730,10 +2730,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3114,10 +3114,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3203,10 +3203,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -3323,10 +3323,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3409,10 +3409,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -3528,10 +3528,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3692,10 +3692,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3758,10 +3758,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -3878,10 +3878,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3941,10 +3941,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -4060,10 +4060,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -4201,10 +4201,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -4267,10 +4267,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -4387,10 +4387,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -4450,10 +4450,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -4569,10 +4569,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -4710,10 +4710,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -4776,10 +4776,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -4896,10 +4896,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -4959,10 +4959,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -5078,10 +5078,10 @@ Array [
 }
 
 .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -5249,10 +5249,10 @@ Array [
 }
 
 .c2 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -5318,10 +5318,10 @@ Array [
               "isStatic": true,
               "lastClassName": "c2",
               "rules": Array [
-                "height: 20px;",
-                "width: 20px;",
-                "min-height: 20px;",
-                "min-width: 20px;",
+                "height: 1.25rem;",
+                "width: 1.25rem;",
+                "min-height: 1.25rem;",
+                "min-width: 1.25rem;",
                 "outline: 0;",
                 "line-height: 0;",
                 "display: flex;",
@@ -5674,10 +5674,10 @@ exports[`Checkbox renders 1`] = `
 }
 
 .c6 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
