@@ -46,10 +46,10 @@ exports[`Radio allows numbers as value 1`] = `
 }
 
 .c6 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -115,8 +115,8 @@ exports[`Radio allows numbers as value 1`] = `
 }
 
 .c7 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -261,10 +261,10 @@ exports[`Radio disabled can be disabled 1`] = `
 exports[`Radio disabled can be disabled 2`] = `
 Array [
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -333,8 +333,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -354,10 +354,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -403,8 +403,8 @@ Array [
                   "isStatic": true,
                   "lastClassName": "c2",
                   "rules": Array [
-                    "width: 12px;",
-                    "height: 12px;",
+                    "width: 0.75rem;",
+                    "height: 0.75rem;",
                     "border-radius: 50%;",
                     "background-color: #2B8000;",
                     "display: none;",
@@ -431,10 +431,10 @@ Array [
     </StyledComponent>
   </Radio__FakeRadio>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -503,8 +503,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -521,10 +521,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -570,8 +570,8 @@ Array [
                 "isStatic": true,
                 "lastClassName": "c2",
                 "rules": Array [
-                  "width: 12px;",
-                  "height: 12px;",
+                  "width: 0.75rem;",
+                  "height: 0.75rem;",
                   "border-radius: 50%;",
                   "background-color: #2B8000;",
                   "display: none;",
@@ -597,10 +597,10 @@ Array [
     </span>
   </StyledComponent>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -669,8 +669,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -691,8 +691,8 @@ Array [
               "isStatic": true,
               "lastClassName": "c2",
               "rules": Array [
-                "width: 12px;",
-                "height: 12px;",
+                "width: 0.75rem;",
+                "height: 0.75rem;",
                 "border-radius: 50%;",
                 "background-color: #2B8000;",
                 "display: none;",
@@ -810,10 +810,10 @@ exports[`Radio disabled can be disabled and checked 1`] = `
 exports[`Radio disabled can be disabled and checked 2`] = `
 Array [
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -882,8 +882,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -903,10 +903,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -952,8 +952,8 @@ Array [
                   "isStatic": true,
                   "lastClassName": "c2",
                   "rules": Array [
-                    "width: 12px;",
-                    "height: 12px;",
+                    "width: 0.75rem;",
+                    "height: 0.75rem;",
                     "border-radius: 50%;",
                     "background-color: #2B8000;",
                     "display: none;",
@@ -980,10 +980,10 @@ Array [
     </StyledComponent>
   </Radio__FakeRadio>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1052,8 +1052,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -1070,10 +1070,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -1119,8 +1119,8 @@ Array [
                 "isStatic": true,
                 "lastClassName": "c2",
                 "rules": Array [
-                  "width: 12px;",
-                  "height: 12px;",
+                  "width: 0.75rem;",
+                  "height: 0.75rem;",
                   "border-radius: 50%;",
                   "background-color: #2B8000;",
                   "display: none;",
@@ -1146,10 +1146,10 @@ Array [
     </span>
   </StyledComponent>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1218,8 +1218,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -1240,8 +1240,8 @@ Array [
               "isStatic": true,
               "lastClassName": "c2",
               "rules": Array [
-                "width: 12px;",
-                "height: 12px;",
+                "width: 0.75rem;",
+                "height: 0.75rem;",
                 "border-radius: 50%;",
                 "background-color: #2B8000;",
                 "display: none;",
@@ -1361,10 +1361,10 @@ exports[`Radio error can have an error feedback state 1`] = `
 exports[`Radio error can have an error feedback state 2`] = `
 Array [
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1433,8 +1433,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -1454,10 +1454,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -1503,8 +1503,8 @@ Array [
                   "isStatic": true,
                   "lastClassName": "c2",
                   "rules": Array [
-                    "width: 12px;",
-                    "height: 12px;",
+                    "width: 0.75rem;",
+                    "height: 0.75rem;",
                     "border-radius: 50%;",
                     "background-color: #2B8000;",
                     "display: none;",
@@ -1531,10 +1531,10 @@ Array [
     </StyledComponent>
   </Radio__FakeRadio>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1603,8 +1603,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -1621,10 +1621,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -1670,8 +1670,8 @@ Array [
                 "isStatic": true,
                 "lastClassName": "c2",
                 "rules": Array [
-                  "width: 12px;",
-                  "height: 12px;",
+                  "width: 0.75rem;",
+                  "height: 0.75rem;",
                   "border-radius: 50%;",
                   "background-color: #2B8000;",
                   "display: none;",
@@ -1697,10 +1697,10 @@ Array [
     </span>
   </StyledComponent>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1769,8 +1769,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -1791,8 +1791,8 @@ Array [
               "isStatic": true,
               "lastClassName": "c2",
               "rules": Array [
-                "width: 12px;",
-                "height: 12px;",
+                "width: 0.75rem;",
+                "height: 0.75rem;",
                 "border-radius: 50%;",
                 "background-color: #2B8000;",
                 "display: none;",
@@ -1910,10 +1910,10 @@ exports[`Radio error does not appear as an error when it is checked 1`] = `
 exports[`Radio error does not appear as an error when it is checked 2`] = `
 Array [
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -1982,8 +1982,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -2003,10 +2003,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -2052,8 +2052,8 @@ Array [
                   "isStatic": true,
                   "lastClassName": "c2",
                   "rules": Array [
-                    "width: 12px;",
-                    "height: 12px;",
+                    "width: 0.75rem;",
+                    "height: 0.75rem;",
                     "border-radius: 50%;",
                     "background-color: #2B8000;",
                     "display: none;",
@@ -2080,10 +2080,10 @@ Array [
     </StyledComponent>
   </Radio__FakeRadio>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2152,8 +2152,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -2170,10 +2170,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -2219,8 +2219,8 @@ Array [
                 "isStatic": true,
                 "lastClassName": "c2",
                 "rules": Array [
-                  "width: 12px;",
-                  "height: 12px;",
+                  "width: 0.75rem;",
+                  "height: 0.75rem;",
                   "border-radius: 50%;",
                   "background-color: #2B8000;",
                   "display: none;",
@@ -2246,10 +2246,10 @@ Array [
     </span>
   </StyledComponent>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2318,8 +2318,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -2340,8 +2340,8 @@ Array [
               "isStatic": true,
               "lastClassName": "c2",
               "rules": Array [
-                "width: 12px;",
-                "height: 12px;",
+                "width: 0.75rem;",
+                "height: 0.75rem;",
                 "border-radius: 50%;",
                 "background-color: #2B8000;",
                 "display: none;",
@@ -2371,10 +2371,10 @@ Array [
 exports[`Radio focusing can be focused and unfocused 1`] = `
 Array [
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2422,8 +2422,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -2443,10 +2443,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -2492,8 +2492,8 @@ Array [
                   "isStatic": true,
                   "lastClassName": "c2",
                   "rules": Array [
-                    "width: 12px;",
-                    "height: 12px;",
+                    "width: 0.75rem;",
+                    "height: 0.75rem;",
                     "border-radius: 50%;",
                     "background-color: #2B8000;",
                     "display: none;",
@@ -2520,10 +2520,10 @@ Array [
     </StyledComponent>
   </Radio__FakeRadio>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2571,8 +2571,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -2589,10 +2589,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -2638,8 +2638,8 @@ Array [
                 "isStatic": true,
                 "lastClassName": "c2",
                 "rules": Array [
-                  "width: 12px;",
-                  "height: 12px;",
+                  "width: 0.75rem;",
+                  "height: 0.75rem;",
                   "border-radius: 50%;",
                   "background-color: #2B8000;",
                   "display: none;",
@@ -2665,10 +2665,10 @@ Array [
     </span>
   </StyledComponent>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2716,8 +2716,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -2738,8 +2738,8 @@ Array [
               "isStatic": true,
               "lastClassName": "c2",
               "rules": Array [
-                "width: 12px;",
-                "height: 12px;",
+                "width: 0.75rem;",
+                "height: 0.75rem;",
                 "border-radius: 50%;",
                 "background-color: #2B8000;",
                 "display: none;",
@@ -2769,10 +2769,10 @@ Array [
 exports[`Radio focusing can be focused and unfocused 2`] = `
 Array [
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2820,8 +2820,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -2841,10 +2841,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -2890,8 +2890,8 @@ Array [
                   "isStatic": true,
                   "lastClassName": "c2",
                   "rules": Array [
-                    "width: 12px;",
-                    "height: 12px;",
+                    "width: 0.75rem;",
+                    "height: 0.75rem;",
                     "border-radius: 50%;",
                     "background-color: #2B8000;",
                     "display: none;",
@@ -2918,10 +2918,10 @@ Array [
     </StyledComponent>
   </Radio__FakeRadio>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -2969,8 +2969,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -2987,10 +2987,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -3036,8 +3036,8 @@ Array [
                 "isStatic": true,
                 "lastClassName": "c2",
                 "rules": Array [
-                  "width: 12px;",
-                  "height: 12px;",
+                  "width: 0.75rem;",
+                  "height: 0.75rem;",
                   "border-radius: 50%;",
                   "background-color: #2B8000;",
                   "display: none;",
@@ -3063,10 +3063,10 @@ Array [
     </span>
   </StyledComponent>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3114,8 +3114,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -3136,8 +3136,8 @@ Array [
               "isStatic": true,
               "lastClassName": "c2",
               "rules": Array [
-                "width: 12px;",
-                "height: 12px;",
+                "width: 0.75rem;",
+                "height: 0.75rem;",
                 "border-radius: 50%;",
                 "background-color: #2B8000;",
                 "display: none;",
@@ -3167,10 +3167,10 @@ Array [
 exports[`Radio has a fake radio 1`] = `
 Array [
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3218,8 +3218,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -3239,10 +3239,10 @@ Array [
             "isStatic": true,
             "lastClassName": "c1",
             "rules": Array [
-              "height: 20px;",
-              "width: 20px;",
-              "min-height: 20px;",
-              "min-width: 20px;",
+              "height: 1.25rem;",
+              "width: 1.25rem;",
+              "min-height: 1.25rem;",
+              "min-width: 1.25rem;",
               "outline: 0;",
               "line-height: 0;",
               "display: flex;",
@@ -3288,8 +3288,8 @@ Array [
                   "isStatic": true,
                   "lastClassName": "c2",
                   "rules": Array [
-                    "width: 12px;",
-                    "height: 12px;",
+                    "width: 0.75rem;",
+                    "height: 0.75rem;",
                     "border-radius: 50%;",
                     "background-color: #2B8000;",
                     "display: none;",
@@ -3316,10 +3316,10 @@ Array [
     </StyledComponent>
   </Radio__FakeRadio>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3367,8 +3367,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -3385,10 +3385,10 @@ Array [
           "isStatic": true,
           "lastClassName": "c1",
           "rules": Array [
-            "height: 20px;",
-            "width: 20px;",
-            "min-height: 20px;",
-            "min-width: 20px;",
+            "height: 1.25rem;",
+            "width: 1.25rem;",
+            "min-height: 1.25rem;",
+            "min-width: 1.25rem;",
             "outline: 0;",
             "line-height: 0;",
             "display: flex;",
@@ -3434,8 +3434,8 @@ Array [
                 "isStatic": true,
                 "lastClassName": "c2",
                 "rules": Array [
-                  "width: 12px;",
-                  "height: 12px;",
+                  "width: 0.75rem;",
+                  "height: 0.75rem;",
                   "border-radius: 50%;",
                   "background-color: #2B8000;",
                   "display: none;",
@@ -3461,10 +3461,10 @@ Array [
     </span>
   </StyledComponent>,
   .c1 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3512,8 +3512,8 @@ Array [
 }
 
 .c2 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -3534,8 +3534,8 @@ Array [
               "isStatic": true,
               "lastClassName": "c2",
               "rules": Array [
-                "width: 12px;",
-                "height: 12px;",
+                "width: 0.75rem;",
+                "height: 0.75rem;",
                 "border-radius: 50%;",
                 "background-color: #2B8000;",
                 "display: none;",
@@ -3608,10 +3608,10 @@ exports[`Radio must have a label 1`] = `
 }
 
 .c3 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -3671,8 +3671,8 @@ exports[`Radio must have a label 1`] = `
 }
 
 .c4 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
@@ -3749,10 +3749,10 @@ exports[`Radio must have a label 1`] = `
                     "isStatic": true,
                     "lastClassName": "c3",
                     "rules": Array [
-                      "height: 20px;",
-                      "width: 20px;",
-                      "min-height: 20px;",
-                      "min-width: 20px;",
+                      "height: 1.25rem;",
+                      "width: 1.25rem;",
+                      "min-height: 1.25rem;",
+                      "min-width: 1.25rem;",
                       "outline: 0;",
                       "line-height: 0;",
                       "display: flex;",
@@ -3798,8 +3798,8 @@ exports[`Radio must have a label 1`] = `
                           "isStatic": true,
                           "lastClassName": "c4",
                           "rules": Array [
-                            "width: 12px;",
-                            "height: 12px;",
+                            "width: 0.75rem;",
+                            "height: 0.75rem;",
                             "border-radius: 50%;",
                             "background-color: #2B8000;",
                             "display: none;",
@@ -4033,10 +4033,10 @@ exports[`Radio renders 1`] = `
 }
 
 .c6 {
-  height: 20px;
-  width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
   outline: 0;
   line-height: 0;
   display: -webkit-box;
@@ -4102,8 +4102,8 @@ exports[`Radio renders 1`] = `
 }
 
 .c7 {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background-color: #2B8000;
   display: none;
