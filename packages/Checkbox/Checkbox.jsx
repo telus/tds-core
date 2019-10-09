@@ -26,10 +26,10 @@ const ErrorText = styled(ColoredTextProvider)(({ isError }) => ({
 }))
 
 const FakeCheckbox = styled.span({
-  height: '20px',
-  width: '20px',
-  minHeight: '20px',
-  minWidth: '20px',
+  height: '1.25rem',
+  width: '1.25rem',
+  minHeight: '1.25rem',
+  minWidth: '1.25rem',
 
   outline: 0,
   lineHeight: 0,
