@@ -21,10 +21,10 @@ import generateId from '../../shared/utils/generateId/generateId'
 import ColoredTextProvider from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 const FakeRadio = styled.span({
-  height: '20px',
-  width: '20px',
-  minHeight: '20px',
-  minWidth: '20px',
+  height: '1.25rem',
+  width: '1.25rem',
+  minHeight: '1.25rem',
+  minWidth: '1.25rem',
 
   outline: 0,
   lineHeight: 0,
@@ -83,8 +83,8 @@ const StyledLabel = styled.label(({ isError }) => ({
 }))
 
 const InnerChecked = styled.span({
-  width: '12px',
-  height: '12px',
+  width: '0.75rem',
+  height: '0.75rem',
   borderRadius: '50%',
   backgroundColor: colorAccessibleGreen,
   display: 'none',
