@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { colorGreyShark } from '@tds/core-colours'
 
-const StyledMiddleControlButton = styled.div(({ isHidden, iconLeftOffsetPx }) => ({
+const StyledMiddleControlButton = styled.button(({ isHidden, iconLeftOffsetPx }) => ({
   width: 64,
   height: 64,
   borderRadius: '50%',

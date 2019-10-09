@@ -664,6 +664,7 @@ class Video extends React.Component {
                   iconLeftOffsetPx={this.state.videoIsPlaying ? 0 : 2}
                   isHidden={this.state.mouseInactive}
                   onClick={this.togglePlayPause}
+                  onFocus={this.resetInactivityTimer}
                 />
               )}
             {/* ========================================== */}
