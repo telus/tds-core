@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.25](https://github.com/telus/tds/compare/@tds/core-input@3.0.24...@tds/core-input@3.0.25) (2019-10-09)
+
+**Note:** Version bump only for package @tds/core-input
+
+
+
+
+
 ## [3.0.24](https://github.com/telus/tds/compare/@tds/core-input@3.0.23...@tds/core-input@3.0.24) (2019-10-04)
 
 **Note:** Version bump only for package @tds/core-input

@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-select",
-  "version": "3.1.16",
+  "version": "3.1.17",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -26,20 +26,20 @@
   },
   "dependencies": {
     "@tds/core-box": "^2.0.2",
-    "@tds/core-colours": "^2.2.0",
-    "@tds/core-decorative-icon": "^2.3.1",
-    "@tds/core-input": "^3.0.24",
-    "@tds/core-input-feedback": "^2.0.10",
-    "@tds/core-paragraph": "^2.0.7",
-    "@tds/core-text": "^2.0.5",
-    "@tds/shared-styles": "^1.5.1",
-    "@tds/shared-typography": "^1.3.4",
+    "@tds/core-colours": "^2.2.1",
+    "@tds/core-decorative-icon": "^2.3.2",
+    "@tds/core-input": "^3.0.25",
+    "@tds/core-input-feedback": "^2.0.11",
+    "@tds/core-paragraph": "^2.0.8",
+    "@tds/core-text": "^2.0.6",
+    "@tds/shared-styles": "^1.5.2",
+    "@tds/shared-typography": "^1.3.5",
     "@tds/util-helpers": "^1.2.0",
     "@tds/util-prop-types": "^1.3.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-standalone-icon": "^2.1.7",
+    "@tds/core-standalone-icon": "^2.1.8",
     "@tds/shared-animation": "^2.0.1"
   }
 }

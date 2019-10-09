@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.24](https://github.com/telus/tds/compare/@tds/core-text-area@3.0.23...@tds/core-text-area@3.0.24) (2019-10-09)
+
+**Note:** Version bump only for package @tds/core-text-area
+
+
+
+
+
 ## [3.0.23](https://github.com/telus/tds/compare/@tds/core-text-area@3.0.22...@tds/core-text-area@3.0.23) (2019-10-04)
 
 **Note:** Version bump only for package @tds/core-text-area

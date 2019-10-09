@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/telusdigital/tds/compare/@tds/core-colours@2.2.0...@tds/core-colours@2.2.1) (2019-10-09)
+
+
+### Bug Fixes
+
+* **core-colours:** fix path to deprecate.js for windows ([e309d52](https://github.com/telusdigital/tds/commit/e309d52))
+
+
+
+
+
 # [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-colours@2.1.0...@tds/core-colours@2.2.0) (2019-10-04)
 
 

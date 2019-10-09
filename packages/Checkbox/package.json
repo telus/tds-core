@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-checkbox",
-  "version": "2.0.21",
+  "version": "2.0.22",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -26,12 +26,12 @@
   },
   "dependencies": {
     "@tds/core-box": "^2.0.2",
-    "@tds/core-colours": "^2.2.0",
-    "@tds/core-decorative-icon": "^2.3.1",
-    "@tds/core-input-feedback": "^2.0.10",
-    "@tds/core-paragraph": "^2.0.7",
-    "@tds/core-text": "^2.0.5",
-    "@tds/shared-styles": "^1.5.1",
+    "@tds/core-colours": "^2.2.1",
+    "@tds/core-decorative-icon": "^2.3.2",
+    "@tds/core-input-feedback": "^2.0.11",
+    "@tds/core-paragraph": "^2.0.8",
+    "@tds/core-text": "^2.0.6",
+    "@tds/shared-styles": "^1.5.2",
     "@tds/util-helpers": "^1.2.0",
     "prop-types": "^15.5.10"
   }
