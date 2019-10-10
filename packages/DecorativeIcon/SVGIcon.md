@@ -856,6 +856,7 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: TowTruck,
         usageCriteria: 'Roadside assistance',
       },
+      { name: 'Donate', Component: Donate, usageCriteria: 'Donation' },
     ]}
   />
 </Box>
