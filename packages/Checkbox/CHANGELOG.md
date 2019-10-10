@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.23](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.22...@tds/core-checkbox@2.0.23) (2019-10-10)
+
+
+### Bug Fixes
+
+* **core-checkbox:** fix proportions with custom browser font sizes ([29dedd3](https://github.com/telusdigital/tds/commit/29dedd3))
+
+
+
+
+
 ## [2.0.22](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.21...@tds/core-checkbox@2.0.22) (2019-10-09)
 
 **Note:** Version bump only for package @tds/core-checkbox
