@@ -5,16 +5,14 @@ const generateTest = (packageName, componentName) => ({
   [packageName]: browser => {
     const browserName = browser.options.desiredCapabilities.browserName || ''
     const browserVersion = browser.options.desiredCapabilities.version || 'headless'
-    const isMobile = browser.options.desiredCapabilities.isMobile || false
 
     const url = `${browser.launch_url}/${componentName}`
 
     browser
       .url(url)
       .waitForElementVisible(`#${componentName}`, 2000)
-      .moveToElement('#app', 0, 0)
       .checkAccessibility()
-      .compareScreenshot(componentName, browserName, browserVersion, isMobile)
+      .compareScreenshot(componentName, browserName, browserVersion)
       .end()
   },
 })
