@@ -8,8 +8,8 @@ const config = {
 
 const envConfig = {
   development: {
-    launchUrl: 'http://local.telus.com:3000',
-    healthCheckUrl: 'http://local.telus.com:3000',
+    launchUrl: 'http://localhost:3000',
+    healthCheckUrl: 'http://localhost:3000',
   },
   staging: {
     launchUrl:
