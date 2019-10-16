@@ -22,7 +22,13 @@ getPackageNames(packageNames => {
 
   const { status } = spawnSync(
     'npx',
-    ['nightwatch', '-c', './config/nightwatch.conf.js', '--env', 'headless,headlessMobile'],
+    [
+      'nightwatch',
+      '-c',
+      './config/nightwatch.saucelabs.conf.js',
+      '-e',
+      'latestChrome,latestFirefox,latestSafari,edge17,ie11',
+    ],
     {
       env: Object.assign({}, process.env, {
         PACKAGES: onlyCorePackages,
