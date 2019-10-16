@@ -1,5 +1,6 @@
 /* eslint-disable */
 const path = require('path')
+const config = require('../e2e/config')
 
 const GLOBALS_PATH = path.resolve('e2e/globals.js')
 const REPORT_PATH = path.resolve('e2e/output/reports/')
@@ -16,43 +17,6 @@ const CUSTOM_ASSERTIONS = [
 const accessibilityTesting = process.env.accessibilityTesting || false
 const visualTesting = process.env.visualTesting || true
 
-// Defaults
-// SL
-var chrome = 'chrome'
-var safari = 'safari'
-var firefox = 'firefox'
-var firefoxShort = 'ff'
-var ie = 'internet explorer'
-var ieShort = 'ie'
-var edge = 'microsoftedge'
-var edgeShort = 'edge'
-
-var defaultBrowserVersion = 'latest'
-var defaultWindows = 'windows 10'
-var defaultOSX = 'mac 10.12'
-
-var browserName = process.env.browserName || chrome
-if (browserName == firefoxShort) {
-  browserName = firefox
-} else if (browserName == ieShort) {
-  browserName = ie
-} else if (browserName == edgeShort) {
-  browserName = edge
-}
-var browserVersion = process.env.browserVersion || defaultBrowserVersion
-var platform
-if (process.env.platform != null) {
-  platform = process.env.platform
-} else if (process.env.os == null || process.env.osVersion == null) {
-  if (browserName == safari) {
-    platform = defaultOSX
-  } else {
-    platform = defaultWindows
-  }
-} else {
-  platform = process.env.os + ' ' + process.env.osVersion
-}
-
 module.exports = {
   src_folders: SPEC_PATH,
   globals_path: GLOBALS_PATH,
@@ -64,7 +28,7 @@ module.exports = {
   },
   test_settings: {
     default: {
-      launch_url: 'http://local.telus.com:3000',
+      launch_url: config.launchUrl,
       selenium_host: 'ondemand.saucelabs.com',
       selenium_port: 80,
       username: process.env.SAUCELABS_USERNAME,
@@ -75,7 +39,6 @@ module.exports = {
       desiredCapabilities: {
         javascriptEnabled: true,
         acceptSslCerts: true,
-        screenResolution: '2560x1600',
       },
       globals: {
         accessibilityTesting: accessibilityTesting,
@@ -88,6 +51,7 @@ module.exports = {
         browserName: 'chrome',
         version: 'latest',
         platform: 'windows 10',
+        screenResolution: '2560x1600',
       },
     },
     latestFirefox: {
@@ -95,6 +59,7 @@ module.exports = {
         browserName: 'firefox',
         version: 'latest',
         platform: 'windows 8',
+        screenResolution: '2560x1600',
       },
     },
     latestSafari: {
@@ -110,6 +75,7 @@ module.exports = {
         browserName: 'microsoftedge',
         version: 'latest',
         platform: 'windows 10',
+        screenResolution: '2560x1600',
       },
     },
     edge17: {
@@ -117,6 +83,7 @@ module.exports = {
         browserName: 'microsoftedge',
         version: '17',
         platform: 'windows 10',
+        screenResolution: '2560x1600',
       },
     },
     ie11: {
@@ -124,14 +91,8 @@ module.exports = {
         browserName: 'internet explorer',
         version: '11.103',
         platform: 'windows 10',
+        screenResolution: '2560x1600',
         avoidProxy: true,
-      },
-    },
-    custom: {
-      desiredCapabilities: {
-        browserName: browserName,
-        version: browserVersion,
-        platform: platform,
       },
     },
   },
