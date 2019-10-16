@@ -5,6 +5,7 @@ const { generateAttributes, generateCSSReferences, generateJSReferences } = Mini
 
 module.exports = {
   mode: 'development',
+  devtool: 'none',
   entry: path.join(__dirname, 'index.jsx'),
   output: {
     filename: 'bundle.js',
@@ -63,8 +64,11 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        exclude: /node_modules/,
+        exclude: /node_modules\/(?!(@compositor\/webfont|@mdx-js\/mdx|@mdx-js\/mdxast|gray-matter)\/).*/,
         loader: 'babel-loader',
+        options: {
+          babelrc: false,
+        },
       },
       {
         test: /flexboxgrid/,
