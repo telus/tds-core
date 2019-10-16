@@ -27,3 +27,6 @@ e2e/output/reports
 e2e/output/failure-screenshots/
 e2e/output/components/*/diffs/*.png
 e2e/output/components/*/results/*.png
+
+# Environment variables
+.env
