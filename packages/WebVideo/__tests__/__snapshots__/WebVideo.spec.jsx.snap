@@ -248,6 +248,7 @@ exports[`WebVideo renders 1`] = `
   beginMuted={false}
   copy="en"
   defaultVolume={1}
+  onStart={[Function]}
   videoId="ppF-fn37SDs"
   videoLength={30}
 >
