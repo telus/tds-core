@@ -10,6 +10,15 @@
   - When the `Footnote` is opened, the `inert` prop must be set on all children of `body` excluding the `Footnote`
 - When the `Footnote` is closed, focus must be returned to the initiating element. See example below
 
+### Available HTML tags
+
+Some HTML tags are available in `Footnote` to fulfill some formatting requirements.
+
+| HTML Tag | Effect                                                       |
+| -------- | ------------------------------------------------------------ |
+| `<a>`    | Generates a TDS link component, copying the tag's attributes |
+| `<br>`   | Generates a normal HTML break tag (typically used for lists) |
+
 ```jsx
 class FootnoteExample extends React.Component {
   constructor(props) {
@@ -41,7 +50,7 @@ class FootnoteExample extends React.Component {
 
   render() {
     const content = [
-      'Taxes and pay-per-use charges (including long distance, roaming and additional airtime or data) are extra. The cost of service used while roaming outside Canada will vary by zone. Currently, voice roaming in the US is charged at $1.50/minute. Visit <a href="https://telus.com/mobilityppu">telus.com/mobilityppu</a> for details.',
+      'Taxes and pay-per-use charges (including long distance, roaming and additional airtime or data) are extra. The cost of service used while roaming outside Canada will vary by zone. <br/><br/>a. Currently, voice roaming in the US is charged at: $1.50/minute<br/>b. Visit <a href="https://telus.com/mobilityppu">telus.com/mobilityppu</a> for details.',
       'Taxes and pay-per-use charges (including roaming and additional data) are extra. For any subscriber(s) with a Your Choice Canada-US plan, roaming pay-per-use.',
     ]
 
