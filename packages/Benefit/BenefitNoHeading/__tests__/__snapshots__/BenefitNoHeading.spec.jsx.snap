@@ -13,8 +13,8 @@ exports[`BenefitNoHeading renders with icons set in each item 1`] = `
 }
 
 .c2 > svg {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .c0 {
@@ -135,8 +135,8 @@ exports[`BenefitNoHeading renders with one icon set in the parent 1`] = `
 }
 
 .c2 > svg {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .c0 {
