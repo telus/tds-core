@@ -290,11 +290,11 @@ take into account when developing components, such as:
 - Choosing which [semantic HTML elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML) to use
 - Using `aria-` attributes only when absolutely necessary
 - Providing visible labels and visual focus states for interactive elements
-- Adapting spacing or font appearance to browser font configurations
+- Adapting spacing or font appearance to browser font settings
 - Animations are reduced or omitted when environments are configured for [reduced motion][css-tricks-reduced-motion]
 - Whether assistive technology should be able to read intentionally hidden content
-- Keyboard navigation is possible, passing through elements in a consistent order (typically from left to right, top to bottom)
-- Voiceover tools can announce content or actions appropriately, such as when an action toggles an adjacent element opened or closed, signalled by `aria-expanded`
+- Keyboard navigation is possible, passing through elements in a consistent order (typically from top to bottom, left to right)
+- Screen reader tools can announce content or actions appropriately, such as when an action toggles an adjacent element opened or closed, signalled by `aria-expanded`
 - Desirable areas of interactive elements can be focused using a screen magnifier; the focus area should not be a small corner of an element that isn't a clear label or actionable affordance
 
 There are many considerations and experiences outside the component's control, and they are within the scope of the consuming application.
