@@ -13,8 +13,8 @@ exports[`SVGIcon consumer renders 1`] = `
 }
 
 .c0 > svg {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 <i
@@ -49,8 +49,8 @@ exports[`SVGIcon has size set to 24 1`] = `
 }
 
 .c0 > svg {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 <i
@@ -75,8 +75,8 @@ exports[`SVGIcon renders 1`] = `
 }
 
 .c0 > svg {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 <i
