@@ -20,7 +20,9 @@ const getColour = variant => {
 }
 
 const svgVariant = ({ variant }) => ({ '& > svg': { fill: getColour(variant) } })
-const svgSize = ({ size }) => ({ '& > svg': { width: size, height: size } })
+const svgSize = ({ size }) => ({
+  '& > svg': { width: `${size / 16}rem`, height: `${size / 16}rem` },
+})
 
 const StyledSVGIcon = styled.i(
   {
