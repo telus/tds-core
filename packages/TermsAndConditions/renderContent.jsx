@@ -1,14 +1,11 @@
 import React from 'react'
 import Link from '@tds/core-link'
 
-const renderContent = c => {
-  if (typeof c !== 'string') {
-    return c
-  }
-  const tagRegex = /<\s*a([^>]*)>(.*?)<\s*\/\s*a>/g
+const generateLinks = content => {
+  const linkRegex = /<\s*a([^>]*)>(.*?)<\s*\/\s*a>/g
   const attributeRegex = /(\w+)\s*=\s*((["'])(.*?)\3|(?=\s|\/>))/g
-  // split into attributes, and anchor text
-  const parts = c.split(tagRegex)
+
+  const parts = content.split(linkRegex)
   if (parts.length === 1) {
     return parts
   }
@@ -35,7 +32,33 @@ const renderContent = c => {
       </Link>
     )
   }
+
   return parts
+}
+
+const generateBreaks = parts => {
+  const breakRegex = /<br\s?\/*>/g
+
+  const partsWithBreaks = parts
+
+  for (let i = 0; i < partsWithBreaks.length; i += 1) {
+    if (typeof partsWithBreaks[i] === 'string' && partsWithBreaks[i].search(breakRegex) !== -1) {
+      const toSplit = partsWithBreaks[i].split(breakRegex)
+      for (let x = 1; x < toSplit.length; x += 2) {
+        toSplit.splice(x, 0, <br key={`break-${i}-${x}`} />)
+      }
+      partsWithBreaks[i] = toSplit
+    }
+  }
+  return partsWithBreaks
+}
+
+const renderContent = content => {
+  if (typeof content !== 'string') {
+    return content
+  }
+
+  return generateBreaks(generateLinks(content))
 }
 
 export default renderContent
