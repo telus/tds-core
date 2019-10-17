@@ -47,4 +47,21 @@ describe('renderContent', () => {
       '.',
     ])
   })
+
+  it('should use br tags', () => {
+    const content =
+      'To help us improve this website, <br /> we would love <br> to hear your <br/> feedback.'
+    const result = renderContent(content)
+    expect(result).toMatchObject([
+      [
+        'To help us improve this website, ',
+        <br key="break-0-1" />,
+        ' we would love ',
+        <br key="break-0-3" />,
+        ' to hear your ',
+        <br key="break-0-5" />,
+        ' feedback.',
+      ],
+    ])
+  })
 })
