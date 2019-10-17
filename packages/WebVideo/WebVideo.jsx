@@ -46,11 +46,13 @@ const WebVideo = ({
   beginMuted,
   videoLength,
   copy,
+  onStart,
   ...rest
 }) => {
   const [started, setStarted] = useState(false)
 
   const initializeYoutubePlayer = event => {
+    onStart()
     if (beginMuted) {
       event.target.mute()
     }
@@ -124,6 +126,10 @@ WebVideo.propTypes = {
    * The splash screen UI's language as an ISO language code. It currently supports English and French.
    */
   copy: PropTypes.oneOf(['en', 'fr']).isRequired,
+  /**
+   * A function to be run when the play button is pressed on the video splash screen and the video is ready to play.
+   */
+  onStart: PropTypes.func,
 }
 
 WebVideo.defaultProps = {
@@ -131,6 +137,7 @@ WebVideo.defaultProps = {
   posterSrc: undefined,
   defaultVolume: 1,
   beginMuted: false,
+  onStart: () => {},
 }
 
 export default WebVideo
