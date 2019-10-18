@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-terms-and-conditions",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

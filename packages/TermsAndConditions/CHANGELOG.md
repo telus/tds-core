@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.1.2...@tds/core-terms-and-conditions@1.2.0) (2019-10-18)
+
+
+### Features
+
+* **core-terms-and-conditions:** add support for <br> tags in footnote ([64da820](https://github.com/telus/tds-core/commit/64da820))
+
+
+
+
+
 ## [1.1.2](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.1.1...@tds/core-terms-and-conditions@1.1.2) (2019-10-09)
 
 **Note:** Version bump only for package @tds/core-terms-and-conditions
