@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.1](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.4.0...@tds/core-decorative-icon@2.4.1) (2019-10-18)
+
+
+### Bug Fixes
+
+* **core-decorative-icon:** fix icon scaling on different font sizes ([ac5ffb6](https://github.com/telusdigital/tds/commit/ac5ffb6))
+
+
+
+
+
 # [2.4.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.3.2...@tds/core-decorative-icon@2.4.0) (2019-10-11)
 
 
