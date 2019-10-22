@@ -20,14 +20,9 @@ const DisableAnimation = createGlobalStyle({
 })
 
 const renderExample = options => () => (
-  <React.Fragment>
-    <StyledContainer>
-      <Heading level="h1">{options.name}</Heading>
-    </StyledContainer>
-    <div id={options.name}>
-      <options.Component container={StyledContainer} />
-    </div>
-  </React.Fragment>
+  <div id={options.name}>
+    <options.Component container={StyledContainer} />
+  </div>
 )
 
 const App = () => (

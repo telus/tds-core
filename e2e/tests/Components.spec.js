@@ -10,7 +10,7 @@ const generateTest = (packageName, componentName) => ({
 
     browser
       .url(url)
-      .waitForElementVisible(`#${componentName}`, 2000)
+      .waitForElementVisible(`#${componentName}`, 5000)
       .checkAccessibility()
       .compareScreenshot(componentName, browserName, browserVersion)
       .end()
