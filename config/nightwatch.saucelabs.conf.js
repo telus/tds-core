@@ -51,7 +51,7 @@ module.exports = {
         browserName: 'chrome',
         version: 'latest',
         platform: 'windows 10',
-        screenResolution: '2560x1600',
+        screenResolution: '1280x960',
       },
     },
     latestFirefox: {
@@ -59,7 +59,7 @@ module.exports = {
         browserName: 'firefox',
         version: 'latest',
         platform: 'windows 8',
-        screenResolution: '2560x1600',
+        screenResolution: '1280x960',
       },
     },
     latestSafari: {
@@ -67,7 +67,7 @@ module.exports = {
         browserName: 'safari',
         version: 'latest',
         platform: 'osx 10.12',
-        screenResolution: '2360x1770',
+        screenResolution: '1280x960',
       },
     },
     latestEdge: {
@@ -75,7 +75,7 @@ module.exports = {
         browserName: 'microsoftedge',
         version: 'latest',
         platform: 'windows 10',
-        screenResolution: '2560x1600',
+        screenResolution: '1280x960',
       },
     },
     edge17: {
@@ -83,7 +83,7 @@ module.exports = {
         browserName: 'microsoftedge',
         version: '17',
         platform: 'windows 10',
-        screenResolution: '2560x1600',
+        screenResolution: '1280x960',
       },
     },
     ie11: {
@@ -91,7 +91,7 @@ module.exports = {
         browserName: 'internet explorer',
         version: '11.103',
         platform: 'windows 10',
-        screenResolution: '2560x1600',
+        screenResolution: '1280x960',
         avoidProxy: true,
       },
     },
