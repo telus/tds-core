@@ -25,18 +25,11 @@ The following group are the active maintainers of this project, and have merge r
 | ---------------- | ------------- | --------------- | ------------- |
 | Varun Jain       | Product Owner | @varunjain      | @varunj90     |
 | Enrico Sacchetti | Tech Lead     | @enrico         | @theetrain    |
-| Anatolii Gorovyi | Developer     | @agorovyi       | @agorovyi     |
 | Marco Donnici    | Developer     | @marcod         | @marcod1419   |
 | Jordan Raffoul   | Developer     | @Jordan Raffoul | @jraff        |
 | Christina Lo     | Design Lead   | @Christina L.   | @Christina-Lo |
 | Donna Vitan      | Design        | @donnavitan     | @donnavitan   |
 
-## Inactive members
-
-| Member          | Role         | GitHub           |
-| --------------- | ------------ | ---------------- |
-| Laura Cabrera   | Developer    | @lzcabrera       |
-| Alexandra Fedyk | Scrum Master | @alexandramfedyk |
 
 ## Contributors
 
