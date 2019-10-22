@@ -18,4 +18,7 @@ exports.ignoredPackagesE2E = [
   // TODO: fix a11y issues with these components
   '@tds/core-spinner',
   '@tds/core-video',
+
+  // TODO:
+  '@tds/core-web-video',
 ]
