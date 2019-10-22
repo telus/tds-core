@@ -20,15 +20,12 @@ const getPackageNames = require('./utils/getPackageNames')
 getPackageNames(packageNames => {
   const onlyCorePackages = packageNames.filter(name => name.startsWith('@tds/core-')).join(' ')
 
+  // const environments = 'latestChrome,latestFirefox,latestSafari,latestEdge,ie11'
+  const environments = 'latestChrome,latestFirefox,latestEdge'
+
   const { status } = spawnSync(
     'npx',
-    [
-      'nightwatch',
-      '-c',
-      './config/nightwatch.saucelabs.conf.js',
-      '-e',
-      'latestChrome,latestFirefox,latestSafari,edge17,ie11',
-    ],
+    ['nightwatch', '-c', './config/nightwatch.saucelabs.conf.js', '-e', environments],
     {
       env: Object.assign({}, process.env, {
         PACKAGES: onlyCorePackages,
