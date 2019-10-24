@@ -145,6 +145,10 @@ module.exports = {
       return `import { CaretUp, ChevronRight, [...IconName] } from '@tds/core-interactive-icon'`
     }
 
+    if (name === 'NavButton') {
+      return `import { CartEmptyBold, [...IconName] } from '@tds/core-interactive-icon'`
+    }
+
     return `import ${name} from '@tds/core-${kebabizeName}'`
   },
 
