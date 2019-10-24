@@ -411,12 +411,6 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'Can be altered or changed',
       },
       {
-        name: 'User',
-        Component: User,
-        usageCriteria:
-          "Information of the user including but not limited to first and last name, address, email{' '}",
-      },
-      {
         name: 'Chat1',
         Component: Chat1,
         usageCriteria: 'Contact support through chat/messages on TELUS.com',
