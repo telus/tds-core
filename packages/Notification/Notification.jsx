@@ -92,7 +92,11 @@ class Notification extends React.Component {
   }
 
   adjustContentHeight = () => {
-    if (this.contentWrapper.offsetHeight !== this.state.contentWrapperHeight) {
+    // TODO - temporary workaround to prevent crash
+    if (
+      this.contentWrapper &&
+      this.contentWrapper.offsetHeight !== this.state.contentWrapperHeight
+    ) {
       this.setState({ contentWrapperHeight: this.contentWrapper.offsetHeight })
     }
   }
