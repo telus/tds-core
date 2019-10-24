@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FadeAndReveal renders when the transition is not triggered 1`] = `
+@media (prefers-reduced-motion:reduce) {
+  .c0 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+<div
+  aria-hidden="true"
+  class="c0"
+  style="transition:height 100ms, opacity 100ms ease-in-out;opacity:0;height:0;overflow:hidden;visibility:hidden"
+>
+  <div>
+    Content to fade
+  </div>
+</div>
+`;
+
+exports[`FadeAndReveal renders when the transition is triggered 1`] = `
+@media (prefers-reduced-motion:reduce) {
+  .c0 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+<div
+  aria-hidden="false"
+  class="c0"
+  style="transition:height 100ms, opacity 100ms ease-in-out;opacity:1;height:auto;overflow:hidden;visibility:visible"
+>
+  <div>
+    Content to fade
+  </div>
+</div>
+`;
