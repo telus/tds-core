@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-notification",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "A banner that highlights important messages",
   "main": "index.cjs.js",
   "module": "index.es.js",
