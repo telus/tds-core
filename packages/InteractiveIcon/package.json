@@ -28,6 +28,8 @@
   "dependencies": {
     "@tds/core-a11y-content": "^2.1.1",
     "@tds/core-colours": "^2.2.1",
+    "@tds/core-text": "^2.0.6",
+    "@tds/shared-animation": "^2.0.1",
     "@tds/shared-styles": "^1.5.2",
     "@tds/util-helpers": "^1.2.0",
     "prop-types": "^15.5.10"
