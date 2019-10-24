@@ -10,51 +10,7 @@ exports[`InteractiveIcon renders 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c1 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #2a2c2e;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-  outline: none;
-  width: 40px;
-  height: 40px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.c1:hover svg {
-  -webkit-transform: scale(1.1,1.1);
-  -ms-transform: scale(1.1,1.1);
-  transform: scale(1.1,1.1);
-}
-
-.c1:active svg {
-  -webkit-transform: scale(1,1);
-  -ms-transform: scale(1,1);
-  transform: scale(1,1);
-}
-
 .c3 {
-  background-color: #d8d8d8;
   position: absolute;
   top: 0;
   left: 0;
@@ -77,8 +33,61 @@ exports[`InteractiveIcon renders 1`] = `
   transform: scale(1,1);
 }
 
+.c1 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c1:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c1:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
 @media (prefers-reduced-motion:reduce) {
   .c3 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c1 {
     -webkit-transition: none;
     transition: none;
   }
@@ -97,7 +106,7 @@ exports[`InteractiveIcon renders 1`] = `
       }
     }
   >
-    <InteractiveButton__StyledInteractiveIconButton
+    <Styled(StyledInteractiveIconButton)
       as="button"
       variant="default"
     >
@@ -108,7 +117,7 @@ exports[`InteractiveIcon renders 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "c0",
+              "componentId": "sc-bwzfXH",
               "isStatic": false,
               "lastClassName": "c1",
               "rules": Array [
@@ -122,25 +131,31 @@ exports[`InteractiveIcon renders 1`] = `
                 "box-shadow: none;",
                 "cursor: pointer;",
                 [Function],
-                "width: 40px;",
-                "height: 40px;",
+                "width: 2.5rem;",
+                "height: 2.5rem;",
                 "display: inline-flex;",
                 "justify-content: center;",
                 "align-items: center;",
                 "position: relative;",
+                "-webkit-tap-highlight-color: transparent;",
+                "transition: transform 150ms ease-in-out;",
                 "&:hover svg {",
                 "transform: scale(1.1, 1.1);",
                 "}",
                 "&:active svg {",
                 "transform: scale(1, 1);",
                 "}",
-                "-webkit-tap-highlight-color: transparent;",
+                "@media (prefers-reduced-motion: reduce) {",
+                "transition: none;",
+                "}",
               ],
             },
-            "displayName": "InteractiveButton__StyledInteractiveIconButton",
-            "foldedComponentIds": Array [],
+            "displayName": "Styled(StyledInteractiveIconButton)",
+            "foldedComponentIds": Array [
+              "c0",
+            ],
             "render": [Function],
-            "styledComponentId": "c0",
+            "styledComponentId": "sc-bwzfXH",
             "target": "button",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -192,14 +207,14 @@ exports[`InteractiveIcon renders 1`] = `
               </StyledComponent>
             </A11yContent__StyledA11yContent>
           </A11yContent>
-          <InteractiveButton__StyledInteractiveIconHover>
+          <StyledInteractiveIconHover>
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "InteractiveButton__StyledInteractiveIconHover-kya8jb-2",
+                    "componentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
                     "isStatic": false,
                     "lastClassName": "c3",
                     "rules": Array [
@@ -221,10 +236,10 @@ exports[`InteractiveIcon renders 1`] = `
                       "}",
                     ],
                   },
-                  "displayName": "InteractiveButton__StyledInteractiveIconHover",
+                  "displayName": "StyledInteractiveIconHover",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "InteractiveButton__StyledInteractiveIconHover-kya8jb-2",
+                  "styledComponentId": "StyledInteractiveIconHover-sc-1aj10i2-0",
                   "target": "span",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -237,11 +252,11 @@ exports[`InteractiveIcon renders 1`] = `
                 className="c3"
               />
             </StyledComponent>
-          </InteractiveButton__StyledInteractiveIconHover>
+          </StyledInteractiveIconHover>
           <svg />
         </button>
       </StyledComponent>
-    </InteractiveButton__StyledInteractiveIconButton>
+    </Styled(StyledInteractiveIconButton)>
   </ThemeProvider>
 </Button>
 `;
