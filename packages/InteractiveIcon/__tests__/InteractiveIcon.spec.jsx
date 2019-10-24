@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import InteractiveIcon from '../InteractiveButton'
+import InteractiveIcon, { StyledInteractiveIconButton } from '../InteractiveButton'
 
 describe('InteractiveIcon', () => {
   const doShallow = (props = {}) =>
@@ -29,7 +29,7 @@ describe('InteractiveIcon', () => {
 
   it('passes additional attributes to the element', () => {
     const interactiveIcon = doShallow({ id: 'the-id', 'data-some-attr': 'some value' }).find(
-      'InteractiveButton__StyledInteractiveIconButton'
+      StyledInteractiveIconButton
     )
 
     expect(interactiveIcon).toHaveProp('id', 'the-id')
