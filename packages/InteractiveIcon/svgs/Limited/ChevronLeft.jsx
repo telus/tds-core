@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react'
 
-import LimitedInteractiveIcon, { StyledLimitedInteractiveIconSVG } from '../Limited'
+import LimitedInteractiveIcon, { StyledLimitedInteractiveIconSVG } from '../../Limited'
 
 const ChevronLeft = forwardRef((props, ref) => (
   <LimitedInteractiveIcon {...props} ref={ref}>

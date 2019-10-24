@@ -4,22 +4,12 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import { colorShark, colorTelusPurple, colorWhite, colorAccessibleGreen } from '@tds/core-colours'
 
-export const StyledLimitedInteractiveIconSVG = styled.svg(
-  ({ theme }) => ({ fill: theme.iconColor }),
-  ({ animationDirection }) => ({
-    width: '24px',
-    height: '24px',
-    zIndex: '2',
-    transition: 'transform 150ms ease-in-out',
-    '@media (prefers-reduced-motion: reduce)': {
-      transition: 'none',
-    },
-    [`:hover, :focus, :active`]: {
-      transform: `translate${
-        animationDirection === 'up' || animationDirection === 'down' ? 'Y' : 'X'
-      }(${animationDirection === 'up' || animationDirection === 'left' ? '-' : ''}4px)`,
-    },
-  })
+import animations from './shared/animations'
+import StyledInteractiveIconSVG from './shared/StyledInteractiveIconSVG'
+
+export const StyledLimitedInteractiveIconSVG = styled(StyledInteractiveIconSVG)(
+  animations.reduceMotion,
+  animations.translate
 )
 
 const getTheme = variant => {

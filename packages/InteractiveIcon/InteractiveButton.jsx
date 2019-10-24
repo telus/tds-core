@@ -4,56 +4,21 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import A11yContent from '@tds/core-a11y-content'
 import { colorGreyGainsboro, colorGreyShark, colorTelusPurple, colorWhite } from '@tds/core-colours'
-import { buttons } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
 
-const getOutline = ({ variant }) => variant !== 'inverted' && { outline: 'none' }
+import animations from './shared/animations'
+import SharedStyledInteractiveIconSVG from './shared/StyledInteractiveIconSVG'
+import SharedStyledInteractiveIconButton from './shared/StyledInteractiveIconButton'
+import StyledInteractiveIconHover from './shared/StyledInteractiveIconHover'
 
-const StyledInteractiveIconButton = styled.button(buttons.noStyle, getOutline, {
-  width: '40px',
-  height: '40px',
-  display: 'inline-flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  position: 'relative',
-  '&:hover svg': {
-    transform: 'scale(1.1, 1.1)',
-  },
-  '&:active svg': {
-    transform: 'scale(1, 1)',
-  },
-  '-webkit-tap-highlight-color': 'transparent',
-})
+export const StyledInteractiveIconSVG = styled(SharedStyledInteractiveIconSVG)(
+  { transition: 'transform 150ms ease-in-out' },
+  animations.reduceMotion
+)
 
-export const StyledInteractiveIconSVG = styled.svg(({ theme }) => ({ fill: theme.iconColor }), {
-  width: '24px',
-  height: '24px',
-  zIndex: '2',
-  transition: 'transform 150ms ease-in-out',
-  '@media (prefers-reduced-motion: reduce)': {
-    transition: 'none',
-  },
-})
-
-const StyledInteractiveIconHover = styled.span(
-  ({ theme }) => ({ backgroundColor: theme.backgroundColor }),
-  {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    zIndex: '1',
-    borderRadius: '50%',
-    transition: 'transform 200ms ease-in-out',
-    '@media (prefers-reduced-motion: reduce)': {
-      transition: 'none',
-    },
-    transform: 'scale(0,0)',
-    [`${StyledInteractiveIconButton}:focus &, ${StyledInteractiveIconButton}:active &`]: {
-      transform: 'scale(1,1)',
-    },
-  }
+export const StyledInteractiveIconButton = styled(SharedStyledInteractiveIconButton)(
+  animations.scale,
+  animations.reduceMotion
 )
 
 const getTheme = variant => {
