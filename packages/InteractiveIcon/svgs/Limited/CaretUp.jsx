@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react'
 
-import LimitedInteractiveIcon, { StyledLimitedInteractiveIconSVG } from '../Limited'
+import LimitedInteractiveIcon, { StyledLimitedInteractiveIconSVG } from '../../Limited'
 
 const CaretUp = forwardRef((props, ref) => (
   <LimitedInteractiveIcon {...props} animationDirection="up" ref={ref}>

@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react'
 
-import InteractiveIcon, { StyledInteractiveIconSVG } from '../InteractiveButton'
+import InteractiveIcon, { StyledInteractiveIconSVG } from '../../InteractiveButton'
 
 const PlayVideo = forwardRef((props, ref) => (
   <InteractiveIcon {...props} ref={ref}>
