@@ -164,6 +164,18 @@ const renderHelper = (helper, helperId, feedback, value) => {
   )
 }
 
+const renderOptions = opts =>
+  opts.map(({ text, value: optValue, options }) => {
+    if (options) {
+      return <optgroup label={text}>{renderOptions(options)}</optgroup>
+    }
+    return (
+      <option key={optValue} value={optValue}>
+        {text}
+      </option>
+    )
+  })
+
 /**
  * @version ./package.json
  */
@@ -230,11 +242,7 @@ const Select = React.forwardRef(
                   {placeholder}
                 </option>
               )}
-              {options.map(({ text, value: optValue }) => (
-                <option key={optValue} value={optValue}>
-                  {text}
-                </option>
-              ))}
+              {renderOptions(options)}
             </StyledSelect>
 
             {!rest.disabled && (

@@ -1220,6 +1220,8 @@ exports[`Select can have an error message 1`] = `
 </Select>
 `;
 
+exports[`Select can render groups 1`] = `[Function]`;
+
 exports[`Select disabling deactivates the select 1`] = `[Function]`;
 
 exports[`Select disabling removes the positioning of the select so that the disabled treatment is displayed 1`] = `[Function]`;
