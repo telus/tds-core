@@ -138,3 +138,26 @@ When a more in-depth explanation is needed to fill out a `Select` properly, a [`
   tooltip={<Tooltip copy="en">Used to decide which theme to apply.</Tooltip>}
 />
 ```
+
+### Grouping
+
+```jsx
+<Select
+  label="Cities"
+  placeholder="Please select..."
+  options={[
+    {
+      text: 'Ontario',
+      options: [{ text: 'Toronto', value: 'TOR' }, { text: 'Ottawa', value: 'OTT' }],
+    },
+    {
+      text: 'British Columbia',
+      options: [{ text: 'Vancouver', value: 'VAN' }, { text: 'Victoria', value: 'VIC' }],
+    },
+    {
+      text: 'Quebec',
+      options: [{ text: 'Quebec City', value: 'QC' }, , { text: 'Montreal', value: 'MTL' }],
+    },
+  ]}
+/>
+```

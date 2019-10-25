@@ -61,6 +61,24 @@ describe('Select', () => {
     expect(findSelectElement).toMatchSnapshot()
   })
 
+  it('can render groups', () => {
+    const { findSelectElement } = doMount({
+      options: [
+        { text: 'some text', value: 'value-1', readOnly: true },
+        { text: 'other text', value: 'value-2', readOnly: true },
+        {
+          text: 'a group',
+          options: [
+            { text: 'a group option', value: 'group-value-1' },
+            { text: 'other group option', value: 'group-value-2' },
+          ],
+        },
+      ],
+    })
+
+    expect(findSelectElement).toMatchSnapshot()
+  })
+
   it('positions the down caret so that the text does not overlap it', () => {
     const { findSelectElement } = doMount()
 
