@@ -2203,6 +2203,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                           "opacity": 0,
                           "overflow": "hidden",
                           "transition": "height 500ms, opacity 500ms ease-in-out",
+                          "visibility": "hidden",
                         }
                       }
                     >
@@ -2239,6 +2240,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                             "opacity": 0,
                             "overflow": "hidden",
                             "transition": "height 500ms, opacity 500ms ease-in-out",
+                            "visibility": "hidden",
                           }
                         }
                       >
@@ -2251,6 +2253,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                               "opacity": 0,
                               "overflow": "hidden",
                               "transition": "height 500ms, opacity 500ms ease-in-out",
+                              "visibility": "hidden",
                             }
                           }
                         >
@@ -3375,6 +3378,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                           "opacity": 1,
                           "overflow": "hidden",
                           "transition": "height 500ms, opacity 500ms ease-in-out",
+                          "visibility": "visible",
                         }
                       }
                     >
@@ -3411,6 +3415,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                             "opacity": 1,
                             "overflow": "hidden",
                             "transition": "height 500ms, opacity 500ms ease-in-out",
+                            "visibility": "visible",
                           }
                         }
                       >
@@ -3423,6 +3428,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                               "opacity": 1,
                               "overflow": "hidden",
                               "transition": "height 500ms, opacity 500ms ease-in-out",
+                              "visibility": "visible",
                             }
                           }
                         >
