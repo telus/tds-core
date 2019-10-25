@@ -499,7 +499,7 @@ div.c14 {
   <div
     aria-hidden="true"
     class="c11"
-    style="transition:height 150ms, opacity 150ms ease-in-out;opacity:0;height:0;overflow:hidden"
+    style="transition:height 150ms, opacity 150ms ease-in-out;opacity:0;height:0;overflow:hidden;visibility:hidden"
   >
     <div>
       <div
@@ -1636,6 +1636,7 @@ div.c14 {
               "opacity": 1,
               "overflow": "hidden",
               "transition": "height 150ms, opacity 150ms ease-in-out",
+              "visibility": "visible",
             }
           }
         >
@@ -1672,6 +1673,7 @@ div.c14 {
                 "opacity": 1,
                 "overflow": "hidden",
                 "transition": "height 150ms, opacity 150ms ease-in-out",
+                "visibility": "visible",
               }
             }
           >
@@ -1684,6 +1686,7 @@ div.c14 {
                   "opacity": 1,
                   "overflow": "hidden",
                   "transition": "height 150ms, opacity 150ms ease-in-out",
+                  "visibility": "visible",
                 }
               }
             >
@@ -3842,6 +3845,7 @@ div.c14 {
               "opacity": 1,
               "overflow": "hidden",
               "transition": "height 150ms, opacity 150ms ease-in-out",
+              "visibility": "visible",
             }
           }
         >
@@ -3878,6 +3882,7 @@ div.c14 {
                 "opacity": 1,
                 "overflow": "hidden",
                 "transition": "height 150ms, opacity 150ms ease-in-out",
+                "visibility": "visible",
               }
             }
           >
@@ -3890,6 +3895,7 @@ div.c14 {
                   "opacity": 1,
                   "overflow": "hidden",
                   "transition": "height 150ms, opacity 150ms ease-in-out",
+                  "visibility": "visible",
                 }
               }
             >
@@ -6711,6 +6717,7 @@ div.c14 {
               "opacity": 1,
               "overflow": "hidden",
               "transition": "height 150ms, opacity 150ms ease-in-out",
+              "visibility": "visible",
             }
           }
         >
@@ -6747,6 +6754,7 @@ div.c14 {
                 "opacity": 1,
                 "overflow": "hidden",
                 "transition": "height 150ms, opacity 150ms ease-in-out",
+                "visibility": "visible",
               }
             }
           >
@@ -6759,6 +6767,7 @@ div.c14 {
                   "opacity": 1,
                   "overflow": "hidden",
                   "transition": "height 150ms, opacity 150ms ease-in-out",
+                  "visibility": "visible",
                 }
               }
             >
