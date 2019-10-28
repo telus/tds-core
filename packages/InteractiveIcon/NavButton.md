@@ -1,7 +1,7 @@
 ### Usage criteria
 
-- Use only for top-level navigation (i.e. Global Elements, My TELUS applications like Casa)
-- Must have 8px spacing between each interactive icon
+- Use only for top-level navigation (i.e. Global Elements, My TELUS, and applications like Casa)
+- Must have 8px spacing (Box level 2) between each interactive icon
 - If you don’t know whether you can use this or not, you probably can’t 😬
 - You must provide a `numItems` prop when using `CartFilledBold`
 
@@ -35,11 +35,17 @@
 
 ### Accessibility
 
+#### Accessibility features
+
+The NavButton Interactive icon set features a built-in tooltip that appears on focus or hover, allowing keyboard and cursor users to gain visual and written context. It utilizes aria-labelledby to connect the focused icon and its respective tooltip for screen reader users.
+
+#### Accessibility Guideline
+
 When consuming `NavButton`, be sure to provide a `copy` prop with each icon. We **highly** recommend passing `en` or `fr` to the `copy` prop, this will use the default copy TDS provides. If you **must** provide your own copy, you can pass an object with an `a11yText` key to the `copy` prop.
 
 #### `CartFilledBold`
 
-When using `CartFilledBold` you must also supply a `numItems` property and use the `%{numItems}` token in your `a11yText`. See the examples below for custom copy.
+When using `CartFilledBold` you must also supply a `numItems` prop and use the `%{numItems}` token in your `a11yText`. See the examples below for custom copy.
 
 ```jsx
 <CartEmptyBold copy={{ a11yText: 'Empty cart' }} />

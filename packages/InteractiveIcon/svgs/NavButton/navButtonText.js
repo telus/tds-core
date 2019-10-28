@@ -15,8 +15,10 @@ export const cartFilledBoldCopyDictionary = {
     },
   },
   fr: {
-    single: '%{numItems} article dans le panier',
-    multiple: '%{numItems} articles dans le panier',
+    a11yText: {
+      single: '%{numItems} article dans le panier',
+      multiple: '%{numItems} articles dans le panier',
+    },
   },
 }
 

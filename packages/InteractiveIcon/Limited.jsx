@@ -8,8 +8,18 @@ import animations from './shared/animations'
 import StyledInteractiveIconSVG from './shared/StyledInteractiveIconSVG'
 
 export const StyledLimitedInteractiveIconSVG = styled(StyledInteractiveIconSVG)(
-  animations.reduceMotion,
-  animations.translate
+  ({ animationDirection }) => ({
+    transition: 'transform 150ms ease-in-out',
+    '@media (prefers-reduced-motion: reduce)': {
+      transition: 'none',
+    },
+    [`:hover, :focus, :active`]: {
+      transform: `translate${
+        animationDirection === 'up' || animationDirection === 'down' ? 'Y' : 'X'
+      }(${animationDirection === 'up' || animationDirection === 'left' ? '-' : ''}4px)`,
+    },
+  }),
+  animations.reduceMotion
 )
 
 const getTheme = variant => {

@@ -1,9 +1,12 @@
 import styled from 'styled-components'
 
+import animations from './animations'
+
 import StyledInteractiveIconButton from './StyledInteractiveIconButton'
 
 const StyledInteractiveIconHover = styled.span(
   ({ theme }) => ({ backgroundColor: theme.hoverBackgroundColor }),
+  animations.reduceMotion,
   {
     position: 'absolute',
     top: 0,
@@ -13,9 +16,6 @@ const StyledInteractiveIconHover = styled.span(
     zIndex: '1',
     borderRadius: '50%',
     transition: 'transform 200ms ease-in-out',
-    '@media (prefers-reduced-motion: reduce)': {
-      transition: 'none',
-    },
     transform: 'scale(0,0)',
     [`${StyledInteractiveIconButton}:focus &, ${StyledInteractiveIconButton}:active &`]: {
       transform: 'scale(1,1)',

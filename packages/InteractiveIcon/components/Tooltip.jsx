@@ -30,7 +30,7 @@ const StyledTooltip = styled.div(
       opacity: 1,
     },
     [`${StyledInteractiveIconButton}:focus + &`]: {
-      zIndex: 3, // to prevent the hovered tooltip being display behind the focused tooltip
+      zIndex: 3, // lower the zIndex on the tooltip focused on to prevent it from being displayed on top of the tooltip being hovered over
     },
   },
   ({ width }) => {
@@ -49,17 +49,10 @@ const Tooltip = ({ children, ...props }) => {
 
   useEffect(() => {
     setWidth(tooltipRef.current.clientWidth)
-  })
+  }, [])
 
   return (
-    <StyledTooltip
-      {...props}
-      role="tooltip"
-      ref={tooltipRef}
-      tooltipRef={tooltipRef}
-      width={width}
-      aria-hidden="true"
-    >
+    <StyledTooltip {...props} role="tooltip" ref={tooltipRef} width={width} aria-hidden="true">
       <Text size="small" invert>
         {children}
       </Text>
