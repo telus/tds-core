@@ -1,8 +1,7 @@
-import React, { forwardRef, useState } from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled, { ThemeProvider } from 'styled-components'
 
-import A11yContent from '@tds/core-a11y-content'
 import { colorWhite, colorGreyShuttle, colorGreyGainsboro } from '@tds/core-colours'
 import { uniqueId, safeRest } from '@tds/util-helpers'
 
@@ -41,38 +40,23 @@ const getTheme = variant => {
  * @version ./package.json
  */
 const NavButton = forwardRef(({ a11yText, variant, onClick, children, tag, ...rest }, ref) => {
-  const [showTooltip, setShowTooltip] = useState(false)
-  const revealTooltip = () => {
-    setShowTooltip(true)
-  }
-  const hideTooltip = () => {
-    setShowTooltip(false)
-  }
-
-  const id = uniqueId(a11yText.replace(/\s+/g, '-').toLowerCase())
+  const ariaId = uniqueId(a11yText.replace(/\s+/g, '-').toLowerCase())
 
   return (
     <ThemeProvider theme={getTheme(variant)}>
       <StyledButtonAndTooltip>
         <StyledInteractiveIconButton
           {...safeRest(rest)}
-          aria-labelledby={id}
+          aria-labelledby={ariaId}
           variant={variant}
           onClick={onClick}
           as={tag}
           ref={ref}
-          onMouseEnter={revealTooltip}
-          onMouseLeave={hideTooltip}
-          onFocus={revealTooltip}
-          onBlur={hideTooltip}
         >
-          <A11yContent>{a11yText}</A11yContent>
           <StyledInteractiveIconHover />
           {children}
         </StyledInteractiveIconButton>
-        <Tooltip open={showTooltip} id={id}>
-          {a11yText}
-        </Tooltip>
+        <Tooltip id={ariaId}>{a11yText}</Tooltip>
       </StyledButtonAndTooltip>
     </ThemeProvider>
   )
