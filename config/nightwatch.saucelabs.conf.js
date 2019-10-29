@@ -58,7 +58,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'firefox',
         version: 'latest',
-        platform: 'windows 8',
+        platform: 'windows 10',
         screenResolution: '1280x960',
       },
     },
@@ -66,7 +66,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'safari',
         version: 'latest',
-        platform: 'osx 10.12',
+        platform: 'osx 10.14',
         screenResolution: '1280x960',
       },
     },
@@ -93,6 +93,18 @@ module.exports = {
         platform: 'windows 10',
         screenResolution: '1280x960',
         avoidProxy: true,
+      },
+    },
+    iphone: {
+      desiredCapabilities: {
+        browserName: 'iphone',
+        version: 'latest',
+      },
+    },
+    android: {
+      desiredCapabilities: {
+        browserName: 'android',
+        version: 'latest',
       },
     },
   },
