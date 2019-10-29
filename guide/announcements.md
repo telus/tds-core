@@ -22,7 +22,7 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 **v2.3.4**
 
 Icons
-- Newly added to “General”
+- New "Offices" icon added to 'General' DecorativeIcon set
 - [Docs](https://tds.telus.com/components/index.html#decorativeicon) 
 
 **v2.3.3**
