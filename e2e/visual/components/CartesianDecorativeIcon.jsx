@@ -23,7 +23,7 @@ const CartesianDecorativeIcon = props => (
           container={StyledIconContainer}
           component={icons[icon]}
           variant={['default', 'alternative', 'inverted']}
-          size={[16, 20, 24, 32, 48]}
+          size={[16, 24]}
         />
       ))}
   </React.Fragment>
