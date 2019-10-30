@@ -139,7 +139,10 @@ When a more in-depth explanation is needed to fill out a `Select` properly, a [`
 />
 ```
 
-### Grouping
+### Grouping options
+
+`Select` supports option groups. By passing an array of options to a top-level `options` key, the component will render
+an `<optgroup>` element along with its respective options.
 
 ```jsx
 <Select
@@ -156,7 +159,7 @@ When a more in-depth explanation is needed to fill out a `Select` properly, a [`
     },
     {
       text: 'Quebec',
-      options: [{ text: 'Quebec City', value: 'QC' }, , { text: 'Montreal', value: 'MTL' }],
+      options: [{ text: 'Quebec City', value: 'QC' }, { text: 'Montreal', value: 'MTL' }],
     },
   ]}
 />
