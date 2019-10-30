@@ -2,7 +2,6 @@
 
 exports[`Responsive with react-media renders 1`] = `
 <Media
-  defaultMatches={true}
   query={
     Object {
       "minWidth": 576,
