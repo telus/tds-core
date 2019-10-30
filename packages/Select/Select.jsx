@@ -167,7 +167,11 @@ const renderHelper = (helper, helperId, feedback, value) => {
 const renderOptions = opts =>
   opts.map(({ text, value: optValue, options }) => {
     if (options) {
-      return <optgroup label={text}>{renderOptions(options)}</optgroup>
+      return (
+        <optgroup label={text} key={text}>
+          {renderOptions(options)}
+        </optgroup>
+      )
     }
     return (
       <option key={optValue} value={optValue}>
@@ -276,11 +280,14 @@ Select.propTypes = {
   id: PropTypes.string,
   /**
    * The selectable options.
+   *
+   * Updated in v3.2.0 to support option groups (see docs).
    */
   options: PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string,
       value: PropTypes.string,
+      options: PropTypes.array,
     })
   ).isRequired,
   /**
