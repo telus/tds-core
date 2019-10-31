@@ -6,7 +6,12 @@ const path = require('path')
 
 module.exports = {
   rootDir: path.resolve('packages'),
-  roots: ['<rootDir>', path.resolve('docs/components'), path.resolve('shared')],
+  roots: [
+    '<rootDir>',
+    path.resolve('docs/components'),
+    path.resolve('shared'),
+    path.resolve('e2e/visual'),
+  ],
   moduleNameMapper: {
     '^.+\\.css$': path.resolve('config/jest/__mocks__/styleMock.js'),
   },
