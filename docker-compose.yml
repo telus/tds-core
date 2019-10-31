@@ -11,20 +11,18 @@
 
 version: '3'
 services:
-  lib:
-    container_name: tds
-    build:
-      context: .
-      dockerfile: openshift/Dockerfile
-    ports:
-      - '6060:6060'
   ciboot:
-    container_name: tds-core
+    container_name: tds-core-dev
     build: .
     ports:
-      - 6060:6060
+      - 3000:3000
+      - 4445:4445
+      - 8032:8032
     volumes:
       - './:/tds-core/'
+    environment:
+      - SAUCELABS_USERNAME=${SAUCELABS_USERNAME?Missing SAUCELABS_USERNAME environment variable}
+      - SAUCELABS_ACCESS_KEY=${SAUCELABS_ACCESS_KEY?Missing SAUCELABS_ACCESS_KEY environment variable}
   e2e:
     container_name: tds-core-e2e
     build:
@@ -32,6 +30,8 @@ services:
       dockerfile: e2e/Dockerfile
     environment:
       - mode=-a
+      - SAUCELABS_USERNAME=${SAUCELABS_USERNAME?Missing SAUCELABS_USERNAME environment variable}
+      - SAUCELABS_ACCESS_KEY=${SAUCELABS_ACCESS_KEY?Missing SAUCELABS_ACCESS_KEY environment variable}
     entrypoint:
       - npm
       - run
@@ -40,7 +40,7 @@ services:
       - $mode
     network_mode: host
     ports:
-      - 6060:6060
+      - 3000:3000
     depends_on:
       - ciboot
     volumes:
