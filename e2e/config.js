@@ -2,14 +2,14 @@ const { resolve } = require('path')
 
 const config = {
   outputPath: resolve(__dirname, 'output'),
-  rootSelector: '#rsg-root',
-  tolerance: 0, // percentage
+  rootSelector: '#app',
+  tolerance: 0.01, // percentage
 }
 
 const envConfig = {
   development: {
-    launchUrl: 'http://localhost:6060',
-    healthCheckUrl: 'http://localhost:6060',
+    launchUrl: 'http://localhost:3000',
+    healthCheckUrl: 'http://localhost:3000',
   },
   staging: {
     launchUrl:
