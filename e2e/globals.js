@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 const request = require('request')
-
 const { healthCheckUrl } = require('./config')
 
 let counter = 0
@@ -16,7 +15,6 @@ const healthCheck = done => {
     }
   })
 }
-
 module.exports = {
   asyncHookTimeout: 120000,
   before: done => {
