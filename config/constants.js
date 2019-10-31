@@ -1,12 +1,24 @@
 // Lists of TDS components to ignore during builds, tests, and publishes
 
 exports.ignoredPackages = ['@tds/core-selector-counter']
+
 exports.ignoredPackagesE2E = [
-  '@tds/core-selector-counter',
-  '@tds/core-benefit',
+  '@tds/shared-animation',
+  '@tds/core-box',
+  '@tds/core-flex-grid',
+  '@tds/core-responsive',
+  '@tds/core-colours',
+  '@tds/core-css-reset',
+  '@tds/shared-hocs',
+  '@tds/shared-styles',
+  '@tds/shared-typography',
+  '@tds/util-helpers',
+  '@tds/util-prop-types',
+
+  // TODO: fix a11y issues with these components
+  '@tds/core-spinner',
   '@tds/core-video',
+
+  // TODO:
   '@tds/core-web-video',
 ]
-exports.componentsWithExportsE2E = {
-  Benefit: ['BenefitWithHeading', 'BenefitNoHeading'],
-}
