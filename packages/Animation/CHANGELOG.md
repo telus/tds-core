@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/telusdigital/tds/compare/@tds/shared-animation@2.0.1...@tds/shared-animation@2.0.2) (2019-10-31)
+
+
+### Bug Fixes
+
+* **shared-animation:** hide content from screenreaders when exited ([57624dc](https://github.com/telusdigital/tds/commit/57624dc))
+
+
+
+
+
 ## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/shared-animation@2.0.0...@tds/shared-animation@2.0.1) (2019-10-04)
 
 

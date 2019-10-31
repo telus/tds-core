@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-animation",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Apply animation to components",
   "main": "index.cjs.js",
   "module": "index.es.js",
