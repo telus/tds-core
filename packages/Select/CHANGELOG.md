@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/telus/tds/compare/@tds/core-select@3.1.19...@tds/core-select@3.2.0) (2019-10-31)
+
+
+### Features
+
+* **core-select:** add support for groups ([22aab25](https://github.com/telus/tds/commit/22aab25)), closes [#1276](https://github.com/telus/tds/issues/1276)
+
+
+
+
+
 ## [3.1.19](https://github.com/telus/tds/compare/@tds/core-select@3.1.18...@tds/core-select@3.1.19) (2019-10-18)
 
 **Note:** Version bump only for package @tds/core-select
