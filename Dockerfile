@@ -17,13 +17,17 @@ WORKDIR /tds-core
 # Add a user so that we don't run as root:
 #  https://github.com/telusdigital/reference-architecture/blob/3ff683dd68b247ac9a3febda828105fe52cd9390/delivery/docker.md#root-vs-user-mode
 RUN set -ex && \
-    adduser node root && \
-    chmod g+w /
+  adduser node root && \
+  chmod g+w /
+
+WORKDIR /sauce
+RUN curl https://saucelabs.com/downloads/sc-4.5.4-linux.tar.gz | tar xz
 
 # Set the container's user to the newly created one.
 USER node
 
+WORKDIR /tds-core
+
 # The entrypoint configures the container to be run as an executable.
 # Arguments supplied on the command line will be forwarded onto the entrypoint.
-ENTRYPOINT ["npm", "run"]
-CMD ["dev:e2e-direct"]
+ENTRYPOINT ["./docker-start.sh"]
