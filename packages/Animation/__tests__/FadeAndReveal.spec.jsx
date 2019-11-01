@@ -33,7 +33,7 @@ describe('FadeAndReveal', () => {
 
     const styledContainer = fadeAndReveal.find(StyledContainer)
     expect(styledContainer).toHaveProp('aria-hidden', true)
-    expect(styledContainer.prop('style')).toHaveProperty('visibility', 'hidden')
+    expect(styledContainer.prop('style').visibility).toEqual('hidden')
   })
 
   it('should display content from screenreaders when entered', () => {
@@ -45,6 +45,6 @@ describe('FadeAndReveal', () => {
 
     const styledContainer = fadeAndReveal.find(StyledContainer)
     expect(styledContainer).toHaveProp('aria-hidden', false)
-    expect(styledContainer.prop('style')).toHaveProperty('visibility', 'visible')
+    expect(styledContainer.prop('style').visibility).toEqual('visible')
   })
 })
