@@ -1,4 +1,4 @@
-Cards will stretch to fill their container. Wrap the card in another element to apply size.
+Cards will stretch to fill the width of their container. Wrap the card in another element to apply size.
 
 ```jsx
 <Card>
@@ -106,6 +106,53 @@ Teams can use the `defaultWithBorder` variant to add a border to the `Card` for 
           </Notification>
           <Button>Add to cart</Button>
           <ChevronLink href="#">Learn more</ChevronLink>
+        </Box>
+      </Card>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```
+
+### Full Height Cards
+
+In some cases you want cards to match the height of their parent so that the bottom edge of the cards are aligned. This is usually needed when using cards in a `FlexGrid`. Use the `fullHeight` prop to achieve this.
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={12} md={4}>
+      <Card fullHeight>
+        <Box between={4}>
+          <Heading level="h3">Reward yourself</Heading>
+          <Text>
+            When you bundle TELUS SmartHome Security with one other eligible TELUS service, you
+            qualify for TELUS Rewards. Earn points just by paying your monthly bill, and then redeem
+            great rewards, like gift cards, contests, TELUS bill credits, and the latest tech.
+          </Text>
+        </Box>
+      </Card>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={12} md={4}>
+      <Card fullHeight>
+        <Box between={4}>
+          <Heading level="h3">Enjoy fast internet in every corner of your home</Heading>
+          <Text>
+            TELUS Boost Wi-Fi creates a mesh network throughout your home so your devices will
+            always connect to the strongest possible Wi-Fi.
+          </Text>
+        </Box>
+      </Card>
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={12} md={4}>
+      <Card fullHeight>
+        <Box between={4}>
+          <Heading level="h3">
+            Power your home security and home monitoring system with the fastest internet technology
+          </Heading>
+          <Text>
+            TELUS PureFibre is number one internet technology for speed and reliability. Save $10/
+            month on TELUS SmartHome Security when you bundle with TELUS Internet.
+          </Text>
         </Box>
       </Card>
     </FlexGrid.Col>
