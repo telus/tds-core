@@ -11,7 +11,7 @@ exports[`FadeAndReveal renders when the transition is not triggered 1`] = `
 <div
   aria-hidden="true"
   class="c0"
-  style="transition:height 100ms, opacity 100ms ease-in-out;opacity:0;height:0;overflow:hidden;visibility:hidden"
+  style="transition:height 100ms, opacity 100ms ease-in-out, visibility 0s 50ms;opacity:0;height:0;overflow:hidden;visibility:hidden"
 >
   <div>
     Content to fade
