@@ -34,9 +34,11 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 }
 
 <Card
+  fullHeight={false}
   variant="default"
 >
   <Styled(Component)
+    fullHeight={false}
     horizontal={4}
     variant="default"
     vertical={5}
@@ -54,6 +56,7 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
               "border-width: 0;",
               "border-radius: 4px;",
               [Function],
+              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -67,12 +70,14 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
         }
       }
       forwardedRef={null}
+      fullHeight={false}
       horizontal={4}
       variant="default"
       vertical={5}
     >
       <Component
         className="c0"
+        fullHeight={false}
         horizontal={4}
         variant="default"
         vertical={5}
@@ -179,9 +184,11 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 }
 
 <Card
+  fullHeight={false}
   variant="default"
 >
   <Styled(Component)
+    fullHeight={false}
     horizontal={4}
     variant="default"
     vertical={5}
@@ -199,6 +206,7 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
               "border-width: 0;",
               "border-radius: 4px;",
               [Function],
+              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -212,12 +220,14 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
         }
       }
       forwardedRef={null}
+      fullHeight={false}
       horizontal={4}
       variant="default"
       vertical={5}
     >
       <Component
         className="c0"
+        fullHeight={false}
         horizontal={4}
         variant="default"
         vertical={5}
@@ -323,9 +333,11 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
 }
 
 <Card
+  fullHeight={false}
   variant="branded"
 >
   <Styled(Component)
+    fullHeight={false}
     horizontal={4}
     variant="branded"
     vertical={5}
@@ -343,6 +355,7 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
               "border-width: 0;",
               "border-radius: 4px;",
               [Function],
+              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -356,12 +369,14 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
         }
       }
       forwardedRef={null}
+      fullHeight={false}
       horizontal={4}
       variant="branded"
       vertical={5}
     >
       <Component
         className="c0"
+        fullHeight={false}
         horizontal={4}
         variant="branded"
         vertical={5}
@@ -467,9 +482,11 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
 }
 
 <Card
+  fullHeight={false}
   variant="alternative"
 >
   <Styled(Component)
+    fullHeight={false}
     horizontal={4}
     variant="alternative"
     vertical={5}
@@ -487,6 +504,7 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
               "border-width: 0;",
               "border-radius: 4px;",
               [Function],
+              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -500,12 +518,14 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
         }
       }
       forwardedRef={null}
+      fullHeight={false}
       horizontal={4}
       variant="alternative"
       vertical={5}
     >
       <Component
         className="c0"
+        fullHeight={false}
         horizontal={4}
         variant="alternative"
         vertical={5}
@@ -613,9 +633,11 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
 }
 
 <Card
+  fullHeight={false}
   variant="defaultWithBorder"
 >
   <Styled(Component)
+    fullHeight={false}
     horizontal={4}
     variant="defaultWithBorder"
     vertical={5}
@@ -633,6 +655,7 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
               "border-width: 0;",
               "border-radius: 4px;",
               [Function],
+              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -646,12 +669,14 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
         }
       }
       forwardedRef={null}
+      fullHeight={false}
       horizontal={4}
       variant="defaultWithBorder"
       vertical={5}
     >
       <Component
         className="c0"
+        fullHeight={false}
         horizontal={4}
         variant="defaultWithBorder"
         vertical={5}

@@ -36,19 +36,35 @@ const deprecationWarning = deprecatedVariant => {
   }' variant.`
 }
 
-const StyledCard = styled(props => <Box {...props} />)(borders.none, borders.rounded, getVariant)
+export const StyledCard = styled(({ fullHeight, ...props }) => <Box {...props} />)(
+  borders.none,
+  borders.rounded,
+  getVariant,
+  ({ fullHeight }) => {
+    if (fullHeight) {
+      return { height: '100%' }
+    }
+    return {}
+  }
+)
 
 /**
  * A content container.
  *
  * @version ./package.json
  */
-const Card = ({ variant, children, ...rest }) => {
+const Card = ({ variant, children, fullHeight, ...rest }) => {
   if (variant === 'white' || variant === 'lavendar' || variant === 'grey') {
     deprecate('@tds/core-card', deprecationWarning(variant))
   }
   return (
-    <StyledCard {...safeRest(rest)} horizontal={4} vertical={5} variant={variant}>
+    <StyledCard
+      {...safeRest(rest)}
+      horizontal={4}
+      vertical={5}
+      fullHeight={fullHeight}
+      variant={variant}
+    >
       {children}
     </StyledCard>
   )
@@ -75,10 +91,15 @@ Card.propTypes = {
    * The content. Can be text, any HTML element, or any component.
    */
   children: PropTypes.node.isRequired,
+  /**
+   * Sets the cards height equal to its parent.
+   */
+  fullHeight: PropTypes.bool,
 }
 
 Card.defaultProps = {
   variant: 'default',
+  fullHeight: false,
 }
 
 export default Card

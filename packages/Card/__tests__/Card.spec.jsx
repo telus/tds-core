@@ -30,6 +30,12 @@ describe('<Card />', () => {
     expect(card).toMatchSnapshot()
   })
 
+  it('renders with full height', () => {
+    const card = mount(<Card fullHeight>Children</Card>)
+
+    expect(card).toHaveStyleRule('height', '100%')
+  })
+
   it('passes additional attributes to the input element', () => {
     const card = doShallow({ role: 'some-role', 'data-some-value': 'some value' })
 
