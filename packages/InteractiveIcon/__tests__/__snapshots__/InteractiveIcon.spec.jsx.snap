@@ -67,6 +67,10 @@ exports[`InteractiveIcon renders 1`] = `
   transition: transform 150ms ease-in-out;
 }
 
+.c1:focus::-moz-focus-inner {
+  border: 0;
+}
+
 .c1:hover svg {
   -webkit-transform: scale(1.1,1.1);
   -ms-transform: scale(1.1,1.1);
