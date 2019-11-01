@@ -36,7 +36,7 @@ const StyledTooltip = styled.div(
   ({ width }) => {
     if (width) {
       return {
-        marginLeft: `calc(((${width / 16}rem - 2.5rem) / 2) * -1)`,
+        marginLeft: `calc(${width}px / -2 + 1.25rem)`,
       }
     }
     return {}
@@ -48,7 +48,7 @@ const Tooltip = ({ children, ...props }) => {
   const [width, setWidth] = useState(0)
 
   useEffect(() => {
-    setWidth(tooltipRef.current.clientWidth)
+    setWidth(tooltipRef.current.offsetWidth)
   }, [])
 
   return (
