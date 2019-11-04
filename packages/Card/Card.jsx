@@ -92,7 +92,7 @@ Card.propTypes = {
    */
   children: PropTypes.node.isRequired,
   /**
-   * Sets the cards height equal to its parent.
+   * Sets the `Card`'s `height` equal to its parent.
    */
   fullHeight: PropTypes.bool,
 }
