@@ -159,14 +159,19 @@ class Notification extends React.Component {
       warn('Notification', 'The prop `onDismiss` must be used together with `dismissible`.')
     }
     if (dismissible) {
+      const fadeDuration = 500
+      const revealDuration = 400
+
       return (
         <Reveal
-          timeout={400}
+          timeout={revealDuration}
+          delay={fadeDuration}
           in={!this.state.dismissed}
-          height={this.state.contentWrapperHeight || 0}
+          height={this.state.contentWrapperHeight || 'auto'}
+          unmountOnExit
         >
           {() => (
-            <Fade unmountOnExit timeout={500} in={!this.state.dismissed} onExited={onExit}>
+            <Fade timeout={fadeDuration} in={!this.state.dismissed} onExited={onExit}>
               {() => (
                 <div
                   ref={c => {

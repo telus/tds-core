@@ -7,6 +7,7 @@ import {
   NotificationWarning,
 } from '@tds/core-feedback-icon'
 import { Close } from '@tds/core-interactive-icon'
+import { Reveal } from '@tds/shared-animation'
 
 import Notification from '../Notification'
 import { warn } from '../../../shared/utils/warn'
@@ -126,29 +127,45 @@ describe('<Notification />', () => {
       const notification = doMount({ dismissible: true })
       expect(notification.find(Close)).toExist()
     })
-  })
 
-  describe('onDismiss', () => {
-    it('calls the provided callback when dismissible', () => {
-      const onDismiss = jest.fn()
+    it('unmounts on dismiss', done => {
       const notification = doMount({
         variant: 'error',
         dismissible: true,
         dismissibleA11yLabel: 'Close',
-        onDismiss,
       })
+      const reveal = notification.find(Reveal)
+      expect(reveal).toHaveProp('in', true)
+      expect(reveal).toHaveProp('unmountOnExit', true)
       notification.find(Close).simulate('click')
-      expect(onDismiss).toHaveBeenCalled()
+      setTimeout(() => {
+        expect(notification.find(Reveal)).toHaveProp('in', false)
+        done()
+      }, 1000)
     })
-    it('warns when the dismissible prop is false', () => {
-      const onDismiss = jest.fn()
-      doShallow({
-        variant: 'error',
-        dismissible: false,
-        dismissibleA11yLabel: 'Close',
-        onDismiss,
+
+    describe('onDismiss', () => {
+      it('calls the provided callback when dismissible', () => {
+        const onDismiss = jest.fn()
+        const notification = doMount({
+          variant: 'error',
+          dismissible: true,
+          dismissibleA11yLabel: 'Close',
+          onDismiss,
+        })
+        notification.find(Close).simulate('click')
+        expect(onDismiss).toHaveBeenCalled()
       })
-      expect(warn).toHaveBeenCalled()
+      it('warns when the dismissible prop is false', () => {
+        const onDismiss = jest.fn()
+        doShallow({
+          variant: 'error',
+          dismissible: false,
+          dismissibleA11yLabel: 'Close',
+          onDismiss,
+        })
+        expect(warn).toHaveBeenCalled()
+      })
     })
   })
 })
