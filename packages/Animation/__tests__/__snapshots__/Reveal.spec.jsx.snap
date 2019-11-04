@@ -4,7 +4,7 @@ exports[`Reveal renders when the transition is not triggered 1`] = `
 <div
   aria-hidden="true"
   data-testid="childrenContainer"
-  style="transition:height 500ms;height:0;overflow:hidden;visibility:hidden"
+  style="transition:height 500ms;overflow:hidden;height:0;visibility:hidden"
 >
   <div>
     Content to reveal
@@ -16,7 +16,7 @@ exports[`Reveal renders when the transition is triggered 1`] = `
 <div
   aria-hidden="false"
   data-testid="childrenContainer"
-  style="transition:height 500ms;height:auto;overflow:visible"
+  style="transition:height 500ms;overflow:visible;height:300px"
 >
   <div>
     Content to reveal
