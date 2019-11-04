@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-card@2.1.3...@tds/core-card@2.2.0) (2019-11-04)
+
+
+### Features
+
+* **core-card:** add fullHeight property ([9d7eb1d](https://github.com/telusdigital/tds/commit/9d7eb1d))
+
+
+
+
+
 ## [2.1.3](https://github.com/telusdigital/tds/compare/@tds/core-card@2.1.2...@tds/core-card@2.1.3) (2019-10-09)
 
 **Note:** Version bump only for package @tds/core-card
