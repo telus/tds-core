@@ -2199,10 +2199,10 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                       aria-hidden={true}
                       style={
                         Object {
-                          "height": 0,
+                          "height": "0px",
                           "opacity": 0,
                           "overflow": "hidden",
-                          "transition": "height 500ms, opacity 500ms ease-in-out",
+                          "transition": "height 500ms, opacity 500ms ease-in-out, visibility 0s 500ms",
                           "visibility": "hidden",
                         }
                       }
@@ -2236,10 +2236,10 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                         forwardedRef={null}
                         style={
                           Object {
-                            "height": 0,
+                            "height": "0px",
                             "opacity": 0,
                             "overflow": "hidden",
-                            "transition": "height 500ms, opacity 500ms ease-in-out",
+                            "transition": "height 500ms, opacity 500ms ease-in-out, visibility 0s 500ms",
                             "visibility": "hidden",
                           }
                         }
@@ -2249,10 +2249,10 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                           className="c11"
                           style={
                             Object {
-                              "height": 0,
+                              "height": "0px",
                               "opacity": 0,
                               "overflow": "hidden",
-                              "transition": "height 500ms, opacity 500ms ease-in-out",
+                              "transition": "height 500ms, opacity 500ms ease-in-out, visibility 0s 500ms",
                               "visibility": "hidden",
                             }
                           }
