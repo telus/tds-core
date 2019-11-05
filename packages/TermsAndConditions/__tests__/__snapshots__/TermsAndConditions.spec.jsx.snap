@@ -498,7 +498,7 @@ div.c14 {
   <div
     aria-hidden="true"
     class="c11"
-    style="transition:height 150ms, opacity 150ms ease-in-out;opacity:0;height:0;overflow:hidden;visibility:hidden"
+    style="transition:height 150ms, opacity 150ms ease-in-out, visibility 0s 150ms;opacity:0;height:0px;overflow:hidden;visibility:hidden"
   >
     <div>
       <div
