@@ -2,6 +2,7 @@
 
 Welcome to the TDS Announcement Board! Check back here regularly for the latest updates on TDS!
 
+- [October 2019](#october-2019)
 - [September 2019](#september-2019)
 - [August 2019](#august-2019)
 - [July 2019](#july-2019)
@@ -14,6 +15,66 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 - [December 2018](#december-2018)
 
 <hr/>
+
+## October 2019
+
+### New TDS Core Features 🎁
+
+**Select@3.2.0**
+- Supports option groups, see our docs
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-select%403.2.0)
+- [Docs](https://tds.telus.com/components/index.html#!/Select)
+
+**TermsAndConditions@1.2.0**
+- Add support for tags in footnote
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.2.0)
+
+**DecorativeIcon@2.4.1**
+- Converts icon sizes from pixels to rem, explicitly set rem units on the size values 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.4.1)
+
+**WebVideo@2.4.1**
+- Add onStart callback that fires when the video begins playing
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-web-video%401.1.0)
+
+**DecorativeIcon@2.4.0**
+- Update Accessible icon and add new Donate icon
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.4.0)
+
+
+### New TDS Core Fixes 
+
+**Notification@3.0.4**
+- Fixes issue with Notification throwing error after being dismissed
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%403.0.4)
+
+**ExpandCollapse@2.0.21 & TermsAndConditions@1.2.1**
+- Fixes issue where elements are focusable when collapsed
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fshared-animation%402.0.2)
+
+**Colours@2.2.1**
+- Fix path to deprecate.js for windows
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-colours%402.2.1)
+
+**Checkbox@2.0.23**
+- Fix disproportioned size 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%402.0.23)
+
+**Checkbox@2.0.23**
+- Fix disproportioned size 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%402.0.23)
+
+**Radio@2.0.18**
+- Fix disproportioned size 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-radio%402.0.18)
+
+### New Community Features 🎁
+
+**Pagination v2.0.0**
+- Upgrade to styled components and visual design changes
+- [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-pagination%402.0.0)
+- [Docs](https://tds.telus.com/community/index.html#pagination)
+
 
 ## September 2019
 
