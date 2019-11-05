@@ -20,8 +20,7 @@ const transitionStyles = height => (duration, timeout) => ({
     opacity: 1,
     height,
     visibility: 'visible',
-    transition: `height ${duration || timeout}ms, opacity ${duration ||
-      timeout}ms ease-in-out, visibility 0s`,
+    transition: `height ${duration || timeout}ms, opacity ${duration || timeout}ms ease-in-out`,
   },
   entered: { opacity: 1, height: 'auto', visibility: 'visible' },
   exiting: {
@@ -30,9 +29,10 @@ const transitionStyles = height => (duration, timeout) => ({
   },
   exited: {
     opacity: 0,
+    height: '0px',
     visibility: 'hidden',
     transition: `height ${duration || timeout}ms, opacity ${duration ||
-      timeout}ms ease-in-out, visibility 0s ${(duration || timeout) / 2}ms`,
+      timeout}ms ease-in-out, visibility 0s ${duration || timeout}ms`,
   },
 })
 
