@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.4.1...@tds/core-decorative-icon@2.5.0) (2019-11-06)
+
+
+### Features
+
+* **core-decorative-icon:** deprecate User icon ([6c148b6](https://github.com/telusdigital/tds/commit/6c148b6))
+
+
+
+
+
 ## [2.4.1](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.4.0...@tds/core-decorative-icon@2.4.1) (2019-10-18)
 
 

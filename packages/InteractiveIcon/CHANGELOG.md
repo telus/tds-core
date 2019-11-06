@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.2.1...@tds/core-interactive-icon@1.3.0) (2019-11-06)
+
+
+### Features
+
+* **core-interactive-icon:** add NavButton icons ([a511499](https://github.com/telus/tds-core/commit/a511499))
+
+
+
+
+
 ## [1.2.1](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.2.0...@tds/core-interactive-icon@1.2.1) (2019-10-09)
 
 **Note:** Version bump only for package @tds/core-interactive-icon

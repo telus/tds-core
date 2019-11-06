@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-select",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -27,7 +27,7 @@
   "dependencies": {
     "@tds/core-box": "^2.0.2",
     "@tds/core-colours": "^2.2.1",
-    "@tds/core-decorative-icon": "^2.4.1",
+    "@tds/core-decorative-icon": "^2.5.0",
     "@tds/core-input": "^3.0.26",
     "@tds/core-input-feedback": "^2.0.11",
     "@tds/core-paragraph": "^2.0.8",
