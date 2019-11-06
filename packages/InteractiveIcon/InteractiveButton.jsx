@@ -24,18 +24,18 @@ export const StyledInteractiveIconButton = styled(SharedStyledInteractiveIconBut
 const getTheme = variant => {
   if (variant === 'alternative') {
     return {
-      backgroundColor: '#D8CBE5',
+      hoverBackgroundColor: '#D8CBE5',
       iconColor: colorTelusPurple,
     }
   }
   if (variant === 'inverted') {
     return {
-      backgroundColor: 'transparent',
+      hoverBackgroundColor: 'transparent',
       iconColor: colorWhite,
     }
   }
   return {
-    backgroundColor: colorGreyGainsboro,
+    hoverBackgroundColor: colorGreyGainsboro,
     iconColor: colorGreyShark,
   }
 }
