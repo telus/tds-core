@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/shared-animation@2.0.2...@tds/shared-animation@2.1.0) (2019-11-11)
+
+
+### Features
+
+* **shared-animation:** cleanup Reveal, add delay feature ([6c9ee26](https://github.com/telusdigital/tds/commit/6c9ee26))
+
+
+
+
+
 ## [2.0.2](https://github.com/telusdigital/tds/compare/@tds/shared-animation@2.0.1...@tds/shared-animation@2.0.2) (2019-10-31)
 
 
