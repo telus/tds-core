@@ -50,7 +50,7 @@ about: Create a report to help us improve
 ## Meta
 
 <!--
-  Please note, priority of issues are determined
+  Please note, priority of issues are determined by the severity of the defect and how wide their impact is
 -->
 
 - TDS component version: <!-- Example: @tds/core-expand-collapse@1.1.0 -->
