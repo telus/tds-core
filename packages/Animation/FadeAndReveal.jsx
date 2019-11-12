@@ -8,21 +8,24 @@ export const StyledContainer = styled.div({
     transition: 'none !important',
   },
 })
-const defaultStyle = (duration, timeout) => ({
-  transition: `height ${duration || timeout}ms, opacity ${duration || timeout}ms ease-in-out`,
+const defaultStyle = timeout => ({
+  transition: `height ${timeout}ms ease-in-out, opacity ${timeout}ms ease-in-out`,
   opacity: 0,
   height: 0,
   overflow: 'hidden',
 })
 
-const transitionStyles = height => (duration, timeout) => ({
+const transitionStyles = height => ({
   entering: {
     opacity: 1,
     height,
-    visibility: 'visible',
-    transition: `height ${duration || timeout}ms, opacity ${duration || timeout}ms ease-in-out`,
+    // visibility: 'visible',
   },
-  entered: { opacity: 1, height: 'auto', visibility: 'visible' },
+  entered: {
+    opacity: 1,
+    height: 'auto',
+    // visibility: 'visible'
+  },
   exiting: {
     opacity: 0,
     height,
@@ -30,9 +33,7 @@ const transitionStyles = height => (duration, timeout) => ({
   exited: {
     opacity: 0,
     height: '0px',
-    visibility: 'hidden',
-    transition: `height ${duration || timeout}ms, opacity ${duration ||
-      timeout}ms ease-in-out, visibility 0s ${duration || timeout}ms`,
+    // visibility: 'hidden',
   },
 })
 
@@ -41,8 +42,8 @@ const FadeAndReveal = ({ delay, height, children, ...rest }) => (
     {state => (
       <StyledContainer
         style={{
-          ...defaultStyle(rest.duration, rest.timeout),
-          ...transitionStyles(height)(rest.duration, rest.timeout)[state],
+          ...defaultStyle(rest.timeout),
+          ...transitionStyles(height)[state],
         }}
         aria-hidden={state === 'exiting' || state === 'exited'}
       >
