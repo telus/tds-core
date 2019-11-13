@@ -29,7 +29,6 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c6,
 .c4 sup {
   position: relative;
   vertical-align: baseline;
@@ -212,7 +211,6 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c4 .c6,
 .c4 sup {
   position: relative;
   vertical-align: baseline;
