@@ -208,13 +208,10 @@ module.exports = {
           components() {
             return [
               path.resolve('packages/DisplayHeading/DisplayHeading.jsx'),
-              path.resolve('packages/DisplayHeading/DisplayHeadingSup/DisplayHeadingSup.jsx'),
               path.resolve('packages/Heading/Heading.jsx'),
-              path.resolve('packages/Heading/HeadingSup/HeadingSup.jsx'),
               path.resolve('packages/Paragraph/Paragraph.jsx'),
               path.resolve('packages/PriceLockup/PriceLockup.jsx'),
               path.resolve('packages/Text/Text.jsx'),
-              path.resolve('packages/Text/TextSup/TextSup.jsx'),
               path.resolve('packages/Strong/Strong.jsx'),
               path.resolve('packages/Small/Small.jsx'),
             ]
