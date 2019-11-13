@@ -13,8 +13,6 @@ import { colorWhite, colorText, colorSecondary } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
 
-import HeadingSup, { StyledHeadingSup } from './HeadingSup/HeadingSup'
-
 const HeadingLevels = {
   h1: {
     ...helveticaNeueLight45,
@@ -27,7 +25,7 @@ const HeadingLevels = {
       lineHeight: '1.18',
       letterSpacing: '0',
     }),
-    [`${StyledHeadingSup}, sup`]: {
+    sup: {
       ...baseSupSubScripts,
       fontSize: '1.25rem',
       top: '-1em',
@@ -44,7 +42,7 @@ const HeadingLevels = {
       lineHeight: '1.29',
       letterSpacing: '-0.8px',
     }),
-    [`${StyledHeadingSup}, sup`]: {
+    sup: {
       ...baseSupSubScripts,
       fontSize: '1rem',
       top: '-0.8em',
@@ -56,7 +54,7 @@ const HeadingLevels = {
     fontSize: '1.25rem',
     lineHeight: '1.4', // 28px
     letterSpacing: '-0.6px',
-    [`${StyledHeadingSup}, sup`]: {
+    sup: {
       ...baseSupSubScripts,
       fontSize: '0.875rem',
       top: '-0.5em',
@@ -67,7 +65,7 @@ const HeadingLevels = {
     fontSize: '1rem',
     lineHeight: '1.25', // 20px
     letterSpacing: '-0.6px',
-    [`${StyledHeadingSup}, sup`]: {
+    sup: {
       ...baseSupSubScripts,
       fontSize: '0.875rem',
       top: '-0.5em',
@@ -130,7 +128,5 @@ Heading.defaultProps = {
   invert: false,
   tag: undefined,
 }
-
-Heading.Sup = HeadingSup
 
 export default Heading

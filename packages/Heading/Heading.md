@@ -61,8 +61,8 @@ to have a different visual hierarchy of text.
 
         <Text>
           Stream live TV or On Demand shows and movies on any screen with TELUS Pik TV
-          <Text.Sup>TM</Text.Sup>. Get Pik TV from just $10 a month, and get your first month for $0
-          <Text.Sup>1</Text.Sup> when you sign up.
+          <sup>TM</sup>. Get Pik TV from just $10 a month, and get your first month for $0
+          <sup>1</sup> when you sign up.
         </Text>
 
         <div>
@@ -78,8 +78,6 @@ to have a different visual hierarchy of text.
 ```
 
 ### Using superscript copy within Heading
-
-The `<Heading.Sup>` component is deprecated. Use a standard HTML `<sup>` element instead.
 
 ```jsx
 <Box between={3}>
