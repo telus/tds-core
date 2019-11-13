@@ -13,7 +13,6 @@ exports[`Heading renders 1`] = `
   letter-spacing: -0.7px;
 }
 
-.c0 .c1,
 .c0 sup {
   position: relative;
   vertical-align: baseline;
@@ -41,7 +40,6 @@ exports[`Heading renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .c1,
   .c0 sup {
     font-size: 1rem;
     top: -0.7em;
