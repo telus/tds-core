@@ -9,8 +9,6 @@ import { media } from '@tds/core-responsive'
 
 import { safeRest } from '@tds/util-helpers'
 
-import DisplayHeadingSup from './DisplayHeadingSup/DisplayHeadingSup'
-
 const StyledDisplayHeading = styled.h1(
   spacing.noSpacing,
   wordBreak,
@@ -62,7 +60,5 @@ DisplayHeading.propTypes = {
 DisplayHeading.defaultProps = {
   invert: false,
 }
-
-DisplayHeading.Sup = DisplayHeadingSup
 
 export default DisplayHeading
