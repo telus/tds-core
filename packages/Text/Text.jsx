@@ -5,8 +5,6 @@ import styled from 'styled-components'
 import * as typography from '@tds/shared-typography'
 import { safeRest } from '@tds/util-helpers'
 
-import TextSup from './TextSup/TextSup'
-
 const textColor = ({ invert }) => (invert ? typography.invertedColor : typography.color)
 const textInheritColor = ({ inheritColor }) => (inheritColor ? { color: 'inherit' } : undefined)
 const textSize = ({ size }) => typography[size]
@@ -62,7 +60,5 @@ Text.defaultProps = {
 Text.contextTypes = {
   inheritColor: PropTypes.bool,
 }
-
-Text.Sup = TextSup
 
 export default Text
