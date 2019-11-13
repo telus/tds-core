@@ -36,7 +36,6 @@ exports[`Footnote renders closed 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c10 .c15,
 .c10 sup {
   position: relative;
   vertical-align: baseline;
@@ -494,7 +493,6 @@ exports[`Footnote renders opened 1`] = `
   letter-spacing: -0.6px;
 }
 
-.c10 .c15,
 .c10 sup {
   position: relative;
   vertical-align: baseline;
