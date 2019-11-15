@@ -92,12 +92,7 @@ const TermsAndConditions = forwardRef(
             </FlexGrid.Col>
           </FlexGrid.Row>
         </FlexGrid>
-        <FadeAndReveal
-          timeout={isOpen ? speed : 0}
-          duration={speed}
-          in={isOpen}
-          height={contentWrapperHeight}
-        >
+        <FadeAndReveal timeout={speed} in={isOpen} height={contentWrapperHeight}>
           {() => (
             <div ref={contentWrapper}>
               <FlexGrid gutter={false} limitWidth={false}>
