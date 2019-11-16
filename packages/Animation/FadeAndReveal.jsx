@@ -30,7 +30,7 @@ const transitionStyles = (height, timeout) => ({
     opacity: 1,
     height,
     visibility: 'visible',
-    transition: 'unset',
+    transition: `height ${timeout}ms ease-in-out, opacity ${timeout}ms ease-in-out, visibility 0ms ${timeout}ms`,
   },
   exited: {
     opacity: 0,
