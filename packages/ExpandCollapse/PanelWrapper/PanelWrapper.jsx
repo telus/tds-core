@@ -85,29 +85,18 @@ class PanelWrapper extends React.Component {
     contentWrapperHeight: 0,
   }
 
-  componentDidMount() {
-    this.adjustContentHeight()
-  }
-
   componentWillReceiveProps(nextProps) {
     const { panelOnToggle } = this.props
 
     if (this.state.open !== nextProps.open) {
-      this.setState({ open: nextProps.open })
+      this.setState({
+        open: nextProps.open,
+        contentWrapperHeight: this.contentWrapper.offsetHeight,
+      })
 
       if (panelOnToggle) {
         panelOnToggle(nextProps.open)
       }
-    }
-  }
-
-  componentDidUpdate() {
-    this.adjustContentHeight()
-  }
-
-  adjustContentHeight = () => {
-    if (this.contentWrapper.offsetHeight !== this.state.contentWrapperHeight) {
-      this.setState({ contentWrapperHeight: this.contentWrapper.offsetHeight })
     }
   }
 
@@ -200,12 +189,7 @@ class PanelWrapper extends React.Component {
           ? React.createElement(tag, { 'data-testid': 'headerWrapper' }, headerButton)
           : headerButton}
 
-        <FadeAndReveal
-          timeout={this.state.open ? 500 : 0}
-          duration={500}
-          in={this.state.open}
-          height={this.state.contentWrapperHeight}
-        >
+        <FadeAndReveal timeout={500} in={this.state.open} height={this.state.contentWrapperHeight}>
           {() => (
             <div
               ref={contentWrapper => {
