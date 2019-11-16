@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Transition } from 'react-transition-group'
+import { CSSTransition } from 'react-transition-group'
 import styled from 'styled-components'
 
 export const StyledContainer = styled.div({
@@ -8,59 +8,62 @@ export const StyledContainer = styled.div({
     transition: 'none !important',
   },
 })
-const defaultStyle = (duration, timeout) => ({
-  transition: `height ${duration || timeout}ms, opacity ${duration || timeout}ms ease-in-out`,
+const defaultStyle = () => ({
   opacity: 0,
   height: 0,
   overflow: 'hidden',
 })
 
-const transitionStyles = height => (duration, timeout) => ({
+const transitionStyles = (height, timeout) => ({
   entering: {
     opacity: 1,
     height,
-    visibility: 'visible',
-    transition: `height ${duration || timeout}ms, opacity ${duration || timeout}ms ease-in-out`,
+    transition: `height ${timeout}ms ease-in-out, opacity ${timeout}ms ease-in-out`,
   },
-  entered: { opacity: 1, height: 'auto', visibility: 'visible' },
+  entered: {
+    opacity: 1,
+    height: 'auto',
+    visibility: 'visible',
+    transition: 'unset',
+  },
   exiting: {
-    opacity: 0,
+    opacity: 1,
     height,
+    visibility: 'visible',
+    transition: 'unset',
   },
   exited: {
     opacity: 0,
     height: '0px',
     visibility: 'hidden',
-    transition: `height ${duration || timeout}ms, opacity ${duration ||
-      timeout}ms ease-in-out, visibility 0s ${duration || timeout}ms`,
+    transition: `height ${timeout}ms ease-in-out, opacity ${timeout}ms ease-in-out, visibility 0ms ${timeout}ms`,
   },
 })
 
-const FadeAndReveal = ({ delay, height, children, ...rest }) => (
-  <Transition {...rest}>
+const FadeAndReveal = ({ timeout, height, children, ...rest }) => (
+  <CSSTransition {...rest} timeout={{ appear: timeout, enter: timeout, exit: 0 }}>
     {state => (
       <StyledContainer
         style={{
-          ...defaultStyle(rest.duration, rest.timeout),
-          ...transitionStyles(height)(rest.duration, rest.timeout)[state],
+          ...defaultStyle(timeout),
+          ...transitionStyles(height, timeout)[state],
         }}
         aria-hidden={state === 'exiting' || state === 'exited'}
       >
         {children()}
       </StyledContainer>
     )}
-  </Transition>
+  </CSSTransition>
 )
 
 FadeAndReveal.propTypes = {
   height: PropTypes.number.isRequired,
-  duration: PropTypes.number.isRequired,
-  delay: PropTypes.number,
+  timeout: PropTypes.number,
   children: PropTypes.func.isRequired,
 }
 
 FadeAndReveal.defaultProps = {
-  delay: 0,
+  timeout: 0,
 }
 
 export default FadeAndReveal
