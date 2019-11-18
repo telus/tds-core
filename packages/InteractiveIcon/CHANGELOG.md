@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.3.0...@tds/core-interactive-icon@1.3.1) (2019-11-18)
+
+**Note:** Version bump only for package @tds/core-interactive-icon
+
+
+
+
+
 # [1.3.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.2.1...@tds/core-interactive-icon@1.3.0) (2019-11-06)
 
 

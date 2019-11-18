@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-text@2.0.6...@tds/core-text@3.0.0) (2019-11-18)
+
+
+### Features
+
+* **core-text:** remove text sup component ([0d32241](https://github.com/telusdigital/tds/commit/0d32241))
+
+
+### BREAKING CHANGES
+
+* **core-text:** Remove text.sup component
+
+
+
+
+
 ## [2.0.6](https://github.com/telusdigital/tds/compare/@tds/core-text@2.0.5...@tds/core-text@2.0.6) (2019-10-09)
 
 **Note:** Version bump only for package @tds/core-text

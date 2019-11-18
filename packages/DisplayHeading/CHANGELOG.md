@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@2.2.9...@tds/core-display-heading@3.0.0) (2019-11-18)
+
+
+### Features
+
+* **core-display-heading:** remove display heading sup component ([aff5e98](https://github.com/telusdigital/tds/commit/aff5e98))
+
+
+### BREAKING CHANGES
+
+* **core-display-heading:** remove DisplayHeading.sup component
+
+
+
+
+
 ## [2.2.9](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@2.2.8...@tds/core-display-heading@2.2.9) (2019-10-09)
 
 **Note:** Version bump only for package @tds/core-display-heading
