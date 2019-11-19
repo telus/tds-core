@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SVGIcon from '../SVGIcon'
 
 import { deprecate } from '../../../shared/utils/warn'
 
 const User = props => {
-  deprecate(
-    '@tds/core-decorative-icon',
-    'The User component is deprecated. Please use the HeadMale Decorative icon instead.'
-  )
+  useEffect(() => {
+    deprecate(
+      '@tds/core-decorative-icon',
+      'The User component is deprecated. Please use the HeadMale Decorative icon instead.'
+    )
+  }, [])
   return (
     <SVGIcon {...props}>
       <svg width="24" height="24" viewBox="0 0 24 24">
