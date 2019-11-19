@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/telus/tds-core/issues"
   },
-  "homepage": "http://tds.telus.com"
+  "homepage": "http://tds.telus.com",
+  "dependencies": {
+    "@tds/core-responsive": "^1.3.1"
+  }
 }
