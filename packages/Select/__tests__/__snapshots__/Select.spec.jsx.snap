@@ -1,50 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select can have an error message 1`] = `
-.c13 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #c12335;
-  font-size: 1rem;
-}
-
-.c13::before {
-  content: '\\f103';
-}
-
-.c15 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #c12335;
-  font-size: 1rem;
-}
-
-.c15::before {
-  content: '\\f105';
-}
-
 .c3 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -146,6 +102,28 @@ exports[`Select can have an error message 1`] = `
 .c4 {
   border-radius: 4px;
   background-color: #fff6f8;
+}
+
+.c14 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #c12335;
+  font-size: 1rem;
+}
+
+.c14::before {
+  content: '\\f105';
 }
 
 .c12 {
@@ -260,7 +238,7 @@ exports[`Select can have an error message 1`] = `
   pointer-events: none;
 }
 
-.c14 {
+.c13 {
   line-height: 1;
 }
 
@@ -1053,59 +1031,42 @@ exports[`Select can have an error message 1`] = `
                                               <div
                                                 className="c12"
                                               >
-                                                <StandaloneIcon
-                                                  a11yText="The value of this input field is invalid."
-                                                  size={16}
-                                                  symbol="exclamationPointCircle"
-                                                  variant="error"
+                                                <Times
+                                                  copy={
+                                                    Object {
+                                                      "a11yText": "The value of this input field is invalid.",
+                                                    }
+                                                  }
                                                 >
-                                                  <Icon
-                                                    size={16}
-                                                    symbol="exclamationPointCircle"
-                                                    variant="error"
+                                                  <FeedbackIcon
+                                                    copy={
+                                                      Object {
+                                                        "a11yText": "The value of this input field is invalid.",
+                                                      }
+                                                    }
+                                                    copyDictionary={Object {}}
+                                                    height="16"
+                                                    optionalText={true}
+                                                    viewBox="0 0 16 16"
+                                                    width="16"
                                                   >
-                                                    <Icon__StyledIcon
-                                                      iSize={16}
-                                                      symbol="exclamationPointCircle"
-                                                      variant="error"
+                                                    <svg
+                                                      height="16"
+                                                      role="img"
+                                                      viewBox="0 0 16 16"
+                                                      width="16"
                                                     >
-                                                      <StyledComponent
-                                                        forwardedComponent={
-                                                          Object {
-                                                            "$$typeof": Symbol(react.forward_ref),
-                                                            "attrs": Array [],
-                                                            "componentStyle": ComponentStyle {
-                                                              "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                              "isStatic": false,
-                                                              "lastClassName": "c13",
-                                                              "rules": Array [
-                                                                [Function],
-                                                                [Function],
-                                                                [Function],
-                                                              ],
-                                                            },
-                                                            "displayName": "Icon__StyledIcon",
-                                                            "foldedComponentIds": Array [],
-                                                            "render": [Function],
-                                                            "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                            "target": "i",
-                                                            "toString": [Function],
-                                                            "warnTooManyClasses": [Function],
-                                                            "withComponent": [Function],
-                                                          }
-                                                        }
-                                                        forwardedRef={null}
-                                                        iSize={16}
-                                                        symbol="exclamationPointCircle"
-                                                        variant="error"
-                                                      >
-                                                        <i
-                                                          className="c13"
-                                                        />
-                                                      </StyledComponent>
-                                                    </Icon__StyledIcon>
-                                                  </Icon>
-                                                </StandaloneIcon>
+                                                      <title>
+                                                        The value of this input field is invalid.
+                                                      </title>
+                                                      <path
+                                                        d="M8 9.17l-4.931 4.637a.756.756 0 0 1-1.034-.021l.176.175a.718.718 0 0 1-.003-1.012l4.781-4.782a40.59 40.59 0 0 1-.083-.085l-4.72-5.017a.753.753 0 0 1 .03-1.03l-.176.177a.714.714 0 0 1 1.012-.003L8 7.157l4.948-4.948a.714.714 0 0 1 1.012.003l-.176-.176a.753.753 0 0 1 .03 1.029l-4.72 5.017a40.59 40.59 0 0 1-.083.085l4.781 4.782a.718.718 0 0 1-.003 1.012l.176-.175a.756.756 0 0 1-1.034.021L8 9.17z"
+                                                        fill="#c12335"
+                                                        fillRule="evenodd"
+                                                      />
+                                                    </svg>
+                                                  </FeedbackIcon>
+                                                </Times>
                                               </div>
                                             </StyledComponent>
                                           </FeedbackIcon__StyledIcon>
@@ -1122,7 +1083,7 @@ exports[`Select can have an error message 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "Select__IconLineFix-sc-1kajzpi-2",
                                             "isStatic": true,
-                                            "lastClassName": "c14",
+                                            "lastClassName": "c13",
                                             "rules": Array [
                                               "line-height: 1;",
                                             ],
@@ -1140,7 +1101,7 @@ exports[`Select can have an error message 1`] = `
                                       forwardedRef={null}
                                     >
                                       <div
-                                        className="c14"
+                                        className="c13"
                                       >
                                         <DecorativeIcon
                                           size={16}
@@ -1168,7 +1129,7 @@ exports[`Select can have an error message 1`] = `
                                                     "componentStyle": ComponentStyle {
                                                       "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
                                                       "isStatic": false,
-                                                      "lastClassName": "c15",
+                                                      "lastClassName": "c14",
                                                       "rules": Array [
                                                         [Function],
                                                         [Function],
@@ -1192,7 +1153,7 @@ exports[`Select can have an error message 1`] = `
                                               >
                                                 <i
                                                   aria-hidden="true"
-                                                  className="c15"
+                                                  className="c14"
                                                 />
                                               </StyledComponent>
                                             </Icon__StyledIcon>
@@ -1930,28 +1891,6 @@ exports[`Select needs a set of options 1`] = `[Function]`;
 exports[`Select positions the down caret so that the text does not overlap it 1`] = `[Function]`;
 
 exports[`Select renders 1`] = `
-.c10 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #2B8000;
-  font-size: 1rem;
-}
-
-.c10::before {
-  content: '\\f105';
-}
-
 .c3 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -2013,6 +1952,28 @@ exports[`Select renders 1`] = `
 
 .c8 > *:not(:last-child) {
   margin-right: 1rem;
+}
+
+.c10 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #2B8000;
+  font-size: 1rem;
+}
+
+.c10::before {
+  content: '\\f105';
 }
 
 .c5 {
@@ -2197,50 +2158,6 @@ exports[`Select renders 1`] = `
 `;
 
 exports[`Select renders with a feedback state and icon 1`] = `
-.c10 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #c12335;
-  font-size: 1rem;
-}
-
-.c10::before {
-  content: '\\f103';
-}
-
-.c12 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #c12335;
-  font-size: 1rem;
-}
-
-.c12::before {
-  content: '\\f105';
-}
-
 .c3 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -2302,6 +2219,28 @@ exports[`Select renders with a feedback state and icon 1`] = `
 
 .c8 > *:not(:last-child) {
   margin-right: 1rem;
+}
+
+.c11 {
+  font-family: 'TELUS Core Icons';
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: middle;
+  color: #c12335;
+  font-size: 1rem;
+}
+
+.c11::before {
+  content: '\\f105';
 }
 
 .c9 {
@@ -2416,7 +2355,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
   pointer-events: none;
 }
 
-.c11 {
+.c10 {
   line-height: 1;
 }
 
@@ -2485,17 +2424,29 @@ exports[`Select renders with a feedback state and icon 1`] = `
           <div
             class="c9"
           >
-            <i
-              class="c10"
-            />
+            <svg
+              height="16"
+              role="img"
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <title>
+                The value of this input field is invalid.
+              </title>
+              <path
+                d="M8 9.17l-4.931 4.637a.756.756 0 0 1-1.034-.021l.176.175a.718.718 0 0 1-.003-1.012l4.781-4.782a40.59 40.59 0 0 1-.083-.085l-4.72-5.017a.753.753 0 0 1 .03-1.03l-.176.177a.714.714 0 0 1 1.012-.003L8 7.157l4.948-4.948a.714.714 0 0 1 1.012.003l-.176-.176a.753.753 0 0 1 .03 1.029l-4.72 5.017a40.59 40.59 0 0 1-.083.085l4.781 4.782a.718.718 0 0 1-.003 1.012l.176-.175a.756.756 0 0 1-1.034.021L8 9.17z"
+                fill="#c12335"
+                fill-rule="evenodd"
+              />
+            </svg>
           </div>
         </div>
         <div
-          class="c11"
+          class="c10"
         >
           <i
             aria-hidden="true"
-            class="c12"
+            class="c11"
           />
         </div>
       </div>
