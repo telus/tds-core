@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telus/tds/compare/@tds/shared-animation@2.1.0...@tds/shared-animation@3.0.0) (2019-11-19)
+
+
+### Bug Fixes
+
+* **shared-animation:** restore proper fade animation ([c029b30](https://github.com/telus/tds/commit/c029b30))
+
+
+### Features
+
+* **shared-animation:** use CSSTransition ([e712554](https://github.com/telus/tds/commit/e712554))
+
+
+### BREAKING CHANGES
+
+* **shared-animation:** remove delay and duration props
+
+
+
+
+
 # [2.1.0](https://github.com/telusdigital/tds/compare/@tds/shared-animation@2.0.2...@tds/shared-animation@2.1.0) (2019-11-11)
 
 
