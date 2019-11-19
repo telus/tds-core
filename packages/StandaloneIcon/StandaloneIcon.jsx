@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -28,10 +28,12 @@ const StandaloneIconClickable = styled.button(buttons.noStyle)
  * @version ./package.json
  */
 const StandaloneIcon = ({ symbol, variant, size, onClick, a11yText, innerRef, ...rest }) => {
-  deprecate(
-    '@tds/core-standalone-icon',
-    'The StandaloneIcon component is deprecated. Please use a InteractiveIcon instead.'
-  )
+  useEffect(() => {
+    deprecate(
+      '@tds/core-standalone-icon',
+      'The StandaloneIcon component is deprecated. Please use a InteractiveIcon instead.'
+    )
+  }, [])
   const iconProps = {
     symbol,
     variant,
