@@ -5,7 +5,7 @@
 
 ### Spacing levels
 
-The spacing system defines 8 levels of spacing. Levels `4` and above are responsive, as detailed below:
+The spacing system defines 8 levels of spacing. Levels `4` and above are always responsive by default, as detailed below:
 
 <div style="text-align: center;">
   <img src="box_spacing-levels.png" style="width: 100%;" alt="box spacing levels example"/>
@@ -71,6 +71,18 @@ Note the compositional nature of `Box`. Use multiple Boxes to achieve complex la
   <Link href="#">Sale</Link>
 </Box>
 ```
+
+### Responsiveness
+
+The `Box` component is also capable of setting certain box sizes at specific viewport breakpoints. Designers should use best practices and recommended spacing if the current behaviour of `Box` levels does not solve a designs needs.
+
+For example:
+
+```jsx
+<Box vertical={{ xs: 2, md: 3 }}>My content</Box>
+```
+
+This will set vertical padding of size `2` (8px) for the `Box` from the `xs` breakpoint (starting at 0px width), and then vertical padding of `3` (16px) for the `Box` from the `md` breakpoint (starting at 768px). To learn more about responsive props see [`@tds/util-prop-types`](#proptypes). The following `Box` props support responsive props: `vertical`, `horizontal`, `inset`, `between`, and `inline`.
 
 ### Using space-between
 
