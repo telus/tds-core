@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SVGIcon from '../SVGIcon'
 
 import { deprecate } from '../../../shared/utils/warn'
 
 const LocationVerified = props => {
-  deprecate(
-    '@tds/core-decorative-icon',
-    'The LocationVerified component is deprecated. Please use another icon from the Decorative icon sets instead and if no alternatives suffice, please submit a new icon request on our Github template https://github.com/telus/tds-core/issues/new?template=icon_template.md.'
-  )
+  useEffect(() => {
+    deprecate(
+      '@tds/core-decorative-icon',
+      'The LocationVerified component is deprecated. Please use another icon from the Decorative icon sets instead and if no alternatives suffice, please submit a new icon request on our Github template https://github.com/telus/tds-core/issues/new?template=icon_template.md.'
+    )
+  }, [])
   return (
     <SVGIcon {...props}>
       <svg width="18" height="24" viewBox="0 0 18 24">

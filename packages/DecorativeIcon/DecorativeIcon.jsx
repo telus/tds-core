@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import Icon from '../../shared/components/Icon/Icon'
@@ -10,10 +10,12 @@ import { deprecate } from '../../shared/utils/warn'
  * @version ./package.json
  */
 const DecorativeIcon = ({ symbol, variant, size, ...rest }) => {
-  deprecate(
-    '@tds/core-decorative-icon',
-    'The DecorativeIcon component is deprecated. Please use the SVG exports from @tds/core-decorative-icon, or other Icon components.'
-  )
+  useEffect(() => {
+    deprecate(
+      '@tds/core-decorative-icon',
+      'The DecorativeIcon component is deprecated. Please use the SVG exports from @tds/core-decorative-icon, or other Icon components.'
+    )
+  }, [])
   return <Icon {...rest} symbol={symbol} variant={variant} size={size} aria-hidden="true" />
 }
 
