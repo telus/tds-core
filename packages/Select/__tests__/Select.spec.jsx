@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import StandaloneIcon from '@tds/core-standalone-icon'
+import { Checkmark, Times } from '@tds/core-feedback-icon'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
@@ -161,12 +161,7 @@ describe('Select', () => {
       const { findFeedbackIconFade } = doMount({ feedback: 'success' })
 
       expect(findFeedbackIconFade()).toContainReact(
-        <StandaloneIcon
-          symbol="checkmark"
-          variant="primary"
-          size={16}
-          a11yText="The value of this input field is valid."
-        />
+        <Checkmark copy={{ a11yText: 'The value of this input field is valid.' }} />
       )
     })
 
@@ -175,12 +170,7 @@ describe('Select', () => {
 
       expect(select.find(DecorativeIcon)).toHaveProp('variant', 'error')
       expect(findFeedbackIconFade()).toContainReact(
-        <StandaloneIcon
-          symbol="exclamationPointCircle"
-          variant="error"
-          size={16}
-          a11yText="The value of this input field is invalid."
-        />
+        <Times copy={{ a11yText: 'The value of this input field is invalid.' }} />
       )
     })
 
@@ -220,7 +210,8 @@ describe('Select', () => {
     it('hides any icons', () => {
       const { select } = doMount({ disabled: true, feedback: 'error' })
 
-      expect(select.find(StandaloneIcon)).not.toExist()
+      expect(select.find(Checkmark)).not.toExist()
+      expect(select.find(Times)).not.toExist()
       expect(select.find(DecorativeIcon)).not.toExist()
     })
   })
