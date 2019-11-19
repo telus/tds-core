@@ -2,10 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import { media } from '@tds/core-responsive'
+import { generateResponsiveStyles } from '@tds/util-helpers'
+import { responsiveProps } from '@tds/util-prop-types'
 
 const spacing = {
   mobile: {
+    0: '0rem',
     1: '0.25rem',
     2: '0.5rem',
     3: '1rem',
@@ -16,6 +18,7 @@ const spacing = {
     8: '4rem',
   },
   desktop: {
+    0: '0rem',
     1: '0.25rem',
     2: '0.5rem',
     3: '1rem',
@@ -27,92 +30,97 @@ const spacing = {
   },
 }
 
-const boxSpacing = (level, f) => {
-  const mobileStyle = f(spacing.mobile[level])
-  if (spacing.mobile[level] === spacing.desktop[level]) {
-    return mobileStyle
+const convertToRem = (level, breakpoint) => {
+  if (['xs', 'sm'].indexOf(breakpoint) !== -1) {
+    return spacing.mobile[level]
   }
-
-  const desktopStyle = media.from('md').css(f(spacing.desktop[level]))
-
-  return { ...mobileStyle, ...desktopStyle }
+  return spacing.desktop[level]
 }
 
-const betweenStyles = ({ between, inline }) => {
-  if (between === undefined) {
-    return undefined
-  }
+const inlineBetweenStyles = props =>
+  generateResponsiveStyles(
+    { between: props.between, inline: props.inline },
+    ({ between, inline }, breakpoint) => {
+      const base = {
+        display: between ? 'flex' : 'block',
+        flexDirection: inline ? 'row' : 'column',
+      }
 
-  if (between === 'space-between') {
-    return { justifyContent: 'space-between' }
-  }
+      if (between === undefined) {
+        return base
+      }
 
-  return boxSpacing(between, space => ({
-    '> *:not(:last-child)': {
-      ...(inline ? { marginRight: space } : { marginBottom: space }),
-    },
-  }))
-}
+      if (between === 'space-between') {
+        return Object.assign(base, { justifyContent: 'space-between' })
+      }
 
-const horizontalStyles = ({ horizontal }) => {
-  if (horizontal === undefined) {
-    return undefined
-  }
-  return boxSpacing(horizontal, space => ({
-    paddingLeft: space,
-    paddingRight: space,
-  }))
-}
+      const rem = convertToRem(between, breakpoint)
 
-const verticalStyles = ({ vertical }) => {
-  if (vertical === undefined) {
-    return undefined
-  }
+      return Object.assign(base, {
+        '> *:not(:last-child)': {
+          ...(inline ? { marginRight: rem } : { marginBottom: rem }),
+        },
+      })
+    }
+  )
 
-  return boxSpacing(vertical, space => ({
-    paddingTop: space,
-    paddingBottom: space,
-  }))
-}
+const horizontalStyles = props =>
+  generateResponsiveStyles({ horizontal: props.horizontal }, ({ horizontal }, breakpoint) => {
+    if (horizontal === undefined) {
+      return undefined
+    }
 
-const insetStyles = ({ inset }) => {
-  if (inset === undefined) {
-    return undefined
-  }
+    const rem = convertToRem(horizontal, breakpoint)
 
-  return boxSpacing(inset, space => ({
-    paddingTop: space,
-    paddingBottom: space,
-    paddingLeft: space,
-    paddingRight: space,
-  }))
-}
+    return { paddingLeft: rem, paddingRight: rem }
+  })
 
-const belowStyles = ({ below }) => {
-  if (below === undefined) {
-    return undefined
-  }
+const verticalStyles = props =>
+  generateResponsiveStyles({ vertical: props.vertical }, ({ vertical }, breakpoint) => {
+    if (vertical === undefined) {
+      return undefined
+    }
 
-  return boxSpacing(below, space => ({
-    marginBottom: space,
-  }))
-}
+    const rem = convertToRem(vertical, breakpoint)
+
+    return {
+      paddingTop: rem,
+      paddingBottom: rem,
+    }
+  })
+
+const insetStyles = props =>
+  generateResponsiveStyles({ inset: props.inset }, ({ inset }, breakpoint) => {
+    if (inset === undefined) {
+      return undefined
+    }
+
+    const rem = convertToRem(inset, breakpoint)
+
+    return {
+      paddingTop: rem,
+      paddingBottom: rem,
+      paddingLeft: rem,
+      paddingRight: rem,
+    }
+  })
+
+const belowStyles = props =>
+  generateResponsiveStyles({ below: props.below }, ({ below }, breakpoint) => {
+    if (below === undefined) {
+      return undefined
+    }
+
+    const rem = convertToRem(below, breakpoint)
+
+    return {
+      marginBottom: rem,
+    }
+  })
 
 const StyledBox = styled.div.attrs(({ className, tag }) => {
   return { className, as: tag }
-})(
-  betweenStyles,
-  horizontalStyles,
-  verticalStyles,
-  insetStyles,
-  belowStyles,
-  ({ between, inline }) => {
-    return {
-      display: between ? 'flex' : 'block',
-      flexDirection: inline ? 'row' : 'column',
-    }
-  }
-)
+})(inlineBetweenStyles, horizontalStyles, verticalStyles, insetStyles, belowStyles)
 
 /**
  * Apply spacing within or around components.
@@ -128,16 +136,22 @@ Box.propTypes = {
   tag: PropTypes.string,
   /**
    * Indent content from the container's top and bottom edge by applying padding.
+   *
+   * One of: `0,1,2,3,4,5,6,7,8` as a [**responsive prop**](#responsiveProps)
    */
-  vertical: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  vertical: responsiveProps(PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8])),
   /**
    * Indent content from the container's left and right edge by applying padding.
+   *
+   * One of: `0,1,2,3,4,5,6,7,8` as a [**responsive prop**](#responsiveProps)
    */
-  horizontal: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  horizontal: responsiveProps(PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8])),
   /**
    * Indent content from all of the container's edges by applying padding.
+   *
+   * One of: `0,1,2,3,4,5,6,7,8` as a [**responsive prop**](#responsiveProps)
    */
-  inset: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  inset: responsiveProps(PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8])),
   /**
    * @ignore
    *
@@ -145,8 +159,10 @@ Box.propTypes = {
    * spacing to Markdown components, but would like to use between instead if the library allows it.
    *
    * Sets a `margin-bottom`.
+   *
+   * One of: `0,1,2,3,4,5,6,7,8` as a [**responsive prop**](#responsiveProps)
    */
-  below: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]),
+  below: responsiveProps(PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8])),
   /**
    * Create either a block or an inline stack, applying margin in between every direct child. Margin will not be
    * applied to the last component in the stack.
@@ -155,12 +171,16 @@ Box.propTypes = {
    * as a flex row.
    *
    * Use `space-between` to set an equal amount of space between all items, within the bounds of the parent.
+   *
+   * One of: `0,1,2,3,4,5,6,7,8,space-between` as a [**responsive prop**](#responsiveProps)
    */
-  between: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 'space-between']),
+  between: responsiveProps(PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 'space-between'])),
   /**
    * Arrange children in a row. Combine with `between` to apply margins in between the row's elements.
+   *
+   * One of: `true,false` as a [**responsive prop**](#responsiveProps)
    */
-  inline: PropTypes.bool,
+  inline: responsiveProps(PropTypes.bool),
   /**
    * @ignore
    */

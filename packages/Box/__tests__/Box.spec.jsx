@@ -55,6 +55,17 @@ describe('Box', () => {
       box = doMount({ vertical: 2, horizontal: 3 })
       expect(box).toMatchSnapshot()
     })
+
+    it('can handle responsive horizontal and vertical', () => {
+      let box = doMount({ vertical: { xs: 1, md: 4 } })
+      expect(box).toMatchSnapshot()
+
+      box = doMount({ horizontal: { xs: 1, md: 4 } })
+      expect(box).toMatchSnapshot()
+
+      box = doMount({ vertical: { xs: 1, md: 4 }, horizontal: { xs: 3, lg: 8 } })
+      expect(box).toMatchSnapshot()
+    })
   })
 
   describe('between', () => {
@@ -80,6 +91,12 @@ describe('Box', () => {
 
     it('applies space-between', () => {
       const box = doMount({ between: 'space-between' })
+
+      expect(box).toMatchSnapshot()
+    })
+
+    it('can handle responsive props', () => {
+      const box = doMount({ between: { xs: 4, md: 8 }, inline: { xs: false, md: true } })
 
       expect(box).toMatchSnapshot()
     })
