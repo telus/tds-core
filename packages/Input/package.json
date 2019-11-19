@@ -27,6 +27,7 @@
   "dependencies": {
     "@tds/core-box": "^2.0.2",
     "@tds/core-colours": "^2.2.1",
+    "@tds/core-feedback-icon": "^1.0.3",
     "@tds/core-input-feedback": "^2.0.11",
     "@tds/core-paragraph": "^2.0.8",
     "@tds/core-standalone-icon": "^2.1.8",
