@@ -1,28 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input feedback states ensures that the contents do not overlap the icons 1`] = `
-.c8 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #2B8000;
-  font-size: 1rem;
-}
-
-.c8::before {
-  content: '\\f101';
-}
-
 .c3 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -219,9 +197,21 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
         <div
           class="c7"
         >
-          <i
-            class="c8"
-          />
+          <svg
+            height="16"
+            role="img"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <title>
+              The value of this input field is valid.
+            </title>
+            <path
+              d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+              fill="#2B8000"
+              fill-rule="evenodd"
+            />
+          </svg>
         </div>
       </div>
     </div>
@@ -1386,28 +1376,6 @@ exports[`Input renders 1`] = `
 `;
 
 exports[`Input renders with a feedback state and icon 1`] = `
-.c8 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #c12335;
-  font-size: 1rem;
-}
-
-.c8::before {
-  content: '\\f103';
-}
-
 .c3 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -1604,9 +1572,21 @@ exports[`Input renders with a feedback state and icon 1`] = `
         <div
           class="c7"
         >
-          <i
-            class="c8"
-          />
+          <svg
+            height="16"
+            role="img"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <title>
+              The value of this input field is invalid.
+            </title>
+            <path
+              d="M8 9.17l-4.931 4.637a.756.756 0 0 1-1.034-.021l.176.175a.718.718 0 0 1-.003-1.012l4.781-4.782a40.59 40.59 0 0 1-.083-.085l-4.72-5.017a.753.753 0 0 1 .03-1.03l-.176.177a.714.714 0 0 1 1.012-.003L8 7.157l4.948-4.948a.714.714 0 0 1 1.012.003l-.176-.176a.753.753 0 0 1 .03 1.029l-4.72 5.017a40.59 40.59 0 0 1-.083.085l4.781 4.782a.718.718 0 0 1-.003 1.012l.176-.175a.756.756 0 0 1-1.034.021L8 9.17z"
+              fill="#c12335"
+              fill-rule="evenodd"
+            />
+          </svg>
         </div>
       </div>
     </div>

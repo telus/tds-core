@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import StandaloneIcon from '@tds/core-standalone-icon'
+import { Checkmark, Times } from '@tds/core-feedback-icon'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
@@ -169,12 +169,7 @@ describe('Input', () => {
       const { findFeedbackIconFade } = doMount({ feedback: 'success' })
 
       expect(findFeedbackIconFade()).toContainReact(
-        <StandaloneIcon
-          symbol="checkmark"
-          variant="primary"
-          size={16}
-          a11yText="The value of this input field is valid."
-        />
+        <Checkmark copy={{ a11yText: 'The value of this input field is valid.' }} />
       )
     })
 
@@ -182,12 +177,7 @@ describe('Input', () => {
       const { findFeedbackIconFade } = doMount({ feedback: 'error' })
 
       expect(findFeedbackIconFade()).toContainReact(
-        <StandaloneIcon
-          symbol="exclamationPointCircle"
-          variant="error"
-          size={16}
-          a11yText="The value of this input field is invalid."
-        />
+        <Times copy={{ a11yText: 'The value of this input field is invalid.' }} />
       )
     })
 
@@ -220,7 +210,8 @@ describe('Input', () => {
     it('hides any icons', () => {
       const { input } = doMount({ disabled: true, feedback: 'error' })
 
-      expect(input.find(StandaloneIcon)).not.toExist()
+      expect(input.find(Checkmark)).not.toExist()
+      expect(input.find(Times)).not.toExist()
     })
   })
 
