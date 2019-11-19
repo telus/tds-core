@@ -2,10 +2,6 @@
 
 exports[`Box between applies space-between 1`] = `
 .c0 {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13,6 +9,10 @@ exports[`Box between applies space-between 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 <Box
@@ -38,7 +38,6 @@ exports[`Box between applies space-between 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              [Function],
               [Function],
               [Function],
               [Function],
@@ -113,7 +112,6 @@ exports[`Box between arranges the children horizontally or vertically be either 
               [Function],
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "styled.div",
@@ -183,7 +181,6 @@ exports[`Box between arranges the children horizontally or vertically be either 
               [Function],
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "styled.div",
@@ -198,6 +195,123 @@ exports[`Box between arranges the children horizontally or vertically be either 
       }
       forwardedRef={null}
       inline={true}
+      tag="div"
+    >
+      <div
+        className="c0"
+      >
+        Some content
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Box>
+`;
+
+exports[`Box between can handle responsive props 1`] = `
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-right: 6rem;
+  }
+}
+
+<Box
+  between={
+    Object {
+      "md": 8,
+      "xs": 4,
+    }
+  }
+  inline={
+    Object {
+      "md": true,
+      "xs": false,
+    }
+  }
+  tag="div"
+>
+  <styled.div
+    between={
+      Object {
+        "md": 8,
+        "xs": 4,
+      }
+    }
+    inline={
+      Object {
+        "md": true,
+        "xs": false,
+      }
+    }
+    tag="div"
+  >
+    <StyledComponent
+      between={
+        Object {
+          "md": 8,
+          "xs": 4,
+        }
+      }
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={
+        Object {
+          "md": true,
+          "xs": false,
+        }
+      }
       tag="div"
     >
       <div
@@ -248,7 +362,6 @@ exports[`Box between separates children by equal margins in a stack 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              [Function],
               [Function],
               [Function],
               [Function],
@@ -323,7 +436,6 @@ exports[`Box between separates children by equal margins inline 1`] = `
               [Function],
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "styled.div",
@@ -352,7 +464,6 @@ exports[`Box between separates children by equal margins inline 1`] = `
 
 exports[`Box can apply bottom margin 1`] = `
 .c0 {
-  margin-bottom: 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -360,6 +471,7 @@ exports[`Box can apply bottom margin 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0.5rem;
 }
 
 .c0 > *:not(:last-child) {
@@ -397,7 +509,6 @@ exports[`Box can apply bottom margin 1`] = `
               [Function],
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "styled.div",
@@ -426,8 +537,6 @@ exports[`Box can apply bottom margin 1`] = `
 
 exports[`Box insets can be either vertical or horizonal 1`] = `
 .c0 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -435,6 +544,8 @@ exports[`Box insets can be either vertical or horizonal 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .c0 > *:not(:last-child) {
@@ -471,7 +582,6 @@ exports[`Box insets can be either vertical or horizonal 1`] = `
               [Function],
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "styled.div",
@@ -501,8 +611,6 @@ exports[`Box insets can be either vertical or horizonal 1`] = `
 
 exports[`Box insets can be either vertical or horizonal 2`] = `
 .c0 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -510,6 +618,8 @@ exports[`Box insets can be either vertical or horizonal 2`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .c0 > *:not(:last-child) {
@@ -546,7 +656,6 @@ exports[`Box insets can be either vertical or horizonal 2`] = `
               [Function],
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "styled.div",
@@ -576,10 +685,6 @@ exports[`Box insets can be either vertical or horizonal 2`] = `
 
 exports[`Box insets can be either vertical or horizonal 3`] = `
 .c0 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -587,6 +692,10 @@ exports[`Box insets can be either vertical or horizonal 3`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c0 > *:not(:last-child) {
@@ -625,7 +734,6 @@ exports[`Box insets can be either vertical or horizonal 3`] = `
               [Function],
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "styled.div",
@@ -656,10 +764,6 @@ exports[`Box insets can be either vertical or horizonal 3`] = `
 
 exports[`Box insets can be equal on all sides 1`] = `
 .c0 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -667,6 +771,10 @@ exports[`Box insets can be equal on all sides 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c0 > *:not(:last-child) {
@@ -703,7 +811,6 @@ exports[`Box insets can be equal on all sides 1`] = `
               [Function],
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "styled.div",
@@ -720,6 +827,348 @@ exports[`Box insets can be equal on all sides 1`] = `
       inline={false}
       inset={3}
       tag="div"
+    >
+      <div
+        className="c0"
+      >
+        Some content
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Box>
+`;
+
+exports[`Box insets can handle responsive horizontal and vertical 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+<Box
+  between={3}
+  inline={false}
+  tag="div"
+  vertical={
+    Object {
+      "md": 4,
+      "xs": 1,
+    }
+  }
+>
+  <styled.div
+    between={3}
+    inline={false}
+    tag="div"
+    vertical={
+      Object {
+        "md": 4,
+        "xs": 1,
+      }
+    }
+  >
+    <StyledComponent
+      between={3}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={false}
+      tag="div"
+      vertical={
+        Object {
+          "md": 4,
+          "xs": 1,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        Some content
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Box>
+`;
+
+exports[`Box insets can handle responsive horizontal and vertical 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+<Box
+  between={3}
+  horizontal={
+    Object {
+      "md": 4,
+      "xs": 1,
+    }
+  }
+  inline={false}
+  tag="div"
+>
+  <styled.div
+    between={3}
+    horizontal={
+      Object {
+        "md": 4,
+        "xs": 1,
+      }
+    }
+    inline={false}
+    tag="div"
+  >
+    <StyledComponent
+      between={3}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      horizontal={
+        Object {
+          "md": 4,
+          "xs": 1,
+        }
+      }
+      inline={false}
+      tag="div"
+    >
+      <div
+        className="c0"
+      >
+        Some content
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Box>
+`;
+
+exports[`Box insets can handle responsive horizontal and vertical 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .c0 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+<Box
+  between={3}
+  horizontal={
+    Object {
+      "lg": 8,
+      "xs": 3,
+    }
+  }
+  inline={false}
+  tag="div"
+  vertical={
+    Object {
+      "md": 4,
+      "xs": 1,
+    }
+  }
+>
+  <styled.div
+    between={3}
+    horizontal={
+      Object {
+        "lg": 8,
+        "xs": 3,
+      }
+    }
+    inline={false}
+    tag="div"
+    vertical={
+      Object {
+        "md": 4,
+        "xs": 1,
+      }
+    }
+  >
+    <StyledComponent
+      between={3}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      horizontal={
+        Object {
+          "lg": 8,
+          "xs": 3,
+        }
+      }
+      inline={false}
+      tag="div"
+      vertical={
+        Object {
+          "md": 4,
+          "xs": 1,
+        }
+      }
     >
       <div
         className="c0"
