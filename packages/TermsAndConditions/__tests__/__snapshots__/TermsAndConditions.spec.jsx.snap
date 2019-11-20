@@ -448,6 +448,7 @@ div.c14 {
         class="col-xs c3"
       >
         <button
+          aria-expanded="false"
           class="c4 c5"
         >
           <div
@@ -1294,9 +1295,11 @@ div.c14 {
                                         className="col-xs c3"
                                       >
                                         <Styled(StyledClickable)
+                                          aria-expanded={true}
                                           onClick={[Function]}
                                         >
                                           <StyledComponent
+                                            aria-expanded={true}
                                             forwardedComponent={
                                               Object {
                                                 "$$typeof": Symbol(react.forward_ref),
@@ -1337,6 +1340,7 @@ div.c14 {
                                             onClick={[Function]}
                                           >
                                             <button
+                                              aria-expanded={true}
                                               className="c4 c5"
                                               onClick={[Function]}
                                             >
@@ -3514,9 +3518,11 @@ div.c14 {
                                         className="col-xs c3"
                                       >
                                         <Styled(StyledClickable)
+                                          aria-expanded={true}
                                           onClick={[Function]}
                                         >
                                           <StyledComponent
+                                            aria-expanded={true}
                                             forwardedComponent={
                                               Object {
                                                 "$$typeof": Symbol(react.forward_ref),
@@ -3557,6 +3563,7 @@ div.c14 {
                                             onClick={[Function]}
                                           >
                                             <button
+                                              aria-expanded={true}
                                               className="c4 c5"
                                               onClick={[Function]}
                                             >
@@ -6397,9 +6404,11 @@ div.c14 {
                                         className="col-xs c3"
                                       >
                                         <Styled(StyledClickable)
+                                          aria-expanded={true}
                                           onClick={[Function]}
                                         >
                                           <StyledComponent
+                                            aria-expanded={true}
                                             forwardedComponent={
                                               Object {
                                                 "$$typeof": Symbol(react.forward_ref),
@@ -6440,6 +6449,7 @@ div.c14 {
                                             onClick={[Function]}
                                           >
                                             <button
+                                              aria-expanded={true}
                                               className="c4 c5"
                                               onClick={[Function]}
                                             >

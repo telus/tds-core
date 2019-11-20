@@ -77,4 +77,10 @@ describe('TermsAndConditions', () => {
 
     expect(target).toEqual(ref.current)
   })
+
+  it('can announce the expansion with screen reader', () => {
+    const termsAndConditions = mount(<TermsAndConditions {...defaultProps} />)
+    termsAndConditions.find('button').simulate('click')
+    expect(termsAndConditions.find('button').prop('aria-expanded')).toEqual(true)
+  })
 })
