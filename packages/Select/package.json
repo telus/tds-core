@@ -39,7 +39,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-standalone-icon": "^2.1.8",
+    "@tds/core-feedback-icon": "^1.0.3",
     "@tds/shared-animation": "^3.0.0"
   }
 }
