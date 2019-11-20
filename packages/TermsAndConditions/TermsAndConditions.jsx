@@ -76,7 +76,11 @@ const TermsAndConditions = forwardRef(
         <FlexGrid gutter={false} limitWidth={false}>
           <FlexGrid.Row>
             <FlexGrid.Col>
-              <StyledClickableHeading ref={ref} onClick={() => setOpen(!isOpen)}>
+              <StyledClickableHeading
+                aria-expanded={isOpen}
+                ref={ref}
+                onClick={() => setOpen(!isOpen)}
+              >
                 <StyledExpandCollapseHeading inline vertical={3} between={3}>
                   <StyledChevronContainer>
                     <Circle />
