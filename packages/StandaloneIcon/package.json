@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-standalone-icon",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "An icon that has meaning within the context of the page",
   "main": "index.cjs.js",
   "module": "index.es.js",

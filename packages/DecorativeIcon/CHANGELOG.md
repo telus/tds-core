@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.1](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.5.0...@tds/core-decorative-icon@2.5.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* **core-decorative-icon:** show deprecation warning on mount only ([0ce68aa](https://github.com/telusdigital/tds/commit/0ce68aa))
+
+
+
+
+
 # [2.5.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.4.1...@tds/core-decorative-icon@2.5.0) (2019-11-06)
 
 
