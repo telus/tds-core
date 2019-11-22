@@ -60,6 +60,7 @@ If you found a bug or would like to begin a conversation, follow these steps:
 - If you're unable to find an open issue addressing your concern, either:
   - [Report an issue](https://github.com/telusdigital/tds-core/issues/new?template=defect_template.md)
   - [Suggest a feature](https://github.com/telusdigital/tds-core/issues/new?template=feature_template.md)
+  - [Pitch a new Community component](https://github.com/telus/tds-community/issues/new?template=new_component_request.md)
 - Be sure to include a title and clear description, as much relevant information as possible, and - if applicable - a code
   sample or executable test case demonstrating the expected behaviour that is not occurring
 
