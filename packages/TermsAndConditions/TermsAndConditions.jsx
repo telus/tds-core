@@ -28,6 +28,7 @@ const StyledClickableHeading = styled(StyledClickable)({
 
 const StyledExpandCollapseHeading = styled(Box)({
   alignItems: 'center',
+  minWidth: '245px',
 })
 
 const StyledChevronContainer = styled.span({

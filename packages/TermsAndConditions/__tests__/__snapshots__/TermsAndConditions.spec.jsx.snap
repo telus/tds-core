@@ -199,6 +199,7 @@ div.c14 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 245px;
 }
 
 .c8 {
@@ -767,6 +768,7 @@ div.c14 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 245px;
 }
 
 .c8 {
@@ -1361,6 +1363,7 @@ div.c14 {
                                                         "lastClassName": "c6",
                                                         "rules": Array [
                                                           "align-items: center;",
+                                                          "min-width: 245px;",
                                                         ],
                                                       },
                                                       "displayName": "Styled(Box)",
@@ -2975,6 +2978,7 @@ div.c14 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 245px;
 }
 
 .c8 {
@@ -3584,6 +3588,7 @@ div.c14 {
                                                         "lastClassName": "c6",
                                                         "rules": Array [
                                                           "align-items: center;",
+                                                          "min-width: 245px;",
                                                         ],
                                                       },
                                                       "displayName": "Styled(Box)",
@@ -5877,6 +5882,7 @@ div.c14 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-width: 245px;
 }
 
 .c8 {
@@ -6470,6 +6476,7 @@ div.c14 {
                                                         "lastClassName": "c6",
                                                         "rules": Array [
                                                           "align-items: center;",
+                                                          "min-width: 245px;",
                                                         ],
                                                       },
                                                       "displayName": "Styled(Box)",
