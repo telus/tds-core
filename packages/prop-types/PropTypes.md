@@ -93,7 +93,7 @@ The below example shows two ways you can build a `repsonsiveProps` object to cre
 
 ```js noeditor static
 <FlexGrid.Col
-  align={{
+  horizontalAlign={{
     xs: 'center',
     sm: 'center',
     md: 'left',
