@@ -8,6 +8,7 @@ Radio buttons are used when there is a list of two or more options that are mutu
 - Use there are 2-6 options to choose from
 - Use [`Select`](#select) (dropdown) when there are over 6 options
 - Use the `description` prop under special circumstances where the normal label cannot be descriptive enough
+- If there are 2-6 optional variables, one of them should be "None" or "No selection"
 
 For information on how to use disabled Radio buttons, please refer to the [disabled form component](#form-disabled-state) guidelines.
 
