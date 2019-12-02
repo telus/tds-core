@@ -7,13 +7,20 @@ const generateTest = (packageName, componentName) => ({
     const browserVersion = browser.options.desiredCapabilities.version || 'headless'
 
     const url = `${browser.launch_url}/${componentName}`
-
-    browser
-      .url(url)
-      .waitForElementVisible(`#${componentName}`, 5000)
-      .checkAccessibility()
-      .compareScreenshot(componentName, browserName, browserVersion)
-      .end()
+    if (browserName === 'chrome') {
+      browser
+        .url(url)
+        .waitForElementVisible(`#${componentName}`, 5000)
+        .checkAccessibility()
+        .compareScreenshot(componentName, browserName, browserVersion)
+        .end()
+    } else {
+      browser
+        .url(url)
+        .waitForElementVisible(`#${componentName}`, 5000)
+        .compareScreenshot(componentName, browserName, browserVersion)
+        .end()
+    }
   },
 })
 

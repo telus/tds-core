@@ -3,13 +3,13 @@ const { resolve } = require('path')
 const config = {
   outputPath: resolve(__dirname, 'output'),
   rootSelector: '#app',
-  tolerance: 0.01, // percentage
+  tolerance: 0, // percentage
 }
 
 const envConfig = {
   development: {
-    launchUrl: 'http://localhost:3000',
-    healthCheckUrl: 'http://localhost:3000',
+    launchUrl: 'http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com',
+    healthCheckUrl: 'http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com',
   },
   staging: {
     launchUrl:
