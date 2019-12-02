@@ -46,34 +46,34 @@ module.exports = {
         waitForConditionTimeout: 30000,
       },
     },
-    latestChrome: {
+    chrome: {
       desiredCapabilities: {
         browserName: 'chrome',
-        version: 'latest',
+        version: '78',
         platform: 'windows 10',
         screenResolution: '1280x960',
       },
     },
-    latestFirefox: {
+    firefox: {
       desiredCapabilities: {
         browserName: 'firefox',
-        version: 'latest',
+        version: '70',
         platform: 'windows 10',
         screenResolution: '1280x960',
       },
     },
-    latestSafari: {
+    safari: {
       desiredCapabilities: {
         browserName: 'safari',
-        version: 'latest',
+        version: '12',
         platform: 'osx 10.14',
         screenResolution: '1280x960',
       },
     },
-    latestEdge: {
+    edge: {
       desiredCapabilities: {
         browserName: 'microsoftedge',
-        version: 'latest',
+        version: '18',
         platform: 'windows 10',
         screenResolution: '1280x960',
       },
@@ -89,7 +89,9 @@ module.exports = {
     ie11: {
       desiredCapabilities: {
         browserName: 'internet explorer',
-        version: '11.103',
+        browserVersion: '11.285.17134.0',
+        seleniumVersion: '3.141.59',
+        iedriverVersion: '3.141.59',
         platform: 'windows 10',
         screenResolution: '1280x960',
         avoidProxy: true,
