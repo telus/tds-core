@@ -2,6 +2,7 @@
 
 Welcome to the TDS Announcement Board! Check back here regularly for the latest updates on TDS!
 
+- [November 2019](#november-2019)
 - [October 2019](#october-2019)
 - [September 2019](#september-2019)
 - [August 2019](#august-2019)
@@ -15,6 +16,92 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 - [December 2018](#december-2018)
 
 <hr/>
+
+## November 2019
+
+### DSM Updates
+
+**v2.3.8**
+
+New Modal/Overlay Layer Style
+- New layer style to use on top of content as part of the content/dialog modal
+- Must display a hint label when on hover/focus state
+- Use only for top-level navigation (i.e. Global Elements, My TELUS applications like Casa)
+
+**v2.3.7**
+
+New NavButton (Interactive Icons)
+- NavButton is a button element that renders an icon from a new, specific set of icons
+- Restricted use for upcoming community component
+- [Docs](https://tds.telus.com/components/index.html#navbutton)
+
+
+### New Community Component 🎁
+
+**DatePicker v1.0.0**
+- The DatePicker component is used to select a single date
+- It is available in 2 variants: Overlay DatePicker and Inline DatePicker
+- Overlay DatePicker allows the user to select a date, either by keying in (Input form field) or selecting through the overlay
+- Inline DatePicker allows the user to select a date directly on the page
+- Available in TDS Community DSM Library v1.0.9
+- [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-date-picker%401.0.0)
+- [Docs](https://tds.telus.com/community/index.html#!/DatePicker)
+
+### New TDS Core Features 🎁
+
+**Text 3.0.0**
+- Removed sup component. Please use the standard HTML <sup> tag in the future. 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-text%403.0.0)
+  
+**Heading 3.0.0**
+- Removed sup component. Please use the standard HTML <sup> tag in the future. 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-heading%403.0.0)
+  
+**DisplayHeading 3.0.0**
+- Removed sup component. Please use the standard HTML <sup> tag in the future. 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-display-heading%403.0.0)
+  
+**InteractiveIcon 1.3.0**
+- NavButton is a button element that renders an icon from a new, specific set of icons
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-interactive-icon%401.3.0)
+
+**Card 2.2.0**
+- Add fullHeight property
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-card%402.2.0)
+
+**DecorativeIcon 1.5.0**
+- Deprecate User icon
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.5.0)
+
+### New TDS Core Fixes 
+
+**StandaloneIcon 2.1.9**
+- Reduce deprecation warnings. 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-standalone-icon%402.1.9)
+
+**Input 3.0.30**
+- Reduce deprecation warnings. 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%403.0.30)
+
+**DecorativeIcon 2.5.1**
+- Reduce deprecation warnings. 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.5.1)
+
+**Notification 3.0.7**
+- Unmount error fixed. 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%403.0.7)
+
+### New Community Features 🎁
+
+**TermsAndConditions v1.2.6**
+- Add aria-expanded to TermsAndConditons
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.2.6)
+
+**ToggleSwitch v3.0.0**
+- new usage guidelines! You can now set focus to toggle switch as well as feedback text after an asynchronous process.
+- [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-toggle-switch%403.0.0)
+- [Docs](https://tds.telus.com/community/index.html#!/ToggleSwitch)
+
 
 ## October 2019
 
