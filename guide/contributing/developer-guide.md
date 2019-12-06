@@ -514,8 +514,11 @@ and deploys affected components to npm.
 
 When deploying [TDS Core on CircleCI](https://circleci.com/gh/telus/workflows/tds-core/tree/master):
 
-1. Check the `prepr-log` job to ensure package bumps are desirable
-2. Approve the `approve-release` job to deploy affected components to npm
+1. Rebase and merge your pull request into `master`, and delete the branch
+2. Go to the pipeline in CircleCI
+3. Check the `prepr-log` job to ensure package bumps are desirable
+4. Approve the `approve-release` job to deploy affected components to npm
+5. After deploying, add release notes to the component's respective tag on GitHub (you can copy them from the component's CHANGELOG.md file)
 
 The same steps can be used for [TDS Community on CircleCI](https://circleci.com/gh/telus/workflows/tds-community/tree/master).
 
