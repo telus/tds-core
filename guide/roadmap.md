@@ -2,7 +2,7 @@
 
 We plan the TELUS Design System (TDS) roadmap based on the priorities of TELUS and partner teams. In addition, we coordinate with the other Digital Platform teams to provide a comprehensive system for building rich Web experiences in the TELUS ecosystem.
 
-You can view our full roadmap in our [Google Slides deck](https://docs.google.com/presentation/d/1Tw062DhhKKLnasgEzkoA-UHnj3qp7iRATNmiwLG7kzA/edit?usp=sharing).
+You can view our detailed 2020 roadmap in our [Google Sheet](https://docs.google.com/spreadsheets/d/1CBviBSSxOKwsr5CsQxofJ6_HmybpLlG3PEh0jpEb74Q).
 
 ## Current: TDS V3 (August 2019)
 
