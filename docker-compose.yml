@@ -35,7 +35,7 @@ services:
     entrypoint:
       - npm
       - run
-      - test:e2e-direct
+      - test:e2e
       - --
       - $mode
     network_mode: host
