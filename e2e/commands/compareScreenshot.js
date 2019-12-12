@@ -35,6 +35,9 @@ exports.command = function compareScreenshot(componentName, browserName, browser
   ensureFolderExists(folders.baseline, 'baseline')
   ensureFolderExists(folders.results, 'result')
   ensureFolderExists(folders.diffs, 'diff')
+
+  this.pause(1000)
+
   takeScreenshot(resultScreenshotPath, this, rootSelector, () => {
     this.verify.compareScreenshot(componentName, fileName)
   })

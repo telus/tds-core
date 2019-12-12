@@ -25,6 +25,8 @@ const CartesianInteractiveIcon = props => (
           a11yText="A11yText"
           variant={['default', 'alternative', 'inverted']}
           tag={['button', 'a']}
+          copy="en"
+          numItems={2}
         />
       ))}
   </React.Fragment>

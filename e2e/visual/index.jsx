@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
 import StyledContainer from './shared/StyledContainer'
 import { createBrowserHistory } from 'history'

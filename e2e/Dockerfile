@@ -42,4 +42,4 @@ USER node
 
 # The entrypoint configures the container to be run as an executable.
 # Arguments supplied on the command line will be forwarded onto the entrypoint.
-ENTRYPOINT ["npm", "run", "test:e2e-direct", "--"]
+ENTRYPOINT ["npm", "run", "test:e2e", "--"]

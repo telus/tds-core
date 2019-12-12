@@ -1,7 +1,5 @@
 const path = require('path')
-const MiniHtmlWebpackPlugin = require('mini-html-webpack-plugin')
-
-const { generateAttributes, generateCSSReferences, generateJSReferences } = MiniHtmlWebpackPlugin
+const MiniHtmlWebpackPlugin = require('react-styleguidist/node_modules/mini-html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -21,38 +19,25 @@ module.exports = {
     new MiniHtmlWebpackPlugin({
       context: {
         title: 'TDS Cartesian Components',
-        htmlAttributes: { lang: 'en' },
-        cssAttributes: { rel: 'preload' },
-        jsAttributes: { defer: 'defer' },
+        head: {
+          meta: [
+            {
+              name: 'description',
+              content: 'mini-html-webpack-template',
+            },
+          ],
+        },
+        body: {
+          raw: '<div id="app"></div>',
+        },
+        attrs: {
+          js: {
+            async: '',
+            type: 'text/javascript',
+          },
+        },
       },
-      template: ({ css, js, publicPath, title, htmlAttributes, cssAttributes, jsAttributes }) => {
-        const htmlAttrs = generateAttributes(htmlAttributes)
-
-        const cssTags = generateCSSReferences({
-          files: css,
-          attributes: cssAttributes,
-          publicPath,
-        })
-
-        const jsTags = generateJSReferences({
-          files: js,
-          attributes: jsAttributes,
-          publicPath,
-        })
-
-        return `<!DOCTYPE html>
-        <html${htmlAttrs}>
-          <head>
-            <meta charset="UTF-8">
-            <title>${title}</title>
-            ${cssTags}
-          </head>
-          <body>
-            <div id="app"></div>
-            ${jsTags}
-          </body>
-        </html>`
-      },
+      template: require('@vxna/mini-html-webpack-template'),
     }),
   ],
   module: {
@@ -67,7 +52,7 @@ module.exports = {
         exclude: /node_modules\/(?!(@compositor\/webfont|@mdx-js\/mdx|@mdx-js\/mdxast|gray-matter)\/).*/,
         loader: 'babel-loader',
         options: {
-          babelrc: false,
+          sourceType: 'unambiguous',
         },
       },
       {
