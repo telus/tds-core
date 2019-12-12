@@ -1,6 +1,5 @@
 /* eslint-disable */
 const path = require('path')
-const config = require('../e2e/config')
 
 const GLOBALS_PATH = path.resolve('e2e/globals.js')
 const REPORT_PATH = path.resolve('e2e/output/reports/')
@@ -28,7 +27,7 @@ module.exports = {
   },
   test_settings: {
     default: {
-      launch_url: config.launchUrl,
+      launch_url: process.env.URL,
       selenium_host: 'ondemand.saucelabs.com',
       selenium_port: 80,
       username: process.env.SAUCELABS_USERNAME,
