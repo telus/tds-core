@@ -47,8 +47,7 @@
     "prepr": "npm run test:e2e && scripts/prePr.sh",
     "prepr:quick": "scripts/prePr.sh",
     "scaffold": "node scripts/scaffold.js",
-    "test:e2e": "NODE_ENV=e2e scripts/docker-e2e.sh",
-    "test:e2e-direct": "NODE_ENV=e2e node scripts/e2e.js",
+    "test:e2e": "NODE_ENV=e2e node scripts/e2e.js",
     "test:u": "npm run test -- -u",
     "test:watch": "npm run test -- --watch",
     "test:quick": "jest -o --config config/jest.config.js",
@@ -117,7 +116,6 @@
     "jest-styled-components": "^7.0.0-2",
     "lerna": "^3.13.0",
     "lint-staged": "^8.0.0",
-    "mini-html-webpack-plugin": "^2.0.0",
     "minimist": "^1.2.0",
     "nightwatch": "^1.2.4",
     "nightwatch-accessibility": "^1.8.0",
@@ -159,7 +157,9 @@
     "yargs": "^13.0.0"
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.7.4",
     "@babel/runtime": "^7.3.1",
+    "@vxna/mini-html-webpack-template": "^1.0.0",
     "prop-types": "^15.5.10"
   },
   "config": {
