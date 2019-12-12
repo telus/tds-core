@@ -107,22 +107,14 @@ The following group are the active maintainers of this project, and have merge r
     <td align="center"><a href="https://github.com/aquirkles"><img src="https://avatars3.githubusercontent.com/u/32460479?v=4" width="100px;" alt="aquirkles"/><br /><sub><b>aquirkles</b></sub></a><br /><a href="#tds-aquirkles" title=""></a></td>
     <td align="center"><a href="https://github.com/gfroome"><img src="https://avatars1.githubusercontent.com/u/18177753?v=4" width="100px;" alt="gfroome"/><br /><sub><b>gfroome</b></sub></a><br /><a href="#tds-gfroome" title=""></a></td>
     <td align="center"><a href="https://github.com/pkandathil"><img src="https://avatars1.githubusercontent.com/u/1751772?v=4" width="100px;" alt="Prashant Kandathil"/><br /><sub><b>Prashant Kandathil</b></sub></a><br /><a href="#tds-pkandathil" title=""></a></td>
-    <td align="center"><a href="https://github.com/saydex"><img src="https://avatars0.githubusercontent.com/u/49663423?v=4" width="100px;" alt="Sayde Deng"/><br /><sub><b>Sayde Deng</b></sub></a><br /><a href="#tds-saydex" title=""></a></td>
-    <td align="center"><a href="https://github.com/agorovyi"><img src="https://avatars3.githubusercontent.com/u/26413531?v=4" width="100px;" alt="Anatolii Gorovyi"/><br /><sub><b>Anatolii Gorovyi</b></sub></a><br /><a href="#tds-agorovyi" title=""></a></td>
-    <td align="center"><a href="https://github.com/brendanpowershifter"><img src="https://avatars1.githubusercontent.com/u/25777936?v=4" width="100px;" alt="Brendan Betts"/><br /><sub><b>Brendan Betts</b></sub></a><br /><a href="#tds-brendanpowershifter" title=""></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/cuginoAle"><img src="https://avatars3.githubusercontent.com/u/1298616?v=4" width="100px;" alt="Alessio Carnevale"/><br /><sub><b>Alessio Carnevale</b></sub></a><br /><a href="#tds-cuginoAle" title=""></a></td>
-    <td align="center"><a href="https://github.com/Jeffrey-Chang"><img src="https://avatars3.githubusercontent.com/u/30445300?v=4" width="100px;" alt="Jeffrey Chang"/><br /><sub><b>Jeffrey Chang</b></sub></a><br /><a href="#tds-Jeffrey-Chang" title=""></a></td>
-    <td align="center"><a href="https://github.com/AriqAhmad"><img src="https://avatars0.githubusercontent.com/u/23136810?v=4" width="100px;" alt="Ariq Ahmad"/><br /><sub><b>Ariq Ahmad</b></sub></a><br /><a href="#tds-AriqAhmad" title=""></a></td>
-    <td align="center"><a href="http://donnavitan.com"><img src="https://avatars3.githubusercontent.com/u/21316148?v=4" width="100px;" alt="Donna Vitan"/><br /><sub><b>Donna Vitan</b></sub></a><br /><a href="#tds-donnavitan" title=""></a></td>
     <td align="center"><a href="https://github.com/hamedmam"><img src="https://avatars1.githubusercontent.com/u/24867760?v=4" width="100px;" alt="Hamed Mamdoohi"/><br /><sub><b>Hamed Mamdoohi</b></sub></a><br /><a href="#tds-hamedmam" title=""></a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [circle-url]: https://circleci.com/gh/telus/tds-core
