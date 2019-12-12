@@ -13,6 +13,10 @@ const getPackageNames = (callback, forceUpdatedPackages) => {
   const command = tdsOptions.all ? 'ls' : 'updated'
 
   exec(`npx lerna ${command} --json ${lernaOptions.join(' ')}`, (error, stdout) => {
+    // if (error) {
+    //   console.error(error)
+    //   process.exit(1)
+    // }
     if (stdout === '') {
       console.log('No components have been changed, nothing to do. Exiting.')
       process.exit(0)
