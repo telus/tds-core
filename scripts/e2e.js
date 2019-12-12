@@ -11,10 +11,12 @@ Usage: npm run test:e2e [component name...] [options] [lerna options]
     [component name...]       space separated list of package names to test
     -a, --all                 test all packages
     -u, --update-screenshots  update baseline images on failure
+    -n, --name                e2e slug name (usually branch name)
 */
 
 const { spawnSync } = require('child_process')
 const { tdsOptions } = require('./utils/parseArgs')
+
 const getPackageNames = require('./utils/getPackageNames')
 
 getPackageNames(packageNames => {
@@ -29,7 +31,7 @@ getPackageNames(packageNames => {
       '-c',
       './config/nightwatch.saucelabs.conf.js',
       '--retries',
-      '2',
+      '3',
       '-e',
       environments,
     ],
@@ -37,6 +39,9 @@ getPackageNames(packageNames => {
       env: Object.assign({}, process.env, {
         PACKAGES: onlyCorePackages,
         UPDATE_ALL_SCREENSHOTS: tdsOptions['update-screenshots'],
+        URL: `http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/e2e/${
+          tdsOptions.name
+        }/#`,
       }),
       stdio: 'inherit',
     }
