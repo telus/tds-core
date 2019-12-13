@@ -35,7 +35,7 @@ jobs:
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: get_branch
       - name: Upload Cartesian Components To S3 Bucket
-        uses: jakejarvis/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@v0.5.0
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
