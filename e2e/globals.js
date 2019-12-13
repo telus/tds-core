@@ -6,7 +6,7 @@ let counter = 0
 const healthCheck = done => {
   request(healthCheckUrl, (err, response, body) => {
     if (!body && counter < 20) {
-      console.log(`${counter}/20 waiting for the styleguide to start. Please wait...`)
+      console.log(`${counter}/20 waiting for the server to open. Please wait...`)
       counter += 1
 
       setTimeout(healthCheck, 3000, done)
@@ -18,7 +18,7 @@ const healthCheck = done => {
 module.exports = {
   asyncHookTimeout: 120000,
   before: done => {
-    console.log('Setting up e2e tests...')
+    console.log('Running e2e tests...')
     healthCheck(done)
   },
   after: done => {
