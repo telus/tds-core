@@ -57,6 +57,7 @@ jobs:
         run: npm run test:e2e -- -n ${{steps.get_branch.outputs.branch}}
       - name: Upload E2E Output
         uses: actions/upload-artifact@v1
+        if: failure()
         with:
           name: output
           path: e2e/output/components
