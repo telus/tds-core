@@ -207,7 +207,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                         <Link
                           forwardedRef={null}
                           href="/"
-                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -219,7 +218,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                               }
                             }
                             href="/"
-                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -263,7 +261,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                               }
                               forwardedRef={null}
                               href="/"
-                              invert={false}
                               to={null}
                             >
                               <a
@@ -380,7 +377,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                         <Link
                           forwardedRef={null}
                           href="/mobility"
-                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -392,7 +388,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                               }
                             }
                             href="/mobility"
-                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -436,7 +431,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                               }
                               forwardedRef={null}
                               href="/mobility"
-                              invert={false}
                               to={null}
                             >
                               <a
@@ -885,7 +879,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                         <Link
                           forwardedRef={null}
                           href="/"
-                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -897,7 +890,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                               }
                             }
                             href="/"
-                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -941,7 +933,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                               }
                               forwardedRef={null}
                               href="/"
-                              invert={false}
                               to={null}
                             >
                               <a
@@ -1058,7 +1049,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                         <Link
                           forwardedRef={null}
                           href="/mobility"
-                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -1070,7 +1060,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                               }
                             }
                             href="/mobility"
-                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -1114,7 +1103,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                               }
                               forwardedRef={null}
                               href="/mobility"
-                              invert={false}
                               to={null}
                             >
                               <a
