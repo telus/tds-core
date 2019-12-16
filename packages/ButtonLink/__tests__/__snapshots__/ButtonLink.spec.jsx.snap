@@ -34,7 +34,7 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #4b286d;
+  background-color: hotpink;
   color: #fff;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -111,7 +111,7 @@ exports[`ButtonLink renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #2B8000;
+  background-color: hotpink;
   color: #fff;
   -webkit-text-decoration: none;
   text-decoration: none;
