@@ -277,6 +277,9 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   -webkit-transform: rotate(-0.00001deg);
   -ms-transform: rotate(-0.00001deg);
   transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 100%;
   height: 1px;
   background-color: #d8d8d8;
@@ -490,6 +493,9 @@ exports[`PriceLockup size prop is small renders 1`] = `
   -webkit-transform: rotate(-0.00001deg);
   -ms-transform: rotate(-0.00001deg);
   transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 100%;
   height: 1px;
   background-color: #d8d8d8;
