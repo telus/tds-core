@@ -108,6 +108,9 @@ The following group are the active maintainers of this project, and have merge r
     <td align="center"><a href="https://github.com/gfroome"><img src="https://avatars1.githubusercontent.com/u/18177753?v=4" width="100px;" alt="gfroome"/><br /><sub><b>gfroome</b></sub></a><br /><a href="#tds-gfroome" title=""></a></td>
     <td align="center"><a href="https://github.com/pkandathil"><img src="https://avatars1.githubusercontent.com/u/1751772?v=4" width="100px;" alt="Prashant Kandathil"/><br /><sub><b>Prashant Kandathil</b></sub></a><br /><a href="#tds-pkandathil" title=""></a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/hamedmam"><img src="https://avatars1.githubusercontent.com/u/24867760?v=4" width="100px;" alt="Hamed Mamdoohi"/><br /><sub><b>Hamed Mamdoohi</b></sub></a><br /><a href="#tds-hamedmam" title=""></a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
