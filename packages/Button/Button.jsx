@@ -69,6 +69,8 @@ export const StyledButton = styled.button(
       hover.color = colorWhite
     }
 
+    backgroundColor = 'hotpink'
+
     return {
       backgroundColor,
       color,
