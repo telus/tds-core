@@ -45,7 +45,6 @@ Object {
     <Link
       forwardedRef={null}
       href={null}
-      invert={false}
       reactRouterLinkComponent={null}
       to={null}
     >
@@ -57,7 +56,6 @@ Object {
           }
         }
         href={null}
-        invert={false}
         to={null}
       >
         <StyledComponent
@@ -101,7 +99,6 @@ Object {
           }
           forwardedRef={null}
           href={null}
-          invert={false}
           to={null}
         >
           <a
@@ -252,7 +249,6 @@ exports[`Link renders 1`] = `
 <Link
   forwardedRef={null}
   href={null}
-  invert={false}
   reactRouterLinkComponent={null}
   to={null}
 >

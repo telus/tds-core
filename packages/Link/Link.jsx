@@ -86,7 +86,7 @@ Link.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
   href: null,
-  invert: false,
+  invert: undefined,
   forwardedRef: undefined,
 }
 
