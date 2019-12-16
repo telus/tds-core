@@ -6,7 +6,7 @@ import { borders, spacing } from '@tds/shared-styles'
 import { colorGreyGainsboro } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
 
-const baseStyle = { transform: 'rotate(-0.00001deg)' }
+const baseStyle = { transform: 'rotate(-0.00001deg)', flexShrink: 0 }
 
 const horizontalStyle = {
   ...baseStyle,
