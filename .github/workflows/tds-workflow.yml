@@ -1,11 +1,5 @@
 name: TDS Workflow
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - '*'
+on: [push]
 
 jobs:
   unit:
