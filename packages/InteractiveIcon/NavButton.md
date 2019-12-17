@@ -5,6 +5,32 @@
 - If you don’t know whether you can use this or not, you probably can’t 😬
 - You must provide a `numItems` prop when using `CartFilledBold`
 
+### Accessibility
+
+#### Accessibility features
+
+- Features a built-in tooltip to provide additional context beyond visual recognition of the icon
+- Displays the tooltip on hover and focus states
+- Keyboard and cursor users to gain visual and written context
+- Uses `aria-labelledby` attribute to connect the focused icon and its respective tooltip for assistive technology users
+
+#### Accessibility Guideline
+
+When consuming `NavButton`, be sure to provide a `copy` prop with each icon. We **highly** recommend passing `en` or `fr` to the `copy` prop, this will use the default copy TDS provides. If you **must** provide your own copy, you can pass an object with an `a11yText` key to the `copy` prop.
+
+#### `CartFilledBold`
+
+When using `CartFilledBold` you must also supply a `numItems` prop and use the `%{numItems}` token in your `a11yText`. See the examples below for custom copy.
+
+```jsx
+<CartEmptyBold copy={{ a11yText: 'Empty cart' }} />
+<CartFilledBold copy={{ a11yText: 'Cart, %{numItems} items' }} numItems={2} />
+```
+
+### Usage
+
+#### Default `NavButton`
+
 ```jsx
 <Box inline between={2}>
   <CartEmptyBold copy="en" />
@@ -31,25 +57,6 @@
   <SupportBold variant="inverted" copy="en" />
   <UserAddBold variant="inverted" copy="en" />
 </Box>
-```
-
-### Accessibility
-
-#### Accessibility features
-
-The NavButton Interactive icon set features a built-in tooltip that appears on focus or hover, allowing keyboard and cursor users to gain visual and written context. It utilizes aria-labelledby to connect the focused icon and its respective tooltip for screen reader users.
-
-#### Accessibility Guideline
-
-When consuming `NavButton`, be sure to provide a `copy` prop with each icon. We **highly** recommend passing `en` or `fr` to the `copy` prop, this will use the default copy TDS provides. If you **must** provide your own copy, you can pass an object with an `a11yText` key to the `copy` prop.
-
-#### `CartFilledBold`
-
-When using `CartFilledBold` you must also supply a `numItems` prop and use the `%{numItems}` token in your `a11yText`. See the examples below for custom copy.
-
-```jsx
-<CartEmptyBold copy={{ a11yText: 'Empty cart' }} />
-<CartFilledBold copy={{ a11yText: 'Cart, %{numItems} items' }} numItems={2} />
 ```
 
 ```jsx noeditor
