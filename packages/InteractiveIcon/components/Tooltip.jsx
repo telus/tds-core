@@ -20,7 +20,7 @@ const StyledTooltip = styled.div(
     borderRadius: '0.25rem',
     zIndex: 4,
 
-    marginTop: '0.5rem',
+    marginTop: '0.25rem',
     visibility: 'hidden',
     opacity: 0,
     transition: 'opacity 200ms',

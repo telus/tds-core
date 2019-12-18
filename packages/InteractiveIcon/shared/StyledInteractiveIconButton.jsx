@@ -15,7 +15,14 @@ const getOutline = ({ variant }) => {
 
   return {
     '&:focus': {
-      outline: `0.125rem solid ${colorWhite}`,
+      outline: 'transparent',
+      border: `0.125rem solid ${colorWhite}`,
+      borderRadius: '50%',
+    },
+    '&:active': {
+      borderRadius: '50%',
+      backgroundColor: 'rgba(0,0,0,0.5)',
+      backgroundBlendMode: 'multiply',
     },
   }
 }
