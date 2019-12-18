@@ -4,6 +4,7 @@
 - Must have 8px spacing (Box level 2) between each interactive icon
 - If you don’t know whether you can use this or not, you probably can’t 😬
 - You must provide a `numItems` prop when using `CartFilledBold`
+- Limit use of NavButton (inverted) on TELUS Purple and Shark Grey backgrounds
 
 ```jsx
 <Box inline between={2}>
@@ -19,6 +20,8 @@
 ```
 
 #### Inverted `NavButton`
+
+The NavButton (inverted) is optimized to be accessible as it achieves acceptable colour contrast when used on TELUS Purple and Shark Grey backgrounds.
 
 ```jsx
 <Box style={{ background: '#4b286d' }} inline vertical={2} between={2}>
