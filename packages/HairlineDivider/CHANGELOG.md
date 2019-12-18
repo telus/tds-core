@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.9](https://github.com/telusdigital/tds/compare/@tds/core-hairline-divider@2.0.8...@tds/core-hairline-divider@2.0.9) (2019-12-18)
+
+
+### Bug Fixes
+
+* **core-hairline-divider:** prevent >1px width in grid with line wrap ([d13d1a5](https://github.com/telusdigital/tds/commit/d13d1a5))
+
+
+
+
+
 ## [2.0.8](https://github.com/telusdigital/tds/compare/@tds/core-hairline-divider@2.0.7...@tds/core-hairline-divider@2.0.8) (2019-10-09)
 
 **Note:** Version bump only for package @tds/core-hairline-divider
