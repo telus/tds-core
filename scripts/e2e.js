@@ -22,7 +22,7 @@ const getPackageNames = require('./utils/getPackageNames')
 getPackageNames(packageNames => {
   const onlyCorePackages = packageNames.filter(name => name.startsWith('@tds/core-')).join(' ')
 
-  const environments = 'chrome,firefox,safari,edge,ie11'
+  const environments = 'chrome,firefox,safari,edge,ie11,iphone,android'
 
   const { status } = spawnSync(
     'npx',

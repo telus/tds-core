@@ -104,8 +104,12 @@ module.exports = {
     },
     android: {
       desiredCapabilities: {
-        browserName: 'android',
-        version: 'latest',
+        appiumVersion: '1.9.1',
+        deviceName: 'Android GoogleAPI Emulator',
+        deviceOrientation: 'portrait',
+        browserName: 'Chrome',
+        platformVersion: '9.0',
+        platformName: 'Android',
       },
     },
   },
