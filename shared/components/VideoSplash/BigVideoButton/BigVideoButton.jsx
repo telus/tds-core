@@ -58,7 +58,6 @@ const BigPlayButton = styled.button({
   font: 'inherit',
   cursor: 'pointer',
   verticalAlign: 'middle',
-  outline: 'none',
 
   ...media.from('md').css({
     width: 200,
