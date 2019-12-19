@@ -58,7 +58,7 @@
     "telus"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   },
   "bugs": {
     "url": "https://github.com/telus/tds-core/issues"
