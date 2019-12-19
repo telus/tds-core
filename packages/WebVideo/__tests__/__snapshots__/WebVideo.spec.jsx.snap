@@ -182,7 +182,6 @@ exports[`WebVideo renders 1`] = `
   font: inherit;
   cursor: pointer;
   vertical-align: middle;
-  outline: none;
 }
 
 .c5 svg>path {
@@ -453,7 +452,6 @@ exports[`WebVideo renders 1`] = `
                                           "font: inherit;",
                                           "cursor: pointer;",
                                           "vertical-align: middle;",
-                                          "outline: none;",
                                           "@media (min-width: 768px) {",
                                           "width: 200px;",
                                           "height: 200px;",
