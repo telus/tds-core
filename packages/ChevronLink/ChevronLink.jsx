@@ -16,6 +16,7 @@ const base = {
   display: 'inline-block',
   textDecoration: 'none',
   maxWidth: '100%',
+  verticalAlign: 'top',
 }
 
 const StyledChevronLink = styled.a(medium, helveticaNeueRoman55, base, ({ variant }) => {

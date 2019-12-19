@@ -49,6 +49,7 @@ exports[`ChevronLink can have specific variants 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   max-width: 100%;
+  vertical-align: top;
 }
 
 .c1:link,
@@ -142,6 +143,7 @@ exports[`ChevronLink can have specific variants 2`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   max-width: 100%;
+  vertical-align: top;
 }
 
 .c1:link,
@@ -235,6 +237,7 @@ exports[`ChevronLink can have specific variants 3`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   max-width: 100%;
+  vertical-align: top;
 }
 
 .c1:link,
@@ -328,6 +331,7 @@ exports[`ChevronLink can have specific variants 4`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   max-width: 100%;
+  vertical-align: top;
 }
 
 .c1:link,
@@ -421,6 +425,7 @@ exports[`ChevronLink renders 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   max-width: 100%;
+  vertical-align: top;
 }
 
 .c1:link,
