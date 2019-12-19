@@ -7,11 +7,11 @@ executors:
 
   browsers:
     docker:
-      - image: circleci/node:8-browsers
+      - image: circleci/node:12-browsers
 
   prepr:
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:12
 
 commands:
   persist:
