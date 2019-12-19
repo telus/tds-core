@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v1
-      - name: Setup Node 8
+      - name: Setup Node 12
         uses: actions/setup-node@v1
         with:
           node-version: 12
@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v1
-      - name: Setup Node 8
+      - name: Setup Node 12
         uses: actions/setup-node@v1
         with:
           node-version: 12
