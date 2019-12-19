@@ -142,7 +142,6 @@ exports[`Video renders 1`] = `
   font: inherit;
   cursor: pointer;
   vertical-align: middle;
-  outline: none;
 }
 
 .c6 svg>path {
@@ -807,7 +806,6 @@ input[type=range].c24::-ms-tooltip {
   font: inherit;
   cursor: pointer;
   vertical-align: middle;
-  outline: none;
 }
 
 .c6 svg>path {
@@ -1364,6 +1362,7 @@ input[type=range].c24::-ms-tooltip {
                   <button
                     aria-label="Mute"
                     class="c23"
+                    tabindex="-1"
                   >
                     <svg
                       height="17px"
@@ -1427,6 +1426,7 @@ input[type=range].c24::-ms-tooltip {
                   <button
                     aria-label="Select captions"
                     class="c23"
+                    tabindex="-1"
                   >
                     <svg
                       height="12px"
@@ -1459,6 +1459,7 @@ input[type=range].c24::-ms-tooltip {
                   <button
                     aria-label="Change video quality"
                     class="c23"
+                    tabindex="-1"
                   >
                     <svg
                       height="14px"
@@ -1496,6 +1497,7 @@ input[type=range].c24::-ms-tooltip {
                   <button
                     aria-label="Toggle fullscreen"
                     class="c23"
+                    tabindex="-1"
                   >
                     <svg
                       height="14px"
@@ -1780,7 +1782,6 @@ input[type=range].c24::-ms-tooltip {
                                                 "font: inherit;",
                                                 "cursor: pointer;",
                                                 "vertical-align: middle;",
-                                                "outline: none;",
                                                 "@media (min-width: 768px) {",
                                                 "width: 200px;",
                                                 "height: 200px;",
@@ -2507,6 +2508,7 @@ input[type=range].c24::-ms-tooltip {
                       <button
                         aria-label="Mute"
                         class="c23"
+                        tabindex="-1"
                       >
                         <svg
                           height="17px"
@@ -2570,6 +2572,7 @@ input[type=range].c24::-ms-tooltip {
                       <button
                         aria-label="Select captions"
                         class="c23"
+                        tabindex="-1"
                       >
                         <svg
                           height="12px"
@@ -2602,6 +2605,7 @@ input[type=range].c24::-ms-tooltip {
                       <button
                         aria-label="Change video quality"
                         class="c23"
+                        tabindex="-1"
                       >
                         <svg
                           height="14px"
@@ -2639,6 +2643,7 @@ input[type=range].c24::-ms-tooltip {
                       <button
                         aria-label="Toggle fullscreen"
                         class="c23"
+                        tabindex="-1"
                       >
                         <svg
                           height="14px"
@@ -2685,6 +2690,7 @@ input[type=range].c24::-ms-tooltip {
           videoPlayerWidth={0}
           videoPlaying={false}
           videoQuality={1}
+          videoUnplayed={true}
         >
           <ControlBar__ControlBarContainer
             isHidden={true}
@@ -3000,6 +3006,7 @@ input[type=range].c24::-ms-tooltip {
                       <VolumeSlider
                         compactModeThreshold={700}
                         copy="en"
+                        disableFocus={true}
                         resetInactivityTimer={[Function]}
                         setVolume={[Function]}
                         toggleMute={[Function]}
@@ -3062,6 +3069,7 @@ input[type=range].c24::-ms-tooltip {
                               className="c22"
                             >
                               <VideoButton
+                                disableFocus={true}
                                 icon={<Unmuted />}
                                 label="Mute"
                                 onClick={[Function]}
@@ -3072,6 +3080,7 @@ input[type=range].c24::-ms-tooltip {
                                   onClick={[Function]}
                                   onFocus={[Function]}
                                   onKeyDown={[Function]}
+                                  tabIndex="-1"
                                 >
                                   <StyledComponent
                                     aria-label="Mute"
@@ -3108,6 +3117,7 @@ input[type=range].c24::-ms-tooltip {
                                     onClick={[Function]}
                                     onFocus={[Function]}
                                     onKeyDown={[Function]}
+                                    tabIndex="-1"
                                   >
                                     <button
                                       aria-label="Mute"
@@ -3115,6 +3125,7 @@ input[type=range].c24::-ms-tooltip {
                                       onClick={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
+                                      tabIndex="-1"
                                     >
                                       <Unmuted>
                                         <svg
@@ -3293,6 +3304,7 @@ input[type=range].c24::-ms-tooltip {
                               className="c25"
                             >
                               <VideoButton
+                                disableFocus={true}
                                 icon={<ClosedCaptions />}
                                 label="Select captions"
                                 onBlur={[Function]}
@@ -3305,6 +3317,7 @@ input[type=range].c24::-ms-tooltip {
                                   onClick={[Function]}
                                   onFocus={[Function]}
                                   onKeyDown={[Function]}
+                                  tabIndex="-1"
                                 >
                                   <StyledComponent
                                     aria-label="Select captions"
@@ -3342,6 +3355,7 @@ input[type=range].c24::-ms-tooltip {
                                     onClick={[Function]}
                                     onFocus={[Function]}
                                     onKeyDown={[Function]}
+                                    tabIndex="-1"
                                   >
                                     <button
                                       aria-label="Select captions"
@@ -3350,6 +3364,7 @@ input[type=range].c24::-ms-tooltip {
                                       onClick={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
+                                      tabIndex="-1"
                                     >
                                       <ClosedCaptions>
                                         <svg
@@ -3385,6 +3400,7 @@ input[type=range].c24::-ms-tooltip {
                                 </VideoButton__StyledButton>
                               </VideoButton>
                               <VideoButton
+                                disableFocus={true}
                                 icon={<FsExpand />}
                                 label="Change video quality"
                                 onBlur={[Function]}
@@ -3397,6 +3413,7 @@ input[type=range].c24::-ms-tooltip {
                                   onClick={[Function]}
                                   onFocus={[Function]}
                                   onKeyDown={[Function]}
+                                  tabIndex="-1"
                                 >
                                   <StyledComponent
                                     aria-label="Change video quality"
@@ -3434,6 +3451,7 @@ input[type=range].c24::-ms-tooltip {
                                     onClick={[Function]}
                                     onFocus={[Function]}
                                     onKeyDown={[Function]}
+                                    tabIndex="-1"
                                   >
                                     <button
                                       aria-label="Change video quality"
@@ -3442,6 +3460,7 @@ input[type=range].c24::-ms-tooltip {
                                       onClick={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
+                                      tabIndex="-1"
                                     >
                                       <FsExpand>
                                         <svg
@@ -3482,6 +3501,7 @@ input[type=range].c24::-ms-tooltip {
                                 </VideoButton__StyledButton>
                               </VideoButton>
                               <VideoButton
+                                disableFocus={true}
                                 icon={<FsExpand />}
                                 label="Toggle fullscreen"
                                 onBlur={[Function]}
@@ -3494,6 +3514,7 @@ input[type=range].c24::-ms-tooltip {
                                   onClick={[Function]}
                                   onFocus={[Function]}
                                   onKeyDown={[Function]}
+                                  tabIndex="-1"
                                 >
                                   <StyledComponent
                                     aria-label="Toggle fullscreen"
@@ -3531,6 +3552,7 @@ input[type=range].c24::-ms-tooltip {
                                     onClick={[Function]}
                                     onFocus={[Function]}
                                     onKeyDown={[Function]}
+                                    tabIndex="-1"
                                   >
                                     <button
                                       aria-label="Toggle fullscreen"
@@ -3539,6 +3561,7 @@ input[type=range].c24::-ms-tooltip {
                                       onClick={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
+                                      tabIndex="-1"
                                     >
                                       <FsExpand>
                                         <svg

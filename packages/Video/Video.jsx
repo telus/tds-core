@@ -706,6 +706,7 @@ class Video extends React.Component {
             videoPlaying={
               this.refVideoPlayer.current !== null ? !this.refVideoPlayer.current.paused : false
             }
+            videoUnplayed={this.state.videoUnplayed}
             videoDefaultVolume={this.props.defaultVolume / 100}
             videoCurrentVolume={this.state.videoCurrentVolume}
             videoIsMuted={this.state.videoIsMuted}

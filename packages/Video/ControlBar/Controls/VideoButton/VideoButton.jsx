@@ -12,7 +12,7 @@ const StyledButton = styled.button({
   display: 'inline-flex',
   alignItems: 'center',
 })
-const VideoButton = ({ icon, label, children, ...rest }) => {
+const VideoButton = ({ icon, label, disableFocus, children, ...rest }) => {
   const handleOnKeyDown = event => {
     const key = event.key || event.keyCode
 
@@ -23,7 +23,12 @@ const VideoButton = ({ icon, label, children, ...rest }) => {
   }
 
   return (
-    <StyledButton aria-label={label} onKeyDown={handleOnKeyDown} {...rest}>
+    <StyledButton
+      aria-label={label}
+      onKeyDown={handleOnKeyDown}
+      tabIndex={disableFocus && '-1'}
+      {...rest}
+    >
       {icon}
       {children}
     </StyledButton>
@@ -32,6 +37,7 @@ const VideoButton = ({ icon, label, children, ...rest }) => {
 VideoButton.propTypes = {
   icon: PropTypes.node.isRequired,
   label: PropTypes.string.isRequired,
+  disableFocus: PropTypes.bool.isRequired,
   children: PropTypes.node,
 }
 

@@ -139,6 +139,7 @@ class VolumeSlider extends React.PureComponent {
               ? videoText[this.props.copy].unmute
               : videoText[this.props.copy].mute
           }
+          disableFocus={this.props.disableFocus}
           onClick={this.props.toggleMute}
           onFocus={this.props.resetInactivityTimer}
         />
@@ -170,6 +171,7 @@ VolumeSlider.propTypes = {
   copy: PropTypes.oneOf(['en', 'fr']).isRequired,
   compactModeThreshold: PropTypes.number.isRequired,
   videoPlayerWidth: PropTypes.number.isRequired,
+  disableFocus: PropTypes.bool.isRequired,
 }
 
 VolumeSlider.defaultProps = {}

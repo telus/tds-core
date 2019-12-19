@@ -59,6 +59,7 @@ const ControlBar = ({
   sources,
   tracks,
   videoPlaying,
+  videoUnplayed,
   videoBufferEnd,
   isHidden,
   videoLength,
@@ -134,11 +135,13 @@ const ControlBar = ({
           copy={copy}
           compactModeThreshold={compactModeThreshold}
           videoPlayerWidth={videoPlayerWidth}
+          disableFocus={videoUnplayed}
         />
 
         <Box between={3} inline>
           {tracksAvailable && (
             <VideoButton
+              disableFocus={videoUnplayed}
               label={videoText[copy].captionsToggle}
               icon={<ClosedCaptions />}
               onClick={event => {
@@ -163,6 +166,7 @@ const ControlBar = ({
             </MenuContainer>
           )}
           <VideoButton
+            disableFocus={videoUnplayed}
             label={videoText[copy].qualityToggle}
             icon={<Gear />}
             onClick={event => {
@@ -186,6 +190,7 @@ const ControlBar = ({
             </MenuContainer>
           )}
           <VideoButton
+            disableFocus={videoUnplayed}
             label={videoText[copy].fullScreenToggle}
             icon={videoIsFullscreen ? <FsMinimize /> : <FsExpand />}
             onClick={toggleFullscreen}
@@ -204,6 +209,7 @@ ControlBar.propTypes = {
   sources: PropTypes.array.isRequired,
   tracks: PropTypes.array,
   videoPlaying: PropTypes.bool.isRequired,
+  videoUnplayed: PropTypes.bool.isRequired,
   videoBufferEnd: PropTypes.number.isRequired,
   isHidden: PropTypes.bool,
   videoLength: PropTypes.number.isRequired,
