@@ -66,7 +66,7 @@ describe('Paragraph', () => {
   it('passes additional attributes to the p element', () => {
     const paragraph = doShallow({ id: 'the-paragraph' })
 
-    expect(paragraph).toHaveProp('id', 'the-paragraph')
+    expect(paragraph.find('Paragraph__StyledParagraph')).toHaveProp('id', 'the-paragraph')
   })
 
   it('does not allow custom CSS', () => {
