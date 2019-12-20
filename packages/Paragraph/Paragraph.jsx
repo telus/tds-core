@@ -6,6 +6,8 @@ import * as typography from '@tds/shared-typography'
 import { spacing } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
 
+import { Provider } from '../../shared/utils/context'
+
 const paragraphColor = ({ invert }) => (invert ? typography.invertedColor : typography.color)
 const paragraphInheritColor = ({ inheritColor }) =>
   inheritColor ? { color: 'inherit' } : undefined
@@ -32,11 +34,20 @@ export const StyledParagraph = styled.p(
  *
  * @version ./package.json
  */
-const Paragraph = ({ children, ...rest }, context) => (
-  <StyledParagraph {...safeRest(rest)} inheritColor={context.inheritColor}>
-    {children}
-  </StyledParagraph>
-)
+const Paragraph = ({ size, invert, children, ...rest }, context) => {
+  return (
+    <Provider value={{ paragraphSize: size, invert }}>
+      <StyledParagraph
+        {...safeRest(rest)}
+        size={size}
+        invert={invert}
+        inheritColor={context.inheritColor}
+      >
+        {children}
+      </StyledParagraph>
+    </Provider>
+  )
+}
 
 Paragraph.propTypes = {
   /**
