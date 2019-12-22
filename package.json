@@ -10,10 +10,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "bootstrap": "npm ci && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose build ciboot && docker-compose build e2e",
+    "bootstrap": "npm ci && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all",
     "bootstrap:ci": "npm ci && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all",
     "bootstrap:quick": "npm ci && npx lerna bootstrap --hoist && npm run build -- --all",
-    "bootstrap:slow": "npm install && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose build ciboot && docker-compose build e2e",
+    "bootstrap:install": "npm i && npx lerna bootstrap --hoist && npm run build -- --all",
+    "bootstrap:legacy": "npm install && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all && docker-compose build ciboot && docker-compose build e2e",
     "build": "node scripts/build.js",
     "build:e2e": "NODE_ENV=e2e webpack --config e2e/visual/webpack.config.js",
     "build-docs:gitbook": "gitbook build guide",
