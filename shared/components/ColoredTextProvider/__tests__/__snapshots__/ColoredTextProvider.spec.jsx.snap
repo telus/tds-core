@@ -17,6 +17,23 @@ exports[`ColoredTextProvider allows Link to inherit its color 1`] = `
   text-decoration: none;
 }
 
+.c0 svg {
+  vertical-align: bottom;
+}
+
+.c0:focus {
+  border: 2px solid #71757b;
+  padding: 2px;
+  margin: -4px;
+  border-radius: 2px;
+  outline: none;
+  box-sizing: content-box;
+}
+
+.c0:active {
+  background-color: #d8d8d8;
+}
+
 .c0:link,
 .c0:visited {
   color: inherit;
