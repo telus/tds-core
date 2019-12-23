@@ -18,6 +18,23 @@ Object {
   text-decoration: none;
 }
 
+.c0:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
 <a
     className="c0"
     href={null}
@@ -41,10 +58,28 @@ Object {
   text-decoration: none;
 }
 
+.c0:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
 <WithForwardedRef(Link)>
     <Link
       forwardedRef={null}
       href={null}
+      iconPosition="left"
       reactRouterLinkComponent={null}
       to={null}
     >
@@ -55,6 +90,7 @@ Object {
             "inheritColor": undefined,
           }
         }
+        hasIcon={false}
         href={null}
         to={null}
       >
@@ -84,6 +120,10 @@ Object {
                   "&:hover {",
                   "text-decoration: none;",
                   "}",
+                  "& svg {",
+                  "}",
+                  [Function],
+                  [Function],
                   [Function],
                 ],
               },
@@ -98,6 +138,7 @@ Object {
             }
           }
           forwardedRef={null}
+          hasIcon={false}
           href={null}
           to={null}
         >
@@ -138,6 +179,24 @@ Object {
   color: #fff;
 }
 
+.c0:active {
+  color: #d8d8d8;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:focus {
+  border: 0.125rem solid #fff;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
 <a
     className="c0"
     href={null}
@@ -166,12 +225,31 @@ Object {
   color: #fff;
 }
 
+.c0:active {
+  color: #d8d8d8;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:focus {
+  border: 0.125rem solid #fff;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
 <WithForwardedRef(Link)
     invert={true}
   >
     <Link
       forwardedRef={null}
       href={null}
+      iconPosition="left"
       invert={true}
       reactRouterLinkComponent={null}
       to={null}
@@ -183,6 +261,7 @@ Object {
             "inheritColor": undefined,
           }
         }
+        hasIcon={false}
         href={null}
         invert={true}
         to={null}
@@ -213,6 +292,10 @@ Object {
                   "&:hover {",
                   "text-decoration: none;",
                   "}",
+                  "& svg {",
+                  "}",
+                  [Function],
+                  [Function],
                   [Function],
                 ],
               },
@@ -227,6 +310,7 @@ Object {
             }
           }
           forwardedRef={null}
+          hasIcon={false}
           href={null}
           invert={true}
           to={null}
@@ -249,6 +333,7 @@ exports[`Link renders 1`] = `
 <Link
   forwardedRef={null}
   href={null}
+  iconPosition="left"
   reactRouterLinkComponent={null}
   to={null}
 >

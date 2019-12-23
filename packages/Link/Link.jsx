@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorGreyShark, colorWhite } from '@tds/core-colours'
+import { colorGreyShark, colorWhite, colorGainsboro, colorGreyRaven } from '@tds/core-colours'
 import { links } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
+import { componentWithName } from '@tds/util-prop-types'
 
 import { withForwardedRef } from '@tds/shared-hocs'
 
@@ -19,32 +20,88 @@ const base = {
   '&:hover': {
     textDecoration: 'none',
   },
+  '& svg': {},
 }
-const StyledLink = styled.a(base, ({ invert, context }) => {
-  if (context.inheritColor) {
-    return {
-      '&:link,&:visited': {
-        color: 'inherit',
-      },
-    }
+
+const states = ({ invert }) => {
+  return {
+    '&:active': {
+      color: invert && colorGainsboro,
+      backgroundColor: invert ? 'rgba(0,0,0,0.4)' : colorGainsboro,
+      borderRadius: '0.25rem',
+      padding: '0.125rem',
+      margin: '-0.125rem',
+      textDecoration: 'underline',
+    },
+    '&:focus': {
+      border: `0.125rem solid ${invert ? colorWhite : colorGreyRaven}`,
+      padding: '0.125rem',
+      margin: '-0.25rem', // (border + padding) * -1
+      borderRadius: '0.25rem',
+      outline: 'none',
+    },
   }
-  if (invert) {
-    return {
-      '&:link,&:visited': {
-        color: colorWhite,
-      },
+}
+const StyledLink = styled.a(
+  base,
+  ({ invert, context }) => {
+    if (context.inheritColor) {
+      return {
+        '&:link,&:visited': {
+          color: 'inherit',
+        },
+      }
     }
+    if (invert) {
+      return {
+        '&:link,&:visited': {
+          color: colorWhite,
+        },
+      }
+    }
+    return {}
+  },
+  states,
+  ({ hasIcon }) => {
+    if (hasIcon) {
+      return {
+        display: 'inline-block',
+        '& > svg': {
+          verticalAlign: 'bottom',
+        },
+      }
+    }
+    return {}
   }
-  return {}
-})
+)
 
 /**
  * @version ./package.json
  */
-const Link = ({ reactRouterLinkComponent, invert, children, forwardedRef, ...rest }, context) => {
+const Link = (
+  { reactRouterLinkComponent, invert, children, forwardedRef, icon: Icon, iconPosition, ...rest },
+  context
+) => {
   if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
   }
+
+  const renderChildren = useCallback(() => {
+    if (Icon) {
+      return (
+        <React.Fragment>
+          {iconPosition === 'left' && (
+            <Icon invert={invert} parentType="a" style={{ marginRight: '0.5rem' }} />
+          )}
+          {children}
+          {iconPosition === 'right' && (
+            <Icon invert={invert} parentType="a" style={{ marginLeft: '0.25rem' }} />
+          )}
+        </React.Fragment>
+      )
+    }
+    return children
+  }, [children, Icon, iconPosition, invert])
 
   return (
     <StyledLink
@@ -53,8 +110,9 @@ const Link = ({ reactRouterLinkComponent, invert, children, forwardedRef, ...res
       invert={invert}
       context={context}
       ref={forwardedRef}
+      hasIcon={!!Icon}
     >
-      {children}
+      {renderChildren()}
     </StyledLink>
   )
 }
@@ -81,6 +139,8 @@ Link.propTypes = {
   children: PropTypes.node.isRequired,
   /* @ignore */
   forwardedRef: PropTypes.object,
+  icon: componentWithName('Dependent', true),
+  iconPosition: PropTypes.oneOf(['left', 'right']),
 }
 Link.defaultProps = {
   reactRouterLinkComponent: null,
@@ -88,6 +148,8 @@ Link.defaultProps = {
   href: null,
   invert: undefined,
   forwardedRef: undefined,
+  icon: undefined,
+  iconPosition: 'left',
 }
 
 Link.contextTypes = {
