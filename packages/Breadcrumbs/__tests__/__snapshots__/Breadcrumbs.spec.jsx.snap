@@ -22,6 +22,23 @@ exports[`Breadcrumbs with children renders 1`] = `
   color: inherit;
 }
 
+.c2:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
 .c5 {
   color: #2a2c2e;
   color: inherit;
@@ -207,6 +224,8 @@ exports[`Breadcrumbs with children renders 1`] = `
                         <Link
                           forwardedRef={null}
                           href="/"
+                          iconPosition="left"
+                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -217,7 +236,9 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 "inheritColor": true,
                               }
                             }
+                            hasIcon={false}
                             href="/"
+                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -246,6 +267,10 @@ exports[`Breadcrumbs with children renders 1`] = `
                                       "&:hover {",
                                       "text-decoration: none;",
                                       "}",
+                                      "& svg {",
+                                      "}",
+                                      [Function],
+                                      [Function],
                                       [Function],
                                     ],
                                   },
@@ -260,7 +285,9 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 }
                               }
                               forwardedRef={null}
+                              hasIcon={false}
                               href="/"
+                              invert={false}
                               to={null}
                             >
                               <a
@@ -377,6 +404,8 @@ exports[`Breadcrumbs with children renders 1`] = `
                         <Link
                           forwardedRef={null}
                           href="/mobility"
+                          iconPosition="left"
+                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -387,7 +416,9 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 "inheritColor": true,
                               }
                             }
+                            hasIcon={false}
                             href="/mobility"
+                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -416,6 +447,10 @@ exports[`Breadcrumbs with children renders 1`] = `
                                       "&:hover {",
                                       "text-decoration: none;",
                                       "}",
+                                      "& svg {",
+                                      "}",
+                                      [Function],
+                                      [Function],
                                       [Function],
                                     ],
                                   },
@@ -430,7 +465,9 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 }
                               }
                               forwardedRef={null}
+                              hasIcon={false}
                               href="/mobility"
+                              invert={false}
                               to={null}
                             >
                               <a
@@ -679,6 +716,23 @@ exports[`Breadcrumbs with routes renders 1`] = `
   color: inherit;
 }
 
+.c2:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
 .c5 {
   color: #2a2c2e;
   color: inherit;
@@ -879,6 +933,8 @@ exports[`Breadcrumbs with routes renders 1`] = `
                         <Link
                           forwardedRef={null}
                           href="/"
+                          iconPosition="left"
+                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -889,7 +945,9 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 "inheritColor": true,
                               }
                             }
+                            hasIcon={false}
                             href="/"
+                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -918,6 +976,10 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                       "&:hover {",
                                       "text-decoration: none;",
                                       "}",
+                                      "& svg {",
+                                      "}",
+                                      [Function],
+                                      [Function],
                                       [Function],
                                     ],
                                   },
@@ -932,7 +994,9 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 }
                               }
                               forwardedRef={null}
+                              hasIcon={false}
                               href="/"
+                              invert={false}
                               to={null}
                             >
                               <a
@@ -1049,6 +1113,8 @@ exports[`Breadcrumbs with routes renders 1`] = `
                         <Link
                           forwardedRef={null}
                           href="/mobility"
+                          iconPosition="left"
+                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -1059,7 +1125,9 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 "inheritColor": true,
                               }
                             }
+                            hasIcon={false}
                             href="/mobility"
+                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -1088,6 +1156,10 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                       "&:hover {",
                                       "text-decoration: none;",
                                       "}",
+                                      "& svg {",
+                                      "}",
+                                      [Function],
+                                      [Function],
                                       [Function],
                                     ],
                                   },
@@ -1102,7 +1174,9 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 }
                               }
                               forwardedRef={null}
+                              hasIcon={false}
                               href="/mobility"
+                              invert={false}
                               to={null}
                             >
                               <a
