@@ -46,7 +46,7 @@ CartFilledBold.propTypes = {
       a11yText: PropTypes.string.isRequired,
     }),
   ]).isRequired,
-  variant: PropTypes.oneOf(['default', 'alternative', 'inverted']).isRequired,
+  variant: PropTypes.oneOf(['default', 'inverted']).isRequired,
   numItems: PropTypes.number.isRequired,
 }
 
