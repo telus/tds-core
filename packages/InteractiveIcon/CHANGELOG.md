@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.3.1...@tds/core-interactive-icon@1.3.2) (2020-01-07)
+
+
+### Bug Fixes
+
+* **core-interactive-icon:** change invert cart filled dot to telus green ([3fd46cc](https://github.com/telus/tds-core/commit/3fd46cc))
+* **core-interactive-icon:** improve invert navbutton focus/active style ([4064f0b](https://github.com/telus/tds-core/commit/4064f0b))
+
+
+
+
+
 ## [1.3.1](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.3.0...@tds/core-interactive-icon@1.3.1) (2019-11-18)
 
 **Note:** Version bump only for package @tds/core-interactive-icon
