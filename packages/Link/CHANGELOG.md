@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/telusdigital/tds/compare/@tds/core-link@2.1.2...@tds/core-link@2.1.3) (2020-01-07)
+
+
+### Bug Fixes
+
+* **core-link:** default invert prop to undefined to prevent router prop type error ([ef84f42](https://github.com/telusdigital/tds/commit/ef84f42))
+
+
+
+
+
 ## [2.1.2](https://github.com/telusdigital/tds/compare/@tds/core-link@2.1.1...@tds/core-link@2.1.2) (2019-10-09)
 
 **Note:** Version bump only for package @tds/core-link

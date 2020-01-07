@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.24](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.1.23...@tds/shared-video-splash@1.1.24) (2020-01-07)
+
+
+### Bug Fixes
+
+* **shared-video-splash:** enable focus outline on play button ([3365859](https://github.com/telus/tds-core/commit/3365859))
+
+
+
+
+
 ## [1.1.23](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.1.22...@tds/shared-video-splash@1.1.23) (2019-11-20)
 
 **Note:** Version bump only for package @tds/shared-video-splash

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.8](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.1.7...@tds/core-chevron-link@2.1.8) (2020-01-07)
+
+
+### Bug Fixes
+
+* **core-chevron-link:** prevent link misalign in containers in ie 11 ([4ca9143](https://github.com/telusdigital/tds/commit/4ca9143))
+
+
+
+
+
 ## [2.1.7](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.1.6...@tds/core-chevron-link@2.1.7) (2019-11-20)
 
 **Note:** Version bump only for package @tds/core-chevron-link

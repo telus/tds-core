@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.4](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@2.1.3...@tds/core-breadcrumbs@2.1.4) (2020-01-07)
+
+**Note:** Version bump only for package @tds/core-breadcrumbs
+
+
+
+
+
 ## [2.1.3](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@2.1.2...@tds/core-breadcrumbs@2.1.3) (2019-11-18)
 
 **Note:** Version bump only for package @tds/core-breadcrumbs
