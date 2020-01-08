@@ -225,7 +225,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                           forwardedRef={null}
                           href="/"
                           iconPosition="left"
-                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -238,7 +237,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                             }
                             hasIcon={false}
                             href="/"
-                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -287,7 +285,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                               forwardedRef={null}
                               hasIcon={false}
                               href="/"
-                              invert={false}
                               to={null}
                             >
                               <a
@@ -405,7 +402,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                           forwardedRef={null}
                           href="/mobility"
                           iconPosition="left"
-                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -418,7 +414,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                             }
                             hasIcon={false}
                             href="/mobility"
-                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -467,7 +462,6 @@ exports[`Breadcrumbs with children renders 1`] = `
                               forwardedRef={null}
                               hasIcon={false}
                               href="/mobility"
-                              invert={false}
                               to={null}
                             >
                               <a
@@ -934,7 +928,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                           forwardedRef={null}
                           href="/"
                           iconPosition="left"
-                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -947,7 +940,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                             }
                             hasIcon={false}
                             href="/"
-                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -996,7 +988,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                               forwardedRef={null}
                               hasIcon={false}
                               href="/"
-                              invert={false}
                               to={null}
                             >
                               <a
@@ -1114,7 +1105,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                           forwardedRef={null}
                           href="/mobility"
                           iconPosition="left"
-                          invert={false}
                           reactRouterLinkComponent={null}
                           to={null}
                         >
@@ -1127,7 +1117,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                             }
                             hasIcon={false}
                             href="/mobility"
-                            invert={false}
                             to={null}
                           >
                             <StyledComponent
@@ -1176,7 +1165,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
                               forwardedRef={null}
                               hasIcon={false}
                               href="/mobility"
-                              invert={false}
                               to={null}
                             >
                               <a
