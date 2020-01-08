@@ -150,13 +150,19 @@ class Notification extends React.Component {
   }
 
   render() {
-    const { dismissible, onExit, onDismiss } = this.props
+    const { variant, dismissible, onExit, onDismiss } = this.props
 
     if (onExit && !dismissible) {
       warn('Notification', 'The prop `onExit` must be used together with `dismissible`.')
     }
     if (onDismiss && !dismissible) {
       warn('Notification', 'The prop `onDismiss` must be used together with `dismissible`.')
+    }
+    if (variant === 'error' && dismissible) {
+      warn('Notification', 'Error notifications should not be dismissible.')
+    }
+    if (variant === 'warning' && dismissible) {
+      warn('Notification', 'Warning notifications should not be dismissible.')
     }
     if (dismissible) {
       const fadeDuration = 500
