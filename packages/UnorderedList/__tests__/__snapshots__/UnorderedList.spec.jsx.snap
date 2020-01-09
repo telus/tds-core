@@ -131,7 +131,6 @@ exports[`<UnorderedList /> can have a list style 1`] = `
                     [Function],
                     [Function],
                     [Function],
-                    [Function],
                   ],
                 },
                 "displayName": "styled.div",
@@ -372,7 +371,6 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                   "isStatic": false,
                   "lastClassName": "c2",
                   "rules": Array [
-                    [Function],
                     [Function],
                     [Function],
                     [Function],

@@ -3715,7 +3715,6 @@ exports[`Radio must have a label 1`] = `
                 [Function],
                 [Function],
                 [Function],
-                [Function],
               ],
             },
             "displayName": "styled.div",
@@ -3880,7 +3879,6 @@ exports[`Radio must have a label 1`] = `
                           "isStatic": false,
                           "lastClassName": "c6",
                           "rules": Array [
-                            [Function],
                             [Function],
                             [Function],
                             [Function],

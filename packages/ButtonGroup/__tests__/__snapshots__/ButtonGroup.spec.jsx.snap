@@ -256,7 +256,6 @@ exports[`ButtonGroup renders 1`] = `
                       [Function],
                       [Function],
                       [Function],
-                      [Function],
                     ],
                   },
                   "displayName": "styled.div",

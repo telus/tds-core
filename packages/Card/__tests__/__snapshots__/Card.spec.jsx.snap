@@ -2,14 +2,14 @@
 
 exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 .c1 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -17,20 +17,6 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -112,7 +98,6 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
-                      [Function],
                       [Function],
                       [Function],
                       [Function],
@@ -153,14 +138,14 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 
 exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 .c1 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -168,20 +153,6 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -268,7 +239,6 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
                       [Function],
                       [Function],
                       [Function],
-                      [Function],
                     ],
                   },
                   "displayName": "styled.div",
@@ -304,34 +274,20 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 
 exports[`<Card /> can be presented as one of the allowed variants 3`] = `
 .c1 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
   border-width: 0;
   border-radius: 4px;
   background-color: #f2eff4;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -418,7 +374,6 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
                       [Function],
                       [Function],
                       [Function],
-                      [Function],
                     ],
                   },
                   "displayName": "styled.div",
@@ -454,34 +409,20 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
 
 exports[`<Card /> can be presented as one of the allowed variants 4`] = `
 .c1 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
   border-width: 0;
   border-radius: 4px;
   background-color: #f7f7f8;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -568,7 +509,6 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
                       [Function],
                       [Function],
                       [Function],
-                      [Function],
                     ],
                   },
                   "displayName": "styled.div",
@@ -604,14 +544,14 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
 
 exports[`<Card /> can be presented as one of the allowed variants 5`] = `
 .c1 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -620,20 +560,6 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
   border: 1px solid #d8d8d8;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -720,7 +646,6 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
                       [Function],
                       [Function],
                       [Function],
-                      [Function],
                     ],
                   },
                   "displayName": "styled.div",
@@ -756,14 +681,14 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
 
 exports[`<Card /> renders 1`] = `
 .c1 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -771,20 +696,6 @@ exports[`<Card /> renders 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <div

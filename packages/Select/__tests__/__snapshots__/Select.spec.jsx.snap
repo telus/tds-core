@@ -89,14 +89,14 @@ exports[`Select can have an error message 1`] = `
 }
 
 .c5 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c4 {
@@ -303,7 +303,6 @@ exports[`Select can have an error message 1`] = `
                 [Function],
                 [Function],
                 [Function],
-                [Function],
               ],
             },
             "displayName": "styled.div",
@@ -347,7 +346,6 @@ exports[`Select can have an error message 1`] = `
                         "isStatic": false,
                         "lastClassName": "c11",
                         "rules": Array [
-                          [Function],
                           [Function],
                           [Function],
                           [Function],
@@ -434,7 +432,6 @@ exports[`Select can have an error message 1`] = `
                                       "isStatic": false,
                                       "lastClassName": "c11",
                                       "rules": Array [
-                                        [Function],
                                         [Function],
                                         [Function],
                                         [Function],
@@ -611,7 +608,6 @@ exports[`Select can have an error message 1`] = `
                               "isStatic": false,
                               "lastClassName": "c11",
                               "rules": Array [
-                                [Function],
                                 [Function],
                                 [Function],
                                 [Function],
@@ -944,7 +940,6 @@ exports[`Select can have an error message 1`] = `
                                       "isStatic": false,
                                       "lastClassName": "c11",
                                       "rules": Array [
-                                        [Function],
                                         [Function],
                                         [Function],
                                         [Function],
@@ -1292,9 +1287,8 @@ exports[`Select label can have a hint below 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "ivczOm",
+                  "lastClassName": "LKvBy",
                   "rules": Array [
-                    [Function],
                     [Function],
                     [Function],
                     [Function],
@@ -1516,9 +1510,8 @@ exports[`Select label can have a short hint 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "ivczOm",
+                  "lastClassName": "LKvBy",
                   "rules": Array [
-                    [Function],
                     [Function],
                     [Function],
                     [Function],
@@ -1785,9 +1778,8 @@ exports[`Select label must have a label 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "ivczOm",
+                  "lastClassName": "LKvBy",
                   "rules": Array [
-                    [Function],
                     [Function],
                     [Function],
                     [Function],
