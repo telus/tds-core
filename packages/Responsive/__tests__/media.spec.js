@@ -71,4 +71,16 @@ describe('media', () => {
         1}px) and (orientation: landscape)`]: { color: 'red' },
     })
   })
+
+  it('can return css with no media query if from/until/and are all undefined', () => {
+    const style = media
+      .from(undefined)
+      .until(undefined)
+      .and(undefined)
+      .css({
+        color: 'red',
+      })
+
+    expect(style).toEqual({ color: 'red' })
+  })
 })

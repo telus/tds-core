@@ -22,16 +22,20 @@ export default {
   css(style) {
     const { minWidth, maxWidth, and } = this.query
 
-    const min = minWidth ? `(min-width: ${breakpoints[minWidth]}px)` : null
-    const max = maxWidth ? `(max-width: ${breakpoints[maxWidth] - 1}px)` : null
+    const min = minWidth ? `(min-width: ${breakpoints[minWidth]}px)` : undefined
+    const max = maxWidth ? `(max-width: ${breakpoints[maxWidth] - 1}px)` : undefined
 
-    const mediaQuery = `@media ${[min, max, and].filter(a => a).join(' and ')}`
-    this.query = {}
+    if (typeof min !== 'undefined' || typeof max !== 'undefined' || typeof and !== 'undefined') {
+      const mediaQuery = `@media ${[min, max, and].filter(a => a).join(' and ')}`
+      this.query = {}
 
-    return {
-      [mediaQuery]: {
-        ...(typeof style === 'function' ? style() : style),
-      },
+      return {
+        [mediaQuery]: {
+          ...(typeof style === 'function' ? style() : style),
+        },
+      }
     }
+
+    return typeof style === 'function' ? style() : style
   },
 }
