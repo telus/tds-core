@@ -2871,14 +2871,14 @@ Array [
 
 exports[`Checkbox error can have an error message 3`] = `
 .c1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c0 {
@@ -2983,9 +2983,8 @@ exports[`Checkbox error can have an error message 3`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "ivczOm",
+                    "lastClassName": "LKvBy",
                     "rules": Array [
-                      [Function],
                       [Function],
                       [Function],
                       [Function],

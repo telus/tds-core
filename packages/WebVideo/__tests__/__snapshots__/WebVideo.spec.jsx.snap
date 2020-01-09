@@ -2,12 +2,12 @@
 
 exports[`WebVideo renders 1`] = `
 .c7 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .c11 {
@@ -599,7 +599,6 @@ exports[`WebVideo renders 1`] = `
                                                         [Function],
                                                         [Function],
                                                         [Function],
-                                                        [Function],
                                                       ],
                                                     },
                                                     "displayName": "styled.div",
@@ -817,7 +816,6 @@ exports[`WebVideo renders 1`] = `
                                                   [Function],
                                                   [Function],
                                                   [Function],
-                                                  [Function],
                                                 ],
                                               },
                                               "displayName": "styled.div",
@@ -861,7 +859,6 @@ exports[`WebVideo renders 1`] = `
                                                         "isStatic": false,
                                                         "lastClassName": "c11",
                                                         "rules": Array [
-                                                          [Function],
                                                           [Function],
                                                           [Function],
                                                           [Function],

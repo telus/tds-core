@@ -73,12 +73,12 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
 }
 
 .c2 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .c5 {
@@ -255,12 +255,12 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
 }
 
 .c2 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .c5 {

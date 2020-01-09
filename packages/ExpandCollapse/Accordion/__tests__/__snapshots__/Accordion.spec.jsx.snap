@@ -17,12 +17,12 @@ exports[`Accordion renders a closed accordion 1`] = `
 }
 
 .c3 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c4 {
@@ -40,14 +40,14 @@ exports[`Accordion renders a closed accordion 1`] = `
 }
 
 .c13 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .c7 {
@@ -188,15 +188,6 @@ exports[`Accordion renders a closed accordion 1`] = `
   .c11 {
     -webkit-transition: none !important;
     transition: none !important;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 }
 
@@ -376,7 +367,6 @@ exports[`Accordion renders a closed accordion 1`] = `
                                     [Function],
                                     [Function],
                                     [Function],
-                                    [Function],
                                   ],
                                 },
                                 "displayName": "styled.div",
@@ -420,7 +410,6 @@ exports[`Accordion renders a closed accordion 1`] = `
                                           "isStatic": false,
                                           "lastClassName": "c13",
                                           "rules": Array [
-                                            [Function],
                                             [Function],
                                             [Function],
                                             [Function],
@@ -1011,7 +1000,6 @@ exports[`Accordion renders a closed accordion 1`] = `
                                             [Function],
                                             [Function],
                                             [Function],
-                                            [Function],
                                           ],
                                         },
                                         "displayName": "styled.div",
@@ -1184,12 +1172,12 @@ exports[`Accordion renders an open accordion 1`] = `
 }
 
 .c3 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c4 {
@@ -1207,14 +1195,14 @@ exports[`Accordion renders an open accordion 1`] = `
 }
 
 .c13 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .c7 {
@@ -1355,15 +1343,6 @@ exports[`Accordion renders an open accordion 1`] = `
   .c11 {
     -webkit-transition: none !important;
     transition: none !important;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 }
 
@@ -1549,7 +1528,6 @@ exports[`Accordion renders an open accordion 1`] = `
                                     [Function],
                                     [Function],
                                     [Function],
-                                    [Function],
                                   ],
                                 },
                                 "displayName": "styled.div",
@@ -1593,7 +1571,6 @@ exports[`Accordion renders an open accordion 1`] = `
                                           "isStatic": false,
                                           "lastClassName": "c13",
                                           "rules": Array [
-                                            [Function],
                                             [Function],
                                             [Function],
                                             [Function],
@@ -2179,7 +2156,6 @@ exports[`Accordion renders an open accordion 1`] = `
                                           "isStatic": false,
                                           "lastClassName": "c13",
                                           "rules": Array [
-                                            [Function],
                                             [Function],
                                             [Function],
                                             [Function],

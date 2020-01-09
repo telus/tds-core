@@ -66,14 +66,14 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
 }
 
 .c3 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c2 {
@@ -361,7 +361,6 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                       "isStatic": false,
                                       "lastClassName": "c3",
                                       "rules": Array [
-                                        [Function],
                                         [Function],
                                         [Function],
                                         [Function],
@@ -756,14 +755,14 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
 }
 
 .c3 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c2 {
@@ -1038,7 +1037,6 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                       "isStatic": false,
                                       "lastClassName": "c3",
                                       "rules": Array [
-                                        [Function],
                                         [Function],
                                         [Function],
                                         [Function],
@@ -1433,14 +1431,14 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
 }
 
 .c3 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c2 {
@@ -1715,7 +1713,6 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                       "isStatic": false,
                                       "lastClassName": "c3",
                                       "rules": Array [
-                                        [Function],
                                         [Function],
                                         [Function],
                                         [Function],
@@ -2066,14 +2063,14 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c0 {
@@ -2262,14 +2259,14 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c0 {
@@ -2457,14 +2454,14 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
 }
 
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c0 {
@@ -2697,14 +2694,14 @@ exports[`Tooltip renders 1`] = `
 }
 
 .c3 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c2 {
@@ -2980,7 +2977,6 @@ exports[`Tooltip renders 1`] = `
                                       "isStatic": false,
                                       "lastClassName": "c3",
                                       "rules": Array [
-                                        [Function],
                                         [Function],
                                         [Function],
                                         [Function],
