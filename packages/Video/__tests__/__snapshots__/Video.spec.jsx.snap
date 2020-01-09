@@ -2,12 +2,12 @@
 
 exports[`Video renders 1`] = `
 .c8 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .c25 {
@@ -667,12 +667,12 @@ input[type=range].c24::-ms-tooltip {
       forwardedRef={
         Object {
           "current": .c8 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .c25 {
@@ -1923,7 +1923,6 @@ input[type=range].c24::-ms-tooltip {
                                                             "isStatic": false,
                                                             "lastClassName": "c25",
                                                             "rules": Array [
-                                                              [Function],
                                                               [Function],
                                                               [Function],
                                                               [Function],
@@ -3267,7 +3266,6 @@ input[type=range].c24::-ms-tooltip {
                                   "isStatic": false,
                                   "lastClassName": "c25",
                                   "rules": Array [
-                                    [Function],
                                     [Function],
                                     [Function],
                                     [Function],

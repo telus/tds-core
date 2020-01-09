@@ -100,8 +100,6 @@ div.c14 {
 }
 
 .c7 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -109,6 +107,8 @@ div.c14 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c7 > *:not(:last-child) {
@@ -116,7 +116,6 @@ div.c14 {
 }
 
 .c17 {
-  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -124,6 +123,7 @@ div.c14 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .c17 > *:not(:last-child) {
@@ -401,12 +401,6 @@ div.c14 {
   }
 }
 
-@media (min-width:768px) {
-  .c17 {
-    margin-bottom: 2rem;
-  }
-}
-
 @media (prefers-reduced-motion:reduce) {
   .c13 {
     -webkit-transition: none !important;
@@ -662,8 +656,6 @@ div.c14 {
 }
 
 .c7 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -671,6 +663,8 @@ div.c14 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c7 > *:not(:last-child) {
@@ -678,7 +672,6 @@ div.c14 {
 }
 
 .c17 {
-  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -686,6 +679,7 @@ div.c14 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .c17 > *:not(:last-child) {
@@ -966,12 +960,6 @@ div.c14 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c17 {
-    margin-bottom: 2rem;
   }
 }
 
@@ -1405,7 +1393,6 @@ div.c14 {
                                                               "isStatic": false,
                                                               "lastClassName": "c17",
                                                               "rules": Array [
-                                                                [Function],
                                                                 [Function],
                                                                 [Function],
                                                                 [Function],
@@ -2439,7 +2426,6 @@ div.c14 {
                                                                                     [Function],
                                                                                     [Function],
                                                                                     [Function],
-                                                                                    [Function],
                                                                                   ],
                                                                                 },
                                                                                 "displayName": "styled.div",
@@ -2843,8 +2829,6 @@ div.c14 {
 }
 
 .c7 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2852,6 +2836,8 @@ div.c14 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c7 > *:not(:last-child) {
@@ -2859,7 +2845,6 @@ div.c14 {
 }
 
 .c17 {
-  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2867,6 +2852,7 @@ div.c14 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .c17 > *:not(:last-child) {
@@ -3178,12 +3164,6 @@ div.c14 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c17 {
-    margin-bottom: 2rem;
   }
 }
 
@@ -3628,7 +3608,6 @@ div.c14 {
                                                               "isStatic": false,
                                                               "lastClassName": "c17",
                                                               "rules": Array [
-                                                                [Function],
                                                                 [Function],
                                                                 [Function],
                                                                 [Function],
@@ -4662,7 +4641,6 @@ div.c14 {
                                                                                     [Function],
                                                                                     [Function],
                                                                                     [Function],
-                                                                                    [Function],
                                                                                   ],
                                                                                 },
                                                                                 "displayName": "styled.div",
@@ -5182,7 +5160,6 @@ div.c14 {
                                                                               [Function],
                                                                               [Function],
                                                                               [Function],
-                                                                              [Function],
                                                                             ],
                                                                           },
                                                                           "displayName": "styled.div",
@@ -5410,7 +5387,6 @@ div.c14 {
                                                                                           "isStatic": false,
                                                                                           "lastClassName": "c17",
                                                                                           "rules": Array [
-                                                                                            [Function],
                                                                                             [Function],
                                                                                             [Function],
                                                                                             [Function],
@@ -5758,8 +5734,6 @@ div.c14 {
 }
 
 .c7 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5767,6 +5741,8 @@ div.c14 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c7 > *:not(:last-child) {
@@ -5774,7 +5750,6 @@ div.c14 {
 }
 
 .c18 {
-  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5782,6 +5757,7 @@ div.c14 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .c18 > *:not(:last-child) {
@@ -6076,12 +6052,6 @@ div.c14 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c18 {
-    margin-bottom: 2rem;
   }
 }
 
@@ -6514,7 +6484,6 @@ div.c14 {
                                                               "isStatic": false,
                                                               "lastClassName": "c18",
                                                               "rules": Array [
-                                                                [Function],
                                                                 [Function],
                                                                 [Function],
                                                                 [Function],
@@ -7456,7 +7425,6 @@ div.c14 {
                                                                               [Function],
                                                                               [Function],
                                                                               [Function],
-                                                                              [Function],
                                                                             ],
                                                                           },
                                                                           "displayName": "styled.div",
@@ -7591,7 +7559,6 @@ div.c14 {
                                                                                           "isStatic": false,
                                                                                           "lastClassName": "c18",
                                                                                           "rules": Array [
-                                                                                            [Function],
                                                                                             [Function],
                                                                                             [Function],
                                                                                             [Function],

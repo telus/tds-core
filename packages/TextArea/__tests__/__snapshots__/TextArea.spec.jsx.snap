@@ -318,7 +318,6 @@ exports[`TextArea label can have a short hint 1`] = `
                     [Function],
                     [Function],
                     [Function],
-                    [Function],
                   ],
                 },
                 "displayName": "styled.div",

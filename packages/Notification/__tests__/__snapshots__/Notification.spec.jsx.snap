@@ -62,12 +62,12 @@ div.c2 {
 }
 
 .c1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c6 {
@@ -314,7 +314,6 @@ div.c2 {
                     "isStatic": false,
                     "lastClassName": "c6",
                     "rules": Array [
-                      [Function],
                       [Function],
                       [Function],
                       [Function],
@@ -840,7 +839,6 @@ div.c2 {
                                                                                                       [Function],
                                                                                                       [Function],
                                                                                                       [Function],
-                                                                                                      [Function],
                                                                                                     ],
                                                                                                   },
                                                                                                   "displayName": "styled.div",
@@ -1071,12 +1069,12 @@ div.c2 {
 }
 
 .c1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c6 {
@@ -1094,12 +1092,12 @@ div.c2 {
 }
 
 .c8 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .c0 {
@@ -1336,7 +1334,6 @@ div.c2 {
                     "isStatic": false,
                     "lastClassName": "c8",
                     "rules": Array [
-                      [Function],
                       [Function],
                       [Function],
                       [Function],
@@ -1862,7 +1859,6 @@ div.c2 {
                                                                                                       [Function],
                                                                                                       [Function],
                                                                                                       [Function],
-                                                                                                      [Function],
                                                                                                     ],
                                                                                                   },
                                                                                                   "displayName": "styled.div",
@@ -1940,7 +1936,6 @@ div.c2 {
                                                                                                                   "isStatic": false,
                                                                                                                   "lastClassName": "c8",
                                                                                                                   "rules": Array [
-                                                                                                                    [Function],
                                                                                                                     [Function],
                                                                                                                     [Function],
                                                                                                                     [Function],
@@ -2221,12 +2216,12 @@ div.c2 {
 }
 
 .c1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c6 {

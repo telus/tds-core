@@ -430,7 +430,6 @@ Object {
                   [Function],
                   [Function],
                   [Function],
-                  [Function],
                 ],
               },
               "displayName": "styled.div",
@@ -474,7 +473,6 @@ Object {
                           "isStatic": false,
                           "lastClassName": "c1",
                           "rules": Array [
-                            [Function],
                             [Function],
                             [Function],
                             [Function],
@@ -561,7 +559,6 @@ Object {
                                         "isStatic": false,
                                         "lastClassName": "c1",
                                         "rules": Array [
-                                          [Function],
                                           [Function],
                                           [Function],
                                           [Function],
@@ -1031,7 +1028,6 @@ Object {
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
-                      [Function],
                       [Function],
                       [Function],
                       [Function],
