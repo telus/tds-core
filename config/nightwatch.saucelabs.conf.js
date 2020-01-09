@@ -50,7 +50,7 @@ module.exports = {
         browserName: 'chrome',
         version: '78',
         platform: 'windows 10',
-        screenResolution: '1280x960',
+        screenResolution: '2560x1600',
       },
     },
     firefox: {
@@ -66,7 +66,7 @@ module.exports = {
         browserName: 'safari',
         version: '12',
         platform: 'osx 10.14',
-        screenResolution: '1280x960',
+        screenResolution: '2360x1770',
       },
     },
     edge: {
@@ -74,7 +74,7 @@ module.exports = {
         browserName: 'microsoftedge',
         version: '18',
         platform: 'windows 10',
-        screenResolution: '1280x960',
+        screenResolution: '2560x1600',
       },
     },
     edge17: {
@@ -82,7 +82,7 @@ module.exports = {
         browserName: 'microsoftedge',
         version: '17',
         platform: 'windows 10',
-        screenResolution: '1280x960',
+        screenResolution: '2560x1600',
       },
     },
     ie11: {
@@ -92,7 +92,7 @@ module.exports = {
         seleniumVersion: '3.141.59',
         iedriverVersion: '3.141.59',
         platform: 'windows 10',
-        screenResolution: '1280x960',
+        screenResolution: '2560x1600',
         avoidProxy: true,
       },
     },
