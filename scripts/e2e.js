@@ -22,7 +22,7 @@ const getPackageNames = require('./utils/getPackageNames')
 getPackageNames(packageNames => {
   if (!tdsOptions.name) {
     // eslint-disable-next-line no-console
-    console.log(
+    console.error(
       'FATAL ERROR: E2E slug not specified. Please specify the branch E2E slug (usually the branch name) using the `-n` flag.'
     )
     process.exit(1)
