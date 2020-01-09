@@ -20,6 +20,13 @@ const { tdsOptions } = require('./utils/parseArgs')
 const getPackageNames = require('./utils/getPackageNames')
 
 getPackageNames(packageNames => {
+  if (!tdsOptions.name) {
+    // eslint-disable-next-line no-console
+    console.log(
+      'FATAL ERROR: E2E slug not specified. Please specify the branch E2E slug (usually the branch name) using the `-n` flag.'
+    )
+    process.exit(1)
+  }
   const onlyCorePackages = packageNames.filter(name => name.startsWith('@tds/core-')).join(' ')
 
   const environments = 'chrome,firefox,safari,edge,ie11'
