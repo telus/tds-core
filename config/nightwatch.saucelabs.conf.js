@@ -58,7 +58,7 @@ module.exports = {
         browserName: 'firefox',
         version: '70',
         platform: 'windows 10',
-        screenResolution: '1280x960',
+        screenResolution: '2560x1600',
       },
     },
     safari: {
