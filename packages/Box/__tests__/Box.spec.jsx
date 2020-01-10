@@ -1,7 +1,37 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
+import { convertToRem } from '@tds/util-helpers'
+
 import Box from '../Box'
+import generateResponsiveStyles from '../generateResponsiveStyles'
+
+describe('generateResponsiveStyles', () => {
+  const props = {
+    vertical: { xs: 8 },
+  }
+  const styleFn = ({ vertical }, breakpoint) => {
+    if (vertical === undefined) {
+      return undefined
+    }
+
+    const rem = convertToRem(vertical, breakpoint)
+
+    return { paddingTop: rem, paddingBottom: rem }
+  }
+
+  it('works', () => {
+    const styles = generateResponsiveStyles(props, styleFn)
+    expect(styles).toEqual({
+      paddingTop: '4rem',
+      paddingBottom: '4rem',
+      '@media (min-width: 992px)': {
+        paddingTop: '6rem',
+        paddingBottom: '6rem',
+      },
+    })
+  })
+})
 
 describe('Box', () => {
   const defaultProps = { between: 3 }
