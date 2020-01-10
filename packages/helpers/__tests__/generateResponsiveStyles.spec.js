@@ -20,6 +20,22 @@ describe('generateResponsiveStyles', () => {
       ])
     })
 
+    it('handles a single responsive prop', () => {
+      const props = {
+        between: { xs: 8 },
+      }
+      const preparedObject = prepareArray(props)
+      expect(preparedObject).toEqual([
+        {
+          from: 'xs',
+          until: undefined,
+          props: {
+            between: 8,
+          },
+        },
+      ])
+    })
+
     it('handles two responsive props', () => {
       const props = {
         between: { xs: 4, md: 8 },
@@ -84,7 +100,7 @@ describe('generateResponsiveStyles', () => {
       ])
     })
 
-    it('handles boundry crossing responsive props', () => {
+    it('does not handle boundry crossing responsive props', () => {
       const props = {
         between: { xs: 2, sm: 8 },
         inline: { xs: false, lg: true },
@@ -101,14 +117,6 @@ describe('generateResponsiveStyles', () => {
         },
         {
           from: 'sm',
-          until: 'md',
-          props: {
-            between: 8,
-            inline: false,
-          },
-        },
-        {
-          from: 'md',
           until: 'lg',
           props: {
             between: 8,
@@ -153,6 +161,61 @@ describe('generateResponsiveStyles', () => {
     })
   })
   describe('generateStyles', () => {
+    const styleFn = ({ between, inline }) => {
+      const styles = {
+        flexDirection: inline ? 'row' : 'column',
+      }
+
+      if (inline) {
+        styles.marginRight = between
+      } else {
+        styles.marginBottom = between
+      }
+
+      return styles
+    }
+
+    it('calls styleFn with the props, from, and until breakpoints', () => {
+      const styleFnMock = jest.fn()
+      const array = [
+        {
+          from: 'xs',
+          until: 'sm',
+          props: {
+            between: 2,
+            inline: false,
+          },
+        },
+        {
+          from: 'sm',
+          until: undefined,
+          props: {
+            between: 8,
+            inline: false,
+          },
+        },
+      ]
+      generateStyles(array, styleFnMock)
+
+      expect(styleFnMock.mock.calls.length).toBe(2)
+      expect(styleFnMock.mock.calls[0]).toEqual([
+        {
+          between: 2,
+          inline: false,
+        },
+        'xs',
+        'sm',
+      ])
+      expect(styleFnMock.mock.calls[1]).toEqual([
+        {
+          between: 8,
+          inline: false,
+        },
+        'sm',
+        undefined,
+      ])
+    })
+
     it('generates css', () => {
       const array = [
         {
@@ -189,21 +252,7 @@ describe('generateResponsiveStyles', () => {
         },
       ]
 
-      const styleFn = ({ between, inline }) => {
-        const styles = {
-          flexDirection: inline ? 'row' : 'column',
-        }
-
-        if (inline) {
-          styles.marginRight = between
-        } else {
-          styles.marginBottom = between
-        }
-
-        return styles
-      }
-
-      expect(generateStyles(array, styleFn, ['between'])).toEqual({
+      expect(generateStyles(array, styleFn)).toEqual({
         '@media (max-width: 575px)': {
           flexDirection: 'column',
           marginBottom: 2,
@@ -243,23 +292,57 @@ describe('generateResponsiveStyles', () => {
         },
       ]
 
-      const styleFn = ({ between, inline }) => {
-        const styles = {
-          flexDirection: inline ? 'row' : 'column',
-        }
-
-        if (inline) {
-          styles.marginRight = between
-        } else {
-          styles.marginBottom = between
-        }
-
-        return styles
-      }
-
-      expect(generateStyles(array, styleFn, ['between'])).toEqual({
+      expect(generateStyles(array, styleFn)).toEqual({
         flexDirection: 'column',
         marginBottom: 2,
+      })
+    })
+
+    xit('handles custom media', () => {
+      const array = [
+        {
+          from: 'xs',
+          until: 'sm',
+          props: {
+            between: 2,
+            inline: false,
+          },
+        },
+        {
+          from: 'sm',
+          until: 'lg',
+          props: {
+            between: 8,
+            inline: false,
+          },
+        },
+        {
+          from: 'lg',
+          until: undefined,
+          props: {
+            between: 8,
+            inline: true,
+          },
+        },
+      ]
+
+      expect(generateStyles(array, styleFn)).toEqual({
+        '@media (max-width: 575px)': {
+          flexDirection: 'column',
+          marginBottom: 2,
+        },
+        '@media (min-width: 576px) and (max-width: 767px)': {
+          flexDirection: 'column',
+          marginBottom: 8,
+        },
+        '@media (min-width: 768px) and (max-width: 991px)': {
+          flexDirection: 'column',
+          marginBottom: 8,
+        },
+        '@media (min-width: 992px)': {
+          flexDirection: 'row',
+          marginRight: 8,
+        },
       })
     })
   })

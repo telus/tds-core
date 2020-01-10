@@ -4,8 +4,8 @@ const BREAKPOINTS = ['xs', 'sm', 'md', 'lg', 'xl']
 const MOBILE_BREAKPOINTS = ['xs', 'sm']
 const DESKTOP_BREAKPOINTS = ['md', 'lg', 'xl']
 
-const isMobileBreakpoint = breakpoint => MOBILE_BREAKPOINTS.indexOf(breakpoint) !== -1
-const isDesktopBreakpoint = breakpoint => DESKTOP_BREAKPOINTS.indexOf(breakpoint) !== -1
+export const isMobileBreakpoint = breakpoint => MOBILE_BREAKPOINTS.indexOf(breakpoint) !== -1
+export const isDesktopBreakpoint = breakpoint => DESKTOP_BREAKPOINTS.indexOf(breakpoint) !== -1
 
 const isResponsiveProp = prop =>
   prop && BREAKPOINTS.find(breakpoint => Object.prototype.hasOwnProperty.call(prop, breakpoint))
@@ -57,19 +57,6 @@ const inheritAndPopulateUntil = (bp, index, src) => {
   return breakpoint
 }
 
-const handleBoundaryCrossing = (acc, curr) => {
-  if (isMobileBreakpoint(curr.from) && (isDesktopBreakpoint(curr.until) && curr.until !== 'md')) {
-    const mobileBreakpoint = Object.assign({}, curr, { props: curr.props })
-    const desktopBreakpoint = Object.assign({}, curr, { props: curr.props })
-
-    mobileBreakpoint.until = 'md'
-    desktopBreakpoint.from = 'md'
-
-    return [...acc, mobileBreakpoint, desktopBreakpoint]
-  }
-  return [...acc, curr]
-}
-
 export const prepareArray = props => {
   // gather all breakpoints
   const responsivePropNames = getResponsiveProps(props)
@@ -89,7 +76,6 @@ export const prepareArray = props => {
     .map(collectBreakpoints(props))
     .sort(sortBreakpointAsc)
     .map(inheritAndPopulateUntil)
-    .reduce(handleBoundaryCrossing, [])
 
   return preparedArray
 }
@@ -102,7 +88,7 @@ export const generateStyles = (breakpoints, style) => {
       const result = media
         .from(breakpoint.from === 'xs' ? undefined : breakpoint.from)
         .until(breakpoint.until === 'xl' ? undefined : breakpoint.until)
-        .css(typeof style === 'function' ? style(props, breakpoint.from) : style)
+        .css(typeof style === 'function' ? style(props, breakpoint.from, breakpoint.until) : style)
 
       return {
         ...acc,
