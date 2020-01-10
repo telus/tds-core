@@ -22,20 +22,6 @@ exports[`ChevronLink can have specific variants 1`] = `
   content: '\\f107';
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -68,6 +54,38 @@ exports[`ChevronLink can have specific variants 1`] = `
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
+}
+
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
 <a
@@ -116,20 +134,6 @@ exports[`ChevronLink can have specific variants 2`] = `
   content: '\\f107';
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -162,6 +166,38 @@ exports[`ChevronLink can have specific variants 2`] = `
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
+}
+
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
 <a
@@ -210,20 +246,6 @@ exports[`ChevronLink can have specific variants 3`] = `
   content: '\\f107';
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -256,6 +278,38 @@ exports[`ChevronLink can have specific variants 3`] = `
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
+}
+
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
 <a
@@ -304,20 +358,6 @@ exports[`ChevronLink can have specific variants 4`] = `
   content: '\\f107';
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -350,6 +390,38 @@ exports[`ChevronLink can have specific variants 4`] = `
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
+}
+
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
 <a
@@ -398,20 +470,6 @@ exports[`ChevronLink renders 1`] = `
   content: '\\f107';
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
 .c1 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -444,6 +502,38 @@ exports[`ChevronLink renders 1`] = `
   -webkit-transform: translateX(0.25rem);
   -ms-transform: translateX(0.25rem);
   transform: translateX(0.25rem);
+}
+
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
 <a

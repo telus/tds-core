@@ -1,18 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Box between applies space-between 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 <Box
@@ -70,18 +88,36 @@ exports[`Box between applies space-between 1`] = `
 `;
 
 exports[`Box between arranges the children horizontally or vertically be either inline or block 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 <Box
@@ -139,18 +175,36 @@ exports[`Box between arranges the children horizontally or vertically be either 
 `;
 
 exports[`Box between arranges the children horizontally or vertically be either inline or block 2`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-right: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 <Box
@@ -325,18 +379,36 @@ exports[`Box between can handle responsive props 1`] = `
 `;
 
 exports[`Box between separates children by equal margins in a stack 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 <Box
@@ -394,18 +466,36 @@ exports[`Box between separates children by equal margins in a stack 1`] = `
 `;
 
 exports[`Box between separates children by equal margins inline 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-right: 0.5rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
 <Box
@@ -463,19 +553,48 @@ exports[`Box between separates children by equal margins inline 1`] = `
 `;
 
 exports[`Box can apply bottom margin 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0.5rem;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    margin-bottom: 0.5rem;
+  }
 }
 
 <Box
@@ -536,20 +655,50 @@ exports[`Box can apply bottom margin 1`] = `
 `;
 
 exports[`Box insets can be either vertical or horizonal 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
 }
 
 <Box
@@ -610,20 +759,50 @@ exports[`Box insets can be either vertical or horizonal 1`] = `
 `;
 
 exports[`Box insets can be either vertical or horizonal 2`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
 }
 
 <Box
@@ -684,22 +863,64 @@ exports[`Box insets can be either vertical or horizonal 2`] = `
 `;
 
 exports[`Box insets can be either vertical or horizonal 3`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 <Box
@@ -763,22 +984,54 @@ exports[`Box insets can be either vertical or horizonal 3`] = `
 `;
 
 exports[`Box insets can be equal on all sides 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 <Box
@@ -839,18 +1092,36 @@ exports[`Box insets can be equal on all sides 1`] = `
 `;
 
 exports[`Box insets can handle responsive horizontal and vertical 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width:767px) {
@@ -940,18 +1211,36 @@ exports[`Box insets can handle responsive horizontal and vertical 1`] = `
 `;
 
 exports[`Box insets can handle responsive horizontal and vertical 2`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width:767px) {
@@ -1041,18 +1330,36 @@ exports[`Box insets can handle responsive horizontal and vertical 2`] = `
 `;
 
 exports[`Box insets can handle responsive horizontal and vertical 3`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-.c0 > *:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width:767px) {
@@ -1188,113 +1495,4 @@ exports[`Box renders 1`] = `
 >
   Some content
 </styled.div>
-`;
-
-exports[`Box works 1`] = `
-@media (max-width:767px) {
-  .c0 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (max-width:767px) {
-  .c0 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
-
-@media (min-width:768px) and (max-width:991px) {
-  .c0 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-@media (min-width:992px) {
-  .c0 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
-
-<Box
-  inline={false}
-  tag="div"
-  vertical={
-    Object {
-      "lg": 6,
-      "xs": 8,
-    }
-  }
->
-  <styled.div
-    inline={false}
-    tag="div"
-    vertical={
-      Object {
-        "lg": 6,
-        "xs": 8,
-      }
-    }
-  >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [
-            [Function],
-          ],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              [Function],
-              [Function],
-              [Function],
-              [Function],
-              [Function],
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      inline={false}
-      tag="div"
-      vertical={
-        Object {
-          "lg": 6,
-          "xs": 8,
-        }
-      }
-    >
-      <div
-        className="c0"
-      >
-        Some content
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Box>
 `;

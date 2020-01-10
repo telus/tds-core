@@ -1,20 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputFeedback can have a feedback state 1`] = `
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .c0 {
   border-radius: 4px;
   background-color: #f7f7f8;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 <div
@@ -26,20 +51,45 @@ exports[`InputFeedback can have a feedback state 1`] = `
 `;
 
 exports[`InputFeedback can have a feedback state 2`] = `
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .c0 {
   border-radius: 4px;
   background-color: #f4f9f2;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 <div
@@ -51,20 +101,45 @@ exports[`InputFeedback can have a feedback state 2`] = `
 `;
 
 exports[`InputFeedback renders 1`] = `
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .c0 {
   border-radius: 4px;
   background-color: #f7f7f8;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 <div

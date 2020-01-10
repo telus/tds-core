@@ -17,34 +17,6 @@ exports[`Radio allows numbers as value 1`] = `
   padding-left: 0.1em;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c4 > *:not(:last-child) {
-  margin-right: 1rem;
-}
-
 .c6 {
   height: 1.25rem;
   width: 1.25rem;
@@ -124,6 +96,70 @@ exports[`Radio allows numbers as value 1`] = `
 
 .c8 {
   width: 100%;
+}
+
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 <div
@@ -3579,34 +3615,6 @@ exports[`Radio must have a label 1`] = `
   padding-left: 0.1em;
 }
 
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c1 > *:not(:last-child) {
-  margin-right: 1rem;
-}
-
 .c3 {
   height: 1.25rem;
   width: 1.25rem;
@@ -3680,6 +3688,70 @@ exports[`Radio must have a label 1`] = `
 
 .c5 {
   width: 100%;
+}
+
+@media (max-width:767px) {
+  .c6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c6 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c6 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 <label
@@ -4002,34 +4074,6 @@ exports[`Radio renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c4 > *:not(:last-child) {
-  margin-right: 1rem;
-}
-
 .c6 {
   height: 1.25rem;
   width: 1.25rem;
@@ -4109,6 +4153,70 @@ exports[`Radio renders 1`] = `
 
 .c8 {
   width: 100%;
+}
+
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 <div
