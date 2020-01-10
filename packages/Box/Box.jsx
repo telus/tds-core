@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import { generateResponsiveStyles } from '@tds/util-helpers'
 import { responsiveProps } from '@tds/util-prop-types'
+
+import generateResponsiveStyles from './generateResponsiveStyles'
 
 const spacing = {
   mobile: {
@@ -30,7 +31,7 @@ const spacing = {
   },
 }
 
-const convertToRem = (level, breakpoint) => {
+export const convertToRem = (level, breakpoint) => {
   if (['xs', 'sm'].indexOf(breakpoint) !== -1) {
     return spacing.mobile[level]
   }
@@ -83,10 +84,7 @@ const verticalStyles = props =>
 
     const rem = convertToRem(vertical, breakpoint)
 
-    return {
-      paddingTop: rem,
-      paddingBottom: rem,
-    }
+    return { paddingTop: rem, paddingBottom: rem }
   })
 
 const insetStyles = props =>

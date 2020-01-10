@@ -1189,3 +1189,112 @@ exports[`Box renders 1`] = `
   Some content
 </styled.div>
 `;
+
+exports[`Box works 1`] = `
+@media (max-width:767px) {
+  .c0 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .c0 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+<Box
+  inline={false}
+  tag="div"
+  vertical={
+    Object {
+      "lg": 6,
+      "xs": 8,
+    }
+  }
+>
+  <styled.div
+    inline={false}
+    tag="div"
+    vertical={
+      Object {
+        "lg": 6,
+        "xs": 8,
+      }
+    }
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={false}
+      tag="div"
+      vertical={
+        Object {
+          "lg": 6,
+          "xs": 8,
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        Some content
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Box>
+`;
