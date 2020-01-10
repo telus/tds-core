@@ -68,11 +68,11 @@ export const prepareArray = props => {
   })
 
   // build object
-  if (breakpoints.size === 0) {
+  if ([...breakpoints].length === 0) {
     breakpoints.add('xs')
   }
 
-  const preparedArray = Array.from(breakpoints)
+  const preparedArray = [...breakpoints]
     .map(collectBreakpoints(props))
     .sort(sortBreakpointAsc)
     .map(inheritAndPopulateUntil)
