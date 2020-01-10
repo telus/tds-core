@@ -83,4 +83,26 @@ describe('media', () => {
 
     expect(style).toEqual({ color: 'red' })
   })
+
+  it('handles min-width queries', () => {
+    let style = media
+      .from('xs')
+      .until(undefined)
+      .css({
+        color: 'red',
+      })
+
+    expect(style).toEqual({ color: 'red' })
+
+    style = media
+      .from('md')
+      .until(undefined)
+      .css({
+        color: 'red',
+      })
+
+    expect(style).toEqual({
+      [`@media (min-width: ${breakpoints.md}px)`]: { color: 'red' },
+    })
+  })
 })

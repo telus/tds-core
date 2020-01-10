@@ -8,7 +8,9 @@ export const breakpoints = {
 export default {
   query: {},
   from(breakpoint) {
-    this.query.minWidth = breakpoint
+    if (breakpoint !== 'xs') {
+      this.query.minWidth = breakpoint
+    }
     return this
   },
   until(breakpoint) {
