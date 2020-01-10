@@ -3,18 +3,28 @@ import React from 'react'
 
 import { Cartesian } from '@compositor/kit'
 
-import Strong from '../../../packages/Strong'
+import TermsAndConditions, { FootnoteLink } from '../../../packages/TermsAndConditions'
 
-const CartesianStrong = props => (
-  <Cartesian
-    {...props}
-    component={Strong}
-    block={[false, true]}
-    bold={[false, true]}
-    size={['base', 'small', 'medium', 'large']}
-    invert={[false, true]}
-    children="Taxes and pay-per-use charges are extra."
-  />
+const CartesianTermsAndConditions = props => (
+  <div style={{ width: '25%' }}>
+    <Cartesian {...props} component={TermsAndConditions} />
+  </div>
+)
+const CartesianFootnoteLink = props => (
+  <div style={{ width: '25%' }}>
+    <Cartesian {...props} component={FootnoteLink} />
+  </div>
+)
+const TermsAndConditionsContainer = () => (
+  <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%' }}>
+    <Cartesian component={CartesianTermsAndConditions} copy={['en', 'fr']} />
+    <Cartesian
+      component={CartesianFootnoteLink}
+      copy={['en', 'fr']}
+      number={[1, 2, 3]}
+      onClick={() => {}}
+    />
+  </div>
 )
 
-export default { name: 'TermsAndConditions', Component: CartesianStrong }
+export default { name: 'TermsAndConditions', Component: TermsAndConditionsContainer }
