@@ -65,17 +65,6 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
   padding-left: 0.1em;
 }
 
-.c3 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .c2 {
   border-radius: 4px;
   display: none;
@@ -116,6 +105,52 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
 
 .c1 {
   position: absolute;
+}
+
+@media (max-width:767px) {
+  .c3 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (max-width:575px) {
@@ -754,17 +789,6 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   padding-left: 0.1em;
 }
 
-.c3 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .c2 {
   border-radius: 4px;
   position: absolute;
@@ -804,6 +828,52 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
 
 .c1 {
   position: absolute;
+}
+
+@media (max-width:767px) {
+  .c3 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (max-width:575px) {
@@ -1430,17 +1500,6 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   padding-left: 0.1em;
 }
 
-.c3 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .c2 {
   border-radius: 4px;
   position: absolute;
@@ -1480,6 +1539,52 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
 
 .c1 {
   position: absolute;
+}
+
+@media (max-width:767px) {
+  .c3 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (max-width:575px) {
@@ -2062,17 +2167,6 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
   padding-left: 0.1em;
 }
 
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .c0 {
   border-radius: 4px;
   display: none;
@@ -2102,6 +2196,52 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
 .c2 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (max-width:575px) {
@@ -2258,17 +2398,6 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
   padding-left: 0.1em;
 }
 
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .c0 {
   border-radius: 4px;
   position: absolute;
@@ -2297,6 +2426,52 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
 .c2 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (max-width:575px) {
@@ -2453,17 +2628,6 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
   padding-left: 0.1em;
 }
 
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .c0 {
   border-radius: 4px;
   display: none;
@@ -2493,6 +2657,52 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
 .c2 {
   width: calc(1008px - 1rem - 0.5rem);
   max-width: 100%;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (max-width:575px) {
@@ -2693,17 +2903,6 @@ exports[`Tooltip renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c3 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .c2 {
   border-radius: 4px;
   display: none;
@@ -2744,6 +2943,52 @@ exports[`Tooltip renders 1`] = `
 
 .c1 {
   position: absolute;
+}
+
+@media (max-width:767px) {
+  .c3 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 @media (max-width:575px) {

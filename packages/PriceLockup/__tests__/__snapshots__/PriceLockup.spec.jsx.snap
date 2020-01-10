@@ -1,34 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PriceLockup renders with default props 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 > *:not(:last-child) {
-  margin-bottom: 0.25rem;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c3 > *:not(:last-child) {
-  margin-right: 0.25rem;
-}
-
 .c6 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -75,6 +47,70 @@ exports[`PriceLockup renders with default props 1`] = `
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c3 > *:not(:last-child) {
+    margin-right: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c3 > *:not(:last-child) {
+    margin-right: 0.25rem;
+  }
 }
 
 @media (min-width:768px) {
@@ -145,27 +181,6 @@ exports[`PriceLockup size prop is large renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c4 > *:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c7 {
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -205,6 +220,56 @@ exports[`PriceLockup size prop is large renders 1`] = `
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+}
+
+@media (max-width:767px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 @media (min-width:768px) {
@@ -325,62 +390,6 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 > *:not(:last-child) {
-  margin-bottom: 0.25rem;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 > *:not(:last-child) {
-  margin-right: 0.25rem;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c5 > *:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
 .c9 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -423,6 +432,134 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+}
+
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c6 > *:not(:last-child) {
+    margin-right: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c6 > *:not(:last-child) {
+    margin-right: 0.25rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c5 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c5 > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
 @media (min-width:768px) {
@@ -521,48 +658,6 @@ exports[`PriceLockup size prop is small renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 > *:not(:last-child) {
-  margin-bottom: 0.25rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c5 > *:not(:last-child) {
-  margin-right: 0.25rem;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
 .c8 {
   word-wrap: break-word;
   font-size: 1rem;
@@ -609,6 +704,102 @@ exports[`PriceLockup size prop is small renders 1`] = `
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+}
+
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c5 > *:not(:last-child) {
+    margin-right: 0.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c5 > *:not(:last-child) {
+    margin-right: 0.25rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (min-width:768px) {

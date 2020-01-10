@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<OrderedList /> can have a list style 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
 .c3 {
   margin-left: -1rem;
   padding-left: 1rem;
@@ -53,6 +39,38 @@ exports[`<OrderedList /> can have a list style 1`] = `
   margin-bottom: 0.5rem;
 }
 
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
 <ol
   class="c0 c1 c0 c1 c2"
 >
@@ -78,20 +96,6 @@ exports[`<OrderedList /> can have a list style 1`] = `
 `;
 
 exports[`<OrderedList /> can have a list style 2`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
 .c3 {
   margin-left: -1rem;
   padding-left: 1rem;
@@ -135,6 +139,38 @@ exports[`<OrderedList /> can have a list style 2`] = `
   margin-bottom: 0.5rem;
 }
 
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
 <ol
   class="c0 c1 c0 c1 c2"
 >
@@ -160,20 +196,6 @@ exports[`<OrderedList /> can have a list style 2`] = `
 `;
 
 exports[`<OrderedList /> renders 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
 .c3 {
   margin-left: -1rem;
   padding-left: 1rem;
@@ -210,6 +232,38 @@ exports[`<OrderedList /> renders 1`] = `
 .c1 .c0 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width:767px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 <ol

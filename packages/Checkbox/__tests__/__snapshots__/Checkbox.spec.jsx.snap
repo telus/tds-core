@@ -1,34 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox allows numbers as value 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c4 > *:not(:last-child) {
-  margin-right: 1rem;
-}
-
 .c7 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
@@ -136,6 +108,70 @@ exports[`Checkbox allows numbers as value 1`] = `
 
 .c1:disabled ~ .c3 > div > div {
   color: #d8d8d8;
+}
+
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 <div
@@ -2870,17 +2906,6 @@ Array [
 `;
 
 exports[`Checkbox error can have an error message 3`] = `
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .c0 {
   border-radius: 4px;
   background-color: #fff6f8;
@@ -2908,6 +2933,42 @@ exports[`Checkbox error can have an error message 3`] = `
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 <InputFeedback
@@ -2983,7 +3044,7 @@ exports[`Checkbox error can have an error message 3`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "LKvBy",
+                    "lastClassName": "hZAbV",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -5195,21 +5256,7 @@ Array [
 
 exports[`Checkbox must have a label 1`] = `
 Array [
-  .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0 > *:not(:last-child) {
-  margin-right: 1rem;
-}
-
-.c3 {
+  .c3 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
   font-weight: normal;
@@ -5298,6 +5345,38 @@ Array [
 .c6:disabled ~ .c5 > div > .c1 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 <div
@@ -5606,34 +5685,6 @@ Array [
 `;
 
 exports[`Checkbox renders 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c4 > *:not(:last-child) {
-  margin-right: 1rem;
-}
-
 .c7 {
   font-family: 'TELUS Core Icons';
   display: inline-block;
@@ -5741,6 +5792,70 @@ exports[`Checkbox renders 1`] = `
 
 .c1:disabled ~ .c3 > div > div {
   color: #d8d8d8;
+}
+
+@media (max-width:767px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c4 > *:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 <div
