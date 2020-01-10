@@ -8,17 +8,24 @@ import Tooltip from '../../../packages/Tooltip'
 import InputFeedback from '../../../packages/InputFeedback'
 
 const CartesianTextArea = props => (
-  <Cartesian
-    {...props}
-    component={TextArea}
-    label="Description"
-    hint={[undefined, 'Please describe yourself']}
-    value={[undefined, 'I am me']}
-    feedback={[undefined, 'success', 'error']}
-    error="Default error message"
-    helper={[undefined, () => <InputFeedback>InputFeedback</InputFeedback>]}
-    tooltip={[undefined, <Tooltip copy="en">Sample Tooltip</Tooltip>]}
-  />
+  <div style={{ width: '25%' }}>
+    <Cartesian {...props} component={TextArea} />
+  </div>
 )
 
-export default { name: 'TextArea', Component: CartesianTextArea }
+const TextAreaContainer = () => (
+  <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%' }}>
+    <Cartesian
+      component={CartesianTextArea}
+      label="Description"
+      hint={[undefined, 'Please describe yourself']}
+      value={[undefined, 'I am me']}
+      feedback={[undefined, 'success', 'error']}
+      error="Default error message"
+      helper={[undefined, () => <InputFeedback>InputFeedback</InputFeedback>]}
+      tooltip={[undefined, <Tooltip copy="en">Sample Tooltip</Tooltip>]}
+    />
+  </div>
+)
+
+export default { name: 'TextArea', Component: TextAreaContainer }
