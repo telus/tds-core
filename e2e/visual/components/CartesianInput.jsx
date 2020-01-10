@@ -6,18 +6,31 @@ import { Cartesian } from '@compositor/kit'
 import Input from '../../../packages/Input'
 import Tooltip from '../../../packages/Tooltip'
 
-const CartesianInput = props => (
-  <React.Fragment>
+const InputNormal = props => (
+  <div style={{ width: '25%' }}>
+    <Cartesian {...props} component={Input} />
+  </div>
+)
+const InputError = props => (
+  <div style={{ width: '25%' }}>
+    <Cartesian {...props} component={Input} />
+  </div>
+)
+const InputTooltip = props => (
+  <div style={{ width: '25%' }}>
+    <Cartesian {...props} component={Input} />
+  </div>
+)
+const CartesianInput = () => (
+  <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%' }}>
     <Cartesian
-      {...props}
-      component={Input}
+      component={InputNormal}
       type={['text', 'number', 'password']}
       label="TDS Input"
       tooltip={[undefined, <Tooltip copy="en">Sample Tooltip</Tooltip>]}
     />
     <Cartesian
-      {...props}
-      component={Input}
+      component={InputError}
       type="text"
       label="TDS Feedback Input"
       feedback={[undefined, 'success', 'error']}
@@ -25,8 +38,7 @@ const CartesianInput = props => (
       tooltip={[undefined, <Tooltip copy="en">Sample Tooltip</Tooltip>]}
     />
     <Cartesian
-      {...props}
-      component={Input}
+      component={InputTooltip}
       type="text'"
       label="TDS Hint Input"
       hint="Hint text"
@@ -35,7 +47,7 @@ const CartesianInput = props => (
       error="Error message"
       tooltip={[undefined, <Tooltip copy="en">Sample Tooltip</Tooltip>]}
     />
-  </React.Fragment>
+  </div>
 )
 
 export default { name: 'Input', Component: CartesianInput }
