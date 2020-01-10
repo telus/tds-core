@@ -1,9 +1,7 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import { convertToRem } from '@tds/util-helpers'
-
-import Box from '../Box'
+import Box, { convertToRem } from '../Box'
 import generateResponsiveStyles from '../generateResponsiveStyles'
 
 describe('generateResponsiveStyles', () => {
@@ -23,9 +21,11 @@ describe('generateResponsiveStyles', () => {
   it('works', () => {
     const styles = generateResponsiveStyles(props, styleFn)
     expect(styles).toEqual({
-      paddingTop: '4rem',
-      paddingBottom: '4rem',
-      '@media (min-width: 992px)': {
+      '@media (max-width: 767px)': {
+        paddingTop: '4rem',
+        paddingBottom: '4rem',
+      },
+      '@media (min-width: 768px)': {
         paddingTop: '6rem',
         paddingBottom: '6rem',
       },
