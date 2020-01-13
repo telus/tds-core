@@ -2,9 +2,9 @@ import React from 'react'
 import { shallow, mount } from 'enzyme'
 
 import Box, { convertToRem } from '../Box'
-import generateResponsiveStyles from '../generateResponsiveStyles'
+import handleResponsiveStyle from '../handleResponsiveStyles'
 
-describe('generateResponsiveStyles', () => {
+describe('handleResponsiveStyle', () => {
   const props = {
     vertical: { xs: 8 },
   }
@@ -19,7 +19,7 @@ describe('generateResponsiveStyles', () => {
   }
 
   it('works', () => {
-    const styles = generateResponsiveStyles(props, styleFn)
+    const styles = handleResponsiveStyle(props, styleFn)
     expect(styles).toEqual({
       '@media (max-width: 767px)': {
         paddingTop: '4rem',
