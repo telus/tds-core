@@ -60,19 +60,21 @@ const inheritAndPopulateUntil = (bp, index, src) => {
 export const prepareArray = props => {
   // gather all breakpoints
   const responsivePropNames = getResponsiveProps(props)
-  const breakpoints = new Set()
+  const breakpoints = []
   responsivePropNames.forEach(responsivePropName => {
     Object.keys(props[responsivePropName]).forEach(breakpoint => {
-      breakpoints.add(breakpoint)
+      if (breakpoints.indexOf(breakpoint) === -1) {
+        breakpoints.push(breakpoint)
+      }
     })
   })
 
   // build object
-  if ([...breakpoints].length === 0) {
-    breakpoints.add('xs')
+  if (breakpoints.length === 0) {
+    breakpoints.push('xs')
   }
 
-  const preparedArray = [...breakpoints]
+  const preparedArray = breakpoints
     .map(collectBreakpoints(props))
     .sort(sortBreakpointAsc)
     .map(inheritAndPopulateUntil)
