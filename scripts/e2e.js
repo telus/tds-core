@@ -11,7 +11,8 @@ Usage: npm run test:e2e [component name...] [options] [lerna options]
     [component name...]       space separated list of package names to test
     -a, --all                 test all packages
     -u, --update-screenshots  update baseline images on failure
-    -n, --name                e2e slug name (usually branch name)
+    -n, --name                REQUIRED - e2e slug name (usually branch name)
+    -e, --environment         specify the test environment(s) to use, i.e. "firefox, ie11". Defaults to all environments. Chrome will always run for accessibility tests.
 */
 
 const { spawnSync } = require('child_process')
@@ -28,8 +29,9 @@ getPackageNames(packageNames => {
     process.exit(1)
   }
   const onlyCorePackages = packageNames.filter(name => name.startsWith('@tds/core-')).join(' ')
-
-  const environments = 'chrome,firefox,safari,edge,ie11'
+  const environments = tdsOptions.environment
+    ? `chrome,${tdsOptions.environment}`
+    : 'chrome,firefox,safari,edge,ie11'
 
   const { status } = spawnSync(
     'npx',
