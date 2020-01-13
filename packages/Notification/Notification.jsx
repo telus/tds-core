@@ -35,9 +35,10 @@ const StyledNotificationContainer = styled(({ variant, ...rest }) => <Box {...re
 
 const StyledIconContainer = styled(({ ...rest }) => <Box {...rest} />)({ lineHeight: 0 })
 
-const StyledMessageContainer = styled.div(({ hasIcon }) => ({
+const StyledMessageContainer = styled.div(({ hasIcon, isDismissible }) => ({
   width: hasIcon ? 'calc(100% - 2.5rem)' : '100%',
   marginTop: '0.1rem',
+  marginRight: isDismissible && '1rem',
 }))
 
 const StyledDismissContainer = styled.div({
@@ -47,7 +48,7 @@ const StyledDismissContainer = styled.div({
 const StyledDismissButtonWrapper = styled.div({
   position: 'absolute',
   top: '-0.5rem',
-  right: 0,
+  right: '-0.5rem',
 })
 
 const isImportant = variant => variant === 'success' || variant === 'error' || variant === 'warning'
@@ -118,7 +119,10 @@ class Notification extends React.Component {
                           {renderIcon(variant, copy)}
                         </StyledIconContainer>
                       )}
-                      <StyledMessageContainer hasIcon={isImportant(variant)}>
+                      <StyledMessageContainer
+                        hasIcon={isImportant(variant)}
+                        isDismissible={dismissible}
+                      >
                         <Paragraph>{children}</Paragraph>
                       </StyledMessageContainer>
                     </Box>

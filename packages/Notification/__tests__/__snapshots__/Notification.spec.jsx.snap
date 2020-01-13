@@ -862,6 +862,7 @@ div.c2 {
                                                                                               >
                                                                                                 <Notification__StyledMessageContainer
                                                                                                   hasIcon={false}
+                                                                                                  isDismissible={false}
                                                                                                 >
                                                                                                   <StyledComponent
                                                                                                     forwardedComponent={
@@ -888,6 +889,7 @@ div.c2 {
                                                                                                     }
                                                                                                     forwardedRef={null}
                                                                                                     hasIcon={false}
+                                                                                                    isDismissible={false}
                                                                                                   >
                                                                                                     <div
                                                                                                       className="c7"
@@ -2012,6 +2014,7 @@ div.c2 {
                                                                                                 </Styled(Component)>
                                                                                                 <Notification__StyledMessageContainer
                                                                                                   hasIcon={true}
+                                                                                                  isDismissible={false}
                                                                                                 >
                                                                                                   <StyledComponent
                                                                                                     forwardedComponent={
@@ -2038,6 +2041,7 @@ div.c2 {
                                                                                                     }
                                                                                                     forwardedRef={null}
                                                                                                     hasIcon={true}
+                                                                                                    isDismissible={false}
                                                                                                   >
                                                                                                     <div
                                                                                                       className="c9"
