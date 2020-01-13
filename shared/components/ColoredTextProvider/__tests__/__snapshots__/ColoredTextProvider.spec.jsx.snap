@@ -17,6 +17,24 @@ exports[`ColoredTextProvider allows Link to inherit its color 1`] = `
   text-decoration: none;
 }
 
+.c0 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c0:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c0:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
 .c0:link,
 .c0:visited {
   color: inherit;
