@@ -22,11 +22,11 @@ const handleBoundaryCrossing = (acc, curr) => {
   return acc.concat(curr)
 }
 
-const generateResponsiveStyles = (props, styleFn) => {
+const handleResponsiveStyles = (props, styleFn) => {
   const breakpoints = prepareArray(props)
     .filter(bp => Object.keys(bp.props).length > 0)
     .reduce(handleBoundaryCrossing, [])
   return generateStyles(breakpoints, styleFn)
 }
 
-export default generateResponsiveStyles
+export default handleResponsiveStyles
