@@ -6,7 +6,7 @@ import { Cartesian } from '@compositor/kit'
 import ButtonGroup from '../../../packages/ButtonGroup'
 
 const CartesianButtonGroup = props => (
-  <React.Fragment>
+  <div style={{ transform: 'translateZ(0)' }}>
     <Cartesian
       {...props}
       component={ButtonGroup}
@@ -34,7 +34,7 @@ const CartesianButtonGroup = props => (
         ],
       ]}
     />
-  </React.Fragment>
+  </div>
 )
 
 export default { name: 'ButtonGroup', Component: CartesianButtonGroup }
