@@ -8,7 +8,7 @@ import Tooltip from '../../../packages/Tooltip'
 import InputFeedback from '../../../packages/InputFeedback'
 
 const CartesianTextArea = props => (
-  <div style={{ width: '25%' }}>
+  <div style={{ width: '7%', transform: 'scale(0.75)' }}>
     <Cartesian {...props} component={TextArea} />
   </div>
 )
