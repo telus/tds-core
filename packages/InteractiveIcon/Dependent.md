@@ -2,11 +2,11 @@
 
 ### Usage criteria
 
-These icons indicate interactivity but not themselves function as independent interactive components. They depend on the Link component.
+These icons indicate interactivity but not themselves function as independent interactive components. They depend on the [Link](#link) component.
 
 - Should depend on other interactive components with a visible label as part of the wrapper component
-- Must include accessible using `A11yContent` when label does not explicitly indicate use or action
-- Be mindful of using `A11yContent` appropriately as it may appear before or after the label
+- Must include accessible hidden text using `A11yContent` when label does not explicitly indicate use or action
+  - Be mindful of using `A11yContent` appropriately as it may appear before or after the label
 - Must not be used in headings
 - Must not be used as an independent interactive component or render as independent SVG
 
