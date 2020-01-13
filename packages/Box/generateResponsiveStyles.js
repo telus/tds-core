@@ -17,9 +17,9 @@ const handleBoundaryCrossing = (acc, curr) => {
     mobileBreakpoint.until = 'md'
     desktopBreakpoint.from = 'md'
 
-    return [...acc, mobileBreakpoint, desktopBreakpoint]
+    return acc.concat(mobileBreakpoint, desktopBreakpoint)
   }
-  return [...acc, curr]
+  return acc.concat(curr)
 }
 
 const generateResponsiveStyles = (props, styleFn) => {
