@@ -1,6 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<UnorderedList /> can have a list style 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .c3 {
   position: relative;
   line-height: 1.5;
@@ -40,38 +54,6 @@ exports[`<UnorderedList /> can have a list style 1`] = `
 
 .c1 :last-child .c0 {
   margin-bottom: 0;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
 }
 
 <UnorderedList
@@ -268,6 +250,20 @@ exports[`<UnorderedList /> can have a list style 1`] = `
 `;
 
 exports[`<UnorderedList /> can have a list style 2`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .c3 {
   position: relative;
   line-height: 1.5;
@@ -303,38 +299,6 @@ exports[`<UnorderedList /> can have a list style 2`] = `
 
 .c1 :last-child .c0 {
   margin-bottom: 0;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
 }
 
 <UnorderedList
@@ -531,6 +495,20 @@ exports[`<UnorderedList /> can have a list style 2`] = `
 `;
 
 exports[`<UnorderedList /> renders 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .c3 {
   position: relative;
   line-height: 1.5;
@@ -570,38 +548,6 @@ exports[`<UnorderedList /> renders 1`] = `
 
 .c1 :last-child .c0 {
   margin-bottom: 0;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
 }
 
 <ul
