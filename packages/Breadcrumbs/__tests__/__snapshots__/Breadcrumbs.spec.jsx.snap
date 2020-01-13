@@ -17,6 +17,24 @@ exports[`Breadcrumbs with children renders 1`] = `
   text-decoration: none;
 }
 
+.c2 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c2:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
 .c2:link,
 .c2:visited {
   color: inherit;
@@ -267,6 +285,15 @@ exports[`Breadcrumbs with children renders 1`] = `
                                       "}",
                                       "& svg {",
                                       "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
                                       [Function],
                                       [Function],
                                       [Function],
@@ -443,6 +470,15 @@ exports[`Breadcrumbs with children renders 1`] = `
                                       "text-decoration: none;",
                                       "}",
                                       "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
                                       "}",
                                       [Function],
                                       [Function],
@@ -703,6 +739,24 @@ exports[`Breadcrumbs with routes renders 1`] = `
 .c2:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c2 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c2:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
 }
 
 .c2:link,
@@ -970,6 +1024,15 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                       "}",
                                       "& svg {",
                                       "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
                                       [Function],
                                       [Function],
                                       [Function],
@@ -1146,6 +1209,15 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                       "text-decoration: none;",
                                       "}",
                                       "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
                                       "}",
                                       [Function],
                                       [Function],
