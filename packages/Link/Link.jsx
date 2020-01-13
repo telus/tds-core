@@ -44,6 +44,17 @@ const states = ({ invert }) => {
 }
 const StyledLink = styled.a(
   base,
+  {
+    '& svg': {
+      transition: 'transform 150ms ease-in-out',
+    },
+    '&:hover svg': {
+      transform: 'scale(1.1, 1.1)',
+    },
+    '&:active svg': {
+      transform: 'scale(1, 1)',
+    },
+  },
   ({ invert, context }) => {
     if (context.inheritColor) {
       return {
