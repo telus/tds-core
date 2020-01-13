@@ -18,6 +18,24 @@ Object {
   text-decoration: none;
 }
 
+.c0 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c0:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c0:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
 .c0:active {
   background-color: #d8d8d8;
   border-radius: 0.25rem;
@@ -56,6 +74,24 @@ Object {
 .c0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c0 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c0:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c0:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
 }
 
 .c0:active {
@@ -122,6 +158,15 @@ Object {
                   "}",
                   "& svg {",
                   "}",
+                  "& svg {",
+                  "transition: transform 150ms ease-in-out;",
+                  "}",
+                  "&:hover svg {",
+                  "transform: scale(1.1, 1.1);",
+                  "}",
+                  "&:active svg {",
+                  "transform: scale(1, 1);",
+                  "}",
                   [Function],
                   [Function],
                   [Function],
@@ -174,6 +219,24 @@ Object {
   text-decoration: none;
 }
 
+.c0 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c0:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c0:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
 .c0:link,
 .c0:visited {
   color: #fff;
@@ -218,6 +281,24 @@ Object {
 .c0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c0 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c0:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c0:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
 }
 
 .c0:link,
@@ -293,6 +374,15 @@ Object {
                   "text-decoration: none;",
                   "}",
                   "& svg {",
+                  "}",
+                  "& svg {",
+                  "transition: transform 150ms ease-in-out;",
+                  "}",
+                  "&:hover svg {",
+                  "transform: scale(1.1, 1.1);",
+                  "}",
+                  "&:active svg {",
+                  "transform: scale(1, 1);",
                   "}",
                   [Function],
                   [Function],
