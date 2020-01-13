@@ -44,6 +44,29 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
   content: '\\f105';
 }
 
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .c0 {
   padding: 0;
   margin: 0;
@@ -104,70 +127,6 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
   .c3 {
     -webkit-transition: none !important;
     transition: none !important;
-  }
-}
-
-@media (max-width:767px) {
-  .c1 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (max-width:767px) {
-  .c1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-right: 1rem;
   }
 }
 
@@ -247,7 +206,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "fQDZrI",
+                  "lastClassName": "dBqVkr",
                   "rules": Array [
                     [Function],
                     [Function],
@@ -295,7 +254,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "fQDZrI",
+                          "lastClassName": "dBqVkr",
                           "rules": Array [
                             [Function],
                             [Function],
@@ -767,6 +726,29 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   content: '\\f105';
 }
 
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .c0 {
   padding: 0;
   margin: 0;
@@ -836,70 +818,6 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   }
 }
 
-@media (max-width:767px) {
-  .c1 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (max-width:767px) {
-  .c1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c2 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
 <button
   aria-expanded={false}
   className="c0"
@@ -928,7 +846,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
             "componentStyle": ComponentStyle {
               "componentId": "sc-bdVaJa",
               "isStatic": false,
-              "lastClassName": "fQDZrI",
+              "lastClassName": "dBqVkr",
               "rules": Array [
                 [Function],
                 [Function],
@@ -976,7 +894,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-bdVaJa",
                       "isStatic": false,
-                      "lastClassName": "fQDZrI",
+                      "lastClassName": "dBqVkr",
                       "rules": Array [
                         [Function],
                         [Function],
@@ -1477,6 +1395,36 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   background-color: #d8d8d8;
 }
 
+.c3 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c13 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c12 {
   padding: 0;
   margin: 0;
@@ -1556,88 +1504,6 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   .c11 {
     -webkit-transition: none !important;
     transition: none !important;
-  }
-}
-
-@media (max-width:767px) {
-  .c3 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (max-width:767px) {
-  .c3 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c4 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c4 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c4 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c13 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
   }
 }
 
@@ -2704,6 +2570,36 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   background-color: #d8d8d8;
 }
 
+.c3 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c13 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c12 {
   padding: 0;
   margin: 0;
@@ -2783,88 +2679,6 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   .c11 {
     -webkit-transition: none !important;
     transition: none !important;
-  }
-}
-
-@media (max-width:767px) {
-  .c3 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (max-width:767px) {
-  .c3 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c4 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c4 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c4 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c13 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
-    display: block;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
   }
 }
 

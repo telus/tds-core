@@ -17,6 +17,34 @@ exports[`BenefitNoHeading renders with icons set in each item 1`] = `
   height: 1.5rem;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .c3 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -35,70 +63,6 @@ exports[`BenefitNoHeading renders with icons set in each item 1`] = `
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
-}
-
-@media (max-width:767px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c1 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c1 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
 }
 
 <ul
@@ -175,6 +139,34 @@ exports[`BenefitNoHeading renders with one icon set in the parent 1`] = `
   height: 1.5rem;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .c3 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -193,70 +185,6 @@ exports[`BenefitNoHeading renders with one icon set in the parent 1`] = `
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
-}
-
-@media (max-width:767px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .c0 > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c1 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .c1 > *:not(:last-child) {
-    margin-right: 1rem;
-  }
 }
 
 <ul
