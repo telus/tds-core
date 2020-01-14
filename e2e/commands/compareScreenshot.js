@@ -39,7 +39,7 @@ exports.command = function compareScreenshot(componentName, browserName, browser
   this.pause(1000)
 
   takeScreenshot(resultScreenshotPath, this, rootSelector, () => {
-    this.verify.compareScreenshot(componentName, fileName)
+    this.verify.compareScreenshot(componentName, fileName, this.currentTest.results.retries)
   })
 
   return this

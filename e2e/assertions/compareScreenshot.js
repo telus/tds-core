@@ -25,7 +25,8 @@ const update = (baselinePath, resultPath, callback, data) => {
   }
 }
 
-exports.assertion = function(componentName, fileName) {
+exports.assertion = function(componentName, fileName, retries) {
+  this.retries = retries
   const folders = getVisualRegressionFolders(componentName)
 
   const baselinePath = path.join(folders.baseline, fileName)
@@ -52,7 +53,11 @@ exports.assertion = function(componentName, fileName) {
     resemble(baselinePath)
       .compareTo(resultPath)
       .onComplete(data => {
-        if (Number(data.misMatchPercentage) > tolerance && updateAllScreenshots) {
+        if (
+          Number(data.misMatchPercentage) > tolerance &&
+          updateAllScreenshots &&
+          this.retries === 3
+        ) {
           update(baselinePath, resultPath, callback, data)
         } else {
           callback(data)
@@ -71,12 +76,11 @@ exports.assertion = function(componentName, fileName) {
 
   this.pass = function pass(value) {
     let pass = value <= this.expected
-
     if (!updateAllScreenshots || pass) {
       this.message = `Screenshots ${
         pass ? 'Matched' : 'Match Failed'
       } for ${fileName} with a tolerance of ${this.expected}%, actual was ${value}%.`
-    } else if (updateAllScreenshots) {
+    } else if (updateAllScreenshots && this.retries === 3) {
       this.message = 'Initial screenshot match failed, but baseline screenshot was updated.'
       pass = true
     }
