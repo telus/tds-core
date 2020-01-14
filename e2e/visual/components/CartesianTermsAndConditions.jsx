@@ -16,7 +16,7 @@ const CartesianFootnoteLink = props => (
   </div>
 )
 const TermsAndConditionsContainer = () => (
-  <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%' }}>
+  <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%', transform: 'translateZ(0)' }}>
     <Cartesian component={CartesianTermsAndConditions} copy={['en', 'fr']} />
     <Cartesian
       component={CartesianFootnoteLink}
