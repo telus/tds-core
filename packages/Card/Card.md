@@ -171,7 +171,7 @@ _Narrow_ cards have Box 4 spacing on top/bottom and Box 3 on left/right. This ca
 
 <img src="card/card-padding-narrow.png" alt="card padding narrow" style="max-width: 100%" />
 
-Cards with even padding around them are used in internal applications or pages to help with categorizing items and de-emphasize in terms of visual hierarchy.
+**Cards with even padding around them are used in internal applications or pages to help with categorizing items and de-emphasize in terms of visual hierarchy.**
 
 _Compact_ cards have Box 3 padding all around it.
 
