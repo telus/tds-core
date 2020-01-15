@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-key, react/no-children-prop */
+/* eslint-disable react/jsx-key, react/no-children-prop react/prop-types */
 import React from 'react'
 import styled from 'styled-components'
 
@@ -16,9 +16,20 @@ const StyledIconContainer = styled(StyledContainer)({
   width: 'auto',
 })
 
+const CartesianDependentIcon = props => (
+  <Cartesian
+    {...props}
+    component={Link}
+    href="http://tds.telus.com"
+    invert={[true, false]}
+    icon={props.icon}
+    children="TELUS Design System"
+  />
+)
+
 const CartesianInteractiveIcon = props => (
-  <React.Fragment>
-    <React.Fragment>
+  <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%' }}>
+    <div style={{ width: '50%' }}>
       {Object.keys(icons)
         .filter(icon => icon !== 'default')
         .map(icon => (
@@ -33,23 +44,30 @@ const CartesianInteractiveIcon = props => (
             numItems={2}
           />
         ))}
-    </React.Fragment>
-    <React.Fragment>
+    </div>
+    <div style={{ width: '25%' }}>
       {Object.keys(dependentIcons)
         .filter(dependentIcon => dependentIcon !== 'default')
         .map(dependentIcon => (
-          <Cartesian
-            {...props}
-            component={Link}
-            href="http://tds.telus.com"
-            invert={[true, false]}
-            children="TELUS Design System"
+          <CartesianDependentIcon
             icon={dependentIcons[dependentIcon]}
-            iconPosition={['left', 'right']}
+            iconPosition="left"
+            {...props}
           />
         ))}
-    </React.Fragment>
-  </React.Fragment>
+    </div>
+    <div style={{ width: '25%' }}>
+      {Object.keys(dependentIcons)
+        .filter(dependentIcon => dependentIcon !== 'default')
+        .map(dependentIcon => (
+          <CartesianDependentIcon
+            iconPosition="right"
+            icon={dependentIcons[dependentIcon]}
+            {...props}
+          />
+        ))}
+    </div>
+  </div>
 )
 
 export default { name: 'InteractiveIcon', Component: CartesianInteractiveIcon }
