@@ -53,18 +53,26 @@ export const StyledCard = styled(({ fullHeight, ...props }) => <Box {...props} /
  *
  * @version ./package.json
  */
-const Card = ({ variant, children, fullHeight, ...rest }) => {
+const Card = ({ variant, children, fullHeight, spacing, ...rest }) => {
   if (variant === 'white' || variant === 'lavendar' || variant === 'grey') {
     deprecate('@tds/core-card', deprecationWarning(variant))
   }
+
+  const spacingProps = {}
+  if (spacing === 'default') {
+    spacingProps.vertical = 5
+    spacingProps.horizontal = 4
+  } else if (spacing === 'narrow') {
+    spacingProps.vertical = 4
+    spacingProps.horizontal = 3
+  } else if (spacing === 'compact') {
+    spacingProps.inset = 3
+  } else if (spacing === 'intermediate') {
+    spacingProps.inset = 4
+  }
+
   return (
-    <StyledCard
-      {...safeRest(rest)}
-      horizontal={4}
-      vertical={5}
-      fullHeight={fullHeight}
-      variant={variant}
-    >
+    <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant} {...spacingProps}>
       {children}
     </StyledCard>
   )
@@ -95,11 +103,13 @@ Card.propTypes = {
    * Sets the `Card`'s `height` equal to its parent.
    */
   fullHeight: PropTypes.bool,
+  spacing: PropTypes.oneOf(['default', 'narrow', 'compact', 'intermediate']),
 }
 
 Card.defaultProps = {
   variant: 'default',
   fullHeight: false,
+  spacing: 'default',
 }
 
 export default Card

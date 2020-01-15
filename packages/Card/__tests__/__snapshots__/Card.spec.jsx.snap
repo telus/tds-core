@@ -35,6 +35,7 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 
 <Card
   fullHeight={false}
+  spacing="default"
   variant="default"
 >
   <Styled(Component)
@@ -185,6 +186,7 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 
 <Card
   fullHeight={false}
+  spacing="default"
   variant="default"
 >
   <Styled(Component)
@@ -334,6 +336,7 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
 
 <Card
   fullHeight={false}
+  spacing="default"
   variant="branded"
 >
   <Styled(Component)
@@ -483,6 +486,7 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
 
 <Card
   fullHeight={false}
+  spacing="default"
   variant="alternative"
 >
   <Styled(Component)
@@ -634,6 +638,7 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
 
 <Card
   fullHeight={false}
+  spacing="default"
   variant="defaultWithBorder"
 >
   <Styled(Component)
@@ -787,4 +792,570 @@ exports[`<Card /> renders 1`] = `
 >
   Children
 </div>
+`;
+
+exports[`<Card /> spacing renders compact spacing 1`] = `
+.c1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+<Card
+  fullHeight={false}
+  spacing="compact"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    inset={3}
+    variant="default"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border-width: 0;",
+              "border-radius: 4px;",
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullHeight={false}
+      inset={3}
+      variant="default"
+    >
+      <Component
+        className="c0"
+        fullHeight={false}
+        inset={3}
+        variant="default"
+      >
+        <Box
+          className="c0"
+          inline={false}
+          inset={3}
+          tag="div"
+          variant="default"
+        >
+          <styled.div
+            className="c0"
+            inline={false}
+            inset={3}
+            tag="div"
+            variant="default"
+          >
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={false}
+              inset={3}
+              tag="div"
+              variant="default"
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                Some content
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> spacing renders default spacing 1`] = `
+.c1 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+<Card
+  fullHeight={false}
+  spacing="default"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={4}
+    variant="default"
+    vertical={5}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border-width: 0;",
+              "border-radius: 4px;",
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullHeight={false}
+      horizontal={4}
+      variant="default"
+      vertical={5}
+    >
+      <Component
+        className="c0"
+        fullHeight={false}
+        horizontal={4}
+        variant="default"
+        vertical={5}
+      >
+        <Box
+          className="c0"
+          horizontal={4}
+          inline={false}
+          tag="div"
+          variant="default"
+          vertical={5}
+        >
+          <styled.div
+            className="c0"
+            horizontal={4}
+            inline={false}
+            tag="div"
+            variant="default"
+            vertical={5}
+          >
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              horizontal={4}
+              inline={false}
+              tag="div"
+              variant="default"
+              vertical={5}
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                Some content
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> spacing renders intermediate spacing 1`] = `
+.c1 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+<Card
+  fullHeight={false}
+  spacing="intermediate"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    inset={4}
+    variant="default"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border-width: 0;",
+              "border-radius: 4px;",
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullHeight={false}
+      inset={4}
+      variant="default"
+    >
+      <Component
+        className="c0"
+        fullHeight={false}
+        inset={4}
+        variant="default"
+      >
+        <Box
+          className="c0"
+          inline={false}
+          inset={4}
+          tag="div"
+          variant="default"
+        >
+          <styled.div
+            className="c0"
+            inline={false}
+            inset={4}
+            tag="div"
+            variant="default"
+          >
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={false}
+              inset={4}
+              tag="div"
+              variant="default"
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                Some content
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Card>
+`;
+
+exports[`<Card /> spacing renders narrow spacing 1`] = `
+.c1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+<Card
+  fullHeight={false}
+  spacing="narrow"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    horizontal={3}
+    variant="default"
+    vertical={4}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border-width: 0;",
+              "border-radius: 4px;",
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullHeight={false}
+      horizontal={3}
+      variant="default"
+      vertical={4}
+    >
+      <Component
+        className="c0"
+        fullHeight={false}
+        horizontal={3}
+        variant="default"
+        vertical={4}
+      >
+        <Box
+          className="c0"
+          horizontal={3}
+          inline={false}
+          tag="div"
+          variant="default"
+          vertical={4}
+        >
+          <styled.div
+            className="c0"
+            horizontal={3}
+            inline={false}
+            tag="div"
+            variant="default"
+            vertical={4}
+          >
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              horizontal={3}
+              inline={false}
+              tag="div"
+              variant="default"
+              vertical={4}
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                Some content
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Card>
 `;

@@ -49,4 +49,26 @@ describe('<Card />', () => {
     expect(card).not.toHaveProp('className', 'my-custom-class')
     expect(card).not.toHaveProp('style')
   })
+
+  describe('spacing', () => {
+    it('renders default spacing', () => {
+      const card = doMount({ spacing: 'default' })
+      expect(card).toMatchSnapshot()
+    })
+
+    it('renders narrow spacing', () => {
+      const card = doMount({ spacing: 'narrow' })
+      expect(card).toMatchSnapshot()
+    })
+
+    it('renders compact spacing', () => {
+      const card = doMount({ spacing: 'compact' })
+      expect(card).toMatchSnapshot()
+    })
+
+    it('renders intermediate spacing', () => {
+      const card = doMount({ spacing: 'intermediate' })
+      expect(card).toMatchSnapshot()
+    })
+  })
 })

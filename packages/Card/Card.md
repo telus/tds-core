@@ -159,3 +159,24 @@ In some cases you want cards to match the height of their parent so that the bot
   </FlexGrid.Row>
 </FlexGrid>
 ```
+
+### Card Padding
+
+By _Default_, cards have Box 5 spacing on top/bottom and Box 4 on left/right. They are used for marketing pages to call out or break information.
+
+<img src="card/card-padding-default-highlighted.png" alt="card padding default with highlights" style="max-width: 100%" />
+<img src="card/card-padding-default.png" alt="card padding default" style="max-width: 100%" />
+
+_Narrow_ cards have Box 4 spacing on top/bottom and Box 3 on left/right. This card is used when presenting plans to a customer.
+
+<img src="card/card-padding-narrow.png" alt="card padding narrow" style="max-width: 100%" />
+
+Cards with even padding around them are used in internal applications or pages to help with categorizing items and de-emphasize in terms of visual hierarchy.
+
+_Compact_ cards have Box 3 padding all around it.
+
+<img src="card/card-padding-compact.png" alt="card padding compact" style="max-width: 100%" />
+
+_Intermediate_ cards have Box 4 padding all around it.
+
+<img src="card/card-padding-intermediate.png" alt="card padding intermediate" style="max-width: 100%" />
