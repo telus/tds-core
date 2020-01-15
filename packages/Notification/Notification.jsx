@@ -38,7 +38,7 @@ const StyledIconContainer = styled(({ ...rest }) => <Box {...rest} />)({ lineHei
 const StyledMessageContainer = styled.div(({ hasIcon, isDismissible }) => ({
   width: hasIcon ? 'calc(100% - 2.5rem)' : '100%',
   marginTop: '0.1rem',
-  marginRight: isDismissible && '1rem',
+  paddingRight: isDismissible && '1rem',
 }))
 
 const StyledDismissContainer = styled.div({
