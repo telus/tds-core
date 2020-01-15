@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telusdigital/tds/compare/@tds/core-card@2.2.0...@tds/core-card@2.3.0) (2020-01-15)
+
+
+### Features
+
+* **core-card:** add spacing prop ([bb212c9](https://github.com/telusdigital/tds/commit/bb212c9)), closes [#998](https://github.com/telusdigital/tds/issues/998)
+
+
+
+
+
 # [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-card@2.1.3...@tds/core-card@2.2.0) (2019-11-04)
 
 
