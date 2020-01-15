@@ -34,14 +34,11 @@
 
 - [Git](https://git-scm.com/)
 - [Node.JS](https://nodejs.org) v8
-- [Docker and Docker Compose](https://www.docker.com/get-started)
 
 To get started, clone [the TDS repository](https://github.com/telusdigital/tds-core) and create your branch from master.
 TELUS Digital developers and partners can push branches to the repository directly. If you do not have write access, you may create a fork instead.
 
 GitHub has primers on [how to fork a repository](https://help.github.com/articles/fork-a-repo/) and [how to clone a repository](https://help.github.com/articles/cloning-a-repository/).
-
-Before getting started, you should also install [Docker](https://github.com/telus/reference-architecture/blob/master/delivery/docker.md). This facilitates our e2e tests to ensure they are tested in a reproducible environment, and having all tests pass is essential to a successful TDS contribution. If Docker is not installed, the following steps will not complete successfully.
 
 #### Codebase
 
@@ -50,18 +47,14 @@ After setting up TDS locally, the following steps will get you started:
 ```bash
 # Bootstrap your dev environment
 # This will install node and Gitbook dependencies,
-# set up symlinks for lerna, build components for tests,
-# and build docker containers
+# set up symlinks for lerna, and build components for tests
 npm run bootstrap
 
-# If pulling in changes on an outdated repository, or after rebasing,
-# we recommend bootstrapping again. This will install node dependencies,
-# set up symlinks for lerna, and build components for tests
-npm run bootstrap:quick
+# If the branch's package-lock.json requires an update, please run this command to bootstrap using `npm i`.
+npm run bootstrap:install
 ```
 
-**Note**: these commands also run `npm install`, which may create changes in **package-lock.json**. Please commit any changes
-to the lockfile using the `deps` scope. For instance:
+**Note**: Please commit any changes to the lockfile using the `deps` scope. For instance:
 
 ```text
 chore(deps): update lockfile
@@ -345,19 +338,20 @@ npm run test -- [opts]
 ### e2e tests
 
 Nightwatch e2e tests are run to ensure that no unexpected visual regressions were made to a component. These tests
-are run automatically on all components with no test writing required on the developer's part.
+are run automatically via GitHub Actions on all components with no test writing required on the developer's part. Currently, cartesian components are uploaded to an S3 bucket, which is then tested against via Saucelabs.
+
+Updating screenshots currently requires a token. Please contact the TDS team if your contribution needs its screenshots updated for next steps.
 
 ```bash
 # Manually run visual regression tests on modified components
 npm run test:e2e -- [opts]
 
 # Options:
-# -a: Run tests on all components regardless of if they were recently modified.
-# -u: Update test screenshots. (Useful if the component was purposefully changed visually)
+# -a, --all                 Run tests on all components regardless of if they were recently modified.
+# -u, --update-screenshots  Update test screenshots. (Useful if the component was purposefully changed visually)
+# -n, --name                REQUIRED - e2e slug name (usually branch name) This will point the script to the directory in the S3 bucket that it will be tested against. In most cases, this is the exact name of the branch.
+# -e, --environment         specify the test environment(s) to use, i.e. "firefox, ie11". Defaults to all environments. Chrome will always run for accessibility tests.
 ```
-
-**Note**: after running the above command, a docker container will be running the component catalogue (built with React Styleguidist).
-To stop the container, gather the container's `id` by running `docker ps`, and then stop the container using `docker stop [id]`.
 
 ### Documentation
 
