@@ -37,7 +37,7 @@ div.c2 {
   padding: 0;
 }
 
-.c8 {
+.c7 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -53,7 +53,7 @@ div.c2 {
   text-align: left;
 }
 
-.c8 sup {
+.c7 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -87,11 +87,6 @@ div.c2 {
 .c0 {
   position: relative;
   background-color: #f7f7f8;
-}
-
-.c7 {
-  width: 100%;
-  margin-top: 0.1rem;
 }
 
 @media (max-width:575px) {
@@ -860,107 +855,142 @@ div.c2 {
                                                                                               <div
                                                                                                 className="c6"
                                                                                               >
-                                                                                                <Notification__StyledMessageContainer
-                                                                                                  hasIcon={false}
-                                                                                                  isDismissible={false}
+                                                                                                <Box
+                                                                                                  between={3}
+                                                                                                  inline={true}
+                                                                                                  style={
+                                                                                                    Object {
+                                                                                                      "justifyContent": "center",
+                                                                                                    }
+                                                                                                  }
+                                                                                                  tag="div"
                                                                                                 >
-                                                                                                  <StyledComponent
-                                                                                                    forwardedComponent={
+                                                                                                  <styled.div
+                                                                                                    between={3}
+                                                                                                    inline={true}
+                                                                                                    style={
                                                                                                       Object {
-                                                                                                        "$$typeof": Symbol(react.forward_ref),
-                                                                                                        "attrs": Array [],
-                                                                                                        "componentStyle": ComponentStyle {
-                                                                                                          "componentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
-                                                                                                          "isStatic": false,
-                                                                                                          "lastClassName": "c7",
-                                                                                                          "rules": Array [
-                                                                                                            [Function],
-                                                                                                          ],
-                                                                                                        },
-                                                                                                        "displayName": "Notification__StyledMessageContainer",
-                                                                                                        "foldedComponentIds": Array [],
-                                                                                                        "render": [Function],
-                                                                                                        "styledComponentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
-                                                                                                        "target": "div",
-                                                                                                        "toString": [Function],
-                                                                                                        "warnTooManyClasses": [Function],
-                                                                                                        "withComponent": [Function],
+                                                                                                        "justifyContent": "center",
                                                                                                       }
                                                                                                     }
-                                                                                                    forwardedRef={null}
-                                                                                                    hasIcon={false}
-                                                                                                    isDismissible={false}
+                                                                                                    tag="div"
                                                                                                   >
-                                                                                                    <div
-                                                                                                      className="c7"
+                                                                                                    <StyledComponent
+                                                                                                      between={3}
+                                                                                                      forwardedComponent={
+                                                                                                        Object {
+                                                                                                          "$$typeof": Symbol(react.forward_ref),
+                                                                                                          "attrs": Array [
+                                                                                                            [Function],
+                                                                                                          ],
+                                                                                                          "componentStyle": ComponentStyle {
+                                                                                                            "componentId": "sc-htoDjs",
+                                                                                                            "isStatic": false,
+                                                                                                            "lastClassName": "c6",
+                                                                                                            "rules": Array [
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                            ],
+                                                                                                          },
+                                                                                                          "displayName": "styled.div",
+                                                                                                          "foldedComponentIds": Array [],
+                                                                                                          "render": [Function],
+                                                                                                          "styledComponentId": "sc-htoDjs",
+                                                                                                          "target": "div",
+                                                                                                          "toString": [Function],
+                                                                                                          "warnTooManyClasses": [Function],
+                                                                                                          "withComponent": [Function],
+                                                                                                        }
+                                                                                                      }
+                                                                                                      forwardedRef={null}
+                                                                                                      inline={true}
+                                                                                                      style={
+                                                                                                        Object {
+                                                                                                          "justifyContent": "center",
+                                                                                                        }
+                                                                                                      }
+                                                                                                      tag="div"
                                                                                                     >
-                                                                                                      <Paragraph
-                                                                                                        align="left"
-                                                                                                        bold={false}
-                                                                                                        invert={false}
-                                                                                                        size="medium"
+                                                                                                      <div
+                                                                                                        className="c6"
+                                                                                                        style={
+                                                                                                          Object {
+                                                                                                            "justifyContent": "center",
+                                                                                                          }
+                                                                                                        }
                                                                                                       >
-                                                                                                        <Paragraph__StyledParagraph
+                                                                                                        <Paragraph
                                                                                                           align="left"
                                                                                                           bold={false}
                                                                                                           invert={false}
                                                                                                           size="medium"
                                                                                                         >
-                                                                                                          <StyledComponent
+                                                                                                          <Paragraph__StyledParagraph
                                                                                                             align="left"
                                                                                                             bold={false}
-                                                                                                            forwardedComponent={
-                                                                                                              Object {
-                                                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                                                "attrs": Array [],
-                                                                                                                "componentStyle": ComponentStyle {
-                                                                                                                  "componentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                                                                  "isStatic": false,
-                                                                                                                  "lastClassName": "c8",
-                                                                                                                  "rules": Array [
-                                                                                                                    [Function],
-                                                                                                                    "word-wrap: break-word;",
-                                                                                                                    "padding: 0;",
-                                                                                                                    "margin: 0;",
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    "sup {",
-                                                                                                                    "top: -0.5em;",
-                                                                                                                    "font-size: 0.875rem;",
-                                                                                                                    "position: relative;",
-                                                                                                                    "vertical-align: baseline;",
-                                                                                                                    "padding-left: 0.1em;",
-                                                                                                                    "}",
-                                                                                                                  ],
-                                                                                                                },
-                                                                                                                "displayName": "Paragraph__StyledParagraph",
-                                                                                                                "foldedComponentIds": Array [],
-                                                                                                                "render": [Function],
-                                                                                                                "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                                                                "target": "p",
-                                                                                                                "toString": [Function],
-                                                                                                                "warnTooManyClasses": [Function],
-                                                                                                                "withComponent": [Function],
-                                                                                                              }
-                                                                                                            }
-                                                                                                            forwardedRef={null}
                                                                                                             invert={false}
                                                                                                             size="medium"
                                                                                                           >
-                                                                                                            <p
-                                                                                                              className="c8"
+                                                                                                            <StyledComponent
+                                                                                                              align="left"
+                                                                                                              bold={false}
+                                                                                                              forwardedComponent={
+                                                                                                                Object {
+                                                                                                                  "$$typeof": Symbol(react.forward_ref),
+                                                                                                                  "attrs": Array [],
+                                                                                                                  "componentStyle": ComponentStyle {
+                                                                                                                    "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                                                    "isStatic": false,
+                                                                                                                    "lastClassName": "c7",
+                                                                                                                    "rules": Array [
+                                                                                                                      [Function],
+                                                                                                                      "word-wrap: break-word;",
+                                                                                                                      "padding: 0;",
+                                                                                                                      "margin: 0;",
+                                                                                                                      [Function],
+                                                                                                                      [Function],
+                                                                                                                      [Function],
+                                                                                                                      [Function],
+                                                                                                                      "sup {",
+                                                                                                                      "top: -0.5em;",
+                                                                                                                      "font-size: 0.875rem;",
+                                                                                                                      "position: relative;",
+                                                                                                                      "vertical-align: baseline;",
+                                                                                                                      "padding-left: 0.1em;",
+                                                                                                                      "}",
+                                                                                                                    ],
+                                                                                                                  },
+                                                                                                                  "displayName": "Paragraph__StyledParagraph",
+                                                                                                                  "foldedComponentIds": Array [],
+                                                                                                                  "render": [Function],
+                                                                                                                  "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                                                  "target": "p",
+                                                                                                                  "toString": [Function],
+                                                                                                                  "warnTooManyClasses": [Function],
+                                                                                                                  "withComponent": [Function],
+                                                                                                                }
+                                                                                                              }
+                                                                                                              forwardedRef={null}
+                                                                                                              invert={false}
                                                                                                               size="medium"
                                                                                                             >
-                                                                                                              Some content
-                                                                                                            </p>
-                                                                                                          </StyledComponent>
-                                                                                                        </Paragraph__StyledParagraph>
-                                                                                                      </Paragraph>
-                                                                                                    </div>
-                                                                                                  </StyledComponent>
-                                                                                                </Notification__StyledMessageContainer>
+                                                                                                              <p
+                                                                                                                className="c7"
+                                                                                                                size="medium"
+                                                                                                              >
+                                                                                                                Some content
+                                                                                                              </p>
+                                                                                                            </StyledComponent>
+                                                                                                          </Paragraph__StyledParagraph>
+                                                                                                        </Paragraph>
+                                                                                                      </div>
+                                                                                                    </StyledComponent>
+                                                                                                  </styled.div>
+                                                                                                </Box>
                                                                                               </div>
                                                                                             </StyledComponent>
                                                                                           </styled.div>
@@ -1048,7 +1078,7 @@ div.c2 {
   padding: 0;
 }
 
-.c10 {
+.c9 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -1064,7 +1094,7 @@ div.c2 {
   text-align: left;
 }
 
-.c10 sup {
+.c9 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -1111,11 +1141,6 @@ div.c2 {
 
 .c7 {
   line-height: 0;
-}
-
-.c9 {
-  width: calc(100% - 2.5rem);
-  margin-top: 0.1rem;
 }
 
 @media (max-width:575px) {
@@ -1884,235 +1909,270 @@ div.c2 {
                                                                                               <div
                                                                                                 className="c6"
                                                                                               >
-                                                                                                <Styled(Component)
-                                                                                                  vertical={1}
+                                                                                                <Box
+                                                                                                  between={3}
+                                                                                                  inline={true}
+                                                                                                  style={
+                                                                                                    Object {
+                                                                                                      "justifyContent": "center",
+                                                                                                    }
+                                                                                                  }
+                                                                                                  tag="div"
                                                                                                 >
-                                                                                                  <StyledComponent
-                                                                                                    forwardedComponent={
+                                                                                                  <styled.div
+                                                                                                    between={3}
+                                                                                                    inline={true}
+                                                                                                    style={
                                                                                                       Object {
-                                                                                                        "$$typeof": Symbol(react.forward_ref),
-                                                                                                        "attrs": Array [],
-                                                                                                        "componentStyle": ComponentStyle {
-                                                                                                          "componentId": "sc-iwsKbI",
-                                                                                                          "isStatic": true,
-                                                                                                          "lastClassName": "c7",
-                                                                                                          "rules": Array [
-                                                                                                            "line-height: 0;",
-                                                                                                          ],
-                                                                                                        },
-                                                                                                        "displayName": "Styled(Component)",
-                                                                                                        "foldedComponentIds": Array [],
-                                                                                                        "render": [Function],
-                                                                                                        "styledComponentId": "sc-iwsKbI",
-                                                                                                        "target": [Function],
-                                                                                                        "toString": [Function],
-                                                                                                        "warnTooManyClasses": [Function],
-                                                                                                        "withComponent": [Function],
+                                                                                                        "justifyContent": "center",
                                                                                                       }
                                                                                                     }
-                                                                                                    forwardedRef={null}
-                                                                                                    vertical={1}
+                                                                                                    tag="div"
                                                                                                   >
-                                                                                                    <Component
-                                                                                                      className="c7"
-                                                                                                      vertical={1}
+                                                                                                    <StyledComponent
+                                                                                                      between={3}
+                                                                                                      forwardedComponent={
+                                                                                                        Object {
+                                                                                                          "$$typeof": Symbol(react.forward_ref),
+                                                                                                          "attrs": Array [
+                                                                                                            [Function],
+                                                                                                          ],
+                                                                                                          "componentStyle": ComponentStyle {
+                                                                                                            "componentId": "sc-htoDjs",
+                                                                                                            "isStatic": false,
+                                                                                                            "lastClassName": "c8",
+                                                                                                            "rules": Array [
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                              [Function],
+                                                                                                            ],
+                                                                                                          },
+                                                                                                          "displayName": "styled.div",
+                                                                                                          "foldedComponentIds": Array [],
+                                                                                                          "render": [Function],
+                                                                                                          "styledComponentId": "sc-htoDjs",
+                                                                                                          "target": "div",
+                                                                                                          "toString": [Function],
+                                                                                                          "warnTooManyClasses": [Function],
+                                                                                                          "withComponent": [Function],
+                                                                                                        }
+                                                                                                      }
+                                                                                                      forwardedRef={null}
+                                                                                                      inline={true}
+                                                                                                      style={
+                                                                                                        Object {
+                                                                                                          "justifyContent": "center",
+                                                                                                        }
+                                                                                                      }
+                                                                                                      tag="div"
                                                                                                     >
-                                                                                                      <Box
-                                                                                                        className="c7"
-                                                                                                        inline={false}
-                                                                                                        tag="div"
-                                                                                                        vertical={1}
+                                                                                                      <div
+                                                                                                        className="c6"
+                                                                                                        style={
+                                                                                                          Object {
+                                                                                                            "justifyContent": "center",
+                                                                                                          }
+                                                                                                        }
                                                                                                       >
-                                                                                                        <styled.div
-                                                                                                          className="c7"
-                                                                                                          inline={false}
-                                                                                                          tag="div"
+                                                                                                        <Styled(Component)
                                                                                                           vertical={1}
                                                                                                         >
                                                                                                           <StyledComponent
-                                                                                                            className="c7"
-                                                                                                            forwardedComponent={
-                                                                                                              Object {
-                                                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                                                "attrs": Array [
-                                                                                                                  [Function],
-                                                                                                                ],
-                                                                                                                "componentStyle": ComponentStyle {
-                                                                                                                  "componentId": "sc-htoDjs",
-                                                                                                                  "isStatic": false,
-                                                                                                                  "lastClassName": "c8",
-                                                                                                                  "rules": Array [
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                  ],
-                                                                                                                },
-                                                                                                                "displayName": "styled.div",
-                                                                                                                "foldedComponentIds": Array [],
-                                                                                                                "render": [Function],
-                                                                                                                "styledComponentId": "sc-htoDjs",
-                                                                                                                "target": "div",
-                                                                                                                "toString": [Function],
-                                                                                                                "warnTooManyClasses": [Function],
-                                                                                                                "withComponent": [Function],
-                                                                                                              }
-                                                                                                            }
-                                                                                                            forwardedRef={null}
-                                                                                                            inline={false}
-                                                                                                            tag="div"
-                                                                                                            vertical={1}
-                                                                                                          >
-                                                                                                            <div
-                                                                                                              className="c7 sc-iwsKbI c7 c8"
-                                                                                                            >
-                                                                                                              <NotificationSuccess
-                                                                                                                copy="en"
-                                                                                                              >
-                                                                                                                <FeedbackIcon
-                                                                                                                  copy="en"
-                                                                                                                  copyDictionary={
-                                                                                                                    Object {
-                                                                                                                      "en": Object {
-                                                                                                                        "a11yText": "Success",
-                                                                                                                      },
-                                                                                                                      "fr": Object {
-                                                                                                                        "a11yText": "Réussite",
-                                                                                                                      },
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                  height="20"
-                                                                                                                  optionalText={false}
-                                                                                                                  viewBox="0 0 20 20"
-                                                                                                                  width="20"
-                                                                                                                >
-                                                                                                                  <svg
-                                                                                                                    height="20"
-                                                                                                                    role="img"
-                                                                                                                    viewBox="0 0 20 20"
-                                                                                                                    width="20"
-                                                                                                                  >
-                                                                                                                    <title>
-                                                                                                                      Success
-                                                                                                                    </title>
-                                                                                                                    <path
-                                                                                                                      d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm8.127 4.673a.633.633 0 0 0 .092-.105l7.734-8.572a.693.693 0 0 0-.009-.925.595.595 0 0 0-.882-.001l-7.514 8.055-2.612-2.8a.596.596 0 0 0-.88 0 .706.706 0 0 0-.014.928l3.038 3.51a.623.623 0 0 0 .486.219.587.587 0 0 0 .46-.2l.087-.097.014-.012z"
-                                                                                                                      fill="#2B8000"
-                                                                                                                      fillRule="evenodd"
-                                                                                                                    />
-                                                                                                                  </svg>
-                                                                                                                </FeedbackIcon>
-                                                                                                              </NotificationSuccess>
-                                                                                                            </div>
-                                                                                                          </StyledComponent>
-                                                                                                        </styled.div>
-                                                                                                      </Box>
-                                                                                                    </Component>
-                                                                                                  </StyledComponent>
-                                                                                                </Styled(Component)>
-                                                                                                <Notification__StyledMessageContainer
-                                                                                                  hasIcon={true}
-                                                                                                  isDismissible={false}
-                                                                                                >
-                                                                                                  <StyledComponent
-                                                                                                    forwardedComponent={
-                                                                                                      Object {
-                                                                                                        "$$typeof": Symbol(react.forward_ref),
-                                                                                                        "attrs": Array [],
-                                                                                                        "componentStyle": ComponentStyle {
-                                                                                                          "componentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
-                                                                                                          "isStatic": false,
-                                                                                                          "lastClassName": "c9",
-                                                                                                          "rules": Array [
-                                                                                                            [Function],
-                                                                                                          ],
-                                                                                                        },
-                                                                                                        "displayName": "Notification__StyledMessageContainer",
-                                                                                                        "foldedComponentIds": Array [],
-                                                                                                        "render": [Function],
-                                                                                                        "styledComponentId": "Notification__StyledMessageContainer-sc-2ooxvf-0",
-                                                                                                        "target": "div",
-                                                                                                        "toString": [Function],
-                                                                                                        "warnTooManyClasses": [Function],
-                                                                                                        "withComponent": [Function],
-                                                                                                      }
-                                                                                                    }
-                                                                                                    forwardedRef={null}
-                                                                                                    hasIcon={true}
-                                                                                                    isDismissible={false}
-                                                                                                  >
-                                                                                                    <div
-                                                                                                      className="c9"
-                                                                                                    >
-                                                                                                      <Paragraph
-                                                                                                        align="left"
-                                                                                                        bold={false}
-                                                                                                        invert={false}
-                                                                                                        size="medium"
-                                                                                                      >
-                                                                                                        <Paragraph__StyledParagraph
-                                                                                                          align="left"
-                                                                                                          bold={false}
-                                                                                                          invert={false}
-                                                                                                          size="medium"
-                                                                                                        >
-                                                                                                          <StyledComponent
-                                                                                                            align="left"
-                                                                                                            bold={false}
                                                                                                             forwardedComponent={
                                                                                                               Object {
                                                                                                                 "$$typeof": Symbol(react.forward_ref),
                                                                                                                 "attrs": Array [],
                                                                                                                 "componentStyle": ComponentStyle {
-                                                                                                                  "componentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                                                                  "isStatic": false,
-                                                                                                                  "lastClassName": "c10",
+                                                                                                                  "componentId": "sc-iwsKbI",
+                                                                                                                  "isStatic": true,
+                                                                                                                  "lastClassName": "c7",
                                                                                                                   "rules": Array [
-                                                                                                                    [Function],
-                                                                                                                    "word-wrap: break-word;",
-                                                                                                                    "padding: 0;",
-                                                                                                                    "margin: 0;",
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    [Function],
-                                                                                                                    "sup {",
-                                                                                                                    "top: -0.5em;",
-                                                                                                                    "font-size: 0.875rem;",
-                                                                                                                    "position: relative;",
-                                                                                                                    "vertical-align: baseline;",
-                                                                                                                    "padding-left: 0.1em;",
-                                                                                                                    "}",
+                                                                                                                    "line-height: 0;",
                                                                                                                   ],
                                                                                                                 },
-                                                                                                                "displayName": "Paragraph__StyledParagraph",
+                                                                                                                "displayName": "Styled(Component)",
                                                                                                                 "foldedComponentIds": Array [],
                                                                                                                 "render": [Function],
-                                                                                                                "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                                                                "target": "p",
+                                                                                                                "styledComponentId": "sc-iwsKbI",
+                                                                                                                "target": [Function],
                                                                                                                 "toString": [Function],
                                                                                                                 "warnTooManyClasses": [Function],
                                                                                                                 "withComponent": [Function],
                                                                                                               }
                                                                                                             }
                                                                                                             forwardedRef={null}
+                                                                                                            vertical={1}
+                                                                                                          >
+                                                                                                            <Component
+                                                                                                              className="c7"
+                                                                                                              vertical={1}
+                                                                                                            >
+                                                                                                              <Box
+                                                                                                                className="c7"
+                                                                                                                inline={false}
+                                                                                                                tag="div"
+                                                                                                                vertical={1}
+                                                                                                              >
+                                                                                                                <styled.div
+                                                                                                                  className="c7"
+                                                                                                                  inline={false}
+                                                                                                                  tag="div"
+                                                                                                                  vertical={1}
+                                                                                                                >
+                                                                                                                  <StyledComponent
+                                                                                                                    className="c7"
+                                                                                                                    forwardedComponent={
+                                                                                                                      Object {
+                                                                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                                                                        "attrs": Array [
+                                                                                                                          [Function],
+                                                                                                                        ],
+                                                                                                                        "componentStyle": ComponentStyle {
+                                                                                                                          "componentId": "sc-htoDjs",
+                                                                                                                          "isStatic": false,
+                                                                                                                          "lastClassName": "c8",
+                                                                                                                          "rules": Array [
+                                                                                                                            [Function],
+                                                                                                                            [Function],
+                                                                                                                            [Function],
+                                                                                                                            [Function],
+                                                                                                                            [Function],
+                                                                                                                            [Function],
+                                                                                                                          ],
+                                                                                                                        },
+                                                                                                                        "displayName": "styled.div",
+                                                                                                                        "foldedComponentIds": Array [],
+                                                                                                                        "render": [Function],
+                                                                                                                        "styledComponentId": "sc-htoDjs",
+                                                                                                                        "target": "div",
+                                                                                                                        "toString": [Function],
+                                                                                                                        "warnTooManyClasses": [Function],
+                                                                                                                        "withComponent": [Function],
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                    forwardedRef={null}
+                                                                                                                    inline={false}
+                                                                                                                    tag="div"
+                                                                                                                    vertical={1}
+                                                                                                                  >
+                                                                                                                    <div
+                                                                                                                      className="c7 sc-iwsKbI c7 c8"
+                                                                                                                    >
+                                                                                                                      <NotificationSuccess
+                                                                                                                        copy="en"
+                                                                                                                      >
+                                                                                                                        <FeedbackIcon
+                                                                                                                          copy="en"
+                                                                                                                          copyDictionary={
+                                                                                                                            Object {
+                                                                                                                              "en": Object {
+                                                                                                                                "a11yText": "Success",
+                                                                                                                              },
+                                                                                                                              "fr": Object {
+                                                                                                                                "a11yText": "Réussite",
+                                                                                                                              },
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                          height="20"
+                                                                                                                          optionalText={false}
+                                                                                                                          viewBox="0 0 20 20"
+                                                                                                                          width="20"
+                                                                                                                        >
+                                                                                                                          <svg
+                                                                                                                            height="20"
+                                                                                                                            role="img"
+                                                                                                                            viewBox="0 0 20 20"
+                                                                                                                            width="20"
+                                                                                                                          >
+                                                                                                                            <title>
+                                                                                                                              Success
+                                                                                                                            </title>
+                                                                                                                            <path
+                                                                                                                              d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm8.127 4.673a.633.633 0 0 0 .092-.105l7.734-8.572a.693.693 0 0 0-.009-.925.595.595 0 0 0-.882-.001l-7.514 8.055-2.612-2.8a.596.596 0 0 0-.88 0 .706.706 0 0 0-.014.928l3.038 3.51a.623.623 0 0 0 .486.219.587.587 0 0 0 .46-.2l.087-.097.014-.012z"
+                                                                                                                              fill="#2B8000"
+                                                                                                                              fillRule="evenodd"
+                                                                                                                            />
+                                                                                                                          </svg>
+                                                                                                                        </FeedbackIcon>
+                                                                                                                      </NotificationSuccess>
+                                                                                                                    </div>
+                                                                                                                  </StyledComponent>
+                                                                                                                </styled.div>
+                                                                                                              </Box>
+                                                                                                            </Component>
+                                                                                                          </StyledComponent>
+                                                                                                        </Styled(Component)>
+                                                                                                        <Paragraph
+                                                                                                          align="left"
+                                                                                                          bold={false}
+                                                                                                          invert={false}
+                                                                                                          size="medium"
+                                                                                                        >
+                                                                                                          <Paragraph__StyledParagraph
+                                                                                                            align="left"
+                                                                                                            bold={false}
                                                                                                             invert={false}
                                                                                                             size="medium"
                                                                                                           >
-                                                                                                            <p
-                                                                                                              className="c10"
+                                                                                                            <StyledComponent
+                                                                                                              align="left"
+                                                                                                              bold={false}
+                                                                                                              forwardedComponent={
+                                                                                                                Object {
+                                                                                                                  "$$typeof": Symbol(react.forward_ref),
+                                                                                                                  "attrs": Array [],
+                                                                                                                  "componentStyle": ComponentStyle {
+                                                                                                                    "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                                                    "isStatic": false,
+                                                                                                                    "lastClassName": "c9",
+                                                                                                                    "rules": Array [
+                                                                                                                      [Function],
+                                                                                                                      "word-wrap: break-word;",
+                                                                                                                      "padding: 0;",
+                                                                                                                      "margin: 0;",
+                                                                                                                      [Function],
+                                                                                                                      [Function],
+                                                                                                                      [Function],
+                                                                                                                      [Function],
+                                                                                                                      "sup {",
+                                                                                                                      "top: -0.5em;",
+                                                                                                                      "font-size: 0.875rem;",
+                                                                                                                      "position: relative;",
+                                                                                                                      "vertical-align: baseline;",
+                                                                                                                      "padding-left: 0.1em;",
+                                                                                                                      "}",
+                                                                                                                    ],
+                                                                                                                  },
+                                                                                                                  "displayName": "Paragraph__StyledParagraph",
+                                                                                                                  "foldedComponentIds": Array [],
+                                                                                                                  "render": [Function],
+                                                                                                                  "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                                                                  "target": "p",
+                                                                                                                  "toString": [Function],
+                                                                                                                  "warnTooManyClasses": [Function],
+                                                                                                                  "withComponent": [Function],
+                                                                                                                }
+                                                                                                              }
+                                                                                                              forwardedRef={null}
+                                                                                                              invert={false}
                                                                                                               size="medium"
                                                                                                             >
-                                                                                                              Some content
-                                                                                                            </p>
-                                                                                                          </StyledComponent>
-                                                                                                        </Paragraph__StyledParagraph>
-                                                                                                      </Paragraph>
-                                                                                                    </div>
-                                                                                                  </StyledComponent>
-                                                                                                </Notification__StyledMessageContainer>
+                                                                                                              <p
+                                                                                                                className="c9"
+                                                                                                                size="medium"
+                                                                                                              >
+                                                                                                                Some content
+                                                                                                              </p>
+                                                                                                            </StyledComponent>
+                                                                                                          </Paragraph__StyledParagraph>
+                                                                                                        </Paragraph>
+                                                                                                      </div>
+                                                                                                    </StyledComponent>
+                                                                                                  </styled.div>
+                                                                                                </Box>
                                                                                               </div>
                                                                                             </StyledComponent>
                                                                                           </styled.div>
@@ -2200,7 +2260,7 @@ div.c2 {
   padding: 0;
 }
 
-.c8 {
+.c7 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -2216,7 +2276,7 @@ div.c2 {
   text-align: left;
 }
 
-.c8 sup {
+.c7 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -2250,11 +2310,6 @@ div.c2 {
 .c0 {
   position: relative;
   background-color: #f7f7f8;
-}
-
-.c7 {
-  width: 100%;
-  margin-top: 0.1rem;
 }
 
 @media (max-width:575px) {
@@ -2436,10 +2491,11 @@ div.c2 {
                 class="c6"
               >
                 <div
-                  class="c7"
+                  class="c6"
+                  style="justify-content:center"
                 >
                   <p
-                    class="c8"
+                    class="c7"
                   >
                     Some content
                   </p>
