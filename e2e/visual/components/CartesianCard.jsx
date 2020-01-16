@@ -25,7 +25,7 @@ const CartesianContainer = () => (
         'defaultWithBorder',
       ]}
       fullHeight={[true, false]}
-      spacing={[['default', 'narrow', 'compact', 'intermediate']]}
+      spacing={['default', 'narrow', 'compact', 'intermediate']}
       children="Get a new smartphone for $0 on a 2-year plan"
     />
   </div>
