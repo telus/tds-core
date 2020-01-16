@@ -7,7 +7,7 @@ import Paragraph from '../../../packages/Paragraph'
 
 const CartesianParagraph = props => (
   <div style={{ width: '50%' }}>
-    <Cartesian {...props} component={Paragraph} />
+    <Paragraph {...props} />
   </div>
 )
 

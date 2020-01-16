@@ -7,7 +7,7 @@ import Image from '../../../packages/Image'
 
 const CartesianImage = props => (
   <div style={{ width: '25%' }}>
-    <Cartesian {...props} component={Image} />
+    <Image {...props} />
   </div>
 )
 

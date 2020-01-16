@@ -7,7 +7,7 @@ import Card from '../../../packages/Card'
 
 const CartesianCard = props => (
   <div style={{ width: '20%', maxHeight: 250 }}>
-    <Cartesian {...props} component={Card} />
+    <Card {...props} />
   </div>
 )
 

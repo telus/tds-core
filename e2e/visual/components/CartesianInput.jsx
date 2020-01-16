@@ -6,31 +6,22 @@ import { Cartesian } from '@compositor/kit'
 import Input from '../../../packages/Input'
 import Tooltip from '../../../packages/Tooltip'
 
-const InputNormal = props => (
+const CartesianInput = props => (
   <div style={{ width: '25%' }}>
-    <Cartesian {...props} component={Input} />
+    <Input {...props} component={Input} />
   </div>
 )
-const InputError = props => (
-  <div style={{ width: '25%' }}>
-    <Cartesian {...props} component={Input} />
-  </div>
-)
-const InputTooltip = props => (
-  <div style={{ width: '25%' }}>
-    <Cartesian {...props} component={Input} />
-  </div>
-)
-const CartesianInput = () => (
+
+const CartesianContainer = () => (
   <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%' }}>
     <Cartesian
-      component={InputNormal}
+      component={CartesianInput}
       type={['text', 'number', 'password']}
       label="TDS Input"
       tooltip={[undefined, <Tooltip copy="en">Sample Tooltip</Tooltip>]}
     />
     <Cartesian
-      component={InputError}
+      component={CartesianInput}
       type="text"
       label="TDS Feedback Input"
       feedback={[undefined, 'success', 'error']}
@@ -38,7 +29,7 @@ const CartesianInput = () => (
       tooltip={[undefined, <Tooltip copy="en">Sample Tooltip</Tooltip>]}
     />
     <Cartesian
-      component={InputTooltip}
+      component={CartesianInput}
       type="text'"
       label="TDS Hint Input"
       hint="Hint text"
@@ -50,4 +41,4 @@ const CartesianInput = () => (
   </div>
 )
 
-export default { name: 'Input', Component: CartesianInput }
+export default { name: 'Input', Component: CartesianContainer }

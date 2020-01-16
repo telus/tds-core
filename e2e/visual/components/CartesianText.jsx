@@ -7,7 +7,7 @@ import Text from '../../../packages/Text'
 
 const CartesianText = props => (
   <div style={{ width: '25%' }}>
-    <Cartesian {...props} component={Text} />
+    <Text {...props} />
   </div>
 )
 const CartesianContainer = () => (
