@@ -335,12 +335,6 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'Delivery is available or required – not to be confused with service truck',
       },
       {
-        name: 'Success',
-        Component: Success,
-        usageCriteria:
-          "For validating that the information added has been processed and is successful, ready for cart review in check out{' '}",
-      },
-      {
         name: 'PiggyBank',
         Component: PiggyBank,
         usageCriteria: 'For saving, reduction, money credit back, online bill credit',
