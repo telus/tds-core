@@ -7,7 +7,7 @@ import PriceLockup from '../../../packages/PriceLockup'
 
 const CartesianPriceLockup = props => (
   <div style={{ width: '25%' }}>
-    <Cartesian {...props} component={PriceLockup} />
+    <PriceLockup {...props} />
   </div>
 )
 

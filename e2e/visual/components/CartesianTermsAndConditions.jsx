@@ -7,12 +7,12 @@ import TermsAndConditions, { FootnoteLink } from '../../../packages/TermsAndCond
 
 const CartesianTermsAndConditions = props => (
   <div style={{ width: '25%' }}>
-    <Cartesian {...props} component={TermsAndConditions} />
+    <TermsAndConditions {...props} />
   </div>
 )
 const CartesianFootnoteLink = props => (
   <div style={{ width: '25%' }}>
-    <Cartesian {...props} component={FootnoteLink} />
+    <FootnoteLink {...props} />
   </div>
 )
 const TermsAndConditionsContainer = () => (
